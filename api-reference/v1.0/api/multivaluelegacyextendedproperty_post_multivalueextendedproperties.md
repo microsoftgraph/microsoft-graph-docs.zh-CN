@@ -1,0 +1,241 @@
+# <a name="create-multi-value-extended-property"></a>创建多值扩展属性
+
+在新建或现有的资源实例中创建一个或多个多值扩展属性。 
+
+支持以下用户资源：
+
+- [邮件](../resources/message.md)
+- [mailFolder](../resources/mailfolder.md)
+- [事件](../resources/event.md)
+- [日历](../resources/calendar.md)
+- [联系人](../resources/contact.md)
+- [contactFolder](../resources/contactfolder.md) 
+
+以及以下组资源：
+
+- 组 [事件](../resources/event.md)
+- 组 [日历](../resources/calendar.md)
+- 组[帖子](../resources/post.md) 
+
+有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
+
+## <a name="prerequisites"></a>先决条件
+
+要执行此 API，需要以下**范围**之一，具体取决于将在其中创建扩展属性的资源：
+
+- _Mail.ReadWrite_
+- _Calendars.ReadWrite_
+- _Contacts.ReadWrite_
+- _Group.ReadWrite.All_
+ 
+## <a name="http-request"></a>HTTP 请求
+可以在新建或现有的资源实例中创建扩展属性。
+
+若要在_新的_资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的_扩展属性_。注意，一些资源支持以多种方式创建。有关创建这些资源实例的详细信息，请参阅创建 [邮件](../resources/message.md)、[mailFolder](../api/user_post_mailfolders.md)、[事件](../api/user_post_events.md)、[日历](../api/user_post_calendars.md)、[联系人](../api/user_post_contacts.md)、[contactFolder](../api/user_post_contactfolders.md)、[组事件](../api/group_post_events.md)和[组帖子](../resources/post.md) 的相应主题。 
+ 
+以下是请求的语法。 
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/messages
+POST /users/{id|userPrincipalName}/messages
+POST /me/mailFolders/{id}/messages
+
+POST /me/mailFolders
+POST /users/{id|userPrincipalName}/mailFolders
+
+POST /me/events
+POST /users/{id|userPrincipalName}/events
+
+POST /me/calendars
+POST /users/{id|userPrincipalName}/calendars
+
+POST /me/contacts
+POST /users/{id|userPrincipalName}/contacts
+
+POST /me/contactFolders
+POST /users/{id|userPrincipalName}/contactFolders
+
+POST /groups/{id}/events
+
+POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
+POST /groups/{id}/threads
+POST /groups/{id}/conversations
+```
+
+若要在现有资源实例中创建一个或多个扩展属性，请在请求中指定实例，并在请求正文中包括扩展属性。
+
+**注意**不能在现有的组帖子中创建扩展属性。
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me/messages/{id}
+PATCH /users/{id|userPrincipalName}/messages/{id}
+PATCH /me/mailFolders/{id}/messages/{id}
+
+PATCH /me/mailFolders/{id}
+PATCH /users/{id|userPrincipalName}/mailFolders/{id}
+
+PATCH /me/events/{id}
+PATCH /users/{id|userPrincipalName}/events/{id}
+
+PATCH /me/calendars/{id}
+PATCH /users/{id|userPrincipalName}/calendars/{id}
+
+PATCH /me/contacts/{id}
+PATCH /users/{id|userPrincipalName}/contacts/{id}
+
+PATCH /me/contactFolders/{id}
+PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+
+PATCH /groups/{id}/events/{id}
+```
+
+
+## <a name="parameters"></a>参数
+|**参数**|**类型**|**说明**|
+|:-----|:-----|:-----|
+|_URL parameters_|
+|id|string|对象在相应集合中的唯一标识符。必需。|
+|_Body parameters_|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 一个或多个多值扩展属性的数组。 |
+|id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
+
+
+## <a name="request-headers"></a>请求标头
+| 名称       | 值 |
+|:---------------|:----------|
+| Authorization | Bearer %token%|
+| Content-Type | application/json |
+
+## <a name="request-body"></a>请求正文
+
+提供每个 [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) 对象在资源实例的 **multiValueExtendedProperties** 集合属性中的 JSON 正文。
+
+在_新建_资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
+
+## <a name="response"></a>响应
+
+#### <a name="response-code"></a>响应代码
+在新建资源实例中成功创建扩展属性的操作返回 `201 Created`（在新的组帖子中除外），根据所用的方法，该操作可以返回 `200 OK` 或 `202 Accepted`。
+
+在现有的资源实例中，成功的创建操作返回 `200 OK`。 
+
+
+#### <a name="response-body"></a>响应正文
+
+在支持的资源（而不是 [组帖子](../resources/post.md)）中创建扩展属性时，该响应只包括新建或现有的实例，但不包括新的扩展属性。若要查看新创建的扩展属性，请 [获取通过扩展属性展开的实例](../api/multivaluelegacyextendedproperty_get.md)。
+
+在_新建_的组帖子中创建扩展属性时，响应仅包括响应代码，但不包括新帖子或扩展属性。不能在现有的组帖子中创建扩展属性。
+
+
+## <a name="example"></a>示例
+##### <a name="request-1"></a>请求 1
+
+第一个示例在同一个 POST 操作的全新事件中创建一个多值扩展属性。除了通常要包括的新事件的属性，请求正文还包括 **multiValueExtendedProperties** 集合（包含一个扩展属性）。请求正文包括该多值扩展属性的如下参数：
+
+- **id**，将此属性指定为包含指定 GUID 和 `Recreation` 名称的字符串数组。 
+- **value**，将 `Recreation` 指定为包含 3 个字符串值（`["Food", "Hiking", "Swimming"]`）的数组。
+ 
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Content-Type: application/json
+
+{
+  "subject": "Family reunion",
+  "body": {
+    "contentType": "HTML",
+    "content": "Let's get together this Thanksgiving!"
+  },
+  "start": {
+      "dateTime": "2015-11-26T09:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2015-11-29T21:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "Terrie@contoso.com",
+        "name": "Terrie Barrera"
+      },
+      "type": "Required"
+    },
+    {
+      "emailAddress": {
+        "address": "Lauren@contoso.com",
+        "name": "Lauren Solis"
+      },
+      "type": "Required"
+    }
+  ],
+  "multiValueExtendedProperties": [
+     {
+           "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+           "value": ["Food", "Hiking", "Swimming"]
+     }
+  ]
+}
+```
+
+##### <a name="response-1"></a>响应 1
+
+成功的响应由 `HTTP 201 Created` 响应代码表示，并在响应正文中包括新事件，类似于 [仅创建事件](../api/user_post_events.md) 中的响应。该响应不包括任何新建的扩展属性。
+
+若要查看新建的扩展属性，请 [获取通过扩展属性展开的事件](../api/multivaluelegacyextendedproperty_get.md)。
+
+
+****
+
+##### <a name="request-2"></a>请求 2
+
+第二个示例为指定的邮件创建一个多值扩展属性。扩展属性是 **multiValueExtendedProperties** 集合中的唯一元素。请求正文包括扩展属性的如下参数：
+
+- **id**，将此属性指定为包含指定 GUID 和名称 `Palette` 的字符串数组。
+- **value**，将 `Palette` 指定为包含 3 个字符串值（`["Green", "Aqua", "Blue"]`）的数组。
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_as77AACHsLrBBBA=')
+
+Content-Type: application/json
+
+{
+  "multiValueExtendedProperties": [
+      {
+         "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
+         "value":["Green", "Aqua", "Blue"]
+      }
+    ]
+}
+```
+
+##### <a name="response-2"></a>响应 2
+
+成功的响应由 `HTTP 200 OK` 响应代码表示，并在响应正文中包括指定的邮件，类似于 [更新邮件](../api/message_update.md) 中的响应。该响应不包括新建的扩展属性。
+
+若要查看新建的扩展属性，请 [获取通过扩展属性展开的邮件](../api/multivaluelegacyextendedproperty_get.md)。
+
+
+<!-- This page was manually created. -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create a single-value extended property",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+
+
+

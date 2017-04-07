@@ -1,10 +1,9 @@
 # <a name="contribute-to-microsoft-graph-documentation"></a>参与 Microsoft Graph 文档
 
-感谢你对 Microsoft Graph 文档的关注！ 
+感谢你对 Microsoft Graph 文档的关注！
 
 * [参与方法](#ways-to-contribute)
 * [我们可以接受拉取请求的先决条件](#before-we-can-accept-your-pull-request)
-* [存储库结构](#repository-organization)
 * [使用 GitHub、Git 和此存储库](#use-github-git-and-this-repository)
 * [如何使用 Markdown 设置主题格式](#how-to-use-markdown-to-format-your-topic)
 * [标准 Markdown](#standard-markdown)
@@ -12,9 +11,11 @@
 
 ## <a name="ways-to-contribute"></a>参与方法
 
-可以通过下面这些方法参与 [Microsoft Graph 文档](http://developer.microsoft.com/en-us/graph/docs)：
+可以通过下面这些方法参与 [Microsoft Graph 文档](http://graph.microsoft.io)：
 
 * 通过 [Microsoft Graph 开发者文档公共存储库](https://github.com/microsoftgraph/microsoft-graph-docs)提交文章
+    * 将各个拉取请求发送到 /beta 和/或 /v1.0 分支。这一步是必需的，可以确保相应版本的分支是最新的且包含最新更改。 
+    * 此外，还将各个拉取请求发送到 /master 分支。这一步是为了确保为 Microsoft Grph 网站文档站点更新最新更改。 
 * 通过 [GitHub 问题](https://github.com/microsoftgraph/microsoft-graph-docs/issues)举报文档缺陷
 * 向 [Office 开发者平台 UserVoice](http://officespdev.uservoice.com) 添加文档请求
 
@@ -39,12 +40,6 @@
 可以单击[此处](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf)下载参与许可协议 (CLA)。请填写此表单，然后通过电子邮件的方式将它发送到 [officedev@microsoft.com](mailto:officedev@microsoft.com)。
 
 收到和处理你的 CLA 后，我们便会尽力在 10 个工作日内评审你的拉取请求。
-
-## <a name="repository-organization"></a>存储库结构
-
-microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然后再按主题进行分组。每个主题目录的根中的 README.md 文件指定了本主题内文件的结构。
-
-每个主题内的文章是以 MADN GUID 命名，而不是以标题命名。这是我们的文档管理流程的一个弊端，目前还无法更改。我们强烈建议使用每个主题目录内的目录转到要查看或编辑的文件。有关详细信息，请参阅 [README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md)。
 
 ## <a name="use-github-git-and-this-repository"></a>使用 GitHub、Git 和此存储库
 
@@ -83,7 +78,7 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 #### <a name="create-a-new-branch"></a>新建分支
 
 1.    打开 GitBash。
-2.    在提示符处键入 `git pull upstream master:<new branch name>`。此命令在本地新建分支，该分支是从最新的 microsoftgraph master 分支复制而来。**注意：**对于内部参与者，将命令中的 `master` 替换为要在特定日期发布的分支。
+2.    在提示符处键入 `git pull upstream master:<new branch name>`。此命令在本地新建分支，该分支是从最新的 *microsoftgraph* master 分支复制而来。**注意：**对于内部参与者，将命令中的 `master` 替换为要在特定日期发布的分支。
 3.    在提示符处键入 `git push origin <new branch name>`。此命令将提醒 GitHub 注意这个新分支。现在，应该可以在 GitHub 存储库的分叉上看到这个新分支。
 4.    键入 `git checkout <new branch name>` 切换到新分支。
 
@@ -141,7 +136,7 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 若要删除分支，请按以下步骤操作：
 
 1.    在 GitBash 中的命令提示符处键入 `git checkout master`。这命令可确保你不在要删除的分支中（严禁出现这样的行为）。
-2.    接下来，在命令提示符处键入 `git branch -d <branch name>`。只有当分支已成功合并到上游存储库中，此命令才会在本地计算机上删除分支。（可以使用 `???D` 标记替代此行为，但首先请确保你要这么做。）
+2.    接下来，在命令提示符处键入 `git branch -d <branch name>`。只有当分支已成功合并到上游存储库中，此命令才会在本地计算机上删除分支。（可以使用 `–D` 标记替代此行为，但首先请确保你要这么做。）
 3.    最后，在命令提示符中键入 `git push origin :<branch name>`（冒号前有一个空格，之后没有空格）。这将删除 github 分叉中的分支。  
 
 恭喜！你已成功参与此项目！
