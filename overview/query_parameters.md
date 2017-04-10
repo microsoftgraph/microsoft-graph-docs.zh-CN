@@ -32,9 +32,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 若要限制匹配搜索条件的请求结果，则使用 **$search** 查询参数。 
 
->  **注意**：现在，你可以搜索邮件，但不能搜索联系人或事件。**$search** 请求可返回多达 250 个结果。不能在搜索请求中使用 **$filter** 或 **$orderby**。
+>  **注意**：目前可以对[邮件](../api-reference/v1.0/resources/message.md)和[人员](../api-reference/beta/resources/person.md)的集合使用 **$search**，但不可以对[联系人](../api-reference/v1.0/resources/contact.md)或[事件](../api-reference/v1.0/resources/event.md)集合使用。**$search** 请求可返回多达 250 个结果。不能在 **$search** 请求中使用 **$filter** 或 **$orderby**。
 
-搜索条件使用高级查询语法 (AQS) 表示。结果按发送邮件的日期和时间排序。
+搜索条件使用高级查询语法 (AQS) 表示。 
+
+**对邮件应用 $search**
+
+搜索结果按发送邮件的日期和时间排序。
 
 可以在 **$search** 条件中指定**邮件**的以下属性：**attachments**、 **bccRecipients**、 **body**、 **category**、 **ccRecipients**、 **content**、 **from**、 **hasAttachments**、 **participants**、 **receivedDateTime**、 **sender**、 **subject**、 **toRecipients**
 

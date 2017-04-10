@@ -1,6 +1,9 @@
 # <a name="list-messages"></a>List messages
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
+
+目前，此操作返回纯 HTML 格式的邮件正文。
+
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：*Mail.Read；Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP 请求
@@ -27,7 +30,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type   | application/json  | 
+ 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

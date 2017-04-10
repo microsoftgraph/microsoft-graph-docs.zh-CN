@@ -4,6 +4,8 @@
 
 由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
+目前，此操作返回纯 HTML 格式的邮件正文。
+
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：*Mail.Read*  
 ## <a name="http-request"></a>HTTP 请求

@@ -40,8 +40,8 @@ mailFolder 中的邮件。
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
-|body|[itemBody](itembody.md)|邮件的正文。|
-|bodyPreview|String|邮件正文中的前 255 个字符。|
+|body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
+|bodyPreview|String|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
@@ -65,24 +65,24 @@ mailFolder 中的邮件。
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|uniqueBody|[itemBody](itembody.md)|对于当前邮件独一无二的邮件正文部分。uniqueBody 默认不提供，但可以使用 ?$select=uniqueBody 为指定邮件检索它。|
+|uniqueBody|[itemBody](itembody.md)|对于当前邮件独一无二的邮件正文部分。**uniqueBody** 默认不返回，但可以使用 `?$select=uniqueBody` 查询为给定邮件检索它。可以是 HTML 格式或文本格式。|
 |webLink|String|要在 Outlook Web App 中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook Web App 审阅窗格中显示邮件。<br><br>如果通过 Outlook Web App 登录邮箱，该邮件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br><br>可以从 iFrame 中访问此 URL。|
 
-**从 Body 属性中删除脚本**
+**从 body 属性中删除脚本**
 
-邮件正文可以是 HTML 或文本。如果正文是 HTML 格式，默认情况下，在 REST 响应中返回正文内容之前，将删除嵌入 Body 属性中的任意具有潜在不安全性的 HTML（例如 JavaScript）。若要获取整个原始 HTML 内容，请包括以下 HTTP 请求标头：
+邮件正文可以是 HTML 或文本格式。如果正文是 HTML 格式，默认情况下，在 REST 响应中返回正文内容之前，将删除嵌入 **body** 属性中的任意具有潜在不安全性的 HTML（例如 JavaScript）。若要获取整个原始 HTML 内容，请包括以下 HTTP 请求标头：
 ```
 Prefer: outlook.allow-unsafe-html
 ```
 
-**设置 From 和 Sender 属性**
+**设置 from 和 sender 属性**
 
 撰写邮件时，在大多数情况下，From 和 Sender 属性表示同一个已登录用户，除非其中一个属性已更新，如以下情况中所述：
 
-- 如果 Exchange 管理员已将邮箱的 **SendAs** 权限分配给其他一些用户，则可以更改 **From** 属性。通过在 Azure 管理门户选择邮箱所有者的**邮箱权限**，或通过使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet，管理员可以更改此属性。然后，可以通过编程方式将 **From** 属性设置为其中一个拥有邮箱的 **SendAs** 权限的用户。
-- 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **Sender** 属性。可以在 Outlook 中委派邮箱所有者。当代理代表邮箱所有者发送邮件时，**Sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。可以通过编程方式将 **Sender** 属性设置为拥有邮箱代理权限的用户。
+- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，则可以更改 **from** 属性。通过在 Azure 管理门户选择邮箱所有者的**邮箱权限**，或通过使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet，管理员可以更改此属性。然后，可以通过编程方式将 **from** 属性设置为其中一个拥有邮箱的 **sendAs** 权限的用户。
+- 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。可以在 Outlook 中委派邮箱所有者。当代理代表邮箱所有者发送邮件时，**sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。可以通过编程方式将 **sender** 属性设置为拥有邮箱代理权限的用户。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|

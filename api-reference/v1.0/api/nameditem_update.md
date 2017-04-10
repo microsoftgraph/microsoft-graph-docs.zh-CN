@@ -11,7 +11,7 @@ PATCH /workbook/names(<name>)
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -20,6 +20,7 @@ PATCH /workbook/names(<name>)
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |visible|boolean|指定对象是否可见。|
+|comment|    string    |表示与此名称相关联的注释。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [NamedItem](../resources/nameditem.md) 对象。
@@ -38,6 +39,8 @@ Content-length: 87
 {
   "name": "name-value",
   "type": "type-value",
+  "scope": "scope-value",
+  "comment": "comment-value",
   "value": {
   },
   "visible": true
