@@ -38,8 +38,8 @@ EventMessage 通常可以在收件箱文件夹中找到，它作为事件组织�
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
-|body|[itemBody](itembody.md)|邮件的正文。|
-|bodyPreview|String|邮件正文中的前 255 个字符。|
+|body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
+|bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
