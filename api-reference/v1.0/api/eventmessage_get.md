@@ -1,6 +1,9 @@
 # <a name="get-eventmessage"></a>获取 eventMessage
 
-检索 eventmessage 对象的属性和关系。
+检索 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。
+
+目前，此操作返回纯 HTML 格式的事件消息正文。
+
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：*Mail.Read*
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +54,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

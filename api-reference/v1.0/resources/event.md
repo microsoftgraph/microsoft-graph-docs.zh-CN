@@ -35,8 +35,8 @@
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |attendees|[与会者](attendee.md) 集合|事件的与会者集合。|
-|body|[itemBody](itembody.md)|与事件相关联的邮件正文。|
-|bodyPreview|String|与事件相关联的邮件预览。|
+|body|[itemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
+|bodyPreview|String|与事件相关联的邮件预览。文本格式。|
 |categories|String collection|与事件相关联的类别。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
