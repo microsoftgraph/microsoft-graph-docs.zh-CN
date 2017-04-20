@@ -1,6 +1,6 @@
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 
-指定会议的时间段。
+根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -24,7 +24,7 @@
 ## <a name="properties"></a>属性
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-|activityDomain|字符串|（可选）会议性质。可取值为：`unknown`、`work`、`personal`。目前，[findMeetingTimes](../api/user_findmeetingtimes.md) 始终假设值为 `work`，返回的所有会议时间建议都不会超出组织者或与会者的工作时间。|
+|activityDomain|String|（可选）活动性质。可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
