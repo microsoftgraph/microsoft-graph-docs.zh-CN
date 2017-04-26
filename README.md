@@ -18,14 +18,14 @@
 * 通过 [GitHub 问题](https://github.com/microsoftgraph/microsoft-graph-docs/issues)举报文档缺陷
 * 向 [Office 开发者平台 UserVoice](http://officespdev.uservoice.com) 添加文档请求
 
-##<a name="before-we-can-accept-your-pull-request"></a>我们可以接受拉取请求的先决条件
+## <a name="before-we-can-accept-your-pull-request"></a>我们可以接受拉取请求的先决条件
 
-###<a name="minor-corrections"></a>次要更正
+### <a name="minor-corrections"></a>次要更正
 
 针对此存储库中的文档和代码示例提交次要更正或说明时，无需发送参与许可协议 (CLA)。提交形式为拉取请求。我们会尽力在 10 个工作日内评审拉取请求。
 
 
-###<a name="larger-submissions"></a>大型提交
+### <a name="larger-submissions"></a>大型提交
 
 如果提交的是文档和代码示例的新更改或重大更改，需要先向我们发送已签名的参与许可协议 (CLA)，然后我们才能接受你的拉取请求（如果你属于以下任意一组的话）：
 
@@ -48,7 +48,7 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 
 ## <a name="use-github-git-and-this-repository"></a>使用 GitHub、Git 和此存储库
 
-**注意：**此部分中的大多数信息收录在 [GitHub 帮助] []文章中。如果已熟悉 Git 和 GitHub，请跳至“**参与和编辑内容**”部分，查看此存储库中代码/内容流的详细信息。
+**注意：** 此部分中的大多数信息收录在 [GitHub 帮助] []文章中。如果已熟悉 Git 和 GitHub，请跳至“**参与和编辑内容**”部分，查看此存储库中代码/内容流的详细信息。
 
 ### <a name="setting-up-your-fork-of-the-repository"></a>设置存储库分叉
 
@@ -83,7 +83,7 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 #### <a name="create-a-new-branch"></a>新建分支
 
 1.    打开 GitBash。
-2.    在提示符处键入 `git pull upstream master:<new branch name>`。此命令在本地新建分支，该分支是从最新的 microsoftgraph master 分支复制而来。**注意：**对于内部参与者，将命令中的 `master` 替换为要在特定日期发布的分支。
+2.    在提示符处键入 `git pull upstream master:<new branch name>`。此命令在本地新建分支，该分支是从最新的 microsoftgraph master 分支复制而来。**注意：** 对于内部参与者，将命令中的 `master` 替换为要在特定日期发布的分支。
 3.    在提示符处键入 `git push origin <new branch name>`。此命令将提醒 GitHub 注意这个新分支。现在，应该可以在 GitHub 存储库的分叉上看到这个新分支。
 4.    键入 `git checkout <new branch name>` 切换到新分支。
 
@@ -159,26 +159,26 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 
 下面列出了最常见的 markdown 语法：
 
-*     **换行符与段落：**Markdown 中没有 HTML `<br />` 元素。相反，新段落是通过两个文本块之间的空行进行指定。
-*    **斜体：**HTML `<i>some text</i>` 编写为 `*some text*`
-*     **粗体：**HTML `<strong>some text</strong>` 元素编写为 `**some text**`
-*     **标题：**HTML 标题由行开头的 `#` 字符数指定。`#` 字符数对应于标题的层级（例如，`#` = h1、`##` = h2 和 `###` = h3）。
-*     **编号列表：**若要创建编号（经过排序的）列表，请在代码行的开头添加 `1. `。若要在一个列表元素内添加多个元素，请按如下方式设置列表格式：
+*    **换行符与段落：** Markdown 中没有 HTML `<br />` 元素。相反，新段落是通过两个文本块之间的空行进行指定。
+*    **斜体：** HTML `<i>some text</i>` 编写为 `*some text*`
+*    **粗体：** HTML `<strong>some text</strong>` 元素编写为 `**some text**`
+*    **标题：** HTML 标题由行开头的 `#` 字符数指定。`#` 字符数对应于标题的层级（例如，`#` = h1、`##` = h2 和 `###` = h3）。
+*    **编号列表：** 若要创建编号（经过排序的）列表，请在代码行的开头添加 `1. `。若要在一个列表元素内添加多个元素，请按如下方式设置列表格式：
         
         1.    Notice that this line is tabbed over after the '.'
         
             Now notice that there is a line break between the two paragraphs in the list element, and that the indentation here matches the indentation of the line above.
 
-*    **点符列表：**点符（未经排序的）列表几乎与经过排序的列表完全相同，唯一的区别在于 `1. ` 被替换为 `* `、`- ` 或 `+ `。多元素列表的工作方式与它们在经过排序的列表中的工作方式相同。
-*    **链接：**链接的基本语法是 `[visible link text](link url)`。
+*    **点符列表：** 点符（未经排序的）列表几乎与经过排序的列表完全相同，唯一的区别在于 `1. ` 被替换为 `* `、`- ` 或 `+ `。多元素列表的工作方式与它们在经过排序的列表中的工作方式相同。
+*    **链接：** 链接的基本语法是 `[visible link text](link url)`。
 
     链接还可以包含引用，我们将在下面的**链接和图像引用**部分中对此进行介绍。
 
-*    **图像：**图像的基本语法是 `![alt text for the image](image url)`。
+*    **图像：** 图像的基本语法是 `![alt text for the image](image url)`。
 
     图像还可以包含引用，我们将在下面的**链接和图像引用**部分中对此进行介绍。
 
-*    **内嵌 HTML：**Markdown 允许内嵌 HTML：Markdown 以<i>斜体</i>形式正确呈现 `<i>italic</i>`。
+*    **内嵌 HTML：** Markdown 允许内嵌 HTML：Markdown 以<i>斜体</i>形式正确呈现 `<i>italic</i>`。
 
 ### <a name="link-and-image-references"></a>链接和图像引用
 
