@@ -38,7 +38,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 |**timeConstraint 中的 activityDomain 值**|**会议时间建议**|
 |:-----|:-----|
-|work| 建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。 |
+|工时| 建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。 |
 |personal| 建议处于用户的工作时间内及星期六和星期日。默认是星期一到星期日的上午八点到下午五点（使用邮箱的时区设置）。|
 |unrestricted | 建议可以是全年任意一天的任意时间段。|
 |unknown | 请勿使用此值，因为以后会弃用此值。当前其行为与 `work` 相同。根据需要将任何现有代码更改为使用 `work`、`personal`、或 `unrestricted`。
@@ -100,7 +100,8 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
-Content-type: application/json
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-Type: application/json
 
 { 
   "attendees": [ 
@@ -108,16 +109,9 @@ Content-type: application/json
       "type": "required",  
       "emailAddress": { 
         "name": "Fanny Downs",
-        "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
+        "address": "fannyd@contoso.onmicrosoft.com" 
       } 
-    },
-    { 
-      "type": "optional",  
-      "emailAddress": { 
-        "name": "Dana Swope",
-        "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-      } 
-    } 
+    }
   ],  
   "locationConstraint": { 
     "isRequired": "false",  
@@ -129,15 +123,16 @@ Content-type: application/json
       } 
     ] 
   },  
-  "timeConstraint": { 
+  "timeConstraint": {
+    "activityDomain":"unrestricted", 
     "timeslots": [ 
       { 
         "start": { 
-          "dateTime": "2016-10-20T07:00:00",  
+          "dateTime": "2017-04-17T09:00:00",  
           "timeZone": "Pacific Standard Time" 
         },  
         "end": { 
-          "dateTime": "2016-10-20T17:00:00",  
+          "dateTime": "2017-04-19T17:00:00",  
           "timeZone": "Pacific Standard Time" 
         } 
       } 
@@ -145,7 +140,7 @@ Content-type: application/json
   },  
   "meetingDuration": "PT2H",
   "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "60"
+  "minimumAttendeePercentage": "100"
 }
 ```
 
@@ -160,97 +155,76 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-Length: 976
 
 {
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
-   "meetingTimeSuggestions":[
-      {
-         "meetingTimeSlot":{
-            "start":{
-               "dateTime":"2016-10-20T15:00:00.0000000",
-               "timeZone":"UTC"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
+    "emptySuggestionsReason":"",
+    "meetingTimeSuggestions":[
+        {
+            "confidence":100.0,
+            "organizerAvailability":"free",
+            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
+            "meetingTimeSlot":{
+                "start":{
+                    "dateTime":"2017-04-17T18:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                },
+                "end":{
+                    "dateTime":"2017-04-17T20:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                }
             },
-            "end":{
-               "dateTime":"2016-10-20T17:00:00.0000000",
-               "timeZone":"UTC"
-            }
-         },
-         "confidence":100,
-         "organizerAvailability":"free",
-         "attendeeAvailability":[
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Fanny Downs",
-                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
+            "attendeeAvailability":[
+                {
+                    "availability":"free",
+                    "attendee":{
+                        "type":"required",
+                        "emailAddress":{
+                            "address":"fannyd@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations":[
+                {
+                    "displayName":"Conf room Hood"
+                }
+            ]
+        },
+        {
+            "confidence":100.0,
+            "organizerAvailability":"free",
+            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
+            "meetingTimeSlot":{
+                "start":{
+                    "dateTime":"2017-04-17T20:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                },
+                "end":{
+                    "dateTime":"2017-04-17T22:00:00.0000000",
+                    "timeZone":"Pacific Standard Time"
+                }
             },
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Dana Swope",
-                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
-            }
-         ],
-         "locations":[
-            {
-               "displayName":"Conf room Hood"
-            }
-         ],
-         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
-      },
-      {
-         "meetingTimeSlot":{
-            "start":{
-               "dateTime":"2016-10-20T17:00:00.0000000",
-               "timeZone":"UTC"
-            },
-            "end":{
-               "dateTime":"2016-10-20T19:00:00.0000000",
-               "timeZone":"UTC"
-            }
-         },
-         "confidence":100,
-         "organizerAvailability":"free",
-         "attendeeAvailability":[
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Fanny Downs",
-                    "address": "fannyd@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"free"
-            },
-            {
-               "attendee":{
-                  "type":"required",
-                  "emailAddress":{
-                    "name": "Dana Swope",
-                    "address": "danas@a830edad905084922E16072013.onmicrosoft.com" 
-                  }
-               },
-               "availability":"unknown"
-            }
-         ],
-         "locations":[
-            {
-               "displayName":"Conf room Hood"
-            }
-         ],
-         "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available."
-      }
-   ],
-   "emptySuggestionsReason":""
+            "attendeeAvailability":[
+                {
+                    "availability":"free",
+                    "attendee":{
+                        "type":"required",
+                        "emailAddress":{
+                            "address":"fannyd@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations":[
+                {
+                    "displayName":"Conf room Hood"
+                }
+            ]
+        }
+   ]
 }
 ```
 
