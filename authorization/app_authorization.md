@@ -1,7 +1,7 @@
 
 # <a name="microsoft-graph-app-authentication-using-azure-ad"></a>使用 Azure AD 进行 Microsoft Graph 应用身份验证
 
-本文详细介绍了 Microsoft Graph 应用的示例身份验证和授权流。该示例使用 Azure Active Directory (Azure AD) 和身份验证提供程序，以及作为身份验证流的<a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">授权代码授予流</a>。该示例将演示如何使用 Microsoft Graph 应用中的 Azure AD 对用户进行身份验证、获取访问令牌及如何使用刷新令牌续订访问令牌。
+本文详细介绍了 Microsoft Graph 应用的示例身份验证和授权流。该示例将 Azure Active Directory (Azure AD) 用作身份验证提供程序，并将<a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">授权代码授予流</a>用作身份验证流。该示例将演示如何使用 Microsoft Graph 应用中的 Azure AD 对用户进行身份验证、获取访问令牌及如何使用刷新令牌续订访问令牌。
 
 对于代码授予流，身份验证流程可以分成两个基本步骤：
 

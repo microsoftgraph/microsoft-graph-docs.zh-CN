@@ -31,7 +31,10 @@
 
 * 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。 
 * [列出用户的日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) 允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) 的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
-* 你还可以 [列出基于 ICS 的日历事件](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)。
+* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)。
+
+#### <a name="using-delta-query"></a>使用 delta 查询
+有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
 
 ## <a name="groups"></a>组
 #### <a name="policy"></a>策略
@@ -65,6 +68,8 @@ Microsoft Graph 公开了两个权限范围（*Group.Read.All* 和 *Group.ReadWr
 #### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 目前，`/v1.0` 和 `/beta` 中均存在一个问题，即会阻止在 POST 或 PATCH 操作中设置组的属性 **allowExternalSenders**。
 
+#### <a name="using-delta-query"></a>使用 delta 查询
+有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
 
 ## <a name="contacts"></a>联系人
 
@@ -161,4 +166,6 @@ Microsoft Graph 服务由世纪互联运营（现可在中国使用）。请查�
 
   >  我们非常重视您的反馈意见。请在 [Stack Overflow](http://stackoverflow.com/questions/tagged/office365) 上与我们联系。使用 {MicrosoftGraph} 和 {office365} 标记出你的问题。
 
+## <a name="delta-query"></a>Delta 查询
 
+仅在跟踪其更改的特定资源类中才支持跟踪对用户和组的关系更改。例如，如果客户端正在跟踪*组*更改并且已选择*成员*关系，若这些成员也是*组*，则客户端将只接收 delta 查询响应中的成员身份更新。换句话说，就是尚不支持跟踪用户的组成员身份。Microsoft Graph 团队知道这是一个高优先级方案，且目标是要在不久的将来发布此更新。

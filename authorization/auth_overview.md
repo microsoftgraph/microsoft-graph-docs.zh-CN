@@ -35,7 +35,7 @@ Microsoft Graph 支持两种身份验证提供程序：
    </tr>
   <tr>
     <td>支持的应用类型</td>
-    <td style="vertical-align: text-top;"><p>Web 应用</p><p>Web API</p><p>移动和本机应用</p><p>单页应用 (SPA)</p><p>独立 Web API</p><p>守护程序/服务器端应用</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">详细信息</a></p></td> 
+    <td style="vertical-align: text-top;"><p>Web 应用</p><p>Web API</p><p>移动和本机应用</p><p>单页应用 (SPA)</p><p>独立 Web API</p><p>守护程序/服务器端应用</p><p>云解决方案提供商应用</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">详细信息</a></p></td> 
     <td style="vertical-align: text-top;"><p>Web 应用</p><p>Web API</p><p>移动和本机应用</p><p>单页应用 (SPA)</p><p>守护程序/服务器端应用</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">详细信息</a></td>
    </tr>
   <tr>
