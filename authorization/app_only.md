@@ -17,7 +17,7 @@
 
 ## <a name="request-an-access-token-from-the-token-issuing-endpoint"></a>从令牌颁发终结点请求获取访问令牌
 
-与客户端应用不同，服务或守护程序应用不具有用户登录功能，也无法授权您的应用程序。相反，应用程序必须实现允许其使用它自己的凭据、客户端 ID 和应用程序键的 OAuth 2.0 客户端凭据授予流，以便在调用 Microsoft Graph 时进行身份验证（而不是模拟用户）。有关身份验证流的详细信息，请参阅 [使用客户端凭据的服务到服务调用](https://msdn.microsoft.com/en-us/library/azure/dn645543.aspx)。
+与客户端应用不同，服务或守护程序应用不具有用户登录功能，也无法授权您的应用程序。相反，应用程序必须实现允许其使用它自己的凭据、客户端 ID 和应用程序键的 OAuth 2.0 客户端凭据授予流，以便在调用 Microsoft Graph 时进行身份验证（而不是模拟用户）。有关身份验证流的详细信息，请参阅 [使用客户端凭据的服务到服务调用](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)。
 
 对令牌颁发终结点提出包含以下参数的 HTTP POST 请求（用您应用的客户端 ID 和应用程序键分别替换 `<clientId>` 和 `<clientSecret>`）。
 
