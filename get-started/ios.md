@@ -198,7 +198,7 @@
         // You will set your application's clientId
         NSString * const kClientId    = @"ENTER_CLIENT_ID_HERE";
         NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
-注意：你会注意到为该项目配置了以下权限范围：**https://graph.microsoft.com/Mail.Send”、“https://graph.microsoft.com/User.Read”、“offline_access”**。该项目中所使用的服务调用，向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址）需要这些应用的权限以正常运行。
+注意：你会注意到为该项目配置了以下权限范围：**https://graph.microsoft.com/Mail.Send”、 “https://graph.microsoft.com/User.Read”、 “offline_access”**。该项目中所使用的服务调用，向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址）需要这些应用的权限以正常运行。
 
 2. 运行示例，点击“**连接**”，使用你的个人帐户、工作或学校帐户登录，并授予所请求的权限。
 
