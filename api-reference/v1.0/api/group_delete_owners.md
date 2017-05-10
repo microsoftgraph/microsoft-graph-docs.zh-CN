@@ -13,7 +13,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt;. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -29,7 +29,7 @@ DELETE /groups/{id}/owners/{id}/$ref
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 在请求中，指定要在 $ref 段后删除的 directory 对象 `id`。
 
