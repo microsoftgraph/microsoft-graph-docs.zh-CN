@@ -1,12 +1,12 @@
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
-本文介绍了 Microsoft Graph 的已知问题。若要了解最新更新的信息，请参阅 [Microsoft Graph 更改日志](http://graph.microsoft.io/en-us/changelog)。
+本文介绍了 Microsoft Graph 的已知问题。有关最新更新的信息，请参阅 [ Microsoft Graph 更改日志](http://graph.microsoft.io/en-us/changelog)。
 
 ## <a name="graph-quick-start"></a>Graph 快速入门
-2017 年 4 月 30 日 - 快速入门流程中有一个 bug，其中 Asp.Net MVC、Node.js、Angular、PHP、Python 和Ruby 未正确配置重定向 URL。我们正致力于将此修补程序部署到生产环境。若要解决此问题，请参阅我们的[入门演练](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+2017 年 4 月 30 日 - 快速入门流程中有一个 bug，其中 Asp.Net MVC、Node.js、Angular、PHP、Python 和Ruby 未正确配置重定向 URL。我们正致力于将此修补程序部署到生产环境。若要解决此问题，请参阅我们的[入门演练](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)。 此问题已于 5 月 3 日解决。
 
 ## <a name="graph-explorer"></a>Graph 浏览器
-由于发生服务问题，我们已禁止 Microsoft 帐户登录 Graph 浏览器。我们正在努力修复此问题，将在问题修复后更新此文本。  
+由于发生服务问题，我们已禁止 Microsoft 帐户登录 Graph 浏览器。我们正在努力修复此问题，将在问题修复后更新此文本。更新 - 5 月 3 日 - 已解决此问题。
 
 无法使用 Internet Explorer 和 Microsoft Edge 进行登录。截至 2017 年 2 月 2 日，此问题已得到解决。
 

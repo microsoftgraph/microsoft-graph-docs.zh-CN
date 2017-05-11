@@ -16,7 +16,7 @@
 ### <a name="microsoft-graph-explorer"></a>Microsoft Graph 资源管理器
 | Microsoft Graph 资源管理器（中国） | Microsoft Graph 资源管理器|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>Azure OpenID Connect 和 OAuth 2.0
 用于获取登录令牌或调用由世纪互联运营的 Microsoft Graph 的终结点与其他产品的终结点不同。 
