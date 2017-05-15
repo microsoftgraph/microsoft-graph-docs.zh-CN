@@ -12,7 +12,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ### <a name="parameters"></a>参数
@@ -42,7 +42,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
   "name": "workbookrange_resizedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
 ```
 
 ##### <a name="response"></a>响应

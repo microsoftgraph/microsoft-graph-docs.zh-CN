@@ -2,7 +2,7 @@
 
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一： 
+若要执行此 API，必须有以下任意一个**范围**：*Group.Read.All* 或 *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
