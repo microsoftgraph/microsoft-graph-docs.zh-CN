@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | 持有者 <token>。必需。 |
+| Authorization  | string  | Bearer <token>. Required. |
 | Prefer: outlook.timezone | string | 事件在响应中的默认时区。 |
 
 ## <a name="request-body"></a>请求正文
@@ -60,22 +60,27 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
+
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
-Prefer: outlook.timezone="Pacific Standard Time"
 
+```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
+
 ##### <a name="response"></a>响应
+
 下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

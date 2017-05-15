@@ -15,9 +15,9 @@
 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
-可以使用 [Azure AD v2.0 终结点](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) 对 Excel REST API 调用进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v2.0 终结点](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) 对 Excel REST API 调用进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
-要使用 Excel 资源，需要以下 [权限范围](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes) 之一：
+要使用 Excel 资源，需要以下 [权限范围](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes) 之一：
 
 * Files.Read 
 * Files.ReadWrite
@@ -49,7 +49,7 @@
 
 4. 复制应用程序 ID。这是应用的唯一标识符。
 
-5. 在“应用程序机密”****下，选择“生成新密码”****。从“生成的新密码”****对话框复制应用机密。
+5. 在“**应用程序机密**”下，选择“**生成新密码**”。从“**生成的新密码**”对话框复制应用机密。
 
     将使用此应用程序 ID 和应用机密配置应用。
 

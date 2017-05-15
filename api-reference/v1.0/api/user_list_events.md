@@ -44,8 +44,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | 持有者 <token>。必需。 |
-| Prefer: outlook.timezone | string | 事件在响应中的默认时区。可选。 | 
+| Authorization  | string  | Bearer <token>. Required. |
+| Prefer: outlook.timezone | 字符串 | 事件在响应中的默认时区。可选。 | 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,9 +63,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。以默认的 HTML 格式返回 **body** 属性。

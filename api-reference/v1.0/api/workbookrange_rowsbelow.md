@@ -36,7 +36,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
   "name": "workbookrange_rowsBelow"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 
 ##### <a name="response"></a>响应
