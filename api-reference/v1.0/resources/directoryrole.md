@@ -11,10 +11,11 @@
 |[获取 directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | 读取 directoryRol 对象的属性和关系。 |
 |[创建成员](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
 |[列出成员](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
+|[删除成员](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| 删除目录角色中的用户。|
 |[激活 directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | 激活目录角色。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |说明|String|目录角色说明。只读。 |
 |displayName|String|目录角色的显示名称。只读。 |
@@ -22,7 +23,7 @@
 |roleTemplateId|String| 此角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) 的 **id**。使用 POST 操作在租户中激活目录角色时，必须指定其属性。激活目录角色后，其属性为只读。 |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 NULL。|
 

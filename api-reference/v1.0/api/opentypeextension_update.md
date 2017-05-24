@@ -14,20 +14,26 @@
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [事件](../resources/event.md) | _Calendars.ReadWrite_ | [组事件](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ | 
-| [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [设备](../resources/device.md) | _Device.ReadWrite.All_ | [事件](../resources/event.md) | _Calendars.ReadWrite_ |
+| [组](../resources/group.md) | _Group.ReadWrite.All_ | [组事件](../resources/event.md) | _Group.ReadWrite.All_ |
+| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ |
+| [组织](../resources/organization.md) | _Directory.AccessAsUser.All_ | [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [用户](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /devices/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /organization/{Id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**注意：**以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。

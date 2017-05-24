@@ -3,11 +3,14 @@
 检索 table 对象列表。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables
-GET /workbook/worksheets(<id|name>)/tables
+GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。

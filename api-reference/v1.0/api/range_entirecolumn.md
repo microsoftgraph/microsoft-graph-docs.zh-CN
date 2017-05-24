@@ -3,18 +3,21 @@
 获取表示区域整列的对象。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/EntireColumn
-POST /workbook/worksheets(<id|name>)/range(<address>)/EntireColumn
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireColumn
+GET /workbook/names(<name>)/range/EntireColumn
+GET /workbook/worksheets/{id|name}/range(<address>)/EntireColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -31,7 +34,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireColumn
   "name": "range_entirecolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### <a name="response"></a>响应

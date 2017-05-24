@@ -3,15 +3,18 @@
 更新 chartseries 对象的属性。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -31,7 +34,7 @@ PATCH /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)
   "name": "update_chartseries"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 Content-type: application/json
 Content-length: 26
 

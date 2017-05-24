@@ -15,7 +15,7 @@ GET /subscribedSkus
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | 字符串  | 持有者令牌。必需。 |
+| Authorization  | string  | 持有者&lt;令牌&gt;。*必需* |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

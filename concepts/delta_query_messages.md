@@ -1,6 +1,6 @@
-# <a name="get-incremental-changes-to-messages-in-a-folder-preview"></a>获取文件夹中邮件的增量更改（预览）
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改 
 
-Delta 查询可通过调用一系列的 [delta](../api-reference/beta/api/message_delta.md) 函数查询文件夹中邮件的添加、删除或更新。Delta 数据使你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。
+Delta 查询可通过调用一系列的 [delta](../api-reference/v1.0/api/message_delta.md) 函数查询文件夹中邮件的添加、删除或更新。Delta 数据使你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。
 
 Delta 查询支持检索文件夹（例如，用户的收件箱）中所有邮件的完全同步，以及检索自上次同步以来该文件夹中所有已更改邮件的增量同步。通常，需要对文件夹中的所有邮件进行初始完全同步，之后可定期获取该文件夹的增量更改。 
 
@@ -8,10 +8,10 @@ Delta 查询支持检索文件夹（例如，用户的收件箱）中所有邮�
 
 Delta 查询对每个文件夹分别执行操作。为跟踪文件夹层次结构中邮件的更改，需要分别跟踪每个文件夹。 
 
-跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[获取邮件](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages)，区别在于要添加 **delta** 函数：
+跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[获取邮件](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages)，区别在于要添加 **delta** 函数：
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 使用 **delta** 函数的 GET 请求返回以下任一内容：
@@ -92,7 +92,7 @@ since the completion of the very first round.
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -149,7 +149,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -165,8 +165,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -206,7 +206,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -222,8 +222,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -251,7 +251,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -260,6 +260,6 @@ Prefer: odata.maxpagesize=2
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Graph 增量查询](../Concepts/delta_query_overview.md)
-- [获取日历视图中事件的增量更改（预览）](../Concepts/delta_query_events.md)
-- [获取组的增量更改（预览）](../Concepts/delta_query_groups.md)
-- [获取用户的增量更改（预览）](../Concepts/delta_query_users.md)
+- [获取日历视图中事件的增量更改](../Concepts/delta_query_events.md)
+- [获取组的增量更改](../Concepts/delta_query_groups.md)
+- [获取用户的增量更改](../Concepts/delta_query_users.md)

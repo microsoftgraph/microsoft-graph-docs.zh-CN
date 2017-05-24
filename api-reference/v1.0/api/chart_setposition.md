@@ -3,16 +3,19 @@
 相对于工作表上的单元格放置图表。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -35,7 +38,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
   "name": "chart_setposition"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setPosition
 Content-type: application/json
 Content-length: 66
 

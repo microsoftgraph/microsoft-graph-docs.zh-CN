@@ -2,8 +2,10 @@
 
 mailFolder 中的邮件。
 
-通过该资源可以使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+该资源支持：
 
+- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 通过提供 [delta](../api/message_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -17,7 +19,8 @@ mailFolder 中的邮件。
 |[复制](../api/message_copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message_createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
 |[createReply](../api/message_createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
-|[createReplyAll](../api/message_createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
+|[createReplyAll](../api/message_createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以[更新](../api/message_update.md)或[发送](../api/message_send.md)草稿。|
+|[delta](../api/message_delta.md)|[邮件](message.md)集合| 获取指定文件夹中已添加、删除或更新的邮件集。|
 |[转发](../api/message_forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
 |[移动](../api/message_move.md)|[邮件](message.md)|将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本。|
 |[回复](../api/message_reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
@@ -29,6 +32,8 @@ mailFolder 中的邮件。
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[邮件](message.md)  |在新建或现有的邮件中创建一个或多个单值扩展属性。   |
 |[获取具有单值扩展属性的邮件](../api/singlevaluelegacyextendedproperty_get.md)  | [邮件](message.md) | 通过使用 `$expand` 或 `$filter` 获取包含单值扩展属性的邮件。 |
@@ -41,7 +46,7 @@ mailFolder 中的邮件。
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
-|bodyPreview|String|邮件正文中的前 255 个字符。文本格式。|
+|bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
@@ -145,9 +150,11 @@ Prefer: outlook.allow-unsafe-html
 
 - [获取邮箱设置](../api/user_get_mailboxsettings.md) 
 - [更新邮箱设置](../api/user_update_mailboxsettings.md)
+- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
+- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-- [使用架构扩展向组添加自定义数据（预览）](../../../concepts/extensibility_schema_groups.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

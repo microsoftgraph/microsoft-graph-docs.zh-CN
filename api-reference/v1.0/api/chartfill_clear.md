@@ -3,18 +3,21 @@
 清除图表元素的填充颜色。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -31,7 +34,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
 ##### <a name="response"></a>响应

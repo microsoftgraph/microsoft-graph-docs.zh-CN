@@ -3,16 +3,19 @@
 更新 table 对象的属性。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)
+PATCH /workbook/tables/{id|name}
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -35,12 +38,11 @@ PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)
   "name": "update_table"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}
 Content-type: application/json
 Content-length: 109
 
 {
-  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

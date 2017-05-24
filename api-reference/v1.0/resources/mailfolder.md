@@ -2,6 +2,7 @@
 
 用户邮箱中的 mailFolder，例如收件箱、草稿箱和已发送邮件。MailFolders 可包含邮件和子 mailFolder。
 
+该资源支持通过提供 [delta](../api/mailfolder_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -15,6 +16,7 @@
 |[更新](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|更新指定的 mailFolder 对象。 |
 |[删除](../api/mailfolder_delete.md) | 无 |删除指定的 mailFolder 对象。 |
 |[复制](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|将 mailfolder 及其内容复制到其他 mailfolder。|
+|[delta](../api/mailfolder_delta.md)|[mailFolder](mailfolder.md) 集合|获取用户邮箱中已添加、删除或移除的邮件文件夹集。|
 |[移动](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|将 mailFolder 及其内容移动到其他 mailFolder。|
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |在新建或现有的 mailFolder 中创建一个或多个单值扩展属性。   |
 |[获取具有单值扩展属性的 mailFolder](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的 mailFolder。 |
@@ -77,6 +79,12 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
+- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

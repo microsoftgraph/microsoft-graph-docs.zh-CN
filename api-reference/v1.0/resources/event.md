@@ -2,6 +2,12 @@
 
 日历中的事件。
 
+该资源支持：
+
+- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 通过提供 [delta](../api/event_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+
+
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
@@ -14,6 +20,7 @@
 |[接受](../api/event_accept.md)|无|接受指定的事件。|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|无|暂时接受指定的事件。|
 |[拒绝](../api/event_decline.md)|无|拒绝对指定事件的邀请。|
+|[delta](../api/event_delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
 |[dismissReminder](../api/event_dismissreminder.md)|无|消除指定事件的提醒。|
 |[snoozeReminder](../api/event_snoozereminder.md)|无|暂停指定事件的提醒。|
 |[列出实例](../api/event_list_instances.md) |[事件](event.md) 集合| 获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。|
@@ -36,7 +43,7 @@
 |:---------------|:--------|:----------|
 |attendees|[与会者](attendee.md) 集合|事件的与会者集合。|
 |body|[itemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
-|bodyPreview|String|与事件相关联的邮件预览。文本格式。|
+|bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
 |categories|String collection|与事件相关联的类别。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -144,9 +151,11 @@
 
 ## <a name="see-also"></a>另请参阅
 
+- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
+- [获取文件夹中事件的增量更改](../../../concepts/delta_query_events.md)
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-- [使用架构扩展向组添加自定义数据（预览）](../../../concepts/extensibility_schema_groups.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

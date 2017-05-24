@@ -3,18 +3,21 @@
 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
-POST /workbook/worksheets(<id|name>)/range(<address>)/insert
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/insert
+POST /workbook/worksheets/{id|name}/range(<address>)/insert
+POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文

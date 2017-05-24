@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-users-preview"></a>获取用户的增量更改（预览）
+# <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 
-[Delta 查询](./delta_query_overview.md)可通过调用一系列 [delta](../api-reference/beta/api/user_delta.md) 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。
+[Delta 查询](./delta_query_overview.md)可通过调用一系列 [delta](../api-reference/v1.0/api/user_delta.md) 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。
 
-Delta 查询支持检索租户中所有用户的完全同步以及支持仅检索自上次同步以来已更改用户的增量同步。通常，需要对租户中的所有用户进行初始完全同步，之后可定期获取用户的增量更改。 
+以后，对本地配置文件存储使用同步用户功能的客户端可以将增量查询用于初始完全同步和增量同步。通常，客户会对租户中的所有用户进行初始完全同步，之后定期获取对用户的增量更改。
 
 ## <a name="tracking-user-changes"></a>跟踪用户更改
 
-跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出用户](../api-reference/beta/api/user_list.md)的方式非常相似，除了要包括以下内容：
+跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出用户](../api-reference/v1.0/api/user_list.md)的方式非常相似，除了要包括以下内容：
 
 - **delta** 函数。
 - 上一个 GET **delta** 函数调用的[状态令牌](./delta_query_overview.md)（_deltaToken_ 或 _skipToken_）。
@@ -22,7 +22,7 @@ Delta 查询支持检索租户中所有用户的完全同步以及支持仅检�
 
 ## <a name="initial-request"></a>初始请求
 
-为开始跟踪用户资源的更改，请在用户资源上发出包含 delta 函数的请求。 
+为开始跟踪用户资源的更改，请在用户资源上发出包含 delta 函数的请求。
 
 请注意以下事项：
 
@@ -30,12 +30,12 @@ Delta 查询支持检索租户中所有用户的完全同步以及支持仅检�
 - 初始请求不包括状态令牌。状态令牌将用于后续请求中。
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,givenName,surname
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-### <a name="initial-response"></a>初始响应
+## <a name="initial-response"></a>初始响应
 
-如果成功，此方法的响应正文返回`200, OK`响应代码和[用户](../api-reference/beta/resources/user.md)集合对象。假定整组用户过大，则响应还将包含 nextLink 状态令牌。
+如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../api-reference/v1.0/resources/user.md)集合对象。假定整组用户过大，则响应还将包含 nextLink 状态令牌。
 
 本示例中，返回 nextLink URL，表示此会话存在要检索的其他数据页面。初始请求的 $select 查询参数已编码为 nextLink URL。
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,surname)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,surname)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
   "value": [
     {
       "displayName":"Testuser1",
@@ -68,7 +68,7 @@ Content-type: application/json
 第二个请求指定上一个响应中返回的 `skipToken`。请注意不需要 `$select` 参数，因为 `skipToken` 已将其编码且包含其中。
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
 ## <a name="nextlink-response"></a>nextLink 响应
@@ -80,8 +80,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"Testuser3",
@@ -104,7 +104,7 @@ Content-type: application/json
 第三个请求继续使用上次同步请求返回的最新 `skipToken`。 
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
 ## <a name="final-nextlink-response"></a>最终 nextLink 响应
@@ -116,8 +116,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser5",
@@ -140,7 +140,7 @@ Content-type: application/json
 通过使用[上次响应](#final-nextlink-response)中的 `deltaToken`，你将能够获取上次请求以来的已更改用户（添加、删除或更新）。
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
+GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
 ## <a name="deltalink-response"></a>deltaLink 响应
@@ -152,8 +152,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": []
 }
 ```
@@ -165,8 +165,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser7",
@@ -175,9 +175,12 @@ Content-type: application/json
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "removed":"changed",
-      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d",
+      "@removed": {
+         "reason": "changed"
+      }
     }
+  ]
 }
 ```
 ## <a name="see-also"></a>另请参阅

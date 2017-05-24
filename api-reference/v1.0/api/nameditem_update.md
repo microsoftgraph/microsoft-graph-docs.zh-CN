@@ -3,6 +3,9 @@
 更新 nameditem 对象的属性。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +40,6 @@ Content-type: application/json
 Content-length: 87
 
 {
-  "name": "name-value",
   "type": "type-value",
   "scope": "scope-value",
   "comment": "comment-value",

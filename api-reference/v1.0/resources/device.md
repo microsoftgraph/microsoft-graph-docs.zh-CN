@@ -2,6 +2,9 @@
 
 表示在组织中注册的设备。也可以在云中使用设备注册服务或通过 Intune 创建设备。条件访问策略使用它们进行多重身份验证。这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。继承自 [directoryObject](directoryobject.md)。
 
+通过该资源可以使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+
+
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
@@ -15,6 +18,11 @@
 |[列出 registeredOwners](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md) 集合| 从 registeredOwners 导航属性中获取身份为设备的注册所有者的用户。|
 |[创建 registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| 通过发布到 registeredUsers 导航属性，为该设备添加新注册用户。|
 |[列出 registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
+|**开放扩展**| | |
+|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
+|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    |说明|
@@ -39,6 +47,7 @@
 ## <a name="relationships"></a>关系
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
+|extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
 
@@ -51,6 +60,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

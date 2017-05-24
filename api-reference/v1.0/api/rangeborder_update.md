@@ -3,17 +3,20 @@
 更新 rangeborder 对象的属性。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/borders(<sideIndex>)
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders(<sideIndex>)
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/borders(<sideIndex>)
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -40,7 +43,6 @@ Content-type: application/json
 Content-length: 136
 
 {
-  "id": "id-value",
   "color": "color-value",
   "style": "style-value",
   "sideIndex": "sideIndex-value",

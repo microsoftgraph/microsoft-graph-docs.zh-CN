@@ -3,12 +3,12 @@
 检索 [驱动器](../resources/drive.md) 资源的属性和关系。驱动器是文件系统的顶级容器。Graph API 允许你访问用户 OneDrive 或 OneDrive for Business 的驱动器资源或 SharePoint 文档库。
 
 ## <a name="prerequisites"></a>先决条件
+
 要执行此 API，需要以下**范围**之一：
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>获取用户的 OneDrive
 
@@ -17,29 +17,35 @@
 ### <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>获取与组关联的文档库
+## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
-若要访问 [组](../resources/group.md) 的默认文档库，你的应用程序应请求组中的 **驱动器** 关系。
+若要访问[组](../resources/group.md)的默认文档库，你的应用程序应请求组中的**驱动器**关系。
 
 ### <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [驱动器](../resources/drive.md) 资源。
 
 ## <a name="example"></a>示例

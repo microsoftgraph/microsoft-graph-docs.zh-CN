@@ -4,38 +4,41 @@
 
 **注意：**OneDrive 个人版返回的项将不包括 **SharePointIds** 方面。
 
-### <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>属性
+## <a name="properties"></a>属性
 
-| 属性          | 类型    | 说明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | SharePoint 中的项列表的唯一标识符。                          |
-| listItemId        | string  | 包含列表中的项的整数标识符。                    |
-| listItemUniqueId  | string  | OneDrive for Busienss 或 SharePoint 网站中的项的唯一标识符。 |
-| siteId            | string  | 项的网站集合的唯一标识符。 |
-| webId             | string  | 项的网站的唯一标识符。                          |
+| 属性         | 类型         | 说明                                                                                  |
+| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
+| listId           | string       | SharePoint 中的项列表的唯一标识符 (guid)。                              |
+| listItemId       | string       | 包含列表中的项的整数标识符。                               |
+| listItemUniqueId | string       | OneDrive for Busienss 或 SharePoint 网站中的项的唯一标识符 (guid)。 |
+| siteId           | string       | 项的网站集 (SPSite) 的唯一标识符 (guid)。                        |
+| siteUrl          | string (url) | 包含项的网站的 SharePoint URL。                                      |
+| webId            | string       | 项的网站集 (SPWeb) 的唯一标识符 (guid)。                                    |
 
-## <a name="remarks"></a>注解 
+## <a name="remarks"></a>注解
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+有关 **driveItem** 上 facet 的详细信息，请参阅 [**driveItem**](driveitem.md)。
 
 
 

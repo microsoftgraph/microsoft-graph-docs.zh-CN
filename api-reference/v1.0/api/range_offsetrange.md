@@ -3,18 +3,21 @@
 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/OffsetRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/OffsetRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
+GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -37,7 +40,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

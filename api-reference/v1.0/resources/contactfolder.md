@@ -2,6 +2,9 @@
 
 包含联系人的文件夹。
 
+该资源支持通过提供 [delta](../api/contactfolder_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+
+
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
@@ -11,6 +14,7 @@
 |[删除](../api/contactfolder_delete.md) | 无 |删除 contactFolder 对象。 |
 |[列出 childFolder](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取指定联系人文件夹下的子文件夹的集合。|
 |[创建子 ContactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
+|[delta](../api/contact_delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
 |[列出文件夹中的联系人](../api/contactfolder_list_contacts.md) |[联系人](contact.md) 集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
 |[在文件夹中创建联系人](../api/contactfolder_post_contacts.md) |[联系人](contact.md)| 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 端点中。|
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |在新建或现有的 contactFolder 中创建一个或多个单值扩展属性。   |
@@ -60,6 +64,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
+- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,17 +3,20 @@
 执行排序操作。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/apply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/apply
+POST /workbook/tables/{id|name}/sort/apply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -37,7 +40,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/apply
   "name": "tablesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
 Content-type: application/json
 Content-length: 298
 

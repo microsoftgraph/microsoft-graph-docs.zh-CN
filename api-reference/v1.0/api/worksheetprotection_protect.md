@@ -3,16 +3,19 @@
 保护工作表。如果工作表处于受保护状态，则会引发它。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/protection/protect
+POST /workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +37,7 @@ POST /workbook/worksheets(<id|name>)/protection/protect
   "name": "worksheetprotection_protect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/protection/protect
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
 Content-type: application/json
 Content-length: 383
 

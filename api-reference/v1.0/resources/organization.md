@@ -2,12 +2,20 @@
 
 表示 Azure Active Directory 租户。只支持在租户上执行读取和更新操作；不支持创建和删除操作。继承自 [directoryObject](directoryobject.md)。
 
+通过该资源可以使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+
+
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization_get.md) | [组织](organization.md) |读取 organization 对象的属性和关系。|
 |[更新](../api/organization_update.md) | [组织](organization.md)  |更新 organization 对象。（仅可以更新 **marketingNotificationMails** 和 **technicalNotificationMails** 属性。） |
+|**开放扩展**| | |
+|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
+|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性
 
@@ -37,7 +45,10 @@
 | verifiedDomains                      | [VerifiedDomain](verifieddomain.md) 集合                    | 与该租户相关联的域集合。不可为 null。                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>关系
-无
+| 关系 | 类型    |说明|
+|:---------------|:--------|:----------|
+|extensions|[扩展](extension.md)集合|为组织定义的开放扩展集合。只读。可为 Null。|
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,7 +57,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"
@@ -76,6 +87,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

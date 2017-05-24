@@ -1,6 +1,8 @@
 # <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>在 Xamarin Forms 应用中开始使用 Microsoft Graph
 
-本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 Xamarin Forms 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) 示例中的代码，以说明在使用 Microsoft Graph 的应用中必须实现的主要概念。本文还介绍如何通过使用 [Microsoft Graph 客户端库](http://www.nuget.org/packages/Microsoft.Graph/) 来访问 Microsoft Graph。
+> **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
+
+本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/graph/docs/concepts/converged_auth) 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 Xamarin Forms 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) 示例中的代码，以说明在使用 Microsoft Graph 的应用中必须实现的主要概念。本文还介绍如何通过使用 [Microsoft Graph 客户端库](http://www.nuget.org/packages/Microsoft.Graph/) 来访问 Microsoft Graph。
 
 这是将要创建的应用。
 
@@ -8,7 +10,7 @@
 | --- | ------- | ----|
 | <img src="images/UWP.png" alt="Connect sample on UWP" width="100%" /> | <img src="images/Droid.png" alt="Connect sample on Android" width="100%" /> | <img src="images/iOS.png" alt="Connect sample on iOS" width="100%" /> |
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行，或下载本文基于的 [Xamarin Forms 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/xamarin-csharp-connect-sample)。
+**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/graph/quick-start) 快速准备就绪并开始运行，或下载本文基于的 [Xamarin Forms 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/xamarin-csharp-connect-sample)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -24,7 +26,7 @@
 
 - 最新的 iOS SDK
 - Xcode 的最新版本
-- Mac OS X Yosemite (10.10) 和更高版本 
+- Mac OS X Sierra (10.12) 及更高版本 
 - [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
 - [已连接到 Visual Studio 的 Xamarin Mac 代理](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
@@ -37,8 +39,8 @@
     
     将显示注册页，其中列出应用的属性。
  
-4. 在“**平台**”下，选择“**添加平台**”。
-5. 选择“**移动平台**”。
+4. 在“平台”****下，选择“添加平台”****。
+5. 选择“本机应用程序”****。
 6. 复制应用程序 ID。将需要在示例应用中输入该值。
 
     应用程序 ID 是应用的唯一标识符。重定向 URL 是由 Windows 10 为每个应用提供的唯一 URI，以确保发送到该 URI 的邮件只发送到该应用程序。 
@@ -50,130 +52,14 @@
 1. 在 Visual Studio 中打开初学者项目的解决方案文件。
 2. 打开 **XamarinConnect (可移植)** 项目中的 **App.cs** 文件，然后找到 `ClientId` 字段。使用注册应用的应用程序 ID 替换应用程序 ID 占位符。
 
-```c#
+```
 public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send" };
+public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
 ```
 当用户进行身份验证时，`Scopes` 值将存储应用需要请求的 Microsoft Graph 权限范围。请注意，`App` 类构造函数使用 ClientID 值来实例化 MSAL `PublicClientApplication` 类的实例。稍后，将使用该类来验证用户身份。
 
-```c#
+```
 IdentityClientApp = new PublicClientApplication(ClientID);
-```
-
-## <a name="install-the-microsoft-authentication-library-msal"></a>安装 Microsoft 身份验证库 (MSAL)
-
-[Microsoft 身份验证库](https://www.nuget.org/packages/Microsoft.Identity.Client) 包含更容易通过 v2.0 身份验证终结点对用户进行身份验证的类和方法。
-
-1. 在解决方案资源管理器中，右键单击“**XamarinConnect (可移植)**”项目并选择“**管理 NuGet 包...**”
-2. 单击“浏览”，然后搜索 Microsoft.Identity.Client。
-3. 选择最新版本的 Microsoft 身份验证库，然后单击“**安装**”。
-
-为 **XamarinConnect.Droid****XamarinConnect.iOS** 和 **XamarinConnect.UWP** 项目执行相同的步骤。如果未在所有四个项目中安装 MSA，将不会生成应用。
-
-## <a name="install-the-microsoft-graph-client-library"></a>安装 Microsoft Graph 客户端库
-
-1. 在解决方案资源管理器中，右键单击“**XamarinConnect (可移植)**”项目并选择“**管理 NuGet 包...**”
-2. 单击“浏览”，然后搜索 Microsoft.Graph。
-3. 选择最新版本的 Microsoft Graph 客户端库，然后单击“**安装**”。
-
-## <a name="create-the-authenticationhelpercs-class"></a>创建 AuthenticationHelper.cs 类
-
-打开 **XamarinConnect (可移植)** 项目内的 AuthenticationHelper.cs 文件。该文件中包含所有身份验证代码，以及存储用户信息并仅在用户与应用断开连接时强制进行身份验证的其他逻辑。该类包含至少三种方法：`GetTokenForUserAsync`、`Signout` 和 `GetAuthenticatedClient`
-
-当用户进行身份验证并且之后应用每次调用 Microsoft Graph 时，都会运行 `GetTokenHelperAsync` 方法。
-
-**使用声明**
-
-请确保将这些声明置于文件顶部：
-
-```c#
-using Microsoft.Graph;
-using System;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.Identity.Client;
-```
-
-**类字段**
-
-请确保将这些字段置于 AuthenticationHelper 类中：
-
-```c#
-public static string TokenForUser = null;
-public static DateTimeOffset expiration;
-private static GraphServiceClient graphClient = null;
-```
-
-示例将 `GraphServicesClient` 存储在字段中，因此，只需构建一次。它存储访问令牌的到期 `DateTimeOffset`，以便它在现有令牌即将到期前不再提取新的令牌。
-
-**GetTokenForUserAsync**
-
-`GetTokenForUserAsync` 方法使用在 **App.cs** 文件中实例化的 `PublicClientApplicationClass` 为用户获取访问令牌。如果用户尚未进行身份验证，它将启动身份验证 UI。
-
-```c#
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            if (TokenForUser == null || expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-            {
-                AuthenticationResult authResult = await App.IdentityClientApp.AcquireTokenAsync(App.Scopes);
-
-                TokenForUser = authResult.Token;
-                expiration = authResult.ExpiresOn;
-            }
-
-            return TokenForUser;
-        }
-```
-
-**注销**
-
-`Signout` 方法注销通过 `PublicClientApplication` 登录的所有用户（在本例中只有一个用户），并置空 `TokenForUser` 值。它还置空 `GraphServicesClient` 值。
-
-```c#
-        public static void SignOut()
-        {
-            foreach (var user in App.IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-            graphClient = null;
-            TokenForUser = null;
-
-        }
-``` 
-
-**GetAuthenticatedClient**
-
-最后，将需要一个创建 `GraphServicesClient` 的方法。此方法创建一个客户端，以对每个从客户端到 Microsoft Graph 的调用使用 `GetTokenForUserAsync` 方法。
-
-```c#
-        public static GraphServiceClient GetAuthenticatedClient()
-        {
-            if (graphClient == null)
-            {
-                // Create Microsoft Graph client.
-                try
-                {
-                    graphClient = new GraphServiceClient(
-                        "https://graph.microsoft.com/v1.0",
-                        new DelegateAuthenticationProvider(
-                            async (requestMessage) =>
-                            {
-                                var token = await GetTokenForUserAsync();
-                                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-                            }));
-                    return graphClient;
-                }
-
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Could not create a graph client: " + ex.Message);
-                }
-            }
-
-            return graphClient;
-        }
 ```
 
 ## <a name="send-an-email-with-microsoft-graph"></a>使用 Microsoft Graph 发送电子邮件
@@ -184,18 +70,145 @@ private static GraphServiceClient graphClient = null;
 
 **使用声明**
 
-将这些声明添加到文件顶部：
+请确保将这些声明置于文件顶部：
 
-```c#
+```
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Graph;
 ```
 
-由于用户可以传递多个地址，因此第一项任务是将 ``recipients`` 字符串拆分为一组可用于构建 `Recipients` 对象列表的 `EmailAddress` 对象，然后能够以请求 POST 正文的形式传递这些对象：
+``ComposeAndSendMailAsync`` 方法中的第一个任务是从 Microsoft Graph 中获取当前用户的照片。该行将调用无存根 `GetCurrentUserPhotoStreamAsync` 方法：
 
-```c#
+```
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
+```
+
+完整的 `GetCurrentUserPhotoStreamAsync` 方法如下所示：
+
+```
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+```
+
+如果该用户没有照片，此逻辑将获取项目中包含的其他图像文件：
+
+```
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
+                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+            }
+```
+
+现在已拥有图像流，可以通过调用无存根的 `UploadFileToOneDriveAsync` 方法将此文件上载到 OneDrive：
+
+```
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+```
+
+完整的 `UploadFileToOneDriveAsync` 方法如下所示：
+
+```
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+```
+
+我们还可以使用该流创建可以随消息传递的 `MessageAttachmentsCollectionPage` 对象。
+
+```
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+```
+
+我们可以通过调用无存根 `GetSharingLinkAsync` 方法获取新上载的 OneDrive 文件的共享链接。`bodyContent` 字符串包含共享链接的占位符。
+
+```
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
+```
+
+完整的 `GetSharingLinkAsync` 方法如下所示：
+
+```
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+```
+
+由于用户可以传递多个地址，因此下一项任务是将 ``recipients`` 字符串拆分为一组可用于构建 `Recipients` 对象列表的 `EmailAddress` 对象，然后能够以请求 POST 正文的形式传递这些对象：
+
+```
             // Prepare the recipient list
             string[] splitter = { ";" };
             var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
@@ -207,9 +220,9 @@ using Microsoft.Graph;
             }
 ```
 
-另一项任务是构建 `Message` 对象，然后通过 `GraphServiceClient` 将它发送至 **me/microsoft.graph.SendMail** 终结点。由于 ``bodyContent`` 字符串是一个 HTML 文档，因此请求将 **ContentType** 值设置为 HTML。
+最后一项任务是构建 `Message` 对象，然后通过 `GraphServiceClient` 将它发送至 **me/microsoft.graph.SendMail** 终结点。由于 ``bodyContent`` 字符串是一个 HTML 文档，因此请求将 **ContentType** 值设置为 HTML。
 
-```c#
+```
             try
             {
                 var graphClient = AuthenticationHelper.GetAuthenticatedClient();
@@ -218,11 +231,12 @@ using Microsoft.Graph;
                 {
                     Body = new ItemBody
                     {
-                        Content = bodyContent,
+                        Content = bodyContentWithSharingLink,
                         ContentType = BodyType.Html,
                     },
                     Subject = subject,
                     ToRecipients = recipientList,
+                    Attachments = attachments
                 };
 
                 try
@@ -245,7 +259,7 @@ using Microsoft.Graph;
 
 完整的类如下所示：
 
-```c#
+```
     public class MailHelper
     {
         /// <summary>
@@ -259,6 +273,38 @@ using Microsoft.Graph;
                                                             string bodyContent,
                                                             string recipients)
         {
+
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
+
+
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
+                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+            }
+
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
+
 
             // Prepare the recipient list
             string[] splitter = { ";" };
@@ -278,11 +324,12 @@ using Microsoft.Graph;
                 {
                     Body = new ItemBody
                     {
-                        Content = bodyContent,
+                        Content = bodyContentWithSharingLink,
                         ContentType = BodyType.Html,
                     },
                     Subject = subject,
                     ToRecipients = recipientList,
+                    Attachments = attachments
                 };
 
                 try
@@ -302,7 +349,73 @@ using Microsoft.Graph;
                 throw new Exception("We could not send the message: " + e.Message);
             }
         }
+
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+
+
     }
+}
 ``` 
 
 现在，已经执行了与 Microsoft Graph 进行交互所需的三个步骤：应用注册、用户身份验证以及进行请求。 
@@ -315,9 +428,9 @@ using Microsoft.Graph;
 2. 按 F5 进行构建和调试。运行此解决方案并使用个人或工作或学校帐户登录。
     > **注意** 可能需要打开生成配置管理器，以确保为 UWP 项目选择“生成”和“部署”步骤。 
 
-3. 使用你的个人、工作或学校帐户登录，并授予所请求的权限。
+3. 使用个人帐户、工作或学校帐户登录，并授予所请求的权限。
 
-4. 选择“**发送邮件**”按钮。在邮件发送后，将显示成功消息。
+4. 选择“**发送邮件**”按钮。在邮件发送后，将显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
 
 ## <a name="next-steps"></a>后续步骤
 - 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。

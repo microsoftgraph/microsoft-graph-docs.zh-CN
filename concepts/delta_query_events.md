@@ -1,4 +1,4 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view-preview"></a>获取日历视图中事件的增量更改（预览）
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 
 日历视图是一系列来自默认日历 (../me/calendarview) 或用户的其他某个日历且位于日期/时间范围内的事件。使用增量查询，可以获取日历视图中的新建、已更新或已删除事件。返回的事件可能包括定期系列事件的发生次数和例外情况，以及单个实例。借助增量数据，可以维护和同步用户事件的本地存储，而无需每次都从服务器提取整组用户事件。
 
@@ -8,7 +8,7 @@
 
 对事件执行增量查询专门针对你指定的日历和日期/时间范围（即日历视图）。若要跟踪多个日历中的更改，需要单独跟踪各个日历。 
 
-跟踪日历视图中的事件更改通常需要使用 [delta](../api-reference/beta/api/event_delta.md) 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[列出 calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview)，区别在于要添加 **delta** 函数：
+跟踪日历视图中的事件更改通常需要使用 [delta](../api-reference/v1.0/api/event_delta.md) 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[列出 calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview)，区别在于要添加 **delta** 函数：
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -63,7 +63,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -172,8 +172,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -264,8 +264,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -328,8 +328,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -380,6 +380,6 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Graph 增量查询](../Concepts/delta_query_overview.md)
-- [获取邮件的增量更改（预览）](../Concepts/delta_query_messages.md)
-- [获取组的增量更改（预览）](../Concepts/delta_query_groups.md)
-- [获取用户的增量更改（预览）](../Concepts/delta_query_users.md)
+- [获取邮件的增量更改](../Concepts/delta_query_messages.md)
+- [获取组的增量更改](../Concepts/delta_query_groups.md)
+- [获取用户的增量更改](../Concepts/delta_query_users.md)

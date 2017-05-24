@@ -3,18 +3,21 @@
 根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。返回的单元格位于相对于区域左上角的单元格的位置。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Cell
-POST /workbook/worksheets(<id|name>)/range(<address>)/Cell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
+GET /workbook/names(<name>)/range/Cell
+GET /workbook/worksheets/{id|name}/range(<address>)/Cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -37,7 +40,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
   "name": "range_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
 Content-type: application/json
 Content-length: 37
 

@@ -3,18 +3,21 @@
 根据列中的当前数据更改当前区域的行高，以达到最佳高度。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitRows
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/autofitRows
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/autofitRows
+POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitRows
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-groups-preview"></a>获取组的增量更改（预览）
+# <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
-[Delta 查询](./delta_query_overview.md)可通过调用一系列的 [delta](../api-reference/beta/api/group_delta.md) 函数来查询组的添加、删除或更新。增量查询使你无需读取 Microsoft Graph 的整个组就能够发现组的更改并进行比较。
+[Delta 查询](./delta_query_overview.md)可通过调用一系列的 [delta](../api-reference/v1.0/api/group_delta.md) 函数来查询组的添加、删除或更新。增量查询使你无需读取 Microsoft Graph 的整个组就能够发现组的更改并进行比较。
 
-Delta 查询支持检索租户中所有组的完全同步，以及仅检索自上次同步以来已更改组的增量同步。通常，需要对租户中的所有组进行初始完全同步，之后可定期获取组的增量更改。 
+以后，对本地配置文件存储使用同步组功能的客户端可以将增量查询用于初始完全同步和增量同步。通常，客户会对租户中的所有组进行初始完全同步，之后定期获取对组的增量更改。 
 
 ## <a name="tracking-group-changes"></a>跟踪组更改
 
-跟踪组更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出组](../api-reference/beta/api/group_list.md)的方式非常相似，除了要包括以下内容：
+跟踪组更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出组](../api-reference/v1.0/api/group_list.md)的方式非常相似，除了要包括以下内容：
 
 - **delta** 函数。
 - 上一个 GET **delta** 函数调用的[状态令牌](./delta_query_overview.md)（_deltaToken_ 或 _skipToken_）。
@@ -30,12 +30,12 @@ Delta 查询支持检索租户中所有组的完全同步，以及仅检索自�
 - 初始请求不包括状态令牌。状态令牌将用于后续请求中。
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description
 ```
 
-### <a name="initial-response"></a>初始响应
+## <a name="initial-response"></a>初始响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和[组](../api-reference/beta/resources/group.md)集合对象。假如整个组过大，则响应还将包含 nextLink 状态令牌。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../api-reference/v1.0/resources/group.md)集合对象。假如整个组过大，则响应还将包含 nextLink 状态令牌。
 
 本示例中，返回 nextLink URL，表示此会话存在要检索的其他数据页面。初始请求的 $select 查询参数已编码为 nextLink URL。
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,description)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,description)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
   "value": [
     {
       "displayName":"TestGroup1",
@@ -66,7 +66,7 @@ Content-type: application/json
 第二个请求指定上一个响应中返回的 `skipToken`。请注意不需要 `$select` 参数，因为 `skipToken` 已将其编码且包含其中。
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
 ## <a name="nextlink-response"></a>nextLink 响应
@@ -78,8 +78,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"TestGroup3",
@@ -100,7 +100,7 @@ Content-type: application/json
 第三个请求继续使用上次同步请求返回的最新 `skipToken`。 
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
 ## <a name="final-nextlink-response"></a>最终 nextLink 响应
@@ -112,8 +112,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup5",
@@ -134,7 +134,7 @@ Content-type: application/json
 通过使用[上次响应](#final-nextlink-response)的 `deltaToken`，你将能够获取自上次请求以来的已更改组（添加、删除或更新）。
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
+GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
 ## <a name="deltalink-response"></a>deltaLink 响应
@@ -146,8 +146,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": []
 }
 ```
@@ -159,8 +159,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup7",

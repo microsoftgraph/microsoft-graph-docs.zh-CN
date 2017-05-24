@@ -8,7 +8,7 @@
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "path" ],
+  "optionalProperties": [ "path", "shareId", "sharepointIds" ],
   "@odata.type": "microsoft.graph.itemReference"
 }-->
 
@@ -16,22 +16,28 @@
 {
   "driveId": "string",
   "id": "string",
-  "path": "string"
+  "name": "string",
+  "path": "string",
+  "shareId": "string",
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型   | 说明                                                                   |
-|:---------|:-------|:------------------------------------------------------------------------------|
-| driveId  | String | 包含项的 OneDrive 实例的唯一标识符。只读。 |
-| id       | String | 项在驱动器中的唯一标识符。只读。            |
-| 路径     | String | 可用于导航到该项的路径。只读。                     |
+| 属性      | 类型                              | 说明                                                                                                |
+| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| driveId       | String                            | 包含项的驱动器实例的唯一标识符。只读。                                 |
+| id            | String                            | 项在驱动器中的唯一标识符。只读。                                                     |
+| name          | String                            | 所引用的项的名称。只读。                                                          |
+| 路径          | String                            | 可用于导航到该项的路径。只读。                                                  |
+| shareId       | String                            | 可通过 [Shares](../api/shares_get.md) API 访问共享资源的唯一标识符。 |
+| sharepointIds | [sharepointIds](sharepointids.md) | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                   |
 
 
 ## <a name="remarks"></a>注解
 
-为了从 **ItemReference** 资源中找到某项，请构建以下格式的 URL：
+为了从 **itemReference** 资源中找到 **driveItem**，请构建以下格式的 URL：
 
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}

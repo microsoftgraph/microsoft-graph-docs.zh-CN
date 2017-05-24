@@ -3,21 +3,29 @@
 使用此 API 创建新的表。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/tables/$/add
+POST /workbook/worksheets/{id|name}/tables/add
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Table](../resources/table.md) 对象的 JSON 表示形式。
+在请求正文中，提供以下参数。 
 
+### <a name="request-parameters"></a>请求参数
+| 名称       | 类型|说明|
+|:---------------|:----------|
+| Address  | string| 区域地址。如果正在从“worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`) 调用此 API|
+| hasHeaders  | boolean|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Table](../resources/table.md) 对象。
@@ -30,19 +38,15 @@ POST /workbook/worksheets(<id|name>)/tables/$/add
   "name": "create_table_from_worksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/$/add
 Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "",
+  "hasHeaders": false
 }
 ```
-在请求正文中，提供 [Table](../resources/table.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

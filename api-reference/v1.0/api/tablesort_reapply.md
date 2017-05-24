@@ -3,17 +3,20 @@
 对表重新应用当前的排序参数。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/reapply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/reapply
+POST /workbook/tables/{id|name}/sort/reapply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>请求正文
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/reapply
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/reapply
 ```
 
 ##### <a name="response"></a>响应

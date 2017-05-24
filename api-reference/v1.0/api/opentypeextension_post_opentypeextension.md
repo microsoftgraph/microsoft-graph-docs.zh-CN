@@ -8,9 +8,12 @@
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [事件](../resources/event.md) | _Calendars.ReadWrite_ | [组事件](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ | 
-| [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [设备](../resources/device.md) | _Device.ReadWrite.All_ | [事件](../resources/event.md) | _Calendars.ReadWrite_ |
+| [组](../resources/group.md) | _Group.ReadWrite.All_ | [组事件](../resources/event.md) | _Group.ReadWrite.All_ |
+| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ |
+| [组织](../resources/organization.md) | _Directory.AccessAsUser.All_ | [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [用户](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+
 
  
 ## <a name="http-request"></a>HTTP 请求
@@ -21,11 +24,11 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /users/{id|userPrincipalName}/contacts
 ```
 
 >**注意：**以上语法显示了一些创建支持的资源实例的常见方法。可以用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
@@ -38,11 +41,15 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /organization/{id}/extensions
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/extensions
 ```
 
 >**注意：**以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。

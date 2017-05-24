@@ -11,7 +11,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "lastAccessedDateTime"
   ],
   "@odata.type": "microsoft.graph.fileSystemInfo"
 }-->
@@ -25,10 +25,11 @@
 
 ## <a name="properties"></a>属性
 
-| 属性                 | 类型           | 说明                                                   |
-|:-------------------------|:---------------|:--------------------------------------------------------------|
-| **createdDateTime**      | DateTimeOffset | 在客户端创建文件时的 UTC 日期和时间。       |
-| **lastModifiedDateTime** | DateTimeOffset | 在客户端上次修改文件时的 UTC 日期和时间。 |
+| 属性                 | 类型           | 说明                                                                                                          |
+| :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
+| **createdDateTime**      | DateTimeOffset | 在客户端创建文件时的 UTC 日期和时间。                                                              |
+| **lastAccessedDateTime** | DateTimeOffset | 上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive_recent.md)。 |
+| **lastModifiedDateTime** | DateTimeOffset | 在客户端上次修改文件时的 UTC 日期和时间。                                                        |
 
 ## <a name="notes"></a>注释
 

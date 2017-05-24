@@ -6,9 +6,9 @@
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展插件。| [联系人](../resources/contact.md)、[事件](../resources/event.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md) | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|联系人、事件、组事件、邮件|一个通过开放扩展扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 |联系人、事件、组事件、邮件|通过开放扩展扩展的资源实例。|
+|从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md) | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展插件扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人|通过开放扩展扩展的资源实例。|
 
 
 ## <a name="prerequisites"></a>先决条件
@@ -17,10 +17,14 @@
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [事件](../resources/event.md) | _Calendars.Read_ | [组事件](../resources/event.md) | _Calendars.Read_ | 
+| [设备](../resources/device.md) | _Directory.Read.All_ | [事件](../resources/event.md) | _Calendars.Read_ | 
+| [组](../resources/group.md) | _Group.Read.All_ | [组事件](../resources/event.md) | _Group.Read.All_ | 
 | [组帖子](../resources/post.md) | _Group.Read.All_ | [邮件](../resources/message.md) | _Mail.Read_ | 
-| [个人联系人](../resources/contact.md) | _Contacts.Read_ |
- 
+| [组织](../resources/organization.md) | _Directory.Read.All_ | [个人联系人](../resources/contact.md) | _Contacts.Read_ |
+| [用户](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## <a name="http-request"></a>HTTP 请求
 
 本部分列出了上述三种 `GET` 应用场景中每一种的语法。
@@ -31,24 +35,40 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。
+对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+
+对于设备、组、组织和用户资源类型，你必须也使用 `$select` 参数以包括 **id** 属性及你在资源实例中所需的任何其他属性：
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 ### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>筛选出多个通过匹配的扩展插件扩展的资源实例 
@@ -57,10 +77,11 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**注意：**以上语法显示了一些标识资源实例或集合的常见方法，以便从中获取扩展。可以用来识别这些资源实例或集合的所有其他语法均支持以类似的方式从中获取开放扩展。

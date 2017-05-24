@@ -2,7 +2,7 @@
 
 **SharingLink** 资源将与链接相关的数据项分组到一个单一结构。
 
-如果 [**权限**](permission.md) 资源有一个非 NULL **sharingLink** facet，则该权限表示共享链接（而不是授予用户或组的权限）。
+如果 [**权限**](permission.md) 资源有一个非 NULL **sharingLink** facet，则该权限表示共享链接（而不是授予给用户或组的权限）。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
