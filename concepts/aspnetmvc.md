@@ -53,7 +53,7 @@
 
 3. 在 **appSettings** 元素中找到应用配置密钥。将 ENTER_YOUR_CLIENT_ID 和 ENTER_YOUR_SECRET 占位符值替换为刚复制的值。
 
-重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)允许应用获取用户配置文件信息并发送电子邮件。
+重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)允许应用获取用户配置文件信息并发送电子邮件。
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>对用户进行身份验证并获取一个访问令牌

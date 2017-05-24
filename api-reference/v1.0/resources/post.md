@@ -24,6 +24,8 @@
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[帖子](post.md)  |在新建或现有帖子中创建一个或多个单值扩展属性。   |
 |[获取具有单值扩展属性的帖子](../api/singlevaluelegacyextendedproperty_get.md)  | [帖子](post.md) | 通过使用 `$expand` or `$filter` 获取包含单值扩展属性的帖子。 |
@@ -94,8 +96,8 @@
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-- [使用架构扩展向组添加自定义数据（预览）](../../../concepts/extensibility_schema_groups.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

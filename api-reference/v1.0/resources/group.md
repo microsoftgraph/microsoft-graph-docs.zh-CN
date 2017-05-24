@@ -2,6 +2,9 @@
 
 表示 Azure Active Directory 组，可以是 Office 365 组、动态组或安全组。继承自 [directoryObject](directoryobject.md)。
 
+该资源支持：
+- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -39,6 +42,12 @@
 |[subscribeByMail](../api/group_subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。使当前用户可以接收电子邮件对话。仅支持 Office 365 组。|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。禁止当前用户接收电子邮件对话。仅支持 Office 365 组。|
 |[resetUnseenCount](../api/group_resetunseencount.md)|无|将当前用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。仅支持 Office 365 组。|
+|[delta](../api/group_delta.md)|组集合| 获取组的增量更改。 |
+|**开放扩展**| | |
+|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
+|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 
 ## <a name="properties"></a>属性
@@ -46,7 +55,8 @@
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
-|说明|String|可选的组说明。 |
+|createdDateTime|DateTimeOffset| 创建组的日期和时间。 |
+|description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection| 指定要创建的组类型。可能的值是 **Unified**（创建 Office 365 组）或 **DynamicMembership**（创建动态组）。对于所有其他类型的组（例如启用安全机制的组和启用电子邮件的安全组）则不设置此属性。支持 $filter。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
@@ -72,11 +82,14 @@
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
 |驱动器|[驱动器](drive.md)|组的驱动器。只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
+|onenote|[OneNote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
 |照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
+|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。
 |threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 
 
@@ -95,8 +108,10 @@
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
+    "onenote",
     "owners",
     "photo",
     "rejectedSenders",
@@ -110,6 +125,7 @@
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -137,10 +153,17 @@
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

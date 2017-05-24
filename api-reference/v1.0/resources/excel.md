@@ -9,6 +9,8 @@
 返回属于工作簿的工作表对象的集合。    
 
 
+**注意：Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
+
 ## <a name="authorization-and-scopes"></a>授权和范围
 
 可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
@@ -146,6 +148,34 @@ content-type: application/json;odata.metadata
 }
 ```
 
+#### <a name="get-a-new-worksheet"></a>获取新的工作表 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+响应 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+**注意：也可以使用 ID 检索工作表。但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。 
+
 #### <a name="delete-a-worksheet"></a>删除工作表
 
 请求
@@ -168,7 +198,7 @@ HTTP code: 204, No Content
 请求 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -228,6 +258,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+**注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。 
 
 #### <a name="get-chart-image"></a>获取图表图像
 
@@ -1191,7 +1223,7 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 ##### <a name="request"></a>请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}

@@ -80,7 +80,7 @@
 
 1. 打开 utils\graphHelper.js。
 
-1. 将 **getUserData** 函数替换为以下代码。这将配置 GET 请求并将其发送至 */me* 终结点，然后处理响应。
+1. 将 **getUserData** 函数替换为以下代码。这将配置 GET 请求并将其发送至 */me* 终结点，然后处理该响应。
 
         function getUserData(accessToken, callback) {
           request

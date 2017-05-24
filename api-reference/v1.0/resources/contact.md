@@ -2,6 +2,12 @@
 
 联系人是 Outlook 中的一个项目，你可以在这里组织和保存有关你通信的人员和组织的信息。联系人包含在联系人文件夹中。
 
+该资源支持：
+
+- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 通过提供 [delta](../api/contact_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+
+
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
@@ -10,8 +16,13 @@
 |[创建](../api/user_post_contacts.md) | [联系人](contact.md) |将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。|
 |[更新](../api/contact_update.md) | [联系人](contact.md) |更新 contact 对象。 |
 |[删除](../api/contact_delete.md) | 无 |删除 contact 对象。 |
+|[delta](../api/contact_delta.md)|[联系人](contact.md)集合| 获取指定文件夹中已添加、删除或更新的联系人集。|
+|**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
+|**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[联系人](contact.md)  |在新建或现有的联系人中创建一个或多个单值扩展属性。   |
 |[获取具有单值扩展属性的联系人](../api/singlevaluelegacyextendedproperty_get.md)  | [联系人](contact.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的联系人。 |
 |[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [联系人](contact.md) | 在新建或现有的联系人中创建一个或多个多值扩展属性。  |
@@ -130,6 +141,15 @@
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
+- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
+- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

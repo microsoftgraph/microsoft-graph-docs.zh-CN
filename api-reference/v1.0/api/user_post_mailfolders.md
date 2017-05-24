@@ -1,6 +1,6 @@
 # <a name="create-mailfolder"></a>创建 MailFolder
 
-使用此 API 创建新的邮件文件夹。
+使用此 API 在用户邮箱的根文件夹中新建邮件文件夹。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：*Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP 请求
@@ -19,7 +19,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 | 参数       | 类型    |说明|
 |:---------------|:--------|:----------|
-|parentFolderId|String|父文件夹的文件夹 ID，或 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems` 已知文件夹名称。|
 |displayName|String|新文件夹的显示名称。|
 
 ## <a name="response"></a>响应
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

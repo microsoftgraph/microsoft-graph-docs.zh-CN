@@ -2,7 +2,7 @@
 
 > **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
-> 若要在**所有企业方案**中支持**所有企业客户**，必须使用 Azure AD 终结点并使用 [Azure 管理门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅 [在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../authorization/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
+> 若要在**所有企业方案**中支持**所有企业客户**，必须使用 Azure AD 终结点并使用 [Azure 管理门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅 [在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
 本文介绍了从 Azure AD v2.0 终结点获取访问令牌和调用 Microsoft Graph 所需的任务。介绍了生成 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)的步骤，并说明实现在面向 Android 的应用中使用 Microsoft Graph 的主要概念。本文还介绍如何通过使用[用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 或原始 REST 调用来访问 Microsoft Graph。
 
@@ -34,7 +34,7 @@
 
 4. 复制应用程序 ID。这是应用的唯一标识符。 
 
-5. 选择“**添加平台**”和“**移动应用程序**”。
+5. 选择“添加平台”****和“本机应用程序”****。
 
     > **注意：**应用程序注册门户提供值为 *urn: ietf:wg:oauth:2.0:oob* 的重定向 URI。但是，你将使用默认的重定向 URI 值 *https://login.microsoftonline.com/common/oauth2/nativeclient*。
 

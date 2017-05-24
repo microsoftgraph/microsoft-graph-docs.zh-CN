@@ -2,8 +2,12 @@
 
 表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
+该资源支持：
+- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
+
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |读取 user 对象的属性和关系。|
@@ -32,15 +36,23 @@
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| 从 registeredDevices 导航属性中获取为此用户注册的设备。|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| 从 createdObjects 导航属性中获取此用户创建的目录对象。|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
+|[assignLicense](../api/user_assignlicense.md)|[用户](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
+|[列出 licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| 返回用户所属的所有组和目录角色。检查是可传递的。 |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
+|[delta](../api/user_delta.md)|用户集合| 获取用户的增量更改。 |
+|**开放扩展**| | |
+|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
+|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
+|**架构扩展**| | |
+|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 
 
 ## <a name="properties"></a>属性
+
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
@@ -48,6 +60,7 @@
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |city|String|用户所在的城市。支持 $filter。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
 |department|String|用户工作部门的名称。支持 $filter。|
@@ -55,6 +68,7 @@
 |givenName|String|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
+|imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。支持 $filter。|
 |邮件|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
@@ -86,6 +100,7 @@
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
 
 ## <a name="relationships"></a>关系
+
 | 关系 | 类型    |说明|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|用户的主日历。只读。|
@@ -96,18 +111,21 @@
 |contacts|[Contact](contact.md) collection|用户的联系人。只读。可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
-|drive|[drive](drive.md)|用户的 OneDrive。只读。|
-|events|[Event](event.md) collection|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
+|drive|[驱动器](drive.md)|用户的 OneDrive。只读。|
+|驱动器|[驱动器](drive.md)集合 | 该用户的可用驱动器集合。只读。 |
+|events|[事件](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 NULL。|
+|extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |mailFolders|[MailFolder](mailfolder.md) collection| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。只读。可为 Null。|
-|messages|[Message](message.md) collection|邮箱或文件夹中的邮件。只读。可为 Null。|
+|messages|[邮件](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 NULL。|
+|onenote|[OneNote](onenote.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
-|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
-
+|registeredDevices|[directoryObject](directoryobject.md) 集合|已注册的用户的设备。只读。可为 NULL。|
+|sites|[网站](site.md)集 | 该用户的可用网站集。只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -127,15 +145,18 @@
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -197,6 +218,7 @@
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "drives": [ { "@odata.type": "microsoft.graph.drive" } ],
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
@@ -205,10 +227,17 @@
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ {"@odata.type": "microsoft.graph.site" }]
 }
 
 ```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
