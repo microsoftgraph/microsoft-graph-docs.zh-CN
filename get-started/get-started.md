@@ -20,7 +20,7 @@
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK 示例</a>
     </td> 
         <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST 示例</a>
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -29,7 +29,7 @@
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td> 
         <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -38,7 +38,7 @@
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -74,7 +74,7 @@
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST 示例</a>
+            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -100,7 +100,7 @@
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
