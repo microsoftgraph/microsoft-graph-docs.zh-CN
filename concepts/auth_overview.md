@@ -71,7 +71,7 @@ OpenID Connect 扩展 OAuth 2.0 以提供身份层。使用 OpenID Connect，除
 - **Web API**：客户端应用调用 Web API（受 Azure AD 保护），然后 Web API 调用 Microsoft Graph，所有这些操作都以用户身份执行。受到 Azure AD 终结点支持。对于 Azure AD v2.0 终结点，只有当客户端和 Web API 具有相同的应用程序 ID  时才受支持；例如，调用 Web API 后端的本机应用。 
 
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>如何让我的应用与 Azure AD 和 Microsoft Graph 对话？
-在你的应用可以从 Azure AD 获取令牌前，必须进行注册。对于 Azure AD v2.0 终结点，请使用 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。对于 Azure AD 终结点，请使用 [Azure 门户](https://azure.portal.com/)。注册会将你的应用和 Azure AD 相集成并建立其用于获取令牌的坐标和标识符。以下为：
+在你的应用可以从 Azure AD 获取令牌前，必须进行注册。对于 Azure AD v2.0 终结点，请使用 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。对于 Azure AD 终结点，请使用 [Azure 门户](https://portal.azure.com/)。注册会将你的应用和 Azure AD 相集成并建立其用于获取令牌的坐标和标识符。以下为：
 
 - **应用程序 Id**：Azure AD 分配的唯一标识符。 
 - **重定向 URI/URL**：应用将接收来自 Azure AD 的响应的一个或多个终结点。（对于本机和移动应用，这是由 Azure AD 分配的 URL。）
@@ -146,7 +146,7 @@ Azure AD 和 Azure AD v2.0 之间的主要区别在于：
 一旦注册了应用，随时可以开始使用！
 
 - 有关代表用户获取适用于调用 Microsoft Graph 的应用的访问令牌的快速步骤，请参阅[代表用户获取访问](auth_v2_user.md)。
-- 有关在没有用户的情况下获取适用于调用 Microsoft Graph 的应用的访问令牌的快速步骤，请参阅[没有用户的情况下获取访问](auth_v2_user.md)。
+- 有关在没有用户的情况下获取适用于调用 Microsoft Graph 的应用的访问令牌的快速步骤，请参阅[没有用户的情况下获取访问](auth_v2_service.md)。
 - 若要查看你可以在 Microsoft Graph 中使用的权限，请参阅[权限](permissions_reference.md)。
 - 如果你是 Microsoft 云解决方案提供商并且对通过 Microsoft Graph 访问合作伙伴托管的客户数据感兴趣，请参阅[管理应用访问 (CSPs)](auth_cloudsolutionprovider.md)。
 

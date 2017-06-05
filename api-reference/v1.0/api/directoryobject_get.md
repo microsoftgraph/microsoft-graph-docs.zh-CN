@@ -32,7 +32,7 @@ GET /directoryObjects/{id}
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/{id}
+GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

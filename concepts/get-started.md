@@ -4,7 +4,7 @@
 
 选择涉及所选身份验证程序和开发平台的文章，然后开始连接到 Microsoft Graph。
 
-可以按照涉及所选开发平台的文章中的步骤操作，或者，若要快速创建并运行有效的解决方案，请尝试使用 [快速入门](http://dev.office.com/getting-started/office365apis) 体验。
+可以按照涉及所选开发平台的文章中的步骤操作，或者，若要快速创建并运行有效的解决方案，请尝试使用 [快速入门](https://developer.microsoft.com/graph/quick-start) 体验。
 
 若要浏览已完成的 Connect 示例，请访问 GitHub 上的 [Microsoft Graph](https://github.com/microsoftgraph)。下表按验证提供程序和平台列出了示例，并标注了是使用 REST 还是使用 Microsoft Graph 客户端库连接到 Microsoft Graph。
 
@@ -38,7 +38,7 @@
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -115,5 +115,5 @@
 
 ## <a name="see-also"></a>另请参阅
 - 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试使用示例 REST 调用。
-- [Azure AD 终结点文档](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Azure AD v2.0 终结点文档](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- [Azure AD 终结点文档](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0 终结点文档](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
