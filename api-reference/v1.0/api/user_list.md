@@ -1,8 +1,19 @@
 # <a name="list-users"></a>列出用户
 
-检索用户对象列表。
+检索 user 对象列表。
 
-> 注意：列出用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。
+> 注意：列出用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。不过，只能对各个用户选择以下属性，例如，/v1.0/me?$select=aboutMe；不得对用户集合选择以下属性，例如 /v1.0/users?$select=aboutMe：
+>* aboutMe
+>* birthday
+>* hireDate
+>* interests
+>* mySite
+>* pastProjects
+>* preferredName
+>* responsibilities
+>* schools
+>* skills
+>* mailboxSettings
 
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：*User.ReadBasic.All；User.Read.All；User.ReadWrite.All；Directory.Read.All；Directory.ReadWrite.All；Directory.AccessAsUser.All*

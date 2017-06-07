@@ -10,6 +10,8 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
+|[List users](../api/user_list.md) |[user](user.md) 集合| 获取用户对象列表。|
+|[Create user](../api/user_post_users.md) |[user](user.md)| 新建用户对象。|
 |[Get user](../api/user_get.md) | [user](user.md) |读取 user 对象的属性和关系。|
 |[Update user](../api/user_update.md) | [user](user.md) |更新 user 对象。 |
 |[Delete user](../api/user_delete.md) | None |删除 user 对象。 |
@@ -36,8 +38,8 @@
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| 从 registeredDevices 导航属性中获取为此用户注册的设备。|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| 从 createdObjects 导航属性中获取此用户创建的目录对象。|
-|[assignLicense](../api/user_assignlicense.md)|[用户](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
-|[列出 licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。| 
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
+|[List licenseDetails](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| 返回用户所属的所有组和目录角色。检查是可传递的。 |
@@ -61,7 +63,8 @@
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
-|city|String|用户所在的城市。支持 $filter。|
+|城市|String|用户所在的城市。支持 $filter。|
+|companyName|String|与用户关联的公司名称。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
 |department|String|用户工作部门的名称。支持 $filter。|
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
@@ -111,21 +114,20 @@
 |contacts|[Contact](contact.md) collection|用户的联系人。只读。可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
-|drive|[驱动器](drive.md)|用户的 OneDrive。只读。|
+|drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |驱动器|[驱动器](drive.md)集合 | 该用户的可用驱动器集合。只读。 |
-|events|[事件](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 NULL。|
+|events|[Event](event.md) collection|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |mailFolders|[MailFolder](mailfolder.md) collection| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。只读。可为 Null。|
-|messages|[邮件](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 NULL。|
+|messages|[Message](message.md) collection|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[OneNote](onenote.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
-|registeredDevices|[directoryObject](directoryobject.md) 集合|已注册的用户的设备。只读。可为 NULL。|
-|sites|[网站](site.md)集 | 该用户的可用网站集。只读。 |
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -156,7 +158,6 @@
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -226,9 +227,9 @@
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ {"@odata.type": "microsoft.graph.site" }]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

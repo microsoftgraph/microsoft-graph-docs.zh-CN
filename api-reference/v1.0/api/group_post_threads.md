@@ -1,6 +1,6 @@
-# <a name="create-thread"></a>创建线程
+# <a name="create-conversation-thread"></a>创建对话线程
 
-通过首先创建一个线程，启动一个新对话。 
+首先，通过创建线程来启动新的组对话。 
 
 创建新会话、会话线程，然后可在组中创建帖子。使用 [回复线程](conversationthread_reply.md) 或 [回复帖子](post_reply.md) 进一步发布到该线程。
 

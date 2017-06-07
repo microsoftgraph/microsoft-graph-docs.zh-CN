@@ -1,8 +1,10 @@
-# <a name="list-owners"></a>列出所有者
+Gr# List owners
 
-检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
+检索组所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
+
 ## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下任意一个**范围**：*Group.Read.All* 或 *Group.ReadWrite.All*
+若要执行此 API，必须有以下**范围**：*Group.Read.All* 和 *User.ReadBasic.All*、*User.Read.All* 或 *User.ReadWrite.All* 之一
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +20,7 @@ GET /groups/{id}/owners
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -45,7 +47,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.user"
     }
   ]
 }

@@ -64,7 +64,7 @@ Content-type: application/json
 
 虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。
 
-### <a name="exmaple-single-file"></a>示例（单个文件）
+### <a name="example-single-file"></a>示例（单个文件）
 
 ##### <a name="request"></a>请求
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="exmaple-shared-folder"></a>示例（共享文件夹）
+### <a name="example-shared-folder"></a>示例（共享文件夹）
 
 ##### <a name="request"></a>请求
 
@@ -135,10 +135,10 @@ Content-Type: application/json
 要将 URL 转换为共享令牌：
 
 1. Base64 编码共享 URL。
-2. 通过以下方法将 base64 编码数据转换为[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)：
-  1. 从该字符串中剪裁尾随 `=` 字符
-  2. 将不安全的 URL 字符替换为等效字符；将 `/` 替换为 `_`，将 `+` 替换为 `-`。
-3. 将 `u!` 附加到字符串的开头。
+2. 通过以下方法，将 base64 编码数据转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)：
+  1. 剪裁掉字符串最后的 `=` 字符
+  2. 将不安全的 URL 字符替换成等效字符；将 `/` 替换成 `_`，将 `+` 替换成 `-`。
+3. 将 `u!` 追加到字符串的开头。
 
 例如，以下 C# 方法将输入字符串转换为共享令牌：
 

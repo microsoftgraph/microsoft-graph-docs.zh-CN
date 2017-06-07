@@ -3,8 +3,11 @@
 表示 Azure Active Directory 组，可以是 Office 365 组、动态组或安全组。继承自 [directoryObject](directoryobject.md)。
 
 该资源支持：
+
 - 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
-- 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/user_delta.md) 函数，使用 [delta 查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+
+> **Microsoft Teams 是在 Office 365 组的基础之上构建而成**。大多数的组 API 都可与 Microsoft Teams 结合使用。不能使用 [Create group](../api/group_post_groups.md) 创建团队。有关详细信息，请参阅 [Microsoft Teams 参考](teams_api_overview.md)。
 
 ## <a name="methods"></a>方法
 
@@ -86,6 +89,7 @@
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
 |onenote|[OneNote](onenote.md)| 只读。|
+|planner|[Planner](planner.md)| 统一组可能存在的 Planner 资源入口点。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
 |照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|

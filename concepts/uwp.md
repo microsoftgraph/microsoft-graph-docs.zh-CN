@@ -28,7 +28,7 @@
 
 - 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
 - Visual Studio 2015 
-- [适用于 UWP（库）的 Microsoft Graph 初学者项目](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载 [适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)，并打开“**初学者**”文件夹内的解决方案。
+- [适用于 UWP（库）的 Microsoft Graph 初学者项目](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)，并打开**初学者**文件夹内的解决方案。
 
 
 ## <a name="register-the-app"></a>注册应用
@@ -39,8 +39,8 @@
     
     将显示注册页，其中列出应用的属性。
  
-4. 在“**平台**”下，选择“**添加平台**”。
-5. 选择“**移动平台**”。
+4. 在“平台”****下，选择“添加平台”****。
+5. 选择“本机应用程序”****。
 6. 将客户端 ID（应用程序 ID）和重定向 URL 值复制到剪切板。将需要在示例应用中输入这些值。
 
     应用 ID 是应用的唯一标识符。重定向 URL 是由 Windows 10 为每个应用提供的唯一 URI，以确保发送到该 URI 的邮件只发送到该应用程序。 
@@ -62,165 +62,13 @@
     </Application.Resources>
 ```
 
-## <a name="install-the-microsoft-authentication-library-msal"></a>安装 Microsoft 身份验证库 (MSAL)
-
-[Microsoft 身份验证库](https://www.nuget.org/packages/Microsoft.Identity.Client) 包含更容易通过 Azure AD v2.0 终结点对用户进行身份验证的类和方法。
-
-1. 在解决方案资源管理器中，右键单击项目名称，并选择“**管理 NuGet 包...**”
-2. 单击“浏览”，然后搜索 Microsoft.Identity.Client。
-3. 选择最新版本的 Microsoft 身份验证库，然后单击“**安装**”。
-
-## <a name="install-the-microsoft-graph-client-library"></a>安装 Microsoft Graph 客户端库
-
-1. 在解决方案资源管理器中，右键单击项目名称，并选择“**管理 NuGet 包...**”
-2. 单击“浏览”，然后搜索 Microsoft.Graph。
-3. 选择最新版本的 Microsoft Graph 客户端库，然后单击“**安装**”。
-
-## <a name="install-the-newtonsoftjson-library"></a>安装 Newtonsoft.JSON 库
-
-1. 在解决方案资源管理器中，右键单击“**XamarinConnect (可移植)**”项目并选择“**管理 NuGet 包...**”
-2. 单击“浏览”，然后搜索 NewtonSoft.JSON。
-3. 选择 9.0.1 版本的 NewtonSoft.JSON 库，然后单击“安装”****。
-
-## <a name="create-the-authenticationhelpercs-class"></a>创建 AuthenticationHelper.cs 类
-
-打开初学者项目中的 AuthenticationHelper.cs 文件。该文件中包含所有身份验证代码，以及存储用户信息并仅在用户与应用断开连接时强制进行身份验证的其他逻辑。该类包含至少两种方法：`GetTokenForUserAsync` 和 `Signout`。如果使用的是 Microsoft Graph 客户端库，则需要添加第三种方法：`GetAuthenticatedClient`。
-
-当用户进行身份验证并且之后应用每次调用 Microsoft Graph 时，都会运行 ``GetTokenHelperAsync`` 方法。
-
-**使用声明**
-
-***客户端库版本***
-
-确保该文件包含以下声明：
-
-```
-using System;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.Graph;
-using Microsoft.Identity.Client;
-```
-
-**类字段**
-
-请确保将这些字段置于 AuthenticationHelper 类中：
-
-```
-// The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
-static string clientId = App.Current.Resources["ida:ClientID"].ToString();
-public static string[] Scopes = { "User.Read", "Mail.Send" };
-public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
-public static string TokenForUser = null;
-public static DateTimeOffset Expiration;
-private static GraphServiceClient graphClient = null;
-```
-
-示例将 `GraphServicesClient` 存储在字段中，因此，只需构建一次。它使用 MSAL `PublicClientApplication` 类来验证用户身份。当用户进行身份验证时，`Scopes` 字段将存储应用需要请求的 Microsoft Graph 权限范围。 
-
-
-**GetTokenForUserAsync**
-
-`GetTokenForUserAsync` 方法使用 PublicClientApplicationClass 和 ClientId 设置为用户获取访问令牌。如果用户尚未进行身份验证，它将启动身份验证 UI。
-
-```
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            AuthenticationResult authResult;
-            try
-            {
-                authResult = await IdentityClientApp.AcquireTokenSilentAsync(Scopes);
-                TokenForUser = authResult.Token;
-            }
-
-            catch (Exception)
-            {
-                if (TokenForUser == null || Expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-                {
-                    authResult = await IdentityClientApp.AcquireTokenAsync(Scopes);
-
-                    TokenForUser = authResult.Token;
-                    Expiration = authResult.ExpiresOn;
-                }
-            }
-
-            return TokenForUser;
-        }
-```
-
-**注销**
-
-`Signout` 方法注销通过 `PublicClientApplication` 登录的所有用户（在本例中只有一个用户），并置空 `TokenForUser` 值。它还置空 `GraphServicesClient` 值。
-
-这是 `Signout` 方法的客户端库版本。
-
-```
-        public static void SignOut()
-        {
-            foreach (var user in IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-            graphClient = null;
-            TokenForUser = null;
-
-        }
-``` 
-
-**GetAuthenticatedClient**
-
-最后，将需要一个创建 `GraphServicesClient` 的方法。此方法创建一个客户端，以对每个从客户端到 Microsoft Graph 的调用使用 `GetTokenForUserAsync` 方法。
-
-```
-        public static GraphServiceClient GetAuthenticatedClient()
-        {
-            if (graphClient == null)
-            {
-                // Create Microsoft Graph client.
-                try
-                {
-                    graphClient = new GraphServiceClient(
-                        "https://graph.microsoft.com/v1.0",
-                        new DelegateAuthenticationProvider(
-                            async (requestMessage) =>
-                            {
-                                var token = await GetTokenForUserAsync();
-                                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-                            }));
-                    return graphClient;
-                }
-
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Could not create a graph client: " + ex.Message);
-                }
-            }
-
-            return graphClient;
-        }
-```
-
 ## <a name="send-an-email-with-microsoft-graph"></a>使用 Microsoft Graph 发送电子邮件
 
 打开初学者项目中的 MailHelper.cs 文件。该文件中包含构建并发送电子邮件的代码。它包含一个方法 -- ``ComposeAndSendMailAsync`` -- 该方法构建 POST 请求并将其发送到 **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** 终结点。 
 
 ``ComposeAndSendMailAsync`` 方法采用三个字符串值 -- ``subject``、``bodyContent`` 和 ``recipients`` -- 通过 MainPage.xaml.cs 文件将这些值传递给它。``subject`` 和 ``bodyContent`` 字符串随所有其他 UI 字符串存储在 Resources.resw 文件中。``recipients`` 字符串来自应用界面中的地址框中。 
 
-请确保 MailHelper.cs 文件具有以下`using`声明：
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.Graph;
-using Windows.Storage;
-```
-
-``ComposeAndSendMailAsync`` 方法中的第一个任务是从 Microsoft Graph 中获取当前用户的照片。此行调用 `GetCurrentUserPhotoStreamAsync` 方法：
+``ComposeAndSendMailAsync`` 方法中的第一个任务是通过 Microsoft Graph 获取当前用户的照片。此行调用 `GetCurrentUserPhotoStreamAsync` 方法：
 
 ```
             // Get current user photo
@@ -266,7 +114,7 @@ using Windows.Storage;
             }
 ```
 
-既然我们拥有图像流，我们可以通过调用 `UploadFileToOneDriveAsync` 方法将文件上载到 OneDrive。
+现在我们已拥有图像流，可以通过调用 `UploadFileToOneDriveAsync` 方法将此文件上载到 OneDrive：
 
 ```
             MemoryStream photoStreamMS = new MemoryStream();
@@ -315,7 +163,7 @@ using Windows.Storage;
             });
 ```
 
-我们可以通过调用 `GetSharingLinkAsync` 方法获取新上载的 OneDrive 文件的共享链接。`bodyContent` 字符串包含共享链接的占位符。
+我们可以通过调用 `GetSharingLinkAsync` 方法获取新上载的 OneDrive 文件的共享链接。`bodyContent` 字符串包含共享链接的占位符：
 
 ```
             // Get the sharing link and insert it into the message body.
@@ -555,132 +403,18 @@ using Windows.Storage;
     }
 ``` 
 
-##<a name="create-the-user-interface-in-mainpagexaml"></a>在 MainPage.xaml 中创建用户界面
-
-现在，已经编写了通过 Microsoft Graph 执行用户身份验证并发送邮件的代码，只需创建上述的简单界面。 
-
-初学者项目中的 MainPage.xaml 文件已经包含了所有需要的 XAML。只需将驱动界面的代码添加到 MainPage.xaml.cs 文件。在项目中找到该文件并打开。
-
-添加命名空间中的此代码来完成 MainPage.xaml.cs 中 MainPage 类的客户端库版本：
-
-```
-    public sealed partial class MainPage : Page
-    {
-        private string _mailAddress;
-        private string _displayName = null;
-        private MailHelper _mailHelper = new MailHelper();
-
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            // Developer code - if you haven't registered the app yet, we warn you. 
-            if (!App.Current.Resources.ContainsKey("ida:ClientID"))
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("NoClientIdMessage");
-                ConnectButton.IsEnabled = false;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-                ConnectButton.IsEnabled = true;
-            }
-        }
-
-        /// <summary>
-        /// Signs in the current user.
-        /// </summary>
-        /// <returns></returns>
-        public async Task<bool> SignInCurrentUserAsync()
-        {
-            var graphClient = AuthenticationHelper.GetAuthenticatedClient();
-
-            if (graphClient != null)
-            {
-                var user = await graphClient.Me.Request().GetAsync();
-                string userId = user.Id;
-                _mailAddress = user.UserPrincipalName;
-                _displayName = user.DisplayName;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-
-        private async void ConnectButton_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            if (await SignInCurrentUserAsync())
-            { 
-                InfoText.Text = "Hi " + _displayName + "," + Environment.NewLine + ResourceLoader.GetForCurrentView().GetString("SendMailPrompt");
-                MailButton.IsEnabled = true;
-                EmailAddressBox.IsEnabled = true;
-                ConnectButton.Visibility = Visibility.Collapsed;
-                DisconnectButton.Visibility = Visibility.Visible;
-                EmailAddressBox.Text = _mailAddress;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("AuthenticationErrorMessage");
-            }
-
-            ProgressBar.Visibility = Visibility.Collapsed;
-        }
-
-        private async void MailButton_Click(object sender, RoutedEventArgs e)
-        {
-            _mailAddress = EmailAddressBox.Text;
-            ProgressBar.Visibility = Visibility.Visible;
-            MailStatus.Text = string.Empty;
-            try
-            {
-                await _mailHelper.ComposeAndSendMailAsync(ResourceLoader.GetForCurrentView().GetString("MailSubject"), ResourceLoader.GetForCurrentView().GetString("MailContents"), _mailAddress);
-                MailStatus.Text = string.Format(ResourceLoader.GetForCurrentView().GetString("SendMailSuccess"), _mailAddress);
-            }
-            catch (Exception)
-            {
-                MailStatus.Text = ResourceLoader.GetForCurrentView().GetString("MailErrorMessage");
-            }
-            finally
-            {
-                ProgressBar.Visibility = Visibility.Collapsed;
-            }
-            
-        }
-
-        private void Disconnect_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            AuthenticationHelper.SignOut();
-            ProgressBar.Visibility = Visibility.Collapsed;
-            MailButton.IsEnabled = false;
-            EmailAddressBox.IsEnabled = false;
-            ConnectButton.Visibility = Visibility.Visible;
-            InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-            this._displayName = null;
-            this._mailAddress = null;
-        }
-    }
-```
  
-现在，已经执行了与 Microsoft Graph 进行交互所需的三个步骤：应用注册、用户身份验证以及进行请求。 
+现在，已经执行了与 Microsoft Graph 进行交互所需的步骤：应用注册、用户身份验证和发出请求。 
 
 ## <a name="run-the-app"></a>运行应用
 1. 按 F5 生成和运行此应用。 
 
 2. 使用个人帐户、工作或学校帐户登录，并授予所请求的权限。
 
-3. 选择“**发送电子邮件**”按钮。发送邮件后，将在按钮下方显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
+3. 选择“发送电子邮件”****按钮。在发送邮件后，将在按钮下方显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer) 试用 REST API。
 - 在 [Microsoft Graph UWP 代码段示例 (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) 和 [Microsoft Graph UWP 代码段示例 (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) 中查找 REST 和 SDK 操作的常见操作示例，或在 GitHub 上浏览我们的其他 [UWP 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)。
 
 ## <a name="see-also"></a>另请参阅

@@ -1,11 +1,12 @@
 # <a name="create-group"></a>创建组
 
-使用此 API 创建请求正文中指定的新组。可以创建一个包含 3 种类型的组：
+使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
 
-* Office 365 组（也称为统一组）
+* Office 365 组（统一组）
 * 动态组
 * 安全组
 
+> **注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**：_Group.ReadWrite.All_ 

@@ -37,11 +37,11 @@
 
     将使用此应用程序 ID 和应用程序密码（机密）配置应用。 
 
-6. 在“**平台**”下，选择“**添加平台**” > “**Web**”。
+6. 在“平台”****下，依次选择“添加平台”**** > “Web”****。
 
-7. 输入 *http://localhost:3000/login* 作为重定向 URL。 
+7. 输入“http://localhost:3000/token”**作为重定向 URI。 
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 
 ## <a name="configure-the-project"></a>配置项目
@@ -135,7 +135,7 @@
            });
         }
 
-1. 将 **postSendMail** 函数替换为以下代码。这将配置 POST 请求并将其发送至 */me/sendMail* 终结点，然后处理响应。
+1. 将 **postSendMail** 函数替换为以下代码。这将配置 POST 请求并将其发送至 */me/sendMail* 终结点，然后处理该响应。
 
         function postSendMail(accessToken, message, callback) {
           request

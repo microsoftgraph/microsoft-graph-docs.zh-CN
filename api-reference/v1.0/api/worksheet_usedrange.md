@@ -12,24 +12,25 @@
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
 
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+## <a name="optional-request-parameter"></a>可选的请求参数
+在请求 URL 中，提供可选的查询参数。
 
 | 参数       | 类型    |说明|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
+|valuesOnly|Boolean|可选。仅将有值的单元格视为已使用的单元格（忽略格式）。|
+
+
+## <a name="request-headers"></a>请求头
+| 名称       | 说明|
+|:---------------|:----------|
+| Authorization  | Bearer {code}|
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
+下面的示例展示了如何调用此 API。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
@@ -37,13 +38,9 @@ GET /workbook/worksheets/{id|name}/UsedRange
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### <a name="response"></a>响应

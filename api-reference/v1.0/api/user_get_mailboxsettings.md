@@ -5,7 +5,7 @@
 可以查看所有的邮箱设置或获取特定设置。
 
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**：*Mailboxsettings.ReadWrite*  
+若要执行此 API，必须有以下**范围**：*MailboxSettings.Read*  
 
 ## <a name="http-request"></a>HTTP 请求
 获取包括自动答复设置的所有邮箱设置：

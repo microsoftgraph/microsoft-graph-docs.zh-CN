@@ -7,7 +7,7 @@
 **注意**创建或删除任何邮箱设置。
 
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**：*Mailboxsettings.ReadWrite*  
+若要执行此 API，必须有以下**范围**：*MailboxSettings.ReadWrite*  
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

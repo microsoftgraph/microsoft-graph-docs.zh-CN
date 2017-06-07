@@ -1,8 +1,11 @@
+
 # <a name="update-user"></a>更新用户
 
 更新用户对象的属性。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*User.ReadWrite；User.ReadWrite.All；Directory.ReadWrite.All*
+要执行此 API，需要以下**范围**之一：*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
+
+更新 passwordProfile 属性时，必须有以下范围：*Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -2,7 +2,7 @@
 
 使用此 API 新建用户。请求正文包含要创建的用户。至少必须指定必需的用户属性。可以选择指定其他任意可写属性。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Directory.ReadWrite*
+若要执行此 API，必须有以下**范围**之一：*User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +46,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

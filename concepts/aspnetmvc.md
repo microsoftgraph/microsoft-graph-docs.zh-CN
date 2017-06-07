@@ -53,177 +53,7 @@
 
 3. 在 **appSettings** 元素中找到应用配置密钥。将 ENTER_YOUR_CLIENT_ID 和 ENTER_YOUR_SECRET 占位符值替换为刚复制的值。
 
-重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)允许应用获取用户配置文件信息并发送电子邮件。
-
-
-## <a name="authenticate-the-user-and-get-an-access-token"></a>对用户进行身份验证并获取一个访问令牌
-
-在此步骤中，你将添加登录和令牌管理代码。但是首先，让我们来进一步了解一下身份验证流。
-
-此应用使用具有委派用户身份的授权代码授予流。对于 Web 应用程序，该流需要已注册应用的应用程序 ID、密码和重定向 URL。 
-
-身份验证流可以划分为以下几个基本步骤：
-
-1. 重定向用户以进行身份验证并获得许可
-2. 获取授权代码
-3. 兑换访问令牌的授权代码
-4. 如果访问令牌过期，则可以使用刷新令牌获取新的访问令牌
-
-应用使用 [ASP.Net OpenID Connect OWIN 中间件](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/)和[适用于 .Net 的 Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client) 进行登录和令牌管理。这些将为你处理大多数身份验证任务。
-    
-初学者项目已声明以下中间件和 MSAL NuGet 依赖项：
-
-  - Microsoft.Owin.Security.OpenIdConnect
-  - Microsoft.Owin.Security.Cookies
-  - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client
-
-现在回到生成应用的操作中。
-
-1. 在 **App_Start** 文件夹中，打开 Startup.Auth.cs。 
-
-1. 用以下代码替换 **ConfigureAuth** 方法。这会设置与 Azure AD 进行通信的坐标，并设置 OpenID Connect 中间件所使用的 Cookie 身份验证。
-
-        public void ConfigureAuth(IAppBuilder app)
-        {
-            app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
-
-            app.UseCookieAuthentication(new CookieAuthenticationOptions());
-
-            app.UseOpenIdConnectAuthentication(
-                new OpenIdConnectAuthenticationOptions
-                {
-
-                    // The `Authority` represents the Microsoft v2.0 authentication and authorization service.
-                    // The `Scope` describes the permissions that your app will need. See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/                    
-                    ClientId = appId,
-                    Authority = "https://login.microsoftonline.com/common/v2.0",
-                    PostLogoutRedirectUri = redirectUri,
-                    RedirectUri = redirectUri,
-                    Scope = "openid email profile offline_access " + graphScopes,
-                    TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        // In a real application you would use IssuerValidator for additional checks, 
-                        // like making sure the user's organization has signed up for your app.
-                        //     IssuerValidator = (issuer, token, tvp) =>
-                        //     {
-                        //         if (MyCustomTenantValidation(issuer)) 
-                        //             return issuer;
-                        //         else
-                        //             throw new SecurityTokenInvalidIssuerException("Invalid issuer");
-                        //     },
-                    },
-                    Notifications = new OpenIdConnectAuthenticationNotifications
-                    {
-                        AuthorizationCodeReceived = async (context) =>
-                        {
-                            var code = context.Code;
-                            string signedInUserID = context.AuthenticationTicket.Identity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                                appId, 
-                                redirectUri,
-                                new ClientCredential(appSecret),
-                                new SessionTokenCache(signedInUserID, context.OwinContext.Environment["System.Web.HttpContextBase"] as HttpContextBase));
-                                string[] scopes = graphScopes.Split(new char[] { ' ' });
-
-                            AuthenticationResult result = await cca.AcquireTokenByAuthorizationCodeAsync(scopes, code);
-                        },
-                        AuthenticationFailed = (context) =>
-                        {
-                            context.HandleResponse();
-                            context.Response.Redirect("/Error?message=" + context.Exception.Message);
-                            return Task.FromResult(0);
-                        }
-                    }
-                });
-        }
-  
-  应用启动时，OWIN Startup 类（在 Startup.cs 中定义）调用 **ConfigureAuth** 方法，该方法又调用 **app.UseOpenIdConnectAuthentication** 以初始化用于登录和初始化令牌请求的中间件。应用请求以下权限范围：
-
-  - 用于登录的 **openid**、**电子邮件** 和 **配置文件**
-  - 用于获取令牌的**offline\_access**（获取刷新令牌所需的）、**User.Read**、**Mail.Send**
-  
-  MSAL **ConfidentialClientApplication** 对象代表应用，并处理令牌管理任务。使用在其中存储令牌信息的 **SessionTokenCache**（在 TokenStorage/SessionTokenCache.cs 中定义的示例令牌缓存实现）进行初始化。缓存根据用户 ID 保存当前 HTTP 会话中的令牌，但生产应用程序可能会使用更为持久的存储。
-
-现在将代码添加到示例身份验证提供程序，旨在轻松地替换为你自己的自定义身份验证提供程序。接口和提供程序类已添加到该项目。
-
-1. 在“**帮助程序**”文件夹中，打开 SampleAuthProvider.cs。
-
-1. 将 **GetUserAccessTokenAsync** 方法替代为以下使用 MSAL 的实现，以获取访问令牌。
-
-        // Get an access token. First tries to get the token from the token cache.
-        public async Task<string> GetUserAccessTokenAsync()
-        {
-            string signedInUserID = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-            tokenCache = new SessionTokenCache(
-                signedInUserID, 
-                HttpContext.Current.GetOwinContext().Environment["System.Web.HttpContextBase"] as HttpContextBase);
-            //var cachedItems = tokenCache.ReadItems(appId); // see what's in the cache
-
-            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                appId, 
-                redirectUri,
-                new ClientCredential(appSecret), 
-                tokenCache);
-
-            try
-            {
-                AuthenticationResult result = await cca.AcquireTokenSilentAsync(scopes.Split(new char[] { ' ' }));
-                return result.Token;
-            }
-
-            // Unable to retrieve the access token silently.
-            catch (MsalSilentTokenAcquisitionException)
-            {
-                HttpContext.Current.Request.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties() { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-
-                throw new Exception(Resource.Error_AuthChallengeNeeded);
-            }
-        }
-
-  MSAL 检查匹配未过期或将要过期的访问令牌的缓存。如果找不到有效的令牌，将会使用刷新令牌（如果存在有效的刷新令牌）获取新的访问令牌。如果无法自动获得一个新的访问令牌，MSAL 会引发 **MsalSilentTokenAcquisitionException** 来指示需要用户提示。 
-
-接下来，将添加代码来处理从 UI 进行登录和注销。
-
-1. 在“**控制器**”文件夹中，打开 AccountController.cs。  
-
-1. 将以下方法添加到 **AccountController** 类。**SignIn** 方法通知中间件将授权请求发送到 Azure AD。
-
-        public void SignIn()
-        {
-            if (!Request.IsAuthenticated)
-            {
-                // Signal OWIN to send an authorization request to Azure.
-                HttpContext.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            }
-        }
-
-        // Here we just clear the token cache, sign out the GraphServiceClient, and end the session with the web app.  
-        public void SignOut()
-        {
-            if (Request.IsAuthenticated)
-            {
-                // Get the user's token cache and clear it.
-                string userObjectId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-                SessionTokenCache tokenCache = new SessionTokenCache(userObjectId, HttpContext);
-                tokenCache.Clear(userObjectId);
-            }
-
-            //SDKHelper.SignOutClient();
-
-            // Send an OpenID Connect sign-out request. 
-            HttpContext.GetOwinContext().Authentication.SignOut(
-            CookieAuthenticationDefaults.AuthenticationType);
-            Response.Redirect("/");
-        }
-
-现在可以添加代码调用 Microsoft Graph。 
+重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)允许应用获取用户配置文件信息并发送电子邮件。
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
@@ -296,6 +126,12 @@
   请注意，**Select** 段只能请求要返回的 **mail** 和 **userPrinicipalName**。可以使用 **Select** 和 **Filter** 减少响应数据有效负载的大小。
 
 1. 用以下方法替换 *// SendEmail* 以生成和发送电子邮件。
+
+        // Send an email message from the current user.
+        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        {
+            await graphClient.Me.SendMail(message, true).Request().PostAsync();
+        }
 
         public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
@@ -460,13 +296,14 @@
                 return View("Graph");
             }
 
-            // Build the email message.
-            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
                 // Initialize the GraphServiceClient.
                 GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+                // Build the email message.
+                Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
 
                 // Send the email.
                 await graphService.SendEmail(graphClient, message);
@@ -478,35 +315,10 @@
             }
             catch (ServiceException se)
             {
-                if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+                if (se.Error.Code == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
                 return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
-           }
+            }
         }
-
-接下来，将更改在需要用户提示时身份验证提供程序引发的异常。
-
-1. 在“**帮助程序**”文件夹中，打开 SampleAuthProvider.cs。
-
-1. 添加以下 **using** 语句。
-
-        using Microsoft.Graph;
-  
-1. 在 **GetUserAccessTokenAsync** 方法的**捕获**块更改所引发的异常，如下所示：
-
-        throw new ServiceException(
-            new Error
-            {
-                Code = GraphErrorCode.AuthenticationFailure.ToString(),
-                Message = Resource.Error_AuthChallengeNeeded,
-            });
-
-最后，将添加调用来注销客户端。 
-
-1. 在“**控制器**”文件夹中，打开 AccountController.cs。 
-
-1. 取消评论下列行：
-
-        SDKHelper.SignOutClient();
 
 现在可以[运行应用](#run-the-app)。
 

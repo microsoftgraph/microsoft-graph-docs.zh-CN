@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>在 Xamarin Forms 应用中开始使用 Microsoft Graph
 
-> **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
+> **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
 本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/graph/docs/concepts/converged_auth) 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 Xamarin Forms 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) 示例中的代码，以说明在使用 Microsoft Graph 的应用中必须实现的主要概念。本文还介绍如何通过使用 [Microsoft Graph 客户端库](http://www.nuget.org/packages/Microsoft.Graph/) 来访问 Microsoft Graph。
 
@@ -26,24 +26,24 @@
 
 - 最新的 iOS SDK
 - Xcode 的最新版本
-- Mac OS X Sierra(10.12) 及以上 
-- [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
+- Mac OS X Sierra (10.12) 及更高版本 
+- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
 - [已连接到 Visual Studio 的 Xamarin Mac 代理](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
 ## <a name="register-the-app"></a>注册应用
  
 1. 使用个人或工作或学校帐户登录到 [应用注册门户](https://apps.dev.microsoft.com/)。
-2. 选择“**添加应用**”。
-3. 为应用输入名称，并选择“**创建应用程序**”。
+2. 选择“添加应用”****。
+3. 输入应用名称，然后选择“创建”****。
     
-    将显示注册页，其中列出应用的属性。
+    此时，注册页会显示，并列出应用属性。
  
-4. 在“**平台**”下，选择“**添加平台**”。
-5. 选择“**移动平台**”。
-6. 复制应用程序 ID。将需要在示例应用中输入该值。
+4. 在“平台”****下，选择“添加平台”****。
+5. 选择“本机应用”****。
+6. 复制应用 ID 值，以及在添加“本机应用”****平台时创建的自定义重定向 URI 值（在“本机应用”****标头下）。此 URI 应包含应用 ID 值，格式如下：`msal[Application Id]://auth`。需要在示例应用中输入这些值。
 
-    应用程序 ID 是应用的唯一标识符。重定向 URL 是由 Windows 10 为每个应用提供的唯一 URI，以确保发送到该 URI 的邮件只发送到该应用程序。 
+    应用 ID 是应用的唯一标识符。 
 
 7. 选择“**保存**”。
 
@@ -52,15 +52,24 @@
 1. 在 Visual Studio 中打开初学者项目的解决方案文件。
 2. 打开 **XamarinConnect (可移植)** 项目中的 **App.cs** 文件，然后找到 `ClientId` 字段。使用注册应用的应用程序 ID 替换应用程序 ID 占位符。
 
-```
-public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-```
-当用户进行身份验证时，`Scopes` 值将存储应用需要请求的 Microsoft Graph 权限范围。请注意，`App` 类构造函数使用 ClientID 值来实例化 MSAL `PublicClientApplication` 类的实例。稍后，将使用该类来验证用户身份。
+    ```
+    public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+    public static string RedirectUri = "msal" + ClientID + "://auth";
+    public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
+    ```
+    当用户进行身份验证时，`Scopes` 值将存储应用需要请求的 Microsoft Graph 权限范围。请注意，`App` 类构造函数使用 ClientID 值来实例化 MSAL `PublicClientApplication` 类的实例。稍后，将使用该类来验证用户身份。
+    
+    ```
+    IdentityClientApp = new PublicClientApplication(ClientID);
+    ```
 
-```
-IdentityClientApp = new PublicClientApplication(ClientID);
-```
+3. 在文本编辑器中，打开 UserDetailsClient.iOS\info.plist 文件。遗憾的是，不能在 Visual Studio 中编辑此文件。在 `CFBundleURLSchemes` 键下查找 `<string>msalENTER_YOUR_CLIENT_ID</string>` 元素。
+
+4. 将 `ENTER_YOUR_CLIENT_ID` 替换成注册应用时获取的应用 ID 值。请务必保留应用 ID 前面的 `msal`。生成的字符串值应如下所示：`<string>msal[application id]</string>`。
+
+5. 打开 UserDetailsClient.Droid\Properties\AndroidManifest.xml 文件。查找以下元素：`<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`。
+
+6. 将 `ENTER_YOUR_CLIENT_ID` 替换成注册应用时获取的应用 ID 值。请务必保留应用 ID 前面的 `msal`。生成的字符串值应如下所示：`<data android:scheme="msal[application id]" android:host="auth" />`。
 
 ## <a name="send-an-email-with-microsoft-graph"></a>使用 Microsoft Graph 发送电子邮件
 
@@ -127,7 +136,7 @@ using Microsoft.Graph;
             }
 ```
 
-既然我们拥有图像流，我们可以通过调用无存根 `UploadFileToOneDriveAsync` 方法将文件上载到 OneDrive。
+现在已拥有图像流，可以通过调用无存根的 `UploadFileToOneDriveAsync` 方法将此文件上载到 OneDrive：
 
 ```
             MemoryStream photoStreamMS = new MemoryStream();
@@ -415,7 +424,6 @@ using Microsoft.Graph;
 
 
     }
-}
 ``` 
 
 现在，已经执行了与 Microsoft Graph 进行交互所需的三个步骤：应用注册、用户身份验证以及进行请求。 
@@ -433,10 +441,10 @@ using Microsoft.Graph;
 4. 选择“**发送邮件**”按钮。在邮件发送后，将显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
 - 在 [amarin.Forms 的 Microsoft Graph SDK 代码段库](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) 中查找常见操作示例，或在 GitHub 上浏览我们的其他 [Xamarin 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin)。
 
 ## <a name="see-also"></a>另请参阅
 - [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

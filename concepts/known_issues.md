@@ -21,13 +21,6 @@
     }
 ```
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
-
-目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
-
-* 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [列出用户的日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
-* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)。
 
 ### <a name="using-delta-query"></a>使用 delta 查询
 
@@ -85,6 +78,42 @@ Microsoft Teams 基于 Office 365 组建立。在“创建组”当前不允许�
 ### <a name="using-delta-query"></a>使用 delta 查询
 
 有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
+
+
+## <a name="calendars"></a>日历
+
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
+
+目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
+
+* 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
+* [列出用户的日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
+* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)。
+
+### <a name="accessing-a-shared-calendar"></a>访问共享日历
+
+使用以下操作尝试访问其他用户共享的日历中的事件时：
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+可能会看到错误代码为 `ErrorInternalServerTransientError` 的 HTTP 500。
+
+过去，日历共享的实现方法有两种，为了加以区分，将它们称为“旧”实现和“新”实现。发生错误的原因是： 
+
+- 目前，只有 Outlook 网页版、iOS 版 Outlook 和 Android 版 Outlook 支持使用新方法在 Office 365 上共享日历。
+- 只有使用新方法共享日历后，才能使用日历 REST API 查看或编辑共享日历。 
+- 不能使用日历 REST API 查看或编辑使用旧方法共享的日历（或其事件）。
+
+若要解决此问题，日历所有者应在 Outlook 网页版、iOS 版 Outlook 和 Android 版 Outlook 中重新共享日历，而且你应该使用 Outlook 网页版重新接受日历。重新接受日历后，验证日历是否是使用新模型进行共享的一种方法是，确定能否在 iOS 版 Outlook 和 Android 版 Outlook 中成功查看共享日历。
+
+使用新方法共享的日历看似与邮箱中的其他日历一样。可以使用日历 REST API 查看或编辑共享日历中的事件，就像它是你自己的日历一样。示例：
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## <a name="contacts"></a>联系人
 
@@ -160,7 +189,30 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 * 跟踪关系更改时，OData 上下文有时无法正确返回。
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
-* 客户端无法跟踪开放扩展或已注册的架构扩展的更改。
+* 客户端无法跟踪开放扩展或已注册架构扩展的变化。
+
+## <a name="application-and-serviceprincipal-api-changes"></a>application 和 servicePrincipal API 更改
+
+当前处于开发阶段的 [application](../api-reference/beta/resources/application.md) 和 [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
+
+当前限制：
+
+* 只有在所有更改完成后，一些应用属性（如 appRoles 和 addIns）才可用。
+* 只能注册多租户应用。
+* 更新应用仅限于在首次 beta更新后注册的应用。
+* Azure Active Directory 用户可以注册应用并添加其他所有者。
+* 支持 OpenID Connect 和 OAuth 协议。
+* 无法向应用分配策略。 
+* 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
+
+处于开发阶段的功能：
+
+* 可以注册单租户应用。
+* 更新 servicePrincipal。
+* 将现有 Azure AD 应用迁移到更新后的模型中。
+* 支持 appRoles、预授权客户端、可选声明、组成员身份声明和品牌塑造
+* Microsoft 帐户 (MSA) 用户可以注册应用。
+* 支持 SAML 和 WsFed 协议。
 
 ## <a name="extensions"></a>扩展
 
@@ -206,16 +258,43 @@ JSON 批处理请求目前被限定为 5 个单独请求。当 JSON 批处理成
 2. 串行 - 所有单独请求都依赖于之前的单独请求。
 3. 相同 - 在 `dependsOn` 属性中声明依赖项的所有单独请求均声明了相同的依赖项。
 
-当 JSON 批处理成熟时，将删除这些限制。
+随着 JSON 批处理技术日臻成熟，这些限制将会被取消。
 
-## <a name="cloud-solution-provider-apps-must-use-azure-ad-endpoint"></a>云解决方案提供商应用必须使用 Azure AD 终结点
+## <a name="cloud-solution-provider-apps"></a>云解决方案提供商应用
+
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP 应用必须使用 Azure AD 终结点
 
 云解决方案提供商 (CSP) 应用必须从 Azure AD (v1) 终结点中获取令牌，才能在其合作伙伴托管的客户中成功调用 Microsoft Graph。目前，不支持通过较新的 Azure AD v2.0 终结点获取令牌。
+
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>对 CSP 应用的预授权不适用于一些客户租户
+
+在某些情况下，对 CSP 应用的预授权可能不适用于一些客户租户。
+
+- 对于使用委派权限的应用，首次将此应用用于新客户租户时，登录后可能会看到以下错误：`AADSTS50000: There was an error issuing a token`。
+- 对于使用应用权限的应用，应用可以获取令牌，但在调用 Microsoft Graph 时会意外看到“拒绝访问”消息。
+
+我们正在努力工作，以尽快解决此问题，让预授权适用于所有客户租户。
+
+同时，若要取消阻止开发和测试，可使用以下解决方法。
+
+>**注意：**这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
+
+1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. 创建 Microsoft Graph 服务主体。
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
 
 某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog)。有关 Azure Active Directory，请参考 [Microsoft Graph 或 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 博客文章，获取只能通过 Azure AD Graph API 提供的功能。
 
-### <a name="feedback"></a>反馈
+## <a name="feedback"></a>反馈
 
 > 我们非常重视你的反馈意见。请在 [Stack Overflow](http://stackoverflow.com/questions/tagged/microsoftgraph) 上与我们联系。
