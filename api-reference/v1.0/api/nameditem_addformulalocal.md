@@ -23,7 +23,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
 |公式|字符串|名称将引用的公式或区域。|
@@ -34,20 +34,22 @@ POST /workbook/worksheets({id|name})/names/add
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
+
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/addFormulaLocal
 Content-type: application/json
 Content-length: 54
 
 {
-  "name": "myRange",
-  "formula": "=A10+B10",
+  "name": "test7",
+  "formula": "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
   "comment": "Comment for the named item"
 }
 ```
@@ -65,14 +67,18 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "myRange",
-  "comment": "Sample range",
-  "scope": "Workbook",
-  "type": "String",
-  "visible": true,
-  "value": "=A10+B10"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
+    "@odata.type": "#microsoft.graph.workbookNamedItem",
+    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test7%27)",
+    "comment": "Comment for the named item",
+    "name": "test7",
+    "scope": "Workbook",
+    "type": "Double",
+    "value": 0,
+    "visible": true
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
