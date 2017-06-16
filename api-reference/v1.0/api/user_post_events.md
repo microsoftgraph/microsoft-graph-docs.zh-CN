@@ -1,6 +1,6 @@
 # <a name="create-event"></a>创建事件
 
-在用户的默认日历中创建[事件](../resources/event.md)。 
+在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
 可以将事件的各开始和结束时间的时区指定为这些值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 
 

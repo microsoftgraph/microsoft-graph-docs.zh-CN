@@ -1,6 +1,8 @@
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
-此更改日志涵盖了 Microsoft Graph 中的变化，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
+此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
+
+有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
 ## <a name="may-2017"></a>2017 年 5 月
 

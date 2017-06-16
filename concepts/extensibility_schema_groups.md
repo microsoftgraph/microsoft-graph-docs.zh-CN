@@ -12,7 +12,7 @@
 4. 根据架构扩展定义向现有组添加、更新或删除自定义数据。
 5. 读回组和扩展数据。
 
->**注意：**本主题介绍如何在**组**资源上创建和读取架构扩展值（步骤 3-5）。**管理单元**、**设备**、**事件**、**邮件**、**组织**、**帖子**和**用户**资源类型也支持相同方法。因此可以在任意资源上执行与以下示例请求相似的操作。注意，**管理单元”仅适用于 beta 端点。
+>**注意：**本主题介绍如何在**组**资源上创建和读取架构扩展值（步骤 3-5）。**管理单元**、**设备**、**事件**、**邮件**、**组织**、**帖子**和**用户**资源类型也支持相同方法。因此，可以对任意资源执行与以下示例请求相似的操作。请注意，**administrativeUnit** 仅适用于 beta 终结点。
 
 ## <a name="1-view-available-schema-extensions"></a>1.查看可用的架构扩展
 首先，作为开发人员，可能希望找到应用可以重复使用的任何其他架构扩展定义。这可以通过查询 **schemaExtension** 资源来完成。  
@@ -228,7 +228,8 @@ Content-length: 326
 
 - [使用扩展向资源添加自定义数据](extensibility_overview.md)
 - [使用开放扩展向用户添加自定义数据（预览）](extensibility_open_users.md)
-- [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- 
+  [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [添加并验证新 Office 365 的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension 资源类型](../api-reference/v1.0/resources/schemaextension.md)
 - [列出 schemaExtension](../api-reference/v1.0/api/schemaextension_list.md)

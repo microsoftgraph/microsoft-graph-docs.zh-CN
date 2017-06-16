@@ -1,6 +1,6 @@
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
-本文介绍了 Microsoft Graph 的已知问题。有关最新更新的信息，请参阅 [ Microsoft Graph 更改日志](changelog.md)。
+本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 [Microsoft Graph 更改日志](changelog.md)。
 
 ## <a name="users"></a>用户
 
@@ -28,7 +28,7 @@
 
 ## <a name="groups-and-microsoft-teams"></a>组和 Microsoft Teams
 
->**注意** Microsoft Teams 现在处于预览状态，仅在 Microsoft Graph beta 终结点中可用。
+>**注意**：Microsoft Teams 当前处于预览阶段，仅在 Microsoft Graph beta 终结点中可用。
 
 ### <a name="policy"></a>策略
 
@@ -36,7 +36,7 @@
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
-Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.All*）用于访问组和 Microsoft Teams 的 API。这些权限必须征得管理员同意（与预览不同的地方）。我们计划在将来新增可征得用户同意的组和团队的权限。
+Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.All*）用于访问组和 Microsoft Teams 的 API。这些权限必须征得管理员同意（不同于预览版）。我们计划在将来新增可征得用户同意的组和团队权限。
 
 此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
 
@@ -56,15 +56,15 @@ Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.Al
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Microsoft Teams 中的团队（预览）
 
-Microsoft Teams 基于 Office 365 组建立。在“创建组”当前不允许创建团队的异常下，所有组 API 也可以与团队配合使用。将来的 API 版本将支持此功能。
+Microsoft Teams 和 Office 365 组的功能相似。所有组 API 均可用于团队，暂不允许创建团队的“创建组 API”除外。今后发布的 API 版本将支持此功能。
 
 ### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams 频道（预览）
 
 目前，你可以读取和创建频道，但无法更新或删除频道。将来的 API 版本将支持此功能。
 
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams 聊天线程和聊天消息（预览）
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams 聊天会话和聊天消息（预览）
 
-目前，你可以在通道中创建聊天线程，但无法读取现有的聊天线程或添加对它们的答复。作为 weel，你无法读取或写入与团队或频道范围外的用户之间的直接聊天。将来的 API 版本将增加此区域中的其他功能。
+目前，可以在通道中创建聊天会话，但无法读取现有聊天会话，也无法添加对它们的答复。此外，还无法读取或写入与团队或频道范围外的用户之间的直接聊天。今后发布的 API 版本将在这一领域新增其他功能。
 
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>添加和获取组帖子的附件
@@ -115,7 +115,7 @@ GET \me\calendars('{id}')\events
 ```
 
 
-## <a name="contacts"></a>联系人
+## <a name="contacts"></a>Contacts
 
 ### <a name="organization-contacts-available-in-only-beta"></a>仅 beta 版支持组织联系人。
 
@@ -176,8 +176,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 * **$expand** 限制：
     * 不支持 `nextLink`
-     * 不支持 1 级以上扩展
-     * 不支持其他参数（**$filter**、**$select**）
+    * 不支持 1 级以上扩展
+    * 不支持其他参数（**$filter**、**$select**）
 * 不支持多个命名空间
 * 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行获取操作和投射。
 * 不支持 `@odata.bind`。也就是说，开发者无法正确地在组上设置 `Accepted` 或 `RejectedSenders`。
@@ -191,7 +191,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * 架构扩展（旧版）未使用 $select 语句返回，而是在无 $select 的情况下返回。
 * 客户端无法跟踪开放扩展或已注册架构扩展的变化。
 
-## <a name="application-and-serviceprincipal-api-changes"></a>application 和 servicePrincipal API 更改
+## <a name="application-and-serviceprincipal-api-changes"></a>应用程序和 servicePrincipal API 更改
 
 当前处于开发阶段的 [application](../api-reference/beta/resources/application.md) 和 [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
 

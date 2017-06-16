@@ -11,7 +11,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ## <a name="supported-resources"></a>支持的资源
 
-下表显示了当前支持的开放扩展和架构扩展，以及它们是处于一般可用性（GA，/v1.0 和 /beta 端点）还是仅处于预览状态（/beta 端点）。 
+下表列出了支持开放扩展和架构扩展的资源，并指明它们是处于通用版本 (GA) 阶段（在 v1.0 和 beta 终结点中均可用），还是处于预览阶段（仅在 beta 终结点中可用）。  
 
 | 资源 | 开放扩展 | 架构扩展 |
 |---------------|-------|-------|
@@ -121,6 +121,7 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](../api-refere
 
 ## <a name="see-also"></a>另请参阅
 
-[Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+  [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [添加并验证 Office 365 租户的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

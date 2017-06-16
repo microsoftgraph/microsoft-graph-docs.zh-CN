@@ -11,10 +11,12 @@
 | [获取根网站][]    | GET /sites/root                                   |
 | [获取网站][]         | GET /sites/{site-id}                              |
 | [根据路径获取网站][] | GET /sites/{hostname}:/{site-path}                |
+| [获取组的网站][] | GET /groups/{group-id}/sites/root             |
 
 [获取网站]: ../api/site_get.md
 [获取根网站]: ../api/site_get.md
-[根据路径获取网站]: ../api/site_get.md
+[按路径获取网站]: ../api/site_get.md
+[获取组的网站]: ../api/site_get.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,11 +62,11 @@
 | **说明**          | string                              | 网站的描述性文本。                                                             |
 | **displayName**          | string                              | 网站的完整标题。只读。                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | 上次修改项目的日期和时间。只读。                                       |
-| **名称**                 | string                              | 项目名称/标题。                                                                  |
+| **name**                 | string                              | 项目名称/标题。                                                                  |
 | **根**                 | [根](root.md)                     | 如果存在，则表示这是网站集中的根网站。只读。            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | 返回对 SharePoint REST 兼容性有用的标识符。只读。                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。 |
-| **WebUrl**               | string (url)                        | 在浏览器中显示此项目的 URL。只读。                                          |
+| **webUrl**               | string (url)                        | 在浏览器中显示此项目的 URL。只读。                                          |
 
 ## <a name="relationships"></a>关系
 

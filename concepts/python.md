@@ -42,65 +42,48 @@
 
     重定向 URI *http://localhost:5000/login/authorized* 是 OmniAuth 中间件配置为在处理身份验证请求后使用的值。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
-## <a name="create-oauth-client"></a>创建 OAuth 客户端
+## <a name="configure-and-run-the-app"></a>配置并运行应用程序
 
-应用需要注册 Flask-OAuth 客户端实例，用于启动 OAuth 流并获取访问令牌。 
-
-在 Connect 示例中，以下代码（位于 [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py) 中）使用所有必需值注册客户端，包括应用程序 ID (client_id)、应用程序密码 (client_secret) 和用于对用户进行身份验证的授权 URL。
-
-```python
-    # Put your consumer key and consumer secret into a config file
-    # and don't check it into github!!
-    microsoft = oauth.remote_app(
-        'microsoft',
-        consumer_key=client_id,
-        consumer_secret=client_secret,
-        request_token_params={'scope': 'User.Read Mail.Send'},
-        base_url='https://graph.microsoft.com/v1.0/',
-        request_token_url=None,
-        access_token_method='POST',
-        access_token_url='https://login.microsoftonline.com/common/oauth2/v2.0/token',
-        authorize_url='https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
-    )
-```
+1. 使用常用文本编辑器打开 **_PRIVATE.txt** 文件。
+2. 将 *ENTER_YOUR_CLIENT_ID* 替换成已注册的应用程序的客户端 ID。
+3. 将 *ENTER_YOUR_SECRET* 替换成为应用程序生成的密钥。
+4. 通过运行 ```python manage.py runserver``` 启动开发服务器。
+5. 在 Web 浏览器中，转到 ```http://localhost:5000/```。
 
 <!--<a name="authCode"></a>-->
-## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在回复 URL 页面中接收授权代码
+## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在答复 URL 页面中接收授权代码
 
-在用户登录后，浏览器会重定向到回复 URL（即 [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py) 中的 ```login/authorized``` 路由），并在响应中提供访问令牌。此示例将访问令牌存储为会话变量。
+在用户登录后，浏览器会重定向到答复 URL（即 [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py) 中的 ```login/authorized``` 路由），并在响应中提供访问令牌。此示例将访问令牌存储为会话变量。
 
 ```python
-    @app.route('/login/authorized')
-    def authorized():
-        response = microsoft.authorized_response()
-    
-        if response is None:
-            return "Access Denied: Reason=%s\nError=%s" % (
-                request.args['error'], 
-                request.args['error_description']
-            )
-    
-        # Check response for state
-        if str(session['state']) != str(request.args['state']):
-            raise Exception('State has been messed with, end authentication')
-        # Remove state session variable to prevent reuse.
-        session['state'] = ""
-            
-        # Okay to store this in a local variable, encrypt if it's going to client
-        # machine or database. Treat as a password. 
-        session['microsoft_token'] = (response['access_token'], '')
-        # Store the token in another session variable for easy access
-        session['access_token'] = response['access_token']
-        meResponse = microsoft.get('me')
-        meData = json.dumps(meResponse.data)
-        me = json.loads(meData)
-        userName = me['displayName']
-        userEmailAddress = me['userPrincipalName']
-        session['alias'] = userName
-        session['userEmailAddress'] = userEmailAddress
-        return redirect('main')
+@app.route('/login/authorized')
+def authorized():
+    """Handler for login/authorized route."""
+    response = msgraphapi.authorized_response()
+
+    if response is None:
+        return "Access Denied: Reason={0}\nError={1}".format( \
+            request.args['error'], request.args['error_description'])
+
+    # Check response for state
+    if str(session['state']) != str(request.args['state']):
+        raise Exception('State has been messed with, end authentication')
+    session['state'] = '' # reset session state to prevent re-use
+
+    # Okay to store this in a local variable, encrypt if it's going to client
+    # machine or database. Treat as a password.
+    session['microsoft_token'] = (response['access_token'], '')
+    # Store the token in another session variable for easy access
+    session['access_token'] = response['access_token']
+    me_response = msgraphapi.get('me')
+    me_data = json.loads(json.dumps(me_response.data))
+    username = me_data['displayName']
+    email_address = me_data['userPrincipalName']
+    session['alias'] = username
+    session['userEmailAddress'] = email_address
+    return redirect('main')
 ```
 
 <!--<a name="request"></a>-->
@@ -108,7 +91,7 @@
 
 使用访问令牌，您的应用可以对 Microsoft Graph API 提出身份验证请求。您的应用必须将访问令牌附加到各个请求的**授权**头中。
 
-Connect 示例使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``` 终结点发送电子邮件。代码位于 [*connect/graph_service.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/graph_service.py) 文件的 ```call_sendMail_endpoint``` 函数中。这是显示如何将访问代码附加到授权标头中的代码。
+Connect 示例使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``` 终结点发送电子邮件。代码位于 [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py) 文件的 ```call_sendmail_endpoint``` 函数中。此代码展示了如何将访问代码追加到授权标头中。
 
 ```python
     # Set request headers.
@@ -120,6 +103,6 @@ Connect 示例使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``
     }
 ```
 
-> **注意** 该请求还必须发送包含 Graph API 接受的值的 **Content-Type** 标头，例如 `application/json`。
+> **注意**：请求还必须发送包含 Graph API 接受的值的 **Content-Type** 标头（例如，`application/json`）。
 
 Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。请查看 API 参考，了解还可以使用 Microsoft Graph 完成什么任务。

@@ -1,6 +1,6 @@
 # <a name="get-drive"></a>获取驱动器
 
-检索 [驱动器](../resources/drive.md) 资源的属性和关系。驱动器是文件系统的顶级容器。Graph API 允许你访问用户 OneDrive 或 OneDrive for Business 的驱动器资源或 SharePoint 文档库。
+检索 [驱动器](../resources/drive.md) 资源的属性和关系。Drive 是文件系统的顶级容器。Graph API 允许访问用户 OneDrive/OneDrive for Business 或 SharePoint 文档库的 Drive 资源。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -12,7 +12,7 @@
 
 ## <a name="get-a-users-onedrive"></a>获取用户的 OneDrive
 
-若要访问用户的 OneDrive 或 OneDrive for Business，你的应用程序应请求 [用户](../resources/user.md) 资源中的**驱动器**关系。
+若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 [User](../resources/user.md) 资源获取 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
