@@ -3,6 +3,7 @@
 表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
 该资源支持：
+
 - 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
 - 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
@@ -104,7 +105,7 @@
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|用户的日历组。只读。可为 Null。|
