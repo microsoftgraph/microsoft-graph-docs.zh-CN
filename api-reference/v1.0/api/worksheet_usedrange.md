@@ -16,15 +16,15 @@ GET /workbook/worksheets/{id|name}/UsedRange
 ## <a name="optional-request-parameter"></a>可选的请求参数
 在请求 URL 中，提供可选的查询参数。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|可选。仅将有值的单元格视为已使用的单元格（忽略格式）。|
+|valuesOnly|Boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。

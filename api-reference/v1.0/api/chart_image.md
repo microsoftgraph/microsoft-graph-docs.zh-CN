@@ -15,13 +15,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |height|number|可选。生成的图像的所需高度。|
 |width|number|可选。生成的图像的所需宽度。|

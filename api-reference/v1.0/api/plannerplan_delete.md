@@ -14,7 +14,7 @@ DELETE /planner/plans/<id>
 ### <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要删除的 **plannerPlan** 的上次已知 ETag 值。必需。|
 
 ### <a name="request-body"></a>请求正文

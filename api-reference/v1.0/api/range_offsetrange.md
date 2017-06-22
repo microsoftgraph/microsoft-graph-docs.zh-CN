@@ -17,13 +17,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |rowOffset|number|区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。|
 |columnOffset|number|区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。|

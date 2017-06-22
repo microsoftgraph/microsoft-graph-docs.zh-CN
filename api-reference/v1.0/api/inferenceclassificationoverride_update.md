@@ -20,13 +20,13 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 **classifyAs** 的新值。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
 

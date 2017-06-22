@@ -16,13 +16,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
 |values|（布尔值、字符串或数字）|可选。未设置格式的表列值的二维数组。|

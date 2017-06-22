@@ -16,13 +16,13 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。|
 |hasHeaders|boolean|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|

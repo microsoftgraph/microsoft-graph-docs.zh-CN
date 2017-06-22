@@ -20,7 +20,7 @@ GET /contracts/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | *需要*持有者&lt;令牌&gt; |
+| Authorization  | Bearer {token}。必需。 |
 
 ### <a name="request-body"></a>请求正文
 

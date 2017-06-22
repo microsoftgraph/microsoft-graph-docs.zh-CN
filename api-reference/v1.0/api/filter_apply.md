@@ -16,13 +16,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |criteria|FilterCriteria|要应用的条件。|
 

@@ -1,6 +1,6 @@
 Gr# List owners
 
-检索组所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
+检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
 
 ## <a name="prerequisites"></a>先决条件
 若要执行此 API，必须有以下**范围**：*Group.Read.All* 和 *User.ReadBasic.All*、*User.Read.All* 或 *User.ReadWrite.All* 之一
@@ -15,7 +15,7 @@ GET /groups/{id}/owners
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

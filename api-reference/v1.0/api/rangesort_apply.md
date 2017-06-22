@@ -17,13 +17,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |fields|SortField|作为排序依据的条件列表。|
 |matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|

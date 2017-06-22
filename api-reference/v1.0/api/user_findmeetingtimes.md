@@ -15,7 +15,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值|
 |:---------------|:----------|
-| 授权  | 持有者 <code>. Required.|
+| Authorization  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 表示响应的具体时区的字符串，例如，“Pacific Standard Time”。可选。如果未指定此标头则使用 UTC。|
 
 
@@ -23,7 +23,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 下面列出了支持的所有参数。根据你自己的方案，在请求正文中为各个必需参数指定 JSON 对象。 
 
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。由于 findMeetingTimes 假设始终需要具备与会人员，因此在对应的 **type** 属性中将人员指定为 `required` 而将资源指定为 `resource`。如果集合为空，则 **findMeetingTimes** 只会查找组织者的空闲时间段。可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|

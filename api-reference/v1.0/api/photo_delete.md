@@ -18,7 +18,7 @@ DELETE /drive/root/createdByUser/photo
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | if-match  | string  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文

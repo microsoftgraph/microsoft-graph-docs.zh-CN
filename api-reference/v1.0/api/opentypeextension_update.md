@@ -52,7 +52,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文

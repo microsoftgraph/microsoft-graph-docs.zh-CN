@@ -17,17 +17,17 @@ PATCH /schemaExtensions/{id}
 ### <a name="optional-request-headers"></a>可选的请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者&lt;令牌&gt;。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。仅允许增量更改。 |
-|status|String|架构扩展的生命周期状态。创建后的初始状态是 **InDevelopment**。可能的状态转换是从 **InDevelopment** 到 **Available**、从 **Available** 到 **Deprecated**、从 **Deprecated** 到 **Available**。|
+|status|字符串|架构扩展的生命周期状态。创建后的初始状态是 **InDevelopment**。可能的状态转换是从 **InDevelopment** 到 **Available**、从 **Available** 到 **Deprecated**、从 **Deprecated** 到 **Available**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。仅允许增量更改。|
 
 ## <a name="response"></a>响应

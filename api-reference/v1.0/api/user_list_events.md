@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 字符串 | 事件在响应中的默认时区。可选。 | 
 
 ## <a name="request-body"></a>请求正文

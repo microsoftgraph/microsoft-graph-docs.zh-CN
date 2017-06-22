@@ -20,13 +20,13 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |groupIds|String|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
 

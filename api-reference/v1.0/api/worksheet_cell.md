@@ -15,7 +15,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="response"></a>响应

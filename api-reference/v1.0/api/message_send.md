@@ -13,7 +13,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -12,7 +12,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 在请求 URL 中，提供以下必要查询参数的值。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
@@ -21,7 +21,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Prefer | string | <Time zone>。可选，如果缺省，则采用 UTC。|
 
 ## <a name="request-body"></a>请求正文

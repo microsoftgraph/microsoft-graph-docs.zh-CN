@@ -12,13 +12,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 ### <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ### <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|Int32|要返回的项的索引。|
 

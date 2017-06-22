@@ -9,8 +9,8 @@ GET 操作查找用户邮箱在 Exchange Online 上的指定照片。
 ## <a name="prerequisites"></a>先决条件
 要针对以下几项执行此 API，需要以下**范围**之一：
 
-*    租户中任意用户的个人资料照片，包括已登录用户 - *User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
-*    特别是已登录用户的个人资料照片 - *User.Read；User.ReadWrite；User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
+*   租户中任意用户的个人资料照片，包括已登录用户 - *User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
+*   特别是已登录用户的个人资料照片 - *User.Read；User.ReadWrite；User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
 * **组**的个人资料照片 - *Group.Read.All；Group.ReadWrite.All*
 * **联系人**的照片 - *Contacts.Read；Contacts.ReadWrite*
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer \<token\>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

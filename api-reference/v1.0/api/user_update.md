@@ -3,7 +3,7 @@
 
 更新用户对象的属性。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
+要执行此 API，需要以下**范围**之一：*User.ReadWrite；User.ReadWrite.All；Directory.ReadWrite.All*
 
 更新 passwordProfile 属性时，必须有以下范围：*Directory.AccessAsUser.All*
 
@@ -15,13 +15,13 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |

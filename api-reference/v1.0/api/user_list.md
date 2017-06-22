@@ -1,6 +1,6 @@
 # <a name="list-users"></a>列出用户
 
-检索 user 对象列表。
+检索用户对象列表。
 
 > 注意：列出用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。不过，只能对各个用户选择以下属性，例如，/v1.0/me?$select=aboutMe；不得对用户集合选择以下属性，例如 /v1.0/users?$select=aboutMe：
 >* aboutMe
@@ -27,7 +27,7 @@ GET /users
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>请求正文

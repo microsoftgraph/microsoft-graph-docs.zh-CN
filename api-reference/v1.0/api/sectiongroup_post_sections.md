@@ -16,7 +16,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>`，基于用户凭据和拥有经授权访问权限的用户向应用提供的有效 OAuth 令牌。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文

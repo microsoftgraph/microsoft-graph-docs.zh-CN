@@ -17,12 +17,12 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|与帖子一起转发的可选注释。|
 |toRecipients|[收件人](../resources/recipient.md) 集合|线程要转发至的收件人。|

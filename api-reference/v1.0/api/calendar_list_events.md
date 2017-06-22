@@ -32,7 +32,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Prefer  | outlook.timezone=“东部标准时间”。可选。使用此选项指定响应中开始时间和结束时间的时区。如果未指定，则按 UTC 时间返回响应。 |
 
 ## <a name="request-body"></a>请求正文

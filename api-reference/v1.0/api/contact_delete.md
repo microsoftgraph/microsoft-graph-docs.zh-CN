@@ -23,7 +23,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

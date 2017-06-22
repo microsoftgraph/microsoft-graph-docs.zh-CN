@@ -17,7 +17,7 @@ POST /domains
 ### <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| 授权  | *需要*持有者&lt;令牌&gt;|
+| Authorization  | Bearer {token}。必需。|
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>请求正文

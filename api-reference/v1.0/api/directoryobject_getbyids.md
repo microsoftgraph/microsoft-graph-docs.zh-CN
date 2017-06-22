@@ -23,7 +23,7 @@ POST /directoryObjects/getById
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | 持有者&lt;令牌&gt;。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文

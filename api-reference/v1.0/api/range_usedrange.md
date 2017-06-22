@@ -17,13 +17,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|可选。仅将有值的单元格视为已使用的单元格。|
 

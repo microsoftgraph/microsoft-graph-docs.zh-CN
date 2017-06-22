@@ -20,7 +20,7 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 跟踪事件更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
 
 
-| 查询参数       | 类型    |说明|
+| 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 |startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
@@ -33,8 +33,8 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ### <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}。必需。|
-| Content-Type  | string  | application/json。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
+| Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 | Prefer | string | {Time zone}。可选，如果缺省，则采用 UTC。|
 

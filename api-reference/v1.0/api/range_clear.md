@@ -17,13 +17,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |applyTo|string|可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。|
 

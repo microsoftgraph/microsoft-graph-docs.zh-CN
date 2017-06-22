@@ -18,16 +18,16 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>`，基于用户凭据和拥有经授权访问权限的用户向应用提供的有效 OAuth 令牌。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供包含操作所需参数的 JSON 对象。如果无需任何参数，则可以发送空的正文。
 
-| 参数       | 类型    |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupId|String|要复制到的组的 ID。仅在复制到 Office 365 组时使用。|
-|renameAs|String|副本的名称。默认为现有项的名称。 |
+|groupId|字符串|要复制到的组的 ID。仅在复制到 Office 365 组时使用。|
+|renameAs|字符串|副本的名称。默认为现有项的名称。 |
 
 
 ## <a name="response"></a>响应

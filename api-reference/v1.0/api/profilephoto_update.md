@@ -36,7 +36,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type  | image/jpeg。必需。  |
 
 ## <a name="request-body"></a>请求正文

@@ -12,7 +12,7 @@ POST /groups/{id}/owners/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。

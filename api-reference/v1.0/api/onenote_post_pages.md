@@ -22,8 +22,8 @@ POST /groups/{id}/onenote/pages
 ## <a name="request-headers"></a>请求标头  
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>`，基于用户凭据和拥有经授权访问权限的用户向应用提供的有效 OAuth 令牌。 |
-| Content-Type | string | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
+| Authorization  | string  | Bearer {token}。必需。 |
+| Content-Type | 字符串 | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供页面的 HTML 内容。
