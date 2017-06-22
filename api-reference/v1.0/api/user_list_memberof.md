@@ -16,7 +16,7 @@ GET /users/{id | userPrincipalName}/memberOf
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文

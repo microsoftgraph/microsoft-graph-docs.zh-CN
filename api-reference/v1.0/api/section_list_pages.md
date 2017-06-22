@@ -14,7 +14,7 @@ GET /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 GET /groups/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
 对页面的默认查询返回按照 `lastModifiedTime desc` 排序的前 20 个页面。如果默认查询返回的页面超过 20 个，响应将包含 `@odata.nextLink`，可以使用它逐页查看结果集。`top` 请求最多可返回 100 个页面。
 
@@ -23,7 +23,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>`，基于用户凭据和拥有经授权访问权限的用户向应用提供的有效 OAuth 令牌。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
