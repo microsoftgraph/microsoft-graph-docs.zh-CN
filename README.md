@@ -55,7 +55,7 @@ microsoft-graph-docs 存储库中的内容先按文章语言进行分组，然�
 1. 创建一个用于参与此项目的 GitHub 帐户。如果尚未创建，请转到 [GitHub 主页][]立即创建。
 2. 在计算机上安装 Git。请按照[安装 Git 教程][Set Up Git]中的说明操作。
 3. 创建此存储库的你自己的分支。为此，请单击页面顶部的“分支”****按钮。
-4. 将自己的分支复制到本地计算机上。为此，请打开 GitBash。在命令提示符处输入以下命令：
+4. 将自己的分叉复制到本地计算机上。为此，请打开 GitBash。在命令提示符处输入以下命令：
 
 ```cmd
 git clone https://github.com/{your user name}/microsoft-graph-docs.git
@@ -153,7 +153,7 @@ git checkout X2
 若要删除分支，请按照以下步骤操作：
 
 1. 在 GitBash 中的命令提示符处键入 `git checkout master`。这命令可确保你不在要删除的分支中（严禁出现这样的行为）。
-2. 接下来，在命令提示符处键入 `git branch -d <branch name>`。只有当分支已成功合并到上游存储库中，此命令才会在本地计算机上删除分支。（可以使用 `�D` 标记替代此行为，但首先请确保你要这么做。）
+2. 接下来，在命令提示符处键入 `git branch -d <branch name>`。只有当分支已成功合并到上游存储库中，此命令才会在本地计算机上删除分支。（可以使用 `D` 标记替代此行为，但首先请确保你要这么做。）
 3. 最后，在命令提示符中键入 `git push origin :<branch name>`（冒号前有一个空格，之后没有空格）。这将删除 github 分叉中的分支。
 
 恭喜！你已成功参与此项目！
@@ -213,3 +213,5 @@ The image below is from [Google][googleweb]
 [Markdown 主页]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+
+此项目采用 [Microsoft 开源行为准则](https://opensource.microsoft.com/codeofconduct/)。有关详细信息，请参阅 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)（行为准则常见问题解答），有任何其他问题或意见，也可联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
