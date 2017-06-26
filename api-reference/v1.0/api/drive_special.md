@@ -11,8 +11,13 @@
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Files.ReadWrite.AppFolder
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

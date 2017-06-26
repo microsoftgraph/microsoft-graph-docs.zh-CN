@@ -2,8 +2,7 @@
 
 将用户添加为设备的已注册所有者。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：  
-*Directory.ReadWrite.All* 或 *Directory.AccessAsUser.All*
+要执行此 API，需要以下**范围**之一：*Directory.ReadWrite.All* 或 *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,8 +5,11 @@
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：
 
-  * Files.Read.All
-  * Files.ReadWrite.All
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
+
 
 **注意：**虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 范围成功发出，但一些属性可能会丢失。此外，如果没有 **All** 范围之一，无法访问从此 API 返回的共享项。
 

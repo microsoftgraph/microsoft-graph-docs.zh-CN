@@ -22,7 +22,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Prefer | string | <Time zone>。可选，如果缺省，则采用 UTC。|
+| Prefer | string | outlook.timezone=“东部标准时间”。可选。使用此选项指定响应中开始时间和结束时间的时区。如果未指定，则按 UTC 时间返回响应。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

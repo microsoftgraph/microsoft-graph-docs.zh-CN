@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type   | string  | application/json | 
-| Prefer | string | <Time zone>。可选，如果缺省，则采用 UTC。|
+| Prefer | string | outlook.timezone=“东部标准时间”。可选。使用此选项指定响应中开始时间和结束时间的时区。如果未指定，则按 UTC 时间返回响应。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
