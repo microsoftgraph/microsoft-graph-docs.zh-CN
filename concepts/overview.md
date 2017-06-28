@@ -10,7 +10,7 @@ Microsoft Graph 由各种资源组成，这些资源通过关系相连接。例�
 
 在 Microsoft Graph 中发现关系的可能性。
 
-![显示了作为图形一部分的主要资源和关系的图片](images/microsoft_graph.png)
+![显示作为 Graph 一部分的主要资源和关系的图片](images/microsoft_graph.png)
 
 ## <a name="what-can-you-do-with-microsoft-graph"></a>可以使用 Microsoft Graph 执行哪些操作？ 
 
