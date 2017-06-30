@@ -21,15 +21,19 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|名称|String|日历名称。|
-|changeKey|String|标识 calendar 对象的版本。每次日历更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
+|canEdit |Boolean |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。此属性对于共享日历并且授予写入访问权限的用户同样为 true。 |
+|canShare |Boolean |如果用户有权共享日历则为 ture，否则为 false。只有创建日历的用户才可以进行共享。 |
+|canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 |
+|changeKey|String|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |id|String|组的唯一标识符。只读。|
+|name|String|日历名称。|
+|owner |[emailAddress](emailaddress.md) | 如果设置，则表示创建或添加日历的用户。对于用户创建或添加的日历，将 **owner** 属性设置为用户。对于与用户共享的日历，将 **owner** 属性设置为与此用户共享该日历的人员。 |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |calendarView|[事件](event.md) 集合|日历的日历视图。导航属性。只读。|
 |events|[事件](event.md) 集合|日历中的事件。导航属性。只读。|
@@ -54,10 +58,14 @@
 
 ```json
 {
+  "canEdit": "boolean",
+  "canShare": "boolean",
+  "canViewPrivateItems": "boolean",
   "changeKey": "string",
   "color": "String",
   "id": "string (identifier)",
-  "name": "string"
+  "name": "string",
+  "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```

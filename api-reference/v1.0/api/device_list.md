@@ -3,7 +3,7 @@
 检索组织中注册的 device 对象的列表。
 
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：Device.ReadWrite.All、Directory.AccessAsUser.All
+要执行此 API，需要以下**范围**之一：*Device.ReadWrite.All* 或 *Directory.Read.All* 或 *Directory.ReadWrite.All* 或 *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

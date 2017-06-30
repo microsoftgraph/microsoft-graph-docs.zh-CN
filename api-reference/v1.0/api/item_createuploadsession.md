@@ -10,7 +10,11 @@
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **注意**：此 API 尚不支持 Files.ReadWrite.All 应用程序权限。即将规划提供完全支持。 
 
 ## <a name="create-an-upload-session"></a>创建上载会话
 

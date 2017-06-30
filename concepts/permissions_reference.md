@@ -131,7 +131,7 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 
 ### <a name="remarks"></a>注解
 
-此权限适用于针对组织的应用。
+此权限仅适用于针对组织的应用。
 
 ### <a name="example-usage"></a>用法示例
 #### <a name="application"></a>应用程序
@@ -247,9 +247,9 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    读取用户文件以及与用户共享的文件 | 允许应用读取登录用户的文件以及与该用户共享的文件。| 否 |
+| _Files.Read_ |    读取用户文件 | 允许应用读取登录用户的文件。| 否 |
 | _Files.Read.All_ | 读取用户可以访问的所有文件 | 允许应用读取登录用户可以访问的所有文件。 | 否 |
-| _Files.ReadWrite_ |   具有访问用户文件以及与用户共享的文件的完整权限 | 允许应用读取、创建、更新和删除登录用户的文件以及与该用户共享的文件。 | 否 |
+| _Files.ReadWrite_ |   具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | 否 |
 | _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | 否 |
 | _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 |
 | _Files.Read.Selected_ |    读取用户选择的文件（预览） | **Microsoft Graph 中的有限支持，请参见备注** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 |
@@ -259,21 +259,18 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | 读取用户可以访问的所有文件（预览） | **Microsoft Graph 中的有限支持** <br/> （预览）允许应用在没有登录用户的情况下读取所有网站集中的全部文件。 | 是 |
-| _Files.ReadWrite.All_ | 对用户可以访问的所有文件具备完全访问权限（预览） | **Microsoft Graph 中的有限支持** <br/> （预览）允许应用在没有登录用户的情况下读取、创建、更新和删除所有网站集中的全部文件。 | 是 |
+| _Files.Read.All_ | 读取所有网站集中的文件（预览） | （预览）允许应用在没有登录用户的情况下读取所有网站集中的全部文件。 | 是 |
+| _Files.ReadWrite.All_ | 读取和写入所有网站集中的文件（预览） | **Microsoft Graph 中的有限支持** <br/> （预览）允许应用在没有登录用户的情况下读取、创建、更新和删除所有网站集中的全部文件。 | 是 |
 
 ### <a name="remarks"></a>注解
 
-#### <a name="support-for-permissions-in-preview"></a>预览中的权限支持
-**委派权限**： 
+Files.Read、Files.ReadWrite、Files.Read.All 和 Files.ReadWrite.All 委派权限在个人 Microsoft 帐户和工作或学校帐户上都有效。请注意，对于个人帐户而言，Files.Read 和 Files.ReadWrite 还授予其权限访问与登录用户共享的文件。 
 
-- Microsoft Graph 尚不支持 _Files.Read.Selected_ 和 _Files.ReadWrite.Selected_。为了向后兼容，可以将这些权限配置并包含在授权请求中，但 Microsoft Graph 不会授予任何特权。我们计划在以后支持这些权限。 
-- 仅 Microsoft 帐户支持 Files.ReadWrite.AppFolder_。 
+Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
 
-**应用程序权限**： 
+Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](../api-reference/v1.0/api/drive_special.md) Microsoft Graph API 的[应用程序根特殊文件夹](https://dev.onedrive.com/items/special_folders.htm)。
 
-- Microsoft Graph 目前不完全支持 _Files.Read.All_ 和 _Files.ReadWrite.All_但是，这些权限可授予某些特权。即将规划提供完全支持。 
-
+Files.ReadWrite.All 应用程序权限尚不支持 OneDrive [创建可恢复上载会话](../api-reference/v1.0/api/item_createuploadsession.md) Microsoft Graph API。即将提供完全支持。 
 
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委托

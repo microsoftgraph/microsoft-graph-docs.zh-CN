@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-changeType、notificationUrl、resource 和 expirationDateTime 属性是必需的。如需属性定义和值，请参阅 [订阅资源类型](subscription.md)。虽然不需要 clientState，但必须包括它才能符合我们建议的通知处理过程。
+`changeType`、`notificationUrl`、`resource` 和 `expirationDateTime` 属性是必需的。如需属性定义和值，请参阅[订阅资源类型](subscription.md)。虽然不需要 `clientState`，但必须包括它才能符合我们建议的通知处理过程。
 
-如果成功，Microsoft Graph 在正文中返回 `200 OK` 代码和一个 [subscription](subscription.md) 对象。
+如果成功，Microsoft Graph 在正文中返回 `201 Created` 代码和一个 [subscription](subscription.md) 对象。
 
 # <a name="renewing-a-subscription"></a>续订订阅
 
@@ -118,8 +118,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 通知对象具有以下属性：
 
-* id — 此通知所属的订阅的 ID。
-* expirationDateTime — 订阅的过期时间。
+* subscriptionId — 此通知所属的订阅的 ID。
+* subscriptionexpirationDateTime — 订阅的过期时间。
 * clientState — 订阅请求中指定的 clientState 属性。
 * changeType — 引发通知的事件类型。例如，邮件接收时为 *created*，或将邮件标记为已读时为 *updated*。
 * resource — 资源相对于 `https://graph.microsoft.com` 的 URI。 
@@ -127,7 +127,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
   * @odata.type — Microsoft Graph 中描述所表示对象的 OData 实体类型。
   * @odata.id — 对象的 OData 标识符。
   * @odata.etag — 表示对象版本的 HTTP 实体标记。
-  * Id — 对象的标识符。
+  * id — 对象的标识符。
 
 
 > 注意：resourceData 中提供的 Id 值在通知已排入队列时有效。一些操作（例如将邮件移到其他文件夹中）可能会导致资源 Id 发生更改。 
@@ -140,8 +140,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

@@ -3,7 +3,7 @@
 更新已注册设备的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Directory.AccessAsUser.All* 或 *Device.ReadWrite.All*
+要执行此 API，需要以下**范围**之一：*Device.ReadWrite.All* 或 *Directory.AccessAsUser.All* 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

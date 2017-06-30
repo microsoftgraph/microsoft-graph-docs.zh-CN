@@ -18,19 +18,19 @@
 |[创建邀请](../api/invitation_post.md) | 邀请 | 写入 invitation 对象的属性和关系。|
 
 ### <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
-|invitedUserEmailAddress|字符串|被邀请的用户的电子邮件地址。必填。|
+|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。必填。|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
-|inviteRedirectUrl|字符串|兑现邀请后，用户应被重定向至的 URL。必填。|
+|inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
-|invitedUserType|字符串|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|status|String|邀请的状态。可能的值：Completed、InProgress 和 Error|
+|invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
+|status|String|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ### <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
