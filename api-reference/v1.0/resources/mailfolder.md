@@ -25,7 +25,7 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
@@ -44,7 +44,7 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |邮件|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
@@ -75,7 +75,12 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
   "id": "string (identifier)",
   "parentFolderId": "string",
   "totalItemCount": 1024,
-  "unreadItemCount": 1024
+  "unreadItemCount": 1024,
+
+  "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
