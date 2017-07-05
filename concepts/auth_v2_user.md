@@ -1,5 +1,5 @@
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问
-若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到你的应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 
+若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
 
@@ -11,12 +11,12 @@
 4. 使用访问令牌调用 Microsoft Graph。
 5. 使用刷新令牌获取新的访问令牌。
 
-## <a name="1-register-your-app"></a>1.注册应用程序
+## <a name="1-register-your-app"></a>1.注册你的应用程序
 若要使用 Azure v2.0 终结点，必须在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。 
 
 以下屏幕截图显示 Web 应用注册示例。![使用密码和隐式授予进行 Web 应用注册。](./images/v2-web-registration.png)
 
-若要配置应用以使用 OAuth 2.0 授权代码授予流程，你将需要在注册应用时保存下列值：
+若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
 
 - 应用注册门户分配的应用程序 ID。
 - 应用密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。 
@@ -53,7 +53,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | response_mode |建议 |指定用于将结果令牌发送回应用的方法。可以是 `query` 或 `form_post`。 |
 | 状态 |建议 |请求中包含的值将在令牌响应中返回。它可以是你希望的任何内容的字符串。随机生成的唯一值通常用于[防止跨网站请求伪造攻击](http://tools.ietf.org/html/rfc6749#section-10.12)。此状态还用于在发生身份验证请求前，对应用中的用户状态信息进行编码（如它们所在的页面或视图上）。 |
 
-> **重要说明**：Microsoft Graph 公开两种类型的权限：应用程序权限和委派权限。对于已登录用户运行的应用，在 `scope` 参数中请求委派权限。这些权限将已登录用户的特权委托给应用，允许其代表已登录的用户来调用 Microsoft Graph。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限引用](./permissions_reference.md)。
+> **重要说明**：Microsoft Graph 公开两种类型的权限：应用程序性权限和委派权限。对于已登录用户运行的应用，在 `scope` 参数中请求委派权限。这些权限将已登录用户的特权委派给应用，允许其代表已登录的用户来调用 Microsoft Graph。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限引用](./permissions_reference.md)。
  
 ### <a name="consent-experience"></a>同意体验
 
@@ -77,7 +77,7 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 ```
 | 参数 | 说明 |
 | --- | --- |
-| 代码 |应用请求的 authorization_code。应用可以使用授权代码请求目标资源的访问令牌。Authorization_codes 有效期非常短暂，通常它们会在 10 分钟后失效。 |
+| code |应用请求的 authorization_code。应用可以使用授权代码请求目标资源的访问令牌。Authorization_codes 有效期非常短暂，通常它们会在 10 分钟后失效。 |
 | 状态 |如果请求中包含状态参数，则应在响应中显示相同的值。应用应确认请求和响应中的状态值相同。 |
 
 ## <a name="3-get-a-token"></a>3.获取令牌
@@ -105,7 +105,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id |必需 |注册门户 ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) 分配给应用的应用程序 ID。 |
 | grant_type |必需 |对于授权代码流必须为 `authorization_code`。 |
 | 范围 |必需 |用空格分隔的范围列表。在此图例中请求的范围必须等于在首个（授权）图例中请求的范围或其子集。如果此请求中指定的范围跨越多个资源服务器，则 v2.0 将为首个范围中指定的资源返回令牌。 |
-| 代码 |必需 |你在流程的第一个图例中获得的 authorization_code。 |
+| code |必需 |你在流程的第一个图例中获得的 authorization_code。 |
 | redirect_uri |必需 |用于获取 authorization_code 的相同的 redirect_uri 值。 |
 | client_secret |Web 应用需要 |你在应用注册门户中为应用创建的应用程序密码。它不可在本机应用中使用，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。 |
 

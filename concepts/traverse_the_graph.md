@@ -6,12 +6,12 @@
 
 在服务根处发布元数据文档 ($metadata)。可以通过以下 URL 查看 v1.0 和试用版的 Microsoft Graph API 服务文档。
 
-**Microsoft Graph API `v1.0` 元数据**
+**Microsoft Graph API v1.0 元数据**
 ```
     https://graph.microsoft.com/v1.0/$metadata
 ```
 
-**Microsoft Graph API `beta` 元数据**
+**Microsoft Graph API beta 元数据**
 
 ```
     https://graph.microsoft.com/beta/$metadata
@@ -21,15 +21,116 @@
 
 可以使用元数据了解 Microsoft Graph 中实体之间的关系，并建立可在这些实体间导航的 URL。
 
-路径 URL 资源名称、查询参数以及操作参数和值不区分大小写。不过，分配的值、实体 ID 和其他 base64 编码的值区分大小写。
+路径 URL 资源名称、查询参数以及操作参数和值不区分大小写。不过，分配的值、实体 ID 和其他 base-64 编码的值区分大小写。
+
+## <a name="view-a-collection-of-resources"></a>查看资源集合
+
+Microsoft Graph 允许用户使用 HTTP GET 查询查看租户中的资源。查询响应包括每个资源的属性，每个资源由其 ID 标识。资源 ID 的格式可以是 GUID，并且通常根据资源类型而变化。 
+
+例如，可以获取在租户中定义的用户的集合：
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/users HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [user](..\api-reference\v1.0\resources\user.md) 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "value":[
+    {
+      "id":"f71f1f74-bf1f-4e6b-b266-c777ea76e2c7",
+      "businessPhones":[
+
+      ],
+      "displayName":"CIE Administrator",
+      "givenName":"CIE",
+      "jobTitle":null,
+      "mail":"admin@contoso.onmicrosoft.com",
+      "mobilePhone":"+1 3528700812",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Administrator",
+      "userPrincipalName":"admin@contoso.onmicrosoft.com"
+    },
+    {
+      "id":"d66f2902-9d12-4ff8-ab01-21ec6706079f",
+      "businessPhones":[
+
+      ],
+      "displayName":"Alan Steiner",
+      "givenName":"Alan",
+      "jobTitle":"VP Corporate Marketing",
+      "mail":"alans@contoso.onmicrosoft.com",
+      "mobilePhone":null,
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Steiner",
+      "userPrincipalName":"alans@contoso.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+Microsoft Graph 还允许用户通过浏览不同资源之间的关系来查看集合。例如，通过用户的 **mailFolders** 导航属性，可以查询用户邮箱中的 [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) 资源的集合：
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [mailFolder](..\api-reference\v1.0\resources\user.md) 资源的集合。每个 **mailFolder** 都由 **id** 属性标识，并附带其属性。为简单起见，下面所示的有效负载将被截断。
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('16f5a7b6-5a15-4568-aa5a-31bb117e9967')/mailFolders",
+  "value":[
+    {
+      "id":"AAMkADRm9AABDGisXAAA=",
+      "displayName":"Archive",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AQMkADRm0AAAIBXAAAAA==",
+      "displayName":"Sales reports",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AAMkADRCxI9AAAT6CAIAAA=",
+      "displayName":"Conversation History",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":1,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    }
+  ]
+}
+```
+
+
+
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>按 ID 查看集合中的特定资源
 
-要查看有关用户的信息，则获取所有用户的集合，然后使用 HTTP GET 请求根据用户 ID 获取特定用户。对于 `User` 实体，可以将 `id` 或 `userPrincipalName` 属性用作标识符。以下请求示例使用 `userPrincipalName` 值作为用户 ID。 
+继续使用 **user** 作为示例 - 要查看有关用户的信息，则使用 HTTP GET 请求根据用户 ID 获取特定用户。对于**user** 实体，可以使用 **id** 或 **userPrincipalName** 属性作为标识符。以下请求示例使用 **userPrincipalName** 值作为用户 ID。 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 如果成功，将会收到 200 OK 响应，其中包含有效负载中的用户资源声明，如下所示。
@@ -58,7 +159,7 @@ content-length: 982
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 成功的响应返回 200 OK 状态和有效负载，如下所示。
@@ -79,14 +180,14 @@ content-length: 169
     ]
 }
 ```
-此时，仅返回 `aboutMe`、`displayName` 和 `skills` 基本属性（而不是 `user` 实体上的整个属性集）。
+此时，仅返回 **aboutMe**、**displayName** 和 **skills** 基本属性（而不是 **user** 实体上的整个属性集）。
 
 ## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>读取集合中资源的特定属性
 除了读取单个资源的特定属性，还可以将类似的 [$select](query_parameters.md) 查询参数应用于集合，只要使用返回到各自的特定属性即可返回集合中的所有资源。例如，要查询已登录用户的驱动器项目姓名，你可以提交以下 HTTPS GET 请求：
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 成功的响应返回 200 OK 状态代码，以及仅包含共享文件名称的有效负载，如以下示例所示。
@@ -112,11 +213,11 @@ Authorization : Bearer <access_token>
 ```
 
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>通过关系从某个资源遍历到其他资源
-经理与向其报告的其他用户保持 `directReports` 关系。若要查询用户的直接下属列表，则你可以使用以下 HTTPS GET 请求，通过关系遍历，导航到预期目标。 
+经理与向其报告的其他用户保持 **directReports** 关系。若要查询用户的直接下属列表，则你可以使用以下 HTTPS GET 请求，通过关系遍历，导航到预期目标。 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 成功的响应返回 200 OK 状态和有效负载，如下所示。
@@ -137,12 +238,12 @@ content-length: 152
 }
 ```
 
-同样地，可以根据关系导航至相关资源。例如，借助 `user => messages` 关系，可以从 Azure Active Directory (Azure AD) 用户遍历到 Outlook 邮件集。下面的示例显示如何在 REST API 调用中执行此操作：
+同样地，可以根据关系导航至相关资源。例如，借助 user-messages 关系，可以从 Azure Active Directory (Azure AD) 用户遍历到 Outlook 邮件集。下面的示例显示如何在 REST API 调用中执行此操作：
 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
     
@@ -189,7 +290,7 @@ Microsoft Graph 还支持_函数_以并不仅仅是创建、读取、更新和�
 
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
-authorization: bearer <access_token>
+authorization: bearer {access_token}
 content-type: application/json
 content-length: 96
 

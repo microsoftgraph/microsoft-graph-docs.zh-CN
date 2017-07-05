@@ -22,14 +22,14 @@
 - 可以让服务接收来自 Azure AD 的令牌响应的重定向 URL。
 - 你的应用实现功能以请求管理员同意时，可以让服务接收管理员同意响应的重定向 URL。  
 
-有关如何使用 Microsoft 应用注册门户配置应用的步骤，请参阅[注册你的应用](./auth_register_app_v2.md)。
+有关如何使用 Microsoft 应用注册门户配置应用的步骤，请参阅[注册应用](./auth_register_app_v2.md)。
 
-通过 OAuth 2.0 客户端凭据授予流，你的应用可以使用由 Azure AD 分配的应用程序 ID 和你使用门户创建的应用程序密码，直接在 Azure AD v2.0 `/token` 终结点中进行身份验证。 
+通过 OAuth 2.0 客户端凭据授予流，应用可以使用由 Azure AD 分配的应用程序 ID 和使用门户创建的应用程序密码，直接在 Azure AD v2.0 `/token` 终结点中进行身份验证。 
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2.配置 Microsoft Graph 的权限
-对于无用户运行的应用，Microsoft Graph 会公开应用程序权限。注册你的应用时，你需要预配置以下权限。应用程序权限始终需要管理员的同意。当你的应用安装在他们的组织中时，管理员可以使用 [Azure 门户](https://portal.azure.com)同意这些权限，你也可以提供应用注册体验，让管理员同意你配置的权限。Azure AD 记录管理员同意后，你的应用无需再次请求同意即可请求令牌。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限参考](./permissions_reference.md)
+对于无用户运行的应用，Microsoft Graph 会公开应用程序权限。（Microsoft Graph 还显示代表用户运行的应用的委派权限。）注册应用时，需要预配置应用所需的应用程序权限。应用程序权限始终需要管理员的同意。当你的应用安装在他们的组织中时，管理员可以使用 [Azure 门户](https://portal.azure.com)同意这些权限，你也可以提供应用注册体验，让管理员同意你配置的权限。Azure AD 记录管理员同意后，你的应用无需再次请求同意即可请求令牌。有关可通过 Microsoft Graph 使用的权限的详细信息，请参阅[权限参考](./permissions_reference.md)
 
-若要在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)中配置应用的应用程序权限：在“Microsoft Graph”****下，选择“应用程序权限”****旁边的“添加”****，然后在“选择权限”****对话框中选择你的应用需要的权限。
+若要在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)中配置应用的应用程序权限：在“Microsoft Graph”****下，选择“应用程序权限”****旁边的“添加”****，然后在“选择权限”****对话框中选择应用需要的权限。
 
 下面的屏幕快照显示了 Microsoft Graph 应用程序权限的“选择权限”****对话框。 
 
@@ -85,7 +85,7 @@ https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49
 ```
 
 ## <a name="4-get-an-access-token"></a>4.获取访问令牌
-在 OAuth 2.0 客户端凭据授予流中，你可以在注册应用以便直接从 Azure AD v2.0 `/token` 终结点请求访问令牌时使用应用程序 ID 和应用程序密码值。
+在 OAuth 2.0 客户端凭据授予流中，可以在注册应用以便直接从 Azure AD v2.0 `/token` 终结点请求访问令牌时使用应用程序 ID 和应用程序密码值。
 
 你可以通过传递 `https://graph.microsoft.com/.default` 并将其作为令牌请求中 `scope` 参数的值来指定预配置的权限。请参阅下面的令牌请求中的 `scope` 参数说明获取详情。
 
@@ -104,7 +104,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 | --- | --- | --- |
 | 租户 |必需 |需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。 |
 | client_id |必需 |当注册应用时，[Microsoft 应用注册门户](https://apps.dev.microsoft.com)分配的应用程序 ID。 |
-| 范围 |必需 |为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。此值会指示 v2.0 终结点，对于你为应用配置的所有应用程序权限，它应该为要使用的资源的关联项颁发令牌。 |
+| 范围 |必需 |为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。此值会指示 v2.0 终结点，对于为应用配置的所有应用程序权限，它应该为要使用的资源的关联项颁发令牌。 |
 | client_secret |必需 |你在应用注册门户中为应用生成的应用程序密码。 |
 | grant_type |必需 |必须是 `client_credentials`。 |
 

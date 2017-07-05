@@ -83,6 +83,7 @@
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:-------------|
 |添加项|Beta|添加了对 Project Rome 的支持，包括[获取设备列表](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices)、[发送命令到设备](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command)和[查看命令状态](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status)。|
+|添加项|Beta|增加了对用户[活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)和 [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) 的支持，其中包括 [upsert 活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)和 [upsert historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)。|
 
 ### <a name="administrative-units-property-changes"></a>管理单元属性更改
 
