@@ -1,4 +1,6 @@
-# <a name="customize-responses-optional-query-parameters"></a>自定义响应：可选的查询参数
+<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
+
+# 使用查询参数自定义响应
 
 Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 
@@ -35,7 +37,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="filter"></a>filter
+<a id="filter" class="xliff"></a>
+
+## filter
 
 `$filter` 可用于仅检索集合的一部分内容。例如，若要查找显示名称以 `J` 开头的用户，请使用 `startswith`。
 
@@ -91,7 +95,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 `$filter` 的语法非常丰富且富于表现力，其中可内置许多运算符。逻辑运算符包括等于 (`eq`)、不等于 (`ne`)、大于 (`gt`)、大于或等于 (`gte`)、且 (`and`)、或 (`or`)、非 (`not`) 等。算术运算符包括加 (`add`)、减 (`sub`) 等。字符串运算符包括包含 (`contains`)，开头为 (`startswith`) 等。lambda 运算符包括任意 (`any`) 和所有 (`all`)。有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。
 
 
-## <a name="select"></a>select
+<a id="select" class="xliff"></a>
+
+## select
 
 在集合或单个实体中，若要指定返回不同于默认集的属性集，请使用 `$select` 查询参数。使用 `$select` 参数，可以选择返回的默认集的子集或超集。例如，检索邮件时，不妨选择仅返回邮件的 `from` 和 `subject` 属性。
 
@@ -125,7 +131,9 @@ in the response will only have those property values included.
 }
 ```-->
 
-## <a name="expand"></a>expand
+<a id="expand" class="xliff"></a>
+
+## expand
 
 在 Microsoft Graph API 请求中，对参考项目的对象或集合的导航不会自动扩展。这是有意为之，因为这样可以减少网络流量以及从服务生成响应所需的时间。不过，在某些情况下，您可能希望在响应中添加这些结果。
 
@@ -145,7 +153,9 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 
 其他一些资源可能也有限制，因此，请务必检查是否可能有错。
 
-## <a name="orderby"></a>orderby
+<a id="orderby" class="xliff"></a>
+
+## orderby
 
 若要指定从 Microsoft Graph API 返回的项的排序顺序，请使用 `$orderby` 查询参数。
 
@@ -165,7 +175,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
  > **注意：**如果查询 [`user`](../api-reference/v1.0/resources/user.md) 资源，不能将 `$orderby` 与 filter 表达式结合使用。
 
-## <a name="top"></a>top
+<a id="top" class="xliff"></a>
+
+## top
 
 若要指定结果集中返回的项数上限，请使用 `$top` 查询参数。`$top` 查询参数可确定集合的子集。这个子集是通过仅选择集合的前 N 项而形成，其中 N 是此查询参数指定的正整数。例如，若要返回用户邮箱中的前 5 封邮件，请使用以下语法：
 
@@ -173,7 +185,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## <a name="skip"></a>skip
+<a id="skip" class="xliff"></a>
+
+## skip
 
 若要设置在检索集合中的项之前要跳过的项数，请使用 `$skip` 查询参数。例如，若要返回按创建日期排序的事件，并从第 21 个事件开始返回，请使用以下语法。
 
@@ -181,7 +195,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## <a name="skiptoken"></a>skipToken
+<a id="skiptoken" class="xliff"></a>
+
+## skipToken
 
 若要请求第二个和后续 Graph 数据页，请使用 `$skipToken` 查询参数。当 Graph 返回部分结果时（通常是由于服务器端分页所致），Graph 返回的 URL 中会提供 `$skipToken` 查询参数。它在集合中标识了服务器发送完结果的点，并会传递回 Graph 以指明应从哪里继续发送结果。例如，`$skipToken` 查询参数的值可以标识集合中的第 10 项，也可以标识包含 50 项的集合中的第 20 项，亦可标识集合中的其他任何位置。
 
@@ -197,7 +213,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## <a name="count"></a>count
+<a id="count" class="xliff"></a>
+
+## count
 
 `$count` 查询参数可用于添加集合中的项总数，以及从 Graph 返回的数据值页，如下面的示例所示：
 
@@ -209,13 +227,15 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**注意：**[`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) 集合不支持此查询参数。
 
-## <a name="search"></a>search
+<a id="search" class="xliff"></a>
+
+## search
 
 若要限制与搜索条件匹配的请求结果，请使用 `$search` 查询参数。
 
 > **注意：**目前**只**能搜索 [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) 和 [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter) 或 [`$orderby`](#orderby)。
 
-搜索条件是使用高级查询语法 (AQS) 进行表示。结果按邮件发送日期和时间进行排序。
+搜索条件使用高级查询语法 (AQS) 进行表示。结果按邮件发送日期和时间进行排序。
 
 可以在 `$search` 条件中对 `message` 指定下列属性：`attachments`、`bccRecipients`、`body`、`category`、`ccRecipients`、`content`、`from`、`hasAttachments`、`participants`、`receivedDateTime`、`sender`、`subject`、`toRecipients`
 

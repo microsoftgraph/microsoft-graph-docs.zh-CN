@@ -1,9 +1,13 @@
-# <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
+<a id="plannerassignments-resource-type" class="xliff"></a>
+
+# plannerAssignments 资源类型
 
 **plannerAssignments** 资源表示 [plannerTask](plannertask.md) 资源的分配。此类型是开放类型。此类型中的每个属性名称均是任务被分配到的用户对象的 ID。可以通过新建以用户 ID 命名的属性并将包含 orderHint 属性的 [plannerassignment](plannerassignment.md) 对象填充为其值来向任务分配用户。可以通过将以代理人 ID 命名的属性设置为 null 来在任务中取消分配代理人。
 
 
-### <a name="properties"></a>属性
+<a id="properties" class="xliff"></a>
+
+## 属性
 开放类型的属性可以由客户端定义。但是在这种情况下，客户必须将分配用户的 ID 作为属性名称。必须将属性设置为 **plannerAssignment** 对象才能创建或修改代理人，必须将其设置为 null 才能删除代理人。
 
 示例：

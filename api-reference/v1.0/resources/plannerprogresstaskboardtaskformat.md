@@ -1,27 +1,36 @@
-# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>plannerProgressTaskBoardTaskFormat 资源类型
+<a id="plannerprogresstaskboardtaskformat-resource-type" class="xliff"></a>
+
+# plannerProgressTaskBoardTaskFormat 资源类型
 
 **plannerProgressTaskBoardTaskFormat** 资源表示用于在“任务板”的“进度”视图（由任务对象上的 PercentComplete 字段的状态组成的视图，包含“未启动”、“正在进行”和“完成”列）下正确呈现任务的信息。每个[任务](plannertask.md)均将有一个与其相关联的 **plannerProgressTaskBoardTaskFormat** 对象。
 
 
-### <a name="methods"></a>方法
+<a id="methods" class="xliff"></a>
+
+## 方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |读取 **plannerProgressTaskBoardTaskFormat** 对象的属性和关系。|
 |[Update](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |更新 **plannerProgressTaskBoardTaskFormat** 对象。 |
 
-### <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+<a id="properties" class="xliff"></a>
+
+## 属性
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。资源的 ID。长度为 28 个字符，区分大小写。[格式验证](planner_identifiers_disclaimer.md)在服务上完成。|
 |orderHint|String|用于对任务板进度视图上的任务进行排序的提示值。[此处](planner_order_hint_format.md)概述了此格式。|
 
-### <a name="relationships"></a>关系
+<a id="relationships" class="xliff"></a>
+
+## 关系
 无
 
 
-### <a name="json-representation"></a>JSON 表示形式
+<a id="json-representation" class="xliff"></a>
 
+## JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {

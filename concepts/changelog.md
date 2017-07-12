@@ -1,19 +1,35 @@
-# <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
+<a id="changelog-for-microsoft-graph" class="xliff"></a>
+
+# Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
-## <a name="june-2017"></a>2017 年 6 月
+<a id="june-2017" class="xliff"></a>
 
-### <a name="outlook-calendar"></a>Outlook 日历
+## 2017 年 6 月
+
+<a id="project-rome" class="xliff"></a>
+
+### Project Rome
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+|添加项|Beta|添加了以下资源和 API：<br/>[活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)<br/>[创建或替换活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)<br/>[删除活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_activity)<br/>[历史记录项](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem)<br/>[创建或替换历史记录项](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)<br/>[删除历史记录项](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_historyitem)|
+
+<a id="outlook-calendar" class="xliff"></a>
+
+### Outlook 日历
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|v1.0|将以下 4 个 [calendar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar)属性升级到 v1.0：**canEdit**、**canShare**、**canViewPrivateItems** 和 **owner**。|
 
 
-### <a name="intune-apis"></a>Intune API
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -26,6 +42,7 @@
 |更改|Beta|向 [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) 实体添加了 **deployedAppCount** 属性|
 |更改|Beta|从 [complianceSettingStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/complianceSettingStateSummary) 实体删除了 **instanceDisplayName** 和 **settingPlatform** 属性|
 |更改|Beta|向 [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) 实体添加了 **deployedAppCount** 属性|
+|更改|Beta|向 [deviceCompliancePolicyGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicygroupassignment) 实体添加了 **excludeGroup** 属性|
 |更改|Beta|从 [deviceCompliancePolicySettingStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary) 实体删除了 **instanceDisplayName** 和 **settingPlatform** 属性|
 |更改|Beta|从 [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate) 实体删除了 **devicePlatform** 属性|
 |更改|Beta|向 [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) 实体添加了 **assignmentStatus**、**assignmentProgress** 和 **assignmentErrorMessage** 属性|
@@ -65,27 +82,37 @@
 |更改|Beta|向 [vpnServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_vpnserver) 复杂类型添加了 **address** 属性|
 
 
-## <a name="may-2017"></a>2017 年 5 月
+<a id="may-2017" class="xliff"></a>
 
-### <a name="application-api-changes"></a>应用程序 API 更改
+## 2017 年 5 月
+
+<a id="application-api-changes" class="xliff"></a>
+
+### 应用程序 API 更改
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改|Beta| 应用程序 API 更新。这是第一组更改，其中包括[应用程序](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application)实体的属性重命名和重构。<br/>**新实体：**[api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api])、[informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl)、[installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient)、[permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope)、[preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication)、[Web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web)。<br/>**删除的属性：**addIns、appRoles、availableToOtherOrganizations、knownClientApplications、oauth2AllowUrlPathMatching、recordConsentConditions。<br/>**重命名的属性：**appId 重命名为 id，identifierUris 重命名为 applicationAliases，availableToOtherTenants 重命名为 orgRestrictions，mainLogo 重命名为 logo，oauth2Permissions 重命名为 publishedPermissionsScopes，publicClient 重命名为 allowPublicClient，replyUrls 重命名为 redirectUrls。<br/>**新属性：**tags。 |
 
-### <a name="remove-deprecated-planner-api"></a>删除已弃用的 Planner API
+<a id="remove-deprecated-planner-api" class="xliff"></a>
+
+### 删除已弃用的 Planner API
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:-------------|
 |删除|Beta|删除了以下实体：<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
 
-### <a name="project-rome"></a>Project Rome
+<a id="project-rome" class="xliff"></a>
+
+### Project Rome
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:-------------|
 |添加项|Beta|添加了对 Project Rome 的支持，包括[获取设备列表](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices)、[发送命令到设备](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command)和[查看命令状态](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status)。|
 |添加项|Beta|增加了对用户[活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)和 [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) 的支持，其中包括 [upsert 活动](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)和 [upsert historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)。|
 
-### <a name="administrative-units-property-changes"></a>管理单元属性更改
+<a id="administrative-units-property-changes" class="xliff"></a>
+
+### 管理单元属性更改
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -94,33 +121,43 @@
 | 更改        | Beta       | 已将 [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) 实体的导航属性 scopedAdministrators 更改为 scopedRoleMembers |
 | 更改        | Beta       | 已将 [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole) 实体的导航属性 scopedAdministrators 更改为 scopedMembers |
 
-### <a name="add-users-and-groups-webhook-support-in-preview"></a>在预览中添加用户和组 Webhook 支持
+<a id="add-users-and-groups-webhook-support-in-preview" class="xliff"></a>
+
+### 在预览中添加用户和组 Webhook 支持
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 | 更改        | Beta       | 添加了用户和组的 [Webhooks](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) 支持
 
-### <a name="add-delta-query-to-v10"></a>向 v1.0 添加 delta 查询
+<a id="add-delta-query-to-v10" class="xliff"></a>
+
+### 向 v1.0 添加 delta 查询
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 | 添加项      | v1.0       | 向 V1.0 添加 delta 函数支持。添加到以下实体，以执行 [delta 查询](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview)：<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>有关示例，请参阅以下文章：<br/>[获取组的增量更改](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[获取文件夹中邮件的增量更改](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[获取用户的增量更改](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 | 更改        | Beta       | 将其他可选查询筛选功能（按 id）添加到 [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) 和 [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta)。 |
 
-### <a name="added-user-resource-support-for-deleted-items"></a>添加了对已删除项目的用户资源支持
+<a id="added-user-resource-support-for-deleted-items" class="xliff"></a>
+
+### 添加了对已删除项目的用户资源支持
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 | 添加项      | Beta       | 添加了对[还原并永久删除用户](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)的支持。 |
 
-### <a name="added-onpremisesprovisioningerror"></a>添加了 OnPremisesProvisioningError
+<a id="added-onpremisesprovisioningerror" class="xliff"></a>
+
+### 添加了 OnPremisesProvisioningError
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 | 添加项      | beta       | 新实体：[OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
 | 更改        | beta       | 向 [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)、[group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) 和 [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) 添加了 OnPremisesProvisioningError 属性。 |
 
-### <a name="added-deleteddatetime-property"></a>添加了 deletedDateTime 属性
+<a id="added-deleteddatetime-property" class="xliff"></a>
+
+### 添加了 deletedDateTime 属性
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -128,19 +165,25 @@
 |更改|beta|向 [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) 实体添加了 deletedDateTime 属性。
 |更改|beta|向 [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) 实体添加了 deletedDateTime 属性。
 
-### <a name="added-domain-operations-to-v10"></a>向 v1.0 添加了域操作
+<a id="added-domain-operations-to-v10" class="xliff"></a>
+
+### 向 v1.0 添加了域操作
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|v1.0|在 [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain) 上添加了操作<br/>新实体：</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新操作：</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
-### <a name="added-contracts-to-v10"></a>向 v1.0 添加了合同
+<a id="added-contracts-to-v10" class="xliff"></a>
+
+### 向 v1.0 添加了合同
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|v1.0|新实体：</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-### <a name="added-licensedetails-to-v10"></a>向 v1.0 添加了 licenseDetails
+<a id="added-licensedetails-to-v10" class="xliff"></a>
+
+### 向 v1.0 添加了 licenseDetails
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -148,7 +191,9 @@
 |更改  |v1.0|针对 [users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) 的新 [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) 导航属性 |
 
 
-### <a name="drive-api"></a>驱动器 API
+<a id="drive-api" class="xliff"></a>
+
+### 驱动器 API
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:----------|:--------------|
@@ -158,7 +203,9 @@
 | 更改 | Beta | 向 **sharingLink** 添加了 **configuratorUrl** 和 **WebHtml** 属性。 <br/> 向 **folder** 资源类型添加了 **folderView** 资源类型和 **view** 属性。 <br/> 向 **driveItem** 添加了 **listItem** 导航属性。 <br/> 向 **drive** 添加了 **list** 导航属性。
 
 
-### <a name="extensions-open-extensions"></a>扩展（开放扩展）
+<a id="extensions-open-extensions" class="xliff"></a>
+
+### 扩展（开放扩展）
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -168,7 +215,9 @@
 |添加项|Beta|支持 `$expand` 在 [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) 中[获取开放扩展](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get)。|
 
 
-### <a name="extensions-schema-extensions"></a>扩展（架构扩展） 
+<a id="extensions-schema-extensions" class="xliff"></a>
+
+### 扩展（架构扩展） 
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -179,13 +228,17 @@
 |更改|v1.0 和 beta| 现在可以将架构扩展复杂类型设为 null，以便将架构扩展从资源实例中删除。 |
 
 
-### <a name="group"></a>组
+<a id="group" class="xliff"></a>
+
+### 组
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:----------|:--------------|
 | 添加项 | v1.0 和 beta | 向 **group** 添加了 **drives** 和 **sites** 导航属性。
 
-### <a name="insights-apis"></a>见解 API
+<a id="insights-apis" class="xliff"></a>
+
+### 见解 API
 
 |**更改类型**|**版本**|**说明**| 
 |:-------------|:-----------|:--------------|
@@ -194,7 +247,9 @@
 |更改|Beta|以下资源中的新 **Type** 属性：<br />[resourceVisualization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_resourcevisualization)。 <br />
 |删除项|Beta|删除了以下实体：<br/>**workingWith**<br/>**trendingAround**<br/>|
 
-### <a name="intune-apis"></a>Intune API
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -256,21 +311,27 @@
 |更改|Beta|从 [mailboxSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailboxSettings) 复杂类型删除了 **archiveFolder** 属性|
 
 
-### <a name="outlook-calendar"></a>Outlook 日历
+<a id="outlook-calendar" class="xliff"></a>
+
+### Outlook 日历
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|v1.0 和 beta|对于 **findMeetingTimes**，添加了新的枚举值**无限制**，你可以将其指定为 **activityDomain** 属性并作为 **timeConstraint** 参数的一部分。这样 **findMeetingTimes** 可查找适合于正在安排的活动类型的时间。有关详细信息，请参阅[请求正文](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body)部分。|
 |添加项|Beta|支持以纯文本格式获取 **event** 正文，以作为默认 HTML 格式的替代选择。有关详细信息，请参阅 [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) 和 [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events) 事件。|
 
-### <a name="outlook-mail"></a>Outlook 邮件
+<a id="outlook-mail" class="xliff"></a>
+
+### Outlook 邮件
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改|Beta|支持以纯文本格式获取 **message** 正文，以作为默认 HTML 格式的替代选择。有关详细信息，请参阅 [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) 和 [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages) 事件。|
 
 
-### <a name="outlook-tasks"></a>Outlook 任务
+<a id="outlook-tasks" class="xliff"></a>
+
+### Outlook 任务
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -279,13 +340,17 @@
 |添加项|Beta|Outlook 任务支持附件（[attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment)、[fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment)、[itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment) 和 [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment) 资源）。 |
 |添加项|Beta|Outlook 任务支持[扩展的属性](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview)（[singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) 和 [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty) 资源）。 |
 
-### <a name="planner-apis"></a>规划器 API
+<a id="planner-apis" class="xliff"></a>
+
+### 规划器 API
 
 |**更改类型**|**版本**|**说明**| 
 |:-------------|:-----------|:--------------|
 |添加项|v1.0|添加了[规划器 API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview)。<br />新资源：<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
 
-### <a name="sharepoint-sites"></a>SharePoint 网站
+<a id="sharepoint-sites" class="xliff"></a>
+
+### SharePoint 网站
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:----------|:--------------|
@@ -293,7 +358,9 @@
 | 更改        | beta      | 已更改 **site** 资源的标识符格式。这是 beta API 中的重大更改。
 | 已删除       | beta      | 从测试版 API 中删除了 **sharePoint** 实体。现在可在**网站**集中使用此功能。
 
-### <a name="sharepoint-lists"></a>SharePoint 列表
+<a id="sharepoint-lists" class="xliff"></a>
+
+### SharePoint 列表
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:----------|:--------------|
@@ -303,40 +370,54 @@
 
 
 
-## <a name="april-2017"></a>2017 年 4 月
+<a id="april-2017" class="xliff"></a>
 
-### <a name="administrative-units-property-changes"></a>管理单元属性更改
+## 2017 年 4 月
+
+<a id="administrative-units-property-changes" class="xliff"></a>
+
+### 管理单元属性更改
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改|Beta| 管理单元 API 将在预览 (beta) 中得到更新。第一个更改集将于 2017 年 5 月 3 日应用。这些更改包括以下属性重命名：<br />scopedRoleMembership 实体的**标识**复杂类型的 - **roleMemberInfo** 复杂类型<br />用户实体的 **scopedRoleMemberOf** 的 - **scopedAdministratorOf** 导航属性<br />administrativeUnit 实体的 **scopedRoleMembers** 的 - **scopedAdministrators** 导航属性<br />directoryRole 实体的 **scopedMembers** 的 - **scopedAdministrators** 导航属性 |
 
-### <a name="application-and-serviceprincipal-api-changes"></a>应用程序和 servicePrincipal API 更改
+<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
+
+### 应用程序和 servicePrincipal API 更改
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改|Beta| [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) 和 [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) API 将在预览 (beta) 中得到更新。第一个更改集将于 2017 年 5 月 15 日应用。这些更改包括属性重命名和重构。在更改完成后，某些属性（如 appRoles 和 addIns）才可用。这些更改在发布到 v1.0 之前将先在预览版 (beta) 中发布。 |
 
-### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>添加了对云解决方案提供商开发人员的预览支持
+<a id="added-preview-support-for-cloud-solution-provider-developers" class="xliff"></a>
+
+### 添加了对云解决方案提供商开发人员的预览支持
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|添加新的预览功能以允许云解决方案提供商预先同意应用程序调用 Microsoft Graph，如新的[授权主题](https://graph.microsoft.io/en-us/docs/concepts/auth_cloudsolutionprovider)中所述。 |
 
-### <a name="added-onpremises-properties-to-user-entity"></a>向用户实体添加了 onPremises 属性
+<a id="added-onpremises-properties-to-user-entity" class="xliff"></a>
+
+### 向用户实体添加了 onPremises 属性
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|向 [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) 实体添加了新的 onPremises 属性、onPremisesDomainName、OnPremisesSamAccountName 和 onPremisesUserPrincipalName。 |
 
-### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>新规划器 API 和对组可见性属性的更新
+<a id="new-planner-apis-and-an-update-to-the-group-visibility-property" class="xliff"></a>
+
+### 新规划器 API 和对组可见性属性的更新
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改|Beta|向 [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) 实体添加了 **HiddenMembership** 作为可见性属性的附加值 |
 |添加项|Beta|添加了新的[规划器 API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview)。<br />新资源：<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
 
-### <a name="intune-apis"></a>Intune API
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 |**更改类型**|**版本**|**说明**|
 |:---|:---|:---|
 |添加项|Beta|添加的新实体：<br/>[androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy)<br/>[deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate)<br/>[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_deviceinstallstate)<br/>[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscript)<br/>[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptgroupassignment)<br/>[deviceManagementScriptState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptstate)<br/>[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_ebookgroupassignment)<br/>[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebook)<br/>[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebook)<br/>[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_userinstallstatesummary)<br/>[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapp)<br/>[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapphealthstate)<br/>|
@@ -385,9 +466,13 @@
 |更改|Beta|更改了 [omaSettingBase64](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingbase64) 复杂类型上的以下属性：<br/>将 **fileName** 从必需更改为可选<br/>|
 |更改|Beta|更改了 [omaSettingStringXml](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml) 复杂类型上的以下属性：<br/>将 **fileName** 从必需更改为可选<br/>|
 
-## <a name="march-2017"></a>2017 年 3 月
+<a id="march-2017" class="xliff"></a>
 
-### <a name="intune-apis"></a>Intune API
+## 2017 年 3 月
+
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -478,33 +563,43 @@
 |更改|Beta|更改了 [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 复杂类型上以下属性的类型：<br/>将 **applicableArchitecture** 从 [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) 更改为字符串<br/>|
 |更改|Beta|更改了 [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 复杂类型上的以下属性：<br/>将 **applicableArchitecture** 从可选更改为必需<br/>|
 
-### <a name="add-contracts-to-microsoft-graph"></a>将协定添加到 Microsoft Graph
+<a id="add-contracts-to-microsoft-graph" class="xliff"></a>
+
+### 将协定添加到 Microsoft Graph
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|新资源：</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-### <a name="add-domain-operations-to-microsoft-graph"></a>将域操作添加到 Microsoft Graph
+<a id="add-domain-operations-to-microsoft-graph" class="xliff"></a>
+
+### 将域操作添加到 Microsoft Graph
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|在[域](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)上添加了函数。<br/>新实体：</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>新操作：</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 
-### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>使用架构扩展将自定义数据添加到 Microsoft Graph
+<a id="add-custom-data-to-microsoft-graph-using-schema-extensions" class="xliff"></a>
+
+### 使用架构扩展将自定义数据添加到 Microsoft Graph
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|使用[架构扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
 |添加项|Beta|提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)。|
 
-### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>使用开放扩展将自定义数据添加到 Microsoft Graph。
+<a id="add-custom-data-to-microsoft-graph-using-open-extensions" class="xliff"></a>
+
+### 使用开放扩展将自定义数据添加到 Microsoft Graph。
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |更改| v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
 |添加项|Beta|已添加支持[开放扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions)的资源： <br/>管理单元<br/>设备<br/>组<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
 
-### <a name="directory-apis"></a>目录 API
+<a id="directory-apis" class="xliff"></a>
+
+### 目录 API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -514,21 +609,29 @@
 |添加项|Beta|新实体：</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |更改  |Beta|针对[用户](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)的新 [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) 导航属性 |
 
-### <a name="reports-apis"></a>报表 API
+<a id="reports-apis" class="xliff"></a>
+
+### 报表 API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|Office 365 报表引入的新预览 API。可用于获取用户在业务中如何使用 Office 365 服务的使用情况报告。例如，你可以确定大量使用服务并达到配额的用户，或者可能完全不需要 Office 365 许可证的用户。有关详细信息，请参阅[报表](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report)。|
 
-### <a name="directory-apis"></a>目录 API
+<a id="directory-apis" class="xliff"></a>
+
+### 目录 API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|新实体：</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-## <a name="february-2017"></a>2017 年 2 月
+<a id="february-2017" class="xliff"></a>
 
-### <a name="intune-apis"></a>Intune API
+## 2017 年 2 月
+
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -568,9 +671,13 @@
 
 
 
-## <a name="january-2017"></a>2017 年 1 月
+<a id="january-2017" class="xliff"></a>
 
-### <a name="outlook-calendar"></a>Outlook 日历
+## 2017 年 1 月
+
+<a id="outlook-calendar" class="xliff"></a>
+
+### Outlook 日历
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -582,7 +689,9 @@
   [attendee](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendee) 复杂类型现派生自 attendeeBase，而 attendeeBase 派生自 [recipient](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/recipient)。包括继承的属性在内，它同以前一样，由 **status**、**type** 和 **emailAddress** 属性组成。|
 |添加项|Beta|添加到[日历](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar)资源的 hexColor。|
 
-### <a name="intune-apis"></a>Intune API
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -605,9 +714,13 @@
 |更改|beta|向 [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate) 实体添加了 **brandingOptions**、**defaultLocale**、**displayName**、**fromEmailAddress**、**lastModifiedDateTime** 和 **localizedNotificationMessages** 属性。|
 |更改|beta|向 [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) 实体添加了 **appsAllowTrustedAppsSideloading**、**appsBlockWindowsStoreOriginatedApps**、**developerUnlockSetting**、**edgeBlockAccessToAboutFlags**、**edgeBlockDeveloperTools**、**edgeBlockExtensions**、**edgeBlockInPrivateBrowsing**、**edgeFirstRunUrl**、**edgeHomepageUrls**、**gameDvrBlocked**、**settingsBlockAddProvisioningPackage**、**settingsBlockChangeLanguage**、**settingsBlockChangePowerSleep**、**settingsBlockChangeRegion**、**settingsBlockChangeSystemTime**、**settingsBlockEditDeviceName**、**settingsBlockRemoveProvisioningPackage**、**sharedUserAppDataAllowed**、**smartScreenBlockPromptOverride**、**smartScreenBlockPromptOverrideForFiles**、**storageRestrictAppDataToSystemVolume** 、**storageRestrictAppInstallToSystemVolume** 、**webRtcBlockLocalhostIpAddress**、**windowsStoreBlockAutoUpdate** 和 **windowsStoreEnablePrivateStoreOnly** 属性。|
 
-## <a name="december-2016"></a>2016 年 12 月
+<a id="december-2016" class="xliff"></a>
 
-### <a name="delta-query"></a>Delta 查询
+## 2016 年 12 月
+
+<a id="delta-query" class="xliff"></a>
+
+### Delta 查询
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -616,21 +729,29 @@
   [获取文件夹中邮件的增量更改（预览）](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>
   [获取用户的增量更改（预览）](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 
-### <a name="excel-apis"></a>Excel API
+<a id="excel-apis" class="xliff"></a>
+
+### Excel API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|v1.0|添加了 workbookPivotTable 资源；数据透视表上的 refresh 和 refreshAll 操作；workbookRangeView 资源；已筛选的范围上的 visibleView 操作，可向用户返回 workbookRangeView；从 visibleView 中删除了 rows 集合和 range 资源；从 range 资源中删除了 columnsAfter、columnsBefore、resizedRange、rowsAbove、rowsBelow 函数；新增表属性。|
 
-### <a name="intune-apis"></a>Intune API
+<a id="intune-apis" class="xliff"></a>
+
+### Intune API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|添加了 Microsoft Intune 的资源和方法 API。这是用于支持 Intune 在 Azure Portal 上的公开预览的大型资源和方法集。有关 Intune 服务的信息，请参阅 [Intune 文档](https://go.microsoft.com/fwlink/?linkid=836405)。有关 Intune 资源和 API 的信息，请参阅[在 Microsoft Graph 中使用 Intune](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview)。|
 
-## <a name="october-2016"></a>2016 年 10 月
+<a id="october-2016" class="xliff"></a>
 
-### <a name="authorization-provider"></a>授权提供程序
+## 2016 年 10 月
+
+<a id="authorization-provider" class="xliff"></a>
+
+### 授权提供程序
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -638,22 +759,30 @@
 |添加项|v1.0 和 beta|v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持[需要征得管理员同意的权限范围](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)。|
 |添加项|v1.0 和 beta|v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持对租户中的所有用户授予管理员同意。|
 
-### <a name="invitation-apis"></a>邀请 API
+<a id="invitation-apis" class="xliff"></a>
+
+### 邀请 API
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 |添加项|Beta|向邀请实体类型添加了 invitedUserType 属性，用于定义受邀用户类型（**来宾**或**成员**）。|
 |删除|Beta|我们将于 2016 年11 月 11 日删除邀请实体类型中的 invitedToGroups 属性。这意味着，你将无法再使用此 API 将邀请的用户添加到组。而应使用[添加成员 API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_post_members) 将用户添加到组。|
 
-## <a name="september-2016"></a>2016 年 9 月
+<a id="september-2016" class="xliff"></a>
 
-### <a name="azure-ad-application-proxy"></a>Azure AD 应用程序代理
+## 2016 年 9 月
+
+<a id="azure-ad-application-proxy" class="xliff"></a>
+
+### Azure AD 应用程序代理
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|现在可以在 Microsoft Graph 试用版终结点中使用 Azure AD 应用程序代理 API。这些 API 支持通过将 Azure AD 作为进行访问的通用控制面，安全地将本地应用程序发布给企业网络外部的用户。你可以使用已发布的 API 编写可以检索和更新应用程序代理的各个方面（例如，应用程序的 connectors、connectorGroups 和 onPremisesPublishing 设置）的应用程序。|
 
-### <a name="drive"></a>驱动器
+<a id="drive" class="xliff"></a>
+
+### 驱动器
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -661,7 +790,9 @@
 |添加项|Beta|向驱动器添加了 _search_ 函数，允许搜索驱动器根文件夹之外的更多项。|
 
 
-### <a name="driveitem"></a>DriveItem
+<a id="driveitem" class="xliff"></a>
+
+### DriveItem
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -671,13 +802,17 @@
 |添加项|Beta|为 OneDrive for Business 中的文件添加了 quickXorHash 值。|
 |添加项|Beta|添加了 createSharingLink 的作用域以允许创建企业共享链接或匿名共享链接。|
 
-### <a name="extended-properties"></a>扩展属性
+<a id="extended-properties" class="xliff"></a>
+
+### 扩展属性
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|目前以下资源支持[扩展属性](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/extended-properties-overview)：message、mailFolder、event、calendar、contact、contactFolder、group event、group calendar、group post。|
 
-### <a name="groups"></a>组
+<a id="groups" class="xliff"></a>
+
+### 组
 
 通过公共预览 API 添加了对动态组成员身份的支持，包括下表中列出的添加项。
 
@@ -689,25 +824,33 @@
 |添加项|Beta|添加了 **preferredLanguage** 属性以指示 Office 365 组的首选语言。|
 |添加项|Beta|添加了 **theme** 属性以指定 Office 365 组的颜色主题。|
 
-### <a name="hybrid-deployment-support"></a>混合部署支持
+<a id="hybrid-deployment-support" class="xliff"></a>
+
+### 混合部署支持
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|应用可以使用 v1.0 Outlook 邮件、日历和联系人 API 访问使用 Exchange 2016 累积更新 3 (CU3) 的混合部署中的本地邮箱。可在特定的[混合部署](https://developer.microsoft.com/en-us/graph/docs/overview/hybrid_rest_support)中查找有关 REST API 支持的更多详细信息。**注意：**如果正在 v1.0 中使用这些 API 集，现在会发现应用（包括生产应用）可用于符合特定混合部署要求的本地邮箱。此功能仅在预览中可用。|
 
-### <a name="identityriskevents"></a>IdentityRiskEvents
+<a id="identityriskevents" class="xliff"></a>
+
+### IdentityRiskEvents
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |更改|Beta|作为架构更改的一部分，两个位置属性的类型将在 identityRiskEvents 终结点中替换为新的复杂类型，将在 identityRiskEvents 终结点中更改/添加以下属性：</br>**location** 已从 Edm.String 更改为 ComplexType signInLocation。<br/>**previousLocation** 已从 Edm.String 更改为 ComplexType signInLocation。<br/>**signInLocation** 是新的 ComplexType，其中包含 city、state、countryOrRegion 和 geoCoordinates 属性。<br/>**geoCoordinates** 是新的 ComplexType，其中包含 latitude 和 longitude 属性。|
 
-### <a name="invitation-manager"></a>邀请管理器
+<a id="invitation-manager" class="xliff"></a>
+
+### 邀请管理器
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|现在可以在 Microsoft Graph 测试版终结点中使用邀请管理器 API。你可以使用邀请管理器 API 来创建一个邀请，以将外部用户添加到组织。作为邀请的一部分，还可以选择将受邀用户添加到 Office 365 组中。有关详细信息，请参阅[邀请管理器](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation)。|
 
-### <a name="onedrive"></a>OneDrive
+<a id="onedrive" class="xliff"></a>
+
+### OneDrive
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -719,7 +862,9 @@
 |添加项|v1.0|在哈希复杂类型上的文件复杂类型 quickXorHash 属性上添加了 **processingMetadata** 属性。 |
 |添加项|v1.0|在哈希复杂类型上添加了 **quickXorHash** 属性 |
 
-### <a name="outlook-calendar"></a>Outlook 日历
+<a id="outlook-calendar" class="xliff"></a>
+
+### Outlook 日历
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -727,22 +872,28 @@
 |添加项|Beta|向事件资源添加了 [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward) 操作。|
 |添加项|Beta|向[日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar)资源添加了以下属性以支持日历共享：**canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe** 和 **owner**。|
 
-### <a name="outlook-mail"></a>Outlook 邮件
+<a id="outlook-mail" class="xliff"></a>
+
+### Outlook 邮件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|添加了 [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings) 复杂类型，其中包括 **automaticRepliesSetting**、**timeZone** 和 **language** 属性。|
 |添加项|v1.0|向 [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) 资源添加了 **mailboxSettings** 属性。|
 |添加项|Beta|支持在邮件中创建、列出、获取和删除一个或多个[提及](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention)实例。“提及”支持在邮件中进行呼叫以获得其他用户的关注。|
-|添加项|Beta|添加了对 [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) 操作的支持，以便为特定收件人获取任何邮件提示。添加了以下资源：automaticRepliesMailTips、mailTips 和 mailTipsError。|
+|添加项|Beta|添加了对 [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) 操作的支持，可以获取特定收件人的所有邮件提示。添加了以下资源：automaticRepliesMailTips、mailTips 和 mailTipsError。|
 
-### <a name="query-parameters"></a>查询参数
+<a id="query-parameters" class="xliff"></a>
+
+### 查询参数
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |更改|Beta|自 2016 年 9 月 26 日起，支持不含 $ 前缀的查询参数。在查询参数中，$ 前缀是可选的。有关详细信息，请参阅[在 Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)博客文章。|
 
-### <a name="sharepoint"></a>SharePoint
+<a id="sharepoint" class="xliff"></a>
+
+### SharePoint
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -750,7 +901,9 @@
   [按照 ID](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/list_get) 或[路径/URL](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/baseitem_getbyurl) 访问 SharePoint 网站和列表。|
 |添加项|Beta|支持[列出、创建、获取和删除 listItem 实例](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listitem)。|
 
-### <a name="users"></a>用户
+<a id="users" class="xliff"></a>
+
+### 用户
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -759,108 +912,148 @@
 |添加项|Beta|添加了 **invalidateAllRefreshTokens** 服务操作，可通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序颁发的用户的所有刷新和会话令牌失效。|
 
 
-### <a name="webhooks"></a>Webhook
+<a id="webhooks" class="xliff"></a>
+
+### Webhook
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|将驱动器根项作为可供订阅的资源添加到了 Webhook。|
 
-## <a name="august-2016"></a>2016 年 8 月
+<a id="august-2016" class="xliff"></a>
 
-### <a name="contacts"></a>联系人
+## 2016 年 8 月
+
+<a id="contacts" class="xliff"></a>
+
+### 联系人
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|作为删除一些属性并将相应的集合添加到联系人终结点的架构更改的一部分，已将以下属性添加到联系人终结点：_Websites Collection(ComplexType:Website)_、_Phones Collection (ComplexType:Phone)_、_PostalAddress Collection(ComplexType:PhysicalAddress)_。有关详细信息，请参阅[即将对联系人和人员 API 做出的更改](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)博客文章。|
 |删除|Beta|作为删除一些属性并将相应的集合添加到联系人终结点的架构更改的一部分，已将以下属性从联系人终结点删除：BusinessHomePage、HomePhones、MobilePhone1、BusinessPhones、HomeAddress、BusinessAddress、OtherAddress。有关详细信息，请参阅[即将对联系人和人员 API 做出的更改](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)博客文章。|
 
-### <a name="excel-apis"></a>Excel API
+<a id="excel-apis" class="xliff"></a>
+
+### Excel API
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|Microsoft Graph 上的 Excel REST API 已公开发布。现在可以使用 Office 365 中的 Excel 工作簿构建广泛深入的集成。有关详细信息，请参阅[在 Microsoft Graph 上使用新的 Excel REST API 增强你的应用](http://dev.office.com/blogs/power-your-apps-with-the-new-excel-rest-api)博客文章。|
 
-### <a name="people"></a>人员
+<a id="people" class="xliff"></a>
+
+### 人员
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |更改|Beta|属性 WebSite 重命名为 Websites。有关详细信息，请参阅[即将对联系人和人员 API 做出的更改](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)。|
 
-### <a name="privileged-identity-management"></a>Privileged Identity Management
+<a id="privileged-identity-management" class="xliff"></a>
+
+### Privileged Identity Management
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|现在可以在 Microsoft Graph 测试版终结点中使用 Privileged Identity Management (PIM) REST API。[Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) 为全局管理员、帐务管理员等特权 Azure AD 组织角色提供及时的激活功能。可以使用已发布的 API 编写应用程序来检索和更新特权角色分配并激活用户角色。有关详细信息，请参阅 [Microsoft Graph：Azure AD Privileged Identity Management 预览 API 现在提供 Beta 版](http://dev.office.com/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta)和 [Azure AD Privileged Identity Management](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root)。|
 
-## <a name="july-2016"></a>2016 年 7 月
+<a id="july-2016" class="xliff"></a>
 
-### <a name="administrative-units"></a>管理单元
+## 2016 年 7 月
+
+<a id="administrative-units" class="xliff"></a>
+
+### 管理单元
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|引入新的管理单元预览 API。管理单元允许组织细分其 Azure Active Directory，并向这些细分项委派管理职能。细分项可以代表区域、部门、成本中心等。现在可通过 Microsoft Graph API 对此进行管理。|
 
-## <a name="june-2016"></a>2016 年 6 月
+<a id="june-2016" class="xliff"></a>
 
-### <a name="identityriskevents"></a>IdentityRiskEvents
+## 2016 年 6 月
+
+<a id="identityriskevents" class="xliff"></a>
+
+### IdentityRiskEvents
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|引入了新的 IdentityRiskEvents 预览 API。此 API 与 Azure Active Directory Identity Protection 协同工作。你可以使用它来查询 Identity Protection 生成的风险事件。有关详细信息，请参阅[向 Microsoft Graph 引入新的预览 API：IdentityRiskEvents](http://dev.office.com/blogs/identityriskevents-api-preview) 博客文章。
 
-### <a name="subscriptions"></a>订阅
+<a id="subscriptions" class="xliff"></a>
+
+### 订阅
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|mail 和 contacts 订阅现在支持仅应用作用域。|
 
-## <a name="may-2016"></a>2016 年 5 月
+<a id="may-2016" class="xliff"></a>
 
-### <a name="calendar"></a>日历
+## 2016 年 5 月
+
+<a id="calendar" class="xliff"></a>
+
+### 日历
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |重大更改|Beta|针对 findMeetingTimes API 的更改。有关详细信息，请参阅 [Microsoft Graph findMeetingTimes API 更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)博客文章。此更改于 2016 年 5 月 19 日生效。
 
-### <a name="contact"></a>联系人
+<a id="contact" class="xliff"></a>
+
+### 联系人
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|添加了 extensions，它是用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。|
 
-### <a name="directory"></a>目录
+<a id="directory" class="xliff"></a>
+
+### 目录
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |重大更改|Beta|将 settingTemplateId 重命名为 templateId。此更改将于 2016 年 5 月 19 日生效。|
 
-### <a name="event"></a>事件
+<a id="event" class="xliff"></a>
+
+### 事件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|添加了 extensions，它是用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。|
 
-### <a name="eventmessages"></a>EventMessages
+<a id="eventmessages" class="xliff"></a>
+
+### EventMessages
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|向 eventMessages 添加了 inferenceClassification 和 extensions。|
 |添加项|Beta|向 eventMessageRequest 添加了 responseRequested。|
 
-### <a name="messages"></a>邮件
+<a id="messages" class="xliff"></a>
+
+### 邮件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|向 messages 添加了 inferenceClassification 和 extensions。|
 |添加项|Beta|向 contactFolder 添加了 wellknownname。|针对 findMeetingTimes API 的更改。有关详细信息，请参阅 [Microsoft Graph findMeetingTimes API 更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)博客文章。此更改将于 2016 年 5 月 19 日生效。|
 
-### <a name="post"></a>文章
+<a id="post" class="xliff"></a>
+
+### 文章
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|添加了 extensions，它是用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。|
 
-### <a name="user"></a>用户
+<a id="user" class="xliff"></a>
+
+### 用户
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -868,9 +1061,13 @@
 |添加项|Beta|向 mailboxsettings 添加了 timeZone。|
 |添加项|Beta|向 _user_ 添加了 API _findMeetingTimes_to。|
 
-## <a name="april-2016"></a>2016 年 4 月
+<a id="april-2016" class="xliff"></a>
 
-### <a name="general"></a>常规
+## 2016 年 4 月
+
+<a id="general" class="xliff"></a>
+
+### 常规
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -880,15 +1077,21 @@
 |添加项|Beta|Outlook 在某些情况下（例如，用户没有邮箱许可证或租户没有 Exchange Online 订阅）无法处理请求时，现在可将 Azure Active Directory 用作 /beta/users/id/photo 请求的回退。注意：此回退同时适用于 GET 和 PATCH。|
 |添加项|Beta|添加了对展开路径中的转换段的支持。例如：“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。|
 
-### <a name="onedrive"></a>OneDrive
+<a id="onedrive" class="xliff"></a>
+
+### OneDrive
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |修补程序|v1.0|修复了出现 500 和“不支持的扩展属性类型”故障的 OneDrive createLink 请求问题。|
 
-## <a name="march-2016"></a>2016 年 3 月
+<a id="march-2016" class="xliff"></a>
 
-### <a name="calendar"></a>日历
+## 2016 年 3 月
+
+<a id="calendar" class="xliff"></a>
+
+### 日历
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -899,14 +1102,18 @@
 |更改|Beta|findMeetingTimes 现在采用了新参数 ReturnSuggestionHints。|
 |更改|Beta|findMeetingTimes 现在返回 meetingTimeCandidate 的集合。|
 
-### <a name="drive"></a>驱动器
+<a id="drive" class="xliff"></a>
+
+### 驱动器
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0 和 beta|添加了 recent 功能以列出登录用户最近使用的一组项目。此列表包含用户驱动器中的项目，以及他们可以从其他驱动器访问的项目。示例：GET /me/drive/recent。|
 |添加项|v1.0 和 beta|添加了 sharedWithMe 功能以列出与当前用户共享的项目集。示例：GET /me/drive/sharedWithMe。|
 
-### <a name="driveitem"></a>DriveItem
+<a id="driveitem" class="xliff"></a>
+
+### DriveItem
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -917,13 +1124,17 @@
 |添加项|v1.0 和 beta|conflictBehavior 实例属性现在适用于 driveItem。|
 |添加项|Beta|添加了 invite 功能以发送对现有项目的共享邀请。共享邀请创建唯一的共享链接并向包含共享链接的邀请的收件人发送电子邮件。示例：POST /drive/items/{item-id}/invite。
 
-### <a name="event"></a>事件
+<a id="event" class="xliff"></a>
+
+### 事件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|添加了新属性 onlineMeetingUrl 和新方法 cancel。|
 
-### <a name="event-messages"></a>事件消息
+<a id="event-messages" class="xliff"></a>
+
+### 事件消息
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -931,13 +1142,17 @@
 |添加项|Beta|添加了 singleValueExtendedProperties 和 multiValueExtendedProperties 属性。|
 |添加项|Beta|添加了新方法 unsubscribe。|
 
-### <a name="excel"></a>Excel
+<a id="excel" class="xliff"></a>
+
+### Excel
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|我们将添加新的 Excel REST API，可允许你读取和修改 Excel 工作簿中的数据。现在则可以构建智能应用，允许用户通过向数据提供见解来从存储在 Excel 工作簿中的内容获取价值。利用 Excel 的分析功能、创建表格和图表并提取视觉上吸引人的图表图像 - 这些操作均可在应用内执行。有关详细信息，请参阅 [在 Microsoft Graph 中使用 Excel](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/excel).|
 
-### <a name="general"></a>常规
+<a id="general" class="xliff"></a>
+
+### 常规
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -947,14 +1162,18 @@
 |更改|Beta|清理了订阅属性名称。|
 |添加项|Beta|我们为实体及其关联功能添加了发现（通过 _directorySettingTemplates_）和替代默认行为（通过在模板中创建 _setting_）的功能。最初提供这个唯一的模板是为了控制 Office 组的行为。|
 
-### <a name="mail-folder"></a>邮件文件夹
+<a id="mail-folder" class="xliff"></a>
+
+### 邮件文件夹
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|添加了 wellKnownName 和 userConfigurations 属性。|
 |添加项|Beta|添加了 singleValueExtendedProperties 和 multiValueExtendedProperties 属性|
 
-### <a name="messages"></a>邮件
+<a id="messages" class="xliff"></a>
+
+### 邮件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -965,20 +1184,26 @@
 |更改|Beta|_createForward_ 采用了新参数：_Message_、_ToRecipients_ 和 _comment_。|
 |更改|Beta|_reply_、_replyAll_ 和 _forward_ 采用了新参数 _Message_。|
 
-### <a name="permission"></a>权限
+<a id="permission" class="xliff"></a>
+
+### 权限
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0 和 beta|添加了 sharingInvitation 属性以提供此权限关联的任何共享邀请的详细信息。|
 
-### <a name="person"></a>人员
+<a id="person" class="xliff"></a>
+
+### 人员
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|添加了新属性：birthday、personNotes、isFavorite、phones、permission、postalAddresses、websites、yomiCompany、department、profession、mailboxType 和 personType。|
 |Addition|Beta|添加了以下新枚举类型：_physicalAddressType_、_webSite_、_phone_ 和 _webSiteType_。|
 
-### <a name="reference-attachment"></a>参考附件
+<a id="reference-attachment" class="xliff"></a>
+
+### 参考附件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -986,27 +1211,37 @@
 |Addition|Beta|添加了 singleValueExtendedProperties 和 multiValueExtendedProperties 属性。|
 |添加项|Beta|添加了以下新枚举类型：_referenceAttachmentProvider_ 和 _referenceAttachmentPermission_。|
 
-### <a name="subscriptions"></a>订阅
+<a id="subscriptions" class="xliff"></a>
+
+### 订阅
 
 |**更改类型**|**终结点**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|Webhook 现在已在 V1.0 终结点上普遍可用，可通过 /Subscriptions 资源获取。创建、读取、续订和删除订阅以接收有关 Outlook 和 Office 365 组对话中数据的通知。|
 
-### <a name="user"></a>用户
+<a id="user" class="xliff"></a>
+
+### 用户
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|添加了 mailboxSettings 属性和相应的类型。|
 
-## <a name="february-2016"></a>2016 年 2 月
+<a id="february-2016" class="xliff"></a>
 
-### <a name="driveitem"></a>DriveItem
+## 2016 年 2 月
+
+<a id="driveitem" class="xliff"></a>
+
+### DriveItem
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0 和 beta|在 Microsoft 帐户的 driveItem 上添加了新的 remoteItem 属性。|
 
-### <a name="general"></a>常规
+<a id="general" class="xliff"></a>
+
+### 常规
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -1014,42 +1249,58 @@
 |更改|v1.0 和 beta|对按需预配其 OneDrive 存储的帐户的驱动器请求工作更为可靠，且适用于租户默认的 SharePoint 网站使用非标准名称的更多场景。|
 |删除|Beta|删除了测试版架构中的各种未实现的类型，以便更加匹配 1.0 架构。|
 
-### <a name="subscriptions"></a>订阅
+<a id="subscriptions" class="xliff"></a>
+
+### 订阅
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|订阅创建时的 notificationUrl 验证。有关详细信息，请参阅 [Microsoft Graph WebHook 更新 - 2016 年 1 月](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016)。|
-|添加项|Beta|现在可删除订阅实体：DELETE https://graph.microsoft.com/beta/subscriptions/|
+|Addition|Beta|现在可删除订阅实体：DELETE https://graph.microsoft.com/beta/subscriptions/|
 
-### <a name="users"></a>用户
+<a id="users" class="xliff"></a>
+
+### 用户
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |更改|v1.0 和 beta|现在为 Microsoft 帐户返回 displayName。|
 
-## <a name="january-2016"></a>2016 年 1 月
+<a id="january-2016" class="xliff"></a>
 
-### <a name="contacts"></a>联系人
+## 2016 年 1 月
+
+<a id="contacts" class="xliff"></a>
+
+### 联系人
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|v1.0|向个人联系人实体集添加了 mobilePhone 属性。|
 
-### <a name="directoryobjects"></a>directoryObjects
+<a id="directoryobjects" class="xliff"></a>
+
+### directoryObjects
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |修补程序|v1.0 和 beta|修复了出现以下错误的绑定到 directoryObjects 的调用操作：操作中的返回类型不可用于给定的实体集。它适用于以下操作：_microsoft.graph.checkMemberObjects_、_microsoft.graph.getMemberObjects_、_microsoft.graph.checkMemberGroups_、_microsoft.graph.assignLicense_、_microsoft.graph.changePassword_。|
 
-## <a name="december-2015"></a>2015 年 12 月
+<a id="december-2015" class="xliff"></a>
 
-### <a name="contacts"></a>联系人
+## 2015 年 12 月
+
+<a id="contacts" class="xliff"></a>
+
+### 联系人
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|向个人联系人实体集添加了 mobilePhone 属性。|
 
-### <a name="general"></a>常规
+<a id="general" class="xliff"></a>
+
+### 常规
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -1060,19 +1311,25 @@
 |Addition|v1.0 和 beta|在 401 响应上的 www-authenticate 标头中添加了 authorization_uri 属性。该 URL 可用于启动令牌获取流。|
 |添加项|v1.0 和 beta|改进了用户和组中的错误消息。|
 
-### <a name="groups"></a>组
+<a id="groups" class="xliff"></a>
+
+### 组
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |修补程序|v1.0 和 beta|修复了无法调用以下组操作的问题：microsoft.graph.addFavorite、microsoft.graph.removeFavorite 和 microsoft.graph.resetUnseenCount。|
 
-### <a name="messages"></a>邮件
+<a id="messages" class="xliff"></a>
+
+### 邮件
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
 |添加项|Beta|向 eventMessage 类型添加了 eventMessage 的 eventMessageRequest 子类型以及 startDateTime endDateTime、location、type、recurrence 和 isOutOfDate 属性。|
 
-### <a name="users"></a>用户
+<a id="users" class="xliff"></a>
+
+### 用户
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
