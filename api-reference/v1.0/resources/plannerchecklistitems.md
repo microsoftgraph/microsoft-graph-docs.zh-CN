@@ -1,20 +1,10 @@
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
-
-# plannerChecklistItems 资源类型
-
-**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。
-
-
-<a id="properties" class="xliff"></a>
-
-## 属性
+<span data-ttu-id="50809-p102">开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。</span><span class="sxs-lookup"><span data-stu-id="50809-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。
 
+## <span data-ttu-id="50809-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="50809-111">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-## JSON 表示形式
-
-下面是资源的 JSON 表示形式
+<span data-ttu-id="50809-112">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="50809-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,7 +26,7 @@
   }
 }
 ```
-// 示例
+<span data-ttu-id="50809-113">// 示例</span><span class="sxs-lookup"><span data-stu-id="50809-113">// Example</span></span>
 
 ```json
 {

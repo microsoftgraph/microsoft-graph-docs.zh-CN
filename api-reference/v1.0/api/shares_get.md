@@ -1,82 +1,21 @@
-# <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
-
-通过使用 **shareId** 或共享 URL 访问共享 [DriveItem](../resources/driveitem.md) 或共享项目集合。
-
-要与此 API 一起使用共享 URL，你的应用需要 [将此 URL 转换为共享令牌](#transform-a-sharing-url)。
-
-## <a name="prerequisites"></a>先决条件
-
-要执行此 API，需要以下**范围**之一：
-
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP 请求
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /shares/{sharingIdOrUrl}
-```
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [sharedDriveItem](../resources/shareddriveitem.md) 资源。
-
-## <a name="example"></a>示例
-
-##### <a name="request"></a>请求
-
-下面是一个请求检索共享项目的示例：
-
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
-```
-##### <a name="response"></a>响应
-
-下面是一个响应示例。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
-  "name": "contoso project.docx",
-  "owner": {
-    "user": {
-      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
-      "displayName": "Ryan Gregg"
-    }
-  }
-}
-```
-
-## <a name="access-the-shared-item-directly"></a>直接访问共享项目
+<span data-ttu-id="8d1b4-p101">虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。
 
-### <a name="example-single-file"></a>示例（单个文件）
+### <span data-ttu-id="8d1b4-122">示例（单个文件）</span><span class="sxs-lookup"><span data-stu-id="8d1b4-122">Example (single file)</span></span>
+<a id="example-single-file" class="xliff"></a>
 
-##### <a name="request"></a>请求
+##### <span data-ttu-id="8d1b4-123">请求</span><span class="sxs-lookup"><span data-stu-id="8d1b4-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
-通过请求**根**关系，将返回共享的 **DriveItem**。
+<span data-ttu-id="8d1b4-124">通过请求**根**关系，将返回共享的 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a>响应
+##### <span data-ttu-id="8d1b4-125">响应</span><span class="sxs-lookup"><span data-stu-id="8d1b4-125">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -91,17 +30,20 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>示例（共享文件夹）
+### <span data-ttu-id="8d1b4-126">示例（共享文件夹）</span><span class="sxs-lookup"><span data-stu-id="8d1b4-126">Example (shared folder)</span></span>
+<a id="example-shared-folder" class="xliff"></a>
 
-##### <a name="request"></a>请求
+##### <span data-ttu-id="8d1b4-127">请求</span><span class="sxs-lookup"><span data-stu-id="8d1b4-127">Request</span></span>
+<a id="request" class="xliff"></a>
 
-通过请求**根**关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
+<span data-ttu-id="8d1b4-128">通过请求**根**关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a>响应
+##### <span data-ttu-id="8d1b4-129">响应</span><span class="sxs-lookup"><span data-stu-id="8d1b4-129">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -130,19 +72,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>转换共享 URL
+## <span data-ttu-id="8d1b4-130">转换共享 URL</span><span class="sxs-lookup"><span data-stu-id="8d1b4-130">Transform a sharing URL</span></span>
+<a id="transform-a-sharing-url" class="xliff"></a>
 
-若要使用**共享** API 访问共享 URL，需要将 URL 转换为共享令牌。
+<span data-ttu-id="8d1b4-131">若要使用**共享** API 访问共享 URL，需要将 URL 转换为共享令牌。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-要将 URL 转换为共享令牌：
+<span data-ttu-id="8d1b4-132">要将 URL 转换为共享令牌：</span><span class="sxs-lookup"><span data-stu-id="8d1b4-132">To transform a URL into a sharing token:</span></span>
 
-1. Base64 编码共享 URL。
-2. 通过以下方法，将 base64 编码数据转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)：
-  1. 剪裁掉字符串最后的 `=` 字符
-  2. 将不安全的 URL 字符替换成等效字符；将 `/` 替换成 `_`，将 `+` 替换成 `-`。
-3. 将 `u!` 追加到字符串的开头。
+1. <span data-ttu-id="8d1b4-133">Base64 编码共享 URL。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="8d1b4-134">通过以下方法，将 base64 编码数据转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)：</span><span class="sxs-lookup"><span data-stu-id="8d1b4-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="8d1b4-135">剪裁掉字符串最后的 `=` 字符</span><span class="sxs-lookup"><span data-stu-id="8d1b4-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="8d1b4-136">将不安全的 URL 字符替换成等效字符；将 `/` 替换成 `_`，将 `+` 替换成 `-`。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="8d1b4-137">将 `u!` 追加到字符串的开头。</span><span class="sxs-lookup"><span data-stu-id="8d1b4-137">Append `u!` to the beginning of the string.</span></span>
 
-例如，以下 C# 方法将输入字符串转换为共享令牌：
+<span data-ttu-id="8d1b4-138">例如，以下 C# 方法将输入字符串转换为共享令牌：</span><span class="sxs-lookup"><span data-stu-id="8d1b4-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

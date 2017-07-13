@@ -1,37 +1,12 @@
-# <a name="message-replyall"></a>消息：replyAll
-
-答复邮件的所有收件人。然后邮件保存在已发送邮件文件夹中。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.Send*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/me/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/messages/{id}/replyAll
-POST /me/mailFolders/{id}/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|注释|String|要包含的注释。可以为空字符串。|
-
-## <a name="response"></a>响应
+<span data-ttu-id="1698f-p105">如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1698f-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="1698f-131">示例</span><span class="sxs-lookup"><span data-stu-id="1698f-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="1698f-132">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="1698f-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="1698f-133">请求</span><span class="sxs-lookup"><span data-stu-id="1698f-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="1698f-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1698f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_replyall"
@@ -47,8 +22,9 @@ Content-length: 32
 ```
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="1698f-135">响应</span><span class="sxs-lookup"><span data-stu-id="1698f-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="1698f-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1698f-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

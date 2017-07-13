@@ -1,40 +1,8 @@
-<a id="planner-resource-type" class="xliff"></a>
+<span data-ttu-id="f713b-p105">只读。可为 NULL。返回指定任务的集合</span><span class="sxs-lookup"><span data-stu-id="f713b-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>| 只读。可为 NULL。返回指定任务的集合|
 
-# planner 资源类型
-
-**planner** 资源是 Planner 对象模型的入口点。其返回单一的 **planner** 资源。它不包含任何可用属性。
-
-
-<a id="methods" class="xliff"></a>
-
-## 方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| 通过发布到存储桶集合新建 **plannerBucket**。|
-|[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| 通过发布到计划集合新建 **plannerPlan**。|
-|[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| 通过发布到任务集合新建 **plannerTask**。|
-
-<a id="properties" class="xliff"></a>
-
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|String| 只读。**planner** 资源的标识符|
-
-<a id="relationships" class="xliff"></a>
-
-## 关系
-| 关系 | 类型   |说明|
-|:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| 只读。可为 NULL。返回指定存储桶的集合|
-|plans|[plannerPlan](plannerplan.md) collection| 只读。可为 NULL。返回指定计划的集合|
-|tasks|[plannerTask](plannertask.md) collection| 只读。可为 NULL。返回指定任务的集合|
-
+## <span data-ttu-id="f713b-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f713b-145">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="f713b-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f713b-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

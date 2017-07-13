@@ -1,43 +1,9 @@
-# <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
+<span data-ttu-id="5a768-p106">架构扩展适用的支持扩展的 Microsoft Graph 类型集。从**联系人**、**设备**、**事件**、**组**、**邮件**、**组织**、**帖子**或**用户**中选择。</span><span class="sxs-lookup"><span data-stu-id="5a768-p106">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.</span></span>|架构扩展适用的支持扩展的 Microsoft Graph 类型集。从**联系人**、**设备**、**事件**、**组**、**邮件**、**组织**、**帖子**或**用户**中选择。|
 
-可以通过架构扩展定义架构来扩展强类型的自定义数据并将其添加到资源类型。自定义数据在扩展资源上作为复杂类型显示。 
+## <span data-ttu-id="5a768-166">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5a768-166">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-以下资源类型支持架构扩展：
-
- - [联系人](contact.md)
- - [设备](device.md)
- - 用户或 Office 365 组日历上的[事件](event.md)。
- - Office 365 组的[帖子](post.md)
- - [组](group.md)
- - [邮件](message.md) 
- - [组织](organization.md)
- - [用户](user.md)
-
-请参阅[架构扩展示例](../../../concepts/extensibility_schema_groups.md)了解如何将自定义数据添加到组。
-
-## <a name="methods"></a>方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[Create](../api/schemaextension_post_schemaextensions.md) | schemaExtension |创建架构扩展定义。|
-|[List](../api/schemaextension_list.md) | schemaExtension |列出可用的 schemaExtension 定义及其属性。|
-|[Get](../api/schemaextension_get.md) | schemaExtension |读取特定的 schemaExtension 定义的属性。|
-|[Update](../api/schemaextension_update.md) | schemaExtension   |更新 schemaExtension 定义。 |
-|[Delete](../api/schemaextension_delete.md) | 无 |删除 schemaExtension 定义。 |
-
-## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|说明|String|架构扩展的说明。|
-|id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接已验证域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。例如 `contoso_mySchema`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
-|owner|String|创建架构扩展的应用程序的 appId。只读。|
-|properties|[extensionSchemaProperty](extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
-|status|String|架构扩展的生命周期状态。可能的值为 **InDevelopment**、**Available** 和 **Deprecated**。创建后将自动设置为 **InDevelopment**。[架构扩展](../../../concepts/extensibility_overview.md#schema-extensions)将提供关于可能的状态转换和行为的详细信息。|
-|targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。从**联系人**、**设备**、**事件**、**组**、**邮件**、**组织**、**帖子**或**用户**中选择。|
-
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="5a768-167">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5a768-167">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,29 +1,12 @@
-# <a name="message-send"></a>邮件：发送
-
-在草稿箱文件夹中发送邮件。邮件草稿可以是新邮件草稿、答复草稿、全部答复草稿或转发草稿。然后邮件保存在已发送邮件文件夹中。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.Send*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/send
-POST /users/{id | userPrincipalName}/messages/{id}/send
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-
-## <a name="response"></a>响应
+<span data-ttu-id="b1f0b-p103">如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="b1f0b-p103">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="b1f0b-120">示例</span><span class="sxs-lookup"><span data-stu-id="b1f0b-120">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="b1f0b-121">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="b1f0b-121">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="b1f0b-122">请求</span><span class="sxs-lookup"><span data-stu-id="b1f0b-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b1f0b-123">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b1f0b-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -32,9 +15,11 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
-##### <a name="response"></a>响应
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="b1f0b-124">响应</span><span class="sxs-lookup"><span data-stu-id="b1f0b-124">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="b1f0b-125">响应</span><span class="sxs-lookup"><span data-stu-id="b1f0b-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b1f0b-126">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b1f0b-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

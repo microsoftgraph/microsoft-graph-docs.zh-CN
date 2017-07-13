@@ -1,30 +1,19 @@
-# <a name="create-rejectedsender"></a>创建 rejectedSender
+<span data-ttu-id="da160-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="da160-p102">Bearer token. Required.</span></span>  | Bearer {token}。必需。  |
 
-将新用户或组添加到 acceptedSender 列表中。
-
-在请求主体的 `@odata.id` 中指定用户或组。已拒绝的发件人列表中的用户无法发布到组对话（在 POST 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/rejectedSenders/$ref
-```
-## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 user 或 group 对象的 ID。
+## <span data-ttu-id="da160-115">请求正文</span><span class="sxs-lookup"><span data-stu-id="da160-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="da160-116">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="da160-116">In the request body, supply the id of a user or group object.</span></span>
 
 
-## <a name="response"></a>响应
-此方法返回 `204, No Content` 响应代码，不返回任何响应正文。
+## <span data-ttu-id="da160-117">响应</span><span class="sxs-lookup"><span data-stu-id="da160-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="da160-118">此方法返回 `204, No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="da160-118">This method returns `204, No Content` response code and no response body.</span></span>
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="da160-119">示例</span><span class="sxs-lookup"><span data-stu-id="da160-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="da160-120">请求</span><span class="sxs-lookup"><span data-stu-id="da160-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="da160-121">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="da160-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -38,8 +27,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="da160-122">响应</span><span class="sxs-lookup"><span data-stu-id="da160-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="da160-123">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="da160-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

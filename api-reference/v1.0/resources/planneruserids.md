@@ -1,21 +1,11 @@
-<a id="planneruserids-resource-type" class="xliff"></a>
-
-# plannerUserIds 资源类型
-
-**plannerUserIds** 资源表示与其共享[计划](plannerplan.md)的用户 ID 列表。它是开放类型。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。
-
-
-<a id="properties" class="xliff"></a>
-
-## 属性
+<span data-ttu-id="48907-p102">开放类型的属性可以由客户端定义。在这种情况下，客户端应将用户 ID 作为属性，并且其值需为 `true` 布尔值。不再与用户 ID 共享时，则将属性值设置为 `false` 布尔值来自动删除属性。</span><span class="sxs-lookup"><span data-stu-id="48907-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 开放类型的属性可以由客户端定义。在这种情况下，客户端应将用户 ID 作为属性，并且其值需为 `true` 布尔值。不再与用户 ID 共享时，则将属性值设置为 `false` 布尔值来自动删除属性。
 
 
+## <span data-ttu-id="48907-110">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="48907-110">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-## JSON 表示形式
-
-下面是资源的 JSON 表示形式
+<span data-ttu-id="48907-111">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="48907-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,7 +21,7 @@
 }
 ```
 
-// 示例
+<span data-ttu-id="48907-112">// 示例</span><span class="sxs-lookup"><span data-stu-id="48907-112">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

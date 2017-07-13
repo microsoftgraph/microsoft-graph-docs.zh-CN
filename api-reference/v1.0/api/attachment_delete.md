@@ -1,73 +1,11 @@
-# <a name="delete-attachment"></a>删除附件
-
-从日历事件、电子邮件或组帖子中删除附件。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
-
-* 如果访问邮件中的附件：*Mail.ReadWrite*
-* 如果访问事件中的附件：*Calendars.ReadWrite*
-* 如果访问组事件或帖子中的附件：*Group.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-用户或组的默认 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-DELETE /me/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-DELETE /groups/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
-```
-属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-DELETE /me/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
-用户邮箱中的 [邮件](../resources/message.md) 附件。
-```http
-DELETE /me/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
-```
-用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。
-```http
-DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
-```
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。
-```http
-DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
-```http
-DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
-DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="72b09-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="72b09-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面的示例展示了用于删除事件的附件的请求。
+## <span data-ttu-id="72b09-130">示例</span><span class="sxs-lookup"><span data-stu-id="72b09-130">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="72b09-131">请求</span><span class="sxs-lookup"><span data-stu-id="72b09-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="72b09-132">下面的示例展示了用于删除事件的附件的请求。</span><span class="sxs-lookup"><span data-stu-id="72b09-132">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -75,8 +13,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="72b09-133">响应</span><span class="sxs-lookup"><span data-stu-id="72b09-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="72b09-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="72b09-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

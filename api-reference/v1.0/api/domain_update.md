@@ -1,38 +1,16 @@
-# <a name="update-domain"></a>更新域
-
-更新域对象的属性。
-
-> **重要说明：**只有已验证的域可以进行更新。
-
-### <a name="prerequisites"></a>先决条件
-
-要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /domains/{id}
-```
-
-> 对于 {id}，请使用其完全限定的域名指定该域。
-
-### <a name="request-headers"></a>请求标头
-
-| 名称       | 说明|
-|:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>请求正文
+<span data-ttu-id="8f80d-p102">在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。</span><span class="sxs-lookup"><span data-stu-id="8f80d-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。
 
-### <a name="response"></a>响应
+### <span data-ttu-id="8f80d-120">响应</span><span class="sxs-lookup"><span data-stu-id="8f80d-120">Response</span></span>
+<a id="response" class="xliff"></a>
 
-如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。
+<span data-ttu-id="8f80d-121">如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="8f80d-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <span data-ttu-id="8f80d-122">示例</span><span class="sxs-lookup"><span data-stu-id="8f80d-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="8f80d-123">请求</span><span class="sxs-lookup"><span data-stu-id="8f80d-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -51,7 +29,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>响应
+##### <span data-ttu-id="8f80d-124">响应</span><span class="sxs-lookup"><span data-stu-id="8f80d-124">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

@@ -1,37 +1,4 @@
-# <a name="list-overrides"></a>列出替代
-
-获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
-
-每个替代均对应一个发件人的 SMTP 地址。最初，用户没有任何替代。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**：*Mail.Read*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/inferenceClassification/overrides
-GET /users/{id}/inferenceClassification/overrides
-```
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象集合。如果用户未设置任何替代，则返回空集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_overrides"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-```
-##### <a name="response"></a>响应
+<span data-ttu-id="cb2aa-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

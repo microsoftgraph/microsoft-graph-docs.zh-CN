@@ -1,43 +1,4 @@
-# <a name="get-message"></a>获取邮件
-
-检索[邮件](../resources/message.md)对象的属性和关系。
-
-由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
-
-目前，此操作返回纯 HTML 格式的邮件正文。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.Read*  
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-GET /users/{id | userPrincipalName}/messages/{id}
-GET /me/mailFolders/{id}/messages/{id}
-GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_message"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}
-```
-##### <a name="response"></a>响应
+<span data-ttu-id="4b21b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4b21b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -62,10 +23,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <span data-ttu-id="4b21b-129">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4b21b-129">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="4b21b-130">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="4b21b-130">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="4b21b-131">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="4b21b-131">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

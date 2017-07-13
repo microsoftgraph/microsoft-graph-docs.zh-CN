@@ -1,50 +1,20 @@
-# <a name="add-attachment"></a>Add attachment
+<span data-ttu-id="b9774-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="b9774-p103">Nature of the data in the body of an entity. Required.</span></span>  | 实体正文中的数据性质。必需。 |
 
-使用此 API 将 [附件](../resources/attachment.md) 添加到事件。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-用户或组的默认 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-POST /me/events/{id}/attachments
-POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
-```
-属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
+## <span data-ttu-id="b9774-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9774-122">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="b9774-123">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b9774-123">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
 
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [attachment](../resources/attachment.md) 对象。
+## <span data-ttu-id="b9774-124">响应</span><span class="sxs-lookup"><span data-stu-id="b9774-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b9774-125">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b9774-125">If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a>示例（文件附件）
+## <span data-ttu-id="b9774-126">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="b9774-126">Example (file attachment)</span></span>
+<a id="example-file-attachment" class="xliff"></a>
 
-##### <a name="request"></a>请求
-下面是一个请求示例。
+##### <span data-ttu-id="b9774-127">请求</span><span class="sxs-lookup"><span data-stu-id="b9774-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b9774-128">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b9774-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
@@ -61,10 +31,11 @@ Content-length: 151
 }
 ```
 
-在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
+<span data-ttu-id="b9774-129">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b9774-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="b9774-130">响应</span><span class="sxs-lookup"><span data-stu-id="b9774-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b9774-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b9774-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,11 +60,13 @@ Content-Length: 735
 }
 ```
 
-## <a name="example-item-attachment"></a>示例（项目附件）
+## <span data-ttu-id="b9774-132">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="b9774-132">Example (item attachment)</span></span>
+<a id="example-item-attachment" class="xliff"></a>
 
-##### <a name="request"></a>请求
+##### <span data-ttu-id="b9774-133">请求</span><span class="sxs-lookup"><span data-stu-id="b9774-133">Request</span></span>
+<a id="request" class="xliff"></a>
 
-下面将一个事件附加到另一个事件作为项目附件的示例。
+<span data-ttu-id="b9774-134">下面将一个事件附加到另一个事件作为项目附件的示例。</span><span class="sxs-lookup"><span data-stu-id="b9774-134">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -126,8 +99,9 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="b9774-135">响应</span><span class="sxs-lookup"><span data-stu-id="b9774-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b9774-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b9774-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

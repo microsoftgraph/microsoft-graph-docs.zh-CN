@@ -1,48 +1,4 @@
-# <a name="list-groups"></a>列出组
-
-列出组织中所有可用的组，包括但不限于 Office 365 组。返回每个组的[默认属性](../api/group_get.md#default-properties)。
-
-若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
-```
-GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
-
-可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
-```
-GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
-```
-
-
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下任意一个**范围**：*Group.Read.All* 或 *Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /groups
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_groups"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/groups
-```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+<span data-ttu-id="1a1db-p103">注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回[默认属性](../api/group_get.md#default-properties)。</span><span class="sxs-lookup"><span data-stu-id="1a1db-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回[默认属性](../api/group_get.md#default-properties)。
 

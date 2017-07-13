@@ -1,26 +1,13 @@
-# <a name="update-subscription"></a>更新订阅
+<span data-ttu-id="4e90d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4e90d-p102">Bearer token. Required.</span></span>  | Bearer {token}。必需。 |
 
-通过延长到期时间续订订阅。
-
-单个资源类型的禁止日期即为资源订阅的到期日期。应该在到期日期之前准时续订订阅，以免错过通知。请参阅 [订阅](../resources/subscription.md) 了解各到期日期。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一，具体取决于目标资源：*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite* 或 *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /subscriptions/{subscriptionId}
-```
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="4e90d-117">响应</span><span class="sxs-lookup"><span data-stu-id="4e90d-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="4e90d-118">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4e90d-118">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="4e90d-119">示例</span><span class="sxs-lookup"><span data-stu-id="4e90d-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="4e90d-120">请求</span><span class="sxs-lookup"><span data-stu-id="4e90d-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="4e90d-121">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4e90d-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -34,8 +21,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="4e90d-122">响应</span><span class="sxs-lookup"><span data-stu-id="4e90d-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="4e90d-123">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4e90d-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

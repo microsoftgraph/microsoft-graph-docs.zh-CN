@@ -1,49 +1,20 @@
-# <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
-
-使用特殊集合可以按名称访问特殊文件夹。
-
-特殊文件夹可以提供简单别名来访问 OneDrive 中的已知文件夹，无需按路径查找（需要本地化）或通过 ID 引用文件夹。如果特殊文件夹被重命名或移到驱动器中的其他位置，此语法将继续查找该文件夹。
-
-应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。
-
-**注意：**如果你拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Files.ReadWrite.AppFolder
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/special/{name}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-
-## <a name="request-headers"></a>请求标头
-
-| 名称          | 类型   | 说明               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {token}。必需。 |
+<span data-ttu-id="e499c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e499c-p103">Bearer {token}. Required.</span></span> | Bearer {token}。必需。 |
 
 
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+## <span data-ttu-id="e499c-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e499c-128">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="e499c-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e499c-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。
+## <span data-ttu-id="e499c-130">响应</span><span class="sxs-lookup"><span data-stu-id="e499c-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e499c-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e499c-131">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a>示例
+## <span data-ttu-id="e499c-132">示例</span><span class="sxs-lookup"><span data-stu-id="e499c-132">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>请求
-下面是一个请求用户驱动器的示例。
+##### <span data-ttu-id="e499c-133">请求</span><span class="sxs-lookup"><span data-stu-id="e499c-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e499c-134">下面是一个请求用户驱动器的示例。</span><span class="sxs-lookup"><span data-stu-id="e499c-134">Here is an example of the request for the user's drives.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ GET /me/drive/special/{name}
 GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="e499c-135">响应</span><span class="sxs-lookup"><span data-stu-id="e499c-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e499c-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e499c-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <span data-ttu-id="e499c-137">注解</span><span class="sxs-lookup"><span data-stu-id="e499c-137">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [展开](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 选项展开子集合。
+<span data-ttu-id="e499c-138">若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [展开](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 选项展开子集合。</span><span class="sxs-lookup"><span data-stu-id="e499c-138">To request the children of a special folder, you can request the `children` collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option to expand the children collection.</span></span>
 
 
 <!-- {

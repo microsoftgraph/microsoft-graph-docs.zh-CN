@@ -1,33 +1,16 @@
-# <a name="get-photo"></a>获取照片
+<span data-ttu-id="98a48-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="98a48-p101">Bearer token. Required.</span></span>  | Bearer {token}。必需。 |
 
-检索 photo 对象的属性和关系。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/photo
-GET /groups/{id}/photo
-GET /drive/root/createdByUser/photo
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [photo](../resources/photo.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="98a48-117">请求正文</span><span class="sxs-lookup"><span data-stu-id="98a48-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="98a48-118">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="98a48-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="98a48-119">响应</span><span class="sxs-lookup"><span data-stu-id="98a48-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="98a48-120">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [photo](../resources/photo.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="98a48-120">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="98a48-121">示例</span><span class="sxs-lookup"><span data-stu-id="98a48-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="98a48-122">请求</span><span class="sxs-lookup"><span data-stu-id="98a48-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="98a48-123">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="98a48-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -35,8 +18,9 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="98a48-124">响应</span><span class="sxs-lookup"><span data-stu-id="98a48-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="98a48-125">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="98a48-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -1,29 +1,18 @@
-# <a name="add-directory-role-member"></a>添加目录角色成员
+<span data-ttu-id="54c62-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="54c62-p101">Bearer token. Required.</span></span>  | Bearer {token}。必需。 |
+| <span data-ttu-id="54c62-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="54c62-114">Content-Type</span></span>  | <span data-ttu-id="54c62-115">application/json</span><span class="sxs-lookup"><span data-stu-id="54c62-115">application/json</span></span>  |
 
-使用此 API 创建新的目录角色成员。
+## <span data-ttu-id="54c62-116">请求正文</span><span class="sxs-lookup"><span data-stu-id="54c62-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="54c62-117">在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="54c62-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**：*Directory.AccessAsUser.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /directoryRoles/{id}/members/$ref
+## <span data-ttu-id="54c62-118">响应</span><span class="sxs-lookup"><span data-stu-id="54c62-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="54c62-119">如果成功，此方法返回 `204, No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="54c62-119">If successful, this method returns `204, No Content` response code.</span></span>
 
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。
-
-## <a name="response"></a>响应
-如果成功，此方法返回 `204, No Content` 响应代码。
-
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <span data-ttu-id="54c62-120">示例</span><span class="sxs-lookup"><span data-stu-id="54c62-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="54c62-121">请求</span><span class="sxs-lookup"><span data-stu-id="54c62-121">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -38,8 +27,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处展示的响应对象。 
+##### <span data-ttu-id="54c62-122">响应</span><span class="sxs-lookup"><span data-stu-id="54c62-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="54c62-123">注意：为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="54c62-123">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

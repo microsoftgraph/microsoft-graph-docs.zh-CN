@@ -1,42 +1,12 @@
-# <a name="page-copytosection"></a>page: copyToSection
-将页面复制到特定分区。
-
-对于 Copy 操作，请遵循异步调用模式：首先调用 Copy 操作，然后轮询该操作终结点获取结果。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：   
-
-Notes.Create、Notes.ReadWrite 或 Notes.ReadWrite.All  
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/onenote/pages/{id}/copyToSection
-POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
-POST /groups/{id}/onenote/pages/{id}/copyToSection
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string | `application/json` |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|groupId|字符串|要复制到的组的 ID。仅在复制到 Office 365 组时使用。|
-|id|String|必需。目标分区的 ID。|
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="d73e9-p104">如果成功，此方法返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。轮询 Operation-Location 终结点以[获取复制操作的状态](onenoteoperation_get.md)。</span><span class="sxs-lookup"><span data-stu-id="d73e9-p104">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
 如果成功，此方法返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。轮询 Operation-Location 终结点以[获取复制操作的状态](onenoteoperation_get.md)。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="d73e9-134">示例</span><span class="sxs-lookup"><span data-stu-id="d73e9-134">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="d73e9-135">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="d73e9-135">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="d73e9-136">请求</span><span class="sxs-lookup"><span data-stu-id="d73e9-136">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="d73e9-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d73e9-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "page_copytosection"
@@ -52,8 +22,9 @@ Content-length: 52
 }
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="d73e9-138">响应</span><span class="sxs-lookup"><span data-stu-id="d73e9-138">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="d73e9-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d73e9-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,31 +1,10 @@
-# <a name="delete-directoryobject"></a>删除 directoryObject
-
-删除 directoryObject。
-
-## <a name="prerequisites"></a>先决条件
-需要以下**范围**才能执行此 API：_Directory.AccessAsUser.All_
-
-**注意：**用户、组和联系人是 directory 对象的类型。因此，如果需要删除用户，可以而且应该使用以下**范围**：_User.ReadWrite.All_
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /directoryObjects/{id}
-
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="2889f-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2889f-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+## <span data-ttu-id="2889f-121">示例</span><span class="sxs-lookup"><span data-stu-id="2889f-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="2889f-122">请求</span><span class="sxs-lookup"><span data-stu-id="2889f-122">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -34,7 +13,8 @@ DELETE /directoryObjects/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
-##### <a name="response"></a>响应
+##### <span data-ttu-id="2889f-123">响应</span><span class="sxs-lookup"><span data-stu-id="2889f-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

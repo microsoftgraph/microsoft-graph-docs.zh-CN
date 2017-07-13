@@ -1,34 +1,12 @@
-# <a name="chartfill-clear"></a>ChartFill: clear
-
-清除图表元素的填充颜色。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**： 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
-
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
-
-
-## <a name="request-body"></a>请求正文
-
-## <a name="response"></a>响应
+<span data-ttu-id="bca62-p102">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="bca62-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="bca62-117">示例</span><span class="sxs-lookup"><span data-stu-id="bca62-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="bca62-118">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="bca62-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="bca62-119">请求</span><span class="sxs-lookup"><span data-stu-id="bca62-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="bca62-120">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bca62-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_clear"
@@ -37,8 +15,9 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+##### <span data-ttu-id="bca62-121">响应</span><span class="sxs-lookup"><span data-stu-id="bca62-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="bca62-122">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bca62-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

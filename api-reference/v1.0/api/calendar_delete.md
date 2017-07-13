@@ -1,38 +1,11 @@
-# <a name="delete-calendar"></a>删除日历
-
-删除默认日历以外的日历。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)（非默认日历）。
-```http
-DELETE /me/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}
-
-DELETE /me/calendarGroup/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
-```
-指定 [calendarGroup](../resources/calendargroup.md) 中的 [日历](../resources/calendar.md)（非默认日历）。
-```http
-DELETE /me/calendarGroups/{id}/calendars/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
-```
-## <a name="request-headers"></a>请求标头
-| 名称           |  类型    | 说明|
-|:---------------|:---------|:----------|
-| Authorization  |  string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="e8152-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e8152-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="e8152-121">示例</span><span class="sxs-lookup"><span data-stu-id="e8152-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e8152-122">请求</span><span class="sxs-lookup"><span data-stu-id="e8152-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e8152-123">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e8152-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_calendar"
@@ -40,8 +13,9 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+##### <span data-ttu-id="e8152-124">响应</span><span class="sxs-lookup"><span data-stu-id="e8152-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e8152-125">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e8152-125">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

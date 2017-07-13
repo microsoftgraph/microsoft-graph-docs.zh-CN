@@ -1,60 +1,4 @@
-# <a name="create-message"></a>创建邮件
-
-使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
-
-在同一个 **POST** 调用中创建草稿时，可以添加[附件](../resources/attachment.md)。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages
-POST /users/{id|userPrincipalName}/messages
-POST /me/mailFolders/{id}/messages
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
-```
-## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
-
-由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
-
-
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [message](../resources/message.md) 对象。
-
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
-下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "create_message_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages
-Content-type: application/json
-Content-length: 248
-
-{
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
-}
-```
-在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
-##### <a name="response-1"></a>响应 1
+<span data-ttu-id="176f6-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="176f6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -79,10 +23,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <span data-ttu-id="176f6-130">另请参阅</span><span class="sxs-lookup"><span data-stu-id="176f6-130">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="176f6-131">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="176f6-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="176f6-132">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="176f6-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

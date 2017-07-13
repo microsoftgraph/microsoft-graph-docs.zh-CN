@@ -1,38 +1,14 @@
-# <a name="remove-directory-role-member"></a>删除目录角色成员
-
-从 directoryRole 中删除成员。
-
-## <a name="prerequisites"></a>先决条件
-
-若要执行此 API，必须有以下**范围**：*Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP 请求
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /directoryroles/{id}/members/{id}/$ref
-```
-
-## <a name="request-headers"></a>请求标头
-
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-
-请勿提供此方法的请求正文。
-
-## <a name="response"></a>响应
+<span data-ttu-id="c8c86-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="c8c86-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <span data-ttu-id="c8c86-119">示例</span><span class="sxs-lookup"><span data-stu-id="c8c86-119">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>请求
+##### <span data-ttu-id="c8c86-120">请求</span><span class="sxs-lookup"><span data-stu-id="c8c86-120">Request</span></span>
+<a id="request" class="xliff"></a>
 
-下面是一个请求示例。
+<span data-ttu-id="c8c86-121">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c8c86-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"
@@ -42,9 +18,10 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
 ```
 
-##### <a name="response"></a>响应
+##### <span data-ttu-id="c8c86-122">响应</span><span class="sxs-lookup"><span data-stu-id="c8c86-122">Response</span></span>
+<a id="response" class="xliff"></a>
 
-下面是一个响应示例。 
+<span data-ttu-id="c8c86-123">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c8c86-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

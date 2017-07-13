@@ -1,149 +1,4 @@
-# <a name="create-schemaextension"></a>创建 schemaExtension
-
-创建一个新的 [schemaExtension](../resources/schemaextension.md) 定义以扩展[支持资源类型](../../../concepts/extensibility_overview.md#supported-resources)。
-
-架构扩展允许将强类型自定义数据添加到资源。创建架构扩展的应用是所有者应用。取决于扩展[状态](../../../concepts/extensibility_overview.md#schema-extensions-lifecycle)，所有者应用可以且仅所有者应用可以更新或删除扩展。 
-
-请参阅如何[定义描述培训课程的架构扩展](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course)的示例，通过架构扩展定义[使用培训课程数据创建新组](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data)，并[将培训课程数据添加到现有组](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group)。
-
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**：*Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /schemaExtensions
-```
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
-
-下表显示创建架构扩展时所需的属性。
-
-| 参数 | 类型 | 说明|
-|:---------------|:--------|:----------|
-|说明|String|架构扩展的说明。|
-|id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接已验证域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。例如 `contoso_mySchema`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
-|属性|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
-|targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|
-
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [schemaExtension](../resources/schemaextension.md)对象。
-
-## <a name="example"></a>示例
-### <a name="request-1"></a>请求 1
-第一个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
-
-在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_1"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-1"></a>响应 1
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 420
-
-{
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "String"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="request-2"></a>请求 2
-第二个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
-
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_2"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-2"></a>响应 2
+<span data-ttu-id="b6aa3-p108">该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b6aa3-p108">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -181,10 +36,11 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>另请参阅
+## <span data-ttu-id="b6aa3-161">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b6aa3-161">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="b6aa3-162">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="b6aa3-162">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="b6aa3-163">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="b6aa3-163">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

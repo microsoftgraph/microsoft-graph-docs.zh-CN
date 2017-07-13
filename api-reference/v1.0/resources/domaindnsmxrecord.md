@@ -1,32 +1,12 @@
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
-# domainDnsMxRecord 资源类型
+<span data-ttu-id="43717-p105">配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="43717-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
 
-表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
-
-<a id="methods" class="xliff"></a>
-## 方法
-不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
-
-<a id="properties" class="xliff"></a>
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|字符串| 分配给此实体的唯一标识符。不可为 NULL，只读。|
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 MX 记录才能使 Microsoft Online Services 在域中正常运行。 |
-|label|String| 配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。 |
-|mailExchange|String| 配置 DNS 主机上的 MX 记录的*答复/目标/值*时使用的值。|
-|preference|Int32| 配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。 |
-|recordType|String| DNS 记录类型。此值始终是 *Mx*。Key |
-|supportedService|String| Microsoft Online Service 或与该 Mx 记录存在依赖关系的功能。</br></br>可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
-|ttl|Int32| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
-
+## <span data-ttu-id="43717-140">关系</span><span class="sxs-lookup"><span data-stu-id="43717-140">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## 关系
-无
+<span data-ttu-id="43717-141">无</span><span class="sxs-lookup"><span data-stu-id="43717-141">None</span></span>
 
+## <span data-ttu-id="43717-142">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="43717-142">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="43717-143">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="43717-143">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

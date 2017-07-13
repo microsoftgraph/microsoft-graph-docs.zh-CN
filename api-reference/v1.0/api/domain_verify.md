@@ -1,45 +1,4 @@
-# <a name="domain-verify"></a>域：验证
-
-验证域的所有权。
-
-> **重要说明：**仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
-
-### <a name="prerequisites"></a>先决条件
-
-要执行此 API，需要以下**范围**之一：*Directory.Read.All* 或 *Domain.ReadWrite.All*
-
-### <a name="http-request"></a>HTTP 请求
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST /domains/{id}/verify
-```
-
-> 对于 {id}，请使用其完全限定的域名指定该域。
-
-### <a name="request-headers"></a>请求标头
-
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {token}。必需。|
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>请求正文
-
-### <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [domain](../resources/domain.md) 对象。
-
-### <a name="example"></a>示例
-##### <a name="request"></a>请求
-<!-- {
-  "blockType": "request",
-  "name": "domain_verify"
-}-->
-```http
-POST https://graph.microsoft.com/V1.0/domains/contoso.com/verify
-```
-
-##### <a name="response"></a>响应
+<span data-ttu-id="69d00-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="69d00-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

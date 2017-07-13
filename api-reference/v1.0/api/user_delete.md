@@ -1,29 +1,11 @@
-# <a name="delete-a-user"></a>删除用户
-
-删除用户。
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有下面一种**范围**：*Directory.AccessAsUser.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}
-```
-
-## <a name="request-headers"></a>请求标头
-| 标头       | 值|
-|:-----------|:------|
-| Authorization  | Bearer {token}。必需。  |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="0f695-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="0f695-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="0f695-117">示例</span><span class="sxs-lookup"><span data-stu-id="0f695-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="0f695-118">请求</span><span class="sxs-lookup"><span data-stu-id="0f695-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="0f695-119">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0f695-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -31,8 +13,9 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+##### <span data-ttu-id="0f695-120">响应</span><span class="sxs-lookup"><span data-stu-id="0f695-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="0f695-121">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f695-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

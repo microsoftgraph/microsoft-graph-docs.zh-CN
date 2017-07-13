@@ -1,47 +1,4 @@
-# <a name="list-attachments"></a>列出附件
-
-检索附加到邮件的 [attachment](../resources/attachment.md) 对象列表。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.Read* 
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-用户邮箱中的 [邮件](../resources/message.md) 附件。
-```http
-GET /me/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/messages/{id}/attachments
-```
-用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。
-```http
-GET /me/mailFolders/{id}/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
-```
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。
-```http
-GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_attachments"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
-```
-##### <a name="response"></a>响应
+<span data-ttu-id="cbfc1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cbfc1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

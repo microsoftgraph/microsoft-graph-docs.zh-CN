@@ -1,49 +1,12 @@
-# <a name="event-snoozereminder"></a>event: snoozeReminder
-
-推迟提醒直到新时间。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
-
-POST /me/calendar/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
-
-POST /me/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone|触发提醒的新日期和时间。|
-
-## <a name="response"></a>响应
+<span data-ttu-id="3268c-p103">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3268c-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="3268c-129">示例</span><span class="sxs-lookup"><span data-stu-id="3268c-129">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="3268c-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-130">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="3268c-131">请求</span><span class="sxs-lookup"><span data-stu-id="3268c-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="3268c-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -61,8 +24,9 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="3268c-133">响应</span><span class="sxs-lookup"><span data-stu-id="3268c-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="3268c-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

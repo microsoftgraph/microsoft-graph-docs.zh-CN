@@ -1,36 +1,11 @@
-# <a name="delete-photo"></a>删除照片
-
-删除照片
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
-
-  * File.ReadWrite
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}/photo
-DELETE /groups/{id}/photo
-DELETE /drive/root/createdByUser/photo
-
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| if-match  | string  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-
-
-## <a name="response"></a>响应
+<span data-ttu-id="51b18-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="51b18-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="51b18-123">示例</span><span class="sxs-lookup"><span data-stu-id="51b18-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="51b18-124">请求</span><span class="sxs-lookup"><span data-stu-id="51b18-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="51b18-125">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="51b18-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
 "name": "delete_photo"
@@ -38,8 +13,9 @@ DELETE /drive/root/createdByUser/photo
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="51b18-126">响应</span><span class="sxs-lookup"><span data-stu-id="51b18-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="51b18-127">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="51b18-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

@@ -1,77 +1,4 @@
-# <a name="get-event"></a>获取事件
-
-获取指定的 [event](../resources/event.md) 对象的属性和关系。
-
-目前，此操作返回纯 HTML 格式的事件正文。
-
-由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
-
-### <a name="support-various-time-zones"></a>支持不同时区
-
-对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。 
-
-例如，下面的 `Prefer: outlook.timezone` 标头将响应中的开始和结束时间设置为东部标准时间。
-```http
-Prefer: outlook.timezone="Eastern Standard Time"
-```
-
-如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。
-
-可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。
-
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.Read*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-GET /users/{id | userPrincipalName}/events/{id}
-GET /groups/{id}/events/{id}
-
-GET /me/calendar/events/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}
-GET /groups/{id}/calendar/events/{id}
-
-GET /me/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | string | 事件在响应中的默认时区。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-第一个示例获取指定的事件。它指定以下内容：
-
-- 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
-- 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_event"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
-Prefer: outlook.timezone="Pacific Standard Time"
-```
-
-##### <a name="response"></a>响应
+<span data-ttu-id="fa264-p105">下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="fa264-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。
 
@@ -141,10 +68,11 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <span data-ttu-id="fa264-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fa264-142">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="fa264-143">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="fa264-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="fa264-144">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="fa264-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

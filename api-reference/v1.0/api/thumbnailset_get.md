@@ -1,37 +1,17 @@
-# <a name="get-thumbnailset"></a>Get thumbnailSet
-
-检索 [thumbnailSet](../resources/thumbnailset.md) 对象的属性和关系。
-
-有关详细信息，请参阅 [列出缩略图](item_list_thumbnails.md)。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /drive/root/thumbnails/{id}
-GET /drive/items/{id}/thumbnails/{id}
-GET /drives/{id}/root/thumbnails/{id}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+<span data-ttu-id="d6280-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d6280-p101">Bearer token. Required.</span></span>  | Bearer {token}。必需。 |
 
 
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [thumbnailSet](../resources/thumbnailset.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="d6280-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="d6280-118">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="d6280-119">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d6280-119">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="d6280-120">响应</span><span class="sxs-lookup"><span data-stu-id="d6280-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="d6280-121">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [thumbnailSet](../resources/thumbnailset.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d6280-121">If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.</span></span>
+## <span data-ttu-id="d6280-122">示例</span><span class="sxs-lookup"><span data-stu-id="d6280-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="d6280-123">请求</span><span class="sxs-lookup"><span data-stu-id="d6280-123">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="d6280-124">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d6280-124">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_thumbnailset"
@@ -39,8 +19,9 @@ GET /drives/{id}/root/thumbnails/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/drive/root/thumbnails/{id}
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="d6280-125">响应</span><span class="sxs-lookup"><span data-stu-id="d6280-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="d6280-126">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d6280-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

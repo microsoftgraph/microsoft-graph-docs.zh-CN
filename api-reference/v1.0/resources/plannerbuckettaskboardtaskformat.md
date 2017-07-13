@@ -1,37 +1,13 @@
-<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
+<span data-ttu-id="202f8-p103">用于对任务板存储桶视图中的任务进行排序的提示。[此处](planner_order_hint_format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="202f8-p103">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|用于对任务板存储桶视图中的任务进行排序的提示。[此处](planner_order_hint_format.md)概述了此格式。|
 
-# plannerBucketTaskBoardTaskFormat 资源类型
-
-**plannerBucketTaskBoardTaskFormat** 资源表示用于在“任务板”的“存储桶”视图（由被分配到的存储桶中的任务组成的视图）下正确呈现任务的信息。每个[任务](plannertask.md)均将有一个与其相关联的 **plannerBucketTaskBoardTaskFormat** 对象。
-
-
-<a id="methods" class="xliff"></a>
-
-## 方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |读取 **plannerBucketTaskBoardTaskFormat** 对象的属性和关系。|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |更新 **plannerBucketTaskBoardTaskFormat** 对象 |
-
-<a id="properties" class="xliff"></a>
-
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|String| 只读。资源的 ID。长度为 28 个字符，区分大小写。[格式验证](planner_identifiers_disclaimer.md)在服务上完成。|
-|orderHint|String|用于对任务板存储桶视图中的任务进行排序的提示。[此处](planner_order_hint_format.md)概述了此格式。|
-
+## <span data-ttu-id="202f8-128">关系</span><span class="sxs-lookup"><span data-stu-id="202f8-128">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-
-## 关系
-无
+<span data-ttu-id="202f8-129">无</span><span class="sxs-lookup"><span data-stu-id="202f8-129">None</span></span>
 
 
+## <span data-ttu-id="202f8-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="202f8-130">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="202f8-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="202f8-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

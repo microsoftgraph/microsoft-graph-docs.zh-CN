@@ -1,32 +1,10 @@
-# <a name="update-page"></a>更新页面
-
-更新 OneNote 页面的内容
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：   
-
-Notes.ReadWrite 或 Notes.ReadWrite.All 
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/onenote/pages/{id}/content
-PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
-PATCH /groups/{id}/onenote/pages/{id}/content
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string | `application/json` |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供表示页面更改的 [patchContentCommand](../resources/patchcontentcommand.md) 对象的数组。有关详细信息和示例，请参阅 <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">更新 OneNote 页面</a>。
-
-## <a name="response"></a>响应
+<span data-ttu-id="e2316-p103">如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。</span><span class="sxs-lookup"><span data-stu-id="e2316-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
 如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="e2316-123">示例</span><span class="sxs-lookup"><span data-stu-id="e2316-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e2316-124">请求</span><span class="sxs-lookup"><span data-stu-id="e2316-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e2316-125">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e2316-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -50,8 +28,9 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+##### <span data-ttu-id="e2316-126">响应</span><span class="sxs-lookup"><span data-stu-id="e2316-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e2316-127">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e2316-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

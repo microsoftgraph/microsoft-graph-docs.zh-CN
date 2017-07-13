@@ -1,20 +1,9 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# domainState 资源类型
+<span data-ttu-id="f25f3-p102">异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。</span><span class="sxs-lookup"><span data-stu-id="f25f3-p102">Type of asynchronous operation. The values can be *ForceDelete* or *Verification*</span></span> | 异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。 |
+| <span data-ttu-id="f25f3-115">status</span><span class="sxs-lookup"><span data-stu-id="f25f3-115">status</span></span> | <span data-ttu-id="f25f3-116">String</span><span class="sxs-lookup"><span data-stu-id="f25f3-116">String</span></span> | <span data-ttu-id="f25f3-117">操作的当前状态。</span><span class="sxs-lookup"><span data-stu-id="f25f3-117">Current status of the operation.</span></span> <br> <span data-ttu-id="f25f3-118">*Scheduled* - 已计划操作但尚未启动。</span><span class="sxs-lookup"><span data-stu-id="f25f3-118">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="f25f3-119">*InProgress* - 任务已启动并且正在进行中。</span><span class="sxs-lookup"><span data-stu-id="f25f3-119">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="f25f3-120">*Failed* - 操作已失败。</span><span class="sxs-lookup"><span data-stu-id="f25f3-120">*Failed* - Operation has failed.</span></span> |
 
-表示域上经过计划的异步操作的状态。
-
-<a id="properties" class="xliff"></a>
-## 属性
-
-| 属性   | 类型 | 说明 |
-|:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | 上个活动发生时的时间戳。计划操作、异步任务启动及操作完成后将更新此值。 |
-| 操作 | String | 异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。 |
-| status | String | 操作的当前状态。 <br> *Scheduled* - 已计划操作但尚未启动。 <br> *InProgress* - 任务已启动并且正在进行中。 <br> *Failed* - 操作已失败。 |
-
+## <span data-ttu-id="f25f3-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f25f3-121">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="f25f3-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f25f3-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

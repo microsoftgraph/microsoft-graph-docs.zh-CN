@@ -1,153 +1,4 @@
-# <a name="update-open-extension"></a>更新开放扩展
-
-通过请求正文中的属性更新开放扩展（[openTypeExtension](../resources/openTypeExtension.md) 对象）：
-
-- 如果请求正文中的属性与现有属性在扩展中的名称相匹配，则更新扩展中的数据。
-- 否则，属性及其数据将添加到扩展中。 
-
-扩展插件中的数据可以是基元类型，也可以是基元类型数组。
-
-
-## <a name="prerequisites"></a>先决条件
-
-若要执行此 API，必须有以下**权限**之一，具体视已在其中创建扩展插件的资源而定：
-
-|**支持的资源**|**权限**|**支持的资源**|**权限** |
-|:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | _Device.ReadWrite.All_ | [事件](../resources/event.md) | _Calendars.ReadWrite_ |
-| [组](../resources/group.md) | _Group.ReadWrite.All_ | [组事件](../resources/event.md) | _Group.ReadWrite.All_ |
-| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ |
-| [组织](../resources/organization.md) | _Directory.AccessAsUser.All_ | [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [用户](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
- 
-## <a name="http-request"></a>HTTP 请求
-在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**注意：**以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。
-
-若要了解如何在请求正文中添加任意自定义数据来进行更改或添加到扩展插件，请参阅[请求正文](#request-body)部分。
-
-
-## <a name="parameters"></a>参数
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|相应集合的实例的唯一标识符。必需。|
-|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
-
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 值 |
-|:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
-| Content-Type | application/json |
-
-## <a name="request-body"></a>请求正文
-
-提供 [openTypeExtension](../resources/openTypeExtension.md) 对象的 JSON 正文（具有以下所需的名称-值对）以及要更改或添加到该扩展中的任意定义数据。JSON 负载中的数据可以是基元或基元数组类型。
-
-| 名称       | 值 |
-|:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string% |
-
-
-## <a name="response"></a>响应
-
-如果成功，此方法返回 `200 OK` 响应代码和更新的 [openTypeExtension](../resources/openTypeExtension.md) 对象。
-
-
-## <a name="example"></a>示例
-#### <a name="request-1"></a>请求 1
-
-第一个示例展示如何在邮件中更新扩展。该扩展最初由以下 JSON 负载表示：
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "companyName": "Wingtip Toys",
-    "dealValue": 500050,
-    "expirationDate": "2015-12-03T10:00:00Z"
-}
-```
-
-可以按其名称引用该扩展，
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
-```
-
-或者，也可以通过其完全限定的名称引用扩展：
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
-```
-
-可以通过以下方法，使用示例请求和以下请求正文更新以上扩展：
-- 将 `companyName` 从 `Wingtip Toys` 更改为 `Wingtip Toys (USA)`
-- 将 `dealValue` 从 `500050` 更改为 `500100`
-- 将新数据添加为自定义属性 `updated`
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": "500100",
-    "expirationDate": "2015-12-03T10:00:00.000Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-} 
-```
-
-
-#### <a name="response-1"></a>响应 1
-
-无论用于引用扩展的方式如何，该响应都相同。
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": 500100,
-    "expirationDate": "2015-12-03T10:00:00Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-}
-```
-
-****
-
-#### <a name="request-2"></a>请求 2
+<span data-ttu-id="f6fac-p107">第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="f6fac-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`
 
@@ -170,7 +21,7 @@ Content-type: application/json
 }
 ```
 
-以下是要将 `expirationDate` 更改为 `2016-07-30T11:00:00Z` 的请求和请求正文：
+<span data-ttu-id="f6fac-183">以下是要将 `expirationDate` 更改为 `2016-07-30T11:00:00Z` 的请求和请求正文：</span><span class="sxs-lookup"><span data-stu-id="f6fac-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -194,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>响应 2
+#### <span data-ttu-id="f6fac-184">响应 2</span><span class="sxs-lookup"><span data-stu-id="f6fac-184">Response 2</span></span>
+<a id="response-2" class="xliff"></a>
 
-下面是第二个示例的响应，显示了扩展中更新的 `expirationDate`
+<span data-ttu-id="f6fac-185">下面是第二个示例的响应，显示了扩展中更新的 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="f6fac-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

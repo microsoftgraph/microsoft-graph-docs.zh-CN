@@ -1,67 +1,4 @@
-# <a name="contact-delta"></a>contact: delta
-
-获取指定文件夹中已添加、删除或更新的联系人集。
-
-对文件夹中的联系人的 **delta** 函数调用与 GET 请求相似，但是可通过在对其的一次或多次调用中正确应用[状态令牌](../../../concepts/delta_query_overview.md)来查询该文件夹中的联系人的增量更改这一点除外。通过此功能，你可以维护和同步本地存储的用户联系人，而无需每次都从服务器中获取整组联系人。  
-
-### <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：_Contacts.Read_；_Contacts.ReadWrite_
-### <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
-```
-
-### <a name="query-parameters"></a>查询参数
-
-跟踪联系人更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
-
-| 查询参数      | 类型   |说明|
-|:---------------|:--------|:----------|
-| $deltatoken | 字符串 | 对同一个联系人集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示同一个联系人集合中有进一步的更改需要跟踪。 |
-
-
-#### <a name="odata-query-parameters"></a>OData 查询参数
-
-- 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
-
-
-### <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明 |
-|:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}。可选。 |
-
-
-### <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [contact](../resources/contact.md) 集合对象。
-
-### <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面的示例演示了如何调用单个 **delta** 函数，使用 `$select` 参数仅获取每个联系人的 **displayName** 属性并将响应正文中的联系人的最大数目限制为 2。
-
-若要跟踪文件夹中联系人的更改，要使用正确的状态令牌执行一次或多次 **delta** 函数调用来获取上次增量查询后的增量更改集。 
-
-演示如何使用状态令牌跟踪邮件文件夹中的邮件更改的示例与其相似：[获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)。跟踪联系人和跟踪文件夹中的邮件之间的主要区别在于增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
- 
-<!-- {
-  "blockType": "request",
-  "name": "contact_delta"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
-Prefer: odata.maxpagesize=2
-```
-
-##### <a name="response"></a>响应
-如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
-（位于 _@odata.nextLink_ 响应头中）或 _deltaToken_（位于 _@odata.deltaLink_ 响应头中）。它们分别指示应继续此组调用还是已获取该组的所有更改。
-
-以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
+<span data-ttu-id="eaf1e-p110">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="eaf1e-p110">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -90,10 +27,11 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>另请参阅
+### <span data-ttu-id="eaf1e-158">另请参阅</span><span class="sxs-lookup"><span data-stu-id="eaf1e-158">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
-- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
+- [<span data-ttu-id="eaf1e-159">使用增量查询跟踪 Microsoft Graph 数据更改</span><span class="sxs-lookup"><span data-stu-id="eaf1e-159">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="eaf1e-160">获取文件夹中邮件的增量更改</span><span class="sxs-lookup"><span data-stu-id="eaf1e-160">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

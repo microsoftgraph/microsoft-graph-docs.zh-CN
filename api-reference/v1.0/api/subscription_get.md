@@ -1,28 +1,16 @@
-# <a name="get-subscription"></a>获取订阅
+<span data-ttu-id="af39d-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="af39d-p101">Bearer token. Required.</span></span>  | Bearer {token}。必需。 |
 
-检索订阅的属性和关系。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一，具体取决于目标资源：*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite* 或 *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /subscriptions/{subscriptionId}
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
-
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="af39d-116">请求正文</span><span class="sxs-lookup"><span data-stu-id="af39d-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="af39d-117">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="af39d-117">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="af39d-118">响应</span><span class="sxs-lookup"><span data-stu-id="af39d-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="af39d-119">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="af39d-119">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="af39d-120">示例</span><span class="sxs-lookup"><span data-stu-id="af39d-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="af39d-121">请求</span><span class="sxs-lookup"><span data-stu-id="af39d-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="af39d-122">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="af39d-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -30,8 +18,9 @@ GET /subscriptions/{subscriptionId}
 ```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="af39d-123">响应</span><span class="sxs-lookup"><span data-stu-id="af39d-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="af39d-124">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="af39d-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -1,36 +1,14 @@
-<a id="plannertaskdetails-resource-type" class="xliff"></a>
-# plannerTaskDetails 资源类型
+<span data-ttu-id="40bfb-p103">这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。</span><span class="sxs-lookup"><span data-stu-id="40bfb-p103">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
+|<span data-ttu-id="40bfb-135">references</span><span class="sxs-lookup"><span data-stu-id="40bfb-135">references</span></span>|[<span data-ttu-id="40bfb-136">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="40bfb-136">plannerExternalReferences</span></span>](plannerexternalreferences.md)|<span data-ttu-id="40bfb-137">任务上的引用集合。</span><span class="sxs-lookup"><span data-stu-id="40bfb-137">The collection of references on the task.</span></span>|
 
-**plannerTaskDetails** 资源表示任务的其他相关信息。每个[任务](plannertask.md)对象均有一个详细信息对象。
-
-
-<a id="methods" class="xliff"></a>
-## 方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |读取 **plannerTaskDetails** 对象的属性和关系。|
-|[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |更新 **plannerTaskDetails** 对象。 |
-
-
-<a id="properties" class="xliff"></a>
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|checklist|[plannerChecklistItems](plannerchecklistitems.md)|任务上的检查表项目集合。|
-|description|String|任务描述|
-|id|String| 只读。任务详细信息 ID。长度为 28 个字符，区分大小写。[格式验证](planner_identifiers_disclaimer.md)在服务上完成。|
-|previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
-|references|[plannerExternalReferences](plannerexternalreferences.md)|任务上的引用集合。|
-
+## <span data-ttu-id="40bfb-138">关系</span><span class="sxs-lookup"><span data-stu-id="40bfb-138">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## 关系
-无
+<span data-ttu-id="40bfb-139">无</span><span class="sxs-lookup"><span data-stu-id="40bfb-139">None</span></span>
 
 
+## <span data-ttu-id="40bfb-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="40bfb-140">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="40bfb-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="40bfb-141">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

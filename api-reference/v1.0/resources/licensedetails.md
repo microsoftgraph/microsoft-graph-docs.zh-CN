@@ -1,38 +1,12 @@
-<a id="licensedetails-resource-type" class="xliff"></a>
+<span data-ttu-id="21d8c-p104">唯一的 SKU 显示名称。等同于相关的 [SubscribedSku](subscribedsku.md) 对象上的 skuPartNumber；例如：“AAD_Premium”。只读</span><span class="sxs-lookup"><span data-stu-id="21d8c-p104">Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only</span></span>| 唯一的 SKU 显示名称。等同于相关的 [SubscribedSku](subscribedsku.md) 对象上的 skuPartNumber；例如：“AAD_Premium”。只读 |
 
-# licenseDetails 资源类型
-
-包含已分配给用户的许可证的相关信息。
-
-<a id="methods" class="xliff"></a>
-
-## 方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[List licenseDetails](../api/user_list_licensedetails.md) | licenseDetails collection |检索用户的 licenseDetails 对象列表。|
-
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
-
-<a id="properties" class="xliff"></a>
-
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|String| 许可证详细信息对象的唯一标识符。只读，密钥，不可为 NULL |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 许可证分配的服务计划的相关信息。只读，不可为 Null |
-|skuId|Guid| 服务 SKU 的唯一标识符 (GUID)。等同于相关的 [SubscribedSku](subscribedsku.md) 对象上的 skuId 属性。只读 |
-|skuPartNumber|String| 唯一的 SKU 显示名称。等同于相关的 [SubscribedSku](subscribedsku.md) 对象上的 skuPartNumber；例如：“AAD_Premium”。只读 |
-
+## <span data-ttu-id="21d8c-132">关系</span><span class="sxs-lookup"><span data-stu-id="21d8c-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
+<span data-ttu-id="21d8c-133">无</span><span class="sxs-lookup"><span data-stu-id="21d8c-133">None</span></span>
 
-## 关系
-无
-
+## <span data-ttu-id="21d8c-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="21d8c-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="21d8c-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="21d8c-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

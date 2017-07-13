@@ -1,83 +1,4 @@
-# <a name="create-event"></a>创建事件
-
-在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
-
-可以将事件的各开始和结束时间的时区指定为这些值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 
-
-创建事件时，服务器将向所有与会者发送邀请。
-
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events
-POST /users/{id | userPrincipalName}/events
-
-POST /me/calendar/events
-POST /users/{id | userPrincipalName}/calendar/events
-
-POST /me/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendars/{id}/events
-```
-## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:-----------|:------|
-| Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json. Required.  |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
-
-由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。
-
-## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [event](../resources/event.md) 对象。
-
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。它使用 `Prefer: outlook.timezone` 请求标头来指定应使用该时区的响应中的**开始**和**结束**时间。
-<!-- {
-  "blockType": "request",
-  "name": "create_event_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/events
-Prefer: outlook.timezone="Pacific Standard Time"
-Content-type: application/json
-Content-length: 600
-
-{
-  "subject": "Let's go for lunch",
-  "body": {
-    "contentType": "HTML",
-    "content": "Does late morning work for you?"
-  },
-  "start": {
-      "dateTime": "2017-04-15T12:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "end": {
-      "dateTime": "2017-04-15T14:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "location":{
-      "displayName":"Harry's Bar"
-  },
-  "attendees": [
-    {
-      "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
-      },
-      "type": "required"
-    }
-  ]
-}
-```
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
+<span data-ttu-id="6b5c8-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6b5c8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -159,10 +80,11 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a>另请参阅
+## <span data-ttu-id="6b5c8-131">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6b5c8-131">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="6b5c8-132">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="6b5c8-132">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="6b5c8-133">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="6b5c8-133">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

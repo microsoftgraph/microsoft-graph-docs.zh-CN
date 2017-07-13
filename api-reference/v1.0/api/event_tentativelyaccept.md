@@ -1,50 +1,12 @@
-# <a name="event-tentativelyaccept"></a>event: tentativelyAccept
-
-暂时接受指定的事件。
-
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendar/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
-
-POST /me/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|注释|String|响应中包含的文本。可选。|
-|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
-
-## <a name="response"></a>响应
+<span data-ttu-id="c92da-p105">如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="c92da-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="c92da-135">示例</span><span class="sxs-lookup"><span data-stu-id="c92da-135">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="c92da-136">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="c92da-136">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="c92da-137">请求</span><span class="sxs-lookup"><span data-stu-id="c92da-137">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="c92da-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c92da-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_tentativelyaccept"
@@ -60,9 +22,11 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>响应
-##### <a name="response"></a>响应
-下面是一个响应示例。
+##### <span data-ttu-id="c92da-139">响应</span><span class="sxs-lookup"><span data-stu-id="c92da-139">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="c92da-140">响应</span><span class="sxs-lookup"><span data-stu-id="c92da-140">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="c92da-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c92da-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,26 +1,9 @@
-<a id="plannerchecklistitem-resource-type" class="xliff"></a>
+<span data-ttu-id="080a2-p104">用于设置检查表中的项目的相对顺序。[此处](planner_order_hint_format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="080a2-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|用于设置检查表中的项目的相对顺序。[此处](planner_order_hint_format.md)概述了此格式。|
+|<span data-ttu-id="080a2-125">title</span><span class="sxs-lookup"><span data-stu-id="080a2-125">title</span></span>|<span data-ttu-id="080a2-126">String</span><span class="sxs-lookup"><span data-stu-id="080a2-126">String</span></span>|<span data-ttu-id="080a2-127">检查表项目的标题</span><span class="sxs-lookup"><span data-stu-id="080a2-127">Title of the checklist item</span></span>|
 
-# plannerChecklistItem 资源类型
-
-
-**plannerChecklistItem** 资源表示任务的检查表中的项目。任务上的检查表由 [checklistItems 对象](plannerchecklistitems.md)表示。
-
-
-<a id="properties" class="xliff"></a>
-
-## 属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|isChecked|Boolean|如果已检查此项目，值则为 `true`，否则为 `false`。|
-|lastModifiedBy|[identitySet](identityset.md)| 只读。上一次修改它的用户 ID。|
-|lastModifiedDateTime|DateTimeOffset|只读。上一次修改它的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|orderHint|String|用于设置检查表中的项目的相对顺序。[此处](planner_order_hint_format.md)概述了此格式。|
-|title|String|检查表项目的标题|
-
+## <span data-ttu-id="080a2-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="080a2-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="080a2-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="080a2-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

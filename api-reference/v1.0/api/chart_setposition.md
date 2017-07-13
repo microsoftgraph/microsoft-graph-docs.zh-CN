@@ -1,38 +1,12 @@
-# <a name="chart-setposition"></a>Chart: setPosition
-
-相对于工作表上的单元格放置图表。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**： 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
-
-```
-## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
-
-
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|startCell|string|起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。|
-|endCell|string|可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。|
-
-## <a name="response"></a>响应
+<span data-ttu-id="2b09f-p104">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2b09f-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <span data-ttu-id="2b09f-131">示例</span><span class="sxs-lookup"><span data-stu-id="2b09f-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="2b09f-132">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="2b09f-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="2b09f-133">请求</span><span class="sxs-lookup"><span data-stu-id="2b09f-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="2b09f-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2b09f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -48,8 +22,9 @@ Content-length: 66
 }
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+##### <span data-ttu-id="2b09f-135">响应</span><span class="sxs-lookup"><span data-stu-id="2b09f-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="2b09f-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2b09f-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
