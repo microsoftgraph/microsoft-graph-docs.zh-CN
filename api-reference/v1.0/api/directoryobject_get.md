@@ -3,10 +3,11 @@
 检索 directoryObject 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一： 
+
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> 注意：权限范围以所需特权从小到大的顺序列出。
+> **注意：**权限范围按最不需要特权到最需要特权的顺序列出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

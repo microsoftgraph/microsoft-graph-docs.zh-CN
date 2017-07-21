@@ -19,7 +19,7 @@
 - [ASP.NET 4.6 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/aspnet-connect-sample)。将使用示例文件中的 **starter-project** 文件夹。
 
 
-## <a name="register-the-application"></a>注册应用程序
+## <a name="register-the-application"></a>注册应用
 
 本步骤中，将会在 Microsoft 应用注册门户上注册一个应用。这会生成在 Visual Studio 中配置此应用时要使用的应用程序 ID 和密码。
 
@@ -110,7 +110,7 @@
 
         using Microsoft.Graph;
 
-1. 用以下方法替换 *// GetMyEmailAddress*。可获取当前用户的电子邮件地址。 
+1. 用以下方法替换 *// GetMyEmailAddress*。这样可获取当前用户的电子邮件地址。 
 
         // Get the current user's email address from their profile.
         public async Task<string> GetMyEmailAddress(GraphServiceClient graphClient)
@@ -339,6 +339,7 @@
 ## <a name="see-also"></a>另请参阅
 - [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [用于 web API 身份验证方案的 Web 应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
-- [使用 OpenID Connect 将 Microsoft 标识和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [使用 OpenID Connect 将 Microsoft 标识和 Microsoft Graph 集成到 Web 应用中](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

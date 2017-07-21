@@ -1,6 +1,6 @@
-# <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
+# <a name="add-custom-data-to-groups-using-schema-extensions-example"></a>使用架构扩展向组添加自定义数据（示例）
 
-我们将引导你完成一个示例，演示如何使用*架构扩展*。 
+我们将通过一个示例逐步介绍如何使用*架构扩展*。 
 
 假设你是一个名为“Graph Learn”的学习管理软件公司的开发人员，工作是为企业构建培训课程和材料。Office 365 组具有丰富的协作体验，是为在线课程和教师引导式课程的参与者提供交付课程内容和记录练习的绝佳方式。你可能希望将那些 Office 365 组用于使培训课程可轻松地被识别为培训课程，从而使其他开发人员可以发现你的组，并在你的学习课程的基础上构建丰富的体验。
 
@@ -117,7 +117,7 @@ Content-length: 420
 }
 ```
 
-## <a name="3-create-a-new-group-with-extended-data"></a>3.创建具有扩展数据的新组 
+## <a name="3-create-a-new-group-with-extended-data"></a>3.新建包含扩展数据的组 
 使用我们刚刚注册的 `graphlearn_courses` 架构扩展定义创建一个_新_组并使用额外数据进行扩展。这是**组**资源的标准 ```POST```，其他 `graphlearn_courses` 复杂类型扩展在请求正文中定义。响应将不会返回任何数据扩展的镜像。我们需要使用 ```GET``` 操作按名称显式 ```$select``` 扩展。
 
 ##### <a name="request"></a>请求
@@ -227,9 +227,8 @@ Content-length: 326
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](extensibility_open_users.md)
-- 
-  [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [使用开放扩展向用户添加自定义数据（示例）](extensibility_open_users.md)
+- [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [添加并验证新 Office 365 的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension 资源类型](../api-reference/v1.0/resources/schemaextension.md)
 - [列出 schemaExtension](../api-reference/v1.0/api/schemaextension_list.md)

@@ -51,7 +51,7 @@
 
         pod install
 
-   将收到已将 pod 导入到项目的确认消息。有关详细信息，请参阅 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
+   将收到 Pod 已导入项目的确认消息。有关详细信息，请参阅 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 
 ## <a name="enable-keychain-sharing"></a>启用密钥链共享
@@ -73,16 +73,16 @@
 
 1. 打开“**starter-project**”文件夹中的 Xcode 项目工作区 (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**)，然后导航至“**身份验证**”文件夹并打开文件 **AuthenticationProvider.m**。将下列代码添加至该类。
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-             @param viewController The view controller to present the UI on.
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-             error should be non nil if there was no error, and should contain any error(s) that occurred.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,16 +94,16 @@
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                    else {
-                        NSLog(@"Authentication failed - %@", error.localizedDescription);
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                    }];
+                }];
             }
     
         }
 
-2. 接下来，将此方法添加至头文件。打开文件 **AuthenticationProvider.h**，然后将下列代码添加至此类。
+2. 接下来，将此方法添加至头文件。打开文件 AuthenticationProvider.h****，再将下列代码添加至此类。
 
         -(void) connectToGraphWithClientId:(NSString *)clientId
                             scopes:(NSArray *)scopes
@@ -133,7 +133,7 @@
 
 将项目配置为可以进行身份验证后，下一项任务则是使用 Microsoft Graph API 向用户发送邮件。默认情况下，将已登录用户视作收件人，但是可以将其更改为其他任何收件人。我们在此处要使用的代码位于“**控制器**”文件夹和 **SendMailViewController.m** 类中。将看到在此处展示了用于 UI 的其他代码，还有一个用来从 Microsoft Graph 服务检索用户个人资料信息的 Helper 方法。我们将着重介绍创建邮件并发送邮件的方法。
 
-1. 打开“控制器”文件夹中的 **SendMailViewController.m**，然后将下列 Helper 方法添加到类中：
+1. 打开“控制器”文件夹中的 SendMailViewController.m****，再将下列 Helper 方法添加至此类：
 
         // Create a sample test message to send to specified user account
         -(MSGraphMessage*) getSampleMessage{
@@ -164,7 +164,7 @@
         }
 
 
-2. 打开 **SendMailViewController.m。**将以下发送邮件方法添加到类中。  
+2. 打开 **SendMailViewController.m。**将以下发送邮件方法添加至此类。  
 
         //Send mail to the specified user in the email text field
         -(void) sendMail {   
@@ -183,7 +183,7 @@
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     
@@ -200,7 +200,7 @@
         NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
 注意：你会注意到为该项目配置了以下权限范围：**https://graph.microsoft.com/Mail.Send”、 “https://graph.microsoft.com/User.Read”、 “offline_access”**。该项目中所使用的服务调用，向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址）需要这些应用的权限以正常运行。
 
-2. 运行示例，点击“**连接**”，使用你的个人帐户、工作或学校帐户登录，并授予所请求的权限。
+2. 运行示例，点击“连接”****，使用个人帐户/工作或学校帐户登录，并授予所需的权限。
 
 3. 选择“**发送电子邮件**”按钮。在邮件发送后，按钮下方将显示成功消息。
 
@@ -210,5 +210,6 @@
 
 ## <a name="see-also"></a>另请参阅
 - [适用于 iOS 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

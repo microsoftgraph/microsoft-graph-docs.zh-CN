@@ -21,7 +21,7 @@
 - [Bower](https://bower.io)
 - [适用于 AngularJS 的 Microsoft Connect 示例](https://github.com/microsoftgraph/angular-connect-sample)。将使用此次演练示例文件中的 **starter-project** 文件夹。
 
-## <a name="register-the-application"></a>注册应用程序
+## <a name="register-the-application"></a>注册应用
 在 Microsoft 应用注册门户上注册一个应用。这会生成在 Visual Studio 中配置此应用要使用的应用程序 ID 和密码。
 
 1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
@@ -34,7 +34,7 @@
 
 4. 复制应用程序 ID。这是配置该应用要使用的应用唯一标识符。
 
-5. 在“**平台**”下，选择“**添加平台**” > “**Web**”。
+5. 在“平台”****下，依次选择“添加平台”**** > “Web”****。
 
 6. 请确保已选中“**允许隐式流**”复选框，输入 *http://localhost:8080* 作为重定向 URI。 
 
@@ -48,7 +48,7 @@
         npm install  
         bower install
     
-3. 在初学者项目文件的“public/scripts”****文件夹中，打开 config.js。
+3. 在“public/scripts”****文件夹的入门项目文件中，打开 config.js。
 4. 在“clientID”****字段中，将 **ENTER_YOUR_CLIENT_ID** 占位符值替换为刚复制的应用程序 ID。
 
 ## <a name="call-microsoft-graph-with-the-sdk"></a>使用 SDK 调用 Microsoft Graph
@@ -172,5 +172,7 @@
 
 
 ## <a name="see-also"></a>另请参阅
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试执行示例 REST 调用
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

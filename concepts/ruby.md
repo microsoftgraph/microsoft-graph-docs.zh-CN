@@ -20,10 +20,10 @@
 - 捆绑程序依存关系管理器
 - 用于 Ruby 的 Rack Web 服务器界面。
 - 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
-- 适用于 Ruby on Rails 的 Microsoft Graph Connect 初学者项目。下载 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。初学者项目位于“初学者”文件夹中。
+- 适用于 Ruby on Rails 的 Microsoft Graph Connect 初学者项目。下载 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。初学者项目位于“_初学者_”文件夹中。
 
 
-## <a name="register-the-application"></a>注册应用程序
+## <a name="register-the-application"></a>注册应用
 
 在 Microsoft 应用注册门户上注册一个应用。这将生成应用程序 ID 和机密，然后你将用它们配置要进行身份验证的应用。
 
@@ -54,7 +54,7 @@
 ## <a name="configure-the-project"></a>配置项目
 
 1. 下载或克隆 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。在自己选择的编辑器中打开“_初学者_”文件夹。
-1. 如果你还没有捆绑程序和机架，请使用以下命令进行安装。
+1. 如果还没有捆绑程序和机架，可以运行下列命令进行安装。
 
     ```
     gem install bundler rack
@@ -125,9 +125,9 @@
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
-接下来，我们需要指定发生身份验证后 OmniAuth 应在应用中重定向到的位置。取消评论以下路由。
+接下来，我们需要指定发生身份验证后 OmniAuth 应在应用中重定向到的位置。取消注释以下路由指令。
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
@@ -137,7 +137,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 
 接下来，我们将添加在用户成功登录后实际启动身份验证进程和检索访问令牌的代码。
 
-请查看 `app/views/pages/index.html.erb`，网站根目录视图。视图包括可允许用户登录的单个按钮。
+请查看 `app/views/pages/index.html.erb`，网站根目录视图。视图包括一个允许用户登录的按钮。
 
     <button class="ms-Button" onclick="window.location.href = '/login'">
         <span class="ms-Button-label"><%= t('connect_button') %></span>
@@ -150,7 +150,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 在 `app/controllers/pages_controller.rb` 中，用以下代码替换空的 `callback` 方法。
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
@@ -286,6 +286,9 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 
 ## <a name="see-also"></a>另请参阅
 - 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。
-- 在 GitHub 上了解我们的其他 [Microsoft Graph 示例](https://github.com/microsoftgraph)。
+- 在 GitHub 上浏览其他 [Microsoft Graph 示例](https://github.com/microsoftgraph)。
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 
 

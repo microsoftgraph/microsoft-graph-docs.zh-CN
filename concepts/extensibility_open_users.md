@@ -1,5 +1,5 @@
-# <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
-我们将引导你完成一个示例，演示如何使用*开放扩展*。 
+# <a name="add-custom-data-to-users-using-open-extensions-example"></a>使用开放扩展向用户添加自定义数据（示例）
+我们将通过一个示例逐步介绍如何使用*开放扩展*。 
 
 假设你正在构建一个可在许多不同客户端平台（例如桌面和移动设备）上使用的应用程序。你希望让用户配置自己的 UI 体验，这样无论用户使用何种设备登录你的应用都能获得相同的体验。这是对大多数应用的常见要求。 
 
@@ -8,7 +8,7 @@
 1. 添加代表有关用户的一些漫游配置文件信息的开放扩展。
 2. 查询用户并返回漫游配置文件。
 3. 更改用户的漫游配置文件信息（开放扩展值）。
-4. 删除用户漫游配置文件信息。
+4. 删除用户的漫游配置文件信息。
 
 >**注意：**本主题介绍如何在*用户*资源上添加、读取、更新和删除开放扩展。*administrativeUnit*、*contact*、*device*、*event*、*group*、*group event*、*group post* 和 *organizaton* 资源类型也支持这些方法  
 只需使用这些资源类型中的任意一种更新下面的示例请求即可。简便起见，将下面示例中所示的响应截断。 
@@ -95,7 +95,7 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="4-delete-a-users-roaming-profile"></a>4.删除用户漫游配置文件
+## <a name="4-delete-a-users-roaming-profile"></a>4.删除用户的漫游配置文件
 用户决定不再使用漫游配置文件，因此将其删除。这可以通过开放扩展值上的 ```DELETE``` 请求完成。
 
 ##### <a name="request"></a>请求
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](extensibility_overview.md)
-- [使用架构扩展向组添加自定义数据](extensibility_schema_groups.md)
+- [使用架构扩展向组添加自定义数据（示例）](extensibility_schema_groups.md)
 - [openTypeExtension 资源类型](../api-reference/v1.0/resources/opentypeextension.md)
 - [创建开放扩展](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [获取开放扩展](../api-reference/v1.0/api/opentypeextension_get.md)
