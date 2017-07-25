@@ -48,7 +48,7 @@
 composer create-project --prefer-dist laravel/laravel getstarted
 ```
  
-这样可以创建可用于此项目的 **getstarted** 文件夹。
+这将创建一个可用于此项目的 **getstarted** 文件夹。
 
 > 注意：还可以使用 [初学者项目](https://github.com/microsoftgraph/php-connect-rest-sample/tree/master/starter-project) 进行项目配置，这样就可以专注于此次演练的编码部分。
 
@@ -76,7 +76,7 @@ composer update
     <div class="title" onClick="window.location='/oauth'">Sign in to Microsoft</div>
     ```
     
-2. 在 **app** > **Http** > **routes.php** 文件上键入提示 `Illuminate\Http\Request` 类。在任何路由声明前面添加以下代码行。
+2. 在 **app** > **Http** > **routes.php** 文件上键入提示 `Illuminate\Http\Request` 类。在任何路由声明前面添加以下行。
     ```php
     use Illuminate\Http\Request;
     ```
@@ -120,7 +120,7 @@ if (!$request->has('code')) {
 }
 ```
     
-请注意，这一行包含访问令牌 `exit($accessToken->getToken());`。现在可以添加代码调用 Microsoft Graph。 
+请注意，在行 `exit($accessToken->getToken());` 中有一个访问令牌。现在可以添加代码调用 Microsoft Graph。 
 
 ## <a name="call-microsoft-graph-using-rest"></a>使用 REST 调用 Microsoft Graph
 可以使用 REST 调用 Microsoft Graph。用以下代码替换行 `exit($accessToken->getToken());`。将电子邮件地址插入标记为 **\<YOUR_EMAIL_ADDRESS\>** 的占位符中。
@@ -177,7 +177,5 @@ if($response.getStatusCode() === 201) {
 
 
 ## <a name="see-also"></a>另请参阅
-- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试执行示例 REST 调用
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+* [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

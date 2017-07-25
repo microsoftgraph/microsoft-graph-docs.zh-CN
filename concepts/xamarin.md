@@ -90,7 +90,7 @@ using System.Threading.Tasks;
 using Microsoft.Graph;
 ```
 
-``ComposeAndSendMailAsync`` 方法中的第一个任务是从 Microsoft Graph 中获取当前用户的照片。该行将调用无存根 `GetCurrentUserPhotoStreamAsync` 方法：
+``ComposeAndSendMailAsync`` 方法中的第一个任务是从 Microsoft Graph 中获取当前用户的照片。此行调用无存根 `GetCurrentUserPhotoStreamAsync` 方法：
 
 ```
             // Get current user photo
@@ -446,6 +446,5 @@ using Microsoft.Graph;
 
 ## <a name="see-also"></a>另请参阅
 - [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

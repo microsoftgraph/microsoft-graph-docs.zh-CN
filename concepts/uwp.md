@@ -411,7 +411,7 @@
 
 2. 使用个人帐户、工作或学校帐户登录，并授予所请求的权限。
 
-3. 选择“发送电子邮件”****按钮。发送邮件后，将在按钮下方显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
+3. 选择“发送电子邮件”****按钮。在发送邮件后，将在按钮下方显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
 
 ## <a name="next-steps"></a>后续步骤
 - 使用 [Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer) 试用 REST API。
@@ -419,7 +419,6 @@
 
 ## <a name="see-also"></a>另请参阅
 - [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
 

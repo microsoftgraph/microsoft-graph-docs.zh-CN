@@ -13,9 +13,9 @@
 
 本文假定使用 v2.0 注册，因此需要在 [应用程序注册门户](https://apps.dev.microsoft.com/) 上注册应用。请按照 [使用 Azure AD v2.0 终结点注册 Microsoft Graph 应用程序](../concepts/auth_register_app_v2.md) 中的说明注册应用。有关使用 Azure AD 终结点的详细信息，请参阅 [使用 Azure AD 进行身份验证](../concepts/auth_v2_user.md)。
 
-> 使用 v2.0 终结点时，需要遵循一些限制。若要判断是否适合你使用，请参阅 [是否应使用 v2.0 终结点？](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
+> 使用 v2.0 终结点时存在一些限制。若要判断是否适合你使用，请参阅 [是否应使用 v2.0 终结点？](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
-## <a name="authenticate-the-user-and-get-an-access-token"></a>验证用户并获取访问令牌
+## <a name="authenticate-the-user-and-get-an-access-token"></a>对用户进行身份验证并获取一个访问令牌
 
 本文所述的应用会实现 [授权代码授予流](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-code/)，以便从遵循标准 [OAuth 2.0 协议](http://tools.ietf.org/html/rfc6749) 的 Azure AD v2.0 终结点获取访问令牌。有关 Azure AD v2.0 终结点中支持的流的完整指南，请参阅 [v2.0 终结点类型](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/)。
 
@@ -44,7 +44,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
 | client_id | 注册应用生成的应用程序 ID。以便 Azure AD 知道哪个应用正在请求登录。 |
 | redirect_uri | 在用户已向应用授予同意后，Azure 会重定向到的位置。此值必须对应于注册应用时所使用的**重定向 URI** 值。 |
 | response_type | 应用预期的响应类型。此值是用于授权代码授予流的 `code`。 |
-| scope | 应用请求获取的 [Microsoft Graph 权限范围](./permissions_reference.md)列表（用空格分隔）。还可以指定 [单一登录](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) 的 [OpenId Connect 范围](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes)。  |
+| scope | 应用请求的 [Microsoft Graph 权限范围](./permissions_reference.md) 的列表（用空格分隔）。还可以指定 [单一登录](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/) 的 [OpenId Connect 范围](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes)。  |
 | state | 请求中包含的值，也将在令牌响应中返回，用于进行验证。 |
 
 例如，需要获取邮件读取访问权限的应用程序的请求 URL 可能如下所示。
@@ -136,6 +136,5 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 - 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用更多 REST API。
 
 ## <a name="see-also"></a>另请参阅
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

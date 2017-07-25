@@ -2,7 +2,7 @@
 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
 
 ## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：*Directory.ReadWrite.All、Directory.AccessAsUser.All*
+要执行此 API，需要以下**范围**之一：*User.ReadWrite.All；Directory.ReadWrite.All*
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

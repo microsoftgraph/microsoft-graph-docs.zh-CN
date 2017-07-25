@@ -46,7 +46,7 @@
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST 示例</a>
     </td>     
-    <td>
+     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK 示例</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>
@@ -114,7 +114,6 @@
 </table>
 
 ## <a name="see-also"></a>另请参阅
-- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试执行示例 REST 调用
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试使用示例 REST 调用。
+- [Azure AD 终结点文档](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0 终结点文档](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

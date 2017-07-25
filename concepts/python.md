@@ -53,7 +53,7 @@
 5. 在 Web 浏览器中，转到 ```http://localhost:5000/```。
 
 <!--<a name="authCode"></a>-->
-## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在回复 URL 页面中接收授权代码
+## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在答复 URL 页面中接收授权代码
 
 在用户登录后，浏览器会重定向到答复 URL（即 [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py) 中的 ```login/authorized``` 路由），并在响应中提供访问令牌。此示例将访问令牌存储为会话变量。
 
@@ -87,7 +87,7 @@ def authorized():
 ```
 
 <!--<a name="request"></a>-->
-## <a name="use-the-access-token-in-a-request-to-the-microsoft-graph-api"></a>在 Microsoft Graph API 请求中使用访问令牌
+## <a name="use-the-access-token-in-a-request-to-the-microsoft-graph-api"></a>在对 Microsoft Graph API 提出的请求中使用访问令牌
 
 使用访问令牌，您的应用可以对 Microsoft Graph API 提出身份验证请求。您的应用必须将访问令牌附加到各个请求的**授权**头中。
 
@@ -103,12 +103,6 @@ Connect 示例使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``
     }
 ```
 
-> **注意**：请求还必须发送 **Content-Type** 头，其中包含 Graph API 接受的值（例如，`application/json`）。
+> **注意**：请求还必须发送包含 Graph API 接受的值的 **Content-Type** 标头（例如，`application/json`）。
 
 Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。请查看 API 参考，了解还可以使用 Microsoft Graph 完成什么任务。
-
-## <a name="see-also"></a>另请参阅
-- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试执行示例 REST 调用
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
