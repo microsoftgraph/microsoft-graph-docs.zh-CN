@@ -4,14 +4,15 @@
 
 附件可以是下列类型之一：
 
-* 文件（[fileAttachment](../resources/fileattachment.md) 资源）
-* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
-* 文件链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）
+* 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
+* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。可以使用 `$expand` 来进一步获取该项的属性。请参阅以下[示例](#request-2)。
+* 文件链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）。
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
+
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+若要执行此 API，必须有以下**范围**之一：
 
 * 如果访问邮件中的附件：*Mail.Read*
 * 如果访问事件中的附件：*Calendars.Read*
@@ -72,7 +73,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [attachment](../resources/attachment.md) 对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 **attachment** 对象。返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
@@ -113,17 +114,17 @@ Content-length: 199
 ```
 ## <a name="example-item-attachment"></a>示例（项目附件）
 
-##### <a name="request"></a>请求
-下面的示例展示了用于获取事件的项附件的请求。
+##### <a name="request-1"></a>请求 1
+第一个示例演示如何在邮件上获取项目附件。返回 **itemAttachment** 的属性。
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response"></a>响应
+##### <a name="response-1"></a>响应 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,15 +135,100 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false
 }
 ```
+
+##### <a name="request-2"></a>请求 2
+下面的示例演示如何使用 `$expand` 来获取附加到该邮件的项目的属性。在此示例中，该项目是一封邮件；还会返回该附加邮件的属性。
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+```
+
+##### <a name="response-2"></a>响应 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false,
+  "item@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+  "item":{
+    "@odata.type":"#microsoft.graph.message",
+    "id":"",
+    "createdDateTime":"2017-07-21T00:20:41Z",
+    "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+    "receivedDateTime":"2017-07-21T00:19:55Z",
+    "sentDateTime":"2017-07-21T00:19:52Z",
+    "hasAttachments":false,
+    "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+    "subject":"Reminder - please bring laptop",
+    "importance":"normal",
+    "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "body":{
+      "contentType":"html",
+      "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+    },
+    "sender":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "from":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "toRecipients":[
+      {
+        "emailAddress":{
+          "name":"Alex Wilbur",
+          "address":"AlexW@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "ccRecipients":[
+      {
+        "emailAddress":{
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+  }
+}
+```
+
 
 
 ## <a name="example-reference-attachment"></a>示例（参考附件）

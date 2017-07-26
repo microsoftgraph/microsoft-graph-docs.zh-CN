@@ -17,31 +17,13 @@
 
 若要开始，将需要以下各项： 
 
-- 一个 [Microsoft 帐户](https://www.outlook.com/)或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
 - Android Studio 2.0 或更高版本
 
 
-## <a name="register-the-application"></a>注册应用程序
-在 Microsoft 应用注册门户上注册一个应用。这会生成用于配置此应用的应用程序 ID 和密码。
+## <a name="configure-a-new-project"></a>配置新项目
 
-1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
-
-2. 选择“**添加应用**”。
-
-3. 输入应用的名称，并选择“**创建应用程序**”。 
-    
-    将显示注册页，其中列出应用的属性。
-
-4. 复制应用程序 ID。这是应用的唯一标识符。 
-
-5. 选择“**添加平台**”和“**移动应用程序**”。
-
-    > **注意：**应用程序注册门户提供值为 *urn: ietf:wg:oauth:2.0:oob* 的重定向 URI。但是，你将使用默认的重定向 URI 值 *https://login.microsoftonline.com/common/oauth2/nativeclient*。
-
-6. 选择“**保存**”。
-
-
-## <a name="configure-the-project"></a>配置项目
+如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，请跳过此步骤。 
 
 在 Android Studio 中开始一个新项目。可以保留大多数向导的默认值，只需确保选择下列选项：
 
@@ -51,113 +33,292 @@
  
 这为你提供一个带有活动和按钮的 Android 项目，可以用来对用户进行身份验证。
 
-> 注意：还可以使用 [初学者项目](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project) 进行项目配置，这样就可以专注于此次演练的编码部分。
+
+## <a name="register-the-application"></a>注册应用程序
+
+需要在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)中注册应用，无论是已下载连接示例还是创建了新项目。
+
+在 Microsoft 应用注册门户上注册一个应用。这会生成用于配置此应用的应用 ID。
+
+1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
+
+2. 选择“添加应用”****。
+
+>提示：如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)且正在为其创建注册，请在关闭“创建”****按钮前先取消选中“引导设置”****。
+
+3. 输入应用的名称，并选择“创建”****。 
+    
+    对于“引导设置”****流：
+ 
+    a.选择“移动和桌面应用”****来定义要创建的应用的类型。
+
+    b.选择“Android”****来定义要使用的移动技术。
+
+    c.查看介绍性主题，完成后，单击页面底部的“设置”****按钮。
+
+    d.根据有关“设置”****步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
+
+    e.根据有关“使用”****步骤的指示，将 MSAL 逻辑添加到新项目中
+
+    f.在“配置”****页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
+
+    对于非引导流：
+
+    将显示注册页，其中列出应用的属性。
+
+    a.复制应用程序 ID。这是应用的唯一标识符。 
+
+    b.选择“添加平台”****和“本机应用程序”****。
+
+    > **注意：**应用程序注册门户提供值为 *msalYOUR NEW APP ID://auth* 的重定向 URI。不要使用内置重定向 URI。[Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现需要此重定向 URI 的 MSAL 身份验证库。如果使用[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，则必须使用内置重定向 URI。
+
+    对于引导设置流和非引导流
+
+    a.添加委派权限。将需要**配置文件**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
+   
+    b.选择“保存”****。
+
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>对用户进行身份验证并获取一个访问令牌
-可以使用 OAuth 库来简化身份验证流程。[OpenID](http://openid.net) 提供了 [适用于 Android 的 AppAuth](https://github.com/openid/AppAuth-Android)，它是可以在此项目中使用的一个库。
+
+> **注意：**如果已按照应用程序注册门户中“引导设置”****流中的说明创建一个新的应用程序，则可以跳过这些步骤。转到[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk) 以了解有关 Graph API 的详细信息。
+
+让我们展示一下 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)的整个过程以了解我们已经添加的 MSAL 和 Microsoft Graph 代码。
 
 ### <a name="add-the-dependency-to-appbuildgradle"></a>向 app/build.gradle 添加依赖项
 
-在应用模块中打开 `build.gradle` 文件，并包括以下依赖项：
+在应用模块中打开 `build.gradle` 文件，并查找以下依赖项：
 
 ```gradle
-compile 'net.openid:appauth:0.3.0'
+    compile ('com.microsoft.identity.client:msal:0.1.+') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile 'com.android.volley:volley:1.0.0'
+
 ```
 
-### <a name="start-the-authentication-flow"></a>开始身份验证流
+### <a name="start-the-authentication-flow"></a>启动身份验证流
 
-1. 在 **onCreate** 方法中打开 **MainActivity** 文件并声明一个 **AuthorizationService** 对象。
-    ```java
-    final AuthorizationService authorizationService =
-        new AuthorizationService(this);
-    ```
-    
-2. 找到 *FloatingActionButton* 单击事件的事件处理程序。用以下代码替换 **onClick** 方法。将应用中的**应用程序 ID** 插入到标记为 **\<YOUR_APPLICATION_ID\>** 的占位符中。
-    ```java
+1. 打开 **AuthenticationManager** 文件并查找 **PublicClientApplication** 对象声明，然后查找 **getInstance** 方法中的站内实例。
+
+   ```java
+    private static PublicClientApplication mPublicClientApplication;
+    ....
+
+    public static synchronized AuthenticationManager getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new AuthenticationManager();
+            if (mPublicClientApplication == null) {
+                mPublicClientApplication = new PublicClientApplication(Connect.getInstance());
+            }
+        }
+        return INSTANCE;
+    }
+
+   ```
+
+
+2. 在 **ConnectActivity** 类中，找到 **mConnectButton** 的 click 事件的事件处理程序。查找 **onClick** 方法并审查相关代码。
+  
+    **connect** 方法支持个人身份信息 (PII) 日志记录，获取示例帮助程序类 **AuthenticationManager** 的实例，并获取 MSAL 平台对象用户集合。如果没有用户，会对新用户执行 Azure AD 身份验证和授权流。否则，以静默方式获取身份验证令牌。
+
+   ```java
     @Override
     public void onClick(View view) {
-        Uri authorizationEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/authorize");
-        Uri tokenEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/token");
-        AuthorizationServiceConfiguration config =
-            new AuthorizationServiceConfiguration(
-                    authorizationEndpoint,
-                    tokenEndpoint,null);
-
-        List<String> scopes = new ArrayList<>(
-            Arrays.asList("openid mail.send".split(" ")));
-
-        AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
-            config,
-            "<YOUR_APPLICATION_ID>",
-            ResponseTypeValues.CODE,
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/nativeclient"))
-            .setScopes(scopes)
-            .build();
-
-        Intent intent = new Intent(view.getContext(), MainActivity.class);
-
-        PendingIntent redirectIntent =
-            PendingIntent.getActivity(
-                    view.getContext(),
-                    authorizationRequest.hashCode(),
-                    intent, 0);
-
-        authorizationService.performAuthorizationRequest(
-            authorizationRequest,
-            redirectIntent);
+        ....
+        connect();
     }
-    ```
+
+        private void connect() {
+
+        if (mEnablePiiLogging) {
+            Logger.getInstance().setEnablePII(true);
+        } else {
+            Logger.getInstance().setEnablePII(false);
+        }
+
+        AuthenticationManager mgr = AuthenticationManager.getInstance();
+
+        List<User> users = null;
+
+        try {
+            users = mgr.getPublicClient().getUsers();
+
+            if (users != null && users.size() == 1) {
+                mUser = users.get(0);
+                mgr.callAcquireTokenSilent(mUser, true, this);
+            } else {
+                mgr.callAcquireToken(
+                        this,
+                        this);
+            }
+        } catch (MsalClientException e) {
+            Log.d(TAG, "MSAL Exception Generated while getting users: " + e.toString());
+
+        } catch (IndexOutOfBoundsException e) {
+            Log.d(TAG, "User at this position does not exist: " + e.toString());
+        }
+    }
+
+   ```
+3. 查找处理当用户关闭身份验证对话框时由 Azure AD 生成的 Azure AD 重定向响应的事件处理程序。该处理程序位于 **ConnectActivity** 类中。
+
+   ```java
+       /**
+     * Handles redirect response from https://login.microsoftonline.com/common and
+     * notifies the MSAL library that the user has completed the authentication
+     * dialog
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (AuthenticationManager
+                .getInstance()
+                .getPublicClient() != null) {
+            AuthenticationManager
+                    .getInstance()
+                    .getPublicClient()
+                    .handleInteractiveRequestRedirect(requestCode, resultCode, data);
+        }
+    }
+
+   ```    
+3. 查找缓存用于 Graph API 调用的身份验证令牌的身份验证回调方法。
+
+ 
+
+```java
+    /* Callback used for interactive request.  If succeeds we use the access
+         * token to call the Microsoft Graph. Does not check cache
+         */
+    private AuthenticationCallback getAuthInteractiveCallback() {
+        return new AuthenticationCallback() {
+            @Override
+            public void onSuccess(AuthenticationResult authenticationResult) {
+            /* Successfully got a token, call graph now */
+                Log.d(TAG, "Successfully authenticated");
+                Log.d(TAG, "ID Token: " + authenticationResult.getIdToken());
+
+            /* Store the auth result */
+                mAuthResult = authenticationResult;
+                if (mActivityCallback != null)
+                    mActivityCallback.onSuccess(mAuthResult);
+            }
+
+            @Override
+            public void onError(MsalException exception) {
+            /* Failed to acquireToken */
+                Log.d(TAG, "Authentication failed: " + exception.toString());
+                if (mActivityCallback != null)
+                    mActivityCallback.onError(exception);
+            }
+
+            @Override
+            public void onCancel() {
+            /* User canceled the authentication */
+                Log.d(TAG, "User cancelled login.");
+            }
+        };
+    }
+
+```
     
-此时，应具有带按钮的 Android 应用。如果按下该按钮，应用会使用设备浏览器显示身份验证页。下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
+连接示例应用在主活动上具有“连接”****按钮。如果按下该按钮，首次使用时，应用会使用设备浏览器显示身份验证页。下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>用授权代码交换访问令牌
 
 需要让应用准备就绪，以处理授权服务器的响应，其中包含用于交换访问令牌的代码。
 
-1. 需要告诉 Android 系统，**MainActivity** 可以处理对 *https://login.microsoftonline.com/common/oauth2/nativeclient* 的请求。若要执行此操作，请打开 **AndroidManifest** 文件并将以下子集添加到 MainActivity 的 **intent-filter** 元素中。
+1. 我们需要告诉 Android 系统，Connect 应用可以处理应用程序注册中所配置的重定向 URL 的请求。若要执行此操作，请打开 **AndroidManifest** 文件并将以下子项添加到项目 **\<application/\>** 元素中。
     ```xml
-    <action android:name="android.intent.action.VIEW"/>
-    <category android:name="android.intent.category.DEFAULT"/>
-    <category android:name="android.intent.category.BROWSABLE"/>
-    <data android:scheme="https"/>
-    <data android:host="login.microsoftonline.com"/>
-    <data android:path="/common/oauth2/nativeclient"/>
+        <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
+        <application ...>
+            ...
+            <activity
+                android:name="com.microsoft.identity.client.BrowserTabActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
+                        android:host="auth" />
+                </intent-filter>
+            </activity>
+            <meta-data
+                android:name="https://login.microsoftonline.com/common"
+                android:value="authority string"/>
+            <meta-data
+                android:name="com.microsoft.identity.client.ClientId"
+                android:value="ENTER_YOUR_CLIENT_ID"/>
+        </application>
     ```
+2. **MSAL** 库需要访问由注册门户分配的应用程序 ID。**MSAL 库将应用程序 ID 称为“客户端 ID”**。从传入库构造函数的应用程序上下文获取应用程序 ID（客户端 ID）。 
 
-2. 授权服务器发送响应时，将调用活动。可以使用授权服务器的相应请求一个访问令牌。返回 **MainActivity**，并将以下代码追加到 **onCreate** 方法中。
-    ```java
-    Bundle extras = getIntent().getExtras();
-    if (extras != null) {
-        AuthorizationResponse authorizationResponse = AuthorizationResponse.fromIntent(getIntent());
-        AuthorizationException authorizationException = AuthorizationException.fromIntent(getIntent());
-        final AuthState authState = new AuthState(authorizationResponse, authorizationException);
+   >注意：还可以通过将字符串参数传递给构造函数来在运行时提供客户端 ID。 
 
-        if (authorizationResponse != null) {
-            HashMap<String, String> additionalParams = new HashMap<>();
-            TokenRequest tokenRequest = authorizationResponse.createTokenExchangeRequest(additionalParams);
+3. 授权服务器发送响应时，将调用活动。使用授权服务器的响应请求一个访问令牌。转到 **AuthenticationManager** 并在类中查找以下代码。
 
-            authorizationService.performTokenRequest(
-                tokenRequest,
-                new AuthorizationService.TokenResponseCallback() {
-                    @Override
-                    public void onTokenRequestCompleted(
-                            @Nullable TokenResponse tokenResponse,
-                            @Nullable AuthorizationException ex) {
-                        authState.update(tokenResponse, ex);
-                        if (tokenResponse != null) {
-                            String accessToken = tokenResponse.accessToken;
-                        }
-                    }
-                });
-        } else {
-            Log.i("MainActivity", "Authorization failed: " + authorizationException);
-        }
+   ```java
+    /**
+     * Authenticates the user and lets the user authorize the app for the requested permissions.
+     * An authentication token is returned via the getAuthInteractiveCalback method
+     * @param activity
+     * @param authenticationCallback
+     */
+    public void connect(Activity activity, final MSALAuthenticationCallback authenticationCallback){
+        mActivityCallback = authenticationCallback;
+        mPublicClientApplication.acquireToken(
+                activity, Constants.SCOPES, getAuthInteractiveCallback());
     }
-    ```
 
-请注意，在行 `String accessToken = tokenResponse.accessToken;` 中有一个访问令牌。现在可以添加代码调用 Microsoft Graph。 
+
+     /* Callback used for interactive request.  If succeeds we use the access
+         * token to call the Microsoft Graph. Does not check cache
+         */
+    private AuthenticationCallback getAuthInteractiveCallback() {
+        return new AuthenticationCallback() {
+            @Override
+            public void onSuccess(AuthenticationResult authenticationResult) {
+            /* Successfully got a token, call graph now */
+                Log.d(TAG, "Successfully authenticated");
+                Log.d(TAG, "ID Token: " + authenticationResult.getIdToken());
+
+            /* Store the auth result */
+                mAuthResult = authenticationResult;
+                if (mActivityCallback != null)
+                    mActivityCallback.onSuccess(mAuthResult);
+            }
+
+            @Override
+            public void onError(MsalException exception) {
+            /* Failed to acquireToken */
+                Log.d(TAG, "Authentication failed: " + exception.toString());
+                if (mActivityCallback != null)
+                    mActivityCallback.onError(exception);
+            }
+
+            @Override
+            public void onCancel() {
+            /* User canceled the authentication */
+                Log.d(TAG, "User cancelled login.");
+            }
+        };
+    }
+
+     /**
+     * Returns the access token obtained in authentication
+     *
+     * @return mAccessToken
+     */
+    public String getAccessToken() throws AuthenticatorException, IOException, OperationCanceledException {
+        return  mAuthResult.getAccessToken();
+    }
+
+   ```
+
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 可以 [使用 Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) 或 [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) 调用 Microsoft Graph。
@@ -168,58 +329,141 @@ compile 'net.openid:appauth:0.3.0'
 1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     ```
 
 2. 将依赖项添加到 Microsoft Graph SDK 和 GSON。
-    ```gradle
-    compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
+   ```gradle
+    compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
-    ```
-   
-3. 用以下代码替换行`String accessToken = tokenResponse.accessToken;`。将电子邮件地址插入标记为 **\<YOUR_EMAIL_ADDRESS\>** 的占位符中。
-    ```java
-    final String accessToken = tokenResponse.accessToken;
-    final IClientConfig clientConfig = 
-            DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
-        @Override
-        public void authenticateRequest(IHttpRequest request) {
-            request.addHeader("Authorization", "Bearer " + accessToken);
+   ```
+
+
+3. 使用 **uthenticateRequest** 帮助程序方法将身份验证令牌添加到新请求。此方法从 Microsoft Graph 身份验证 **IAuthenticationProvider** 接口实现同样的方法
+    
+   ```java
+    /**
+     * Appends an access token obtained from the {@link AuthenticationManager} class to the
+     * Authorization header of the request.
+     * @param request
+     */
+    @Override
+    public void authenticateRequest(IHttpRequest request)  {
+        try {
+            request.addHeader("Authorization", "Bearer "
+                    + AuthenticationManager.getInstance()
+                    .getAccessToken());
+            // This header has been added to identify this sample in the Microsoft Graph service.
+            // If you're using this code for your project please remove the following line.
+            request.addHeader("SampleID", "android-java-connect-sample");
+        } catch (AuthenticatorException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }  catch (OperationCanceledException e) {
+            e.printStackTrace();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
         }
-    });
+    }
+   ```
 
-    final IGraphServiceClient graphServiceClient = new GraphServiceClient
-        .Builder()
-        .fromConfig(clientConfig)
-        .buildClient();
+4. 创建草稿电子邮件，并使用以下帮助程序方法从 **GraphServiceController** 帮助程序类发送此电子邮件。
 
-    final Message message = new Message();
-    EmailAddress emailAddress = new EmailAddress();
-    emailAddress.address = "<YOUR_EMAIL_ADDRESS>";
-    Recipient recipient = new Recipient();
-    recipient.emailAddress = emailAddress;
-    message.toRecipients = Collections.singletonList(recipient);
-    ItemBody itemBody = new ItemBody();
-    itemBody.content = "This is the email body";
-    itemBody.contentType = BodyType.text;
-    message.body = itemBody;
-    message.subject = "Sent using the Microsoft Graph SDK";
+   ```java
+    /**
+     * Creates a draft email message using the Microsoft Graph API on Office 365. The mail is sent
+     * from the address of the signed in user.
+     *
+     * @param senderPreferredName The mail senders principal user name (email addr)
+     * @param emailAddress        The recipient email address.
+     * @param subject             The subject to use in the mail message.
+     * @param body                The body of the message.
+     * @param callback            The callback method to invoke on completion of the POST request
+     */
+    public void createDraftMail(
+            final String senderPreferredName,
+            final String emailAddress,
+            final String subject,
+            final String body,
+            ICallback<Message> callback
+    ) {
+        try {
+            // create the email message
+            Message message = createMessage(subject, body, emailAddress);
+            mGraphServiceClient
+                    .getMe()
+                    .getMessages()
+                    .buildRequest()
+                    .post(message, callback);
 
-    AsyncTask.execute(new Runnable() {
-        @Override
-        public void run() {
-            graphServiceClient
-                .getMe()
-                .getSendMail(message, false)
-                .buildRequest()
-                .post();
+        } catch (Exception ex) {
+            showException(ex, "exception on send mail","Send mail failed", "The send mail method failed");
         }
-    });
-    ```
+    }
 
+        /**
+     * Creates a new Message object 
+     */
+    Message createMessage(
+            String subject,
+            String body,
+            String address) {
+
+        if (address == null || address.isEmpty()) {
+            throw new IllegalArgumentException("The address parameter can't be null or empty.");
+        } else {
+            // perform a simple validation of the email address
+            String addressParts[] = address.split("@");
+            if (addressParts.length != 2 || addressParts[0].length() == 0 || addressParts[1].indexOf('.') == -1) {
+                throw new IllegalArgumentException(
+                        String.format("The address parameter must be a valid email address {0}", address)
+                );
+            }
+        }
+        Message message = new Message();
+        EmailAddress emailAddress = new EmailAddress();
+        emailAddress.address = address;
+        Recipient recipient = new Recipient();
+        recipient.emailAddress = emailAddress;
+        message.toRecipients = Collections.singletonList(recipient);
+        ItemBody itemBody = new ItemBody();
+        itemBody.content = body;
+        itemBody.contentType = BodyType.html;
+        message.body = itemBody;
+        message.subject = subject;
+        return message;
+    }
+    /**
+     * Sends a draft message to the specified recipients
+     *
+     * @param messageId String. The id of the message to send
+     * @param callback
+     */
+    public void sendDraftMessage(String messageId,
+                                 ICallback<Void> callback) {
+        try {
+
+            mGraphServiceClient
+                    .getMe()
+                    .getMessages(messageId)
+                    .getSend()
+                    .buildRequest()
+                    .post(callback);
+
+        } catch (Exception ex) {
+            showException(ex, "exception on send draft message ","Send draft mail failed", "The send draft mail method failed");
+        }
+    }
+
+   ```
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>使用 Microsoft Graph REST API 调用 Microsoft Graph
 [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
 
-1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
+1. 将 Internet 权限添加到应用。打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
@@ -231,7 +475,7 @@ compile 'net.openid:appauth:0.3.0'
     ```
    
 3. 用以下代码替换行`String accessToken = tokenResponse.accessToken;`。将电子邮件地址插入标记为 **\<YOUR_EMAIL_ADDRESS\>** 的占位符中。
-    ```java
+   ```java
     final String accessToken = tokenResponse.accessToken;
 
     final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
@@ -289,7 +533,7 @@ compile 'net.openid:appauth:0.3.0'
             queue.add(stringRequest);
         }
     });
-    ```
+   ```
 
 ## <a name="run-the-app"></a>运行应用
 可以尝试运行 Android 应用。
@@ -309,6 +553,7 @@ compile 'net.openid:appauth:0.3.0'
 
 
 ## <a name="see-also"></a>另请参阅
-* [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
-* [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

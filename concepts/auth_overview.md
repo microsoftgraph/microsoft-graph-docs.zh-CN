@@ -68,18 +68,18 @@ OpenID Connect 扩展 OAuth 2.0 以提供身份层。使用 OpenID Connect，除
 - **Web 应用**：在服务器上运行且通过用户代理与已登录用户交互的应用通常是 Web 浏览器。在服务器上处理大多数表示层，对 Microsoft Graph 的调用则来自代表用户的服务器端。
 - **单页应用 (SPA)**：Web 应用具有丰富的用户体验，可通过浏览器中的客户端脚本处理大部分表示层。对 Microsoft Graph 的调用来自使用 AJAX 这类技术和 Angular.js 这类框架的客户端脚本。代表用户进行调用。
 - **后台服务/守护程序**：在没有用户存在的情况下在服务器上运行并以自已的身份调用 Microsoft Graph 的后台服务和守护程序。
-- **Web API**：客户端应用调用 Web API（受 Azure AD 保护），然后 Web API 调用 Microsoft Graph，所有这些操作都以用户身份执行。受到 Azure AD 终结点支持。对于 Azure AD v2.0 终结点，只有当客户端和 Web API 具有相同的应用程序 ID  时才受支持；例如，调用 Web API 后端的本机应用。 
+- **Web API**：客户端应用调用 Web API（受 Azure AD 保护），然后 Web API 调用 Microsoft Graph，所有这些操作都以用户身份执行。受到 Azure AD 终结点支持。对于 Azure AD v2.0 终结点，只有当客户端和 Web API 具有相同的应用程序 ID 时才受支持；例如，调用 Web API 后端的本机应用。 
 
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>如何让我的应用与 Azure AD 和 Microsoft Graph 对话？
 在你的应用可以从 Azure AD 获取令牌前，必须进行注册。对于 Azure AD v2.0 终结点，请使用 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。对于 Azure AD 终结点，请使用 [Azure 门户](https://portal.azure.com/)。注册会将你的应用和 Azure AD 相集成并建立其用于获取令牌的坐标和标识符。以下为：
 
-- **应用程序 Id**：Azure AD 分配的唯一标识符。 
+- **应用程序 ID**：Azure AD 分配的唯一标识符。 
 - **重定向 URI/URL**：应用将接收来自 Azure AD 的响应的一个或多个终结点。（对于本机和移动应用，这是由 Azure AD 分配的 URL。）
 - **应用程序密码**：应用用于使用 Azure AD 进行身份验证的密码或公钥/私钥对。（对于本机或移动应用是不需要的。）
 
 对于使用 Azure AD 终结点的应用，你还要预配置应用在注册期间需要的 Microsoft Graph 权限。对于使用 Azure AD v2.0 终结点的应用，你可能需要，也可能不需要预配置权限。 
 
-在注册期间配置的属性可在线路上使用。例如，在以下令牌请求中：*client_id* 是*应用程序 Id*，*redirect_uri* 是应用注册的*重定向 URL* 之一，*client_secret* 则是*应用程序密码*。 
+在注册期间配置的属性可在线路上使用。例如，在以下令牌请求中：*client_id* 是*应用程序 ID*，*redirect_uri* 是应用注册的*重定向 URL* 之一，*client_secret* 则是*应用程序密码*。 
 
 ```
 // Line breaks for legibility only
@@ -125,7 +125,7 @@ Azure AD 和 Azure AD v2.0 之间的主要区别在于：
 
 使用 Azure AD v2.0 还有某些其他优势：例如：
 
-* 你的应用可在多个平台使用单一应用程序 ID。这简化了开发人员和管理员的应用管理。
+* 应用可在多个平台使用单一应用程序 ID。这简化了开发人员和管理员的应用管理。
 * [支持动态和增量同意](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)。通过此功能，你的应用可以在运行时请求额外的权限，将对用户同意的请求与所需功能配对。这为用户提供的体验要比首次登录时不得不同意一个很长的权限列表的体验舒适得多。  
 
 因为 Azure AD v2.0 比 Azure AD 更新，而且仍在不断添加功能，需要你在做决定时考虑到 v2.0 终结点的某些限制条件。例如：

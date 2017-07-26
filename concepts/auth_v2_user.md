@@ -1,4 +1,4 @@
-# <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问
+# <a name="get-access-on-behalf-of-a-user"></a>代表用户访问
 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
@@ -11,7 +11,7 @@
 4. 使用访问令牌调用 Microsoft Graph。
 5. 使用刷新令牌获取新的访问令牌。
 
-## <a name="1-register-your-app"></a>1.注册你的应用程序
+## <a name="1-register-your-app"></a>1.注册应用
 若要使用 Azure v2.0 终结点，必须在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。 
 
 以下屏幕截图显示 Web 应用注册示例。![使用密码和隐式授予进行 Web 应用注册。](./images/v2-web-registration.png)
@@ -19,7 +19,7 @@
 若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
 
 - 应用注册门户分配的应用程序 ID。
-- 应用密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。 
+- 应用程序密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。 
 - 可以让应用接收来自 Azure AD 的响应的重定向 URL。
 
 有关如何使用 Microsoft 应用注册门户配置应用的步骤，请参阅[注册你的应用](./auth_register_app_v2.md)。
@@ -169,7 +169,7 @@ Content-Length: 407
 }
 ```
 
-## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5.使用此刷新令牌获取新的访问令牌。
+## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5.使用此刷新令牌获取新的访问令牌
 
 访问令牌有效期非常短暂，在过期后继续访问资源，必须进行刷新。你可以通过向 `/token` 终结点提交其他 `POST` 请求执行此操作，这时提交的是 `refresh_token` 而非 `code`。
 
@@ -224,7 +224,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 - 本机/移动应用 
 - Web 应用
 - 单页应用 (SPA)
-- 后端 Web API：例如，在如本机应用这样的客户端应用场景中，实现 Web API 后端中的功能。使用 Azure AD v2.0 终结点，客户端应用和后端 Web API 必须都具有相同的应用程序 Id。 
+- 后端 Web API：例如，在如本机应用这样的客户端应用场景中，实现 Web API 后端中的功能。使用 Azure AD v2.0 终结点，客户端应用和后端 Web API 必须都具有相同的应用程序 ID。 
 
 有关使用 Azure AD v2.0 终结点的受支持的应用类型的详细信息，请参阅[应用类型](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)。
 
@@ -240,8 +240,8 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 Azure AD 终结点和 Azure AD v2.0 终结点的在使用中存在若干区别。例如：
 
 - 使用 [Azure 门户](https://portal.azure.com)配置应用。有关使用 Azure 门户配置应用的详细信息，请参阅[将应用程序与 Azure Active Directory 相集成：添加应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
-- 你的应用将需要为每个平台提供不同的应用程序 ID（客户端 ID）。
-- 如果你的应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
+- 应用将需要每个平台具有不同的应用程序 ID（客户端 ID）。
+- 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
 - 使用 Azure AD 终结点时，应用需要的所有权限必须由开发人员进行配置。Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。 
 - Azure AD 终结点不会公开管理员同意的特定终结点。反之，应用会使用授权请求中的 `prompt=admin_consent` 参数，为组织获取管理员同意。有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
