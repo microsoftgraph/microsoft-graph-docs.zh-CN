@@ -46,7 +46,7 @@
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST 示例</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK 示例</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST 示例</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK 示例</a>或 <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST 示例</a>
     </td> 
   </tr>
   <tr>

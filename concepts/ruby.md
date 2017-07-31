@@ -125,7 +125,7 @@
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 接下来，我们需要指定发生身份验证后 OmniAuth 应在应用中重定向到的位置。取消评论以下路由。
 
@@ -150,7 +150,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 在 `app/controllers/pages_controller.rb` 中，用以下代码替换空的 `callback` 方法。
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']

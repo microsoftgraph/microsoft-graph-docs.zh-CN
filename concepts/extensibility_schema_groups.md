@@ -228,8 +228,7 @@ Content-length: 326
 
 - [使用扩展向资源添加自定义数据](extensibility_overview.md)
 - [使用开放扩展向用户添加自定义数据（预览）](extensibility_open_users.md)
-- 
-  [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [添加并验证新 Office 365 的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension 资源类型](../api-reference/v1.0/resources/schemaextension.md)
 - [列出 schemaExtension](../api-reference/v1.0/api/schemaextension_list.md)

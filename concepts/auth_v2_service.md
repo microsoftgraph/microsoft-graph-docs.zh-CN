@@ -1,4 +1,4 @@
-# <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
+# <a name="get-access-without-a-user"></a>无用户访问
 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。在许多情况下，这些是在的服务器上运行的后台服务或守护程序，不存在登录用户。此类应用的一个示例是电子邮件存档服务，它可以在夜间保持清醒状态并运行。在某些情况下，具有登录用户的应用可能还需要以他们自己的标识调用 Microsoft Graph。例如，应用可能需要使用以下特定功能，该功能要求在组织中具有比登录用户的提升权限更多的权限。  
 
 使用它们自己的标识调用 Microsoft Graph 的应用使用 OAuth 2.0 客户端凭据授予流从 Azure AD 获取访问令牌。在本主题中，我们将展示配置服务和使用 OAuth 客户端凭据授予流获取访问令牌的基本步骤。 
@@ -12,7 +12,7 @@
 4. 获取访问令牌。
 5. 使用访问令牌调用 Microsoft Graph。
 
-## <a name="1-register-your-app"></a>1.注册应用
+## <a name="1-register-your-app"></a>1.注册你的应用程序
 若要使用 Azure v2.0 终结点进行身份验证，必须先在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。 
 
 下面的屏幕快照显示了已针对后台服务进行配置的 Web 应用注册。![服务应用注册](./images/v2-service-registration.png)
@@ -54,7 +54,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | 参数 | 条件 | 说明 |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | 租户 |必需 |需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。如果你不了解用户授予哪个租户，并想让用户使用任意租户登录，请使用 `common`。 |
 | client_id |必需 |[应用程序注册门户](https://apps.dev.microsoft.com/)分配给你的应用的应用程序 ID。 |
 | redirect_uri |必需 |要向其发送响应供应用处理的重定向 URI。它必须完全匹配在门户中注册的重定向 URI 之一，但它必须采用 URL 编码，且可以拥有其他路径段。 |
@@ -73,7 +73,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 ```
 
 | 参数 | 说明 |
-| --- | --- |
+|:----------|:------------|
 | 租户 |以 GUID 格式向应用程序授予其请求的权限的目录租户。 |
 | state |请求中包含的值，也会在令牌响应中返回。它可以是你希望的任何内容的字符串。此状态用于在发生身份验证请求前，对应用中的用户状态信息进行编码（例如它们所在的页面或视图上）。 |
 | admin_consent |设置为 **true**。 |
@@ -103,7 +103,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | 参数 | 条件 | 说明 |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | 租户 |必需 |需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。 |
 | client_id |必需 |当注册应用时，[Microsoft 应用注册门户](https://apps.dev.microsoft.com)分配的应用程序 ID。 |
 | 范围 |必需 |为此请求中的 `scope` 参数传递的值应为所需资源的资源标识符（应用程序 ID URI），带有 `.default` 后缀。对于 Microsoft Graph，值为 `https://graph.microsoft.com/.default`。此值会指示 v2.0 终结点，对于为应用配置的所有应用程序权限，它应该为要使用的资源的关联项颁发令牌。 |
@@ -122,7 +122,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | 参数 | 说明 |
-| --- | --- |
+|:----------|:------------|
 | access_token |请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。 |
 | token_type |表示令牌类型值。Azure AD 唯一支持的类型是 `bearer` |
 | expires_in |访问令牌的有效期是多久（以秒为单位）。 |

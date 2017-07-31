@@ -121,7 +121,6 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](../api-refere
 
 ## <a name="see-also"></a>另请参阅
 
-
-  [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+[Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [添加并验证 Office 365 租户的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
