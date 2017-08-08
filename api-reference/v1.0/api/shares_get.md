@@ -66,7 +66,7 @@ Content-type: application/json
 
 虽然 [**SharedDriveItem**](../resources/shareddriveitem.md) 包含一些有用的信息，但大多数应用程序都需要直接访问共享 [DriveItem](../resources/driveitem.md)。**SharedDriveItem** 资源包括**根**和**项目**关系，这些关系可以访问共享项目范围内的内容。
 
-### <a name="example-single-file"></a>示例（单个文件）
+## <a name="example-single-file"></a>示例（单个文件）
 
 ##### <a name="request"></a>请求
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>示例（共享文件夹）
+## <a name="example-shared-folder"></a>示例（共享文件夹）
 
 ##### <a name="request"></a>请求
 

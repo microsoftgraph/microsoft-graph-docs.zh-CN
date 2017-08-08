@@ -12,6 +12,7 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All 或 Notes.ReadWrite
 GET /me/onenote/sections/{id}
 GET /users/{id | userPrincipalName}/onenote/sections/{id}
 GET /groups/{id}/onenote/sections/{id}
+GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 `select` 和 `expand` [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
@@ -22,7 +23,7 @@ GET /groups/{id}/onenote/sections/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` | 
+| 接受 | string | `application/json` | 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

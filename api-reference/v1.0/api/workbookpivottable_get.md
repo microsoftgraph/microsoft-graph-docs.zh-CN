@@ -2,28 +2,28 @@
 
 检索 workbookPivotTable 对象的属性和关系。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 若要执行此 API，必须有以下**范围**：_Files.Read、Files.ReadWrite_
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
-### <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookPivotTable](../resources/workbookpivottable.md) 对象。
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

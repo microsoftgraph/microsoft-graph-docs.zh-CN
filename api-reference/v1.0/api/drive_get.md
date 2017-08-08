@@ -17,7 +17,7 @@
 
 若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 [User](../resources/user.md) 资源获取 **drive** 关系。
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
@@ -30,7 +30,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 若要访问[组](../resources/group.md)的默认文档库，你的应用程序应请求组中的**驱动器**关系。
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 

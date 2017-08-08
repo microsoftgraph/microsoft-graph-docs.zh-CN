@@ -9,9 +9,10 @@ Notes.Create、Notes.ReadWrite 或 Notes.ReadWrite.All
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|

@@ -19,6 +19,7 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All 或 Notes.ReadWrite
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 无。
@@ -27,7 +28,7 @@ GET /groups/{id}/onenote/operations/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` | 
+| 接受 | string | `application/json` | 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

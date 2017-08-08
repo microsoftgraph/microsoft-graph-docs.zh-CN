@@ -4,11 +4,11 @@
 
 > **重要说明：**只有已验证的域可以进行更新。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 
 要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
@@ -16,14 +16,14 @@ PATCH /domains/{id}
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 
 在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。
 
@@ -31,7 +31,7 @@ PATCH /domains/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 <!-- {

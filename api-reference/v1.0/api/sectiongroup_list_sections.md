@@ -12,6 +12,7 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All 或 Notes.ReadWrite
 GET /me/onenote/sectionGroups/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 GET /groups/{id}/onenote/sectionGroups/{id}/sections
+GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
@@ -25,7 +26,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}/sections
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |  
+| 接受 | string | `application/json` |  
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -39,7 +40,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}/sections
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/oennote/sectionGroups/{id}/sections
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。

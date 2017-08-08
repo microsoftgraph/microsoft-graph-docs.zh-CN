@@ -12,9 +12,10 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All 或 Notes.ReadWrite
 GET /me/onenote/sectionGroups/{id}
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}
 GET /groups/{id}/onenote/sectionGroups/{id}
+GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
 
 默认查询展开 `parentNotebook`，并选择其 `id`、`name` 和 `self` 属性。分区组的有效 `expand` 值为 `parentNotebook` 和`parentSectionGroup`。
 
@@ -22,7 +23,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` | 
+| 接受 | string | `application/json` | 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
