@@ -260,14 +260,25 @@
       <Item text="获取 directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="获取 directoryRoleTemplate, Microsoft Graph API, 目录 API" SEODescription="检索 directoryroletemplate 对象的属性和关系。" />
     </Item>
     <Item text="域" url="/en-us/api-reference/v1.0/resources/domain">
-      <Item text="列出域" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="列出域" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="创建域" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="删除域" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="获取域" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="更新域" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="验证域" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="邀请管理器" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="使用邀请管理器来创建一个邀请，以将外部用户添加到组织目录。">
+    <Item text="组设置" url="/en-us/api-reference/v1.0/resources/groupsetting">
+	  <Item text="创建设置" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="获取设置" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="列出设置" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="更新设置" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="删除设置" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="组设置模板" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate">
+	  <Item text="列出组设置模板" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="获取组设置模板" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="邀请管理器" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="使用邀请管理器来创建一个邀请，以将外部用户添加到组织目录。">
       <Item text="创建邀请" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="创建新邀请，将外部用户添加到组织目录。" />
     </Item>
     <Item text="组织" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="用户组织结构, Microsoft Graph API, 用户 API" SEODescription="">
