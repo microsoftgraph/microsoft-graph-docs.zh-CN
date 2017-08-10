@@ -3,8 +3,9 @@
   <Item text="概述" url="/en-us/concepts/overview" SEOKeyword="概述, Microsoft Graph API, 概述" SEODescription="借助 Microsoft Graph，应用程序可以跨 Microsoft 智能云访问数字工作和数字生活数据。为开发者提供巨大优势：统一 Microsoft API 终结点，用于使用 Microsoft 云中的数据、情报和数据解析。" />    
   <Item text="精选方案" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="查找会议次数" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="获取相关人员的信息" url="/en-us/concepts/people_example" SEODescription="使用人员 API 检索与用户最相关的人员。" />
   </Item>
-  <Item text="构建你的首个应用" url="/en-us/concepts/get-started">
+  <Item text="生成首个应用" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Android 应用中访问 Microsoft 云数据" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Angular 应用中访问 Microsoft 云数据" />
     <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET、ASP.NET MVC、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 ASP.NET MVC 应用中访问 Microsoft 云数据" />
@@ -547,6 +548,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="人员" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="人员" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="列出人员" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="获取人员" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="个人联系人" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="用户联系人、Microsoft Graph API、用户 API" SEODescription="个人联系人 API">
     <Item text="联系人" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="用户联系人, Microsoft Graph API, 用户 API" SEODescription="联系人">
       <Item text="列出联系人" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="列出联系人, Microsoft Graph API, 用户 API" SEODescription="检索联系人对象列表。" />
@@ -751,7 +758,8 @@
         <Item text="列出已删除的组" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="列出组" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="列出组, Microsoft Graph API, 组 API" SEODescription="检索组对象列表。" />
         <Item text="列出加入的团队" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="列出 joinedTeams, Microsoft Graph API, 用户 API" SEODescription="检索用户所属 Microsoft Teams 列表。" />
-        <Item text="列出隶属于" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="列出 memberOf、Microsoft Graph API、组 API" SEODescription="检索 directoryObject 对象列表。" />
+        <Item text="列出生命周期策略" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="列出隶属于" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="列出 memberOf、Microsoft Graph API、组 API" SEODescription="检索 directoryObject 对象列表。" />
         <Item text="列出成员" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="列出成员, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
         <Item text="列出所有者" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="列出所有者, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
         <Item text="永久删除组" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="获取多值属性" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="笔记" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="用户注释, Microsoft Graph API, 用户 API" SEODescription="">
+      <Item text="生命周期策略" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="创建策略" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="列出策略" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="获取策略" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="更新策略" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="删除策略" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="添加组" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="删除组" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="续订组" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="备注" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="用户注释, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出笔记本" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
       </Item>
@@ -3208,7 +3226,7 @@
           <Item text="获取受管理的应用诊断状态" url="/en-us/api-reference/beta/api/intune_mam_user_getmanagedappdiagnosticstatuses" />
           <Item text="获取受管理的应用策略" url="/en-us/api-reference/beta/api/intune_mam_user_getmanagedapppolicies" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_user_list" />
-          <Item text="列出受管理的应用注册" url="/en-us/api-reference/beta/api/intune_mam_user_list_managedappregistration" />
+          <Item text="列出受管理应用注册" url="/en-us/api-reference/beta/api/intune_mam_user_list_managedappregistration" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_user_update" />
           <Item text="按设备标记擦除" url="/en-us/api-reference/beta/api/intune_mam_user_wipebydevicetag" />
           <Item text="按设备标记擦除受管理的应用注册" url="/en-us/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationbydevicetag" />
