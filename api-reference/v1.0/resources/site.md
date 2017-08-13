@@ -42,6 +42,7 @@
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -76,11 +77,13 @@
 | **驱动器**        | 集合（[驱动器][]）    | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][]) | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **网站**         | 集合（[网站][]）     | 网站下方的子网站的集合。
+| **onenote**       | [onenote][]              | 调用 OneNote 服务进行笔记本相关操作。
 
 [baseItem]: baseitem.md
 [驱动器]: drive.md
 [identitySet]: identityset.md
 [网站]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",

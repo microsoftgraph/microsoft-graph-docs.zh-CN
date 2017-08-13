@@ -4,9 +4,9 @@
 
 对文件夹中的邮件的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用[状态令牌](../../../concepts/delta_query_overview.md)来[查询该文件夹中的邮件的增量更改](../../../concepts/delta_query_messages.md)。通过此功能，你可以维护和同步本地存储的用户邮件，而无需每次都从服务器中获取整组邮件。  
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：_Mail.Read_；_Mail.ReadWrite_
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
@@ -32,7 +32,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
   * 唯一支持的 `$orderby` 表达式是 `$orderby=receivedDateTime+desc`。如果不包含 `$orderby` 表达式，则不能保证返回顺序。 
 - 不支持 `$search`。
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -43,7 +43,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 ### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [message](../resources/message.md) 集合对象。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 以下示例演示了如何执行单次 **delta** 函数调用，并将响应正文中的邮件最大数目限制为 2。
 

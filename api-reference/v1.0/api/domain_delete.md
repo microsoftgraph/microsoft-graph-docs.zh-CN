@@ -6,11 +6,11 @@
 > - 已删除的域不可恢复。<br />
 > - 如果存在任何仍旧依赖域的资源或对象，尝试删除会失败。可以通过使用此 [列出 domainNameReferences](domain_list_domainnamereferences.md) API 查找所有从属的资源。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 
 要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 
 请勿提供此方法的请求正文。
 
@@ -33,7 +33,7 @@ DELETE /domains/{id}
 
 如果成功，此方法返回 `204, No Content` 响应代码。它不返回响应正文。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 <!-- {

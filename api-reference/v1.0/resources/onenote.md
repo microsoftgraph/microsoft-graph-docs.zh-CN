@@ -8,7 +8,7 @@
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本。目前不支持 SharePoint 网站托管的笔记本。 
+位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
 
 **用户笔记本** 要访问消费者版 OneDrive 或 OneDrive for Business 上的个人笔记本，请使用下列 URL 之一：
 
@@ -23,40 +23,18 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+**SharePoint 站点笔记本** 要访问 SharePoint 团队网站所有的笔记本，请使用下列服务根 URL：
 
-下列权限范围提供访问 OneNote 笔记本的级别。选择权限范围取决于定位的笔记本位置和应用的功能。 
+```
+https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+```
+## <a name="authorization"></a>授权
 
-**消费者版 OneDrive 或当前用户所有的 OneDrive for Business 中的个人笔记本范围**
+有关使用 OneNote API 所需权限的信息，请参阅 [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions)。
 
-| 范围 | 在 Azure 门户中的权限 | 说明 |
-|:-------|:------|:------|
-| Notes.Create | 创建用户的 OneNote 笔记本 | 可以查看 OneNote 笔记本标题和节；新建笔记本、节和页面。 |
-| Notes.Read | 阅读用户的 OneNote 笔记本 | 可以阅读你的 OneNote 笔记本。 |
-| Notes.ReadWrite | 读取和写入用户的 OneNote 笔记本 | 可以读取、共享和修改你的 OneNote 笔记本。 |
-
-**由当前用户可访问的其他用户和组笔记本共享的个人笔记本范围**
-
-| 范围 | 在 Azure 门户中的权限 | 说明 |
-|:-------|:------|:------|
-| Notes.Read.All | 读取用户可以访问的所有 OneNote 笔记本 | 可以读取登录用户有权访问的所有 OneNote 笔记本。 |
-| Notes.ReadWrite.All | 读取和写入用户可以访问的所有 OneNote 笔记本 | 可以读取、共享和修改登录用户有权访问的所有 OneNote 笔记本。 |
-
-**注意：**当前不支持通过 Graph API 访问 SharePoint 网站笔记本。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |笔记本|[笔记本](notebook.md)集合|用户或组所有的 OneNote 笔记本集合。只读。可为 NULL。|
 |操作|[操作](onenoteoperation.md)集合 |OneNote 操作状态。不支持获取操作集合，但如果响应中返回 `Operation-Location` 标头，可以获取长时间运行的操作的状态。只读。可为 NULL。|

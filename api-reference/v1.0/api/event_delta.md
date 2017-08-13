@@ -4,10 +4,10 @@
 
 对于用户主日历的日期范围，对事件的 **delta** 函数调用与 `GET /calendarview` 请求相似，但是可通过在对其的一次或多次调用中正确应用[状态令牌](../../../concepts/delta_query_overview.md)来查询该日历视图中的增量更改这一点除外。通过此功能，你可以维护和同步本地存储的主日历的用户事件，而无需每次都从服务器中获取该日历的所有事件。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：_Calendars.Read_；_Calendars.ReadWrite_ 
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -30,7 +30,7 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 对日历视图执行 delta 查询时，预计获取通常从 `GET /calendarview` 请求获取的所有属性。在此情况下，不支持 `$select`。 
 
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -42,7 +42,7 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [event](../resources/event.md) 集合对象。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 以下示例演示了如何执行单次 **delta** 函数调用，并将响应正文中的事件最大数目限制为 2。

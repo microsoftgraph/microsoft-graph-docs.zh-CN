@@ -5,7 +5,7 @@
 > **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
 
 
-## <a name="authorization"></a>授权
+## <a name="authorization"></a>Authorization
  
 若要对 Azure AD 资源调用 Microsoft Graph API，应用必须拥有适当的权限。许多已对 Azure AD 资源公开的 API 需要拥有 [_Directory_ 权限](../../../concepts/permissions_reference.md#directory-permissions)之一。Directory 具有很多特权，始终需要征得管理员同意。 
 
@@ -23,6 +23,7 @@
 | `directoryObject` 是许多目录资源（如用户和组）继承自的基类。Microsoft Graph 公开了多个可用于发现用户、组和其他目录对象的相关信息的方法。例如，可以在组列表中检查可传递成员身份，也可以返回目录对象是其可传递成员的所有组和目录角色，亦可以从常规资源 ID 列表获取指定类型（如用户或组）的所有资源。 | [directoryObject](../resources/directoryobject.md) | 无 |
 | **管理目录（管理员）角色** | | |
 | 激活 Azure AD 租户中的目录角色，并管理目录角色中的用户成员身份。目录角色亦称为“管理员角色”。 | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) |
+| 跨租户应用预定义组设置或将其应用到单个资源实例。组设置控制行为，如组显示名称的禁止使用的词语列表，是否允许来宾用户成为组所有者等。 | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [用于配置组设置的 Azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | **管理设备** | | |
 | 管理组织中的注册设备。设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。条件访问策略使用它们进行多重身份验证。 | [设备](../resources/device.md) | [Azure Active Directory 设备注册入门](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)。<br/><br/>[什么是 InTune？](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[在 Intune 中注册设备以进行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **合作伙伴租户管理** | | |
@@ -39,7 +40,7 @@
 目录资源和 API 提供了使用 Microsoft Graph 与用户交互及管理用户体验的新方式。若要了解更多： 
 
 - 深入了解对方案最有帮助的资源的方法和属性。
-- 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
 

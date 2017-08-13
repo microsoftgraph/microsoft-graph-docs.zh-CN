@@ -4,23 +4,23 @@
 
 **重要说明**：必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。有关详细信息，请参阅[列出 verificationDnsRecords](domain_list_verificationdnsrecords.md)。需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 
 要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。
 
 > 请求正文包含新域的 id 属性。Id 是唯一可以指定，也是必须指定的属性。此 id 属性值是要创建的完全限定的域名。
@@ -28,7 +28,7 @@ POST /domains
 ### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [domain](../resources/domain.md) 对象。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。

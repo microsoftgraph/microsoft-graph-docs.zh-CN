@@ -4,7 +4,24 @@
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
+## <a name="august-2017"></a>2017 年 8 月
+
+### <a name="onenote"></a>OneNote
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | v1.0 和 Beta | 向 **site** 添加了 [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) 导航属性。  |
+| 添加项 | Beta | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md)。 |
+
+
 ## <a name="july-2017"></a>2017 年 7 月
+
+### <a name="group-settings"></a>组设置
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项     | v1.0       | 添加了组设置支持。<br/>新资源类型：[groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md)、[groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md)、[settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md) 和 [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| 更改       | v1.0       | 将属性 **classification** 和导航属性**settings** 添加到[组](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) |
 
 ### <a name="intune-apis"></a>Intune API
 

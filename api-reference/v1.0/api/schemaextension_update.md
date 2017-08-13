@@ -17,7 +17,7 @@
 PATCH /schemaExtensions/{id}
 ```
 
-### <a name="optional-request-headers"></a>可选的请求标头
+## <a name="optional-request-headers"></a>可选的请求标头
 
 | 名称      |说明|
 |:----------|:----------|

@@ -1,34 +1,34 @@
 # <a name="update-plannertask"></a>更新 plannerTask
 
 更新 **plannertask** 对象的属性。
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
 
 *Group.ReadWrite.All*
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>
 ```
-### <a name="optional-request-headers"></a>可选的请求标头
+## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTask** 的上次已知 ETag 值。必需。|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
-|assigneePriority|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
+|工作分配|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
 |bucketId|字符串|此任务所属的存储桶 id。存储桶需要位于任务所在的计划中。长度为 28 个字符，区分大小写。[格式验证](../resources/planner_identifiers_disclaimer.md)在服务上完成。 |
 |conversationThreadId|String|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|orderHint|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
-|percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
+|PercentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|此任务所属的计划 id。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|
@@ -38,7 +38,7 @@ PATCH /planner/tasks/<id>
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

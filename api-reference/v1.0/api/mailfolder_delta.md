@@ -4,17 +4,17 @@
 
 对邮箱的邮件文件夹的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用[状态令牌](../../../concepts/delta_query_overview.md)来查询邮件文件夹中的增量更改。通过此功能，你可以维护和同步本地存储的用户邮件文件夹，而无需每次都从服务器中获取该邮箱的所有邮件文件夹。
 
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：_Mail.Read_；_Mail.ReadWrite_
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
 GET /users/<id>/mailFolders/delta
 ```
 
-### <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 跟踪邮件文件夹更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
 
@@ -28,7 +28,7 @@ GET /users/<id>/mailFolders/delta
 
 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -39,7 +39,7 @@ GET /users/<id>/mailFolders/delta
 ### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 集合对象。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 以下示例演示了如何执行单次 **delta** 函数调用，并将响应正文中的邮件文件夹最大数目限制为 2。
 

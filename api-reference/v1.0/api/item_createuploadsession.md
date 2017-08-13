@@ -60,7 +60,7 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### <a name="response"></a>响应
+#### <a name="response-example"></a>响应示例
 下面是一个响应示例。
 
 <!-- {
@@ -100,7 +100,7 @@ Content-Range: bytes 0-25/128
 
 **重要说明：**应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。如果某片段声明有不同的文件大小，则请求将失败。
 
-### <a name="response"></a>响应
+#### <a name="response-example"></a>响应示例
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,7 +166,7 @@ DELETE 请求将立即使上载会话过期，并删除以前上载的所有字�
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### <a name="response"></a>响应
+#### <a name="response-example"></a>响应示例
 
 <!-- { "blockType": "response" } -->
 ```http

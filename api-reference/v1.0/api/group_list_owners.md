@@ -1,4 +1,4 @@
-Gr# List owners
+# <a name="list-owners"></a>列出所有者
 
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
 

@@ -1,22 +1,22 @@
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
 更新 **plannertaskdetails**对象的属性。
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
 
 *Group.ReadWrite.All*
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/details
 ```
-### <a name="optional-request-headers"></a>可选的请求标头
+## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTaskDetails** 的上次已知 ETag 值。必需。|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
@@ -31,7 +31,7 @@ PATCH /planner/tasks/<id>/details
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

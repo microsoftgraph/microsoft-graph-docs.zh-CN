@@ -26,11 +26,11 @@ Microsoft Graph 由各种资源组成，这些资源通过关系相连接。例�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看某些[精选方案](featured_scenarios.md)。
+- 查看某些[精选方案](../concepts/featured_scenarios.md)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置准备运行的示例应用。
-- 了解如何在你的应用中[获取身份验证令牌](auth_overview.md)。
-- 开始[使用 API](use_the_api.md)。
+- 了解如何在你的应用中[获取身份验证令牌](../concepts/auth_overview.md)。
+- 开始[使用 API](../concepts/use_the_api.md)。
 
 ## <a name="feedback"></a>有反馈？
 

@@ -9,13 +9,13 @@
 返回属于工作簿的工作表对象的集合。    
 
 
-**注意：Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
+**注意：**Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
-要使用 Excel 资源，需要以下 [权限范围](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) 之一：
+要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一：
 
 * Files.Read 
 * Files.ReadWrite
@@ -1256,7 +1256,7 @@ content-type: application/json
 
 返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。
  
-示例如下。
+以下是一个示例。
 
 <!-- { "blockType": "ignored" } -->
 ```http

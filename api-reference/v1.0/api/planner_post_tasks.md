@@ -1,23 +1,23 @@
 # <a name="create-plannertask"></a>创建 plannerTask
 
 使用此 API 新建 **plannerTask**。
-### <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**： 
 
 *Group.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 在请求正文中，提供 [plannerTask](../resources/plannertask.md) 对象的 JSON 表示形式。**plannerTask** planId 属性必须设为现有的 [plannerPlan](../resources/plannerplan.md) 对象的 id。
 
 ### <a name="response"></a>响应
@@ -25,7 +25,7 @@ POST /planner/tasks
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

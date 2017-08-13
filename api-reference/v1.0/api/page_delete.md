@@ -11,7 +11,8 @@ Notes.ReadWrite 或 Notes.ReadWrite.All
 ```http
 DELETE /me/onenote/pages/{id}
 DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
+DELETE /groups/{id}/onenote/pages/{id}
+DELETE /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
