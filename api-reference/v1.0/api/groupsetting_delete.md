@@ -1,9 +1,9 @@
-<span data-ttu-id="d4bee-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d4bee-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3c05c-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3c05c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a><span data-ttu-id="d4bee-120">示例</span><span class="sxs-lookup"><span data-stu-id="d4bee-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d4bee-121">请求</span><span class="sxs-lookup"><span data-stu-id="d4bee-121">Request</span></span>
+## <a name="example"></a><span data-ttu-id="3c05c-120">示例</span><span class="sxs-lookup"><span data-stu-id="3c05c-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3c05c-121">请求</span><span class="sxs-lookup"><span data-stu-id="3c05c-121">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
@@ -11,7 +11,7 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="d4bee-122">响应</span><span class="sxs-lookup"><span data-stu-id="d4bee-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3c05c-122">响应</span><span class="sxs-lookup"><span data-stu-id="3c05c-122">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

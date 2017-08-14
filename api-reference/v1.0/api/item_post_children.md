@@ -1,19 +1,16 @@
-# <span data-ttu-id="64820-101">新建文件夹</span><span class="sxs-lookup"><span data-stu-id="64820-101">Create a new folder</span></span>
-<a id="create-a-new-folder" class="xliff"></a>
+# <a name="create-a-new-folder"></a><span data-ttu-id="b759c-101">新建文件夹</span><span class="sxs-lookup"><span data-stu-id="b759c-101">Create a new folder</span></span>
 
-<span data-ttu-id="64820-102">使用指定的父项或路径在 [驱动器](../resources/drive.md) 中新建文件夹或 [DriveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="64820-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="b759c-102">使用指定的父项或路径在 [驱动器](../resources/drive.md) 中新建文件夹或 [DriveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="b759c-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <span data-ttu-id="64820-103">先决条件</span><span class="sxs-lookup"><span data-stu-id="64820-103">Prerequisites</span></span>
-<a id="prerequisites" class="xliff"></a>
-<span data-ttu-id="64820-104">要执行此 API，需要以下**范围**之一：</span><span class="sxs-lookup"><span data-stu-id="64820-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b759c-103">先决条件</span><span class="sxs-lookup"><span data-stu-id="b759c-103">Prerequisites</span></span>
+<span data-ttu-id="b759c-104">要执行此 API，需要以下**范围**之一：</span><span class="sxs-lookup"><span data-stu-id="b759c-104">One of the following **scopes** is required to execute this API:</span></span>
 
-* <span data-ttu-id="64820-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64820-105">Files.ReadWrite</span></span>
-* <span data-ttu-id="64820-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64820-106">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="64820-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64820-107">Sites.ReadWrite.All</span></span>
+* <span data-ttu-id="b759c-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b759c-105">Files.ReadWrite</span></span>
+* <span data-ttu-id="b759c-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b759c-106">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="b759c-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b759c-107">Sites.ReadWrite.All</span></span>
 
 
-## <span data-ttu-id="64820-108">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="64820-108">HTTP request</span></span>
-<a id="http-request" class="xliff"></a>
+## <a name="http-request"></a><span data-ttu-id="b759c-108">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b759c-108">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -22,21 +19,17 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <span data-ttu-id="64820-109">请求正文</span><span class="sxs-lookup"><span data-stu-id="64820-109">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="64820-110">在请求正文中，提供要创建的 [DriveItem](../resources/driveitem.md) 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="64820-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b759c-109">请求正文</span><span class="sxs-lookup"><span data-stu-id="b759c-109">Request body</span></span>
+<span data-ttu-id="b759c-110">在请求正文中，提供要创建的 [DriveItem](../resources/driveitem.md) 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b759c-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
+## <a name="response"></a><span data-ttu-id="b759c-111">响应</span><span class="sxs-lookup"><span data-stu-id="b759c-111">Response</span></span>
 
-## <span data-ttu-id="64820-111">响应</span><span class="sxs-lookup"><span data-stu-id="64820-111">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="64820-112">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="64820-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="b759c-112">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="b759c-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <span data-ttu-id="64820-113">示例</span><span class="sxs-lookup"><span data-stu-id="64820-113">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="b759c-113">示例</span><span class="sxs-lookup"><span data-stu-id="b759c-113">Example</span></span>
 
-##### <span data-ttu-id="64820-114">请求</span><span class="sxs-lookup"><span data-stu-id="64820-114">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="64820-115">下面是在用户的 OneDrive 根目录下新建文件夹请求示例。</span><span class="sxs-lookup"><span data-stu-id="64820-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
+##### <a name="request"></a><span data-ttu-id="b759c-114">请求</span><span class="sxs-lookup"><span data-stu-id="b759c-114">Request</span></span>
+<span data-ttu-id="b759c-115">下面是在用户的 OneDrive 根目录下新建文件夹请求示例。</span><span class="sxs-lookup"><span data-stu-id="b759c-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -52,10 +45,9 @@ Content-Type: application/json
 }
 ```
 
-##### <span data-ttu-id="64820-116">响应</span><span class="sxs-lookup"><span data-stu-id="64820-116">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="b759c-116">响应</span><span class="sxs-lookup"><span data-stu-id="b759c-116">Response</span></span>
 
-<span data-ttu-id="64820-117">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="64820-117">Here is an example of the response.</span></span>
+<span data-ttu-id="b759c-117">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b759c-117">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,4 +1,4 @@
-<span data-ttu-id="3ec63-p107">下面是一个响应示例。以默认的 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="3ec63-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
+<span data-ttu-id="32fa5-p107">下面是一个响应示例。以默认的 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="32fa5-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
 下面是一个响应示例。以默认的 HTML 格式返回 **body** 属性。
 <!-- {
   "blockType": "response",

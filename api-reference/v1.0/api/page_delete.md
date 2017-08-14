@@ -1,9 +1,10 @@
-<span data-ttu-id="d84ff-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d84ff-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9e8af-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9e8af-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a><span data-ttu-id="d84ff-118">示例</span><span class="sxs-lookup"><span data-stu-id="d84ff-118">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d84ff-119">请求</span><span class="sxs-lookup"><span data-stu-id="d84ff-119">Request</span></span>
-<span data-ttu-id="d84ff-120">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d84ff-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9e8af-118">示例</span><span class="sxs-lookup"><span data-stu-id="9e8af-118">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9e8af-119">请求</span><span class="sxs-lookup"><span data-stu-id="9e8af-119">Request</span></span>
+<span data-ttu-id="9e8af-120">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9e8af-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -11,8 +12,8 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="d84ff-121">响应</span><span class="sxs-lookup"><span data-stu-id="d84ff-121">Response</span></span>
-<span data-ttu-id="d84ff-122">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d84ff-122">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="9e8af-121">响应</span><span class="sxs-lookup"><span data-stu-id="9e8af-121">Response</span></span>
+<span data-ttu-id="9e8af-122">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9e8af-122">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

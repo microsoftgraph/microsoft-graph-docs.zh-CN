@@ -1,13 +1,13 @@
-<span data-ttu-id="e6978-p102">在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。</span><span class="sxs-lookup"><span data-stu-id="e6978-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="61b08-p102">在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。</span><span class="sxs-lookup"><span data-stu-id="61b08-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。
 
-### <a name="response"></a><span data-ttu-id="e6978-120">响应</span><span class="sxs-lookup"><span data-stu-id="e6978-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="61b08-120">响应</span><span class="sxs-lookup"><span data-stu-id="61b08-120">Response</span></span>
 
-<span data-ttu-id="e6978-121">如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="e6978-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="61b08-121">如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="61b08-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e6978-122">示例</span><span class="sxs-lookup"><span data-stu-id="e6978-122">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e6978-123">请求</span><span class="sxs-lookup"><span data-stu-id="e6978-123">Request</span></span>
+## <a name="example"></a><span data-ttu-id="61b08-122">示例</span><span class="sxs-lookup"><span data-stu-id="61b08-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="61b08-123">请求</span><span class="sxs-lookup"><span data-stu-id="61b08-123">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -26,7 +26,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e6978-124">响应</span><span class="sxs-lookup"><span data-stu-id="e6978-124">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="61b08-124">响应</span><span class="sxs-lookup"><span data-stu-id="61b08-124">Response</span></span>
 
 <!-- {
   "blockType": "response",

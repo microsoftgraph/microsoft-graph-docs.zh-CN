@@ -1,4 +1,4 @@
-<span data-ttu-id="f6a5c-p106">注意：为了简单起见，会将此处所示的 **event** 对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f6a5c-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="42818-p106">注意：为了简单起见，会将此处所示的 **event** 对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="42818-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 注意：为了简单起见，会将此处所示的 **event** 对象截断。将从实际调用中返回所有属性。
 

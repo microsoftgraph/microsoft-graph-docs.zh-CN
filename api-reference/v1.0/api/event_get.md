@@ -1,4 +1,4 @@
-<span data-ttu-id="fa264-p105">下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="fa264-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
+<span data-ttu-id="3aced-p105">下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="3aced-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。
 
@@ -68,11 +68,10 @@ Content-length: 1928
 }
 ```
 
-## <span data-ttu-id="fa264-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fa264-142">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="3aced-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3aced-142">See also</span></span>
 
-- [<span data-ttu-id="fa264-143">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="fa264-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="fa264-144">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="fa264-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="3aced-143">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="3aced-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="3aced-144">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="3aced-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

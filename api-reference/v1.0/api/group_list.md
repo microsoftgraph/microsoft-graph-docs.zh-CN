@@ -1,4 +1,4 @@
-<span data-ttu-id="1a1db-p103">注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回[默认属性](../api/group_get.md#default-properties)。</span><span class="sxs-lookup"><span data-stu-id="1a1db-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
+<span data-ttu-id="359c2-p103">注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回[默认属性](../api/group_get.md#default-properties)。</span><span class="sxs-lookup"><span data-stu-id="359c2-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回[默认属性](../api/group_get.md#default-properties)。
 

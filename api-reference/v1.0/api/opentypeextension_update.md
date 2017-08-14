@@ -1,4 +1,4 @@
-<span data-ttu-id="f6fac-p107">第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="f6fac-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
+<span data-ttu-id="ee6cd-p107">第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="ee6cd-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`
 
@@ -21,7 +21,7 @@
 }
 ```
 
-<span data-ttu-id="f6fac-183">以下是要将 `expirationDate` 更改为 `2016-07-30T11:00:00Z` 的请求和请求正文：</span><span class="sxs-lookup"><span data-stu-id="f6fac-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
+<span data-ttu-id="ee6cd-183">以下是要将 `expirationDate` 更改为 `2016-07-30T11:00:00Z` 的请求和请求正文：</span><span class="sxs-lookup"><span data-stu-id="ee6cd-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,10 +45,9 @@ Content-type: application/json
 }
 ```
 
-#### <span data-ttu-id="f6fac-184">响应 2</span><span class="sxs-lookup"><span data-stu-id="f6fac-184">Response 2</span></span>
-<a id="response-2" class="xliff"></a>
+#### <a name="response-2"></a><span data-ttu-id="ee6cd-184">响应 2</span><span class="sxs-lookup"><span data-stu-id="ee6cd-184">Response 2</span></span>
 
-<span data-ttu-id="f6fac-185">下面是第二个示例的响应，显示了扩展中更新的 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="f6fac-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
+<span data-ttu-id="ee6cd-185">下面是第二个示例的响应，显示了扩展中更新的 `expirationDate`</span><span class="sxs-lookup"><span data-stu-id="ee6cd-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

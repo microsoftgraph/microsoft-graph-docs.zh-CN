@@ -1,12 +1,11 @@
-<span data-ttu-id="3268c-p103">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3268c-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="34ac4-p103">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="34ac4-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
-## <span data-ttu-id="3268c-129">示例</span><span class="sxs-lookup"><span data-stu-id="3268c-129">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="3268c-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-130">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="3268c-131">请求</span><span class="sxs-lookup"><span data-stu-id="3268c-131">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="3268c-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="34ac4-129">示例</span><span class="sxs-lookup"><span data-stu-id="34ac4-129">Example</span></span>
+<span data-ttu-id="34ac4-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="34ac4-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="34ac4-131">请求</span><span class="sxs-lookup"><span data-stu-id="34ac4-131">Request</span></span>
+<span data-ttu-id="34ac4-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="34ac4-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -24,9 +23,8 @@ Content-length: 97
 }
 ```
 
-##### <span data-ttu-id="3268c-133">响应</span><span class="sxs-lookup"><span data-stu-id="3268c-133">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3268c-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3268c-134">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="34ac4-133">响应</span><span class="sxs-lookup"><span data-stu-id="34ac4-133">Response</span></span>
+<span data-ttu-id="34ac4-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="34ac4-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,8 +1,9 @@
-<span data-ttu-id="72d93-p103">如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。</span><span class="sxs-lookup"><span data-stu-id="72d93-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
+<span data-ttu-id="e0689-p103">如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。</span><span class="sxs-lookup"><span data-stu-id="e0689-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
+
 如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。
-## <a name="example"></a><span data-ttu-id="72d93-123">示例</span><span class="sxs-lookup"><span data-stu-id="72d93-123">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="72d93-124">请求</span><span class="sxs-lookup"><span data-stu-id="72d93-124">Request</span></span>
-<span data-ttu-id="72d93-125">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="72d93-125">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e0689-123">示例</span><span class="sxs-lookup"><span data-stu-id="e0689-123">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e0689-124">请求</span><span class="sxs-lookup"><span data-stu-id="e0689-124">Request</span></span>
+<span data-ttu-id="e0689-125">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e0689-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -26,8 +27,8 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a><span data-ttu-id="72d93-126">响应</span><span class="sxs-lookup"><span data-stu-id="72d93-126">Response</span></span>
-<span data-ttu-id="72d93-127">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="72d93-127">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e0689-126">响应</span><span class="sxs-lookup"><span data-stu-id="e0689-126">Response</span></span>
+<span data-ttu-id="e0689-127">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e0689-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

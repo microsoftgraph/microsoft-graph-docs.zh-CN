@@ -1,12 +1,11 @@
-<span data-ttu-id="9079d-p102">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9079d-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ee90d-p102">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ee90d-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
-## <span data-ttu-id="9079d-117">示例</span><span class="sxs-lookup"><span data-stu-id="9079d-117">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="9079d-118">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="9079d-118">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="9079d-119">请求</span><span class="sxs-lookup"><span data-stu-id="9079d-119">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="9079d-120">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9079d-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ee90d-117">示例</span><span class="sxs-lookup"><span data-stu-id="ee90d-117">Example</span></span>
+<span data-ttu-id="ee90d-118">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="ee90d-118">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="ee90d-119">请求</span><span class="sxs-lookup"><span data-stu-id="ee90d-119">Request</span></span>
+<span data-ttu-id="ee90d-120">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ee90d-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartlineformat_clear"
@@ -15,9 +14,8 @@
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
-##### <span data-ttu-id="9079d-121">响应</span><span class="sxs-lookup"><span data-stu-id="9079d-121">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="9079d-122">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9079d-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ee90d-121">响应</span><span class="sxs-lookup"><span data-stu-id="ee90d-121">Response</span></span>
+<span data-ttu-id="ee90d-122">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ee90d-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

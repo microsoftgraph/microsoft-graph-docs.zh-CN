@@ -1,4 +1,4 @@
-<span data-ttu-id="e12f4-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e12f4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e4875-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e4875-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -27,11 +27,10 @@ Content-length: 201
 }
 ```
 
-## <span data-ttu-id="e12f4-127">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e12f4-127">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="e4875-127">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e4875-127">See also</span></span>
 
-- [<span data-ttu-id="e12f4-128">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="e12f4-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="e12f4-129">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="e12f4-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="e4875-128">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="e4875-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="e4875-129">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="e4875-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
