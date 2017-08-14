@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}
 |visibility|string|工作表的可见性。可能的值是：`Visible`、`Hidden`、`VeryHidden`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Worksheet](../resources/worksheet.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

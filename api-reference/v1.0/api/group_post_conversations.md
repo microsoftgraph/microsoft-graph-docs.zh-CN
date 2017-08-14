@@ -19,8 +19,8 @@ POST /groups/{id}/conversations
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供包括 [conversationThread](../resources/conversationThread.md) 和 [帖子](../resources/post.md) 的 [conversation](../resources/conversation.md) 对象的 JSON 表示形式。
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [conversation](../resources/conversation.md) 对象。
 
 ## <a name="example"></a>示例

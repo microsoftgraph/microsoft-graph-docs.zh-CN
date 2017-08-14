@@ -26,7 +26,8 @@ PATCH /planner/tasks/<id>/details
 |previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|任务上的引用集合。|
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerTaskDetails](../resources/plannertaskdetails.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。

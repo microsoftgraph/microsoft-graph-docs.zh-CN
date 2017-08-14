@@ -29,6 +29,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Table](../resources/table.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

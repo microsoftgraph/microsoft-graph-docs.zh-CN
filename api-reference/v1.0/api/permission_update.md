@@ -8,7 +8,7 @@
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,8 +34,8 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 |:-------------|:-------|:------------------------------|
 | **角色**    | String | 权限类型的数组。 |
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [permission](../resources/permission.md) 对象。
 
 ## <a name="example"></a>示例

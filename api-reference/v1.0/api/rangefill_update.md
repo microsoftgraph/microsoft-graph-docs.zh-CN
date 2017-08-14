@@ -27,6 +27,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Rangefill](../resources/rangefill.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

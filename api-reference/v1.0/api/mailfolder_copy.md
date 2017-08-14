@@ -24,6 +24,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 |destinationId|String|文件夹 ID，或*收件箱*、*草稿箱*、*已发送邮件*或*已删除邮件*的已知文件夹名称。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例

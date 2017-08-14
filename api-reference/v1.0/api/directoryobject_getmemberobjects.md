@@ -33,6 +33,7 @@ POST /directoryObjects/{id}/getMemberObjects
 |securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 String 集合对象。
 
 ## <a name="example"></a>示例

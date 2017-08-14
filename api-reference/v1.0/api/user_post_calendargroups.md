@@ -18,6 +18,7 @@ POST /users/{id | userPrincipalName}/calendarGroups
 在请求正文中，提供 [CalendarGroup](../resources/calendargroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [CalendarGroup](../resources/calendargroup.md) 对象。
 
 ## <a name="example"></a>示例

@@ -27,6 +27,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 |seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可以是下列值之一：自动（默认）、行、列。可能的值是：`Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

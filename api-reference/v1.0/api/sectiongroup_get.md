@@ -15,7 +15,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
 默认查询展开 `parentNotebook`，并选择其 `id`、`name` 和 `self` 属性。分区组的有效 `expand` 值为 `parentNotebook` 和`parentSectionGroup`。
 
@@ -27,7 +27,9 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

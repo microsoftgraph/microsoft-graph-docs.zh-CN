@@ -31,6 +31,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [RangeFormat](../resources/rangeformat.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

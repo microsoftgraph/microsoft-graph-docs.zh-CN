@@ -36,7 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和以下请求对象之一：
 
 - [mailboxSettings](../resources/mailboxsettings.md) 对象

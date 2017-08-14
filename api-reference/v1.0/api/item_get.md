@@ -35,6 +35,7 @@ GET /groups/{group-id}/drive/items/{item-id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。
 
 ## <a name="example"></a>示例

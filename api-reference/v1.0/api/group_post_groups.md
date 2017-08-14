@@ -41,6 +41,7 @@ POST /groups
 根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [group](../resources/group.md) 对象。
 
 ## <a name="example"></a>示例

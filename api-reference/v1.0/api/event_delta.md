@@ -38,8 +38,8 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 | Prefer | string | {Time zone}。可选，如果缺省，则采用 UTC。|
 
+## <a name="response"></a>响应
 
-### <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [event](../resources/event.md) 集合对象。
 
 ## <a name="example"></a>示例

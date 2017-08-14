@@ -25,8 +25,8 @@ POST /sites/{id}/onenote/notebooks
 
 笔记本名称必须是唯一的。该名称不能超过 128 个字符，也不能包含以下字符：?*\/:<>|'"
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [notebook](../resources/notebook.md) 对象。
 
 ## <a name="example"></a>示例

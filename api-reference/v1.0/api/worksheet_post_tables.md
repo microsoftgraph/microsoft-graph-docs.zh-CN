@@ -27,8 +27,8 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Address  | string| 区域地址。若要从 `worksheets/{id or name}/tables/add` 路径调用此 API，地址中无需有工作表名称前缀。不过，若要从 `workbook/tables/add` 路径调用此 API，请提供需要在其中创建表的工作表名称（例如：`sheet1!A1:D4`）|
 | hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Table](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例

@@ -162,7 +162,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200 OK` 响应代码。
 
 #### <a name="get-resource-instance-using-expand"></a>使用 `$expand` 获取资源实例

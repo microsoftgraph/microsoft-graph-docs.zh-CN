@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 |anotherRange|string|将用于确定区域交集的 range 对象或区域地址。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

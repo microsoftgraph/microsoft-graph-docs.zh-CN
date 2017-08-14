@@ -27,6 +27,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |displayName|String|新文件夹的显示名称。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例

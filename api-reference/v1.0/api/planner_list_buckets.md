@@ -22,7 +22,9 @@ GET /planner/buckets
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
-### <a name="response"></a>响应
+
+## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [plannerBucket](../resources/plannerbucket.md) 对象集合。
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。

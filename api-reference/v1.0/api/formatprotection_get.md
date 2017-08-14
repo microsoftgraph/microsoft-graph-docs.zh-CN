@@ -24,7 +24,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [FormatProtection](../resources/formatprotection.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

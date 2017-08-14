@@ -24,7 +24,7 @@ POST /sites/{id}/onenote/pages
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
+| Content-Type | 字符串 | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供页面的 HTML 内容。
@@ -32,6 +32,7 @@ POST /sites/{id}/onenote/pages
 正文可以将 HTML 直接置于请求正文中，或者其可以包含多部分消息格式，如示例中所示。如果要发送二进制数据，则必须发送多部分请求。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [page](../resources/page.md) 对象。
 
 ## <a name="example"></a>示例

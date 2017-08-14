@@ -23,13 +23,14 @@ POST /groups/{group-id}/drive/items/{item-id}/invite
 
 | 参数        | 类型                                            | 说明                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](driverecipient.md)) | 将获得访问权限和共享邀请的收件人的集合。                                            |
+| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | 将获得访问权限和共享邀请的收件人的集合。                                            |
 | message          | String                                          | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。 |
 | requireSignIn    | Boolean                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
 | sendInvitation   | Boolean                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
 | roles            | 集合（字符串）                              | 指定授予共享邀请收件人的角色。                         |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [permission](../resources/permission.md) 集合对象。
 
 ## <a name="example"></a>示例

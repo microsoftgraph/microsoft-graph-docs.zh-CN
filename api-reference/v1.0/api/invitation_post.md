@@ -31,8 +31,8 @@ POST /invitations
 |invitedUserEmailAddress |string | 你要邀请的用户的电子邮件地址。|
 |inviteRedirectUrl |string |兑现后用户将被重定向至的 URL。|
 
+## <a name="response"></a>响应
 
-### <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `201, Created` 响应代码和 [invitation](../resources/invitation.md) 对象。
 
 ## <a name="example"></a>示例

@@ -40,6 +40,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此可以使用 `PATCH` 操作在现有**邮件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [message](../resources/message.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

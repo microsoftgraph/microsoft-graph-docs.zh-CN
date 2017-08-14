@@ -29,6 +29,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
 |weight|string|指定区域周围边框的权重。可能的值是：`Hairline`、`Thin`、`Medium`、`Thick`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [RangeBorder](../resources/rangeborder.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

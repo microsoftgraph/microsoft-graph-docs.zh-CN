@@ -33,6 +33,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例

@@ -4,7 +4,7 @@
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：
 
-  * File.ReadWrite
+  * Files.ReadWrite
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -24,8 +24,8 @@ DELETE /drive/root/createdByUser/photo
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

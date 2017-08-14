@@ -19,6 +19,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

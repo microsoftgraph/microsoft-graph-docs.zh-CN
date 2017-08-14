@@ -29,9 +29,10 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 |italic|boolean|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`。|
+|underline|字符串|应用于字体的下划线类型。可能的值是：`None`、`Single`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartFont](../resources/chartfont.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

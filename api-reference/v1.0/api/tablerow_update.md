@@ -26,6 +26,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [TableRow](../resources/tablerow.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

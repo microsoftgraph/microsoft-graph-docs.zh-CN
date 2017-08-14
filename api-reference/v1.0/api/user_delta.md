@@ -42,7 +42,7 @@ GET /users/delta
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
 
 如果成功，此方法的响应正文返回`200, OK`响应代码和[用户](../resources/user.md)集合对象。响应还包括 nextLink URL 或 deltaLink URL。 
 

@@ -19,9 +19,10 @@ POST /groups/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| 设置为 **false**。只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|布尔| 设置为 **false**。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法将在包含该组所属组 ID 的响应正文中返回 `200, OK` 响应代码和字符串集合。
 
 ## <a name="example"></a>示例

@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 |index|number|要检索的对象的索引值。从零开始编制索引。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象。
 
 ## <a name="example"></a>示例

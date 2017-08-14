@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 |横向|boolean|可选。如果为 True，则将指定区域中每一行的单元格合并为一个单独的合并单元格。默认值是 false。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

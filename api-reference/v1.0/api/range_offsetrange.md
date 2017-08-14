@@ -29,6 +29,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 |columnOffset|number|区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

@@ -34,10 +34,13 @@ POST /schemaExtensions
 |targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [schemaExtension](../resources/schemaextension.md)对象。
 
 ## <a name="example"></a>示例
-### <a name="request-1"></a>请求 1
+
+##### <a name="request-1"></a>请求 1
+
 第一个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
 
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
@@ -72,7 +75,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-1"></a>响应 1
+##### <a name="response-1"></a>响应 1
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -109,7 +113,8 @@ Content-length: 420
 }
 ```
 
-### <a name="request-2"></a>请求 2
+##### <a name="request-2"></a>请求 2
+
 第二个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
 
 <!-- {
@@ -143,7 +148,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-2"></a>响应 2
+##### <a name="response-2"></a>响应 2
+
 该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

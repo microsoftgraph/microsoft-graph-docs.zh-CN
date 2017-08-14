@@ -25,7 +25,8 @@ POST /domains
 
 > 请求正文包含新域的 id 属性。Id 是唯一可以指定，也是必须指定的属性。此 id 属性值是要创建的完全限定的域名。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [domain](../resources/domain.md) 对象。
 
 ## <a name="example"></a>示例

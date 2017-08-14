@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 |seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可能的值是：`Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Chart](../resources/chart.md) 对象。
 
 ## <a name="example"></a>示例

@@ -45,6 +45,7 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [权限](../resources/permission.md) 资源集合。
 
 项目的有效权限可能来自两个源：

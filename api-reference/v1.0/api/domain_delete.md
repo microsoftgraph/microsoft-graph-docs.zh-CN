@@ -29,7 +29,7 @@ DELETE /domains/{id}
 
 请勿提供此方法的请求正文。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
 
 如果成功，此方法返回 `204, No Content` 响应代码。它不返回响应正文。
 

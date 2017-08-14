@@ -4,7 +4,7 @@
 
 接受的发件人列表中的用户可以发布到组对话（在 GET 请求 URL 中标识）。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 ## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下任意一个**范围**： *Group.Read.All* 或 *Group.ReadWrite.All*
+若要执行此 API，必须有以下任意一个**范围**：*Group.Read.All* 或 *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,7 +19,9 @@ GET /groups/{id}/acceptedSenders
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -17,7 +17,9 @@ GET /organization
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [organization](../resources/organization.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

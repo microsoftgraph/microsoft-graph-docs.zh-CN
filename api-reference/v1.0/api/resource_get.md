@@ -22,7 +22,9 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和图像或文件二进制数据。
 
 注意：图像无法直接在浏览器中呈现，因为与页面内容的其他部分一样，检索它们需要授权。

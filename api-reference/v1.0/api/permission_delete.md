@@ -9,7 +9,7 @@
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -31,6 +31,7 @@ DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

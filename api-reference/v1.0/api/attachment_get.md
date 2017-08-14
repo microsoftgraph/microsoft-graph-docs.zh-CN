@@ -12,7 +12,7 @@
 
 
 ## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：
+要执行此 API，需要以下**范围**之一：
 
 * 如果访问邮件中的附件：*Mail.Read*
 * 如果访问事件中的附件：*Calendars.Read*
@@ -72,7 +72,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 **attachment** 对象。返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）

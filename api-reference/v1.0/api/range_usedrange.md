@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 |valuesOnly|boolean|可选。仅将有值的单元格视为已使用的单元格。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

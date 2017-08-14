@@ -24,7 +24,8 @@ PATCH /planner/plans/<id>/details
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
 |sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](../resources/group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。|
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。

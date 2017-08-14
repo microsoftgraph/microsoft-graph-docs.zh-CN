@@ -29,6 +29,7 @@ POST /users
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [user](../resources/user.md) 对象。
 
 ## <a name="example"></a>示例

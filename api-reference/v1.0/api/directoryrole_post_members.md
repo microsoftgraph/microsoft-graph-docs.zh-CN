@@ -20,6 +20,7 @@ POST /directoryRoles/{id}/members/$ref
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204, No Content` 响应代码。
 
 ## <a name="example"></a>示例

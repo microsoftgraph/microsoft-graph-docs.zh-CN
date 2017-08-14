@@ -30,7 +30,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [workbookRange](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

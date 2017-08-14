@@ -3,7 +3,7 @@
 
 更新用户对象的属性。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*User.ReadWrite；User.ReadWrite.All；Directory.ReadWrite.All*
+要执行此 API，需要以下**范围**之一：*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
 
 更新 passwordProfile 属性时，必须有以下范围：*Directory.AccessAsUser.All*
 
@@ -24,8 +24,8 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |city|String|用户所在的城市。支持 $filter。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
@@ -57,6 +57,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

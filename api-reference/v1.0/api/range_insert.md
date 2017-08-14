@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 |Shift|string|指定移动单元格的方式。可能的值是：`Down`、`Right`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

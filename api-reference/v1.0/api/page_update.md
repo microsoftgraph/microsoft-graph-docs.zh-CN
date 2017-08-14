@@ -24,6 +24,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 在请求正文中，提供表示页面更改的 [patchContentCommand](../resources/patchcontentcommand.md) 对象的数组。有关详细信息和示例，请参阅 <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">更新 OneNote 页面</a>。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

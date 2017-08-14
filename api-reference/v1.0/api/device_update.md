@@ -19,7 +19,9 @@ PATCH /devices/{id}
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的 [device](../resources/device.md) 属性的值。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例

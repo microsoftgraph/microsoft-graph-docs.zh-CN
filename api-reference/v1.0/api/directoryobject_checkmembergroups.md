@@ -31,6 +31,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 |groupIds|String|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 String 集合对象。
 
 ## <a name="example"></a>示例

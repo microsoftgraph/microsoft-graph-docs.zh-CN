@@ -20,7 +20,7 @@ PATCH /organization
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignedPlans|AssignedPlan|与租户相关的服务计划的集合。                          **注意：**不可为 null。            |
-|城市|String|            |
+|city|String|            |
 |companyLastDirSyncTime|DateTimeOffset|租户上次与本地目录同步的时间和日期。|
 |country|String|            |
 |countryLetterCode|String|            |
@@ -42,6 +42,7 @@ PATCH /organization
 |verifiedDomains|VerifiedDomain|与该租户相关联的域集合。                          **注意：**不可为 null。            |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [organization](../resources/organization.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

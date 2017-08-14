@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 |hasHeaders|boolean|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Table](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例

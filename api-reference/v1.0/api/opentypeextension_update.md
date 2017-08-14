@@ -64,7 +64,6 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
-
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `200 OK` 响应代码和更新的 [openTypeExtension](../resources/openTypeExtension.md) 对象。

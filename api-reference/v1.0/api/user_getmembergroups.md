@@ -25,6 +25,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 |securityEnabledOnly|Boolean|**true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法将在响应正文中返回 `200, OK` 响应代码和字符串集合，响应正文中包括用户是其成员的组的 ID。
 
 ## <a name="example"></a>示例

@@ -67,6 +67,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [contact](../resources/contact.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

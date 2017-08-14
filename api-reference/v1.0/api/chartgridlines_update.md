@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 |visible|boolean|表示坐标轴网格线是否可见的布尔值。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartGridlines](../resources/chartgridlines.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

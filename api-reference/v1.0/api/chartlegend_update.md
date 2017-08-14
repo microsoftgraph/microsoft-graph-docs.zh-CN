@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 |visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartLegend](../resources/chartlegend.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

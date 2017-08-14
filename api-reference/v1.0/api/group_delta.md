@@ -4,7 +4,7 @@
 
 ## <a name="prerequisites"></a>先决条件
 
-要执行此 API，需要以下**范围**之一：*Group.Read.All* 或 *Group.ReadWrite.All*
+若要执行此 API，必须有以下任意一个**范围**：*Group.Read.All* 或 *Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /groups/delta
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200, OK` 响应代码和[组](../resources/group.md)集合对象。响应还包括作为 nextLink URL 或 deltaLink URL 的状态令牌。
 

@@ -32,6 +32,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 |showValue|boolean|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartDataLabels](../resources/chartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

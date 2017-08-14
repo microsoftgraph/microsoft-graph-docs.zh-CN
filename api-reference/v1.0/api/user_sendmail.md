@@ -27,6 +27,7 @@ POST /users/{id | userPrincipalName}/sendMail
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
