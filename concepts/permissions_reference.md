@@ -156,8 +156,8 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfiguration.Read.All_ | 读取 Microsoft Intune 配置（预览） | 允许应用读取 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-| _DeviceManagementServiceConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置（预览） | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+| _DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置（预览） | 允许应用读取 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置（预览） | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
 | _DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略（预览） | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
 | _DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略（预览） | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
 | _DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用（预览） | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
@@ -523,18 +523,23 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    读取用户的相关人员列表（预览） | 允许应用读取登录用户相关人员的排名列表。该列表包括当地联系人、来自社交网络的联系人、您所在组织的目录以及来自最近通信（例如电子邮件和 Skype）的人员。| 否 |
+| _People.Read_ |    读取用户的相关人员列表 | 允许应用读取登录用户相关人员的得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 | 否 |
+| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。此外，还允许应用搜索登录用户组织的整个目录。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。此外，还允许应用搜索登录用户组织的整个目录。 | 是 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>备注
 
+People.Read.All 权限仅适用于工作和学校帐户。 
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委托
-
+#### <a name="delegated"></a>委派
+* _People.Read_：读取相关人员列表（`GET /me/people`）
+* _People.Read.All_：读取同一个组织中的其他用户的相关人员列表（`GET /users('{id})/people`）
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -640,7 +645,6 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 |
 | _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 |
-| _UserTimelineActivity.Write.CreatedByApp_  |     将应用活动写入用户的日程表 | 允许应用向 Microsoft 日程表报告登录用户的应用活动信息。 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -652,7 +656,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ### <a name="remarks"></a>注解
 
-对于 Microsoft 帐户，有效的唯一权限是 _User.Read_、_User.ReadWrite_ 和 _UserTimelineActivity.Write.CreatedByApp_。对于工作或学校帐户，除 _UserTimelineActivity.Write.CreatedByApp_ 外的所有权限都有效。
+对于 Microsoft 帐户有效的唯一权限是 _User.Read_ 和 _User.ReadWrite_。所有权限对工作或学校帐户均有效。
 
 通过 _User.Read_ 权限，应用还可以通过 [organization](../api-reference/v1.0/resources/organization.md) 资源读取工作或学校帐户的已登录用户的基本公司信息。以下属性可用：ID、displayName 和 verifiedDomains。
 
@@ -738,8 +742,8 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
     
 | **涉及组的应用任务**  |  **必需的权限** |  **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
-| 例如，应用要读取显示名称和图片等基本组信息，以供用户在挑选组时查看（比如说）。  | _Group.Read.All_  | 读取所有组|
-| 应用要读取所有公共 Office 365 组中的全部内容，包括文件和对话。还需要显示组成员。  |  _Group.Read.All_、_User.ReadBasic.All_ | 读取所有组、读取所有用户的基本配置文件 |
-| 应用要读取和写入所有公共 Office 365 组中的全部内容，包括文件和对话。还需要显示组成员，并能更新组成员（如果登录用户是组所有者的话）。  |     _Group.ReadWrite.All_、_User.ReadBasic.All_ |  读取和写入所有组、读取所有用户的基本配置文件 |
-| 应用要允许用户加入公共 Office 365 组。允许用户搜索特定组，再从枚举列表中选择一个组加入。用户会被添加到自己选择的任何组中。    |   _Group.ReadWrite.All_、_User.Read_ | 读取和写入所有组、登录并读取用户配置文件 |
-| 应用要通过 Microsoft Graph 创建组。 |    _Group.ReadWrite.All_ | 读取和写入所有组|
+| 应用想要读取基本组信息（仅限显示名称和图片），例如展示组挑选经验  | _Group.Read.All_  | 读取所有组|
+| 应用想要读取所有 Office 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，同时能够更新组成员（若是所有者）。  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|
+| 应用想要读取和写入所有 Office 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，同时能够更新组成员（若是所有者）。  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
+| 应用想要发现（找到）Office 365 组。它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。     | _Group.ReadWrite.All_ | 读取和写入所有组|
+| 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|

@@ -21,8 +21,8 @@ POST /workbook/tables/$/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [Table](../resources/table.md) 对象的 JSON 表示形式。
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Table](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例

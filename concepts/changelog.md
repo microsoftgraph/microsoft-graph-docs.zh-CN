@@ -6,12 +6,26 @@
 
 ## <a name="august-2017"></a>2017 年 8 月
 
+### <a name="people"></a>人员 
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | v1.0 | 向 v1.0 添加了 [People API](../api-reference/v1.0/resources/person.md)。有关 People API 的详细信息，请参阅[获取人员的相关信息](people_example.md)。|
+
+### <a name="group-lifecycle-policy"></a>组生命周期策略
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 添加了 [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) 实体。 |
+| 添加项 | Beta | 添加了以下组生命周期策略 API：[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) 和 [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
+| 添加项 | Beta | 向 [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) 实体添加了 [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 函数。 |
+
 ### <a name="onenote"></a>OneNote
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
-| 添加项 | v1.0 和 Beta | 向 **site** 添加了 [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) 导航属性。  |
-| 添加项 | Beta | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md)。 |
+| 添加项 | v1.0 和 Beta | 向 **site** 添加了 [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) 导航属性。  |
+| 添加项 | Beta | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook)。 |
 
 
 ## <a name="july-2017"></a>2017 年 7 月

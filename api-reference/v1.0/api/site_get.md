@@ -10,7 +10,7 @@
 * 网站集的唯一 ID (guid)
 * 网站的唯一 ID (guid)
 
-还有一个保留的网站标识符 `root`，其经常为给定的目标引用根网站，如下所示：
+还有一个保留的网站标识符，即 `root`。它经常用于引用给定目标的根网站，如下所示：
 
 * `/sites/root`：租户根网站。
 * `/groups/{group-id}/sites/root`：该组的团队网站。
@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>示例
 
-### <a name="request"></a>请求
+##### <a name="request"></a>请求
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>响应
+##### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

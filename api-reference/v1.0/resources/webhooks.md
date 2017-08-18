@@ -7,19 +7,39 @@ Microsoft Graph REST API 使用 Webhook 机制来将通知传递到客户端。�
 * 邮件
 * 事件
 * 联系人
-* 群组对话
-* 驱动器根项
+* 组对话
+* OneDrive 上共享的内容，包括与 SharePoint 网站关联的驱动器。
+* 用户的个人 OneDrive 文件夹
+
+例如，可以创建以下特定文件夹的订阅：`me/mailfolders('inbox')/messages`
+
+或以下顶级资源的订阅：`me/messages`、`me/contacts`、`me/events`
+
+或以下 Sharepoint / OneDrive for Business 驱动器的订阅：`/drive/root`
+
+或以下用户个人 OneDrive 的订阅：`/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 Microsoft Graph 接受订阅请求之后，它将通知推送到订阅中指定的 URL。然后应用程序根据其业务逻辑执行操作。例如，它获取更多数据，更新缓存和视图等。
 
-应用应在过期之前续订其订阅。它们还可以随时取消订阅以停止获取通知。
+应用应在过期之前续订其订阅。当前的最长过期时间为，将三天减去从创建时起的 90 分钟。需要在过期时间之前续订其订阅。否则，它们将需要新建订阅。
 
-在 GitHub 上查看以下代码示例。
+应用还可以随时取消订阅以停止接收通知。
 
-* [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)（面向 Node.js 的 Microsoft Graph Webhooks 示例）
-* [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)（面向 ASP.NET 的 Microsoft Graph Webhooks 示例）
+通常订阅操作需要拥有对资源的读取权限。例如，若要获取邮件通知，应用需要 `Mail.Read` 权限。[创建订阅](../api/subscription_post_subscriptions.md)一文列出了各个资源类型所需的权限。下表列出了将 webhook 用于特定资源类型时应用可以请求的权限类型。 
 
-我们来看一看订阅流程。
+| 权限类型 | v1.0 中支持的资源类型 |
+|:----------------|:---------------------------------|
+| 委派 - 工作或学校帐户 | [contact](contact.md)、[conversation](conversation.md)、[drive](drive.md)、[event](event.md)、[message](message.md) |
+| 委派 - 个人 Microsoft 帐户 | 无 |
+| 应用程序 | [contact](contact.md)、[conversation](conversation.md)、[event](event.md)、[message](message.md) |
+
+## <a name="code-samples"></a>代码示例
+
+可在 GitHub 上获取以下代码示例。
+
+* [面向 Node.js 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
+* [面向 ASP.NET 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
 # <a name="creating-a-subscription"></a>创建订阅
 
@@ -32,20 +52,6 @@ Microsoft Graph 接受订阅请求之后，它将通知推送到订阅中指定�
 3. 客户端将验证令牌发送回 Microsoft Graph。
 
 客户端必须存储订阅 ID 以便将通知与相应订阅关联。
-
-## <a name="characteristics-of-subscriptions"></a>订阅的特征
-
-可以创建这些资源的订阅，例如邮件、事件、联系人和驱动器根项。
-
-可以创建特定文件夹的订阅：`https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-或顶级资源的订阅：`https://graph.microsoft.com/v1.0/me/messages`
-
-或驱动器根项的订阅：`https://graph.microsoft.com/v1.0/me/drive/root`
-
-在大多数情况下，创建订阅都需要读取资源范围。例如，若要获取通知消息，应用程序需要 `mail.read` 权限。请注意，目前，OneDrive 驱动器根项需要 `Files.ReadWrite` 权限，与 SharePoint 站点关联的驱动器需要 `Files.ReadWrite.All` 权限。
-
-订阅过期。当前的最长过期时间为，将三天减去从创建时起的 90 分钟（共计 4230 分钟）。需要在过期时间之前续订应用订阅。否则，它们将需要新建订阅。
 
 ## <a name="notification-url-validation"></a>通知 URL 验证
 
@@ -157,7 +163,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 }
 ```
 
-请注意，值对象包含一个列表。如果有很多排队的通知，Microsoft Graph 在单个请求中发送它们。
+请注意，值对象包含一个列表。如果有很多排队的通知，Microsoft Graph 会在单个请求中发送这些通知。
 
 ## <a name="processing-the-notification"></a>处理通知
 

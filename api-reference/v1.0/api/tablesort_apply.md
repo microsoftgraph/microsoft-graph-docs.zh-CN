@@ -29,6 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 |method|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

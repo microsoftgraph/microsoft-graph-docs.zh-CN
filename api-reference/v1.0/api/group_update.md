@@ -24,14 +24,14 @@ PATCH /groups/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
-|description|String|可选的组说明。 |
+|autoSubscribeNewMembers|布尔|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
+|说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection|指定要创建的组的类型。可取值为 **Unified**（要创建 Office 365 组）或 **DynamicMembership**（要创建动态组）。对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
 |mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
 |securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。对于 Office 365 组，此属性必须为 **false**。支持 $filter。|
-|visibility|Boolean|指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
+|visibility|布尔|指定 Office 365 组的可见性。可能的值是：**Private**、**Public** 或空（解释为 **Public**）。|
 
 **注意**
 
@@ -39,6 +39,7 @@ PATCH /groups/{id}
 - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes)。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例

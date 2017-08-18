@@ -30,6 +30,7 @@ PATCH /groups/{group-id}/drive/items/{item-id}
 在请求正文中，提供应更新的属性的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，应用不应包括尚未更改的属性。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [DriveItem](../resources/driveitem.md) 资源。
 
 ## <a name="example"></a>示例
@@ -48,8 +49,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>响应
-下面是一个响应示例。为提高可读性，此响应被截断。
+##### <a name="response"></a>响应
+
+以下示例显示了相应的响应。为提高可读性，此响应被截断。
 
 <!-- {
   "blockType": "response",

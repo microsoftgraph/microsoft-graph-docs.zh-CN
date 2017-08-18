@@ -5,7 +5,7 @@
 ## <a name="prerequisites"></a>先决条件
 要执行此 API，需要以下**范围**之一：
 
-*Group.ReadWrite*, *Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -28,6 +28,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 |toRecipients|[收件人](../resources/recipient.md) 集合|线程要转发至的收件人。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 |applyTo|string|可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

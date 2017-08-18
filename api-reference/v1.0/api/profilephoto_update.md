@@ -45,6 +45,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 在请求正文中，包括请求正文中照片的二进制数据。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `200 OK` 响应代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

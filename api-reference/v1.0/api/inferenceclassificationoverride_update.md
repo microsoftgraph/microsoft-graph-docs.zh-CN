@@ -28,10 +28,10 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
-
+|classifyAs|string| 指定始终应如何对来自特定发件人的传入邮件进行分类。可能的值是：`focused`、`other`。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

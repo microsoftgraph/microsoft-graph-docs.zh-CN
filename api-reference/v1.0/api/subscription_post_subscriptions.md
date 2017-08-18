@@ -2,7 +2,18 @@
 
 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一，具体取决于目标资源：*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite* 或 *Files.ReadWrite.All*。***注意：***借助 /v1.0 终结点，大多数资源都支持应用程序权限。组中的对话和 OneDrive 驱动器根项不支持应用程序权限。
+创建订阅需要读取资源范围。例如，若要获取通知消息，应用需要 `Mail.Read` 权限。下表列出了对各个资源所需权限的建议。
+
+| 资源类型/项        | 范围               |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Drive（用户的 OneDrive）    | Files.ReadWrite     |
+| Drives（Sharepoint 共享内容和驱动器） | Files.ReadWrite.All |
+
+ ***注意：***借助 /v1.0 终结点，大多数资源都支持应用程序权限。组中的对话和 OneDrive 驱动器根项不支持应用程序权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +28,8 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [subscription](../resources/subscription.md) 对象。
 
 ## <a name="example"></a>示例
@@ -84,7 +95,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### <a name="notification-payload"></a>通知负载
+## <a name="notification-payload"></a>通知负载
 订阅资源更改时，Webhooks 设备使用以下负载将通知发送到通知 URL。通知终结点必须在 30 秒内发送无响应正文的 200 或 204 响应，否则将以呈指数级增加的时间间隔重新尝试通知。始终花费 30 秒或更长时间的服务可能会被阻止，且收到的通知集将减少。
 
 服务可能还会返回通知中的 422 响应，在这种情况下，订阅将被自动删除并且通知流会停止。

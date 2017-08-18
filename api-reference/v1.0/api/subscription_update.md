@@ -3,8 +3,20 @@
 通过延长到期时间续订订阅。
 
 单个资源类型的禁止日期即为资源订阅的到期日期。应该在到期日期之前准时续订订阅，以免错过通知。请参阅 [订阅](../resources/subscription.md) 了解各到期日期。
+
 ## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一，具体取决于目标资源：*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite* 或 *Files.ReadWrite.All*
+
+下表列出了对各个资源所需权限的建议。
+
+| 资源类型/项        | 范围               |
+|-----------------------------|---------------------|
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Drive（用户的 OneDrive）    | Files.ReadWrite     |
+| Drives（Sharepoint 共享内容和驱动器） | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,6 +29,7 @@ PATCH /subscriptions/{subscriptionId}
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -25,6 +25,7 @@ PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 请求正文的内容应该是要上载文件的二进制流。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在新建文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="example"></a>示例
@@ -41,8 +42,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>响应
-下面是一个响应示例。
+##### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

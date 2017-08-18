@@ -25,6 +25,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 |帖子|[帖子](../resources/post.md)|正在回复的新帖子。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

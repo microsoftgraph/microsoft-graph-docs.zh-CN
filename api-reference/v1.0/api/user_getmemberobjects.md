@@ -23,6 +23,7 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 |securityEnabledOnly|Boolean|**true** 指定仅应返回用户所属的安全组；**false** 指定应返回用户所属的所有组和目录角色。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法将在包含该用户所属组和目录角色 ID 的响应正文中返回 `200, OK` 响应代码和 String 集合。
 
 ## <a name="example"></a>示例

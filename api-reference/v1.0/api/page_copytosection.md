@@ -29,8 +29,8 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 |groupId|字符串|要复制到的组的 ID。仅在复制到 Office 365 组时使用。|
 |id|String|必需。目标分区的 ID。|
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。轮询 Operation-Location 终结点以[获取复制操作的状态](onenoteoperation_get.md)。
 
 ## <a name="example"></a>示例

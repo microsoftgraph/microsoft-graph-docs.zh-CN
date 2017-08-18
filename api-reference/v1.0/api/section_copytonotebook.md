@@ -30,6 +30,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |renameAs|字符串|副本的名称。默认为现有项的名称。 |
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。轮询 Operation-Location 终结点以[获取复制操作的状态](onenoteoperation_get.md)。
 
 ## <a name="example"></a>示例

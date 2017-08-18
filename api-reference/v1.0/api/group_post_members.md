@@ -18,8 +18,8 @@ POST /groups/{id}/members/$ref
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON 表示形式。
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

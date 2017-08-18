@@ -18,8 +18,8 @@ POST /groups/{id}/rejectedSenders/$ref
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 user 或 group 对象的 ID。
 
-
 ## <a name="response"></a>响应
+
 此方法返回 `204, No Content` 响应代码，不返回任何响应正文。
 
 ## <a name="example"></a>示例

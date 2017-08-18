@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 |注释|String|要包含的注释。可以为空字符串。|
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

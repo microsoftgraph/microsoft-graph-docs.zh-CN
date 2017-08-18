@@ -60,8 +60,9 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-#### <a name="response-example"></a>响应示例
-下面是一个响应示例。
+##### <a name="response"></a>响应 
+
+以下示例显示了相应的响应。
 
 <!-- {
   "blockType": "response",
@@ -79,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="upload-bytes-to-the-upload-session"></a>将字节上载到上载会话
+## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
 
 若要上载文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。你可以上载整个文件，也可以将文件拆分为多个片段，只要任意给定请求的最大字节数少于 60 MiB 即可。必须按顺序上载文件的片段。不按顺序上载文件的片段将导致错误。
 
@@ -100,7 +101,10 @@ Content-Range: bytes 0-25/128
 
 **重要说明：**应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。如果某片段声明有不同的文件大小，则请求将失败。
 
-#### <a name="response-example"></a>响应示例
+##### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,14 +170,16 @@ DELETE 请求将立即使上载会话过期，并删除以前上载的所有字�
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-#### <a name="response-example"></a>响应示例
+##### <a name="response"></a>响应 
+
+以下示例显示了相应的响应。
 
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## <a name="resuming-an-in-progress-upload"></a>继续正在进行的上载
+## <a name="resuming-an-in-progress-upload"></a>继续正在进行的上传
 
 如果上载请求在完成前断开或失败，将忽略该请求中的所有字节。如果应用程序与服务之间的连接断开，可能会发生这种情况。如果发生这种情况，应用程序仍可以继续传输以前完成的文件片段。
 

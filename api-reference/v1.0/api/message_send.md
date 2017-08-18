@@ -18,6 +18,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 ## <a name="request-body"></a>请求正文
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

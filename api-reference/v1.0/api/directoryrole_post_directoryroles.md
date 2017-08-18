@@ -25,8 +25,8 @@ POST /directoryRoles
 |:---------|:---------|:---------|
 |roleTemplateId | string | 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。这是唯一可以在请求中指定的属性。|
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。
 
 ## <a name="example"></a>示例

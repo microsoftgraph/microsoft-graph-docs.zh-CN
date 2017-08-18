@@ -34,6 +34,7 @@ PATCH /groups/{group-id}/drive/{item-id}
 **注意：**将项目移动到 OneDrive 的根目录下时不能使用 `"id:" "root"` 语法。需要使用根文件夹的真实 ID，或对父引用使用 `{"path": "/drive/root"}`。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [DriveItem](../resources/driveitem.md) 资源。
 
 ## <a name="example"></a>示例
@@ -53,8 +54,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>响应
-下面是一个响应示例。
+##### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
