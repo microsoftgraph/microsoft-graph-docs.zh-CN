@@ -1,55 +1,55 @@
-# <a name="get-a-site-resource"></a>获取网站资源
+# <a name="get-a-site-resource"></a><span data-ttu-id="7bc9e-101">获取网站资源</span><span class="sxs-lookup"><span data-stu-id="7bc9e-101">Get a site resource</span></span>
 
-检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
+<span data-ttu-id="7bc9e-p101">检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。</span><span class="sxs-lookup"><span data-stu-id="7bc9e-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
-[网站]: ../resources/site.md
+<span data-ttu-id="7bc9e-104">[网站]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="7bc9e-104">[site]: ../resources/site.md</span></span>
 
-**网站**可按唯一标识符处理，此唯一标识符是下列值的复合 ID：
+<span data-ttu-id="7bc9e-105">**网站**可按唯一标识符处理，此唯一标识符是下列值的复合 ID：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-105">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
 
-* 网站集主机名称 (contoso.sharepoint.com)
-* 网站集的唯一 ID (guid)
-* 网站的唯一 ID (guid)
+* <span data-ttu-id="7bc9e-106">网站集主机名称 (contoso.sharepoint.com)</span><span class="sxs-lookup"><span data-stu-id="7bc9e-106">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="7bc9e-107">网站集的唯一 ID (guid)</span><span class="sxs-lookup"><span data-stu-id="7bc9e-107">Site collection unique ID (guid)</span></span>
+* <span data-ttu-id="7bc9e-108">网站的唯一 ID (guid)</span><span class="sxs-lookup"><span data-stu-id="7bc9e-108">Site unique ID (guid)</span></span>
 
-还有一个保留的网站标识符 `root`，其经常为给定的目标引用根网站，如下所示：
+<span data-ttu-id="7bc9e-109">还有一个保留的网站标识符，即 `root`。它经常用于引用给定目标的根网站，如下所示：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-109">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* `/sites/root`：租户根网站。
-* `/groups/{group-id}/sites/root`：该组的团队网站。
+* <span data-ttu-id="7bc9e-110">`/sites/root`：租户根网站。</span><span class="sxs-lookup"><span data-stu-id="7bc9e-110">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="7bc9e-111">`/groups/{group-id}/sites/root`：该组的团队网站。</span><span class="sxs-lookup"><span data-stu-id="7bc9e-111">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a><span data-ttu-id="7bc9e-112">先决条件</span><span class="sxs-lookup"><span data-stu-id="7bc9e-112">Prerequisites</span></span>
 
-要执行此请求，需要以下范围之一：
+<span data-ttu-id="7bc9e-113">要执行此请求，需要以下范围之一：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-113">One of the following scopes is required to execute this request:</span></span>
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="7bc9e-114">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="7bc9e-114">Sites.Read.All</span></span>
+* <span data-ttu-id="7bc9e-115">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bc9e-115">Sites.ReadWrite.All</span></span>
 
-## <a name="get-the-tenants-root-site"></a>获取租户的根网站
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="7bc9e-116">获取租户的根网站</span><span class="sxs-lookup"><span data-stu-id="7bc9e-116">Get the tenant's root site</span></span>
 
-若要访问租户内的根 SharePoint 网站：
+<span data-ttu-id="7bc9e-117">若要访问租户内的根 SharePoint 网站：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-117">To access the root SharePoint site within a tenant:</span></span>
 
 ```http
 GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a>通过相对于服务器的 URL 访问网站
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="7bc9e-118">通过相对于服务器的 URL 访问网站</span><span class="sxs-lookup"><span data-stu-id="7bc9e-118">Access a site by server-relative URL</span></span>
 
-如果你的服务器具有**网站**资源的相对于服务器的 URL，你可以构建请求，如下所示：
+<span data-ttu-id="7bc9e-119">如果你的服务器具有**网站**资源的相对于服务器的 URL，你可以构建请求，如下所示：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-119">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a>访问组团队网站
+## <a name="access-a-group-team-site"></a><span data-ttu-id="7bc9e-120">访问组团队网站</span><span class="sxs-lookup"><span data-stu-id="7bc9e-120">Access a group team site</span></span>
 
-若要访问[组](../resources/group.md)的团队网站：
+<span data-ttu-id="7bc9e-121">若要访问[组](../resources/group.md)的团队网站：</span><span class="sxs-lookup"><span data-stu-id="7bc9e-121">To access the team site for a [group](../resources/group.md):</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a>示例
+## <a name="example"></a><span data-ttu-id="7bc9e-122">示例</span><span class="sxs-lookup"><span data-stu-id="7bc9e-122">Example</span></span>
 
-### <a name="request"></a>请求
+##### <a name="request"></a><span data-ttu-id="7bc9e-123">请求</span><span class="sxs-lookup"><span data-stu-id="7bc9e-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>响应
+##### <a name="response"></a><span data-ttu-id="7bc9e-124">响应</span><span class="sxs-lookup"><span data-stu-id="7bc9e-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

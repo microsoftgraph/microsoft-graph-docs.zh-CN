@@ -1,5 +1,52 @@
-<span data-ttu-id="ce98f-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ce98f-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+# <a name="activate-directoryrole"></a><span data-ttu-id="2f4d6-101">Activate directoryRole</span><span class="sxs-lookup"><span data-stu-id="2f4d6-101">Activate directoryRole</span></span>
+
+<span data-ttu-id="2f4d6-p101">激活目录角色。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，只激活公司管理员和隐式的用户目录角色。若要访问成员并将分配到另一个目录角色，首先必须通过相应的目录角色模板 ([directoryRoleTemplate](../resources/directoryroletemplate.md)) 将其激活。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-p101">Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](../resources/directoryroletemplate.md)).</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="2f4d6-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="2f4d6-106">Prerequisites</span></span>
+<span data-ttu-id="2f4d6-107">要执行此 API，需要以下**范围**之一：*Directory.ReadWrite.All* 或 *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="2f4d6-107">One of the following **scopes** is required to execute this API: *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f4d6-108">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2f4d6-108">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryRoles
+
+```
+## <a name="request-headers"></a><span data-ttu-id="2f4d6-109">请求标头</span><span class="sxs-lookup"><span data-stu-id="2f4d6-109">Request headers</span></span>
+| <span data-ttu-id="2f4d6-110">名称</span><span class="sxs-lookup"><span data-stu-id="2f4d6-110">Name</span></span>       | <span data-ttu-id="2f4d6-111">类型</span><span class="sxs-lookup"><span data-stu-id="2f4d6-111">Type</span></span> | <span data-ttu-id="2f4d6-112">说明</span><span class="sxs-lookup"><span data-stu-id="2f4d6-112">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="2f4d6-113">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f4d6-113">Authorization</span></span>  | <span data-ttu-id="2f4d6-114">string</span><span class="sxs-lookup"><span data-stu-id="2f4d6-114">string</span></span>  | <span data-ttu-id="2f4d6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2f4d6-117">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2f4d6-117">Content-Type</span></span>  | <span data-ttu-id="2f4d6-118">application/json</span><span class="sxs-lookup"><span data-stu-id="2f4d6-118">application/json</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="2f4d6-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="2f4d6-119">Request body</span></span>
+<span data-ttu-id="2f4d6-120">在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-120">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
+
+<span data-ttu-id="2f4d6-121">下表显示激活目录角色时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-121">The following table shows the properties that are required when you activate a directory role.</span></span>
+
+|<span data-ttu-id="2f4d6-122">必需的参数</span><span class="sxs-lookup"><span data-stu-id="2f4d6-122">Required parameter</span></span> | <span data-ttu-id="2f4d6-123">类型</span><span class="sxs-lookup"><span data-stu-id="2f4d6-123">Type</span></span> | <span data-ttu-id="2f4d6-124">说明</span><span class="sxs-lookup"><span data-stu-id="2f4d6-124">Description</span></span>|
+|:---------|:---------|:---------|
+|<span data-ttu-id="2f4d6-125">roleTemplateId</span><span class="sxs-lookup"><span data-stu-id="2f4d6-125">roleTemplateId</span></span> | <span data-ttu-id="2f4d6-126">string</span><span class="sxs-lookup"><span data-stu-id="2f4d6-126">string</span></span> | <span data-ttu-id="2f4d6-p103">角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。这是唯一可以在请求中指定的属性。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-p103">The ID of the [directoryRoleTemplate](../resources/directoryroletemplate.md) that the role is based on. This is the only property that may be specified in the request.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="2f4d6-129">响应</span><span class="sxs-lookup"><span data-stu-id="2f4d6-129">Response</span></span>
+
+<span data-ttu-id="2f4d6-130">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-130">If successful, this method returns `201, Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="2f4d6-131">示例</span><span class="sxs-lookup"><span data-stu-id="2f4d6-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2f4d6-132">请求</span><span class="sxs-lookup"><span data-stu-id="2f4d6-132">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryrole_from_directoryroles"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/directoryRoles
+Content-type: application/json
+
+{
+  "roleTemplateId": "roleTemplateId-value"
+}
+```
+<span data-ttu-id="2f4d6-133">在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-133">In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="2f4d6-134">响应</span><span class="sxs-lookup"><span data-stu-id="2f4d6-134">Response</span></span>
+<span data-ttu-id="2f4d6-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2f4d6-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
