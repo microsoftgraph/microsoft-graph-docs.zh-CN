@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="概述" url="/en-us/concepts/overview" SEOKeyword="概述, Microsoft Graph API, 概述" SEODescription="借助 Microsoft Graph，应用程序可以跨 Microsoft 智能云访问数字工作和数字生活数据。为开发者提供巨大优势：统一 Microsoft API 终结点，用于使用 Microsoft 云中的数据、情报和数据解析。" />    
   <Item text="精选方案" url="/en-us/concepts/featured_scenarios"> 
@@ -2120,11 +2120,9 @@
         <Item text="设备配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
           <Item text="分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="获取设备配置概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="列出设备配置设备状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationuserstatus" />
+
+          <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="设备配置分配" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -2511,6 +2509,8 @@
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="windowsDefenderScan 操作" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
         <Item text="媒体内容分级（澳大利亚）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="媒体内容分级（加拿大）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
@@ -2549,15 +2549,6 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_update" />
         </Item>
-        <Item text="Windows 10 关联应用" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
-        <Item text="Windows 10 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
-          <Item text="获取设备配置概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
-          <Item text="列出设备配置设备状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
-          <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
-          <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
-        </Item>
         <Item text="设置状态设备摘要" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_get" />
@@ -2579,6 +2570,15 @@
         <Item text="软件更新状态摘要" url="/en-us/api-reference/beta/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
+        </Item>
+        <Item text="Windows 10 关联应用" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
+        <Item text="Windows 10 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
+          <Item text="获取设备配置概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
+          <Item text="列出设备配置设备状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
+          <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
+          <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
         <Item text="Windows 10 合规性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_create" />
@@ -2902,6 +2902,13 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_update" />
         </Item>
+      <Item text="Windows 隐私数据访问控制项" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem">
+        <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_list" />
+        <Item text="获取" url="/en-us/api-reference/beta/api/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_get" />
+        <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_create" />
+        <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
+        <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
+      </Item>
         <Item text="Windows 保护状态" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsprotectionstate">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsprotectionstate_list" />
           <Item text="获取" url="/en-us/api-reference/beta" />
@@ -3880,6 +3887,7 @@
 		  <Item text="获取 SharePoint 网站使用情况报告" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="获取 SharePoint 网站使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 SharePoint 网站使用情况报告。响应将是二进制流中的 CSV 文件。" />
 		  <Item text="获取 Yammer 活动报告" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="获取 Yammer 活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Yammer 活动报告。响应将是二进制流中的 CSV 文件。" />
 		  <Item text="获取 Yammer 设备使用情况报告" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="获取 Yammer 设备使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 Yammer 设备使用情况报告。响应将是二进制流中的 CSV 文件。" />
+		  <Item text="获取 Yammer 组活动报告" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="检索 Yammer 组活动报告。" />
 		</Item>
 	</Item>
     <Item text="架构扩展" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="扩展 API, Microsoft Graph API, 架构扩展 API, 架构扩展" SEODescription="将自定义数据添加到 Microsoft Graph 中资源的 API。">
