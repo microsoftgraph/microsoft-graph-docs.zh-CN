@@ -2,16 +2,14 @@
 
 在项目层次结构中搜索与查询匹配的项目。可以在文件夹层次结构、整个驱动器或与当前用户共享的文件内执行搜索。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
-
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    | 
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

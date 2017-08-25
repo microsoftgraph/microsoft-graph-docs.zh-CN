@@ -6,18 +6,16 @@
 
 应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。
 
-**注意：**如果你拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。
+**注意：**如果拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Files.ReadWrite.AppFolder
-* Sites.Read.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Files.ReadWrite.AppFolder    | 
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

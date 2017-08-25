@@ -4,10 +4,17 @@
 
 创建新会话、会话线程，然后可在组中创建帖子。使用 [回复线程](conversationthread_reply.md) 或 [回复帖子](post_reply.md) 进一步发布到该线程。
 
-注意：你还可以 [在现有会话中启动新线程](conversation_post_threads.md)。 
+注意：还可以[在现有会话中启动新线程](conversation_post_threads.md)。 
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Group.ReadWrite.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Group.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Group.ReadWrite.All | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

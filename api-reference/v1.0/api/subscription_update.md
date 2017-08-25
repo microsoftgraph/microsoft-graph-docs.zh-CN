@@ -4,13 +4,13 @@
 
 单个资源类型的禁止日期即为资源订阅的到期日期。应该在到期日期之前准时续订订阅，以免错过通知。请参阅 [订阅](../resources/subscription.md) 了解各到期日期。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-下表列出了对各个资源所需权限的建议。
+下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-| 资源类型/项        | 范围               |
+| 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
+| 联系人                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |

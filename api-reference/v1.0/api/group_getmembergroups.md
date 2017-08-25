@@ -3,8 +3,15 @@
 
 此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：*Group.Read.All；Directory.Read.All；Directory.ReadWrite.All；Directory.AccessAsUser.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -21,7 +28,7 @@ POST /groups/{id}/getMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|布尔|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|Boolean|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 

@@ -2,11 +2,17 @@
 
 删除组设置。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-要执行此 API，需要以下**范围**之一：*Directory.ReadWrite.All* 或 *Directory.AccessAsUser.All*
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-> 注意：只有租户管理员有权执行创建、更新和删除操作。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Directory.ReadWrite.All | 
+
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

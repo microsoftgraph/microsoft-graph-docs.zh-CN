@@ -1,12 +1,12 @@
 # <a name="delete-attachment"></a>删除附件
 
 从日历事件、电子邮件或组帖子中删除附件。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* 如果访问邮件中的附件：*Mail.ReadWrite*
-* 如果访问事件中的附件：*Calendars.ReadWrite*
-* 如果访问组事件或帖子中的附件：*Group.ReadWrite.All*
+* 如果访问邮件中的附件：Mail.ReadWrite。
+* 如果访问事件中的附件：Calendars.ReadWrite。
+* 如果访问组事件或帖子中的附件：Group.ReadWrite.All。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -2,18 +2,17 @@
 
 在 DriveItem 的 **children** 关系中返回 [DriveItems](../resources/driveitem.md) 集合。
 
-具有非 null **文件夹**或**包** facet 的 DriveItem 可以拥有一个或多个子 DriveItem。
+具有非 null **folder** 或 **package** facet 的 DriveItem 可以拥有一个或多个子 DriveItem。
 
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    | 
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 ```http

@@ -1,17 +1,17 @@
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 
-检索已与 [驱动器](../resources/drive.md) 所有者共享的 [DriveItem](../resources/driveitem.md) 资源的集合。
+检索已与[驱动器](../resources/drive.md)所有者共享的 [DriveItem](../resources/driveitem.md) 资源的集合。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.Read.All、Files.ReadWrite.All    | 
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
 
-
-**注意：**虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 范围成功发出，但一些属性可能会丢失。此外，如果没有 **All** 范围之一，无法访问从此 API 返回的共享项。
+此外，如果没有 **All** 范围之一，无法访问从此 API 返回的共享项。
 
 ## <a name="http-request"></a>HTTP 请求
 

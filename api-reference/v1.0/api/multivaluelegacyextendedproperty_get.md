@@ -21,13 +21,13 @@
 
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
-## <a name="prerequisites"></a>先决条件
-要能执行此 API，需要以下**范围**之一，具体取决于所获取的资源：
+## <a name="permissions"></a>权限
+若要调用此 API，必须有以下权限之一，具体视要获取的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Group.Read.All 
  
 ## <a name="http-request"></a>HTTP 请求
 

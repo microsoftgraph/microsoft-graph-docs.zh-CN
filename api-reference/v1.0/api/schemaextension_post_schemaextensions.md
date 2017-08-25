@@ -6,8 +6,15 @@
 
 请参阅如何[定义描述培训课程的架构扩展](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course)的示例，通过架构扩展定义[使用培训课程数据创建新组](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data)，并[将培训课程数据添加到现有组](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group)。
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**：*Directory.AccessAsUser.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

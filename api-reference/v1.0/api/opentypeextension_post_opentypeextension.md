@@ -2,19 +2,17 @@
 
 创建开放扩展（[openTypeExtension](../resources/openTypeExtension.md) 对象），并在新建或现有的资源实例中添加自定义属性。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-若要执行此 API，必须有以下**权限**之一，具体视要在其中创建扩展插件的资源而定：
+若要调用此 API，必须有以下权限之一，具体视要在其中创建扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | _Device.ReadWrite.All_ | [事件](../resources/event.md) | _Calendars.ReadWrite_ |
-| [组](../resources/group.md) | _Group.ReadWrite.All_ | [组事件](../resources/event.md) | _Group.ReadWrite.All_ |
-| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ |
-| [组织](../resources/organization.md) | _Directory.AccessAsUser.All_ | [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [用户](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
-
+| [设备](../resources/device.md) | Device.ReadWrite.All | [事件](../resources/event.md) | Calendars.ReadWrite |
+| [组](../resources/group.md) | Group.ReadWrite.All | [组事件](../resources/event.md) | Group.ReadWrite.All |
+| [组帖子](../resources/post.md) | Group.ReadWrite.All | [邮件](../resources/message.md) | Mail.ReadWrite |
+| [组织](../resources/organization.md) | Directory.AccessAsUser.All | [个人联系人](../resources/contact.md) | Contacts.ReadWrite |
+| [用户](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP 请求
 

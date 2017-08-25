@@ -2,16 +2,15 @@
 
 检索可用于目标 [用户](../resources/user.md) 或 [组](../resources/group.md) 的 [驱动器](../resources/drive.md) 资源的列表。你的应用程序也可以请求 SharePoint 根网站上的文档库集。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-要执行此 API，需要以下**范围**之一：
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    | 
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -6,13 +6,13 @@ GET 操作查找用户邮箱在 Exchange Online 上的指定照片。
 
 > **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
-## <a name="prerequisites"></a>先决条件
-要针对以下几项执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-*   租户中任意用户的个人资料照片，包括已登录用户 - *User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
-*   特别是已登录用户的个人资料照片 - *User.Read；User.ReadWrite；User.ReadBasic.All；User.Read.All；User.ReadWrite.All*
-* **组**的个人资料照片 - *Group.Read.All；Group.ReadWrite.All*
-* **联系人**的照片 - *Contacts.Read；Contacts.ReadWrite*
+*   租户中任意用户的个人资料照片，包括已登录用户 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All
+*   特别是已登录用户的个人资料照片 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All
+* **组**的个人资料照片 - Group.Read.All、Group.ReadWrite.All
+* **联系人**的照片 - Contacts.Read、Contacts.ReadWrite
 
 ## <a name="http-request-to-get-the-photo"></a>获取照片的 HTTP 请求
 <!-- { "blockType": "ignored" } -->

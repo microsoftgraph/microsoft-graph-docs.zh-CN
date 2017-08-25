@@ -6,13 +6,12 @@
 
 > **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-## <a name="prerequisites"></a>先决条件
-要针对以下几项执行此 API，需要以下**范围**之一：
-
-- 已登录**用户** - *User.ReadWrite*、*User.ReadWrite.All* 的个人资料照片
-- **组** - *Group.ReadWrite.All* 的个人资料照片
-- **联系人** - *Contacts.ReadWrite* 的照片
+- 已登录**用户**的个人资料照片 - User.ReadWrite、User.ReadWrite.All
+- **组**的个人资料照片 - Group.ReadWrite.All
+- **联系人**的照片 - Contacts.ReadWrite
 
 > **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅[无需已登录用户即可访问](../../../concepts/auth_v2_service.md)。
 

@@ -19,14 +19,13 @@
 
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
+要调用此 API，需要以下范围之一，具体视将在其中创建扩展查件的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-要执行此 API，需要以下**范围**之一，具体取决于将在其中创建扩展属性的资源：
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## <a name="http-request"></a>HTTP 请求
 可以在新建或现有的资源实例中创建扩展属性。
@@ -100,7 +99,7 @@ PATCH /groups/{id}/events/{id}
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id|string|对象在相应集合中的唯一标识符。必需。|
-|_Body parameters_|
+|_Body 参数_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 一个或多个多值扩展属性的数组。 |
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|

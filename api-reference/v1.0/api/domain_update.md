@@ -4,9 +4,16 @@
 
 > **重要说明：**只有已验证的域可以进行更新。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Domain.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

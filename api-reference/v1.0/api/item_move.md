@@ -2,15 +2,16 @@
 
 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。这是[更新](item_update.md)方法的一种特殊情况。你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。
 
-无法使用这一请求在 [驱动器](../resources/drive.md) 之间移动项目。
+无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    | 
+|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -4,8 +4,15 @@
 如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：*Calendars.Read.Shared* 或 *Calendars.ReadWrite.Shared*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Calendars.Read.Shared、Calendars.ReadWrite.Shared    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | 不支持。 | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

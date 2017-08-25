@@ -1,11 +1,17 @@
 
 # <a name="update-user"></a>更新用户
 
-更新用户对象的属性。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
+更新 user 对象的属性。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-更新 passwordProfile 属性时，必须有以下范围：*Directory.AccessAsUser.All*
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | User.ReadWrite    | 
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All | 
+
+更新 passwordProfile 属性时，必须有以下范围：Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -24,8 +30,8 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|分配给该用户的许可证。不可为 null。            |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |city|String|用户所在的城市。支持 $filter。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|

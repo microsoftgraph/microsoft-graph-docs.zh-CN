@@ -1,8 +1,15 @@
 # <a name="create-user"></a>创建用户
 
 使用此 API 新建用户。请求正文包含要创建的用户。至少必须指定必需的用户属性。可以选择指定其他任意可写属性。
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：*User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

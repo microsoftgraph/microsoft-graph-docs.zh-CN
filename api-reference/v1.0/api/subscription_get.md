@@ -1,13 +1,13 @@
 # <a name="get-subscription"></a>获取订阅
 
 检索订阅的属性和关系。
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-下表列出了对各个资源所需权限的建议。
+下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-| 资源类型/项        | 范围               |
+| 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
+| 联系人                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |

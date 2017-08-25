@@ -421,7 +421,9 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 
 #### <a name="delegated-permissions"></a>委派权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Member.Read.Hidden_ | 读取隐藏成员资格 | 对于已登录用户具有访问权限的隐藏组和管理单元，允许应用代表已登录用户读取隐藏组和管理单元的成员资格。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -429,10 +431,17 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Member.Read.Hidden_ | 读取所有隐藏成员 | 允许应用在没有登录用户的情况下读取隐藏的组和管理单元中的成员。 | 是 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>注释
+_Member.Read.Hidden_ 仅对工作或学校帐户有效。
+
 可以隐藏某些 Office 365 组中的成员资格。这意味着只有该组的成员可以查看其成员。此功能可用于帮助遵守要求组织对外部用户（例如，表示某个班级内注册的学生的 Office 365 组）隐藏组成员身份的规定。
 
 ### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委托
+
+* _Member.Read.Hidden_：代表已登录用户读取隐藏了成员资格的管理单元的成员 (`GET /administrativeUnits/{id}/members`)。
+* _Member.Read.Hidden_：代表已登录用户读取隐藏了成员资格的组的成员 (`GET /groups/{id}/members`)。
 
 #### <a name="application"></a>应用程序
 
@@ -537,7 +546,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 People.Read.All 权限仅适用于工作和学校帐户。 
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委派
+#### <a name="delegated"></a>委托
 * _People.Read_：读取相关人员列表（`GET /me/people`）
 * _People.Read.All_：读取同一个组织中的其他用户的相关人员列表（`GET /users('{id})/people`）
 

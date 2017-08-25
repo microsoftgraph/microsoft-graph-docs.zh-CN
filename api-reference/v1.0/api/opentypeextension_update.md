@@ -5,20 +5,19 @@
 - 如果请求正文中的属性与现有属性在扩展中的名称相匹配，则更新扩展中的数据。
 - 否则，属性及其数据将添加到扩展中。 
 
-扩展插件中的数据可以是基元类型，也可以是基元类型数组。
+扩展中的数据可以是基元类型，也可以是基元类型数组。
 
+## <a name="permissions"></a>权限
 
-## <a name="prerequisites"></a>先决条件
-
-若要执行此 API，必须有以下**权限**之一，具体视已在其中创建扩展插件的资源而定：
+若要调用此 API，必须有以下权限之一，具体视已在其中创建扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | _Device.ReadWrite.All_ | [事件](../resources/event.md) | _Calendars.ReadWrite_ |
-| [组](../resources/group.md) | _Group.ReadWrite.All_ | [组事件](../resources/event.md) | _Group.ReadWrite.All_ |
-| [组帖子](../resources/post.md) | _Group.ReadWrite.All_ | [邮件](../resources/message.md) | _Mail.ReadWrite_ |
-| [组织](../resources/organization.md) | _Directory.AccessAsUser.All_ | [个人联系人](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [用户](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [设备](../resources/device.md) | Device.ReadWrite.All | [事件](../resources/event.md) | Calendars.ReadWrite |
+| [组](../resources/group.md) | Group.ReadWrite.All | [组事件](../resources/event.md) | Group.ReadWrite.All |
+| [组帖子](../resources/post.md) | Group.ReadWrite.All | [邮件](../resources/message.md) | Mail.ReadWrite |
+| [组织](../resources/organization.md) | Directory.AccessAsUser.All | [个人联系人](../resources/contact.md) | Contacts.ReadWrite |
+| [用户](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。

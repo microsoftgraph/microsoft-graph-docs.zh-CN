@@ -1,8 +1,14 @@
 # <a name="list-ownedobjects"></a>列出 ownedObject
 
-获取用户拥有的 directory 对象的列表。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*User.Read.All；User.ReadWrite.All；Directory.Read.All；Directory.ReadWrite.All；Directory.AccessAsUser.All*
+获取用户拥有的 directory 对象列表。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

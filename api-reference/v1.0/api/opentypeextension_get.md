@@ -8,20 +8,20 @@
 |:-----|:-----|:-----|
 |从已知资源实例中获取特定扩展。| [设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md) | 仅开放扩展。|
 |获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展插件扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人|通过开放扩展扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人|通过开放扩展展开的资源实例。|
 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-若要执行此 API，必须有以下**权限**之一，具体视包含扩展插件的资源而定。
+要调用此 API，必须有以下权限之一，具体视包含扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | _Directory.Read.All_ | [事件](../resources/event.md) | _Calendars.Read_ | 
-| [组](../resources/group.md) | _Group.Read.All_ | [组事件](../resources/event.md) | _Group.Read.All_ | 
-| [组帖子](../resources/post.md) | _Group.Read.All_ | [邮件](../resources/message.md) | _Mail.Read_ | 
-| [组织](../resources/organization.md) | _Directory.Read.All_ | [个人联系人](../resources/contact.md) | _Contacts.Read_ |
-| [用户](../resources/user.md) | _User.Read.All_ | | |
+| [设备](../resources/device.md) | Directory.Read.All | [事件](../resources/event.md) | Calendars.Read | 
+| [组](../resources/group.md) | Group.Read.All | [组事件](../resources/event.md) | Group.Read.All | 
+| [组帖子](../resources/post.md) | Group.Read.All | [邮件](../resources/message.md) | Mail.Read | 
+| [组织](../resources/organization.md) | Directory.Read.All | [个人联系人](../resources/contact.md) | Contacts.Read |
+| [用户](../resources/user.md) | User.Read.All | | |
 
 
 

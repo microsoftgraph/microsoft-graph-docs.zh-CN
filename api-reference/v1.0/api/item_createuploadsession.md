@@ -125,7 +125,7 @@ Content-Type: application/json
 * `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
 * 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
 * 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
-* 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthoized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。   
+* 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。   
 
 
 ## <a name="completing-a-file"></a>完成文件

@@ -4,9 +4,16 @@
 
 **重要说明**：必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。有关详细信息，请参阅[列出 verificationDnsRecords](domain_list_verificationdnsrecords.md)。需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-要执行此 API，需要以下**范围**之一：*Domain.ReadWrite.All* 或 *Directory.AccessAsUser.All*
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Domain.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 

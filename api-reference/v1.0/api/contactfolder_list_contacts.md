@@ -1,8 +1,15 @@
 # <a name="list-contacts"></a>列出联系人
 
 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或从指定的联系人文件夹中获取联系人集合。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Contacts.Read；Contacts.ReadWrite*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Contacts.Read、Contacts.ReadWrite    | 
+|委派（个人 Microsoft 帐户） | Contacts.Read、Contacts.ReadWrite    | 
+|应用程序 | Contacts.Read、Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

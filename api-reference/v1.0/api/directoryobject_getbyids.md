@@ -5,11 +5,18 @@
 该函数的一些常见用途是：
 
 * 将返回 ID 集合的函数（例如 [getMemberObjects](directoryobject_getmemberobjects.md) 或 [getMemberGroups](directoryobject_getmembergroups.md)）返回的 ID 解析到其后备目录对象。
-* 将应用程序保存在外部存储的 ID 解析到其后备目录对象。
+* 将应用程序保存在外部存储中的 ID 解析到其后备目录对象。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="permissions"></a>权限
 
-要执行此 API，需要以下**范围**之一：_Directory.Read.All_；_Directory.AccessAsUser.All_
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Directory.Read.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 

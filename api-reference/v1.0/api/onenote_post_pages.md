@@ -5,10 +5,14 @@
 若要在默认笔记本的不同分区中创建页面，可以使用 `sectionName` 查询参数。示例：`../onenote/pages?sectionName=My%20section`
 
 `POST /onenote/pages` 操作仅用于在当前用户的默认笔记本中创建页面。如果你将其他笔记本作为目标，则可以[在指定分区中创建页面](../api/section_post_pages.md)。           
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：  
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-Notes.Create、Notes.ReadWrite 或 Notes.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Notes.Create、Notes.ReadWrite    | 
+|应用程序 | Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

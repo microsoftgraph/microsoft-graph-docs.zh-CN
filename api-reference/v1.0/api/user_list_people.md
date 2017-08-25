@@ -4,9 +4,16 @@
 
 可以通过 People API 获取此信息。有关示例，请参阅[示例](#examples)部分和[获取人员的相关信息](../../../concepts/people_example.md)一文。
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**：*People.Read* *People.Read.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
  
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | People.Read、People.Read.All    | 
+|委派（个人 Microsoft 帐户） | People.Read    | 
+|应用程序 | People.Read.All | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

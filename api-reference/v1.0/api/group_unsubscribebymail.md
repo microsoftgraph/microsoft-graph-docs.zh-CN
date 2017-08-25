@@ -1,9 +1,16 @@
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。仅支持 Office 365 组。 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Group.ReadWrite.All* 
-*Group.ReadWrite.All*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Group.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | 不支持。    | 
+|应用程序 | Group.ReadWrite.All | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,7 +24,6 @@ POST /groups/{id}/unsubscribeByMail
 ## <a name="request-body"></a>请求正文
 
 ## <a name="response"></a>响应
-
 如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例

@@ -2,14 +2,16 @@
 
 按 ID 或路径更新 [DriveItem](../resources/driveitem.md) 元数据。
 
-还可以通过更新项的 **parentReference** 属性，使用更新将 [项移动到](item_move.md) 其他父级。
+还可以通过更新项的 **parentReference** 属性，使用更新将[项移动到](item_move.md)其他父级。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    | 
+|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

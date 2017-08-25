@@ -1,8 +1,15 @@
 # <a name="get-calendar"></a>获取日历
 
 检索 calendar 对象的属性和关系。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.Read*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Calendars.Read    | 
+|委派（个人 Microsoft 帐户） | Calendars.Read    | 
+|应用程序 | Calendars.Read | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 用户或组的默认 [日历](../resources/calendar.md)。

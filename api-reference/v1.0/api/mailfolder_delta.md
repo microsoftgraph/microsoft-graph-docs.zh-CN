@@ -4,8 +4,15 @@
 
 对邮箱的邮件文件夹的 **delta** 函数调用与 GET 请求相似，除了前者可通过在对其的一次或多次调用中正确应用[状态令牌](../../../concepts/delta_query_overview.md)来查询邮件文件夹中的增量更改。通过此功能，你可以维护和同步本地存储的用户邮件文件夹，而无需每次都从服务器中获取该邮箱的所有邮件文件夹。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：_Mail.Read_；_Mail.ReadWrite_
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    | 
+|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    | 
+|应用程序 | Mail.Read、Mail.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

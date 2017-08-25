@@ -2,11 +2,11 @@
 
 从用户或群组的默认日历 `(../me/calendarview)` 或用户的其他一些日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
-## <a name="prerequisites"></a>先决条件
-若要执行此 API，必须有以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* 用户日历中的事件：_Calendars.Read_ 或 _Calendars.ReadWrite_
-* 群组日历中的事件：_Group.Read.All_ 或 _Group.ReadWrite.All_
+* 用户日历中的事件：Calendars.Read 或 Calendars.ReadWrite
+* 群组日历中的事件：Group.Read.All 或 Group.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
 

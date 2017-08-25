@@ -2,10 +2,17 @@
 
 检索日历中的事件列表。该列表包含单个实例会议和系列主控形状。
 
-要获取扩展的事件实例，可以 [获取日历视图](calendar_list_calendarview.md)，或者 [获取事件的实例](event_list_instances.md)。
+要获取扩展的事件实例，可以[获取日历视图](calendar_list_calendarview.md)，或者[获取事件的实例](event_list_instances.md)。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.Read*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Calendars.Read    | 
+|委派（个人 Microsoft 帐户） | Calendars.Read    | 
+|应用程序 | Calendars.Read | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 用户或组的默认 [日历](../resources/calendar.md)。

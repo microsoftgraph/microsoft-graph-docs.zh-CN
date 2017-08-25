@@ -1,12 +1,12 @@
 # <a name="create-subscription"></a>创建订阅
 
 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
-## <a name="prerequisites"></a>先决条件
-创建订阅需要读取资源范围。例如，若要获取通知消息，应用需要 `Mail.Read` 权限。下表列出了对各个资源所需权限的建议。
+## <a name="permissions"></a>权限
+创建订阅需要读取资源范围。例如，若要获取通知消息，应用需要 `Mail.Read` 权限。下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-| 资源类型/项        | 范围               |
+| 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
+| 联系人                    | Contacts.Read       |
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |

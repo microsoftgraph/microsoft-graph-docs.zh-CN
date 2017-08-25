@@ -2,8 +2,15 @@
 
 拒绝对指定事件的邀请。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Calendars.ReadWrite    | 
+|委派（个人 Microsoft 帐户） | Calendars.ReadWrite    | 
+|应用程序 | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -36,7 +43,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
-|sendResponse|布尔|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 

@@ -8,8 +8,15 @@
 
 如果发件人的替代存在，并且发件人更改了他/她的 SMTP 地址，“更新”此发件人的替代的唯一方法是：[删除](inferenceclassificationoverride_delete.md) 现有替代，然后使用新的 SMTP 地址 [创建](inferenceclassification_post_overrides.md) 新替代。
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**：*Mail.ReadWrite*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Mail.ReadWrite    | 
+|委派（个人 Microsoft 帐户） | Mail.ReadWrite    | 
+|应用程序 | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -28,7 +35,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定始终应如何对来自特定发件人的传入邮件进行分类。可能的值是：`focused`、`other`。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
 
 ## <a name="response"></a>响应
 

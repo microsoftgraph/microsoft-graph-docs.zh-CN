@@ -5,8 +5,15 @@
 通过发布到邮件附件集合，你可以把附件添加到现有邮件，也可以把附件添加到 [正在创建和发送的邮件](../api/user_sendmail.md)。
 
 由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：*Mail.ReadWrite*
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
+|权限类型      | 权限（从最低特权到最高特权）              | 
+|:--------------------|:---------------------------------------------------------| 
+|委派（工作或学校帐户） | Mail.ReadWrite    | 
+|委派（个人 Microsoft 帐户） | Mail.ReadWrite    | 
+|应用程序 | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 用户邮箱中的 [邮件](../resources/message.md) 附件。
