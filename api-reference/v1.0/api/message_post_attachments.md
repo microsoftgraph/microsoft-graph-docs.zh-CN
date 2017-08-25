@@ -1,5 +1,134 @@
-<span data-ttu-id="178c1-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="178c1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+# <a name="add-attachment"></a><span data-ttu-id="b6072-101">Add attachment</span><span class="sxs-lookup"><span data-stu-id="b6072-101">Add attachment</span></span>
+
+<span data-ttu-id="b6072-102">使用此 API 可将[附件](../resources/attachment.md)添加到邮件中。</span><span class="sxs-lookup"><span data-stu-id="b6072-102">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
+
+<span data-ttu-id="b6072-103">通过发布到邮件附件集合，你可以把附件添加到现有邮件，也可以把附件添加到 [正在创建和发送的邮件](../api/user_sendmail.md)。</span><span class="sxs-lookup"><span data-stu-id="b6072-103">You can add an attachment to an existing message by posting to its attachments collection, or you can add an attachment to a message that is being [created and sent on the fly](../api/user_sendmail.md).</span></span>
+
+<span data-ttu-id="b6072-104">由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。</span><span class="sxs-lookup"><span data-stu-id="b6072-104">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6072-105">权限</span><span class="sxs-lookup"><span data-stu-id="b6072-105">Permissions</span></span>
+<span data-ttu-id="b6072-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="b6072-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="b6072-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b6072-108">Permission type</span></span>      | <span data-ttu-id="b6072-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b6072-109">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="b6072-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b6072-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b6072-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6072-111">Mail.ReadWrite</span></span>    | 
+|<span data-ttu-id="b6072-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b6072-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6072-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6072-113">Mail.ReadWrite</span></span>    | 
+|<span data-ttu-id="b6072-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b6072-114">Application</span></span> | <span data-ttu-id="b6072-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6072-115">Mail.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="b6072-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b6072-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="b6072-117">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b6072-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+```http
+POST /me/messages/{id}/attachments
+POST /users/{id | userPrincipalName}/messages/{id}/attachments
+```
+<span data-ttu-id="b6072-118">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b6072-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+```http
+POST /me/mailFolders/{id}/messages/{id}/attachments
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
+```
+<span data-ttu-id="b6072-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="b6072-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+```http
+POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
+POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
+```
+## <a name="request-headers"></a><span data-ttu-id="b6072-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="b6072-121">Request headers</span></span>
+| <span data-ttu-id="b6072-122">名称</span><span class="sxs-lookup"><span data-stu-id="b6072-122">Name</span></span>       | <span data-ttu-id="b6072-123">类型</span><span class="sxs-lookup"><span data-stu-id="b6072-123">Type</span></span> | <span data-ttu-id="b6072-124">说明</span><span class="sxs-lookup"><span data-stu-id="b6072-124">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="b6072-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6072-125">Authorization</span></span>  | <span data-ttu-id="b6072-126">string</span><span class="sxs-lookup"><span data-stu-id="b6072-126">string</span></span>  | <span data-ttu-id="b6072-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b6072-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b6072-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b6072-129">Content-Type</span></span> | <span data-ttu-id="b6072-130">string</span><span class="sxs-lookup"><span data-stu-id="b6072-130">string</span></span>  | <span data-ttu-id="b6072-p104">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="b6072-p104">Nature of the data in the body of an entity. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="b6072-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="b6072-133">Request body</span></span>
+<span data-ttu-id="b6072-134">在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b6072-134">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b6072-135">响应</span><span class="sxs-lookup"><span data-stu-id="b6072-135">Response</span></span>
+
+<span data-ttu-id="b6072-136">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b6072-136">If successful, this method returns `201, Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
+
+## <a name="example-file-attachment"></a><span data-ttu-id="b6072-137">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="b6072-137">Example (file attachment)</span></span>
+
+##### <a name="request"></a><span data-ttu-id="b6072-138">请求</span><span class="sxs-lookup"><span data-stu-id="b6072-138">Request</span></span>
+<span data-ttu-id="b6072-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b6072-139">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_file_attachment_from_message"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
+Content-type: application/json
+Content-length: 142
+
+{
+  "@odata.type": "#microsoft.graph.fileAttachment",
+  "name": "smile",
+  "contentBytes": "R0lGODdhEAYEAA7"
+}
+```
+
+<span data-ttu-id="b6072-140">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b6072-140">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b6072-141">响应</span><span class="sxs-lookup"><span data-stu-id="b6072-141">Response</span></span>
+<span data-ttu-id="b6072-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b6072-142">Here is an example of the response.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileAttachment"
+} -->
+```http
+HTTP 201 Created
+Content-type: application/json
+Content-length: 202
+
+{
+    "id": "AAMkADNkN2R",
+    "lastModifiedDateTime": "2017-01-26T08:48:28Z",
+    "name": "smile",
+    "contentType": "image/gif",
+    "size": 1008,
+    "isInline": false,
+    "contentId": null,
+    "contentLocation": null,
+    "contentBytes": "R0lGODdhEAYEAA7"
+}
+
+```
+
+## <a name="example-item-attachment"></a><span data-ttu-id="b6072-143">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="b6072-143">Example (item attachment)</span></span>
+
+##### <a name="request"></a><span data-ttu-id="b6072-144">请求</span><span class="sxs-lookup"><span data-stu-id="b6072-144">Request</span></span>
+<span data-ttu-id="b6072-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b6072-145">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_message"
+}-->
+
+```
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
+Content-type: application/json
+Content-length: 200
+
+{
+  "@odata.type": "#microsoft.graph.itemAttachment",
+  "name": "Holiday event", 
+  "item": {
+    "@odata.type": "microsoft.graph.event",
+    "subject": "Discuss gifts for children",
+    "body": {
+      "contentType": "HTML",
+      "content": "Let's look for funding!"
+    },
+    "start": {
+      "dateTime": "2016-12-02T18:00:00",
+      "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+      "dateTime": "2016-12-02T19:00:00",
+      "timeZone": "Pacific Standard Time"
+    }
+  }
+}
+```
+
+##### <a name="response"></a><span data-ttu-id="b6072-146">响应</span><span class="sxs-lookup"><span data-stu-id="b6072-146">Response</span></span>
+<span data-ttu-id="b6072-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b6072-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

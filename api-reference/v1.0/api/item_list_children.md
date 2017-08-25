@@ -1,24 +1,20 @@
-# <span data-ttu-id="65cdd-101">列出 DriveItem 的子项</span><span class="sxs-lookup"><span data-stu-id="65cdd-101">List children of a driveItem</span></span>
-<a id="list-children-of-a-driveitem" class="xliff"></a>
+# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="6e214-101">列出 DriveItem 的子项</span><span class="sxs-lookup"><span data-stu-id="6e214-101">List children of a driveItem</span></span>
 
-<span data-ttu-id="65cdd-102">在 DriveItem 的 **children** 关系中返回 [DriveItems](../resources/driveitem.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="65cdd-102">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
+<span data-ttu-id="6e214-102">在 DriveItem 的 **children** 关系中返回 [DriveItems](../resources/driveitem.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="6e214-102">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
 
-<span data-ttu-id="65cdd-103">具有非 null **文件夹**或**包** facet 的 DriveItem 可以拥有一个或多个子 DriveItem。</span><span class="sxs-lookup"><span data-stu-id="65cdd-103">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
+<span data-ttu-id="6e214-103">具有非 null **folder** 或 **package** facet 的 DriveItem 可以拥有一个或多个子 DriveItem。</span><span class="sxs-lookup"><span data-stu-id="6e214-103">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
 
 
-## <span data-ttu-id="65cdd-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="65cdd-104">Prerequisites</span></span>
-<a id="prerequisites" class="xliff"></a>
-<span data-ttu-id="65cdd-105">要执行此 API，需要以下**范围**之一：</span><span class="sxs-lookup"><span data-stu-id="65cdd-105">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="6e214-104">权限</span><span class="sxs-lookup"><span data-stu-id="6e214-104">Permissions</span></span>
+<span data-ttu-id="6e214-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="6e214-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="65cdd-106">Files.Read</span><span class="sxs-lookup"><span data-stu-id="65cdd-106">Files.Read</span></span>
-* <span data-ttu-id="65cdd-107">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="65cdd-107">Files.ReadWrite</span></span>
-* <span data-ttu-id="65cdd-108">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="65cdd-108">Files.Read.All</span></span>
-* <span data-ttu-id="65cdd-109">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65cdd-109">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="65cdd-110">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="65cdd-110">Sites.Read.All</span></span>
-* <span data-ttu-id="65cdd-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65cdd-111">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="6e214-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="6e214-107">Permission type</span></span>      | <span data-ttu-id="6e214-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6e214-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="6e214-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6e214-109">Delegated (work or school account)</span></span> | <span data-ttu-id="6e214-110">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e214-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="6e214-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6e214-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e214-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e214-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="6e214-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="6e214-113">Application</span></span> | <span data-ttu-id="6e214-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e214-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> | 
 
-## <span data-ttu-id="65cdd-112">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65cdd-112">HTTP request</span></span>
-<a id="http-request" class="xliff"></a>
+## <a name="http-request"></a><span data-ttu-id="6e214-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6e214-115">HTTP request</span></span>
 ```http
 GET /me/drive/root/children
 GET /me/drive/items/{item-id}/children
@@ -28,27 +24,22 @@ GET /groups/{group-id}/drive/root/children
 GET /groups/{group-id}/drive/items/{item-id}
 ```
 
-## <span data-ttu-id="65cdd-113">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="65cdd-113">Optional query parameters</span></span>
-<a id="optional-query-parameters" class="xliff"></a>
-<span data-ttu-id="65cdd-114">此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="65cdd-114">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6e214-116">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6e214-116">Optional query parameters</span></span>
+<span data-ttu-id="6e214-117">此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6e214-117">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <span data-ttu-id="65cdd-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="65cdd-115">Request headers</span></span>
-<a id="request-headers" class="xliff"></a>
+## <a name="request-headers"></a><span data-ttu-id="6e214-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="6e214-118">Request headers</span></span>
 
-| <span data-ttu-id="65cdd-116">名称</span><span class="sxs-lookup"><span data-stu-id="65cdd-116">Name</span></span>          | <span data-ttu-id="65cdd-117">类型</span><span class="sxs-lookup"><span data-stu-id="65cdd-117">Type</span></span>   | <span data-ttu-id="65cdd-118">说明</span><span class="sxs-lookup"><span data-stu-id="65cdd-118">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="6e214-119">名称</span><span class="sxs-lookup"><span data-stu-id="6e214-119">Name</span></span>          | <span data-ttu-id="6e214-120">类型</span><span class="sxs-lookup"><span data-stu-id="6e214-120">Type</span></span>   | <span data-ttu-id="6e214-121">说明</span><span class="sxs-lookup"><span data-stu-id="6e214-121">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="65cdd-119">if-none-match</span><span class="sxs-lookup"><span data-stu-id="65cdd-119">if-none-match</span></span> | <span data-ttu-id="65cdd-120">String</span><span class="sxs-lookup"><span data-stu-id="65cdd-120">String</span></span> | <span data-ttu-id="65cdd-121">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="65cdd-121">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="6e214-122">if-none-match</span><span class="sxs-lookup"><span data-stu-id="6e214-122">if-none-match</span></span> | <span data-ttu-id="6e214-123">String</span><span class="sxs-lookup"><span data-stu-id="6e214-123">String</span></span> | <span data-ttu-id="6e214-124">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="6e214-124">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <span data-ttu-id="65cdd-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="65cdd-122">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="65cdd-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="65cdd-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6e214-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="6e214-125">Request body</span></span>
+<span data-ttu-id="6e214-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6e214-126">Do not supply a request body for this method.</span></span>
 
-## <span data-ttu-id="65cdd-124">示例</span><span class="sxs-lookup"><span data-stu-id="65cdd-124">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="6e214-127">示例</span><span class="sxs-lookup"><span data-stu-id="6e214-127">Example</span></span>
 
-##### <span data-ttu-id="65cdd-125">请求</span><span class="sxs-lookup"><span data-stu-id="65cdd-125">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="65cdd-126">下面是请求返回当前用户 OneDrive 的根文件夹中的 DriveItems 的示例。</span><span class="sxs-lookup"><span data-stu-id="65cdd-126">Here is an example request to return the DriveItems in the root folder of the current user's OneDrive.</span></span>
+##### <a name="request"></a><span data-ttu-id="6e214-128">请求</span><span class="sxs-lookup"><span data-stu-id="6e214-128">Request</span></span>
+<span data-ttu-id="6e214-129">下面是请求返回当前用户 OneDrive 的根文件夹中的 DriveItems 的示例。</span><span class="sxs-lookup"><span data-stu-id="6e214-129">Here is an example request to return the DriveItems in the root folder of the current user's OneDrive.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -58,10 +49,9 @@ GET /groups/{group-id}/drive/items/{item-id}
 GET https://graph.microsoft.com/v1.0/me/drive/root/children
 ```
 
-## <span data-ttu-id="65cdd-127">响应</span><span class="sxs-lookup"><span data-stu-id="65cdd-127">Response</span></span>
-<a id="response" class="xliff"></a>
+## <a name="response"></a><span data-ttu-id="6e214-130">响应</span><span class="sxs-lookup"><span data-stu-id="6e214-130">Response</span></span>
 
-<span data-ttu-id="65cdd-128">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="65cdd-128">Here is an example of the response.</span></span>
+<span data-ttu-id="6e214-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6e214-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,9 +73,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="65cdd-129">**注意：**如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。</span><span class="sxs-lookup"><span data-stu-id="65cdd-129">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
+<span data-ttu-id="6e214-132">**注意：**如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。</span><span class="sxs-lookup"><span data-stu-id="6e214-132">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
 
-<span data-ttu-id="65cdd-130">可以通过 [可选的查询字符串参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 控制页面大小</span><span class="sxs-lookup"><span data-stu-id="65cdd-130">You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)</span></span>
+<span data-ttu-id="6e214-133">可以通过 [可选的查询字符串参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 控制页面大小</span><span class="sxs-lookup"><span data-stu-id="6e214-133">You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

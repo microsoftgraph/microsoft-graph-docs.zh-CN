@@ -1,10 +1,17 @@
-# <a name="event-accept"></a><span data-ttu-id="53a9a-101">event: accept</span><span class="sxs-lookup"><span data-stu-id="53a9a-101">event: accept</span></span>
+# <a name="event-accept"></a><span data-ttu-id="78626-101">event: accept</span><span class="sxs-lookup"><span data-stu-id="78626-101">event: accept</span></span>
 
-<span data-ttu-id="53a9a-102">接受指定的事件。</span><span class="sxs-lookup"><span data-stu-id="53a9a-102">Accept the specified event.</span></span>
+<span data-ttu-id="78626-102">接受指定的事件。</span><span class="sxs-lookup"><span data-stu-id="78626-102">Accept the specified event.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="53a9a-103">先决条件</span><span class="sxs-lookup"><span data-stu-id="53a9a-103">Prerequisites</span></span>
-<span data-ttu-id="53a9a-104">要执行此 API，需要以下**范围**之一：*Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="53a9a-104">One of the following **scopes** is required to execute this API: *Calendars.ReadWrite*</span></span>
-## <a name="http-request"></a><span data-ttu-id="53a9a-105">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53a9a-105">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="78626-103">权限</span><span class="sxs-lookup"><span data-stu-id="78626-103">Permissions</span></span>
+<span data-ttu-id="78626-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="78626-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="78626-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="78626-106">Permission type</span></span>      | <span data-ttu-id="78626-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="78626-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="78626-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="78626-108">Delegated (work or school account)</span></span> | <span data-ttu-id="78626-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78626-109">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="78626-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="78626-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78626-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78626-111">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="78626-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="78626-112">Application</span></span> | <span data-ttu-id="78626-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78626-113">Calendars.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="78626-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="78626-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/accept
@@ -24,28 +31,28 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/ac
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
 ```
-## <a name="request-headers"></a><span data-ttu-id="53a9a-106">请求标头</span><span class="sxs-lookup"><span data-stu-id="53a9a-106">Request headers</span></span>
-| <span data-ttu-id="53a9a-107">名称</span><span class="sxs-lookup"><span data-stu-id="53a9a-107">Name</span></span>       | <span data-ttu-id="53a9a-108">类型</span><span class="sxs-lookup"><span data-stu-id="53a9a-108">Type</span></span> | <span data-ttu-id="53a9a-109">说明</span><span class="sxs-lookup"><span data-stu-id="53a9a-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="78626-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="78626-115">Request headers</span></span>
+| <span data-ttu-id="78626-116">名称</span><span class="sxs-lookup"><span data-stu-id="78626-116">Name</span></span>       | <span data-ttu-id="78626-117">类型</span><span class="sxs-lookup"><span data-stu-id="78626-117">Type</span></span> | <span data-ttu-id="78626-118">说明</span><span class="sxs-lookup"><span data-stu-id="78626-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="53a9a-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="53a9a-110">Authorization</span></span>  | <span data-ttu-id="53a9a-111">string</span><span class="sxs-lookup"><span data-stu-id="53a9a-111">string</span></span>  | <span data-ttu-id="53a9a-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="53a9a-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="53a9a-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="53a9a-114">Content-Type</span></span> | <span data-ttu-id="53a9a-115">string</span><span class="sxs-lookup"><span data-stu-id="53a9a-115">string</span></span>  | <span data-ttu-id="53a9a-p102">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="53a9a-p102">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="78626-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="78626-119">Authorization</span></span>  | <span data-ttu-id="78626-120">string</span><span class="sxs-lookup"><span data-stu-id="78626-120">string</span></span>  | <span data-ttu-id="78626-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="78626-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="78626-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="78626-123">Content-Type</span></span> | <span data-ttu-id="78626-124">string</span><span class="sxs-lookup"><span data-stu-id="78626-124">string</span></span>  | <span data-ttu-id="78626-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="78626-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="53a9a-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="53a9a-118">Request body</span></span>
-<span data-ttu-id="53a9a-119">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="53a9a-119">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="78626-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="78626-127">Request body</span></span>
+<span data-ttu-id="78626-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="78626-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="53a9a-120">参数</span><span class="sxs-lookup"><span data-stu-id="53a9a-120">Parameter</span></span>    | <span data-ttu-id="53a9a-121">类型</span><span class="sxs-lookup"><span data-stu-id="53a9a-121">Type</span></span>   |<span data-ttu-id="53a9a-122">说明</span><span class="sxs-lookup"><span data-stu-id="53a9a-122">Description</span></span>|
+| <span data-ttu-id="78626-129">参数</span><span class="sxs-lookup"><span data-stu-id="78626-129">Parameter</span></span>    | <span data-ttu-id="78626-130">类型</span><span class="sxs-lookup"><span data-stu-id="78626-130">Type</span></span>   |<span data-ttu-id="78626-131">说明</span><span class="sxs-lookup"><span data-stu-id="78626-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="53a9a-123">注释</span><span class="sxs-lookup"><span data-stu-id="53a9a-123">comment</span></span>|<span data-ttu-id="53a9a-124">String</span><span class="sxs-lookup"><span data-stu-id="53a9a-124">String</span></span>|<span data-ttu-id="53a9a-p103">响应中包含的文本。可选。</span><span class="sxs-lookup"><span data-stu-id="53a9a-p103">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="53a9a-127">sendResponse</span><span class="sxs-lookup"><span data-stu-id="53a9a-127">sendResponse</span></span>|<span data-ttu-id="53a9a-128">布尔</span><span class="sxs-lookup"><span data-stu-id="53a9a-128">Boolean</span></span>|<span data-ttu-id="53a9a-p104">如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="53a9a-p104">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="78626-132">注释</span><span class="sxs-lookup"><span data-stu-id="78626-132">comment</span></span>|<span data-ttu-id="78626-133">String</span><span class="sxs-lookup"><span data-stu-id="78626-133">String</span></span>|<span data-ttu-id="78626-p104">响应中包含的文本。可选。</span><span class="sxs-lookup"><span data-stu-id="78626-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="78626-136">sendResponse</span><span class="sxs-lookup"><span data-stu-id="78626-136">sendResponse</span></span>|<span data-ttu-id="78626-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="78626-137">Boolean</span></span>|<span data-ttu-id="78626-p105">如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="78626-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="53a9a-132">响应</span><span class="sxs-lookup"><span data-stu-id="53a9a-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="78626-141">响应</span><span class="sxs-lookup"><span data-stu-id="78626-141">Response</span></span>
 
-<span data-ttu-id="53a9a-p105">如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="53a9a-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="78626-p106">如果成功，此方法返回 `202, Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="78626-p106">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="53a9a-135">示例</span><span class="sxs-lookup"><span data-stu-id="53a9a-135">Example</span></span>
-<span data-ttu-id="53a9a-136">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="53a9a-136">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="53a9a-137">请求</span><span class="sxs-lookup"><span data-stu-id="53a9a-137">Request</span></span>
-<span data-ttu-id="53a9a-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="53a9a-138">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="78626-144">示例</span><span class="sxs-lookup"><span data-stu-id="78626-144">Example</span></span>
+<span data-ttu-id="78626-145">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="78626-145">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="78626-146">请求</span><span class="sxs-lookup"><span data-stu-id="78626-146">Request</span></span>
+<span data-ttu-id="78626-147">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="78626-147">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_accept"
@@ -61,8 +68,8 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="53a9a-139">响应</span><span class="sxs-lookup"><span data-stu-id="53a9a-139">Response</span></span>
-<span data-ttu-id="53a9a-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="53a9a-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="78626-148">响应</span><span class="sxs-lookup"><span data-stu-id="78626-148">Response</span></span>
+<span data-ttu-id="78626-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="78626-149">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

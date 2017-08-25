@@ -1,43 +1,50 @@
-# <a name="list-people"></a><span data-ttu-id="08828-101">列出人员</span><span class="sxs-lookup"><span data-stu-id="08828-101">List people</span></span>
+# <a name="list-people"></a><span data-ttu-id="84697-101">列出人员</span><span class="sxs-lookup"><span data-stu-id="84697-101">List people</span></span>
 
-<span data-ttu-id="08828-102">检索按与[用户](../resources/user.md)的相关性排序的 [person](../resources/person.md) 对象集合，相关性由用户的通信和协作模式和业务关系决定。</span><span class="sxs-lookup"><span data-stu-id="08828-102">Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns and business relationships.</span></span>
+<span data-ttu-id="84697-102">检索按与[用户](../resources/user.md)的相关性排序的 [person](../resources/person.md) 对象集合，相关性由用户的通信和协作模式和业务关系决定。</span><span class="sxs-lookup"><span data-stu-id="84697-102">Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns and business relationships.</span></span>
 
-<span data-ttu-id="08828-p101">可以通过 People API 获取此信息。有关示例，请参阅[示例](#examples)部分和[获取人员的相关信息](../../../concepts/people_example.md)一文。</span><span class="sxs-lookup"><span data-stu-id="08828-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
+<span data-ttu-id="84697-p101">可以通过 People API 获取此信息。有关示例，请参阅[示例](#examples)部分和[获取人员的相关信息](../../../concepts/people_example.md)一文。</span><span class="sxs-lookup"><span data-stu-id="84697-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="08828-105">先决条件</span><span class="sxs-lookup"><span data-stu-id="08828-105">Prerequisites</span></span>
-<span data-ttu-id="08828-106">若要执行此 API，必须有以下**范围**：*People.Read* *People.Read.All*</span><span class="sxs-lookup"><span data-stu-id="08828-106">The following **scopes** are required to execute this API: *People.Read* *People.Read.All*</span></span>
+## <a name="permissions"></a><span data-ttu-id="84697-105">权限</span><span class="sxs-lookup"><span data-stu-id="84697-105">Permissions</span></span>
+<span data-ttu-id="84697-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="84697-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
  
-## <a name="http-request"></a><span data-ttu-id="08828-107">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="08828-107">HTTP request</span></span>
+
+|<span data-ttu-id="84697-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="84697-108">Permission type</span></span>      | <span data-ttu-id="84697-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="84697-109">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="84697-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="84697-110">Delegated (work or school account)</span></span> | <span data-ttu-id="84697-111">People.Read、People.Read.All</span><span class="sxs-lookup"><span data-stu-id="84697-111">People.Read, People.Read.All</span></span>    | 
+|<span data-ttu-id="84697-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="84697-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="84697-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="84697-113">People.Read</span></span>    | 
+|<span data-ttu-id="84697-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="84697-114">Application</span></span> | <span data-ttu-id="84697-115">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="84697-115">People.Read.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="84697-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="84697-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="08828-108">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="08828-108">Optional query parameters</span></span>
-|<span data-ttu-id="08828-109">Name</span><span class="sxs-lookup"><span data-stu-id="08828-109">Name</span></span>|<span data-ttu-id="08828-110">值</span><span class="sxs-lookup"><span data-stu-id="08828-110">Value</span></span>|<span data-ttu-id="08828-111">说明</span><span class="sxs-lookup"><span data-stu-id="08828-111">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="84697-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="84697-117">Optional query parameters</span></span>
+|<span data-ttu-id="84697-118">Name</span><span class="sxs-lookup"><span data-stu-id="84697-118">Name</span></span>|<span data-ttu-id="84697-119">值</span><span class="sxs-lookup"><span data-stu-id="84697-119">Value</span></span>|<span data-ttu-id="84697-120">说明</span><span class="sxs-lookup"><span data-stu-id="84697-120">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="08828-112">$filter</span><span class="sxs-lookup"><span data-stu-id="08828-112">$filter</span></span>|<span data-ttu-id="08828-113">string</span><span class="sxs-lookup"><span data-stu-id="08828-113">string</span></span>|<span data-ttu-id="08828-114">将响应限制为仅记录中包含指定条件的那些人员。</span><span class="sxs-lookup"><span data-stu-id="08828-114">Limits the response to only those people whose record contains the specified criteria.</span></span>|
-|<span data-ttu-id="08828-115">$orderby</span><span class="sxs-lookup"><span data-stu-id="08828-115">$orderby</span></span>|<span data-ttu-id="08828-116">string</span><span class="sxs-lookup"><span data-stu-id="08828-116">string</span></span>|<span data-ttu-id="08828-p102">默认情况下，按与查询的相关性对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员的顺序。</span><span class="sxs-lookup"><span data-stu-id="08828-p102">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="08828-119">$search</span><span class="sxs-lookup"><span data-stu-id="08828-119">$search</span></span>|<span data-ttu-id="08828-120">string</span><span class="sxs-lookup"><span data-stu-id="08828-120">string</span></span>|<span data-ttu-id="08828-p103">按名字或别名搜索人员。支持模糊匹配。</span><span class="sxs-lookup"><span data-stu-id="08828-p103">Search for people by name or alias. Supports fuzzy matching.</span></span>|
-|<span data-ttu-id="08828-123">$select</span><span class="sxs-lookup"><span data-stu-id="08828-123">$select</span></span>|<span data-ttu-id="08828-124">string</span><span class="sxs-lookup"><span data-stu-id="08828-124">string</span></span>|<span data-ttu-id="08828-p104">要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。</span><span class="sxs-lookup"><span data-stu-id="08828-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
-|<span data-ttu-id="08828-127">$skip</span><span class="sxs-lookup"><span data-stu-id="08828-127">$skip</span></span>|<span data-ttu-id="08828-128">int</span><span class="sxs-lookup"><span data-stu-id="08828-128">int</span></span>|<span data-ttu-id="08828-p105">跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。</span><span class="sxs-lookup"><span data-stu-id="08828-p105">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
-|<span data-ttu-id="08828-131">$top</span><span class="sxs-lookup"><span data-stu-id="08828-131">$top</span></span>|<span data-ttu-id="08828-132">int</span><span class="sxs-lookup"><span data-stu-id="08828-132">int</span></span>|<span data-ttu-id="08828-133">要返回的结果数。</span><span class="sxs-lookup"><span data-stu-id="08828-133">Number of results to be returned.</span></span>|
+|<span data-ttu-id="84697-121">$filter</span><span class="sxs-lookup"><span data-stu-id="84697-121">$filter</span></span>|<span data-ttu-id="84697-122">string</span><span class="sxs-lookup"><span data-stu-id="84697-122">string</span></span>|<span data-ttu-id="84697-123">将响应限制为仅记录中包含指定条件的那些人员。</span><span class="sxs-lookup"><span data-stu-id="84697-123">Limits the response to only those people whose record contains the specified criteria.</span></span>|
+|<span data-ttu-id="84697-124">$orderby</span><span class="sxs-lookup"><span data-stu-id="84697-124">$orderby</span></span>|<span data-ttu-id="84697-125">string</span><span class="sxs-lookup"><span data-stu-id="84697-125">string</span></span>|<span data-ttu-id="84697-p103">默认情况下，按与查询的相关性对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员的顺序。</span><span class="sxs-lookup"><span data-stu-id="84697-p103">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="84697-128">$search</span><span class="sxs-lookup"><span data-stu-id="84697-128">$search</span></span>|<span data-ttu-id="84697-129">string</span><span class="sxs-lookup"><span data-stu-id="84697-129">string</span></span>|<span data-ttu-id="84697-p104">按名字或别名搜索人员。支持模糊匹配。</span><span class="sxs-lookup"><span data-stu-id="84697-p104">Search for people by name or alias. Supports fuzzy matching.</span></span>|
+|<span data-ttu-id="84697-132">$select</span><span class="sxs-lookup"><span data-stu-id="84697-132">$select</span></span>|<span data-ttu-id="84697-133">string</span><span class="sxs-lookup"><span data-stu-id="84697-133">string</span></span>|<span data-ttu-id="84697-p105">要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。</span><span class="sxs-lookup"><span data-stu-id="84697-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
+|<span data-ttu-id="84697-136">$skip</span><span class="sxs-lookup"><span data-stu-id="84697-136">$skip</span></span>|<span data-ttu-id="84697-137">int</span><span class="sxs-lookup"><span data-stu-id="84697-137">int</span></span>|<span data-ttu-id="84697-p106">跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。</span><span class="sxs-lookup"><span data-stu-id="84697-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
+|<span data-ttu-id="84697-140">$top</span><span class="sxs-lookup"><span data-stu-id="84697-140">$top</span></span>|<span data-ttu-id="84697-141">int</span><span class="sxs-lookup"><span data-stu-id="84697-141">int</span></span>|<span data-ttu-id="84697-142">要返回的结果数。</span><span class="sxs-lookup"><span data-stu-id="84697-142">Number of results to be returned.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="08828-134">请求标头</span><span class="sxs-lookup"><span data-stu-id="08828-134">Request headers</span></span>
-| <span data-ttu-id="08828-135">名称</span><span class="sxs-lookup"><span data-stu-id="08828-135">Name</span></span>      |<span data-ttu-id="08828-136">说明</span><span class="sxs-lookup"><span data-stu-id="08828-136">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="84697-143">请求标头</span><span class="sxs-lookup"><span data-stu-id="84697-143">Request headers</span></span>
+| <span data-ttu-id="84697-144">名称</span><span class="sxs-lookup"><span data-stu-id="84697-144">Name</span></span>      |<span data-ttu-id="84697-145">说明</span><span class="sxs-lookup"><span data-stu-id="84697-145">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="08828-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="08828-137">Authorization</span></span>  | <span data-ttu-id="08828-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="08828-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="08828-140">接受</span><span class="sxs-lookup"><span data-stu-id="08828-140">Accept</span></span> | <span data-ttu-id="08828-141">application/json</span><span class="sxs-lookup"><span data-stu-id="08828-141">application/json</span></span> |
+| <span data-ttu-id="84697-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="84697-146">Authorization</span></span>  | <span data-ttu-id="84697-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="84697-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="84697-149">接受</span><span class="sxs-lookup"><span data-stu-id="84697-149">Accept</span></span> | <span data-ttu-id="84697-150">application/json</span><span class="sxs-lookup"><span data-stu-id="84697-150">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="08828-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="08828-142">Request body</span></span>
-<span data-ttu-id="08828-143">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="08828-143">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="08828-144">响应</span><span class="sxs-lookup"><span data-stu-id="08828-144">Response</span></span>
-<span data-ttu-id="08828-p107">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [person](../resources/person.md) 对象集合。响应可以包含一个人员对象或一个人员对象集合。</span><span class="sxs-lookup"><span data-stu-id="08828-p107">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.</span></span> 
-## <a name="examples"></a><span data-ttu-id="08828-147">示例</span><span class="sxs-lookup"><span data-stu-id="08828-147">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="84697-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="84697-151">Request body</span></span>
+<span data-ttu-id="84697-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="84697-152">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="84697-153">响应</span><span class="sxs-lookup"><span data-stu-id="84697-153">Response</span></span>
+<span data-ttu-id="84697-p108">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [person](../resources/person.md) 对象集合。响应可以包含一个人员对象或一个人员对象集合。</span><span class="sxs-lookup"><span data-stu-id="84697-p108">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.</span></span> 
+## <a name="examples"></a><span data-ttu-id="84697-156">示例</span><span class="sxs-lookup"><span data-stu-id="84697-156">Examples</span></span>
 
-### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="08828-148">获取相关人员集合。</span><span class="sxs-lookup"><span data-stu-id="08828-148">Get a collection of relevant people</span></span> 
+### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="84697-157">获取相关人员集合。</span><span class="sxs-lookup"><span data-stu-id="84697-157">Get a collection of relevant people</span></span> 
 
-<span data-ttu-id="08828-149">以下请求根据通信和协作模式及业务关系获取与登录用户 (`/me`) 相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="08828-149">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span> 
+<span data-ttu-id="84697-158">以下请求根据通信和协作模式及业务关系获取与登录用户 (`/me`) 相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="84697-158">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_person"
@@ -47,7 +54,7 @@ GET /users/{id | userPrincipalName}/people
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-<span data-ttu-id="08828-p108">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="08828-p108">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="84697-p109">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="84697-p109">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,9 +175,9 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="search-other-users-relevant-people"></a><span data-ttu-id="08828-154">搜索其他用户的相关人员</span><span class="sxs-lookup"><span data-stu-id="08828-154">Search other user’s relevant people</span></span>
+### <a name="search-other-users-relevant-people"></a><span data-ttu-id="84697-163">搜索其他用户的相关人员</span><span class="sxs-lookup"><span data-stu-id="84697-163">Search other user’s relevant people</span></span>
 
-<span data-ttu-id="08828-p109">以下请求获取与登录用户组织中的其他人员相关度最高的人员。此请求需要具有 People.Read.All 权限。在本示例中显示了 Roscoe Seidel 的相关人员。</span><span class="sxs-lookup"><span data-stu-id="08828-p109">The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. In this example, Roscoe Seidel's relevant people are displayed.</span></span>
+<span data-ttu-id="84697-p110">以下请求获取与登录用户组织中的其他人员相关度最高的人员。此请求需要具有 People.Read.All 权限。在本示例中显示了 Roscoe Seidel 的相关人员。</span><span class="sxs-lookup"><span data-stu-id="84697-p110">The following request gets the people most relevant to another person in the signed-in user's organization. This request requires the People.Read.All permission. In this example, Roscoe Seidel's relevant people are displayed.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -181,7 +188,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-<span data-ttu-id="08828-p110">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="08828-p110">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="84697-p111">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="84697-p111">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 <!-- {
   "blockType": "response",

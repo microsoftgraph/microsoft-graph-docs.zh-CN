@@ -1,6 +1,63 @@
-<span data-ttu-id="4dfea-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4dfea-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="list-verificationdnsrecords"></a><span data-ttu-id="4c08c-101">列出 verificationDnsRecords</span><span class="sxs-lookup"><span data-stu-id="4c08c-101">List verificationDnsRecords</span></span>
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<span data-ttu-id="4c08c-102">检索 [domainDnsRecord](../resources/domaindnsrecord.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="4c08c-102">Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.</span></span>
+
+<span data-ttu-id="4c08c-p101">必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。若要验证该域的所有权，请检索域验证记录并向该阈的区域文件添加详细信息。这可以通过域名注册机构或 DNS 服务器配置完成。</span><span class="sxs-lookup"><span data-stu-id="4c08c-p101">You cannot use an associated domain with your Azure AD tenant until ownership is verified. To verify the ownership of the domain, retrieve the domain verification records and add the details to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
+
+<span data-ttu-id="4c08c-p102">需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="4c08c-p102">Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="4c08c-110">权限</span><span class="sxs-lookup"><span data-stu-id="4c08c-110">Permissions</span></span>
+
+<span data-ttu-id="4c08c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4c08c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="4c08c-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="4c08c-113">Permission type</span></span>      | <span data-ttu-id="4c08c-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4c08c-114">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="4c08c-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4c08c-115">Delegated (work or school account)</span></span> | <span data-ttu-id="4c08c-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c08c-116">Directory.Read.All</span></span>    | 
+|<span data-ttu-id="4c08c-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4c08c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c08c-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="4c08c-118">Not supported.</span></span>    | 
+|<span data-ttu-id="4c08c-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="4c08c-119">Application</span></span> | <span data-ttu-id="4c08c-120">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c08c-120">Directory.Read.All, Domain.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="4c08c-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4c08c-121">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /domains/{id}/verificationDnsRecords
+```
+
+> <span data-ttu-id="4c08c-122">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="4c08c-122">For {id}, specify the domain with its fully qualified domain name.</span></span>
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="4c08c-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4c08c-123">Optional query parameters</span></span>
+
+<span data-ttu-id="4c08c-124">此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4c08c-124">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="4c08c-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="4c08c-125">Request headers</span></span>
+
+| <span data-ttu-id="4c08c-126">名称</span><span class="sxs-lookup"><span data-stu-id="4c08c-126">Name</span></span>      |<span data-ttu-id="4c08c-127">说明</span><span class="sxs-lookup"><span data-stu-id="4c08c-127">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="4c08c-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c08c-128">Authorization</span></span>  | <span data-ttu-id="4c08c-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4c08c-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4c08c-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4c08c-131">Content-Type</span></span>  | <span data-ttu-id="4c08c-132">application/json</span><span class="sxs-lookup"><span data-stu-id="4c08c-132">application/json</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="4c08c-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="4c08c-133">Request body</span></span>
+
+<span data-ttu-id="4c08c-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4c08c-134">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="4c08c-135">响应</span><span class="sxs-lookup"><span data-stu-id="4c08c-135">Response</span></span>
+
+<span data-ttu-id="4c08c-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4c08c-136">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="4c08c-137">示例</span><span class="sxs-lookup"><span data-stu-id="4c08c-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4c08c-138">请求</span><span class="sxs-lookup"><span data-stu-id="4c08c-138">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_verificationdnsrecords"
+}-->
+```http
+GET https://graph.microsoft.com/V1.0/domains/contoso.com/verificationDnsRecords
+```
+
+##### <a name="response"></a><span data-ttu-id="4c08c-139">响应</span><span class="sxs-lookup"><span data-stu-id="4c08c-139">Response</span></span>
+
+<span data-ttu-id="4c08c-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4c08c-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
