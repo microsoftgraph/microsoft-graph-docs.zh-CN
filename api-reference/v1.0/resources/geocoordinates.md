@@ -30,7 +30,6 @@
 | 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。   |
 | 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。  |
 
-
 ## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。

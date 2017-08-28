@@ -333,7 +333,7 @@
 
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer)试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
 - 在 [ASP.NET 4.6 的 Microsoft Graph 代码段示例](https://github.com/microsoftgraph/aspnet-snippets-sample)中查找常见操作的示例，或浏览 GitHub 上的其他 [ASP.NET 示例](http://aka.ms/aspnetgraphsamples)。
 
 ## <a name="see-also"></a>另请参阅

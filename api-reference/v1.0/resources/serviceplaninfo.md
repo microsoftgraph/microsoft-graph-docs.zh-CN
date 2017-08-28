@@ -8,9 +8,8 @@
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
-|provisioningStatus|String|服务计划的预配状态。可能的值：<br/>“Success” - 服务已完全预配。<br/>“Disabled” - 服务已禁用。<br/>“PendingInput” - 服务尚未预配；等待服务确认。<br/>“PendingActivation” - 服务已预配，但需要由管理员显式激活（例如，Intune_O365 服务计划）<br/>“PendingProvisioning” - Microsoft 已将新服务添加到产品 SKU，但它尚未在租户中激活。|
+|provisioningStatus|字符串|服务计划的预配状态。可能的值：<br/>“Success” - 服务已完全预配。<br/>“Disabled” - 服务已禁用。<br/>“PendingInput” - 服务尚未预配；等待服务确认。<br/>“PendingActivation” - 服务已预配，但需要由管理员显式激活（例如，Intune_O365 服务计划）<br/>“PendingProvisioning” - Microsoft 已将新服务添加到产品 SKU，但它尚未在租户中激活。|
 |appliesTo|字符串|可以向其分配服务计划的对象。可能的值：<br/>“User” - 服务计划可分配给各个用户。<br/>“Company” - 服务计划可分配给整个租户。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

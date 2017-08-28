@@ -7,11 +7,11 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    | 
-|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
+|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -27,7 +27,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | 名称          | 类型   | 说明                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件夹上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。 |
-
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 **parentReference** 属性的新值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。

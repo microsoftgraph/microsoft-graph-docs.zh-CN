@@ -24,7 +24,6 @@ GET /drives/{id}/root/thumbnails/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
-
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 

@@ -16,9 +16,8 @@
 |[列出日历](../api/calendargroup_list_calendars.md) |[日历](calendar.md) 集合| 列出日历组中的日历。|
 |[创建日历](../api/calendargroup_post_calendars.md) |[日历](calendar.md)| 在日历组中创建新日历。|
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |名称|String|组名称。|
 |changeKey|String|标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
@@ -26,10 +25,9 @@
 |id|String|组的唯一标识符。只读。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |日历|[日历](calendar.md) 集合|日历组中的日历。导航属性。只读。可为 Null。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

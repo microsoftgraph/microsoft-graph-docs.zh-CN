@@ -8,11 +8,11 @@
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Contacts.Read、Contacts.ReadWrite    | 
-|委派（个人 Microsoft 帐户） | Contacts.Read、Contacts.ReadWrite    | 
-|应用程序 | Contacts.Read、Contacts.ReadWrite | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Contacts.Read、Contacts.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Contacts.Read、Contacts.ReadWrite    |
+|应用程序 | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +29,6 @@ GET /users/<id>/contactFolders/delta
 |:---------------|:--------|:----------|
 | $deltatoken | 字符串 | 对同一个联系人文件夹集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示同一个联系人文件夹集合中有进一步的更改需要追踪。 |
-
 
 #### <a name="odata-query-parameters"></a>OData 查询参数
 

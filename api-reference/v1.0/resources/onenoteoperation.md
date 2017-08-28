@@ -28,7 +28,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作的开始时间。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作返回的错误。|
@@ -48,7 +48,6 @@
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |获取操作状态。 |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

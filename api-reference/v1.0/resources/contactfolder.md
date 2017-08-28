@@ -22,23 +22,20 @@
 |[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | 在新建或现有的 contactFolder 创建一个或多个多值扩展属性。  |
 |[获取包含多值扩展属性的 contactFolder](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | 使用 `$expand` 获取包含一个多值扩展属性的 contactFolder。 |
 
-
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
 |id|String|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
-|联系人|[联系人](contact.md) 集合|文件夹中的联系人。导航属性。只读。可为 Null。|
+|contacts|[联系人](contact.md) 集合|文件夹中的联系人。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
-
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

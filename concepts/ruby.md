@@ -285,7 +285,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 3. 转到 Web 浏览器中的 `http://localhost:3000`。
 
 ## <a name="see-also"></a>另请参阅
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
 - 在 GitHub 上了解我们的其他 [Microsoft Graph 示例](https://github.com/microsoftgraph)。
 
 

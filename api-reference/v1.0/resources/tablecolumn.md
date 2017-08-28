@@ -8,7 +8,7 @@
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 TableColumn](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
-|[更新](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)    |更新 TableColumn 对象 |
+|[更新](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |更新 TableColumn 对象 |
 |[Databodyrange](../api/tablecolumn_databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
 |[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
 |[区域](../api/tablecolumn_range.md)|[区域](range.md)|获取与整个列相关的 range 对象。|
@@ -18,9 +18,8 @@
 |[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|根据其在集合中的位置获取列。|
 |[添加](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|向表中添加新列。|
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|int|返回标识表内的列的唯一键。只读。|
 |Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
@@ -28,7 +27,7 @@
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |筛选器|[Filter](filter.md)|检索应用于列的筛选器。只读。|
 

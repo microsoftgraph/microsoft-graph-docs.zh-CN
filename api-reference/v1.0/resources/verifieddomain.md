@@ -4,14 +4,13 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |capabilities|String|例如，“Email”、“OfficeCommunicationsOnline”。|
 |isDefault|Boolean|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
 |isInitial|Boolean|如果这是与租户关联的初始域，则为 **true**；否则为 **false**|
 |name|String|域名；例如，“contoso.onmicrosoft.com”|
 |type|String|例如，“Managed”。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

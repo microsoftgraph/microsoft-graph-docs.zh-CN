@@ -12,9 +12,8 @@
 |[帖子](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)，但没有 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **singleValueLegacyExtendedProperty**。 |
 |[获取](../api/singlevaluelegacyextendedproperty_get.md) |一个或多个受支持的资源实例（[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md)、[contactFolder](../resources/contactfolder.md) 或[post](../resources/post.md) 组），或通过 [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 对象扩展的一个此类的实例。 |使用 `$expand` 或 `$filter` 获取具有扩展属性的资源实例。|
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|string|用于标识属性的属性 ID。只读。|
 |value|string|属性值。|

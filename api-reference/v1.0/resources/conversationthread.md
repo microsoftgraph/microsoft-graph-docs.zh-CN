@@ -16,7 +16,7 @@ conversationThread 是 [帖子](post.md) 集合。
 |[列出帖子](../api/conversationthread_list_posts.md) |[帖子](post.md) 集合| 获取指定线程的帖子。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 |toRecipients|[recipient](recipient.md) collection|收件人：线程的收件人。|
@@ -29,10 +29,9 @@ conversationThread 是 [帖子](post.md) 集合。
 |isLocked|Boolean|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|posts|[帖子](post.md) 集合| 只读。可为 NULL。|
-
+|posts|[帖子](post.md) 集合| 只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

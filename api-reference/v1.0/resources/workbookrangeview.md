@@ -1,9 +1,7 @@
-<a id="rangeview-resource-type" class="xliff"></a>
-# rangeView 资源类型
+# <a name="rangeview-resource-type"></a>rangeView 资源类型
 RangeView 表示父范围的一组可见单元格。
 
-<a id="methods" class="xliff"></a>
-## 方法
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -11,9 +9,7 @@ RangeView 表示父范围的一组可见单元格。
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|按索引获取范围视图项。|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|返回与范围视图相关联的范围对象|
 
-
-<a id="properties" class="xliff"></a>
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnCount|Int32|返回可见列数。只读。|
@@ -27,14 +23,12 @@ RangeView 表示父范围的一组可见单元格。
 |valueTypes|Json|表示每个单元格的数据类型。只读。可能的值是：Unknown、Empty、String、Integer、Double、Boolean、Error。 |
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
-<a id="relationships" class="xliff"></a>
-## 关系
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) 集合| 表示一组与范围相关联的范围视图。只读。  只读。|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",

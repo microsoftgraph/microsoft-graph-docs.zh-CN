@@ -4,11 +4,10 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| 如果用户在下次登录时必须更改密码，则为 **true**；否则为 **false**。 |
 |密码|String|用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -4,14 +4,13 @@
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |endDate|日期|系列的结束日期。|
 |numberOfOccurrences|Int32|事件重复发生的次数。|
 |recurrenceTimeZone|String |**startDate** 和 **endDate** 属性的时区。 |
 |startDate|日期|序列的开始日期。|
 |type|String|定期区域：EndDate = 0，NoEnd = 1，Numbered = 2。可能的值是：`EndDate`、`NoEnd`、`Numbered`。||
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

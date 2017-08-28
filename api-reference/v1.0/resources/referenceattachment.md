@@ -11,9 +11,8 @@
 |[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |读取 referenceAttachment 对象的属性和关系。|
 |[删除](../api/attachment_delete.md) | 无 |删除 referenceAttachment 对象。 |
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
 |id|String|附件 ID。只读。|
@@ -21,7 +20,6 @@
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |名称|String|显示在用于表示嵌入附件的图标下方的文本。这不必是实际的文件名。|
 |size|Int32|附件大小，以字节为单位。|
-
 
 ## <a name="relationships"></a>关系
 无

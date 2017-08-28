@@ -10,20 +10,17 @@
 |获取一个通过特定扩展插件扩展的已知资源实例。|设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展插件扩展的资源实例。|
 |查找并展开具有特定扩展的资源实例。 |事件、组事件、组帖子、邮件、个人联系人|通过开放扩展展开的资源实例。|
 
-
 ## <a name="permissions"></a>权限
 
 要调用此 API，必须有以下权限之一，具体视包含扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |**支持的资源**|**权限**|**支持的资源**|**权限** |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | Directory.Read.All | [事件](../resources/event.md) | Calendars.Read | 
-| [组](../resources/group.md) | Group.Read.All | [组事件](../resources/event.md) | Group.Read.All | 
-| [组帖子](../resources/post.md) | Group.Read.All | [邮件](../resources/message.md) | Mail.Read | 
+| [设备](../resources/device.md) | Directory.Read.All | [事件](../resources/event.md) | Calendars.Read |
+| [组](../resources/group.md) | Group.Read.All | [组事件](../resources/event.md) | Group.Read.All |
+| [组帖子](../resources/post.md) | Group.Read.All | [邮件](../resources/message.md) | Mail.Read |
 | [组织](../resources/organization.md) | Directory.Read.All | [个人联系人](../resources/contact.md) | Contacts.Read |
 | [用户](../resources/user.md) | User.Read.All | | |
-
-
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -93,7 +90,6 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |Id|string|邮件、事件、联系人等相应集合中的对象的唯一标识符的占位符。必需。不要与 **openTypeExtension** 的 **id** 属性混淆。|
 |extensionId|string|扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）的占位符。创建扩展时，在 **id** 属性中返回完全限定的名称。必需。|
 
-
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)。
@@ -101,15 +97,13 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |**名称**|**值**|**说明**|
 |:---------------|:--------|:-------|
 |$filter|string|返回其 **id** 与 `extensionId` 参数值匹配的扩展。|
-|具有 **any** 运算符的 $filter|string|返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。| 
+|具有 **any** 运算符的 $filter|string|返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。|
 |$expand|string|展开资源实例以包含扩展。 |
-
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
-
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

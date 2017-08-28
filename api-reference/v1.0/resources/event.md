@@ -36,8 +36,6 @@
 |[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [事件](event.md) | 在新建或现有的事件中创建一个或多个多值扩展属性。  |
 |[获取具有多值扩展属性的事件](../api/multivaluelegacyextendedproperty_get.md)  | [事件](event.md) | 使用 `$expand` 获取包含一个多值扩展属性的事件。 |
 
-
-
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -79,12 +77,11 @@
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合|事件的 [fileAttachment](fileAttachment.md) 和 [itemAttachment](itemAttachment.md) 附件集合。导航属性。只读。可为 Null。|
-|日历|[日历](calendar.md)|包含事件的日历。导航属性。只读。|
+|calendar|[日历](calendar.md)|包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合|为事件定义的开放扩展集合。只读。可为 Null。|
 |instances|[事件](event.md) 集合|事件的实例。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
-
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

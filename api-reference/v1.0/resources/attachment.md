@@ -24,12 +24,11 @@
 |[列出帖子的附件](../api/post_list_attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment_delete.md) | 无 |删除事件、邮件或帖子的附件。 |
 
-
 ## <a name="properties"></a>属性
 
 下面介绍了任意 attachment 资源的基础属性。有关其他属性，请参阅具体附件类型（[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)）。
 
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME 类型。|
 |id|String| 只读。|

@@ -99,11 +99,10 @@ PATCH /groups/{id}/events/{id}
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id|string|对象在相应集合中的唯一标识符。必需。|
-|_Body 参数_|
+|_Body parameters_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 一个或多个多值扩展属性的数组。 |
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
-
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |

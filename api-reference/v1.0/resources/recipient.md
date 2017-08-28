@@ -3,10 +3,9 @@
 表示事件、邮件或组帖子发送或接收端的用户的相关信息。 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|收件人的电子邮件地址。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

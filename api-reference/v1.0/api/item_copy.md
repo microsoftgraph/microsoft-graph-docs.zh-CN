@@ -5,11 +5,11 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    | 
-|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
+|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -27,7 +27,7 @@ POST /groups/{group-id}/drive/items/{item-id}/copy
 | 名称            | 值                                          | 说明                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | 可选。引用在其中创建副本的父项。                                         |
-| name            | string                                         | 可选。副本的新名称。如果没有新名称，将与原始版本同名。    |
+| name            | string                                         | 可选。副本的新名称。如果未提供新名称，将同一名称用作原始名称。    |
 
 **注意：**_ParentReference_ 应包括 `id` 或 `path`，但不能同时包括两者。如果这两项都包括在内，它们需要引用相同的项，否则将发生错误。
 

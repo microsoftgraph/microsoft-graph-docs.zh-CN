@@ -26,7 +26,7 @@
 |[删除成员](../api/group_delete_members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|在一列组中检查此组的成员身份。此函数是可传递的。|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组是其成员的所有组。此函数可传递。 |
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。 |
 |[delta](../api/group_delta.md)|组集合| 获取组的增量更改。 |
 |**日历**| | |
 |[Create event](../api/group_post_events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
@@ -57,17 +57,16 @@
 |[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) 集合| 获取组拥有的 Planner 计划。|
 |**用户设置**| | |
 |[addFavorite](../api/group_addfavorite.md)|无|将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。|
-|[removeFavorite](../api/group_removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持对 Office 365 组执行此操作。|
+|[removeFavorite](../api/group_removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。|
 |[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 **memberOf** 导航属性，获取此用户是其直接成员的组和管理单元。|
 |[subscribeByMail](../api/group_subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。使当前用户可以接收电子邮件对话。仅支持 Office 365 组。|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。禁止当前用户接收电子邮件对话。仅支持 Office 365 组。|
 |[resetUnseenCount](../api/group_resetunseencount.md)|无|将当前用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。仅支持 Office 365 组。|
 
-
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
 |Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。|
 |createdDateTime|DateTimeOffset| 创建组的日期和时间。 |
@@ -75,8 +74,8 @@
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection| 指定要创建的组类型。可能的值是 **Unified**（创建 Office 365 组）或 **DynamicMembership**（创建动态组）。对于所有其他类型的组（例如启用安全机制的组和启用电子邮件的安全组）则不设置此属性。支持 $filter。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isSubscribedByMail|布尔|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
-|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
+|邮件|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
 |mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。支持 $filter。|
@@ -95,7 +94,7 @@
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
-|drive|[驱动器](drive.md)|组的驱动器。只读。|
+|驱动器|[驱动器](drive.md)|组的驱动器。只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
@@ -106,10 +105,9 @@
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[Planner](planner.md)| 统一组可能存在的 Planner 资源入口点。|
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
-|settings|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
+|设置|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
 |sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。
 |threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

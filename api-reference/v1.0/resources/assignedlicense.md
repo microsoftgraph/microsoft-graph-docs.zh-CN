@@ -3,11 +3,10 @@
 表示分配给用户的许可证。[用户](user.md) 实体的 **AssignedLicenses** 属性是一个 **assignedLicense** 集合。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |disabledPlans|Guid 集合|已禁用的计划的唯一标识符的集合。|
 |skuId|Guid|此 SKU 的唯一标识符。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -9,11 +9,11 @@ DriveItem 资源从其上级继承权限。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    | 
-|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
+|应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -146,7 +146,7 @@ Content-Type: application/json
 
 **注意：**仅 **driveType** 为 `personal` 的 [驱动器](../resources/drive.md) 支持嵌入链接。
 
-## <a name="remarks"></a>注释
+## <a name="remarks"></a>注解
 
 * 使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。
 * 链接在项的共享权限中可见，可以由该项的所有者删除。

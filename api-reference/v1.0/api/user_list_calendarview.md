@@ -4,11 +4,11 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    | 
-|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    | 
-|应用程序 | Calendars.Read、Calendars.ReadWrite | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
+|应用程序 | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type   | string  | application/json | 
+| Content-Type   | string  | application/json |
 | Prefer | string | outlook.timezone=“东部标准时间”。可选。使用此选项指定响应中开始时间和结束时间的时区。如果未指定，则按 UTC 时间返回响应。 |
 
 ## <a name="request-body"></a>请求正文

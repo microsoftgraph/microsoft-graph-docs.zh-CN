@@ -10,14 +10,12 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 |[获取 profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |获取指定的 **profilePhoto** 或其元数据（profilePhoto 属性）。|
 |[更新](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |将照片分配给指定的用户、组或联系人。照片应为二进制格式。它将替换现有的照片（如有）。|
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|string|只读。|
 |height|int32|照片的高度。只读。|
 |width|int32|照片的宽度。只读。|
-
 
 ## <a name="relationships"></a>关系
 无

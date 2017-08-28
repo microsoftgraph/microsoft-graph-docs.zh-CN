@@ -173,7 +173,7 @@ if($response.getStatusCode() === 201) {
 检查在 [使用 REST 调用 Microsoft Graph](#call-microsoft-graph-using-rest) 部分中配置的电子邮件地址的收件箱。你应该会收到一封用于登录该应用的帐户所发送的电子邮件。
 
 ## <a name="next-steps"></a>后续步骤
-- 试用 [Microsoft Graph 资源管理器](https://graph.microsoft.io/graph-explorer)。
+- 试用 [Microsoft Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
 
 
 ## <a name="see-also"></a>另请参阅

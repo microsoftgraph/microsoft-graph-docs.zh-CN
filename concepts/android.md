@@ -42,7 +42,7 @@
 
 1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
 
-2. 选择“添加应用”****。
+2. 选择“**添加应用**”。
 
 >提示：如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)且正在为其创建注册，请在关闭“创建”****按钮前先取消选中“引导设置”****。
 
@@ -463,7 +463,7 @@
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>使用 Microsoft Graph REST API 调用 Microsoft Graph
 [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
 
-1. 将 Internet 权限添加到应用。打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
+1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
@@ -548,7 +548,7 @@
 请检查在 [调用 Microsoft Graph](#call-microsoft-graph) 中配置的电子邮件地址的收件箱。你应该会收到一封用于登录该应用的帐户所发送的电子邮件。
 
 ## <a name="next-steps"></a>后续步骤
-- 试用 [Microsoft Graph 资源管理器](https://graph.microsoft.io/graph-explorer)。
+- 试用 [Microsoft Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
 - 在 [Android 的代码段示例](https://github.com/microsoftgraph/android-java-snippets-sample)中查找常见操作的示例，或浏览 GitHub 上的其他 [Android 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android)。
 
 

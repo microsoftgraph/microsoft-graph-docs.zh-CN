@@ -10,8 +10,6 @@
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与地点相关联的电子邮件地址。              |
 
-
-
 ## <a name="json-representation"></a>JSON 表示形式
 
 <!-- {

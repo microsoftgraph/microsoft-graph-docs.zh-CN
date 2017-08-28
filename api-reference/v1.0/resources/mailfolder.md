@@ -23,7 +23,6 @@
 |[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | 在新建或现有的 mailFolder 中创建一个或多个多值扩展属性。  |
 |[获取具有多值扩展属性的 mailFolder](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | 使用 `$expand` 获取包含一个多值扩展属性的 mailFolder。 |
 
-
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -48,9 +47,8 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |邮件|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
-
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -4,11 +4,11 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    | 
-|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    | 
-|应用程序 | Calendars.Read、Calendars.ReadWrite | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
+|委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
+|应用程序 | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -24,13 +24,12 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 |startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
-
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
 | Content-Type   | application/json |
-| Prefer | {Time-zone}。可选，如果缺省，则采用 UTC。| 
+| Prefer | {Time-zone}。可选，如果缺省，则采用 UTC。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -3,12 +3,11 @@
 包含与设备相关的可选安全 ID。[设备](device.md) 实体的 **AlternativeSecurityIds** 属性是一个 **alternativeSecurityId** 集合。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |identityProvider|String|            |
 |key|二进制|            |
 |类型|Int32|            |
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

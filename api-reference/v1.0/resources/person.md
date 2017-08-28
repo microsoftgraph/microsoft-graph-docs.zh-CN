@@ -9,7 +9,6 @@
 |[List people](../api/user_list_people.md) | **person** |获取按与[用户](../resources/user.md)的相关性排序的人员对象集合。|
 |[Get person](../api/person_get.md) | **person** |获取人员对象的属性和关系。|
 
-
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -19,7 +18,7 @@
 |displayName|String|人员的显示名称。|
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|人员的电子邮件地址。|
 |givenName|String|人员的名字。|
-|id|String|人员的唯一标识符。只读。|
+|id|字符串|人员的唯一标识符。只读。|
 |imAddress|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |isFavorite|Boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
 |jobTitle|String|人员的职务。|
@@ -30,7 +29,7 @@
 |postalAddresses|[location](location.md) collection|人员的地址。|
 |profession|String|人员的职业。|
 |surname|String|人员的姓氏。|
-|userPrincipalName|String|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|
+|userPrincipalName|字符串|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|
 |websites|[website](website.md) collection|人员的网站。|
 |yomiCompany|String|人员所在公司的注音日文名称。|
 

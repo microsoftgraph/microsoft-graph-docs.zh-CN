@@ -4,12 +4,11 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|例如，“Enabled”。|
 |provisioningStatus|String|例如，“Success”。|
 |service|String|服务名称；例如，“AccessControlS2S”|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

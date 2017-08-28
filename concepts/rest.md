@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 既然你已经了解如何调用 Microsoft Graph，现在就可以使用 API 参考来构造应用需要执行的其他任何种类调用。不过，请注意，应用需要获得应用注册时配置的适当权限，才能执行调用。
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用更多 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用更多 REST API。
 
 ## <a name="see-also"></a>另请参阅
 - [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

@@ -16,9 +16,8 @@
 |[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |读取 fileattachment 对象的属性和关系。|
 |[删除](../api/attachment_delete.md) | 无 |删除 fileAttachment 对象。 |
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|文件的二进制内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|

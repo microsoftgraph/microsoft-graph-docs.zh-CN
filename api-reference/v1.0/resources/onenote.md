@@ -43,7 +43,6 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 |sectionGroups|[SectionGroup](sectiongroup.md) 集合|用户或组所有的全部 OneNote 笔记本中的分区组。只读。可为 NULL。|
 |节|[节](section.md)集合|用户或组所有的全部 OneNote 笔记本中的节。只读。可为 Null。|
 
-
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|

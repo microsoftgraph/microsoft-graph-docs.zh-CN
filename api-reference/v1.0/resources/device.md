@@ -25,9 +25,9 @@
 |[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。必需。|
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。必需。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativesecurityid.md) 集合| 需要多值属性筛选器表达式的**任意**运算符。不可为 NULL。必需。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |deviceId|Guid| 唯一客户端指定 GUID 以表示该设备。必需。 |
@@ -45,13 +45,11 @@
 |trustType|String|    ||
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
-|registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
-
-
+|registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

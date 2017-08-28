@@ -13,9 +13,8 @@
 |[列出对话线程](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) 集合| 获取组对话中的所有线程。|
 |[创建对话线程](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) 集合| 在指定会话中创建线程。|
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
 |id|String|对话的唯一标识符。只读。|
@@ -25,10 +24,9 @@
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|线程|[conversationThread](conversationthread.md) 集合|对话中所有对话线程的集合。一种导航属性。只读。可为 NULL。|
-
+|线程|[conversationThread](conversationthread.md) 集合|对话中所有对话线程的集合。一种导航属性。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

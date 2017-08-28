@@ -13,7 +13,7 @@
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | [邮件](../resources/message.md) | Mail.ReadWrite |
 | [组织](../resources/organization.md) | Directory.AccessAsUser.All | [个人联系人](../resources/contact.md) | Contacts.ReadWrite |
 | [用户](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP 请求
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>在新资源实例中创建扩展插件
@@ -60,7 +60,6 @@ POST /users/{id|userPrincipalName}/extensions
 |_URL parameters_|
 |id|string|对象在相应集合中的唯一标识符。必需。|
 
-
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
@@ -91,8 +90,6 @@ POST /users/{id|userPrincipalName}/extensions
 | 在显式创建_新_资源实例的同时创建扩展插件 | [联系人](../resources/contact.md)、[事件](../resources/event.md)、[邮件](../resources/message.md) | 包括使用 [openTypeExtension](../resources/openTypeExtension.md) 对象扩展的新实例。 |
 | 在隐式创建资源实例的同时创建扩展插件 | [帖子](../resources/post.md) | 响应只包括响应代码，不包括响应正文。 |
 | 在_现有_资源实例中创建扩展插件 | 所有支持的资源 | 包括 **openTypeExtension** 对象。 |
- 
-
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1

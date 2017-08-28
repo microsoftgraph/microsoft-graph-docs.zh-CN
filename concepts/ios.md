@@ -205,7 +205,7 @@
 3. 选择“**发送电子邮件**”按钮。在邮件发送后，按钮下方将显示成功消息。
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://graph.microsoft.io/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
 - 可在 [Microsoft Graph iOS Objective C 代码段示例](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample) 中找到 REST 和 SDK 操作的常见操作示例。
 
 ## <a name="see-also"></a>另请参阅

@@ -39,12 +39,10 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|实例在相应集合中的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
-
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
