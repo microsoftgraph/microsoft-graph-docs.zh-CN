@@ -1,49 +1,48 @@
-# <a name="attachment-resource-type"></a>attachment 资源类型
+# <a name="attachment-resource-type"></a><span data-ttu-id="20eec-101">attachment 资源类型</span><span class="sxs-lookup"><span data-stu-id="20eec-101">attachment resource type</span></span>
 
-可以附件形式向[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
+<span data-ttu-id="20eec-102">可以附件形式向[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。</span><span class="sxs-lookup"><span data-stu-id="20eec-102">You can add related content to an [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.</span></span>
 
-**附件**是以下附件派生类型的基础资源：
+<span data-ttu-id="20eec-103">**附件**是以下附件派生类型的基础资源：</span><span class="sxs-lookup"><span data-stu-id="20eec-103">**attachment** is the base resource for the following derived types of attachments:</span></span>
 
-* 文件（[fileAttachment](../resources/fileattachment.md) 资源）
-* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
-* 文件链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）
+* <span data-ttu-id="20eec-104">文件（[fileAttachment](../resources/fileattachment.md) 资源）</span><span class="sxs-lookup"><span data-stu-id="20eec-104">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="20eec-105">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）</span><span class="sxs-lookup"><span data-stu-id="20eec-105">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)</span></span>
+* <span data-ttu-id="20eec-106">文件链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）</span><span class="sxs-lookup"><span data-stu-id="20eec-106">A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource)</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="20eec-107">方法</span><span class="sxs-lookup"><span data-stu-id="20eec-107">Methods</span></span>
 
-以下方法适用于所有附件派生类型（**fileAttachment**、**itemAttachment** 或 **referenceAttachment**）。
+<span data-ttu-id="20eec-108">以下方法适用于所有附件派生类型（**fileAttachment**、**itemAttachment** 或 **referenceAttachment**）。</span><span class="sxs-lookup"><span data-stu-id="20eec-108">The following methods apply to any of the derived types of attachments (**fileAttachment**, **itemAttachment**, or **referenceAttachment**).</span></span>
 
-| 方法       | 返回类型  |说明|
+| <span data-ttu-id="20eec-109">方法</span><span class="sxs-lookup"><span data-stu-id="20eec-109">Method</span></span>       | <span data-ttu-id="20eec-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="20eec-110">Return Type</span></span>  |<span data-ttu-id="20eec-111">说明</span><span class="sxs-lookup"><span data-stu-id="20eec-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment_get.md) | [attachment](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
-|[Add attachment to an event](../api/event_post_attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
-|[将附件添加到邮件中](../api/message_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
-|[将附件添加到帖子中](../api/post_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event_list_attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
-|[列出邮件的附件](../api/message_list_attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出帖子的附件](../api/post_list_attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
-|[删除](../api/attachment_delete.md) | 无 |删除事件、邮件或帖子的附件。 |
+|[<span data-ttu-id="20eec-112">获取附件</span><span class="sxs-lookup"><span data-stu-id="20eec-112">Get attachment</span></span>](../api/attachment_get.md) | [<span data-ttu-id="20eec-113">attachment</span><span class="sxs-lookup"><span data-stu-id="20eec-113">attachment</span></span>](attachment.md) |<span data-ttu-id="20eec-114">读取附加到事件、邮件或帖子的附件的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="20eec-114">Read the properties and relationships of an attachment, attached to an event, message, or post.</span></span>|
+|[<span data-ttu-id="20eec-115">Add attachment to an event</span><span class="sxs-lookup"><span data-stu-id="20eec-115">Add attachment to an event</span></span>](../api/event_post_attachments.md) | [<span data-ttu-id="20eec-116">附件</span><span class="sxs-lookup"><span data-stu-id="20eec-116">attachment</span></span>](attachment.md) |<span data-ttu-id="20eec-117">将文件、项目或链接附件添加到事件中。</span><span class="sxs-lookup"><span data-stu-id="20eec-117">Add a file, item, or link attachment to an event.</span></span>|
+|[<span data-ttu-id="20eec-118">将附件添加到邮件中</span><span class="sxs-lookup"><span data-stu-id="20eec-118">Add attachment to a message</span></span>](../api/message_post_attachments.md) | [<span data-ttu-id="20eec-119">附件</span><span class="sxs-lookup"><span data-stu-id="20eec-119">attachment</span></span>](attachment.md) |<span data-ttu-id="20eec-120">将文件、项目或将附件链接添加到邮件中。</span><span class="sxs-lookup"><span data-stu-id="20eec-120">Add a file, item, or link attachment to a message.</span></span>|
+|[<span data-ttu-id="20eec-121">将附件添加到帖子中</span><span class="sxs-lookup"><span data-stu-id="20eec-121">Add attachment to a post</span></span>](../api/post_post_attachments.md) | [<span data-ttu-id="20eec-122">附件</span><span class="sxs-lookup"><span data-stu-id="20eec-122">attachment</span></span>](attachment.md) |<span data-ttu-id="20eec-123">将文件、项目或将附件链接添加到帖子中。</span><span class="sxs-lookup"><span data-stu-id="20eec-123">Add a file, item, or link attachment to a post.</span></span>|
+|[<span data-ttu-id="20eec-124">列出事件的附件</span><span class="sxs-lookup"><span data-stu-id="20eec-124">List attachments of an event</span></span>](../api/event_list_attachments.md) | <span data-ttu-id="20eec-125">[附件](attachment.md) 集合</span><span class="sxs-lookup"><span data-stu-id="20eec-125">[attachment](attachment.md) collection</span></span> | <span data-ttu-id="20eec-126">获取事件的附件列表。</span><span class="sxs-lookup"><span data-stu-id="20eec-126">Get a list of attachments for an event.</span></span> |
+|[<span data-ttu-id="20eec-127">列出邮件的附件</span><span class="sxs-lookup"><span data-stu-id="20eec-127">List attachments of a message</span></span>](../api/message_list_attachments.md) | <span data-ttu-id="20eec-128">[附件](attachment.md) 集合</span><span class="sxs-lookup"><span data-stu-id="20eec-128">[attachment](attachment.md) collection</span></span> | <span data-ttu-id="20eec-129">获取邮件的附件列表。</span><span class="sxs-lookup"><span data-stu-id="20eec-129">Get a list of attachments for a message.</span></span> |
+|[<span data-ttu-id="20eec-130">列出帖子的附件</span><span class="sxs-lookup"><span data-stu-id="20eec-130">List attachments of a post</span></span>](../api/post_list_attachments.md) | <span data-ttu-id="20eec-131">[附件](attachment.md) 集合</span><span class="sxs-lookup"><span data-stu-id="20eec-131">[attachment](attachment.md) collection</span></span> | <span data-ttu-id="20eec-132">获取帖子的附件列表。</span><span class="sxs-lookup"><span data-stu-id="20eec-132">Get a list of attachments for a post.</span></span> |
+|[<span data-ttu-id="20eec-133">删除</span><span class="sxs-lookup"><span data-stu-id="20eec-133">Delete</span></span>](../api/attachment_delete.md) | <span data-ttu-id="20eec-134">无</span><span class="sxs-lookup"><span data-stu-id="20eec-134">None</span></span> |<span data-ttu-id="20eec-135">删除事件、邮件或帖子的附件。</span><span class="sxs-lookup"><span data-stu-id="20eec-135">Delete an attachment on an event, message, or post.</span></span> |
 
+## <a name="properties"></a><span data-ttu-id="20eec-136">属性</span><span class="sxs-lookup"><span data-stu-id="20eec-136">Properties</span></span>
 
-## <a name="properties"></a>属性
+<span data-ttu-id="20eec-p101">下面介绍了任意 attachment 资源的基础属性。有关其他属性，请参阅具体附件类型（[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)）。</span><span class="sxs-lookup"><span data-stu-id="20eec-p101">The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceAttachment.md)) for additional properties.</span></span>
 
-下面介绍了任意 attachment 资源的基础属性。有关其他属性，请参阅具体附件类型（[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)）。
-
-| 属性       | 类型    |说明|
+| <span data-ttu-id="20eec-139">属性</span><span class="sxs-lookup"><span data-stu-id="20eec-139">Property</span></span>     | <span data-ttu-id="20eec-140">类型</span><span class="sxs-lookup"><span data-stu-id="20eec-140">Type</span></span>   |<span data-ttu-id="20eec-141">说明</span><span class="sxs-lookup"><span data-stu-id="20eec-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|contentType|String|MIME 类型。|
-|id|String| 只读。|
-|isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
-|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|名称|String|附件的文件名。|
-|size|Int32|附件大小，以字节为单位。|
+|<span data-ttu-id="20eec-142">contentType</span><span class="sxs-lookup"><span data-stu-id="20eec-142">contentType</span></span>|<span data-ttu-id="20eec-143">String</span><span class="sxs-lookup"><span data-stu-id="20eec-143">String</span></span>|<span data-ttu-id="20eec-144">MIME 类型。</span><span class="sxs-lookup"><span data-stu-id="20eec-144">The MIME type.</span></span>|
+|<span data-ttu-id="20eec-145">id</span><span class="sxs-lookup"><span data-stu-id="20eec-145">id</span></span>|<span data-ttu-id="20eec-146">String</span><span class="sxs-lookup"><span data-stu-id="20eec-146">String</span></span>| <span data-ttu-id="20eec-147">只读。</span><span class="sxs-lookup"><span data-stu-id="20eec-147">Read-only.</span></span>|
+|<span data-ttu-id="20eec-148">isInline</span><span class="sxs-lookup"><span data-stu-id="20eec-148">isInline</span></span>|<span data-ttu-id="20eec-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="20eec-149">Boolean</span></span>|<span data-ttu-id="20eec-150">如果附件是内嵌附件，则为 `true`；否则为 `false`。</span><span class="sxs-lookup"><span data-stu-id="20eec-150">`true` if the attachment is an inline attachment; otherwise, `false`.</span></span>|
+|<span data-ttu-id="20eec-151">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="20eec-151">lastModifiedDateTime</span></span>|<span data-ttu-id="20eec-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="20eec-152">DateTimeOffset</span></span>|<span data-ttu-id="20eec-p102">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="20eec-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="20eec-155">名称</span><span class="sxs-lookup"><span data-stu-id="20eec-155">name</span></span>|<span data-ttu-id="20eec-156">String</span><span class="sxs-lookup"><span data-stu-id="20eec-156">String</span></span>|<span data-ttu-id="20eec-157">附件的文件名。</span><span class="sxs-lookup"><span data-stu-id="20eec-157">The attachment's file name.</span></span>|
+|<span data-ttu-id="20eec-158">size</span><span class="sxs-lookup"><span data-stu-id="20eec-158">size</span></span>|<span data-ttu-id="20eec-159">Int32</span><span class="sxs-lookup"><span data-stu-id="20eec-159">Int32</span></span>|<span data-ttu-id="20eec-160">附件大小，以字节为单位。</span><span class="sxs-lookup"><span data-stu-id="20eec-160">The length of the attachment in bytes.</span></span>|
 
-## <a name="relationships"></a>关系
-无
+## <a name="relationships"></a><span data-ttu-id="20eec-161">关系</span><span class="sxs-lookup"><span data-stu-id="20eec-161">Relationships</span></span>
+<span data-ttu-id="20eec-162">无</span><span class="sxs-lookup"><span data-stu-id="20eec-162">None</span></span>
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="20eec-163">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="20eec-163">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="20eec-164">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="20eec-164">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

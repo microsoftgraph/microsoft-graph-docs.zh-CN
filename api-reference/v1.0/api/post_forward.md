@@ -1,44 +1,44 @@
-# <a name="post-forward"></a><span data-ttu-id="d20c9-101">帖子：转发</span><span class="sxs-lookup"><span data-stu-id="d20c9-101">post: forward</span></span>
+# <a name="post-forward"></a><span data-ttu-id="76474-101">帖子：转发</span><span class="sxs-lookup"><span data-stu-id="76474-101">post: forward</span></span>
 
-<span data-ttu-id="d20c9-p101">将帖子转发给收件人。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。</span><span class="sxs-lookup"><span data-stu-id="d20c9-p101">Forward a post to a recipient. You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span> 
+<span data-ttu-id="76474-p101">将帖子转发给收件人。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。</span><span class="sxs-lookup"><span data-stu-id="76474-p101">Forward a post to a recipient. You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="d20c9-104">权限</span><span class="sxs-lookup"><span data-stu-id="d20c9-104">Permissions</span></span>
-<span data-ttu-id="d20c9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="d20c9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="76474-104">权限</span><span class="sxs-lookup"><span data-stu-id="76474-104">Permissions</span></span>
+<span data-ttu-id="76474-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="76474-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="d20c9-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="d20c9-107">Permission type</span></span>      | <span data-ttu-id="d20c9-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d20c9-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="d20c9-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d20c9-109">Delegated (work or school account)</span></span> | <span data-ttu-id="d20c9-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d20c9-110">Group.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="d20c9-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d20c9-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d20c9-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="d20c9-112">Not supported.</span></span>    | 
-|<span data-ttu-id="d20c9-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="d20c9-113">Application</span></span> | <span data-ttu-id="d20c9-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d20c9-114">Group.ReadWrite.All</span></span> | 
+|<span data-ttu-id="76474-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="76474-107">Permission type</span></span>      | <span data-ttu-id="76474-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="76474-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="76474-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="76474-109">Delegated (work or school account)</span></span> | <span data-ttu-id="76474-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76474-110">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="76474-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="76474-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76474-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="76474-112">Not supported.</span></span>    |
+|<span data-ttu-id="76474-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="76474-113">Application</span></span> | <span data-ttu-id="76474-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76474-114">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d20c9-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d20c9-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="76474-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="76474-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/forward
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="d20c9-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="d20c9-116">Request headers</span></span>
-| <span data-ttu-id="d20c9-117">标头</span><span class="sxs-lookup"><span data-stu-id="d20c9-117">Header</span></span>       | <span data-ttu-id="d20c9-118">值</span><span class="sxs-lookup"><span data-stu-id="d20c9-118">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="76474-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="76474-116">Request headers</span></span>
+| <span data-ttu-id="76474-117">标头</span><span class="sxs-lookup"><span data-stu-id="76474-117">Header</span></span>       | <span data-ttu-id="76474-118">值</span><span class="sxs-lookup"><span data-stu-id="76474-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d20c9-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="d20c9-119">Authorization</span></span>  | <span data-ttu-id="d20c9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d20c9-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="76474-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="76474-119">Authorization</span></span>  | <span data-ttu-id="76474-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="76474-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d20c9-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="d20c9-122">Request body</span></span>
-<span data-ttu-id="d20c9-123">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d20c9-123">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="76474-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="76474-122">Request body</span></span>
+<span data-ttu-id="76474-123">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="76474-123">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d20c9-124">参数</span><span class="sxs-lookup"><span data-stu-id="d20c9-124">Parameter</span></span>    | <span data-ttu-id="d20c9-125">类型</span><span class="sxs-lookup"><span data-stu-id="d20c9-125">Type</span></span>   |<span data-ttu-id="d20c9-126">说明</span><span class="sxs-lookup"><span data-stu-id="d20c9-126">Description</span></span>|
+| <span data-ttu-id="76474-124">参数</span><span class="sxs-lookup"><span data-stu-id="76474-124">Parameter</span></span>    | <span data-ttu-id="76474-125">类型</span><span class="sxs-lookup"><span data-stu-id="76474-125">Type</span></span>   |<span data-ttu-id="76474-126">说明</span><span class="sxs-lookup"><span data-stu-id="76474-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d20c9-127">注释</span><span class="sxs-lookup"><span data-stu-id="d20c9-127">comment</span></span>|<span data-ttu-id="d20c9-128">String</span><span class="sxs-lookup"><span data-stu-id="d20c9-128">String</span></span>|<span data-ttu-id="d20c9-129">与帖子一起转发的可选注释。</span><span class="sxs-lookup"><span data-stu-id="d20c9-129">Optional comment that is forwarded together with the post.</span></span>|
-|<span data-ttu-id="d20c9-130">toRecipients</span><span class="sxs-lookup"><span data-stu-id="d20c9-130">toRecipients</span></span>|<span data-ttu-id="d20c9-131">[收件人](../resources/recipient.md) 集合</span><span class="sxs-lookup"><span data-stu-id="d20c9-131">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="d20c9-132">线程要转发至的收件人。</span><span class="sxs-lookup"><span data-stu-id="d20c9-132">The recipients to whom the threaded is forwarded to.</span></span>|
+|<span data-ttu-id="76474-127">注释</span><span class="sxs-lookup"><span data-stu-id="76474-127">comment</span></span>|<span data-ttu-id="76474-128">String</span><span class="sxs-lookup"><span data-stu-id="76474-128">String</span></span>|<span data-ttu-id="76474-129">与帖子一起转发的可选注释。</span><span class="sxs-lookup"><span data-stu-id="76474-129">Optional comment that is forwarded together with the post.</span></span>|
+|<span data-ttu-id="76474-130">toRecipients</span><span class="sxs-lookup"><span data-stu-id="76474-130">toRecipients</span></span>|<span data-ttu-id="76474-131">[收件人](../resources/recipient.md) 集合</span><span class="sxs-lookup"><span data-stu-id="76474-131">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="76474-132">线程要转发至的收件人。</span><span class="sxs-lookup"><span data-stu-id="76474-132">The recipients to whom the threaded is forwarded to.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d20c9-133">响应</span><span class="sxs-lookup"><span data-stu-id="d20c9-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="76474-133">响应</span><span class="sxs-lookup"><span data-stu-id="76474-133">Response</span></span>
 
-<span data-ttu-id="d20c9-p104">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d20c9-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="76474-p104">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="76474-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d20c9-136">示例</span><span class="sxs-lookup"><span data-stu-id="d20c9-136">Example</span></span>
-<span data-ttu-id="d20c9-137">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="d20c9-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="d20c9-138">请求</span><span class="sxs-lookup"><span data-stu-id="d20c9-138">Request</span></span>
-<span data-ttu-id="d20c9-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d20c9-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="76474-136">示例</span><span class="sxs-lookup"><span data-stu-id="76474-136">Example</span></span>
+<span data-ttu-id="76474-137">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="76474-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="76474-138">请求</span><span class="sxs-lookup"><span data-stu-id="76474-138">Request</span></span>
+<span data-ttu-id="76474-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="76474-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_forward"
@@ -61,8 +61,8 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d20c9-140">响应</span><span class="sxs-lookup"><span data-stu-id="d20c9-140">Response</span></span>
-<span data-ttu-id="d20c9-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d20c9-141">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="76474-140">响应</span><span class="sxs-lookup"><span data-stu-id="76474-140">Response</span></span>
+<span data-ttu-id="76474-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="76474-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

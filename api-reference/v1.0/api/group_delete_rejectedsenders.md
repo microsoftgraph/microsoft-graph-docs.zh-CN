@@ -1,36 +1,36 @@
-# <a name="remove-rejectedsender"></a><span data-ttu-id="53f06-101">删除 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="53f06-101">Remove rejectedSender</span></span>
+# <a name="remove-rejectedsender"></a><span data-ttu-id="4ccec-101">删除 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="4ccec-101">Remove rejectedSender</span></span>
 
-<span data-ttu-id="53f06-102">从 rejectedSenders 列表中删除用户或组。</span><span class="sxs-lookup"><span data-stu-id="53f06-102">Remove a user or group from the rejectedSenders list.</span></span>
-## <a name="permissions"></a><span data-ttu-id="53f06-103">权限</span><span class="sxs-lookup"><span data-stu-id="53f06-103">Permissions</span></span>
-<span data-ttu-id="53f06-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="53f06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="4ccec-102">从 rejectedSenders 列表中删除用户或组。</span><span class="sxs-lookup"><span data-stu-id="4ccec-102">Remove a user or group from the rejectedSenders list.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4ccec-103">权限</span><span class="sxs-lookup"><span data-stu-id="4ccec-103">Permissions</span></span>
+<span data-ttu-id="4ccec-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4ccec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="53f06-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="53f06-106">Permission type</span></span>      | <span data-ttu-id="53f06-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="53f06-107">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="53f06-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="53f06-108">Delegated (work or school account)</span></span> | <span data-ttu-id="53f06-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53f06-109">Group.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="53f06-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="53f06-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53f06-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="53f06-111">Not supported.</span></span>    | 
-|<span data-ttu-id="53f06-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="53f06-112">Application</span></span> | <span data-ttu-id="53f06-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53f06-113">Group.ReadWrite.All</span></span> | 
+|<span data-ttu-id="4ccec-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="4ccec-106">Permission type</span></span>      | <span data-ttu-id="4ccec-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4ccec-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="4ccec-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4ccec-108">Delegated (work or school account)</span></span> | <span data-ttu-id="4ccec-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ccec-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4ccec-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4ccec-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ccec-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="4ccec-111">Not supported.</span></span>    |
+|<span data-ttu-id="4ccec-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="4ccec-112">Application</span></span> | <span data-ttu-id="4ccec-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ccec-113">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="53f06-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53f06-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4ccec-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4ccec-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="53f06-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="53f06-115">Request headers</span></span>
-| <span data-ttu-id="53f06-116">标头</span><span class="sxs-lookup"><span data-stu-id="53f06-116">Header</span></span>       | <span data-ttu-id="53f06-117">值</span><span class="sxs-lookup"><span data-stu-id="53f06-117">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4ccec-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="4ccec-115">Request headers</span></span>
+| <span data-ttu-id="4ccec-116">标头</span><span class="sxs-lookup"><span data-stu-id="4ccec-116">Header</span></span>       | <span data-ttu-id="4ccec-117">值</span><span class="sxs-lookup"><span data-stu-id="4ccec-117">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="53f06-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="53f06-118">Authorization</span></span>  | <span data-ttu-id="53f06-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="53f06-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4ccec-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ccec-118">Authorization</span></span>  | <span data-ttu-id="4ccec-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4ccec-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="53f06-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="53f06-121">Request body</span></span>
-<span data-ttu-id="53f06-122">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="53f06-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4ccec-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="4ccec-121">Request body</span></span>
+<span data-ttu-id="4ccec-122">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4ccec-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="53f06-123">响应</span><span class="sxs-lookup"><span data-stu-id="53f06-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4ccec-123">响应</span><span class="sxs-lookup"><span data-stu-id="4ccec-123">Response</span></span>
 
-<span data-ttu-id="53f06-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="53f06-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4ccec-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4ccec-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="53f06-126">示例</span><span class="sxs-lookup"><span data-stu-id="53f06-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="53f06-127">请求</span><span class="sxs-lookup"><span data-stu-id="53f06-127">Request</span></span>
-<span data-ttu-id="53f06-128">下面是几个请求示例。</span><span class="sxs-lookup"><span data-stu-id="53f06-128">Here are a couple of examples of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4ccec-126">示例</span><span class="sxs-lookup"><span data-stu-id="4ccec-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4ccec-127">请求</span><span class="sxs-lookup"><span data-stu-id="4ccec-127">Request</span></span>
+<span data-ttu-id="4ccec-128">下面是几个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4ccec-128">Here are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -41,8 +41,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="us
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="groups/{id}"
 ```
 
-##### <a name="response"></a><span data-ttu-id="53f06-129">响应</span><span class="sxs-lookup"><span data-stu-id="53f06-129">Response</span></span>
-<span data-ttu-id="53f06-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="53f06-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4ccec-129">响应</span><span class="sxs-lookup"><span data-stu-id="4ccec-129">Response</span></span>
+<span data-ttu-id="4ccec-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4ccec-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
