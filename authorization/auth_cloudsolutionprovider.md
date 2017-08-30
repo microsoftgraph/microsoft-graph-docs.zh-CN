@@ -1,3 +1,0 @@
-<span data-ttu-id="f84db-p112">**注意：**重试时，你必须在调用获取 Microsoft Graph 之前从 Azure AD 获取新的访问令牌。你将无法使用已经拥有的访问令牌调用 Microsoft Graph，因为访问令牌只能使用 -0= 小时，且不包含预先同意的权限声明。</span><span class="sxs-lookup"><span data-stu-id="f84db-p112">**NOTE:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an -0=hour and won’t contain the pre-consented permission claims.</span></span>
-
-> **注意：**重试时，你必须在调用获取 Microsoft Graph 之前从 Azure AD 获取新的访问令牌。你将无法使用已经拥有的访问令牌调用 Microsoft Graph，因为访问令牌只能使用 -0= 小时，且不包含预先同意的权限声明。
