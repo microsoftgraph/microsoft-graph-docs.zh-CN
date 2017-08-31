@@ -1,34 +1,37 @@
-# <a name="create-tablecolumn"></a><span data-ttu-id="4f91b-101">创建 TableColumn</span><span class="sxs-lookup"><span data-stu-id="4f91b-101">Create TableColumn</span></span>
+# <a name="create-tablecolumn"></a><span data-ttu-id="1b4b4-101">创建 TableColumn</span><span class="sxs-lookup"><span data-stu-id="1b4b4-101">Create TableColumn</span></span>
 
-<span data-ttu-id="4f91b-102">使用此 API 创建新的 TableColumn。</span><span class="sxs-lookup"><span data-stu-id="4f91b-102">Use this API to create a new TableColumn.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="4f91b-103">先决条件</span><span class="sxs-lookup"><span data-stu-id="4f91b-103">Prerequisites</span></span>
-<span data-ttu-id="4f91b-104">要执行此 API，需要以下**范围**：</span><span class="sxs-lookup"><span data-stu-id="4f91b-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="1b4b4-102">使用此 API 创建新的 TableColumn。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-102">Use this API to create a new TableColumn.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1b4b4-103">权限</span><span class="sxs-lookup"><span data-stu-id="1b4b4-103">Permissions</span></span>
+<span data-ttu-id="1b4b4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="4f91b-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4f91b-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="1b4b4-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="1b4b4-106">Permission type</span></span>      | <span data-ttu-id="1b4b4-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1b4b4-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="1b4b4-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1b4b4-108">Delegated (work or school account)</span></span> | <span data-ttu-id="1b4b4-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1b4b4-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1b4b4-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1b4b4-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b4b4-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-111">Not supported.</span></span>    |
+|<span data-ttu-id="1b4b4-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="1b4b4-112">Application</span></span> | <span data-ttu-id="1b4b4-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4f91b-106">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4f91b-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1b4b4-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1b4b4-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4f91b-107">请求标头</span><span class="sxs-lookup"><span data-stu-id="4f91b-107">Request headers</span></span>
-| <span data-ttu-id="4f91b-108">名称</span><span class="sxs-lookup"><span data-stu-id="4f91b-108">Name</span></span>       | <span data-ttu-id="4f91b-109">说明</span><span class="sxs-lookup"><span data-stu-id="4f91b-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1b4b4-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="1b4b4-115">Request headers</span></span>
+| <span data-ttu-id="1b4b4-116">名称</span><span class="sxs-lookup"><span data-stu-id="1b4b4-116">Name</span></span>       | <span data-ttu-id="1b4b4-117">说明</span><span class="sxs-lookup"><span data-stu-id="1b4b4-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4f91b-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="4f91b-110">Authorization</span></span>  | <span data-ttu-id="4f91b-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4f91b-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1b4b4-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="1b4b4-118">Authorization</span></span>  | <span data-ttu-id="1b4b4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="1b4b4-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="1b4b4-121">Request body</span></span>
+<span data-ttu-id="1b4b4-122">在请求正文中，提供 [TableColumn](../resources/tablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-122">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="4f91b-113">请求正文</span><span class="sxs-lookup"><span data-stu-id="4f91b-113">Request body</span></span>
-<span data-ttu-id="4f91b-114">在请求正文中，提供 [TableColumn](../resources/tablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4f91b-114">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="1b4b4-123">响应</span><span class="sxs-lookup"><span data-stu-id="1b4b4-123">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="4f91b-115">响应</span><span class="sxs-lookup"><span data-stu-id="4f91b-115">Response</span></span>
+<span data-ttu-id="1b4b4-124">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [TableColumn](../resources/tablecolumn.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-124">If successful, this method returns `201, Created` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
 
-<span data-ttu-id="4f91b-116">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [TableColumn](../resources/tablecolumn.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4f91b-116">If successful, this method returns `201, Created` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="4f91b-117">示例</span><span class="sxs-lookup"><span data-stu-id="4f91b-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4f91b-118">请求</span><span class="sxs-lookup"><span data-stu-id="4f91b-118">Request</span></span>
-<span data-ttu-id="4f91b-119">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4f91b-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1b4b4-125">示例</span><span class="sxs-lookup"><span data-stu-id="1b4b4-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1b4b4-126">请求</span><span class="sxs-lookup"><span data-stu-id="1b4b4-126">Request</span></span>
+<span data-ttu-id="1b4b4-127">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_tablecolumn_from_table"
@@ -45,9 +48,9 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-<span data-ttu-id="4f91b-120">在请求正文中，提供 [TableColumn](../resources/tablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4f91b-120">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="4f91b-121">响应</span><span class="sxs-lookup"><span data-stu-id="4f91b-121">Response</span></span>
-<span data-ttu-id="4f91b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4f91b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1b4b4-128">在请求正文中，提供 [TableColumn](../resources/tablecolumn.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-128">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="1b4b4-129">响应</span><span class="sxs-lookup"><span data-stu-id="1b4b4-129">Response</span></span>
+<span data-ttu-id="1b4b4-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1b4b4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

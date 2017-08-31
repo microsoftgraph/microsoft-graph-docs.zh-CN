@@ -1,12 +1,16 @@
-# <a name="create-rangeborder"></a><span data-ttu-id="0a2ac-101">创建 RangeBorder</span><span class="sxs-lookup"><span data-stu-id="0a2ac-101">Create RangeBorder</span></span>
+# <a name="create-rangeborder"></a><span data-ttu-id="55dbe-101">创建 RangeBorder</span><span class="sxs-lookup"><span data-stu-id="55dbe-101">Create RangeBorder</span></span>
 
-<span data-ttu-id="0a2ac-102">使用此 API 创建新 RangeBorder。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-102">Use this API to create a new RangeBorder.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="0a2ac-103">先决条件</span><span class="sxs-lookup"><span data-stu-id="0a2ac-103">Prerequisites</span></span>
-<span data-ttu-id="0a2ac-104">要执行此 API，需要以下**范围**：</span><span class="sxs-lookup"><span data-stu-id="0a2ac-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="55dbe-102">使用此 API 创建新 RangeBorder。</span><span class="sxs-lookup"><span data-stu-id="55dbe-102">Use this API to create a new RangeBorder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="55dbe-103">权限</span><span class="sxs-lookup"><span data-stu-id="55dbe-103">Permissions</span></span>
+<span data-ttu-id="55dbe-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="55dbe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="0a2ac-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0a2ac-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="55dbe-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="55dbe-106">Permission type</span></span>      | <span data-ttu-id="55dbe-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55dbe-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="55dbe-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55dbe-108">Delegated (work or school account)</span></span> | <span data-ttu-id="55dbe-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55dbe-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="55dbe-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55dbe-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55dbe-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="55dbe-111">Not supported.</span></span>    |
+|<span data-ttu-id="55dbe-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="55dbe-112">Application</span></span> | <span data-ttu-id="55dbe-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="55dbe-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0a2ac-106">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0a2ac-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55dbe-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55dbe-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders
@@ -14,22 +18,21 @@ POST /workbook/worksheets/{id|name}/range(<address>)/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0a2ac-107">请求标头</span><span class="sxs-lookup"><span data-stu-id="0a2ac-107">Request headers</span></span>
-| <span data-ttu-id="0a2ac-108">名称</span><span class="sxs-lookup"><span data-stu-id="0a2ac-108">Name</span></span>       | <span data-ttu-id="0a2ac-109">说明</span><span class="sxs-lookup"><span data-stu-id="0a2ac-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="55dbe-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="55dbe-115">Request headers</span></span>
+| <span data-ttu-id="55dbe-116">名称</span><span class="sxs-lookup"><span data-stu-id="55dbe-116">Name</span></span>       | <span data-ttu-id="55dbe-117">说明</span><span class="sxs-lookup"><span data-stu-id="55dbe-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0a2ac-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a2ac-110">Authorization</span></span>  | <span data-ttu-id="0a2ac-p101">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="55dbe-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="55dbe-118">Authorization</span></span>  | <span data-ttu-id="55dbe-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="55dbe-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="55dbe-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="55dbe-121">Request body</span></span>
+<span data-ttu-id="55dbe-122">在请求正文中，提供 [RangeBorder](../resources/rangeborder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="55dbe-122">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="0a2ac-113">请求正文</span><span class="sxs-lookup"><span data-stu-id="0a2ac-113">Request body</span></span>
-<span data-ttu-id="0a2ac-114">在请求正文中，提供 [RangeBorder](../resources/rangeborder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-114">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="55dbe-123">响应</span><span class="sxs-lookup"><span data-stu-id="55dbe-123">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="0a2ac-115">响应</span><span class="sxs-lookup"><span data-stu-id="0a2ac-115">Response</span></span>
+<span data-ttu-id="55dbe-124">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="55dbe-124">If successful, this method returns `201, Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
 
-<span data-ttu-id="0a2ac-116">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-116">If successful, this method returns `201, Created` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="0a2ac-117">示例</span><span class="sxs-lookup"><span data-stu-id="0a2ac-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0a2ac-118">请求</span><span class="sxs-lookup"><span data-stu-id="0a2ac-118">Request</span></span>
-<span data-ttu-id="0a2ac-119">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="55dbe-125">示例</span><span class="sxs-lookup"><span data-stu-id="55dbe-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="55dbe-126">请求</span><span class="sxs-lookup"><span data-stu-id="55dbe-126">Request</span></span>
+<span data-ttu-id="55dbe-127">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="55dbe-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_rangeborder_from_rangeformat"
@@ -47,9 +50,9 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-<span data-ttu-id="0a2ac-120">在请求正文中，提供 [RangeBorder](../resources/rangeborder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-120">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="0a2ac-121">响应</span><span class="sxs-lookup"><span data-stu-id="0a2ac-121">Response</span></span>
-<span data-ttu-id="0a2ac-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0a2ac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="55dbe-128">在请求正文中，提供 [RangeBorder](../resources/rangeborder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="55dbe-128">In the request body, supply a JSON representation of [RangeBorder](../resources/rangeborder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="55dbe-129">响应</span><span class="sxs-lookup"><span data-stu-id="55dbe-129">Response</span></span>
+<span data-ttu-id="55dbe-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="55dbe-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

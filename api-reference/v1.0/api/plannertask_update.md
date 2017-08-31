@@ -1,5 +1,77 @@
-<span data-ttu-id="37876-p113">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="37876-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+# <a name="update-plannertask"></a><span data-ttu-id="82b44-101">更新 plannerTask</span><span class="sxs-lookup"><span data-stu-id="82b44-101">Update plannertask</span></span>
+
+<span data-ttu-id="82b44-102">更新 **plannertask** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="82b44-102">Update the properties of **plannertask** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="82b44-103">权限</span><span class="sxs-lookup"><span data-stu-id="82b44-103">Permissions</span></span>
+<span data-ttu-id="82b44-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="82b44-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="82b44-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="82b44-106">Permission type</span></span>      | <span data-ttu-id="82b44-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="82b44-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="82b44-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="82b44-108">Delegated (work or school account)</span></span> | <span data-ttu-id="82b44-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82b44-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="82b44-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="82b44-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82b44-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="82b44-111">Not supported.</span></span>    |
+|<span data-ttu-id="82b44-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="82b44-112">Application</span></span> | <span data-ttu-id="82b44-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="82b44-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="82b44-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="82b44-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/tasks/<id>
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="82b44-115">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="82b44-115">Optional request headers</span></span>
+| <span data-ttu-id="82b44-116">名称</span><span class="sxs-lookup"><span data-stu-id="82b44-116">Name</span></span>       | <span data-ttu-id="82b44-117">说明</span><span class="sxs-lookup"><span data-stu-id="82b44-117">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="82b44-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="82b44-118">Authorization</span></span>  | <span data-ttu-id="82b44-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="82b44-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82b44-121">If-Match</span><span class="sxs-lookup"><span data-stu-id="82b44-121">If-Match</span></span>  | <span data-ttu-id="82b44-p103">要更新的 **plannerTask** 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="82b44-p103">Last known ETag value for the **plannerTask** to be updated. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="82b44-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="82b44-124">Request body</span></span>
+<span data-ttu-id="82b44-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="82b44-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="82b44-128">属性</span><span class="sxs-lookup"><span data-stu-id="82b44-128">Property</span></span>     | <span data-ttu-id="82b44-129">类型</span><span class="sxs-lookup"><span data-stu-id="82b44-129">Type</span></span>   |<span data-ttu-id="82b44-130">说明</span><span class="sxs-lookup"><span data-stu-id="82b44-130">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="82b44-131">appliedCategories</span><span class="sxs-lookup"><span data-stu-id="82b44-131">appliedCategories</span></span>|[<span data-ttu-id="82b44-132">plannerAppliedCategories</span><span class="sxs-lookup"><span data-stu-id="82b44-132">plannerAppliedCategories</span></span>](../resources/plannerappliedcategories.md)|<span data-ttu-id="82b44-p105">此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。</span><span class="sxs-lookup"><span data-stu-id="82b44-p105">The categories to which the task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.</span></span>|
+|<span data-ttu-id="82b44-135">assigneePriority</span><span class="sxs-lookup"><span data-stu-id="82b44-135">assigneePriority</span></span>|<span data-ttu-id="82b44-136">字符串</span><span class="sxs-lookup"><span data-stu-id="82b44-136">String</span></span>|<span data-ttu-id="82b44-p106">用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。</span><span class="sxs-lookup"><span data-stu-id="82b44-p106">Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner_order_hint_format.md).</span></span>|
+|<span data-ttu-id="82b44-139">assignments</span><span class="sxs-lookup"><span data-stu-id="82b44-139">assignments</span></span>|[<span data-ttu-id="82b44-140">plannerAssignments</span><span class="sxs-lookup"><span data-stu-id="82b44-140">plannerAssignments</span></span>](../resources/plannerassignments.md)|<span data-ttu-id="82b44-141">分配到任务的用户集合。</span><span class="sxs-lookup"><span data-stu-id="82b44-141">The set of users the task is assigned to.</span></span>|
+|<span data-ttu-id="82b44-142">bucketId</span><span class="sxs-lookup"><span data-stu-id="82b44-142">bucketId</span></span>|<span data-ttu-id="82b44-143">字符串</span><span class="sxs-lookup"><span data-stu-id="82b44-143">String</span></span>|<span data-ttu-id="82b44-p107">此任务所属的存储桶 id。存储桶需要位于任务所在的计划中。长度为 28 个字符，区分大小写。[格式验证](../resources/planner_identifiers_disclaimer.md)在服务上完成。</span><span class="sxs-lookup"><span data-stu-id="82b44-p107">Bucket id to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case sensitive. [Format validation](../resources/planner_identifiers_disclaimer.md) is done on the service.</span></span> |
+|<span data-ttu-id="82b44-148">conversationThreadId</span><span class="sxs-lookup"><span data-stu-id="82b44-148">conversationThreadId</span></span>|<span data-ttu-id="82b44-149">String</span><span class="sxs-lookup"><span data-stu-id="82b44-149">String</span></span>|<span data-ttu-id="82b44-p108">任务对话的线程 id。这是在组中创建的对话线程对象的 id。</span><span class="sxs-lookup"><span data-stu-id="82b44-p108">Thread id of the conversation on the task. This is the id of the conversation thread object created in the group.</span></span>|
+|<span data-ttu-id="82b44-152">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="82b44-152">dueDateTime</span></span>|<span data-ttu-id="82b44-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="82b44-153">DateTimeOffset</span></span>|<span data-ttu-id="82b44-p109">任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="82b44-p109">Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="82b44-157">orderHint</span><span class="sxs-lookup"><span data-stu-id="82b44-157">orderHint</span></span>|<span data-ttu-id="82b44-158">字符串</span><span class="sxs-lookup"><span data-stu-id="82b44-158">String</span></span>|<span data-ttu-id="82b44-p110">用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。</span><span class="sxs-lookup"><span data-stu-id="82b44-p110">Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner_order_hint_format.md).</span></span>|
+|<span data-ttu-id="82b44-161">percentComplete</span><span class="sxs-lookup"><span data-stu-id="82b44-161">percentComplete</span></span>|<span data-ttu-id="82b44-162">Int32</span><span class="sxs-lookup"><span data-stu-id="82b44-162">Int32</span></span>|<span data-ttu-id="82b44-p111">任务完成的百分比。当设置为 `100` 时，任务被视为完成。</span><span class="sxs-lookup"><span data-stu-id="82b44-p111">Percentage of task completion. When set to `100`, the task is considered completed.</span></span> |
+|<span data-ttu-id="82b44-165">planId</span><span class="sxs-lookup"><span data-stu-id="82b44-165">planId</span></span>|<span data-ttu-id="82b44-166">String</span><span class="sxs-lookup"><span data-stu-id="82b44-166">String</span></span>|<span data-ttu-id="82b44-167">此任务所属的计划 id。</span><span class="sxs-lookup"><span data-stu-id="82b44-167">Plan id to which the task belongs.</span></span>|
+|<span data-ttu-id="82b44-168">startDateTime</span><span class="sxs-lookup"><span data-stu-id="82b44-168">startDateTime</span></span>|<span data-ttu-id="82b44-169">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="82b44-169">DateTimeOffset</span></span>|<span data-ttu-id="82b44-p112">任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="82b44-p112">Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="82b44-173">title</span><span class="sxs-lookup"><span data-stu-id="82b44-173">title</span></span>|<span data-ttu-id="82b44-174">String</span><span class="sxs-lookup"><span data-stu-id="82b44-174">String</span></span>|<span data-ttu-id="82b44-175">任务的标题。</span><span class="sxs-lookup"><span data-stu-id="82b44-175">Title of the task.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="82b44-176">响应</span><span class="sxs-lookup"><span data-stu-id="82b44-176">Response</span></span>
+
+<span data-ttu-id="82b44-177">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerTask](../resources/plannertask.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="82b44-177">If successful, this method returns a `200 OK` response code and updated [plannerTask](../resources/plannertask.md) object in the response body.</span></span>
+
+<span data-ttu-id="82b44-p113">此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="82b44-p113">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="82b44-181">示例</span><span class="sxs-lookup"><span data-stu-id="82b44-181">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="82b44-182">请求</span><span class="sxs-lookup"><span data-stu-id="82b44-182">Request</span></span>
+<span data-ttu-id="82b44-183">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="82b44-183">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_plannertask"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+Content-type: application/json
+Content-length: 247
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "assignments": {
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "orderHint": "N9917 U2883!"
+    }
+  },
+  "appliedCategories": {
+    "category3": true,
+    "category4": false
+  }
+}
+```
+##### <a name="response"></a><span data-ttu-id="82b44-184">响应</span><span class="sxs-lookup"><span data-stu-id="82b44-184">Response</span></span>
+<span data-ttu-id="82b44-p114">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="82b44-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

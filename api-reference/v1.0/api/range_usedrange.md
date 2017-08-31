@@ -1,5 +1,59 @@
-<span data-ttu-id="77aa8-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="77aa8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+# <a name="range-usedrange"></a><span data-ttu-id="151b3-101">Range:UsedRange</span><span class="sxs-lookup"><span data-stu-id="151b3-101">Range: UsedRange</span></span>
+
+<span data-ttu-id="151b3-102">返回指定 range 对象的所用范围。</span><span class="sxs-lookup"><span data-stu-id="151b3-102">Returns the used range of the given range object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="151b3-103">权限</span><span class="sxs-lookup"><span data-stu-id="151b3-103">Permissions</span></span>
+<span data-ttu-id="151b3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="151b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="151b3-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="151b3-106">Permission type</span></span>      | <span data-ttu-id="151b3-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="151b3-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="151b3-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="151b3-108">Delegated (work or school account)</span></span> | <span data-ttu-id="151b3-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="151b3-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="151b3-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="151b3-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="151b3-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="151b3-111">Not supported.</span></span>    |
+|<span data-ttu-id="151b3-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="151b3-112">Application</span></span> | <span data-ttu-id="151b3-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="151b3-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="151b3-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="151b3-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /workbook/names(<name>)/range/UsedRange
+GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+
+```
+## <a name="request-headers"></a><span data-ttu-id="151b3-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="151b3-115">Request headers</span></span>
+| <span data-ttu-id="151b3-116">名称</span><span class="sxs-lookup"><span data-stu-id="151b3-116">Name</span></span>       | <span data-ttu-id="151b3-117">说明</span><span class="sxs-lookup"><span data-stu-id="151b3-117">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="151b3-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="151b3-118">Authorization</span></span>  | <span data-ttu-id="151b3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="151b3-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="151b3-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="151b3-121">Request body</span></span>
+<span data-ttu-id="151b3-122">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="151b3-122">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="151b3-123">参数</span><span class="sxs-lookup"><span data-stu-id="151b3-123">Parameter</span></span>    | <span data-ttu-id="151b3-124">类型</span><span class="sxs-lookup"><span data-stu-id="151b3-124">Type</span></span>   |<span data-ttu-id="151b3-125">说明</span><span class="sxs-lookup"><span data-stu-id="151b3-125">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="151b3-126">valuesOnly</span><span class="sxs-lookup"><span data-stu-id="151b3-126">valuesOnly</span></span>|<span data-ttu-id="151b3-127">boolean</span><span class="sxs-lookup"><span data-stu-id="151b3-127">boolean</span></span>|<span data-ttu-id="151b3-p103">可选。仅将有值的单元格视为已使用的单元格。</span><span class="sxs-lookup"><span data-stu-id="151b3-p103">Optional. Considers only cells with values as used cells.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="151b3-130">响应</span><span class="sxs-lookup"><span data-stu-id="151b3-130">Response</span></span>
+
+<span data-ttu-id="151b3-131">如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="151b3-131">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="151b3-132">示例</span><span class="sxs-lookup"><span data-stu-id="151b3-132">Example</span></span>
+<span data-ttu-id="151b3-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="151b3-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="151b3-134">请求</span><span class="sxs-lookup"><span data-stu-id="151b3-134">Request</span></span>
+<span data-ttu-id="151b3-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="151b3-135">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "range_usedrange"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
+Content-type: application/json
+Content-length: 24
+
+{
+  "valuesOnly": true
+}
+```
+
+##### <a name="response"></a><span data-ttu-id="151b3-136">响应</span><span class="sxs-lookup"><span data-stu-id="151b3-136">Response</span></span>
+<span data-ttu-id="151b3-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="151b3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
