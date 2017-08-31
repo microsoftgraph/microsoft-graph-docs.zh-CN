@@ -41,17 +41,15 @@
 
 |**格式**|**示例**|**说明**|
 |:---------|:----------|:--------------|
-| “*{type} {guid} **名称** {name}*” | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用所属的命名空间 (GUID) 和名称标识属性。         |
-| “*{type} {guid} **Id** {id}*”     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 用所属的命名空间 (GUID) 和标识符标识属性。  |
-
+| "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用所属的命名空间 (GUID) 和名称标识属性。         |
+| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 用所属的命名空间 (GUID) 和标识符标识属性。  |
 
 **多值扩展属性的有效 id 格式**
 
 |**格式**|**示例**|**说明**|
 |:---------|:----------|:--------------|
-| “*{type} {guid} **名称** {name}*” | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用命名空间 (GUID) 和名称标识属性。         |
-| “*{type} {guid} **Id** {id}*”     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 用命名空间 (GUID) 和标识符标识属性。   |
-
+| "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用命名空间 (GUID) 和名称标识属性。         |
+| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 用命名空间 (GUID) 和标识符标识属性。   |
 
 ### <a name="rest-api-operations"></a>REST API 操作
  

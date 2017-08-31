@@ -146,27 +146,27 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 ---
 
-## <a name="microsoft-intune-device-management-permissions"></a>Microsoft Intune 设备管理权限
+## <a name="intune-device-management-permissions"></a>Intune 设备管理权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用 | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
+| _DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用 | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
+| _DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略 | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
+| _DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 |
+| _DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 |
+| _DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
+| _DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
+| _DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置（预览） | 允许应用读取 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置（预览） | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-| _DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略（预览） | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-| _DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略（预览） | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-| _DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用（预览） | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-| _DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用（预览） | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-| _DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置（预览） | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-| _DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置（预览） | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-| _DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备（预览） | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备（预览） | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作（预览） | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 |
+无。
 
 ### <a name="remarks"></a>注解
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
@@ -308,13 +308,16 @@ Files.ReadWrite.All 应用程序权限尚不支持 OneDrive [创建可恢复上�
 
 ### <a name="remarks"></a>注解
 
-Microsoft 帐户不支持组功能。 
+Microsoft 个人帐户不支持组功能。 
 
-对于 Office 365 组，组权限授予应用对组内容的访问权限；例如对话、文件、注释等。组权限也用于控制对 [Microsoft Planner](../api-reference/beta/resources/planner_overview.md) 资源和 API 的访问权限。
+对于 Office 365 组，组权限授予应用对组内容的访问权限；例如对话、文件、注释等。 
 
 应用程序权限对受支持的 API 有一些限制。有关详细信息，请参阅[已知问题](../concepts/known_issues.md)。
 
 在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](../api-reference/beta/resources/administrativeunit.md)。
+
+组权限也用于控制对 [Microsoft Planner](../api-reference/beta/resources/planner_overview.md) 资源和 API 的访问权限。Microsoft Planner API 仅支持委派权限，不支持应用程序权限。不支持 Microsoft 个人帐户。
+
 
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委托
@@ -592,7 +595,10 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="application-permissions"></a>应用程序权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Sites.Read.All_ |    读取所有网站集中的项（预览） | 允许应用在没有登录用户的情况下读取所有网站集中的文档和列表项。 | 是 |
+| _Sites.ReadWrite.All_ |    读取和写入所有网站集中的项（预览） | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
 
 ### <a name="remarks"></a>注解
 站点权限仅对工作或学校帐户有效。
@@ -602,7 +608,6 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 * _Sites.Read.All_：读取 SharePoint 根网站上的列表 (`GET /beta/sharePoint/site/lists`)
 * _Sites.ReadWrite.All_：创建 SharePoint 列表中的新列表项 (`POST /beta/sharePoint/site/lists/123/items`)
-
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 

@@ -1,10 +1,14 @@
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
 使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**： 
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-    * Files.ReadWrite
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +23,6 @@ GET /workbook/worksheets/{id|name}/UsedRange
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
-
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

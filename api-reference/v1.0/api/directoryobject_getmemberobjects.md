@@ -3,12 +3,14 @@
  返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 
  > 注意：只有用户可以是目录角色的成员。
 
-## <a name="prerequisites"></a>先决条件
-需要以下**范围**之一才能执行此 API：
-- _User.Read.All_ 和 _Group.Read.All_
-- _Directory.Read.All_
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-> 注意：权限范围以所需特权从小到大的顺序列出。
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | User.Read.All 和 Group.Read.All、Directory.Read.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -6,24 +6,27 @@
 
 应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。
 
-**注意：**如果拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。
+>**注意：**如果你拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Files.ReadWrite.AppFolder    | 
-|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
+|权限类型                        | 权限（从最低特权到最高特权）                                                           |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------|
+|委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Files.ReadWrite.AppFolder           |
+|应用程序                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All                              |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+
+此方法支持使用 `$expand` 和 `$select` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -31,8 +34,8 @@ GET /me/drive/special/{name}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {token}。必需。 |
 
-
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -42,6 +45,7 @@ GET /me/drive/special/{name}
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
+
 下面是一个请求用户驱动器的示例。
 
 <!-- {
@@ -74,7 +78,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>注解
 
-若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [展开](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 选项展开子集合。
+若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [$expand](../../../concepts/query_parameters.md) 选项展开子集合。
 
 
 <!-- {

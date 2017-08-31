@@ -1,18 +1,20 @@
 # <a name="upload-large-files-with-an-upload-session"></a>通过上载会话上载大文件
 
-通过创建上载会话，使应用程序可以上载最大大小的文件。上载会话使应用程序可以在连续的 API 请求中上载多个范围的文件，这样一来，如果在上载过程中连接断开，应用程序也可以继续传输文件。
+通过创建上传会话，使应用可以上传最大大小的文件。上传会话使应用可以在连续的 API 请求中上传多个范围的文件，这样一来，如果在上传过程中连接断开，应用也可以继续传输文件。
 
-若要使用上载会话上载文件，请执行以下两个步骤：
+若要使用上传会话上传文件，请执行以下两个步骤：
 
 1. [创建上载会话](#create-an-upload-session)
-2. [将字节上载到上载会话](#upload-bytes-to-the-upload-session)
+2. [将字节上传到上传会话](#upload-bytes-to-the-upload-session)
 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
+|应用程序 | Sites.ReadWrite.All |
 
 > **注意**：此 API 尚不支持 Files.ReadWrite.All 应用程序权限。即将规划提供完全支持。 
 
@@ -45,7 +47,6 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 | 名称       | 值 | 说明                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
-
 
 ### <a name="response"></a>响应
 对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 

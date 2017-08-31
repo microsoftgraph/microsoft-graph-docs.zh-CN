@@ -19,7 +19,6 @@
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
 
-
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）还是使用扩展属性？
 
 开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](http://developer.microsoft.com/en-us/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。若要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
@@ -45,7 +44,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensionName|String|开放类型开放扩展的唯一文本标识符。必需。|
 |id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
@@ -58,9 +57,9 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | 现有资源实体中的 [openTypeExtension](opentypeextension.md) 或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[消息](../resources/message.md)。 | 在现有或新建资源实例中创建 openTypeExtension 对象。| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | 现有资源实体中的 [openTypeExtension](opentypeextension.md) 或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[消息](../resources/message.md)。 | 在现有或新建资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
-|[更新](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |更新 openTypeExtension 对象。 |
+|[更新](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension_delete.md) | 无 |删除 openTypeExtension 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

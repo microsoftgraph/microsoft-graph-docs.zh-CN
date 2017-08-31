@@ -1,12 +1,14 @@
 # <a name="list-names"></a>列出名称
 
 检索与工作表关联的已命名项的列表。 
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一：
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -20,7 +22,6 @@ GET /workbook/worksheets({id|name})/names
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

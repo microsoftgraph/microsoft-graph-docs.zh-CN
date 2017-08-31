@@ -17,5 +17,6 @@
 
 **使用替代对每个发件人一致分类**
 
-[为发件人创建替代](../api/inferenceclassification_post_overrides.md) |  [列出所有的用户替代](../api/inferenceclassification_list_overrides.md) | 
-[更新发件人替代](../api/inferenceclassificationoverride_update.md) |  [删除发件人替代](../api/inferenceclassificationoverride_delete.md) 
+[创建发件人替代](../api/inferenceclassification_post_overrides.md) | [列出所有用户替代](../api/inferenceclassification_list_overrides.md) |
+
+[更新发件人替代](../api/inferenceclassificationoverride_update.md) | [删除发件人替代](../api/inferenceclassificationoverride_delete.md) 

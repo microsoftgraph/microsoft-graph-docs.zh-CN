@@ -2,7 +2,7 @@
 
 **driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。
 
-有两种主要方式来查找 **driveItem** 资源：
+**driveItem** 资源的寻址方式主要有两种：
 
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
@@ -88,11 +88,11 @@
 | createdDateTime      | DateTimeOffset                      | 创建项的日期和时间。只读。                                                                                                                                |
 | cTag                 | String                              | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。 |
 | deleted              | [删除](deleted.md)               | 有关项目删除状态的信息。只读。                                                                                                               |
-| 说明          | String                              | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上                                                                                    |
+| 说明          | 字符串                              | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上                                                                                    |
 | eTag                 | String                              | 整个项目（元数据和内容）的 eTag。只读。                                                                                                                 |
 | 文件                 | [文件](file.md)                     | 文件元数据（如果此项是一个文件）。只读。                                                                                                                          |
 | fileSystemInfo       | [fileSystemInfo](filesysteminfo.md) | 客户端上的文件系统信息。读写。                                                                                                                            |
-| 文件夹               | [文件夹](folder.md)                 | 文件夹元数据（如果此项是一个文件夹）。只读。                                                                                                                      |
+| folder               | [文件夹](folder.md)                 | 文件夹元数据（如果此项是一个文件夹）。只读。                                                                                                                      |
 | id                   | String                              | 项在驱动器中的唯一标识符。只读。                                                                                                            |
 | image                | [图像](image.md)                   | 图像元数据（如果此项是一个图像）。只读。                                                                                                                       |
 | lastModifiedBy       | [identitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                    |
@@ -105,7 +105,7 @@
 | remoteItem           | [remoteItem](remoteitem.md)         | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。                                                                        |
 | 根                 | [根](root.md)                     | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | 搜索元数据（如果此项目来自搜索结果）。只读。                                                                                                          |
-| 共享               | [共享](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                               |
+| shared               | [共享](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                  |
 | size                 | Int64                               | 项目大小，以字节为单位。只读。                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。                                                                             |
@@ -123,9 +123,8 @@
 | 子项           | [driveitem](driveitem.md) 集合       | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。                                        |
 | createdByUser      | [用户](user.md)                            | 识别创建项目的用户、设备和应用程序。只读。                                                                                                  |
 | lastModifiedByUser | [用户](user.md)                            | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                            |
-| 权限        | [权限](permission.md) 集合     | 项目的权限集。只读。可为 Null。                                                                                                                         |
-| 缩略图         | [thumbnailSet](thumbnailset.md) 集合 | 包含与项目关联的 [ThumbnailSet](thumbnailSet.md) 对象的集合。有关详细信息，请参阅 [获取缩略图](../api/thumbnailset_get.md)只读。可为 NULL。 |
-
+| permissions        | [权限](permission.md) 集合     | 项目的权限集。只读。可为 Null。                                                                                                                         |
+| 缩略图         | [thumbnailSet](thumbnailset.md) 集合 | 包含与项目关联的 [ThumbnailSet](thumbnailSet.md) 对象的集合。有关详细信息，请参阅 [获取缩略图](../api/thumbnailset_get.md)只读。可为 Null。 |
 
 ## <a name="instance-attributes"></a>实例属性
 
@@ -160,7 +159,6 @@
 | [添加权限](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [列出权限](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [删除权限](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## <a name="remarks"></a>注解
 

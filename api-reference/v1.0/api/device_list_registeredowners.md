@@ -1,8 +1,8 @@
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
 检索已注册为设备所有者的用户的列表。
-## <a name="prerequisites"></a>先决条件
-要执行此 API，需要以下**范围**之一： 
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 - *Device.ReadWrite.All* 和 *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 

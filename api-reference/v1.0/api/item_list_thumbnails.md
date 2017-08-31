@@ -18,11 +18,11 @@ DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    | 
-|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -34,7 +34,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持使用 `$select`[OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-
 | **item-id**  | string | 引用的项目的唯一标识符。                                      |
 | **thumb-id** | 数字 | 缩略图的索引，通常为 0 到 4。                                            |
 | **size**     | string | 请求的缩略图大小。这必须是列出的其中一个标准大小。 |
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http

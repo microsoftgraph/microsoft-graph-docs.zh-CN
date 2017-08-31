@@ -22,7 +22,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 
 Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 
-| 用例           | REST 资源    | 另请参阅 |
+| 用例        | REST 资源 | 另请参阅 |
 |:---------------|:--------|:----------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
@@ -38,9 +38,6 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | **应用开发** | | |
 | 通过使用扩展向邮件添加自定义应用数据 | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md) |
 | 访问半公开的 Outlook MAPI 属性的自定义数据 | [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook 扩展属性概述](../resources/extended-properties-overview.md) |
-
-
-
 
 ## <a name="next-steps"></a>后续步骤
 邮件 API 可以为你开辟与用户互动的新途径： 

@@ -13,11 +13,11 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
-|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    | 
-|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +28,7 @@ GET /groups/{group-id}/drive/root/delta
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)自定义响应。
+此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -43,7 +43,6 @@ GET /groups/{group-id}/drive/root/delta
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
 | **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink**。用于在将来读取下一组更改。  |
-
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 下面是一个如何调用此 API 以建立本地状态的示例。
@@ -157,7 +156,6 @@ Content-type: application/json
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `resyncChangesApplyDifferences`  | 如果确定上次同步时服务与你的本地更改保持同步，请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不知道的任意本地更改。 |
 | `resyncChangesUploadDifferences` | 上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，请保留两份）。                                       |
-
 
 在 OneDrive for Business 和 SharePoint 中，仅 `root` 文件夹支持 `delta`，其他文件夹并不支持。它也不会返回以下 DriveItem 属性：
 

@@ -33,9 +33,8 @@ EventMessage 通常可以在收件箱文件夹中找到，它作为事件组织�
 |[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [eventMessage](eventMessage.md) | 在新建或现有的 eventMessage 中创建一个或多个多值扩展属性。  |
 |[获取具有多值扩展属性的 eventMessage](../api/multivaluelegacyextendedproperty_get.md)  | [eventMessage](eventMessage.md) | 使用 `$expand` 获取包含一个多值扩展属性的 eventMessage。 |
 
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
@@ -66,16 +65,14 @@ EventMessage 通常可以在收件箱文件夹中找到，它作为事件组织�
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |webLink|String|要在 Outlook Web App 中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook Web App 审阅窗格中显示邮件。<br><br>如果通过 Outlook Web App 登录邮箱，该邮件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br><br>可以从 iFrame 中访问此 URL。|
 
-
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
-|事件|[事件](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
+|attachments|[附件](attachment.md) 集合| 只读。可为 Null。|
+|event|[事件](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合|为 eventMessage 定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 eventMessage 定义的单值扩展属性的集合。只读。可为 Null。|
-
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
