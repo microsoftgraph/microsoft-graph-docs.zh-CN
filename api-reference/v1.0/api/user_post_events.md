@@ -1,22 +1,22 @@
-# <a name="create-event"></a><span data-ttu-id="427c2-101">创建事件</span><span class="sxs-lookup"><span data-stu-id="427c2-101">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="4a154-101">创建事件</span><span class="sxs-lookup"><span data-stu-id="4a154-101">Create Event</span></span>
 
-<span data-ttu-id="427c2-102">在用户的默认日历或指定日历中创建[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="427c2-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="4a154-102">在用户的默认日历或指定日历中创建[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="4a154-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="427c2-103">可以将事件的各开始和结束时间的时区指定为这些值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="427c2-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+<span data-ttu-id="4a154-103">可以将事件的各开始和结束时间的时区指定为这些值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="4a154-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
 
-<span data-ttu-id="427c2-104">创建事件时，服务器将向所有与会者发送邀请。</span><span class="sxs-lookup"><span data-stu-id="427c2-104">When the event is created, the server send invitations to all attendees.</span></span>
+<span data-ttu-id="4a154-104">创建事件时，服务器将向所有与会者发送邀请。</span><span class="sxs-lookup"><span data-stu-id="4a154-104">When the event is created, the server send invitations to all attendees.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="427c2-105">权限</span><span class="sxs-lookup"><span data-stu-id="427c2-105">Permissions</span></span>
-<span data-ttu-id="427c2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="427c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4a154-105">权限</span><span class="sxs-lookup"><span data-stu-id="4a154-105">Permissions</span></span>
+<span data-ttu-id="4a154-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4a154-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="427c2-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="427c2-108">Permission type</span></span>      | <span data-ttu-id="427c2-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="427c2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4a154-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a154-108">Permission type</span></span>      | <span data-ttu-id="4a154-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a154-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="427c2-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="427c2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="427c2-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="427c2-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="427c2-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="427c2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="427c2-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="427c2-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="427c2-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="427c2-114">Application</span></span> | <span data-ttu-id="427c2-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="427c2-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="4a154-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a154-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4a154-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a154-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="4a154-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a154-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a154-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a154-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="4a154-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a154-114">Application</span></span> | <span data-ttu-id="4a154-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a154-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="427c2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="427c2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4a154-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a154-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -28,24 +28,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="427c2-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="427c2-117">Request headers</span></span>
-| <span data-ttu-id="427c2-118">标头</span><span class="sxs-lookup"><span data-stu-id="427c2-118">Header</span></span>       | <span data-ttu-id="427c2-119">值</span><span class="sxs-lookup"><span data-stu-id="427c2-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4a154-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a154-117">Request headers</span></span>
+| <span data-ttu-id="4a154-118">标头</span><span class="sxs-lookup"><span data-stu-id="4a154-118">Header</span></span>       | <span data-ttu-id="4a154-119">值</span><span class="sxs-lookup"><span data-stu-id="4a154-119">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="427c2-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="427c2-120">Authorization</span></span>  | <span data-ttu-id="427c2-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="427c2-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="427c2-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="427c2-123">Content-Type</span></span>  | <span data-ttu-id="427c2-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="427c2-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="4a154-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a154-120">Authorization</span></span>  | <span data-ttu-id="4a154-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4a154-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4a154-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4a154-123">Content-Type</span></span>  | <span data-ttu-id="4a154-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4a154-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="427c2-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="427c2-126">Request body</span></span>
-<span data-ttu-id="427c2-127">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="427c2-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4a154-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a154-126">Request body</span></span>
+<span data-ttu-id="4a154-127">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4a154-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="427c2-128">由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="427c2-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="4a154-128">由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)因此可以使用 `POST` 操作，并在创建事件时向其添加含有自己的数据的自定义属性。</span><span class="sxs-lookup"><span data-stu-id="4a154-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="427c2-129">响应</span><span class="sxs-lookup"><span data-stu-id="427c2-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4a154-129">响应</span><span class="sxs-lookup"><span data-stu-id="4a154-129">Response</span></span>
 
-<span data-ttu-id="427c2-130">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="427c2-130">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="4a154-130">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4a154-130">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="427c2-131">示例</span><span class="sxs-lookup"><span data-stu-id="427c2-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="427c2-132">请求</span><span class="sxs-lookup"><span data-stu-id="427c2-132">Request</span></span>
-<span data-ttu-id="427c2-p104">下面是一个请求示例。它使用 `Prefer: outlook.timezone` 请求标头来指定应使用该时区的响应中的**开始**和**结束**时间。</span><span class="sxs-lookup"><span data-stu-id="427c2-p104">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
+## <a name="example"></a><span data-ttu-id="4a154-131">示例</span><span class="sxs-lookup"><span data-stu-id="4a154-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4a154-132">请求</span><span class="sxs-lookup"><span data-stu-id="4a154-132">Request</span></span>
+<span data-ttu-id="4a154-p104">下面是一个请求示例。它使用 `Prefer: outlook.timezone` 请求标头来指定应使用该时区的响应中的**开始**和**结束**时间。</span><span class="sxs-lookup"><span data-stu-id="4a154-p104">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -76,17 +76,17 @@ Content-length: 600
   "attendees": [
     {
       "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
       },
       "type": "required"
     }
   ]
 }
 ```
-<span data-ttu-id="427c2-135">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="427c2-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="427c2-136">响应</span><span class="sxs-lookup"><span data-stu-id="427c2-136">Response</span></span>
-<span data-ttu-id="427c2-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="427c2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="4a154-135">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4a154-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="4a154-136">响应</span><span class="sxs-lookup"><span data-stu-id="4a154-136">Response</span></span>
+<span data-ttu-id="4a154-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4a154-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -154,8 +154,8 @@ Content-length: 2197
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
             }
         }
     ],
@@ -167,10 +167,10 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="427c2-140">另请参阅</span><span class="sxs-lookup"><span data-stu-id="427c2-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4a154-140">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4a154-140">See also</span></span>
 
-- [<span data-ttu-id="427c2-141">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="427c2-141">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="427c2-142">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="427c2-142">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="4a154-141">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="4a154-141">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="4a154-142">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="4a154-142">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->
