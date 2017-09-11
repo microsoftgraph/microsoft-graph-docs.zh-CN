@@ -107,8 +107,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },      
             "id":"AAMkADNVxRAAA="
@@ -134,8 +134,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxSAAA="
@@ -196,8 +196,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxTAAA="
@@ -223,8 +223,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxUAAA="
@@ -291,8 +291,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HuAAA="
@@ -367,8 +367,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HvAAA="
