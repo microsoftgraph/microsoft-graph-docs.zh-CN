@@ -11,7 +11,7 @@
 |委派（个人 Microsoft 帐户） | User.ReadWrite    |
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
-更新 passwordProfile 属性时，必须有以下范围：Directory.AccessAsUser.All.
+更新 passwordProfile 属性时，需要以下权限：Directory.AccessAsUser.All。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

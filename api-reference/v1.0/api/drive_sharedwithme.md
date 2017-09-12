@@ -11,7 +11,7 @@
 |委派（个人 Microsoft 帐户） | Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-此外，如果没有 **All** 范围之一，无法访问从此 API 返回的共享项。
+此外，如果没有 **All** 权限之一，无法访问从此 API 返回的共享项。
 
 ## <a name="http-request"></a>HTTP 请求
 

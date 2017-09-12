@@ -1,23 +1,20 @@
-<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
-
-# 使用查询参数自定义响应
+# <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
 Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 
 |名称|说明|示例（单击示例可在 [Graph 浏览器][graph-explorer]中试调用）
 |:---------------|:--------|:-------|
-|[$filter](#filter)|筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$select](#select)|筛选属性（列）。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$expand](#expand)|检索相关资源。|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
-|[$orderby](#orderby)|对结果进行排序。|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
-|[$top](#top)|限制结果。通常与 `$skipToken` 配合使用。|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|与 `$top` 配合使用可以检索结果页。|有关示例，请参阅 $top 查询中的 `nextLink`。
-|[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-<!-- TODO: figure out whether $search is actually used
-|[`$search`](#search)|A property and value pair separated by a colon.|
--->
+|[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+|[$expand](#expand)|检索相关资源。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
+|[$filter](#filter)|筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[$orderby](#orderby)|对结果进行排序。|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
+|[$search](#search)| 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
+|[$select](#select)|筛选属性（列）。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[$skip](#skip)|对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
+|[$skipToken](#skiptoken)|从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
+|[$top](#top)|设置结果的页面大小。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
-这些参数与 [OData V4 查询语言][odata-query]兼容。
+这些参数与 [OData V4 查询语言][odata-query]兼容。并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
 > **注意：**在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)。
 
@@ -37,205 +34,113 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-<a id="filter" class="xliff"></a>
+## <a name="count"></a>count
 
-## filter
+使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。 
 
-`$filter` 可用于仅检索集合的一部分内容。例如，若要查找显示名称以 `J` 开头的用户，请使用 `startswith`。
-
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-
-**请求：**
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
-```
-
-**响应：**
-
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
-    "value": [
-        {
-            "id": "e013b9f3-a1ab-48d1-907b-e716c39d6363",
-            "businessPhones": [
-                "4255550100"
-            ],
-            "displayName": "Jan Madden",
-            "givenName": "Jan",
-            "jobTitle": null,
-            "mail": "demo32@a830edad9050849NDA1.onmicrosoft.com",
-            "mobilePhone": null,
-            "officeLocation": null,
-            "preferredLanguage": null,
-            "surname": "Madden",
-            "userPrincipalName": "demo32@a830edad9050849NDA1.onmicrosoft.com"
-        },
-        {
-            "id": "89efe8ed-d141-4151-a3e4-570a70022dff",
-            "businessPhones": [
-                "+1 425 555 0109"
-            ],
-            "displayName": "Janet Schorr",
-            "givenName": "Janet",
-            "jobTitle": "Product Marketing Manager",
-            "mail": "janets@a830edad9050849NDA1.onmicrosoft.com",
-            "mobilePhone": null,
-            "officeLocation": "18/2111",
-            "preferredLanguage": null,
-            "surname": "Schorr",
-            "userPrincipalName": "janets@a830edad9050849NDA1.onmicrosoft.com"
-        },
-        ...
-    ]
-}
-```
-
-`$filter` 的语法非常丰富且富于表现力，其中可内置许多运算符。逻辑运算符包括等于 (`eq`)、不等于 (`ne`)、大于 (`gt`)、大于或等于 (`gte`)、且 (`and`)、或 (`or`)、非 (`not`) 等。算术运算符包括加 (`add`)、减 (`sub`) 等。字符串运算符包括包含 (`contains`)，开头为 (`startswith`) 等。lambda 运算符包括任意 (`any`) 和所有 (`all`)。有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。
-
-
-<a id="select" class="xliff"></a>
-
-## select
-
-在集合或单个实体中，若要指定返回不同于默认集的属性集，请使用 `$select` 查询参数。使用 `$select` 参数，可以选择返回的默认集的子集或超集。例如，检索邮件时，不妨选择仅返回邮件的 `from` 和 `subject` 属性。
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
-```
-
-<!--For example, when retrieving the children of an item on a drive, you want to select that only the `name` and `size` properties of items are returned.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name,size
-```
-
-By submitting the request with the `$select=name,size` query string, the objects
-in the response will only have those property values included.
-
-```json
-{
-  "value": [
-    {
-      "id": "13140a9sd9aba",
-      "name": "Documents",
-      "size": 1024
-    },
-    {
-      "id": "123901909124a",
-      "name": "Pictures",
-      "size": 1012010210
-    }
-  ]
-}
-```-->
-
-<a id="expand" class="xliff"></a>
-
-## expand
-
-在 Microsoft Graph API 请求中，对参考项目的对象或集合的导航不会自动扩展。这是有意为之，因为这样可以减少网络流量以及从服务生成响应所需的时间。不过，在某些情况下，您可能希望在响应中添加这些结果。
-
-`$expand` 查询字符串参数可用于指示 API 扩展子对象或集合，并添加这些结果。
-
-例如，若要检索根驱动器信息和驱动器中的顶级子项，请使用 `$expand` 参数。此示例还使用 [`$select`](#select) 声明，以便仅返回子项的 `id` 和 `name` 属性。
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
-```
-
-> **注意：**最多可为请求扩展 20 个对象。此外，如果查询 [`user`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) 资源，可以使用 `$expand`，一次仅获取一个子对象或集合的属性。下面的示例便是获取 `user` 对象，每个请求在 `directReports` 集合中最多扩展 20 个 `directReport` 对象：
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$expand=directReports
-```
-
-其他一些资源可能也有限制，因此，请务必检查是否可能有错。
-
-<a id="orderby" class="xliff"></a>
-
-## orderby
-
-若要指定从 Microsoft Graph API 返回的项的排序顺序，请使用 `$orderby` 查询参数。
-
-例如，若要返回组织中的用户，并按显示名称进行排序，请使用以下语法：
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
-```
-
-还可以按复杂类型实体进行排序。下面的示例获取邮件，然后按 `from` 属性的 `address` 字段（属于复杂类型 `emailAddress`）对这些邮件进行排序：
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
-```
-
-若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。
-
- > **注意：**如果查询 [`user`](../api-reference/v1.0/resources/user.md) 资源，不能将 `$orderby` 与 filter 表达式结合使用。
-
-<a id="top" class="xliff"></a>
-
-## top
-
-若要指定结果集中返回的项数上限，请使用 `$top` 查询参数。`$top` 查询参数可确定集合的子集。这个子集是通过仅选择集合的前 N 项而形成，其中 N 是此查询参数指定的正整数。例如，若要返回用户邮箱中的前 5 封邮件，请使用以下语法：
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$top=5
-```
-
-<a id="skip" class="xliff"></a>
-
-## skip
-
-若要设置在检索集合中的项之前要跳过的项数，请使用 `$skip` 查询参数。例如，若要返回按创建日期排序的事件，并从第 21 个事件开始返回，请使用以下语法。
-
-```http
-GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
-```
-
-<a id="skiptoken" class="xliff"></a>
-
-## skipToken
-
-若要请求第二个和后续 Graph 数据页，请使用 `$skipToken` 查询参数。当 Graph 返回部分结果时（通常是由于服务器端分页所致），Graph 返回的 URL 中会提供 `$skipToken` 查询参数。它在集合中标识了服务器发送完结果的点，并会传递回 Graph 以指明应从哪里继续发送结果。例如，`$skipToken` 查询参数的值可以标识集合中的第 10 项，也可以标识包含 50 项的集合中的第 20 项，亦可标识集合中的其他任何位置。
-
-一些响应中会有 `@odata.nextLink` 值。其中一些包括 `$skipToken` 值。`$skipToken` 值就像是一个标记，用于指示服务从哪里继续返回下一组结果。下面的示例展示了用户请求按 `displayName` 进行排序的响应中的 `@odata.nextLink` 值：
-
-```json
-"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27"
-```
-
-若要返回下一页的组织用户，请使用以下语法。
-
-```http
-GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
-```
-
-<a id="count" class="xliff"></a>
-
-## count
-
-`$count` 查询参数可用于添加集合中的项总数，以及从 Graph 返回的数据值页，如下面的示例所示：
+例如，以下请求将返回当前用户的 `contacts` 集合以及 `@odata.count` 属性的 `contacts` 集合中的项目数。
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-这将同时返回 `contacts` 集合和 `@odata.count` 属性中 `contacts` 集合中的项数。
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
->**注意：**[`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) 集合不支持此查询参数。
 
-<a id="search" class="xliff"></a>
+>**注意：**派生自 [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) 的资源集合（如 [user](../api-reference/v1.0/resources/user.md) 或 [group](../api-reference/v1.0/resources/group.md) 集合）不支持 `$count`。
 
-## search
+## <a name="expand"></a>expand
 
-若要限制与搜索条件匹配的请求结果，请使用 `$search` 查询参数。
+许多 Microsoft Graph 资源都会暴露资源的声明属性以及其与其他资源的关系。这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
 
-> **注意：**目前**只**能搜索 [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) 和 [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter) 或 [`$orderby`](#orderby)。
+通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。
 
-搜索条件使用高级查询语法 (AQS) 进行表示。结果按邮件发送日期和时间进行排序。
+以下示例在驱动器中获取根驱动器信息以及顶级子项：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+
+使用某些资源集合，还可以通过添加 `$select` 参数来指定要在扩展资源中返回的属性。以下示例执行与上一示例相同的查询，但使用 [`$select`](#select) 语句将为扩展子项返回的属性限制为 `id` 和 `name` 属性。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+
+> **注意：**并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 `directReports`、`manager` 和 `memberOf` 关系，但无法扩展其 `events`、`messages` 或 `photo` 关系。并非所有资源或关系都支持在扩展项上使用 `$select`。 
+> 
+> 使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如[user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
+
+## <a name="filter"></a>筛选器
+
+使用 `$filter` 查询参数，以仅检索集合的子集。 
+
+例如，若要查找显示名称以子母“J”开头的用户，请使用 `startswith`。
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+
+对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。通常支持下列逻辑运算符：等于 (`eq`)、不等于 (`ne`)、大于 (`gt`)、大于或等于 (`ge`)、小于 (`lt`)、小于或等于 (`le`)、和 (`and`)、或 (`or`) 以及非 (`not`)。通常支持 `startswith` 字符串运算符。某些 API 支持 `any` lambda 运算符。有关一些用法示例的信息，请参阅下表。有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。  
+
+下表显示使用 `$filter` 查询参数的一些示例。
+
+|说明|示例（单击示例可在 [Graph 浏览器][graph-explorer]中试调用）|
+|:--------|:-------|
+|  跨多个属性搜索名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| 获取登录用户在 2017 年 4 月收到的所有电子邮件 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| 列出组织中的所有 Office 365 组 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+
+> **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+
+## <a name="orderby"></a>orderby
+
+使用 `$orderby` 查询参数指定从 Microsoft Graph 返回的项的排序顺序。
+
+例如，以下请求返回按用户显示名称进行排序的组织中的用户：
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
+```
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
+
+还可以按复杂类型实体进行排序。下面的请求获取邮件，然后按 `from` 属性的 `address` 字段（属于复杂类型 `emailAddress`）对这些邮件进行排序：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
+```
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+
+若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。
+
+通过一些 API，可以对多个属性的结果进行排序。例如，以下请求首先按发件人名称以降序（Z 到 A）排序用户收件箱中的邮件，然后按主题以升序（默认）排序邮件。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
+```
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+
+
+ > **注意：**使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
+
+## <a name="search"></a>search
+
+使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
+
+> **注意：**目前**只**能搜索 [message](../api-reference/v1.0/resources/message.md) 和 [person](../api-reference/v1.0/resources/person.md) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter) 或 [`$orderby`](#orderby)。
+
+### <a name="using-search-on-message-collections"></a>针对 `message` 集合使用 $search
+
+邮件的搜索条件使用[高级查询语法 (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7) 进行表示。结果按邮件发送日期和时间进行排序。
 
 可以在 `$search` 条件中对 `message` 指定下列属性：`attachments`、`bccRecipients`、`body`、`category`、`ccRecipients`、`content`、`from`、`hasAttachments`、`participants`、`receivedDateTime`、`sender`、`subject`、`toRecipients`
 
@@ -253,6 +158,105 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 
-[graph-explorer]: https://graph.microsoft.io/en-us/graph-explorer
+### <a name="using-search-on-person-collections"></a>针对 `person` 集合使用 $search
+
+可以使用 Microsoft Graph People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。People API 支持 `$search` 查询参数。
+
+搜索 [person](../api-reference/v1.0/resources/person.md) 资源的 `displayName` 和 `emailAddress` 属性上的人员。搜索实现模糊匹配算法。它们将基于完全匹配以及关于搜索意图的推断返回结果。例如，假设用户显示名称为“Tyler Lee”，电子邮件地址为 tylerle@example.com，该用户位于已登录用户的 `people` 集合中。所有以下搜索将返回包含 Tyler 的结果。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+```
+
+还可以搜索对特定主题感兴趣的人员。基于从用户的邮件对话派生的推断来执行搜索。例如，以下搜索将返回与登录用户相关的人员集合，在与该用户进行通信时，他表现出了对披萨的兴趣。请注意，搜索短语用引号括起来。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+```
+
+最后，可以通过组合两种类型的搜索表达式，在同一请求中合并人员搜索和主题搜索。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+该请求主要进行两次搜索：对登录用户的相关人员的 `displayName` 和 `emailAddress` 属性进行模糊搜索，以及对该用户相关人员进行“披萨”主题搜索。然后对结果进行排名、排序并返回。请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
+
+若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md)。  
+
+## <a name="select"></a>select
+
+使用 `$select` 查询参数返回一组不同于单个资源的默认集合或资源集合的属性。使用 $select 可以指定默认属性的子集或超集。
+
+例如，在检索登录用户的邮件时，可以指定仅返回 `from` 和 `subject` 属性：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+
+> **重要说明：**一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。这对于可能返回大型结果集的查询尤为有用。限制每行返回的属性将减少网络负载并帮助提升应用的性能。
+>
+> 在 `v1.0` 中，从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的一些 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
+
+## <a name="skip"></a>skip
+
+使用 `$skip` 查询参数设置要在集合开头跳过的项数。例如，以下请求返回按照创建日期排序的用户的事件，从集合中的第 21 个事件开始：
+
+```http
+GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
+```
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
+
+> **注意：**一些 Microsoft Graph API，如 Outlook 邮件和 Outlook 日历（`message``event` 和 `calendar`），使用 `$skip` 来实现分页。当查询的结果跨多个页面时，这些 API 将返回一个具有包含 `$skip` 参数的 URL 的 `@odata:nextLink` 属性。可以使用此 URL 返回下一页结果。若要了解详细信息，请参阅[分页](./paging.md)。
+
+## <a name="skiptoken"></a>skipToken
+
+由于服务器端分页或由于使用 [`$top`](#top) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
+
+
+## <a name="top"></a>top
+
+使用 `$top` 查询参数指定结果集的页面大小。 
+
+如果结果集中还剩余多个项目，则响应正文将包含 `@odata.nextLink` 参数。此参数包含可用于获取下一页结果的 URL。若要了解详细信息，请参阅[分页](./paging.md)。 
+
+例如，以下请求返回用户邮箱中的前 5 封邮件：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$top=5
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+
+
+## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理
+
+如果不支持指定的查询参数，某些请求将返回错误消息。例如，不能对 `user/photo` 关系使用 `$expand`。 
+
+```http
+https://graph.microsoft.com/beta/me?$expand=photo
+```
+
+```json
+{
+    "error":{
+        "code":"ExpandNotSupported",
+        "message":"Expand is not allowed for property 'Photo' according to the entity schema.",
+        "innerError":{
+            "request-id":"1653fefd-bc31-484b-bb10-8dc33cb853ec",
+            "date":"2017-07-31T20:55:01"
+        }
+    }
+}
+```
+
+但是，值得注意的是请求中指定的查询参数可能会自行失败。不支持的查询参数以及不支持的查询参数组合的情况就是如此。在这些情况下，应检查请求返回的数据，以确定指定的查询参数是否具有所需的效果。 
+
+[graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356

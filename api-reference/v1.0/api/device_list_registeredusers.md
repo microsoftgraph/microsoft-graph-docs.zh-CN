@@ -3,10 +3,11 @@
 检索已注册为设备用户的用户列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
-- *Device.ReadWrite.All* 和 *User.ReadBasic.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+
+- Device.ReadWrite.All and User.ReadBasic.All
+- Directory.Read.All
+- Directory.ReadWrite.All 
+- Directory.AccessAsUser.All
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
