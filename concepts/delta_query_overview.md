@@ -78,7 +78,7 @@ delta 查询目前支持以下资源：
 
 ## <a name="delta-query-request-examples"></a>delta 查询请求示例 
 
-- [获取日历视图中事件的增量更改](../Concepts/delta_query_events.md)
+- [获取日历视图中事件的增量更改](../concepts/delta_query_events.md)
 - [获取文件夹中邮件的增量更改](./delta_query_messages.md)
 - [获取组的增量更改](./delta_query_groups.md)
 - [获取用户的增量更改](./delta_query_users.md)

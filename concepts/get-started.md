@@ -2,7 +2,7 @@
 
 此部分中的文章提供了有关如何跨越各种语言和开发平台生成连接到 Microsoft Graph 的应用的详细指南。每篇文章从相应平台的初学者项目示例开始，引导你添加对用户进行身份验证并创建示例请求以使 Microsoft Graph 从其帐户发送电子邮件的功能。完成后的项目与该平台的 [Microsoft Graph 存储库中的 Connect 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) 一样。
 
-选择涉及所选身份验证程序和开发平台的文章，然后开始连接到 Microsoft Graph。
+选择涉及所选验证提供程序和开发平台的文章，然后开始连接到 Microsoft Graph。 有关详细信息，请参阅 [v2.0 终结点有何不同之处？](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
 
 可以按照涉及所选开发平台的文章中的步骤操作，或者，若要快速创建并运行有效的解决方案，请尝试使用 [快速入门](https://developer.microsoft.com/graph/quick-start) 体验。
 
@@ -114,6 +114,7 @@
 </table>
 
 ## <a name="see-also"></a>另请参阅
-- 请在我们的 [API Explorer](https://developer.microsoft.com/graph/graph-explorer) 中尝试使用示例 REST 调用。
-- [Azure AD 终结点文档](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Azure AD v2.0 终结点文档](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+
+- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试使用示例 REST 调用。
+- [Azure AD 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

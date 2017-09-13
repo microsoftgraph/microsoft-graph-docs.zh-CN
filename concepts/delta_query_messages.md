@@ -130,8 +130,8 @@ Prefer: odata.maxpagesize=2
             "subject":"Holiday promotion sale",
             "sender":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AQMkADNkNAAAVRMKAAAAA=="

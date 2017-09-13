@@ -34,7 +34,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 
 两次 **findMeetingTimes** 调用包含以下参数。**findMeetingTimes** 的所有[参数](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body)都是可选的。
 
-- **与会者**：一位与会者 Fanny Downs 的**类型**属性设置为 `required`
+- **与会者**：一位与会者 Samantha Booth 的**类型**属性设置为 `required`
 - **locationConstraint**：不需要任何位置建议
 - **timeConstraint**：第一次调用查找日期/时间范围 4 月 18 日上午 9 点到 4 月 20 日下午 5 点；如果第一次调用未能建议任何时间，第二次调用查找范围 4 月 21 日上午 9 点到下午 5 点
 - **meetingDuration**：两个小时
@@ -59,8 +59,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -134,8 +134,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -208,7 +208,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

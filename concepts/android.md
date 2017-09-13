@@ -70,11 +70,10 @@
 
     b.选择“添加平台”****和“本机应用程序”****。
 
-    > **注意：**应用程序注册门户提供值为 *msalYOUR NEW APP ID://auth* 的重定向 URI。不要使用内置重定向 URI。[Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现需要此重定向 URI 的 MSAL 身份验证库。如果使用[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，则必须使用内置重定向 URI。
+    > **注意：**应用程序注册门户提供值为 *msalENTER_YOUR_CLIENT_ID://auth* 的重定向 URI。不要使用内置重定向 URI。[Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现需要此重定向 URI 的 MSAL 身份验证库。如果使用[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，则必须使用内置重定向 URI。
 
-    对于引导设置流和非引导流
 
-    a.添加委派权限。将需要**配置文件**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
+    a.添加委派权限。需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
    
     b.选择“保存”****。
 
@@ -232,27 +231,40 @@
 
 需要让应用准备就绪，以处理授权服务器的响应，其中包含用于交换访问令牌的代码。
 
-1. 我们需要告诉 Android 系统，Connect 应用可以处理应用程序注册中所配置的重定向 URL 的请求。若要执行此操作，请打开 **AndroidManifest** 文件并将以下子项添加到项目 **\<application/\>** 元素中。
+1. 需要告诉 Android 系统，Connect 应用可以处理应用程序注册中所配置的重定向 URL 的请求。若要执行此操作，请打开 **strings.xml** 字符串资源文件并将以下子项添加到项目 **\<application/\>** 元素中。
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   将在 **AndroidManifest.xml** 文件中使用字符串资源。 **MSAL** 库在运行时读取客户端 ID，并返回为 **BrowserTabActivity** 定义的重定向 URL 的 REST 响应。
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. **MSAL** 库需要访问由注册门户分配的应用程序 ID。**MSAL 库将应用程序 ID 称为“客户端 ID”**。从传入库构造函数的应用程序上下文获取应用程序 ID（客户端 ID）。 

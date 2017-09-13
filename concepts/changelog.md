@@ -4,7 +4,44 @@
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
+## <a name="september-2017"></a>2017 年 9 月
+
+### <a name="outlook-calendar"></a>Outlook 日历
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 向 [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) 资源添加了 **locations** 属性，以支持组织与会者可以从多个位置参加的事件。 |
+| 添加项 | Beta | 向 [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 复杂类型添加了 **locationType** 属性。|
+| 添加项 | Beta | 向 [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 复杂类型添加了 **uniqueId** 和 **uniqueIdType** 属性。 在这种情况下，这些属性仅供内部使用。|
+
+
+### <a name="outlook-inbox-message-rules"></a>Outlook 收件箱消息规则
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 向 [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) 资源添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) 实例的集合。 |
+| 添加项 | Beta | 添加了 [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) 实体，以及 [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) 和 [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) 复杂类型。  |
+| 添加项 | Beta | 添加了消息规则的以下 CRUD 操作：[创建](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules)、[列出](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules)、[获取](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get)、[更新](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update)和[删除](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete)。 |
+
+
+### <a name="outlook-user-choices"></a>Outlook 用户选择
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 **masterCategories** 导航属性。  |
+| 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) 函数。  |
+| 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) 函数。  |
+
+
 ## <a name="august-2017"></a>2017 年 8 月
+
+### <a name="group-lifecycle-policy"></a>组生命周期策略
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 添加了 [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) 实体。 |
+| 添加项 | Beta | 添加了以下组生命周期策略 API：[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) 和 [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
+| 添加项 | Beta | 向 [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) 实体添加了 [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 函数。 |
 
 ### <a name="intune-apis"></a>Intune API
 |更改类型|版本|说明|
@@ -32,6 +69,12 @@
 |Change|Beta|向 [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) 复杂类型添加了 **secureByDefault** 属性|
 |Change|Beta|向 [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall) 复杂类型添加了 **restartMode** 属性|
 
+### <a name="onenote"></a>OneNote
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | v1.0 和 Beta | 向 **site** 添加了 [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) 导航属性。  |
+| 添加项 | Beta | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook)。 |
 
 ### <a name="people"></a>人员 
 
@@ -39,20 +82,7 @@
 |:-------------|:-----------|:--------------|
 | 添加项 | v1.0 | 向 v1.0 添加了 [People API](../api-reference/v1.0/resources/person.md)。有关 People API 的详细信息，请参阅[获取人员的相关信息](people_example.md)。|
 
-### <a name="group-lifecycle-policy"></a>组生命周期策略
 
-|**更改类型**|**版本**|**说明**|
-|:-------------|:-----------|:--------------|
-| 添加项 | Beta | 添加了 [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) 实体。 |
-| 添加项 | Beta | 添加了以下组生命周期策略 API：[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) 和 [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
-| 添加项 | Beta | 向 [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) 实体添加了 [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 函数。 |
-
-### <a name="onenote"></a>OneNote
-
-|**更改类型**|**版本**|**说明**|
-|:-------------|:-----------|:--------------|
-| 添加项 | v1.0 和 Beta | 向 **site** 添加了 [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) 导航属性。  |
-| 添加项 | Beta | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook)。 |
 
 
 ## <a name="july-2017"></a>2017 年 7 月
