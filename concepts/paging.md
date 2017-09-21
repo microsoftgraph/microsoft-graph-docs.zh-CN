@@ -23,12 +23,12 @@ https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B90
 
 Microsoft Graph 将继续通过每次响应返回对 `@odata:nextLink` 属性中下一页数据的引用，直到读取结果的所有页面。
 
->**重要说明：**应该在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果。根据正在对其执行查询的 API，`@odata:nextLink` URL 值将包含 `$skiptoken` 或 `$skip` 查询参数。该 URL 还包含原始请求中存在的所有其他查询参数。请勿尝试提取 `$skiptoken` 或 `$skip` 值，也不要在不同的请求中使用它。 
+>**重要说明：**应该在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果。 根据正在对其执行查询的 API， `@odata:nextLink` URL 值将包含 `$skiptoken` 或 `$skip` 查询参数。 该 URL 还包含原始请求中存在的所有其他查询参数。 请勿尝试提取 `$skiptoken` 或 `$skip` 值，也不要在不同的请求中使用它。 
 
-分页行为因 Microsoft Graph API 不同而异。处理分页数据时，应考虑以下几点：
+分页行为因 Microsoft Graph API 不同而异。 处理分页数据时，应考虑以下几点：
 
 - 不同的 API 可能具有不同的默认页面大小和最大页面大小。
-- 如果指定超过相应 API 最大页面大小的页面大小（通过 `$top` 查询参数），则不同 API 的行为会有所不同。具体取决于 API，所请求的页面大小可能会被忽略，它默认选择相应 API 的最大页面大小，否则 Microsoft Graph 会返回错误。 
+- 如果指定超过相应 API 最大页面大小的页面大小（通过 `$top` 查询参数），则不同 API 的行为会有所不同。 具体取决于 API，所请求的页面大小可能会被忽略，它默认选择相应 API 的最大页面大小，否则 Microsoft Graph 会返回错误。 
 - 并不是所有的资源和关系都支持分页。例如，针对 [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) 的查询不支持分页。这包括读取角色对象本身以及角色成员。
-- 一些 Microsoft Graph API 通过将 `previous-page` 查询参数 (`&previous-page=true`) 追加到 `@odata:nextLink` 属性的 URL 值来支持向后分页。将此参数追加到请求后，后续响应中的 `@odata:nextLink` URL 值会将其包括在内。可以继续向后分页，直到返回具有空结果的响应。继续分页将返回错误。或者，可以在发送下一页结果的请求时，通过删除 `previous-page` 参数从当前响应中继续向前分页。 
+- 一些 Microsoft Graph API 通过将 `previous-page` 查询参数 (`&previous-page=true`) 追加到 `@odata:nextLink` 属性的 URL 值来支持向后分页。 将此参数追加到请求后，后续响应中的 `@odata:nextLink` URL 值会将其包括在内。 可以继续向后分页，直到返回具有空结果的响应。 继续分页将返回错误。 或者，可以在发送下一页结果的请求时，通过删除 `previous-page` 参数从当前响应中继续向前分页。 
 

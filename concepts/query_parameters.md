@@ -2,7 +2,9 @@
 
 Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 
-|名称|说明|示例（单击示例可在 [Graph 浏览器][graph-explorer]中试调用）
+>**注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+
+|名称|说明|示例|
 |:---------------|:--------|:-------|
 |[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 |[$expand](#expand)|检索相关资源。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
@@ -14,13 +16,13 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 |[$skipToken](#skiptoken)|从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
 |[$top](#top)|设置结果的页面大小。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
-这些参数与 [OData V4 查询语言][odata-query]兼容。并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
+这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
 > **注意：**在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)。
 
-**编码查询参数：**
+## <a name="encoding-query-parameters"></a>编码的查询参数
 
-应对查询参数的值进行百分比编码。许多 HTTP 客户端、浏览器和工具（例如，[Graph 浏览器][graph-explorer]）都可以帮助你完成此操作。如果查询失败，可能原因之一是未正确编码查询参数的值。
+应对查询参数的值进行百分比编码。 许多 HTTP 客户端、浏览器和工具（例如，[Graph 浏览器][graph-explorer]）都可以帮助用户完成此操作。 如果查询失败，可能原因之一是未正确编码查询参数值。
 
 未编码的 URL 如下所示：
 
@@ -51,7 +53,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 ## <a name="expand"></a>expand
 
-许多 Microsoft Graph 资源都会暴露资源的声明属性以及其与其他资源的关系。这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
+许多 Microsoft Graph 资源都会暴露资源的声明属性以及其与其他资源的关系。 这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。 例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
 
 通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。
 
@@ -87,18 +89,31 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 
-对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。通常支持下列逻辑运算符：等于 (`eq`)、不等于 (`ne`)、大于 (`gt`)、大于或等于 (`ge`)、小于 (`lt`)、小于或等于 (`le`)、和 (`and`)、或 (`or`) 以及非 (`not`)。通常支持 `startswith` 字符串运算符。某些 API 支持 `any` lambda 运算符。有关一些用法示例的信息，请参阅下表。有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。  
+对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符： 
+
+- 等于 (`eq`)
+- 不等于 (`ne`)
+- 大于 (`gt`)
+- 大于或等于 (`ge`)
+- 小于 (`lt`)，小于或等于 (`le`)
+- 且 (`and`)
+- 或 (`or`)
+- 非 (`not`)
+ 
+通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 有关一些用法示例的信息，请参阅下表。 有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。  
 
 下表显示使用 `$filter` 查询参数的一些示例。
 
-|说明|示例（单击示例可在 [Graph 浏览器][graph-explorer]中试调用）|
+>**注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+
+|说明|示例|
 |:--------|:-------|
 |  跨多个属性搜索名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
 | 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
 | 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| 获取登录用户在 2017 年 4 月收到的所有电子邮件 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| 列出组织中的所有 Office 365 组 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
@@ -122,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。
 
-通过一些 API，可以对多个属性的结果进行排序。例如，以下请求首先按发件人名称以降序（Z 到 A）排序用户收件箱中的邮件，然后按主题以升序（默认）排序邮件。
+通过一些 API，可以对多个属性的结果进行排序。 例如，以下请求首先按发件人名称以降序（Z 到 A）排序用户收件箱中的邮件，然后按主题以升序（默认）排序邮件。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
@@ -132,7 +147,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **注意：**使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
 
-## <a name="search"></a>search
+## <a name="search"></a>搜索
 
 使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
 
@@ -142,7 +157,21 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 邮件的搜索条件使用[高级查询语法 (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7) 进行表示。结果按邮件发送日期和时间进行排序。
 
-可以在 `$search` 条件中对 `message` 指定下列属性：`attachments`、`bccRecipients`、`body`、`category`、`ccRecipients`、`content`、`from`、`hasAttachments`、`participants`、`receivedDateTime`、`sender`、`subject`、`toRecipients`
+可以在 `$search` 条件中对 `message` 指定下列属性：
+
+- `attachments`
+- `bccRecipients`
+- `body`
+- `category`
+- `ccRecipients`
+- `content`
+- `from`
+- `hasAttachments`
+- `participants`
+- `receivedDateTime`
+- `sender`
+- `subject`
+- `toRecipients`
 
 如果要搜索邮件并且仅指定了一个值，那么会根据默认搜索属性 `from`、`subject` 和 `body` 进行搜索。
 
@@ -183,13 +212,13 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
-该请求主要进行两次搜索：对登录用户的相关人员的 `displayName` 和 `emailAddress` 属性进行模糊搜索，以及对该用户相关人员进行“披萨”主题搜索。然后对结果进行排名、排序并返回。请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
+该请求主要进行两次搜索：对登录用户的相关人员的 `displayName` 和 `emailAddress` 属性进行模糊搜索，以及对该用户相关人员进行“披萨”主题搜索。 然后对结果进行排名、排序并返回。 请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
 
 若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md)。  
 
 ## <a name="select"></a>select
 
-使用 `$select` 查询参数返回一组不同于单个资源的默认集合或资源集合的属性。使用 $select 可以指定默认属性的子集或超集。
+使用 `$select` 查询参数返回一组不同于单个资源的默认集或资源集合的属性。 使用 $select 可以指定默认属性的子集或超集。
 
 例如，在检索登录用户的邮件时，可以指定仅返回 `from` 和 `subject` 属性：
 
@@ -199,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
 
-> **重要说明：**一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。这对于可能返回大型结果集的查询尤为有用。限制每行返回的属性将减少网络负载并帮助提升应用的性能。
+> **重要说明：**一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
 > 在 `v1.0` 中，从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的一些 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
 
@@ -212,7 +241,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
-> **注意：**一些 Microsoft Graph API，如 Outlook 邮件和 Outlook 日历（`message``event` 和 `calendar`），使用 `$skip` 来实现分页。当查询的结果跨多个页面时，这些 API 将返回一个具有包含 `$skip` 参数的 URL 的 `@odata:nextLink` 属性。可以使用此 URL 返回下一页结果。若要了解详细信息，请参阅[分页](./paging.md)。
+> **注意：**一些 Microsoft Graph API，如 Outlook 邮件和 Outlook 日历（`message`、`event` 和 `calendar`），使用 `$skip` 来实现分页。 当查询的结果跨多个页面时，这些 API 将返回一个具有包含 `$skip` 参数的 URL 的 `@odata:nextLink` 属性。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 
 ## <a name="skiptoken"></a>skipToken
 
@@ -223,7 +252,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 使用 `$top` 查询参数指定结果集的页面大小。 
 
-如果结果集中还剩余多个项目，则响应正文将包含 `@odata.nextLink` 参数。此参数包含可用于获取下一页结果的 URL。若要了解详细信息，请参阅[分页](./paging.md)。 
+如果结果集中还剩余多个项目，则响应正文将包含 `@odata.nextLink` 参数。 此参数包含可用于获取下一页结果的 URL。 若要了解详细信息，请参阅[分页](./paging.md)。 
 
 例如，以下请求返回用户邮箱中的前 5 封邮件：
 
@@ -255,7 +284,7 @@ https://graph.microsoft.com/beta/me?$expand=photo
 }
 ```
 
-但是，值得注意的是请求中指定的查询参数可能会自行失败。不支持的查询参数以及不支持的查询参数组合的情况就是如此。在这些情况下，应检查请求返回的数据，以确定指定的查询参数是否具有所需的效果。 
+但是，值得注意的是请求中指定的查询参数可能会自行失败。 不支持的查询参数以及不支持的查询参数组合的情况就是如此。 在这些情况下，应检查请求返回的数据，以确定指定的查询参数是否具有所需的效果。 
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358

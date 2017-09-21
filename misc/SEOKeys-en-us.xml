@@ -28,8 +28,8 @@
   </Item>
   <Item text="使用 API" url="/en-us/concepts/use_the_api">
     <Item text="遍历关系图" url="/en-us/concepts/traverse_the_graph" />
-    <Item text="获取页面中的数据" url="/en-us/concepts/paging" SEOKeyword="分页, Microsoft Graph API, 概述" SEODescription="在 Microsoft Graph 中实现分页。" />
-    <Item text="自定义查询" url="/en-us/concepts/query_parameters" SEOKeyword="查询参数, Microsoft Graph API, 概述" SEODescription="Microsoft Graph 与 OData v4 兼容，提供受支持的 OData 查询参数的相关信息" />
+    <Item text="分页" url="/en-us/concepts/paging" SEOKeyword="分页、Microsoft Graph API、概述" SEODescription="在 Microsoft Graph 中实现分页。" />
+    <Item text="使用查询参数" url="/en-us/concepts/query_parameters" SEOKeyword="查询参数、Microsoft Graph API、概述" SEODescription="Microsoft Graph 与 OData v4 兼容，提供受支持的 OData 查询参数的相关信息" />
     <Item text="批量请求" url="/en-us/concepts/json_batching" />
     <Item text="限制" url="/en-us/concepts/throttling" />
     <Item text="版本控制和支持" url="/en-us/concepts/versioning_and_support" />
@@ -145,9 +145,16 @@
       <Item text="删除所有者" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
       <Item text="重置未看计数" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="组：resetUnseenCount, Microsoft Graph API, 组 API" SEODescription="" />
       <Item text="通过邮件订阅" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="组：subscribeByMail, Microsoft Graph API, 组 API" SEODescription="" />
-      <Item text="通过邮件取消订阅" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="组：unsubscribeByMail, Microsoft Graph API, 组 API" SEODescription="" />
+      <Item text="通过邮件取消订阅" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="组：unsubscribeByMail、Microsoft Graph API、组 API" SEODescription="" />
     </Item>
-    <Item text="日历" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="日历">
+    <Item text="附件" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="文件附件资源" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="项目附件资源" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="参考附件资源" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="获取附件" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="删除附件" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="日历" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="日历">
       <Item text="列出事件" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="列出事件, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
       <Item text="创建事件" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="创建事件, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建事件。" />
       <Item text="获取事件" url="/en-us/api-reference/v1.0/api/event_get" />
@@ -216,13 +223,6 @@
       <Item text="创建开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
       <Item text="获取开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
     </Item>
-  </Item>
-  <Item text="附件" url="/en-us/api-reference/v1.0/resources/attachment">
-    <Item text="文件附件资源" url="/en-us/api-reference/v1.0/resources/fileattachment" />
-    <Item text="项目附件资源" url="/en-us/api-reference/v1.0/resources/itemattachment" />
-    <Item text="参考附件资源" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
-    <Item text="获取附件" url="/en-us/api-reference/v1.0/api/attachment_get" />
-    <Item text="删除附件" url="/en-us/api-reference/v1.0/api/attachment_delete" />
   </Item>
   <Item text="Azure Active Directory" url="/en-us/api-reference/v1.0/resources/azure_ad_overview" SEOKeyword="目录对象, Microsoft Graph API, 用户 API" SEODescription="">
     <Item text="合同" url="/en-us/api-reference/v1.0/resources/contract">
@@ -336,7 +336,6 @@
       <Item text="列出范围" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
-  
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="用户驱动器、Microsoft Graph API、用户 API" SEODescription="OneDrive API">
     <Item text="驱动器" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="用户驱动器、Microsoft Graph API、用户 API" SEODescription="驱动器 API">
       <Item text="获取驱动器" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
@@ -383,7 +382,8 @@
       <Item text="笔记本" url="/en-us/api-reference/v1.0/resources/notebook" SEOKeyword="用户注释, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出笔记本" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
-        <Item text="获取笔记本" url="/en-us/api-reference/v1.0/api/notebook_get" SEOKeyword="获取笔记本, Microsoft Graph API, 笔记本 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象的属性和关系。" />
+        <Item text="获取笔记本" url="/en-us/api-reference/v1.0/api/notebook_get" SEOKeyword="获取笔记本, Microsoft Graph API, 笔记本 API" SEODescription="检索 notebook(../resources/notebook.md) 对象的属性和关系。" />
+		<Item text="获取最近使用的笔记本" url="/en-us/api-reference/v1.0/api/notebook_getrecentnotebooks" />
         <Item text="复制笔记本" url="/en-us/api-reference/v1.0/api/notebook_copynotebook" SEOKeyword="笔记本：copyNotebook, Microsoft Graph API, 笔记本 API" SEODescription="" />
         <Item text="列出分区" url="/en-us/api-reference/v1.0/api/notebook_list_sections" SEOKeyword="列出分区, Microsoft Graph API, 笔记本 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
         <Item text="创建分区" url="/en-us/api-reference/v1.0/api/notebook_post_sections" SEOKeyword="创建分区, Microsoft Graph API, 笔记本 API" SEODescription="在指定的笔记本中新建分区 (../resources/section.md)。" />
@@ -460,7 +460,14 @@
       <Item text="创建开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
       <Item text="获取开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
     </Item>
-    <Item text="日历" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook 日历 API, Microsoft Graph API, Outlook 日历 API" SEODescription="日历，即事件容器。">
+    <Item text="附件" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="文件附件资源" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="项目附件资源" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="参考附件资源" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="获取附件" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="删除附件" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="日历" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="Outlook 日历 API, Microsoft Graph API, Outlook 日历 API" SEODescription="日历，即事件容器。">
       <Item text="列出日历" url="/en-us/api-reference/v1.0/api/user_list_calendars" SEOKeyword="列出日历, Microsoft Graph API, 用户 API" SEODescription="检索日历对象列表。" />
       <Item text="创建日历" url="/en-us/api-reference/v1.0/api/user_post_calendars" SEOKeyword="创建日历, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建日历。" />
       <Item text="获取日历" url="/en-us/api-reference/v1.0/api/calendar_get" SEOKeyword="获取日历, Microsoft Graph API, Outlook 日历 API" SEODescription="检索日历对象的属性和关系。" />
@@ -518,7 +525,14 @@
       <Item text="创建开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
       <Item text="获取开放扩展" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="获取数据扩展、Microsoft Graph API、opentypeextension API" SEODescription="检索 opentypeextension 对象的属性和关系。" />
     </Item>
-    <Item text="重点收件箱" url="/en-us/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="">
+    <Item text="附件" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="文件附件资源" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="项目附件资源" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="参考附件资源" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="获取附件" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="删除附件" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="重点收件箱" url="/en-us/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="">
       <Item text="创建替代" url="/en-us/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="创建由 SMTP 地址识别的发件人的替代。" />
       <Item text="列出替代" url="/en-us/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="列出由 SMTP 地址识别的发件人的替代。" />
       <Item text="更新替代" url="/en-us/api-reference/v1.0/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="更新由 SMTP 地址识别的发件人的替代。" />
@@ -714,11 +728,10 @@
         <Item text="列出邮件文件夹" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="列出 mailFolders, Microsoft Graph API, 用户 API" SEODescription="检索 mailfolder 对象列表。" />
         <Item text="创建邮件文件夹" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="创建 MailFolder, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建 MailFolder。" />
         <Item text="发送邮件" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="用户：sendMail、Microsoft Graph API、用户 API" SEODescription="" />
-        <Item text="获取邮箱设置" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="用户：获取邮箱设置、Microsoft Graph API、用户 API" SEODescription="" />
-        <Item text="更新邮箱设置" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="用户：更新邮箱设置、Microsoft Graph API、用户 API" SEODescription="" />
-        <Item text="获取邮件提示" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="列出规则" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="创建规则" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="获取邮件提醒" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
-      
       <Item text="笔记" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="用户注释, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出笔记本" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
@@ -732,7 +745,15 @@
 		<Item text="列出任务" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
 		<Item text="创建任务" url="/en-us/api-reference/beta/api/outlookuser_post_tasks" />
 	  </Item>
-	  <Item text="人脉" url="/en-us/api-reference/beta/resources/person" SEOKeyword="用户人脉, Microsoft Graph API, 用户 API" SEODescription="">
+	  <Item text="Outlook 设置" url="/en-us/api-reference/beta/resources/outlookuser">
+		<Item text="获取语言选择" url="/en-us/api-reference/beta/api/outlookuser_supportedlanguages" />
+		<Item text="获取时区选择" url="/en-us/api-reference/beta/api/outlookuser_supportedtimezones" />
+		<Item text="获取邮箱设置" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" />
+		<Item text="更新邮箱设置" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" />
+		<Item text="列出类别" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="创建类别" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />		
+	  </Item>
+	  <Item text="人员" url="/en-us/api-reference/beta/resources/person" SEOKeyword="用户人脉, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出人员" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="列出人员, Microsoft Graph API, 用户 API" SEODescription="检索人员对象列表。" />
       </Item>
       <Item text="照片" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="用户人脉, Microsoft Graph API, 用户 API" SEODescription="">
@@ -772,7 +793,14 @@
         <Item text="通过邮件取消订阅" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="组：unsubscribeByMail、Microsoft Graph API、组 API" SEODescription="" />
         <Item text="更新组" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="更新组, Microsoft Graph API, 组 API" SEODescription="更新组对象的属性。" />
       </Item>
-      <Item text="日历" url="/en-us/api-reference/beta/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="">
+      <Item text="附件" url="/en-us/api-reference/beta/resources/attachment">
+      <Item text="文件附件资源" url="/en-us/api-reference/beta/resources/fileattachment" />
+      <Item text="项目附件资源" url="/en-us/api-reference/beta/resources/itemattachment" />
+      <Item text="参考附件资源" url="/en-us/api-reference/beta/resources/referenceattachment" />
+      <Item text="获取附件" url="/en-us/api-reference/beta/api/attachment_get" />
+      <Item text="删除附件" url="/en-us/api-reference/beta/api/attachment_delete" />
+    </Item>
+	  <Item text="日历" url="/en-us/api-reference/beta/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出事件" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="列出事件, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
         <Item text="创建事件" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="创建事件, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建事件。" />
         <Item text="获取事件" url="/en-us/api-reference/beta/api/event_get" />
@@ -853,13 +881,6 @@
         <Item text="创建开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="创建开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 创建开放扩展。" />
         <Item text="获取开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="获取开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 获取开放扩展。" />
       </Item>
-    </Item>
-    <Item text="附件" url="/en-us/api-reference/beta/resources/attachment">
-      <Item text="文件附件资源" url="/en-us/api-reference/beta/resources/fileattachment" />
-      <Item text="项目附件资源" url="/en-us/api-reference/beta/resources/itemattachment" />
-      <Item text="参考附件资源" url="/en-us/api-reference/beta/resources/referenceattachment" />
-      <Item text="获取附件" url="/en-us/api-reference/beta/api/attachment_get" />
-      <Item text="删除附件" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
     <Item text="Azure Active Directory" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="目录对象, Microsoft Graph API, 用户 API" SEODescription="">
       <Item text="管理单元" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="管理单元为用户和组目录对象提供概念容器。通过使用管理单元，公司管理员现在可以委派管理责任，以对包含在区域或部门管理员的管理单元内或作用域的用户和组进行管理。">
@@ -3535,7 +3556,8 @@
         <Item text="列出笔记本" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
         <Item text="获取笔记本" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="获取笔记本, Microsoft Graph API, 笔记本 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象的属性和关系。" />
-        <Item text="复制笔记本" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="笔记本：copyNotebook, Microsoft Graph API, 笔记本 API" SEODescription="" />
+        <Item text="复制笔记本" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="笔记本：copyNotebook、Microsoft Graph API、笔记本 API" SEODescription="" />
+		<Item text="获取最近使用的笔记本" url="/en-us/api-reference/beta/api/notebook_getrecentnotebooks" />
         <Item text="列出分区" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="列出分区, Microsoft Graph API, 笔记本 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
         <Item text="创建分区" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="创建分区, Microsoft Graph API, 笔记本 API" SEODescription="在指定的笔记本中新建分区 (../resources/section.md)。" />
         <Item text="列出分区组" url="/en-us/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="列出 sectionGroups, Microsoft Graph API, 笔记本 API" SEODescription="从指定的笔记本中检索分区组 (../resources/sectiongroup.md) 列表。" />
@@ -3631,8 +3653,15 @@
         <Item text="列出附件" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="列出附件, Microsoft Graph API, Outlook 日历 API" SEODescription="检索 attachment 对象列表。" />
         <Item text="创建开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="创建开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 创建开放扩展。" />
         <Item text="获取开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="获取开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 获取开放扩展。" />
+      </Item> 
+	  <Item text="附件" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="文件附件资源" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="项目附件资源" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="参考附件资源" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="获取附件" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="删除附件" url="/en-us/api-reference/beta/api/attachment_delete" />
       </Item>
-      <Item text="日历" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook 日历 API, Microsoft Graph API, Outlook 日历 API" SEODescription="日历，即事件容器。">
+	  <Item text="日历" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="Outlook 日历 API, Microsoft Graph API, Outlook 日历 API" SEODescription="日历，即事件容器。">
         <Item text="列出日历" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="列出日历, Microsoft Graph API, 用户 API" SEODescription="检索日历对象列表。" />
         <Item text="创建日历" url="/en-us/api-reference/beta/api/user_post_calendars" SEOKeyword="创建日历, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建日历。" />
         <Item text="获取日历" url="/en-us/api-reference/beta/api/calendar_get" SEOKeyword="获取日历, Microsoft Graph API, Outlook 日历 API" SEODescription="检索日历对象的属性和关系。" />
@@ -3643,12 +3672,8 @@
         <Item text="查找会议次数" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会议次数、Microsoft Graph API、Outlook 日历 API" SEODescription="检索事件对象列表。" />
         <Item text="创建事件" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="创建事件, Microsoft Graph API, 日历 API" SEODescription="使用此 API 新建事件。" />
         <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户：reminderView, Microsoft Graph API, 用户 API" SEODescription="" />
-      </Item>
-      <Item text="日历视图" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 用户 API" SEODescription="检索事件对象列表。">
-        <Item text="列出日历视图" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 用户 API" SEODescription="检索事件对象列表。" />
-        <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户：reminderView, Microsoft Graph API, 用户 API" SEODescription="" />
-      </Item>
-      <Item text="日历组" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="一组日历。">
+      </Item>  
+	  <Item text="日历组" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="一组日历。">
         <Item text="列出日历组" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="列出 calendarGroups, Microsoft Graph API, 用户 API" SEODescription="检索 calendargroup 对象列表。" />
         <Item text="创建日历组" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="创建 CalendarGroup, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建 CalendarGroup。" />
         <Item text="获取日历组" url="/en-us/api-reference/beta/api/calendargroup_get" SEOKeyword="获取 calendarGroup, Microsoft Graph API, Outlook 日历 API" SEODescription="检索 calendargroup 对象的属性和关系。" />
@@ -3657,7 +3682,18 @@
         <Item text="列出日历组中的日历" url="/en-us/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="列出日历, Microsoft Graph API, Outlook 日历 API" SEODescription="检索日历对象列表。" />
         <Item text="在日历组中创建日历" url="/en-us/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="创建日历组, Microsoft Graph API, Outlook 日历 API" SEODescription="使用此 API 创建新的日历。" />
       </Item>
-      <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
+	  <Item text="日历视图" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 用户 API" SEODescription="检索事件对象列表。">
+        <Item text="列出日历视图" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 用户 API" SEODescription="检索事件对象列表。" />
+        <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户：reminderView, Microsoft Graph API, 用户 API" SEODescription="" />
+      </Item>
+	  <Item text="类别" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="列出类别" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="创建类别" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="获取类别" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="更新类别" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="删除类别" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>      
+	  <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="单值扩展属性" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
           <Item text="创建单值属性" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
           <Item text="获取单值属性" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -3691,7 +3727,21 @@
         <Item text="创建开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="创建开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 创建开放扩展。" />
         <Item text="获取开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="获取开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 获取开放扩展。" />
       </Item>
-      <Item text="重点收件箱" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="">
+      <Item text="附件" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="文件附件资源" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="项目附件资源" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="参考附件资源" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="获取附件" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="删除附件" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="类别" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="列出类别" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="创建类别" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="获取类别" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="更新类别" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="删除类别" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
+	  <Item text="重点收件箱" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="">
         <Item text="创建替代" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="创建由 SMTP 地址识别的发件人的替代。" />
         <Item text="列出替代" url="/en-us/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="列出由 SMTP 地址识别的发件人的替代。" />
         <Item text="更新替代" url="/en-us/api-reference/beta/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph、重点收件箱" SEODescription="更新由 SMTP 地址识别的发件人的替代。" />
@@ -3710,7 +3760,14 @@
         <Item text="列出子文件夹" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="列出 childFolders, Microsoft Graph API, Outlook 邮件 API" SEODescription="检索 mailfolder 对象列表。" />
         <Item text="创建邮件子文件夹" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="创建 mailFolder, Microsoft Graph API, Outlook 邮件 API" SEODescription="使用此 API 新建 MailFolder。" />
       </Item>
-      <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
+      <Item text="规则" url="/en-us/api-reference/beta/resources/messagerule">
+		<Item text="列出规则" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="创建规则" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="获取规则" url="/en-us/api-reference/beta/api/messagerule_get" />
+		<Item text="更新规则" url="/en-us/api-reference/beta/api/messagerule_update" />	  
+		<Item text="删除规则" url="/en-us/api-reference/beta/api/messagerule_delete" />
+	  </Item>
+	  <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="单值扩展属性" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
           <Item text="创建单值属性" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
           <Item text="获取单值属性" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -3732,7 +3789,7 @@
         <Item text="列出附件" url="/en-us/api-reference/beta/api/outlooktask_list_attachments" />
         <Item text="添加附件" url="/en-us/api-reference/beta/api/outlooktask_post_attachments" />
       </Item>
-      <Item text="Outlook 任务文件夹" url="/en-us/api-reference/beta/resources/outlooktaskfolder">
+	  <Item text="Outlook 任务文件夹" url="/en-us/api-reference/beta/resources/outlooktaskfolder">
         <Item text="列出" url="/en-us/api-reference/beta/api/outlookuser_list_taskfolders" />
         <Item text="创建" url="/en-us/api-reference/beta/api/outlookuser_post_taskfolders" />
         <Item text="获取" url="/en-us/api-reference/beta/api/outlooktaskfolder_get" />
@@ -3750,6 +3807,20 @@
         <Item text="在组中列出任务文件夹" url="/en-us/api-reference/beta/api/outlooktaskfolder_list_tasks" />
         <Item text="在组中创建任务文件夹" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
       </Item>
+	  <Item text="附件" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="文件附件资源" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="项目附件资源" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="参考附件资源" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="获取附件" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="删除附件" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="类别" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="列出类别" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="创建类别" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="获取类别" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="更新类别" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="删除类别" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
       <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview">
         <Item text="单值扩展属性" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty">
           <Item text="创建单值属性" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
@@ -3789,7 +3860,14 @@
           <Item text="创建开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="创建开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 创建开放扩展。" />
           <Item text="获取开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="获取开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 获取开放扩展。" />
         </Item>
-        <Item text="联系人文件夹" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="包含联系人的文件夹。">
+        <Item text="类别" url="/en-us/api-reference/beta/resources/outlookcategory">
+			<Item text="列出类别" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+			<Item text="创建类别" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+			<Item text="获取类别" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+			<Item text="更新类别" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+			<Item text="删除类别" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
+		<Item text="联系人文件夹" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="contactfolder API, Microsoft Graph API, contactfolder API" SEODescription="包含联系人的文件夹。">
           <Item text="列出联系人文件夹" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="列出 contactFolders, Microsoft Graph API, 用户 API" SEODescription="检索 contactfolder 对象列表。" />
           <Item text="创建联系人文件夹" url="/en-us/api-reference/beta/api/user_post_contactfolders" SEOKeyword="创建 ContactFolder, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建 ContactFolder。" />
           <Item text="获取联系人文件夹" url="/en-us/api-reference/beta/api/contactfolder_get" SEOKeyword="获取 contactFolder, Microsoft Graph API, contactfolder API" SEODescription="检索 contactfolder 对象的属性和关系。" />
