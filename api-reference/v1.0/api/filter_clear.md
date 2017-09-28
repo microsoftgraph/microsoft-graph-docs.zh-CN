@@ -23,6 +23,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 

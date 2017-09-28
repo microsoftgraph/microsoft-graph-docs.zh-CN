@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
