@@ -67,7 +67,7 @@ delta 查询目前支持以下资源：
 | 私人联系人文件夹 | [联系人文件夹](../api-reference/v1.0/resources/contactfolder.md)资源的 [delta](../api-reference/v1.0/api/contactfolder_delta.md) 函数 |
 | 文件夹中的私人联系人 | [联系人](../api-reference/v1.0/resources/contact.md)资源的 [delta](../api-reference/v1.0/api/contact_delta.md) 函数 |
 | 用户 | [用户](../api-reference/v1.0/resources/user.md)资源的 [delta](../api-reference/v1.0/api/user_delta.md) 函数 | 
-| 驱动器项目\* | [driveItem](../api-reference/v1.0/resources/driveItem.md) 资源的 [delta](../api-reference/v1.0/api/item_delta.md) 函数 |
+| 驱动器项目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) 资源的 [delta](../api-reference/v1.0/api/driveitem_delta.md) 函数 |
 
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。以后将更新驱动器 delta 查询，以与其他资源类型保持一致。有关当前语法的详细信息，请访问 <https://developer.microsoft.com/zh-cn/graph/docs/api-reference/v1.0/api/item_delta>

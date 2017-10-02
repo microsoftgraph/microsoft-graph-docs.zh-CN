@@ -121,7 +121,7 @@ Content-length: 7
    ]
 }
 ```
-接收来自驱动器订阅的通知时，resourceData 将为 null，并且应调用 [delta](item_delta.md) API 以确定已经发生的更改。下面是一个驱动器通知示例：
+接收来自驱动器订阅的通知时，resourceData 将为 null，并且应调用 [delta](driveitem_delta.md) API 以确定已经发生的更改。下面是一个驱动器通知示例：
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
