@@ -1,23 +1,26 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "标识"
+ms.openlocfilehash: ada6fd22f59ceb01e10cc57ea3640c5f67b65144
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="identity-resource-type"></a>身份资源类型
 
 **身份**资源表示_主角_的身份。例如，主角可以是用户、设备或应用程序。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.identity"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "thumbnails"] } -->
 ```json
 {
   "displayName": "string",
-  "id": "string"
+  "id": "string",
+  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
 
@@ -25,7 +28,7 @@
 
 | 属性    | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | 此身份的显示名称。注意，该信息并不总是可用或最新。例如，如果用户更改了其显示名称，API 会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/item_delta.md) 时不会显示为更改后的值。        |
+| displayName | 字符串 | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem_delta.md) 时不会显示更改后的值。     |
 | id          | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>注解
@@ -36,8 +39,9 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identity resource",
-  "keywords": "",
+  "description": "Identity contains information about an app, user, or group.",
+  "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Identity"
+
+} -->
