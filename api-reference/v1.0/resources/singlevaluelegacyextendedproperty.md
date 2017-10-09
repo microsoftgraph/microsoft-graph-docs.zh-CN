@@ -31,7 +31,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.singlevaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"
 }-->
 
 ```json

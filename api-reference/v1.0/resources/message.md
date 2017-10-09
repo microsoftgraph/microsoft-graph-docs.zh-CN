@@ -19,7 +19,7 @@ mailFolder 中的邮件。
 |[复制](../api/message_copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message_createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
 |[createReply](../api/message_createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
-|[createReplyAll](../api/message_createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以[更新](../api/message_update.md)或[发送](../api/message_send.md)草稿。|
+|[createReplyAll](../api/message_createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
 |[delta](../api/message_delta.md)|[邮件](message.md)集合| 获取指定文件夹中已添加、删除或更新的邮件集。|
 |[转发](../api/message_forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
 |[移动](../api/message_move.md)|[邮件](message.md)|将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本。|
@@ -92,7 +92,7 @@ Prefer: outlook.allow-unsafe-html
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
 |extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -139,7 +139,12 @@ Prefer: outlook.allow-unsafe-html
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
-  "webLink": "string"
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```

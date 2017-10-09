@@ -12,7 +12,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persontype
+  "@odata.type": "microsoft.graph.personType"
 }-->
 
 ```json
