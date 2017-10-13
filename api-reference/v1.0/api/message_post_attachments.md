@@ -2,6 +2,14 @@
 
 使用此 API 可将[附件](../resources/attachment.md)添加到邮件中。 
 
+附件可以是下列类型之一：
+
+* 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
+* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。
+* 指向文件的链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）。
+
+所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
+
 通过发布到邮件附件集合，你可以把附件添加到现有邮件，也可以把附件添加到 [正在创建和发送的邮件](../api/user_sendmail.md)。
 
 由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。

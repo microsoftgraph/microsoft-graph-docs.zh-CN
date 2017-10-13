@@ -115,6 +115,6 @@
 
 ## <a name="see-also"></a>另请参阅
 
-- 请在我们的 [API Explorer](https://graph.microsoft.io/graph-explorer) 中尝试使用示例 REST 调用。
+- 请在 [Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中尝试使用示例 REST 调用。
 - [Azure AD 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Azure AD v2.0 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

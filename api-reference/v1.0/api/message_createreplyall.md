@@ -1,6 +1,6 @@
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-创建全部答复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。
+创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。 然后，可以[更新](../api/message_update.md)草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅[发送](../api/message_send.md)草稿。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
@@ -41,12 +42,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### <a name="response"></a>响应

@@ -6,20 +6,128 @@
 
 ## <a name="september-2017"></a>2017 年 9 月
 
+### <a name="intune-apis"></a>Intune API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|Beta|添加了新实体：<br/>[activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)<br/>[azureADWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile.md)<br/>[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md)<br/>[deviceEnrollmentLimitConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)<br/>[deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner.md)<br/>[enrollmentConfigurationAssignment](../api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment.md)<br/>[windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md)<br/>[windows10NetworkBoundaryConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10networkboundaryconfiguration.md)<br/>[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md)<br/>[windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md)<br/>[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md)<br/>|
+|添加项|Beta|新增了复杂类型：<br/>[adminConsent](../api-reference/beta/resources/intune_devices_adminconsent.md)<br/>[allDevicesAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alldevicesassignmenttarget.md)<br/>[allLicensedUsersAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alllicensedusersassignmenttarget.md)<br/>[deviceAndAppManagementAssignmentTarget](../api-reference/beta/resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)<br/>[deviceEnrollmentPlatformRestriction](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestriction.md)<br/>[deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate.md)<br/>[exclusionGroupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_exclusiongroupassignmenttarget.md)<br/>[groupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_groupassignmenttarget.md)<br/>[outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)<br/>[windowsFirewallNetworkProfile](../api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)<br/>[windowsNetworkIsolationCloudResource](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresource.md)<br/>[windowsNetworkIsolationCloudResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresourcecollection.md)<br/>[windowsNetworkIsolationIPRangeCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationiprangecollection.md)<br/>[windowsNetworkIsolationPolicy](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy.md)<br/>[windowsNetworkIsolationResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationresourcecollection.md)<br/>|
+|添加项|Beta|在 [windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md) 上添加了 [sync](../api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync.md) 操作 |
+|添加项|Beta|在 [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) 上添加了 [assign](../api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign.md) 操作 |
+|添加项|Beta|在 [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) 上添加了 [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md) 操作 |
+|添加项|Beta|在 [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) 上添加了 [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md) 操作 |
+|添加项|Beta|在 [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) 上添加了 [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md) 操作 |
+|添加项|Beta|在 [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) 集合上添加了 uploadDepToken 操作 |
+|添加项|Beta|在 [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) 集合上添加了 syncWithAppleDeviceEnrollmentProgram 操作 |
+|添加项|Beta|在 [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) 上添加了 updateMobileAppIdentifierDeployments 操作 |
+|添加项|Beta|在 [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) 上添加了 assign 操作 |
+|添加项|Beta|在 [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) 上添加了 assign 操作 |
+|添加项|Beta|在 [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) 上添加了 assign 操作 |
+|添加项|Beta|在 [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) 集合上添加了 getEncryptionPublicKey 函数 |
+|更改|Beta|向 [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) 实体添加了 **requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders**、**requireCompanyPortalAppIntegrity** 和 **conditionStatementId** 属性|
+|更改|Beta|向 [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md) 实体添加了 **requireAppVerify**、**requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders** 和 **requireCompanyPortalAppIntegrity** 属性|
+|更改|Beta|向 [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) 实体添加了 **blockCrossProfileCopyPaste** 和 **requireAppVerify** 属性|
+|更改|Beta|向 [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) 实体添加了 **kioskModeApps** 和 **requireAppVerify** 属性|
+|更改|Beta|从 [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) 实体中删除了 **kioskModeManagedApps** 属性|
+|更改|Beta|从 [cloudPkiSubscription](../api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription.md) 实体中删除了 **cloudPkiProvider**、**createdDateTime**、**description**、**lastModifiedDateTime**、**displayName**、**syncStatus**、**lastSyncError**、**lastSyncDateTime**、**credentials**、**trustedRootCertificate** 和 **version** 属性|
+|更改|Beta|从 [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md) 实体中删除了 **assignmentStatus**、**assignmentProgress** 和 **assignmentErrorMessage** 属性|
+|更改|Beta|向 [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) 实体添加了 **adminConsent** 属性|
+|更改|Beta|向 [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md) 实体添加了 **vppTokenOrganizationName**、**vppTokenAccountType** 和 **vppTokenAppleId** 属性|
+|更改|Beta|向 [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice.md) 实体添加了 **deviceEnrollmentType**、**wiFiMacAddress** 和 **deviceHealthAttestationState** 属性|
+|更改|Beta|向 [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) 实体添加了 **legacyAppConfiguration** 属性|
+|更改|Beta|向 [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) 实体添加了 **notApplicableCount** 属性|
+|更改|Beta|向 [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) 实体添加了 **notApplicableCount** 属性|
+|更改|Beta|向 [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) 实体添加了 **firewallBlockStatefulFTP**、**firewallIdleTimeoutForSecurityAssociationInSeconds**、**firewallPreSharedKeyEncodingMethod**、**firewallIPSecExemptionsAllowNeighborDiscovery**、**firewallIPSecExemptionsAllowICMP**、**firewallIPSecExemptionsAllowRouterDiscovery**、**firewallIPSecExemptionsAllowDHCP**、**firewallCertificateRevocationListCheckMethod**、**firewallMergeKeyingModuleSettings**、**firewallPacketQueueingMethod**、**firewallProfileDomain**、**firewallProfilePublic**、**firewallProfilePrivate**、**defenderAttackSurfaceReductionExcludedPaths**、**defenderOfficeAppsOtherProcessInjectionType**、**defenderOfficeAppsExecutableContentCreationOrLaunchType**、**defenderOfficeAppsLaunchChildProcessType**、**defenderOfficeMacroCodeAllowWin32ImportsType**、**defenderScriptObfuscatedMacroCodeType**、**defenderScriptDownloadedPayloadExecutionType**、**defenderEmailContentExecutionType**、**defenderGuardMyFoldersType**、**defenderGuardedFoldersAllowedAppPaths**、**defenderAdditionalGuardedFolders**、**defenderNetworkProtectionType**、**defenderExploitProtectionXml**、**defenderExploitProtectionXmlFileName**、**defenderSecurityCenterBlockExploitProtectionOverride**、**appLockerApplicationControl**、**applicationGuardBlockClipboardSharing**、**applicationGuardAllowPrintToPDF**、**applicationGuardAllowPrintToXPS**、**applicationGuardAllowPrintToLocalPrinters**、**applicationGuardAllowPrintToNetworkPrinters** 和 **bitLockerDisableWarningForOtherDiskEncryption** 属性|
+|更改|Beta|向 [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) 实体添加了 **displayAppListWithGdiDPIScalingTurnedOn**、**displayAppListWithGdiDPIScalingTurnedOff**、**messagingBlockSync**、**messagingBlockMMS** 和 **messagingBlockRichCommunicationServices** 属性|
+|更改|Beta|从 [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) 实体中删除了 **bluetoothDeviceName** 属性|
+|更改|Beta|从 [windows10TeamGeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) 实体中删除了 **deviceAccountBlockExchangeServices**、**deviceAccountEmailAddress**、**deviceAccountExchangeServerAddress**、**deviceAccountRequirePasswordRotation** 和 **deviceAccountSessionInitiationProtocolAddress** 属性|
+|更改|Beta|向 [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) 实体添加了 **localActions** 导航属性|
+|更改|Beta|向 [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) 实体添加了 **windowsAutopilotSettings**、**windowsAutopilotDeviceIdentities**、**windowsAutopilotDeploymentProfiles**、**deviceEnrollmentConfigurations**、**deviceManagementPartners** 和 **depOnboardingSettings** 导航属性|
+|更改|Beta|从 [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) 实体中删除了 **cloudPkiSubscriptions** 导航属性|
+|更改|Beta|向 [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) 实体添加了 **assignments** 导航属性|
+|更改|Beta|向 [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) 实体添加了 **assignments** 导航属性|
+|更改|Beta|向 [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) 实体添加了 **assignments** 导航属性|
+
+### <a name="onedrive"></a>OneDrive
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | v1.0 | 向 [Drive][] 资源添加了 **system** 属性。  |
+| 添加项 | v1.0 | 向 [Drive][] 资源添加了 **list** 关系。 |
+| 添加项 | v1.0 | 向 [DriveItem][] 资源添加了 **listItem** 关系。 |
+| 添加项 | v1.0 | 向 [SharedDriveItem][] 资源添加了 **list** 和 **listItem** 关系。 |
+| 添加项 | v1.0 | 新增了复杂类型：[FolderView][] |
+| 添加项 | v1.0 | 向 [Folder][] 复杂类型添加了 **view** 属性。 |
+| 添加项 | v1.0 | 向 [ItemReference][] 复杂类型添加了 **driveType** 属性 |
+| 添加项 | v1.0 | 向 [Video][] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
+| 添加项 | beta | 向 [Drive][Drive-beta] 资源添加了 **system** 属性。  |
+| 添加项 | beta | 向 [Drive][Drive-beta] 资源添加了 **activities** 关系。 |
+| 添加项 | beta | 向 [DriveItem][DriveItem-beta] 资源添加了 **publication** 属性。 |
+| 添加项 | beta | 向 [DriveItem][DriveItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
+| 添加项 | beta | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
+| 添加项 | beta | 新增了复杂类型：[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
+| 添加项 | beta | 向 [ItemReference][ItemReference-beta] 复杂类型添加了 **driveType** 属性。 |
+| 删除 | beta | 从 [SharepointIds][SharepointIds-beta] 复杂类型中删除了 **tenantId** 属性。 |
+| 添加项 | v1.0 | 向 [Video][Video-beta] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
+| 添加项 | beta | 在 [DriveItem][DriveItem-beta] 资源上添加了 [CheckIn][CheckIn-beta] 和 [CheckOut][CheckOut-beta] 操作。 |
+| 添加项 | beta | 在 [DriveItem][DriveItem-beta] 资源上的 [CreateLink][CreateLink-beta] 操作上添加了 **expirationDateTime**、**password**、**message** 和 **recipients** 属性。 |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
 ### <a name="outlook-calendar"></a>Outlook 日历
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
-| 添加项 | Beta | 向 [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) 资源添加了 **locations** 属性，以支持组织与会者可以从多个位置参加的事件。 |
+| 添加项 | Beta | 向 [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) 实体添加了 [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) 和 [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) 函数。 |
+| 添加项 | Beta | 向 [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) 实体添加了 **locations** 属性，以支持组织与会者可以从多个位置参加的事件。 |
 | 添加项 | Beta | 向 [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 复杂类型添加了 **locationType** 属性。|
 | 添加项 | Beta | 向 [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 复杂类型添加了 **uniqueId** 和 **uniqueIdType** 属性。 在这种情况下，这些属性仅供内部使用。|
+| 更改 | v1.0 和 beta | 如果你有来自登录用户的适当委派权限，则可以指定其他用户 ID 或用户主体名称以[获取日历](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get)，或[获取日历中的事件](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events)，前提是该用户已与登录用户共享此日历，或该用户已将其邮箱为派给登录用户。 |
 
-
-### <a name="outlook-inbox-message-rules"></a>Outlook 收件箱消息规则
+### <a name="outlook-contacts"></a>Outlook 联系人
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
-| 添加项 | Beta | 向 [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) 资源添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) 实例的集合。 |
+| 更改 | v1.0 和 beta | 如果你有来自登录用户的适当委派权限，则可以指定其他用户 ID 或用户主体名称以[获取联系人文件夹](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get)，或[获取文件夹中的联系人](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts)，前提是该用户已与登录用户共享此文件夹，或该用户已将其邮箱为派给登录用户。 |
+
+
+### <a name="outlook-mail"></a>Outlook 邮件
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | Beta | 向 [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) 实体添加了 **internetMessageHeaders** 属性。 |
+| 添加项 | Beta | 添加了 [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) 复杂类型。|
+| 添加项 | Beta | 向 [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) 实体添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) 实例的集合。 |
 | 添加项 | Beta | 添加了 [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) 实体，以及 [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) 和 [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) 复杂类型。  |
 | 添加项 | Beta | 添加了消息规则的以下 CRUD 操作：[创建](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules)、[列出](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules)、[获取](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get)、[更新](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update)和[删除](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete)。 |
 
@@ -28,9 +136,82 @@
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
-| 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 **masterCategories** 导航属性。  |
+| 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) 对象的集合。 |
+| 添加项 | Beta | 添加了 [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) 实体。 |
+| 添加项 | Beta | 添加了 [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) 的以下 CRUD 操作：[创建](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories)、[获取](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get)、[更新](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update)和[删除](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete)。 |
 | 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) 函数。  |
 | 添加项 | Beta | 向 [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) 实体添加了新的 [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) 函数。  |
+
+
+### <a name="sharepoint-lists"></a>SharePoint 列表
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | v1.0 | 添加了新实体：[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][] |
+| 添加项 | v1.0 | 向 [Site][] 资源添加了 **columns**、**contentTypes**、**items** 和 **lists** 关系。 |
+| 添加项 | v1.0 | 新增了复杂类型：[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
+| 添加项 | beta | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta] |
+| 添加项 | beta | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
+| 添加项 | beta | 向 [List][List-beta] 资源添加了**displayName** 和 **system** 属性。 |
+| 添加项 | beta | 向 [List][List-beta] 资源添加了 **activities** 和 **contentTypes** 关系。 |
+| 添加项 | beta | 向 [ListItem][ListItem-beta] 资源添加了 **contentType** 属性。 |
+| 添加项 | beta | 向 [ListItem][ListItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
+| 添加项 | beta | 向 [Site][Site-beta] 资源添加了 **contentTypes** 关系。 |
+| 添加项 | beta | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
+| 添加项 | beta | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
+| 添加项 | beta | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
+| 添加项 | beta | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
+| 更改   | beta | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
+| 更改   | beta | 在 [PersonOrGroupColumn][PersonOrGroupColumn-beta] 复杂类型上将 **chooseFrom** 属性重命名为 **chooseFromType**。 |
+| 删除 | beta | 在 [NumberColumn][NumberColumn-beta] 复杂类型上删除了 **locale** 属性。 |
+| 删除 | beta | 从[PersonOrGroupColumn][PersonOrGroupColumn-beta] 复杂类型中删除了 **enforceUniqueValues** 属性。 |
+
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+
+
+### <a name="sharepoint-sites"></a>SharePoint 网站
+
+|**更改类型**|**版本**|**说明**|
+|:-------------|:-----------|:--------------|
+| 添加项 | beta | 向 [SiteCollection][SiteCollection-beta] 复杂类型添加了 **dataLocationCode** 和 **root** 属性。 |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
 
 
 ## <a name="august-2017"></a>2017 年 8 月

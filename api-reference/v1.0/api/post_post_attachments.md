@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>Add attachment
 
 使用此 API 将 [附件](../resources/attachment.md) 添加到帖子。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+
+附件可以是下列类型之一：
+
+* 文件（[fileAttachment](../resources/fileattachment.md) 资源）。
+* 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。
+* 指向文件的链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）。
+
+所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 

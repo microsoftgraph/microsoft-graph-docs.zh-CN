@@ -19,7 +19,7 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|文件的二进制内容。|
+|contentBytes|Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|
 |contentLocation|String|对应于附件内容所在位置的统一资源标识符 (URI)。|
 |contentType|String|附件的内容类型。|
