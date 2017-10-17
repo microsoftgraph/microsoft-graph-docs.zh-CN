@@ -5,7 +5,7 @@
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 返回属于工作簿的工作表对象的集合。    
 
 
@@ -13,20 +13,21 @@
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
 要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一：
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read（适用于读取操作）
+* Files.ReadWrite（适用于读写操作）
 
 
 ## <a name="sessions-and-persistence"></a>会话和永久性
 
-可以在以下任一模式下调用 Excel API： 
+可以在以下三个模式之一下调用 Excel API： 
 
-1. 永久会话 - 保持（保存）对工作簿所做的全部更改。这是常用的操作模式。 
-2. 非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。   
+1. 永久会话 - 保持（保存）对工作簿所做的全部更改。 这是效率和性能最高的操作模式。 
+2. 非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。 
+3. 无会话 - 在不使用会话信息的情况下进行 API 调用。 每次执行操作时，Excel 服务器都需要查找服务器的工作簿副本，因此这不是调用 Excel API 的高效方式。 它适用于发出一次性请求。 
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
@@ -75,6 +76,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常，如果永久会话处于不活动状态的时间达到 7 分钟左右，则会话会过期。 如果非永久会话处于不活动状态的时间达到 5 分钟左右，则会过期。 
 
 ## <a name="common-excel-scenarios"></a>常见的 Excel 方案
 
@@ -149,7 +152,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>获取新的工作表 
- 
+
+根据名称获取工作表。 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
@@ -1256,7 +1261,7 @@ content-type: application/json
 
 返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。
  
-以下是一个示例。
+示例如下。
 
 <!-- { "blockType": "ignored" } -->
 ```http

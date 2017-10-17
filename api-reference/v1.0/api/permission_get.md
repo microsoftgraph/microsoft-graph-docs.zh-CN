@@ -1,8 +1,26 @@
-# <a name="get-permission"></a>获取权限
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "获取权限"
+ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
-检索 permission 对象的属性和关系。
+返回特定 permission 资源的有效共享权限。
+
+项的有效权限有两个来源：直接对项本身设置权限，或从项上级继承权限。
+
+调用方可以检查 `inheritedFrom` 属性来区分是否为继承权限。此属性是引用继承其权限的上级的 [ItemReference](../resources/itemReference.md) 资源。
+
+对项设置的 SharePoint 权限级别在返回时包含“SP”前缀。 例如，SP.View Only、SP.Limited Access、SP.View Web Analytics Data。 请参阅 [SharePoint 角色完整列表](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -14,17 +32,18 @@
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /me/drive/items/{item-id}/permissions/{perm-id}
-GET /me/drive/root:/{path}:/permissions/{perm-id}
 GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
+GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持使用 [$select 查询参数](../../../concepts/query_parameters.md)形成响应。
 
 ## <a name="response"></a>响应
 
@@ -32,28 +51,25 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-下面是请求访问根文件夹权限的示例。
+下面是请求访问某个文件夹权限的示例。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_permission"
-}-->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+
+### <a name="response"></a>响应
+
+如果成功，此方法将返回特定 ID 的 [Permission](../resources/permission.md) 资源。 
+
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 762
 
 {
   "grantedTo": {
@@ -67,20 +83,24 @@ Content-length: 762
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 [权限](../resources/permission.md) 资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 
 具有 [**链接**](../resources/sharinglink.md) facet 的权限表示在该项上创建的共享链接。共享链接包含一个唯一令牌，可以为具有上述链接的任何人提供对项目的访问权限。
 
-具有 [**邀请**](../resources/sharinginvitation.md) facet 的权限表示通过邀请特定用户或组访问该文件添加的权限。
+具有 [**invitation**](../resources/sharinginvitation.md) facet 的权限表示通过邀请特定用户或组访问该文件添加的权限。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-responses"></a>错误响应
+
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+
+[error-response]: ../../../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "Get permission",
-  "keywords": "",
+  "description": "Get a DriveItem's sharing permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

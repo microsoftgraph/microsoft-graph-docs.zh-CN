@@ -1,6 +1,17 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "列出驱动器"
+ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="list-available-drives"></a>列出可用的驱动器
 
-检索可用于目标 [用户](../resources/user.md) 或 [组](../resources/group.md) 的 [驱动器](../resources/drive.md) 资源的列表。你的应用程序也可以请求 SharePoint 根网站上的文档库集。
+检索可用于目标用户、组或[站点](../resources/site.md)的 [Drive](../resources/drive.md) 资源列表。
 
 ## <a name="permissions"></a>权限
 
@@ -12,88 +23,105 @@
 |委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-## <a name="http-request"></a>HTTP 请求
+## <a name="list-a-groups-drives"></a>列出组的驱动器
 
-<!-- { "blockType": "ignored" } -->
+若要列出某个组的文档库，应用应请求组中的 **drives** 关系。
+
+### <a name="http-request"></a>HTTP 请求
+
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```http
-GET /drives
+GET /groups/{groupId}/drives
+```
+
+## <a name="list-a-sites-drives"></a>列出站点的驱动器
+
+若要列出某个站点的文档库，应用应请求站点中的 **drives** 关系。
+
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+
+```http
+GET /sites/{siteId}/drives
+```
+
+## <a name="list-a-users-drives"></a>列出用户的驱动器
+
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+
+```http
+GET /users/{userId}/drives
+```
+
+## <a name="list-the-current-users-drives"></a>列出当前用户的驱动器
+
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+
+```http
 GET /me/drives
-GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持使用 `$expand`、`$select`、`$skipToken`、`$top` 和 `$orderby` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
 
-## <a name="request-body"></a>请求正文
-
-请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Drive](../resources/drive.md) 对象集合。
 
-## <a name="example"></a>示例
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
-##### <a name="request"></a>请求
-
-下面是一个请求用户驱动器的示例。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drives"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drives
-```
-
-##### <a name="response"></a>响应
-
-下面是一个响应示例。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 579
+Content-Type: application/json
 
 {
   "value": [
     {
-      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",
+      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+      "driveType": "documentLibrary",
+      "name": "Shared Documents",
       "owner": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "Ryan Gregg"
-          }
-      },
-      "quota": {
-          "deleted": 256938,
-          "remaining": 1099447353539,
-          "state": "normal",
-          "total": 1099511627776
+        "user": {
+          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+          "displayName": "Ryan Gregg"
+        }
+      }
+    },
+    {
+      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+      "driveType": "documentLibrary",
+      "name": "Contoso Project Files",
+      "owner": {
+        "user": {
+          "id": "406B2281-18E8-4416-9857-38C531B904F1",
+          "displayName": "Daron Spektor"
+        }
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-大多数用户将只有一个驱动器资源。组和部分用户可能有多个驱动器可用。
+大多数用户将只有一个 Drive 资源。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+组和站点可使用多个 Drive 资源。
+
+默认情况下将隐藏包含 [system][] Facet 的 Drive。
+若要列出它们，请在 `$select` 语句中包含 `system`。
+
+[system]: ../resources/systemFacet.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List drives",
-  "keywords": "",
+  "description": "List the available drives for a user, group, or site.",
+  "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->

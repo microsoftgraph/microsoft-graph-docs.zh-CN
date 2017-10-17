@@ -1,6 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "获取驱动器"
+ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="get-drive"></a>获取驱动器
 
-检索 [驱动器](../resources/drive.md) 资源的属性和关系。Drive 是文件系统的顶级容器。Graph API 允许访问用户 OneDrive/OneDrive for Business 或 SharePoint 文档库的 Drive 资源。
+检索 [Drive](../resources/drive.md) 资源的属性和关系。
+
+驱动器是文件系统的顶级容器，例如 OneDrive 或 SharePoint 文档库。
 
 ## <a name="permissions"></a>权限
 
@@ -12,74 +25,109 @@
 |委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-## <a name="get-a-users-onedrive"></a>获取用户的 OneDrive
+## <a name="get-current-users-onedrive"></a>获取当前用户的 OneDrive
 
-若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 [User](../resources/user.md) 资源获取 **drive** 关系。
+可以通过 `me` 单一实例访问登录用户驱动器（如果使用委派身份验证）。
 
-## <a name="http-request"></a>HTTP 请求
+如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。
 
-<!-- { "blockType": "ignored" } -->
+### <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
+```
+
+## <a name="get-a-users-onedrive"></a>获取用户的 OneDrive
+
+若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 User 资源获取 **drive** 关系。
+
+如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。
+
+### <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+
+```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
+### <a name="path-parameters"></a>路径参数
+
+| 参数名称 | 值  | 说明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _idOrUserPrincipalName_     | string | 必需。 拥有 OneDrive 的用户对象的标识符。 |
+
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
-若要访问[组](../resources/group.md)的默认文档库，你的应用程序应请求组中的**驱动器**关系。
+若要访问组的默认文档库，应用应请求组中的 **drive** 关系。
 
-## <a name="http-request"></a>HTTP 请求
+### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /groups/{groupId}/drive
 ```
 
+### <a name="path-parameters"></a>路径参数
+
+| 参数名称 | 值  | 说明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _groupId_      | string | 必需。 拥有文档库的组的标识符。 |
+
+## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
+
+若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
+
+### <a name="http-request"></a>HTTP 请求
+
+```http
+GET /sites/{siteId}/drive
+```
+
+### <a name="path-parameters"></a>路径参数
+
+| 参数名称 | 值  | 说明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _siteId_       | string | 必需。 包含文档库的站点的标识符。 |
+
+## <a name="get-a-drive-by-id"></a>根据 ID 获取驱动器
+
+如果你有某个驱动器的唯一标识符，则可以直接从顶级驱动器集合来访问它。
+
+### <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### <a name="path-parameters"></a>路径参数
+
+| 参数名称 | 值  | 说明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _driveId_      | string | 必需。 请求获取的驱动器的标识符。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$expand` 和 `$select` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
+这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。
 
-## <a name="request-body"></a>请求正文
+## <a name="http-response"></a>HTTP 响应
 
-请勿提供此方法的请求正文。
+每个方法将在响应正文中返回匹配驱动器的 [Drive 资源][drive-resource]。
 
-## <a name="response"></a>响应
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [驱动器](../resources/drive.md) 资源。
-
-## <a name="example"></a>示例
-
-##### <a name="request"></a>请求
-
-下面是一个请求获取已登录用户的 OneDrive 或 OneDrive for Business 的示例。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive
-```
-
-##### <a name="response"></a>响应
-
-下面是一个响应示例。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -95,12 +143,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-response-codes"></a>错误响应代码
+
+如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

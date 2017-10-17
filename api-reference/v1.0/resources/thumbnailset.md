@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ThumbnailSet
+ms.openlocfilehash: c8f8d9c2232b845c746a6a215c81194e97c0431d
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
 
 **ThumbnailSet** 资源是键控的 [缩略图](thumbnail.md) 资源集合。它用来表示与 DriveItem 相关联的一组缩略图。
@@ -17,10 +28,10 @@
 ```json
 {
   "id": "string (identifier)",
-  "large": {"@odata.type": "microsoft.graph.thumbnail"},
-  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
-  "small": {"@odata.type": "microsoft.graph.thumbnail"},
-  "source": {"@odata.type": "microsoft.graph.thumbnail"}
+  "large": { "@odata.type": "microsoft.graph.thumbnail" },
+  "medium": { "@odata.type": "microsoft.graph.thumbnail" },
+  "small": { "@odata.type": "microsoft.graph.thumbnail" },
+  "source": { "@odata.type": "microsoft.graph.thumbnail" }
 }
 ```
 
@@ -38,8 +49,7 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnailSet resource",
-  "keywords": "",
+  "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/ThumbnailSet"
+} -->

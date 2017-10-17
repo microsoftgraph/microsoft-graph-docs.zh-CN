@@ -4,6 +4,8 @@
 
 本主题概述了访问令牌、Azure AD 以及应用获取访问令牌的方式。如果你已熟悉将应用与 Azure AD 集成来获取令牌，则你可以快进到[后续步骤](#next-steps)，了解有关特定于 Microsoft Graph 的信息和示例。 
 
+> **重要说明：**条件访问策略应用于 Microsoft Graph 的方式正在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)。
+
 ## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>什么是访问令牌以及如何使用它？
 
 这种由 Azure AD 发布的访问令牌，称为 base 64 编码的 JSON Web 令牌 (JWT)。它们包含以下信息（声明）：Web API 受到 Azure AD 保护（如 Microsoft Graph），用于验证调用方并确保调用方有相应的权限可以执行它们正在请求的操作。当调用 Microsoft Graph 时，可以将访问令牌视为不透明。你应当随时可以通过安全通道传输访问令牌，如传输层安全性 (HTTPS)。

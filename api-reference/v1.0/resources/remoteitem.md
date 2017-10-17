@@ -1,6 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
-**remoteItem** 资源指示 [**driveItem**](driveitem.md) 引用存在于其他驱动器中的项。该资源提供源驱动器和目标项的唯一 ID。
+**remoteItem** 资源指示 [**driveItem**](driveitem.md) 引用存在于其他驱动器中的项。
+该资源提供源驱动器和目标项的唯一 ID。
 
 具有非 NULL **remoteItem** facet 的 [**DriveItems**](driveitem.md) 是共享、添加到用户的 OneDrive 的资源，或从项（例如搜索结果）的 hetrogenous 集合返回的项中的资源。
 
@@ -28,7 +40,6 @@
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -52,7 +63,6 @@
 | shared               | [共享](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | 为 OneDrive for Business 和 SharePoint 中的项之间的互操作性提供了完整的项标识符集。只读。                                          |
 | size                 | Int64                               | 远程项的大小。只读。                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。                                                                     |
 | webDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
 | webUrl               | URL                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
 
@@ -60,10 +70,10 @@
 
 有关 **driveItem** 上 facet 的详细信息，请参阅 [driveItem](driveitem.md)。
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

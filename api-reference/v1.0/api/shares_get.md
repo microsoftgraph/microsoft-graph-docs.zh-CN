@@ -1,8 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "访问共享项目"
+ms.openlocfilehash: d396e7bb79f3c2bbc9c824d48b6fa3df4a5ef26c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
 通过使用 **shareId** 或共享 URL 访问共享 [DriveItem](../resources/driveitem.md) 或共享项目集合。
 
-要与此 API 一起使用共享 URL，应用需要[将此 URL 转换为共享令牌](#transform-a-sharing-url)。
+要与此 API 一起使用共享 URL，应用需要[将此 URL 转换为共享令牌](#encoding-sharing-urls)。
 
 ## <a name="permissions"></a>权限
 
@@ -17,12 +28,32 @@
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /shares/{sharingIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+### <a name="path-parameters"></a>路径参数
+
+| 参数名称        | 值    | 说明                                                                         |
+|:----------------------|:---------|:------------------------------------------------------------------------------------|
+| **sharingTokenOrUrl** | `string` | 必需。 API 返回的共享令牌或正确编码的共享 URL。 |
+
+### <a name="encoding-sharing-urls"></a>编码共享 URL
+
+若要编码共享 URL，请使用以下逻辑：
+
+1. 首先，使用 base64 编码 URL。
+2. 删除值末尾的 `=` 字符，将 `/` 替换成 `_`，将 `+` 替换成 `-`，从而将 base64 编码结果转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)。
+3. 将 `u!` 追加到字符串的开头。
+
+例如，若要对 URL 进行 C# 编码，请使用以下代码：
+
+```csharp
+string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
+string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
+string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
+```
 
 ## <a name="response"></a>响应
 
@@ -30,25 +61,22 @@ GET /shares/{sharingIdOrUrl}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求检索共享项目的示例：
 
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
+<!-- { "blockType": "request", "name": "get-shared-root" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-##### <a name="response"></a>响应
+
+### <a name="response"></a>响应
 
 下面是一个响应示例。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,6 +89,10 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
+  },
+  "remoteItem": { 
+    "driveId": "",
+    "id": ""
   }
 }
 ```
@@ -71,15 +103,19 @@ Content-type: application/json
 
 ## <a name="example-single-file"></a>示例（单个文件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-通过请求**根**关系，将返回共享的 **DriveItem**。
+通过请求 **driveItem** 关系，将返回共享的 **DriveItem**。
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
+GET /shares/{shareIdOrUrl}/driveItem
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -96,15 +132,19 @@ Content-Type: application/json
 
 ## <a name="example-shared-folder"></a>示例（共享文件夹）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-通过请求**根**关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
+通过请求 **driveItem** 关系并展开**子**集合，将同时返回共享的 **DriveItem** 以及共享文件夹内的文件。
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -114,7 +154,7 @@ Content-Type: application/json
   "id": "9FFFDB3C-5B87-4062-9606-1B008CA88E44",
   "name": "Contoso Project",
   "eTag": "2246BD2D-7811-4660-BD0F-1CF36133677B,1",
-  "folder": {}
+  "folder": {},
   "size": 10911212,
   "children": [
     {
@@ -133,33 +173,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>转换共享 URL
+## <a name="error-responses"></a>错误响应
 
-若要使用**共享** API 访问共享 URL，需要将 URL 转换为共享令牌。
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
-要将 URL 转换为共享令牌：
+## <a name="remarks"></a>注解
 
-1. Base64 编码共享 URL。
-2. 通过以下方法，将 base64 编码数据转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)：
-  1. 剪裁掉字符串最后的 `=` 字符
-  2. 将不安全的 URL 字符替换成等效字符；将 `/` 替换成 `_`，将 `+` 替换成 `-`。
-3. 将 `u!` 追加到字符串的开头。
+* 对于 OneDrive for Business 和 SharePoint，共享 API 始终要求进行身份验证，无法用于在没有用户上下文的情况下访问匿名共享内容。
 
-例如，以下 C# 方法将输入字符串转换为共享令牌：
+[error-response]: ../../../concepts/errors.md
 
-```csharp
-string UrlToSharingToken(string inputUrl) {
-  var base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputUrl));
-  return "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Access the contents of a sharing link with the OneDrive API.",
+  "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "Sharing/Use a link"
+} -->

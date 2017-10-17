@@ -1,4 +1,15 @@
-# <a name="site-resource"></a>网站资源
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Site
+ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
+# <a name="site-resource"></a>Site 资源
 
 **网站**资源提供 SharePoint 网站的元数据和关系。
 
@@ -6,17 +17,19 @@
 
 下面的所有示例都相对于 `https://graph.microsoft.com/v1.0`。
 
-| 任务名称            | 示例请求                                   |
-| :------------------- | :------------------------------------------------ |
-| [获取根网站][]    | GET /sites/root                                   |
-| [获取网站][]         | GET /sites/{site-id}                              |
-| [根据路径获取网站][] | GET /sites/{hostname}:/{site-path}                |
-| [获取组的网站][] | GET /groups/{group-id}/sites/root             |
+| 任务名称                | 示例请求
+|:-------------------------|:--------------------------------------------------
+| [获取根网站][]        | GET /sites/root
+| [获取网站][]             | GET /sites/{site-id}
+| [根据路径获取网站][]     | GET /sites/{hostname}:/{site-path}
+| [获取组的网站][] | GET /groups/{group-id}/sites/root
+| [搜索网站][]     | GET /sites?search={query}
 
 [获取网站]: ../api/site_get.md
 [获取根网站]: ../api/site_get.md
-[按路径获取网站]: ../api/site_get.md
+[按路径获取网站]: ../api/site_getbypath.md
 [获取组的网站]: ../api/site_get.md
+[搜索网站]: ../api/site_search.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,10 +51,13 @@
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+  "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
@@ -71,18 +87,24 @@
 
 ## <a name="relationships"></a>关系
 
-| 关系名称 | 类型                     | 说明
-|:------------------|:-------------------------|:----------------------------------
-| **驱动器**         | [驱动器][]                | 此网站的默认驱动器（文档库）。
-| **驱动器**        | 集合（[驱动器][]）    | 网站下方的驱动器集合（文档库）。
-| **项目**         | 集合 ([baseItem][]) | 用于处理包含在此网站中的任何项目。不能枚举该集合。
-| **网站**         | 集合（[网站][]）     | 网站下方的子网站的集合。
-| **onenote**       | [onenote][]              | 调用 OneNote 服务进行笔记本相关操作。
+| 关系名称 | 类型                             | 说明
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用列定义的集合。
+| **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型的集合。
+| **drive**         | [驱动器][]                        | 此网站的默认驱动器（文档库）。
+| **驱动器**        | 集合（[驱动器][]）            | 网站下方的驱动器集合（文档库）。
+| **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
+| **lists**         | Collection([list][])             | 此网站下方的列表的集合。
+| **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
+| **onenote**       | [onenote][]                      | 调用 OneNote 服务执行笔记本相关操作。
 
+[columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[驱动器]: drive.md
+[contentType]: contentType.md
+[drive]: drive.md
 [identitySet]: identityset.md
-[网站]: site.md
+[list]: list.md
+[site]: site.md
 [onenote]: onenote.md
 
 <!-- {
@@ -90,8 +112,6 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Site",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Sites",
+  "tocBookmarks": { "Resources/Site": "#" }
 } -->

@@ -6,6 +6,37 @@
 
 要获取扩展的事件实例，可以[获取日历视图](calendar_list_calendarview.md)，或者[获取事件的实例](event_list_instances.md)。
 
+
+### <a name="get-events-in-another-users-calendar"></a>获取其他用户的日历中的事件
+
+如果你具有应用程序权限，或者具有某个用户的相应的委派[权限](#permissions)，则可以获取其他用户的日历中的事件。 本部分重点介绍涉及委派权限的应用场景。
+
+例如，你的应用已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了一个日历。 可以通过在下面所示的查询示例中指定 Garth 的用户 ID（或者用户主体名称）来获取该共享日历中的事件。
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events
+```
+
+此功能适用于对单个用户执行的所有支持的 GET 事件操作，如下面的 [HTTP 请求](#http-request)部分所示。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
+
+如果 Garth 未与 John 共享他的日历，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取已登录用户自己的日历中的事件，而此查询等效于使用 /me 快捷方式：
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events
+```
+
+此功能仅适用于以下资源的 GET 操作：
+
+- 共享联系人文件夹
+- 共享日历
+- 共享文件夹中的联系人和事件
+- 委派邮箱中的上述资源
+
+此功能不适用于针对联系人、事件及其文件夹的其他操作。
+
+
 ### <a name="support-various-time-zones"></a>支持不同时区
 
 对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。 

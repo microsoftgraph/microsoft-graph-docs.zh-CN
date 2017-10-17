@@ -1,6 +1,38 @@
 # <a name="get-calendar"></a>获取日历
 
-检索 calendar 对象的属性和关系。
+检索日历对象的属性和关系。
+
+
+### <a name="get-another-users-calendar"></a>获取其他用户的日历
+
+如果你具有应用程序权限，或者具有某个用户的适当的委派[权限](#permissions)，则可以获取其他用户的日历。 本部分重点介绍涉及委派权限的应用场景。
+
+例如，你的应用已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了一个日历。 可以通过在下面所示的查询示例中指定 Garth 的用户 ID（或者用户主体名称）来获取该共享日历。
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/calendar
+```
+
+此功能适用于对单个用户执行的所有支持的 GET 日历操作，如下面的 [HTTP 请求](#http-request)部分所示。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
+
+如果 Garth 未与 John 共享他的日历，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取已登录用户的日历，而此查询等效于使用 /me 快捷方式：
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendar
+```
+
+此功能仅适用于以下资源的 GET 操作：
+
+- 共享联系人文件夹
+- 共享日历
+- 共享文件夹中的联系人和事件
+- 委派邮箱中的上述资源
+
+此功能不适用于针对联系人、事件及其文件夹的其他操作。
+
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 

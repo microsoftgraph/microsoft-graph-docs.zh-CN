@@ -42,12 +42,12 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 通过[架构扩展](../api-reference/v1.0/resources/schemaextension.md)可以定义一个架构并使用它来扩展资源类型。首先创建架构扩展定义。然后，利用它通过强类型自定义数据扩展资源实例。此外，可以控制架构扩展的[状态](#schema-extensions-lifecycle)并使其可被其他应用发现。反之，这些应用可以将此扩展用于他们的数据，并在此基础上生成进一步的体验。
 
-在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。提供两个命名选项：
+在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。有两个命名选项：
 
-- 如果已经有通过租户验证的虚拟 `.com` 域，则可以使用域名和架构名称来定义一个唯一名称，采用以下格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。例如，如果虚域是 contoso.com，则可以定义 `contoso_mySchema` 的 **id**。这是首选选项。
+- 如果已经有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 虚域，则可以使用域名和架构名称来定义一个唯一名称，采用以下格式： \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 例如，如果虚域是 contoso.com，则可以定义 `contoso_mySchema` 的 **id**。  这是首选选项。
 - 如果没有验证的虚域，则可以只设置架构名称的 **id**（不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如，`extkvbmkofy_mySchema`。
 
-将在 **id** 中看到用作复杂类型名称的此唯一名称，该复杂类型将在扩展的资源实例上存储自定义数据。 
+将在 **id** 中看到用作复杂类型名称的此唯一名称，该复杂类型将在扩展的资源实例上存储自定义数据。
 
 与开放类型不同，管理架构扩展定义（[列出](../api-reference/v1.0/api/schemaextension_list.md)、[创建](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md)、[获取](../api-reference/v1.0/api/schemaextension_get.md)、[更新](../api-reference/v1.0/api/schemaextension_update.md)及[删除](../api-reference/v1.0/api/schemaextension_delete.md)）和管理其数据（添加、获取、更新及删除数据）是独立的 API 操作集。 
 

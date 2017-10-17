@@ -1,8 +1,20 @@
-# <a name="file-resource-type"></a>文件资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
+# <a name="file-resource-type"></a>File 资源类型
 
 **文件**资源将与文件相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **文件**方面，则该项表示一个文件。除了其他属性，文件还具有**内容**关系，其中包含文件字节流。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **file** facet，则该项表示一个文件。
+除了其他属性，文件还具有 **content** 关系，其中包含文件字节流。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -32,14 +44,10 @@
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

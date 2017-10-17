@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "获取 SharePoint 网站"
+ms.openlocfilehash: c1f3d8096906a1cebafe15bfea18d924c1fd111c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
 # <a name="get-a-site-resource"></a>获取网站资源
 
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
@@ -7,8 +18,8 @@
 **网站**可按唯一标识符处理，此唯一标识符是下列值的复合 ID：
 
 * 网站集主机名称 (contoso.sharepoint.com)
-* 网站集的唯一 ID (guid)
-* 网站的唯一 ID (guid)
+* 网站集的唯一 ID (GUID)
+* 网站的唯一 ID (GUID)
 
 还有一个保留的网站标识符，即 `root`。它经常用于引用给定目标的根网站，如下所示：
 
@@ -29,6 +40,8 @@
 
 若要访问租户内的根 SharePoint 网站：
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 GET /sites/root
 GET /sites/contoso.sharepoint.com
@@ -44,7 +57,7 @@ GET /sites/{hostname}:/{server-relative-path}
 
 ## <a name="access-a-group-team-site"></a>访问组团队网站
 
-若要访问[组](../resources/group.md)的团队网站：
+若要访问组的团队网站：
 
 ```http
 GET /groups/{group-id}/sites/root
@@ -52,26 +65,35 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}
+GET /sites/{site-id}
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "d297964f-d325-424b-a002-f54048a4622e",
-    "name": "OneDrive / SharePoint Team",
-    "description": "Collaboration site for the OneDrive and SharePoint team",
+  "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": {
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
+  "displayName": "OneDrive Team Site",
+  "name": "1drvteam",
+  "createdDateTime": "2017-05-09T20:56:00Z",
+  "lastModifiedDateTime": "2017-05-09T20:56:01Z",
+  "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
 
@@ -80,5 +102,5 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/Get site by ID"
+  "tocPath": "Sites/Get by ID"
 } -->

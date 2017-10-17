@@ -7,7 +7,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 * [驱动器](drive.md) - 表示文件的逻辑容器，例如文档库或用户的 OneDrive。
 * [DriveItem](driveitem.md) - 表示驱动器中的项目，例如文档、照片、视频或文件夹。
 
-大部分与文件的交互通过与 **DriveItem** 资源的交互实现。以下是一个 DriveItem 资源示例：
+大部分与文件的交互通过与 **DriveItem** 资源的交互实现。 以下是一个 DriveItem 资源示例：
 
 ```json
 {
@@ -39,8 +39,8 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 **驱动器** 和 **DriveItem** 资源通过三种不同的方式公开数据：
 
 * _属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。
-* _Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。
-* _引用_（像**子项**和**缩略图**）指向其他资源的集合。
+* _Facet_（如 **File** 和 **Photo**）公开复杂值。 存在的 **file** 或 **folder** Facet 表示 **DriveItem** 的行为和属性。
+* _引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。
 
 ## <a name="commonly-accessed-resources"></a>经常访问的资源
 
@@ -58,7 +58,9 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 | `/groups/{group-id}/drive` | 通过组的唯一 ID 访问组的默认文档库。 |
 | `/shares/{share-id}` | 通过其 **sharedId** 或共享 URL 访问 **DriveItem**。 |
 
-除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。
+除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。
+要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。
+此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。
 
 | 路径 | 资源 |
 |---|---|
@@ -69,13 +71,15 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 ## <a name="drive-resource"></a>驱动器资源
 
-[驱动器资源](drive.md) 是用户的 OneDrive 或 SharePoint 文档库内的顶级对象。几乎所有的文件操作都从查找特定驱动器资源开始。
+[驱动器资源](drive.md) 是用户的 OneDrive 或 SharePoint 文档库内的顶级对象。
+几乎所有的文件操作都从查找特定驱动器资源开始。
 
 可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。  
 
 ## <a name="driveitem-resource"></a>DriveItem 资源
 
-[DriveItems](driveitem.md) 是驱动器文件系统内的对象。访问方法有：使用 `/items/{item-id}` 语法通过其 **id** 访问，或使用 `/root:/path/to/item/` 语法通过其文件系统路径访问。
+[DriveItems](driveitem.md) 是驱动器文件系统内的对象。
+访问方法有：使用 `/items/{item-id}` 语法通过其 **id** 访问，或使用 `/root:/path/to/item/` 语法通过其文件系统路径访问。
 
 DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据。
 
@@ -83,13 +87,15 @@ DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据�
 
 ## <a name="shared-folders-and-remote-items"></a>共享文件夹和远程项目
 
-OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。
+OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。
+这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。
 
 有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。   
 
 ## <a name="sharing-and-permissions"></a>共享和权限
 
-OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/item_createLink.md)、[添加权限并发送邀请](../api/item_invite.md) 到驱动器中的项目。
+OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。
+Microsoft Graph 使应用可以创建 [共享链接](../api/driveitem_createlink.md)、[添加权限并发送邀请](../api/driveitem_invite.md) 到驱动器中的项目。
 
 Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares_get.md) 的方法。
 

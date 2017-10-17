@@ -2,9 +2,9 @@
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg_status_code)
+-   [Error resource type](#msg_error_resource_type)
+-   [Code property](#msg_code_property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +18,7 @@
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 错误的请求 (Bad Request)                     | 无法处理请求，因为格式有误或者不正确。                                                                       |
 | 401         | 未经授权 (Unauthorized)                    | 资源所需的身份验证信息缺少或无效。                                                   |
-| 403         | 禁止访问 (Forbidden)                       | 对于请求的资源，访问被拒绝。用户可能没有足够的权限。                                                 |
+| 403         | 禁止访问                       | 对于请求的资源，访问被拒绝。用户可能没有足够的权限。 <br /><br /> **重要说明：**如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | 未找到 (Not Found)                       | 所请求的资源不存在。                                                                                                  |
 | 405         | 方法不允许 (Method Not Allowed)              | 请求中的 HTTP 方法在资源上不允许。                                                                         |
 | 406         | 不接受 (Not Acceptable)                  | 该服务不支持“Accept”标头中请求的格式。                                                                |
@@ -36,9 +36,9 @@
 | 503         | 服务不可用             | 服务暂时无法维护或过载。你可以在延迟后重复该请求，其长度可以在 Retry-After 标头中指定。|
 | 504         | 网关超时                 | 服务器在充当代理时，没有收到它在尝试完成请求时需要访问的来自上游服务器的及时响应。可能会与 503 错误同时出现。 |
 | 507         | 存储不足 (Insufficient Storage)            | 已达到最大存储配额。                                                                                            |
-| 509         | 超出带宽限制 (Bandwidth Limit Exceeded)        | 您的应用因超出最大带宽上限而被限制。应用可以在等待一段时间之后再重试该请求。 |
+| 509         | 超出带宽限制        | 您的应用因超出最大带宽上限而被限制。应用可以在等待一段时间之后再重试该请求。 |
 
-错误响应是单个 JSON 对象，包含名为“**error**”的单个属性。此对象包括错误的所有详细信息。除了 HTTP 状态代码外，还可以使用此处返回的信息，或者使用此信息替代 HTTP 状态代码。以下是完整的 JSON 错误正文示例。
+错误响应是单个 JSON 对象，包含名为“**错误**”的单个属性。 此对象包括错误的所有详细信息。 除了 HTTP 状态代码外，还可以使用此处返回的信息，或者使用此信息替代 HTTP 状态代码。 以下是完整的 JSON 错误正文示例。
 
 <!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
 ```json
@@ -101,9 +101,9 @@
 
 <!--<a name="msg_code_property"> </a> -->
 
-#### <a name="code-property"></a>代码属性
+#### <a name="code-property"></a>Code 属性
 
-`code` 属性包含下列可能值之一。您的应用应做好准备处理任意这些错误。
+`code` 属性包含下列可能值之一。 您的应用应做好准备处理任意这些错误。
 
 | 代码                      | 说明
 |:--------------------------|:--------------
@@ -123,7 +123,7 @@
 | **quotaLimitReached**     | 用户已达到其配额限制。
 | **unauthenticated**       | 调用方未进行身份验证。
 
-`innererror` 对象可能以递归方式包含更多 `innererror` 对象，其中具有其他更多具体的错误代码。处理错误时，应用应遍历所有可用错误代码并使用它们认为最详细的错误代码。在本页底部列出了一些更详细的代码。
+`innererror` 对象可能以递归方式包含更多 `innererror` 对象，其中具有其他更多具体的错误代码。 处理错误时，应用应遍历所有可用错误代码并使用它们认为最详细的错误代码。 在本页底部列出了一些更详细的代码。
 
 若要验证某个错误对象是否是你想要的错误，你必须遍历 `innererror` 对象，查找你想要的错误代码。例如：
 
@@ -146,7 +146,7 @@ public bool IsError(string expectedErrorCode)
 根处的 `message` 属性包含供开发人员阅读的错误消息。错误消息未本地化，并且不应直接向用户显示。处理错误时，代码不应关闭 `message` 值，因为它们随时会更改，并且它们通常包含特定于失败请求的动态信息。只应针对 `code` 属性中返回的错误代码进行编码。
 
 #### <a name="detailed-error-codes"></a>详细的错误代码
-以下是你的应用可能会在嵌套的 `innererror` 对象中遇到的一些其他错误。应用不需要处理这些错误，但如果它们选择，也可以处理。服务可能会随时添加新的错误代码或者停止返回的旧代码，因此所有应用都能够处理 [基本错误代码](#code-property) 非常重要。
+以下是你的应用可能会在嵌套的 `innererror` 对象中遇到的一些其他错误。 应用不需要处理这些错误，但如果它们选择，也可以处理。 服务可能会随时添加新的错误代码或者停止返回的旧代码，因此所有应用都能够处理 [基本错误代码](#code-property) 非常重要。
 
 | 代码                               | 说明
 |:-----------------------------------|:----------------------------------------------------------

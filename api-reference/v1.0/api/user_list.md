@@ -20,11 +20,11 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
 
-默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_ 
+默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 
 
-若要返回其他属性，必须使用 ODATA `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。例如，若要返回 _displayName_、_givenName_、_id_ 和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
 
 > 注意：某些属性无法在用户集合中返回。以下属性仅在[检索单个用户 ](./user_get.md) 时受支持：_aboutMe、birthday、hireDate、interests、mySite、pastProjects、preferredName、responsibilities、schools、skills、mailboxSettings_
 
@@ -43,11 +43,14 @@ GET /users
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+
+### <a name="example-1-standard-users-request"></a>示例 1：标准用户请求
+
+默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_ 此示例演示了默认请求和响应。 
 
 ##### <a name="request"></a>请求
 
-下面是一个请求示例。
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -58,7 +61,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +88,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>示例 2：使用 $select 的用户请求
+
+如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+
+##### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
+```
+
+##### <a name="response"></a>响应
+
+注意：为简洁起见，可能会截断此处展示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 159
+
+{
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "postalCode": "postalCode-value"
     }
   ]
 }

@@ -1,6 +1,38 @@
 # <a name="list-contacts"></a>列出联系人
 
 从已登录用户的默认联系人文件夹中获取联系人集合。
+
+
+### <a name="get-contacts-in-another-users-contact-folder"></a>获取其他用户的联系人文件夹中的联系人
+
+如果你具有应用程序权限，或者具有某个用户的相应的委派[权限](#permissions)，则可以获取其他用户的联系人文件夹中的联系人。 本部分重点介绍涉及委派权限的应用场景。
+
+例如，你的应用已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了一个联系人文件夹。 可以通过在下面所示的查询示例中指定 Garth 的用户 ID（或者用户主体名称）获取该共享文件夹中的联系人。
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/contacts
+```
+
+此功能适用于对单个用户执行的所有支持的 GET 联系人操作，如下面的 [HTTP 请求](#http-request)部分所示。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
+
+如果 Garth 未与 John 共享他的联系人文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取已登录用户自己的联系人文件夹中的联系人，而此查询等效于使用 /me 快捷方式：
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contacts
+```
+
+此功能仅适用于以下资源的 GET 操作：
+
+- 共享联系人文件夹
+- 共享日历
+- 共享文件夹中的联系人和事件
+- 委派邮箱中的上述资源
+
+此功能不适用于针对联系人、事件及其文件夹的其他操作。
+
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
