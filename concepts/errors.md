@@ -1,44 +1,44 @@
-# <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
+# <a name="microsoft-graph-error-responses-and-resource-types"></a><span data-ttu-id="b3f04-101">Microsoft Graph 错误响应和资源类型</span><span class="sxs-lookup"><span data-stu-id="b3f04-101">Microsoft Graph error responses and resource types</span></span>
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg_status_code)
+-   [Error resource type](#msg_error_resource_type)
+-   [Code property](#msg_code_property)
 
 <a name="msg_error_response"> </a> -->
 
-使用标准的 HTTP 状态代码以及 JSON 错误响应对象返回 Microsoft Graph 中的错误。
+<span data-ttu-id="b3f04-102">使用标准的 HTTP 状态代码以及 JSON 错误响应对象返回 Microsoft Graph 中的错误。</span><span class="sxs-lookup"><span data-stu-id="b3f04-102">Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error response object.</span></span>
 
-## <a name="http-status-codes"></a>HTTP 状态代码
+## <a name="http-status-codes"></a><span data-ttu-id="b3f04-103">HTTP 状态代码</span><span class="sxs-lookup"><span data-stu-id="b3f04-103">HTTP status codes</span></span>
 
-下表列出并描述可以返回的 HTTP 状态代码。
+<span data-ttu-id="b3f04-104">下表列出并描述可以返回的 HTTP 状态代码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-104">The following table lists and describes the HTTP status codes that can be returned.</span></span>
 
-| 状态代码 | 状态消息                  | 说明                                                                                                                            |
+| <span data-ttu-id="b3f04-105">状态代码</span><span class="sxs-lookup"><span data-stu-id="b3f04-105">Status code</span></span> | <span data-ttu-id="b3f04-106">状态消息</span><span class="sxs-lookup"><span data-stu-id="b3f04-106">Status message</span></span>                  | <span data-ttu-id="b3f04-107">说明</span><span class="sxs-lookup"><span data-stu-id="b3f04-107">Description</span></span>                                                                                                                            |
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| 400         | 错误的请求 (Bad Request)                     | 无法处理请求，因为格式有误或者不正确。                                                                       |
-| 401         | 未经授权 (Unauthorized)                    | 资源所需的身份验证信息缺少或无效。                                                   |
-| 403         | 禁止访问 (Forbidden)                       | 对于请求的资源，访问被拒绝。用户可能没有足够的权限。                                                 |
-| 404         | 未找到 (Not Found)                       | 所请求的资源不存在。                                                                                                  |
-| 405         | 方法不允许 (Method Not Allowed)              | 请求中的 HTTP 方法在资源上不允许。                                                                         |
-| 406         | 不接受 (Not Acceptable)                  | 该服务不支持“Accept”标头中请求的格式。                                                                |
-| 409         | 冲突 (Conflict)                        | 当前状态与请求预期的状态的冲突。例如，指定的父文件夹可能不存在。                   |
-| 410         | 不存在 (Gone)                            | 所请求的资源在服务器不再可用。                                               |
-| 411         | 需要长度 (Length Required)                 | 请求上需要 Content-Length 标头。                                                                                    |
-| 412         | 前提条件不满足 (Precondition Failed)             | 请求中提供的前提条件（例如“If-Match”标头）与资源的当前状态不匹配。                       |
-| 413         | 请求实体太大 (Request Entity Too Large)        | 请求的大小超出最大限制。                                                                                            |
-| 415         | 媒体类型不受支持 (Unsupported Media Type)          | 请求的内容类型的格式不受服务支持。                                                      |
-| 416         | 请求的范围不满足 (Requested Range Not Satisfiable) | 指定的字节范围无效或不可用。                                                                                    |
-| 422         | 实体无法处理 (Unprocessable Entity)            | 无法处理请求，因为语义上不正确。                                                                       |
-| 429         | 请求过多 (Too Many Requests)               | 客户端应用程序已被限制，经过一段时间之后再尝试重复的请求。                |
-| 500         | 内部服务器错误 (Internal Server Error)           | 处理请求时出现内部服务器错误。                                                                       |
-| 501         | 未实现 (Not Implemented)                 | 所请求的功能未实现。                                                                                               |
-| 503         | 服务不可用             | 服务暂时无法维护或过载。你可以在延迟后重复该请求，其长度可以在 Retry-After 标头中指定。|
-| 504         | 网关超时                 | 服务器在充当代理时，没有收到它在尝试完成请求时需要访问的来自上游服务器的及时响应。可能会与 503 错误同时出现。 |
-| 507         | 存储不足 (Insufficient Storage)            | 已达到最大存储配额。                                                                                            |
-| 509         | 超出带宽限制 (Bandwidth Limit Exceeded)        | 您的应用因超出最大带宽上限而被限制。应用可以在等待一段时间之后再重试该请求。 |
+| <span data-ttu-id="b3f04-108">400</span><span class="sxs-lookup"><span data-stu-id="b3f04-108">400</span></span>         | <span data-ttu-id="b3f04-109">错误的请求 (Bad Request)</span><span class="sxs-lookup"><span data-stu-id="b3f04-109">Bad Request</span></span>                     | <span data-ttu-id="b3f04-110">无法处理请求，因为格式有误或者不正确。</span><span class="sxs-lookup"><span data-stu-id="b3f04-110">Cannot process the request because it is malformed or incorrect.</span></span>                                                                       |
+| <span data-ttu-id="b3f04-111">401</span><span class="sxs-lookup"><span data-stu-id="b3f04-111">401</span></span>         | <span data-ttu-id="b3f04-112">未经授权 (Unauthorized)</span><span class="sxs-lookup"><span data-stu-id="b3f04-112">Unauthorized</span></span>                    | <span data-ttu-id="b3f04-113">资源所需的身份验证信息缺少或无效。</span><span class="sxs-lookup"><span data-stu-id="b3f04-113">Required authentication information is either missing or not valid for the resource.</span></span>                                                   |
+| <span data-ttu-id="b3f04-114">403</span><span class="sxs-lookup"><span data-stu-id="b3f04-114">403 Forbidden</span></span>         | <span data-ttu-id="b3f04-115">禁止访问</span><span class="sxs-lookup"><span data-stu-id="b3f04-115">Forbidden</span></span>                       | <span data-ttu-id="b3f04-p101">对于请求的资源，访问被拒绝。用户可能没有足够的权限。 </span><span class="sxs-lookup"><span data-stu-id="b3f04-p101">Access is denied to the requested resource. The user might not have enough permission. </span></span><br /><br /> <span data-ttu-id="b3f04-118">**重要说明：**如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。</span><span class="sxs-lookup"><span data-stu-id="b3f04-118">**Important:** If conditional access policies are applied to a resource, a HTTP 403; Forbidden error=insufficent_claims may be returned.</span></span> <span data-ttu-id="b3f04-119">有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)</span><span class="sxs-lookup"><span data-stu-id="b3f04-119">For more details on Microsoft Graph and conditional access see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)</span></span>  |
+| <span data-ttu-id="b3f04-120">404</span><span class="sxs-lookup"><span data-stu-id="b3f04-120">404</span></span>         | <span data-ttu-id="b3f04-121">未找到 (Not Found)</span><span class="sxs-lookup"><span data-stu-id="b3f04-121">Not Found</span></span>                       | <span data-ttu-id="b3f04-122">所请求的资源不存在。</span><span class="sxs-lookup"><span data-stu-id="b3f04-122">The requested resource doesn’t exist.</span></span>                                                                                                  |
+| <span data-ttu-id="b3f04-123">405</span><span class="sxs-lookup"><span data-stu-id="b3f04-123">405</span></span>         | <span data-ttu-id="b3f04-124">方法不允许 (Method Not Allowed)</span><span class="sxs-lookup"><span data-stu-id="b3f04-124">Method Not Allowed</span></span>              | <span data-ttu-id="b3f04-125">请求中的 HTTP 方法在资源上不允许。</span><span class="sxs-lookup"><span data-stu-id="b3f04-125">The HTTP method in the request is not allowed on the resource.</span></span>                                                                         |
+| <span data-ttu-id="b3f04-126">406</span><span class="sxs-lookup"><span data-stu-id="b3f04-126">406</span></span>         | <span data-ttu-id="b3f04-127">不接受 (Not Acceptable)</span><span class="sxs-lookup"><span data-stu-id="b3f04-127">Not Acceptable</span></span>                  | <span data-ttu-id="b3f04-128">该服务不支持“Accept”标头中请求的格式。</span><span class="sxs-lookup"><span data-stu-id="b3f04-128">This service doesn’t support the format requested in the Accept header.</span></span>                                                                |
+| <span data-ttu-id="b3f04-129">409</span><span class="sxs-lookup"><span data-stu-id="b3f04-129">409</span></span>         | <span data-ttu-id="b3f04-130">冲突 (Conflict)</span><span class="sxs-lookup"><span data-stu-id="b3f04-130">Conflict</span></span>                        | <span data-ttu-id="b3f04-p103">当前状态与请求预期的状态的冲突。例如，指定的父文件夹可能不存在。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p103">The current state conflicts with what the request expects. For example, the specified parent folder might not exist.</span></span>                   |
+| <span data-ttu-id="b3f04-133">410</span><span class="sxs-lookup"><span data-stu-id="b3f04-133">4.10</span></span>         | <span data-ttu-id="b3f04-134">不存在 (Gone)</span><span class="sxs-lookup"><span data-stu-id="b3f04-134">Gone</span></span>                            | <span data-ttu-id="b3f04-135">所请求的资源在服务器不再可用。</span><span class="sxs-lookup"><span data-stu-id="b3f04-135">The requested resource is no longer available at the server.</span></span>                                               |
+| <span data-ttu-id="b3f04-136">411</span><span class="sxs-lookup"><span data-stu-id="b3f04-136">4.11</span></span>         | <span data-ttu-id="b3f04-137">需要长度 (Length Required)</span><span class="sxs-lookup"><span data-stu-id="b3f04-137">Length Required</span></span>                 | <span data-ttu-id="b3f04-138">请求上需要 Content-Length 标头。</span><span class="sxs-lookup"><span data-stu-id="b3f04-138">A Content-Length header is required on the request.</span></span>                                                                                    |
+| <span data-ttu-id="b3f04-139">412</span><span class="sxs-lookup"><span data-stu-id="b3f04-139">4.12</span></span>         | <span data-ttu-id="b3f04-140">前提条件不满足 (Precondition Failed)</span><span class="sxs-lookup"><span data-stu-id="b3f04-140">Precondition Failed</span></span>             | <span data-ttu-id="b3f04-141">请求中提供的前提条件（例如“If-Match”标头）与资源的当前状态不匹配。</span><span class="sxs-lookup"><span data-stu-id="b3f04-141">A precondition provided in the request (such as an if-match header) does not match the resource's current state.</span></span>                       |
+| <span data-ttu-id="b3f04-142">413</span><span class="sxs-lookup"><span data-stu-id="b3f04-142">4.13</span></span>         | <span data-ttu-id="b3f04-143">请求实体太大 (Request Entity Too Large)</span><span class="sxs-lookup"><span data-stu-id="b3f04-143">Request Entity Too Large</span></span>        | <span data-ttu-id="b3f04-144">请求的大小超出最大限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-144">The request size exceeds the maximum limit.</span></span>                                                                                            |
+| <span data-ttu-id="b3f04-145">415</span><span class="sxs-lookup"><span data-stu-id="b3f04-145">4.15</span></span>         | <span data-ttu-id="b3f04-146">媒体类型不受支持 (Unsupported Media Type)</span><span class="sxs-lookup"><span data-stu-id="b3f04-146">Unsupported Media Type</span></span>          | <span data-ttu-id="b3f04-147">请求的内容类型的格式不受服务支持。</span><span class="sxs-lookup"><span data-stu-id="b3f04-147">The content type of the request is a format that is not supported by the service.</span></span>                                                      |
+| <span data-ttu-id="b3f04-148">416</span><span class="sxs-lookup"><span data-stu-id="b3f04-148">4.16</span></span>         | <span data-ttu-id="b3f04-149">请求的范围不满足 (Requested Range Not Satisfiable)</span><span class="sxs-lookup"><span data-stu-id="b3f04-149">Requested Range Not Satisfiable</span></span> | <span data-ttu-id="b3f04-150">指定的字节范围无效或不可用。</span><span class="sxs-lookup"><span data-stu-id="b3f04-150">The specified byte range is invalid or unavailable.</span></span>                                                                                    |
+| <span data-ttu-id="b3f04-151">422</span><span class="sxs-lookup"><span data-stu-id="b3f04-151">422</span></span>         | <span data-ttu-id="b3f04-152">实体无法处理 (Unprocessable Entity)</span><span class="sxs-lookup"><span data-stu-id="b3f04-152">Unprocessable Entity</span></span>            | <span data-ttu-id="b3f04-153">无法处理请求，因为语义上不正确。</span><span class="sxs-lookup"><span data-stu-id="b3f04-153">Cannot process the request because it is semantically incorrect.</span></span>                                                                       |
+| <span data-ttu-id="b3f04-154">429</span><span class="sxs-lookup"><span data-stu-id="b3f04-154">429</span></span>         | <span data-ttu-id="b3f04-155">请求过多 (Too Many Requests)</span><span class="sxs-lookup"><span data-stu-id="b3f04-155">Too Many Requests</span></span>               | <span data-ttu-id="b3f04-156">客户端应用程序已被限制，经过一段时间之后再尝试重复的请求。</span><span class="sxs-lookup"><span data-stu-id="b3f04-156">Client application has been throttled and should not attempt to repeat the request until an amount of time has elapsed.</span></span>                |
+| <span data-ttu-id="b3f04-157">500</span><span class="sxs-lookup"><span data-stu-id="b3f04-157">500 ms</span></span>         | <span data-ttu-id="b3f04-158">内部服务器错误 (Internal Server Error)</span><span class="sxs-lookup"><span data-stu-id="b3f04-158">Internal Server Error</span></span>           | <span data-ttu-id="b3f04-159">处理请求时出现内部服务器错误。</span><span class="sxs-lookup"><span data-stu-id="b3f04-159">There was an internal server error while processing the request.</span></span>                                                                       |
+| <span data-ttu-id="b3f04-160">501</span><span class="sxs-lookup"><span data-stu-id="b3f04-160">501</span></span>         | <span data-ttu-id="b3f04-161">未实现 (Not Implemented)</span><span class="sxs-lookup"><span data-stu-id="b3f04-161">Not Implemented</span></span>                 | <span data-ttu-id="b3f04-162">所请求的功能未实现。</span><span class="sxs-lookup"><span data-stu-id="b3f04-162">The requested feature isn’t implemented.</span></span>                                                                                               |
+| <span data-ttu-id="b3f04-163">503</span><span class="sxs-lookup"><span data-stu-id="b3f04-163">503</span></span>         | <span data-ttu-id="b3f04-164">服务不可用</span><span class="sxs-lookup"><span data-stu-id="b3f04-164">Service Unavailable</span></span>             | <span data-ttu-id="b3f04-p104">服务暂时无法维护或过载。你可以在延迟后重复该请求，其长度可以在 Retry-After 标头中指定。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p104">The service is temporarily unavailable for maintenance or is overloaded. You may repeat the request after a delay, the length of which may be specified in a Retry-After header.</span></span>|
+| <span data-ttu-id="b3f04-167">504</span><span class="sxs-lookup"><span data-stu-id="b3f04-167">504</span></span>         | <span data-ttu-id="b3f04-168">网关超时</span><span class="sxs-lookup"><span data-stu-id="b3f04-168">Gateway Timeout</span></span>                 | <span data-ttu-id="b3f04-p105">服务器在充当代理时，没有收到它在尝试完成请求时需要访问的来自上游服务器的及时响应。可能会与 503 错误同时出现。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p105">The server, while acting as a proxy, did not receive a timely response from the upstream server it needed to access in attempting to complete the request. May occur together with 503.</span></span> |
+| <span data-ttu-id="b3f04-171">507</span><span class="sxs-lookup"><span data-stu-id="b3f04-171">507</span></span>         | <span data-ttu-id="b3f04-172">存储不足 (Insufficient Storage)</span><span class="sxs-lookup"><span data-stu-id="b3f04-172">Insufficient Storage</span></span>            | <span data-ttu-id="b3f04-173">已达到最大存储配额。</span><span class="sxs-lookup"><span data-stu-id="b3f04-173">The maximum storage quota has been reached.</span></span>                                                                                            |
+| <span data-ttu-id="b3f04-174">509</span><span class="sxs-lookup"><span data-stu-id="b3f04-174">509</span></span>         | <span data-ttu-id="b3f04-175">超出带宽限制</span><span class="sxs-lookup"><span data-stu-id="b3f04-175">Bandwidth Limit Exceeded</span></span>        | <span data-ttu-id="b3f04-p106">您的应用因超出最大带宽上限而被限制。应用可以在等待一段时间之后再重试该请求。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p106">Your app has been throttled for exceeding the maximum bandwidth cap. Your app can retry the request again after more time has elapsed.</span></span> |
 
-错误响应是单个 JSON 对象，包含名为“**error**”的单个属性。此对象包括错误的所有详细信息。除了 HTTP 状态代码外，还可以使用此处返回的信息，或者使用此信息替代 HTTP 状态代码。以下是完整的 JSON 错误正文示例。
+<span data-ttu-id="b3f04-178">错误响应是单个 JSON 对象，包含名为“**错误**”的单个属性。</span><span class="sxs-lookup"><span data-stu-id="b3f04-178">The error response is a single JSON object that contains a single property named **error**.</span></span> <span data-ttu-id="b3f04-179">此对象包括错误的所有详细信息。</span><span class="sxs-lookup"><span data-stu-id="b3f04-179">This object includes all the details of the error.</span></span> <span data-ttu-id="b3f04-180">除了 HTTP 状态代码外，还可以使用此处返回的信息，或者使用此信息替代 HTTP 状态代码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-180">You can use the information returned here instead of or in addition to the HTTP status code.</span></span> <span data-ttu-id="b3f04-181">以下是完整的 JSON 错误正文示例。</span><span class="sxs-lookup"><span data-stu-id="b3f04-181">The following is an example of a full JSON error body.</span></span>
 
 <!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
 ```json
@@ -56,15 +56,15 @@
 
 <!--<a name="msg_error_resource_type"> </a> -->
 
-## <a name="error-resource-type"></a>错误的资源类型
+## <a name="error-resource-type"></a><span data-ttu-id="b3f04-182">错误的资源类型</span><span class="sxs-lookup"><span data-stu-id="b3f04-182">Error resource type</span></span>
 
-只要处理请求的过程中出现错误，就会返回错误资源。
+<span data-ttu-id="b3f04-183">只要处理请求的过程中出现错误，就会返回错误资源。</span><span class="sxs-lookup"><span data-stu-id="b3f04-183">The error resource is returned whenever an error occurs in the processing of a request.</span></span>
 
-错误响应遵循错误响应 [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) 规范中的定义。
+<span data-ttu-id="b3f04-184">错误响应遵循错误响应 [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) 规范中的定义。</span><span class="sxs-lookup"><span data-stu-id="b3f04-184">Error responses follow the definition in the [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.</span></span>
 
-### <a name="json-representation"></a>JSON 表示形式
+### <a name="json-representation"></a><span data-ttu-id="b3f04-185">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b3f04-185">JSON representation</span></span>
 
-错误资源包括以下资源：
+<span data-ttu-id="b3f04-186">错误资源包括以下资源：</span><span class="sxs-lookup"><span data-stu-id="b3f04-186">The error resource is composed of these resources:</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
 ```json
@@ -73,9 +73,9 @@
 }
 ```
 
-#### <a name="odataerror-resource-type"></a>odata.error 资源类型
+#### <a name="odataerror-resource-type"></a><span data-ttu-id="b3f04-187">odata.error 资源类型</span><span class="sxs-lookup"><span data-stu-id="b3f04-187">odata.error resource type</span></span>
 
-错误响应内是错误资源，其中包括以下属性：
+<span data-ttu-id="b3f04-188">错误响应内是错误资源，其中包括以下属性：</span><span class="sxs-lookup"><span data-stu-id="b3f04-188">Inside the error response is an error resource that includes the following properties:</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "odata.error", "optionalProperties": [ "target", "details", "innererror"] } -->
 ```json
@@ -86,11 +86,11 @@
 }
 ```
 
-| 属性名称  | 值                  | 说明\                                                                                               |
+| <span data-ttu-id="b3f04-189">属性名称</span><span class="sxs-lookup"><span data-stu-id="b3f04-189">Property name</span></span>  | <span data-ttu-id="b3f04-190">值</span><span class="sxs-lookup"><span data-stu-id="b3f04-190">Value</span></span>                  | <span data-ttu-id="b3f04-191">说明\\</span><span class="sxs-lookup"><span data-stu-id="b3f04-191">Description\\</span></span>                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | 发生的错误的错误代码字符串                                                            |
-| **message**    | string                 | 关于发生的错误的开发人员就绪消息。这不应直接显示给用户。 |
-| **innererror** | error object           | 可选。可能比顶级错误更具体的其他错误对象。                     |
+| <span data-ttu-id="b3f04-192">**code**</span><span class="sxs-lookup"><span data-stu-id="b3f04-192">**code**</span></span>       | <span data-ttu-id="b3f04-193">string</span><span class="sxs-lookup"><span data-stu-id="b3f04-193">string</span></span>                 | <span data-ttu-id="b3f04-194">发生的错误的错误代码字符串</span><span class="sxs-lookup"><span data-stu-id="b3f04-194">An error code string for the error that occured</span></span>                                                            |
+| <span data-ttu-id="b3f04-195">**message**</span><span class="sxs-lookup"><span data-stu-id="b3f04-195">**message**</span></span>    | <span data-ttu-id="b3f04-196">string</span><span class="sxs-lookup"><span data-stu-id="b3f04-196">string</span></span>                 | <span data-ttu-id="b3f04-p108">关于发生的错误的开发人员就绪消息。这不应直接显示给用户。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p108">A developer ready message about the error that occured. This should not be displayed to the user directly.</span></span> |
+| <span data-ttu-id="b3f04-199">**innererror**</span><span class="sxs-lookup"><span data-stu-id="b3f04-199">**innererror**</span></span> | <span data-ttu-id="b3f04-200">error object</span><span class="sxs-lookup"><span data-stu-id="b3f04-200">error object</span></span>           | <span data-ttu-id="b3f04-p109">可选。可能比顶级错误更具体的其他错误对象。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p109">Optional. Additional error objects that may be more specific than the top level error.</span></span>                     |
 <!-- {
   "type": "#page.annotation",
   "description": "Understand the error format for the API and error codes.",
@@ -101,31 +101,31 @@
 
 <!--<a name="msg_code_property"> </a> -->
 
-#### <a name="code-property"></a>代码属性
+#### <a name="code-property"></a><span data-ttu-id="b3f04-203">Code 属性</span><span class="sxs-lookup"><span data-stu-id="b3f04-203">Code property</span></span>
 
-`code` 属性包含下列可能值之一。您的应用应做好准备处理任意这些错误。
+<span data-ttu-id="b3f04-204">`code` 属性包含下列可能值之一。</span><span class="sxs-lookup"><span data-stu-id="b3f04-204">The `code` property contains one of the following possible values. Your apps should be prepared to handle any one of these errors.</span></span> <span data-ttu-id="b3f04-205">您的应用应做好准备处理任意这些错误。</span><span class="sxs-lookup"><span data-stu-id="b3f04-205">The  property contains one of the following possible values. Your apps should be prepared to handle any one of these errors.</span></span>
 
-| 代码                      | 说明
+| <span data-ttu-id="b3f04-206">代码</span><span class="sxs-lookup"><span data-stu-id="b3f04-206">Code</span></span>                      | <span data-ttu-id="b3f04-207">说明</span><span class="sxs-lookup"><span data-stu-id="b3f04-207">Description</span></span>
 |:--------------------------|:--------------
-| **accessDenied**          | 调用方没有执行该操作的权限。 
-| **activityLimitReached**  | 应用或用户已被限制。
-| **generalException**      | 发生未指定错误。
-| **invalidRange**          | 指定的字节范围无效或不可用。
-| **invalidRequest**        | 该请求格式有误或不正确。
-| **itemNotFound**          | 找不到资源。
-| **malwareDetected**       | 所请求的资源中检测到恶意软件。
-| **nameAlreadyExists**     | 指定的项目名称已存在。
-| **notAllowed**            | 系统不允许执行此操作。
-| **notSupported**          | 系统不支持该请求。
-| **resourceModified**      | 正在更新的资源自上次调用方读取时已进行了更改，通常是 eTag 不匹配。
-| **resyncRequired**        | 增量令牌将不再有效，并且应用必须重置同步状态。
-| **serviceNotAvailable**   | 服务不可用。过段时间后再次尝试请求。可能会有 Retry-After 标头。 
-| **quotaLimitReached**     | 用户已达到其配额限制。
-| **unauthenticated**       | 调用方未进行身份验证。
+| <span data-ttu-id="b3f04-208">**accessDenied**</span><span class="sxs-lookup"><span data-stu-id="b3f04-208">**accessDenied**</span></span>          | <span data-ttu-id="b3f04-209">调用方没有执行该操作的权限。</span><span class="sxs-lookup"><span data-stu-id="b3f04-209">The caller doesn't have permission to perform the action.</span></span> 
+| <span data-ttu-id="b3f04-210">**activityLimitReached**</span><span class="sxs-lookup"><span data-stu-id="b3f04-210">**activityLimitReached**</span></span>  | <span data-ttu-id="b3f04-211">应用或用户已被限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-211">The app or user has been throttled.</span></span>
+| <span data-ttu-id="b3f04-212">**generalException**</span><span class="sxs-lookup"><span data-stu-id="b3f04-212">**generalException**</span></span>      | <span data-ttu-id="b3f04-213">发生未指定错误。</span><span class="sxs-lookup"><span data-stu-id="b3f04-213">An unspecified error has occurred.</span></span>
+| <span data-ttu-id="b3f04-214">**invalidRange**</span><span class="sxs-lookup"><span data-stu-id="b3f04-214">**invalidRange**</span></span>          | <span data-ttu-id="b3f04-215">指定的字节范围无效或不可用。</span><span class="sxs-lookup"><span data-stu-id="b3f04-215">The specified byte range is invalid or unavailable.</span></span>
+| <span data-ttu-id="b3f04-216">**invalidRequest**</span><span class="sxs-lookup"><span data-stu-id="b3f04-216">**invalidRequest**</span></span>        | <span data-ttu-id="b3f04-217">该请求格式有误或不正确。</span><span class="sxs-lookup"><span data-stu-id="b3f04-217">The request is malformed or incorrect.</span></span>
+| <span data-ttu-id="b3f04-218">**itemNotFound**</span><span class="sxs-lookup"><span data-stu-id="b3f04-218">**itemNotFound**</span></span>          | <span data-ttu-id="b3f04-219">找不到资源。</span><span class="sxs-lookup"><span data-stu-id="b3f04-219">The resource could not be found.</span></span>
+| <span data-ttu-id="b3f04-220">**malwareDetected**</span><span class="sxs-lookup"><span data-stu-id="b3f04-220">**malwareDetected**</span></span>       | <span data-ttu-id="b3f04-221">所请求的资源中检测到恶意软件。</span><span class="sxs-lookup"><span data-stu-id="b3f04-221">Malware was detected in the requested resource.</span></span>
+| <span data-ttu-id="b3f04-222">**nameAlreadyExists**</span><span class="sxs-lookup"><span data-stu-id="b3f04-222">**nameAlreadyExists**</span></span>     | <span data-ttu-id="b3f04-223">指定的项目名称已存在。</span><span class="sxs-lookup"><span data-stu-id="b3f04-223">The specified item name already exists.</span></span>
+| <span data-ttu-id="b3f04-224">**notAllowed**</span><span class="sxs-lookup"><span data-stu-id="b3f04-224">**notAllowed**</span></span>            | <span data-ttu-id="b3f04-225">系统不允许执行此操作。</span><span class="sxs-lookup"><span data-stu-id="b3f04-225">The action is not allowed by the system.</span></span>
+| <span data-ttu-id="b3f04-226">**notSupported**</span><span class="sxs-lookup"><span data-stu-id="b3f04-226">**notSupported**</span></span>          | <span data-ttu-id="b3f04-227">系统不支持该请求。</span><span class="sxs-lookup"><span data-stu-id="b3f04-227">The request is not supported by the system.</span></span>
+| <span data-ttu-id="b3f04-228">**resourceModified**</span><span class="sxs-lookup"><span data-stu-id="b3f04-228">**resourceModified**</span></span>      | <span data-ttu-id="b3f04-229">正在更新的资源自上次调用方读取时已进行了更改，通常是 eTag 不匹配。</span><span class="sxs-lookup"><span data-stu-id="b3f04-229">The resource being updated has changed since the caller last read it, usually an eTag mismatch.</span></span>
+| <span data-ttu-id="b3f04-230">**resyncRequired**</span><span class="sxs-lookup"><span data-stu-id="b3f04-230">**resyncRequired**</span></span>        | <span data-ttu-id="b3f04-231">增量令牌将不再有效，并且应用必须重置同步状态。</span><span class="sxs-lookup"><span data-stu-id="b3f04-231">The delta token is no longer valid, and the app must reset the sync state.</span></span>
+| <span data-ttu-id="b3f04-232">**serviceNotAvailable**</span><span class="sxs-lookup"><span data-stu-id="b3f04-232">**serviceNotAvailable**</span></span>   | <span data-ttu-id="b3f04-p111">服务不可用。过段时间后再次尝试请求。可能会有 Retry-After 标头。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p111">The service is not available. Try the request again after a delay. There may be a Retry-After header.</span></span> 
+| <span data-ttu-id="b3f04-236">**quotaLimitReached**</span><span class="sxs-lookup"><span data-stu-id="b3f04-236">**quotaLimitReached**</span></span>     | <span data-ttu-id="b3f04-237">用户已达到其配额限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-237">The user has reached their quota limit.</span></span>
+| <span data-ttu-id="b3f04-238">**unauthenticated**</span><span class="sxs-lookup"><span data-stu-id="b3f04-238">**unauthenticated**</span></span>       | <span data-ttu-id="b3f04-239">调用方未进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="b3f04-239">The caller is not authenticated.</span></span>
 
-`innererror` 对象可能以递归方式包含更多 `innererror` 对象，其中具有其他更多具体的错误代码。处理错误时，应用应遍历所有可用错误代码并使用它们认为最详细的错误代码。在本页底部列出了一些更详细的代码。
+<span data-ttu-id="b3f04-240">`innererror` 对象可能以递归方式包含更多 `innererror` 对象，其中具有其他更多具体的错误代码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-240">The `innererror` object might recursively contain more `innererror` objects with additional, more specific error codes.</span></span> <span data-ttu-id="b3f04-241">处理错误时，应用应遍历所有可用错误代码并使用它们认为最详细的错误代码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-241">When handling an error, apps should loop through all the error codes available and use the most detailed one that they understand.</span></span> <span data-ttu-id="b3f04-242">在本页底部列出了一些更详细的代码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-242">Some of the more detailed codes are listed at the bottom of this page.</span></span>
 
-若要验证某个错误对象是否是你想要的错误，你必须遍历 `innererror` 对象，查找你想要的错误代码。例如：
+<span data-ttu-id="b3f04-p113">若要验证某个错误对象是否是你想要的错误，你必须遍历 `innererror` 对象，查找你想要的错误代码。例如：</span><span class="sxs-lookup"><span data-stu-id="b3f04-p113">To verify that an error object is an error you are expecting, you must loop over the `innererror` objects, looking for the error codes you expect. For example:</span></span>
 
 ```csharp
 public bool IsError(string expectedErrorCode)
@@ -141,58 +141,58 @@ public bool IsError(string expectedErrorCode)
 }
 ```
 
-有关介绍如何正确处理错误的示例，请参阅 [错误代码处理](https://gist.github.com/rgregg/a1866be15e685983b441)。
+<span data-ttu-id="b3f04-245">有关介绍如何正确处理错误的示例，请参阅 [错误代码处理](https://gist.github.com/rgregg/a1866be15e685983b441)。</span><span class="sxs-lookup"><span data-stu-id="b3f04-245">For an example that shows how to properly handle errors, see [Error Code Handling](https://gist.github.com/rgregg/a1866be15e685983b441).</span></span>
 
-根处的 `message` 属性包含供开发人员阅读的错误消息。错误消息未本地化，并且不应直接向用户显示。处理错误时，代码不应关闭 `message` 值，因为它们随时会更改，并且它们通常包含特定于失败请求的动态信息。只应针对 `code` 属性中返回的错误代码进行编码。
+<span data-ttu-id="b3f04-p114">根处的 `message` 属性包含供开发人员阅读的错误消息。错误消息未本地化，并且不应直接向用户显示。处理错误时，代码不应关闭 `message` 值，因为它们随时会更改，并且它们通常包含特定于失败请求的动态信息。只应针对 `code` 属性中返回的错误代码进行编码。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p114">The `message` property at the root contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they can change at any time, and they often contain dynamic information specific to the failed request. You should only code against error codes returned in `code` properties.</span></span>
 
-#### <a name="detailed-error-codes"></a>详细的错误代码
-以下是你的应用可能会在嵌套的 `innererror` 对象中遇到的一些其他错误。应用不需要处理这些错误，但如果它们选择，也可以处理。服务可能会随时添加新的错误代码或者停止返回的旧代码，因此所有应用都能够处理 [基本错误代码](#code-property) 非常重要。
+#### <a name="detailed-error-codes"></a><span data-ttu-id="b3f04-250">详细的错误代码</span><span class="sxs-lookup"><span data-stu-id="b3f04-250">Detailed error codes</span></span>
+<span data-ttu-id="b3f04-251">以下是你的应用可能会在嵌套的 `innererror` 对象中遇到的一些其他错误。</span><span class="sxs-lookup"><span data-stu-id="b3f04-251">The following are some additional errors that your app might encounter within the nested `innererror` objects.</span></span> <span data-ttu-id="b3f04-252">应用不需要处理这些错误，但如果它们选择，也可以处理。</span><span class="sxs-lookup"><span data-stu-id="b3f04-252">Apps are not required to handle these, but can if they choose.</span></span> <span data-ttu-id="b3f04-253">服务可能会随时添加新的错误代码或者停止返回的旧代码，因此所有应用都能够处理 [基本错误代码](#code-property) 非常重要。</span><span class="sxs-lookup"><span data-stu-id="b3f04-253">The service might add new error codes or stop returning old ones at any time, so it is important that all apps be able to handle the [basic error codes](#code-property).</span></span>
 
-| 代码                               | 说明
+| <span data-ttu-id="b3f04-254">代码</span><span class="sxs-lookup"><span data-stu-id="b3f04-254">Code</span></span>                               | <span data-ttu-id="b3f04-255">说明</span><span class="sxs-lookup"><span data-stu-id="b3f04-255">Description</span></span>
 |:-----------------------------------|:----------------------------------------------------------
-| **accessRestricted**               | 访问仅限于该项目的所有者。
-| **cannotSnapshotTree**             | 未能获取一致的增量快照。请稍后重试。
-| **childItemCountExceeded**         | 已达到最大子项目数限制。
-| **entityTagDoesNotMatch**          | ETag 与当前项目的值不匹配。
-| **fragmentLengthMismatch**         | 为此片段声明的总大小与上载会话的大小不同。
-| **fragmentOutOfOrder**             | 已上载的片段无序。
-| **fragmentOverlap**                | 上载的片段与现有数据重叠。
-| **invalidAcceptType**              | 接受类型无效。
-| **invalidParameterFormat**         | 参数格式无效。
-| **invalidPath**                    | 名称包含无效字符。
-| **invalidQueryOption**             | 查询选项无效。
-| **invalidStartIndex**              | 开始索引无效。
-| **lockMismatch**                   | 锁定令牌与现有锁定不匹配。
-| **lockNotFoundOrAlreadyExpired**   | 该项目上目前没有未过期的锁定。
-| **lockOwnerMismatch**              | 锁定所有者 ID 与提供的 ID 不匹配。
-| **malformedEntityTag**             | ETag 标头格式不正确。ETags 必须是带引号的字符串。
-| **maxDocumentCountExceeded**       | 已达到最大文档数量限制。
-| **maxFileSizeExceeded**            | 已超出最大文件大小。
-| **maxFolderCountExceeded**         | 已达到最大文件夹数量限制。
-| **maxFragmentLengthExceeded**      | 已超出最大文件大小。
-| **maxItemCountExceeded**           | 已达到最大项目数量限制。
-| **maxQueryLengthExceeded**         | 已超出最大查询长度。
-| **maxStreamSizeExceeded**          | 已达到最大流大小。
-| **parameterIsTooLong**             | 参数超出最大长度。
-| **parameterIsTooSmall**            | 参数小于最小值。
-| **pathIsTooLong**                  | 路径超出最大长度。
-| **pathTooDeep**                    | 已达到文件夹层次结构深度限制。
-| **propertyNotUpdateable**          | 属性无法更新。
-| **resyncApplyDifferences**         | 需要重新同步。如果您确定上次同步时服务与您的本地更改保持同步，则请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不清楚的任意本地更改。
-| **resyncRequired**                 | 需要重新同步。
-| **resyncUploadDifferences**        | 需要重新同步。上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，就请保留两份）。
-| **serviceNotAvailable**            | 服务器无法处理当前的请求。
-| **serviceReadOnly**                | 资源暂时是只读的。
-| **throttledRequest**               | 请求过多。
-| **tooManyResultsRequested**        | 请求的结果过多。
-| **tooManyTermsInQuery**            | 查询中的术语过多。
-| **totalAffectedItemCountExceeded** | 因为受影响的项目数量超出阈值，所以不允许该操作。
-| **truncationNotAllowed**           | 不允许数据截断。
-| **uploadSessionFailed**            | 上载会话失败。
-| **uploadSessionIncomplete**        | 上载会话未完成。
-| **uploadSessionNotFound**          | 上载会话未找到。
-| **virusSuspicious**                | 此文档可疑，可能存在病毒。
-| **zeroOrFewerResultsRequested**    | 请求的结果为零或更少。
+| <span data-ttu-id="b3f04-256">**accessRestricted**</span><span class="sxs-lookup"><span data-stu-id="b3f04-256">**accessRestricted**</span></span>               | <span data-ttu-id="b3f04-257">访问仅限于该项目的所有者。</span><span class="sxs-lookup"><span data-stu-id="b3f04-257">Access restricted to the item's owner.</span></span>
+| <span data-ttu-id="b3f04-258">**cannotSnapshotTree**</span><span class="sxs-lookup"><span data-stu-id="b3f04-258">**cannotSnapshotTree**</span></span>             | <span data-ttu-id="b3f04-p116">未能获取一致的增量快照。请稍后重试。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p116">Failed to get a consistent delta snapshot. Try again later.</span></span>
+| <span data-ttu-id="b3f04-261">**childItemCountExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-261">**childItemCountExceeded**</span></span>         | <span data-ttu-id="b3f04-262">已达到最大子项目数限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-262">Max limit on the number of child items was reached.</span></span>
+| <span data-ttu-id="b3f04-263">**entityTagDoesNotMatch**</span><span class="sxs-lookup"><span data-stu-id="b3f04-263">**entityTagDoesNotMatch**</span></span>          | <span data-ttu-id="b3f04-264">ETag 与当前项目的值不匹配。</span><span class="sxs-lookup"><span data-stu-id="b3f04-264">ETag does not match the current item's value.</span></span>
+| <span data-ttu-id="b3f04-265">**fragmentLengthMismatch**</span><span class="sxs-lookup"><span data-stu-id="b3f04-265">**fragmentLengthMismatch**</span></span>         | <span data-ttu-id="b3f04-266">为此片段声明的总大小与上载会话的大小不同。</span><span class="sxs-lookup"><span data-stu-id="b3f04-266">Declared total size for this fragment is different from that of the upload session.</span></span>
+| <span data-ttu-id="b3f04-267">**fragmentOutOfOrder**</span><span class="sxs-lookup"><span data-stu-id="b3f04-267">**fragmentOutOfOrder**</span></span>             | <span data-ttu-id="b3f04-268">已上载的片段无序。</span><span class="sxs-lookup"><span data-stu-id="b3f04-268">Uploaded fragment is out of order.</span></span>
+| <span data-ttu-id="b3f04-269">**fragmentOverlap**</span><span class="sxs-lookup"><span data-stu-id="b3f04-269">**fragmentOverlap**</span></span>                | <span data-ttu-id="b3f04-270">上载的片段与现有数据重叠。</span><span class="sxs-lookup"><span data-stu-id="b3f04-270">Uploaded fragment overlaps with existing data.</span></span>
+| <span data-ttu-id="b3f04-271">**invalidAcceptType**</span><span class="sxs-lookup"><span data-stu-id="b3f04-271">**invalidAcceptType**</span></span>              | <span data-ttu-id="b3f04-272">接受类型无效。</span><span class="sxs-lookup"><span data-stu-id="b3f04-272">Invalid accept type.</span></span>
+| <span data-ttu-id="b3f04-273">**invalidParameterFormat**</span><span class="sxs-lookup"><span data-stu-id="b3f04-273">**invalidParameterFormat**</span></span>         | <span data-ttu-id="b3f04-274">参数格式无效。</span><span class="sxs-lookup"><span data-stu-id="b3f04-274">Invalid parameter format.</span></span>
+| <span data-ttu-id="b3f04-275">**invalidPath**</span><span class="sxs-lookup"><span data-stu-id="b3f04-275">**invalidPath**</span></span>                    | <span data-ttu-id="b3f04-276">名称包含无效字符。</span><span class="sxs-lookup"><span data-stu-id="b3f04-276">Name contains invalid characters.</span></span>
+| <span data-ttu-id="b3f04-277">**invalidQueryOption**</span><span class="sxs-lookup"><span data-stu-id="b3f04-277">**invalidQueryOption**</span></span>             | <span data-ttu-id="b3f04-278">查询选项无效。</span><span class="sxs-lookup"><span data-stu-id="b3f04-278">Invalid query option.</span></span>
+| <span data-ttu-id="b3f04-279">**invalidStartIndex**</span><span class="sxs-lookup"><span data-stu-id="b3f04-279">**invalidStartIndex**</span></span>              | <span data-ttu-id="b3f04-280">开始索引无效。</span><span class="sxs-lookup"><span data-stu-id="b3f04-280">Invalid start index.</span></span>
+| <span data-ttu-id="b3f04-281">**lockMismatch**</span><span class="sxs-lookup"><span data-stu-id="b3f04-281">**lockMismatch**</span></span>                   | <span data-ttu-id="b3f04-282">锁定令牌与现有锁定不匹配。</span><span class="sxs-lookup"><span data-stu-id="b3f04-282">Lock token does not match existing lock.</span></span>
+| <span data-ttu-id="b3f04-283">**lockNotFoundOrAlreadyExpired**</span><span class="sxs-lookup"><span data-stu-id="b3f04-283">**lockNotFoundOrAlreadyExpired**</span></span>   | <span data-ttu-id="b3f04-284">该项目上目前没有未过期的锁定。</span><span class="sxs-lookup"><span data-stu-id="b3f04-284">There is currently no unexpired lock on the item.</span></span>
+| <span data-ttu-id="b3f04-285">**lockOwnerMismatch**</span><span class="sxs-lookup"><span data-stu-id="b3f04-285">**lockOwnerMismatch**</span></span>              | <span data-ttu-id="b3f04-286">锁定所有者 ID 与提供的 ID 不匹配。</span><span class="sxs-lookup"><span data-stu-id="b3f04-286">Lock Owner ID does not match provided ID.</span></span>
+| <span data-ttu-id="b3f04-287">**malformedEntityTag**</span><span class="sxs-lookup"><span data-stu-id="b3f04-287">**malformedEntityTag**</span></span>             | <span data-ttu-id="b3f04-p117">ETag 标头格式不正确。ETags 必须是带引号的字符串。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p117">ETag header is malformed. ETags must be quoted strings.</span></span>
+| <span data-ttu-id="b3f04-290">**maxDocumentCountExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-290">**maxDocumentCountExceeded**</span></span>       | <span data-ttu-id="b3f04-291">已达到最大文档数量限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-291">Max limit on number of Documents is reached.</span></span>
+| <span data-ttu-id="b3f04-292">**maxFileSizeExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-292">**maxFileSizeExceeded**</span></span>            | <span data-ttu-id="b3f04-293">已超出最大文件大小。</span><span class="sxs-lookup"><span data-stu-id="b3f04-293">Max file size exceeded.</span></span>
+| <span data-ttu-id="b3f04-294">**maxFolderCountExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-294">**maxFolderCountExceeded**</span></span>         | <span data-ttu-id="b3f04-295">已达到最大文件夹数量限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-295">Max limit on number of Folders is reached.</span></span>
+| <span data-ttu-id="b3f04-296">**maxFragmentLengthExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-296">**maxFragmentLengthExceeded**</span></span>      | <span data-ttu-id="b3f04-297">已超出最大文件大小。</span><span class="sxs-lookup"><span data-stu-id="b3f04-297">Max file size exceeded.</span></span>
+| <span data-ttu-id="b3f04-298">**maxItemCountExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-298">**maxItemCountExceeded**</span></span>           | <span data-ttu-id="b3f04-299">已达到最大项目数量限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-299">Max limit on number of Items is reached.</span></span>
+| <span data-ttu-id="b3f04-300">**maxQueryLengthExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-300">**maxQueryLengthExceeded**</span></span>         | <span data-ttu-id="b3f04-301">已超出最大查询长度。</span><span class="sxs-lookup"><span data-stu-id="b3f04-301">Max query length exceeded.</span></span>
+| <span data-ttu-id="b3f04-302">**maxStreamSizeExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-302">**maxStreamSizeExceeded**</span></span>          | <span data-ttu-id="b3f04-303">已达到最大流大小。</span><span class="sxs-lookup"><span data-stu-id="b3f04-303">Maximum stream size exceeded.</span></span>
+| <span data-ttu-id="b3f04-304">**parameterIsTooLong**</span><span class="sxs-lookup"><span data-stu-id="b3f04-304">**parameterIsTooLong**</span></span>             | <span data-ttu-id="b3f04-305">参数超出最大长度。</span><span class="sxs-lookup"><span data-stu-id="b3f04-305">Parameter Exceeds Maximum Length.</span></span>
+| <span data-ttu-id="b3f04-306">**parameterIsTooSmall**</span><span class="sxs-lookup"><span data-stu-id="b3f04-306">**parameterIsTooSmall**</span></span>            | <span data-ttu-id="b3f04-307">参数小于最小值。</span><span class="sxs-lookup"><span data-stu-id="b3f04-307">Parameter is smaller then minimum value.</span></span>
+| <span data-ttu-id="b3f04-308">**pathIsTooLong**</span><span class="sxs-lookup"><span data-stu-id="b3f04-308">**pathIsTooLong**</span></span>                  | <span data-ttu-id="b3f04-309">路径超出最大长度。</span><span class="sxs-lookup"><span data-stu-id="b3f04-309">Path exceeds maximum length.</span></span>
+| <span data-ttu-id="b3f04-310">**pathTooDeep**</span><span class="sxs-lookup"><span data-stu-id="b3f04-310">**pathTooDeep**</span></span>                    | <span data-ttu-id="b3f04-311">已达到文件夹层次结构深度限制。</span><span class="sxs-lookup"><span data-stu-id="b3f04-311">Folder hierarchy depth limit reached.</span></span>
+| <span data-ttu-id="b3f04-312">**propertyNotUpdateable**</span><span class="sxs-lookup"><span data-stu-id="b3f04-312">**propertyNotUpdateable**</span></span>          | <span data-ttu-id="b3f04-313">属性无法更新。</span><span class="sxs-lookup"><span data-stu-id="b3f04-313">Property not updateable.</span></span>
+| <span data-ttu-id="b3f04-314">**resyncApplyDifferences**</span><span class="sxs-lookup"><span data-stu-id="b3f04-314">**resyncApplyDifferences**</span></span>         | <span data-ttu-id="b3f04-p118">需要重新同步。如果您确定上次同步时服务与您的本地更改保持同步，则请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不清楚的任意本地更改。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p118">Resync required. Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.</span></span>
+| <span data-ttu-id="b3f04-318">**resyncRequired**</span><span class="sxs-lookup"><span data-stu-id="b3f04-318">**resyncRequired**</span></span>                 | <span data-ttu-id="b3f04-319">需要重新同步。</span><span class="sxs-lookup"><span data-stu-id="b3f04-319">Resync is required.</span></span>
+| <span data-ttu-id="b3f04-320">**resyncUploadDifferences**</span><span class="sxs-lookup"><span data-stu-id="b3f04-320">**resyncUploadDifferences**</span></span>        | <span data-ttu-id="b3f04-p119">需要重新同步。上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，就请保留两份）。</span><span class="sxs-lookup"><span data-stu-id="b3f04-p119">Resync required. Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).</span></span>
+| <span data-ttu-id="b3f04-323">**serviceNotAvailable**</span><span class="sxs-lookup"><span data-stu-id="b3f04-323">**serviceNotAvailable**</span></span>            | <span data-ttu-id="b3f04-324">服务器无法处理当前的请求。</span><span class="sxs-lookup"><span data-stu-id="b3f04-324">The server is unable to process the current request.</span></span>
+| <span data-ttu-id="b3f04-325">**serviceReadOnly**</span><span class="sxs-lookup"><span data-stu-id="b3f04-325">**serviceReadOnly**</span></span>                | <span data-ttu-id="b3f04-326">资源暂时是只读的。</span><span class="sxs-lookup"><span data-stu-id="b3f04-326">Resource is temporarily read-only.</span></span>
+| <span data-ttu-id="b3f04-327">**throttledRequest**</span><span class="sxs-lookup"><span data-stu-id="b3f04-327">**throttledRequest**</span></span>               | <span data-ttu-id="b3f04-328">请求过多。</span><span class="sxs-lookup"><span data-stu-id="b3f04-328">Too many requests.</span></span>
+| <span data-ttu-id="b3f04-329">**tooManyResultsRequested**</span><span class="sxs-lookup"><span data-stu-id="b3f04-329">**tooManyResultsRequested**</span></span>        | <span data-ttu-id="b3f04-330">请求的结果过多。</span><span class="sxs-lookup"><span data-stu-id="b3f04-330">Too many results requested.</span></span>
+| <span data-ttu-id="b3f04-331">**tooManyTermsInQuery**</span><span class="sxs-lookup"><span data-stu-id="b3f04-331">**tooManyTermsInQuery**</span></span>            | <span data-ttu-id="b3f04-332">查询中的术语过多。</span><span class="sxs-lookup"><span data-stu-id="b3f04-332">Too many terms in the query.</span></span>
+| <span data-ttu-id="b3f04-333">**totalAffectedItemCountExceeded**</span><span class="sxs-lookup"><span data-stu-id="b3f04-333">**totalAffectedItemCountExceeded**</span></span> | <span data-ttu-id="b3f04-334">因为受影响的项目数量超出阈值，所以不允许该操作。</span><span class="sxs-lookup"><span data-stu-id="b3f04-334">Operation is not allowed because the number of affected items exceeds threshold.</span></span>
+| <span data-ttu-id="b3f04-335">**truncationNotAllowed**</span><span class="sxs-lookup"><span data-stu-id="b3f04-335">**truncationNotAllowed**</span></span>           | <span data-ttu-id="b3f04-336">不允许数据截断。</span><span class="sxs-lookup"><span data-stu-id="b3f04-336">Data truncation is not allowed.</span></span>
+| <span data-ttu-id="b3f04-337">**uploadSessionFailed**</span><span class="sxs-lookup"><span data-stu-id="b3f04-337">**uploadSessionFailed**</span></span>            | <span data-ttu-id="b3f04-338">上载会话失败。</span><span class="sxs-lookup"><span data-stu-id="b3f04-338">Upload session failed.</span></span>
+| <span data-ttu-id="b3f04-339">**uploadSessionIncomplete**</span><span class="sxs-lookup"><span data-stu-id="b3f04-339">**uploadSessionIncomplete**</span></span>        | <span data-ttu-id="b3f04-340">上载会话未完成。</span><span class="sxs-lookup"><span data-stu-id="b3f04-340">Upload session incomplete.</span></span>
+| <span data-ttu-id="b3f04-341">**uploadSessionNotFound**</span><span class="sxs-lookup"><span data-stu-id="b3f04-341">**uploadSessionNotFound**</span></span>          | <span data-ttu-id="b3f04-342">上载会话未找到。</span><span class="sxs-lookup"><span data-stu-id="b3f04-342">Upload session not found.</span></span>
+| <span data-ttu-id="b3f04-343">**virusSuspicious**</span><span class="sxs-lookup"><span data-stu-id="b3f04-343">**virusSuspicious**</span></span>                | <span data-ttu-id="b3f04-344">此文档可疑，可能存在病毒。</span><span class="sxs-lookup"><span data-stu-id="b3f04-344">This document is suspicious and may have a virus.</span></span>
+| <span data-ttu-id="b3f04-345">**zeroOrFewerResultsRequested**</span><span class="sxs-lookup"><span data-stu-id="b3f04-345">**zeroOrFewerResultsRequested**</span></span>    | <span data-ttu-id="b3f04-346">请求的结果为零或更少。</span><span class="sxs-lookup"><span data-stu-id="b3f04-346">Zero or fewer results requested.</span></span>
 
 <!-- ##Additional Resources##
 

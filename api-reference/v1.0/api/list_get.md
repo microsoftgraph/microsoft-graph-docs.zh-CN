@@ -1,0 +1,139 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: "获取 SharePoint 列表"
+ms.openlocfilehash: a58a85ed752c00722d2381df10cd7bfb51fbcd3c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="edf4e-102">获取列表的元数据</span><span class="sxs-lookup"><span data-stu-id="edf4e-102">Get metadata for a OneDrive item</span></span>
+
+<span data-ttu-id="edf4e-103">返回[列表][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="edf4e-103">Retrieves the metadata for a specified list.</span></span>
+
+[list]: ../resources/list.md
+
+## <a name="permissions"></a><span data-ttu-id="edf4e-105">权限</span><span class="sxs-lookup"><span data-stu-id="edf4e-105">Permissions</span></span>
+
+<span data-ttu-id="edf4e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="edf4e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="edf4e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="edf4e-108">Permission type</span></span>      | <span data-ttu-id="edf4e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="edf4e-109">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="edf4e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="edf4e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="edf4e-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edf4e-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="edf4e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="edf4e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="edf4e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="edf4e-113">Not supported.</span></span>    |
+|<span data-ttu-id="edf4e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="edf4e-114">Application</span></span> | <span data-ttu-id="edf4e-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edf4e-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="edf4e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="edf4e-116">HTTP request</span></span>
+
+```http
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+```
+
+## <a name="request-body"></a><span data-ttu-id="edf4e-117">请求正文</span><span class="sxs-lookup"><span data-stu-id="edf4e-117">Request body</span></span>
+
+<span data-ttu-id="edf4e-118">请勿为此方法提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="edf4e-118">Do not supply a request body with this method.</span></span>
+
+## <a name="example"></a><span data-ttu-id="edf4e-119">示例</span><span class="sxs-lookup"><span data-stu-id="edf4e-119">Example</span></span>
+
+#### <a name="request"></a><span data-ttu-id="edf4e-120">请求</span><span class="sxs-lookup"><span data-stu-id="edf4e-120">Request</span></span>
+
+<!-- { "blockType": "request", "name": "get-list" } -->
+
+```http
+GET /sites/{site-id}/lists/{list-id}
+```
+
+#### <a name="response"></a><span data-ttu-id="edf4e-121">响应</span><span class="sxs-lookup"><span data-stu-id="edf4e-121">Response</span></span>
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "1234-112-112-4",
+  "name": "MicroFeed",
+  "createdDateTime": "2016-08-30T08:32:00Z",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "list": {
+    "hidden": false,
+    "template": "genericList"
+    }
+}
+```
+
+<span data-ttu-id="edf4e-122">借助 `select` 和 `expand` 语句，可以检索单个请求中的列表元数据、列定义和列表项。</span><span class="sxs-lookup"><span data-stu-id="edf4e-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="edf4e-123">请求</span><span class="sxs-lookup"><span data-stu-id="edf4e-123">Request</span></span>
+
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+
+```http
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+```
+
+#### <a name="response"></a><span data-ttu-id="edf4e-124">响应</span><span class="sxs-lookup"><span data-stu-id="edf4e-124">Response</span></span>
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "name": "Inventory",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "columns": [
+    {
+      "name": "Name",
+      "description": "Customer-facing name of the SKU"
+    },
+    {
+      "name": "Color",
+      "description": "Color of the item in stock"
+    },
+    {
+      "name": "Quantity",
+      "description": "Number of items in stock"
+    }
+  ],
+  "items": [
+    {
+      "id": "2",
+      "fields": {
+        "Name": "Gadget",
+        "Color": "Red",
+        "Quantity": 503
+       }
+    },
+    {
+      "id": "4",
+      "fields": {
+        "Name": "Widget",
+        "Color": "Blue",
+        "Quantity": 2357
+       }
+    },
+    {
+      "id": "7",
+      "fields": {
+        "Name": "Gizmo",
+        "Color": "Green",
+        "Quantity": 92
+       }
+    }
+  ]
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "Lists/Get metadata"
+} -->
