@@ -23,7 +23,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
