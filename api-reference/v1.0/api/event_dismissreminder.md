@@ -1,18 +1,20 @@
-# <a name="event-dismissreminder"></a><span data-ttu-id="a8341-101">event: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="a8341-101">event: dismissReminder</span></span>
+# <a name="event-dismissreminder"></a><span data-ttu-id="58ec9-101">event: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="58ec9-101">event: dismissReminder</span></span>
 
-<span data-ttu-id="a8341-102">关闭已触发的提醒。</span><span class="sxs-lookup"><span data-stu-id="a8341-102">Dismiss a reminder that has been triggered.</span></span>
+<span data-ttu-id="58ec9-102">关闭已触发的提醒。</span><span class="sxs-lookup"><span data-stu-id="58ec9-102">Dismiss a reminder that has been triggered.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8341-103">权限</span><span class="sxs-lookup"><span data-stu-id="a8341-103">Permissions</span></span>
-<span data-ttu-id="a8341-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="a8341-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="58ec9-103">权限</span><span class="sxs-lookup"><span data-stu-id="58ec9-103">Permissions</span></span>
+<span data-ttu-id="58ec9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="58ec9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="a8341-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8341-106">Permission type</span></span>      | <span data-ttu-id="a8341-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a8341-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="58ec9-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="58ec9-106">Permission type</span></span>      | <span data-ttu-id="58ec9-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="58ec9-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a8341-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8341-108">Delegated (work or school account)</span></span> | <span data-ttu-id="a8341-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8341-109">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a8341-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8341-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8341-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8341-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a8341-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8341-112">Application</span></span> | <span data-ttu-id="a8341-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8341-113">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="58ec9-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="58ec9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="58ec9-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="58ec9-109">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="58ec9-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="58ec9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58ec9-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="58ec9-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="58ec9-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="58ec9-112">Application</span></span> | <span data-ttu-id="58ec9-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="58ec9-113">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8341-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8341-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58ec9-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="58ec9-114">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
@@ -31,36 +33,46 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/di
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
-## <a name="request-headers"></a><span data-ttu-id="a8341-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8341-115">Request headers</span></span>
-| <span data-ttu-id="a8341-116">名称</span><span class="sxs-lookup"><span data-stu-id="a8341-116">Name</span></span>       | <span data-ttu-id="a8341-117">类型</span><span class="sxs-lookup"><span data-stu-id="a8341-117">Type</span></span> | <span data-ttu-id="a8341-118">说明</span><span class="sxs-lookup"><span data-stu-id="a8341-118">Description</span></span>|
+
+<br/>
+
+## <a name="request-headers"></a><span data-ttu-id="58ec9-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="58ec9-115">Request headers</span></span>
+| <span data-ttu-id="58ec9-116">名称</span><span class="sxs-lookup"><span data-stu-id="58ec9-116">Name</span></span>       | <span data-ttu-id="58ec9-117">类型</span><span class="sxs-lookup"><span data-stu-id="58ec9-117">Type</span></span> | <span data-ttu-id="58ec9-118">说明</span><span class="sxs-lookup"><span data-stu-id="58ec9-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a8341-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8341-119">Authorization</span></span>  | <span data-ttu-id="a8341-120">string</span><span class="sxs-lookup"><span data-stu-id="a8341-120">string</span></span>  | <span data-ttu-id="a8341-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a8341-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="58ec9-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="58ec9-119">Authorization</span></span>  | <span data-ttu-id="58ec9-120">string</span><span class="sxs-lookup"><span data-stu-id="58ec9-120">string</span></span>  | <span data-ttu-id="58ec9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="58ec9-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a8341-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8341-123">Request body</span></span>
+<br/>
 
-## <a name="response"></a><span data-ttu-id="a8341-124">响应</span><span class="sxs-lookup"><span data-stu-id="a8341-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="58ec9-123">响应</span><span class="sxs-lookup"><span data-stu-id="58ec9-123">Response</span></span>
 
-<span data-ttu-id="a8341-p103">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="a8341-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="58ec9-p103">如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="58ec9-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a8341-127">示例</span><span class="sxs-lookup"><span data-stu-id="a8341-127">Example</span></span>
-<span data-ttu-id="a8341-128">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="a8341-128">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a8341-129">请求</span><span class="sxs-lookup"><span data-stu-id="a8341-129">Request</span></span>
-<span data-ttu-id="a8341-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a8341-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="58ec9-126">示例</span><span class="sxs-lookup"><span data-stu-id="58ec9-126">Example</span></span>
+
+<span data-ttu-id="58ec9-127">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="58ec9-127">Here is an example of how to call this API.</span></span>
+
+### <a name="request"></a><span data-ttu-id="58ec9-128">请求</span><span class="sxs-lookup"><span data-stu-id="58ec9-128">Request</span></span>
+<span data-ttu-id="58ec9-129">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="58ec9-129">Here is an example of the request.</span></span>
+
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
-##### <a name="response"></a><span data-ttu-id="a8341-131">响应</span><span class="sxs-lookup"><span data-stu-id="a8341-131">Response</span></span>
-##### <a name="response"></a><span data-ttu-id="a8341-132">响应</span><span class="sxs-lookup"><span data-stu-id="a8341-132">Response</span></span>
-<span data-ttu-id="a8341-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a8341-133">Here is an example of the response.</span></span>
+<br/>
+
+### <a name="response"></a><span data-ttu-id="58ec9-130">响应</span><span class="sxs-lookup"><span data-stu-id="58ec9-130">Response</span></span>
+<span data-ttu-id="58ec9-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="58ec9-131">Here is an example of the response.</span></span>
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 ```
