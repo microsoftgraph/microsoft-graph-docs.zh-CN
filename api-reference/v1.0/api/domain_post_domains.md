@@ -34,7 +34,7 @@ POST /domains
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [domain](../resources/domain.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [domain](../resources/domain.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

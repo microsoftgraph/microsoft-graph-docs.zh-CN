@@ -1,6 +1,6 @@
 # <a name="range-lastcolumn"></a>Range:LastColumn
 
-获取范围内的最后一列。例如，“B2:D5”的最后一列是“D2:D5”。
+获取区域内的最后一列。例如，“B2:D5”的最后一列是“D2:D5”。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -27,7 +27,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

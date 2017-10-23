@@ -1,6 +1,6 @@
 # <a name="range-boundingrect"></a>Range:BoundingRect
 
-获取包含给定范围的最小 range 对象。例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E16”。
+获取包含指定区域的最小 range 对象。例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E16”。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -32,7 +32,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

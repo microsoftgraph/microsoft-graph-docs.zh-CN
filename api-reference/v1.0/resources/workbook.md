@@ -17,8 +17,8 @@
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（命名区域和常量）的集合。只读。|
-|tables|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
+|names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
 |Worksheets|[Worksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
 
 ## <a name="functions"></a>函数
@@ -54,7 +54,7 @@ workbook-session-id: {session-id}
 响应：
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -89,7 +89,7 @@ workbook-session-id: {session-id}
 响应：
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

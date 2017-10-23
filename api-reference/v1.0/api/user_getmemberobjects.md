@@ -31,7 +31,7 @@ POST /users/{id | userPrincipalName}/getMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在包含该用户所属组和目录角色 ID 的响应正文中返回 `200, OK` 响应代码和 String 集合。
+如果成功，此方法将在包含该用户所属组和目录角色 ID 的响应正文中返回 `200 OK` 响应代码和 String 集合。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

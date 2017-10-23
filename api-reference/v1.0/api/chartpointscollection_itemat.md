@@ -30,7 +30,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [ChartPoint](../resources/chartpoint.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ChartPoint](../resources/chartpoint.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

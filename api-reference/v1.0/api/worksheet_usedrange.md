@@ -31,7 +31,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [Range](../resources/range.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例
 下面的示例展示了如何调用此 API。
@@ -43,8 +43,6 @@ GET /workbook/worksheets/{id|name}/UsedRange
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### <a name="response"></a>响应

@@ -34,7 +34,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 String 集合对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 String 集合对象。
 
 ## <a name="example"></a>示例
 

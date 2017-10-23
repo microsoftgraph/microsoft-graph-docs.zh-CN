@@ -31,7 +31,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中返回 `200, OK` 响应代码和字符串集合，响应正文中包括用户是其成员的组的 ID。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和字符串集合，响应正文中包括用户是其成员的组的 ID。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

@@ -32,7 +32,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 base-64 图像字符串。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 base-64 图像字符串。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

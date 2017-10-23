@@ -26,7 +26,7 @@ POST /planner/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [plannerTask](../resources/plannertask.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerTask](../resources/plannertask.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](../../../concepts/errors.md)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner_overview.md#common-planner-error-conditions)。
 

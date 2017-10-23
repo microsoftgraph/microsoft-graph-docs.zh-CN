@@ -63,7 +63,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

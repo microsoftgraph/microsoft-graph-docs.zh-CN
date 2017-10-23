@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "更新 SharePoint 列表中的记录"
-ms.openlocfilehash: fc025ef8c38a7d0768240038955187ee551d6b42
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: ca1c3dcb96ba347b457253b3843114402dba8ba3
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -28,14 +28,14 @@ ms.lasthandoff: 09/28/2017
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
 | 名称       | 值 | 说明
 |:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | 如果包含此请求标头，且提供的 eTag 与项上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应并且不会更新该项。
+| _if-match_ | etag  | 如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。
 
 
 ## <a name="request-body"></a>请求正文
@@ -44,13 +44,13 @@ PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{it
 
 ## <a name="example"></a>示例
 
-下面的示例使用新值更新列表项的“颜色”和“数量”字段。
-listItem 上的所有其他值都保持不变。 
+下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。
+listItem 上的所有其他值都保持独立。 
 
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
 {
@@ -61,7 +61,7 @@ Content-Type: application/json
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在已更新列表项的响应正文中返回 [fieldValueSet][]。
+如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

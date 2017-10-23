@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "获取 SharePoint 列表"
-ms.openlocfilehash: a58a85ed752c00722d2381df10cd7bfb51fbcd3c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e0e0ccdc0836c40ac4f5a719cd64f02178030ccd
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/28/2017
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ Content-type: application/json
 }
 ```
 
-借助 `select` 和 `expand` 语句，可以检索单个请求中的列表元数据、列定义和列表项。
+借助 `select` 和 `expand` 语句，可以通过单个请求中检索列表元数据、列定义和列表项。
 
 #### <a name="request"></a>请求
 

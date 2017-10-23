@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200, OK` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

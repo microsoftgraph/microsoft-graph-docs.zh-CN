@@ -36,7 +36,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 ##### <a name="request"></a>请求

@@ -34,7 +34,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [message](../resources/message.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1

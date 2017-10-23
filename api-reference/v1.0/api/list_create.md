@@ -3,15 +3,15 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "创建 SharePoint 列表"
-ms.openlocfilehash: ff7b20e828d8136a9cd6274d533191fd22d903ff
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7ba657bda38c25ef8f1e5fdda2f7438794e04d2a
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
-在 [site][] 中创建新的 [list][]。
+在 [site][] 中的创建新的 [list][]。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/28/2017
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>请求正文

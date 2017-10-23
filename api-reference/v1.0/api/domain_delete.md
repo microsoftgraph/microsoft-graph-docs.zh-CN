@@ -38,7 +38,7 @@ DELETE /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204, No Content` 响应代码。它不返回响应正文。
+如果成功，此方法返回 `204 No Content` 响应代码。它不返回响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

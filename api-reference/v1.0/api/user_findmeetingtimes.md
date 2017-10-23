@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200, OK` 响应代码和 [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md)。 
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md)。 
 
 **meetingTimeSuggestionsResult** 包含一组会议时间建议和 **emptySuggestionsReason** 属性。每条建议都被定义为 [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md)，同时与会者出席置信度平均值为 50%，或为你在 **minimumAttendeePercentage** 参数中指定的特定百分比值。 
 

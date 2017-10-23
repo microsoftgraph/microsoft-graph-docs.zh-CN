@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "检索 SharePoint 列表中的项"
-ms.openlocfilehash: a7f66db11ef201d0ae5afb2cc49887ee10dc89d7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: ff414159015b4731b76626e309418c32cb6640d4
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 09/28/2017
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ## <a name="example"></a>示例
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 <!-- { "blockType": "request", "name": "get-list-items" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 
 #### <a name="response"></a>响应

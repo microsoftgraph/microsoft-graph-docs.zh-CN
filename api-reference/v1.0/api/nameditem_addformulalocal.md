@@ -33,7 +33,7 @@ POST /workbook/worksheets({id|name})/names/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中返回 `200, OK` 响应代码和 [NamedItem](../resources/NamedItem.md) 对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/NamedItem.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -76,7 +76,7 @@ Content-length: 109
     "comment": "Comment for the named item",
     "name": "test7",
     "scope": "Workbook",
-    "type": "Double",
+    "type": "String",
     "value": "0",
     "visible": true
 }

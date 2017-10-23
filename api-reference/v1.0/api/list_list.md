@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "列出网站中的 SharePoint 列表"
-ms.openlocfilehash: 4be4c4aefc29cdcd684bc11ad086b5c0572dbe2b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/28/2017
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>示例
@@ -39,7 +39,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>响应

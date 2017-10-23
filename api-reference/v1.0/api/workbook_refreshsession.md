@@ -28,7 +28,7 @@ workbook-session-id: {session-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204, No content` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 请注意，workbook-session-id 标头是必需的。 
