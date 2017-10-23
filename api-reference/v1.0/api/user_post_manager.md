@@ -1,37 +1,37 @@
-# <a name="assign-a-manager"></a><span data-ttu-id="f0ba0-101">指定经理</span><span class="sxs-lookup"><span data-stu-id="f0ba0-101">Assign a manager</span></span>
+# <a name="assign-a-manager"></a><span data-ttu-id="b0732-101">指定经理</span><span class="sxs-lookup"><span data-stu-id="b0732-101">Assign a manager</span></span>
 
-<span data-ttu-id="f0ba0-102">使用此 API 指定用户的经理。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-102">Use this API to assign a user's manager.</span></span>
-> <span data-ttu-id="f0ba0-103">注意：不能指定直接下属，请改用此 API。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-103">Note: You cannot assign direct reports - instead use this API.</span></span>
+<span data-ttu-id="b0732-102">使用此 API 指定用户的经理。</span><span class="sxs-lookup"><span data-stu-id="b0732-102">Use this API to assign a user's manager.</span></span>
+> <span data-ttu-id="b0732-103">注意：不能指定直接下属，请改用此 API。</span><span class="sxs-lookup"><span data-stu-id="b0732-103">Note: You cannot assign direct reports - instead use this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f0ba0-104">权限</span><span class="sxs-lookup"><span data-stu-id="f0ba0-104">Permissions</span></span>
-<span data-ttu-id="f0ba0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b0732-104">权限</span><span class="sxs-lookup"><span data-stu-id="b0732-104">Permissions</span></span>
+<span data-ttu-id="b0732-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="b0732-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="f0ba0-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="f0ba0-107">Permission type</span></span>      | <span data-ttu-id="f0ba0-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f0ba0-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b0732-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="b0732-107">Permission type</span></span>      | <span data-ttu-id="b0732-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b0732-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f0ba0-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f0ba0-109">Delegated (work or school account)</span></span> | <span data-ttu-id="f0ba0-110">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f0ba0-110">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f0ba0-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f0ba0-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0ba0-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-112">Not supported.</span></span>    |
-|<span data-ttu-id="f0ba0-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="f0ba0-113">Application</span></span> | <span data-ttu-id="f0ba0-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0ba0-114">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b0732-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b0732-109">Delegated (work or school account)</span></span> | <span data-ttu-id="b0732-110">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b0732-110">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b0732-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b0732-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0732-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="b0732-112">Not supported.</span></span>    |
+|<span data-ttu-id="b0732-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="b0732-113">Application</span></span> | <span data-ttu-id="b0732-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0732-114">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f0ba0-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f0ba0-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b0732-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b0732-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /users/{id}/manager/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="f0ba0-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="f0ba0-116">Request headers</span></span>
-| <span data-ttu-id="f0ba0-117">名称</span><span class="sxs-lookup"><span data-stu-id="f0ba0-117">Name</span></span>       | <span data-ttu-id="f0ba0-118">类型</span><span class="sxs-lookup"><span data-stu-id="f0ba0-118">Type</span></span> | <span data-ttu-id="f0ba0-119">说明</span><span class="sxs-lookup"><span data-stu-id="f0ba0-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b0732-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="b0732-116">Request headers</span></span>
+| <span data-ttu-id="b0732-117">名称</span><span class="sxs-lookup"><span data-stu-id="b0732-117">Name</span></span>       | <span data-ttu-id="b0732-118">类型</span><span class="sxs-lookup"><span data-stu-id="b0732-118">Type</span></span> | <span data-ttu-id="b0732-119">说明</span><span class="sxs-lookup"><span data-stu-id="b0732-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f0ba0-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0ba0-120">Authorization</span></span>  | <span data-ttu-id="f0ba0-121">string</span><span class="sxs-lookup"><span data-stu-id="f0ba0-121">string</span></span>  | <span data-ttu-id="f0ba0-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b0732-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0732-120">Authorization</span></span>  | <span data-ttu-id="b0732-121">string</span><span class="sxs-lookup"><span data-stu-id="b0732-121">string</span></span>  | <span data-ttu-id="b0732-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b0732-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f0ba0-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="f0ba0-124">Request body</span></span>
-<span data-ttu-id="f0ba0-125">在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-125">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b0732-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="b0732-124">Request body</span></span>
+<span data-ttu-id="b0732-125">在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b0732-125">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f0ba0-126">响应</span><span class="sxs-lookup"><span data-stu-id="f0ba0-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b0732-126">响应</span><span class="sxs-lookup"><span data-stu-id="b0732-126">Response</span></span>
 
-<span data-ttu-id="f0ba0-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b0732-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="b0732-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0ba0-129">示例</span><span class="sxs-lookup"><span data-stu-id="f0ba0-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f0ba0-130">请求</span><span class="sxs-lookup"><span data-stu-id="f0ba0-130">Request</span></span>
-<span data-ttu-id="f0ba0-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b0732-129">示例</span><span class="sxs-lookup"><span data-stu-id="b0732-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b0732-130">请求</span><span class="sxs-lookup"><span data-stu-id="b0732-130">Request</span></span>
+<span data-ttu-id="b0732-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b0732-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,9 +45,9 @@ Content-length: xxx
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-<span data-ttu-id="f0ba0-132">在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-132">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
-##### <a name="response"></a><span data-ttu-id="f0ba0-133">响应</span><span class="sxs-lookup"><span data-stu-id="f0ba0-133">Response</span></span>
-<span data-ttu-id="f0ba0-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f0ba0-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b0732-132">在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b0732-132">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+##### <a name="response"></a><span data-ttu-id="b0732-133">响应</span><span class="sxs-lookup"><span data-stu-id="b0732-133">Response</span></span>
+<span data-ttu-id="b0732-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b0732-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

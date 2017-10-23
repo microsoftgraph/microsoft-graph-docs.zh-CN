@@ -1,17 +1,17 @@
-# <a name="message-createforward"></a><span data-ttu-id="6d880-101">message: createForward</span><span class="sxs-lookup"><span data-stu-id="6d880-101">message: createForward</span></span>
+# <a name="message-createforward"></a><span data-ttu-id="bdc33-101">message: createForward</span><span class="sxs-lookup"><span data-stu-id="bdc33-101">message: createForward</span></span>
 
-<span data-ttu-id="6d880-102">创建草稿以转发指定[邮件](../resources/message.md)。</span><span class="sxs-lookup"><span data-stu-id="6d880-102">Create a draft to forward the specified [message](../resources/message.md).</span></span> <span data-ttu-id="6d880-103">然后，可以[更新](../api/message_update.md)草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是[发送](../api/message_send.md)草稿。</span><span class="sxs-lookup"><span data-stu-id="6d880-103">You can then [update](../api/message_update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.</span></span>
+<span data-ttu-id="bdc33-102">创建草稿以转发指定[邮件](../resources/message.md)。</span><span class="sxs-lookup"><span data-stu-id="bdc33-102">Create a draft to forward the specified [message](../resources/message.md).</span></span> <span data-ttu-id="bdc33-103">然后，可以[更新](../api/message_update.md)草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是[发送](../api/message_send.md)草稿。</span><span class="sxs-lookup"><span data-stu-id="bdc33-103">You can then [update](../api/message_update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6d880-104">权限</span><span class="sxs-lookup"><span data-stu-id="6d880-104">Permissions</span></span>
-<span data-ttu-id="6d880-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="6d880-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bdc33-104">权限</span><span class="sxs-lookup"><span data-stu-id="bdc33-104">Permissions</span></span>
+<span data-ttu-id="bdc33-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="bdc33-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="6d880-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="6d880-107">Permission type</span></span>      | <span data-ttu-id="6d880-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6d880-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bdc33-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="bdc33-107">Permission type</span></span>      | <span data-ttu-id="bdc33-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bdc33-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6d880-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6d880-109">Delegated (work or school account)</span></span> | <span data-ttu-id="6d880-110">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d880-110">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6d880-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6d880-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d880-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d880-112">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6d880-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="6d880-113">Application</span></span> | <span data-ttu-id="6d880-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d880-114">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="bdc33-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bdc33-109">Delegated (work or school account)</span></span> | <span data-ttu-id="bdc33-110">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bdc33-110">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="bdc33-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bdc33-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdc33-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bdc33-112">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="bdc33-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="bdc33-113">Application</span></span> | <span data-ttu-id="bdc33-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bdc33-114">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d880-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6d880-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bdc33-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bdc33-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createForward
@@ -19,22 +19,22 @@ POST /users/{id | userPrincipalName}/messages/{id}/createForward
 POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
-## <a name="request-headers"></a><span data-ttu-id="6d880-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="6d880-116">Request headers</span></span>
-| <span data-ttu-id="6d880-117">名称</span><span class="sxs-lookup"><span data-stu-id="6d880-117">Name</span></span>       | <span data-ttu-id="6d880-118">类型</span><span class="sxs-lookup"><span data-stu-id="6d880-118">Type</span></span> | <span data-ttu-id="6d880-119">说明</span><span class="sxs-lookup"><span data-stu-id="6d880-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bdc33-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="bdc33-116">Request headers</span></span>
+| <span data-ttu-id="bdc33-117">名称</span><span class="sxs-lookup"><span data-stu-id="bdc33-117">Name</span></span>       | <span data-ttu-id="bdc33-118">类型</span><span class="sxs-lookup"><span data-stu-id="bdc33-118">Type</span></span> | <span data-ttu-id="bdc33-119">说明</span><span class="sxs-lookup"><span data-stu-id="bdc33-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6d880-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6d880-120">Authorization</span></span>  | <span data-ttu-id="6d880-121">string</span><span class="sxs-lookup"><span data-stu-id="6d880-121">string</span></span>  | <span data-ttu-id="6d880-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6d880-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bdc33-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bdc33-120">Authorization</span></span>  | <span data-ttu-id="bdc33-121">string</span><span class="sxs-lookup"><span data-stu-id="bdc33-121">string</span></span>  | <span data-ttu-id="bdc33-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bdc33-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6d880-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="6d880-124">Request body</span></span>
-<span data-ttu-id="6d880-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6d880-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bdc33-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="bdc33-124">Request body</span></span>
+<span data-ttu-id="bdc33-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bdc33-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6d880-126">响应</span><span class="sxs-lookup"><span data-stu-id="6d880-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bdc33-126">响应</span><span class="sxs-lookup"><span data-stu-id="bdc33-126">Response</span></span>
 
-<span data-ttu-id="6d880-127">如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6d880-127">If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="bdc33-127">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bdc33-127">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6d880-128">示例</span><span class="sxs-lookup"><span data-stu-id="6d880-128">Example</span></span>
-<span data-ttu-id="6d880-129">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="6d880-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6d880-130">请求</span><span class="sxs-lookup"><span data-stu-id="6d880-130">Request</span></span>
-<span data-ttu-id="6d880-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6d880-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bdc33-128">示例</span><span class="sxs-lookup"><span data-stu-id="bdc33-128">Example</span></span>
+<span data-ttu-id="bdc33-129">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="bdc33-129">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="bdc33-130">请求</span><span class="sxs-lookup"><span data-stu-id="bdc33-130">Request</span></span>
+<span data-ttu-id="bdc33-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bdc33-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
@@ -43,8 +43,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```
 
-##### <a name="response"></a><span data-ttu-id="6d880-132">响应</span><span class="sxs-lookup"><span data-stu-id="6d880-132">Response</span></span>
-<span data-ttu-id="6d880-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6d880-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bdc33-132">响应</span><span class="sxs-lookup"><span data-stu-id="bdc33-132">Response</span></span>
+<span data-ttu-id="bdc33-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bdc33-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
