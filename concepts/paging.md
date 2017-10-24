@@ -9,7 +9,7 @@
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-如果结果包含超过 5 个用户，则 Microsoft Graph 将返回类似于以下以及用户第一页的 `odata:nextLink` 属性。
+如果结果包含超过 5 个用户，则 Microsoft Graph 将返回一个下列类似的 `odata:nextLink` 属性以及第一页的用户。
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
