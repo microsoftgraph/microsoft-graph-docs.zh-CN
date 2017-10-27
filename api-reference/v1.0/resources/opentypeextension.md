@@ -1,13 +1,17 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
-开放扩展（以前被称为 Office 365 数据扩展）提供了一种简单方法，可直接将非类型化属性添加到 Microsoft Graph 中的资源。开放扩展由 **openTypeExtension** 资源表示。添加到资源的任何开放扩展都会显示在 **extensions** 导航属性中，该属性派生自 [extension](extension.md) 抽象类型。每个扩展都有一个 **extensionName** 属性，它是所有扩展以及自定义数据的唯一一个可预定义、可写入的属性。帮助确保扩展名称唯一性的一种方法是使用反向域名名称系统 (DNS) 格式，该格式取决于你拥有的域，例如 `Com.Contoso.ContactInfo`。请勿在扩展名中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
+借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。 
+
+开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 
+
+一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖_用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
 
 一般可用性（GA: /v1.0 和 /beta）或预览版 (/beta) 对应版本中的以下资源支持开放扩展。
 
-| 资源 | 版本 |
-|---------------|-------|
+|资源 |版本 |
+|:---------------|:-------|
 | [管理单元](../../beta/resources/administrativeunit.md)  | 仅供预览 |
 | [日历事件](event.md) | GA |
 | 组[日历事件](event.md) | GA |
@@ -43,21 +47,26 @@
 }
 
 ```
+
+<br/>
+
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+|属性      |类型    |说明 |
 |:---------------|:--------|:----------|
 |extensionName|String|开放类型开放扩展的唯一文本标识符。必需。|
 |id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
 
 ## <a name="relationships"></a>关系
+
 无
 
 
 ## <a name="methods"></a>方法
 
-| 方法           | 返回类型    |说明|
+|方法        |返回类型 |说明 |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | 现有资源实体中的 [openTypeExtension](opentypeextension.md) 或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[消息](../resources/message.md)。 | 在现有或新建资源实例中创建 openTypeExtension 对象。|
+|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension_delete.md) | 无 |删除 openTypeExtension 对象。 |

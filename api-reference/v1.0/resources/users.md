@@ -7,8 +7,9 @@
 - 通过用户 ID，`/users/{id | userPrincipalName}` 
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
 
-## <a name="authorization"></a>授权
-需要以下 [权限](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
+## <a name="authorization"></a>Authorization
+
+若要访问用户操作，必须拥有下列[权限](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一。 用户可将前三个权限授予应用程序。 其余权限只能由管理员授予应用。
 
 - User.ReadBasic.All
 - User.Read
@@ -20,10 +21,11 @@
 - Directory.AccessAsUser.All
 
 ## <a name="common-properties"></a>通用属性
-以下内容表示获取或列出用户时返回的属性的默认集。这些是所有可用属性的子集。要获取更多用户属性，请使用 `$select` 查询参数。 
 
-| 属性 | 说明 |
-|----------|-------------|
+以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。 
+
+|属性 |说明 |
+|:----------|:-------------|
 |id | 用户的唯一标识符。|
 |businessPhones | 用户的电话号码。|
 |displayName | 用户通讯簿中显示的名称。|
@@ -36,13 +38,16 @@
 |surname| 用户的姓。 |
 |userPrincipalName| 用户主体名称。 |
 
+<br/>
+
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
 
 ## <a name="common-operations"></a>通用操作
->**注意：**某些操作需要其他权限。
+
+> **注意：**某些操作需要其他权限。
 
 | 路径    | 说明 |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user_list.md) | 列出组织中的用户。 |
 |[`/users/{id}`](../api/user_get.md) | 通过 ID 获取特定用户。 |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| 获取用户个人资料照片。 |

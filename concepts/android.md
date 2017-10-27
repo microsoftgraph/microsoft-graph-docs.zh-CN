@@ -6,9 +6,11 @@
 
 本文介绍了从 Azure AD v2.0 终结点获取访问令牌和调用 Microsoft Graph 所需的任务。介绍了生成 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)的步骤，并说明实现在面向 Android 的应用中使用 Microsoft Graph 的主要概念。本文还介绍如何通过使用[用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 或原始 REST 调用来访问 Microsoft Graph。
 
-若要在面向 Android 的应用中使用 Microsoft Graph，则需要向用户显示 Microsoft 登录页，如以下屏幕截图中所示。
+若要在 Android 版应用中使用 Microsoft Graph，需要向用户显示 Microsoft 登录页，如以下屏幕截图所示。
 
 ![Android 上的 Microsoft 帐户登录页](images/AndroidConnect.png)
+
+<br/>
 
 **不想生成一个应用吗？**通过下载本文所基于的 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)快速准备就绪并开始运行。
 
@@ -23,15 +25,15 @@
 
 ## <a name="configure-a-new-project"></a>配置新项目
 
-如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，请跳过此步骤。 
+如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，请跳过这一步。 
 
-在 Android Studio 中开始一个新项目。可以保留大多数向导的默认值，只需确保选择下列选项：
+在 Android Studio 中，启动一个新项目。 可以保留大多数向导的默认值，只要选择下列选项即可：
 
-* 目标 Android 设备 - **电话和平板电脑**
-    * 最小 SDK - **API 16：Android 4.1 (Jelly Bean)**
-* 将活动添加到移动电话 - **基本活动**
+- 目标 Android 设备：**手机和平板电脑**
+- 最低 SDK：**API 16:Android 4.1 (Jelly Bean)**
+- 将活动添加到移动设备：**基本活动**
  
-这为你提供一个带有活动和按钮的 Android 项目，可以用来对用户进行身份验证。
+这样，可以创建包含活动和用户身份验证按钮的 Android 项目。
 
 
 ## <a name="register-the-application"></a>注册应用程序
@@ -40,49 +42,50 @@
 
 在 Microsoft 应用注册门户上注册一个应用。这会生成用于配置此应用的应用 ID。
 
-1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
+1. 使用个人帐户/工作或学校帐户，登录 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
 
-2. 选择“**添加应用**”。
+2. 选择“添加应用”****。
 
->提示：如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)且正在为其创建注册，请在关闭“创建”****按钮前先取消选中“引导设置”****。
+    > **提示：**如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”****复选框，再选择“创建”****按钮。
 
-3. 输入应用的名称，并选择“创建”****。 
+3. 输入应用名称，再选择“创建”****。 
     
-    对于“引导设置”****流：
+    对于“引导式安装”****流：
  
-    a.选择“移动和桌面应用”****来定义要创建的应用的类型。
+    a. 选择“移动和桌面应用”****，定义要创建的应用类型。
 
-    b.选择“Android”****来定义要使用的移动技术。
+    b. 选择“Android”****，定义要使用的移动技术。
 
-    c.查看介绍性主题，完成后，单击页面底部的“设置”****按钮。
+    c. 查看入门主题。完成后，选择页面底部的“安装”****按钮。
 
     d.根据有关“设置”****步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
 
-    e.根据有关“使用”****步骤的指示，将 MSAL 逻辑添加到新项目中
+    e. 按照“使用”****步骤中的说明操作，将 MSAL 逻辑添加到新项目中。
 
     f.在“配置”****页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
 
+    <br/>
+    
     对于非引导流：
 
     将显示注册页，其中列出应用的属性。
 
     a.复制应用程序 ID。这是应用的唯一标识符。 
 
-    b.选择“添加平台”****和“本机应用程序”****。
+    b. 选择“添加平台”****和“原生应用”****。
 
-    > **注意：**应用程序注册门户提供值为 *msalENTER_YOUR_CLIENT_ID://auth* 的重定向 URI。不要使用内置重定向 URI。[Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现需要此重定向 URI 的 MSAL 身份验证库。如果使用[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，则必须使用内置重定向 URI。
+      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
+      
+      c. 添加委托权限。 需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
+
+      d. 选择“保存”****。
 
 
-    a.添加委派权限。需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
-   
-    b.选择“保存”****。
+## <a name="authenticate-the-user-and-get-an-access-token"></a>验证用户并获取访问令牌
 
+> **注意：**如果已按照应用注册门户中“引导式安装”****流内的说明操作来新建应用，可以跳过这些步骤。 若要详细了解 Graph API，请参阅[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk)。
 
-## <a name="authenticate-the-user-and-get-an-access-token"></a>对用户进行身份验证并获取一个访问令牌
-
-> **注意：**如果已按照应用程序注册门户中“引导设置”****流中的说明创建一个新的应用程序，则可以跳过这些步骤。转到[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk) 以了解有关 Graph API 的详细信息。
-
-让我们展示一下 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)的整个过程以了解我们已经添加的 MSAL 和 Microsoft Graph 代码。
+接下来，将逐步演示 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，方便大家了解已添加的 MSAL 和 Microsoft Graph 代码。
 
 ### <a name="add-the-dependency-to-appbuildgradle"></a>向 app/build.gradle 添加依赖项
 
@@ -93,12 +96,13 @@
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
     compile 'com.android.volley:volley:1.0.0'
-
 ```
+
+<br/>
 
 ### <a name="start-the-authentication-flow"></a>启动身份验证流
 
-1. 打开 **AuthenticationManager** 文件并查找 **PublicClientApplication** 对象声明，然后查找 **getInstance** 方法中的站内实例。
+1. 打开“AuthenticationManager”****文件，再依次查找“PublicClientApplication”****对象声明和“getInstance”****方法中的实例化。
 
    ```java
     private static PublicClientApplication mPublicClientApplication;
@@ -116,10 +120,11 @@
 
    ```
 
+<br/>
 
-2. 在 **ConnectActivity** 类中，找到 **mConnectButton** 的 click 事件的事件处理程序。查找 **onClick** 方法并审查相关代码。
+2. 在“ConnectActivity”****类中，查找“mConnectButton”****的单击事件的事件处理程序。查找“onClick”****方法，并评审相关代码。
   
-    **connect** 方法支持个人身份信息 (PII) 日志记录，获取示例帮助程序类 **AuthenticationManager** 的实例，并获取 MSAL 平台对象用户集合。如果没有用户，会对新用户执行 Azure AD 身份验证和授权流。否则，以静默方式获取身份验证令牌。
+    **connect** 方法支持记录个人身份信息 (PII)，获取示例帮助程序类 **AuthenticationManager** 的实例，并获取 MSAL 平台对象用户集合。 如果没有用户，则会对新用户执行 Azure AD 身份验证和授权流。 否则，以静默方式获取身份验证令牌。
 
    ```java
     @Override
@@ -160,7 +165,10 @@
     }
 
    ```
-3. 查找处理当用户关闭身份验证对话框时由 Azure AD 生成的 Azure AD 重定向响应的事件处理程序。该处理程序位于 **ConnectActivity** 类中。
+   
+<br/>
+
+3. 查找事件处理程序，它负责处理 Azure AD 在用户关闭身份验证对话框时生成的 Azure AD 重定向响应。 此处理程序位于 **ConnectActivity** 类中。
 
    ```java
        /**
@@ -184,10 +192,12 @@
         }
     }
 
-   ```    
-3. 查找缓存用于 Graph API 调用的身份验证令牌的身份验证回调方法。
+   ```  
+   
+   <br/>
 
- 
+4. 查找缓存用于 Graph API 调用的身份验证令牌的身份验证回调方法。
+
 
 ```java
     /* Callback used for interactive request.  If succeeds we use the access
@@ -224,14 +234,17 @@
     }
 
 ```
-    
-连接示例应用在主活动上具有“连接”****按钮。如果按下该按钮，首次使用时，应用会使用设备浏览器显示身份验证页。下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
+
+<br/>
+   
+连接示例应用对主要活动使用“连接”****按钮。 如果选择此按钮，应用会在首次使用时通过设备浏览器显示身份验证页。 下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>用授权代码交换访问令牌
 
 需要让应用准备就绪，以处理授权服务器的响应，其中包含用于交换访问令牌的代码。
 
 1. 需要告诉 Android 系统，Connect 应用可以处理应用程序注册中所配置的重定向 URL 的请求。若要执行此操作，请打开 **strings.xml** 字符串资源文件并将以下子项添加到项目 **\<application/\>** 元素中。
+
    ```xml
    <!DOCTYPE resources [
        <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
@@ -240,8 +253,9 @@
     ...
     <string name="client_Id">&clientId;</string>
     <string name="msalPrefix">msal&clientId;</string>
-
    ```
+
+   <br/>
 
    将在 **AndroidManifest.xml** 文件中使用字符串资源。 **MSAL** 库在运行时读取客户端 ID，并返回为 **BrowserTabActivity** 定义的重定向 URL 的 REST 响应。
 
@@ -267,9 +281,11 @@
                android:value="@string/client_Id"/>
         </application>
     ```
+
+
 2. **MSAL** 库需要访问由注册门户分配的应用程序 ID。**MSAL 库将应用程序 ID 称为“客户端 ID”**。从传入库构造函数的应用程序上下文获取应用程序 ID（客户端 ID）。 
 
-   >注意：还可以通过将字符串参数传递给构造函数来在运行时提供客户端 ID。 
+   > **注意：**还可以将字符串参数传递给构造函数，从而在运行时提供客户端 ID。 
 
 3. 授权服务器发送响应时，将调用活动。使用授权服务器的响应请求一个访问令牌。转到 **AuthenticationManager** 并在类中查找以下代码。
 
@@ -331,30 +347,35 @@
 
    ```
 
+<br/>
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
+
 可以 [使用 Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) 或 [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) 调用 Microsoft Graph。
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-sdk"></a>使用 Microsoft Graph SDK 调用 Microsoft Graph
+
 [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 提供可从 Microsoft Graph 生成请求和处理结果的类。请按照以下步骤使用 Microsoft Graph SDK。
 
 1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     ```
 
+
 2. 将依赖项添加到 Microsoft Graph SDK 和 GSON。
+   
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
    ```
 
 
-3. 使用 **uthenticateRequest** 帮助程序方法将身份验证令牌添加到新请求。此方法从 Microsoft Graph 身份验证 **IAuthenticationProvider** 接口实现同样的方法
+3. 使用 **AuthenticateRequest** 帮助程序方法，将身份验证令牌添加到新请求中。 此方法通过 Microsoft Graph 身份验证 **IAuthenticationProvider** 接口，实现相同的方法。
     
    ```java
     /**
@@ -383,7 +404,8 @@
     }
    ```
 
-4. 创建草稿电子邮件，并使用以下帮助程序方法从 **GraphServiceController** 帮助程序类发送此电子邮件。
+
+4. 使用以下帮助程序方法，通过 **GraphServiceController** 帮助程序类，创建并发送草稿电子邮件。
 
    ```java
     /**
@@ -472,13 +494,18 @@
     }
 
    ```
+  
+
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>使用 Microsoft Graph REST API 调用 Microsoft Graph
+
 [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
 
 1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
+
 
 2. 将依赖项添加到 Volley HTTP 库。
 
@@ -486,7 +513,9 @@
     compile 'com.android.volley:volley:1.0.0'
     ```
    
+
 3. 用以下代码替换行`String accessToken = tokenResponse.accessToken;`。将电子邮件地址插入标记为 **\<YOUR_EMAIL_ADDRESS\>** 的占位符中。
+   
    ```java
     final String accessToken = tokenResponse.accessToken;
 
@@ -547,24 +576,27 @@
     });
    ```
 
+
 ## <a name="run-the-app"></a>运行应用
 可以尝试运行 Android 应用。
 
-1. 启动 Android 仿真程序或将物理设备连接至计算机。
-2. 在 Android Studio 中，按 Shift + F10 运行应用。
-3. 从部署对话框中选择 Android 仿真程序或设备。
-4. 点击主要活动上的浮动操作按钮。
-5. 使用你的个人、工作或学校帐户登录，并授予所请求的权限。
-6. 在“应用选择”对话框中，点击应用以继续。
+1. 启动 Android 模拟器，或将物理设备连接到计算机。
+2. 在 Android Studio 中，按 Shift+F10 运行应用。
+3. 从部署对话框中选择 Android 模拟器或设备。
+4. 点击主要活动的“浮动操作”****按钮。
+5. 使用个人帐户/工作或学校帐户登录，并授予请求的权限。
+6. 在“应用选择”对话框中，点击应用即可继续。
 
-请检查在 [调用 Microsoft Graph](#call-microsoft-graph) 中配置的电子邮件地址的收件箱。你应该会收到一封用于登录该应用的帐户所发送的电子邮件。
+检查在[调用 Microsoft Graph](#call-microsoft-graph) 中配置的电子邮件地址的收件箱。 应该会收到从应用登录帐户发送的电子邮件。
 
 ## <a name="next-steps"></a>后续步骤
-- 试用 [Microsoft Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
-- 在 [Android 的代码段示例](https://github.com/microsoftgraph/android-java-snippets-sample)中查找常见操作的示例，或浏览 GitHub 上的其他 [Android 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android)。
+
+- 试用 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
+- 在 [Android 代码段示例](https://github.com/microsoftgraph/android-java-snippets-sample)中，查找常见操作示例，或浏览 GitHub 上的其他 [Android 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android)。
 
 
 ## <a name="see-also"></a>另请参阅
+
 - [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
 - [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
 - [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)

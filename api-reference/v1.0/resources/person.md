@@ -19,7 +19,7 @@
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|人员的电子邮件地址。|
 |givenName|String|人员的名字。|
 |id|字符串|人员的唯一标识符。只读。|
-|imAddress|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
+|imAddress|String|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |isFavorite|Boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
 |jobTitle|String|人员的职务。|
 |officeLocation|String|人员的办公室位置。|
@@ -55,14 +55,15 @@
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

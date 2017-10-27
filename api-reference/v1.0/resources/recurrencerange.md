@@ -1,16 +1,27 @@
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
-事件的持续时间。
+描述了定期[事件](event.md)在哪个日期范围内重复发生。 
+
+可以使用下面的 3 种方法之一（具体视方案而定），指定定期事件的日期范围。 虽然必须始终指定日期范围的 **startDate** 值，但定期事件的结束日期可以有多种指定方法。例如，可以指定定期事件在特定日期前结束、没有结束日期或在重复发生 5 次后结束。 请注意，在日期范围内，实际发生的定期事件始终遵循为事件指定的定期模式。 定期事件始终由 [recurrencePattern](recurrencepattern.md)（事件的重复发生频率）和 **recurrenceRange**（事件在哪个日期范围内重复发生）进行定义。
+
+**type** 属性可用于指定不同类型的 **recurrenceRange**。 请注意每种类型的必需属性，如下表所述。
+
+| 定期范围类型 | type 属性值 | 说明 | 示例 | 必需属性 |
+|:---------------|:--------|:--------|:--------|:----------|
+|有结束日期的范围 | `endDate` | 事件在 **startDate** 到 **endDate** 之间遵循相应的定期模式重复发生。 | 事件在日期范围 2017 年 6 月 1 日到 2017 年 6 月 15 日之间重复发生。 | **type**、**startDate**、**endDate** | 
+|无结束日期的范围 | `noEnd` | 事件从 **startDate** 起遵循相应的定期模式重复发生。 | 事件在从 2017 年 6 月 1 日起的无限期日期范围内重复发生。 | **type**、**startDate** |
+|指定了特定发生次数的范围 | `numbered` | 从 **startDate** 起，事件遵循定期模式重复发生 **numberOfOccurrences** 次。 | 事件在从 2017 年 6 月 1 日起的日期范围内重复发生 10 次。  | **type**、**startDate**、**numberOfOccurrences** |
+
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|endDate|日期|系列的结束日期。|
-|numberOfOccurrences|Int32|事件重复发生的次数。|
-|recurrenceTimeZone|String |**startDate** 和 **endDate** 属性的时区。 |
-|startDate|日期|序列的开始日期。|
-|type|String|定期区域：EndDate = 0，NoEnd = 1，Numbered = 2。可能的值是：`EndDate`、`NoEnd`、`Numbered`。||
+|endDate|Date|定期模式的停止应用日期。 会议的最后一次发生时间可能不是此日期，具体视事件的定期模式而定。 如果 **type** 为 `endDate`，此为必需属性。|
+|numberOfOccurrences|Int32|事件重复发生次数。 如果 **type** 为 `numbered`，此为必需属性，且必须为正数。|
+|recurrenceTimeZone|String |**startDate** 和 **endDate** 属性的时区。 此为可选属性。 如果未指定，使用的是事件时区。|
+|startDate|Date|定期模式的开始应用日期。 会议的第一次发生时间可能是此日期，也可能晚于此日期，具体视事件的定期模式而定。 必须与定期[事件](event.md)的 **start** 属性值相同。 此为必需属性。|
+|type|String|定期范围。 可取值为：`endDate`、`noEnd`、`numbered`。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

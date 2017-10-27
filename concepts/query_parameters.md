@@ -6,15 +6,16 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 |名称|说明|示例|
 |:---------------|:--------|:-------|
-|[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#expand)|检索相关资源。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#filter)|筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#orderby)|对结果进行排序。|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
-|[$search](#search)| 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#select)|筛选属性（列）。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#skip)|对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
-|[$top](#top)|设置结果的页面大小。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$expand](#expand)|检索相关资源。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
+|[$filter](#filter)|筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
+|[$format](#format)|返回指定媒体格式的结果。|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
+|[$orderby](#orderby)|对结果进行排序。|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
+|[$search](#search)| 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
+|[$select](#select)|筛选属性（列）。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
+|[$skip](#skip)|对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
+|[$skipToken](#skiptoken)|从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
+|[$top](#top)|设置结果的页面大小。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
 
 这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
@@ -116,6 +117,20 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+
+## <a name="format"></a>format
+
+使用 `$format` 查询参数，指定 Microsoft Graph 返回的项的媒体格式。
+
+例如，下面的请求以 json 格式返回组织中的用户：
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$format=json
+```
+
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+
+> **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
 ## <a name="orderby"></a>orderby
 

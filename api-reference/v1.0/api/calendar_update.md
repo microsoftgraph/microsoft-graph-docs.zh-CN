@@ -1,6 +1,6 @@
-# <a name="update-calendar"></a>更新日历
+# <a name="update-calendar"></a>Update calendar
 
-更新 calendar 对象的属性。
+更新 [calendar](../resources/calendar.md) 对象的属性。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 

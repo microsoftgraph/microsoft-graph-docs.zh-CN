@@ -52,11 +52,11 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 - *已更改*表示该项已被删除，可以从 [deletedItems](../api-reference/beta/resources/directory.md) 恢复。
 - *已删除*表示该项已被删除，无法恢复。
 
-在初始的 delta 查询响应和跟踪的 (deltaLink) 响应中，可以返回 @removed 对象。使用 delta 查询请求的客户端应应被设计为处理响应中的这些对象。
+`@removed` 对象可以在初始 delta 查询响应和跟踪的 (deltaLink) 响应中返回。使用 delta 查询请求的客户端应能够处理响应中的这些对象。
 
 ## <a name="supported-resources"></a>支持的资源
 
-delta 查询目前支持以下资源：
+目前，以下资源支持 delta 查询。
 
 | **资源集合** | **API** |
 |:------ | :------ |
@@ -70,7 +70,7 @@ delta 查询目前支持以下资源：
 | 驱动器项目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) 资源的 [delta](../api-reference/v1.0/api/driveitem_delta.md) 函数 |
 
 
-> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。以后将更新驱动器 delta 查询，以与其他资源类型保持一致。有关当前语法的详细信息，请访问 <https://developer.microsoft.com/zh-cn/graph/docs/api-reference/v1.0/api/item_delta>
+> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta)。
 
 ## <a name="prerequisites"></a>先决条件
 

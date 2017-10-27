@@ -64,8 +64,10 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
 
 <!-- {
   "blockType": "response",
+  "name": "get_person",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -104,10 +106,12 @@ Content-type: application/json
            ],
            "postalAddresses": [],
            "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
+           "personType": [
+               {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
        }
    ]
 }
@@ -115,23 +119,33 @@ Content-type: application/json
 ### <a name="select-the-fields-to-return-in-a-filtered-response"></a>选择要在经过筛选的响应中返回的字段 
 可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。 
 
-以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。 
+以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_person"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
 ```
 
-以下示例显示了相应的响应。 
+下面是示例请求的正确编码 URL。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_person_select_and_filter"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+```
+
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
+  "name": "get_person_select_and_filter",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -146,7 +160,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ]
         }

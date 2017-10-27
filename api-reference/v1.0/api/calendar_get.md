@@ -1,6 +1,6 @@
-# <a name="get-calendar"></a>获取日历
+# <a name="get-calendar"></a>Get calendar
 
-检索日历对象的属性和关系。
+获取 [calendar](../resources/calendar.md) 对象的属性和关系。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 
 
 ### <a name="get-another-users-calendar"></a>获取其他用户的日历

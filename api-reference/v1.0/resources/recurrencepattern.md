@@ -1,18 +1,33 @@
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
-事件发生的频率。
+描述了定期[事件](event.md)的重复发生频率。 
+
+可以使用下面的 6 种方法之一（具体视方案而定），指定定期事件的定期模式。 对于每种类型的模式，请指定时间间隔。 在为事件指定的日期范围内，实际发生的定期事件始终遵循此模式。 定期事件始终由 **recurrencePattern**（事件的重复发生频率）和 [recurrenceRange](recurrencerange.md)（事件在哪个日期范围内重复发生）进行定义。
+
+**type** 属性可用于指定不同类型的 **recurrencePattern**，**interval** 属性可用于指定时间间隔，可以是天数、周数、月数或年数，具体视 **type** 而定。 请注意每种类型的必需属性，如下表所述。
+
+> **注意**：仅添加定期模式需要的属性。 如果添加的任何属性没有受支持的值，则会返回错误。
+
+| 定期模式类型 | type 属性值 | 说明 | 示例 | 必需属性 |
+|:---------------|:--------|:--------|:--------|:----------|
+| 每天 | `daily` | 事件按 **interval** 指定的时间间隔天数重复发生。 | 事件每 3 天重复发生一次。 | **type**、**interval** |
+| 每周 | `weekly` | 事件按时间间隔周数在一周内的一天或几天重复发生。 | 事件每两个星期一和星期二重复发生一次。 | **type**、**interval**、**daysOfWeek**、**firstDayOfWeek** |
+| 绝对每月 | `absoluteMonthly` | 事件按时间间隔月数在相应月份的指定一天（例如 15 号）重复发生。 | 事件每季度（每 3 个月）的 15 号重复发生一次。 | **type**、**interval**、**dayOfMonth** |
+| 相对每月 | `relativeMonthly` | 事件按时间间隔月数在一周内的指定一天或几天（相应月份的同一相对位置）重复发生。 | 事件每 3 个月的第二个星期四或星期五重复发生一次。 | **type**、**interval**、**daysOfWeek** |
+| 绝对每年 | `absoluteYearly` | 事件按时间间隔年数在指定月份的一天重复发生。 | 事件每 3 年在 3 月 15 日重复发生一次。 | **type**、**interval**、**dayOfMonth**、**month** |
+| 相对每年 | `relativeYearly` | 事件按时间间隔年数在一周内的指定一天或几天（相应年份和月份的同一相对位置）重复发生。 | 事件每 3 年在 11 月的第二个星期四或星期五重复发生一次。 | **type**、**interval**、**daysOfWeek**、**month** |
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|dayOfMonth|Int32|事件发生的日期。|
-|daysOfWeek|String collection|事件发生的星期几的集合。可能的值是：`Sunday`、`Monday`、`Tuesday`、`Wednesday`、`Thursday`、`Friday`、`Saturday`。|
-|firstDayOfWeek|String|定期开始的星期几。可能的值是：`Sunday`、`Monday`、`Tuesday`、`Wednesday`、`Thursday`、`Friday`、`Saturday`。|
-|index|String|定期发生的星期的索引：`First`、`Second`、`Third`、`Fourth`、`Last`。|
-|interval|Int32|两次发生之间的指定定期类型的单位数量。|
-|month|Int32|事件发生的月份。这是一个 1 到 12 的数字。|
-|type|String|定期模式类型是：`Daily`、`Weekly`、`AbsoluteMonthly`、`RelativeMonthly`、`AbsoluteYearly`、`RelativeYearly`。|
+|dayOfMonth|Int32|事件在相应月份的多少号发生。 如果 **type** 为 `absoluteMonthly` 或 `absoluteYearly`，此为必需属性。 |
+|daysOfWeek|String 集合|事件在星期几（一系列值）发生。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
+|firstDayOfWeek|String|每周的第一天。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。 默认值为 `sunday`。 如果 **type** 为 `weekly`，此为必需属性。 |
+|index|String|指定事件在 **daysOfsWeek** 中指定的第几个星期几实例发生，从相应月份的第一个实例开始计算。 可取值为：`first`、`second`、`third`、`fourth` 或 `last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
+|interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 此为必需属性。 |
+|month|Int32|事件发生的月份。  这是一个介于 1 到 12 之间的数字。|
+|type|String|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
