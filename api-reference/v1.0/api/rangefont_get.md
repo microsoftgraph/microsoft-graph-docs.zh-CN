@@ -14,7 +14,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/font
-GET /workbook/worksheets/{id|name}/range(<address>)/format/font
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

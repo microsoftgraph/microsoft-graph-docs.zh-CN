@@ -14,7 +14,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/fill
-PATCH /workbook/worksheets/{id|name}/range(<address>)/format/fill
+PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头

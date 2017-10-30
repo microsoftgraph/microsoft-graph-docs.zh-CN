@@ -14,7 +14,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/unmerge
-POST /workbook/worksheets/{id|name}/range(<address>)/unmerge
+POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```

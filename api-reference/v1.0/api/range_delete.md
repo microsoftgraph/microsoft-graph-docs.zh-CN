@@ -14,7 +14,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets/{id|name}/range(<address>)/delete
+POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```

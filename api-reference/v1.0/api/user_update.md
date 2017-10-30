@@ -96,8 +96,7 @@ Content-length: 491
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+  "city": "city-value"
 }
 ```
 ##### <a name="response"></a>响应
