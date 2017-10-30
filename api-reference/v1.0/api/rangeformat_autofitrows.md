@@ -1,38 +1,38 @@
-# <a name="rangeformat-autofitrows"></a><span data-ttu-id="0f0ef-101">RangeFormat: autofitRows</span><span class="sxs-lookup"><span data-stu-id="0f0ef-101">RangeFormat: autofitRows</span></span>
+# <a name="rangeformat-autofitrows"></a><span data-ttu-id="8e3af-101">RangeFormat: autofitRows</span><span class="sxs-lookup"><span data-stu-id="8e3af-101">RangeFormat: autofitRows</span></span>
 
-<span data-ttu-id="0f0ef-102">根据列中的当前数据，更改当前范围的行高以达到最佳高度。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-102">Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0f0ef-103">权限</span><span class="sxs-lookup"><span data-stu-id="0f0ef-103">Permissions</span></span>
-<span data-ttu-id="0f0ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="8e3af-102">根据列中的当前数据，更改当前范围的行高以达到最佳高度。</span><span class="sxs-lookup"><span data-stu-id="8e3af-102">Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e3af-103">权限</span><span class="sxs-lookup"><span data-stu-id="8e3af-103">Permissions</span></span>
+<span data-ttu-id="8e3af-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="8e3af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="0f0ef-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="0f0ef-106">Permission type</span></span>      | <span data-ttu-id="0f0ef-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0f0ef-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8e3af-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="8e3af-106">Permission type</span></span>      | <span data-ttu-id="8e3af-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8e3af-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f0ef-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0f0ef-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0f0ef-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f0ef-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="0f0ef-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0f0ef-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f0ef-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-111">Not supported.</span></span>    |
-|<span data-ttu-id="0f0ef-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="0f0ef-112">Application</span></span> | <span data-ttu-id="0f0ef-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-113">Not supported.</span></span> |
+|<span data-ttu-id="8e3af-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8e3af-108">Delegated (work or school account)</span></span> | <span data-ttu-id="8e3af-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e3af-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8e3af-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8e3af-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e3af-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="8e3af-111">Not supported.</span></span>    |
+|<span data-ttu-id="8e3af-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="8e3af-112">Application</span></span> | <span data-ttu-id="8e3af-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8e3af-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f0ef-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0f0ef-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e3af-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8e3af-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitRows
-POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitRows
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0f0ef-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="0f0ef-115">Request headers</span></span>
-| <span data-ttu-id="0f0ef-116">名称</span><span class="sxs-lookup"><span data-stu-id="0f0ef-116">Name</span></span>       | <span data-ttu-id="0f0ef-117">说明</span><span class="sxs-lookup"><span data-stu-id="0f0ef-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8e3af-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="8e3af-115">Request headers</span></span>
+| <span data-ttu-id="8e3af-116">名称</span><span class="sxs-lookup"><span data-stu-id="8e3af-116">Name</span></span>       | <span data-ttu-id="8e3af-117">说明</span><span class="sxs-lookup"><span data-stu-id="8e3af-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0f0ef-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f0ef-118">Authorization</span></span>  | <span data-ttu-id="0f0ef-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8e3af-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="8e3af-118">Authorization</span></span>  | <span data-ttu-id="8e3af-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8e3af-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0f0ef-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="0f0ef-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e3af-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="8e3af-121">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="0f0ef-122">响应</span><span class="sxs-lookup"><span data-stu-id="0f0ef-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e3af-122">响应</span><span class="sxs-lookup"><span data-stu-id="8e3af-122">Response</span></span>
 
-<span data-ttu-id="0f0ef-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8e3af-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="8e3af-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0f0ef-125">示例</span><span class="sxs-lookup"><span data-stu-id="0f0ef-125">Example</span></span>
-<span data-ttu-id="0f0ef-126">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="0f0ef-127">请求</span><span class="sxs-lookup"><span data-stu-id="0f0ef-127">Request</span></span>
-<span data-ttu-id="0f0ef-128">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8e3af-125">示例</span><span class="sxs-lookup"><span data-stu-id="8e3af-125">Example</span></span>
+<span data-ttu-id="8e3af-126">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8e3af-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8e3af-127">请求</span><span class="sxs-lookup"><span data-stu-id="8e3af-127">Request</span></span>
+<span data-ttu-id="8e3af-128">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8e3af-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitrows"
@@ -41,8 +41,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
 ```
 
-##### <a name="response"></a><span data-ttu-id="0f0ef-129">响应</span><span class="sxs-lookup"><span data-stu-id="0f0ef-129">Response</span></span>
-<span data-ttu-id="0f0ef-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f0ef-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8e3af-129">响应</span><span class="sxs-lookup"><span data-stu-id="8e3af-129">Response</span></span>
+<span data-ttu-id="8e3af-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8e3af-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

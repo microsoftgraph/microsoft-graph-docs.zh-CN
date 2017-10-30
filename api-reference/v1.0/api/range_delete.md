@@ -1,43 +1,43 @@
-# <a name="range-delete"></a><span data-ttu-id="8bee7-101">Range: delete</span><span class="sxs-lookup"><span data-stu-id="8bee7-101">Range: delete</span></span>
+# <a name="range-delete"></a><span data-ttu-id="61f29-101">Range: delete</span><span class="sxs-lookup"><span data-stu-id="61f29-101">Range: delete</span></span>
 
-<span data-ttu-id="8bee7-102">删除与范围相关的单元格。</span><span class="sxs-lookup"><span data-stu-id="8bee7-102">Deletes the cells associated with the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8bee7-103">权限</span><span class="sxs-lookup"><span data-stu-id="8bee7-103">Permissions</span></span>
-<span data-ttu-id="8bee7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="8bee7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="61f29-102">删除与范围相关的单元格。</span><span class="sxs-lookup"><span data-stu-id="61f29-102">Deletes the cells associated with the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="61f29-103">权限</span><span class="sxs-lookup"><span data-stu-id="61f29-103">Permissions</span></span>
+<span data-ttu-id="61f29-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="61f29-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="8bee7-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="8bee7-106">Permission type</span></span>      | <span data-ttu-id="8bee7-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8bee7-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="61f29-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="61f29-106">Permission type</span></span>      | <span data-ttu-id="61f29-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="61f29-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8bee7-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8bee7-108">Delegated (work or school account)</span></span> | <span data-ttu-id="8bee7-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8bee7-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8bee7-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8bee7-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8bee7-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="8bee7-111">Not supported.</span></span>    |
-|<span data-ttu-id="8bee7-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="8bee7-112">Application</span></span> | <span data-ttu-id="8bee7-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8bee7-113">Not supported.</span></span> |
+|<span data-ttu-id="61f29-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61f29-108">Delegated (work or school account)</span></span> | <span data-ttu-id="61f29-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61f29-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="61f29-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61f29-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61f29-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="61f29-111">Not supported.</span></span>    |
+|<span data-ttu-id="61f29-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="61f29-112">Application</span></span> | <span data-ttu-id="61f29-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="61f29-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8bee7-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8bee7-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61f29-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61f29-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets/{id|name}/range(<address>)/delete
+POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8bee7-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="8bee7-115">Request headers</span></span>
-| <span data-ttu-id="8bee7-116">名称</span><span class="sxs-lookup"><span data-stu-id="8bee7-116">Name</span></span>       | <span data-ttu-id="8bee7-117">说明</span><span class="sxs-lookup"><span data-stu-id="8bee7-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="61f29-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="61f29-115">Request headers</span></span>
+| <span data-ttu-id="61f29-116">名称</span><span class="sxs-lookup"><span data-stu-id="61f29-116">Name</span></span>       | <span data-ttu-id="61f29-117">说明</span><span class="sxs-lookup"><span data-stu-id="61f29-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8bee7-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="8bee7-118">Authorization</span></span>  | <span data-ttu-id="8bee7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8bee7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="61f29-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="61f29-118">Authorization</span></span>  | <span data-ttu-id="61f29-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="61f29-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8bee7-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="8bee7-121">Request body</span></span>
-<span data-ttu-id="8bee7-122">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="8bee7-122">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="61f29-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="61f29-121">Request body</span></span>
+<span data-ttu-id="61f29-122">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="61f29-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8bee7-123">参数</span><span class="sxs-lookup"><span data-stu-id="8bee7-123">Parameter</span></span>    | <span data-ttu-id="8bee7-124">类型</span><span class="sxs-lookup"><span data-stu-id="8bee7-124">Type</span></span>   |<span data-ttu-id="8bee7-125">说明</span><span class="sxs-lookup"><span data-stu-id="8bee7-125">Description</span></span>|
+| <span data-ttu-id="61f29-123">参数</span><span class="sxs-lookup"><span data-stu-id="61f29-123">Parameter</span></span>    | <span data-ttu-id="61f29-124">类型</span><span class="sxs-lookup"><span data-stu-id="61f29-124">Type</span></span>   |<span data-ttu-id="61f29-125">说明</span><span class="sxs-lookup"><span data-stu-id="61f29-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8bee7-126">Shift</span><span class="sxs-lookup"><span data-stu-id="8bee7-126">shift</span></span>|<span data-ttu-id="8bee7-127">string</span><span class="sxs-lookup"><span data-stu-id="8bee7-127">string</span></span>|<span data-ttu-id="8bee7-p103">指定移动单元格的方式。可能的值是：`Up`、`Left`。</span><span class="sxs-lookup"><span data-stu-id="8bee7-p103">Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.</span></span>|
+|<span data-ttu-id="61f29-126">Shift</span><span class="sxs-lookup"><span data-stu-id="61f29-126">shift</span></span>|<span data-ttu-id="61f29-127">string</span><span class="sxs-lookup"><span data-stu-id="61f29-127">string</span></span>|<span data-ttu-id="61f29-p103">指定移动单元格的方式。可能的值是：`Up`、`Left`。</span><span class="sxs-lookup"><span data-stu-id="61f29-p103">Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8bee7-130">响应</span><span class="sxs-lookup"><span data-stu-id="8bee7-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="61f29-130">响应</span><span class="sxs-lookup"><span data-stu-id="61f29-130">Response</span></span>
 
-<span data-ttu-id="8bee7-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="8bee7-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="61f29-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="61f29-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8bee7-133">示例</span><span class="sxs-lookup"><span data-stu-id="8bee7-133">Example</span></span>
-<span data-ttu-id="8bee7-134">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8bee7-134">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8bee7-135">请求</span><span class="sxs-lookup"><span data-stu-id="8bee7-135">Request</span></span>
-<span data-ttu-id="8bee7-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8bee7-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="61f29-133">示例</span><span class="sxs-lookup"><span data-stu-id="61f29-133">Example</span></span>
+<span data-ttu-id="61f29-134">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="61f29-134">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="61f29-135">请求</span><span class="sxs-lookup"><span data-stu-id="61f29-135">Request</span></span>
+<span data-ttu-id="61f29-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="61f29-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -52,8 +52,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8bee7-137">响应</span><span class="sxs-lookup"><span data-stu-id="8bee7-137">Response</span></span>
-<span data-ttu-id="8bee7-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8bee7-138">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="61f29-137">响应</span><span class="sxs-lookup"><span data-stu-id="61f29-137">Response</span></span>
+<span data-ttu-id="61f29-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="61f29-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
