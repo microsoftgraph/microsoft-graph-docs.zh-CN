@@ -63,7 +63,7 @@
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
 |profession|String|联系人的职业。|
-|spouseName|String|联系人配偶的姓名。|
+|spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |yomiCompanyName|String|联系人的注音日文公司名称。|
@@ -75,8 +75,8 @@
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
-|photo|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
+|照片|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

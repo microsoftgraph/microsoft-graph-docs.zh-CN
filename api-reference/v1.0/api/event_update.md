@@ -53,7 +53,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 |responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |sensitivity|String| 可能的值是：`Normal`、`Personal`、`Private`、`Confidential`。|
-|showAs|String|要显示的状态：空闲 = 0、暂定 = 1、忙碌 = 2、Oof = 3、WorkingElsewhere = 4、未知 =-1。可能的值是：`Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|showAs|String|要显示的状态。 可取值为 `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |
 |subject|String|事件的主题行文本。|
 
@@ -62,8 +62,11 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
+
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -81,12 +84,15 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+
 ##### <a name="response"></a>响应
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -105,6 +111,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true

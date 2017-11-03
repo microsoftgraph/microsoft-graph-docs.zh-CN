@@ -31,9 +31,9 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 - 不支持 `$select`。
 
 
-### <a name="optional-request-header"></a>可选的请求标头
+### <a name="optional-request-header"></a>可选的请求头
 
-每个增量查询 GET 请求在响应中返回一个或多个事件的集合。可以视需要指定请求头 _Prefer: odata.maxpagesize={x}_，设置在响应中返回的事件数上限。
+每个 delta 查询 GET 请求在响应中返回包含一个或多个事件的集合。 可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置响应中可包含的事件数上限。
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>同步日历视图中事件的示例

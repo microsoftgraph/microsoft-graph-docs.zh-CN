@@ -8,8 +8,8 @@
 
 - [开始在 Objective-C iOS 应用中使用 Microsoft Graph](ios_objectivec.md)
 
-## <a name="ios-swift-sonnect-sample"></a>iOS Swift 连接示例
-此示例将 Microsoft Graph 客户端库用于 Objective-C，以访问 Microsoft Graph 终结点。 用户身份验证由第三方 [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) 库处理。 此库允许应用从本地 Azure Active Directory 实例对用户进行身份验证，但是不会对 MSA 用户进行身份验证。
+## <a name="ios-swift-connect-sample"></a>iOS Swift Connect 示例
+此示例对 Objective C 使用 Microsoft Graph 客户端库，以访问 Microsoft Graph 终结点。 用户身份验证由第三方 [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) 库处理。 此库允许应用从本地 Azure Active Directory 实例对用户进行身份验证，但是不会对 MSA 用户进行身份验证。
 
 本示例演示了如何通过 Graph 访问用户的 Azure 个人资料。 另外，还会介绍如何获取用户的个人资料照片、将照片上传到用户的 OneDrive 存储以及在 Outlook 电子邮件正文中嵌入照片。
 

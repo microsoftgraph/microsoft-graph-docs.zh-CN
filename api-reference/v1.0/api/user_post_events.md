@@ -41,11 +41,11 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [event](../resources/event.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。它使用 `Prefer: outlook.timezone` 请求标头来指定应使用该时区的响应中的**开始**和**结束**时间。
+##### <a name="request-1"></a>请求 1
+下面展示了示例请求。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -84,8 +84,8 @@ Content-length: 600
   ]
 }
 ```
-在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
+在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
+##### <a name="response-1"></a>响应 1
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -167,6 +167,161 @@ Content-length: 2197
     }
 }
 ```
+
+##### <a name="request-2"></a>请求 2
+第二个示例展示了如何创建定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的上午 10:00 点到上午 11:00 点之间发生。
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Content-type: application/json
+
+{
+  "subject": "Let's go for coffee",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does late morning work for you?"
+  },
+  "start": {
+      "dateTime": "2017-09-04T10:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-09-04T11:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "recurrence": {
+    "pattern": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [ "Monday" ]
+    },
+    "range": {
+      "type": "endDate",
+      "startDate": "2017-09-04",
+      "endDate": "2017-12-31"
+    }
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AdeleV@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
+}
+```
+在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
+##### <a name="response-2"></a>响应 2
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==\"",
+    "id":"AAMkADQwMDI5YT",
+    "createdDateTime":"2017-10-14T07:37:39.0083072Z",
+    "lastModifiedDateTime":"2017-10-14T07:37:40.0239406Z",
+    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==",
+    "categories":[
+
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "iCalUId":"040000008200E00074C5B7101A82E008000000000068AD4FBF44D301000000000000000010000000CA802EEBDE19CB4AB552714F48C7EEFB",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go for coffee",
+    "bodyPreview":"Does late morning work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"seriesMaster",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMDI5YT&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
+    },
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes late morning work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start":{
+        "dateTime":"2017-09-04T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-09-04T11:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Harry's Bar"
+    },
+    "recurrence":{
+        "pattern":{
+            "type":"weekly",
+            "interval":1,
+            "month":0,
+            "dayOfMonth":0,
+            "daysOfWeek":[
+                "monday"
+            ],
+            "firstDayOfWeek":"sunday",
+            "index":"first"
+        },
+        "range":{
+            "type":"endDate",
+            "startDate":"2017-09-04",
+            "endDate":"2017-12-31",
+            "recurrenceTimeZone":"Pacific Standard Time",
+            "numberOfOccurrences":0
+        }
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Alex Wilber",
+            "address":"AlexW@contoso.onmicrosoft.com"
+        }
+    }
+}
+```
+
+
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)

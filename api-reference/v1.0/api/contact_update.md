@@ -66,7 +66,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
 |profession|String|联系人的职业。|
-|spouseName|String|联系人配偶的姓名。|
+|spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|

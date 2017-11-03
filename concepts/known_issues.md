@@ -234,7 +234,11 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 无法在创建**管理单元**、**设备**、**组**、**组织**或**用户**的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
 
-### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每个资源实例允许 100 个架构扩展属性值的限制
+### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>创建资源实例的同时添加架构扩展数据
+
+不能在创建 **contact**、**event**、**message** 或 **post** 实例的同一个操作中指定架构扩展。 必须先创建资源实例，然后再对此实例执行 `PATCH`，从而添加架构扩展和自定义数据。 
+
+### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每资源实例最多可以添加 100 个架构扩展属性值
 
 目录资源（如**设备**、**组**和**用户**）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
 

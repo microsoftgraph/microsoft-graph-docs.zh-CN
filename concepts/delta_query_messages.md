@@ -35,7 +35,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 ### <a name="optional-request-header"></a>可选的请求标头
 
-每个 delta 查询 GET 请求在响应中返回一个或多个邮件的集合。可以选择性地指定请求标头 _Prefer: odata.maxpagesize={x}_，以设置响应的最大邮件数。
+每个 delta 查询 GET 请求在响应中返回包含一个或多个邮件的集合。 可以视需要指定请求头 `Prefer: odata.maxpagesize={x}`，设置响应中可包含的邮件数上限。
 
 <!--
 ### Iterative process 

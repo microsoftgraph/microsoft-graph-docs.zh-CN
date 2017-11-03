@@ -28,7 +28,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 |:---------------|:--------|:----------|
 |height|number|可选。生成的图像的所需高度。|
 |width|number|可选。生成的图像的所需宽度。|
-|fittingMode|string|可选。该方法用于将图表缩放到指定的尺寸（如果设置了高度和宽度）。”可能的值是：`Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|可选。用于将图表缩放到指定尺寸的方法（如果设置了高度和宽度的话）。可取值为 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -41,16 +41,6 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-Content-type: application/json
-Content-length: 77
-
-{
-  "height": {
-  },
-  "width": {
-  },
-  "fittingMode": "fittingMode-value"
-}
 ```
 
 ##### <a name="response"></a>响应
@@ -58,13 +48,24 @@ Content-length: 77
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
+Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 {
 "value" : "base-64 chart image string"
 }
 ```
+
+## <a name="usage"></a>用法
+
+可以在 HTML 图像标记内显示 base-64 字符串：`<img src="data:image/png;base64,{base-64 chart image string}/>`。
+
+对于默认行为，请使用 `Image(width=0,height=0,fittingMode='fit')`。 下面的示例展示了使用默认参数返回的图表图像。
+
+![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+若要自定义图像的显示方式，请指定高度、宽度和调整模式。 下面展示了使用 `Image(width=500,height=500,fittingMode='Fill')` 参数检索的同一个图表图像。
+
+![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,6 +1,6 @@
 # <a name="create-calendar"></a>创建日历
 
-使用此 API 在日历组中创建新日历。
+此 API 可用于在[用户](../resources/user.md)的日历组中新建日历。 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -29,11 +29,11 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Calendar](../resources/calendar.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [calendar](../resources/calendar.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201, Created` 响应代码和 [Calendar](../resources/calendar.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [calendar](../resources/calendar.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

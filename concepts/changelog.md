@@ -4,6 +4,36 @@
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
+## <a name="october-2017"></a>2017 年 10 月
+
+### <a name="reports-apis"></a>报表 API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|更改|Beta|添加了 [getEmailActivityUserDetail](../api-reference/beta/api/reportroot_getemailactivityuserdetail.md)、[getEmailActivityCounts](../api-reference/beta/api/reportroot_getemailactivitycounts.md) 和 [getEmailActivityUserCounts](../api-reference/beta/api/reportroot_getemailactivityusercounts.md) API。 这些 API 取代了 EmailActivity API。|
+|更改|Beta|添加了 [getEmailAppUsageUserDetail](../api-reference/beta/api/reportroot_getemailappusageuserdetail.md)、[getEmailAppUsageAppsUserCounts](../api-reference/beta/api/reportroot_getemailappusageappsusercounts.md)、[getEmailAppUsageUserCounts](../api-reference/beta/api/reportroot_getemailappusageusercounts.md) 和 [getEmailAppUsageVersionsUserCounts](../api-reference/beta/api/reportroot_getemailappusageversionsusercounts.md) API。 这些 API 取代了 EmailAppUsage API。|
+|更改|Beta|添加了 [getMailboxUsageUserDetail](../api-reference/beta/api/reportroot_getmailboxusageuserdetail.md)、[getMailboxUsageMailboxCounts](../api-reference/beta/api/reportroot_getmailboxusagemailboxcounts.md)、[getMailboxUsageQuotaMailboxStatusCounts](../api-reference/beta/api/reportroot_getmailboxusagequotamailboxstatuscounts.md) 和 [getMailboxUsageStorage](../api-reference/beta/api/reportroot_getmailboxusagestorage.md) API。 这些 API 取代了 MailboxUsage API。|
+|更改|Beta|添加了 [getOffice365ActivationsUserDetail](../api-reference/beta/api/reportroot_getoffice365activationsuserdetail.md)、[getOffice365ActivationCounts](../api-reference/beta/api/reportroot_getoffice365activationcounts.md) 和 [getOffice365ActivationsUserCounts](../api-reference/beta/api/reportroot_getoffice365activationsusercounts.md) API。 这些 API 取代了 Office365Activations API。|
+|更改|Beta|添加了 [getOffice365ActiveUserDetail](../api-reference/beta/api/reportroot_getoffice365activeuserdetail.md)、[getOffice365ActiveUserCounts](../api-reference/beta/api/reportroot_getoffice365activeusercounts.md) 和 [getOffice365ServicesUserCounts](../api-reference/beta/api/reportroot_getoffice365servicesusercounts.md) API。 这些 API 取代了 Office365ActiveUser API。|
+|更改|Beta|添加了 [getOffice365GroupsActivityUserDetail](../api-reference/beta/api/reportroot_getoffice365groupsactivityuserdetail.md)、[getOffice365GroupsActivityCounts](../api-reference/beta/api/reportroot_getoffice365groupsactivitycounts.md)、[getOffice365GroupsActivityGroupCounts](../api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts.md)、[getOffice365GroupsActivityStorage](../api-reference/beta/api/reportroot_getoffice365groupsactivitystorage.md) 和 [getOffice365GroupsActivityFileCounts](../api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts.md) API。 这些 API 取代了 Office365GroupsActivity API。|
+|更改|Beta|添加了 [getOneDriveActivityUserDetail](../api-reference/beta/api/reportroot_getonedriveactivityuserdetail.md)、[getOneDriveActivityUserCounts](../api-reference/beta/api/reportroot_getonedriveactivityusercounts.md) 和 [getOneDriveActivityFileCounts](../api-reference/beta/api/reportroot_getonedriveactivityfilecounts.md) API。 这些 API 取代了 OneDriveActivity API。|
+|更改|Beta|添加了 [getOneDriveUsageUserDetail](../api-reference/beta/api/reportroot_getonedriveusageuserdetail.md)、[getOneDriveUsageAccountCounts](../api-reference/beta/api/reportroot_getonedriveusageaccountcounts.md)、[getOneDriveUsageFileCounts](../api-reference/beta/api/reportroot_getonedriveusagefilecounts.md) 和 [getOneDriveUsageStorage](../api-reference/beta/api/reportroot_getonedriveusagestorage.md) API。 这些 API 取代了 OneDriveUsage API。|
+|更改|Beta|添加了 [getSharePointActivityUserDetail](../api-reference/beta/api/reportroot_getsharepointactivityuserdetail.md)、[getSharePointActivityFileCounts](../api-reference/beta/api/reportroot_getsharepointactivityfilecounts.md)、[getSharePointActivityUserCounts](../api-reference/beta/api/reportroot_getsharepointactivityusercounts.md) 和 [getSharePointActivityPages](../api-reference/beta/api/reportroot_getsharepointactivitypages.md) API。 这些 API 取代了 SharePointActivity API。|
+|更改|Beta|添加了 [getSharePointSiteUsageUserDetail](../api-reference/beta/api/reportroot_getsharepointsiteusageuserdetail.md)、[getSharePointSiteUsageFileCounts](../api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts.md)、[getSharePointSiteUsageSiteCounts](../api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts.md)、[getSharePointSiteUsageStorage](../api-reference/beta/api/reportroot_getsharepointsiteusagestorage.md) 和 [getSharePointSiteUsagePages](../api-reference/beta/api/reportroot_getsharepointsiteusagepages.md) API。 这些 API 取代了 SharePointSiteUsage API。|
+|更改|Beta|添加了 [getSkypeForBusinessActivityUserDetail](../api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail.md)、[getSkypeForBusinessActivityCounts](../api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts.md) 和 [getSkypeForBusinessActivityUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts.md) API。 这些 API 取代了 SfbActivity API。|
+|更改|Beta|添加了 [getSkypeForBusinessDeviceUsageUserDetail](../api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail.md)、[getSkypeForBusinessDeviceUsageDistributionUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts.md) 和 [getSkypeForBusinessDeviceUsageUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageusercounts.md) API。 这些 API 取代了 SfbDeviceUsage API。|
+|更改|Beta|添加了 [getSkypeForBusinessOrganizerActivityCounts](../api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivitycounts.md)、[getSkypeForBusinessOrganizerActivityUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityusercounts.md) 和 [getSkypeForBusinessOrganizerActivityMinuteCounts](../api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityminutecounts.md) API。 这些 API 取代了 SfbOrganizerActivity API。|
+|更改|Beta|添加了 [getSkypeForBusinessParticipantActivityCounts](../api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivitycounts.md)、[getSkypeForBusinessParticipantActivityUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityusercounts.md) 和 [getSkypeForBusinessParticipantActivityMinuteCounts](../api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityminutecounts.md) API。 这些 API 取代了 SfbParticipantActivity API。|
+|更改|Beta|添加了 [getSkypeForBusinessPeerToPeerActivityCounts](../api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivitycounts.md)、[getSkypeForBusinessPeerToPeerActivityUserCounts](../api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts.md) 和 [getSkypeForBusinessPeerToPeerActivityMinuteCounts](../api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts.md) API。 这些 API 取代了 SfbP2PActivity API。|
+|更改|Beta|添加了 [getYammerActivityUserDetail](../api-reference/beta/api/reportroot_getyammeractivityuserdetail.md)、[getYammerActivityCounts](../api-reference/beta/api/reportroot_getyammeractivitycounts.md) 和 [getYammerActivityUserCounts](../api-reference/beta/api/reportroot_getyammeractivityusercounts.md) API。 这些 API 取代了 YammerActivity API。|
+|更改|Beta|添加了 [getYammerDeviceUsageUserDetail](../api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail.md)、[getYammerDeviceUsageDistributionUserCounts](../api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts.md) 和 [getYammerDeviceUsageUserCounts](../api-reference/beta/api/reportroot_getyammerdeviceusageusercounts.md) API。 这些 API 取代了 YammerDeviceUsage API。|
+|更改|Beta|添加了 [getYammerGroupsActivityUserDetail](../api-reference/beta/api/reportroot_getyammergroupsactivityuserdetail.md)、[getYammerGroupsActivityGroupCounts](../api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts.md) 和 [getYammerGroupsActivityCounts](../api-reference/beta/api/reportroot_getyammergroupsactivitycounts.md) API。 这些 API 取代了 YammerGroupsActivity API。|
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|Beta|添加了 [identityProvider](../api-reference/beta/resources/identityprovider.md) 实体，以及 [create](../api-reference/beta/api/identityprovider_post_identityproviders.md)、[list](../api-reference/beta/api/identityprovider_list.md)、[get](../api-reference/beta/api/identityprovider_get.md)、[update](../api-reference/beta/api/identityprovider_update.md) 和 [delete](../api-reference/beta/api/identityprovider_delete.md) 操作。|
+
 ## <a name="september-2017"></a>2017 年 9 月
 
 ### <a name="intune-apis"></a>Intune API
@@ -57,7 +87,7 @@
 | 添加项 | v1.0 | 向 [DriveItem][] 资源添加了 **listItem** 关系。 |
 | 添加项 | v1.0 | 向 [SharedDriveItem][] 资源添加了 **list** 和 **listItem** 关系。 |
 | 添加项 | v1.0 | 新增了复杂类型：[FolderView][] |
-| 添加项 | v1.0 | 向 [Folder][] 复杂类型添加了 **view** 属性。 |
+| Addition | v1.0 | 向 [Folder][] 复杂类型添加了 **view** 属性。 |
 | 添加项 | v1.0 | 向 [ItemReference][] 复杂类型添加了 **driveType** 属性 |
 | 添加项 | v1.0 | 向 [Video][] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
 | 添加项 | beta | 向 [Drive][Drive-beta] 资源添加了 **system** 属性。  |
@@ -66,7 +96,7 @@
 | 添加项 | beta | 向 [DriveItem][DriveItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
 | 添加项 | beta | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
 | 添加项 | beta | 新增了复杂类型：[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
-| 添加项 | beta | 向 [ItemReference][ItemReference-beta] 复杂类型添加了 **driveType** 属性。 |
+| Addition | beta | 向 [ItemReference][ItemReference-beta] 复杂类型添加了 **driveType** 属性。 |
 | 删除 | beta | 从 [SharepointIds][SharepointIds-beta] 复杂类型中删除了 **tenantId** 属性。 |
 | 添加项 | v1.0 | 向 [Video][Video-beta] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
 | 添加项 | beta | 在 [DriveItem][DriveItem-beta] 资源上添加了 [CheckIn][CheckIn-beta] 和 [CheckOut][CheckOut-beta] 操作。 |
@@ -148,10 +178,10 @@
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
 | 添加项 | v1.0 | 添加了新实体：[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][] |
-| 添加项 | v1.0 | 向 [Site][] 资源添加了 **columns**、**contentTypes**、**items** 和 **lists** 关系。 |
+| Addition | v1.0 | 向 [Site][] 资源添加了 **columns**、**contentTypes**、**items** 和 **lists** 关系。 |
 | 添加项 | v1.0 | 新增了复杂类型：[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
-| 添加项 | beta | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta] |
-| 添加项 | beta | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
+| Addition | beta | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta] |
+| Addition | beta | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
 | 添加项 | beta | 向 [List][List-beta] 资源添加了**displayName** 和 **system** 属性。 |
 | 添加项 | beta | 向 [List][List-beta] 资源添加了 **activities** 和 **contentTypes** 关系。 |
 | 添加项 | beta | 向 [ListItem][ListItem-beta] 资源添加了 **contentType** 属性。 |

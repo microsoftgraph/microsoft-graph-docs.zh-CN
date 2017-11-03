@@ -1,6 +1,37 @@
 # <a name="get-mailfolder"></a>获取 mailFolder
 
-检索 mailfolder 对象的属性和关系。
+检索邮件文件夹对象的属性和关系。
+
+
+### <a name="get-another-users-message-folder"></a>获取其他用户的邮件文件夹
+
+如果拥有应用程序权限，或从某用户获得相应委派[权限](#permissions)，可以获取其他用户的邮件文件夹。 此部分重点介绍了涉及委派权限的方案。
+
+例如，应用程序已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了邮件文件夹。 可以在下面的示例查询中指定 Garth 的用户 ID（或用户主体名称），获取此共享文件夹。
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/mailFolders/{id}
+```
+
+此功能适用于对各个用户执行的所有受支持 GET 邮件文件夹操作，如下面的 [HTTP 请求](#http-request)部分所列。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
+
+如果 Garth 未与 John 共享他的邮件文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取登录用户的邮件文件夹，而此查询等效于使用 /me 快捷方式：
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}
+```
+
+此功能仅适用于针对以下资源的 GET 操作：
+
+- 共享联系人文件夹、日历和邮件文件夹 
+- 共享文件夹中的联系人、事件和邮件
+- 委派邮箱中的上述资源
+
+此功能不适用于针对联系人、事件、邮件及其文件夹的其他操作。
+
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 

@@ -1,8 +1,8 @@
 # <a name="use-microsoft-graph-to-access-excel-in-a-python-app"></a>使用 Microsoft Graph 在 Python 应用中访问 Excel
 
-可以使用 Microsoft Graph API 读取和更新存储在受支持的在线存储平台（包括 OneDrive 和 SharePoint）中的工作簿。`Workbook`（或 Excel 文件）资源包含所有其他 Excel 资源，应用可以通过简单的导航来访问它们。 
+可以使用 Microsoft Graph API 读取和更新存储在受支持的在线存储平台（包括 OneDrive 和 SharePoint）中的工作簿。 `Workbook`（或 Excel 文件）资源包含所有其他 Excel 资源，应用可以通过简单的导航来访问它们。 
 
-可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。 例如，`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 返回属于工作簿的工作表对象的集合。    
 
 本演练介绍如何从 Python Web 应用将请求发送到 Excel REST API。 
@@ -15,7 +15,7 @@
 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
-可以使用 [Azure AD v2.0 终结点](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) 对 Excel REST API 调用进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v2.0 终结点](https://graph.microsoft.io/en-us/docs/concepts/converged_auth)验证 Excel REST API 调用。 所有 API 都需要有 `Authorization: Bearer {access-token}` HTTP 头。   
   
 要使用 Excel 资源，需要以下 [权限范围](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) 之一：
 
@@ -49,7 +49,7 @@
 
 4. 复制应用程序 ID。这是应用的唯一标识符。
 
-5. 在“**应用程序机密**”下，选择“**生成新密码**”。从“**生成的新密码**”对话框复制应用机密。
+5. 在“应用程序机密”****下，选择“生成新密码”****。从“生成的新密码”****对话框复制应用机密。
 
     将使用此应用程序 ID 和应用机密配置应用。
 
@@ -57,13 +57,13 @@
 
 7. 请确保已选中“允许隐式流”****复选框，并输入应用的重定向 URI。
 
-    “允许隐式流”****选项可启用 OpenID Connect 混合流。在身份验证过程中，这可使应用同时接收登录信息 (**id_token**) 以及应用用来获取访问令牌的项目（在这种情况下，项目为授权代码）。
+    使用“允许隐式流”****选项，可以启用 OpenID Connect 混合流。 在身份验证过程中，这可以让应用程序同时接收登录信息 (**id_token**)，以及应用程序用来获取访问令牌的项目（在此示例中为授权代码）。
 
 8. 选择“保存”****。
 
 ### <a name="create-oauth-client"></a>创建 OAuth 客户端
 
-应用需要注册 Flask-OAuth 客户端实例，用于启动 OAuth 流并获取访问令牌。请注意，需要 *Files.ReadWrite* 范围才能获取支持永久更改的 Excel 会话。
+应用需要注册 Flask-OAuth 客户端实例，用于启动 OAuth 流并获取访问令牌。 请注意，需要 *Files.ReadWrite* 范围才能获取支持永久更改的 Excel 会话。
 
 ```python
     # Put your consumer key and consumer secret into a config file
@@ -81,7 +81,7 @@
     )
 ```
 
-### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在回复 URL 页面中接收授权代码
+### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在答复 URL 页中接收授权代码
 
 用户登录后，浏览器将重定向到回复 URL。成功授权后，将在响应正文中返回访问令牌（用于授权其他请求）。 
 
@@ -118,8 +118,8 @@
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **注意** 该请求还必须发送包含 Graph API 接受的值的 **Content-Type** 标头，例如 `application/json`。
@@ -127,10 +127,10 @@
 ### <a name="getting-an-excel-session"></a>获取 Excel 会话
 #### <a name="request"></a>请求 
 
-通过将 `persistChanges` 值设置为 `true` 或 `false` 可传递一个 JSON 对象。当 `persistChanges` 值设置为 `false` 时，则返回非永久会话 id。此示例使用[请求](http://docs.python-requests.org/en/latest/user/quickstart) HTTP 库 
+通过将 `persistChanges` 值设置为 `true` 或 `false` 可传递一个 JSON 对象。 如果 `persistChanges` 值设置为 `false`，返回非永久会话 ID。 此示例使用[请求](http://docs.python-requests.org/en/latest/user/quickstart) HTTP 库 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -163,7 +163,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="usage"></a>用法 
 
-将前一个调用中返回的会话 ID 传递为 **Workbook-Session-Id** HTTP 标头中后续 API 请求上的标头。例如，列出该 Excel 工作簿中的工作表。
+将前一个调用中返回的会话 ID 传递为 **Workbook-Session-Id** HTTP 标头中后续 API 请求上的标头。 例如，列出该 Excel 工作簿中的工作表。
 
 ```python
     # Replace the id with your Excel workbook's drive id
@@ -183,7 +183,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

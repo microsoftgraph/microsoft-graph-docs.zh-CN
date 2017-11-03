@@ -67,21 +67,21 @@
 |responseStatus|[responseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
 |sensitivity|String| 可能的值是：`Normal`、`Personal`、`Private`、`Confidential`。|
 |seriesMasterId|String|分配给项目的类别。|
-|showAs|String|要显示的状态：空闲 = 0、暂定 = 1、忙碌 = 2、Oof = 3、WorkingElsewhere = 4、未知 =-1。可能的值是：`Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|showAs|String|要显示的状态。 可取值为 `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
 |subject|String|事件的主题行文本。|
-|type|String|事件类型：SingleInstance = 0，发送次数 = 1，异常 = 2，SeriesMaster = 3。可能的值是：`SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。|
+|type|String|事件类型。 可取值为 `SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。 只读。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合|事件的 [fileAttachment](fileAttachment.md) 和 [itemAttachment](itemAttachment.md) 附件集合。导航属性。只读。可为 Null。|
-|calendar|[日历](calendar.md)|包含事件的日历。导航属性。只读。|
+|日历|[日历](calendar.md)|包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合|为事件定义的开放扩展集合。只读。可为 Null。|
 |instances|[事件](event.md) 集合|事件的实例。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -24,6 +24,8 @@ Microsoft Graph 由各种资源组成，这些资源通过关系相连接。例�
 
 使用 Microsoft Graph API，你可以实现这些功能及其他更多功能。
 
+>**注意：**使用 Microsoft Graph API，即表示同意接受 [Microsoft Graph 使用条款](../misc/terms-of-use.md)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。
+
 ## <a name="next-steps"></a>后续步骤
 
 - 查看某些[精选方案](../concepts/featured_scenarios.md)。
