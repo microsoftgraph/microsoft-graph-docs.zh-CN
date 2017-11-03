@@ -1,21 +1,51 @@
-# <a name="list-messages"></a><span data-ttu-id="9f21e-101">List messages</span><span class="sxs-lookup"><span data-stu-id="9f21e-101">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="b90a4-101">List messages</span><span class="sxs-lookup"><span data-stu-id="b90a4-101">List messages</span></span>
 
-<span data-ttu-id="9f21e-102">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="9f21e-102">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
+<span data-ttu-id="b90a4-102">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="b90a4-102">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
 
-<span data-ttu-id="9f21e-103">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="9f21e-103">Currently, this operation returns message bodies in only HTML format.</span></span>
+<span data-ttu-id="b90a4-103">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="b90a4-103">Currently, this operation returns message bodies in only HTML format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9f21e-104">权限</span><span class="sxs-lookup"><span data-stu-id="9f21e-104">Permissions</span></span>
-<span data-ttu-id="9f21e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="9f21e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="9f21e-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="9f21e-107">Permission type</span></span>      | <span data-ttu-id="9f21e-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9f21e-108">Permissions (from least to most privileged)</span></span>              |
+### <a name="get-messages-in-another-users-message-folder"></a><span data-ttu-id="b90a4-104">获取其他用户的邮件文件夹中的邮件</span><span class="sxs-lookup"><span data-stu-id="b90a4-104">Get messages in another user's message folder</span></span>
+
+<span data-ttu-id="b90a4-105">如果拥有应用程序权限，或从某用户获得相应委派[权限](#permissions)，可以获取其他用户的邮件文件夹中的邮件。</span><span class="sxs-lookup"><span data-stu-id="b90a4-105">If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get contacts from another user's contact folder.</span></span> <span data-ttu-id="b90a4-106">此部分重点介绍了涉及委派权限的方案。</span><span class="sxs-lookup"><span data-stu-id="b90a4-106">This section focuses on scenarios that involve delegated permissions.</span></span>
+
+<span data-ttu-id="b90a4-107">例如，应用程序已从用户 John 获得委派权限。</span><span class="sxs-lookup"><span data-stu-id="b90a4-107">For example, your app has acquired delegated permissions from the user, John.</span></span> <span data-ttu-id="b90a4-108">假设另一位用户 Garth 与 John 共享了邮件文件夹。</span><span class="sxs-lookup"><span data-stu-id="b90a4-108">Suppose another user, Garth, has shared a contact folder with John.</span></span> <span data-ttu-id="b90a4-109">可以在下面的示例查询中指定 Garth 的用户 ID（或用户主体名称），获取此共享文件夹中的邮件。</span><span class="sxs-lookup"><span data-stu-id="b90a4-109">You can get the contacts in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/messages
+```
+
+<span data-ttu-id="b90a4-110">此功能适用于对各个用户执行的所有受支持 GET 邮件操作，如下面的 [HTTP 请求](#http-request)部分所列。</span><span class="sxs-lookup"><span data-stu-id="b90a4-110">This capability applies to all the supported GET calendar operations for an individual user, as listed in the [HTTP request](#http-request) section below.</span></span> <span data-ttu-id="b90a4-111">如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。</span><span class="sxs-lookup"><span data-stu-id="b90a4-111">It also applies if Garth has delegated his entire mailbox to John.</span></span>
+
+<span data-ttu-id="b90a4-112">如果 Garth 未与 John 共享他的邮件文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。</span><span class="sxs-lookup"><span data-stu-id="b90a4-112">If Garth has not shared his contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error.</span></span> <span data-ttu-id="b90a4-113">在这种情况下，指定用户 ID 或用户主体名称只适用于获取登录用户自己的邮件文件夹中的邮件，而此查询等效于使用 /me 快捷方式：</span><span class="sxs-lookup"><span data-stu-id="b90a4-113">In such cases, specifying a user ID or user principal name only works for getting contacts in the signed-in user’s own contact folders, and the query is equivalent to using the /me shortcut:</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages
+```
+
+<span data-ttu-id="b90a4-114">此功能仅适用于针对以下资源的 GET 操作：</span><span class="sxs-lookup"><span data-stu-id="b90a4-114">This capability is available in only GET operations of:</span></span>
+
+- <span data-ttu-id="b90a4-115">共享联系人文件夹、日历和邮件文件夹</span><span class="sxs-lookup"><span data-stu-id="b90a4-115">Shared contact folders, calendars, and message folders</span></span> 
+- <span data-ttu-id="b90a4-116">共享文件夹中的联系人、事件和邮件</span><span class="sxs-lookup"><span data-stu-id="b90a4-116">Contacts and events in shared folders</span></span>
+- <span data-ttu-id="b90a4-117">委派邮箱中的上述资源</span><span class="sxs-lookup"><span data-stu-id="b90a4-117">The above resources in delegated mailboxes</span></span>
+
+<span data-ttu-id="b90a4-118">此功能不适用于针对联系人、事件、邮件及其文件夹的其他操作。</span><span class="sxs-lookup"><span data-stu-id="b90a4-118">This capability is not available in other operations for contacts, events, and their folders.</span></span>
+
+
+## <a name="permissions"></a><span data-ttu-id="b90a4-119">权限</span><span class="sxs-lookup"><span data-stu-id="b90a4-119">Permissions</span></span>
+<span data-ttu-id="b90a4-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="b90a4-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="b90a4-122">权限类型</span><span class="sxs-lookup"><span data-stu-id="b90a4-122">Permission type</span></span>      | <span data-ttu-id="b90a4-123">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b90a4-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9f21e-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9f21e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="9f21e-110">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9f21e-110">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9f21e-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9f21e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f21e-112">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9f21e-112">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9f21e-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="9f21e-113">Application</span></span> | <span data-ttu-id="9f21e-114">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9f21e-114">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b90a4-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b90a4-124">Delegated (work or school account)</span></span> | <span data-ttu-id="b90a4-125">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b90a4-125">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b90a4-126">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b90a4-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b90a4-127">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b90a4-127">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b90a4-128">应用程序</span><span class="sxs-lookup"><span data-stu-id="b90a4-128">Application</span></span> | <span data-ttu-id="b90a4-129">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b90a4-129">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9f21e-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9f21e-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b90a4-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b90a4-130">HTTP request</span></span>
 
-<span data-ttu-id="9f21e-116">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="9f21e-116">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="b90a4-131">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b90a4-131">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +53,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="9f21e-117">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="9f21e-117">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="b90a4-132">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="b90a4-132">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,25 +61,25 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9f21e-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9f21e-118">Optional query parameters</span></span>
-<span data-ttu-id="9f21e-119">此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9f21e-119">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="9f21e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9f21e-120">Request headers</span></span>
-| <span data-ttu-id="9f21e-121">标头</span><span class="sxs-lookup"><span data-stu-id="9f21e-121">Header</span></span>       | <span data-ttu-id="9f21e-122">值</span><span class="sxs-lookup"><span data-stu-id="9f21e-122">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="b90a4-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b90a4-133">Optional query parameters</span></span>
+<span data-ttu-id="b90a4-134">此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b90a4-134">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b90a4-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="b90a4-135">Request headers</span></span>
+| <span data-ttu-id="b90a4-136">标头</span><span class="sxs-lookup"><span data-stu-id="b90a4-136">Header</span></span>       | <span data-ttu-id="b90a4-137">值</span><span class="sxs-lookup"><span data-stu-id="b90a4-137">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9f21e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9f21e-123">Authorization</span></span>  | <span data-ttu-id="9f21e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9f21e-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b90a4-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="b90a4-138">Authorization</span></span>  | <span data-ttu-id="b90a4-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b90a4-p106">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9f21e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9f21e-126">Request body</span></span>
-<span data-ttu-id="9f21e-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9f21e-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b90a4-141">请求正文</span><span class="sxs-lookup"><span data-stu-id="b90a4-141">Request body</span></span>
+<span data-ttu-id="b90a4-142">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b90a4-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9f21e-128">响应</span><span class="sxs-lookup"><span data-stu-id="9f21e-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b90a4-143">响应</span><span class="sxs-lookup"><span data-stu-id="b90a4-143">Response</span></span>
 
-<span data-ttu-id="9f21e-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一组 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9f21e-129">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="b90a4-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一组 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b90a4-144">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-<span data-ttu-id="9f21e-130">此请求的默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="9f21e-130">The default page size for this request is 10 messages.</span></span>
+<span data-ttu-id="b90a4-145">此请求的默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="b90a4-145">The default page size for this request is 10 messages.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9f21e-131">示例</span><span class="sxs-lookup"><span data-stu-id="9f21e-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9f21e-132">请求</span><span class="sxs-lookup"><span data-stu-id="9f21e-132">Request</span></span>
-<span data-ttu-id="9f21e-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9f21e-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b90a4-146">示例</span><span class="sxs-lookup"><span data-stu-id="b90a4-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b90a4-147">请求</span><span class="sxs-lookup"><span data-stu-id="b90a4-147">Request</span></span>
+<span data-ttu-id="b90a4-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b90a4-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -57,8 +87,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages
 ```
-##### <a name="response"></a><span data-ttu-id="9f21e-134">响应</span><span class="sxs-lookup"><span data-stu-id="9f21e-134">Response</span></span>
-<span data-ttu-id="9f21e-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9f21e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b90a4-149">响应</span><span class="sxs-lookup"><span data-stu-id="b90a4-149">Response</span></span>
+<span data-ttu-id="b90a4-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b90a4-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
