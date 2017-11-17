@@ -1,0 +1,4 @@
+<span data-ttu-id="9deb5-p121">Planner API 中的所有 `POST`、`PATCH` 和 `DELETE` 请求需要使用受请求约束的资源中可见的最后一个 etag 值指定 `If-Match` 标头。此外，如果请求中指定的 etag 值不再匹配服务中资源的版本，可以返回 412 状态代码。在这种情况下，客户端应该再次读取资源并获取新的 etag。</span><span class="sxs-lookup"><span data-stu-id="9deb5-p121">All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request. Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.</span></span> 
+
+Planner API 中的所有 `POST`、`PATCH` 和 `DELETE` 请求需要使用受请求约束的资源中可见的最后一个 etag 值指定 `If-Match` 标头。此外，如果请求中指定的 etag 值不再匹配服务中资源的版本，可以返回 412 状态代码。在这种情况下，客户端应该再次读取资源并获取新的 etag。
+
