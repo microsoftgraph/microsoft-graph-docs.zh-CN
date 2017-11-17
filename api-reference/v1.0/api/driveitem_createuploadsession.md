@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: "可恢复的文件上传"
-ms.openlocfilehash: 11418e4f2dcb761faddbb8d8ed045e87278b8699
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
+ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -50,6 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 例如，要控制是否已获得文件名的行为，可以在请求正文中指定冲突行为属性。
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "item": {
@@ -64,7 +65,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
 
-### <a name="response"></a>响应
+### <a name="request"></a>请求
 
 对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 
 
@@ -310,7 +311,7 @@ If-Match: {etag or ctag}
 
 如果可以使用新的元数据提交文件，将返回 `HTTP 201 Created` 或 `HTTP 200 OK` 响应，其中包含已上传文件的项元数据。
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
