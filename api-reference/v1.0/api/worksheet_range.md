@@ -20,13 +20,14 @@ POST /workbook/worksheets/{id|name}/Range
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
+|地址|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 
 ## <a name="response"></a>响应
 

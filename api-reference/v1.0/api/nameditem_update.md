@@ -19,13 +19,14 @@ PATCH /workbook/names(<name>)
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|boolean|指定对象是否可见。|
+|visible|布尔|指定对象是否可见。|
 |comment|   string  |表示与此名称相关联的注释。|
 
 ## <a name="response"></a>响应

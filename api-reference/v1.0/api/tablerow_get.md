@@ -23,6 +23,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -21,6 +21,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |fields|SortField|作为排序依据的条件列表。|
-|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
+|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |method|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
 
 ## <a name="response"></a>响应

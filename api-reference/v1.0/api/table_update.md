@@ -20,6 +20,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -27,8 +28,8 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
-|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应

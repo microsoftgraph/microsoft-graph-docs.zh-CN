@@ -19,6 +19,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -27,12 +28,12 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 |:---------------|:--------|:----------|
 |position|string|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
 |separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
-|showValue|boolean|表示数据标签值是否可见的布尔值。|
+|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
+|showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
 

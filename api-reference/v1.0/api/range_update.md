@@ -21,18 +21,19 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
+|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
 |formulas|json|表示采用 A1 样式表示法的公式。|
 |formulasLocal|json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|json|表示采用 R1C1 样式表示法的公式。|
 |numberFormat|json|表示 Excel 中指定单元格的数字格式代码。|
-|rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
+|rowHidden|布尔|表示当前区域中的所有行是否隐藏。|
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
