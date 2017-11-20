@@ -1,16 +1,16 @@
-# <a name="rangebordercollection-itemat"></a><span data-ttu-id="d5dfe-101">RangeBorderCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="d5dfe-101">RangeBorderCollection: ItemAt</span></span>
+# <a name="rangebordercollection-itemat"></a><span data-ttu-id="f0113-101">RangeBorderCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="f0113-101">RangeBorderCollection: ItemAt</span></span>
 
-<span data-ttu-id="d5dfe-102">使用其索引获取 border 对象</span><span class="sxs-lookup"><span data-stu-id="d5dfe-102">Gets a border object using its index</span></span>
-## <a name="permissions"></a><span data-ttu-id="d5dfe-103">权限</span><span class="sxs-lookup"><span data-stu-id="d5dfe-103">Permissions</span></span>
-<span data-ttu-id="d5dfe-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f0113-102">使用其索引获取 border 对象</span><span class="sxs-lookup"><span data-stu-id="f0113-102">Gets a border object using its index</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0113-103">权限</span><span class="sxs-lookup"><span data-stu-id="f0113-103">Permissions</span></span>
+<span data-ttu-id="f0113-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f0113-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="d5dfe-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="d5dfe-106">Permission type</span></span>      | <span data-ttu-id="d5dfe-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d5dfe-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f0113-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="f0113-106">Permission type</span></span>      | <span data-ttu-id="f0113-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f0113-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d5dfe-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d5dfe-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d5dfe-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d5dfe-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="d5dfe-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d5dfe-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5dfe-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-111">Not supported.</span></span>    |
-|<span data-ttu-id="d5dfe-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="d5dfe-112">Application</span></span> | <span data-ttu-id="d5dfe-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-113">Not supported.</span></span> |
+|<span data-ttu-id="f0113-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f0113-108">Delegated (work or school account)</span></span> | <span data-ttu-id="f0113-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f0113-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f0113-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f0113-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0113-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="f0113-111">Not supported.</span></span>    |
+|<span data-ttu-id="f0113-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="f0113-112">Application</span></span> | <span data-ttu-id="f0113-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f0113-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d5dfe-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d5dfe-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0113-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f0113-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
@@ -18,26 +18,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/It
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="d5dfe-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="d5dfe-115">Request headers</span></span>
-| <span data-ttu-id="d5dfe-116">名称</span><span class="sxs-lookup"><span data-stu-id="d5dfe-116">Name</span></span>       | <span data-ttu-id="d5dfe-117">说明</span><span class="sxs-lookup"><span data-stu-id="d5dfe-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f0113-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="f0113-115">Request headers</span></span>
+| <span data-ttu-id="f0113-116">名称</span><span class="sxs-lookup"><span data-stu-id="f0113-116">Name</span></span>       | <span data-ttu-id="f0113-117">说明</span><span class="sxs-lookup"><span data-stu-id="f0113-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d5dfe-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5dfe-118">Authorization</span></span>  | <span data-ttu-id="d5dfe-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f0113-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="f0113-118">Authorization</span></span>  | <span data-ttu-id="f0113-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f0113-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f0113-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f0113-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="f0113-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="f0113-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d5dfe-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="d5dfe-121">Request body</span></span>
-<span data-ttu-id="d5dfe-122">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-122">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f0113-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="f0113-124">Request body</span></span>
+<span data-ttu-id="f0113-125">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f0113-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d5dfe-123">参数</span><span class="sxs-lookup"><span data-stu-id="d5dfe-123">Parameter</span></span>    | <span data-ttu-id="d5dfe-124">类型</span><span class="sxs-lookup"><span data-stu-id="d5dfe-124">Type</span></span>   |<span data-ttu-id="d5dfe-125">说明</span><span class="sxs-lookup"><span data-stu-id="d5dfe-125">Description</span></span>|
+| <span data-ttu-id="f0113-126">参数</span><span class="sxs-lookup"><span data-stu-id="f0113-126">Parameter</span></span>    | <span data-ttu-id="f0113-127">类型</span><span class="sxs-lookup"><span data-stu-id="f0113-127">Type</span></span>   |<span data-ttu-id="f0113-128">说明</span><span class="sxs-lookup"><span data-stu-id="f0113-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d5dfe-126">index</span><span class="sxs-lookup"><span data-stu-id="d5dfe-126">index</span></span>|<span data-ttu-id="d5dfe-127">number</span><span class="sxs-lookup"><span data-stu-id="d5dfe-127">number</span></span>|<span data-ttu-id="d5dfe-p103">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-p103">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="f0113-129">index</span><span class="sxs-lookup"><span data-stu-id="f0113-129">index</span></span>|<span data-ttu-id="f0113-130">number</span><span class="sxs-lookup"><span data-stu-id="f0113-130">number</span></span>|<span data-ttu-id="f0113-p104">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="f0113-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d5dfe-130">响应</span><span class="sxs-lookup"><span data-stu-id="d5dfe-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f0113-133">响应</span><span class="sxs-lookup"><span data-stu-id="f0113-133">Response</span></span>
 
-<span data-ttu-id="d5dfe-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-131">If successful, this method returns `200 OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
+<span data-ttu-id="f0113-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f0113-134">If successful, this method returns `200 OK` response code and [RangeBorder](../resources/rangeborder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d5dfe-132">示例</span><span class="sxs-lookup"><span data-stu-id="d5dfe-132">Example</span></span>
-<span data-ttu-id="d5dfe-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="d5dfe-134">请求</span><span class="sxs-lookup"><span data-stu-id="d5dfe-134">Request</span></span>
-<span data-ttu-id="d5dfe-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f0113-135">示例</span><span class="sxs-lookup"><span data-stu-id="f0113-135">Example</span></span>
+<span data-ttu-id="f0113-136">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f0113-136">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f0113-137">请求</span><span class="sxs-lookup"><span data-stu-id="f0113-137">Request</span></span>
+<span data-ttu-id="f0113-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f0113-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangebordercollection_itemat"
@@ -53,8 +54,8 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d5dfe-136">响应</span><span class="sxs-lookup"><span data-stu-id="d5dfe-136">Response</span></span>
-<span data-ttu-id="d5dfe-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d5dfe-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f0113-139">响应</span><span class="sxs-lookup"><span data-stu-id="f0113-139">Response</span></span>
+<span data-ttu-id="f0113-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f0113-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

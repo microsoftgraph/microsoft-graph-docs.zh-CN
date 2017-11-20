@@ -1,46 +1,46 @@
-# <a name="update-a-group-setting"></a><span data-ttu-id="31f18-101">更新组设置</span><span class="sxs-lookup"><span data-stu-id="31f18-101">Update a group setting</span></span>
+# <a name="update-a-group-setting"></a><span data-ttu-id="662a2-101">更新组设置</span><span class="sxs-lookup"><span data-stu-id="662a2-101">Update a group setting</span></span>
 
-<span data-ttu-id="31f18-102">更新特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="31f18-102">Update the properties of a specific group setting object.</span></span>
+<span data-ttu-id="662a2-102">更新特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="662a2-102">Update the properties of a specific group setting object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="31f18-103">权限</span><span class="sxs-lookup"><span data-stu-id="31f18-103">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="662a2-103">权限</span><span class="sxs-lookup"><span data-stu-id="662a2-103">Permissions</span></span>
 
-<span data-ttu-id="31f18-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="31f18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="662a2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="662a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="31f18-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="31f18-106">Permission type</span></span>      | <span data-ttu-id="31f18-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="31f18-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="662a2-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="662a2-106">Permission type</span></span>      | <span data-ttu-id="662a2-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="662a2-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="31f18-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="31f18-108">Delegated (work or school account)</span></span> | <span data-ttu-id="31f18-109">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="31f18-109">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="31f18-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="31f18-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31f18-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="31f18-111">Not supported.</span></span>    |
-|<span data-ttu-id="31f18-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="31f18-112">Application</span></span> | <span data-ttu-id="31f18-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31f18-113">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="662a2-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="662a2-108">Delegated (work or school account)</span></span> | <span data-ttu-id="662a2-109">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="662a2-109">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="662a2-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="662a2-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="662a2-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="662a2-111">Not supported.</span></span>    |
+|<span data-ttu-id="662a2-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="662a2-112">Application</span></span> | <span data-ttu-id="662a2-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="662a2-113">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="31f18-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="31f18-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="662a2-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="662a2-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="31f18-115">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="31f18-115">Update a tenant-wide or group specific setting.</span></span>
+<span data-ttu-id="662a2-115">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="662a2-115">Update a tenant-wide or group specific setting.</span></span>
 
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="31f18-116">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="31f18-116">Optional request headers</span></span>
-| <span data-ttu-id="31f18-117">名称</span><span class="sxs-lookup"><span data-stu-id="31f18-117">Name</span></span> | <span data-ttu-id="31f18-118">说明</span><span class="sxs-lookup"><span data-stu-id="31f18-118">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="662a2-116">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="662a2-116">Optional request headers</span></span>
+| <span data-ttu-id="662a2-117">名称</span><span class="sxs-lookup"><span data-stu-id="662a2-117">Name</span></span> | <span data-ttu-id="662a2-118">说明</span><span class="sxs-lookup"><span data-stu-id="662a2-118">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="31f18-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="31f18-119">Authorization</span></span>  | <span data-ttu-id="31f18-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="31f18-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="31f18-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="31f18-122">Content-Type</span></span>  | <span data-ttu-id="31f18-123">application/json</span><span class="sxs-lookup"><span data-stu-id="31f18-123">application/json</span></span>  |
+| <span data-ttu-id="662a2-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="662a2-119">Authorization</span></span>  | <span data-ttu-id="662a2-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="662a2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="662a2-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="662a2-122">Content-Type</span></span>  | <span data-ttu-id="662a2-123">application/json</span><span class="sxs-lookup"><span data-stu-id="662a2-123">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="31f18-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="31f18-124">Request body</span></span>
-<span data-ttu-id="31f18-125">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="31f18-125">In the request body, supply the values for relevant fields that should be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="662a2-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="662a2-124">Request body</span></span>
+<span data-ttu-id="662a2-125">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="662a2-125">In the request body, supply the values for relevant fields that should be updated.</span></span> 
 
-| <span data-ttu-id="31f18-126">属性</span><span class="sxs-lookup"><span data-stu-id="31f18-126">Property</span></span> | <span data-ttu-id="31f18-127">类型</span><span class="sxs-lookup"><span data-stu-id="31f18-127">Type</span></span> | <span data-ttu-id="31f18-128">说明</span><span class="sxs-lookup"><span data-stu-id="31f18-128">Description</span></span> |
+| <span data-ttu-id="662a2-126">属性</span><span class="sxs-lookup"><span data-stu-id="662a2-126">Property</span></span> | <span data-ttu-id="662a2-127">类型</span><span class="sxs-lookup"><span data-stu-id="662a2-127">Type</span></span> | <span data-ttu-id="662a2-128">说明</span><span class="sxs-lookup"><span data-stu-id="662a2-128">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="31f18-129">values</span><span class="sxs-lookup"><span data-stu-id="31f18-129">values</span></span> | <span data-ttu-id="31f18-130">settingValue</span><span class="sxs-lookup"><span data-stu-id="31f18-130">settingValue</span></span> | <span data-ttu-id="31f18-p103">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="31f18-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
+| <span data-ttu-id="662a2-129">values</span><span class="sxs-lookup"><span data-stu-id="662a2-129">values</span></span> | <span data-ttu-id="662a2-130">settingValue</span><span class="sxs-lookup"><span data-stu-id="662a2-130">settingValue</span></span> | <span data-ttu-id="662a2-p103">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="662a2-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="31f18-134">响应</span><span class="sxs-lookup"><span data-stu-id="31f18-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="662a2-134">响应</span><span class="sxs-lookup"><span data-stu-id="662a2-134">Response</span></span>
 
-<span data-ttu-id="31f18-135">如果成功，此方法在响应正文中返回 `204 OK` 响应代码和更新的 [groupSetting](../resources/groupsetting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="31f18-135">If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
+<span data-ttu-id="662a2-135">如果成功，此方法在响应正文中返回 `204 OK` 响应代码和更新的 [groupSetting](../resources/groupsetting.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="662a2-135">If successful, this method returns a `204 OK` response code and updated [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="31f18-136">示例</span><span class="sxs-lookup"><span data-stu-id="31f18-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="31f18-137">请求</span><span class="sxs-lookup"><span data-stu-id="31f18-137">Request</span></span>
+## <a name="example"></a><span data-ttu-id="662a2-136">示例</span><span class="sxs-lookup"><span data-stu-id="662a2-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="662a2-137">请求</span><span class="sxs-lookup"><span data-stu-id="662a2-137">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -55,13 +55,61 @@ Content-length: 173
   "templateId": "templateId-value",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "CustomBlockedWordsList",
+      "value": ""
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "False"
+    },
+    {
+      "name": "ClassificationDescriptions",
+      "value": ""
+    },
+    {
+      "name": "DefaultClassification",
+      "value": ""
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": ""
+    },
+    {
+      "name": "AllowGuestsToBeGroupOwner",
+      "value": "False"
+    },
+    {
+      "name": "AllowGuestsToAccessGroups",
+      "value": "True"
+    },
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "GroupCreationAllowedGroupId",
+      "value": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "name": "AllowToAddGuests",
+      "value": "True"
+    },
+    {
+      "name": "UsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "ClassificationList",
+      "value": ""
+    },
+    {
+      "name": "EnableGroupCreation",
+      "value": "True"
     }
   ]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="31f18-138">响应</span><span class="sxs-lookup"><span data-stu-id="31f18-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="662a2-138">响应</span><span class="sxs-lookup"><span data-stu-id="662a2-138">Response</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
-# <a name="range-boundingrect"></a><span data-ttu-id="69ec9-101">Range:BoundingRect</span><span class="sxs-lookup"><span data-stu-id="69ec9-101">Range: BoundingRect</span></span>
+# <a name="range-boundingrect"></a><span data-ttu-id="2b2f0-101">Range:BoundingRect</span><span class="sxs-lookup"><span data-stu-id="2b2f0-101">Range: BoundingRect</span></span>
 
-<span data-ttu-id="69ec9-p101">获取包含指定区域的最小 range 对象。例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E16”。</span><span class="sxs-lookup"><span data-stu-id="69ec9-p101">Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".</span></span>
-## <a name="permissions"></a><span data-ttu-id="69ec9-104">权限</span><span class="sxs-lookup"><span data-stu-id="69ec9-104">Permissions</span></span>
-<span data-ttu-id="69ec9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="69ec9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="2b2f0-p101">获取包含指定区域的最小 range 对象。例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E16”。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-p101">Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".</span></span>
+## <a name="permissions"></a><span data-ttu-id="2b2f0-104">权限</span><span class="sxs-lookup"><span data-stu-id="2b2f0-104">Permissions</span></span>
+<span data-ttu-id="2b2f0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="69ec9-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="69ec9-107">Permission type</span></span>      | <span data-ttu-id="69ec9-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="69ec9-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2b2f0-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="2b2f0-107">Permission type</span></span>      | <span data-ttu-id="2b2f0-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2b2f0-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="69ec9-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69ec9-109">Delegated (work or school account)</span></span> | <span data-ttu-id="69ec9-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69ec9-110">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="69ec9-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69ec9-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69ec9-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="69ec9-112">Not supported.</span></span>    |
-|<span data-ttu-id="69ec9-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="69ec9-113">Application</span></span> | <span data-ttu-id="69ec9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="69ec9-114">Not supported.</span></span> |
+|<span data-ttu-id="2b2f0-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2b2f0-109">Delegated (work or school account)</span></span> | <span data-ttu-id="2b2f0-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2b2f0-110">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2b2f0-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2b2f0-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b2f0-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-112">Not supported.</span></span>    |
+|<span data-ttu-id="2b2f0-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="2b2f0-113">Application</span></span> | <span data-ttu-id="2b2f0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-114">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="69ec9-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69ec9-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2b2f0-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2b2f0-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/BoundingRect
@@ -18,26 +18,27 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
 GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="69ec9-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="69ec9-116">Request headers</span></span>
-| <span data-ttu-id="69ec9-117">名称</span><span class="sxs-lookup"><span data-stu-id="69ec9-117">Name</span></span>       | <span data-ttu-id="69ec9-118">说明</span><span class="sxs-lookup"><span data-stu-id="69ec9-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2b2f0-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="2b2f0-116">Request headers</span></span>
+| <span data-ttu-id="2b2f0-117">名称</span><span class="sxs-lookup"><span data-stu-id="2b2f0-117">Name</span></span>       | <span data-ttu-id="2b2f0-118">说明</span><span class="sxs-lookup"><span data-stu-id="2b2f0-118">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="69ec9-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="69ec9-119">Authorization</span></span>  | <span data-ttu-id="69ec9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="69ec9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2b2f0-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="2b2f0-119">Authorization</span></span>  | <span data-ttu-id="2b2f0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2b2f0-122">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2b2f0-122">Workbook-Session-Id</span></span>  | <span data-ttu-id="2b2f0-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="69ec9-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="69ec9-122">Request body</span></span>
-<span data-ttu-id="69ec9-123">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="69ec9-123">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2b2f0-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="2b2f0-125">Request body</span></span>
+<span data-ttu-id="2b2f0-126">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="69ec9-124">参数</span><span class="sxs-lookup"><span data-stu-id="69ec9-124">Parameter</span></span>    | <span data-ttu-id="69ec9-125">类型</span><span class="sxs-lookup"><span data-stu-id="69ec9-125">Type</span></span>   |<span data-ttu-id="69ec9-126">说明</span><span class="sxs-lookup"><span data-stu-id="69ec9-126">Description</span></span>|
+| <span data-ttu-id="2b2f0-127">参数</span><span class="sxs-lookup"><span data-stu-id="2b2f0-127">Parameter</span></span>    | <span data-ttu-id="2b2f0-128">类型</span><span class="sxs-lookup"><span data-stu-id="2b2f0-128">Type</span></span>   |<span data-ttu-id="2b2f0-129">说明</span><span class="sxs-lookup"><span data-stu-id="2b2f0-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="69ec9-127">anotherRange</span><span class="sxs-lookup"><span data-stu-id="69ec9-127">anotherRange</span></span>|<span data-ttu-id="69ec9-128">string</span><span class="sxs-lookup"><span data-stu-id="69ec9-128">string</span></span>|<span data-ttu-id="69ec9-129">Range 对象或地址或区域名称。</span><span class="sxs-lookup"><span data-stu-id="69ec9-129">The range object or address or range name.</span></span>|
+|<span data-ttu-id="2b2f0-130">anotherRange</span><span class="sxs-lookup"><span data-stu-id="2b2f0-130">anotherRange</span></span>|<span data-ttu-id="2b2f0-131">string</span><span class="sxs-lookup"><span data-stu-id="2b2f0-131">string</span></span>|<span data-ttu-id="2b2f0-132">Range 对象或地址或区域名称。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-132">The range object or address or range name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="69ec9-130">响应</span><span class="sxs-lookup"><span data-stu-id="69ec9-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2b2f0-133">响应</span><span class="sxs-lookup"><span data-stu-id="2b2f0-133">Response</span></span>
 
-<span data-ttu-id="69ec9-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="69ec9-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="2b2f0-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-134">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="69ec9-132">示例</span><span class="sxs-lookup"><span data-stu-id="69ec9-132">Example</span></span>
-<span data-ttu-id="69ec9-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="69ec9-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="69ec9-134">请求</span><span class="sxs-lookup"><span data-stu-id="69ec9-134">Request</span></span>
-<span data-ttu-id="69ec9-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="69ec9-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2b2f0-135">示例</span><span class="sxs-lookup"><span data-stu-id="2b2f0-135">Example</span></span>
+<span data-ttu-id="2b2f0-136">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-136">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2b2f0-137">请求</span><span class="sxs-lookup"><span data-stu-id="2b2f0-137">Request</span></span>
+<span data-ttu-id="2b2f0-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_boundingrect"
@@ -52,8 +53,8 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="69ec9-136">响应</span><span class="sxs-lookup"><span data-stu-id="69ec9-136">Response</span></span>
-<span data-ttu-id="69ec9-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="69ec9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2b2f0-139">响应</span><span class="sxs-lookup"><span data-stu-id="2b2f0-139">Response</span></span>
+<span data-ttu-id="2b2f0-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2b2f0-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
