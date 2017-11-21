@@ -37,21 +37,31 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [RangeFormat](../resources/rangeformat.md) 对象。
 ## <a name="example"></a>示例
+
+### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>更新三个表格单元格的格式、填充和字体属性
+
+以下示例演示如何更新指定区域的 [RangeFormat](../resources/rangeformat.md)、[RangeFill](../resources/rangefill.md) 和 [RangeFont](../resources/rangefont.md) 属性的属性。
+
+这组请求的结果是一个表格，其中的三个单元格的格式如下图中的前三个单元格所示。
+
+![其中的三个单元格的格式、填充和字体属性已更新的 Excel 图表表格。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
+
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+此请求更新第一个单元格的垂直对齐方式、行高和列高。 
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
 Content-type: application/json
-Content-length: 96
 
 {
-  "columnWidth": 99,
-  "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+  "columnWidth": 135,
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
 }
 ```
 ##### <a name="response"></a>响应
@@ -64,12 +74,296 @@ Content-length: 96
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
 
 {
-  "columnWidth": 99,
-  "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+    "columnWidth": 135,
+    "horizontalAlignment": "General",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第一个单元格的字形、大小和颜色。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
+Content-type: application/json
+
+{
+  "bold": true,
+  "color": "#4B180E",
+  "size": 26
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": true,
+    "color": "#4B180E",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第一个单元格的背景色。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#FF0000"
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#FF0000"
+}
+```
+##### <a name="request"></a>请求
+此请求更新第二个单元格的垂直对齐方式、水平对齐方式、行高和列高。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Center",
+  "verticalAlignment": "Center",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Center",
+    "rowHeight": 49,
+    "verticalAlignment": "Center",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第二个单元格的字形和大小。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
+Content-type: application/json
+
+{
+  "italic": true,
+  "size": 26
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#000000",
+    "italic": true,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第二个单元格的背景色。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#00FF00"
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#00FF00"
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第三个单元格的水平对齐方式、垂直对齐方式、行高和列高。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Right",
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Right",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第三个单元格的字形、大小和颜色。 请注意，下划线属性采用**单**或**双**作为值。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
+Content-type: application/json
+
+{
+  "underline": "Single",
+  "color": "#FFFFFF",
+  "size": 26
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#FFFFFF",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "Single"
+}
+```
+
+##### <a name="request"></a>请求
+此请求更新第三个单元格的背景色。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#0000FF"
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#0000FF"
 }
 ```
 

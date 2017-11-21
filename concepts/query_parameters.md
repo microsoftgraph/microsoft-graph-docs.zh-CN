@@ -4,18 +4,20 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 >**注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
 
-|名称|说明|示例|
-|:---------------|:--------|:-------|
-|[$count](#count)|检索匹配资源的总数。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
-|[$expand](#expand)|检索相关资源。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
-|[$filter](#filter)|筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
-|[$format](#format)|返回指定媒体格式的结果。|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
-|[$orderby](#orderby)|对结果进行排序。|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
-|[$search](#search)| 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
-|[$select](#select)|筛选属性（列）。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
-|[$skip](#skip)|对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
-|[$skipToken](#skiptoken)|从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
-|[$top](#top)|设置结果的页面大小。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
+| 名称                     | 说明 | 示例
+|:-------------------------|:------------|:---------|
+| [$count](#count)         | 检索匹配资源的总数。 | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand)       | 检索相关资源。|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter)       | 筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format)       | 返回指定媒体格式的结果。|[`/users?$format=json`][format-example]
+| [$orderby](#orderby)     | 对结果进行排序。|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search)       | 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select)       | 筛选属性（列）。|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken) | 从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
+
+
 
 这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][expand-example]
 
 > **注意：**并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 `directReports`、`manager` 和 `memberOf` 关系，但无法扩展其 `events`、`messages` 或 `photo` 关系。并非所有资源或关系都支持在扩展项上使用 `$select`。 
 > 
@@ -88,9 +90,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][filter-example]
 
-对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符： 
+对 `$filter` 运算符的支持因 Microsoft Graph API 而异。 通常支持下列逻辑运算符： 
 
 - 等于 (`eq`)
 - 不等于 (`ne`)
@@ -105,16 +107,16 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 下表显示使用 `$filter` 查询参数的一些示例。
 
->**注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+> **注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
 
-|说明|示例|
-|:--------|:-------|
-|  跨多个属性搜索名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| 说明 | 示例
+|:------------|:--------|
+| 跨多个属性搜索名为 Mary 的用户。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
+| 获取 2017 年 7 月 1 日之后开始的所有登录用户的事件。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
+| 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
+| 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
+| 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
+| 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
 
 > **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][format-example]
 
 > **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
@@ -141,7 +143,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][orderby-example]
 
 还可以按复杂类型实体进行排序。下面的请求获取邮件，然后按 `from` 属性的 `address` 字段（属于复杂类型 `emailAddress`）对这些邮件进行排序：
 
@@ -157,12 +159,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
+
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 
  > **注意：**使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
 
-## <a name="search"></a>搜索
+## <a name="search"></a>搜索 
 
 使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
 
@@ -196,7 +199,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
-下一个示例在用户收件箱中搜索从指定电子邮件地址发送的所有邮件：
+[在 Graph 浏览器中试用][search-example]
+
+下一个示例将在用户收件箱中搜索从指定电子邮件地址发送的所有邮件：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
@@ -227,6 +232,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
+
 该请求主要进行两次搜索：对登录用户的相关人员的 `displayName` 和 `emailAddress` 属性进行模糊搜索，以及对该用户相关人员进行“披萨”主题搜索。 然后对结果进行排名、排序并返回。 请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
 
 若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md)。  
@@ -241,7 +247,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][select-example]
 
 > **重要说明：**一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
@@ -254,7 +260,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][skip-example]
 
 > **注意：**一些 Microsoft Graph API，如 Outlook 邮件和 Outlook 日历（`message`、`event` 和 `calendar`），使用 `$skip` 来实现分页。 当查询的结果跨多个页面时，这些 API 将返回一个具有包含 `$skip` 参数的 URL 的 `@odata:nextLink` 属性。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 
@@ -275,7 +281,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+[在 Graph 浏览器中试用][top-example]
 
 
 ## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理
@@ -304,3 +310,14 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+[count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
+
+
