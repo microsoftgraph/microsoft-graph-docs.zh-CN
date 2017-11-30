@@ -28,6 +28,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="response"></a>响应
 
