@@ -1,12 +1,12 @@
-感谢你帮助我们改进 Microsoft Graph 文档。
+<!---
+Thank you for helping us to improve the Microsoft Graph documentation.
 
-为了让我们能够更好地为你提供帮助，请注意以下事项：
-- 如果你有疑问、需要帮助或在使用代码时遇到问题，建议你将疑问或问题发布在 **Stack Overflow** 上。使用 [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) 或 [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph) 标记出你的问题。
-- 如果有功能建议，请将你的想法发布在我们的 [**User Voice**](https://officespdev.uservoice.com/) 页上，并为你的建议进行投票。
-- 如果有文档问题，请在此处予以说明，或随时提交包含你建议的更改的拉取请求。我们将审阅你提交的信息，并对我们的文档进行相应地更新。
+So that we can better assist you, please note the following:
+- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
+- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
+- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
+-->
 
-------------
- 
 问题： 
 
 文章：

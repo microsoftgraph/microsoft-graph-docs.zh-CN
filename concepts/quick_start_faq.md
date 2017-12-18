@@ -1,18 +1,19 @@
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速启动 FAQ
 
-此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/en-us/graph/quick-start)相关的问题。
+此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/zh-CN/graph/quick-start)相关的问题。
 
 ## <a name="what-do-the-quick-starts-do"></a>快速入门有何功能？
 
-快速入门示例演示了如何访问 Microsoft Graph 的功能。 
+快速入门示例展示了如何使用 Microsoft Graph。 
 
-如果使用 Office 365 REST API，需要验证要调用的每个服务。 Microsoft Graph 统一了身份验证，方便用户通过一个入口点访问所有 API，消除了这种复杂性。 只需进行一次身份验证，即可跨多个应用程序和服务访问信息。 
+如果使用 Office 365 REST API，必须向要调用的每个服务进行身份验证。 Microsoft Graph 统一了身份验证，方便用户通过一个入口点访问所有 API，消除了这种复杂性。 只需进行一次身份验证，即可跨多个应用程序和服务访问信息。 
 
 Microsoft Graph 快速启动只需进行一次身份验证，即可访问三个服务：Microsoft 帐户、OneDrive 和 Outlook。 每个快速启动都可以从 Microsoft 帐户用户配置文件访问信息、将数据写入 OneDrive（照片），并能使用 Outlook 生成电子邮件（包括照片链接）。 
 
 快速启动分为四步：
+
 - 选择平台 
-- 获取应用 ID（aka 客户端 ID）
+- 获取应用 ID（客户端 ID）
 - 生成示例
 - 登录并通过电子邮件发送个人资料照片
 

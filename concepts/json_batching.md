@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ JSON 批处理请求正文包含具有一个必需属性 `requests` 的单个 JS
 
 `method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。 该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。
 
-单独请求还可以包含 `headers` 属性和 `body` 属性。 两种属性通常都是 JSON 对象。 在某些情况下，`body` 可能是 base64 URL 编码的值，而不是一个 JSON 对象 - 例如，当正文为图像时。 如果 `body` 包含在该请求中，`headers` 对象必须包含 `content-type` 的值。
+单独请求还可以包含 `headers` 属性和 `body` 属性。 这两种属性通常都是 JSON 对象，如上一示例所示。 在某些情况下，`body` 可能是经过 base64 URL 编码的值，而不是 JSON 对象（例如，当正文为图像时）。 如果 `body` 包含在该请求中，`headers` 对象必须包含 `Content-Type` 的值。
 
 ## <a name="response-format"></a>响应格式
 
