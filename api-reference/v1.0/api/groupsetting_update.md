@@ -37,10 +37,10 @@ PATCH /groups/{id}/settings/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `204 OK` 响应代码和更新的 [groupSetting](../resources/groupsetting.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -109,15 +109,15 @@ Content-length: 173
   ]
 }
 ```
-##### <a name="response"></a>响应
+
+#### <a name="response"></a>响应
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.groupSetting"
+  "truncated": false
 } -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/clear
-GET /workbook/worksheets/{id|name}/range(address='<address>')/clear
-GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /workbook/names(<name>)/range/clear
+POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -44,7 +44,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
   "name": "range_clear"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -61,7 +61,7 @@ Content-length: 32
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
