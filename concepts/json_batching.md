@@ -1,16 +1,16 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a><span data-ttu-id="5a0cb-101">使用 JSON 批处理将多个请求合并为一个 HTTP 调用（预览）</span><span class="sxs-lookup"><span data-stu-id="5a0cb-101">Combine multiple requests in one HTTP call using JSON batching (preview)</span></span>
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a><span data-ttu-id="cbe45-101">使用 JSON 批处理将多个请求合并为一个 HTTP 调用（预览）</span><span class="sxs-lookup"><span data-stu-id="cbe45-101">Combine multiple requests in one HTTP call using JSON batching (preview)</span></span>
 
-<span data-ttu-id="5a0cb-p101">JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：</span><span class="sxs-lookup"><span data-stu-id="5a0cb-p101">JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:</span></span>
+<span data-ttu-id="cbe45-p101">JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：</span><span class="sxs-lookup"><span data-stu-id="cbe45-p101">JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:</span></span>
 
-1. <span data-ttu-id="5a0cb-104">存储在 OneDrive 中的图像</span><span class="sxs-lookup"><span data-stu-id="5a0cb-104">An image stored in OneDrive</span></span>
-2. <span data-ttu-id="5a0cb-105">计划任务列表</span><span class="sxs-lookup"><span data-stu-id="5a0cb-105">A list of Planner tasks</span></span>
-3. <span data-ttu-id="5a0cb-106">组日历</span><span class="sxs-lookup"><span data-stu-id="5a0cb-106">The calendar for a group</span></span>
+1. <span data-ttu-id="cbe45-104">存储在 OneDrive 中的图像</span><span class="sxs-lookup"><span data-stu-id="cbe45-104">An image stored in OneDrive</span></span>
+2. <span data-ttu-id="cbe45-105">计划任务列表</span><span class="sxs-lookup"><span data-stu-id="cbe45-105">A list of Planner tasks</span></span>
+3. <span data-ttu-id="cbe45-106">组日历</span><span class="sxs-lookup"><span data-stu-id="cbe45-106">The calendar for a group</span></span>
 
-<span data-ttu-id="5a0cb-107">将三个单独请求合并到一个单独的批处理请求中可以使应用程序不受重大网络延迟的影响。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-107">Combining these three individual requests into a single batch request can save the application significant network latency.</span></span>
+<span data-ttu-id="cbe45-107">将三个单独请求合并到一个单独的批处理请求中可以使应用程序不受重大网络延迟的影响。</span><span class="sxs-lookup"><span data-stu-id="cbe45-107">Combining these three individual requests into a single batch request can save the application significant network latency.</span></span>
 
-## <a name="first-json-batch-request"></a><span data-ttu-id="5a0cb-108">第一个 JSON 批处理请求</span><span class="sxs-lookup"><span data-stu-id="5a0cb-108">First JSON batch request</span></span>
+## <a name="first-json-batch-request"></a><span data-ttu-id="cbe45-108">第一个 JSON 批处理请求</span><span class="sxs-lookup"><span data-stu-id="cbe45-108">First JSON batch request</span></span>
 
-<span data-ttu-id="5a0cb-p102">首先，为之前的示例构建 JSON 批处理请求。在这种情况下，单个请求不会以任何方式互相依赖，因此可以按任意顺序放入批处理请求中。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-p102">First you construct the JSON batch request for the previous example. In this scenario, the individual requests are not interdependent in any way and therefore can be placed into the batch request in any order.</span></span>
+<span data-ttu-id="cbe45-p102">首先，为之前的示例构建 JSON 批处理请求。在这种情况下，单个请求不会以任何方式互相依赖，因此可以按任意顺序放入批处理请求中。</span><span class="sxs-lookup"><span data-stu-id="cbe45-p102">First you construct the JSON batch request for the previous example. In this scenario, the individual requests are not interdependent in any way and therefore can be placed into the batch request in any order.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/$batch
@@ -35,12 +35,23 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
 ```
 
-<span data-ttu-id="5a0cb-111">对批处理的请求的响应可能会以不同的顺序显示。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-111">Responses to the batched requests might appear in a different order. The  property can be used to correlate individual requests and responses.</span></span> <span data-ttu-id="5a0cb-112">`id` 属性可以用于关联单个请求和响应。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-112">Responses to the batched requests might appear in a different order. The `id` property can be used to correlate individual requests and responses.</span></span>
+<span data-ttu-id="cbe45-111">对批处理的请求的响应可能会以不同的顺序显示。</span><span class="sxs-lookup"><span data-stu-id="cbe45-111">Responses to the batched requests might appear in a different order.</span></span> <span data-ttu-id="cbe45-112">`id` 属性可以用于关联单个请求和响应。</span><span class="sxs-lookup"><span data-stu-id="cbe45-112">The `id` property can be used to correlate individual requests and responses.</span></span>
 
 ```http
 200 OK
@@ -74,38 +85,43 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
 ```
 
-## <a name="request-format"></a><span data-ttu-id="5a0cb-113">请求格式</span><span class="sxs-lookup"><span data-stu-id="5a0cb-113">Request format</span></span>
+## <a name="request-format"></a><span data-ttu-id="cbe45-113">请求格式</span><span class="sxs-lookup"><span data-stu-id="cbe45-113">Request format</span></span>
 
-<span data-ttu-id="5a0cb-114">始终使用 `POST` 将批处理请求发送到 `/$batch` 终结点。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-114">Batch requests are always sent using `POST` to the `/$batch` endpoint.</span></span>
+<span data-ttu-id="cbe45-114">始终使用 `POST` 将批处理请求发送到 `/$batch` 终结点。</span><span class="sxs-lookup"><span data-stu-id="cbe45-114">Batch requests are always sent using `POST` to the `/$batch` endpoint.</span></span>
 
-<span data-ttu-id="5a0cb-115">JSON 批处理请求正文包含具有一个必需属性 `requests` 的单个 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-115">A JSON batch request body consists of a single JSON object with one required property: . The  property is an array of individual requests. For each individual request, the , , and  properties are required.</span></span> <span data-ttu-id="5a0cb-116">`requests` 属性是一组单独请求。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-116">The `requests` property is an array of individual requests.</span></span> <span data-ttu-id="5a0cb-117">对于每个单独请求而言，`id`、`method` 和 `url` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-117">For each individual request, the `id`, `method`, and `url` properties are required.</span></span>
+<span data-ttu-id="cbe45-115">JSON 批处理请求正文包含具有一个必需属性 `requests` 的单个 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="cbe45-115">A JSON batch request body consists of a single JSON object with one required property: `requests`.</span></span> <span data-ttu-id="cbe45-116">`requests` 属性是一组单独请求。</span><span class="sxs-lookup"><span data-stu-id="cbe45-116">The `requests` property is an array of individual requests.</span></span> <span data-ttu-id="cbe45-117">对于每个单独请求而言，`id`、`method` 和 `url` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="cbe45-117">For each individual request, the `id`, `method`, and `url` properties are required.</span></span>
 
-<span data-ttu-id="5a0cb-118">`id` 属性主要用作关联单独响应和请求的关联值。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-118">The `id` property functions primarily as a correlation value to associate individual responses with requests. This allows the server to process requests in the batch in the most efficient order.</span></span> <span data-ttu-id="5a0cb-119">这使服务器可以最高效的顺序处理批处理中的请求。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-119">The  property functions primarily as a correlation value to associate individual responses with requests. This allows the server to process requests in the batch in the most efficient order.</span></span>
+<span data-ttu-id="cbe45-118">`id` 属性主要用作关联单独响应和请求的关联值。</span><span class="sxs-lookup"><span data-stu-id="cbe45-118">The `id` property functions primarily as a correlation value to associate individual responses with requests.</span></span> <span data-ttu-id="cbe45-119">这使服务器可以最高效的顺序处理批处理中的请求。</span><span class="sxs-lookup"><span data-stu-id="cbe45-119">This allows the server to process requests in the batch in the most efficient order.</span></span>
 
-<span data-ttu-id="5a0cb-120">`method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-120">The `method` and `url` properties are exactly what you would see at the start of any given HTTP request. The method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.</span></span> <span data-ttu-id="5a0cb-121">该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-121">The  and  properties are exactly what you would see at the start of any given HTTP request. The method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.</span></span>
+<span data-ttu-id="cbe45-120">`method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。</span><span class="sxs-lookup"><span data-stu-id="cbe45-120">The `method` and `url` properties are exactly what you would see at the start of any given HTTP request.</span></span> <span data-ttu-id="cbe45-121">该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。</span><span class="sxs-lookup"><span data-stu-id="cbe45-121">The method is the HTTP method, and the URL is the resource URL the individual request would typically be sent to.</span></span>
 
-<span data-ttu-id="5a0cb-122">单独请求还可以包含 `headers` 属性和 `body` 属性。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-122">Individual requests can optionally also contain a `headers` property and a `body` property.</span></span> <span data-ttu-id="5a0cb-123">两种属性通常都是 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-123">Both of these properties are typically JSON objects.</span></span> <span data-ttu-id="5a0cb-124">在某些情况下，`body` 可能是 base64 URL 编码的值，而不是一个 JSON 对象 - 例如，当正文为图像时。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-124">In some cases, the `body` might be a base64 URL-encoded value rather than a JSON object - for example, when the body is an image.</span></span> <span data-ttu-id="5a0cb-125">如果 `body` 包含在该请求中，`headers` 对象必须包含 `content-type` 的值。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-125">When a `body` is included with the request, the `headers` object must contain a value for `content-type`.</span></span>
+<span data-ttu-id="cbe45-122">单独请求还可以包含 `headers` 属性和 `body` 属性。</span><span class="sxs-lookup"><span data-stu-id="cbe45-122">Individual requests can optionally also contain a `headers` property and a `body` property.</span></span> <span data-ttu-id="cbe45-123">这两种属性通常都是 JSON 对象，如上一示例所示。</span><span class="sxs-lookup"><span data-stu-id="cbe45-123">Both of these properties are typically JSON objects, as shown in the previous example.</span></span> <span data-ttu-id="cbe45-124">在某些情况下，`body` 可能是经过 base64 URL 编码的值，而不是 JSON 对象（例如，当正文为图像时）。</span><span class="sxs-lookup"><span data-stu-id="cbe45-124">In some cases, the `body` might be a base64 URL-encoded value rather than a JSON object - for example, when the body is an image.</span></span> <span data-ttu-id="cbe45-125">如果 `body` 包含在该请求中，`headers` 对象必须包含 `Content-Type` 的值。</span><span class="sxs-lookup"><span data-stu-id="cbe45-125">When a `body` is included with the request, the `headers` object must contain a value for `Content-Type`.</span></span>
 
-## <a name="response-format"></a><span data-ttu-id="5a0cb-126">响应格式</span><span class="sxs-lookup"><span data-stu-id="5a0cb-126">Response format</span></span>
+## <a name="response-format"></a><span data-ttu-id="cbe45-126">响应格式</span><span class="sxs-lookup"><span data-stu-id="cbe45-126">Response format</span></span>
 
-<span data-ttu-id="5a0cb-p108">JSON 批处理请求的响应格式与请求格式类似。主要区别如下：</span><span class="sxs-lookup"><span data-stu-id="5a0cb-p108">The response format for JSON batch requests is similar to the request format. The following are the key differences:</span></span>
+<span data-ttu-id="cbe45-p108">JSON 批处理请求的响应格式与请求格式类似。主要区别如下：</span><span class="sxs-lookup"><span data-stu-id="cbe45-p108">The response format for JSON batch requests is similar to the request format. The following are the key differences:</span></span>
 
-* <span data-ttu-id="5a0cb-129">主 JSON 对象的中属性被命名为 `responses`，与 `requests` 相反。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-129">The property in the main JSON object is named `responses` as opposed to `requests`.</span></span>
-* <span data-ttu-id="5a0cb-130">单独响应可能会以与请求不同的顺序出现。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-130">Individual responses might appear in a different order than the requests.</span></span>
-* <span data-ttu-id="5a0cb-131">单独响应具有 `status` 属性，而不是 `method` 和 `url` 属性。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-131">Rather than `method` and `url`, individual responses have a `status` property.</span></span> <span data-ttu-id="5a0cb-132">`status` 的值是表示 HTTP 状态代码的数字。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-132">Rather than  and , individual responses have a  property. The value of `status` is a number that represents the HTTP status code.</span></span>
+* <span data-ttu-id="cbe45-129">主 JSON 对象的中属性被命名为 `responses`，与 `requests` 相反。</span><span class="sxs-lookup"><span data-stu-id="cbe45-129">The property in the main JSON object is named `responses` as opposed to `requests`.</span></span>
+* <span data-ttu-id="cbe45-130">单独响应可能会以与请求不同的顺序出现。</span><span class="sxs-lookup"><span data-stu-id="cbe45-130">Individual responses might appear in a different order than the requests.</span></span>
+* <span data-ttu-id="cbe45-131">单独响应具有 `status` 属性，而不是 `method` 和 `url` 属性。</span><span class="sxs-lookup"><span data-stu-id="cbe45-131">Rather than `method` and `url`, individual responses have a `status` property.</span></span> <span data-ttu-id="cbe45-132">`status` 的值是表示 HTTP 状态代码的数字。</span><span class="sxs-lookup"><span data-stu-id="cbe45-132">The value of `status` is a number that represents the HTTP status code.</span></span>
 
-<span data-ttu-id="5a0cb-133">批处理响应中的状态代码通常为 `200` 或 `400`。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-133">The status code on a batch response is typically `200` or `400`.</span></span> <span data-ttu-id="5a0cb-134">如果批处理请求本身格式不正确，则状态代码为 `400`。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-134">If the batch request itself is malformed, the status code is `400`.</span></span> <span data-ttu-id="5a0cb-135">如果批处理请求可解析，则状态代码为 `200`。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-135">If the batch request is parseable, the status code is `200`.</span></span> <span data-ttu-id="5a0cb-136">批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-136">A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded.</span></span> <span data-ttu-id="5a0cb-137">这就是为什么 `responses` 属性中的每个单独响应都有一个状态代码的原因。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-137">This is why each individual response in the `responses` property has a status code.</span></span>
+<span data-ttu-id="cbe45-133">批处理响应中的状态代码通常为 `200` 或 `400`。</span><span class="sxs-lookup"><span data-stu-id="cbe45-133">The status code on a batch response is typically `200` or `400`.</span></span> <span data-ttu-id="cbe45-134">如果批处理请求本身格式不正确，则状态代码为 `400`。</span><span class="sxs-lookup"><span data-stu-id="cbe45-134">If the batch request itself is malformed, the status code is `400`.</span></span> <span data-ttu-id="cbe45-135">如果批处理请求可解析，则状态代码为 `200`。</span><span class="sxs-lookup"><span data-stu-id="cbe45-135">If the batch request is parseable, the status code is `200`.</span></span> <span data-ttu-id="cbe45-136">批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。</span><span class="sxs-lookup"><span data-stu-id="cbe45-136">A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded.</span></span> <span data-ttu-id="cbe45-137">这就是为什么 `responses` 属性中的每个单独响应都有一个状态代码的原因。</span><span class="sxs-lookup"><span data-stu-id="cbe45-137">This is why each individual response in the `responses` property has a status code.</span></span>
 
-<span data-ttu-id="5a0cb-138">除 `responses` 属性外，批处理响应中可能还有 `nextLink` 属性。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-138">In addition to the `responses` property, there might be a `nextLink` property in the batch response.</span></span> <span data-ttu-id="5a0cb-139">这使 Microsoft Graph 可以在任意一个单独请求完成后尽快返回一个批处理响应。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-139">This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed.</span></span> <span data-ttu-id="5a0cb-140">为确保接收所有的单独响应，只要 `nextLink` 存在，则继续按照此属性操作。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-140">To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.</span></span>
+<span data-ttu-id="cbe45-138">除 `responses` 属性外，批处理响应中可能还有 `nextLink` 属性。</span><span class="sxs-lookup"><span data-stu-id="cbe45-138">In addition to the `responses` property, there might be a `nextLink` property in the batch response.</span></span> <span data-ttu-id="cbe45-139">这使 Microsoft Graph 可以在任意一个单独请求完成后尽快返回一个批处理响应。</span><span class="sxs-lookup"><span data-stu-id="cbe45-139">This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed.</span></span> <span data-ttu-id="cbe45-140">为确保接收所有的单独响应，只要 `nextLink` 存在，则继续按照此属性操作。</span><span class="sxs-lookup"><span data-stu-id="cbe45-140">To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.</span></span>
 
-## <a name="sequencing-requests-with-the-dependson-property"></a><span data-ttu-id="5a0cb-141">使用 dependsOn 属性对请求进行排序</span><span class="sxs-lookup"><span data-stu-id="5a0cb-141">Sequencing requests with the dependsOn property</span></span>
+## <a name="sequencing-requests-with-the-dependson-property"></a><span data-ttu-id="cbe45-141">使用 dependsOn 属性对请求进行排序</span><span class="sxs-lookup"><span data-stu-id="cbe45-141">Sequencing requests with the dependsOn property</span></span>
 
-<span data-ttu-id="5a0cb-142">通过使用 `dependsOn` 属性可按指定顺序执行单独请求。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-142">Individual requests can be executed in a specified order by using the `dependsOn` property.</span></span> <span data-ttu-id="5a0cb-143">此属性是引用不同的单独请求的 `id` 的字符串数组。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-143">This property is an array of strings that reference the `id` of a different individual request.</span></span> <span data-ttu-id="5a0cb-144">出于这个原因，`id` 的值必须唯一。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-144">For this reason, the values for `id` must be unique.</span></span> <span data-ttu-id="5a0cb-145">例如，在下面的请求中，客户端指定请求 1 和 3 应该先运行，然后是请求 2，然后是请求 4。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-145">For example, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2, then request 4.</span></span>
+<span data-ttu-id="cbe45-142">通过使用 `dependsOn` 属性可按指定顺序执行单独请求。</span><span class="sxs-lookup"><span data-stu-id="cbe45-142">Individual requests can be executed in a specified order by using the `dependsOn` property.</span></span> <span data-ttu-id="cbe45-143">此属性是引用不同的单独请求的 `id` 的字符串数组。</span><span class="sxs-lookup"><span data-stu-id="cbe45-143">This property is an array of strings that reference the `id` of a different individual request.</span></span> <span data-ttu-id="cbe45-144">出于这个原因，`id` 的值必须唯一。</span><span class="sxs-lookup"><span data-stu-id="cbe45-144">For this reason, the values for `id` must be unique.</span></span> <span data-ttu-id="cbe45-145">例如，在下面的请求中，客户端指定请求 1 和 3 应该先运行，然后是请求 2，然后是请求 4。</span><span class="sxs-lookup"><span data-stu-id="cbe45-145">For example, in the following request, the client is specifying that requests 1 and 3 should be run first, then request 2, then request 4.</span></span>
 
 ```json
 {
@@ -136,21 +152,21 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="5a0cb-146">如果某个单独请求失败，则任何依赖该请求的请求都会失败，状态代码为 `424`（失败的依赖项）。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-146">If an individual request fails, any request that depends on that request fails with status code `424` (Failed Dependency).</span></span>
+<span data-ttu-id="cbe45-146">如果某个单独请求失败，则任何依赖该请求的请求都会失败，状态代码为 `424`（失败的依赖项）。</span><span class="sxs-lookup"><span data-stu-id="cbe45-146">If an individual request fails, any request that depends on that request fails with status code `424` (Failed Dependency).</span></span>
 
-## <a name="bypassing-url-length-limitations-with-batching"></a><span data-ttu-id="5a0cb-147">使用批处理绕过 URL 长度限制</span><span class="sxs-lookup"><span data-stu-id="5a0cb-147">Bypassing URL length limitations with batching</span></span>
+## <a name="bypassing-url-length-limitations-with-batching"></a><span data-ttu-id="cbe45-147">使用批处理绕过 URL 长度限制</span><span class="sxs-lookup"><span data-stu-id="cbe45-147">Bypassing URL length limitations with batching</span></span>
 
-<span data-ttu-id="5a0cb-p113">JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太复杂，URL 长度可能会超越浏览器或其他 HTTP 客户端中内置的限制。你可以使用 JSON 批处理作为运行这些请求的解决方法，因为长 URL 只能成为请求有效负载的一部分。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-p113">An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.</span></span>
+<span data-ttu-id="cbe45-p113">JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太复杂，URL 长度可能会超越浏览器或其他 HTTP 客户端中内置的限制。你可以使用 JSON 批处理作为运行这些请求的解决方法，因为长 URL 只能成为请求有效负载的一部分。</span><span class="sxs-lookup"><span data-stu-id="cbe45-p113">An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.</span></span>
 
-## <a name="known-issues"></a><span data-ttu-id="5a0cb-151">已知问题</span><span class="sxs-lookup"><span data-stu-id="5a0cb-151">Known issues</span></span>
+## <a name="known-issues"></a><span data-ttu-id="cbe45-151">已知问题</span><span class="sxs-lookup"><span data-stu-id="cbe45-151">Known issues</span></span>
 
-<span data-ttu-id="5a0cb-152">有关与批处理相关的当前限制列表，请参阅[已知问题][batching-known-issues]。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-152">For a list of current limitations related to batching, see [known issues][batching-known-issues].</span></span>
+<span data-ttu-id="cbe45-152">有关与批处理相关的当前限制列表，请参阅[已知问题][batching-known-issues]。</span><span class="sxs-lookup"><span data-stu-id="cbe45-152">For a list of current limitations related to batching, see [known issues][batching-known-issues].</span></span>
 
 [batching-known-issues]: https://developer.microsoft.com/en-us/graph/docs/concepts/known_issues#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 
 
-## <a name="see-also"></a><span data-ttu-id="5a0cb-153">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5a0cb-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cbe45-153">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cbe45-153">See also</span></span>
 
-<span data-ttu-id="5a0cb-154">有关 JSON 批处理请求/响应格式的详细信息，请参阅 [OData JSON 格式版本 4.01 规范][odata-4.01-json]第 18 节。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-154">For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json], section 18. Note that this specification is currently in a draft version, but is not expected to change.</span></span> <span data-ttu-id="5a0cb-155">注意，此规范目前处于草稿版本，但应该不会更改。</span><span class="sxs-lookup"><span data-stu-id="5a0cb-155">For more information about the JSON batch request/response format, see the OData JSON Format Version 4.01 specification, section 18. Note that this specification is currently in a draft version, but is not expected to change.</span></span>
+<span data-ttu-id="cbe45-154">有关 JSON 批处理请求/响应格式的详细信息，请参阅 [OData JSON 格式版本 4.01 规范][odata-4.01-json]第 18 节。</span><span class="sxs-lookup"><span data-stu-id="cbe45-154">For more information about the JSON batch request/response format, see the [OData JSON Format Version 4.01 specification][odata-4.01-json], section 18.</span></span> <span data-ttu-id="cbe45-155">注意，此规范目前处于草稿版本，但应该不会更改。</span><span class="sxs-lookup"><span data-stu-id="cbe45-155">Note that this specification is currently in a draft version, but is not expected to change.</span></span>
 
