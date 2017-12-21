@@ -22,8 +22,11 @@ POST /workbook/tables/$/add
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Table](../resources/table.md) 对象的 JSON 表示形式。
+### <a name="request-parameters"></a>请求参数
+| 名称           | 类型      |说明|
+|:---------------|:----------|:----------|
+| Address  | string| 区域地址。若要从 `worksheets/{id or name}/tables/add` 路径调用此 API，地址中无需有工作表名称前缀。不过，若要从 `workbook/tables/add` 路径调用此 API，请提供需要在其中创建表的工作表名称（例如：`sheet1!A1:D4`）|
+| hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
@@ -42,14 +45,10 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "A1:D8",
+  "hasHeaders": false
 }
 ```
-在请求正文中，提供 [Table](../resources/table.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

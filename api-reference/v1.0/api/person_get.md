@@ -18,25 +18,21 @@
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-|Name|值|说明|
-|:---------------|:--------|:-------|
-|$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
-|$orderby|string|默认情况下，按与查询的相关性对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员的顺序。|
-|$search|string|按名字或别名搜索人员。支持模糊匹配。|
-|$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
-|$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
-|$top|int|要返回的结果数。|
+此方法支持以下 [OData 查询参数](../../../concepts/people_example.md)，有助于自定义响应。
 
-## <a name="parameters"></a>参数
-| 参数 |类型       |说明|
-|:----------|:----------|:----------|
-|property_value|字符串     |要匹配的扩展属性的值。**HTTP 请求**部分中列出的必需的参数。|
-|person_property|字符串    |要匹配的人员属性。**HTTP 请求**部分中列出的必需的参数。|
+|名称|值|说明| 
+|:---------------|:--------|:-------| 
+|$filter|string|将响应限制为仅记录中包含指定条件的那些人员。| 
+|$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。| 
+|$search|string|按姓名或别名搜索人员。 支持模糊匹配| 
+|$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。| 
+|$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。| 
+|$top|int|要返回的结果数。| 
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -45,126 +41,106 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [person](../resources/person.md) 对象。响应可以包含一个人员实例或一个人员实例集合。 
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [person](../resources/person.md) 对象。
+
 ## <a name="examples"></a>示例
-### <a name="perform-a-search"></a>执行搜索 
-以下请求搜索名为“Irene McGowan”的人员。 
+#### <a name="request-1"></a>请求 1
+下面展示了示例请求，以从用户组织中获取拥有此 ID 的用户。 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_by_id"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-以下示例显示了相应的响应。 
+#### <a name="response-1"></a>响应 1
+下面展示了示例响应。
+
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
-  "name": "get_person",
+  "name": "get_person_by_id",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 629
 
 {
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": [
-               {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-       }
-   ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer",
+  "givenName": "Isaiah",
+  "surname": "Langer",
+  "birthday": "",
+  "personNotes": "",
+  "isFavorite": false,
+  "jobTitle": "Web Marketing Manager",
+  "companyName": null,
+  "yomiCompany": "",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": "",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
+  "scoredEmailAddresses": [
+      {
+          "address": "IsaiahL@contoso.com",
+          "relevanceScore": 20.0
+      }
+  ],
+  "phones": [
+      {
+          "type": "business",
+          "number": "+1 918 555 0101"
+      }
+  ],
+  "postalAddresses": [],
+  "websites": [],
+  "personType": {
+      "class": "Person",
+      "subclass": "OrganizationUser"
+  }
 }
 ```
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a>选择要在经过筛选的响应中返回的字段 
-可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。 
 
-以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
-```
-
-下面是示例请求的正确编码 URL。
+#### <a name="request-2"></a>请求 2
+下面展示了示例请求，以从用户组织中获取拥有此 ID 的用户，并限制在响应中返回选定属性。
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_select_and_filter"
+  "name": "get_person_by_id_with_select"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
+#### <a name="response-2"></a>响应 2
+下面展示了示例响应。
 
-下面展示了示例响应。 
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
-  "name": "get_person_select_and_filter",
+  "name": "get_person_by_id_with_select",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 305
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ]
-        }
-    ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 

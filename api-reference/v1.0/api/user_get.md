@@ -14,12 +14,20 @@
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+对于特定用户：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+对于登录用户：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)来帮助自定义响应。
 
 默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 
 
@@ -42,7 +50,42 @@ GET /users/{id | userPrincipalName}
 
 ### <a name="example-1-standard-users-request"></a>示例 1：标准用户请求
 
-默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 此示例演示了默认请求和响应。 
+默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 此示例展示了默认请求和响应。 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+```
+
+##### <a name="response"></a>响应
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+  "businessPhones": [
+       "businessPhones-value"
+   ],
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
+}
+```
+
+
+### <a name="example-2-signed-in-user-request"></a>示例 2：登录用户请求
+
+可以将 `/users/{id | userPrincipalName}` 替换为 `/me`，获取登录用户的用户信息。
 
 ##### <a name="request"></a>请求
 
@@ -82,24 +125,17 @@ Content-length: 491
 }
 ```
 
-### <a name="example-2-users-request-using-select"></a>示例 2：使用 $select 的用户请求
+### <a name="example-3-users-request-using-select"></a>示例 3：使用 $select 的用户请求
 
 如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
 
 ##### <a name="request"></a>请求
-<!-- {
-  "blockType": "request",
-  "name": "get_user"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>响应
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

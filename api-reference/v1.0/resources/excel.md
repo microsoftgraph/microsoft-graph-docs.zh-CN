@@ -13,9 +13,9 @@
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/zh-CN/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
-要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一：
+要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/zh-CN/graph/docs/authorization/permission_scopes)之一：
 
 * Files.Read（适用于读取操作）
 * Files.ReadWrite（适用于读写操作）
@@ -390,6 +390,36 @@ workbook-session-id: {session-id}
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
+```
+
+#### <a name="create-table"></a>创建表
+
+请求 
+<!-- { "blockType": "ignored" } -->
+```http 
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{ "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
+```
+
+响应 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 201 Created
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
+  "id": "2",
+  "name": "NewTableName",
+  "showHeaders": true,
+  "showTotals": false,
+  "style": "TableStyleMedium4"
+}
 ```
 
 #### <a name="update-table"></a>更新表

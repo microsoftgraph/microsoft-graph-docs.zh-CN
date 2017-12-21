@@ -4,13 +4,13 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有已登录用户的应用使用。对于这些应用，用户或管理员同意应用请求的权限，并向应用委派调用 Microsoft Graph 时代表已登录用户的权限。某些委派权限可以由非管理用户同意，但一些较高特权权限需要管理员同意。  
+- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
 
-- **应用程序权限**由无需具有登录用户即可运行的应用使用；例如，作为后台服务或守护程序运行的应用程序。应用程序权限只能由管理员同意。 
+- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
-- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
+- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
   
 - 对于应用程序权限，应用的_有效权限_将是权限默示的完整特权级别。例如，具有 _User.ReadWrite.All_ 应用程序权限的应用可以更新组织中每个用户的配置文件。 
 
@@ -67,7 +67,7 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 
 ### <a name="example-usage"></a>用法示例
 
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 
 * _Calendars.Read_：获取从 2017 年 4 月 23 日到 2017 年 4 月 29 日用户日历中的事件 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`)。
 * _Calendars.Read.Shared_：查找所有与会者都均有空参加的会议时间 (`POST /users/{id|userPrincipalName}/findMeetingTimes`)。
@@ -106,7 +106,7 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 仅 _Contacts.Read_ 和 _Contacts.ReadWrite_ 委派权限对 Microsoft 帐户有效。 
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 
 * _Contacts.Read_：从登录用户的一个顶层联系人文件夹读取联系人 (`GET /me/contactfolders/{Id}/contacts/{id}`)。
 * _Contacts.ReadWrite_：更新登录用户的一个联系人的联系人照片 (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
@@ -241,7 +241,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ### <a name="example-usage"></a>用法示例
 
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 * _Directory.Read.All_：列出组织中的所有管理单元 (`GET /beta/administrativeUnits`)
 * _Directory.ReadWrite.All_：将成员添加到目录角色 (`POST /directoryRoles/{id}/members/$ref`)
 
@@ -254,6 +254,41 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="education-graph-permissions"></a>教育版 Graph 权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限 |显示字符串 |说明 | 需经过管理员同意 |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAssignments.ReadBasic | 读取不含成绩的用户课堂作业 | 允许应用代表用户读取不含成绩的作业 | 是 |
+|EduAssignments.ReadWriteBasic | 对不含成绩的用户课堂作业执行读取和写入操作 | 允许应用代表用户对不含成绩的作业执行读取和写入操作 | 是 |
+|EduAssignments.Read | 读取用户的课堂作业及其成绩视图 | 允许应用代表用户读取作业及其成绩| 是 |
+|EduAssignments.ReadWrite | 对用户的课堂作业及其成绩视图执行读取和写入操作 | 允许应用代表用户对作业及其成绩执行读取和写入操作|是 |
+|EduRostering.ReadBasic| 读取用户的名单视图的有限子集 | 允许应用代表用户读取组织名单中学校和班级结构数据以及用户的教育专属信息的有限子集。  | 是  |
+
+
+#### <a name="application-permissions"></a>应用程序权限
+
+| 权限 | 显示字符串 | 说明 | 需要征得管理员同意 |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| 读取不含成绩的课堂作业|允许应用为所有用户读取不含成绩的作业| 是 |
+|EduAssignments.ReadWriteBasic.All | 对不含成绩的课堂作业执行读取和写入操作 | 允许应用为所有用户对不含成绩的的作业执行读取和写入操作| 是 |
+|EduAssignments.Read.All| 读取含成绩的课堂作业 | 允许应用为所有用户读取作业及其成绩 | 是 |
+|EduAssignments.ReadWrite.All | 对含成绩的课堂作业执行读取和写入操作 | 允许应用为所有用户对作业及其成绩执行读取和写入操作 | 是 |
+|EduRostering.ReadBasic.All | 读取组织名单的有限子集。 | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息的有限子集。 | 是 |
+|EduRostering.Read.All | 读取组织名单。 | 允许应用读取组织名单中的学校和班级结构数据以及所有用户的教育专属信息。 | 是 |
+|EduRostering.ReadWrite.All| 对组织名单执行读取和写入操作。 | 允许应用对组织名单中的学校和班级结构数据以及所有用户的教育专属信息执行读取和写入操作。  | 是 |
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _EduAssignments.Read_：获取登录学生的作业信息 (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_：提交登录学生的作业 (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_：登录用户听讲或教授的课程 (`GET /education/classes/<id>/members`)
+
+有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
 
 ## <a name="files-permissions"></a>文件权限
 
@@ -287,7 +322,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 ### <a name="example-usage"></a>用法示例
 
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 
 * _Files.Read_：读取登录用户的 OneDrive 中存储的文件 (`GET /me/drive/root/children`)
 * _Files.Read.All_：列出与登录用户共享的文件 (`GET /me/drive/root/sharedWithMe`)
@@ -329,7 +364,7 @@ Microsoft 个人帐户不支持组功能。
 
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 
 * _Group.Read.All_：读取登录用户所属的全部 Office 365 组 (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_：读取诸如对话之类的所有 Office 365 组内容 (`GET /groups/{id}/conversations`)。
@@ -440,7 +475,7 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 #### <a name="delegated"></a>委派
 
 * _Mail.Read_：列出用户收件箱中的邮件，按 `receivedDateTime` 排序 (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`)。
-* _Mail.Read.Shared_：在与登录用户共享收件箱的用户收件箱中查找所有带附件的邮件 (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`)。
+* _Mail.Read.Shared_：在已与登录用户共享其收件箱的用户收件箱中查找带有附件的所有邮件 (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`)。
 * _Mail.ReadWrite_：将邮件标记为已读 (`PATCH /me/messages/{id}`)。
 * _Mail.Send_：发送邮件 (`POST /me/sendmail`)。
 * _MailboxSettings.ReadWrite_：更新用户的自动答复 (`PATCH /me/mailboxSettings`)。
@@ -616,7 +651,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _Reports.Read.All_：读取电子邮件在日期“2017-01-01”的的活动详情报告 (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)。
 * _Reports.Read.All_：读取 Office 365 激活详情报告 (`GET /reports/Office365Activations(view='Detail')/content`)。
 
-有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
 

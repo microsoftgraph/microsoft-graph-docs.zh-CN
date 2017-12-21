@@ -27,7 +27,7 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|int|返回用于唯一标识指定工作簿中表的值。即使表被重命名，标识符的值仍然相同。只读。|
+|id|string|返回用于唯一标识指定工作簿中表的值。 即使表被重命名，标识符的值仍保持不变。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
@@ -42,9 +42,9 @@
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
-|行|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
+|rows|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
 |sort|[TableSort](tablesort.md)|表示表的排序。只读。|
-|worksheet|[Worksheet](worksheet.md)|包含当前表格的工作表。只读。|
+|工作表|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

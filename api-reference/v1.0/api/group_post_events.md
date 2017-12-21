@@ -1,6 +1,6 @@
 # <a name="create-event"></a>创建事件
-
 使用此 API 新建[事件](../resources/event.md)。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -8,7 +8,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -16,6 +16,7 @@
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -25,12 +26,11 @@ POST /groups/{id}/calendar/events
 在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+#### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "create_event_from_group"
@@ -52,9 +52,12 @@ Content-length: 285
   "isReminderOn": true
 }
 ```
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
+
+#### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

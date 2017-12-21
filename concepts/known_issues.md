@@ -36,7 +36,7 @@
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
-Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.All*）用于访问组和 Microsoft Teams 的 API。这些权限必须征得管理员同意（不同于预览版）。我们计划在将来新增可征得用户同意的组和团队权限。
+Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.All*），用于访问组和 Microsoft Teams 的 API。必须征得管理员同意，才能使用这些权限（不同于预览版）。我们计划在将来新增只需征得用户同意的组和团队权限。
 
 此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
 
@@ -47,13 +47,12 @@ Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.Al
 * 组[目录设置](../api-reference/v1.0/resources/directoryobject.md)、类型和同步
 * 组所有者和成员
 
-
 仅支持委派权限的组功能示例：
 
 * 组对话、事件和照片
 * 外部发件人、被接受或拒绝的发件人、组订阅
 * 用户收藏夹和未读计数
-* Microsoft Teams 频道和聊天。
+* Microsoft Teams 频道和聊天
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Microsoft Teams 中的团队（预览阶段）
 
@@ -73,7 +72,7 @@ Microsoft Teams 和 Office 365 组的[功能相似](../api-reference/beta/resour
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>添加和获取组帖子的附件
 
-向组帖子 [添加](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) 附件、[列出](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) 和获取组帖子的附件目前返回错误消息“OData 请求不受支持”。已经为 `/v1.0` 和 `/beta` 版本推出修复程序，并预计到 2016 年 1 月底会广泛推出。
+向组帖子 [添加](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/post_post_attachments) 附件、[列出](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/post_list_attachments) 和获取组帖子的附件目前返回错误消息“OData 请求不受支持”。已经为 `/v1.0` 和 `/beta` 版本推出修复程序，并预计到 2016 年 1 月底会广泛推出。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
@@ -91,8 +90,8 @@ Microsoft Teams 和 Office 365 组的[功能相似](../api-reference/beta/resour
 目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
 
 * 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [列出用户的日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
-* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)。
+* [列出用户的日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
+* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/calendar_list_events)。
 
 ### <a name="accessing-a-shared-calendar"></a>访问共享日历
 
@@ -135,7 +134,7 @@ GET \me\calendars('{id}')\events
 
 在 `/v1.0` 版本中，`GET /me/contactFolders` 不包括用户的默认联系人文件夹。 
 
-将会提供修复程序。同时，您还可以使用以下[列出联系人](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
+将会提供修复程序。同时，您还可以使用以下[列出联系人](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_contacts)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 在上面的查询中：
 
-1. `/me/contacts?$top=1` 获取默认联系人文件夹中 [联系人](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) 的属性。
+1. `/me/contacts?$top=1` 获取默认联系人文件夹中 [联系人](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact) 的属性。
 2. 附加 `&$select=parentFolderId` 仅返回联系人的 **parentFolderId** 属性，即默认联系人文件夹的 ID。
 
 
@@ -307,7 +306,7 @@ JSON 批处理请求目前被限定为 5 个单独请求。当 JSON 批处理成
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
 
-某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog)。有关 Azure Active Directory，请参考 [Microsoft Graph 或 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 博客文章，获取只能通过 Azure AD Graph API 提供的功能。
+某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://msdn.microsoft.com/zh-CN/office/office365/api/api-catalog)。有关 Azure Active Directory，请参考 [Microsoft Graph 或 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 博客文章，获取只能通过 Azure AD Graph API 提供的功能。
 
 ## <a name="feedback"></a>反馈
 

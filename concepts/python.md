@@ -1,108 +1,67 @@
 # <a name="get-started-with-microsoft-graph-in-a-python-app"></a>在 Python 应用中开始使用 Microsoft Graph 
 
-本文介绍了从 Azure AD 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 Python 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/python3-connect-rest-sample)，并说明使用 Microsoft Graph API 要实现的主要概念。本文介绍了如何使用 REST 直接调用来访问 Microsoft Graph。
+本文介绍了从 Azure AD 获取访问令牌和调用 Microsoft Graph 所需的任务。 本文逐步演示了如何[使用 Python 通过 Microsoft Graph 发送邮件](https://github.com/microsoftgraph/python-sample-send-mail)，并说明了使用 Microsoft Graph API 要实现的主要概念。 本文介绍了如何使用 REST 直接调用来访问 Microsoft Graph。
 
-![Office 365 Python Connect 示例屏幕截图](./images/web-screenshot.png)
+![发送邮件表单](https://raw.githubusercontent.com/microsoftgraph/python-sample-send-mail/master/static/images/sendmail.png)
 
-##  <a name="prerequisites"></a>先决条件
+## <a name="choosing-an-authentication-library"></a>选择身份验证库
 
-* [Python 3.5.2](https://www.python.org/downloads/)
-* [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* [Flask-Script 0.4](http://flask-script.readthedocs.io/en/latest/)
-* [Microsoft 帐户](https://www.outlook.com/)或 [Office 365 商业版帐户](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
-* [适用于 Python 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/python3-connect-rest-sample)
+若要调用 Microsoft Graph，应用必须包含从 Microsoft 云标识服务 Azure Active Directory (Azure AD) 获取的有效访问令牌，且每次调用 Microsoft Graph REST API 时，必须在 HTTP 头中传递令牌。 Graph 采用的身份验证方法以 OAuth 2.0 和 Open ID Connect 标准为依据。因此，为了在应用中实现身份验证，有许多[身份验证库](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries)可供选择。
 
-## <a name="register-the-application-in-azure-active-directory"></a>在 Azure Active Directory 中注册应用程序
+下述示例使用 [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) 库来实现 OAuth 2.0 [授权代码授权](https://tools.ietf.org/html/rfc6749#section-4.1)工作流，这是适合使用 Python 编写的 Web 应用的推荐身份验证工作流。 若要了解其他身份验证选项，请参阅 [Microsoft Graph 的 Python 身份验证示例](https://github.com/microsoftgraph/python-sample-auth)。
 
-首先，需要注册应用程序并设置 Microsoft Graph 的使用权限。此操作允许用户使用工作或学校帐户登录应用程序。
+## <a name="installing-and-running-the-send-mail-sample"></a>安装和运行“发送邮件”示例
 
-## <a name="register-the-application"></a>注册应用程序
+若要安装和配置示例应用，请按照[安装 Python REST 示例](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md)中的说明操作。 对于下述“发送邮件”示例，使用以下命令克隆存储库：
 
-在 Microsoft 应用注册门户上注册一个应用。这会生成用于配置此应用的应用程序 ID 和密码，并进行身份验证。
+    ```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
 
-1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
+按照[安装说明](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md)中所述注册应用时，请务必添加 **User.Read** 和 **Mail.Send** 权限，这些是此示例的必需权限。
 
-2. 选择“**添加应用**”。
+完成安装/配置后，可以按照[运行示例](https://github.com/microsoftgraph/python-sample-send-mail#running-the-sample)中的说明操作，运行示例应用。
 
-3. 输入应用的名称，并选择“**创建应用程序**”。
+## <a name="code-walkthrough"></a>代码演练
 
-    将显示注册页，其中列出应用的属性。
+下面大致介绍了示例应用的[源代码](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py)。
 
-4. 复制应用程序 ID。这是应用的唯一标识符。
+前几行代码是此示例中使用的 Python 模块和包的[导入](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L4-L11)部分：
 
-5. 在“**应用程序机密**”下，选择“**生成新密码**”。从“**生成的新密码**”对话中复制应用机密。
+* 标准库中的 **base64** 模块用于编码电子邮件附件。
+* 标准库中的 **pprint** 模块用于优质打印 Graph 返回的任何错误消息。 （例如，如果尝试发送到的电子邮件地址无效。）
+* 标准库中的 **uuid** 模块用于生成包含 36 个字符的随机字符串，以唯一标识每个 Graph 请求。 这可用于进行调试。
+* **flask** 包是此示例的 Web 框架。
+* **flask_oauthlib.client** 的 **OAuth** 类是 Flask 应用的包装器，用于实现 OAuth 2.0 身份验证工作流。
+* **config** 模块包含上面安装过程中配置的应用注册设置。
 
-    将使用此应用程序 ID 和应用机密配置应用。
+接下来，先[创建 Flask 应用](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L13-L15)，再创建名为 **MSGRAPH** 的 [Graph 客户端对象](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L17-L26)。
 
-6. 在“**平台**”下，依次选择“**添加平台**” > “**Web**”。
+完成初始设置步骤后，将处理下列三个实现身份验证工作流的 Flask 路由处理程序函数：[homepage()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L28-L31)、[login()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L33-L37) 和 [authorized()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L39-L46)。 若要详细了解身份验证工作流，请参阅 Python 身份验证示例存储库的[示例体系结构](https://github.com/microsoftgraph/python-sample-auth#sample-architecture)部分。
 
-7. 请务必选中“**允许隐式流**”复选框，然后输入 *http://localhost:5000/login/authorized* 作为重定向 URI。
+下一个路由处理程序 [mailform()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L48-L54) 是指定电子邮件收件人、主题和正文的表单。 请注意，此函数也负责首次调用 Graph：[检索用户配置文件](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L51-L51)，以获取当前用户的显示名称和电子邮件地址，这些信息将被[传递到 mailform.html 模板](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L52-L54)。
 
-    “**允许隐式流**”选项可启用 OpenID Connect 混合流。在身份验证过程中，这可使应用同时接收登录信息 (**id_token**) 以及应用用来获取访问令牌的项目（在这种情况下，项目为授权代码）。
-
-    重定向 URI *http://localhost:5000/login/authorized* 是 OmniAuth 中间件配置为在处理身份验证请求后使用的值。
-
-8. 选择“保存”****。
-
-## <a name="configure-and-run-the-app"></a>配置并运行应用程序
-
-1. 使用常用文本编辑器打开 **_PRIVATE.txt** 文件。
-2. 将 *ENTER_YOUR_CLIENT_ID* 替换成已注册的应用程序的客户端 ID。
-3. 将 *ENTER_YOUR_SECRET* 替换成为应用程序生成的密钥。
-4. 通过运行 ```python manage.py runserver``` 启动开发服务器。
-5. 在 Web 浏览器中，转到 ```http://localhost:5000/```。
-
-<!--<a name="authCode"></a>-->
-## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>在回复 URL 页面中接收授权代码
-
-在用户登录后，浏览器会重定向到答复 URL（即 [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py) 中的 ```login/authorized``` 路由），并在响应中提供访问令牌。此示例将访问令牌存储为会话变量。
+下一个 [send_mail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L56-L73) 函数发送电子邮件，并显示 Graph API 返回的响应。 它使用 sendmail() 帮助程序函数，同时向它传递从表单公布的查询字符串参数：
 
 ```python
-@app.route('/login/authorized')
-def authorized():
-    """Handler for login/authorized route."""
-    response = msgraphapi.authorized_response()
-
-    if response is None:
-        return "Access Denied: Reason={0}\nError={1}".format( \
-            request.args['error'], request.args['error_description'])
-
-    # Check response for state
-    if str(session['state']) != str(request.args['state']):
-        raise Exception('State has been messed with, end authentication')
-    session['state'] = '' # reset session state to prevent re-use
-
-    # Okay to store this in a local variable, encrypt if it's going to client
-    # machine or database. Treat as a password.
-    session['microsoft_token'] = (response['access_token'], '')
-    # Store the token in another session variable for easy access
-    session['access_token'] = response['access_token']
-    me_response = msgraphapi.get('me')
-    me_data = json.loads(json.dumps(me_response.data))
-    username = me_data['displayName']
-    email_address = me_data['userPrincipalName']
-    session['alias'] = username
-    session['userEmailAddress'] = email_address
-    return redirect('main')
+response = sendmail(MSGRAPH,
+                    subject=flask.request.args['subject'],
+                    recipients=flask.request.args['email'].split(';'),
+                    html=flask.request.args['body'])
 ```
 
-<!--<a name="request"></a>-->
-## <a name="use-the-access-token-in-a-request-to-the-microsoft-graph-api"></a>在 Microsoft Graph API 请求中使用访问令牌
+只要调用 Graph，Flask-OAuthlib 客户端实例 (```MSGRAPH```) 都是使用 [get_token()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L78) 函数来获取访问令牌。 虽然访问令牌在名为 **Authorization** 的 HTTP 头中传递，但无需在代码中对此进行处理。 只需通过客户端的 HTTP 谓词方法（例如，get() 或 post()）调用 Graph，客户端实例就会知道调用 ```get_token()``` 来获取令牌，因为此函数是使用 ```tokengetter``` 进行[修饰](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L75)。
 
-使用访问令牌，您的应用可以对 Microsoft Graph API 提出身份验证请求。您的应用必须将访问令牌附加到各个请求的**授权**头中。
+下一个 [request_headers()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L80-L85) 函数返回随每次 Graph 调用一起发送的 HTTP 头的字典。
 
-Connect 示例使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``` 终结点发送电子邮件。代码位于 [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py) 文件的 ```call_sendmail_endpoint``` 函数中。此代码展示了如何将访问代码追加到授权标头中。
+最后一个 [sendmail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L87-L129) 是用于发送电子邮件的帮助程序函数。 它使用 Microsoft Graph API 中的 ```me/microsoft.graph.sendMail``` 终结点发送邮件。无论何时需要通过 Microsoft Graph 发送电子邮件，都可以在自己的代码中重用此函数。 若要了解如何调用此函数，请参阅 [docstring](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L88-L97)。
 
-```python
-    # Set request headers.
-    headers = { 
-      'User-Agent' : 'python_tutorial/1.0',
-      'Authorization' : 'Bearer {0}'.format(access_token),
-      'Accept' : 'application/json',
-      'Content-Type' : 'application/json'
-    }
-```
+## <a name="other-python-rest-samples"></a>其他 Python REST 示例
 
-> **注意**：请求还必须发送 **Content-Type** 头，其中包含 Graph API 接受的值（例如，`application/json`）。
+除了上述示例外，下面的示例展示了如何通过 Python 使用 Microsoft Graph 的其他功能：
 
-Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。请查看 API 参考，了解还可以使用 Microsoft Graph 完成什么任务。
+* [Microsoft Graph 的 Python 身份验证示例](https://github.com/microsoftgraph/python-sample-auth)
+* [在 Python 中处理分页 Microsoft Graph 响应](https://github.com/microsoftgraph/python-sample-pagination)
+* [在 Python 中使用 Graph 开放扩展](https://github.com/microsoftgraph/python-sample-open-extensions)
+
+若要查看某个特定示例，请通过[提交问题](https://github.com/microsoftgraph/python-sample-auth/issues)告诉我们。 我们非常期待收到大家就希望在 Python 中生成的任何 Microsoft Graph 方案提供的反馈。
+
+Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。 请查看[开发人员文档](https://developer.microsoft.com/zh-CN/graph/docs/concepts/overview)或 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)，了解还可以使用 Microsoft Graph 做什么。
