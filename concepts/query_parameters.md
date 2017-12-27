@@ -6,16 +6,16 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
-| [$count](#count)         | 检索匹配资源的总数。 | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand)       | 检索相关资源。|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter)       | 筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format)       | 返回指定媒体格式的结果。|[`/users?$format=json`][format-example]
-| [$orderby](#orderby)     | 对结果进行排序。|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search)       | 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select)       | 筛选属性（列）。|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken) | 从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
+| [$count](#count-parameter)         | 检索匹配资源的总数。 | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand-parameter)       | 检索相关资源。|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter-parameter)       | 筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format-parameter)       | 返回指定媒体格式的结果。|[`/users?$format=json`][format-example]
+| [$orderby](#orderby-parameter)     | 对结果进行排序。|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search-parameter)       | 返回基于搜索条件的结果。目前在 `messages` 和 `person` 集合上受到支持。|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select-parameter)       | 筛选属性（列）。|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip-parameter)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top-parameter)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
 
 
 
@@ -39,7 +39,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="count"></a>count
+## <a name="count-parameter"></a>count 参数
 
 使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。 
 
@@ -54,9 +54,9 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**注意：**派生自 [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) 的资源集合（如 [user](../api-reference/v1.0/resources/user.md) 或 [group](../api-reference/v1.0/resources/group.md) 集合）不支持 `$count`。
 
-## <a name="expand"></a>expand
+## <a name="expand-parameter"></a>expand 参数
 
-许多 Microsoft Graph 资源都会暴露资源的声明属性以及其与其他资源的关系。 这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。 例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
+许多 Microsoft Graph 资源都会公开资源的已声明属性以及与其他资源的关系。 这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。 例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
 
 通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-使用某些资源集合，还可以通过添加 `$select` 参数来指定要在扩展资源中返回的属性。以下示例执行与上一示例相同的查询，但使用 [`$select`](#select) 语句将为扩展子项返回的属性限制为 `id` 和 `name` 属性。
+使用某些资源集合，还可以通过添加 `$select` 参数来指定要在扩展资源中返回的属性。以下示例执行与上一示例相同的查询，但使用 [`$select`](#select-parameter) 语句将为扩展子项返回的属性限制为 `id` 和 `name` 属性。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > 
 > 使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如[user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
 
-## <a name="filter"></a>筛选器
+## <a name="filter-parameter"></a>filter 参数
 
 使用 `$filter` 查询参数，以仅检索集合的子集。 
 
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 > **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
-## <a name="format"></a>format
+## <a name="format-parameter"></a>format 参数
 
 使用 `$format` 查询参数，指定 Microsoft Graph 返回的项的媒体格式。
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 > **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
-## <a name="orderby"></a>orderby
+## <a name="orderby-parameter"></a>orderby 参数
 
 使用 `$orderby` 查询参数指定从 Microsoft Graph 返回的项的排序顺序。
 
@@ -165,11 +165,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **注意：**使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
 
-## <a name="search"></a>搜索 
+## <a name="search-parameter"></a>search 参数
 
 使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
 
-> **注意：**目前**只**能搜索 [message](../api-reference/v1.0/resources/message.md) 和 [person](../api-reference/v1.0/resources/person.md) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter) 或 [`$orderby`](#orderby)。
+> **注意：**目前**只**能搜索 [message](../api-reference/v1.0/resources/message.md) 和 [person](../api-reference/v1.0/resources/person.md) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter-parameter) 或 [`$orderby`](#orderby-parameter)。
 
 ### <a name="using-search-on-message-collections"></a>针对 `message` 集合使用 $search
 
@@ -237,7 +237,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 
 若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md)。  
 
-## <a name="select"></a>select
+## <a name="select-parameter"></a>select 参数
 
 使用 `$select` 查询参数返回一组不同于单个资源的默认集或资源集合的属性。 使用 $select 可以指定默认属性的子集或超集。
 
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 >
 > 在 `v1.0` 中，从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的一些 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
 
-## <a name="skip"></a>skip
+## <a name="skip-parameter"></a>skip 参数
 
 使用 `$skip` 查询参数设置要在集合开头跳过的项数。例如，以下请求返回按照创建日期排序的用户的事件，从集合中的第 21 个事件开始：
 
@@ -264,12 +264,12 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **注意：**一些 Microsoft Graph API，如 Outlook 邮件和 Outlook 日历（`message`、`event` 和 `calendar`），使用 `$skip` 来实现分页。 当查询的结果跨多个页面时，这些 API 将返回一个具有包含 `$skip` 参数的 URL 的 `@odata:nextLink` 属性。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 
-## <a name="skiptoken"></a>skipToken
+## <a name="skiptoken-parameter"></a>skipToken 参数
 
-由于服务器端分页或由于使用 [`$top`](#top) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
+由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
 
 
-## <a name="top"></a>top
+## <a name="top-parameter"></a>top 参数
 
 使用 `$top` 查询参数指定结果集的页面大小。 
 
