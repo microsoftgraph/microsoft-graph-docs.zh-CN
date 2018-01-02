@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="概述" url="/en-us/concepts/overview" SEOKeyword="概述, Microsoft Graph API, 概述" SEODescription="借助 Microsoft Graph，应用程序可以跨 Microsoft 智能云访问数字工作和数字生活数据。为开发者提供巨大优势：统一 Microsoft API 终结点，用于使用 Microsoft 云中的数据、情报和数据解析。" />    
   <Item text="精选方案" url="/en-us/concepts/featured_scenarios"> 
@@ -8,9 +8,10 @@
   <Item text="生成首个应用" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Android 应用中访问 Microsoft 云数据" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Angular 应用中访问 Microsoft 云数据" />
-    <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET、ASP.NET MVC、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 ASP.NET MVC 应用中访问 Microsoft 云数据" />
-    <Item text="iOS" url="/en-us/concepts/ios" SEOKeyword="iOS、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 iOS 应用中访问 Microsoft 云数据" />
-    <Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 访问 Node.js 应用中的 Microsoft 云数据" />
+    <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET、ASP.NET MVC、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 ASP.NET MVC 应用程序中访问 Microsoft 云数据" />
+    <Item text="iOS (Objective-C)" url="/en-us/concepts/ios_objectivec" SEOKeyword="iOS, Microsoft Graph API, 演练" SEODescription="开始使用 Microsoft Graph 在 Objective-C iOS 应用程序中访问 Microsoft 云数据。" />
+    <Item text="iOS (Swift)" url="/en-us/concepts/ios_swift" SEOKeyword="iOS, Microsoft Graph API, 演练" SEODescription="开始使用 Microsoft Graph 在 Swift iOS 应用程序中访问 Microsoft 云数据。" />
+	<Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 访问 Node.js 应用中的 Microsoft 云数据" />
     <Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 PHP 应用中访问 Microsoft 云数据" />
     <Item text="Python" url="/en-us/concepts/python" SEOKeyword="Python、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Python 应用中访问 Microsoft 云数据" />
     <Item text="Ruby" url="/en-us/concepts/ruby" SEOKeyword="Ruby、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Ruby 应用中访问 Microsoft 云数据" />
@@ -91,7 +92,7 @@
     </Item>
     <Item text="驱动器" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="用户驱动器, Microsoft Graph API, 用户 API" SEODescription="驱动器 API">
       <Item text="获取驱动器" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
-      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
     </Item>
     <Item text="组" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="用户组、Microsoft Graph API、用户 API" SEODescription="组 API">
       <Item text="列出 memberOf" url="/en-us/api-reference/v1.0/api/user_list_memberof" SEOKeyword="列出 memberOf, Microsoft Graph API, 用户 API" SEODescription="检索 directoryObject 对象列表。" />
@@ -157,9 +158,9 @@
 	<Item text="日历" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="日历">
       <Item text="列出事件" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="列出事件, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
       <Item text="创建事件" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="创建事件, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建事件。" />
-      <Item text="获取事件" url="/en-us/api-reference/v1.0/api/event_get" />
-      <Item text="更新事件" url="/en-us/api-reference/v1.0/api/event_update" />
-      <Item text="删除事件" url="/en-us/api-reference/v1.0/api/event_delete" />
+      <Item text="获取事件" url="/en-us/api-reference/v1.0/api/group_get_event" />
+      <Item text="更新事件" url="/en-us/api-reference/v1.0/api/group_update_event" />
+      <Item text="删除事件" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="列出日历视图" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
       <Item text="列出附件" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="列出附件, Microsoft Graph API, Outlook 日历 API" SEODescription="检索 attachment 对象列表。" />
       <Item text="添加附件" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="创建附件, Microsoft Graph API, Outlook 日历 API" SEODescription="使用此 API 新建附件。" />
@@ -169,28 +170,28 @@
     <Item text="对话" url="/en-us/api-reference/v1.0/resources/conversation" SEOKeyword="组对话, Microsoft Graph API, 组 API" SEODescription="对话">
       <Item text="列出对话" url="/en-us/api-reference/v1.0/api/group_list_conversations" SEOKeyword="列出对话, Microsoft Graph API, 组 API" SEODescription="检索对话对象列表。" />
       <Item text="创建对话" url="/en-us/api-reference/v1.0/api/group_post_conversations" SEOKeyword="创建对话, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建对话。" />
-      <Item text="获取组对话" url="/en-us/api-reference/v1.0/api/conversation_get" SEOKeyword="获取组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
-      <Item text="删除组对话" url="/en-us/api-reference/v1.0/api/conversation_delete" SEOKeyword="删除组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="删除对话。" />
+      <Item text="获取组对话" url="/en-us/api-reference/v1.0/api/group_get_conversation" SEOKeyword="获取组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
+      <Item text="删除组对话" url="/en-us/api-reference/v1.0/api/group_delete_conversation" SEOKeyword="删除组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="删除对话。" />
       <Item text="列出对话线程" url="/en-us/api-reference/v1.0/api/conversation_list_threads" SEOKeyword="列出线程、Microsoft Graph API、组 API" SEODescription="检索 conversationthread 对象列表。" />
       <Item text="创建对话线程" url="/en-us/api-reference/v1.0/api/conversation_post_threads" SEOKeyword="创建线程、Microsoft Graph API、组 API" SEODescription="使用此 API 新建线程。" />
       <Item text="列出接受的发送者" url="/en-us/api-reference/v1.0/api/group_list_acceptedsenders" SEOKeyword="列出 acceptedSenders, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
-      <Item text="创建接受的发送者" url="/en-us/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="创建 acceptedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建 acceptedSender。" />
-      <Item text="删除接受的发送者" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="删除 acceptedSender、Microsoft Graph API、组 API" SEODescription="使用此 API 删除 acceptedSender。" />
+      <Item text="创建接受的发送者" url="/en-us/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="创建 acceptedSender, Microsoft Graph API, 组 API" SEODescription="此 API 可用于新建 acceptedSender。" />
+      <Item text="删除接受的发送者" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="删除 acceptedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 删除 acceptedSender。" />
       <Item text="列出拒绝的发送者" url="/en-us/api-reference/v1.0/api/group_list_rejectedsenders" SEOKeyword="列出 rejectedSenders、Microsoft Graph API、组 API" SEODescription="检索 rejectedSenders 列表。" />
-      <Item text="创建拒绝的发送者" url="/en-us/api-reference/v1.0/api/group_post_rejectedsenders" SEOKeyword="创建 rejectedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建 rejectedSender。" />
-      <Item text="删除拒绝的发送者" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="删除 rejectedSenders、Microsoft Graph API、组 API" SEODescription="使用此 API 删除 rejectedSender。" />
+      <Item text="创建拒绝的发送者" url="/en-us/api-reference/v1.0/api/group_post_rejectedsenders" SEOKeyword="创建 rejectedSender, Microsoft Graph API, 组 API" SEODescription="此 API 可用于新建 rejectedSender。" />
+      <Item text="删除拒绝的发送者" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="删除 rejectedSenders, Microsoft Graph API, 组 API" SEODescription="使用此 API 删除 rejectedSender。" />
     </Item>
     <Item text="对话线程" url="/en-us/api-reference/v1.0/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="对话线程">
       <Item text="列出线程" url="/en-us/api-reference/v1.0/api/group_list_threads" SEOKeyword="列出线程、Microsoft Graph API、Outlook 对话 API" SEODescription="检索 conversationthread 对象列表。" />
       <Item text="创建线程" url="/en-us/api-reference/v1.0/api/group_post_threads" SEOKeyword="创建线程、Microsoft Graph API、Outlook 对话 API" SEODescription="使用此 API 新建线程。" />
-      <Item text="获取对话线程" url="/en-us/api-reference/v1.0/api/conversationthread_get" SEOKeyword="获取 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="检索 conversationthread 对象的属性和关系。" />
-      <Item text="更新对话线程" url="/en-us/api-reference/v1.0/api/conversationthread_update" SEOKeyword="更新 conversationthread, Microsoft Graph API, Outlook 对话 API" SEODescription="更新 conversationthread 对象的属性。" />
-      <Item text="删除对话线程" url="/en-us/api-reference/v1.0/api/conversationthread_delete" SEOKeyword="删除 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="删除 conversationThread。" />
+      <Item text="获取对话线程" url="/en-us/api-reference/v1.0/api/group_get_thread" SEOKeyword="获取 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="检索 conversationthread 对象的属性和关系。" />
+      <Item text="更新对话线程" url="/en-us/api-reference/v1.0/api/group_update_thread" SEOKeyword="更新 conversationthread, Microsoft Graph API, Outlook 对话 API" SEODescription="更新 conversationthread 对象的属性。" />
+      <Item text="删除对话线程" url="/en-us/api-reference/v1.0/api/group_delete_thread" SEOKeyword="删除 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="删除 conversationThread。" />
       <Item text="回复对话线程" url="/en-us/api-reference/v1.0/api/conversationthread_reply" SEOKeyword="conversationThread：回复, Microsoft Graph API, conversationthread API" SEODescription="" />
     </Item>
     <Item text="驱动器" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="用户驱动器, Microsoft Graph API, 用户 API" SEODescription="驱动器">
       <Item text="获取驱动器" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
-      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项对象列表。" />
+      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项对象列表。" />
     </Item>
     <Item text="扩展属性" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="">
       <Item text="单值扩展属性" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -293,7 +294,10 @@
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="工作簿" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="列出表格" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+      <Item text="创建会话" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
+	  <Item text="刷新会话" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="关闭会话" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
+	  <Item text="列出表" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="列出工作表" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="列出名称" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
     </Item>
@@ -310,8 +314,12 @@
       <Item text="添加图表" url="/en-us/api-reference/v1.0/api/worksheet_post_charts" SEOKeyword="" SEODescription="" />
     </Item>
     <Item text="范围" url="/en-us/api-reference/v1.0/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="获取范围" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
-      <Item text="合并" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
+      <Item text="获取区域" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
+	  <Item text="更新区域" url="/en-us/api-reference/v1.0/api/range_update" />
+	  <Item text="插入区域" url="/en-us/api-reference/v1.0/api/range_insert" />
+	  <Item text="获取区域格式" url="/en-us/api-reference/v1.0/api/rangeformat_get" />
+	  <Item text="更新区域格式" url="/en-us/api-reference/v1.0/api/rangeformat_update" />
+	  <Item text="合并" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
       <Item text="拆分" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="清除" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
       <Item text="删除" url="/en-us/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -319,59 +327,73 @@
     <Item text="表" url="/en-us/api-reference/v1.0/resources/table" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="添加表格" url="/en-us/api-reference/v1.0/api/tablecollection_add" SEOKeyword="" SEODescription="" />
       <Item text="获取表格" url="/en-us/api-reference/v1.0/api/table_get" SEOKeyword="" SEODescription="" />
-      <Item text="更新表格" url="/en-us/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
-      <Item text="获取范围" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
+      <Item text="更新表" url="/en-us/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
+	  <Item text="删除表" url="/en-us/api-reference/v1.0/api/table_delete" />
       <Item text="列出行" url="/en-us/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
+	  <Item text="创建行" url="/en-us/api-reference/v1.0/api/table_post_rows" />
       <Item text="列出列" url="/en-us/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
+	  <Item text="创建列" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+	  <Item text="获取区域" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
     </Item>
     <Item text="图表" url="/en-us/api-reference/v1.0/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="获取图表" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+      <Item text="列出图表" url="/en-us/api-reference/v1.0/api/chart_list" />
+	  <Item text="获取图表" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+	  <Item text="更新图表" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+	  <Item text="删除图表" url="/en-us/api-reference/v1.0/api/chart_delete" />
+	  <Item text="添加图表" url="/en-us/api-reference/v1.0/api/chartcollection_add" />
       <Item text="获取图表图像" url="/en-us/api-reference/v1.0/api/chart_image" SEOKeyword="" SEODescription="" />
       <Item text="重置数据" url="/en-us/api-reference/v1.0/api/chart_setdata" SEOKeyword="" SEODescription="" />
-      <Item text="设置位置数据" url="/en-us/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
-      <Item text="更新图表" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+      <Item text="设置定位数据" url="/en-us/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
     </Item>
-    <Item text="NamedItem" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="列出 nameditem" url="/en-us/api-reference/v1.0/api/nameditem_get" SEOKeyword="" SEODescription="" />
-      <Item text="列出范围" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
+    <Item text="命名项" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+      <Item text="列出命名项" url="/en-us/api-reference/v1.0/api/nameditem_list" SEOKeyword="" SEODescription="" />
+      <Item text="获取命名项" url="/en-us/api-reference/v1.0/api/nameditem_get" />
+	  <Item text="更新命名项" url="/en-us/api-reference/v1.0/api/nameditem_update" />
+	  <Item text="添加命名项" url="/en-us/api-reference/v1.0/api/nameditem_add" />
+	  <Item text="列出区域" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="用户驱动器、Microsoft Graph API、用户 API" SEODescription="OneDrive API">
     <Item text="驱动器" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="用户驱动器、Microsoft Graph API、用户 API" SEODescription="驱动器 API">
       <Item text="获取驱动器" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
       <Item text="列出驱动器" url="/en-us/api-reference/v1.0/api/drive_list" SEOKeyword="列出驱动器、Microsoft Graph aPI、驱动器 API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
       <Item text="最近使用的文件" url="/en-us/api-reference/v1.0/api/drive_recent" SEOKeyword="最近使用的文件、Microsoft Graph API、驱动器 API" SEODescription="获取最近使用的文件。" />
       <Item text="共享文件" url="/en-us/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="与我共享的文件、Microsoft Graph API、驱动器 API" SEODescription="获取与我共享的文件。" />
-      <Item text="获取特殊文件夹" url="/en-us/api-reference/v1.0/api/drive_special" SEOKeyword="特殊文件夹、Microsoft Graph API、驱动器 API" SEODescription="获取特殊文件夹。" />
+      <Item text="获取特殊文件夹" url="/en-us/api-reference/v1.0/api/drive_get_specialfolder" SEOKeyword="特殊文件夹、Microsoft Graph API、驱动器 API" SEODescription="获取特殊文件夹。" />
     </Item>
     <Item text="DriveItems" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="项目 API、Microsoft Graph API、项目 API" SEODescription="项目资源表示驱动器中包含的项目，如文件或文件夹。">
-      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
-      <Item text="获取项目" url="/en-us/api-reference/v1.0/api/item_get" SEOKeyword="获取项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="检索项目对象的属性和关系。" />
-      <Item text="获取缩略图" url="/en-us/api-reference/v1.0/api/item_list_thumbnails" SEOKeyword="获取缩略图、Microsoft Graph API、thumbnailset API" SEODescription="" />
-      <Item text="创建文件夹" url="/en-us/api-reference/v1.0/api/item_post_children" SEOKeyword="创建子项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="使用此 API 新建子项。" />
-      <Item text="更新项目" url="/en-us/api-reference/v1.0/api/item_update" SEOKeyword="更新项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="更新项目对象的属性。" />
-      <Item text="删除项目" url="/en-us/api-reference/v1.0/api/item_delete" SEOKeyword="删除项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="删除项目。" />
-      <Item text="移动项目" url="/en-us/api-reference/v1.0/api/item_move" SEOKeyword="移动项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="复制项目" url="/en-us/api-reference/v1.0/api/item_copy" SEOKeyword="复制项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="下载" url="/en-us/api-reference/v1.0/api/item_downloadcontent" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="上载" url="/en-us/api-reference/v1.0/api/item_uploadcontent" SEOKeyword="上载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="可恢复的上载" url="/en-us/api-reference/v1.0/api/item_createuploadsession" SEOKeyword="大文件上载、可恢复上载、microsoft graph api、onedrive 驱动器 api、碎片、文件" />
-      <Item text="搜索项目" url="/en-us/api-reference/v1.0/api/item_search" SEOKeyword="搜索项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-      <Item text="跟踪更改" url="/en-us/api-reference/v1.0/api/item_delta" SEOKeyword="跟踪更改、Microsoft Graph API" SEODescription="" />
+      <Item text="列出子项" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+      <Item text="获取项目" url="/en-us/api-reference/v1.0/api/driveitem_get" SEOKeyword="获取项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="检索项目对象的属性和关系。" />
+      <Item text="获取缩略图" url="/en-us/api-reference/v1.0/api/driveitem_list_thumbnails" SEOKeyword="获取缩略图、Microsoft Graph API、thumbnailset API" SEODescription="" />
+      <Item text="创建文件夹" url="/en-us/api-reference/v1.0/api/driveitem_post_children" SEOKeyword="创建子项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="使用此 API 新建子项。" />
+      <Item text="更新项目" url="/en-us/api-reference/v1.0/api/driveitem_update" SEOKeyword="更新项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="更新项目对象的属性。" />
+      <Item text="删除项目" url="/en-us/api-reference/v1.0/api/driveitem_delete" SEOKeyword="删除项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="删除项目。" />
+      <Item text="移动项目" url="/en-us/api-reference/v1.0/api/driveitem_move" SEOKeyword="移动项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="复制项目" url="/en-us/api-reference/v1.0/api/driveitem_copy" SEOKeyword="复制项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="下载文件" url="/en-us/api-reference/v1.0/api/driveitem_get_content" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="转换内容" url="/en-us/api-reference/v1.0/api/driveitem_get_content_format" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+	  <Item text="上载" url="/en-us/api-reference/v1.0/api/driveitem_put_content" SEOKeyword="上载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="可恢复的上载" url="/en-us/api-reference/v1.0/api/driveitem_createuploadsession" SEOKeyword="大文件上载、可恢复上载、microsoft graph api、onedrive 驱动器 api、碎片、文件" />
+      <Item text="搜索项目" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="搜索项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="跟踪更改" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="跟踪更改、Microsoft Graph API" SEODescription="" />
     </Item>
     <Item text="权限" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="">
-      <Item text="创建共享链接" url="/en-us/api-reference/v1.0/api/item_createlink" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+      <Item text="创建共享链接" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
       <Item text="使用共享链接" url="/en-us/api-reference/v1.0/api/shares_get" SEOKeyword="使用共享链接、microsoft graph api、onedrive 驱动器 api、共享、共享的" SEODescription="" />
-      <Item text="列出权限" url="/en-us/api-reference/v1.0/api/item_list_permissions" SEOKeyword="列出、枚举项目的权限、邀请、共享、Microsoft Graph API" SEODescription="" />
-      <Item text="添加权限" url="/en-us/api-reference/v1.0/api/item_invite" SEOKeyword="添加权限、邀请、共享、Microsoft Graph API" SEODescription="" />
+      <Item text="列出权限" url="/en-us/api-reference/v1.0/api/driveitem_list_permissions" SEOKeyword="列出、枚举项目的权限、邀请、共享、Microsoft Graph API" SEODescription="" />
+      <Item text="添加权限" url="/en-us/api-reference/v1.0/api/driveitem_invite" SEOKeyword="添加权限、邀请、共享、Microsoft Graph API" SEODescription="" />
       <Item text="获取权限" url="/en-us/api-reference/v1.0/api/permission_get" SEOKeyword="获取权限, Microsoft Graph API, 权限 API" SEODescription="检索权限对象的属性和关系。" />
       <Item text="更新权限" url="/en-us/api-reference/v1.0/api/permission_update" SEOKeyword="更新权限, Microsoft Graph API, 权限 API" SEODescription="更新权限对象的属性。" />
       <Item text="删除权限" url="/en-us/api-reference/v1.0/api/permission_delete" SEOKeyword="删除权限, Microsoft Graph API, 权限 API" SEODescription="删除权限。" />
     </Item>
   </Item>
-  <Item text="OneNote" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="注释" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="注释 API, Microsoft Graph API, 注释 API" SEODescription="">
+  <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="使用 Microsoft Graph 将应用程序与 OneNote 集成。">
+      <Item text="输入和输出 HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="了解创建、更新或分析所返回 OneNote 页面内容时的输入和输出 HTML。" />
+	  <Item text="打开 OneNote 客户端" url="/en-us/concepts/open_onenote_client" SEODescription="将 OneNote 应用程序打开到特定页面或笔记本。" />
+      <Item text="错误代码" url="/en-us/concepts/onenote_error_codes" SEODescription="查找 Microsoft Graph 中 OneNote API 返回的错误代码。" />
+      <Item text="最佳做法" url="/en-us/concepts/onenote_best_practices" SEODescription="遵循最佳做法，使用 Microsoft Graph 中的 OneNote API。" />  
+	  <Item text="笔记" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="注释 API, Microsoft Graph API, 注释 API" SEODescription="">
         <Item text="列出笔记本" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
         <Item text="列出分区" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="列出分区, Microsoft Graph API, 注释 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
@@ -641,9 +663,109 @@
 	  </Item>
 	  <Item text="处理任务板任务格式" url="/en-us/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat">
       <Item text="获取进程任务板格式" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get" />
-      <Item text="更新进程任务板格式" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
+      <Item text="更新进度任务板格式" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="报表" url="/en-us/api-reference/v1.0/resources/report">
+	  <Item text="Outlook 活动" url="/en-us/api-reference/v1.0/resources/email_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook 应用使用情况" url="/en-us/api-reference/v1.0/resources/email_app_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageuserdetail" />
+		<Item text="获取应用用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageusercounts" />
+		<Item text="获取版本用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook 邮箱使用情况" url="/en-us/api-reference/v1.0/resources/mailbox_usage_reports">
+		<Item text="获取邮箱详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagedetail" />
+		<Item text="获取邮箱计数" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="获取配额状态邮箱计数" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="获取存储" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 激活" url="/en-us/api-reference/v1.0/resources/office_365_activations_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="获取激活计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationcounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 活动用户" url="/en-us/api-reference/v1.0/resources/office_365_active_users_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeusercounts" />
+		<Item text="获取服务用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 组活动" url="/en-us/api-reference/v1.0/resources/office_365_groups_activity_reports">
+		<Item text="获取组详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="获取组计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="获取存储" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="获取文件计数" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive 活动" url="/en-us/api-reference/v1.0/resources/onedrive_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="获取文件计数" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive 使用情况" url="/en-us/api-reference/v1.0/resources/onedrive_usage_reports">
+		<Item text="获取帐户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="获取帐户计数" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="获取文件计数" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="获取存储" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint 活动" url="/en-us/api-reference/v1.0/resources/sharepoint_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="获取文件计数" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="获取页面" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint 站点使用情况" url="/en-us/api-reference/v1.0/resources/sharepoint_site_usage_reports">
+		<Item text="获取站点详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="获取文件计数" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="获取站点计数" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="获取存储" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="获取页面" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business 活动" url="/en-us/api-reference/v1.0/resources/skype_for_business_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 设备使用情况" url="/en-us/api-reference/v1.0/resources/skype_for_business_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 组织者活动" url="/en-us/api-reference/v1.0/resources/skype_for_business_organizer_activity_reports">
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 参与者活动" url="/en-us/api-reference/v1.0/resources/skype_for_business_participant_activity_reports">
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 点对点活动" url="/en-us/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer 活动" url="/en-us/api-reference/v1.0/resources/yammer_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer 设备使用情况" url="/en-us/api-reference/v1.0/resources/yammer_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer 组活动" url="/en-us/api-reference/v1.0/resources/yammer_groups_activity_reports">
+		<Item text="获取组详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="获取组计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
+	</Item>
   <Item text="架构扩展" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="扩展 API, Microsoft Graph API, 架构扩展 API, 架构扩展" SEODescription="将自定义数据添加到 Microsoft Graph 中资源的 API。">
       <Item text="列出架构扩展" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="列出架构扩展, Microsoft Graph API" SEODescription="检索架构扩展定义及其属性的集合。" />
       <Item text="创建架构扩展" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="创建架构扩展, Microsoft Graph API" SEODescription="创建架构扩展定义的 API。" />
@@ -654,8 +776,20 @@
   <Item text="SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint" SEOKeyword="sharepoint、网站、列表、驱动器、microsoft graph api、sharepoint api">
     <Item text="网站" url="/en-us/api-reference/v1.0/resources/site" SEOKeyword="sharepoint、网站、多个网站、microsoft graph api、sharepoint 网站 api">
       <Item text="获取网站" url="/en-us/api-reference/v1.0/api/site_get" SEOKeyword="sharepoint, 网站, 获取网站" SEODescription="" />&gt;
-      <Item text="列出子网站" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="sharepoint, 列出子网站" SEODescription="" />
+      <Item text="获取列表" url="/en-us/api-reference/v1.0/api/list_list" SEOKeyword="" SEODescription="" />&gt;
+      <Item text="列出子网站" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="sharepoint、列出子网站" SEODescription="" />
     </Item>
+    <Item text="列表" url="/en-us/api-reference/v1.0/resources/list" SEOKeyword="" SEODescription="">
+      <Item text="获取列表" url="/en-us/api-reference/v1.0/api/list_get" SEOKeyword="" SEODescription="" />&gt;
+      <Item text="获取项" url="/en-us/api-reference/v1.0/api/listitem_list" SEOKeyword="sharepoint, 列出项目, 获取项目, 获取 listitems" SEODescription="" />
+      <Item text="创建列表" url="/en-us/api-reference/v1.0/api/list_create" SEOKeyword="" SEODescription="" />&gt;
+    </Item>
+    <Item text="ListItems" url="/en-us/api-reference/v1.0/resources/listitem" SEOKeyword="sharepoint、listitems、microsoft graph api、sharepoint 列表 api" SEODescription="">
+        <Item text="获取项目" url="/en-us/api-reference/v1.0/api/listitem_get" SEOKeyword="sharepoint、获取项目、microsoft graph api、sharepoint 列表 api" SEODescription="" />
+        <Item text="创建项目" url="/en-us/api-reference/v1.0/api/listitem_create" SEOKeyword="sharepoint、创建项目、创建、microsoft graph api、sharepoint 列表 api" SEODescription="" />
+        <Item text="更新项目" url="/en-us/api-reference/v1.0/api/listitem_update" SEOKeyword="sharepoint、更新项目、更新、microsoft graph api、sharepoint 列表 api" SEODescription="" />
+        <Item text="删除项目" url="/en-us/api-reference/v1.0/api/listitem_delete" SEOKeyword="sharepoint, 删除项, 删除, microsoft graph api, sharepoint 列表 api" SEODescription="" />
+      </Item>
   </Item>
   <Item text="Webhook" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="数据解析、Microsoft Graph API、用户 API" SEODescription="">
     <Item text="订阅" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="数据解析、Microsoft Graph API、用户 API" SEODescription="">
@@ -687,7 +821,9 @@
         <Item text="创建日历组" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="创建 CalendarGroup, Microsoft Graph API, 用户 API" SEODescription="使用此 API 新建 CalendarGroup。" />
         <Item text="列出日历视图" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 用户 API" SEODescription="检索事件对象列表。" />
         <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户：reminderView、Microsoft Graph API、用户 API" SEODescription="" />
-        <Item text="查找会议次数" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="用户：会议次数, Microsoft Graph API, 用户 API" SEODescription="" />
+        <Item text="查找会议次数" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="用户: 会议时间, Microsoft Graph API, 用户 API" SEODescription="" />
+		<Item text="查找会议室列表" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="查找会议室" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="联系人" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="用户联系人, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出联系人" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="列出联系人, Microsoft Graph API, 用户 API" SEODescription="检索联系人对象列表。" />
@@ -709,7 +845,7 @@
       </Item>
       <Item text="驱动器" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="用户驱动器, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="获取驱动器" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
-        <Item text="列出子项" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+        <Item text="列出子项" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
       </Item>
       <Item text="组" url="/en-us/api-reference/beta/resources/group" SEOKeyword="组, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出加入的团队" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="列出 joinedTeams, Microsoft Graph API, 用户 API" SEODescription="检索用户所属 Microsoft Teams 列表。" />
@@ -803,9 +939,9 @@
 	  <Item text="日历" url="/en-us/api-reference/beta/resources/event" SEOKeyword="用户日历, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="列出事件" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="列出事件, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
         <Item text="创建事件" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="创建事件, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建事件。" />
-        <Item text="获取事件" url="/en-us/api-reference/beta/api/event_get" />
-        <Item text="更新事件" url="/en-us/api-reference/beta/api/event_update" />
-        <Item text="删除事件" url="/en-us/api-reference/beta/api/event_delete" />
+        <Item text="获取事件" url="/en-us/api-reference/beta/api/group_get_event" />
+        <Item text="更新事件" url="/en-us/api-reference/beta/api/group_update_event" />
+        <Item text="删除事件" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="列出日历视图" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="列出 calendarView, Microsoft Graph API, 组 API" SEODescription="检索事件对象列表。" />
         <Item text="列出附件" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="列出附件, Microsoft Graph API, Outlook 日历 API" SEODescription="检索 attachment 对象列表。" />
         <Item text="添加附件" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="创建附件, Microsoft Graph API, Outlook 日历 API" SEODescription="使用此 API 新建附件。" />
@@ -815,30 +951,30 @@
       <Item text="对话" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="对话 API, Microsoft Graph API, 对话 API" SEODescription="">
         <Item text="列出对话" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="列出对话, Microsoft Graph API, 组 API" SEODescription="检索对话对象列表。" />
         <Item text="创建对话" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="创建对话, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建对话。" />
-        <Item text="获取组对话" url="/en-us/api-reference/beta/api/conversation_get" SEOKeyword="获取组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
-        <Item text="删除组对话" url="/en-us/api-reference/beta/api/conversation_delete" SEOKeyword="删除组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="删除对话。" />
+        <Item text="获取组对话" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="获取组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
+        <Item text="删除组对话" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="删除组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="删除对话。" />
         <Item text="列出对话线程" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="列出线程、Microsoft Graph API、组 API" SEODescription="检索 conversationthread 对象列表。" />
         <Item text="创建对话线程" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="创建线程、Microsoft Graph API、组 API" SEODescription="使用此 API 新建线程。" />
         <Item text="列出接受的发送者" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="列出 acceptedSenders, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
-        <Item text="创建接受的发送者" url="/en-us/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="创建 acceptedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建 acceptedSender。" />
-        <Item text="删除接受的发送者" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="删除 acceptedSender、Microsoft Graph API、组 API" SEODescription="使用此 API 删除 acceptedSender。" />
+        <Item text="创建接受的发送者" url="/en-us/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="创建 acceptedSender, Microsoft Graph API, 组 API" SEODescription="此 API 可用于新建 acceptedSender。" />
+        <Item text="删除接受的发送者" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="删除 acceptedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 删除 acceptedSender。" />
         <Item text="列出拒绝的发送者" url="/en-us/api-reference/beta/api/group_list_rejectedsenders" SEOKeyword="列出 rejectedSenders、Microsoft Graph API、组 API" SEODescription="检索 rejectedSenders 列表。" />
-        <Item text="创建拒绝的发送者" url="/en-us/api-reference/beta/api/group_post_rejectedsenders" SEOKeyword="创建 rejectedSender, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建 rejectedSender。" />
-        <Item text="删除拒绝的发送者" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="删除 rejectedSenders、Microsoft Graph API、组 API" SEODescription="使用此 API 删除 rejectedSender。" />
+        <Item text="创建拒绝的发送者" url="/en-us/api-reference/beta/api/group_post_rejectedsenders" SEOKeyword="创建 rejectedSender, Microsoft Graph API, 组 API" SEODescription="此 API 可用于新建 rejectedSender。" />
+        <Item text="删除拒绝的发送者" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="删除 rejectedSenders, Microsoft Graph API, 组 API" SEODescription="使用此 API 删除 rejectedSender。" />
       </Item>
       <Item text="对话线程" url="/en-us/api-reference/beta/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="">
         <Item text="列出线程" url="/en-us/api-reference/beta/api/group_list_threads" SEOKeyword="列出线程、Microsoft Graph API、Outlook 对话 API" SEODescription="检索 conversationthread 对象列表。" />
         <Item text="创建线程" url="/en-us/api-reference/beta/api/group_post_threads" SEOKeyword="创建线程、Microsoft Graph API、Outlook 对话 API" SEODescription="使用此 API 新建线程。" />
-        <Item text="获取对话线程" url="/en-us/api-reference/beta/api/conversationthread_get" SEOKeyword="获取 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="检索 conversationthread 对象的属性和关系。" />
-        <Item text="更新对话线程" url="/en-us/api-reference/beta/api/conversationthread_update" SEOKeyword="更新 conversationthread, Microsoft Graph API, Outlook 对话 API" SEODescription="更新 conversationthread 对象的属性。" />
-        <Item text="删除对话线程" url="/en-us/api-reference/beta/api/conversationthread_delete" SEOKeyword="删除 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="删除 conversationThread。" />
+        <Item text="获取对话线程" url="/en-us/api-reference/beta/api/group_get_thread" SEOKeyword="获取 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="检索 conversationthread 对象的属性和关系。" />
+        <Item text="更新对话线程" url="/en-us/api-reference/beta/api/group_update_thread" SEOKeyword="更新 conversationthread, Microsoft Graph API, Outlook 对话 API" SEODescription="更新 conversationthread 对象的属性。" />
+        <Item text="删除对话线程" url="/en-us/api-reference/beta/api/group_delete_thread" SEOKeyword="删除 conversationThread, Microsoft Graph API, Outlook 对话 API" SEODescription="删除 conversationThread。" />
         <Item text="回复对话线程" url="/en-us/api-reference/beta/api/conversationthread_reply" SEOKeyword="conversationThread：回复, Microsoft Graph API, conversationthread API" SEODescription="" />
       </Item>
       <Item text="目录对象" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="目录对象, Microsoft Graph API, 用户 API" SEODescription="">
       </Item>
       <Item text="驱动器" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="用户驱动器, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="获取驱动器" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
-        <Item text="列出子项" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项对象列表。" />
+        <Item text="列出子项" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项对象列表。" />
       </Item>
       <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="单值扩展属性" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -999,6 +1135,13 @@
         <Item text="获取 unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、Event Risk、unfamiliarLocationRiskEvent API" SEODescription="检索 unfamiliarLocationRiskEvent 对象。" />
       </Item>
     </Item>
+      <Item text="标识提供程序" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD、B2C、B2B、MSA、领英、Facebook、Google" SEODescription="在 Azure Active Directory 和 Azure Active Directory B2C 中配置标识提供程序。">
+        <Item text="列出标识提供程序" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="列出在目录中配置的所有 identityProvider。" />
+        <Item text="创建标识提供程序" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="新建 identityProvider。" />
+        <Item text="获取标识提供程序" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="通过 ID 获取 identityProvider。" />
+        <Item text="更新标识提供程序" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="更新 identityProvider 的属性。" />
+        <Item text="删除标识提供程序" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="删除现有的 identityProvider。" />
+      </Item>
       <Item text="邀请管理器" url="/en-us/api-reference/beta/resources/invitation" SEODescription="使用邀请管理器来创建一个邀请，以将外部用户添加到组织目录。">
         <Item text="创建邀请" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="创建新邀请，以将外部用户添加到组织目录。" />
       </Item>
@@ -1047,7 +1190,7 @@
     </Item>
       <Item text="服务主体" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="列出服务主体" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="获取服务主体" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="获取服务主体" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="更新服务主体" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="删除服务主体" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
@@ -1055,10 +1198,117 @@
         <Item text="列出 subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="列出 subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="检索 subscribedsku 对象列表。" />
         <Item text="获取 subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="获取 subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="检索 subscribedsku 对象的属性和关系。" />
       </Item>
+      <Item text="同步" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="同步 API, 预配 API, Azure Active Directory, 预配">
+        <Item text="同步自定义目标属性" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes" />
+        <Item text="同步目录扩展属性" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes" />
+        <Item text="作业" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="同步作业, 同步 API, 预配 API, Azure Active Directory, 预配">
+          <Item text="列出作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="创建作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="获取作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get" />
+          <Item text="开始作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="暂停作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause" />
+          <Item text="重启作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart" />
+          <Item text="删除作业" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete" />
+        </Item>
+        <Item text="架构" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="同步架构, 同步 API, 预配 API, Azure Active Directory, 预配">
+            <Item text="获取架构" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="获取架构功能" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions" />
+            <Item text="获取架构筛选器运算符" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators" />
+            <Item text="更新架构" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update" />
+            <Item text="重置架构" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete" />
+        </Item>
+        <Item text="模板" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="同步模板, 同步 API, 预配 API, Azure Active Directory, 预配">/&gt;<Item text="列出模板" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="获取模板" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
+      </Item>
     </Item>
-    <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+    <Item text="教育" url="/en-us/api-reference/beta/resources/education-overview">
+		<Item text="学校" url="/en-us/api-reference/beta/resources/educationschool">
+			<Item text="列出学校" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
+			<Item text="创建学校" url="/en-us/api-reference/beta/api/educationroot_post_schools" />
+			<Item text="获取学校" url="/en-us/api-reference/beta/api/educationschool_get" />
+			<Item text="更新学校" url="/en-us/api-reference/beta/api/educationschool_update" />
+			<Item text="删除学校" url="/en-us/api-reference/beta/api/educationschool_delete" />
+			<Item text="列出课程" url="/en-us/api-reference/beta/api/educationschool_list_classes" />
+			<Item text="创建课程" url="/en-us/api-reference/beta/api/educationschool_post_classes" />
+			<Item text="删除课程" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
+			<Item text="列出用户" url="/en-us/api-reference/beta/api/educationschool_list_users" />
+			<Item text="添加用户" url="/en-us/api-reference/beta/api/educationschool_post_users" />
+			<Item text="删除用户" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
+		</Item>
+		<Item text="课程" url="/en-us/api-reference/beta/resources/educationclass">
+			<Item text="列出学校" url="/en-us/api-reference/beta/api/educationclass_list_schools" />
+			<Item text="列出课程" url="/en-us/api-reference/beta/api/educationroot_list_classes" />
+			<Item text="创建课程" url="/en-us/api-reference/beta/api/educationroot_post_classes" />
+			<Item text="获取课程" url="/en-us/api-reference/beta/api/educationclass_get" />
+			<Item text="更新课程" url="/en-us/api-reference/beta/api/educationclass_update" />
+			<Item text="删除课程" url="/en-us/api-reference/beta/api/educationclass_delete" />
+			<Item text="列出教师" url="/en-us/api-reference/beta/api/educationclass_list_teachers" />
+			<Item text="添加教师" url="/en-us/api-reference/beta/api/educationclass_post_teachers" />
+			<Item text="删除教师" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
+			<Item text="列出成员" url="/en-us/api-reference/beta/api/educationclass_list_members" />
+			<Item text="添加成员" url="/en-us/api-reference/beta/api/educationclass_post_members" />
+			<Item text="删除成员" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
+			<Item text="列出作业" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
+			<Item text="创建作业" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
+		</Item>
+		<Item text="用户" url="/en-us/api-reference/beta/resources/educationuser">
+			<Item text="列出学校" url="/en-us/api-reference/beta/api/educationuser_list_schools" />
+			<Item text="列出课程" url="/en-us/api-reference/beta/api/educationuser_list_classes" />
+			<Item text="获取用户" url="/en-us/api-reference/beta/api/educationuser_get" />
+			<Item text="删除用户" url="/en-us/api-reference/beta/api/educationuser_delete" />
+		</Item>
+		<Item text="作业" url="/en-us/api-reference/beta/resources/educationassignment">
+			<Item text="创建作业" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
+			<Item text="获取作业" url="/en-us/api-reference/beta/api/educationassignment_get" />
+			<Item text="更新作业" url="/en-us/api-reference/beta/api/educationassignment_update" />
+			<Item text="删除作业" url="/en-us/api-reference/beta/api/educationassignment_delete" />
+			<Item text="列出作业资源" url="/en-us/api-reference/beta/api/educationassignment_list_resources" />
+			<Item text="创建作业资源" url="/en-us/api-reference/beta/api/educationassignment_post_resources" />
+			<Item text="获取作业资源" url="/en-us/api-reference/beta/api/educationassignmentresource_get" />
+			<Item text="更新作业资源" url="/en-us/api-reference/beta/api/educationassignmentresource_update" />
+			<Item text="从作业中删除资源" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
+			<Item text="发布作业" url="/en-us/api-reference/beta/api/educationassignment_publish" />
+			<Item text="列出作业提交" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
+			<Item text="获取资源文件夹 URL" url="/en-us/api-reference/beta/api/educationassignment_getresourcesfolderurl" />
+		</Item>
+		<Item text="提交" url="/en-us/api-reference/beta/resources/educationsubmission">
+			<Item text="列出提交资源" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
+			<Item text="添加提交资源" url="/en-us/api-reference/beta/api/educationsubmission_post_resources" />
+			<Item text="获取提交资源" url="/en-us/api-reference/beta/api/educationsubmissionresource_get" />
+			<Item text="删除提交资源" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
+			<Item text="获取提交内容" url="/en-us/api-reference/beta/api/educationsubmission_get" />
+			<Item text="提交提交内容" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
+			<Item text="召回提交内容" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="列出已提交的资源" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
+			<Item text="获取已提交的资源" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
+			<Item text="成绩提交" url="/en-us/api-reference/beta/api/educationsubmission_update" />
+			<Item text="发布提交内容" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+		</Item>
+		<Item text="同步配置文件" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile">
+			<Item text="列出配置文件" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
+			<Item text="创建配置文件" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_post" />
+			<Item text="获取配置文件" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_get" />
+			<Item text="删除配置文件" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_delete" />
+			<Item text="开始同步" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
+			<Item text="暂停同步" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
+			<Item text="恢复同步" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="重置同步" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="获取上传 URL" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
+		</Item>
+		<Item text="同步配置文件状态" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus">
+			<Item text="获取同步状态" url="/en-us/api-reference/beta/api/educationsynchronizationprofilestatus_get" />
+		</Item>
+		<Item text="同步错误" url="/en-us/api-reference/beta/resources/educationsynchronizationerror">
+			<Item text="获取同步错误" url="/en-us/api-reference/beta/api/educationsynchronizationerrors_get" />
+		</Item>
+		</Item>
+	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="工作簿" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="列出表格" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="创建会话" url="/en-us/api-reference/beta/api/workbook_createsession" />
+	    <Item text="刷新会话" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="关闭会话" url="/en-us/api-reference/beta/api/workbook_closesession" />
+		<Item text="列出表" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="列出工作表" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="列出名称" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
       </Item>
@@ -1075,8 +1325,12 @@
         <Item text="添加图表" url="/en-us/api-reference/beta/api/worksheet_post_charts" SEOKeyword="" SEODescription="" />
       </Item>
       <Item text="范围" url="/en-us/api-reference/beta/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="获取范围" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
-        <Item text="合并" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="获取区域" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
+        <Item text="更新区域" url="/en-us/api-reference/beta/api/range_update" />
+	    <Item text="插入区域" url="/en-us/api-reference/beta/api/range_insert" />
+	    <Item text="获取区域格式" url="/en-us/api-reference/beta/api/rangeformat_get" />
+	    <Item text="更新区域格式" url="/en-us/api-reference/beta/api/rangeformat_update" />
+		<Item text="合并" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
         <Item text="拆分" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="清除" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
         <Item text="删除" url="/en-us/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -1084,21 +1338,30 @@
       <Item text="表" url="/en-us/api-reference/beta/resources/table" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
         <Item text="添加表格" url="/en-us/api-reference/beta/api/tablecollection_add" SEOKeyword="" SEODescription="" />
         <Item text="获取表格" url="/en-us/api-reference/beta/api/table_get" SEOKeyword="" SEODescription="" />
-        <Item text="更新表格" url="/en-us/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
-        <Item text="获取范围" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="更新表" url="/en-us/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
+        <Item text="删除表" url="/en-us/api-reference/beta/api/table_delete" />
         <Item text="列出行" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
-        <Item text="列出列" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+        <Item text="创建行" url="/en-us/api-reference/beta/api/table_post_rows" />
+		<Item text="列出列" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+		<Item text="创建列" url="/en-us/api-reference/beta/api/table_post_columns" />
+		<Item text="获取区域" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
       </Item>
       <Item text="图表" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="获取图表" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
-        <Item text="获取图表图像" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
-        <Item text="重置数据" url="/en-us/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
-        <Item text="设置位置数据" url="/en-us/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
+        <Item text="列出图表" url="/en-us/api-reference/beta/api/chart_list" />
+		<Item text="获取图表" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
         <Item text="更新图表" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
+		<Item text="删除图表" url="/en-us/api-reference/beta/api/chart_delete" />
+		<Item text="添加图表" url="/en-us/api-reference/beta/api/chartcollection_add" />
+		<Item text="获取图表图像" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="重置数据" url="/en-us/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
+        <Item text="设置定位数据" url="/en-us/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
       </Item>
-      <Item text="NamedItem" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="列出 nameditem" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
-        <Item text="列出范围" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      <Item text="命名项" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+        <Item text="列出命名项" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="获取命名项" url="/en-us/api-reference/beta/api/nameditem_get" />
+	    <Item text="更新命名项" url="/en-us/api-reference/beta/api/nameditem_update" />
+	    <Item text="添加命名项" url="/en-us/api-reference/beta/api/nameditem_add" />
+		<Item text="列出区域" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -1239,6 +1502,14 @@
         </Item>
         <Item text="文件密信息加" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
         <Item text="iOS 设备类型" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype" />
+        <Item text="iOS LOB 应用预配配置分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
+          <Item text="分配操作" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
+        </Item>
         <Item text="iOS LOB 应用程序" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
@@ -1305,7 +1576,36 @@
           <Item text="列出设备安装状态" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate" />
           <Item text="列出用户安装状态摘要" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary" />
         </Item>
-        <Item text="受管理设备移动应用配置设备摘要" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
+        <Item text="iOS VPP 电子书分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
+        </Item>
+        <Item text="macOS LOB 应用" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update" />
+        </Item>
+        <Item text="macOS Office 套件应用" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_update" />
+        </Item>
+        <Item text="托管设备移动应用配置分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+          <Item text="分配操作" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        </Item>
+        <Item text="托管设备移动应用配置设备摘要" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update" />
         </Item>
@@ -1319,7 +1619,29 @@
           <Item text="列出电子书组分配" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment" />
           <Item text="列出设备安装状态" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate" />
           <Item text="列出用户安装状态摘要" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary" />
-          <Item text="分配" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
+          <Item text="分配操作" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
+        </Item>
+        <Item text="托管的电子书分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebookassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update" />
+        </Item>
+        <Item text="适用于企业的 Microsoft Store 应用" url="en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update" />
+        </Item>
+        <Item text="移动应用分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update" />
+          <Item text="分配操作" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
         </Item>
         <Item text="移动应用配置" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="分配" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
@@ -1643,6 +1965,13 @@
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_update" />
         </Item>
+        <Item text="条款和条件分配" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_companyterms_termsandconditionsassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_update" />
+        </Item>
         <Item text="条款和条件组分配" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsgroupassignment">
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_get" />
@@ -1652,6 +1981,20 @@
         </Item>
       </Item>
       <Item text="公司注册" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
+        <Item text="Active Directory Windows Autopilot Deployment 配置文件" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update" />
+        </Item>
+        <Item text="Azure AD Windows AutoPilot Deployment 配置文件" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_update" />
+        </Item>
         <Item text="DEP 注册配置文件" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete" />
@@ -1743,6 +2086,13 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update" />
         </Item>
+        <Item text="Android 设备合规性本地操作使用密码锁定设备" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update" />
+        </Item>
         <Item text="Android EAS 电子邮件配置文件配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_delete" />
@@ -1812,6 +2162,15 @@
           <Item text="获取设备配置设备概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="获取设备配置用户概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview" />
           <Item text="获取 Android for Work 证书配置文件基础" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase" />
+        </Item>
+        <Item text="Android for Work 注册配置文件" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
+          <Item text="创建令牌操作" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
+          <Item text="撤销令牌操作" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens" />
         </Item>
         <Item text="Android for Work 企业 Wi-Fi 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list" />
@@ -2016,7 +2375,14 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_list_deviceconfigurationuserstatus" />
         </Item>
         <Item text="应用列表项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applistitem" />
-        <Item text="应用合规性列表项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem" />
+        <Item text="应用符合性列表项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem" />
+        <Item text="审核事件" url="en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
+        </Item>
         <Item text="云 PKI 管理员凭据" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkiadministratorcredentials" />
         <Item text="云 PKI 订阅" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_cloudpkisubscription_create" />
@@ -2077,6 +2443,7 @@
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
           <Item text="获取设备合规性概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get_devicecompliancedeviceoverview" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="分配操作" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
           <Item text="列出设备合规性状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancedevicestatus" />
           <Item text="列出设备合规性策略组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancepolicygroupassignment" />
           <Item text="列出适用于规则的设备合规性计划操作" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancescheduledactionforrule" />
@@ -2142,7 +2509,7 @@
           <Item text="分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-
+          <Item text="assignedAccessMultiModeProfiles" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
           <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="设备配置分配" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
@@ -2215,6 +2582,24 @@
           <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationgroupassignment" />
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update" />
+        </Item>
+        <Item text="设备管理疑难解答事件" url="en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
+        </Item>
+        <Item text="设备安装配置" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get" />
+        </Item>
+        <Item text="注册疑难解答事件" url="en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
         </Item>
         <Item text="扩展密钥用法" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage" />
         <Item text="iOS 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
@@ -2411,7 +2796,7 @@
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update" />
         </Item>
-        <Item text="MacOS 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
+        <Item text="macOS 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
           <Item text="获取设备配置概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
@@ -2419,7 +2804,7 @@
           <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationgroupassignment" />
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
-        <Item text="MacOS 合规性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
+        <Item text="macOS 符合性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -2431,7 +2816,7 @@
           <Item text="列出设备合规性用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_update" />
         </Item>
-        <Item text="MacOS 自定义配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
+        <Item text="macOS 自定义配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_get" />
@@ -2454,7 +2839,7 @@
           <Item text="获取设备配置设备概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="获取设备配置用户概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationuseroverview" />
         </Item>
-        <Item text="MacOS 企业版 Wi-Fi 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
+        <Item text="macOS 企业版 Wi-Fi 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_get" />
@@ -2467,7 +2852,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_update" />
         </Item>
-        <Item text="MacOS 常规设备配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
+        <Item text="macOS 常规设备配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_get" />
@@ -2478,7 +2863,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="MacOS 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
+        <Item text="macOS 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_get" />
@@ -2490,7 +2875,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_update" />
         </Item>
-        <Item text="MacOS 信任的根证书" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
+        <Item text="macOS 信任的根证书" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_get" />
@@ -2501,7 +2886,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_update" />
         </Item>
-        <Item text="MacOS VPN 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
+        <Item text="macOS VPN 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_get" />
@@ -2513,7 +2898,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_update" />
         </Item>
-        <Item text="MacOS Wi-Fi 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
+        <Item text="macOS Wi-Fi 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_get" />
@@ -2530,6 +2915,7 @@
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
           <Item text="windowsDefenderScan 操作" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
           <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
@@ -2542,6 +2928,13 @@
         <Item text="媒体内容分级（新西兰）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="媒体内容分级（英国）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="媒体内容分级（美国）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="NDES 连接器" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update" />
+        </Item>
         <Item text="通知邮件模板" url="/en-us/api-reference/beta/resources/intune_deviceconfig_notificationmessagetemplate">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_get" />
           <Item text="列出已本地化的通知邮件" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_list_localizednotificationmessage" />
@@ -2682,6 +3075,13 @@
           <Item text="列出设备合规性用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_update" />
         </Item>
+        <Item text="Windows 10 PFX 导入证书配置文件" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10pfximportcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_update" />
+        </Item>
         <Item text="Windows 10 PKCS 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_delete" />
@@ -2693,6 +3093,7 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_update" />
         </Item>
+        <Item text="Windows 10 代理服务器" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
         <Item text="Windows 10 安全评估配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_delete" />
@@ -2727,7 +3128,6 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_update" />
         </Item>
-        <Item text="Windows 10 代理服务器" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
         <Item text="Windows 8.1 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get" />
           <Item text="获取设备配置概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview" />
@@ -2805,6 +3205,13 @@
           <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_update" />
         </Item>
+        <Item text="Windows 分配的访问配置文件" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsassignedaccessprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_update" />
+        </Item>
         <Item text="Windows 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get" />
@@ -2814,6 +3221,13 @@
           <Item text="获取设备配置设备概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="获取设备配置用户概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationuseroverview" />
         </Item>
+        <Item text="Windows 域加入配置" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
+        </Item>
         <Item text="Windows 恶意软件信息" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsmalwareinformation">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_get" />
@@ -2821,6 +3235,20 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_update" />
           <Item text="列出 Windows 保护状态" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list_windowsprotectionstate" />
+        </Item>
+        <Item text="Windows Defender 高级威胁防护配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
+            <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
+          <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
+          <Item text="列出设备配置设备状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
+          <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
+          <Item text="获取设备配置设备概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
+          <Item text="获取设备配置用户概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
+          <Item text="列出设置状态设备摘要" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
+          <Item text="获取设备配置设备状态摘要" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Windows Phone 8.1 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_get" />
@@ -2841,20 +3269,6 @@
           <Item text="列出适用于规则的设备合规性计划操作" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancescheduledactionforrule" />
           <Item text="列出设备合规性用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_update" />
-        </Item>
-        <Item text="Windows Defender 高级威胁防护配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
-            <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
-          <Item text="列出设备配置组分配" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="列出设备配置设备状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="列出设备配置用户状态" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
-          <Item text="获取设备配置设备概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
-          <Item text="获取设备配置用户概述" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
-          <Item text="列出设置状态设备摘要" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
-          <Item text="获取设备配置设备状态摘要" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Windows Phone 8.1 自定义配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81customconfiguration">
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81customconfiguration_create" />
@@ -3173,12 +3587,10 @@
         </Item>
         <Item text="受管理的应用策略" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get" />
-          <Item text="获取受管理的应用策略部署摘要" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get_managedapppolicydeploymentsummary" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
-          <Item text="列出移动应用标识符部署" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list_mobileappidentifierdeployment" />
-          <Item text="更新移动应用标识符部署" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments" />
+          <Item text="targetApps 操作" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
-        <Item text="受管理的应用策略部署摘要" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
+        <Item text="托管应用策略部署摘要" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_update" />
         </Item>
@@ -3188,8 +3600,9 @@
           <Item text="获取受管理的应用策略部署摘要" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get_managedapppolicydeploymentsummary" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list" />
           <Item text="列出移动应用标识符部署" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list_mobileappidentifierdeployment" />
+          <Item text="targetApps 操作" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedappprotection_targetapps" />
         </Item>
-        <Item text="受管理的应用注册" url="/en-us/api-reference/beta/resources/intune_mam_managedappregistration">
+        <Item text="托管应用注册" url="/en-us/api-reference/beta/resources/intune_mam_managedappregistration">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get" />
           <Item text="获取己标记应用注册的用户 ID" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_getuseridswithflaggedappregistration" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_list" />
@@ -3215,6 +3628,13 @@
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_update" />
         </Item>
+        <Item text="托管移动应用" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedmobileapp">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_update" />
+        </Item>
         <Item text="MDM Windows 信息保护策略" url="/en-us/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_get" />
@@ -3231,15 +3651,11 @@
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_delete" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get" />
-          <Item text="获取受管理的应用策略部署摘要" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get_managedapppolicydeploymentsummary" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list" />
-          <Item text="列出目录对象" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_directoryobject" />
-          <Item text="列出移动应用标识符部署" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_mobileappidentifierdeployment" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_update" />
-          <Item text="更新移动应用标识符部署" url="/en-us/api-reference/beta/api/intune_mam_targetedManagedAppConfiguration_updatemobileappidentifierdeployments" />
-          <Item text="更新目标安全组" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups" />
+          <Item text="targetApps 操作" url="en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
-        <Item text="受管理的定向应用保护" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
+        <Item text="目标托管应用保护" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get" />
           <Item text="获取受管理的应用策略部署摘要" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get_managedapppolicydeploymentsummary" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_list" />
@@ -3327,6 +3743,19 @@
             <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list" />
             <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update" />
         </Item>
+        <Item text="设备注册配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_get" />
+          <Item text="分配操作" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign" />
+          <Item text="setPriority 操作" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority" />
+        </Item>
+        <Item text="设备注册限制配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentlimitconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta" />
+        </Item>
         <Item text="设备注册平台限制" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions" />
         <Item text="设备地理位置" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation" />
         <Item text="设备管理 Exchange 连接器" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
@@ -3337,12 +3766,34 @@
           <Item text="同步" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update" />
         </Item>
+        <Item text="设备注册平台限制配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update" />
+        </Item>
+        <Item text="设备注册 Windows Hello 企业版配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update" />
+        </Item>
         <Item text="设备管理 Exchange 本地策略" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get" />
           <Item text="获取本地条件访问设置" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update" />
         </Item>
+        <Item text="设备管理合作伙伴" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementpartner">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update" />
+        </Item>
         <Item text="设备操作系统摘要" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary" />
+        <Item text="注册配置分配" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_enrollmentconfigurationassignment">
         <Item text="硬件信息" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation" />
         <Item text="Intune 品牌" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand" />
         <Item text="找到的设备操作结果" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult" />
@@ -3381,6 +3832,45 @@
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get" />
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update" />
+        </Item>
+      <Item text="VPP 令牌" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list" />
+        <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get" />
+        <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create" />
+        <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete" />
+        <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update" />
+        <Item text="revokeLicenses 操作" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses" />
+        <Item text="syncLicenses 操作" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses" />
+      </Item>
+        <Item text="Windows 10 注册完成页配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_update" />
+        </Item>
+        <Item text="Windows 10 网络边界配置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windows10networkboundaryconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_update" />
+        </Item>
+        <Item text="Windows AutoPilot Deployment 配置文件" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
+          <Item text="分配操作" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
+        </Item>
+        <Item text="Windows Autopilot 设备标识" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeviceidentity">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update" />
+        </Item>
+        <Item text="Windows Autopilot 设置" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update" />
+          <Item text="同步操作" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync" />
         </Item>
       </Item>
       <Item text="基于角色的访问控制" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
@@ -3422,6 +3912,20 @@
           <Item text="列出角色分配" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update" />
         </Item>
+        <Item text="设备和应用管理角色分配" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update" />
+        </Item>
+        <Item text="设备和应用管理角色定义" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update" />
+        </Item>
       </Item>
       <Item text="电信费用管理" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
         <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_tem_devicemanagement">
@@ -3439,7 +3943,8 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="团队 API, Microsoft Graph API, Microsoft Teams API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
+    </Item>
+	<Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="团队 API, Microsoft Graph API, Microsoft Teams API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
       <Item text="组（团队）" url="/en-us/api-reference/beta/resources/group" SEOKeyword="组 API, Microsoft Graph API, 组 API, Microsoft Teams API, 团队 API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
         <Item text="获取组" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="获取组, Microsoft Graph API, 组 API" SEODescription="检索组对象的属性和关系。" />
         <Item text="列出组" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="列出组, Microsoft Graph API, 组 API" SEODescription="检索组对象列表。" />
@@ -3461,9 +3966,14 @@
         <Item text="永久删除组" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="恢复已删除的组" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="照片" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="用户人脉, Microsoft Graph API, 用户 API" SEODescription="">
-        <Item text="获取照片" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
-        <Item text="更新照片" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
+      <Item text="团队" url="/en-us/api-reference/beta/resources/team">
+		<Item text="创建团队" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="获取团队" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="更新团队" url="/en-us/api-reference/beta/api/team_update" />
+	  </Item>
+	  <Item text="照片" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="用户人脉, Microsoft Graph API, 用户 API" SEODescription="">
+        <Item text="获取照片" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="更新照片" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
       <Item text="通道" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="通道 API, Microsoft Graph API, 通道 API" SEODescription="">
         <Item text="列出通道" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="列出通道, Microsoft Graph API, 组 API" SEODescription="检索通道对象的列表。" />
@@ -3489,7 +3999,7 @@
       </Item>
       <Item text="驱动器" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="用户驱动器, Microsoft Graph API, 用户 API" SEODescription="">
         <Item text="获取驱动器" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
-        <Item text="列出子项" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+        <Item text="列出子项" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
       </Item>
       <Item text="计划" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="组日历, Microsoft Graph API, 组 API" SEODescription="">
         <Item text="列出计划" url="/en-us/api-reference/beta/api/plannergroup_list_plans" SEOKeyword="列出计划, Microsoft Graph API, 组 API" SEODescription="检索计划对象列表。" />
@@ -3513,38 +4023,43 @@
       <Item text="驱动器" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="用户驱动器、Microsoft Graph API、用户 API" SEODescription="驱动器 API">
         <Item text="获取驱动器" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="获取驱动器, Microsoft Graph API, 驱动器 API" SEODescription="检索驱动器对象的属性和关系。" />
         <Item text="列出驱动器" url="/en-us/api-reference/beta/api/drive_list" SEOKeyword="列出驱动器、Microsoft Graph aPI、驱动器 API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="列出子项" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+        <Item text="列出子项" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
         <Item text="最近使用的文件" url="/en-us/api-reference/beta/api/drive_recent" SEOKeyword="最近使用的文件、Microsoft Graph API、驱动器 API" SEODescription="获取最近使用的文件。" />
         <Item text="共享文件" url="/en-us/api-reference/beta/api/drive_sharedwithme" SEOKeyword="与我共享的文件、Microsoft Graph API、驱动器 API" SEODescription="获取与我共享的文件。" />
-        <Item text="获取特殊文件夹" url="/en-us/api-reference/beta/api/drive_special" SEOKeyword="特殊文件夹、Microsoft Graph API、驱动器 API" SEODescription="获取特殊文件夹。" />
+        <Item text="获取特殊文件夹" url="/en-us/api-reference/beta/api/drive_get_specialfolder" SEOKeyword="特殊文件夹、Microsoft Graph API、驱动器 API" SEODescription="获取特殊文件夹。" />
       </Item>
       <Item text="DriveItems" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="项目 API、Microsoft Graph API、项目 API" SEODescription="项目资源表示驱动器中包含的项目，如文件或文件夹。">
-        <Item text="列出子项" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
-        <Item text="获取项目" url="/en-us/api-reference/beta/api/item_get" SEOKeyword="获取项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="检索项目对象的属性和关系。" />
-        <Item text="获取缩略图" url="/en-us/api-reference/beta/api/item_list_thumbnails" SEOKeyword="获取缩略图、Microsoft Graph API、thumbnailset API" SEODescription="" />
-        <Item text="创建文件夹" url="/en-us/api-reference/beta/api/item_post_children" SEOKeyword="创建子项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="使用此 API 新建子项。" />
-        <Item text="更新项目" url="/en-us/api-reference/beta/api/item_update" SEOKeyword="更新项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="更新项目对象的属性。" />
-        <Item text="删除项目" url="/en-us/api-reference/beta/api/item_delete" SEOKeyword="删除项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="删除项目。" />
-        <Item text="移动项目" url="/en-us/api-reference/beta/api/item_move" SEOKeyword="移动项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="复制项目" url="/en-us/api-reference/beta/api/item_copy" SEOKeyword="复制项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="下载" url="/en-us/api-reference/beta/api/item_downloadcontent" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="上载" url="/en-us/api-reference/beta/api/item_uploadcontent" SEOKeyword="上载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="可恢复的上载" url="/en-us/api-reference/beta/api/item_createuploadsession" SEOKeyword="大文件上载、可恢复上载、microsoft graph api、onedrive 驱动器 api、碎片、文件" />
-        <Item text="搜索项目" url="/en-us/api-reference/beta/api/item_search" SEOKeyword="搜索项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
-        <Item text="跟踪更改" url="/en-us/api-reference/beta/api/item_delta" SEOKeyword="跟踪更改、Microsoft Graph API" SEODescription="" />
+        <Item text="列出子项" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="列出项目, Microsoft Graph API, 驱动器 API" SEODescription="检索项目对象列表。" />
+        <Item text="获取项目" url="/en-us/api-reference/beta/api/driveitem_get" SEOKeyword="获取项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="检索项目对象的属性和关系。" />
+        <Item text="获取缩略图" url="/en-us/api-reference/beta/api/driveitem_list_thumbnails" SEOKeyword="获取缩略图、Microsoft Graph API、thumbnailset API" SEODescription="" />
+        <Item text="创建文件夹" url="/en-us/api-reference/beta/api/driveitem_post_children" SEOKeyword="创建子项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="使用此 API 新建子项。" />
+        <Item text="更新项目" url="/en-us/api-reference/beta/api/driveitem_update" SEOKeyword="更新项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="更新项目对象的属性。" />
+        <Item text="删除项目" url="/en-us/api-reference/beta/api/driveitem_delete" SEOKeyword="删除项目, Microsoft Graph API, OneDrive 驱动器 API" SEODescription="删除项目。" />
+        <Item text="移动项目" url="/en-us/api-reference/beta/api/driveitem_move" SEOKeyword="移动项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="复制项目" url="/en-us/api-reference/beta/api/driveitem_copy" SEOKeyword="复制项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="下载文件" url="/en-us/api-reference/beta/api/driveitem_get_content" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+		<Item text="转换文件" url="/en-us/api-reference/beta/api/driveitem_get_content_format" SEOKeyword="下载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="上载" url="/en-us/api-reference/beta/api/driveitem_put_content" SEOKeyword="上载项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="可恢复的上载" url="/en-us/api-reference/beta/api/driveitem_createuploadsession" SEOKeyword="大文件上载、可恢复上载、microsoft graph api、onedrive 驱动器 api、碎片、文件" />
+        <Item text="搜索项目" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="搜索项目、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="跟踪更改" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="跟踪更改、Microsoft Graph API" SEODescription="" />
       </Item>
       <Item text="权限" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="">
-        <Item text="创建共享链接" url="/en-us/api-reference/beta/api/item_createlink" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
+        <Item text="创建共享链接" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="创建链接项、Microsoft Graph API、OneDrive 驱动器 API" SEODescription="" />
         <Item text="使用共享链接" url="/en-us/api-reference/beta/api/shares_get" SEOKeyword="使用共享链接、microsoft graph api、onedrive 驱动器 api、共享、共享的" SEODescription="" />
-        <Item text="列出权限" url="/en-us/api-reference/beta/api/item_list_permissions" SEOKeyword="列出、枚举项目的权限、邀请、共享、Microsoft Graph API" SEODescription="" />
-        <Item text="添加权限" url="/en-us/api-reference/beta/api/item_invite" SEOKeyword="添加权限、邀请、共享、Microsoft Graph API" SEODescription="" />
+        <Item text="列出权限" url="/en-us/api-reference/beta/api/driveitem_list_permissions" SEOKeyword="列出、枚举项目的权限、邀请、共享、Microsoft Graph API" SEODescription="" />
+        <Item text="添加权限" url="/en-us/api-reference/beta/api/driveitem_invite" SEOKeyword="添加权限、邀请、共享、Microsoft Graph API" SEODescription="" />
         <Item text="获取权限" url="/en-us/api-reference/beta/api/permission_get" SEOKeyword="获取权限, Microsoft Graph API, 权限 API" SEODescription="检索权限对象的属性和关系。" />
         <Item text="更新权限" url="/en-us/api-reference/beta/api/permission_update" SEOKeyword="更新权限, Microsoft Graph API, 权限 API" SEODescription="更新权限对象的属性。" />
         <Item text="删除权限" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="删除权限, Microsoft Graph API, 权限 API" SEODescription="删除权限。" />
       </Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="注释" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="注释 API, Microsoft Graph API, 注释 API" SEODescription="">
+    <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="使用 Microsoft Graph 将应用程序与 OneNote 集成。">
+      <Item text="输入和输出 HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="了解创建、更新或分析所返回 OneNote 页面内容时的输入和输出 HTML。" />
+	  <Item text="打开 OneNote 客户端" url="/en-us/concepts/open_onenote_client" SEODescription="将 OneNote 应用程序打开到特定页面或笔记本。" />
+      <Item text="错误代码" url="/en-us/concepts/onenote_error_codes" SEODescription="查找 Microsoft Graph 中 OneNote API 返回的错误代码。" />
+      <Item text="最佳做法" url="/en-us/concepts/onenote_best_practices" SEODescription="遵循最佳做法，使用 Microsoft Graph 中的 OneNote API。" />  
+      <Item text="笔记" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="注释 API, Microsoft Graph API, 注释 API" SEODescription="">
         <Item text="列出笔记本" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="列出笔记本, Microsoft Graph API, 注释 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象列表。" />
         <Item text="创建笔记本" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="创建笔记本, Microsoft Graph API, 注释 API" SEODescription="新建 OneNote 笔记本 (../ resources/notebook.md)。" />
         <Item text="列出分区" url="/en-us/api-reference/beta/api/onenote_list_sections" SEOKeyword="列出分区, Microsoft Graph API, 注释 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
@@ -3668,10 +4183,12 @@
         <Item text="更新日历" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="更新日历, Microsoft Graph API, Outlook 日历 API" SEODescription="更新日历对象的属性。" />
         <Item text="删除日历" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="删除日历, Microsoft Graph API, Outlook 日历 API" SEODescription="删除日历。" />
         <Item text="列出日历视图" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="列出日历视图, Microsoft Graph API, Outlook 日历 API" SEODescription="检索事件对象列表。" />
-        <Item text="列出事件" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="列出事件, Microsoft Graph API, Outlook 日历 API" SEODescription="检索事件对象列表。" />
-        <Item text="查找会议次数" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会议次数、Microsoft Graph API、Outlook 日历 API" SEODescription="检索事件对象列表。" />
-        <Item text="创建事件" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="创建事件, Microsoft Graph API, 日历 API" SEODescription="使用此 API 新建事件。" />
-        <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户：reminderView, Microsoft Graph API, 用户 API" SEODescription="" />
+        <Item text="提醒视图" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="用户: reminderView, Microsoft Graph API, 用户 API" SEODescription="" />
+		<Item text="列出事件" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="列出事件, Microsoft Graph API, Outlook 日历 API" SEODescription="检索事件对象列表。" />
+         <Item text="创建事件" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="创建事件, Microsoft Graph API, 日历 API" SEODescription="使用此 API 新建事件。" />
+		<Item text="查找会议时间" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会议次数、Microsoft Graph API、Outlook 日历 API" SEODescription="检索事件对象列表。" />
+		<Item text="查找会议室列表" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="查找会议室" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>  
 	  <Item text="日历组" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="一组日历。">
         <Item text="列出日历组" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="列出 calendarGroups, Microsoft Graph API, 用户 API" SEODescription="检索 calendargroup 对象列表。" />
@@ -3720,8 +4237,9 @@
         <Item text="回复全部邮件" url="/en-us/api-reference/beta/api/message_replyall" SEOKeyword="回复全部邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="" />
         <Item text="创建转发邮件" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="创建转发邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="" />
         <Item text="转发邮件" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="转发邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="" />
-        <Item text="发送邮件" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="用户：sendMail、Microsoft Graph API、用户 API" SEODescription="" />
-        <Item text="获取邮件提醒" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="发送邮件" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, 用户 API" SEODescription="" />
+        <Item text="取消订阅" url="/en-us/api-reference/beta/api/message_unsubscribe" />
+		<Item text="获取邮件提示" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="列出附件" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="列出附件, Microsoft Graph API, Outlook 邮件 API" SEODescription="检索 attachment 对象列表。" />
         <Item text="添加附件" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="创建附件, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 新建附件。" />
         <Item text="创建开放扩展" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="创建开放扩展, Microsoft Graph API, 邮件 API" SEODescription="使用此 API 创建开放扩展。" />
@@ -3946,27 +4464,115 @@
 			<Item text="删除历史记录项" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
 		</Item>
 	</Item>
-	<Item text="报告" url="/en-us/api-reference/beta/resources/report">
-      <Item text="Office 365 使用情况报告" url="/en-us/api-reference/beta/resources/report">
-		  <Item text="获取电子邮件活动报告" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="获取电子邮件活动报告、Microsoft Graph API、报表 API " SEODescription="检索 Exchange 电子邮件活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取电子邮件应用使用情况报告" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="获取电子邮件应用使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索电子邮件应用使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取邮箱使用情况报告" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="获取邮箱使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索邮箱使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Office 365 激活报告" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="获取 Office 365 激活报告、Microsoft Graph API、报表 API" SEODescription="检索 Office 365 激活报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Office 365 活动用户报告" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="获取 Office 365 活动用户报告、Microsoft Graph API、报表 API" SEODescription="检索 Office 365 活动用户报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Office 365 组活动报告" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="获取 Office 365 组活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Office 365 组活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 OneDrive 活动报告" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="获取 OneDrive 活动报告、Microsoft Graph API、报表 API" SEODescription="检索 OneDrive 活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 OneDrive 使用情况报告" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="获取 OneDrive 使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 OneDrive 使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Skype for Business 活动报告" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="获取 Skype for Business 用户活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Skype for Business 用户活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Skype for Business 设备使用情况报告" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="获取 Skype for Business 设备使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 Skype for Business 设备使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Skype for Business 组织者活动报告" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="获取 Skype for Business 组织者活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Skype for Business 组织者活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Skype for Business 参与者活动报告" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="获取 Skype for Business 参与者活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Skype for Business 参与者活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Skype for Business 对等活动报告" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="获取 Skype for Business 对等活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Skype for Business 对等活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 SharePoint 活动报告" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="获取 SharePoint 活动报告、Microsoft Graph API、报表 API" SEODescription="检索 SharePoint 活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 SharePoint 网站使用情况报告" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="获取 SharePoint 网站使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 SharePoint 网站使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Yammer 活动报告" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="获取 Yammer 活动报告、Microsoft Graph API、报表 API" SEODescription="检索 Yammer 活动报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Yammer 设备使用情况报告" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="获取 Yammer 设备使用情况报告、Microsoft Graph API、报表 API" SEODescription="检索 Yammer 设备使用情况报告。响应将是二进制流中的 CSV 文件。" />
-		  <Item text="获取 Yammer 组活动报告" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="检索 Yammer 组活动报告。" />
-		</Item>
+	<Item text="报表" url="/en-us/api-reference/beta/resources/report">
+	  <Item text="Microsoft Teams 设备使用情况" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams 用户活动" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
+	  <Item text="Outlook 活动" url="/en-us/api-reference/beta/resources/email_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook 应用使用情况" url="/en-us/api-reference/beta/resources/email_app_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
+		<Item text="获取应用用户计数" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
+		<Item text="获取版本用户计数" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook 邮箱使用情况" url="/en-us/api-reference/beta/resources/mailbox_usage_reports">
+		<Item text="获取邮箱详细信息" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagedetail" />
+		<Item text="获取邮箱计数" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="获取配额状态邮箱计数" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="获取存储" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 激活" url="/en-us/api-reference/beta/resources/office_365_activations_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="获取激活计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationcounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 活动用户" url="/en-us/api-reference/beta/resources/office_365_active_users_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeusercounts" />
+		<Item text="获取服务用户计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 组活动" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports">
+		<Item text="获取组详细信息" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="获取组计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="获取存储" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="获取文件计数" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive 活动" url="/en-us/api-reference/beta/resources/onedrive_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="获取文件计数" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive 使用情况" url="/en-us/api-reference/beta/resources/onedrive_usage_reports">
+		<Item text="获取帐户详细信息" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="获取帐户计数" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="获取文件计数" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="获取存储" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint 活动" url="/en-us/api-reference/beta/resources/sharepoint_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="获取文件计数" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="获取页面" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint 站点使用情况" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports">
+		<Item text="获取站点详细信息" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="获取文件计数" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="获取站点计数" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="获取存储" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="获取页面" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business 活动" url="/en-us/api-reference/beta/resources/skype_for_business_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 设备使用情况" url="/en-us/api-reference/beta/resources/skype_for_business_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 组织者活动" url="/en-us/api-reference/beta/resources/skype_for_business_organizer_activity_reports">
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 参与者活动" url="/en-us/api-reference/beta/resources/skype_for_business_participant_activity_reports">
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 点对点活动" url="/en-us/api-reference/beta/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="获取分钟计数" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer 活动" url="/en-us/api-reference/beta/resources/yammer_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getyammeractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer 设备使用情况" url="/en-us/api-reference/beta/resources/yammer_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer 组活动" url="/en-us/api-reference/beta/resources/yammer_groups_activity_reports">
+		<Item text="获取组详细信息" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="获取组计数" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="获取活动计数" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
 	</Item>
     <Item text="架构扩展" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="扩展 API, Microsoft Graph API, 架构扩展 API, 架构扩展" SEODescription="将自定义数据添加到 Microsoft Graph 中资源的 API。">
       <Item text="列出架构扩展" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="列出架构扩展, Microsoft Graph API" SEODescription="检索架构扩展定义及其属性的集合。" />
@@ -3983,8 +4589,9 @@
       </Item>
       <Item text="列表" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint、列表、多个列表、microsoft graph api、sharepoint 列表 api">
         <Item text="获取列表" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, 网站, 获取网站" SEODescription="" />
-        <Item text="获取项目" url="/en-us/api-reference/beta/api/listitems_list" SEOKeyword="sharepoint, 列出项目, 获取项目, 获取 listitems" SEODescription="" />
+        <Item text="获取项目" url="/en-us/api-reference/beta/api/listitem_list" SEOKeyword="sharepoint, 列出项目, 获取项目, 获取 listitems" SEODescription="" />
         <Item text="创建列表" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="sharepoint, 创建列表, 创建, microsoft graph api, sharepoint 列表 api" SEODescription="" />
+
       </Item>
       <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint、listitems、microsoft graph api、sharepoint 列表 api" SEODescription="">
         <Item text="获取项目" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint、获取项目、microsoft graph api、sharepoint 列表 api" SEODescription="" />
