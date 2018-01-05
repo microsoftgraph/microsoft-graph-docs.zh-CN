@@ -23,10 +23,10 @@ POST /groups/{id}/calendar/events
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Event](../resources/event.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

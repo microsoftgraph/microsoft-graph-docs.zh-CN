@@ -4,7 +4,6 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
@@ -25,12 +24,11 @@ POST /groups/{id}/owners/$ref
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+#### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,8 +43,10 @@ Content-length: 30
 }
 ```
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
+#### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -18,7 +18,7 @@ GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -33,7 +33,7 @@ GET /drive/root/createdByUser/photo
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [photo](../resources/photo.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面的示例展示了如何请求获取照片元数据。
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -42,7 +42,7 @@ GET /drive/root/createdByUser/photo
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -59,7 +59,36 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+##### <a name="request"></a>请求
+下面的示例展示了如何请求获取照片字节。
+<!-- {
+  "blockType": "request",
+  "name": "get_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。
 
+<!-- { "blockType": "response", "@odata.type": "stream" } -->
+
+```http
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: image/jpeg
+ETag: "A19A6498"
+request-id: 16e1bff0-6d74-47d6-944c-61707916a74c
+client-request-id: 16e1bff0-6d74-47d6-944c-61707916a74c
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"West US","Slice":"SliceA","Ring":"5","ScaleUnit":"003","Host":"AGSFE_IN_14","ADSiteName":"WST"}}
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag, Location, Preference-Applied, Content-Range, request-id, client-request-id
+Duration: 125.9389
+Date: Wed, 13 Dec 2017 22:02:17 GMT
+Content-Length: 250526
+
+<binary image data>
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

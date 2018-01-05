@@ -13,10 +13,10 @@
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |**组管理**| | |
-|[Create group](../api/group_post_groups.md) | [组](group.md) |创建新组。它可以是 Office 365 组、动态组或安全组。|
+|[Create group](../api/group_post_groups.md) | [组](group.md) |新建组。 它可以是 Office 365 组、动态组或安全组。|
 |[获取组](../api/group_get.md) | [组](group.md) |读取 group 对象的属性。|
 |[列出组](../api/group_list.md) |[组](group.md) 集合 |列出 group 对象及其属性。|
-|[更新组](../api/group_update.md) | [组](group.md) |更新 group 对象的属性。 |
+|[更新组](../api/group_update.md) | 无 |更新 group 对象的属性。 |
 |[删除组](../api/group_delete.md) | 无 |删除组对象。 |
 |[Add owner](../api/group_post_owners.md) |无| 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。|
 |[列出所有者](../api/group_list_owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
@@ -29,13 +29,21 @@
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。 |
 |[delta](../api/group_delta.md)|组集合| 获取组的增量更改。 |
 |**日历**| | |
-|[Create event](../api/group_post_events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
-|[列出事件](../api/group_list_events.md) |[事件](event.md) 集合| 获取 Event 对象集合。|
-|[列出 calendarView](../api/group_list_calendarview.md) |[事件](event.md) 集合| 获取指定时间范围内的事件集合。|
+|[创建事件](../api/group_post_events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
+|[获取事件](../api/group_get_event.md) |[event](event.md)|读取 event 对象的属性。|
+|[列出事件](../api/group_list_events.md) |[event](event.md) 集合| 获取 event 对象集合。|
+|[更新事件](../api/group_update_event.md) |无|更新 event 对象的属性。|
+|[删除事件](../api/group_delete_event.md) |无|删除 event 对象。|
+|[列出 calendarView](../api/group_list_calendarview.md) |[event](event.md) 集合| 获取指定时间范围内的事件集合。|
 |**对话**| | |
-|[Create conversation](../api/group_post_conversations.md) |[对话](conversation.md)| 通过发布到对话集合创建新对话。|
-|[列出对话](../api/group_list_conversations.md) |[对话](conversation.md) 集合| 获取 Conversation 对象集合。|
-|[列出线程](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) 集合| 获取某个组的所有线程。|
+|[创建对话](../api/group_post_conversations.md) |[conversation](conversation.md)| 通过发布到对话集合新建对话。|
+|[获取对话](../api/group_get_conversation.md) |[conversation](conversation.md)| 读取 conversation 对象的属性。|
+|[列出对话](../api/group_list_conversations.md) |[conversation](conversation.md) 集合| 获取 conversation 对象集合。|
+|[删除对话](../api/group_delete_conversation.md) |无|删除 conversation 对象。|
+|[获取线程](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| 读取 thread 对象的属性。|
+|[列出线程](../api/group_list_threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
+|[更新线程](../api/group_update_thread.md) |无| 更新 thread 对象的属性。|
+|[删除线程](../api/group_delete_thread.md) |无| 删除 thread 对象。|
 |[列出 acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组 acceptedSenders 列表中的用户或组列表。|
 |[添加 acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
 |[删除 acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
@@ -45,7 +53,7 @@
 |[创建设置](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
 |[获取设置](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
 |[列出设置](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
-|[更新设置](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
+|[更新设置](../api/groupsetting_update.md) | 无 | 更新 setting 对象。 |
 |[删除设置](../api/groupsetting_delete.md) | 无 | 删除设置对象。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -103,10 +111,10 @@
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
 |照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
-|planner|[Planner](planner.md)| 统一组可能存在的 Planner 资源入口点。|
+|planner|[planner](planner.md)| 统一组可能存在的 Planner 资源入口点。|
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
 |设置|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
-|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。
+|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
 |threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

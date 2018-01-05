@@ -18,7 +18,7 @@ GET /groups/{id}/calendar/events
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -29,17 +29,17 @@ GET /groups/{id}/calendar/events
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "get_events"
+  "name": "get_group_events"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/events
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events
 ```
 
 #### <a name="response"></a>响应
@@ -59,15 +59,134 @@ Content-length: 354
 {
   "value": [
     {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
+      "id": "AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOwAAAA==",
+      "createdDateTime": "2017-07-31T18:59:01.982289Z",
+      "lastModifiedDateTime": "2017-09-06T04:29:38.6647687Z",
+      "changeKey": "xPZF2y46pEiVBni87OnrpgAAFq78Xw==",
+      "categories": [],
+      "originalStartTimeZone": "Eastern Standard Time",
+      "originalEndTimeZone": "Eastern Standard Time",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000824DDB122F0AD301000000000000000010000000824A8905B038D54AA7735F117B3442ED",
+      "reminderMinutesBeforeStart": 15,
+      "isReminderOn": true,
+      "hasAttachments": false,
+      "subject": "New Training Plans",
+      "bodyPreview": "Meeting to plan new trainings.\r\n\r\n\r\n\r\nJoin Microsoft Teams Online Meeting<https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35>",
+      "importance": "normal",
+      "sensitivity": "normal",
+      "isAllDay": false,
+      "isCancelled": false,
+      "isOrganizer": true,
+      "responseRequested": true,
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "seriesMaster",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA%2Bb2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOwAAAA%3D%3D&exvsurl=1&path=/calendar/item",
+      "onlineMeetingUrl": null,
       "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
+          "response": "organizer",
+          "time": "0001-01-01T00:00:00Z"
       },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
+      "body": {
+          "contentType": "html",
+          "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n</head>\r\n<body>\r\n<div>Meeting to plan new trainings.</div>\r\n<div><br>\r\n<br>\r\n<br>\r\n<a href=\"https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35\">Join Microsoft Teams Online Meeting</a></div>\r\n</body>\r\n</html>\r\n"
+      },
+      "start": {
+          "dateTime": "2017-08-14T21:00:00.0000000",
+          "timeZone": "UTC"
+      },
+      "end": {
+          "dateTime": "2017-08-14T22:00:00.0000000",
+          "timeZone": "UTC"
+      },
+      "location": {
+          "displayName": "HR Taskforce / Facilities"
+      },
+      "recurrence": {
+          "pattern": {
+              "type": "weekly",
+              "interval": 1,
+              "month": 0,
+              "dayOfMonth": 0,
+              "daysOfWeek": [
+                  "monday",
+                  "wednesday",
+                  "friday"
+              ],
+              "firstDayOfWeek": "sunday",
+              "index": "first"
+          },
+          "range": {
+              "type": "noEnd",
+              "startDate": "2017-08-14",
+              "endDate": "0001-01-01",
+              "recurrenceTimeZone": "Eastern Standard Time",
+              "numberOfOccurrences": 0
+          }
+      },
+      "attendees": [
+          {
+              "type": "required",
+              "status": {
+                  "response": "accepted",
+                  "time": "2017-07-31T18:59:06.4180028Z"
+              },
+              "emailAddress": {
+                  "name": "Joni Sherman",
+                  "address": "JoniS@contoso.onmicrosoft.com"
+              }
+          },
+          {
+              "type": "required",
+              "status": {
+                  "response": "none",
+                  "time": "0001-01-01T00:00:00Z"
+              },
+              "emailAddress": {
+                  "name": "HR Taskforce",
+                  "address": "HRTaskforce@contoso.onmicrosoft.com"
+              }
+          },
+          {
+              "type": "required",
+              "status": {
+                  "response": "none",
+                  "time": "0001-01-01T00:00:00Z"
+              },
+              "emailAddress": {
+                  "name": "Megan Bowen",
+                  "address": "MeganB@contoso.onmicrosoft.com"
+              }
+          },
+          {
+              "type": "required",
+              "status": {
+                  "response": "none",
+                  "time": "0001-01-01T00:00:00Z"
+              },
+              "emailAddress": {
+                  "name": "Lidia Holloway",
+                  "address": "LidiaH@contoso.onmicrosoft.com"
+              }
+          },
+          {
+              "type": "required",
+              "status": {
+                  "response": "none",
+                  "time": "0001-01-01T00:00:00Z"
+              },
+              "emailAddress": {
+                  "name": "Emily Braun",
+                  "address": "EmilyB@contoso.onmicrosoft.com"
+              }
+          }
+      ],
+      "organizer": {
+          "emailAddress": {
+              "name": "HR Taskforce",
+              "address": "HRTaskforce@contoso.onmicrosoft.com"
+          }
+      }
     }
   ]
 }

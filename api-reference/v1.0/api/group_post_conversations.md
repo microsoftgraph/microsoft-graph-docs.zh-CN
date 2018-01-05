@@ -1,5 +1,5 @@
 # <a name="create-conversation"></a>创建对话
-通过包括线程和帖子来创建新会话。 
+通过添加线程和帖子来新建[对话](../resources/conversation.md)。 
 
 使用[回复线程](conversationthread_reply.md)或[回复帖子](post_reply.md)进一步发布到该对话。
 

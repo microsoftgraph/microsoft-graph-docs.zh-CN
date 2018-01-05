@@ -25,15 +25,28 @@
 
 [Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。 该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。 `null` 的 `error` 值表示该函数执行成功。 
 
-受支持函数的完整列表位于[此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。 请参阅特定参数名称和数据类型的函数签名。
+受支持函数的完整列表位于[此处]((https://support.office.com/zh-CN/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188))。 请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_： 
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  
-* 与大部分 API 中使用的从 0 开始的索引不同，索引参数从 1 开始索引。 
+* 与大部分 API 中使用的从 0 开始编制的索引不同，索引参数是从 1 开始编制索引。 
 
-示例： 
+示例：**vlookup**
 
-在下面的示例中，通过传递查阅值、输入范围和要返回的值调用 `vlookup` 函数。 
+在 Excel 电子表格中，`vlookup` 函数需要使用以下参数：
+
+1. 要查找的值（亦称为“查阅值”）。
+2. 查阅值所在的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
+3. 包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
+4. （可选）若要执行近似匹配，可指定 TRUE；若要执行完全匹配以返回值，可指定 FALSE。 如果未指定，默认值始终为 TRUE 或近似匹配。
+
+在单元格中，`vlookup` 函数如下所示： 
+
+=VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)
+
+（请参阅 [VLOOKUP Excel 函数]((https://support.office.com/zh-CN/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1))文档。）
+
+下面的示例展示了如何调用 `vlookup` 函数，以及如何使用 Excel REST API 传递这些参数。
 
 请求： 
 
@@ -66,9 +79,17 @@ content-type: application/json;odata.metadata
 }
 ```
 
-示例： 
+示例：`median`
 
-在下面的示例中，通过传递数组中输入范围调用 `median` 函数。 
+在 Excel 电子表格中，`median` 函数需要使用一个或多个输入区域。
+
+在单元格中，`median` 函数如以下示例所示：
+
+=MEDIAN(A2:A6)
+
+（请参阅 [MEDIAN Excel 函数]((https://support.office.com/zh-CN/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2))文档。）
+
+下面的示例展示了如何调用 `median` 函数，以及如何使用 Excel REST API 传递一个或多个输入区域。 
 
 请求： 
 

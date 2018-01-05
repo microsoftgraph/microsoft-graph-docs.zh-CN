@@ -1,10 +1,8 @@
 # <a name="update-group"></a>更新组
-
 更新 group 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
-
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,16 +41,15 @@ PATCH /groups/{id}
 **注意**
 
 - 可以更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-- 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes)。
+- 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes)。
 
 ## <a name="response"></a>响应
-
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
-
+#### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -74,8 +71,9 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>响应
-
+#### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,5 @@
 # <a name="list-conversations"></a>列出对话
-检索此组中的会话列表。
+检索此组中的[对话](../resources/conversation.md)列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -17,7 +17,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

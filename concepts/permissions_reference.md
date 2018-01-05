@@ -4,13 +4,13 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
+- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
 
-- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
-- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
+- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色]((https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-assign-admin-roles))。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
   
 - 对于应用程序权限，应用的_有效权限_将是权限默示的完整特权级别。例如，具有 _User.ReadWrite.All_ 应用程序权限的应用可以更新组织中每个用户的配置文件。 
 
@@ -255,12 +255,14 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ---
 
-## <a name="education-graph-permissions"></a>教育版 Graph 权限
+## <a name="education-permissions"></a>教育版权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |权限 |显示字符串 |说明 | 需经过管理员同意 |
 |:--------- |:------------- |:---------- | :--------------------- |
+|EduAdministration.Read | 读取教育应用设置 |  允许应用代表用户读取教育应用设置。 | 是 |
+|EduAdministration.ReadWrite | 管理教育应用设置 | 允许应用代表用户管理教育应用设置。 | 是 |
 |EduAssignments.ReadBasic | 读取不含成绩的用户课堂作业 | 允许应用代表用户读取不含成绩的作业 | 是 |
 |EduAssignments.ReadWriteBasic | 对不含成绩的用户课堂作业执行读取和写入操作 | 允许应用代表用户对不含成绩的作业执行读取和写入操作 | 是 |
 |EduAssignments.Read | 读取用户的课堂作业及其成绩视图 | 允许应用代表用户读取作业及其成绩| 是 |
@@ -315,9 +317,9 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 Files.Read、Files.ReadWrite、Files.Read.All 和 Files.ReadWrite.All 委派权限在个人 Microsoft 帐户和工作或学校帐户上都有效。请注意，对于个人帐户而言，Files.Read 和 Files.ReadWrite 还授予其权限访问与登录用户共享的文件。 
 
-Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
+Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)]((https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps)) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
 
-Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](../api-reference/v1.0/api/drive_get_specialfolder.md) Microsoft Graph API 的[应用程序根特殊文件夹](https://dev.onedrive.com/misc/appfolder.htm)。
+Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](../api-reference/v1.0/api/drive_get_specialfolder.md) Microsoft Graph API 的[应用程序根特殊文件夹]((https://dev.onedrive.com/misc/appfolder.htm))。
 
 
 ### <a name="example-usage"></a>用法示例
@@ -397,7 +399,7 @@ Microsoft 个人帐户不支持组功能。
 
 ### <a name="remarks"></a>注解
 
-_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
+_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles))
 
 ### <a name="example-usage"></a>用法示例
 
@@ -423,7 +425,7 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 
 ### <a name="remarks"></a>注解
 
-_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles))。
 
 ### <a name="example-usage"></a>示例用法
 
@@ -591,7 +593,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 ### <a name="remarks"></a>注解
 可以使用这些权限指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
 
-使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。 
+使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code))。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。 
 
 使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 

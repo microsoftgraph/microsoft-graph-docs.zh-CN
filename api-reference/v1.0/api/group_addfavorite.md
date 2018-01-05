@@ -8,29 +8,29 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/addFavorite
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
+| Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+#### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
@@ -39,8 +39,8 @@ POST /groups/{id}/addFavorite
 POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+#### <a name="response"></a>响应
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": false,

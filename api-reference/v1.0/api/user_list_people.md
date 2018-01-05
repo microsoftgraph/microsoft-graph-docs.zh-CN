@@ -21,13 +21,13 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](../../../concepts/people_example.md)，有助于自定义响应。
+此方法支持使用 [OData 查询参数](../../../concepts/query_parameters.md)自定义响应，如[获取人员的相关信息](../../../concepts/people_example.md)一文中的示例所示。
 
 |名称|值|说明| 
 |:---------------|:--------|:-------| 
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。| 
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。| 
-|$search|string|按姓名或别名搜索人员。 支持模糊匹配| 
+|$search|string|按姓名或别名搜索人员。 支持模糊匹配。| 
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。| 
 |$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。| 
 |$top|int|要返回的结果数。| 
