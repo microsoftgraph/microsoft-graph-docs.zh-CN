@@ -1,6 +1,11 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
 向表中添加新行。
+
+## <a name="error-handling"></a>错误处理
+
+此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 

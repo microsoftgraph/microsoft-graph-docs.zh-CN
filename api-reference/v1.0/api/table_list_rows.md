@@ -17,9 +17,9 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -39,7 +39,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
   "name": "get_rows"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -63,7 +63,8 @@ Content-length: 82
   ]
 }
 ```
-> **注意：**使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 查询参数可逐个浏览许多行。
+> 
+  **注意：**使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数可逐个浏览许多行。
 
 示例： 
 

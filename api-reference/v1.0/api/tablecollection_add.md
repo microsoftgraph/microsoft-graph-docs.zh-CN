@@ -1,6 +1,11 @@
 # <a name="tablecollection-add"></a>TableCollection: add
 
 创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。
+
+## <a name="error-handling"></a>错误处理
+
+此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -28,8 +33,8 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|地址|string|表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。|
-|hasHeaders|布尔|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
+|address|string|表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。|
+|hasHeaders|boolean|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
