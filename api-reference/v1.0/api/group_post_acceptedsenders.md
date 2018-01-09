@@ -33,7 +33,7 @@ POST /groups/{id}/acceptedSenders/$ref
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_acceptedsender"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
