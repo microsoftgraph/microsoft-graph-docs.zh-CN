@@ -21,9 +21,11 @@ GET /groups/{id}/calendar/events/{id}
 此方法支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 名称       | 类型 | 说明 |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}。必需。  |
+| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

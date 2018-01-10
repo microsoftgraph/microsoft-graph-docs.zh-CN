@@ -33,7 +33,7 @@ POST /groups
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | displayName | string | 要在组的通讯簿中显示的名称。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。如果创建 Office 365 组，则将此设置为 **true**。如果创建动态或安全组，则将此设置为 **false**。|
+| mailEnabled | 布尔 | 对于启用邮件的组，设置为 **true**。若要创建 Office 365 组，请将此设置为 **true**。若要创建动态组或安全组，请将此设置为 **false**。|
 | mailNickname | string | 组的邮件别名。 |
 | securityEnabled | 布尔 | 对于启用安全机制的组，请设置为 **true**。如果创建动态或安全组，则将此设置为 **true**。如果创建 Office 365 组，则将此设置为 **false**。 |
 
@@ -55,7 +55,7 @@ POST /groups
 下面的示例展示了如何请求创建 Office 365 组。
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups

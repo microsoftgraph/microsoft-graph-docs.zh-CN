@@ -2,7 +2,11 @@
 
 获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）和时区设置。
 
-可以查看所有的邮箱设置或获取特定设置。
+可以查看所有邮箱设置或获取特定设置。
+
+时区是用户可以为用户邮箱设置的首选设置之一。 有效的时区格式包括 Windows 时区格式和 [Internet 号码分配局 (IANA) 时区]((http://www.iana.org/time-zones))（亦称为“Olson 时区”）格式。 Windows 时区是默认格式。 
+
+获取用户的首选时区时，时区按创建时的格式返回。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user_update_mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -34,7 +38,7 @@ GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

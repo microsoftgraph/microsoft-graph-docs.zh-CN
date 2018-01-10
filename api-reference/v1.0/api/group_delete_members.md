@@ -1,5 +1,5 @@
 # <a name="remove-member"></a>删除成员
-使用此 API 可以通过 **members** 导航属性删除 Office 365 组、安全组或已启用邮件的安全组中的成员。你可以删除用户或其他组。
+使用此 API 可以通过 **members** 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除成员。可以删除用户或其他组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。

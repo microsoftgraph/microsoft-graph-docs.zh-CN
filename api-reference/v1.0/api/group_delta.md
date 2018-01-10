@@ -19,7 +19,11 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>查询参数
-跟踪组更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
+跟踪组中的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（而不是 `$deltatoken` 和 `$skiptoken`），必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+
+只需预先指定所需的任何查询参数一次。
+
+在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -56,6 +60,7 @@ GET /groups/delta
     
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -65,7 +70,8 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 #### <a name="response"></a>响应
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

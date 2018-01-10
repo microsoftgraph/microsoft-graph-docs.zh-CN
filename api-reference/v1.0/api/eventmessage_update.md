@@ -1,6 +1,6 @@
 # <a name="update-eventmessage"></a>更新 eventMessage
 
-更新 eventmessage 对象的属性。
+更新 [eventMessage](../resources/eventmessage.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -59,7 +59,7 @@ Content-length: 248
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -24,10 +24,21 @@
 * 减少调用频率。
 * 避免立即重试，因为所有请求都会计入使用限制。
 
-进行错误处理时，使用 HTTP 错误代码 429 检测限制。失败的响应包括响应标头中的*重试间隔*字段。使用*重试间隔*延迟回退请求是从限制中恢复的最快速的方式，因为 Microsoft Graph 会在客户端受限时继续记录资源使用状况。
+进行错误处理时，使用 HTTP 错误代码 429 检测限制。 失败响应的响应头中有“重试间隔”**字段。 使用*重试间隔*延迟回退请求是从限制中恢复的最快速方式，因为 Microsoft Graph 会在客户端受限时继续记录资源使用状况。
 
-1. 等待*重试间隔*字段指定的秒数。
+1. 等待“重试间隔”**字段中指定的秒数。
 2. 重试请求。
 3. 如果请求再次失败，并显示 429 错误代码，则表示你仍然受限。继续使用建议的重试间隔延迟并重试请求直到成功。
 
-有关 Microsoft 云上的限制的更广泛讨论，请参阅[限制模式](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx)。
+下列资源目前提供“重试间隔”头：
+- [用户](../api-reference/v1.0/resources/user.md)
+- [照片](../api-reference/v1.0/resources/profilephoto.md)
+- [邮件](../api-reference/v1.0/resources/message.md)
+- [日历（用户和组）](../api-reference/v1.0/resources/event.md)
+- [联系人](../api-reference/v1.0/resources/contact.md)
+- [附件](../api-reference/v1.0/resources/attachment.md)
+- [组对话](../api-reference/v1.0/resources/conversation.md)
+- [人员和社交活动](../api-reference/beta/resources/social_overview.md)
+- [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
+
+有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式]((https://msdn.microsoft.com/zh-CN/library/office/dn589798.aspx))。

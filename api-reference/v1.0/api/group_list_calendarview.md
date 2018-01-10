@@ -27,10 +27,11 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 此方法还支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
-| Prefer | string | outlook.timezone=“东部标准时间”。可选。使用此选项指定响应中开始时间和结束时间的时区。如果未指定，则按 UTC 时间返回响应。 |
+| 名称       | 类型 | 说明 |
+|:---------------|:--------|:--------|
+| Authorization  | string | Bearer {token}。必需。  |
+| Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
+| Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -40,13 +41,14 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面展示了示例请求。
+下面的示例展示了如何请求采用文本格式返回事件主体。
 <!-- {
   "blockType": "request",
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/calendarView
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-10-01T19:00:00.00
+Prefer: outlook.body-content-type="text"
 ```
 
 #### <a name="response"></a>响应
@@ -61,22 +63,172 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/calendarView
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
+Content-length: 1354
+Preference-Applied: outlook.body-content-type="text"
 
 {
-  "value": [
-    {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
-      },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
-    }
-  ]
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('02bd9fd6-8f93-4758-87c3-1fb73740a315')/calendarView",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19%3a00%3a00.0000000&endDateTime=2017-10-01T19%3a00%3a00.00&$skip=10",
+    "value":[
+        {
+            "@odata.etag":"W/\"xPZF2y46pEiVBni87OnrpgAAFq78Xw==\"",
+            "id":"AAMkAGI5MWYJOwAAEA==",
+            "createdDateTime":"2017-07-31T18:59:01.982289Z",
+            "lastModifiedDateTime":"2017-09-06T04:29:38.6647687Z",
+            "changeKey":"xPZF2y46pEiVBni87OnrpgAAFq78Xw==",
+            "categories":[
+
+            ],
+            "originalStartTimeZone":"Eastern Standard Time",
+            "originalEndTimeZone":"Eastern Standard Time",
+            "iCalUId":"040000008200E00074C5B7101A82E00807E1080E824DDB122F0AD301000000000000000010000000824A8905B038D54AA7735F117B3442ED",
+            "reminderMinutesBeforeStart":15,
+            "isReminderOn":true,
+            "hasAttachments":false,
+            "subject":"New Training Plans",
+            "bodyPreview":"Meeting to plan new trainings.\r\n\r\n\r\n\r\nJoin Microsoft Teams Online Meeting<https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35>",
+            "importance":"normal",
+            "sensitivity":"normal",
+            "isAllDay":false,
+            "isCancelled":false,
+            "isOrganizer":true,
+            "responseRequested":true,
+            "seriesMasterId":null,
+            "showAs":"busy",
+            "type":"singleInstance",
+            "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI5MWYJOwAAEA%3D%3D&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl":null,
+            "responseStatus":{
+                "response":"organizer",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "body":{
+                "contentType":"text",
+                "content":"Meeting to plan new trainings.\r\n\r\n\r\n\r\nJoin Microsoft Teams Online Meeting<https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35>\r\n"
+            },
+            "start":{
+                "dateTime":"2017-08-14T21:00:00.0000000",
+                "timeZone":"UTC"
+            },
+            "end":{
+                "dateTime":"2017-08-14T22:00:00.0000000",
+                "timeZone":"UTC"
+            },
+            "location":{
+                "displayName":"HR Taskforce / Facilities"
+            },
+            "recurrence":null,
+            "attendees":[
+                 {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"HR Taskforce",
+                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    }
+                },
+                {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"Megan Bowen",
+                        "address":"MeganB@contoso.onmicrosoft.com"
+                    }
+                }
+             ],
+            "organizer":{
+                "emailAddress":{
+                    "name":"HR Taskforce",
+                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag":"W/\"xPZF2y46pEiVBni87OnrpgAAFq78Xw==\"",
+            "id":"AAMkAGI5MWYJOwAAEA==",
+            "createdDateTime":"2017-07-31T18:59:01.982289Z",
+            "lastModifiedDateTime":"2017-09-06T04:29:38.6647687Z",
+            "changeKey":"xPZF2y46pEiVBni87OnrpgAAFq78Xw==",
+            "categories":[
+
+            ],
+            "originalStartTimeZone":"Eastern Standard Time",
+            "originalEndTimeZone":"Eastern Standard Time",
+            "iCalUId":"040000008200E00074C5B7101A82E00807E10810824DDB122F0AD301000000000000000010000000824A8905B038D54AA7735F117B3442ED",
+            "reminderMinutesBeforeStart":15,
+            "isReminderOn":true,
+            "hasAttachments":false,
+            "subject":"New Training Plans",
+            "bodyPreview":"Follow-up meeting to plan new trainings.\r\n\r\n\r\n\r\nJoin Microsoft Teams Online Meeting<https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35>",
+            "importance":"normal",
+            "sensitivity":"normal",
+            "isAllDay":false,
+            "isCancelled":false,
+            "isOrganizer":true,
+            "responseRequested":true,
+            "seriesMasterId":null,
+            "showAs":"busy",
+            "type":"singleInstance",
+            "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI5MWYJOwAAEA%3D%3D&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl":null,
+            "responseStatus":{
+                "response":"organizer",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "body":{
+                "contentType":"text",
+                "content":"Meeting to plan new trainings.\r\n\r\n\r\n\r\nJoin Microsoft Teams Online Meeting<https://teams.microsoft.com/l/meetup-join/19%3a900876baa3134907b0dcb41a0d220e31%40thread.skype/1501527539926?tenantId=dcd219dd-bc68-4b9b-bf0b-4a33a796be35>\r\n"
+            },
+            "start":{
+                "dateTime":"2017-08-16T21:00:00.0000000",
+                "timeZone":"UTC"
+            },
+            "end":{
+                "dateTime":"2017-08-16T22:00:00.0000000",
+                "timeZone":"UTC"
+            },
+            "location":{
+                "displayName":"HR Taskforce / Facilities"
+            },
+            "recurrence":null,
+            "attendees":[
+                {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"HR Taskforce",
+                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    }
+                },
+                {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"Megan Bowen",
+                        "address":"MeganB@contoso.onmicrosoft.com"
+                    }
+                }
+            ],
+            "organizer":{
+                "emailAddress":{
+                    "name":"HR Taskforce",
+                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 

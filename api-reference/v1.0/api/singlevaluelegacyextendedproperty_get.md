@@ -34,7 +34,7 @@
 ## <a name="http-request"></a>HTTP 请求
 
 #### <a name="get-a-resource-instance-using-expand"></a>使用 `$expand` 获取资源实例
-获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)。
+获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码]((http://www.w3schools.com/tags/ref_urlencode.asp))。
 
 获取**邮件**实例：
 <!-- { "blockType": "ignored" } -->
@@ -91,10 +91,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>使用 `$filter` 获取资源实例
 
-获取支持的资源实例，这些实例具有与 **id** 中的筛选器匹配的扩展属性以及 **value** 属性。请确保对筛选器字符串中的空格字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp) - 正斜杠和空格。
+获取支持的资源实例，其中包含与 **id** 和 **value** 属性筛选器匹配的扩展属性。 请务必对筛选器字符串中的以下字符应用 [URL 编码]((http://www.w3schools.com/tags/ref_urlencode.asp))：冒号、正斜杠和空格。
 
 
-获取**邮件**实例：
+获取 **message** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -152,9 +152,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|property_value|String|要匹配的扩展属性的值。上面 **HTTP 请求**部分中列出的所必需的参数。|
+|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 3](#request-3)。 |
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -184,7 +184,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-##### <a name="response-1"></a>响应 1
+#### <a name="response-1"></a>响应 1
 响应正文包括指定邮件的所有属性以及此筛选器返回的扩展属性。
 
 注意：为了简单起见，会将此处所示的**邮件**对象截断。将从实际调用中返回所有属性。
@@ -228,22 +228,56 @@ Content-type: application/json
 }
 ```
 
-****
-
 #### <a name="request-2"></a>请求 2
 
-第二个示例获取具有筛选器中指定的单值扩展属性的邮件。此筛选器将返回如下的扩展属性：
-- 其 **id** 与 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 字符串（包含 URL 编码，此处为了便于阅读，已将其删除）匹配。
-- 其**值**为 `Green`。
+第二个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。 此筛选器查找如下扩展属性：
+
+- 它的 **id** 与字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）匹配。
+
+- 它的 **value** 是字符串 `Green`。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/api/v1.0/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response-2"></a>响应 2
 
 成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。响应正文是类似于[获取邮件集合](../api/user_list_messages.md)中的响应。该响应不包括匹配的扩展属性。
+
+
+#### <a name="request-3"></a>请求 3
+
+接下来的两个示例展示了如何获取具有非字符串类型单值扩展属性的邮件。 为了方便阅读，从中删除了必要的 URL 编码。
+
+下面的示例展示了查找以下扩展属性的筛选器：
+
+- 它的 **id** 与字符串 `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid` 匹配。
+
+- 它的 **value** 是 GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`。 若要将属性值与 GUID 比较，请将 `ep/value` 转换为 `Edm.Guid`。
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
+```
+
+接下来的示例展示了查找以下扩展属性的筛选器：
+
+- 它的 **id** 与字符串 `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete` 匹配。
+
+- 它的 **value** 等于整数 12。 若要将属性值与整数比较，请将 `ep/value` 转换为 `Edm.Int32`。
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
+```
+
+
+#### <a name="response-3"></a>响应 3
+
+对于前面两个示例中的任意一个，成功响应由 `HTTP 200 OK` 响应代码表示，响应正文包括扩展属性与相应筛选器匹配的邮件的所有属性。 响应正文类似于[获取邮件集合](../api/user_list_messages.md)中的响应。 响应中不包含匹配的扩展属性。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
