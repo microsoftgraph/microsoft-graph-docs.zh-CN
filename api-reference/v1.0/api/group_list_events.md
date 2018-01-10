@@ -1,39 +1,41 @@
-# <a name="list-events"></a><span data-ttu-id="84525-101">列出事件</span><span class="sxs-lookup"><span data-stu-id="84525-101">List events</span></span>
-<span data-ttu-id="84525-102">检索 [event](../resources/event.md) 对象列表.</span><span class="sxs-lookup"><span data-stu-id="84525-102">Retrieve a list of [event](../resources/event.md) objects.</span></span>
+# <a name="list-events"></a><span data-ttu-id="ad467-101">列出事件</span><span class="sxs-lookup"><span data-stu-id="ad467-101">List events</span></span>
+<span data-ttu-id="ad467-102">检索 [event](../resources/event.md) 对象列表.</span><span class="sxs-lookup"><span data-stu-id="ad467-102">Retrieve a list of [event](../resources/event.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="84525-103">权限</span><span class="sxs-lookup"><span data-stu-id="84525-103">Permissions</span></span>
-<span data-ttu-id="84525-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="84525-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad467-103">权限</span><span class="sxs-lookup"><span data-stu-id="ad467-103">Permissions</span></span>
+<span data-ttu-id="ad467-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="ad467-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="84525-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="84525-106">Permission type</span></span>      | <span data-ttu-id="84525-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="84525-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ad467-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="ad467-106">Permission type</span></span>      | <span data-ttu-id="ad467-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ad467-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="84525-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="84525-108">Delegated (work or school account)</span></span> | <span data-ttu-id="84525-109">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="84525-109">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="84525-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="84525-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="84525-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="84525-111">Not supported.</span></span>    |
-|<span data-ttu-id="84525-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="84525-112">Application</span></span> | <span data-ttu-id="84525-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="84525-113">Not supported.</span></span> |
+|<span data-ttu-id="ad467-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ad467-108">Delegated (work or school account)</span></span> | <span data-ttu-id="ad467-109">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad467-109">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad467-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ad467-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad467-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="ad467-111">Not supported.</span></span>    |
+|<span data-ttu-id="ad467-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="ad467-112">Application</span></span> | <span data-ttu-id="ad467-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ad467-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="84525-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="84525-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad467-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ad467-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events
 GET /groups/{id}/calendar/events
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="84525-115">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="84525-115">Optional query parameters</span></span>
-<span data-ttu-id="84525-116">此方法支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="84525-116">This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ad467-115">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ad467-115">Optional query parameters</span></span>
+<span data-ttu-id="ad467-116">此方法支持 [OData 查询参数](../../../concepts/query_parameters.md) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ad467-116">This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="84525-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="84525-117">Request headers</span></span>
-| <span data-ttu-id="84525-118">标头</span><span class="sxs-lookup"><span data-stu-id="84525-118">Header</span></span>       | <span data-ttu-id="84525-119">值</span><span class="sxs-lookup"><span data-stu-id="84525-119">Value</span></span> |
-|:---------------|:--------|
-| <span data-ttu-id="84525-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="84525-120">Authorization</span></span>  | <span data-ttu-id="84525-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="84525-p102">Bearer {token}. Required.</span></span>  |
+## <a name="request-headers"></a><span data-ttu-id="ad467-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ad467-117">Request headers</span></span>
+| <span data-ttu-id="ad467-118">名称</span><span class="sxs-lookup"><span data-stu-id="ad467-118">Name</span></span>       | <span data-ttu-id="ad467-119">类型</span><span class="sxs-lookup"><span data-stu-id="ad467-119">Type</span></span> | <span data-ttu-id="ad467-120">说明</span><span class="sxs-lookup"><span data-stu-id="ad467-120">Description</span></span> |
+|:---------------|:--------|:--------|
+| <span data-ttu-id="ad467-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad467-121">Authorization</span></span>  | <span data-ttu-id="ad467-122">string</span><span class="sxs-lookup"><span data-stu-id="ad467-122">string</span></span> | <span data-ttu-id="ad467-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ad467-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ad467-125">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ad467-125">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="ad467-126">string</span><span class="sxs-lookup"><span data-stu-id="ad467-126">string</span></span> | <span data-ttu-id="ad467-127">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="ad467-127">outlook.timezone="Eastern Standard Time". Optional. Use this to specify the time zone for start and end times in the response. If not specified, the response are returned in UTC.</span></span> <span data-ttu-id="ad467-128">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="ad467-128">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ad467-129">可选。</span><span class="sxs-lookup"><span data-stu-id="ad467-129">Optional.</span></span> |
+| <span data-ttu-id="ad467-130">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ad467-130">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ad467-131">string</span><span class="sxs-lookup"><span data-stu-id="ad467-131">string</span></span> | <span data-ttu-id="ad467-132">要返回的 **body** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="ad467-132">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="ad467-133">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="ad467-133">Values can be "text" or "html".</span></span> <span data-ttu-id="ad467-134">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="ad467-134">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ad467-135">如果未指定此头，采用 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="ad467-135">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="ad467-136">可选。</span><span class="sxs-lookup"><span data-stu-id="ad467-136">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="84525-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="84525-123">Request body</span></span>
-<span data-ttu-id="84525-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="84525-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad467-137">请求正文</span><span class="sxs-lookup"><span data-stu-id="ad467-137">Request body</span></span>
+<span data-ttu-id="ad467-138">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ad467-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="84525-125">响应</span><span class="sxs-lookup"><span data-stu-id="84525-125">Response</span></span>
-<span data-ttu-id="84525-126">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="84525-126">If successful, this method returns a `200 OK` response code and a collection of [Event](../resources/event.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ad467-139">响应</span><span class="sxs-lookup"><span data-stu-id="ad467-139">Response</span></span>
+<span data-ttu-id="ad467-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ad467-140">If successful, this method returns a `200 OK` response code and a collection of [Event](../resources/event.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="84525-127">示例</span><span class="sxs-lookup"><span data-stu-id="84525-127">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="84525-128">请求</span><span class="sxs-lookup"><span data-stu-id="84525-128">Request</span></span>
-<span data-ttu-id="84525-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="84525-129">The following is an example of the request body.</span></span>
+## <a name="example"></a><span data-ttu-id="ad467-141">示例</span><span class="sxs-lookup"><span data-stu-id="ad467-141">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="ad467-142">请求</span><span class="sxs-lookup"><span data-stu-id="ad467-142">Request</span></span>
+<span data-ttu-id="ad467-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ad467-143">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_group_events"
@@ -42,9 +44,9 @@ GET /groups/{id}/calendar/events
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events
 ```
 
-#### <a name="response"></a><span data-ttu-id="84525-130">响应</span><span class="sxs-lookup"><span data-stu-id="84525-130">Response</span></span>
-<span data-ttu-id="84525-131">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="84525-131">Here is an example of the response.</span></span>
-><span data-ttu-id="84525-132">**注意：**为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="84525-132">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="84525-133">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="84525-133">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="ad467-144">响应</span><span class="sxs-lookup"><span data-stu-id="ad467-144">Response</span></span>
+<span data-ttu-id="ad467-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ad467-145">The following is an example of the response.</span></span>
+><span data-ttu-id="ad467-146">**注意：**为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ad467-146">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ad467-147">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ad467-147">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
