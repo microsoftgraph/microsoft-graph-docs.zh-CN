@@ -2,7 +2,7 @@
 
 获取用户的 Yammer 设备使用情况的详细信息。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 设备使用情况]((https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。
 
 ## <a name="permissions"></a>权限
 

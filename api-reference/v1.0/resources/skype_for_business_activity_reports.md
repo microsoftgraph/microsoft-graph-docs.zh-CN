@@ -2,7 +2,7 @@
 
 Skype for Business 活动报表可用于获取整个组织中活动的详细信息。 这些详细信息有助于为组织调查、计划和做出其他业务决策。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动]((https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 
 ## <a name="reports"></a>报表
 

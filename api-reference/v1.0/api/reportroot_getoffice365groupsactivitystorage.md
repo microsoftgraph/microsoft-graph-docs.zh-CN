@@ -2,7 +2,7 @@
 
 获取跨所有组邮箱和组网站使用的总存储。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组]((https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="permissions"></a>权限
 

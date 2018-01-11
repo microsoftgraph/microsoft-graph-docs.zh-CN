@@ -21,7 +21,7 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
-> **注意：**在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数]((http://dev.office.com/queryparametersinMicrosoftGraph))。
+> **注意：**在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)。
 
 ## <a name="encoding-query-parameters"></a>编码的查询参数
 
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 若要详细了解 KQL（如语法、支持的运算符和搜索提示），请参阅以下文章：
 
-- [关键字查询语言 (KQL) 语法参考]((https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference))
+- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
   [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)

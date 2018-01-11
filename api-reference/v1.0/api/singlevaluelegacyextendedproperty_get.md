@@ -34,7 +34,7 @@
 ## <a name="http-request"></a>HTTP 请求
 
 #### <a name="get-a-resource-instance-using-expand"></a>使用 `$expand` 获取资源实例
-获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码]((http://www.w3schools.com/tags/ref_urlencode.asp))。
+获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)。
 
 获取**邮件**实例：
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>使用 `$filter` 获取资源实例
 
-获取支持的资源实例，其中包含与 **id** 和 **value** 属性筛选器匹配的扩展属性。 请务必对筛选器字符串中的以下字符应用 [URL 编码]((http://www.w3schools.com/tags/ref_urlencode.asp))：冒号、正斜杠和空格。
+获取支持的资源实例，其中包含与 **id** 和 **value** 属性筛选器匹配的扩展属性。 请务必对筛选器字符串中的以下字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
 
 
 获取 **message** 实例：

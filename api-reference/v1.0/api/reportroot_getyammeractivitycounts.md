@@ -2,7 +2,7 @@
 
 获取组织中的 Yammer 活动数趋势，具体是以已发布、已阅读和已赞的消息数为依据。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 活动]((https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 活动](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)。
 
 ## <a name="permissions"></a>权限
 

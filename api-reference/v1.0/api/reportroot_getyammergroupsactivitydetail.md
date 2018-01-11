@@ -2,7 +2,7 @@
 
 获取组执行的 Yammer 组活动的详细信息。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动]((https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。
 
 ## <a name="permissions"></a>权限
 

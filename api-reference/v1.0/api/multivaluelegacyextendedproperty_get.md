@@ -31,7 +31,7 @@
  
 ## <a name="http-request"></a>HTTP 请求
 
-获取通过与 **id** 属性中的筛选器匹配的扩展属性扩展的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码]((http://www.w3schools.com/tags/ref_urlencode.asp))。
+获取通过与 **id** 属性中的筛选器匹配的扩展属性扩展的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)。
 
 获取**邮件**实例：
 <!-- { "blockType": "ignored" } -->

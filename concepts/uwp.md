@@ -2,11 +2,11 @@
 
 > **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
-> 若要在**所有企业方案**中支持**所有企业客户**，必须使用 Azure AD 终结点并使用 [Azure 管理门户]((https://aka.ms/aadapplist))管理应用。有关详细信息，请参阅 [在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
+> 若要在**所有企业方案**中支持**所有企业客户**，必须使用 Azure AD 终结点并使用 [Azure 管理门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅 [在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
-本文介绍了从 [Azure AD v2.0 终结点]((https://developer.microsoft.com/zh-CN/graph/docs/concepts/converged_auth))获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了[适用于 UWP（库）的 Microsoft Graph Connect 示例]((https://github.com/microsoftgraph/uwp-csharp-connect-sample))中的代码，以说明在使用 Microsoft Graph 的应用中必须实现的主要概念。
+本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/zh-CN/graph/docs/concepts/converged_auth)获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)中的代码，以说明在使用 Microsoft Graph 的应用中必须实现的主要概念。
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门]((https://developer.microsoft.com/graph/quick-start))快速准备就绪并开始运行，或下载本文基于的[适用于 UWP（库）的 Microsoft Graph Connect 示例]((https://github.com/microsoftgraph/uwp-csharp-connect-sample))。此外请注意，我们有[此示例的 REST 版本]((https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample))。
+**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/graph/quick-start)快速准备就绪并开始运行，或下载本文基于的[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)。此外请注意，我们有[此示例的 REST 版本](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)。
 
 ## <a name="sample-user-interface"></a>示例用户界面
 
@@ -26,14 +26,14 @@
 
 若要开始，将需要以下各项： 
 
-- [Microsoft 帐户]((https://www.outlook.com/)) 或[工作或学校帐户]((http://dev.office.com/devprogram))
+- [Microsoft 帐户](https://www.outlook.com/) 或[工作或学校帐户](http://dev.office.com/devprogram)
 - Visual Studio 2017 
-- [适用于 UWP（库）的 Microsoft Graph 初学者项目]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载[适用于 UWP（库）的 Microsoft Graph Connect 示例]((https://github.com/microsoftgraph/uwp-csharp-connect-sample))，并打开**初学者**文件夹内的解决方案。
+- [适用于 UWP（库）的 Microsoft Graph 初学者项目]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)，并打开**初学者**文件夹内的解决方案。
 
 
 ## <a name="register-the-app"></a>注册应用
  
-1. 使用个人或工作或学校帐户登录到 [应用注册门户]((https://apps.dev.microsoft.com/))。
+1. 使用个人或工作或学校帐户登录到 [应用注册门户](https://apps.dev.microsoft.com/)。
 2. 选择“**添加应用**”。
 3. 为应用输入名称，并选择“**创建应用程序**”。
     
@@ -414,11 +414,11 @@
 3. 选择“发送电子邮件”****按钮。在发送邮件后，将在按钮下方显示成功消息。此邮件包含附件形式的照片，同时还提供到 OneDrive 中上载的文件的共享链接。
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器]((https://developer.microsoft.com/zh-CN/graph/graph-explorer)) 试用 REST API。
-- 在 [Microsoft Graph UWP 代码段示例 (SDK)]((https://github.com/microsoftgraph/uwp-csharp-snippets-sample)) 和 [Microsoft Graph UWP 代码段示例 (REST)]((https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample)) 中查找 REST 和 SDK 操作的常见操作示例，或在 GitHub 上浏览我们的其他 [UWP 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer) 试用 REST API。
+- 在 [Microsoft Graph UWP 代码段示例 (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) 和 [Microsoft Graph UWP 代码段示例 (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) 中查找 REST 和 SDK 操作的常见操作示例，或在 GitHub 上浏览我们的其他 [UWP 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)。
 
 ## <a name="see-also"></a>另请参阅
-- [Microsoft Graph.NET 客户端库]((https://github.com/microsoftgraph/msgraph-sdk-dotnet))
-- [Azure AD v2.0 协议]((https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/))
-- [Azure AD v2.0 令牌]((https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/))
+- [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)
 

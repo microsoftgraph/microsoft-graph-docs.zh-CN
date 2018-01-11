@@ -2,7 +2,7 @@
 
 获取用户访问的唯一页面数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 活动]((https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
 
 ## <a name="permissions"></a>权限
 

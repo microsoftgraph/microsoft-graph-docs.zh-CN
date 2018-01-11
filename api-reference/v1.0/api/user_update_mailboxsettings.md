@@ -6,7 +6,7 @@
 
 **注意**：不能创建或删除任何邮箱设置。
 
-更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区]((http://www.iana.org/time-zones))（亦称为“Olson 时区”）。
+更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](http://www.iana.org/time-zones)（亦称为“Olson 时区”）。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -24,7 +24,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

@@ -2,7 +2,7 @@
 
 按活动类型和服务获取用户数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户]((https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 

@@ -2,7 +2,7 @@
 
 获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组]((https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="permissions"></a>权限
 

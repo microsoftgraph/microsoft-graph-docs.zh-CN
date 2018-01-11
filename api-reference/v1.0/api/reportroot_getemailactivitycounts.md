@@ -2,7 +2,7 @@
 
 可便于了解组织中的电子邮件活动趋势（如已发送、已阅读和已接收的电子邮件数）。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 电子邮件活动]((https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 电子邮件活动](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。
 
 ## <a name="permissions"></a>权限
 

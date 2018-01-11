@@ -2,7 +2,7 @@
 
 获取在桌面或设备上激活 Office 订阅的已启用用户数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活]((https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。
 
 ## <a name="permissions"></a>权限
 

@@ -11,6 +11,6 @@ Microsoft Graph 通过权限控制对资源的访问。 必须指定访问报表
 借助报表资源和 API，可以通过新方式使用 Microsoft Graph 与用户进行交互，并管理他们的用户体验。 若要了解详细信息：
 
 - 深入了解对方案最有帮助的资源的方法和属性。
-- 尝试在 [Graph 浏览器]((https://developer.microsoft.com/graph/graph-explorer))中调用 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。

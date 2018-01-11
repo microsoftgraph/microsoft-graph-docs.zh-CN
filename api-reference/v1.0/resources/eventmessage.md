@@ -54,7 +54,7 @@
 |id|String||
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
-|internetMessageId |String |由 [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)) 指定格式的邮件 ID。 |
+|internetMessageId |String |由 [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
 |isRead|Boolean|指示是否已阅读该邮件。|

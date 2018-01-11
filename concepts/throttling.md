@@ -41,4 +41,4 @@
 - [人员和社交活动](../api-reference/beta/resources/social_overview.md)
 - [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式]((https://msdn.microsoft.com/zh-CN/library/office/dn589798.aspx))。
+有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://msdn.microsoft.com/zh-CN/library/office/dn589798.aspx)。

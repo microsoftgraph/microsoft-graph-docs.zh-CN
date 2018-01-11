@@ -35,7 +35,7 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|

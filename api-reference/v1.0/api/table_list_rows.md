@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数]((http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
+此方法支持使用 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
 ## <a name="request-headers"></a>请求头
 | 名称      |说明|

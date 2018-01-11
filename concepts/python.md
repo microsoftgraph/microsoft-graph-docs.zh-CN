@@ -1,14 +1,14 @@
 # <a name="get-started-with-microsoft-graph-in-a-python-app"></a>在 Python 应用中开始使用 Microsoft Graph 
 
-本文介绍了从 Azure AD 获取访问令牌和调用 Microsoft Graph 所需的任务。 本文逐步演示了如何[使用 Python 通过 Microsoft Graph 发送邮件]((https://github.com/microsoftgraph/python-sample-send-mail))，并说明了使用 Microsoft Graph API 要实现的主要概念。 本文介绍了如何使用 REST 直接调用来访问 Microsoft Graph。
+本文介绍了从 Azure AD 获取访问令牌和调用 Microsoft Graph 所需的任务。 本文逐步演示了如何[使用 Python 通过 Microsoft Graph 发送邮件](https://github.com/microsoftgraph/python-sample-send-mail)，并说明了使用 Microsoft Graph API 要实现的主要概念。 本文介绍了如何使用 REST 直接调用来访问 Microsoft Graph。
 
 ![发送邮件表单](https://raw.githubusercontent.com/microsoftgraph/python-sample-send-mail/master/static/images/sendmail.png)
 
 ## <a name="choosing-an-authentication-library"></a>选择身份验证库
 
-若要调用 Microsoft Graph，应用必须包含从 Microsoft 云标识服务 Azure Active Directory (Azure AD) 获取的有效访问令牌，且每次调用 Microsoft Graph REST API 时，必须在 HTTP 头中传递令牌。 Graph 采用的身份验证方法以 OAuth 2.0 和 Open ID Connect 标准为依据。因此，为了在应用中实现身份验证，有许多[身份验证库]((https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries))可供选择。
+若要调用 Microsoft Graph，应用必须包含从 Microsoft 云标识服务 Azure Active Directory (Azure AD) 获取的有效访问令牌，且每次调用 Microsoft Graph REST API 时，必须在 HTTP 头中传递令牌。 Graph 采用的身份验证方法以 OAuth 2.0 和 Open ID Connect 标准为依据。因此，为了在应用中实现身份验证，有许多[身份验证库](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries)可供选择。
 
-下述示例使用 [Flask-OAuthlib]((https://flask-oauthlib.readthedocs.io/en/latest/)) 库来实现 OAuth 2.0 [授权代码授权](https://tools.ietf.org/html/rfc6749#section-4.1)工作流，这是适合使用 Python 编写的 Web 应用的推荐身份验证工作流。 若要了解其他身份验证选项，请参阅 [Microsoft Graph 的 Python 身份验证示例]((https://github.com/microsoftgraph/python-sample-auth))。
+下述示例使用 [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) 库来实现 OAuth 2.0 [授权代码授权](https://tools.ietf.org/html/rfc6749#section-4.1)工作流，这是适合使用 Python 编写的 Web 应用的推荐身份验证工作流。 若要了解其他身份验证选项，请参阅 [Microsoft Graph 的 Python 身份验证示例](https://github.com/microsoftgraph/python-sample-auth)。
 
 ## <a name="installing-and-running-the-send-mail-sample"></a>安装和运行“发送邮件”示例
 
@@ -67,10 +67,10 @@ response = sendmail(client=MSGRAPH,
 
 下面的其他一些 Python 示例展示了如何处理 Microsoft Graph 的各个方面：
 
-* [Microsoft Graph 的 Python 身份验证示例]((https://github.com/microsoftgraph/python-sample-auth))
-* [在 Python 中处理分页 Microsoft Graph 响应]((https://github.com/microsoftgraph/python-sample-pagination))
-* [在 Python 中使用 Graph 开放扩展]((https://github.com/microsoftgraph/python-sample-open-extensions))
+* [Microsoft Graph 的 Python 身份验证示例](https://github.com/microsoftgraph/python-sample-auth)
+* [在 Python 中处理分页 Microsoft Graph 响应](https://github.com/microsoftgraph/python-sample-pagination)
+* [在 Python 中使用 Graph 开放扩展](https://github.com/microsoftgraph/python-sample-open-extensions)
 
 若要查看某个特定示例，请通过[提交问题]((https://github.com/microsoftgraph/python-sample-auth)/issues)告诉我们。 我们非常期待收到大家就希望在 Python 中生成的任何 Microsoft Graph 方案提供的反馈。
 
-Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。 请查看[开发人员文档]((https://developer.microsoft.com/zh-CN/graph/docs/concepts/overview))或 [Graph 浏览器]((https://developer.microsoft.com/zh-CN/graph/graph-explorer))，了解还可以使用 Microsoft Graph 做什么。
+Microsoft Graph API 的功能非常强大，统一了可用于与各种 Microsoft 数据进行交互的 API。 请查看[开发人员文档](https://developer.microsoft.com/zh-CN/graph/docs/concepts/overview)或 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)，了解还可以使用 Microsoft Graph 做什么。

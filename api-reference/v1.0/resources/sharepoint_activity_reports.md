@@ -2,7 +2,7 @@
 
 SharePoint 活动报表可用于获取每个有权使用 SharePoint 的用户的活动，具体是以用户与文件的交互为依据。 也可以查看以共享文件数为依据的协作级别。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 活动]((https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
 
 ## <a name="reports"></a>报表
 

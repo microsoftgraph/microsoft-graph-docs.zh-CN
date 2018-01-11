@@ -2,7 +2,7 @@
 
 组活动报表可用于深入了解组织中的 Office 365 组活动，并了解正在创建和使用多少个 Office 365 组。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组]((https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="reports"></a>报表
 

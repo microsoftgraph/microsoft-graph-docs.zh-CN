@@ -2,7 +2,7 @@
 
 Yammer 活动报表可用于了解组织的 Yammer 交互级别，具体是以整个组织中生成的活动数以及在 Yammer 上发布、赞和阅读消息的唯一用户数为依据。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 活动]((https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 活动](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)。
 
 ## <a name="reports"></a>报表
 

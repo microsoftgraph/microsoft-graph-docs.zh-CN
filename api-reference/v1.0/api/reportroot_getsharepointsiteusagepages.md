@@ -2,7 +2,7 @@
 
 获取跨所有网站浏览的页面数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 网站使用情况]((https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213))。
+> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
 
 ## <a name="permissions"></a>权限
 
