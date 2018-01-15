@@ -8,9 +8,9 @@
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ DELETE /devices/{id}
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -42,7 +42,7 @@ DELETE /devices/{id}
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。
+
 <!-- {
   "blockType": "response",
   "truncated": true
