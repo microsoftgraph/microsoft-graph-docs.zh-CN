@@ -28,7 +28,7 @@
 
 - [Microsoft 帐户](https://www.outlook.com/) 或[工作或学校帐户](http://dev.office.com/devprogram)
 - Visual Studio 2017 
-- [适用于 UWP（库）的 Microsoft Graph 初学者项目]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)，并打开**初学者**文件夹内的解决方案。
+- [适用于 UWP（库）的 Microsoft Graph 初学者项目](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。两个模板均包含可向其中添加代码的空类。它们还包含资源字符串。要获取此项目，请克隆或下载[适用于 UWP（库）的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/uwp-csharp-connect-sample)，并打开**初学者**文件夹内的解决方案。
 
 
 ## <a name="register-the-app"></a>注册应用
