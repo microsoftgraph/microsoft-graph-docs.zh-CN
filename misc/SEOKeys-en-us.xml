@@ -125,7 +125,7 @@
         <Item text="列出任务" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="列出计划, Microsoft Graph API, 用户 API" SEODescription="检索计划对象列表。" />
     </Item>  
   </Item>
-  <Item text="组" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="用户组、Microsoft Graph API、用户 API" SEODescription="组 API">
+  <Item text="组" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="用户组、Microsoft Graph API、用户 API" SEODescription="组 API">
     <Item text="组" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="用户组, Microsoft Graph API, 用户 API" SEODescription="组 API">
       <Item text="添加收藏夹" url="/en-us/api-reference/v1.0/api/group_addfavorite" />
       <Item text="添加成员" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="创建成员、Microsoft Graph API、组 API" SEODescription="使用此 API 新建成员。" />
@@ -900,7 +900,7 @@
         <Item text="列出任务" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="列出计划, Microsoft Graph API, 用户 API" SEODescription="检索计划对象列表。" />
       </Item>
     </Item>
-    <Item text="组" url="/en-us/api-reference/beta/resources/group" SEOKeyword="组 API, M组 API, Microsoft Graph API, 组 APIicrosoft Graph API, 组 API, Microsoft 团队 API, 团队 API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
+    <Item text="组" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="组 API, M组 API, Microsoft Graph API, 组 APIicrosoft Graph API, 组 API, Microsoft 团队 API, 团队 API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
       <Item text="组" url="/en-us/api-reference/beta/resources/group" SEOKeyword="组 API, Microsoft Graph API, 组 API, Microsoft Teams API, 团队 API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
         <Item text="添加收藏夹" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="组：addFavorite、Microsoft Graph API、组 API" SEODescription="" />
         <Item text="添加成员" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="创建成员、Microsoft Graph API、组 API" SEODescription="使用此 API 新建成员。" />
