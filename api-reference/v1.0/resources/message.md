@@ -83,7 +83,7 @@ Prefer: outlook.allow-unsafe-html
 
 撰写邮件时，在大多数情况下，From 和 Sender 属性表示同一个已登录用户，除非其中一个属性已更新，如以下情况中所述：
 
-- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，则可以更改 **from** 属性。通过在 Azure 管理门户选择邮箱所有者的**邮箱权限**，或通过使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet，管理员可以更改此属性。然后，可以通过编程方式将 **from** 属性设置为其中一个拥有邮箱的 **sendAs** 权限的用户。
+- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
 - 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。可以在 Outlook 中委派邮箱所有者。当代理代表邮箱所有者发送邮件时，**sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。可以通过编程方式将 **sender** 属性设置为拥有邮箱代理权限的用户。
 
 ## <a name="relationships"></a>关系

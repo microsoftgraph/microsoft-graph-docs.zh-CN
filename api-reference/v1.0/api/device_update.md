@@ -2,15 +2,16 @@
 
 更新已注册设备的属性。
 
+设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All |
+|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
+|应用 | 不支持 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +26,17 @@ PATCH /devices/{id}
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的 [device](../resources/device.md) 属性的值。
+
+在请求正文中，提供应更新的 [device](../resources/device.md) 属性值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，不应包括尚未更改的现有值。
+
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|accountEnabled|布尔| 如果帐户已启用，则为 **true**；否则，为 **false**。 |
+|operatingSystem|String|设备上的操作系统类型。|
+|operatingSystemVersion|String|设备上的操作系统版本|
+|displayName|String|设备显示名称。|
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 此属性只能通过获准的 MDM 应用进行更新。 |
+|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 此属性只能通过获准的 MDM 应用进行更新。 |
 
 ## <a name="response"></a>响应
 
@@ -33,7 +44,7 @@ PATCH /devices/{id}
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -41,13 +52,14 @@ PATCH /devices/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
+Content-length: 31
 
 {
-  "accountEnabled": true
+  "accountEnabled": false
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

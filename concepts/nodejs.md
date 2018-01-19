@@ -1,13 +1,13 @@
 # <a name="get-started-with-microsoft-graph-in-a-nodejs-app"></a>在 Node.js 应用中开始使用 Microsoft Graph
 
-本文介绍了从 Azure AD v2.0 终结点获取访问令牌和调用 Microsoft Graph 所需的任务。介绍了生成 [适用于 Node.js 的 Microsoft Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample) 的步骤，并说明使用 Microsoft Graph 要实现的主要概念。本文介绍如何使用原始的 REST 调用来访问 Microsoft Graph API。
+本文介绍了通过 Azure AD v2.0 终结点获取访问令牌和调用 Microsoft Graph 所需执行的任务。 它逐步介绍了如何生成 [Microsoft Connect Node.js 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)，并说明了使用 Microsoft Graph 所要实现的主要概念。 本文介绍了如何使用原始 REST 调用来访问 Microsoft Graph API。 若要了解如何生成使用 JavaScript SDK 连接到 Microsoft Graph 的 Node.js 应用，请参阅[基于 Microsoft Graph SDK 的 Node.js Connect 示例](https://github.com/microsoftgraph/nodejs-connect-sample)。
 
-下图显示了将要创建的应用。 
+下图展示了将要创建的应用。 
 
 ![登录后 Web 应用显示“发送邮件”按钮](./images/web-screenshot.png)
 
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行。
+**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/zh-CN/getting-started) 快速准备就绪并开始运行。
 
 若要下载使用 Azure AD 终结点的 Connect 示例版本，请参阅 [适用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth)。
 
@@ -17,10 +17,10 @@
 若要开始，将需要以下各项： 
 
 - 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
-- [带有 npm 的 Node.js](https://nodejs.org/en/download/) 
-- [适用于 Node.js 的 Microsoft Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。你将使用此次演练的示例文件中的 **starter-project** 文件夹。
+- [含 npm 的 Node.js](https://nodejs.org/en/download/) 
+- [Microsoft Connect Node.js 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。 将在本次演练中使用示例文件中的 **starter-project** 文件夹。
 
-## <a name="register-the-application"></a>注册应用程序
+## <a name="register-the-application"></a>注册应用
 在 Microsoft 应用注册门户上注册一个应用。这会生成在 Visual Studio 中配置此应用要使用的应用程序 ID 和密码。
 
 1. 使用个人或工作或学校帐户登录到 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
@@ -201,9 +201,11 @@
 
 ## <a name="next-steps"></a>后续步骤
 - 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
-- 在 GitHub 上了解我们的其他 [Node.js 示例](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults)。
-
+- 探索我们在 GitHub 上的其他 [Node.js 示例](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults)。
+- 使用 [Microsoft Graph TypeScript 类型](https://github.com/microsoftgraph/msgraph-typescript-typings)
+- 尝试 [Microsoft Graph TypeScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 
 ## <a name="see-also"></a>另请参阅
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph JavaScript SDK Node.js Connect 示例](https://github.com/microsoftgraph/nodejs-connect-sample)

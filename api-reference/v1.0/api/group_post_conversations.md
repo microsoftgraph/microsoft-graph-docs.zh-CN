@@ -30,6 +30,8 @@ POST /groups/{id}/conversations
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversation](../resources/conversation.md) 对象。
 
+响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread_list_posts.md)操作，从而获取新帖子。
+
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -38,31 +40,37 @@ POST /groups/{id}/conversations
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations
+POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
 Content-type: application/json
 
 {
-  "topic": "New Conversation Topic",
-  "threads": [{
-    "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      },
-      "newParticipants": [{
-        "emailAddress": {
-          "name": "Alex Darrow",
-          "address": "alexd@contoso.com"
+    "topic":"New locations for this quarter",
+    "threads":[
+        {
+            "posts":[
+                {
+                    "body":{
+                        "contentType":"html",
+                        "content":"What do we know so far?"
+                    },
+                    "newParticipants":[
+                        {
+                            "emailAddress":{
+                                "name":"Adele Vance",
+                                "address":"AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      }]
-    }]
-  }]
+    ]
 }
 ```
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -72,17 +80,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id":"AAQkADDVKtMlRp4Txc6k=",
+    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+    "threads":[
+        {
+            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+        }
+    ]
 }
 ```
 

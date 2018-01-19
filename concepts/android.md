@@ -2,7 +2,7 @@
 
 > **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
-> 若要在**所有企业方案**中支持**所有企业客户**，必须使用 Azure AD 终结点并使用 [Azure 管理门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅 [在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
+> 若要跨**所有企业方案**支持**全部企业客户**，必须使用 Azure AD 终结点，并使用 [Azure 门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅[在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
 本文介绍了从 Azure AD v2.0 终结点获取访问令牌和调用 Microsoft Graph 所需的任务。介绍了生成 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)的步骤，并说明实现在面向 Android 的应用中使用 Microsoft Graph 的主要概念。本文还介绍如何通过使用[用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 或原始 REST 调用来访问 Microsoft Graph。
 
@@ -44,7 +44,7 @@
 
 1. 使用个人帐户/工作或学校帐户，登录 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
 
-2. 选择“添加应用”****。
+2. 选择“**添加应用**”。
 
     > **提示：**如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”****复选框，再选择“创建”****按钮。
 
@@ -74,7 +74,7 @@
 
     b. 选择“添加平台”****和“原生应用”****。
 
-      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
+      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
       
       c. 添加委托权限。 需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
 
@@ -122,7 +122,7 @@
 
 <br/>
 
-2. 在“ConnectActivity”****类中，查找“mConnectButton”****的单击事件的事件处理程序。查找“onClick”****方法，并评审相关代码。
+2. 在 **ConnectActivity** 类中，找到 **mConnectButton** 的 click 事件的事件处理程序。查找 **onClick** 方法并审查相关代码。
   
     **connect** 方法支持记录个人身份信息 (PII)，获取示例帮助程序类 **AuthenticationManager** 的实例，并获取 MSAL 平台对象用户集合。 如果没有用户，则会对新用户执行 Azure AD 身份验证和授权流。 否则，以静默方式获取身份验证令牌。
 
@@ -498,7 +498,7 @@
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>使用 Microsoft Graph REST API 调用 Microsoft Graph
 
-[Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
+[Microsoft Graph REST API](http://developer.microsoft.com/zh-CN/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
 
 1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
     
@@ -598,6 +598,6 @@
 ## <a name="see-also"></a>另请参阅
 
 - [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_v2_service)

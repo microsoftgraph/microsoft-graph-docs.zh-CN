@@ -1,13 +1,16 @@
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
-检索已注册为设备所有者的用户的列表。
+检索身份为已注册设备的所有者的用户列表。 已注册的所有者是云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-- Device.ReadWrite.All and User.ReadBasic.All
-- Directory.Read.All
-- Directory.ReadWrite.All 
-- Directory.AccessAsUser.All
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用 | Device.ReadWrite.All 和 User.ReadBasic.All 或 Directory.Read.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +18,7 @@
 GET /devices/{id}/registeredOwners
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

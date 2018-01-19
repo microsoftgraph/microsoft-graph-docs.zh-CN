@@ -6,7 +6,7 @@
 
 ![Microsoft 帐户的登录页](images/MicrosoftSignIn.png)
 
-**不想生成一个应用吗？**通过下载本文所基于的[适用于 PHP 的 Connect 示例 (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) 快速准备就绪并开始运行。或尝试使用[适用于 PHP 的 Connect 示例 (SDK) ](https://github.com/microsoftgraph/php-connect-sample)版本，该版本使用[适用于 PHP 的 Microsoft Graph 库](https://github.com/microsoftgraph/msgraph-sdk-php)（预览）。
+**不想生成应用吗？** 请下载本文所依据的 [Connect PHP 示例 (REST)](https://github.com/microsoftgraph/php-connect-rest-sample)，快速开始生成应用。 也可以尝试使用 [Connect PHP 示例 (SDK)](https://github.com/microsoftgraph/php-connect-sample) 版本，此版本使用[适用于 PHP 的 Microsoft Graph 库](https://github.com/microsoftgraph/msgraph-sdk-php)。
 
 
 ## <a name="prerequisites"></a>先决条件
@@ -177,5 +177,5 @@ if($response.getStatusCode() === 201) {
 
 
 ## <a name="see-also"></a>另请参阅
-* [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+* [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)
