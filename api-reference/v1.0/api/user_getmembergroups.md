@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read 和 Group.Read.All、User.ReadBasic.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.ReadBasic.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
