@@ -1,6 +1,8 @@
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
-用户邮箱中的 mailFolder，例如收件箱、草稿箱和已发送邮件。MailFolders 可包含邮件和子 mailFolder。
+用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
+
+Outlook 默认情况下会为用户创建某些文件夹。 为方便起见，可以在访问 **mailFolder** 集合中的这些文件夹时使用以下已知的文件夹名称：`ArchiveRoot`、`ConversationHistory`、`DeletedItems`、`Drafts`、`Inbox`、`JunkEmail`、`Outbox` 和 `SentItems` 来替代使用相应的文件夹 **ID** 值。
 
 该资源支持通过提供 [delta](../api/mailfolder_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
@@ -47,8 +49,8 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |邮件|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

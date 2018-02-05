@@ -3,6 +3,13 @@
 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
+## <a name="january-2018"></a>2018 年 1 月
+
+### <a name="education-apis"></a>教育版 API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|Beta|添加了其他导航属性并改进对[名单 API](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/education-overview) 的筛选支持。|
 
 ## <a name="december-2017"></a>2017 年 12 月
 
@@ -621,8 +628,7 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 更改          | Beta        | 应用程序 API 更新。这是第一组更改，其中包括[应用程序](https://graph.microsoft.io/zh-CN/docs/api-reference/beta/resources/application)实体的属性重命名和重构。<br/>
-  **新实体：**[api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api])、[informationalUrl](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/informationalUrl)、[installedClient](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/installedclient)、[permissionScope](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/permissionscope)、[preauthorizedApplication](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/preauthorizedapplication)、[Web](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/web)。<br/>**删除的属性：**addIns、appRoles、availableToOtherOrganizations、knownClientApplications、oauth2AllowUrlPathMatching、recordConsentConditions。<br/>**重命名的属性：**appId 重命名为 id，identifierUris 重命名为 applicationAliases，availableToOtherTenants 重命名为 orgRestrictions，mainLogo 重命名为 logo，oauth2Permissions 重命名为 publishedPermissionsScopes，publicClient 重命名为 allowPublicClient，replyUrls 重命名为 redirectUrls。<br/>**新属性：**tags。 |
+| 更改          | Beta        | 应用程序 API 更新。这是第一组更改，其中包括[应用程序](https://graph.microsoft.io/zh-CN/docs/api-reference/beta/resources/application)实体的属性重命名和重构。<br/>**新实体：**[api](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/api])、[informationalUrl](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/informationalUrl)、[installedClient](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/installedclient)、[permissionScope](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/permissionscope)、[preauthorizedApplication](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/preauthorizedapplication)、[Web](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/web)。<br/>**删除的属性：**addIns、appRoles、availableToOtherOrganizations、knownClientApplications、oauth2AllowUrlPathMatching、recordConsentConditions。<br/>**重命名的属性：**appId 重命名为 id，identifierUris 重命名为 applicationAliases，availableToOtherTenants 重命名为 orgRestrictions，mainLogo 重命名为 logo，oauth2Permissions 重命名为 publishedPermissionsScopes，publicClient 重命名为 allowPublicClient，replyUrls 重命名为 redirectUrls。<br/>**新属性：**tags。 |
 
 ### <a name="remove-deprecated-planner-api"></a>删除已弃用的 Planner API
 | **更改类型** | **版本** | **说明**                          |
@@ -725,7 +731,7 @@
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0          | 新资源 [schemaExtension](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/schemaextension) 和用于管理以下资源的扩展定义的 CRUD 方法：[contact](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact)、[device](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/device)、[event](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event)、[group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/group)、[message](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)、[organization](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/organization)、[post](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/post)、[user](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)。请注意，对 [administrativeUnit](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/administrativeunit) 的支持仍和以前一样仅限于测试版本。 |
 | 添加项        | v1.0          | 下列资源中的现有 POST、GET 和 PATCH方法 - [contact](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact)、[device](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/device)、[event](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event)、[group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/group)、[message](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message)、[organization](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/organization)、[post](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/post)、[user](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user) - 现在支持添加、获取、更新或删除作为架构扩展存储在相应资源实例中的自定义数据。 |
-| 添加项        | v1.0 和 beta | 现在，你可以使用 `$filter` 来查找具有与特定扩展属性值相匹配的属性的资源实例，如扩展名。有关详细信息，请参阅此[示例](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data)。 |
+| 添加项        | v1.0 和 beta | 现在，你可以使用 `$filter` 来查找具有与特定扩展属性值相匹配的属性的资源实例，如扩展名。有关详细信息，请参阅此[示例](https://devx.microsoft-tst.com/zh-CN/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data)。 |
 | 更改          | v1.0 和 beta | [删除架构扩展定义](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/schemaextension_delete)不再会影响访问基于此定义添加的自定义数据。 |
 | 更改          | v1.0 和 beta | 现在可以将架构扩展复杂类型设为 null，以便将架构扩展从资源实例中删除。 |
 
@@ -1045,15 +1051,15 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 使用[架构扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_schema_groups) |
-| 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)。 |
+| 添加项        | Beta        | 使用[架构扩展](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_overview#schema-extensions-preview)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_schema_groups) |
+| 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_overview#schema-extensions-preview)。 |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>使用开放扩展将自定义数据添加到 Microsoft Graph。
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 将前述“Office 365 数据扩展”重命名为“开放扩展”。 |
-| 添加项        | Beta          | 已添加支持[开放扩展](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions)的资源： <br/>管理单元<br/>设备<br/>组<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_open_users) |
+| 添加项        | Beta          | 已添加支持[开放扩展](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_overview#open-extensions)的资源： <br/>管理单元<br/>设备<br/>组<br/>组织<br/>用户<br/>请参阅以下示例：<br/>[使用开放扩展向用户添加自定义数据（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>目录 API
 
@@ -1186,8 +1192,8 @@
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | v2.0 授权终结点现在支持 client_credentials OAuth 授权哪些添加项可以用于[业务方案中的守护程序和长时间运行的进程](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols-oauth-client-creds/)。 |
-| 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持[需要征得管理员同意的权限范围](http://developer.microsoft.com/zh-CN/graph/docs/concepts/permissions_reference)。 |
-| 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持对租户中的所有用户授予管理员同意。 |
+| 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持[需要征得管理员同意的权限范围](http://developer.microsoft.com/zh-CN/graph/docs/concepts/permissions_reference)。 |
+| 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)支持对租户中的所有用户授予管理员同意。 |
 
 ### <a name="invitation-apis"></a>邀请 API
 

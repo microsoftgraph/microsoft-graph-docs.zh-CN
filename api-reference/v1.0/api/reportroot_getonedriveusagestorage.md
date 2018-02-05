@@ -24,7 +24,7 @@ GET /reports/getOneDriveUsageStorage(period='{period_value}')
 
 ## <a name="request-parameters"></a>请求参数
 
-在请求 URL 中，提供以下查询参数的有效值。
+在请求 URL 中，提供以下参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |

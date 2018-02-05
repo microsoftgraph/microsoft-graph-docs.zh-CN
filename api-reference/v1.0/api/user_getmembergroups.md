@@ -5,11 +5,13 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
+>**注意：**此 API 当前需要 Directory.Read.All 权限或更高权限。 将 User.Read 或 User.ReadBasic.All 权限与 Group.Read.All 权限结合使用将返回错误。 这是一个已知 bug。
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read 和 Group.Read.All、User.ReadBasic.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | *User.Read 和 Group.Read.All*、*User.ReadBasic.All 和 Group.Read.All*、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | *Group.Read.All*、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

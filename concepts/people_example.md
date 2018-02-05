@@ -1,7 +1,7 @@
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。People API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议时。例如，可以在撰写电子邮件的应用场景中使用 People API。
  
-## <a name="authorization"></a>授权
+## <a name="authorization"></a>Authorization
 若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限： 
 
 * People.Read - 用于进行常规的 People API 调用，例如 https://graph.microsoft.com/v1.0/me/people/。People.Read 需要获得最终用户的同意。
@@ -659,7 +659,7 @@ Content-type: application/json
 ### <a name="use-search-to-select-people"></a>使用搜索选择人员 
 使用 *$search* 参数选择符合某组特定条件的人员。 
 
-以下搜索查询可返回与 `/me` 相关且其 **displayName** 包含以字母“j”开头的单词的人员。
+以下搜索查询可返回与 `/me` 相关且其 **displayName** 或 *emailAddress" 包含以字母“j”开头的单词的人员。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
@@ -772,58 +772,40 @@ Content-type: application/json
 }
 ```
 ### <a name="perform-a-fuzzy-search"></a>执行模糊搜索 
-以下请求搜索名为“Irene McGowen”的人员。由于一个名为“Irene McGowan”的人员与登录用户相关，因此返回了“Irene McGowan”的信息。
+
+搜索实现模糊匹配算法。 它们根据完全匹配以及搜索意图推断返回结果。 例如，假设用户显示名称为“Tyler Lee”，电子邮件地址为 tylerle@example.com，用户位于登录用户的 **people** 集合中。 所有以下搜索都将返回此用户 Tyler 作为结果之一。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-以下示例显示了相应的响应。 
+你也可以为这些人员执行搜索：他们与已登录用户相关并已表示有兴趣与该用户就以下示例中的披萨等话题进行交流。
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
 ```
+
+此上下文中的主题只是用户在电子邮件对话中使用最多的词。 Microsoft 提取这些词并为该数据创建索引，便于进行模糊搜索。 
+
+请注意，搜索短语用引号括起来，且该数据中的主题是从其上下文随机提取的。 例如，在以下查询中搜索“Windows”：
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+是主题数据索引中的模糊搜索，结果可以包含表示 Windows 操作系统的实例、构建墙壁的开始或其他定义。
+
+最后，可以通过组合两种类型的搜索表达式，在同一请求中合并人员搜索和主题搜索。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+此请求主要进行两次搜索：对登录用户的相关人员的 **displayName** 和 **emailAddress** 属性进行模糊搜索，以及对用户的相关人员进行“pizza”主题搜索。 然后，对结果进行排名、排序并返回。 请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
+
 ### <a name="search-other-users-relevant-people"></a>搜索其他用户的相关人员
 以下请求获取与登录用户组织中的其他人员相关度最高的人员。此请求需要具有 People.Read.All 权限。在本示例中显示了 Roscoe Seidel 的相关人员。
 

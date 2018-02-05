@@ -15,6 +15,7 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
 ## <a name="common-use-cases"></a>常见用例 
 
@@ -43,8 +44,8 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 邮件 API 可以为你开辟与用户互动的新途径： 
 
 - 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的 [方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
-- 请尝试 [Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中的 API。
+- 请尝试 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的 API。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners)。
+需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/zh-CN/graph/graph/examples#partners)。
 
 

@@ -18,7 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-将查询 URL 中的父文件夹指定为文件夹 ID，或者 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems` 的已知文件夹名称。
+将查询 URL 中的父文件夹指定为文件夹 ID，或*收件箱*、*草稿箱*、*已发送邮件*或*已删除邮件*等已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

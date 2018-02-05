@@ -228,31 +228,62 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 
 可以使用 Microsoft Graph People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。People API 支持 `$search` 查询参数。
 
-人员搜索就是按 [person](../api-reference/v1.0/resources/person.md) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。 搜索实现模糊匹配算法。 它们根据完全匹配以及搜索意图推断返回结果。 例如，假设用户显示名称为“Tyler Lee”，电子邮件地址为 tylerle@example.com，用户位于登录用户的 **people** 集合中。 所有以下搜索将返回包含 Tyler 的结果。
+人员搜索就是按 [person](../api-reference/v1.0/resources/person.md) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。
+
+以下请求在已登录用户的**人员**集合中的每个人员的 **displayName** 和 **emailAddress** 属性中，为名为“Irene McGowen”的人员执行搜索。 由于一个名为“Irene McGowan”的人员与登录用户相关，因此返回了“Irene McGowan”的信息。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-还可以搜索对特定主题感兴趣的人员。基于从用户的邮件对话派生的推断来执行搜索。例如，以下搜索将返回与登录用户相关的人员集合，在与该用户进行通信时，他表现出了对披萨的兴趣。请注意，搜索短语用引号括起来。
+以下示例显示了相应的响应。 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-最后，可以通过组合两种类型的搜索表达式，在同一请求中合并人员搜索和主题搜索。
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-此请求主要进行两次搜索：对登录用户的相关人员的 **displayName** 和 **emailAddress** 属性进行模糊搜索，以及对用户的相关人员进行“pizza”主题搜索。 然后，对结果进行排名、排序并返回。 请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
-
-若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md)。  
+若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people_example.md#search-people)。  
 
 ## <a name="select-parameter"></a>select 参数
 

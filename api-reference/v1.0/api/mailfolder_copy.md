@@ -28,7 +28,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|destinationId|String|文件夹 ID，或*收件箱*、*草稿箱*、*已发送邮件*或*已删除邮件*的已知文件夹名称。|
+|destinationId|String|文件夹 ID，或*收件箱*、*草稿箱*、*已发送邮件*或*已删除邮件*等已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 
 ## <a name="response"></a>响应
 
