@@ -26,12 +26,12 @@
 
 |操作|URL|
 |:--------|:--|
-|获取我的笔记本|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|获取我的分区|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|获取我的页面|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|获取我的笔记本|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|获取我的分区|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|获取我的页面|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/zh-CN/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## <a name="explore-the-onenote-apis"></a>浏览 OneNote API
-使用 [Microsoft Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)在你自己的 OneNote 笔记本中试用 OneNote API。
+使用 [Microsoft Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)在你自己的 OneNote 笔记本中试用 OneNote API。
 
 若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”****。 使用菜单将 OneNote 切换至“打开”****。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”****。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions_reference.md#notes-permissions)。
 
@@ -39,10 +39,10 @@
 
 ## <a name="see-also"></a>另请参阅
 
-* [品牌准则](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
-* [获取 OneNote 内容和结构](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-* [添加图像、视频和文件](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [创建绝对定位的元素](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
-* [提取数据](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
-* [使用笔记标记](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [品牌准则](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-branding)
+* [获取 OneNote 内容和结构](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-get-content)
+* [添加图像、视频和文件](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-images-files)
+* [创建绝对定位的元素](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-abs-pos)
+* [提取数据](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-extract-data)
+* [使用笔记标记](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-note-tags)
 
