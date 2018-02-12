@@ -261,7 +261,7 @@ Microsoft Graph 当前不支持单个请求的事务处理。将忽略单个请�
 
 ### <a name="limit-on-batch-size"></a>限制批处理大小
 
-JSON 批处理请求目前被限定为 5 个单独请求。当 JSON 批处理成熟时，将引发此限制。
+JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="simplified-dependencies"></a>简化的依赖项
 

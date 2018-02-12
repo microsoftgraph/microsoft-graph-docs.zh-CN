@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>使用 JSON 批处理将多个请求合并为一个 HTTP 调用（预览）
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理将多个请求合并为一个 HTTP 调用
 
 JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：
 
@@ -13,7 +13,7 @@ JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对
 首先，为之前的示例构建 JSON 批处理请求。在这种情况下，单个请求不会以任何方式互相依赖，因此可以按任意顺序放入批处理请求中。
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },

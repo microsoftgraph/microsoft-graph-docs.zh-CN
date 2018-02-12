@@ -7,11 +7,11 @@
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Directory.Read.All    | 
-|委派（个人 Microsoft 帐户） | 不支持。    | 
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.Read.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ GET /domains/{id}
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

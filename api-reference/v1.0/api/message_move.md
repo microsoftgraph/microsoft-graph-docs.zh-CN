@@ -30,7 +30,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|DestinationId|String|目标文件夹 ID，或*收件箱*、*草稿箱*、*已发送邮件*或*已删除邮件*等已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
+|destinationId|String|目标文件夹 ID，或者 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems` 已知文件夹的名称。|
+
 
 ## <a name="response"></a>响应
 
@@ -50,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

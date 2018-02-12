@@ -39,7 +39,7 @@ GET /domains
   "name": "get_domains"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains
+GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
