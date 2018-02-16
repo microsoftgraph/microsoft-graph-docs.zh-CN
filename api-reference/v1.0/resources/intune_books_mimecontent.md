@@ -7,7 +7,7 @@
 |属性|类型|说明|
 |:---|:---|:---|
 |类型|String|指示内容 MIME 类型。|
-|value|Binary|包含实际内容的字节数组。|
+|值|Binary|包含实际内容的字节数组。|
 
 ## <a name="relationships"></a>关系
 无

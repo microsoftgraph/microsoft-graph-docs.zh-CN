@@ -7,7 +7,7 @@
 |属性|类型|说明|
 |:---|:---|:---|
 |名称|String|此键值对的名称|
-|value|String|此键值对的值|
+|值|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
 无

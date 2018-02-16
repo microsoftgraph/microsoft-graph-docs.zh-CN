@@ -1,13 +1,15 @@
-# <a name="mimecontent-resource-type"></a>mimeContent 资源类型
+# <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-包含通用 MIME 内容的属性。
+iOS 应用的标识符。
+
+继承自 [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
+
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|类型|String|指示内容 MIME 类型。|
-|值|Binary|包含实际内容的字节数组。|
+|bundleId|String|应用的标识符，如应用商店中指定。|
 
 ## <a name="relationships"></a>关系
 无
@@ -16,14 +18,13 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.iosMobileAppIdentifier",
+  "bundleId": "String"
 }
 ```
 
