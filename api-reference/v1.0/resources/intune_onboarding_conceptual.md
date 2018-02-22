@@ -1,0 +1,45 @@
+# <a name="enroll-devices-for-management-in-intune"></a><span data-ttu-id="374ed-101">在 Intune 中注册设备以进行管理</span><span class="sxs-lookup"><span data-stu-id="374ed-101">Enroll devices for management in InTune</span></span>
+
+> <span data-ttu-id="374ed-102">**注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="374ed-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
+
+<span data-ttu-id="374ed-103">你可以通过 Microsoft Intune 注册设备（包括 Windows 电脑）以启用移动设备管理 (MDM)。</span><span class="sxs-lookup"><span data-stu-id="374ed-103">You can enroll devices, including Windows PCs, to enable mobile device management (MDM) with Microsoft Intune.</span></span> <span data-ttu-id="374ed-104">本主题介绍在 Intune 管理中注册移动设备的不同方法。</span><span class="sxs-lookup"><span data-stu-id="374ed-104">This topic describes different ways to enroll mobile devices in Intune management.</span></span> <span data-ttu-id="374ed-105">注册设备的方法取决于需要的设备类型、所有权和管理级别。</span><span class="sxs-lookup"><span data-stu-id="374ed-105">The way you enroll your devices depends on the device type, ownership, and the level of management that's needed.</span></span> <span data-ttu-id="374ed-106">“自带设备”(BYOD) 注册可让用户注册其个人手机、平板电脑或电脑。</span><span class="sxs-lookup"><span data-stu-id="374ed-106">"Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs.</span></span> <span data-ttu-id="374ed-107">企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。</span><span class="sxs-lookup"><span data-stu-id="374ed-107">Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.</span></span>
+
+<span data-ttu-id="374ed-108">以下 Graph 资源可用于在 Intune 中管理注册：</span><span class="sxs-lookup"><span data-stu-id="374ed-108">The following Graph resources are available to manage enrollment in Intune:</span></span>
+
+- [<span data-ttu-id="374ed-109">Apple 推送通知证书</span><span class="sxs-lookup"><span data-stu-id="374ed-109">Apple push notification certificate</span></span>](intune_devices_applepushnotificationcertificate.md)
+- [<span data-ttu-id="374ed-110">审核主角</span><span class="sxs-lookup"><span data-stu-id="374ed-110">Audit actor</span></span>](intune_auditing_auditactor.md)
+- [<span data-ttu-id="374ed-111">审核事件</span><span class="sxs-lookup"><span data-stu-id="374ed-111">Audit event</span></span>](intune_auditing_auditevent.md)
+- [<span data-ttu-id="374ed-112">审核属性</span><span class="sxs-lookup"><span data-stu-id="374ed-112">Audit property</span></span>](intune_auditing_auditproperty.md)
+- [<span data-ttu-id="374ed-113">审核资源</span><span class="sxs-lookup"><span data-stu-id="374ed-113">Audit resource</span></span>](intune_auditing_auditresource.md)
+- [<span data-ttu-id="374ed-114">配置管理器客户端已启用的功能</span><span class="sxs-lookup"><span data-stu-id="374ed-114">Configuration manager client enabled features</span></span>](intune_devices_configurationmanagerclientenabledfeatures.md)
+- [<span data-ttu-id="374ed-115">从共享 Apple 设备删除用户操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-115">Delete user from shared Apple device action result</span></span>](intune_devices_deleteuserfromsharedappledeviceactionresult.md)
+- [<span data-ttu-id="374ed-116">检测到的应用</span><span class="sxs-lookup"><span data-stu-id="374ed-116">Detected app</span></span>](intune_devices_detectedapp.md)
+- [<span data-ttu-id="374ed-117">设备操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-117">Device action result</span></span>](intune_devices_deviceactionresult.md)
+- [<span data-ttu-id="374ed-118">设备类别</span><span class="sxs-lookup"><span data-stu-id="374ed-118">Device category</span></span>](intune_devices_devicecategory.md)
+- [<span data-ttu-id="374ed-119">设备 Exchange 访问状态摘要</span><span class="sxs-lookup"><span data-stu-id="374ed-119">Device exchange access state summary</span></span>](intune_devices_deviceexchangeaccessstatesummary.md)
+- [<span data-ttu-id="374ed-120">设备地理位置</span><span class="sxs-lookup"><span data-stu-id="374ed-120">Device geolocation</span></span>](intune_devices_devicegeolocation.md)
+- [<span data-ttu-id="374ed-121">设备运行状况证明状态</span><span class="sxs-lookup"><span data-stu-id="374ed-121">Device health attestation state</span></span>](intune_devices_devicehealthattestationstate.md)
+- [<span data-ttu-id="374ed-122">设备管理疑难解答事件</span><span class="sxs-lookup"><span data-stu-id="374ed-122">Device management troubleshooting event</span></span>](intune_troubleshooting_devicemanagementtroubleshootingevent.md)
+- [<span data-ttu-id="374ed-123">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-123">Device management</span></span>](intune_devices_devicemanagement.md)
+- [<span data-ttu-id="374ed-124">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-124">Device management</span></span>](intune_endpointprotection_devicemanagement.md)
+- [<span data-ttu-id="374ed-125">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-125">Device management</span></span>](intune_notification_devicemanagement.md)
+- [<span data-ttu-id="374ed-126">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-126">Device management</span></span>](intune_remoteassistance_devicemanagement.md)
+- [<span data-ttu-id="374ed-127">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-127">Device management</span></span>](intune_troubleshooting_devicemanagement.md)
+- [<span data-ttu-id="374ed-128">设备管理</span><span class="sxs-lookup"><span data-stu-id="374ed-128">Device management</span></span>](intune_auditing_devicemanagement.md)
+- [<span data-ttu-id="374ed-129">设备操作系统摘要</span><span class="sxs-lookup"><span data-stu-id="374ed-129">Device operating system summary</span></span>](intune_devices_deviceoperatingsystemsummary.md)
+- [<span data-ttu-id="374ed-130">注册疑难解答事件</span><span class="sxs-lookup"><span data-stu-id="374ed-130">Enrollment troubleshooting event</span></span>](intune_troubleshooting_enrollmenttroubleshootingevent.md)
+- [<span data-ttu-id="374ed-131">已本地化的通知邮件</span><span class="sxs-lookup"><span data-stu-id="374ed-131">Localized notification message</span></span>](intune_notification_localizednotificationmessage.md)
+- [<span data-ttu-id="374ed-132">查找设备操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-132">Locate device action result</span></span>](intune_devices_locatedeviceactionresult.md)
+- [<span data-ttu-id="374ed-133">托管设备概述</span><span class="sxs-lookup"><span data-stu-id="374ed-133">Managed device overview</span></span>](intune_devices_manageddeviceoverview.md)
+- [<span data-ttu-id="374ed-134">托管设备</span><span class="sxs-lookup"><span data-stu-id="374ed-134">Managed device</span></span>](intune_devices_manageddevice.md)
+- [<span data-ttu-id="374ed-135">通知邮件模板</span><span class="sxs-lookup"><span data-stu-id="374ed-135">Notification message template</span></span>](intune_notification_notificationmessagetemplate.md)
+- [<span data-ttu-id="374ed-136">远程协助合作伙伴</span><span class="sxs-lookup"><span data-stu-id="374ed-136">Remote assistance partner</span></span>](intune_remoteassistance_remoteassistancepartner.md)
+- [<span data-ttu-id="374ed-137">远程锁定操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-137">Remote lock action result</span></span>](intune_devices_remotelockactionresult.md)
+- [<span data-ttu-id="374ed-138">重置密码操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-138">Reset passcode action result</span></span>](intune_devices_resetpasscodeactionresult.md)
+- [<span data-ttu-id="374ed-139">更新 Windows 设备帐户操作参数</span><span class="sxs-lookup"><span data-stu-id="374ed-139">Update windows device account action parameter</span></span>](intune_devices_updatewindowsdeviceaccountactionparameter.md)
+- [<span data-ttu-id="374ed-140">用户</span><span class="sxs-lookup"><span data-stu-id="374ed-140">User</span></span>](intune_devices_user.md)
+- [<span data-ttu-id="374ed-141">用户</span><span class="sxs-lookup"><span data-stu-id="374ed-141">User</span></span>](intune_troubleshooting_user.md)
+- [<span data-ttu-id="374ed-142">Windows Defender 扫描操作结果</span><span class="sxs-lookup"><span data-stu-id="374ed-142">Windows defender scan action result</span></span>](intune_devices_windowsdefenderscanactionresult.md)
+- [<span data-ttu-id="374ed-143">Windows 设备帐户</span><span class="sxs-lookup"><span data-stu-id="374ed-143">Windows device account</span></span>](intune_devices_windowsdeviceaccount.md)
+- [<span data-ttu-id="374ed-144">Windows 设备 AD 帐户</span><span class="sxs-lookup"><span data-stu-id="374ed-144">Windows device AD account</span></span>](intune_devices_windowsdeviceadaccount.md)
+- [<span data-ttu-id="374ed-145">Windows 设备 Azure AD 帐户</span><span class="sxs-lookup"><span data-stu-id="374ed-145">Windows device Azure AD account</span></span>](intune_devices_windowsdeviceazureadaccount.md)
