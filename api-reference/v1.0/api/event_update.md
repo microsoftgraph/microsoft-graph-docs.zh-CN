@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|与事件相关联的邮件正文。|
 |categories|String|与事件相关联的类别。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
-|重要性|String|事件的重要性：低 = 0、普通 = 1、高 = 2。可能的值是：`Low`、`Normal`、`High`。|
+|重要性|String|事件的重要性。 可取值为：`Low`、`Normal`、`High`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |位置|[位置](../resources/location.md)|事件的位置。|

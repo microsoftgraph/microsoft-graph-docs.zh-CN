@@ -49,7 +49,7 @@
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。|
 |id|String| 只读。|
-|importance|String|事件的重要性：低 = 0、普通 = 1、高 = 2。可能的值是：`Low`、`Normal`、`High`。|
+|importance|String|事件的重要性。 可取值为：`Low`、`Normal`、`High`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
