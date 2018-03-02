@@ -35,7 +35,8 @@ GET /groups/delta
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 - 对于组，Delta 查询支持 `$select`、`$top` 和 `$expand`。 
-- 提供对 `$orderby` 的有限支持：唯一支持的 `$orderby` 表达式是 `$orderby=receivedDateTime+desc`。如果不包含 `$orderby` 表达式，则不能保证返回顺序。 
+- 提供对 `$filter` 和 `$orderby` 的有限支持：
+  * 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`。 筛选对象不能超出 50 个。
 - 不支持 `$search`。
 
 ## <a name="request-headers"></a>请求标头
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

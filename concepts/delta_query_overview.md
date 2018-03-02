@@ -36,7 +36,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 -   如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
 -   不支持 `$expand`。
 
-对于用户和组 beta（预览）API，作用域筛选器允许按 objectId 跟踪对一个或多个特定用户或组所做的更改。例如，下面的请求：https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 返回对与在查询筛选器中指定的 id 相匹配的组的更改。 
+对于用户和组 API，作用域筛选器允许按 objectId 跟踪对一个或多个特定用户或组所做的更改。例如，下面的请求：https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 返回对与在查询筛选器中指定的 ID 相匹配的组的更改。 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>delta 查询响应中的资源表示形式
 
@@ -70,7 +70,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 | 驱动器项目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) 资源的 [delta](../api-reference/v1.0/api/driveitem_delta.md) 函数 |
 
 
-> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta)。
+> \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/item_delta)。
 
 ## <a name="prerequisites"></a>先决条件
 

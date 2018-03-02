@@ -6,7 +6,7 @@
 
 | 类型              | 用例 | groupType | 启用邮件 | 启用安全机制 | 是否可通过 API 创建？ |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365 组](#office-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `false` | 是 | [user](user.md) |
+| [Office 365 组](#office-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `false` | 可访问 |
 | [安全组](#security-groups-and-mail-enabled-security-groups) | 控制用户对应用中资源的访问。 | `[]` | `false` | `true` | 是 |
 | [启用邮件的安全组](#security-groups-and-mail-enabled-security-groups) | 使用共享的组邮箱，控制用户对应用中资源的访问。 | `[]` | `true` | `true` | 否 |
 | 通讯组 | 将邮件分发给组中的成员。 建议使用 Office 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |
@@ -58,7 +58,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。 若要了解详细信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/zh-CN/library/bb123521%28v=exchg.160%29.aspx)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/zh-CN/library/bb123521%28v=exchg.160%29.aspx)。
 
 ### <a name="security-group-example"></a>安全组示例
 
