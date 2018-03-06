@@ -1,14 +1,6 @@
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
-学校。 **educationSchool** 资源当前对应于 [administrativeUnit](../../beta/resources/administrativeunit.md) 资源并共享同一 ID。  
-
->**注意：****administrativeUnit** 和 **educationOrganization** 资源目前为 beta 版。 如果你正在使用这些资源，请务必定期查看[更改日志](../../../concepts/changelog.md)。 当 Microsoft Graph API 资源发布到 v1.0 终结点时，将在更改日志中对此进行说明。 如果应用使用 **administrativeUnit** 或 **educationOrganization** 资源，将需要声明基本请求 URL，如下面的代码块所示。  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-此资源是 [educationOrganization](../../beta/resources/educationorganization.md) 的子类型。
+一种表示学校的资源，用于管理所表示学校的课程、教师和学生。  
 
 
 ## <a name="methods"></a>方法
@@ -22,7 +14,6 @@
 |[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| 通过发布到 **users** 导航属性，为学校添加一个新的 **educationUser**。|
 |[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) 集合| 获取 **educationUser** 对象集合。|
 |[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| 通过 **users** 导航属性从学校删除 **educationUser**。|
-|[Get administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| 获取与此 **educationSchool** 对应的 **administrativeUnit**。|
 |[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md) |更新 **educationSchool** 对象。 |
 |[Delete](../api/educationschool_delete.md) | 无 |删除 **educationSchool** 对象。 |
 
