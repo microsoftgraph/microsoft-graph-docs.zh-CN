@@ -13,7 +13,13 @@
 |添加|Beta|向 [plannerUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/plannerUser) 实体添加了 `favoritePlanReferences` 和 `recentPlanReferences` 属性。 |
 |添加|Beta|向 [plannerUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/plannerUser) 实体添加了 `favoritePlans` 和 `recentPlans` 导航属性。 |
 |添加|Beta|向 [plannerPlan](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/plannerPlan) 实体添加了 `contexts` 属性。 |
-|添加|Beta|向 [plannerPlanDetails](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/plannerPlanDetails) 实体添加了 `contextDetails` 属性。 |2018 年 1 月 ## 日
+|添加|Beta|向 [plannerPlanDetails](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/plannerPlanDetails) 实体添加了 `contextDetails` 属性。 |
+
+### <a name="reports-apis"></a>报表 API
+| 更改类型 | 版本 | 说明                              |
+|:------------|:--------|:-----------------------------------------|
+| 添加项    | Beta    | 向 [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md) 实体添加了 **activatedOnSharedComputer** 属性。|
+| 添加项    | Beta    | 向 [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md) 实体添加了 **sharedComputerActivation** 属性。|
 
 ## <a name="january-2018"></a>2018 年 1 月
 
@@ -161,17 +167,20 @@
 |更改|Beta|向 [intuneBrand](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_onboarding_intunebrand) 复杂类型添加了 **showDisplayNameNextToLogo** 属性|
 |更改|Beta|向 [outOfBoxExperienceSettings](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings) 复杂类型添加了 **deviceUsageType** 属性|
 |更改|Beta|向 [vppLicensingType](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype) 复杂类型添加了 **supportsUserLicensing** 和 **supportsDeviceLicensing** 属性|
-|更改|Beta|从 [vppTokenActionResult](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) 复杂类型删除了 **actionMessage** 属性|
-
-## <a name="january-2018"></a>2018 年 1 月
+|更改|Beta|从 [vppTokenActionResult](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) 复杂类型中删除了 **actionMessage** 属性|
 
 ### <a name="reports-apis"></a>报表 API
 | 更改类型 | 版本 | 说明                              |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | 新增了以下 API：<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
-
 ## <a name="december-2017"></a>2017 年 12 月
+
+### <a name="delta-query"></a>Delta 查询
+
+| 更改类型 | 版本 | 说明                              |
+|:------------|:--------|:-----------------------------------------|
+| 更改      | v1.0    | 向 [users](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_delta) 和 [groups](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_delta) 添加可选的查询筛选功能。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -679,7 +688,7 @@
 
 ### <a name="group-settings"></a>组设置
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **版本** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 添加了组设置支持。<br/>新资源类型：[groupSetting](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/groupsetting.md)、[groupSettingTemplate](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md)、[settingValue](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/settingvalue.md) 和 [settingTemplateValue](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
 | 更改          | v1.0        | 将属性 **classification** 和导航属性**settings** 添加到[组](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/group.md) |
@@ -821,7 +830,7 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 向 V1.0 添加 delta 函数支持。添加到以下实体，以执行 [delta 查询](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_overview)：<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>有关示例，请参阅以下文章：<br/>[获取组的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_groups)<br/>[获取文件夹中邮件的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_messages)<br/>[获取用户的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_users) |
+| 添加项        | v1.0        | 向 v1.0 添加 delta 函数支持。 向以下实体添加执行 [delta 查询](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_overview)功能：<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>有关示例，请参阅以下文章：<br/>[获取组的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_groups)<br/>[获取文件夹中邮件的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_messages)<br/>[获取用户的增量更改](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_users) |
 | 更改          | Beta        | 将其他可选查询筛选功能（按 id）添加到 [users](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/user_delta) 和 [groups](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/group_delta)。 |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>添加了对已删除项目的用户资源支持
@@ -849,7 +858,7 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 在 [domains](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domain) 上添加了操作<br/>新实体：</br>[domain](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新操作：</br>[verify](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/api/domain_verify) |
+| 添加项        | v1.0        | 向 [domains](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domain) 添加了操作。<br/>新实体：</br>[domain](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新操作：</br>[verify](https://graph.microsoft.io/zh-CN/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>向 v1.0 添加了合同
 
@@ -1707,7 +1716,7 @@
 
 | **更改类型** | **终结点** | **说明**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| 添加项        | v1.0         | Webhook 现在已在 V1.0 终结点上普遍可用，可通过 /Subscriptions 资源获取。创建、读取、续订和删除订阅以接收有关 Outlook 和 Office 365 组对话中数据的通知。 |
+| 添加项        | v1.0         | Webhook 现已在 v1.0 终结点上正式发布，可通过 _/Subscriptions_ 资源获取。 请创建、读取、续订和删除订阅，以接收 Outlook 和 Office 365 组对话数据的相关通知。 |
 
 ### <a name="user"></a>用户
 
