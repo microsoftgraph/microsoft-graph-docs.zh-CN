@@ -11,7 +11,7 @@
 4. 使用访问令牌调用 Microsoft Graph。
 5. 使用刷新令牌获取新的访问令牌。
 
-## <a name="1-register-your-app"></a>1.注册应用
+## <a name="1-register-your-app"></a>1.注册你的应用程序
 若要使用 Azure v2.0 终结点，必须在 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)注册你的应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。 
 
 以下屏幕截图显示 Web 应用注册示例。![使用密码和隐式授予进行 Web 应用注册。](./images/v2-web-registration.png)
@@ -19,7 +19,7 @@
 若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
 
 - 应用注册门户分配的应用程序 ID。
-- 应用程序密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。 
+- 应用密码，可以是密码，也可以是公钥/私钥对（证书）。对于本机应用，这不是必需的。 
 - 可以让应用接收来自 Azure AD 的响应的重定向 URL。
 
 有关如何使用 Microsoft 应用注册门户配置应用的步骤，请参阅[注册你的应用](./auth_register_app_v2.md)。
@@ -127,9 +127,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | 范围 |此 access_token 适用的空格分隔的 Microsoft Graph 权限列表。 |
 | expires_in |访问令牌的有效期是多久（以秒为单位）。 |
 | access_token |请求的访问令牌。你的应用可以使用此令牌调用 Microsoft Graph。 |
-| refresh_token |OAuth 2.0 刷新令牌。你的应用可以使用此令牌，在当前访问令牌过期后获取其他访问令牌。刷新令牌有效期较长，可用于在长时间内保持对资源的访问。有关详细信息，请参阅 [v2.0 令牌引用](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)。 |
+| refresh_token |OAuth 2.0 刷新令牌。 在当前访问令牌到期后，应用程序可以使用此令牌获取其他访问令牌。  刷新令牌有效期较长，可用于长时间保留对资源的访问权限。  有关详细信息，请参阅 [v2.0 令牌参考](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)。 |
 
-## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4.使用访问令牌调用 Microsoft Graph
+## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. 使用访问令牌调用 Microsoft Graph
 
 一旦拥有访问令牌，可以通过将其包含在请求的 `Authorization` 标头中，用其调用 Microsoft Graph。以下请求可以获取已登录用户的个人资料。
 
@@ -169,7 +169,7 @@ Content-Length: 407
 }
 ```
 
-## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5.使用此刷新令牌获取新的访问令牌
+## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5.使用此刷新令牌获取新的访问令牌。
 
 访问令牌有效期非常短暂，在过期后继续访问资源，必须进行刷新。你可以通过向 `/token` 终结点提交其他 `POST` 请求执行此操作，这时提交的是 `refresh_token` 而非 `code`。
 
@@ -251,5 +251,3 @@ Azure AD 终结点和 Azure AD v2.0 终结点的在使用中存在若干区别�
 - 有关将 Azure AD 与不同类型的应用结合使用的信息，请参阅 [Azure Active Directory 开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**入门**链接。该指南包含概述主题、代码演练和 Azure AD 终结点支持的不同类型的应用的协议文档的链接。
 - 有关 Active Directory 身份验证库 (ADAL) 以及可与 Azure AD 终结点结合使用的服务器中间件的详细信息，请参阅 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。
 
-
- 

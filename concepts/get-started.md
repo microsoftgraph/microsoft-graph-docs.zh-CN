@@ -1,12 +1,21 @@
 # <a name="getting-started-building-microsoft-graph-apps"></a>开始生成 Microsoft Graph 应用
 
-此部分中的文章提供了有关如何跨越各种语言和开发平台生成连接到 Microsoft Graph 的应用的详细指南。每篇文章从相应平台的初学者项目示例开始，引导你添加对用户进行身份验证并创建示例请求以使 Microsoft Graph 从其帐户发送电子邮件的功能。完成后的项目与该平台的 [Microsoft Graph 存储库中的 Connect 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) 一样。
+本节中的各篇文章详细介绍了如何生成应用以跨各种语言和开发平台连接到 Microsoft Graph。 每篇文章都从入门项目入手，并逐步介绍连接到 Microsoft Graph 的基本步骤：
 
-选择涉及所选验证提供程序和开发平台的文章，然后开始连接到 Microsoft Graph。 有关详细信息，请参阅 [v2.0 终结点有何不同之处？](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
+ 1. 注册应用程序
+ 2. 验证用户并在应用程序中获取访问令牌
+ 3. 从应用程序调用 Microsoft Graph
+ 4. 运行应用程序
 
-可以按照涉及所选开发平台的文章中的步骤操作，或者，若要快速创建并运行有效的解决方案，请尝试使用 [快速入门](https://developer.microsoft.com/graph/quick-start) 体验。
+若要更快地生成并运行有效解决方案，请尝试[快速入门](https://developer.microsoft.com/graph/quick-start)体验。
 
-若要探索已完成的连接示例，请访问 GitHub 上的 [Microsoft Graph](https://github.com/microsoftgraph)。下表按验证提供程序和平台列出了示例，并标注了是使用 REST 还是使用 Microsoft Graph 客户端库连接到 Microsoft Graph。
+完成的每个项目都与相应平台的 [Microsoft Graph 存储库中的 Connect 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect)完全相同。
+
+想要查看更多代码？
+
+请浏览 GitHub 中的所有 [Microsoft Graph 示例](https://github.com/microsoftgraph)。 下表列出了本节中示例的其他版本。 它们展示了如何使用两个 ADAL 终结点（v1.0 和 v2.0）验证用户，并使用原始 REST 调用或 Microsoft Graph 客户端库 (SDK) 连接到 Microsoft Graph。
+
+（选择涉及选定验证提供程序和开发平台的文章，再开始连接到 Microsoft Graph。 有关详细信息，请参阅 [v2.0 终结点有何不同之处？](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare)）
 
 
 |平台 |Azure AD 终结点 |Azure AD v2.0 终结点 |
@@ -27,6 +36,6 @@
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Graph 浏览器中试调用示例 REST](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Azure AD 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Azure AD v2.0 终结点文档](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [在 Graph 浏览器中试调用示例 REST](https://developer.microsoft.com/zh-CN/graph/graph-explorer)
+- [Azure AD 终结点文档](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0 终结点文档](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-appmodel-v2-overview)
