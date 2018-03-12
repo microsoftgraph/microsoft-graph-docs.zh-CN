@@ -6,7 +6,7 @@
 ## <a name="properties"></a>属性
 | 属性  | 类型   | 说明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |位置的街道地址。 |
+| address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与地点相关联的电子邮件地址。              |
 
