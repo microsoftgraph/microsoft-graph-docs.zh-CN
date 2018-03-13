@@ -5,7 +5,7 @@
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
->**注意：**此 API 当前需要 Directory.Read.All 权限或更高权限。 将 User.Read 或 User.ReadBasic.All 权限与 Group.Read.All 权限结合使用将返回错误。 这是一个已知 bug。
+>**注意：**此 API 当前需要 Directory.Read.All 权限或更高权限。 单独使用 Group.Read.All 权限或将其与 User 权限结合使用将返回错误。 这是一个已知 bug。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
