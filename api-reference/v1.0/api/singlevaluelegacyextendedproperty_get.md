@@ -1,10 +1,14 @@
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
-通过使用 `$expand` 或 `$filter` 获取包含单值扩展属性的资源实例。
+可以获取使用特定扩展属性扩展的单个资源实例，或包含与筛选器匹配的扩展属性的资源实例集合。
 
-使用查询参数 `$expand` 可以获得使用指示扩展属性扩展的指定实例。这是当前获得 [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) 对象（表示扩展属性）的唯一方式。
+使用查询参数 `$expand`，可以获取使用特定的扩展属性扩展的指定资源实例。 在 **id** 属性上使用 `$filter` 和 `eq` 运算符来指定扩展属性。 这是当前获取 [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) 对象（表示扩展属性）的唯一方式。 
 
-使用查询参数 `$filter`获得指定资源的所有实例，这些实例具有与 **id** 中的筛选器匹配的扩展属性以及 **value** 属性。该筛选器应用于资源在已登录用户的邮箱中的所有实例。
+要获取具有某些扩展属性的资源实例，请使用 `$filter` 查询参数并在 **id** 属性上应用 `eq` 运算符。 另外，对于数字扩展属性，请在 **value** 属性上应用以下某个运算符：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。 对于字符串类型的扩展属性，请在 **value** 上应用 `contains`、`startswith`、`eq` 或 `ne` 运算符。
+
+该筛选器应用于资源在已登录用户的邮箱中的所有实例。 
+
+在扩展属性的 **id** 中筛选字符串名称 (`Name`) 是区分大小写的。 筛选扩展属性的 **value** 属性是区分大小写的。
 
 支持以下用户资源：
 
@@ -33,7 +37,7 @@
 
 ## <a name="http-request"></a>HTTP 请求
 
-#### <a name="get-a-resource-instance-using-expand"></a>使用 `$expand` 获取资源实例
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>获取通过与筛选器匹配的扩展属性扩展的资源实例
 获取通过与 **id** 属性中的筛选器匹配的扩展属性展开的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)。
 
 获取**邮件**实例：
@@ -82,17 +86,18 @@ GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtende
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-获取组**帖子**实例：
+获取组 **post** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-using-filter"></a>使用 `$filter` 获取资源实例
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>获取包括与筛选器匹配的数值扩展属性的资源实例
 
-获取支持的资源实例，其中包含与 **id** 和 **value** 属性筛选器匹配的扩展属性。 请务必对筛选器字符串中的以下字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
+获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。 筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。 请务必对筛选器字符串中的以下字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
 
+以下语法行显示对 id 使用 `eq` 运算符的筛选器，对属性值使用另一个 `eq` 运算符。 可以使用适用于数值的其他运算符中的任何一个（`ne`、`ge`、`gt`、`le` 或 `lt`）替换 **value** 上的 `eq` 运算符。
 
 获取 **message** 实例：
 <!-- { "blockType": "ignored" } -->
@@ -140,21 +145,72 @@ GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProp
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-获取组**帖子**实例：
+获取组 **post** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>获取资源实例，其中包括与筛选器匹配的字符串类型的扩展属性
+
+获取 **message** 或 **event** 资源的实例，其中包括与筛选器匹配的字符串类型的扩展属性。 筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`contains`、`startswith`、`eq` 或 `ne`。 请务必对筛选器字符串中的以下字符应用 [URL 编码](http://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
+
+
+获取 **message** 实例：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+获取 **event** 实例：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+获取组 **event** 实例：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+
 ## <a name="parameters"></a>参数
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 3](#request-3)。 |
+|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -166,11 +222,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 如果成功，此方法返回 `200 OK` 响应代码。
 
-#### <a name="get-resource-instance-using-expand"></a>使用 `$expand` 获取资源实例
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>获取通过匹配的扩展属性扩展的资源实例
 响应正文包括通过匹配的 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象扩展的对象，此对象表示请求的资源实例。
   
-#### <a name="get-resource-instances-using-filter"></a>使用 `$filter` 获取资源实例
-响应正文包含一个或多个表示资源实例的对象，这些实例包含匹配的扩展属性。响应正文不包含扩展属性。
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a>获取包含与筛选器匹配的扩展属性的资源实例
+响应主体包含一个或多个对象，它们表示包含匹配的扩展属性的资源实例。 响应正文不包含扩展属性。
 
 ## <a name="example"></a>示例
 #### <a name="request-1"></a>请求 1
@@ -232,9 +288,9 @@ Content-type: application/json
 
 第二个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。 此筛选器查找如下扩展属性：
 
-- 它的 **id** 与字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）匹配。
+- 它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。
 
-- 它的 **value** 是字符串 `Green`。
+- 它的 **value** 等于字符串 `Green`。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -247,6 +303,26 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 
 #### <a name="request-3"></a>请求 3
+
+第三个示例展示了如何获取具有筛选器中指定的字符串类型单值扩展属性的邮件。 此筛选器查找如下扩展属性：
+
+- 它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。
+
+- 它的 **value** 包含字符串 `green`。 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+```
+
+#### <a name="response-3"></a>响应 3
+
+成功的响应将由 `HTTP 200 OK` 响应代码表示，响应正文包括其扩展属性与筛选器匹配的邮件的所有属性。 例如，如果邮件包含 **id** 等于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` 的单值扩展属性和 **value** `Light green`，则会与筛选器匹配并包含在响应中。
+
+响应正文类似于[获取邮件集合](../api/user_list_messages.md)中的响应。 响应中不包含匹配的扩展属性。
+
+
+#### <a name="request-4"></a>请求 4
 
 接下来的两个示例展示了如何获取具有非字符串类型单值扩展属性的邮件。 为了方便阅读，从中删除了必要的 URL 编码。
 
@@ -275,7 +351,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-3"></a>响应 3
+#### <a name="response-4"></a>响应 4
 
 对于前面两个示例中的任意一个，成功响应由 `HTTP 200 OK` 响应代码表示，响应正文包括扩展属性与相应筛选器匹配的邮件的所有属性。 响应正文类似于[获取邮件集合](../api/user_list_messages.md)中的响应。 响应中不包含匹配的扩展属性。
 
