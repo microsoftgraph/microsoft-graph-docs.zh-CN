@@ -53,7 +53,7 @@
 |schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为 NULL。|
 |assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| 用户的分配列表。 可为 NULL。|
 
->**注意：****educationassignment** 资源是 /beta 版本资源。 如果使用此资源，请务必定期查看[更改日志](../../../concepts/changelog.md)。 当 Microsoft Graph API 资源发布到 /v1.0 终结点时，将在更改日志中说明此发布。 如果应用使用 **educationassignment** 资源，将需要声明基本请求 URL，如下面的代码块所示：  
+>**注意：****educationassignment** 资源是 /beta 版本资源。 如果使用此资源，请务必定期查看[更改日志](../../../concepts/changelog.md)。 当 Microsoft Graph API 资源发布到 /v1.0 终结点时，更改日志中会记录此版本。 如果应用程序使用 **educationassignment** 资源，需要声明基本请求 URL，如下面的代码块所示：  
 ```JavaScript
 var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
 var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization

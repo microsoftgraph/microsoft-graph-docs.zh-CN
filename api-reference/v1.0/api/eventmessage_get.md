@@ -121,7 +121,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-第二个示例展示了如何获取与事件邮件关联的事件。 它使用事件邮件 ID 获取事件邮件，将事件邮件显式转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
+第二个示例展示了如何获取与事件消息关联的事件。 它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"

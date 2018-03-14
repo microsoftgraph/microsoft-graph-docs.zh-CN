@@ -18,7 +18,10 @@
 |[列出组](../api/group_list.md) |[组](group.md) 集合 |列出 group 对象及其属性。|
 |[更新组](../api/group_update.md) | 无 |更新 group 对象的属性。 |
 |[删除组](../api/group_delete.md) | 无 |删除组对象。 |
-|[Add owner](../api/group_post_owners.md) |无| 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。|
+|[增量](../api/group_delta.md)|组集合| 获取组的增量更改。 |
+|[列出 groupLifecyclePolicy](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合| 列出组生命周期策略。 |
+|[续订](../api/group_renew.md)|Boolean|续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。|
+|[添加所有者](../api/group_post_owners.md) |无| 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。|
 |[列出所有者](../api/group_list_owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
 |[删除所有者](../api/group_delete_owners.md) | 无 |通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。|
 |[Add member](../api/group_post_members.md) |无| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。|
@@ -26,8 +29,12 @@
 |[删除成员](../api/group_delete_members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|在一列组中检查此组的成员身份。此函数是可传递的。|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。 |
-|[delta](../api/group_delta.md)|组集合| 获取组的增量更改。 |
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组所属的全部组。此函数可传递。 |
+|[创建设置](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
+|[获取设置](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+|[列出设置](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+|[更新设置](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
+|[删除设置](../api/groupsetting_delete.md) | 无 | 删除设置对象。 |
 |**日历**| | |
 |[创建事件](../api/group_post_events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
 |[获取事件](../api/group_get_event.md) |[event](event.md)|读取 event 对象的属性。|
@@ -77,8 +84,8 @@
 |allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
 |Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。|
-|createdDateTime|DateTimeOffset| 创建组的日期和时间。 |
-|description|String|可选的组说明。 |
+|createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|说明|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection| 指定要创建的组类型。可能的值是 **Unified**（创建 Office 365 组）或 **DynamicMembership**（创建动态组）。对于所有其他类型的组（例如启用安全机制的组和启用电子邮件的安全组）则不设置此属性。支持 $filter。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
@@ -89,7 +96,8 @@
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。支持 $filter。|
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读。支持 $filter。|
-|proxyAddresses|String collection| 需要多值属性筛选器表达式的 **any** 运算符。只读。不可为 null。支持 $filter。 |
+|proxyAddresses|String collection| 对于多值属性筛选表达式，必须使用 **any** 运算符。只读。不可为 null。支持 $filter。 |
+|renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group_renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则该组是已启用邮件的安全组；否则为安全组。对于 Office 365 组，必须为 **false**。支持 $filter。|
 |unseenCount|Int32|当前用户自上次访问后未查看的帖子计数。|
 |visibility|String| 指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
@@ -162,6 +170,7 @@
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
+  "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenCount": 1024,
   "visibility": "string",

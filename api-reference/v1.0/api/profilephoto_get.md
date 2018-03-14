@@ -2,17 +2,25 @@
 
 获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。
 
-GET 操作查找用户邮箱在 Exchange Online 上的指定照片。
+> **注意**：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
-> **注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
+
+可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
+如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
+例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。
+如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，返回的是尺寸“1x1”和剩余元数据。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-*   租户中任意用户的个人资料照片，包括已登录用户 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All
-*   特别是已登录用户的个人资料照片 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All
-* **组**的个人资料照片 - Group.Read.All、Group.ReadWrite.All
-* **联系人**的照片 - Contacts.Read、Contacts.ReadWrite
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | 对于 **user** 资源：<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+|委派（个人 Microsoft 帐户） | 不支持 |
+|应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+
 
 ## <a name="http-request-to-get-the-photo"></a>获取照片的 HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -36,6 +44,14 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
+
+## <a name="parameters"></a>参数
+
+|**参数**|**类型**|**说明**|
+|:-----|:-----|:-----|
+|_URL 参数_|
+|size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、 
+360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
@@ -65,6 +81,20 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 ##### <a name="request-2"></a>请求 2
+此请求获取已登录用户的 48x48 照片。
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### <a name="response-2"></a>响应 2
+包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
+
+##### <a name="request-3"></a>请求 3
 此请求获取已登录用户的用户照片的元数据。
 <!-- {
   "blockType": "ignored"
@@ -73,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-2"></a>响应 2
+##### <a name="response-3"></a>响应 3
 
 以下响应数据显示照片的元数据。注意：为了简单起见，可能会将此处所示的响应对象截断。
 <!-- {

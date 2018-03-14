@@ -23,7 +23,7 @@
 |isFavorite|Boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
 |jobTitle|String|人员的职务。|
 |officeLocation|String|人员的办公室位置。|
-|personNotes|String|用户对此人员所做的任意格式的备注。|
+|personNotes|String|用户对此人员所做的自由格式备注。|
 |personType|[personType](persontype.md) collection|人员类型。|
 |phones|[phone](phone.md) collection|人员的电话号码。|
 |postalAddresses|[location](location.md) collection|人员的地址。|
