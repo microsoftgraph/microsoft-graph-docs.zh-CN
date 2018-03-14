@@ -1,20 +1,28 @@
-# <a name="get-photo"></a><span data-ttu-id="53ceb-101">获取照片</span><span class="sxs-lookup"><span data-stu-id="53ceb-101">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="8031f-101">获取照片</span><span class="sxs-lookup"><span data-stu-id="8031f-101">Get photo</span></span>
 
-<span data-ttu-id="53ceb-102">获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。</span><span class="sxs-lookup"><span data-stu-id="53ceb-102">Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).</span></span>
+<span data-ttu-id="8031f-102">获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（profilePhoto 属性）。</span><span class="sxs-lookup"><span data-stu-id="8031f-102">Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).</span></span>
 
-<span data-ttu-id="53ceb-103">GET 操作查找用户邮箱在 Exchange Online 上的指定照片。</span><span class="sxs-lookup"><span data-stu-id="53ceb-103">A GET operation looks for the specified photo in the user's mailbox on Exchange Online.</span></span>
+> <span data-ttu-id="8031f-103">**注意**：在版本 1.0 中，此操作仅支持用户的工作或学校邮箱，不支持个人邮箱。</span><span class="sxs-lookup"><span data-stu-id="8031f-103">**Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.</span></span>
 
-> <span data-ttu-id="53ceb-104">**注意**：1.0 版本中的操作仅支持用户的工作或学校邮箱，不支持个人邮箱。</span><span class="sxs-lookup"><span data-stu-id="53ceb-104">**Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.</span></span>
+<span data-ttu-id="8031f-104">Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。</span><span class="sxs-lookup"><span data-stu-id="8031f-104">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> <span data-ttu-id="8031f-105">如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。</span><span class="sxs-lookup"><span data-stu-id="8031f-105">Photos can be any dimension if they are stored in Azure Active Directory.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="53ceb-105">权限</span><span class="sxs-lookup"><span data-stu-id="53ceb-105">Permissions</span></span>
-<span data-ttu-id="53ceb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="8031f-106">可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。</span><span class="sxs-lookup"><span data-stu-id="8031f-106">You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.</span></span>
+<span data-ttu-id="8031f-107">如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。</span><span class="sxs-lookup"><span data-stu-id="8031f-107">If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.</span></span>
+<span data-ttu-id="8031f-108">例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。</span><span class="sxs-lookup"><span data-stu-id="8031f-108">For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.</span></span>
+<span data-ttu-id="8031f-109">如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，返回的是尺寸“1x1”和剩余元数据。</span><span class="sxs-lookup"><span data-stu-id="8031f-109">If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of metadata.</span></span>
 
-*   <span data-ttu-id="53ceb-108">租户中任意用户的个人资料照片，包括已登录用户 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53ceb-108">Profile photo of any user in the tenant including the signed-in user - User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>
-*   <span data-ttu-id="53ceb-109">特别是已登录用户的个人资料照片 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53ceb-109">Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>
-* <span data-ttu-id="53ceb-110">**组**的个人资料照片 - Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53ceb-110">Profile photo of a **group** - Group.Read.All, Group.ReadWrite.All</span></span>
-* <span data-ttu-id="53ceb-111">**联系人**的照片 - Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="53ceb-111">Photo of a **contact** - Contacts.Read, Contacts.ReadWrite</span></span>
+## <a name="permissions"></a><span data-ttu-id="8031f-110">权限</span><span class="sxs-lookup"><span data-stu-id="8031f-110">Permissions</span></span>
 
-## <a name="http-request-to-get-the-photo"></a><span data-ttu-id="53ceb-112">获取照片的 HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53ceb-112">HTTP request to get the photo</span></span>
+<span data-ttu-id="8031f-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="8031f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="8031f-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="8031f-113">Permission type</span></span>      | <span data-ttu-id="8031f-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8031f-114">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="8031f-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8031f-115">Delegated (work or school account)</span></span> | <span data-ttu-id="8031f-116">对于 **user** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-116">For **user** resource:</span></span><br/><span data-ttu-id="8031f-117">User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8031f-117">Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span><br /><br /><span data-ttu-id="8031f-118">对于 **group** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-118">For **group** resource:</span></span><br /><span data-ttu-id="8031f-119">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8031f-119">Group.Read.All, Group.ReadWrite.All</span></span><br /><br /><span data-ttu-id="8031f-120">对于 **contact** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-120">For **contact** resource:</span></span><br /><span data-ttu-id="8031f-121">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8031f-121">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="8031f-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8031f-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8031f-123">不支持</span><span class="sxs-lookup"><span data-stu-id="8031f-123">Not supported</span></span> |
+|<span data-ttu-id="8031f-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="8031f-124">Application</span></span>                        | <span data-ttu-id="8031f-125">对于 **user** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-125">For **user** resource:</span></span><br/><span data-ttu-id="8031f-126">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8031f-126">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span><br /><br /><span data-ttu-id="8031f-127">对于 **group** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-127">For **group** resource:</span></span><br /><span data-ttu-id="8031f-128">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8031f-128">Group.Read.All, Group.ReadWrite.All</span></span><br /><br /><span data-ttu-id="8031f-129">对于 **contact** 资源：</span><span class="sxs-lookup"><span data-stu-id="8031f-129">For **contact** resource:</span></span><br /><span data-ttu-id="8031f-130">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8031f-130">Contacts.Read, Contacts.ReadWrite</span></span> |
+
+
+## <a name="http-request-to-get-the-photo"></a><span data-ttu-id="8031f-131">获取照片的 HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8031f-131">HTTP request to get the photo</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -25,7 +33,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## <a name="http-request-to-get-the-metadata-of-the-photo"></a><span data-ttu-id="53ceb-113">获取照片元数据的 HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53ceb-113">HTTP request to get the metadata of the photo</span></span>
+## <a name="http-request-to-get-the-metadata-of-the-photo"></a><span data-ttu-id="8031f-132">获取照片元数据的 HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8031f-132">HTTP request to get the metadata of the photo</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -37,23 +45,31 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="53ceb-114">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="53ceb-114">Optional query parameters</span></span>
-<span data-ttu-id="53ceb-115">此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="53ceb-115">This method supports the [OData Query Parameters](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="parameters"></a><span data-ttu-id="8031f-133">参数</span><span class="sxs-lookup"><span data-stu-id="8031f-133">Parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="53ceb-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="53ceb-116">Request headers</span></span>
-| <span data-ttu-id="53ceb-117">名称</span><span class="sxs-lookup"><span data-stu-id="53ceb-117">Name</span></span>       | <span data-ttu-id="53ceb-118">类型</span><span class="sxs-lookup"><span data-stu-id="53ceb-118">Type</span></span> | <span data-ttu-id="53ceb-119">说明</span><span class="sxs-lookup"><span data-stu-id="53ceb-119">Description</span></span>|
+|<span data-ttu-id="8031f-134">**参数**</span><span class="sxs-lookup"><span data-stu-id="8031f-134">**Parameter**</span></span>|<span data-ttu-id="8031f-135">**类型**</span><span class="sxs-lookup"><span data-stu-id="8031f-135">**Type**</span></span>|<span data-ttu-id="8031f-136">**说明**</span><span class="sxs-lookup"><span data-stu-id="8031f-136">**Description**</span></span>|
+|:-----|:-----|:-----|
+|<span data-ttu-id="8031f-137">_URL 参数_</span><span class="sxs-lookup"><span data-stu-id="8031f-137">_URL parameters_</span></span>|
+|<span data-ttu-id="8031f-138">size</span><span class="sxs-lookup"><span data-stu-id="8031f-138">size</span></span>  |<span data-ttu-id="8031f-139">String</span><span class="sxs-lookup"><span data-stu-id="8031f-139">String</span></span>  | <span data-ttu-id="8031f-140">照片尺寸。</span><span class="sxs-lookup"><span data-stu-id="8031f-140">A photo size.</span></span> <span data-ttu-id="8031f-141">Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、</span><span class="sxs-lookup"><span data-stu-id="8031f-141">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> 
+<span data-ttu-id="8031f-142">360x360、432x432、504x504 和 648x648。</span><span class="sxs-lookup"><span data-stu-id="8031f-142">'360x360','432x432', '504x504', and '648x648'.</span></span> <span data-ttu-id="8031f-143">如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。</span><span class="sxs-lookup"><span data-stu-id="8031f-143">Photos can be any dimension if they are stored in Azure Active Directory.</span></span> |
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="8031f-144">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="8031f-144">Optional query parameters</span></span>
+<span data-ttu-id="8031f-145">此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="8031f-145">This method supports the [OData Query Parameters](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="8031f-146">请求标头</span><span class="sxs-lookup"><span data-stu-id="8031f-146">Request headers</span></span>
+| <span data-ttu-id="8031f-147">名称</span><span class="sxs-lookup"><span data-stu-id="8031f-147">Name</span></span>       | <span data-ttu-id="8031f-148">类型</span><span class="sxs-lookup"><span data-stu-id="8031f-148">Type</span></span> | <span data-ttu-id="8031f-149">说明</span><span class="sxs-lookup"><span data-stu-id="8031f-149">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="53ceb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="53ceb-120">Authorization</span></span>  | <span data-ttu-id="53ceb-121">string</span><span class="sxs-lookup"><span data-stu-id="53ceb-121">string</span></span>  | <span data-ttu-id="53ceb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8031f-150">Authorization</span><span class="sxs-lookup"><span data-stu-id="8031f-150">Authorization</span></span>  | <span data-ttu-id="8031f-151">string</span><span class="sxs-lookup"><span data-stu-id="8031f-151">string</span></span>  | <span data-ttu-id="8031f-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8031f-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="53ceb-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="53ceb-124">Request body</span></span>
-<span data-ttu-id="53ceb-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="53ceb-125">Do not supply a request body for this method.</span></span>
-## <a name="response-for-getting-the-photo"></a><span data-ttu-id="53ceb-126">获取照片的响应</span><span class="sxs-lookup"><span data-stu-id="53ceb-126">Response for getting the photo</span></span>
-<span data-ttu-id="53ceb-p103">如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p103">If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.</span></span>
-## <a name="response-for-getting-the-metadata-of-the-photo"></a><span data-ttu-id="53ceb-129">获取照片元数据的响应</span><span class="sxs-lookup"><span data-stu-id="53ceb-129">Response for getting the metadata of the photo</span></span>
-<span data-ttu-id="53ceb-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilePhoto.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="53ceb-130">If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="53ceb-131">示例</span><span class="sxs-lookup"><span data-stu-id="53ceb-131">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="53ceb-132">请求 1</span><span class="sxs-lookup"><span data-stu-id="53ceb-132">Request 1</span></span>
-<span data-ttu-id="53ceb-133">此请求为已登录用户获取最大可用大小的照片。</span><span class="sxs-lookup"><span data-stu-id="53ceb-133">This request gets the photo for the signed-in user, in the largest available size.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8031f-154">请求正文</span><span class="sxs-lookup"><span data-stu-id="8031f-154">Request body</span></span>
+<span data-ttu-id="8031f-155">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8031f-155">Do not supply a request body for this method.</span></span>
+## <a name="response-for-getting-the-photo"></a><span data-ttu-id="8031f-156">获取照片的响应</span><span class="sxs-lookup"><span data-stu-id="8031f-156">Response for getting the photo</span></span>
+<span data-ttu-id="8031f-p107">如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。</span><span class="sxs-lookup"><span data-stu-id="8031f-p107">If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.</span></span>
+## <a name="response-for-getting-the-metadata-of-the-photo"></a><span data-ttu-id="8031f-159">获取照片元数据的响应</span><span class="sxs-lookup"><span data-stu-id="8031f-159">Response for getting the metadata of the photo</span></span>
+<span data-ttu-id="8031f-160">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilePhoto.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8031f-160">If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8031f-161">示例</span><span class="sxs-lookup"><span data-stu-id="8031f-161">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="8031f-162">请求 1</span><span class="sxs-lookup"><span data-stu-id="8031f-162">Request 1</span></span>
+<span data-ttu-id="8031f-163">此请求为已登录用户获取最大可用大小的照片。</span><span class="sxs-lookup"><span data-stu-id="8031f-163">This request gets the photo for the signed-in user, in the largest available size.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -61,11 +77,25 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="53ceb-134">响应 1</span><span class="sxs-lookup"><span data-stu-id="53ceb-134">Response 1</span></span>
-<span data-ttu-id="53ceb-p104">包含所请求照片的二进制数据。HTTP 响应代码为 200。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p104">Contains the binary data of the requested photo. The HTTP response code is 200.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="8031f-164">响应 1</span><span class="sxs-lookup"><span data-stu-id="8031f-164">Response 1</span></span>
+<span data-ttu-id="8031f-p108">包含所请求照片的二进制数据。HTTP 响应代码为 200。</span><span class="sxs-lookup"><span data-stu-id="8031f-p108">Contains the binary data of the requested photo. The HTTP response code is 200.</span></span>
 
-##### <a name="request-2"></a><span data-ttu-id="53ceb-137">请求 2</span><span class="sxs-lookup"><span data-stu-id="53ceb-137">Request 2</span></span>
-<span data-ttu-id="53ceb-138">此请求获取已登录用户的用户照片的元数据。</span><span class="sxs-lookup"><span data-stu-id="53ceb-138">This request gets the metadata of the user photo of the signed-in user.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="8031f-167">请求 2</span><span class="sxs-lookup"><span data-stu-id="8031f-167">Request 2</span></span>
+<span data-ttu-id="8031f-168">此请求获取已登录用户的 48x48 照片。</span><span class="sxs-lookup"><span data-stu-id="8031f-168">This request gets the 48x48 photo for the signed-in user.</span></span>
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### <a name="response-2"></a><span data-ttu-id="8031f-169">响应 2</span><span class="sxs-lookup"><span data-stu-id="8031f-169">Response 2</span></span>
+<span data-ttu-id="8031f-p109">包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。</span><span class="sxs-lookup"><span data-stu-id="8031f-p109">Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.</span></span>
+
+##### <a name="request-3"></a><span data-ttu-id="8031f-172">请求 3</span><span class="sxs-lookup"><span data-stu-id="8031f-172">Request 3</span></span>
+<span data-ttu-id="8031f-173">此请求获取已登录用户的用户照片的元数据。</span><span class="sxs-lookup"><span data-stu-id="8031f-173">This request gets the metadata of the user photo of the signed-in user.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -73,9 +103,9 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="53ceb-139">响应 2</span><span class="sxs-lookup"><span data-stu-id="53ceb-139">Response 2</span></span>
+##### <a name="response-3"></a><span data-ttu-id="8031f-174">响应 3</span><span class="sxs-lookup"><span data-stu-id="8031f-174">Response 3</span></span>
 
-<span data-ttu-id="53ceb-p105">以下响应数据显示照片的元数据。注意：为了简单起见，可能会将此处所示的响应对象截断。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p105">The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.</span></span>
+<span data-ttu-id="8031f-p110">以下响应数据显示照片的元数据。注意：为了简单起见，可能会将此处所示的响应对象截断。</span><span class="sxs-lookup"><span data-stu-id="8031f-p110">The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -94,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="53ceb-p106">以下响应数据显示还没有为用户上载照片时的响应内容。注意：为了简单起见，可能会将此处所示的响应对象截断。</span><span class="sxs-lookup"><span data-stu-id="53ceb-p106">The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. Note: The response object shown here may be truncated for brevity.</span></span>
+<span data-ttu-id="8031f-p111">以下响应数据显示还没有为用户上载照片时的响应内容。注意：为了简单起见，可能会将此处所示的响应对象截断。</span><span class="sxs-lookup"><span data-stu-id="8031f-p111">The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. Note: The response object shown here may be truncated for brevity.</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -113,9 +143,9 @@ Content-type: application/json
     "height": 1
 }
 ```
-## <a name="using-the-binary-data-of-the-requested-photo"></a><span data-ttu-id="53ceb-144">使用所请求照片的二进制数据</span><span class="sxs-lookup"><span data-stu-id="53ceb-144">Using the binary data of the requested photo</span></span>
+## <a name="using-the-binary-data-of-the-requested-photo"></a><span data-ttu-id="8031f-179">使用所请求照片的二进制数据</span><span class="sxs-lookup"><span data-stu-id="8031f-179">Using the binary data of the requested photo</span></span>
 
-<span data-ttu-id="53ceb-145">使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="53ceb-145">When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment.</span></span> <span data-ttu-id="53ceb-146">以下是 JavaScript 中的一个示例，介绍如何创建一个数组，并将其作为 [Outlook 邮件](user_post_messages.md)的 `Attachments` 参数值传递。</span><span class="sxs-lookup"><span data-stu-id="53ceb-146">Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).</span></span>
+<span data-ttu-id="8031f-180">使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="8031f-180">When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment.</span></span> <span data-ttu-id="8031f-181">以下是 JavaScript 中的一个示例，介绍如何创建一个数组，并将其作为 [Outlook 邮件](user_post_messages.md)的 `Attachments` 参数值传递。</span><span class="sxs-lookup"><span data-stu-id="8031f-181">Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).</span></span>
 
       const attachments = [{
         '@odata.type': '#microsoft.graph.fileAttachment',
@@ -123,9 +153,9 @@ Content-type: application/json
         Name: 'mypic.jpg'
       }];
 
-<span data-ttu-id="53ceb-147">有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。</span><span class="sxs-lookup"><span data-stu-id="53ceb-147">See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.</span></span>
+<span data-ttu-id="8031f-182">有关此示例的实现，请参阅[用于 Node.js 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。</span><span class="sxs-lookup"><span data-stu-id="8031f-182">See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.</span></span>
 
-<span data-ttu-id="53ceb-148">如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。</span><span class="sxs-lookup"><span data-stu-id="53ceb-148">If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element.</span></span> <span data-ttu-id="53ceb-149">以下示例演示了如何在 JavaScript 中执行此操作。</span><span class="sxs-lookup"><span data-stu-id="53ceb-149">Here is an example in JavaScript of this operation.</span></span>
+<span data-ttu-id="8031f-183">如果想要在网页上显示图像，可以通过图像创建内存中对象，然后使该对象成为图像元素源。</span><span class="sxs-lookup"><span data-stu-id="8031f-183">If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element.</span></span> <span data-ttu-id="8031f-184">以下示例演示了如何在 JavaScript 中执行此操作。</span><span class="sxs-lookup"><span data-stu-id="8031f-184">Here is an example in JavaScript of this operation.</span></span>
 
     const url = window.URL || window.webkitURL;
     const blobUrl = url.createObjectURL(image.data);
