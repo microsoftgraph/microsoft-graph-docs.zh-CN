@@ -137,17 +137,27 @@
       <Item text="获取成员组" url="/en-us/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="组：getMemberGroups、Microsoft Graph API、组 API" SEODescription="" />
       <Item text="获取成员对象" url="/en-us/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="组：getMemberObjects, Microsoft Graph API, 组 API" SEODescription="" />
       <Item text="列出组" url="/en-us/api-reference/v1.0/api/group_list" SEOKeyword="列出组, Microsoft Graph API, 组 API" SEODescription="检索组对象列表。" />
-      <Item text="列出隶属于" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="列出 memberOf、Microsoft Graph API、组 API" SEODescription="检索 directoryObject 对象列表。" />
+      <Item text="列出生命周期策略" url="/en-us/api-reference/v1.0/api/group_list_grouplifecyclepolicies" />
+	  <Item text="列出隶属于" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="列出 memberOf、Microsoft Graph API、组 API" SEODescription="检索 directoryObject 对象列表。" />
       <Item text="列出成员" url="/en-us/api-reference/v1.0/api/group_list_members" SEOKeyword="列出成员, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" /><Item text="列出所有者" url="/en-us/api-reference/v1.0/api/group_list_owners" SEOKeyword="列出所有者, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
       <Item text="更新组" url="/en-us/api-reference/v1.0/api/group_update" SEOKeyword="更新组, Microsoft Graph API, 组 API" SEODescription="更新组对象的属性。" />
       <Item text="删除收藏夹" url="/en-us/api-reference/v1.0/api/group_removefavorite" />
       <Item text="删除成员" url="/en-us/api-reference/v1.0/api/group_delete_members" SEOKeyword="删除成员、Microsoft Graph API、组 API" SEODescription="使用此 API 删除成员。" />
-      
       <Item text="删除所有者" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
-      <Item text="重置未看计数" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="组：resetUnseenCount, Microsoft Graph API, 组 API" SEODescription="" />
+      <Item text="续订组" url="/en-us/api-reference/v1.0/api/group_renew" />
+	  <Item text="重置未看计数" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="组：resetUnseenCount, Microsoft Graph API, 组 API" SEODescription="" />
       <Item text="通过邮件订阅" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="组：subscribeByMail, Microsoft Graph API, 组 API" SEODescription="" />
       <Item text="通过邮件取消订阅" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="组：unsubscribeByMail、Microsoft Graph API、组 API" SEODescription="" />
-    </Item>
+      <Item text="生命周期策略" url="/en-us/api-reference/v1.0/resources/grouplifecyclepolicy">
+		<Item text="列出策略" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_list" />
+		<Item text="创建策略" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="获取策略" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_get" />
+		<Item text="更新策略" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_update" />
+		<Item text="删除策略" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_delete" />
+		<Item text="添加组" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_addgroup" />
+		<Item text="删除组" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_removegroup" />
+	  </Item>
+	</Item>
     <Item text="附件" url="/en-us/api-reference/v1.0/resources/attachment">
 		<Item text="文件附件资源" url="/en-us/api-reference/v1.0/resources/fileattachment" />
 		<Item text="项目附件资源" url="/en-us/api-reference/v1.0/resources/itemattachment" />
@@ -291,6 +301,41 @@
       <Item text="列出 subscribedSkus" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="列出 subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="检索 subscribedsku 对象列表。" />
       <Item text="获取 subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="获取 subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="检索 subscribedsku 对象的属性和关系。" />
     </Item>
+  </Item>
+  <Item text="教育" url="/en-us/api-reference/v1.0/resources/education-overview">
+		<Item text="学校" url="/en-us/api-reference/v1.0/resources/educationschool">
+			<Item text="列出学校" url="/en-us/api-reference/v1.0/api/educationroot_list_schools" />
+			<Item text="创建学校" url="/en-us/api-reference/v1.0/api/educationroot_post_schools" />
+			<Item text="获取学校" url="/en-us/api-reference/v1.0/api/educationschool_get" />
+			<Item text="更新学校" url="/en-us/api-reference/v1.0/api/educationschool_update" />
+			<Item text="删除学校" url="/en-us/api-reference/v1.0/api/educationschool_delete" />
+			<Item text="列出课程" url="/en-us/api-reference/v1.0/api/educationschool_list_classes" />
+			<Item text="创建课程" url="/en-us/api-reference/v1.0/api/educationschool_post_classes" />
+			<Item text="删除课程" url="/en-us/api-reference/v1.0/api/educationschool_delete_classes" />
+			<Item text="列出用户" url="/en-us/api-reference/v1.0/api/educationschool_list_users" />
+			<Item text="添加用户" url="/en-us/api-reference/v1.0/api/educationschool_post_users" />
+			<Item text="删除用户" url="/en-us/api-reference/v1.0/api/educationschool_delete_users" />
+		</Item>
+		<Item text="课程" url="/en-us/api-reference/v1.0/resources/educationclass">
+			<Item text="列出学校" url="/en-us/api-reference/v1.0/api/educationclass_list_schools" />
+			<Item text="列出课程" url="/en-us/api-reference/v1.0/api/educationroot_list_classes" />
+			<Item text="创建课程" url="/en-us/api-reference/v1.0/api/educationroot_post_classes" />
+			<Item text="获取课程" url="/en-us/api-reference/v1.0/api/educationclass_get" />
+			<Item text="更新课程" url="/en-us/api-reference/v1.0/api/educationclass_update" />
+			<Item text="删除课程" url="/en-us/api-reference/v1.0/api/educationclass_delete" />
+			<Item text="列出教师" url="/en-us/api-reference/v1.0/api/educationclass_list_teachers" />
+			<Item text="添加教师" url="/en-us/api-reference/v1.0/api/educationclass_post_teachers" />
+			<Item text="删除教师" url="/en-us/api-reference/v1.0/api/educationclass_delete_teachers" />
+			<Item text="列出成员" url="/en-us/api-reference/v1.0/api/educationclass_list_members" />
+			<Item text="添加成员" url="/en-us/api-reference/v1.0/api/educationclass_post_members" />
+			<Item text="删除成员" url="/en-us/api-reference/v1.0/api/educationclass_delete_members" />
+		</Item>
+		<Item text="用户" url="/en-us/api-reference/v1.0/resources/educationuser">
+			<Item text="列出学校" url="/en-us/api-reference/v1.0/api/educationuser_list_schools" />
+			<Item text="列出课程" url="/en-us/api-reference/v1.0/api/educationuser_list_classes" />
+			<Item text="获取用户" url="/en-us/api-reference/v1.0/api/educationuser_get" />
+			<Item text="删除用户" url="/en-us/api-reference/v1.0/api/educationuser_delete" />
+		</Item>
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="工作簿" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
@@ -1887,6 +1932,16 @@
 	  </Item>
   </Item>
   <Item text="报表" url="/en-us/api-reference/v1.0/resources/report">
+	  <Item text="Microsoft Teams 设备使用情况" url="/en-us/api-reference/v1.0/resources/microsoft_teams_device_usage_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="获取分发用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams 用户活动" url="/en-us/api-reference/v1.0/resources/microsoft_teams_user_activity_reports">
+		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="获取用户计数" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook 活动" url="/en-us/api-reference/v1.0/resources/email_activity_reports">
 		<Item text="获取用户详细信息" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
 		<Item text="获取活动计数" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
@@ -2116,8 +2171,12 @@
         <Item text="获取照片" url="/en-us/api-reference/beta/api/profilephoto_get" />
         <Item text="更新照片" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
-      <Item text="规划器任务" url="/en-us/api-reference/beta/resources/plannertask" SEOKeyword="用户任务, Microsoft Graph API, 用户 API" SEODescription="">
-        <Item text="列出任务" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="列出计划, Microsoft Graph API, 用户 API" SEODescription="检索计划对象列表。" />
+      <Item text="规划器" url="/en-us/api-reference/beta/resources/planneruser" SEOKeyword="用户任务、Microsoft Graph API、用户 API" SEODescription="表示规划器中的用户专用设置。">
+        <Item text="获取用户设置" url="/en-us/api-reference/beta/api/planneruser_get" SEOKeyword="获取设置、Microsoft Graph API、用户 API" SEODescription="检索用户的规划器设置。" />
+        <Item text="更新用户设置" url="/en-us/api-reference/beta/api/planneruser_update" SEOKeyword="更新设置、Microsoft Graph API、用户 API" SEODescription="更新用户的规划器设置。" />
+        <Item text="列出用户收藏的计划" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="列出收藏的计划、Microsoft Graph API、用户 API" SEODescription="检索用户收藏的规划器计划。" />
+        <Item text="列出用户最近查看的计划" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="列出最近查看的计划、Microsoft Graph API、用户 API" SEODescription="检索用户最近查看的规划器计划。" />
+        <Item text="列出分配到用户的任务" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="列出计划、Microsoft Graph API、用户 API" SEODescription="检索分配到用户的规划器任务。" />
       </Item>
     </Item>
     <Item text="组" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="组 API, M组 API, Microsoft Graph API, 组 APIicrosoft Graph API, 组 API, Microsoft 团队 API, 团队 API" SEODescription="表示 Azure Active Directory 组。继承自 DirectoryObject。">
@@ -2170,9 +2229,9 @@
       </Item>
       <Item text="对话" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="对话 API, Microsoft Graph API, 对话 API" SEODescription="">
         <Item text="列出对话" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="列出对话, Microsoft Graph API, 组 API" SEODescription="检索对话对象列表。" />
-        <Item text="创建对话" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="创建对话, Microsoft Graph API, 组 API" SEODescription="使用此 API 新建对话。" />
-        <Item text="获取组对话" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="获取组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
-        <Item text="删除组对话" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="删除组对话, Microsoft Graph API, Outlook 对话 API" SEODescription="删除对话。" />
+        <Item text="创建对话" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="创建对话, Microsoft Graph API, 组 API" SEODescription="此 API 可用于新建对话。" />
+        <Item text="获取对话" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="获取组对话、Microsoft Graph API、Outlook 对话 API" SEODescription="检索对话对象的属性和关系。" />
+        <Item text="删除对话" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="删除组对话、Microsoft Graph API、Outlook 对话 API" SEODescription="删除对话。" />
         <Item text="列出对话线程" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="列出线程、Microsoft Graph API、组 API" SEODescription="检索 conversationthread 对象列表。" />
         <Item text="创建对话线程" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="创建线程、Microsoft Graph API、组 API" SEODescription="使用此 API 新建线程。" />
         <Item text="列出接受的发送者" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="列出 acceptedSenders, Microsoft Graph API, 组 API" SEODescription="检索 directoryObject 对象列表。" />
@@ -2585,7 +2644,7 @@
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
-      <Item text="管理应用" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
+      <Item text="应用程序管理" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="所有设备分配目标" url="/en-us/api-reference/beta/resources/intune_apps_alldevicesassignmenttarget" />
         <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_books_alllicensedusersassignmenttarget" />
         <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_apps_alllicensedusersassignmenttarget" />
@@ -3111,7 +3170,15 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_update" />
           <Item text="importDeviceIdentityList 操作" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist" />
         </Item>
-        <Item text="带有指纹的管理证书" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint" />
+        <Item text="导入的 Windows AutoPilot 设备标识状态" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
+        <Item text="导入的 Windows AutoPilot 设备标识" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
+        </Item>
+        <Item text="带指纹的管理证书" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint" />
         <Item text="开箱即用体验设置" url="/en-us/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings" />
         <Item text="Windows AutoPilot Deployment 配置文件" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
@@ -3135,11 +3202,8 @@
         </Item>
       </Item>
       <Item text="设备配置" url="/en-us/api-reference/beta/resources/intune_device_configuration_conceptual">
-        <Item text="管理员许可" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
         <Item text="AirPrint 目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_airprintdestination" />
-        <Item text="所有设备分配目标" url="/en-us/api-reference/beta/resources/intune_devices_alldevicesassignmenttarget" />
         <Item text="所有设备分配目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_devices_alllicensedusersassignmenttarget" />
         <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
         <Item text="Android 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidcertificateprofilebase">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcertificateprofilebase_list" />
@@ -3234,6 +3298,13 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkgmaileasconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkgmaileasconfiguration_update" />
         </Item>
+        <Item text="Android for Work 导入的 PFX 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="Android for Work Nine Work EAS 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworknineworkeasconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworknineworkeasconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworknineworkeasconfiguration_get" />
@@ -3283,6 +3354,13 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Android 导入的 PFX 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="Android PKCS 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidpkcscertificateprofile">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidpkcscertificateprofile_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidpkcscertificateprofile_get" />
@@ -3323,38 +3401,21 @@
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
-        <Item text="Apple 推送通知证书" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
-        </Item>
         <Item text="Apple VPN 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_get" />
         </Item>
-        <Item text="审核主角" url="/en-us/api-reference/beta/resources/intune_auditing_auditactor" />
-        <Item text="审核事件" url="/en-us/api-reference/beta/resources/intune_auditing_auditevent">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
-        </Item>
-        <Item text="审核属性" url="/en-us/api-reference/beta/resources/intune_auditing_auditproperty" />
-        <Item text="审核资源" url="/en-us/api-reference/beta/resources/intune_auditing_auditresource" />
         <Item text="BitLocker 固定驱动器策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerfixeddrivepolicy" />
         <Item text="BitLocker 恢复选项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerrecoveryoptions" />
         <Item text="BitLocker 可移动驱动器策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
         <Item text="BitLocker 系统驱动器策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockersystemdrivepolicy" />
-        <Item text="批量托管的设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_bulkmanageddeviceactionresult" />
-        <Item text="购物车到类别关联" url="/en-us/api-reference/beta/resources/intune_deviceconfig_carttoclassassociation">
+        <Item text="购物车到类的关联" url="/en-us/api-reference/beta/resources/intune_deviceconfig_carttoclassassociation">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_get" />
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_update" />
         </Item>
-        <Item text="Configuration Manager 客户端已启用的功能" url="/en-us/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures" />
-        <Item text="每日计划" url="/en-us/api-reference/beta/resources/intune_devices_dailyschedule" />
         <Item text="默认的设备符合性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defaultdevicecompliancepolicy">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_get" />
@@ -3363,25 +3424,7 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_update" />
         </Item>
         <Item text="Defender 检测到的恶意软件操作" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="从共享 Apple 设备删除用户操作结果" url="/en-us/api-reference/beta/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
-        <Item text="检测到的应用" url="/en-us/api-reference/beta/resources/intune_devices_detectedapp">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
-        </Item>
-        <Item text="设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/beta/resources/intune_devices_deviceandappmanagementassignmenttarget" />
         <Item text="设备和应用管理分配目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
-        <Item text="设备应用管理" url="/en-us/api-reference/beta/resources/intune_devices_deviceappmanagement">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_update" />
-        </Item>
-        <Item text="设备类别" url="/en-us/api-reference/beta/resources/intune_devices_devicecategory">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_update" />
-        </Item>
         <Item text="设备符合性操作项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_get" />
@@ -3419,14 +3462,7 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
         </Item>
         <Item text="设备符合性策略设置状态" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="设备符合性策略状态" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
-        <Item text="设备合规性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
+        <Item text="设备符合性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
           <Item text="分配操作" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
@@ -3487,13 +3523,6 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationgroupassignment_update" />
         </Item>
         <Item text="设备配置设置状态" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="设备配置状态" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
         <Item text="设备配置用户概述" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
@@ -3512,79 +3541,11 @@
           <Item text="windowsPrivacyAccessControls 操作" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
           <Item text="assignedAccessMultiModeProfiles 操作" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
         </Item>
-        <Item text="设备 Exchange 访问状态摘要" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
-        <Item text="设备地理位置" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
-        <Item text="设备运行状况证明状态" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
-        <Item text="设备管理脚本分配" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_update" />
-        </Item>
-        <Item text="设备管理脚本设备状态" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptdevicestate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_update" />
-        </Item>
-        <Item text="设备管理脚本组分配" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptgroupassignment">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_update" />
-        </Item>
-        <Item text="设备管理脚本运行摘要" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptrunsummary">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_update" />
-        </Item>
-        <Item text="设备管理脚本用户状态" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptuserstate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
-        </Item>
-        <Item text="设备管理脚本" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
-          <Item text="分配操作" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
-        </Item>
         <Item text="设备管理设置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="设备管理疑难解答事件" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_endpointprotection_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_auditing_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_update" />
-        </Item>
         <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagement">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_update" />
         </Item>
-        <Item text="设备操作系统摘要" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
-        <Item text="设备保护概述" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
         <Item text="设备安装配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get" />
@@ -3599,20 +3560,9 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="注册疑难解答事件" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
-        </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/beta/resources/intune_devices_exclusiongroupassignmenttarget" />
         <Item text="排除组分配目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
         <Item text="扩展密钥用法" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage" />
-        <Item text="组分配目标" url="/en-us/api-reference/beta/resources/intune_devices_groupassignmenttarget" />
         <Item text="组分配目标" url="/en-us/api-reference/beta/resources/intune_deviceconfig_groupassignmenttarget" />
-        <Item text="硬件信息" url="/en-us/api-reference/beta/resources/intune_devices_hardwareinformation" />
-        <Item text="每小时计划" url="/en-us/api-reference/beta/resources/intune_devices_hourlyschedule" />
         <Item text="iOS 书签" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosbookmark" />
         <Item text="iOS 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
@@ -3684,6 +3634,13 @@
         <Item text="iOS 主屏幕文件夹" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolder" />
         <Item text="iOS 主屏幕项" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="iOS 主屏幕页" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage" />
+        <Item text="iOS 导入的 PFX 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="iOS 网络使用规则" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosnetworkusagerule" />
         <Item text="iOS 通知设置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="iOS PKCS 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iospkcscertificateprofile">
@@ -3743,7 +3700,6 @@
         <Item text="IPv4 范围" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv4range" />
         <Item text="IPv6 范围" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv6range" />
         <Item text="键值" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue" />
-        <Item text="查找设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
         <Item text="macOS 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
@@ -3818,39 +3774,6 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
         </Item>
-        <Item text="受管理的设备概述" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
-        <Item text="受管理设备" url="/en-us/api-reference/beta/resources/intune_deviceconfig_manageddevice">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
-        <Item text="受管理设备" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
-          <Item text="executeAction 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
-          <Item text="enableLostMode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
-          <Item text="停用操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
-          <Item text="擦除操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
-          <Item text="resetPasscode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
-          <Item text="remoteLock 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_remotelock" />
-          <Item text="requestRemoteAssistance 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_requestremoteassistance" />
-          <Item text="disableLostMode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_disablelostmode" />
-          <Item text="locateDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_locatedevice" />
-          <Item text="bypassActivationLock 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_bypassactivationlock" />
-          <Item text="rebootNow 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_rebootnow" />
-          <Item text="shutDown 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_shutdown" />
-          <Item text="recoverPasscode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_recoverpasscode" />
-          <Item text="cleanWindowsDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_cleanwindowsdevice" />
-          <Item text="logoutSharedAppleDeviceActiveUser 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser" />
-          <Item text="deleteUserFromSharedAppleDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_deleteuserfromsharedappledevice" />
-          <Item text="syncDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_syncdevice" />
-          <Item text="windowsDefenderScan 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan" />
-          <Item text="windowsDefenderUpdateSignatures 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
-          <Item text="updateWindowsDeviceAccount 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
-          <Item text="revokeAppleVppLicenses 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
-        </Item>
         <Item text="媒体内容分级（澳大利亚）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="媒体内容分级（加拿大）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="媒体内容分级（法国）" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -3878,22 +3801,11 @@
         <Item text="OMA 设置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
         <Item text="操作系统版本范围" url="/en-us/api-reference/beta/resources/intune_deviceconfig_operatingsystemversionrange" />
         <Item text="代理域" url="/en-us/api-reference/beta/resources/intune_deviceconfig_proxieddomain" />
-        <Item text="远程操作审核" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
-        </Item>
-        <Item text="远程锁定操作结果" url="/en-us/api-reference/beta/resources/intune_devices_remotelockactionresult" />
-        <Item text="报表根目录" url="/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot">
+        <Item text="报表根" url="/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_reportroot_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_reportroot_update" />
         </Item>
         <Item text="报告" url="/en-us/api-reference/beta/resources/intune_deviceconfig_report" />
-        <Item text="重置密码操作结果" url="/en-us/api-reference/beta/resources/intune_devices_resetpasscodeactionresult" />
-        <Item text="撤销 Apple VPP 许可证操作结果" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
-        <Item text="运行计划" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
         <Item text="设置源" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingsource" />
         <Item text="设置状态设备摘要" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -3902,7 +3814,6 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
-        <Item text="共享 Apple 设备用户" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
         <Item text="共享电脑帐户管理器策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
         <Item text="共享的电脑配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_sharedpcconfiguration_list" />
@@ -3915,23 +3826,7 @@
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="更新 Windows 设备帐户操作参数" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
         <Item text="URI" url="/en-us/api-reference/beta/resources/intune_deviceconfig_uri" />
-        <Item text="用户" url="/en-us/api-reference/beta/resources/intune_devices_user">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_user_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_user_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_user_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_user_update" />
-          <Item text="removeAllDevicesFromManagement 操作" url="/en-us/api-reference/beta/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="用户" url="/en-us/api-reference/beta/resources/intune_troubleshooting_user">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_update" />
-        </Item>
         <Item text="VPN DNS 规则" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpndnsrule" />
         <Item text="VPN 按需规则" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="VPN 代理服务器" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnproxyserver" />
@@ -3984,6 +3879,20 @@
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_update" />
+        </Item>
+        <Item text="Windows 10 导入的 PFX 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_update" />
+        </Item>
+        <Item text="Windows 10 Kiosk 配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10kioskconfiguration">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_update" />
         </Item>
         <Item text="Windows 10 移动版合规性策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10mobilecompliancepolicy">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list" />
@@ -4101,17 +4010,6 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
-        <Item text="Windows Defender 扫描操作结果" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
-        <Item text="Windows 设备帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceaccount" />
-        <Item text="Windows 设备 AD 帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceadaccount" />
-        <Item text="Windows 设备 Azure AD 帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceazureadaccount" />
-        <Item text="Windows 设备恶意软件状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsdevicemalwarestate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_update" />
-        </Item>
         <Item text="Windows 域加入配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
@@ -4120,35 +4018,6 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
         </Item>
         <Item text="Windows 防火墙网络配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
-        <Item text="Windows 恶意软件信息" url="/en-us/api-reference/beta/resources/intune_devices_windowsmalwareinformation">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_update" />
-        </Item>
-        <Item text="受 Windows 管理设备" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanageddevice">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
-        </Item>
-        <Item text="Windows 管理应用运行状况状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
-          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
-          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_create" />
-          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_update" />
-        </Item>
-        <Item text="Windows 管理应用运行状况摘要" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthsummary">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
-        </Item>
-        <Item text="Windows 管理应用" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
-        </Item>
         <Item text="Windows 网络隔离策略" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy" />
         <Item text="Windows Phone 8.1 证书配置文件基础" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_list" />
@@ -4174,6 +4043,13 @@
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
+        </Item>
+        <Item text="Windows Phone 8.1 导入的 PFX 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_update" />
         </Item>
         <Item text="Windows Phone 8.1 SCEP 证书配置文件" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81scepcertificateprofile">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81scepcertificateprofile_list" />
@@ -4210,10 +4086,6 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
         </Item>
-        <Item text="Windows 保护状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
-          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
-        </Item>
         <Item text="Windows 更新使用时段安装" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="适用于企业的 Windows 更新配置" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -4230,6 +4102,106 @@
         </Item>
       </Item>
       <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_corpenrollment_devicemanagement">
+        <Item text="管理员许可" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
+        <Item text="所有设备分配目标" url="/en-us/api-reference/beta/resources/intune_devices_alldevicesassignmenttarget" />
+        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_devices_alllicensedusersassignmenttarget" />
+        <Item text="Apple 推送通知证书" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
+        </Item>
+        <Item text="审核主角" url="/en-us/api-reference/beta/resources/intune_auditing_auditactor" />
+        <Item text="审核事件" url="/en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
+        </Item>
+        <Item text="审核属性" url="/en-us/api-reference/beta/resources/intune_auditing_auditproperty" />
+        <Item text="审核资源" url="/en-us/api-reference/beta/resources/intune_auditing_auditresource" />
+        <Item text="批量托管的设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_bulkmanageddeviceactionresult" />
+        <Item text="Configuration Manager 客户端已启用的功能" url="/en-us/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures" />
+        <Item text="每日计划" url="/en-us/api-reference/beta/resources/intune_devices_dailyschedule" />
+        <Item text="从共享 Apple 设备删除用户操作结果" url="/en-us/api-reference/beta/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
+        <Item text="检测到的应用" url="/en-us/api-reference/beta/resources/intune_devices_detectedapp">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
+        </Item>
+        <Item text="设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
+        <Item text="设备和应用程序管理分配目标" url="/en-us/api-reference/beta/resources/intune_devices_deviceandappmanagementassignmenttarget" />
+        <Item text="设备应用管理" url="/en-us/api-reference/beta/resources/intune_devices_deviceappmanagement">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_update" />
+        </Item>
+        <Item text="设备类别" url="/en-us/api-reference/beta/resources/intune_devices_devicecategory">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_update" />
+        </Item>
+        <Item text="设备 Exchange 访问状态摘要" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
+        <Item text="设备地理位置" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
+        <Item text="设备运行状况证明状态" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="设备管理脚本分配" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_update" />
+        </Item>
+        <Item text="设备管理脚本设备状态" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptdevicestate">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_update" />
+        </Item>
+        <Item text="设备管理脚本组分配" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptgroupassignment">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_update" />
+        </Item>
+        <Item text="设备管理脚本运行摘要" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptrunsummary">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_update" />
+        </Item>
+        <Item text="设备管理脚本用户状态" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptuserstate">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
+        </Item>
+        <Item text="设备管理脚本" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
+          <Item text="分配操作" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
+        </Item>
+        <Item text="设备管理疑难解答事件" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
+        </Item>
+        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagement">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
+        </Item>
+        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_auditing_devicemanagement">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_update" />
+        </Item>
+        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_endpointprotection_devicemanagement">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_update" />
+        </Item>
         <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_notification_devicemanagement">
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_notification_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_devicemanagement_update" />
@@ -4238,20 +4210,74 @@
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_remoteassistance_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_remoteassistance_devicemanagement_update" />
         </Item>
-        <Item text="已本地化的通知邮件" url="/en-us/api-reference/beta/resources/intune_notification_localizednotificationmessage">
+        <Item text="设备管理" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagement">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_update" />
+        </Item>
+        <Item text="设备操作系统摘要" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="设备保护概述" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
+        <Item text="注册疑难解答事件" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
+        </Item>
+        <Item text="排除组分配目标" url="/en-us/api-reference/beta/resources/intune_devices_exclusiongroupassignmenttarget" />
+        <Item text="组分配目标" url="/en-us/api-reference/beta/resources/intune_devices_groupassignmenttarget" />
+        <Item text="硬件信息" url="/en-us/api-reference/beta/resources/intune_devices_hardwareinformation" />
+        <Item text="每小时计划" url="/en-us/api-reference/beta/resources/intune_devices_hourlyschedule" />
+        <Item text="已本地化的通知消息" url="/en-us/api-reference/beta/resources/intune_notification_localizednotificationmessage">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_get" />
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_update" />
         </Item>
-        <Item text="通知邮件模板" url="/en-us/api-reference/beta/resources/intune_notification_notificationmessagetemplate">
+        <Item text="查找设备操作结果" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
+        <Item text="受管理的设备概述" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="托管设备" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
+          <Item text="executeAction 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
+          <Item text="enableLostMode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
+          <Item text="停用操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
+          <Item text="擦除操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
+          <Item text="resetPasscode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
+          <Item text="remoteLock 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_remotelock" />
+          <Item text="requestRemoteAssistance 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_requestremoteassistance" />
+          <Item text="disableLostMode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_disablelostmode" />
+          <Item text="locateDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_locatedevice" />
+          <Item text="bypassActivationLock 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_bypassactivationlock" />
+          <Item text="rebootNow 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_rebootnow" />
+          <Item text="shutDown 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_shutdown" />
+          <Item text="recoverPasscode 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_recoverpasscode" />
+          <Item text="cleanWindowsDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_cleanwindowsdevice" />
+          <Item text="logoutSharedAppleDeviceActiveUser 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser" />
+          <Item text="deleteUserFromSharedAppleDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_deleteuserfromsharedappledevice" />
+          <Item text="syncDevice 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_syncdevice" />
+          <Item text="windowsDefenderScan 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
+          <Item text="updateWindowsDeviceAccount 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
+          <Item text="revokeAppleVppLicenses 操作" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
+        </Item>
+        <Item text="通知消息模板" url="/en-us/api-reference/beta/resources/intune_notification_notificationmessagetemplate">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_get" />
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_create" />
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="sendTestMessage 操作" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
+        </Item>
+        <Item text="远程操作审核" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
         </Item>
         <Item text="远程协助合作伙伴" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_list" />
@@ -4262,8 +4288,78 @@
           <Item text="beginOnboarding 操作" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_beginonboarding" />
           <Item text="断开连接操作" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_disconnect" />
         </Item>
+        <Item text="远程锁定操作结果" url="/en-us/api-reference/beta/resources/intune_devices_remotelockactionresult" />
+        <Item text="报表根目录" url="/en-us/api-reference/beta/resources/intune_troubleshooting_reportroot">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_update" />
+        </Item>
+        <Item text="报告" url="/en-us/api-reference/beta/resources/intune_troubleshooting_report" />
+        <Item text="重置密码操作结果" url="/en-us/api-reference/beta/resources/intune_devices_resetpasscodeactionresult" />
+        <Item text="撤销 Apple VPP 许可证操作结果" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
+        <Item text="运行计划" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
+        <Item text="共享 Apple 设备用户" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
+        <Item text="更新 Windows 设备帐户操作参数" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
+        <Item text="用户" url="/en-us/api-reference/beta/resources/intune_devices_user">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_user_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_user_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_user_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_user_update" />
+          <Item text="removeAllDevicesFromManagement 操作" url="/en-us/api-reference/beta/api/intune_devices_user_removealldevicesfrommanagement" />
+        </Item>
+        <Item text="用户" url="/en-us/api-reference/beta/resources/intune_troubleshooting_user">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_update" />
+        </Item>
+        <Item text="Windows Defender 扫描操作结果" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
+        <Item text="Windows 设备帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceaccount" />
+        <Item text="Windows 设备 AD 帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceadaccount" />
+        <Item text="Windows 设备 Azure AD 帐户" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceazureadaccount" />
+        <Item text="Windows 设备恶意软件状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsdevicemalwarestate">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_update" />
+        </Item>
+        <Item text="Windows 恶意软件信息" url="/en-us/api-reference/beta/resources/intune_devices_windowsmalwareinformation">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_update" />
+        </Item>
+        <Item text="受 Windows 管理设备" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanageddevice">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
+        </Item>
+        <Item text="Windows 管理应用运行状况状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
+          <Item text="列出" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
+          <Item text="创建" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_create" />
+          <Item text="删除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_update" />
+        </Item>
+        <Item text="Windows 管理应用运行状况摘要" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthsummary">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
+        </Item>
+        <Item text="Windows 管理应用" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
+        </Item>
+        <Item text="Windows 保护状态" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
+          <Item text="获取" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
+        </Item>
       </Item>
-      <Item text="应用保护" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
+      <Item text="应用程序保护" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
         <Item text="所有设备分配目标" url="/en-us/api-reference/beta/resources/intune_mam_alldevicesassignmenttarget" />
         <Item text="所有许可的用户分配目标" url="/en-us/api-reference/beta/resources/intune_mam_alllicensedusersassignmenttarget" />
         <Item text="Android 管理的应用保护" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
@@ -4777,7 +4873,7 @@
         <Item text="获取笔记本" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="获取笔记本, Microsoft Graph API, 笔记本 API" SEODescription="检索笔记本 (../resources/notebook.md) 对象的属性和关系。" />
         <Item text="复制笔记本" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="笔记本：copyNotebook、Microsoft Graph API、笔记本 API" SEODescription="" />
 		<Item text="获取最近使用的笔记本" url="/en-us/api-reference/beta/api/notebook_getrecentnotebooks" />
-        <Item text="列出分区" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="列出分区, Microsoft Graph API, 笔记本 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
+        <Item text="列出分区" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="列出分区、Microsoft Graph API、笔记本 API" SEODescription="检索分区 (../resources/section.md) 对象列表。" />
         <Item text="创建分区" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="创建分区, Microsoft Graph API, 笔记本 API" SEODescription="在指定的笔记本中新建分区 (../resources/section.md)。" />
         <Item text="列出分区组" url="/en-us/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="列出 sectionGroups, Microsoft Graph API, 笔记本 API" SEODescription="从指定的笔记本中检索分区组 (../resources/sectiongroup.md) 列表。" />
         <Item text="创建分区组" url="/en-us/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="创建 sectionGroup, Microsoft Graph API, 笔记本 API" SEODescription="在指定的笔记本中新建分区组 (../resources/sectiongroup.md)。" />
@@ -5113,24 +5209,26 @@
     </Item>
     <Item text="规划器" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="用户任务, Microsoft Graph API, 用户 API" SEODescription="">
       <Item text="计划" url="/en-us/api-reference/beta/resources/plannerplan">
-        <Item text="创建计划" url="/en-us/api-reference/beta/api/planner_post_plans" />
         <Item text="列出组计划" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
+        <Item text="创建计划" url="/en-us/api-reference/beta/api/planner_post_plans" />
         <Item text="获取计划" url="/en-us/api-reference/beta/api/plannerplan_get" />
-        <Item text="列出计划任务" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
-        <Item text="列出计划存储段" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
         <Item text="更新计划" url="/en-us/api-reference/beta/api/plannerplan_update" />
-	    </Item>
-        <Item text="任务" url="/en-us/api-reference/beta/resources/plannertask">
+        <Item text="列出计划任务" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
+        <Item text="列出计划存储桶" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
+        <Item text="列出用户收藏的计划" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="列出收藏的计划、Microsoft Graph API、用户 API" SEODescription="检索用户收藏的规划器计划。" />
+        <Item text="列出用户最近查看的计划" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="列出最近查看的计划、Microsoft Graph API、用户 API" SEODescription="检索用户最近查看的规划器计划。" />
+      </Item>
+      <Item text="任务" url="/en-us/api-reference/beta/resources/plannertask">
         <Item text="创建任务" url="/en-us/api-reference/beta/api/planner_post_tasks" />
-        <Item text="获取用户的任务" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
         <Item text="获取任务" url="/en-us/api-reference/beta/api/plannertask_get" />
         <Item text="更新任务" url="/en-us/api-reference/beta/api/plannertask_update" />
-        <Item text="删除任务" url="/en-us/api-reference/beta/api/plannertask_delete" />	  
-	    </Item>
-	    <Item text="任务详细信息" url="/en-us/api-reference/beta/resources/plannertaskdetails">
+        <Item text="删除任务" url="/en-us/api-reference/beta/api/plannertask_delete" />
+        <Item text="列出用户的任务" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
+      </Item>
+      <Item text="任务详细信息" url="/en-us/api-reference/beta/resources/plannertaskdetails">
         <Item text="获取任务详细信息" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
         <Item text="更新任务详细信息" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
-	    </Item>
+      </Item>
       <Item text="计划详细信息" url="/en-us/api-reference/beta/resources/plannerplandetails">
         <Item text="获取计划详细信息" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
         <Item text="更新计划详细信息" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
