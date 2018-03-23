@@ -18,9 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -36,7 +34,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 |属性|类型|说明|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 集合|尚未记录|
+|managedEBookAssignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) 集合|尚未记录|
 
 
 
@@ -47,19 +45,20 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 Content-type: application/json
-Content-length: 282
+Content-length: 318
 
 {
-  "assignments": [
+  "managedEBookAssignments": [
     {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
+      "@odata.type": "#microsoft.graph.managedEBookAssignment",
+      "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "installIntent": "required"
     }
   ]
 }

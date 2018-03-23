@@ -1,4 +1,4 @@
-# <a name="assign-action"></a>assign 操作
+# <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 函数
 
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -8,7 +8,7 @@
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -18,9 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -30,45 +28,35 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供参数的 JSON 表示形式。
-
-下表显示了可用于此操作的参数。
+在请求 URL 中，提供以下查询参数（含值）。
+下表显示了可用于此函数的参数。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 集合|尚未记录|
+|domainName|String|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 Boolean。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
-Content-type: application/json
-Content-length: 282
-
-{
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
-}
+GET https://graph.microsoft.com/v1.0/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 21
+
+{
+  "value": true
+}
 ```
 
 
