@@ -3,6 +3,18 @@
 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
+
+## <a name="march-2018"></a>2018 年 3 月
+
+### <a name="group-lifecycle-policy"></a>组生命周期策略
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | v1.0        | 新增了 [groupLifecyclePolicy](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
+| 新增        | v1.0        | 新增了以下组生命周期策略 API：[Create](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[List](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list)、[Get](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get)、[Update](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update)、[Delete](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete)、[Add group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup)、[Remove group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
+| 新增        | v1.0        | 向 [group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/group) 添加了 [List groupLifecylePolicies](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) 函数 |
+| 更改 | V1.0 | 向 [group](../api-reference/v1.0/resources/group.md) 添加了 renewedDateTime 属性和 [renew](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_renew) | 
+
 ## <a name="february-2018"></a>2018 年 2 月
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
@@ -250,7 +262,6 @@
 |更改|Beta|向 [hardwareInformation](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation) 复杂类型添加了 **tpmSpecificationVersion**、**operatingSystemEdition**、**deviceFullQualifiedDomainName**、**deviceGuardVirtualizationBasedSecurityHardwareRequirementState**、**deviceGuardVirtualizationBasedSecurityState** 和 **deviceGuardLocalSystemAuthorityCredentialGuardState** 属性|
 |更改|Beta|向 [iosVppAppAssignmentSettings](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings) 复杂类型添加了 **vpnConfigurationId** 属性|
 |更改|Beta|向 [rolePermission](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission) 复杂类型添加了 **resourceActions** 属性|
-
 
 ### <a name="reports-apis"></a>报表 API
 | 更改类型 | 版本 | 说明                              |
@@ -1483,7 +1494,7 @@
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 [event](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event) 资源添加了 **onlineMeetingUrl** 属性。 |
-| 添加项        | Beta        | 向事件资源添加了 [forward](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/event_forward) 操作。 |
+| Addition        | Beta        | 向事件资源添加了 [forward](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/event_forward) 操作。 |
 | 添加项        | Beta        | 向[日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/calendar)资源添加了以下属性以支持日历共享：**canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe** 和 **owner**。 |
 
 ### <a name="outlook-mail"></a>Outlook 邮件
