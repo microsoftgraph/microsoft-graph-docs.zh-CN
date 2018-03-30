@@ -72,7 +72,7 @@
 |hostPairingBlocked|Boolean|指示 iOS 设备处于监督模式时是否允许主机配对控制 iOS 设备可以与之配对的设备。|
 |iBooksStoreBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 iBooks Store。|
 |iBooksStoreBlockErotica|Boolean|指示是否阻止用户从已标记为情色的 iBookstore 下载媒体。|
-|iCloudBlockActivityContinuation|Boolean|指明是否阻止用户在另一个 iOS 或 MacOS 设备上继续从事在 iOS 设备上启动的工作。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户在一个 iOS 或 MacOS 设备上继续从事在 iOS 设备上启动的工作。|
 |iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
 |iCloudBlockManagedAppsSync|Boolean|指示是否阻止托管应用云同步。|
