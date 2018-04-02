@@ -22,7 +22,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
@@ -56,10 +56,10 @@ Content-Length: 502
     "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
     "partnerState": "available",
     "androidEnabled": true,
+    "iosEnabled": true,
     "androidDeviceBlockedOnMissingPartnerData": true,
     "iosDeviceBlockedOnMissingPartnerData": true,
     "partnerUnsupportedOsVersionBlocked": true,
-    "iosEnabled": true,
     "partnerUnresponsivenessThresholdInDays": 6
   }
 }

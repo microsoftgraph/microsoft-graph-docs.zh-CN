@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |appStoreBlockAutomaticDownloads|Boolean|指示设备处于监督模式时是否阻止自动下载在其他设备上购买的应用（iOS 9.0 及更高版本）。|
 |appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。|
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
-|appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
+|appStoreBlockUIAppInstallation|Boolean|指示是否阻止应用商店应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|

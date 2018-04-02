@@ -38,7 +38,7 @@
 |appStoreBlockAutomaticDownloads|Boolean|指示设备处于监督模式时是否阻止自动下载在其他设备上购买的应用（iOS 9.0 及更高版本）。|
 |appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。|
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
-|appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
+|appStoreBlockUIAppInstallation|Boolean|指示是否阻止应用商店应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
@@ -50,7 +50,7 @@
 |certificatesBlockUntrustedTlsCertificates|Boolean|指示是否阻止不受信任的 TLS 证书。|
 |classroomAppBlockRemoteScreenObservation|Boolean|指示设备处于监督模式时是否允许 Classroom 应用进行远程屏幕观察（iOS 9.3 及更高版本）。|
 |classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动授予 Classroom 应用上托管课程的教师权限，以便在设备处于监督模式时查看学生的屏幕不会出现提示。|
-|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|合规性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
+|compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|String|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |configurationProfileBlockChanges|Boolean|指示设备处于监督模式时是否阻止用户以交互方式安装配置文件和证书。|
 |definitionLookupBlocked|Boolean|指示设备处于监督模式时是否阻止定义查找（iOS 8.1.3 及更高版本）。|
@@ -72,7 +72,7 @@
 |hostPairingBlocked|Boolean|指示 iOS 设备处于监督模式时是否允许主机配对控制 iOS 设备可以与之配对的设备。|
 |iBooksStoreBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 iBooks Store。|
 |iBooksStoreBlockErotica|Boolean|指示是否阻止用户从已标记为情色的 iBookstore 下载媒体。|
-|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户在一个 iOS 或 MacOS 设备上继续从事在 iOS 设备上启动的工作。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户在另一个 iOS 或 MacOS 设备上继续从事在 iOS 设备上启动的工作。|
 |iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
 |iCloudBlockManagedAppsSync|Boolean|指示是否阻止托管应用云同步。|
