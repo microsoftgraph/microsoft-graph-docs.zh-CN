@@ -6,6 +6,17 @@
 
 ## <a name="march-2018"></a>2018 年 3 月
 
+### <a name="excel-apis"></a>Excel API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|更改|v1.0|向 [Excel 表格](../api-reference/v1.0/resources/table.md)实体添加了 **legacyId** 属性。 这包含对给定 Excel 表格保持不变的数值标识符（字符串数据类型）。 如果应用程序依赖旧版 Excel 客户端应用程序中使用的旧标识符，这就作为额外元数据提供。 注意：应将 `id` 和 `legacyId` 属性处理为不透明的字符串值，不得在应用程序中将它们解析为其他任何类型。 |
+
+
+### <a name="reports-apis"></a>报表 API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|beta|向 [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) 实体添加了 **siteId** 属性。|
+
 ### <a name="group-lifecycle-policy"></a>组生命周期策略
 
 | **更改类型** | **版本** | **说明**                          |
@@ -1113,7 +1124,7 @@
 | 添加项        | Beta        | 添加的复杂类型：<br/>[dailySchedule](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_dailyschedule)<br/>[hourlySchedule](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_hourlyschedule)<br/>[iosBookmark](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosbookmark)<br/>[iosWebContentFilterAutoFilter](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterautofilter)<br/>[iosWebContentFilterBase](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterbase)<br/>[iosWebContentFilterSpecificWebsitesAccess](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterspecificwebsitesaccess)<br/>[runSchedule](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_runschedule)<br/>[sharedAppleDeviceUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_sharedappledeviceuser)<br/>[windows10NetworkProxyServer](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10networkproxyserver)<br/> |
 | 添加项        | Beta        | 在 [managedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) 上添加了 [requestRemoteAssistance](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_manageddevice_requestremoteassistance) 操作 |
 | 添加项        | Beta        | 在 [managedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) 上添加了 [cleanWindowsDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_manageddevice_cleanwindowsdevice) 操作 |
-| 添加项        | Beta        | 在 [managedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) 上添加了 [logoutSharedAppleDeviceActiveUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_manageddevice_logoutsharedappledeviceactiveuser) 操作 |
+| Addition        | Beta        | 在 [managedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) 上添加了 [logoutSharedAppleDeviceActiveUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_manageddevice_logoutsharedappledeviceactiveuser) 操作 |
 | 添加项        | Beta        | 在 [managedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) 上添加了 [deleteUserFromSharedAppleDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_manageddevice_deleteuserfromsharedappledevice) 操作 |
 | 添加项        | Beta        | 在 [deviceManagementScript](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscript) 上添加了 [assign](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_deviceconfig_devicemanagementscript_assign) 操作 |
 | 添加项        | Beta        | 在 [appleVolumePurchaseProgramToken](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken) 上添加了 [syncLicenses](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_synclicenses) 操作 |
@@ -1645,10 +1656,10 @@
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 Beta | 添加了遵守 Accept-Encoding:gzip 的支持。 |
-| 添加项        | v1.0          | 添加了对展开路径中的转换段的支持。例如，“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
-| 添加项        | Beta          | 添加了对结构化属性的 PATCH 请求的支持。例如：“PATCH /me/mailboxSettings”。 |
+| 添加项        | v1.0          | 现已开始支持展开路径中的强制转换段。 例如，“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
+| 新增        | Beta          | 添加了对结构化属性的 PATCH 请求的支持。例如：“PATCH /me/mailboxSettings”。 |
 | 添加项        | Beta          | Outlook 在某些情况下（例如，用户没有邮箱许可证或租户没有 Exchange Online 订阅）无法处理请求时，现在可将 Azure Active Directory 用作 /beta/users/id/photo 请求的回退。注意：此回退同时适用于 GET 和 PATCH。 |
-| 添加项        | Beta          | 添加了对展开路径中的转换段的支持。例如：“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
+| 添加项        | Beta          | 现已开始支持展开路径中的强制转换段。 例如：“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1713,7 +1724,7 @@
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | 改进了解析租户别名和拒绝的 JWT (AAD) 令牌时出现的错误消息。 |
 | 添加项        | v1.0 和 beta | 收到含有空持有者令牌的请求时，在 www-authenticate 标头中现在返回授权服务终结点的位置。 |
-| 添加项        | v1.0 和 beta | 现已修复筛选实体的 id 属性的功能。示例：GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前，对服务操作和功能的任何 POST 请求都需要在操作或功能名称前加上 microsoft.graph 前缀。例如：POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups。<br/>现在不再需要此前缀（但是仍可指定此前缀）。因此，以下请求现在同样有效：POST https://graph.microsoft.com/v1.0/me/getMemberGroups。 |
+| 添加项        | v1.0 和 beta | 现已修复按实体 ID 属性筛选的功能。 例如：GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前，如果对服务操作和功能发生任何 POST 请求，都需要在操作或功能名称前面加上 microsoft.graph 前缀。 例如，POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups。<br/>现在不再需要添加此前缀（但仍可以指定它）。 因此，以下请求现在同样有效：POST https://graph.microsoft.com/v1.0/me/getMemberGroups。 |
 | 更改          | Beta          | 清理了订阅属性名称。  |
 | 添加项        | Beta          | 我们为实体及其关联功能添加了发现（通过 _directorySettingTemplates_）和替代默认行为（通过在模板中创建 _setting_）的功能。最初提供这个唯一的模板是为了控制 Office 组的行为。 |
 
@@ -1846,6 +1857,6 @@
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修补程序             | v1.0 和 beta | 修复了通过用户主体名称 (UPN) 引用用户时可以选择其他用户上的某些用户属性的问题。例如：https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
-| 修补程序             | v1.0 和 beta | 修复了在调用 _microsoft.graph.reminderView_ 用户绑定功能时出现以下错误的问题：无法在类型 Microsoft.OutlookServices.Reminder 上找到名为 businessPhones 的属性。 |
+| 修补程序             | v1.0 和 beta | 修复了按用户主体名称 (UPN) 引用用户时可以对其他用户选择特定用户属性的功能。 例如：https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| 修复             | v1.0 和 beta | 修复了在调用 _microsoft.graph.reminderView_ 用户绑定功能时出现以下错误的问题：无法在类型 Microsoft.OutlookServices.Reminder 上找到名为 businessPhones 的属性。 |
 | 修补程序             | v1.0 和 beta | 修复了出现 400 错误的用户创建和更新 (POST/PATCH /v1.0/users)。 |

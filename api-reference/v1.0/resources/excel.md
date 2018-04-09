@@ -1,6 +1,6 @@
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
-可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。例如：
+可以使用 Microsoft Graph，让 Web 和移动应用都能读取和修改在 OneDrive for Business、SharePoint 网站或组驱动器中存储的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含其他所有 Excel 资源。可以确定文件在 URL 中的位置，从而使用[驱动器 API](drive.md) 访问工作簿。例如：
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -9,7 +9,9 @@
 返回属于工作簿的工作表对象的集合。    
 
 
-**注意：**Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
+Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
+
+**注意**：仍不支持在 OneDrive 使用者平台中存储的工作簿。 目前，Excel REST API 仅支持在商业平台中存储的文件。 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 

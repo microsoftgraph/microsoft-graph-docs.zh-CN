@@ -37,6 +37,7 @@
 |showBandedColumns|Boolean|指明列是否采用镶边格式来以不同的方式突出显示奇数列与偶数列，让表更易于阅读。   |
 |showBandedRows|Boolean|指明行是否采用镶边格式来以不同的方式突出显示奇数行与偶数行，让表更易于阅读。    |
 |showFilterButton|Boolean|指明是否在每个列标题的顶部显示筛选器按钮。仅当 table 中包含标题行时，才允许设定此设置。   |
+|legacyId|String|旧版 Excel 客户端中使用的旧 ID。 即使表格已重命名，标识符值也仍保持不变。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。   |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -53,7 +54,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -69,7 +70,8 @@
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```

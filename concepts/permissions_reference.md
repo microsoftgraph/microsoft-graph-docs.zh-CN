@@ -4,9 +4,9 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
+- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
 
-- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
@@ -203,7 +203,7 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_ |读取目录数据 | 允许应用读取组织目录中的数据，如用户、组和应用。 | 是 |
+| _Directory.Read.All_ |读取目录数据 | 允许应用程序读取组织目录中的数据，如用户、组和应用程序。 **注意**：如果应用程序已在自己组织的租户中注册，用户可能会同意应用程序要求必须有此权限。| 是 |
 | _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 |
 | _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 |
 
