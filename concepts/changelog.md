@@ -1,20 +1,97 @@
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
-此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。  
+此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known_issues.md)。
 
-## <a name="march-2018"></a>2018 年 3 月
-
-### <a name="excel-apis"></a>Excel API
-|更改类型|版本|说明|
-|:---|:---|:---|
-|更改|v1.0|向 [Excel 表格](../api-reference/v1.0/resources/table.md)实体添加了 **legacyId** 属性。 这包含对给定 Excel 表格保持不变的数值标识符（字符串数据类型）。 如果应用程序依赖旧版 Excel 客户端应用程序中使用的旧标识符，这就作为额外元数据提供。 注意：应将 `id` 和 `legacyId` 属性处理为不透明的字符串值，不得在应用程序中将它们解析为其他任何类型。 |
-
+## <a name="april-2018"></a>2018 年 4 月
 
 ### <a name="reports-apis"></a>报表 API
 |更改类型|版本|说明|
 |:---|:---|:---|
+|添加项|beta| 添加了委派的访问支持。 |
+|Addition|v1.0| 添加了委派的访问支持。 |
+
+### <a name="directory-apis"></a>目录 API
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | V1.0        | 向 [organization](../api-reference/v1.0/resources/organization.md) 实体添加了 **privacyProfile** 复杂类型。 |
+
+### <a name="outlook-calendar"></a>Outlook 日历
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | v1.0          | 向 [event](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/event) 实体添加了 **locations** 属性，以支持组织与会者可以从多个位置参加的事件。 |
+| 添加项        | v1.0          | 向 [location](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/location) 复杂类型添加了 **locationType** 属性。 |
+| Addition        | v1.0          | 向 [location](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/location) 复杂类型添加了 **uniqueId** 和 **uniqueIdType** 属性。 在这种情况下，这些属性仅供内部使用。 |
+
+
+### <a name="outlook-contacts"></a>Outlook 联系人
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | v1.0          | 向 [contact](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/contact) 实体添加了 **flag** 属性。 添加了共享的 [followupFlag](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/followupflag) 复杂类型。|
+
+
+### <a name="outlook-mail"></a>Outlook 邮件
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | v1.0          | 向 [message](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message) 实体添加了 **flag** 属性。 添加了共享的 [followupFlag](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/followupflag) 复杂类型。|
+| 添加项        | v1.0        | 向 [message](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/message) 实体添加了 **internetMessageHeaders** 属性。 |
+| Addition        | v1.0        | 添加了 [internetMessageHeader](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/internetmessageheader) 复杂类型。 |
+| Addition        | v1.0        | 向 [mailFolder](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/mailfolder) 实体添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/messagerule) 实例的集合。 |
+| 添加项        | v1.0        | 添加了 [messageRule](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/messagerule) 实体，以及 [messageRuleActions](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/messagerulepredicates) 和 [sizeRange](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/sizerange) 复杂类型。 |
+| Addition        | v1.0        | 添加了消息规则的以下 CRUD 操作：[创建](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules)、[列出](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules)、[获取](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/messagerule_get)、[更新](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/messagerule_update)和[删除](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/messagerule_delete)。 |
+
+
+### <a name="outlook-user-choices"></a>Outlook 用户选择
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | v1.0        | 向 [outlookUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookuser) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookCategory) 对象的集合。 |
+| Addition        | v1.0        | 添加了 [outlookCategory](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookCategory) 实体。 |
+| 添加项        | v1.0        | 添加了 [outlookCategory](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookCategory) 的以下 CRUD 操作：[创建](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories)、[获取](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookcategory_get)、[更新](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookcategory_update)和[删除](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookcategory_delete)。 |
+| 添加项        | v1.0        | 向 [outlookUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookuser) 实体添加了新的 [supportedLanguages](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) 函数。 |
+| Addition        | v1.0        | 向 [outlookUser](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/outlookuser) 实体添加了新的 [supportedTimeZones](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) 函数。 |
+|添加项 | v1.0 | 向 [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md) 添加了新的 **workingHours** 属性。 请参阅 [workingHours 资源类型](../api-reference/v1.0/resources/workinghours.md)，获取有关受支持用例的信息。|
+|添加项 | v1.0 | 添加了以下新复杂类型： <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
+## <a name="march-2018"></a>2018 年 3 月
+
+### <a name="activityfeedservice-apis"></a>ActivityFeedService API
+
+| **更改类型** | **版本** | **说明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | Beta       | 添加了[获取最近的活动 API](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| 添加项        | Beta       | 添加了[获取活动 API](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+| 更改 | Beta | 向 [Upsert Activity](https://developer.microsoft.com/zh-CN/graph/docs/beta/api/projectrome_put_activity) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
+| 更改 | Beta | 向 [Upsert HistoryItem](https://developer.microsoft.com/zh-CN/graph/docs/beta/projectrome_put_historyitem) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
+| 更改 | Beta | 向 [Delete Activity](https://developer.microsoft.com/zh-CN/graph/docs/beta/projectrome_delete_activity) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
+| 更改 | Beta | 向 [Upsert HistoryItem](https://developer.microsoft.com/zh-CN/graph/docs/beta/projectrome_delete_historyItem) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
+| 更改 | Beta | 向 [activity](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/projectrome_activity) 添加了 **status** 属性 |
+| 更改 | Beta | 向 [historyItem](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/projectrome_historyitem) 添加了 **activity** 导航属性 |
+| 更改 | Beta | 向 [Project Rome overview](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/project_rome_overview) 添加了新 API |
+
+### <a name="directory-apis"></a>目录 API
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | Beta        | 向 [user](../api-reference/beta/resources/user.md) 实体添加了 **onPremisesExtensionAttributes** 复杂类型。 这包含本地 AD 扩展属性 1-15。 |
+| 添加项        | Beta        | 向 [organization](../api-reference/beta/resources/organization.md) 实体添加了 **privacyProfile** 复杂类型。 |
+| 添加项        | V1.0        | 添加了对[还原并永久删除用户和组](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/directory)的支持。 |
+
+### <a name="excel-apis"></a>Excel API
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|更改|v1.0|向 [Excel 表格](../api-reference/v1.0/resources/table.md)实体添加了 **legacyId** 属性。 这包含对给定 Excel 表格保持不变的数值标识符（字符串数据类型）。 如果应用程序依赖旧版 Excel 客户端应用程序中使用的旧标识符，这就作为额外元数据提供。 注意：应将 `id` 和 `legacyId` 属性处理为不透明的字符串值，不得在应用程序中将它们解析为其他任何类型。 |
+
+### <a name="reports-apis"></a>报表 API
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |添加项|beta|向 [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) 实体添加了 **siteId** 属性。|
 
 ### <a name="group-lifecycle-policy"></a>组生命周期策略
@@ -24,7 +101,71 @@
 | 添加项        | v1.0        | 新增了 [groupLifecyclePolicy](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
 | 新增        | v1.0        | 新增了以下组生命周期策略 API：[Create](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[List](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list)、[Get](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get)、[Update](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update)、[Delete](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete)、[Add group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup)、[Remove group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
 | 新增        | v1.0        | 向 [group](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/group) 添加了 [List groupLifecylePolicies](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) 函数 |
-| 更改 | V1.0 | 向 [group](../api-reference/v1.0/resources/group.md) 添加了 renewedDateTime 属性和 [renew](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_renew) | 
+| 更改 | v1.0 | 向 [group](../api-reference/v1.0/resources/group.md) 添加了 renewedDateTime 属性和 [renew](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/group_renew) | 
+
+### <a name="terms-of-use"></a>使用条款
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | Beta        | 添加了 [agreement](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/agreement) 和 [agreementAcceptance](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/agreementAcceptance) 资源。 |
+| 添加项        | Beta        | 添加了以下 [agreement](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/agreement) API：[Create](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/greement_post_agreements)、[List](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/agreement_list)、[Get](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/agreement_get)、[Update](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/agreement_update)、[Delete](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/agreement_delete)。 |
+| 添加项        | Beta        | 向 [user](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/user) 资源添加了 [agreementAcceptance](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/agreementAcceptance) 关系。 |
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|Addition|v1.0|添加的新实体：<br/>[iosMobileAppConfiguration](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration)<br/>[vppToken](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken)<br/>|
+|添加项|v1.0|添加的新复杂类型：<br/>[appConfigurationSettingItem](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem)<br/>|
+|添加项|v1.0|在 [vppToken](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken) 上添加了 [syncLicenses](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses.md) 操作 |
+|添加项|v1.0|向 [deviceAppManagement](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/intune_apps_deviceappmanagement) 实体添加了 **vppTokens** 导航属性|
+|添加项|beta|添加的新实体：<br/>[androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile)<br/>[androidDeviceOwnerGeneralDeviceConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration)<br/>[androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings)<br/>[androidManagedStoreAppConfigurationSchema](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema)<br/>[dataSharingConsent](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_datasharingconsent)<br/>[deviceConfigurationUserStateSummary](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatesummary)<br/>[macOSEndpointProtectionConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_macosendpointprotectionconfiguration)<br/>[macOSImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_macosimportedpfxcertificateprofile)<br/>[macOSLobApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_macoslobapp)<br/>[managedEBookCategory](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_books_managedebookcategory)<br/>[microsoftStoreForBusinessContainedApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp)<br/>[mobileContainedApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_mobilecontainedapp)<br/>[windowsUniversalAppXContainedApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp)<br/>|
+|添加项|beta|添加的新复杂类型：<br/>[androidManagedStoreAppConfigurationSchemaItem](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem)<br/>[deviceAndAppManagementData](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_onboarding_deviceandappmanagementdata)<br/>[loggedOnUser](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_loggedonuser)<br/>[macOSFirewallApplication](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_macosfirewallapplication)<br/>[macOSLobChildApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_macoslobchildapp)<br/>[macOSMinimumOperatingSystem](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_macosminimumoperatingsystem)<br/>[windowsAppXAppAssignmentSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings)<br/>[windowsUniversalAppXAppAssignmentSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings)<br/>|
+|添加项|beta|在 [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) 上添加了 [requestSignupUrl](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_requestsignupurl.md) 操作 |
+|添加项|beta|在 [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) 上添加了 [completeSignup](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_completesignup.md) 操作 |
+|添加项|beta|在 [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) 上添加了 [syncApps](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_syncapps.md) 操作 |
+|添加项|beta|在 [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) 上添加了 [unbind](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_unbind.md) 操作 |
+|添加项|beta|在 [androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile) 上添加了 [revokeToken](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_revoketoken.md) 操作 |
+|添加项|beta|在 [androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile) 上添加了 [createToken](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_createtoken.md) 操作 |
+|添加项|beta|在 [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) 上添加了 [assign](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign.md) 操作 |
+|Addition|beta|在 [dataSharingConsent](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_datasharingconsent) 上添加了 [consentToDataSharing](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_devices_datasharingconsent_consenttodatasharing.md) 操作 |
+|添加项|beta|在 [user](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_user) 上添加了 [getLoggedOnManagedDevices](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_devices_user_getloggedonmanageddevices.md) 函数 |
+|添加项|beta|在 [user](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_user) 上添加了 [exportDeviceAndAppManagementData](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_onboarding_user_exportdeviceandappmanagementdata.md) 函数 |
+|添加项|beta|在 [user](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_user) 上添加了 [exportDeviceAndAppManagementData](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_onboarding_user_exportdeviceandappmanagementdata.md) 函数 |
+|删除|beta|删除了以下实体：<br/>**appleVolumePurchaseProgramToken**<br/>**mdmAppConfigGroupAssignment**<br/>**windows10KioskConfiguration**<br/>|
+|删除|beta|在 [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) 上删除了 [assign](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign.md) 操作 |
+|删除|beta|在 [appleVolumePurchaseProgramToken](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_onboarding_applevolumepurchaseprogramtoken) 上添加了 [syncApps](https://developer.microsoft.com/zh-CN/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_syncapps.md) 操作 |
+|添加项|beta|向 [androidForWorkGeneralDeviceConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration) 实体添加了 **workProfileBluetoothEnableContactSharing** 属性|
+|添加项|beta|向 [androidForWorkImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile) 实体添加了 **intendedPurpose** 属性|
+|添加项|beta|向 [androidImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile) 实体添加了 **intendedPurpose** 属性|
+|添加项|beta|向 [iosImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile) 实体添加了 **intendedPurpose** 属性|
+|添加项|beta|向 [iosMobileAppConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) 实体添加了 **encodedSettingXml** 属性|
+|添加项|beta|向 [managedAppRegistration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_mam_managedappregistration) 实体添加了 **managedDeviceId** 和 **azureADDeviceId** 属性|
+|添加项|beta|向 [managedDevice](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_manageddevice) 实体添加了 **usersLoggedOn** 属性|
+|删除|beta|从 [managedDevice](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_manageddevice) 实体中删除了 **lastLoggedOnUserId** 属性|
+|添加项|beta|向 [managedDeviceOverview](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_devices_manageddeviceoverview) 实体添加了 **lastModifiedDateTime** 属性。|
+|添加项|beta|向 [mobileAppContentFile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_mobileappcontentfile) 实体添加了 **isDependency** 属性|
+|添加项|beta|向 [mobileThreatDefenseConnector](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector) 实体添加了 **windowsEnabled**、**macEnabled**、**windowsDeviceBlockedOnMissingPartnerData** 和 **macDeviceBlockedOnMissingPartnerData** 属性|
+|添加项|beta|向 [officeSuiteApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_officesuiteapp) 实体添加了 **shouldUninstallOlderVersionsOfOffice** 属性|
+|添加项|beta|向 [vppToken](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_onboarding_vpptoken) 实体添加了 **dataSharingConsentGranted** 属性|
+|添加项|beta|向 [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) 实体添加了 **localSecurityOptionsBlockRemoteLogonWithBlankPassword**、**localSecurityOptionsAdministratorAccountName**、**localSecurityOptionsEnableGuestAccount**、**localSecurityOptionsGuestAccountName**、**localSecurityOptionsAllowUndockWithoutHavingToLogon**、**localSecurityOptionsBlockUsersInstallingPrinterDrivers**、**localSecurityOptionsBlockRemoteOpticalDriveAccess**、**localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser**、**localSecurityOptionsMachineInactivityLimit**、**localSecurityOptionsDoNotRequireCtrlAltDel**、**localSecurityOptionsInformationDisplayedOnLockScreen**、**localSecurityOptionsHideLastSignedInUser**、**localSecurityOptionsHideUsernameAtSignIn**、**localSecurityOptionsLogOnMessageTitle**、**localSecurityOptionsLogOnMessageText**、**localSecurityOptionsAllowPKU2UAuthenticationRequests**、**localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager**、**localSecurityOptionsClearVirtualMemoryPageFile**、**localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn**、**localSecurityOptionsAllowUIAccessApplicationElevation**、**localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations**、**localSecurityOptionsOnlyElevateSignedExecutables**、**localSecurityOptionsAdministratorElevationPromptBehavior**、**localSecurityOptionsStandardUserElevationPromptBehavior**、**localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation**、**localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation**、**localSecurityOptionsAllowUIAccessApplicationsForSecureLocations**、**localSecurityOptionsUseAdminApprovalMode**、**localSecurityOptionsUseAdminApprovalModeForAdministrators**、**deviceGuardLocalSystemAuthorityCredentialGuardSettings**、**deviceGuardEnableVirtualizationBasedSecurity** 和 **deviceGuardEnableSecureBootWithDMA** 属性|
+|删除|beta|从 [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration) 实体中删除了 **defenderPasswordProtectedEmailContentExecutionType** 属性|
+|添加项|beta|向 [windows10ImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile) 实体添加了 **intendedPurpose** 属性|
+|删除|beta|从 [windows10SecureAssessmentConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration) 实体中删除了 **printerNames**、**defaultPrinterName** 和 **blockAddingNewPrinter** 属性|
+|添加项|beta|向 [windows81SCEPCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windows81scepcertificateprofile) 实体添加了 **certificateStore** 属性|
+|添加项|beta|向 [windowsAutopilotDeviceIdentity](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity) 实体添加了 **purchaseOrderIdentifier** 属性|
+|更改|beta|更改了 [windowsCertificateProfileBase](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase) 实体上的以下属性：<br/>将 **subjectAlternativeNameType** 从必需更改为可选<br/>|
+|添加项|beta|向 [windowsDefenderAdvancedThreatProtectionConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration) 实体添加了 **advancedThreatProtectionOnboardingFilename** 和 **advancedThreatProtectionOffboardingFilename** 属性|
+|添加项|beta|向 [windowsPhone81ImportedPFXCertificateProfile](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile) 实体添加了 **intendedPurpose** 属性|
+|添加项|beta|向 [windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration) 实体添加了 **skipChecksBeforeRestart** 和 **updateWeeks** 属性|
+|添加项|beta|向 [deviceAppManagement](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_deviceappmanagement) 实体添加了 **managedEBookCategories** 导航属性|
+|添加项|beta|向 [deviceManagement](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_devicemanagement) 实体添加了 **androidManagedStoreAccountEnterpriseSettings**、**androidManagedStoreAppConfigurationSchemas**、**androidDeviceOwnerEnrollmentProfiles**、**dataSharingConsents** 和 **deviceConfigurationUserStateSummaries** 导航属性|
+|删除|beta|从 [deviceManagement](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_androidforwork_devicemanagement) 实体中删除了 **deviceSetupConfigurations** 导航属性|
+|删除|beta|从 [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) 实体中删除了 **groupAssignments** 导航属性|
+|添加项|beta|向 [managedEBook](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_books_managedebook) 实体添加了 **categories** 导航属性|
+|添加项|beta|向 [microsoftStoreForBusinessApp](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp) 实体添加了 **containedApps** 导航属性|
+|添加项|beta|向 [mobileAppContent](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_mobileappcontent) 实体添加了 **containedApps** 导航属性|
+|添加项|beta|向 [windowsUniversalAppX](https://developer.microsoft.com/zh-CN/api-reference/beta/resources/intune_apps_windowsuniversalappx) 实体添加了 **committedContainedApps** 导航属性|
 
 ## <a name="february-2018"></a>2018 年 2 月
 

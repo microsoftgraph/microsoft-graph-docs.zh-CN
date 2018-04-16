@@ -634,7 +634,9 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-无。
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 可访问 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -722,6 +724,36 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 * _Tasks.Read_：获取用户邮箱中的所有未完成任务 (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`)。
 * _Tasks.ReadWrite_：更新用户邮箱中的任务 (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`)。
 * _Tasks.ReadWrite.Shared_：代表其他用户完成任务 (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`)。
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="terms-of-use-permissions"></a>使用条款权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | 阅读所有使用条款协议 | 允许应用代表登录用户阅读使用条款协议。 | 是 |
+| _Agreement.ReadWrite.All_ | 阅读和编写所有使用协议条款 | 允许应用代表登录用户阅读和编写使用条款协议。 | 是 |
+| _AgreementAcceptance.Read_ | 阅读用户使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 |
+| _AgreementAcceptance.Read.All_ | 阅读用户可以访问的使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 |
+
+### <a name="remarks"></a>备注
+
+上述所有权限仅对工作或学校帐户有效。
+
+若要使应用能够阅读或编写委派权限的所有协议或协议接受情况，登录用户必须分配有全局管理员、条件访问管理员或安全管理员角色。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+
+### <a name="example-usage"></a>示例用法
+
+#### <a name="delegated"></a>委派
+以下使用对两种委派权限均有效：
+
+* _Agreement.Read.All_：阅读所有使用条款协议 (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_：阅读和编写所有使用条款协议 (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_：阅读用户使用条款接受状态 (`GET /beta/me/agreementAcceptances`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
