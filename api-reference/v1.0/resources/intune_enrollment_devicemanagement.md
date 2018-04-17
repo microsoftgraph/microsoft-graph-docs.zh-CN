@@ -15,7 +15,10 @@ deviceManagement 资源表示已在 Intune 中预留的租户的集合设备标�
 |id|String|对象的 GUID。|
 
 ## <a name="relationships"></a>关系
-无
+|关系|类型|说明|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {

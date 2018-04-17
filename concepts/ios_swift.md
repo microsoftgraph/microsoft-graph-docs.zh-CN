@@ -8,7 +8,7 @@
 
 可以在以下 GitHub 存储库中下载要创建的应用版本：
 
-* [使用 Microsoft Graph SDK 的适用于 iOS 的 Office 365 Connect 示例](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [使用 Microsoft Graph SDK 的适用于 iOS 的 Office 365 Connect 示例](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 下图显示了将要创建的应用。
 
@@ -342,7 +342,7 @@
 
 
 ## <a name="run-the-app"></a>运行应用
-1. 运行示例前需要提供在“**注册应用**”部分的注册过程中收到的客户端 ID。 打开 **ApplicationConstants.swift**。 你会发现，注册过程中的 ClientID 可以被添加到文件顶部：  
+1. 运行示例前需要提供在“**注册应用**”部分的注册过程中收到的客户端 ID。 打开 **ApplicationConstants.swift**。 你会发现，注册过程中的 ClientID 可以添加到文件顶部：  
 
   ```swift
 struct ApplicationConstants {
@@ -353,7 +353,7 @@ struct ApplicationConstants {
 
   ```
 
-> 注意：你会注意到为该项目配置了以下权限范围：**https://graph.microsoft.com/Mail.Send”、 “https://graph.microsoft.com/User.Read”、 “offline_access”**。该项目中所使用的服务调用，向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址）需要这些应用的权限以正常运行。
+> 注意：你会注意到为该项目配置了以下权限范围：**“https://graph.microsoft.com/Mail.Send”、“https://graph.microsoft.com/User.Read”和“offline_access”**。如果此项目中使用的服务调用要向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址），则需要这些应用权限才能正常运行。
 
 2. 运行示例，点击“**连接**”，使用你的个人帐户、工作或学校帐户登录，并授予所请求的权限。
 

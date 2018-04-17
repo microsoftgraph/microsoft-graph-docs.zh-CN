@@ -1,16 +1,14 @@
-# <a name="delete-user"></a>删除用户
-
-> **重要说明：**Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+# <a name="delete-vpptoken"></a>删除 vppToken
 
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-删除 [user](../resources/intune_troubleshooting_user.md)。
+删除 [vppToken](../resources/intune_onboarding_vpptoken.md)。
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-DELETE /users/{usersId}
+DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -39,7 +37,7 @@ DELETE /users/{usersId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/users/{usersId}
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ### <a name="response"></a>响应

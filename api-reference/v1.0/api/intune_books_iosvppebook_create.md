@@ -41,7 +41,7 @@ POST /deviceAppManagement/managedEBooks
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|电子图书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|上次修改电子图书的日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |informationUrl|String|详细信息 URL。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|Vpp 令牌 ID。|

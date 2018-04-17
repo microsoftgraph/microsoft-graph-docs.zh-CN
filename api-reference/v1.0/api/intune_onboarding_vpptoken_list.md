@@ -1,16 +1,14 @@
-# <a name="update-user"></a>更新用户
-
-> **重要说明：**Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+# <a name="list-vpptokens"></a>列出 vppTokens
 
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-更新 [user](../resources/intune_troubleshooting_user.md) 对象的属性。
+列出 [vppToken](../resources/intune_onboarding_vpptoken.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-PATCH /users/{usersId}
+GET /deviceAppManagement/vppTokens
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -30,28 +28,16 @@ PATCH /users/{usersId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [user](../resources/intune_troubleshooting_user.md) 对象的 JSON 表示形式。
-
-下表显示创建 [user](../resources/intune_troubleshooting_user.md) 时所需的属性。
-
-|属性|类型|说明|
-|:---|:---|:---|
-|id|String|用户的唯一标识符|
-
-
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [user](../resources/intune_troubleshooting_user.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [vppToken](../resources/intune_onboarding_vpptoken.md) 对象集合。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{usersId}
-Content-type: application/json
-Content-length: 2
-
-{}
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 ```
 
 ### <a name="response"></a>响应
@@ -59,11 +45,26 @@ Content-length: 2
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 95
+Content-Length: 659
 
 {
-  "@odata.type": "#microsoft.graph.user",
-  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.vppToken",
+      "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+      "organizationName": "Organization Name value",
+      "vppTokenAccountType": "education",
+      "appleId": "Apple Id value",
+      "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+      "token": "Token value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "state": "valid",
+      "lastSyncStatus": "inProgress",
+      "automaticallyUpdateApps": true,
+      "countryOrRegion": "Country Or Region value"
+    }
+  ]
 }
 ```
 
