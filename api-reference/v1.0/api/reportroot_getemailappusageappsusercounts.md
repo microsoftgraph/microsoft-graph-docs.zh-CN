@@ -1,20 +1,20 @@
-# <a name="reportroot-getemailappusageappsusercounts"></a><span data-ttu-id="fb50f-101">reportRoot: getEmailAppUsageAppsUserCounts</span><span class="sxs-lookup"><span data-stu-id="fb50f-101">reportRoot: getEmailAppUsageAppsUserCounts</span></span>
+# <a name="reportroot-getemailappusageappsusercounts"></a><span data-ttu-id="190cb-101">reportRoot: getEmailAppUsageAppsUserCounts</span><span class="sxs-lookup"><span data-stu-id="190cb-101">reportRoot: getEmailAppUsageAppsUserCounts</span></span>
 
-<span data-ttu-id="fb50f-102">获取每个电子邮件应用的唯一用户数。</span><span class="sxs-lookup"><span data-stu-id="fb50f-102">Get the count of unique users per email app.</span></span>
+<span data-ttu-id="190cb-102">获取每个电子邮件应用的唯一用户数。</span><span class="sxs-lookup"><span data-stu-id="190cb-102">Get the count of unique users per email app.</span></span>
 
-> <span data-ttu-id="fb50f-103">**注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。</span><span class="sxs-lookup"><span data-stu-id="fb50f-103">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
+> <span data-ttu-id="190cb-103">**注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 电子邮件应用使用情况](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)。</span><span class="sxs-lookup"><span data-stu-id="190cb-103">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fb50f-104">权限</span><span class="sxs-lookup"><span data-stu-id="fb50f-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="190cb-104">权限</span><span class="sxs-lookup"><span data-stu-id="190cb-104">Permissions</span></span>
 
-<span data-ttu-id="fb50f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="fb50f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="190cb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="190cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="fb50f-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="fb50f-107">Permission type</span></span>                        | <span data-ttu-id="fb50f-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fb50f-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="190cb-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="190cb-107">Permission type</span></span>                        | <span data-ttu-id="190cb-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="190cb-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="fb50f-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fb50f-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="fb50f-110">不支持。</span><span class="sxs-lookup"><span data-stu-id="fb50f-110">Not supported.</span></span>                           |
-| <span data-ttu-id="fb50f-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fb50f-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb50f-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="fb50f-112">Not supported.</span></span>                           |
-| <span data-ttu-id="fb50f-113">应用</span><span class="sxs-lookup"><span data-stu-id="fb50f-113">Application</span></span>                            | <span data-ttu-id="fb50f-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb50f-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="190cb-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="190cb-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="190cb-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="190cb-110">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="190cb-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="190cb-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="190cb-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="190cb-112">Not supported.</span></span>                           |
+| <span data-ttu-id="190cb-113">应用</span><span class="sxs-lookup"><span data-stu-id="190cb-113">Application</span></span>                            | <span data-ttu-id="190cb-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="190cb-114">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="fb50f-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fb50f-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="190cb-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="190cb-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,46 +22,46 @@
 GET /reports/getEmailAppUsageAppsUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a><span data-ttu-id="fb50f-116">请求参数</span><span class="sxs-lookup"><span data-stu-id="fb50f-116">Request parameters</span></span>
+## <a name="request-parameters"></a><span data-ttu-id="190cb-116">请求参数</span><span class="sxs-lookup"><span data-stu-id="190cb-116">Request parameters</span></span>
 
-<span data-ttu-id="fb50f-117">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="fb50f-117">In the request URL, provide the following query parameter with a valid value.</span></span>
+<span data-ttu-id="190cb-117">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="190cb-117">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="fb50f-118">参数</span><span class="sxs-lookup"><span data-stu-id="fb50f-118">Parameter</span></span> | <span data-ttu-id="fb50f-119">类型</span><span class="sxs-lookup"><span data-stu-id="fb50f-119">Type</span></span>   | <span data-ttu-id="fb50f-120">说明</span><span class="sxs-lookup"><span data-stu-id="fb50f-120">Description</span></span>                              |
+| <span data-ttu-id="190cb-118">参数</span><span class="sxs-lookup"><span data-stu-id="190cb-118">Parameter</span></span> | <span data-ttu-id="190cb-119">类型</span><span class="sxs-lookup"><span data-stu-id="190cb-119">Type</span></span>   | <span data-ttu-id="190cb-120">说明</span><span class="sxs-lookup"><span data-stu-id="190cb-120">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="fb50f-121">period</span><span class="sxs-lookup"><span data-stu-id="fb50f-121">period</span></span>    | <span data-ttu-id="fb50f-122">string</span><span class="sxs-lookup"><span data-stu-id="fb50f-122">string</span></span> | <span data-ttu-id="fb50f-123">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fb50f-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fb50f-124">受支持的 {Period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="fb50f-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fb50f-125">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fb50f-125">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fb50f-126">必需。</span><span class="sxs-lookup"><span data-stu-id="fb50f-126">Required.</span></span> |
+| <span data-ttu-id="190cb-121">period</span><span class="sxs-lookup"><span data-stu-id="190cb-121">period</span></span>    | <span data-ttu-id="190cb-122">string</span><span class="sxs-lookup"><span data-stu-id="190cb-122">string</span></span> | <span data-ttu-id="190cb-123">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="190cb-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="190cb-124">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="190cb-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="190cb-125">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="190cb-125">These values follow the format D   where    represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="190cb-126">必需。</span><span class="sxs-lookup"><span data-stu-id="190cb-126">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="fb50f-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="fb50f-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="190cb-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="190cb-127">Request headers</span></span>
 
-| <span data-ttu-id="fb50f-128">名称</span><span class="sxs-lookup"><span data-stu-id="fb50f-128">Name</span></span>          | <span data-ttu-id="fb50f-129">说明</span><span class="sxs-lookup"><span data-stu-id="fb50f-129">Description</span></span>                              |
+| <span data-ttu-id="190cb-128">名称</span><span class="sxs-lookup"><span data-stu-id="190cb-128">Name</span></span>          | <span data-ttu-id="190cb-129">说明</span><span class="sxs-lookup"><span data-stu-id="190cb-129">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="fb50f-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="fb50f-130">Authorization</span></span> | <span data-ttu-id="fb50f-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="fb50f-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="fb50f-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fb50f-133">If-None-Match</span></span> | <span data-ttu-id="fb50f-134">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="fb50f-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fb50f-135">可选。</span><span class="sxs-lookup"><span data-stu-id="fb50f-135">Optional.</span></span> |
+| <span data-ttu-id="190cb-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="190cb-130">Authorization</span></span> | <span data-ttu-id="190cb-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="190cb-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="190cb-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="190cb-133">If-None-Match</span></span> | <span data-ttu-id="190cb-134">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="190cb-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="190cb-135">可选。</span><span class="sxs-lookup"><span data-stu-id="190cb-135">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fb50f-136">响应</span><span class="sxs-lookup"><span data-stu-id="fb50f-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="190cb-136">响应</span><span class="sxs-lookup"><span data-stu-id="190cb-136">Response</span></span>
 
-<span data-ttu-id="fb50f-137">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="fb50f-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fb50f-138">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="fb50f-138">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="190cb-137">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="190cb-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="190cb-138">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="190cb-138">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="fb50f-139">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="fb50f-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="190cb-139">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="190cb-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="fb50f-140">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="fb50f-140">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="190cb-140">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="190cb-140">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="fb50f-141">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="fb50f-141">Report Refresh Date</span></span>
-- <span data-ttu-id="fb50f-142">Mail for Mac</span><span class="sxs-lookup"><span data-stu-id="fb50f-142">Mail For Mac</span></span>
-- <span data-ttu-id="fb50f-143">Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="fb50f-143">Outlook For Mac</span></span>
-- <span data-ttu-id="fb50f-144">Outlook for Windows</span><span class="sxs-lookup"><span data-stu-id="fb50f-144">Outlook For Windows</span></span>
-- <span data-ttu-id="fb50f-145">Outlook for Mobile</span><span class="sxs-lookup"><span data-stu-id="fb50f-145">Outlook For Mobile</span></span>
-- <span data-ttu-id="fb50f-146">适用于移动设备的其他应用</span><span class="sxs-lookup"><span data-stu-id="fb50f-146">Other For Mobile</span></span>
-- <span data-ttu-id="fb50f-147">Outlook for Web</span><span class="sxs-lookup"><span data-stu-id="fb50f-147">Outlook For Web</span></span>
-- <span data-ttu-id="fb50f-148">POP3 应用</span><span class="sxs-lookup"><span data-stu-id="fb50f-148">POP3 App</span></span>
-- <span data-ttu-id="fb50f-149">IMAP4 应用</span><span class="sxs-lookup"><span data-stu-id="fb50f-149">IMAP4 App</span></span>
-- <span data-ttu-id="fb50f-150">SMTP 应用</span><span class="sxs-lookup"><span data-stu-id="fb50f-150">SMTP App</span></span>
-- <span data-ttu-id="fb50f-151">报表周期</span><span class="sxs-lookup"><span data-stu-id="fb50f-151">Report Period</span></span>
+- <span data-ttu-id="190cb-141">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="190cb-141">Report Refresh Date</span></span>
+- <span data-ttu-id="190cb-142">Mail for Mac</span><span class="sxs-lookup"><span data-stu-id="190cb-142">Mail For Mac</span></span>
+- <span data-ttu-id="190cb-143">Outlook for Mac</span><span class="sxs-lookup"><span data-stu-id="190cb-143">Outlook For Mac</span></span>
+- <span data-ttu-id="190cb-144">Outlook for Windows</span><span class="sxs-lookup"><span data-stu-id="190cb-144">Outlook For Windows</span></span>
+- <span data-ttu-id="190cb-145">Outlook for Mobile</span><span class="sxs-lookup"><span data-stu-id="190cb-145">Outlook For Mobile</span></span>
+- <span data-ttu-id="190cb-146">适用于移动设备的其他应用</span><span class="sxs-lookup"><span data-stu-id="190cb-146">Other For Mobile</span></span>
+- <span data-ttu-id="190cb-147">Outlook for Web</span><span class="sxs-lookup"><span data-stu-id="190cb-147">Outlook For Web</span></span>
+- <span data-ttu-id="190cb-148">POP3 应用</span><span class="sxs-lookup"><span data-stu-id="190cb-148">POP3 App</span></span>
+- <span data-ttu-id="190cb-149">IMAP4 应用</span><span class="sxs-lookup"><span data-stu-id="190cb-149">IMAP4 App</span></span>
+- <span data-ttu-id="190cb-150">SMTP 应用</span><span class="sxs-lookup"><span data-stu-id="190cb-150">SMTP App</span></span>
+- <span data-ttu-id="190cb-151">报表周期</span><span class="sxs-lookup"><span data-stu-id="190cb-151">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="fb50f-152">示例</span><span class="sxs-lookup"><span data-stu-id="fb50f-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="190cb-152">示例</span><span class="sxs-lookup"><span data-stu-id="190cb-152">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fb50f-153">请求</span><span class="sxs-lookup"><span data-stu-id="fb50f-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="190cb-153">请求</span><span class="sxs-lookup"><span data-stu-id="190cb-153">Request</span></span>
 
-<span data-ttu-id="fb50f-154">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fb50f-154">The following is an example of the request.</span></span>
+<span data-ttu-id="190cb-154">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="190cb-154">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -72,9 +72,9 @@ GET /reports/getEmailAppUsageAppsUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageAppsUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="fb50f-155">响应</span><span class="sxs-lookup"><span data-stu-id="fb50f-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="190cb-155">响应</span><span class="sxs-lookup"><span data-stu-id="190cb-155">Response</span></span>
 
-<span data-ttu-id="fb50f-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fb50f-156">The following is an example of the response.</span></span>
+<span data-ttu-id="190cb-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="190cb-156">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -84,7 +84,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="fb50f-157">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="fb50f-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="190cb-157">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="190cb-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
