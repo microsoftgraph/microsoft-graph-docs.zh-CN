@@ -30,7 +30,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 正在设置[邮件](../resources/message.md)的**发件人**和**收件人**属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [重点收件箱](../resources/manage_focused_inbox.md) |
 | 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [附件的方法](../resources/attachment.md#methods) |
-| 获取或更新用户的自动答复、区域设置或时区 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md) | [获取用户的邮箱设置](../api/user_get_mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user_update_mailboxsettings.md) |
+| 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user_get_mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user_update_mailboxsettings.md) |
 | **邮件和文件夹管理** | | |
 | 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [MailFolder 的方法](../resources/mailfolder.md#methods) |
 | 搜索和筛选邮件 | [邮件](../resources/message.md) | [查询参数](../../../concepts/query_parameters.md)  |

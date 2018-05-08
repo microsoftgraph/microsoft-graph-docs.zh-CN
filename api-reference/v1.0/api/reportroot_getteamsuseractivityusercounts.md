@@ -8,7 +8,7 @@
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :--------------------------------------- |
-| 委派（工作或学校帐户）     | 不支持。                           |
+| 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
@@ -26,7 +26,7 @@ GET /reports/getTeamsUserActivityUserCounts(period='{period_value}')
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {Period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -38,7 +38,7 @@ GET /reports/getTeamsUserActivityUserCounts(period='{period_value}')
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
 CSV 文件包含下面的列标题：
 

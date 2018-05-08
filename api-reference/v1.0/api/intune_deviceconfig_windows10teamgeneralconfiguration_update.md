@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
 |connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
 |maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
-|maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 1 至 5|
+|maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
 |maintenanceWindowStartTime|TimeOfDay|设备更新的维护时段开始时间。|
 |miracastChannel|String|频道。 可取值为：`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive`。|
 |miracastBlocked|Boolean|指示是否阻止无线投影。|

@@ -95,7 +95,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+##### <a name="request-1"></a>请求 1
 第一个示例获取指定的事件。它指定以下内容：
 
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a>响应
+##### <a name="response-1"></a>响应 1
 
 下面是一个响应示例。以 HTML 默认格式返回 **body** 属性。
 
@@ -145,9 +145,19 @@ Content-length: 1928
         "dateTime":"2017-04-21T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Assembly Hall"
+    "location": {
+        "displayName": "Assembly Hall",
+        "locationType": "default",
+        "uniqueId": "Assembly Hall",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Assembly Hall",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "attendees":[
         {
             "type":"required",
@@ -181,13 +191,130 @@ Content-length: 1928
 }
 ```
 
+
+##### <a name="request-2"></a>请求 2
+
+第二个示例显示获取指定多个地点的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_multiple_locations"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+```
+##### <a name="response-2"></a>响应 2
+下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
+
+由于该请求未指定任何 `Prefer: outlook.timezone` 标头，**start** 和 **end** 属性将以默认的 UTC 时区显示。 
+
+事件正文采用的是默认的 HTML 格式。  
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
+}
+```
+
+
+
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

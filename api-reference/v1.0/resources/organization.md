@@ -10,8 +10,8 @@
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization_get.md) | [组织](organization.md) |读取 organization 对象的属性和关系。|
-|[更新](../api/organization_update.md) | [组织](organization.md)  |更新 organization 对象。（仅可以更新 **marketingNotificationMails** 和 **technicalNotificationMails** 属性。） |
-|**开放扩展**| | |
+|[更新](../api/organization_update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
+|**开放扩展**| | ||**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| | |
@@ -34,6 +34,7 @@
 | objectType                           | String                                                            | 一个标识对象类型的字符串。对于租户，该值始终为“Company”。                                                                                                                                                                                                 |
 | postalCode                           | String                                                            | 组织地址的邮政编码。                                                                                                                                                                                                                                      |
 | preferredLanguage                    | String                                                            | 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。                                                                                                                                                                                         |
+| privacyProfile                       | [privacyProfile](privacyprofile.md)                               | 组织的隐私配置文件。                                                                                                                                                                                                                                              |
 | provisionedPlans                     | [ProvisionedPlan](provisionedplan.md) 集合                  | 不可为 null。                                                                                                                                                                                                                                                                        |
 | provisioningErrors                   | ProvisioningError 集合                                      | 不可为 null。                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
@@ -76,6 +77,7 @@
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],

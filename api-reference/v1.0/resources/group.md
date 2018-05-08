@@ -92,7 +92,7 @@
 |isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
 |邮件|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
-|mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。创建组时必须指定此属性。支持 $filter。|
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。支持 $filter。|
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读。支持 $filter。|

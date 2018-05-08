@@ -104,9 +104,10 @@ Content-length: 600
 ```
 在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
+  "name": "create_event_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -160,9 +161,19 @@ Content-length: 2197
         "dateTime":"2017-04-15T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Harry's Bar"
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "recurrence":null,
     "attendees":[
         {
@@ -186,8 +197,213 @@ Content-length: 2197
 }
 ```
 
+
 ##### <a name="request-2"></a>请求 2
-第二个示例展示了如何创建定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的上午 10:00 点到上午 11:00 点之间发生。
+下一个示例请求指定组织者和与会者可参加会议的 3 个地点。
+
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user_multiple_locations"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+Content-length: 1390
+
+{
+  "subject": "Plan summer company picnic",
+  "body": {
+    "contentType": "HTML",
+    "content": "Let's kick-start this event planning!"
+  },
+  "start": {
+      "dateTime": "2017-08-30T11:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-08-30T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "DanaS@contoso.onmicrosoft.com",
+        "name": "Dana Swope"
+      },
+      "type": "Required"
+    },
+    {
+      "emailAddress": {
+        "address": "AlexW@contoso.onmicrosoft.com",
+        "name": "Alex Wilber"
+      },
+      "type": "Required"
+    }
+  ],
+  "location": {
+    "displayName": "Conf Room 3; Fourth Coffee; Home Office",
+    "locationType": "Default"
+  },
+  "locations": [
+    {
+      "displayName": "Conf Room 3"
+    },
+    {
+      "displayName": "Fourth Coffee",
+      "address": {
+        "street": "4567 Main St",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "32008"
+      },
+      "coordinates": {
+        "latitude": 47.672,
+        "longitude": -102.103
+      }
+    },
+    {
+      "displayName": "Home Office"
+    }
+  ]
+
+}
+```
+
+##### <a name="response-2"></a>响应 2
+以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "name": "create_event_from_user_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 2985
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "createdDateTime":"2017-08-30T07:06:33.8673345Z",
+  "lastModifiedDateTime":"2017-08-30T07:06:34.5079772Z",
+  "changeKey":"y53lbKh6jkaxHzFwGhgyxgAAz3IKMA==",
+  "categories":[
+
+  ],
+  "originalStartTimeZone":"Pacific Standard Time",
+  "originalEndTimeZone":"Pacific Standard Time",
+  "iCalUId":"04000000820089190544",
+  "reminderMinutesBeforeStart":15,
+  "isReminderOn":true,
+  "hasAttachments":false,
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "importance":"normal",
+  "sensitivity":"normal",
+  "isAllDay":false,
+  "isCancelled":false,
+  "isOrganizer":true,
+  "responseRequested":true,
+  "seriesMasterId":null,
+  "showAs":"busy",
+  "type":"singleInstance",
+  "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
+  "onlineMeetingUrl":null,
+  "responseStatus":{
+    "response":"organizer",
+    "time":"0001-01-01T00:00:00Z"
+  },
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "recurrence":null,
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
+}
+```
+
+
+##### <a name="request-3"></a>请求 3
+第三个示例展示了如何创建定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -197,17 +413,17 @@ POST https://graph.microsoft.com/v1.0/me/events
 Content-type: application/json
 
 {
-  "subject": "Let's go for coffee",
+  "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon time work for you?"
   },
   "start": {
-      "dateTime": "2017-09-04T10:00:00",
+      "dateTime": "2017-09-04T12:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "end": {
-      "dateTime": "2017-09-04T11:00:00",
+      "dateTime": "2017-09-04T14:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "recurrence": {
@@ -236,8 +452,8 @@ Content-type: application/json
   ]
 }
 ```
-在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
-##### <a name="response-2"></a>响应 2
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
+##### <a name="response-3"></a>响应 3
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -251,21 +467,21 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
-    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==\"",
-    "id":"AAMkADQwMDI5YT",
-    "createdDateTime":"2017-10-14T07:37:39.0083072Z",
-    "lastModifiedDateTime":"2017-10-14T07:37:40.0239406Z",
-    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==",
+    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
+    "id":"AAMkADQwMD",
+    "createdDateTime":"2017-10-07T04:59:12.9698856Z",
+    "lastModifiedDateTime":"2017-10-07T04:59:13.8136423Z",
+    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==",
     "categories":[
 
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E008000000000068AD4FBF44D301000000000000000010000000CA802EEBDE19CB4AB552714F48C7EEFB",
+    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
-    "subject":"Let's go for coffee",
+    "subject":"Let's go for lunch",
     "bodyPreview":"Does late morning work for you?",
     "importance":"normal",
     "sensitivity":"normal",
@@ -276,7 +492,7 @@ Content-type: application/json
     "seriesMasterId":null,
     "showAs":"busy",
     "type":"seriesMaster",
-    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMDI5YT&exvsurl=1&path=/calendar/item",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
     "responseStatus":{
         "response":"organizer",
@@ -287,16 +503,26 @@ Content-type: application/json
         "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes late morning work for you?\r\n</body>\r\n</html>\r\n"
     },
     "start":{
-        "dateTime":"2017-09-04T10:00:00.0000000",
+        "dateTime":"2017-09-04T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
     "end":{
-        "dateTime":"2017-09-04T11:00:00.0000000",
+        "dateTime":"2017-09-04T14:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
     "location":{
-        "displayName":"Harry's Bar"
+        "displayName":"Harry's Bar",
+        "locationType":"default",
+        "uniqueId":"Harry's Bar",
+        "uniqueIdType":"private"
     },
+    "locations":[
+        {
+            "displayName":"Harry's Bar",
+            "locationType":"default",
+            "uniqueIdType":"unknown"
+        }
+    ],
     "recurrence":{
         "pattern":{
             "type":"weekly",
@@ -335,7 +561,8 @@ Content-type: application/json
             "name":"Alex Wilber",
             "address":"AlexW@contoso.onmicrosoft.com"
         }
-    }
+    },
+    "OnlineMeeting":null
 }
 ```
 
@@ -343,10 +570,9 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

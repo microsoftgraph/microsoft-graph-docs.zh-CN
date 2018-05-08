@@ -49,28 +49,29 @@
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。|
 |id|String| 只读。|
-|importance|String|事件的重要性。 可取值为：`Low`、`Normal`、`High`。|
+|importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isCancelled|Boolean|如果事件已取消，则设置为 true。|
 |isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
+|locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeetingUrl|String|在线会议的 URL。|
 |organizer|[recipient](recipient.md)|事件的组织者。|
-|originalEndTimeZone|字符串|创建事件时设置的结束时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。|
+|originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 |responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |responseStatus|[responseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
-|sensitivity|String| 可能的值是：`Normal`、`Personal`、`Private`、`Confidential`。|
+|sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|分配给项目的类别。|
-|showAs|String|要显示的状态。 可取值为 `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
 |subject|String|事件的主题行文本。|
-|type|String|事件类型。 可取值为 `SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。 只读。|
+|type|String|事件类型。 可取值为 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 ## <a name="relationships"></a>关系
@@ -120,6 +121,7 @@
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

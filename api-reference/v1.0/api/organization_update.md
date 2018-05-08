@@ -6,10 +6,10 @@
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
+|权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 不支持。    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委派（工作或学校帐户） | Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -32,31 +32,15 @@ PATCH /organization
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|与租户相关的服务计划的集合。 **注意：**不可为 null。            |
-|city|String|            |
-|companyLastDirSyncTime|DateTimeOffset|租户上次与本地目录同步的时间和日期。|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
-|displayName|String|租户的显示名称。|
-|marketingNotificationEmails|String|                                        **注意：**不可为 null。            |
-|objectType|String|标识对象类型的字符串。 对于租户，值始终为“Company”。 继承自 [directoryObject](../resources/directoryobject.md)。|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **注意：**不可为 null。            |
-|provisioningErrors|ProvisioningError|                                        **注意：**不可为 null。            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **注意：**不可为 null。            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|与该租户相关联的域集合。 **注意：**不可为 null。            |
+|marketingNotificationEmails|String 集合|                                        **注意：**不可为 null。            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String 集合||
+|technicalNotificationMails|String 集合| 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [organization](../resources/organization.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -75,21 +59,15 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
@@ -106,27 +84,7 @@ Content-length: 411
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <br/>

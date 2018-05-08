@@ -49,11 +49,13 @@
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|from|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
+|标记|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
 |id|String||
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |由 [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
@@ -106,11 +108,13 @@
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

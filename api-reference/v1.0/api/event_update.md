@@ -44,16 +44,17 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|与事件相关联的邮件正文。|
 |categories|String|与事件相关联的类别。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
-|重要性|String|事件的重要性。 可取值为：`Low`、`Normal`、`High`。|
+|重要性|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |位置|[位置](../resources/location.md)|事件的位置。|
+|locations|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |onlineMeetingUrl|String|在线会议的链接。|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 |responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
-|sensitivity|String| 可能的值是：`Normal`、`Personal`、`Private`、`Confidential`。|
-|showAs|String|要显示的状态。 可取值为 `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
+|showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |
 |subject|String|事件的主题行文本。|
 
@@ -121,10 +122,9 @@ Content-length: 285
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据（预览）](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
+- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

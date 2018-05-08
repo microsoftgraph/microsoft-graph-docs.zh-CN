@@ -4,11 +4,13 @@
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
+|archiveFolder|string|用户存档文件夹的文件夹 ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。|
 |语言|[localeInfo](localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeZone|string|用户邮箱的默认时区。|
+|workingHours|[workingHours](workinghours.md)|特定时区用户一周的工作天数和小时数。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -17,16 +19,18 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "archiveFolder"
   ],
   "@odata.type": "microsoft.graph.mailboxSettings"
 }-->
 
 ```json
 {
+  "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
-  "timeZone": "string"
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```

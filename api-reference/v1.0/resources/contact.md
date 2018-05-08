@@ -44,6 +44,7 @@
 |部门|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。|
 |emailAddresses|[EmailAddress](emailaddress.md) 集合|联系人的电子邮件地址。|
+|flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标记值。|
 |fileAs|String|联系人备案的姓名。|
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
@@ -109,6 +110,7 @@
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

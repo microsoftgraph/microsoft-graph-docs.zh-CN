@@ -51,11 +51,13 @@ mailFolder 中的邮件。
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|from|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
+|标记|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
 |inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |由 [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
@@ -120,11 +122,13 @@ Prefer: outlook.allow-unsafe-html
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "String (timestamp)",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

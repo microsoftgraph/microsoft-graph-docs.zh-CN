@@ -29,11 +29,11 @@
 |azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
 |connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
 |maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
-|maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 1 至 5|
+|maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
 |maintenanceWindowStartTime|TimeOfDay|设备更新的维护时段开始时间。|
 |miracastChannel|String|频道。 可取值为：`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive`。|
 |miracastBlocked|Boolean|指示是否阻止无线投影。|
-|miracastRequirePin|Boolean|指示是否需要 pin 才能进行无线投影。|
+|miracastRequirePin|Boolean|指示是否需要 PIN 才能进行无线投影。|
 |settingsBlockMyMeetingsAndFiles|Boolean|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
 |settingsBlockSessionResume|Boolean|指定是否允许在会话超时时恢复会话。|
 |settingsBlockSigninSuggestions|Boolean|指定是否禁用计划会议的被邀请者自动填充登录对话框。|

@@ -48,7 +48,8 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
-|邮件|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
+|messageRules | [messageRule](messagerule.md) 集合 | 适用于用户“收件箱”文件夹的规则集合。 | 
+|messages|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
 
@@ -60,6 +61,7 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
+    "messageRules", 
     "messages",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
@@ -78,6 +80,7 @@ Outlook 中的 MailFolder 可包含多个类型的项，例如，收件箱可以
   "unreadItemCount": 1024,
 
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
