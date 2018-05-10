@@ -16,7 +16,7 @@
 |[获取驱动器](../api/drive_get.md) | [驱动器](drive.md)  |获取 drive 对象的属性。 |
 |[创建组](../api/group_post_groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
 |[列出组](../api/group_list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
-|[列出组织](../api/organization_list.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
+|[列出组织](../api/organization_get.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
 |[列出 subscribedSku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
 |[创建用户](../api/user_post_users.md) |[用户](user.md)| 通过发布到用户集合创建新用户。|
 |[列出用户](../api/user_list.md) | [用户](user.md) 集合 |获取 user 对象集合。 |

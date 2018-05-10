@@ -42,7 +42,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用标识符](intune_mam_mobileappidentifier.md)
 - [代理域](intune_mam_proxieddomain.md)
 - [目标托管应用配置](intune_mam_targetedmanagedappconfiguration.md)
-- [目标托管应用程序策略分配](intune_mam_targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune_mam_targetedmanagedappprotection.md)
 - [用户](intune_mam_user.md)
 - [Windows 信息保护应用学习摘要](intune_wip_windowsinformationprotectionapplearningsummary.md)

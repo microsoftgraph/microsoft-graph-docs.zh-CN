@@ -11,16 +11,13 @@
 |:---|:---|:---|
 |[列出 managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) 集合|列出 [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) 对象的属性和关系。|
 |[获取 managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|读取 [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) 对象的属性和关系。|
-|[创建 managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|创建新的 [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) 对象。|
-|[删除 managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|无|删除 [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)。|
-|[更新 managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|更新 [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|String|实体的键。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|version|String|实体版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|version|String|实体的版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |content|[Json](../resources/intune_mam_json.md)|状态报告内容。|
 
 ## <a name="relationships"></a>关系

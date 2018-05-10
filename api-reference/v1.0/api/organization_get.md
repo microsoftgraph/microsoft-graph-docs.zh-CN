@@ -6,9 +6,11 @@
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、Directory.Read.All    |
+|委派（工作或学校帐户） | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+
+> 注意：授予 User.Read 权限的应用程序仅能读取组织的 *id*、*displayName* 和 *verifiedDomains* 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Directory.Read.All。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
