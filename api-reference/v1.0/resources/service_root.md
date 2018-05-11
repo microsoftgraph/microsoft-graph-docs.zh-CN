@@ -1,25 +1,25 @@
-# <a name="service-root"></a>服务根
+# <a name="service-root"></a><span data-ttu-id="79ba2-101">服务根</span><span class="sxs-lookup"><span data-stu-id="79ba2-101">Service root</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="79ba2-102">方法</span><span class="sxs-lookup"><span data-stu-id="79ba2-102">Methods</span></span>
 
 
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="79ba2-103">方法</span><span class="sxs-lookup"><span data-stu-id="79ba2-103">Method</span></span>           | <span data-ttu-id="79ba2-104">返回类型</span><span class="sxs-lookup"><span data-stu-id="79ba2-104">Return Type</span></span>    |<span data-ttu-id="79ba2-105">说明</span><span class="sxs-lookup"><span data-stu-id="79ba2-105">Description</span></span>|
 |:---------------|:--------|:----------|
-|[创建设备](../api/device_post_devices.md) |[设备](device.md)| 通过发布到设备集合创建新设备。|
-|[列出设备](../api/device_list.md) | [设备](device.md)集合 |获取 device 对象集合。 |
-|[激活 directoryRole](../api/directoryrole_post_directoryroles.md) | [directoryRole](directoryrole.md) |激活目录角色。 |
-|[列出 directoryRole](../api/directoryrole_list.md) | [directoryRole](directoryrole.md) 集合 |获取 directoryRole 对象集合。 |
-|[列出 directoryRoleTemplate](../api/directoryroletemplate_list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |获取 directoryRoleTemplate 对象集合。 |
-|[列出驱动器](../api/drive_list.md) | [驱动器](drive.md) 集合 |获取 drive 对象集合。 |
-|[获取驱动器](../api/drive_get.md) | [驱动器](drive.md)  |获取 drive 对象的属性。 |
-|[创建组](../api/group_post_groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
-|[列出组](../api/group_list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
-|[列出组织](../api/organization_list.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
-|[列出 subscribedSku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
-|[创建用户](../api/user_post_users.md) |[用户](user.md)| 通过发布到用户集合创建新用户。|
-|[列出用户](../api/user_list.md) | [用户](user.md) 集合 |获取 user 对象集合。 |
+|[<span data-ttu-id="79ba2-106">创建设备</span><span class="sxs-lookup"><span data-stu-id="79ba2-106">Create device</span></span>](../api/device_post_devices.md) |[<span data-ttu-id="79ba2-107">设备</span><span class="sxs-lookup"><span data-stu-id="79ba2-107">device</span></span>](device.md)| <span data-ttu-id="79ba2-108">通过发布到设备集合创建新设备。</span><span class="sxs-lookup"><span data-stu-id="79ba2-108">Create a new device by posting to the devices collection.</span></span>|
+|[<span data-ttu-id="79ba2-109">列出设备</span><span class="sxs-lookup"><span data-stu-id="79ba2-109">List device</span></span>](../api/device_list.md) | <span data-ttu-id="79ba2-110">[设备](device.md)集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-110">[device](device.md) collection</span></span> |<span data-ttu-id="79ba2-111">获取 device 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-111">Get device object collection.</span></span> |
+|[<span data-ttu-id="79ba2-112">激活 directoryRole</span><span class="sxs-lookup"><span data-stu-id="79ba2-112">Activate directoryRole</span></span>](../api/directoryrole_post_directoryroles.md) | [<span data-ttu-id="79ba2-113">directoryRole</span><span class="sxs-lookup"><span data-stu-id="79ba2-113">directoryRole</span></span>](directoryrole.md) |<span data-ttu-id="79ba2-114">激活目录角色。</span><span class="sxs-lookup"><span data-stu-id="79ba2-114">Activate a directory role.</span></span> |
+|[<span data-ttu-id="79ba2-115">列出 directoryRole</span><span class="sxs-lookup"><span data-stu-id="79ba2-115">List directoryRole</span></span>](../api/directoryrole_list.md) | <span data-ttu-id="79ba2-116">[directoryRole](directoryrole.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-116">[directoryRole](directoryrole.md) collection</span></span> |<span data-ttu-id="79ba2-117">获取 directoryRole 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-117">Get directoryRole object collection.</span></span> |
+|[<span data-ttu-id="79ba2-118">列出 directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="79ba2-118">List directoryRoleTemplate</span></span>](../api/directoryroletemplate_list.md) | <span data-ttu-id="79ba2-119">[directoryRoleTemplate](directoryroletemplate.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-119">[directoryRoleTemplate](directoryroletemplate.md) collection</span></span> |<span data-ttu-id="79ba2-120">获取 directoryRoleTemplate 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-120">Get directoryRoleTemplate object collection.</span></span> |
+|[<span data-ttu-id="79ba2-121">列出驱动器</span><span class="sxs-lookup"><span data-stu-id="79ba2-121">List drive</span></span>](../api/drive_list.md) | <span data-ttu-id="79ba2-122">[驱动器](drive.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-122">[drive](drive.md) collection</span></span> |<span data-ttu-id="79ba2-123">获取 drive 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-123">Get drive object collection.</span></span> |
+|[<span data-ttu-id="79ba2-124">获取驱动器</span><span class="sxs-lookup"><span data-stu-id="79ba2-124">Get drive</span></span>](../api/drive_get.md) | [<span data-ttu-id="79ba2-125">驱动器</span><span class="sxs-lookup"><span data-stu-id="79ba2-125">drive</span></span>](drive.md)  |<span data-ttu-id="79ba2-126">获取 drive 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="79ba2-126">Get drive object properties.</span></span> |
+|[<span data-ttu-id="79ba2-127">创建组</span><span class="sxs-lookup"><span data-stu-id="79ba2-127">Create group</span></span>](../api/group_post_groups.md) |[<span data-ttu-id="79ba2-128">组</span><span class="sxs-lookup"><span data-stu-id="79ba2-128">group</span></span>](group.md)| <span data-ttu-id="79ba2-129">通过发布到组集合创建新组。</span><span class="sxs-lookup"><span data-stu-id="79ba2-129">Create a new group by posting to the groups collection.</span></span>|
+|[<span data-ttu-id="79ba2-130">列出组</span><span class="sxs-lookup"><span data-stu-id="79ba2-130">List group</span></span>](../api/group_list.md) | <span data-ttu-id="79ba2-131">[组](group.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-131">[group](group.md) collection</span></span> |<span data-ttu-id="79ba2-132">获取 group 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-132">Get group object collection.</span></span> |
+|[<span data-ttu-id="79ba2-133">列出组织</span><span class="sxs-lookup"><span data-stu-id="79ba2-133">List organization</span></span>](../api/organization_get.md) | <span data-ttu-id="79ba2-134">[组织](organization.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-134">[organization](organization.md) collection</span></span> |<span data-ttu-id="79ba2-135">获取 organization 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-135">Get organization object collection.</span></span> |
+|[<span data-ttu-id="79ba2-136">列出 subscribedSku</span><span class="sxs-lookup"><span data-stu-id="79ba2-136">List subscribedSku</span></span>](../api/subscribedsku_list.md) | <span data-ttu-id="79ba2-137">[subscribedSku](subscribedsku.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-137">[subscribedSku](subscribedsku.md) collection</span></span> |<span data-ttu-id="79ba2-138">获取 subscribedSku 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-138">Get subscribedSku object collection.</span></span> |
+|[<span data-ttu-id="79ba2-139">创建用户</span><span class="sxs-lookup"><span data-stu-id="79ba2-139">Create user</span></span>](../api/user_post_users.md) |[<span data-ttu-id="79ba2-140">用户</span><span class="sxs-lookup"><span data-stu-id="79ba2-140">user</span></span>](user.md)| <span data-ttu-id="79ba2-141">通过发布到用户集合创建新用户。</span><span class="sxs-lookup"><span data-stu-id="79ba2-141">Create a new user by posting to the users collection.</span></span>|
+|[<span data-ttu-id="79ba2-142">列出用户</span><span class="sxs-lookup"><span data-stu-id="79ba2-142">List user</span></span>](../api/user_list.md) | <span data-ttu-id="79ba2-143">[用户](user.md) 集合</span><span class="sxs-lookup"><span data-stu-id="79ba2-143">[user](user.md) collection</span></span> |<span data-ttu-id="79ba2-144">获取 user 对象集合。</span><span class="sxs-lookup"><span data-stu-id="79ba2-144">Get user object collection.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
