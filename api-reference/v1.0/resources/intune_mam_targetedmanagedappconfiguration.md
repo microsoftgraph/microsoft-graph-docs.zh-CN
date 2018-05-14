@@ -26,8 +26,8 @@
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) 集合|一组字符串键和字符串值对，要发送到配置范围确定的用户的应用，且不被此服务改变 继承自 [ managedAppConfiguration ](../resources/intune_mam_managedappconfiguration.md)|
-|deployedAppCount|Int32|当前策略部署到的应用的数量。|
+|customSettings|[keyValuePair](../resources/intune_mam_keyvaluepair.md) 集合|要发送到配置范围确定的用户应用的一组字符串键和字符串值对，不由此服务更改。继承自 [ managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|
+|deployedAppCount|Int32|当前策略部署到的应用的计数。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。|
 
 ## <a name="relationships"></a>关系

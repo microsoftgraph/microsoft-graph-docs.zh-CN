@@ -19,7 +19,7 @@
 
 若要开始，将需要以下各项： 
 
-- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - Android Studio 2.0 或更高版本
 
 
@@ -46,23 +46,23 @@
 
 2. 选择“**添加应用**”。
 
-    > **提示：**如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”****复选框，再选择“创建”****按钮。
+    > **提示：**如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”**** 复选框，再选择“创建”**** 按钮。
 
 3. 输入应用名称，再选择“创建”****。 
     
-    对于“引导式安装”****流：
+    对于“引导式安装”**** 流：
  
     a. 选择“移动和桌面应用”****，定义要创建的应用类型。
 
     b. 选择“Android”****，定义要使用的移动技术。
 
-    c. 查看入门主题。完成后，选择页面底部的“安装”****按钮。
+    c. 查看入门主题。完成后，选择页面底部的“安装”**** 按钮。
 
-    d.根据有关“设置”****步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
+    d.根据有关“设置”**** 步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
 
-    e. 按照“使用”****步骤中的说明操作，将 MSAL 逻辑添加到新项目中。
+    e. 按照“使用”**** 步骤中的说明操作，将 MSAL 逻辑添加到新项目中。
 
-    f.在“配置”****页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
+    f.在“配置”**** 页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
 
     <br/>
     
@@ -72,9 +72,9 @@
 
     a.复制应用程序 ID。这是应用的唯一标识符。 
 
-    b. 选择“添加平台”****和“原生应用”****。
+    b. 选择“添加平台”**** 和“原生应用”****。
 
-      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
+      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
       
       c. 添加委托权限。 需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
 
@@ -83,7 +83,7 @@
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>验证用户并获取访问令牌
 
-> **注意：**如果已按照应用注册门户中“引导式安装”****流内的说明操作来新建应用，可以跳过这些步骤。 若要详细了解 Graph API，请参阅[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk)。
+> **注意：**如果已按照应用注册门户中“引导式安装”**** 流内的说明操作来新建应用，可以跳过这些步骤。 若要详细了解 Graph API，请参阅[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk)。
 
 接下来，将逐步演示 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，方便大家了解已添加的 MSAL 和 Microsoft Graph 代码。
 
@@ -102,7 +102,7 @@
 
 ### <a name="start-the-authentication-flow"></a>启动身份验证流
 
-1. 打开“AuthenticationManager”****文件，再依次查找“PublicClientApplication”****对象声明和“getInstance”****方法中的实例化。
+1. 打开“AuthenticationManager”**** 文件，再依次查找“PublicClientApplication”**** 对象声明和“getInstance”**** 方法中的实例化。
 
    ```java
     private static PublicClientApplication mPublicClientApplication;
@@ -237,7 +237,7 @@
 
 <br/>
    
-连接示例应用对主要活动使用“连接”****按钮。 如果选择此按钮，应用会在首次使用时通过设备浏览器显示身份验证页。 下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
+连接示例应用对主要活动使用“连接”**** 按钮。 如果选择此按钮，应用会在首次使用时通过设备浏览器显示身份验证页。 下一步是处理授权服务器发送到重定向 URI 的代码，并用它来交换访问令牌。
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>用授权代码交换访问令牌
 
@@ -498,7 +498,7 @@
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>使用 Microsoft Graph REST API 调用 Microsoft Graph
 
-[Microsoft Graph REST API](http://developer.microsoft.com/zh-CN/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
+[Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) 通过一个 REST API 终结点从 Microsoft 云服务公开了多个 API。按照下列步骤使用 REST API。
 
 1. 将 Internet 权限添加到应用打开 **AndroidManifest** 文件并将以下子级添加到清单元素。
     
@@ -583,7 +583,7 @@
 1. 启动 Android 模拟器，或将物理设备连接到计算机。
 2. 在 Android Studio 中，按 Shift+F10 运行应用。
 3. 从部署对话框中选择 Android 模拟器或设备。
-4. 点击主要活动的“浮动操作”****按钮。
+4. 点击主要活动的“浮动操作”**** 按钮。
 5. 使用个人帐户/工作或学校帐户登录，并授予请求的权限。
 6. 在“应用选择”对话框中，点击应用即可继续。
 
@@ -598,6 +598,6 @@
 ## <a name="see-also"></a>另请参阅
 
 - [适用于 Android 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_overview)
-- [代表用户获取访问权限](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_v2_user)
-- [不代表用户获取访问权限](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_v2_service)
+- [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [不代表用户获取访问权限](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

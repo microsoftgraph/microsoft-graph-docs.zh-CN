@@ -39,7 +39,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|ID|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_mam_deviceandappmanagementassignmenttarget.md)|组或应用的部署标识符|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|组或应用的部署标识符|
 
 
 

@@ -24,7 +24,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDevi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4878
+Content-Length: 4920
 
 {
   "value": {
@@ -57,6 +57,7 @@ Content-Length: 4878
     "id": "705c034c-034c-705c-4c03-5c704c035c70",
     "userId": "User Id value",
     "deviceName": "Device Name value",
+    "managedDeviceOwnerType": "company",
     "deviceActionResults": [
       {
         "@odata.type": "microsoft.graph.deviceActionResult",

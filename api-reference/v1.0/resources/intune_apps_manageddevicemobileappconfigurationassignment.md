@@ -16,7 +16,7 @@
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|该实体的唯一标识符。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)|向其分配 T&C 策略的分配目标。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|向其分配 T&C 策略的分配目标。|
 
 ## <a name="relationships"></a>关系
 无

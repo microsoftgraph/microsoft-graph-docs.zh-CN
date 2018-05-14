@@ -18,7 +18,7 @@
 |description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|书籍封面。|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|书籍封面。|
 |createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。|
 |informationUrl|String|详细信息 Url。|

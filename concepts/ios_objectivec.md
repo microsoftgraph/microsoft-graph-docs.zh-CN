@@ -4,7 +4,7 @@
 
 > 若要跨**所有企业方案**支持**全部企业客户**，必须使用 Azure AD 终结点，并使用 [Azure 门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅[在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
-本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/zh-CN/graph/docs/concepts/converged_auth) 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 iOS 的 Office 365 Connect 示例 (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) 中的代码，以说明你在使用 Microsoft Graph 的应用中必须实现的主要概念。本文介绍了如何通过使用 [适用于 iOS 的Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios) 来访问 Microsoft Graph。
+本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) 获取访问令牌和调用 Microsoft Graph 所需的任务。本文演示了 [适用于 iOS 的 Office 365 Connect 示例 (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) 中的代码，以说明你在使用 Microsoft Graph 的应用中必须实现的主要概念。本文介绍了如何通过使用 [适用于 iOS 的Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios) 来访问 Microsoft Graph。
 
 可以在以下 GitHub 存储库中下载要创建的应用版本：
 
@@ -17,7 +17,7 @@
 
 将工作流连接到 Microsoft Graph 并进行身份验证，通过工作或个人帐户登录，最后向收件人发送邮件。
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/zh-CN/getting-started) 快速准备就绪并开始运行。
+**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -25,7 +25,7 @@
 
 * Apple 的 [Xcode](https://developer.apple.com/xcode/downloads/)
 * 安装 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 作为依存关系管理器。
-* 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+* 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 * [适用于 iOS 的 Microsoft Graph 初学者项目](https://github.com/microsoftgraph/ios-objectivec-connect-sample) 本模板包含可向其添加代码的类。 若要获取此项目，请在此位置克隆或下载示例项目，然后可以使用 **starter-project** 文件夹中的工作区 (**ios-objectivec-connect-sample.xcworkspace**)。
 
 ## <a name="register-the-app"></a>注册应用
@@ -36,7 +36,7 @@
     
     将显示注册页，其中列出应用的属性。
  
-4. 在“平台”****下，选择“添加平台”****。
+4. 在“平台”**** 下，选择“添加平台”****。
 5. 选择“本机平台”****。
 6. 将客户端 ID 复制到剪贴板。将需要在示例应用中输入该值。
 
@@ -208,7 +208,7 @@
     }
 ```
 3. 打开 **SendMailViewController.m** 并将以下方法添加到类中。
-**uploadPictureToOneDrive** 从用户的[用户](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)信息上传[用户](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)的个人资料图片，并返回由示例发送的要嵌入电子邮件正文中的 Web 共享 URL。
+**uploadPictureToOneDrive** 从用户的[用户](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)信息上传[用户](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)的个人资料图片，并返回由示例发送的要嵌入电子邮件正文中的 Web 共享 URL。
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -235,7 +235,7 @@
     }
   ```
 4. 打开 **SendMailViewController.m** 并将以下方法添加到类中。 
-**getUserPicture** 返回[用户](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)的个人资料图片（如果可用）。
+**getUserPicture** 返回[用户](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)的个人资料图片（如果可用）。
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -254,7 +254,7 @@
 
    ```
 3. 打开 **SendMailViewcontroller.m** 并将以下方法添加到类中。
-此方法获取可表示经过身份验证的用户的 [user](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user) 资源，并缓存必要的字段以获取用户的个人资料图片并发送电子邮件。
+此方法获取可表示经过身份验证的用户的 [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) 资源，并缓存必要的字段以获取用户的个人资料图片并发送电子邮件。
    ```objectivec
    //Retrieve the logged in user's display name and email address
    -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
@@ -321,7 +321,7 @@
    NSString * const kScopes = @"https://graph.microsoft.com/User.Read, https://graph.microsoft.com/Mail.ReadWrite, https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/Files.ReadWrite";
    ```      
 
->注意：你会注意到为该项目配置了以下权限范围：**https://graph.microsoft.com/Mail.Send”、 “https://graph.microsoft.com/User.Read”、 “offline_access”**。该项目中所使用的服务调用，向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址）需要这些应用的权限以正常运行。
+>注意：你会注意到为该项目配置了以下权限范围：**“https://graph.microsoft.com/Mail.Send”、“https://graph.microsoft.com/User.Read”和“offline_access”**。如果此项目中使用的服务调用要向你的邮件帐户发送邮件并检索一些个人资料信息（显示名称、电子邮件地址），则需要这些应用权限才能正常运行。
 
 2. 运行示例，点击“**连接**”，使用你的个人帐户、工作或学校帐户登录，并授予所请求的权限。
 
@@ -333,5 +333,5 @@
 
 ## <a name="see-also"></a>另请参阅
 - [适用于 iOS 的 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

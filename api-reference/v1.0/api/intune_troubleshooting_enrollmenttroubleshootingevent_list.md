@@ -1,5 +1,7 @@
 # <a name="list-enrollmenttroubleshootingevents"></a>列出 enrollmentTroubleshootingEvents
 
+> **重要说明：**Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
 > **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列出 [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md) 对象的属性和关系。
@@ -37,7 +39,7 @@ GET /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>响应

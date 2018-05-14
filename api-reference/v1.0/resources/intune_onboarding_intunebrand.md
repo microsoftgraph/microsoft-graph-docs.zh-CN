@@ -16,8 +16,8 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune_onboarding_rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
 |showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
-|lightBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
-|darkBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
+|lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
+|darkBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 

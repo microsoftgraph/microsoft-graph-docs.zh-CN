@@ -35,7 +35,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|尚未记录|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|尚未记录|
 
 
 

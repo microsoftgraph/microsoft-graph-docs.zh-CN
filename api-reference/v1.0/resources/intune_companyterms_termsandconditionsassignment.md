@@ -16,7 +16,7 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_companyterms_deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 ## <a name="relationships"></a>关系
 无

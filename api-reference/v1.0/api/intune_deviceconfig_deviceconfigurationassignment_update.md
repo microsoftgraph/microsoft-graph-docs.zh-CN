@@ -35,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|分配的键。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 
 
 
