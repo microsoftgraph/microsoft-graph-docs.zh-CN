@@ -8,6 +8,7 @@
 		<Item text="混合部署（预览）" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="版本控制和支持" url="/en-us/concepts/versioning_and_support" />
+	<Item text="使用条款" url="/en-us/misc/terms-of-use" />
   </Item>
   <Item text="快速入门" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android、Microsoft Graph API、演练" SEODescription="开始使用 Microsoft Graph 在 Android 应用中访问 Microsoft 云数据" />
@@ -35,6 +36,7 @@
   <Item text="跨设备体验" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview">
     <Item text="活动源" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="设备中继（预览）" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="构建跨设备的应用" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="客户预订（预览）" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="设备和应用" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
@@ -64,6 +66,7 @@
   <Item text="报告" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="安全（预览）" url="/en-us/concepts/security-concept-overview">
 	<Item text="与 SIEM 集成" url="/en-us/concepts/security_siemintegration" />
+	<Item text="授权" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="站点和列表" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="社交智能" url="/en-us/concepts/social-intel-concept-overview">
@@ -5572,7 +5575,6 @@
 			<Item text="更新警报" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="错误" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="与 SIEM 集成" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="站点和列表" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, 网站, 列表, 驱动器, microsoft graph api, sharepoint api">
       <Item text="网站" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint、网站、多个网站、microsoft graph api、sharepoint 网站 api">
