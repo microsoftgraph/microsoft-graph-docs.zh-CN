@@ -1,6 +1,6 @@
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 OneNote API 的最佳做法
 
-本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于我们在 StackOverflow 和 Twitter 上看到的常见问题的答案。
+本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Stack Overflow 和 Twitter 上的常见问题的解答。
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>使用 $select 选择所需的最小属性集
 查询资源（例如，笔记本中的分区）时，会发出类似于以下内容的请求。
