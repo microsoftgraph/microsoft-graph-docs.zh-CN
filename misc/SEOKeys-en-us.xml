@@ -49,18 +49,19 @@
 	  <Item text="共享邮件文件夹" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="说明" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="使用 Microsoft Graph 将应用与 OneNote 集成。">
-    <Item text="最佳做法" url="/en-us/concepts/onenote_best_practices" SEODescription="遵循最佳做法，使用 Microsoft Graph 中的 OneNote API。" />  <Item text="" url="/en-us/concepts/" />
-	<Item text="品牌准则" url="/en-us/concepts/onenote-branding" />
+    <Item text="获取 OneNote 内容" url="/en-us/concepts/onenote-get-content" />
 	<Item text="打开 OneNote 客户端" url="/en-us/concepts/open_onenote_client" SEODescription="在特定页面或笔记本中打开 OneNote 应用程序。" />
-	<Item text="使用笔记标记" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="错误代码" url="/en-us/concepts/onenote_error_codes" SEODescription="查找 Microsoft Graph 中 OneNote API 返回的错误代码。" />
-  <Item text="获取 OneNote 内容" url="/en-us/concepts/onenote-get-content" />
 	<Item text="创建页面" url="/en-us/concepts/onenote-create-page" />
 	<Item text="更新页面内容" url="/en-us/concepts/onenote_update_page" />
-	<Item text="创建绝对定位的元素" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="添加图像、视频和文件" url="/en-us/concepts/onenote_images_files" />
+	<Item text="创建绝对定位的元素" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="提取数据" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="使用笔记标记" url="/en-us/concepts/onenote-note-tags" />
+	<Item Label="资源" url="" />
 	<Item text="输入和输出 HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="了解创建、更新或分析所返回 OneNote 页面内容时的输入和输出 HTML。" />
+	<Item text="最佳做法" url="/en-us/concepts/onenote_best_practices" SEODescription="遵循最佳做法，使用 Microsoft Graph 中的 OneNote API。" />  <Item text="" url="/en-us/concepts/" />
+	<Item text="品牌准则" url="/en-us/concepts/onenote-branding" />
+	<Item text="错误代码" url="/en-us/concepts/onenote_error_codes" SEODescription="查找 Microsoft Graph 中 OneNote API 返回的错误代码。" />
   </Item>
   <Item text="个人联系人" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="报告" url="/en-us/concepts/reportroot-concept-overview" />
@@ -1316,7 +1317,7 @@
         </Item>
         <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget" />
         <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget" />
-        <Item text="iOS 管理的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
+        <Item text="iOS 托管应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_create" />
@@ -1760,7 +1761,7 @@
       <Item text="获取邮件" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="获取邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="检索邮件对象的属性和关系。" />
       <Item text="更新邮件" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="更新邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="更新邮件对象的属性。" />
       <Item text="删除邮件" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="删除邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="删除邮件。" />
-      <Item text="发送邮件" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="发送邮件、Microsoft Graph API、Outlook 邮件 API" SEODescription="发送邮件" />
+      <Item text="发送邮件" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="发送邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="发送邮件" />
       <Item text="复制邮件" url="/en-us/api-reference/v1.0/api/message_copy" SEOKeyword="复制邮件、Microsoft Graph API、Outlook 邮件 API" SEODescription="复制邮件" />
       <Item text="移动邮件" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="移动邮件, Microsoft Graph API, Outlook 邮件 API" SEODescription="移动邮件" />
       <Item text="创建邮件回复" url="/en-us/api-reference/v1.0/api/message_createreply" SEOKeyword="创建邮件回复, Microsoft Graph API, Outlook 邮件 API" SEODescription="" />
@@ -2167,7 +2168,8 @@
       <Item text="删除架构扩展" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="删除架构扩展, Microsoft Graph API" SEODescription="删除架构扩展定义。" />
   </Item>
    <Item text="更改通知" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="数据解析, Microsoft Graph API, 用户 API" SEODescription="">
-    <Item text="订阅" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="数据解析、Microsoft Graph API、用户 API" SEODescription="">
+    <Item text="订阅" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="数据解析, Microsoft Graph API, 用户 API" SEODescription="">
+	  <Item text="列出订阅" url="/en-us/api-reference/v1.0/api/subscription_list" />
       <Item text="获取订阅" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="列出订阅, Microsoft Graph API, webhoook API" SEODescription="检索订阅列表。" />
       <Item text="创建订阅" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="更新订阅" url="/en-us/api-reference/v1.0/api/subscription_update" />
@@ -2406,7 +2408,7 @@
         <Item text="更新事件" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="更新事件, Microsoft Graph API, Outlook 日历 API" SEODescription="更新事件对象的属性。" />
         <Item text="转发事件" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="删除事件" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="删除事件, Microsoft Graph API, Outlook 日历 API" SEODescription="删除事件。" />
-        <Item text="取消事件" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="取消事件、Microsoft Graph API、Outlook 日历 API" SEODescription="取消事件。" />
+        <Item text="取消事件" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="取消事件, Microsoft Graph API, Outlook 日历 API" SEODescription="取消事件。" />
         <Item text="接受事件" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="接受事件, Microsoft Graph API, Outlook 日历 API" SEODescription="" />
         <Item text="暂时接受" url="/en-us/api-reference/beta/api/event_tentativelyaccept" SEOKeyword="事件：tentativelyAccept, Microsoft Graph API, 事件 API" SEODescription="" />
         <Item text="拒绝事件" url="/en-us/api-reference/beta/api/event_decline" SEOKeyword="事件：拒绝, Microsoft Graph API, 事件 API" SEODescription="" />
