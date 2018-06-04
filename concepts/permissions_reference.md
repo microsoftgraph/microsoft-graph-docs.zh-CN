@@ -39,6 +39,32 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 借助授予的适当权限，应用程序可以读取用户或组的配置文件，具体是通过导航属性中的链接获取；例如，`/users/{id}/directReports` 或 `/groups/{id}/members`。
 
 
+## <a name="bookings-permissions"></a>预订权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。 典型目标用户是某预订业务的客户。 | 否 |
+| _Bookings.ReadWrite.Appointments_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 否 |
+| _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 否 |
+| _Bookings.Manage_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _Bookings.Read.All_：获取为租户创建的预订业务集合的 ID 和名称 (`GET /bookingBusinesses`)。
+* _Bookings.ReadWrite.Appointments_：为预订业务中的服务创建约会 (`POST /bookingBusinesses/{id}/appointments`)。
+* _Bookings.ReadWrite.All_：为指定的预订业务创建新服务 (`POST /bookingBusinesses/{id}/services`)。
+* _Bookings.Manage_：使此业务的日程安排页对外部客户可用 (`POST /bookingBusinesses/{id}/publish`)。
+
+---
+
 ## <a name="calendars-permissions"></a>日历权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -174,7 +200,7 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 ### <a name="remarks"></a>注解
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 这些权限仅对工作或学校帐户有效。
 
@@ -454,7 +480,7 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 | _Mail.Send_ |    以用户身份发送邮件 | 允许应用以组织用户身份发送邮件。 | 否 |
 | _Mail.Send.Shared_ |    代表他人发送邮件 | 允许应用以登录用户身份发送邮件，包括代表他人发送邮件。 | 否 |
 | _MailboxSettings.Read_ |  读取用户的邮箱设置 | 允许应用读取用户的邮箱设置。不包括邮件发送权限。 | 否 |
-| _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。不包括邮件发送权限。 | 否 |
+| _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。 不包含直接发送邮件的权限，但允许应用创建能够转发或重定向邮件的规则。 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -795,11 +821,13 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read_       |    登录并读取用户个人资料 | 允许用户登录应用，并允许应用读取登录用户的个人资料。它还允许应用读取登录用户的基本公司信息。| 否 |
-| _User.ReadWrite_ |    对用户个人资料的读写权限 | 允许应用读取您的个人资料。此外，它还允许应用代表您更新您的个人资料。 | 否 |
-| _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。其中包括显示名称、名字和姓氏、电子邮件地址和照片。 | 否 |
+| _User.ReadWrite_ |    对用户个人资料的读写权限 | 允许应用读取登录用户的完整个人资料。 此外，它还允许应用代表登录用户来更新其个人资料信息。 | 否 |
+| _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。 其中包括显示名称、名字和姓氏、电子邮件地址、开放扩展和照片。 此外，还允许应用读取已登录用户的完整个人资料。 | 否 |
 | _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 |
 | _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 |
-| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 |
+| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 可访问 |
+| _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 可访问 |
+
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -807,7 +835,8 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    读取所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取组织中其他用户的整套个人资料属性、组成员身份、下属和经理。| 是 |
 | _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
-| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 是 |
+| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 可访问 |
+| _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 可访问 |
 
 ### <a name="remarks"></a>注解
 
@@ -892,6 +921,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取和写入登录用户的完整用户个人资料   | _User.ReadWrite_ | 对用户个人资料的读写权限 |
 | 应用想要读取和写入所有用户的完整用户个人资料    | _User.ReadWrite.All_ | 读取和写入所有用户的完整个人资料 |
 | 应用要读取和写入登录用户的文件、邮件和日历信息    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  对用户个人资料的读写权限、对用户个人资料的读写权限、对用户邮件的读写权限、具有访问用户日历的完整权限 |
+| 应用想要提交数据策略操作请求，以导出用户的个人数据 | _User.Export.All_ | 导出用户的个人数据。 |
    
 
 ### <a name="access-scenarios-on-the-group-resource"></a>关于组资源的访问方案
@@ -903,3 +933,30 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取和写入所有 Office 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，同时能够更新组成员（若是所有者）。  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
 | 应用想要发现（找到）Office 365 组。它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。     | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|
+
+## <a name="user-activity-permissions"></a>用户活动权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _UserActivity.ReadWrite.CreatedByApp_ |将应用活动读取和写入到用户的活动源 |允许应用读取和报告登录用户在应用中的活动。 |否 |
+
+#### <a name="delegated-permissions"></a>委派权限
+无。
+
+### <a name="remarks"></a>说明
+*UserActivity.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。 
+ 
+与此权限相关联的 *CreatedByApp* 约束指示服务将基于调用应用的标识（MSA 应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。 
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+* _UserActivity.ReadWrite.CreatedByApp_：基于最后一天发布的相关联的历史记录项来获取最近特定用户活动的列表。 (GET /me/activities/recent)。
+* _UserActivity.ReadWrite.CreatedByApp_：发布或更新可能由应用程序用户恢复的用户活动。 (PUT /me/activities/%2Farticle%3F12345)。
+*   _UserActivity.ReadWrite.CreatedByApp_：发布或更新指定用户活动的历史记录项，以表示用户参与的时间段。 (PUT /me/activities/{id}/historyItems/{id})。
+*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。 (DELETE /me/activities/{id})。
+*   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
+
+<br/>

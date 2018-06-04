@@ -68,9 +68,11 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 | 文件夹中的私人联系人 | [联系人](../api-reference/v1.0/resources/contact.md)资源的 [delta](../api-reference/v1.0/api/contact_delta.md) 函数 |
 | 用户 | [用户](../api-reference/v1.0/resources/user.md)资源的 [delta](../api-reference/v1.0/api/user_delta.md) 函数 | 
 | 驱动器项目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) 资源的 [delta](../api-reference/v1.0/api/driveitem_delta.md) 函数 |
-
+| Planner 项目\*\* | [plannerUser](../api-reference/beta/resources/planneruser.md) 资源所有段的 [delta](../api-reference/beta/api/planneruser_list_delta.md) 函数（预览版） |
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。若要详细了解现行语法，请参阅[跟踪驱动器更改](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/item_delta)。
+
+> \*\* Planner 资源的使用模式与其他支持资源类似，仅存在些许差异。  有关详细信息，请参阅[跟踪 Planner 更改](../api-reference/beta/api/planneruser_list_delta.md)。
 
 ## <a name="prerequisites"></a>先决条件
 

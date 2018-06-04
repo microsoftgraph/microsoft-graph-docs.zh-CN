@@ -7,7 +7,7 @@
 ![登录后 Web 应用显示“发送邮件”按钮](./images/angular-connect-sample.png)
 
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行。
+**不想生成一个应用？** 那就使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/zh-CN/getting-started) 快速准备就绪并开始运行吧。
 
 若要下载使用 Azure AD 终结点的 Connect 示例版本，请参阅 [适用于 AngularJS 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth)。
 
@@ -16,7 +16,7 @@
 
 若要开始，将需要以下各项： 
 
-- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/zh-CN/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js with npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - [适用于 AngularJS 的 Microsoft Connect 示例](https://github.com/microsoftgraph/angular-connect-sample)。将使用此次演练示例文件中的 **starter-project** 文件夹。
@@ -34,11 +34,11 @@
 
 4. 复制应用程序 ID。这是配置该应用要使用的应用唯一标识符。
 
-5. 在“**平台**”下，选择“**添加平台**” > “**Web**”。
+5. 在“平台”**** 下，依次选择“添加平台”**** > “Web”****。
 
-6. 请确保已选中“**允许隐式流**”复选框，输入 *http://localhost:8080* 作为重定向 URI。 
+6. 请确保已选中“允许隐式流”**** 复选框，并输入 *http://localhost:8080* 作为重定向 URI。 
 
-7. 选择“**保存**”。
+7. 选择“保存”****。
 
 
 ## <a name="configure-the-project"></a>配置项目
@@ -48,8 +48,8 @@
         npm install  
         bower install
     
-3. 在初学者项目文件的“public/scripts”****文件夹中，打开 config.js。
-4. 在“clientID”****字段中，将 **ENTER_YOUR_CLIENT_ID** 占位符值替换为刚复制的应用程序 ID。
+3. 在初学者项目文件的“public/scripts”**** 文件夹中，打开 config.js。
+4. 在“clientID”**** 字段中，将 **ENTER_YOUR_CLIENT_ID** 占位符值替换为刚复制的应用程序 ID。
 
 ## <a name="call-microsoft-graph-with-the-sdk"></a>使用 SDK 调用 Microsoft Graph
 应用调用 Microsoft Graph 以获取用户信息并代表用户发送电子邮件。这些调用从 MainController 中启动用于响应 UI 事件。
@@ -160,17 +160,17 @@
 
         npm start
 
-2. 在浏览器中，导航至 *http://localhost:8080* 然后选择“**连接**”按钮。
+2. 在浏览器中，导航至 *http://localhost:8080* 然后选择“连接”**** 按钮。
 
 3. 登录并授予所请求的权限。 
 
 4. 还可以编辑收件人的电子邮件地址，然后选择“**发送邮件**”按钮。在邮件发送后，按钮下方将显示成功消息。 
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)试用 REST API。
 - 在 GitHub 上了解我们的其他 [AngularJS 示例](https://github.com/search?utf8=%E2%9C%93&q=angular+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults)。
 
 
 ## <a name="see-also"></a>另请参阅
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)

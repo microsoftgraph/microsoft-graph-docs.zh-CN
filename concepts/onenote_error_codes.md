@@ -36,7 +36,7 @@
 服务无法在请求的部分创建页面，因为该部分受密码保护。
 
 ### <a name="10005"></a>10005
-请求包含超过最大数量的图像标记，其中 **data-render-src** 属性包含 PDF。 请参阅[添加图像和文件](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)。
+请求包含超过最大数量的图像标记，其中 **data-render-src** 属性包含 PDF。 请参阅[添加图像和文件](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-images-files)。
 
 ### <a name="10006"></a>10006
 OneNote API 程序无法在指定部分创建页面，因为该部分已损坏。
@@ -48,7 +48,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
 
 ### <a name="10012"></a>10012
-无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅 https://support.office.com/zh-cn/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7。
+无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅 https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7。
 
 可从库中删除签出要求，也可以移动笔记本。
 
@@ -105,7 +105,7 @@ SharePoint 当前不可用。 请稍后重试。
 未提供指定内容类型的内容处置标头。 
 
 ### <a name="20011"></a>20011
-请求包含格式错误的多部分负载。 问题可能包括缺少空行、缺少末行、部分分隔符格式不正确等。 如果正在手动生成多部分消息，请仔细检查逻辑，或者考虑使用第三方库。 
+请求包含格式错误的多部分有效负载。 问题可能包括缺少空行、缺少末行、部分分隔符格式不正确等。 如果正在手动生成多部分消息，请仔细检查逻辑，或者考虑使用第三方库。 
 
 ### <a name="20012"></a>20012
 请求未提供指定部分的内容类型。 
@@ -142,7 +142,7 @@ SharePoint 当前不可用。 请稍后重试。
 所请求的资源不存在。
 
 ### <a name="20103"></a>20103
-此请求不支持 **expand** 查询。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options)。
+此请求不支持 **expand** 查询。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-get-content#query-options)。
 
 ### <a name="20104"></a>20104
 仅当查询某个部分中的网页集或查询特定页时，才支持 **pagelevel** 查询选项。 例如：  
@@ -231,7 +231,7 @@ PATCH 请求无法修改指定页面。
 你的请求指定的实体类型不受 PATCH 操作支持。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
 
 ### <a name="20136"></a>20136
-你的请求包含无效的 **data-render-src** 或 **data-render-method** 属性或缺失这些属性。 请参阅[从捕获内容中提取数据](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)。
+你的请求包含无效的 **data-render-src** 或 **data-render-method** 属性或缺失这些属性。 请参阅[从捕获内容中提取数据](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-extract-data)。
 
 ### <a name="20137"></a>20137
 目标页面不支持 PATCH 请求。
@@ -240,20 +240,20 @@ PATCH 请求无法修改指定页面。
 PATCH 请求中的目标元素类型不支持 **append** 操作。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
 
 ### <a name="20139"></a>20139
-你的请求包含无效的 **data-tag** 属性值。 请参阅[使用笔记标记](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)。
+你的请求包含无效的 **data-tag** 属性值。 请参阅[使用笔记标记](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-note-tags)。
 
 ### <a name="20140"></a>20140
 你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含**已完成**状态。 示例：
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-请参阅[使用笔记标记](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)。
+请参阅[使用笔记标记](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-note-tags)。
 
 ### <a name="20141"></a>20141
 PATCH 请求中的目标不支持指定操作。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
 
 ### <a name="20142"></a>20142
-你的请求包含子实体的父项或父实体的子项的 **expand** 表达式，但它并不受支持。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options)。
+你的请求包含子实体的父项或父实体的子项的 **expand** 表达式，但它并不受支持。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-get-content#query-options)。
 
 ### <a name="20143"></a>20143
 OData 查询无效。
@@ -265,13 +265,13 @@ OData 查询无效。
 你的请求中的 **select** 或 **expand** 表达式包含无效条件。
 
 ### <a name="20146"></a>20146
-元素上指定了 `style="position:absolute"` 属性，但是 **body** 元素未指定支持定位所需的 `data-absolute-enabled="true"`。 将忽略所有的定位设置。 请参阅[创建绝对定位的元素](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)。
+元素上指定了 `style="position:absolute"` 属性，但是 **body** 元素未指定支持定位所需的 `data-absolute-enabled="true"`。 将忽略所有的定位设置。 请参阅[创建绝对定位的元素](onenote-abs-pos.md)。
 
 ### <a name="20147"></a>20147
-在非 **body** 元素直接子级的元素上指定了不受支持的 `style="position:absolute"` 属性。 如果元素是 **div**、**img** 或 **object**，请使其成为正文的直接子级；否则，将忽略定位设置，并在绝对定位的 div 中呈现它的内容。 请参阅[创建绝对定位的元素](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)。
+在非 **body** 元素直接子级的元素上指定了不受支持的 `style="position:absolute"` 属性。 如果元素是 **div**、**img** 或 **object**，请使其成为正文的直接子级；否则，将忽略定位设置，并在绝对定位的 div 中呈现它的内容。 请参阅[创建绝对定位的元素](onenote-abs-pos.md)。
 
 ### <a name="20148"></a>20148
-在不支持 `style="position:absolute"` 属性的元素类型上指定了此属性。 仅属于页面正文直接子级的 **div**、**img**、和 **object** 元素支持定位。 请参阅[创建绝对定位的元素](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)。
+在不支持 `style="position:absolute"` 属性的元素类型上指定了此属性。 仅属于页面正文直接子级的 **div**、**img**、和 **object** 元素支持定位。 请参阅[创建绝对定位的元素](onenote-abs-pos.md)。
 
 ### <a name="20149"></a>20149
 您的请求指定的目标元素找不到。
@@ -315,14 +315,14 @@ OData 查询无效。
 有关详细信息，请参阅 [OneNote API 限制及避免方法](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)。
 
 ### <a name="20168"></a>20168
-请求中指定的视频源不受支持。 请参阅[支持的视频网站](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos)获取最新列表。
+请求中指定的视频源不受支持。 请参阅[支持的视频网站](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-images-files#videos)获取最新列表。
 
 
 ## <a name="codes-from-30001-to-39999"></a>从 30001 到 39999 的代码
 用户的帐户有问题。
 
 ### <a name="30101"></a>30101
-用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/en-us/)。
+用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/zh-CN/)。
 
 ### <a name="30102"></a>30102
 不能再向请求的节添加任何内容，因为它已经达到其最大大小。

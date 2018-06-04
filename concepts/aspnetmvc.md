@@ -6,15 +6,15 @@
 
 ![具备"获取电子邮件地址"和"发送电子邮件"按钮的 Web 应用](images/aspnet-connect-sample.png "具备‘获取电子邮件地址’和‘发送电子邮件’按钮的 Web 应用")
 
-[Azure AD v2.0 终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) 允许用户使用 Microsoft 帐户 (MSA) 或工作或学校帐户进行登录。应用使用 [ASP.Net OpenID Connect OWIN 中间件](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/)和 [适用于 .Net 的 Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client) 进行登录和令牌管理。
+[Azure AD v2.0 终结点](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-appmodel-v2-overview) 允许用户使用 Microsoft 帐户 (MSA) 或工作或学校帐户进行登录。应用使用 [ASP.Net OpenID Connect OWIN 中间件](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/)和 [适用于 .Net 的 Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client) 进行登录和令牌管理。
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/en-us/graph/quick-start)快速准备就绪并开始运行。此外请注意，我们有[此示例的 REST 版本](https://github.com/microsoftgraph/aspnet-connect-rest-sample)。
+**不想生成一个应用吗？** 使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/zh-CN/graph/quick-start)快速准备就绪并开始运行。此外请注意，我们有[此示例的 REST 版本](https://github.com/microsoftgraph/aspnet-connect-rest-sample)。
 
 ## <a name="prerequisites"></a>先决条件
 
 若要开始，将需要以下各项： 
 
-- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/zh-CN/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [ASP.NET 4.6 的 Microsoft Graph Connect 示例](https://github.com/microsoftgraph/aspnet-connect-sample)。将使用示例文件中的 **starter-project** 文件夹。
 
@@ -37,13 +37,13 @@
 
     将使用此应用程序 ID 和密码来配置应用。 
 
-6. 在“**平台**”下，选择“**添加平台**” > “**Web**”。
+6. 在“平台”**** 下，依次选择“添加平台”**** > “Web”****。
 
-7. 请确保已选中“**允许隐式流**”复选框，输入 *http://localhost:55065/* 作为重定向 URI。 
+7. 请确保已选中“允许隐式流”**** 复选框，并输入 *http://localhost:55065/* 作为重定向 URI。 
 
-    “**允许隐式流**”选项可启用 OpenID Connect 混合流。在身份验证过程中，这可使应用同时接收登录信息 (**id_token**) 以及应用用来获取访问令牌的项目（在这种情况下，项目为授权代码）。
+    “允许隐式流”**** 选项可启用 OpenID Connect 混合流。在身份验证过程中，这可使应用同时接收登录信息 (**id_token**) 以及应用用来获取访问令牌的项目（在这种情况下，项目为授权代码）。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 ### <a name="configure-the-project"></a>配置项目
 
@@ -53,7 +53,7 @@
 
 3. 在 **appSettings** 元素中找到应用配置密钥。将 ENTER_YOUR_CLIENT_ID 和 ENTER_YOUR_SECRET 占位符值替换为刚复制的值。
 
-重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)允许应用获取用户配置文件信息并发送电子邮件。
+重定向 URI 是已注册项目的 URL。已请求的[权限范围](https://developer.microsoft.com/zh-CN/graph/docs/concepts/permission_scopes)允许应用获取用户配置文件信息并发送电子邮件。
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
@@ -65,9 +65,9 @@
 
 初学者项目已为 Microsoft Graph .NET Client Library NuGet 程序包声明依赖项：*Microsoft.Graph*。
 
-1. 右键单击“**帮助程序**”文件夹并选择“**添加**” > “**类**”。 
+1. 右键单击“帮助程序”**** 文件夹并选择“添加”**** > “类”****。 
 
-1. 命名新类 *SDKHelper* 并选择“**添加**”。
+1. 命名新类 *SDKHelper* 并选择“添加”****。
 
 1. 用以下代码替换内容。
 
@@ -104,7 +104,7 @@
 
   请注意，初始化客户端时，调用 **SampleAuthProvider** 以获取令牌。
 
-1. 在“**模型**”文件夹中，打开 GraphService.cs。该服务使用库与 Microsoft Graph 进行交互。
+1. 在“模型”**** 文件夹中，打开 GraphService.cs。该服务使用库与 Microsoft Graph 进行交互。
 
 1. 添加以下 **using** 语句。
 
@@ -257,7 +257,7 @@
             return permission;
         }
 
-1. 在“**控制器**”文件夹中，打开 HomeController.cs。
+1. 在“控制器”**** 文件夹中，打开 HomeController.cs。
 
 1. 添加以下 **using** 语句。
 
@@ -327,18 +327,18 @@
 
 2. 使用个人、工作或学校帐户登录，并授予所请求的权限。
 
-3. 选择“**获取电子邮件地址**”按钮。在操作完成后，已登录用户的电子邮件地址会在此页上显示。
+3. 选择“获取电子邮件地址”**** 按钮。在操作完成后，已登录用户的电子邮件地址会在此页上显示。
 
-4. 还可以编辑收件人列表和电子邮件主题，然后选择“**发送电子邮件**”按钮。在邮件发送后，按钮下方将显示成功消息。
+4. 还可以编辑收件人列表和电子邮件主题，然后选择“发送电子邮件”**** 按钮。在邮件发送后，按钮下方将显示成功消息。
 
 
 ## <a name="next-steps"></a>后续步骤
-- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)试用 REST API。
 - 在 [ASP.NET 4.6 的 Microsoft Graph 代码段示例](https://github.com/microsoftgraph/aspnet-snippets-sample)中查找常见操作的示例，或浏览 GitHub 上的其他 [ASP.NET 示例](http://aka.ms/aspnetgraphsamples)。
 
 ## <a name="see-also"></a>另请参阅
 - [Microsoft Graph.NET 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [用于 web API 身份验证方案的 Web 应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
-- [使用 OpenID Connect 将 Microsoft 标识和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [用于 web API 身份验证方案的 Web 应用程序](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
+- [使用 OpenID Connect 将 Microsoft 标识和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/zh-CN/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)

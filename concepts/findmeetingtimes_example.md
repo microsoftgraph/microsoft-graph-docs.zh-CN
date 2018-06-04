@@ -229,7 +229,9 @@ Content-Length: 714
 
 有时，不是所有与会者都可以参加会议。如果与会者的_置信度_达到某个百分比（可指定 **minimumAttendeePercentage** 可选参数），你可以让 **findMeetingTimes** 建议一个时间。了解有关[会议建议置信度](../api-reference/v1.0/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)和其他[参数](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body)的详细信息，并根据需要将其用于大型会议。
 
-获取会议时间建议后，你可能希望：
+获取会议时间建议后，可能需要：
 
-1. [创建事件并将其作为会议请求发送](../api-reference/v1.0/api/user_post_events.md) 
-2. 在事件中[添加附件](../api-reference/v1.0/api/event_post_attachments.md)
+1. [创建事件并将其作为会议请求发送](../api-reference/v1.0/api/user_post_events.md)。
+2. 在事件中[添加附件](../api-reference/v1.0/api/event_post_attachments.md)。
+
+了解更多关于[与 Outlook 日历集成](outlook-calendar-concept-overview.md)的信息。

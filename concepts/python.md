@@ -70,6 +70,7 @@ response = sendmail(client=MSGRAPH,
 * [Microsoft Graph 的 Python 身份验证示例](https://github.com/microsoftgraph/python-sample-auth)
 * [在 Python 中处理分页 Microsoft Graph 响应](https://github.com/microsoftgraph/python-sample-pagination)
 * [在 Python 中使用 Graph 开放扩展](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [将 Python Web 应用连接到安全 API](https://github.com/microsoftgraph/python-security-rest-sample)
 
 若要查看某个特定示例，请通过[提交问题](https://github.com/microsoftgraph/python-sample-auth/issues)告诉我们。 我们非常期待收到大家就希望在 Python 中生成的任何 Microsoft Graph 方案提供的反馈。
 

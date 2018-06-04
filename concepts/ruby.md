@@ -8,7 +8,7 @@
 
 ![Microsoft Ruby on Rails Connect 示例屏幕截图](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行，或者下载本文基于的 [Ruby REST Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。
+**不想生成一个应用吗？** 使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/zh-CN/getting-started) 快速准备就绪并开始运行，或者下载本文基于的 [Ruby REST Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。
 
 
 ## <a name="prerequisites"></a>先决条件
@@ -19,7 +19,7 @@
 - Rails 框架（该示例已经过 Rails 4.2 测试）。
 - 捆绑程序依存关系管理器
 - 用于 Ruby 的 Rack Web 服务器界面。
-- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](http://dev.office.com/devprogram)
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/zh-CN/office/developer-program/office-365-developer-program-faq#account-types)
 - 适用于 Ruby on Rails 的 Microsoft Graph Connect 初学者项目。下载 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。初学者项目位于“初学者”文件夹中。
 
 
@@ -41,15 +41,15 @@
 
     将使用此应用程序 ID 和应用机密配置应用。
 
-6. 在“**平台**”下，选择“**添加平台**” > “**Web**”。
+6. 在“平台”**** 下，依次选择“添加平台”**** > “Web”****。
 
-7. 请确保已选中“**允许隐式流**”复选框，输入 *http://localhost:3000/auth/microsoft_v2_auth/callback* 作为重定向 URI。
+7. 请确保已选中“允许隐式流”**** 复选框，并输入 *http://localhost:3000/auth/microsoft_v2_auth/callback* 作为重定向 URI。
 
     “允许隐式流”选项启用 OpenID Connect 混合流。在身份验证过程中，这可使应用同时接收登录信息 (id_token) 以及应用用来获取访问令牌的项目（在这种情况下，项目为授权代码）。
 
-    重定向 URL *http://localhost:3000/auth/microsoft_v2_auth/callback* 是 OmniAuth 中间件处理身份验证请求后进行配置所要使用的值。
+    重定向 URI *http://localhost:3000/auth/microsoft_v2_auth/callback* 是 OmniAuth 中间件配置为在处理身份验证请求后使用的值。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 ## <a name="configure-the-project"></a>配置项目
 
@@ -79,7 +79,7 @@
 2. 获取授权代码
 3. 兑换访问令牌的授权代码
 
->有关该身份验证流的详细信息，请参阅 Azure AD 文档中的 [Web 应用程序到 Web API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) 和 [使用 OpenID Connect 将 Microsoft 身份和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)。
+>有关该身份验证流的详细信息，请参阅 Azure AD 文档中的 [Web 应用程序到 Web API](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) 和 [使用 OpenID Connect 将 Microsoft 身份和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/zh-CN/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)。
 
 我们将使用具有三个 [Rack](http://rack.github.io/) 中间件的堆栈来使应用对 Microsoft Graph 进行身份验证。
 
@@ -131,7 +131,7 @@
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
-OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的重定向 URL；在此示例中为 *http://localhost:3000/auth/microsoft_v2_auth/callback*。上述路由模式与该 URL 匹配，因此会将请求路由至页面控制器的 `callback` 方法。
+在 OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的重定向 URL；在此示例中为 *http://localhost:3000/auth/microsoft_v2_auth/callback*。 上述路由模式与该 URL 匹配，因此，会将请求路由至页面控制器的 `callback` 方法。
 
 ### <a name="get-an-access-token"></a>获取访问令牌
 
@@ -173,7 +173,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 
 该方法会检索身份验证哈希，然后存储当前会话中的访问令牌、用户名和电子邮件。
 
-> **注意：**本项目中的简单身份验证和令牌处理操作仅用于说明目的。在生产应用中，可能会构建更为可靠的方法来处理身份验证，其中包括安全令牌处理和令牌刷新。
+> **注意：** 本项目中的简单身份验证和令牌处理操作仅用于说明目的。在生产应用中，可能会构建更为可靠的方法来处理身份验证，其中包括安全令牌处理和令牌刷新。
 
 ## <a name="call-microsoft-graph"></a>调用 Microsoft Graph
 
@@ -285,7 +285,7 @@ OmniAuth 完成对用户的身份验证后，会调用应用注册中指定的�
 3. 转到 Web 浏览器中的 `http://localhost:3000`。
 
 ## <a name="see-also"></a>另请参阅
-- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 试用 REST API。
+- 使用 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)试用 REST API。
 - 在 GitHub 上了解我们的其他 [Microsoft Graph 示例](https://github.com/microsoftgraph)。
 
 

@@ -5,9 +5,9 @@ Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最�
 若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限： 
 
 * People.Read - 用于进行常规的 People API 调用，例如 https://graph.microsoft.com/v1.0/me/people/。People.Read 需要获得最终用户的同意。
-* People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (https://graph.microsoft.com/v1.0/users('{id}')/people) 调用时需要。People.Read.All 需要获得管理员的同意。
+* People.Read.All - 用于检索与登录用户组织 (https://graph.microsoft.com/v1.0/users('{id}')/people) 调用中指定用户相关度最高的人员。People.Read.All 需要获得管理员的同意。
 ## <a name="browse-people"></a>浏览人员
-此部分中的请求可以获取与登录用户 (`/me`) 相关度最高的人员。这些请求需要具有 People.Read 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 查询参数更改此设置。 
+此部分中的请求可以获取与登录用户 (`/me`)，或者与登录用户所在组织中的特定用户相关度最高的人员。这些请求需要分别具有 People.Read 或 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 查询参数更改此设置。 
 ### <a name="get-a-collection-of-relevant-people"></a>获取相关人员集合。 
 以下请求根据通信和协作模式及业务关系获取与登录用户 (`/me`) 相关度最高的人员。 
 
@@ -654,6 +654,133 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="browse-another-users-relevant-people"></a>浏览其他用户的相关人员
+以下请求获取与登录用户组织中的其他人员相关度最高的人员。 此请求需要具有 People.Read.All 权限。 上节所述的所有查询参数也都适用。
+
+在本示例中显示了 Roscoe Seidel 的相关人员。
+
+```http
+GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
+```
+
+以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。下面的示例使用 *$top* 将响应限制为三个记录。
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+     "value": [
+        {
+            "id": "56155636-703F-47F2-B657-C83F01F49BBC",
+            "displayName": "Clifton Clemente",
+            "givenName": "Clifton",
+            "surname": "Clemente",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "Director",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Legal",
+            "officeLocation": "19/2106",
+            "profession": "",
+            "userPrincipalName": "Cliftonc@contoso.onmicrosoft.com",
+            "imAddress": "sip:Cliftonc@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Cliftonc@contoso.onmicrosoft.com",
+                    "relevanceScore": 20
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 309 555 0101"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        },
+        {
+            "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
+            "displayName": "Sheree Mitchell",
+            "givenName": "Sheree",
+            "surname": "Mitchell",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "Product Manager",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Sales & Marketing",
+            "officeLocation": "20/2107",
+            "profession": "",
+            "userPrincipalName": "Shereem@contoso.onmicrosoft.com",
+            "imAddress": "sip:shereem@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Shereem@contoso.onmicrosoft.com",
+                    "relevanceScore": 10
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 918 555 0107"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        },
+        {
+            "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
+            "displayName": "Vincent Matney",
+            "givenName": "Vincent",
+            "surname": "Matney",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "CVP Engineering",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Engineering",
+            "officeLocation": "23/2102",
+            "profession": "",
+            "userPrincipalName": "Vincentm@contoso.onmicrosoft.com",
+            "imAddress": "sip:vincentm@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Vincentm@contoso.onmicrosoft.com",
+                    "relevanceScore": 10
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 502 555 0102"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        }
+    ]
+}
+```
+
 ## <a name="search-people"></a>搜索人员
 此部分中的请求使你可以搜索登录用户 (`/me`) 及登录用户组织中其他用户的相关人员。这些请求需要具有 People.Read 权限，但搜索其他用户的相关人员时除外，这种情况下需要具有 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 参数更改此设置。 
 ### <a name="use-search-to-select-people"></a>使用搜索选择人员 
@@ -806,126 +933,3 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 
 此请求主要进行两次搜索：对登录用户的相关人员的 **displayName** 和 **emailAddress** 属性进行模糊搜索，以及对用户的相关人员进行“pizza”主题搜索。 然后，对结果进行排名、排序并返回。 请注意，该搜索没有限制；可能会得到包含模糊匹配“tyl”的人员的结果和/或对“披萨”感兴趣的人员的结果。
 
-### <a name="search-other-users-relevant-people"></a>搜索其他用户的相关人员
-以下请求获取与登录用户组织中的其他人员相关度最高的人员。此请求需要具有 People.Read.All 权限。在本示例中显示了 Roscoe Seidel 的相关人员。
-
-```http
-GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
-```
-
-以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。下面的示例使用 *$top* 将响应限制为三个记录。
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-     "value": [
-        {
-            "id": "56155636-703F-47F2-B657-C83F01F49BBC",
-            "displayName": "Clifton Clemente",
-            "givenName": "Clifton",
-            "surname": "Clemente",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Director",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Legal",
-            "officeLocation": "19/2106",
-            "profession": "",
-            "userPrincipalName": "Cliftonc@contoso.onmicrosoft.com",
-            "imAddress": "sip:Cliftonc@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 309 555 0101"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        },
-        {
-            "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
-            "displayName": "Sheree Mitchell",
-            "givenName": "Sheree",
-            "surname": "Mitchell",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Product Manager",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Sales & Marketing",
-            "officeLocation": "20/2107",
-            "profession": "",
-            "userPrincipalName": "Shereem@contoso.onmicrosoft.com",
-            "imAddress": "sip:shereem@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 918 555 0107"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        },
-        {
-            "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
-            "displayName": "Vincent Matney",
-            "givenName": "Vincent",
-            "surname": "Matney",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "CVP Engineering",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Engineering",
-            "officeLocation": "23/2102",
-            "profession": "",
-            "userPrincipalName": "Vincentm@contoso.onmicrosoft.com",
-            "imAddress": "sip:vincentm@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 502 555 0102"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        }
-    ]
-}
-```
