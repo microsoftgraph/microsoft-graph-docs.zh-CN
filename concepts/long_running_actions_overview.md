@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 963d2b71b879c285a43378d07c1bfd755f150b9f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
+ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 05/25/2018
+ms.locfileid: "19473151"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作（测试）
 
-> **重要说明：**Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 某些 API 响应完成所需的时间不确定。
 Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。
@@ -53,7 +54,7 @@ HTTP/1.1 202 Accepted
 Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-**注意：**返回的位置 URL 可能不在 Microsoft Graph API 终结点上。
+**注意：** 返回的位置 URL 可能不在 Microsoft Graph API 终结点上。
 
 在很多情况下，请求到此结束，因为复制操作的完成无需应用执行其他任何工作。
 不过，如果应用需要显示复制操作的状态，或确保其正确完成，可以使用监视器 URL。
@@ -61,7 +62,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ## <a name="retrieve-a-status-report-from-the-monitor-url"></a>通过监视器 URL 检索状态报告
 
 为了检查复制操作的状态，应用会请求获取上一响应中返回的 URL。
-*注意：*此请求无需验证，因为这是原始调用方专属的短期 URL。 
+*注意：* 此请求无需验证，因为这是原始调用方专属的短期 URL。 
 
 <!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
 

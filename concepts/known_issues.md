@@ -32,7 +32,7 @@
 
 ### <a name="policy"></a>策略
 
-使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。 
+使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
@@ -104,12 +104,13 @@ GET \users('{id}')\calendars('{id}')\events
 可能会看到错误代码为 `ErrorInternalServerTransientError` 的 HTTP 500。导致错误发生的原因是：
 
 - 过去，日历共享的实现方法有两种。为了加以区分，将它们称为“旧”方法和“新”方法。
-- 新方法当前可用于通过查看或编辑权限共享日历，但无法通过委派权限进行共享。 
-- 只有使用**新**方法共享日历后，才能使用日历 REST API 查看或编辑共享日历。 
+- 新方法当前可用于通过查看或编辑权限共享日历，但无法通过委派权限进行共享。
+- 只有使用**新**方法共享日历后，才能使用日历 REST API 查看或编辑共享日历。
 - 如果使用**旧**方法共享日历，则无法使用日历 REST API 查看或编辑此类日历（或其事件）。
 
 
-如果日历是通过查看或编辑权限共享，但使用的是旧方法，现在可以修复错误，手动将日历共享升级为使用新方法。 随着时间的推移，Outlook 将把所有共享日历（包括通过委托权限共享的日历）自动升级为使用新方法。 
+如果日历是通过查看或编辑权限共享，但使用的是旧方法，现在可以修复错误，手动将日历共享升级为使用新方法。
+随着时间的推移，Outlook 将把所有共享日历（包括通过委托权限共享的日历）自动升级为使用新方法。
 
 若要手动将共享日历升级为使用新方法，请按照以下步骤操作：
 1.  收件人删除以前与他们共享的日历。
@@ -132,7 +133,7 @@ GET \me\calendars('{id}')\events
 
 ### <a name="default-contacts-folder"></a>默认联系人文件夹
 
-在 `/v1.0` 版本中，`GET /me/contactFolders` 不包括用户的默认联系人文件夹。 
+在 `/v1.0` 版本中，`GET /me/contactFolders` 不包括用户的默认联系人文件夹。
 
 将会提供修复程序。同时，您还可以使用以下[列出联系人](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_contacts)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
 
@@ -175,7 +176,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>用于创建草稿的注释参数
 
-用于创建答复或转发草稿的**注释**参数（[createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)）不会成为最终的邮件草稿正文的一部分。  
+用于创建答复或转发草稿的**注释**参数（[createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)）不会成为最终的邮件草稿正文的一部分。
 
 ## <a name="drives-files-and-content-streaming"></a>驱动器、文件和内容流式传输
 
@@ -183,16 +184,20 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ## <a name="query-parameter-limitations"></a>查询参数限制
 
-* **$expand** 限制：
-    * 不支持 `nextLink`
-    * 不支持 1 级以上扩展
-    * 不支持其他参数（**$filter**、**$select**）
-* 不支持多个命名空间
-* 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行获取操作和投射。
+* 不支持多个命名空间。
+* 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行 GET 操作和投影。
 * 不支持 `@odata.bind`。也就是说，开发者无法正确地在组上设置 `Accepted` 或 `RejectedSenders`。
-* 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`
-* 跨工作负载筛选/搜索不可用。 
-* 全文搜索（使用 **$search**）仅对某些实体（如邮件）可用。
+* 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
+* `$expand`:
+  * 不支持 `nextLink`
+  * 不支持 1 级以上扩展
+  * 不支持其他参数（`$filter`、`$select`）
+* `$filter`:
+  * `/attachments` 终结点不支持筛选器。 如果存在，将忽略 `$filter` 参数。
+  * 不支持跨工作负载筛选。
+* `$search`:
+  * 全文搜索仅对实体子集（如邮件）可用。
+  * 不支持跨工作负载搜索。
 
 ## <a name="delta-query"></a>Delta 查询
 
@@ -211,7 +216,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * 更新应用仅限于在首次 beta更新后注册的应用。
 * Azure Active Directory 用户可以注册应用并添加其他所有者。
 * 支持 OpenID Connect 和 OAuth 协议。
-* 无法向应用分配策略。 
+* 无法向应用分配策略。
 * 无法对需要 appId 的 ownedObjects 执行操作（例如，users/{id|userPrincipalName}/ownedObjects/{id}/...）
 
 处于开发阶段的功能：
@@ -235,7 +240,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>创建资源实例的同时添加架构扩展数据
 
-不能在创建 **contact**、**event**、**message** 或 **post** 实例的同一个操作中指定架构扩展。 必须先创建资源实例，然后再对此实例执行 `PATCH`，从而添加架构扩展和自定义数据。 
+不能在创建 **contact**、**event**、**message** 或 **post** 实例的同一个操作中指定架构扩展。
+必须先创建资源实例，然后再对此实例执行 `PATCH`，从而添加架构扩展和自定义数据。
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每资源实例最多可以添加 100 个架构扩展属性值
 
@@ -290,7 +296,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 同时，若要取消阻止开发和测试，可使用以下解决方法。
 
->**注意：**这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
+>**注意：** 这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
 
 1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
 
