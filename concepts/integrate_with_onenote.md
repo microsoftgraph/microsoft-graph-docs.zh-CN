@@ -1,6 +1,8 @@
 # <a name="onenote-api-overview"></a>OneNote API 概述
 
-OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及与他人实时交互笔记。
+OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及通过与他人实时交互笔记展开协作。
+
+![包含节和页面的 OneNote 笔记本](images/onenote-page.png)
 
 ## <a name="why-integrate-with-onenote"></a>为什么与 OneNote 集成？
 
@@ -64,4 +66,4 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 
 若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”****。 使用菜单将 OneNote 切换至“打开”****。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”****。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions_reference.md#notes-permissions)。
 
-若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](../api-reference/v1.0/resources/onenote.md)。
+若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](../api-reference/v1.0/resources/onenote-api-overview.md)。
