@@ -6,11 +6,22 @@
 
 ## <a name="may-2018"></a>2018 年 5 月
 
+### <a name="directory-apis"></a>目录 API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 向 [directory](../api-reference/beta/resources/directory.md) 资源添加了 [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) 函数，以列出给定用户拥有的已删除组。 |
+
 ### <a name="education-api"></a>教育版 API
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 必须有 **Members.Read.Hidden** 范围，才能使用仅应用令牌对 [educationClass](../api-reference/v1.0/resources/educationclass.md) 实体读取或更新 **Members** 集合。 |
+|更改           |Beta           |更新了 [educationsubmission](../api-reference/beta/resources/educationsubmission.md) 状态属性中 **educationSubmissionStatus** 类型的可能值。|
+|更改           |Beta           |向 [educationAssignment](../api-reference/beta/resources/educationassignment.md) 的 assignTo 属性添加了 **educationAssignmentIndividualRecipient** 复杂类型。|
+|更改           |Beta           |添加了 [educationSubmission](../api-reference/beta/resources/educationsubmission.md) 的 **unsubmittedBy**、**unsubmittedDate**、**returnedBy**、**returnedDate** 属性。|
+|添加项         |Beta           |向 [educationSubmission](../api-reference/beta/resources/educationsubmission.md) 添加了 [return](../api-reference/beta/api/educationSubmission_return.md) 和 [unsubmit](../api-reference/beta/api/educationSubmission_unsubmit.md) 操作。|
+|更改           |Beta           |删除了 [educationSubmission](../api-reference/beta/resources/educationsubmission.md) 上的 release 和 recall 操作。|
 
 ### <a name="groups"></a>组
 
@@ -29,6 +40,55 @@
 | 添加项        | Beta          | 添加了 [bookingService](../api-reference/beta/resources/bookingservice.md) 实体和以下 CRUD 方法： <br> [列出](../api-reference/beta/api/bookingbusiness_list_services.md) <br> [创建](../api-reference/beta/api/bookingbusiness_post_services.md) <br> [获取](../api-reference/beta/api/bookingservice_get.md) <br> [更新](../api-reference/beta/api/bookingservice_update.md) <br> [删除](../api-reference/beta/api/bookingservice_delete.md)。|
 | 添加项        | Beta          | 添加了 [bookingStaffMember](../api-reference/beta/resources/bookingstaffmember.md) 实体和以下 CRUD 方法： <br> [列出](../api-reference/beta/api/bookingbusiness_list_staffmembers.md) <br> [创建](../api-reference/beta/api/bookingbusiness_post_staffmembers.md) <br> [获取](../api-reference/beta/api/bookingstaffmember_get.md) <br> [更新](../api-reference/beta/api/bookingstaffmember_update.md) <br> [删除](../api-reference/beta/api/bookingstaffmember_delete.md)。|
 | 添加项        | Beta          | 添加了以下复杂类型： <br> [bookingNamedEntity](../api-reference/beta/resources/bookingnamedentity.md) <br> [bookingPerson](../api-reference/beta/resources/bookingperson.md) <br> [bookingReminder](../api-reference/beta/resources/bookingreminder.md) <br> [bookingWorkHours](../api-reference/beta/resources/bookingworkhours.md) <br> [bookingWorkTimeSlot](../api-reference/beta/resources/bookingworktimeslot.md)。|
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|beta|添加了新实体：<br/>[androidWorkProfileCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)<br/>[easEmailProfileConfigurationBase](../api-reference/beta/resources/intune_deviceconfig_easemailprofileconfigurationbase.md)<br/>[mobileAppIntentAndState](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstate.md)<br/>[mobileAppTroubleshootingEvent](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingevent.md)<br/>[unsupportedDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfiguration.md)<br/>[windowsKioskConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowskioskconfiguration.md)<br/>|
+|添加项|beta|添加了新复杂类型：<br/>[managedDeviceCleanupSettings](../api-reference/beta/resources/intune_devices_manageddevicecleanupsettings.md)<br/>[mobileAppIntentAndStateDetail](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail.md)<br/>[mobileAppTroubleshootingAppPolicyCreationHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory.md)<br/>[mobileAppTroubleshootingAppStateHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory.md)<br/>[mobileAppTroubleshootingAppTargetHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory.md)<br/>[mobileAppTroubleshootingAppUpdateHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory.md)<br/>[mobileAppTroubleshootingDeviceCheckinHistory](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory.md)<br/>[mobileAppTroubleshootingHistoryItem](../api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)<br/>[unsupportedDeviceConfigurationDetail](../api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfigurationdetail.md)<br/>[windowsAutoPilotEnrollmentSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotenrollmentsettings.md)<br/>[windowsKioskActiveDirectoryGroup](../api-reference/beta/resources/intune_deviceconfig_windowskioskactivedirectorygroup.md)<br/>[windowsKioskAppBase](../api-reference/beta/resources/intune_deviceconfig_windowskioskappbase.md)<br/>[windowsKioskAppConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowskioskappconfiguration.md)<br/>[windowsKioskAutologon](../api-reference/beta/resources/intune_deviceconfig_windowskioskautologon.md)<br/>[windowsKioskAzureADGroup](../api-reference/beta/resources/intune_deviceconfig_windowskioskazureadgroup.md)<br/>[windowsKioskAzureADUser](../api-reference/beta/resources/intune_deviceconfig_windowskioskazureaduser.md)<br/>[windowsKioskDesktopApp](../api-reference/beta/resources/intune_deviceconfig_windowskioskdesktopapp.md)<br/>[windowsKioskLocalGroup](../api-reference/beta/resources/intune_deviceconfig_windowskiosklocalgroup.md)<br/>[windowsKioskLocalUser](../api-reference/beta/resources/intune_deviceconfig_windowskiosklocaluser.md)<br/>[windowsKioskMultipleApps](../api-reference/beta/resources/intune_deviceconfig_windowskioskmultipleapps.md)<br/>[windowsKioskProfile](../api-reference/beta/resources/intune_deviceconfig_windowskioskprofile.md)<br/>[windowsKioskSingleUWPApp](../api-reference/beta/resources/intune_deviceconfig_windowskiosksingleuwpapp.md)<br/>[windowsKioskUser](../api-reference/beta/resources/intune_deviceconfig_windowskioskuser.md)<br/>[windowsKioskUWPApp](../api-reference/beta/resources/intune_deviceconfig_windowskioskuwpapp.md)<br/>[windowsKioskVisitor](../api-reference/beta/resources/intune_deviceconfig_windowskioskvisitor.md)<br/>|
+|添加项|beta|添加了新枚举类型：<br/>[defenderScheduleScanDay](../api-reference/beta/resources/intune_deviceconfig_defenderschedulescanday.md)<br/>[defenderSubmitSamplesConsentType](../api-reference/beta/resources/intune_deviceconfig_defendersubmitsamplesconsenttype.md)<br/>[domainNameSource](../api-reference/beta/resources/intune_deviceconfig_domainnamesource.md)<br/>[localSecurityOptionsSmartCardRemovalBehaviorType](../api-reference/beta/resources/intune_deviceconfig_localsecurityoptionssmartcardremovalbehaviortype.md)<br/>[mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md)<br/>[mobileAppIntent](../api-reference/beta/resources/intune_troubleshooting_mobileappintent.md)<br/>[roleAssignmentScopeType](../api-reference/beta/resources/intune_rbac_roleassignmentscopetype.md)<br/>[usernameSource](../api-reference/beta/resources/intune_deviceconfig_usernamesource.md)<br/>[windowsDeviceUsageType](../api-reference/beta/resources/intune_enrollment_windowsdeviceusagetype.md)<br/>|
+|添加项|beta|添加了 [setDeviceName](../api-reference/beta/api/intune_devices_manageddevice_setdevicename.md)<br/>操作到 [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) |
+|删除|beta|删除了以下实体：<br/>**depEnrollmentProfile**<br/>**enrollmentProfile**<br/>**importedAppleDeviceIdentity**<br/>**importedAppleDeviceIdentityResult**<br/>|
+|删除|beta|删除了以下复杂类型：<br/>**managementCertificateWithThumbprint**<br/>|
+|删除|beta|删除了以下枚举类型：<br/>**depTokenType**<br/>**discoverySource**<br/>**iTunesPairingMode**<br/>|
+|删除|beta|在 [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity.md) 集合上删除了 importAppleDeviceIdentityList 操作 |
+|删除|beta|在 [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) 上删除了 [updateDeviceProfileAssignment](../api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md) 操作 |
+|删除|beta|在 [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) 上删除了 setDefaultProfile 操作 |
+|删除|beta|在 [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) 上删除了 shareForSchoolDataSyncService 操作 |
+|删除|beta|在 [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) 上删除了 unshareForSchoolDataSyncService 操作 |
+|删除|beta|在 [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) 上删除了 exportMobileConfig](../api-reference/beta/api/intune_corpenrollment_enrollmentprofile_exportmobileconfig.md) 函数 |
+|添加项|beta|向 [androidEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration.md) 实体添加了 **userDomainNameSource** 和 **customDomainName** 属性|
+|添加项|beta|向 [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) 实体添加了 **workProfileBlockCamera** 和 **workProfileBlockCrossProfileContactsSearch** 属性|
+|添加项|beta|向 [androidWorkProfileGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) 实体添加了 **workProfileBlockCamera** 和 **workProfileBlockCrossProfileContactsSearch** 属性|
+|添加项|beta|向 [defaultManagedAppProtection](../api-reference/beta/resources/intune_mam_defaultmanagedappprotection.md) 实体添加了 **thirdPartyKeyboardsBlocked** 和 **filterOpenInToOnlyManagedApps** 属性|
+|添加项|beta|向 [deviceComplianceUserOverview](../api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview.md) 实体添加了 **conflictCount** 属性|
+|添加项|beta|向 [deviceConfigurationUserOverview](../api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview.md) 实体添加了 **conflictCount** 属性|
+|添加项|beta|向 [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md) 实体添加了 **managedDeviceCleanupSettings** 属性|
+|删除|beta|从 [iosEasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_ioseasemailprofileconfiguration.md) 实体中删除了 **usernameSource** 属性|
+|添加项|beta|向 [iosManagedAppProtection](../api-reference/beta/resources/intune_mam_iosmanagedappprotection.md) 实体添加了 **thirdPartyKeyboardsBlocked** 和 **filterOpenInToOnlyManagedApps** 属性|
+|添加项|beta|向 [macOSLobApp](../api-reference/beta/resources/intune_apps_macoslobapp.md) 实体添加了 **ignoreVersionDetection** 属性|
+|添加项|beta|向 [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) 实体添加了 **pinRequiredOnLaunchInsteadOfBiometric** 和 **pinRequiredInsteadOfBiometricTimeout** 属性|
+|添加项|beta|向 [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) 实体添加了 **autopilotEnrolled**、**requireUserEnrollmentApproval**、**iccid** 和 **udid** 属性|
+|删除|beta|从 [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) 实体中删除了 **isAutopilotEnrolled** 属性|
+|添加项|beta|向 [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) 实体添加了 **notApplicablePlatformCount** 和 **conflictCount** 属性|
+|添加项|beta|向 [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) 实体添加了 **conflictCount** 属性|
+|添加项|beta|向 [roleAssignment](../api-reference/beta/resources/intune_rbac_roleassignment.md) 实体添加了 **scopeType** 属性|
+|删除|beta|从 [windows10EasEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10easemailprofileconfiguration.md) 实体中删除了 **usernameSource** 属性|
+|添加项|beta|向 [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) 实体添加了 **localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees**、**localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers**、**localSecurityOptionsDisableServerDigitallySignCommunicationsAlways**、**localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees**、**localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares**、**localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts**、**localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares**、**localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange** 和 **localSecurityOptionsSmartCardRemovalBehavior** 属性|
+|添加项|beta|向 [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) 实体添加了 **showInstallationProgress**、**blockDeviceSetupRetryByUser**、**allowDeviceResetOnInstallFailure**、**allowLogCollectionOnInstallFailure**、**customErrorMessage**、**installProgressTimeoutInMinutes** 和 **allowDeviceUseOnInstallFailure** 属性|
+|删除|beta|从 [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) 实体中删除了 **title**、**bodyText**、**moreInfoUrl** 和 **moreInfoText** 属性|
+|添加项|beta|向 [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) 实体添加了 **defenderBlockOnAccessProtection**、**defenderScheduleScanDay** 和 **defenderSubmitSamplesConsentType** 属性|
+|添加项|beta|向 [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) 添加了 **language** 和 **enrollmentSettings** 属性|
+|添加项|beta|向 [windowsMobileMSI](../api-reference/beta/resources/intune_apps_windowsmobilemsi.md) 实体添加了 **useDeviceContext** 属性|
+|删除|beta|从 [windowsPhoneEASEmailProfileConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsphoneeasemailprofileconfiguration.md) 实体中删除了 **usernameSource** 属性|
+|删除|beta|从 [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) 实体中删除了 **localActions** 导航属性|
+|删除|beta|从 [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md) 实体中删除了 **enrollmentProfiles** 和 **importedAppleDeviceIdentities** 导航属性|
+|添加项|beta|向 [user](../api-reference/beta/resources/intune_shared_user.md) 实体添加了 **mobileAppIntentAndStates** 和 **mobileAppTroubleshootingEvents** 导航属性|
+|添加项|beta|向 [outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md) 复杂类型添加了 **deviceUsageType** 和 **skipKeyboardSelectionPage** 属性|
+|删除|beta|从 [androidForWorkVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_androidforworkvpnconnectiontype.md) 枚举类型中删除了 **paloAltoGlobalProtect** 成员|
+|添加项|beta|向 [androidUsernameSource](../api-reference/beta/resources/intune_deviceconfig_androidusernamesource.md) 枚举类型添加了 **samAccountName** 和 **primarySmtpAddress** 成员|
+|删除|beta|从 [androidVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_androidvpnconnectiontype.md) 枚举类型中删除了 **paloAltoGlobalProtect** 成员|
+|添加项|beta|向 [windows10VpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_windows10vpnconnectiontype.md) 枚举类型添加了 **paloAltoGlobalProtect** 成员|
 
 ### <a name="insights-api"></a>见解 API
 
@@ -744,7 +804,7 @@
 |更改内容|Beta|将 **assignedAccessMultiModeProfiles** 导航属性添加到 [windows10GeneralConfiguration](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) 实体|
 |更改内容|Beta|将 **protectedAppLockerFiles** 导航属性添加到 [windowsInformationProtection](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) 实体|
 |更改内容|Beta|将 **port** 和 **forceTls** 属性添加到 [airPrintDestination](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_airprintdestination) 复杂类型|
-|更改内容|Beta|更改了 [deviceCompliancePolicySettingState](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate) 复杂类型上以下属性的类型：<br/>**errorCode**（从 Int32 更改为 Int64）<br/>|
+|更改|Beta|更改了 [deviceCompliancePolicySettingState](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate) 复杂类型上以下属性的类型：<br/>**errorCode**（从 Int32 更改为 Int64）<br/>|
 |更改内容|Beta|更改了 [deviceConfigurationSettingState](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) 复杂类型上以下属性的类型：<br/>**errorCode**（从 Int32 更改为 Int64）<br/>|
 |更改内容|Beta|更改了 [windowsNetworkIsolationPolicy](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy) 复杂类型上以下属性的类型：<br/>**enterpriseCloudResources** 从 [windowsNetworkIsolationCloudResourceCollection](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsNetworkIsolationCloudResourceCollection.md) 更改为 [proxiedDomain](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_proxieddomain) 集合<br/>**enterpriseInternalProxyServers** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**enterpriseIPRanges** 从 [windowsNetworkIsolationIPRangeCollection](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_deviceconfig_iprange) 更改为 ipRange 集合<br/>**enterpriseNetworkDomainNames** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**enterpriseProxyServers** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**neutralDomainResources** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>|
 
@@ -1981,7 +2041,7 @@
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 Beta | 添加了遵守 Accept-Encoding:gzip 的支持。 |
 | 添加项        | v1.0          | 现已开始支持展开路径中的强制转换段。 例如，“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
-| 添加项        | Beta          | 添加了对结构化属性的 PATCH 请求的支持。例如：“PATCH /me/mailboxSettings”。 |
+| 新增        | Beta          | 添加了对结构化属性的 PATCH 请求的支持。例如：“PATCH /me/mailboxSettings”。 |
 | 添加项        | Beta          | Outlook 在某些情况下（例如，用户没有邮箱许可证或租户没有 Exchange Online 订阅）无法处理请求时，现在可将 Azure Active Directory 用作 /beta/users/id/photo 请求的回退。注意：此回退同时适用于 GET 和 PATCH。 |
 | 添加项        | Beta          | 现已开始支持展开路径中的强制转换段。 例如：“https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event”。 |
 
@@ -2199,6 +2259,7 @@
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | beta          | 向 [directory](../api-reference/beta/resources/directory.md) 资源添加了 [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) 函数，以列出给定用户拥有的已删除组。 |
+| 删除        | beta          | 从 [group](../api-reference/beta/resources/group.md) 资源中删除了 **renew** 操作。 |
 
 
 ### <a name="drive-api"></a>驱动器 API
@@ -2604,7 +2665,7 @@
 
 |更改类型|版本|说明|
 |:---|:---|:---|
-|Addition|v1.0|添加了 [JSON 批处理](https://developer.microsoft.com/zh-CN/graph/docs/concepts/json_batching)支持。 内部请求限制设置为 20。|
+|添加项|v1.0|添加了 [JSON 批处理](https://developer.microsoft.com/zh-CN/graph/docs/concepts/json_batching)支持。 内部请求限制设置为 20。|
 |更改|Beta|将 [JSON 批处理](https://developer.microsoft.com/zh-CN/graph/docs/concepts/json_batching)内部请求限制从 5 增加到 20。|
 
 ### <a name="education-apis"></a>教育版 API

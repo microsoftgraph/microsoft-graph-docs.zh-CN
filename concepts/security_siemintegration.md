@@ -46,12 +46,14 @@ Azure Monitor 支持各种供应商提供的多个不同的 SIEM 连接器。 �
 
 安全警报是具有很多特权的数据，通常只能由组织内的安全响应人员和全局管理员查看。 为此，在 SIEM 系统中配置租户安全警报集成所需的步骤将需要使用 Azure AD 全局管理员帐户。 此帐户在设置过程中只需使用一次，用以请求将组织的安全警报发送到 Azure Monitor。
 
-> **注意：**目前，Azure Monitor 诊断设置边栏选项卡不允许配置租户级资源。 因为安全 API 警报是租户级资源，所以必须使用 Azure 资源管理器 API 为组织的安全警报配置 Azure Monitor。
+> **注意：** 目前，Azure Monitor 诊断设置边栏选项卡不允许配置租户级资源。 因为安全 API 警报是租户级资源，所以必须使用 Azure 资源管理器 API 为组织的安全警报配置 Azure Monitor。
 
+1. 在 Azure 订阅中，将“microsoft.insights”(Azure Monitor) 注册为资源提供程序。  
+> **注意：** 不要将“Microsoft.SecurityGraph”(Security Graph API) 注册为 Azure 订阅中的资源提供程序，因为“Microsoft.SecurityGraph”是租户级别的提供程序。 租户级配置将是下面 #6 的一部分。 
 
-1. 若要使用 Azure 资源管理器 API 配置 Azure Monitor，请获取 [ARMClient](https://github.com/projectkudu/ARMClient) 工具。 此工具将用于将 REST API 调用从命令行发送到 Azure 门户。
+2. 若要使用 Azure 资源管理器 API 配置 Azure Monitor，请获取 [ARMClient](https://github.com/projectkudu/ARMClient) 工具。 此工具将用于将 REST API 调用从命令行发送到 Azure 门户。
 
-2. 准备诊断设置请求 JSON 文件，如下所示：
+3. 准备诊断设置请求 JSON 文件，如下所示：
 
     ``` json
     {
@@ -81,28 +83,28 @@ Azure Monitor 支持各种供应商提供的多个不同的 SIEM 连接器。 �
      
      **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
      
-     **“天”：**7 是你想要在事件中心保留消息的天数。
+     **“天”：** 7 是你想要在事件中心保留消息的天数。
 
-3. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
+4. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
 
-4. 运行以下命令以登录到 ARMClient 工具。 你需要使用全局管理员帐户凭据。
+5. 运行以下命令以登录到 ARMClient 工具。 你需要使用全局管理员帐户凭据。
 
     ``` shell
     ARMClient.exe login
     ```
 
-5. 运行以下命令以将 Azure Monitor 配置为向事件中心命名空间发送安全警报。 这将自动预配命名空间内的事件中心，并启动流入事件中心的安全警报的流。 确保设置名称（在此示例中是 **securityApiAlerts**）匹配在 JSON 文件中为“名称”**** 字段指定的设置名称。
+6. 运行以下命令以将 Azure Monitor 配置为向事件中心命名空间发送安全警报。 这将自动预配命名空间内的事件中心，并启动流入事件中心的安全警报的流。 确保设置名称（在此示例中是 **securityApiAlerts**）匹配在 JSON 文件中为“名称”**** 字段指定的设置名称。
 
     ``` shell
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
-6. 若要验证是否正确应用了设置，运行此命令并验证输出匹配 JSON 文件设置。
+7. 若要验证是否正确应用了设置，运行此命令并验证输出匹配 JSON 文件设置。
 
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
-7. 退出 ARMClient 工具。 现在，你已完成将租户安全警报发送到事件中心的 Azure Monitor 的配置。
+8. 退出 ARMClient 工具。 现在，你已完成将租户安全警报发送到事件中心的 Azure Monitor 的配置。
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>步骤 3：下载和安装 Splunk 的 Azure Monitor 加载项，以允许 Splunk 使用安全警报
 
