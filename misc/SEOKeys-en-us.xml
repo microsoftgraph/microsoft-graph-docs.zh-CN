@@ -5110,7 +5110,7 @@
           <Item text="分配所有者" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="创建所有者, Microsoft Graph API, 应用程序 API" SEODescription="使用此 API 新建所有者。" />
           <Item text="列出扩展属性" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="列出 extensionProperties, Microsoft Graph API, 应用程序 API" SEODescription="检索 extensionproperty 对象列表。" />
         </Item>
-	  <Item text="审核日志" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="审核日志" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="目录审核" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit 对象, Microsoft Graph API, Azure AD, 审核日志" SEODescription="">
 			<Item text="列出目录审核" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="审核日志 API, Microsoft Graph API, Azure AD, 审核日志" SEODescription="返回 directoryAudit 对象列表的 API。" />
 			<Item text="获取目录审核" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="审核日志 API, Microsoft Graph API, Azure AD, 审核日志" SEODescription="返回 directoryAudit 对象的 API。" />
