@@ -1688,7 +1688,8 @@
       <Item text="获取已删除项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_get" />
       <Item text="列出已删除项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="永久删除项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
-      <Item text="恢复已删除项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="恢复已删除的项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="列出用户拥有的已删除项目" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="设备" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="设备 API, Microsoft Graph API, 设备 API" SEODescription="表示在目录中注册的设备。继承自 DirectoryObject。">
       <Item text="列出设备" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="列出设备, Microsoft Graph API, 设备 API" SEODescription="检索设备对象列表。" />
@@ -5129,7 +5130,7 @@
         <Item text="列出已删除项目" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="永久删除项目" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="恢复已删除的项目" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="列出用户所有已删除的项目" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="列出用户拥有的已删除项目" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="设备" url="/en-us/api-reference/beta/resources/device" SEOKeyword="设备 API, Microsoft Graph API, 设备 API" SEODescription="表示在目录中注册的设备。继承自 DirectoryObject。">
