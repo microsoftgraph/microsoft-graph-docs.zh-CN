@@ -4,7 +4,7 @@
 
 ## <a name="support-policy-and-deprecation-information"></a>支持策略和弃用信息
 
-Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.com/zh-CN/lifecycle)。 
+Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.com/en-us/lifecycle)。 
 
 由于已发布新版本的 Microsoft Graph REST API 和 Microsoft Graph SDK，之前的版本将停用。Microsoft 将在停用 API 或 SDK 之前至少 24 个月声明弃用的版本。 
 
@@ -34,7 +34,7 @@ Microsoft Graph 在版本中进行了许多更改。 这些更改已在 [Microso
  - 更改属性的顺序
  - 更改不透明字符串（例如资源 ID）的长度或格式
 
->**请注意：** 随着时间的推移，我们将更新后向兼容更改的列表。 如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。 Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)中[模型版本控制](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分描述的指导。 
+>**请注意：** 随着时间的推移，我们将更新后向兼容更改的列表。 如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。 Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)中[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分描述的指导。 
 
 ## <a name="versions"></a>版本
 
@@ -56,6 +56,6 @@ Microsoft Graph 的当前版本为 v1.0。 Microsoft Graph API /v1.0 版本在 `
 
 ## <a name="terms-of-use"></a>使用条款
 
-使用 Microsoft Graph API 即表示你同意[使用条款](../misc/terms-of-use.md)。 
+使用 Microsoft Graph API 即表示你同意[使用条款](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use)。 
 
 我们非常重视你的反馈意见。 请在 [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) 上与我们联系。 使用 [MicrosoftGraph] 标记你的问题。

@@ -15,7 +15,7 @@
 - HTTP *授权*请求头（作为一个*持有者*令牌）
 - Graph 客户端构造函数（当使用 Microsoft Graph 客户端库时）
 
-使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
+使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
 
 ## <a name="consent-and-authorization"></a>许可和授权
 
@@ -30,8 +30,8 @@
 - **在配置应用时请考虑周全**。 这会直接影响最终用户和管理体验，以及应用程序的采用和安全性。 例如：
 
     - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
-    - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes)。
-    - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
+    - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)。
+    - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
 
 - **请考虑多租户应用程序**。 预期客户有不同的应用程序和不同状态的同意控件。 例如：
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 ## <a name="storing-data-locally"></a>在本地存储数据
 
-理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 只有在特定方案需要，且该用例被使用条款和隐私策略所涵盖，而且不违反 [Microsoft Graph 使用条款](../misc/terms-of-use.md) 的情况下，在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
+理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 只有在特定方案需要，且该用例被使用条款和隐私策略所涵盖，而且不违反 [Microsoft Graph 使用条款](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) 的情况下，在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
 
 ## <a name="optimizations"></a>优化
 
