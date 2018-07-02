@@ -83,7 +83,7 @@ composer update
     
 3. 将 */oauth* 路由添加到 **app** > **Http** > **routes.php** 文件。若要添加路由，请在默认路由声明后复制以下代码。将应用的**应用程序 ID** 和**密码**插入到分别标记为 **\<YOUR_APPLICATION_ID\>** 和 **\<YOUR_PASSWORD\>** 的占位符中。
     ```php
-    Route::get('/oauth', function () {
+    Route::get('/oauth', function (Request $request) {
         $provider = new \League\OAuth2\Client\Provider\GenericProvider([
             'clientId'                => '<YOUR_APPLICATION_ID>',
             'clientSecret'            => '<YOUR_PASSWORD>',
