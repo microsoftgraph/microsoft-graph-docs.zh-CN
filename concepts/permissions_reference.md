@@ -15,6 +15,7 @@ _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。�
 - 对于应用程序权限，应用的_有效权限_将是权限默示的完整特权级别。例如，具有 _User.ReadWrite.All_ 应用程序权限的应用可以更新组织中每个用户的配置文件。 
 
 ### <a name="microsoft-graph-permission-names"></a>Microsoft Graph 权限名称
+
 Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_。例如，_User.Read_ 授予读取已登录用户的配置文件的权限，_User.ReadWrite_ 授予读取和修改已登录用户的配置文件的权限，而 _Mail.Send_ 则授予代表已登录用户发送邮件的权限。 
 
 名称的 _constraint_ 元素决定了你的应用程序在目录中具有的潜在访问范围。Microsoft Graph 当前支持以下约束： 
@@ -38,6 +39,41 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 借助授予的适当权限，应用程序可以读取用户或组的配置文件，具体是通过导航属性中的链接获取；例如，`/users/{id}/directReports` 或 `/groups/{id}/members`。
 
+---
+
+## <a name="application-resource-permissions"></a>应用程序资源权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+无。
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.ReadWrite.All_ | 读取和写入所有应用 | 允许调用应用在没有登录用户的情况下创建和管理（读取、更新、更新应用程序密码和删除）应用程序和服务主体。  不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
+| _Application.ReadWrite.OwnedBy_ | 管理此应用创建或拥有的应用 | 允许调用应用在没有登录用户的情况下创建其他应用程序和服务主体，以及完全管理这些应用程序和服务主体（读取、更新、更新应用程序密码和删除）。  它无法更新任何不是其所有者的应用程序。 不允许管理对用户或组的同意授权或应用程序分配。 | 是 |
+
+### <a name="remarks"></a>备注
+
+_Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相同的操作，只不过前者只允许对调用应用充当所有者的应用程序和服务主体执行这些操作。 所有权由目标 [application](../api-reference/beta/api/application_list_owners.md) 或 [service principal](../api-reference/beta/api/serviceprincipal_list_owners.md) 资源上的 `owners` 导航属性指示。
+> 注意：使用 _Application.Read Write.Owned by_ 权限调用 `GET /applications` 以列出应用程序将失败，并显示 403。  请改为使用 `GET servicePrincipals/{id}/ownedObjects` 列出调用应用程序充当所有者的应用程序。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+无。
+
+#### <a name="application"></a>应用程序
+
+* _Application.ReadWrite.All_：列出所有应用程序 (`GET /beta/applications`)
+* _Application.ReadWrite.All_：删除服务主体 (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。  注意：这可能需要其他权限。
+
+---
 
 ## <a name="bookings-permissions"></a>预订权限
 
@@ -62,8 +98,6 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 * _Bookings.ReadWrite.Appointments_：为预订业务中的服务创建约会 (`POST /bookingBusinesses/{id}/appointments`)。
 * _Bookings.ReadWrite.All_：为指定的预订业务创建新服务 (`POST /bookingBusinesses/{id}/services`)。
 * _Bookings.Manage_：使此业务的日程安排页对外部客户可用 (`POST /bookingBusinesses/{id}/publish`)。
-
----
 
 ## <a name="calendars-permissions"></a>日历权限
 
@@ -175,53 +209,7 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
-
-## <a name="intune-device-management-permissions"></a>Intune 设备管理权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用 | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-|_DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用 | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-|_DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略 | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-|_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 |
-|_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 |
-|_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-|_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-|_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-|_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-
-#### <a name="application-permissions"></a>应用程序权限
-
-无。
-
-### <a name="remarks"></a>注解
-
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
-
-这些权限仅对工作或学校帐户有效。
-
-### <a name="example-usage"></a>用法示例
-
-#### <a name="application"></a>应用程序
-
-* _DeviceManagementServiceConfiguration.Read.All_：检查 Intune 订阅的当前状态 (`GET /deviceManagement/subscriptionState`)。
-* _DeviceManagementServiceConfiguration.ReadWrite.All_：新建条款和条件 (`POST /deviceManagement/termsAndConditions`)。
-* _DeviceManagementConfiguration.Read.All_：查找设备配置状态 (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)。
-* _DeviceManagementConfiguration.ReadWrite.All_：向组分配设备符合性策略 (`POST deviceCompliancePolicies/{id}/assign`)。
-* _DeviceManagementApps.Read.All_：查找发布到 Intune 的所有 Windows 应用商店应用 (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)。
-* _DeviceManagementApps.ReadWrite.All_：发布新应用程序 (`POST /deviceAppManagement/mobileApps`)。
-* _DeviceManagementRBAC.Read.All_：按名称查找角色分配 (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)。
-* _DeviceManagementRBAC.ReadWrite.All_：新建自定义角色 (`POST /deviceManagement/roleDefinitions`)。
-* _DeviceManagementManagedDevices.Read.All_：按名称查找受管理设备 (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)。
-* _DeviceManagementManagedDevices.ReadWrite.All_：删除受管理设备 (`DELETE /managedDevices/{id}`)。
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_：重置用户的受管理设备上的密码 (`POST /managedDevices/{id}/resetPasscode`)。
-
-有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
+---
 
 ## <a name="directory-permissions"></a>目录权限
 
@@ -318,6 +306,8 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
 
+---
+
 ## <a name="files-permissions"></a>文件权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -360,6 +350,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
+---
 
 ## <a name="group-permissions"></a>组权限
 
@@ -439,6 +430,7 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
  
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
+---
 
 ## <a name="identity-provider-permissions"></a>标识提供程序权限
 
@@ -464,9 +456,58 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 * _IdentityProvider.ReadWrite.All_：更新现有标识提供程序 (`PATCH /beta/identityProviders/{id}`)
 * _IdentityProvider.ReadWrite.All_：删除现有标识提供程序 (`DELETE /beta/identityProviders/{id}`)
 
-有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="intune-device-management-permissions"></a>Intune 设备管理权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用 | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
+|_DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用 | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
+|_DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略 | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
+|_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 |
+|_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 |
+|_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
+|_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
+|_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无。
+
+### <a name="remarks"></a>注解
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+这些权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _DeviceManagementServiceConfiguration.Read.All_：检查 Intune 订阅的当前状态 (`GET /deviceManagement/subscriptionState`)。
+* _DeviceManagementServiceConfiguration.ReadWrite.All_：新建条款和条件 (`POST /deviceManagement/termsAndConditions`)。
+* _DeviceManagementConfiguration.Read.All_：查找设备配置状态 (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)。
+* _DeviceManagementConfiguration.ReadWrite.All_：向组分配设备符合性策略 (`POST deviceCompliancePolicies/{id}/assign`)。
+* _DeviceManagementApps.Read.All_：查找发布到 Intune 的所有 Windows 应用商店应用 (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)。
+* _DeviceManagementApps.ReadWrite.All_：发布新应用程序 (`POST /deviceAppManagement/mobileApps`)。
+* _DeviceManagementRBAC.Read.All_：按名称查找角色分配 (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)。
+* _DeviceManagementRBAC.ReadWrite.All_：新建自定义角色 (`POST /deviceManagement/roleDefinitions`)。
+* _DeviceManagementManagedDevices.Read.All_：按名称查找受管理设备 (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)。
+* _DeviceManagementManagedDevices.ReadWrite.All_：删除受管理设备 (`DELETE /managedDevices/{id}`)。
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_：重置用户的受管理设备上的密码 (`POST /managedDevices/{id}/resetPasscode`)。
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
 ## <a name="mail-permissions"></a>邮件权限
 
 #### <a name="delegated-permissions"></a>委派权限

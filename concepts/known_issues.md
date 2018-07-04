@@ -178,6 +178,28 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 用于创建答复或转发草稿的**注释**参数（[createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)）不会成为最终的邮件草稿正文的一部分。
 
+## <a name="bookings"></a>预订
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>查询 bookingBusinesses 时出现 ErrorExceededFindCountLimit
+
+当组织拥有多个预订业务且提出请求的帐户不是管理员时，获取 `bookingBusinesses` 列表会失败，并显示以下错误代码：
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+可以通过加入查询参数来限制请求返回的业务集，例如：
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## <a name="drives-files-and-content-streaming"></a>驱动器、文件和内容流式传输
 
 * 在通过浏览器访问个人站点之前，用户首次通过 Microsoft Graph 访问个人驱动器会生成 401 响应。
@@ -246,6 +268,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>每资源实例最多可以添加 100 个架构扩展属性值
 
 目录资源（如**设备**、**组**和**用户**）目前将可在资源实例上设置的架构扩展属性值的总数限制为 100。
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>并非所有实体类型都支持对架构扩展属性进行筛选
+
+Outlook 实体类型不支持对架构扩展属性进行筛选（使用 `$filter` 表达式）- **联系人**、**事件**、**消息**或**帖子**。
 
 ## <a name="json-batching"></a>JSON 批处理
 
