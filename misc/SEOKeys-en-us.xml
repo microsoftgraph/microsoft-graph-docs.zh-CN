@@ -404,36 +404,8 @@
 			</Item>
 		</Item>
 	</Item>
-   <Item text="设备和应用" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
+    <Item text="设备和应用" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="应用管理" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
-        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_apps_alllicensedusersassignmenttarget" />
-        <Item text="Android for Work 应用配置架构项" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Android for Work 应用配置架构" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
-        <Item text="Android for Work 注册配置文件" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkenrollmentprofile">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
-          <Item text="revokeToken 操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken" />
-          <Item text="createToken 操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
-        </Item>
-        <Item text="Android for Work 设置" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworksettings">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_update" />
-          <Item text="requestSignupUrl 操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_requestsignupurl" />
-          <Item text="completeSignup 操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_completesignup" />
-          <Item text="syncApps 操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_syncapps" />
-          <Item text="取消绑定操作" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_unbind" />
-        </Item>
         <Item text="Android LOB 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get" />
@@ -449,16 +421,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_update" />
         </Item>
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceandappmanagementassignmenttarget" />
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_books_deviceandappmanagementassignmenttarget" />
-        <Item text="设备应用管理" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceappmanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_update" />
-        </Item>
-        <Item text="设备应用管理" url="/en-us/api-reference/v1.0/resources/intune_books_deviceappmanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_update" />
-        </Item>
+        <Item text="应用配置设置项" url="/en-us/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem" />
         <Item text="设备安装状态" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_get" />
@@ -466,21 +429,13 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_update" />
         </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_update" />
-        </Item>
         <Item text="电子书安装摘要" url="/en-us/api-reference/v1.0/resources/intune_books_ebookinstallsummary">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_update" />
         </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_apps_exclusiongroupassignmenttarget" />
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_books_exclusiongroupassignmenttarget" />
-        <Item text="文件密信息加" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_apps_groupassignmenttarget" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_books_groupassignmenttarget" />
+        <Item text="文件加密信息" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
+        <Item text="安装状态" url="/en-us/api-reference/v1.0/resources/intune_books_installstate" />
         <Item text="iOS 设备类型" url="/en-us/api-reference/v1.0/resources/intune_apps_iosdevicetype" />
-        <Item text="iOS LOB 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="iOS LOB 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_get" />
@@ -488,8 +443,15 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="iOS LOB 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="iOS 设备上的最低操作系统版本" url="/en-us/api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem" />
-        <Item text="iOS 应用商店应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
+        <Item text="iOS 移动应用配置" url="/en-us/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_update" />
+        </Item>
         <Item text="iOS 应用商店应用" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_get" />
@@ -497,13 +459,21 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="iOS VPP 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS 应用商店应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="iOS VPP 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_update" />
+        </Item>
+        <Item text="iOS VPP 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS VPP 电子书" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
         </Item>
         <Item text="iOS VPP 电子书分配" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebookassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_list" />
@@ -512,14 +482,6 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_update" />
         </Item>
-        <Item text="iOS VPP 电子书" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
-        </Item>
-        <Item text="键值对" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_keyvaluepair" />
         <Item text="macOS Office 套件应用" url="/en-us/api-reference/v1.0/resources/intune_apps_macosofficesuiteapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_get" />
@@ -545,12 +507,24 @@
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_get" />
         </Item>
+        <Item text="托管应用可用性" url="/en-us/api-reference/v1.0/resources/intune_apps_managedappavailability" />
+        <Item text="托管设备移动应用配置" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        </Item>
         <Item text="托管设备移动应用配置分配" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+        </Item>
+        <Item text="托管设备移动应用配置设备状态" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_update" />
         </Item>
         <Item text="托管设备移动应用配置设备摘要" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
@@ -567,9 +541,10 @@
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="托管设备移动应用配置" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        <Item text="托管的电子书" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
+          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="托管的电子书分配" url="/en-us/api-reference/v1.0/resources/intune_books_managedebookassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_list" />
@@ -577,11 +552,6 @@
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_update" />
-        </Item>
-        <Item text="托管的电子书" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="受管理的 iOS LOB 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_managedioslobapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_managedioslobapp_list" />
@@ -601,7 +571,7 @@
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_get" />
         </Item>
-        <Item text="适用于企业的 Microsoft Store 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="MDM 应用配置密钥类型" url="/en-us/api-reference/v1.0/resources/intune_apps_mdmappconfigkeytype" />
         <Item text="适用于企业的 Microsoft Store 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -609,10 +579,13 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
-        <Item text="MIME 内容" url="/en-us/api-reference/v1.0/resources/intune_apps_mimecontent" />
-        <Item text="MIME 内容" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_mimecontent" />
-        <Item text="MIME 内容" url="/en-us/api-reference/v1.0/resources/intune_books_mimecontent" />
-        <Item text="移动应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="适用于企业的 Microsoft Store 应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="适用于企业的 Microsoft Store 许可证类型" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
+        <Item text="移动应用" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
+          <Item text="assign 操作" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
+        </Item>
         <Item text="移动应用分配" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_get" />
@@ -620,12 +593,20 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="移动应用分配设置" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="移动应用类别" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcategory">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_update" />
+        </Item>
+        <Item text="移动应用内容" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
         </Item>
         <Item text="移动应用内容文件" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfile">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_list" />
@@ -636,18 +617,8 @@
           <Item text="提交操作" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="renewUpload 操作" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="移动应用内容" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
-        </Item>
-        <Item text="移动应用" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
-        </Item>
+        <Item text="移动应用内容文件上载状态" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="移动应用发布状态" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapppublishingstate" />
         <Item text="移动 LOB 应用" url="/en-us/api-reference/v1.0/resources/intune_apps_mobilelobapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_get" />
@@ -667,7 +638,9 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_update" />
         </Item>
-        <Item text="Windows 最低操作系统" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsminimumoperatingsystem" />
+        <Item text="Windows 体系结构" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsarchitecture" />
+        <Item text="Windows 设备类型" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsdevicetype" />
+        <Item text="Windows 最低操作系统版本" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsminimumoperatingsystem" />
         <Item text="Windows Mobile MSI" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsmobilemsi">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_apps_windowsmobilemsi_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_apps_windowsmobilemsi_get" />
@@ -684,15 +657,13 @@
         </Item>
       </Item>
       <Item text="公司条款" url="/en-us/api-reference/v1.0/resources/intune_company_conceptual">
-        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alllicensedusersassignmenttarget" />
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_companyterms_deviceandappmanagementassignmenttarget" />
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_companyterms_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_update" />
+        <Item text="条款和条件" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
         </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_companyterms_exclusiongroupassignmenttarget" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_companyterms_groupassignmenttarget" />
         <Item text="条款和条件接受状态" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
@@ -707,28 +678,20 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update" />
         </Item>
-        <Item text="条款和条件" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
-        </Item>
       </Item>
       <Item text="公司注册" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_update" />
+        <Item text="已导入的 Windows Autopilot 设备标识" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_enrollment_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_update" />
-        </Item>
+        <Item text="已导入的 Windows Autopilot 设备标识导入状态" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="已导入的 Windows Autopilot 设备标识状态" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
       </Item>
       <Item text="设备配置" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
-        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
-        <Item text="Android 合规性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
+        <Item text="Android 符合性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_create" />
@@ -749,14 +712,26 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Android 所需密码类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidrequiredpasswordtype" />
         <Item text="应用列表项" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applistitem" />
+        <Item text="应用列表类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applisttype" />
+        <Item text="应用保险箱应用程序控制类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype" />
         <Item text="Apple 设备功能配置基础" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_appledevicefeaturesconfigurationbase">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
+        <Item text="应用程序 Guard Block 剪贴板共享类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="应用程序 Guard Block 文件传输类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
+        <Item text="自动更新模式" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode" />
+        <Item text="BitLocker 加密方法" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod" />
         <Item text="BitLocker 可移动驱动器策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
-        <Item text="Defender 检测到的恶意软件操作" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
+        <Item text="星期几" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_dayofweek" />
+        <Item text="Defender 云块级别类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendercloudblockleveltype" />
+        <Item text="Defender 检测到恶意软件操作" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
+        <Item text="Defender 监视器文件活动" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendermonitorfileactivity" />
+        <Item text="Defender 示例提交提示" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
+        <Item text="Defender 扫描类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="Defender 威胁操作" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderthreataction" />
         <Item text="设备符合性操作项" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_get" />
@@ -764,7 +739,8 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_update" />
         </Item>
-        <Item text="设备符合性设备概述" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancedeviceoverview">
+        <Item text="设备合规性操作类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype" />
+        <Item text="设备合规性设备概述" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancedeviceoverview">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_update" />
         </Item>
@@ -774,6 +750,12 @@
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
+        </Item>
+        <Item text="设备合规性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="scheduleActionsForRules 操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="设备符合性策略分配" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
@@ -786,6 +768,7 @@
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
+        <Item text="设备符合性策略设置状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
         <Item text="设备符合性策略设置状态摘要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
@@ -793,21 +776,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
         </Item>
-        <Item text="设备符合性策略设置状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="设备符合性策略状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
-        <Item text="设备合规性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="scheduleActionsForRules 操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
-        </Item>
-        <Item text="适用于规则的设备合规性计划操作" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
+        <Item text="适用于规则的设备符合性计划操作" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_create" />
@@ -832,6 +801,11 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
         </Item>
+        <Item text="设备配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="assign 操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
+        </Item>
         <Item text="设备配置分配" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -855,13 +829,6 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationdevicestatus_update" />
         </Item>
         <Item text="设备配置设置状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="设备配置状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
         <Item text="设备配置用户概述" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
@@ -873,19 +840,14 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="设备配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
-        </Item>
         <Item text="设备管理设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_update" />
-        </Item>
+        <Item text="设备威胁防护级别" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel" />
+        <Item text="诊断数据提交模式" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Edge cookie 策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
+        <Item text="Edge 搜索引擎" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Edge 搜索引擎基准" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Edge 搜索引擎自定义" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
-        <Item text="Edge 搜索引擎" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
+        <Item text="Edge 搜索引擎类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginetype" />
         <Item text="版本升级配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -893,8 +855,11 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_groupassignmenttarget" />
+        <Item text="版本升级许可证类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradelicensetype" />
+        <Item text="防火墙证书吊销列表检查方法类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype" />
+        <Item text="防火墙数据包排入队列方法类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpacketqueueingmethodtype" />
+        <Item text="防火墙预共享的密钥编码方法类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype" />
+        <Item text="Internet 站点安全级别" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_internetsitesecuritylevel" />
         <Item text="iOS 证书配置文件" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_get" />
@@ -928,11 +893,12 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
         <Item text="iOS 主屏幕应用" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="iOS 主屏幕文件夹页" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS 主屏幕文件夹" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="iOS 主屏幕文件夹页" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS 主屏幕项" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="iOS 主屏幕页" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenpage" />
         <Item text="iOS 网络使用规则" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule" />
+        <Item text="iOS 通知警报类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationalerttype" />
         <Item text="iOS 通知设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="iOS 更新配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdateconfiguration_list" />
@@ -948,6 +914,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_update" />
         </Item>
+        <Item text="iOS 更新安装状态" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus" />
         <Item text="macOS 符合性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -976,10 +943,6 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="受管理设备" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_manageddevice">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
         <Item text="媒体内容分级（澳大利亚）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="媒体内容分级（加拿大）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="媒体内容分级（法国）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -989,19 +952,43 @@
         <Item text="媒体内容分级（新西兰）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="媒体内容分级（英国）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="媒体内容分级（美国）" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Miracast 频道" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_miracastchannel" />
+        <Item text="OMA 设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
         <Item text="OMA 设置 Base64" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="OMA 设置布尔值" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="OMA 设置日期/时间" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="OMA 设置浮点数" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="OMA 设置整数" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="OMA 设置字符串 XML" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="OMA 设置字符串" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="OMA 设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
-        <Item text="报表根目录" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
+        <Item text="OMA 设置字符串 XML" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
+        <Item text="策略平台类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_policyplatformtype" />
+        <Item text="预发布功能" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_prereleasefeatures" />
+        <Item text="分级应用类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingappstype" />
+        <Item text="分级澳大利亚电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliamoviestype" />
+        <Item text="分级澳大利亚电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliatelevisiontype" />
+        <Item text="分级加拿大电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadamoviestype" />
+        <Item text="分级加拿大电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadatelevisiontype" />
+        <Item text="分级法国电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancemoviestype" />
+        <Item text="分级法国电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancetelevisiontype" />
+        <Item text="分级德国电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanymoviestype" />
+        <Item text="分级德国电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanytelevisiontype" />
+        <Item text="分级爱尔兰电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandmoviestype" />
+        <Item text="分级爱尔兰电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandtelevisiontype" />
+        <Item text="分级日本电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapanmoviestype" />
+        <Item text="分级日本电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapantelevisiontype" />
+        <Item text="分级新西兰电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandmoviestype" />
+        <Item text="分级新西兰电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandtelevisiontype" />
+        <Item text="分级英国电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdommoviestype" />
+        <Item text="分级英国电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype" />
+        <Item text="分级美国电影类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype" />
+        <Item text="分级美国电视类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype" />
+        <Item text="报表" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
+        <Item text="报表根" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update" />
         </Item>
-        <Item text="报告" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
+        <Item text="所需密码类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype" />
+        <Item text="安全搜索筛选器类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype" />
         <Item text="设置源" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource" />
         <Item text="设置状态设备摘要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -1010,20 +997,27 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
+        <Item text="共享电脑帐户删除策略类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype" />
         <Item text="共享电脑帐户管理器策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
-        <Item text="共享的电脑配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration">
+        <Item text="共享电脑允许的帐户类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcallowedaccounttype" />
+        <Item text="共享电脑配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_update" />
         </Item>
+        <Item text="网站安全级别" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sitesecuritylevel" />
         <Item text="软件更新状态摘要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_uri" />
-        <Item text="Windows 10 合规性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
+        <Item text="状态管理设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_statemanagementsetting" />
+        <Item text="可见性设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_visibilitysetting" />
+        <Item text="Web 浏览器 cookie 设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings" />
+        <Item text="每周计划" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_weeklyschedule" />
+        <Item text="欢迎屏幕会议信息" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
+        <Item text="Windows 10 符合性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_create" />
@@ -1037,7 +1031,8 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_update" />
         </Item>
-        <Item text="Windows 10 终结点保护配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration">
+        <Item text="Windows 10 版本类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10editiontype" />
+        <Item text="Windows 10 Endpoint Protection 配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_create" />
@@ -1101,6 +1096,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
+        <Item text="Windows 传递优化模式" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
         <Item text="Windows 防火墙网络配置文件" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
         <Item text="Windows Phone  8.1 符合性策略" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81compliancepolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81compliancepolicy_list" />
@@ -1123,6 +1119,9 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
         </Item>
+        <Item text="Windows 聚焦支持设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsspotlightenablementsettings" />
+        <Item text="Windows 开始菜单应用列表可见性类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype" />
+        <Item text="Windows 开始菜单模式类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenumodetype" />
         <Item text="Windows 更新使用时段安装" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="适用于企业的 Windows 更新配置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -1133,8 +1132,11 @@
         </Item>
         <Item text="Windows 更新安装计划类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateinstallscheduletype" />
         <Item text="Windows 更新计划安装" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall" />
+        <Item text="Windows 更新类型" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype" />
+        <Item text="Windows 用户帐户控制设置" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings" />
       </Item>
-      <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
+      <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+        <Item text="操作状态" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate" />
         <Item text="Apple 推送通知证书" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_update" />
@@ -1149,7 +1151,8 @@
         </Item>
         <Item text="审核属性" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditproperty" />
         <Item text="审核资源" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditresource" />
-        <Item text="Configuration Manager 客户端已启用的功能" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
+        <Item text="符合性状态" url="/en-us/api-reference/v1.0/resources/intune_devices_compliancestate" />
+        <Item text="配置管理器客户端已启用的功能" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
         <Item text="从共享 Apple 设备删除用户操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
         <Item text="检测到的应用" url="/en-us/api-reference/v1.0/resources/intune_devices_detectedapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_list" />
@@ -1159,13 +1162,13 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_update" />
         </Item>
         <Item text="设备操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
-        <Item text="设备类别" url="/en-us/api-reference/v1.0/resources/intune_devices_devicecategory">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_update" />
-        </Item>
+        <Item text="设备注册失败原因" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
         <Item text="设备 Exchange 访问状态摘要" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="设备地理位置" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation" />
         <Item text="设备运行状况证明状态" url="/en-us/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="设备管理 Exchange 访问状态" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="设备管理 Exchange 访问状态原因" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="设备管理订阅状态" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="设备管理疑难解答事件" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
@@ -1173,31 +1176,8 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
         </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_endpointprotection_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_notification_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_auditing_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_update" />
-        </Item>
         <Item text="设备操作系统摘要" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="设备注册状态" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceregistrationstate" />
         <Item text="注册疑难解答事件" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -1213,10 +1193,6 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_localizednotificationmessage_update" />
         </Item>
         <Item text="查找设备操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_locatedeviceactionresult" />
-        <Item text="受管理的设备概述" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
         <Item text="受管理设备" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_get" />
@@ -1242,6 +1218,22 @@
           <Item text="windowsDefenderUpdateSignatures 操作" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
           <Item text="updateWindowsDeviceAccount 操作" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
         </Item>
+        <Item text="受管理设备概述" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="托管的设备所有者类型" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceownertype" />
+        <Item text="受管理设备合作伙伴报告的运行状况状态" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="管理代理类型" url="/en-us/api-reference/v1.0/resources/intune_devices_managementagenttype" />
+        <Item text="移动应用操作类型" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="移动应用意图" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="移动应用意图和状态详细信息" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="移动应用疑难解答应用策略创建历史记录" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="移动应用疑难解答应用状态历史记录" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="移动应用疑难解答应用目标历史记录" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="移动应用疑难解答应用更新历史记录" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="移动应用疑难解答设备签入历史记录" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="移动应用疑难解答历史记录项" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="通知邮件模板" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_get" />
@@ -1250,6 +1242,8 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="sendTestMessage 操作" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
         </Item>
+        <Item text="通知模板品牌选项" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions" />
+        <Item text="远程协助载入状态" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
         <Item text="远程协助合作伙伴" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_get" />
@@ -1261,31 +1255,16 @@
         </Item>
         <Item text="远程锁定操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult" />
         <Item text="重置密码操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult" />
+        <Item text="生成的应用状态" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_resultantappstate" />
+        <Item text="运行状态" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_runstate" />
         <Item text="更新 Windows 设备帐户操作参数" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
-        <Item text="用户" url="/en-us/api-reference/v1.0/resources/intune_devices_user">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_devices_user_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_devices_user_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_devices_user_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_devices_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_user_update" />
-          <Item text="removeAllDevicesFromManagement 操作" url="/en-us/api-reference/v1.0/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="用户" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_user">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_update" />
-        </Item>
         <Item text="Windows Defender 扫描操作结果" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult" />
         <Item text="Windows 设备帐户" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount" />
         <Item text="Windows 设备 AD 帐户" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount" />
         <Item text="Windows 设备 Azure AD 帐户" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
-      <Item text="应用保护" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_alllicensedusersassignmenttarget" />
-        <Item text="Android 管理的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
+      <Item text="移动应用保护" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
+        <Item text="Android 托管的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_create" />
@@ -1295,27 +1274,18 @@
         <Item text="Android 管理的应用注册" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappregistration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_create" />
         </Item>
         <Item text="Android 移动应用标识符" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmobileappidentifier" />
-        <Item text="默认受管理应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
+        <Item text="应用程序类型" url="/en-us/api-reference/v1.0/resources/intune_wip_applicationtype" />
+        <Item text="默认受管理的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_update" />
         </Item>
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceandappmanagementassignmenttarget" />
-        <Item text="设备应用管理" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceappmanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_wip_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_update" />
-        </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget" />
-        <Item text="iOS 托管应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
+        <Item text="iOS 受管理的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_create" />
@@ -1331,30 +1301,36 @@
         <Item text="IPv4 范围" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv4range" />
         <Item text="IPv6 范围" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
-        <Item text="键值对" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
+        <Item text="键/值对" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
+        <Item text="受管理的应用剪贴板共享级别" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="受管理的应用配置" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
         </Item>
-        <Item text="受管理的应用诊断状态" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
-        <Item text="受管理的应用操作" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
+        <Item text="受管理应用的数据加密类型" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdataencryptiontype" />
+        <Item text="受管理应用的数据存储位置" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatastoragelocation" />
+        <Item text="受管理应用的数据传输级别" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatatransferlevel" />
+        <Item text="受管理应用的诊断状态" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
+        <Item text="受管理应用的已标记原因" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappflaggedreason" />
+        <Item text="托管的应用操作" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="每个应用的托管应用策略部署摘要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="托管应用策略部署摘要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
-        <Item text="受管理的应用策略" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicy">
+        <Item text="托管的应用 PIN 字符集" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppincharacterset" />
+        <Item text="托管的应用策略" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_get" />
           <Item text="targetApps 操作" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
-        <Item text="受管理的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappprotection">
+        <Item text="托管应用策略部署摘要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="每个应用的托管的应用策略部署摘要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
+        <Item text="托管的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_get" />
           <Item text="targetApps 操作" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_targetapps" />
@@ -1363,13 +1339,13 @@
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_get" />
         </Item>
-        <Item text="托管的应用原始状态" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
-        </Item>
         <Item text="托管应用状态" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatus">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="托管的应用原始状态" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="托管移动应用" url="/en-us/api-reference/v1.0/resources/intune_mam_managedmobileapp">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedmobileapp_list" />
@@ -1396,19 +1372,23 @@
           <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_assign" />
           <Item text="targetApps 操作" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
-        <Item text="目标托管的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
+        <Item text="目标托管应用程序策略分配" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedapppolicyassignment">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_get" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_update" />
+        </Item>
+        <Item text="目标托管应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
+          <Item text="assign 操作" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
-        <Item text="用户" url="/en-us/api-reference/v1.0/resources/intune_mam_user">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_user_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_user_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_user_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_mam_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_user_update" />
-          <Item text="wipeManagedAppRegistrationsByDeviceTag 操作" url="/en-us/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag" />
+        <Item text="Windows 信息保护" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="assign 操作" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
         </Item>
+        <Item text="Windows 信息保护应用" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Windows 信息保护应用学习摘要" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
@@ -1423,9 +1403,9 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Windows 信息保护应用" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Windows 信息保护数据恢复证书" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
-        <Item text="Windows 信息保护桌面应用程序" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondesktopapp" />
+        <Item text="Windows 信息保护桌面应用" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondesktopapp" />
+        <Item text="Windows 信息保护强制级别" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
         <Item text="Windows 信息保护 IP 范围集合" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectioniprangecollection" />
         <Item text="Windows 信息保护网络学习摘要" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionnetworklearningsummary">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_list" />
@@ -1434,6 +1414,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_update" />
         </Item>
+        <Item text="Windows 信息保护 PIN 字符要求" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
         <Item text="Windows 信息保护策略" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpolicy">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_get" />
@@ -1444,28 +1425,8 @@
         <Item text="Windows 信息保护代理域集合" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Windows 信息保护资源集合" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Windows 信息保护应用商店应用" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Windows 信息保护" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="分配操作" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
       <Item text="载入" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
-        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alldevicesassignmenttarget" />
-        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alllicensedusersassignmenttarget" />
-        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceandappmanagementassignmenttarget" />
-        <Item text="设备应用管理" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceappmanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_update" />
-          <Item text="syncMicrosoftStoreForBusinessApps 操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="设备类别" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicecategory">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_update" />
-        </Item>
         <Item text="设备注册配置" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_get" />
@@ -1500,8 +1461,11 @@
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_update" />
-          <Item text="同步操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
+          <Item text="sync 操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="设备管理 Exchange 连接器状态" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="设备管理 Exchange 连接器同步类型" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="设备管理 Exchange 连接器类型" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="设备管理合作伙伴" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartner">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_get" />
@@ -1509,10 +1473,9 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_update" />
-        </Item>
+        <Item text="设备管理合作伙伴应用类型" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="设备管理合作伙伴租户状态" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnertenantstate" />
+        <Item text="支持" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enablement" />
         <Item text="注册配置分配" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_get" />
@@ -1520,10 +1483,8 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_update" />
         </Item>
-        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_onboarding_exclusiongroupassignmenttarget" />
-        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_onboarding_groupassignmenttarget" />
         <Item text="Intune 品牌" url="/en-us/api-reference/v1.0/resources/intune_onboarding_intunebrand" />
-        <Item text="MIME 内容" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mimecontent" />
+        <Item text="MDM 颁发机构" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mdmauthority" />
         <Item text="移动威胁防护连接器" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_get" />
@@ -1531,6 +1492,7 @@
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_update" />
         </Item>
+        <Item text="移动威胁合作伙伴租户状态" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatpartnertenantstate" />
         <Item text="本地条件访问设置" url="/en-us/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings">
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_update" />
@@ -1542,13 +1504,18 @@
           <Item text="setMobileDeviceManagementAuthority 操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_organization_setmobiledevicemanagementauthority" />
         </Item>
         <Item text="RGB 颜色" url="/en-us/api-reference/v1.0/resources/intune_onboarding_rgbcolor" />
-        <Item text="用户" url="/en-us/api-reference/v1.0/resources/intune_onboarding_user">
-          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_list" />
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_get" />
-          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_create" />
-          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_update" />
+        <Item text="VPP 令牌" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptoken">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_list" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_get" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_create" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_update" />
+          <Item text="syncLicenses 操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
+          <Item text="syncLicenses 操作" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
         </Item>
+        <Item text="VPP 令牌状态" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokenstate" />
+        <Item text="VPP 令牌同步状态" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus" />
+        <Item text="Windows Hello 企业版 PIN 使用情况" url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage" />
       </Item>
       <Item text="基于角色的访问控制" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="设备和应用管理角色分配" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
@@ -1564,10 +1531,6 @@
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_create" />
           <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_update" />
-        </Item>
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_rbac_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_update" />
         </Item>
         <Item text="资源操作" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceaction" />
         <Item text="资源操作" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceoperation">
@@ -1592,13 +1555,46 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="角色权限" url="/en-us/api-reference/v1.0/resources/intune_rbac_rolepermission" />
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_rbac_uri" />
+      </Item>
+      <Item text="共享的资源" url="/en-us/api-reference/v1.0/resources/intune_shared_conceptual">
+        <Item text="所有设备分配目标" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="所有许可的用户分配目标" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="符合性状态" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus" />
+        <Item text="设备和应用管理分配目标" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="设备应用管理" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="syncMicrosoftStoreForBusinessApps 操作" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
+        </Item>
+        <Item text="设备类别" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+        </Item>
+        <Item text="设备注册类型" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="排除组分配目标" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="组分配目标" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget" />
+        <Item text="安装意图" url="/en-us/api-reference/v1.0/resources/intune_shared_installintent" />
+        <Item text="MIME 内容" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent" />
+        <Item text="保存的 UI 状态生成选项" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri" />
+        <Item text="用户" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="删除" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="removeAllDevicesFromManagement 操作" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="wipeManagedAppRegistrationsByDeviceTag 操作" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="VPP 令牌帐户类型" url="/en-us/api-reference/v1.0/resources/intune_shared_vpptokenaccounttype" />
       </Item>
       <Item text="电信费用" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
-        <Item text="设备管理" url="/en-us/api-reference/v1.0/resources/intune_tem_devicemanagement">
-          <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_update" />
-        </Item>
         <Item text="电信费用管理合作伙伴" url="/en-us/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_get" />
@@ -4630,7 +4626,7 @@
           <Item text="删除" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_update" />
         </Item>
-        <Item text="iOS 管理的应用注册" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
+        <Item text="iOS 托管的应用注册" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_get" />
         </Item>
