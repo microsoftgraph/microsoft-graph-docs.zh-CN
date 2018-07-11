@@ -12,6 +12,24 @@
 | :-------------- | :---------- | :--------------------------------------- |
 | 更改          | Beta        | [application](https://graph.microsoft.io/zh-CN/docs/api-reference/beta/resources/application) 和 [servicePrincipal](https://graph.microsoft.io/zh-CN/docs/api-reference/beta/resources/serviceprincipal) API 将在预览版 (beta) 中得到更新。 第一个更改集将于 2018 年 7 月 16 日应用。 这些更改包括属性重命名和重构。 在更改完成后，大部分现有属性才可用。 将会添加新属性。 这些更改在发布到 v1.0 之前将先在预览版 (beta) 中发布。 |
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|删除项|beta|已删除 DELETE /groups/{id}/team/channels/{id}，请改用 DELETE /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 GET /groups/{id}/team/channels/{id}，请改用 GET /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 PATCH /groups/{id}/team/channels/{id}，请改用 PATCH /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 POST /groups/{id}/team/channels/{id}/chatthreads，请改用 POST /teams/{id}/channels/{id}/chatthreads。 |
+|删除项|beta|已删除 GET /groups/{id}/team/channels，请改用 GET /teams/{id}/channels。 |
+|删除项|beta|已删除 DELETE /groups/{id}/channels/{id}，请改用 DELETE /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 GET /groups/{id}/channels/{id}，请改用 GET /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 PATCH /groups/{id}/channels/{id}，请改用 PATCH /teams/{id}/channels/{id}。 |
+|删除项|beta|已删除 POST /groups/{id}/channels/{id}/chatthreads，请改用 POST /teams/{id}/channels/{id}/chatthreads。 |
+|删除项|beta|已删除 GET /groups/{id}/channels，请改用 GET /teams/{id}/channels。 |
+|删除项|beta|已删除 POST /groups/{id}/team/channels，请改用 POST /teams/{id}/channels。 |
+|删除项|beta|已删除 GET /groups/{id}/team，请改用 GET /teams/{id}。 |
+|删除项|beta|已删除 PATCH /groups/{id}/team，请改用 PATCH /teams/{id}。 |
+
+
 ## <a name="june-2018"></a>2018 年 6 月
 
 ### <a name="directory-apis"></a>目录 API
@@ -814,7 +832,7 @@
 |更改|Beta|从 [windowsInformationProtection](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) 实体中删除了 **allowedAppLockerFiles** 导航属性|
 |更改|Beta|从 [windowsManagedDevice](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_devices_windowsmanageddevice) 实体中删除了 **windowsProtectionState** 导航属性|
 |更改|Beta|向 [iosMinimumOperatingSystem](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem) 复杂类型添加了 **v11_0** 属性|
-|更改|Beta|向 [windowsInformationProtectionApp](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp) 复杂类型添加了 **denied** 属性|
+|更改项|Beta|向 [windowsInformationProtectionApp](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp) 复杂类型添加了 **denied** 属性|
 
 ### <a name="reports-apis"></a>报表 API
 | 更改类型 | 版本 | 说明                              |

@@ -15,7 +15,7 @@
 - HTTP *授权*请求头（作为一个*持有者*令牌）
 - Graph 客户端构造函数（当使用 Microsoft Graph 客户端库时）
 
-使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
+使用 Microsoft 身份验证库 API ([MSAL](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-libraries)) 来获得 Microsoft Graph 的访问令牌。
 
 ## <a name="consent-and-authorization"></a>许可和授权
 
@@ -30,8 +30,8 @@
 - **在配置应用时请考虑周全**。 这会直接影响最终用户和管理体验，以及应用程序的采用和安全性。 例如：
 
     - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
-    - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)。
-    - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
+    - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes)。
+    - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
 
 - **请考虑多租户应用程序**。 预期客户有不同的应用程序和不同状态的同意控件。 例如：
 
@@ -80,9 +80,10 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 >**注意：** 如果应用程序准备处理未知枚举成员，它应通过使用 HTTP *首选*请求头选择加入：`Prefer: include-unknown-enum-members`。
 
+
 ## <a name="storing-data-locally"></a>在本地存储数据
 
-理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 只有在特定方案需要，且该用例被使用条款和隐私策略所涵盖，而且不违反 [Microsoft Graph 使用条款](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) 的情况下，在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
+理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 只有在特定方案需要，且该用例被使用条款和隐私策略所涵盖，而且不违反 [Microsoft Graph 使用条款](https://developer.microsoft.com/zh-CN/graph/docs/misc/terms-of-use) 的情况下，在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
 
 ## <a name="optimizations"></a>优化
 
@@ -133,4 +134,6 @@ JSON 批处理使你能够通过将多个请求合并为一个单一 JSON 对象
 
 - 接受 DNS TTL 并设置连接 TTL 以进行匹配。 这可确保在故障转移情况下的可用性。
 - 打开到所有播发 DNS 答案的连接。
-- 请始终记录 HTTP 响应头中的*请求 id* 和*时间戳*。 这将会在 Stack Overflow 或 Microsoft 客户支持中升级问题或报告问题时用到。
+- 生成唯一的 GUID 并随每个 Microsoft Graph REST 请求发送。 如果需要报告 Microsoft Graph 的问题，那么这将有助于 Microsoft 更轻松地调查任何错误。
+  - 每次向 Microsoft Graph 发出请求时，会生成唯一的 GUID，将其随 `client-request-id` HTTP 请求标头发送，并将其记录在应用程序日志中。
+  - 始终记录 HTTP 响应标头中的 `request-id`、`timestamp` 和 `x-ms-ags-diagnostic`。 报告 [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) 中的问题或向 Microsoft 支持部门报告问题时，需要上述这些以及 `client-request-id`。

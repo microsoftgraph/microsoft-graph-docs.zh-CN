@@ -83,6 +83,29 @@ Microsoft Teams 和 Office 365 组的[功能相似](../api-reference/beta/resour
 有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
 
 
+## <a name="bookings"></a>预订
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>查询 bookingBusinesses 时出现 ErrorExceededFindCountLimit
+
+当组织拥有多个预订业务且提出请求的帐户不是管理员时，获取 `bookingBusinesses` 列表会失败，并显示以下错误代码：
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+解决方法是，可以通过加入 `query` 参数来限制请求返回的业务集，例如：
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>日历
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
@@ -178,27 +201,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 用于创建答复或转发草稿的**注释**参数（[createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)）不会成为最终的邮件草稿正文的一部分。
 
-## <a name="bookings"></a>预订
-
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>查询 bookingBusinesses 时出现 ErrorExceededFindCountLimit
-
-当组织拥有多个预订业务且提出请求的帐户不是管理员时，获取 `bookingBusinesses` 列表会失败，并显示以下错误代码：
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-可以通过加入查询参数来限制请求返回的业务集，例如：
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
 
 ## <a name="drives-files-and-content-streaming"></a>驱动器、文件和内容流式传输
 
