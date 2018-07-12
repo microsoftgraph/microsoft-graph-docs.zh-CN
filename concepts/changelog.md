@@ -42,6 +42,9 @@
 
 |更改类型|版本|说明|
 |:---|:---|:---|
+|Addition|v1.0|向 [deviceManagementExchangeConnector](../api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnector.md) 实体添加了 **connectorServerName** 属性|
+|添加项|v1.0|向 [macOSCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy.md) 实体添加了 **firewallEnabled**、**firewallBlockAllIncoming** 和 **firewallEnableStealthMode** 属性|
+|添加项|v1.0|向 [iosUpdatesInstallStatus](../api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus.md) 枚举类型添加了 **unknown** 成员|
 |添加项|beta|添加了新实体：<br/>[androidDeviceOwnerWiFiConfiguration](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwificonfiguration.md)<br/>[iosVppAppAssignedDeviceLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneddevicelicense.md)<br/>[iosVppAppAssignedLicense](../api-reference/beta/resources/intune_apps_iosvppappassignedlicense.md)<br/>[iosVppAppAssignedUserLicense](../api-reference/beta/resources/intune_apps_iosvppappassigneduserlicense.md)<br/>[managedDeviceMobileAppConfigurationState](../api-reference/beta/resources/intune_deviceconfig_manageddevicemobileappconfigurationstate.md)<br/>[userPFXCertificate](../api-reference/beta/resources/intune_raimportcerts_userpfxcertificate.md)<br/>[vppTokenLicenseSummary](../api-reference/beta/resources/intune_onboarding_vppTokenLicenseSummary.md)<br/>|
 |添加项|beta|添加了新复杂类型：<br/>[iosVppAppRevokeLicensesActionResult](../api-reference/beta/resources/intune_apps_iosvppapprevokelicensesactionresult.md)<br/>|
 |添加项|beta|添加了新枚举类型：<br/>[androidDeviceOwnerSystemUpdateInstallType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownersystemupdateinstalltype.md)<br/>[androidDeviceOwnerWiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownerwifisecuritytype.md)<br/>[userPfxIntendedPurpose](../api-reference/beta/resources/intune_raimportcerts_userpfxintendedpurpose.md)<br/>[userPfxPaddingScheme](../api-reference/beta/resources/intune_raimportcerts_userpfxpaddingscheme.md)<br/>|
@@ -386,7 +389,7 @@
 | 更改 | Beta | 向 [Upsert HistoryItem](https://developer.microsoft.com/zh-CN/graph/docs/beta/projectrome_delete_historyItem) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
 | 更改 | Beta | 向 [activity](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/projectrome_activity) 添加了 **status** 属性 |
 | 更改 | Beta | 向 [historyItem](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/projectrome_historyitem) 添加了 **activity** 导航属性 |
-| 更改 | Beta | 向 [Project Rome 概述](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/project_rome_overview)添加了新 API |
+| 更改项 | Beta | 向 [Project Rome 概述](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/project_rome_overview)添加了新 API |
 
 ### <a name="azure-ad-apis"></a>Azure AD API
 
@@ -1846,12 +1849,10 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 
-  [用户](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)资源的新操作 [findMeetingTimes](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_findmeetingtimes)。 |
+| 添加项        | v1.0        | [用户](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/user)资源的新操作 [findMeetingTimes](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_findmeetingtimes)。 |
 | 添加项        | v1.0        | 新复杂类型 [attendeeBase](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/attendeebase)，由 attendee 类型的类型属性组成。 |
 | 添加项        | v1.0        | 新复杂类型：<br/>[attendeeAvailability](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/timeslot) |
-| 更改          | v1.0        | 
-  [attendee](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/attendee) 复杂类型现派生自 attendeeBase，而 attendeeBase 派生自 [recipient](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/recipient)。包括继承的属性在内，它同以前一样，由 **status**、**type** 和 **emailAddress** 属性组成。 |
+| 更改          | v1.0        | [attendee](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/attendee) 复杂类型现派生自 attendeeBase，而 attendeeBase 派生自 [recipient](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/recipient)。包括继承的属性在内，它同以前一样，由 **status**、**type** 和 **emailAddress** 属性组成。 |
 | 添加项        | Beta        | 添加到[日历](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/calendar)资源的 hexColor。 |
 
 ### <a name="intune-apis"></a>Intune API
@@ -1883,10 +1884,7 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 将新的 delta 函数添加到以下实体，以执行[delta 查询](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_overview)：<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>有关示例，请参阅以下文章：<br/>
-  [获取组的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_groups)<br/>
-  [获取文件夹中邮件的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_messages)<br/>
-  [获取用户的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_users) |
+| 添加项        | Beta        | 将新的 delta 函数添加到以下实体，以执行[delta 查询](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_overview)：<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>有关示例，请参阅以下文章：<br/>[获取组的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_groups)<br/>[获取文件夹中邮件的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_messages)<br/>[获取用户的增量更改（预览）](https://developer.microsoft.com/zh-CN/graph/docs/concepts/delta_query_users) |
 
 ### <a name="excel-apis"></a>Excel API
 
@@ -2018,8 +2016,7 @@
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 
-  [按照 ID](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/list_get) 或[路径/URL](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/baseitem_getbyurl) 访问 SharePoint 网站和列表。 |
+| 添加项        | Beta        | [按照 ID](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/list_get) 或[路径/URL](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/api/baseitem_getbyurl) 访问 SharePoint 网站和列表。 |
 | 添加项        | Beta        | 支持[列出、创建、获取和删除 listItem 实例](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/beta/resources/listitem)。 |
 
 ### <a name="users"></a>用户
