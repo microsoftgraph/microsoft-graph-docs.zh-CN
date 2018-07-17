@@ -67,3 +67,10 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 若要在 Graph 浏览器中进行 OneNote API 调用，请选择左侧栏中的“显示更多示例”****。 使用菜单将 OneNote 切换至“打开”****。 还需要启用相应的权限。 在左侧菜单中的帐户名称中，选择“修改权限”****。 有关 OneNote 权限的详细信息，请参阅[笔记权限](permissions_reference.md#notes-permissions)。
 
 若要开始在 Microsoft Graph 中使用 OneNote API，请参阅 [OneNote 参考内容](../api-reference/v1.0/resources/onenote-api-overview.md)。
+
+## <a name="see-also"></a>另请参阅
+
+- [OneNote 开发](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [处理课堂笔记本](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [处理教职员工笔记本](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [订阅 Webhook](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-sync)

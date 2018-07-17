@@ -58,11 +58,7 @@ Microsoft Graph 公开了两个权限（*Group.Read.All* 和 *Group.ReadWrite.Al
 
 Microsoft Teams 和 Office 365 组的[功能相似](../api-reference/beta/resources/teams_api_overview.md)。所有组 API 均可用于团队，暂不允许创建团队的创建组 API 除外。今后发布的 API 版本将支持此功能。
 
-### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams 频道（预览）
-
-目前，你可以读取和创建频道，但无法更新或删除频道。将来的 API 版本将支持此功能。
-
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams 聊天会话和聊天消息（预览）
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams 聊天线程和聊天消息（预览版）
 
 目前，可以在通道中创建聊天会话，但无法读取现有聊天会话，也无法添加对它们的答复。此外，还无法读取或写入与团队或频道范围外的用户之间的直接聊天。今后发布的 API 版本将在这一领域新增其他功能。
 
