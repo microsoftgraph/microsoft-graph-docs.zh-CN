@@ -8,7 +8,7 @@
 
 你可使用 Microsoft Graph 访问与登录用户上下文相关的关系、文档、联系人和首选项。 **用户**资源提供了无需执行其他调用即可访问和操作用户资源的简单方法，可查找特定的身份验证信息，并直接对其他 Microsoft Graph 资源发出查询。
 
-若要访问用户的信息和数据，你需要[以用户身份进行访问](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user)。 验证应用程序并获得[管理员同意](https://developer.microsoft.com/zh-CN/graph/docs/concepts/permissions_reference)，即可使用和更新与用户关联的更广泛的实体。
+若要访问用户的信息和数据，你需要[以用户身份进行访问](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user)。 验证应用程序并获得[管理员同意](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)，即可使用和更新与用户关联的更广泛的实体。
 
 ### <a name="manage-your-organization"></a>管理组织
 
@@ -52,5 +52,5 @@
 - 为使用 [Azure AD API](../api-reference/v1.0/resources/azure_ad_overview.md) 的用户设置访问控制和策略。
 - 审阅应用访问用户数据所需的[权限](permissions_reference.md)。 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->

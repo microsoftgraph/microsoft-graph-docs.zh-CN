@@ -3,6 +3,7 @@
 本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Stack Overflow 和 Twitter 上的常见问题的解答。
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>使用 $select 选择所需的最小属性集
+
 查询资源（例如，笔记本中的分区）时，会发出类似于以下内容的请求。
 
 ```http
@@ -18,11 +19,15 @@ GET ~/notebooks/{id}/sections?$select=id,displayName
 同样的方法适用于其他 OneNote API。
 
 ## <a name="use-expand-instead-of-making-multiple-api-calls"></a>使用 $expand 而不是进行多个 API 调用
+
 假定你要在分层视图中检索用户的所有笔记本、分区和分区组。 可以通过执行以下操作来实现：
 
 * 调用 `GET ~/notebooks` 以获取笔记本的列表。
+
 * 对于每个检索的笔记本，调用 `GET ~/notebooks/{notebookId}/sections` 以检索分区的列表。
+
 * 对于每个检索的笔记本，调用 `GET ~/notebooks/{notebookId}/sectionGroups` 以检索分区组的列表。
+
 * （可选）以递归方式遍历分区组。
 
 虽然此方法有效（同时有一些到服务的额外顺序往返），但更好的方法是使用 `$expand` 查询参数。 
