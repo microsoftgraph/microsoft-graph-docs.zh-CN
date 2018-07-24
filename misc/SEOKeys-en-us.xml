@@ -1302,7 +1302,7 @@
         <Item text="IPv6 范围" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
         <Item text="键/值对" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
-        <Item text="受管理的应用剪贴板共享级别" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
+        <Item text="托管应用剪贴板共享级别" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="受管理的应用配置" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
@@ -2115,7 +2115,7 @@
 	  <Item text="获取区域格式" url="/en-us/api-reference/v1.0/api/rangeformat_get" />
 	  <Item text="更新区域格式" url="/en-us/api-reference/v1.0/api/rangeformat_update" />
 	  <Item text="合并" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
-      <Item text="拆分" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
+      <Item text="取消合并" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="清除" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
       <Item text="删除" url="/en-us/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
     </Item>
@@ -2490,7 +2490,6 @@
 		<Item text="活动源" url="/en-us/api-reference/beta/resources/activity-feed-api-overview">
 			<Item text="活动" url="/en-us/api-reference/beta/resources/projectrome_activity">
 				<Item text="创建或替换活动" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="创建或替换活动" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="删除活动" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="获取活动" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="获取最近的活动" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2513,12 +2512,13 @@
 			<Item text="取消发布" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
 		<Item text="预订约会" url="/en-us/api-reference/beta/resources/bookingappointment">
-			<Item text="列出" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="创建" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="获取" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="更新" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="删除" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="取消" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+			<Item text="列出日历视图" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="列出约会" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="创建约会" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="获取约会" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="更新约会" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="删除约会" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="取消约会" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="预订货币" url="/en-us/api-reference/beta/resources/bookingcurrency">
 			<Item text="列出" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
@@ -3464,7 +3464,7 @@
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_get" />
         </Item>
         <Item text="Apple VPN 连接类型" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype" />
-        <Item text="应用程序 Guard Block 剪贴板共享类型" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="应用程序防护阻止剪贴板共享类型" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
         <Item text="应用程序 Guard Block 文件传输类型" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
         <Item text="自动更新模式" url="/en-us/api-reference/beta/resources/intune_deviceconfig_automaticupdatemode" />
         <Item text="BitLocker 加密方法" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerencryptionmethod" />
@@ -4597,7 +4597,7 @@
         </Item>
       </Item>
       <Item text="移动应用保护" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
-        <Item text="Android 托管的应用保护" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
+        <Item text="Android 托管应用保护" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create" />
@@ -5173,8 +5173,7 @@
           <Item text="更新应用程序" url="/en-us/api-reference/beta/api/application_update" SEOKeyword="更新应用程序, Microsoft Graph API, 应用程序 API" SEODescription="更新应用程序对象的属性。" />
           <Item text="删除应用程序" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="删除应用程序, Microsoft Graph API, 应用程序 API" SEODescription="删除应用程序。" />
           <Item text="列出所有者" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="列出所有者, Microsoft Graph API, 应用程序 API" SEODescription="检索 directoryObject 对象列表。" />
-          <Item text="分配所有者" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="创建所有者, Microsoft Graph API, 应用程序 API" SEODescription="使用此 API 新建所有者。" />
-          <Item text="列出扩展属性" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="列出 extensionProperties, Microsoft Graph API, 应用程序 API" SEODescription="检索 extensionproperty 对象列表。" />
+          <Item text="分配所有者" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="创建所有者, Microsoft Graph API, 应用程序 API" SEODescription="此 API 用于新建所有者。" />
         </Item>
 	  <Item text="审核日志" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="目录审核" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit 对象, Microsoft Graph API, Azure AD, 审核日志" SEODescription="">
@@ -5248,11 +5247,6 @@
         <Item text="获取域" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="更新域" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="验证域" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="扩展属性" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API, Microsoft Graph API, extensionproperty API" SEODescription="允许应用程序定义和使用一组可以添加到目录对象（用户、组、租户详细信息、设备、应用程序和服务主体）中的额外属性，应用程序无需使用外部数据存储。有关扩展属性的更多信息，请参阅“Azure AD Graph API 目录架构扩展”(https://msdn.microsoft.com/zh-cn/library/azure/dn720459.aspx)。继承自 DirectoryObject。">
-        <Item text="获取 extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="获取 extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="检索 extensionproperty 对象的属性和关系。" />
-        <Item text="更新 extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="更新 extensionproperty, Microsoft Graph API, extensionproperty API" SEODescription="更新 extensionproperty 对象的属性。" />
-        <Item text="删除 extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="删除 extensionProperty, Microsoft Graph API, extensionproperty API" SEODescription="删除 extensionProperty。" />
       </Item>
     <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection" SEODescription="使用 Azure Active Directory Identity Protection 从中查询数据的 API。">
       <Item text="身份风险事件" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API, Azure AD, AADIP, Microsoft Graph API, Identity Protection, 事件风险, 身份风险" SEODescription="从 Azure AD Identity Protection 查询风险事件数据">
