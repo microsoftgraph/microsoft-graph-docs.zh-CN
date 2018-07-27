@@ -2,7 +2,7 @@
 
 Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 
->**注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+>**注意：** 单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
@@ -21,7 +21,7 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
-> **注意：**在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)。
+> **注意：** 在 `beta` 终结点上，`$` 前缀是可选的。例如，可使用 `filter` 来代替 `$filter`。有关更多详细信息和示例，请参阅 [Microsoft Graph 中支持不含 $ 前缀的查询参数](http://dev.office.com/queryparametersinMicrosoftGraph)。
 
 ## <a name="encoding-query-parameters"></a>编码的查询参数
 
@@ -52,7 +52,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**注意：**派生自 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 的资源集合（如 [user](../api-reference/v1.0/resources/user.md) 或 [group](../api-reference/v1.0/resources/group.md) 集合）不支持 `$count`。
+>**注意：** 派生自 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 的资源集合（如 [user](../api-reference/v1.0/resources/user.md) 或 [group](../api-reference/v1.0/resources/group.md) 集合）不支持 `$count`。
 
 ## <a name="expand-parameter"></a>expand 参数
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [在 Graph 浏览器中试用][expand-example]
 
-> **注意：**并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
+> **注意：** 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
 > 
 > 使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如[user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 下表显示使用 `$filter` 查询参数的一些示例。
 
-> **注意：**单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+> **注意：** 单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 说明 | 示例
 |:------------|:--------|
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
 | 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
 
-> **注意：**Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+> **注意：** Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
 ## <a name="format-parameter"></a>format 参数
 
@@ -167,42 +167,43 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
- > **注意：**使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
+ > **注意：** 使用从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)），则不能合并 `$orderby` 与 `$filter` 表达式。 
 
 ## <a name="search-parameter"></a>search 参数
 
 使用 `$search` 查询参数限制与搜索条件匹配的请求结果。
 
-> **注意：**目前**只**能搜索 [message](../api-reference/v1.0/resources/message.md) 和 [person](../api-reference/v1.0/resources/person.md) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter-parameter) 或 [`$orderby`](#orderby-parameter)。
+> **注意：** 目前**只**能搜索 [message](../api-reference/v1.0/resources/message.md) 和 [person](../api-reference/v1.0/resources/person.md) 集合。`$search` 请求最多可返回 250 个结果。不能在搜索请求中使用 [`$filter`](#filter-parameter) 或 [`$orderby`](#orderby-parameter)。
 
 ### <a name="using-search-on-message-collections"></a>对 message 集合使用 $search
 
 Office 365 应用（如 Outlook 和 SharePoint）支持使用关键字查询语言 (KQL) 语法执行搜索。 这就方便常见发现域使用数据存储。 
 
-搜索 message 集合时，结果按邮件发送日期和时间进行排序。 
+可以指定 KQL 在 $search 查询字符串中识别的下列属性名。 这些属性名不是**邮件**实体中定义的属性，但会内部映射到**邮件**实体中的属性。 有关详细信息和示例，请参阅 [Exchange 中的可搜索属性](https://docs.microsoft.com/zh-CN/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-可以在 `$search` 条件中对 **message** 指定下列属性：
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
 - **category**
-- **ccRecipients**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
+- **has**
+- **importance**
 - **participants**
-- **receivedDateTime**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 如果搜索邮件且仅指定值，将根据默认搜索属性 **from**、**subject** 和 **body** 进行搜索。
+
+邮件集合的搜索结果按邮件发送日期和时间进行排序。
 
 下面的示例返回登录用户收件箱中在三个默认搜索属性的任意一个中包含“pizza”的所有邮件：
 
@@ -297,7 +298,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [在 Graph 浏览器中试用][select-example]
 
-> **重要说明：**一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
+> **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
 > 在 `v1.0` 中，从 [directoryObject](../api-reference/v1.0/resources/directoryobject.md) 派生的一些 Azure AD 资源（如 [user](../api-reference/v1.0/resources/user.md) 和 [group](../api-reference/v1.0/resources/group.md)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
 
@@ -310,7 +311,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [在 Graph 浏览器中试用][skip-example]
 
-> **注意：**一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
+> **注意：** 一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 
 ## <a name="skiptoken-parameter"></a>skipToken 参数
 

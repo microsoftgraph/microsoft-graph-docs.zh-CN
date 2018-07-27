@@ -39,9 +39,11 @@ Microsoft Graph API `beta` 元数据。
     https://graph.microsoft.com/beta/$metadata
 ```
 
-元数据允许你查看并了解 Microsoft Graph 的数据模型，包括实体类型和集、复杂类型、组成请求的枚举以及发送到和发送自 Microsoft Graph 的响应数据包。可以使用元数据了解 Microsoft Graph 中实体之间的关系，并建立可在实体导航的 URL。此基于导航的相互联系为 Microsoft Graph 提供了唯一的字符。
+元数据允许你查看并了解 Microsoft Graph 的数据模型，包括实体类型和集、复杂类型、组成请求的枚举以及发送到和发送自 Microsoft Graph 的响应数据包。
+可以使用元数据了解 Microsoft Graph 中实体之间的关系，并建立可在实体导航的 URL。
+此基于导航的相互联系为 Microsoft Graph 提供了唯一的字符。
 
-路径 URL 资源名称、查询参数，以及操作参数和值不区分大小写。不过，分配的值、实体 ID 和其他 base64 编码的值区分大小写。
+路径 URL 资源名称、查询参数，以及操作参数和值不区分大小写。 不过，分配的值、实体 ID 和其他 base64 编码的值区分大小写。
 
 以下部分介绍了几个对 Microsoft Graph API 的基本编程模式调用。
 
@@ -77,7 +79,8 @@ content-length: 982
 
 
 ## <a name="project-from-an-entity-to-properties"></a>从一个实体投影至属性
-若要仅检索用户的传记数据（如用户提供的本人简介描述和技能集），则可以在上一个请求中添加 _select_ 查询参数。例如：
+若要仅检索用户的传记数据（如用户提供的_本人简介_描述和技能集），则可以在上一个请求中添加 _select_ 查询参数。
+例如：
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
@@ -254,7 +257,7 @@ content-length: 986
 ```
 
 ## <a name="call-actions-or-functions"></a>调用操作或函数
-Microsoft Graph 还支持操作和函数，以并非简单符合标准 HTTP 方法的方式操作资源。例如，以下 HTTPS POST 请求允许登录用户 (`me`) 发送电子邮件：
+Microsoft Graph 还支持_操作_和_函数_，以并非简单符合标准 HTTP 方法的方式操作资源。 例如，以下 HTTPS POST 请求允许登录用户 (`me`) 发送电子邮件：
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
@@ -292,4 +295,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>使用 Microsoft Graph 客户端库
 喜欢 SDK 的强大功能和易用性吗？虽然你可以随时使用 REST API 调用 Microsoft Graph，但我们还提供了适用于许多常用平台的 SDK。
 
-探索我们的 [SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks)。
+探索我们的 [SDK](https://graph.microsoft.io/zh-CN/code-samples-and-sdks)。

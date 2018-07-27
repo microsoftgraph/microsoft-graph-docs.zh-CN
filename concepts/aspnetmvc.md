@@ -59,7 +59,7 @@
 
 在此步骤中，将会关注 **SDKHelper**、**GraphService** 和 **HomeController** 类。 
 
- - 每次调用 Microsoft Graph 之前，**SDKHelper** 会初始化库的 **GraphServiceClient** 实例。在将访问令牌添加到该请求时执行此操作。 
+ - 每次调用 Microsoft Graph 之前，**SDKHelper** 都会初始化库的 **GraphServiceClient** 的实例。在将访问令牌添加到该请求时执行此操作。 
  - **GraphService** 使用库生成请求并将其发送到 Microsoft Graph，然后处理响应。
  - **HomeController** 包含初始化库调用以响应 UI 事件的操作。
 

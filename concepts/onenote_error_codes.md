@@ -3,6 +3,7 @@
 本文介绍当通过 API 发送的请求失败时，Microsoft Graph 中的 OneNote API 返回的错误代码。
 
 ## <a name="error-response-example"></a>错误响应示例
+
 请求生成错误时，OneNote API 将停止执行此请求并将错误响应作为 JSON 对象返回。 错误响应将包含相关的错误代码、消息和本文相应部分的链接。 以下示例演示了错误响应的外观。
 
 ```json
@@ -21,6 +22,7 @@
 有关 Microsoft Graph 错误的详细信息，请参阅 [Microsoft Graph 错误响应和资源类型](errors.md)。
 
 ## <a name="codes-from-10001-to-19999"></a>从 10001 到 19999 的代码
+
 服务遇到问题，或向应用程序发送信息。
 
 ### <a name="10001"></a>10001
@@ -36,7 +38,7 @@
 服务无法在请求的部分创建页面，因为该部分受密码保护。
 
 ### <a name="10005"></a>10005
-请求包含超过最大数量的图像标记，其中 **data-render-src** 属性包含 PDF。 请参阅[添加图像和文件](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-images-files)。
+请求包含超过最大数量的图像标记，其中 **data-render-src** 属性包含 PDF。 请参阅[添加图像和文件](onenote_images_files.md)。
 
 ### <a name="10006"></a>10006
 OneNote API 程序无法在指定部分创建页面，因为该部分已损坏。
@@ -48,7 +50,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
 
 ### <a name="10012"></a>10012
-无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅 https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7。
+无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/zh-CN/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
 
 可从库中删除签出要求，也可以移动笔记本。
 
@@ -71,6 +73,7 @@ SharePoint 当前不可用。 请稍后重试。
 请求失败，因为发生无法确定的错误。
 
 ## <a name="codes-from-20001-to-29999"></a>从 20001 到 29999 的代码
+
 应用程序代码已经出现问题。
 
 ### <a name="20001"></a>20001
@@ -109,6 +112,7 @@ SharePoint 当前不可用。 请稍后重试。
 
 ### <a name="20012"></a>20012
 请求未提供指定部分的内容类型。 
+
 ### <a name="20013"></a>20013
 请求未提供指定部分的内容类型和内容处置标头。 
 
@@ -135,6 +139,7 @@ SharePoint 当前不可用。 请稍后重试。
 
 ### <a name="20100"></a>20100
 请求的语法有问题。 
+
 ### <a name="20101"></a>20101
 所请求的属性不存在。
 
@@ -142,10 +147,10 @@ SharePoint 当前不可用。 请稍后重试。
 所请求的资源不存在。
 
 ### <a name="20103"></a>20103
-此请求不支持 **expand** 查询。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-get-content#query-options)。
+此请求不支持 **expand** 查询。 请参阅[受支持的 OData 查询字符串选项](onenote-get-content.md#supported-odata-query-string-options)。
 
 ### <a name="20104"></a>20104
-仅当查询某个部分中的网页集或查询特定页时，才支持 **pagelevel** 查询选项。 例如：  
+仅当查询某个部分中的网页集或查询特定页时，才支持 **pagelevel** 查询选项。例如：  
 
 ```http
 GET ../sections/{id}/pages?pagelevel=true
@@ -186,19 +191,19 @@ PATCH 请求中的有效负载构建不正确。
 找不到你的请求指定的 PATCH 目标。
 
 ### <a name="20121"></a>20121
-你的请求包含无效的 PATCH 参数。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+请求包含无效的 PATCH 参数。请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20122"></a>20122
-你的请求指定的 PATCH 操作不受支持。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+请求指定的 PATCH 操作不受支持。请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20123"></a>20123
 PATCH 请求无法修改指定页面。
 
 ### <a name="20124"></a>20124
-你的多部分 PATCH 请求不包含使用 PATCH 操作 JSON 结构的“命令”部分。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+你的多部分 PATCH 请求不包含使用 PATCH 操作 JSON 结构的“命令”部分。 请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20125"></a>20125
-你的 PATCH 请求不包含任何操作。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20126"></a>20126
 邮件正文包含格式错误的 JSON 或此操作不支持的字段。
@@ -222,38 +227,41 @@ PATCH 请求无法修改指定页面。
 你的请求包含无效的内容。 此问题的常见原因是缺少内容类型请求标头和/或请求正文中没有内容。 
 
 ### <a name="20133"></a>20133
-你的请求指定的 PATCH 目标不受支持。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+你的请求指定的 PATCH 目标不受支持。 请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20134"></a>20134
-你的请求将无效的元素指定为 PATCH 操作的目标。 如果目标使用 **data-id** 标识符，请确保它的前面带有 # 符号。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+您的请求将无效元素指定为 PATCH 操作的目标。如果目标使用 **data-id** 标识符，请确保其前缀为 # 符号。请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20135"></a>20135
-你的请求指定的实体类型不受 PATCH 操作支持。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+你的请求指定的实体类型不受 PATCH 操作支持。 请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20136"></a>20136
-你的请求包含无效的 **data-render-src** 或 **data-render-method** 属性或缺失这些属性。 请参阅[从捕获内容中提取数据](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-extract-data)。
+你的请求包含无效的 **data-render-src** 或 **data-render-method** 属性或缺失这些属性。 请参阅[从捕获内容中提取数据](onenote-extract-data.md)。
 
 ### <a name="20137"></a>20137
 目标页面不支持 PATCH 请求。
 
 ### <a name="20138"></a>20138
-PATCH 请求中的目标元素类型不支持 **append** 操作。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+PATCH 请求中的目标元素类型不支持 **append** 操作。请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20139"></a>20139
-你的请求包含无效的 **data-tag** 属性值。 请参阅[使用笔记标记](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-note-tags)。
+请求包含无效的 **data-tag** 属性值。请参阅[使用笔记标记](onenote-note-tags.md)。
 
 ### <a name="20140"></a>20140
-你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含**已完成**状态。 示例：
+你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含**已完成**状态。 
+
+示例：
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-请参阅[使用笔记标记](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-note-tags)。
+请参阅[使用笔记标记](onenote-note-tags.md)。
 
 ### <a name="20141"></a>20141
-PATCH 请求中的目标不支持指定操作。 请参阅[更新页面内容](../api-reference/v1.0/api/page_update.md)。
+PATCH 请求中的目标不支持指定操作。 请参阅[更新页面内容](onenote_update_page.md)。
 
 ### <a name="20142"></a>20142
-你的请求包含子实体的父项或父实体的子项的 **expand** 表达式，但它并不受支持。 请参阅[受支持的 OData 查询字符串选项](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-get-content#query-options)。
+你的请求包含子实体的父项或父实体的子项的 **expand** 表达式，但它并不受支持。 请参阅[受支持的 OData 查询字符串选项](onenote-get-content.md#supported-odata-query-string-options)。
 
 ### <a name="20143"></a>20143
 OData 查询无效。
@@ -283,7 +291,7 @@ OData 查询无效。
 请求对此身份验证类型无效。 请使用 `../me/onenote/section/{id}/pages` 终结点在特定分区中创建页面。
 
 ### <a name="20152"></a>20152
-未指定实体的名称值。 名称必须定义，且不能只包含空格。
+没有为实体指定任何 name 值。必须定义名称，并且其中不能仅包含空格。
 
 ### <a name="20153"></a>20153
 实体名称包含无效字符。 名称中不能包含下列字符：`? * \ / : < > | & # " % ~`
@@ -315,7 +323,7 @@ OData 查询无效。
 有关详细信息，请参阅 [OneNote API 限制及避免方法](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)。
 
 ### <a name="20168"></a>20168
-请求中指定的视频源不受支持。 请参阅[支持的视频网站](https://msdn.microsoft.com/zh-CN/office/office365/howto/onenote-images-files#videos)获取最新列表。
+请求中指定的视频源不受支持。 请参阅[支持的视频网站](onenote_images_files.md#adding-videos)获取最新列表。
 
 
 ## <a name="codes-from-30001-to-39999"></a>从 30001 到 39999 的代码

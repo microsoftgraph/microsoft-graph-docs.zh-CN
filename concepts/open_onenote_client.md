@@ -17,25 +17,34 @@
 }
 ```
 
-- **oneNoteClientUrl** - 打开 OneNote 客户端（如果设备上已安装）。 此 URL 包括 *onenote* 前缀。
-如果设备上安装了特定于语言的版本，则打开该版本。 否则，请使用平台语言设置。
-- **oneNoteWebUrl** - 打开 OneNote Online（如果设备上的默认浏览器支持）。 使用浏览器语言设置。
+- **oneNoteClientUrl** 
+
+    - 打开 OneNote 客户端（如果设备上已安装）。 此 URL 包括 *onenote* 前缀。
+    - 如果设备上安装了特定于语言的版本，则打开该版本。 否则，请使用平台语言设置。
+
+- **oneNoteWebUrl** 
+
+    - 打开 OneNote Online（如果设备上的默认浏览器支持）。 
+    - 使用浏览器语言设置。
 
 
 OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
 
-- 通过发送 [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) 请求创建页面
-- 通过发送 [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) 请求创建笔记本
-- 通过发送 [`GET pages`](../api-reference/v1.0/api/page_get.md) 或 [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) 请求获取页面元数据
-- 通过发送 [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) 或 [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) 请求获取笔记本元数据
+- 通过发送 [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) 请求创建页面。
+
+- 通过发送 [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) 请求创建笔记本。
+
+- 通过发送 [`GET pages`](../api-reference/v1.0/api/page_get.md) 或 [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) 请求获取页面元数据。
+
+- 通过发送 [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) 或 [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) 请求获取笔记本元数据。
 
 下面的示例显示如何检查响应的状态代码、分析 JSON 以提取 URL，然后打开 OneNote 客户端。
 
 ## <a name="ios-example"></a>iOS 示例
 
-下面的示例从 JSON 响应获取 OneNote 客户端 URL。 它使用 AFNetworking 库 (http://afnetworking.com/) 提取两个 URL。 在示例中，`created` 是指向用于存储响应值的 ONSCPSStandardResponse 对象的指针，`responseObject` 包含已分析的 JSON。
+下面的示例从 JSON 响应获取 OneNote 客户端 URL。 它使用 AFNetworking 库 (http://afnetworking.com/)) 提取两个 URL。 在示例中，`created` 是指向用于存储响应值的 **ONSCPSStandardResponse** 对象的指针，`responseObject` 包含已分析的 JSON。
 
-```objectivec
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,9 +82,11 @@ OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
       }
 ``` 
 
+<br/>
+
 分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。 使用 `oneNoteClientUrl` 打开已安装的 OneNote 客户端，或使用 `oneNoteWebURL` 打开 OneNote Online。
 
-```objectivec
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
@@ -139,6 +150,8 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
+<br/>
+
 借助响应属性，应用可以打开 OneNote Online，如下面的示例中所示。
 
 ```java 
@@ -148,7 +161,9 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
+
+<br/>
+
 或者，应用可以打开 Android 设备上的 OneNote 客户端。 使用 `oneNoteClientUrl` 属性时，必须先用大括号 `{ }` 将 GUID 字符串括起来，然后再开始操作。 以下示例演示如何执行此操作。
 
 ```java 
@@ -170,5 +185,5 @@ if (response.getResponseCode() == 201) {
 
 ## <a name="see-also"></a>另请参阅
 
-- [获取 OneNote 内容和结构](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [创建 OneNote 页](../api-reference/v1.0/api/section_post_pages.md)
+- [获取 OneNote 内容和结构](onenote-get-content.md)
+- [创建 OneNote 页](onenote-create-page.md)

@@ -4,6 +4,7 @@
 OneNote 页面的正文可以包含多个直接 `div`、`img` 和 `object` 子元素，可在页面上对其独立定位。
 
 <a name="attributes"></a>
+
 ## <a name="attributes-and-positioning-behavior"></a>属性和定位行为
 
 使用 `data-absolute-enabled` 和 [`style`](#supported-css-style-attributes) 属性在页面上创建绝对定位的元素，如下所示：
@@ -23,11 +24,11 @@ OneNote 页面的正文可以包含多个直接 `div`、`img` 和 `object` 子�
 - 绝对定位元素无法进行嵌套或无法包含定位的元素。 API 忽略在绝对定位的 div 中嵌套元素上指定的任何位置设置，在绝对定位的父 div 中呈现此嵌套内容，并在响应中返回 **api.diagnostics** 属性中的警告。
 
 
-# <a name="example"></a>示例
+### <a name="example"></a>示例
 
- 下面的示例包含直接 `p` 子级、绝对定位的 div 和非绝对定位的 div。
+下面的示例包含直接 `p` 子级、绝对定位的 div 和非绝对定位的 div。
 
-## <a name="input-html"></a>输入 HTML  
+#### <a name="input-html"></a>输入 HTML  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -41,9 +42,9 @@ OneNote 页面的正文可以包含多个直接 `div`、`img` 和 `object` 子�
    </body>
    ```
 
-API 在默认 div 中呈现非绝对定位的 div。 请注意，嵌套的 `<div>` 标记已被丢弃，因为它们无法定义任何语义信息（例如，`data-id`）。
+API 在默认 div 中呈现非绝对定位的 div。 请注意，嵌套的 `<div>` 标记已被弃用，因为它们无法定义任何语义信息（例如，`data-id`）。
 
-## <a name="output-html"></a>输出 HTML 
+#### <a name="output-html"></a>输出 HTML 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -57,12 +58,12 @@ API 在默认 div 中呈现非绝对定位的 div。 请注意，嵌套的 `<div
    </body>
    ```
 
-## <a name="example"></a>示例
+### <a name="example"></a>示例
 
- 以下示例创建包含一个绝对定位的 div 和一个绝对定位的图像的页面。
+以下示例创建包含一个绝对定位的 div 和一个绝对定位的图像的页面。
 
 
-### <a name="input-html"></a>输入 HTML  
+#### <a name="input-html"></a>输入 HTML  
 
 ```html 
 <html>
@@ -91,7 +92,8 @@ OneNote API 评估输入 HTML 并保留所有语义内容和受 OneNote 支持�
 有关 OneNote API 如何处理输入和输出 HTML 的详细信息，请参阅 [OneNote 页面的输入和输出 HTML](onenote_input_output_html.md)。
 
 <a name="style-attributes"></a>
-### <a name="supported-css-style-attributes"></a>受支持的 CSS 样式属性
+
+## <a name="supported-css-style-attributes"></a>受支持的 CSS 样式属性
 
 所有绝对定位的元素都可以指定顶部和左侧位置。 div 和图像可以指定宽度，并且图像还可以指定高度。 例如：
 
@@ -101,16 +103,18 @@ OneNote API 评估输入 HTML 并保留所有语义内容和受 OneNote 支持�
 
 | 属性 | 支持的元素 | 说明 |  
 |:------|:------|:------|  
-| top | div, img, object | 仅以像素为单位的元素顶部边框的 y 轴坐标。 默认值为 120 个像素。<p>示例：`top:140px`</p> |  
-| left |  div, img, object  | 仅以像素为单位的元素左边框的 x 轴坐标。 默认值为 48 个像素。<p>示例：`left:95px`</p> |  
-| width |  div, img  | 仅以像素为单位的元素的宽度。<p>示例：`width:480px`</p> |  
-| height | img | 仅以像素为单位的元素的高度。 对于 div，高度是在运行时计算的，且任何指定的高度值都将被忽略。<p>示例：`height:665px`</p> |  
+| top | div, img, object | 仅以像素为单位的元素顶部边框的 y 轴坐标。 默认值为 120 个像素。<br/><br/>示例：`top:140px` |  
+| left |  div, img, object  | 仅以像素为单位的元素左边框的 x 轴坐标。 默认值为 48 个像素。<br/><br/>示例：`left:95px` |  
+| width |  div, img  | 仅以像素为单位的元素的宽度。<br/><br/>示例：`width:480px` |  
+| height | img | 仅以像素为单位的元素的高度。 对于 div，高度是在运行时计算的，且任何指定的高度值都将被忽略。<br/><br/>示例：`height:665px` |  
  
 其他位置属性（如 `z-index`）都将被忽略。 绝对定位的图像可以使用 `data-render-src` 或 `src` 属性。
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>响应信息
+
 OneNote API 在响应中返回以下信息。
 
 | 响应数据 | 说明 |  
@@ -121,17 +125,19 @@ OneNote API 在响应中返回以下信息。
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>权限
 
 若要创建或更新 OneNote 页面，需要请求相应的权限。 选择应用运行所需的最低级别的权限。
 
-### <a name="permissions-for-post-pages"></a>_POST 页面_的权限 
+#### <a name="permissions-for-post-pages"></a>POST 页面的权限 
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
 
-### <a name="permissions-for-patch-pages"></a>_PATCH 页面_的权限。 
+#### <a name="permissions-for-patch-pages"></a>PATCH 页面的权限 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -140,7 +146,8 @@ OneNote API 在响应中返回以下信息。
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>其他资源
+
+## <a name="see-also"></a>另请参阅
 
 - [创建 OneNote 页](onenote-create-page.md)
 - [更新 OneNote 页内容](onenote_update_page.md)

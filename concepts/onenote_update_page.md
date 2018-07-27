@@ -1,6 +1,6 @@
 # <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
 
-*__适用于：__ OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本*
+**适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
 
 
 若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：
@@ -11,32 +11,32 @@
 
 
 <a name="request-uri"></a>
+
 ## <a name="construct-the-request-uri"></a>构建请求 URI
 
 若要构建请求 URI，请从服务根 URL 开始：
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
+<br/>
+
 然后，追加页面的 *content* 终结点：
 
-**获取页面 HTML 和所有定义的 *data-id* 值**</p>
-`../pages/{id}/content`   
+- **获取页面 HTML 和所有定义的 *data-id* 值**<br/><br/>`../pages/{id}/content`   
 
-**获取页面 HTML、所有定义的 *data-id* 值和所有生成的 *id* 值**  
-`../pages/{page-id}/content?includeIDs=true` 
+- **获取页面 HTML、所有定义的 *data-id* 值和所有生成的 *id* 值**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
 **data-id** 和 **id** 值均用作要更新的元素的 **target** 标识符。
 
  
-完整的请求 URI 将如下所示：
-
-`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
+完整的请求 URI 将如下所示：<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
 了解有关[服务根 URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url) 的详细信息。
 
 
 <a name="message-body"></a>
+
 ## <a name="construct-the-message-body"></a>构造邮件正文
 
 OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容，如 **div**、**img** 和 **ol** 元素。 若要更新 OneNote 页面内容，请添加并替换页面上的 HTML 元素。
@@ -68,18 +68,20 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 
 使用 **target**、**action**、**position** 和 **content** 属性来定义用于 PATCH 请求的 JSON 对象。
 
-**target**  
+#### <a name="target"></a>target
+
 要更新的元素。值必须是下列标识符之一：
 
 | 标示符 | 说明 |  
 |------|------|  
-| #{data-id} | <p>在[创建页面](onenote-create-page.md)或[更新页面](onenote_update_page.md)时，可以选择在输入 HTML 中的元素上定义此 ID。 将 # 用作此值的前缀。</p><p> 示例：`'target':'#intro'` 以元素 `<div data-id="intro" ...>` 为目标</p> |  
-| id | <p>这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。 不要使用 # 作为前缀。</p><p> 示例：`'target':'div:{33f8a2...}{37}'` 以元素 `<div id="div:{33f8a2...}{37}" ...>` 为目标</p><p>不要将其与[输入 HTML](onenote_input_output_html.md) 中定义的任何 **id** 值混淆。 所有在输入 HTML 中发送的 **id** 值都将被丢弃。</p> |  
+| #{data-id} | <p>在[创建页面](onenote-create-page.md)或[更新页面](onenote_update_page.md)时，可以选择在输入 HTML 中的元素上定义此 ID。 将 # 用作此值的前缀。</p><p> 示例：<br/>`'target':'#intro'` 定位元素 `<div data-id="intro" ...>`</p> |  
+| id | <p>这是从 Microsoft Graph [生成的 ID](#generated-ids)，对大多数替换操作所都是必需的值。 不要使用 # 作为前缀。</p><p> 示例：<br/>`'target':'div:{33f8a2...}{37}'` 定位元素 `<div id="div:{33f8a2...}{37}" ...>`</p><p>不要将其与[输入 HTML](onenote_input_output_html.md) 中定义的任何 **id** 值混淆。 所有在输入 HTML 中发送的 **id** 值都将被丢弃。</p> |  
 | body | 针对页面上第一个 div 的关键字。 不要使用 # 作为前缀。 |  
 | title | 针对页标题的关键字。 不要使用 # 作为前缀。 |  
  
-**action**  
-要在目标元素上执行的操作。 请参阅[元素支持的操作](#supported-elements-and-actions)。
+#### <a name="action"></a>action
+
+要在目标元素上执行的操作。请参阅[元素的支持操作](#supported-elements-and-actions)。
 
 | 操作 | 说明 |  
 |------|------|  
@@ -88,15 +90,17 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 | prepend | <p>将提供的内容作为第一个子元素添加到目标。 **append** + **before** 的快捷方式。</p><p>仅适用于 **body**、**div**、**ol** 和 **ul** 元素。</p> |  
 | replace | <p>使用提供的内容替换目标。</p><p>大多数**替换**操作需要为目标使用[生成的 ID](#generated-ids)（除 div 中的 **img** 和 **object** 元素之外，还支持使用 **data-id**）。</p> |  
  
-**position**  
-要添加所提供内容的位置，与目标元素相对。 如果省略，默认值为 **after**。
+#### <a name="position"></a>position
+
+要添加所提供的内容的位置，与目标元素有关。如果省略，默认值为 **after**。
 
 | 位置 | 说明 |  
 |------|------|  
-| after（默认） | <p>- 使用 **append**：目标元素的最后一个子元素。</p><p>- 使用 **insert**：目标元素的后续同级元素。</p> |
-| before | <p>- 使用 **append**：目标元素的第一个子元素。</p><p>- 使用 **insert**：目标元素的前导同级元素。</p> |
+| after（默认） |<p>使用 **append**：目标元素的最后一个子元素。</p><p>使用 **insert**：目标元素的后续同级元素。</p> |
+| before | <p>使用 **append**：目标元素的第一个子元素。</p><p>使用 **insert**：目标元素的前导同级元素。</p> |
 
-**content**  
+#### <a name="content"></a>content
+
 要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。 如果内容包含二进制数据，则必须使用包含“Commands”部件的 `multipart/form-data` 内容类型发送请求（请参阅[示例](#multipart-request-with-binary-content)）。 
  
 
@@ -141,19 +145,21 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 <a name="support-matrix"></a>
 
 ## <a name="supported-elements-and-actions"></a>受支持的元素和操作
+
 可以更新页面上的许多元素，但每个元素类型支持特定操作。 下表显示了支持的目标元素和它们支持的更新操作。
 
 | 元素 | 替换 | 附加子元素 | 插入同级元素 |  
-|------|------|------|------|  
+|------|:------:|:------:|:------:|  
 | body<br /> （目标为页面上的第一个 div） | 否 | **是** | 否 |  
 | div<br /> （[绝对定位](onenote-abs-pos.md)） | 否 | **是** | 否 |  
-| div<br /> （在 div 中） | **是**（仅 ID） | **是** | **是** |   
+| div<br /> （在 div 中） | **是**<br/>（仅 ID） | **是** | **是** |   
 | img, object<br /> （在 div 中） | **是** | 否 | **是** |   
-| ol, ul | **是**（仅 ID） | **是** | **是** |   
-| table | **是**（仅 ID） | 否 | **是** |   
-| p, li, h1-h6 | **是**（仅 ID） | 否 | **是** |   
+| ol, ul | **是**<br/>（仅 ID） | **是** | **是** |   
+| table | **是**<br/>（仅 ID） | 否 | **是** |   
+| p, li, h1-h6 | **是**<br/>（仅 ID） | 否 | **是** |   
 | title | **是** | 否 | 否 |  
  
+<br/>
 
 以下元素不支持任何更新操作。
 
@@ -168,18 +174,24 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 
 <a name="examples"></a>
+
 ## <a name="example-requests"></a>示例请求
+
 更新请求包含表示为 JSON 更改对象的一个或多个更改。 这些对象可以定义页面上的不同目标，以及定义目标的不同操作和内容。
 
 以下示例包括 PATCH 请求中使用的 JSON 对象和完整的 PATCH 请求：
 
-[追加子元素](#append-child-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[插入同级元素](#insert-sibling-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[替换元素](#replace-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[完整的 PATCH 请求](#complete-patch-request-examples)
+- [追加子元素](#append-child-elements)
+- [插入同级元素](#insert-sibling-elements)
+- [替换元素](#replace-elements)
+- [完整的 PATCH 请求](#complete-patch-request-examples)
 
 
 <a name="append-examples"></a>
 
 ### <a name="append-child-elements"></a>追加子元素
-**append** 操作将子元素添加到 **body**、**div**（在 div 中）、**ol** 或 **ul** 元素。 **position** 属性确定要将子元素追加到目标之前还是之后。 默认位置是 **after**。
+
+**append** 操作向 **body**、**div**（分区内）、**ol** 或 **ul** 元素添加一个子元素。**position** 属性确定是在目标之前还是之后附加子元素。默认位置为 **after**。
 
 #### <a name="append-to-a-div"></a>追加到 div
 
@@ -226,7 +238,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 #### <a name="append-to-a-list"></a>追加到列表
 
-以下示例将列表项作为最后一个子元素添加到目标列表。 定义了 **list-style-type** 属性，因为项使用非默认列表样式。
+以下示例将一个列表项目作为最后一个子元素添加到目标列表。因为项目使用非默认的列表演示，因此应定义 **list-style-type** 属性。
 
 ```json
 [
@@ -242,11 +254,12 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 <a name="insert-examples"></a>
 
 ### <a name="insert-sibling-elements"></a>插入同级元素
-**insert** 操作将同级元素添加到目标元素。 **position** 属性确定要将同级元素插入到目标之前还是之后。 默认位置是 **after**。 请参阅[支持**插入**](#supported-elements-and-actions)的元素。
 
-**插入同级元素**
+**insert** 操作将同级元素添加到目标元素。 **position** 属性确定要将同级元素插入到目标之前还是之后。 默认位置是 **after**。 请参阅[支持**插入**的元素](#supported-elements-and-actions)。
 
-以下示例将两个同级节点添加到页面。 它会添加 **para1** 元素上面的图像和 **para2** 元素下面的段落。
+#### <a name="insert-siblings"></a>插入同级
+
+以下示例向页面添加两个同级节点。它在 **para1** 元素上方添加一个图像，在 **para2** 元素下方添加一个段落。
 
 ```json
 [
@@ -288,7 +301,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 #### <a name="update-a-table"></a>更新表格 
 
-此示例说明如何使用其生成的 ID 来更新表格。 不支持替换 **tr** 和 **td** 元素，但可以替换整个表。
+此示例显示如何使用生成的 ID 更新表格。不支持替换 **tr** 和 **td** 元素，但您可以替换整个表格。
 
 ```json
 [
@@ -343,10 +356,11 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 以下示例显示了完整的 PATCH 请求。
 
-#### <a name="request-with-text-content-only"></a>仅包含文本内容的请求  
+#### <a name="request-with-text-content-only"></a>仅包含文本内容的请求
+
 以下示例显示使用 **application/json** 内容类型的 PATCH 请求。 内容不包含二进制数据时，可使用此格式。
 
-```
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -373,7 +387,7 @@ Authorization: Bearer {token}
 
 以下示例显示包含二进制数据的多部分 PATCH 请求。 多部分请求需要指定 **application/json** 内容类型并包含 JSON 更改对象数组的“Commands”部件。 其他数据部件可包含二进制数据。 部件名称通常是附加有毫秒为单位或随机 GUID 当前时间的字符串。
 
-```
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: multipart/form-data; boundary=PartBoundary123
@@ -412,9 +426,10 @@ Content-Type: image/png
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 *{token}* 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions_reference.md)。</p> |  
-| Content-Type 标头 | <p>JSON 更改对象的数组的 `application/json`，确定是直接在邮件正文中发送还是在必须的[多部分请求](#multipart-request-with-binary-content)的“Commands”部件中发送。</p><p>发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 *{part-boundary}* 是一个字符串，表示每个数据部件的开始和结束。</p> |  
- 
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions_reference.md)。</p> |  
+| Content-Type 标头 | <p>JSON 更改对象的数组的 `application/json`，确定是直接在邮件正文中发送还是在必须的[多部分请求](#multipart-request-with-binary-content)的“命令”部分中发送。</p><p>发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</p> |  
+
+<br/> 
 
 | 响应数据 | 说明 |  
 |------|------|  
@@ -427,17 +442,13 @@ Content-Type: image/png
 
 ### <a name="constructing-the-microsoft-graph-service-root-url"></a>构建 Microsoft Graph 服务根 URL
 
-<a name="root-url"></a>
+OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式：
 
-## <a name="root-url"></a>根 URL
-OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式。
 `https://graph.microsoft.com/{version}/me/onenote/`
 
-URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。
-- `v1.0` 用于稳定的生产代码。
-- `beta` 用于试用正在开发的功能。 Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。
-- `me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。
-- `users/{id}` 用于为指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [Azure AD 图形 API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)
+URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0` 用于稳定的生产代码。 `beta` 用于试用正在开发的功能。 Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。
+
+`me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。 `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [Azure AD 图形 API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)。
 
 
 > **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。
@@ -458,7 +469,7 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。
 
 <a name="see-also"></a>
 
-## <a name="additional-resources"></a>其他资源
+## <a name="see-also"></a>另请参阅
 
 - [添加图像和文件](onenote_images_files.md)
 - [与 OneNote 集成](integrate_with_onenote.md)

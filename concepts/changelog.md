@@ -29,6 +29,10 @@
 |删除项|beta|已删除 GET /groups/{id}/team，请改用 GET /teams/{id}。 |
 |删除项|beta|已删除 PATCH /groups/{id}/team，请改用 PATCH /teams/{id}。 |
 
+### <a name="webhooks"></a>Webhook
+| 更改类型 | 版本 | 说明                              |
+|:------------|:--------|:-----------------------------------------|
+| 重大更改 | Beta 和 v1.0 | 将驱动器根项的 [Webhook](../api-reference/v1.0/resources/webhooks.md) [最长订阅有效期](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type)缩短至 3 天。 | 
 
 ## <a name="june-2018"></a>2018 年 6 月
 
