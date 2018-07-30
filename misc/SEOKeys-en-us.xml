@@ -1264,7 +1264,7 @@
         <Item text="Windows 设备 Azure AD 帐户" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
       <Item text="移动应用保护" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="Android 托管的应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
+        <Item text="Android 托管应用保护" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="列出" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="获取" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
           <Item text="创建" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_create" />
@@ -2208,7 +2208,7 @@
         <Item text="列出拥有的设备" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="列出 ownedDevices, Microsoft Graph API, 用户 API" SEODescription="检索 directoryObject 对象列表。" />
             <Item text="列出注册的设备" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="列出 registeredDevices, Microsoft Graph API, 用户 API" SEODescription="检索 directoryObject 对象列表。" />
             <Item text="列出拥有的对象" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="列出 ownedObjects, Microsoft Graph API, 用户 API" SEODescription="检索 directoryObject 对象列表。" />
-            <Item text="列出作用域管理员成员身份" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="列出作用域管理员成员身份、Microsoft Graph API、用户 API" SEODescription="检索作用域管理员成员身份对象的列表。" />
+            <Item text="列出作用域管理员成员身份" url="/en-us/api-reference/beta/api/user_list_scopedmemberof" SEOKeyword="列出作用域管理员成员身份、Microsoft Graph API、用户 API" SEODescription="检索作用域管理员成员身份对象的列表。" />
             <Item text="列出创建的对象" url="/en-us/api-reference/beta/api/user_list_createdobjects" SEOKeyword="列出 createdObjects, Microsoft Graph API, 用户 API" SEODescription="检索 directoryObject 对象列表。" />
             <Item text="分配许可证" url="/en-us/api-reference/beta/api/user_assignlicense" SEOKeyword="用户：assignLicense, Microsoft Graph API, 用户 API" SEODescription="" />
             <Item text="获取成员对象" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="用户：getMemberObjects, Microsoft Graph API, 用户 API" SEODescription="" />
@@ -5156,10 +5156,10 @@
         <Item text="列出成员" url="/en-us/api-reference/beta/api/administrativeunit_list_members" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="列出 administrativeUnit 对象的成员的 API。" />
         <Item text="获取成员" url="/en-us/api-reference/beta/api/administrativeunit_get_members" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="获取 administrativeUnit 对象的成员的 API。" />
         <Item text="删除成员" url="/en-us/api-reference/beta/api/administrativeunit_delete_members" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="删除 administrativeUnit 对象的成员的 API。" />
-        <Item text="添加作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedadministrators" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="向 administrativeUnit 对象添加作用域角色管理员的 API。" />
-        <Item text="列出作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedadministrators" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="列出 administrativeUnit 对象的作用域角色管理员的 API。" />
-        <Item text="获取作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedadministrators" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="获取 administrativeUnit 对象的作用域角色管理员的 API。" />
-        <Item text="删除作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedadministrators" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="删除 administrativeUnit 对象的作用域内角色管理员的 API。" />
+        <Item text="添加作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedrolemembers" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="向 administrativeUnit 对象添加作用域角色管理员的 API。" />
+        <Item text="列出作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedrolemembers" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="列出 administrativeUnit 对象的作用域角色管理员的 API。" />
+        <Item text="获取作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedrolemembers" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="获取 administrativeUnit 对象的作用域角色管理员的 API。" />
+        <Item text="删除作用域角色管理员" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedrolemembers" SEOKeyword="管理单元 API、Microsoft Graph API" SEODescription="删除 administrativeUnit 对象的作用域内角色管理员的 API。" />
       </Item>
       <Item text="应用角色分配" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="approleassignment API, Microsoft Graph API, approleassignment API" SEODescription="用于记录用户或组何时被分配到应用程序。在这种情况下，角色分配会导致用户应用访问面板上显示应用程序磁贴。此实体还可用于授予其他应用程序（建模为服务主体）以特定角色访问资源应用程序的权限。您可以创建、读取、更新和删除角色分配。继承自 DirectoryObject。">
           <Item text="获取 appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="获取 appRoleAssignment, Microsoft Graph API, approleassignment API" SEODescription="检索 approleassignment 对象的属性和关系。" />
@@ -5810,8 +5810,12 @@
       </Item>
       <Item text="通道" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="通道 API, Microsoft Graph API, 通道 API" SEODescription="">
         <Item text="列出通道" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="列出通道, Microsoft Graph API, 组 API" SEODescription="检索通道对象的列表。" />
-        <Item text="创建通道" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="创建对话，Microsoft Graph API，组 API" SEODescription="使用此 API 创建新通道。" />
-        <Item text="获取团队通道" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="获取团队通道, Microsoft Graph API, Microsoft 团队通道 API" SEODescription="检索通道对象的属性和关系。" />
+        <Item text="创建通道" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="创建对话，Microsoft Graph API，组 API" SEODescription="此 API 可用于新建通道。" />
+        <Item text="获取通道" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="获取团队通道, Microsoft Graph API, Microsoft Teams 通道 API" SEODescription="检索通道对象的属性和关系。" />
+		<Item text="列出通道消息" url="/en-us/api-reference/beta/api/channel_list_messages" />
+		<Item text="获取通道消息" url="/en-us/api-reference/beta/api/channel_get_message" />
+		<Item text="列出消息回复" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
+		<Item text="获取消息回复" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
       </Item>
       <Item text="聊天线程" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="聊天线程 API, Microsoft Graph API, 聊天线程 API" SEODescription="">
         <Item text="创建聊天线程" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="创建聊天线程, Microsoft Graph API, Microsoft 团队聊天 API" SEODescription="使用此 API 新建聊天会话。" />
@@ -5933,7 +5937,7 @@
 	    <Item text="获取区域格式" url="/en-us/api-reference/beta/api/rangeformat_get" />
 	    <Item text="更新区域格式" url="/en-us/api-reference/beta/api/rangeformat_update" />
 		<Item text="合并" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
-        <Item text="拆分" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
+        <Item text="取消合并" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="清除" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
         <Item text="删除" url="/en-us/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
       </Item>
