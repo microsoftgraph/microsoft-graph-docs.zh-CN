@@ -197,6 +197,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 用于创建答复或转发草稿的**注释**参数（[createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)）不会成为最终的邮件草稿正文的一部分。
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>GET 消息返回 Microsoft Teams 中的聊天
+
+在 v1 和 beta 终结点中，`GET /users/id/messages` 的响应包含出现在团队或通道范围外的用户的 Microsoft Teams 聊天。 这些聊天消息具有“即时信息”作为其主题。
+
 
 ## <a name="drives-files-and-content-streaming"></a>驱动器、文件和内容流式传输
 

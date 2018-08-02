@@ -6,7 +6,26 @@
 
 ## <a name="july-2018"></a>2018 年 7 月
 
-### <a name="application-and-serviceprincipal-api-changes"></a>application 和 servicePrincipal API 更改
+### <a name="directory-apis"></a>目录 API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta | 向 [Organization](../api-reference/beta/resources/organization.md) 资源添加了 isMultipleDataLocationsForServicesEnabled 属性，允许应用确认已为 Multi-Geo 功能启用了租户。 向 [user](../api-reference/beta/resources/user.md) 和 [group](../api-reference/beta/resources/group.md) 资源添加了 preferredDataLocation 属性，允许为用户和组设置首选数据位置。|
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|更改|beta|更新了 [chatmessage](../api-reference/beta/resources/chatmessage.md)) 资源|
+|添加项|beta|添加了 [Chat attachment](../api-reference/beta/resources/chatattachment.md) 资源类型|
+|添加项|beta|添加了 [Chat mention](../api-reference/beta/resources/chatattachment.md) 资源类型|
+|添加项|beta|添加了 [Chat reaction](../api-reference/beta/resources/chatattachment.md) 资源类型|
+|添加项|beta|添加了[获取所有通道邮件 API](../api-reference/beta/api/channel_list_messages.md) |
+|添加项|beta|添加了[获取通道邮件 API](../api-reference/beta/api/channel_get_message.md) |
+|添加项|beta|添加了[获取所有邮件答复 API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|添加项|beta|添加了[获取邮件答复 API](../api-reference/beta/api/channel_get_messagereply.md) |
+
+
+### <a name="application-and-serviceprincipal-api-changes"></a>Application 和 servicePrincipal API 更改
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -15,6 +34,7 @@
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|添加项|beta| 添加了对 [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) 的应用程序权限支持 |
 |删除项|beta|已删除 DELETE /groups/{id}/team/channels/{id}，请改用 DELETE /teams/{id}/channels/{id}。 |
 |删除项|beta|已删除 GET /groups/{id}/team/channels/{id}，请改用 GET /teams/{id}/channels/{id}。 |
 |删除项|beta|已删除 PATCH /groups/{id}/team/channels/{id}，请改用 PATCH /teams/{id}/channels/{id}。 |
@@ -28,6 +48,7 @@
 |删除项|beta|已删除 POST /groups/{id}/team/channels，请改用 POST /teams/{id}/channels。 |
 |删除项|beta|已删除 GET /groups/{id}/team，请改用 GET /teams/{id}。 |
 |删除项|beta|已删除 PATCH /groups/{id}/team，请改用 PATCH /teams/{id}。 |
+|添加项|beta|向[列出组织中的所有团队](../api-reference/beta/api/team_list_all_teams.md)添加了 API。 |
 
 ### <a name="webhooks"></a>Webhook
 | 更改类型 | 版本 | 说明                              |
@@ -40,7 +61,7 @@
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | 全部 | 新的应用程序权限 _Application.ReadWrite.All_ 和 Application.ReadWrite.OwnedBy，允许客户端应用创建、读取、更新和删除应用程序和服务主体，如[权限主题](permissions_reference.md#application-resource-permissions)中所述。 |
+| 添加项 | 全部 | 新的应用程序权限 _Application.ReadWrite.All_ 和 _Application.ReadWrite.OwnedBy_，允许客户端应用创建、读取、更新和删除应用程序和服务主体，如[权限主题](permissions_reference.md#application-resource-permissions)中所述。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -85,7 +106,7 @@
 |添加项|beta|向 [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) 枚举类型添加了 **notConfigured** 成员|
 |添加项|beta|向 [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) 枚举类型添加了 **unknown** 成员|
 |添加项|beta|向 [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) 枚举类型添加了 **userRequestedInstall** 成员|
-|添加项|beta|向 [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) 枚举类型添加了 **notConfigured** 成员|
+|添加项|beta|向 [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) 枚举类型添加了 **notConfigured** 成员
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 | **更改类型** | **版本**   | **说明**                          |
