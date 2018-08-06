@@ -6,7 +6,7 @@ Outlook 允许客户按照自己喜欢的方式整理邮件，可以将所有邮
 
 以编程方式，邮件文件夹由 [mailFolder](../api-reference/v1.0/resources/mailfolder.md) 资源表示，“收件箱”是文件夹结构根目录中的一个文件夹。
 
-每个 **mailFolder** 都由其文件夹 ID 标识，并具有可写的 **displayName** 属性。 Outlook 默认情况下会为客户创建其他几个文件夹。 可以按文件夹 ID 或其已知的名称引用这些默认文件夹。 有关可用的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names)。
+每个 **mailFolder** 都由其文件夹 ID 标识，并具有可写的 **displayName** 属性。 Outlook 默认情况下会为客户创建其他几个文件夹。 可以按文件夹 ID 或其已知的名称引用这些默认文件夹。 有关可用的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../api-reference/v1.0/resources/mailfolder.md)。
 
 对于自定义的非默认文件夹，如果知道其文件夹路径，则可先使用 `/users/{id}/mailfolders` 快捷方式进入根级别并获取所有顶级文件夹，以访问该文件夹：
 

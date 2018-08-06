@@ -12,7 +12,7 @@
 
 要以编程方式区分草稿和已发送邮件，请选中 **isDraft** 属性。
 
-默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names)来识别 Drafts 文件夹和 SentItems 文件夹。 例如，可以执行以下操作[获取 Drafts 文件夹中的邮件](../api-reference/v1.0/api/user_list_messages.md)：
+默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](../api-reference/v1.0/resources/mailfolder.md)来识别 Drafts 文件夹和 SentItems 文件夹。 例如，可以执行以下操作[获取 Drafts 文件夹中的邮件](../api-reference/v1.0/api/user_list_messages.md)：
 
 ```http
 GET /me/mailfolders('Drafts')
