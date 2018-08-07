@@ -77,6 +77,7 @@
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
+Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
 <!DOCTYPE html>
@@ -184,9 +185,9 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote_images_files.md)、我们的[教程](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
+有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote_images_files.md)、我们的[教程](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
 
-Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRLF 换行符。 为降低格式不正确的有效负载的风险，应使用库来构造多部分邮件。 
+Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRLF 换行符。 为降低创造格式不正确的有效负载的风险，应使用库来构造多部分消息。 
 
 如果收到格式不正确有效负载的 400 状态，请检查换行符和空格的格式，并检查编码问题。 例如，请尝试使用 `charset=utf-8`（示例：`Content-Type: text/html; charset=utf-8`）。
 
