@@ -104,14 +104,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## <a name="calendars"></a>日历
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
-
-目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
-
-* 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [列出用户的日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
-* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/calendar_list_events)。
-
 ### <a name="accessing-a-shared-calendar"></a>访问共享日历
 
 使用以下操作尝试访问其他用户共享的日历中的事件时：
@@ -143,8 +135,19 @@ GET \users('{id}')\calendars('{id}')\events
 GET \me\calendars('{id}')\events
 ```
 
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
 
-## <a name="contacts"></a>Contacts
+目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
+
+* 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
+* [列出用户的日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_calendars)允许你获取用户默认日历组中或指定日历组中的每个 [日历](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/resources/calendar)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
+* 还可以[列出基于 ICS 的日历事件](http://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/calendar_list_events)。
+
+### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Microsoft Teams 的 onlineMeetingUrl 属性支持
+
+目前，Skype 会议[事件](../api-reference/v1.0/resources/event.md)的 **onlineMeetingUrl** 属性指明联机会议 URL。 不过，对于 Microsoft Teams 会议事件，此属性设置为 NULL。
+
+## <a name="contacts"></a>联系人
 
 ### <a name="organization-contacts-available-in-only-beta"></a>仅 beta 版支持组织联系人。
 
