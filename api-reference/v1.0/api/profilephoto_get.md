@@ -9,7 +9,6 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
 如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
 例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。
-如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，返回的是尺寸“1x1”和剩余元数据。
 
 ## <a name="permissions"></a>权限
 
@@ -37,12 +36,25 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
+GET /me/photos
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+```
+
+## <a name="http-request-to-get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据的 HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="parameters"></a>参数

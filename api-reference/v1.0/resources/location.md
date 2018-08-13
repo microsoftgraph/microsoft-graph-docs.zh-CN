@@ -15,7 +15,7 @@
 | 属性  | 类型   | 说明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | 地理坐标和位置的海拔高度。 |
+| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 地理坐标和位置的海拔高度。 |
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。              |
 | locationUri | String | （可选）表示位置的 URI。 |

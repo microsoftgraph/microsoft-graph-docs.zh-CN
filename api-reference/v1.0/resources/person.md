@@ -4,13 +4,13 @@
 
 ## <a name="methods"></a>方法
 
-| 方法           | 返回类型    |说明|
+| 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
 |[List people](../api/user_list_people.md) | **person** |获取按与[用户](../resources/user.md)的相关性排序的人员对象集合。|
-|[Get person](../api/person_get.md) | **person** |获取人员对象的属性和关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |birthday|String|人员的生日。|
 |companyName|String|人员的公司名称。|
@@ -34,8 +34,8 @@
 |yomiCompany|String|人员所在公司的注音日文名称。|
 
 ## <a name="relationships"></a>Relationships
-无。
 
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

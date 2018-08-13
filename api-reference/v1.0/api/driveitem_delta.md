@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "同步驱动器的内容"
-ms.openlocfilehash: f9891b639b44b235bb62795e181c5c0a37b99f45
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 同步驱动器的内容
+ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
+ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "20050826"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -19,7 +20,7 @@ ms.lasthandoff: 09/28/2017
 
 返回具有 [`deleted` 方面](../resources/deleted.md) 的已删除邮件。应从本地状态中删除设置此属性的项目。 
 
-**注意：**如果在同步所有更改后文件夹为空，则仅应在本地删除此文件夹。
+**注意：** 如果在同步所有更改后文件夹为空，则仅应在本地删除此文件夹。
 
 ## <a name="permissions"></a>权限
 

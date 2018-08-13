@@ -38,7 +38,7 @@ POST /directoryRoles/{id}/members/$ref
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
 Content-type: application/json
 
 {

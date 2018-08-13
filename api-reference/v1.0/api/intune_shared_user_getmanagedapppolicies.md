@@ -1,10 +1,11 @@
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 函数
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 获取给定用户的应用限制。
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -34,14 +35,17 @@ GET /users/{usersId}/getManagedAppPolicies
 如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) 集合。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppPolicies
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

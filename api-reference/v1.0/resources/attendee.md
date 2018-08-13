@@ -9,7 +9,7 @@
 |:---------------|:--------|:----------|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
 |类型|String|与会者类型：`required`、`optional`、`resource`。|
-|emailAddress|[emailAddress](emailAddress.md)|添加与会者姓名和 SMTP 地址。|
+|emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

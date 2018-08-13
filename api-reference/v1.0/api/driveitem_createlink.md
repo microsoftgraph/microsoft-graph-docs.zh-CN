@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "使用链接共享文件"
-ms.openlocfilehash: 342e6ce403225a5d4b8b555a79355a721055e465
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 使用链接共享文件
+ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
+ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "22223471"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -67,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 类型值     | 说明                                                                                                                   |
 |:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 创建到任意用户都可使用链接访问的 DriveItem 的链接。 管理员可禁用匿名链接。                 |
-| `organization` | 创建到用户组织内的任意用户都可访问的 DriveItem 的链接。 OneDrive 个人版不支持组织链接范围。 |
+| `anonymous`    | 创建到任意用户都可使用链接访问的 DriveItem 的链接。 管理员可能会禁用匿名链接。                 |
+| `organization` | 创建到用户组织内任意用户都可访问的 DriveItem 的链接。 OneDrive 个人版不支持组织链接范围。 |
 
 ## <a name="response"></a>响应
 
@@ -168,7 +169,7 @@ Content-Type: application/json
 
 使用 `embed` 链接类型时，可以在 `<iframe>` HTML 元素中嵌入返回的 webUrl。创建嵌入链接时，`webHtml` 属性包含 `<iframe>` 的 HTML 代码以托管内容。
 
-**注意：**仅 OneDrive 个人版支持嵌入链接。
+**注意：** 仅 OneDrive 个人版支持嵌入链接。
 
 ### <a name="request"></a>请求
 
@@ -197,7 +198,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"

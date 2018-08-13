@@ -15,7 +15,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/{id}/registeredUsers
+POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头

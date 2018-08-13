@@ -12,7 +12,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用 | Device.ReadWrite.All 和 User.ReadBasic.All 或 Directory.Read.All 或 Directory.ReadWrite.All |
+|应用程序 | Directory.Read.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
