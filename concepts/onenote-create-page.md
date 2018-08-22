@@ -77,7 +77,6 @@
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
-Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
 <!DOCTYPE html>
@@ -185,7 +184,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote_images_files.md)、我们的[教程](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
+有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote_images_files.md)、我们的[教程](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
 
 Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRLF 换行符。 为降低创造格式不正确的有效负载的风险，应使用库来构造多部分消息。 
 
@@ -224,7 +223,7 @@ Microsoft Graph 服务根 URL 为 Microsoft Graph 的所有调用使用以下格
 
 `https://graph.microsoft.com/{version}/me/onenote/`  
 
-URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0` 用于稳定的生产代码。 `beta` 用于试用正在开发的功能。 Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。 
+URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0` 用于稳定的生产代码。 用于试用正在开发的功能。`beta` Beta 版中的特性和功能可能会有所更改，因此，不应将其用于生产代码。 
 
 为当前用户可以访问的 OneNote 内容（拥有和共享）使用 `me`。 为指定用户已与当前用户共享的 OneNote 内容（此 URL 中）使用 `users/{id}`。 使用 [Microsoft Graph](https://graph.microsoft.com/v1.0/users) 获取用户 ID。 
 
