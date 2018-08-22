@@ -1,6 +1,6 @@
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列表属性和[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)对象关系。
 ## <a name="prerequisites"></a>先决条件
