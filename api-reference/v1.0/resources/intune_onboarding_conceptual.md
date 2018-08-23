@@ -1,45 +1,11 @@
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
 你可以通过 Microsoft Intune 注册设备（包括 Windows 电脑）以启用移动设备管理 (MDM)。 本主题介绍在 Intune 管理中注册移动设备的不同方法。 注册设备的方法取决于需要的设备类型、所有权和管理级别。 “自带设备”(BYOD) 注册可让用户注册其个人手机、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。
 
 以下 Graph 资源可用于在 Intune 中管理注册：
 
-- [Apple 推送通知证书](intune_devices_applepushnotificationcertificate.md)
-- [审核主角](intune_auditing_auditactor.md)
-- [审核事件](intune_auditing_auditevent.md)
-- [审核属性](intune_auditing_auditproperty.md)
-- [审核资源](intune_auditing_auditresource.md)
-- [配置管理器客户端已启用的功能](intune_devices_configurationmanagerclientenabledfeatures.md)
-- [从共享 Apple 设备删除用户操作结果](intune_devices_deleteuserfromsharedappledeviceactionresult.md)
-- [检测到的应用](intune_devices_detectedapp.md)
-- [设备操作结果](intune_devices_deviceactionresult.md)
-- [设备类别](intune_devices_devicecategory.md)
-- [设备 Exchange 访问状态摘要](intune_devices_deviceexchangeaccessstatesummary.md)
-- [设备地理位置](intune_devices_devicegeolocation.md)
-- [设备运行状况证明状态](intune_devices_devicehealthattestationstate.md)
-- [设备管理疑难解答事件](intune_troubleshooting_devicemanagementtroubleshootingevent.md)
-- [设备管理](intune_devices_devicemanagement.md)
-- [设备管理](intune_endpointprotection_devicemanagement.md)
-- [设备管理](intune_notification_devicemanagement.md)
-- [设备管理](intune_remoteassistance_devicemanagement.md)
-- [设备管理](intune_troubleshooting_devicemanagement.md)
-- [设备管理](intune_auditing_devicemanagement.md)
-- [设备操作系统摘要](intune_devices_deviceoperatingsystemsummary.md)
-- [注册疑难解答事件](intune_troubleshooting_enrollmenttroubleshootingevent.md)
-- [已本地化的通知邮件](intune_notification_localizednotificationmessage.md)
-- [查找设备操作结果](intune_devices_locatedeviceactionresult.md)
-- [托管设备概述](intune_devices_manageddeviceoverview.md)
-- [托管设备](intune_devices_manageddevice.md)
-- [通知邮件模板](intune_notification_notificationmessagetemplate.md)
-- [远程协助合作伙伴](intune_remoteassistance_remoteassistancepartner.md)
-- [远程锁定操作结果](intune_devices_remotelockactionresult.md)
-- [重置密码操作结果](intune_devices_resetpasscodeactionresult.md)
-- [更新 Windows 设备帐户操作参数](intune_devices_updatewindowsdeviceaccountactionparameter.md)
-- [用户](intune_devices_user.md)
-- [用户](intune_troubleshooting_user.md)
-- [Windows Defender 扫描操作结果](intune_devices_windowsdefenderscanactionresult.md)
-- [Windows 设备帐户](intune_devices_windowsdeviceaccount.md)
-- [Windows 设备 AD 帐户](intune_devices_windowsdeviceadaccount.md)
-- [Windows 设备 Azure AD 帐户](intune_devices_windowsdeviceazureadaccount.md)
+- [导入 Windows AutoPilot 的设备标识](intune_enrollment_importedwindowsautopilotdeviceidentity.md)
+- [导入 Windows AutoPilot 设备标识导入状态](intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)
+- [导入 Windows AutoPilot 设备标识状态](intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)
