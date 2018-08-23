@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: UploadSession
-ms.openlocfilehash: d84b588c28791ab8f1cf6cef1be6af767fa18e47
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6c0ffebf0d973afe72ab82de9782c1f54e2342dd
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "20502120"
 ---
 # <a name="uploadsession-resource"></a>UploadSession 资源
 
@@ -37,12 +38,12 @@ ms.lasthandoff: 09/28/2017
 | 属性       | 类型              |说明
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | 以 UTC 表示的上载会话过期的日期和时间。在此过期时间之前必须上载完整的文件文件。
-| nextExpectedRanges | String collection | 字节范围集合，文件服务器缺失。这些区域索引均从零开始，格式为“开始-结束”（例如，“0-26”指示该文件的前 27 个字节)。
-| uploadUrl          | String            | 接受文件字节范围的 PUT 请求的 URL 端点。
+| nextExpectedRanges | 字符串集 | 字节范围集合，文件服务器缺失。这些区域索引均从零开始，格式为“开始-结束”（例如，“0-26”指示该文件的前 27 个字节)。
+| uploadUrl          | 字符串            | 接受文件字节范围的 PUT 请求的 URL 端点。
 
-## <a name="additional-resources"></a>其他资源
+## <a name="see-also"></a>另请参阅
 
-有关如何使用上传会话上传文件的详细信息，请参阅[使用上传会话上传大文件](../api/driveitem_createuploadsession.md)。
+- [通过上传会话上传大文件](../api/driveitem_createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
