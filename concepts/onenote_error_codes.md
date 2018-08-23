@@ -50,7 +50,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
 
 ### <a name="10012"></a>10012
-无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/zh-CN/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
+无法创建或更新实体，因为包含笔记本的库要求先将项目签出然后才能编辑这些项。 有关详细信息，请参阅[设置库以请求签出文件](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)。
 
 可从库中删除签出要求，也可以移动笔记本。
 
@@ -179,7 +179,7 @@ PATCH 请求中的有效负载构建不正确。
 请求中指定的资源已被删除。
 
 ### <a name="20115"></a>20115
-名称包含无效字符。 笔记本名称中不能包含下列任意字符：`? * \ / : < > | ' "`
+名称包含无效字符。 笔记本名称中不能包含下列任意字符： `? * \ / : < > | ' "`
 
 ### <a name="20117"></a>20117
 在您指定的位置中已存在指定名称的项。
@@ -294,7 +294,7 @@ OData 查询无效。
 没有为实体指定任何 name 值。必须定义名称，并且其中不能仅包含空格。
 
 ### <a name="20153"></a>20153
-实体名称包含无效字符。 名称中不能包含下列字符：`? * \ / : < > | & # " % ~`
+实体名称包含无效字符。 名称中不能包含下列字符： `? * \ / : < > | & # " % ~`
 
 ### <a name="20154"></a>20154
 实体名称不能以空格开头。
@@ -330,7 +330,7 @@ OData 查询无效。
 用户的帐户有问题。
 
 ### <a name="30101"></a>30101
-用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/zh-CN/)。
+用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/en-us/)。
 
 ### <a name="30102"></a>30102
 不能再向请求的节添加任何内容，因为它已经达到其最大大小。
