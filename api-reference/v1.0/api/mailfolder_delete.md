@@ -1,36 +1,41 @@
-# <a name="delete-mailfolder"></a><span data-ttu-id="9fd30-101">删除 mailFolder</span><span class="sxs-lookup"><span data-stu-id="9fd30-101">Delete mailFolder</span></span>
+# <a name="delete-mailfolder"></a><span data-ttu-id="5bc98-101">删除 mailFolder</span><span class="sxs-lookup"><span data-stu-id="5bc98-101">Delete mailFolder</span></span>
 
-<span data-ttu-id="9fd30-102">删除 mailFolder。</span><span class="sxs-lookup"><span data-stu-id="9fd30-102">Delete mailFolder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="9fd30-103">权限</span><span class="sxs-lookup"><span data-stu-id="9fd30-103">Permissions</span></span>
-<span data-ttu-id="9fd30-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="9fd30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="5bc98-102">删除指定的 [mailFolder](../resources/mailfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5bc98-102">Delete the specified mailFolder object.</span></span>
 
-|<span data-ttu-id="9fd30-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="9fd30-106">Permission type</span></span>      | <span data-ttu-id="9fd30-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9fd30-107">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="5bc98-103">如果存在，您可以由其文件夹 ID 或按[已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹。</span><span class="sxs-lookup"><span data-stu-id="5bc98-103">You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists.</span></span> 
+
+><span data-ttu-id="5bc98-104">**注**：您可能无法删除可恢复删除邮件文件夹中的项目（由已知文件夹名称 `recoverableitemsdeletions` 所指代）。</span><span class="sxs-lookup"><span data-stu-id="5bc98-104">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`).</span></span> <span data-ttu-id="5bc98-105">有关详细信息，请参阅[已删除邮件的保留期](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清理已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。</span><span class="sxs-lookup"><span data-stu-id="5bc98-105">See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="5bc98-106">权限</span><span class="sxs-lookup"><span data-stu-id="5bc98-106">Permissions</span></span>
+<span data-ttu-id="5bc98-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="5bc98-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="5bc98-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5bc98-109">Permission type</span></span>      | <span data-ttu-id="5bc98-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5bc98-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9fd30-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9fd30-108">Delegated (work or school account)</span></span> | <span data-ttu-id="9fd30-109">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9fd30-109">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9fd30-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9fd30-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9fd30-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9fd30-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9fd30-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="9fd30-112">Application</span></span> | <span data-ttu-id="9fd30-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9fd30-113">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="5bc98-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5bc98-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5bc98-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5bc98-112">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="5bc98-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5bc98-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5bc98-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5bc98-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="5bc98-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5bc98-115">Application</span></span> | <span data-ttu-id="5bc98-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5bc98-116">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9fd30-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9fd30-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5bc98-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5bc98-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="9fd30-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="9fd30-115">Request headers</span></span>
-| <span data-ttu-id="9fd30-116">名称</span><span class="sxs-lookup"><span data-stu-id="9fd30-116">Name</span></span>       | <span data-ttu-id="9fd30-117">类型</span><span class="sxs-lookup"><span data-stu-id="9fd30-117">Type</span></span> | <span data-ttu-id="9fd30-118">说明</span><span class="sxs-lookup"><span data-stu-id="9fd30-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5bc98-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="5bc98-118">Request headers</span></span>
+| <span data-ttu-id="5bc98-119">名称</span><span class="sxs-lookup"><span data-stu-id="5bc98-119">Name</span></span>       | <span data-ttu-id="5bc98-120">类型</span><span class="sxs-lookup"><span data-stu-id="5bc98-120">Type</span></span> | <span data-ttu-id="5bc98-121">说明</span><span class="sxs-lookup"><span data-stu-id="5bc98-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9fd30-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="9fd30-119">Authorization</span></span>  | <span data-ttu-id="9fd30-120">string</span><span class="sxs-lookup"><span data-stu-id="9fd30-120">string</span></span>  | <span data-ttu-id="9fd30-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9fd30-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5bc98-122">授权</span><span class="sxs-lookup"><span data-stu-id="5bc98-122">Authorization</span></span>  | <span data-ttu-id="5bc98-123">字符串</span><span class="sxs-lookup"><span data-stu-id="5bc98-123">string</span></span>  | <span data-ttu-id="5bc98-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5bc98-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9fd30-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="9fd30-123">Request body</span></span>
-<span data-ttu-id="9fd30-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9fd30-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5bc98-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="5bc98-126">Request body</span></span>
+<span data-ttu-id="5bc98-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5bc98-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9fd30-125">响应</span><span class="sxs-lookup"><span data-stu-id="9fd30-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5bc98-128">响应</span><span class="sxs-lookup"><span data-stu-id="5bc98-128">Response</span></span>
 
-<span data-ttu-id="9fd30-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9fd30-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="5bc98-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="5bc98-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9fd30-128">示例</span><span class="sxs-lookup"><span data-stu-id="9fd30-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9fd30-129">请求</span><span class="sxs-lookup"><span data-stu-id="9fd30-129">Request</span></span>
-<span data-ttu-id="9fd30-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9fd30-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5bc98-131">示例</span><span class="sxs-lookup"><span data-stu-id="5bc98-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5bc98-132">请求</span><span class="sxs-lookup"><span data-stu-id="5bc98-132">Request</span></span>
+<span data-ttu-id="5bc98-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5bc98-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
@@ -38,8 +43,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="9fd30-131">响应</span><span class="sxs-lookup"><span data-stu-id="9fd30-131">Response</span></span>
-<span data-ttu-id="9fd30-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9fd30-132">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5bc98-134">响应</span><span class="sxs-lookup"><span data-stu-id="5bc98-134">Response</span></span>
+<span data-ttu-id="5bc98-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5bc98-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
