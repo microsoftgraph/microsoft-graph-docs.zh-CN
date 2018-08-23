@@ -2,6 +2,8 @@
 
 根据 [groupSettingTemplates](../resources/groupsettingtemplate.md) 中提供的模板，使用此 API 创建新设置。这些设置可设置为租户级别或组级别。创建请求必须为模板中定义的所有设置提供 [settingValues](../resources/settingvalue.md)。对于组特定设置，仅可以设置管理组成员是否可以邀请来宾用户的设置。通常将来宾用户添加到群组的功能可用后，该操作将管理此行为。
 
+对于 v1.0 中支持的模板和属性列表，使用[groupSettingTemplate 查询](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)（对于 beta 终结点，调用[directorySettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta)。）
+
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -24,7 +26,7 @@ POST /groups/{id}/settings
 
 | 名称 | 说明 |
 |:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -48,16 +50,14 @@ Content-type: application/json
 Content-length: 215
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ]
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ]
 }
 ```
 在请求正文中，提供 [groupSetting](../resources/groupsetting.md) 对象的 JSON 表示形式。
@@ -75,17 +75,15 @@ Content-type: application/json
 Content-length: 238
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ],
-    "id": "id-value"
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ],
+  "id": "id-value"
 }
 ```
 

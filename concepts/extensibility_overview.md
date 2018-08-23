@@ -53,8 +53,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。提供两个命名选项：
 
-- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 域，可以使用域名和架构名称定义唯一名称，格式如下：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 例如，如果虚域是 contoso.com，可以定义 `contoso_mySchema` 的 **id**。 此为首选项。
-- 如果没有验证的虚域，则可以只设置架构名称的 **id**（不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如，`extkvbmkofy_mySchema`。
+- 如果已有通过租户验证的 `.com`、`.net`、`.gov`、`.edu` 或 `.org` 域，可以使用域名和架构名称定义唯一名称，格式如下：\{_﻿domainName_\}\_\{_﻿schemaName_\}。 例如，如果虚域是 contoso.com，可以定义 `contoso_mySchema` 的 **id**。 此为首选项。
+- 如果没有验证的虚域，则可以只设置架构名称的 **id**（不带域名称前缀），例如，`mySchema`。根据所提供的名称，Microsoft Graph 将为你分配一个字符串 ID，采用以下格式：ext\{_﻿8-random-alphanumeric-chars_\}\_\{_﻿schema-name_\}。例如，`extkvbmkofy_mySchema`。
 
 可以看到，在 **id** 中此唯一名称用作复杂类型名称，复杂类型将在扩展的资源实例上存储自定义数据。
 
@@ -87,8 +87,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 | 属性类型 | 备注 |
 |:-------------|:------------|
-| Binary | 最多 256 字节。 |
-| Boolean | 不支持消息、活动和帖子。 |
+| 二进制 | 最多 256 字节。 |
+| 布尔 | 不支持消息、活动和帖子。 |
 | 日期时间 | 必须以 ISO 8601 格式进行指定。存储为 UTC 格式。 |
 | 整数 | 32 位值。不支持消息、活动和帖子。 |
 | 字符串 | 最多 256 个字符。 |
@@ -97,7 +97,7 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD 目录架构扩展
 
-Azure AD 支持类似的扩展类型，在一些 [directoryObject](../api-reference/v1.0/resources/directoryObject.md) 资源中称其为[目录架构扩展](https://msdn.microsoft.com/zh-CN/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。虽然必须使用 [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) 创建并管理目录架构扩展的定义，但是可以使用 Microsoft Graph API 添加、获取、更新和删除这些扩展的属性中的_数据_。
+Azure AD 支持类似的扩展类型，在一些 [directoryObject](../api-reference/v1.0/resources/directoryObject.md) 资源中称其为[目录架构扩展](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)。虽然必须使用 [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) 创建并管理目录架构扩展的定义，但是可以使用 Microsoft Graph API 添加、获取、更新和删除这些扩展的属性中的_数据_。
 
 ## <a name="permissions"></a>权限
 
@@ -134,6 +134,6 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](../api-refere
 
 ## <a name="see-also"></a>另请参阅
 
-- [Office 365 域](https://technet.microsoft.com/zh-CN/library/office-365-domains.aspx)
+- [Office 365 域](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 - [添加并验证 Office 365 租户的域](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
