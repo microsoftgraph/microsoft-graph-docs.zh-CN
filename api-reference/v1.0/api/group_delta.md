@@ -11,14 +11,14 @@
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-为开始跟踪更改，请在组资源上发出包含 delta 函数的请求。 
+为开始跟踪更改，请在组资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/delta
 ```
 
-### <a name="query-parameters"></a>查询参数
+## <a name="query-parameters"></a>查询参数
 跟踪组中的更改会触发一个或多个 **delta** 函数调用。如果使用任何查询参数（而不是 `$deltatoken` 和 `$skiptoken`），必须在初始 **delta** 请求中指定它。Microsoft Graph 会自动将任何指定参数编码为响应中返回的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
@@ -27,14 +27,14 @@ GET /groups/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示同一个组集合中有进一步的更改需要追踪。 |
+| $deltatoken | 字符串 | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | 字符串 | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示同一个组集合中有进一步的更改需要追踪。 |
 
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 OData 查询参数来帮助自定义响应。
+### <a name="odata-query-parameters"></a>OData 查询参数
+此方法支持可选 的 OData 查询参数来帮助自定义响应。
 
-- 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
-- 对于组，Delta 查询支持 `$select`、`$top` 和 `$expand`。 
+- 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。
+- 对于组，Delta 查询支持 `$select`、`$top` 和 `$expand`。
 - 提供对 `$filter` 和 `$orderby` 的有限支持：
   * 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`。 筛选对象不能超出 50 个。
 - 不支持 `$search`。
@@ -57,8 +57,8 @@ GET /groups/delta
 
 请参阅：</br>
 - [使用增量查询](../../../concepts/delta_query_overview.md)了解更多详细信息</br>
-- [获取组的增量更改](../../../concepts/delta_query_groups.md)获取示例请求。</br>
-    
+- 要了解详细演练，请参阅[获取组的增量更改](../../../concepts/delta_query_groups.md)。</br>
+
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -72,7 +72,9 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>
+> 请注意，*members@delta* 属性包括了组中成员对象的 id。
 
 <!-- {
   "blockType": "response",
@@ -95,11 +97,25 @@ Content-type: application/json
       "groupTypes": [
         "groupTypes-value"
       ],
-      "mail": "mail-value"
+      "mail": "mail-value",
+      "members@delta": [
+               {
+                   "@odata.type": "#microsoft.graph.user",
+                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+               },
+               {
+                   "@odata.type": "#microsoft.graph.user",
+                   "id": "49320844-be99-4164-8167-87ff5d047ace"
+               }
+      ]
     }
   ]
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+- [使用增量查询](../../../concepts/delta_query_overview.md)了解更多详细信息。
+- 要了解详细演练，请参阅[获取组的增量更改](../../../concepts/delta_query_groups.md)。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

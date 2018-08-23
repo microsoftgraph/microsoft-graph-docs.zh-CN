@@ -1,6 +1,6 @@
 # <a name="event-accept"></a>event: accept
 
-接受指定的事件。
+接受用户[日历](../resources/calendar.md)中指定的[事件](../resources/event.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -16,11 +16,9 @@
 ```http
 POST /me/events/{id}/accept
 POST /users/{id | userPrincipalName}/events/{id}/accept
-POST /groups/{id}/events/{id}/accept
 
 POST /me/calendar/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
-POST /groups/{id}/calendar/events/{id}/accept
 
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
@@ -34,16 +32,16 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Content-Type | 字符串  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|注释|String|响应中包含的文本。可选。|
-|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|注释|字符串|响应中包含的文本。可选。|
+|sendResponse|布尔|`true` 如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 

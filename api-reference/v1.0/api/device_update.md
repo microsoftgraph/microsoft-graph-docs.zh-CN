@@ -23,7 +23,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -32,11 +32,11 @@ PATCH /devices/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|布尔| 如果帐户已启用，则为 **true**；否则，为 **false**。 |
-|operatingSystem|String|设备上的操作系统类型。|
-|operatingSystemVersion|String|设备上的操作系统版本|
-|displayName|String|设备显示名称。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 此属性只能通过获准的 MDM 应用进行更新。 |
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 此属性只能通过获准的 MDM 应用进行更新。 |
+|operatingSystem|字符串|设备上的操作系统类型。|
+|operatingSystemVersion|字符串|设备上的操作系统版本|
+|displayName|字符串|设备显示名称。|
+|isCompliant|布尔|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 此值只可以由 Intune 针对任何设备操作系统类型或[经批准 MDM 应用程序](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)针对 Windows 操作系统设备更新。 |
+|isManaged|布尔|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 此值只可以由 Intune 针对任何设备操作系统类型或[经批准 MDM 应用程序](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)针对 Windows 操作系统设备更新。 |
 
 ## <a name="response"></a>响应
 

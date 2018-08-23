@@ -1,6 +1,11 @@
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
-删除 mailFolder。
+删除指定的 [mailFolder](../resources/mailfolder.md) 对象。
+
+如果存在，您可以由其文件夹 ID 或按[已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹。 
+
+>**注**：您可能无法删除可恢复删除邮件文件夹中的项目（由已知文件夹名称 `recoverableitemsdeletions` 所指代）。 有关详细信息，请参阅[已删除邮件的保留期](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清理已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -19,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
