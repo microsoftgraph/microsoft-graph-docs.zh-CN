@@ -1,0 +1,17 @@
+# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="6409d-101">siteSecurityLevel 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6409d-101">siteSecurityLevel enum type</span></span>
+
+> <span data-ttu-id="6409d-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="6409d-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="6409d-103">网站安全级别的可能值。</span><span class="sxs-lookup"><span data-stu-id="6409d-103">Possible values for site security level.</span></span>
+## <a name="members"></a><span data-ttu-id="6409d-104">成员</span><span class="sxs-lookup"><span data-stu-id="6409d-104">Members</span></span>
+|<span data-ttu-id="6409d-105">成员</span><span class="sxs-lookup"><span data-stu-id="6409d-105">Member</span></span>|<span data-ttu-id="6409d-106">值</span><span class="sxs-lookup"><span data-stu-id="6409d-106">Value</span></span>|<span data-ttu-id="6409d-107">说明</span><span class="sxs-lookup"><span data-stu-id="6409d-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="6409d-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="6409d-108">UserDefined</span></span>|<span data-ttu-id="6409d-109">0</span><span class="sxs-lookup"><span data-stu-id="6409d-109">{0}</span></span>|<span data-ttu-id="6409d-110">用户定义的默认值，无特定意图。</span><span class="sxs-lookup"><span data-stu-id="6409d-110">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="6409d-111">低</span><span class="sxs-lookup"><span data-stu-id="6409d-111">Low.</span></span>|<span data-ttu-id="6409d-112">1</span><span class="sxs-lookup"><span data-stu-id="6409d-112">-1</span></span>|<span data-ttu-id="6409d-113">低。</span><span class="sxs-lookup"><span data-stu-id="6409d-113">Low.</span></span>|
+|<span data-ttu-id="6409d-114">mediumLow</span><span class="sxs-lookup"><span data-stu-id="6409d-114">mediumLow</span></span>|<span data-ttu-id="6409d-115">2</span><span class="sxs-lookup"><span data-stu-id="6409d-115">-2</span></span>|<span data-ttu-id="6409d-116">中低。</span><span class="sxs-lookup"><span data-stu-id="6409d-116">Medium-low.</span></span>|
+|<span data-ttu-id="6409d-117">medium</span><span class="sxs-lookup"><span data-stu-id="6409d-117">medium</span></span>|<span data-ttu-id="6409d-118">3</span><span class="sxs-lookup"><span data-stu-id="6409d-118">-3</span></span>|<span data-ttu-id="6409d-119">中等。</span><span class="sxs-lookup"><span data-stu-id="6409d-119">Medium.</span></span>|
+|<span data-ttu-id="6409d-120">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="6409d-120">Medium/High</span></span>|<span data-ttu-id="6409d-121">4</span><span class="sxs-lookup"><span data-stu-id="6409d-121">-4</span></span>|<span data-ttu-id="6409d-122">中等略高。</span><span class="sxs-lookup"><span data-stu-id="6409d-122">Medium/High</span></span>|
+|<span data-ttu-id="6409d-123">high</span><span class="sxs-lookup"><span data-stu-id="6409d-123">High.</span></span>|<span data-ttu-id="6409d-124">5</span><span class="sxs-lookup"><span data-stu-id="6409d-124">-5</span></span>|<span data-ttu-id="6409d-125">高。</span><span class="sxs-lookup"><span data-stu-id="6409d-125">High.</span></span>|
+
+
+

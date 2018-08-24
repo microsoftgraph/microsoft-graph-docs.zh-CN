@@ -1,0 +1,16 @@
+# <a name="windowsuseraccountcontrolsettings-enum-type"></a><span data-ttu-id="f7b49-101">windowsUserAccountControlSettings 枚举类型</span><span class="sxs-lookup"><span data-stu-id="f7b49-101">windowsUserAccountControlSettings enum type</span></span>
+
+> <span data-ttu-id="f7b49-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="f7b49-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="f7b49-103">Windows 用户帐户控制设置的可能的值。</span><span class="sxs-lookup"><span data-stu-id="f7b49-103">Possible values for Windows user account control settings.</span></span>
+## <a name="members"></a><span data-ttu-id="f7b49-104">成员</span><span class="sxs-lookup"><span data-stu-id="f7b49-104">Members</span></span>
+|<span data-ttu-id="f7b49-105">成员</span><span class="sxs-lookup"><span data-stu-id="f7b49-105">Member</span></span>|<span data-ttu-id="f7b49-106">值</span><span class="sxs-lookup"><span data-stu-id="f7b49-106">Value</span></span>|<span data-ttu-id="f7b49-107">描述</span><span class="sxs-lookup"><span data-stu-id="f7b49-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="f7b49-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="f7b49-108">UserDefined</span></span>|<span data-ttu-id="f7b49-109">0</span><span class="sxs-lookup"><span data-stu-id="f7b49-109">{0}</span></span>|<span data-ttu-id="f7b49-110">用户定义、默认值、无意向。</span><span class="sxs-lookup"><span data-stu-id="f7b49-110">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="f7b49-111">alwaysNotify</span><span class="sxs-lookup"><span data-stu-id="f7b49-111">AlwaysNotify</span></span>|<span data-ttu-id="f7b49-112">1</span><span class="sxs-lookup"><span data-stu-id="f7b49-112">-1</span></span>|<span data-ttu-id="f7b49-113">始终通知。</span><span class="sxs-lookup"><span data-stu-id="f7b49-113">Always notify.</span></span>|
+|<span data-ttu-id="f7b49-114">notifyOnAppChanges</span><span class="sxs-lookup"><span data-stu-id="f7b49-114">notifyOnAppChanges</span></span>|<span data-ttu-id="f7b49-115">2</span><span class="sxs-lookup"><span data-stu-id="f7b49-115">-2</span></span>|<span data-ttu-id="f7b49-116">应用程序更改时通知。</span><span class="sxs-lookup"><span data-stu-id="f7b49-116">Notify on app changes.</span></span>|
+|<span data-ttu-id="f7b49-117">notifyOnAppChangesWithoutDimming</span><span class="sxs-lookup"><span data-stu-id="f7b49-117">notifyOnAppChangesWithoutDimming</span></span>|<span data-ttu-id="f7b49-118">3</span><span class="sxs-lookup"><span data-stu-id="f7b49-118">-3</span></span>|<span data-ttu-id="f7b49-119">应用程序更改时通知，桌面不变暗。</span><span class="sxs-lookup"><span data-stu-id="f7b49-119">Notify on app changes without dimming desktop.</span></span>|
+|<span data-ttu-id="f7b49-120">neverNotify</span><span class="sxs-lookup"><span data-stu-id="f7b49-120">neverNotify</span></span>|<span data-ttu-id="f7b49-121">4</span><span class="sxs-lookup"><span data-stu-id="f7b49-121">-4</span></span>|<span data-ttu-id="f7b49-122">从不通知。</span><span class="sxs-lookup"><span data-stu-id="f7b49-122">Never notify.</span></span>|
+
+
+
