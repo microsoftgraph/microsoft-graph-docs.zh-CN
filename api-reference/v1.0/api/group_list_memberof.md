@@ -10,7 +10,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All |
+|应用程序 | Group.Read.All Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,7 @@ GET /groups/{id}/memberOf
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
