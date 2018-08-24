@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-an-android-app"></a>在 Android 应用中开始使用 Microsoft Graph
 
-> **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
+> **为企业客户生成应用？** 如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
 > 若要跨**所有企业方案**支持**全部企业客户**，必须使用 Azure AD 终结点，并使用 [Azure 门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅[在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
@@ -12,7 +12,7 @@
 
 <br/>
 
-**不想生成一个应用吗？**通过下载本文所基于的 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)快速准备就绪并开始运行。
+**不想生成一个应用吗？** 通过下载本文所基于的 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)快速准备就绪并开始运行。
 
 
 ## <a name="prerequisites"></a>先决条件
@@ -44,9 +44,9 @@
 
 1. 使用个人帐户/工作或学校帐户，登录 [Microsoft 应用注册门户](https://apps.dev.microsoft.com/)。
 
-2. 选择“**添加应用**”。
+2. 选择“添加应用”****。
 
-    > **提示：**如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”**** 复选框，再选择“创建”**** 按钮。
+    > **提示：** 如果已下载 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)并刚为其创建注册，请先取消选中“引导式安装”**** 复选框，再选择“创建”**** 按钮。
 
 3. 输入应用名称，再选择“创建”****。 
     
@@ -58,11 +58,11 @@
 
     c. 查看入门主题。完成后，选择页面底部的“安装”**** 按钮。
 
-    d.根据有关“设置”**** 步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
+    d. 根据有关** “设置”** 步骤的说明，将 MSAL 库添加到应用 build.gradle 中。
 
     e. 按照“使用”**** 步骤中的说明操作，将 MSAL 逻辑添加到新项目中。
 
-    f.在“配置”**** 页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
+    f. 在** “配置”** 页上，门户已为你创建唯一的应用程序 ID。使用它来配置应用。
 
     <br/>
     
@@ -70,20 +70,20 @@
 
     将显示注册页，其中列出应用的属性。
 
-    a.复制应用程序 ID。这是应用的唯一标识符。 
+    a. 复制应用程序 ID。这是应用的唯一标识符。 
 
     b. 选择“添加平台”**** 和“原生应用”****。
 
-      > **注意：**应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
+      > **注意：** 应用注册门户提供值为 `msalENTER_YOUR_CLIENT_ID://auth` 的重定向 URI。 请勿使用内置的重定向 URI。 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)实现的 MSAL 身份验证库需要使用此重定向 URI。 如果使用的是[受支持的第三方库](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)或 **ADAL** 库，必须使用内置的重定向 URI。
       
       c. 添加委托权限。 需要 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite** 和 **User.ReadBasic.All**。 
 
-      d. 选择“保存”****。
+      d. 选择 **“保存”**  。
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>验证用户并获取访问令牌
 
-> **注意：**如果已按照应用注册门户中“引导式安装”**** 流内的说明操作来新建应用，可以跳过这些步骤。 若要详细了解 Graph API，请参阅[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk)。
+> **注意：** 如果已按照应用注册门户中“引导式安装”**** 流内的说明操作来新建应用，可以跳过这些步骤。 若要详细了解 Graph API，请参阅[使用 Microsoft Graph SDK 调用 Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk)。
 
 接下来，将逐步演示 [Android 连接示例](https://github.com/microsoftgraph/android-java-connect-sample)，方便大家了解已添加的 MSAL 和 Microsoft Graph 代码。
 
@@ -285,7 +285,7 @@
 
 2. **MSAL** 库需要访问由注册门户分配的应用程序 ID。**MSAL 库将应用程序 ID 称为“客户端 ID”**。从传入库构造函数的应用程序上下文获取应用程序 ID（客户端 ID）。 
 
-   > **注意：**还可以将字符串参数传递给构造函数，从而在运行时提供客户端 ID。 
+   > **注意：** 还可以将字符串参数传递给构造函数，从而在运行时提供客户端 ID。 
 
 3. 授权服务器发送响应时，将调用活动。使用授权服务器的响应请求一个访问令牌。转到 **AuthenticationManager** 并在类中查找以下代码。
 
