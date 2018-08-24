@@ -1,6 +1,6 @@
 # <a name="event-decline"></a>event: decline
 
-拒绝对指定事件的邀请。
+拒绝用户 [日历](../resources/calendar.md) 中指定的 [事件](../resources/event.md)邀请。
 
 ## <a name="permissions"></a>权限
 
@@ -19,11 +19,9 @@
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -41,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型 | 字符串  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,8 +48,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|注释|String|响应中包含的文本。可选。|
-|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|注释|字符串|响应中包含的文本。可选。|
+|sendResponse|布尔值|`true` 如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 
