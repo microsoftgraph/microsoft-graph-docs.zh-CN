@@ -1,0 +1,14 @@
+# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a><span data-ttu-id="67d00-101">firewallPreSharedKeyEncodingMethodType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="67d00-101">firewallPreSharedKeyEncodingMethodType enum type</span></span>
+
+> <span data-ttu-id="67d00-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="67d00-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="67d00-103">FirewallPreSharedKeyEncodingMethod 的可能值</span><span class="sxs-lookup"><span data-stu-id="67d00-103">Possible values for firewallPreSharedKeyEncodingMethod</span></span>
+## <a name="members"></a><span data-ttu-id="67d00-104">成员</span><span class="sxs-lookup"><span data-stu-id="67d00-104">Members</span></span>
+|<span data-ttu-id="67d00-105">成员</span><span class="sxs-lookup"><span data-stu-id="67d00-105">Member</span></span>|<span data-ttu-id="67d00-106">值</span><span class="sxs-lookup"><span data-stu-id="67d00-106">Value</span></span>|<span data-ttu-id="67d00-107">说明</span><span class="sxs-lookup"><span data-stu-id="67d00-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="67d00-108">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="67d00-108">deviceDefault</span></span>|<span data-ttu-id="67d00-109">0</span><span class="sxs-lookup"><span data-stu-id="67d00-109">{0}</span></span>|<span data-ttu-id="67d00-110">Intune 未配置值，不要覆盖用户配置的设备默认值</span><span class="sxs-lookup"><span data-stu-id="67d00-110">No value configured by Intune, do not override the user-configured device default value</span></span>|
+|<span data-ttu-id="67d00-111">none</span><span class="sxs-lookup"><span data-stu-id="67d00-111">none</span></span>|<span data-ttu-id="67d00-112">1</span><span class="sxs-lookup"><span data-stu-id="67d00-112">-1</span></span>|<span data-ttu-id="67d00-113">预共享密钥未编码，</span><span class="sxs-lookup"><span data-stu-id="67d00-113">Preshared key is not encoded.</span></span> <span data-ttu-id="67d00-114">而是保留为宽字符格式</span><span class="sxs-lookup"><span data-stu-id="67d00-114">Instead, it is kept in its wide-character format</span></span>|
+|<span data-ttu-id="67d00-115">utf8</span><span class="sxs-lookup"><span data-stu-id="67d00-115">utf-8</span></span>|<span data-ttu-id="67d00-116">2</span><span class="sxs-lookup"><span data-stu-id="67d00-116">-2</span></span>|<span data-ttu-id="67d00-117">使用 utf-8 编码预共享密钥</span><span class="sxs-lookup"><span data-stu-id="67d00-117">Encode the preshared key using UTF-8</span></span>|
+
+
+
