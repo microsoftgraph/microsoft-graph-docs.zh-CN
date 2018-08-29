@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 80e41b379b9b4ce51a3ee6c910447a22f43356c3
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b5c41091b9193aabc36ee04e9dcc310bfc110af1
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264285"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 
@@ -30,18 +31,22 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>属性
 
-| 属性名称                   | 类型   | 说明
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | string | 是否允许多行文本。
-| **appendChangesToExistingText** | string | 对此列的更新是应替换现有文本，还是追加到现有文本。
-| **linesForEditing**             | int    | 文本框的大小。
-| **maxLength**                   | int    | 值的最大字符数。
-| **textType**                    | string | 要存储的文本类型。 必须是 `plain` 或 `richText` 的其中一个
+| 属性名称                   | 类型    | 说明
+|:--------------------------------|:--------|:---------------------------------
+| **allowMultipleLines**          | 布尔值 | 是否支持多行文本。
+| **appendChangesToExistingText** | 布尔值 | 对此列的更新应替换现有文本，还是附加到现有文本。
+| **linesForEditing**             | int32   | 文本框的大小。
+| **maxLength**                   | int32   | 值的最大字符数。
+| **textType**                    | 字符串  | 要存储的文本类型。 必须为 `plain` 或 `richText`.的其中一个 `richText`
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/textcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(plain,richText) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/TextColumn"
 } -->

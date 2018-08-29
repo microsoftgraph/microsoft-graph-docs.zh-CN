@@ -26,11 +26,11 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deleteditems。
+此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deletedItems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。
@@ -38,8 +38,8 @@ GET /directory/deletedItems/microsoft.graph.user
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 授权  | Bearer &lt;code&gt;。*必需*|
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -55,7 +55,7 @@ GET /directory/deletedItems/microsoft.graph.user
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/microsoft.graph.group
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

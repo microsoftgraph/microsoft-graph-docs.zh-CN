@@ -2,17 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264033"
 ---
 # <a name="hashes-resource-type"></a>哈希资源类型
 
 **哈希**资源将可用哈希分组到项的单个结构中。
 
-**注意：**并非所有服务均为列出的所有哈希属性提供值。
+**注意：** 并非所有服务均为列出的所有哈希属性提供值。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,10 +38,10 @@ ms.lasthandoff: 09/28/2017
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **crc32Hash**    | String | 文件的 CRC32 值（如果可用）。只读。            |
+| **crc32Hash**    | String | Little-endian 中的文件 CRC32 值（如果可用）。 只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
-**注意：**在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
+**注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
 
 ## <a name="remarks"></a>注解
 

@@ -24,14 +24,15 @@
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 Null。|
+|members|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +40,15 @@
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

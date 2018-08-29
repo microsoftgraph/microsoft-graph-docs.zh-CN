@@ -1,6 +1,6 @@
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 mobileAppAssignment 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|intent|String|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
+|id|字符串|实体的键。|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装用途。可能的值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
 

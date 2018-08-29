@@ -11,11 +11,10 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|标识用户邮箱中的类别的唯一名称。 在创建类别后，名称将无法更改。 只读。|
-|color|String|预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。 请参阅下面的备注。 |
+|displayName|字符串|标识用户邮箱中的类别的唯一名称。 在创建类别后，名称将无法更改。 只读。|
+|color|categoryColor|预先设定的颜色常数，它表示类别的特征，并映射到 25 种预定义颜色中的一种。 请参阅下面的备注。 |
 
 > **注意**：**color** 的可能值为预设的常数，如 `None`、`preset0` 和 `preset1`。 每个预设定的常数会被进一步映射到一种颜色；实际颜色取决于显示类别的 Outlook 客户端。 下表显示了 Outlook（桌面客户端）中映射到每个预设常数的颜色。 
-
 
 | 预设常数  | Outlook 中映射的颜色 |
 |:---------------|:--------|
@@ -54,6 +53,7 @@
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 
@@ -70,9 +70,9 @@
 |:---------------|:--------|:----------|
 |[List categories](../api/outlookuser_list_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) 集合 |获取为用户定义的所有类别。|
 |[Get category](../api/outlookcategory_get.md) | [outlookCategory](../resources/outlookcategory.md) |获取指定的 **outlookCategory** 对象的属性和关系。|
-|[Create](../api/outlookuser_post_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |在用户主类别列表中创建 **outlookCategory** 对象。|
-|[Update](../api/outlookcategory_update.md) | [outlookCategory](../resources/outlookcategory.md) |更新指定 **outlookCategory** 对象的可写属性 **color**。 |
-|[Delete](../api/outlookcategory_delete.md) | None |删除指定的 **outlookCategory** 对象。 |
+|[创建](../api/outlookuser_post_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |在用户主类别列表中创建 **outlookCategory** 对象。|
+|[更新](../api/outlookcategory_update.md) | [outlookCategory](../resources/outlookcategory.md) |更新指定 **outlookCategory** 对象的可写属性 **color**。 |
+|[删除](../api/outlookcategory_delete.md) | None |删除指定的 **outlookCategory** 对象。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -82,6 +82,10 @@
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
+      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
+  ],
   "tocPath": ""
 }-->
  

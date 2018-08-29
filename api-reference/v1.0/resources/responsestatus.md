@@ -6,8 +6,8 @@
 
 | 属性 | 类型           | 说明 |
 |:---------|:---------------|:------------|
-| 响应 | String         | 响应类型。 可取值为：`None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。
-| 时间     | DateTimeOffset | 响应返回的日期和时间。 它使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`
+| response | responseType   | 响应类型。 可取值为：`None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。
+| time     | DateTimeOffset | 响应返回的日期和时间。它使用 ISO 8601 格式，并始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -32,9 +32,9 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|未返回任何会议时间建议的原因。可取值为：`attendeesUnavailable`、`attendeesUnavailableOrUnknown`、`locationsUnavailable`、`organizerUnavailable` 或 `unknown`。如果 **meetingTimeSuggestions** 属性未包含任何会议建议，则此属性为空字符串。|
+|emptySuggestionsReason|字符串|不返回任何会议建议的原因。 可取值包括 `attendeesUnavailable`、`attendeesUnavailableOrUnknown`、`locationsUnavailable`、`organizerUnavailable` 或 `unknown`。 如果 **meetingTimeSuggestions** 属性包含任何会议建议，则此属性为空字符串。|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) 集合|一组会议时间建议。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

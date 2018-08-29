@@ -15,7 +15,7 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|id|字符串| 只读。计划详细信息 ID。长度为 28 个字符，区分大小写。[格式验证](planner_identifiers_disclaimer.md)在服务上完成。|
+|id|字符串| 只读。 计划详细信息的 ID。 其长度为 28 个字符，区分大小写。 [格式验证](planner_identifiers_disclaimer.md)在服务上执行。|
 |sharedWith|[plannerUserIds](planneruserids.md)|此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。 |
 
 ## <a name="relationships"></a>关系
@@ -25,11 +25,10 @@
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerPlanDetails"
 }-->
 

@@ -7,15 +7,15 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取 directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |读取 directoryroletemplate 对象的属性和关系。|
+|[获取 directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |读取 directoryRoleTemplate 对象的属性和关系。|
 |[列出 directoryRoleTemplate](../api/directoryroletemplate_list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |检索 directoryRoleTemplate 对象的列表。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String|可设置目录角色说明。只读。|
-|displayName|String|可设置目录角色显示名称。只读。 |
-|id|String|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
+|说明|字符串|可设置目录角色说明。只读。|
+|displayName|字符串|可设置目录角色显示名称。只读。 |
+|id|字符串|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
 
 ## <a name="relationships"></a>关系
 无
@@ -26,13 +26,20 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,13 +26,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
-|position|string|表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
-|visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
+|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
+|position|字符串|代表图表上图例的位置。 可取值为：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
+|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartLegend](../resources/chartlegend.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [WorkbookChartLegend](../resources/chartlegend.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
   "name": "update_chartlegend"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 Content-type: application/json
 Content-length: 72
 
@@ -56,7 +56,7 @@ Content-length: 72
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

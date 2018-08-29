@@ -1,6 +1,4 @@
-<a id="domain-resource-type" class="xliff"></a>
-
-# 域资源类型
+# <a name="domain-resource-type"></a>域资源类型
 
 表示与租户相关联的域。
 
@@ -18,9 +16,7 @@
 
 5. 通过检索需要为域启用服务的记录列表[配置](../api/domain_list_serviceconfigurationrecords.md)支持的服务。使用域注册机构或 DNS 服务器配置，向域区域文件添加配置记录详细信息。
 
-<a id="methods" class="xliff"></a>
-
-## 方法
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|
@@ -33,26 +29,22 @@
 |[删除域](../api/domain_delete.md) | 无 |删除域。|
 |[验证域](../api/domain_verify.md)|[域](domain.md)|验证域的所有权。|
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
-|availabilityStatus|String| 使用[验证](../api/domain_verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain_verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
+| authenticationType|字符串| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
+|availabilityStatus|字符串| 使用[验证](../api/domain_verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain_verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
 |id|字符串| 域的完全限定的名称。密钥、不可变、不可为 Null、唯一 |
-|isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
-|isDefault|Boolean| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
-|isInitial|Boolean| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
-|isRoot|Boolean| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
-|isVerified|Boolean| 如果域已完成域所有权验证，则为 true。不可为 Null |
+|isAdminManaged|布尔| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
+|isDefault|布尔| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
+|isInitial|布尔| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
+|isRoot|布尔| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
+|isVerified|布尔| 如果域已完成域所有权验证，则为 true。不可为 Null |
 |supportedServices|字符串集合| 分配给域的功能。<br><br>可以包含下列值中的 0 个、1 个或更多个：*电子邮件*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> 可以使用 Graph API 添加/删除的值包括：*电子邮件*、*OfficeCommunicationsOnline*、*Yammer*<br>不可为 Null|
 |状态|[domainState](domainstate.md)| 为域计划的异步操作的状态。 |
 
-<a id="relationships" class="xliff"></a>
-
-## 关系
+## <a name="relationships"></a>关系
 
 通过导航属性公开目录中的域和其他对象之间的关系（如它们的验证记录和服务配置记录）。你可以通过在请求中定位这些导航属性来读取这些关系。
 
@@ -62,16 +54,14 @@
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) 集合| Microsoft Online Services 可以使用域之前，客户添加到域 DNS 区域文件的 DNS 记录。<br>只读，可为 NULL。 |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) 集合| 客户可以使用 Azure AD 完成域所有权验证之前，客户添加到域 DNS 区域文件的 DNS 记录。<br>只读，可为 NULL。|
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 

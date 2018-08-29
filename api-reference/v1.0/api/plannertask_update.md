@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>
+PATCH /planner/tasks/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTask** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,14 +29,14 @@ PATCH /planner/tasks/<id>
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
 |assigneePriority|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
-|bucketId|字符串|此任务所属的存储桶 id。存储桶需要位于任务所在的计划中。长度为 28 个字符，区分大小写。[格式验证](../resources/planner_identifiers_disclaimer.md)在服务上完成。 |
-|conversationThreadId|String|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
-|dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|bucketId|字符串|任务所属的存储桶 ID。 存储桶需要在任务所在的计划中。 其长度为 28 个字符，区分大小写。 [格式验证](../resources/planner_identifiers_disclaimer.md)在服务上执行。 |
+|conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
+|dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
 |orderHint|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner_order_hint_format.md)定义中。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
-|planId|String|此任务所属的计划 id。|
-|startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|title|String|任务的标题。|
+|planId|字符串|此任务所属的计划 id。|
+|startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
+|title|字符串|任务的标题。|
 
 ## <a name="response"></a>响应
 
@@ -52,7 +52,7 @@ PATCH /planner/tasks/<id>
   "name": "update_plannertask"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 Content-type: application/json
 Content-length: 247
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
