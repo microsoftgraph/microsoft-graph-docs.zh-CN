@@ -25,9 +25,9 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|文件夹的显示名称。|
-|id|String|联系人文件夹的唯一标识符。只读。|
-|parentFolderId|String|文件夹的父文件夹 ID。|
+|displayName|字符串|文件夹的显示名称。|
+|id|字符串|联系人文件夹的唯一标识符。只读。|
+|parentFolderId|字符串|文件夹的父文件夹 ID。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -41,7 +41,7 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -50,7 +50,26 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
-ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c0ab787f1c1f04ff77eeb69979dc6a825d4f3c33
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266560"
 ---
 # <a name="folder-resource-type"></a>Folder 资源类型
 
-**Folder** 资源将与文件夹相关的数据项分组到一个单一结构。 
-具有非 null **folder** facet 的 [**DriveItems**](driveitem.md) 是其他 DriveItems 的容器。
+**文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 [**DriveItems**](driveitem.md) 是其他 DriveItems 的容器。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,10 +37,10 @@ ms.lasthandoff: 09/28/2017
 
 | 属性       | 类型           | 说明
 |:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | 此容器包含的直接子项数量。
+| **childCount** | Int32          | 此容器包含的直接子项数量。
 | **view**       | [folderView][] | 用于定义文件夹的推荐视图的属性集合。
 
-## <a name="remarks"></a>备注 
+## <a name="remarks"></a>注解 
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem][]。
 

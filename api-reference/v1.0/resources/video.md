@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
-ms.openlocfilehash: dd6ece46ce54fe791c0e6b5801287e2abad4fe48
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb9e28c1b26aa60fe7d854796df8bff34ca8e5df
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265846"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
-**视频**资源将与视频相关的数据项分组到一个单一结构。
+**Video** 资源将与视频相关的数据项组合到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **video** facet，则该项表示一个视频文件。
-通过从文件中提取元数据填充 **Video** 资源的属性。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频**方面，则该项表示一个视频文件。通过从文件中提取元数据对**视频**资源的属性进行填充。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,13 +47,13 @@ ms.lasthandoff: 09/28/2017
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | 每个样本的音频位数。
 | **audioChannels**         | Int32  | 音频频道数。
-| **audioFormat**           | string | 音频格式名称（AAC、MP3 等）。
+| **audioFormat**           | 字符串 | 音频格式名称（AAC、MP3 等）。
 | **audioSamplesPerSecond** | Int32  | 每秒音频采样数。
 | **bitrate**               | Int32  | 视频比特率（以位/秒为单位）。
 | **duration**              | Int64  | 文件时长（以毫秒为单位）。
-| **fourCC**                | string | 视频格式的“四个字符代码”名称。
-| **framerate**             | double | 视频的帧速率。
-| **height**                | Int32  | 视频的高度（以像素为单位）。
+| **fourCC**                | 字符串 | 视频格式的“四个字符代码”名称。
+| **frameRate**             | double | 视频的帧速率。
+| **height**                | Int32  | 视频高度（以像素为单位）。
 | **width**                 | Int32  | 视频的宽度，以像素为单位。
 
 [item-resource]: ../resources/driveitem.md

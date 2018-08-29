@@ -7,12 +7,12 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem_add.md)|[NamedItem](nameditem.md)|将新名称添加到给定范围的集合。|
-|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|使用用户的公式区域设置，将新名称添加到给定范围的集合。|
-|[获取 NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |读取 nameditem 对象的属性和关系。|
-|[更新](../api/nameditem_update.md) | [NamedItem](nameditem.md)   |更新 NamedItem 对象。 |
-|[区域](../api/nameditem_range.md)|[Range](range.md)|返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。|
-|[列出](../api/nameditem_list.md) | [NamedItem](nameditem.md) 集合 |获取 namedItem 对象集合。 |
+|[Add](../api/nameditem_add.md)|[WorkbookNamedItem](nameditem.md)|将新名称添加到给定范围的集合。|
+|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|使用用户的公式区域设置，将新名称添加到给定范围的集合。|
+|[获取 NamedItem](../api/nameditem_get.md) | [WorkbookNamedItem](nameditem.md) |读取 nameditem 对象的属性和关系。|
+|[更新](../api/nameditem_update.md) | [WorkbookNamedItem](nameditem.md)   |更新 NamedItem 对象。 |
+|[区域](../api/nameditem_range.md)|[区域](range.md)|返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。|
+|[列表](../api/nameditem_list.md) | [WorkbookNamedItem](nameditem.md) 集合 |获取 namedItem 对象集合。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -20,14 +20,14 @@
 |name|string|对象的名称。只读。|
 |注释|string|表示与此名称相关联的注释。|
 |scope|string|指明是否将 name 限定到工作簿或特定工作表。只读。|
-|类型|string|指示与名称相关的引用类型。可能的值是：`String`、`Integer`、`Double`、`Boolean`、`Range`。只读。|
-|值|string|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|
+|类型|string|指示与名称相关的引用类型。 可取值为：`String`、`Integer`、`Double`、`Boolean`、`Range`。 只读。|
+|值|Json|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|
 |visible|boolean|指定对象是否可见。|
 
 ## <a name="relationships"></a>关系
 | 关系     | 类型   |说明|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)|返回已命名项限定到的工作表。仅在该项目的作用域为工作表时才可用。只读。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|返回已命名项限定到的工作表。仅在该项目的作用域为工作表时才可用。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,7 +38,8 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.namedItem"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 }-->
 
 ```json
@@ -47,7 +48,7 @@
   "comment": "string",
   "scope": "string",
   "type": "string",
-  "value": "string",
+  "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
   
 }

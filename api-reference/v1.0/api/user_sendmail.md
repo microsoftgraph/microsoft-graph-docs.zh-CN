@@ -22,7 +22,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -30,8 +30,8 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Message|[邮件](../resources/message.md)|要发送的邮件。必需。|
-|SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
+|message|[邮件](../resources/message.md)|要发送的邮件。必需。|
+|saveToSentItems|布尔|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
 
 ## <a name="response"></a>响应
 

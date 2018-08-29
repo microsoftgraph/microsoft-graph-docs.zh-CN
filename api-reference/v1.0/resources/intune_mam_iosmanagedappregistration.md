@@ -1,6 +1,6 @@
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示特定用户具有管理功能的 iOS 应用的同步详细信息。
 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
@@ -24,10 +24,10 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceType|String|主机设备类型。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|String 集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|[managedAppFlaggedReason 枚举](../resources/intune_mam_managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|id|String|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 ## <a name="relationships"></a>关系
@@ -42,6 +42,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppRegistration",
   "@odata.type": "microsoft.graph.iosManagedAppRegistration"
 }
 -->
@@ -61,7 +62,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
+    "@odata.type": "microsoft.graph.mobileAppIdentifier",
     "bundleId": "String"
   },
   "id": "String (identifier)",

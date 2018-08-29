@@ -15,8 +15,8 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment_get.md) | [attachment](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
-|[Add attachment to an event](../api/event_post_attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
+|[获取附件](../api/attachment_get.md) | [附件](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
+|[向一个事件添加附件](../api/event_post_attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
 |[将附件添加到邮件中](../api/message_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
 |[将附件添加到帖子中](../api/post_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
 |[列出事件的附件](../api/event_list_attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
@@ -30,11 +30,11 @@
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contentType|String|MIME 类型。|
-|id|String| 只读。|
-|isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
-|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|名称|String|附件的文件名。|
+|contentType|字符串|MIME 类型。|
+|id|字符串| 只读。|
+|isInline|布尔|`true` 如果附件是内嵌附件，则为 `true`；否则为 `false`。|
+|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
+|名称|字符串|附件的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
@@ -46,6 +46,8 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

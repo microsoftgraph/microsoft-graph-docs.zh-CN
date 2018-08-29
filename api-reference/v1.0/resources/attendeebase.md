@@ -10,6 +10,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -24,9 +25,9 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|字符串| 与会者类型。可取值为：`required`、`optional`、`resource`。目前，如果与会者是人员，[findMeetingTimes](../api/user_findmeetingtimes.md) 始终认为人员是 `Required` 类型。|
+|类型|AttendeeType| 与会者类型。 可取值为：`required`、`optional`、`resource`。 当前如果与会者是一个人，[findMeetingTimes](../api/user_findmeetingtimes.md) 始终认为这个人是 `Required` 类型。|
 |emailAddress|[emailAddress](emailAddress.md)|添加与会者姓名和 SMTP 地址。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

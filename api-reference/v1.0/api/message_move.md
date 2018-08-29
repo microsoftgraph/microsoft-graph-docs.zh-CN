@@ -1,82 +1,152 @@
-# <a name="message-move"></a>message: move
+# <a name="message-move"></a>消息：移动
 
-将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本。
+将消息移动至文件夹。 这便在目标文件夹中创建了新消息的副本，并删除原始消息。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
+| 权限类型 | 权限（从最低特权到最高特权） |
+|:----------------|:--------------------------------------------|
 |委派（工作或学校帐户） | Mail.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Mail.ReadWrite    |
 |应用程序 | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/move
 POST /users/{id | userPrincipalName}/messages/{id}/move
 POST /me/mailFolders/{id}/messages/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+
+| 标头 | 值 |
+|:-------|:------|
+| 授权 | `Bearer {token}`. 必需。 |
+| 内容类型 | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
-|destinationId|String|目标文件夹 ID，或者 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems` 已知文件夹的名称。|
-
+|destinationId|字符串|目标文件夹 ID，或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md) 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Message](../resources/message.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [消息](../resources/message.md) 资源。
 
 ## <a name="example"></a>示例
+
 下面是一个如何调用此 API 的示例。
+
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+
+以下请求将指定的消息移动至删除项目文件夹，由其已知文件夹名称标识 `deleteditems` 。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADhAAATs28OAAA="],
   "name": "message_move"
 }-->
+
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/move
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAATs28OAAA=/move
 Content-type: application/json
-Content-length: 44
 
 {
-  "destinationId": "destinationId-value"
+  "destinationId": "deleteditems"
 }
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
+下面是一个响应示例。
+
+> **注释：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#message",
+    "@odata.type":"#microsoft.graph.message",
+    "@odata.etag":"W/\"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB\"",
+    "id":"AAMkADhAAAW-VPeAAA=",
+    "createdDateTime":"2018-08-12T08:43:22Z",
+    "lastModifiedDateTime":"2018-08-15T19:47:54Z",
+    "changeKey":"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-08-12T08:43:22Z",
+    "sentDateTime":"2018-08-12T08:43:20Z",
+    "hasAttachments":false,
+    "internetMessageId":"<00535324-5988-4b6a-b9af-d44cf2d0b691@MWHPR2201MB1022.namprd22.prod.outlook.com>",
+    "subject":"Undeliverable: Meet for lunch?",
+    "bodyPreview":"Delivery has failed to these recipients or groups:\r\n\r\nfannyd@contoso.onmicrosoft.com (fannyd@contoso.onmicrosoft.com)\r\nYour message couldn't be delivered. Despite repeated attempts to deliver your message, querying the Domain Name System (DNS) for the rec",
+    "importance":"normal",
+    "parentFolderId":"AAMkADhAAAAAAEKAAA=",
+    "conversationId":"AAQkADhJzfbkARFhe5kKhjihSA=",
+    "isDeliveryReceiptRequested":null,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADhAAAW%2FVPeAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html></html>"
+    },
+    "sender":{
+        "emailAddress":{
+            "name":"Microsoft Outlook",
+            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+        }
+    },
+    "from":{
+        "emailAddress":{
+            "name":"Microsoft Outlook",
+            "address":"MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@contoso.onmicrosoft.com"
+        }
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"fannyd@contoso.onmicrosoft.com",
+                "address":"fannyd@contoso.onmicrosoft.com"
+            }
+        },
+        {
+            "emailAddress":{
+                "name":"danas@contoso.onmicrosoft.com",
+                "address":"danas@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
 

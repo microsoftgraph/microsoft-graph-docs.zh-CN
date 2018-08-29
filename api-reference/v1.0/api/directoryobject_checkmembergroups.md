@@ -22,15 +22,15 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | 字符串 | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupIds|String|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
+|groupIds|字符串集合|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
 
 ## <a name="response"></a>响应
 
@@ -45,13 +45,13 @@ POST /directoryObjects/{id}/checkMemberGroups
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
 Content-type: application/json
 
 {
   "groupIds": [
-        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
-        "4fe90ae7-065a-478b-9400-e0a0e1cbd540"
+        "fee2c45b-915a-4a64b130f4eb9e75525e",
+        "4fe90ae065a-478b9400e0a0e1cbd540"
   ]
 }
 ```

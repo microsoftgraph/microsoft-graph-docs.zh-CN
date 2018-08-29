@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 20d31a9cdc0e540c2b2f2d93fedabdc254e9c03e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265713"
 ---
 # <a name="site-resource"></a>Site 资源
 
@@ -27,20 +28,30 @@ ms.lasthandoff: 09/28/2017
 
 [获取网站]: ../api/site_get.md
 [获取根网站]: ../api/site_get.md
-[按路径获取网站]: ../api/site_getbypath.md
+[根据路径获取网站]: ../api/site_getbypath.md
 [获取组的网站]: ../api/site_get.md
 [搜索网站]: ../api/site_search.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是**网站**资源的 JSON 表示形式。
+下面是 **site** 资源的 JSON 表示形式。
 
-**driveItem** 资源由 [**baseItem**](baseitem.md) 派生并继承该资源的属性。
+**site** 资源派生自 [**baseItem**](baseitem.md)，并继承此资源的属性。
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +69,7 @@ ms.lasthandoff: 09/28/2017
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -78,6 +89,7 @@ ms.lasthandoff: 09/28/2017
 | **createdDateTime**      | DateTimeOffset                      | 创建项目的日期和时间。只读。                                             |
 | **说明**          | string                              | 网站的描述性文本。                                                             |
 | **displayName**          | string                              | 网站的完整标题。只读。                                                        |
+| **eTag**                 | string                              | 该项目的 ETag。只读。                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | 上次修改项目的日期和时间。只读。                                       |
 | **name**                 | string                              | 项目名称/标题。                                                                  |
 | **根**                 | [根](root.md)                     | 如果存在，则表示这是网站集中的根网站。只读。            |
@@ -89,12 +101,12 @@ ms.lasthandoff: 09/28/2017
 
 | 关系名称 | 类型                             | 说明
 |:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用列定义的集合。
-| **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型的集合。
-| **drive**         | [驱动器][]                        | 此网站的默认驱动器（文档库）。
-| **驱动器**        | 集合（[驱动器][]）            | 网站下方的驱动器集合（文档库）。
+| **列**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
+| **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
+| **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
+| **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
-| **lists**         | Collection([list][])             | 此网站下方的列表的集合。
+| **lists**         | Collection([list][])             | 此网站下方的列表集合。
 | **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
 | **onenote**       | [onenote][]                      | 调用 OneNote 服务执行笔记本相关操作。
 

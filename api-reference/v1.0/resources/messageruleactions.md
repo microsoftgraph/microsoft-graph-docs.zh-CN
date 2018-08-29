@@ -12,12 +12,11 @@
 | forwardAsAttachmentTo | [recipient](recipient.md) 集合 | 应以附件形式接收转发邮件的收件人的电子邮件地址。 |
 | forwardTo | [recipient](recipient.md) 集合 | 应接收转发邮件的收件人的电子邮件地址。 |
 | markAsRead | Boolean | 指示是否应将邮件标记为已读。 |
-| markImportance | String | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
+| markImportance | importance | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
 | moveToFolder |  String| 邮件将移至其中的文件夹的 ID。 |
 | permanentDelete | Boolean | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
-| redirectTo | [recipient](recipient.md) | 邮件应重定向到的电子邮件地址。 |
+| redirectTo | [recipient](recipient.md) 集合 | 邮件应重定向到的电子邮件地址。 |
 | stopProcessingRules | Boolean | 指示是否应对后续规则进行评估。 |
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -40,7 +39,7 @@
   "markImportance": "String",
   "moveToFolder": "String",
   "permanentDelete": "Boolean",
-  "redirectTo": {"@odata.type": "microsoft.graph.recipient"},
+  "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "stopProcessingRules": "Boolean"
 }
 

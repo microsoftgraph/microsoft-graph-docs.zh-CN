@@ -5,7 +5,7 @@
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
+可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如， `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 返回属于工作簿的工作表对象的集合。    
 
 
@@ -15,9 +15,9 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
-可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/zh-CN/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
+可以使用 [Azure AD v.2 终结点](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)对 Excel API 进行身份验证。 所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。   
   
-要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/zh-CN/graph/docs/authorization/permission_scopes)之一：
+要使用 Excel 资源，需要以下[权限范围](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一：
 
 * Files.Read（适用于读取操作）
 * Files.ReadWrite（适用于读写操作）
@@ -33,7 +33,7 @@ Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
->**注意：**Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
+>**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
 
 ### <a name="api-call-to-get-a-session"></a>获取会话的 API 调用 
 
@@ -69,8 +69,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="usage"></a>用法 
 
-将前一个调用中返回的会话 ID   
-作为 `workbook-session-id` HTTP 标头的后续 API 请求中的标头进行传递。 
+将前一个调用中返回的会话 ID  
+`workbook-session-id` 作为 `workbook-session-id` HTTP 标头的后续 API 请求中的标头进行传递。 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,8 +137,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -165,8 +164,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -193,8 +191,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -235,8 +232,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>列出属于工作表的图表 
 
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -244,8 +240,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -270,16 +265,14 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>获取图表图像
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -304,15 +297,14 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
-  "@odata.type": "#microsoft.graph.chart",
+  "@odata.type": "#microsoft.graph.workbookChart",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
   "height": 216.0,
   "id": "{2D421098-FA19-41F7-8528-EE7B00E4BB42}",
@@ -356,8 +348,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>更新图表的源数据 
 
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -368,18 +359,16 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="table-operations"></a>表操作 
+### <a name="table-operations"></a>表格操作 
 
-#### <a name="get-list-of-tables"></a>获取表列表 
+#### <a name="get-list-of-tables"></a>获取表格列表 
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -387,19 +376,17 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="create-table"></a>创建表
+#### <a name="create-table"></a>创建表格
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -407,8 +394,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -424,10 +410,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-table"></a>更新表
+#### <a name="update-table"></a>更新表格
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -437,8 +422,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -454,12 +438,12 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-rows"></a>获取表行列表
+#### <a name="get-list-of-table-rows"></a>获取表格行的列表
 请求 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -544,12 +528,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-columns"></a>获取表列列表
+#### <a name="get-list-of-table-columns"></a>获取表格列的列表
 
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
+GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -656,12 +639,11 @@ content-type: application/json;odata.metadata
 ```
 
 
-#### <a name="add-a-table-row"></a>添加表行
+#### <a name="add-a-table-row"></a>添加表格行
 
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -669,8 +651,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -689,12 +670,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-table-column"></a>添加表列 
+#### <a name="add-a-table-column"></a>添加表格列 
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
 accept: application/Json 
 
@@ -729,56 +709,49 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="delete-table-row"></a>删除表行
+#### <a name="delete-table-row"></a>删除表格行
 
-请求 
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http  
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
+DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="delete-table-column"></a>删除表列 
-请求
-<!-- { "blockType": "ignored" } -->
+#### <a name="delete-table-column"></a>删除表格列 
+请求 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
+DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应 
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="convert-table-to-range"></a>将表转换为区域 
-请求
-<!-- { "blockType": "ignored" } -->
+#### <a name="convert-table-to-range"></a>将表格转换为区域 
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="table-sort"></a>表排序
-请求
-<!-- { "blockType": "ignored" } -->
+#### <a name="table-sort"></a>表格排序
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -794,15 +767,13 @@ workbook-session-id: {session-id}
 ```
 
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="table-filter"></a>表筛选器
-请求
-<!-- { "blockType": "ignored" } -->
+#### <a name="table-filter"></a>表格筛选器
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -819,24 +790,21 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>清除筛选器
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -845,10 +813,9 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>获取区域 
 
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
+GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -862,7 +829,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -965,7 +932,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27test!A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -1051,8 +1018,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>区域排序
-请求
-<!-- { "blockType": "ignored" } -->
+请求 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1067,8 +1033,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应
-<!-- { "blockType": "ignored" } -->
+响应 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -1123,7 +1088,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>二维数组中的 null 输入
 
-区域和表资源中将忽略二维数组中的 `null` 输入（对于值、数字格式、公式）。当 `null` 输入在值、值的数字格式或值的公式网格中发送时，不会对预期目标（单元格）进行更新。
+`null` 区域和表资源中将忽略二维数组中的 `null` 输入（对于值、数字格式、公式）。当 `null` 输入在值、值的数字格式或值的公式网格中发送时，不会对预期目标（单元格）进行更新。
 
 例如，要仅更新区域的特定部分（例如某些单元格的数字格式）并保留区域其他部分的现有数字格式，请根据需要设置数字格式并对其他单元格发送 `null`。
 
@@ -1171,7 +1136,7 @@ content-type: application/json
 
 ### <a name="blank-input-and-output"></a>空白输入和输出
 
-更新请求中的空白值视为清除或重置相应属性的指令。空白值表示为两个双引号，中间没有空格：`""`。
+更新请求中的空白值视为清除或重置相应属性的指令。空白值表示为两个双引号，中间没有空格：`""`。 `""`
 
 示例：
 
@@ -1182,7 +1147,7 @@ content-type: application/json
 * 对于 `formula` 和 `formulaLocale`，将清除公式值。
 
 
-对于读取操作，预计单元格内容为空时会收到空白值。如果单元格不包含数据或值，该 API 将返回空白值。空白值表示为两个双引号，中间没有空格：`""`。
+对于读取操作，预计单元格内容为空时会收到空白值。如果单元格不包含数据或值，该 API 将返回空白值。空白值表示为两个双引号，中间没有空格：`""`。 `""`
 
 ```json
 {
@@ -1216,7 +1181,7 @@ content-type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
+PATCH /workbook/worksheets/{id}/range(address="A:B")
 
 {
   "values" : "Due Date"
@@ -1245,7 +1210,7 @@ API 将查找*单个单元格值*，如果目标区域尺寸与输入区域尺�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /workbook/worksheets/{id}/range(address="A1:B00")
 
 {
   "values" : "Sample text"
@@ -1293,7 +1258,7 @@ content-type: application/json
 
 返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。
  
-示例如下。
+以下是一个示例。
 
 <!-- { "blockType": "ignored" } -->
 ```http

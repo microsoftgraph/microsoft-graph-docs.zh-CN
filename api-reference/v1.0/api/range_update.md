@@ -13,14 +13,14 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -28,13 +28,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
-|formulas|json|表示采用 A1 样式表示法的公式。|
-|formulasLocal|json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
-|formulasR1C1|json|表示采用 R1C1 样式表示法的公式。|
-|numberFormat|json|表示 Excel 中指定单元格的数字格式代码。|
-|rowHidden|布尔|表示当前区域中的所有行是否隐藏。|
-|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
+|formulas|Json|表示采用 A1 表示法的公式。|
+|formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
+|formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
+|numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。|
+|rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
+|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 
@@ -48,7 +48,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
@@ -63,7 +63,7 @@ Content-length: 169
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +87,15 @@ Content-length: 169
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->
