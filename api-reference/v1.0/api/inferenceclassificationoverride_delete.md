@@ -1,45 +1,46 @@
-# <a name="delete-inferenceclassificationoverride"></a><span data-ttu-id="3b0ec-101">删除 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="3b0ec-101">Delete inferenceClassificationOverride</span></span>
+# <a name="delete-inferenceclassificationoverride"></a><span data-ttu-id="4b502-101">删除 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="4b502-101">Delete inferenceClassificationOverride</span></span>
 
-<span data-ttu-id="3b0ec-102">删除由其 ID 指定的替代。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-102">Delete an override specified by its ID.</span></span>
-## <a name="permissions"></a><span data-ttu-id="3b0ec-103">权限</span><span class="sxs-lookup"><span data-stu-id="3b0ec-103">Permissions</span></span>
-<span data-ttu-id="3b0ec-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="4b502-102">删除由其 ID 指定的替代。</span><span class="sxs-lookup"><span data-stu-id="4b502-102">Delete an override specified by its ID.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4b502-103">权限</span><span class="sxs-lookup"><span data-stu-id="4b502-103">Permissions</span></span>
+<span data-ttu-id="4b502-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4b502-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="3b0ec-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="3b0ec-106">Permission type</span></span>      | <span data-ttu-id="3b0ec-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3b0ec-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4b502-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="4b502-106">Permission type</span></span>      | <span data-ttu-id="4b502-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4b502-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b0ec-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3b0ec-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3b0ec-109">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b0ec-109">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="3b0ec-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3b0ec-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b0ec-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b0ec-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="3b0ec-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="3b0ec-112">Application</span></span> | <span data-ttu-id="3b0ec-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b0ec-113">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="4b502-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4b502-108">Delegated (work or school account)</span></span> | <span data-ttu-id="4b502-109">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4b502-109">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="4b502-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4b502-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b502-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4b502-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="4b502-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="4b502-112">Application</span></span> | <span data-ttu-id="4b502-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4b502-113">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b0ec-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3b0ec-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4b502-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4b502-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/inferenceClassification/overrides/{id}
 DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="3b0ec-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="3b0ec-115">Request headers</span></span>
-| <span data-ttu-id="3b0ec-116">名称</span><span class="sxs-lookup"><span data-stu-id="3b0ec-116">Name</span></span>       | <span data-ttu-id="3b0ec-117">类型</span><span class="sxs-lookup"><span data-stu-id="3b0ec-117">Type</span></span> | <span data-ttu-id="3b0ec-118">说明</span><span class="sxs-lookup"><span data-stu-id="3b0ec-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4b502-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="4b502-115">Request headers</span></span>
+| <span data-ttu-id="4b502-116">名称</span><span class="sxs-lookup"><span data-stu-id="4b502-116">Name</span></span>       | <span data-ttu-id="4b502-117">类型</span><span class="sxs-lookup"><span data-stu-id="4b502-117">Type</span></span> | <span data-ttu-id="4b502-118">说明</span><span class="sxs-lookup"><span data-stu-id="4b502-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3b0ec-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="3b0ec-119">Authorization</span></span>  | <span data-ttu-id="3b0ec-120">string</span><span class="sxs-lookup"><span data-stu-id="3b0ec-120">string</span></span>  | <span data-ttu-id="3b0ec-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4b502-119">授权</span><span class="sxs-lookup"><span data-stu-id="4b502-119">Authorization</span></span>  | <span data-ttu-id="4b502-120">字符串</span><span class="sxs-lookup"><span data-stu-id="4b502-120">string</span></span>  | <span data-ttu-id="4b502-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4b502-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3b0ec-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="3b0ec-123">Request body</span></span>
-<span data-ttu-id="3b0ec-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4b502-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="4b502-123">Request body</span></span>
+<span data-ttu-id="4b502-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4b502-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b0ec-125">响应</span><span class="sxs-lookup"><span data-stu-id="3b0ec-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4b502-125">响应</span><span class="sxs-lookup"><span data-stu-id="4b502-125">Response</span></span>
 
-<span data-ttu-id="3b0ec-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4b502-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4b502-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b0ec-128">示例</span><span class="sxs-lookup"><span data-stu-id="3b0ec-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3b0ec-129">请求</span><span class="sxs-lookup"><span data-stu-id="3b0ec-129">Request</span></span>
-<span data-ttu-id="3b0ec-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4b502-128">示例</span><span class="sxs-lookup"><span data-stu-id="4b502-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4b502-129">请求</span><span class="sxs-lookup"><span data-stu-id="4b502-129">Request</span></span>
+<span data-ttu-id="4b502-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4b502-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4r"],
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
 ```
-##### <a name="response"></a><span data-ttu-id="3b0ec-131">响应</span><span class="sxs-lookup"><span data-stu-id="3b0ec-131">Response</span></span>
-<span data-ttu-id="3b0ec-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3b0ec-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4b502-131">响应</span><span class="sxs-lookup"><span data-stu-id="4b502-131">Response</span></span>
+<span data-ttu-id="4b502-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4b502-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

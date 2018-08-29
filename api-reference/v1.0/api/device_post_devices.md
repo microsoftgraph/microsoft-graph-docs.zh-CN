@@ -1,39 +1,39 @@
-# <a name="create-device"></a><span data-ttu-id="589d6-101">创建设备</span><span class="sxs-lookup"><span data-stu-id="589d6-101">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="3b726-101">创建设备</span><span class="sxs-lookup"><span data-stu-id="3b726-101">Create device</span></span>
 
-<span data-ttu-id="589d6-102">在组织中创建并注册一个新设备。</span><span class="sxs-lookup"><span data-stu-id="589d6-102">Create and register a new device in the organization.</span></span>
+<span data-ttu-id="3b726-102">在组织中创建并注册一个新设备。</span><span class="sxs-lookup"><span data-stu-id="3b726-102">Create and register a new device in the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="589d6-103">权限</span><span class="sxs-lookup"><span data-stu-id="589d6-103">Permissions</span></span>
-<span data-ttu-id="589d6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="589d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b726-103">权限</span><span class="sxs-lookup"><span data-stu-id="3b726-103">Permissions</span></span>
+<span data-ttu-id="3b726-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="3b726-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="589d6-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="589d6-106">Permission type</span></span>      | <span data-ttu-id="589d6-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="589d6-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3b726-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="3b726-106">Permission type</span></span>      | <span data-ttu-id="3b726-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3b726-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="589d6-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="589d6-108">Delegated (work or school account)</span></span> | <span data-ttu-id="589d6-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="589d6-109">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="589d6-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="589d6-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="589d6-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="589d6-111">Not supported.</span></span>    |
-|<span data-ttu-id="589d6-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="589d6-112">Application</span></span> | <span data-ttu-id="589d6-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="589d6-113">Device.ReadWrite.All</span></span> |
+|<span data-ttu-id="3b726-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3b726-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3b726-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3b726-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3b726-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3b726-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b726-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="3b726-111">Not supported.</span></span>    |
+|<span data-ttu-id="3b726-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="3b726-112">Application</span></span> | <span data-ttu-id="3b726-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b726-113">Device.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="589d6-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="589d6-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b726-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3b726-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="589d6-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="589d6-115">Request headers</span></span>
-| <span data-ttu-id="589d6-116">名称</span><span class="sxs-lookup"><span data-stu-id="589d6-116">Name</span></span>       | <span data-ttu-id="589d6-117">类型</span><span class="sxs-lookup"><span data-stu-id="589d6-117">Type</span></span> | <span data-ttu-id="589d6-118">说明</span><span class="sxs-lookup"><span data-stu-id="589d6-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3b726-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="3b726-115">Request headers</span></span>
+| <span data-ttu-id="3b726-116">名称</span><span class="sxs-lookup"><span data-stu-id="3b726-116">Name</span></span>       | <span data-ttu-id="3b726-117">类型</span><span class="sxs-lookup"><span data-stu-id="3b726-117">Type</span></span> | <span data-ttu-id="3b726-118">说明</span><span class="sxs-lookup"><span data-stu-id="3b726-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="589d6-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="589d6-119">Authorization</span></span>  | <span data-ttu-id="589d6-120">string</span><span class="sxs-lookup"><span data-stu-id="589d6-120">string</span></span>  | <span data-ttu-id="589d6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="589d6-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="589d6-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="589d6-123">Content-type</span></span> | <span data-ttu-id="589d6-124">string</span><span class="sxs-lookup"><span data-stu-id="589d6-124">string</span></span> | <span data-ttu-id="589d6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="589d6-125">application/json</span></span> |
+| <span data-ttu-id="3b726-119">授权</span><span class="sxs-lookup"><span data-stu-id="3b726-119">Authorization</span></span>  | <span data-ttu-id="3b726-120">字符串</span><span class="sxs-lookup"><span data-stu-id="3b726-120">string</span></span>  | <span data-ttu-id="3b726-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3b726-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3b726-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="3b726-123">Content-type</span></span> | <span data-ttu-id="3b726-124">string</span><span class="sxs-lookup"><span data-stu-id="3b726-124">string</span></span> | <span data-ttu-id="3b726-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3b726-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="589d6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="589d6-126">Request body</span></span>
-<span data-ttu-id="589d6-127">在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="589d6-127">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b726-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="3b726-126">Request body</span></span>
+<span data-ttu-id="3b726-127">在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3b726-127">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="589d6-128">响应</span><span class="sxs-lookup"><span data-stu-id="589d6-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3b726-128">响应</span><span class="sxs-lookup"><span data-stu-id="3b726-128">Response</span></span>
 
-<span data-ttu-id="589d6-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码 [device](../resources/device.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="589d6-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="3b726-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码 [device](../resources/device.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3b726-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="589d6-130">示例</span><span class="sxs-lookup"><span data-stu-id="589d6-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="589d6-131">请求</span><span class="sxs-lookup"><span data-stu-id="589d6-131">Request</span></span>
-<span data-ttu-id="589d6-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="589d6-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3b726-130">示例</span><span class="sxs-lookup"><span data-stu-id="3b726-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3b726-131">请求</span><span class="sxs-lookup"><span data-stu-id="3b726-131">Request</span></span>
+<span data-ttu-id="3b726-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3b726-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -57,9 +57,9 @@ Content-type: application/json
   "operatingSystemVersion":"1"
 }
 ```
-<span data-ttu-id="589d6-133">在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="589d6-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="589d6-134">响应</span><span class="sxs-lookup"><span data-stu-id="589d6-134">Response</span></span>
-<span data-ttu-id="589d6-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="589d6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3b726-133">在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3b726-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="3b726-134">响应</span><span class="sxs-lookup"><span data-stu-id="3b726-134">Response</span></span>
+<span data-ttu-id="3b726-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3b726-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",

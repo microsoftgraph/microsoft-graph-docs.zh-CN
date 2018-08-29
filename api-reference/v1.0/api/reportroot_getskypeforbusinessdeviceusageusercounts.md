@@ -1,20 +1,20 @@
-# <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a><span data-ttu-id="fca81-101">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="fca81-101">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span></span>
+# <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a><span data-ttu-id="f3644-101">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="f3644-101">reportRoot: getSkypeForBusinessDeviceUsageUserCounts</span></span>
 
-<span data-ttu-id="fca81-102">获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。</span><span class="sxs-lookup"><span data-stu-id="fca81-102">Get the usage trends on how many users in your organization have connected using the Skype for Business app.</span></span> <span data-ttu-id="fca81-103">还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。</span><span class="sxs-lookup"><span data-stu-id="fca81-103">You will also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.</span></span>
+<span data-ttu-id="f3644-102">获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。</span><span class="sxs-lookup"><span data-stu-id="f3644-102">Get the usage trends on how many users in your organization have connected using the Skype for Business app.</span></span> <span data-ttu-id="f3644-103">还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。</span><span class="sxs-lookup"><span data-stu-id="f3644-103">You will also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.</span></span>
 
-> <span data-ttu-id="fca81-104">**注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 已使用的 Skype for Business 客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。</span><span class="sxs-lookup"><span data-stu-id="fca81-104">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span></span>
+> <span data-ttu-id="f3644-104">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 已使用的 Skype for Business 客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。</span><span class="sxs-lookup"><span data-stu-id="f3644-104">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fca81-105">权限</span><span class="sxs-lookup"><span data-stu-id="fca81-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f3644-105">权限</span><span class="sxs-lookup"><span data-stu-id="f3644-105">Permissions</span></span>
 
-<span data-ttu-id="fca81-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="fca81-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f3644-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f3644-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="fca81-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="fca81-108">Permission type</span></span>                        | <span data-ttu-id="fca81-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fca81-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f3644-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3644-108">Permission type</span></span>                        | <span data-ttu-id="f3644-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3644-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="fca81-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fca81-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="fca81-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fca81-111">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="fca81-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fca81-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fca81-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="fca81-113">Not supported.</span></span>                           |
-| <span data-ttu-id="fca81-114">应用</span><span class="sxs-lookup"><span data-stu-id="fca81-114">Application</span></span>                            | <span data-ttu-id="fca81-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fca81-115">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="f3644-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3644-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f3644-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="f3644-111">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="f3644-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3644-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3644-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3644-113">Not supported.</span></span>                           |
+| <span data-ttu-id="f3644-114">应用</span><span class="sxs-lookup"><span data-stu-id="f3644-114">Application</span></span>                            | <span data-ttu-id="f3644-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="f3644-115">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="fca81-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fca81-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3644-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3644-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,46 +22,47 @@
 GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a><span data-ttu-id="fca81-117">请求参数</span><span class="sxs-lookup"><span data-stu-id="fca81-117">Request parameters</span></span>
+## <a name="request-parameters"></a><span data-ttu-id="f3644-117">请求参数</span><span class="sxs-lookup"><span data-stu-id="f3644-117">Request parameters</span></span>
 
-<span data-ttu-id="fca81-118">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="fca81-118">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="f3644-118">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="f3644-118">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="fca81-119">参数</span><span class="sxs-lookup"><span data-stu-id="fca81-119">Parameter</span></span> | <span data-ttu-id="fca81-120">类型</span><span class="sxs-lookup"><span data-stu-id="fca81-120">Type</span></span>   | <span data-ttu-id="fca81-121">说明</span><span class="sxs-lookup"><span data-stu-id="fca81-121">Description</span></span>                              |
+| <span data-ttu-id="f3644-119">参数</span><span class="sxs-lookup"><span data-stu-id="f3644-119">Parameter</span></span> | <span data-ttu-id="f3644-120">类型</span><span class="sxs-lookup"><span data-stu-id="f3644-120">Type</span></span>   | <span data-ttu-id="f3644-121">说明</span><span class="sxs-lookup"><span data-stu-id="f3644-121">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="fca81-122">period</span><span class="sxs-lookup"><span data-stu-id="fca81-122">period</span></span>    | <span data-ttu-id="fca81-123">string</span><span class="sxs-lookup"><span data-stu-id="fca81-123">string</span></span> | <span data-ttu-id="fca81-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fca81-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fca81-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="fca81-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fca81-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fca81-126">These values follow the format D   where    represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fca81-127">必需。</span><span class="sxs-lookup"><span data-stu-id="fca81-127">Required.</span></span> |
+| <span data-ttu-id="f3644-122">period</span><span class="sxs-lookup"><span data-stu-id="f3644-122">period</span></span>    | <span data-ttu-id="f3644-123">string</span><span class="sxs-lookup"><span data-stu-id="f3644-123">string</span></span> | <span data-ttu-id="f3644-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="f3644-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="f3644-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="f3644-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="f3644-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="f3644-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="f3644-127">必需。</span><span class="sxs-lookup"><span data-stu-id="f3644-127">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="fca81-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="fca81-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f3644-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3644-128">Request headers</span></span>
 
-| <span data-ttu-id="fca81-129">名称</span><span class="sxs-lookup"><span data-stu-id="fca81-129">Name</span></span>          | <span data-ttu-id="fca81-130">说明</span><span class="sxs-lookup"><span data-stu-id="fca81-130">Description</span></span>                              |
+| <span data-ttu-id="f3644-129">名称</span><span class="sxs-lookup"><span data-stu-id="f3644-129">Name</span></span>          | <span data-ttu-id="f3644-130">说明</span><span class="sxs-lookup"><span data-stu-id="f3644-130">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="fca81-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="fca81-131">Authorization</span></span> | <span data-ttu-id="fca81-p104">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="fca81-p104">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="fca81-134">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fca81-134">If-None-Match</span></span> | <span data-ttu-id="fca81-135">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="fca81-135">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fca81-136">可选。</span><span class="sxs-lookup"><span data-stu-id="fca81-136">Optional.</span></span> |
+| <span data-ttu-id="f3644-131">授权</span><span class="sxs-lookup"><span data-stu-id="f3644-131">Authorization</span></span> | <span data-ttu-id="f3644-p104">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3644-p104">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="f3644-134">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="f3644-134">If-None-Match</span></span> | <span data-ttu-id="f3644-135">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="f3644-135">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="f3644-136">可选。</span><span class="sxs-lookup"><span data-stu-id="f3644-136">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fca81-137">响应</span><span class="sxs-lookup"><span data-stu-id="fca81-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f3644-137">响应</span><span class="sxs-lookup"><span data-stu-id="f3644-137">Response</span></span>
 
-<span data-ttu-id="fca81-138">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="fca81-138">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fca81-139">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="fca81-139">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="f3644-138">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="f3644-138">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="f3644-139">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="f3644-139">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="fca81-140">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="fca81-140">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="f3644-140">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="f3644-140">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="fca81-141">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="fca81-141">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="f3644-141">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="f3644-141">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="fca81-142">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="fca81-142">Report Refresh Date</span></span>
-- <span data-ttu-id="fca81-143">Windows</span><span class="sxs-lookup"><span data-stu-id="fca81-143">Windows</span></span>
-- <span data-ttu-id="fca81-144">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="fca81-144">Windows Phone</span></span>
-- <span data-ttu-id="fca81-145">Android 手机</span><span class="sxs-lookup"><span data-stu-id="fca81-145">Android Phone</span></span>
-- <span data-ttu-id="fca81-146">iPhone</span><span class="sxs-lookup"><span data-stu-id="fca81-146">iPhone</span></span>
-- <span data-ttu-id="fca81-147">iPad</span><span class="sxs-lookup"><span data-stu-id="fca81-147">iPad</span></span>
-- <span data-ttu-id="fca81-148">报表日期</span><span class="sxs-lookup"><span data-stu-id="fca81-148">Report Date</span></span>
-- <span data-ttu-id="fca81-149">报表周期</span><span class="sxs-lookup"><span data-stu-id="fca81-149">Report Period</span></span>
+- <span data-ttu-id="f3644-142">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="f3644-142">Report Refresh Date</span></span>
+- <span data-ttu-id="f3644-143">Windows</span><span class="sxs-lookup"><span data-stu-id="f3644-143">Windows</span></span>
+- <span data-ttu-id="f3644-144">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="f3644-144">Windows Phone</span></span>
+- <span data-ttu-id="f3644-145">Android 手机</span><span class="sxs-lookup"><span data-stu-id="f3644-145">Android Phone</span></span>
+- <span data-ttu-id="f3644-146">iPhone</span><span class="sxs-lookup"><span data-stu-id="f3644-146">iPhone</span></span>
+- <span data-ttu-id="f3644-147">iPad</span><span class="sxs-lookup"><span data-stu-id="f3644-147">iPad</span></span>
+- <span data-ttu-id="f3644-148">报表日期</span><span class="sxs-lookup"><span data-stu-id="f3644-148">Report Date</span></span>
+- <span data-ttu-id="f3644-149">报表周期</span><span class="sxs-lookup"><span data-stu-id="f3644-149">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="fca81-150">示例</span><span class="sxs-lookup"><span data-stu-id="fca81-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f3644-150">示例</span><span class="sxs-lookup"><span data-stu-id="f3644-150">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fca81-151">请求</span><span class="sxs-lookup"><span data-stu-id="fca81-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f3644-151">请求</span><span class="sxs-lookup"><span data-stu-id="f3644-151">Request</span></span>
 
-<span data-ttu-id="fca81-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fca81-152">The following is an example of the request.</span></span>
+<span data-ttu-id="f3644-152">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f3644-152">The following is an example of the request.</span></span>
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getskypeforbusinessdeviceusageusercounts"
 }-->
 
@@ -69,11 +70,15 @@ GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="fca81-153">响应</span><span class="sxs-lookup"><span data-stu-id="fca81-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f3644-153">响应</span><span class="sxs-lookup"><span data-stu-id="f3644-153">Response</span></span>
 
-<span data-ttu-id="fca81-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fca81-154">The following is an example of the response.</span></span>
+<span data-ttu-id="f3644-154">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f3644-154">The following is an example of the response.</span></span>
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -81,13 +86,9 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="fca81-155">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="fca81-155">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="f3644-155">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="f3644-155">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
