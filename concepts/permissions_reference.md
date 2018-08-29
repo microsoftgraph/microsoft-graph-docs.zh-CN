@@ -4,13 +4,13 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
+- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
 
-- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
-- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
+- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
   
 - 对于应用程序权限，应用的_有效权限_将是权限默示的完整特权级别。例如，具有 _User.ReadWrite.All_ 应用程序权限的应用可以更新组织中每个用户的配置文件。 
 
@@ -300,9 +300,9 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 #### <a name="delegated"></a>委派
 
-* _EduAssignments.Read_：获取登录学生的作业信息 (`GET /education/classes/<id>/assignments/<id>`)
-* _EduAssignments.ReadWriteBasic_：提交登录学生的作业 (`GET /education/classes/<id>/assignments/<id>submit`)
-* _EduRoster.ReadBasic_：登录用户听讲或教授的课程 (`GET /education/classes/<id>/members`)
+* _EduAssignments.Read_：获取登录学生的作业信息 (`GET /education/classes/{id}/assignments/{id}`)
+* _EduAssignments.ReadWriteBasic_：提交登录学生的作业 (`GET /education/classes/{id}/assignments/{id}submit`)
+* _EduRoster.ReadBasic_：登录用户听讲或教授的课程 (`GET /education/classes/{id}/members`)
 
 有关涉及多个权限的更复杂方案，请参阅[权限方案](#permission-scenarios)。
 
@@ -703,7 +703,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 可访问 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -762,8 +762,8 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用代表登录用户读取文档，并列出所有网站集中的项目。 | 否  |
-| _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  |
-| _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 |
+| _Sites.ReadWrite.All_   | 在所有网站集中读取和写入项 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  |
+| _Sites.Manage.All_      | 创建、编辑或删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 |
 | _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -771,9 +771,9 @@ People.Read.All 权限仅适用于工作和学校帐户。
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用在没有登录用户的情况下读取所有网站集中的文档和列表项。 | 是 |
-| _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
+| _Sites.ReadWrite.All_   | 在所有网站集中读取和写入项 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
 | _Sites.Manage.All_      | 具有对所有网站集的完全控制权限 | 允许应用在没有登录用户的情况下管理和创建所有网站集中的列表、文档和列表项。  | 是  |
-| _Sites.FullControl.All_ | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
+| _Sites.FullControl.All_ | 创建、编辑或删除所有网站集中的项目和列表 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
 
 
 ### <a name="remarks"></a>注解

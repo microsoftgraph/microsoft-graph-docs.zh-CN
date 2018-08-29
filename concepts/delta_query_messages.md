@@ -8,7 +8,7 @@ Delta 查询支持检索文件夹（例如，用户的收件箱）中所有邮�
 
 Delta 查询对每个文件夹分别执行操作。为跟踪文件夹层次结构中邮件的更改，需要分别跟踪每个文件夹。
 
-跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[获取邮件](https://developer.microsoft.com/zh-CN/graph/docs/api-reference/v1.0/api/user_list_messages)，区别在于要添加 **delta** 函数：
+跟踪邮件文件夹中的邮件更改通常需要使用 **delta** 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[获取邮件](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages)，区别在于要添加 **delta** 函数：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -88,12 +88,13 @@ since the completion of the very first round.
 - [可选的请求标头](#optional-request-header) _odata.maxpagesize_，一次返回两封邮件。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_1"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=subject,sender,isRead HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$select=subject,sender,isRead HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -148,12 +149,13 @@ Prefer: odata.maxpagesize=2
 第二个请求指定上一个响应中返回的 `nextLink` URL。请注意，不再需要像第一个请求一样指定相同的 `$select` 参数，因为 `nextLink` URL 中的 `skipToken` 已将其编码并包含在内。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_2"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -208,12 +210,12 @@ Prefer: odata.maxpagesize=2
 第三个请求继续使用上一个同步请求返回的最新 `nextLink` URL。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_3"
 }-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+```
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -255,12 +257,13 @@ Prefer: odata.maxpagesize=2
 使用上一轮中[最后一个请求](#sample-third-request)返回的 `deltaLink`，可以只获取从那以后此文件夹中发生变化（已添加、删除或更新）的邮件。假设你愿意在响应中保持页面大小上限不变，下一轮的第一个请求如下所示：
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_next"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 

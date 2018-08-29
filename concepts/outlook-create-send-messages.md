@@ -86,3 +86,16 @@ Prefer: outlook.allow-unsafe-html
 
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
 - [使用邮件 API](../api-reference/v1.0/resources/mail_api_overview.md) 及其在 Microsoft Graph v1.0 中的[用例](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases)。
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /concepts/outlook-create-send-messages.md:
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](../api-reference/beta/api/user_post_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)'."
+  ]
+}-->

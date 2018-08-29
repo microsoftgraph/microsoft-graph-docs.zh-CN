@@ -280,7 +280,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -295,4 +295,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>使用 Microsoft Graph 客户端库
 喜欢 SDK 的强大功能和易用性吗？虽然你可以随时使用 REST API 调用 Microsoft Graph，但我们还提供了适用于许多常用平台的 SDK。
 
-探索我们的 [SDK](https://graph.microsoft.io/zh-CN/code-samples-and-sdks)。
+探索我们的 [SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks)。

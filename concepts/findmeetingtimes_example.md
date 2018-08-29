@@ -46,7 +46,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 为两个用户查找 4 月 18 到 20 日之间 2 小时的空闲时间空挡。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_first"
 }-->
 ```http
@@ -65,11 +65,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -90,15 +90,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="first-response"></a>第一个响应
 当这两个用户均有空时，4 月 18 到 20 日工作时间内没有 2 小时的时间空挡。
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
@@ -121,7 +121,7 @@ Content-Length: 184
 ### <a name="second-request"></a>第二个请求
 在 4 月 21 日寻找 2 小时的时间空挡。
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_second"
 }-->
 ```http
@@ -140,11 +140,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -165,15 +165,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="second-response"></a>第二个响应
 第二个 **findMeetingTimes** 请求建议两个用户在 4 月 21 日下午 2-4 点开会。
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
