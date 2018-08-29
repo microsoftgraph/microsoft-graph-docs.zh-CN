@@ -1,38 +1,45 @@
-# <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
+# <a name="directoryroletemplate-resource-type"></a><span data-ttu-id="7f17f-101">directoryRoleTemplate 资源类型</span><span class="sxs-lookup"><span data-stu-id="7f17f-101">directoryRoleTemplate resource type</span></span>
 
-表示目录角色模板。目录角色模板指定目录角色 ([directoryRole](directoryrole.md)) 的属性值。租户中每个已激活的目录角色都有一个相关的目录角色模板对象。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，仅激活公司管理员目录角色。要激活其他可用目录角色，发送 POST 请求到此目录角色模板 ID 的 `/directoryRoles` 端点，角色基于此模板，且此模板在请求的 **roleTemplateId** 参数中指定。在成功完成请求后，你可以开始读取，并将成员分配给目录角色。**注意**：目录角色模板针对用户目录角色公开。用户目录角色是隐式的，对目录客户端不可见。租户中的每个用户按基础结构分配到此角色。已激活该角色。请勿使用此模板。
+<span data-ttu-id="7f17f-p101">表示目录角色模板。目录角色模板指定目录角色 ([directoryRole](directoryrole.md)) 的属性值。租户中每个已激活的目录角色都有一个相关的目录角色模板对象。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，仅激活公司管理员目录角色。要激活其他可用目录角色，发送 POST 请求到此目录角色模板 ID 的 `/directoryRoles` 端点，角色基于此模板，且此模板在请求的 **roleTemplateId** 参数中指定。在成功完成请求后，你可以开始读取，并将成员分配给目录角色。**注意**：目录角色模板针对用户目录角色公开。用户目录角色是隐式的，对目录客户端不可见。租户中的每个用户按基础结构分配到此角色。已激活该角色。请勿使用此模板。</span><span class="sxs-lookup"><span data-stu-id="7f17f-p101">Represents a directory role template. A directory role template specifies the property values of a directory role ([directoryRole](directoryrole.md)). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request to the `/directoryRoles` endpoint with the ID of the directory role template on which the directory role is based specified in the **roleTemplateId** parameter of the request. Upon successful completion of this request, you can then start to read and assign members to the directory role. **Note**: A directory role template is exposed for the Users directory role. The Users directory role is implicit and is not visible to directory clients. Every User in the tenant is assigned to this role by the infrastructure. The role is already activated. Do not use this template.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="7f17f-114">方法</span><span class="sxs-lookup"><span data-stu-id="7f17f-114">Methods</span></span>
 
-| 方法       | 返回类型  |说明|
+| <span data-ttu-id="7f17f-115">方法</span><span class="sxs-lookup"><span data-stu-id="7f17f-115">Method</span></span>       | <span data-ttu-id="7f17f-116">返回类型</span><span class="sxs-lookup"><span data-stu-id="7f17f-116">Return Type</span></span>  |<span data-ttu-id="7f17f-117">说明</span><span class="sxs-lookup"><span data-stu-id="7f17f-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |读取 directoryroletemplate 对象的属性和关系。|
-|[列出 directoryRoleTemplate](../api/directoryroletemplate_list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |检索 directoryRoleTemplate 对象的列表。|
+|[<span data-ttu-id="7f17f-118">获取 directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="7f17f-118">Get directoryRoleTemplate</span></span>](../api/directoryroletemplate_get.md) | [<span data-ttu-id="7f17f-119">directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="7f17f-119">directoryRoleTemplate</span></span>](directoryroletemplate.md) |<span data-ttu-id="7f17f-120">读取 directoryRoleTemplate 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="7f17f-120">Read properties and relationships of directoryRoleTemplate object.</span></span>|
+|[<span data-ttu-id="7f17f-121">列出 directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="7f17f-121">List directoryRoleTemplate</span></span>](../api/directoryroletemplate_list.md) | <span data-ttu-id="7f17f-122">[directoryRoleTemplate](directoryroletemplate.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7f17f-122">[directoryRoleTemplate](directoryroletemplate.md) collection</span></span> |<span data-ttu-id="7f17f-123">检索 directoryRoleTemplate 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="7f17f-123">Retrieve a list of directoryRoleTemplate objects.</span></span>|
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="7f17f-124">属性</span><span class="sxs-lookup"><span data-stu-id="7f17f-124">Properties</span></span>
+| <span data-ttu-id="7f17f-125">属性</span><span class="sxs-lookup"><span data-stu-id="7f17f-125">Property</span></span>     | <span data-ttu-id="7f17f-126">类型</span><span class="sxs-lookup"><span data-stu-id="7f17f-126">Type</span></span>   |<span data-ttu-id="7f17f-127">说明</span><span class="sxs-lookup"><span data-stu-id="7f17f-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|说明|String|可设置目录角色说明。只读。|
-|displayName|String|可设置目录角色显示名称。只读。 |
-|id|String|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
+|<span data-ttu-id="7f17f-128">说明</span><span class="sxs-lookup"><span data-stu-id="7f17f-128">description</span></span>|<span data-ttu-id="7f17f-129">字符串</span><span class="sxs-lookup"><span data-stu-id="7f17f-129">String</span></span>|<span data-ttu-id="7f17f-p102">可设置目录角色说明。只读。</span><span class="sxs-lookup"><span data-stu-id="7f17f-p102">The description to set for the directory role. Read-only.</span></span>|
+|<span data-ttu-id="7f17f-132">displayName</span><span class="sxs-lookup"><span data-stu-id="7f17f-132">displayName</span></span>|<span data-ttu-id="7f17f-133">字符串</span><span class="sxs-lookup"><span data-stu-id="7f17f-133">String</span></span>|<span data-ttu-id="7f17f-p103">可设置目录角色显示名称。只读。</span><span class="sxs-lookup"><span data-stu-id="7f17f-p103">The display name to set for the directory role. Read-only.</span></span> |
+|<span data-ttu-id="7f17f-136">id</span><span class="sxs-lookup"><span data-stu-id="7f17f-136">id</span></span>|<span data-ttu-id="7f17f-137">字符串</span><span class="sxs-lookup"><span data-stu-id="7f17f-137">String</span></span>|<span data-ttu-id="7f17f-p104">模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。</span><span class="sxs-lookup"><span data-stu-id="7f17f-p104">The unique identifier for the template. Inherited from [directoryObject](directoryobject.md). You specify the **id** of the directory role template for the **roleTemplateId** property in the POST request activate a [directoryRole](directoryrole.md) in a tenant. Key, Not nullable. Read-only.</span></span>|
 
-## <a name="relationships"></a>关系
-无
+## <a name="relationships"></a><span data-ttu-id="7f17f-143">关系</span><span class="sxs-lookup"><span data-stu-id="7f17f-143">Relationships</span></span>
+<span data-ttu-id="7f17f-144">无</span><span class="sxs-lookup"><span data-stu-id="7f17f-144">None</span></span>
 
 
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="7f17f-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7f17f-145">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="7f17f-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7f17f-146">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
