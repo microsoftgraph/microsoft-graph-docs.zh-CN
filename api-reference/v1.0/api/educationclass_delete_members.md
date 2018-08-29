@@ -2,7 +2,7 @@
 
 从 [educationClass](../resources/educationclass.md) 删除 [educationUser](../resources/educationuser.md)
 
->**注意：**教师_和_学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass_list_teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
+>**注意：** 教师_和_学生包含在课程 **members** 集合中。 在调用此 API 之前，确定要删除的 **educationUser** 不是教师。  要获取教师列表，可调用 [educationclass_list_teachers](educationclass_list_teachers.md) 并验证要删除的用户的用户 ID 不在返回的教师列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -21,7 +21,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -38,7 +38,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11003/members/14008
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
 ```
 
 ##### <a name="response"></a>响应

@@ -23,11 +23,11 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -40,10 +40,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_lAAA="],
   "name": "get_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_lAAA=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
 ##### <a name="response-1"></a>响应 1
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -124,10 +125,11 @@ Content-type: application/json
 第二个示例展示了如何获取与事件消息关联的事件。 它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_jAAA="],
   "name": "get_event_based_on_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>响应 2
 下面展示了示例响应。 响应中返回关联事件的属性。 注意：为了简单起见，可能会将此处所示的响应对象截断。 将从实际调用中返回所有属性。

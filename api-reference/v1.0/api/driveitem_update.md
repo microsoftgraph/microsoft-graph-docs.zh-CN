@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "更新文件或文件夹"
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 更新文件或文件夹
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266889"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -58,7 +59,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 本示例将 DriveItem 资源重命名为“new-file-name.docx”。
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}

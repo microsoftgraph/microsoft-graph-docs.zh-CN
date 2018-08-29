@@ -22,7 +22,7 @@ GET /education/classes/{id}/schools
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 
 ## <a name="request-body"></a>请求正文
@@ -37,12 +37,12 @@ GET /education/classes/{id}/schools
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11014/schools
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

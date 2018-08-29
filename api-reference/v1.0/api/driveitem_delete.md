@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "删除文件或文件夹"
-ms.openlocfilehash: 403eba1fbf01df0a5d7c410f2f790e222828b371
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 删除文件或文件夹
+ms.openlocfilehash: ccf443fb911884ae7444a3b15911e4b9c61adbb9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265223"
 ---
 # <a name="delete-a-driveitem"></a>删除 DriveItem
 
@@ -45,7 +46,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 下面是一个如何调用此 API 的示例。
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}

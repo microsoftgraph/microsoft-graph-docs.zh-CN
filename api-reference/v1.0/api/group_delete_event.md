@@ -20,7 +20,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -33,6 +33,7 @@ DELETE /groups/{id}/calendar/events/{id}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA=="],
   "name": "delete_group_event"
 }-->
 ```http
@@ -41,7 +42,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 #### <a name="response"></a>响应
 下面展示了示例响应。 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true

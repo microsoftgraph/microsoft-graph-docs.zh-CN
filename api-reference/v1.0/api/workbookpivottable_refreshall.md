@@ -20,7 +20,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -37,15 +37,14 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
   "name": "workbookpivottable_refreshall"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

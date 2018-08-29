@@ -21,7 +21,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
@@ -100,7 +100,6 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>响应
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {

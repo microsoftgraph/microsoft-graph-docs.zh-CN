@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>/details
+PATCH /planner/plans/{id}/details
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 plannerPlanDetails 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -43,7 +43,7 @@ PATCH /planner/plans/<id>/details
   "name": "update_plannerplandetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 Content-type: application/json
 Content-length: 212
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

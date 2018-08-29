@@ -26,7 +26,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

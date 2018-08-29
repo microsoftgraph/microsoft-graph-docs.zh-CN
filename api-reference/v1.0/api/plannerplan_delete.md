@@ -13,13 +13,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/plans/<id>
+DELETE /planner/plans/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要删除的 **plannerPlan** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -39,7 +39,7 @@ DELETE /planner/plans/<id>
   "name": "delete_plannerplan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/plans/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/plans/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>响应

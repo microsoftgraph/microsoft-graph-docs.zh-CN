@@ -2,7 +2,7 @@
 
 获取使用情况趋势，即组织中用户召开和组织的会议会话的时长（以分钟为单位）和类型。 会议会话类型包括音频/视频和 Microsoft 拨入/拨出。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 会议组织者活动](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 会议组织者活动](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ GET /reports/getSkypeForBusinessOrganizerActivityMinuteCounts(period='{period_va
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| 授权 | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应
@@ -58,8 +58,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getskypeforbusinessorganizeractivityminutecounts"
 }-->
 
@@ -71,7 +72,11 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessOrganizerActivit
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -81,11 +86,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

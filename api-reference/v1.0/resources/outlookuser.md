@@ -22,6 +22,26 @@
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookCategory.md) 集合| 为用户定义的类别列表。 | 
 
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.outlookUser",
+  "@odata.annotations": [
+    {
+      "property": "masterCategories",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
+}-->
+```json
+{
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

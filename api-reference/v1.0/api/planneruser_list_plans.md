@@ -15,14 +15,14 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans
-GET /users/<id>/planner/plans
+GET /users/{id}/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

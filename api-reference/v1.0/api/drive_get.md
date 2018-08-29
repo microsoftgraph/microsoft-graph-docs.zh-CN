@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "获取驱动器"
-ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 获取驱动器
+ms.openlocfilehash: 4c77a1ef801fa65edf77376d421cafa3ff79f3d4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269430"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -27,13 +28,13 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="get-current-users-onedrive"></a>获取当前用户的 OneDrive
 
-可以通过 `me` 单一实例访问登录用户驱动器（如果使用委派身份验证）。
+可以通过 `me` 单一实例访问登录用户的驱动器（如果使用委派身份验证）。
 
 如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -47,7 +48,7 @@ GET /me/drive
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -61,11 +62,11 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
-若要访问组的默认文档库，应用应请求组中的 **drive** 关系。
+若要访问组的默认文档库，你的应用程序应请求组中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -79,7 +80,7 @@ GET /groups/{groupId}/drive
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
-若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
+为了访问[站点的](../resources/site.md)默认文档库，你的应用程序应请求站点中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -102,7 +103,7 @@ GET /sites/{siteId}/drive
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>路径参数
@@ -113,7 +114,7 @@ GET /drives/{driveId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。
+这些方法支持 [$select 查询参数][odata-query-parameters]塑造响应。
 
 ## <a name="http-response"></a>HTTP 响应
 
@@ -145,7 +146,7 @@ Content-type: application/json
 
 ### <a name="error-response-codes"></a>错误响应代码
 
-如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。
+如果驱动器不存在且无法自动设置（当使用委派身份验证），将返回 `HTTP 404` 响应。
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: ../../../concepts/query_parameters.md
@@ -155,5 +156,13 @@ Content-type: application/json
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/drive_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
   "tocPath": "Drives/Get drive"
 } -->

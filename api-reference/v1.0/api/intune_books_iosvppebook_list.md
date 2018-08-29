@@ -1,6 +1,6 @@
 # <a name="list-iosvppebooks"></a>列出 iosVppEBooks
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列出 [iosVppEBook](../resources/intune_books_iosvppebook.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ GET /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -65,7 +65,7 @@ Content-Length: 1094
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "informationUrl": "https://example.com/informationUrl/",
       "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-      "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+      "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "appleId": "Apple Id value",
       "vppOrganizationName": "Vpp Organization Name value",
       "genres": [

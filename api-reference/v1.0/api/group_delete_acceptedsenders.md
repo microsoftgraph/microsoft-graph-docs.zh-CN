@@ -14,13 +14,14 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 标头         | 值                      |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}。必需。  
+| 授权  | Bearer {token}。必需。  
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -30,16 +31,14 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面展示了几个示例请求。
+下面展示了示例请求。
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### <a name="response"></a>响应

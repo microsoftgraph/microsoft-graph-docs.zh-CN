@@ -24,7 +24,7 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -38,10 +38,11 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories('4b1c2495-54c9-4a5e-90a2-0ab0b31987d8')
+DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。

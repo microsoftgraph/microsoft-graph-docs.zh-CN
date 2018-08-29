@@ -25,7 +25,7 @@ POST /invitations
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,7 @@ Content-length: 551
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -95,3 +95,11 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->

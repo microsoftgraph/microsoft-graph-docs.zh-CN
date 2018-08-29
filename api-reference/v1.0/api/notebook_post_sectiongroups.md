@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string | `application/json` |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供分区组名称。
@@ -55,7 +55,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

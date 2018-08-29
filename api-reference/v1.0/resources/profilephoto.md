@@ -17,7 +17,7 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 |height|int32|照片的高度。只读。|
 |width|int32|照片的宽度。只读。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -25,11 +25,11 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

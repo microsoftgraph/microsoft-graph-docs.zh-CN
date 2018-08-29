@@ -17,6 +17,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

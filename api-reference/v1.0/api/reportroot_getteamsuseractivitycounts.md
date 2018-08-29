@@ -32,13 +32,13 @@ GET /reports/getTeamsUserActivityCounts(period='{period_value}')
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
 
 CSV 文件包含下面的列标题：
 
@@ -69,7 +69,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityCounts(period='
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -78,11 +82,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

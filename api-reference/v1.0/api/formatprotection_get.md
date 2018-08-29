@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/protection
+GET /workbook/names/{name}/range/format/protection
 GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
@@ -23,7 +23,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
@@ -40,14 +40,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
   "name": "get_formatprotection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

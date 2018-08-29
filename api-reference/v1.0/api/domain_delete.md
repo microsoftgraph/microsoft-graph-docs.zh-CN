@@ -29,7 +29,7 @@ DELETE /domains/{id}
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -45,6 +45,7 @@ DELETE /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

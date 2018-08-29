@@ -80,11 +80,11 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}。必需。  |
+| 授权  | 字符串 | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
@@ -103,11 +103,12 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGIAAAoZDOFAAA="],
   "name": "get_event"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -198,10 +199,11 @@ Content-length: 1928
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### <a name="response-2"></a>响应 2
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
@@ -257,7 +259,6 @@ Content-length: 1992
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

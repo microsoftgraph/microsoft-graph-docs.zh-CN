@@ -19,7 +19,7 @@ POST /education/schools/{id}/users/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -37,7 +37,7 @@ POST /education/schools/{id}/users/$ref
   "name": "create_educationuser_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/<id>/users/$ref
+POST https://graph.microsoft.com/v1.0/education/schools/{id}/users/$ref
 Content-type: application/json
 Content-length: 56
 

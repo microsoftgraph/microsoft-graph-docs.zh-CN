@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "列出网站中的 SharePoint 列表"
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: 列出网站中的 SharePoint 列表
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267645"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -36,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>注解
+
+默认情况下，将隐藏包含 [system][] Facet 的列表。
+若要列出它们，请在 `$select` 语句中添加 `system`。
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

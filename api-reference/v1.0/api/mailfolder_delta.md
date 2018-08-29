@@ -18,7 +18,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
-GET /users/<id>/mailFolders/delta
+GET /users/{id}/mailFolders/delta
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -37,8 +37,8 @@ GET /users/<id>/mailFolders/delta
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required. |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
@@ -90,8 +90,7 @@ Content-length: 254
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "totalItemCount": 99
     }
   ]
 }

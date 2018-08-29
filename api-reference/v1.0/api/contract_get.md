@@ -27,7 +27,7 @@ GET /contracts/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/v1.0/contracts/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/{name}/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -21,7 +21,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|横向|布尔|可选。如果为 True，则将指定区域中每一行的单元格合并为一个单独的合并单元格。默认值是 false。|
+|横向|boolean|可选。如果为 True，则将指定区域中每一行的单元格合并为一个单独的合并单元格。默认值是 false。|
 
 ## <a name="response"></a>响应
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
 Content-length: 20
 
@@ -56,9 +56,7 @@ Content-length: 20
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

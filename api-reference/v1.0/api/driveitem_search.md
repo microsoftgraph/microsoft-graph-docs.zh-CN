@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "搜索文件"
-ms.openlocfilehash: 1d4b4153f6c208390d928fc7833ecc5e1a9be094
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 搜索文件
+ms.openlocfilehash: 35349150847c86d1fc7198309c13d910290b9019
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265230"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -52,7 +53,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 下面是一个请求搜索当前用户的 OneDrive 示例
 
-<!-- { "blockType": "request", "name": "item_search" }-->
+<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -95,7 +96,7 @@ Content-type: application/json
 
 ### <a name="example"></a>示例
 
-<!-- { "blockType": "request", "name": "item_search_all" }-->
+<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -118,7 +119,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
+        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
       },
       {
         "id": "0123456789abc!456",

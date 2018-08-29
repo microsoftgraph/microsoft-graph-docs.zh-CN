@@ -26,8 +26,8 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| 接受 | string | `application/json` |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

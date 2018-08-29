@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
-ms.openlocfilehash: a4284caa7c20e266d87e22e9b3d729e17bc88abf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 391eafd84ab1abd4670c953720ff7097e060bfd3
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267064"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -20,6 +21,7 @@ ms.lasthandoff: 09/28/2017
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -44,9 +46,10 @@ ms.lasthandoff: 09/28/2017
 | **exposureDenominator** | Double         | 相机的曝光时间分数的分母。只读。
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
 | **focalLength**         | 双精度数         | 相机的焦距。只读。
-| **iso**                 | Int64          | 相机的 ISO 值。只读。
+| **iso**                 | Int32          | 相机的 ISO 值。只读。
 
 ## <a name="remarks"></a>注解
+
 OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。
 
 有关 DriveItem 方面的详细信息，请参阅 [DriveItem](driveitem.md)。

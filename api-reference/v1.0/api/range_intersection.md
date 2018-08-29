@@ -13,15 +13,15 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Intersection
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
+GET /workbook/names/{name}/range/intersection
+GET /workbook/worksheets/{id|name}/range(address='<address>')/intersection
+GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -41,10 +41,11 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_intersection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/intersection
 Content-type: application/json
 Content-length: 42
 
@@ -58,7 +59,7 @@ Content-length: 42
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

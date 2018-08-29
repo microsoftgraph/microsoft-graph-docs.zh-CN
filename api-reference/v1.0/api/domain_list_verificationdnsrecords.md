@@ -33,7 +33,7 @@ GET /domains/{id}/verificationDnsRecords
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ GET /domains/{id}/verificationDnsRecords
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>响应

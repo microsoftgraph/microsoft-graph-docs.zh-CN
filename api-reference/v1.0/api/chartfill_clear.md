@@ -13,15 +13,15 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -40,15 +40,14 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
 ```
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

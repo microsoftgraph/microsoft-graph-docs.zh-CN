@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "访问共享项目"
-ms.openlocfilehash: d396e7bb79f3c2bbc9c824d48b6fa3df4a5ef26c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 访问共享项目
+ms.openlocfilehash: 4566452cc661d9ad2c913c06333a56bfcb0d5fce
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268268"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -89,10 +90,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```

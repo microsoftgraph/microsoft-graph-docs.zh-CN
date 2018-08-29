@@ -2,16 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "删除对项的访问权限"
-ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 删除对项的访问权限
+ms.openlocfilehash: 011345afb9789b0ff2927704a1e678f39656a719
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268618"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
-删除对 [DriveItem](../resources/driveitem.md) 的访问权限。
+删除 [DriveItem](../resources/driveitem.md) 访问权限。
 
 只能删除**非**继承的共享权限。
 **InheritedFrom** 属性必须为 `null`。
@@ -42,7 +43,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 名称          | 类型   | 说明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。 |
+| if-match      | 字符串 | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。 |
 
 ## <a name="response"></a>响应
 
@@ -52,10 +53,10 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 本示例从当前用户 OneDrive 的项 {item-id} 中删除标识为 {perm-id} 的权限。
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>响应

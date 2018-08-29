@@ -19,7 +19,7 @@ PATCH /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -33,6 +33,7 @@ PATCH /groups/{id}/threads/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
   "name": "update_group_thread"
 }-->
 ```http

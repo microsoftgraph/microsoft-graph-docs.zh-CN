@@ -15,7 +15,6 @@
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mimeContent"
 }
 -->

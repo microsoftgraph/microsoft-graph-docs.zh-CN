@@ -2,7 +2,7 @@
 
 获取 Office 365 活跃用户的详细信息。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 
@@ -16,7 +16,7 @@
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getOffice365ActiveUserDetail(period='{period_value}')
@@ -32,13 +32,13 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
 | date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
 
-> **注意：**需要在 URL 中设置 period 或 date。
+> **注意：** 需要在 URL 中设置 period 或 date。
 
 ## <a name="request-headers"></a>请求头
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| 授权 | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应
@@ -80,8 +80,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activeuserdetail"
 }-->
 
@@ -93,7 +94,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -103,11 +108,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

@@ -1,6 +1,6 @@
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。
 ## <a name="properties"></a>属性
@@ -27,7 +27,6 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.intuneBrand"
 }
 -->

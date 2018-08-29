@@ -14,12 +14,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/<id>/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -36,7 +36,7 @@ DELETE /education/schools/<id>/users/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
 ```
 
 ##### <a name="response"></a>响应

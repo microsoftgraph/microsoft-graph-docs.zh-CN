@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
-ms.openlocfilehash: ef7fef6fb6ca35f1117433b452de0841691282a0
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cdae360afb6e626ee481a7e98ed5f90e657203b2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265118"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
 
@@ -18,7 +19,10 @@ ms.lasthandoff: 09/28/2017
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **columnLink** 资源的 JSON 表示形式。
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {

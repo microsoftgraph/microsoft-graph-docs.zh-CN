@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/buckets/<id>
+PATCH /planner/buckets/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerBucket** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,7 +26,7 @@ PATCH /planner/buckets/<id>
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|名称|String|存储桶的名称。|
+|name|String|存储桶的名称。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner_order_hint_format.md)概述了此格式。|
 |planId|String|此存储桶所属的计划 id。|
 
@@ -44,7 +44,7 @@ PATCH /planner/buckets/<id>
   "name": "update_plannerbucket"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
+PATCH https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 Content-type: application/json
 Content-length: 27
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

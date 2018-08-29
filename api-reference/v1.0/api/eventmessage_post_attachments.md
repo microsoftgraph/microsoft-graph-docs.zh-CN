@@ -28,8 +28,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型 | 字符串  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。
@@ -51,19 +51,19 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "name": "name-value",
   "contentType": "contentType-value",
   "isInline": false,
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value"
+  "contentBytes": "base64-contentBytes-value"
 }
 ```
 
 在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回所有属性。
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -21,6 +21,7 @@
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 

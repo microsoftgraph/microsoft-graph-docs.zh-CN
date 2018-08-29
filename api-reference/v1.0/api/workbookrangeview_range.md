@@ -14,13 +14,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -32,12 +32,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_range"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/range
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/range
 ```
 
 ##### <a name="response"></a>响应
@@ -45,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

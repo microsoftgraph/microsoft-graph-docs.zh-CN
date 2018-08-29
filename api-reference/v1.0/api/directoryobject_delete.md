@@ -21,7 +21,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -38,7 +38,7 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>响应
 

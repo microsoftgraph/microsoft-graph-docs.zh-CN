@@ -1,6 +1,6 @@
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 包含业务线应用内容版本文件加密信息的属性。
 ## <a name="properties"></a>属性
@@ -18,12 +18,10 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.fileEncryptionInfo"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileEncryptionInfo",

@@ -23,7 +23,7 @@ GET /groups/{id}/calendar/events
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}。必需。  |
+| 授权  | 字符串 | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
@@ -38,6 +38,7 @@ GET /groups/{id}/calendar/events
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_events"
 }-->
 ```http
@@ -46,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

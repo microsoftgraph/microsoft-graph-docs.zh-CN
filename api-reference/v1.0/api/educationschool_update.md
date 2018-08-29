@@ -19,7 +19,7 @@ PATCH /education/schools/{id}
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 
@@ -63,7 +63,7 @@ Content-length: 292
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

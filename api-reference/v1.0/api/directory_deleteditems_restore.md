@@ -28,7 +28,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,7 +52,7 @@ POST /directory/deleteditems/{id}/restore
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应

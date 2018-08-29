@@ -27,7 +27,7 @@
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。 默认情况下，此值为“来宾”。 如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|状态|String|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -37,7 +37,7 @@
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- { "blockType": "resource", "baseType": "microsoft.graph.entity", "@odata.type": "microsoft.graph.invitation" } -->
 ```json
 {
   "invitedUserDisplayName": "string",
@@ -47,8 +47,8 @@
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 

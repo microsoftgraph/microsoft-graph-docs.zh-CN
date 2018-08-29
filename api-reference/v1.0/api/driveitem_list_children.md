@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "列出文件夹的内容"
-ms.openlocfilehash: e4c8f7b66333d739aeeaff9a8b92c0088d2fde0b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 列出文件夹的内容
+ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265216"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -44,26 +45,26 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="optional-request-headers"></a>可选的请求标头
 
-| 头名称     | 值 | 说明                                                                                                                                              |
+| 名称     | 值 | 说明                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 
 ## <a name="examples"></a>示例
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>列出当前用户的驱动器根目录中的子项
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>在当前用户驱动器的根目录中列出子项
 
-若要检索驱动器根目录中的文件，请在驱动器上使用 `root` 关系，然后访问子关系。
+若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
-<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
 ```
 
 
-### <a name="list-children-of-a-driveitem-with-a-known-id"></a>列出具有已知 ID 的 DriveItem 的子项
+### <a name="list-children-of-a-driveitem-with-a-known-id"></a>列出带已知 ID 的 DriveItem 子项
 
-若要检索驱动器根目录中的文件，请在驱动器上使用 `root` 关系，然后访问子关系。
+若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -71,7 +72,7 @@ GET /me/drive/root/children
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 
-### <a name="list-children-of-a-driveitem-with-a-known-path"></a>列出具有已知路径的 DriveItem 的子项
+### <a name="list-children-of-a-driveitem-with-a-known-path"></a>列出带已知路径的 DriveItem 子项
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
@@ -104,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-**注意：**如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
+**注意：** 如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
 
 可以通过[可选的查询字符串参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)控制页面大小
 

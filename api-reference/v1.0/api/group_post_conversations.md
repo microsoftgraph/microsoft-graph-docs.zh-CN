@@ -21,7 +21,7 @@ POST /groups/{id}/conversations
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -37,10 +37,11 @@ POST /groups/{id}/conversations
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
+POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations
 Content-type: application/json
 
 {

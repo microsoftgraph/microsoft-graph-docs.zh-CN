@@ -15,13 +15,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messagerules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+PATCH /me/mailFolders/inbox/messageRules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
@@ -31,7 +31,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
-| displayName | String | 规则的显示名称。 |
+| displayName | 字符串 | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | 规则的例外情况。 |
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
@@ -45,11 +45,11 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 下面的示例更改规则名称，并更改针对[获取规则](messagerule_get.md)[示例](messagerule_get.md#example)中的规则所采取的操作，从转发到一个地址到将其重要性标记为“高”。 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
-
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 Content-type: application/json
 
 {

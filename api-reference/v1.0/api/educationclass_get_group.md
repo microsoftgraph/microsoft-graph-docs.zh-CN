@@ -2,7 +2,7 @@
 
 检索与此 **educationClass** 对应的 Office 365 **group**。
 
->**注意：**如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
+>**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要一组权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -21,7 +21,7 @@ GET /education/classes/{id}/group
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -35,12 +35,12 @@ GET /education/classes/{id}/group
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

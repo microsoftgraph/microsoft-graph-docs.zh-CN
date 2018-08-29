@@ -2,7 +2,7 @@
 
 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的唯一用户数趋势。 报表还包含对等会话数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ GET /reports/getSkypeForBusinessActivityUserCounts(period='{period_value}')
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| 授权 | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应
@@ -58,8 +58,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getskypeforbusinessactivityusercounts"
 }-->
 
@@ -71,7 +72,11 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessActivityUserCoun
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -81,11 +86,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

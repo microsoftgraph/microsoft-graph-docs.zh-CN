@@ -1,6 +1,6 @@
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示租户中所有许可用户的赋值。
 
@@ -16,7 +16,7 @@
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 -->

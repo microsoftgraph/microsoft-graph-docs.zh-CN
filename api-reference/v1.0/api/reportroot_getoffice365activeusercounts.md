@@ -2,7 +2,7 @@
 
 按产品获取报表周期内的每日活跃用户数。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 活跃用户](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 
@@ -61,8 +61,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activeusercounts"
 }-->
 
@@ -74,7 +75,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserCounts(period
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -84,11 +89,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

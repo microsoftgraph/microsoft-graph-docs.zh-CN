@@ -13,14 +13,14 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/protection
+PATCH /workbook/names/{name}/range/format/protection
 PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
@@ -42,7 +42,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
   "name": "update_formatprotection"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 Content-type: application/json
 Content-length: 45
 
@@ -56,7 +56,7 @@ Content-length: 45
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

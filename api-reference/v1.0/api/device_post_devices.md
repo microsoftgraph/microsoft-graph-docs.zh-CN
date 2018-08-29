@@ -21,7 +21,7 @@ POST /devices
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 | Content-type | string | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",

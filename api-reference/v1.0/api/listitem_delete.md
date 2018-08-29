@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "从 SharePoint 列表中删除条目"
-ms.openlocfilehash: 197de37f9f4ae52b8485417ae4ee961fa3c56aec
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: 从 SharePoint 列表中删除条目
+ms.openlocfilehash: f091ba2806d0206ca840cb25d9f38a20f42dd2c7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269815"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
 从 [list][] 中删除项。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +48,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>示例
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}

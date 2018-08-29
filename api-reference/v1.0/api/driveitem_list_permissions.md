@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "列出有权访问文件的用户"
-ms.openlocfilehash: 8b8671fbad37601a42127119f8bef6e5eca23dea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 列出有权访问文件的用户
+ms.openlocfilehash: d7090939fb2b950ed92fd9574cf9dd5b80ec8a6c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266630"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
 
@@ -15,10 +16,10 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 
-权限集合包括潜在的敏感信息，未必适用于所有调用方。
+权限集合包括潜在的敏感信息，不可能适用于每个调用方。
 
 * 对于该项目的所有者，将返回所有共享权限。 这包括共有者。
-* 对于非所有者的调用方，仅返回适用于调用方的共享权限。
+* 对于非所有者的调用方，仅返回应用于调用方的共享权限。
 * 对于能够创建共享权限的调用方，仅返回包含机密信息（例如 `shareId` 和 `webUrl`）的共享权限属性。
 
 ## <a name="permissions"></a>权限
@@ -56,9 +57,9 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [权限](../resources/permission.md) 资源集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Permission](../resources/permission.md) 资源集合。
 
-DriveItem 的有效共享权限可能来自两个源：
+DriveItem 的有效共享权限可能有两个来源：
 
 * 直接对 DriveItem 本身应用的共享权限
 * 从 DriveItem 的上级继承的共享权限
@@ -71,7 +72,7 @@ DriveItem 的有效共享权限可能来自两个源：
 
 本示例检索登录用户驱动器中某个项的权限集合。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -79,7 +80,7 @@ GET /me/drive/items/{item-id}/permissions
 
 ### <a name="response"></a>响应
 
-此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹且用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。
+此示例响应包括三个权限，第一个是具有编辑权限的共享链接，第二个是继承自父文件夹用户名为 John 的显式权限，第三个是由一个应用程序创建的读写共享链接。
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 

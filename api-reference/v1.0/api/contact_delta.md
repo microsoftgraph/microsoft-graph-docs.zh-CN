@@ -17,7 +17,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
+GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
 ### <a name="query-parameters"></a>查询参数
@@ -37,8 +37,8 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required. |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
@@ -59,7 +59,6 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 

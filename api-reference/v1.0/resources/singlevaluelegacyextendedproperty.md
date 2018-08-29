@@ -18,7 +18,7 @@
 |id|string|用于标识属性的属性 ID。只读。|
 |value|string|属性值。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -26,11 +26,10 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"
 }-->
 

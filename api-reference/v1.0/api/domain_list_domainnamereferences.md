@@ -29,7 +29,7 @@ GET /domains/{id}/domainNameReferences
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -47,7 +47,7 @@ GET /domains/{id}/domainNameReferences
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### <a name="response"></a>响应

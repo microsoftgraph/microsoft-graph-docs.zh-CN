@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "获取权限"
-ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 获取权限
+ms.openlocfilehash: 48c0d7f07565c87e5f2b77ca7a3d5beec83540e7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268548"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -43,7 +44,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [$select 查询参数](../../../concepts/query_parameters.md)形成响应。
+此方法支持 [$select 查询参数](../../../concepts/query_parameters.md)塑造响应。
 
 ## <a name="response"></a>响应
 
@@ -55,7 +56,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 下面是请求访问某个文件夹权限的示例。
 
-<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}

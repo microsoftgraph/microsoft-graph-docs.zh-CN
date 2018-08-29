@@ -2,16 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "复制文件或文件夹"
-ms.openlocfilehash: 6740091f887e42a14b2a42c99ee586af4254c473
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 复制文件或文件夹
+ms.openlocfilehash: 2b54f183daa716f1a872f373a499368fdfd558d9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265251"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
-以异步方式在新父项下或使用新名称创建一个 [driveItem][item-resource] 副本（包括任何子级）。
+以异步方式在新父项下或使用新名称创建一个 [driveItem][item-resource] 副本（包括任何子项）。
 
 ## <a name="permissions"></a>权限
 
@@ -49,10 +50,10 @@ POST /users/{userId}/drive/items/{itemId}/copy
 
 ## <a name="example"></a>示例
 
-本示例将由 `{item-id}` 标识的文件复制到通过 `driveId` 和 `id` 值标识的文件夹。
+本示例将由 `{item-id}` 标识的文件复制到使用 `driveId` 和 `id` 值标识的文件夹。
 该文件的新副本将被命名为 `contoso plan (copy).txt`。
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy

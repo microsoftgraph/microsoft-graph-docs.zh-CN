@@ -19,7 +19,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -33,6 +33,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4r"],
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http

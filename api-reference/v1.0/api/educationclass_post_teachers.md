@@ -19,7 +19,7 @@ POST /education/classes/{id}/teachers/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -37,7 +37,7 @@ POST /education/classes/{id}/teachers/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11017/teachers/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
 Content-type: application/json
 Content-length: 508
 
@@ -51,7 +51,7 @@ Content-length: 508
 
 <!-- Add the educationClass object to the response -->
 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

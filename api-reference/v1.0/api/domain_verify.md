@@ -2,7 +2,7 @@
 
 验证域的所有权。
 
-> **重要说明：**仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
+> **重要说明：** 仅适用于未验证的域。对于未验证的域，[域](../resources/domain.md)的 isVerified 属性为 false。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ POST /domains/{id}/verify
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。|
+| 授权  | Bearer {token}。必需。|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -44,7 +44,7 @@ POST /domains/{id}/verify
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
 ##### <a name="response"></a>响应
@@ -66,7 +66,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 

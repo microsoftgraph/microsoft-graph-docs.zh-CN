@@ -13,6 +13,7 @@ GET https://graph.microsoft.com/v1.0/me
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -28,6 +29,7 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -44,6 +46,7 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }

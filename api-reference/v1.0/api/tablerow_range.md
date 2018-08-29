@@ -13,14 +13,14 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
+GET /workbook/tables/{id|name}/rows/{index}/range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -33,12 +33,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "tablerow_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/Range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
 ```
 
 ##### <a name="response"></a>响应
@@ -46,7 +47,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

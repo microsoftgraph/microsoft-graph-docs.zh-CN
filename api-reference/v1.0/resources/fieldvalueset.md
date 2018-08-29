@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: FieldValueSet
-ms.openlocfilehash: dfe11b4cdf095e8878da54760032d788f97756fb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b0e3accc05ddf10328f8d27f8798f865e579e529
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266602"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 
@@ -17,7 +18,8 @@ ms.lasthandoff: 09/28/2017
 
 下面是 **fieldValueSet** 资源的 JSON 表示形式。
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {
@@ -32,13 +34,13 @@ ms.lasthandoff: 09/28/2017
 ## <a name="properties"></a>属性
 
 **listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。
-上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列的列表的一个示例。
+上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。
 
-默认情况下不返回查阅字段（如上述 `Author`）。
-相反，服务器会返回一个在查找中引用目标 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。
+默认情况下不返回查找字段（如上述 `Author`）。
+相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。
 “LookupId”字段的名称是原始字段名称，后跟 `LookupId`。
 
-单个查询中可请求最多 12 个查阅字段。
+单个查询中可能请求最多 12 个查找字段。
 如果请求包含带所需字段的 `select` 语句，服务器将返回查找值。
 示例：
 
@@ -46,7 +48,7 @@ ms.lasthandoff: 09/28/2017
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-可以在单个查询中请求最多 12 个查阅字段以及任意数量的常规字段。
+你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。
 
 <!-- {
   "type": "#page.annotation",

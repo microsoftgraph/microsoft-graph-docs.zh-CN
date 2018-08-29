@@ -59,19 +59,18 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ## <a name="parameters"></a>参数
 
-|**参数**|**类型**|**说明**|
+|参数|类型|说明|
 |:-----|:-----|:-----|
-|_URL 参数_|
 |size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、 
 360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

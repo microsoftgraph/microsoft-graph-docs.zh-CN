@@ -1,6 +1,6 @@
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 设备位置
 ## <a name="properties"></a>属性
@@ -19,23 +19,22 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "altitude": 1024.13,
+  "latitude": 26.13246,
+  "longitude": 24.34616,
+  "horizontalAccuracy": 2.9,
+  "verticalAccuracy": 1.25,
+  "heading": 36.3,
+  "speed": 705.9
+
 }
 ```
 

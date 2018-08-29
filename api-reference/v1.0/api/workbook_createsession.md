@@ -9,7 +9,7 @@
 
 若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。 
 
->**注意：**Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
+>**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
 
 ## <a name="error-handling"></a>错误处理
 
@@ -33,7 +33,7 @@ POST /workbook/createSession
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。
@@ -55,7 +55,7 @@ Content-type: application/json
 Content-length: 52
 
 {
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。
@@ -74,7 +74,7 @@ Content-length: 52
 
 {
   "id": "id-value",
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 

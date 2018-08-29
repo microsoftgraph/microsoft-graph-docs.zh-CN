@@ -22,8 +22,8 @@ GET /domains
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。|
-| 接受         | application/json； |
+| 授权  | Bearer {token}。必需。|
+| Accept         | application/json； |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,7 +63,7 @@ Content-length: 245
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
-      "name": "contoso.com",
+      "id": "contoso.com",
       "supportedServices": [
         "Email",
         "OfficeCommunicationsOnline"

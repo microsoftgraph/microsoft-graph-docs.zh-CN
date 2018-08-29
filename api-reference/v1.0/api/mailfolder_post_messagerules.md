@@ -18,13 +18,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/inbox/messagerules
-POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+POST /me/mailFolders/inbox/messageRules
+POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必需。|
+|displayName| 字符串  | 规则的显示名称。 必需。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|
@@ -48,10 +48,11 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules
+POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
 {      

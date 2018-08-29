@@ -14,7 +14,7 @@
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 
 ```http
 GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
@@ -30,19 +30,19 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
 | date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
 
-> **注意：**需要在 URL 中设置 period 或 date。
+> **注意：** 需要在 URL 中设置 period 或 date。
 
 ## <a name="request-headers"></a>请求头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
 
 CSV 文件包含下面的列标题：
 
@@ -78,7 +78,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -88,11 +92,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

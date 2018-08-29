@@ -2,7 +2,7 @@
 
 获取跨所有组邮箱和组网站使用的总存储。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,7 @@ GET /reports/getOffice365GroupsActivityStorage(period='{period_value}')
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| 授权 | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应
@@ -57,8 +57,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365groupsactivitystorage"
 }-->
 
@@ -70,7 +71,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityStorage(p
 
 下面展示了示例响应。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -80,11 +85,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

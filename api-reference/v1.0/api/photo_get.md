@@ -18,12 +18,12 @@ GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,7 +63,7 @@ Content-length: 53
 下面的示例展示了如何请求获取照片字节。
 <!-- {
   "blockType": "request",
-  "name": "get_photo"
+  "name": "get_photo_value"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
 ```http
 HTTP/1.1 200 OK

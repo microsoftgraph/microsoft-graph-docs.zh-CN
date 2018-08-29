@@ -2,21 +2,22 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "移动文件或文件夹"
-ms.openlocfilehash: ebffe8451c6cf5ce7f025b70225054cfb8080cf6
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 移动文件或文件夹
+ms.openlocfilehash: 5ecde28e0e3e8dd5f72079271305903c1fce5a7a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268184"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到新文件夹
 
-若要将 DriveItem 移动到新的父项，应用会请求更新要移动的 DriveItem 的 **parentReference**。
+若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
 
-这是 [Update](driveitem_update.md) 方法的特殊情况。
-你的应用可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。
+这是[更新](driveitem_update.md)方法的特殊用例。
+你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。
 
-无法使用此请求在[驱动器](../resources/drive.md)之间移动项目。
+无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -49,8 +50,8 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 在请求正文中，提供 **parentReference** 属性的新值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-**注意：**将项目移动到驱动器的根目录时，应用无法使用 `"id:" "root"` 语法。
-应用需要为父引用提供根文件夹的实际 ID。
+**注意：** 将项目移动到驱动器的根目录下时，应用程序不能使用 `"id:" "root"` 语法。
+应用程序必须为父引用提供实际的根文件夹 ID。
 
 ## <a name="response"></a>响应
 
@@ -58,9 +59,9 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="example"></a>示例
 
-本示例将由 {item-id} 指定的项目移动到 ID 为 `new-parent-folder-id` 的用户驱动器的文件夹中。
+本示例将 {item-id} 指定的项目移动到用户驱动器中 ID 为 `new-parent-folder-id` 的文件夹中。
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -68,7 +69,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }
@@ -76,7 +77,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-以下示例显示此移动请求的响应。
+以下示例显示了对此移动请求的响应。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

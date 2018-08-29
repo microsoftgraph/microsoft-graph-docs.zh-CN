@@ -1,6 +1,6 @@
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 包含用于为组分配 iOS 应用商店移动应用的属性。
 
@@ -17,7 +17,7 @@
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
 }
 -->

@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 | | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
+| 授权  | Bearer {token}。必需。 | | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 | workbook-session-id | 要关闭的工作簿会话 ID |
 
 ## <a name="request-body"></a>请求正文
@@ -61,3 +61,11 @@ Content-length: 0
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: close_excel_session//api-reference/v1.0/api/workbook_closesession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

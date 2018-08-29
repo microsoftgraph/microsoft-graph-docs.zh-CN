@@ -22,7 +22,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 } -->
 ```http
 HTTP/1.1 200 OK

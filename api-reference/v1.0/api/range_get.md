@@ -22,7 +22,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -39,14 +39,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "get_range"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

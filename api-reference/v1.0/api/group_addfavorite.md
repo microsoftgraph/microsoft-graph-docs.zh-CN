@@ -19,7 +19,7 @@ POST /groups/{id}/addFavorite
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  |
 
 ## <a name="request-body"></a>请求正文
@@ -43,8 +43,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "检索 SharePoint 列表中的项"
-ms.openlocfilehash: ff414159015b4731b76626e309418c32cb6640d4
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: 检索 SharePoint 列表中的项
+ms.openlocfilehash: e037114bac4f83eb2477f163c233cd7c3a0ac620
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269150"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
 获取[列表][]中[项][item]的集合。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [item]: ../resources/listItem.md
 
 ## <a name="permissions"></a>权限
@@ -38,7 +39,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-list-items" } -->
+<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)

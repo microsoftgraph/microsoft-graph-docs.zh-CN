@@ -21,7 +21,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

@@ -1,6 +1,6 @@
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 设备配置设备活动报告的元数据
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ GET /reports/deviceConfigurationDeviceActivity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|需要持有者&lt;令牌&gt;。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -50,7 +50,7 @@ Content-Length: 123
 {
   "value": {
     "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
+    "content": {"@odata.type": "Edm.Stream"}
   }
 }
 ```

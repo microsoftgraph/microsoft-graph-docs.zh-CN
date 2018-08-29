@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "获取 SharePoint 列表"
-ms.openlocfilehash: e0e0ccdc0836c40ac4f5a719cd64f02178030ccd
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: 获取 SharePoint 列表
+ms.openlocfilehash: 042e9d6352d99f3a9e8d57daed685b6d9b2f7f65
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264012"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
 返回[列表][]的元数据。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -48,7 +49,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -70,21 +71,22 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [

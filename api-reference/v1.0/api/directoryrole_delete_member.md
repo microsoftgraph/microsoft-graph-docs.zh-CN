@@ -18,14 +18,14 @@
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -46,7 +46,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
 ```
 
 ##### <a name="response"></a>响应

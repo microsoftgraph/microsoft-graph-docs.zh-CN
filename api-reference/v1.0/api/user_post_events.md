@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:-----------|:------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
@@ -349,7 +349,6 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

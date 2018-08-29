@@ -26,7 +26,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{id}
+GET /directory/deletedItems/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -52,14 +52,14 @@ GET /directory/deleteditems/{id}
   "name": "get_directory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directory"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 200 OK

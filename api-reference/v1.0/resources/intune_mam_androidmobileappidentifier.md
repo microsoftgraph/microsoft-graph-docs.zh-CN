@@ -1,6 +1,6 @@
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 Android 应用的标识符。
 
@@ -17,7 +17,7 @@ Android 应用的标识符。
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.androidMobileAppIdentifier"
 }
 -->

@@ -1,6 +1,6 @@
 # <a name="list-windowsinformationprotections"></a>列出 windowsInformationProtections
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列出 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
@@ -26,8 +26,8 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -79,7 +79,7 @@ Content-Length: 4598
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [

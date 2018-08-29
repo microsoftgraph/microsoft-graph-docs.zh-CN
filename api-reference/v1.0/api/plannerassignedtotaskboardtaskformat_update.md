@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
+PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerAssignedToTaskBoardTaskFormat** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,7 +26,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](..\resources\plannerOrderHintsByAssignee.md)|用于为任务板 AssignedTo 视图上的任务进行排序的提示字典。每个条目的键是任务分配到的用户之一，值为排序提示。[此处](../resources/planner_order_hint_format.md)概述了各值的格式。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerOrderHintsByAssignee.md)|用于为任务板 AssignedTo 视图上的任务进行排序的提示字典。每个条目的键是任务分配到的用户之一，值为排序提示。[此处](../resources/planner_order_hint_format.md)概述了各值的格式。|
 |unassignedOrderHint|字符串|当任务未分配给任何人，或 orderHintsByAssignee 字典未向分配到任务的用户提供排序提示时，用于为任务板 AssignedTo 视图上的任务进行排序的提示值。[此处](../resources/planner_order_hint_format.md)概述了此格式。|
 
 ## <a name="response"></a>响应
@@ -43,7 +43,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
   "name": "update_plannerassignedtotaskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoardFormat
 Content-type: application/json
 Content-length: 96
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

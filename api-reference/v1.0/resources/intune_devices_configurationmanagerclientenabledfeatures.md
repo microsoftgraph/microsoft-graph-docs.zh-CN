@@ -1,6 +1,6 @@
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 Configuration Manager 客户端已启用的功能
 ## <a name="properties"></a>属性
@@ -17,12 +17,10 @@ Configuration Manager 客户端已启用的功能
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientEnabledFeatures",

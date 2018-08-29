@@ -20,7 +20,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -45,8 +45,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

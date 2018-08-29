@@ -19,7 +19,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

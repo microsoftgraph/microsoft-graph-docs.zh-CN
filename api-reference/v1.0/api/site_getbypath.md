@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "按路径获取 SharePoint 网站"
-ms.openlocfilehash: 789d4b3f24818a8bc5a06d0c6c14c0002f58f142
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 按路径获取 SharePoint 网站
+ms.openlocfilehash: af5fbbc0ebed148803fed5b886a95fe95346038a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265895"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取 site 资源
 
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
 
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 除了可以[按 ID 检索网站](site_get.md)外，还可以按相对服务器 URL 路径检索网站。
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 09/28/2017
 
 若要通过相对路径访问根 SharePoint 网站，请运行以下命令：
 
-<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{hostname}:/{relative-path}
@@ -47,21 +48,16 @@ GET /sites/{hostname}:/{relative-path}
 
 ## <a name="http-response"></a>HTTP 响应
 
-此方法返回唯一标识符引用的网站的 [site][] 资源。
+此方法返回唯一标识符引用的网站的 [网站][] 资源。
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.site" } -->
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": { 
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
@@ -75,5 +71,11 @@ HTTP/1.1 200 OK
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: Couldn't serialize request for path /sites/{var}/children/{var} into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property 'children' on 'site'. Possible issues:
+         1) Doc bug where 'children' isn't defined on the resource.      2) Doc bug where 'children' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'site' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 982
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 653"
+  ],
   "tocPath": "Sites/Get by path"
 } -->

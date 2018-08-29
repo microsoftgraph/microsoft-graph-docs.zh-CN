@@ -1,6 +1,6 @@
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 包含 Android 移动应用需要的最低操作系统的属性。
 ## <a name="properties"></a>属性
@@ -21,7 +21,6 @@
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
 }
 -->

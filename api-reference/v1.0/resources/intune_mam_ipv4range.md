@@ -1,6 +1,6 @@
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 IP V4 范围
 
@@ -18,7 +18,7 @@ IP V4 范围
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->

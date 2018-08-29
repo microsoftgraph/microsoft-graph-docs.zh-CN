@@ -20,8 +20,8 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | string  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。

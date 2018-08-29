@@ -2,7 +2,7 @@
 
 更新域对象的属性。
 
-> **重要说明：**只有已验证的域可以进行更新。
+> **重要说明：** 只有已验证的域可以进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ PATCH /domains/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -43,6 +43,7 @@ PATCH /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

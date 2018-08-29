@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
-ms.openlocfilehash: eb4952c1a49c41dfae6683153753711158c70f01
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: da8398bbb87111648ea561e1799e062ed46b0ee6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270774"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
 
@@ -38,15 +39,15 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | 如果值为 `true`，则表示为此列表启用了内容类型。
-| **hidden**              | Boolean | 如果值为 `true`，则表示该列表在 SharePoint 用户体验中通常不可见。
-| **template**            | String  | 枚举值，表示创建列表时使用的基本列表模板。 可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。
+| **contentTypesEnabled** | Boolean | 如果为 `true`，则表明已为此列表启用内容类型。
+| **hidden**              | Boolean | 如果为 `true`，则表明该列表通常在 SharePoint 用户体验中不可见。
+| **template**            | String  | 一个枚举值，表示创建列表时使用的基本列表模板。 可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。
 
 ### <a name="remarks"></a>备注
 
-虽然用户创建的大多数列表将具有上面列出的其中一个值，但也可以使用其他值。
-应用应准备好处理此处未列出的任何值。
-对于熟悉 SharePoint 的 CSOM API 的开发者，`template` 值对应于 `SPListTemplateType` 枚举。
+虽然用户创建的大多数列表都有上面列出的一个值，但也可能包含其他值。
+应用应准备好处理未在此处列出的任何值。
+对于熟悉 SharePoint CSOM API 的开发人员，`template` 值与 `SPListTemplateType` 枚举对应。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -55,5 +56,9 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
   "tocPath": ""
 }-->

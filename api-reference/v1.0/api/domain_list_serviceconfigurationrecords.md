@@ -29,7 +29,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +48,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -66,6 +66,7 @@ Content-length: 220
 {
   "value": [
     {
+      "@odata.type":"microsoft.graph.domainDnsMxRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Mx",
@@ -75,10 +76,11 @@ Content-length: 220
       "preference": 0
     },
     {
+      "@odata.type":"microsoft.graph.domainDnsTxtRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Txt",
-      "supportedServices": "Email",
+      "supportedService": "Email",
       "ttl": 3600,
       "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }

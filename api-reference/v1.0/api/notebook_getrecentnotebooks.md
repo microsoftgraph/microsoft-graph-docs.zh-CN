@@ -16,7 +16,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
 用户的 `<id | userPrincipalName>` 必须与用于发出请求的授权令牌中编码的用户一致。
@@ -46,7 +46,7 @@ GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(include
 下面为请求示例。
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 
 #### <a name="response"></a>响应
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notebook",
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
   "isCollection": true
 } -->
 ```http
@@ -66,7 +66,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -74,7 +74,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

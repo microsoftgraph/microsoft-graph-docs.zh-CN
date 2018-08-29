@@ -13,13 +13,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/planner/plans
+GET /groups/{id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -37,7 +37,7 @@ GET /groups/<id>/planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans
+GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

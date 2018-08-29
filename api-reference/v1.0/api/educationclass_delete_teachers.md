@@ -19,7 +19,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -36,7 +36,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
 
 ##### <a name="response"></a>响应
