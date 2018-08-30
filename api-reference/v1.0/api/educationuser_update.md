@@ -19,7 +19,7 @@ PATCH /education/users/{id}
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -27,19 +27,19 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| String| 显示用户名称|
-|givenName| String | 名字 |
-|middleName| String | 用户的中间名|
-|surname| String | 用户的姓|
-|mail| String| 电子邮件地址|
-|mobilePhone| String | 用户的移动电话号码 |
-|externalSource|string| 可取值为：`sis`、`manual`、`enum_sentinel`。|
-|externalSource|string| 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。|
+|displayName| 字符串| 显示用户名称|
+|givenName| 字符串 | 名字 |
+|middleName| 字符串 | 用户的中间名|
+|姓氏| 字符串 | 用户的姓|
+|邮件| 字符串| 电子邮件地址|
+|mobilePhone| 字符串 | 用户的移动电话号码 |
+|externalSource|字符串| 可取值为：`sis`、`manual`、`enum_sentinel`。|
+|externalSource|字符串| 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| 用户的邮件地址。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
-|primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。|
-|student|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
+|primaryRole|字符串| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。|
+|学生|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
+|教师|[educationTeacher](../resources/educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
 
 
 ## <a name="response"></a>响应
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

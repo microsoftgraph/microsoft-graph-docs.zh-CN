@@ -32,7 +32,7 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
-|birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|联系人的公司地址。|
 |businessHomePage|String|联系人的公司主页。|
 |businessPhones|String collection|联系人的公司电话号码。|
@@ -40,11 +40,11 @@
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
-|createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
 |部门|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。|
+|displayName|字符串|联系人的显示名称。|
 |emailAddresses|[EmailAddress](emailaddress.md) 集合|联系人的电子邮件地址。|
-|flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标记值。|
+|flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标记值。|
 |fileAs|String|联系人备案的姓名。|
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
@@ -54,7 +54,7 @@
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
-|lastModifiedDateTime|DateTimeOffset|修改联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|修改联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
 |manager|String|联系人经理的姓名。
 |middleName|String|联系人的中间名。|
 |mobilePhone|String|联系人的移动电话号码。|
@@ -76,8 +76,8 @@
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
-|照片|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
+|photo|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -85,6 +85,8 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",
@@ -92,7 +94,26 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -18,7 +18,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -26,8 +26,8 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
-|removeLicenses|Guid|标识要删除的许可证的 GUID 的集合。|
+|addLicenses|assignedLicense collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
+|removeLicenses|Guid 集合|标识要删除的许可证的 GUID 的集合。|
 
 ## <a name="response"></a>响应
 
@@ -50,7 +50,7 @@ Content-length: 185
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "guid"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
@@ -74,12 +74,12 @@ Content-length: 491
   "assignedLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
     }
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-02T12:13:14Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
