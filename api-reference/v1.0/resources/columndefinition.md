@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: e5942ddee4b505243cb64121862ce9e89e52d245
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2fd6c08e1cfc28a77019d174763b9d698519b6a2
+ms.sourcegitcommit: 9e4dc7745eb1bbbe595afd8c7f3db4c19c6bb4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "23271313"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -15,8 +16,13 @@ ms.lasthandoff: 09/28/2017
 
 下面是 ColumnDefinition 资源的 JSON 表示形式。
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnDefinition"
+}-->
 
 ```json
 {
@@ -49,16 +55,16 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **description**         | string  | 面向用户的列描述。
-| **displayName**         | string  | 面向用户的列名称。
-| **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
-| **hidden**              | boolean | 指定列是否显示在用户界面中。
-| **id**                  | string  | 列的唯一标识符。
-| **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
-| **readOnly**            | bool    | 指定是否可以修改列值。
-| **required**            | boolean | 指定列值是否不可选。
+| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **description**         | 字符串  | 面向用户的列描述。
+| **displayName**         | 字符串  | 面向用户的列名称。
+| **enforceUniqueValues** | 布尔值 | 如果为 true，则此列不能有两个列表项具有相同的值。
+| **hidden**              | 布尔值 | 指定列是否显示在用户界面中。
+| **id**                  | 字符串  | 列的唯一标识符。
+| **indexed**             | 布尔值 | 指定列值是否可用于排序和搜索。
+| **name**                | 字符串  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **readOnly**            | 布尔值    | 指定是否可以修改列值。
+| **required**            | 布尔值 | 指定列值是否不可选。
 
 列可以包含各种类型的数据。
 以下属性表示列存储的数据类型以及该数据的其他设置。
@@ -66,9 +72,9 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称     | 类型                    | 说明
 |:------------------|:------------------------|:-------------------------------
-| **boolean**       | [booleanColumn][]       | 此列存储布尔值。
+| **布尔值**       | [booleanColumn][]       | 此列存储布尔值。
 | **calculated**    | [calculatedColumn][]    | 根据其他列计算此列的数据。
-| **choice**        | [choiceColumn][]        | 此列存储选项列表中的数据。
+| **choice**        | [choiceColumn][]        | 此列存储所选列表中的数据。
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
@@ -78,7 +84,7 @@ ms.lasthandoff: 09/28/2017
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-虽然上面体现了最常见的字段类型，但仍缺少一些此测试 API。
+虽然上面体现了最常见的字段类型，此 API 仍缺少一些类型。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注
