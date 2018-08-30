@@ -18,32 +18,45 @@ conversationThread 是 [帖子](post.md) 集合。
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。|
-|toRecipients|[recipient](recipient.md) collection|收件人：线程的收件人。|
-|ccRecipients|[recipient](recipient.md) collection|抄送：线程的收件人。|
-|topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
-|hasAttachments|Boolean|指示此线程中的任意帖子是否至少具有一个附件。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|uniqueSenders|String collection|向此线程发送邮件的所有用户。|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|isLocked|Boolean|指示线程是否已锁定。|
+|ID|字符串| 只读。|
+|toRecipients|[收件人](recipient.md) 集合|收件人：线程的收件人。|
+|ccRecipients|[收件人](recipient.md) 集合|抄送：线程的收件人。|
+|主题|字符串|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
+|hasAttachments|布尔值|指示此线程中的任意帖子是否至少具有一个附件。|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
+|uniqueSenders|字符串集合|向此线程发送邮件的所有用户。|
+|预览|字符串|来自此对话中最新帖子的正文的简短摘要。|
+|isLocked|布尔值|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|posts|[帖子](post.md) 集合| 只读。可为 Null。|
+|帖子|[帖子](post.md) 集合| 只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

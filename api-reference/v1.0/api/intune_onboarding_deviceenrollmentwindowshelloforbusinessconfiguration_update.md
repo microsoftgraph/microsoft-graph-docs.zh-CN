@@ -1,6 +1,6 @@
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>更新 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md) 对象的 JSON 表示形式。
@@ -34,25 +34,25 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|ID|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|displayName|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|说明|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|优先级|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|版本|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|尚未记录|
 |pinMaximumLength|Int32|尚未记录|
-|pinUppercaseCharactersUsage|String|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|pinLowercaseCharactersUsage|String|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|pinSpecialCharactersUsage|String|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|state|String|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityDeviceRequired|Boolean|尚未记录|
-|unlockWithBiometricsEnabled|Boolean|尚未记录|
-|remotePassportEnabled|Boolean|尚未记录|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|状态|[启用](../resources/intune_onboarding_enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityDeviceRequired|布尔值|尚未记录|
+|unlockWithBiometricsEnabled|布尔值|尚未记录|
+|remotePassportEnabled|布尔值|尚未记录|
 |pinPreviousBlockCount|Int32|尚未记录|
 |pinExpirationInDays|Int32|尚未记录|
-|enhancedBiometricsState|String|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
+|enhancedBiometricsState|[启用](../resources/intune_onboarding_enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 

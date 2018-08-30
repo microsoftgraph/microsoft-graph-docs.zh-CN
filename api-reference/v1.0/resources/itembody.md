@@ -5,8 +5,8 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|内容|String|项目的内容。|
-|contentType|String|内容的类型。可能的值为 `Text` 和 `HTML`。|
+|内容|字符串|项目的内容。|
+|contentType|BodyType|内容的类型。可能的值为 `Text` 和 `HTML`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

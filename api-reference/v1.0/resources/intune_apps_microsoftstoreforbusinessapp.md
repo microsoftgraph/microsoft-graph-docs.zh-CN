@@ -1,6 +1,6 @@
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 适用于企业的 Microsoft Store 应用。 此类不支持创建、删除或更新。
 
@@ -9,34 +9,34 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List microsoftStoreForBusinessApps](../api/intune_apps_microsoftstoreforbusinessapp_list.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 集合|列出 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性和关系。|
-|[Get microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_get.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|读取 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性和关系。|
-|[Create microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_create.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|创建新的 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象。|
-|[Delete microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_delete.md)|无|删除 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)。|
-|[Update microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_update.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|更新 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性。|
+|[列出 microsoftStoreForBusinessApps](../api/intune_apps_microsoftstoreforbusinessapp_list.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 集合|列出 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性和关系。|
+|[获取 microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_get.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|读取 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性和关系。|
+|[创建 microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_create.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|创建新的 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象。|
+|[删除 microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_delete.md)|无|删除 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)。|
+|[更新 microsoftStoreForBusinessApp](../api/intune_apps_microsoftstoreforbusinessapp_update.md)|[microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md)|更新 [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|要显示在应用详细信息中或用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|Boolean|指示应用是否被管理员标记为特色的值 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|String|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|String|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md) 可取值为：`notPublished`、`processing`、`published`。|
+|isFeatured|布尔|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |usedLicenseCount|Int32|使用中的适用于企业的 Microsoft Store 许可证数。|
 |totalLicenseCount|Int32|适用于企业的 Microsoft Store 许可证总数。|
-|productKey|String|应用产品密钥|
-|licenseType|String|应用许可证类型 可取值为：`offline`、`online`。|
-|packageIdentityName|String|应用包标识符|
+|productKey|字符串|应用产品密钥|
+|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|应用许可证类型。 可取值为：`offline`、`online`。|
+|packageIdentityName|字符串|应用包标识符|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -46,12 +46,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileApp",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",

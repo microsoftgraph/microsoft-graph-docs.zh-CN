@@ -1,4 +1,4 @@
-# <a name="extension-resource-type"></a>扩展资源类型
+# <a name="extension-resource-type"></a>extension资源类型
 
 用以支持 OData v4 开放类型 [openTypeExtension](openTypeExtension.md) 的抽象类型。
 
@@ -7,7 +7,10 @@
 下面是资源的 JSON 表示形式。
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,9 +24,9 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。|
+|id|字符串| 只读。|
 
 ## <a name="relationships"></a>关系
 无
