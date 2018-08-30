@@ -1,6 +1,6 @@
 # <a name="managedappstatus-resource-type"></a>managedAppStatus 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示组织的应用保护和配置状态。
 ## <a name="methods"></a>方法
@@ -12,20 +12,21 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|状态报告的友好名称。|
-|id|String|实体的键。|
-|version|String|实体版本。|
+|displayName|字符串|状态报告的友好名称。|
+|id|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",

@@ -7,13 +7,13 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[更新](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |按指定内容更改替代的 **ClassifyAs** 字段。 |
+|[更新](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |按指定内容更改替代的 **ClassifyAs** 字段。 |
 |[删除](../api/inferenceclassificationoverride_delete.md) | 无 |删除由其 ID 指定的替代。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。|
+|classifyAs|InferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可取值为：`focused`、`other`。|
 |id|string| 替代的唯一标识符。只读。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|为其创建替代的发件人的电子邮件地址信息。|
 
@@ -27,6 +27,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

@@ -28,11 +28,11 @@ Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Micr
 
 ## <a name="connect-to-school-services"></a>连接到学校服务
 
-使用 Microsoft Graph 可覆盖拥有教育版 Microsoft 365 服务许可证的学生、教师和学校。 征得他们的同意后，可使用 Microsoft Graph 中的教育 API 增强 Office 365 资源和与教育场景（包括学校、学生、教师、班级、注册和作业）相关的信息数据。 
+使用 Microsoft Graph 可覆盖拥有教育版 Microsoft 365 服务许可证的学生、教师和学校。 征得他们的同意后，可使用 Microsoft Graph 中的教育 API 增强 Office 365 资源和与教育场景（包括学校、学生、教师、班级、注册和作业）相关的信息数据。 详细了解有关[教育 API 集成](education-concept-overview.md)的信息。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看某些[精选方案](https://developer.microsoft.com/zh-CN/graph/examples)。
+- 查看某些[精选方案](https://developer.microsoft.com/en-us/graph/examples)。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置即可运行的示例应用。
 - 在目录的**了解**下，阅读有关你可在应用场景中使用的服务和功能。 

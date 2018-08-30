@@ -1,4 +1,4 @@
-# <a name="microsoft-teams-teamwork-api-overview"></a>Microsoft Teams 团队合作 API 概述
+# <a name="microsoft-teams-api-overview-preview"></a>Microsoft Tearms API 概述（预览）
 
 Microsoft Teams 是团队合作和智能通信的终极中心。 Microsoft Teams 基于 Office 365 超过 1.2 亿用户的实力和规模，提供了基于聊天的协作、会议、通话和企业语音功能。
 
@@ -16,7 +16,7 @@ Microsoft Teams 是团队合作和智能通信的终极中心。 Microsoft Teams
 
 ![从选项卡、机器人、网站和服务中调用 Microsoft Teams API](images/TeamsAppEndpoints.png)
 
-这些协作工具包括启用了 Microsoft Graph 的选项卡或在 Microsoft Teams 内运行的机器人应用。 此外，还可以在 Microsoft Teams 应用以外调用 Microsoft Graph，如从网站或者 Web 服务进行调用。 如果已为 Microsoft Graph 启用网站，则可以通过使用 [Microsoft Teams 开发者平台](https://docs.microsoft.com/zh-CN/microsoftteams/platform/#pivot=home&panel=home-all)创建使用现有网站代码的选项卡应用，将此项工作用于 Microsoft Teams。
+这些协作工具包括启用了 Microsoft Graph 的选项卡或在 Microsoft Teams 内运行的机器人应用。 此外，还可以在 Microsoft Teams 应用以外调用 Microsoft Graph，如从网站或者 Web 服务进行调用。 如果已为 Microsoft Graph 启用网站，则可以通过使用 [Microsoft Teams 开发者平台](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all)创建使用现有网站代码的选项卡应用，将此项工作用于 Microsoft Teams。
 
 如果 Microsoft Teams 选项卡或机器人应用不是完成指定方案的理想方式，请选择以下应用类型之一。
 
@@ -31,7 +31,6 @@ Microsoft Teams 是团队合作和智能通信的终极中心。 Microsoft Teams
 |消息扩展|允许用户查询和共享对话中的增强卡。|
 |服务|通过 Web 服务使用 Microsoft Graph 数据增强客户端应用程序。|
 
-
 ### <a name="create-multiple-teams-and-channels"></a>创建多个团队和渠道
 
 允许客户创建链接到应用的新[团队](../api-reference/beta/resources/team.md)和[渠道](../api-reference/beta/resources/channel.md)。 通过使用 Microsoft Teams API，可以创建大量团队并使用户和渠道轻松填充它们。
@@ -45,9 +44,7 @@ Microsoft Teams 是团队合作和智能通信的终极中心。 Microsoft Teams
 ## <a name="next-steps"></a>后续步骤
 
 - 了解如何[使用 Microsoft Teams API](../api-reference/beta/resources/teams_api_overview.md)。
-- 深入了解[团队](../api-reference/beta/resources/team.md)、[渠道](../api-reference/beta/resources/channel.md)和[组](.../api-reference/v1.0/resources/group.md)资源的方法、属性和关系。
-- 尝试 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中的 API。
-- 阅读更多有关 [Microsoft Teams 编程模型](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/concepts-overview)的信息。
+- 深入了解[团队](../api-reference/beta/resources/team.md)、[渠道](../api-reference/beta/resources/channel.md)和[组](../api-reference/v1.0/resources/group.md)资源的方法、属性和关系。
+- 尝试 [Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)中的 API。
+- 阅读更多有关 [Microsoft Teams 编程模型](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview)的信息。
 - 立即开始使用[示例代码](https://github.com/OfficeDev/microsoft-teams-sample-graph)。
-
-

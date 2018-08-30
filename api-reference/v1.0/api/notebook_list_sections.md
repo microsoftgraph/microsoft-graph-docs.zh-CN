@@ -29,15 +29,15 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| 接受 | string | `application/json` |
+| 授权  | string  | Bearer {token}。必需。 |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [section](../resources/section.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [onenoteSection](../resources/section.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
