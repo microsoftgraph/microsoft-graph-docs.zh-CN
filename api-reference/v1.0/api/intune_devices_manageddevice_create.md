@@ -1,6 +1,6 @@
 # <a name="create-manageddevice"></a>创建 managedDevice
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [managedDevice](../resources/intune_devices_manageddevice.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -26,8 +26,8 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 managedDevice 对象的 JSON 表示形式。
@@ -39,28 +39,29 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |id|String|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|设备的所有权。 可以是“company”或“personal”。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。|
 |enrolledDateTime|DateTimeOffset|设备的注册时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。|
 |operatingSystem|String|设备的操作系统。 Windows、iOS 等。|
-|complianceState|String|设备的符合性状态。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
+|complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|设备的符合性状态。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。|
-|managementAgent|String|设备的管理通道。 Intune、EAS 等。可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|设备的管理通道。 Intune、EAS 等。可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |osVersion|String|设备的操作系统版本。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
-|deviceEnrollmentType|String|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
-|emailAddress|String|与设备关联的用户的电子邮件|
+|emailAddress|String|与设备关联的用户的电子邮件。|
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。|
-|deviceRegistrationState|String|设备注册状态。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
-|deviceCategoryDisplayName|String|设备类别显示名称|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|设备注册状态。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
+|deviceCategoryDisplayName|String|设备类别显示名称。|
 |isSupervised|Boolean|设备受监督状态|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。|
-|exchangeAccessState|String|Exchange 中设备的访问状态。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
-|exchangeAccessStateReason|String|Exchange 中设备访问状态的出现原因。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。|
 |isEncrypted|Boolean|设备加密状态|
@@ -81,7 +82,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |totalStorageSpaceInBytes|Int64|存储空间总字节数|
 |freeStorageSpaceInBytes|Int64|可用存储空间字节数|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
-|partnerReportedThreatState|String|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`。|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`。|
 
 
 
@@ -94,12 +95,13 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 4616
+Content-length: 4656
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
+  "managedDeviceOwnerType": "company",
   "deviceActionResults": [
     {
       "@odata.type": "microsoft.graph.deviceActionResult",
@@ -201,13 +203,14 @@ Content-length: 4616
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4665
+Content-Length: 4705
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
   "id": "705c034c-034c-705c-4c03-5c704c035c70",
   "userId": "User Id value",
   "deviceName": "Device Name value",
+  "managedDeviceOwnerType": "company",
   "deviceActionResults": [
     {
       "@odata.type": "microsoft.graph.deviceActionResult",

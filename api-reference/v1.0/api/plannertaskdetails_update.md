@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/details
+PATCH /planner/tasks/{id}/details
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTaskDetails** 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -28,7 +28,7 @@ PATCH /planner/tasks/<id>/details
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|任务上的检查表项目集合。|
 |description|String|任务描述|
-|previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。|
+|previewType|string|这将设置显示任务的预览的类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。 当设置为 `automatic` 查看任务的应用程序所选择的预览显示。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|任务上的引用集合。|
 
 ## <a name="response"></a>响应
@@ -45,7 +45,7 @@ PATCH /planner/tasks/<id>/details
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
