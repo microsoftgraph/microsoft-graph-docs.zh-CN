@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267554"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
-[columnDefinition](columnDefinition.md) 资源上的 **personOrGroupColumn** 指示列值表示从目录中选择的个人或组。
+[columnDefinition](columnDefinition.md) 资源上的 **personOrGroupColumn** 指示列值，该值表示从目录中选择的个人或组。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -30,32 +31,32 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称              | 类型    | 说明
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
-| **chooseFromType**         | string  | 是否允许仅选择人员，或人员和组。 必须是 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
+| **allowMultipleSelection** | 布尔值 | 指示是否可以从源中选择多个值。
+| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **chooseFromType**         | 字符串  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
-## <a name="displayas-values"></a>DisplayAs 值
+## <a name="displayas-options"></a>DisplayAs 选项
 
 | DisplayAs 值               | 说明
 |:------------------------------|:-----------------------
-| **account**                   | 个人或组的原始 SharePoint 编码的声明字符串（如 i:0#.f|membership|jane@contoso.com）。
-| **department**                | 个人或组所在的部门。
-| **firstName**                 | 个人的名字。
-| **id**                        | 目录中个人或组的 ID。
-| **lastName**                  | 个人的姓氏。
-| **mobilePhone**               | 个人的移动电话号码。
-| **name**                      | 个人的名称。
-| **nameWithPictureAndDetails** | 个人的姓名及其照片和其他详细信息。
-| **nameWithPresence**          | 默认值。 带有状态指示器图标（空闲/忙碌等）的个人名称
-| **office**                    | 个人的办公室号码。
-| **pictureOnly36x36**          | 个人的照片，采用 36x36 像素的正方形边框。
-| **pictureOnly48x48**          | 个人的照片，采用 48x48 像素的正方形边框。
-| **pictureOnly72x72**          | 个人的照片，采用 72x72 像素的正方形边框。
-| **sipAddress**                | 个人的 SIP 地址。
-| **title**                     | 组织中的个人头衔。
-| **userName**                  | 个人或组的用户名。
-| **workEmail**                 | 个人或组的电子邮件地址。
-| **workPhone**                 | 个人的工作电话号码。
+| **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 i:0#.f|成员资格|jane@contoso.com)。
+| **department**                | 人员或组的所在部门。
+| **firstName**                 | 人员的名字。
+| **id**                        | 目录中个人或组的 id。
+| **lastName**                  | 人员的姓氏。
+| **mobilePhone**               | 人员的移动电话号码。
+| **name**                      | 人员姓名。
+| **nameWithPictureAndDetails** | 人员姓名，以及他们的照片和其他详细信息。
+| **nameWithPresence**          | 默认值。 人员姓名和状态指示器图标（空闲/忙碌/等）
+| **office**                    | 人员的办公室电话。
+| **pictureOnly36x36**          | 人员的照片，采用 36x36 像素的正方形框。
+| **pictureOnly48x48**          | 人员的照片，采用 48x48 像素的正方形框。
+| **pictureOnly72x72**          | 人员的照片，采用 72x72 像素的正方形框。
+| **sipAddress**                | 人员的 sip 地址。
+| **title**                     | 人员在组织中的职务。
+| **userName**                  | 人员或组的用户名。
+| **workEmail**                 | 人员或组的电子邮件地址。
+| **workPhone**                 | 人员的工作电话号码。
 
 注意：可能返回其他 DisplayAs 类型。
 
@@ -64,5 +65,11 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

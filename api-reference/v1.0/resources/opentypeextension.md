@@ -1,8 +1,8 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
-借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。 
+开放扩展（前身为 “为Office 365 数据扩展”）提供了一种直接向 Microsoft Graph 中的资源添加泛型属性的简便方法。
 
-开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 
+开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。 每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。
 
 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖_用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
@@ -23,21 +23,29 @@
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）还是使用扩展属性？
+## <a name="outlook-specific-considerations"></a>特定于 Outlook 的注意事项
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](http://developer.microsoft.com/en-us/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。若要确认元数据公开了哪些属性，请访问 https://graph.microsoft.com/v1.0/$metadata。
+Outlook 资源 （事件、消息或个人联系人）上存在的每个开放扩展都存储在 [MAPI 命名属性](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx)中。 为 Outlook 创建开放扩展时，请考虑 MAPI 命名属性是用户的邮箱的有限资源。 当用户的命名属性配额用尽时，您无法为该用户创建任何更多命名属性。 这可能会导致依赖对函数的命名属性的客户端发生意外行为。
 
+在 Outlook 资源上创建开放扩展时，请应用以下准则：
+
+- 创建所需的扩展的最小数。 大多数应用程序只需要一个扩展。 扩展没有定义属性或结构的集，因此您可以将多个值存储在一个扩展中。
+- 避免以可变方式来命名扩展（例如，基于用户输入等）。 每次使用之前未在用户邮箱中使用过的新名称创建开放扩展时，都会创建一个新的 MAPI 命名属性。 删除扩展不会删除命名属性。
+
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
+
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 但是，如果需要访问尚未通过 [Microsoft Graph API 元数据](http://developer.microsoft.com/en-us/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "openType": true,
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.extension",
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json
@@ -48,27 +56,24 @@
 
 ```
 
-<br/>
-
 ## <a name="properties"></a>属性
 
-|属性      |类型    |说明 |
+|属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |extensionName|String|开放类型开放扩展的唯一文本标识符。必需。|
-|id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
+|ID|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
 
 ## <a name="relationships"></a>关系
 
 无
 
-
 ## <a name="methods"></a>方法
 
-|方法        |返回类型 |说明 |
+|方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[发布](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
-|[更新](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |更新 openTypeExtension 对象。 |
+|[更新](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension_delete.md) | 无 |删除 openTypeExtension 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

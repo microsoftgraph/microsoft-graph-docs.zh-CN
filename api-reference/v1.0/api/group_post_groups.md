@@ -25,19 +25,21 @@ POST /groups
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 下表显示了创建组时至少必须指定的[组](../resources/group.md)资源的属性。 
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 |
+| displayName | 字符串 | 要在组的通讯簿中显示的名称。 |
 | mailEnabled | 布尔 | 对于启用邮件的组，设置为 **true**。若要创建 Office 365 组，请将此设置为 **true**。若要创建动态组或安全组，请将此设置为 **false**。|
-| mailNickname | string | 组的邮件别名。 |
+| mailNickname | 字符串 | 组的邮件别名。 |
 | securityEnabled | 布尔 | 对于启用安全机制的组，请设置为 **true**。如果创建动态或安全组，则将此设置为 **true**。如果创建 Office 365 组，则将此设置为 **false**。 |
 
 如果你正在创建的是 Office 365 或动态组，则按如下所述指定 **groupTypes** 属性。
+
+### <a name="grouptypes-options"></a>groupTypes 选项
 
 | 组类型 | **groupTypes** 属性 |
 |:--------------|:------------------------|
@@ -76,7 +78,7 @@ Content-length: 244
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

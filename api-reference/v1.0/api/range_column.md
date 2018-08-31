@@ -13,23 +13,23 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /workbook/names/{name}/range/column
+GET /workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+## <a name="path-parameters"></a>路径参数
+在请求路径中，提供了以下参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|column|number|要检索的区域的列号。从零开始编制索引。|
+|列|Int32|要检索的区域的列号。从零开始编制索引。|
 
 ## <a name="response"></a>响应
 
@@ -39,19 +39,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_column"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
-Content-type: application/json
-Content-length: 21
-
-{
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 
 ##### <a name="response"></a>响应
@@ -59,7 +53,7 @@ Content-length: 21
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

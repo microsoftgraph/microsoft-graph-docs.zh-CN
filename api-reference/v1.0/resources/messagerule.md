@@ -13,10 +13,10 @@
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
-| displayName | String | 规则的显示名称。 |
+| displayName | 字符串 | 规则的显示名称。 |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | 规则的例外情况。 |
 | hasError | Boolean | 指示规则是否处于错误状态。 只读。 |
-| id |String|规则的唯一标识符。 只读。|
+| id |字符串|规则的唯一标识符。 只读。|
 | isEnabled | Boolean | 指示是否启用规则以应用到邮件。 |
 | isReadOnly | Boolean | 表示规则是否为只读且无法由规则 REST API 修改或删除。 |
 | Sequence | Int32 | 表示在其他规则中执行规则的顺序。 |
@@ -29,6 +29,7 @@
   "blockType": "resource",
   "optionalProperties": [
    ],
+   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 
@@ -51,10 +52,10 @@
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[List rules](../api/mailfolder_list_messagerules.md) | [messageRule](messagerule.md) 集合 |获取为用户收件箱定义的所有 **messageRule** 对象。|
-|[Get rule](../api/messagerule_get.md) | [messageRule](messagerule.md) |读取 **messageRule** 对象的属性和关系。|
+|[获取 rule](../api/messagerule_get.md) | [messageRule](messagerule.md) |读取 **messageRule** 对象的属性和关系。|
 |[Create](../api/mailfolder_post_messagerules.md) | [messageRule](messagerule.md) |通过指定一组条件和操作来创建 **messageRule** 对象。|
 |[Update](../api/messagerule_update.md) | [messageRule](messagerule.md) |为 **messageRule** 对象更改可写属性并保存更改。 |
-|[Delete](../api/messagerule_delete.md) | 无 |删除指定的 **messageRule** 对象。 |
+|[删除](../api/messagerule_delete.md) | 无 |删除指定的 **messageRule** 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

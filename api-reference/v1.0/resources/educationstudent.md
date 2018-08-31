@@ -5,12 +5,12 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|birthDate|Date| 学生的出生日期。|
-|externalId|String| 源系统中学生的 ID。|
-|gender|`educationGender enumeration`| 可取值为：`female`、`male`、`other`、`unkownFutureValue`。|
-|grade|String|学生的当前年级。|
-|graduationYear|String| 学生从学校毕业的年份。|
-|studentNumber|String| 学生编号。|
+|birthDate|日期| 学生的出生日期。|
+|externalId|字符串| 源系统中学生的 ID。|
+|性别|educationGender| 可取值为：`female`、`male`、`other`、`unknownFutureValue`。|
+|年级|字符串|学生的当前年级。|
+|graduationYear|字符串| 学生从学校毕业的年份。|
+|studentNumber|字符串| 学生编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

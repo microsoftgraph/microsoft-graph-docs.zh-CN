@@ -6,11 +6,10 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -31,12 +30,12 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作的开始时间。|
-|error|[onenoteOperationError](onenoteoperationerror.md)|操作返回的错误。|
+|错误|[onenoteOperationError](onenoteoperationerror.md)|操作返回的错误。|
 |id|string|操作 ID。只读。|
 |lastActionDateTime| DateTimeOffset |操作的上次活动时间。|
 |resourceId|string|资源 ID。|
 |resourceLocation|string|对象的资源 URI。例如，复制页面或分区的资源 URI。 |
-|status|string|操作的当前状态：`notstarted`、`running`、`completed`、`failed` |
+|status|string|操作的当前状态：`notstarted`、`running`、`completed`、 `failed` |
 |percentComplete|string|操作仍处于 `running` 状态时操作的完成百分比
 
 ## <a name="relationships"></a>关系

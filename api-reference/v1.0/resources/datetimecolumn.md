@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: ce5f06b6e0d88324813372c2431b62e6b9105bcb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6f2c14d5fa67fa80c869c20081250bfa55e0f5e4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267827"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 
@@ -29,10 +30,10 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称      | 类型               | 说明
 |:-------------------|:-------------------|:----------------------------------------------
-| **displayAs**      | string             | 值在用户体验中的显示方式。 必须是 `default`、`friendly` 或 `standard` 的其中一个。 有关更多详细信息，请参阅下文。 如果未指定，则视为 `default`。
-| **format**         | string             | 指示值是否应该只显示为日期或日期和时间。 必须是 `dateOnly` 或 `dateTime` 的其中一个
+| **displayAs**      | 字符串             | 值在用户体验中的显示方式。 必须为 `default`、`friendly` 或 `standard` 的其中一个。 有关详细信息，请参阅下文。 如果未指定，则视为 `default`。
+| **format**         | 字符串             | 指示值是否应该只显示为日期或日期和时间。 |||UNTRANSLATED_CONTENT_START|||Must be one of `dateOnly` or|||UNTRANSLATED_CONTENT_END||| `dateTime`
 
-## <a name="displayas-values"></a>DisplayAs 值
+## <a name="displayas-options"></a>DisplayAs 选项
 
 | 值        | 说明
 |:-------------|:--------------------------------------------------------------
@@ -46,5 +47,13 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(default,friendly,standard) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/DateTimeColumn"
 } -->

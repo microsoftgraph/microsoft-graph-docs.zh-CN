@@ -20,7 +20,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -28,12 +28,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
-|values|（布尔值、字符串或数字）|可选。未设置格式的表列值的二维数组。|
-
+|index|Int32|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
+|values|Json|可选。未设置格式的表列值的二维数组。|
+|name|字符串|name
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableColumn](../resources/tablecolumn.md) 对象。
+如果成功，此方法在响应正文中返回  响应代码和 WorkbookTableColumn 对象。`200 OK` [ ](../resources/tablecolumn.md)
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -49,8 +49,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": {
-  },
+  "index": 3,
   "values": [
     {
     }
@@ -63,7 +62,7 @@ Content-length: 51
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -85,5 +84,11 @@ Content-length: 81
   "description": "TableColumnCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablecolumncollection_add.md/tablecolumncollection_add/values:
+      Inconsistent types between parameter (Object) and table (None)",
+    "Error: /api-reference/v1.0/api/tablecolumncollection_add.md/tablecolumncollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Object)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

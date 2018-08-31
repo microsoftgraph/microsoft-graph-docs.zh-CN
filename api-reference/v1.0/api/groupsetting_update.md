@@ -25,7 +25,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称 | 说明 |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -33,7 +33,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| values | settingValue | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
+| values | settingValue 集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 
 ## <a name="response"></a>响应
 

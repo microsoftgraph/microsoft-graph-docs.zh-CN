@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,11 +26,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|表示图表中某个系列的名称。|
+|名称|字符串|表示图表中某个系列的名称。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartSeries](../resources/chartseries.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [WorkbookChartSeries](../resources/chartseries.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -39,7 +39,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
   "name": "update_chartseries"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 Content-type: application/json
 Content-length: 26
 
@@ -52,7 +52,7 @@ Content-length: 26
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: 0f5afaeff29da6f3a6330975adece44731e014bc
-ms.sourcegitcommit: 4bdff5fdaea824c7c1204ec7dd641abc282d32a1
+ms.openlocfilehash: 13ddb00d90880570361c7dcbe198c7c90e044957
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264397"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -17,7 +18,7 @@ ms.lasthandoff: 01/30/2018
 ## <a name="tasks-on-a-listitem"></a>listItem 上的任务
 
 下列任务可用于 **listItem** 资源。
-下面的所有示例都与**[列表][]**相关，例如：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。
+下面的所有示例都与**[list][]** 相关，例如：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。
 
 | 常见任务                    | HTTP 方法
 |:-------------------------------|:------------------------
@@ -37,17 +38,22 @@ ms.lasthandoff: 01/30/2018
 
 下面是 **listItem** 资源的 JSON 表示形式。
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.listItem",
-       "keyProperty": "id" } -->
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
 
 ```json
 {
-  "contentType": { "@odata.type": "microsoft.graph.contentType" },
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string",
@@ -58,6 +64,7 @@ ms.lasthandoff: 01/30/2018
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
   "webUrl": "url"
 }
 ```
@@ -69,35 +76,42 @@ ms.lasthandoff: 01/30/2018
 | 属性名称 | 类型                | 说明
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | 此列表项的内容类型
-| fields        | [fieldValueSet][]   | 在此列表项上设置的列的值。
 
 以下属性继承自 ** [baseItem][]**。
 
-| 属性名称        | 类型             | 说明
-|:---------------------|:-----------------|:-----------------------------------
-| id                   | string           | 项的唯一标识符。只读。
-| name                 | string           | 项目名称/标题。
-| createdBy            | [identitySet][]  | 此项的创建者的标识。 只读。
-| createdDateTime      | DateTimeOffset   | 创建项目的日期和时间。只读。
-| 说明          | string           | 项目的描述性文本。
-| lastModifiedBy       | [identitySet][]  | 此项的最后一个修饰符的标识。 只读。
-| lastModifiedDateTime | DateTimeOffset   | 上次修改项目的日期和时间。只读。
-| WebUrl               | string (url)     | 在浏览器中显示此项目的 URL。只读。
+| 属性名称        | 类型              | 说明
+|:---------------------|:------------------|:----------------------------------
+| id                   | string            | 项的唯一标识符。只读。
+| name                 | string            | 项目名称/标题。
+| createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
+| createdDateTime      | DateTimeOffset    | 创建项目的日期和时间。只读。
+| 说明          | string            | 项目的描述性文本。
+| eTag                 | string            | 该项目的 ETag。只读。                                                          |
+| lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
+| lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
+| parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。
+| sharepointIds        | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
+| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
  **listItem** 资源与其他资源具有以下关系。
 
-| 关系名称 | 类型                        | 说明
-|:------------------|:----------------------------|:-------------------------------
-| driveItem         | [driveItem][]               | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
+| 关系名称 | 类型                           | 说明
+|:------------------|:-------------------------------|:-------------------------------
+| driveItem         | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
+| fields            | [fieldValueSet][]              | 在此列表项上设置的列的值。
+| 版本          | [listItemVersion][] 集合 | 列表项的早期版本列表。
 
 [baseItem]: baseItem.md
 [contentTypeInfo]: contentTypeInfo.md
 [driveItem]: driveItem.md
 [fieldValueSet]: fieldValueSet.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [list]: list.md
+[listItemVersion]: listItemVersion.md
+[sharepointIds]: sharepointIds.md
 
 <!-- {
   "type": "#page.annotation",

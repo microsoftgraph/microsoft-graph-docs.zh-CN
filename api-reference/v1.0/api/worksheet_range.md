@@ -13,21 +13,20 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="request-body"></a>请求正文
-在请求正文中，提供具有以下参数的 JSON 对象。
+## <a name="function-parameters"></a>函数参数
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|地址|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
+|address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 
 ## <a name="response"></a>响应
 
@@ -42,13 +41,7 @@ POST /workbook/worksheets/{id|name}/Range
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
-Content-type: application/json
-Content-length: 32
-
-{
-  "address": "address-value"
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
 ##### <a name="response"></a>响应
@@ -56,7 +49,7 @@ Content-length: 32
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -72,6 +65,41 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+如果未指定可选 `address` 参数，此函数将返回整个工作表区域。
+
+##### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "worksheet_range_noaddress"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
+```
+
+##### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnIndex": 99,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

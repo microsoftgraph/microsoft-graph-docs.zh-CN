@@ -20,17 +20,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | 字符串  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [directoryRole](../resources/directoryrole.md) 对象的 JSON 表示形式。
 
 下表显示激活目录角色时所需的属性。
 
-|必需的参数 | 类型 | 说明|
+|参数 | 类型 | 说明|
 |:---------|:---------|:---------|
-|roleTemplateId | string | 角色所基于的 [directoryRoleTemplate](../resources/directoryroletemplate.md) 的 ID。这是唯一可以在请求中指定的属性。|
+|roleTemplateId | 字符串 | 必需。 基于角色的 [directoryRoleTemplate](../resources/directoryroletemplate.md)  ID。 这是唯一可以在请求中指定的属性。|
 
 ## <a name="response"></a>响应
 

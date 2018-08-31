@@ -20,14 +20,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="parameters"></a>参数
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|count|Int32|生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1|
+|计数|Int32| 可选。 结果区域包含的行数。 一般来说，使用正数可以在当前区域之外创建一个区域。 也可以使用负数在当前区域之内创建一个区域。 默认值为 1。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -38,12 +38,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_rowsBelow"
+  "isComposable": true,
+  "name": "workbookrange_rowsBelow",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 
 ##### <a name="response"></a>响应
@@ -51,12 +53,47 @@ POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 157
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnHidden": true,
+  "columnIndex": 99
+}
+```
+
+如果调用不带 `count` 参数，此函数将默认为一行。
+
+##### <a name="request"></a>请求
+下面是一个请求示例。
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "workbookrange_rowsBelow_nocount",
+  "idempotent": true
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
+```
+
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
 {
   "address": "address-value",
