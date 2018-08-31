@@ -3,32 +3,32 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 使用链接共享文件
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223471"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266805"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="bad69-102">为 DriveItem 创建共享链接</span><span class="sxs-lookup"><span data-stu-id="bad69-102">Create a sharing link for a DriveItem</span></span>
+# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="2fb52-102">为 DriveItem 创建共享链接</span><span class="sxs-lookup"><span data-stu-id="2fb52-102">Create a sharing link for a DriveItem</span></span>
 
-<span data-ttu-id="bad69-103">可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="bad69-103">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
+<span data-ttu-id="2fb52-103">可以使用 **createLink** 操作通过共享链接共享 [DriveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="2fb52-103">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
 
-<span data-ttu-id="bad69-p101">如果调用应用程序指定的链接类型尚不存在，**CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
+<span data-ttu-id="2fb52-p101">如果调用应用程序指定的链接类型尚不存在，**CreateLink** 操作将创建新的共享链接。如果应用程序指定的共享链接类型已存在，则返回现有的共享链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
 
-<span data-ttu-id="bad69-106">DriveItem 资源从其上级继承共享权限。</span><span class="sxs-lookup"><span data-stu-id="bad69-106">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
+<span data-ttu-id="2fb52-106">DriveItem 资源从其上级继承共享权限。</span><span class="sxs-lookup"><span data-stu-id="2fb52-106">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bad69-107">权限</span><span class="sxs-lookup"><span data-stu-id="bad69-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fb52-107">权限</span><span class="sxs-lookup"><span data-stu-id="2fb52-107">Permissions</span></span>
 
-<span data-ttu-id="bad69-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="bad69-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="2fb52-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="bad69-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="bad69-110">Permission type</span></span>      | <span data-ttu-id="bad69-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bad69-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2fb52-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-110">Permission type</span></span>      | <span data-ttu-id="2fb52-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2fb52-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bad69-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bad69-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bad69-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bad69-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bad69-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bad69-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bad69-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bad69-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bad69-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="bad69-116">Application</span></span> | <span data-ttu-id="bad69-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bad69-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="2fb52-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2fb52-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2fb52-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fb52-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2fb52-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2fb52-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fb52-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fb52-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2fb52-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2fb52-116">Application</span></span> | <span data-ttu-id="2fb52-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fb52-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bad69-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bad69-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fb52-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,57 +40,58 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a><span data-ttu-id="bad69-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="bad69-119">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="2fb52-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="2fb52-119">Request body</span></span>
 
-<span data-ttu-id="bad69-120">请求正文定义应用程序正在请求的共享链接的属性。</span><span class="sxs-lookup"><span data-stu-id="bad69-120">The body of the request defines properties of the sharing link your application is requesting.</span></span>
-<span data-ttu-id="bad69-121">请求应为具有以下属性的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="bad69-121">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="2fb52-120">请求正文定义应用程序正在请求的共享链接的属性。</span><span class="sxs-lookup"><span data-stu-id="2fb52-120">The body of the request defines properties of the sharing link your application is requesting.</span></span>
+<span data-ttu-id="2fb52-121">请求应为具有以下属性的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="2fb52-121">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="bad69-122">名称</span><span class="sxs-lookup"><span data-stu-id="bad69-122">Name</span></span>    |  <span data-ttu-id="bad69-123">类型</span><span class="sxs-lookup"><span data-stu-id="bad69-123">Type</span></span>  |                                 <span data-ttu-id="bad69-124">说明</span><span class="sxs-lookup"><span data-stu-id="bad69-124">Description</span></span>                                  |
+|   <span data-ttu-id="2fb52-122">名称</span><span class="sxs-lookup"><span data-stu-id="2fb52-122">Name</span></span>    |  <span data-ttu-id="2fb52-123">类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-123">Type</span></span>  |                                 <span data-ttu-id="2fb52-124">说明</span><span class="sxs-lookup"><span data-stu-id="2fb52-124">Description</span></span>                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| <span data-ttu-id="bad69-125">**类型**</span><span class="sxs-lookup"><span data-stu-id="bad69-125">**type**</span></span>  | <span data-ttu-id="bad69-126">string</span><span class="sxs-lookup"><span data-stu-id="bad69-126">string</span></span> | <span data-ttu-id="bad69-p104">要创建的共享链接的类型。`view`、`edit` 或 `embed`。</span><span class="sxs-lookup"><span data-stu-id="bad69-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
-| <span data-ttu-id="bad69-129">**scope**</span><span class="sxs-lookup"><span data-stu-id="bad69-129">**scope**</span></span> | <span data-ttu-id="bad69-130">string</span><span class="sxs-lookup"><span data-stu-id="bad69-130">string</span></span> | <span data-ttu-id="bad69-131">可选。</span><span class="sxs-lookup"><span data-stu-id="bad69-131">Optional.</span></span> <span data-ttu-id="bad69-132">要创建的链接的范围。</span><span class="sxs-lookup"><span data-stu-id="bad69-132">The scope of link to create.</span></span> <span data-ttu-id="bad69-133">`anonymous` 或 `organization`。</span><span class="sxs-lookup"><span data-stu-id="bad69-133">Either `anonymous` or `organization`.</span></span> |
+| <span data-ttu-id="2fb52-125">**类型**</span><span class="sxs-lookup"><span data-stu-id="2fb52-125">**type**</span></span>  | <span data-ttu-id="2fb52-126">字符串</span><span class="sxs-lookup"><span data-stu-id="2fb52-126">string</span></span> | <span data-ttu-id="2fb52-p104">要创建的共享链接的类型。`view`、`edit` 或 `embed`。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
+| <span data-ttu-id="2fb52-129">**范围**</span><span class="sxs-lookup"><span data-stu-id="2fb52-129">**scope**</span></span> | <span data-ttu-id="2fb52-130">字符串</span><span class="sxs-lookup"><span data-stu-id="2fb52-130">string</span></span> | <span data-ttu-id="2fb52-131">可选。</span><span class="sxs-lookup"><span data-stu-id="2fb52-131">Optional.</span></span> <span data-ttu-id="2fb52-132">要创建的链接的范围。</span><span class="sxs-lookup"><span data-stu-id="2fb52-132">The scope of link to create.</span></span> <span data-ttu-id="2fb52-133">或 `organization`。`anonymous`</span><span class="sxs-lookup"><span data-stu-id="2fb52-133">Either `anonymous` or `organization`.</span></span> |
 
 
-### <a name="link-types"></a><span data-ttu-id="bad69-134">链接类型</span><span class="sxs-lookup"><span data-stu-id="bad69-134">Link types</span></span>
+### <a name="link-types"></a><span data-ttu-id="2fb52-134">链接类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-134">Link types</span></span>
 
-<span data-ttu-id="bad69-135">**type** 参数允许使用以下值：</span><span class="sxs-lookup"><span data-stu-id="bad69-135">The following values are allowed for the **type** parameter.</span></span>
+<span data-ttu-id="2fb52-135">**type** 参数允许使用以下值：</span><span class="sxs-lookup"><span data-stu-id="2fb52-135">The following values are allowed for the **type** parameter.</span></span>
 
-| <span data-ttu-id="bad69-136">类型值</span><span class="sxs-lookup"><span data-stu-id="bad69-136">Type value</span></span> | <span data-ttu-id="bad69-137">说明</span><span class="sxs-lookup"><span data-stu-id="bad69-137">Description</span></span>                                                                                  |
+| <span data-ttu-id="2fb52-136">类型值</span><span class="sxs-lookup"><span data-stu-id="2fb52-136">Type value</span></span> | <span data-ttu-id="2fb52-137">说明</span><span class="sxs-lookup"><span data-stu-id="2fb52-137">Description</span></span>                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | <span data-ttu-id="bad69-138">创建到 DriveItem 的只读链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-138">Creates a read-only link to the DriveItem.</span></span>                                                        |
-| `edit`     | <span data-ttu-id="bad69-139">创建到 DriveItem 的读写链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-139">Creates a read-write link to the DriveItem.</span></span>                                                       |
-| `embed`    | <span data-ttu-id="bad69-140">创建到 DriveItem 的可嵌入链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-140">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="bad69-141">此选项仅适用于 OneDrive 个人版中的文件。</span><span class="sxs-lookup"><span data-stu-id="bad69-141">This option is only available for files in OneDrive personal.</span></span> |
+| `view`     | <span data-ttu-id="2fb52-138">创建到 DriveItem 的只读链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-138">Creates a read-only link to the DriveItem.</span></span>                                                        |
+| `edit`     | <span data-ttu-id="2fb52-139">创建到 DriveItem 的读写链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-139">Creates a read-write link to the DriveItem.</span></span>                                                       |
+| `embed`    | <span data-ttu-id="2fb52-140">创建到 DriveItem 的可嵌入链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-140">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="2fb52-141">此选项仅适用于 OneDrive 个人版中的文件。</span><span class="sxs-lookup"><span data-stu-id="2fb52-141">This option is only available for files in OneDrive personal.</span></span> |
 
-### <a name="scope-types"></a><span data-ttu-id="bad69-142">范围类型</span><span class="sxs-lookup"><span data-stu-id="bad69-142">Scope types</span></span>
+### <a name="scope-types"></a><span data-ttu-id="2fb52-142">范围类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-142">Scope types</span></span>
 
-<span data-ttu-id="bad69-143">**scope** 参数允许使用以下值。</span><span class="sxs-lookup"><span data-stu-id="bad69-143">The following values are allowed for the **scope** parameter.</span></span>
-<span data-ttu-id="bad69-144">如果未指定 **scope** 参数，则为组织创建默认的链接类型。</span><span class="sxs-lookup"><span data-stu-id="bad69-144">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
+<span data-ttu-id="2fb52-143">**scope** 参数允许使用以下值。</span><span class="sxs-lookup"><span data-stu-id="2fb52-143">The following values are allowed for the **scope** parameter.</span></span>
+<span data-ttu-id="2fb52-144">如果未指定 **scope** 参数，则为组织创建默认的链接类型。</span><span class="sxs-lookup"><span data-stu-id="2fb52-144">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
 
-| <span data-ttu-id="bad69-145">类型值</span><span class="sxs-lookup"><span data-stu-id="bad69-145">Type value</span></span>     | <span data-ttu-id="bad69-146">说明</span><span class="sxs-lookup"><span data-stu-id="bad69-146">Description</span></span>                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | <span data-ttu-id="bad69-147">创建到任意用户都可使用链接访问的 DriveItem 的链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-147">Creates a link to the DriveItem accessible to anyone with the link.</span></span> <span data-ttu-id="bad69-148">管理员可能会禁用匿名链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-148">Anonymous links may be disabled by an administrator.</span></span>                 |
-| `organization` | <span data-ttu-id="bad69-149">创建到用户组织内任意用户都可访问的 DriveItem 的链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-149">Creates a link to the DriveItem accessible to anyone within the user's organization.</span></span> <span data-ttu-id="bad69-150">OneDrive 个人版不支持组织链接范围。</span><span class="sxs-lookup"><span data-stu-id="bad69-150">Organization link scope is not available for OneDrive personal.</span></span> |
+| <span data-ttu-id="2fb52-145">值</span><span class="sxs-lookup"><span data-stu-id="2fb52-145">Value</span></span>          | <span data-ttu-id="2fb52-146">说明</span><span class="sxs-lookup"><span data-stu-id="2fb52-146">Description</span></span>
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | <span data-ttu-id="2fb52-147">带链接的任何人都可访问，而无需登录。</span><span class="sxs-lookup"><span data-stu-id="2fb52-147">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="2fb52-148">这可能包括您的组织外部的人员。</span><span class="sxs-lookup"><span data-stu-id="2fb52-148">This may include people outside of your organization.</span></span> <span data-ttu-id="2fb52-149">匿名链接支持可能被管理员禁用。</span><span class="sxs-lookup"><span data-stu-id="2fb52-149">Anonymous links may be disabled by an administrator.</span></span>
+| `organization` | <span data-ttu-id="2fb52-150">任何登录到你的组织（承租人）可以使用该链接获取访问权限。</span><span class="sxs-lookup"><span data-stu-id="2fb52-150">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="2fb52-151">仅适用于商业版OneDrive和SharePoint。</span><span class="sxs-lookup"><span data-stu-id="2fb52-151">Only available in OneDrive for Business and SharePoint.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bad69-151">响应</span><span class="sxs-lookup"><span data-stu-id="bad69-151">Response</span></span>
 
-<span data-ttu-id="bad69-152">如果成功，此方法将在响应正文中返回单个 [Permission](../resources/permission.md) 资源，此响应正文表示请求的共享权限。</span><span class="sxs-lookup"><span data-stu-id="bad69-152">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
+## <a name="response"></a><span data-ttu-id="2fb52-152">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-152">Response</span></span>
 
-<span data-ttu-id="bad69-153">如果已经为此项目创建新的共享链接，则响应为 `201 Created`；如果返回现有链接，则为 `200 OK`。</span><span class="sxs-lookup"><span data-stu-id="bad69-153">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
+<span data-ttu-id="2fb52-153">如果成功，此方法将在响应正文中返回单个 [Permission](../resources/permission.md) 资源，此响应正文表示请求的共享权限。</span><span class="sxs-lookup"><span data-stu-id="2fb52-153">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bad69-154">示例</span><span class="sxs-lookup"><span data-stu-id="bad69-154">Example</span></span>
+<span data-ttu-id="2fb52-154">如果已经为此项目创建新的共享链接，则响应为 `201 Created`；如果返回现有链接，则为 `200 OK`。</span><span class="sxs-lookup"><span data-stu-id="2fb52-154">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
 
-<span data-ttu-id="bad69-155">下面的示例请求为在用户的 OneDrive 中按 {itemId} 指定的 DriveItem 创建共享链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-155">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
-<span data-ttu-id="bad69-156">共享链接配置为只读并且可由具有该链接的任何用户使用。</span><span class="sxs-lookup"><span data-stu-id="bad69-156">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
+## <a name="example"></a><span data-ttu-id="2fb52-155">示例</span><span class="sxs-lookup"><span data-stu-id="2fb52-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bad69-157">请求</span><span class="sxs-lookup"><span data-stu-id="bad69-157">Request</span></span>
+<span data-ttu-id="2fb52-156">下面的示例请求为在用户的 OneDrive 中按 {itemId} 指定的 DriveItem 创建共享链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-156">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
+<span data-ttu-id="2fb52-157">共享链接配置为只读并且可由具有该链接的任何用户使用。</span><span class="sxs-lookup"><span data-stu-id="2fb52-157">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
+
+### <a name="request"></a><span data-ttu-id="2fb52-158">请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-158">Request</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -99,7 +100,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bad69-158">响应</span><span class="sxs-lookup"><span data-stu-id="bad69-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2fb52-159">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-159">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -122,15 +123,15 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-company-sharable-links"></a><span data-ttu-id="bad69-159">创建公司可共享的链接</span><span class="sxs-lookup"><span data-stu-id="bad69-159">Creating company sharable links</span></span>
+## <a name="creating-company-sharable-links"></a><span data-ttu-id="2fb52-160">创建公司可共享的链接</span><span class="sxs-lookup"><span data-stu-id="2fb52-160">Creating company sharable links</span></span>
 
-<span data-ttu-id="bad69-160">OneDrive for Business 和 SharePoint 都支持公司可共享的链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-160">OneDrive for Business and SharePoint support company sharable links.</span></span>
-<span data-ttu-id="bad69-161">此类链接与匿名链接类似，只不过仅适用于拥有组织的成员。</span><span class="sxs-lookup"><span data-stu-id="bad69-161">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
-<span data-ttu-id="bad69-162">若要创建公司可共享的链接，请使用值为 `organization` 的 **scope** 参数。</span><span class="sxs-lookup"><span data-stu-id="bad69-162">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
+<span data-ttu-id="2fb52-161">OneDrive for Business 和 SharePoint 都支持公司可共享的链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-161">OneDrive for Business and SharePoint support company sharable links.</span></span>
+<span data-ttu-id="2fb52-162">此类链接与匿名链接类似，只不过仅适用于拥有组织的成员。</span><span class="sxs-lookup"><span data-stu-id="2fb52-162">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
+<span data-ttu-id="2fb52-163">若要创建公司可共享的链接，请使用值为 `organization` 的 **scope** 参数。</span><span class="sxs-lookup"><span data-stu-id="2fb52-163">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="bad69-163">请求</span><span class="sxs-lookup"><span data-stu-id="bad69-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2fb52-164">请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-164">Request</span></span>
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -142,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bad69-164">响应</span><span class="sxs-lookup"><span data-stu-id="bad69-164">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2fb52-165">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-165">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -165,15 +166,15 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-embeddable-links"></a><span data-ttu-id="bad69-165">创建可嵌入的链接</span><span class="sxs-lookup"><span data-stu-id="bad69-165">Creating embeddable links</span></span>
+## <a name="creating-embeddable-links"></a><span data-ttu-id="2fb52-166">创建可嵌入的链接</span><span class="sxs-lookup"><span data-stu-id="2fb52-166">Creating embeddable links</span></span>
 
-<span data-ttu-id="bad69-p112">使用 `embed` 链接类型时，可以在 `<iframe>` HTML 元素中嵌入返回的 webUrl。创建嵌入链接时，`webHtml` 属性包含 `<iframe>` 的 HTML 代码以托管内容。</span><span class="sxs-lookup"><span data-stu-id="bad69-p112">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
+<span data-ttu-id="2fb52-p112">使用 `embed` 链接类型时，可以在 `<iframe>` HTML 元素中嵌入返回的 webUrl。创建嵌入链接时，`webHtml` 属性包含 `<iframe>` 的 HTML 代码以托管内容。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p112">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
 
-<span data-ttu-id="bad69-168">**注意：** 仅 OneDrive 个人版支持嵌入链接。</span><span class="sxs-lookup"><span data-stu-id="bad69-168">**Note:** Embed links are only supported for OneDrive personal.</span></span>
+<span data-ttu-id="2fb52-169">**注意：** 仅 OneDrive 个人版支持嵌入链接。</span><span class="sxs-lookup"><span data-stu-id="2fb52-169">**Note:** Embed links are only supported for OneDrive personal.</span></span>
 
-### <a name="request"></a><span data-ttu-id="bad69-169">请求</span><span class="sxs-lookup"><span data-stu-id="bad69-169">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2fb52-170">请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-170">Request</span></span>
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -184,7 +185,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bad69-170">响应</span><span class="sxs-lookup"><span data-stu-id="bad69-170">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2fb52-171">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-171">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -207,11 +208,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="bad69-171">注解</span><span class="sxs-lookup"><span data-stu-id="bad69-171">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2fb52-172">注解</span><span class="sxs-lookup"><span data-stu-id="2fb52-172">Remarks</span></span>
 
-* <span data-ttu-id="bad69-172">使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。</span><span class="sxs-lookup"><span data-stu-id="bad69-172">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
-* <span data-ttu-id="bad69-173">链接在项的共享权限中可见，可以由该项的所有者删除。</span><span class="sxs-lookup"><span data-stu-id="bad69-173">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
-* <span data-ttu-id="bad69-174">除非项已被签出，否则链接始终指向该项的最新版本（仅限 SharePoint）。</span><span class="sxs-lookup"><span data-stu-id="bad69-174">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
+* <span data-ttu-id="2fb52-173">使用此操作创建的链接不会过期，除非对组织强制执行了默认过期策略。</span><span class="sxs-lookup"><span data-stu-id="2fb52-173">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
+* <span data-ttu-id="2fb52-174">链接在项的共享权限中可见，可以由该项的所有者删除。</span><span class="sxs-lookup"><span data-stu-id="2fb52-174">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
+* <span data-ttu-id="2fb52-175">除非项已被签出，否则链接始终指向该项的最新版本（仅限 SharePoint）。</span><span class="sxs-lookup"><span data-stu-id="2fb52-175">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
 
 <!-- {
   "type": "#page.annotation",

@@ -2,40 +2,41 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "检索文件或文件夹的缩略图"
-ms.openlocfilehash: 864765898955d0a690ab85dc0be9761a7a9d1856
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 检索文件或文件夹的缩略图
+ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266833"
 ---
-# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="ef959-102">列出 DriveItem 的缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-102">List thumbnails for a DriveItem</span></span>
+# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="f12d6-102">列出 DriveItem 的缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-102">List thumbnails for a DriveItem</span></span>
 
-<span data-ttu-id="ef959-103">检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="ef959-103">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
+<span data-ttu-id="f12d6-103">检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="f12d6-103">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
 
-<span data-ttu-id="ef959-p101">DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如，**thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。</span><span class="sxs-lookup"><span data-stu-id="ef959-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
+<span data-ttu-id="f12d6-p101">DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如，**thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。</span><span class="sxs-lookup"><span data-stu-id="f12d6-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
 
-<span data-ttu-id="ef959-p102">可以通过多种方式在 OneDrive 上对缩略图进行操作。以下是一些最常见的操作：</span><span class="sxs-lookup"><span data-stu-id="ef959-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
+<span data-ttu-id="f12d6-p102">可以通过多种方式在 OneDrive 上对缩略图进行操作。以下是一些最常见的操作：</span><span class="sxs-lookup"><span data-stu-id="f12d6-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
 
-* <span data-ttu-id="ef959-109">枚举项目的可用缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-109">Enumerate available thumbnails for an item</span></span>
-* <span data-ttu-id="ef959-110">检索项目的单个缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-110">Retrieve a single thumbnail for an item</span></span>
-* <span data-ttu-id="ef959-111">检索缩略图的内容</span><span class="sxs-lookup"><span data-stu-id="ef959-111">Retrieve thumbnail content</span></span>
-* <span data-ttu-id="ef959-112">在单个请求中检索多个项目的缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-112">Retrieve thumbnails for multiple items in a single request</span></span>
-* <span data-ttu-id="ef959-113">检索自定义缩略图的大小</span><span class="sxs-lookup"><span data-stu-id="ef959-113">Retrieve custom thumbnail sizes</span></span>
-* <span data-ttu-id="ef959-114">上载项目的自定义缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-114">Upload a custom thumbnail for an item</span></span>
-* <span data-ttu-id="ef959-115">确定是否存在自定义的上传缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-115">Determine if a custom uploaded thumbnail exists</span></span>
+* <span data-ttu-id="f12d6-109">枚举项目的可用缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-109">Enumerate available thumbnails for an item</span></span>
+* <span data-ttu-id="f12d6-110">检索项目的单个缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-110">Retrieve a single thumbnail for an item</span></span>
+* <span data-ttu-id="f12d6-111">检索缩略图的内容</span><span class="sxs-lookup"><span data-stu-id="f12d6-111">Retrieve thumbnail content</span></span>
+* <span data-ttu-id="f12d6-112">在单个请求中检索多个项目的缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-112">Retrieve thumbnails for multiple items in a single request</span></span>
+* <span data-ttu-id="f12d6-113">检索自定义缩略图的大小</span><span class="sxs-lookup"><span data-stu-id="f12d6-113">Retrieve custom thumbnail sizes</span></span>
+* <span data-ttu-id="f12d6-114">上载项目的自定义缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-114">Upload a custom thumbnail for an item</span></span>
+* <span data-ttu-id="f12d6-115">确定是否存在自定义的上传缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-115">Determine if a custom uploaded thumbnail exists</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ef959-116">权限</span><span class="sxs-lookup"><span data-stu-id="ef959-116">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f12d6-116">权限</span><span class="sxs-lookup"><span data-stu-id="f12d6-116">Permissions</span></span>
 
-<span data-ttu-id="ef959-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="ef959-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f12d6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f12d6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="ef959-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="ef959-119">Permission type</span></span>      | <span data-ttu-id="ef959-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ef959-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f12d6-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="f12d6-119">Permission type</span></span>      | <span data-ttu-id="f12d6-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f12d6-120">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ef959-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ef959-121">Delegated (work or school account)</span></span> | <span data-ttu-id="ef959-122">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef959-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ef959-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ef959-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef959-124">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef959-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ef959-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="ef959-125">Application</span></span> | <span data-ttu-id="ef959-126">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef959-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f12d6-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f12d6-121">Delegated (work or school account)</span></span> | <span data-ttu-id="f12d6-122">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f12d6-122">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f12d6-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f12d6-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f12d6-124">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f12d6-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f12d6-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="f12d6-125">Application</span></span> | <span data-ttu-id="f12d6-126">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f12d6-126">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ef959-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef959-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f12d6-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f12d6-127">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,31 +48,31 @@ GET /sites/{site-id}/drive/items/{item-id}/thumbnails
 GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ef959-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ef959-128">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f12d6-128">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f12d6-128">Optional query parameters</span></span>
 
-<span data-ttu-id="ef959-129">此方法支持使用 `$select`[OData 查询参数](../../../concepts/query_parameters.md)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ef959-129">This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.</span></span>
+<span data-ttu-id="f12d6-129">此方法支持使用 `$select` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f12d6-129">This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ef959-130">响应</span><span class="sxs-lookup"><span data-stu-id="ef959-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f12d6-130">响应</span><span class="sxs-lookup"><span data-stu-id="f12d6-130">Response</span></span>
 
-<span data-ttu-id="ef959-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ThumbnailSet](../resources/thumbnailset.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ef959-131">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
+<span data-ttu-id="f12d6-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ThumbnailSet](../resources/thumbnailset.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="f12d6-131">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ef959-132">示例</span><span class="sxs-lookup"><span data-stu-id="ef959-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f12d6-132">示例</span><span class="sxs-lookup"><span data-stu-id="f12d6-132">Example</span></span>
 
-<span data-ttu-id="ef959-133">下面是检索当前用户的 OneDrive 中的某个项的可用缩略图的请求示例。</span><span class="sxs-lookup"><span data-stu-id="ef959-133">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
+<span data-ttu-id="f12d6-133">下面是检索当前用户的 OneDrive 中某个项的可用缩略图的请求示例。</span><span class="sxs-lookup"><span data-stu-id="f12d6-133">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
 ```
 
-<span data-ttu-id="ef959-134">这将返回项的可用 **thumbnailSet** 数组。</span><span class="sxs-lookup"><span data-stu-id="ef959-134">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="ef959-135">驱动器中的任何项都可以有零个或多个缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-135">Any item in OneDrive can have zero or more thumbnails.</span></span>
+<span data-ttu-id="f12d6-134">这将返回项的可用 **thumbnailSet** 的数组。</span><span class="sxs-lookup"><span data-stu-id="f12d6-134">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="f12d6-135">驱动器中的任何项都可以有零个或多个缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-135">Any item in a drive can have zero or more thumbnails.</span></span>
 
-<span data-ttu-id="ef959-136">**注意：**可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。</span><span class="sxs-lookup"><span data-stu-id="ef959-136">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.</span></span>
-<span data-ttu-id="ef959-137">例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-137">For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
+<span data-ttu-id="f12d6-136">**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。</span><span class="sxs-lookup"><span data-stu-id="f12d6-136">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.</span></span>
+<span data-ttu-id="f12d6-137">例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-137">For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
 
 
-### <a name="response"></a><span data-ttu-id="ef959-138">响应</span><span class="sxs-lookup"><span data-stu-id="ef959-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f12d6-138">响应</span><span class="sxs-lookup"><span data-stu-id="f12d6-138">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -91,25 +92,25 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-a-single-thumbnail"></a><span data-ttu-id="ef959-139">获取单个缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-139">Retrieve a single thumbnail</span></span>
+## <a name="get-a-single-thumbnail"></a><span data-ttu-id="f12d6-139">获取单个缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-139">Get a single thumbnail</span></span>
 
-<span data-ttu-id="ef959-140">通过在请求中直接解决来检索单个缩略图和大小的元数据。</span><span class="sxs-lookup"><span data-stu-id="ef959-140">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
+<span data-ttu-id="f12d6-140">通过直接在请求中对其进行寻址来检索单个缩略图和大小的元数据。</span><span class="sxs-lookup"><span data-stu-id="f12d6-140">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="ef959-141">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef959-141">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="f12d6-141">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f12d6-141">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="ef959-142">Path 参数</span><span class="sxs-lookup"><span data-stu-id="ef959-142">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="f12d6-142">Path 参数</span><span class="sxs-lookup"><span data-stu-id="f12d6-142">Path parameters</span></span>
 
-| <span data-ttu-id="ef959-143">名称</span><span class="sxs-lookup"><span data-stu-id="ef959-143">Name</span></span>         | <span data-ttu-id="ef959-144">类型</span><span class="sxs-lookup"><span data-stu-id="ef959-144">Type</span></span>   | <span data-ttu-id="ef959-145">说明</span><span class="sxs-lookup"><span data-stu-id="ef959-145">Description</span></span>                                                                              |
+| <span data-ttu-id="f12d6-143">名称</span><span class="sxs-lookup"><span data-stu-id="f12d6-143">Name</span></span>         | <span data-ttu-id="f12d6-144">类型</span><span class="sxs-lookup"><span data-stu-id="f12d6-144">Type</span></span>   | <span data-ttu-id="f12d6-145">说明</span><span class="sxs-lookup"><span data-stu-id="f12d6-145">Description</span></span>                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="ef959-146">**item-id**</span><span class="sxs-lookup"><span data-stu-id="ef959-146">**item-id**</span></span>  | <span data-ttu-id="ef959-147">string</span><span class="sxs-lookup"><span data-stu-id="ef959-147">string</span></span> | <span data-ttu-id="ef959-148">引用的项目的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="ef959-148">The unique identifier for the item referenced.</span></span>                                           |
-| <span data-ttu-id="ef959-149">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="ef959-149">**thumb-id**</span></span> | <span data-ttu-id="ef959-150">数字</span><span class="sxs-lookup"><span data-stu-id="ef959-150">number</span></span> | <span data-ttu-id="ef959-151">缩略图的索引，通常介于 0 到 4 之间。</span><span class="sxs-lookup"><span data-stu-id="ef959-151">The index of the thumbnail, usually 0-4.</span></span> <span data-ttu-id="ef959-152">如果没有自定义缩略图，索引为 0。</span><span class="sxs-lookup"><span data-stu-id="ef959-152">If there is a custom thumbnail, its index is 0.</span></span> |
-| <span data-ttu-id="ef959-153">**size**</span><span class="sxs-lookup"><span data-stu-id="ef959-153">**size**</span></span>     | <span data-ttu-id="ef959-154">string</span><span class="sxs-lookup"><span data-stu-id="ef959-154">string</span></span> | <span data-ttu-id="ef959-155">请求获取的缩略图的尺寸。</span><span class="sxs-lookup"><span data-stu-id="ef959-155">The size of the thumbnail requested.</span></span> <span data-ttu-id="ef959-156">可取值为下面列出的标准大小之一或自定义大小。</span><span class="sxs-lookup"><span data-stu-id="ef959-156">This can be one of the standard sizes listed below or a custom size.</span></span> |
+| <span data-ttu-id="f12d6-146">**item-id**</span><span class="sxs-lookup"><span data-stu-id="f12d6-146">**item-id**</span></span>  | <span data-ttu-id="f12d6-147">string</span><span class="sxs-lookup"><span data-stu-id="f12d6-147">string</span></span> | <span data-ttu-id="f12d6-148">引用的项目的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="f12d6-148">The unique identifier for the item referenced.</span></span>                                           |
+| <span data-ttu-id="f12d6-149">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="f12d6-149">**thumb-id**</span></span> | <span data-ttu-id="f12d6-150">数字</span><span class="sxs-lookup"><span data-stu-id="f12d6-150">number</span></span> | <span data-ttu-id="f12d6-151">缩略图的索引，通常介于 0 到 4 之间。</span><span class="sxs-lookup"><span data-stu-id="f12d6-151">The index of the thumbnail, usually 0-4.</span></span> <span data-ttu-id="f12d6-152">如果没有自定义缩略图，索引为 0。</span><span class="sxs-lookup"><span data-stu-id="f12d6-152">If there is a custom thumbnail, its index is 0.</span></span> |
+| <span data-ttu-id="f12d6-153">**size**</span><span class="sxs-lookup"><span data-stu-id="f12d6-153">**size**</span></span>     | <span data-ttu-id="f12d6-154">string</span><span class="sxs-lookup"><span data-stu-id="f12d6-154">string</span></span> | <span data-ttu-id="f12d6-155">请求获取的缩略图的大小。</span><span class="sxs-lookup"><span data-stu-id="f12d6-155">The size of the thumbnail requested.</span></span> <span data-ttu-id="f12d6-156">可取值为下面列出的标准大小之一或自定义大小。</span><span class="sxs-lookup"><span data-stu-id="f12d6-156">This can be one of the standard sizes listed below or a custom size.</span></span> |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -124,21 +125,21 @@ Content-Type: application/json
 }
 ```
 
-## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="ef959-157">检索缩略图的二进制内容</span><span class="sxs-lookup"><span data-stu-id="ef959-157">Retrieve thumbnail content</span></span>
+## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="f12d6-157">检索缩略图的二进制内容</span><span class="sxs-lookup"><span data-stu-id="f12d6-157">Retrieve thumbnail binary content</span></span>
 
-<span data-ttu-id="ef959-158">可以通过请求缩略图的 **content** 属性直接检索缩略图的内容。</span><span class="sxs-lookup"><span data-stu-id="ef959-158">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
+<span data-ttu-id="f12d6-158">可以通过请求缩略图的 **content** 属性直接检索缩略图的内容。</span><span class="sxs-lookup"><span data-stu-id="f12d6-158">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="ef959-159">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef959-159">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="f12d6-159">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f12d6-159">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 
-### <a name="response"></a><span data-ttu-id="ef959-160">响应</span><span class="sxs-lookup"><span data-stu-id="ef959-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f12d6-160">响应</span><span class="sxs-lookup"><span data-stu-id="f12d6-160">Response</span></span>
 
-<span data-ttu-id="ef959-161">本服务通过到缩略图 URL 的重定向进行响应。</span><span class="sxs-lookup"><span data-stu-id="ef959-161">The service responds with a redirect to the thumbnail URL.</span></span>
+<span data-ttu-id="f12d6-161">本服务用到缩略图 URL 的重定向进行响应。</span><span class="sxs-lookup"><span data-stu-id="f12d6-161">The service responds with a redirect to the thumbnail URL.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -147,25 +148,25 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-<span data-ttu-id="ef959-162">缩略图 URL 具有缓存安全性。</span><span class="sxs-lookup"><span data-stu-id="ef959-162">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="ef959-163">如果在项发生更改后需要生成新的缩略图，URL 将会更改。</span><span class="sxs-lookup"><span data-stu-id="ef959-163">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
+<span data-ttu-id="f12d6-162">缩略图 URL 具有缓存安全性。</span><span class="sxs-lookup"><span data-stu-id="f12d6-162">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="f12d6-163">如果在项发生更改后需要生成新的缩略图，URL 将会更改。</span><span class="sxs-lookup"><span data-stu-id="f12d6-163">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
 
 
-## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="ef959-164">获取缩略图的同时列出 DriveItem</span><span class="sxs-lookup"><span data-stu-id="ef959-164">Getting thumbnails while listing DriveItems</span></span>
+## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="f12d6-164">列出 DriveItem 时获取缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-164">Getting thumbnails while listing DriveItems</span></span>
 
-<span data-ttu-id="ef959-165">如果检索要显示的 DriveItem 资源的列表，可以使用 _$expand_ 查询字符串参数，以便同时包含这些资源的缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-165">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
-<span data-ttu-id="ef959-166">这使你的应用可以在一个请求中检索缩略图和项，而不是发出多个请求。</span><span class="sxs-lookup"><span data-stu-id="ef959-166">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
+<span data-ttu-id="f12d6-165">如果检索要显示的 DriveItem 资源的列表，可以使用_ $expand_ 查询字符串参数，以便同时包含这些资源的缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-165">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
+<span data-ttu-id="f12d6-166">这使你的应用可以通过一个请求同时检索缩略图和项，而不是发出多个请求。</span><span class="sxs-lookup"><span data-stu-id="f12d6-166">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="ef959-167">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef959-167">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="f12d6-167">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f12d6-167">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 
-### <a name="response"></a><span data-ttu-id="ef959-168">响应</span><span class="sxs-lookup"><span data-stu-id="ef959-168">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f12d6-168">响应</span><span class="sxs-lookup"><span data-stu-id="f12d6-168">Response</span></span>
 
-<span data-ttu-id="ef959-169">本服务通过 DriveItem 及其缩略图的列表进行响应。</span><span class="sxs-lookup"><span data-stu-id="ef959-169">The service responses with the list of DriveItems and their thumbnails.</span></span>
+<span data-ttu-id="f12d6-169">本服务通过 DriveItem 及其缩略图的列表进行响应。</span><span class="sxs-lookup"><span data-stu-id="f12d6-169">The service responses with the list of DriveItems and their thumbnails.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -203,32 +204,31 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-values"></a><span data-ttu-id="ef959-170">大小的值</span><span class="sxs-lookup"><span data-stu-id="ef959-170">Size values</span></span>
+## <a name="size-options"></a><span data-ttu-id="f12d6-170">大小选项</span><span class="sxs-lookup"><span data-stu-id="f12d6-170">Size options</span></span>
 
-<span data-ttu-id="ef959-p110">下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：</span><span class="sxs-lookup"><span data-stu-id="ef959-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
+<span data-ttu-id="f12d6-p110">下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：</span><span class="sxs-lookup"><span data-stu-id="f12d6-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
 
-| <span data-ttu-id="ef959-173">名称</span><span class="sxs-lookup"><span data-stu-id="ef959-173">Name</span></span>           | <span data-ttu-id="ef959-174">分辨率</span><span class="sxs-lookup"><span data-stu-id="ef959-174">Resolution</span></span>  | <span data-ttu-id="ef959-175">纵横比​​</span><span class="sxs-lookup"><span data-stu-id="ef959-175">Aspect Ratio</span></span> | <span data-ttu-id="ef959-176">说明</span><span class="sxs-lookup"><span data-stu-id="ef959-176">Description</span></span>                                                          |
+| <span data-ttu-id="f12d6-173">名称</span><span class="sxs-lookup"><span data-stu-id="f12d6-173">Name</span></span>           | <span data-ttu-id="f12d6-174">分辨率</span><span class="sxs-lookup"><span data-stu-id="f12d6-174">Resolution</span></span>  | <span data-ttu-id="f12d6-175">纵横比</span><span class="sxs-lookup"><span data-stu-id="f12d6-175">Aspect Ratio</span></span> | <span data-ttu-id="f12d6-176">说明</span><span class="sxs-lookup"><span data-stu-id="f12d6-176">Description</span></span>                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | <span data-ttu-id="ef959-177">96 longest</span><span class="sxs-lookup"><span data-stu-id="ef959-177">96 longest</span></span>  | <span data-ttu-id="ef959-178">Original</span><span class="sxs-lookup"><span data-stu-id="ef959-178">Original</span></span>     | <span data-ttu-id="ef959-179">小型的高压缩缩略图，裁剪为正方形纵横比。</span><span class="sxs-lookup"><span data-stu-id="ef959-179">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
-| `medium`       | <span data-ttu-id="ef959-180">176 longest</span><span class="sxs-lookup"><span data-stu-id="ef959-180">176 longest</span></span> | <span data-ttu-id="ef959-181">Original</span><span class="sxs-lookup"><span data-stu-id="ef959-181">Original</span></span>     | <span data-ttu-id="ef959-182">裁剪为 OneDrive Web 视图的标准项目大小。</span><span class="sxs-lookup"><span data-stu-id="ef959-182">Cropped to the standard item size for the OneDrive web view.</span></span>         |
-| `large`        | <span data-ttu-id="ef959-183">800 longest
-</span><span class="sxs-lookup"><span data-stu-id="ef959-183">800 longest</span></span> | <span data-ttu-id="ef959-184">Original</span><span class="sxs-lookup"><span data-stu-id="ef959-184">Original</span></span>     | <span data-ttu-id="ef959-185">最长边重设为 800 像素的缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-185">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
-| `smallSquare`  | <span data-ttu-id="ef959-186">96x96</span><span class="sxs-lookup"><span data-stu-id="ef959-186">96x96</span></span>       | <span data-ttu-id="ef959-187">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="ef959-187">Square Crop</span></span>  | <span data-ttu-id="ef959-188">小方形缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-188">Small square thumbnail</span></span>                                               |
-| `mediumSquare` | <span data-ttu-id="ef959-189">176x176</span><span class="sxs-lookup"><span data-stu-id="ef959-189">176x176</span></span>     | <span data-ttu-id="ef959-190">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="ef959-190">Square Crop</span></span>  | <span data-ttu-id="ef959-191">小方形缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-191">Small square thumbnail</span></span>                                               |
-| `largeSquare`  | <span data-ttu-id="ef959-192">800x800</span><span class="sxs-lookup"><span data-stu-id="ef959-192">800x800</span></span>     | <span data-ttu-id="ef959-193">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="ef959-193">Square Crop</span></span>  | <span data-ttu-id="ef959-194">大方形缩略图</span><span class="sxs-lookup"><span data-stu-id="ef959-194">Large square thumbnail</span></span>                                               |
+| `small`        | <span data-ttu-id="f12d6-177">最长 96</span><span class="sxs-lookup"><span data-stu-id="f12d6-177">96 longest</span></span>  | <span data-ttu-id="f12d6-178">原始</span><span class="sxs-lookup"><span data-stu-id="f12d6-178">Original</span></span>     | <span data-ttu-id="f12d6-179">小型的高压缩缩略图，裁剪为正方形纵横比。</span><span class="sxs-lookup"><span data-stu-id="f12d6-179">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
+| `medium`       | <span data-ttu-id="f12d6-180">最长 176</span><span class="sxs-lookup"><span data-stu-id="f12d6-180">176 longest</span></span> | <span data-ttu-id="f12d6-181">原始</span><span class="sxs-lookup"><span data-stu-id="f12d6-181">Original</span></span>     | <span data-ttu-id="f12d6-182">裁剪为 OneDrive Web 视图的标准项目大小。</span><span class="sxs-lookup"><span data-stu-id="f12d6-182">Cropped to the standard item size for the OneDrive web view.</span></span>         |
+| `large`        | <span data-ttu-id="f12d6-183">最长 800</span><span class="sxs-lookup"><span data-stu-id="f12d6-183">800 longest</span></span> | <span data-ttu-id="f12d6-184">原始</span><span class="sxs-lookup"><span data-stu-id="f12d6-184">Original</span></span>     | <span data-ttu-id="f12d6-185">最长边重设为 800 像素的缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-185">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
+| `smallSquare`  | <span data-ttu-id="f12d6-186">96x96</span><span class="sxs-lookup"><span data-stu-id="f12d6-186">96x96</span></span>       | <span data-ttu-id="f12d6-187">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="f12d6-187">Square Crop</span></span>  | <span data-ttu-id="f12d6-188">小方形缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-188">Small square thumbnail</span></span>                                               |
+| `mediumSquare` | <span data-ttu-id="f12d6-189">176x176</span><span class="sxs-lookup"><span data-stu-id="f12d6-189">176x176</span></span>     | <span data-ttu-id="f12d6-190">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="f12d6-190">Square Crop</span></span>  | <span data-ttu-id="f12d6-191">小方形缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-191">Small square thumbnail</span></span>                                               |
+| `largeSquare`  | <span data-ttu-id="f12d6-192">800x800</span><span class="sxs-lookup"><span data-stu-id="f12d6-192">800x800</span></span>     | <span data-ttu-id="f12d6-193">方形裁剪</span><span class="sxs-lookup"><span data-stu-id="f12d6-193">Square Crop</span></span>  | <span data-ttu-id="f12d6-194">大方形缩略图</span><span class="sxs-lookup"><span data-stu-id="f12d6-194">Large square thumbnail</span></span>                                               |
 
-## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="ef959-195">请求自定义缩略图的大小</span><span class="sxs-lookup"><span data-stu-id="ef959-195">Retrieve custom thumbnail sizes</span></span>
+## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="f12d6-195">请求自定义缩略图的大小</span><span class="sxs-lookup"><span data-stu-id="f12d6-195">Requesting custom thumbnail sizes</span></span>
 
-<span data-ttu-id="ef959-196">除了定义尺寸外，应用还可以指定前缀为 `c` 的缩略图尺寸，从而请求获取自定义缩略图尺寸。</span><span class="sxs-lookup"><span data-stu-id="ef959-196">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
-<span data-ttu-id="ef959-197">例如，如果你的应用需要 300x400 的缩略图，可以按如下所示请求获取此大小：</span><span class="sxs-lookup"><span data-stu-id="ef959-197">For example if you need thumbnails that are 300x400, you can request that size like this:</span></span>
+<span data-ttu-id="f12d6-196">除了定义大小外，应用还可以指定前缀为 `c` 的缩略图大小，从而请求获取自定义缩略图大小。</span><span class="sxs-lookup"><span data-stu-id="f12d6-196">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
+<span data-ttu-id="f12d6-197">例如，如果你的应用需要 300x400 的缩略图，可以按如下所示请求获取此大小：</span><span class="sxs-lookup"><span data-stu-id="f12d6-197">For example if your app needs thumbnails that are 300x400, it can request that size like this:</span></span>
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 
-<span data-ttu-id="ef959-198">响应只包含选定的自定义缩略图尺寸：</span><span class="sxs-lookup"><span data-stu-id="ef959-198">Which responds with just the custom thumbnail size selected:</span></span>
+<span data-ttu-id="f12d6-198">响应只包含选定的自定义缩略图大小：</span><span class="sxs-lookup"><span data-stu-id="f12d6-198">Which responds with just the custom thumbnail size selected:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -246,32 +246,32 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="ef959-199">可以在请求获取的缩略图尺寸后指定以下选项：</span><span class="sxs-lookup"><span data-stu-id="ef959-199">You can specify the following options after the size of the thumbnail requested:</span></span>
+<span data-ttu-id="f12d6-199">可以在请求获取的缩略图尺寸后指定以下选项：</span><span class="sxs-lookup"><span data-stu-id="f12d6-199">You can specify the following options after the size of the thumbnail requested:</span></span>
 
-### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="ef959-200">自定义标识符示例</span><span class="sxs-lookup"><span data-stu-id="ef959-200">Examples of custom identifiers</span></span>
+### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="f12d6-200">自定义标识符示例</span><span class="sxs-lookup"><span data-stu-id="f12d6-200">Examples of custom identifiers</span></span>
 
-| <span data-ttu-id="ef959-201">缩略图标识符</span><span class="sxs-lookup"><span data-stu-id="ef959-201">Thumbnail identifier</span></span> | <span data-ttu-id="ef959-202">分辨率</span><span class="sxs-lookup"><span data-stu-id="ef959-202">Resolution</span></span>             | <span data-ttu-id="ef959-203">纵横比</span><span class="sxs-lookup"><span data-stu-id="ef959-203">Aspect ratio</span></span> | <span data-ttu-id="ef959-204">说明</span><span class="sxs-lookup"><span data-stu-id="ef959-204">Description</span></span>                                                                                                                                         |
+| <span data-ttu-id="f12d6-201">缩略图标识符</span><span class="sxs-lookup"><span data-stu-id="f12d6-201">Thumbnail identifier</span></span> | <span data-ttu-id="f12d6-202">分辨率</span><span class="sxs-lookup"><span data-stu-id="f12d6-202">Resolution</span></span>             | <span data-ttu-id="f12d6-203">纵横比</span><span class="sxs-lookup"><span data-stu-id="f12d6-203">Aspect ratio</span></span> | <span data-ttu-id="f12d6-204">说明</span><span class="sxs-lookup"><span data-stu-id="f12d6-204">Description</span></span>                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ef959-205">c300x400</span><span class="sxs-lookup"><span data-stu-id="ef959-205">c300x400</span></span>             | <span data-ttu-id="ef959-206">300x400 像素框</span><span class="sxs-lookup"><span data-stu-id="ef959-206">Bounded by 300x400 box</span></span> | <span data-ttu-id="ef959-207">原始大小</span><span class="sxs-lookup"><span data-stu-id="ef959-207">Original</span></span>     | <span data-ttu-id="ef959-208">生成适应在 300x400 像素框中显示的缩略图，纵横比不变</span><span class="sxs-lookup"><span data-stu-id="ef959-208">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
-| <span data-ttu-id="ef959-209">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="ef959-209">c300x400_Crop</span></span>        | <span data-ttu-id="ef959-210">300x400</span><span class="sxs-lookup"><span data-stu-id="ef959-210">300x400</span></span>                | <span data-ttu-id="ef959-211">已裁剪</span><span class="sxs-lookup"><span data-stu-id="ef959-211">Cropped</span></span>      | <span data-ttu-id="ef959-212">生成 300x400 像素缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-212">Generate a thumbnail that is 300x400 pixels.</span></span> <span data-ttu-id="ef959-213">具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。</span><span class="sxs-lookup"><span data-stu-id="ef959-213">This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
+| <span data-ttu-id="f12d6-205">c300x400</span><span class="sxs-lookup"><span data-stu-id="f12d6-205">c300x400</span></span>             | <span data-ttu-id="f12d6-206">300x400 像素框</span><span class="sxs-lookup"><span data-stu-id="f12d6-206">Bounded by 300x400 box</span></span> | <span data-ttu-id="f12d6-207">原始大小</span><span class="sxs-lookup"><span data-stu-id="f12d6-207">Original</span></span>     | <span data-ttu-id="f12d6-208">生成适应在 300x400 像素框中显示的缩略图，纵横比不变</span><span class="sxs-lookup"><span data-stu-id="f12d6-208">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
+| <span data-ttu-id="f12d6-209">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="f12d6-209">c300x400_Crop</span></span>        | <span data-ttu-id="f12d6-210">300x400</span><span class="sxs-lookup"><span data-stu-id="f12d6-210">300x400</span></span>                | <span data-ttu-id="f12d6-211">已裁剪</span><span class="sxs-lookup"><span data-stu-id="f12d6-211">Cropped</span></span>      | <span data-ttu-id="f12d6-212">生成 300x400 像素缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-212">Generate a thumbnail that is 300x400 pixels.</span></span> <span data-ttu-id="f12d6-213">具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。</span><span class="sxs-lookup"><span data-stu-id="f12d6-213">This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
 
-<span data-ttu-id="ef959-214">**注意：**返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。</span><span class="sxs-lookup"><span data-stu-id="ef959-214">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
-<span data-ttu-id="ef959-215">在某些情况下，如果缩略图已经存在并且可以轻松地缩放以匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-215">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
+<span data-ttu-id="f12d6-214">**注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。</span><span class="sxs-lookup"><span data-stu-id="f12d6-214">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
+<span data-ttu-id="f12d6-215">在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-215">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="ef959-216">备注</span><span class="sxs-lookup"><span data-stu-id="ef959-216">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f12d6-216">备注</span><span class="sxs-lookup"><span data-stu-id="f12d6-216">Remarks</span></span>
 
-<span data-ttu-id="ef959-217">**注意** 在 OneDrive for Business 和 SharePoint 中：</span><span class="sxs-lookup"><span data-stu-id="ef959-217">**Note** In OneDrive for Business and SharePoint:</span></span>
+<span data-ttu-id="f12d6-217">**注意** 在 OneDrive for Business 和 SharePoint 中：</span><span class="sxs-lookup"><span data-stu-id="f12d6-217">**Note** In OneDrive for Business and SharePoint:</span></span>
 
-<span data-ttu-id="ef959-218">使用这些调用展开缩略图集合不适用于：</span><span class="sxs-lookup"><span data-stu-id="ef959-218">Using these calls to expand the thumbnails collection will not work:</span></span>
+<span data-ttu-id="f12d6-218">使用这些调用展开缩略图集合不适用于：</span><span class="sxs-lookup"><span data-stu-id="f12d6-218">Using these calls to expand the thumbnails collection will not work:</span></span>
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-<span data-ttu-id="ef959-219">SharePoint Server 2016 不支持缩略图。</span><span class="sxs-lookup"><span data-stu-id="ef959-219">Thumbnails are not supported on SharePoint Server 2016.</span></span>
+<span data-ttu-id="f12d6-219">SharePoint Server 2016 不支持缩略图。</span><span class="sxs-lookup"><span data-stu-id="f12d6-219">Thumbnails are not supported on SharePoint Server 2016.</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="ef959-220">错误响应</span><span class="sxs-lookup"><span data-stu-id="ef959-220">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="f12d6-220">错误响应</span><span class="sxs-lookup"><span data-stu-id="f12d6-220">Error responses</span></span>
 
-<span data-ttu-id="ef959-221">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="ef959-221">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="f12d6-221">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="f12d6-221">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: ../../../concepts/errors.md
 
@@ -280,5 +280,17 @@ Content-Type: application/json
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+      Unable to map some markdown elements into schema.
+         Unmapped methods:
+      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
+         Unmapped tables:
+      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
+    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
+         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
+  ],
   "tocPath": "Items/Thumbnails"
 } -->
