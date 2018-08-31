@@ -18,10 +18,10 @@
 
 | 属性  | 类型   | 说明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 名称      | String | 组名称。                                                                                                                                                                                           |
-| changeKey | String | 标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。 |
-| classId   | Guid   | 类标识符。只读。                                                                                                                                                                          |
-| id        | String | 组的唯一标识符。只读。                                                                                                                                                                 |
+| 名称      | 字符串 | 组名称。                                                                                                                                                                                           |
+| changeKey | 字符串 | 标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。 |
+| classId   | 全局唯一标识符   | 类标识符。只读。                                                                                                                                                                          |
+| ID        | 字符串 | 组的唯一标识符。只读。                                                                                                                                                                 |
 
 ## <a name="relationships"></a>关系
 
@@ -33,13 +33,25 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
