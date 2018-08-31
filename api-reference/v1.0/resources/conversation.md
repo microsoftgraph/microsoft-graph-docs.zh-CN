@@ -16,12 +16,12 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
-|id|String|对话的唯一标识符。只读。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
-|uniqueSenders|String collection|发送消息到此对话的所有用户。|
+|hasAttachments|布尔值|指示此对话中的任意帖子是否至少有一个附件。|
+|ID|字符串|对话的唯一标识符。只读。|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
+|预览|字符串|来自此对话中最新帖子的正文的简短摘要。|
+|主题|字符串|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
+|uniqueSenders|字符串集合|发送消息到此对话的所有用户。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -32,13 +32,23 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +58,9 @@
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```

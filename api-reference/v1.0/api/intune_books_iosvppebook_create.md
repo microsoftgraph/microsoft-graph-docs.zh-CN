@@ -1,6 +1,6 @@
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [iosVppEBook](../resources/intune_books_iosvppebook.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 iosVppEBook 对象的 JSON 表示形式。
@@ -34,10 +34,10 @@ POST /deviceAppManagement/managedEBooks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|id|字符串|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|String|电子书的名称。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|description|String|说明。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|publisher|String|发布者。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|说明|String|说明。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|发布服务器|String|发布者。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
@@ -80,7 +80,7 @@ Content-length: 853
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -116,7 +116,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [

@@ -26,7 +26,7 @@
 |id|String|附件 ID。|
 |isInline|Boolean|如果是内嵌附件则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。|
-|name|String|表示显示在表示嵌入的附件的图标下方的文本的名称。该名称不必是实际的文件名。|
+|name|字符串|表示显示在表示嵌入的附件的图标下方的文本的名称。该名称不必是实际的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
@@ -39,6 +39,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "optionalProperties": [
 
   ],

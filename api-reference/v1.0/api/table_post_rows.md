@@ -1,6 +1,11 @@
 # <a name="create-tablerow"></a>创建 TableRow
 
-使用此 API 创建新的 TableRow。
+添加行至表末尾。 请注意 API 可以接受使用此 API 的多个行数据。 一次添加一行可能导致性能降低。 建议的方法是在单个调用中执行行批处理操作，而不是执行单个行插入操作。 为了获得最佳结果，收集要插入的应用程序侧的行，并执行单个行的添加操作。 尝试使用行数来确定在单个 API 调用中使用的理想行数。 
+
+## <a name="error-handling"></a>错误处理
+
+此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -13,50 +18,58 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
+POST /workbook/tables/{id|name}/rows/add
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [TableRow](../resources/tablerow.md) 对象的 JSON 表示形式。
+在请求正文中，提供具有以下参数的 JSON 对象。
+
+| 参数    | 类型   |说明|
+|:---------------|:--------|:----------|
+|index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
+|values|Json|未设置格式的表行值的二维数组。（布尔值或字符串或数字）|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [TableRow](../resources/tablerow.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableRow](../resources/tablerow.md) 对象。
 
 ## <a name="example"></a>示例
+在此示例中表的末尾插入两行数据。 
+
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "create_tablerow_from_table"
+  "name": "tablerowcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/add
 Content-type: application/json
-Content-length: 45
+Content-length: 51
 
 {
-  "index": 99,
-  "values": "values-value"
+  "values": [
+    [1, 2, 3],
+    [4, 5, 6]
+  ]
 }
 ```
-在请求正文中，提供 [TableRow](../resources/tablerow.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 45
 
@@ -70,8 +83,14 @@ Content-length: 45
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create TableRow",
+  "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Warning: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)"
+  ],
   "tocPath": ""
 }-->

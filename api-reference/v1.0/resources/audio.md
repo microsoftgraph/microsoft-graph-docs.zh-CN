@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Audio
-ms.openlocfilehash: 43b9999ecfb472a82e00a12ca820fdf8548eec64
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 音频
+ms.openlocfilehash: e68b70565f0eccd7847fba2b8085661071a75ae7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266231"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
 **Audio** 资源将与音频相关的属性分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **audio** facet，则该项表示一个音频文件。
-通过从文件中提取元数据来填充 **Audio** 资源的属性。 
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,22 +44,22 @@ ms.lasthandoff: 09/28/2017
 
 | 属性名称         | 类型    | 说明                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | string  | 此音频文件的专辑标题。                          |
-| **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
-| **artist**            | string  | 此音频文件的表演艺术家。                            |
-| **bitrate**           | Int32   | 比特率（以 kbps 为单位）。                                           |
-| **composers**         | string  | 此音频文件的作曲者姓名。                          |
-| **copyright**         | string  | 此音频文件的版权信息。                            |
-| **disc**              | Int32   | 此音频文件源自的光盘编号。                    |
-| **discCount**         | Int32   | 此专辑中的光盘总数。                             |
-| **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
-| **genre**             | string  | 此音频文件的流派。                                        |
-| **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
-| **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
-| **title**             | string  | 此音频文件的标题。                                         |
-| **track**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |
+| **专辑**             | 字符串  | 此音频文件的专辑标题。                          |
+| **albumArtist**       | 字符串  | 此音频文件的专辑上的艺术家。                    |
+| **艺术家**            | 字符串  | 此音频文件的表演艺术家。                            |
+| **比特率**           | Int64   | 比特率（以 kbps 为单位）。                                           |
+| **作曲家**         | 字符串  | 此音频文件的作曲者姓名。                          |
+| **版权**         | 字符串  | 此音频文件的版权信息。                            |
+| **光盘**              | Int16   | 此音频文件源自的光盘编号。                    |
+| **discCount**         | Int16   | 此专辑中的光盘总数。                             |
+| **持续时间**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
+| **流派**             | 字符串  | 此音频文件的流派。                                        |
+| **hasDrm**            | 布尔值 | 指明此文件是否受数字版权管理的保护。   |
+| **isVariableBitrate** | 布尔值 | 指明此文件是否已经过可变比特率编码。            |
+| **标题**             | 字符串  | 此音频文件的标题。                                         |
+| **音轨**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |
 | **trackCount**        | Int32   | 此音频文件的原始光盘上的曲目总数。 |
-| **year**              | Int32   | 此音频文件的录制年份。                                |
+| **年份**              | Int32   | 此音频文件的录制年份。                                |
 
 [item-resource]: ../resources/driveitem.md
 

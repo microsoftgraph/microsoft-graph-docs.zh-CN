@@ -13,15 +13,15 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /workbook/names/{name}/range/row
+POST /workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|row|number|要检索的区域的行号。从零开始编制索引。|
+|row|Int32|要检索的区域的行号。从零开始编制索引。|
 
 ## <a name="response"></a>响应
 
@@ -39,18 +39,20 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "range_row"
+  "isComposable": true,
+  "name": "range_row",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
 Content-length: 18
 
 {
-  "row": {
-  }
+  "row": 2
 }
 ```
 
@@ -59,7 +61,7 @@ Content-length: 18
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

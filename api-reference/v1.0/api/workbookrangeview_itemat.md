@@ -13,16 +13,16 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="request-body"></a>请求正文
+## <a name="function-parameters"></a>函数参数
 在请求 URL 中，提供以下查询参数（含值）。
 
 | 参数    | 类型   |说明|
@@ -37,12 +37,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/itemAt(index=0)
 
 ```
 

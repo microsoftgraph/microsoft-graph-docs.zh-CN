@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "可恢复的文件上传"
-ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
-ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
+title: 可恢复的文件上传
+ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265510"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -46,16 +47,27 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>请求正文
 
-不需要请求正文。但是，你可以指定请求正文，以便提供与正在上载的文件有关的其他数据。
+无需请求正文。
+但是，您可以在请求正文中指定 `item` 属性，提供有关所上传文件的其他数据。
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "name": "filename.txt"
+}
+```
 
 例如，要控制是否已获得文件名的行为，可以在请求正文中指定冲突行为属性。
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-    "item": {
-        "@microsoft.graph.conflictBehavior": "rename"
-    }
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  }
 }
 ```
 
@@ -65,6 +77,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
 
+## <a name="properties"></a>属性
+
+| 属性             | 类型               | 说明
+|:---------------------|:-------------------|:---------------------------------
+| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+
 ### <a name="request"></a>请求
 
 对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 
@@ -72,11 +92,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drive/root:/{item-path}:/createUploadSession
+POST /me/drive/root:/{item-path}:/createUploadSession
 Content-Type: application/json
 
 {
   "item": {
+    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }
@@ -104,23 +125,23 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
 
-若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
-可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
+若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
+你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
 必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：**如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小**必须**是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 
-在本示例中，应用将上传 128 字节大小的文件中的前 26 个字节。
+在本示例中，应用程序将上传 128 字节大小的文件中的前 26 个字节。
 
 * **Content-Length** 标头指定当前请求的大小。
-* **Content-Range** 标头指示此请求表示的整个文件中的字节范围。
+* **Content-Range** 标头指定此请求表示的整个文件中的字节范围。
 * 要先知道文件的总长度，然后才可以上传文件的第一个片段。
 
-<!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
 ```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -130,7 +151,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**重要说明：**应用必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
+**重要说明：** 应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
 如果某字节范围声明有不同的文件大小，则请求将失败。
 
 ### <a name="response"></a>响应
@@ -149,11 +170,11 @@ Content-Type: application/json
 }
 ```
 
-应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
+应用程序可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
 始终都应根据以下最佳实践确定字节范围大小。 请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。
-**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。
+**nextExpectedRanges** 属性指定尚未收到的文件的范围，而不是应用程序应上传文件的方式。
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -172,7 +193,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>备注
 
-* `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
+* 属性不会总是列出所有缺少的范围。`nextExpectedRanges`
 * 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
 * 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
 * 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。
@@ -180,9 +201,9 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>完成文件
 
 接收最后一个文件字节范围后，服务器将响应 `HTTP 201 Created` 或 `HTTP 200 OK`。
-响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
+响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
-<!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
 ```
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -232,7 +253,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -258,7 +279,7 @@ HTTP/1.1 204 No Content
 
 通过向 `uploadUrl` 发送 GET 请求来查询上载状态。
 
-<!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
@@ -270,6 +291,7 @@ GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0m
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "expirationDateTime": "2015-01-29T09:21:55.523Z",
@@ -289,9 +311,9 @@ HTTP/1.1 200 OK
 若要显式提交上传会话，应用必须使用将用来提交上传会话的新 **driveItem** 资源发出 PUT 请求。
 此新请求应纠正生成原始上传错误的错误根源。
 
-若要指示应用提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
+若要指示应用程序提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
 
-<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PUT /me/drive/root:/{path_to_parent}
@@ -299,13 +321,13 @@ Content-Type: application/json
 If-Match: {etag or ctag}
 
 {
-  "name": "largefile_2.vhd",
+  "name": "largefile.vhd",
   "@microsoft.graph.conflictBehavior": "rename",
   "@microsoft.graph.sourceUrl": "{upload session URL}"
 }
 ```
 
-**注意：**可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
+**注意：** 可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
 
 ### <a name="http-response"></a>HTTP 响应
 
@@ -345,10 +367,15 @@ Content-Type: application/json
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
+[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+  ],
   "section": "documentation"
 } -->

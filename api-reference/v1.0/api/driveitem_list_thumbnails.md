@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "检索文件或文件夹的缩略图"
-ms.openlocfilehash: 864765898955d0a690ab85dc0be9761a7a9d1856
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 检索文件或文件夹的缩略图
+ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266833"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -49,7 +50,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select`[OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
+此方法支持使用 `$select` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
 
 ## <a name="response"></a>响应
 
@@ -57,17 +58,17 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="example"></a>示例
 
-下面是检索当前用户的 OneDrive 中的某个项的可用缩略图的请求示例。
+下面是检索当前用户的 OneDrive 中某个项的可用缩略图的请求示例。
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
 ```
 
-这将返回项的可用 **thumbnailSet** 数组。 驱动器中的任何项都可以有零个或多个缩略图。
+这将返回项的可用 **thumbnailSet** 的数组。 驱动器中的任何项都可以有零个或多个缩略图。
 
-**注意：**可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。
+**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。
 例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
 
 
@@ -93,11 +94,11 @@ Content-type: application/json
 
 ## <a name="get-a-single-thumbnail"></a>获取单个缩略图
 
-通过在请求中直接解决来检索单个缩略图和大小的元数据。
+通过直接在请求中对其进行寻址来检索单个缩略图和大小的元数据。
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
@@ -109,7 +110,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
 | **thumb-id** | 数字 | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
-| **size**     | string | 请求获取的缩略图的尺寸。 可取值为下面列出的标准大小之一或自定义大小。 |
+| **size**     | string | 请求获取的缩略图的大小。 可取值为下面列出的标准大小之一或自定义大小。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -130,7 +131,7 @@ Content-Type: application/json
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
@@ -138,7 +139,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 
 ### <a name="response"></a>响应
 
-本服务通过到缩略图 URL 的重定向进行响应。
+本服务用到缩略图 URL 的重定向进行响应。
 
 <!-- { "blockType": "response" } -->
 
@@ -150,14 +151,14 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 缩略图 URL 具有缓存安全性。 如果在项发生更改后需要生成新的缩略图，URL 将会更改。
 
 
-## <a name="getting-thumbnails-while-listing-driveitems"></a>获取缩略图的同时列出 DriveItem
+## <a name="getting-thumbnails-while-listing-driveitems"></a>列出 DriveItem 时获取缩略图
 
-如果检索要显示的 DriveItem 资源的列表，可以使用 _$expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
-这使你的应用可以在一个请求中检索缩略图和项，而不是发出多个请求。
+如果检索要显示的 DriveItem 资源的列表，可以使用_ $expand_ 查询字符串参数，以便同时包含这些资源的缩略图。
+这使你的应用可以通过一个请求同时检索缩略图和项，而不是发出多个请求。
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
@@ -203,32 +204,31 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-values"></a>大小的值
+## <a name="size-options"></a>大小选项
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
+| 名称           | 分辨率  | 纵横比 | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest  | Original     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
-| `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
-| `large`        | 800 longest
- | Original     | 最长边重设为 800 像素的缩略图。               |
+| `small`        | 最长 96  | 原始     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
+| `medium`       | 最长 176 | 原始     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
+| `large`        | 最长 800 | 原始     | 最长边重设为 800 像素的缩略图。               |
 | `smallSquare`  | 96x96       | 方形裁剪  | 小方形缩略图                                               |
 | `mediumSquare` | 176x176     | 方形裁剪  | 小方形缩略图                                               |
 | `largeSquare`  | 800x800     | 方形裁剪  | 大方形缩略图                                               |
 
 ## <a name="requesting-custom-thumbnail-sizes"></a>请求自定义缩略图的大小
 
-除了定义尺寸外，应用还可以指定前缀为 `c` 的缩略图尺寸，从而请求获取自定义缩略图尺寸。
+除了定义大小外，应用还可以指定前缀为 `c` 的缩略图大小，从而请求获取自定义缩略图大小。
 例如，如果你的应用需要 300x400 的缩略图，可以按如下所示请求获取此大小：
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 
-响应只包含选定的自定义缩略图尺寸：
+响应只包含选定的自定义缩略图大小：
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -255,8 +255,8 @@ Content-Type: application/json
 | c300x400             | 300x400 像素框 | 原始大小     | 生成适应在 300x400 像素框中显示的缩略图，纵横比不变                                                                 |
 | c300x400_Crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
 
-**注意：**返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
-在某些情况下，如果缩略图已经存在并且可以轻松地缩放以匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
+**注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
+在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
 
 ## <a name="remarks"></a>备注
 
@@ -280,5 +280,17 @@ SharePoint Server 2016 不支持缩略图。
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+      Unable to map some markdown elements into schema.
+         Unmapped methods:
+      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
+         Unmapped tables:
+      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
+    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
+         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
+  ],
   "tocPath": "Items/Thumbnails"
 } -->

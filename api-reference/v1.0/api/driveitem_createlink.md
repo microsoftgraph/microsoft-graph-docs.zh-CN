@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 使用链接共享文件
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223471"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266805"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -47,8 +47,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   名称    |  类型  |                                 说明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **scope** | string | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
+| **类型**  | 字符串 | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
+| **范围** | 字符串 | 可选。 要创建的链接的范围。 或 `organization`。`anonymous` |
 
 
 ### <a name="link-types"></a>链接类型
@@ -66,10 +66,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 **scope** 参数允许使用以下值。
 如果未指定 **scope** 参数，则为组织创建默认的链接类型。
 
-| 类型值     | 说明                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 创建到任意用户都可使用链接访问的 DriveItem 的链接。 管理员可能会禁用匿名链接。                 |
-| `organization` | 创建到用户组织内任意用户都可访问的 DriveItem 的链接。 OneDrive 个人版不支持组织链接范围。 |
+| 值          | 说明
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | 带链接的任何人都可访问，而无需登录。 这可能包括您的组织外部的人员。 匿名链接支持可能被管理员禁用。
+| `organization` | 任何登录到你的组织（承租人）可以使用该链接获取访问权限。 仅适用于商业版OneDrive和SharePoint。
+
 
 ## <a name="response"></a>响应
 
@@ -86,11 +87,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ OneDrive for Business 和 SharePoint 都支持公司可共享的链接。
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -173,7 +174,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink

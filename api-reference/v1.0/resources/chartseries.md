@@ -7,23 +7,23 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
+|[获取 ChartSeries](../api/chartseries_get.md) | [WorkbookChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
 |[创建 ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
-|[列出 points](../api/chartseries_list_points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
-|[更新](../api/chartseries_update.md) | [ChartSeries](chartseries.md)    |更新 ChartSeries 对象。 |
-|[列出](../api/chartseries_list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
+|[列举数据点](../api/chartseries_list_points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
+|[更新](../api/chartseries_update.md) | [WorkbookChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
+|[列表](../api/chartseries_list.md) | [WorkbookChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
+|[ItemAt](../api/chartseriescollection_itemat.md)|[WorkbookChartSeries](chartseries.md)|根据集合中的位置检索系列|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|表示图表中某个系列的名称。|
+|名称|字符串|表示图表中某个系列的名称。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
-|points|[ChartPoints](chartpoint.md) 集合|表示系列中所有数据点的集合。只读。|
+|格式|[WorkbookChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
+|数据点|[WorkbookChartPoint](chartpoint.md) 集合|表示系列中所有数据点的集合。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -31,10 +31,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

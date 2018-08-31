@@ -20,14 +20,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|要应用的条件。|
+|条件|WorkbookFilterCriteria|要应用的条件。|
 
 ## <a name="response"></a>响应
 
@@ -69,8 +69,7 @@ Content-length: 321
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

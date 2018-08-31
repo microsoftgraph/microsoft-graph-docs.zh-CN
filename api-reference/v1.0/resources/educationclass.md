@@ -15,24 +15,23 @@
 |[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。|
 |[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) 集合| 获取课程的教师列表。|
 |[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
-|[Get group](../api/educationclass_get_group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[Get group](../api/educationclass_get_group.md) |[组](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
 |[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
 |[Delete](../api/educationclass_delete.md) | 无 |删除 **educationClass** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id| String| 课程的唯一标识符。|
-|description|String| 课程说明。|
-|displayName|String| 课程名称。|
-|mailNickname|String| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
+|id| 字符串| 课程的唯一标识符。|
+|description|字符串| 课程说明。|
+|displayName|字符串| 课程名称。|
+|mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
-|classCode|String| 学校用于标识课程的课程代码。|
-|externalId|String| 来自同步系统的课程 ID。 |
-|externalName|String|同步系统中的课程名称。|
-|externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`unknownFutureValue`。|
+|classCode|字符串| 学校用于标识课程的课程代码。|
+|externalId|字符串| 来自同步系统的课程 ID。 |
+|externalName|字符串|同步系统中的课程名称。|
+|externalSource|educationExternalSource| 此课程的创建方式。 可取值为：`sis`、`manual`、`unknownFutureValue`。|
 |term|[educationTerm](educationterm.md)|此课程的学期。|
-
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -40,16 +39,17 @@
 |members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 NULL。|
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
+|组|[组](../resources/group.md)| 对应于此类的 directory 组。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

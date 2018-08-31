@@ -1,6 +1,6 @@
 # <a name="get-section"></a>获取分区
 
-检索 [section](../resources/section.md) 对象的属性和关系。
+检索属性和 [onenoteSection](../resources/section.md) 对象的关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -26,15 +26,15 @@ GET /sites/{id}/onenote/sections/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| 接受 | string | `application/json` |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 接受 | 字符串 | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [section](../resources/section.md) 对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onenoteSection](../resources/section.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,6 +1,6 @@
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>deviceConfigurationDeviceStatus 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 尚未记录
 ## <a name="methods"></a>方法
@@ -15,25 +15,25 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
-|userName|String|报告的用户名|
-|deviceModel|String|报告的设备模型|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备合规性宽限期的到期日期/时间|
-|状态|String|策略报告的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|id|字符串|实体的键。|
+|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
+|userName|字符串|报告的用户名|
+|deviceModel|字符串|报告的设备模型|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
+|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|政策报告的完成状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStatus",

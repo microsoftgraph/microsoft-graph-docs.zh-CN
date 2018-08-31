@@ -7,18 +7,18 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |读取 rangeFont 对象的属性和关系。|
-|[更新](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |更新 RangeFont 对象。 |
+|[获取 RangeFont](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |读取 rangeFont 对象的属性和关系。|
+|[更新](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)   |更新 RangeFont 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
-|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic|boolean|表示字体的斜体状态。|
-|name|string|字体名称（例如"Calibri"）|
-|大小|double|字号|
-|underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
+|粗体|布尔|表示字体的加粗状态。|
+|颜色|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|斜体|布尔|表示字体的斜体状态。|
+|名称|string|字体名称（例如"Calibri"）|
+|大小|翻倍|字号|
+|下划线|string|下划线 可取值为：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -28,12 +28,11 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json
