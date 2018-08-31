@@ -1,6 +1,6 @@
 # <a name="update-event"></a>更新事件
 
-更新 event 对象的属性。
+更新 [event](../resources/event.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -33,7 +33,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -44,25 +44,28 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|与事件相关联的邮件正文。|
 |categories|String|与事件相关联的类别。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
-|重要性|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |位置|[位置](../resources/location.md)|事件的位置。|
 |locations|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingUrl|String|在线会议的链接。|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 |responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
-|sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
+|sensitivity|String| 可取值为：`normal`、`personal`、`private`、`confidential`。|
 |showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |
 |subject|String|事件的主题行文本。|
 
-由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此可以使用 `PATCH` 操作在现有**事件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
+由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此可以使用 `PATCH` 操作在现有**事件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。  
+  
+如果您在更新的**事件**是定期系列的主事件，包含多个与会者，并且包含已单独更新的实例，将会发送多份电子邮件通知：一个用于主系列，每个已更新的实例也有一个。  
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。  
+
+>**注意：** 此方法可能返回的错误代码 HTTP 400 错误请求响应，代码为 `ErrorOccurrenceCrossingBoundary`，并显示以下错误消息：Modified occurrence is crossing or overlapping adjacent occurrence。 这表明更新违反了以下 Outlook 对重复例外的限制：一次出现不能移动到上一次出现的日期或之前，并且不能移动到后续出现的日期或之后。
 
 ## <a name="example"></a>示例
 
