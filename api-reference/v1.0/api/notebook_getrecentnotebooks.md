@@ -21,17 +21,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 用户的 `<id | userPrincipalName>` 必须与用于发出请求的授权令牌中编码的用户一致。
 
-## <a name="request-headers"></a>请求头
-| 名称       | 说明|
-|:---------------|:----------|
-| Authorization  | 持有者 {code}|
-
-## <a name="request-parameters"></a>请求参数
-在请求 URL 中，提供以下查询参数（含值）。
+## <a name="function-parameters"></a>函数参数
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|添加用户拥有的笔记本。 若要添加用户拥有的笔记本，请设置为 `true`；否则，设置为 `false`。 如果不添加 `includePersonalNotebooks` 参数，请求会返回 `400` 错误响应。|
+
+## <a name="request-headers"></a>请求标头
+| 名称       | 说明|
+|:---------------|:----------|
+| 授权  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
