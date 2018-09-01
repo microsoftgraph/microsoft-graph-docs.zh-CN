@@ -25,17 +25,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
+
+## <a name="function-parameters"></a>函数参数
+| 参数       | 类型 | 说明|
+|:---------------|:--------|:----------|
+| TimeZoneStandard  | timeZoneStandard  | 时区格式。 支持的值：`Windows` 和 `Iana`。 可选。 |
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-
-
-## <a name="parameters"></a>参数
-| 函数参数       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| TimeZoneStandard  | String  | 时区格式。 支持的值：`Windows` 和 `Iana`。 可选。 |
-
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
