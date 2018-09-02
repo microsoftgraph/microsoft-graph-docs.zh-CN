@@ -2,7 +2,7 @@
 
 获取组执行的 Yammer 组活动的详细信息。
 
-> **注意：**若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,22 +23,22 @@ GET /reports/getYammerGroupsActivityDetail(period='{period_value}')
 GET /reports/getYammerGroupsActivityDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>请求参数
+## <a name="function-parameters"></a>函数参数
 
 在请求 URL 中，提供以下参数之一的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
-| date      | Date   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
+| period    | 字符串 | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 |
+| date      | 日期   | 指定要查看用户在哪个日期执行的任何活动。 {date_value} 必须采用格式 YYYY-MM-DD。 因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。 |
 
-> **注意：**需要在 URL 中设置 period 或 date。
+> **注意：** 需要在 URL 中设置 period 或 date。
 
 ## <a name="request-headers"></a>请求头
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| 授权 | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应
@@ -68,8 +68,9 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammergroupsactivityuserdetail"
 }-->
 
@@ -79,9 +80,33 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+以下是响应的示例。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+#### <a name="request"></a>请求
+如果使用 `date` 调用，则报告的范围限定为给定日期的活动。
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammergroupsactivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>响应
+
+以下是响应的示例。
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -92,9 +117,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 执行 302 重定向，下载的 CSV 文件将采用以下架构。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
+  "blockType": "ignored"
 } -->
 
 ```http
