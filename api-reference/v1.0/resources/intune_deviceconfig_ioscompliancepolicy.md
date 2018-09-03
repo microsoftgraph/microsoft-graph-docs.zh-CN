@@ -1,6 +1,6 @@
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 此类包含 iOS 的合规性设置。
 
@@ -9,35 +9,35 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List iosCompliancePolicies](../api/intune_deviceconfig_ioscompliancepolicy_list.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 集合|列出 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性和关系。|
-|[Get iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_get.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|读取 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性和关系。|
-|[Create iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_create.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|创建新的 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象。|
-|[Delete iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_delete.md)|无|删除 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)。|
-|[Update iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_update.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|更新 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性。|
+|[列举 iosCompliancePolicies](../api/intune_deviceconfig_ioscompliancepolicy_list.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 集合|列出 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性和关系。|
+|[获取 iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_get.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|读取 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性和关系。|
+|[创建 iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_create.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|创建新的 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象。|
+|[删除 iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_delete.md)|无|删除 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)。|
+|[更新 iosCompliancePolicy](../api/intune_deviceconfig_ioscompliancepolicy_update.md)|[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md)|更新 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|版本|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passcodeBlockSimple|布尔值|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passcodeMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passcodeRequiredType|String|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passcodeRequired|Boolean|指示是否需要密码。|
-|osMinimumVersion|String|最低 IOS 版本。|
-|osMaximumVersion|String|最高 IOS 版本。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|String|要求移动威胁防护最低风险级别来报告不合规情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为： `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequired|布尔值|指示是否需要密码。|
+|osMinimumVersion|字符串|最低 IOS 版本。|
+|osMaximumVersion|字符串|最高 IOS 版本。|
+|securityBlockJailbrokenDevices|布尔值|设备不得越狱或取得 root 权限。|
+|deviceThreatProtectionEnabled|布尔值|要求设备已启用设备威胁防护。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求按移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|managedEmailProfileRequired|布尔值|指示是否需要托管电子邮件配置文件。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -48,13 +48,14 @@
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|设备合规性设备状态概述 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|设备合规性用户状态概述 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) 集合|合规性设置状态设备摘要 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) 集合|此合规性策略的分配集合。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|赋值|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) 集合|此合规性策略的作业集合。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "@odata.type": "microsoft.graph.iosCompliancePolicy"
 }
 -->

@@ -1,6 +1,6 @@
 # <a name="update-iosupdatedevicestatus"></a>更新 iosUpdateDeviceStatus
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) 对象的 JSON 表示形式。
@@ -34,18 +34,18 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|installStatus|String|策略报告安装状态。 可取值为：`success`、`available`、`idle`、`downloading`、`downloadFailed`、`downloadRequiresComputer`、`downloadInsufficientSpace`、`downloadInsufficientPower`、`downloadInsufficientNetwork`、`installing`、`installInsufficientSpace`、`installInsufficientPower`、`installPhoneCallInProgress`、`installFailed`、`notSupportedOperation`、`sharedDeviceUserLoggedInError`。|
-|osVersion|String|报告的设备版本。|
-|deviceId|String|报告的设备 ID。|
-|userId|String|报告的用户 ID。|
-|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
-|userName|String|报告的用户名|
-|deviceModel|String|报告的设备模型|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期日期/时间|
-|status|String|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|id|字符串|实体的键。|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|策略报告安装状态。 可取值为： `success`， `available`， `idle`， `unknown`， `downloading`， `downloadFailed`， `downloadRequiresComputer`， `downloadInsufficientSpace`， `downloadInsufficientPower`， `downloadInsufficientNetwork`， `installing`， `installInsufficientSpace`， `installInsufficientPower`， `installPhoneCallInProgress`， `installFailed`， `notSupportedOperation`， `sharedDeviceUserLoggedInError`。|
+|osVersion|字符串|报告的设备版本。|
+|deviceId|字符串|报告的设备 ID。|
+|userId|字符串|报告的用户 ID。|
+|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
+|userName|字符串|报告的用户名|
+|deviceModel|字符串|报告的设备模型|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
+|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 
 

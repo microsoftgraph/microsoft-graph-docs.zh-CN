@@ -11,8 +11,7 @@
 |应用程序 | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-用户邮箱中的 [邮件](../resources/message.md) 附件。
+<!-- { "blockType": "ignored" } --> 用户邮箱中的 [邮件](../resources/message.md)附件。
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -32,7 +31,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -55,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -66,15 +65,14 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }

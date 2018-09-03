@@ -1,6 +1,6 @@
 # <a name="update-organization"></a>更新 organization
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [organization](../resources/intune_onboarding_organization.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [organization](../resources/intune_onboarding_organization.md) 对象的 JSON 表示形式。
@@ -35,7 +35,7 @@ PATCH /organization/{organizationId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID。|
-|mobileDeviceManagementAuthority|String|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
 
 

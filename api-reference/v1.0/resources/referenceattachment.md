@@ -17,7 +17,7 @@
 |contentType|String|附件的内容类型。|
 |id|String|附件 ID。只读。|
 |isInline|Boolean|如果附件显示为内嵌在嵌入对象的正文中，则设置为 true。|
-|lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
 |名称|String|显示在用于表示嵌入附件的图标下方的文本。这不必是实际的文件名。|
 |size|Int32|存储在邮件附件中的元数据大小（以字节为单位）。 此值不表示实际文件的大小。|
 
@@ -30,11 +30,10 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.attachment",
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 

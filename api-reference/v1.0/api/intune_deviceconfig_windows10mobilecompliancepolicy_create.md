@@ -1,6 +1,6 @@
 # <a name="create-windows10mobilecompliancepolicy"></a>创建 windows10MobileCompliancePolicy
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 windows10MobileCompliancePolicy 对象的 JSON 表示形式。
@@ -34,28 +34,28 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁 Windows Phone 设备。|
-|passwordBlockSimple|Boolean|是否阻止同步日历。|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|版本|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passwordRequired|布尔值|需要密码才可解锁 Windows Phone 设备。|
+|passwordBlockSimple|布尔值|是否阻止同步日历。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|String|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
-|passwordRequireToUnlockFromIdle|Boolean|需要密码才可解锁空闲设备。|
-|osMinimumVersion|String|最低 Windows Phone 版本。|
-|osMaximumVersion|String|最高 Windows Phone 版本。|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
-|bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
-|secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
-|codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
-|storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
+|passwordRequireToUnlockFromIdle|布尔值|需要密码才可解锁空闲设备。|
+|osMinimumVersion|字符串|最低 Windows Phone 版本。|
+|osMaximumVersion|字符串|最高 Windows Phone 版本。|
+|earlyLaunchAntiMalwareDriverEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
+|bitLockerEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
+|secureBootEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
+|codeIntegrityEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常。|
+|storageRequireEncryption|布尔值|要求对 Windows 设备加密。|
 
 
 

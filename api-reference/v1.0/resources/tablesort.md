@@ -7,21 +7,17 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |读取 tableSort 对象的属性和关系。|
+|[获取 TableSort](../api/tablesort_get.md) | [WorkbookTableSort](tablesort.md) |读取 tableSort 对象的属性和关系。|
 |[应用](../api/tablesort_apply.md)|无|执行排序操作。|
 |[清除](../api/tablesort_clear.md)|无|清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。|
 |[重新应用](../api/tablesort_reapply.md)|无|对表重新应用当前的排序参数。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|matchCase|boolean|表示最后一次对表进行排序时大小写是否有影响。只读。|
-|方法|string|表示最后一次对表排序所使用的中文字符排序方法。可能的值是：`PinYin`、`StrokeCount`。只读。|
-
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|表示最后一次对表排序所使用的当前条件。只读。|
+|字段|[WorkbookSortField](sortfield.md) 集合|表示最后一次对表排序所使用的当前条件。只读。|
+|matchCase|布尔值|表示最后一次对表进行排序时大小写是否有影响。只读。|
+|方法|字符串|代表上次表排序使用的中文排序方法。 可取值为：`PinYin`、`StrokeCount`。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -32,13 +28,15 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": [{ "@odata.type": "microsoft.graph.workbookSortField" }]
 }
 
 ```

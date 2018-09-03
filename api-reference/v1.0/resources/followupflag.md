@@ -8,7 +8,7 @@
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|完成跟进的日期和时间。|
 |dueDateTime|**dateTimeTimeZone**|待完成的跟进的日期和时间。|
-|flagStatus|String|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
+|flagStatus|FollowupFlagStatus|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
 |startDateTime|**dateTimeTimeZone**|要开始的跟进的日期和时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式

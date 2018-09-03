@@ -1,6 +1,6 @@
 # <a name="update-auditevent"></a>更新 auditEvent
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [auditEvent](../resources/intune_auditing_auditevent.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [auditEvent](../resources/intune_auditing_auditevent.md) 对象的 JSON 表示形式。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
@@ -81,7 +81,7 @@ Content-length: 1338
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -132,7 +132,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

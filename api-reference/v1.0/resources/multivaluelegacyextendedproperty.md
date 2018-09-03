@@ -8,14 +8,14 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[帖子](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)。请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
+|[发布](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | 支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)。请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
 |[获取](../api/multivaluelegacyextendedproperty_get.md) |通过 [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 对象扩展的受支持的资源实例（[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md)、[contactFolder](../resources/contactfolder.md) 或 [post](../resources/post.md) 组）。 |使用 `$expand` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|string|属性标识符。只读。|
-|value|string collection|属性值的集合。|
+|ID|字符串|属性标识符。只读。|
+|值|字符串集合|属性值的集合。|
 
 ## <a name="relationships"></a>关系
 无
@@ -25,12 +25,11 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

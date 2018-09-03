@@ -1,6 +1,7 @@
-# <a name="update-plannerplan"></a>更新 plannerplan
+# <a name="update-plannerplan"></a>更新 plannerPlan
 
-更新 **plannerplan** 对象的属性。
+更新 **plannerPlan** 对象的属性。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -13,12 +14,14 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>
+PATCH /planner/plans/{id}
 ```
-## <a name="optional-request-headers"></a>可选的请求标头
+
+## <a name="request-headers"></a>请求标头
+
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 plannerPlan 的上次已知 ETag 值。必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,8 +29,8 @@ PATCH /planner/plans/<id>
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|所有者|字符串|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
-|title|String|计划的标题。|
+|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|标题|String|计划的标题。|
 
 ## <a name="response"></a>响应
 
@@ -43,7 +46,7 @@ PATCH /planner/plans/<id>
   "name": "update_plannerplan"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
 Content-length: 29
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

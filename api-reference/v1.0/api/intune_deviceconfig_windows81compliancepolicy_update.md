@@ -1,6 +1,6 @@
 # <a name="update-windows81compliancepolicy"></a>更新 windows81CompliancePolicy
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) 对象的 JSON 表示形式。
@@ -34,23 +34,23 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|描述|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
-|passwordBlockSimple|Boolean|指示是否阻止简单密码。|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|版本|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passwordRequired|布尔|需要密码才可解锁 Windows 设备。|
+|passwordBlockSimple|布尔|指示是否阻止简单密码。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|String|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可能的值为： `deviceDefault` 、 `alphanumeric` 、 `numeric` 。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
-|osMinimumVersion|String|最低 Windows 8.1 版本。|
-|osMaximumVersion|String|最高 Windows 8.1 版本。|
-|storageRequireEncryption|Boolean|指示是否要求对 Windows 8.1 设备加密。|
+|osMinimumVersion|字符串|最低 Windows 8.1 版本。|
+|osMaximumVersion|字符串|最高 Windows 8.1 版本。|
+|storageRequireEncryption|布尔|指示是否要求对 Windows 8.1 设备加密。|
 
 
 

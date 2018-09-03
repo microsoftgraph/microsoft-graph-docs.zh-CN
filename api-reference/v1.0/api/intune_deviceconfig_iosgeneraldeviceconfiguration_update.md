@@ -1,6 +1,6 @@
 # <a name="update-iosgeneraldeviceconfiguration"></a>更新 iosGeneralDeviceConfiguration
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) 对象的 JSON 表示形式。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountBlockModification|Boolean|指示设备处于监督模式时是否允许帐户修改。|
 |activationLockAllowWhenSupervised|Boolean|指示设备处于监督模式时是否允许激活锁定。|
-|airDropBlocked|Boolean|指示设备处于监督模式时是否允许 AirDrop。|
+|airDropBlocked|Boolean|指示设备处于监督模式时是否允许使用 AirDrop。|
 |airDropForceUnmanagedDropTarget|Boolean|指示是否导致将 AirDrop 视为非托管放置目标（iOS 9.0 及更高版本）。|
 |airPlayForcePairingPasswordForOutgoingRequests|Boolean|指示是否强制所有接收来自此设备的 AirPlay 请求的设备使用配对密码。|
 |appleWatchBlockPairing|Boolean|指示设备处于监督模式时是否允许 Apple Watch 配对（iOS 9.0 及更高版本）。|
@@ -50,12 +50,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |appleNewsBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用新闻（iOS 9.0 及更高版本）。|
 |appsSingleAppModeList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|获取或设置允许自主进入单个应用模式的 iOS 应用列表。 仅限监督模式。 iOS 7.0 及更高版本。 该集合最多可包含 500 个元素。|
 |appsVisibilityList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|可见性列表中的应用列表（可见/可启动应用列表或隐藏/不可启动应用列表，由 AppsVisibilityListType 控制）（iOS 9.3 及更高版本）。 该集合最多可包含 10000 个元素。|
-|appsVisibilityListType|String|位于 AppsVisibilityList 中的列表类型。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
+|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|位于 AppsVisibilityList 中的列表类型。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |appStoreBlockAutomaticDownloads|Boolean|指示设备处于监督模式时是否阻止自动下载在其他设备上购买的应用（iOS 9.0 及更高版本）。|
-|appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。|
+|appStoreBlocked|Boolean|指示是否阻止用户使用应用商店。|
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
 |appStoreBlockUIAppInstallation|Boolean|指示是否阻止应用商店应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
-|appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
+|appStoreRequirePassword|Boolean|指示使用应用商店时是否需要密码。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
 |cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |classroomAppBlockRemoteScreenObservation|Boolean|指示设备处于监督模式时是否允许 Classroom 应用进行远程屏幕观察（iOS 9.3 及更高版本）。|
 |classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动授予 Classroom 应用上托管课程的教师权限，以便在设备处于监督模式时查看学生的屏幕且不会出现提示。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
-|compliantAppListType|String|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |configurationProfileBlockChanges|Boolean|指示设备处于监督模式时是否阻止用户以交互方式安装配置文件和证书。|
 |definitionLookupBlocked|Boolean|指示设备处于监督模式时是否阻止定义查找（iOS 8.1.3 及更高版本）。|
 |deviceBlockEnableRestrictions|Boolean|指示设备处于监督模式时是否允许用户在设备设置中启用限制。|
@@ -112,19 +112,19 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。|
 |kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。|
 |kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。|
-|kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音插入设置。|
+|kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音过滤设置。|
 |kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
 |kioskModeRequireAssistiveTouch|Boolean|指示在展台模式下是否要求辅助触摸。|
 |kioskModeRequireColorInversion|Boolean|指示在展台模式下是否要求颜色反转。|
 |kioskModeRequireMonoAudio|Boolean|指示在展台模式下是否要求单声道音频。|
-|kioskModeRequireVoiceOver|Boolean|指示在展台模式下是否要求语音插入。|
+|kioskModeRequireVoiceOver|Boolean|指示在展台模式下是否要求语音过滤。|
 |kioskModeRequireZoom|Boolean|指示在展台模式下是否要求缩放。|
 |kioskModeManagedAppId|String|用于展台模式的应用的托管应用 ID。 如果指定了 KioskModeManagedAppId，则将忽略 KioskModeAppStoreUrl。|
 |lockScreenBlockControlCenter|Boolean|指示是否阻止用户在锁定屏幕上使用控制中心。|
 |lockScreenBlockNotificationView|Boolean|指示是否阻止用户在锁定屏幕上使用通知视图。|
-|lockScreenBlockPassbook|Boolean|指示设备处于锁定状态时是否阻止用户使用 Passbook。|
+|lockScreenBlockPassbook|Boolean|指示设备处于锁定状态时是否阻止用户使用 passbook。|
 |lockScreenBlockTodayView|Boolean|指示是否阻止用户在锁定屏幕上使用今日视图。|
 |mediaContentRatingAustralia|[mediaContentRatingAustralia](../resources/intune_deviceconfig_mediacontentratingaustralia.md)|澳大利亚的媒体内容评级设置|
 |mediaContentRatingCanada|[mediaContentRatingCanada](../resources/intune_deviceconfig_mediacontentratingcanada.md)|加拿大的媒体内容评级设置|
@@ -136,7 +136,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|英国的媒体内容评级设置|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|美国的媒体内容评级设置|
 |networkUsageRules|[iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md) 集合|托管应用列表以及适用于它们的网络规则。 该集合最多可包含 1000 个元素。|
-|mediaContentRatingApps|String|应用的媒体内容评级设置。可取值为：`allAllowed`、`allBlocked`、`agesAbove4`、`agesAbove9`、`agesAbove12`、`agesAbove17`。|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|媒体内容应用程序的分级设置。 可取值为：`allAllowed`、`allBlocked`、`agesAbove4`、`agesAbove9`、`agesAbove12`、`agesAbove17`。|
 |messagesBlocked|Boolean|指示是否阻止用户使用受监督设备上的消息应用。|
 |notificationsBlockSettingsModification|Boolean|指示是否允许修改通知设置（iOS 9.3 及更高版本）。|
 |passcodeBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
@@ -150,14 +150,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passcodeMinimumCharacterSetCount|Int32|密码必须包含的字符集数。 有效值为 0 至 4|
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeSignInFailureCountBeforeWipe|Int32|擦除设备前允许登录失败的次数。 有效值为 4 至 11|
-|passcodeRequiredType|String|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passcodeRequired|Boolean|指示是否需要密码。|
 |podcastsBlocked|Boolean|指示在受监督的设备上是否阻止用户使用播客（iOS 8.0 及更高版本）。|
 |safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
 |safariBlockJavaScript|Boolean|指示在 Safari 中是否阻止 JavaScript。|
 |safariBlockPopups|Boolean|指示在 Safari 中是否阻止弹出窗口。|
 |safariBlocked|Boolean|指示是否阻止用户使用 Safari。|
-|safariCookieSettings|String|Safari 的 Cookie 设置。 可取值为：`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways`。|
+|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Safari 的 Cookie 设置。 可取值为：`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways`。|
 |safariManagedDomains|String 集合|与此处列出的模式匹配的 URL 将被视为托管。|
 |safariPasswordAutoFillDomains|String 集合|用户只能通过匹配此处列出的模式的 URL 将密码保存在 Safari 中。 适用于处于监督模式下的设备（iOS 9.3 及更高版本）。|
 |safariRequireFraudWarning|Boolean|指示在 Safari 中是否需要诈骗警告。|

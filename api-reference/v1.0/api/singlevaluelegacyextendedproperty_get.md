@@ -97,7 +97,7 @@ GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_val
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-|||UNTRANSLATED_CONTENT_START|||Get **mailFolder** instances:|||UNTRANSLATED_CONTENT_END||| <!-- { "blockType": "ignored" } -->
+获取 **mailFolder** 实例： <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -183,11 +183,11 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-## <a name="parameters"></a>参数
+## <a name="path-parameters"></a>Path 参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
+|id_value|字符串|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|property_value |字符串|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

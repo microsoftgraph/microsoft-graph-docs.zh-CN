@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 下载文件
-ms.openlocfilehash: b5456acc6661fdc7a9682bf2b0ff70a2e5e38a3e
-ms.sourcegitcommit: 9f5a17e9978197ab47b460c53f7fe2cec180d4a2
+ms.openlocfilehash: efed0b12484c3656e5b2b4b9cbe8fb84cdc27006
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "19492728"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268086"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 | 名称          | 值  | 说明                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
+| if-none-match | 字符串 | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 
 ## <a name="example"></a>示例
 
@@ -58,7 +58,8 @@ GET /me/drive/items/{item-id}/content
 
 返回 `302 Found` 响应，该响应重定向到文件的预先身份验证的下载 URL。这是可通过 DriveItem 上的 `@microsoft.graph.downloadUrl` 属性获得的同一个 URL。
 
-若要下载该文件的内容，应用程序将需要遵循响应中的 `Location` 标头。许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。
+应用必须遵循响应中的 `Location` 头，才能下载文件内容。
+许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。
 
 预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。
 
@@ -73,7 +74,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 若要从文件中下载部分范围的字节，应用程序可以使用 [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) 中指定的 `Range` 标头。请注意，必须将 `Range` 标头附加到实际 `@microsoft.graph.downloadUrl` URL，而不是 `/content` 的请求。
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -87,6 +88,7 @@ Range: bytes=0-1023
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

@@ -1,4 +1,4 @@
-# <a name="add-attachment"></a>Add attachment
+# <a name="add-attachment"></a>添加附件
 
 使用此 API 将 [附件](../resources/attachment.md) 添加到帖子。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
 
@@ -20,8 +20,7 @@
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
+<!-- { "blockType": "ignored" } --> [线程](../resources/post.md)中 [帖子](../resources/conversationthread.md)的附件属于分组 [对话](../resources/conversation.md) 。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -29,7 +28,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。
@@ -54,14 +53,14 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "contentBytes": "base64-contentBytes-value"
 }
 ```
 
 在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回所有属性。
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

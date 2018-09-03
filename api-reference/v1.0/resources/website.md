@@ -6,7 +6,7 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|String| 可能的值是：`other`、`home`、`work`、`blog`、`profile`。|
+|type|websiteType| 可取值为：`other`、`home`、`work`、`blog`、`profile`。|
 |address|string|网站的 URL。|
 |displayName|string|网站的显示名称。|
 
