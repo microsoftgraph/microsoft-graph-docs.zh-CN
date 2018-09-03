@@ -93,26 +93,21 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>参数
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|对象在相应集合中的唯一标识符。必需。|
-|_Body parameters_|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| 一个或多个单值扩展属性的数组。 |
-|id|String|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|值|string|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
-
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
 
 提供每个 [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) 对象在资源实例的 **singleValueExtendedProperties** 集合属性中的 JSON 正文。
+
+|属性|类型|说明|
+|:-----|:-----|:-----|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) 集合| 一个或多个单值扩展属性的数组。 |
+|id|String|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|值|string|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
 在_新的_资源实例中创建扩展属性时，除了新的 **singleValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
 
@@ -193,7 +188,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
 
 Content-Type: application/json
 

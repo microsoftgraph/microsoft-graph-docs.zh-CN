@@ -1,6 +1,6 @@
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [deviceInstallState](../resources/intune_books_deviceinstallstate.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -25,8 +25,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceInstallState](../resources/intune_books_deviceinstallstate.md) 对象的 JSON 表示形式。
@@ -35,15 +35,15 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|deviceName|String|设备名称。|
-|deviceId|String|设备 ID。|
+|id|字符串|实体的键。|
+|deviceName|字符串|设备名称。|
+|deviceId|字符串|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
-|installState|String|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|String|安装失败的错误代码。|
-|osVersion|String|操作系统版本。|
-|osDescription|String|操作系统说明。|
-|userName|String|设备用户名。|
+|installState|[installState](../resources/intune_books_installstate.md)|电子书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
+|errorCode|字符串|安装失败的错误代码。|
+|osVersion|字符串|操作系统版本。|
+|osDescription|字符串|操作系统说明。|
+|userName|字符串|设备用户名。|
 
 
 

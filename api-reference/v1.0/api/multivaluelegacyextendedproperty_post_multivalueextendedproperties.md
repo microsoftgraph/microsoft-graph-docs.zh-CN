@@ -93,28 +93,24 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>参数
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|对象在相应集合中的唯一标识符。必需。|
-|_Body parameters_|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 一个或多个多值扩展属性的数组。 |
-|id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
-
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| 授权 | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
 
 提供每个 [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) 对象在资源实例的 **multiValueExtendedProperties** 集合属性中的 JSON 正文。
 
+|属性|类型|说明|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) 集合| 一个或多个多值扩展属性的数组。 |
+|ID|id|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
+
 在_新建_资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
+
 
 ## <a name="response"></a>响应
 
@@ -188,7 +184,7 @@ Content-Type: application/json
 
 成功的响应由 `HTTP 201 Created` 响应代码表示，并在响应正文中包括新事件，类似于 [仅创建事件](../api/user_post_events.md) 中的响应。该响应不包括任何新建的扩展属性。
 
-若要查看新建的扩展属性，请 [获取通过扩展属性展开的事件](../api/multivaluelegacyextendedproperty_get.md)。
+若要查看新建的扩展属性，请 [获取通过扩展属性扩展的事件](../api/multivaluelegacyextendedproperty_get.md)。
 
 
 ****
@@ -220,7 +216,7 @@ Content-Type: application/json
 
 成功的响应由 `HTTP 200 OK` 响应代码表示，并在响应正文中包括指定的邮件，类似于 [更新邮件](../api/message_update.md) 中的响应。该响应不包括新建的扩展属性。
 
-若要查看新建的扩展属性，请 [获取通过扩展属性展开的邮件](../api/multivaluelegacyextendedproperty_get.md)。
+若要查看新建的扩展属性，请 [获取通过扩展属性扩展的邮件](../api/multivaluelegacyextendedproperty_get.md)。
 
 
 <!-- This page was manually created. -->

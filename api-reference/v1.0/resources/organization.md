@@ -11,10 +11,10 @@
 |:---------------|:--------|:----------|
 |[获取组织](../api/organization_get.md) | [组织](organization.md) |读取 organization 对象的属性和关系。|
 |[更新](../api/organization_update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
-|**开放扩展**| | ||**开放扩展**| | |
+|**开放扩展**| 
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
-|**架构扩展**| | |
+|**架构扩展**| 
 |[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 
 ## <a name="properties"></a>属性

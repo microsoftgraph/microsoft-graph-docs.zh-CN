@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
+POST /workbook/names/{name}/range/sort/apply
 POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
@@ -21,7 +21,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,11 +29,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|fields|SortField|作为排序依据的条件列表。|
-|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
-|hasHeaders|布尔|可选。该区域是否有标头。|
-|orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
-|method|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
+|字段|WorkbookSortField 集合|作为排序依据的条件列表。|
+|matchCase|布尔值|可选。是否让大小写对字符串排序产生影响。|
+|hasHeaders|布尔值|可选。该区域是否有标头。|
+|orientation|string|可选。 操作是否排序行或列。  可取值为：`Rows`、`Columns`。|
+|方法|string|可选。 中文字符使用的排序方法。  可取值为：`PinYin`、`StrokeCount`。|
 
 ## <a name="response"></a>响应
 
@@ -48,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
 Content-length: 358
 
@@ -76,9 +76,7 @@ Content-length: 358
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

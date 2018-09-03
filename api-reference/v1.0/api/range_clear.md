@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
+POST /workbook/names/{name}/range/clear
 POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
@@ -21,7 +21,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|applyTo|string|可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。|
+|applyTo|string|可选。 确定清除操作的类型。  可取值为：`All`、`Formats`、`Contents`。|
 
 ## <a name="response"></a>响应
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -56,9 +56,7 @@ Content-length: 32
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

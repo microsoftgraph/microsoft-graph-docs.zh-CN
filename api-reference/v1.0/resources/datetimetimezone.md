@@ -5,8 +5,8 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|DateTime|String|日期和时间组合表示形式的单个时间点 (`<date>T<time>`)。|
-|TimeZone|String|以下时区名称之一。|
+|dateTime|String|日期和时间组合表示形式 (`<date>T<time>`) 的单个时间点。|
+|timeZone|String|以下时区名称之一。|
 
 _TimeZone_ 属性可以设置为 Windows 支持的任意时区，以及以下时区名称。
 

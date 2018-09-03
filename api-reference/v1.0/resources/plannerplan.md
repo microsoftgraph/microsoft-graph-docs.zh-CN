@@ -6,18 +6,18 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |读取 **plannerPlan** 对象的属性和关系。|
-|[List buckets](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
-|[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) collection| 获取 **plannerTask** 对象集合。|
-|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
+|[获取 plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |读取 **plannerPlan** 对象的属性和关系。|
+|[列出存储桶](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
+|[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) 集合| 获取 **plannerTask** 对象集合。|
+|[更新](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|只读。创建计划的日期和时间时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|String| 只读。计划的 ID。长度为 28 个字符，区分大小写。[格式验证](planner_identifiers_disclaimer.md)在服务上完成。|
-|owner|字符串|拥有计划的[组](group.md)的 ID。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
-|title|String|必填。计划的标题|
+|createdDateTime|DateTimeOffset|只读。创建计划的日期和时间时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
+|id|字符串| 只读。 计划的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner_identifiers_disclaimer.md)由服务执行。|
+|所有者|String|拥有计划的[组](group.md)的 ID。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|标题|String|必填。计划的标题|
 |createdBy|[identitySet](identityset.md)|只读。创建计划的用户。|
 
 ## <a name="relationships"></a>关系
@@ -25,7 +25,7 @@
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| 只读。可为 Null。计划中的存储桶集合。|
 |详细信息|[plannerPlanDetails](plannerplandetails.md)| 只读。可为 NULL。关于计划的其他详细信息。|
-|tasks|[plannerTask](plannertask.md) collection| 只读。可为 Null。计划中的任务集合。|
+|tasks|[plannerTask](plannertask.md) 集合| 只读。可为 Null。计划中的任务集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,6 +33,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

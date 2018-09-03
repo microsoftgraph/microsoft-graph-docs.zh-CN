@@ -11,25 +11,27 @@
 |应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/{name}/image
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
+| 授权  | Bearer {token}。必需。 |
+| Workbook-Session-Id  | 决定是否保留更改（非“可选”）的工作簿会话 ID 。|
 
-## <a name="request-body"></a>请求正文
+## <a name="path-parameters"></a>路径参数
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|height|number|可选。生成的图像的所需高度。|
-|width|number|可选。生成的图像的所需宽度。|
-|fittingMode|string|可选。用于将图表缩放到指定尺寸的方法（如果设置了高度和宽度的话）。可取值为 `Fit`、`FitAndCenter`、`Fill`。|
+|高度|Int32|生成图像的所需高度。 可选。|
+|宽度|Int32|生成图像的所需宽度。 可选。|
+|fittingMode|字符串|用于将图表缩放至指定尺寸的方法 （如果同时设置了高度和宽度）。"  可能的值为： `Fit` 、 `FitAndCenter` 、 `Fill` 。|
 
 ## <a name="response"></a>响应
 
@@ -37,16 +39,18 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
+
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-<!-- { "blockType": "ignored" } -->
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
