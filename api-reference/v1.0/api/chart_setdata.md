@@ -13,13 +13,13 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setData
+POST /workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -27,8 +27,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|sourceData|string|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可以是下列值之一：自动（默认）、行、列。可能的值是：`Auto`、`Columns`、`Rows`。|
+|sourceData|Json|对应于源数据的 Range 对象。|
+|seriesBy|string|可选。 设置行或列在图表上用作数据系列的方式。 可以是下列选项之一：自动 （默认）、行、列。  可取值为：`Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
   "name": "chart_setdata"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setData
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
 Content-type: application/json
 Content-length: 70
 
@@ -56,9 +56,7 @@ Content-length: 70
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
