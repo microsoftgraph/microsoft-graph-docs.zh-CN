@@ -1,16 +1,31 @@
-<span data-ttu-id="291f4-p105">配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="291f4-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
+# <a name="domaindnstxtrecord-resource-type"></a><span data-ttu-id="44b18-101">domainDnsTxtRecord 资源类型</span><span class="sxs-lookup"><span data-stu-id="44b18-101">domainDnsTxtRecord resource type</span></span>
 
-## <span data-ttu-id="291f4-137">关系</span><span class="sxs-lookup"><span data-stu-id="291f4-137">Relationships</span></span>
-<a id="relationships" class="xliff"></a>
-<span data-ttu-id="291f4-138">无</span><span class="sxs-lookup"><span data-stu-id="291f4-138">None</span></span>
+<span data-ttu-id="44b18-p101">表示已添加到租户中特定域的 DNS 区域文件的 TXT 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。</span><span class="sxs-lookup"><span data-stu-id="44b18-p101">Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="44b18-104">方法</span><span class="sxs-lookup"><span data-stu-id="44b18-104">Methods</span></span>
+<span data-ttu-id="44b18-p102">不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。</span><span class="sxs-lookup"><span data-stu-id="44b18-p102">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="44b18-107">属性</span><span class="sxs-lookup"><span data-stu-id="44b18-107">Properties</span></span>
+| <span data-ttu-id="44b18-108">属性</span><span class="sxs-lookup"><span data-stu-id="44b18-108">Property</span></span>     | <span data-ttu-id="44b18-109">类型</span><span class="sxs-lookup"><span data-stu-id="44b18-109">Type</span></span>   |<span data-ttu-id="44b18-110">说明</span><span class="sxs-lookup"><span data-stu-id="44b18-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="44b18-111">id</span><span class="sxs-lookup"><span data-stu-id="44b18-111">id</span></span>|<span data-ttu-id="44b18-112">String</span><span class="sxs-lookup"><span data-stu-id="44b18-112">String</span></span>| <span data-ttu-id="44b18-p103">分配给此实体的唯一标识符。不可为 NULL，只读。</span><span class="sxs-lookup"><span data-stu-id="44b18-p103">Unique identifier assigned to this entity. Not nullable, Read-only.</span></span> |
+|<span data-ttu-id="44b18-115">isOptional</span><span class="sxs-lookup"><span data-stu-id="44b18-115">isOptional</span></span>|<span data-ttu-id="44b18-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="44b18-116">Boolean</span></span>| <span data-ttu-id="44b18-117">如果为 false，则客户必须在 DNS 主机上配置 TXT 记录才能使 Microsoft Online Services 在域中正常运行。</span><span class="sxs-lookup"><span data-stu-id="44b18-117">If false, the TXT record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
+|<span data-ttu-id="44b18-118">label</span><span class="sxs-lookup"><span data-stu-id="44b18-118">label</span></span>|<span data-ttu-id="44b18-119">String</span><span class="sxs-lookup"><span data-stu-id="44b18-119">String</span></span>| <span data-ttu-id="44b18-120">配置 DNS 主机上的 TXT 记录的*名称*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="44b18-120">Value to use when configuring the *name* property of the TXT record at the DNS host.</span></span>|
+|<span data-ttu-id="44b18-121">recordType</span><span class="sxs-lookup"><span data-stu-id="44b18-121">recordType</span></span>|<span data-ttu-id="44b18-122">String</span><span class="sxs-lookup"><span data-stu-id="44b18-122">String</span></span>| <span data-ttu-id="44b18-p104">DNS 记录类型。此值始终是 *Txt*。Key</span><span class="sxs-lookup"><span data-stu-id="44b18-p104">Type of DNS record. The value is always *Txt*. Key</span></span> |
+|<span data-ttu-id="44b18-126">supportedService</span><span class="sxs-lookup"><span data-stu-id="44b18-126">supportedService</span></span>|<span data-ttu-id="44b18-127">String</span><span class="sxs-lookup"><span data-stu-id="44b18-127">String</span></span>| <span data-ttu-id="44b18-128">Microsoft Online Service 或与该 TXT 记录存在依赖关系的功能。</span><span class="sxs-lookup"><span data-stu-id="44b18-128">Microsoft Online Service or feature that has a dependency on this TXT record.</span></span></br></br><span data-ttu-id="44b18-129">可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*</span><span class="sxs-lookup"><span data-stu-id="44b18-129">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
+|<span data-ttu-id="44b18-130">text</span><span class="sxs-lookup"><span data-stu-id="44b18-130">text</span></span>|<span data-ttu-id="44b18-131">String</span><span class="sxs-lookup"><span data-stu-id="44b18-131">String</span></span>| <span data-ttu-id="44b18-132">配置 DNS 主机上的*文本*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="44b18-132">Value used when configuring the *text* property at the DNS host.</span></span> |
+|<span data-ttu-id="44b18-133">ttl</span><span class="sxs-lookup"><span data-stu-id="44b18-133">ttl</span></span>|<span data-ttu-id="44b18-134">Int32</span><span class="sxs-lookup"><span data-stu-id="44b18-134">Int32</span></span>| <span data-ttu-id="44b18-p105">配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="44b18-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="44b18-137">关系</span><span class="sxs-lookup"><span data-stu-id="44b18-137">Relationships</span></span>
+<span data-ttu-id="44b18-138">无</span><span class="sxs-lookup"><span data-stu-id="44b18-138">None</span></span>
 
 
-## <span data-ttu-id="291f4-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="291f4-139">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="291f4-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="291f4-140">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="44b18-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="44b18-139">JSON representation</span></span>
+<span data-ttu-id="44b18-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="44b18-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -19,7 +34,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

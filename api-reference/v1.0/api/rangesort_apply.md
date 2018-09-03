@@ -1,54 +1,54 @@
-# <a name="rangesort-apply"></a><span data-ttu-id="75f38-101">RangeSort: apply</span><span class="sxs-lookup"><span data-stu-id="75f38-101">RangeSort: apply</span></span>
+# <a name="rangesort-apply"></a><span data-ttu-id="a0103-101">RangeSort: apply</span><span class="sxs-lookup"><span data-stu-id="a0103-101">RangeSort: apply</span></span>
 
-<span data-ttu-id="75f38-102">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="75f38-102">Perform a sort operation.</span></span>
-## <a name="permissions"></a><span data-ttu-id="75f38-103">权限</span><span class="sxs-lookup"><span data-stu-id="75f38-103">Permissions</span></span>
-<span data-ttu-id="75f38-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="75f38-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="a0103-102">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="a0103-102">Perform a sort operation.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0103-103">权限</span><span class="sxs-lookup"><span data-stu-id="a0103-103">Permissions</span></span>
+<span data-ttu-id="a0103-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="a0103-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="75f38-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="75f38-106">Permission type</span></span>      | <span data-ttu-id="75f38-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="75f38-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0103-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0103-106">Permission type</span></span>      | <span data-ttu-id="a0103-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a0103-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="75f38-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75f38-108">Delegated (work or school account)</span></span> | <span data-ttu-id="75f38-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75f38-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="75f38-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75f38-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75f38-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="75f38-111">Not supported.</span></span>    |
-|<span data-ttu-id="75f38-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="75f38-112">Application</span></span> | <span data-ttu-id="75f38-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="75f38-113">Not supported.</span></span> |
+|<span data-ttu-id="a0103-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0103-108">Delegated (work or school account)</span></span> | <span data-ttu-id="a0103-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0103-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a0103-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0103-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0103-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0103-111">Not supported.</span></span>    |
+|<span data-ttu-id="a0103-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0103-112">Application</span></span> | <span data-ttu-id="a0103-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0103-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="75f38-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75f38-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0103-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0103-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
+POST /workbook/names/{name}/range/sort/apply
 POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="75f38-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="75f38-115">Request headers</span></span>
-| <span data-ttu-id="75f38-116">名称</span><span class="sxs-lookup"><span data-stu-id="75f38-116">Name</span></span>       | <span data-ttu-id="75f38-117">说明</span><span class="sxs-lookup"><span data-stu-id="75f38-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0103-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0103-115">Request headers</span></span>
+| <span data-ttu-id="a0103-116">名称</span><span class="sxs-lookup"><span data-stu-id="a0103-116">Name</span></span>       | <span data-ttu-id="a0103-117">说明</span><span class="sxs-lookup"><span data-stu-id="a0103-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="75f38-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="75f38-118">Authorization</span></span>  | <span data-ttu-id="75f38-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="75f38-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="75f38-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="75f38-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="75f38-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="75f38-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a0103-118">授权</span><span class="sxs-lookup"><span data-stu-id="a0103-118">Authorization</span></span>  | <span data-ttu-id="a0103-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a0103-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0103-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a0103-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="a0103-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="a0103-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="75f38-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="75f38-124">Request body</span></span>
-<span data-ttu-id="75f38-125">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="75f38-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0103-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0103-124">Request body</span></span>
+<span data-ttu-id="a0103-125">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a0103-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="75f38-126">参数</span><span class="sxs-lookup"><span data-stu-id="75f38-126">Parameter</span></span>    | <span data-ttu-id="75f38-127">类型</span><span class="sxs-lookup"><span data-stu-id="75f38-127">Type</span></span>   |<span data-ttu-id="75f38-128">说明</span><span class="sxs-lookup"><span data-stu-id="75f38-128">Description</span></span>|
+| <span data-ttu-id="a0103-126">参数</span><span class="sxs-lookup"><span data-stu-id="a0103-126">Parameter</span></span>    | <span data-ttu-id="a0103-127">类型</span><span class="sxs-lookup"><span data-stu-id="a0103-127">Type</span></span>   |<span data-ttu-id="a0103-128">说明</span><span class="sxs-lookup"><span data-stu-id="a0103-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75f38-129">fields</span><span class="sxs-lookup"><span data-stu-id="75f38-129">fields</span></span>|<span data-ttu-id="75f38-130">SortField</span><span class="sxs-lookup"><span data-stu-id="75f38-130">SortField</span></span>|<span data-ttu-id="75f38-131">作为排序依据的条件列表。</span><span class="sxs-lookup"><span data-stu-id="75f38-131">The list of conditions to sort on.</span></span>|
-|<span data-ttu-id="75f38-132">matchCase</span><span class="sxs-lookup"><span data-stu-id="75f38-132">matchCase</span></span>|<span data-ttu-id="75f38-133">布尔</span><span class="sxs-lookup"><span data-stu-id="75f38-133">boolean</span></span>|<span data-ttu-id="75f38-p104">可选。是否让大小写对字符串排序产生影响。</span><span class="sxs-lookup"><span data-stu-id="75f38-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
-|<span data-ttu-id="75f38-136">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="75f38-136">hasHeaders</span></span>|<span data-ttu-id="75f38-137">布尔</span><span class="sxs-lookup"><span data-stu-id="75f38-137">boolean</span></span>|<span data-ttu-id="75f38-p105">可选。该区域是否有标头。</span><span class="sxs-lookup"><span data-stu-id="75f38-p105">Optional. Whether the range has a header.</span></span>|
-|<span data-ttu-id="75f38-140">orientation</span><span class="sxs-lookup"><span data-stu-id="75f38-140">orientation</span></span>|<span data-ttu-id="75f38-141">string</span><span class="sxs-lookup"><span data-stu-id="75f38-141">string</span></span>|<span data-ttu-id="75f38-p106">可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。</span><span class="sxs-lookup"><span data-stu-id="75f38-p106">Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.</span></span>|
-|<span data-ttu-id="75f38-145">method</span><span class="sxs-lookup"><span data-stu-id="75f38-145">method</span></span>|<span data-ttu-id="75f38-146">string</span><span class="sxs-lookup"><span data-stu-id="75f38-146">string</span></span>|<span data-ttu-id="75f38-p107">可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。</span><span class="sxs-lookup"><span data-stu-id="75f38-p107">Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.</span></span>|
+|<span data-ttu-id="a0103-129">字段</span><span class="sxs-lookup"><span data-stu-id="a0103-129">fields</span></span>|<span data-ttu-id="a0103-130">WorkbookSortField 集合</span><span class="sxs-lookup"><span data-stu-id="a0103-130">WorkbookSortField collection</span></span>|<span data-ttu-id="a0103-131">作为排序依据的条件列表。</span><span class="sxs-lookup"><span data-stu-id="a0103-131">The list of conditions to sort on.</span></span>|
+|<span data-ttu-id="a0103-132">matchCase</span><span class="sxs-lookup"><span data-stu-id="a0103-132">matchCase</span></span>|<span data-ttu-id="a0103-133">布尔值</span><span class="sxs-lookup"><span data-stu-id="a0103-133">boolean</span></span>|<span data-ttu-id="a0103-p104">可选。是否让大小写对字符串排序产生影响。</span><span class="sxs-lookup"><span data-stu-id="a0103-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
+|<span data-ttu-id="a0103-136">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="a0103-136">hasHeaders</span></span>|<span data-ttu-id="a0103-137">布尔值</span><span class="sxs-lookup"><span data-stu-id="a0103-137">boolean</span></span>|<span data-ttu-id="a0103-p105">可选。该区域是否有标头。</span><span class="sxs-lookup"><span data-stu-id="a0103-p105">Optional. Whether the range has a header.</span></span>|
+|<span data-ttu-id="a0103-140">orientation</span><span class="sxs-lookup"><span data-stu-id="a0103-140">orientation</span></span>|<span data-ttu-id="a0103-141">string</span><span class="sxs-lookup"><span data-stu-id="a0103-141">string</span></span>|<span data-ttu-id="a0103-142">可选。</span><span class="sxs-lookup"><span data-stu-id="a0103-142">Optional.</span></span> <span data-ttu-id="a0103-143">操作是否排序行或列。</span><span class="sxs-lookup"><span data-stu-id="a0103-143">Optional. Whether the operation is sorting rows or columns.  Possible values are: , .</span></span>  <span data-ttu-id="a0103-144">可取值为：`Rows`、`Columns`。</span><span class="sxs-lookup"><span data-stu-id="a0103-144">The possible values are:</span></span>|
+|<span data-ttu-id="a0103-145">方法</span><span class="sxs-lookup"><span data-stu-id="a0103-145">method</span></span>|<span data-ttu-id="a0103-146">string</span><span class="sxs-lookup"><span data-stu-id="a0103-146">string</span></span>|<span data-ttu-id="a0103-147">可选。</span><span class="sxs-lookup"><span data-stu-id="a0103-147">Optional.</span></span> <span data-ttu-id="a0103-148">中文字符使用的排序方法。</span><span class="sxs-lookup"><span data-stu-id="a0103-148">Optional. The ordering method used for Chinese characters.  Possible values are: , .</span></span>  <span data-ttu-id="a0103-149">可取值为：`PinYin`、`StrokeCount`。</span><span class="sxs-lookup"><span data-stu-id="a0103-149">The possible values are:</span></span>|
 
-## <a name="response"></a><span data-ttu-id="75f38-150">响应</span><span class="sxs-lookup"><span data-stu-id="75f38-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a0103-150">响应</span><span class="sxs-lookup"><span data-stu-id="a0103-150">Response</span></span>
 
-<span data-ttu-id="75f38-p108">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="75f38-p108">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a0103-p108">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="a0103-p108">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75f38-153">示例</span><span class="sxs-lookup"><span data-stu-id="75f38-153">Example</span></span>
-<span data-ttu-id="75f38-154">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="75f38-154">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="75f38-155">请求</span><span class="sxs-lookup"><span data-stu-id="75f38-155">Request</span></span>
-<span data-ttu-id="75f38-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="75f38-156">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a0103-153">示例</span><span class="sxs-lookup"><span data-stu-id="a0103-153">Example</span></span>
+<span data-ttu-id="a0103-154">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="a0103-154">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a0103-155">请求</span><span class="sxs-lookup"><span data-stu-id="a0103-155">Request</span></span>
+<span data-ttu-id="a0103-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a0103-156">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
 Content-length: 358
 
@@ -73,12 +73,10 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="75f38-157">响应</span><span class="sxs-lookup"><span data-stu-id="75f38-157">Response</span></span>
-<span data-ttu-id="75f38-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="75f38-158">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a0103-157">响应</span><span class="sxs-lookup"><span data-stu-id="a0103-157">Response</span></span>
+<span data-ttu-id="a0103-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a0103-158">Here is an example of the response.</span></span> 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

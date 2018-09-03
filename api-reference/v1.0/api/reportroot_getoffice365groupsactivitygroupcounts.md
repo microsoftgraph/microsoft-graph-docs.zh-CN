@@ -1,20 +1,20 @@
-# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="87a53-101">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="87a53-101">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
+# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="21112-101">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="21112-101">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
 
-<span data-ttu-id="87a53-102">获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。</span><span class="sxs-lookup"><span data-stu-id="87a53-102">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
+<span data-ttu-id="21112-102">获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。</span><span class="sxs-lookup"><span data-stu-id="21112-102">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
 
-> <span data-ttu-id="87a53-103">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</span><span class="sxs-lookup"><span data-stu-id="87a53-103">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
+> <span data-ttu-id="21112-103">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</span><span class="sxs-lookup"><span data-stu-id="21112-103">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="87a53-104">权限</span><span class="sxs-lookup"><span data-stu-id="87a53-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="21112-104">权限</span><span class="sxs-lookup"><span data-stu-id="21112-104">Permissions</span></span>
 
-<span data-ttu-id="87a53-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="87a53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="21112-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="21112-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="87a53-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="87a53-107">Permission type</span></span>                        | <span data-ttu-id="87a53-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="87a53-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="21112-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="21112-107">Permission type</span></span>                        | <span data-ttu-id="21112-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="21112-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="87a53-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="87a53-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="87a53-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="87a53-110">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="87a53-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="87a53-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87a53-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="87a53-112">Not supported.</span></span>                           |
-| <span data-ttu-id="87a53-113">应用</span><span class="sxs-lookup"><span data-stu-id="87a53-113">Application</span></span>                            | <span data-ttu-id="87a53-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="87a53-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="21112-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="21112-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="21112-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="21112-110">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="21112-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="21112-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21112-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="21112-112">Not supported.</span></span>                           |
+| <span data-ttu-id="21112-113">应用</span><span class="sxs-lookup"><span data-stu-id="21112-113">Application</span></span>                            | <span data-ttu-id="21112-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="21112-114">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="87a53-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="87a53-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="21112-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="21112-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,40 +22,40 @@
 GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a><span data-ttu-id="87a53-116">请求参数</span><span class="sxs-lookup"><span data-stu-id="87a53-116">Request parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="21112-116">函数参数</span><span class="sxs-lookup"><span data-stu-id="21112-116">Function parameters</span></span>
 
-<span data-ttu-id="87a53-117">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="87a53-117">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="21112-117">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="21112-117">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="87a53-118">参数</span><span class="sxs-lookup"><span data-stu-id="87a53-118">Parameter</span></span> | <span data-ttu-id="87a53-119">类型</span><span class="sxs-lookup"><span data-stu-id="87a53-119">Type</span></span>   | <span data-ttu-id="87a53-120">说明</span><span class="sxs-lookup"><span data-stu-id="87a53-120">Description</span></span>                              |
+| <span data-ttu-id="21112-118">参数</span><span class="sxs-lookup"><span data-stu-id="21112-118">Parameter</span></span> | <span data-ttu-id="21112-119">类型</span><span class="sxs-lookup"><span data-stu-id="21112-119">Type</span></span>   | <span data-ttu-id="21112-120">说明</span><span class="sxs-lookup"><span data-stu-id="21112-120">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="87a53-121">period</span><span class="sxs-lookup"><span data-stu-id="87a53-121">period</span></span>    | <span data-ttu-id="87a53-122">string</span><span class="sxs-lookup"><span data-stu-id="87a53-122">string</span></span> | <span data-ttu-id="87a53-123">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="87a53-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="87a53-124">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="87a53-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="87a53-125">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="87a53-125">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="87a53-126">必需。</span><span class="sxs-lookup"><span data-stu-id="87a53-126">Required.</span></span> |
+| <span data-ttu-id="21112-121">period</span><span class="sxs-lookup"><span data-stu-id="21112-121">period</span></span>    | <span data-ttu-id="21112-122">字符串</span><span class="sxs-lookup"><span data-stu-id="21112-122">string</span></span> | <span data-ttu-id="21112-123">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="21112-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="21112-124">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="21112-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="21112-125">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="21112-125">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="21112-126">必需。</span><span class="sxs-lookup"><span data-stu-id="21112-126">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="87a53-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="87a53-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="21112-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="21112-127">Request headers</span></span>
 
-| <span data-ttu-id="87a53-128">名称</span><span class="sxs-lookup"><span data-stu-id="87a53-128">Name</span></span>          | <span data-ttu-id="87a53-129">说明</span><span class="sxs-lookup"><span data-stu-id="87a53-129">Description</span></span>                              |
+| <span data-ttu-id="21112-128">名称</span><span class="sxs-lookup"><span data-stu-id="21112-128">Name</span></span>          | <span data-ttu-id="21112-129">说明</span><span class="sxs-lookup"><span data-stu-id="21112-129">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="87a53-130">授权</span><span class="sxs-lookup"><span data-stu-id="87a53-130">Authorization</span></span> | <span data-ttu-id="87a53-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="87a53-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="87a53-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="87a53-133">If-None-Match</span></span> | <span data-ttu-id="87a53-134">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="87a53-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="87a53-135">可选。</span><span class="sxs-lookup"><span data-stu-id="87a53-135">Optional.</span></span> |
+| <span data-ttu-id="21112-130">授权</span><span class="sxs-lookup"><span data-stu-id="21112-130">Authorization</span></span> | <span data-ttu-id="21112-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="21112-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="21112-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="21112-133">If-None-Match</span></span> | <span data-ttu-id="21112-134">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="21112-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="21112-135">可选。</span><span class="sxs-lookup"><span data-stu-id="21112-135">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="87a53-136">响应</span><span class="sxs-lookup"><span data-stu-id="87a53-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="21112-136">响应</span><span class="sxs-lookup"><span data-stu-id="21112-136">Response</span></span>
 
-<span data-ttu-id="87a53-137">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="87a53-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="87a53-138">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="87a53-138">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="21112-137">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="21112-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="21112-138">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="21112-138">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="87a53-139">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="87a53-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="21112-139">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="21112-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="87a53-140">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="87a53-140">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="21112-140">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="21112-140">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="87a53-141">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="87a53-141">Report Refresh Date</span></span>
-- <span data-ttu-id="87a53-142">总计</span><span class="sxs-lookup"><span data-stu-id="87a53-142">Total</span></span>
-- <span data-ttu-id="87a53-143">活跃</span><span class="sxs-lookup"><span data-stu-id="87a53-143">Active</span></span>
-- <span data-ttu-id="87a53-144">报表日期</span><span class="sxs-lookup"><span data-stu-id="87a53-144">Report Date</span></span>
-- <span data-ttu-id="87a53-145">报表周期</span><span class="sxs-lookup"><span data-stu-id="87a53-145">Report Period</span></span>
+- <span data-ttu-id="21112-141">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="21112-141">Report Refresh Date</span></span>
+- <span data-ttu-id="21112-142">总计</span><span class="sxs-lookup"><span data-stu-id="21112-142">Total</span></span>
+- <span data-ttu-id="21112-143">活跃</span><span class="sxs-lookup"><span data-stu-id="21112-143">Active</span></span>
+- <span data-ttu-id="21112-144">报表日期</span><span class="sxs-lookup"><span data-stu-id="21112-144">Report Date</span></span>
+- <span data-ttu-id="21112-145">报表周期</span><span class="sxs-lookup"><span data-stu-id="21112-145">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="87a53-146">示例</span><span class="sxs-lookup"><span data-stu-id="87a53-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="21112-146">示例</span><span class="sxs-lookup"><span data-stu-id="21112-146">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="87a53-147">请求</span><span class="sxs-lookup"><span data-stu-id="87a53-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="21112-147">请求</span><span class="sxs-lookup"><span data-stu-id="21112-147">Request</span></span>
 
-<span data-ttu-id="87a53-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="87a53-148">The following is an example of the request.</span></span>
+<span data-ttu-id="21112-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="21112-148">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -67,9 +67,9 @@ GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="87a53-149">响应</span><span class="sxs-lookup"><span data-stu-id="87a53-149">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="21112-149">响应</span><span class="sxs-lookup"><span data-stu-id="21112-149">Response</span></span>
 
-<span data-ttu-id="87a53-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="87a53-150">The following is an example of the response.</span></span>
+<span data-ttu-id="21112-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="21112-150">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -83,7 +83,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="87a53-151">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="87a53-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="21112-151">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="21112-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
