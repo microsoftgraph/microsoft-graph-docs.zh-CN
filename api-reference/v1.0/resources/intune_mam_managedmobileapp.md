@@ -1,6 +1,6 @@
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 部署应用的标识符。
 ## <a name="methods"></a>方法
@@ -15,20 +15,20 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|含有其操作系统类型的应用标识符。|
-|id|String|实体的键。|
-|version|String|实体版本。|
+|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
+|id|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedMobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
