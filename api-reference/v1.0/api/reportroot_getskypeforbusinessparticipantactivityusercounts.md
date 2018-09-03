@@ -22,13 +22,13 @@
 GET /reports/getSkypeForBusinessParticipantActivityUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>请求参数
+## <a name="function-parameters"></a>函数参数
 
 在请求 URL 中，提供以下参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+| period    | 字符串 | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -48,7 +48,7 @@ CSV 文件包含下面的列标题。
 - 报表刷新日期
 - 报表日期
 - 报表周期
-- IM
+- 即时消息
 - 音频/视频
 - 应用共享
 - Web

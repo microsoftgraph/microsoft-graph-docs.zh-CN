@@ -17,21 +17,23 @@
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
+
+## <a name="function-parameters"></a>函数参数
+
+| 参数    | 类型   |说明|
+|:---------------|:--------|:----------|
+|计数|Int32|可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="parameters"></a>参数
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|count|Int32|可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
-
 ## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/range.md) 对象。
 
 ## <a name="example"></a>示例

@@ -22,7 +22,7 @@
 GET /users/delta
 ```
 
-### <a name="query-parameters"></a>查询参数
+## <a name="query-parameters"></a>查询参数
 
 跟踪用户更改会引发一组对 **delta** 函数的一次或多次调用。如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。你只需预先指定任意所需查询参数一次。在后续的请求中，只需复制并应用以前响应中的 `nextLink` 或 `deltaLink` URL，因为该 URL 已包含所需的编码参数。
 
@@ -31,14 +31,14 @@ GET /users/delta
 | $deltatoken | string | 对同一个用户集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](../../../concepts/delta_query_overview.md)，指示同一个用户集合中有进一步的更改需要追踪。 |
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+### <a name="odata-query-parameters"></a>OData 查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。
+此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 - 对于邮件，Delta 查询支持 `$select`、`$top` 和 `$expand`。 
 - 提供对 `$filter` 和 `$orderby` 的有限支持：
-  * 唯一支持的 `$filter` 表达式用于跟踪对一个或两个特定用户 `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 的更改 
+  * 唯一支持的 `$filter` 表达式用于跟踪对一个或两个特定用户 `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 的更改 `$filter=id+eq+{value1}+or+id+eq+{value2}` 
   * 唯一支持的 `$orderby` 表达式是 `$orderby=receivedDateTime+desc`。 如果不包含 `$orderby` 表达式，则不能保证返回顺序。 
 - 不支持 `$search`。
 

@@ -21,7 +21,9 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 |应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
 
-## <a name="http-request-to-get-the-photo"></a>获取照片的 HTTP 请求
+## <a name="http-request"></a>HTTP 请求 
+
+### <a name="get-the-photo"></a>获取照片
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -32,7 +34,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## <a name="http-request-to-get-the-metadata-of-the-photo"></a>获取照片元数据的 HTTP 请求
+### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -45,7 +47,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## <a name="http-request-to-get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据的 HTTP 请求
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -57,12 +59,11 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
-## <a name="parameters"></a>参数
+## <a name="path-parameters"></a>Path 参数
 
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、 
-360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
+|size  |字符串  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
@@ -74,9 +75,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
-## <a name="response-for-getting-the-photo"></a>获取照片的响应
+
+## <a name="response"></a>响应
+### <a name="response-for-getting-the-photo"></a>获取照片的响应
 如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。
-## <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
+### <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilePhoto.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1

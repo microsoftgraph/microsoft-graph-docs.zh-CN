@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 同步驱动器的内容
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: 64ca2eb0593c7eb6da518dadf3722b65c8472966
+ms.sourcegitcommit: 7d7c4476483b95e960d944053974794a4073a4c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050826"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23798185"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -44,6 +44,12 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
+## <a name="function-parameters"></a>函数参数
+
+| 名称   | 值  | 说明                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token  | 字符串 | 可选。 如果未指定，枚举层次结构的当前状态。 如果 `latest`，返回带最新增量令牌的空响应。 如果是以前的增量令牌，返回该令牌以来的新状态。
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](../../../concepts/query_parameters.md)自定义响应。
@@ -67,7 +73,7 @@ GET /users/{userId}/drive/root/delta
 
 下面是一个初始请求的示例。
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -115,7 +121,7 @@ Content-type: application/json
 
 下面是一个初始请求之后的请求示例。
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -171,7 +177,7 @@ Content-type: application/json
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -179,7 +185,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK

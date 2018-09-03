@@ -13,22 +13,26 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
+
+## <a name="function-parameters"></a>函数参数
+在请求路径中，提供以下参数。
+
+| 参数    | 类型   |说明|
+|:---------------|:--------|:----------|
+|row|Int32|要检索的单元格的行号。从零开始编制索引。|
+|column|Int32|要检索的单元格的列号。从零开始编制索引。|
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="parameters"></a>参数
-在请求路径中，提供了以下参数。
-
-| 参数    | 类型   |说明|
-|:---------------|:--------|:----------|
-|row|Int32|要检索的单元格的行号。从零开始编制索引。|
-|列|Int32|要检索的单元格的列号。从零开始编制索引。|
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
