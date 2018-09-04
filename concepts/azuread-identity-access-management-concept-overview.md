@@ -30,7 +30,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ### <a name="manage-devices"></a>管理设备
 
-[管理组织中注册的设备](https://docs.microsoft.com/zh-CN/azure/active-directory/device-management-introduction.md)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
+[管理组织中注册的设备](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
 
 ### <a name="partner-tenant-management"></a>合作伙伴租户管理
 
@@ -54,11 +54,14 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 你可以通过按需激活管理权限来保护对资源的访问权限。 [Privileged Identity Management](../api-reference/beta/resources/privilegedidentitymanagement_root.md) 是 Azure AD Premium P2 中提供的功能。
 
+### <a name="manage-user-access-reviews-preview"></a>管理用户 access reviews（预览）
+
+你可以配置访问 组成员身份和应用程序访问的 access reviews。 [Access reviews](../api-reference/beta/resources/accessreviews_root.md) 是 Azure AD Premium P2 中提供的功能。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 了解到如何[使用 Azure AD REST API](../api-reference/v1.0/resources/azure_ad_overview.md)。
 - 使用 Azure AD 对 Microsoft Graph [进行身份验证](auth_overview.md)。 
-- 将 [Azure AD 登录](https://azure.microsoft.com/zh-CN/develop/identity/signin/)集成到应用或网站中。
+- 将 [Azure AD 登录](https://azure.microsoft.com/en-us/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
-- 浏览[示例](https://developer.microsoft.com/zh-CN/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。
+- 浏览[示例](https://developer.microsoft.com/en-us/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

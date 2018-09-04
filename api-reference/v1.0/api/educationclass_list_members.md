@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Member.Read.Hidden | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -22,7 +22,7 @@ GET /education/classes/{id}/members
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -36,12 +36,12 @@ GET /education/classes/{id}/members
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11016/members
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：**为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -79,8 +79,6 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
-      "externalId": "13013",
-      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -88,6 +86,10 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
+      "teacher": {
+        "externalId": "13013",
+        "teacherNumber": "8802",
+      }
     },
     {
       "id": "13005",
@@ -111,13 +113,15 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
+      "student": {
+        "birthDate": "2001-01-01T00:00:00Z",
+        "externalId": "13005",
+        "gender": "female",
+        "grade": "9",
+        "graduationYear": "2019",
+        "studentNumber": "13005",
+      },
       "primaryRole": "student",
-      "externalId": "13005",
-      "birthDate": "2001-01-01T00:00:00Z",
-      "gender": "female",
-      "grade": "9",
-      "graduationYear": "2019",
-      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",

@@ -1,6 +1,6 @@
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示有关组织应用保护和配置的非类型化状态报告。
 
@@ -15,21 +15,21 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|id|String|实体的键。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|version|String|实体的版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|displayName|字符串|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|id|字符串|实体的键。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|version|字符串|实体的版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |content|[Json](../resources/intune_mam_json.md)|状态报告内容。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppStatus",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
