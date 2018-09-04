@@ -8,15 +8,11 @@
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:------------|:------------|
-|[Get deleted item](../api/directory_deleteditems_get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
-|[Restore deleted item](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
-|[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
-|[Permanently delete an item](../api/directory_deleteditems_delete.md) | 无 | 永久删除项目。 |
-
-## <a name="properties"></a>属性
-| 属性   | 类型 |说明|
-|:---------------|:--------|:----------|
-|id|String| 对象的唯一标识符；例如，12345678-9abc-def0-1234-56789abcde。 键。 不可为 null。 只读。|
+|[获取已删除项目](../api/directory_deleteditems_get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
+|[还原已删除项目](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
+|[列出已删除项目](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
+|[永久删除项目](../api/directory_deleteditems_delete.md) | 无 | 永久删除项目。 |
+|[列出由用户拥有的已删除项目](../api/directory_deleteditems_user_owned.md) | [directoryObject](directoryobject.md) 集合 | 列出了由用户拥有的目录项。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -28,17 +24,31 @@
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
 ```
+
+## <a name="example"></a>示例
+
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/directory
+```
+
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

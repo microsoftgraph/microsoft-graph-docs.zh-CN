@@ -3,27 +3,35 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269612"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
-**Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
+Permission 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。****
 
 共享权限具有许多不同的形式。
-**Permission** 资源通过资源上的 facet 表示这些不同的形式。
+Permission 资源通过资源上的 facet 表示这些不同的形式。****
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,12 +50,12 @@ ms.lasthandoff: 09/28/2017
 
 | 属性      | 类型                                      | 说明
 |:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。
+| id            | 字符串                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo     | [IdentitySet](identityset.md)             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
 | 邀请    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom | [ItemReference](itemreference.md)         | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link          | [SharingLink][]                           | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
-| role          | Collection of String                      | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
+| roles         | String 集合                      | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId       | String                                    | 可通过 [**shares** API](../api/shares_get.md) 访问此共享项目的唯一令牌。只读。
 
 permission 资源使用 _Facet_ 说明此资源表示的权限种类。

@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/title
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -26,13 +26,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|布尔|表示图表标题是否将叠加在图表上的布尔值。|
+|overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
 |text|string|表示图表的标题文本。|
-|visible|布尔|表示 chart title 对象的可见性的布尔值。|
+|visible|boolean|表示 chart title 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartTitle](../resources/charttitle.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [WorkbookChartTitle](../resources/charttitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
   "name": "update_charttitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
 Content-type: application/json
 Content-length: 64
 
@@ -56,7 +56,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

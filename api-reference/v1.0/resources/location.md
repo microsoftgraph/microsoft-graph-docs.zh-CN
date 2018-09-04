@@ -8,20 +8,20 @@
 
 | 事件的创建方式  | 属性   | 预期值 |
 |:----------|:-------|:--------------------------------|
-| [create event](../api/user_post_events.md) REST API | **locationType** | `default` |
-| Outlook 中的用户界面 | **locationType** | 以下各项之一： <ul><li>`default`，以纯文本格式输入的位置。</li><li>`conferenceRoom`，Outlook 会议室列表提供的会议室。</li><li>或者，该列表中的任意项：`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`，必应自动建议或必应本地搜索中的位置。</li></ul> |
+| [创建事件](../api/user_post_events.md) REST API | **locationType** | `default` |
+| Outlook 中的用户界面 | **locationType** | 以下各项之一： <ul><li>`default` ，以纯文本格式输入的位置。</li><li>`conferenceRoom` ，Outlook 会议室列表提供的会议室。</li><li>或者，该列表中的任意项：`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`，必应自动建议或必应本地搜索中的位置。</li></ul> |
 
 ## <a name="properties"></a>属性
 | 属性  | 类型   | 说明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 地理坐标和位置的海拔高度。 |
-| displayName  | String | 与地点相关联的名称。                       |
+| displayName  | 字符串 | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。              |
 | locationUri | String | （可选）表示位置的 URI。 |
-| locationType | String | 位置的类型。 可取值为：`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`。 只读。|
+| locationType | locationType | 位置的类型。 可取值为：`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`。 只读。|
 | uniqueId | String | 仅供内部使用。|
-| uniqueIdType | String | 仅供内部使用。 |
+| uniqueIdType | locationUniqueIdType | 仅供内部使用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
