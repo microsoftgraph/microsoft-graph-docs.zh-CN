@@ -1,6 +1,6 @@
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
-获取在桌面或设备上激活 Office 订阅的已启用用户数。
+获取在桌面或设备或共享计算机上激活 Office 订阅的已启用用户数。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。
 
@@ -41,6 +41,7 @@ CSV 文件包含下面的列标题。
 - 产品类型
 - 已分配
 - 已激活
+- 共享计算机激活
 
 ## <a name="example"></a>示例
 
@@ -82,5 +83,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```

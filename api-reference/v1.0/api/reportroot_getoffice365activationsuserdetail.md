@@ -47,6 +47,7 @@ CSV 文件包含下面的列标题。
 - Windows 10 移动版
 - iOS
 - Android
+- 在共享计算机上激活
 
 ## <a name="example"></a>示例
 
@@ -88,5 +89,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
