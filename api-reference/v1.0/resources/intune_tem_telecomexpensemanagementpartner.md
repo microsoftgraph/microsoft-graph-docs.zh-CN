@@ -15,7 +15,7 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|TEM 合作伙伴的唯一标识符。|
+|ID|字符串|TEM 合作伙伴的唯一标识符。|
 |displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|字符串|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|布尔值|是否已授权合作伙伴的 AAD 应用访问 Intune。|
@@ -28,8 +28,8 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 
