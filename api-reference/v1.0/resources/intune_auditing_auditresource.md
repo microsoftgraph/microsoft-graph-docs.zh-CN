@@ -1,20 +1,20 @@
-# <a name="auditresource-resource-type"></a><span data-ttu-id="0890a-101">auditResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="0890a-101">auditResource resource type</span></span>
+# <a name="auditresource-resource-type"></a><span data-ttu-id="e5d0e-101">auditResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="e5d0e-101">auditResource resource type</span></span>
 
-> <span data-ttu-id="0890a-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="0890a-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e5d0e-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="0890a-103">包含审核资源的属性的类。</span><span class="sxs-lookup"><span data-stu-id="0890a-103">A class containing the properties for Audit Resource.</span></span>
-## <a name="properties"></a><span data-ttu-id="0890a-104">属性</span><span class="sxs-lookup"><span data-stu-id="0890a-104">Properties</span></span>
-|<span data-ttu-id="0890a-105">属性</span><span class="sxs-lookup"><span data-stu-id="0890a-105">Property</span></span>|<span data-ttu-id="0890a-106">类型</span><span class="sxs-lookup"><span data-stu-id="0890a-106">Type</span></span>|<span data-ttu-id="0890a-107">说明</span><span class="sxs-lookup"><span data-stu-id="0890a-107">Description</span></span>|
+<span data-ttu-id="e5d0e-103">包含审核资源的属性的类。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-103">A class containing the properties for Audit Resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="e5d0e-104">属性</span><span class="sxs-lookup"><span data-stu-id="e5d0e-104">Properties</span></span>
+|<span data-ttu-id="e5d0e-105">属性</span><span class="sxs-lookup"><span data-stu-id="e5d0e-105">Property</span></span>|<span data-ttu-id="e5d0e-106">类型</span><span class="sxs-lookup"><span data-stu-id="e5d0e-106">Type</span></span>|<span data-ttu-id="e5d0e-107">说明</span><span class="sxs-lookup"><span data-stu-id="e5d0e-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0890a-108">displayName</span><span class="sxs-lookup"><span data-stu-id="0890a-108">displayName</span></span>|<span data-ttu-id="0890a-109">String</span><span class="sxs-lookup"><span data-stu-id="0890a-109">String</span></span>|<span data-ttu-id="0890a-110">显示名称。</span><span class="sxs-lookup"><span data-stu-id="0890a-110">Display name.</span></span>|
-|<span data-ttu-id="0890a-111">ModifiedProperties</span><span class="sxs-lookup"><span data-stu-id="0890a-111">modifiedProperties</span></span>|<span data-ttu-id="0890a-112">[auditProperty](../resources/intune_auditing_auditproperty.md) 集合</span><span class="sxs-lookup"><span data-stu-id="0890a-112">[auditProperty](../resources/intune_auditing_auditproperty.md) collection</span></span>|<span data-ttu-id="0890a-113">已修改属性列表。</span><span class="sxs-lookup"><span data-stu-id="0890a-113">List of modified properties.</span></span>|
-|<span data-ttu-id="0890a-114">type</span><span class="sxs-lookup"><span data-stu-id="0890a-114">type</span></span>|<span data-ttu-id="0890a-115">String</span><span class="sxs-lookup"><span data-stu-id="0890a-115">String</span></span>|<span data-ttu-id="0890a-116">审核资源的类型。</span><span class="sxs-lookup"><span data-stu-id="0890a-116">Audit resource's type.</span></span>|
-|<span data-ttu-id="0890a-117">resourceId</span><span class="sxs-lookup"><span data-stu-id="0890a-117">resourceId</span></span>|<span data-ttu-id="0890a-118">String</span><span class="sxs-lookup"><span data-stu-id="0890a-118">String</span></span>|<span data-ttu-id="0890a-119">审核资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="0890a-119">Audit resource's Id.</span></span>|
+|<span data-ttu-id="e5d0e-108">displayName</span><span class="sxs-lookup"><span data-stu-id="e5d0e-108">displayName</span></span>|<span data-ttu-id="e5d0e-109">String</span><span class="sxs-lookup"><span data-stu-id="e5d0e-109">String</span></span>|<span data-ttu-id="e5d0e-110">显示名称。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-110">Display name.</span></span>|
+|<span data-ttu-id="e5d0e-111">ModifiedProperties</span><span class="sxs-lookup"><span data-stu-id="e5d0e-111">modifiedProperties</span></span>|<span data-ttu-id="e5d0e-112">[auditProperty](../resources/intune_auditing_auditproperty.md) 集合</span><span class="sxs-lookup"><span data-stu-id="e5d0e-112">[auditProperty](../resources/intune_auditing_auditproperty.md) collection</span></span>|<span data-ttu-id="e5d0e-113">已修改属性列表。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-113">List of modified properties.</span></span>|
+|<span data-ttu-id="e5d0e-114">type</span><span class="sxs-lookup"><span data-stu-id="e5d0e-114">type</span></span>|<span data-ttu-id="e5d0e-115">String</span><span class="sxs-lookup"><span data-stu-id="e5d0e-115">String</span></span>|<span data-ttu-id="e5d0e-116">审核资源的类型。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-116">Audit resource's type.</span></span>|
+|<span data-ttu-id="e5d0e-117">resourceId</span><span class="sxs-lookup"><span data-stu-id="e5d0e-117">resourceId</span></span>|<span data-ttu-id="e5d0e-118">String</span><span class="sxs-lookup"><span data-stu-id="e5d0e-118">String</span></span>|<span data-ttu-id="e5d0e-119">审核资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-119">Audit resource's Id.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0890a-120">关系</span><span class="sxs-lookup"><span data-stu-id="0890a-120">Relationships</span></span>
-<span data-ttu-id="0890a-121">无</span><span class="sxs-lookup"><span data-stu-id="0890a-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="0890a-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0890a-122">JSON Representation</span></span>
-<span data-ttu-id="0890a-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0890a-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="e5d0e-120">关系</span><span class="sxs-lookup"><span data-stu-id="e5d0e-120">Relationships</span></span>
+<span data-ttu-id="e5d0e-121">无</span><span class="sxs-lookup"><span data-stu-id="e5d0e-121">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e5d0e-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e5d0e-122">JSON Representation</span></span>
+<span data-ttu-id="e5d0e-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e5d0e-123">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditResource"
@@ -35,6 +35,11 @@
   "resourceId": "String"
 }
 ```
+
+
+
+
+
 
 
 

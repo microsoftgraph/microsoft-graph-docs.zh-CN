@@ -1,18 +1,18 @@
-# <a name="update-deviceconfigurationassignment"></a><span data-ttu-id="a089c-101">更新 deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="a089c-101">Update deviceConfigurationAssignment</span></span>
+# <a name="update-deviceconfigurationassignment"></a><span data-ttu-id="03933-101">更新 deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="03933-101">Update deviceConfigurationAssignment</span></span>
 
-> <span data-ttu-id="a089c-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="a089c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="03933-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="03933-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a089c-103">更新 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a089c-103">Update the properties of a [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="a089c-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="a089c-104">Prerequisites</span></span>
-<span data-ttu-id="a089c-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="a089c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="03933-103">更新 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="03933-103">Update the properties of a [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="03933-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="03933-104">Prerequisites</span></span>
+<span data-ttu-id="03933-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="03933-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="a089c-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="a089c-107">Permission type</span></span>|<span data-ttu-id="a089c-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a089c-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="03933-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="03933-107">Permission type</span></span>|<span data-ttu-id="03933-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="03933-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a089c-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a089c-109">Delegated (work or school account)</span></span>|<span data-ttu-id="a089c-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a089c-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="a089c-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a089c-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a089c-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="a089c-112">Not supported.</span></span>|
-|<span data-ttu-id="a089c-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="a089c-113">Application</span></span>|<span data-ttu-id="a089c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="a089c-114">Not supported.</span></span>|
+|<span data-ttu-id="03933-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="03933-109">Delegated (work or school account)</span></span>|<span data-ttu-id="03933-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03933-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="03933-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="03933-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="03933-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="03933-112">Not supported.</span></span>|
+|<span data-ttu-id="03933-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="03933-113">Application</span></span>|<span data-ttu-id="03933-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="03933-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a089c-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a089c-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="03933-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="03933-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,30 +21,30 @@
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a089c-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="a089c-116">Request headers</span></span>
-|<span data-ttu-id="a089c-117">标头</span><span class="sxs-lookup"><span data-stu-id="a089c-117">Header</span></span>|<span data-ttu-id="a089c-118">值</span><span class="sxs-lookup"><span data-stu-id="a089c-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="03933-116">请求标头</span><span class="sxs-lookup"><span data-stu-id="03933-116">Request headers</span></span>
+|<span data-ttu-id="03933-117">标头</span><span class="sxs-lookup"><span data-stu-id="03933-117">Header</span></span>|<span data-ttu-id="03933-118">值</span><span class="sxs-lookup"><span data-stu-id="03933-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a089c-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="a089c-119">Authorization</span></span>|<span data-ttu-id="a089c-120">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a089c-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a089c-121">Accept</span><span class="sxs-lookup"><span data-stu-id="a089c-121">Accept</span></span>|<span data-ttu-id="a089c-122">application/json</span><span class="sxs-lookup"><span data-stu-id="a089c-122">application/json</span></span>|
+|<span data-ttu-id="03933-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="03933-119">Authorization</span></span>|<span data-ttu-id="03933-120">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="03933-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="03933-121">Accept</span><span class="sxs-lookup"><span data-stu-id="03933-121">Accept</span></span>|<span data-ttu-id="03933-122">application/json</span><span class="sxs-lookup"><span data-stu-id="03933-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a089c-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a089c-123">Request body</span></span>
-<span data-ttu-id="a089c-124">在请求正文中，提供 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a089c-124">In the request body, supply a JSON representation for the [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="03933-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="03933-123">Request body</span></span>
+<span data-ttu-id="03933-124">在请求正文中，提供 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="03933-124">In the request body, supply a JSON representation for the [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
 
-<span data-ttu-id="a089c-125">下表显示创建 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a089c-125">The following table shows the properties that are required when you create the [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md).</span></span>
+<span data-ttu-id="03933-125">下表显示创建 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="03933-125">The following table shows the properties that are required when you create the [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md).</span></span>
 
-|<span data-ttu-id="a089c-126">属性</span><span class="sxs-lookup"><span data-stu-id="a089c-126">Property</span></span>|<span data-ttu-id="a089c-127">类型</span><span class="sxs-lookup"><span data-stu-id="a089c-127">Type</span></span>|<span data-ttu-id="a089c-128">说明</span><span class="sxs-lookup"><span data-stu-id="a089c-128">Description</span></span>|
+|<span data-ttu-id="03933-126">属性</span><span class="sxs-lookup"><span data-stu-id="03933-126">Property</span></span>|<span data-ttu-id="03933-127">类型</span><span class="sxs-lookup"><span data-stu-id="03933-127">Type</span></span>|<span data-ttu-id="03933-128">说明</span><span class="sxs-lookup"><span data-stu-id="03933-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a089c-129">id</span><span class="sxs-lookup"><span data-stu-id="a089c-129">id</span></span>|<span data-ttu-id="a089c-130">字符串</span><span class="sxs-lookup"><span data-stu-id="a089c-130">String</span></span>|<span data-ttu-id="a089c-131">分配的键。</span><span class="sxs-lookup"><span data-stu-id="a089c-131">The key of the assignment.</span></span>|
-|<span data-ttu-id="a089c-132">target</span><span class="sxs-lookup"><span data-stu-id="a089c-132">target</span></span>|[<span data-ttu-id="a089c-133">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a089c-133">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="a089c-134">设备配置的分配目标。</span><span class="sxs-lookup"><span data-stu-id="a089c-134">The assignment target for the device configuration.</span></span>|
+|<span data-ttu-id="03933-129">ID</span><span class="sxs-lookup"><span data-stu-id="03933-129">id</span></span>|<span data-ttu-id="03933-130">字符串</span><span class="sxs-lookup"><span data-stu-id="03933-130">String</span></span>|<span data-ttu-id="03933-131">分配的键。</span><span class="sxs-lookup"><span data-stu-id="03933-131">The key of the assignment.</span></span>|
+|<span data-ttu-id="03933-132">target</span><span class="sxs-lookup"><span data-stu-id="03933-132">target</span></span>|[<span data-ttu-id="03933-133">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="03933-133">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="03933-134">设备配置的分配目标。</span><span class="sxs-lookup"><span data-stu-id="03933-134">The assignment target for the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a089c-135">响应</span><span class="sxs-lookup"><span data-stu-id="a089c-135">Response</span></span>
-<span data-ttu-id="a089c-136">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a089c-136">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="03933-135">响应</span><span class="sxs-lookup"><span data-stu-id="03933-135">Response</span></span>
+<span data-ttu-id="03933-136">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="03933-136">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a089c-137">示例</span><span class="sxs-lookup"><span data-stu-id="a089c-137">Example</span></span>
-### <a name="request"></a><span data-ttu-id="a089c-138">请求</span><span class="sxs-lookup"><span data-stu-id="a089c-138">Request</span></span>
-<span data-ttu-id="a089c-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a089c-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="03933-137">示例</span><span class="sxs-lookup"><span data-stu-id="03933-137">Example</span></span>
+### <a name="request"></a><span data-ttu-id="03933-138">请求</span><span class="sxs-lookup"><span data-stu-id="03933-138">Request</span></span>
+<span data-ttu-id="03933-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="03933-139">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
@@ -57,8 +57,8 @@ Content-length: 101
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a089c-140">响应</span><span class="sxs-lookup"><span data-stu-id="a089c-140">Response</span></span>
-<span data-ttu-id="a089c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a089c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="03933-140">响应</span><span class="sxs-lookup"><span data-stu-id="03933-140">Response</span></span>
+<span data-ttu-id="03933-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="03933-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -72,6 +72,11 @@ Content-Length: 218
   }
 }
 ```
+
+
+
+
+
 
 
 
