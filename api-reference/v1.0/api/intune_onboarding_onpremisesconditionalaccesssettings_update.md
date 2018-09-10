@@ -34,7 +34,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|ID|字符串|尚未记录|
 |enabled|Boolean|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "overrideDefaultRule": true
 }
@@ -77,14 +77,19 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

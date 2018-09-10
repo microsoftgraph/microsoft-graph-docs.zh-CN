@@ -1,6 +1,6 @@
 # <a name="create-deviceandappmanagementroleassignment"></a>创建 deviceAndAppManagementRoleAssignment
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ POST /deviceManagement/roleAssignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|displayName|String|角色分配的显示或友好名称。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|description|String|角色分配的说明。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|ID|字符串|实体的键。 此为只读，且自动生成。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|displayName|字符串|角色分配的显示或友好名称。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|说明|字符串|角色分配的说明。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |resourceScopes|String 集合|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。 继承自 [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|members|String 集合|角色成员安全组的 ID 列表。 这些是 Azure Active Directory 中的 ID。|
+|成员|String 集合|角色成员安全组的 ID 列表。 这些是 Azure Active Directory 中的 ID。|
 
 
 
@@ -86,6 +86,11 @@ Content-Length: 307
   ]
 }
 ```
+
+
+
+
+
 
 
 

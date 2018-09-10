@@ -17,7 +17,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

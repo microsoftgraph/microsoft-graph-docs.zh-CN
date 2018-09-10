@@ -1,6 +1,6 @@
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,8 +34,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
-|url|String|网站 URL|
+|ID|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|url|字符串|网站 URL|
 |deviceCount|Int32|设备计数|
 
 
@@ -71,6 +71,11 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

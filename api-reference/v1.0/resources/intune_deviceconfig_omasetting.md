@@ -7,7 +7,7 @@ OMA 设置定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。|
-|description|String|说明。|
+|description|字符串|说明。|
 |omaUri|String|OMA。|
 
 ## <a name="relationships"></a>关系
@@ -16,7 +16,6 @@ OMA 设置定义。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.omaSetting"
 }-->
 ``` json
@@ -27,6 +26,11 @@ OMA 设置定义。
   "omaUri": "String"
 }
 ```
+
+
+
+
+
 
 
 

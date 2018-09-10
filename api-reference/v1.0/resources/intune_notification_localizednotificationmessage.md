@@ -15,7 +15,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|字符串|此消息的目标区域设置。|
 |subject|字符串|消息模板主题。|
@@ -28,8 +28,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

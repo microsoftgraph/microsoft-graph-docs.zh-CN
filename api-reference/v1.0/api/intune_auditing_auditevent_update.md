@@ -34,7 +34,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
@@ -81,7 +81,7 @@ Content-length: 1338
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -132,7 +132,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -152,6 +152,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,7 +15,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|ID|字符串|对象的 GUID|
 |orderIdentifier|字符串|Windows autopilot 设备订单 Id。|
 |serialNumber|字符串|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
@@ -49,6 +49,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

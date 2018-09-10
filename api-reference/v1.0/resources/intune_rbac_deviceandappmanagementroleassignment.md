@@ -33,8 +33,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.roleAssignment",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
 }-->
 ``` json
@@ -51,6 +51,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

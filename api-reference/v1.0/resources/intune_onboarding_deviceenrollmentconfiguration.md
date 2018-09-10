@@ -14,7 +14,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|ID|字符串|尚未记录|
 |displayName|字符串|尚未记录|
 |description|字符串|尚未记录|
 |优先级|Int32|尚未记录|
@@ -31,9 +31,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
 }-->
 ``` json
@@ -48,6 +47,11 @@
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

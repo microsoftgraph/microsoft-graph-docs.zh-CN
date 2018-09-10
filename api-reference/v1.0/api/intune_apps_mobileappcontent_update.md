@@ -1,6 +1,6 @@
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [mobileAppContent](../resources/intune_apps_mobileappcontent.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -26,7 +26,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -36,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|应用内容版本。|
+|ID|String|应用内容版本。|
 
 
 
@@ -66,6 +66,11 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
+
+
+
+
 
 
 

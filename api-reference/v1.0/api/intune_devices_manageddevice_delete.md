@@ -1,6 +1,6 @@
 # <a name="delete-manageddevice"></a>删除 managedDevice
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 删除 [managedDevice](../resources/intune_devices_manageddevice.md)。
 ## <a name="prerequisites"></a>先决条件
@@ -26,7 +26,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDev
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|需要持有者&lt;令牌&gt;。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,6 +47,11 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

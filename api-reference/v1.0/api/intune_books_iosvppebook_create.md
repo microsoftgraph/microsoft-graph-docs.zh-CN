@@ -34,7 +34,7 @@ POST /deviceAppManagement/managedEBooks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|ID|字符串|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|String|电子书的名称。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |说明|String|说明。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |发布服务器|String|发布者。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
@@ -80,7 +80,7 @@ Content-length: 853
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -116,7 +116,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -128,6 +128,11 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
+
+
+
+
+
 
 
 

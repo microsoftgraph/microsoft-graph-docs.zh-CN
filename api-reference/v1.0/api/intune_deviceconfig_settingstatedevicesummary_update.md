@@ -1,6 +1,6 @@
 # <a name="update-settingstatedevicesummary"></a>更新 settingStateDeviceSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,12 +35,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|ID|字符串|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
-|notApplicableDeviceCount|Int32|设置的设备不可用计数|
-|compliantDeviceCount|Int32|设置的设备符合计数|
+|notApplicableDeviceCount|Int32|设置的设备不适用计数|
+|compliantDeviceCount|Int32|设置的设备符合性计数|
 |remediatedDeviceCount|Int32|设置的设备符合性计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
@@ -93,6 +93,11 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

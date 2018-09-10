@@ -2,7 +2,8 @@
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-尚未记录
+检索当前验证的用户的有效权限
+
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -24,7 +25,7 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -33,8 +34,7 @@ GET /deviceManagement/getEffectivePermissions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|scope|String|尚未记录|
-
+|scope|字符串|尚未记录|
 
 
 ## <a name="response"></a>响应

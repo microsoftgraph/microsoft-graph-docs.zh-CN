@@ -4,8 +4,7 @@
 
 列出 [managedDevice](../resources/intune_devices_manageddevice.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
-
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -27,7 +26,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -155,6 +154,11 @@ Content-Length: 5130
   ]
 }
 ```
+
+
+
+
+
 
 
 

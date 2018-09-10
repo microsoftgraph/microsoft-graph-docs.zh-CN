@@ -1,6 +1,6 @@
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|ID|字符串|实体的键。|
 |installedDeviceCount|Int32|已成功安装此书籍的设备数量。|
 |failedDeviceCount|Int32|未能成功安装此书籍的设备数量。|
 |notInstalledDeviceCount|Int32|未安装此书籍的设备数量。|
@@ -83,6 +83,11 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
+
+
+
 
 
 

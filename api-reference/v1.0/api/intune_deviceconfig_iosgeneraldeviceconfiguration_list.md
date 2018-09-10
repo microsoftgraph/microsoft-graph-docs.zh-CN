@@ -1,6 +1,6 @@
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列出 [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8854
+Content-Length: 8922
 
 {
   "value": [
@@ -159,6 +159,7 @@ Content-Length: 8854
       "kioskModeAllowVolumeButtons": true,
       "kioskModeAllowZoomSettings": true,
       "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+      "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
       "kioskModeRequireAssistiveTouch": true,
       "kioskModeRequireColorInversion": true,
       "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8854
   ]
 }
 ```
+
+
+
+
+
 
 
 

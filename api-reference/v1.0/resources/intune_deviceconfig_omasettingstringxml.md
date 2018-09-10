@@ -10,7 +10,7 @@ OMA 设置字符串 XML 定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|字符串|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |fileName|String|与 Value 属性关联的文件名 (*.xml)。|
 |value|Binary|值。 （UTF8 编码的字节数组）|
@@ -21,7 +21,6 @@ OMA 设置字符串 XML 定义。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->
 ``` json
@@ -34,6 +33,11 @@ OMA 设置字符串 XML 定义。
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 

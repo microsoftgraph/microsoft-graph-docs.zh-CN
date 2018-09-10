@@ -1,6 +1,6 @@
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,8 +35,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|displayName|String|应用类别的名称。|
+|ID|字符串|实体的键。|
+|displayName|字符串|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 
 
@@ -72,6 +72,11 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
+
+
 
 
 

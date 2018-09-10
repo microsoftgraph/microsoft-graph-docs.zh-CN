@@ -1,6 +1,6 @@
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>列出 deviceCompliancePolicySettingStateSummaries
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 列出 [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,10 +51,10 @@ Content-Length: 521
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "setting": "Setting value",
       "settingName": "Setting Name value",
       "platformType": "iOS",
-      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "unknownDeviceCount": 2,
       "notApplicableDeviceCount": 8,
       "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 521
   ]
 }
 ```
+
+
+
+
+
 
 
 

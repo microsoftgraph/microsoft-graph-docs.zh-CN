@@ -16,12 +16,10 @@ IP V4 范围
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv4Range"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iPv4Range",
@@ -29,6 +27,11 @@ IP V4 范围
   "upperAddress": "String"
 }
 ```
+
+
+
+
+
 
 
 

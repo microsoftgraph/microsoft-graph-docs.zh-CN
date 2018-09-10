@@ -16,12 +16,10 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosVppAppAssignmentSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppAppAssignmentSettings",
@@ -29,6 +27,11 @@
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
+
+
 
 
 

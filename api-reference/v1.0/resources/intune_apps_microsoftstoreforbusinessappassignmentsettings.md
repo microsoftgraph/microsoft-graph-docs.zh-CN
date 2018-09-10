@@ -17,7 +17,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "useDeviceContext": true
 }
 ```
+
+
+
+
+
 
 
 

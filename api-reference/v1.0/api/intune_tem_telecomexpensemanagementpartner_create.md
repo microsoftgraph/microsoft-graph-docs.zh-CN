@@ -1,6 +1,6 @@
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|TEM 合作伙伴的唯一标识符。|
-|displayName|String|TEM 合作伙伴的显示名称。|
-|url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
-|appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
-|enabled|Boolean|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
+|ID|字符串|TEM 合作伙伴的唯一标识符。|
+|displayName|字符串|TEM 合作伙伴的显示名称。|
+|url|字符串|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
+|appAuthorized|布尔值|是否已授权合作伙伴的 AAD 应用访问 Intune。|
+|enabled|布尔值|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
 
 
@@ -81,6 +81,11 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
+
+
 
 
 

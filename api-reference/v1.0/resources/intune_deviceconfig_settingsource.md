@@ -1,13 +1,13 @@
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 尚未记录
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
-|displayName|String|尚未记录|
+|ID|字符串|尚未记录|
+|displayName|字符串|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -26,6 +26,11 @@
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ GET /deviceManagement/auditEvents
 |标头|值|
 |:---|:---|
 |授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -72,7 +72,7 @@ Content-Length: 1629
       "activityType": "Activity Type value",
       "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",
-      "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "correlationId": "<Unknown Primitive Type Edm.Guid>",
       "resources": [
         {
           "@odata.type": "microsoft.graph.auditResource",
@@ -94,6 +94,11 @@ Content-Length: 1629
   ]
 }
 ```
+
+
+
+
+
 
 
 

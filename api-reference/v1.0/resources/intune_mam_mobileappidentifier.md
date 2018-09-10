@@ -13,7 +13,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.mobileAppIdentifier"
 }-->
 ``` json
@@ -21,6 +20,11 @@
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
+
+
+
+
+
 
 
 

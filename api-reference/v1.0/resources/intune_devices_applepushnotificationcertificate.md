@@ -13,7 +13,7 @@ Apple 推送通知证书。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|证书的唯一标识符|
+|ID|String|证书的唯一标识符|
 |appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
@@ -26,8 +26,8 @@ Apple 推送通知证书。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.applePushNotificationCertificate"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
+
+
+
+
 
 
 

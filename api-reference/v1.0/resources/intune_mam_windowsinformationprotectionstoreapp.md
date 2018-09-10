@@ -21,7 +21,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp"
 }-->
 ``` json
@@ -34,6 +33,11 @@
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

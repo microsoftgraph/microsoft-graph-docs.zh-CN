@@ -15,7 +15,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|T&C 策略的唯一标识符。|
+|ID|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
@@ -35,8 +35,8 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
 }-->
 ``` json
@@ -53,6 +53,11 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

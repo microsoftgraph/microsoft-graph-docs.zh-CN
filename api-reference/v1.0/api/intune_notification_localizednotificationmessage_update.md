@@ -1,6 +1,6 @@
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,12 +34,12 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|ID|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|locale|String|此消息的目标区域设置。|
-|subject|String|消息模板主题。|
-|messageTemplate|String|消息模板内容。|
-|isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
+|locale|字符串|此消息的目标区域设置。|
+|subject|字符串|消息模板主题。|
+|messageTemplate|字符串|消息模板内容。|
+|isDefault|布尔值|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
 
 
@@ -80,6 +80,11 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

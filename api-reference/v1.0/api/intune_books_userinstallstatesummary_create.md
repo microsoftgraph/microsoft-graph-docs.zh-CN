@@ -1,6 +1,6 @@
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,8 +34,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|userName|String|用户名。|
+|ID|字符串|实体的键。|
+|userName|字符串|用户名。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|未安装设备的计数。|
@@ -78,6 +78,11 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
+
+
 
 
 

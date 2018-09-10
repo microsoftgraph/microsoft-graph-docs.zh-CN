@@ -1,6 +1,6 @@
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [resourceOperation](../resources/intune_rbac_resourceoperation.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,10 +34,10 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|资源操作的键。 只读，且自动生成。|
-|resourceName|String|执行此操作的资源的名称。|
-|actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|ID|字符串|资源操作的键。 只读，且自动生成。|
+|resourceName|字符串|执行此操作的资源的名称。|
+|actionName|字符串|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
+|说明|字符串|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
+
+
 
 
 

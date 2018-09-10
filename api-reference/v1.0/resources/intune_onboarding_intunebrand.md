@@ -25,11 +25,10 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.intuneBrand"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
@@ -62,6 +61,11 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
+
+
+
 
 
 

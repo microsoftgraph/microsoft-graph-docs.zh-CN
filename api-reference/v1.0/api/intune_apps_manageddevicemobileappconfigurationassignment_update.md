@@ -34,7 +34,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符。|
+|ID|字符串|实体的唯一标识符。|
 |目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 
@@ -72,6 +72,11 @@ Content-Length: 234
   }
 }
 ```
+
+
+
+
+
 
 
 

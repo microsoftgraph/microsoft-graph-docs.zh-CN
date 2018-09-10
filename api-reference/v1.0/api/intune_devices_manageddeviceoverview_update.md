@@ -1,6 +1,6 @@
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|摘要的唯一标识符|
+|ID|String|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -110,6 +110,11 @@ Content-Length: 734
   }
 }
 ```
+
+
+
+
+
 
 
 

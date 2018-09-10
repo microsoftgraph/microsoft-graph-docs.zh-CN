@@ -11,7 +11,7 @@
 |:---|:---|:---|
 |password|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
 |domainName|String|尚未记录|
-|userName|String|尚未记录|
+|userName|字符串|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -19,7 +19,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceADAccount"
 }-->
 ``` json
@@ -30,6 +29,11 @@
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

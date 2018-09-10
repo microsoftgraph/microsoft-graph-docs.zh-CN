@@ -24,8 +24,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyAssignment"
 }-->
 ``` json
@@ -37,6 +37,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

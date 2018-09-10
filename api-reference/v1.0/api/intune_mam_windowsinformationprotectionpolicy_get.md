@@ -27,7 +27,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 |标头|值|
 |:---|:---|
 |授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -78,7 +78,7 @@ Content-Length: 4867
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [
@@ -191,6 +191,11 @@ Content-Length: 4867
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -13,7 +13,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |displayName|字符串|电子书的名称。|
 |description|字符串|说明。|
 |publisher|字符串|发布者。|
@@ -36,9 +36,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

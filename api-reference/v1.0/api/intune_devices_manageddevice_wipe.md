@@ -27,7 +27,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |标头|值|
 |:---|:---|
 |授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供参数的 JSON 表示形式。
@@ -48,11 +48,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
-
-<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+
 Content-type: application/json
+Content-length: 109
 
 {
   "keepEnrollmentData": true,
@@ -63,11 +63,14 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-
-<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # <a name="create-roledefinition"></a>创建 roleDefinition
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [roleDefinition](../resources/intune_rbac_roledefinition.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ POST /deviceManagement/roleDefinitions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色定义的显示名称。|
-|description|String|角色定义的描述。|
+|ID|字符串|实体的键。 此为只读，且自动生成。|
+|displayName|字符串|角色定义的显示名称。|
+|说明|字符串|角色定义的说明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
-|isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
+|isBuiltIn|布尔|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
 
 
 
@@ -108,6 +108,11 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

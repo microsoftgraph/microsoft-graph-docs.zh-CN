@@ -1,6 +1,6 @@
 # <a name="create-auditevent"></a>创建 auditEvent
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [auditEvent](../resources/intune_auditing_auditevent.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,18 +34,18 @@ POST /deviceManagement/auditEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|displayName|String|事件显示名称。|
-|componentName|String|组件名称。|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|String|活动的友好名称。|
+|ID|字符串|实体的键。|
+|displayName|字符串|事件显示名称。|
+|componentName|字符串|组件名称。|
+|执行人|[auditActor](../resources/intune_auditing_auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
+|活动|字符串|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|String|执行的活动类型。|
-|activityOperationType|String|活动的 HTTP 操作类型。|
-|activityResult|String|活动结果。|
-|correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
-|resources|[auditResource](../resources/intune_auditing_auditresource.md) 集合|正在修改的资源。|
-|category|String|审核类别。|
+|activityType|字符串|执行的活动类型。|
+|activityOperationType|字符串|活动的 HTTP 操作类型。|
+|activityResult|字符串|活动结果。|
+|correlationId|全局唯一标识符|用于关联系统内的活动的客户端请求 ID。|
+|资源|[auditResource](../resources/intune_auditing_auditresource.md) 集合|正在修改的资源。|
+|category|字符串|审核类别。|
 
 
 
@@ -153,6 +153,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

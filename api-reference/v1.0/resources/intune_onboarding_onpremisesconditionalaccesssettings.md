@@ -12,7 +12,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|ID|字符串|尚未记录|
 |已启用|布尔值|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
@@ -24,8 +24,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
 }-->
 ``` json
@@ -34,14 +34,19 @@
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+    "Guid"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

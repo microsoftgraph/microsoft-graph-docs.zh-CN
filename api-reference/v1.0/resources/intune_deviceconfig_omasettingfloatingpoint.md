@@ -10,7 +10,7 @@ OMA 设置浮点定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|字符串|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|单个|值。|
 
@@ -20,7 +20,6 @@ OMA 设置浮点定义。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
 }-->
 ``` json
@@ -29,9 +28,14 @@ OMA 设置浮点定义。
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1.5
+  "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
+
+
 
 
 

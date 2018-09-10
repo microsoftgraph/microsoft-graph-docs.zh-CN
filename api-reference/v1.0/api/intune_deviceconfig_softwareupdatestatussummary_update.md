@@ -1,6 +1,6 @@
 # <a name="update-softwareupdatestatussummary"></a>更新 softwareUpdateStatusSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,8 +34,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|displayName|String|策略的名称。|
+|ID|字符串|实体的键。|
+|displayName|字符串|策略的名称。|
 |compliantDeviceCount|Int32|兼容设备的数量。|
 |nonCompliantDeviceCount|Int32|不兼容设备的数量。|
 |remediatedDeviceCount|Int32|已修复设备的数量。|
@@ -110,6 +110,11 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
+
+
+
 
 
 

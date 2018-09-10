@@ -15,7 +15,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 此为只读，且自动生成。|
+|ID|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|字符串|角色定义的显示名称。|
 |说明|字符串|角色定义的说明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
@@ -30,8 +30,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
 }-->
 ``` json
@@ -59,6 +59,11 @@
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 
