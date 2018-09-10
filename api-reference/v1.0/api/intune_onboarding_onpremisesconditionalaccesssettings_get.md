@@ -1,18 +1,18 @@
-# <a name="get-onpremisesconditionalaccesssettings"></a><span data-ttu-id="964b7-101">获取 onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="964b7-101">Get onPremisesConditionalAccessSettings</span></span>
+# <a name="get-onpremisesconditionalaccesssettings"></a><span data-ttu-id="f5045-101">获取 onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="f5045-101">Get onPremisesConditionalAccessSettings</span></span>
 
-> <span data-ttu-id="964b7-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="964b7-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f5045-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="f5045-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="964b7-103">读取 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="964b7-103">Read properties and relationships of the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="964b7-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="964b7-104">Prerequisites</span></span>
-<span data-ttu-id="964b7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="964b7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f5045-103">读取 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f5045-103">Read properties and relationships of the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f5045-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="f5045-104">Prerequisites</span></span>
+<span data-ttu-id="f5045-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f5045-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="964b7-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="964b7-107">Permission type</span></span>|<span data-ttu-id="964b7-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="964b7-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f5045-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="f5045-107">Permission type</span></span>|<span data-ttu-id="f5045-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f5045-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="964b7-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="964b7-109">Delegated (work or school account)</span></span>|<span data-ttu-id="964b7-110">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="964b7-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="964b7-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="964b7-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="964b7-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="964b7-112">Not supported.</span></span>|
-|<span data-ttu-id="964b7-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="964b7-113">Application</span></span>|<span data-ttu-id="964b7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="964b7-114">Not supported.</span></span>|
+|<span data-ttu-id="f5045-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f5045-109">Delegated (work or school account)</span></span>|<span data-ttu-id="f5045-110">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="f5045-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="f5045-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f5045-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f5045-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="f5045-112">Not supported.</span></span>|
+|<span data-ttu-id="f5045-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="f5045-113">Application</span></span>|<span data-ttu-id="f5045-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f5045-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="964b7-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="964b7-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5045-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f5045-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,29 +21,29 @@
 GET /deviceManagement/conditionalAccessSettings
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="964b7-116">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="964b7-116">Optional query parameters</span></span>
-<span data-ttu-id="964b7-117">此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="964b7-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="964b7-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="964b7-118">Request headers</span></span>
-|<span data-ttu-id="964b7-119">标头</span><span class="sxs-lookup"><span data-stu-id="964b7-119">Header</span></span>|<span data-ttu-id="964b7-120">值</span><span class="sxs-lookup"><span data-stu-id="964b7-120">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="f5045-116">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f5045-116">Optional query parameters</span></span>
+<span data-ttu-id="f5045-117">此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f5045-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f5045-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="f5045-118">Request headers</span></span>
+|<span data-ttu-id="f5045-119">标头</span><span class="sxs-lookup"><span data-stu-id="f5045-119">Header</span></span>|<span data-ttu-id="f5045-120">值</span><span class="sxs-lookup"><span data-stu-id="f5045-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="964b7-121">授权</span><span class="sxs-lookup"><span data-stu-id="964b7-121">Authorization</span></span>|<span data-ttu-id="964b7-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="964b7-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="964b7-123">接受</span><span class="sxs-lookup"><span data-stu-id="964b7-123">Accept</span></span>|<span data-ttu-id="964b7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="964b7-124">application/json</span></span>|
+|<span data-ttu-id="f5045-121">授权</span><span class="sxs-lookup"><span data-stu-id="f5045-121">Authorization</span></span>|<span data-ttu-id="f5045-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f5045-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f5045-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f5045-123">Accept</span></span>|<span data-ttu-id="f5045-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f5045-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="964b7-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="964b7-125">Request body</span></span>
-<span data-ttu-id="964b7-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="964b7-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5045-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="f5045-125">Request body</span></span>
+<span data-ttu-id="f5045-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f5045-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="964b7-127">响应</span><span class="sxs-lookup"><span data-stu-id="964b7-127">Response</span></span>
-<span data-ttu-id="964b7-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="964b7-128">If successful, this method returns a `200 OK` response code and [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f5045-127">响应</span><span class="sxs-lookup"><span data-stu-id="f5045-127">Response</span></span>
+<span data-ttu-id="f5045-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f5045-128">If successful, this method returns a `200 OK` response code and [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="964b7-129">示例</span><span class="sxs-lookup"><span data-stu-id="964b7-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="964b7-130">请求</span><span class="sxs-lookup"><span data-stu-id="964b7-130">Request</span></span>
-<span data-ttu-id="964b7-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="964b7-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f5045-129">示例</span><span class="sxs-lookup"><span data-stu-id="f5045-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f5045-130">请求</span><span class="sxs-lookup"><span data-stu-id="f5045-130">Request</span></span>
+<span data-ttu-id="f5045-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f5045-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 ```
 
-### <a name="response"></a><span data-ttu-id="964b7-132">响应</span><span class="sxs-lookup"><span data-stu-id="964b7-132">Response</span></span>
-<span data-ttu-id="964b7-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="964b7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f5045-132">响应</span><span class="sxs-lookup"><span data-stu-id="f5045-132">Response</span></span>
+<span data-ttu-id="f5045-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f5045-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -55,15 +55,20 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "79199ed9-e50b-4257-8de4-70b9c8685061"
+      "<Unknown Primitive Type Edm.Guid>"
     ],
     "excludedGroups": [
-      "79199ed9-e50b-4257-8de4-70b9c8685061"
+      "<Unknown Primitive Type Edm.Guid>"
     ],
     "overrideDefaultRule": true
   }
 }
 ```
+
+
+
+
+
 
 
 
