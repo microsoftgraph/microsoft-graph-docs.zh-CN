@@ -6,7 +6,7 @@ Windows 10 版本类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|windows10Enterprise|0|Windows 10 Enterprise|
+|windows10Enterprise|0|Windows 10 企业版|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|
 |windows10Education|2|Windows 10 Education|
 |windows10EducationN|3|Windows 10 EducationN|
@@ -18,6 +18,11 @@ Windows 10 版本类型
 |windows10ProfessionalEducationN|9|Windows 10 Professional EducationN|
 |windows10ProfessionalWorkstation|10|Windows 10  Professional 工作站|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional Workstations N|
+
+
+
+
+
 
 
 

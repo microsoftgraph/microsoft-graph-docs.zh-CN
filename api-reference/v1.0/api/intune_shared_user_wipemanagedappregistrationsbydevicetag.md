@@ -10,7 +10,8 @@
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）| _因上下文而异_ |
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

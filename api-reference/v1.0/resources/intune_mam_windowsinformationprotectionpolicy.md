@@ -24,7 +24,7 @@
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |版本|字符串|实体的版本。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP 强制级别。请参见对继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) 的支持值枚举定义。 可能的值为： `noProtection` 、 `encryptAndAuditOnly` 、 `encryptAuditAndPrompt` 、 `encryptAuditAndBlock` 。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP 强制级别。有关受支持的值，请参阅枚举定义。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)。可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
 |enterpriseDomain|字符串|主企业域。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) 集合|要保护的企业域列表。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|布尔|指定是否应配置锁定功能下的保护（也称为 PIN 下的加密）。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -50,9 +50,9 @@
 |mdmEnrollmentUrl|字符串|MDM 的注册 URL|
 |windowsHelloForBusinessBlocked|布尔|将 Windows Hello 企业版设置为登录 Windows 的方法的布尔值。|
 |pinMinimumLength|Int32|整数值，用于设置 PIN 所需的最少字符数。 默认值为 4。 可以为此策略设置配置的最小数量为 4。 可以配置的最大数量必须小于最大 PIN 长度策略设置中配置的数量或 127（以最低者为准）。|
-|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|用于配置 Windows Hello for Business PIN 中大写字母使用的整数值。 默认方式为 NotAllow。 可能的值为： `notAllow` 、 `requireAtLeastOne` 、 `allow` 。|
-|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|用于配置 Windows Hello for Business PIN 中小写字母使用整数值。 默认方式为 NotAllow。 可能的值为： `notAllow` 、 `requireAtLeastOne` 、 `allow` 。|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|配置 Windows Hello for Business PIN 中特殊字母使用整数值。 Windows Hello 企业版 PIN 手势的有效特殊字符包括：! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。 默认方式为 NotAllow。 可能的值为： `notAllow` 、 `requireAtLeastOne` 、 `allow` 。|
+|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|配置在 Windows Hello for Business PIN 中使用大写字母的整数值。默认值为 NotAllow。可能的值为：`notAllow`、`requireAtLeastOne`、`allow`。|
+|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|配置在 Windows Hello for Business PIN 中使用小写字母的整数值。默认值为 NotAllow。可能的值为：`notAllow`、`requireAtLeastOne`、`allow`。|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|配置在 Windows Hello for Business PIN 中使用特殊字母的整数值。 Windows Hello 企业版 PIN 手势的有效特殊字符包括：! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。默认值为 NotAllow。可能的值为：`notAllow`、`requireAtLeastOne`、`allow`。|
 |pinExpirationDays|Int32|整数值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段（以天为单位）。 可以为此策略设置配置的最大数量为 730。 可以为此策略设置配置的最小数量为 0。 如果此策略设置为 0，则用户的 PIN 永远不会过期。 此节点在 Windows 10 版本 1511 中添加。 默认值为 0。|
 |numberOfPastPinsRemembered|Int32|整数值，用于指定可以关联到无法重用的用户帐户的过去 PIN 的数量。 可以为此策略设置配置的最大数量为 50。 可以为此策略设置配置的最小数量为 0。 如果此策略设置为 0，则不需要存储以前的 PIN。 此节点在 Windows 10 版本 1511 中添加。 默认值为 0。|
 |passwordMaximumAttemptCount|Int32|在擦除设备之前允许的身份验证失败次数。 值为 0 将禁用设备擦除功能。 范围是一个整数 X，其中对于台式机 4 <= X <= 16，对于移动设备 0 <= X <= 999。|
@@ -70,8 +70,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
 }-->
 ``` json
@@ -103,7 +103,7 @@
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -215,6 +215,11 @@
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
+
+
+
+
+
 
 
 

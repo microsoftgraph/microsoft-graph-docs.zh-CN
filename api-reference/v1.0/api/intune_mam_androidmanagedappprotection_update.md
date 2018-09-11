@@ -38,14 +38,14 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |描述|字符串|策略的说明。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|ID|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |版本|字符串|实体的版本。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|时长|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|时长|设备连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许自其传输数据的源。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md) 。 可能的值为： `allApps` 、 `managedApps` 、 `none` 。|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许向其传输数据的目标。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md) 。 可能的值为： `allApps` 、 `managedApps` 、 `none` 。|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许自其传输数据的来源。继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)。 可取值为：`allApps`、`managedApps`、`none`。|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许向其传输数据的目标。继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)。可取值为：`allApps`、`managedApps`、`none`。|
 |organizationalCredentialsRequired|布尔|指示是否需要组织凭据才能使用应用。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|应用程序可以在管理设备上共享剪贴板的级别。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md) 。 可能的值为： `allApps` 、 `managedAppsWithPasteIn` 、 `managedApps` 、 `blocked` 。|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
 |dataBackupBlocked|布尔|指示是否阻止备份托管应用的数据。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |deviceComplianceRequired|布尔|指示是否需要设备符合性。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |managedBrowserToOpenLinksRequired|布尔|指示是否应在托管浏览器应用中打开 Internet 链接。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -55,9 +55,9 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |maximumPinRetries|Int32|在阻止或擦除管理应用程序之前，尝试不正确 PIN 码的最大尝试次数。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |simplePinBlocked|布尔|指示是否阻止 simplePin。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 PIN 所需的最小 PIN 长度。继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired 设置为“真”时可用于应用级别 PIN 码的字符集。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md) 。 可能的值为： `numeric` 、 `alphanumericAndSymbol` 。|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 PIN 的字符集。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)。 可取值为：`numeric`、`alphanumericAndSymbol`。|
 |periodBeforePinReset|时长|PinRequired 设置为 True 时，在此时间段之后必须重置所有级别的 PIN。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedDataStorageLocations|[managedAppDataStorageLocation 枚举](../resources/intune_mam_managedappdatastoragelocation.md) 集合|用户可能存储管理数据的数据存储位置。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md) 。 可能的值为： `oneDriveForBusiness` 、 `sharePoint` 、 `localStorage` 。|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) 集合|用户可能存储托管数据的数据存储位置。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)。 可取值为：`oneDriveForBusiness`、`sharePoint`、`localStorage`。|
 |contactSyncBlocked|布尔|指示联系人是否可以同步到用户的设备。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |printBlocked|布尔|指示是否允许从托管应用进行打印。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |fingerprintBlocked|布尔|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 PIN。 继承自 [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
@@ -182,6 +182,11 @@ Content-Length: 1864
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
+
+
+
+
+
 
 
 

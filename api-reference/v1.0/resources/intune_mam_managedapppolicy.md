@@ -17,7 +17,7 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 |描述|字符串|策略的说明。|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -26,9 +26,8 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
 }-->
 ``` json
@@ -42,6 +41,11 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 
