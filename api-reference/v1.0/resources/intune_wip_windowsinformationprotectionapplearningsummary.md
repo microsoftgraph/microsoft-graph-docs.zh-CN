@@ -15,9 +15,9 @@ Windows 信息保护应用学习摘要实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|ID|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|字符串|应用程序名称|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用类型 可取值为：`universal`、`desktop`。|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用程序类型。可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
 
 ## <a name="relationships"></a>关系
@@ -26,8 +26,8 @@ Windows 信息保护应用学习摘要实体。
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
 }-->
 ``` json
@@ -39,6 +39,11 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

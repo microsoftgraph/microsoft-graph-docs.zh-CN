@@ -10,6 +10,12 @@
 |valid|1|令牌有效。|
 |expired|2|令牌已过期。|
 |invalid|3|令牌无效。|
+|assignedToExternalMDM|4|令牌由另一个 MDM 服务管理。|
+
+
+
+
+
 
 
 

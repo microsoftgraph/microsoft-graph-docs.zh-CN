@@ -18,22 +18,22 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|描述|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|发布者|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |isFeatured|布尔|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md) 。 可能的值为： `notPublished` 、 `processing` 、 `published` 。|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|应用程序的可用性。 继承自 [managedApp](../resources/intune_apps_managedapp.md) 。 可能的值为： `global` 、 `lineOfBusiness` 。|
-|version|字符串|应用程序的版本。 继承自 [managedApp](../resources/intune_apps_managedapp.md)|
+|所有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|开发者|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|注释|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。除非应用已发布，否则不能被分配。继承自 [mobileApp](../resources/intune_apps_mobileapp.md) 。可能的值为： `notPublished` 、 `processing` 、 `published` 。|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|应用程序的可用性。继承自 [managedApp](../resources/intune_apps_managedapp.md) 。可能的值为： `global` 、 `lineOfBusiness` 。|
+|版本|字符串|应用程序的版本。 继承自 [managedApp](../resources/intune_apps_managedapp.md)|
 |bundleId|字符串|应用的捆绑 ID。|
 |appStoreUrl|字符串|Apple AppStoreUrl。|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
@@ -49,8 +49,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedIOSStoreApp"
 }-->
 ``` json
@@ -92,6 +92,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

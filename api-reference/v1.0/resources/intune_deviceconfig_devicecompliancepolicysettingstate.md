@@ -9,7 +9,7 @@
 |setting|字符串|报告的设置|
 |settingName|字符串|报告的本地化/用户友好设置名称|
 |instanceDisplayName|字符串|报告的设置实例的名称。|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
 |errorDescription|字符串|错误说明|
 |userId|字符串|UserId|
@@ -50,6 +50,11 @@
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

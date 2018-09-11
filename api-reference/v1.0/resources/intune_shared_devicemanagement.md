@@ -2,7 +2,7 @@
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-DeviceManagement 资源表示内容因工作流而异的容器，包括：
+DeviceManagement 资源表示内容因工作流而异的容器，包括：  
 
 - 审核事件
 - 企业条款和条件 
@@ -32,7 +32,7 @@ DeviceManagement 资源表示内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|ID|字符串|设备唯一标识符|
 |**设备配置**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -48,7 +48,7 @@ DeviceManagement 资源表示内容因工作流而异的容器，包括：
 |**企业条款和条件**|
 |termsAndConditions|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) 集合|与公司的设备管理关联的条款和条件。|
 |**设备配置**|
-|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) 集合|设备符合性策略。|
+|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) 集合|设备合规性策略。|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|此帐户的设备符合性状态摘要。|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) 集合|此帐户的符合性设置的摘要状态。|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|此帐户的设备配置设备状态摘要。|
@@ -62,6 +62,7 @@ DeviceManagement 资源表示内容因工作流而异的容器，包括：
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) 集合|托管设备列表。|
 |**注册**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
+|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) 集合|上传 Windows AutoPilot 设备的集合。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 集合|通知消息模板。|
 |**加入**|
@@ -76,7 +77,7 @@ DeviceManagement 资源表示内容因工作流而异的容器，包括：
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) 集合|角色分配。|
 |roleDefinitions|[roleDefinition](../resources/intune_rbac_roledefinition.md) 集合|角色定义。|
 |**远程协助**|
-|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) 集合|远程帮助合作伙伴。|
+|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) 集合|远程协助合作伙伴。|
 |**电信费用管理**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
 |**疑难解答**|

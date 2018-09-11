@@ -6,13 +6,18 @@
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|sunday|0|星期日。|
+|sunday|0|星期天。|
 |monday|1|星期一。|
 |tuesday|2|星期二。|
 |wednesday|3|星期三。|
 |thursday|4|星期四。|
 |friday|5|星期五。|
 |saturday|6|星期六。|
+
+
+
+
+
 
 
 
