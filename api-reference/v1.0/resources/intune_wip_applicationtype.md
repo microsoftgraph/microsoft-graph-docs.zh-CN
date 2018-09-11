@@ -7,7 +7,12 @@
 |成员|值|说明|
 |:---|:---|:---|
 |universal|1|Windows 通用应用程序|
-|桌面|2|Windows 桌面应用程序|
+|desktop|2|Windows 桌面应用程序|
+
+
+
+
+
 
 
 

@@ -9,11 +9,11 @@ Windows Defender 最后扫描结果
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|从 [ deviceActionResult ](../resources/intune_devices_deviceactionresult.md)  继承操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|actionName|字符串|操作名称 继承自 [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|从 [ deviceActionResult ](../resources/intune_devices_deviceactionresult.md) 继承操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
 |startDateTime|DateTimeOffset|启动操作的时间 继承自 [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|scanType|String|扫描类型（完全扫描或快速扫描）|
+|scanType|字符串|扫描类型（完全扫描或快速扫描）|
 
 ## <a name="relationships"></a>关系
 无
@@ -21,7 +21,6 @@ Windows Defender 最后扫描结果
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.windowsDefenderScanActionResult"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
+
+
+
+
+
 
 
 
