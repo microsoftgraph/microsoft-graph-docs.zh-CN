@@ -7,7 +7,7 @@
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|字符串|操作名|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|操作的状态。 可能的值为： `none` 、 `pending` 、 `canceled` 、 `active` 、 `done` 、 `failed` 、 `notSupported` 。|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|操作的状态。可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
 |startDateTime|DateTimeOffset|初始化操作的时间|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间|
 
@@ -28,6 +28,11 @@
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

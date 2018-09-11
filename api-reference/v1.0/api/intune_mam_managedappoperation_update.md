@@ -1,6 +1,6 @@
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [managedAppOperation](../resources/intune_mam_managedappoperation.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|操作名称。|
+|displayName|字符串|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
-|state|String|操作的当前状态|
-|id|String|实体的键。|
-|version|String|实体的版本。|
+|state|字符串|操作的当前状态|
+|ID|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 
 
@@ -77,6 +77,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

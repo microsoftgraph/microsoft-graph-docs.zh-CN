@@ -14,20 +14,19 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID。|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|移动设备管理机构。 可能的值为： `unknown` 、 `intune` 、 `sccm` 、 `office365` 。|
+|ID|字符串|对象的 GUID。|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "openType": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.organization"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.organization",
@@ -39,6 +38,22 @@
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md"
-  ]
-}-->
+
+"Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
+
+"Warning: Schema type organization has a different BaseType value microsoft.graph.directoryObject than the documentation .",
+
+"Warning: Schema type organization has a different OpenType value False than the documentation True.",
+
+"Warning: Resource organization has multiple declarations with mismatched OpenType declarations."
+
+  ],
+
+}
+-->
+
+
+
+
+
+
