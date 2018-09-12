@@ -1,6 +1,6 @@
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>更新 windowsInformationProtectionAppLearningSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
-|applicationName|String|应用程序名称|
-|applicationType|String|应用程序类型。可取值为：`universal`、`desktop`。|
+|ID|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|applicationName|字符串|应用程序名称|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
 
 
@@ -74,6 +74,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

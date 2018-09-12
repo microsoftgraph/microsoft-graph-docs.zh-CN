@@ -6,9 +6,9 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|appConfigKey|String|应用配置密钥。|
-|appConfigKeyType|mdmAppConfigKeyType|应用配置密钥类型。 可取值为：`stringType`、`integerType`、`realType`、`booleanType`、`tokenType`。|
-|appConfigKeyValue|String|应用配置密钥值。|
+|appConfigKey|字符串|应用配置密钥。|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|应用配置密钥类型。可取值为：`stringType`、`integerType`、`realType`、`booleanType`、`tokenType`。|
+|appConfigKeyValue|字符串|应用配置密钥值。|
 
 ## <a name="relationships"></a>关系
 无
@@ -26,6 +26,11 @@
   "appConfigKeyValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

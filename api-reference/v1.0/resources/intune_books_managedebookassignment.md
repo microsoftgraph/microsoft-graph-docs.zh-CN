@@ -15,9 +15,9 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意向。 可能的值为： `available` 、 `required` 、 `uninstall` 、 `availableWithoutEnrollment` 。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -25,8 +25,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBookAssignment"
 }-->
 ``` json
@@ -39,6 +39,11 @@
   "installIntent": "String"
 }
 ```
+
+
+
+
+
 
 
 

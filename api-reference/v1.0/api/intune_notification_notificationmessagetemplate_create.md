@@ -38,7 +38,7 @@ POST /deviceManagement/notificationMessageTemplates
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|字符串|通知消息模板的显示名称。|
 |defaultLocale|字符串|请求的区域设置不可用时要回退到的默认区域设置。|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|消息模板品牌选项。 已在 Intune 管理员控制台中定义品牌。 可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|邮件模版品牌选项。品牌在 Intune 管理控制台中定义。可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
+
+
+
+
 
 
 

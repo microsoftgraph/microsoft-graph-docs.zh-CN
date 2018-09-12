@@ -47,13 +47,13 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可能的值是：`deviceDefault`、`alphanumeric`、`numeric`。|
 |osMinimumVersion|字符串|最低 IOS 版本。|
 |osMaximumVersion|字符串|最高 IOS 版本。|
 |systemIntegrityProtectionEnabled|布尔值|要求设备已启用系统完整性保护。|
 |deviceThreatProtectionEnabled|布尔值|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求按移动威胁防护最低风险级别报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|storageRequireEncryption|布尔值|要求对 Mac OS 设备加密。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁保护最低风险级别报告违规.。可能的值为： `unavailable`， `secured`， `low`， `medium`， `high`， `notSet`。|
+|storageRequireEncryption|布尔值|要求对 Mac 操作系统设备加密。|
 |firewallEnabled|布尔值|是否应启用防火墙。|
 |firewallBlockAllIncoming|布尔值|对应于"阻止所有传入连接"选项。|
 |firewallEnableStealthMode|布尔值|对应于"启用隐藏模式"。|
@@ -130,6 +130,11 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 

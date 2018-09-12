@@ -13,6 +13,12 @@
 |nonCompliant|4|尚未记录|
 |error|5|尚未记录|
 |冲突|6|尚未记录|
+|notAssigned|7|尚未记录|
+
+
+
+
+
 
 
 

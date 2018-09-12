@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 
