@@ -34,7 +34,7 @@ POST /deviceManagement/deviceConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |描述|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations
 |maintenanceWindowBlocked|布尔|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
 |maintenanceWindowStartTime|TimeOfDay|设备更新的维护时段开始时间。|
-|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|通道。 可能的值为： `userDefined` 、 `one` 、 `two` 、 `three` 、 `four` 、 `five` 、 `six` 、 `seven` 、 `eight` 、 `nine` 、 `ten` 、 `eleven` 、 `thirtySix` 、 `forty` 、 `fortyFour` 、 `fortyEight` 、 `oneHundredFortyNine` 、 `oneHundredFiftyThree` 、 `oneHundredFiftySeven` 、 `oneHundredSixtyOne` 、 `oneHundredSixtyFive` 。|
+|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|频道。可能的值是：`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive`。|
 |miracastBlocked|布尔|指示是否阻止无线投影。|
 |miracastRequirePin|布尔|指示是否需要 PIN 才能进行无线投影。|
 |settingsBlockMyMeetingsAndFiles|布尔|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceConfigurations
 |settingsSleepTimeoutInMinutes|Int32|指定 Hub 进入睡眠模式前的分钟数。|
 |welcomeScreenBlockAutomaticWakeUp|布尔|指示当某人进入会议室时是否阻止欢迎屏幕自动唤醒。|
 |welcomeScreenBackgroundImageUrl|字符串|欢迎屏幕背景图像 URL。 URL 必须使用 HTTPS 协议并返回 PNG 图像。|
-|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|显示的欢迎屏幕会议信息。 可能的值为： `userDefined` 、 `showOrganizerAndTimeOnly` 、 `showOrganizerAndTimeAndSubject` 。|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|显示的欢迎屏幕会议信息。可取值是：`userDefined`、`showOrganizerAndTimeOnly`、`showOrganizerAndTimeAndSubject`。|
 
 
 
@@ -140,6 +140,11 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
+
+
 
 
 

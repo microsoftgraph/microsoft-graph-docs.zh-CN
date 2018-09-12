@@ -20,11 +20,11 @@
 |description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|ID|String|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。|
-|periodOnlineBeforeAccessCheck|Duration|设备连接到 Internet 时在该时间段后检查访问权限。|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许传输其中的数据的源。 可取值为：`allApps`、`managedApps`、`none`。|
+|periodOfflineBeforeAccessCheck|时长|设备未连接到 Internet 时在该时间段后检查访问权限。|
+|periodOnlineBeforeAccessCheck|时长|设备连接到 Internet 时在该时间段后检查访问权限。|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许自其传输数据的来源。可取值为：`allApps`、`managedApps`、`none`。|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|允许向其传输数据的目标。 可取值为：`allApps`、`managedApps`、`none`。|
 |organizationalCredentialsRequired|布尔值|指示是否需要组织凭据才能使用应用。|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
@@ -32,14 +32,14 @@
 |deviceComplianceRequired|布尔值|指示是否需要设备合规性。|
 |managedBrowserToOpenLinksRequired|布尔值|指示是否应在托管浏览器应用中打开 Internet 链接。|
 |saveAsBlocked|布尔值|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
-|periodOfflineBeforeWipeIsEnforced|Duration|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
+|periodOfflineBeforeWipeIsEnforced|时长|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
 |pinRequired|布尔值|指示是否需要应用级 pin。|
 |maximumPinRetries|Int32|在阻止或擦除托管应用之前，不正确 PIN 重新尝试的最大尝试次数。|
 |simplePinBlocked|布尔值|指示是否阻止 simplePin。|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 pin 所需的最小 pin 长度。|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 PIN 的字符集。 可取值为：`numeric`、`alphanumericAndSymbol`。|
-|periodBeforePinReset|Duration|TimePeriod，如果 PinRequired 设置为 True，必须在此之前重置所有级别的 pin。|
-|allowedDataStorageLocations|[managedAppDataStorageLocation enum](../resources/intune_mam_managedappdatastoragelocation.md) 集合|用户可能存储托管数据的数据存储位置。|
+|periodBeforePinReset|时长|TimePeriod，如果 PinRequired 设置为 True，必须在此之前重置所有级别的 pin。|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) 集合|用户可能存储托管数据的数据存储位置。|
 |contactSyncBlocked|布尔值|指示联系人是否可以同步到用户的设备。|
 |printBlocked|布尔值|指示是否允许从托管应用进行打印。|
 |fingerprintBlocked|布尔值|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
@@ -55,9 +55,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppProtection"
 }-->
 ``` json
@@ -99,6 +98,11 @@
   "minimumWarningAppVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 
