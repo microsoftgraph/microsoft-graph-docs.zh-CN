@@ -8,7 +8,8 @@
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| （加入）DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）| 
+| &nbsp; &nbsp; _加入_ | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -33,15 +34,16 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="response"></a>响应
 如果成功，此操作返回 `204 No Content` 响应代码。
 
-## <a name="example"></a>示例
-### <a name="request"></a>请求
-下面是一个请求示例。
+## <a name="example-request"></a>示例请求
+
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
+为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+
 ``` http
 HTTP/1.1 204 No Content
 ```

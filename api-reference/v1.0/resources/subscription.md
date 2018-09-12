@@ -49,24 +49,24 @@
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。|
-| notificationUrl | string | 必需。 将接收通知的端点的 URL。 此 URL 必须使用 HTTPS 协议。 |
-| resource | string | 必需。 指定将监视其是否发生更改的资源。 不包含基 URL (`https://graph.microsoft.com/v1.0/`)。 |
+| changeType | 字符串 | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项通知仅支持 `updated` changeType。 用户和组通知支持 `updated` 和 `deleted` changeType。|
+| notificationUrl | 字符串 | 必需。 将接收通知的端点的 URL。 此 URL 必须使用 HTTPS 协议。 |
+| resource | 字符串 | 必需。 指定将监视其是否发生更改的资源。 不包含基 URL (`https://graph.microsoft.com/v1.0/`)。 |
 | expirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
-| clientState | string | 可选。 指定每个通知中服务发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
-| id | string | 订阅的唯一标识符。只读。 |
-| applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
-| creatorId | string | 用户或创建订阅的服务主体的标识符。 如果应用程序使用委派权限创建订阅，此字段包含应用程序调用代表登录用户的 id。 如果应用程序使用应用程序权限，此字段包含应用程序对应的服务主体的 id。 只读。 |
+| clientState | 字符串 | 可选。 指定服务为每个通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
+| id | 字符串 | 订阅的唯一标识符。只读。 |
+| applicationId | 字符串 | 用于创建订阅的应用程序的标识符。 只读。 |
+| creatorId | 字符串 | 用户或创建订阅的服务主体的标识符。 如果应用程序使用委派权限创建订阅，此字段包含应用程序调用代表登录用户的 id。 如果应用程序使用应用程序权限，此字段包含应用程序对应的服务主体的 id。 只读。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 
 | 资源            | 最大过期时间  |
 |:--------------------|:-------------------------|
-| 邮件                | 4320 分钟 （3 天）    |
-| 日历            | 4320 分钟 （3 天）    |
-| 联系人            | 4320 分钟 （3 天）    |
-| 组对话 | 4320 分钟 （3 天）    |
-| 驱动器根项    | 4320 分钟 （3 天） |
+| 邮件                | 4230 分钟 （3 天内）    |
+| 日历            | 4230 分钟 （3 天内）    |
+| 联系人            | 4230 分钟 （3 天内）    |
+| 组对话 | 4230 分钟 （3 天内）    |
+| 驱动器根项    | 4230 分钟 （3 天内）    |
 
 > **注意：** 现有和新的应用都不得超过支持的值。 将来，任何超出最大值的订阅创建或续订请求都将失败。
 

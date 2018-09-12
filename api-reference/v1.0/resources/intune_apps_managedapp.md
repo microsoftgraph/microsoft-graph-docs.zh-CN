@@ -28,9 +28,9 @@
 |负责人|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |开发人员|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |注释|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|应用程序的可用性。 可取值为：`global`、`lineOfBusiness`。|
-|版本|字符串|应用程序的版本。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用程序的发布状态。除非应用程序已发布，否则无法分配应用程序。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可取值为：`notPublished`、`processing`、`published`。|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|应用程序的可用性。可取值为：`global`、`lineOfBusiness`。|
+|version|字符串|应用程序的版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -42,9 +42,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedApp"
 }-->
 ``` json
@@ -72,6 +71,11 @@
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

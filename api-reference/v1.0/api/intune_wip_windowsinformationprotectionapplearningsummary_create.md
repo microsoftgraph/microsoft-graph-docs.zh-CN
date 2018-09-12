@@ -34,9 +34,9 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
-|applicationName|String|应用程序名称|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用类型。 可取值为：`universal`、`desktop`。|
+|ID|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|applicationName|字符串|应用程序名称|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用程序类型。可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
 
 
@@ -75,6 +75,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

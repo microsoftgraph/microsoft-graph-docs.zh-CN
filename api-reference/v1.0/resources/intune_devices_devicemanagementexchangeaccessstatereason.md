@@ -13,7 +13,7 @@
 |exchangeDeviceRule|4|访问状态由 Exchange 设备规则确定|
 |exchangeUpgrade|5|访问状态取决于 Exchange 升级|
 |exchangeMailboxPolicy|6|访问状态由 Exchange 邮箱策略确定|
-|其他|7|访问状态由 Exchange 确定|
+|other|7|访问状态由 Exchange 确定|
 |compliant|8|访问状态由合规性质询授权|
 |notCompliant|9|访问状态由合规性质询吊销|
 |notEnrolled|10|访问状态由管理质询吊销|
@@ -22,6 +22,11 @@
 |azureADBlockDueToAccessPolicy|14|访问状态由 AAD 访问策略吊销|
 |compromisedPassword|15|访问状态由泄露的密码吊销|
 |deviceNotKnownWithManagedApp|16|访问状态由托管应用程序质询吊销|
+
+
+
+
+
 
 
 

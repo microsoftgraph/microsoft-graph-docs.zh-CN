@@ -7,19 +7,19 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List deviceCategories](../api/intune_shared_devicecategory_list.md) 集合|列出 [deviceCategory](../resources/intune_shared_devicecategory.md) 对象的属性和关系。|
-|[Get deviceCategory](../api/intune_shared_devicecategory_get.md)|读取 [deviceCategory](../resources/intune_shared_devicecategory.md) 对象的属性和关系。|
-|[Create deviceCategory](../api/intune_shared_devicecategory_create.md)|创建新的 [deviceCategory](../resources/intune_shared_devicecategory.md) 对象。|
-|[删除 deviceCategory](../api/intune_shared_devicecategory_delete.md)。|
-|[Update deviceCategory](../api/intune_shared_devicecategory_update.md)|更新 [deviceCategory](../resources/intune_shared_devicecategory.md) 对象的属性。|
+|[List deviceCategories](../api/intune_shared_devicecategory_list.md) 对象。|
+|[Get deviceCategory](../api/intune_shared_devicecategory_get.md) 对象。|
+|[Create deviceCategory](../api/intune_shared_devicecategory_create.md) 对象。|
+|[Delete deviceCategory](../api/intune_shared_devicecategory_delete.md)。|
+|[Update deviceCategory](../api/intune_shared_devicecategory_update.md) 对象。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|ID|字符串|设备类别的唯一标识符。 只读。|
 |**起始安排**|
 |displayName|字符串|设备类别的显示名称。|
-|description|字符串|设备类别的说明（可选）。|
+|说明|字符串|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无

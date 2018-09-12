@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps
 |所有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |开发者|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |备注|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。除非应用已发布，否则不能被分配。继承自 [mobileApp](../resources/intune_apps_mobileapp.md) 。可取值为： `notPublished` 、`processing` 、`published` 。|
 |appUrl|字符串|Web 应用 URL。|
 |useManagedBrowser|布尔值|是否使用托管浏览器。 此属性仅适用于 Android 和 iOS。|
 
@@ -118,6 +118,11 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
+
+
+
+
 
 
 

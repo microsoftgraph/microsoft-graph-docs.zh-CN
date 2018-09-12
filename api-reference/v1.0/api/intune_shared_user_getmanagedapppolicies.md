@@ -6,10 +6,10 @@
 ## <a name="prerequisites"></a>先决条件
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|委派（工作或学校帐户）| _因上下文而异_|
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -25,8 +25,8 @@ GET /users/{usersId}/getManagedAppPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
