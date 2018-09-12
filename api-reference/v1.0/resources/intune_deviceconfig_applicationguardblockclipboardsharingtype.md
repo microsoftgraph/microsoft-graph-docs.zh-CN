@@ -7,10 +7,15 @@ ApplicationGuardBlockClipboardSharingType 可能的赋值
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置|
-|blockBoth|1|阻止从主机到容器和容器到主机通过剪贴板共享数据|
+|blockBoth|1|阻止从从主机到容器和从容器到主机通过剪贴板共享数据|
 |blockHostToContainer|2|阻止从主机到容器通过剪贴板共享数据|
 |blockContainerToHost|3|阻止从容器到主机通过剪贴板共享数据|
 |blockNone|4|阻止从从主机到容器和从容器到主机通过剪贴板共享数据|
+
+
+
+
+
 
 
 

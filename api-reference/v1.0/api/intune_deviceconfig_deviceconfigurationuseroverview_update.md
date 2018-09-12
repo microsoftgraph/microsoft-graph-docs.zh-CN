@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |pendingCount|Int32|待定用户的数量|
 |notApplicableCount|Int32|不适用用户的数量|
 |successCount|Int32|成功用户的数量|
@@ -86,6 +86,11 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
+
+
+
+
+
 
 
 

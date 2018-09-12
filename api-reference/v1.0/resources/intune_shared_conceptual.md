@@ -18,6 +18,8 @@
 - [组分配目标](intune_shared_groupassignmenttarget.md)
 - [安装用途](intune_shared_installintent.md)
 - [MIME 内容](intune_shared_mimecontent.md)
+- [报告](intune_shared_report.md)
+- [报表根目录](intune_shared_reportroot.md)
 - [已保存的 UI 状态生成选项](intune_shared_saveduistategenerationoptions.md)
 - [URI](intune_shared_uri.md)
 - [用户](intune_shared_user.md)

@@ -18,7 +18,7 @@
 |ID|字符串|实体的键。|
 |userDisplayName|字符串|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。可能的值为： `unknown` 、 `notApplicable` 、 `compliant` 、 `remediated` 、 `nonCompliant` 、 `error` 、 `conflict` 、 `notAssigned` 。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
 |userPrincipalName|字符串|UserPrincipalName。|
 
@@ -28,8 +28,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceUserStatus"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -8,11 +8,16 @@
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视都显示内容|
 |allBlocked|1|不允许任何电视显示内容|
-|常规|2|GA 分类适用于所有观众|
-|儿童|3|CH 分类适合儿童|
+|general|2|GA 分类适用于所有观众|
+|children|3|CH 分类适合儿童|
 |youngAdults|4|YA 分类适合青少年观众|
 |parentalSupervision|5|PS 分类邀请父母和监护人考虑限制儿童的观看|
 |成人|6|MA 分类适合成人|
+
+
+
+
+
 
 
 
