@@ -1,6 +1,6 @@
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 创建新的 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 iosVppEBookAssignment 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|String|电子图书的安装意向。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|ID|字符串|实体的键。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
+|目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)。 可能的值是：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

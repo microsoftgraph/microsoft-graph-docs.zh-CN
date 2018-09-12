@@ -31,7 +31,7 @@
 |所有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |开发者|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |备注|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。除非应用已发布，否则不能被分配。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可取值为：`notPublished`、`processing`、`published`。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |releaseDateTime|DateTimeOffset|VPP 应用程序的发布日期和时间。|
@@ -39,7 +39,7 @@
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|受支持的许可证类型。|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|适用的 iOS 设备类型。|
 |vppTokenOrganizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。可取值为：`business`、`education`。可取值为：`business`、`education`。|
 |vppTokenAppleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |bundleId|字符串|标识名称。|
 
@@ -53,8 +53,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppApp"
 }-->
 ``` json
@@ -98,6 +98,11 @@
   "bundleId": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,18 +6,17 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|movieRating|[ratingUnitedStatesMoviesType](../resources/intune_deviceconfig_ratingunitedstatesmoviestype.md)|为美国所选的影片分级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`parentalGuidance13`、`restricted`、`adults`。|
-|tvRating|[ratingUnitedStatesTelevisionType](../resources/intune_deviceconfig_ratingunitedstatestelevisiontype.md)|为美国所选的电视分级。 可取值为：`allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`。|
+|movieRating|[ratingUnitedStatesMoviesType](../resources/intune_deviceconfig_ratingunitedstatesmoviestype.md)|为美国选择的电影分级。可取值为： `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`parentalGuidance13`、`restricted`、`adults`。|
+|tvRating|[ratingUnitedStatesTelevisionType](../resources/intune_deviceconfig_ratingunitedstatestelevisiontype.md)|为美国选择的电视分级。可取值为： `allAllowed`、`allBlocked`、`childrenAll`、`childrenAbove7`、`general`、`parentalGuidance`、`childrenAbove14`、`adults`。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedStates"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingUnitedStates",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

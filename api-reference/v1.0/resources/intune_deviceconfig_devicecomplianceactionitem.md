@@ -15,9 +15,9 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |gracePeriodHours|Int32|强制执行操作前要等待的小时数。 有效值为 0 至 8760|
-|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|采取什么操作。 可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`。|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|要采取的操作。可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`。|
 |notificationTemplateId|字符串|要使用的通知消息模板|
 |notificationMessageCCList|String 集合|指定抄送此通知邮件的人员的组 ID 列表。|
 
@@ -27,8 +27,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceActionItem"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 
