@@ -1,4 +1,4 @@
-# <a name="get-recent-user-activities"></a>获取最近的用户活动
+# <a name="get-recent-user-activities"></a>获取用户活动最新动态
 
 获得给定用户的最近活动。 这个 OData 函数具有一些包含以使其类似“最近使用”的 API 操作的默认行为。 该服务将查询最近的 [historyItems](../resources/projectrome_historyitem.md)，然后提取那些相关的活动。 活动将根据 **historyItem** 上最近的 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不包括在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会将额外的筛选应用于响应，以便返回仅由你的应用程序创建的活动。 如果用户特别活跃并且其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
@@ -136,7 +136,23 @@ Content-Type: application/json
   "section": "documentation",
   "suppressions": [
     "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members."
+      Property 'contentInfo' is of type Custom but has no custom members.",
+
+    "Warning: get_recent_activities/container/visualElements:
+      Schema validation failed on property 'visualElements' ['microsoft.graph.visualInfo']",
+
+    "Warning: get_recent_activities/container/visualElements/content:
+      Schema validation failed on property 'content' ['microsoft.graph.Json']",
+
+    "Warning: get_recent_activities/container/visualElements/content/$schema:
+      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/body:
+      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/type:
+      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
+
   ],
   "tocPath": ""
 }-->

@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |描述|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |cellularBlockVoiceRoaming|布尔|指示是否阻止语音漫游。|
 |cellularBlockWiFiTethering|布尔|指示是否阻止同步 Wi-Fi 网络共享。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|位于 CompliantAppsList 中的列表类型。 可能的值为： `none` 、 `appsInListCompliant` 、 `appsNotInListCompliant` 。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|CompliantAppsList 中的列表类型。可能的值为：`none`，`appsInListCompliant`，`appsNotInListCompliant`。|
 |diagnosticDataBlockSubmission|布尔|指示是否阻止诊断数据提交。|
 |locationServicesBlocked|布尔|指示是否阻止位置服务。|
 |googleAccountBlockAutoSync|布尔|指示是否阻止 Google 帐户自动同步。|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 4 至 11|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|必需的密码类型。 可取值为： `deviceDefault` 、 `alphabetic` 、 `alphanumeric` 、 `alphanumericWithSymbols` 、 `lowSecurityBiometric` 、 `numeric` 、 `numericComplex` 、 `any` 。|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|所需的密码的类型。可能的值为： `deviceDefault`， `alphabetic`， `alphanumeric`， `alphanumericWithSymbols`， `lowSecurityBiometric`， `numeric`， `numericComplex`， `any`。|
 |passwordRequired|布尔|指示是否需要密码。|
 |powerOffBlocked|布尔|指示是否阻止关闭设备。|
 |factoryResetBlocked|布尔|指示是否阻止用户执行恢复出厂设置。|
@@ -82,7 +82,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |webBrowserBlockAutofill|布尔|指示是否阻止 Web 浏览器的自动填充功能。|
 |webBrowserBlockJavaScript|布尔|指示是否阻止 Web 浏览器内的 JavaScript。|
 |webBrowserBlocked|布尔|指示是否阻止 Web 浏览器。|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Web 浏览器内的 Cookie 设置。 可取值为： `browserDefault` 、 `blockAlways` 、 `allowCurrentWebSite` 、 `allowFromWebsitesVisited` 、 `allowAlways` 。|
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|在 web 浏览器中的 cookie 设置。可能的值为： `browserDefault`， `blockAlways`， `allowCurrentWebSite`， `allowFromWebsitesVisited`， `allowAlways`。|
 |wiFiBlocked|布尔|指示是否阻止同步 Wi-Fi。|
 |appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|可以在 KNOX 设备上安装的应用列表。 该集合最多可包含 500 个元素。|
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|阻止在 KNOX 设备上启动的应用列表。 该集合最多可包含 500 个元素。|
@@ -303,6 +303,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

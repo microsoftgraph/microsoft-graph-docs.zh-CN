@@ -1,14 +1,15 @@
-# <a name="sync-action"></a>sync 操作
+# <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures 函数
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 尚未记录
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（工作或学校帐户）||
+| &nbsp; &nbsp; 疑难解答 | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -18,7 +19,7 @@
 }
 -->
 ``` http
-POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
+GET /reports/managedDeviceEnrollmentTopFailures
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -28,42 +29,39 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供参数的 JSON 表示形式。
-
-下表显示了可用于此操作的参数。
+在请求 URL 中，提供以下查询参数（含值）。
+下表显示了可用于此函数的参数。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|将执行的同步类型，完全同步或增量同步。|
+|时间段|字符串|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作返回 `204 No Content` 响应代码。
+如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 [report](../resources/intune_shared_report.md)。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
-
-Content-type: application/json
-Content-length: 31
-
-{
-  "syncType": "deltaSync"
-}
+GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentTopFailures(period='parameterValue')
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 123
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.report",
+    "content": "<Unknown Primitive Type Edm.Stream>"
+  }
+}
 ```
-
-
-
-
 
 
 
