@@ -30,7 +30,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|message|[邮件](../resources/message.md)|要发送的邮件。必需。|
+|message|[消息](../resources/message.md)|要发送的邮件。必需。|
 |saveToSentItems|布尔|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
 
 ## <a name="response"></a>响应
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
+##### <a name="request-1"></a>请求 1
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -48,7 +48,6 @@ POST /users/{id | userPrincipalName}/sendMail
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -76,7 +75,55 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>响应
+##### <a name="response-1"></a>响应 1
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-2"></a>请求 2
+下一个示例使用自定义 Internet 消息标头创建一封邮件并发送。
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_headers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "9/9/2018: concert",
+    "body": {
+      "contentType": "HTML",
+      "content": "The group represents Nevada."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "AlexW@contoso.OnMicrosoft.com"
+        }
+      }
+    ],
+    "internetMessageHeaders":[
+      {
+        "name":"x-custom-header-group-name",
+        "value":"Nevada"
+      },
+      {
+        "name":"x-custom-header-group-id",
+        "value":"NV001"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-2"></a>响应 2
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
