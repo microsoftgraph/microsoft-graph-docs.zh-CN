@@ -1,6 +1,6 @@
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) 对象的 JSON 表示形式。
@@ -37,12 +37,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|尚未记录|
+|displayName|字符串|尚未记录|
 |configurationDeployedUserCount|Int32|尚未记录|
 |lastRefreshTime|DateTimeOffset|尚未记录|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) 集合|尚未记录|
-|id|String|实体的键。|
-|version|String|实体的版本。|
+|id|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 
 
@@ -101,6 +101,11 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 
