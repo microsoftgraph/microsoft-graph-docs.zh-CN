@@ -17,8 +17,8 @@
 |:---|:---|:---|
 |displayName|字符串|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|字符串|实体的键。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|version|字符串|实体的版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|content|[Json](../resources/intune_mam_json.md)|状态报告内容。|
+|版本|字符串|实体的版本。 继承自 [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|內容|[Json](../resources/json.md)|状态报告内容。|
 
 ## <a name="relationships"></a>关系
 无
@@ -26,8 +26,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppStatus",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }-->
 ``` json
@@ -41,6 +41,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

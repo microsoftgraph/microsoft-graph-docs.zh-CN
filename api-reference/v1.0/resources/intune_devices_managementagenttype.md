@@ -14,9 +14,14 @@
 |configurationManagerClient|8|设备由配置管理器托管。|
 |configurationManagerClientMdm|10|设备由配置管理器和 MDM 托管。|
 |configurationManagerClientMdmEas|11|设备由配置管理器、MDM 和 Eas 托管。|
-|unknown|16|未知的管理代理类型。|
+|未知|16|未知的管理代理类型。|
 |jamf|32|设备属性从 Jamf 获取。|
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 托管。|
+
+
+
+
+
 
 
 
