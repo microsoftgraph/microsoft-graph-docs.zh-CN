@@ -34,10 +34,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装用途。可能的值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
-|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
+|ID|字符串|实体的键。|
+|意图|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
+|设置|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
 
 
@@ -83,6 +83,11 @@ Content-Length: 322
   }
 }
 ```
+
+
+
+
+
 
 
 

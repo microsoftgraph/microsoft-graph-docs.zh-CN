@@ -1,7 +1,5 @@
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>enrollmentTroubleshootingEvent 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
-
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示注册失败的事件。
@@ -29,7 +27,7 @@
 |userId|字符串|尝试注册设备的用户的标识符。|
 |deviceId|字符串|Azure AD 设备标识符。|
 |enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
-|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Highlevel 失效类别。 可取值为：`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`。|
+|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Highlevel 失败类别。 可取值为：`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment`。|
 |failureReason|字符串|详细失败原因。|
 
 ## <a name="relationships"></a>关系
@@ -38,8 +36,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
 }-->
 ``` json
@@ -58,6 +56,7 @@
   "failureReason": "String"
 }
 ```
+
 
 
 

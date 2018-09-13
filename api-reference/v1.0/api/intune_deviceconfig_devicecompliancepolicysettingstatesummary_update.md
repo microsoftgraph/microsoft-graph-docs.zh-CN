@@ -1,6 +1,6 @@
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) 对象的 JSON 表示形式。
@@ -34,10 +34,10 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |属性|类型|说明|
 |:---|:---|:---|
-|setting|String|设置类名和属性名。|
-|settingName|String|设置的名称。|
-|platformType|String|设置平台。可取值为：`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`all`。|
-|id|String|实体的键。|
+|ID|字符串|实体的键。|
+|设置|字符串|设置类名和属性名。|
+|settingName|字符串|设置的名称。|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|设置平台。 可取值为：`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
@@ -82,10 +82,10 @@ Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
-  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -95,6 +95,11 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

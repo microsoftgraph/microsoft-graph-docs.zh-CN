@@ -9,28 +9,28 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List windowsPhone81GeneralConfigurations](../api/intune_deviceconfig_windowsphone81generalconfiguration_list.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 集合|列出 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性和关系。|
-|[Get windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_get.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|读取 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性和关系。|
-|[Create windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_create.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|创建新的 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象。|
-|[Delete windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_delete.md)|无|删除 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)。|
-|[Update windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_update.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|更新 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性。|
+|[列出 windowsPhone81GeneralConfigurations](../api/intune_deviceconfig_windowsphone81generalconfiguration_list.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 集合|列出 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性和关系。|
+|[获取 windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_get.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|读取 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性和关系。|
+|[创建 windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_create.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|创建新的 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象。|
+|[删除 windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_delete.md)|无|删除 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)。|
+|[更新 windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_update.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|更新 [windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|版本|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |applyOnlyToWindowsPhone81|布尔值|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
 |appsBlockCopyPaste|布尔值|指示是否阻止复制粘贴。|
 |bluetoothBlocked|布尔值|指示是否阻止蓝牙。|
 |cameraBlocked|布尔值|指示是否阻止照相机。|
 |cellularBlockWifiTethering|布尔值|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|AppComplianceList 中的列表。可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |diagnosticDataBlockSubmission|布尔值|指示是否阻止诊断数据提交。|
 |emailBlockAddingAccounts|布尔值|指示是否阻止自定义电子邮件帐户。|
 |locationServicesBlocked|布尔值|指示是否阻止位置服务。|
@@ -43,7 +43,7 @@
 |passwordMinimumCharacterSetCount|Int32|密码必须包含的字符集数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordRequired|布尔值|指示是否需要密码。|
 |screenCaptureBlocked|布尔值|指示是否阻止屏幕截图。|
 |storageBlockRemovableStorage|布尔值|指示是否阻止可移动存储。|
@@ -57,7 +57,7 @@
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|工作分配|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -68,18 +68,9 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
-  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration",
-  "@odata.annotations": [
-    {
-      "property": "applyOnlyToWindowsPhone81",
-      "capabilities": {
-        "computed": true,
-        "permissions": "Read"
-      }
-    }
-  ]
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration"
 }-->
 ``` json
 {
@@ -129,6 +120,11 @@
   "windowsStoreBlocked": true
 }
 ```
+
+
+
+
+
 
 
 

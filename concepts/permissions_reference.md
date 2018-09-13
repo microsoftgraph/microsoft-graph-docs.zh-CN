@@ -29,7 +29,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 ### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft 帐户和工作或学校帐户
 
-并非所有权限都适用于 Microsoft 帐户和工作或学校帐户。你可以检查每个权限组的**备注**，以确定特定权限是否对 Microsoft 帐户和/或工作或学校帐户有效。 
+并非所有的权限对 Microsoft 帐户和工作或学校帐户都有效。 你可以检查**支持的 Microsoft 帐户**列中的每个权限组，以确定特定权限是否对 Microsoft 帐户、工作或学校帐户，或对两者都有效。 
 
 ### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的用户和组搜索限制
 
@@ -71,7 +71,8 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Application.ReadWrite.All_：删除服务主体 (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。  注意：这可能需要其他权限。
+* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。  
+> 注意：这可能需要其他权限。
 
 ---
 
@@ -79,12 +80,12 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。 典型目标用户是某预订业务的客户。 | 否 |
-| _Bookings.ReadWrite.Appointments_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 否 |
-| _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 否 |
-| _Bookings.Manage_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Bookings.Read.All_ |  允许应用代表登录用户读取预订约会、业务、客户、服务和员工。 | 适用于只读应用程序。 典型目标用户是某预订业务的客户。 | 否 | 否 |
+| _Bookings.ReadWrite.Appointments_ | 允许应用代表登录用户读取和写入预订约会和客户，此外，还允许读取业务、服务和员工。 | 适用于需要操作约会和客户的安排日程的应用程序。 无法更改有关预订业务的基本信息及其服务和员工成员。 典型目标用户是某预订业务的客户。| 否 | 否 |
+| _Bookings.ReadWrite.All_ | 允许应用代表登录用户读取和编写预订约会、业务、客户、服务和员工。 不允许创建、删除或发布预订业务。 | 适用于操纵现有业务、其服务和员工成员的管理应用程序。 无法创建、删除或更改预订业务的发布状态。 典型目标用户是组织的支持人员。| 否 | 否 |
+| _Bookings.Manage_ | 允许应用代表登录用户读取、编写和管理预订约会、业务、客户、服务和员工。  | 允许应用具有完全访问权限。 <br>适用于完全管理体验。 典型目标用户是组织的管理员。| 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -103,12 +104,12 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Calendars.Read_ |读取用户日历 |允许应用读取用户日历中的事件。 |否 |
-| _Calendars.Read.Shared_ |读取用户日历和共享日历 |允许应用读取用户可以访问的所有日历（包括委派日历和共享日历）中的事件。 |否 |
-| _Calendars.ReadWrite_ |具有对用户日历的完整访问权限 |允许应用创建、读取、更新和删除用户日历中的事件。 |否 |
-| _Calendars.ReadWrite.Shared_ |读取和写入用户日历和共享日历 |允许应用创建、读取、更新和删除用户有权访问的所有日历中的事件。这包括委派日历和共享日历。|否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Calendars.Read_ |读取用户日历 |允许应用读取用户日历中的事件。 |否 | 是 |
+| _Calendars.Read.Shared_ |读取用户日历和共享日历 |允许应用读取用户可以访问的所有日历（包括委派日历和共享日历）中的事件。 |否 | 否 |
+| _Calendars.ReadWrite_ |具有对用户日历的完整访问权限 |允许应用创建、读取、更新和删除用户日历中的事件。 |否 | 是 |
+| _Calendars.ReadWrite.Shared_ |读取和写入用户日历和共享日历 |允许应用创建、读取、更新和删除用户有权访问的所有日历中的事件。这包括委派日历和共享日历。|否 | 否 |
 
 <br/>
 
@@ -120,10 +121,6 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |_Calendars.ReadWrite_ |读取和写入所有邮箱中的日历 |允许应用在没有登录用户的情况下创建、读取、更新和删除所有日历的事件。 |是 |
 
 <br/>
-
-### <a name="remarks"></a>注解
-
-_Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -148,12 +145,12 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Contacts.Read_ |读取用户联系人  |允许应用读取用户联系人。 |否 |
-|_Contacts.Read.Shared_ |读取用户联系人和共享联系人 |允许应用读取用户有权访问的联系人，包括用户个人联系人和共享联系人。 |否 |
-|_Contacts.ReadWrite_ |具有对用户联系人的完整访问权限 |允许应用创建、读取、更新和删除用户联系人。 |否 |
-|_Contacts.ReadWrite.Shared_ |读取和写入用户联系人和共享联系人 |允许应用创建、读取、更新和删除用户有权访问的联系人，包括用户个人联系人和共享联系人。 |否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_Contacts.Read_ |读取用户联系人  |允许应用读取用户联系人。 |否 | 是 |
+|_Contacts.Read.Shared_ |读取用户联系人和共享联系人 |允许应用读取用户有权访问的联系人，包括用户个人联系人和共享联系人。 |否 |否|
+|_Contacts.ReadWrite_ |具有对用户联系人的完整访问权限 |允许应用创建、读取、更新和删除用户联系人。 |否 |是|
+|_Contacts.ReadWrite.Shared_ |读取和写入用户联系人和共享联系人 |允许应用创建、读取、更新和删除用户有权访问的联系人，包括用户个人联系人和共享联系人。 |否 |否|
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -161,9 +158,6 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |读取所有邮箱中的联系人 |允许应用在没有已登录用户的情况下读取所有邮箱中的所有联系人。 |是 |
 |_Contacts.ReadWrite_ |读取和写入所有邮箱中的联系人 |允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的全部联系人。 |是 |
-
-### <a name="remarks"></a>注解
-仅 _Contacts.Read_ 和 _Contacts.ReadWrite_ 委派权限对 Microsoft 帐户有效。 
 
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委派
@@ -185,10 +179,10 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Device.Read_ |读取用户设备 |允许应用代表已登录用户读取用户的设备列表。 |否 |
-|_Device.Command_ |与用户设备通信 |允许应用启动其他应用，或代表已登录用户在用户设备上与其他应用进行通信。 |否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_Device.Read_ |读取用户设备 |允许应用代表已登录用户读取用户的设备列表。 |否 | 是 |
+|_Device.Command_ |与用户设备通信 |允许应用启动其他应用，或代表已登录用户在用户设备上与其他应用进行通信。 |否 | 是 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -196,10 +190,6 @@ _Calendars.Read.Shared_ 和 _Calendars.ReadWrite.Shared_ 仅适用于工作或�
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
-
-### <a name="remarks"></a>注解
-
-_Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有效。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -215,11 +205,11 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_ |读取目录数据 | 允许应用程序读取组织目录中的数据，如用户、组和应用程序。 **注意**：如果应用程序已在自己组织的租户中注册，用户可能会同意应用程序要求必须有此权限。| 是 |
-| _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 |
-| _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Directory.Read.All_ |读取目录数据 | 允许应用程序读取组织目录中的数据，如用户、组和应用程序。 **注意**：如果应用程序已在自己组织的租户中注册，用户可能会同意应用程序要求必须有此权限。| 是 | 否 |
+| _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 | 否 |
+| _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 | 否 |
 
 <br/>
 
@@ -231,7 +221,6 @@ _Device.Read_ 和 _Device.Command_ 委派权限仅对个人 Microsoft 帐户有�
 | _Directory.ReadWrite.All_ | 读取和写入目录数据 | 允许应用在没有登录用户的情况下读取和写入组织目录中的数据（如用户和组）。不允许删除用户或组。 | 是 |
 
 ### <a name="remarks"></a>注解
-Microsoft 帐户不支持目录权限。 
 
 Directory 权限提供访问目录资源（如组织中的 [User](../api-reference/v1.0/resources/user.md)、[Group](../api-reference/v1.0/resources/group.md) 和 [Device](../api-reference/v1.0/resources/device.md)）的最高级特权。 
 
@@ -248,9 +237,10 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 - 更新组所有者
 - 管理许可证分配
 - 在应用程序上定义架构扩展
-- **注意**：无权重置用户密码
-- **注意**：无权删除资源（包括用户或组）
-- **注意**：特别排除创建或更新以上未列出的资源。这包括：application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains等。
+> **注意**：
+> - 无权重置用户密码
+> - 无权删除资源（包括用户或组）
+> - 特别排除创建或更新以上未列出的资源。 这包括：应用程序、oAauth2Permissiongrant、appRoleAssignment、设备、servicePrincipal、组织、域等等。
  
 
 ### <a name="example-usage"></a>用法示例
@@ -273,15 +263,15 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限 |显示字符串 |说明 | 需经过管理员同意 |
-|:--------- |:------------- |:---------- | :--------------------- |
-|EduAdministration.Read | 读取教育应用设置 |  允许应用代表用户读取教育应用设置。 | 是 |
-|EduAdministration.ReadWrite | 管理教育应用设置 | 允许应用代表用户管理教育应用设置。 | 是 |
-|EduAssignments.ReadBasic | 读取不含成绩的用户课堂作业 | 允许应用代表用户读取不含成绩的作业 | 是 |
-|EduAssignments.ReadWriteBasic | 对不含成绩的用户课堂作业执行读取和写入操作 | 允许应用代表用户对不含成绩的作业执行读取和写入操作 | 是 |
-|EduAssignments.Read | 读取用户的课堂作业及其成绩视图 | 允许应用代表用户读取作业及其成绩| 是 |
-|EduAssignments.ReadWrite | 对用户的课堂作业及其成绩视图执行读取和写入操作 | 允许应用代表用户对作业及其成绩执行读取和写入操作|是 |
-|EduRostering.ReadBasic| 读取用户的名单视图的有限子集 | 允许应用代表用户读取组织名单中学校和班级结构数据以及用户的教育专属信息的有限子集。  | 是  |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|EduAdministration.Read | 读取教育应用设置 |  允许应用代表用户读取教育应用设置。 | 是 | 否 |
+|EduAdministration.ReadWrite | 管理教育应用设置 | 允许应用代表用户管理教育应用设置。 | 是 | 否 |
+|EduAssignments.ReadBasic | 读取不含成绩的用户课堂作业 | 允许应用代表用户读取不含成绩的作业 | 是 | 否 |
+|EduAssignments.ReadWriteBasic | 对不含成绩的用户课堂作业执行读取和写入操作 | 允许应用代表用户对不含成绩的作业执行读取和写入操作 | 是 | 否 |
+|EduAssignments.Read | 读取用户的课堂作业及其成绩视图 | 允许应用代表用户读取作业及其成绩| 是 | 否 |
+|EduAssignments.ReadWrite | 对用户的课堂作业及其成绩视图执行读取和写入操作 | 允许应用代表用户对作业及其成绩执行读取和写入操作|是 | 否 |
+|EduRostering.ReadBasic| 读取用户的名单视图的有限子集 | 允许应用代表用户读取组织名单中学校和班级结构数据以及用户的教育专属信息的有限子集。  | 是  | 否 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -312,15 +302,15 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限 |显示字符串 |说明 | 需经过管理员同意 |
-|:--------- |:------------- |:---------- | :--------------------- |
-| _Files.Read_ | 读取用户文件 | 允许应用读取登录用户的文件。 | 否 |
-| _Files.Read.All_ | 读取用户可以访问的所有文件 | 允许应用读取登录用户可以访问的所有文件。 | 否 |
-| _Files.ReadWrite_  | 具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | 否|
-| _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | 否 |
-| _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 |
-| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 |
-| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Files.Read_ | 读取用户文件 | 允许应用读取登录用户的文件。 | 否 | 是 |
+| _Files.Read.All_ | 读取用户可以访问的所有文件 | 允许应用读取登录用户可以访问的所有文件。 | 否 | 是 |
+| _Files.ReadWrite_  | 具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | 否| 是 |
+| _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | 否 | 是 |
+| _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 | 否 |
+| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 | 否 |
+| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -331,7 +321,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ### <a name="remarks"></a>注解
 
-Files.Read、Files.ReadWrite、Files.Read.All 和 Files.ReadWrite.All 委派权限在个人 Microsoft 帐户和工作或学校帐户上都有效。请注意，对于个人帐户而言，Files.Read 和 Files.ReadWrite 还授予其权限访问与登录用户共享的文件。 
+> **注意**：针对个人帐户，Files.Read 和 Files.ReadWrite 还授予对与已登录用户共享的文件的访问权限。 
 
 Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
 
@@ -356,17 +346,17 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ |    读取所有组 | 允许应用代表登录用户列出组，并读取其属性以及所有组成员身份。此外，还允许应用读取登录用户可以访问的所有组的日历、 对话、 文件和其他组内容。 | 是 |
-| _Group.ReadWrite.All_ |    读取和写入所有组| 允许应用代表登录用户创建组并读取所有组属性和成员身份。此外，还允许组所有者管理他们的组并允许组成员更新组内容。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Group.Read.All_ |    读取所有组 | 允许应用代表登录用户列出组，并读取其属性以及所有组成员身份。此外，还允许应用读取登录用户可以访问的所有组的日历、 对话、 文件和其他组内容。 | 是 | 否 |
+| _Group.ReadWrite.All_ |    读取和写入所有组| 允许应用代表登录用户创建组并读取所有组属性和成员身份。此外，还允许组所有者管理他们的组并允许组成员更新组内容。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | 读取所有组 | 允许应用在没有登录用户的情况下读取所有组的成员。请注意，并非所有组 API 都支持使用仅限应用权限进行访问。有关示例，请参阅[已知问题](../concepts/known_issues.md)。 | 是 |
-| _Group.ReadWrite.All_ | 读取和写入所有组 | 允许应用创建组、读取和更新组成员以及删除组。应用可以在没有登录用户的情况下执行所有这些操作。请注意，并非所有组 API 都支持使用仅限应用权限进行访问。有关示例，请参阅[已知问题](../concepts/known_issues.md)。| 是 |
+| _Group.Read.All_ | 读取所有组 | 允许应用在没有登录用户的情况下读取所有组的成员身份。 > **注意：** 不是所有组 API 都支持使用仅应用权限的访问。 有关示例，请参阅[已知问题](../concepts/known_issues.md)。 | 是 |
+| _Group.ReadWrite.All_ | 读取和写入所有组 | 允许应用创建组、读取和更新组成员身份及删除组。 在没有登录用户的情况下，该应用可以执行其中所有的操作。 > **注意：** 不是所有组 API 都支持使用仅应用权限的访问。 有关示例，请参阅[已知问题](../concepts/known_issues.md)。| 是 |
 
 
 ### <a name="remarks"></a>注解
@@ -388,7 +378,8 @@ Microsoft 个人帐户不支持组功能。
 * _Group.Read.All_：读取登录用户所属的全部 Office 365 组 (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_：读取诸如对话之类的所有 Office 365 组内容 (`GET /groups/{id}/conversations`)。
 * _Group.ReadWrite.All_：更新组属性，如照片 (`PUT /groups/{id}/photo/$value`)。
-* _Group.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`)。注意：这还要求 _User.ReadBasic.All_ 读取作为成员添加的用户。
+* _Group.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`)。 
+> **注意：**：这还要求 _User.ReadBasic.All_ 读取要添加成员身份的用户。
 
 #### <a name="application"></a>应用程序
 
@@ -403,9 +394,9 @@ Microsoft 个人帐户不支持组功能。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _IdentityRiskEvent.Read.All_ |   读取标识风险事件信息  | 允许应用代表登录用户为组织中所有用户读取标识风险事件信息。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityRiskEvent.Read.All_ |   读取标识风险事件信息  | 允许应用代表登录用户为组织中所有用户读取标识风险事件信息。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -436,12 +427,12 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _IdentityProvider.Read.All_ |   读取标识提供程序信息  | 支持应用程序代表登录用户读取在 Azure AD 或 Azure AD B2C 租户中配置的标识提供程序。 | 是 |
-| _IdentityProvider.ReadWrite.All_ |   读取和写入标识提供程序信息  |  支持应用程序代表登录用户读取或写入在 Azure AD 或 Azure AD B2C 租户中配置的标识提供程序。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityProvider.Read.All_ |   读取标识提供程序信息  | 支持应用程序代表登录用户读取在 Azure AD 或 Azure AD B2C 租户中配置的标识提供程序。 | 是 | 否 |
+| _IdentityProvider.ReadWrite.All_ |   读取和写入标识提供程序信息  |  支持应用程序代表登录用户读取或写入在 Azure AD 或 Azure AD B2C 租户中配置的标识提供程序。 | 是 | 否 |
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>备注
 
 _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或学校帐户有效。 登录用户必须分配有全局管理员角色，应用程序才能通过委派权限读取或写入标识提供程序。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
 
@@ -464,19 +455,19 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用 | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-|_DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用 | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 |
-|_DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略 | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-|_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 |
-|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 |
-|_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 |
-|_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-|_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 |
-|_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
-|_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_DeviceManagementApps.Read.All_ | 读取 Microsoft Intune 应用 | 允许应用读取由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 | 否 |
+|_DeviceManagementApps.ReadWrite.All_ | 读取和写入 Microsoft Intune 应用 | 允许应用读取和写入由 Microsoft Intune 管理的应用、应用配置和应用保护策略的属性、组分配情况和状态。 | 是 | 否 |
+|_DeviceManagementConfiguration.Read.All_ | 读取 Microsoft Intune 设备配置和策略 | 允许应用读取 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 | 否 |
+|_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 | 否 |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 | 否 |
+|_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 | 否 |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 | 否 |
+|_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | 否 |
+|_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | 否 |
+|_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | 读取和写入 Microsoft Intune 配置 | 允许应用读取和写入 Microsoft Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -512,16 +503,16 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 |
-| _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 |
-| _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 |
-| _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 |
-| _Mail.Send_ |    以用户身份发送邮件 | 允许应用以组织用户身份发送邮件。 | 否 |
-| _Mail.Send.Shared_ |    代表他人发送邮件 | 允许应用以登录用户身份发送邮件，包括代表他人发送邮件。 | 否 |
-| _MailboxSettings.Read_ |  读取用户的邮箱设置 | 允许应用读取用户的邮箱设置。不包括邮件发送权限。 | 否 |
-| _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。 不包含直接发送邮件的权限，但允许应用创建能够转发或重定向邮件的规则。 | 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 是
+| _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
+| _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
+| _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
+| _Mail.Send_ |    以用户身份发送邮件 | 允许应用以组织用户身份发送邮件。 | 否 | 否
+| _Mail.Send.Shared_ |    代表他人发送邮件 | 允许应用以登录用户身份发送邮件，包括代表他人发送邮件。 | 否 | 否
+| _MailboxSettings.Read_ |  读取用户的邮箱设置 | 允许应用读取用户的邮箱设置。不包括邮件发送权限。 | 否 | 否
+| _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。 不包含直接发送邮件的权限，但允许应用创建能够转发或重定向邮件的规则。 | 否 | 否
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -565,9 +556,9 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Member.Read.Hidden_ | 读取隐藏成员资格 | 对于已登录用户具有访问权限的隐藏组和管理单元，允许应用代表已登录用户读取隐藏组和管理单元的成员资格。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Member.Read.Hidden_ | 读取隐藏成员资格 | 对于已登录用户具有访问权限的隐藏组和管理单元，允许应用代表已登录用户读取隐藏组和管理单元的成员资格。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -599,14 +590,14 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Notes.Read_ |    读取用户 OneNote 笔记本 | 允许应用代表已登录用户读取 OneNote 笔记本。| 否 |
-| _Notes.Create_ |    创建用户 OneNote 笔记本 | 允许应用代表已登录用户读取 OneNote 笔记本和分区标题并创建新的页面、笔记本和分区。| 否 |
-| _Notes.ReadWrite_ |    读取和写入用户 OneNote 笔记本 | 允许应用代表已登录用户读取、共享和修改 OneNote 笔记本。 | 否 |
-| _Notes.Read.All_ |    读取用户可以访问的所有 OneNote 笔记本 | 允许应用读取登录用户在组织中有权访问的 OneNote 笔记本。 | 否 |
-| _Notes.ReadWrite.All_ |    读取和写入用户可以访问的所有 OneNote 笔记本。 | 允许应用读取、共享和修改已登录用户在组织中有权访问的 OneNote 笔记本。| 否 |
-| _Notes.ReadWrite.CreatedByApp_ |    有限的笔记本访问权限（不推荐使用） | **不推荐使用** <br/>请勿使用。此权限不授予任何特权。 | 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Notes.Read_ |    读取用户 OneNote 笔记本 | 允许应用代表已登录用户读取 OneNote 笔记本和分区标题并创建新的页面、笔记本和分区。 | 否 | 是
+| _Notes.Create_ |    创建用户 OneNote 笔记本 | 允许应用代表已登录用户读取 OneNote 笔记本和分区标题并创建新的页面、笔记本和分区。| 否 | 是
+| _Notes.ReadWrite_ |    读取和写入用户 OneNote 笔记本 | 允许应用代表已登录用户读取、共享和修改 OneNote 笔记本。 | 否 | 是
+| _Notes.Read.All_ |    读取用户可以访问的所有 OneNote 笔记本 | 允许应用读取登录用户在组织中有权访问的 OneNote 笔记本。 | 否 | 是
+| _Notes.ReadWrite.All_ |    读取和写入用户可以访问的所有 OneNote 笔记本。 | 允许应用读取、共享和修改已登录用户在组织中有权访问的 OneNote 笔记本。| 否 | 否
+| _Notes.ReadWrite.CreatedByApp_ |    有限的笔记本访问权限（不推荐使用） | **不推荐使用** <br/>请勿使用。此权限不授予任何特权。 | 否 | 否
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -646,12 +637,12 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _电子邮件_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 |
-| _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 |
-| _openid_ |    让用户登录 | 允许用户以其工作或学校帐户登录应用，并允许应用查看用户的基本个人资料信息。| 否 |
-| _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _电子邮件_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 否 |
+| _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 | 否 |
+| _openid_ |    让用户登录 | 允许用户以其工作或学校帐户登录应用，并允许应用查看用户的基本个人资料信息。| 否 | 否 |
+| _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -672,10 +663,10 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    读取用户的相关人员列表 | 允许应用读取登录用户相关人员的得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 | 否 |
-| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。此外，还允许应用搜索登录用户组织的整个目录。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _People.Read_ |    读取用户的相关人员列表 | 允许应用读取登录用户相关人员的得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 | 否 | 否 |
+| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。此外，还允许应用搜索登录用户组织的整个目录。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -701,9 +692,9 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -730,10 +721,10 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  |
-| _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
+| _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -759,12 +750,12 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用代表登录用户读取文档，并列出所有网站集中的项目。 | 否  |
-| _Sites.ReadWrite.All_   | 在所有网站集中读取和写入项 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  |
-| _Sites.Manage.All_      | 创建、编辑或删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 |
-| _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用代表登录用户读取文档，并列出所有网站集中的项目。 | 否  | 否 |
+| _Sites.ReadWrite.All_   | 在所有网站集中读取和写入项 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  | 否 |
+| _Sites.Manage.All_      | 创建、编辑或删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 | 否 |
+| _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -795,12 +786,12 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Tasks.Read_ | 读取用户任务 | 允许应用读取用户任务。 | 否 |
-| _Tasks.Read.Shared_ | 读取用户任务和共享任务 | 允许应用读取用户有权访问的任务，包括用户个人任务和共享任务。 | 否 |
-| _Tasks.ReadWrite_ |    创建、读取、更新和删除用户任务和容器 | 允许应用创建、读取、更新和删除分配给已登录用户或与已登录用户共享的任务和容器（以及其中的任务）。| 否 |
-| _Tasks.ReadWrite.Shared_ | 读取和写入用户任务和共享任务 | 允许应用创建、读取、更新和删除用户有权访问的任务，包括用户个人任务和共享任务。 | 否 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Tasks.Read_ | 读取用户任务 | 允许应用读取用户任务。 | 否 | 是 |
+| _Tasks.Read.Shared_ | 读取用户任务和共享任务 | 允许应用读取用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
+| _Tasks.ReadWrite_ |    创建、读取、更新和删除用户任务和容器 | 允许应用创建、读取、更新和删除分配给已登录用户或与已登录用户共享的任务和容器（以及其中的任务）。| 否 | 是 |
+| _Tasks.ReadWrite.Shared_ | 读取和写入用户任务和共享任务 | 允许应用创建、读取、更新和删除用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -829,12 +820,12 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Agreement.Read.All_ | 阅读所有使用条款协议 | 允许应用代表登录用户阅读使用条款协议。 | 是 |
-| _Agreement.ReadWrite.All_ | 阅读和编写所有使用协议条款 | 允许应用代表登录用户阅读和编写使用条款协议。 | 是 |
-| _AgreementAcceptance.Read_ | 阅读用户使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 |
-| _AgreementAcceptance.Read.All_ | 阅读用户可以访问的使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Agreement.Read.All_ | 阅读所有使用条款协议 | 允许应用代表登录用户阅读使用条款协议。 | 是 | 否 |
+| _Agreement.ReadWrite.All_ | 阅读和编写所有使用协议条款 | 允许应用代表登录用户阅读和编写使用条款协议。 | 是 | 否 |
+| _AgreementAcceptance.Read_ | 阅读用户使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 | 否 |
+| _AgreementAcceptance.Read.All_ | 阅读用户可以访问的使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 | 否 |
 
 ### <a name="remarks"></a>备注
 
@@ -859,15 +850,15 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _User.Read_       |    登录并读取用户个人资料 | 允许用户登录应用，并允许应用读取登录用户的个人资料。它还允许应用读取登录用户的基本公司信息。| 否 |
-| _User.ReadWrite_ |    对用户个人资料的读写权限 | 允许应用读取登录用户的完整个人资料。 此外，它还允许应用代表登录用户来更新其个人资料信息。 | 否 |
-| _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。 其中包括显示名称、名字和姓氏、电子邮件地址、开放扩展和照片。 此外，还允许应用读取已登录用户的完整个人资料。 | 否 |
-| _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 |
-| _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 |
-| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 可访问 |
-| _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 可访问 |
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _User.Read_       |    登录并读取用户个人资料 | 允许用户登录应用，并允许应用读取登录用户的个人资料。它还允许应用读取登录用户的基本公司信息。| 否 | 是 |
+| _User.ReadWrite_ |    对用户个人资料的读写权限 | 允许应用读取登录用户的完整个人资料。 此外，它还允许应用代表登录用户来更新其个人资料信息。 | 否 | 是 |
+| _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。 其中包括显示名称、名字和姓氏、电子邮件地址、开放扩展和照片。 此外，还允许应用读取已登录用户的完整个人资料。 | 否 | 是 |
+| _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 | 是 |
+| _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 | 是 |
+| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 可访问 |
+| _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 可访问 | 是 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -979,11 +970,11 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 #### <a name="delegated-permissions"></a>委派权限
 
-|权限    |显示字符串   |说明 |需经过管理员同意 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _UserActivity.ReadWrite.CreatedByApp_ |将应用活动读取和写入到用户的活动源 |允许应用读取和报告登录用户在应用中的活动。 |否 |
+|权限    |显示字符串   |说明 |需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|:-----------------|
+| _UserActivity.ReadWrite.CreatedByApp_ |将应用活动读取和写入到用户的活动源 |允许应用读取和报告登录用户在应用中的活动。 |否 | 是 |
 
-#### <a name="delegated-permissions"></a>委派权限
+#### <a name="application-permissions"></a>应用程序权限
 无。
 
 ### <a name="remarks"></a>说明
@@ -999,5 +990,17 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 *   _UserActivity.ReadWrite.CreatedByApp_：发布或更新指定用户活动的历史记录项，以表示用户参与的时间段。 (PUT /me/activities/{id}/historyItems/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。 (DELETE /me/activities/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
+
+## <a name="notifications-permissions"></a>通知权限
+#### <a name="delegated-permissions"></a>委派权限
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Notifications.ReadWrite.CreatedByApp_ | 传递并管理此应用的通知。 | 允许应用代表登录用户传递通知。 还允许应用读取、更新和删除此应用的用户通知项目。 |否 |
+### <a name="remarks"></a>备注
+*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户都有效。 与此权限相关联的 *CreatedByApp* 约束指示服务将基于调用应用的标识（Microsoft 帐户应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。 
+### <a name="example-usage"></a>用法示例
+#### <a name="delegated"></a>委托
+* _Notifications.ReadWrite.CreatedByApp_：发布以用户为中心的通知，从而可能会将它传递给运行在不同端点上的用户的多个应用程序客户端。 (POST /me/notifications/)。
+
 
 <br/>

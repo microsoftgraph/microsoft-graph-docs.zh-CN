@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps
 |拥有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |开发人员|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |注释|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可能的取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用程序的发布状态。除非应用程序已发布，否则无法分配应用程序。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可取值为：`notPublished`、`processing`、`published`。|
 
 
 
@@ -112,6 +112,11 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
+
+
+
+
 
 
 

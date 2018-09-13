@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "转换为其他格式"
-ms.openlocfilehash: 3031500beaec2d765075abfd925a6333f50368f9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 转换为其他格式
+ms.openlocfilehash: 7798905363217d366caabbdd9c82559f578c01aa
+ms.sourcegitcommit: 809748ea18943f5fd1d99c4c65a9b964f39a5f25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "23893296"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -29,32 +30,33 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### <a name="optional-request-headers"></a>可选的请求标头
+## <a name="query-parameters"></a>查询参数
+
+| 参数      | 类型  | 说明                                                    |
+|:----------|:-------|:---------------------------------------------------------------|
+| _格式_  | 字符串 | 指定应以何种格式下载项目内容。 |
+
+
+### <a name="format-options"></a>格式选项
+
+以下值对**格式**参数有效:：
+
+| 格式值 | 说明                        | 支持的源扩展
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | 将该项转换为 PDF 格式。 | csv、doc、docx、odp、ods、odt、pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、pptx、rtf、xls、xlsx
+
+## <a name="optional-request-headers"></a>可选请求标头
 
 | 名称            | 值   | 说明                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
+| _if-none-match_ | 字符串  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 
-
-### <a name="query-string-parameters"></a>查询字符串参数
-
-| 名称      | 值  | 说明                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | 指定应以何种格式下载项内容。 |
-
-
-**convert** 参数的可取值如下：
-
-| 值   | 说明                        | 支持的源扩展名 |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | 将项转换成 PDF 格式。 | csv、doc、docx、odp、ods、odt、pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、pptx、rtf、xls、xlsx | 
-
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## <a name="response"></a>响应

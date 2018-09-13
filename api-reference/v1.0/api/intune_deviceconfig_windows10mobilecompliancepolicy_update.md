@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordBlockSimple|布尔值|是否阻止同步日历。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
@@ -127,6 +127,11 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

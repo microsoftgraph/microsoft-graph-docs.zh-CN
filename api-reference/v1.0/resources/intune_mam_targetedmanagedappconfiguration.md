@@ -9,11 +9,11 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List targetedManagedAppConfigurations](../api/intune_mam_targetedmanagedappconfiguration_list.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 集合|列出 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象的属性和关系。|
+|[列出 targetedManagedAppConfigurations](../api/intune_mam_targetedmanagedappconfiguration_list.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 集合|列出 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象的属性和关系。|
 |[获取 targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_get.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|读取 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象的属性和关系。|
 |[创建 targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_create.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|创建新的 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象。|
 |[删除 targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_delete.md)|无|删除 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)。|
-|[Update targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|更新 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象的属性。|
+|[更新 targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|更新 [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) 对象的属性。|
 |[assign 操作](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|无|尚未记录|
 |[targetApps 操作](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|无|尚未记录|
 
@@ -41,8 +41,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.targetedManagedAppConfiguration"
 }-->
 ``` json
@@ -65,6 +65,11 @@
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

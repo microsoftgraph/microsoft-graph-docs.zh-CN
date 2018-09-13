@@ -30,13 +30,13 @@
 |passcodeMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为： `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值为：`deviceDefault`, `alphanumeric`、`numeric`。|
 |passcodeRequired|布尔值|指示是否需要密码。|
 |osMinimumVersion|字符串|最低 IOS 版本。|
 |osMaximumVersion|字符串|最高 IOS 版本。|
 |securityBlockJailbrokenDevices|布尔值|设备不得越狱或取得 root 权限。|
 |deviceThreatProtectionEnabled|布尔值|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求按移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁保护最低风险级别报告违规.。可能的值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|布尔值|指示是否需要托管电子邮件配置文件。|
 
 ## <a name="relationships"></a>关系
@@ -52,13 +52,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -84,6 +83,11 @@
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
+
+
 
 
 

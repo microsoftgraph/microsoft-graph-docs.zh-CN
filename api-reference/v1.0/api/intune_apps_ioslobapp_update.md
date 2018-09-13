@@ -34,7 +34,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -47,7 +47,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用程序的发布状态。除非应用程序发布, 否则无法分配应用程序。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可能的值是：`notPublished`、`processing`、`published`。|
 |committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|字符串|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
@@ -158,6 +158,11 @@ Content-Length: 1361
   "buildNumber": "Build Number value"
 }
 ```
+
+
+
+
+
 
 
 

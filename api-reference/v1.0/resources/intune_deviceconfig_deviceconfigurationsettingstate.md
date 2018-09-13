@@ -6,18 +6,18 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|setting|String|报告的设置|
-|settingName|String|报告的本地化/用户友好设置名称|
-|instanceDisplayName|String|报告的设置实例的名称。|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|设置|字符串|报告的设置|
+|settingName|字符串|报告的本地化/用户友好设置名称|
+|instanceDisplayName|字符串|报告的设置实例的名称。|
+|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置的合规性状态。可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
-|errorDescription|String|错误说明|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
-|userPrincipalName|String|UserPrincipalName。|
-|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) 集合|参与策略|
-|currentValue|String|设备上设置的当前值|
+|errorDescription|字符串|错误说明|
+|userId|字符串|UserId|
+|userName|字符串|UserName|
+|userEmail|字符串|UserEmail|
+|userPrincipalName|字符串|UserPrincipalName。|
+|来源|[settingSource](../resources/intune_deviceconfig_settingsource.md) 集合|参与策略|
+|currentValue|字符串|设备上设置的当前值|
 
 ## <a name="relationships"></a>关系
 无
@@ -50,6 +50,11 @@
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 
