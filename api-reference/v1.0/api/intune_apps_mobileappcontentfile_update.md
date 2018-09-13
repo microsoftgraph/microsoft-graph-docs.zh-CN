@@ -34,16 +34,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|azureStorageUri|String|Azure 存储 URI。|
-|isCommitted|Boolean|指示文件是否已提交的值。|
-|id|String|文件 ID。|
+|azureStorageUri|字符串|Azure 存储 URI。|
+|isCommitted|布尔值|指示文件是否已提交的值。|
+|id|字符串|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|String|文件名称。|
-|size|Int64|加密前的文件大小。|
+|名称|字符串|文件名称。|
+|大小|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
-|manifest|Binary|清单信息。|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
+|清单|二进制|清单信息。|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|当前上载请求的状态。可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
 
 
 
@@ -91,6 +91,11 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
+
+
+
 
 
 

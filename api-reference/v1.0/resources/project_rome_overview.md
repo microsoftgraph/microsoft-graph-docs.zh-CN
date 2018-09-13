@@ -24,3 +24,4 @@ Microsoft Graph 中的活动使您的应用程序能够让用户跨设备和平�
 - [删除活动](../api/projectrome_delete_activity.md)
 - [创建或替换历史记录项](../api/projectrome_put_historyitem.md)
 - [删除历史记录项](../api/projectrome_delete_historyitem.md)
+

@@ -17,10 +17,10 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|合作伙伴的唯一标识符。|
+|ID|字符串|合作伙伴的唯一标识符。|
 |displayName|字符串|合作伙伴的显示名称。|
 |onboardingUrl|字符串|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD。可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
 
 ## <a name="relationships"></a>关系
@@ -29,8 +29,8 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

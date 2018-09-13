@@ -1,6 +1,6 @@
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 表示与设备管理合作伙伴的连接的实体。
 ## <a name="methods"></a>方法
@@ -15,13 +15,13 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|ID|字符串|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
-|partnerState|String|此租户的合作伙伴状态 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected``unresponsive`。|
-|partnerAppType|String|合作伙伴应用类型 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
-|singleTenantAppId|String|合作伙伴单个租户应用 ID|
-|displayName|String|合作伙伴显示名称|
-|isConfigured|Boolean|是否配置了设备管理合作伙伴|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|合作伙伴应用程序类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
+|singleTenantAppId|字符串|合作伙伴单个租户应用 ID|
+|displayName|字符串|合作伙伴显示名称|
+|isConfigured|布尔|是否配置了设备管理合作伙伴|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
 
@@ -29,12 +29,12 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementPartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -49,6 +49,11 @@
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

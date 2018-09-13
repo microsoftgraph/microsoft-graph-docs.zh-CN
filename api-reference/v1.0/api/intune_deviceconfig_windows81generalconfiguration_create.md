@@ -34,11 +34,11 @@ POST /deviceManagement/deviceConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |版本|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountsBlockAddingNonMicrosoftAccountEmail|布尔值|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
 |applyOnlyToWindows81|布尔值|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。|
@@ -51,14 +51,14 @@ POST /deviceManagement/deviceConfigurations
 |browserBlockSendingDoNotTrackHeader|布尔值|指示是否阻止用户发送 Do Not Track 标头。|
 |browserBlockSingleWordEntryOnIntranetSites|布尔值|指示是否阻止在 Intranet 站点上使用单字条目。|
 |browserRequireSmartScreen|布尔值|指示是否要求用户使用智能屏幕筛选器。|
-|browserEnterpriseModeSiteListLocation|String|企业模式网站列表位置。 可能是本地文件、本地网络或 http 位置。|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Internet 安全级别。 可取值为：`userDefined`、`medium`、`mediumHigh`、`high`。|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Intranet 安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
-|browserLoggingReportLocation|String|日志记录报表位置。|
+|browserEnterpriseModeSiteListLocation|字符串|企业模式网站列表位置。 可能是本地文件、本地网络或 http 位置。|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|互联网安全级别。可取值为：`userDefined`、`medium`、`mediumHigh`、`high`。|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Intranet安全级别。可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
+|browserLoggingReportLocation|字符串|日志记录报表位置。|
 |browserRequireHighSecurityForRestrictedSites|布尔值|指示是否要求受限站点具有高安全性。|
 |browserRequireFirewall|布尔值|指示是否需要防火墙。|
 |browserRequireFraudWarning|布尔值|指示是否需要诈骗警告。|
-|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|受信任的站点安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|受信任的站点安全级别。可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
 |cellularBlockDataRoaming|布尔值|指示是否阻止数据漫游。|
 |diagnosticsBlockDataSubmission|布尔值|指示是否阻止诊断数据提交。|
 |passwordBlockPicturePasswordAndPin|布尔值|指示是否阻止用户使用图片密码和 PIN。|
@@ -67,12 +67,12 @@ POST /deviceManagement/deviceConfigurations
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前登录失败的次数。|
 |storageRequireDeviceEncryption|布尔值|指示是否要求对移动设备加密。|
 |updatesRequireAutomaticUpdates|布尔值|指示是否需要自动更新。|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|用户帐户控制设置。 可取值为：`userDefined`、`alwaysNotify`、`notifyOnAppChanges`、`notifyOnAppChangesWithoutDimming`、`neverNotify`。|
-|workFoldersUrl|String|工作文件夹 URL。|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|用户帐户控制设置。可取值为：`userDefined`、`alwaysNotify`、`notifyOnAppChanges`、`notifyOnAppChangesWithoutDimming`、`neverNotify`。|
+|workFoldersUrl|字符串|工作文件夹 URL。|
 
 
 
@@ -179,6 +179,11 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
+
+
 
 
 
