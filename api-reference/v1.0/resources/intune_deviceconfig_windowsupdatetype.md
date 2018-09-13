@@ -7,11 +7,16 @@
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|允许用户设置。|
-|所有|1|半年频道（定向）。 设备从半年频道（定向）中获取所有适用的功能更新。|
+|all|1|半年频道（定向）。 设备从半年频道（定向）中获取所有适用的功能更新。|
 |businessReadyOnly|2|半年频道。 设备从半年频道获取功能更新。|
 |windowsInsiderBuildFast|3|Windows 预览体验内部版本 - 快|
 |windowsInsiderBuildSlow|4|Windows 预览体验内部版本 - 慢|
 |windowsInsiderBuildRelease|5|发布 Windows 预览体验内部版本|
+
+
+
+
+
 
 
 
