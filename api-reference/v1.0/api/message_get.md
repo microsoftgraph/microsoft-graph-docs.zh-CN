@@ -54,12 +54,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Prefer: outlook.body-content-type | string | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| Prefer: outlook.body-content-type | 字符串 | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -68,16 +68,17 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+##### <a name="request-1"></a>请求 1
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
-##### <a name="response"></a>响应
+##### <a name="response-1"></a>响应 1
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -87,20 +88,117 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "html",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ\"",
+    "id":"AAMkADhMGAAA=",
+    "createdDateTime":"2018-09-09T03:15:05Z",
+    "lastModifiedDateTime":"2018-09-09T03:15:08Z",
+    "changeKey":"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuZ",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-09-09T03:15:08Z",
+    "sentDateTime":"2018-09-09T03:15:06Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR6E1BE060@MWHPR1120.namprd22.prod.outlook.com>",
+    "subject":"9/9/2018: concert",
+    "bodyPreview":"The group represents Nevada.",
+    "importance":"normal",
+    "parentFolderId":"AAMkADcbAAAAAAEJAAA=",
+    "conversationId":"AAQkADOUpag6yWs=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADMGAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThe group represents Nevada.\r\n</body>\r\n</html>\r\n"
+    },
+    "sender":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "from":{
+        "emailAddress":{
+            "name":"Adele Vance",
+            "address":"adelev@contoso.OnMicrosoft.com"
+        }
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Alex Wilber",
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
+
+##### <a name="request-2"></a>请求 2
+下面的示例使用 `$select` 查询参数来获取邮件的的 Internet 邮件标头。 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
+  "name": "get_message_headers"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
+```
+##### <a name="response-2"></a>响应 2
+下面是一个响应示例。 注意：为简便起见，响应对象中的邮件标头集有所删减。 实际调用将返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages(internetMessageHeaders)/$entity",
+    "@odata.etag":"W/\"FwAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAW/0tB\"",
+    "id":"AAMkADhAAAW-VPeAAA=",
+    "internetMessageHeaders":[
+        {
+            "name":"MIME-Version",
+            "value":"1.0"
+        },
+        {
+            "name":"Content-Type",
+            "value":"multipart/report"
+        },
+        {
+            "name":"x-custom-header-group-name",
+            "value":"Washington"
+        },
+        {
+            "name":"x-custom-header-group-id",
+            "value":"WA001"
+        }
+    ]
+}
+```
+
 
 ## <a name="see-also"></a>另请参阅
 
