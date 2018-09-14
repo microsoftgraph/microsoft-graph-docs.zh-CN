@@ -34,18 +34,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |版本|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
-|enterpriseCloudPrintOAuthAuthority|String|获取 OAuth 令牌的身份验证终结点。|
-|enterpriseCloudPrintOAuthClientIdentifier|String|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
-|enterpriseCloudPrintResourceIdentifier|String|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
+|enterpriseCloudPrintDiscoveryEndPoint|字符串|发现云打印机的终结点。|
+|enterpriseCloudPrintOAuthAuthority|字符串|获取 OAuth 令牌的身份验证终结点。|
+|enterpriseCloudPrintOAuthClientIdentifier|字符串|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
+|enterpriseCloudPrintResourceIdentifier|字符串|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|应该从发现终结点查询的打印机最大数量。 此设置仅限移动设备。 有效值为 1 至 65535|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|字符串|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
 |searchBlockDiacritics|布尔值|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|布尔值|指定建立内容和属性索引时是否使用自动语言检测。|
 |searchDisableIndexingEncryptedItems|布尔值|指示是否阻止建立 WIP 保护项的索引，以阻止它们出现在 Cortana 或资源管理器的搜索结果中。|
@@ -53,18 +53,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |searchDisableIndexerBackoff|布尔值|指示是否禁用搜索索引器回退功能。|
 |searchDisableIndexingRemovableDrive|布尔值|指示是否允许用户将可移动驱动器上的位置添加到库并建立索引。|
 |searchEnableAutomaticIndexSizeManangement|布尔值|在建立索引停止之前，指定与索引位置相同的驱动器上的最小硬盘空间量。|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|布尔值|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
 |smartScreenEnableAppInstallControl|布尔值|允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
-|personalizationDesktopImageUrl|String|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
-|personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
+|personalizationDesktopImageUrl|字符串|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
+|personalizationLockScreenImageUrl|字符串|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
 |bluetoothAllowedServices|String 集合|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
 |bluetoothBlockAdvertising|布尔值|是否阻止用户使用蓝牙广告。|
 |bluetoothBlockDiscoverableMode|布尔值|是否阻止用户使用蓝牙可发现模式。|
 |bluetoothBlockPrePairing|布尔值|是否阻止特定的捆绑蓝牙外围设备自动与主机设备配对。|
 |edgeBlockAutofill|布尔值|指示是否阻止自动填充。|
 |edgeBlocked|布尔值|指示是否阻止用户使用 Edge 浏览器。|
-|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|指示要在 Edge 浏览器中阻止的 Cookie。 可取值为：`userDefined`、`allow`、`blockThirdParty`、`blockAll`。|
+|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|指示要在 Edge 浏览器中阻止的 Cookie。可取值为：`userDefined`、`allow`、`blockThirdParty`、`blockAll`。|
 |edgeBlockDeveloperTools|布尔值|指示是否在 Edge 浏览器中阻止开发人员工具。|
 |edgeBlockSendingDoNotTrackHeader|布尔值|指示是否阻止用户发送 Do Not Track 标头。|
 |edgeBlockExtensions|布尔值|指示是否在 Edge 浏览器中阻止扩展。|
@@ -84,13 +84,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |defenderBlockEndUserAccess|布尔值|是否阻止最终用户访问 Defender。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|一周进行系统扫描的防御日。可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
 |defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|监视文件活动的值。可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
 |defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|如何提示用户提交样本的配置。 可取值为：`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting`。|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|用于提示用户提交示例的配置。可取值为：`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting`。|
 |defenderRequireBehaviorMonitoring|布尔值|指示是否需要行为监控。|
 |defenderRequireCloudProtection|布尔值|指示是否需要云保护。|
 |defenderRequireNetworkInspectionSystem|布尔值|指示是否需要网络检查系统。|
@@ -103,10 +103,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |defenderScanRemovableDrivesDuringFullScan|布尔值|指示在全面扫描期间是否扫描可移动驱动器。|
 |defenderScanScriptsLoadedInInternetExplorer|布尔值|指示是否扫描在 Internet Explorer 浏览器中加载的脚本。|
 |defenderSignatureUpdateIntervalInHours|Int32|签名更新间隔（以小时为单位）。 指定 0 不检查。 有效值为 0 至 24|
-|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|Defender 系统扫描类型。 可取值为：`userDefined`、`disabled`、`quick`、`full`。|
+|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|防御系统扫描类型。可取值为：`userDefined`、`disabled`、`quick`、`full`。|
 |defenderScheduledScanTime|TimeOfDay|系统扫描的 Defender 时间。|
 |defenderScheduledQuickScanTime|TimeOfDay|执行每日快速扫描的时间。|
-|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|指定云提供的保护级别。 可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|指定云交付保护的级别。可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
 |lockScreenAllowTimeoutConfiguration|布尔值|指定是否在 Windows 10 移动版设备的锁定屏幕上显示用户可配置设置以控制屏幕超时。 如果此策略设置为 Allow，则由 lockScreenTimeoutInSeconds 设置的值将被忽略。|
 |lockScreenBlockActionCenterNotifications|布尔值|指示在锁定屏幕上是否阻止操作中心通知。|
 |lockScreenBlockCortana|布尔值|指示系统锁定时用户是否可以使用语音与 Cortana 进行交互。|
@@ -120,13 +120,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 50|
 |passwordRequired|布尔值|指示是否要求用户输入密码。|
 |passwordRequireWhenResumeFromIdleState|布尔值|指示从空闲状态恢复时是否需要密码。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前登录失败的次数。 有效值为 0 至 999|
-|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|启用或禁用广告 ID 的使用。 已添加到 Windows 10 版本 1607 中。 可取值为：`notConfigured`、`blocked`、`allowed`。|
+|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|启用或禁用广告 ID 。已添加到 Windows 10 版本 1607。可取值为：`notConfigured`、`blocked`、`allowed`。|
 |privacyAutoAcceptPairingAndConsentPrompts|布尔值|指示在启动应用时是否允许自动接受配对和隐私用户许可对话框。|
 |privacyBlockInputPersonalization|布尔值|指示是否阻止 Cortana、Dictation 或 Store 应用程序使用基于云的语音服务。|
 |startBlockUnpinningAppsFromTaskbar|布尔值|指示是否阻止用户从任务栏取消固定应用。|
-|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|设置此值会折叠应用列表，完全删除应用列表，或者在“设置”应用中禁用相应的切换。 可取值为：`userDefined`、`collapse`、`remove`、`disableSettingsApp`。|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|设置此值会折叠应用列表，完全删除应用列表，或者在“设置”应用中禁用相应的切换。可取值为：`userDefined`、`collapse`、`remove`、`disableSettingsApp`。|
 |startMenuHideChangeAccountSettings|布尔值|启用此策略会将更改帐户设置从开始菜单的用户磁贴中隐藏。|
 |startMenuHideFrequentlyUsedApps|布尔值|启用此策略会将最常用的应用从开始菜单中隐藏，并会禁用“设置”应用中的相应切换。|
 |startMenuHideHibernate|布尔值|启用此策略会将休眠从开始菜单的电源按钮中隐藏。|
@@ -140,19 +140,19 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |startMenuHideSleep|布尔值|启用此策略会将“休眠”从开始菜单的电源按钮中隐藏。|
 |startMenuHideSwitchAccount|布尔值|启用此策略会将“切换帐户”从开始菜单的用户磁贴中隐藏。|
 |startMenuHideUserTile|布尔值|启用此策略会将用户磁贴从开始菜单中隐藏。|
-|startMenuLayoutEdgeAssetsXml|Binary|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 开始布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
-|startMenuLayoutXml|Binary|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改模式指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
-|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|允许管理员决定显示“开始”菜单的方式。 可取值为：`userDefined`、`fullScreen`、`nonFullScreen`。|
-|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的文档文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的下载文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的 FileExplorer 快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的 HomeGroup 文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的音乐文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的网络文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的个人文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的图片文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的设置文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
-|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的视频文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuLayoutEdgeAssetsXml|二进制|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 开始布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
+|startMenuLayoutXml|二进制|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改模式指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
+|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|允许管理员决定显示“开始”菜单的方式。可取值为：`userDefined`、`fullScreen`、`nonFullScreen`。|
+|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“文档”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“下载”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的 FileExplorer 快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的 HomeGroup 文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“音乐”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“网络”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的 PersonalFolder 快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“图片”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“设置”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
+|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|强制“开始”菜单上的“视频”文件夹快捷方式的可见性（显示/隐藏）。可取值为：`notConfigured`、`hide`、`show`。|
 |settingsBlockSettingsApp|布尔值|指示是否阻止访问“设置”应用。|
 |settingsBlockSystemPage|布尔值|指示是否阻止在“设置”应用中访问系统。|
 |settingsBlockDevicesPage|布尔值|指示是否阻止在“设置”应用中访问设备。|
@@ -172,10 +172,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |windowsSpotlightBlockThirdPartyNotifications|布尔值|阻止通过 Windows 聚焦投放的第三方内容|
 |windowsSpotlightBlockWelcomeExperience|布尔值|阻止 Windows 聚焦 Windows 欢迎体验|
 |windowsSpotlightBlockWindowsTips|布尔值|允许 IT 管理员关闭 Windows 提示的弹出窗口。|
-|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|指定热点的类型。 可取值为：`notConfigured`、`disabled`、`enabled`。|
+|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|指定“热点”的类型。可取值为：`notConfigured`、`disabled`、`enabled`。|
 |networkProxyApplySettingsDeviceWide|布尔值|如果设置，代理设置将应用于设备中的所有进程和帐户。 否则，它将应用于注册到 MDM 中的用户帐户。|
 |networkProxyDisableAutoDetect|布尔值|禁用自动检测设置。 如果启用，系统将尝试查找代理自动配置 (PAC) 脚本的路径。|
-|networkProxyAutomaticConfigurationUrl|String|指向你要使用的代理自动配置 (PAC) 脚本的地址。|
+|networkProxyAutomaticConfigurationUrl|字符串|指向你要使用的代理自动配置 (PAC) 脚本的地址。|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune_deviceconfig_windows10networkproxyserver.md)|指定手动代理服务器设置。|
 |accountsBlockAddingNonMicrosoftAccountEmail|布尔值|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
 |antiTheftModeBlocked|布尔值|指示是否阻止用户选择 AntiTheft 模式首选项（仅限 Windows 10 移动版）。|
@@ -187,13 +187,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |cortanaBlocked|布尔值|是否阻止用户使用 Cortana。|
 |deviceManagementBlockFactoryResetOnMobile|布尔值|指示是否阻止用户重置手机。|
 |deviceManagementBlockManualUnenroll|布尔值|指示是否阻止用户从设备管理手动取消注册。|
-|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|指定需要的安全搜索筛选级别。 可取值为：`userDefined`、`strict`、`moderate`。|
+|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|指定需要的安全搜索筛选级别。可取值为：`userDefined`、`strict`、`moderate`。|
 |edgeBlockPopups|布尔值|指示是否阻止弹出窗口。|
 |edgeBlockSearchSuggestions|布尔值|指示是否阻止用户使用地址栏中的搜索建议。|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|布尔值|指示是否阻止用户将 Intranet 流量从 Edge 发送到 Internet Explorer。|
 |edgeRequireSmartScreen|布尔值|指示是否要求用户使用智能屏蔽筛选器。|
-|edgeEnterpriseModeSiteListLocation|String|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
-|edgeFirstRunUrl|String|第一次打开 Edge 浏览器时的首个运行 URL。|
+|edgeEnterpriseModeSiteListLocation|字符串|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
+|edgeFirstRunUrl|字符串|第一次打开 Edge 浏览器时的首个运行 URL。|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)|允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。 如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。|
 |edgeHomepageUrls|String 集合|Edge 浏览器上 MDM 注册设备上的主页 URL 列表。|
 |edgeBlockAccessToAboutFlags|布尔值|指示是否阻止访问 Edge 浏览器上关于标志的信息。|
@@ -226,9 +226,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |wirelessDisplayBlockUserInputFromReceiver|布尔值|指示是否允许来自无线显示接收器的用户输入。|
 |wirelessDisplayRequirePinForPairing|布尔值|指示是否需要新设备的 PIN 才能启动配对。|
 |windowsStoreBlocked|布尔值|指示是否阻止用户使用 Windows 应用商店。|
-|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|指示是否可以旁加载使用可信证书签名的来自 AppX 程序包的应用。 可取值为：`notConfigured`、`blocked`、`allowed`。|
+|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|指示是否可以旁加载使用可信证书签名的 AppX 程序包应用。可取值为：`notConfigured`、`blocked`、`allowed`。|
 |windowsStoreBlockAutoUpdate|布尔值|指示是否阻止从 Windows 应用商店自动更新应用。|
-|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|指示是否允许开发人员解锁。 可取值为：`notConfigured`、`blocked`、`allowed`。|
+|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|指示是否允许开发人员解锁。可取值为：`notConfigured`、`blocked`、`allowed`。|
 |sharedUserAppDataAllowed|布尔值|指示是否阻止同一应用的多个用户共享数据。|
 |appsBlockWindowsStoreOriginatedApps|布尔值|指示是否禁用启动 Windows 应用商店中预先安装或已下载的所有应用。|
 |windowsStoreEnablePrivateStoreOnly|布尔值|指示是否启用“仅限私人应用商店”。|
@@ -726,6 +726,11 @@ Content-Length: 9875
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
+
+
 
 
 
