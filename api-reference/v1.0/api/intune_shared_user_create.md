@@ -9,7 +9,7 @@
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| _因上下文而异_ |
-| &nbsp; &nbsp; 设备 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; 设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; 加入 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; 疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
@@ -38,7 +38,7 @@ POST /users
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|用户的唯一标识符。|
+|ID|字符串|用户的唯一标识符。|
 |**加入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
@@ -63,7 +63,7 @@ Content-length: 46
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 从实际调用返回的属性根据上下文而有所不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 从实际调用返回的属性根据上下文而有所不同。
 
 ``` http
 HTTP/1.1 201 Created

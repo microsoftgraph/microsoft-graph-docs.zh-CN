@@ -28,16 +28,18 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 
 - 与[重点收件箱](../api-reference/v1.0/resources/manage_focused_inbox.md)和 [@-提及（预览）](../api-reference/beta/api/message_get.md#request-2)集成，让应用用户能够首先阅读和答复与自己相关的邮件。 
 
-- 撰写邮件期间检查[邮件提示（预览）](../api-reference/beta/resources/mailtips.md)，以获取有关收件人的有用状态信息（如发送自动答复或拥有完整邮箱的收件人）。 邮件提示可以提醒某些条件的应用，以便采取更有效的跟进操作。 
+- 撰写邮件期间检查[邮件提示](../api-reference/v1.0/resources/mailtips.md)，以获取有关收件人的有用状态信息（如发送自动答复或拥有完整邮箱的收件人）。 邮件提示可以将某些条件的提示发送给应用，以便采取更有效的跟进操作。 
 
 - 使用[人员 API](people_example.md) 提供交互式控件，如应用中的人员选取器。 人员 API 可根据用户通信和协作模式及业务关系建议与用户相关度最高的人员。 
 
-- 为应用用户提供智能文件选取器并建议他们最近与之交互的文件，以便在撰写邮件时以附件形式添加。 [见解](../api-reference/beta/resources/insights.md)使用高级分析来推荐用户有可能使用的文件、用户最近查看或编辑的文件，或者与用户共享的文件。
+- 为应用用户提供智能文件选取器并建议他们最近与之交互的文件，以便在撰写邮件时以附件形式添加。 [见解（预览）](../api-reference/beta/resources/insights.md)使用高级分析来推荐用户有可能使用的文件、用户最近查看或编辑的文件或者与用户共享的文件。
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>在资源或资源实例中存储应用数据
 
-大部分情况下，应用需要将其数据存储在外部数据存储中，并在管理和访问数据时需要开销。 Microsoft Graph 允许应用只需[在各个资源实例中存储自定义数据](extensibility_overview.md#open-extensions)，或者在适当情况下扩展架构、添加自定义属性，并在 Microsoft Graph 资源中存储类型化数据。 你可以使[架构扩展](extensibility_overview.md#schema-extensions)等可查找和可共享。 
+大部分情况下，应用需要将其数据存储在外部数据存储中，并在管理和访问数据时产生开销。 Microsoft Graph 让您在创建或发送新邮件或者答复邮件时将应用程序数据作为 Internet 邮件标头添加。[ ](../api-reference/v1.0/api/user_post_messages.md#request-2) [ ](../api-reference/v1.0/api/user_sendmail.md#request-2) 
+
+如果您需要添加并随后更新自定义数据，则可以[在各个资源实例中存储数据](extensibility_overview.md#open-extensions)。 如果适用，可以扩展架构，添加自定义属性，并将类型化的数据存储在 Microsoft Graph 资源中。 你可以使[架构扩展](extensibility_overview.md#schema-extensions)可查找和可共享。 
 
 
 ## <a name="next-steps"></a>后续步骤

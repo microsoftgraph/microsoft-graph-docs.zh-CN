@@ -4,7 +4,8 @@ mailFolder 中的邮件。
 
 该资源支持：
 
-- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 添加您自己的数据作为自定义 Internet 邮件标头。 仅当创建邮件时添加自定义标头，并以开头字母为 "x-" 的方式对其进行命名。 一旦已发送邮件，您无法修改标头。 若要获取的邮件标头，请在[获取邮件](../api/message_get.md)操作中应用 `$select` 查询参数。
+- 在[扩展](../../../concepts/extensibility_overview.md)中添加您自己的数据作为自定义属性。
 - 通过提供 [delta](../api/message_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
@@ -28,7 +29,7 @@ mailFolder 中的邮件。
 |[发送](../api/message_send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|
 |**附件**| | |
 |[列出附件](../api/message_list_attachments.md) |[附件](attachment.md) 集合| 获取邮件的所有附件。|
-|[添加附件](../api/message_post_attachments.md) |[ 附件](attachment.md)| 通过发布到附件集合，向邮件添加新附件。|
+|[添加附件](../api/message_post_attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向邮件添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
@@ -51,13 +52,13 @@ mailFolder 中的邮件。
 |changeKey|字符串|邮件的版本。|
 |conversationId|字符串|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|flag|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|flag|[followupFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须与实际使用的邮箱对应。|
 |hasAttachments|布尔|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|字符串|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|importance| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification | InferenceClassificationType | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。 可取值包括 `focused` 或 `other`。 |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
+|inferenceClassification | InferenceClassificationType | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。 可能的值包括 `focused` 或 `other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件标头的集合。 集合包括指示邮件由发件人到达收件人所采用的网络路径的邮件标头。 它还可以包含保留邮件应用程序数据的自定义邮件标头。 |
 |internetMessageId |字符串 |由 [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
