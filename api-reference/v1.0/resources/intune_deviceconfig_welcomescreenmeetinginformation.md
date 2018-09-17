@@ -4,11 +4,16 @@
 
 欢迎屏幕会议信息的可能的值。
 ## <a name="members"></a>成员
-|成员|值|描述|
+|成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义、默认值、无意向。|
 |showOrganizerAndTimeOnly|1|仅显示组织者和时间。|
 |showOrganizerAndTimeAndSubject|2|显示组织者、时间和主题（私人会议的主题是隐藏的）。|
+
+
+
+
+
 
 
 

@@ -34,7 +34,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|ID|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |displayName|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |描述|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |优先级|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
@@ -43,16 +43,16 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |版本|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|尚未记录|
 |pinMaximumLength|Int32|尚未记录|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可能的值为： `allowed` 、 `required` 、 `disallowed` 。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可能的值为： `allowed` 、 `required` 、 `disallowed` 。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可能的值为： `allowed` 、 `required` 、 `disallowed` 。|
-|状态|[启用](../resources/intune_onboarding_enablement.md)|尚未编档。 可能的值为： `notConfigured` 、 `enabled` 、 `disabled` 。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
+|state|[enablement](../resources/intune_onboarding_enablement.md)|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
 |securityDeviceRequired|布尔|尚未记录|
 |unlockWithBiometricsEnabled|布尔|尚未记录|
 |remotePassportEnabled|布尔|尚未记录|
 |pinPreviousBlockCount|Int32|尚未记录|
 |pinExpirationInDays|Int32|尚未记录|
-|enhancedBiometricsState|[启用](../resources/intune_onboarding_enablement.md)|尚未编档。 可能的值为： `notConfigured` 、 `enabled` 、 `disabled` 。|
+|enhancedBiometricsState|[enablement](../resources/intune_onboarding_enablement.md)|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
@@ -119,6 +119,11 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
+
+
+
+
 
 
 
