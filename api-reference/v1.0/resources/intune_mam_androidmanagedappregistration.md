@@ -10,8 +10,8 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 集合|列出 [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 对象的属性和关系。|
-|[Get androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|读取 [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 对象的属性和关系。|
+|[列出 androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 集合|列出 [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 对象的属性和关系。|
+|[获取 androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|读取 [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 对象的属性和关系。|
 |[创建 androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|创建新的 [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md) 对象。|
 
 ## <a name="properties"></a>属性
@@ -19,17 +19,17 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|创建的日期和时间。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |lastSyncDateTime|DateTimeOffset|上次应用与管理服务同步的日期和时间。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|applicationVersion|String|应用版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|managementSdkVersion|String|应用管理 SDK 版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|platformVersion|String|操作系统版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceType|String|主机设备类型。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|[managedAppFlaggedReason 枚举](../resources/intune_mam_managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|applicationVersion|字符串|应用版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|managementSdkVersion|字符串|应用管理 SDK 版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|platformVersion|字符串|操作系统版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceType|字符串|主机设备类型。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceTag|字符串|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceName|字符串|主机设备名称。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|userId|字符串|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|ID|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|version|字符串|实体的版本。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -40,13 +40,12 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -63,13 +62,18 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

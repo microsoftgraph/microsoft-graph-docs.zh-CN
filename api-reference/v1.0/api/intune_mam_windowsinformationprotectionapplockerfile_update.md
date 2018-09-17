@@ -1,6 +1,6 @@
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
-> **注意：**使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
 更新 [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|授权|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 对象的 JSON 表示形式。
@@ -37,11 +37,11 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|友好名称|
-|fileHash|String|文件的 SHA256 哈希|
-|file|Binary|字节数组形式的文件|
-|id|String|实体的键。|
-|version|String|实体的版本。|
+|displayName|字符串|友好名称|
+|fileHash|字符串|文件的 SHA256 哈希|
+|file|二进制|字节数组形式的文件|
+|ID|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 
 
@@ -80,6 +80,11 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -9,40 +9,40 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List windows10CompliancePolicies](../api/intune_deviceconfig_windows10compliancepolicy_list.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 集合|列出 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性和关系。|
-|[Get windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_get.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|读取 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性和关系。|
-|[Create windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_create.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|创建新的 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象。|
-|[Delete windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_delete.md)|无|删除 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)。|
-|[Update windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_update.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|更新 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性。|
+|[列出 windows10CompliancePolicies](../api/intune_deviceconfig_windows10compliancepolicy_list.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 集合|列出 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性和关系。|
+|[获取 windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_get.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|读取 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性和关系。|
+|[创建 windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_create.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|创建新的 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象。|
+|[删除 windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_delete.md)|无|删除 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)。|
+|[更新 windows10CompliancePolicy](../api/intune_deviceconfig_windows10compliancepolicy_update.md)|[windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md)|更新 [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
-|passwordBlockSimple|Boolean|指示是否阻止简单密码。|
-|passwordRequiredToUnlockFromIdle|Boolean|需要密码才可解锁空闲设备。|
+|passwordRequired|布尔值|需要密码才可解锁 Windows 设备。|
+|passwordBlockSimple|布尔值|指示是否阻止简单密码。|
+|passwordRequiredToUnlockFromIdle|布尔值|需要密码才可解锁空闲设备。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可能的值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
-|requireHealthyDeviceReport|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
+|requireHealthyDeviceReport|布尔值|要求设备由 Windows 设备运行状况证明报告为正常。|
 |osMinimumVersion|字符串|最低 Windows 10 版本。|
 |osMaximumVersion|字符串|最高 Windows 10 版本。|
 |mobileOsMinimumVersion|字符串|最低 Windows Phone 版本。|
 |mobileOsMaximumVersion|字符串|最高 Windows Phone 版本。|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
-|bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
-|secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
-|codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
-|storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
+|earlyLaunchAntiMalwareDriverEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
+|bitLockerEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
+|secureBootEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
+|codeIntegrityEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常。|
+|storageRequireEncryption|布尔值|要求对 Windows 设备加密。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -59,8 +59,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10CompliancePolicy"
 }-->
 ``` json
@@ -93,6 +93,11 @@
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

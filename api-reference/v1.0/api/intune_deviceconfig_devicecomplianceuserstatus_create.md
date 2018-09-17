@@ -34,10 +34,10 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |userDisplayName|字符串|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。可能的值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
 |userPrincipalName|字符串|UserPrincipalName。|
 
@@ -81,6 +81,11 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

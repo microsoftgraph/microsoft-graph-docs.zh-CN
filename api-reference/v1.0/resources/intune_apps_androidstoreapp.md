@@ -9,16 +9,16 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List androidStoreApps](../api/intune_apps_androidstoreapp_list.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) 集合|列出 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象的属性和关系。|
+|[列出 androidStoreApps](../api/intune_apps_androidstoreapp_list.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) 集合|列出 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象的属性和关系。|
 |[获取 androidStoreApp](../api/intune_apps_androidstoreapp_get.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|读取 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象的属性和关系。|
 |[创建 androidStoreApp](../api/intune_apps_androidstoreapp_create.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|创建新的 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象。|
 |[删除 androidStoreApp](../api/intune_apps_androidstoreapp_delete.md)|无|删除 [androidStoreApp](../resources/intune_apps_androidstoreapp.md)。|
-|[Update androidStoreApp](../api/intune_apps_androidstoreapp_update.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|更新 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象的属性。|
+|[更新 androidStoreApp](../api/intune_apps_androidstoreapp_update.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|更新 [androidStoreApp](../resources/intune_apps_androidstoreapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |发布者|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -31,7 +31,7 @@
 |所有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |开发者|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |备注|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。除非应用已发布，否则不能被分配。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可能的值为：`notPublished`、`processing`、`published`。|
 |packageId|字符串|包标识符。|
 |appStoreUrl|字符串|Android 应用商店 URL。|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|最低适用操作系统的值。|
@@ -46,8 +46,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidStoreApp"
 }-->
 ``` json
@@ -86,6 +86,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

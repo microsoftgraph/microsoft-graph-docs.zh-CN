@@ -34,8 +34,8 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|策略报告安装状态。 可取值为： `success`， `available`， `idle`， `unknown`， `downloading`， `downloadFailed`， `downloadRequiresComputer`， `downloadInsufficientSpace`， `downloadInsufficientPower`， `downloadInsufficientNetwork`， `installing`， `installInsufficientSpace`， `installInsufficientPower`， `installPhoneCallInProgress`， `installFailed`， `notSupportedOperation`， `sharedDeviceUserLoggedInError`。|
+|ID|字符串|实体的键。|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|策略报告的安装状态。可能的值为：`success`、`available`、`idle`、`unknown`、`downloading`、`downloadFailed`、`downloadRequiresComputer`、`downloadInsufficientSpace`、`downloadInsufficientPower`、`downloadInsufficientNetwork`、`installing`、`installInsufficientSpace`、`installInsufficientPower`、`installPhoneCallInProgress`、`installFailed`、`notSupportedOperation`、`sharedDeviceUserLoggedInError`。|
 |osVersion|字符串|报告的设备版本。|
 |deviceId|字符串|报告的设备 ID。|
 |userId|字符串|报告的用户 ID。|
@@ -43,7 +43,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 |userName|字符串|报告的用户名|
 |deviceModel|字符串|报告的设备模型|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。可能的值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
 |userPrincipalName|字符串|UserPrincipalName。|
 
@@ -98,6 +98,11 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

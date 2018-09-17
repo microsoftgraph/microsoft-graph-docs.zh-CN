@@ -8,11 +8,16 @@
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
 |allBlocked|1|不允许任何电视节目内容|
-|常规|2|Ab 0 Jahren，无年龄限制|
+|常规的|2|Ab 0 Jahren，无年龄限制|
 |agesAbove6|3|Ab 6 Jahren， 年龄 6 岁及以上|
 |agesAbove12|4|Ab 12 Jahren， 年龄 12 岁及以上|
 |agesAbove16|5|Ab 16 Jahren，年龄 16 岁及以上|
 |成人|6|Ab 18 Jahren，仅成人|
+
+
+
+
+
 
 
 

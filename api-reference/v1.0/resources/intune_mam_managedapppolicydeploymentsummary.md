@@ -7,7 +7,7 @@ ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|读取 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) 对象的属性和关系。|
-|[Update managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_update.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|更新 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) 对象的属性。|
+|[更新 managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_update.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|更新 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -16,7 +16,7 @@ ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体
 |configurationDeployedUserCount|Int32|尚未记录|
 |lastRefreshTime|DateTimeOffset|尚未记录|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) 集合|尚未记录|
-|id|字符串|实体的键。|
+|ID|字符串|实体的键。|
 |version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -25,8 +25,8 @@ ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummary"
 }-->
 ``` json
@@ -49,6 +49,11 @@ ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

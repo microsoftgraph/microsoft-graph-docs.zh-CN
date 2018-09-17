@@ -4,12 +4,17 @@
 
 firewallCertificateRevocationListCheckMethod 可能的值
 ## <a name="members"></a>成员
-|成员|值|描述|
+|成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|没有由 Intune 配置的值，不要替代用户配置的设备默认值|
-|无|1|不检查证书吊销列表|
+|none|1|不检查证书吊销列表|
 |尝试|2|尝试 CRL 检查并且检查确认证书后才允许使用证书|
-|需要|3|允许使用证书之前需要 CRL 检查成功|
+|require|3|允许使用证书之前需要 CRL 检查成功|
+
+
+
+
+
 
 
 

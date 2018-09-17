@@ -1,8 +1,8 @@
-# <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>mdmWindowsInformationProtectionPolicy 资源类型
+dmWindowsInformationProtectionPolicy 资源类型
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-使用 MDM 进行 Windows 信息保护的策略
+使用 MDM 进行 Windows 信息保护的策略  
 
 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)
 
@@ -24,7 +24,7 @@
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |ID|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |版本|字符串|实体的版本。 继承自 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP 实施级别。请参见继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) 的支持值枚举定义。 可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP 执行级别。请参阅继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) 受支持值的枚举定义。可能的值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
 |enterpriseDomain|字符串|主企业域。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) 集合|要保护的企业域列表。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|布尔值|指定是否应配置锁定功能下的保护（也称为 PIN 下的加密）。继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -50,21 +50,21 @@
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 集合|通过 xml 文件输入受保护应用的另一种方法 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 集合|通过 xml 文件输入豁免应用的另一种方法 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|赋值|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 集合|针对策略的安全组列表的导航属性。 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 集合|通过 XML 文件输入受保护应用程序的另一种方法。 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) 集合|通过 XML 文件输入豁免应用程序的另一种方法。 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 集合|针对策略的安全组列表的导航属性。 继承自 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,7 +91,7 @@
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -191,6 +191,30 @@
   "isAssigned": true
 }
 ```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: dmWindowsInformation...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Policy for Windows i...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Inherits from [windo...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+
+  ],
+}
+-->
 
 
 

@@ -9,16 +9,16 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List windowsUniversalAppXs](../api/intune_apps_windowsuniversalappx_list.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 集合|列出 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性和关系。|
-|[Get windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|读取 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性和关系。|
-|[Create windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|创建新的 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象。|
-|[Delete windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|无|删除 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)。|
-|[Update windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|更新 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性。|
+|[列出 windowsUniversalAppXs](../api/intune_apps_windowsuniversalappx_list.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 集合|列出 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性和关系。|
+|[获取 windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|读取 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性和关系。|
+|[创建 windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|创建新的 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象。|
+|[删除 windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|无|删除 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)。|
+|[更新 windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|更新 [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -31,12 +31,12 @@
 |owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用程序的发布状态。除非应用程序发布，否则无法分配应用程序。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可能的值为：`notPublished`、`processing`、`published`。|
 |committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|字符串|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`。|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|可运行此应用的 Windows 设备类型。 可取值为：`none`、`desktop`、`mobile`、`holographic`、`team`。|
+|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|此应用程序可以运行的 Windows 体系结构。可能的值为：`none`，`x86`，`x64`，`arm`，`neutral`。|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|此应用程序可以运行的 Windows 设备类型。可能的值为：`none`，`desktop`，`mobile`，`holographic`，`team`。|
 |identityName|字符串|标识名称。|
 |identityPublisherHash|字符串|标识发布者哈希。|
 |identityResourceIdentifier|字符串|标识资源标识符。|
@@ -55,8 +55,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileLobApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUniversalAppX"
 }-->
 ``` json
@@ -98,6 +98,11 @@
   "identityVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

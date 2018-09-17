@@ -4,10 +4,15 @@
 
 请求 Exchange Connector 同步的类型。
 ## <a name="members"></a>成员
-|成员|值|描述|
+|成员|值|说明|
 |:---|:---|:---|
 |fullSync|0|发现 Exchange 中的所有设备。|
 |deltaSync|1|在 Exchange 中仅发现在增量同步窗口期间已更新的设备。|
+
+
+
+
+
 
 
 

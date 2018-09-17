@@ -9,7 +9,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupId|String|赋值目标的组 ID。|
+|groupId|字符串|赋值目标的组 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -17,7 +17,6 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

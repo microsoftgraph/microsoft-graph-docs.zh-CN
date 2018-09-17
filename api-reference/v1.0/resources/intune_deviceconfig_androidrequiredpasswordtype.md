@@ -10,10 +10,15 @@ Android 所需的密码类型。
 |alphabetic|1|必需是字母密码。|
 |alphanumeric|2|必须是字母数字密码。|
 |alphanumericWithSymbols|3|必需是带符号的字母数字密码。|
-|lowSecurityBiometric|4| 需要低安全性的基于生物的密码。|
+|lowSecurityBiometric|4|需要低安全性的基于生物的密码。|
 |numeric|5|必需数字密码。|
 |numericComplex|6|必需是复杂的数字密码。|
 |any|7|Password 或模式是必需的且可接受任何形式。|
+
+
+
+
+
 
 
 

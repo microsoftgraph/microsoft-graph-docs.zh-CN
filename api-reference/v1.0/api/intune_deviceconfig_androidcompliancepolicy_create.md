@@ -34,15 +34,15 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |passwordRequired|布尔|需要密码才可解锁设备。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|密码中的字符类型。可能的值为： `deviceDefault`， `alphabetic`， `alphanumeric`， `alphanumericWithSymbols`， `lowSecurityBiometric`， `numeric`， `numericComplex`， `any`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
@@ -50,11 +50,11 @@ POST /deviceManagement/deviceCompliancePolicies
 |securityDisableUsbDebugging|布尔|在 Android 设备上禁用 USB 调试。|
 |securityRequireVerifyApps|布尔|要求启用 Android 验证应用功能。|
 |deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁保护最低风险级别报告违规.。可能的值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
-|osMinimumVersion|String|最低 Android 版本。|
-|osMaximumVersion|String|最高 Android 版本。|
-|minAndroidSecurityPatchLevel|String|最低 Android 安全修补程序级别。|
+|osMinimumVersion|字符串|最低 Android 版本。|
+|osMaximumVersion|字符串|最高 Android 版本。|
+|minAndroidSecurityPatchLevel|字符串|最低 Android 安全修补程序级别。|
 |storageRequireEncryption|布尔|要求对 Android 设备加密。|
 |securityRequireSafetyNetAttestationBasicIntegrity|布尔|要求设备传递 SafetyNet 基本完整性检查。|
 |securityRequireSafetyNetAttestationCertifiedDevice|布尔|要求设备传递 SafetyNet 认证设备检查。|
@@ -143,6 +143,11 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
+
+
+
 
 
 
