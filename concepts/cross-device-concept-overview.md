@@ -14,8 +14,15 @@ Microsoft 正在构建一个平台，以打造超越单一设备的体验，以�
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>通过使用设备中继 API 构建丰富的跨设备体验 
 除了 Microsoft 设备（个人电脑、Windows Phone、Xbox、IoT、HoloLens 等），设备中继 API 还提供了 Android 和 iOS 设备。 这可让能够真正打破用户设备之间的边界。 你可以构建利用用户环境的应用，并创建能够实时超越单个设备的丰富体验。 
 
+## <a name="reach-out-to-and-engage-with-users-anywhere-via-a-coherent-and-human-centric-notification-story-preview"></a>通过以人为文本的一致通知故事（预览版），接触用户并与之接洽
+
+通知是与用户沟通和接洽最有效和直接的方式之一。 
+
+利用 Microsoft Graph 通知 API，你可以采用以人为本（而不是以设备为中心）的方式传递通知。 你可以针对将接收通知的用户，并依赖于 Microsoft Graph 通知框架将通知传递到用户登录到的每个端点。 利用 Microsoft Graph 通知 API 也可以轻松地完成跨设备通知管理，因此你可以跨用户的设备同步通知，让用户不再执行多余的工作，并且不会中断用户的工作。 
+
 ## <a name="next-steps"></a>后续步骤
 
 - [使用 Microsoft Graph API 实现跨设备体验](../api-reference/v1.0/resources/cross-device-reference-overview.md)
 - [详细了解 Microsoft Graph 中的活动源 API](activity-feed-concept-overview.md)
-- [详细了解 Microsoft Graph 中的设备中继 API](device-relay-concept-overview.md)
+- [详细了解 Microsoft Graph 中的设备重播 API](device-relay-concept-overview.md)
+- [详细了解 Microsoft Graph 中的 Microsoft Graph 通知 API](notifications-concept-overview.md)

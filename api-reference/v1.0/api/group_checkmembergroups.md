@@ -14,7 +14,7 @@
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
 | 应用程序                            | _Group.Read.All_，Directory.Read.All。 Directory.ReadWrite.All                               |
 
-> **注意：** 此 API 目前需要 `Directory.Read.All` 权限或更高权限。 使用 `Gorup.Read.All` 权限将返回错误。 这是一个已知 bug。
+> **注意：** 此 API 目前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +36,7 @@ POST /groups/{id}/checkMemberGroups
 
 | 参数 | 类型              | 说明           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | 字符串集合 | 组 ID 的数组 |
+| groupIds  | String 集合 | 组 ID 的数组 |
 
 ## <a name="response"></a>响应
 

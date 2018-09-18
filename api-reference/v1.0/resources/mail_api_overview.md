@@ -12,9 +12,9 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 
 邮件正文可以是 HTML 格式或文本格式。
 
-您可以使用已知文件夹名称，如 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems` 标识的所有用户默认情况下均存在的特定邮件文件夹。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
+您可以使用熟知的文件夹名称，如 `Inbox`、`Drafts`、`SentItems`、 或 `DeletedItems` 标识供所有用户使用的默认存在的特定邮件文件夹。 有关受支持的熟知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-例如，可以在未获取文件夹 ID 的情况下获取登录用户的 Outlook **已发送邮件**文件夹中的邮件：
+例如，可以在先未获取文件夹 ID 的情况下获取登录用户 Outlookz中 **已发送邮件**文件夹中的邮件：
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -34,13 +34,14 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [重点收件箱](../resources/manage_focused_inbox.md) |
 | 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [附件的方法](../resources/attachment.md#methods) |
 | 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user_get_mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user_update_mailboxsettings.md) |
-| 要获取其他收件人的特殊状态，如外出邮件的提示 | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [获取邮件提示](../api/user_getmailtips.md) |
+| 要获取其他收件人的特殊状态，如外出邮件的提示 | [用户](../resources/user.md) <br> [mailTips](../resources/mailtips.md) | [获取邮件提示](../api/user_getmailtips.md) |
 | **邮件和文件夹管理** | | |
 | 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [MailFolder 的方法](../resources/mailfolder.md#methods) |
 | 搜索和筛选邮件 | [邮件](../resources/message.md) | [查询参数](../../../concepts/query_parameters.md)  |
 | 获取对文件夹中的邮件更改的通知 | [订阅](../resources/subscription.md) | [在 Microsoft Graph 中使用 Webhooks](../resources/webhooks.md) |
 | 同步邮件或邮件文件夹层次结构 | [邮件](../resources/message.md) | [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md) |
 | **应用开发** | | |
+| 添加自定义应用数据为邮件的 Internet 邮件标头。 | [邮件](../resources/message.md) | 将自定义数据添加到邮件的 **internetMessageHeaders** 属性。 |
 | 通过使用扩展向邮件添加自定义应用数据 | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md) |
 | 访问半公开的 Outlook MAPI 属性的自定义数据 | [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook 扩展属性概述](../resources/extended-properties-overview.md) |
 
