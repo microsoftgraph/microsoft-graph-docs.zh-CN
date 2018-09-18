@@ -4,8 +4,9 @@
 
 该资源支持：
 
-- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
-- 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+- 将您自己的数据作为[扩展](../../../concepts/extensibility_overview.md)添加到自定义属性。
+- 订阅[更改通知](../../../concepts/webhooks.md)。
+- 通过提供 [delta](../api/user_delta.md) 函数使用[delta 查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 
 ## <a name="methods"></a>方法
@@ -69,7 +70,7 @@
 |[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**其他组资源**| | |
 |[列出照片](../api/group_list_photos.md) |[profilePhoto](photo.md) 集合| 获取组的个人资料照片集合。|
-|[ 列出 plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) 集合| 获取组拥有的 Planner 计划。|
+|[列出 plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) 集合| 获取组拥有的 Planner 计划。|
 |**用户设置**| | |
 |[addFavorite](../api/group_addfavorite.md)|无|将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。|
 |[removeFavorite](../api/group_removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。|
@@ -112,8 +113,8 @@
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
 |驱动器|[驱动器](drive.md)|组的默认驱动器。 只读。|
-|drives|[drive](drive.md) 集合|组的驱动器。 只读。|
-|events|[事件](event.md) 集合|组的日历事件。|
+|驱动器|[驱动器](drive.md) 集合|组的驱动器。 只读。|
+|事件|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](groupLifecyclePolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 Null。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|

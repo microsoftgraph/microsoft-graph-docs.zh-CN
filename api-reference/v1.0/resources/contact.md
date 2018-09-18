@@ -4,7 +4,8 @@
 
 该资源支持：
 
-- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
+- 在[扩展](../../../concepts/extensibility_overview.md)中添加您自己的数据作为自定义属性。
+- 订阅 [更改通知](../../../concepts/webhooks.md)。
 - 通过提供 [delta](../api/contact_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 
@@ -31,45 +32,45 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assistantName|String|联系人助理的姓名。|
+|assistantName|字符串|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|联系人的公司地址。|
-|businessHomePage|String|联系人的公司主页。|
-|businessPhones|String collection|联系人的公司电话号码。|
-|categories|String collection|与联系人关联的类别。|
-|changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
-|children|String collection|联系人子女的姓名。|
-|companyName|String|联系人所在公司的名称。|
+|businessHomePage|字符串|联系人的公司主页。|
+|businessPhones|字符串集合|联系人的公司电话号码。|
+|categories|字符串集合|与联系人关联的类别。|
+|changeKey|字符串|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|children|字符串集合|联系人子女的姓名。|
+|companyName|字符串|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
-|部门|String|联系人所在的部门。|
+|department|字符串|联系人所在的部门。|
 |displayName|字符串|联系人的显示名称。|
 |emailAddresses|[EmailAddress](emailaddress.md) 集合|联系人的电子邮件地址。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标记值。|
-|fileAs|String|联系人备案的姓名。|
-|generation|String|联系人所属的代。|
-|givenName|String|联系人的名。|
+|fileAs|字符串|联系人备案的姓名。|
+|generation|字符串|联系人所属的代。|
+|givenName|字符串|联系人的名。|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|联系人的住宅地址。|
-|homePhones|String collection|联系人的住宅电话号码。|
-|id|String|联系人的唯一标识符。只读。|
-|imAddresses|String collection|联系人的即时消息 (IM) 地址。|
-|initials|String|联系人的姓名缩写。|
-|jobTitle|String|联系人的职务。|
+|homePhones|字符串集合|联系人的住宅电话号码。|
+|id|字符串|联系人的唯一标识符。只读。|
+|imAddresses|字符串集合|联系人的即时消息 (IM) 地址。|
+|initials|字符串|联系人的姓名缩写。|
+|jobTitle|字符串|联系人的职务。|
 |lastModifiedDateTime|DateTimeOffset|修改联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式： `'2014-01-01T00:00:00Z'`|
-|manager|String|联系人经理的姓名。
-|middleName|String|联系人的中间名。|
-|mobilePhone|String|联系人的移动电话号码。|
-|nickName|String|联系人的昵称。|
-|officeLocation|String|联系人的办公室位置。|
+|manager|字符串|联系人经理的姓名。
+|middleName|字符串|联系人的中间名。|
+|mobilePhone|字符串|联系人的移动电话号码。|
+|nickName|字符串|联系人的昵称。|
+|officeLocation|字符串|联系人的办公室位置。|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|联系人的其他地址。|
-|parentFolderId|String|联系人的父文件夹 ID。|
-|personalNotes|String|有关联系人的用户备注。|
-|profession|String|联系人的职业。|
-|spouseName|String|联系人配偶/伴侣的姓名。|
-|surname|String|联系人的姓氏。|
-|title|String|联系人的职位。|
-|yomiCompanyName|String|联系人的注音日文公司名称。|
-|yomiGivenName|String|联系人的注音日文名字。|
-|yomiSurname|String|联系人的注音日文姓氏。|
+|parentFolderId|字符串|联系人的父文件夹 ID。|
+|personalNotes|字符串|有关联系人的用户备注。|
+|profession|字符串|联系人的职业。|
+|spouseName|字符串|联系人配偶/伴侣的姓名。|
+|surname|字符串|联系人的姓氏。|
+|title|字符串|联系人的职位。|
+|yomiCompanyName|字符串|联系人的注音日文公司名称。|
+|yomiGivenName|字符串|联系人的注音日文名字。|
+|yomiSurname|字符串|联系人的注音日文姓氏。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
