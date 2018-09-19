@@ -6,7 +6,7 @@
 
 - 将自己的数据作为[扩展](../../../concepts/extensibility_overview.md)添加到自定义属性。
 - 订阅[更改通知](../../../concepts/webhooks.md)。
-- 通过提供 [delta](../api/user_delta.md) 函数使用 [delta 查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/user_delta.md) 函数使用[delta 查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -59,16 +59,17 @@
 |:---------------|:--------|:----------|
 |aboutMe|字符串|任意形式的文本输入字段，用于介绍用户自身。|
 |accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
-|ageGroup|String|设置用户的年龄组。 允许值： `null`， `minor`， `notAdult` 和 `adult`。 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) 以获取详细信息。 |
+|ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`， `notAdult` 和 `adult`。 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) 以获取详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |
 |生日|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
 |businessPhones|字符串集合|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |城市|字符串|用户所在的城市。支持 $filter。|
-|companyName| 字符串 | 与用户关联的公司名称。 只读。
-|consentProvidedForMinor|String|设置是否已为未成年人获得许可。 允许值： `null`， `granted`， `denied` 和 `notRequired`。 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) 以获取详细信息。|
+|companyName | 字符串 | 与用户关联的公司名称。 只读。 |
+|consentProvidedForMinor|字符串|设置是否已为未成年人获得许可。 允许值： `null`， `granted`， `denied` 和 `notRequired`。 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) 以获取详细信息。|
 |country|字符串|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
-|部门|字符串|用户工作部门的名称。支持 $filter。|
+|createdDateTime | DateTimeOffset |用户对象的创建日期。 |
+|department|字符串|用户工作部门的名称。支持 $filter。|
 |displayName|字符串|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |givenName|字符串|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'`|
@@ -76,8 +77,8 @@
 |imAddresses|字符串集合|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |兴趣|字符串集合|用户介绍自身兴趣的列表。|
 |jobTitle|字符串|用户的职务。支持 $filter。|
-|legalAgeGroupClassification|String| 企业应用程序用于确定用户的法律年龄组。 此属性为只读，基于 `ageGroup` 和 `consentProvidedForMinor` 属性计算。 允许值： `null`， `minorWithOutParentalConsent`， `minorWithParentalConsent` 和 `minorNoParentalConsentRequired`。`notAdult``adult` 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) i获取详细信息。|
-|mail|字符串|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|legalAgeGroupClassification|字符串| 企业应用程序用于确定用户的法律年龄组。 此属性为只读，基于 `ageGroup` 和 `consentProvidedForMinor` 属性计算。 允许值： `null`， `minorWithOutParentalConsent`， `minorWithParentalConsent` 和 `minorNoParentalConsentRequired`。`notAdult``adult` 请参阅 [法律年龄分组属性定义](#legal-age-group-property-definitions) i获取详细信息。|
+|邮件|字符串|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user_get_mailboxsettings.md)或[更新](../api/user_update_mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。|
 |mailNickname|字符串|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
 |mobilePhone|字符串|用户的主要移动电话号码。|
@@ -88,10 +89,10 @@
 |onPremisesImmutableId|字符串|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。**重要说明：** 指定该属性时不能使用 **$** 和 **_** 字符。支持 $filter。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 设置过程中使用 Microsoft 同步产品时出错。 |
-|onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。 此属性仅针对正在通过 Azure AD Connect 同步本地目录到 Azure Active Directory 的客户填充。 只读。 |
+|onPremisesSamAccountName|字符串| 包含从本地目录同步的本地 `samAccountName`。 此属性仅针对正在通过 Azure AD Connect 同步本地目录到 Azure Active Directory 的客户填充。 只读。 |
 |onPremisesSecurityIdentifier|字符串|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
 |onPremisesSyncEnabled|布尔值| 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读 |
-|onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 此属性仅针对正在通过 Azure AD Connect 同步本地目录到 Azure Active Directory 的客户填充。 只读。 |
+|onPremisesUserPrincipalName|字符串| 包含从本地目录同步的本地 `userPrincipalName`。 此属性仅针对正在通过 Azure AD Connect 同步本地目录到 Azure Active Directory 的客户填充。 只读。 |
 |passwordPolicies|字符串|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|字符串集合|供用户枚举其过去项目的列表。|
@@ -156,7 +157,7 @@
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome_activity.md) 集合|跨设备的用户的活动。 只读。 可为 Null。|
-|calendar|[日历](calendar.md)|用户的主日历。只读。|
+|日历|[日历](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。可为 Null。|
 |日历|[日历](calendar.md) 集合|用户的日历。只读。可为 Null。|
@@ -165,7 +166,7 @@
 |createdObjects|[directoryObject](directoryobject.md) 集合|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) 集合|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |驱动器|[驱动器](drive.md)|用户的 OneDrive。只读。|
-|drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
+|drives|[驱动器](drive.md)集合| 该用户的可用驱动器集合。只读。 |
 |事件|[事件](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |扩展|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
@@ -436,6 +437,10 @@
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
+  "suppressions" : [
+     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
+      Property 'createdDateTime' found in markdown table but not in resource definition."
+  ],
   "section": "documentation",
   "tocPath": ""
 }-->
