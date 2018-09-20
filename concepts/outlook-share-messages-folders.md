@@ -1,14 +1,14 @@
-# <a name="share-outlook-message-folders-between-users"></a>在用户之间共享 Outlook 邮件文件夹
+# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取一个共享或委派文件夹中的 Outlook 邮件
 
 <!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
 These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
 -->
 
-Outlook 允许客户相互共享文件夹，并提供对个人文件夹或整个邮箱的“读取”、“创建”或“修改”访问权限。 这在 Outlook 中也称为“委派”。
+Outlook 允许客户相互共享邮件文件夹，并提供对个人文件夹的“读取”、“创建”、“修改”或“删除”等访问权限。 Outlook 还允许客户委派另一个用户代表客户操作并访问特定的邮件文件夹或客户的整个邮箱；这在 Outlook 中也称为“委派”。
 
-Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中获取邮件，以及获取共享文件夹本身。
+Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中获取邮件，以及获取共享文件夹本身。 该支持还适用于已委派的文件夹。
 
-举个例子，Garth 已经与 John 共享他的收件箱访问权限。 如果 John 已登录你的应用并提供了委派权限（Mail.Read.Shared 或 Mail.ReadWrite.Shared），则该应用将能够访问 Garth 的邮件和 Garth 的收件箱，如下所述。
+举个例子，Garth 已经与 John 共享并授予他 Garth 收件箱的读取访问权限。 如果 John 已登录你的应用并提供了委派权限 (Mail.Read.Shared or Mail.ReadWrite.Shared)，则你的应用将能够访问 Garth 的邮件和 Garth 的收件箱，如下所述。
 
 ## <a name="get-a-message-in-the-shared-folder"></a>获取共享文件夹中的邮件
 
@@ -45,7 +45,7 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 
 如果 Garth 已经委派 John 进一步访问他的收件箱，或者如果 Garth 已将其整个邮箱委派给 John，那么可应用相同的 GET 功能。
 
-如果 Garth 未与 John 共享他的邮件文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 
+如果 Garth 未与 John 共享他的收件箱，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 
 
 
 ## <a name="next-steps"></a>后续步骤

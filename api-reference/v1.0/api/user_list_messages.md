@@ -1,38 +1,13 @@
-# <a name="list-messages"></a>List messages
+# <a name="list-messages"></a>列出 messages
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
 
 目前，此操作返回纯 HTML 格式的邮件正文。
 
+有两种应用程序可以在另一个用户的邮件文件夹中获取邮件的情景：
 
-### <a name="get-messages-in-another-users-message-folder"></a>获取其他用户的邮件文件夹中的邮件
-
-如果拥有应用程序权限，或从某用户获得相应委派[权限](#permissions)，可以获取其他用户的邮件文件夹中的邮件。 此部分重点介绍了涉及委派权限的方案。
-
-例如，应用程序已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了邮件文件夹。 可以在下面的示例查询中指定 Garth 的用户 ID（或用户主体名称），获取此共享文件夹中的邮件。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages
-```
-
-此功能适用于对各个用户执行的所有受支持 GET 邮件操作，如下面的 [HTTP 请求](#http-request)部分所列。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
-
-如果 Garth 未与 John 共享他的邮件文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取登录用户自己的邮件文件夹中的邮件，而此查询等效于使用 /me 快捷方式：
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages
-```
-
-此功能仅适用于针对以下资源的 GET 操作：
-
-- 共享联系人文件夹、日历和邮件文件夹 
-- 共享文件夹中的联系人、事件和邮件
-- 委派邮箱中的上述资源
-
-此功能不适用于针对联系人、事件、邮件及其文件夹的其他操作。
-
+* 如果应用拥有应用程序权限，或者，
+* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -62,12 +37,12 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | 持有者{令牌}。必需。 |
-| Prefer: outlook.body-content-type | string | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| Prefer: outlook.body-content-type | 字符串 | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
 
 
 ## <a name="request-body"></a>请求正文

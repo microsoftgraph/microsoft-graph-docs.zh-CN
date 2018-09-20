@@ -45,7 +45,7 @@ Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同
 Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 
 - 在 Outlook 日历应用设置中，客户可以启用在电子邮件中自动添加事件，如航班、酒店或就餐预订，以及开具发票等。 添加后，即可像用户邮箱中的任何其他[事件](../api-reference/v1.0/resources/event.md)那样与这些事件交互，并借此 Outlook 功能生成创造性应用场景。
-- ** 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](../api-reference/v1.0/resources/emailaddress.md) 对象。 可以 [获取租户中可用的会议室 （预览）](../api-reference/beta/api/user_findrooms.md) 并 [获取会议室列表 （预览）](../api-reference/beta/api/user_findroomlists.md)。 若要在特定房间内组织会议，请将其分配给**事件**的 **location** 属性。
+- ** 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](../api-reference/v1.0/resources/emailaddress.md) 对象。 可以 [获取租户中可用的会议室 （预览）](../api-reference/beta/api/user_findrooms.md)并 [获取会议室列表 （预览）](../api-reference/beta/api/user_findroomlists.md)。 若要在特定房间内组织会议，请将其分配给**事件**的 **location** 属性。
 - * * 可以 [查找特定时间段用户和资源 （预览） 的闲/忙信息](outlook-get-free-busy-schedule.md)。 然后，可以使用此数据应用到不同的不同方案，包括资源规划和事件安排。 
 - * * 如果方案涉及到在最佳时间安排会议，可以考虑 [使用 findMeetingTimes 以标识召开会议的可能时间或位置](findmeetingtimes_example.md)。 [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) 函数会考虑与会者的闲/忙状态，以及你所提供的任何首选房间、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。
 
@@ -71,7 +71,9 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0)中选择和试用日历示例查询。
 - 了解以下信息：
   - [在 Outlook 日历上找到可能的会议时间](findmeetingtimes_example.md)
+  - [获取用户和资源的闲 / 忙计划（预览）](outlook-get-free-busy-schedule.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
+  - [获取共享事件](outlook-get-shared-events-calendars.md)
 - 查看 Outlook [日历 API](../api-reference/v1.0/resources/calendar.md) 引用。
 
 <!-- Replace the last item with the calendar API overview when it's published.

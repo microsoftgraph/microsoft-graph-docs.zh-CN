@@ -1,8 +1,8 @@
-# <a name="get-freebusy-schedule-for-users-and-resources-preview"></a>获取用户和资源的闲 / 忙计划（预览）
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>获取用户和资源的闲 / 忙计划（预览）
 
 在工作或学校设置中，一个常见的应用方案是查看用户什么时候有时间参加会议，或者浏览某一团队、会议室或设备在一特定时段是否有时间以及是否可用。
 
- [GetSchedule](../api-reference/beta/api/calendar_getschedule.md) 操作可以获取某一特定时段内诸如用户、通讯组列表或资源等一个或多个实体的可用性信息。 
+[GetSchedule](../api-reference/beta/api/calendar_getschedule.md) 操作可以获取某一特定时段内诸如用户、通讯组列表或资源等一个或多个实体的可用性信息。 
 
 ## <a name="example"></a>示例
 
@@ -177,4 +177,4 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ## <a name="see-also"></a>另请参阅
 - [权限参考](permissions_reference.md#calendars-permissions)
-- [在 Outlook 日历上查找可能的会议时间](findmeetingtimes_example.md)
+- [在 Outlook 日历上找到可能的会议时间](findmeetingtimes_example.md)

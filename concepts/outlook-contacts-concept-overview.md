@@ -37,5 +37,6 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单可打开“个人联系人”****。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单可打开**个人联系人**。
+- 了解[获取共享的联系人](outlook-get-shared-contacts-folders.md)
 - 查看 Outlook [联系人 API](../api-reference/v1.0/resources/contact.md) 引用。

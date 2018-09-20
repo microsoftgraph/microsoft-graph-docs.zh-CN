@@ -4,36 +4,12 @@
 
 目前，此操作返回纯 HTML 格式的事件正文。
 
-由于 **event** 资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
+有两种应用程序可以在另一个用户的日历中获取事件的情景：
 
+* 如果应用拥有应用程序权限，或者，
+* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-events-calendars.md)。
 
-### <a name="get-events-in-another-users-calendar"></a>获取其他用户的日历中的事件
-
-如果你具有应用程序权限，或者具有某个用户的相应的委派[权限](#permissions)，则可以获取其他用户的日历中的事件。 本部分重点介绍涉及委派权限的应用场景。
-
-例如，你的应用已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了一个日历。 可以通过在下面所示的查询示例中指定 Garth 的用户 ID（或者用户主体名称）来获取该共享日历中的事件。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
-```
-
-此功能适用于对单个用户执行的所有支持的 GET 事件操作，如下面的 [HTTP 请求](#http-request)部分所示。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
-
-如果 Garth 未与 John 共享他的日历，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取已登录用户自己的日历中的某个事件，而此查询等效于使用 /me 快捷方式：
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-```
-
-此功能仅适用于以下资源的 GET 操作：
-
-- 共享联系人文件夹、日历和邮件文件夹 
-- 共享文件夹中的联系人、事件和邮件
-- 委派邮箱中的上述资源
-
-此功能不适用于针对联系人、事件、邮件及其文件夹的其他操作。
+由于**事件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -84,7 +60,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| 授权  | 字符串 | Bearer {token}。必需。  |
+| 授权  | string | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 

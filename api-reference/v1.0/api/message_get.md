@@ -2,38 +2,14 @@
 
 检索[邮件](../resources/message.md)对象的属性和关系。
 
-由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
-
 目前，此操作返回纯 HTML 格式的邮件正文。
 
+有两种应用可以在另一个用户的邮件文件夹中获取邮件的情景：
 
-### <a name="get-messages-in-another-users-message-folder"></a>获取其他用户的邮件文件夹中的邮件
+* 如果应用拥有应用程序权限，或者，
+* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
 
-如果拥有应用程序权限，或从某用户获得相应委派[权限](#permissions)，可以获取其他用户的邮件文件夹中的邮件。 此部分重点介绍了涉及委派权限的方案。
-
-例如，应用程序已从用户 John 获得委派权限。 假设另一位用户 Garth 与 John 共享了邮件文件夹。 可以在下面的示例查询中指定 Garth 的用户 ID（或用户主体名称），获取此共享文件夹中的邮件。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
-```
-
-此功能适用于对各个用户执行的所有受支持 GET 邮件操作，如下面的 [HTTP 请求](#http-request)部分所列。 如果 Garth 将他的整个邮箱委派给 John，此功能同样适用。
-
-如果 Garth 未与 John 共享他的邮件文件夹，也未将他的邮箱委派给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 在这种情况下，指定用户 ID 或用户主体名称只适用于获取登录用户自己的邮件文件夹中的邮件，而此查询等效于使用 /me 快捷方式：
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-```
-
-此功能仅适用于针对以下资源的 GET 操作：
-
-- 共享联系人文件夹、日历和邮件文件夹 
-- 共享文件夹中的联系人、事件和邮件
-- 委派邮箱中的上述资源
-
-此功能不适用于针对联系人、事件、邮件及其文件夹的其他操作。
+由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
 
 ## <a name="permissions"></a>权限
@@ -164,7 +140,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 注意：为简便起见，响应对象中的邮件标头集有所删减。 实际调用将返回所有属性。
+下面是一个响应示例。 注意：为简便起见，响应对象中的邮件标头集有所删减。 实际调用将返回所有标头。
 <!-- {
   "blockType": "response",
   "truncated": true,
