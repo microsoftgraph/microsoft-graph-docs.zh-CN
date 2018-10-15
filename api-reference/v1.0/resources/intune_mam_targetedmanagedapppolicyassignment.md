@@ -14,7 +14,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Id|
+|ID|字符串|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|组或应用的部署标识符|
 
 ## <a name="relationships"></a>关系
@@ -23,8 +23,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.targetedManagedAppPolicyAssignment"
 }-->
 ``` json
@@ -36,3 +36,11 @@
   }
 }
 ```
+
+
+
+
+
+
+
+

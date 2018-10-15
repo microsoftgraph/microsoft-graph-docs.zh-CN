@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268464"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -39,12 +40,12 @@ ms.lasthandoff: 09/28/2017
 
 | 属性      | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | 包含项的驱动器实例的唯一标识符。只读。
-| driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
-| id            | String            | 项在驱动器中的唯一标识符。只读。
+| driveId       | 字符串            | 包含项的驱动器实例的唯一标识符。只读。
+| driveType     | 字符串            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
+| id            | 字符串            | 项在驱动器中的唯一标识符。只读。
 | name          | 字符串            | 所引用的项的名称。只读。
-| 路径          | String            | 可用于导航到该项的路径。只读。
-| shareId       | String            | 可通过 [Shares][] API 访问共享资源的唯一标识符。
+| 路径          | 字符串            | 可用于导航到该项的路径。只读。
+| shareId       | 字符串            | 可通过 [Shares][] API 访问共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 
 [drive]: ../resources/drive.md
@@ -69,5 +70,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

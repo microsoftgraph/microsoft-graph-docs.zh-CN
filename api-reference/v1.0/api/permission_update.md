@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "更改共享权限"
-ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 更改共享权限
+ms.openlocfilehash: 051520ed62fdfe6499a8cca2387e65f14714205f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267281"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -41,7 +42,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 名称          | 类型   | 说明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。 |
+| if-match      | 字符串 | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -50,9 +51,9 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
 为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   | 说明                   |
-|:-------------|:-------|:------------------------------|
-| **角色**    | String | 权限类型的数组。 |
+| 属性 | 类型              | 说明                   |
+|:---------|:------------------|:------------------------------|
+| 角色    | 字符串集合 | 权限类型的数组。 |
 
 ## <a name="response"></a>响应
 
@@ -62,7 +63,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 下面是请求将共享权限上的角色更改为只读的示例。
 
-<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+<!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}/permissions/{perm-id}

@@ -34,10 +34,10 @@ POST /deviceManagement/deviceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|ID|字符串|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|合作伙伴应用程序类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。可能的值为： `unknown` 、 `unavailable` 、 `enabled` 、 `terminated` 、 `rejected` 、 `unresponsive` 。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|合作伙伴应用类型。可能的值为： `unknown` 、 `singleTenantApp` 、 `multiTenantApp` 。|
 |singleTenantAppId|字符串|合作伙伴单个租户应用 ID|
 |displayName|字符串|合作伙伴显示名称|
 |isConfigured|布尔|是否配置了设备管理合作伙伴|
@@ -90,6 +90,11 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
+
+
+
+
 
 
 

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
-ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: abcf686be46e15a523a1a88170981cb318e71b00
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268198"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -21,6 +22,7 @@ ms.lasthandoff: 09/28/2017
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -31,7 +33,7 @@ ms.lasthandoff: 09/28/2017
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
@@ -44,8 +46,8 @@ ms.lasthandoff: 09/28/2017
 
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | 要访问的内容的唯一标识符。              |
-| 名称     | String                        | 共享项的显示名称。                             |
+| id       | 字符串                        | 要访问的内容的唯一标识符。              |
+| name     | 字符串                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -57,13 +59,12 @@ ms.lasthandoff: 09/28/2017
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
 | **site**          | [**site**][site]        | 用于访问基础 **site**
 
-
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
-| **driveItem**     | [**driveItem**][driveItem]            | 用于访问基础 **driveItem**
+| **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 弃用——以 `driveItem` 取代。
 
 [driveItem]: driveItem.md
 [list]: list.md

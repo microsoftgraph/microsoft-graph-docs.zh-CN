@@ -19,7 +19,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -27,14 +27,14 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|表的名称。|
-|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
+|名称|字符串|表的名称。|
+|showHeaders|布尔值|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showTotals|布尔值|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|样式|字符串|代表表格样式的常数值。 可能的值为：TableStyleLight1 到 TableStyleLight21，TableStyleMedium1 到 TableStyleMedium28，TableStyleStyleDark1 到 TableStyleStyleDark11。 也可指定工作簿中存在的自定义的用户定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Table](../resources/table.md) 对象。
+如果成功，此方法在响应正文中返回`200 OK`响应代码和更新的 [WorkbookTable](../resources/table.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -59,7 +59,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

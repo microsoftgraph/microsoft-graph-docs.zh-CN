@@ -23,15 +23,15 @@
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | application/json  |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型  | string | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -39,8 +39,8 @@ POST /directoryObjects/getById
 
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
-|ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
-|types|String collection| 指定要搜索的资源集合集的资源类型集合。如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其包含目录中定义的所有资源类型。可以在该集合中指定派生自 `directoryObject` 的所有对象，例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)等。这些值不区分大小写。|
+|ids|字符串集合| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
+|types|字符串集合| 指定要搜索的资源集合的资源类型集合。 如果未指定，则默认为 [directoryObject](../resources/directoryobject.md)，其中包含目录中定义的所有资源类型。 任何从 `directoryObject` 派生的对象可能在集合中指定；例如：[user](../resources/user.md)、[group](../resources/group.md)、[device](../resources/device.md) 等等。 这些值不需要区分大小写。|
 
 ## <a name="response"></a>响应
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```

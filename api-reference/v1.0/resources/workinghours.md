@@ -12,11 +12,10 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| daysOfWeek | String 集合 | 用户一周工作的天数。 |
+| daysOfWeek | dayOfWeek 集合 | 用户在星期几工作。 |
 | startTime | Edm.TimeOfDay | 一天中用户开始工作的时间。 |
 | endTime | Edm.TimeOfDay | 一天中用户停止工作的时间。 |
 | timeZone | [timeZoneBase](timezonebase.md) | 工作时间应用的时区。 |
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,5 +46,9 @@
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

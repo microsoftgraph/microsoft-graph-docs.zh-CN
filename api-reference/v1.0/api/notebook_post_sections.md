@@ -1,6 +1,6 @@
-# <a name="create-section"></a>创建分区
+# <a name="create-section"></a>Create section
 
-在指定的笔记本中新建[分区](../resources/section.md)。
+在指定的笔记本中新建 [onenoteSection](../resources/section.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string | `application/json` |
+| 授权  | 字符串  | Bearer {token}。必需。 |
+| 内容类型 | 字符串 | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供分区名称。
@@ -31,7 +31,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [section](../resources/section.md) 对象。
+如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onenoteSection](../resources/section.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

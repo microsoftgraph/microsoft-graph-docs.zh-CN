@@ -17,12 +17,12 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
+此方法支持使用 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
 ## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -30,7 +30,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableColumn](../resources/tablecolumn.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [WorkbookTableColumn](../resources/tablecolumn.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -46,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn",
+  "@odata.type": "microsoft.graph.workbookTableColumn",
   "isCollection": true
 } -->
 ```http
@@ -66,8 +66,7 @@ Content-length: 126
 }
 ```
 
-> 
-  **注意：**使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数可逐个浏览许多列。
+> **注意：** 使用 [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) 查询参数可逐个浏览许多列。
 
 示例： 
 

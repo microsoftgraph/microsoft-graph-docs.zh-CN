@@ -11,7 +11,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -22,9 +22,9 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityDomain|String|（可选）活动性质。可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。|
+|activityDomain|activityDomain|活动的性质，可选。 可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

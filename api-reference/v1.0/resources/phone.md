@@ -7,7 +7,7 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |number|string|电话号码。|
-|type|String|电话号码的类型。可能的值是：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
+|type|phoneType|电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -15,8 +15,8 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装用途。可能的值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|ID|字符串|实体的键。|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
@@ -26,8 +26,8 @@
 下面是资源的 JSON 表示形式。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

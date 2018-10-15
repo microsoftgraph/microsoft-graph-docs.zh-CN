@@ -7,10 +7,15 @@
 |成员|值|说明|
 |:---|:---|:---|
 |userDefined|0|用户定义的默认值，无特定意图。|
-|disable|1|禁用监控文件活动。|
+|禁用|1|禁用监控文件活动。|
 |monitorAllFiles|2|监视所有文件。|
-|monitorIncomingFilesOnly|3|  仅监视传入的文件。|
-|monitorOutgoingFilesOnly|4| 仅监视传出的文件。|
+|monitorIncomingFilesOnly|3| 仅监视传入的文件。|
+|monitorOutgoingFilesOnly|4|仅监视传出的文件。|
+
+
+
+
+
 
 
 

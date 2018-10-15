@@ -20,7 +20,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -28,9 +28,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|fields|SortField|作为排序依据的条件列表。|
-|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
-|method|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
+|fields|WorkbookSortField 集合|要排序的条件列表。|
+|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
+|方法|string|可选。 中文字符使用的排序方法。  可取值为：`PinYin`、`StrokeCount`。|
 
 ## <a name="response"></a>响应
 
@@ -72,8 +72,7 @@ Content-length: 298
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
