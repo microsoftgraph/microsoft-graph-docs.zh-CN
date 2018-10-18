@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-an-objectve-c-ios-app"></a>在 Objective-C iOS 应用中开始使用 Microsoft Graph
 
-> **为企业客户生成应用？**如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
+> **为企业客户生成应用？** 如果企业客户启用企业移动性安全功能，如<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件性设备访问</a>，应用可能无法运行。在这种情况下，你可能不知道，而且客户可能会遇到错误。 
 
 > 若要跨**所有企业方案**支持**全部企业客户**，必须使用 Azure AD 终结点，并使用 [Azure 门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅[在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
@@ -17,7 +17,7 @@
 
 将工作流连接到 Microsoft Graph 并进行身份验证，通过工作或个人帐户登录，最后向收件人发送邮件。
 
-**不想生成一个应用吗？**使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行。
+**不想生成一个应用吗？** 使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -26,13 +26,13 @@
 * Apple 的 [Xcode](https://developer.apple.com/xcode/downloads/)
 * 安装 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 作为依存关系管理器。
 * 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
-* [适用于 iOS 的 Microsoft Graph 初学者项目](https://github.com/microsoftgraph/ios-objectivec-connect-sample) 本模板包含可向其添加代码的类。 若要获取此项目，请在此位置克隆或下载示例项目，然后可以使用 **starter-project** 文件夹中的工作区 (**ios-objectivec-connect-sample.xcworkspace**)。
+* 适用于 iOS 的 Microsoft Graph 初学者项目[](https://github.com/microsoftgraph/ios-objectivec-connect-sample) 本模板包含可向其添加代码的类。 若要获取此项目，请在此位置克隆或下载示例项目，然后可以使用 **starter-project** 文件夹中的工作区 (**ios-objectivec-connect-sample.xcworkspace**)。
 
 ## <a name="register-the-app"></a>注册应用
  
-1. 使用个人或工作或学校帐户登录到 [应用注册门户](https://apps.dev.microsoft.com/)。
-2. 选择“**添加应用**”。
-3. 为应用输入名称，并选择“**创建应用程序**”。
+1. 使用个人或工作或学校帐户登录到[应用注册门户](https://apps.dev.microsoft.com/)。
+2. 选择“添加应用”****。
+3. 为应用输入名称，并选择“创建应用程序”****。
     
     将显示注册页，其中列出应用的属性。
  
@@ -134,7 +134,7 @@
 
 将项目配置为可以进行身份验证后，下一项任务则是使用 Microsoft Graph API 向用户发送邮件。默认情况下，将已登录用户视作收件人，但是可以将其更改为其他任何收件人。我们在此处要使用的代码位于“**控制器**”文件夹和 **SendMailViewController.m** 类中。将看到在此处展示了用于 UI 的其他代码，还有一个用来从 Microsoft Graph 服务检索用户个人资料信息的 Helper 方法。我们将着重介绍创建邮件并发送邮件的方法。
 
-1. 打开“控制器”文件夹中的 **SendMailViewController.m**，并在 `self.graphClient = [MSGraphClient client]` 后将以下代码添加到 **viewDidLoad** 方法。
+1. 打开“控制器”文件夹中的 **SendMailViewController.m**，并在 `self.graphClient = [MSGraphClient client]` 后将以下代码添加到 **viewDidLoad** 方法。 `self.graphClient = [MSGraphClient client]`
    ```objectivec
        [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
         if (!error) {

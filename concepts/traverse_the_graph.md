@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [user](..\api-reference\v1.0\resources\user.md) 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [user](../api-reference/v1.0/resources/user.md) 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -77,14 +77,14 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph 还允许用户通过浏览不同资源之间的关系来查看集合。例如，通过用户的 **mailFolders** 导航属性，可以查询用户邮箱中的 [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) 资源的集合：
+Microsoft Graph 还允许用户通过浏览不同资源之间的关系来查看集合。例如，通过用户的 **mailFolders** 导航属性，可以查询用户邮箱中的 [mailFolder](../api-reference/v1.0/resources/mailfolder.md) 资源的集合：
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [mailFolder](..\api-reference\v1.0\resources\user.md) 资源的集合。每个 **mailFolder** 都由 **id** 属性标识，并附带其属性。为简单起见，下面所示的有效负载将被截断。
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [mailFolder](../api-reference/v1.0/resources/user.md) 资源的集合。每个 **mailFolder** 都由 **id** 属性标识，并附带其属性。为简单起见，下面所示的有效负载将被截断。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -310,7 +310,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }

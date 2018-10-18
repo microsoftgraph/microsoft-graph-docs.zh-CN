@@ -11,8 +11,7 @@
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
+<!-- { "blockType": "ignored" } --> 属于组 [对话](../resources/conversation.md)的[线程](../resources/conversationthread.md)中[帖子](../resources/post.md)的附件。
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -22,7 +21,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| 授权  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -45,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachm
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -56,11 +55,11 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "id": "id-value",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "isInline": false,

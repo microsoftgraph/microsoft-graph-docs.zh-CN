@@ -4,7 +4,7 @@
 
 > 若要跨**所有企业方案**支持**全部企业客户**，必须使用 Azure AD 终结点，并使用 [Azure 门户](https://aka.ms/aadapplist)管理应用。有关详细信息，请参阅[在 Azure AD 和 Azure AD v2.0 终结点之间进行选择](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)。
 
-本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/zh-CN/graph/docs/concepts/converged_auth)获取访问令牌和调用 Microsoft Graph 所需的任务。本文通过演示[适用于 iOS 的 Office 365 Connect 示例 (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) 中的代码，以说明你在使用 Microsoft Graph 的应用中实现的主要概念。本文介绍了如何通过使用异步 **Promise chain** 模式来访问 Microsoft Graph。示例中的 Promises 是通过使用 [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod 来实现的。 
+本文介绍了从 [Azure AD v2.0 终结点](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)获取访问令牌和调用 Microsoft Graph 所需的任务。本文通过演示[适用于 iOS 的 Office 365 Connect 示例 (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) 中的代码，以说明你在使用 Microsoft Graph 的应用中实现的主要概念。本文介绍了如何通过使用异步 **Promise chain** 模式来访问 Microsoft Graph。示例中的 Promises 是通过使用 [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPod 来实现的。 
 
 示例是使用 **XCode 9.2** 和 **Swift 3.2** 创建的。
 
@@ -19,7 +19,7 @@
 
 工作流对访问 Microsoft Graph 资源的示例进行身份验证和授权，使用工作或个人帐户登录，最后向收件人发送邮件。
 
-**** 不想生成一个应用？那就使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/zh-CN/graph/quick-start)快速准备就绪并开始运行吧。
+**不想生成一个应用？那就使用 [Microsoft Graph 快速入门](https://developer.microsoft.com/en-us/graph/quick-start)快速准备就绪并开始运行吧。**
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -29,7 +29,7 @@
 * 安装 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 作为依赖关系管理器。
 * 安装 [Carthage](https://github.com/Carthage/Carthage) 以导入和生成 **MSAL** 库。
 * 安装 [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) Cocoapod。 
-* 一个 [Microsoft 帐户](https://www.outlook.com/)或者一个[工作或学校帐户](https://docs.microsoft.com/zh-CN/office/developer-program/office-365-developer-program-faq#account-types)
+* 一个 [Microsoft 帐户](https://www.outlook.com/)或者一个[工作或学校帐户](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 
 ## <a name="register-the-app"></a>注册应用
  
@@ -45,7 +45,7 @@
 
     应用 ID 是应用的唯一标识符。 
 
-7. 选择“保存”****。
+7. 选择“**保存**”。
 
 ## <a name="importing-the-project-dependencies"></a>导入项目依赖项
 
@@ -183,7 +183,7 @@ private extension ConnectViewController {
 
 邮件正文包含图片共享链接，图片本身作为附加的图像文件。 默认收件人是经过身份验证的用户，但该示例允许用户提供任何其他用户的电子邮件地址。 
 
-我们将在此处使用的代码位于 **SendMailViewController_WithPromise.swift** 类中。 `viewDidLoad()` 函数读取 `self.emailTextField.text` 值，以获取邮件收件人的电子邮件地址，然后启动 **promise chain**，以获取经过身份验证的用户个人资料照片。 如果 promise 被拒绝，则不会启用 `sendMailButton`。
+我们将在此处使用的代码位于 **SendMailViewController_WithPromise.swift** 类中。 函数读取 `self.emailTextField.text` 值，以获取邮件收件人的电子邮件地址，然后启动 **promise chain**，以获取经过身份验证的用户个人资料照片。`viewDidLoad()` 如果 promise 被拒绝，则不会启用 `sendMailButton`。
 
 1. 打开 **SendMailViewController_WithPromise.swift**， 然后查找 `viewDidLoad` 函数。 将调用 `self.userPictureWork` 函数，以启动 promise chain。
 
@@ -483,5 +483,5 @@ private extension ConnectViewController {
 - 可在 [Microsoft Graph iOS Objective C 代码段示例](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample)中找到 SDK 操作的常见操作示例。
 
 ## <a name="see-also"></a>另请参阅
-- [Azure AD v2.0 协议](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 令牌](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 协议](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 令牌](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

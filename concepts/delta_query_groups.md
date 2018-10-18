@@ -220,7 +220,7 @@ Content-type: application/json
 - 这些对象连同一组相同的属性一起返回，这些属性最初通过 `$select` 和 `$expand` 查询参数指定。
 - 同时包括更改和未更改的属性。 在上述示例中，`description` 属性具有新值，而 `displayName` 属性未发生更改。
 - `members@delta` 包含对成员身份的任何更改。
-  - 列表中的第一个用户已经从组中删除 - 要么删除成员身份，要么删除用户对象本身。 `@removed` 属性对此进行了说明。
+  - 列表中的第一个用户已经从组中删除 - 要么删除成员身份，要么删除用户对象本身。 属性对此进行了说明。`@removed`
   - 第二个用户已添加到组。
 
 ## <a name="paging-through-members-in-a-large-group"></a>逐页查看大型组中的成员

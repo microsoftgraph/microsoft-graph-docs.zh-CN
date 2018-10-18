@@ -21,7 +21,7 @@ Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储�
 >**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿（扩展名为 `.xlsx` 的文件）。 不支持扩展名为 `.xls` 的工作簿。 
 
 ### <a name="using-the-excel-rest-api"></a>使用 Excel REST API
-你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 你可以通过标识文件在该 URL 中的位置，借助 Drive API 访问工作簿。 例如：
+可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 驱动器 API 访问工作簿。例如：
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 

@@ -22,7 +22,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| 授权  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 表示响应的具体时区的字符串，例如，“Pacific Standard Time”。可选。如果未指定此标头则使用 UTC。|
 
 ## <a name="request-body"></a>请求正文
@@ -40,11 +40,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |returnSuggestionReasons|Edm.Boolean|指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。|
 
-下表介绍了可以在 **timeConstraint** 参数中进一步指定的限制。
+下表介绍了可以在 **timeConstraint** 参数中进一步指定的**activityDomain**限制。
 
-|**timeConstraint 中的 activityDomain 值**|**会议时间建议**|
+|activityDomain 值|会议时间建议|
 |:-----|:-----|
-|工时| 建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。 |
+|work| 建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。 |
 |personal| 建议处于用户的工作时间内及星期六和星期日。默认是星期一到星期日的上午八点到下午五点（使用邮箱的时区设置）。|
 |unrestricted | 建议可以是全年任意一天的任意时间段。|
 |unknown | 请勿使用此值，因为以后会弃用此值。当前其行为与 `work` 相同。根据需要将任何现有代码更改为使用 `work`、`personal`、或 `unrestricted`。
@@ -145,8 +145,8 @@ Content-Type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100.0
 }
 ```
 
@@ -241,5 +241,9 @@ Content-Length: 976
   "description": "user: findMeetingTimes",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/user_findmeetingtimes.md:
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+  ],
   "tocPath": ""
 }-->

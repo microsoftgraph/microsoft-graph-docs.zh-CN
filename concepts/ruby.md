@@ -8,7 +8,7 @@
 
 ![Microsoft Ruby on Rails Connect 示例屏幕截图](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**不想生成一个应用吗？** 使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/zh-CN/getting-started) 快速准备就绪并开始运行，或者下载本文基于的 [Ruby REST Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。
+**不想生成一个应用吗？** 使用 [Microsoft Graph 快速入门](https://graph.microsoft.io/en-us/getting-started) 快速准备就绪并开始运行，或者下载本文基于的 [Ruby REST Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。
 
 
 ## <a name="prerequisites"></a>先决条件
@@ -19,8 +19,8 @@
 - Rails 框架（该示例已经过 Rails 4.2 测试）。
 - 捆绑程序依存关系管理器
 - 用于 Ruby 的 Rack Web 服务器界面。
-- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/zh-CN/office/developer-program/office-365-developer-program-faq#account-types)
-- 适用于 Ruby on Rails 的 Microsoft Graph Connect 初学者项目。下载 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。初学者项目位于“初学者”文件夹中。
+- 一个 [Microsoft 帐户](https://www.outlook.com/) 或者一个[工作或学校帐户](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+- 适用于 Ruby on Rails 的 Microsoft Graph Connect 初学者项目。下载 [Microsoft Graph Ruby on Rails Connect 示例](https://github.com/microsoftgraph/ruby-connect-rest-sample)。初学者项目位于“初学者”文件夹中。__
 
 
 ## <a name="register-the-application"></a>注册应用程序
@@ -79,7 +79,7 @@
 2. 获取授权代码
 3. 兑换访问令牌的授权代码
 
->有关该身份验证流的详细信息，请参阅 Azure AD 文档中的 [Web 应用程序到 Web API](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) 和 [使用 OpenID Connect 将 Microsoft 身份和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/zh-CN/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)。
+>有关该身份验证流的详细信息，请参阅 Azure AD 文档中的 [Web 应用程序到 Web API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) 和 [使用 OpenID Connect 将 Microsoft 身份和 Microsoft Graph 集成到 Web 应用程序中](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)。
 
 我们将使用具有三个 [Rack](http://rack.github.io/) 中间件的堆栈来使应用对 Microsoft Graph 进行身份验证。
 

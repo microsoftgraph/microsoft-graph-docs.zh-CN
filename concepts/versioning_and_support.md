@@ -14,7 +14,7 @@ Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.
 
 ### <a name="api-contract-and-non-backward-compatible-changes"></a>API 协定和非后向兼容更改
 
-Microsoft Graph 在版本中进行了许多更改。 这些更改已在 [Microsoft Graph 更改日志](changelog.md)中列出。 随着向 Microsoft Graph 中添加新功能和数据，我们将递增 API 版本号，以对 API 进行任意不向后兼容更改。 
+Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsoft Graph 更改日志](changelog.md)中列出。随着向 Microsoft Graph 中添加新功能和数据，我们将递增 API 版本号，以对 API 进行任意不向后兼容更改。 
 
 不向后兼容的更改的示例如下：
 
@@ -34,7 +34,7 @@ Microsoft Graph 在版本中进行了许多更改。 这些更改已在 [Microso
  - 更改属性的顺序
  - 更改不透明字符串（例如资源 ID）的长度或格式
 
->**请注意：** 随着时间的推移，我们将更新后向兼容更改的列表。 如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。 Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)中[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分描述的指导。 
+>**注意：** 随着时间的推移，我们将更新向后兼容更改的列表。如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)的[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分中描述的指导。 
 
 ## <a name="versions"></a>版本
 
@@ -43,12 +43,11 @@ Microsoft Graph 在版本中进行了许多更改。 这些更改已在 [Microso
 ### <a name="beta-version"></a>Beta 版
 Microsoft Graph API beta 版在 `https://graph.microsoft.com/beta` 中公开，包含当前_**处于预览状态**_ 的功能。 如需了解 beta API 文档，请参阅 [Microsoft Graph beta 终结点参考](../api-reference/beta/beta-overview.md)。 预计将不时地对 beta 版本进行重大更改。 请勿对 /beta API 产生生产依赖性。
 
-我们无法保证将测试功能升级至当前版本。 当 Microsoft Graph API 团队认为测试功能可正式发布 (GA) 时，我们将把该功能添加到最新的当前版本中。 如果功能升级将导致当前版本出现重大更改，则版本号将递增，而新版本将成为当前版本。
-我们的开发者社区可以在 [UserVoice](https://officespdev.uservoice.com/) 上发布功能请求，包括对新功能的请求以及将现有的测试 API 升级到当前版本的请求。 
+我们无法保证将测试功能升级至当前版本。当 Microsoft Graph API 团队认为测试功能可正式发布 (GA) 时，我们将把该功能添加到最新的当前版本中。如果功能升级将导致当前版本出现重大更改，则版本号将递增，而新版本将成为当前版本。我们的开发者社区可以在 [UserVoice](https://officespdev.uservoice.com/) 上发布功能请求，包括对新功能的请求以及将现有的测试 API 升级到当前版本的请求。 
 
 ### <a name="current-version"></a>当前版本
 
-Microsoft Graph 的当前版本为 v1.0。 Microsoft Graph API /v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。 你可以浏览目录中的 v1.0 API 文档。
+Microsoft Graph 的当前版本为 v1.0。Microsoft Graph API /v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。你可以浏览目录中的 v1.0 API 文档。
 
 ### <a name="deprecated-and-unsupported-versions"></a>已弃用和不支持的版本
 
@@ -58,4 +57,4 @@ Microsoft Graph 的当前版本为 v1.0。 Microsoft Graph API /v1.0 版本在 `
 
 使用 Microsoft Graph API 即表示你同意[使用条款](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use)。 
 
-我们非常重视你的反馈意见。 请在 [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) 上与我们联系。 使用 [MicrosoftGraph] 标记你的问题。
+我们非常重视你的反馈意见。请在 [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) 上与我们联系。使用 [MicrosoftGraph] 标记你的问题。
