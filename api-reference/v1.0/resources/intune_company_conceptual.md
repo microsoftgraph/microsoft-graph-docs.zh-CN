@@ -8,6 +8,6 @@
 
 以下 Graph 资源可用于管理 Intune 中的公司条款和条件：
 
+- [条款和条件](intune_companyterms_termsandconditions.md)
 - [条款和条件接受状态](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [条款和条件分配](intune_companyterms_termsandconditionsassignment.md)
-- [条款和条件](intune_companyterms_termsandconditions.md)
