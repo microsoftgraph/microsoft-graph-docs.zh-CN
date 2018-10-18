@@ -1,54 +1,54 @@
-# <a name="worksheet-resource-type"></a>工作表资源类型
+# <a name="worksheet-resource-type"></a><span data-ttu-id="3411c-101">工作表资源类型</span><span class="sxs-lookup"><span data-stu-id="3411c-101">Worksheet resource type</span></span>
 
-Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
+<span data-ttu-id="3411c-p101">Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。</span><span class="sxs-lookup"><span data-stu-id="3411c-p101">An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="3411c-104">方法</span><span class="sxs-lookup"><span data-stu-id="3411c-104">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="3411c-105">方法</span><span class="sxs-lookup"><span data-stu-id="3411c-105">Method</span></span>           | <span data-ttu-id="3411c-106">返回类型</span><span class="sxs-lookup"><span data-stu-id="3411c-106">Return Type</span></span>    |<span data-ttu-id="3411c-107">说明</span><span class="sxs-lookup"><span data-stu-id="3411c-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取工作表](../api/worksheet_get.md) | [工作表](worksheet.md) |读取 worksheet 对象的属性和关系。|
-|[创建图表](../api/worksheet_post_charts.md) |[图表](chart.md)| 通过发布到图表集合创建新的图表。|
-|[列出名称](../api/worksheet_list_names.md) |[NamedItem](nameditem.md) 集合| 获取与工作表关联的命名项的集合。|
-|[列出图表](../api/worksheet_list_charts.md) |[图表](chart.md) 集合| 获取 Chart 对象集合。|
-|[创建表](../api/worksheet_post_tables.md) |[表](table.md)| 通过发布到表集合创建新表。|
-|[列出表](../api/worksheet_list_tables.md) |[表](table.md) 集合| 获取 Table 对象集合。|
-|[更新](../api/worksheet_update.md) | [工作表](worksheet.md)    |更新 Worksheet 对象。 |
-|[单元格](../api/worksheet_cell.md)|[区域](range.md)|根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。|
-|[区域](../api/worksheet_range.md)|[区域](range.md)|获取地址或名称指定的 range 对象。|
-|[Usedrange](../api/worksheet_usedrange.md)|[区域](range.md)|使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。|
-|[删除](../api/worksheet_delete.md)|无|从工作簿中删除工作表。|
-|[列出](../api/worksheet_list.md) | [工作表](worksheet.md) 集合 |获取 worksheet 对象集合。 |
-|[添加](../api/worksheetcollection_add.md)|[工作表](worksheet.md)|向工作簿添加新工作表。将工作表添加到现有工作表的末尾。 |
-|[List pivotTables](../api/workbookworksheet_list_pivottables.md) |[workbookPivotTable](workbookpivottable.md) 集合| 获取一组 workbookPivotTable 对象。|
+|[<span data-ttu-id="3411c-108">Get Worksheet</span><span class="sxs-lookup"><span data-stu-id="3411c-108">Get Worksheet</span></span>](../api/worksheet_get.md) | [<span data-ttu-id="3411c-109">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="3411c-109">WorkbookWorksheet</span></span>](worksheet.md) |<span data-ttu-id="3411c-110">读取 worksheet 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3411c-110">Read properties and relationships of worksheet object.</span></span>|
+|[<span data-ttu-id="3411c-111">Create Chart</span><span class="sxs-lookup"><span data-stu-id="3411c-111">Create Chart</span></span>](../api/worksheet_post_charts.md) |[<span data-ttu-id="3411c-112">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="3411c-112">WorkbookChart</span></span>](chart.md)| <span data-ttu-id="3411c-113">通过发布到图表集合创建新的图表。</span><span class="sxs-lookup"><span data-stu-id="3411c-113">Create a new Chart by posting to the charts collection.</span></span>|
+|[<span data-ttu-id="3411c-114">List names</span><span class="sxs-lookup"><span data-stu-id="3411c-114">List names</span></span>](../api/worksheet_list_names.md) |<span data-ttu-id="3411c-115">[WorkbookNamedItem](nameditem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-115">[WorkbookNamedItem](nameditem.md) collection</span></span>| <span data-ttu-id="3411c-116">获取与工作表关联的命名项的集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-116">Get named item collection associated with the worksheet.</span></span>|
+|[<span data-ttu-id="3411c-117">List charts</span><span class="sxs-lookup"><span data-stu-id="3411c-117">List charts</span></span>](../api/worksheet_list_charts.md) |<span data-ttu-id="3411c-118">[WorkbookChart](chart.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-118">[WorkbookChart](chart.md) collection</span></span>| <span data-ttu-id="3411c-119">获取 Chart 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-119">Get a Chart object collection.</span></span>|
+|[<span data-ttu-id="3411c-120">Create Table</span><span class="sxs-lookup"><span data-stu-id="3411c-120">Create Table</span></span>](../api/worksheet_post_tables.md) |[<span data-ttu-id="3411c-121">WorkbookTable</span><span class="sxs-lookup"><span data-stu-id="3411c-121">WorkbookTable</span></span>](table.md)| <span data-ttu-id="3411c-122">通过发布到表集合创建新表。</span><span class="sxs-lookup"><span data-stu-id="3411c-122">Create a new Table by posting to the tables collection.</span></span>|
+|[<span data-ttu-id="3411c-123">List tables</span><span class="sxs-lookup"><span data-stu-id="3411c-123">List tables</span></span>](../api/worksheet_list_tables.md) |<span data-ttu-id="3411c-124">[WorkbookTable](table.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-124">[WorkbookTable](table.md) collection</span></span>| <span data-ttu-id="3411c-125">获取 Table 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-125">Get a Table object collection.</span></span>|
+|[<span data-ttu-id="3411c-126">Update</span><span class="sxs-lookup"><span data-stu-id="3411c-126">Update</span></span>](../api/worksheet_update.md) | [<span data-ttu-id="3411c-127">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="3411c-127">WorkbookWorksheet</span></span>](worksheet.md)   |<span data-ttu-id="3411c-128">更新 Worksheet 对象。</span><span class="sxs-lookup"><span data-stu-id="3411c-128">Update Worksheet object.</span></span> |
+|[<span data-ttu-id="3411c-129">Cell</span><span class="sxs-lookup"><span data-stu-id="3411c-129">Cell</span></span>](../api/worksheet_cell.md)|[<span data-ttu-id="3411c-130">Range</span><span class="sxs-lookup"><span data-stu-id="3411c-130">Range</span></span>](range.md)|<span data-ttu-id="3411c-p102">根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。</span><span class="sxs-lookup"><span data-stu-id="3411c-p102">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.</span></span>|
+|[<span data-ttu-id="3411c-133">Range</span><span class="sxs-lookup"><span data-stu-id="3411c-133">Range</span></span>](../api/worksheet_range.md)|[<span data-ttu-id="3411c-134">Range</span><span class="sxs-lookup"><span data-stu-id="3411c-134">Range</span></span>](range.md)|<span data-ttu-id="3411c-135">获取地址或名称指定的 range 对象。</span><span class="sxs-lookup"><span data-stu-id="3411c-135">Gets the range object specified by the address or name.</span></span>|
+|[<span data-ttu-id="3411c-136">Usedrange</span><span class="sxs-lookup"><span data-stu-id="3411c-136">Usedrange</span></span>](../api/worksheet_usedrange.md)|[<span data-ttu-id="3411c-137">Range</span><span class="sxs-lookup"><span data-stu-id="3411c-137">Range</span></span>](range.md)|<span data-ttu-id="3411c-p103">使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。</span><span class="sxs-lookup"><span data-stu-id="3411c-p103">The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.</span></span>|
+|[<span data-ttu-id="3411c-140">Delete</span><span class="sxs-lookup"><span data-stu-id="3411c-140">Delete</span></span>](../api/worksheet_delete.md)|<span data-ttu-id="3411c-141">无</span><span class="sxs-lookup"><span data-stu-id="3411c-141">None</span></span>|<span data-ttu-id="3411c-142">从工作簿中删除工作表。</span><span class="sxs-lookup"><span data-stu-id="3411c-142">Deletes the worksheet from the workbook.</span></span>|
+|[<span data-ttu-id="3411c-143">List</span><span class="sxs-lookup"><span data-stu-id="3411c-143">List</span></span>](../api/worksheet_list.md) | <span data-ttu-id="3411c-144">[WorkbookWorksheet](worksheet.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-144">[WorkbookWorksheet](worksheet.md) collection</span></span> |<span data-ttu-id="3411c-145">获取 worksheet 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-145">Get worksheet object collection.</span></span> |
+|[<span data-ttu-id="3411c-146">Add</span><span class="sxs-lookup"><span data-stu-id="3411c-146">Add</span></span>](../api/worksheetcollection_add.md)|[<span data-ttu-id="3411c-147">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="3411c-147">WorkbookWorksheet</span></span>](worksheet.md)|<span data-ttu-id="3411c-p104">向工作簿添加新工作表。将工作表添加到现有工作表的末尾。</span><span class="sxs-lookup"><span data-stu-id="3411c-p104">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets.</span></span> |
+|[<span data-ttu-id="3411c-150">List pivotTables</span><span class="sxs-lookup"><span data-stu-id="3411c-150">List pivotTables</span></span>](../api/workbookworksheet_list_pivottables.md) |<span data-ttu-id="3411c-151">[workbookPivotTable](workbookpivottable.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-151">[workbookPivotTable](workbookpivottable.md) collection</span></span>| <span data-ttu-id="3411c-152">获取 workbookPivotTable 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-152">Get a workbookPivotTable object collection.</span></span>|
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="3411c-153">属性</span><span class="sxs-lookup"><span data-stu-id="3411c-153">Properties</span></span>
+| <span data-ttu-id="3411c-154">属性</span><span class="sxs-lookup"><span data-stu-id="3411c-154">Property</span></span>     | <span data-ttu-id="3411c-155">类型</span><span class="sxs-lookup"><span data-stu-id="3411c-155">Type</span></span>   |<span data-ttu-id="3411c-156">说明</span><span class="sxs-lookup"><span data-stu-id="3411c-156">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|string|返回用于唯一标识指定工作簿中工作表的值。即使工作表被重命名或移动，标识符的值仍然相同。只读。|
-|name|string|工作表的显示名称。|
-|position|int|工作表在工作簿中的位置，从零开始。|
-|visibility|string|工作表的可见性。可能的值是：`Visible`、`Hidden`、`VeryHidden`。|
+|<span data-ttu-id="3411c-157">id</span><span class="sxs-lookup"><span data-stu-id="3411c-157">id</span></span>|<span data-ttu-id="3411c-158">string</span><span class="sxs-lookup"><span data-stu-id="3411c-158">string</span></span>|<span data-ttu-id="3411c-p105">返回用于唯一标识指定工作簿中工作表的值。即使工作表被重命名或移动，标识符的值仍然相同。只读。</span><span class="sxs-lookup"><span data-stu-id="3411c-p105">Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.</span></span>|
+|<span data-ttu-id="3411c-162">name</span><span class="sxs-lookup"><span data-stu-id="3411c-162">name</span></span>|<span data-ttu-id="3411c-163">string</span><span class="sxs-lookup"><span data-stu-id="3411c-163">string</span></span>|<span data-ttu-id="3411c-164">工作表的显示名称。</span><span class="sxs-lookup"><span data-stu-id="3411c-164">The display name of the worksheet.</span></span>|
+|<span data-ttu-id="3411c-165">position</span><span class="sxs-lookup"><span data-stu-id="3411c-165">position</span></span>|<span data-ttu-id="3411c-166">int</span><span class="sxs-lookup"><span data-stu-id="3411c-166">int</span></span>|<span data-ttu-id="3411c-167">工作表在工作簿中的位置，从零开始。</span><span class="sxs-lookup"><span data-stu-id="3411c-167">The zero-based position of the worksheet within the workbook.</span></span>|
+|<span data-ttu-id="3411c-168">visibility</span><span class="sxs-lookup"><span data-stu-id="3411c-168">visibility</span></span>|<span data-ttu-id="3411c-169">string</span><span class="sxs-lookup"><span data-stu-id="3411c-169">string</span></span>|<span data-ttu-id="3411c-170">工作表的可见性。</span><span class="sxs-lookup"><span data-stu-id="3411c-170">The Visibility of the worksheet. Possible values are: , , .</span></span> <span data-ttu-id="3411c-171">可取值为：`Visible`、`Hidden`、`VeryHidden`。</span><span class="sxs-lookup"><span data-stu-id="3411c-171">The possible values are `Visible`, `Hidden`, `VeryHidden`, , , , , , , , , or .</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="3411c-172">关系</span><span class="sxs-lookup"><span data-stu-id="3411c-172">Relationships</span></span>
+| <span data-ttu-id="3411c-173">关系</span><span class="sxs-lookup"><span data-stu-id="3411c-173">Relationship</span></span> | <span data-ttu-id="3411c-174">类型</span><span class="sxs-lookup"><span data-stu-id="3411c-174">Type</span></span>   |<span data-ttu-id="3411c-175">说明</span><span class="sxs-lookup"><span data-stu-id="3411c-175">Description</span></span>|
 |:---------------|:--------|:----------|
-|图表|[图表](chart.md) 集合|返回属于工作表的图表的集合。只读。|
-|names|[NamedItem](nameditem.md) 集合|返回与该工作表关联的名称集合。只读。|
-|pivotTables|[workbookPivotTable](workbookpivottable.md) 集合| 一组属于工作表的数据透视表对象。 |
-|protection|[WorksheetProtection](worksheetprotection.md)|返回表工作表的工作表保护对象。只读。|
-|表|[Table](table.md) 集合|属于工作表的表的集合。只读。|
+|<span data-ttu-id="3411c-176">图表</span><span class="sxs-lookup"><span data-stu-id="3411c-176">charts</span></span>|<span data-ttu-id="3411c-177">[WorkbookChart](chart.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-177">[WorkbookChart](chart.md) collection</span></span>|<span data-ttu-id="3411c-p107">返回属于工作表的图表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="3411c-p107">Returns collection of charts that are part of the worksheet. Read-only.</span></span>|
+|<span data-ttu-id="3411c-180">names</span><span class="sxs-lookup"><span data-stu-id="3411c-180">names</span></span>|<span data-ttu-id="3411c-181">[WorkbookNamedItem](nameditem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-181">[WorkbookNamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="3411c-p108">返回与该工作表关联的名称集合。只读。</span><span class="sxs-lookup"><span data-stu-id="3411c-p108">Returns collection of names that are associated with the worksheet. Read-only.</span></span>|
+|<span data-ttu-id="3411c-184">pivotTables</span><span class="sxs-lookup"><span data-stu-id="3411c-184">pivotTables</span></span>|<span data-ttu-id="3411c-185">[workbookPivotTable](workbookpivottable.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-185">[workbookPivotTable](workbookpivottable.md) collection</span></span>| <span data-ttu-id="3411c-186">属于工作表的 PivotTables 的集合。</span><span class="sxs-lookup"><span data-stu-id="3411c-186">Collection of PivotTables that are part of the worksheet.</span></span> |
+|<span data-ttu-id="3411c-187">protection</span><span class="sxs-lookup"><span data-stu-id="3411c-187">protection</span></span>|[<span data-ttu-id="3411c-188">WorkbookWorksheetProtection</span><span class="sxs-lookup"><span data-stu-id="3411c-188">WorkbookWorksheetProtection</span></span>](worksheetprotection.md)|<span data-ttu-id="3411c-p109">返回表工作表的工作表保护对象。只读。</span><span class="sxs-lookup"><span data-stu-id="3411c-p109">Returns sheet protection object for a worksheet. Read-only.</span></span>|
+|<span data-ttu-id="3411c-191">tables</span><span class="sxs-lookup"><span data-stu-id="3411c-191">tables</span></span>|<span data-ttu-id="3411c-192">[WorkbookTable](table.md) 集合</span><span class="sxs-lookup"><span data-stu-id="3411c-192">[WorkbookTable](table.md) collection</span></span>|<span data-ttu-id="3411c-p110">属于工作表的表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="3411c-p110">Collection of tables that are part of the worksheet. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="3411c-195">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3411c-195">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="3411c-196">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3411c-196">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.worksheet"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 }-->
 
 ```json
