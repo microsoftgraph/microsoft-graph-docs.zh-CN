@@ -1,6 +1,6 @@
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
-|||UNTRANSLATED_CONTENT_START|||A complex type for representing the **visualElements** property in the [activity](../resources/projectrome_activity.md) object.|||UNTRANSLATED_CONTENT_END|||
+代表 activity 对象中 **visual ** Elements[ visualElements](../resources/projectrome_activity.md) 属性的复杂类型。
 
 每个用户活动都将作为自适应卡片在日程表中显示。 鼓励应用程序开发人员提供自定义卡片，用于捕获应用程序中发生的活动的本质。 这可以通过在内容属性中提供自定义 JSON 卡来实现。
 

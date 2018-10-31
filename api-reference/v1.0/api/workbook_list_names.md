@@ -29,7 +29,7 @@ GET /workbook/names
 
 ## <a name="response"></a>响应
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and collection of [WorkbookNamedItem](../resources/nameditem.md) objects in the response body.|||UNTRANSLATED_CONTENT_END|||
+如果成功，此方法在响应正文中返回响应代码和 WorkbookNamedItem 对象集合。`200 OK` [ ](../resources/nameditem.md)
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

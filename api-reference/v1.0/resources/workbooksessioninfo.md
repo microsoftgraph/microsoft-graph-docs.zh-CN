@@ -25,5 +25,5 @@
 | 属性 | 类型  | 说明                               |
 |:---------|:------|:------------------------------------------|
 | id  | 字符串 | 工作簿会话 的 ID。 |
-| persistChanges | 布尔值 |  `true` |||UNTRANSLATED_CONTENT_START|||for persistent session.|||UNTRANSLATED_CONTENT_END||| `false` 对于非持续会话（视图模式），值为 `false`。 |
+| persistChanges | 布尔值 |  `true` 对于持续会话，值为 。 `false` 对于非持续会话（视图模式），值为 `false`。 |
 

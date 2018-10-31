@@ -30,7 +30,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 
 ## <a name="response"></a>响应
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and [WorkbookTableSort](../resources/tablesort.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/tablesort.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
