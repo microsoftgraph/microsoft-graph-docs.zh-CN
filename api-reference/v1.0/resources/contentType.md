@@ -3,16 +3,17 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
-ms.openlocfilehash: ee869e5f2925af92fea9eef04fd26ec483baad5b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
-ms.translationtype: HT
+ms.openlocfilehash: cb16559aa9da3a885be1977bbd1466265d0a72f0
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268331"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
-**contentType** 资源表示 SharePoint 中的_内容类型_。
-内容类型允许定义一组列，这些列必须显示在 [**list**][list] 中的每个 [**listItem**][listItem] 上。
+**ContentType** 资源代表 SharePoint 中的_内容类型_。
+内容类型使你可以定义一组列，这些列必须存在于 [**list**][list] 中的每个 [**listItem**][listItem] 上。
 
 [list]: list.md
 [listItem]: listItem.md
@@ -20,7 +21,10 @@ ms.lasthandoff: 09/28/2017
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **contentType** 资源的 JSON 表示形式。
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -44,23 +48,23 @@ ms.lasthandoff: 09/28/2017
 | 属性名称     | 类型                 | 说明
 |:------------------|:---------------------|:----------------------------------
 | **description**   | string               | 项目的描述性文本。
-| **group**         | string               | 此内容类型所属组的名称。 帮助组织相关的内容类型。
-| **hidden**        | boolean              | 指示内容类型是否在列表的“新建”菜单中隐藏。
+| **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
+| **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
-| **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个范围（如网站），则提供对定义内容类型的项的引用。
+| **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
 | **name**          | string               | 内容类型的名称。
-| **order**         | [contentTypeOrder][] | 指定内容类型出现在选择 UI 中的顺序。
+| **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
-| **readOnly**      | boolean              | 如果值为 `true`，则无法修改内容类型，除非首先将此值设为 `false`。
-| **sealed**        | boolean              | 如果值为 `true`，则无法由用户或通过下推操作修改内容类型。 只有网站集管理员才能封装或解封内容类型。
+| **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
+| **sealed**        | boolean              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
 
 ## <a name="relationships"></a>关系
 
 | 属性名称   | 类型                      | 说明
 |:----------------|:--------------------------|:-------------------------------
-| **columnLinks** | [columnLink][] 集合 | 此内容类型所需列的集合
+| **columnLinks** | [columnLink][] 集合 | 此内容类型所需的列集合
 
-有关详细信息，请参阅[内容类型和内容类型发布简介][contentTypeIntro]。
+请参阅[内容类型和内容类型发布简介][contentTypeIntro]了解详细信息。
 
 [columnLink]: columnLink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
