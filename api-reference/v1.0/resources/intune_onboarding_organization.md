@@ -7,17 +7,17 @@
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 organizations](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md) 集合|列出 [organization](../resources/intune_onboarding_organization.md) 对象的属性和关系。|
-|[获取 organization](../api/intune_onboarding_organization_get.md)|[组织](../resources/intune_onboarding_organization.md)|读取 [organization](../resources/intune_onboarding_organization.md) 对象的属性和关系。|
-|[更新 organization](../api/intune_onboarding_organization_update.md)|[组织](../resources/intune_onboarding_organization.md)|更新 [organization](../resources/intune_onboarding_organization.md) 对象的属性。|
+|[获取 organization](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|读取 [organization](../resources/intune_onboarding_organization.md) 对象的属性和关系。|
+|[更新 organization](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|更新 [organization](../resources/intune_onboarding_organization.md) 对象的属性。|
 |[setMobileDeviceManagementAuthority 操作](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|设置移动设备管理机构|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|对象的 GUID。|
+|id|String|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -35,6 +35,7 @@
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
@@ -51,9 +52,4 @@
 
 }
 -->
-
-
-
-
-
 

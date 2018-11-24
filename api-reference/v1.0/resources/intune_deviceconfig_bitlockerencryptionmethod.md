@@ -8,13 +8,8 @@ BitLockerEncryptionMethod 类型
 |:---|:---|:---|
 |aesCbc128|3|AES-CBC 128 位。|
 |aesCbc256|4|AES-CBC 256 位。|
-|xtsAes128|6|XTS-AES 128 位。|
-|xtsAes256|7|XTS-AES 256 位。|
-
-
-
-
-
+|xtsAes128|6|XTS 位 AES 128 位。|
+|xtsAes256|7|XTS 位 AES 256 位。|
 
 
 

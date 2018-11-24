@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |ruleName|String|此计划操作适用的规则名称。|
 
 
@@ -48,9 +48,10 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json
-Content-length: 37
+Content-length: 114
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
   "ruleName": "Rule Name value"
 }
 ```
@@ -68,11 +69,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
-
-
-
-
 
 
 

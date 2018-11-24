@@ -24,8 +24,8 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 vppToken 对象的 JSON 表示形式。
@@ -34,18 +34,18 @@ POST /deviceAppManagement/vppTokens
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
-|organizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。可取值为：`business`、`education`。可取值为：`business`、`education`。|
-|appleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
+|appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次利用 Apple Volume Purchase Program 服务并使用 Apple Volume Purchase Program 令牌完成应用程序同步的时间。|
-|令牌|字符串|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
+|token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
 |lastModifiedDateTime|DateTimeOffset|与 Apple Volume Purchase Program 令牌关联的上次修改日期时间。|
-|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。可取值为：`none`、`inProgress`、`completed`、`failed`。可取值为：`none`、`inProgress`、`completed`、`failed`。|
-|automaticallyUpdateApps|布尔|是否自动更新适用于 VPP 令牌的应用。|
-|countryOrRegion|字符串|是否自动更新适用于 VPP 令牌的应用。|
+|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
+|automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
+|countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
 
 
 
@@ -58,7 +58,7 @@ POST /deviceAppManagement/vppTokens
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 525
+Content-length: 461
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -68,7 +68,6 @@ Content-length: 525
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
@@ -99,11 +98,6 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
-
-
-
-
 
 
 

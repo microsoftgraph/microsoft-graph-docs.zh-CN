@@ -17,10 +17,11 @@ Configuration Manager 客户端已启用的功能
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientEnabledFeatures",
@@ -32,11 +33,6 @@ Configuration Manager 客户端已启用的功能
   "windowsUpdateForBusiness": true
 }
 ```
-
-
-
-
-
 
 
 

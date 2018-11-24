@@ -28,7 +28,7 @@ POST /sites/{id}/onenote/pages
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | 字符串 | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
+| Content-Type | string | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供页面的 HTML 内容。
@@ -63,7 +63,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an online source:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as binary data:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>
@@ -86,7 +86,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

@@ -15,15 +15,15 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|T&C 策略的唯一标识符。|
+|id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
 |说明|String|管理员提供的 T&C 策略描述。|
-|title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
+|标题|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
-|version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
+|版本|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -33,12 +33,12 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -53,11 +53,6 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

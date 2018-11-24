@@ -24,8 +24,8 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) 对象的 JSON 表示形式。
@@ -34,16 +34,16 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
+|id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange 连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
-|primarySmtpAddress|字符串|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
-|serverName|字符串|Exchange Server 名称。|
-|connectorServerName|字符串|托管 Exchange Connector 的服务器的名称。|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|配置的 Exchange 连接器的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
-|version|字符串|ExchangeConnectorAgent 版本|
-|exchangeAlias|字符串|分配到 Exchange 服务器的别名|
-|exchangeOrganization|字符串|Exchange 服务器的 Exchange 组织|
+|primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
+|serverName|String|Exchange server 的名称。|
+|connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|配置的 Exchange Connector 的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
+|version|String|ExchangeConnectorAgent 版本|
+|exchangeAlias|String|分配到 Exchange 服务器的别名|
+|exchangeOrganization|String|Exchange 服务器的 Exchange 组织|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 418
+Content-length: 490
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
@@ -92,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

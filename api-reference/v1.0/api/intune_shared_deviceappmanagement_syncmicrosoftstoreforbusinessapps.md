@@ -6,10 +6,11 @@
 ## <a name="prerequisites"></a>先决条件
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
+
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| 
-| &nbsp; &nbsp; _加入_ | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; _入职培训_ | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -25,8 +26,8 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -42,7 +43,7 @@ POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForB
 
 ### <a name="response"></a>响应
 
-为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+为简便起见，如下所示的响应对象可能会被截断。 将从实际调用中返回所有属性。
 
 ``` http
 HTTP/1.1 204 No Content

@@ -1,15 +1,15 @@
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>用户： getMailTips
 
-获取登录[用户](../resources/user.md)的一个或多个可用联系人的邮件提醒。
+获取有空登录[用户](../resources/user.md)的一个或多个收件人的邮件提示。
 
-请注意，通过使 `POST` 调用 `getMailTips` 操作，可以请求一次向一个以上的收件人返回特定类型的邮件提醒。 被请求的邮件提示被返回到 [mailTips](../resources/mailtips.md) 集合。
+请注意，通过使`POST`调用`getMailTips`操作，您可以请求对特定类型的邮件提示，一次返回多个收件人。 [邮件提示](../resources/mailtips.md)集合中返回请求的邮件提示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read, Mail.Read.Shared    |
+|委派（工作或学校帐户） | Mail.Read Mail.Read.Shared    |
 |委派（个人 Microsoft 帐户） | Mail.Read    |
 |应用程序 | Mail.Read |
 
@@ -20,11 +20,11 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|
 |:-----------  |:------|
-| 授权 | Bearer {token}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -32,15 +32,15 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|字符串集合|用于获取“邮件提醒”的收件人 SMTP 地址的集合。|
-|MailTipsOptions|字符串|枚举代​​表请求的邮件提醒的标志。 可取值为：`automaticReplies`、`customMailTip`、`deliveryRestriction`、`externalMemberCount`、`mailboxFullStatus`、`maxMessageSize`、`moderationStatus`、`recipientScope`、`recipientSuggestions` 和  `totalMemberCount`。|
+|EmailAddresses|String 集合|要获取的邮件提示的收件人的 SMTP 地址的集合。|
+|MailTipsOptions|字符串|Flags 一个枚举值，该值代表请求邮件提示。 可能的值为： `automaticReplies`， `customMailTip`， `deliveryRestriction`， `externalMemberCount`， `mailboxFullStatus`， `maxMessageSize`， `moderationStatus`， `recipientScope`， `recipientSuggestions`，和`totalMemberCount`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailTips](../resources/mailtips.md) 对象集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[邮件提示](../resources/mailtips.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例获取指定收件人的“邮件提醒”，以获取任何自动回复设置和邮箱全状态。
+下面的示例获取指定的收件人，任何自动答复设置和邮箱完全状态邮件提示。
 
 <!-- {
   "blockType": "request",

@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,8 +35,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|displayName|字符串|应用类别的名称。|
+|id|String|实体的键。|
+|displayName|String|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 
 
@@ -50,12 +50,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories
 Content-type: application/json
-Content-length: 163
+Content-length: 99
 
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
-  "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "displayName": "Display Name value"
 }
 ```
 
@@ -73,11 +72,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
 
 
 

@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
-ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: b7b842a5aac4b8505db3b4fc1c77dcb7c983f521
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23266833"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564842"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 
@@ -208,11 +208,12 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 分辨率  | 纵横比 | 说明                                                          |
+| 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 最长 96  | 原始     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
-| `medium`       | 最长 176 | 原始     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
-| `large`        | 最长 800 | 原始     | 最长边重设为 800 像素的缩略图。               |
+| `small`        | 96 longest  | Original     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
+| `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
+| `large`        | 800 longest
+ | Original     | 最长边重设为 800 像素的缩略图。               |
 | `smallSquare`  | 96x96       | 方形裁剪  | 小方形缩略图                                               |
 | `mediumSquare` | 176x176     | 方形裁剪  | 小方形缩略图                                               |
 | `largeSquare`  | 800x800     | 方形裁剪  | 大方形缩略图                                               |
@@ -258,7 +259,7 @@ Content-Type: application/json
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 **注意** 在 OneDrive for Business 和 SharePoint 中：
 

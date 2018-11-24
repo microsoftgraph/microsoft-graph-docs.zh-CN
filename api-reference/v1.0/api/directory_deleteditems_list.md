@@ -30,16 +30,16 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持在没有类型的情况下调用 GET /directory/deletedItems。
+此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持调用 GET/目录/deletedItems 没有类型。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | Bearer &lt;code&gt;。*必需*|
-| 接受  | application/json |
+| Authorization  | Bearer &lt;code&gt;。*必需*|
+| Accept  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

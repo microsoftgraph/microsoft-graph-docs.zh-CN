@@ -1,15 +1,15 @@
 # <a name="list-events"></a>列出事件
 
-获取用户邮箱中的[事件](../resources/event.md)对象列表。该列表包含单个实例会议和系列主事件。
+获取用户邮箱中的 [event](../resources/event.md) 对象列表。该列表包含单个实例会议和系列主控形状。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar_list_calendarview.md)，或者[获取事件的实例](event_list_instances.md)。
 
 目前，此操作返回纯 HTML 格式的事件正文。
 
-有两种应用程序可以在另一个用户的日历中获取事件的情景：
+有两种方案，其中应用程序可在另一个用户的日历中获取事件：
 
-* 如果应用拥有应用程序权限，或者，
-* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-events-calendars.md)。
+* 如果应用程序具有应用程序权限，或，
+* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-events-calendars.md)。
 
 ### <a name="support-various-time-zones"></a>支持不同时区
 
@@ -52,11 +52,11 @@ GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| 授权  | 字符串 | Bearer {token}。必需。  |
+| Authorization  | string | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 

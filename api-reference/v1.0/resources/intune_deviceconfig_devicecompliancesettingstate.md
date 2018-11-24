@@ -15,29 +15,29 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键|
-|setting|字符串|设置类名和属性名。|
-|settingName|字符串|报告的设置名称|
-|deviceId|字符串|报告的设备 ID|
-|deviceName|字符串|报告的设备名称|
-|userId|字符串|报告的用户 ID|
-|userEmail|字符串|报告的用户电子邮件地址|
-|userName|字符串|报告的用户名|
-|userPrincipalName|字符串|报告的用户主体名称|
-|deviceModel|字符串|报告的设备模型|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置的合规性状态。可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|id|String|实体的键|
+|setting|String|设置类名和属性名。|
+|settingName|String|报告的设置名称|
+|deviceId|String|报告的设备 ID|
+|deviceName|String|报告的设备名称|
+|userId|String|报告的用户 ID|
+|userEmail|String|报告的用户电子邮件地址|
+|userName|String|报告的用户名|
+|userPrincipalName|String|报告的用户主体名称|
+|deviceModel|String|报告的设备模型|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|设置合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备合规性宽限期的到期日期/时间|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
@@ -55,11 +55,6 @@
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

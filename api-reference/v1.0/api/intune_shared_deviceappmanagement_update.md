@@ -4,7 +4,7 @@
 
 更新 [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  请注意，相应权限根据工作流而有所不同。
+以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  请注意，在相应权限根据工作流而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -24,8 +24,8 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) 对象的 JSON 表示形式。
@@ -34,10 +34,10 @@ PATCH /deviceAppManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|**参与／有份**|
-|isEnabledForMicrosoftStoreForBusiness|布尔|帐户是否已启用从适用于企业的 Microsoft Store 同步应用程序。|
-|microsoftStoreForBusinessLanguage|字符串|用于从适用于企业的 Microsoft Store 同步应用程序的区域设置信息。 特定于国家/地区的区域性。 这些区域性的名称遵循 RFC 4646（Windows Vista 和更高版本）。 格式为 <languagecode2>-<country/regioncode2>，其中 <languagecode2> 是从 ISO 639-1 派生的两个小写字母组成的代码，<country/regioncode2> 是从 ISO 3166 派生的两个大写字母组成的代码。 例如，“en-US”（“英语(美国)）是一个特定的区域性。|
+|id|String|实体的键。|
+|**入职培训**|
+|isEnabledForMicrosoftStoreForBusiness|Boolean|帐户是否已启用从适用于企业的 Microsoft Store 同步应用程序。|
+|microsoftStoreForBusinessLanguage|String|用于从适用于企业的 Microsoft Store 同步应用程序的区域设置信息。 特定于国家/地区的区域性。 这些区域性的名称遵循 RFC 4646（Windows Vista 和更高版本）。 格式为 <languagecode2>-<country/regioncode2>，其中 <languagecode2> 是从 ISO 639-1 派生的两个小写字母组成的代码，<country/regioncode2> 是从 ISO 3166 派生的两个大写字母组成的代码。 例如，“en-US”（“英语(美国)）是一个特定的区域性。|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|从适用于企业的 Microsoft Store 的应用程序同步上次完成的时间。|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|适用于企业的 Microsoft Store 的应用上次成功同步帐户的时间。|
 
@@ -56,7 +56,7 @@ Content-length: 2
 
 ## <a name="example-response"></a>响应示例
 
-为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+为简便起见，如下所示的响应对象可能会被截断。 将从实际调用中返回所有属性。
 
 ``` http
 HTTP/1.1 200 OK

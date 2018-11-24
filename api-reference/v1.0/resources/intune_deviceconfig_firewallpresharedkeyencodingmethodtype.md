@@ -6,14 +6,9 @@ FirewallPreSharedKeyEncodingMethod 的可能值
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|Intune 未配置值，不要覆盖用户配置的设备默认值|
-|无|1|预共享密钥未编码， 而是保留为宽字符格式|
-|utf8|2|使用 utf-8 编码预共享密钥|
-
-
-
-
-
+|deviceDefault|0|配置通过 Intune，没有值不会替代的用户配置设备默认值|
+|无|1|未编码预共享的密钥。 而是保留在其宽字符格式|
+|utF8|2|预共享的密钥使用 utf-8 编码|
 
 
 

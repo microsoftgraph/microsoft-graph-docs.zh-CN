@@ -17,7 +17,7 @@
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法要求指定 planId [筛选器](http://graph.microsoft.io/docs/overview/query_parameters)。
+此方法要求指定 planId [筛选器](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

@@ -10,36 +10,36 @@
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List windows10MobileCompliancePolicies](../api/intune_deviceconfig_windows10mobilecompliancepolicy_list.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 集合|列出 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象的属性和关系。|
-|[获取 windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_get.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)|读取 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象的属性和关系。|
-|[创建 windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_create.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)|创建新的 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象。|
-|[删除 windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_delete.md)|无|删除 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)。|
+|[Get windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_get.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)|读取 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象的属性和关系。|
+|[Create windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_create.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)|创建新的 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象。|
+|[Delete windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_delete.md)|无|删除 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)。|
 |[Update windows10MobileCompliancePolicy](../api/intune_deviceconfig_windows10mobilecompliancepolicy_update.md)|[windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md)|更新 [windows10MobileCompliancePolicy](../resources/intune_deviceconfig_windows10mobilecompliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|布尔值|需要密码才可解锁 Windows Phone 设备。|
-|passwordBlockSimple|布尔值|是否阻止同步日历。|
+|passwordRequired|Boolean|需要密码才可解锁 Windows Phone 设备。|
+|passwordBlockSimple|Boolean|是否阻止同步日历。|
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可取值是：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
-|passwordRequireToUnlockFromIdle|布尔值|需要密码才可解锁空闲设备。|
-|osMinimumVersion|字符串|最低 Windows Phone 版本。|
-|osMaximumVersion|字符串|最高 Windows Phone 版本。|
-|earlyLaunchAntiMalwareDriverEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
-|bitLockerEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
-|secureBootEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
-|codeIntegrityEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常。|
-|storageRequireEncryption|布尔值|要求对 Windows 设备加密。|
+|passwordRequireToUnlockFromIdle|Boolean|需要密码才可解锁闲置设备。|
+|osMinimumVersion|String|最低 Windows Phone 版本。|
+|osMaximumVersion|String|最高 Windows Phone 版本。|
+|earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
+|bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
+|secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
+|codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
+|storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -50,16 +50,16 @@
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|设备合规性设备状态概述 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|设备合规性用户状态概述 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) 集合|合规性设置状态设备摘要 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) 集合|此合规性策略的分配集合。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) 集合|此合规性策略的作业集合。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10MobileCompliancePolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
@@ -87,11 +87,6 @@
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

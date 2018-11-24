@@ -16,29 +16,29 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
-|organizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
-|appleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
+|appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次利用 Apple Volume Purchase Program 服务并使用 Apple Volume Purchase Program 令牌完成应用程序同步的时间。|
-|令牌|字符串|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
+|token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
 |lastModifiedDateTime|DateTimeOffset|与 Apple Volume Purchase Program 令牌关联的上次修改日期时间。|
 |state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
-|automaticallyUpdateApps|布尔|是否自动更新适用于 VPP 令牌的应用。|
-|countryOrRegion|字符串|是否自动更新适用于 VPP 令牌的应用。|
+|automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
+|countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.vppToken"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -56,11 +56,6 @@
   "countryOrRegion": "String"
 }
 ```
-
-
-
-
-
 
 
 

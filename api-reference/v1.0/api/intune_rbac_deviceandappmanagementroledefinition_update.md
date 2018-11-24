@@ -25,7 +25,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,11 +35,11 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 此为只读，且自动生成。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|字符串|角色定义的显示名称。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|字符串|角色定义的说明。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|String|实体的键。 此为只读，且自动生成。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|String|角色定义的显示名称。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|description|String|角色定义的说明。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|布尔|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 527
+Content-length: 602
 
 {
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "rolePermissions": [
@@ -108,11 +109,6 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) 对象的 JSON 表示形式。
@@ -34,13 +34,13 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
+|id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|合作伙伴的此租户的状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|合作伙伴应用程序类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
-|singleTenantAppId|字符串|合作伙伴单个租户应用 ID|
-|displayName|字符串|合作伙伴显示名称|
-|isConfigured|布尔|是否配置了设备管理合作伙伴|
+|singleTenantAppId|String|合作伙伴单个租户应用 ID|
+|displayName|String|合作伙伴显示名称|
+|isConfigured|Boolean|是否配置了设备管理合作伙伴|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
 
@@ -55,9 +55,10 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 Content-type: application/json
-Content-length: 440
+Content-length: 502
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementPartner",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "unavailable",
   "partnerAppType": "singleTenantApp",
@@ -89,11 +90,6 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
-
-
-
-
 
 
 

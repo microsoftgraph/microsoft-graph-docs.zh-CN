@@ -6,34 +6,34 @@
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[列举人员](../api/user_list_people.md) | **人员** |获取按与[用户](../resources/user.md)的相关性排序的人员对象集合。|
+|[List people](../api/user_list_people.md) | **person** |获取按与[用户](../resources/user.md)的相关性排序的人员对象集合。|
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|生日|字符串|人员的生日。|
-|companyName|字符串|人员的公司名称。|
-|部门|字符串|人员的部门。|
-|displayName|字符串|人员的显示名称。|
-|scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) 集合|人员的电子邮件地址。|
-|givenName|字符串|人员的名字。|
-|ID|字符串|人员的唯一标识符。只读。|
-|imAddress|字符串|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
-|isFavorite|布尔值|`true` 如果用户已将此人员标记为常用联系人，则为 `true`。|
-|jobTitle|字符串|人员的职务。|
-|officeLocation|字符串|人员的办公室位置。|
-|personNotes|字符串|用户对此人员所做的自由格式备注。|
+|birthday|String|人员的生日。|
+|companyName|String|人员的公司名称。|
+|department|String|人员的部门。|
+|displayName|String|人员的显示名称。|
+|scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) collection|人员的电子邮件地址。|
+|givenName|String|人员的名字。|
+|id|字符串|人员的唯一标识符。只读。|
+|imAddress|String|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
+|isFavorite|Boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
+|jobTitle|String|人员的职务。|
+|officeLocation|String|人员的办公室位置。|
+|personNotes|String|用户对此人员所做的自由格式备注。|
 |personType|[personType](persontype.md) |人员类型。|
-|电话|[电话](phone.md) 集合|人员的电话号码。|
-|postalAddresses|[ postalAddresses](location.md)|人员的地址。|
-|专业|字符串|人员的职业。|
-|姓|字符串|人员的姓氏。|
-|userPrincipalName|字符串|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](http://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|
-|网站|[网站](website.md) 集合|人员的网站。|
-|yomiCompany|字符串|人员所在公司的注音日文名称。|
+|phones|[phone](phone.md) collection|人员的电话号码。|
+|postalAddresses|[location](location.md) collection|人员的地址。|
+|profession|String|人员的职业。|
+|surname|String|人员的姓氏。|
+|userPrincipalName|字符串|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|
+|websites|[website](website.md) collection|人员的网站。|
+|yomiCompany|String|人员所在公司的注音日文名称。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无。
 

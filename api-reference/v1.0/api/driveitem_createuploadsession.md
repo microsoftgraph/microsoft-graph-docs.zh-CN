@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 可恢复的文件上传
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265510"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564756"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -48,12 +48,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是，您可以在请求正文中指定 `item` 属性，提供有关所上传文件的其他数据。
+但是，您可以指定`item`属性在请求正文中，提供有关所上载文件的其他数据。
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -128,7 +128,7 @@ Content-Type: application/json
 若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
 你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
-必须按顺序上传文件的片段。
+顺序，必须按顺序上载文件的片段。
 不按顺序上载文件的片段将导致错误。
 
 **注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
@@ -193,7 +193,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>备注
 
-* 属性不会总是列出所有缺少的范围。`nextExpectedRanges`
+* `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
 * 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
 * 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
 * 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。
@@ -375,7 +375,7 @@ Content-Type: application/json
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

@@ -24,8 +24,8 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [organization](../resources/intune_onboarding_organization.md) 对象的 JSON 表示形式。
@@ -34,7 +34,7 @@ PATCH /organization/{organizationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|对象的 GUID。|
+|id|String|对象的 GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|移动设备管理机构。 可取值为：`unknown`、`intune`、`sccm`、`office365`。|
 
 
@@ -48,9 +48,10 @@ PATCH /organization/{organizationId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json
-Content-length: 51
+Content-length: 102
 
 {
+  "@odata.type": "#microsoft.graph.organization",
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
@@ -68,11 +69,6 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
-
-
-
-
-
 
 
 

@@ -25,7 +25,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,12 +35,12 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|对象的 GUID|
-|orderIdentifier|字符串|Windows autopilot 设备订单 Id。|
-|serialNumber|字符串|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
-|hardwareIdentifier|二进制|Windows autopilot 设备硬件 Blob。|
-|状态|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
+|id|String|对象的 GUID|
+|orderIdentifier|String|Windows AutoPilot 设备的订单编码。|
+|serialNumber|String|Windows AutoPilot 设备的序列号。|
+|productKey|String|Windows AutoPilot 设备的产品密钥。|
+|hardwareIdentifier|Binary|Windows AutoPilot 设备的硬件 Blob。|
+|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
 
 
 
@@ -94,11 +94,6 @@ Content-Length: 590
   }
 }
 ```
-
-
-
-
-
 
 
 

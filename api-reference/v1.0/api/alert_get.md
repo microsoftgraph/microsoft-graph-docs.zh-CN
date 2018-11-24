@@ -1,6 +1,6 @@
-# <a name="get-alert"></a>Get alert
+# <a name="get-alert"></a>获取警报
 
- 检索 [alert](../resources/alert.md) 对象的属性和关系。
+ 检索的属性和[通知](../resources/alert.md)对象的关系。
 
 ## <a name="permissions"></a>权限
 
@@ -8,9 +8,9 @@
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
+|委派（工作或学校帐户） |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
+|应用程序 | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -24,7 +24,7 @@ GET /security/alerts/{alert_id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。必填。|
+| Authorization  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -32,7 +32,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 **alert** 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

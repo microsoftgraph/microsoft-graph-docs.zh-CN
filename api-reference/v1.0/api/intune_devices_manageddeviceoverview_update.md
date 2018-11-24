@@ -24,7 +24,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|摘要的唯一标识符|
+|id|String|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -52,9 +52,10 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 685
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "enrolledDeviceCount": 3,
   "mdmEnrolledCount": 0,
   "dualEnrolledDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

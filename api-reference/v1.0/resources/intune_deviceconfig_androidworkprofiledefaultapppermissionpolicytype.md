@@ -2,7 +2,7 @@
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
+Android 工作配置文件默认应用程序权限策略类型。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
@@ -10,11 +10,6 @@ androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 |提示|1|提示。|
 |autoGrant|2|自动授予。|
 |autoDeny|3|自动拒绝。|
-
-
-
-
-
 
 
 

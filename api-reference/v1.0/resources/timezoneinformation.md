@@ -1,7 +1,7 @@
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 
 
-表示时区。 支持的格式为 Windows，如果修复了当前已知问题，还支持 [Internet 编号分配机构 (IANA) 时区](http://www.iana.org/time-zones)（也称为 Olson 时区）格式。
+表示时区。 支持的格式为 Windows，如果修复了当前已知问题，还支持 [Internet 编号分配机构 (IANA) 时区](https://www.iana.org/time-zones)（也称为 Olson 时区）格式。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

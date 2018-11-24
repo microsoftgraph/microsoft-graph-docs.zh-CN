@@ -4,10 +4,10 @@
 
 目前，此操作返回纯 HTML 格式的邮件正文。
 
-有两种应用可以在另一个用户的邮件文件夹中获取邮件的情景：
+有两种方案，其中应用程序可以在另一个用户的邮件文件夹中收到一条消息：
 
-* 如果应用拥有应用程序权限，或者，
-* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
+* 如果应用程序具有应用程序权限，或，
+* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
 
 由于**邮件**资源支持[扩展](../../../concepts/extensibility_overview.md)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
@@ -30,12 +30,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
-| Prefer: outlook.body-content-type | 字符串 | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
+| Authorization  | string  | Bearer {token}。必需。 |
+| Prefer: outlook.body-content-type | string | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-下面的示例使用 `$select` 查询参数来获取邮件的的 Internet 邮件标头。 
+下面的示例使用`$select`查询参数来获取一条消息的 Internet 邮件标头。 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -140,7 +140,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 注意：为简便起见，响应对象中的邮件标头集有所删减。 实际调用将返回所有标头。
+下面是一个响应示例。 注意： 响应对象中的邮件头的集将被截断为简便起见。 从实际的呼叫，将返回所有的标头。
 <!-- {
   "blockType": "response",
   "truncated": true,

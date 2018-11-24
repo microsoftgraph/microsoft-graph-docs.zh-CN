@@ -10,16 +10,17 @@
 |description|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
-|denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|
+|denied|布尔值|如果为 true，则应用的保护或免除受到拒绝。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionApp",
@@ -30,11 +31,6 @@
   "denied": true
 }
 ```
-
-
-
-
-
 
 
 

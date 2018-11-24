@@ -15,10 +15,11 @@ Windows 信息保护 DataRecoveryCertificate
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDataRecoveryCertificate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate",
@@ -28,11 +29,6 @@ Windows 信息保护 DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
-
-
-
-
-
 
 
 

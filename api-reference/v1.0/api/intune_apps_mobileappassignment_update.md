@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) 对象的 JSON 表示形式。
@@ -34,8 +34,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可能的值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|id|String|实体的键。|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
@@ -50,9 +50,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 215
+Content-length: 273
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
@@ -82,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

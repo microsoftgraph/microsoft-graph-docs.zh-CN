@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md) 对象的 JSON 表示形式。
@@ -34,29 +34,29 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|版本|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|布尔值|是否需要密码。|
-|passwordBlockSimple|布尔值|指示是否阻止简单密码。|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|passwordRequired|Boolean|是否需要密码。|
+|passwordBlockSimple|Boolean|指示是否阻止简单密码。|
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可能的值是：`deviceDefault`、`alphanumeric`、`numeric`。|
-|osMinimumVersion|字符串|最低 IOS 版本。|
-|osMaximumVersion|字符串|最高 IOS 版本。|
-|systemIntegrityProtectionEnabled|布尔值|要求设备已启用系统完整性保护。|
-|deviceThreatProtectionEnabled|布尔值|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁保护最低风险级别报告违规.。可能的值为： `unavailable`， `secured`， `low`， `medium`， `high`， `notSet`。|
-|storageRequireEncryption|布尔值|要求对 Mac 操作系统设备加密。|
-|firewallEnabled|布尔值|是否应启用防火墙。|
-|firewallBlockAllIncoming|布尔值|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|布尔值|对应于"启用隐藏模式"。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|osMinimumVersion|String|最低 IOS 版本。|
+|osMaximumVersion|String|最高 IOS 版本。|
+|systemIntegrityProtectionEnabled|Boolean|要求设备已启用系统完整性保护。|
+|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
+|firewallEnabled|布尔|是否应启用防火墙，或不。|
+|firewallBlockAllIncoming|布尔|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|布尔|对应于"启用隐藏模式"。|
 
 
 
@@ -69,11 +69,11 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 853
+Content-length: 849
 
 {
+  "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -130,11 +130,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
-
-
-
-
 
 
 

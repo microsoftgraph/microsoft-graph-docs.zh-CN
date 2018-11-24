@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 2fd6c08e1cfc28a77019d174763b9d698519b6a2
-ms.sourcegitcommit: 9e4dc7745eb1bbbe595afd8c7f3db4c19c6bb4ac
-ms.translationtype: HT
+ms.openlocfilehash: a9c715983d83a448175c2c9d4110a92ff71edbbe
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23271313"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26571663"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -55,16 +55,16 @@ ms.locfileid: "23271313"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **description**         | 字符串  | 面向用户的列描述。
-| **displayName**         | 字符串  | 面向用户的列名称。
-| **enforceUniqueValues** | 布尔值 | 如果为 true，则此列不能有两个列表项具有相同的值。
-| **hidden**              | 布尔值 | 指定列是否显示在用户界面中。
-| **id**                  | 字符串  | 列的唯一标识符。
-| **indexed**             | 布尔值 | 指定列值是否可用于排序和搜索。
-| **name**                | 字符串  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
-| **readOnly**            | 布尔值    | 指定是否可以修改列值。
-| **required**            | 布尔值 | 指定列值是否不可选。
+| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **description**         | string  | 面向用户的列描述。
+| **displayName**         | string  | 面向用户的列名称。
+| **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
+| **hidden**              | boolean | 指定列是否显示在用户界面中。
+| **id**                  | string  | 列的唯一标识符。
+| **indexed**             | boolean | 指定列值是否可用于排序和搜索。
+| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **readOnly**            | bool    | 指定是否可以修改列值。
+| **required**            | boolean | 指定列值是否不可选。
 
 列可以包含各种类型的数据。
 以下属性表示列存储的数据类型以及该数据的其他设置。
@@ -72,7 +72,7 @@ ms.locfileid: "23271313"
 
 | 属性名称     | 类型                    | 说明
 |:------------------|:------------------------|:-------------------------------
-| **布尔值**       | [booleanColumn][]       | 此列存储布尔值。
+| **boolean**       | [booleanColumn][]       | 此列存储布尔值。
 | **calculated**    | [calculatedColumn][]    | 根据其他列计算此列的数据。
 | **choice**        | [choiceColumn][]        | 此列存储所选列表中的数据。
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
@@ -84,7 +84,7 @@ ms.locfileid: "23271313"
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-虽然上面体现了最常见的字段类型，此 API 仍缺少一些类型。
+时的最常见的字段类型表示上方，此 API 仍然缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注
@@ -107,7 +107,8 @@ ms.locfileid: "23271313"
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
+
+  [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!-- {
   "type": "#page.annotation",

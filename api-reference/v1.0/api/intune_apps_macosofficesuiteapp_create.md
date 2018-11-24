@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/JSON|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 macOSOfficeSuiteApp 对象的 JSON 表示形式。
@@ -34,20 +34,20 @@ POST /deviceAppManagement/mobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|显示名称|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|出版商|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|视图|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|布尔值|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|拥有者|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|开发人员|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|注释|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用程序的发布状态。除非应用程序已发布，否则无法分配应用程序。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。可取值为：`notPublished`、`processing`、`published`。|
+|isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 
 
 
@@ -60,7 +60,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 648
+Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -72,7 +72,6 @@ Content-length: 648
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -112,11 +111,6 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
-
-
-
-
-
 
 
 
