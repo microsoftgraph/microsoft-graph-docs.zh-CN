@@ -1,30 +1,26 @@
-# <a name="edgesearchenginebase-resource-type"></a><span data-ttu-id="821c4-101">edgeSearchEngineBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="821c4-101">edgeSearchEngineBase resource type</span></span>
+# <a name="edgesearchenginebase-resource-type"></a><span data-ttu-id="b6347-101">edgeSearchEngineBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="b6347-101">edgeSearchEngineBase resource type</span></span>
 
-> <span data-ttu-id="821c4-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="821c4-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b6347-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="b6347-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="821c4-103">允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。</span><span class="sxs-lookup"><span data-stu-id="821c4-103">Allows IT admins to set a default search engine for MDM-Controlled devices.</span></span> <span data-ttu-id="821c4-104">如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。</span><span class="sxs-lookup"><span data-stu-id="821c4-104">Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.</span></span>
-## <a name="properties"></a><span data-ttu-id="821c4-105">属性</span><span class="sxs-lookup"><span data-stu-id="821c4-105">Properties</span></span>
-|<span data-ttu-id="821c4-106">属性</span><span class="sxs-lookup"><span data-stu-id="821c4-106">Property</span></span>|<span data-ttu-id="821c4-107">类型</span><span class="sxs-lookup"><span data-stu-id="821c4-107">Type</span></span>|<span data-ttu-id="821c4-108">说明</span><span class="sxs-lookup"><span data-stu-id="821c4-108">Description</span></span>|
+<span data-ttu-id="b6347-103">允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。</span><span class="sxs-lookup"><span data-stu-id="b6347-103">Allows IT admins to set a default search engine for MDM-Controlled devices.</span></span> <span data-ttu-id="b6347-104">如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。</span><span class="sxs-lookup"><span data-stu-id="b6347-104">Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.</span></span>
+## <a name="properties"></a><span data-ttu-id="b6347-105">属性</span><span class="sxs-lookup"><span data-stu-id="b6347-105">Properties</span></span>
+|<span data-ttu-id="b6347-106">属性</span><span class="sxs-lookup"><span data-stu-id="b6347-106">Property</span></span>|<span data-ttu-id="b6347-107">类型</span><span class="sxs-lookup"><span data-stu-id="b6347-107">Type</span></span>|<span data-ttu-id="b6347-108">说明</span><span class="sxs-lookup"><span data-stu-id="b6347-108">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="821c4-109">关系</span><span class="sxs-lookup"><span data-stu-id="821c4-109">Relationships</span></span>
-<span data-ttu-id="821c4-110">无</span><span class="sxs-lookup"><span data-stu-id="821c4-110">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="821c4-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="821c4-111">JSON Representation</span></span>
-<span data-ttu-id="821c4-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="821c4-112">Here is a JSON representation of the resource.</span></span>
-<!--{
+## <a name="relationships"></a><span data-ttu-id="b6347-109">关系</span><span class="sxs-lookup"><span data-stu-id="b6347-109">Relationships</span></span>
+<span data-ttu-id="b6347-110">无</span><span class="sxs-lookup"><span data-stu-id="b6347-110">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b6347-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b6347-111">JSON Representation</span></span>
+<span data-ttu-id="b6347-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b6347-112">Here is a JSON representation of the resource.</span></span>
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,35 +1,31 @@
-# <a name="ioslobappassignmentsettings-resource-type"></a><span data-ttu-id="4cc20-101">iosLobAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="4cc20-101">iosLobAppAssignmentSettings resource type</span></span>
+# <a name="ioslobappassignmentsettings-resource-type"></a><span data-ttu-id="f6c85-101">iosLobAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="f6c85-101">iosLobAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="4cc20-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="4cc20-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f6c85-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="f6c85-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="4cc20-103">包含用于为组分配 iOS LOB 移动应用的属性。</span><span class="sxs-lookup"><span data-stu-id="4cc20-103">Contains properties used to assign an iOS LOB mobile app to a group.</span></span>
+<span data-ttu-id="f6c85-103">包含用于为组分配 iOS LOB 移动应用的属性。</span><span class="sxs-lookup"><span data-stu-id="f6c85-103">Contains properties used to assign an iOS LOB mobile app to a group.</span></span>
 
-<span data-ttu-id="4cc20-104">继承自 [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="4cc20-104">Inherits from [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="f6c85-104">继承自 [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="f6c85-104">Inherits from [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4cc20-105">属性</span><span class="sxs-lookup"><span data-stu-id="4cc20-105">Properties</span></span>
-|<span data-ttu-id="4cc20-106">属性</span><span class="sxs-lookup"><span data-stu-id="4cc20-106">Property</span></span>|<span data-ttu-id="4cc20-107">类型</span><span class="sxs-lookup"><span data-stu-id="4cc20-107">Type</span></span>|<span data-ttu-id="4cc20-108">说明</span><span class="sxs-lookup"><span data-stu-id="4cc20-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f6c85-105">属性</span><span class="sxs-lookup"><span data-stu-id="f6c85-105">Properties</span></span>
+|<span data-ttu-id="f6c85-106">属性</span><span class="sxs-lookup"><span data-stu-id="f6c85-106">Property</span></span>|<span data-ttu-id="f6c85-107">类型</span><span class="sxs-lookup"><span data-stu-id="f6c85-107">Type</span></span>|<span data-ttu-id="f6c85-108">说明</span><span class="sxs-lookup"><span data-stu-id="f6c85-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4cc20-109">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="4cc20-109">vpnConfigurationId</span></span>|<span data-ttu-id="4cc20-110">String</span><span class="sxs-lookup"><span data-stu-id="4cc20-110">String</span></span>|<span data-ttu-id="4cc20-111">要申请此应用的 VPN 配置 ID。</span><span class="sxs-lookup"><span data-stu-id="4cc20-111">The VPN Configuration Id to apply for this app.</span></span>|
+|<span data-ttu-id="f6c85-109">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="f6c85-109">vpnConfigurationId</span></span>|<span data-ttu-id="f6c85-110">String</span><span class="sxs-lookup"><span data-stu-id="f6c85-110">String</span></span>|<span data-ttu-id="f6c85-111">要申请此应用的 VPN 配置 ID。</span><span class="sxs-lookup"><span data-stu-id="f6c85-111">The VPN Configuration Id to apply for this app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4cc20-112">关系</span><span class="sxs-lookup"><span data-stu-id="4cc20-112">Relationships</span></span>
-<span data-ttu-id="4cc20-113">无</span><span class="sxs-lookup"><span data-stu-id="4cc20-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="4cc20-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4cc20-114">JSON Representation</span></span>
-<span data-ttu-id="4cc20-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4cc20-115">Here is a JSON representation of the resource.</span></span>
-<!--{
+## <a name="relationships"></a><span data-ttu-id="f6c85-112">关系</span><span class="sxs-lookup"><span data-stu-id="f6c85-112">Relationships</span></span>
+<span data-ttu-id="f6c85-113">无</span><span class="sxs-lookup"><span data-stu-id="f6c85-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f6c85-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f6c85-114">JSON Representation</span></span>
+<span data-ttu-id="f6c85-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f6c85-115">Here is a JSON representation of the resource.</span></span>
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosLobAppAssignmentSettings",
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
 
 
 

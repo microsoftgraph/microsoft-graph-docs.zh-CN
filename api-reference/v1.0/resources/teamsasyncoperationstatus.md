@@ -1,0 +1,15 @@
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="c43ae-101">teamsAsyncOperationStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c43ae-101">teamsAsyncOperationStatus enum type</span></span>
+
+
+
+<span data-ttu-id="c43ae-102">介绍[teamsAsyncOperation](teamsasyncoperation.md)的当前状态。</span><span class="sxs-lookup"><span data-stu-id="c43ae-102">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="c43ae-103">成员</span><span class="sxs-lookup"><span data-stu-id="c43ae-103">Members</span></span>
+
+| <span data-ttu-id="c43ae-104">成员</span><span class="sxs-lookup"><span data-stu-id="c43ae-104">Member</span></span> | <span data-ttu-id="c43ae-105">值</span><span class="sxs-lookup"><span data-stu-id="c43ae-105">Value</span></span>| <span data-ttu-id="c43ae-106">说明</span><span class="sxs-lookup"><span data-stu-id="c43ae-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="c43ae-107">无效</span><span class="sxs-lookup"><span data-stu-id="c43ae-107">invalid</span></span>|<span data-ttu-id="c43ae-108">0</span><span class="sxs-lookup"><span data-stu-id="c43ae-108">0</span></span>|<span data-ttu-id="c43ae-109">值无效。</span><span class="sxs-lookup"><span data-stu-id="c43ae-109">Invalid value.</span></span>|
+|<span data-ttu-id="c43ae-110">为 notStarted</span><span class="sxs-lookup"><span data-stu-id="c43ae-110">notStarted</span></span>|<span data-ttu-id="c43ae-111">1</span><span class="sxs-lookup"><span data-stu-id="c43ae-111">1</span></span>|<span data-ttu-id="c43ae-112">尚未开始此操作。</span><span class="sxs-lookup"><span data-stu-id="c43ae-112">The operation has not started.</span></span>|
+|<span data-ttu-id="c43ae-113">正在进行</span><span class="sxs-lookup"><span data-stu-id="c43ae-113">inProgress</span></span>|<span data-ttu-id="c43ae-114">2</span><span class="sxs-lookup"><span data-stu-id="c43ae-114">2</span></span>|<span data-ttu-id="c43ae-115">正在运行的操作。</span><span class="sxs-lookup"><span data-stu-id="c43ae-115">The operation is running.</span></span>|
+|<span data-ttu-id="c43ae-116">succeeded</span><span class="sxs-lookup"><span data-stu-id="c43ae-116">succeeded</span></span>|<span data-ttu-id="c43ae-117">3</span><span class="sxs-lookup"><span data-stu-id="c43ae-117">3</span></span>|<span data-ttu-id="c43ae-118">操作成功。</span><span class="sxs-lookup"><span data-stu-id="c43ae-118">The operation succeeded.</span></span>|
+|<span data-ttu-id="c43ae-119">failed</span><span class="sxs-lookup"><span data-stu-id="c43ae-119">failed</span></span>|<span data-ttu-id="c43ae-120">4</span><span class="sxs-lookup"><span data-stu-id="c43ae-120">4</span></span>|<span data-ttu-id="c43ae-121">操作失败。</span><span class="sxs-lookup"><span data-stu-id="c43ae-121">The operation failed.</span></span>|

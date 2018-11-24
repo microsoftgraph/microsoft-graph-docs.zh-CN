@@ -1,0 +1,10 @@
+items:
+- name: Microsoft Graph
+  tocHref: /graph/
+  topicHref: /graph/overview
+ms.openlocfilehash: 7395be1f6cca77537fa39bef5df88423d3798e3e
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26605896"
