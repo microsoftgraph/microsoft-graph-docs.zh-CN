@@ -1,18 +1,18 @@
-# <a name="get-alert"></a><span data-ttu-id="186ce-101">Get alert</span><span class="sxs-lookup"><span data-stu-id="186ce-101">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="16bb6-101">获取警报</span><span class="sxs-lookup"><span data-stu-id="16bb6-101">Get alert</span></span>
 
- <span data-ttu-id="186ce-102">检索 [alert](../resources/alert.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="186ce-102">Retrieve the properties and relationships of [plannertaskdetails](../resources/alert.md) object.</span></span>
+ <span data-ttu-id="16bb6-102">检索的属性和[通知](../resources/alert.md)对象的关系。</span><span class="sxs-lookup"><span data-stu-id="16bb6-102">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="186ce-103">权限</span><span class="sxs-lookup"><span data-stu-id="186ce-103">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="16bb6-103">权限</span><span class="sxs-lookup"><span data-stu-id="16bb6-103">Permissions</span></span>
 
-<span data-ttu-id="186ce-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="186ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="16bb6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="16bb6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="186ce-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="186ce-106">Permission type</span></span>      | <span data-ttu-id="186ce-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="186ce-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="16bb6-106">权限类型</span><span class="sxs-lookup"><span data-stu-id="16bb6-106">Permission type</span></span>      | <span data-ttu-id="16bb6-107">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="16bb6-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="186ce-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="186ce-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="186ce-109">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="186ce-109">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="186ce-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="186ce-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="186ce-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="186ce-111">Not supported.</span></span>  |
-|<span data-ttu-id="186ce-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="186ce-112">Application</span></span> | <span data-ttu-id="186ce-113">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="186ce-113">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="16bb6-108">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16bb6-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="16bb6-109">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16bb6-109">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="16bb6-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="16bb6-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="16bb6-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="16bb6-111">Not supported.</span></span>  |
+|<span data-ttu-id="16bb6-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="16bb6-112">Application</span></span> | <span data-ttu-id="16bb6-113">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16bb6-113">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="186ce-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="186ce-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16bb6-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16bb6-114">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -20,25 +20,25 @@
 GET /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="186ce-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="186ce-115">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="16bb6-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="16bb6-115">Request headers</span></span>
 
-| <span data-ttu-id="186ce-116">名称</span><span class="sxs-lookup"><span data-stu-id="186ce-116">Name</span></span>      |<span data-ttu-id="186ce-117">说明</span><span class="sxs-lookup"><span data-stu-id="186ce-117">Description</span></span>|
+| <span data-ttu-id="16bb6-116">名称</span><span class="sxs-lookup"><span data-stu-id="16bb6-116">Name</span></span>      |<span data-ttu-id="16bb6-117">说明</span><span class="sxs-lookup"><span data-stu-id="16bb6-117">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="186ce-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="186ce-118">Authorization</span></span>  | <span data-ttu-id="186ce-p102">持有者 {代码}。必填。</span><span class="sxs-lookup"><span data-stu-id="186ce-p102">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="16bb6-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="16bb6-118">Authorization</span></span>  | <span data-ttu-id="16bb6-p102">Bearer {code}。必需。</span><span class="sxs-lookup"><span data-stu-id="16bb6-p102">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="186ce-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="186ce-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="16bb6-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="16bb6-121">Request body</span></span>
 
-<span data-ttu-id="186ce-122">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="186ce-122">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="16bb6-122">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="16bb6-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="186ce-123">响应</span><span class="sxs-lookup"><span data-stu-id="186ce-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="16bb6-123">响应</span><span class="sxs-lookup"><span data-stu-id="16bb6-123">Response</span></span>
 
-<span data-ttu-id="186ce-124">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 **alert** 对象。</span><span class="sxs-lookup"><span data-stu-id="186ce-124">If successful, this method returns a `200 OK` response code and an updated **windows10CompliancePolicy** object in the response body.</span></span>
+<span data-ttu-id="16bb6-124">如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。</span><span class="sxs-lookup"><span data-stu-id="16bb6-124">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="16bb6-125">如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。</span><span class="sxs-lookup"><span data-stu-id="16bb6-125">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the providers response in a warning header.</span></span> <span data-ttu-id="16bb6-126">有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="16bb6-126">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="186ce-125">示例</span><span class="sxs-lookup"><span data-stu-id="186ce-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="16bb6-127">示例</span><span class="sxs-lookup"><span data-stu-id="16bb6-127">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="186ce-126">请求</span><span class="sxs-lookup"><span data-stu-id="186ce-126">Request</span></span>
+### <a name="request"></a><span data-ttu-id="16bb6-128">请求</span><span class="sxs-lookup"><span data-stu-id="16bb6-128">Request</span></span>
 
-<span data-ttu-id="186ce-127">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="186ce-127">The following is an example of the request.</span></span>
+<span data-ttu-id="16bb6-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="16bb6-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -48,9 +48,9 @@ GET /security/alerts/{alert_id}
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 
-### <a name="response"></a><span data-ttu-id="186ce-128">响应</span><span class="sxs-lookup"><span data-stu-id="186ce-128">Response</span></span>
+### <a name="response"></a><span data-ttu-id="16bb6-130">响应</span><span class="sxs-lookup"><span data-stu-id="16bb6-130">Response</span></span>
 
-<span data-ttu-id="186ce-129">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="186ce-129">The following is an example of the response.</span></span>
+<span data-ttu-id="16bb6-131">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="16bb6-131">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

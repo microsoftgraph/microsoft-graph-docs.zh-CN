@@ -1,18 +1,18 @@
-# <a name="get-targetedmanagedapppolicyassignment"></a><span data-ttu-id="5046c-101">获取 targetedManagedAppPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="5046c-101">Get targetedManagedAppPolicyAssignment</span></span>
+# <a name="get-targetedmanagedapppolicyassignment"></a><span data-ttu-id="65693-101">获取 targetedManagedAppPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="65693-101">Get targetedManagedAppPolicyAssignment</span></span>
 
-> <span data-ttu-id="5046c-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="5046c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="65693-102">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="65693-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="5046c-103">读取 [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5046c-103">Read properties and relationships of the [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="5046c-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="5046c-104">Prerequisites</span></span>
-<span data-ttu-id="5046c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="5046c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="65693-103">读取 [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="65693-103">Read properties and relationships of the [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="65693-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="65693-104">Prerequisites</span></span>
+<span data-ttu-id="65693-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。</span><span class="sxs-lookup"><span data-stu-id="65693-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="5046c-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="5046c-107">Permission type</span></span>|<span data-ttu-id="5046c-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5046c-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="65693-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="65693-107">Permission type</span></span>|<span data-ttu-id="65693-108">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="65693-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5046c-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5046c-109">Delegated (work or school account)</span></span>|<span data-ttu-id="5046c-110">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="5046c-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="5046c-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5046c-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5046c-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="5046c-112">Not supported.</span></span>|
-|<span data-ttu-id="5046c-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="5046c-113">Application</span></span>|<span data-ttu-id="5046c-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5046c-114">Not supported.</span></span>|
+|<span data-ttu-id="65693-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65693-109">Delegated (work or school account)</span></span>|<span data-ttu-id="65693-110">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="65693-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="65693-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="65693-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="65693-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="65693-112">Not supported.</span></span>|
+|<span data-ttu-id="65693-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="65693-113">Application</span></span>|<span data-ttu-id="65693-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="65693-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5046c-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5046c-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65693-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65693-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -25,29 +25,29 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5046c-116">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5046c-116">Optional query parameters</span></span>
-<span data-ttu-id="5046c-117">此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5046c-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="5046c-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="5046c-118">Request headers</span></span>
-|<span data-ttu-id="5046c-119">标头</span><span class="sxs-lookup"><span data-stu-id="5046c-119">Header</span></span>|<span data-ttu-id="5046c-120">值</span><span class="sxs-lookup"><span data-stu-id="5046c-120">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="65693-116">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="65693-116">Optional query parameters</span></span>
+<span data-ttu-id="65693-117">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="65693-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="65693-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="65693-118">Request headers</span></span>
+|<span data-ttu-id="65693-119">标头</span><span class="sxs-lookup"><span data-stu-id="65693-119">Header</span></span>|<span data-ttu-id="65693-120">值</span><span class="sxs-lookup"><span data-stu-id="65693-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5046c-121">授权</span><span class="sxs-lookup"><span data-stu-id="5046c-121">Authorization</span></span>|<span data-ttu-id="5046c-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5046c-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5046c-123">Accept</span><span class="sxs-lookup"><span data-stu-id="5046c-123">Accept</span></span>|<span data-ttu-id="5046c-124">application/json</span><span class="sxs-lookup"><span data-stu-id="5046c-124">application/json</span></span>|
+|<span data-ttu-id="65693-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="65693-121">Authorization</span></span>|<span data-ttu-id="65693-122">需要持有者&lt;令牌&gt;。</span><span class="sxs-lookup"><span data-stu-id="65693-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="65693-123">Accept</span><span class="sxs-lookup"><span data-stu-id="65693-123">Accept</span></span>|<span data-ttu-id="65693-124">application/json</span><span class="sxs-lookup"><span data-stu-id="65693-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5046c-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5046c-125">Request body</span></span>
-<span data-ttu-id="5046c-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5046c-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="65693-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="65693-125">Request body</span></span>
+<span data-ttu-id="65693-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="65693-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5046c-127">响应</span><span class="sxs-lookup"><span data-stu-id="5046c-127">Response</span></span>
-<span data-ttu-id="5046c-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5046c-128">If successful, this method returns a `200 OK` response code and [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="65693-127">响应</span><span class="sxs-lookup"><span data-stu-id="65693-127">Response</span></span>
+<span data-ttu-id="65693-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="65693-128">If successful, this method returns a `200 OK` response code and [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5046c-129">示例</span><span class="sxs-lookup"><span data-stu-id="5046c-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="5046c-130">请求</span><span class="sxs-lookup"><span data-stu-id="5046c-130">Request</span></span>
-<span data-ttu-id="5046c-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5046c-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="65693-129">示例</span><span class="sxs-lookup"><span data-stu-id="65693-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="65693-130">请求</span><span class="sxs-lookup"><span data-stu-id="65693-130">Request</span></span>
+<span data-ttu-id="65693-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="65693-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="5046c-132">响应</span><span class="sxs-lookup"><span data-stu-id="5046c-132">Response</span></span>
-<span data-ttu-id="5046c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5046c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="65693-132">响应</span><span class="sxs-lookup"><span data-stu-id="65693-132">Response</span></span>
+<span data-ttu-id="65693-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="65693-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -63,11 +63,6 @@ Content-Length: 252
   }
 }
 ```
-
-
-
-
-
 
 
 
