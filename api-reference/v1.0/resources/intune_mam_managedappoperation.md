@@ -15,22 +15,22 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|操作名称。|
+|displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
-|州|字符串|操作的当前状态|
-|ID|字符串|实体的键。|
-|版本|字符串|实体的版本。|
+|state|String|操作的当前状态|
+|id|String|实体的键。|
+|version|String|实体版本。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
@@ -41,11 +41,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

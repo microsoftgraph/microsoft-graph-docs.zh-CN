@@ -2,21 +2,16 @@
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-日本电影分级标签
+电影分级日本标签
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|general|2|适合所有年龄段|
-|parentalGuidance|3|PG-12 分类请求家长为 12 岁以下的年轻观众提供指 导|
-|agesAbove15|4|R15+ 分类适合 15 岁或以上的观众|
-|agesAbove18|5|R18+ 分类适合 18 岁或以上的观众|
-
-
-
-
-
+|常规|2|适用于所有岁|
+|parentalGuidance|3|PG 12 分类请求家长指南年轻用户在 12|
+|agesAbove15|4|R15 + 分类是 15 的适用于观众或较旧|
+|agesAbove18|5|R18 + 分类是 18 的合适的查看器或更低|
 
 
 

@@ -6,17 +6,18 @@ Windows 信息保护 IP 范围集合
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称|
-|范围|[ipRange](../resources/intune_mam_iprange.md) 集合|IP 范围集合|
+|displayName|String|显示名称|
+|ranges|[ipRange](../resources/intune_mam_iprange.md) 集合|IP 范围集合|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
@@ -30,11 +31,6 @@ Windows 信息保护 IP 范围集合
   ]
 }
 ```
-
-
-
-
-
 
 
 

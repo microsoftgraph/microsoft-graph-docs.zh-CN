@@ -22,11 +22,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|需要持有者&lt;令牌&gt;。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1243
+Content-Length: 1265
 
 {
   "value": {
@@ -82,16 +82,12 @@ Content-Length: 1243
       "v8_0": true,
       "v9_0": true,
       "v10_0": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true
     }
   }
 }
 ```
-
-
-
-
-
 
 
 

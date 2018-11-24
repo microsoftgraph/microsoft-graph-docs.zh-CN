@@ -15,7 +15,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
 |displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.detectedApp",
@@ -44,11 +44,6 @@
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

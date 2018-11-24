@@ -24,8 +24,8 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) 对象的 JSON 表示形式。
@@ -34,14 +34,14 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
+|id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可能的值为： `unavailable` 、 `available` 、 `enabled` 、 `unresponsive` 。|
-|androidEnabled|布尔值|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|iosEnabled|布尔值|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
-|androidDeviceBlockedOnMissingPartnerData|布尔值|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|iosDeviceBlockedOnMissingPartnerData|布尔值|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
-|partnerUnsupportedOsVersionBlocked|布尔值|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|数据同步合作伙伴为此帐户的的状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
+|androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
 |partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
 
 
@@ -55,9 +55,10 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 347
+Content-length: 414
 
 {
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
@@ -89,11 +90,6 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
-
-
-
-
-
 
 
 

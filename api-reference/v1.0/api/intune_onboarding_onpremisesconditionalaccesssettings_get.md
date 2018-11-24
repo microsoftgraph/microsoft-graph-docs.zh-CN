@@ -22,11 +22,11 @@ GET /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 357
+Content-Length: 363
 
 {
   "value": {
@@ -55,20 +55,15 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "77c9d466-d466-77c9-66d4-c97766d4c977"
     ],
     "excludedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
     ],
     "overrideDefaultRule": true
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|应用程序/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) 对象的 JSON 表示形式。
@@ -34,10 +34,10 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|合作伙伴的唯一标识符。|
-|displayName|字符串|合作伙伴的显示名称。|
-|onboardingUrl|字符串|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD。可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
+|id|String|合作伙伴的唯一标识符。|
+|displayName|String|合作伙伴的显示名称。|
+|onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
 
 
@@ -51,9 +51,10 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
+  "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
@@ -77,11 +78,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

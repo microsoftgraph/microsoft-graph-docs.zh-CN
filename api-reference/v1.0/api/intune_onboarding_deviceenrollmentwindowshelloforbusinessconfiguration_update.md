@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md) 对象的 JSON 表示形式。
@@ -34,25 +34,25 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|displayName|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|说明|字符串|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|优先级|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|id|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|版本|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|尚未记录|
 |pinMaximumLength|Int32|尚未记录|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未记录。可取值为：`allowed`、`required`、`disallowed`。|
-|state|[enablement](../resources/intune_onboarding_enablement.md)|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
-|securityDeviceRequired|布尔值|尚未记录|
-|unlockWithBiometricsEnabled|布尔值|尚未记录|
-|remotePassportEnabled|布尔值|尚未记录|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
+|状态|[启用](../resources/intune_onboarding_enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityDeviceRequired|Boolean|尚未记录|
+|unlockWithBiometricsEnabled|Boolean|尚未记录|
+|remotePassportEnabled|Boolean|尚未记录|
 |pinPreviousBlockCount|Int32|尚未记录|
 |pinExpirationInDays|Int32|尚未记录|
-|enhancedBiometricsState|[enablement](../resources/intune_onboarding_enablement.md)|尚未记录。可取值为：`notConfigured`、`enabled`、`disabled`。|
+|enhancedBiometricsState|[启用](../resources/intune_onboarding_enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
@@ -65,13 +65,13 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 602
+Content-length: 629
 
 {
+  "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
   "displayName": "Display Name value",
   "description": "Description value",
   "priority": 8,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
@@ -118,11 +118,6 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
-
-
-
-
-
 
 
 

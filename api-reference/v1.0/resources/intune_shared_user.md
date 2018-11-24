@@ -7,11 +7,11 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出用户](../api/intune_shared_user_list.md) 对象。|[user](../resources/intune_shared_user.md) 集合|列出 [user](../resources/intune_shared_user.md) 对象的属性和关系。|
-|[获取用户](../api/intune_shared_user_get.md) 对象。|[user](../resources/intune_shared_user.md) 集合|读取 [user](../resources/intune_shared_user.md) 对象的属性和关系。|
-|[创建用户](../api/intune_shared_user_create.md)对象。|[user](../resources/intune_shared_user.md) 集合|创建新的 [user](../resources/intune_shared_user.md) 对象。|
-|[删除用户](../api/intune_shared_user_delete.md) 。|无|删除 [user](../resources/intune_shared_user.md)。|
-|[更新用户](../api/intune_shared_user_update.md)对象。|[用户](../resources/intune_shared_user.md)|更新 [user](../resources/intune_shared_user.md) 对象的属性。|
+|[用户列表](../api/intune_shared_user_list.md)对象。|[user](../resources/intune_shared_user.md) 集合|列出 [user](../resources/intune_shared_user.md) 对象的属性和关系。|
+|[获取用户](../api/intune_shared_user_get.md)对象。|[用户](../resources/intune_shared_user.md) 集合|读取 [user](../resources/intune_shared_user.md) 对象的属性和关系。|
+|[创建用户](../api/intune_shared_user_create.md)对象。|[用户](../resources/intune_shared_user.md) 集合|创建新的 [user](../resources/intune_shared_user.md) 对象。|
+|[删除用户](../api/intune_shared_user_delete.md)。|无|删除 [user](../resources/intune_shared_user.md)。|
+|[更新用户](../api/intune_shared_user_update.md)对象。|[user](../resources/intune_shared_user.md)|更新 [user](../resources/intune_shared_user.md) 对象的属性。|
 |**设备管理**|
 |[removeAllDevicesFromManagement 操作](../api/intune_shared_user_removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
 |**移动应用程序管理 (MAM)**|
@@ -22,8 +22,8 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|用户的唯一标识符。|
-|**加入**|
+|id|String|用户的唯一标识符。|
+|**入职培训**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
 
@@ -34,7 +34,7 @@
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) 集合|与用户关联的管理设备。|
 |**移动应用程序管理 (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
-|**疑难解答**|
+|**故障排除**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -45,7 +45,7 @@
   "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
--->
+--> 
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",

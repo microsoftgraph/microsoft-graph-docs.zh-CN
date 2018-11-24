@@ -2,7 +2,7 @@
 
 通过延长到期时间续订订阅。
 
-超过资源类型确定的时间长度后订阅过期。 为了避免遗漏通知，应用程序应在订阅到期日之前续订订阅。 请参阅[订阅](../resources/subscription.md)，了解每个资源类型的最长订阅时间。
+订阅过期后一个随资源类型的时间长度。 为了避免丢失通知，应用程序应更新其订阅之前其到期日期。 请参阅最大长度为每个资源类型订阅的[订阅](../resources/subscription.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -11,13 +11,14 @@
 | 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
 | 联系人                    | Contacts.Read       |
-| 对话               | Group.Read.All      |
-| 事件                      | Calendars.Read      |
-| 消息                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
-| 驱动器（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器（SharePoint 共享的内容和驱动器） | Files.ReadWrite.All |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
+| Drive（用户的 OneDrive）    | Files.ReadWrite     |
+| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
+|安全警报| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -31,7 +32,7 @@ PATCH /subscriptions/{id}
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 

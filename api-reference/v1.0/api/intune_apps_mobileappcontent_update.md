@@ -26,7 +26,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -36,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|应用内容版本。|
+|id|String|应用内容版本。|
 
 
 
@@ -49,9 +49,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 Content-type: application/json
-Content-length: 2
+Content-length: 58
 
-{}
+{
+  "@odata.type": "#microsoft.graph.mobileAppContent"
+}
 ```
 
 ### <a name="response"></a>响应
@@ -66,11 +68,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
-
-
-
-
 
 
 

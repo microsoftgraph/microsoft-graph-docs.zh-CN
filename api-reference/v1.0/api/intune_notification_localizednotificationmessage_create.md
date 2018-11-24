@@ -24,7 +24,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,12 +34,12 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|locale|字符串|此消息的目标区域设置。|
-|subject|字符串|消息模板主题。|
-|messageTemplate|字符串|消息模板内容。|
-|isDefault|布尔值|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
+|locale|String|此消息的目标区域设置。|
+|subject|String|消息模板主题。|
+|messageTemplate|String|消息模板内容。|
+|isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
 
 
@@ -52,11 +52,10 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
-Content-length: 264
+Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "locale": "Locale value",
   "subject": "Subject value",
   "messageTemplate": "Message Template value",
@@ -81,11 +80,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

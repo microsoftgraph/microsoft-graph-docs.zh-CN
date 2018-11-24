@@ -1,4 +1,4 @@
-# <a name="get-worksheetprotection"></a>获取 WorksheetProtection
+# <a name="get-worksheetprotection"></a>Get WorksheetProtection
 
 检索 worksheetprotection 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -16,12 +16,12 @@
 GET /workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
@@ -29,7 +29,7 @@ GET /workbook/worksheets/{id|name}/protection
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回`200 OK`响应代码和 [WorkbookWorksheetProtection](../resources/worksheetprotection.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和[WorkbookWorksheetProtection](../resources/worksheetprotection.md)响应正文中的对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

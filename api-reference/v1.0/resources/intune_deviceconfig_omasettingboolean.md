@@ -10,7 +10,7 @@ OMA 设置布尔定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|字符串|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|Boolean|值。|
 
@@ -18,10 +18,11 @@ OMA 设置布尔定义。
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",
@@ -31,11 +32,6 @@ OMA 设置布尔定义。
   "value": true
 }
 ```
-
-
-
-
-
 
 
 

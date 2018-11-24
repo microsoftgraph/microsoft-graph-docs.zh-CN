@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 iosUpdateConfiguration 对象的 JSON 表示形式。
@@ -34,15 +34,15 @@ POST /deviceManagement/deviceConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|使用时段开始时间（使用时段表示不应发生更新安装的时间范围）|
 |activeHoursEnd|TimeOfDay|使用时段结束时间（使用时段表示不应发生更新安装的时间范围）|
-|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md) 集合|配置为使用时段所对应的一周的某一天。该集合最多可包含 7 个元素。可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md)集合|配置为使用时段所对应的一周的某一天。 该集合最多可包含 7 个元素。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |utcTimeOffsetInMinutes|Int32|UTC 时间偏移，用分钟表示|
 
 
@@ -56,11 +56,10 @@ POST /deviceManagement/deviceConfigurations
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 389
+Content-length: 325
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -96,11 +95,6 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
-
-
-
-
-
 
 
 

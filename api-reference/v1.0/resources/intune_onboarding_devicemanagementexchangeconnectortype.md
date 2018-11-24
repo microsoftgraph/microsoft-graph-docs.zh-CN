@@ -6,15 +6,10 @@ Exchange 连接器的类型。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|onPremises|0|连接到内部部署的 Exchange 环境。|
-|hosted|1|连接到 O365 多租户 Exchange 环境|
+|onPremises|0|连接到内部部署 Exchange 环境。|
+|承载|1|连接到 O365 多租户 Exchange 环境|
 |serviceToService|2|Intune 服务直接连接到 O365 多租户 Exchange 环境|
-|dedicated|3|连接到 O365 专用 Exchange 环境。|
-
-
-
-
-
+|专用|3|连接到 O365 专用 Exchange 环境。|
 
 
 

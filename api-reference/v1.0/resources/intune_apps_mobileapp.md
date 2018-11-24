@@ -13,22 +13,22 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|displayName|字符串|管理员提供或导入的应用标题。|
-|description|字符串|应用的说明。|
-|publisher|字符串|应用的发布者。|
+|id|String|实体的键。|
+|displayName|String|管理员提供或导入的应用标题。|
+|description|String|应用的说明。|
+|publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。|
-|isFeatured|布尔值|指示应用是否被管理员标记为特色的值。|
-|privacyInformationUrl|字符串|隐私声明 Url。|
-|informationUrl|字符串|详细信息 Url。|
-|owner|字符串|应用的所有者。|
-|developer|字符串|应用的开发者。|
-|notes|字符串|应用的备注。|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。除非应用已发布，否则无法分配应用。可取值为：`notPublished`、`processing`、`published`。|
+|isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
+|privacyInformationUrl|String|隐私声明 Url。|
+|informationUrl|String|详细信息 Url。|
+|owner|String|应用的所有者。|
+|developer|String|应用的开发者。|
+|notes|String|应用的备注。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 |关系|类型|说明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) 集合|此应用的类别列表。|
@@ -36,12 +36,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -65,11 +65,6 @@
   "publishingState": "String"
 }
 ```
-
-
-
-
-
 
 
 

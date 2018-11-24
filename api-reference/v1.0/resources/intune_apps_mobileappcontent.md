@@ -15,7 +15,7 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|应用内容版本。|
+|id|String|应用内容版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -24,23 +24,18 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContent",
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
 
 
 

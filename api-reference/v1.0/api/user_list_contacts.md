@@ -1,11 +1,11 @@
 # <a name="list-contacts"></a>列出联系人
 
-从已登录用户的默认联系人文件夹中获取联系人集合。
+从已登录的用户默认联系人文件夹中获取联系人的集合。
 
-有两种应用可以在另一个用户的联系人文件夹中获取联系人的情景：
+有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：
 
-* 如果应用拥有应用程序权限，或者，
-* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-contacts-folders.md)。
+* 如果应用程序具有应用程序权限，或，
+* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-contacts-folders.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -38,7 +38,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 例如，你可以使用 `$filter` 查询参数根据联系人的电子邮件地址的域来过滤联系人：
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| 授权  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>请求正文

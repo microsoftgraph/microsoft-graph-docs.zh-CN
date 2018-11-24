@@ -1,6 +1,6 @@
 # <a name="list-sections"></a>列出分区
 
-检索 [onenoteSection](../resources/section.md) 对象的列表。
+检索[onenoteSection](../resources/section.md)对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections
 GET /sites/{id}/onenote/sections
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
 
 默认排序顺序是 `name asc`。
 
@@ -28,15 +28,15 @@ GET /sites/{id}/onenote/sections
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
-| 接受 | 字符串 | `application/json` |
+| Authorization  | string  | Bearer {token}。必需。 |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [onenoteSection](../resources/section.md) 对象集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[onenoteSection](../resources/section.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

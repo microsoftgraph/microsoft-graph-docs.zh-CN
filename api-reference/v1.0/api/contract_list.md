@@ -22,7 +22,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters)来帮助自定义响应。 
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 
 
 > 支持筛选 customerId、defaultDomainName 和 displayName。
 
@@ -30,7 +30,7 @@ GET /contracts
 
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -4,7 +4,7 @@
 
 可以查看所有邮箱设置或获取特定设置。
 
-时区是用户可以为用户邮箱设置的首选设置之一。 有效的时区格式包括 Windows 时区格式和 [Internet 号码分配局 (IANA) 时区](http://www.iana.org/time-zones)（亦称为“Olson 时区”）格式。 Windows 时区是默认格式。 
+时区是用户可以为用户邮箱设置的首选设置之一。 有效的时区格式包括 Windows 时区格式和 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）格式。 Windows 时区是默认格式。 
 
 获取用户的首选时区时，时区按创建时的格式返回。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user_update_mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。
 
@@ -18,13 +18,13 @@
 |应用程序 | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-获取用户的所有邮箱设置： <!-- { "blockType": "ignored" } -->
+若要获取的用户的所有邮箱设置：<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-获取特定设置，例如，仅获取自动答复设置、区域设置、时区或工作时间设置： <!-- { "blockType": "ignored" } -->
+若要获取特定设置-例如，仅自动答复设置、 区域设置、 时区、 或工作时间：<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -39,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

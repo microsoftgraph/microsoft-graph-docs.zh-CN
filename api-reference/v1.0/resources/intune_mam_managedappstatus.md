@@ -12,20 +12,20 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|状态报告的友好名称。|
-|id|字符串|实体的键。|
-|version|字符串|实体的版本。|
+|displayName|String|状态报告的友好名称。|
+|id|String|实体的键。|
+|version|String|实体版本。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",
@@ -34,11 +34,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,6 +1,6 @@
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
-为你的应用创建新或替换现有的用户活动。 如果想要在一个请求中创建用户活动和其相关的 **historyItems**，可以使用[深层插入](projectrome_put_activity.md#example-2---deep-insert)。
+创建一个新或替换现有用户活动应用程序。 如果您想要在一个请求中创建用户活动和其相关的**historyItems** ，您可以使用[深层插入](projectrome_put_activity.md#example-2---deep-insert)。
 
 ## <a name="permissions"></a>权限
 
@@ -21,21 +21,21 @@
 PUT /me/activities/{appActivityId}
 ```
 
->**注：** URL 中的 appActivityId 需要是 URL-safe 的（除 RFC 2396 未保留的字符外所有字符都必须转换为十六进制表示），但原始的 appActivityId 不必是 URL-safe 的。
+>**注意：** 在 URL appActivityId 需要 URL 安全 （除 RFC 2396 必须将未保留的字符转换为十六进制表示形式为所有字符），但原始 appActivityId 不必是安全的 URL。
 
 ## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|授权 | 字符串 | Bearer {token}。必需。|
+|Authorization | string | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [activity](../resources/projectrome_activity.md) 对象的 JSON 表示形式。
+在请求正文中，提供的[活动](../resources/projectrome_activity.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在活动被创建时返回 `201 Created`  响应代码，在活动被替换时返回 `200 OK`。
+如果成功，此方法返回`201 Created`如果创建活动的响应代码或`200 OK`如果活动的正被替换。
 
 ## <a name="example-1"></a>示例 1
 
@@ -58,18 +58,18 @@ Content-length: 364
     "activitySourceHost": "https://www.contoso.com",
     "userTimezone": "Africa/Casablanca",
     "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "http://www.contoso.com/article?id=12345",
-    "contentUrl": "http://www.contoso.com/article?id=12345",
-    "fallbackUrl": "http://www.contoso.com/article?id=12345",
+    "activationUrl": "https://www.contoso.com/article?id=12345",
+    "contentUrl": "https://www.contoso.com/article?id=12345",
+    "fallbackUrl": "https://www.contoso.com/article?id=12345",
     "contentInfo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Article",
         "author": "Jennifer Booth",
         "name": "How to Tie a Reef Knot"
     },
     "visualElements": {
         "attribution": {
-            "iconUrl": "http://www.contoso.com/icon",
+            "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false,
         },
@@ -77,7 +77,7 @@ Content-length: 364
         "backgroundColor": "#ff0000",
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
             "body":
             [{
@@ -105,7 +105,7 @@ Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "http://contoso.com",
+    "activitySourceHost": "https://contoso.com",
     "createdDateTime": "2017-06-09T20:54:43.969Z",
     "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
     "id": "14332800362997268276",
@@ -117,13 +117,13 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "attribution": {
-            "iconUrl": "http://www.contoso.com/icon",
+            "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false
         },
         "backgroundColor": "#ff0000",
         "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
             "body":
             [{
@@ -132,13 +132,13 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
             }]
         }
     },
-    "activationUrl": "http://www.contoso.com/article?id=12345",
+    "activationUrl": "https://www.contoso.com/article?id=12345",
     "appDisplayName": "Contoso, Ltd.",
     "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "http://www.contoso.com/article?id=12345",
-    "contentUrl": "http://www.contoso.com/article?id=12345",
+    "fallbackUrl": "https://www.contoso.com/article?id=12345",
+    "contentUrl": "https://www.contoso.com/article?id=12345",
     "contentInfo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Article",
         "author": "Jennifer Booth",
         "name": "How to Tie a Reef Knot"
@@ -146,7 +146,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
 }
 ```
 
-## <a name="example-2---deep-insert"></a>示例 2 - 深层插入
+## <a name="example-2---deep-insert"></a>示例 2-深层插入
 
 #### <a name="request"></a>请求
 
@@ -167,18 +167,18 @@ Content-length: 364
     "activitySourceHost": "https://www.contoso.com",
     "userTimezone": "Africa/Casablanca",
     "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "http://www.contoso.com/article?id=12345",
-    "contentUrl": "http://www.contoso.com/article?id=12345",
-    "fallbackUrl": "http://www.contoso.com/article?id=12345",
+    "activationUrl": "https://www.contoso.com/article?id=12345",
+    "contentUrl": "https://www.contoso.com/article?id=12345",
+    "fallbackUrl": "https://www.contoso.com/article?id=12345",
     "contentInfo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Article",
         "author": "Jennifer Booth",
         "name": "How to Tie a Reef Knot"
     },
     "visualElements": {
         "attribution": {
-            "iconUrl": "http://www.contoso.com/icon",
+            "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false,
         },
@@ -186,7 +186,7 @@ Content-length: 364
         "backgroundColor": "#ff0000",
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
             "body":
             [{
@@ -221,7 +221,7 @@ Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "http://contoso.com",
+    "activitySourceHost": "https://contoso.com",
     "createdDateTime": "2017-06-09T20:54:43.969Z",
     "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
     "id": "14332800362997268276",
@@ -233,13 +233,13 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "displayText": "Contoso How-To: How to Tie a Reef Knot",
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "attribution": {
-            "iconUrl": "http://www.contoso.com/icon",
+            "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
             "addImageQuery": false
         },
         "backgroundColor": "#ff0000",
         "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
             "body":
             [{
@@ -248,13 +248,13 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
             }]
         }
     },
-    "activationUrl": "http://www.contoso.com/article?id=12345",
+    "activationUrl": "https://www.contoso.com/article?id=12345",
     "appDisplayName": "Contoso, Ltd.",
     "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "http://www.contoso.com/article?id=12345",
-    "contentUrl": "http://www.contoso.com/article?id=12345",
+    "fallbackUrl": "https://www.contoso.com/article?id=12345",
+    "contentUrl": "https://www.contoso.com/article?id=12345",
     "contentInfo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Article",
         "author": "Jennifer Booth",
         "name": "How to Tie a Reef Knot"

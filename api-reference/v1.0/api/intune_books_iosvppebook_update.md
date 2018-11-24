@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [iosVppEBook](../resources/intune_books_iosvppebook.md) 对象的 JSON 表示形式。
@@ -34,22 +34,22 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|displayName|字符串|电子书的名称。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|说明|字符串|说明。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|发布者|字符串|发布者。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|电子书的发布日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|实体的键。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|description|String|说明。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|publisher|String|发布者。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|createdDateTime|DateTimeOffset|电子图书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|字符串|详细信息 Url。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|详细信息 URL。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|Vpp 令牌 ID。|
-|appleId|字符串|与 Vpp 令牌关联的 Apple ID。|
-|vppOrganizationName|字符串|Vpp 令牌的组织名称。|
+|appleId|String|与 Vpp 令牌关联的 Apple ID。|
+|vppOrganizationName|String|Vpp 令牌的组织名称。|
 |genres|String 集合|流派。|
-|language|字符串|语言。|
-|seller|字符串|经销商。|
+|language|String|语言。|
+|seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
 
@@ -64,9 +64,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
-Content-length: 803
+Content-length: 792
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBook",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -76,10 +77,9 @@ Content-length: 803
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -97,7 +97,7 @@ Content-length: 803
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 

@@ -56,7 +56,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an online source:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as binary data:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>
@@ -79,7 +79,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

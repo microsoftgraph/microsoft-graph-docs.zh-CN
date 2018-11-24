@@ -24,8 +24,8 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) 对象的 JSON 表示形式。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
+|id|String|尚未记录|
 |enabled|Boolean|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
@@ -51,15 +51,16 @@ PATCH /deviceManagement/conditionalAccessSettings
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 195
+Content-length: 275
 
 {
+  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
@@ -70,26 +71,21 @@ Content-length: 195
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 318
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "String"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "String"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

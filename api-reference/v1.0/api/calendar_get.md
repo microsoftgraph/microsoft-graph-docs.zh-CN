@@ -1,11 +1,11 @@
-# <a name="get-calendar"></a>获取 calendar
+# <a name="get-calendar"></a>Get calendar
 
 获取 [calendar](../resources/calendar.md) 对象的属性和关系。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 
-有两种应用程序可以获取另一个用户的日历的情景：
+有两种应用程序可以在哪里找到其他用户的日历的方案：
 
-* 如果应用拥有应用程序权限，或者，
-* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-events-calendars.md)。
+* 如果应用程序具有应用程序权限，或，
+* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](../../../concepts/outlook-get-shared-events-calendars.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
@@ -17,7 +17,7 @@
 |应用程序 | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } --> 用户或组的默认[日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->用户或组的默认[日历](../resources/calendar.md)。
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
@@ -37,11 +37,11 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

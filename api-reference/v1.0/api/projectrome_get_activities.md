@@ -1,6 +1,6 @@
 # <a name="get-user-activities"></a>获取用户活动
 
-获得给定用户的活动。 与**最近**的 OData 函数不同的是，将返回不含历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
+获得给定用户的活动。 与不同**最近**OData 函数，将返回不历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -22,11 +22,11 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。 支持以下查询参数：
+此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。 支持以下查询参数：
 
-- **historyItems** 导航属性的 $expand。
-- 限制跨页的最大项目数的 $top。
-- 活动的 **lastModifiedDateTime** 属性上的 $filter 或 **historyItems**（如果扩展）。
+- $ expand **historyItems**导航属性。
+- $top 跨页限制的最大项目数。
+- 在活动或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。
 
 以下是支持 URL 编码的查询的一些示例：
 
@@ -42,15 +42,15 @@ GET /me/activities
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|授权 | 字符串 | Bearer {token}。必需。|
+|Authorization | string | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
-无请求正文。
+没有请求正文中。
 
 ## <a name="response"></a>响应
 
-如果成功，`200 OK` 此方法为您的应用程序返回用户活动的  响应代码。
+如果成功，此方法返回`200 OK`与您的应用程序的用户的活动的响应代码。
 
 ## <a name="example"></a>示例
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

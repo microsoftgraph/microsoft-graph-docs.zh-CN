@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
 |successCount|Int32|成功设备的数量|
@@ -54,9 +54,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 284
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 333
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

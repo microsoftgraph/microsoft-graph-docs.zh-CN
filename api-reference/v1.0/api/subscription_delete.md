@@ -9,13 +9,14 @@
 | 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
 | 联系人                    | Contacts.Read       |
-| 对话               | Group.Read.All      |
-| 事件                      | Calendars.Read      |
-| 消息                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Drive（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器（SharePoint 共享的内容和驱动器） | Files.ReadWrite.All |
+| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
+|安全警报| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -29,7 +30,7 @@ DELETE /subscriptions/{id}
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

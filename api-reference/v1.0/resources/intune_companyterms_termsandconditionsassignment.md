@@ -15,19 +15,19 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
@@ -37,11 +37,6 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
   }
 }
 ```
-
-
-
-
-
 
 
 

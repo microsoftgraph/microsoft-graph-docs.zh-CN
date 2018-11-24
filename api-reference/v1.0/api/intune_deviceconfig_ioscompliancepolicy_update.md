@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 对象的 JSON 表示形式。
@@ -34,26 +34,26 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passcodeBlockSimple|布尔值|指示是否阻止简单密码。|
+|passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passcodeMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passcodePreviousPasscodeBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passcodeMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|所需的密码类型。可能的值为：`deviceDefault`, `alphanumeric`、`numeric`。|
-|passcodeRequired|布尔值|指示是否需要密码。|
-|osMinimumVersion|字符串|最低 IOS 版本。|
-|osMaximumVersion|字符串|最高 IOS 版本。|
-|securityBlockJailbrokenDevices|布尔值|设备不得越狱或取得 root 权限。|
-|deviceThreatProtectionEnabled|布尔值|要求设备已启用设备威胁防护。|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁保护最低风险级别报告违规.。可能的值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|managedEmailProfileRequired|布尔值|指示是否需要托管电子邮件配置文件。|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
+|passcodeRequired|Boolean|指示是否需要密码。|
+|osMinimumVersion|String|最低 IOS 版本。|
+|osMaximumVersion|String|最高 IOS 版本。|
+|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
+|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
+|managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
 
 
 
@@ -66,11 +66,11 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 751
+Content-length: 745
 
 {
+  "@odata.type": "#microsoft.graph.iosCompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
@@ -121,11 +121,6 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,7 +24,7 @@ POST /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ POST /deviceManagement/termsAndConditions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|T&C 策略的唯一标识符。|
+|id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|说明|String|管理员提供的 T&C 策略描述。|
+|description|String|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
@@ -55,11 +55,10 @@ POST /deviceManagement/termsAndConditions
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions
 Content-type: application/json
-Content-length: 337
+Content-length: 273
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",
@@ -89,11 +88,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
-
-
-
-
 
 
 

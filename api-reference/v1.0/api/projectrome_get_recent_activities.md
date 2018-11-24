@@ -1,6 +1,6 @@
-# <a name="get-recent-user-activities"></a>获取用户活动最新动态
+# <a name="get-recent-user-activities"></a>获取最新的用户活动
 
-获得给定用户的最近活动。 这个 OData 函数具有一些包含以使其类似“最近使用”的 API 操作的默认行为。 该服务将查询最近的 [historyItems](../resources/projectrome_historyitem.md)，然后提取那些相关的活动。 活动将根据 **historyItem** 上最近的 **lastModified** 进行排序。 这意味着没有 **historyItems** 的活动将不包括在响应中。 UserActivity.ReadWrite.CreatedByApp 权限还会将额外的筛选应用于响应，以便返回仅由你的应用程序创建的活动。 如果用户特别活跃并且其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
+获得给定用户的近期活动。 此 OData 函数具有一些包含以使其类似"最近使用"的 API 操作的默认行为。 该服务将最近[historyItems](../resources/projectrome_historyitem.md)，查询，然后提取这些相关的活动。 活动将根据最近**lastModified** **historyItem**上进行排序。 这意味着不**historyItems**活动将不包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -22,13 +22,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。 支持以下查询参数：
+此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。 支持以下查询参数：
 
-- **historyItems** 导航属性的 $expand。
-- 限制跨页的最大项目数的 $top。
-- 在**活动**或 **historyItems** 的 **lastModifiedDateTime** 属性上的 $filter（如果扩展）。
+- $ expand **historyItems**导航属性。
+- $top 跨页限制的最大项目数。
+- 在**活动**或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。
 
-以下是支持 URL 编码查询的一些示例。
+以下是支持 URL 编码的查询的一些示例。
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,15 +42,15 @@ GET /me/activities/recent
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|授权 | 字符串 | Bearer {token}。必需。|
+|Authorization | string | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
-请勿指定请求正文。
+不指定请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回您的应用程序用户最近活动的 `200 OK` 响应代码。
+如果成功，此方法返回`200 OK`与您的应用程序的用户的近期活动的响应代码。
 
 ## <a name="example"></a>示例
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

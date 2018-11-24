@@ -6,9 +6,11 @@
 ## <a name="prerequisites"></a>先决条件
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
+
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）||
+| &nbsp;&nbsp; **入职培训**和 <br> &nbsp;&nbsp; **设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -25,8 +27,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|应用/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceCategory](../resources/intune_shared_devicecategory.md) 对象的 JSON 表示形式。
@@ -35,10 +37,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
-|**起始安排**|
-|displayName|字符串|设备类别的显示名称。|
-|说明|字符串|设备类别的可选说明。|
+|id|String|设备类别的唯一标识符。 只读。|
+|**入职培训**|
+|displayName|String|设备类别的显示名称。|
+|description|String|设备类别的可选说明。|
 
 
 
@@ -62,7 +64,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 响应的属性根据上下文不同而有所不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 响应属性根据上下文不同而有所不同。
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

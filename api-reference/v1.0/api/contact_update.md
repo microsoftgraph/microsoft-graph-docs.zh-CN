@@ -11,8 +11,7 @@
 |应用程序 | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-来自用户的默认 [contactFolder](../resources/contactfolder.md) 中的 [联系人](../resources/contact.md)。
+<!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)从用户的默认[contactFolder](../resources/contactfolder.md)。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -47,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |department|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。|
+|displayName|String|联系人的显示名称。 请注意，以后对其他属性更新可能会导致自动生成的值覆盖已指定的显示名称值。 若要保留现有的值，始终为在更新操作的 displayName 包括它。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
 |generation|String|联系人所属的代。|
@@ -69,9 +68,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
-|yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
-|yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
-|yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
+|yomiCompanyName|字符串|联系人的注音日文公司名称。此属性是可选的。|
+|yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
+|yomiSurname|字符串|联系人的注音日文姓氏。此属性是可选的。|
 
 ## <a name="response"></a>响应
 
@@ -144,7 +143,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

@@ -4,15 +4,19 @@
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，必须有以下权限之一，具体视要从中删除扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+根据您正在删除扩展名的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|**支持的资源**|**权限**|**支持的资源**|**权限** |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | Device.ReadWrite.All | [事件](../resources/event.md) | Calendars.ReadWrite |
-| [组](../resources/group.md) | Group.ReadWrite.All | [组事件](../resources/event.md) | Group.ReadWrite.All |
-| [组帖子](../resources/post.md) | Group.ReadWrite.All | [邮件](../resources/message.md) | Mail.ReadWrite |
-| [组织](../resources/organization.md) | Directory.AccessAsUser.All | [个人联系人](../resources/contact.md) | Contacts.ReadWrite |
-| [用户](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
+| [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+| [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
+| [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [组织](../resources/organization.md) | Directory.AccessAsUser.All | 不支持 | 不支持 |
+| [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [用户](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `DELETE`。
@@ -35,13 +39,13 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id|字符串|实例在相应集合中的唯一标识符。必需。|
-|extensionId|字符串|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
+|ID|string|实例在相应集合中的唯一标识符。必需。|
+|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| 授权 | Bearer {token}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

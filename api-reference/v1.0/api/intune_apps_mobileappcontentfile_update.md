@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) 对象的 JSON 表示形式。
@@ -34,16 +34,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|azureStorageUri|字符串|Azure 存储 URI。|
-|isCommitted|布尔值|指示文件是否已提交的值。|
-|id|字符串|文件 ID。|
+|azureStorageUri|String|Azure 存储 URI。|
+|isCommitted|Boolean|指示文件是否已提交的值。|
+|id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|名称|字符串|文件名称。|
-|大小|Int64|加密前的文件大小。|
+|name|String|文件名称。|
+|size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
-|清单|二进制|清单信息。|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|当前上载请求的状态。可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
+|manifest|Binary|清单信息。|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 283
+Content-length: 342
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppContentFile",
   "azureStorageUri": "Azure Storage Uri value",
   "isCommitted": true,
   "name": "Name value",
@@ -91,11 +92,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
 
 
 

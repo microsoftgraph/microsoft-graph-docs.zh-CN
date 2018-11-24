@@ -24,7 +24,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
 |displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
@@ -51,9 +51,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
@@ -77,11 +78,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

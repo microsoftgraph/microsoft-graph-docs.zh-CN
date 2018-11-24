@@ -1,25 +1,23 @@
-# <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason枚举类型
+# <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-用于注册的顶级故障类别。
-
+注册的顶部级别故障类别。
 ## <a name="members"></a>成员
-
 |成员|值|说明|
 |:---|:---|:---|
-|未知|0|默认值，失败原因未知。|
-|身份验证|1|身份验证失败|
+|unknown|0|默认值是未知失败原因。|
+|身份验证|1|失败的身份验证|
 |授权|2|呼叫已通过身份验证，但未被授权注册。|
 |accountValidation|3|无法验证注册的帐户。 （帐户已被阻止，注册未启用）|
-|userValidation|4|无法验证用户。 （用户不存在，缺少许可证）|
-|deviceNotSupported|5|移动设备管理不支持设备。|
-|inMaintenance|6|帐户在维护中。|
-|badRequest|7|客户端发送服务无法理解/不支持的请求。|
-|featureNotSupported|8|此帐户不支持此注册使用的功能。|
-|enrollmentRestrictionsEnforced|9|管理员配置的注册限制阻止了此注册。|
-|clientDisconnected|10|客户端超时或最终用户中止注册。|
-|userAbandonment|11|最终用户放弃注册。 （最终用户启动入职培训，但未完成及时）|
+|userValidation|4|无法验证用户。 (不存在用户，缺少许可证)|
+|deviceNotSupported|5|不支持移动设备管理设备。|
+|inMaintenance|6|帐户是在维护。|
+|badRequest|7|客户端发送请求不是服务理解/支持。|
+|featureNotSupported|8|此帐户不支持使用此注册的功能。|
+|enrollmentRestrictionsEnforced|9|注册限制配置被管理员阻止此注册。|
+|clientDisconnected|10|客户端超时或注册已中止由最终用户。|
+|userAbandonment|11|注册已放弃的最终用户。 （最终用户启动入职培训，但无法完成及时）|
 
 
 <!-- {
@@ -29,5 +27,3 @@
   ],
 }
 -->
-
-

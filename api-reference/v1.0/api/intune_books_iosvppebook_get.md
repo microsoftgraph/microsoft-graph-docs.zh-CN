@@ -22,11 +22,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|需要持有者&lt;令牌&gt;。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedE
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 1033
 
 {
   "value": {
@@ -66,7 +66,7 @@ Content-Length: 1030
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "informationUrl": "https://example.com/informationUrl/",
     "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+    "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
     "appleId": "Apple Id value",
     "vppOrganizationName": "Vpp Organization Name value",
     "genres": [
@@ -79,11 +79,6 @@ Content-Length: 1030
   }
 }
 ```
-
-
-
-
-
 
 
 

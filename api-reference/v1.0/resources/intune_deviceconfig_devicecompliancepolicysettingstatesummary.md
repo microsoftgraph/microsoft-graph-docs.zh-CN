@@ -15,9 +15,9 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|设置|字符串|设置类名和属性名。|
-|settingName|字符串|设置的名称。|
+|id|String|实体的键。|
+|setting|String|设置类名和属性名。|
+|settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|设置平台。 可取值为：`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
@@ -34,12 +34,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
@@ -56,11 +56,6 @@
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

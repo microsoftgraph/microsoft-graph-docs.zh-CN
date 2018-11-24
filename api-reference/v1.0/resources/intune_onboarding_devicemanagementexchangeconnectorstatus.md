@@ -6,15 +6,10 @@ Exchange 连接器的当前状态。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|none|0|没有连接器存在。|
-|connectionPending|1|待连接到 Exchange 环境。|
-|connected|2|已连接到 Exchange 环境|
-|disconnected|3|从 Exchange 环境断开连接|
-
-
-
-
-
+|无|0|没有连接线存在。|
+|connectionPending|1|挂起的连接到 Exchange 环境。|
+|连接|2|连接到 Exchange 环境|
+|断开连接|3|从 Exchange 环境断开连接|
 
 
 

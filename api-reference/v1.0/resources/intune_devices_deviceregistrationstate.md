@@ -7,18 +7,13 @@
 |成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|未注册设备。|
-|registered|2|已注册设备。|
-|revoked|3|已阻止、擦除或停用该设备。|
-|keyConflict|4|设备存在重大冲突。|
-|approvalPending|5|设备处于待审批状态。|
+|注册|2|已注册设备。|
+|吊销|3|已阻止、 擦除或停用该设备。|
+|keyConflict|4|设备具有键冲突。|
+|approvalPending|5|设备是待审批状态。|
 |certificateReset|6|设备证书已被重置。|
-|notRegisteredPendingEnrollment|7|未注册设备以及待处理注册。|
-|unknown|8|设备注册状态未知。|
-
-
-
-
-
+|notRegisteredPendingEnrollment|7|未注册设备以及待处理的注册。|
+|unknown|8|未知设备注册状态。|
 
 
 

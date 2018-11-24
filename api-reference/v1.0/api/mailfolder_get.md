@@ -2,10 +2,10 @@
 
 检索邮件文件夹对象的属性和关系。
 
-有两种应用可以在另一个用户的邮件文件夹中获取邮件的情景：
+有两种方案相关应用程序可以在哪里找到另一个用户的邮件文件夹：
 
-* 如果应用拥有应用程序权限，或者，
-* 如果应用拥有来自一个用户的适当的委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已授予该用户委派访问权限。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
+* 如果应用程序具有应用程序权限，或，
+* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](../../../concepts/outlook-share-messages-folders.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -24,11 +24,11 @@ GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

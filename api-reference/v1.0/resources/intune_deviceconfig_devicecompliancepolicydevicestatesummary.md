@@ -13,12 +13,12 @@
 |属性|类型|说明|
 |:---|:---|:---|
 |inGracePeriodCount|Int32|宽限期内的设备数|
-|configManagerCount|Int32|由 System Center Configuration Manager 管理符合性的设备数|
-|ID|字符串|实体的键。|
+|configManagerCount|Int32|由 System Center Configuration Manager 管理合规性的设备数|
+|id|String|实体的键。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
-|remediatedDeviceCount|Int32|已修复设备的数量|
+|remediatedDeviceCount|Int32|已修复设备数|
 |nonCompliantDeviceCount|Int32|不兼容设备的数量|
 |errorDeviceCount|Int32|错误设备的数量|
 |conflictDeviceCount|Int32|冲突设备的数量|
@@ -27,12 +27,12 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
@@ -48,11 +48,6 @@
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

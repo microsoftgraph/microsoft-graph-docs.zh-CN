@@ -2,7 +2,7 @@
 
 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。
 
-可以显式指定以 Windows 时区格式返回时区，或者以 [Internet 号码分配局 (IANA) 时区](http://www.iana.org/time-zones)（也称为“Olson 时区”）格式返回。 Windows 时区是默认格式。
+可以显式指定以 Windows 时区格式返回时区，或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式返回。 Windows 时区是默认格式。
 
 在设置 Outlook 客户端时，用户从此受支持的列表中选择首选时区。 随后可以通过[获取用户的邮箱设置](user_get_mailboxsettings.md)获取首选时区。
 
@@ -34,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| 授权  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

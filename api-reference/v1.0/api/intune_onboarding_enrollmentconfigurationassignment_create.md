@@ -24,8 +24,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 enrollmentConfigurationAssignment 对象的 JSON 表示形式。
@@ -34,8 +34,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
-|目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|尚未记录|
+|id|String|尚未记录|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|尚未记录|
 
 
 
@@ -73,11 +73,6 @@ Content-Length: 222
   }
 }
 ```
-
-
-
-
-
 
 
 

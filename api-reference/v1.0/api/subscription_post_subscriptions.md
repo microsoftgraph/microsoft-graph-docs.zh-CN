@@ -9,15 +9,16 @@
 | 资源类型/项        | 权限          |
 |-----------------------------|---------------------|
 | 联系人                    | Contacts.Read       |
-| 对话               | Group.Read.All      |
-| 事件                      | Calendars.Read      |
-| 消息                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
-| 驱动器（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器（SharePoint 共享的内容和驱动器） | Files.ReadWrite.All |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
+| Drive（用户的 OneDrive）    | Files.ReadWrite     |
+| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
+|安全警报| SecurityEvents.ReadWrite.All |
 
- > **注意：**/v1.0 端点允许资源最多的应用程序权限。 应用程序权限不支持组中的对话和 OneDrive 驱动器根项目。
+ > **注意：**/V1.0 终结点允许资源最多的应用程序权限。 应用程序权限不支持对话组和 OneDrive 驱动器根项目。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -31,7 +32,7 @@ POST /subscriptions
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="response"></a>响应
 
@@ -41,7 +42,7 @@ POST /subscriptions
 
 ##### <a name="request"></a>请求
 
-以下是用户收到新邮件时请求发送通知的示例。
+下面是在用户收到新邮件时请求发送通知的示例。
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -60,8 +61,8 @@ Content-type: application/json
 }
 ```
 
-在请求正文中，提供[订阅](../resources/subscription.md)对象的 JSON 表示。
-`clientState`字段为选填。
+在请求正文中，提供[订阅](../resources/subscription.md)对象的 JSON 表示形式。
+`clientState`字段是可选的。
 
 ##### <a name="resources-examples"></a>资源示例
 
@@ -72,10 +73,11 @@ Content-type: application/json
 |邮件|me/mailfolders('inbox')/messages<br />me/messages|
 |联系人|me/contacts|
 |日历|me/events|
-|用户|users|
-|组|组|
+|Users|users|
+|Groups|组|
 |对话|groups('*{id}*')/conversations|
 |驱动器|me/drive/root|
+|安全警报|安全/警告？ $filter = 状态 eq 新建|
 
 ##### <a name="response"></a>响应
 
@@ -104,9 +106,9 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>通知端点验证
+## <a name="notification-endpoint-validation"></a>通知终结点验证
 
-订阅通知端点（在 `notificationUrl` 属性中指定）必须能够响应验证请求，如同[设置用户数据更改的通知](../../../concepts/webhooks.md#notification-endpoint-validation)所述。 如果验证失败，创建订阅的请求将返回一个 400 错误请求错误。
+订阅通知终结点 (中指定`notificationUrl`属性) 必须能够响应验证请求，[设置的用户数据更改的通知](../../../concepts/webhooks.md#notification-endpoint-validation)中所述。 如果验证失败，请求创建订阅，将返回一个 400 错误请求错误。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) 对象的 JSON 表示形式。
@@ -34,12 +34,12 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|userDisplayName|字符串|DevicePolicyStatus 的用户名。|
+|id|String|实体的键。|
+|userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses/{managedDeviceMobileAppConfigurationUserStatusId}
 Content-type: application/json
-Content-length: 222
+Content-length: 306
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
   "userDisplayName": "User Display Name value",
   "devicesCount": 12,
   "status": "notApplicable",
@@ -80,11 +81,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

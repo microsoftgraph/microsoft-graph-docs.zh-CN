@@ -24,7 +24,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,8 +34,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
-|url|字符串|网站 URL|
+|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|url|String|网站 URL|
 |deviceCount|Int32|设备计数|
 
 
@@ -72,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

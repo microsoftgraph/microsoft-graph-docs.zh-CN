@@ -8,12 +8,7 @@
 |:---|:---|:---|
 |unknown|0|未知合作伙伴应用程序类型。|
 |singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|
-|multiTenantApp|2|合作伙伴应用程序是 AAD 中的多个租户。|
-
-
-
-
-
+|multiTenantApp|2|合作伙伴应用程序是 AAD 中的多租户。|
 
 
 

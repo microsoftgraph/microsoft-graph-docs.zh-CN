@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 deviceCompliancePolicySettingStateSummary 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|setting|字符串|设置类名和属性名。|
-|settingName|字符串|设置的名称。|
+|id|String|实体的键。|
+|setting|String|设置类名和属性名。|
+|settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|设置平台。 可取值为：`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
@@ -96,11 +96,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

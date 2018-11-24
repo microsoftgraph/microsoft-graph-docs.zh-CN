@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
 
 
@@ -49,9 +49,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 Content-type: application/json
-Content-length: 133
+Content-length: 194
 
 {
+  "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   },
@@ -75,11 +76,6 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
-
-
-
-
-
 
 
 

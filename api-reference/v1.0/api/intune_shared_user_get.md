@@ -4,15 +4,15 @@
 
 读取 [user](../resources/intune_shared_user.md) 对象的属性和关系。
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  特定权限取决于上下文。
+以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  特定权限取决于的上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| _因上下文而异_|
-| &nbsp; &nbsp; 设备 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; 加入 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; 疑难解答 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+|委派（工作或学校帐户）| _随上下文_|
+| &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
+| &nbsp;&nbsp;入职培训 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;疑难解答 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -26,12 +26,12 @@ GET /users/{usersId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

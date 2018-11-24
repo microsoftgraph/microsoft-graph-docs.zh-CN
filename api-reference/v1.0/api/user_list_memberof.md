@@ -17,13 +17,13 @@
 GET /users/{id | userPrincipalName}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。$filter 不受支持。 
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。$filter 不受支持。 
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| 接受  | application/json|
+| Accept  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

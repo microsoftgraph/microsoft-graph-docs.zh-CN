@@ -2,23 +2,18 @@
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-Android 工作配置文件所需的密码类型。
+Android 工作模板所需密码类型。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
-|lowSecurityBiometric|1|需要低安全性的基于生物的密码。|
-|required|2|必需。|
-|atLeastNumeric|3|必需至少是数字密码。|
-|numericComplex|4|必需是复杂的数字密码。|
-|atLeastAlphabetic|5|必需至少是字母密码。|
-|atLeastAlphanumeric|6|必需至少是字母数字密码。|
-|alphanumericWithSymbols|7|必需至少是带符号的字母数字密码。|
-
-
-
-
-
+|lowSecurityBiometric|1|低安全性生物基于所需的密码。|
+|必需|2|必需。|
+|atLeastNumeric|3|所需的密码至少数值。|
+|numericComplex|4|所需的数字复杂密码。|
+|atLeastAlphabetic|5|所需的密码至少字母。|
+|atLeastAlphanumeric|6|所需的至少字母数字密码。|
+|alphanumericWithSymbols|7|使用所需的符号密码至少字母数字。|
 
 
 

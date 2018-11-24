@@ -6,18 +6,13 @@
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|noAction|0|无操作|
+|noAction|0|任何操作|
 |通知|1|发送通知|
-|block － 阻止|2|阻止 AAD 中的设备|
+|阻止|2|阻止 AAD 中的设备|
 |停用|3|停用设备|
 |擦除|4|擦除设备|
 |removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
 |pushNotification|9|向设备发送推送通知|
-
-
-
-
-
 
 
 

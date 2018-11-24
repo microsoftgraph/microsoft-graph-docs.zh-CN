@@ -24,7 +24,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
@@ -50,9 +50,10 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json
-Content-length: 138
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
@@ -74,11 +75,6 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
-
-
-
-
-
 
 
 

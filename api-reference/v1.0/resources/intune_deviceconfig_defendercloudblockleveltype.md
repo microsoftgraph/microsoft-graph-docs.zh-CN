@@ -6,15 +6,10 @@
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|默认值，使用默认 Windows Defender 防病毒软件阻止级别，并提供强大的检测, 而不增加检测合法文件的风险|
-|high|1|High应用了强大的检测级别。|
-|highPlus|2|高 + 使用的高级别和应用加法保护措施|
+|notConfigured|0|默认值，使用默认 Windows Defender 防病毒软件阻止级别，并提供强检测而不会提高检测的风险合法文件|
+|高|1|高适用检测强的级别。|
+|highPlus|2|高 + 使用的高级别和应用添加保护措施|
 |zeroTolerance|3|零公差阻止所有未知的可执行文件|
-
-
-
-
-
 
 
 

@@ -22,11 +22,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|需要持有者&lt;令牌&gt;。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,11 +65,6 @@ Content-Length: 491
   }
 }
 ```
-
-
-
-
-
 
 
 

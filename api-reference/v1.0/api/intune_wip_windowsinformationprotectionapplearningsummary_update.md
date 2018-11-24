@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) 对象的 JSON 表示形式。
@@ -34,9 +34,9 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
-|applicationName|字符串|应用程序名称|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用类型。 可取值为：`universal`、`desktop`。|
+|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|applicationName|String|应用程序名称|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
 
 
@@ -50,9 +50,10 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11
@@ -74,11 +75,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

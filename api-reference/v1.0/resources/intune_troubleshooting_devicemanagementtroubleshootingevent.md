@@ -15,20 +15,20 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
-|correlationId|字符串|用于跟踪服务中的故障的 ID。|
+|correlationId|String|用于跟踪服务中的故障的 ID。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
@@ -37,7 +37,6 @@
   "correlationId": "String"
 }
 ```
-
 
 
 
