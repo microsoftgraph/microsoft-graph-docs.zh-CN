@@ -6,7 +6,7 @@ Microsoft Graph 中的教育 API 可增强 Office 365 资源和与教育情景�
 
 ## <a name="authorization"></a>授权
 
-若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](https://developer.microsoft.com/zh-CN/graph/docs/concepts/auth_overview)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](../../../concepts/permissions_reference.md#education-permissions)。 
+若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](../../../concepts/permissions_reference.md#education-permissions)。 
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>请求学校 IT 管理员许可的应用权限 
 
@@ -64,5 +64,5 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 使用 Microsoft Graph 教育 API 构建访问学校名册的教育解决方案。 了解详细信息：
 
 - 探索对你的方案最有帮助的资源和方法。
-- 尝试在 [Graph 浏览器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)中使用 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
 

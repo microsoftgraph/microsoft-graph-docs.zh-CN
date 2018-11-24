@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/pages
 GET /sites/{id}/onenote/pages
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 对页面的默认查询返回按照 `lastModifiedTime desc` 排序的前 20 个页面。如果默认查询返回的页面超过 20 个，响应将包含 `@odata.nextLink`，可以使用它逐页查看结果集。`top` 请求最多可返回 100 个页面。
 
@@ -29,7 +29,7 @@ GET /sites/{id}/onenote/pages
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| 接受 | string | `application/json` |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -45,7 +45,7 @@ GET /sites/{id}/onenote/pages
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

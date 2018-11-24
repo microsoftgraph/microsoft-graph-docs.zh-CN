@@ -6,35 +6,35 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 notificationMessageTemplates](../api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 集合|列出 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性和关系。|
-|[获取 notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_get.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|读取 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性和关系。|
+|[List notificationMessageTemplates](../api/intune_notification_notificationmessagetemplate_list.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 集合|列出 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性和关系。|
+|[Get notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_get.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|读取 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性和关系。|
 |[创建 notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_create.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|创建新的 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象。|
-|[删除 notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_delete.md)|无|删除 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)。|
-|[更新 notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_update.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|更新 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性。|
+|[Delete notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_delete.md)|无|删除 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)。|
+|[Update notificationMessageTemplate](../api/intune_notification_notificationmessagetemplate_update.md)|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|更新 [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) 对象的属性。|
 |[sendTestMessage 操作](../api/intune_notification_notificationmessagetemplate_sendtestmessage.md)|无|使用默认区域设置中指定的 notificationMessageTemplate 发送测试消息|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|字符串|通知消息模板的显示名称。|
-|defaultLocale|字符串|请求的区域设置不可用时要回退到的默认区域设置。|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|邮件模版品牌选项。品牌在 Intune 管理控制台中定义。可能的值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
+|displayName|String|通知消息模板的显示名称。|
+|defaultLocale|String|请求的区域设置不可用时要回退到的默认区域设置。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|消息模板品牌选项。 已在 Intune 管理员控制台中定义品牌。 可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 |关系|类型|说明|
 |:---|:---|:---|
 |localizedNotificationMessages|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) 集合|此通知消息模板的本地化消息列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.notificationMessageTemplate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
@@ -45,11 +45,6 @@
   "brandingOptions": "String"
 }
 ```
-
-
-
-
-
 
 
 

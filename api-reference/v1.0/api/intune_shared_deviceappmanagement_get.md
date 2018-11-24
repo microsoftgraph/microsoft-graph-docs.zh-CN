@@ -6,7 +6,7 @@
 
 ## <a name="prerequisites"></a>先决条件
 
-需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  请注意，相应权限根据工作流而有所不同。
+以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。  请注意，在相应权限根据工作流而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -24,13 +24,13 @@ GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>响应示例
-为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+为简便起见，如下所示的响应对象可能会被截断。 从实际的呼叫，将返回所有属性。
 
 ``` http
 HTTP/1.1 200 OK

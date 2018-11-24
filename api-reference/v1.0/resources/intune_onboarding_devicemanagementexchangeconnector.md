@@ -16,27 +16,27 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
+|id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
 |状态|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange 连接器状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
-|primarySmtpAddress|字符串|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
-|serverName|字符串|Exchange Server 名称。|
-|connectorServerName|字符串|托管 Exchange Connector 的服务器的名称。|
+|primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
+|serverName|String|Exchange server 的名称。|
+|connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|配置的 Exchange Connector 的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
-|版本|字符串|ExchangeConnectorAgent 版本|
-|exchangeAlias|字符串|分配到 Exchange 服务器的别名|
-|exchangeOrganization|字符串|Exchange 服务器的 Exchange 组织|
+|version|String|ExchangeConnectorAgent 版本|
+|exchangeAlias|String|分配到 Exchange 服务器的别名|
+|exchangeOrganization|String|Exchange 服务器的 Exchange 组织|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -52,11 +52,6 @@
   "exchangeOrganization": "String"
 }
 ```
-
-
-
-
-
 
 
 

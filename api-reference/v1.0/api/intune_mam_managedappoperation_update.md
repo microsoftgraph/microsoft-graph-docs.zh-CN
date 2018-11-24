@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,11 +34,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|操作名称。|
+|displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
-|state|字符串|操作的当前状态|
-|ID|字符串|实体的键。|
-|version|字符串|实体的版本。|
+|state|String|操作的当前状态|
+|id|String|实体的键。|
+|version|String|实体的版本。|
 
 
 
@@ -51,11 +51,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
-Content-length: 165
+Content-length: 159
 
 {
+  "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
@@ -77,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

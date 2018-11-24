@@ -27,8 +27,8 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 windowsInformationProtectionAppLockerFile 对象的 JSON 表示形式。
@@ -37,11 +37,11 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|友好名称|
-|fileHash|字符串|文件的 SHA256 哈希|
-|file|二进制|字节数组形式的文件|
-|id|字符串|实体的键。|
-|version|字符串|实体的版本。|
+|displayName|String|友好名称|
+|fileHash|String|文件的 SHA256 哈希|
+|file|Binary|字节数组形式的文件|
+|id|String|实体的键。|
+|version|String|实体的版本。|
 
 
 
@@ -81,11 +81,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -12,10 +12,10 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
-|notApplicableCount|Int32|不适用用户的数量|
-|successCount|Int32|成功用户的数量|
+|notApplicableCount|Int32|不适用的用户数|
+|successCount|Int32|成功的用户数量|
 |errorCount|Int32|错误用户的数量|
 |failedCount|Int32|失败用户的数量|
 |lastUpdateDateTime|DateTimeOffset|上次更新时间|
@@ -25,12 +25,12 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationUserOverview"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
@@ -44,11 +44,6 @@
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

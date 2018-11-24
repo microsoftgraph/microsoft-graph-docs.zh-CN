@@ -1,6 +1,6 @@
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
@@ -8,10 +8,11 @@
 ## <a name="prerequisites"></a>先决条件
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
+
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| _因上下文而异_ |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+|委派（工作或学校帐户）| _随上下文_ |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -27,8 +28,8 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供参数的 JSON 表示形式。
@@ -37,7 +38,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceTag|字符串|设备标记|
+|deviceTag|String|设备标记|
 
 ## <a name="response"></a>响应
 如果成功，此操作返回 `204 No Content` 响应代码。

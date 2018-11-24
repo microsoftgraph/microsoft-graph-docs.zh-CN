@@ -24,8 +24,8 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [auditEvent](../resources/intune_auditing_auditevent.md) 对象的 JSON 表示形式。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
@@ -58,9 +58,10 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1338
+Content-length: 1390
 
 {
+  "@odata.type": "#microsoft.graph.auditEvent",
   "displayName": "Display Name value",
   "componentName": "Component Name value",
   "actor": {
@@ -81,7 +82,7 @@ Content-length: 1338
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -107,7 +108,7 @@ Content-length: 1338
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1439
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -132,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -152,11 +153,6 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
-
-
-
-
-
 
 
 

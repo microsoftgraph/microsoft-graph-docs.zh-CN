@@ -38,7 +38,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。仅允许增量更改。 |
-|status|String|架构扩展的生命周期状态。创建后的初始状态是 **InDevelopment**。可能的状态转换是从 **InDevelopment** 到 **Available**、从 **Available** 到 **Deprecated**、从 **Deprecated** 到 **Available**。|
+|status|String|架构扩展的生命周期状态。 在创建时的初始状态是**InDevelopment**。 可能的状态切换为**InDevelopment**到**有空**和到**已否决**的**有空**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。仅允许增量更改。|
 
 ## <a name="response"></a>响应

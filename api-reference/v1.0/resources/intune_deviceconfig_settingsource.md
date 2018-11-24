@@ -6,8 +6,8 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
-|displayName|字符串|尚未记录|
+|id|String|尚未记录|
+|displayName|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -15,7 +15,6 @@
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
@@ -26,11 +25,6 @@
   "displayName": "String"
 }
 ```
-
-
-
-
-
 
 
 

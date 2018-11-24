@@ -15,23 +15,23 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|userDisplayName|字符串|DevicePolicyStatus 的用户名。|
+|id|String|实体的键。|
+|userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的合规性状态。可能的值为： `unknown` 、 `notApplicable` 、 `compliant` 、 `remediated` 、 `nonCompliant` 、 `error` 、 `conflict` 、 `notAssigned` 。|
+|状态|[complianceStatus](../resources/intune_shared_compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceUserStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceUserStatus",
@@ -43,11 +43,6 @@
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

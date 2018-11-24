@@ -9,7 +9,7 @@
 
 ## <a name="authorization"></a>Authorization
 
-若要访问用户操作，必须拥有下列[权限](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)之一。 用户可将前三个权限授予应用程序。 其余权限只能由管理员授予应用。
+需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
 
 - User.ReadBasic.All
 - User.Read
@@ -44,7 +44,7 @@
 
 ## <a name="common-operations"></a>通用操作
 
-> **注意：**某些操作需要其他权限。
+> **注意：** 某些操作需要其他权限。
 
 | 路径    | 说明 |
 |:---------|:-------------|

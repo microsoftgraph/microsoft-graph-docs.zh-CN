@@ -7,8 +7,8 @@
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |name|字符串|充当检测触发器属性的名称。|
-|类型|字符串|用于解释：键值对中属性的类型。 例如，字符串、布尔值、等。|
-|value|字符串|充当检测触发器属性的名称。|
+|type|字符串|用于解释： 键值对中属性的类型。 例如，String、 Boolean、 等。|
+|值|字符串|充当检测触发器属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,8 +35,8 @@
 
 ```json
 {
-  "name": "endpointAddress",
-  "type": "networkConnection.sourceAddress",
+  "name": "hostState.privateIpAddress",
+  "type": "String",
   "value": "10.154.9.40"
 }
 

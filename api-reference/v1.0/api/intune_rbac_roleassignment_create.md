@@ -24,7 +24,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,9 +34,9 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 此为只读，且自动生成。|
-|displayName|字符串|角色分配的显示或友好名称。|
-|description|字符串|角色分配的说明。|
+|id|String|实体的键。 此为只读，且自动生成。|
+|displayName|String|角色分配的显示或友好名称。|
+|description|String|角色分配的说明。|
 |resourceScopes|String 集合|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 
@@ -79,11 +79,6 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
 
 
 

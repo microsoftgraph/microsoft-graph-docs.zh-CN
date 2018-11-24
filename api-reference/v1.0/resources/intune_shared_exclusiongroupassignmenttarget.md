@@ -9,27 +9,23 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupId|字符串|赋值目标的组 ID。 继承自 [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
+|groupId|String|赋值目标的组 ID。 继承自 [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
-
-
-
-
-
 
 
 

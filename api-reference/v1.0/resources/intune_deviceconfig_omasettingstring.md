@@ -10,18 +10,19 @@ OMA 设置字符串定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|字符串|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|值|String|值。|
+|value|String|值。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingString"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingString",
@@ -31,11 +32,6 @@ OMA 设置字符串定义。
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -15,23 +15,23 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|locale|字符串|此消息的目标区域设置。|
-|subject|字符串|消息模板主题。|
-|messageTemplate|字符串|消息模板内容。|
-|isDefault|布尔值|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
+|locale|String|此消息的目标区域设置。|
+|subject|String|消息模板主题。|
+|messageTemplate|String|消息模板内容。|
+|isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
@@ -43,11 +43,6 @@
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

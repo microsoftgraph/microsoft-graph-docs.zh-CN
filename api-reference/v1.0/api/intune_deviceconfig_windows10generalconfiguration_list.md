@@ -24,7 +24,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10832
+Content-Length: 10901
 
 {
   "value": [
@@ -280,16 +280,12 @@ Content-Length: 10832
       "experienceBlockDeviceDiscovery": true,
       "experienceBlockErrorDialogWhenNoSIM": true,
       "experienceBlockTaskSwitcher": true,
-      "logonBlockFastUserSwitching": true
+      "logonBlockFastUserSwitching": true,
+      "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

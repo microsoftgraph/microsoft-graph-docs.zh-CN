@@ -4,29 +4,36 @@
 
 支持以下用户资源：
 
-- [邮件](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [事件](../resources/event.md)
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [事件](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 以及以下组资源：
 
-- 组 [事件](../resources/event.md)
 - 组 [日历](../resources/calendar.md)
+- 组 [事件](../resources/event.md)
 - 组[帖子](../resources/post.md) 
 
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下范围之一，具体视将在其中创建扩展查件的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+正在根据资源创建中的扩展的属性和权限键入 （委派或应用程序） 您请求，至少要调用此 API 是下表中所指定的权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| 组 [日历](../resources/calendar.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+| 组 [事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+| 组[帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 请求
 可以在新建或现有的资源实例中创建扩展属性。
 
@@ -96,7 +103,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| 授权 | Bearer {token}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -105,11 +112,11 @@ PATCH /groups/{id}/events/{id}
 
 |属性|类型|说明|
 |:-----|:-----|:-----|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) 集合| 一个或多个多值扩展属性的数组。 |
-|ID|id|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 一个或多个多值扩展属性的数组。 |
+|id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在_新建_资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
+在_新_的资源实例中，除了新**multiValueExtendedProperties**集合，创建一个扩展的属性时提供的资源实例以及 （即，[消息](../resources/message.md)， [mailFolder 的 JSON 表示形式](../resources/mailfolder.md)，[事件](../resources/event.md)等。)。
 
 
 ## <a name="response"></a>响应

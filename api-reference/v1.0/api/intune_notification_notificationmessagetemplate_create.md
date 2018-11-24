@@ -24,8 +24,8 @@ POST /deviceManagement/notificationMessageTemplates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 notificationMessageTemplate 对象的 JSON 表示形式。
@@ -34,11 +34,11 @@ POST /deviceManagement/notificationMessageTemplates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|字符串|通知消息模板的显示名称。|
-|defaultLocale|字符串|请求的区域设置不可用时要回退到的默认区域设置。|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|邮件模版品牌选项。品牌在 Intune 管理控制台中定义。可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
+|displayName|String|通知消息模板的显示名称。|
+|defaultLocale|String|请求的区域设置不可用时要回退到的默认区域设置。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|消息模板品牌选项。 已在 Intune 管理员控制台中定义品牌。 可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`。|
 
 
 
@@ -51,11 +51,10 @@ POST /deviceManagement/notificationMessageTemplates
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates
 Content-type: application/json
-Content-length: 261
+Content-length: 197
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
@@ -78,11 +77,6 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
-
-
-
-
-
 
 
 

@@ -22,11 +22,11 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|需要持有者&lt;令牌&gt;。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,11 +47,11 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationPr
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4343
+Content-Length: 4346
 
 {
   "value": {
-    "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
+    "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
     "displayName": "Display Name value",
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -78,7 +78,7 @@ Content-Length: 4343
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+    "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [
@@ -179,11 +179,6 @@ Content-Length: 4343
   }
 }
 ```
-
-
-
-
-
 
 
 

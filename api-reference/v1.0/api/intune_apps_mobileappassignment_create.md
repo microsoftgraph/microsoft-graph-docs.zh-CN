@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 mobileAppAssignment 对象的 JSON 表示形式。
@@ -34,10 +34,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|意图|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
-|目标|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
-|设置|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
+|id|String|实体的键。|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
+|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
 
 
@@ -83,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

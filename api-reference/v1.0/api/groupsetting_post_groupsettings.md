@@ -2,7 +2,7 @@
 
 根据 [groupSettingTemplates](../resources/groupsettingtemplate.md) 中提供的模板，使用此 API 创建新设置。这些设置可设置为租户级别或组级别。创建请求必须为模板中定义的所有设置提供 [settingValues](../resources/settingvalue.md)。对于组特定设置，仅可以设置管理组成员是否可以邀请来宾用户的设置。通常将来宾用户添加到群组的功能可用后，该操作将管理此行为。
 
-对于 v1.0 中支持的模板和属性列表，使用[groupSettingTemplate 查询](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)（对于 beta 终结点，调用[directorySettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta)。）
+有关模板和它们 v1.0 中支持的属性的列表，使用[groupSettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)（对于 beta 终结点，呼叫[directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。）
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ POST /groups/{id}/settings
 
 | 名称 | 说明 |
 |:---------------|:----------|
-| 授权 | Bearer {token}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文

@@ -15,7 +15,7 @@
 
 > **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅[无需已登录用户即可访问](../../../concepts/auth_v2_service.md)。
 
-## <a name="http-request-to-update-the-photo"></a>更新照片的 HTTP 请求
+## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value

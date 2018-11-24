@@ -1,6 +1,6 @@
-# <a name="list-alerts"></a>列出 alerts
+# <a name="list-alerts"></a>列出警报
 
-检索 [alert](../resources/alert.md) 对象的列表。
+检索[通知](../resources/alert.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -8,9 +8,9 @@
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All  |
+|委派（工作或学校帐户） |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
+|应用程序 | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -26,30 +26,30 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 [OData 查询参数](../../../concepts/query_parameters.md)以帮助自定义响应：
+此方法支持以下[OData 查询参数](../../../concepts/query_parameters.md)以帮助自定义响应：
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` 将从每个安全 API 提供程序返回聚合的顶级结果。  
+- `$top`将返回从每个安全 API 提供程序的聚合的顶级结果。  
 
-若要返回替代属性集，请使用 OData `$select`查询参数指定所需的 **alert** 属性集。  例如，若要返回 **assignedTo**、**category**和 **severity** 属性，请将以下内容添加到您的查询中：`$select=assignedTo,category,severity`。
+若要返回替代属性集，请使用 OData`$select`查询参数指定的所需的**通知**属性集。  例如，若要返回**assignedTo**、**类别**和**严重性**属性，请添加以下到您的查询： `$select=assignedTo,category,severity`。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | Bearer {code}。必需。|
+| Authorization  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
-请勿提供此方法的请求正文。 请求正文将被忽略。
+请勿提供此方法的请求正文。 在请求正文将被忽略。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 **alert** 对象集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象的集合。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

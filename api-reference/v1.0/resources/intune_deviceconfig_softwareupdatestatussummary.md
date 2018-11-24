@@ -12,8 +12,8 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|displayName|字符串|策略的名称。|
+|id|String|实体的键。|
+|displayName|String|策略的名称。|
 |compliantDeviceCount|Int32|兼容设备的数量。|
 |nonCompliantDeviceCount|Int32|不兼容设备的数量。|
 |remediatedDeviceCount|Int32|已修复设备的数量。|
@@ -33,12 +33,12 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
@@ -60,11 +60,6 @@
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

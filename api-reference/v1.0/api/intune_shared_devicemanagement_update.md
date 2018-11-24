@@ -4,25 +4,25 @@
 
 更新 [deviceManagement](../resources/intune_shared_devicemanagement.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-| 权限&nbsp;类型&nbsp;（通过&nbsp;工作流） | 权限（从最高特权到最低特权） |
+
+| 权限&nbsp;类型&nbsp;(通过&nbsp;工作流) | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） |
-| &nbsp; &nbsp; 审核 | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; 公司条款 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 公司注册 | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; 设备配置 | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; 设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; 端点保护 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; 注册 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 通知 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 加入 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; 远程协助 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 电信费用管理 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Windows 信息保护 | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;审核 | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;公司术语 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;公司注册 | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp;设备配置 | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;终结点保护 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;通知 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;入职培训 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;基于角色的访问控制 | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp;远程协助 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;电信支出管理 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Windows 信息保护 | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | 不支持。 |
 
@@ -38,8 +38,8 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagement](../resources/intune_shared_devicemanagement.md) 对象的 JSON 表示形式。
@@ -48,12 +48,12 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|id|String|设备唯一标识符|
 |**设备配置**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值为：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
-|**加入**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可能的值为： `pending`， `active`， `warning`， `disabled`， `deleted`， `blocked`， `lockedOut`。|
+|**入职培训**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 
 请求正文属性支持根据工作流而有所不同。
@@ -96,7 +96,7 @@ Content-length: 751
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 返回的属性根据工作流和上下文而有所不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 返回的属性根据工作流和上下文而有所不同。
 
 ``` http
 HTTP/1.1 200 OK

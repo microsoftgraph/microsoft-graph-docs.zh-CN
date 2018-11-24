@@ -6,27 +6,22 @@
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|none|0|没有从 Exchange 中发现访问状态的原因|
+|无|0|从 Exchange 发现没有访问状态理由|
 |unknown|1|未知的访问状态的原因|
-|exchangeGlobalRule|2|访问状态由 Exchange 全局规则确定|
-|exchangeIndividualRule|3|访问状态由 Exchange 单个规则确定|
-|exchangeDeviceRule|4|访问状态由 Exchange 设备规则确定|
-|exchangeUpgrade|5|访问状态取决于 Exchange 升级|
-|exchangeMailboxPolicy|6|访问状态由 Exchange 邮箱策略确定|
-|other|7|访问状态由 Exchange 确定|
-|compliant|8|访问状态由合规性质询授权|
-|notCompliant|9|访问状态由合规性质询吊销|
-|notEnrolled|10|访问状态由管理质询吊销|
-|unknownLocation|12|未知位置的访问状态|
-|mfaRequired|13|MFA 质询的访问状态|
-|azureADBlockDueToAccessPolicy|14|访问状态由 AAD 访问策略吊销|
-|compromisedPassword|15|访问状态由泄露的密码吊销|
-|deviceNotKnownWithManagedApp|16|访问状态由托管应用程序质询吊销|
-
-
-
-
-
+|exchangeGlobalRule|2|由 Exchange 全局规则的访问状态|
+|exchangeIndividualRule|3|由 Exchange 单个规则的访问状态|
+|exchangeDeviceRule|4|由 Exchange 设备规则的访问状态|
+|exchangeUpgrade|5|由于 Exchange 升级的访问状态|
+|exchangeMailboxPolicy|6|由 Exchange 邮箱策略的访问状态|
+|其他|7|由 Exchange 的访问状态|
+|符合标准|8|通过合规性质询授予的访问状态|
+|notCompliant|9|合规性质询被吊销的访问状态|
+|notEnrolled|10|管理质询被吊销的访问状态|
+|unknownLocation|12|由于未知位置的访问状态|
+|mfaRequired|13|由于 MFA 质询的访问状态|
+|azureADBlockDueToAccessPolicy|14|由 AAD 访问策略吊销的访问状态|
+|compromisedPassword|15|由受到攻击的密码吊销的访问状态|
+|deviceNotKnownWithManagedApp|16|由托管应用程序质询吊销的访问状态|
 
 
 

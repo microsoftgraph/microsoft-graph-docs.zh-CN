@@ -24,7 +24,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -33,7 +33,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 |属性|类型|说明|
 |:---|:---|:---|
-|category|字符串|尚未记录|
+|category|String|尚未记录|
 
 
 
@@ -60,11 +60,6 @@ Content-Length: 61
   ]
 }
 ```
-
-
-
-
-
 
 
 

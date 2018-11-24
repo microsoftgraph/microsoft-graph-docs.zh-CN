@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |installedDeviceCount|Int32|已成功安装此书籍的设备数量。|
 |failedDeviceCount|Int32|未能成功安装此书籍的设备数量。|
 |notInstalledDeviceCount|Int32|未安装此书籍的设备数量。|
@@ -53,9 +53,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 Content-type: application/json
-Content-length: 178
+Content-length: 236
 
 {
+  "@odata.type": "#microsoft.graph.eBookInstallSummary",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notInstalledDeviceCount": 7,
@@ -83,11 +84,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
-
-
-
-
 
 
 

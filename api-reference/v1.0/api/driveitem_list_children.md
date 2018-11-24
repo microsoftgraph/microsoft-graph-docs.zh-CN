@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出文件夹的内容
-ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 2bf094f424ed0a1fda1c790c435619bf65f25e36
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265216"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26596684"
 ---
-# <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
+# <a name="list-children-of-a-driveitem"></a>列出 driveItem 的子项
 
 在 DriveItem 的 **children** 关系中返回 [DriveItems](../resources/driveitem.md) 集合。
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 **注意：** 如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
 
-可以通过[可选的查询字符串参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)控制页面大小
+可以通过[可选的查询字符串参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)控制页面大小
 
 ### <a name="error-responses"></a>错误响应
 

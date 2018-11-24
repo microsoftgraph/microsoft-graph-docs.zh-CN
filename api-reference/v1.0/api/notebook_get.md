@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `select` 和 `expand` [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
 
 笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。
 
@@ -27,7 +27,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| 接受 | string | `application/json` |
+| Accept | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

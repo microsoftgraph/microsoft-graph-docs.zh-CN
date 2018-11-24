@@ -27,7 +27,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -38,8 +38,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|ID|字符串|实体的键。|
-|version|字符串|实体的版本。|
+|id|String|实体的键。|
+|version|String|实体的版本。|
 
 
 
@@ -79,11 +79,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

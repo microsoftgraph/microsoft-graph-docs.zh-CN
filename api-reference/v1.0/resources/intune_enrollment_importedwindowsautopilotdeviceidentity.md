@@ -15,11 +15,11 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|对象的 GUID|
-|orderIdentifier|字符串|Windows autopilot 设备订单 Id。|
-|serialNumber|字符串|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
-|hardwareIdentifier|二进制|Windows autopilot 设备硬件 Blob。|
+|id|字串符号|对象的 GUID|
+|orderIdentifier|字串符号|Windows autopilot 设备订单 Id。|
+|序列号|字串符号|Windows autopilot 设备序列号。|
+|产品密钥|字串符号|Windows autopilot 设备产品密钥。|
+|hardwareIdentifier|二进制数|Windows autopilot 设备硬件 Blob。|
 |状态|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
 
 ## <a name="relationships"></a>关系
@@ -49,11 +49,6 @@
   }
 }
 ```
-
-
-
-
-
 
 
 

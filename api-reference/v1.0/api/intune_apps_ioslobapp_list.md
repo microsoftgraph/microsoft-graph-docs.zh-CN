@@ -24,7 +24,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1546
+Content-Length: 1570
 
 {
   "value": [
@@ -83,7 +83,8 @@ Content-Length: 1546
         "v8_0": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -92,11 +93,6 @@ Content-Length: 1546
   ]
 }
 ```
-
-
-
-
-
 
 
 

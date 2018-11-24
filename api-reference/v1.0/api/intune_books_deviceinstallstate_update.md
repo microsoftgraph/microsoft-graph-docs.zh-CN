@@ -25,8 +25,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceInstallState](../resources/intune_books_deviceinstallstate.md) 对象的 JSON 表示形式。
@@ -35,15 +35,15 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|deviceName|字符串|设备名称。|
-|deviceId|字符串|设备 ID。|
+|id|String|实体的键。|
+|deviceName|String|设备名称。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
-|installState|[installState](../resources/intune_books_installstate.md)|电子书的安装状态。可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|字符串|安装失败的错误代码。|
-|osVersion|字符串|操作系统版本。|
-|osDescription|字符串|操作系统说明。|
-|userName|字符串|设备用户名。|
+|installState|[installState](../resources/intune_books_installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
+|errorCode|String|安装失败的错误代码。|
+|osVersion|String|操作系统版本。|
+|osDescription|String|操作系统说明。|
+|userName|String|设备用户名。|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
-Content-length: 317
+Content-length: 374
 
 {
+  "@odata.type": "#microsoft.graph.deviceInstallState",
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -90,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -2,25 +2,29 @@
 
 创建开放扩展（[openTypeExtension](../resources/openTypeExtension.md) 对象），并在新建或现有的资源实例中添加自定义属性。
 
-> **注意：** 如果在 Outlook 资源创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的** Outlook 具体注意事项**。
+> **注意：** 如果您正在创建在 Outlook 资源的打开扩展，请参阅[openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)**特定于 Outlook 的注意事项**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-若要调用此 API，必须有以下权限之一，具体视要在其中创建扩展的资源而定。要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
+根据您正在创建中的扩展名的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
-|**支持的资源**|**权限**|**支持的资源**|**权限** |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [设备](../resources/device.md) | Device.ReadWrite.All | [事件](../resources/event.md) | Calendars.ReadWrite |
-| [组](../resources/group.md) | Group.ReadWrite.All | [组事件](../resources/event.md) | Group.ReadWrite.All |
-| [组帖子](../resources/post.md) | Group.ReadWrite.All | [邮件](../resources/message.md) | Mail.ReadWrite |
-| [组织](../resources/organization.md) | Directory.AccessAsUser.All | [个人联系人](../resources/contact.md) | Contacts.ReadWrite |
-| [用户](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
+| [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
+| [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
+| [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [组织](../resources/organization.md) | Directory.AccessAsUser.All | 不支持 | 不支持 |
+| [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [用户](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>在新资源实例中创建扩展插件
 
-使用用于创建实例的相同 REST 请求。
+使用同一 REST 请求您用于创建实例。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,9 +35,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注意：** 此语法显示创建受支持资源实例的一些常见方法。 允许创建这些资源实例的所有其他 POST 语法均支持以类似方式在其中创建开放扩展。
+>**注意：** 此语法演示创建支持的资源实例的一些常见方法。 允许您创建这些资源实例的所有其他 POST 语法支持创建打开扩展名中其方式类似。
 
-若要了解如何在请求正文中添加新资源实例和_扩展_ 的属性，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加新资源实例和扩展的属性，请参阅[请求正文](#request-body)部分。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>在现有资源实例中创建扩展插件
 
@@ -52,20 +56,20 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注意：** 此语法显示标识资源实例的常见方法，以便在其中创建一个扩展。 允许标识这些资源实例的所有其他语法均支持以类似方式在其中创建开放扩展。
+>**注意：** 此语法演示来标识资源实例，以便在其中创建一个扩展的一些常见方法。 允许您确定这些资源实例的所有其他语法支持以类似方式在其中创建打开的扩展。
 
-若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加扩展，请参阅[请求正文](#request-body)部分。
 
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id|string|对象在相应集合中的唯一标识符。必需。|
+|ID|string|对象在相应集合中的唯一标识符。必需。|
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 值 |
 |:---------------|:----------|
-| 授权 | Bearer {token}。必需。 |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -74,8 +78,8 @@ POST /users/{id|userPrincipalName}/extensions
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string % |
+| @odata.type | microsoft.graph.openTypeExtension |
+| extensionName | %unique_string% |
 
 在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
 
@@ -85,8 +89,8 @@ POST /users/{id|userPrincipalName}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-使用用于创建资源实例的相同操作创建扩展时，操作将返回与使用该操作创建没有扩展的资源实例时相同的响应代码。
-请参阅如[上面](#create-an-extension-in-a-new-resource-instance)所列针对创建实例的相应主题。
+当您创建一个使用您用于创建资源实例的相同操作的扩展时，操作将返回它返回使用该操作创建无扩展名的资源实例时的相同响应代码。
+请参阅创建的实例中，列出[上面](#create-an-extension-in-a-new-resource-instance)的相应主题。
 
 ### <a name="response-body"></a>响应正文
 
@@ -105,9 +109,9 @@ POST /users/{id|userPrincipalName}/extensions
 - 新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。
 - 对于扩展：
 
-  - 类型。`microsoft.graph.openTypeExtension`
+  - `microsoft.graph.openTypeExtension` 类型。
   - 扩展名“Com.Contoso.Referral”。
-  - 存储为 JSON 有效负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `dealValue`。
+  - 其他数据存储为 JSON 有效负载中的三个自定义属性： `companyName`， `expirationDate`，和`dealValue`。
 
 <!-- {
   "blockType": "ignored",
@@ -226,7 +230,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 第二个示例在指定邮件中创建扩展。请求正文包括扩展的如下内容：
 
-- 类型。`microsoft.graph.openTypeExtension`
+- `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.Referral”。
 - 存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。
 
@@ -282,7 +286,7 @@ Content-type: application/json
 
 第三个示例在指定组事件中创建扩展。请求正文包括扩展的如下内容：
 
-- 类型。`microsoft.graph.openTypeExtension`
+- `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.Deal”。
 - 存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。
 
@@ -332,7 +336,7 @@ Content-type: application/json
 
 第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。**reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
 
-- 类型。`microsoft.graph.openTypeExtension`
+- `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
 - 存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。
 
@@ -386,7 +390,7 @@ Content-Length: 0
 
 第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。**post** 对象又包含新帖子的 **body** 和以下扩展数据：
 
-- 类型。`microsoft.graph.openTypeExtension`
+- `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
 - 存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。
 

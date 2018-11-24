@@ -6,9 +6,11 @@
 ## <a name="prerequisites"></a>先决条件
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](../../../concepts/permissions_reference.md)。
 
+
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）||
+| &nbsp;&nbsp; **入职培训** | DeviceManagementManaged Devices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -34,9 +36,10 @@ POST /deviceManagement/deviceCategories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
-|displayName|字符串|设备类别的显示名称。|
-|description|字符串|设备类别的可选说明。|
+|id|String|设备类别的唯一标识符。 只读。|
+|**入职培训**|
+|displayName|String|设备类别的显示名称。|
+|description|String|设备类别的可选说明。|
 
 
 

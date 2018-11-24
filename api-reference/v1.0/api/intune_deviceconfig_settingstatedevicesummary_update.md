@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -35,12 +35,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
+|id|String|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
-|notApplicableDeviceCount|Int32|设置的设备不适用计数|
-|compliantDeviceCount|Int32|设置的设备符合性计数|
+|notApplicableDeviceCount|Int32|设置的设备不可用计数|
+|compliantDeviceCount|Int32|设置的设备符合计数|
 |remediatedDeviceCount|Int32|设置的设备符合性计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
@@ -57,9 +57,10 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 Content-type: application/json
-Content-length: 296
+Content-length: 360
 
 {
+  "@odata.type": "#microsoft.graph.settingStateDeviceSummary",
   "settingName": "Setting Name value",
   "instancePath": "Instance Path value",
   "unknownDeviceCount": 2,
@@ -93,11 +94,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

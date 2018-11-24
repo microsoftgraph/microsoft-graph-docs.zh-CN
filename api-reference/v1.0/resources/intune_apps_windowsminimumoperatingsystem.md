@@ -14,10 +14,11 @@ Windows 移动应用需要的最低操作系统。
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsMinimumOperatingSystem",
@@ -26,11 +27,6 @@ Windows 移动应用需要的最低操作系统。
   "v10_0": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -7,16 +7,11 @@
 |成员|值|说明|
 |:---|:---|:---|
 |notApplicable|0|不适用。|
-|installed|1|安装。|
+|安装|1|安装。|
 |failed|2|失败。|
 |notInstalled|3|未安装。|
 |uninstallFailed|4|卸载失败。|
 |unknown|5|未知。|
-
-
-
-
-
 
 
 

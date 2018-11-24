@@ -27,14 +27,15 @@
 |[列出 verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索用于域验证的域 DNS 记录列表。|
 |[更新域](../api/domain_update.md) | [域](domain.md) |更新域。|
 |[删除域](../api/domain_delete.md) | 无 |删除域。|
+|[ForceDelete 域](../api/domain_forcedelete.md)|无|删除使用异步操作的域。|
 |[验证域](../api/domain_verify.md)|[域](domain.md)|验证域的所有权。|
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| authenticationType|字符串| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
-|availabilityStatus|字符串| 使用[验证](../api/domain_verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain_verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
+|authenticationType|String| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
+|availabilityStatus|String| 使用[验证](../api/domain_verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain_verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
 |id|字符串| 域的完全限定的名称。密钥、不可变、不可为 Null、唯一 |
 |isAdminManaged|布尔| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
 |isDefault|布尔| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |

@@ -12,22 +12,22 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|尚未记录|
-|已启用|布尔值|指示是否为该组织启用了本地条件访问|
+|id|String|尚未记录|
+|已启用|Boolean|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
-|overrideDefaultRule|布尔值|允许设备时重写默认访问规则以确保授予访问。|
+|overrideDefaultRule|Boolean|允许设备时重写默认访问规则以确保授予访问。|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
@@ -42,11 +42,6 @@
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

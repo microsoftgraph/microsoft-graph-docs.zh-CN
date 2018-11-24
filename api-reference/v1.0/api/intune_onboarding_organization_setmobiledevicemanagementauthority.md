@@ -24,7 +24,7 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|需要持有者&lt;令牌&gt;。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +51,6 @@ Content-Length: 18
   "value": 2
 }
 ```
-
-
-
-
-
 
 
 

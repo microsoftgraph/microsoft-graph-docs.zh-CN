@@ -9,29 +9,29 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 iosVppEBookAssignments](../api/intune_books_iosvppebookassignment_list.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 集合|列出 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性和关系。|
-|[获取 iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_get.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|读取 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性和关系。|
-|[创建 iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_create.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|创建新的 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象。|
-|[删除 iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_delete.md)|无|删除 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)。|
-|[更新 iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_update.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|更新 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性。|
+|[List iosVppEBookAssignments](../api/intune_books_iosvppebookassignment_list.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 集合|列出 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性和关系。|
+|[Get iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_get.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|读取 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性和关系。|
+|[Create iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_create.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|创建新的 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象。|
+|[Delete iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_delete.md)|无|删除 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)。|
+|[Update iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_update.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|更新 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
+|id|String|实体的键。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。 继承自 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|电子图书的安装意图。 继承自[managedEBookAssignment](../resources/intune_books_managedebookassignment.md)。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedEBookAssignment",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
@@ -42,11 +42,6 @@
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

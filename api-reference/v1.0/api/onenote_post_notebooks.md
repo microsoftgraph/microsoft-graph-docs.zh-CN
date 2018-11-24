@@ -58,7 +58,7 @@ Content-length: 30
   "@odata.type": "microsoft.graph.notebook"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 284
 

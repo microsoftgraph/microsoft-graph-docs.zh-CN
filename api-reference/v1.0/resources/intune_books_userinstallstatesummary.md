@@ -15,10 +15,10 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。|
-|userName|字符串|用户名。|
-|installedDeviceCount|Int32|已安装设备的计数。|
-|failedDeviceCount|Int32|已失败设备的计数。|
+|id|String|实体的键。|
+|userName|String|用户名。|
+|installedDeviceCount|Int32|Installed Device Count。|
+|failedDeviceCount|Int32|Failed Device Count。|
 |notInstalledDeviceCount|Int32|Not installed device count。|
 
 ## <a name="relationships"></a>关系
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.userInstallStateSummary",
@@ -44,11 +44,6 @@
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

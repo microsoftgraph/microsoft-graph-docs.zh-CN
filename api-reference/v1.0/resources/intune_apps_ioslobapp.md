@@ -9,54 +9,54 @@
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出iosLobApps](../api/intune_apps_ioslobapp_list.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md) 集合|列出 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性和关系。|
-|[获取iosLobApp](../api/intune_apps_ioslobapp_get.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|读取 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性和关系。|
-|[创建iosLobApp](../api/intune_apps_ioslobapp_create.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|创建新的 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象。|
-|[删除iosLobApp](../api/intune_apps_ioslobapp_delete.md)|无|删除 [iosLobApp](../resources/intune_apps_ioslobapp.md)。|
-|[更新iosLobApp](../api/intune_apps_ioslobapp_update.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|更新 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性。|
+|[List iosLobApps](../api/intune_apps_ioslobapp_list.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md) 集合|列出 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性和关系。|
+|[Get iosLobApp](../api/intune_apps_ioslobapp_get.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|读取 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性和关系。|
+|[Create iosLobApp](../api/intune_apps_ioslobapp_create.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|创建新的 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象。|
+|[Delete iosLobApp](../api/intune_apps_ioslobapp_delete.md)|无|删除 [iosLobApp](../resources/intune_apps_ioslobapp.md)。|
+|[Update iosLobApp](../api/intune_apps_ioslobapp_update.md)|[iosLobApp](../resources/intune_apps_ioslobapp.md)|更新 [iosLobApp](../resources/intune_apps_ioslobapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|发布服务器|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|布尔|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|负责人|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|开发人员|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|注释|字符串|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
-|committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|fileName|字符串|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|大小|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|已捆绑|字符串|标识名称。|
+|isFeatured|Boolean|指示应用是否被管理员标记为特色的值 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|informationUrl|String|详细信息 Url。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune_apps_mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|bundleId|String|标识名称。|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|最低适用操作系统的值。|
 |expirationDateTime|DateTimeOffset|过期时间。|
-|versionNumber|字符串|iOS 业务线 (LoB) 应用的版本号。|
-|buildNumber|字符串|iOS 业务线 (LoB) 应用的内部版本号。|
+|versionNumber|String|iOS 业务线 (LoB) 应用的版本号。|
+|buildNumber|String|iOS 业务线 (LoB) 应用的内部版本号。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|类别|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
-|分配|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune_apps_mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) 集合|此应用的内容版本列表。 继承自 [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileLobApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosLobApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -92,18 +92,14 @@
     "v8_0": true,
     "v9_0": true,
     "v10_0": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
   "buildNumber": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -15,20 +15,20 @@ Windows 信息保护网络学习摘要实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
-|url|字符串|网站 URL|
+|id|String|WindowsInformationProtectionNetworkLearningSummary 的唯一标识符。|
+|url|String|网站 URL|
 |deviceCount|Int32|设备计数|
 
 ## <a name="relationships"></a>关系
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
@@ -37,11 +37,6 @@ Windows 信息保护网络学习摘要实体。
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

@@ -6,9 +6,9 @@
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bundleID|字符串|要向其应用这些通知设置的应用的捆绑 ID。|
-|appName|字符串|要与 bundleID 关联的应用程序名称。|
-|发布者|字符串|要与 bundleID 关联的发布者。|
+|bundleID|String|要向其应用这些通知设置的应用的捆绑 ID。|
+|appName|String|要与 bundleID 关联的应用程序名称。|
+|发布者|String|要与 bundleID 关联的发布者。|
 |enabled|布尔值|指示是否允许此应用使用通知。|
 |showInNotificationCenter|布尔值|指示是否可以在通知中心中显示通知。|
 |showOnLockScreen|布尔值|指示是否可以在锁定屏幕上显示通知。|
@@ -20,10 +20,11 @@
 无
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNotificationSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNotificationSettings",
@@ -38,11 +39,6 @@
   "soundsEnabled": true
 }
 ```
-
-
-
-
-
 
 
 

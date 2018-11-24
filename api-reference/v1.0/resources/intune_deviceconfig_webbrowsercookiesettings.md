@@ -7,15 +7,10 @@ Web 浏览器 Cookie 设置。
 |成员|值|说明|
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值，没有用途。|
-|blockAlways|1|始终阻止 Cookie。|
-|allowCurrentWebSite|2|允许当前网站的 cookie。|
-|allowFromWebsitesVisited|3|允许来自已访问网站的 Cookie。|
-|allowAlways|4|始终允许 Cookie。|
-
-
-
-
-
+|blockAlways|1|始终阻止 cookie。|
+|allowCurrentWebSite|2|允许从当前网站的 cookie。|
+|allowFromWebsitesVisited|3|允许来自访问网站的 Cookie。|
+|allowAlways|4|始终允许 cookie。|
 
 
 

@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: d73b43b0ba1d98f496b4a1b2a606ec9f95298efa
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269836"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26602382"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -16,8 +16,8 @@ ms.locfileid: "23269836"
 
 **driveItem** 资源的寻址方式主要有两种：
 
-* 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式 `drive/items/{item-id}`
-* 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式 `/drive/root:/path/to/file`
+* 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
+* 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
@@ -103,25 +103,25 @@ ms.locfileid: "23269836"
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| 说明          | String             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
-| id                   | String             | 项在驱动器中的唯一标识符。只读。
+| id                   | 字符串             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
-| 包              | [package][]        | 如果存在，则表示此项是包而不是文件夹或文件。在某些上下文中将包视为文件，在其他上下文中视为文件夹。只读。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| 包              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
 | photo                | [photo][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
 | root                 | [根][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
 | searchResult         | [searchResult][]   | 搜索元数据（如果此项目来自搜索结果）。只读。
-| shared               | [shared][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
+| shared               | [共享][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
@@ -138,11 +138,11 @@ ms.locfileid: "23269836"
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
 | createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [用户][]                    | 上次修改项的用户的身份。 只读。
-| listItem           | [listItem][]                | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为空。
+| listItem           | [listItem][]                | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 Null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
-| 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为空。
-| versions           | [driveItemVersion][] 集合 | 项的早期版本列表。 有关详细信息，请参阅 [获取早期版本][]。 只读。 可为空。
-| workbook           | [workbook][]                | 对于 Excel 电子表格文件，访问工作簿 API 来处理电子表格的内容。 可为空。
+| 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
+| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 Null。
+| workbook           | [workbook][]                | 对于的 Excel 电子表格文件，访问工作簿 API 来处理电子表格的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
 
@@ -178,7 +178,9 @@ ms.locfileid: "23269836"
 | [添加权限](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [列出权限](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [删除权限](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
+[item-preview]: ../api/driveItem_preview.md
 
 ## <a name="remarks"></a>注解
 
@@ -186,14 +188,14 @@ ms.locfileid: "23269836"
 
 [audio]: audio.md
 [baseItem]: baseItem.md
-[deleted]: deleted.md
+[Deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
 [driveItemVersion]: driveItemVersion.md
-[file]: file.md
+[File]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
-[getting previous versions]: ../api/driveitem_list_versions.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
+[获取早期版本]: ../api/driveitem_list_versions.md
+[获取缩略图]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
 [itemReference]: itemReference.md
@@ -203,15 +205,15 @@ ms.locfileid: "23269836"
 [permission]: permission.md
 [photo]: photo.md
 [remoteItem]: remoteItem.md
-[root]: root.md
+[Root]: root.md
 [searchResult]: searchResult.md
-[shared]: shared.md
+[Shared]: shared.md
 [sharepointIds]: sharepointIds.md
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

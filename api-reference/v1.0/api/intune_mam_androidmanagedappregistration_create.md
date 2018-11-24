@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
-|接受|application/json|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 androidManagedAppRegistration 对象的 JSON 表示形式。
@@ -36,17 +36,17 @@ POST /deviceAppManagement/managedAppRegistrations
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|创建的日期和时间。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |lastSyncDateTime|DateTimeOffset|上次应用与管理服务同步的日期和时间。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|applicationVersion|字符串|应用版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|managementSdkVersion|字符串|应用管理 SDK 版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|platformVersion|字符串|操作系统版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceType|字符串|主机设备类型。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceTag|字符串|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceName|字符串|主机设备名称。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。例如，在取得 root 权限的设备上运行的应用。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)。可取值为：`none`、`rootedDevice`。|
-|userId|字符串|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|applicationVersion|String|应用版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|managementSdkVersion|String|应用管理 SDK 版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|platformVersion|String|操作系统版本。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceType|String|主机设备类型。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 从[managedAppRegistration](../resources/intune_mam_managedappregistration.md)根设备继承上运行的应用程序。 可取值为：`none`、`rootedDevice`。|
+|userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|version|字符串|实体的版本。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|id|String|实体的键。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 
 
@@ -111,11 +111,6 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

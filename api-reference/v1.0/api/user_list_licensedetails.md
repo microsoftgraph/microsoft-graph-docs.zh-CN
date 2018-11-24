@@ -18,7 +18,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-该方法**不**支持 [OData 查询参数](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)。
+该方法**不**支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

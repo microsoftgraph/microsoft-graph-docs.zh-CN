@@ -1,14 +1,14 @@
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
 
-允许设置标记，以便用户在日后跟进项目。 受支持的项包括[邮件](message.md)和[联系人](contact.md)。
+允许用户跟进更高版本的项目中设置标志。 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|完成跟进的日期和时间。|
 |dueDateTime|**dateTimeTimeZone**|待完成的跟进的日期和时间。|
-|flagStatus|FollowupFlagStatus|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
+|flagStatus|followupFlagStatus|项目的跟进状态。 可取值为：`notFlagged`、`complete` 和 `flagged`。|
 |startDateTime|**dateTimeTimeZone**|要开始的跟进的日期和时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式

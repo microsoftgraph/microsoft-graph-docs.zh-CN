@@ -24,7 +24,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -34,7 +34,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|String|证书的唯一标识符|
+|id|String|证书的唯一标识符|
 |appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
@@ -52,12 +52,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 264
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificate": "Certificate value"
 }
@@ -80,11 +80,6 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -15,7 +15,7 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ID|字符串|实体的唯一标识符。|
+|id|String|实体的唯一标识符。|
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
@@ -27,12 +27,12 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
@@ -42,11 +42,6 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
   "acceptedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 
