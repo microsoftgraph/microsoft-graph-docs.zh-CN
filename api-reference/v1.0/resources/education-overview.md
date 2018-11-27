@@ -49,7 +49,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [列出所有学校](../api/educationroot_list_schools.md) 
 - [列出所教授课程的学校](../api/educationclass_list_schools.md)
 - [为用户列出学校](../api/educationuser_list_schools.md)
-- [获取所有课程](../api/educationroot_list_classes.md )
+- [获取所有课程](../api/educationroot_list_classes.md)
 - [获取学校的课程](../api/educationschool_list_classes.md)
 - [为用户列出课程](../api/educationuser_list_classes.md)
 - [将课程添加到学校](../api/educationschool_post_classes.md)

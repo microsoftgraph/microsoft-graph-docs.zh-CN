@@ -14,20 +14,18 @@
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-对于特定用户：
-<!-- { "blockType": "ignored" } -->
+为某个特定用户：<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-对于登录用户：
-<!-- { "blockType": "ignored" } -->
+对于已登录的用户：<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](http://developer.microsoft.com/zh-CN/graph/docs/overview/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
 
 默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 
 
