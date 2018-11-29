@@ -1,7 +1,0 @@
-<span data-ttu-id="876e4-p138">有关将 Azure AD 与不同类型的应用结合使用的信息，请参阅 [Azure Active Directory 开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**入门**链接。该指南包含概述主题、代码演练和 Azure AD 终结点支持的不同类型的应用的协议文档的链接。</span><span class="sxs-lookup"><span data-stu-id="876e4-p138">For information about using the Azure AD endpoint with different kinds of apps, see the **Get Started** links in the [Azure Active Directory developers guide](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, code walk-throughs, and protocol documentation for different kinds of app supported by the Azure AD endpoint.</span></span>
-
-- 有关将 Azure AD 与不同类型的应用结合使用的信息，请参阅 [Azure Active Directory 开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**入门**链接。该指南包含概述主题、代码演练和 Azure AD 终结点支持的不同类型的应用的协议文档的链接。
-- <span data-ttu-id="876e4-321">有关 Active Directory 身份验证库 (ADAL) 以及可与 Azure AD 终结点结合使用的服务器中间件的详细信息，请参阅 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。</span><span class="sxs-lookup"><span data-stu-id="876e4-321">For information about the Active Directory Authentication Library (ADAL) and server middleware available for use with the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).</span></span>
-
-
- 
