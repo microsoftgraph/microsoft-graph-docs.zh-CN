@@ -1,17 +1,28 @@
-# <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
+---
+title: assignedLicense 资源类型
+description: 表示分配给用户的许可证。用户 实体的 **AssignedLicenses** 属性是一个 **assignedLicense** 集合。
+ms.openlocfilehash: a41ece17882e6b85da009b4e29292e4b9a7965af
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27048786"
+---
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="ddc0e-104">assignedLicense 资源类型</span><span class="sxs-lookup"><span data-stu-id="ddc0e-104">assignedLicense resource type</span></span>
 
-表示分配给用户的许可证。[用户](user.md) 实体的 **AssignedLicenses** 属性是一个 **assignedLicense** 集合。
+> <span data-ttu-id="ddc0e-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ddc0e-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-106">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+<span data-ttu-id="ddc0e-p103">表示分配给用户的许可证。[用户](user.md) 实体的 **AssignedLicenses** 属性是一个 **assignedLicense** 集合。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-p103">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ddc0e-109">属性</span><span class="sxs-lookup"><span data-stu-id="ddc0e-109">Properties</span></span>
+| <span data-ttu-id="ddc0e-110">属性</span><span class="sxs-lookup"><span data-stu-id="ddc0e-110">Property</span></span>     | <span data-ttu-id="ddc0e-111">类型</span><span class="sxs-lookup"><span data-stu-id="ddc0e-111">Type</span></span>   |<span data-ttu-id="ddc0e-112">说明</span><span class="sxs-lookup"><span data-stu-id="ddc0e-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|disabledPlans|Guid 集合|已禁用的计划的唯一标识符的集合。|
-|skuId|Guid|此 SKU 的唯一标识符。|
+|<span data-ttu-id="ddc0e-113">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="ddc0e-113">disabledPlans</span></span>|<span data-ttu-id="ddc0e-114">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="ddc0e-114">Guid collection</span></span>|<span data-ttu-id="ddc0e-115">已禁用的计划的唯一标识符的集合。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-115">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="ddc0e-116">skuId</span><span class="sxs-lookup"><span data-stu-id="ddc0e-116">skuId</span></span>|<span data-ttu-id="ddc0e-117">Guid</span><span class="sxs-lookup"><span data-stu-id="ddc0e-117">Guid</span></span>|<span data-ttu-id="ddc0e-118">此 SKU 的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-118">The unique identifier for the SKU.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="ddc0e-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ddc0e-119">JSON representation</span></span>
 
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="ddc0e-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ddc0e-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

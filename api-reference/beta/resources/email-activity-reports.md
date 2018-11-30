@@ -1,0 +1,25 @@
+---
+title: 电子邮件活动报表
+description: 您可以从报告页的贵组织中获取电子邮件通信的高级视图。 您还可以钻取活动电子邮件小部件，以了解趋势和每个用户的组织中的电子邮件活动的详细信息。
+ms.openlocfilehash: 47ff9017216fa3fd333b383f7a603354775d1023
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049390"
+---
+# <a name="email-activity-reports"></a><span data-ttu-id="488d0-104">电子邮件活动报表</span><span class="sxs-lookup"><span data-stu-id="488d0-104">Email activity reports</span></span>
+
+> <span data-ttu-id="488d0-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="488d0-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="488d0-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="488d0-106">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="488d0-107">您可以从报告页的贵组织中获取电子邮件通信的高级视图。</span><span class="sxs-lookup"><span data-stu-id="488d0-107">You can get a high level view of email traffic within your organization from the Reports page.</span></span> <span data-ttu-id="488d0-108">您还可以钻取活动电子邮件小部件，以了解趋势和每个用户的组织中的电子邮件活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="488d0-108">You can also drill into the Email Activity widget to understand the trends and details per user of the email activity in your organization.</span></span>
+
+> <span data-ttu-id="488d0-109">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 电子邮件活动](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。</span><span class="sxs-lookup"><span data-stu-id="488d0-109">**Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).</span></span>
+
+## <a name="reports"></a><span data-ttu-id="488d0-110">报表</span><span class="sxs-lookup"><span data-stu-id="488d0-110">Reports</span></span>
+
+| <span data-ttu-id="488d0-111">函数</span><span class="sxs-lookup"><span data-stu-id="488d0-111">Function</span></span>                                 | <span data-ttu-id="488d0-112">CSV 返回类型</span><span class="sxs-lookup"><span data-stu-id="488d0-112">CSV return type</span></span> | <span data-ttu-id="488d0-113">JSON 返回类型</span><span class="sxs-lookup"><span data-stu-id="488d0-113">JSON return type</span></span>                         | <span data-ttu-id="488d0-114">说明</span><span class="sxs-lookup"><span data-stu-id="488d0-114">Description</span></span>                              |
+| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
+| [<span data-ttu-id="488d0-115">获取用户详细信息</span><span class="sxs-lookup"><span data-stu-id="488d0-115">Get user detail</span></span>](../api/reportroot-getemailactivityuserdetail.md) | <span data-ttu-id="488d0-116">Stream</span><span class="sxs-lookup"><span data-stu-id="488d0-116">Stream</span></span>          | [<span data-ttu-id="488d0-117">emailActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="488d0-117">emailActivityUserDetail</span></span>](../resources/emailactivityuserdetail.md) | <span data-ttu-id="488d0-118">获取用户执行的电子邮件活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="488d0-118">Get details about email activity users have performed.</span></span> |
+| [<span data-ttu-id="488d0-119">获取活动数</span><span class="sxs-lookup"><span data-stu-id="488d0-119">Get activity counts</span></span>](../api/reportroot-getemailactivitycounts.md) | <span data-ttu-id="488d0-120">Stream</span><span class="sxs-lookup"><span data-stu-id="488d0-120">Stream</span></span>          | [<span data-ttu-id="488d0-121">emailActivitySummary</span><span class="sxs-lookup"><span data-stu-id="488d0-121">emailActivitySummary</span></span>](../resources/emailactivitysummary.md) | <span data-ttu-id="488d0-122">可便于了解组织中的电子邮件活动趋势（如已发送、已阅读和已接收的电子邮件数）。</span><span class="sxs-lookup"><span data-stu-id="488d0-122">Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.</span></span> |
+| [<span data-ttu-id="488d0-123">获取用户数</span><span class="sxs-lookup"><span data-stu-id="488d0-123">Get user counts</span></span>](../api/reportroot-getemailactivityusercounts.md) | <span data-ttu-id="488d0-124">Stream</span><span class="sxs-lookup"><span data-stu-id="488d0-124">Stream</span></span>          | [<span data-ttu-id="488d0-125">emailActivitySummary</span><span class="sxs-lookup"><span data-stu-id="488d0-125">emailActivitySummary</span></span>](../resources/emailactivitysummary.md) | <span data-ttu-id="488d0-126">可便于了解正在执行发送、阅读和接收等电子邮件活动的唯一用户数趋势。</span><span class="sxs-lookup"><span data-stu-id="488d0-126">Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.</span></span> |

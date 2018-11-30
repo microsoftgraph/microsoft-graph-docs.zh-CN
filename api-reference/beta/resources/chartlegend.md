@@ -1,30 +1,42 @@
-# <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
+---
+title: ChartLegend 资源类型
+description: 表示图表中的图例。
+ms.openlocfilehash: d01eee45245d17fb142ddb75b70a6cde6a89213c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27048212"
+---
+# <a name="chartlegend-resource-type"></a><span data-ttu-id="511c2-103">ChartLegend 资源类型</span><span class="sxs-lookup"><span data-stu-id="511c2-103">ChartLegend resource type</span></span>
 
-表示图表中的图例。
+> <span data-ttu-id="511c2-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="511c2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="511c2-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="511c2-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="511c2-106">表示图表中的图例。</span><span class="sxs-lookup"><span data-stu-id="511c2-106">Represents the legend in a chart.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="511c2-107">方法</span><span class="sxs-lookup"><span data-stu-id="511c2-107">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="511c2-108">方法</span><span class="sxs-lookup"><span data-stu-id="511c2-108">Method</span></span>           | <span data-ttu-id="511c2-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="511c2-109">Return Type</span></span>    |<span data-ttu-id="511c2-110">说明</span><span class="sxs-lookup"><span data-stu-id="511c2-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |读取 chartlegend 对象的属性和关系。|
-|[更新](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |更新 chartlegend 对象。 |
+|[<span data-ttu-id="511c2-111">获取 ChartLegend</span><span class="sxs-lookup"><span data-stu-id="511c2-111">Get ChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="511c2-112">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="511c2-112">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="511c2-113">读取 chartlegend 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="511c2-113">Read properties and relationships of chartLegend object.</span></span>|
+|[<span data-ttu-id="511c2-114">Update</span><span class="sxs-lookup"><span data-stu-id="511c2-114">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="511c2-115">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="511c2-115">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="511c2-116">更新 chartlegend 对象。</span><span class="sxs-lookup"><span data-stu-id="511c2-116">Update ChartLegend object.</span></span> |
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="511c2-117">属性</span><span class="sxs-lookup"><span data-stu-id="511c2-117">Properties</span></span>
+| <span data-ttu-id="511c2-118">属性</span><span class="sxs-lookup"><span data-stu-id="511c2-118">Property</span></span>     | <span data-ttu-id="511c2-119">类型</span><span class="sxs-lookup"><span data-stu-id="511c2-119">Type</span></span>   |<span data-ttu-id="511c2-120">说明</span><span class="sxs-lookup"><span data-stu-id="511c2-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
-|position|string|表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
-|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
+|<span data-ttu-id="511c2-121">overlay</span><span class="sxs-lookup"><span data-stu-id="511c2-121">overlay</span></span>|<span data-ttu-id="511c2-122">boolean</span><span class="sxs-lookup"><span data-stu-id="511c2-122">boolean</span></span>|<span data-ttu-id="511c2-123">表示图表图例是否应该与图表主体重叠的布尔值。</span><span class="sxs-lookup"><span data-stu-id="511c2-123">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
+|<span data-ttu-id="511c2-124">position</span><span class="sxs-lookup"><span data-stu-id="511c2-124">position</span></span>|<span data-ttu-id="511c2-125">string</span><span class="sxs-lookup"><span data-stu-id="511c2-125">string</span></span>|<span data-ttu-id="511c2-p102">表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。</span><span class="sxs-lookup"><span data-stu-id="511c2-p102">Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
+|<span data-ttu-id="511c2-128">visible</span><span class="sxs-lookup"><span data-stu-id="511c2-128">visible</span></span>|<span data-ttu-id="511c2-129">boolean</span><span class="sxs-lookup"><span data-stu-id="511c2-129">boolean</span></span>|<span data-ttu-id="511c2-130">表示 ChartLegend 对象的可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="511c2-130">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="511c2-131">Relationships</span><span class="sxs-lookup"><span data-stu-id="511c2-131">Relationships</span></span>
+| <span data-ttu-id="511c2-132">关系</span><span class="sxs-lookup"><span data-stu-id="511c2-132">Relationship</span></span> | <span data-ttu-id="511c2-133">类型</span><span class="sxs-lookup"><span data-stu-id="511c2-133">Type</span></span>   |<span data-ttu-id="511c2-134">说明</span><span class="sxs-lookup"><span data-stu-id="511c2-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|表示图表图例的格式，包括填充和字体格式。只读。|
+|<span data-ttu-id="511c2-135">format</span><span class="sxs-lookup"><span data-stu-id="511c2-135">format</span></span>|[<span data-ttu-id="511c2-136">ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="511c2-136">ChartLegendFormat</span></span>](chartlegendformat.md)|<span data-ttu-id="511c2-p103">表示图表图例的格式，包括填充和字体格式。只读。</span><span class="sxs-lookup"><span data-stu-id="511c2-p103">Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="511c2-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="511c2-139">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="511c2-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="511c2-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

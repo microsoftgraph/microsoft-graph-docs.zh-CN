@@ -1,61 +1,71 @@
-# <a name="table-resource-type"></a>表资源类型
+---
+title: 表资源类型
+description: 表示一个 Excel 表。
+ms.openlocfilehash: 0a078965febef44f1fc27f21c7c29cc184ea526a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049117"
+---
+# <a name="table-resource-type"></a><span data-ttu-id="c4708-103">表资源类型</span><span class="sxs-lookup"><span data-stu-id="c4708-103">Table resource type</span></span>
 
-表示一个 Excel 表。
+> <span data-ttu-id="c4708-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="c4708-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c4708-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="c4708-105">Use of these APIs in production applications is not supported.</span></span>
 
+<span data-ttu-id="c4708-106">表示一个 Excel 表。</span><span class="sxs-lookup"><span data-stu-id="c4708-106">Represents an Excel table.</span></span>
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="c4708-107">方法</span><span class="sxs-lookup"><span data-stu-id="c4708-107">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="c4708-108">方法</span><span class="sxs-lookup"><span data-stu-id="c4708-108">Method</span></span>           | <span data-ttu-id="c4708-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="c4708-109">Return Type</span></span>    |<span data-ttu-id="c4708-110">说明</span><span class="sxs-lookup"><span data-stu-id="c4708-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取表](../api/table_get.md) | [表](table.md) |读取 table 对象的属性和关系。|
-|[创建 TableColumn](../api/table_post_columns.md) |[TableColumn](tablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
-|[列出列](../api/table_list_columns.md) |[TableColumn](tablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
-|[创建 TableRow](../api/table_post_rows.md) |[TableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
-|[创建行](../api/table_list_rows.md) |[TableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
-|[更新](../api/table_update.md) | [表](table.md)    |更新 Table 对象。 |
-|[Databodyrange](../api/table_databodyrange.md)|[区域](range.md)|获取与表的数据体相关的 range 对象。|
-|[Headerrowrange](../api/table_headerrowrange.md)|[区域](range.md)|获取与表的标头行相关的 range 对象。|
-|[区域](../api/table_range.md)|[区域](range.md)|获取与整个表相关的 range 对象。|
-|[Totalrowrange](../api/table_totalrowrange.md)|[区域](range.md)|获取与表的总计行相关的 range 对象。|
-|[Clearfilters](../api/table_clearfilters.md)|无|清除当前表上应用的所有筛选器。|
-|[Converttorange](../api/table_converttorange.md)|[区域](range.md)|将表转换为普通单元格区域。保留所有数据。|
-|[删除](../api/table_delete.md)|无|删除表。|
-|[Reapplyfilters](../api/table_reapplyfilters.md)|无|重新应用当前表上的所有筛选器。|
-|[列出](../api/table_list.md) | [表](table.md) 集合 |获取 table 对象集合。 |
-|[添加](../api/tablecollection_add.md)|[表](table.md)|创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。|
+|[<span data-ttu-id="c4708-111">获取表</span><span class="sxs-lookup"><span data-stu-id="c4708-111">Get Table</span></span>](../api/table-get.md) | [<span data-ttu-id="c4708-112">表</span><span class="sxs-lookup"><span data-stu-id="c4708-112">Table</span></span>](table.md) |<span data-ttu-id="c4708-113">读取 table 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c4708-113">Read properties and relationships of table object.</span></span>|
+|[<span data-ttu-id="c4708-114">创建 TableColumn</span><span class="sxs-lookup"><span data-stu-id="c4708-114">Create TableColumn</span></span>](../api/table-post-columns.md) |[<span data-ttu-id="c4708-115">TableColumn</span><span class="sxs-lookup"><span data-stu-id="c4708-115">TableColumn</span></span>](tablecolumn.md)| <span data-ttu-id="c4708-116">通过发布到列集合创建新的 TableColumn。</span><span class="sxs-lookup"><span data-stu-id="c4708-116">Create a new TableColumn by posting to the columns collection.</span></span>|
+|[<span data-ttu-id="c4708-117">列出列</span><span class="sxs-lookup"><span data-stu-id="c4708-117">List columns</span></span>](../api/table-list-columns.md) |<span data-ttu-id="c4708-118">[TableColumn](tablecolumn.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4708-118">[TableColumn](tablecolumn.md) collection</span></span>| <span data-ttu-id="c4708-119">获取 TableColumn 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c4708-119">Get a TableColumn object collection.</span></span>|
+|[<span data-ttu-id="c4708-120">创建 TableRow</span><span class="sxs-lookup"><span data-stu-id="c4708-120">Create TableRow</span></span>](../api/table-post-rows.md) |[<span data-ttu-id="c4708-121">TableRow</span><span class="sxs-lookup"><span data-stu-id="c4708-121">TableRow</span></span>](tablerow.md)| <span data-ttu-id="c4708-122">通过发布到行集合创建新的 TableRow。</span><span class="sxs-lookup"><span data-stu-id="c4708-122">Create a new TableRow by posting to the rows collection.</span></span>|
+|[<span data-ttu-id="c4708-123">创建行</span><span class="sxs-lookup"><span data-stu-id="c4708-123">List rows</span></span>](../api/table-list-rows.md) |<span data-ttu-id="c4708-124">[TableRow](tablerow.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4708-124">[TableRow](tablerow.md) collection</span></span>| <span data-ttu-id="c4708-125">获取 TableRow 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c4708-125">Get a TableRow object collection.</span></span>|
+|[<span data-ttu-id="c4708-126">更新</span><span class="sxs-lookup"><span data-stu-id="c4708-126">Update</span></span>](../api/table-update.md) | [<span data-ttu-id="c4708-127">表</span><span class="sxs-lookup"><span data-stu-id="c4708-127">Table</span></span>](table.md)   |<span data-ttu-id="c4708-128">更新 Table 对象。</span><span class="sxs-lookup"><span data-stu-id="c4708-128">Update Table object.</span></span> |
+|[<span data-ttu-id="c4708-129">Databodyrange</span><span class="sxs-lookup"><span data-stu-id="c4708-129">Databodyrange</span></span>](../api/table-databodyrange.md)|[<span data-ttu-id="c4708-130">区域</span><span class="sxs-lookup"><span data-stu-id="c4708-130">Range</span></span>](range.md)|<span data-ttu-id="c4708-131">获取与表的数据体相关的 range 对象。</span><span class="sxs-lookup"><span data-stu-id="c4708-131">Gets the range object associated with the data body of the table.</span></span>|
+|[<span data-ttu-id="c4708-132">Headerrowrange</span><span class="sxs-lookup"><span data-stu-id="c4708-132">Headerrowrange</span></span>](../api/table-headerrowrange.md)|[<span data-ttu-id="c4708-133">区域</span><span class="sxs-lookup"><span data-stu-id="c4708-133">Range</span></span>](range.md)|<span data-ttu-id="c4708-134">获取与表的标头行相关的 range 对象。</span><span class="sxs-lookup"><span data-stu-id="c4708-134">Gets the range object associated with header row of the table.</span></span>|
+|[<span data-ttu-id="c4708-135">区域</span><span class="sxs-lookup"><span data-stu-id="c4708-135">Range</span></span>](../api/table-range.md)|[<span data-ttu-id="c4708-136">Range</span><span class="sxs-lookup"><span data-stu-id="c4708-136">Range</span></span>](range.md)|<span data-ttu-id="c4708-137">获取与整个表相关的 range 对象。</span><span class="sxs-lookup"><span data-stu-id="c4708-137">Gets the range object associated with the entire table.</span></span>|
+|[<span data-ttu-id="c4708-138">Totalrowrange</span><span class="sxs-lookup"><span data-stu-id="c4708-138">Totalrowrange</span></span>](../api/table-totalrowrange.md)|[<span data-ttu-id="c4708-139">区域</span><span class="sxs-lookup"><span data-stu-id="c4708-139">Range</span></span>](range.md)|<span data-ttu-id="c4708-140">获取与表的总计行相关的 range 对象。</span><span class="sxs-lookup"><span data-stu-id="c4708-140">Gets the range object associated with totals row of the table.</span></span>|
+|[<span data-ttu-id="c4708-141">Clearfilters</span><span class="sxs-lookup"><span data-stu-id="c4708-141">Clearfilters</span></span>](../api/table-clearfilters.md)|<span data-ttu-id="c4708-142">无</span><span class="sxs-lookup"><span data-stu-id="c4708-142">None</span></span>|<span data-ttu-id="c4708-143">清除当前表上应用的所有筛选器。</span><span class="sxs-lookup"><span data-stu-id="c4708-143">Clears all the filters currently applied on the table.</span></span>|
+|[<span data-ttu-id="c4708-144">Converttorange</span><span class="sxs-lookup"><span data-stu-id="c4708-144">Converttorange</span></span>](../api/table-converttorange.md)|[<span data-ttu-id="c4708-145">区域</span><span class="sxs-lookup"><span data-stu-id="c4708-145">Range</span></span>](range.md)|<span data-ttu-id="c4708-p102">将表转换为普通单元格区域。保留所有数据。</span><span class="sxs-lookup"><span data-stu-id="c4708-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>|
+|[<span data-ttu-id="c4708-148">删除</span><span class="sxs-lookup"><span data-stu-id="c4708-148">Delete</span></span>](../api/table-delete.md)|<span data-ttu-id="c4708-149">无</span><span class="sxs-lookup"><span data-stu-id="c4708-149">None</span></span>|<span data-ttu-id="c4708-150">删除表。</span><span class="sxs-lookup"><span data-stu-id="c4708-150">Deletes the table.</span></span>|
+|[<span data-ttu-id="c4708-151">Reapplyfilters</span><span class="sxs-lookup"><span data-stu-id="c4708-151">Reapplyfilters</span></span>](../api/table-reapplyfilters.md)|<span data-ttu-id="c4708-152">无</span><span class="sxs-lookup"><span data-stu-id="c4708-152">None</span></span>|<span data-ttu-id="c4708-153">重新应用当前表上的所有筛选器。</span><span class="sxs-lookup"><span data-stu-id="c4708-153">Reapplies all the filters currently on the table.</span></span>|
+|[<span data-ttu-id="c4708-154">列出</span><span class="sxs-lookup"><span data-stu-id="c4708-154">List</span></span>](../api/table-list.md) | <span data-ttu-id="c4708-155">[表](table.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4708-155">[Table](table.md) collection</span></span> |<span data-ttu-id="c4708-156">获取 table 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c4708-156">Get table object collection.</span></span> |
+|[<span data-ttu-id="c4708-157">添加</span><span class="sxs-lookup"><span data-stu-id="c4708-157">Add</span></span>](../api/tablecollection-add.md)|[<span data-ttu-id="c4708-158">表</span><span class="sxs-lookup"><span data-stu-id="c4708-158">Table</span></span>](table.md)|<span data-ttu-id="c4708-p103">创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。</span><span class="sxs-lookup"><span data-stu-id="c4708-p103">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>|
 
-
-
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="c4708-162">属性</span><span class="sxs-lookup"><span data-stu-id="c4708-162">Properties</span></span>
+| <span data-ttu-id="c4708-163">属性</span><span class="sxs-lookup"><span data-stu-id="c4708-163">Property</span></span>     | <span data-ttu-id="c4708-164">类型</span><span class="sxs-lookup"><span data-stu-id="c4708-164">Type</span></span>   |<span data-ttu-id="c4708-165">说明</span><span class="sxs-lookup"><span data-stu-id="c4708-165">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|int|返回用于唯一标识指定工作簿中表的值。即使表被重命名，标识符的值仍然相同。只读。|
-|name|string|表的名称。|
-|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
-|highlightFirstColumn|Boolean|指明第一列是否包含特殊格式。    |
-|highlightLastColumn|Boolean|指明最后一列是否包含特殊格式。    |
-|showBandedColumns|Boolean|指明列是否采用镶边格式来以不同的方式突出显示奇数列与偶数列，让表更易于阅读。    |
-|showBandedRows|Boolean|指明行是否采用镶边格式来以不同的方式突出显示奇数行与偶数行，让表更易于阅读。    |
-|showFilterButton|Boolean|指明是否在每个列标题的顶部显示筛选器按钮。仅当 table 中包含标题行时，才允许设定此设置。    |
+|<span data-ttu-id="c4708-166">ID</span><span class="sxs-lookup"><span data-stu-id="c4708-166">id</span></span>|<span data-ttu-id="c4708-167">string</span><span class="sxs-lookup"><span data-stu-id="c4708-167">string</span></span>|<span data-ttu-id="c4708-168">返回用于唯一标识指定工作簿中表的值。</span><span class="sxs-lookup"><span data-stu-id="c4708-168">Returns a value that uniquely identifies the table in a given workbook.</span></span> <span data-ttu-id="c4708-169">即使表被重命名，标识符的值仍保持不变。</span><span class="sxs-lookup"><span data-stu-id="c4708-169">The value of the identifier remains the same even when the table is renamed.</span></span> <span data-ttu-id="c4708-170">应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。</span><span class="sxs-lookup"><span data-stu-id="c4708-170">This property should be interpreted as an opaque string value and should not be parsed to any other type.</span></span> <span data-ttu-id="c4708-171">只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-171">Read-only.</span></span>|
+|<span data-ttu-id="c4708-172">name</span><span class="sxs-lookup"><span data-stu-id="c4708-172">name</span></span>|<span data-ttu-id="c4708-173">string</span><span class="sxs-lookup"><span data-stu-id="c4708-173">string</span></span>|<span data-ttu-id="c4708-174">表的名称。</span><span class="sxs-lookup"><span data-stu-id="c4708-174">Name of the table.</span></span>|
+|<span data-ttu-id="c4708-175">showHeaders</span><span class="sxs-lookup"><span data-stu-id="c4708-175">showHeaders</span></span>|<span data-ttu-id="c4708-176">boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-176">boolean</span></span>|<span data-ttu-id="c4708-p105">指示标头行是否可见。该值可以设置为显示或删除标头行。</span><span class="sxs-lookup"><span data-stu-id="c4708-p105">Indicates whether the header row is visible or not. This value can be set to show or remove the header row.</span></span>|
+|<span data-ttu-id="c4708-179">showTotals</span><span class="sxs-lookup"><span data-stu-id="c4708-179">showTotals</span></span>|<span data-ttu-id="c4708-180">boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-180">boolean</span></span>|<span data-ttu-id="c4708-p106">指示总计行是否可见。该值可以设置为显示或删除总计行。</span><span class="sxs-lookup"><span data-stu-id="c4708-p106">Indicates whether the total row is visible or not. This value can be set to show or remove the total row.</span></span>|
+|<span data-ttu-id="c4708-183">style</span><span class="sxs-lookup"><span data-stu-id="c4708-183">style</span></span>|<span data-ttu-id="c4708-184">string</span><span class="sxs-lookup"><span data-stu-id="c4708-184">string</span></span>|<span data-ttu-id="c4708-p107">表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。</span><span class="sxs-lookup"><span data-stu-id="c4708-p107">Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.</span></span>|
+|<span data-ttu-id="c4708-188">highlightFirstColumn</span><span class="sxs-lookup"><span data-stu-id="c4708-188">highlightFirstColumn</span></span>|<span data-ttu-id="c4708-189">Boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-189">Boolean</span></span>|<span data-ttu-id="c4708-190">指明第一列是否包含特殊格式。</span><span class="sxs-lookup"><span data-stu-id="c4708-190">Indicates whether the first column contains special formatting.</span></span>   |
+|<span data-ttu-id="c4708-191">highlightLastColumn</span><span class="sxs-lookup"><span data-stu-id="c4708-191">highlightLastColumn</span></span>|<span data-ttu-id="c4708-192">Boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-192">Boolean</span></span>|<span data-ttu-id="c4708-193">指明最后一列是否包含特殊格式。</span><span class="sxs-lookup"><span data-stu-id="c4708-193">Indicates whether the last column contains special formatting.</span></span> |
+|<span data-ttu-id="c4708-194">showBandedColumns</span><span class="sxs-lookup"><span data-stu-id="c4708-194">showBandedColumns</span></span>|<span data-ttu-id="c4708-195">Boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-195">Boolean</span></span>|<span data-ttu-id="c4708-196">指明列是否采用镶边格式来以不同的方式突出显示奇数列与偶数列，让表更易于阅读。</span><span class="sxs-lookup"><span data-stu-id="c4708-196">Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.</span></span>   |
+|<span data-ttu-id="c4708-197">showBandedRows</span><span class="sxs-lookup"><span data-stu-id="c4708-197">showBandedRows</span></span>|<span data-ttu-id="c4708-198">Boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-198">Boolean</span></span>|<span data-ttu-id="c4708-199">指明行是否采用镶边格式来以不同的方式突出显示奇数行与偶数行，让表更易于阅读。</span><span class="sxs-lookup"><span data-stu-id="c4708-199">Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.</span></span>    |
+|<span data-ttu-id="c4708-200">showFilterButton</span><span class="sxs-lookup"><span data-stu-id="c4708-200">showFilterButton</span></span>|<span data-ttu-id="c4708-201">Boolean</span><span class="sxs-lookup"><span data-stu-id="c4708-201">Boolean</span></span>|<span data-ttu-id="c4708-p108">指明是否在每个列标题的顶部显示筛选器按钮。仅当 table 中包含标题行时，才允许设定此设置。</span><span class="sxs-lookup"><span data-stu-id="c4708-p108">Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.</span></span>   |
+|<span data-ttu-id="c4708-204">legacyId</span><span class="sxs-lookup"><span data-stu-id="c4708-204">legacyId</span></span>|<span data-ttu-id="c4708-205">String</span><span class="sxs-lookup"><span data-stu-id="c4708-205">String</span></span>|<span data-ttu-id="c4708-206">旧版 Excel 客户端中使用的旧 ID。</span><span class="sxs-lookup"><span data-stu-id="c4708-206">Legacy Id used in older Excle clients.</span></span> <span data-ttu-id="c4708-207">即使表格已重命名，标识符值也仍保持不变。</span><span class="sxs-lookup"><span data-stu-id="c4708-207">The value of the identifier remains the same even when the table is renamed.</span></span> <span data-ttu-id="c4708-208">应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。</span><span class="sxs-lookup"><span data-stu-id="c4708-208">This property should be interpreted as an opaque string value and should not be parsed to any other type.</span></span> <span data-ttu-id="c4708-209">只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-209">Read-only.</span></span>   |
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="c4708-210">Relationships</span><span class="sxs-lookup"><span data-stu-id="c4708-210">Relationships</span></span>
+| <span data-ttu-id="c4708-211">关系</span><span class="sxs-lookup"><span data-stu-id="c4708-211">Relationship</span></span> | <span data-ttu-id="c4708-212">类型</span><span class="sxs-lookup"><span data-stu-id="c4708-212">Type</span></span>   |<span data-ttu-id="c4708-213">说明</span><span class="sxs-lookup"><span data-stu-id="c4708-213">Description</span></span>|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
-|rows|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
-|sort|[TableSort](tablesort.md)|表示表的排序。只读。|
-|工作表|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
+|<span data-ttu-id="c4708-214">columns</span><span class="sxs-lookup"><span data-stu-id="c4708-214">columns</span></span>|<span data-ttu-id="c4708-215">[TableColumn](tablecolumn.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4708-215">[TableColumn](tablecolumn.md) collection</span></span>|<span data-ttu-id="c4708-p110">表示表中所有列的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-p110">Represents a collection of all the columns in the table. Read-only.</span></span>|
+|<span data-ttu-id="c4708-218">rows</span><span class="sxs-lookup"><span data-stu-id="c4708-218">rows</span></span>|<span data-ttu-id="c4708-219">[TableRow](tablerow.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4708-219">[TableRow](tablerow.md) collection</span></span>|<span data-ttu-id="c4708-p111">表示表中所有行的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-p111">Represents a collection of all the rows in the table. Read-only.</span></span>|
+|<span data-ttu-id="c4708-222">sort</span><span class="sxs-lookup"><span data-stu-id="c4708-222">sort</span></span>|[<span data-ttu-id="c4708-223">TableSort</span><span class="sxs-lookup"><span data-stu-id="c4708-223">TableSort</span></span>](tablesort.md)|<span data-ttu-id="c4708-p112">表示表的排序。只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-p112">Represents the sorting for the table. Read-only.</span></span>|
+|<span data-ttu-id="c4708-226">工作表</span><span class="sxs-lookup"><span data-stu-id="c4708-226">worksheet</span></span>|[<span data-ttu-id="c4708-227">Worksheet</span><span class="sxs-lookup"><span data-stu-id="c4708-227">Worksheet</span></span>](worksheet.md)|<span data-ttu-id="c4708-p113">包含当前表的工作表。只读。</span><span class="sxs-lookup"><span data-stu-id="c4708-p113">The worksheet containing the current table. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="c4708-230">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c4708-230">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="c4708-231">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c4708-231">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -71,7 +81,8 @@
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```
