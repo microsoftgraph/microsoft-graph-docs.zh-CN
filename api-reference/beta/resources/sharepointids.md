@@ -1,41 +1,60 @@
-# <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharePointIds
+ms.openlocfilehash: 6cf2e574ea6d2a5cf5344dcf4d7ef5532a6a5b16
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27044797"
+---
+# <a name="sharepointids-resource-type"></a><span data-ttu-id="45039-102">SharePointIds 资源类型</span><span class="sxs-lookup"><span data-stu-id="45039-102">SharePointIds resource type</span></span>
 
-**SharePointIds** 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
+> <span data-ttu-id="45039-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="45039-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45039-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="45039-104">Use of these APIs in production applications is not supported.</span></span>
 
-**注意：**OneDrive 个人版返回的项将不包括 **SharePointIds** 方面。
+<span data-ttu-id="45039-105">**SharePointIds** 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。</span><span class="sxs-lookup"><span data-stu-id="45039-105">The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.</span></span>
 
-### <a name="json-representation"></a>JSON 表示形式
+<span data-ttu-id="45039-106">**注意：** OneDrive 个人版返回的项将不包括 **SharePointIds** 方面。</span><span class="sxs-lookup"><span data-stu-id="45039-106">**Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.</span></span>
 
-下面是资源的 JSON 表示形式。
+## <a name="json-representation"></a><span data-ttu-id="45039-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="45039-107">JSON representation</span></span>
+
+<span data-ttu-id="45039-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="45039-108">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
+    "tenantId": "string",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>属性
+## <a name="properties"></a><span data-ttu-id="45039-109">属性</span><span class="sxs-lookup"><span data-stu-id="45039-109">Properties</span></span>
 
-| 属性          | 类型    | 说明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | SharePoint 中的项列表的唯一标识符。                          |
-| listItemId        | string  | 包含列表中的项的整数标识符。                    |
-| listItemUniqueId  | string  | OneDrive for Busienss 或 SharePoint 网站中的项的唯一标识符。 |
-| siteId            | string  | 项的网站集合的唯一标识符。 |
-| webId             | string  | 项的网站的唯一标识符。                          |
+| <span data-ttu-id="45039-110">属性</span><span class="sxs-lookup"><span data-stu-id="45039-110">Property</span></span>         | <span data-ttu-id="45039-111">类型</span><span class="sxs-lookup"><span data-stu-id="45039-111">Type</span></span>         | <span data-ttu-id="45039-112">说明</span><span class="sxs-lookup"><span data-stu-id="45039-112">Description</span></span>
+|:-----------------|:-------------|:-------------------------------------------
+| <span data-ttu-id="45039-113">listId</span><span class="sxs-lookup"><span data-stu-id="45039-113">listId</span></span>           | <span data-ttu-id="45039-114">string</span><span class="sxs-lookup"><span data-stu-id="45039-114">string</span></span>       | <span data-ttu-id="45039-115">SharePoint 中的项列表的唯一标识符 (guid)。</span><span class="sxs-lookup"><span data-stu-id="45039-115">The unique identifier (guid) for the item's list in SharePoint.</span></span>
+| <span data-ttu-id="45039-116">listItemId</span><span class="sxs-lookup"><span data-stu-id="45039-116">listItemId</span></span>       | <span data-ttu-id="45039-117">string</span><span class="sxs-lookup"><span data-stu-id="45039-117">string</span></span>       | <span data-ttu-id="45039-118">包含列表中的项的整数标识符。</span><span class="sxs-lookup"><span data-stu-id="45039-118">An integer identifier for the item within the containing list.</span></span>
+| <span data-ttu-id="45039-119">listItemUniqueId</span><span class="sxs-lookup"><span data-stu-id="45039-119">listItemUniqueId</span></span> | <span data-ttu-id="45039-120">string</span><span class="sxs-lookup"><span data-stu-id="45039-120">string</span></span>       | <span data-ttu-id="45039-121">OneDrive for Business 或 SharePoint 网站中的项的唯一标识符 (guid)。</span><span class="sxs-lookup"><span data-stu-id="45039-121">The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.</span></span>
+| <span data-ttu-id="45039-122">siteId</span><span class="sxs-lookup"><span data-stu-id="45039-122">siteId</span></span>           | <span data-ttu-id="45039-123">string</span><span class="sxs-lookup"><span data-stu-id="45039-123">string</span></span>       | <span data-ttu-id="45039-124">项的网站集 (SPSite) 的唯一标识符 (guid)。</span><span class="sxs-lookup"><span data-stu-id="45039-124">The unique identifier (guid) for the item's site collection (SPSite).</span></span>
+| <span data-ttu-id="45039-125">siteUrl</span><span class="sxs-lookup"><span data-stu-id="45039-125">siteUrl</span></span>          | <span data-ttu-id="45039-126">string (url)</span><span class="sxs-lookup"><span data-stu-id="45039-126">string (url)</span></span> | <span data-ttu-id="45039-127">包含项的网站的 SharePoint URL。</span><span class="sxs-lookup"><span data-stu-id="45039-127">The SharePoint URL for the site that contains the item.</span></span>
+| <span data-ttu-id="45039-128">tenantId</span><span class="sxs-lookup"><span data-stu-id="45039-128">tenantId</span></span>         | <span data-ttu-id="45039-129">string</span><span class="sxs-lookup"><span data-stu-id="45039-129">string</span></span>       | <span data-ttu-id="45039-130">租户的唯一标识符 (guid)。</span><span class="sxs-lookup"><span data-stu-id="45039-130">The unique identifier (guid) for the tenancy.</span></span>
+| <span data-ttu-id="45039-131">webId</span><span class="sxs-lookup"><span data-stu-id="45039-131">webId</span></span>            | <span data-ttu-id="45039-132">string</span><span class="sxs-lookup"><span data-stu-id="45039-132">string</span></span>       | <span data-ttu-id="45039-133">项的网站集 (SPWeb) 的唯一标识符 (guid)。</span><span class="sxs-lookup"><span data-stu-id="45039-133">The unique identifier (guid) for the item's site (SPWeb).</span></span>
 
-## <a name="remarks"></a>注解 
+## <a name="remarks"></a><span data-ttu-id="45039-134">注解</span><span class="sxs-lookup"><span data-stu-id="45039-134">Remarks</span></span>
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+<span data-ttu-id="45039-135">有关 **driveItem** 上 facet 的详细信息，请参阅 [**driveItem**](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="45039-135">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
 
 
 
@@ -43,8 +62,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "The SharepointIds facet provides Sharepoint ids associated with an item.",
+  "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharepointIds"
+} -->
