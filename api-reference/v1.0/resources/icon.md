@@ -1,3 +1,13 @@
+---
+title: 图标资源类型
+description: 表示单元格图标。
+ms.openlocfilehash: 9485a831241ce92be3f8e7c4df5173285f926bbf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010422"
+---
 # <a name="icon-resource-type"></a>图标资源类型
 
 表示单元格图标。
@@ -7,16 +17,16 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取图标](../api/icon_get.md) | [图标](icon.md) |读取 icon 对象的属性和关系。|
-|[更新](../api/icon_update.md) | [图标](icon.md)    |更新 icon 对象。 |
+|[获取图标](../api/icon-get.md) | [Icon](icon.md) |读取 icon 对象的属性和关系。|
+|[Update](../api/icon-update.md) | [Icon](icon.md)  |更新 icon 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|int|表示给定集合中图标的索引。|
-|set|string|表示图标所属的集合。可能的值是：`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles``FiveBoxes`。|
+|index|整数|表示给定集合中图标的索引。|
+|set|string|表示的图标集。 可能的值为： `Invalid`， `ThreeArrows`， `ThreeArrowsGray`， `ThreeFlags`， `ThreeTrafficLights1`， `ThreeTrafficLights2`， `ThreeSigns`， `ThreeSymbols`， `ThreeSymbols2`， `FourArrows`， `FourArrowsGray`， `FourRedToBlack`， `FourRating`， `FourTrafficLights`， `FiveArrows`， `FiveArrowsGray`， `FiveRating`， `FiveQuarters`， `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -29,7 +39,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

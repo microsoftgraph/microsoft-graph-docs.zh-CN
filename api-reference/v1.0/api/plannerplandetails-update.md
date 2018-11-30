@@ -1,0 +1,109 @@
+---
+title: 更新 plannerplandetails
+description: 更新 **plannerplandetails** 对象的属性。
+ms.openlocfilehash: 6f5e815e4c28f0f12da739e5fa7e9fb837648ae0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011219"
+---
+# <a name="update-plannerplandetails"></a>更新 plannerplandetails
+
+更新 **plannerplandetails** 对象的属性。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/plans/{id}/details
+```
+## <a name="optional-request-headers"></a>可选的请求标头
+| 名称       | 说明|
+|:-----------|:-----------|
+| Authorization  | Bearer {token}。必需。 |
+| If-Match  | 要更新的 plannerPlanDetails 的上次已知 ETag 值。必需。|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](../resources/group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。|
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。
+
+此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
+
+## <a name="example"></a>示例
+##### <a name="request"></a>请求
+下面是一个请求示例。
+<!-- {
+  "blockType": "request",
+  "name": "update_plannerplandetails"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
+Content-type: application/json
+Content-length: 212
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "sharedWith": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true,
+    "d95e6152-f683-4d78-9ff5-67ad180fea4a" : false,
+  },
+  "categoryDescriptions": {
+    "category1": "Indoors",
+    "category3": null,
+  }
+}
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.plannerPlanDetails"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 373
+
+{
+  "sharedWith": {
+    "aaa27244-1db4-476a-a5cb-004607466324" : true,
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true
+  },
+  "categoryDescriptions": {
+    "category1": "Indoors",
+    "category2": "Outdoors",
+    "category3": null,
+    "category4": null,
+    "category5": "Needs materials",
+    "category6": "Needs equipment"
+  },
+  "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update plannerplandetails",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
