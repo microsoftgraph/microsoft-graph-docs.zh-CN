@@ -1,28 +1,40 @@
-# <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
+---
+title: ChartGridlines 资源类型
+description: 代表图表坐标轴的主要或次要网格线。
+ms.openlocfilehash: c09580b2c669710d8aabf60e31c3c36965bfaa6a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041518"
+---
+# <a name="chartgridlines-resource-type"></a><span data-ttu-id="a7673-103">ChartGridlines 资源类型</span><span class="sxs-lookup"><span data-stu-id="a7673-103">ChartGridlines resource type</span></span>
 
-代表图表坐标轴的主要或次要网格线。
+> <span data-ttu-id="a7673-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a7673-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a7673-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a7673-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="a7673-106">代表图表坐标轴的主要或次要网格线。</span><span class="sxs-lookup"><span data-stu-id="a7673-106">Represents major or minor gridlines on a chart axis.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="a7673-107">方法</span><span class="sxs-lookup"><span data-stu-id="a7673-107">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="a7673-108">方法</span><span class="sxs-lookup"><span data-stu-id="a7673-108">Method</span></span>           | <span data-ttu-id="a7673-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="a7673-109">Return Type</span></span>    |<span data-ttu-id="a7673-110">说明</span><span class="sxs-lookup"><span data-stu-id="a7673-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
-|[更新](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
+|[<span data-ttu-id="a7673-111">获取 ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="a7673-111">Get ChartGridlines</span></span>](../api/chartgridlines-get.md) | [<span data-ttu-id="a7673-112">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="a7673-112">ChartGridlines</span></span>](chartgridlines.md) |<span data-ttu-id="a7673-113">读取 chartGridlines 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="a7673-113">Read properties and relationships of chartGridlines object.</span></span>|
+|[<span data-ttu-id="a7673-114">Update</span><span class="sxs-lookup"><span data-stu-id="a7673-114">Update</span></span>](../api/chartgridlines-update.md) | [<span data-ttu-id="a7673-115">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="a7673-115">ChartGridlines</span></span>](chartgridlines.md)    |<span data-ttu-id="a7673-116">更新 ChartGridlines 对象。</span><span class="sxs-lookup"><span data-stu-id="a7673-116">Update ChartGridlines object.</span></span> |
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="a7673-117">属性</span><span class="sxs-lookup"><span data-stu-id="a7673-117">Properties</span></span>
+| <span data-ttu-id="a7673-118">属性</span><span class="sxs-lookup"><span data-stu-id="a7673-118">Property</span></span>     | <span data-ttu-id="a7673-119">类型</span><span class="sxs-lookup"><span data-stu-id="a7673-119">Type</span></span>   |<span data-ttu-id="a7673-120">说明</span><span class="sxs-lookup"><span data-stu-id="a7673-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|visible|boolean|表示坐标轴网格线是否可见的布尔值。|
+|<span data-ttu-id="a7673-121">visible</span><span class="sxs-lookup"><span data-stu-id="a7673-121">visible</span></span>|<span data-ttu-id="a7673-122">boolean</span><span class="sxs-lookup"><span data-stu-id="a7673-122">boolean</span></span>|<span data-ttu-id="a7673-123">表示坐标轴网格线是否可见的布尔值。</span><span class="sxs-lookup"><span data-stu-id="a7673-123">Boolean value representing if the axis gridlines are visible or not.</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="a7673-124">Relationships</span><span class="sxs-lookup"><span data-stu-id="a7673-124">Relationships</span></span>
+| <span data-ttu-id="a7673-125">关系</span><span class="sxs-lookup"><span data-stu-id="a7673-125">Relationship</span></span> | <span data-ttu-id="a7673-126">类型</span><span class="sxs-lookup"><span data-stu-id="a7673-126">Type</span></span>   |<span data-ttu-id="a7673-127">说明</span><span class="sxs-lookup"><span data-stu-id="a7673-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。只读。|
+|<span data-ttu-id="a7673-128">format</span><span class="sxs-lookup"><span data-stu-id="a7673-128">format</span></span>|[<span data-ttu-id="a7673-129">ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="a7673-129">ChartGridlinesFormat</span></span>](chartgridlinesformat.md)|<span data-ttu-id="a7673-p102">表示图表网格线的格式。只读。</span><span class="sxs-lookup"><span data-stu-id="a7673-p102">Represents the formatting of chart gridlines. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="a7673-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a7673-132">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="a7673-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a7673-133">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

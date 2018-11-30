@@ -1,30 +1,37 @@
-<a id="plannergroup-resource-type" class="xliff"></a>
-# plannerGroup 资源类型
+---
+title: plannerGroup 资源类型
+description: '**PlannerGroup**资源为组提供计划工具资源的访问权限。 它不包含任何可用的属性。'
+ms.openlocfilehash: 03db48d9525915ec58ee902922fa0292c0fd89ec
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043856"
+---
+# <a name="plannergroup-resource-type"></a><span data-ttu-id="0afea-104">plannerGroup 资源类型</span><span class="sxs-lookup"><span data-stu-id="0afea-104">plannerGroup resource type</span></span>
 
-**plannerGroup** 资源提供[组](group.md)的 Planner 资源的访问权限。它不包含任何可用属性。
+> <span data-ttu-id="0afea-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="0afea-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0afea-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="0afea-106">Use of these APIs in production applications is not supported.</span></span>
 
-<a id="methods" class="xliff"></a>
-## 方法
+<span data-ttu-id="0afea-p103">**plannerGroup** 资源提供[组](group.md)的 Planner 资源的访问权限。它不包含任何可用属性。</span><span class="sxs-lookup"><span data-stu-id="0afea-p103">The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.</span></span>
 
-| 方法           | 返回类型    |说明|
+## <a name="methods"></a><span data-ttu-id="0afea-109">方法</span><span class="sxs-lookup"><span data-stu-id="0afea-109">Methods</span></span>
+
+| <span data-ttu-id="0afea-110">方法</span><span class="sxs-lookup"><span data-stu-id="0afea-110">Method</span></span>           | <span data-ttu-id="0afea-111">返回类型</span><span class="sxs-lookup"><span data-stu-id="0afea-111">Return Type</span></span>    |<span data-ttu-id="0afea-112">说明</span><span class="sxs-lookup"><span data-stu-id="0afea-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[List plans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md) collection| 获取 **plannerPlan** 对象集合。|
+|[<span data-ttu-id="0afea-113">List plans</span><span class="sxs-lookup"><span data-stu-id="0afea-113">List plans</span></span>](../api/plannergroup-list-plans.md) |<span data-ttu-id="0afea-114">[plannerPlan](plannerplan.md) collection</span><span class="sxs-lookup"><span data-stu-id="0afea-114">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="0afea-115">获取 **plannerPlan** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="0afea-115">Get a **plannerPlan** object collection.</span></span>|
 
-<a id="properties" class="xliff"></a>
-## 属性
-| 属性     | 类型   |说明|
+## <a name="properties"></a><span data-ttu-id="0afea-116">属性</span><span class="sxs-lookup"><span data-stu-id="0afea-116">Properties</span></span>
+| <span data-ttu-id="0afea-117">属性</span><span class="sxs-lookup"><span data-stu-id="0afea-117">Property</span></span>     | <span data-ttu-id="0afea-118">类型</span><span class="sxs-lookup"><span data-stu-id="0afea-118">Type</span></span>   |<span data-ttu-id="0afea-119">说明</span><span class="sxs-lookup"><span data-stu-id="0afea-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|String| 只读。**plannerGroup** 的标识符|
+|<span data-ttu-id="0afea-120">id</span><span class="sxs-lookup"><span data-stu-id="0afea-120">id</span></span>|<span data-ttu-id="0afea-121">String</span><span class="sxs-lookup"><span data-stu-id="0afea-121">String</span></span>| <span data-ttu-id="0afea-p104">只读。**plannerGroup** 的标识符</span><span class="sxs-lookup"><span data-stu-id="0afea-p104">Read-only. Identifier of the **plannerGroup**</span></span>|
 
-<a id="relationships" class="xliff"></a>
-## 关系
-| 关系 | 类型   |说明|
+## <a name="relationships"></a><span data-ttu-id="0afea-124">关系</span><span class="sxs-lookup"><span data-stu-id="0afea-124">Relationships</span></span>
+| <span data-ttu-id="0afea-125">关系</span><span class="sxs-lookup"><span data-stu-id="0afea-125">Relationship</span></span> | <span data-ttu-id="0afea-126">类型</span><span class="sxs-lookup"><span data-stu-id="0afea-126">Type</span></span>   |<span data-ttu-id="0afea-127">说明</span><span class="sxs-lookup"><span data-stu-id="0afea-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| 只读。可为 NULL。返回组拥有的 [plannerPlans](plannerplan.md)。|
+|<span data-ttu-id="0afea-128">plans</span><span class="sxs-lookup"><span data-stu-id="0afea-128">plans</span></span>|<span data-ttu-id="0afea-129">[plannerPlan](plannerplan.md) collection</span><span class="sxs-lookup"><span data-stu-id="0afea-129">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="0afea-p105">只读。可为 NULL。返回组拥有的 [plannerPlans](plannerplan.md)。</span><span class="sxs-lookup"><span data-stu-id="0afea-p105">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+## <a name="json-representation"></a><span data-ttu-id="0afea-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0afea-133">JSON representation</span></span>
+<span data-ttu-id="0afea-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0afea-134">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,26 +1,32 @@
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: plannerCategoryDescriptions 资源类型
+description: '**plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于计划详细信息对象。最多可定义 6 个类别。 '
+ms.openlocfilehash: eb54a42cd3e86a9f2c39ff46d45c71fb04142dad
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043344"
+---
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="0e2b7-105">plannerCategoryDescriptions 资源类型</span><span class="sxs-lookup"><span data-stu-id="0e2b7-105">plannerCategoryDescriptions resource type</span></span>
 
-# plannerCategoryDescriptions 资源类型
+> <span data-ttu-id="0e2b7-106">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="0e2b7-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0e2b7-107">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="0e2b7-107">Use of these APIs in production applications is not supported.</span></span>
 
-**plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于[计划详细信息](plannerplandetails.md)对象。最多可定义 6 个类别。 
+<span data-ttu-id="0e2b7-p103">**plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于[计划详细信息](plannerplandetails.md)对象。最多可定义 6 个类别。</span><span class="sxs-lookup"><span data-stu-id="0e2b7-p103">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined.</span></span> 
 
 
-<a id="properties" class="xliff"></a>
-
-## 属性
-| 属性     | 类型   |说明|
+## <a name="properties"></a><span data-ttu-id="0e2b7-111">属性</span><span class="sxs-lookup"><span data-stu-id="0e2b7-111">Properties</span></span>
+| <span data-ttu-id="0e2b7-112">属性</span><span class="sxs-lookup"><span data-stu-id="0e2b7-112">Property</span></span>     | <span data-ttu-id="0e2b7-113">类型</span><span class="sxs-lookup"><span data-stu-id="0e2b7-113">Type</span></span>   |<span data-ttu-id="0e2b7-114">说明</span><span class="sxs-lookup"><span data-stu-id="0e2b7-114">Description</span></span>|
 |:---------------|:--------|:----------|
-|category1|String|与类别 1 相关联的标签|
-|category2|String|与类别 2 相关联的标签|
-|category3|String|与类别 3 相关联的标签|
-|category4|String|与类别 4 相关联的标签|
-|category5|String|与类别 5 相关联的标签|
-|category6|String|与类别 6 相关联的标签|
+|<span data-ttu-id="0e2b7-115">category1</span><span class="sxs-lookup"><span data-stu-id="0e2b7-115">category1</span></span>|<span data-ttu-id="0e2b7-116">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-116">String</span></span>|<span data-ttu-id="0e2b7-117">与类别 1 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-117">The label associated with Category 1</span></span>|
+|<span data-ttu-id="0e2b7-118">category2</span><span class="sxs-lookup"><span data-stu-id="0e2b7-118">category2</span></span>|<span data-ttu-id="0e2b7-119">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-119">String</span></span>|<span data-ttu-id="0e2b7-120">与类别 2 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-120">The label associated with Category 2</span></span>|
+|<span data-ttu-id="0e2b7-121">category3</span><span class="sxs-lookup"><span data-stu-id="0e2b7-121">category3</span></span>|<span data-ttu-id="0e2b7-122">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-122">String</span></span>|<span data-ttu-id="0e2b7-123">与类别 3 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-123">The label associated with Category 3</span></span>|
+|<span data-ttu-id="0e2b7-124">category4</span><span class="sxs-lookup"><span data-stu-id="0e2b7-124">category4</span></span>|<span data-ttu-id="0e2b7-125">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-125">String</span></span>|<span data-ttu-id="0e2b7-126">与类别 4 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-126">The label associated with Category 4</span></span>|
+|<span data-ttu-id="0e2b7-127">category5</span><span class="sxs-lookup"><span data-stu-id="0e2b7-127">category5</span></span>|<span data-ttu-id="0e2b7-128">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-128">String</span></span>|<span data-ttu-id="0e2b7-129">与类别 5 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-129">The label associated with Category 5</span></span>|
+|<span data-ttu-id="0e2b7-130">category6</span><span class="sxs-lookup"><span data-stu-id="0e2b7-130">category6</span></span>|<span data-ttu-id="0e2b7-131">String</span><span class="sxs-lookup"><span data-stu-id="0e2b7-131">String</span></span>|<span data-ttu-id="0e2b7-132">与类别 6 相关联的标签</span><span class="sxs-lookup"><span data-stu-id="0e2b7-132">The label associated with Category 6</span></span>|
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+## <a name="json-representation"></a><span data-ttu-id="0e2b7-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0e2b7-133">JSON representation</span></span>
+<span data-ttu-id="0e2b7-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0e2b7-134">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
