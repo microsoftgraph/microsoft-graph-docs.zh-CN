@@ -1,19 +1,49 @@
-# <a name="chartdatalabelformat-resource-type"></a>ChartDataLabelFormat 资源类型
+---
+title: ChartDataLabelFormat 资源类型
+description: 封装图表数据表的格式属性。
+ms.openlocfilehash: ec81523dc09c17cd8c7fb9d543c2214377201260
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008626"
+---
+# <a name="chartdatalabelformat-resource-type"></a><span data-ttu-id="ced24-103">ChartDataLabelFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="ced24-103">ChartDataLabelFormat resource type</span></span>
 
-封装图表数据表的格式属性。
+<span data-ttu-id="ced24-104">封装图表数据表的格式属性。</span><span class="sxs-lookup"><span data-stu-id="ced24-104">Encapsulates the format properties for the chart data labels.</span></span>
 
 
-## <a name="methods"></a>方法
-无
+## <a name="methods"></a><span data-ttu-id="ced24-105">方法</span><span class="sxs-lookup"><span data-stu-id="ced24-105">Methods</span></span>
+<span data-ttu-id="ced24-106">无</span><span class="sxs-lookup"><span data-stu-id="ced24-106">None</span></span>
 
-## <a name="properties"></a>属性
-无
+## <a name="properties"></a><span data-ttu-id="ced24-107">属性</span><span class="sxs-lookup"><span data-stu-id="ced24-107">Properties</span></span>
+<span data-ttu-id="ced24-108">无</span><span class="sxs-lookup"><span data-stu-id="ced24-108">None</span></span>
 
-## <a name="relationships"></a>Relationships
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="ced24-109">Relationships</span><span class="sxs-lookup"><span data-stu-id="ced24-109">Relationships</span></span>
+| <span data-ttu-id="ced24-110">关系</span><span class="sxs-lookup"><span data-stu-id="ced24-110">Relationship</span></span> | <span data-ttu-id="ced24-111">类型</span><span class="sxs-lookup"><span data-stu-id="ced24-111">Type</span></span>   |<span data-ttu-id="ced24-112">说明</span><span class="sxs-lookup"><span data-stu-id="ced24-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|表示当前图表数据标签的填充格式。只读。|
-|font|[ChartFont](chartfont.md)|表示图表数据标签的字体属性（字体名称、字体大小、颜色等）。只读。|
+|<span data-ttu-id="ced24-113">fill</span><span class="sxs-lookup"><span data-stu-id="ced24-113">fill</span></span>|[<span data-ttu-id="ced24-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="ced24-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="ced24-p101">表示当前图表数据标签的填充格式。只读。</span><span class="sxs-lookup"><span data-stu-id="ced24-p101">Represents the fill format of the current chart data label. Read-only.</span></span>|
+|<span data-ttu-id="ced24-117">font</span><span class="sxs-lookup"><span data-stu-id="ced24-117">font</span></span>|[<span data-ttu-id="ced24-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="ced24-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="ced24-p102">表示图表数据标签的字体属性（字体名称、字体大小、颜色等）。只读。</span><span class="sxs-lookup"><span data-stu-id="ced24-p102">Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.</span></span>|
+
+
+## <a name="json-representation"></a><span data-ttu-id="ced24-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ced24-121">JSON representation</span></span>
+
+<span data-ttu-id="ced24-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ced24-122">Here is a JSON representation of the resource.</span></span>
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

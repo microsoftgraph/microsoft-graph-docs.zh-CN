@@ -1,41 +1,64 @@
-# <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
+---
+title: itemAttachment 资源类型
+description: '附加到另一个事件、邮件或帖子的联系人、事件或邮件。  '
+ms.openlocfilehash: 79097b10327d895a41090e068a2fd8e9681df125
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009487"
+---
+# <a name="itemattachment-resource-type"></a><span data-ttu-id="9403d-103">itemAttachment 资源类型</span><span class="sxs-lookup"><span data-stu-id="9403d-103">itemAttachment resource type</span></span>
 
-附加到另一个事件、邮件或帖子的联系人、事件或邮件。  
+<span data-ttu-id="9403d-104">附加到另一个事件、邮件或帖子的联系人、事件或邮件。</span><span class="sxs-lookup"><span data-stu-id="9403d-104">A contact, event, or message that's attached to another event, message, or post.</span></span>  
 
-派生自 [附件](attachment.md)。
+<span data-ttu-id="9403d-105">派生自 [附件](attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="9403d-105">Derived from [attachment](attachment.md).</span></span>
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="9403d-106">方法</span><span class="sxs-lookup"><span data-stu-id="9403d-106">Methods</span></span>
 
-| 方法       | 返回类型  |说明|
+| <span data-ttu-id="9403d-107">方法</span><span class="sxs-lookup"><span data-stu-id="9403d-107">Method</span></span>       | <span data-ttu-id="9403d-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="9403d-108">Return Type</span></span>  |<span data-ttu-id="9403d-109">说明</span><span class="sxs-lookup"><span data-stu-id="9403d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
-|[删除](../api/attachment_delete.md) | 无 |删除 itemAttachment 对象。 |
+|[<span data-ttu-id="9403d-110">Get</span><span class="sxs-lookup"><span data-stu-id="9403d-110">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="9403d-111">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="9403d-111">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="9403d-112">读取 itemAttachment 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="9403d-112">Read properties and relationships of itemAttachment object.</span></span>|
+|[<span data-ttu-id="9403d-113">删除</span><span class="sxs-lookup"><span data-stu-id="9403d-113">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="9403d-114">无</span><span class="sxs-lookup"><span data-stu-id="9403d-114">None</span></span> |<span data-ttu-id="9403d-115">删除 itemAttachment 对象。</span><span class="sxs-lookup"><span data-stu-id="9403d-115">Delete itemAttachment object.</span></span> |
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="9403d-116">属性</span><span class="sxs-lookup"><span data-stu-id="9403d-116">Properties</span></span>
+| <span data-ttu-id="9403d-117">属性</span><span class="sxs-lookup"><span data-stu-id="9403d-117">Property</span></span>     | <span data-ttu-id="9403d-118">类型</span><span class="sxs-lookup"><span data-stu-id="9403d-118">Type</span></span>   |<span data-ttu-id="9403d-119">说明</span><span class="sxs-lookup"><span data-stu-id="9403d-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|contentType|String|附件的内容类型。|
-|id|String| 附件 ID。|
-|isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
-|lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
-|name|String|附件的显示名称。|
-|大小|Int32|附件大小，以字节为单位。|
+|<span data-ttu-id="9403d-120">contentType</span><span class="sxs-lookup"><span data-stu-id="9403d-120">contentType</span></span>|<span data-ttu-id="9403d-121">String</span><span class="sxs-lookup"><span data-stu-id="9403d-121">String</span></span>|<span data-ttu-id="9403d-122">附件的内容类型。</span><span class="sxs-lookup"><span data-stu-id="9403d-122">The content type of the attachment.</span></span>|
+|<span data-ttu-id="9403d-123">id</span><span class="sxs-lookup"><span data-stu-id="9403d-123">id</span></span>|<span data-ttu-id="9403d-124">String</span><span class="sxs-lookup"><span data-stu-id="9403d-124">String</span></span>| <span data-ttu-id="9403d-125">附件 ID。</span><span class="sxs-lookup"><span data-stu-id="9403d-125">The attachment ID.</span></span>|
+|<span data-ttu-id="9403d-126">isInline</span><span class="sxs-lookup"><span data-stu-id="9403d-126">isInline</span></span>|<span data-ttu-id="9403d-127">布尔</span><span class="sxs-lookup"><span data-stu-id="9403d-127">Boolean</span></span>|<span data-ttu-id="9403d-128">如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。</span><span class="sxs-lookup"><span data-stu-id="9403d-128">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
+|<span data-ttu-id="9403d-129">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9403d-129">lastModifiedDateTime</span></span>|<span data-ttu-id="9403d-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9403d-130">DateTimeOffset</span></span>|<span data-ttu-id="9403d-131">上次修改附件的时间和日期。</span><span class="sxs-lookup"><span data-stu-id="9403d-131">The last time and date that the attachment was modified.</span></span>|
+|<span data-ttu-id="9403d-132">name</span><span class="sxs-lookup"><span data-stu-id="9403d-132">name</span></span>|<span data-ttu-id="9403d-133">String</span><span class="sxs-lookup"><span data-stu-id="9403d-133">String</span></span>|<span data-ttu-id="9403d-134">附件的显示名称。</span><span class="sxs-lookup"><span data-stu-id="9403d-134">The display name of the attachment.</span></span>|
+|<span data-ttu-id="9403d-135">大小</span><span class="sxs-lookup"><span data-stu-id="9403d-135">size</span></span>|<span data-ttu-id="9403d-136">Int32</span><span class="sxs-lookup"><span data-stu-id="9403d-136">Int32</span></span>|<span data-ttu-id="9403d-137">附件大小，以字节为单位。</span><span class="sxs-lookup"><span data-stu-id="9403d-137">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="9403d-138">Relationships</span><span class="sxs-lookup"><span data-stu-id="9403d-138">Relationships</span></span>
+| <span data-ttu-id="9403d-139">关系</span><span class="sxs-lookup"><span data-stu-id="9403d-139">Relationship</span></span> | <span data-ttu-id="9403d-140">类型</span><span class="sxs-lookup"><span data-stu-id="9403d-140">Type</span></span>   |<span data-ttu-id="9403d-141">说明</span><span class="sxs-lookup"><span data-stu-id="9403d-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|项|[OutlookItem](outlookitem.md)|附加的消息或事件。导航属性。|
+|<span data-ttu-id="9403d-142">项</span><span class="sxs-lookup"><span data-stu-id="9403d-142">item</span></span>|[<span data-ttu-id="9403d-143">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="9403d-143">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="9403d-p101">附加的消息或事件。导航属性。</span><span class="sxs-lookup"><span data-stu-id="9403d-p101">The attached message or event. Navigation property.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="9403d-146">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9403d-146">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="9403d-147">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9403d-147">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "baseType": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -45,7 +68,8 @@
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": 1024,
+  "item": { "@odata.type": "microsoft.graph.outlookItem" }
 }
 
 ```

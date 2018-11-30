@@ -1,49 +1,65 @@
-# <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
+---
+title: ChartAxis 资源类型
+description: 表示图表中的单个坐标轴。
+ms.openlocfilehash: fe29c6820f810158ca4accc864c852b0f00d2dda
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008783"
+---
+# <a name="chartaxis-resource-type"></a><span data-ttu-id="1a6ce-103">ChartAxis 资源类型</span><span class="sxs-lookup"><span data-stu-id="1a6ce-103">ChartAxis resource type</span></span>
 
-表示图表中的单个坐标轴。
+<span data-ttu-id="1a6ce-104">表示图表中的单个坐标轴。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-104">Represents a single axis in a chart.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="1a6ce-105">方法</span><span class="sxs-lookup"><span data-stu-id="1a6ce-105">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="1a6ce-106">方法</span><span class="sxs-lookup"><span data-stu-id="1a6ce-106">Method</span></span>           | <span data-ttu-id="1a6ce-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="1a6ce-107">Return Type</span></span>    |<span data-ttu-id="1a6ce-108">说明</span><span class="sxs-lookup"><span data-stu-id="1a6ce-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |读取 chartaxis 对象的属性和关系。|
-|[更新](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |更新 ChartAxis 对象 |
+|[<span data-ttu-id="1a6ce-109">获取 ChartAxis</span><span class="sxs-lookup"><span data-stu-id="1a6ce-109">Get ChartAxis</span></span>](../api/chartaxis-get.md) | [<span data-ttu-id="1a6ce-110">WorkbookChartAxis</span><span class="sxs-lookup"><span data-stu-id="1a6ce-110">WorkbookChartAxis</span></span>](chartaxis.md) |<span data-ttu-id="1a6ce-111">读取 chartaxis 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-111">Read properties and relationships of chartAxis object.</span></span>|
+|[<span data-ttu-id="1a6ce-112">Update</span><span class="sxs-lookup"><span data-stu-id="1a6ce-112">Update</span></span>](../api/chartaxis-update.md) | [<span data-ttu-id="1a6ce-113">WorkbookChartAxis</span><span class="sxs-lookup"><span data-stu-id="1a6ce-113">WorkbookChartAxis</span></span>](chartaxis.md)   |<span data-ttu-id="1a6ce-114">更新 ChartAxis 对象</span><span class="sxs-lookup"><span data-stu-id="1a6ce-114">Update ChartAxis object.</span></span> |
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="1a6ce-115">属性</span><span class="sxs-lookup"><span data-stu-id="1a6ce-115">Properties</span></span>
+| <span data-ttu-id="1a6ce-116">属性</span><span class="sxs-lookup"><span data-stu-id="1a6ce-116">Property</span></span>     | <span data-ttu-id="1a6ce-117">类型</span><span class="sxs-lookup"><span data-stu-id="1a6ce-117">Type</span></span>   |<span data-ttu-id="1a6ce-118">说明</span><span class="sxs-lookup"><span data-stu-id="1a6ce-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|majorUnit|对象|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
-|maximum|object|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
-|minimum|object|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
-|minorUnit|对象|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+| <span data-ttu-id="1a6ce-119">ID</span><span class="sxs-lookup"><span data-stu-id="1a6ce-119">id</span></span>       |<span data-ttu-id="1a6ce-120">string</span><span class="sxs-lookup"><span data-stu-id="1a6ce-120">string</span></span>   | <span data-ttu-id="1a6ce-121">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-121">Unique identifier.</span></span> <span data-ttu-id="1a6ce-122">只读。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-122">Read-only.</span></span>|
+|<span data-ttu-id="1a6ce-123">majorUnit</span><span class="sxs-lookup"><span data-stu-id="1a6ce-123">majorUnit</span></span>|<span data-ttu-id="1a6ce-124">Json</span><span class="sxs-lookup"><span data-stu-id="1a6ce-124">Json</span></span>|<span data-ttu-id="1a6ce-p102">表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p102">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="1a6ce-128">maximum</span><span class="sxs-lookup"><span data-stu-id="1a6ce-128">maximum</span></span>|<span data-ttu-id="1a6ce-129">Json</span><span class="sxs-lookup"><span data-stu-id="1a6ce-129">Json</span></span>|<span data-ttu-id="1a6ce-p103">表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p103">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="1a6ce-133">minimum</span><span class="sxs-lookup"><span data-stu-id="1a6ce-133">minimum</span></span>|<span data-ttu-id="1a6ce-134">Json</span><span class="sxs-lookup"><span data-stu-id="1a6ce-134">Json</span></span>|<span data-ttu-id="1a6ce-p104">表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p104">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="1a6ce-138">minorUnit</span><span class="sxs-lookup"><span data-stu-id="1a6ce-138">minorUnit</span></span>|<span data-ttu-id="1a6ce-139">Json</span><span class="sxs-lookup"><span data-stu-id="1a6ce-139">Json</span></span>|<span data-ttu-id="1a6ce-p105">表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p105">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="1a6ce-143">Relationships</span><span class="sxs-lookup"><span data-stu-id="1a6ce-143">Relationships</span></span>
+| <span data-ttu-id="1a6ce-144">关系</span><span class="sxs-lookup"><span data-stu-id="1a6ce-144">Relationship</span></span> | <span data-ttu-id="1a6ce-145">类型</span><span class="sxs-lookup"><span data-stu-id="1a6ce-145">Type</span></span>   |<span data-ttu-id="1a6ce-146">说明</span><span class="sxs-lookup"><span data-stu-id="1a6ce-146">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的网格线对象。只读。|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
-|title|[ChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
+|<span data-ttu-id="1a6ce-147">format</span><span class="sxs-lookup"><span data-stu-id="1a6ce-147">format</span></span>|[<span data-ttu-id="1a6ce-148">WorkbookChartAxisFormat</span><span class="sxs-lookup"><span data-stu-id="1a6ce-148">WorkbookChartAxisFormat</span></span>](chartaxisformat.md)|<span data-ttu-id="1a6ce-p106">表示 chart 对象的格式，包括线条和字体格式。只读。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p106">Represents the formatting of a chart object, which includes line and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="1a6ce-151">majorGridlines</span><span class="sxs-lookup"><span data-stu-id="1a6ce-151">majorGridlines</span></span>|[<span data-ttu-id="1a6ce-152">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="1a6ce-152">WorkbookChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="1a6ce-p107">返回一个表示指定坐标轴的主要网格线的 gridline 对象。只读。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p107">Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="1a6ce-155">minorGridlines</span><span class="sxs-lookup"><span data-stu-id="1a6ce-155">minorGridlines</span></span>|[<span data-ttu-id="1a6ce-156">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="1a6ce-156">WorkbookChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="1a6ce-p108">返回一个表示指定坐标轴的次要网格线的网格线对象。只读。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p108">Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="1a6ce-159">title</span><span class="sxs-lookup"><span data-stu-id="1a6ce-159">title</span></span>|[<span data-ttu-id="1a6ce-160">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="1a6ce-160">WorkbookChartAxisTitle</span></span>](chartaxistitle.md)|<span data-ttu-id="1a6ce-p109">表示坐标轴标题。只读。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-p109">Represents the axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="1a6ce-163">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1a6ce-163">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="1a6ce-164">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1a6ce-164">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartaxis"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->
 
 ```json
 {
+  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
-  "minorUnit": "string"
+  "minorUnit": "string",
+   "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
 
 ```

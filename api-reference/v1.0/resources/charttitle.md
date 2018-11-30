@@ -1,37 +1,48 @@
-# <a name="charttitle-resource-type"></a>ChartTitle 资源类型
+---
+title: ChartTitle 资源类型
+description: 表示图表的 chart title 对象。
+ms.openlocfilehash: 44777d939e67d2e8b5563cf3edb0b5bfddeeef9a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008625"
+---
+# <a name="charttitle-resource-type"></a><span data-ttu-id="83691-103">ChartTitle 资源类型</span><span class="sxs-lookup"><span data-stu-id="83691-103">ChartTitle resource type</span></span>
 
-表示图表的 chart title 对象。
+<span data-ttu-id="83691-104">表示图表的 chart title 对象。</span><span class="sxs-lookup"><span data-stu-id="83691-104">Represents a chart title object of a chart.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="83691-105">方法</span><span class="sxs-lookup"><span data-stu-id="83691-105">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="83691-106">方法</span><span class="sxs-lookup"><span data-stu-id="83691-106">Method</span></span>           | <span data-ttu-id="83691-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="83691-107">Return Type</span></span>    |<span data-ttu-id="83691-108">说明</span><span class="sxs-lookup"><span data-stu-id="83691-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
-|[更新](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
+|[<span data-ttu-id="83691-109">获取 ChartTitle</span><span class="sxs-lookup"><span data-stu-id="83691-109">Get ChartTitle</span></span>](../api/charttitle-get.md) | [<span data-ttu-id="83691-110">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="83691-110">WorkbookChartTitle</span></span>](charttitle.md) |<span data-ttu-id="83691-111">读取 chartTitle 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="83691-111">Read properties and relationships of chartTitle object.</span></span>|
+|[<span data-ttu-id="83691-112">Update</span><span class="sxs-lookup"><span data-stu-id="83691-112">Update</span></span>](../api/charttitle-update.md) | [<span data-ttu-id="83691-113">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="83691-113">WorkbookChartTitle</span></span>](charttitle.md)    |<span data-ttu-id="83691-114">更新 ChartTitle 对象。</span><span class="sxs-lookup"><span data-stu-id="83691-114">Update ChartTitle object.</span></span> |
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="83691-115">属性</span><span class="sxs-lookup"><span data-stu-id="83691-115">Properties</span></span>
+| <span data-ttu-id="83691-116">属性</span><span class="sxs-lookup"><span data-stu-id="83691-116">Property</span></span>     | <span data-ttu-id="83691-117">类型</span><span class="sxs-lookup"><span data-stu-id="83691-117">Type</span></span>   |<span data-ttu-id="83691-118">说明</span><span class="sxs-lookup"><span data-stu-id="83691-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
-|text|string|表示图表的标题文本。|
-|visible|boolean|表示 chart title 对象的可见性的布尔值。|
+|<span data-ttu-id="83691-119">overlay</span><span class="sxs-lookup"><span data-stu-id="83691-119">overlay</span></span>|<span data-ttu-id="83691-120">boolean</span><span class="sxs-lookup"><span data-stu-id="83691-120">boolean</span></span>|<span data-ttu-id="83691-121">表示图表标题是否将叠加在图表上的布尔值。</span><span class="sxs-lookup"><span data-stu-id="83691-121">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
+|<span data-ttu-id="83691-122">text</span><span class="sxs-lookup"><span data-stu-id="83691-122">text</span></span>|<span data-ttu-id="83691-123">string</span><span class="sxs-lookup"><span data-stu-id="83691-123">string</span></span>|<span data-ttu-id="83691-124">表示图表的标题文本。</span><span class="sxs-lookup"><span data-stu-id="83691-124">Represents the title text of a chart.</span></span>|
+|<span data-ttu-id="83691-125">visible</span><span class="sxs-lookup"><span data-stu-id="83691-125">visible</span></span>|<span data-ttu-id="83691-126">boolean</span><span class="sxs-lookup"><span data-stu-id="83691-126">boolean</span></span>|<span data-ttu-id="83691-127">表示 chart title 对象的可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="83691-127">A boolean value the represents the visibility of a chart title object.</span></span>|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a><span data-ttu-id="83691-128">Relationships</span><span class="sxs-lookup"><span data-stu-id="83691-128">Relationships</span></span>
+| <span data-ttu-id="83691-129">关系</span><span class="sxs-lookup"><span data-stu-id="83691-129">Relationship</span></span> | <span data-ttu-id="83691-130">类型</span><span class="sxs-lookup"><span data-stu-id="83691-130">Type</span></span>   |<span data-ttu-id="83691-131">说明</span><span class="sxs-lookup"><span data-stu-id="83691-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
+|<span data-ttu-id="83691-132">format</span><span class="sxs-lookup"><span data-stu-id="83691-132">format</span></span>|[<span data-ttu-id="83691-133">WorkbookChartTitleFormat</span><span class="sxs-lookup"><span data-stu-id="83691-133">WorkbookChartTitleFormat</span></span>](charttitleformat.md)|<span data-ttu-id="83691-p101">表示图表标题的格式，包括填充和字体格式。只读。</span><span class="sxs-lookup"><span data-stu-id="83691-p101">Represents the formatting of a chart title, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="83691-136">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="83691-136">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="83691-137">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="83691-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

@@ -1,0 +1,33 @@
+---
+title: windows10EditionType 枚举类型
+description: Windows 10 Edition 类型。
+ms.openlocfilehash: 1551bd6c84452ae9aed66341748e12a473810856
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007949"
+---
+# <a name="windows10editiontype-enum-type"></a><span data-ttu-id="7a058-103">windows10EditionType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="7a058-103">windows10EditionType enum type</span></span>
+
+> <span data-ttu-id="7a058-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="7a058-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="7a058-105">Windows 10 Edition 类型。</span><span class="sxs-lookup"><span data-stu-id="7a058-105">Windows 10 Edition type.</span></span>
+## <a name="members"></a><span data-ttu-id="7a058-106">成员</span><span class="sxs-lookup"><span data-stu-id="7a058-106">Members</span></span>
+|<span data-ttu-id="7a058-107">成员</span><span class="sxs-lookup"><span data-stu-id="7a058-107">Member</span></span>|<span data-ttu-id="7a058-108">值</span><span class="sxs-lookup"><span data-stu-id="7a058-108">Value</span></span>|<span data-ttu-id="7a058-109">说明</span><span class="sxs-lookup"><span data-stu-id="7a058-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="7a058-110">windows10Enterprise</span><span class="sxs-lookup"><span data-stu-id="7a058-110">windows10Enterprise</span></span>|<span data-ttu-id="7a058-111">0</span><span class="sxs-lookup"><span data-stu-id="7a058-111">0</span></span>|<span data-ttu-id="7a058-112">Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="7a058-112">Windows 10 Enterprise</span></span>|
+|<span data-ttu-id="7a058-113">windows10EnterpriseN</span><span class="sxs-lookup"><span data-stu-id="7a058-113">windows10EnterpriseN</span></span>|<span data-ttu-id="7a058-114">1</span><span class="sxs-lookup"><span data-stu-id="7a058-114">1</span></span>|<span data-ttu-id="7a058-115">Windows 10 EnterpriseN</span><span class="sxs-lookup"><span data-stu-id="7a058-115">Windows 10 EnterpriseN</span></span>|
+|<span data-ttu-id="7a058-116">windows10Education</span><span class="sxs-lookup"><span data-stu-id="7a058-116">windows10Education</span></span>|<span data-ttu-id="7a058-117">2</span><span class="sxs-lookup"><span data-stu-id="7a058-117">2</span></span>|<span data-ttu-id="7a058-118">Windows 10 教育</span><span class="sxs-lookup"><span data-stu-id="7a058-118">Windows 10 Education</span></span>|
+|<span data-ttu-id="7a058-119">windows10EducationN</span><span class="sxs-lookup"><span data-stu-id="7a058-119">windows10EducationN</span></span>|<span data-ttu-id="7a058-120">3</span><span class="sxs-lookup"><span data-stu-id="7a058-120">3</span></span>|<span data-ttu-id="7a058-121">Windows 10 EducationN</span><span class="sxs-lookup"><span data-stu-id="7a058-121">Windows 10 EducationN</span></span>|
+|<span data-ttu-id="7a058-122">windows10MobileEnterprise</span><span class="sxs-lookup"><span data-stu-id="7a058-122">windows10MobileEnterprise</span></span>|<span data-ttu-id="7a058-123">4</span><span class="sxs-lookup"><span data-stu-id="7a058-123">4</span></span>|<span data-ttu-id="7a058-124">Windows 10 移动企业</span><span class="sxs-lookup"><span data-stu-id="7a058-124">Windows 10 Mobile Enterprise</span></span>|
+|<span data-ttu-id="7a058-125">windows10HolographicEnterprise</span><span class="sxs-lookup"><span data-stu-id="7a058-125">windows10HolographicEnterprise</span></span>|<span data-ttu-id="7a058-126">5</span><span class="sxs-lookup"><span data-stu-id="7a058-126">5</span></span>|<span data-ttu-id="7a058-127">Windows 10 全息 Enterprise</span><span class="sxs-lookup"><span data-stu-id="7a058-127">Windows 10 Holographic Enterprise</span></span>|
+|<span data-ttu-id="7a058-128">windows10Professional</span><span class="sxs-lookup"><span data-stu-id="7a058-128">windows10Professional</span></span>|<span data-ttu-id="7a058-129">6</span><span class="sxs-lookup"><span data-stu-id="7a058-129">6</span></span>|<span data-ttu-id="7a058-130">Windows 10 专业版</span><span class="sxs-lookup"><span data-stu-id="7a058-130">Windows 10 Professional</span></span>|
+|<span data-ttu-id="7a058-131">windows10ProfessionalN</span><span class="sxs-lookup"><span data-stu-id="7a058-131">windows10ProfessionalN</span></span>|<span data-ttu-id="7a058-132">7</span><span class="sxs-lookup"><span data-stu-id="7a058-132">7</span></span>|<span data-ttu-id="7a058-133">Windows 10 ProfessionalN</span><span class="sxs-lookup"><span data-stu-id="7a058-133">Windows 10 ProfessionalN</span></span>|
+|<span data-ttu-id="7a058-134">windows10ProfessionalEducation</span><span class="sxs-lookup"><span data-stu-id="7a058-134">windows10ProfessionalEducation</span></span>|<span data-ttu-id="7a058-135">8</span><span class="sxs-lookup"><span data-stu-id="7a058-135">8</span></span>|<span data-ttu-id="7a058-136">Windows 10 专业培训</span><span class="sxs-lookup"><span data-stu-id="7a058-136">Windows 10 Professional Education</span></span>|
+|<span data-ttu-id="7a058-137">windows10ProfessionalEducationN</span><span class="sxs-lookup"><span data-stu-id="7a058-137">windows10ProfessionalEducationN</span></span>|<span data-ttu-id="7a058-138">9</span><span class="sxs-lookup"><span data-stu-id="7a058-138">9</span></span>|<span data-ttu-id="7a058-139">Windows 10 专业 EducationN</span><span class="sxs-lookup"><span data-stu-id="7a058-139">Windows 10 Professional EducationN</span></span>|
+|<span data-ttu-id="7a058-140">windows10ProfessionalWorkstation</span><span class="sxs-lookup"><span data-stu-id="7a058-140">windows10ProfessionalWorkstation</span></span>|<span data-ttu-id="7a058-141">10</span><span class="sxs-lookup"><span data-stu-id="7a058-141">10</span></span>|<span data-ttu-id="7a058-142">工作站的 Windows 10 Professional</span><span class="sxs-lookup"><span data-stu-id="7a058-142">Windows 10 Professional for Workstations</span></span>|
+|<span data-ttu-id="7a058-143">windows10ProfessionalWorkstationN</span><span class="sxs-lookup"><span data-stu-id="7a058-143">windows10ProfessionalWorkstationN</span></span>|<span data-ttu-id="7a058-144">11</span><span class="sxs-lookup"><span data-stu-id="7a058-144">11</span></span>|<span data-ttu-id="7a058-145">对于工作站 N Windows 10 专业版</span><span class="sxs-lookup"><span data-stu-id="7a058-145">Windows 10 Professional for Workstations N</span></span>|
+
+
+

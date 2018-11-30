@@ -1,35 +1,44 @@
-# <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
+---
+title: ChartLineFormat 资源类型
+description: 封装线条元素的格式选项。
+ms.openlocfilehash: 6e43818bc55972585deff5aa2add1d513f031360
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008457"
+---
+# <a name="chartlineformat-resource-type"></a><span data-ttu-id="712f7-103">ChartLineFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="712f7-103">ChartLineFormat resource type</span></span>
 
-封装线条元素的格式选项。
+<span data-ttu-id="712f7-104">封装线条元素的格式选项。</span><span class="sxs-lookup"><span data-stu-id="712f7-104">Enapsulates the formatting options for line elements.</span></span>
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a><span data-ttu-id="712f7-105">方法</span><span class="sxs-lookup"><span data-stu-id="712f7-105">Methods</span></span>
 
-| 方法           | 返回类型    |说明|
+| <span data-ttu-id="712f7-106">方法</span><span class="sxs-lookup"><span data-stu-id="712f7-106">Method</span></span>           | <span data-ttu-id="712f7-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="712f7-107">Return Type</span></span>    |<span data-ttu-id="712f7-108">说明</span><span class="sxs-lookup"><span data-stu-id="712f7-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[获取 ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
-|[更新](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |更新 ChartLineFormat 对象。 |
-|[清除](../api/chartlineformat_clear.md)|无|清除图表元素的线条格式。|
+|[<span data-ttu-id="712f7-109">获取 ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="712f7-109">Get ChartLineFormat</span></span>](../api/chartlineformat-get.md) | [<span data-ttu-id="712f7-110">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="712f7-110">WorkbookChartLineFormat</span></span>](chartlineformat.md) |<span data-ttu-id="712f7-111">读取 chartLineFormat 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="712f7-111">Read properties and relationships of chartLineFormat object.</span></span>|
+|[<span data-ttu-id="712f7-112">Update</span><span class="sxs-lookup"><span data-stu-id="712f7-112">Update</span></span>](../api/chartlineformat-update.md) | [<span data-ttu-id="712f7-113">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="712f7-113">WorkbookChartLineFormat</span></span>](chartlineformat.md) |<span data-ttu-id="712f7-114">更新 ChartLineFormat 对象。</span><span class="sxs-lookup"><span data-stu-id="712f7-114">Update ChartLineFormat object.</span></span> |
+|[<span data-ttu-id="712f7-115">Clear</span><span class="sxs-lookup"><span data-stu-id="712f7-115">Clear</span></span>](../api/chartlineformat-clear.md)|<span data-ttu-id="712f7-116">无</span><span class="sxs-lookup"><span data-stu-id="712f7-116">None</span></span>|<span data-ttu-id="712f7-117">清除图表元素的线条格式。</span><span class="sxs-lookup"><span data-stu-id="712f7-117">Clear the line format of a chart element.</span></span>|
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="712f7-118">属性</span><span class="sxs-lookup"><span data-stu-id="712f7-118">Properties</span></span>
+| <span data-ttu-id="712f7-119">属性</span><span class="sxs-lookup"><span data-stu-id="712f7-119">Property</span></span>     | <span data-ttu-id="712f7-120">类型</span><span class="sxs-lookup"><span data-stu-id="712f7-120">Type</span></span>   |<span data-ttu-id="712f7-121">说明</span><span class="sxs-lookup"><span data-stu-id="712f7-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|color|string|表示图表中的线条颜色的 HTML 颜色代码。|
+|<span data-ttu-id="712f7-122">color</span><span class="sxs-lookup"><span data-stu-id="712f7-122">color</span></span>|<span data-ttu-id="712f7-123">string</span><span class="sxs-lookup"><span data-stu-id="712f7-123">string</span></span>|<span data-ttu-id="712f7-124">表示图表中的线条颜色的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="712f7-124">HTML color code representing the color of lines in the chart.</span></span>|
 
-## <a name="relationships"></a>关系
-无
+## <a name="relationships"></a><span data-ttu-id="712f7-125">Relationships</span><span class="sxs-lookup"><span data-stu-id="712f7-125">Relationships</span></span>
+<span data-ttu-id="712f7-126">无</span><span class="sxs-lookup"><span data-stu-id="712f7-126">None</span></span>
 
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="712f7-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="712f7-127">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="712f7-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="712f7-128">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

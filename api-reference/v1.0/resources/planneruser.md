@@ -1,11 +1,42 @@
-<span data-ttu-id="77ed7-p104">只读。可为 NULL。返回与用户共享的 [plannerPlans](plannerplan.md)。</span><span class="sxs-lookup"><span data-stu-id="77ed7-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| 只读。可为 NULL。返回与用户共享的 [plannerPlans](plannerplan.md)。|
+---
+title: plannerUser 资源类型
+description: 为用户提供**plannerUser**资源计划工具资源的访问权限。 它不包含任何可用的属性。
+ms.openlocfilehash: 777886a61d702198ec03ea844fb9fced761047ba
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009718"
+---
+# <a name="planneruser-resource-type"></a><span data-ttu-id="552fc-104">plannerUser 资源类型</span><span class="sxs-lookup"><span data-stu-id="552fc-104">plannerUser resource type</span></span>
 
-## <span data-ttu-id="77ed7-136">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="77ed7-136">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="77ed7-137">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="77ed7-137">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="552fc-p102">**plannerUser** 资源提供[用户](user.md)的 Planner 资源的访问权限。它不包含任何可用属性。</span><span class="sxs-lookup"><span data-stu-id="552fc-p102">The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.</span></span>
+
+
+## <a name="methods"></a><span data-ttu-id="552fc-107">方法</span><span class="sxs-lookup"><span data-stu-id="552fc-107">Methods</span></span>
+
+| <span data-ttu-id="552fc-108">方法</span><span class="sxs-lookup"><span data-stu-id="552fc-108">Method</span></span>           | <span data-ttu-id="552fc-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="552fc-109">Return Type</span></span>    |<span data-ttu-id="552fc-110">说明</span><span class="sxs-lookup"><span data-stu-id="552fc-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="552fc-111">List plans</span><span class="sxs-lookup"><span data-stu-id="552fc-111">List plans</span></span>](../api/planneruser-list-plans.md) |<span data-ttu-id="552fc-112">[plannerPlan](plannerplan.md) collection</span><span class="sxs-lookup"><span data-stu-id="552fc-112">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="552fc-113">获取 **plannerPlan** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="552fc-113">Get a **plannerPlan** object collection.</span></span>|
+|[<span data-ttu-id="552fc-114">List tasks</span><span class="sxs-lookup"><span data-stu-id="552fc-114">List tasks</span></span>](../api/planneruser-list-tasks.md) |<span data-ttu-id="552fc-115">[plannerTask](plannertask.md) collection</span><span class="sxs-lookup"><span data-stu-id="552fc-115">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="552fc-116">获取 **plannerTask** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="552fc-116">Get a **plannerTask** object collection.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="552fc-117">属性</span><span class="sxs-lookup"><span data-stu-id="552fc-117">Properties</span></span>
+| <span data-ttu-id="552fc-118">属性</span><span class="sxs-lookup"><span data-stu-id="552fc-118">Property</span></span>     | <span data-ttu-id="552fc-119">类型</span><span class="sxs-lookup"><span data-stu-id="552fc-119">Type</span></span>   |<span data-ttu-id="552fc-120">说明</span><span class="sxs-lookup"><span data-stu-id="552fc-120">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="552fc-121">id</span><span class="sxs-lookup"><span data-stu-id="552fc-121">id</span></span>|<span data-ttu-id="552fc-122">字符串</span><span class="sxs-lookup"><span data-stu-id="552fc-122">String</span></span>| <span data-ttu-id="552fc-p103">只读。planenrUser 的标识符</span><span class="sxs-lookup"><span data-stu-id="552fc-p103">Read-only. Identifier of the planenrUser</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="552fc-125">关系</span><span class="sxs-lookup"><span data-stu-id="552fc-125">Relationships</span></span>
+| <span data-ttu-id="552fc-126">关系</span><span class="sxs-lookup"><span data-stu-id="552fc-126">Relationship</span></span> | <span data-ttu-id="552fc-127">类型</span><span class="sxs-lookup"><span data-stu-id="552fc-127">Type</span></span>   |<span data-ttu-id="552fc-128">说明</span><span class="sxs-lookup"><span data-stu-id="552fc-128">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="552fc-129">plans</span><span class="sxs-lookup"><span data-stu-id="552fc-129">plans</span></span>|<span data-ttu-id="552fc-130">[plannerPlan](plannerplan.md) collection</span><span class="sxs-lookup"><span data-stu-id="552fc-130">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="552fc-p104">只读。可为 NULL。返回分配给用户的 [plannerTasks](plannertask.md)。</span><span class="sxs-lookup"><span data-stu-id="552fc-p104">Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.</span></span>|
+|<span data-ttu-id="552fc-134">tasks</span><span class="sxs-lookup"><span data-stu-id="552fc-134">tasks</span></span>|<span data-ttu-id="552fc-135">[plannerTask](plannertask.md) collection</span><span class="sxs-lookup"><span data-stu-id="552fc-135">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="552fc-p105">只读。可为 NULL。返回与用户共享的 [plannerPlans](plannerplan.md)。</span><span class="sxs-lookup"><span data-stu-id="552fc-p105">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="552fc-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="552fc-139">JSON representation</span></span>
+<span data-ttu-id="552fc-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="552fc-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

@@ -1,0 +1,25 @@
+---
+title: notificationTemplateBrandingOptions 枚举类型
+description: 邮件模板的品牌选项。 已在 Intune 管理员控制台中定义品牌。
+ms.openlocfilehash: 141774dd75564c0bf8d9e112d78f2660ca3908dc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009484"
+---
+# <a name="notificationtemplatebrandingoptions-enum-type"></a><span data-ttu-id="c9aa6-104">notificationTemplateBrandingOptions 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c9aa6-104">notificationTemplateBrandingOptions enum type</span></span>
+
+> <span data-ttu-id="c9aa6-105">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-105">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="c9aa6-106">邮件模板的品牌选项。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-106">Branding Options for the Message Template.</span></span> <span data-ttu-id="c9aa6-107">已在 Intune 管理员控制台中定义品牌。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-107">Branding is defined in the Intune Admin Console.</span></span>
+## <a name="members"></a><span data-ttu-id="c9aa6-108">成员</span><span class="sxs-lookup"><span data-stu-id="c9aa6-108">Members</span></span>
+|<span data-ttu-id="c9aa6-109">成员</span><span class="sxs-lookup"><span data-stu-id="c9aa6-109">Member</span></span>|<span data-ttu-id="c9aa6-110">值</span><span class="sxs-lookup"><span data-stu-id="c9aa6-110">Value</span></span>|<span data-ttu-id="c9aa6-111">说明</span><span class="sxs-lookup"><span data-stu-id="c9aa6-111">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="c9aa6-112">无</span><span class="sxs-lookup"><span data-stu-id="c9aa6-112">none</span></span>|<span data-ttu-id="c9aa6-113">0</span><span class="sxs-lookup"><span data-stu-id="c9aa6-113">0</span></span>|<span data-ttu-id="c9aa6-114">没有品牌。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-114">No Branding.</span></span>|
+|<span data-ttu-id="c9aa6-115">includeCompanyLogo</span><span class="sxs-lookup"><span data-stu-id="c9aa6-115">includeCompanyLogo</span></span>|<span data-ttu-id="c9aa6-116">1</span><span class="sxs-lookup"><span data-stu-id="c9aa6-116">1</span></span>|<span data-ttu-id="c9aa6-117">包含公司徽标。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-117">Include Company Logo.</span></span>|
+|<span data-ttu-id="c9aa6-118">includeCompanyName</span><span class="sxs-lookup"><span data-stu-id="c9aa6-118">includeCompanyName</span></span>|<span data-ttu-id="c9aa6-119">2</span><span class="sxs-lookup"><span data-stu-id="c9aa6-119">2</span></span>|<span data-ttu-id="c9aa6-120">包含公司名称。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-120">Include Company Name.</span></span>|
+|<span data-ttu-id="c9aa6-121">includeContactInformation</span><span class="sxs-lookup"><span data-stu-id="c9aa6-121">includeContactInformation</span></span>|<span data-ttu-id="c9aa6-122">4</span><span class="sxs-lookup"><span data-stu-id="c9aa6-122">4</span></span>|<span data-ttu-id="c9aa6-123">包含联系人信息。</span><span class="sxs-lookup"><span data-stu-id="c9aa6-123">Include Contact Info.</span></span>|
+
+
+

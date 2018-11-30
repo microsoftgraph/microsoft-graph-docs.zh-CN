@@ -1,27 +1,37 @@
-# <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
+---
+title: FilterDatetime 资源类型
+description: 表示在筛选值时如何筛选日期。
+ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007767"
+---
+# <a name="filterdatetime-resource-type"></a><span data-ttu-id="2bb02-103">FilterDatetime 资源类型</span><span class="sxs-lookup"><span data-stu-id="2bb02-103">FilterDatetime resource type</span></span>
 
-表示在筛选值时如何筛选日期。
+<span data-ttu-id="2bb02-104">表示在筛选值时如何筛选日期。</span><span class="sxs-lookup"><span data-stu-id="2bb02-104">Represents how to filter a date when filtering on values.</span></span>
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="2bb02-105">属性</span><span class="sxs-lookup"><span data-stu-id="2bb02-105">Properties</span></span>
+| <span data-ttu-id="2bb02-106">属性</span><span class="sxs-lookup"><span data-stu-id="2bb02-106">Property</span></span>     | <span data-ttu-id="2bb02-107">类型</span><span class="sxs-lookup"><span data-stu-id="2bb02-107">Type</span></span>   |<span data-ttu-id="2bb02-108">说明</span><span class="sxs-lookup"><span data-stu-id="2bb02-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|date|string|用于筛选数据的采用 ISO8601 格式的日期。|
-|specificity|string|用于保留数据的日期的具体程度。例如，如果日期是 2005-04-02 并将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。可能的值是：`Year`、`Monday`、`Day`、`Hour`、`Minute`、`Second`。|
+|<span data-ttu-id="2bb02-109">date</span><span class="sxs-lookup"><span data-stu-id="2bb02-109">date</span></span>|<span data-ttu-id="2bb02-110">string</span><span class="sxs-lookup"><span data-stu-id="2bb02-110">string</span></span>|<span data-ttu-id="2bb02-111">用于筛选数据的采用 ISO8601 格式的日期。</span><span class="sxs-lookup"><span data-stu-id="2bb02-111">The date in ISO8601 format used to filter data.</span></span>|
+|<span data-ttu-id="2bb02-112">specificity</span><span class="sxs-lookup"><span data-stu-id="2bb02-112">specificity</span></span>|<span data-ttu-id="2bb02-113">string</span><span class="sxs-lookup"><span data-stu-id="2bb02-113">string</span></span>|<span data-ttu-id="2bb02-114">如何特定日期应该用于保留数据。</span><span class="sxs-lookup"><span data-stu-id="2bb02-114">How specific the date should be used to keep data.</span></span> <span data-ttu-id="2bb02-115">例如，如果日期是 2005年-04-02 并且 specifity 设置为"月"，则筛选器操作将在举行的 2009 年 4 月保留具有日期的所有行。</span><span class="sxs-lookup"><span data-stu-id="2bb02-115">For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009.</span></span> <span data-ttu-id="2bb02-116">可能的值为： `Year`， `Monday`， `Day`， `Hour`， `Minute`， `Second`。</span><span class="sxs-lookup"><span data-stu-id="2bb02-116">The possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.</span></span>|
 
-## <a name="relationships"></a>关系
-无
+## <a name="relationships"></a><span data-ttu-id="2bb02-117">Relationships</span><span class="sxs-lookup"><span data-stu-id="2bb02-117">Relationships</span></span>
+<span data-ttu-id="2bb02-118">无</span><span class="sxs-lookup"><span data-stu-id="2bb02-118">None</span></span>
 
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="2bb02-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2bb02-119">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="2bb02-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2bb02-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

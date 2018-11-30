@@ -1,17 +1,46 @@
-<span data-ttu-id="a4828-p105">配置 DNS 主机上的 SRV 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="a4828-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| 配置 DNS 主机上的 SRV 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
-|<span data-ttu-id="a4828-149">weight</span><span class="sxs-lookup"><span data-stu-id="a4828-149">weight</span></span>|<span data-ttu-id="a4828-150">Int32</span><span class="sxs-lookup"><span data-stu-id="a4828-150">Int32</span></span>| <span data-ttu-id="a4828-151">配置 DNS 主机上的 SRV 记录的*权重*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="a4828-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
+---
+title: domainDnsSrvRecord 资源类型
+description: 表示已添加到租户中特定域的 DNS 区域文件的 SRV 记录。继承自 DomainDnsRecord 实体。
+ms.openlocfilehash: 1fd1123866d1674aec167de8bec8ef9a45be8d99
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009438"
+---
+# <a name="domaindnssrvrecord-resource-type"></a><span data-ttu-id="61aa1-104">domainDnsSrvRecord 资源类型</span><span class="sxs-lookup"><span data-stu-id="61aa1-104">domainDnsSrvRecord resource type</span></span>
 
-## <span data-ttu-id="a4828-152">关系</span><span class="sxs-lookup"><span data-stu-id="a4828-152">Relationships</span></span>
-<a id="relationships" class="xliff"></a>
-<span data-ttu-id="a4828-153">无</span><span class="sxs-lookup"><span data-stu-id="a4828-153">None</span></span>
+<span data-ttu-id="61aa1-p102">表示已添加到租户中特定域的 DNS 区域文件的 SRV 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。</span><span class="sxs-lookup"><span data-stu-id="61aa1-p102">Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="61aa1-107">方法</span><span class="sxs-lookup"><span data-stu-id="61aa1-107">Methods</span></span>
+<span data-ttu-id="61aa1-p103">不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。</span><span class="sxs-lookup"><span data-stu-id="61aa1-p103">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="61aa1-110">属性</span><span class="sxs-lookup"><span data-stu-id="61aa1-110">Properties</span></span>
+| <span data-ttu-id="61aa1-111">属性</span><span class="sxs-lookup"><span data-stu-id="61aa1-111">Property</span></span>     | <span data-ttu-id="61aa1-112">类型</span><span class="sxs-lookup"><span data-stu-id="61aa1-112">Type</span></span>   |<span data-ttu-id="61aa1-113">说明</span><span class="sxs-lookup"><span data-stu-id="61aa1-113">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="61aa1-114">id</span><span class="sxs-lookup"><span data-stu-id="61aa1-114">id</span></span>|<span data-ttu-id="61aa1-115">字符串</span><span class="sxs-lookup"><span data-stu-id="61aa1-115">String</span></span>| <span data-ttu-id="61aa1-p104">分配给此实体的唯一标识符。不可为 NULL，只读。</span><span class="sxs-lookup"><span data-stu-id="61aa1-p104">Unique identifier assigned to this entity. Not nullable, Read-only.</span></span>|
+|<span data-ttu-id="61aa1-118">isOptional</span><span class="sxs-lookup"><span data-stu-id="61aa1-118">isOptional</span></span>|<span data-ttu-id="61aa1-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="61aa1-119">Boolean</span></span>| <span data-ttu-id="61aa1-120">如果为 false，则客户必须在 DNS 主机上配置 SRV 记录才能使 Microsoft Online Services 在域中正常运行。</span><span class="sxs-lookup"><span data-stu-id="61aa1-120">If false, the SRV record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
+|<span data-ttu-id="61aa1-121">label</span><span class="sxs-lookup"><span data-stu-id="61aa1-121">label</span></span>|<span data-ttu-id="61aa1-122">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-122">String</span></span>| <span data-ttu-id="61aa1-123">配置 DNS 主机上的 SRV 记录的*名称*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-123">Value used when configuring the *name* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-124">nameTarget</span><span class="sxs-lookup"><span data-stu-id="61aa1-124">nameTarget</span></span>|<span data-ttu-id="61aa1-125">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-125">String</span></span>| <span data-ttu-id="61aa1-126">配置 DNS 主机上的 SRV 记录的*目标*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-126">Value to use when configuring the *Target* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-127">port</span><span class="sxs-lookup"><span data-stu-id="61aa1-127">port</span></span>|<span data-ttu-id="61aa1-128">Int32</span><span class="sxs-lookup"><span data-stu-id="61aa1-128">Int32</span></span>| <span data-ttu-id="61aa1-129">配置 DNS 主机上的 SRV 记录的*端口*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-129">Value to use when configuring the *port* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-130">priority</span><span class="sxs-lookup"><span data-stu-id="61aa1-130">priority</span></span>|<span data-ttu-id="61aa1-131">Int32</span><span class="sxs-lookup"><span data-stu-id="61aa1-131">Int32</span></span>| <span data-ttu-id="61aa1-132">配置 DNS 主机上的 SRV 记录的*优先级*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-132">Value to use when configuring the *priority* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-133">protocol</span><span class="sxs-lookup"><span data-stu-id="61aa1-133">protocol</span></span>|<span data-ttu-id="61aa1-134">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-134">String</span></span>| <span data-ttu-id="61aa1-135">配置 DNS 主机上的 SRV 记录的*协议*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-135">Value to use when configuring the *protocol* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-136">recordType</span><span class="sxs-lookup"><span data-stu-id="61aa1-136">recordType</span></span>|<span data-ttu-id="61aa1-137">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-137">String</span></span>|  <span data-ttu-id="61aa1-p105">DNS 记录类型。此值始终是 *Srv*。Key</span><span class="sxs-lookup"><span data-stu-id="61aa1-p105">Type of DNS record. The value is always *Srv*. Key</span></span> |
+|<span data-ttu-id="61aa1-141">service</span><span class="sxs-lookup"><span data-stu-id="61aa1-141">service</span></span>|<span data-ttu-id="61aa1-142">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-142">String</span></span>| <span data-ttu-id="61aa1-143">配置 DNS 主机上的 SRV 记录的*服务*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-143">Value to use when configuring the *service* property of the SRV record at the DNS host.</span></span> |
+|<span data-ttu-id="61aa1-144">supportedService</span><span class="sxs-lookup"><span data-stu-id="61aa1-144">supportedService</span></span>|<span data-ttu-id="61aa1-145">String</span><span class="sxs-lookup"><span data-stu-id="61aa1-145">String</span></span>| <span data-ttu-id="61aa1-146">Microsoft Online Service 或与该 SRV 记录存在依赖关系的功能。</span><span class="sxs-lookup"><span data-stu-id="61aa1-146">Microsoft Online Service or feature that has a dependency on this SRV record.</span></span></br></br><span data-ttu-id="61aa1-147">可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*</span><span class="sxs-lookup"><span data-stu-id="61aa1-147">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
+|<span data-ttu-id="61aa1-148">ttl</span><span class="sxs-lookup"><span data-stu-id="61aa1-148">ttl</span></span>|<span data-ttu-id="61aa1-149">Int32</span><span class="sxs-lookup"><span data-stu-id="61aa1-149">Int32</span></span>| <span data-ttu-id="61aa1-p106">配置 DNS 主机上的 SRV 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="61aa1-p106">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span> |
+|<span data-ttu-id="61aa1-152">weight</span><span class="sxs-lookup"><span data-stu-id="61aa1-152">weight</span></span>|<span data-ttu-id="61aa1-153">Int32</span><span class="sxs-lookup"><span data-stu-id="61aa1-153">Int32</span></span>| <span data-ttu-id="61aa1-154">配置 DNS 主机上的 SRV 记录的*权重*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="61aa1-154">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="61aa1-155">关系</span><span class="sxs-lookup"><span data-stu-id="61aa1-155">Relationships</span></span>
+<span data-ttu-id="61aa1-156">无</span><span class="sxs-lookup"><span data-stu-id="61aa1-156">None</span></span>
 
 
-## <span data-ttu-id="a4828-154">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a4828-154">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="a4828-155">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a4828-155">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="61aa1-157">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="61aa1-157">JSON representation</span></span>
+<span data-ttu-id="61aa1-158">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="61aa1-158">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -20,7 +49,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
