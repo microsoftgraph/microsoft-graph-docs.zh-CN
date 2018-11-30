@@ -1,14 +1,23 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# domainDnsTxtRecord 资源类型
+---
+title: domainDnsTxtRecord 资源类型
+description: 表示已添加到租户中特定域的 DNS 区域文件的 TXT 记录。继承自 DomainDnsRecord 实体。
+ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27048502"
+---
+# <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 表示已添加到租户中特定域的 DNS 区域文件的 TXT 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
 
-<a id="methods" class="xliff"></a>
-## 方法
+## <a name="methods"></a>方法
 不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
 
-<a id="properties" class="xliff"></a>
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|字符串| 分配给此实体的唯一标识符。不可为 NULL，只读。 |
@@ -19,13 +28,11 @@
 |text|String| 配置 DNS 主机上的*文本*属性时使用的值。 |
 |ttl|Int32| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
 
-<a id="relationships" class="xliff"></a>
-## 关系
+## <a name="relationships"></a>关系
 无
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {

@@ -1,0 +1,72 @@
+---
+title: deviceManagementPartner 资源类型
+description: 表示与设备管理合作伙伴的连接的实体。
+ms.openlocfilehash: c682b700636ad80f20719e40f35a929cf740c7a0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27048260"
+---
+# <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+表示与设备管理合作伙伴的连接的实体。
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
+|:---|:---|:---|
+|[列出 deviceManagementPartners](../api/intune-onboarding-devicemanagementpartner-list.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 集合|列出 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性和关系。|
+|[获取 deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-get.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|读取 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性和关系。|
+|[创建 deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|创建新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。|
+|[删除 deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|无|删除 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)。|
+|[更新 deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|更新 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性。|
+
+## <a name="properties"></a>属性
+|属性|类型|说明|
+|:---|:---|:---|
+|id|字符串|尚未记录|
+|lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|合作伙伴的此租户的状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用程序类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
+|singleTenantAppId|String|合作伙伴单个租户应用 ID|
+|displayName|String|合作伙伴显示名称|
+|isConfigured|Boolean|是否配置了设备管理合作伙伴|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|采用 UTC 时将删除 PartnerDevices 的日期和时间。 这将立即成为过时。|
+|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|采用 UTC PartnerDevices 将标记为不符合时的日期和时间。 这将立即成为过时。|
+|whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
+|whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
+
+## <a name="relationships"></a>关系
+无
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementPartner"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementPartner",
+  "id": "String (identifier)",
+  "lastHeartbeatDateTime": "String (timestamp)",
+  "partnerState": "String",
+  "partnerAppType": "String",
+  "singleTenantAppId": "String",
+  "displayName": "String",
+  "isConfigured": true,
+  "whenPartnerDevicesWillBeRemoved": "String (timestamp)",
+  "whenPartnerDevicesWillBeMarkedAsNonCompliant": "String (timestamp)",
+  "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+}
+```
+
+
+
+
+

@@ -1,15 +1,24 @@
-<a id="domaindnscnamerecord-resource-type" class="xliff"></a>
-# domainDnsCnameRecord 资源类型
+---
+title: domainDnsCnameRecord 资源类型
+description: 表示已添加到租户中特定域的 DNS 区域文件的 CNAME 记录。继承自 DomainDnsRecord 实体。
+ms.openlocfilehash: 9eaa48bb492572d4e5cac57ee07420ed492aac73
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27048501"
+---
+# <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 表示已添加到租户中特定域的 DNS 区域文件的 CNAME 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
 
 
-<a id="methods" class="xliff"></a>
-## 方法
+## <a name="methods"></a>方法
 不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
 
-<a id="properties" class="xliff"></a>
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |canonicalName|字符串| CNAME 记录的规范名称。用于配置 DNS 主机上的 CNAME 记录。 |
@@ -20,13 +29,11 @@
 |supportedService|String| Microsoft Online Service 或与该 CNAME 记录存在依赖关系的功能。</br></br>可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*|
 |ttl|Int32| 配置 DNS 主机上的 CNAME 记录的生存时间 (ttl) 属性时使用的值。不可为 null |
 
-<a id="relationships" class="xliff"></a>
-## 关系
+## <a name="relationships"></a>关系
 无
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {

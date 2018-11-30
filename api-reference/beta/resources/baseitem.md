@@ -1,8 +1,22 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: d70a75be0be4d7ecbd010288cb313b8394736932
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049412"
+---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **baseItem** 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。从 **baseItem** 派生的资源包括：
 
-* [驱动器](drive.md)
+* [drive](drive.md)
 * [driveItem](driveitem.md)
 * [网站](site.md)
 * [sharedDriveItem](shareddriveitem.md)
@@ -37,7 +51,7 @@
 
 | 属性             | 类型              | 说明                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | 驱动器唯一标识符。只读。                                         |
+| ID                   | string            | 驱动器唯一标识符。只读。                                         |
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
 | eTag                 | string            | 该项目的 ETag。只读。                                                          |
@@ -47,7 +61,7 @@
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
 | WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>注解
@@ -61,8 +75,5 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->
