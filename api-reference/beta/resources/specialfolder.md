@@ -1,14 +1,29 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: 2c316119aeac5208a77f00e04fefcdd2a34cdd7d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27046479"
+---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **SpecialFolder** 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 
-如果 **DriveItem** 具有一个非 NULL **specialFolder** facet，则该项表示特殊（命名的）文件夹。可直接通过 [special folders 集合](../api/drive_special.md) 访问特殊文件夹。
+如果 **DriveItem** 具有一个非 null **specialFolder** facet，则该项表示特殊（命名的）文件夹。
+可直接通过 [special folders 集合](../api/drive-get-specialfolder.md) 访问特殊文件夹。
 
 特殊文件夹可提供简单别名，因此无需按路径查找（需要本地化）文件夹或通过 ID 引用文件夹来访问已知文件夹。如果特殊文件夹被重命名或移到驱动器中的其他位置，此语法将继续返回该文件夹。
 
 应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。
 
-**注意：**如果应用仅请求 **Files.Read** 范围，而请求特殊文件夹不存在，则响应将是 `403 Forbidden` 错误。
+**注意：** 如果应用仅请求 **Files.Read** 范围，而请求特殊文件夹不存在，则响应将是 `403 Forbidden` 错误。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,7 +53,7 @@
 | 名称        | 文件夹 ID    | 说明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | 应用根目录    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
-| 本机照片 | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
+| Camera Roll | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
 | 文档   | `documents`  | 文档文件夹。                                                    |
 | 音乐       | `music`      | 音乐文件夹。不适用于 OneDrive for Business。                |
 | 照片      | `photos`     | 照片文件夹。                                                       |
@@ -52,8 +67,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->
