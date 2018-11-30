@@ -1,26 +1,29 @@
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
-
-# plannerChecklistItems 资源类型
+---
+title: plannerChecklistItems 资源类型
+description: '**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是任务详细信息对象的组成部分。该属性值对中的值是 checklistItem 对象。'
+ms.openlocfilehash: 3a08fe5bea1c7aaf493500b503e9ff85dc460acc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010614"
+---
+# <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
 
 **plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。
 
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 

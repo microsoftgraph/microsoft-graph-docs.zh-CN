@@ -1,3 +1,13 @@
+---
+title: passwordProfile 资源类型
+description: 包含与用户关联的密码配置文件。用户 实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
+ms.openlocfilehash: ee933b75b3dc536cbfcb33502cdda0d63680174c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010388"
+---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
 
 包含与用户关联的密码配置文件。[用户](user.md) 实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
@@ -18,7 +28,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: section 资源类型
+description: OneNote 笔记本中的分区。分区可包含页面。
+ms.openlocfilehash: e0e2d650993ff3c8bcda688be305cf296a2dfdb2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011449"
+---
 # <a name="section-resource-type"></a>section 资源类型
 
 OneNote 笔记本中的分区。分区可包含页面。
@@ -8,6 +18,7 @@ OneNote 笔记本中的分区。分区可包含页面。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "pages",
     "parentNotebook",
@@ -48,7 +59,7 @@ OneNote 笔记本中的分区。分区可包含页面。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|pages|[Page](page.md) collection|分区中的页面集合。只读。可为 NULL。|
+|pages|[OnenotePage](page.md)集合|分区中的页面集合。只读。可为 NULL。|
 |parentNotebook|[Notebook](notebook.md)|包含分区的笔记本。只读。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区的分区组。只读。|
 
@@ -56,11 +67,11 @@ OneNote 笔记本中的分区。分区可包含页面。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get section](../api/section_get.md) | [Section](section.md) |读取分区的属性和关系。|
-|[Create page](../api/section_post_pages.md) |[Page](page.md)| 通过发布到指定分区中的页面集合创建页面。|
-|[List pages](../api/section_list_pages.md) |[Page](page.md) collection| 获取指定分区中的页面集合。|
-|[copyToNotebook](../api/section_copytonotebook.md)|无|将分区复制到特定笔记本。|
-|[copyToSectionGroup](../api/section_copytosectiongroup.md)|无|将分区复制到特定分区组。|
+|[Get section](../api/section-get.md) | [OnenoteSection](section.md) |读取分区的属性和关系。|
+|[Create page](../api/section-post-pages.md) |[页面](page.md)| 通过发布到指定分区中的页面集合创建页面。|
+|[List pages](../api/section-list-pages.md) |[Page](page.md) collection| 获取指定分区中的页面集合。|
+|[copyToNotebook](../api/section-copytonotebook.md)|无|将分区复制到特定笔记本。|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|无|将分区复制到特定分区组。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,6 +1,16 @@
+---
+title: 与会者资源类型
+description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
+ms.openlocfilehash: 7c9040b563840c22eec1dd7456892fc7ff83ee4f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011745"
+---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
-会议与会者。
+会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 
 由 [attendeeBase](attendeebase.md) 派生。
 
@@ -8,8 +18,8 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
-|类型|String|与会者类型：`Required`、`Optional`、`Resource`。|
-|emailAddress|[emailAddress](emailAddress.md)|添加与会者姓名和 SMTP 地址。|
+|类型|String|与会者类型：`required`、`optional`、`resource`。|
+|emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -17,6 +27,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

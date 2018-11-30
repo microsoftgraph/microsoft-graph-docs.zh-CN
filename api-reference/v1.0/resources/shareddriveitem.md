@@ -1,6 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+ms.openlocfilehash: 32317a9bd2a75e8edde7967ef939c7a1a4b316fd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010561"
+---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
-使用 [Shares](../api/shares_get.md) API 访问共享的 [driveItem](driveitem.md) 时，返回 **sharedDriveItem** 资源。
+使用 [Shares](../api/shares-get.md) API 访问共享的 [driveItem](driveitem.md) 时，返回 **sharedDriveItem** 资源。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -10,21 +22,23 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,29 +52,39 @@
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型                                  | 说明                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 项        | Collection([DriveItem](driveitem.md)) | 共享的 **driveItem** 资源的集合。不能枚举该集合，但可以通过其唯一 ID 访问项。                                                                        |
-| 根         | [DriveItem](driveitem.md)             | 顶级共享 **driveItem**。如果共享单个文件，则此项是文件。如果共享文件夹，则此项将是文件夹。可以使用项的 facet 确定要应用的服务案例。 |
-| driveItem    | [driveItem](driveitem.md)             | 已共享资源的 **driveItem**。这等同于**根**属性。                                                                                                             |
-| 网站         | [网站](site.md)                       | 包含已共享项的**网站**资源。                                                                                                                                                |
+| 关系名称 | 类型                | 说明
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
+| **list**          | [**list**][list]        | 用于访问基础 **list**
+| **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
+| **site**          | [**site**][site]        | 用于访问基础 **site**
+
+另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
+
+| 关系名称 | 类型                         | 说明
+| ------------------|:-----------------------------|:-----------------------------------
+| **项目**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础**driveItem**。 弃用-使用`driveItem`相反。
+
+[driveItem]: driveitem.md
+[list]: list.md
+[listItem]: listitem.md
+[site]: site.md
 
 ## <a name="methods"></a>方法
 
 | 方法                                  | REST 路径                |
 | :-------------------------------------- | :----------------------- |
-| [获取共享项目](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [获取共享项目](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

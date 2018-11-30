@@ -1,3 +1,13 @@
+---
+title: WorksheetProtectionOptions 资源类型
+description: 代表工作表保护中的选项。
+ms.openlocfilehash: ef086b911a154df2eddf92ee57b89d570ef12247
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011305"
+---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions 资源类型
 
 代表工作表保护中的选项。
@@ -26,7 +36,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

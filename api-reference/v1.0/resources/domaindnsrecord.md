@@ -1,17 +1,21 @@
-<a id="domaindnsrecord-resource-type" class="xliff"></a>
-
-# domainDnsRecord 资源类型
+---
+title: domainDnsRecord 资源类型
+description: 对于租户中的每个域，您可能需要先域可由 Microsoft Online Services 将 DNS 记录添加到域的 DNS 区域文件。 **DomainDnsRecord**实体用于显示此类的 DNS 记录。 DomainDnsCnameRecord、 DomainDnsMxRecord、 DomainDnsSrvRecord 和 DomainDnsSrvRecord 实体的基准实体。
+ms.openlocfilehash: d2cc25f459aebf4a410c152e5f5128436a8c8f61
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010892"
+---
+# <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 
 对于租户中的每个域，可能需要先将 DNS 记录添加到相应域的 DNS 区域文件，然后 Microsoft Online Services 才能使用该域。**DomainDnsRecord** 实体用于显示这些 DNS 记录。[DomainDnsCnameRecord](domaindnscnamerecord.md)、[DomainDnsMxRecord](domaindnsmxrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md) 和 [DomainDnsSrvRecord](domaindnssrvrecord.md) 实体的基本实体。
 
-<a id="methods" class="xliff"></a>
-
-## 方法
+## <a name="methods"></a>方法
 不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|字符串| 分配给此实体的唯一标识符。不可为 NULL，只读。|
@@ -21,18 +25,15 @@
 |supportedService|String| Microsoft Online Service 或与该 DNS 记录存在依赖关系的功能。</br></br>可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*|
 |ttl|Int32| 配置 DNS 主机上的 DNS 记录的生存时间 (ttl) 属性时使用的值。不可为 null |
 
-<a id="relationships" class="xliff"></a>
-
-## 关系
+## <a name="relationships"></a>关系
 无
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

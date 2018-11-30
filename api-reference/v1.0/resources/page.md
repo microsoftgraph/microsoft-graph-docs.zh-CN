@@ -1,3 +1,13 @@
+---
+title: 页面资源类型
+description: OneNote 笔记本中的页面。
+ms.openlocfilehash: 19380f06ad4706f623397681a020054e65eba029
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010947"
+---
 # <a name="page-resource-type"></a>页面资源类型
 
 OneNote 笔记本中的页面。
@@ -6,12 +16,14 @@ OneNote 笔记本中的页面。
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntitySchemaObjectModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSection"
   ],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -50,16 +62,16 @@ OneNote 笔记本中的页面。
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|包含页面的笔记本。只读。|
-|parentSection|[Section](section.md)|包含页面的分区。只读。|
+|parentSection|[OnenoteSection](section.md)|包含页面的分区。只读。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get page](../api/page_get.md) | [Page](page.md) |读取页面的属性和关系。|
-|[Update page content](../api/page_update.md) | 无 |更新页面的 HTML 内容。 |
-|[Delete page](../api/page_delete.md) | 无 |删除页面。 |
-|[copyToSection](../api/page_copytosection.md)| 无 |将页面复制到特定分区。|
+|[Get page](../api/page-get.md) | [Page](page.md) |读取页面的属性和关系。|
+|[Update page content](../api/page-update.md) | 无 |更新页面的 HTML 内容。 |
+|[Delete page](../api/page-delete.md) | 无 |删除页面。 |
+|[copyToSection](../api/page-copytosection.md)| 无 |将页面复制到特定分区。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

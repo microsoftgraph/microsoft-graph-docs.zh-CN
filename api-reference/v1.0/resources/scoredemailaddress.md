@@ -1,3 +1,13 @@
+---
+title: scoredEmailAddress 资源类型
+description: 表示经过评分的电子邮件地址。
+ms.openlocfilehash: 9cdd33a6df9eefca0f7a00c5fe8b17832e0056d9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011700"
+---
 # <a name="scoredemailaddress-resource-type"></a>scoredEmailAddress 资源类型
 
 表示经过评分的电子邮件地址。
@@ -24,7 +34,7 @@
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024
+  "relevanceScore": 1024.0
 }
 ```
 

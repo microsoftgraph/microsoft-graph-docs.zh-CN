@@ -1,3 +1,13 @@
+---
+title: sectionGroup 资源类型
+description: OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
+ms.openlocfilehash: 4714d0d163e9ddd01373f50bf38fa0971da0609b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010080"
+---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
 OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
@@ -8,13 +18,14 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSectionGroup",
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -50,17 +61,17 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
 |parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。只读。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|分区中的分区组。只读。可为 NULL。|
-|节|[Section](section.md) collection|分区组中的分区。只读。可为 Null。|
+|sections|[OnenoteSection](section.md)集合|分区组中的分区。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get section group](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
-|[Create section group](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
-|[List section groups](../api/sectiongroup_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 获取指定分区组中的分区组集合。|
-|[Create section](../api/sectiongroup_post_sections.md) |[Section](section.md)| 通过发布到指定分区组中的分区集合创建分区。|
-|[List sections](../api/sectiongroup_list_sections.md) |[Section](section.md) collection| 获取指定分区组中的分区集合。|
+|[Get section group](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
+|[Create section group](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
+|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 获取指定分区组中的分区组集合。|
+|[Create section](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| 通过发布到指定分区组中的分区集合创建分区。|
+|[List sections](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md)集合| 获取指定分区组中的分区集合。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

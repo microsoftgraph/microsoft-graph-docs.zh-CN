@@ -1,3 +1,13 @@
+---
+title: subscribedSku 资源类型
+description: 包含有关公司订阅的服务 SKU 的信息。
+ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010452"
+---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
 包含有关公司订阅的服务 SKU 的信息。
@@ -7,11 +17,11 @@
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
-|[列出 subscribedsku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
+|[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
+|[列表 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliesTo|String| 例如，“用户”或“公司”。 |
 |capabilityStatus|String| 例如，“Enabled”。 |
@@ -20,7 +30,7 @@
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| 有关预付许可证的数量和状态的信息。 |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。不可为 null |
 |skuId|Guid| 服务 SKU 的唯一标识符 (GUID)。 |
-|skuPartNumber|String| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 |
+|skuPartNumber|字符串| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -29,13 +39,25 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: locationConstraintItem 资源类型
+description: 客户端声明的会议地点条件。
+ms.openlocfilehash: 4f985a5d37dc3a27866f077b68250b07b4a173f4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010469"
+---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 
 客户端声明的会议地点条件。
@@ -8,11 +18,10 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -26,12 +35,12 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| address | [physicalAddress](physicalAddress.md) |位置的街道地址。 |
+| address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与地点相关联的电子邮件地址。 |
-| resolveAvailability | Boolean | 如果设为 true，且指定的资源处于忙碌状态，[findMeetingTimes](../api/user_findmeetingtimes.md) 会查找另一空闲资源。如果设为 false，且指定的资源处于忙碌状态，**findMeetingTimes** 会返回用户缓存中排名最靠前的资源，而不会检查其是否空闲。默认值为 true。 |
+| resolveAvailability | Boolean | 如果设为 true，且指定的资源处于忙碌状态，[findMeetingTimes](../api/user-findmeetingtimes.md) 会查找另一空闲资源。如果设为 false，且指定的资源处于忙碌状态，**findMeetingTimes** 会返回用户缓存中排名最靠前的资源，而不会检查其是否空闲。默认值为 true。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

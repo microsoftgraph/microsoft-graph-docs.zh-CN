@@ -1,3 +1,13 @@
+---
+title: meetingTimeSuggestion 资源类型
+description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
+ms.openlocfilehash: 345d09015be5e489c88cb89fe6a4175ebbab2874
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011310"
+---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 
 会议时间建议包括会议时间、出席可能性、个人忙/闲状态和可用会议地点等信息。
@@ -26,13 +36,13 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |attendeeAvailability|[attendeeAvailability](attendeeavailability.md) 集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
 |confidence|Double|表示所有与会者的出席可能性的百分比值。|
 |locations|[location](location.md) 集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
 |meetingTimeSlot|[timeSlot](timeslot.md)|建议的会议时间段。|
-|organizerAvailability|字符串| 此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|organizerAvailability|freeBusyStatus| 此会议建议会议组织者的可用性。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
 |suggestionReason|String|会议时间建议的理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

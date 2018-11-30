@@ -1,17 +1,31 @@
+---
+title: directoryRole 资源类型
+description: 表示 Azure AD 目录角色。 Azure AD 目录角色也称为是*管理员角色*。 有关目录 （管理员） 角色的详细信息，请参阅 Azure AD 中分配管理员角色。 使用 Microsoft Graph 中，可以将用户分配到目录角色授予他们的目标角色的权限。 若要读取目录角色或更新其成员，它必须首先激活在租户中。 默认情况下已激活公司管理员的目录角色。 若要激活发送一个 POST 请求 id 为基于目录角色 directoryRoleTemplate 其他可用的目录角色。 继承自 directoryObject。
+ms.openlocfilehash: 7087befbf18a569defda697e1e2c9eb9d7d34bb9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010902"
+---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
-表示 Azure AD Directory 角色。Azure AD Directory 角色也称作*管理员角色*。有关这些目录（管理员）角色的详细信息，请参阅 [在 Azure AD 中分配管理员角色](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，仅激活公司管理员目录角色。要激活其他可用的目录角色，请发送具有此目录角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) ID 的 POST 请求。继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD 目录角色。 Azure AD 目录角色也称为是*管理员角色*。 有关目录 （管理员） 角色的详细信息，请参阅[Azure AD 中的分配管理员角色](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。 使用 Microsoft Graph 中，可以将用户分配到目录角色授予他们的目标角色的权限。 若要读取目录角色或更新其成员，它必须首先激活在租户中。 默认情况下已激活公司管理员的目录角色。 若要激活其他可用的目录角色将发送一个 POST 请求[directoryRoleTemplate](directoryroletemplate.md)目录角色所基于的 id。 继承自 [directoryObject](directoryobject.md)。
+该资源支持：
+
+- 通过提供 [delta](../api/directoryrole-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取 directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | 读取 directoryRol 对象的属性和关系。 |
-|[列出 directoryRoles](../api/directoryrole_list.md) | [directoryRole](directoryrole.md) 集合 | 列出租户中激活的目录角色。 |
-|[添加成员](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
-|[列出成员](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
-|[删除成员](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| 删除目录角色中的用户。|
-|[激活 directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | 激活目录角色。|
+|[获取 directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) | 读取 directoryRol 对象的属性和关系。 |
+|[列出 directoryRoles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) 集合 | 列出租户中激活的目录角色。 |
+|[添加成员](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
+|[列出成员](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
+|[删除成员](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| 删除目录角色中的用户。|
+|[激活 directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | 激活目录角色。|
+|[delta](../api/directoryrole-delta.md)|directoryRole 集合| 获得目录角色增量更改。 |
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 | 说明 |
@@ -24,14 +38,15 @@
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 Null。|
+|members|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +54,15 @@
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

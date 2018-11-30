@@ -1,3 +1,13 @@
+---
+title: provisionedPlan 资源类型
+description: 用户 实体和 组织 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
+ms.openlocfilehash: 7808e3a17e471123f702381fb52535e53682e276
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010255"
+---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
 
 [用户](user.md) 实体和 [组织](organization.md) 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
@@ -19,7 +29,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

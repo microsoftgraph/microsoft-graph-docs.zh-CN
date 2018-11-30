@@ -1,3 +1,13 @@
+---
+title: ChartGridlinesFormat 资源类型
+description: 封装图表网格线的格式属性。
+ms.openlocfilehash: 8286cd1a03188e9f6267b0e4731689c18b868083
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010625"
+---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat 资源类型
 
 封装图表网格线的格式属性。
@@ -10,9 +20,28 @@
 无
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|line|[ChartLineFormat](chartlineformat.md)|表示图表线条格式。只读。|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|表示图表线条格式。只读。|
+
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
+}-->
+
+```json
+{
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
