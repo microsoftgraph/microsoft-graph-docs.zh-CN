@@ -1,8 +1,22 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: 程序包
+ms.openlocfilehash: fe26cf0dc5de00673d5c3c2ae4a90ac80a62897f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27047812"
+---
 # <a name="package-resource-type"></a>包资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **包** 资源指示 DriveItem 是项的“包”或集合中的顶级项，应视为集合而不是单独的项。
 
-包的一个示例是 OneNote 笔记本。笔记本由表示笔记本内容的文件和文件夹组成，表示该笔记本的顶级项具有**包** facet，以向客户端指示这是应被特殊处理的数据集。
+包的一个示例是 OneNote 笔记本。 笔记本由表示笔记本内容的文件和文件夹组成，表示该笔记本的顶级项具有**包** facet，以向客户端指示这是应被特殊处理的数据集。
 
 具有**包** facet 的 DriveItems 不包括**文件夹**或**文件** facet，但在概念上与具有**文件夹** facet 的项类似。
 
@@ -11,7 +25,7 @@
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 

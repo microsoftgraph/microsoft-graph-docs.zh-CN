@@ -1,3 +1,13 @@
+---
+title: RangeFill 资源类型
+description: 表示 range 对象的背景。
+ms.openlocfilehash: 7a9919d5190c34937319de1c15f722453b7c79e0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008192"
+---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 
 表示 range 对象的背景。
@@ -7,16 +17,16 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |读取 rangeFill 对象的属性和关系。|
-|[更新](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |更新 RangeFill 对象 |
-|[清除](../api/rangefill_clear.md)|无|重置区域背景。|
+|[获取 RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |读取 rangeFill 对象的属性和关系。|
+|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |更新 RangeFill 对象 |
+|[Clear](../api/rangefill-clear.md)|无|重置区域背景。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -24,12 +34,11 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

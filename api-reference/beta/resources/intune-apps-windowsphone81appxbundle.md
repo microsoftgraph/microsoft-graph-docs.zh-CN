@@ -1,0 +1,148 @@
+---
+title: windowsPhone81AppXBundle 资源类型
+description: 包含属性和 Windows Phone 8.1 约绑定的业务线应用程序继承的属性。
+ms.openlocfilehash: 86ad09f295f03f0c573c9a803add41973da096c5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27047112"
+---
+# <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+包含属性和 Windows Phone 8.1 约绑定的业务线应用程序继承的属性。
+
+继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
+
+## <a name="methods"></a>方法
+|方法|返回类型|说明|
+|:---|:---|:---|
+|[列表 windowsPhone81AppXBundles](../api/intune-apps-windowsphone81appxbundle-list.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)集合|列出属性和[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)对象之间的关系。|
+|[获取 windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-get.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|读取属性和[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)对象的关系。|
+|[创建 windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-create.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|创建新的[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)对象。|
+|[删除 windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-delete.md)|无|删除[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)。|
+|[更新 windowsPhone81AppXBundle](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|更新[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)对象的属性。|
+
+## <a name="properties"></a>属性
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|详细信息 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`。|
+|identityName|String|标识名称。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityPublisherHash|String|标识发布者哈希。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|identityResourceIdentifier|String|标识资源标识符。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|字符串|电话产品标识符。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|字符串|继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)电话 Publisher id。|
+|identityVersion|String|标识版本。 继承自[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|appXPackageInformationList|[windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)集合|约程序包信息的列表。|
+
+## <a name="relationships"></a>Relationships
+|关系|类型|说明|
+|:---|:---|:---|
+|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|此应用的类别列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 集合|此移动应用的组分配的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|移动应用安装摘要。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|此移动应用程序的安装状态的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)集合|此移动应用程序的安装状态的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) 集合|此应用的内容版本列表。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsPhone81AppXBundle"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "publisher": "String",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "String",
+    "value": "binary"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "isFeatured": true,
+  "privacyInformationUrl": "String",
+  "informationUrl": "String",
+  "owner": "String",
+  "developer": "String",
+  "notes": "String",
+  "uploadState": 1024,
+  "publishingState": "String",
+  "committedContentVersion": "String",
+  "fileName": "String",
+  "size": 1024,
+  "applicableArchitectures": "String",
+  "identityName": "String",
+  "identityPublisherHash": "String",
+  "identityResourceIdentifier": "String",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+    "v8_0": true,
+    "v8_1": true,
+    "v10_0": true,
+    "v10_1607": true,
+    "v10_1703": true,
+    "v10_1709": true,
+    "v10_1803": true
+  },
+  "phoneProductIdentifier": "String",
+  "phonePublisherId": "String",
+  "identityVersion": "String",
+  "appXPackageInformationList": [
+    {
+      "@odata.type": "microsoft.graph.windowsPackageInformation",
+      "applicableArchitecture": "String",
+      "displayName": "String",
+      "identityName": "String",
+      "identityPublisher": "String",
+      "identityResourceIdentifier": "String",
+      "identityVersion": "String",
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+        "v8_0": true,
+        "v8_1": true,
+        "v10_0": true,
+        "v10_1607": true,
+        "v10_1703": true,
+        "v10_1709": true,
+        "v10_1803": true
+      }
+    }
+  ]
+}
+```
+
+
+
+
+

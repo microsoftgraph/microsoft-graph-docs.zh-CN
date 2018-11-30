@@ -1,15 +1,26 @@
+---
+title: provisionedPlan 资源类型
+description: 用户 实体和 组织 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
+ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27045058"
+---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 [用户](user.md) 实体和 [组织](organization.md) 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|例如，“Enabled”。|
 |provisioningStatus|String|例如，“Success”。|
 |service|String|服务名称；例如，“AccessControlS2S”|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

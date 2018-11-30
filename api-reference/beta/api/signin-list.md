@@ -1,0 +1,204 @@
+---
+title: 列表 signIns
+description: 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。  最新 signIns 是首先返回。
+ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043088"
+---
+# <a name="list-signins"></a>列表 signIns
+
+检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。  最新 signIns 是首先返回。
+
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | AuditLog.Read.All |
+|委派（个人 Microsoft 帐户） | 不支持   |
+|应用程序 | AuditLog.Read.All | 
+
+此外，应用程序必须采用到 Azure AD 中[正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+GET auditLogs/signIns
+```
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持以下 OData 查询参数，有助于自定义响应。 查看有关如何使用这些参数的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+
+|名称     |说明                            |示例|
+|:--------------------|----------------|------------------------------------------------------------------------|
+|[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|筛选结果（行）。 |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/signIns?$top=1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|检索下一步页的结果的结果集跨越多个页面。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>支持的 $filter 参数属性的列表
+|属性名称 |支持的运算符|
+|:----------------|:------|
+|id|eq|
+|userId|eq|
+|appId|eq|
+|createdDateTime| eq，le，ge|
+|userDisplayName| eq startswith|
+|userPrincipalName| eq startswith|
+|appDisplayName| eq startswith|
+|ipAddress| eq startswith|
+|城市 /| eq startswith|
+|位置/状态| eq startswith|
+|位置/countryOrRegion| eq startswith|
+|状态/错误代码|eq|
+|initiatedBy/用户/id|eq|
+|initiatedBy/用户/displayName| eq|
+|userprincipalname 属性 initiatedBy/用户| eq startswith|
+|clientAppUsed| eq|
+|conditionalAccessStatus | eq|
+|deviceDetail/浏览器| eq startswith|
+|deviceDetail/operatingSystem| eq startswith|
+|correlationId| eq|
+|riskDetail| eq|
+|riskLevelAggregated| eq|
+|riskLevelDuringSignIn| eq|
+|riskEventTypes| eq|
+|riskState| eq|
+|originalRequestId| eq|
+|tokenIssuerName| eq|
+|tokenIssuerType| eq|
+|resourceDisplayName| eq|
+|resourceId| eq|
+
+
+## <a name="response"></a>响应
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[登录](../resources/signin.md)对象的集合。
+## <a name="example"></a>示例
+##### <a name="request"></a>请求
+下面是一个请求示例。
+<!-- {
+  "blockType": "request",
+  "name": "get_signins"
+}-->
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 264
+```
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "value": [{
+        "id":"b01b1726-0147-425e-a7f7-21f252050400",
+        "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+        "userDisplayName":"Jon Doe",
+         "userPrincipalName":"admin@aad171.ccsctp.net",
+         "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+        "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+         "appDisplayName":"Azure Portal",
+         "ipAddress":"207.254.19.10",
+         "clientAppUsed":"Browser",
+        "mfaDetail":null,
+         "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+         "conditionalAccessStatus":"notApplied",
+        "originalRequestId":null,
+        "isInteractive":true,
+        "tokenIssuerName":null,
+        "tokenIssuerType":"AzureAD",
+        "processingTimeInMilliseconds":0,
+        "riskDetail":"none",
+        "riskLevelAggregated":"none",
+        "riskLevelDuringSignIn":"none",
+        "riskState":"none",
+        "riskEventTypes":[
+
+        ],
+        "resourceDisplayName":"windows azure service management api",
+        "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+        "authenticationMethodsUsed":[
+
+        ],
+        "status":{
+            "errorCode":50140,
+            "failureReason":"This error occurred due to 'Keep me signed in' interrupt when the user was signing-in.",
+            "additionalDetails":null
+        },
+        "deviceDetail":{
+            "deviceId":null,
+            "displayName":null,
+            "operatingSystem":"Windows 7",
+            "browser":"Chrome 63.0.3239",
+            "isCompliant":null,
+            "isManaged":null,
+            "trustType":null
+        },
+        "location":{
+            "city":"Lithia Springs",
+            "state":"Georgia",
+            "countryOrRegion":"US",
+            "geoCoordinates":{
+                "altitude":null,
+                "latitude":33.7930908203125,
+                "longitude":-84.445358276367188
+            }
+        },
+        "appliedConditionalAccessPolicies":[
+            {
+            "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+            "displayName":"New Name here4",
+            "enforcedGrantControls":[
+                "Mfa",
+                "RequireCompliantDevice"
+            ],
+            "enforcedSessionControls":[
+
+            ],
+            "result":"notApplied"
+            },
+            {
+            "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+            "displayName":"PipelineTest4",
+            "enforcedGrantControls":[
+
+            ],
+            "enforcedSessionControls":[
+
+            ],
+            "result":"notEnabled"
+            }
+        ],
+        "authenticationProcessingDetails":[
+
+        ],
+        "networkLocationDetails":[
+
+        ]
+        }
+    
+    ]
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List signIns",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

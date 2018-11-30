@@ -1,3 +1,13 @@
+---
+title: 收件人资源类型
+description: '表示事件、邮件或组帖子发送或接收端的用户的相关信息。 '
+ms.openlocfilehash: 7ae272d239f44c3d2f709a03438facb2f0247e49
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008195"
+---
 # <a name="recipient-resource-type"></a>收件人资源类型
 
 表示事件、邮件或组帖子发送或接收端的用户的相关信息。 

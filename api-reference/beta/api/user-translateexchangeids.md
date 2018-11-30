@@ -1,0 +1,116 @@
+---
+title: 用户： translateExchangeIds
+description: 翻译格式之间的 Outlook 相关的资源的标识符。
+ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27045916"
+---
+# <a name="user-translateexchangeids"></a>用户： translateExchangeIds
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+翻译格式之间的 Outlook 相关的资源的标识符。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型 | 权限（从最低特权到最高特权） |
+|:----------------|:--------------------------------------------|
+| 委派（工作或学校帐户） | User.ReadBasic、 User.Read、 User.ReadWrite、 User.ReadBasic.All、 User.Read.All、 User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadBasic，User.Read，User.ReadWrite |
+| 应用程序 | User.Read.All、User.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/translateExchangeIds
+POST /users/{id|userPrincipalName}/translateExchangeIds
+```
+
+## <a name="request-headers"></a>请求标头
+
+| 名称 | 值 |
+|:-----|:------|
+| Authorization | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+| 参数 | 类型 | 说明 |
+|:----------|:-----|:------------|
+| inputIds | Edm.String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中项目的。 此集合的最大大小是 1000年字符串。 |
+| sourceIdType | exchangeIdFormat | ID 类型的标识符的`InputIds`参数。 |
+| targetIdType | exchangeIdFormat | 要转换的请求的 ID 类型。 |
+
+### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
+
+| 值 | 说明 |
+|:-------|:------------|
+| entryId | MAPI 客户端使用二进制条目 ID 格式。 |
+| ewsId | 使用 Exchange Web 服务客户端 ID 格式。 |
+| immutableEntryId | MAPI 兼容变 ID 格式。 |
+| restId | 由 Microsoft Graph 中使用的默认 ID 格式。 |
+| restImmutableEntryId | 由 Microsoft Graph 变 ID 格式。 |
+
+## <a name="response"></a>响应
+
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[convertIdResult](../resources/meetingtimesuggestionsresult.md)集合。
+
+## <a name="example"></a>示例
+
+下面的示例演示如何将多个标识符转换从普通的 REST API 格式 (`restId`) 为 REST 变格式 (`restImmutableEntryId`)。
+
+##### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "user_translateexchangeids"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/translateExchangeIds
+Content-Type: application/json
+
+{
+  "inputIds" : [
+    "{rest-formatted-id-1}",
+    "{rest-formatted-id-2}"
+  ],
+  "sourceIdType": "restId",
+  "targetIdType": "restImmutableEntryId"
+}
+```
+
+##### <a name="response"></a>响应
+
+下面是示例响应
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.convertIdResult",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
+  "value": [
+    {
+      "sourceId": "{rest-formatted-id-1},
+      "targetId": "{rest-immutable-formatted-id-1}"
+    },
+    {
+      "sourceId": "{rest-formatted-id-2},
+      "targetId": "{rest-immutable-formatted-id-2}"
+    }
+  ]
+}
+```

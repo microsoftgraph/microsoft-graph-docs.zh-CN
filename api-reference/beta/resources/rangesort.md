@@ -1,4 +1,16 @@
+---
+title: RangeSort 资源类型
+description: 管理对 Range 对象的排序操作。
+ms.openlocfilehash: 33a8213a8d5ded067f3edf9e1caf7e0fc592b635
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27047210"
+---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 管理对 Range 对象的排序操作。
 
@@ -7,7 +19,7 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[应用](../api/rangesort_apply.md)|无|执行排序操作。|
+|[应用](../api/rangesort-apply.md)|无|执行排序操作。|
 
 ## <a name="properties"></a>属性
 无
