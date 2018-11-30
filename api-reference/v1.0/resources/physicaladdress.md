@@ -1,13 +1,23 @@
+---
+title: physicalAddress 资源类型
+description: 表示资源（例如联系人或事件）的街道地址。
+ms.openlocfilehash: eb2c1ea6a73d7f6eb5d3d43b877f50dc39a2b17e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009503"
+---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 
 表示资源（例如联系人或事件）的街道地址。
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |city|String|城市。|
-|countryOrRegion|String|国家或地区。它是任意格式的字符串值，例如“United States”。|
+|countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
 |postalCode|String|邮政编码。|
 |state|String|省/市/自治区。|
 |street|String|街道。|

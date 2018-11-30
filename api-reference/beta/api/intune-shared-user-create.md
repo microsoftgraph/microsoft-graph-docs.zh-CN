@@ -1,0 +1,100 @@
+---
+title: 创建用户
+description: 新建用户对象。
+ms.openlocfilehash: 827f8ea7fd9261dbf8dab87f6fc01c608bf900cb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27045730"
+---
+# <a name="create-user"></a>创建用户
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+创建新的 [user](../resources/intune-shared-user.md) 对象。
+
+## <a name="prerequisites"></a>先决条件
+
+以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于的上下文。
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）||
+| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /users
+```
+
+## <a name="request-headers"></a>请求标头
+
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供 user 对象的 JSON 表示形式。
+
+下表显示创建 user 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|用户的唯一标识符。|
+|**在白板**||
+|deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
+
+请求正文属性支持根据上下文而有所不同。
+
+## <a name="response"></a>响应
+
+如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [user](../resources/intune-shared-user.md) 对象。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+
+下面是一个请求示例。
+
+``` http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+Content-length: 46
+
+{
+  "@odata.type": "#microsoft.graph.user"
+}
+```
+
+### <a name="response"></a>响应
+
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 从实际的调用返回的属性有所不同根据上下文。
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "@odata.type": "#microsoft.graph.user",
+  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+}
+```
+
+
+

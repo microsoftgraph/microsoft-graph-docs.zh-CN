@@ -1,0 +1,103 @@
+---
+title: 更新 deviceConfigurationDeviceOverview
+description: 更新 deviceConfigurationDeviceOverview 对象的属性。
+ms.openlocfilehash: 7eecc3e7871ae1ec8891c5f3f8c7dfde9d517c00
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009693"
+---
+# <a name="update-deviceconfigurationdeviceoverview"></a>更新 deviceConfigurationDeviceOverview
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+更新 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的属性。
+## <a name="prerequisites"></a>先决条件
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的 JSON 表示形式。
+
+下表显示创建 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。|
+|pendingCount|Int32|挂起设备的数量|
+|notApplicableCount|Int32|不适用设备的数量|
+|successCount|Int32|成功设备的数量|
+|errorCount|Int32|错误设备的数量|
+|failedCount|Int32|失败设备的数量|
+|lastUpdateDateTime|DateTimeOffset|上次更新时间|
+|configurationVersion|Int32|用于此概述的策略版本|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象。
+
+## <a name="example"></a>示例
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
+Content-type: application/json
+Content-length: 284
+
+{
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
+  "pendingCount": 12,
+  "notApplicableCount": 2,
+  "successCount": 12,
+  "errorCount": 10,
+  "failedCount": 11,
+  "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+  "configurationVersion": 4
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 333
+
+{
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
+  "id": "62d48e3a-8e3a-62d4-3a8e-d4623a8ed462",
+  "pendingCount": 12,
+  "notApplicableCount": 2,
+  "successCount": 12,
+  "errorCount": 10,
+  "failedCount": 11,
+  "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+  "configurationVersion": 4
+}
+```
+
+
+

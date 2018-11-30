@@ -1,4 +1,16 @@
+---
+title: onenoteOperation 资源类型
+description: 某些长时间运行的 OneNote 操作的状态。
+ms.openlocfilehash: af7da970a148d4b70385487503e3abf6431c430a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042557"
+---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 某些长时间运行的 OneNote 操作的状态。
 
@@ -28,7 +40,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作的开始时间。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作返回的错误。|
@@ -47,8 +59,7 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |获取操作状态。 |
-
+|[Get operation](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |获取操作状态。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

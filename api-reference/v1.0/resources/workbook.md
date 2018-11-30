@@ -1,16 +1,54 @@
+---
+title: 工作簿资源类型
+description: 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
+ms.openlocfilehash: 6575cc2d49e4b30e78e07989f38600ae64d5c5a5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009660"
+---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
 
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
+
 ## <a name="properties"></a>属性
 无
 
-## <a name="relationships"></a>Relationships
-| 关系 | 类型    |说明|
+## <a name="methods"></a>方法
+
+| 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
-|表格|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
-|Worksheets|[Worksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
+|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
+|[Close Session](../api/workbook-closesession.md) | 无 |关闭现有会话。|
+|[Refresh Session](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
+
+
+## <a name="relationships"></a>关系
+| 关系 | 类型   |说明|
+|:---------------|:--------|:----------|
+|names|[WorkbookNamedItem](nameditem.md)集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[WorkbookTable](table.md)集合|表示与工作簿关联的表的集合。只读。|
+|Worksheets|[WorkbookWorksheet](worksheet.md)集合|表示与工作簿关联的工作表的集合。只读。|
 
 ## <a name="functions"></a>函数
 
@@ -20,16 +58,30 @@
 
 _重要说明_： 
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  
-* 与大部分 API 中使用的从 0 开始的索引不同，索引参数从 1 开始索引。 
+* 与大部分 API 中使用的从 0 开始编制的索引不同，索引参数是从 1 开始编制索引。 
 
-示例： 
+示例：**vlookup**
 
-在下面的示例中，通过传递查阅值、输入范围和要返回的值调用 `vlookup` 函数。 
+在 Excel 电子表格中，`vlookup` 函数需要使用以下参数：
+
+1. 要查找的值（亦称为“查阅值”）。
+2. 查阅值所在的区域。 请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。 例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。
+3. 包含返回值的区域的列号。 例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。
+4. （可选）如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。
+ 如果未指定，默认值始终为 TRUE 或近似匹配。
+
+在单元格中，`vlookup` 函数如下所示： 
+
+=VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)
+
+（请参阅 [VLOOKUP Excel 函数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）
+
+下面的示例展示了如何使用 Excel REST API 调用 `vlookup`  函数，以及一个或多个输入区域。
 
 请求： 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -45,11 +97,11 @@ workbook-session-id: {session-id}
 响应：
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
     "@odata.type": "#microsoft.graph.workbookFunctionResult",
     "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/vlookup()",
     "error": null,
@@ -57,14 +109,22 @@ content-type: application/json;odata.metadata
 }
 ```
 
-示例： 
+示例：`median`
 
-在下面的示例中，通过传递数组中输入范围调用 `median` 函数。 
+在 Excel 电子表格中，`median` 函数需要使用一个或多个输入区域。
+
+在单元格中，`median` 函数如以下示例所示：
+
+=MEDIAN(A2:A6)
+
+（请参阅 [MEDIAN Excel 函数](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）
+
+下面的示例展示了如何调用 `median` 函数，以及如何使用 Excel REST API 传递一个或多个输入区域。 
 
 请求： 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/median
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -80,11 +140,11 @@ workbook-session-id: {session-id}
 响应：
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
   "@odata.type": "#microsoft.graph.workbookFunctionResult",
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,

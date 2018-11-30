@@ -1,3 +1,13 @@
+---
+title: groupSettingTemplate 资源类型
+description: 组设置模板表示租户可用的系统定义设置。组设置可根据可用的 **groupSettingTemplates** 和从其预设默认值更改的值进行创建。无法创建、更新或删除组设置模板。这些设置可以表示租户范围设置，也可以表示特定组设置。目前，唯一可用的模板可应用于 Office 365 组，并且包括诸如用户是否可以创建组或邀请来自组织外的来宾成为组成员的设置。
+ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011186"
+---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
 组设置模板表示租户可用的系统定义设置。[组设置](groupsetting.md)可根据可用的 **groupSettingTemplates** 和从其预设默认值更改的值进行创建。无法创建、更新或删除组设置模板。这些设置可以表示租户范围设置，也可以表示特定组设置。目前，唯一可用的模板可应用于 Office 365 组，并且包括诸如用户是否可以创建组或邀请来自组织外的来宾成为组成员的设置。
@@ -6,8 +16,8 @@
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | 读取其中一个系统定义的 groupSettingTemplate 对象的特定属性。 |
-|[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [groupSettingTemplate 集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
+|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | 读取其中一个系统定义的 groupSettingTemplate 对象的特定属性。 |
+|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [groupSettingTemplate 集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
 
 ## <a name="properties"></a>属性
 
@@ -27,11 +37,12 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

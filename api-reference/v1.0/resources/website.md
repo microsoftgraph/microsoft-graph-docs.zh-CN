@@ -1,3 +1,13 @@
+---
+title: website 资源类型
+description: 表示一个网站。
+ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008162"
+---
 # <a name="website-resource-type"></a>website 资源类型
 
 表示一个网站。
@@ -6,7 +16,7 @@
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|String| 可能的值是：`other`、`home`、`work`、`blog`、`profile`。|
+|type|websiteType| 可能的值为： `other`， `home`， `work`， `blog`， `profile`。|
 |address|string|网站的 URL。|
 |displayName|string|网站的显示名称。|
 
