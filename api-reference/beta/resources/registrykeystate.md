@@ -1,0 +1,66 @@
+---
+title: registryKeyState 资源类型
+description: 包含有关注册表的关键更改与通知，并更改的注册表项的过程信息。
+ms.openlocfilehash: 37654aab2bf8f0afae0f7ec6ed544aed8634dacc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042142"
+---
+# <a name="registrykeystate-resource-type"></a><span data-ttu-id="6dc2e-103">registryKeyState 资源类型</span><span class="sxs-lookup"><span data-stu-id="6dc2e-103">registryKeyState resource type</span></span>
+
+<span data-ttu-id="6dc2e-104">包含有关注册表的关键更改与通知，并更改的注册表项的过程信息。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-104">Contains information about registry key changes related to the alert, and the process that changed the registry keys.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="6dc2e-105">属性</span><span class="sxs-lookup"><span data-stu-id="6dc2e-105">Properties</span></span>
+
+| <span data-ttu-id="6dc2e-106">属性</span><span class="sxs-lookup"><span data-stu-id="6dc2e-106">Property</span></span>     | <span data-ttu-id="6dc2e-107">类型</span><span class="sxs-lookup"><span data-stu-id="6dc2e-107">Type</span></span>        | <span data-ttu-id="6dc2e-108">说明</span><span class="sxs-lookup"><span data-stu-id="6dc2e-108">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="6dc2e-109">配置单元</span><span class="sxs-lookup"><span data-stu-id="6dc2e-109">hive</span></span>|<span data-ttu-id="6dc2e-110">registryHive</span><span class="sxs-lookup"><span data-stu-id="6dc2e-110">registryHive</span></span>|<span data-ttu-id="6dc2e-111">[Windows 注册表配置单元](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)中：</span><span class="sxs-lookup"><span data-stu-id="6dc2e-111">A [Windows registry hive](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) :</span></span> <ul><li><span data-ttu-id="6dc2e-112">HKEY_CURRENT_CONFIG</span><span class="sxs-lookup"><span data-stu-id="6dc2e-112">HKEY_CURRENT_CONFIG</span></span></li> <li><span data-ttu-id="6dc2e-113">HKEY_CURRENT_USER</span><span class="sxs-lookup"><span data-stu-id="6dc2e-113">HKEY_CURRENT_USER</span></span></li> <li><span data-ttu-id="6dc2e-114">HKEY_LOCAL_MACHINE\SAM</span><span class="sxs-lookup"><span data-stu-id="6dc2e-114">HKEY_LOCAL_MACHINE\SAM</span></span></li> <li><span data-ttu-id="6dc2e-115">HKEY_LOCAL_MACHINE\Security</span><span class="sxs-lookup"><span data-stu-id="6dc2e-115">HKEY_LOCAL_MACHINE\Security</span></span></li> <li><span data-ttu-id="6dc2e-116">读</span><span class="sxs-lookup"><span data-stu-id="6dc2e-116">HKEY_LOCAL_MACHINE\Software</span></span></li> <li><span data-ttu-id="6dc2e-117">HKEY_LOCAL_MACHINE\System</span><span class="sxs-lookup"><span data-stu-id="6dc2e-117">HKEY_LOCAL_MACHINE\System</span></span></li> <li><span data-ttu-id="6dc2e-118">HKEY_USERS\\。默认值。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-118">HKEY_USERS\\.Default.</span></span></li></ul> <span data-ttu-id="6dc2e-119">可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSamSoftware`、`localMachineSystem`、`usersDefault`。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-119">Possible values are: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem`, `usersDefault`.</span></span>|
+|<span data-ttu-id="6dc2e-120">Key</span><span class="sxs-lookup"><span data-stu-id="6dc2e-120">key</span></span>|<span data-ttu-id="6dc2e-121">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-121">String</span></span>|<span data-ttu-id="6dc2e-122">当前的 （即更改） 的注册表项 （排除配置单元）。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-122">Current (i.e. changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="6dc2e-123">oldKey</span><span class="sxs-lookup"><span data-stu-id="6dc2e-123">oldKey</span></span>|<span data-ttu-id="6dc2e-124">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-124">String</span></span>|<span data-ttu-id="6dc2e-125">（即更改之前） 以前注册表项 （排除配置单元）。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-125">Previous (i.e. before changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="6dc2e-126">oldValueData</span><span class="sxs-lookup"><span data-stu-id="6dc2e-126">oldValueData</span></span>|<span data-ttu-id="6dc2e-127">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-127">String</span></span>|<span data-ttu-id="6dc2e-128">（即更改之前） 以前注册表项的值数据 （内容）。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-128">Previous (i.e. before changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="6dc2e-129">oldValueName</span><span class="sxs-lookup"><span data-stu-id="6dc2e-129">oldValueName</span></span>|<span data-ttu-id="6dc2e-130">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-130">String</span></span>|<span data-ttu-id="6dc2e-131">（即更改之前） 以前注册表项的值名称。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-131">Previous (i.e. before changed) registry key value name.</span></span>|
+|<span data-ttu-id="6dc2e-132">操作</span><span class="sxs-lookup"><span data-stu-id="6dc2e-132">operation</span></span>|<span data-ttu-id="6dc2e-133">registryOperation</span><span class="sxs-lookup"><span data-stu-id="6dc2e-133">registryOperation</span></span>|<span data-ttu-id="6dc2e-134">更改的注册表项名称和/或值的操作。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-134">Operation that changed the registry key name and/or value.</span></span> <span data-ttu-id="6dc2e-135">可取值为：`unknown`、`create`、`modify`、`delete`。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-135">Possible values are: `unknown`, `create`, `modify`, `delete`.</span></span>|
+|<span data-ttu-id="6dc2e-136">processId</span><span class="sxs-lookup"><span data-stu-id="6dc2e-136">processId</span></span>|<span data-ttu-id="6dc2e-137">Int32</span><span class="sxs-lookup"><span data-stu-id="6dc2e-137">Int32</span></span>|<span data-ttu-id="6dc2e-138">处理 ID (PID) 的过程的修改注册表项 （详细信息将显示通知进程集合中的过程）。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-138">Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).</span></span>|
+|<span data-ttu-id="6dc2e-139">valueData</span><span class="sxs-lookup"><span data-stu-id="6dc2e-139">valueData</span></span>|<span data-ttu-id="6dc2e-140">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-140">String</span></span>|<span data-ttu-id="6dc2e-141">当前 （即更改） 的注册表项的值数据 （内容）。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-141">Current (i.e. changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="6dc2e-142">数值名称</span><span class="sxs-lookup"><span data-stu-id="6dc2e-142">valueName</span></span>|<span data-ttu-id="6dc2e-143">字符串</span><span class="sxs-lookup"><span data-stu-id="6dc2e-143">String</span></span>|<span data-ttu-id="6dc2e-144">当前 （即更改） 的注册表项的值名称</span><span class="sxs-lookup"><span data-stu-id="6dc2e-144">Current (i.e. changed) registry key value name</span></span>|
+|<span data-ttu-id="6dc2e-145">valueType</span><span class="sxs-lookup"><span data-stu-id="6dc2e-145">valueType</span></span>|<span data-ttu-id="6dc2e-146">registryValueType</span><span class="sxs-lookup"><span data-stu-id="6dc2e-146">registryValueType</span></span>|[<span data-ttu-id="6dc2e-147">注册表项的值类型</span><span class="sxs-lookup"><span data-stu-id="6dc2e-147">Registry key value type</span></span>](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li><span data-ttu-id="6dc2e-148">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="6dc2e-148">REG_BINARY</span></span></li> <li><span data-ttu-id="6dc2e-149">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="6dc2e-149">REG_DWORD</span></span></li> <li><span data-ttu-id="6dc2e-150">REG_DWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="6dc2e-150">REG_DWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="6dc2e-151">REG_DWORD_BIG_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="6dc2e-151">REG_DWORD_BIG_ENDIAN</span></span></li><li><span data-ttu-id="6dc2e-152">REG_EXPAND_SZ</span><span class="sxs-lookup"><span data-stu-id="6dc2e-152">REG_EXPAND_SZ</span></span></li> <li><span data-ttu-id="6dc2e-153">REG_LINK</span><span class="sxs-lookup"><span data-stu-id="6dc2e-153">REG_LINK</span></span></li> <li><span data-ttu-id="6dc2e-154">REG_MULTI_SZ</span><span class="sxs-lookup"><span data-stu-id="6dc2e-154">REG_MULTI_SZ</span></span></li> <li><span data-ttu-id="6dc2e-155">REG_NONE</span><span class="sxs-lookup"><span data-stu-id="6dc2e-155">REG_NONE</span></span></li> <li><span data-ttu-id="6dc2e-156">REG_QWORD</span><span class="sxs-lookup"><span data-stu-id="6dc2e-156">REG_QWORD</span></span></li> <li><span data-ttu-id="6dc2e-157">REG_QWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="6dc2e-157">REG_QWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="6dc2e-158">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="6dc2e-158">REG_SZ</span></span></li></ul> <span data-ttu-id="6dc2e-159">可取值为：`unknown`、`binary`、`dword`、`dwordLittleEndian`、`dwordBigEndian`、`expandSz`、`link`、`multiSz`、`none`、`qword`、`qwordlittleEndian`、`sz`。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-159">Possible values are: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="6dc2e-160">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6dc2e-160">JSON representation</span></span>
+
+<span data-ttu-id="6dc2e-161">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6dc2e-161">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.registryKeyState"
+}-->
+
+```json
+{
+  "hive": "@odata.type: microsoft.graph.registryHive",
+  "key": "String",
+  "oldKey": "String",
+  "oldValueData": "String",
+  "oldValueName": "String",
+  "operation": "@odata.type: microsoft.graph.registryOperation",
+  "processId": 1024,
+  "valueData": "String",
+  "valueName": "String",
+  "valueType": "@odata.type: microsoft.graph.registryValueType"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "registryKeyState resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

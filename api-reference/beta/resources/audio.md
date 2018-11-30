@@ -1,72 +1,78 @@
-# <a name="audio-resource-type"></a>音频资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Audio
+ms.openlocfilehash: 1472bffec12ed5626a65ea71b971dc5bc2b77aa9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043409"
+---
+# <a name="audio-facet"></a><span data-ttu-id="e0247-102">Audio Facet</span><span class="sxs-lookup"><span data-stu-id="e0247-102">Audio facet</span></span>
 
-**音频**资源将与音频相关的属性分组到一个单一结构。
+> <span data-ttu-id="e0247-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e0247-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e0247-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e0247-104">Use of these APIs in production applications is not supported.</span></span>
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。 
+<span data-ttu-id="e0247-105">**Audio** 资源将与音频相关的属性分组到一个单一结构。</span><span class="sxs-lookup"><span data-stu-id="e0247-105">The **Audio** resource groups audio-related properties on an item into a single structure.</span></span>
 
-## <a name="json-representation"></a>JSON 表示形式
+<span data-ttu-id="e0247-p102">如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。</span><span class="sxs-lookup"><span data-stu-id="e0247-p102">If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file. The properties of the **Audio** resource are populated by extracting metadata from the file.</span></span> 
 
-下面是资源的 JSON 表示形式。
+## <a name="json-representation"></a><span data-ttu-id="e0247-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e0247-108">JSON representation</span></span>
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.audio"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
 ```json
 {
   "album": "string",
   "albumArtist": "string",
   "artist": "string",
-  "bitrate": 1024,
+  "bitrate": 128,
   "composers": "string",
   "copyright": "string",
-  "disc": 1024,
-  "discCount": 1024,
-  "duration": 1024,
+  "disc": 0,
+  "discCount": 0,
+  "duration": 567,
   "genre": "string",
-  "hasDrm": true,
-  "isVariableBitrate": true,
+  "hasDrm": false,
+  "isVariableBitrate": false,
   "title": "string",
-  "track": 1024,
-  "trackCount": 1024,
-  "year": 1024
+  "track": 1,
+  "trackCount": 16,
+  "year": 2014
 }
 ```
 
-## <a name="properties"></a>属性
+## <a name="properties"></a><span data-ttu-id="e0247-109">属性</span><span class="sxs-lookup"><span data-stu-id="e0247-109">Properties</span></span>
 
-| 属性          | 类型    | 说明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| album             | string  | 此音频文件的专辑标题。                          |
-| albumArtist       | string  | 此音频文件的专辑上指定的艺术家。                    |
-| artist            | string  | 音频文件的表演艺术家。                            |
-| bitrate           | string  | 以 kbps 表示的比特率。                                           |
-| composers         | string  | 音频文件的作曲者姓名。                          |
-| copyright         | string  | 音频文件的版权信息。                            |
-| disc              | 数字  | 此音频文件源自的光盘编号。                    |
-| discCount         | 数字  | 此专辑中的光盘总数。                             |
-| duration          | 数字  | 音频文件的持续时间，以毫秒表示                |
-| genre             | string  | 此音频文件的流派。                                        |
-| hasDrm            | boolean | 指示文件是否受数字版权管理的保护。   |
-| isVariableBitrate | boolean | 指示文件是否已通过可变比特率编码。            |
-| title             | string  | 音频文件的标题。                                         |
-| track             | 数字  | 此音频文件的原始光盘上的曲目数。    |
-| trackCount        | 数字  | 此音频文件的原始光盘上的曲目总数。 |
-| year              | 数字  | 录制音频文件的年份。                                |
+| <span data-ttu-id="e0247-110">属性名称</span><span class="sxs-lookup"><span data-stu-id="e0247-110">Property name</span></span>         | <span data-ttu-id="e0247-111">类型</span><span class="sxs-lookup"><span data-stu-id="e0247-111">Type</span></span>    | <span data-ttu-id="e0247-112">说明</span><span class="sxs-lookup"><span data-stu-id="e0247-112">Description</span></span>                                                          |
+|:----------------------|:--------|:---------------------------------------------------------------------|
+| <span data-ttu-id="e0247-113">**album**</span><span class="sxs-lookup"><span data-stu-id="e0247-113">**album**</span></span>             | <span data-ttu-id="e0247-114">string</span><span class="sxs-lookup"><span data-stu-id="e0247-114">string</span></span>  | <span data-ttu-id="e0247-115">此音频文件的专辑标题。</span><span class="sxs-lookup"><span data-stu-id="e0247-115">The title of the album for this audio file.</span></span>                          |
+| <span data-ttu-id="e0247-116">**albumArtist**</span><span class="sxs-lookup"><span data-stu-id="e0247-116">**albumArtist**</span></span>       | <span data-ttu-id="e0247-117">string</span><span class="sxs-lookup"><span data-stu-id="e0247-117">string</span></span>  | <span data-ttu-id="e0247-118">此音频文件的专辑上的艺术家。</span><span class="sxs-lookup"><span data-stu-id="e0247-118">The artist named on the album for the audio file.</span></span>                    |
+| <span data-ttu-id="e0247-119">**artist**</span><span class="sxs-lookup"><span data-stu-id="e0247-119">**artist**</span></span>            | <span data-ttu-id="e0247-120">string</span><span class="sxs-lookup"><span data-stu-id="e0247-120">string</span></span>  | <span data-ttu-id="e0247-121">此音频文件的表演艺术家。</span><span class="sxs-lookup"><span data-stu-id="e0247-121">The performing artist for the audio file.</span></span>                            |
+| <span data-ttu-id="e0247-122">**bitrate**</span><span class="sxs-lookup"><span data-stu-id="e0247-122">**bitrate**</span></span>           | <span data-ttu-id="e0247-123">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-123">Int32</span></span>   | <span data-ttu-id="e0247-124">比特率（以 kbps 为单位）。</span><span class="sxs-lookup"><span data-stu-id="e0247-124">Bitrate expressed in kbps.</span></span>                                           |
+| <span data-ttu-id="e0247-125">**composers**</span><span class="sxs-lookup"><span data-stu-id="e0247-125">**composers**</span></span>         | <span data-ttu-id="e0247-126">string</span><span class="sxs-lookup"><span data-stu-id="e0247-126">string</span></span>  | <span data-ttu-id="e0247-127">此音频文件的作曲者姓名。</span><span class="sxs-lookup"><span data-stu-id="e0247-127">The name of the composer of the audio file.</span></span>                          |
+| <span data-ttu-id="e0247-128">**copyright**</span><span class="sxs-lookup"><span data-stu-id="e0247-128">**copyright**</span></span>         | <span data-ttu-id="e0247-129">string</span><span class="sxs-lookup"><span data-stu-id="e0247-129">string</span></span>  | <span data-ttu-id="e0247-130">此音频文件的版权信息。</span><span class="sxs-lookup"><span data-stu-id="e0247-130">Copyright information for the audio file.</span></span>                            |
+| <span data-ttu-id="e0247-131">**disc**</span><span class="sxs-lookup"><span data-stu-id="e0247-131">**disc**</span></span>              | <span data-ttu-id="e0247-132">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-132">Int32</span></span>   | <span data-ttu-id="e0247-133">此音频文件源自的光盘编号。</span><span class="sxs-lookup"><span data-stu-id="e0247-133">The number of the disc this audio file came from.</span></span>                    |
+| <span data-ttu-id="e0247-134">**discCount**</span><span class="sxs-lookup"><span data-stu-id="e0247-134">**discCount**</span></span>         | <span data-ttu-id="e0247-135">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-135">Int32</span></span>   | <span data-ttu-id="e0247-136">此专辑中的光盘总数。</span><span class="sxs-lookup"><span data-stu-id="e0247-136">The total number of discs in this album.</span></span>                             |
+| <span data-ttu-id="e0247-137">**duration**</span><span class="sxs-lookup"><span data-stu-id="e0247-137">**duration**</span></span>          | <span data-ttu-id="e0247-138">Int64</span><span class="sxs-lookup"><span data-stu-id="e0247-138">Int64</span></span>   | <span data-ttu-id="e0247-139">此音频文件的持续时间（以毫秒为单位）</span><span class="sxs-lookup"><span data-stu-id="e0247-139">Duration of the audio file, expressed in milliseconds</span></span>                |
+| <span data-ttu-id="e0247-140">**genre**</span><span class="sxs-lookup"><span data-stu-id="e0247-140">**genre**</span></span>             | <span data-ttu-id="e0247-141">string</span><span class="sxs-lookup"><span data-stu-id="e0247-141">string</span></span>  | <span data-ttu-id="e0247-142">此音频文件的流派。</span><span class="sxs-lookup"><span data-stu-id="e0247-142">The genre of this audio file.</span></span>                                        |
+| <span data-ttu-id="e0247-143">**hasDrm**</span><span class="sxs-lookup"><span data-stu-id="e0247-143">**hasDrm**</span></span>            | <span data-ttu-id="e0247-144">boolean</span><span class="sxs-lookup"><span data-stu-id="e0247-144">boolean</span></span> | <span data-ttu-id="e0247-145">指明此文件是否受数字版权管理的保护。</span><span class="sxs-lookup"><span data-stu-id="e0247-145">Indicates if the file is protected with digital rights management.</span></span>   |
+| <span data-ttu-id="e0247-146">**isVariableBitrate**</span><span class="sxs-lookup"><span data-stu-id="e0247-146">**isVariableBitrate**</span></span> | <span data-ttu-id="e0247-147">boolean</span><span class="sxs-lookup"><span data-stu-id="e0247-147">boolean</span></span> | <span data-ttu-id="e0247-148">指明此文件是否已经过可变比特率编码。</span><span class="sxs-lookup"><span data-stu-id="e0247-148">Indicates if the file is encoded with a variable bitrate.</span></span>            |
+| <span data-ttu-id="e0247-149">**title**</span><span class="sxs-lookup"><span data-stu-id="e0247-149">**title**</span></span>             | <span data-ttu-id="e0247-150">string</span><span class="sxs-lookup"><span data-stu-id="e0247-150">string</span></span>  | <span data-ttu-id="e0247-151">此音频文件的标题。</span><span class="sxs-lookup"><span data-stu-id="e0247-151">The title of the audio file.</span></span>                                         |
+| <span data-ttu-id="e0247-152">**track**</span><span class="sxs-lookup"><span data-stu-id="e0247-152">**track**</span></span>             | <span data-ttu-id="e0247-153">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-153">Int32</span></span>   | <span data-ttu-id="e0247-154">此音频文件在原始光盘上的曲目编号。</span><span class="sxs-lookup"><span data-stu-id="e0247-154">The number of the track on the original disc for this audio file.</span></span>    |
+| <span data-ttu-id="e0247-155">**trackCount**</span><span class="sxs-lookup"><span data-stu-id="e0247-155">**trackCount**</span></span>        | <span data-ttu-id="e0247-156">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-156">Int32</span></span>   | <span data-ttu-id="e0247-157">此音频文件的原始光盘上的曲目总数。</span><span class="sxs-lookup"><span data-stu-id="e0247-157">The total number of tracks on the original disc for this audio file.</span></span> |
+| <span data-ttu-id="e0247-158">**year**</span><span class="sxs-lookup"><span data-stu-id="e0247-158">**year**</span></span>              | <span data-ttu-id="e0247-159">Int32</span><span class="sxs-lookup"><span data-stu-id="e0247-159">Int32</span></span>   | <span data-ttu-id="e0247-160">此音频文件的录制年份。</span><span class="sxs-lookup"><span data-stu-id="e0247-160">The year the audio file was recorded.</span></span>                                |
 
-## <a name="remarks"></a>注解 
+[item-resource]: ../resources/driveitem.md
 
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
+## <a name="remarks"></a><span data-ttu-id="e0247-161">注解</span><span class="sxs-lookup"><span data-stu-id="e0247-161">Remarks</span></span>
 
+<span data-ttu-id="e0247-162">有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="e0247-162">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "audio resource",
-  "keywords": "",
+  "description": "The audio facet provides information about music or audio metadata.",
+  "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Audio"
+} -->
