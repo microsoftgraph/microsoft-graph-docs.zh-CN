@@ -1,0 +1,32 @@
+---
+title: dayOfWeek 枚举类型
+description: 工作日的可能值
+ms.openlocfilehash: ba36f3140bec5931b858bb996ce0b4cf7886e45c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27044520"
+---
+# <a name="dayofweek-enum-type"></a><span data-ttu-id="6a0bf-103">dayOfWeek 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6a0bf-103">dayOfWeek enum type</span></span>
+
+> <span data-ttu-id="6a0bf-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6a0bf-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="6a0bf-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="6a0bf-107">工作日的可能值</span><span class="sxs-lookup"><span data-stu-id="6a0bf-107">Possible values for a weekday</span></span>
+## <a name="members"></a><span data-ttu-id="6a0bf-108">成员</span><span class="sxs-lookup"><span data-stu-id="6a0bf-108">Members</span></span>
+|<span data-ttu-id="6a0bf-109">成员</span><span class="sxs-lookup"><span data-stu-id="6a0bf-109">Member</span></span>|<span data-ttu-id="6a0bf-110">值</span><span class="sxs-lookup"><span data-stu-id="6a0bf-110">Value</span></span>|<span data-ttu-id="6a0bf-111">说明</span><span class="sxs-lookup"><span data-stu-id="6a0bf-111">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="6a0bf-112">星期日</span><span class="sxs-lookup"><span data-stu-id="6a0bf-112">sunday</span></span>|<span data-ttu-id="6a0bf-113">0</span><span class="sxs-lookup"><span data-stu-id="6a0bf-113">0</span></span>|<span data-ttu-id="6a0bf-114">星期日。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-114">Sunday.</span></span>|
+|<span data-ttu-id="6a0bf-115">星期一</span><span class="sxs-lookup"><span data-stu-id="6a0bf-115">monday</span></span>|<span data-ttu-id="6a0bf-116">1</span><span class="sxs-lookup"><span data-stu-id="6a0bf-116">1</span></span>|<span data-ttu-id="6a0bf-117">星期一。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-117">Monday.</span></span>|
+|<span data-ttu-id="6a0bf-118">星期二</span><span class="sxs-lookup"><span data-stu-id="6a0bf-118">tuesday</span></span>|<span data-ttu-id="6a0bf-119">2</span><span class="sxs-lookup"><span data-stu-id="6a0bf-119">2</span></span>|<span data-ttu-id="6a0bf-120">星期二。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-120">Tuesday.</span></span>|
+|<span data-ttu-id="6a0bf-121">星期三</span><span class="sxs-lookup"><span data-stu-id="6a0bf-121">wednesday</span></span>|<span data-ttu-id="6a0bf-122">3</span><span class="sxs-lookup"><span data-stu-id="6a0bf-122">3</span></span>|<span data-ttu-id="6a0bf-123">星期三。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-123">Wednesday.</span></span>|
+|<span data-ttu-id="6a0bf-124">星期四</span><span class="sxs-lookup"><span data-stu-id="6a0bf-124">thursday</span></span>|<span data-ttu-id="6a0bf-125">4</span><span class="sxs-lookup"><span data-stu-id="6a0bf-125">4</span></span>|<span data-ttu-id="6a0bf-126">星期四。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-126">Thursday.</span></span>|
+|<span data-ttu-id="6a0bf-127">星期五</span><span class="sxs-lookup"><span data-stu-id="6a0bf-127">friday</span></span>|<span data-ttu-id="6a0bf-128">5</span><span class="sxs-lookup"><span data-stu-id="6a0bf-128">5</span></span>|<span data-ttu-id="6a0bf-129">星期五。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-129">Friday.</span></span>|
+|<span data-ttu-id="6a0bf-130">星期六</span><span class="sxs-lookup"><span data-stu-id="6a0bf-130">saturday</span></span>|<span data-ttu-id="6a0bf-131">6</span><span class="sxs-lookup"><span data-stu-id="6a0bf-131">6</span></span>|<span data-ttu-id="6a0bf-132">星期六。</span><span class="sxs-lookup"><span data-stu-id="6a0bf-132">Saturday.</span></span>|
+
+
+
+
+
