@@ -1,3 +1,13 @@
+---
+title: TableRow 资源类型
+description: 表示表中的行。
+ms.openlocfilehash: e96367137fb6b2fe70e15aa932a104c2042651c0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007723"
+---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
 表示表中的行。
@@ -7,21 +17,21 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
-|[更新](../api/tablerow_update.md) | [TableRow](tablerow.md)    |更新 TableRow 对象。 |
-|[区域](../api/tablerow_range.md)|[区域](range.md)|返回与整个行相关的 range 对象。|
-|[删除](../api/tablerow_delete.md)|无|从表中删除行。|
-|[列出](../api/tablerow_list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|根据其在集合中的位置获取行。|
-|[添加](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|向表中添加新行。|
+|[获取 TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
+|[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |更新 TableRow 对象。 |
+|[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关联的范围对象。|
+|[删除](../api/tablerow-delete.md)|无|从表中删除行。|
+|[List](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md)集合 |获取 tableRow 对象的集合。 |
+|[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|根据其在集合中的位置获取行。|
+|[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|向表中添加新行。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|int|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
-|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|index|整数|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
+|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -29,12 +39,11 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json
