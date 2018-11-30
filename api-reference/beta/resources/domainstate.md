@@ -1,20 +1,29 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# domainState 资源类型
+---
+title: domainState 资源类型
+description: 表示域上经过计划的异步操作的状态。
+ms.openlocfilehash: 84c2e418a14de8aa05abfac7a2f04d6637d410b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042189"
+---
+# <a name="domainstate-resource-type"></a><span data-ttu-id="34a16-103">domainState 资源类型</span><span class="sxs-lookup"><span data-stu-id="34a16-103">domainState resource type</span></span>
 
-表示域上经过计划的异步操作的状态。
+> <span data-ttu-id="34a16-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="34a16-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="34a16-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="34a16-105">Use of these APIs in production applications is not supported.</span></span>
 
-<a id="properties" class="xliff"></a>
-## 属性
+<span data-ttu-id="34a16-106">表示域上经过计划的异步操作的状态。</span><span class="sxs-lookup"><span data-stu-id="34a16-106">Represents the status of asynchronous operations scheduled on a domain.</span></span>
 
-| 属性   | 类型 | 说明 |
+## <a name="properties"></a><span data-ttu-id="34a16-107">属性</span><span class="sxs-lookup"><span data-stu-id="34a16-107">Properties</span></span>
+
+| <span data-ttu-id="34a16-108">属性</span><span class="sxs-lookup"><span data-stu-id="34a16-108">Property</span></span>   | <span data-ttu-id="34a16-109">类型</span><span class="sxs-lookup"><span data-stu-id="34a16-109">Type</span></span> | <span data-ttu-id="34a16-110">说明</span><span class="sxs-lookup"><span data-stu-id="34a16-110">Description</span></span> |
 |:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | 上个活动发生时的时间戳。计划操作、异步任务启动及操作完成后将更新此值。 |
-| 操作 | String | 异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。 |
-| status | String | 操作的当前状态。 <br> *Scheduled* - 已计划操作但尚未启动。 <br> *InProgress* - 任务已启动并且正在进行中。 <br> *Failed* - 操作已失败。 |
+| <span data-ttu-id="34a16-111">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="34a16-111">lastActionDateTime</span></span> | <span data-ttu-id="34a16-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34a16-112">DateTimeOffset</span></span> | <span data-ttu-id="34a16-p102">上个活动发生时的时间戳。计划操作、异步任务启动及操作完成后将更新此值。</span><span class="sxs-lookup"><span data-stu-id="34a16-p102">Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.</span></span> |
+| <span data-ttu-id="34a16-115">操作</span><span class="sxs-lookup"><span data-stu-id="34a16-115">operation</span></span> | <span data-ttu-id="34a16-116">String</span><span class="sxs-lookup"><span data-stu-id="34a16-116">String</span></span> | <span data-ttu-id="34a16-p103">异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。</span><span class="sxs-lookup"><span data-stu-id="34a16-p103">Type of asynchronous operation. The values can be *ForceDelete* or *Verification*</span></span> |
+| <span data-ttu-id="34a16-119">status</span><span class="sxs-lookup"><span data-stu-id="34a16-119">status</span></span> | <span data-ttu-id="34a16-120">String</span><span class="sxs-lookup"><span data-stu-id="34a16-120">String</span></span> | <span data-ttu-id="34a16-121">操作的当前状态。</span><span class="sxs-lookup"><span data-stu-id="34a16-121">Current status of the operation.</span></span> <br> <span data-ttu-id="34a16-122">*Scheduled* - 已计划操作但尚未启动。</span><span class="sxs-lookup"><span data-stu-id="34a16-122">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="34a16-123">*InProgress* - 任务已启动并且正在进行中。</span><span class="sxs-lookup"><span data-stu-id="34a16-123">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="34a16-124">*Failed* - 操作已失败。</span><span class="sxs-lookup"><span data-stu-id="34a16-124">*Failed* - Operation has failed.</span></span> |
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
-下面是资源的 JSON 表示形式。
+## <a name="json-representation"></a><span data-ttu-id="34a16-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="34a16-125">JSON representation</span></span>
+<span data-ttu-id="34a16-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="34a16-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
