@@ -1,13 +1,24 @@
+---
+title: dateTimeTimeZone 资源类型
+description: 介绍某个时间点的日期、时间和时区。
+ms.openlocfilehash: a95ebf35d6a47b8b39c34cab8d6d35b92eaae2c3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27044000"
+---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 介绍某个时间点的日期、时间和时区。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |DateTime|String|日期和时间组合表示形式的单个时间点 (`<date>T<time>`)。|
 |TimeZone|String|以下时区名称之一。|
-
 
 _TimeZone_ 属性可以设置为 Windows 支持的任意时区，以及以下时区名称。
 
@@ -147,7 +158,7 @@ Etc/GMT
 
 亚洲/加德满都
 
-亚洲/阿拉木图
+亚洲/阿斯塔纳（阿拉木图）
 
 亚洲/达卡
 
