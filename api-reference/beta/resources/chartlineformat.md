@@ -1,4 +1,16 @@
+---
+title: ChartLineFormat 资源类型
+description: 封装线条元素的格式选项。
+ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27045481"
+---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 封装线条元素的格式选项。
 
@@ -7,16 +19,16 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
-|[更新](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |更新 ChartLineFormat 对象。 |
-|[清除](../api/chartlineformat_clear.md)|无|清除图表元素的线条格式。|
+|[获取 ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
+|[Clear](../api/chartlineformat-clear.md)|无|清除图表元素的线条格式。|
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示图表中的线条颜色的 HTML 颜色代码。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
