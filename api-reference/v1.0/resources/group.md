@@ -1,11 +1,22 @@
+---
+title: 组资源类型
+description: 代表 Azure Active Directory (Azure AD) 组中，可以是 Office 365 组、 动态组或安全组。
+ms.openlocfilehash: e9e6d652bba485a28a36a5efa8d670d9f4a6053f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009246"
+---
 # <a name="group-resource-type"></a>组资源类型
 
 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、动态组或安全组。继承自 [directoryObject](directoryobject.md)。
 
 该资源支持：
 
-- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
-- 通过提供 [delta](../api/user_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 订阅[更改通知](/graph/webhooks)。
+- 通过提供 [delta](../api/user-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 
 ## <a name="methods"></a>方法
@@ -13,80 +24,109 @@
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |**组管理**| | |
-|[Create group](../api/group_post_groups.md) | [组](group.md) |创建新组。它可以是 Office 365 组、动态组或安全组。|
-|[获取组](../api/group_get.md) | [组](group.md) |读取 group 对象的属性。|
-|[列出组](../api/group_list.md) |[组](group.md) 集合 |列出 group 对象及其属性。|
-|[更新组](../api/group_update.md) | [组](group.md) |更新 group 对象的属性。 |
-|[删除组](../api/group_delete.md) | 无 |删除组对象。 |
-|[Add owner](../api/group_post_owners.md) |无| 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。|
-|[列出所有者](../api/group_list_owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
-|[删除所有者](../api/group_delete_owners.md) | 无 |通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。|
-|[Add member](../api/group_post_members.md) |无| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。|
-|[列出成员](../api/group_list_members.md) |[directoryObject](directoryobject.md) 集合| 从 **members** 导航属性中获取属于此组的直接成员的用户和组。|
-|[删除成员](../api/group_delete_members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
-|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|在一列组中检查此组的成员身份。此函数是可传递的。|
-|[getMemberGroups](../api/group_getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。 |
-|[delta](../api/group_delta.md)|组集合| 获取组的增量更改。 |
+|[Create group](../api/group-post-groups.md) | [组](group.md) |新建组。 它可以是 Office 365 组、动态组或安全组。|
+|[获取组](../api/group-get.md) | [组](group.md) |读取 group 对象的属性。|
+|[列出组](../api/group-list.md) |[组](group.md) 集合 |列出 group 对象及其属性。|
+|[更新组](../api/group-update.md) | 无 |更新 group 对象的属性。 |
+|[删除组](../api/group-delete.md) | 无 |删除组对象。 |
+|[增量](../api/group-delta.md)|组集合| 获取组的增量更改。 |
+|[列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合| 列出组生命周期策略。 |
+|[续订](../api/group-renew.md)|Boolean|续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。|
+|[添加所有者](../api/group-post-owners.md) |无| 通过发布到 **owners** 导航属性，添加此组的新所有者（仅支持为安全组和启用邮件的安全组添加）。|
+|[列出所有者](../api/group-list-owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
+|[删除所有者](../api/group-delete-owners.md) | 无 |通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。|
+|[Add member](../api/group-post-members.md) |无| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。|
+|[列出成员](../api/group-list-members.md) |[directoryObject](directoryobject.md) 集合| 从 **members** 导航属性中获取属于此组的直接成员的用户和组。|
+|[删除成员](../api/group-delete-members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
+|[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|在一列组中检查此组的成员身份。此函数是可传递的。|
+|[getMemberGroups](../api/group-getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
+|[getMemberObjects](../api/group-getmemberobjects.md)|String collection|返回此组所属的全部组。此函数可传递。 |
+|[创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
+|[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+|[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+|[更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
+|[删除设置](../api/groupsetting-delete.md) | 无 | 删除设置对象。 |
 |**日历**| | |
-|[Create event](../api/group_post_events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
-|[列出事件](../api/group_list_events.md) |[事件](event.md) 集合| 获取 Event 对象集合。|
-|[列出 calendarView](../api/group_list_calendarview.md) |[事件](event.md) 集合| 获取指定时间范围内的事件集合。|
+|[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
+|[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|
+|[列出事件](../api/group-list-events.md) |[event](event.md) 集合| 获取 event 对象集合。|
+|[更新事件](../api/group-update-event.md) |无|更新 event 对象的属性。|
+|[删除事件](../api/group-delete-event.md) |无|删除 event 对象。|
+|[列出 calendarView](../api/group-list-calendarview.md) |[event](event.md) 集合| 获取指定时间范围内的事件集合。|
 |**对话**| | |
-|[Create conversation](../api/group_post_conversations.md) |[对话](conversation.md)| 通过发布到对话集合创建新对话。|
-|[列出对话](../api/group_list_conversations.md) |[对话](conversation.md) 集合| 获取 Conversation 对象集合。|
-|[列出线程](../api/group_list_threads.md) |[ConversationThread](conversationthread.md) 集合| 获取某个组的所有线程。|
-|[列出 acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组 acceptedSenders 列表中的用户或组列表。|
-|[添加 acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
-|[删除 acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
-|[List rejectedSenders](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的 rejectedSenders 列表中的用户或组列表。|
-|[Add rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
-|[Remove rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
-|[创建设置](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
-|[获取设置](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-|[列出设置](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
-|[更新设置](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
-|[删除设置](../api/groupsetting_delete.md) | 无 | 删除设置对象。 |
+|[创建对话](../api/group-post-conversations.md) |[conversation](conversation.md)| 通过发布到对话集合新建对话。|
+|[获取对话](../api/group-get-conversation.md) |[conversation](conversation.md)| 读取 conversation 对象的属性。|
+|[列出对话](../api/group-list-conversations.md) |[conversation](conversation.md) 集合| 获取 conversation 对象集合。|
+|[删除对话](../api/group-delete-conversation.md) |无|删除 conversation 对象。|
+|[获取线程](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| 读取 thread 对象的属性。|
+|[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
+|[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
+|[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象。|
+|[列出 acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组 acceptedSenders 列表中的用户或组列表。|
+|[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
+|[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
+|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的 rejectedSenders 列表中的用户或组列表。|
+|[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
+|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
+|[创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
+|[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+|[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+|[更新设置](../api/groupsetting-update.md) | 无 | 更新 setting 对象。 |
+|[删除设置](../api/groupsetting-delete.md) | 无 | 删除设置对象。 |
 |**开放扩展**| | |
-|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
-|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
+|[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
+|[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
 |**架构扩展**| | |
-|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
+|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**其他组资源**| | |
-|[List photos](../api/group_list_photos.md) |[profilePhoto](photo.md) 集合| 获取组的个人资料照片集合。|
-|[List plannerPlans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) 集合| 获取组拥有的 Planner 计划。|
+|[List photos](../api/group-list-photos.md) |[profilePhoto](photo.md) 集合| 获取组的个人资料照片集合。|
+|[List plannerPlans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取组拥有的 Planner 计划。|
 |**用户设置**| | |
-|[addFavorite](../api/group_addfavorite.md)|无|将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。|
-|[removeFavorite](../api/group_removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。|
-|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 **memberOf** 导航属性，获取此用户是其直接成员的组和管理单元。|
-|[subscribeByMail](../api/group_subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。使当前用户可以接收电子邮件对话。仅支持 Office 365 组。|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。禁止当前用户接收电子邮件对话。仅支持 Office 365 组。|
-|[resetUnseenCount](../api/group_resetunseencount.md)|无|将当前用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。仅支持 Office 365 组。|
+|[addFavorite](../api/group-addfavorite.md)|无|将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。|
+|[removeFavorite](../api/group-removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 **memberOf** 导航属性，获取此用户是其直接成员的组和管理单元。|
+|[subscribeByMail](../api/group-subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。使当前用户可以接收电子邮件对话。仅支持 Office 365 组。|
+|[unsubscribeByMail](../api/group-unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。禁止当前用户接收电子邮件对话。仅支持 Office 365 组。|
+|[resetUnseenCount](../api/group-resetunseencount.md)|无|将当前用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。仅支持 Office 365 组。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
 |Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。|
-|createdDateTime|DateTimeOffset| 创建组的日期和时间。 |
-|description|String|可选的组说明。 |
-|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|groupTypes|String collection| 指定要创建的组类型。可能的值是 **Unified**（创建 Office 365 组）或 **DynamicMembership**（创建动态组）。对于所有其他类型的组（例如启用安全机制的组和启用电子邮件的安全组）则不设置此属性。支持 $filter。|
+|createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|说明|String|可选的组说明。 |
+|displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
+|groupTypes|String collection| 指定要创建组的类型。 可能的值为`Unified`创建 Office 365 组，或`DynamicMembership`动态组。  所有其他组类型，如启用安全的组和已启用电子邮件的安全组，未设置此属性。 支持 $filter。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
-|邮件|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|isSubscribedByMail|布尔|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
+|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
-|mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。创建组时必须指定此属性。支持 $filter。|
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。支持 $filter。|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合| 设置过程中使用 Microsoft 同步产品时错误。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读。支持 $filter。|
-|proxyAddresses|String collection| 需要多值属性筛选器表达式的 **any** 运算符。只读。不可为 null。支持 $filter。 |
+|preferredDataLocation|字符串|首选的数据组的位置。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|proxyAddresses|String collection| 对于多值属性筛选表达式，必须使用 **any** 运算符。只读。不可为 null。支持 $filter。 |
+|renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则该组是已启用邮件的安全组；否则为安全组。对于 Office 365 组，必须为 **false**。支持 $filter。|
-|unseenCount|Int32|当前用户自上次访问后未查看的帖子计数。|
-|visibility|String| 指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
+|unseenCount|Int32|向组的登录用户上次访问后已送达一个或多个新文章的对话数。|
+|visibility|String| 指定 Office 365 组可见的性。 可能的值为： `private`， `public`，或`hiddenmembership`;空值被视为为公共。  请参阅[组可见性选项](#group-visibility-options)了解详细信息。<br>仅当创建一组; 时，可以设置可见性不可编辑。<br>仅支持统一组; 可见性不支持安全组。|
 
-## <a name="relationships"></a>关系
+### <a name="group-visibility-options"></a>组可见性选项
+
+下面是每个**可见性**属性值的含义：
+ 
+|值|说明|
+|:----|-----------|
+| `public` | 任何人都可以加入的组，而无需所有者权限。<br>任何人都可以查看组的内容。|
+| `private` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。|
+| `hiddenmembership` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。<br>非成员看不到组的成员。<br>（全局、 公司、 用户和帮助台） 的管理员可以查看组成员资格。<br>组显示在全局通讯簿 (GAL)。|
+
+
+## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
@@ -94,27 +134,31 @@
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
-|驱动器|[驱动器](drive.md)|组的驱动器。只读。|
+|驱动器|[驱动器](drive.md)|组的默认驱动器。 只读。|
+|驱动器|[驱动器](drive.md) 集合|组的驱动器。 只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|对此组的生命周期策略的集合。 只读。 可为 Null。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
-|onenote|[OneNote](onenote.md)| 只读。|
+|onenote|[Onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
-|照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
+|photo|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
-|planner|[Planner](planner.md)| 统一组可能存在的 Planner 资源入口点。|
+|planner|[plannerGroup](plannergroup.md)| 统一组可能存在的 Planner 资源入口点。|
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
-|设置|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
-|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。
+|settings|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
+|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
 |threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true,
   "optionalProperties": [
     "acceptedSenders",
     "appRoleAssignments",
@@ -134,13 +178,107 @@
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "changeTracking": true
+      }
+    },
+    {
+      "property": "acceptedSenders",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "conversations",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photos",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "rejectedSenders",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
@@ -151,9 +289,12 @@
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
+  "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenCount": 1024,
   "visibility": "string",
@@ -177,9 +318,9 @@
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
-- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+- [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
+- [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

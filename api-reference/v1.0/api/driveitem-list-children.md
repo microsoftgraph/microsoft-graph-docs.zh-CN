@@ -1,0 +1,125 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: 列出文件夹的内容
+ms.openlocfilehash: 6e328446c626c3c96d00b67eef4423288a58b1cc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008846"
+---
+# <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
+
+在 DriveItem 的 **children** 关系中返回 [DriveItems](../resources/driveitem.md) 集合。
+
+具有非 null **folder** 或 **package** facet 的 DriveItem 可以拥有一个或多个子 DriveItem。
+
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
+|应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /drives/{drive-id}/items/{item-id}/children
+GET /groups/{group-id}/drive/items/{item-id}/children
+GET /me/drive/items/{item-id}/children
+GET /sites/{site-id}/drive/items/{item-id}/children
+GET /users/{user-id}/drive/items/{item-id}/children
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持使用 `$expand`、`$select`、`$skipToken`、`$top` 和 `$orderby` [OData 查询参数](/graph/query-parameters)自定义响应。
+
+### <a name="optional-request-headers"></a>可选的请求标头
+
+| 名称     | 值 | 说明                                                                                                                                              |
+|:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
+
+## <a name="examples"></a>示例
+
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>在当前用户驱动器的根目录中列出子项
+
+若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
+
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
+
+```http
+GET /me/drive/root/children
+```
+
+
+### <a name="list-children-of-a-driveitem-with-a-known-id"></a>列出带已知 ID 的 DriveItem 子项
+
+若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
+
+<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+
+```http
+GET /drives/{drive-id}/items/{item-id}/children
+```
+
+### <a name="list-children-of-a-driveitem-with-a-known-path"></a>列出带已知路径的 DriveItem 子项
+
+<!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
+
+```http
+GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
+```
+
+## <a name="response"></a>响应
+
+如果成功，此方法将返回目标项的子项集合列表。
+子项集合由 [driveItem][item-resource] 资源组成。
+
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.driveItem)", 
+       "truncated": true,
+       "name": [ "list-children-root", "list-children", "list-children-from-path" ] } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {"name": "myfile.jpg", "size": 2048, "file": {} },
+    {"name": "Documents", "folder": { "childCount": 4} },
+    {"name": "Photos", "folder": { "childCount": 203} },
+    {"name": "my sheet(1).xlsx", "size": 197 }
+  ],
+  "@odata.nextLink": "https://..."
+}
+```
+
+**注意：** 如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
+
+可以通过[可选的查询字符串参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)控制页面大小
+
+### <a name="error-responses"></a>错误响应
+
+请参阅[错误响应][error-response]，详细了解错误返回方式。
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List the children of an item.",
+  "keywords": "list,children,collection",
+  "section": "documentation",
+  "tocPath": "Items/List children"
+} -->

@@ -1,6 +1,18 @@
-# <a name="driverecipient-resource-type"></a>DriveRecipient 资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: DriveRecipient
+ms.openlocfilehash: 24d06c43af0d8c319ca88062c1d564648176cd30
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008949"
+---
+# <a name="driverecipient-resource"></a>DriveRecipient 资源
 
-**DriveRecipient** 资源表示用户、组或其他收件人使用 [邀请](../api/item_invite.md) 操作进行共享。
+**DriveRecipient** 资源表示用户、组或其他收件人使用 [invite](../api/driveitem-invite.md) 操作进行共享。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -27,11 +39,12 @@
 
 ## <a name="remarks"></a>注解
 
-当使用 [邀请](../api/item_invite.md) 添加权限时，DriveRecipient 可以指定**电子邮件**、**别名**或**对象 ID**。这些值中只有一个是必需的。
+当使用 [邀请](../api/driveitem-invite.md) 添加权限时，DriveRecipient 可以指定**电子邮件**、**别名**或**对象 ID**。这些值中只有一个是必需的。
 
 <!-- {
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Resources/Recipients"
 } -->

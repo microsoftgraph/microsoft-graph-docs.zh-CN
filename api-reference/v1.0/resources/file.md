@@ -1,4 +1,16 @@
-# <a name="file-resource-type"></a>文件资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009432"
+---
+# <a name="file-resource-type"></a>File 资源类型
 
 **文件**资源将与文件相关的数据项分组到一个单一结构。
 
@@ -25,21 +37,17 @@
 
 | 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 哈希   | [HashesType](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
+| 哈希   | [哈希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
 
 ## <a name="remarks"></a>注解 
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

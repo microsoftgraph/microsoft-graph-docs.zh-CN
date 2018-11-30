@@ -1,22 +1,26 @@
-<a id="plannerassignment-resource-type" class="xliff"></a>
-
-# plannerAssignment 资源类型
+---
+title: plannerAssignment 资源类型
+description: '**PlannerAssignment**资源代表分配给用户的任务。 开放类型 plannerAssignments 中使用此类型。'
+ms.openlocfilehash: 4fe44f39428fc8940514e68443fef072bd6d0d55
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008976"
+---
+# <a name="plannerassignment-resource-type"></a>plannerAssignment 资源类型
 
 **plannerAssignment** 资源表示针对用户的任务分配。该类型用于开放类型 [plannerAssignments](plannerassignments.md)。
 
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignedBy|[identitySet](identityset.md)|执行任务分配的用户身份，即委派者。|
 |assignedDateTime|DateTimeOffset|分配任务的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|orderHint|String|用于对任务中的代理人进行排序的提示。[此处](planner_order_hint_format.md)概述了此格式。|
+|orderHint|String|用于对任务中的代理人进行排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {

@@ -1,0 +1,106 @@
+---
+title: 创建 mobileThreatDefenseConnector
+description: 创建新的 mobileThreatDefenseConnector 对象。
+ms.openlocfilehash: f7ed9c8175eec263b8b9b08d541cfedc7edd7d59
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008242"
+---
+# <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+创建新的 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象。
+## <a name="prerequisites"></a>先决条件
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/mobileThreatDefenseConnectors
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 mobileThreatDefenseConnector 对象的 JSON 表示形式。
+
+下表显示创建 mobileThreatDefenseConnector 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|字符串|尚未记录|
+|lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|数据同步合作伙伴为此帐户的的状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
+|androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
+|partnerUnsupportedOsVersionBlocked|Boolean|获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备|
+|partnerUnresponsivenessThresholdInDays|Int32|获取或设置每个租户允许此合作伙伴集成不响应的天数|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象。
+
+## <a name="example"></a>示例
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+POST https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors
+Content-type: application/json
+Content-length: 414
+
+{
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "available",
+  "androidEnabled": true,
+  "iosEnabled": true,
+  "androidDeviceBlockedOnMissingPartnerData": true,
+  "iosDeviceBlockedOnMissingPartnerData": true,
+  "partnerUnsupportedOsVersionBlocked": true,
+  "partnerUnresponsivenessThresholdInDays": 6
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 463
+
+{
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+  "id": "e4bede14-de14-e4be-14de-bee414debee4",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "available",
+  "androidEnabled": true,
+  "iosEnabled": true,
+  "androidDeviceBlockedOnMissingPartnerData": true,
+  "iosDeviceBlockedOnMissingPartnerData": true,
+  "partnerUnsupportedOsVersionBlocked": true,
+  "partnerUnresponsivenessThresholdInDays": 6
+}
+```
+
+
+

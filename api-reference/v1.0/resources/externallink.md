@@ -1,3 +1,13 @@
+---
+title: externalLink 资源类型
+description: 打开 OneNote 页面或笔记本的 URL。
+ms.openlocfilehash: ae25c6220545ff55259a18b6180225cc602e129b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008482"
+---
 # <a name="externallink-resource-type"></a>externalLink 资源类型
 
 打开 OneNote 页面或笔记本的 URL。
@@ -21,7 +31,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |href|String|链接的 URL。|
 

@@ -1,72 +1,76 @@
-# <a name="audio-resource-type"></a>音频资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Audio
+ms.openlocfilehash: e68b70565f0eccd7847fba2b8085661071a75ae7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008772"
+---
+# <a name="audio-facet"></a>Audio Facet
 
-**音频**资源将与音频相关的属性分组到一个单一结构。
+**Audio** 资源将与音频相关的属性分组到一个单一结构。
 
 如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.audio"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
 ```json
 {
   "album": "string",
   "albumArtist": "string",
   "artist": "string",
-  "bitrate": 1024,
+  "bitrate": 128,
   "composers": "string",
   "copyright": "string",
-  "disc": 1024,
-  "discCount": 1024,
-  "duration": 1024,
+  "disc": 0,
+  "discCount": 0,
+  "duration": 567,
   "genre": "string",
-  "hasDrm": true,
-  "isVariableBitrate": true,
+  "hasDrm": false,
+  "isVariableBitrate": false,
   "title": "string",
-  "track": 1024,
-  "trackCount": 1024,
-  "year": 1024
+  "track": 1,
+  "trackCount": 16,
+  "year": 2014
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型    | 说明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| album             | string  | 此音频文件的专辑标题。                          |
-| albumArtist       | string  | 此音频文件的专辑上指定的艺术家。                    |
-| artist            | string  | 音频文件的表演艺术家。                            |
-| bitrate           | string  | 以 kbps 表示的比特率。                                           |
-| composers         | string  | 音频文件的作曲者姓名。                          |
-| copyright         | string  | 音频文件的版权信息。                            |
-| disc              | 数字  | 此音频文件源自的光盘编号。                    |
-| discCount         | 数字  | 此专辑中的光盘总数。                             |
-| duration          | 数字  | 音频文件的持续时间，以毫秒表示                |
-| genre             | string  | 此音频文件的流派。                                        |
-| hasDrm            | boolean | 指示文件是否受数字版权管理的保护。   |
-| isVariableBitrate | boolean | 指示文件是否已通过可变比特率编码。            |
-| title             | string  | 音频文件的标题。                                         |
-| track             | 数字  | 此音频文件的原始光盘上的曲目数。    |
-| trackCount        | 数字  | 此音频文件的原始光盘上的曲目总数。 |
-| year              | 数字  | 录制音频文件的年份。                                |
+| 属性名称         | 类型    | 说明                                                          |
+|:----------------------|:--------|:---------------------------------------------------------------------|
+| **album**             | string  | 此音频文件的专辑标题。                          |
+| **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
+| **artist**            | string  | 此音频文件的表演艺术家。                            |
+| **bitrate**           | Int64   | 比特率（以 kbps 为单位）。                                           |
+| **composers**         | string  | 此音频文件的作曲者姓名。                          |
+| **copyright**         | string  | 此音频文件的版权信息。                            |
+| **disc**              | Int16   | 此音频文件源自的光盘编号。                    |
+| **discCount**         | Int16   | 此专辑中的光盘总数。                             |
+| **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
+| **genre**             | string  | 此音频文件的流派。                                        |
+| **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
+| **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
+| **title**             | string  | 此音频文件的标题。                                         |
+| **track**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |
+| **trackCount**        | Int32   | 此音频文件的原始光盘上的曲目总数。 |
+| **year**              | Int32   | 此音频文件的录制年份。                                |
 
-## <a name="remarks"></a>注解 
+[item-resource]: ../resources/driveitem.md
+
+## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "audio resource",
-  "keywords": "",
+  "description": "The audio facet provides information about music or audio metadata.",
+  "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Audio"
+} -->

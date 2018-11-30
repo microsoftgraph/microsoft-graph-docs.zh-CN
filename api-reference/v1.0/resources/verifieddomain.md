@@ -1,3 +1,13 @@
+---
+title: verifiedDomain 资源类型
+description: 指定租户的域。组织 实体的 **verifiedDomains** 属性是一个 **VerifiedDomain** 集合。
+ms.openlocfilehash: 21b6dd89dcc8b990046952d9ae7abcfe8ce02bca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008981"
+---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
 指定租户的域。[组织](organization.md) 实体的 **verifiedDomains** 属性是一个 **VerifiedDomain** 集合。
@@ -21,7 +31,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

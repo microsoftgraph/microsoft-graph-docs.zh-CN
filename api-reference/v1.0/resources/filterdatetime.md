@@ -1,14 +1,24 @@
+---
+title: FilterDatetime 资源类型
+description: 表示在筛选值时如何筛选日期。
+ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007767"
+---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
 
 表示在筛选值时如何筛选日期。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |date|string|用于筛选数据的采用 ISO8601 格式的日期。|
-|specificity|string|用于保留数据的日期的具体程度。例如，如果日期是 2005-04-02 并将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。可能的值是：`Year`、`Monday`、`Day`、`Hour`、`Minute`、`Second`。|
+|specificity|string|如何特定日期应该用于保留数据。 例如，如果日期是 2005年-04-02 并且 specifity 设置为"月"，则筛选器操作将在举行的 2009 年 4 月保留具有日期的所有行。 可能的值为： `Year`， `Monday`， `Day`， `Hour`， `Minute`， `Second`。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -21,7 +31,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

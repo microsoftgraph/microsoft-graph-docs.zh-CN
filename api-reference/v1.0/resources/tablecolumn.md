@@ -1,3 +1,13 @@
+---
+title: TableColumn 资源类型
+description: 代表表中的一列。
+ms.openlocfilehash: 3db97f1d80a0c36278cb27b806ab2a82be6c8b01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009516"
+---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
 代表表中的一列。
@@ -7,40 +17,40 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 TableColumn](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
-|[更新](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |更新 TableColumn 对象 |
-|[Databodyrange](../api/tablecolumn_databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
-|[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
-|[区域](../api/tablecolumn_range.md)|[区域](range.md)|获取与整个列相关的 range 对象。|
-|[Totalrowrange](../api/tablecolumn_totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
-|[删除](../api/tablecolumn_delete.md)|无|从表中删除列。|
-|[列出](../api/tablecolumn_list.md) | [TableColumn](tablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
-|[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|根据其在集合中的位置获取列。|
-|[添加](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|向表中添加新列。|
+|[获取 TableColumn](../api/tablecolumn-get.md) | [WorkbookTableColumn](tablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
+|[更新](../api/tablecolumn-update.md) | [WorkbookTableColumn](tablecolumn.md) |更新 TableColumn 对象 |
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
+|[区域](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
+|[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
+|[列出](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md)集合 |获取 tableColumn 对象的集合。 |
+|[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|根据其在集合中的位置获取列。|
+|[添加](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|向表中添加新列。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|int|返回标识表内的列的唯一键。只读。|
-|Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
-|名称|string|返回表格列的名称。只读。|
-|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|ID|string|返回用于标识表中列的唯一键。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
+|Index|整数|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
+|name|string|返回表格列的名称。只读。|
+|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|筛选器|[Filter](filter.md)|检索应用于列的筛选器。只读。|
+|筛选器|[WorkbookFilter](filter.md)|检索应用于列的筛选器。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableColumn"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 }-->
 
 ```json

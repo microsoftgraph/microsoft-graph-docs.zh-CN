@@ -1,3 +1,13 @@
+---
+title: servicePlanInfo 资源类型
+description: 包含与订阅的 SKU 相关的服务计划有关的信息。subscribedSku 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。
+ms.openlocfilehash: 70d49eb22542e9bc22ee28df5bc77b3bf6146b6d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009508"
+---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
 包含与订阅的 SKU 相关的服务计划有关的信息。[subscribedSku](subscribedsku.md) 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。

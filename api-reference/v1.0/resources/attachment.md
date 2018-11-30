@@ -1,3 +1,13 @@
+---
+title: attachment 资源类型
+description: 您可以将相关的内容添加到事件，
+ms.openlocfilehash: 418d8d4e60d12fed5a54f994e14e996c65731926
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009621"
+---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
 可以附件形式向[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
@@ -6,7 +16,7 @@
 
 * 文件（[fileAttachment](../resources/fileattachment.md) 资源）
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
-* 文件链接（[referenceAttachment](../resources/referenceAttachment.md) 资源）
+* 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
 
 ## <a name="methods"></a>方法
@@ -15,18 +25,18 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment_get.md) | [attachment](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
-|[Add attachment to an event](../api/event_post_attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
-|[将附件添加到邮件中](../api/message_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
-|[将附件添加到帖子中](../api/post_post_attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event_list_attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
-|[列出邮件的附件](../api/message_list_attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出帖子的附件](../api/post_list_attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
-|[删除](../api/attachment_delete.md) | 无 |删除事件、邮件或帖子的附件。 |
+|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
+|[Add attachment to an event](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
+|[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
+|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
+|[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
+|[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
+|[删除](../api/attachment-delete.md) | 无 |删除事件、邮件或帖子的附件。 |
 
 ## <a name="properties"></a>属性
 
-下面介绍了任意 attachment 资源的基础属性。有关其他属性，请参阅具体附件类型（[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceAttachment.md)）。
+下面介绍了任意 attachment 资源的基础属性。有关其他属性，请参阅具体附件类型（[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceattachment.md)）。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -37,7 +47,7 @@
 |名称|String|附件的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -46,6 +56,8 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

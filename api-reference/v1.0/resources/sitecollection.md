@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SiteCollection
+ms.openlocfilehash: 98f7b9d930ccf7f1f0e1a6a0e1ad0353d49cf2bf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009835"
+---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 
 **siteCollection** 资源提供有关网站集的详细信息。
@@ -17,16 +29,19 @@
 
 ```json
 {
-  "hostname": "contoso.sharepoint.com"
+  "hostname": "contoso.sharepoint.com",
+  "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型    | 说明                                                                                                                  |
-|:--------------|:--------|:---------------------------------------------------
-| **主机名称**  | string  | 网站集的主机名称。只读。
+| 属性名称        | 类型     | 说明
+|:---------------------|:---------|:---------------------------------------------------
+| **主机名称**         | string   | 网站集的主机名称。只读。
+| **根**             | [根][] | 如果存在此参数，指示这是 SharePoint 中的根网站集。 只读。
 
+[根]: root.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -35,5 +50,5 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Facets/SiteCollection"
 }-->

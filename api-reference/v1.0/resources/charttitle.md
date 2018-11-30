@@ -1,3 +1,13 @@
+---
+title: ChartTitle 资源类型
+description: 表示图表的 chart title 对象。
+ms.openlocfilehash: 44777d939e67d2e8b5563cf3edb0b5bfddeeef9a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008625"
+---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 
 表示图表的 chart title 对象。
@@ -7,20 +17,20 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
-|[更新](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
+|[获取 ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
 |text|string|表示图表的标题文本。|
 |visible|boolean|表示 chart title 对象的可见性的布尔值。|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a>Relationships
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -28,10 +38,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

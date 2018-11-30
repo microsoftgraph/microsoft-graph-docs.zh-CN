@@ -1,3 +1,13 @@
+---
+title: 将 /me 定义为单一实例
+description: 这些是我必须以确保减价扫描程序文档中添加的内容
+ms.openlocfilehash: 76e8cc2ed8cb481d732e1b0727107eee8d520e77
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008766"
+---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 
 这些内容必须添加到文档中以确保 Markdown 扫描程序工具能够正确地处理 Graph 文档。
@@ -13,6 +23,7 @@ GET https://graph.microsoft.com/v1.0/me
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -28,6 +39,7 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -44,6 +56,7 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }

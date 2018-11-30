@@ -1,0 +1,40 @@
+---
+title: mediaContentRatingJapan 资源类型
+description: 尚未记录
+ms.openlocfilehash: 15e905355133545db2cdf0864fcbba7e9c226183
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009007"
+---
+# <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan 资源类型
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+尚未记录
+## <a name="properties"></a>属性
+|属性|类型|说明|
+|:---|:---|:---|
+|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|分级日本所选的影片。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
+|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|日本选择 TV 分级。 可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。|
+
+## <a name="relationships"></a>Relationships
+无
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.mediaContentRatingJapan"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.mediaContentRatingJapan",
+  "movieRating": "String",
+  "tvRating": "String"
+}
+```
+
+
+

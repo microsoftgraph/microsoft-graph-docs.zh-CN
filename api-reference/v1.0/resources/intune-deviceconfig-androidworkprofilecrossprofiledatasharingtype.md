@@ -1,0 +1,25 @@
+---
+title: androidWorkProfileCrossProfileDataSharingType 枚举类型
+description: Android 工作模板跨共享类型的配置文件数据。
+ms.openlocfilehash: d97a5ca64d4b28582e0aa0472e0b8f435f02df0a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009206"
+---
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+Android 工作模板跨共享类型的配置文件数据。
+## <a name="members"></a>成员
+|成员|值|说明|
+|:---|:---|:---|
+|deviceDefault|0|设备默认值，没有用途。|
+|preventAny|1|防止任何共享。|
+|allowPersonalToWork|2|允许共享个人配置文件中的请求，以配置文件的数据。|
+|noRestrictions|3|共享没有限制。|
+
+
+

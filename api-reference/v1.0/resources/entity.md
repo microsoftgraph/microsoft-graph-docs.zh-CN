@@ -1,24 +1,22 @@
+---
+title: 实体资源类型
+description: 无
+ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27009266"
+---
 # <a name="entity-resource-type"></a>实体资源类型
 
-
-## <a name="methods"></a>方法
-
-| 方法       | 返回类型  |说明|
-|:---------------|:--------|:----------|
-|[获取实体](../api/entity_get.md) | [实体](entity.md) |读取 entity 对象的属性和关系。|
-|[删除](../api/entity_delete.md) | 无 |删除 entity 对象。 |
-
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
-
-
-
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -26,6 +24,8 @@
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

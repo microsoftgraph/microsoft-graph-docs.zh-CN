@@ -1,3 +1,13 @@
+---
+title: patternedRecurrence 资源类型
+description: 定期模式和区域。
+ms.openlocfilehash: 10a90db032cd7461e28bc096fd6213df44f3ea45
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008632"
+---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
 定期模式和区域。
@@ -17,7 +27,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: FormatProtection 资源类型
+description: 表示对 range 对象的格式保护。
+ms.openlocfilehash: b3954763d7c611c0db90008ff7aa74f672c51a4d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008799"
+---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 
 表示对 range 对象的格式保护。
@@ -7,16 +17,16 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |读取 formatProtection 对象的属性和关系。|
-|[更新](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |更新 FormatProtection 对象。 |
+|[获取 FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |读取 formatProtection 对象的属性和关系。|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |更新 FormatProtection 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |formulaHidden|boolean|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无
 
 
@@ -26,10 +36,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: ChartAxis 资源类型
+description: 表示图表中的单个坐标轴。
+ms.openlocfilehash: fe29c6820f810158ca4accc864c852b0f00d2dda
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008783"
+---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
 表示图表中的单个坐标轴。
@@ -7,43 +17,49 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |读取 chartaxis 对象的属性和关系。|
-|[更新](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |更新 ChartAxis 对象 |
+|[获取 ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) |读取 chartaxis 对象的属性和关系。|
+|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)   |更新 ChartAxis 对象 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|majorUnit|对象|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
-|maximum|object|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
-|minimum|object|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
-|minorUnit|对象|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+| ID       |string   | 唯一标识符。 只读。|
+|majorUnit|Json|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
+|maximum|Json|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+|minimum|Json|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+|minorUnit|Json|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a>Relationships
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的网格线对象。只读。|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
-|title|[ChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
+|format|[WorkbookChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
+|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的 gridline 对象。只读。|
+|minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartaxis"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->
 
 ```json
 {
+  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
-  "minorUnit": "string"
+  "minorUnit": "string",
+   "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
 
 ```

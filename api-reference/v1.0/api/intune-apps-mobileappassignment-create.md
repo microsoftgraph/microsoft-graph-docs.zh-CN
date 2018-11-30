@@ -1,0 +1,99 @@
+---
+title: 创建 mobileAppAssignment
+description: 创建新的 mobileAppAssignment 对象。
+ms.openlocfilehash: f08335f131c97e67cb93d8dafcbce4c39bbef2e8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008035"
+---
+# <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+创建新的 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。
+## <a name="prerequisites"></a>先决条件
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 mobileAppAssignment 对象的 JSON 表示形式。
+
+下表显示创建 mobileAppAssignment 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。|
+|intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
+|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。
+
+## <a name="example"></a>示例
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments
+Content-type: application/json
+Content-length: 273
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
+  "intent": "required",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+  }
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 322
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
+  "id": "591620b7-20b7-5916-b720-1659b7201659",
+  "intent": "required",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+  }
+}
+```
+
+
+

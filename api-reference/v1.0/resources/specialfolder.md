@@ -1,14 +1,27 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: bbf12aa0bf127116fd5f1250717c19f3f053f751
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007583"
+---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 
 **SpecialFolder** 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 
-如果 **DriveItem** 具有一个非 NULL **specialFolder** facet，则该项表示特殊（命名的）文件夹。可直接通过 [special folders 集合](../api/drive_special.md) 访问特殊文件夹。
+如果 **DriveItem** 具有一个非 null **specialFolder** facet，则该项表示特殊（命名的）文件夹。
+可直接通过 [special folders 集合](../api/drive-get-specialfolder.md) 访问特殊文件夹。
 
 特殊文件夹可提供简单别名，因此无需按路径查找（需要本地化）文件夹或通过 ID 引用文件夹来访问已知文件夹。如果特殊文件夹被重命名或移到驱动器中的其他位置，此语法将继续返回该文件夹。
 
 应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。
 
-**注意：**如果应用仅请求 **Files.Read** 范围，而请求特殊文件夹不存在，则响应将是 `403 Forbidden` 错误。
+**注意：** 如果应用仅请求 **Files.Read** 范围，而请求特殊文件夹不存在，则响应将是 `403 Forbidden` 错误。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,13 +60,10 @@
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SpecialFolder"
+} -->

@@ -1,18 +1,28 @@
+---
+title: groupSetting 资源类型
+description: 组设置控制行为，如组显示名称的禁止使用的词语列表，或是否允许来宾用户成为组所有者。
+ms.openlocfilehash: 16eb67e717fb151a627961176b1409e8426e3178
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008493"
+---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
 组设置控制行为，如组显示名称的禁止使用的词语列表，或是否允许来宾用户成为组所有者。
 
-组设置可根据可用的 [groupSettingTemplates](groupSettingTemplate.md) 进行创建，并可更改其预设默认值。这些设置在租户范围级别或特定组内控制组行为。当在租户范围和特定组中定义相同的设置时，组级设置将替代租户范围的设置。例如，租户范围的设置可能允许现有组成员邀请来宾，但是单独组设置可以替代此操作，并且不允许组成员邀请来宾。组设置只控制 Office 365 组行为。
+组设置可根据可用的 [groupSettingTemplates](groupsettingtemplate.md) 进行创建，并可更改其预设默认值。这些设置在租户范围级别或特定组内控制组行为。当在租户范围和特定组中定义相同的设置时，组级设置将替代租户范围的设置。例如，租户范围的设置可能允许现有组成员邀请来宾，但是单独组设置可以替代此操作，并且不允许组成员邀请来宾。组设置只控制 Office 365 组行为。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[创建设置](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。 |
-|[获取设置](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
-|[列出设置](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
-|[更新设置](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 更新 groupsetting 对象。 |
-|[删除设置](../api/groupsetting_delete.md) | 无 | 删除设置对象。 |
+|[创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。 |
+|[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
+|[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
+|[更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新 groupsetting 对象。 |
+|[删除设置](../api/groupsetting-delete.md) | 无 | 删除设置对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -31,11 +41,12 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupSetting"
 }-->
 

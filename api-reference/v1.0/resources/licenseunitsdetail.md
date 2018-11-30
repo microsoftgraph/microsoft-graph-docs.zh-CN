@@ -1,9 +1,19 @@
+---
+title: licenseUnitsDetail 资源类型
+description: subscribedSku 实体的 **prepaidUnits** 属性为 **licenseUnitsDetail** 类型。
+ms.openlocfilehash: e8cf5253676dab8a4b31c3ab33faa0af3ddfd527
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007799"
+---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
 [subscribedSku](subscribedsku.md) 实体的 **prepaidUnits** 属性为 **licenseUnitsDetail** 类型。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:-------------|:-----|:----------|
 |已启用|Int32| 已启用的单元数。 |
 |suspended|Int32| 已挂起的单元数。 |

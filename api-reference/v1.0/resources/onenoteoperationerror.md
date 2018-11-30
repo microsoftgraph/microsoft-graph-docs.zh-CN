@@ -1,3 +1,13 @@
+---
+title: onenoteOperationError 资源类型
+description: 失败的 OneNote 操作中的错误
+ms.openlocfilehash: 3e09bd4b4ec0a8fc36113c278ebe7cab25392ecf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008016"
+---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError 资源类型
 
 失败的 OneNote 操作中的错误
@@ -22,7 +32,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |code|string|错误代码。|
 |消息|string|错误消息。|
