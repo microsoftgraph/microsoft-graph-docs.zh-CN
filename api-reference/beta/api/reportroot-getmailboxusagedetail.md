@@ -1,0 +1,183 @@
+---
+title: 'reportRoot: getMailboxUsageDetail'
+description: 获取邮箱使用情况的详细信息。
+ms.openlocfilehash: 317d258a51250992c47b20675bb2cb580ce408dd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041478"
+---
+# <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+获取邮箱使用情况的详细信息。
+
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :--------------------------------------- |
+| 委派（工作或学校帐户）     | Reports.Read.All                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                           |
+| 应用                            | Reports.Read.All                         |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } --> 
+
+```http
+GET /reports/getMailboxUsageDetail(period='{period_value}')
+```
+
+## <a name="function-parameters"></a>函数参数
+
+在请求 URL 中，提供以下参数的有效值。
+
+| 参数 | 类型   | 说明                              |
+| :-------- | :----- | :--------------------------------------- |
+| period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
+
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型是文本/csv。 但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。
+
+## <a name="request-headers"></a>请求标头
+
+| 名称          | 说明               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
+
+## <a name="response"></a>响应
+
+### <a name="csv"></a>CSV
+
+如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+
+CSV 文件包含下面的列标题。
+
+- 报表刷新日期
+- 用户主体名称
+- 显示名称
+- 已删除
+- 删除日期
+- 创建日期
+- 上次活动日期
+- 项数
+- 已使用的存储（字节）
+- 发出警告配额（字节）
+- 禁止发送配额（字节）
+- 禁止发送/接收配额（字节）
+- 报表周期
+
+### <a name="json"></a>JSON
+
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**[mailboxUsageDetail](../resources/mailboxusagedetail.md)** 对象。
+
+为此请求的默认页面大小是 200 个项目。
+
+## <a name="example"></a>示例
+
+### <a name="csv"></a>CSV
+
+下面是输出 CSV 示例。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getmailboxusagedetail_csv"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=text/csv
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- { "blockType": "ignored" } --> 
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+执行 302 重定向，下载的 CSV 文件将采用以下架构。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Report Period
+```
+
+### <a name="json"></a>JSON
+
+下面是返回 JSON 的示例。
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getmailboxusagedetail_json"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=application/json
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxUsageDetail"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 526
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageDetail)", 
+  "value": [
+    {
+      "reportRefreshDate": "2017-09-01", 
+      "userPrincipalName": "userPrincipalName-value", 
+      "displayName": "displayName-value", 
+      "isDeleted": false, 
+      "deletedDate": null, 
+      "createdDate": "2016-03-30", 
+      "lastActivityDate": "2017-09-01", 
+      "itemCount": 138481, 
+      "storageUsedInBytes": 10414748704, 
+      "issueWarningQuotaInBytes": 10522698752, 
+      "prohibitSendQuotaInBytes": 10630040576, 
+      "prohibitSendReceiveQuotaInBytes": 10737418240, 
+      "reportPeriod": "7"
+    }
+  ]
+}
+```

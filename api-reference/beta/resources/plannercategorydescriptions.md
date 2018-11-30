@@ -1,13 +1,21 @@
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: plannerCategoryDescriptions 资源类型
+description: '**plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于计划详细信息对象。最多可定义 6 个类别。 '
+ms.openlocfilehash: eb54a42cd3e86a9f2c39ff46d45c71fb04142dad
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043344"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions 资源类型
 
-# plannerCategoryDescriptions 资源类型
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于[计划详细信息](plannerplandetails.md)对象。最多可定义 6 个类别。 
 
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |category1|String|与类别 1 相关联的标签|
@@ -17,9 +25,7 @@
 |category5|String|与类别 5 相关联的标签|
 |category6|String|与类别 6 相关联的标签|
 
-<a id="json-representation" class="xliff"></a>
-
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {

@@ -1,6 +1,18 @@
+---
+title: itemAttachment 资源类型
+description: 联系人、 事件或附加到另一个事件的消息
+ms.openlocfilehash: fd8638a7d263c2ebbe09c77f717af989e1dd5a0e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27046900"
+---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
-附加到另一个事件、邮件或帖子的联系人、事件或邮件。  
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+联系人、 事件或附加到另一个[事件](../resources/event.md)、[消息](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[发布](../resources/post.md)的消息。  
 
 派生自 [附件](attachment.md)。
 
@@ -8,23 +20,23 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
-|[删除](../api/attachment_delete.md) | 无 |删除 itemAttachment 对象。 |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
+|[删除](../api/attachment-delete.md) | 无 |删除 itemAttachment 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
 |id|String| 附件 ID。|
-|isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
+|isInline|布尔|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
 |name|String|附件的显示名称。|
 |大小|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a>Relationships
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|项|[OutlookItem](outlookitem.md)|附加的消息或事件。导航属性。|
+|项|[OutlookItem](outlookitem.md)|附加的联系人、 消息或事件中。 导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

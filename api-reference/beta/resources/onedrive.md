@@ -1,4 +1,16 @@
+---
+title: 在 Microsoft Graph 中使用文件
+description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
+ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043679"
+---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 
@@ -11,7 +23,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -40,7 +52,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 * _属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。
 * _Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。
-* _引用_（像**子项**和**缩略图**）指向其他资源的集合。
+* _引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。
 
 ## <a name="commonly-accessed-resources"></a>经常访问的资源
 
@@ -89,8 +101,8 @@ OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动�
 
 ## <a name="sharing-and-permissions"></a>共享和权限
 
-OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/item_createLink.md)、[添加权限并发送邀请](../api/item_invite.md) 到驱动器中的项目。
+OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/driveitem-createlink.md)、[添加权限并发送邀请](../api/driveitem-invite.md) 到驱动器中的项目。
 
-Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares_get.md) 的方法。
+Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。
 
  

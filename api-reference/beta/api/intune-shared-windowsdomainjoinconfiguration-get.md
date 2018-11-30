@@ -1,0 +1,109 @@
+---
+title: 获取 windowsDomainJoinConfiguration
+description: 读取属性和 windowsDomainJoinConfiguration 对象的关系。
+ms.openlocfilehash: b3b76a902b4a740d142e1027f04d1f98f5fb32aa
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27044027"
+---
+# <a name="get-windowsdomainjoinconfiguration"></a>获取 windowsDomainJoinConfiguration
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+读取属性和[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)对象的关系。
+
+## <a name="prerequisites"></a>先决条件
+
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）||
+| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+**设备配置**
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+```
+
+**注册**
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法返回`200 OK`响应正文中的响应代码和[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)对象。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+
+下面是一个请求示例。
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+```
+
+### <a name="response"></a>响应
+
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 从实际的调用返回的属性取决于上下文。
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 560
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
+    "id": "40118d08-8d08-4011-088d-1140088d1140",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "description": "Description value",
+    "displayName": "Display Name value",
+    "version": 7,
+    "computerNameStaticPrefix": "Computer Name Static Prefix value",
+    "computerNameSuffixRandomCharCount": 1,
+    "activeDirectoryDomainName": "Active Directory Domain Name value"
+  }
+}
+```
+
+
+

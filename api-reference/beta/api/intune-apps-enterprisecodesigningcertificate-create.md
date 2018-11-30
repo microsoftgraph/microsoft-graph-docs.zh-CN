@@ -1,0 +1,110 @@
+---
+title: 创建 enterpriseCodeSigningCertificate
+description: 创建新的 enterpriseCodeSigningCertificate 对象。
+ms.openlocfilehash: aa5d92c22a1cd4eb91a41b26ed92f76937ce9dcd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041329"
+---
+# <a name="create-enterprisecodesigningcertificate"></a>创建 enterpriseCodeSigningCertificate
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+创建新的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。
+## <a name="prerequisites"></a>先决条件
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/enterpriseCodeSigningCertificates
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|Accept|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 enterpriseCodeSigningCertificate 对象的 JSON 表示形式。
+
+下表显示时创建 enterpriseCodeSigningCertificate 所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。|
+|content|二进制数|中的原始数据格式的 Windows 企业代码签名证书。|
+|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
+|SubjectName|String|证书使用者名称。|
+|subject|字符串|证书使用者值。|
+|issuerName|字符串|证书颁发者名称。|
+|颁发者|字符串|证书颁发者值。|
+|expirationDateTime|DateTimeOffset|证书到期日期。|
+|uploadDateTime|DateTimeOffset|代码签名证书时它的上载日期时间。|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法返回`201 Created`响应代码和响应正文中的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。
+
+## <a name="example"></a>示例
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
+Content-type: application/json
+Content-length: 390
+
+{
+  "@odata.type": "#microsoft.graph.enterpriseCodeSigningCertificate",
+  "content": "Y29udGVudA==",
+  "status": "provisioned",
+  "subjectName": "Subject Name value",
+  "subject": "Subject value",
+  "issuerName": "Issuer Name value",
+  "issuer": "Issuer value",
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 439
+
+{
+  "@odata.type": "#microsoft.graph.enterpriseCodeSigningCertificate",
+  "id": "b20d3703-3703-b20d-0337-0db203370db2",
+  "content": "Y29udGVudA==",
+  "status": "provisioned",
+  "subjectName": "Subject Name value",
+  "subject": "Subject value",
+  "issuerName": "Issuer Name value",
+  "issuer": "Issuer value",
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
+}
+```
+
+
+
+
+

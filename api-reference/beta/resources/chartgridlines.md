@@ -1,4 +1,16 @@
+---
+title: ChartGridlines 资源类型
+description: 代表图表坐标轴的主要或次要网格线。
+ms.openlocfilehash: c09580b2c669710d8aabf60e31c3c36965bfaa6a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041518"
+---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 代表图表坐标轴的主要或次要网格线。
 
@@ -7,16 +19,16 @@
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
-|[更新](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
+|[获取 ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
+|[Update](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |visible|boolean|表示坐标轴网格线是否可见的布尔值。|
 
-## <a name="relationships"></a>关系
-| 关系 | 类型    |说明|
+## <a name="relationships"></a>Relationships
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[ChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。只读。|
 

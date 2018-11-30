@@ -1,0 +1,102 @@
+---
+title: 更新 administrativeunit
+description: 更新 administrativeUnit 对象的属性。
+ms.openlocfilehash: 47f732d850b96e24b0542114d2d868169c718da9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042985"
+---
+# <a name="update-administrativeunit"></a>更新 administrativeunit
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+更新[administrativeUnit](../resources/administrativeunit.md)对象的属性。
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /administrativeUnits/{id}
+```
+
+## <a name="request-headers"></a>请求标头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+
+| 属性   | 类型 |说明|
+|:---------------|:--------|:----------|
+|说明|string|管理单元的说明。|
+|displayName|string|管理单元的显示名称。|
+|visibility|string|可见性管理单元。 如果，未设置默认值为"公共"。 可以设置为"HiddenMembership"，隐藏从非成员的成员身份。|
+
+由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview)，您可以使用`PATCH`操作添加、 更新或删除您自己的扩展现有**administrativeUnit**实例中的自定义属性中的特定于应用程序的数据。
+
+## <a name="response"></a>响应
+
+如果成功，此方法返回 `204 No Content` 响应代码。
+
+## <a name="example"></a>示例
+
+##### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_administrativeunit"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
+Content-type: application/json
+Content-length: 114
+
+{
+  "displayName": "displayName-value",
+  "description": "description-value",
+  "visibility": "visibility-value"
+}
+```
+
+##### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.administrativeunit"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+## <a name="see-also"></a>另请参阅
+
+- [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
+- [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
+<!--
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+-->
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update administrativeunit",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,0 +1,30 @@
+---
+title: deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
+description: 尚未记录
+ms.openlocfilehash: bcf9a9c385306033efb33d79e476f1f14e0763d1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043053"
+---
+# <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+
+尚未记录
+## <a name="members"></a>成员
+|成员|值|说明|
+|:---|:---|:---|
+|meetHardwareRequirements|0|系统满足硬件配置要求|
+|secureBootRequired|1|所需的安全启动|
+|dmaProtectionRequired|2|所需的 DMA 保护|
+|hyperVNotSupportedForGuestVM|4|不支持来宾 VM 的 HyperV|
+|hyperVNotAvailable|8|HyperV 功能不可用|
+
+
+
+
+

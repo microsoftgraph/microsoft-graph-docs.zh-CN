@@ -1,4 +1,16 @@
+---
+title: ChartAreaFormat 资源类型
+description: 封装整个图表区域的格式属性。
+ms.openlocfilehash: 1629faa007fa239e93c2e942af13570d4b46c488
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043708"
+---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 封装整个图表区域的格式属性。
 
@@ -10,7 +22,7 @@
 无
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型    |说明|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|表示对象的填充格式，包括背景格式信息。只读。|
 |font|[ChartFont](chartfont.md)|表示当前对象的字体属性（字体名称、字体大小、颜色等）。只读。|
