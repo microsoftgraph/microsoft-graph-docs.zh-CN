@@ -1,21 +1,31 @@
-# <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting 资源类型
+---
+title: automaticRepliesSetting 资源类型
+description: '配置设置以自动通知中的邮件传入电子邮件的发件人 '
+ms.openlocfilehash: 983f5062c5a7bacaccfdca4687705aed5aa7a604
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007635"
+---
+# <a name="automaticrepliessetting-resource-type"></a><span data-ttu-id="0a6e2-103">automaticRepliesSetting 资源类型</span><span class="sxs-lookup"><span data-stu-id="0a6e2-103">automaticRepliesSetting resource type</span></span>
 
-自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。例如，通知已登录用户无法回复电子邮件的自动答复。 
+<span data-ttu-id="0a6e2-p101">自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。例如，通知已登录用户无法回复电子邮件的自动答复。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-p101">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to respond to emails.</span></span> 
 
 
-## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+## <a name="properties"></a><span data-ttu-id="0a6e2-106">属性</span><span class="sxs-lookup"><span data-stu-id="0a6e2-106">Properties</span></span>
+| <span data-ttu-id="0a6e2-107">属性</span><span class="sxs-lookup"><span data-stu-id="0a6e2-107">Property</span></span>     | <span data-ttu-id="0a6e2-108">类型</span><span class="sxs-lookup"><span data-stu-id="0a6e2-108">Type</span></span>   |<span data-ttu-id="0a6e2-109">说明</span><span class="sxs-lookup"><span data-stu-id="0a6e2-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|externalAudience|String| 如果 **Status** 是 `AlwaysEnabled` 或 `Scheduled`，则表示将接收 **ExternalReplyMessage** 的已登录用户组织外部的受众组。可能的值是：`none`、`contactsOnly`、`all`。|
-|externalReplyMessage|string|如果 **Status** 是 `AlwaysEnabled` 或 `Scheduled`，则表示发送给指定外部受众的自动答复。|
-|internalReplyMessage|string|如果 **Status** 为 `AlwaysEnabled` 或 `Scheduled`，则表示发送给已登录用户组织内部受众的自动答复。 |
-|scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为结束。 |
-|scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为开始。|
-|status|String|自动答复的配置状态。可能的值是：`disabled`、`alwaysEnabled`、`scheduled`。|
+|<span data-ttu-id="0a6e2-110">externalAudience</span><span class="sxs-lookup"><span data-stu-id="0a6e2-110">externalAudience</span></span>|<span data-ttu-id="0a6e2-111">externalAudienceScope</span><span class="sxs-lookup"><span data-stu-id="0a6e2-111">externalAudienceScope</span></span>| <span data-ttu-id="0a6e2-112">一组的访问群体已登录的用户组织的外部用户将收到**ExternalReplyMessage**，如果**状态**为`AlwaysEnabled`或`Scheduled`。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-112">The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> <span data-ttu-id="0a6e2-113">可能的值为： `none`， `contactsOnly`， `all`。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-113">The possible values are: `none`, `contactsOnly`, `all`.</span></span>|
+|<span data-ttu-id="0a6e2-114">externalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="0a6e2-114">externalReplyMessage</span></span>|<span data-ttu-id="0a6e2-115">string</span><span class="sxs-lookup"><span data-stu-id="0a6e2-115">string</span></span>|<span data-ttu-id="0a6e2-116">如果 **Status** 是 `AlwaysEnabled` 或 `Scheduled`，则表示发送给指定外部受众的自动答复。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-116">The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span>|
+|<span data-ttu-id="0a6e2-117">internalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="0a6e2-117">internalReplyMessage</span></span>|<span data-ttu-id="0a6e2-118">string</span><span class="sxs-lookup"><span data-stu-id="0a6e2-118">string</span></span>|<span data-ttu-id="0a6e2-119">如果 **Status** 为 `AlwaysEnabled` 或 `Scheduled`，则表示发送给已登录用户组织内部受众的自动答复。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-119">The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> |
+|<span data-ttu-id="0a6e2-120">scheduledEndDateTime</span><span class="sxs-lookup"><span data-stu-id="0a6e2-120">scheduledEndDateTime</span></span>|[<span data-ttu-id="0a6e2-121">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="0a6e2-121">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="0a6e2-122">如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为结束。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-122">The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`.</span></span> |
+|<span data-ttu-id="0a6e2-123">scheduledStartDateTime</span><span class="sxs-lookup"><span data-stu-id="0a6e2-123">scheduledStartDateTime</span></span>|[<span data-ttu-id="0a6e2-124">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="0a6e2-124">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="0a6e2-125">如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为开始。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-125">The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.</span></span>|
+|<span data-ttu-id="0a6e2-126">状态</span><span class="sxs-lookup"><span data-stu-id="0a6e2-126">status</span></span>|<span data-ttu-id="0a6e2-127">automaticRepliesStatus</span><span class="sxs-lookup"><span data-stu-id="0a6e2-127">automaticRepliesStatus</span></span>|<span data-ttu-id="0a6e2-128">配置自动答复状态。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-128">Configurations status for automatic replies.</span></span> <span data-ttu-id="0a6e2-129">可能的值为： `disabled`， `alwaysEnabled`， `scheduled`。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-129">The possible values are: `disabled`, `alwaysEnabled`, `scheduled`.</span></span>|
 
-## <a name="json-representation"></a>JSON 表示形式
+## <a name="json-representation"></a><span data-ttu-id="0a6e2-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0a6e2-130">JSON representation</span></span>
 
-下面是资源的 JSON 表示形式。
+<span data-ttu-id="0a6e2-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0a6e2-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

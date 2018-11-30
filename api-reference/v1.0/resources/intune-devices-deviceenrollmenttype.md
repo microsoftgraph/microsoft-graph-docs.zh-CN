@@ -1,0 +1,31 @@
+---
+title: deviceEnrollmentType 枚举类型
+description: 将移动设备添加到管理的可能方式。
+ms.openlocfilehash: 5c921e30f642e1d44d675f8bee7a5b79c53ce428
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007690"
+---
+# <a name="deviceenrollmenttype-enum-type"></a><span data-ttu-id="772f3-103">deviceEnrollmentType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="772f3-103">deviceEnrollmentType enum type</span></span>
+
+> <span data-ttu-id="772f3-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="772f3-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="772f3-105">将移动设备添加到管理的可能方式。</span><span class="sxs-lookup"><span data-stu-id="772f3-105">Possible ways of adding a mobile device to management.</span></span>
+## <a name="members"></a><span data-ttu-id="772f3-106">成员</span><span class="sxs-lookup"><span data-stu-id="772f3-106">Members</span></span>
+|<span data-ttu-id="772f3-107">成员</span><span class="sxs-lookup"><span data-stu-id="772f3-107">Member</span></span>|<span data-ttu-id="772f3-108">值</span><span class="sxs-lookup"><span data-stu-id="772f3-108">Value</span></span>|<span data-ttu-id="772f3-109">说明</span><span class="sxs-lookup"><span data-stu-id="772f3-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="772f3-110">unknown</span><span class="sxs-lookup"><span data-stu-id="772f3-110">unknown</span></span>|<span data-ttu-id="772f3-111">0</span><span class="sxs-lookup"><span data-stu-id="772f3-111">0</span></span>|<span data-ttu-id="772f3-112">默认值，注册类型不是收集的。</span><span class="sxs-lookup"><span data-stu-id="772f3-112">Default value, enrollment type was not collected.</span></span>|
+|<span data-ttu-id="772f3-113">userEnrollment</span><span class="sxs-lookup"><span data-stu-id="772f3-113">userEnrollment</span></span>|<span data-ttu-id="772f3-114">1</span><span class="sxs-lookup"><span data-stu-id="772f3-114">1</span></span>|<span data-ttu-id="772f3-115">通过 BYOD 通道用户驱动的注册。</span><span class="sxs-lookup"><span data-stu-id="772f3-115">User driven enrollment through BYOD channel.</span></span>|
+|<span data-ttu-id="772f3-116">deviceEnrollmentManager</span><span class="sxs-lookup"><span data-stu-id="772f3-116">deviceEnrollmentManager</span></span>|<span data-ttu-id="772f3-117">2</span><span class="sxs-lookup"><span data-stu-id="772f3-117">2</span></span>|<span data-ttu-id="772f3-118">用户注册使用设备注册管理器帐户。</span><span class="sxs-lookup"><span data-stu-id="772f3-118">User enrollment with a device enrollment manager account.</span></span>|
+|<span data-ttu-id="772f3-119">appleBulkWithUser</span><span class="sxs-lookup"><span data-stu-id="772f3-119">appleBulkWithUser</span></span>|<span data-ttu-id="772f3-120">3</span><span class="sxs-lookup"><span data-stu-id="772f3-120">3</span></span>|<span data-ttu-id="772f3-121">与用户质询 Apple 批量注册。</span><span class="sxs-lookup"><span data-stu-id="772f3-121">Apple bulk enrollment with user challenge.</span></span> <span data-ttu-id="772f3-122">(DEP，Apple 配置器)</span><span class="sxs-lookup"><span data-stu-id="772f3-122">(DEP, Apple Configurator)</span></span>|
+|<span data-ttu-id="772f3-123">appleBulkWithoutUser</span><span class="sxs-lookup"><span data-stu-id="772f3-123">appleBulkWithoutUser</span></span>|<span data-ttu-id="772f3-124">4</span><span class="sxs-lookup"><span data-stu-id="772f3-124">4</span></span>|<span data-ttu-id="772f3-125">没有用户质询 Apple 批量注册。</span><span class="sxs-lookup"><span data-stu-id="772f3-125">Apple bulk enrollment without user challenge.</span></span> <span data-ttu-id="772f3-126">（DEP，Apple 配置器移动配置）</span><span class="sxs-lookup"><span data-stu-id="772f3-126">(DEP, Apple Configurator, Mobile Config)</span></span>|
+|<span data-ttu-id="772f3-127">windowsAzureADJoin</span><span class="sxs-lookup"><span data-stu-id="772f3-127">windowsAzureADJoin</span></span>|<span data-ttu-id="772f3-128">5</span><span class="sxs-lookup"><span data-stu-id="772f3-128">5</span></span>|<span data-ttu-id="772f3-129">Windows Azure AD 10 加入。</span><span class="sxs-lookup"><span data-stu-id="772f3-129">Windows 10 Azure AD Join.</span></span>|
+|<span data-ttu-id="772f3-130">windowsBulkUserless</span><span class="sxs-lookup"><span data-stu-id="772f3-130">windowsBulkUserless</span></span>|<span data-ttu-id="772f3-131">6</span><span class="sxs-lookup"><span data-stu-id="772f3-131">6</span></span>|<span data-ttu-id="772f3-132">Windows 10 批量注册通过 ICD 证书。</span><span class="sxs-lookup"><span data-stu-id="772f3-132">Windows 10 Bulk enrollment through ICD with certificate.</span></span>|
+|<span data-ttu-id="772f3-133">windowsAutoEnrollment</span><span class="sxs-lookup"><span data-stu-id="772f3-133">windowsAutoEnrollment</span></span>|<span data-ttu-id="772f3-134">7</span><span class="sxs-lookup"><span data-stu-id="772f3-134">7</span></span>|<span data-ttu-id="772f3-135">Windows 10 自动注册。</span><span class="sxs-lookup"><span data-stu-id="772f3-135">Windows 10 automatic enrollment.</span></span> <span data-ttu-id="772f3-136">（添加工作帐户）</span><span class="sxs-lookup"><span data-stu-id="772f3-136">(Add work account)</span></span>|
+|<span data-ttu-id="772f3-137">windowsBulkAzureDomainJoin</span><span class="sxs-lookup"><span data-stu-id="772f3-137">windowsBulkAzureDomainJoin</span></span>|<span data-ttu-id="772f3-138">8</span><span class="sxs-lookup"><span data-stu-id="772f3-138">8</span></span>|<span data-ttu-id="772f3-139">Windows 10 批量 Azure AD 加入。</span><span class="sxs-lookup"><span data-stu-id="772f3-139">Windows 10 bulk Azure AD Join.</span></span>|
+|<span data-ttu-id="772f3-140">windowsCoManagement</span><span class="sxs-lookup"><span data-stu-id="772f3-140">windowsCoManagement</span></span>|<span data-ttu-id="772f3-141">9</span><span class="sxs-lookup"><span data-stu-id="772f3-141">9</span></span>|<span data-ttu-id="772f3-142">由自动执行某些操作或组策略触发 Windows 10 共同管理。</span><span class="sxs-lookup"><span data-stu-id="772f3-142">Windows 10 Co-Management triggered by AutoPilot or Group Policy.</span></span>|
+
+
+
