@@ -1,13 +1,21 @@
-<a id="plannerassignments-resource-type" class="xliff"></a>
+---
+title: plannerAssignments 资源类型
+description: '**PlannerAssignments**资源表示 plannerTask 资源的分配。 此类型为打开的类型。 在这种类型的每个属性名称 '
+ms.openlocfilehash: b6a6448dac465b8d8ed64c7326ca3475b624c056
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042402"
+---
+# <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
 
-# plannerAssignments 资源类型
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **plannerAssignments** 资源表示 [plannerTask](plannertask.md) 资源的分配。此类型是开放类型。此类型中的每个属性名称均是任务被分配到的用户对象的 ID。可以通过新建以用户 ID 命名的属性并将包含 orderHint 属性的 [plannerassignment](plannerassignment.md) 对象填充为其值来向任务分配用户。可以通过将以代理人 ID 命名的属性设置为 null 来在任务中取消分配代理人。
 
 
-<a id="properties" class="xliff"></a>
-
-## 属性
+## <a name="properties"></a>属性
 开放类型的属性可以由客户端定义。但是在这种情况下，客户必须将分配用户的 ID 作为属性名称。必须将属性设置为 **plannerAssignment** 对象才能创建或修改代理人，必须将其设置为 null 才能删除代理人。
 
 示例：

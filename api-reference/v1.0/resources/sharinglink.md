@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingLink
+ms.openlocfilehash: 7639dab9f63a948b3e9a849d8d320de60f5a0954
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008358"
+---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 
 **SharingLink** 资源将与链接相关的数据项分组到一个单一结构。
@@ -16,44 +28,55 @@
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "type": "view | edit",
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "type": "view | edit | embed",
   "scope": "anonymous | organization",
+  "webHtml": "string",
   "webUrl": "url"
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型                    | 说明                                                                                                                                                                                             |
-|:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| application | [标识](identity.md) | 链接所关联的应用。                                                                                                                                                                    |
-| type        | String                  | 创建的链接类型。                                                                                                                                                                           |
-| scope       | String                  | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。 |
-| webUrl      | String                  | 在 OneDrive 网站上的浏览器中打开项的 URL。                                                                                                                                       |
+| 属性    | 类型          | 说明
+|:------------|:--------------|:-------------------------------------
+| application | [Identity][]  | 链接所关联的应用。
+| type        | String        | 创建的链接类型。
+| scope       | String        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
+| webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
+| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
-## <a name="type-enumeration"></a>类型枚举
+[Identity]: identity.md
+
+## <a name="type-options"></a>类型选项
 
 此表定义了 **type** 属性的可能值：
 
-| 值   | 角色    | 说明                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | 可查看共享链接，允许只读访问。                            |
-| `edit`  | `write` | 编辑共享链接，允许读写访问。                               |
+| 值   | 角色    | 说明
+|:--------|:--------|:---------------------------------------------------------
+| `view`  | `read`  | 可查看共享链接，允许只读访问。
+| `edit`  | `write` | 授予读写权限的编辑共享链接。
+| `embed` | `read`  | 可用于将内容嵌入托管网页的仅供查看共享链接。 OneDrive for Business 或 SharePoint 不支持嵌入链接。
 
-## <a name="scope-enumeration"></a>范围枚举
+## <a name="scope-options"></a>作用域选项
 
-| 值          | 说明                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 任何人均可使用共享链接。                                                                            |
-| `organization` | 同一组织（租户）中的任何人均可使用共享链接。不适用于 OneDrive 个人版。 |
+| 值          | 说明
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | 带链接的任何人都访问，而无需登录。 这可能包括您的组织外部的人员。
+| `organization` | 登录到您的组织 （租户） 的任何人都可以使用以下链接获取的访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingLink resource",
-  "keywords": "",
+  "description": "The sharing link facet provides information about how a file is shared.",
+  "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/SharingLink"
+} -->

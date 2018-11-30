@@ -1,12 +1,22 @@
-# <a name="filesysteminfo-resource-type"></a>FileSystemInfo 资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FileSystemInfo
+ms.openlocfilehash: 2a2e31754e64d18f8fce873212d7c582e6611e60
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010655"
+---
+# <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
 
  **FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。
 
-**注意：****FileSystemInfo** 属性不可用于 SharePoint 中的 DriveItems 或 OneDrive for Business。
+可用于 [driveItem][item-resource] 资源的 fileSystemInfo 属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
@@ -18,8 +28,9 @@
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -28,10 +39,10 @@
 | 属性                 | 类型           | 说明                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | 在客户端创建文件时的 UTC 日期和时间。                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | 上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive_recent.md)。 |
+| **lastAccessedDateTime** | DateTimeOffset | 上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive-recent.md)。 |
 | **lastModifiedDateTime** | DateTimeOffset | 在客户端上次修改文件时的 UTC 日期和时间。                                                        |
 
-## <a name="notes"></a>注释
+## <a name="notes"></a>注意
 
 来自 [DriveItem](driveitem.md) 资源上同一属性的 **createdDateTime** 和 **lastModifiedDateTime** 值有所不同。DriveItem 资源上的值是从服务中所见的创建和修改的日期和时间。**FileSystemInfo** 资源中存储的值由客户端提供。
 
@@ -43,14 +54,16 @@
 
 ## <a name="remarks"></a>注解
 
+* **lastAccessedDateTime** 不适用于 SharePoint Online 或 OneDrive for Business 中的项。
+
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

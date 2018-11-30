@@ -1,44 +1,56 @@
+---
+title: 邮件资源类型
+description: mailFolder 中的邮件。
+ms.openlocfilehash: 0a68b48ea89fa41db1e77e0597a54f6fb495a438
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008339"
+---
 # <a name="message-resource-type"></a>邮件资源类型
 
 mailFolder 中的邮件。
 
 该资源支持：
 
-- 使用[扩展](../../../concepts/extensibility_overview.md)将自己的数据添加到自定义属性。
-- 通过提供 [delta](../api/message_delta.md) 函数使用[增量查询](../../../concepts/delta_query_overview.md)跟踪增量添加、删除和更新。
+- 添加您自己的数据作为自定义 Internet 邮件头。 添加自定义标头，仅当创建一条消息，并将它们命名开头"x-"。 一旦已发送邮件，您无法修改标头。 若要获取的邮件头，请应用`$select`查询[获取邮件](../api/message-get.md)操作中的参数。
+- 为自定义属性作为[扩展](/graph/extensibility-overview)添加您自己的数据。
+- 订阅[更改通知](/graph/webhooks)。
+- 通过提供 [delta](../api/message-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出邮件](../api/user_list_messages.md) |[邮件](message.md)集合 | 获取已登录用户的邮箱中的所有邮件（包括“已删除邮件”和“待筛选邮件”文件夹）。 |
-|[创建邮件](../api/user_post_messages.md) | [邮件](message.md) | [创建](../api/user_post_messages.md#request-1) 新邮件的草稿。 |
-|[获取邮件](../api/message_get.md) | [邮件](message.md) |读取 message 对象的属性和关系。|
-|[更新](../api/message_update.md) | [邮件](message.md) |更新 message 对象。|
-|[删除](../api/message_delete.md) | 无 |删除 message 对象。 |
-|[复制](../api/message_copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
-|[createForward](../api/message_createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
-|[createReply](../api/message_createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message_update.md) 或 [发送](../api/message_send.md) 草稿。|
-|[createReplyAll](../api/message_createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以[更新](../api/message_update.md)或[发送](../api/message_send.md)草稿。|
-|[delta](../api/message_delta.md)|[邮件](message.md)集合| 获取指定文件夹中已添加、删除或更新的邮件集。|
-|[转发](../api/message_forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
-|[移动](../api/message_move.md)|[邮件](message.md)|将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本。|
-|[回复](../api/message_reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
-|[replyAll](../api/message_replyall.md)|无|答复邮件的所有收件人。然后邮件保存在已发送邮件文件夹中。|
-|[发送](../api/message_send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|
+|[列出邮件](../api/user-list-messages.md) |[邮件](message.md)集合 | 获取已登录用户的邮箱中的所有邮件（包括“已删除邮件”和“待筛选邮件”文件夹）。 |
+|[创建邮件](../api/user-post-messages.md) | [邮件](message.md) | [创建](../api/user-post-messages.md#request-1) 新邮件的草稿。 |
+|[获取邮件](../api/message-get.md) | [邮件](message.md) |读取 message 对象的属性和关系。|
+|[更新](../api/message-update.md) | [邮件](message.md) |更新 message 对象。|
+|[删除](../api/message-delete.md) | 无 |删除 message 对象。 |
+|[复制](../api/message-copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
+|[createForward](../api/message-createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReply](../api/message-createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReplyAll](../api/message-createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[delta](../api/message-delta.md)|[邮件](message.md)集合| 获取指定文件夹中已添加、删除或更新的邮件集。|
+|[转发](../api/message-forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
+|[移动](../api/message-move.md)|[邮件](message.md)|将邮件移动到文件夹。该操作会在目标文件夹中创建邮件的新副本。|
+|[回复](../api/message-reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
+|[replyAll](../api/message-replyall.md)|无|答复邮件的所有收件人。然后邮件保存在已发送邮件文件夹中。|
+|[发送](../api/message-send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|
 |**附件**| | |
-|[列出附件](../api/message_list_attachments.md) |[附件](attachment.md) 集合| 获取邮件的所有附件。|
-|[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| 通过发布到附件集合，向邮件添加新附件。|
+|[列出附件](../api/message-list-attachments.md) |[附件](attachment.md) 集合| 获取邮件的所有附件。|
+|[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| 通过发布到附件集合，向邮件添加新附件。|
 |**开放扩展**| | |
-|[创建开放扩展](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
-|[获取开放扩展](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
+|[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
+|[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取通过名称或完全限定的名称识别的一个或多个开放扩展对象。|
 |**架构扩展**| | |
-|[添加架构扩展值](../../../concepts/extensibility_schema_groups.md) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
+|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**扩展属性**| | |
-|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[邮件](message.md)  |在新建或现有的邮件中创建一个或多个单值扩展属性。   |
-|[获取具有单值扩展属性的邮件](../api/singlevaluelegacyextendedproperty_get.md)  | [邮件](message.md) | 通过使用 `$expand` 或 `$filter` 获取包含单值扩展属性的邮件。 |
-|[创建多值扩展属性](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [邮件](message.md) | 在新建或现有的邮件中创建一个或多个多值扩展属性。  |
-|[获取具有多值扩展属性的邮件](../api/multivaluelegacyextendedproperty_get.md)  | [邮件](message.md) | 使用 `$expand` 获取包含一个多值扩展属性的邮件。 |
+|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[邮件](message.md)  |在新建或现有的邮件中创建一个或多个单值扩展属性。   |
+|[获取具有单值扩展属性的邮件](../api/singlevaluelegacyextendedproperty-get.md)  | [邮件](message.md) | 通过使用 `$expand` 或 `$filter` 获取包含单值扩展属性的邮件。 |
+|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [邮件](message.md) | 在新建或现有的邮件中创建一个或多个多值扩展属性。  |
+|[获取具有多值扩展属性的邮件](../api/multivaluelegacyextendedproperty-get.md)  | [邮件](message.md) | 使用 `$expand` 获取包含一个多值扩展属性的邮件。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -51,21 +63,23 @@ mailFolder 中的邮件。
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|from|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
+|标记|[followupFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须为实际的邮箱使用对应。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
-|importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
-|internetMessageId |String |由 [RFC2822](http://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|importance|importance| 邮件的重要性：`Low`、`Normal`、`High`。|
+|inferenceClassification | inferenceClassificationType | 为用户、 基于推测的相关性或重要性-或显式重写的邮件分类。 可能的值为：`focused`或`other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
+|internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 在大多数情况下，此值是**从**属性相同。 从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)，或作为[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息发送邮件时，您可以为不同的值设置该属性。 在任何情况下的值必须为实际的邮箱使用对应。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
@@ -83,7 +97,7 @@ Prefer: outlook.allow-unsafe-html
 
 撰写邮件时，在大多数情况下，From 和 Sender 属性表示同一个已登录用户，除非其中一个属性已更新，如以下情况中所述：
 
-- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，则可以更改 **from** 属性。通过在 Azure 管理门户选择邮箱所有者的**邮箱权限**，或通过使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet，管理员可以更改此属性。然后，可以通过编程方式将 **from** 属性设置为其中一个拥有邮箱的 **sendAs** 权限的用户。
+- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
 - 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。可以在 Outlook 中委派邮箱所有者。当代理代表邮箱所有者发送邮件时，**sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。可以通过编程方式将 **sender** 属性设置为拥有邮箱代理权限的用户。
 
 ## <a name="relationships"></a>关系
@@ -92,14 +106,16 @@ Prefer: outlook.allow-unsafe-html
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
 |extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "extensions",
@@ -107,7 +123,23 @@ Prefer: outlook.allow-unsafe-html
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.message",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -120,11 +152,13 @@ Prefer: outlook.allow-unsafe-html
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "String (timestamp)",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
@@ -139,20 +173,25 @@ Prefer: outlook.allow-unsafe-html
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
-  "webLink": "string"
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
 
 ## <a name="see-also"></a>另请参阅
 
-- [获取邮箱设置](../api/user_get_mailboxsettings.md) 
-- [更新邮箱设置](../api/user_update_mailboxsettings.md)
-- [使用增量查询跟踪 Microsoft Graph 数据更改](../../../concepts/delta_query_overview.md)
-- [获取文件夹中邮件的增量更改](../../../concepts/delta_query_messages.md)
-- [使用扩展向资源添加自定义数据](../../../concepts/extensibility_overview.md)
-- [使用开放扩展向用户添加自定义数据](../../../concepts/extensibility_open_users.md)
-- [使用架构扩展向组添加自定义数据](../../../concepts/extensibility_schema_groups.md)
+- [获取邮箱设置](../api/user-get-mailboxsettings.md) 
+- [更新邮箱设置](../api/user-update-mailboxsettings.md)
+- [使用增量查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)
+- [获取文件夹中邮件的增量更改](/graph/delta-query-messages)
+- [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
+- [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: GeoCoordinates
+ms.openlocfilehash: 0a4af14f08b94f0ba64f33838322fb0210bcda15
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27010651"
+---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
 **GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
@@ -24,22 +36,20 @@
 
 ## <a name="properties"></a>属性
 
-| 属性  | 类型   | 说明                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
-| 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。 |
-| 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。   |
-| 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。  |
+| 属性  | 类型   | 说明
+|:----------|:-------|:--------------------------------------------------------
+| 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。
+| 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "geoCoordinates resource",
-  "keywords": "",
+  "description": "The location facet provides geographic location related properties for an item",
+  "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Location"
+} -->

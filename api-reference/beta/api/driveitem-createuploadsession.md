@@ -1,0 +1,412 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: 可恢复的文件上传
+ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042078"
+---
+# <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+通过创建上传会话，使应用可以上传最大大小的文件。上传会话使应用可以在连续的 API 请求中上传多个范围的文件，这样一来，如果在上传过程中连接断开，应用也可以继续传输文件。
+
+若要使用上传会话上传文件，请执行以下两个步骤：
+
+1. [创建上载会话](#create-an-upload-session)
+2. [将字节上传到上传会话](#upload-bytes-to-the-upload-session)
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
+|应用程序 | Sites.ReadWrite.All |
+
+## <a name="create-an-upload-session"></a>创建上传会话
+
+若要开始大文件上载，您的应用程序必须先请求新的上载会话。
+这将创建的临时存储位置，直到上载完成文件将保存的文件的字节数。
+最后一字节的文件上载完之后完成上载会话和最后一个文件显示在目标文件夹中。
+除非您明确指定的请求，以通过设置完成上载，或者，可以将推迟最终创建的目标文件`deferCommit`中请求参数属性。
+
+### <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /drives/{driveId}/items/{itemId}/createUploadSession
+POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
+POST /me/drive/items/{itemId}/createUploadSession
+POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
+POST /users/{userId}/drive/items/{itemId}/createUploadSession
+```
+
+### <a name="request-body"></a>请求正文
+
+无需请求正文。
+但是，您可以指定提供有关所上载文件的其他数据在请求正文中的属性和自定义上载操作的语义。
+
+例如，`item`属性允许设置以下参数：<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "name": "filename.txt"
+}
+```
+
+如果文件名已被使用，并且还会指定直到显式完成请求时不创建最终的文件，下面的示例将控制行为：
+
+<!-- { "blockType": "ignored" } -->
+```json
+{
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  },
+  "deferCommit": true
+}
+```
+
+### <a name="optional-request-headers"></a>可选的请求标头
+
+| 名称       | 值 | 说明                                                                                                                                                            |
+|:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
+
+## <a name="parameters"></a>参数
+
+| 参数            | 类型                          | 说明
+|:---------------------|:------------------------------|:---------------------------------
+| 项                 | driveItemUploadableProperties | 有关所上载文件的数据
+| deferCommit          | 布尔                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
+
+## <a name="item-properties"></a>项目属性
+
+| 属性             | 类型               | 说明
+|:---------------------|:-------------------|:---------------------------------
+| 说明          | 字符串             | 提供用户可见项目的说明。 读写。 仅在 OneDrive 个人。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+
+### <a name="request"></a>请求
+
+对此请求的响应将提供新建 [uploadSession](../resources/uploadsession.md) 的详细信息，其中包括用于上载部分文件的 URL。 
+
+<!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST /drive/root:/{item-path}:/createUploadSession
+Content-Type: application/json
+
+{
+  "item": {
+    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
+    "@microsoft.graph.conflictBehavior": "rename",
+    "name": "largefile.dat"
+  }
+}
+```
+
+### <a name="response"></a>响应
+
+如果成功，此请求的响应将详细说明应将其余请求作为 [UploadSession](../resources/uploadsession.md) 资源发送到哪里。
+
+此资源详细说明了应将文件的字节范围上传到哪里以及上传会话何时到期。
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
+       "optionalProperties": [ "nextExpectedRanges" ]  } -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "uploadUrl": "https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337",
+  "expirationDateTime": "2015-01-29T09:21:55.523Z"
+}
+```
+
+## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
+
+若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
+你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
+
+顺序，必须按顺序上载文件的片段。
+不按顺序上载文件的片段将导致错误。
+
+**注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+
+### <a name="example"></a>示例
+
+在本示例中，应用程序将上传 128 字节大小的文件中的前 26 个字节。
+
+* **Content-Length** 标头指定当前请求的大小。
+* **Content-Range** 标头指定此请求表示的整个文件中的字节范围。
+* 要先知道文件的总长度，然后才可以上传文件的第一个片段。
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+
+```http
+PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 26
+Content-Range: bytes 0-25/128
+
+<bytes 0-25 of the file>
+```
+
+**重要说明：** 应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
+如果某字节范围声明有不同的文件大小，则请求将失败。
+
+### <a name="response"></a>响应
+
+当此请求完成时，如果还需要上传其他字节范围，服务器将会返回 `202 Accepted` 作为响应。
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "expirationDateTime": "2015-01-29T09:21:55.523Z",
+  "nextExpectedRanges": ["26-"]
+}
+```
+
+应用程序可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
+可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
+
+始终都应根据以下最佳实践确定字节范围大小。 请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。
+**nextExpectedRanges** 属性指定尚未收到的文件的范围，而不是应用程序应上传文件的方式。
+
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "expirationDateTime": "2015-01-29T09:21:55.523Z",
+  "nextExpectedRanges": [
+  "12345-55232",
+  "77829-99375"
+  ]
+}
+```
+
+## <a name="remarks"></a>备注
+
+* `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
+* 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
+* 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
+* 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。
+
+## <a name="completing-a-file"></a>完成文件
+
+如果`deferCommit`为 false 或未设置，然后上载自动完成时的文件的最后一字节范围放置到上载的 URL。
+如果`deferCommit`为 true，则上载文件的最后一字节范围使到上载 URL 后，应该明确完成由最终 POST 请求到上载包含零长度内容的 url。
+
+完成上载后，服务器将响应的最后一个请求`HTTP 201 Created`或`HTTP 200 OK`。
+响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+
+```
+PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 21
+Content-Range: bytes 101-127/128
+
+<final bytes of the file>
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
+## <a name="handling-upload-conflicts"></a>处理上传冲突
+
+如果在文件上传后发生冲突（例如，在上传会话期间创建了同名的项），则会在最后一个字节范围上传时返回错误。
+
+```http
+HTTP/1.1 409 Conflict
+Content-Type: application/json
+
+{
+  "error":
+  {
+    "code": "upload_name_conflict",
+    "message": "Another file exists with the same name as the uploaded session. You can redirect the upload session to use a new filename by calling PUT with the new metadata and @microsoft.graph.sourceUrl attribute.",
+  }
+}
+```
+
+## <a name="cancel-the-upload-session"></a>取消上传会话
+
+若要取消上载会话，请将 DELETE 请求发送到上载 URL。这会清理用来保留以前上载的数据的临时文件。应在上载中止（例如，如果用户取消传输）的情况下使用上述方法。
+
+**expirationDateTime** 通过后，系统将自动清理临时文件及其随附的上传会话。
+有效期过后可能不会立即删除临时文件。
+
+### <a name="request"></a>请求
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+
+```http
+DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+```
+
+### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
+<!-- { "blockType": "response" } -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## <a name="resuming-an-in-progress-upload"></a>继续正在进行的上传
+
+如果上载请求在完成前断开或失败，将忽略该请求中的所有字节。如果应用程序与服务之间的连接断开，可能会发生这种情况。如果发生这种情况，应用程序仍可以继续传输以前完成的文件片段。
+
+若要查找以前已接收的字节范围，应用程序可以请求上载会话的状态。
+
+### <a name="example"></a>示例
+
+通过向 `uploadUrl` 发送 GET 请求来查询上载状态。
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+
+```
+GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
+```
+
+服务器将用需要上载的缺失字节范围的列表和上载会话的过期时间进行响应。
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "expirationDateTime": "2015-01-29T09:21:55.523Z",
+  "nextExpectedRanges": ["12345-"]
+}
+```
+
+### <a name="upload-remaining-data"></a>上载剩余数据
+
+现在，你的应用程序已经知道开始上载的位置，请按照 [将字节上载到上载会话](#upload-bytes-to-the-upload-session) 中的步骤继续上载。
+
+## <a name="handle-upload-errors"></a>处理上传错误
+
+在上传文件的最后一个字节范围时，可能会出现错误。 这可能是由于名称冲突或超出配额限制所致。
+将保留未到期的上传会话，这允许应用通过显式提交上传会话来恢复上传。
+
+若要显式提交上传会话，应用必须使用将用来提交上传会话的新 **driveItem** 资源发出 PUT 请求。
+此新请求应纠正生成原始上传错误的错误根源。
+
+若要指示应用程序提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
+
+<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
+
+```http
+PUT /me/drive/root:/{path_to_parent}
+Content-Type: application/json
+If-Match: {etag or ctag}
+
+{
+  "name": "largefile.vhd",
+  "@microsoft.graph.conflictBehavior": "rename",
+  "@microsoft.graph.sourceUrl": "{upload session URL}"
+}
+```
+
+**注意：** 可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
+
+### <a name="http-response"></a>HTTP 响应
+
+如果可以使用新的元数据提交文件，将返回 `HTTP 201 Created` 或 `HTTP 200 OK` 响应，其中包含已上传文件的项元数据。
+
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
+## <a name="best-practices"></a>最佳做法
+
+* 继续或重试由于连接中断或任意 5xx 错误而失败的上载，包括：
+  * `500 Internal Server Error`
+  * `502 Bad Gateway`
+  * `503 Service Unavailable`
+  * `504 Gateway Timeout`
+* 如果在继续或重试上载请求时返回任意 5xx 服务器错误，请使用指数退避战略。
+* 对于其他错误，不应使用指数退避战略，而应限制尝试重试的次数。
+* 通过重新开始整个上传继续上传时，请处理 `404 Not Found` 错误。 这表示上传会话不再存在。
+* 对大于 10 MiB（10,485,760 个字节）的文件使用可恢复文件传输。
+* 最佳的字节范围大小是 10 MiB，可以实现稳定高速连接。 对于速度较慢或不可靠的连接，较小的文件片段大小可能会给你带来更好的结果。 建议使用的片段大小为 5-10 MiB 之间。
+* 使用 320 KiB（327,680 个字节）倍数的字节范围大小。 如果使用的片段大小不是 320 KiB 的倍数，可能会在上传最后一个字节范围后导致大文件传输失败。
+
+## <a name="error-responses"></a>错误响应
+
+请参阅[错误响应][error-response]主题，详细了解错误返回方式。
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Upload large files using an upload session.",
+  "keywords": "upload,large file,fragment,BITS",
+  "section": "documentation"
+} -->

@@ -1,3 +1,13 @@
+---
+title: directoryObject 资源类型
+description: 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
+ms.openlocfilehash: 0981584bb86b71d06e29de4efc379c84bacac51d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011334"
+---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
@@ -6,12 +16,12 @@
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取 directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
-|[删除 directoryObject](../api/directoryobject_delete.md) | 无 |删除 directory 对象。 |
-|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
-|[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|字符串集合| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
-|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
+|[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
+|[删除 directoryObject](../api/directoryobject-delete.md) | 无 |删除 directory 对象。 |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
 
 ## <a name="properties"></a>属性
 
@@ -19,7 +29,7 @@
 |:---------------|:--------|:----------|
 |id|String|用作此对象的唯一标识符的 Guid；例如，12345678-9abc-def0-1234-56789abcde。键。不可为 null。只读。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无
 
@@ -28,13 +38,25 @@
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json
