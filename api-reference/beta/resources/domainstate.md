@@ -1,10 +1,20 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# domainState 资源类型
+---
+title: domainState 资源类型
+description: 表示域上经过计划的异步操作的状态。
+ms.openlocfilehash: 84c2e418a14de8aa05abfac7a2f04d6637d410b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27042189"
+---
+# <a name="domainstate-resource-type"></a>domainState 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 表示域上经过计划的异步操作的状态。
 
-<a id="properties" class="xliff"></a>
-## 属性
+## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
@@ -12,8 +22,7 @@
 | 操作 | String | 异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。 |
 | status | String | 操作的当前状态。 <br> *Scheduled* - 已计划操作但尚未启动。 <br> *InProgress* - 任务已启动并且正在进行中。 <br> *Failed* - 操作已失败。 |
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表示形式
+## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {
