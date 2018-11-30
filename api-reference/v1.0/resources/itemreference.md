@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ItemReference
+ms.openlocfilehash: 3af3af4b366c61119ba48aaebdc461e356f23464
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007884"
+---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
 **ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。
@@ -15,6 +27,7 @@
 ```json
 {
   "driveId": "string",
+  "driveType": "personal | business | documentLibrary",
   "id": "string",
   "name": "string",
   "path": "string",
@@ -25,14 +38,19 @@
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                              | 说明                                                                                                |
-| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| driveId       | 字符串                            | 包含项的驱动器实例的唯一标识符。只读。                                 |
-| id            | String                            | 项在驱动器中的唯一标识符。只读。                                                     |
-| name          | 字符串                            | 所引用的项的名称。只读。                                                          |
-| 路径          | String                            | 可用于导航到该项的路径。只读。                                                  |
-| shareId       | String                            | 可通过 [Shares](../api/shares_get.md) API 访问共享资源的唯一标识符。 |
-| sharepointIds | [sharepointIds](sharepointids.md) | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                   |
+| 属性      | 类型              | 说明
+|:--------------|:------------------|:-----------------------------------------
+| driveId       | String            | 包含项的驱动器实例的唯一标识符。只读。
+| driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
+| id            | String            | 项在驱动器中的唯一标识符。只读。
+| name          | 字符串            | 所引用的项的名称。只读。
+| 路径          | String            | 可用于导航到该项的路径。只读。
+| shareId       | String            | 可通过 [Shares][] API 访问共享资源的唯一标识符。
+| sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
+
+[drive]: ../resources/drive.md
+[sharepointIds]: ../resources/sharepointids.md
+[Shares]: ../api/shares-get.md
 
 ## <a name="remarks"></a>注解
 
@@ -50,8 +68,11 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "itemReference resource",
-  "keywords": "",
+  "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
+  "tocPath": "Resources/ItemReference"
+} -->
