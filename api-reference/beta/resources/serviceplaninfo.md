@@ -1,16 +1,27 @@
+---
+title: servicePlanInfo 资源类型
+description: 包含与订阅的 SKU 相关的服务计划有关的信息。subscribedSku 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。
+ms.openlocfilehash: 86246de74caef6bf0c778f5b6b38e185841394b1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27046869"
+---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 包含与订阅的 SKU 相关的服务计划有关的信息。[subscribedSku](subscribedsku.md) 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。
 
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
-|provisioningStatus|String|服务计划的预配状态。|
-|appliesTo|String||
-
+|provisioningStatus|字符串|服务计划的预配状态。可能的值：<br/>“Success” - 服务已完全预配。<br/>“Disabled” - 服务已禁用。<br/>“PendingInput” - 服务尚未预配；等待服务确认。<br/>"PendingActivation"-服务设置，但需要由管理员 （例如，Intune_O365 服务计划） 的显式激活。<br/>“PendingProvisioning” - Microsoft 已将新服务添加到产品 SKU，但它尚未在租户中激活。|
+|appliesTo|字符串|可以向其分配服务计划的对象。可能的值：<br/>“User” - 服务计划可分配给各个用户。<br/>“Company” - 服务计划可分配给整个租户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

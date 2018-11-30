@@ -1,13 +1,24 @@
+---
+title: patternedRecurrence 资源类型
+description: 定期模式和区域。
+ms.openlocfilehash: 205c563d8b4cecc0a817dd1893a6c4f002eb4e06
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049321"
+---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 定期模式和区域。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。|
 |区域|[RecurrenceRange](recurrencerange.md)|事件的持续时间。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -18,7 +29,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json

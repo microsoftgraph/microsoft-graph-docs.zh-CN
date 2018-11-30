@@ -1,0 +1,25 @@
+---
+title: Skype for Business 设备使用情况报表
+description: 您可以在整个组织类型的客户端和设备使用获取详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
+ms.openlocfilehash: 7b77a78026475f8690f5ea47cc70db86b654450f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27046874"
+---
+# <a name="skype-for-business-device-usage-reports"></a>Skype for Business 设备使用情况报表
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+您可以在整个组织类型的客户端和设备使用获取详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
+
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 已使用的 Skype for Business 客户端](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)。
+
+## <a name="reports"></a>报表
+
+| 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
+| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
+| [获取用户详细信息](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | Stream          | [skypeForBusinessDeviceUsageUserDetail](../resources/skypeforbusinessdeviceusageuserdetail.md) | 获取用户的 Skype for Business 设备使用情况的详细信息。 |
+| [获取分发用户数](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream          | [skypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md) | 获取组织中使用唯一设备的用户数。 报表会显示每台设备的用户数，包括 Windows、Windows 手机、Android 手机、iPhone 和 iPad。 |
+| [获取用户数](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md) | Stream          | [skypeForBusinessDeviceUsageUserCounts](../resources/skypeforbusinessdeviceusageusercounts.md) | 获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。 还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。 |
