@@ -1,3 +1,13 @@
+---
+title: settingTemplateValue 资源类型
+description: 如果该设置未被实例化，则表示单独的模板设置定义，包括设置的默认值。
+ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011110"
+---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
 如果该设置未被实例化，则表示单独的模板设置定义，包括设置的默认值。

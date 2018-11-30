@@ -1,13 +1,23 @@
+---
+title: 提醒资源类型
+description: 用户日历中的事件提醒。
+ms.openlocfilehash: 131de8772c6b4fa400ab0f48197430611030c255
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27011113"
+---
 # <a name="reminder-resource-type"></a>提醒资源类型
 
-
+用户[日历](calendar.md)中的[事件](event.md)提醒。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |changeKey|String|标识提醒的版本。每次提醒更改时，**changeKey** 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
-|eventId|String|事件的唯一 ID。只读。|
+|eventId|字符串|事件的唯一 ID。只读。|
 |eventLocation|[位置](location.md)|事件的位置。|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
 |eventSubject|String|事件的主题行文本。|

@@ -1,3 +1,13 @@
+---
+title: timeConstraint 资源类型
+description: 根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
+ms.openlocfilehash: 82ab18eb09201236f3227c7dd0660519092a3133
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27008359"
+---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 
 根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
@@ -11,7 +21,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -22,9 +32,9 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityDomain|String|（可选）活动性质。可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。|
+|activityDomain|activityDomain|活动，可选的特点。 可能的值为： `work`， `personal`， `unrestricted`，或`unknown`。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
