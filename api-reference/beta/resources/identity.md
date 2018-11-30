@@ -1,32 +1,41 @@
-# <a name="identity-resource-type"></a>身份资源类型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/14/2017
+title: 标识
+ms.openlocfilehash: 66dcd979718665af650edbfc50a46ece7c2c4c06
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27043103"
+---
+# <a name="identity-resource-type"></a>标识资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **身份**资源表示_主角_的身份。例如，主角可以是用户、设备或应用程序。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.identity"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
 
 ```json
 {
   "displayName": "string",
-  "id": "string"
+  "id": "string",
+  "tenantId": "string",
+  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
-|:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | 此身份的显示名称。注意，该信息并不总是可用或最新。例如，如果用户更改了其显示名称，API 会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/item_delta.md) 时不会显示为更改后的值。        |
-| id          | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
+| 属性            | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
+|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| displayName         | 字符串 | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
+| id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
+| tenantId            | 字符串 | （可选） 的租户的唯一标识。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
 
@@ -36,8 +45,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identity resource",
-  "keywords": "",
+  "description": "Identity contains information about an app, user, or group.",
+  "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Identity"
+} -->
