@@ -1,0 +1,55 @@
+---
+title: audioDuckingConfiguration 资源类型
+description: 参数放掉的其他源 （逐步注销其他源。）
+ms.openlocfilehash: 16003933bc2436c333a80754eb9c4d5d9049172c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049501"
+---
+# <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+参数放掉的其他源 （逐步注销其他源。）
+
+## <a name="properties"></a>属性
+
+| 属性      | 类型     | 说明                                                                     |
+| :------------ | :------- | :-------------------------------------------------------------------------------|
+| lowerLevel    | Int64    | 源中时源正在 ducked %的卷。             |
+| rampActive    | Int64    | 时间 （以毫秒计） 计的 ducked 源以"淡出"。 |
+| rampInactive  | Int64    | 时间 （以毫秒计） 计的 ducked 源"淡出"。  |
+| upperLevel    | Int64    | 源中时源不正在 ducked %的卷。         |
+
+> **注意：** 提升持续时间不能超过 5000 毫秒。
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.audioDuckingConfiguration"
+}-->
+```json
+{
+  "lowerLevel": 20,
+  "rampActive": 1000,
+  "rampInactive": 1000,
+  "upperLevel": 100
+}
+```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "audioDuckingConfiguration resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

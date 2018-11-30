@@ -1,4 +1,16 @@
+---
+title: meetingTimeSuggestion 资源类型
+description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
+ms.openlocfilehash: 04b7996292decab5330cb17b8aada82d58cf759f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27049055"
+---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 会议时间建议包括会议时间、出席可能性、个人忙/闲状态和可用会议地点等信息。
 
@@ -17,7 +29,7 @@
 ```json
 {
   "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
-  "confidence": 1024,
+  "confidence": 1024.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",
@@ -26,7 +38,7 @@
 
 ```
 ## <a name="properties"></a>属性
-| 属性       | 类型    |说明|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |attendeeAvailability|[attendeeAvailability](attendeeavailability.md) 集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
 |confidence|Double|表示所有与会者的出席可能性的百分比值。|
