@@ -1,20 +1,20 @@
 ---
 title: 使用进度表 REST API
 description: 可以使用在 Microsoft Graph 计划程序 API 创建任务并将其分配给 Office 365 中的某个组中的用户。
-ms.openlocfilehash: 1befd7a7e504aa8f568c9b28bc8a08322064bd37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b1ec3f6e179f05a41fa30aec1697c9bfcefad7ee
+ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009567"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123950"
 ---
 # <a name="use-the-planner-rest-api"></a>使用进度表 REST API
 
 可以使用在 Microsoft Graph 计划程序 API 创建任务并将其分配给 Office 365 中的某个组中的用户。
 
-在开始使用规划器 API 之前，值得的了解如何的主要对象相互以及来对 Office 365 组。
+在开始使用规划器 API 之前，您需要了解如何的主要对象相互以及来对 Office 365 组。
 
-## <a name="groups"></a>Groups
+## <a name="office-365-groups"></a>Office 365 组
 
 Office 365 组都是计划工具 API 中计划的所有者。
 为[获取一组由拥有的计划](../api/plannergroup-list-plans.md)，进行以下的 HTTP 请求。
@@ -47,7 +47,7 @@ Planner 资源会排列到基本对象和详细对象中。基本对象提供对
 
 ## <a name="visualization"></a>可视化
 
-除任务和计划数据外，Planner API 还能提供资源，以便跨客户端提供数据的常见可视化。有几种类型的可视化数据可用于任务：
+除了任务和计划的数据，计划工具 API 还提供了资源创建客户端之间的数据的常见可视化。 下表中所列，为任务，提供了几种类型的可视化数据。
 
 | 任务如下所示                                                                        | 使用以下信息对任务进行排序                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -59,11 +59,13 @@ Planner 资源会排列到基本对象和详细对象中。基本对象提供对
 
 存储桶任务板块中的自定义栏由 [bucket](plannerbucket.md) 对象表示，其顺序由对象的 `orderHint` 属性表示。
 
-所有排序均由 [Planner 顺序提示](planner-order-hint-format.md)中的原则指定。
+[计划工具顺序提示](planner-order-hint-format.md)所述的原则由控制所有排序。
 
 ## <a name="planner-resource-versioning"></a>Planner 资源版本控制
 
-Planner 使用 etag 对所有资源进行版本控制。这些 etags 与每个资源的 `@odata.etag` 属性一起返回，且 `PATCH` 和 `DELETE` 请求需要使用 `If-Match` 标头指定客户端已知的最后一个 etag。如果目标更改与相同资源上的 Planner 服务接受的较新更改不冲突，则 Planner 允许对资源的旧版本进行更改。客户端可以通过计算顺序字符串比较中的较大 etag 值，确定在相同的资源中，哪个 etag 较新。每个资源都有单独的 etag。不同资源的 etag 值（包括具有包含关系的 etag 值）无法比较。按预期，客户端应用需要通过读取项的最新版本处理与错误状态代码 409 和 412 相关的两个版本控制，并解决冲突的更改。
+计划工具版本使用**etag**的所有资源。 这些**etag**返回了`@odata.etag`有关每个资源的属性。 `PATCH`和`DELETE`请求需要已知由客户端使用指定的最后一个**etag** `If-Match`标头。
+计划工具允许对较旧版本的资源，如果预期的更改不与更高版本上相同的资源的计划程序服务所接受的更改冲突。 客户端可以标识为相同的资源的**etag**较新的计算的**etag**值大于中的序号字符串比较。 每个资源具有唯一的**etag**。 有关不同的资源，包括那些具有内嵌关系的 Etag 值不能进行比较。
+客户端应用程序应处理版本控制通过读取该项目的最新版本和解决冲突更改相关[错误代码](/graph/errors) **409**和**412** 。
 
 ## <a name="common-planner-error-conditions"></a>常见的 Planner 错误条件
 
@@ -71,7 +73,7 @@ Planner 使用 etag 对所有资源进行版本控制。这些 etags 与每个�
 
 ### <a name="400-bad-request"></a>400 错误的请求
 
-在几种常见情况下，`POST` 和 `PATCH` 请求可能收到 400 状态代码。常见问题包括：
+在某些常见的情况下，`POST`和`PATCH`请求可返回一个 400 的状态代码。 下面是一些常见原因：
 
 * 开放类型属性的类型不正确，或该类型未指定，或它们不包含任何属性。例如，包含复杂值的 [plannerAssignments](plannerassignments.md) 属性需要声明包含 `microsoft.graph.plannerAssignment` 值的 `@odata.type` 属性。
 * 顺序提示值不具有[正确格式](planner-order-hint-format.md)。例如，顺序提示值被直接设置为返回到客户端的值。
@@ -79,7 +81,8 @@ Planner 使用 etag 对所有资源进行版本控制。这些 etags 与每个�
 
 ### <a name="403-forbidden"></a>403 已禁止
 
-除常规错误外，当超出服务定义的限制时，Planner API 还会返回此状态代码。如果出现这种情况，错误资源类型上的 `code` 属性将标识请求超出的限制类型。限制类型的可能值包括：
+除了常规错误，计划工具 API 还返回 403 状态代码时已超出服务定义的限制。 如果是这样，`code`错误资源类型上的属性将指示请求超过此限制的类型。
+以下是可能的限制类型的值。
 
 | 值                         | 说明                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,8 +97,10 @@ Planner 使用 etag 对所有资源进行版本控制。这些 etags 与每个�
 | MaximumReferencesOnTask       | [plannerTaskDetails](plannertaskdetails.md) 资源上的 `references` 属性包含的值过多。                                                                                          |
 | MaximumChecklistItemsOnTask   | [plannerTaskDetails](plannertaskdetails.md) 资源上的 `checklist` 属性包含的值过多。                                                                                           |
 | MaximumAssigneesInTasks       | [plannerTask](plannertask.md) 资源上的 `assignments` 属性包含的值过多。                                                                                                       |
+| MaximumPlannerPlans       | 组已包含一个计划。 目前，组只能包含一个计划。 **注意：** 某些 Microsoft 应用程序可以超过此限制。 将来，我们将此功能扩展到所有应用程序。                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 前提条件不满足 (Precondition Failed) 
 
-Planner API 中的所有 `POST`、`PATCH` 和 `DELETE` 请求需要使用受请求约束的资源中可见的最后一个 etag 值指定 `If-Match` 标头。此外，如果请求中指定的 etag 值不再匹配服务中资源的版本，可以返回 412 状态代码。在这种情况下，客户端应该再次读取资源并获取新的 etag。
+所有平面 API `POST`， `PATCH`，和`DELETE`请求需要`If-Match`标头以指定受制请求的资源的最后一个已知的 etag 值。
+如果请求中指定的 etag 值不再与服务中的资源的版本相匹配，也会返回 412 状态代码。 在这种情况下，客户端应再次阅读资源并获取新的 etag。
 

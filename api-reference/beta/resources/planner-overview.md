@@ -1,12 +1,12 @@
 ---
 title: 使用进度表 REST API
 description: 可以使用在 Microsoft Graph 计划程序 API 创建任务并将其分配给 Office 365 中的某个组中的用户。
-ms.openlocfilehash: 264a196a24dde21b57ff3627c7c39c1951a02ce6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
+ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041447"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123964"
 ---
 # <a name="use-the-planner-rest-api"></a>使用进度表 REST API
 
@@ -14,9 +14,9 @@ ms.locfileid: "27041447"
 
 可以使用在 Microsoft Graph 计划程序 API 创建任务并将其分配给 Office 365 中的某个组中的用户。
 
-在开始使用规划器 API 之前，值得的了解如何的主要对象相互以及来对 Office 365 组。
+在开始使用规划器 API 之前，它将有助于您了解如何的主要对象相互以及来对 Office 365 组。
 
-## <a name="groups"></a>Groups
+## <a name="office-365-groups"></a>Office 365 组
 
 Office 365 组都是计划工具 API 中计划的所有者。
 为[获取一组由拥有的计划](../api/plannergroup-list-plans.md)，进行以下的 HTTP 请求。
@@ -25,7 +25,7 @@ Office 365 组都是计划工具 API 中计划的所有者。
 GET /groups/{id}/planner/plans
 ```
 
-当[创建新的计划](../api/planner-post-plans.md)，通过设置指定给计划组所有者`owner`计划对象的属性。 必须由组拥有计划。 组可以拥有多个计划。
+当[创建新的计划](../api/planner-post-plans.md)，通过设置使组所有者`owner`计划对象的属性。 必须按组拥有计划。
 
 >**注意：** 正在创建计划的用户必须将拥有计划的组的成员。 当使用[创建组](../api/group-post-groups.md)创建一个新的组时，您不是添加到组，作为成员。 创建组后，将自己添加为成员使用[组发布成员](../api/group-post-members.md)。
 
@@ -45,11 +45,11 @@ GET /planner/plans/{id}/tasks
 
 ## <a name="task-and-plan-details"></a>任务和计划详细信息 
 
-计划工具资源排列到基本任务和计划对象和详细任务和计划对象。 基本对象提供的资源，适用于列表视图的详细信息对象提供对适用于深化视图的资源的大型属性访问时的常见属性的访问权限。
+Planner 资源会排列到基本对象和详细对象中。基本对象提供对适合列表视图的资源的通用属性的访问权限，而详细对象提供对适合深化视图的资源的大型属性的访问权限。
 
 ## <a name="visualization"></a>可视化
 
-除任务和计划数据外，Planner API 还能提供资源，以便跨客户端提供数据的常见可视化。有几种类型的可视化数据可用于任务：
+除了任务和计划的数据，计划工具 API 还提供了资源创建客户端之间的数据的常见可视化。 下表中所列，为任务，提供了几种类型的可视化数据。
 
 | 任务如下所示                                                                        | 使用以下信息对任务进行排序                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -61,7 +61,7 @@ GET /planner/plans/{id}/tasks
 
 存储桶任务板块中的自定义栏由 [bucket](plannerbucket.md) 对象表示，其顺序由对象的 `orderHint` 属性表示。
 
-所有排序均由 [Planner 顺序提示](planner-order-hint-format.md)中的原则指定。
+[计划工具顺序提示](planner-order-hint-format.md)所述的原则由控制所有排序。
 
 ## <a name="delta">使用增量查询的修订</a>
 
@@ -118,7 +118,7 @@ GET /planner/plans/{id}/tasks
 ## <a name="planner-resource-versioning"></a>Planner 资源版本控制
 
 计划工具版本使用**etag**的所有资源。 这些**etag**返回了`@odata.etag`有关每个资源的属性。 `PATCH`和`DELETE`请求需要已知由客户端使用指定的最后一个**etag** `If-Match`标头。
-如果预期的更改不与更高版本上相同的资源的计划程序服务所接受的更改冲突，计划工具允许更改旧版本的资源。 客户端可以标识为相同的资源的**etag**较新的计算的**etag**值大于中的序号字符串比较。 每个资源具有唯一的**etag**。 有关不同的资源，包括那些具有内嵌关系的 Etag 值不能进行比较。
+计划工具允许对较旧版本的资源，如果预期的更改不与更高版本上相同的资源的计划程序服务所接受的更改冲突。 客户端可以标识为相同的资源的**etag**较新的计算的**etag**值大于中的序号字符串比较。 每个资源具有唯一的**etag**。 有关不同的资源，包括那些具有内嵌关系的 Etag 值不能进行比较。
 客户端应用程序应处理版本控制通过读取该项目的最新版本和解决冲突更改相关[错误代码](/graph/errors) **409**和**412** 。
 
 ## <a name="common-planner-error-conditions"></a>常见的 Planner 错误条件
@@ -127,32 +127,16 @@ GET /planner/plans/{id}/tasks
 
 ### <a name="400-bad-request"></a>400 错误的请求
 
-在几种常见情况下，`POST` 和 `PATCH` 请求可能收到 400 状态代码。常见问题包括：
+在某些常见的情况下，`POST`和`PATCH`请求可返回一个 400 的状态代码。 下面是一些常见原因：
 
-* 打开类型属性不是正确的类型。
-* 不指定的类型。
-* 请求不包含任何属性。
+* 开放类型属性的类型不正确，或该类型未指定，或它们不包含任何属性。例如，包含复杂值的 [plannerAssignments](plannerassignments.md) 属性需要声明包含 `microsoft.graph.plannerAssignment` 值的 `@odata.type` 属性。
+* 顺序提示值不具有[正确格式](planner-order-hint-format.md)。例如，顺序提示值被直接设置为返回到客户端的值。
+* 数据在逻辑上不一致。例如，任务的开始日期晚于任务的到期日期。
 
-#### <a name="example"></a>示例
+### <a name="403-forbidden"></a>403 已禁止
 
-具有复杂的值的[plannerAssignments](plannerassignments.md)属性需要声明`@odata.type`属性值与`microsoft.graph.plannerAssignment`。
-
-* 顺序提示值不具有[正确的格式](planner-order-hint-format.md)。
-
-   例如，直接向返回到客户端的值设置顺序提示值。
-
-* 数据是逻辑不一致。
-
-   例如，任务的开始日期是晚于截止任务日期。
-
-### <a name="planner-error-status-codes"></a>计划工具错误状态代码
-
-常规错误状态代码，除了计划程序通过返回以下代码指示特殊的错误条件。
-
-#### <a name="403-forbidden"></a>403 已禁止
-
-计划工具 API 返回的**403**状态代码时已超出服务定义的限制。 在这种情况下，`code`错误资源类型上的属性，指示请求超过此限制的类型。
-限制类型的可能值包括：
+除了常规错误，计划工具 API 还返回 403 状态代码时已超出服务定义的限制。 如果是这样，`code`错误资源类型上的属性将指示请求超过此限制的类型。
+以下是可能的限制类型的值。
 
 | 值                         | 说明                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -170,8 +154,10 @@ GET /planner/plans/{id}/tasks
 | MaximumFavoritePlansForUser   | `favoritePlanReferences`属性对[plannerUser](planneruser.md)资源包含值太多。                                                                                            |
 | MaximumRecentPlansForUser     | `recentPlanReferences`属性对[plannerUser](planneruser.md)资源包含值太多。                                                                                              |
 | MaximumContextsOnPlan         | `contexts`属性对[plannerPlan](plannerplan.md)资源包含值太多。                                                                                                          |
+| MaximumPlannerPlans       | 组已包含一个计划。 目前，组只能包含一个计划。 **注意：** 某些 Microsoft 应用程序可以超过此限制。 将来，我们将此功能扩展到所有应用程序。                                                                                                      |
 
-#### <a name="412-precondition-failed"></a>412 前提条件不满足 (Precondition Failed)
+### <a name="412-precondition-failed"></a>412 前提条件不满足 (Precondition Failed) 
 
-Planner API 中的所有 `POST`、`PATCH` 和 `DELETE` 请求需要使用受请求约束的资源中可见的最后一个 etag 值指定 `If-Match` 标头。此外，如果请求中指定的 etag 值不再匹配服务中资源的版本，可以返回 412 状态代码。在这种情况下，客户端应该再次读取资源并获取新的 etag。
+所有平面 API `POST`， `PATCH`，和`DELETE`请求需要`If-Match`标头以指定受制请求的资源的最后一个已知的 etag 值。
+如果请求中指定的 etag 值不再与服务中的资源的版本相匹配，也会返回 412 状态代码。 在这种情况下，客户端应再次阅读资源并获取新的 etag。
 
