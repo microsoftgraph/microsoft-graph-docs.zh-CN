@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingInvitation
+ms.openlocfilehash: ba909158ce0ba28b6af20b8dbff858c65f07cbe9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27047522"
+---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
+
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 **SharingInvitation** 资源将与邀请相关的数据项分组到一个单一结构。
 
@@ -27,9 +41,9 @@
 
 | 属性名称  | 类型                          | 说明                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| email          | String                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                          |
+| email          | 字符串                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                          |
 | invitedBy      | [identitySet](identityset.md) | 提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。 |
-| signInRequired | Boolean                       | 如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。                     |
+| signInRequired | 布尔                       | 如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。                     |
 
 ## <a name="remarks"></a>注解 
 
@@ -40,8 +54,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->
