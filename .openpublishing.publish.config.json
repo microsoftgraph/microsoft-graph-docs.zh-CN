@@ -33,6 +33,7 @@
   "notification_subscribers": ["mor-oitac-eng@moravia.com"],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
+    "live",
     "live-sxs",
     "master-sxs",
     "master"
