@@ -1,50 +1,50 @@
 ---
 title: 删除音频路由组
 description: 删除指定的 audioRoutingGroup。
-ms.openlocfilehash: 2683c31f2df4f6913019f6a5f8c58cb009684043
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043956"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27155989"
 ---
-# <a name="delete-audio-routing-group"></a><span data-ttu-id="f493a-103">删除音频路由组</span><span class="sxs-lookup"><span data-stu-id="f493a-103">Delete audio routing group</span></span>
+# <a name="delete-audio-routing-group"></a><span data-ttu-id="e7775-103">删除音频路由组</span><span class="sxs-lookup"><span data-stu-id="e7775-103">Delete audio routing group</span></span>
 
-> <span data-ttu-id="f493a-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f493a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f493a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f493a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7775-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e7775-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7775-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e7775-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f493a-106">删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="f493a-106">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="e7775-106">删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="e7775-106">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f493a-107">权限</span><span class="sxs-lookup"><span data-stu-id="f493a-107">Permissions</span></span>
-<span data-ttu-id="f493a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f493a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7775-107">权限</span><span class="sxs-lookup"><span data-stu-id="e7775-107">Permissions</span></span>
+<span data-ttu-id="e7775-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7775-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f493a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f493a-110">Permission type</span></span> | <span data-ttu-id="f493a-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f493a-111">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="e7775-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7775-110">Permission type</span></span> | <span data-ttu-id="e7775-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e7775-111">Permissions (from least to most privileged)</span></span>  |
 | :-------------- | :------------------------------------------- |
-| <span data-ttu-id="f493a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f493a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="f493a-113">不支持</span><span class="sxs-lookup"><span data-stu-id="f493a-113">Not Supported</span></span>        |
-| <span data-ttu-id="f493a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f493a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f493a-115">不支持</span><span class="sxs-lookup"><span data-stu-id="f493a-115">Not Supported</span></span>        |
-| <span data-ttu-id="f493a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f493a-116">Application</span></span>     | <span data-ttu-id="f493a-117">Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="f493a-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="e7775-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7775-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e7775-113">不支持</span><span class="sxs-lookup"><span data-stu-id="e7775-113">Not Supported</span></span>        |
+| <span data-ttu-id="e7775-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7775-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7775-115">不支持</span><span class="sxs-lookup"><span data-stu-id="e7775-115">Not Supported</span></span>        |
+| <span data-ttu-id="e7775-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7775-116">Application</span></span>     | <span data-ttu-id="e7775-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="e7775-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f493a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f493a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7775-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7775-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
 DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f493a-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f493a-119">Request headers</span></span>
-| <span data-ttu-id="f493a-120">名称</span><span class="sxs-lookup"><span data-stu-id="f493a-120">Name</span></span>          | <span data-ttu-id="f493a-121">说明</span><span class="sxs-lookup"><span data-stu-id="f493a-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="e7775-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7775-119">Request headers</span></span>
+| <span data-ttu-id="e7775-120">名称</span><span class="sxs-lookup"><span data-stu-id="e7775-120">Name</span></span>          | <span data-ttu-id="e7775-121">说明</span><span class="sxs-lookup"><span data-stu-id="e7775-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f493a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f493a-122">Authorization</span></span> | <span data-ttu-id="f493a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f493a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e7775-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7775-122">Authorization</span></span> | <span data-ttu-id="e7775-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e7775-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f493a-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="f493a-125">Request body</span></span>
-<span data-ttu-id="f493a-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f493a-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7775-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7775-125">Request body</span></span>
+<span data-ttu-id="e7775-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e7775-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f493a-127">响应</span><span class="sxs-lookup"><span data-stu-id="f493a-127">Response</span></span>
-<span data-ttu-id="f493a-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f493a-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e7775-127">响应</span><span class="sxs-lookup"><span data-stu-id="e7775-127">Response</span></span>
+<span data-ttu-id="e7775-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e7775-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f493a-130">示例</span><span class="sxs-lookup"><span data-stu-id="f493a-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e7775-130">示例</span><span class="sxs-lookup"><span data-stu-id="e7775-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f493a-131">请求</span><span class="sxs-lookup"><span data-stu-id="f493a-131">Request</span></span>
-<span data-ttu-id="f493a-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="f493a-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="e7775-131">请求</span><span class="sxs-lookup"><span data-stu-id="e7775-131">Request</span></span>
+<span data-ttu-id="e7775-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7775-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -54,9 +54,9 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="f493a-133">响应</span><span class="sxs-lookup"><span data-stu-id="f493a-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e7775-133">响应</span><span class="sxs-lookup"><span data-stu-id="e7775-133">Response</span></span>
 
-> <span data-ttu-id="f493a-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f493a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e7775-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e7775-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
