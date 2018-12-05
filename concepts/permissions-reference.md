@@ -14,13 +14,13 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
+- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes)。  
 
-- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
-- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
+- 对于委派权限，应用的_有效权限_将至少是授予应用的委派权限（通过同意）和当前已登录用户的特权之间的特权交集。应用永远不会拥有比已登录用户更多的特权。在组织内，已登录用户的特权可以由策略或一个或多个管理员角色的成员资格确定。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-assign-admin-roles)。<br/><br/>例如，假设已授予应用 _User.ReadWrite.All_ 委派权限。此权限名义上授予应用读取和更新组织中每个用户配置文件的权限。如果已登录的用户是全局管理员，则应用将能够更新组织中每个用户的配置文件。但是，如果已登录的用户不具有管理员角色，则应用将只能更新已登录用户的配置文件。它将无法更新组织中其他用户的配置文件，因为该应用代表用户执行操作的权限中不包括这些权限。
   
 - 对于应用程序权限，应用的_有效权限_将是权限默示的完整特权级别。例如，具有 _User.ReadWrite.All_ 应用程序权限的应用可以更新组织中每个用户的配置文件。 
 
@@ -39,7 +39,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 ### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft 帐户和工作或学校帐户
 
-并非所有的权限可用于 Microsoft 帐户和工作或学校帐户。 您可以检查**支持 Microsoft 帐户**列中的每个权限组，以确定是否为 Microsoft 帐户、 工作或学校帐户，或两者有效的特定权限。 
+并非所有权限都适用于 Microsoft 帐户和工作或学校帐户。 你可以检查每个权限组的**支持的 Microsoft 帐户**列，以确定特定权限是否对 Microsoft 帐户和/或工作或学校帐户有效。 
 
 ### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>组织中来宾用户的用户和组搜索限制
 
@@ -57,7 +57,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _AppCatalog.ReadWrite.All_ | 读取和写入所有应用程序目录  | 允许应用程序以创建、 读取、 更新和删除应用程序目录中的应用程序。 | 是 |
+| _AppCatalog.ReadWrite.All_ | 读取和写入所有应用目录  | 允许应用在应用目录中创建、读取、更新和删除应用。 | 是 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -65,15 +65,15 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 
 ### <a name="remarks"></a>注解
 
-目前唯一目录是在[Microsoft 团队](teams-concept-overview.md)中的应用程序的列表。
+当前的唯一目录是 [Microsoft Teams](teams-concept-overview.md) 中的应用程序列表。
 
 ### <a name="example-usage"></a>用法示例
 
 #### <a name="delegated"></a>委派
-* _AppCatalog.ReadWrite.All_：[列出目录中的所有应用程序](/graph/api/teamsapp-list?view=graph-rest-beta)(`GET /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Publish an app](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_：[更新的已发布的应用程序](/graph/api/teamsapp-update?view=graph-rest-beta)(`PATCH /beta/appCatalogs/teamsApps/{id}`)
-* _AppCatalog.ReadWrite.All_：[删除的已发布的应用程序](/graph/api/teamsapp-delete?view=graph-rest-beta)(`DELETE /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_：[：列出目录中的所有应用程序](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_：[发布一个应用](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_：[更新某个已发布的应用](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_：[删除某个已发布的应用](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
 #### <a name="application"></a>应用程序
 
@@ -180,7 +180,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
-## <a name="calls-permissions"></a>呼叫权限
+## <a name="calls-permissions"></a>通话权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
@@ -192,13 +192,13 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Calls.Initiate.All_|启动传出 1 对 1 呼叫从应用程序 （预览）|允许应用程序在贵组织的目录中，已登录的用户的情况下放置到单个用户和转接呼叫的用户的出站呼叫。|是|
-|_Calls.InitiateGroupCall.All_|启动传出组呼叫从应用程序 （预览）|允许应用程序发出向多个用户的出站呼叫，并将参与者添加到登录用户的情况下在组织中的会议。|是|
-|_Calls.JoinGroupCall.All_|加入组呼叫和会议作为应用程序 （预览）|允许应用程序以在组织中，已登录的用户的情况下加入组呼叫和计划的会议。 应用程序将被加入的会议在您的租户中的目录用户权限。|是|
-|_Calls.JoinGroupCallasGuest.All_|加入组呼叫和会议作为来宾 （预览）|允许应用程序以匿名方式加入您的组织，没有已登录的用户组呼叫和计划的会议。 将以来宾身份加入会议租户中加入应用程序。|是|
-|_Calls.AccessMedia.All_\*|访问呼叫作为应用程序 (preview) 中的媒体流|允许应用程序以获取对媒体流进行通话，已登录的用户的情况下直接访问。|是|
+|_Calls.Initiate.All_|从应用发起一对一拨出通话（预览版）|允许应用在没有登录用户的情况下，向单个用户发起播出通话并将通话转接到组织目录中的用户。|是|
+|_Calls.InitiateGroupCall.All_|从应用发起组拨出通话（预览版）|允许应用在没有登录用户的情况下，向多个用户发起播出通话并向组织中的会议添加参与者。|是|
+|_Calls.JoinGroupCall.All_|作为应用加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，加入组织中的组通话和计划会议。 应用将加入到租户的会议中并获得目录用户特权。|是|
+|_Calls.JoinGroupCallasGuest.All_|作为来宾加入组通话和会议（预览版）|允许应用在没有登录用户的情况下，以匿名方式加入组织中的组通话和计划会议。 应用将作为来宾加入租户的会议。|是|
+|_Calls.AccessMedia.All_\*|作为应用访问通话中的媒体数据流（预览版）|允许应用在没有登录用户的情况下，直接访问通话中的媒体数据流。|是|
 
-> \***重要：** 您不可能使用 Microsoft.Graph.Calls.Media API 记录或否则保持从呼叫或您自动程序访问的会议的媒体内容。
+> \***重要提示：** 请勿使用 Microsoft.Graph.Calls.Media API 来记录或以其他方式保留机器人访问的通话或会议中的媒体内容。
 
 <br/>
 
@@ -206,13 +206,13 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 #### <a name="application"></a>应用程序
 
-* _Calls.Initiate.All_： 使组织中的应用程序中对用户的对等呼叫 (`POST /beta/app/calls`)。
-* _Calls.InitiateGroupCall.All_： 使应用程序中对组织中的用户组的呼叫组 (`POST /beta/app/calls`)。
-* _Calls.JoinGroupCall.All_： 加入组呼叫或从应用程序的联机会议 (`POST /beta/app/calls`)。
-* _Calls.JoinGroupCallasGuest.All_： 加入的组呼叫或从该应用程序，但该应用程序的联机会议只在会议中具有来宾权限 (`POST /beta/app/calls`)。
-* _Calls.AccessMedia.All_： 创建或加入呼叫和应用程序获取直接访问呼叫中的参与者的媒体流 (`POST /beta/app/calls`)。
+* _Calls.Initiate.All_：从应用程序向组织中的某个用户发起对等通话 (`POST /beta/app/calls`)。
+* _Calls.InitiateGroupCall.All_：从应用程序向组织中的一组用户发起组通话 (`POST /beta/app/calls`)。
+* _Calls.JoinGroupCall.All_：从应用程序加入组通话或联机会议 (`POST /beta/app/calls`)。
+* _Calls.JoinGroupCallasGuest.All_：从应用程序加入组通话或联机会议，但应用程序在会议中仅具有来宾特权 (`POST /beta/app/calls`)。
+* _Calls.AccessMedia.All_：创建或加入某个通话，且应用将能够直接访问该通话中的参与者媒体数据流 (`POST /beta/app/calls`)。
 
-> **注意：** 有关请求示例，请参阅[创建呼叫](/graph/api/application-post-calls?view=graph-rest-beta)。
+> **注意：** 有关请求示例，请参阅[创建通话](/graph/api/application-post-calls?view=graph-rest-beta)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -285,8 +285,8 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 | _Directory.Read.All_ |读取目录数据 | 允许应用程序读取组织目录中的数据，如用户、组和应用程序。 **注意**：如果应用程序已在自己组织的租户中注册，用户可能会同意应用程序要求必须有此权限。| 是 | 否 |
 | _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 | 否 |
 | _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 | 否 |
-| _PrivilegedAccess.ReadWrite.AzureAD_ |读取和写入的目录的特权身份管理数据  | 通过 Azure AD 应用程序具有读和写访问权限特权标识管理 Api。 | 是 | 否 |
-| _PrivilegedAccess.ReadWrite.AzureRBAC_ |读取和写入 Azure 资源特权身份管理数据 | 允许应用程序具有读和写访问特权标识管理 Api 的 Azure 资源。 | 是 | 否 |
+| _PrivilegedAccess.ReadWrite.AzureAD_ |为目录读取和写入 Privileged Identity Management 数据  | 允许应用读取和写入 Azure AD 的 Privileged Identity Management API。 | 是 | 否 |
+| _PrivilegedAccess.ReadWrite.AzureRBAC_ |为 Azure 资源读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入 Azure 资源的 Privileged Identity Management API。 | 是 | 否 |
 
 <br/>
 
@@ -315,9 +315,9 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 - 管理许可证分配
 - 在应用程序上定义架构扩展
 > **注意**：
-> - 若要重置用户密码没有权限
-> - 无权限，才能删除资源 （包括用户或组）
-> - 特别是排除创建或更新的上面未列出的资源。 这包括： 应用程序、 oAauth2Permissiongrant、 appRoleAssignment、 设备、 servicePrincipal、 组织、 域和等等。
+> - 无权重置用户密码
+> - 无权删除资源（包括用户或组）
+> - 特别排除创建或更新以上未列出的资源。 这包括：application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains等。
  
 
 ### <a name="example-usage"></a>用法示例
@@ -398,7 +398,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ### <a name="remarks"></a>注解
 
-> **注意**： 个人帐户 Files.Read 和 Files.ReadWrite 还授予对文件共享与已登录的用户访问权限。 
+> **注意**：对于个人帐户，Files.Read 和 Files.ReadWrite 还会授予与登录用户共享的文件的访问权限。 
 
 Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
 
@@ -423,7 +423,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 |权限|显示字符串|说明|需经过管理员同意|
 |:----------|:--------------|:-----------|:-------|
-|_Financials.ReadWrite.All_|读取和写入财务数据|允许应用程序以读取和写入代表登录用户的财务数据|否|
+|_Financials.ReadWrite.All_|读取和写入财务数据|允许应用代表登录用户读取和写入财务数据|否|
 
 ## <a name="group-permissions"></a>组权限
 
@@ -438,8 +438,8 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | 读取所有组 | 允许应用程序读取的登录用户的情况下的所有组的成员身份。 > **注意：** 不是所有组 API 支持使用仅应用程序的权限的访问。 请参阅示例的[已知问题](known-issues.md)。 | 是 |
-| _Group.ReadWrite.All_ | 读取和写入所有组 | 允许应用程序以创建组、 读取和更新组成员身份和删除组。 登录用户的情况下该应用程序，可以执行所有这些操作。 > **注意：** 不是所有组 API 支持使用仅应用程序的权限的访问。 请参阅示例的[已知问题](known-issues.md)。| 是 |
+| _Group.Read.All_ | 读取所有组 | 允许应用在没有登录用户的情况下读取所有组的成员身份。 > **注意：** 并非所有组 API 都支持使用仅限应用权限进行访问。 有关示例，请参阅[已知问题](known-issues.md)。 | 是 |
+| _Group.ReadWrite.All_ | 读取和写入所有组 | 允许应用创建组、读取和更新组成员以及删除组。 应用可以在没有登录用户的情况下执行所有这些操作。 > **注意：** 并非所有组 API 都支持使用仅限应用权限进行访问。 有关示例，请参阅[已知问题](known-issues.md)。| 是 |
 
 
 ### <a name="remarks"></a>注解
@@ -461,8 +461,8 @@ Microsoft 个人帐户不支持组功能。
 * _Group.Read.All_：读取登录用户所属的全部 Office 365 组 (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_：读取诸如对话之类的所有 Office 365 组内容 (`GET /groups/{id}/conversations`)。
 * _Group.ReadWrite.All_：更新组属性，如照片 (`PUT /groups/{id}/photo/$value`)。
-* _Group.ReadWrite.All_： 更新组成员 (`POST /groups/{id}/members/$ref`)。 
-> **注意：**： 这还需要_User.ReadBasic.All_读取要添加成员身份的用户。
+* _Group.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`). 
+> **注意：** 这还要求 _User.ReadBasic.All_ 读取要作为成员添加的用户。
 
 #### <a name="application"></a>应用程序
 
@@ -536,24 +536,24 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 ---
 
 
-## <a name="identity-risky-user-permissions"></a>标识 risky 用户权限
+## <a name="identity-risky-user-permissions"></a>标识风险用户权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityRiskyUser.Read.All_ |   阅读标识用户风险信息  | 允许应用程序读取代表登录用户在组织中的所有用户的标识用户风险信息。 | 是 | 否 |
+| _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息  | 允许应用代表登录用户读取组织中所有用户的标识用户风险信息。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _IdentityRiskyUser.Read.All_ |   阅读标识用户风险信息 | 允许应用程序读取登录用户的情况下在组织中的所有用户的标识用户风险信息。 | 是 |
+| _IdentityRiskyUser.Read.All_ |   读取标识用户风险信息 | 允许应用在没有登录用户的情况下读取组织中所有用户的标识用户风险信息。 | 是 |
 
 
 ### <a name="remarks"></a>注解
 
-仅对工作或学校帐户有效_IdentityRiskyUser.Read.All_ 。 委派权限读取标识用户风险信息与应用程序，已登录的用户必须是下列管理员角色之一的成员： 全局管理员、 安全管理员或安全读取器。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+_IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过委派权限读取标识用户风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -561,9 +561,9 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 
 以下用法对委派权限和应用程序权限均有效：
 
-* 读取所有 risky 用户和租户中的属性 (`GET /beta/riskyUsers`)
-* 读取所有 risky 用户其聚合风险级别为中等 (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
-* 读取特定用户的风险信息 (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+* 读取租户中的所有风险用户和属性 (`GET /beta/riskyUsers`)
+* 读取所有聚合风险级别为中等的风险用户 (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
+* 阅读特定用户的风险信息 (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
  
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -754,12 +754,12 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 #### <a name="delegated-permissions"></a>委派权限
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Notifications.ReadWrite.CreatedByApp_ | 提供和管理该应用程序的通知。 | 允许应用程序提供其代表登录用户的通知。 此外允许应用程序读取、 更新和删除此应用程序的用户的通知项目。 |否 |
+| _Notifications.ReadWrite.CreatedByApp_ | 提供和管理此应用的通知。 | 允许应用代表登录用户提供其通知。 此外，还允许应用读取、更新和删除此应用的用户通知项目。 |否 |
 ### <a name="remarks"></a>注解
-*Notifications.ReadWrite.CreatedByApp*是有效的 Microsoft 帐户和工作或学校帐户。 拥有此权限关联的*CreatedByApp*约束指示该服务将应用于基于调用应用程序，或者是 Microsoft 帐户应用程序 ID 标识的结果的隐式筛选或应用程序 Id 的一组配置跨平台应用程序标识。 
+*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。 与此权限相关联的 *CreatedByApp* 约束指示服务将基于通话应用的标识（Microsoft 帐户应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。 
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委派
-* _Notifications.ReadWrite.CreatedByApp_： 发布以用户为中心的通知，从而可能会将它传递给用户的多个应用程序客户端在不同的终结点上运行。 (POST/我/通知 /)。
+* _Notifications.ReadWrite.CreatedByApp_：发布以用户为中心的通知，然后可能会将该通知传递至用户运行在不同端点上的多个应用程序客户端。 (POST /me/notifications/)。
 
 ---
 
@@ -775,8 +775,8 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|从应用程序 （预览） 的读取联机会议详细信息|允许应用程序读取登录用户的情况下在组织中的联机会议详细信息。|是|
-|_OnlineMeetings.ReadWrite.All_|读取和创建从应用程序 （预览） 代表用户的联机会议|允许应用程序代表登录用户没有的用户，贵组织中创建联机会议。|是|
+|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息（预览版）|允许应用在没有登录用户的情况下读取组织中的联机会议详细信息。|是|
+|_OnlineMeetings.ReadWrite.All_|代表用户从应用读取和创建联机会议（预览版）|允许应用在没有登录用户的情况下代表用户创建组织中的联机会议。|是|
 
 <br/>
 
@@ -784,10 +784,10 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 #### <a name="application"></a>应用程序
 
-* _OnlineMeetings.Read.All_： 检索的属性和关系的[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)(`GET /beta/app/onlinemeetings/{id}`)。
-* _OnlineMeetings.ReadWrite.All_： 创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)(`POST /beta/app/onlinemeetings`)。
+* _OnlineMeetings.Read.All_：检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/app/onlinemeetings/{id}`)。
+* _OnlineMeetings.ReadWrite.All_：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`)。
 
-> **注意**： 创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)创建代表用户在请求正文中，指定会议但不会显示在用户的日历。
+> **注意**：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)时，会代表在请求正文中指定的用户创建一个会议，但不会在该用户的日历上显示该会议。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -799,7 +799,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _电子邮件_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 否 |
+| _email_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 否 |
 | _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 | 否 |
 | _openid_ |    让用户登录 | 允许用户以其工作或学校帐户登录应用，并允许应用查看用户的基本个人资料信息。| 否 | 否 |
 | _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 否 |
@@ -924,7 +924,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用在没有登录用户的情况下读取所有网站集中的文档和列表项。 | 是 |
 | _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有网站集中的文档和列表项。 | 是 |
 | _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用在没有登录用户的情况下管理和创建所有网站集中的列表、文档和列表项。  | 是  |
-| _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
+| _Sites.FullControl.All_ | 完全控制所有网站集 | 允许应用在没有登录用户的情况下具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  |
 
 
 ### <a name="remarks"></a>注解
@@ -987,7 +987,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _AgreementAcceptance.Read_ | 阅读用户使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 | 否 |
 | _AgreementAcceptance.Read.All_ | 阅读用户可以访问的使用条款接受状态 | 允许应用代表登录用户阅读使用条款接受状态。 | 是 | 否 |
 
-### <a name="remarks"></a>备注
+### <a name="remarks"></a>注解
 
 上述所有权限仅对工作或学校帐户有效。
 
@@ -1017,8 +1017,8 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。 其中包括显示名称、名字和姓氏、电子邮件地址、开放扩展和照片。 此外，还允许应用读取已登录用户的完整个人资料。 | 否 | 是 |
 | _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 | 是 |
 | _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 | 是 |
-| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 可访问 |
-| _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 可访问 | 是 |
+| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 是 |
+| _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 是 | 是 |
 
 
 #### <a name="application-permissions"></a>应用程序权限

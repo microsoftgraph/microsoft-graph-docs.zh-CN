@@ -1,12 +1,12 @@
 ---
 title: Azure AD 标识和访问管理 API 概述
 description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
-ms.openlocfilehash: 7094b91ac57a00cbcf3b79978e8a199b82c6cdac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091929"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156045"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -40,7 +40,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ### <a name="manage-devices"></a>管理设备
 
-[管理组织中注册的设备](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
+[管理组织中注册的设备](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
 
 ### <a name="partner-tenant-management"></a>合作伙伴租户管理
 
@@ -73,6 +73,7 @@ Azure AD 使用自适应机器学习算法和启发式方法来检测异常情�
 您可以配置访问 reviews （英文） 的组成员身份和应用程序访问。 [Access 会检查](/graph/api/resources/accessreviews-root?view=graph-rest-beta)的功能在 Azure AD Premium P2。
 
 ## <a name="api-reference"></a>API 参考
+
 正在寻找此服务的 API 参考？
 
 - [Azure AD 身份和访问管理 API 中 Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
@@ -81,7 +82,7 @@ Azure AD 使用自适应机器学习算法和启发式方法来检测异常情�
 ## <a name="next-steps"></a>后续步骤
 
 - 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)。
-- 使用 Azure AD 对 Microsoft Graph [进行身份验证](auth-overview.md)。 
+- 使用 Azure AD 对 Microsoft Graph [进行身份验证](auth-overview.md)。
 - 将 [Azure AD 登录](https://azure.microsoft.com/en-us/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。
