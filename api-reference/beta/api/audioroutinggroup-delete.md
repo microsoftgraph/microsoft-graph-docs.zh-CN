@@ -1,12 +1,12 @@
 ---
 title: 删除音频路由组
 description: 删除指定的 audioRoutingGroup。
-ms.openlocfilehash: 2683c31f2df4f6913019f6a5f8c58cb009684043
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043956"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27155989"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -21,7 +21,7 @@ ms.locfileid: "27043956"
 | :-------------- | :------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All |
+| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

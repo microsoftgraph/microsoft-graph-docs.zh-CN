@@ -1,12 +1,12 @@
 ---
 title: dataPolicyOperation 资源类型
 description: 代表提交的数据策略操作。 它包含跟踪操作的状态所需的信息。 例如，公司管理员可以提交数据策略操作请求员工的公司数据导出，然后更高版本跟踪该请求。
-ms.openlocfilehash: e6763f4050157658ea0a7f4d1e6f52668ed6e4b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046955"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156031"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "27046955"
 |storageLocation|字符串|到要从中导出数据的导出请求的 URL 位置。|
 |userId|String|在其执行操作的用户 id。|
 |submittedDateTime|DateTimeOffset|表示此数据操作的请求已提交时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|进度|双精度数|指定操作的进度。|
 
 ## <a name="relationships"></a>Relationships
 无
@@ -54,7 +55,8 @@ ms.locfileid: "27046955"
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

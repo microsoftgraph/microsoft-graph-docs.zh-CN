@@ -1,12 +1,12 @@
 ---
 title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
-ms.openlocfilehash: f2894b7cc23d6a5d35a03c7626ca9cb4640a9fcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042896"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156017"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -24,7 +24,7 @@ ms.locfileid: "27042896"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -43,7 +43,7 @@ GET /dataPolicyOperations/<id>
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -63,7 +63,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

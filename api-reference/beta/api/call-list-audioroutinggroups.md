@@ -1,12 +1,12 @@
 ---
 title: 列表音频路由组
 description: 检索**audioRoutingGroup**对象的列表。
-ms.openlocfilehash: da6724f95fbc2c4365a1b1e4d34d317c130f12df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046008"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27155999"
 ---
 # <a name="list-audio-routing-groups"></a>列表音频路由组
 
@@ -21,7 +21,7 @@ ms.locfileid: "27046008"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不受支持。                               |
 | 委派（个人 Microsoft 帐户） | 不受支持。                               |
-| 应用程序     | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All |
+| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

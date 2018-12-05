@@ -1,12 +1,12 @@
 ---
 title: 创建音频路由组
 description: 创建新**audioRoutingGroup**。
-ms.openlocfilehash: 9e42fb085887cee22ccc8eac0997adf0464e0d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0dd506f3cf02e59d5a34c7184f4e596f6ff9e1fd
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043288"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156038"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 
@@ -21,7 +21,7 @@ ms.locfileid: "27043288"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序     | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All |
+| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

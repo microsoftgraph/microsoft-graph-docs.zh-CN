@@ -1,0 +1,244 @@
+items:
+- name: Microsoft Graph 概述
+  href: overview.md
+  items:
+  - name: 浏览
+    items:
+    - name: 在 Microsoft Graph 中的服务
+      href: overview-major-services.md
+      items:
+      - name: 用户可达到
+        href: users-you-can-reach.md
+        items:
+        - name: 区域云部署
+          href: deployments.md
+        - name: 混合部署（预览）
+          href: hybrid-rest-support.md
+      - name: 版本控制和支持
+        href: versioning-and-support.md
+      - name: 使用条款
+        href: https://developer.microsoft.com/graph/terms-of-use
+      expanded: true
+    - name: Microsoft Graph 数据连接 （预览）
+      href: data-connect-overview.md
+    - name: 培训
+      href: training.md
+      items:
+      - name: ASP.NET
+        href: /graph/training/aspnet-tutorial/
+      - name: Microsoft Flow
+        href: /graph/training/flow-tutorial/
+      - name: Node.js
+        href: /graph/training/node-tutorial/
+      - name: PHP
+        href: /graph/training/php-tutorial/
+      - name: Python
+        href: /graph/training/python-tutorial/
+      - name: Ruby
+        href: /graph/training/ruby-tutorial/
+      - name: React
+        href: /graph/training/react-tutorial/
+      - name: UWP
+        href: /graph/training/uwp-tutorial/
+    expanded: true
+  - name: 学习
+    items:
+    - name: 用户
+      href: azuread-users-concept-overview.md
+    - name: 组
+      href: office365-groups-concept-overview.md
+    - name: 日历
+      href: outlook-calendar-concept-overview.md
+      items:
+      - name: 找到的会议时间
+        href: findmeetingtimes-example.md
+      - name: 获取闲/忙安排
+        href: outlook-get-free-busy-schedule.md
+      - name: 安排定期事件
+        href: outlook-schedule-recurring-events.md
+      - name: 获取共享的事件
+        href: outlook-get-shared-events-calendars.md
+      - name: 不可变 ID （预览）
+        href: outlook-immutable-id.md
+    - name: 跨设备体验
+      href: cross-device-concept-overview.md
+      items:
+      - name: 活动源
+        href: activity-feed-concept-overview.md
+      - name: 设备中继 （预览）
+        href: device-relay-concept-overview.md
+      - name: 通知 （预览）
+        href: notifications-concept-overview.md
+      - name: 构建跨设备应用程序
+        href: cross-device-app-configuration.md
+    - name: 客户预订（预览）
+      href: booking-concept-overview.md
+    - name: 数据访问 （预览）
+      href: data-connect-concept-overview.md
+      items:
+      - name: 入门
+        href: data-connect-get-started.md
+    - name: 设备和应用
+      href: intune-concept-overview.md
+    - name: 教育
+      href: education-concept-overview.md
+    - name: 文件
+      href: onedrive-concept-overview.md
+    - name: 标识和访问
+      href: azuread-identity-access-management-concept-overview.md
+    - name: 邮件
+      href: outlook-mail-concept-overview.md
+      items:
+      - name: 创建并发送消息
+        href: outlook-create-send-messages.md
+      - name: 组织的邮件
+        href: outlook-organize-messages.md
+      - name: 获取共享的邮件
+        href: outlook-share-messages-folders.md
+      - name: 不可变 ID （预览）
+        href: outlook-immutable-id.md
+    - name: 笔记
+      href: integrate-with-onenote.md
+      items:
+      - name: 获取 OneNote 内容
+        href: onenote-get-content.md
+      - name: 打开 OneNote 客户端
+        href: open-onenote-client.md
+      - name: 创建页面
+        href: onenote-create-page.md
+      - name: 更新页面内容
+        href: onenote-update-page.md
+      - name: 添加图像、视频和文件
+        href: onenote-images-files.md
+      - name: 创建绝对定位的元素
+        href: onenote-abs-pos.md
+      - name: 提取数据
+        href: onenote-extract-data.md
+      - name: 使用笔记标记
+        href: onenote-note-tags.md
+      - name: 资源
+      - name: 输入和输出 HTML
+        href: onenote-input-output-html.md
+      - name: 最佳做法
+        href: onenote-best-practices.md
+      - name: 品牌塑造准则
+        href: onenote-branding.md
+      - name: 错误代码
+        href: onenote-error-codes.md
+    - name: 个人联系人
+      href: outlook-contacts-concept-overview.md
+      items:
+      - name: 获取共享的联系人
+        href: outlook-get-shared-contacts-folders.md
+      - name: 不可变 ID （预览）
+        href: outlook-immutable-id.md
+    - name: 报表
+      href: reportroot-concept-overview.md
+    - name: 安全
+      href: security-concept-overview.md
+      items:
+      - name: 数据流
+        href: security-dataflow.md
+      - name: Authorization
+        href: security-authorization.md
+      - name: 与 SIEM 集成
+        href: security-siemintegration.md
+        items:
+        - name: Splunk
+          href: security-splunk-siemintegration.md
+        - name: QRadar
+          href: security-qradar-siemintegration.md
+    - name: 站点和列表
+      href: sharepoint-concept-overview.md
+    - name: 社交智能
+      href: social-intel-concept-overview.md
+      items:
+      - name: 获取有关相关人员信息
+        href: people-example.md
+    - name: 任务和计划
+      href: planner-concept-overview.md
+    - name: 团队协作
+      href: teams-concept-overview.md
+    - name: 工作簿和图表
+      href: excel-concept-overview.md
+      items:
+      - name: 管理会话
+        href: excel-manage-sessions.md
+      - name: 显示图表图像
+        href: excel-display-chart-image.md
+      - name: 使用工作簿函数
+        href: excel-use-functions.md
+      - name: 更新范围的格式
+        href: excel-update-range-format.md
+      - name: 向工作簿中写入数据
+        href: excel-write-to-workbook.md
+    expanded: true
+  - name: 开发
+    items:
+    - name: 获取身份验证令牌
+      href: auth-overview.md
+      items:
+      - name: 注册应用
+        href: auth-register-app-v2.md
+      - name: 代表用户访问
+        href: auth-v2-user.md
+      - name: 无用户访问
+        href: auth-v2-service.md
+      - name: Permissions
+        href: permissions-reference.md
+      - name: 管理应用程序的访问 (Csp)
+        href: auth-cloudsolutionprovider.md
+    - name: 使用 API
+      href: use-the-api.md
+      items:
+      - name: Paging
+        href: paging.md
+      - name: 使用查询参数
+        href: query-parameters.md
+      - name: 批处理请求
+        href: json-batching.md
+      - name: 限制
+        href: throttling.md
+      - name: 更改通知
+        href: webhooks.md
+      - name: 跟踪更改
+        href: delta-query-overview.md
+        items:
+        - name: 获取对事件 （示例） 的更改
+          href: delta-query-events.md
+        - name: 更改进入组 （示例）
+          href: delta-query-groups.md
+        - name: 获取对邮件 （示例）
+          href: delta-query-messages.md
+        - name: 获取更改为用户 （示例）
+          href: delta-query-users.md
+      - name: 添加自定义数据
+        href: extensibility-overview.md
+        items:
+        - name: 使用 open 扩展 （示例）
+          href: extensibility-open-users.md
+        - name: 使用架构扩展 （示例）
+          href: extensibility-schema-groups.md
+    - name: Resources
+      items:
+      - name: 最佳做法
+        href: best-practices-concept.md
+      - name: 已知问题
+        href: known-issues.md
+      - name: 更改日志
+        href: changelog.md
+      - name: 错误
+        href: errors.md
+      expanded: true
+    expanded: true
+  - name: v1.0 参考 （英文）
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+  - name: Beta 参考 （英文）
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+  expanded: true
+ms.openlocfilehash: 3f1bac942970c951cc2ce11f5c47e925c1af967c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27091795"

@@ -1,3 +1,13 @@
+---
+title: Microsoft Graph 限制指南
+description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
+ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27091804"
+---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
 
@@ -26,8 +36,19 @@
 
 进行错误处理时，使用 HTTP 错误代码 429 检测限制。失败的响应包括响应标头中的*重试间隔*字段。使用*重试间隔*延迟回退请求是从限制中恢复的最快速的方式，因为 Microsoft Graph 会在客户端受限时继续记录资源使用状况。
 
-1. 等待*重试间隔*字段指定的秒数。
+1. 等待“重试间隔”** 字段中指定的秒数。
 2. 重试请求。
 3. 如果请求再次失败，并显示 429 错误代码，则表示你仍然受限。继续使用建议的重试间隔延迟并重试请求直到成功。
 
-有关 Microsoft 云上的限制的更广泛讨论，请参阅[限制模式](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx)。
+下列资源目前提供“重试间隔”头：
+- [用户](/graph/api/resources/user?view=graph-rest-1.0)
+- [照片](/graph/api/resources/profilephoto?view=graph-rest-1.0)
+- [邮件](/graph/api/resources/message?view=graph-rest-1.0)
+- [日历（用户和组）](/graph/api/resources/event?view=graph-rest-1.0)
+- [联系人](/graph/api/resources/contact?view=graph-rest-1.0)
+- [附件](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [组对话](/graph/api/resources/conversation?view=graph-rest-1.0)
+- [人员和社交活动](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
+
+有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://msdn.microsoft.com/library/office/dn589798.aspx)。

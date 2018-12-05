@@ -1,12 +1,12 @@
 ---
 title: 更新音频路由组
 description: 源和接收器 audioRoutingGroup 的修改。
-ms.openlocfilehash: a6b5d2ed3c11733f7a8e46ed4db61def05395c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043961"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156024"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -21,7 +21,7 @@ ms.locfileid: "27043961"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All |
+| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
