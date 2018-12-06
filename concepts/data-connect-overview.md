@@ -3,7 +3,7 @@ title: Microsoft Graph 数据连接（预览）
 description: 'Microsoft Graph 数据连接可通过核心数据管道为你提供 Office 365 数据和 Microsoft Azure 资源。 你可以使用 Microsoft Graph 数据连接来构建智能应用程序，以使用 Microsoft 提供的最佳开发工具访问 Microsoft 安全云中的所有有价值数据。 所有企业都对提高工作效率充满兴趣，这意味着构建能够提高知识型员工作效率的产品会带来巨大的机遇。 '
 ms.openlocfilehash: ebd64bf994564decadd44f29c73c0117a99ce176
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091917"
