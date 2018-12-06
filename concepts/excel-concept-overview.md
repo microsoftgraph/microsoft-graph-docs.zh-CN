@@ -40,9 +40,9 @@ Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储�
 可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 中的 Excel API](/graph/api/resources/excel?view=graph-rest-1.0)
+- [Microsoft Graph v1.0 中的 Excel API](/graph/api/resources/excel?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 Excel API](/graph/api/resources/excel?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤

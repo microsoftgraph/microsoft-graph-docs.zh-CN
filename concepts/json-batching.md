@@ -8,7 +8,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091752"
 ---
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理将多个请求合并为一个 HTTP 调用
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
 JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：
 
@@ -61,7 +61,7 @@ Content-Type: application/json
 }
 ```
 
-对批量请求的响应可能会以不同的顺序显示。`id` 属性可以用于关联单个请求和响应。
+对批处理请求的响应可能会按不同的顺序显示。`id` 属性可用于关联各个请求和响应。
 
 ```http
 200 OK
@@ -107,23 +107,25 @@ Content-Type: application/json
 
 ## <a name="request-format"></a>请求格式
 
-始终使用 `POST` 将批处理请求发送到 `/$batch` 终结点。
+批处理请求始终使用 `POST` 发送到 `/$batch` 终结点。
 
 JSON 批处理请求正文包含具有一个必需的属性 `requests` 的单个 JSON 对象。`requests` 属性是一组单独请求。对于每个单独请求而言， `id`、`method` 和 `url` 属性是必需的。
 
-`id` 属性主要用作关联单个响应和请求的相关值。这使服务器可以最高效的顺序处理批处理中的请求。
 
-`method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。
+            `id` 属性主要用作关联单个响应和请求的相关值。这使服务器可以最高效的顺序处理批处理中的请求。
 
-单独请求还可以包含 `headers` 属性和 `body` 属性。 这两种属性通常都是 JSON 对象，如上一示例所示。 在某些情况下，`body` 可能是经过 base64 URL 编码的值，而不是 JSON 对象（例如，当正文为图像时）。 如果 `body` 包含在该请求中，`headers` 对象必须包含 `Content-Type` 的值。
+
+            `method` 和 `url` 正是你在任何给定的 HTTP 请求开头看到的属性。该方法是 HTTP 方法，且 URL 是通常会向其发送单独请求的资源 URL。
+
+单独请求还可以视需要包含 `headers` 属性和 `body` 属性。 这两种属性通常都是 JSON 对象，如上一示例所示。 在某些情况下，`body` 可能是经过 base64 URL 编码的值，而不是 JSON 对象（例如，当正文为图像时）。 如果 `body` 包含在该请求中，`headers` 对象必须包含 `Content-Type` 的值。
 
 ## <a name="response-format"></a>响应格式
 
 JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 
 * 主 JSON 对象的中属性被命名为 `responses`，与 `requests` 相反。
-* 单独响应可能会以与请求不同的顺序出现。
-* 单独响应具有 `status` 属性，而不是 `method` 和 `url` 属性。`status` 的值是表示 HTTP 状态代码的数字。
+* 单独响应可能会按与请求不同的顺序显示。
+* 单独响应包含的是 `status` 属性，而不是 `method` 和 `url` 属性。`status` 的值是表示 HTTP 状态代码的数字。
 
 批处理响应中的状态代码通常为 `200` 或 `400`。如果批处理请求本身格式不正确，则状态代码为 `400`。如果批处理请求可分析，则状态代码为 `200`。批处理响应中的 `200` 状态代码并不表示批处理中的单独请求已成功。这就是为什么 `responses` 属性中的每个单独响应都有状态代码。
 
@@ -162,7 +164,7 @@ JSON 批处理请求的响应格式与请求格式类似。主要区别如下：
 }
 ```
 
-如果某个单独请求失败，则任何依赖该请求的请求都会失败，状态代码为 `424`（失败的依赖项）。
+如果单独请求失败，任何依赖此请求的请求都会失败，且状态代码为 `424`（依赖项失败）。
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>使用批处理绕过 URL 长度限制
 

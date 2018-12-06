@@ -1,6 +1,6 @@
 ---
-title: 获取闲/忙安排的用户和资源 （预览）
-description: 在工作或学校设置中，一个常见方案是当用户参加的会议，请参阅或浏览团队、 会议室或时间段内的设备的可用性。
+title: 获取用户和资源的忙/闲日程安排（预览版）
+description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,15 +8,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091896"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>获取闲/忙安排的用户和资源 （预览）
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>获取用户和资源的忙/闲日程安排（预览版）
 
-在工作或学校设置中，一个常见方案是当用户参加的会议，请参阅或浏览团队、 会议室或时间段内的设备的可用性。
+在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 
-[GetSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta)操作允许您在特定时间内的一个或多个实体的用户、 通讯组列表或资源的可用性信息。 
+使用 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，可以获取一个或多个实体（用户、通讯组列表或资源）在特定时间段内的状态信息。 
 
 ## <a name="example"></a>示例
 
-一个简单的示例是同事的查找某一天，上午 9 点到下午 6 点，Pacitfic 标准时间，Alex 的忙/闲计划：
+下面的简单示例展示了如何查找同事 Alex 在某天上午 9 点到下午 6 点（太平洋标准时间）之间的忙/闲日程安排：
 
 <!-- {
   "blockType": "ignored",
@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-**getSchedule**返回两个安排匹配 Alex 中的现有事件的项默认日历，显示的每个事件以及其忙/闲状态的开始和结束时间。 您可以假定该日期/时间范围内的剩余时间是免费 Alex。
+**getSchedule** 返回两个与 Alex 默认日历中现有事件匹配的日程安排项，同时显示每个事件的开始时间和结束时间及其忙/闲状态。 可以假定 Alex 在此日期/时间范围的剩余时间内是空闲的。
 
 <!-- {
   "blockType": "ignored",
@@ -122,69 +122,69 @@ Content-type: application/json
 
 ```
 
-除了的闲/忙安排和工作时间的 Alex， **getSchedule**也会返回**availabilityView**，即 Alex 的合并的视图该天的可用性。 合并的视图是一个字符串，包含与每个时间段，指示 Alex 涵盖的一天的时间段可用性使用以下约定： 
+除了 Alex 的忙/闲日程安排和工作时间之外，**getSchedule** 还返回 **availabilityView**，这是 Alex 这一天状态的合并视图。 此合并视图是一个字符串，其中包含这一天的所有时间段，每个时间段都使用以下约定指明 Alex 的状态： 
 
-- `0`免费 =
-- `1`暂定 =
-- `2`= 忙
-- `3`外出 =
-- `4`= 使用其他位置。 
+- `0`= 空闲
+- `1`= 暂定
+- `2`= 忙碌
+- `3`= 外出
+- `4`= 在其他地方工作。 
 
-默认情况下，每个时间段的长度为 30 分钟。 本示例使用**availabilityViewInterval**属性自定义为 15 分钟的时间段。
+默认情况下，每个时间段的长度为 30 分钟。 此示例使用 **availabilityViewInterval** 属性，将时间段自定义为 15 分钟。
 
-## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>如何为不同 findMeetingTimes getSchedule
+## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>getSchedule 与 findMeetingTimes 有何区别
 
-同时读取忙/闲状态和指定的用户和资源的工作时间[findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0)操作类似于**getSchedule** 。 在几个主要的方法，两个操作会有所不同。
+[findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 操作与 **getSchedule** 类似，两者都读取指定用户和资源的忙/闲状态和工作时间。 这两项操作的区别主要在以下几方面。
 
-### <a name="application"></a>应用程序
+### <a name="application"></a>用途
 
-**findMeetingTimes**应用特定业务逻辑以建议的会议时间和位置，例如：
+**findMeetingTimes** 应用特定业务逻辑来建议会议时间和地点，如：
 
-- 每个实体的可选或强制对现时
-- 请求活动的时间的性质
-- 最小出席所需的仲裁会议
+- 每个实体是自愿与会还是必须与会
+- 一天内请求执行的活动的性质
+- 会议仲裁要求的最少与会人数
 
-它是适用于取决于[简化约会预定](findmeetingtimes-example.md)的方案。
+它适用于依赖[简化约会预订](findmeetingtimes-example.md)的方案。
 
-**getSchedule**只返回在每个请求的日历忙/闲状态的现有事件给定的时间段，并假定 tp 有空的时间段的剩余时间。 然后，您将应用进一步业务逻辑，以使此数据的用于完成您的方案。
+**getSchedule** 只返回每个所需日历中现有事件在给定时间段内的忙/闲状态，并假定在此时间段的剩余时间内是空闲的。 然后，应用其他业务逻辑来利用此类数据完成方案。
 
-### <a name="app-only-support"></a>仅限应用程序的支持
+### <a name="app-only-support"></a>仅应用支持
 
-**findmeetingtimes**支持仅委派的方案需要用户已登录到应用程序中。 应用程序可以读取的已登录的用户可以访问日历事件。 这可能包括其他用户已委派或与登录用户共享的日历。
+**findmeetingtimes** 仅支持要求用户必须已登录应用的委托方案。 应用只能读取已登录用户可以访问的日历中的事件。 这可以包括其他用户已委托或已与登录用户共享的日历。
 
-**getSchedule**支持委派和仅应用程序的方案。 后者，管理员同意应用程序以访问已登录的用户的情况下的所有日历。
+**getSchedule** 支持委托方案和仅应用方案。 对于后者，管理员同意应用访问所有日历，即使没有已登录用户，也不例外。
 
 
 ### <a name="version-support"></a>版本支持
 
-**findmeetingtimes**是通常适用于所有应用程序。 
+**findmeetingtimes** 一般适用于所有应用。 
 
-**getSchedule**目前[处于预览状态](versioning-and-support.md#beta-version)，并因此不适合在生产应用程序中使用。
+**getSchedule** 暂处于[预览状态](versioning-and-support.md#beta-version)，因此不适用于生产应用。
 
 
-## <a name="permissions"></a>Permissions
-若要获取忙/闲信息所需的最小特权的权限是 Calendar.Read。 根据您的应用程序的方案，这可以由已登录的用户或管理员许可。
-以外的忙/闲状态和工作时间请求实体， **getSchedule**也可以返回的主题和发生的事件，前提是该位置：
+## <a name="permissions"></a>权限
+获取忙/闲信息所需的最低权限是 Calendar.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
+除了所需实体的忙/闲状态和工作时间外，**getSchedule** 还可以返回事件的主题和地点，前提是：
 
-- 如果事件标记为低的敏感度级别-`normal`或`personal`和一个或多个以下条件适用：
+- 如果事件被标记为低敏感度级别（`normal` 或 `personal`），且符合以下一个或多个条件：
 
-- 所请求的用户的日历设置允许查看标题和位置组织中的所有用户
-- 与已登录的用户共享请求的用户的日历
-- 已登录的用户是为请求的用户的同一组织的管理员。
+- 所需用户的日历设置允许组织中的全部用户查看标题和地点
+- 所需用户的日历与已登录用户共享
+- 已登录用户是所需用户所在组织的管理员。
 
-## <a name="time-zone-representation"></a>时区表示形式
-默认情况下，以 UTC 表示的返回的计划项目的开始和结束时间。 您可以使用`Prefer`标头以指定适合您的应用程序所在的时区。 示例： 
+## <a name="time-zone-representation"></a>时区表示
+默认情况下，返回的日程安排项的开始时间和结束时间都采用 UTC。 可使用 `Prefer` 头指定适合应用的时区。 例如： 
 ```
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ## <a name="limits-and-error-conditions"></a>限制和错误条件
-注意以下限制和错误情况：
+请注意以下限制和错误条件：
 
-- **getSchedule**可以查找忙/闲信息的最多为 20 实体同时支持。 此限制适用于单独或作为成员的通讯组列表，标识的用户数和资源以及数。
-- 若要查找的时间段必须小于 42 天。
-- 如果指定的用户或资源不能识别**getSchedule** ，它将返回单个计划项目并指示错误。 
+- **getSchedule** 支持一次查找最多 20 个实体的忙/闲信息。 标识为个人的用户数或标识为通讯组列表成员的用户数以及资源数都计入此限制。
+- 查找时间段不得长于 42 天。
+- 如果 **getSchedule** 无法识别指定用户或资源，便会返回一个日程安排项并指明错误。 
 
 ## <a name="see-also"></a>另请参阅
-- [权限参考 （英文）](permissions-reference.md#calendars-permissions)
-- [在 Outlook 日历上找到可能的会议时间](findmeetingtimes-example.md)
+- [权限参考](permissions-reference.md#calendars-permissions)
+- [在 Outlook 日历上查找可能的会议时间](findmeetingtimes-example.md)

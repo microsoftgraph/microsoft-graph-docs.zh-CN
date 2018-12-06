@@ -1,6 +1,6 @@
 ---
 title: 将图像、视频和文件添加到 OneNote 页面
-description: " 在 Office 365 的企业笔记本"
+description: " Office 365 上的企业级笔记本"
 ms.openlocfilehash: bc298339d73b162da6b2e37c314ffedfb76bd193
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

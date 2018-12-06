@@ -28,7 +28,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 用户的个人 OneDrive 文件夹
 - 安全警报
 
-例如，可以创建以下特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`
+例如，可以创建对特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`
 
 或以下顶级资源的订阅：`me/messages`、`me/contacts`、`me/events`、`users` 或 `groups`
 
@@ -36,10 +36,10 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 或以下 Sharepoint/OneDrive for Business 驱动器的订阅：`/drive/root`
 
-或以下用户个人 OneDrive 的订阅：`/drives/{id}/root`
+或对用户个人 OneDrive 的订阅：`/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-或到一个新的[安全 API 通知](security-concept-overview.md)： `/security/alerts?$filter=status eq ‘New’`，`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+或对新[安全性 API 警报](security-concept-overview.md)的订阅：`/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 
@@ -112,7 +112,7 @@ Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **重要：** 由于`validationToken`是查询参数由客户端，按照 HTTP 编码实践必须正确解码。 如果客户端不解码令牌，而是使用下一步 （响应） 中的经过编码的值，验证将失败。 此外，客户端应将令牌值视为不透明由于令牌格式可能将来，恕不另行通知。
+    > **重要说明：** 由于 `validationToken` 是查询参数，因此客户端必须根据 HTTP 编码做法正确解码它。 如果客户端没有解码令牌，而是在下一步（响应）中使用已编码值，那么验证将会失败。 此外，客户端还应将令牌值视为不透明，因为令牌格式今后可能会更改，而不另行通知。
 
 1. 客户端必须在 10 秒内提供具有以下特性的响应：
 

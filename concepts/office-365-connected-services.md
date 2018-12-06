@@ -18,7 +18,7 @@ ms.locfileid: "27091825"
 
 - 如果未下载，请下载 [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/)。如果你使用的是 Visual Studio 的早期版本，你可以将 Visual Studio 2017 Preview 与你的当前版本并排使用。
 
-- 获取 Office 365 订阅。若要获取免费试用版，请加入[Office 365 开发人员计划](https://dev.office.com/devprogram)。
+- 获取 Office 365 订阅。若要获取免费试用版，请加入 [Office 365 开发人员计划](https://dev.office.com/devprogram)。
 
 ## <a name="get-the-starter-project"></a>获取初学者项目
 
@@ -28,13 +28,13 @@ ms.locfileid: "27091825"
 
 你现在可以将 Microsoft Graph 服务添加到 Visual Studio 项目中。 
 
-1. 在解决方案资源管理器中，选择**连接服务**以打开服务连接选项卡。 
+1. 在解决方案资源管理器中，选择“连接的服务”**** 打开“连接的服务”选项卡。 
 
-2. 选择**使用 Microsoft Graph 访问 Office 365 服务**提供程序。 按照向导。 选择 （更高版本，您可以更改权限） 的以下权限：
+2. 选择“使用 Microsoft Graph 访问 Office 365 服务”**** 提供程序。 按照向导操作。 选择以下权限（你可以在以后更改）：
 
-    - **文件**Api，设置为**具有对您的文件的完全访问**权限。
-    - 为**邮件**Api，设置要**发送为您的邮件**的权限。
-    - 对于**用户**Api，**在您登录**和阅读您的配置文件设置权限。
+    - 对于“文件”**** API，将权限设置为“拥有对文件的完全访问权限”****。
+    - 对于“邮件”**** API，将权限设置为“以你的身份发送邮件”****。
+    - 对于“用户”**** API，将权限设置为“登录并读取你的个人资料”****。
 
 ## <a name="call-the-microsoft-graph-api"></a>调用 Microsoft Graph API
 
@@ -60,7 +60,7 @@ ms.locfileid: "27091825"
  
 
 ## <a name="run-the-sample"></a>运行示例
-生成并运行该示例。 接下来，选择右上角上的**登录**链接，然后选择**获取电子邮件地址****发送电子邮件**后跟。
+生成和运行示例 接下来，选择右上角的“登录”**** 链接，然后依次选择“获取电子邮件地址”**** 和“发送电子邮件”****
 
 这将发送一封电子邮件，其中包含指向你的个人资料照片的链接。
 
@@ -78,7 +78,7 @@ ms.locfileid: "27091825"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) - 对当前用户进行身份验证并初始化该示例的令牌缓存。
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用你自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](https://azure.microsoft.com/en-us/documentation/articles/guidance-multitenant-identity-token-cache/)。
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) - 存储用户的令牌信息。可以使用你自己的自定义令牌缓存来替换此信息。有关详细信息，请参阅[在多租户应用程序中缓存访问令牌](https://azure.microsoft.com/zh-CN/documentation/articles/guidance-multitenant-identity-token-cache/)。
 
 - Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) - 实现本地 IAuthProvider 接口，并获取访问令牌。 
 
@@ -89,7 +89,7 @@ ms.locfileid: "27091825"
 - Views\\Home\\[Graph.cshtml](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Views/Home/Graph.cshtml) - 包含示例的 UI。 
 
 
-## <a name="need-help"></a>是否需要帮助？
+## <a name="need-help"></a>需要帮助?
 
-如果需要帮助，请在 [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) 上发布你的问题。使用 [microsoftgraph] 标记你发布的问题。
+如果需要帮助，请在 [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest) 上发布你的问题。使用 {microsoftgraph} 标记你的帖子。
 

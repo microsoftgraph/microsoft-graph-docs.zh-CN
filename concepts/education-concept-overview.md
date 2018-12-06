@@ -34,7 +34,7 @@ Microsoft Graph 中的教育版 API 提供对课程、学校、用户、作业�
 
 可使用作业 API 创建 Web 应用来管理课程作业，然后在新自定义选项卡上将应用集成到 Microsoft Teams。  
 
-Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
+Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内容和应用整合到教室这一个位置中。 Microsoft Teams 提供了[一组丰富的扩展点](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/apps/apps-overview)，包括创建选项卡、连接器和自动程序。 这些扩展点可以在 Microsoft Graph 中调用教育版 API 以处理作业和提交。 通过启用具备任何其他 Microsoft Graph API 以及作业和提交 API 的扩展点来构建更全面的体验。
 
 对于教育版，Microsoft Teams 自定义选项卡应用在教育课堂（团队）上下文中打开，在此环境中，管理端到端作业流（从创建和分发到评分和反馈）别具意义。 这只是有关 Microsoft Teams 如何节省时间和简化日常后勤的一个示例，以便教育工作者可以更多地将重心放在他们的学生身上。
 
@@ -61,10 +61,10 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
 - 通过[暂停](/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta)、[继续](/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta)和[重置](/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta)操作管理同步生命周期
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 教育 API](/graph/api/resources/education-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的教育 API](/graph/api/resources/education-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的教育版 API](/graph/api/resources/education-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的教育版 API](/graph/api/resources/education-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>后续步骤

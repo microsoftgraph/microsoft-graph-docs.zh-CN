@@ -1,6 +1,6 @@
 ---
-title: 与使用 Azure 监视器您 SIEM 集成 Microsoft Graph 安全 API 通知
-description: Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 Azure 监视支持连接到多个 SIEM 产品的连接器，可以配置此终结点。 步骤 1 和 2 的本文中的说明引用所有 Azure 监视器连接器的支持通过事件集线器消耗。 本文介绍 Splunk SIEM 连接器的端到端集成。
+title: 使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集成
+description: 可通过一个 REST 终结点管理 Microsoft Graph 安全提供程序。 可以将此终结点配置为，支持连接到多个 SIEM 产品的 Azure Monitor。 本文第 1 步和第 2 步中的说明是指，支持通过事件中心使用的所有 Azure Monitor 连接器。 本文介绍了 Splunk SIEM 连接器的端到端集成。
 ms.openlocfilehash: bdd1d1e192a4945c67727d20e594006a387fb156
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,14 +8,14 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091865"
 ---
-# <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>与使用 Azure 监视器您 SIEM 集成 Microsoft Graph 安全 API 通知
+# <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集成
 
-Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终结点可配置为支持连接到多个 SIEM 产品连接器的[Azure 监视器](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/)。 步骤 1 和 2 的本文中的说明引用所有 Azure 监视器连接器的支持通过事件集线器消耗。 本文介绍[Splunk](https://splunkbase.splunk.com/) SIEM 连接器的端到端集成。
+可通过一个 REST 终结点管理 Microsoft Graph 安全提供程序。 可以将此终结点配置为，支持连接到多个 SIEM 产品的 [Azure Monitor](https://docs.microsoft.com/zh-CN/azure/monitoring-and-diagnostics/)。 本文第 1 步和第 2 步中的说明是指，支持通过事件中心使用的所有 Azure Monitor 连接器。 本文介绍了 [Splunk](https://splunkbase.splunk.com/) SIEM 连接器的端到端集成。
 
-此集成过程包含下列步骤：
+此集成过程由以下步骤组成：
 
-1. [设置 Azure 事件集线器租户接收安全警告设置](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
-2. [配置 Azure Monitor 以将租户的安全警报发送至事件中心](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub)
+1. [创建用于接收租户的安全警报的 Azure 事件中心](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
+2. [将 Azure Monitor 配置为将安全警报从租户发送到事件中心](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub)
 3. [下载和安装 Splunk 的 Azure Monitor 加载项，以允许 Splunk 使用安全警报](#step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts)
 4. [使用租户 Azure Active Directory 注册一个供 Splunk 从事件中心进行读取的应用程序](#step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub )
 5. [创建 Azure Key Vault 以存储事件中心的访问密钥](#step-5-create-an-azure-key-vault-to-store-the-access-key-for-the-event-hub)
@@ -23,9 +23,9 @@ Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终
 
 完成这些步骤后，Splunk Enterprise 将使用获许可租户的所有 Microsoft Graph 集成安全产品的安全警报。 许可的任何新安全产品也将通过此连接发送警报（在同一架构且无需进一步集成）。
 
-## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>步骤 1：在 Azure 中设置事件中心命名空间，以接收租户的安全警报。
+## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>第 1 步：在 Azure 中创建用于接收租户的安全警报的事件中心命名空间
 
-若要开始，您需要创建[Microsoft Azure 事件集线器](https://docs.microsoft.com/en-us/azure/event-hubs/)命名空间和事件集线器。 此命名空间和事件中心是所有组织的安全警报的目标。 事件中心命名空间是共享同一访问策略的事件中心的逻辑分组。 请注意有关你创建的事件中心命名空间和事件中心的一些详细信息：
+首先，需要创建 [Microsoft Azure 事件中心](https://docs.microsoft.com/zh-CN/azure/event-hubs/)命名空间和事件中心。 此命名空间和事件中心是组织的所有安全警报的目标。 事件中心命名空间是共享同一访问策略的事件中心的逻辑分组。 请注意有关你创建的事件中心命名空间和事件中心的一些详细信息：
 
 - 我们建议使用标准事件中心命名空间（尤其是当你通过这些相同的事件中心发送其他 Azure 监控数据时）。
 - 通常情况下，一个吞吐量单位就已足够。 如果随着使用情况的增加而需要扩展吞吐量，则可在以后随时手动增加命名空间的吞吐量单位数或启用自动膨胀。
@@ -34,7 +34,7 @@ Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终
 - 我们建议为事件中心使用默认的使用者组。 无需创建其他使用者组或使用单独的使用者组，除非你计划用两个不同的工具使用来自同一事件中心的同一数据。
 - 通常情况下，对于使用事件中心数据的计算机，必须打开端口 5671 和 5672。
 
-另请参阅 [Azure 事件中心常见问题解答](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq)。
+另请参阅 [Azure 事件中心常见问题解答](https://docs.microsoft.com/zh-CN/azure/event-hubs/event-hubs-faq)。
 
 1. 登录到 [Azure 门户](https://portal.azure.com/)，并选择屏幕左上角的“创建资源”****。
 
@@ -50,14 +50,14 @@ Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终
 
 ## <a name="step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub"></a>步骤 2：配置 Azure Monitor 以将租户的安全警报发送至事件中心
 
-通过 Azure Monitor 为整个 Azure Active Directory (Azure AD) 租户启用组织安全警报的流式处理操作已执行一次。 所有 Microsoft Graph 安全 API 都授权和启用的产品将开始发送到 Azure 监视器，流式传输到使用应用程序的数据的安全警告。 任何其他 Microsoft Graph 安全 API 启用产品授权和部署您的组织将自动 stream 通过相同的 Azure 监视器配置的安全警告。 无需在组织中进行进一步集成。
+通过 Azure Monitor 为整个 Azure Active Directory (Azure AD) 租户启用组织安全警报的流式处理操作已执行一次。 已授权和启用 Microsoft Graph 安全性 API 的所有产品都会开始向 Azure Monitor 发送安全警报，同时将数据流式处理到使用应用。 组织授权和部署的其他任何已启用 Microsoft Graph 安全性 API 的产品，也会自动通过这一相同的 Azure Monitor 配置流式处理安全警报。 组织无需进一步集成。
 
-安全警报是具有很多特权的数据，通常只能由组织内的安全响应人员和全局管理员查看。 为此，在 SIEM 系统中配置租户安全警报集成所需的步骤将需要使用 Azure AD 全局管理员帐户。 此帐户在设置过程中只需使用一次，用以请求将组织的安全警报发送到 Azure Monitor。
+安全警报是具有很多特权的数据，通常只能由组织内的安全响应人员和全局管理员查看。 为此，在 SIEM 系统中配置租户安全警报集成所需的步骤将需要使用 Azure AD 全局管理员帐户。 在设置过程中只需使用此帐户一次，以请求获取要发送到 Azure Monitor 的组织安全警报。
 
-> **注意：** 目前，Azure 监视器诊断设置刀片不支持配置租户级别的资源。 Microsoft Graph 安全 API 通知是要求使用 Azure 资源管理器 API 配置要支持的组织的安全警告消耗的 Azure 监视器的租户级资源。
+> **注意：** 目前，Azure Monitor 的“诊断设置”边栏选项卡不支持配置租户级资源。 由于 Microsoft Graph 安全性 API 警报是租户级资源，因此必须使用 Azure 资源管理器 API 将 Azure Monitor 配置为支持使用组织的安全警报。
 
 1. 在 Azure 订阅中，将“microsoft.insights”(Azure Monitor) 注册为资源提供程序。  
- > **注意：** 原样"Microsoft.SecurityGraph"租户级资源上面所述，并为您的 Azure 订阅中的资源提供程序注册"Microsoft.SecurityGraph"(Microsoft Graph 安全 API)。 租户级配置将是下面 #6 的一部分。
+ > **注意：** 不要将“Microsoft.SecurityGraph”（Microsoft Graph 安全性 API）注册为 Azure 订阅中的资源提供程序，因为“Microsoft.SecurityGraph”是租户级资源（如前所述）。 下面的 #6 中介绍了租户级配置。
 
 2. 若要使用 Azure 资源管理器 API 配置 Azure Monitor，请获取 [ARMClient](https://github.com/projectkudu/ARMClient) 工具。 此工具将用于将 REST API 调用从命令行发送到 Azure 门户。
 
@@ -91,11 +91,11 @@ Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终
 
   * **SUBSCRIPTION_ID** 是托管资源组和事件中心命名空间的 Azure 订阅的订阅 ID，你将在此处发送组织的安全警报。
   * **RESOURCE_GROUP** 是包含事件中心命名空间的资源组，你将在此处发送组织的安全警报。
-  * **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
-  * **"天":** 是您想要保留事件中心中的邮件的天数。
+  * **EVENT_HUB_NAMESPACE** 是用于发送组织安全警报的事件中心命名空间。
+  * **“days”** 是要将消息保留在事件中心内的天数。
   
 &nbsp;
-4. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
+4. 以 JSON 格式将文件保存到从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
 
 5. 运行以下命令以登录到 ARMClient 工具。 你需要使用全局管理员帐户凭据。
 
@@ -117,18 +117,18 @@ Microsoft Graph 安全提供程序可以通过单个的 REST 终结点。 此终
 
 8. 退出 ARMClient 工具。 现在，你已完成将租户安全警报发送到事件中心的 Azure Monitor 的配置。
 
-## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>步骤 3：下载和安装 Splunk 的 Azure Monitor 加载项，以允许 Splunk 使用安全警报
+## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>第 3 步：下载并安装用于 Splunk 的 Azure Monitor 加载项（可便于 Splunk 使用安全警报）
 
-1. 这种集成仅支持[Splunk 企业](https://splunkbase.splunk.com/)部署。
-2. 下载并安装 [Splunk 的 Azure Monitor 加载项](https://github.com/Microsoft/AzureMonitorAddonForSplunk)。 有关详细的安装说明，请参阅[安装](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation)。 **仅 Azure 监视器加载项的 Splunk 版本 1.2.9 或更高版本支持。**
-3. 成功安装加载项之后, 按[Azure 监视器加载项配置 wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk )配置 Splunk 中所述配置步骤。
+1. 此集成仅支持 [Splunk 企业版](https://splunkbase.splunk.com/)部署。
+2. 下载并安装[用于 Splunk 的 Azure Monitor 加载项](https://github.com/Microsoft/AzureMonitorAddonForSplunk)。 有关详细安装说明，请参阅[安装](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation)。 **仅支持用于 Splunk 的 Azure Monitor 加载项版本 1.2.9 或更高版本。**
+3. 成功安装加载项后，请按照 [Azure Monitor 加载项配置 wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk ) 中的配置步骤操作，以配置 Splunk。
 4. 如加载项安装说明中所述，需要在 Splunk Web 中的“管理应用”页面上通过执行禁用/启用循环，才可使加载项正常工作。 或者，可以重启 Splunk。
 
-## <a name="step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub"></a>步骤 4：使用租户 Azure Active Directory 注册一个供 Splunk 从事件中心进行读取的应用程序
+## <a name="step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub"></a>第 4 步：向租户 Azure Active Directory 注册供 Splunk 从事件中心读取内容的应用
 
-Splunk 需要贵组织的 Azure Active Directory 中的所需的权限和应用程序的凭据要求对 Azure 监视器事件集线器授予应用程序注册。
+Splunk 需要向在组织的 Azure Active Directory 中注册的应用授予必需权限，以及对 Azure Monitor 事件中心进行身份验证所必需的应用凭据。
 
-1. 在 Azure 门户中，转到“应用注册”****，然后选择“新应用程序注册”****。
+1. 在 Azure 门户中，转到“应用注册”****，再选择“新应用注册”****。
 
     ![应用注册图像](images/app-registration.png)
 
@@ -187,32 +187,32 @@ Azure Key Vault 用于存储应用程序在运行时所使用的标识、密码�
 
     ![Azure Monitor 字段](images/azure-monitor-fields.png)
 
-3. 选择“下一步”****，开始搜索从 Azure Monitor 中引入的组织安全警报。
+3. 选择“下一步”****，并开始搜索从 Azure Monitor 引入的组织安全警报。
 
-## <a name="optional-use-splunk-search-to-explore-data"></a>（可选）使用 Splunk 搜索来分析数据
+## <a name="optional-use-splunk-search-to-explore-data"></a>（可选）使用 Splunk Search 浏览数据
 
-您已设置 Azure 监视器 Splunk 插件后，Splunk 实例将启动配置的事件集线器中检索事件。 默认情况下，Splunk 将索引 Microsoft Graph 安全 API 警报架构以允许搜索每个的属性。
+在你设置 Azure Monitor Splunk 插件后，Splunk 实例便会开始从已配置事件中心检索事件。 默认情况下，Splunk 会为 Microsoft Graph 安全性 API 警报架构的每个属性编制索引，以便执行搜索。
 
-若要搜索的 Microsoft Graph 安全 API 通知，以创建仪表板，或设置 Splunk 通知与您的搜索查询，导航到应用程序-> Splunk 中的搜索 & 报告应用程序。
+若要搜索 Microsoft Graph 安全性 API 警报、创建仪表板或使用搜索查询创建 Splunk 警报，请在 Splunk 中依次转到“应用”->“搜索和报告应用”。
 
 **示例**：<br/>
 尝试搜索 Graph 安全警报：
 
-- 键入`sourcetype="amdl:securitygraph:alert"`通过 Microsoft Graph 安全 API 条，以获取所有通知显示在搜索。 在右侧，您将看到图安全警报所在属性字段下的 Azure 监视器日志的顶级属性。<br/>
-- 在左窗格中，您将看到所选的字段和有意义的字段。 您可以使用所选的字段来创建仪表板或 Splunk 通知，您还可以添加或删除所选的字段的字段： 右键单击。  
-> **注意：** 下面的搜索查询中所示，您可以根据需要限制搜索。 在示例中，我们通过从 Azure 安全中心高严重性通知筛选图安全警告。 我们也可用于`eventDatetime`， `severity`， `status`，和`provider`作为选定要显示的字段。 有关更多高级搜索词，请参阅[Splunk 搜索教程](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)。
+- 在搜索栏中键入“`sourcetype="amdl:securitygraph:alert"`”，以获取通过 Microsoft Graph 安全性 API 公开的所有警报。 在右侧，可以看到 Azure Monitor 日志的顶级属性，其中 Graph 安全警报就位于属性字段下。<br/>
+- 左侧窗格中显示选定字段和感兴趣字段。 可以使用选定字段创建仪表板或 Splunk 警报，也可以通过右键单击字段来添加或删除选定字段。  
+> **注意：** 如下面的搜索查询所示，可以根据需要限制搜索。 此示例按 Azure 安全中心内的高严重性警报筛选 Graph 安全警报。 此外，还将 `eventDatetime`、`severity`、`status` 和 `provider` 用作要显示的选定字段。 有关更多高级搜索词，请参阅 [Splunk 搜索教程](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)。
 
  ![splunk_search_query](images/splunk-search-query.png)
 > 搜索查询：`sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
 
-Splunk 还允许多个操作在搜索结果使用的"另存为"菜单选项的屏幕右上。 您可以创建报表、 仪表板面板或根据您的搜索筛选器的通知。
-下面是基于以前的查询的事件流的仪表板示例： 您可以将深入分析链接添加到每个事件进一步访问 Microsoft Graph 网站上的详细信息。 请参阅[Splunk 深入分析文档](https://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro)。
+借助 Splunk，还可以使用屏幕右上角的“另存为”菜单选项，对搜索结果执行多项操作。 可以根据搜索筛选器创建报告、仪表板面板或警报。
+在下面的仪表板示例中，事件流基于上一次查询：可以向每个事件添加向下钻取链接，以在 Microsoft Graph 网站上进一步访问详细信息。 请参阅 [Splunk 向下钻取文档](https://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro)。
 
  ![splunk_search_results](images/splunk-search-results.png)
 
-也可以创建时间线图表为仪表板：
+也可以将仪表板创建为时间线图表：
 
  ![splunk_search_timeline](images/splunk-search-timeline.png)
 
-有关详细信息，可以按照[Splunk 搜索与报表教程](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)。
+有关详细信息，可以学习 [Splunk 搜索和报告教程](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)。
 

@@ -1,6 +1,6 @@
 ---
-title: 获取 Outlook 资源不可变标识符
-description: Outlook 项目 （邮件、 事件、 联系人、 任务） 具有有趣的行为，您可能已之一永远不会注意到或已导致重大失望： 更改其 Id。 它不会经常发生，仅当项目将被移动，但它可能会导致应用程序的更高版本用于存储脱机 Id 实际问题。 不可变标识符使您的应用程序获取不会更改项目的生存期内的 ID。
+title: 获取 Outlook 资源的不可变标识符
+description: Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
 ms.openlocfilehash: a7b188c968ad6e0bf93f92ec99cb473075f29a4d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,59 +8,59 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091902"
 ---
-# <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源不可变标识符
+# <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
-Outlook 项目 （邮件、 事件、 联系人、 任务） 具有有趣的行为，您可能已之一永远不会注意到或已导致重大失望： 更改其 Id。 它不会经常发生，仅当项目将被移动，但它可能会导致应用程序的更高版本用于存储脱机 Id 实际问题。 不可变标识符使您的应用程序获取不会更改项目的生存期内的 ID。
+Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
 
-> **重要：** 不可变标识符是仅可供使用的 Microsoft Graph /beta 版本上。
+> **重要说明：** 不可变标识符仅适用于 Microsoft Graph /beta 版本。
 
 ## <a name="how-it-works"></a>工作原理
 
-不可变 ID 是 Microsoft Graph 可选功能。 若要选择加入，您的应用程序需要发送 API 请求中的其他 HTTP 标头：
+不可变 ID 是一项可选的 Microsoft Graph 功能。 若要选择使用此功能，应用必须在 API 请求中发送额外 HTTP 头：
 
 ```http
 Prefer: IdType="ImmutableId"
 ```
 
-此标头仅适用于它是包含该请求。 如果您希望始终使用不可变 Id，您必须包含与每个 API 请求此标头。
+此头仅适用于随附它的请求。 必须在每个 API 请求中随附此头，才能始终使用不可变 ID。
 
-## <a name="lifetime-of-immutable-ids"></a>不可变 Id 的生存期
+## <a name="lifetime-of-immutable-ids"></a>不可变 ID 生存期
 
-只要项目将停留在同一邮箱，则不会更改项目的不可变 ID。 也就是说，如果项目将被移动到另一个邮箱中的文件夹不会更改变 ID。 但是，如果将更改变 ID:
+只要项一直在同一邮箱中，它的不可变 ID 就不变。 也就是说，即使项移到邮箱中的其他文件夹中，不可变 ID 也不变。 不过，不可变 ID 在以下情况下会变：
 
-- 用户将项目移动到存档邮箱
-- 用户导出 （到 PST，作为 MSG 文件等) 的项并重新将它导入到其邮箱
+- 用户将项移到存档邮箱中
+- 用户先将项导出（到 PST 等，作为 MSG 文件），再将它重新导入邮箱
 
-## <a name="items-that-support-immutable-id"></a>支持变 ID 的项目
+## <a name="items-that-support-immutable-id"></a>支持不可变 ID 的项
 
-以下各项支持变 Id:
+以下项支持不可变 ID：
 
-- [邮件资源类型](/graph/api/resources/message?view=graph-rest-beta)
+- [message 资源类型](/graph/api/resources/message?view=graph-rest-beta)
 - [attachment 资源类型](/graph/api/resources/attachment?view=graph-rest-beta)
-- [事件资源类型](/graph/api/resources/event?view=graph-rest-beta)
+- [event 资源类型](/graph/api/resources/event?view=graph-rest-beta)
 - [eventMessage 资源类型](/graph/api/resources/eventmessage?view=graph-rest-beta)
-- [联系人资源类型](/graph/api/resources/contact?view=graph-rest-beta)
+- [contact 资源类型](/graph/api/resources/contact?view=graph-rest-beta)
 - [outlookTask 资源类型](/graph/api/resources/outlooktask?view=graph-rest-beta)
 
-（mailFolder、 日历等） 的容器类型不支持变 ID，但是它们的正则 Id 已常量。
+虽然容器类型（mailFolder、calendar 等）不支持不可变 ID，但其常规 ID 已是常量。
 
-## <a name="immutable-id-with-change-notifications"></a>更改通知不可变 ID
+## <a name="immutable-id-with-change-notifications"></a>使用更改通知发送不可变 ID
 
-您可以请求对 Microsoft Graph 发送变 Id 中的更改通知通过包括`Prefer: IdType="ImmutableId"`标头时[创建的订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)。 创建没有标头的现有订阅将继续使用的默认 ID 格式。 为了切换现有订阅使用不可变 Id，则必须删除并重新创建这些使用头。
+可以在[创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)时添加 `Prefer: IdType="ImmutableId"` 头，从而请求 Microsoft Graph 在更改通知中发送不可变 ID。 未使用此头创建的的现有订阅将继续使用默认 ID 格式。 为了将现有订阅切换为使用不可变 ID，必须先删除它们，再使用此头重新创建它们。
 
-## <a name="immutable-id-with-delta-query"></a>不可变 ID 增量查询
+## <a name="immutable-id-with-delta-query"></a>使用 delta 查询发送不可变 ID
 
-您可以请求，Microsoft Graph 返回变 Id 中支持的资源类型的[增量查询响应](delta-query-overview.md)通过包括`Prefer: IdType="ImmutableId"`标头。 `nextLink`和`deltaLink`增量查询所返回的值都与两个 ID 格式，兼容，因此您的应用程序不需要重新同步利用变 id。 您可以使用标题获取变 Id 循序，并且可以[更新您的应用程序存储](#updating-existing-data)分开。
+可以通过添加 `Prefer: IdType="ImmutableId"` 头，请求 Microsoft Graph 在受支持资源类型的 [delta 查询响应](delta-query-overview.md)中返回不可变 ID。 由于 delta 查询返回的 `nextLink` 和 `deltaLink` 值与两种 ID 格式都兼容，因此应用无需重新同步，即可利用不可变 ID。 可以使用此头在以后获取不可变 ID，也可以单独[更新应用的存储](#updating-existing-data)。
 
 ## <a name="updating-existing-data"></a>更新现有数据
 
-如果您已经有了填充数千个正则 Id 的数据库，您可以为不可变格式使用[translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta)函数来迁移这些 Id。 您可以提供最多 1000 Id 为目标格式转换的数组。
+如果已获取填充有数千个常规 ID 的数据库，可使用 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) 函数将这些 ID 迁移为不可变格式。 可以提供一组要转换为目标格式的 ID（最多 1000 个）。
 
-> **注意：** 您还可以使用`translateExchangeIds`迁移到 Microsoft Graph 的 Exchange Web 服务应用程序。
+> **注意：** 也可以使用 `translateExchangeIds` 将 Exchange Web 服务应用迁移到 Microsoft Graph。
 
 ### <a name="example"></a>示例
 
-下面的示例将转换的普通图 ID 变图 id。
+下面的示例将普通 Graph ID 转换为不可变 Graph ID。
 
 #### <a name="request"></a>请求
 

@@ -1,5 +1,5 @@
 ---
-title: 列表中的 Microsoft 团队的组织的所有团队
+title: 列出组织中 Microsoft Teams 的所有团队
 description: '列出所有团队 '
 ms.openlocfilehash: 2a9dbaa1fc9a02897870865295fd8d0dac9266a8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
@@ -8,22 +8,22 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091859"
 ---
-# <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列表中的 Microsoft 团队的组织的所有团队
+# <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>列出组织中 Microsoft Teams 的所有团队
 
-列出所有[团队](/graph/api/resources/team?view=graph-rest-beta)组织 （租户） 中，可以查找具有团队的所有组，然后获取每个工作组的信息。
+若要列出组织（租户）中的所有[团队](/graph/api/resources/team?view=graph-rest-beta)，请找到包含团队的所有组，然后获取每个团队的信息。
 
-## <a name="get-a-list-of-groups"></a>获取组的列表
+## <a name="get-a-list-of-groups"></a>获取组列表
 
-要获取的团队的组织中的所有[组](/graph/api/resources/group?view=graph-rest-beta)列表，请获取[所有组的列表](/graph/api/group-list?view=graph-rest-beta)，然后在代码中查找具有**resourceProvisioningOptions**属性包含"团队"。
-由于组大型对象，使用 $select 仅获取您关注的组的属性。
+若要获取包含团队的组织中所有[组](/graph/api/resources/group?view=graph-rest-beta)的列表，请获取[所有组的列表](/graph/api/group-list?view=graph-rest-beta)，然后在代码中找到具有包含“Team”的 **resourceProvisioningOptions** 属性的代码。
+由于组是大型对象，因此使用 $select 仅获取你关注的组的属性。
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **注意**： 某些未使用的旧小组没有 resourceProvisioningOptions 设置。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
+> **注意**：某些未使用的旧团队将不会设置 resourceProvisioningOptions。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
 
-下面展示了示例响应。 
+下面介绍响应示例。 
 
 ```http
 HTTP/1.1 200 OK
@@ -47,21 +47,21 @@ Content-length: xxx
 }
 ```
 
-## <a name="get-a-list-of-groups-using-beta-apis"></a>获取使用 beta Api 的组的列表
+## <a name="get-a-list-of-groups-using-beta-apis"></a>获取使用 beta API 的组列表
 
-使用 beta Api，您可以使用 $filter 返回仅包含团队的组。
+使用 beta API，你可以使用 $filter 仅返回包含团队的组。
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **注意**： 上 /groups $filter 仅可通过 beta 终结点。 resourceProvisioningOptions 是在 v1.0 和 beta 中可用。
+> **注意**：$filter on /groups 只能通过 beta 终结点使用。 resourceProvisioningOptions 在 v1.0 和 beta 中可用。
 
-> **注意**： 不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
+> **注意**：不会列出某些未使用的旧团队。 有关详细信息，请参阅[已知问题](known-issues.md#missing-teams-in-list-all-teams)。
 
-下面展示了示例响应。 
+下面介绍响应示例。 
 
->**注意：** 为便于阅读，可能缩短显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```http
 HTTP/1.1 200 OK
@@ -107,9 +107,9 @@ Content-length: xxx
 }
 ```
 
-## <a name="get-team-information-for-a-group"></a>获取组的工作组信息
+## <a name="get-team-information-for-a-group"></a>获取组的团队信息
 
-若要获取特定组中的工作组的工作组信息，请调用[让团队](/graph/api/team-get?view=graph-rest-beta)API，并包括组 id。
+若要获取特定组中团队的团队信息，请调用[获取团队](/graph/api/team-get?view=graph-rest-beta) API 并包括组 ID。
 
 ```http
 GET /teams/{group-id}
@@ -159,5 +159,5 @@ Content-length: 401
 
 ## <a name="see-also"></a>另请参阅
 
-- [列表 joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
+- [列出 joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
 - [列出组](/graph/api/group-list?view=graph-rest-beta)

@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Graph 将数据写入 Excel 工作簿
-description: q = excelstarter)。
+description: q=excelstarter)。
 ms.openlocfilehash: a36e44ce390f0947fbc2d5615551f17becf11b33
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

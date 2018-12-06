@@ -22,24 +22,24 @@ Microsoft 正在构建一个平台，以打造超越单一设备的体验，以�
 通过活动，你可以为在任何平台和设备上无缝流动的应用用户捕获独特任务，从而使他们能够在其首选屏幕上快速恢复工作。 使用活动源，你可以创建对用户最重要的、以人为中心的任务视图，帮助减少从网页切换到移动设备再到个人电脑等设备时的阻碍。 
 
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>通过使用设备中继 API 构建丰富的跨设备体验 
-除了 Microsoft 设备（个人电脑、Windows Phone、Xbox、IoT、HoloLens 等），设备中继 API 还提供了 Android 和 iOS 设备。 这可让能够真正打破用户设备之间的边界。 你可以构建利用用户环境的应用，并创建能够实时超越单个设备的丰富体验。 
+除了 Microsoft 设备（个人电脑、Windows Phone、Xbox、IoT、HoloLens 等），设备中继 API 还提供了 Android 和 iOS 设备。 这可让能够真正打破用户设备之间的边界。 可以生成利用用户环境的应用，并创建能够实时超越单个设备的丰富体验。 
 
-### <a name="engage-users-with-human-centric-cross-device-notifications-preview"></a>吸引用户以 human 中心跨设备通知 （预览）
+### <a name="engage-users-with-human-centric-cross-device-notifications-preview"></a>使用以人为中心的跨设备通知与用户交互（预览版）
 
-通知是一种的最有效和直接向通信和处理您的用户。 
+通知是与用户沟通和交互的最有效、最直接方式之一。 
 
-与 Microsoft Graph 通知 API 中，可以在 human 为中心，而不是一种设备中心的方法来发送通知。 您可以指定目标用户发送通知，并依赖于 Microsoft Graph 通知框架，用来传递给每个终结点登录用户的通知。 跨设备通知管理更方便了与 Microsoft Graph 通知 API 以及，以便您可以通过用户的设备同步通知并减少您的用户的冗余和中断。 
+借助 Microsoft Graph 通知 API，可以发送以人为中心（而不是以设备为中心）的通知。 可以定目标到接收通知的用户，并依赖 Microsoft Graph 通知框架将通知发送到用户登录的每个终结点。 此外，借助 Microsoft Graph 通知 API，还可以轻松实现跨设备通知管理，这样既可跨用户设备同步通知，又能为用户减少冗余和中断次数。 
 
 ## <a name="api-reference"></a>API 参考
-寻找这些服务的 API 参考？
+在查找这些服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 中的跨设备体验的 API](/graph/api/resources/project-rome-overview?view=graph-rest-1.0)
-- [跨设备体验 Microsoft Graph beta 中的 API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的跨设备体验 API](/graph/api/resources/project-rome-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的跨设备体验 API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>后续步骤
 
 - [使用 Microsoft Graph API 实现跨设备体验](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [详细了解 Microsoft Graph 中的活动源 API](activity-feed-concept-overview.md)
-- [了解有关在 Microsoft Graph 中设备中继 API 的详细信息](device-relay-concept-overview.md)
-- [了解有关在 Microsoft Graph 中的 Microsoft Graph 通知 API 的详细信息](notifications-concept-overview.md)
+- [详细了解 Microsoft Graph 中的设备中继 API](device-relay-concept-overview.md)
+- [详细了解 Microsoft Graph 中的 Microsoft Graph 通知 API](notifications-concept-overview.md)

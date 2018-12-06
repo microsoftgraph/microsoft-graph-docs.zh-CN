@@ -151,11 +151,11 @@ Azure AD 和 Azure AD v2.0 之间的主要区别在于：
 
 >**重要说明**
 >
->**在做出的决定时要使用的终结点开发应用程序的生产，请参阅之前[应使用 v2.0 终结点？](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations)。**
+>**在做出关于开发生产应用时使用哪种终结点的决定前，请参阅[我应该使用 v2.0 终结点吗？](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations)。**
 
 ## <a name="next-steps"></a>后续步骤
 
-已注册您的应用程序后，您已准备好开始 ！
+注册应用后，随时可以开始使用！
 
 - 有关代表用户获取适用于调用 Microsoft Graph 的应用的访问令牌的快速步骤，请参阅[代表用户获取访问](auth-v2-user.md)。
 - 有关在没有用户的情况下获取适用于调用 Microsoft Graph 的应用的访问令牌的快速步骤，请参阅[没有用户的情况下获取访问](auth-v2-service.md)。
@@ -166,11 +166,11 @@ Azure AD 和 Azure AD v2.0 之间的主要区别在于：
 如果你准备好跳转到代码，可以使用以下资源，帮助你在应用中使用 Azure AD 进行身份验证和授权。
 
 ### <a name="microsoft-graph-training-and-samples"></a>Microsoft Graph 培训和示例
-为了帮助您快速入门，我们已创建一系列培训模块和向您表明如何进行身份验证和各种平台上使用 API 其他资源。 
+为了帮助你快速入门，我们创建了一系列培训模块和其他资源，可向你展示如何在各种平台上验证和使用 API。 
 
-- 使用[开始](https://developer.microsoft.com/en-us/graph/get-started)页上查找您喜欢的平台库、 示例、 培训内容和其他资源。 
-- 若要快速运行您的平台的预配置的示例，请参阅[Microsoft Graph 快速启动](https://developer.microsoft.com/en-us/graph/quick-start)。
-- 在 GitHub，请参阅我们[Microsoft Graph 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=)。
+- 使用[使用入门](https://developer.microsoft.com/zh-CN/graph/get-started)页面查找你喜爱的平台适用的库、示例、培训内容和其他资源。 
+- 要使用针对平台预配置的示例快速运行，请参阅 [Microsoft Graph 快速入门](https://developer.microsoft.com/zh-CN/graph/quick-start)。
+- 请参阅 GitHub 上的 [Microsoft Graph 示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=)。
 
 
 ### <a name="azure-active-directory-samples-and-documentation"></a>Azure Active Directory 示例和文档 

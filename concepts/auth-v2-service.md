@@ -75,7 +75,7 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 | 租户        | 必需    | 需要从中请求权限的目录租户。它可以 GUID 或友好名称格式显示。如果你不了解用户授予哪个租户，并想让用户使用任意租户登录，请使用 `common`。 
 | client_id     | 必需    | [应用程序注册门户](https://apps.dev.microsoft.com/)分配给你的应用的应用程序 ID。 
 | redirect_uri  | 必需    | 要向其发送响应供应用处理的重定向 URI。它必须完全匹配在门户中注册的重定向 URI 之一，但它必须采用 URL 编码，且可以拥有其他路径段。 
-| 状态         | 建议 | 请求中包含的值，也会在令牌响应中返回。它可以是你希望的任何内容的字符串。此状态用于在发生身份验证请求前，对应用中的用户状态信息进行编码（例如它们所在的页面或视图上）。 
+| state         | 建议 | 请求中包含的值，也会在令牌响应中返回。它可以是你希望的任何内容的字符串。此状态用于在发生身份验证请求前，对应用中的用户状态信息进行编码（例如它们所在的页面或视图上）。 
 
 ### <a name="administrator-consent-experience"></a>管理员同意体验
 
@@ -100,7 +100,7 @@ GET https://localhost/myapp/permissions
 | 参数     | 说明 
 |:--------------|:------------
 | 租户        | 以 GUID 格式向应用程序授予其请求的权限的目录租户。 
-| 状态         | 请求中包含的值，也会在令牌响应中返回。它可以是你希望的任何内容的字符串。此状态用于在发生身份验证请求前，对应用中的用户状态信息进行编码（例如它们所在的页面或视图上）。 
+| state         | 请求中包含的值，也会在令牌响应中返回。它可以是你希望的任何内容的字符串。此状态用于在发生身份验证请求前，对应用中的用户状态信息进行编码（例如它们所在的页面或视图上）。 
 | admin_consent | 设置为 **true**。 
 
 
@@ -108,7 +108,7 @@ GET https://localhost/myapp/permissions
 > 
 > https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
-## <a name="4-get-an-access-token"></a>4.获取访问令牌
+## <a name="4-get-an-access-token"></a>4. 获取访问令牌
 
 在 OAuth 2.0 客户端凭据授予流中，可以在注册应用以便直接从 Azure AD v2.0 `/token` 终结点请求访问令牌时使用应用程序 ID 和应用程序密码值。
 
@@ -154,7 +154,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 | 参数     | 说明 
 |:--------------|:------------
 | access_token  | 请求的访问令牌。应用可使用此令牌调用 Microsoft Graph。 
-| token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是`bearer` 
+| token_type    | 表示令牌类型值。Azure AD 唯一支持的类型是 `bearer` 
 | expires_in    | 访问令牌的有效期是多久（以秒为单位）。 
 
 ## <a name="5-use-the-access-token-to-call-microsoft-graph"></a>5.使用访问令牌调用 Microsoft Graph

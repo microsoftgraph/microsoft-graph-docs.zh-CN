@@ -47,10 +47,10 @@ Microsoft Graph 中的 OneNote API 保留输入 HTML 的语义内容和基本结
 |输入属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-render-fallback | 如果[提取](onenote-extract-data.md)失败的回退操作：**呈现**（默认值），或**无** |
-| data-render-method | 若要执行，例如[提取](onenote-extract-data.md)方法：<br/>`extract.businesscard` 或 `extract.recipe` |
+| data-render-fallback | [提取](onenote-extract-data.md)失败时的回退操作：**render**（默认）或 **none** |
+| data-render-method | 要执行的[提取](onenote-extract-data.md)方法，例如：<br/>`extract.businesscard` 或 `extract.recipe` |
 | data-render-src | [提取](onenote-extract-data.md)的内容源。 |
-| style | div 的位置、大小、字体和颜色属性： <ul><li>**位置**（**绝对**仅），**左**、**顶部**，和**宽度**（高度是自动配置为 div）<br/><br/>用于创建[绝对定位](onenote-abs-pos.md) div（仅在正文设置 `data-absolute-enabled="true"` 且 div 是正文的直接子级时）。<br/><br/>示例： `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>元素的 CSS [样式](#styles)属性。在输出 HTML 中，这些值在适当的子元素上内嵌返回。</li></ul> |
+| style | div 的位置、大小、字体和颜色属性： <ul><li>**位置**（仅限**绝对**）、**左侧**、**顶部**和**宽度**（会为 div 自动配置高度）<br/><br/>用于创建[绝对定位](onenote-abs-pos.md) div（仅在正文设置 `data-absolute-enabled="true"` 且 div 是正文的直接子级时）。<br/><br/>示例：`<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>元素的 CSS [样式](#styles)属性。在输出 HTML 中，这些值在适当的子元素上内嵌返回。</li></ul> |
  
 
 Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内容。 在以下情况下，API 创建一个默认 div（使用 `data-id="_default"` 设定属性）以包含正文内容：
@@ -74,7 +74,7 @@ Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内�
 
 #### <a name="input-html"></a>输入 HTML
 
-包含非编写、 嵌套分区
+包含非贡献嵌套 div。
 
 ```html
 <html>
@@ -94,7 +94,7 @@ Microsoft Graph 中的 OneNote API 至少在一个 div 中包装所有正文内�
 
 #### <a name="output-html"></a>输出 HTML
 
-> **注意：** div 的内容已被移至父 div 且嵌套 `<div>` 标记已被删除。 如果 div 定义了任何语义信息，例如 **data-id**（示例：`<div data-id="keep-me">`），则保留该 div。
+> **注意**：div 的内容已被移至父 div 且嵌套的 `<div>` 标记已被删除。 如果 div 定义了任何语义信息，例如 **data-id**（示例：`<div data-id="keep-me">`），则保留该 div。
 
 ```html
 <html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">
@@ -123,11 +123,11 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | data-render-src |需要 **data-render-src** 或 **src**。<br/><br/>在 OneNote 页上显示为位图图像的网页：<br/><br/> - `data-render-src="https://..."` 表示公共 URL。<br/><br/> - `data-render-src="name:BlockName"` 表示[多部分请求](/graph/api/section-post-pages?view=graph-rest-1.0#example)的“演示文稿”块中的图像部分。<br/><br/>如果网页比 OneNote 页能够忠实呈现的内容更为复杂，或者页面需要登录凭据，则此方法很有用。|
 | data-tag | 元素上的[笔记标记](onenote-note-tags.md)。 |
-| style |图像的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**、**宽度**和**高度**。<br/><br/>可在任何图像上设置大小。<br/><br/>位置属性用于创建[绝对定位](onenote-abs-pos.md)图像（仅在正文设置 `data-absolute-enabled="true"` 且图像是正文的直接子级时）。<br/><br/>示例： `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>在输出 HTML 中，图像大小分别以 **width** 和 **height** 属性返回。 |
-| src |需要 **src** 或 **data-render-src**。<br/><br/>要在 OneNote 页上呈现的图像：<br/><br/>- `src="https://..."`在 Internet 上可公开访问图像 URL。<br/><br/> - `src="name:BlockName"` 表示代表此图像的多部分请求中的已命名部分。|
+| style |图像的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**、**宽度**和**高度**。<br/><br/>可在任何图像上设置大小。<br/><br/>位置属性用于创建[绝对定位](onenote-abs-pos.md)图像（仅在正文设置 `data-absolute-enabled="true"` 且图像是正文的直接子级时）。<br/><br/>示例：`<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>在输出 HTML 中，图像大小分别以 **width** 和 **height** 属性返回。 |
+| src |需要 **src** 或 **data-render-src**。<br/><br/>要在 OneNote 页上呈现的图像：<br/><br/>- `src="https://..."` 表示 Internet 上公开可用图像的 URL。<br/><br/> - `src="name:BlockName"` 表示代表此图像的多部分请求中的已命名部分。|
 | width，height | 图像的宽度或高度，以不带 px 的像素为单位。 示例：`width="400"` |
  
-> **注意：** OneNote Api 自动检测到输入的图像类型，然后将其作为输出 HTML 中的**数据 fullres src 类型**。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
+> **注意：** OneNote API 自动检测输入图像类型，并在输出 HTML 中将其返回为 **data-fullres-src-type**。 此外，API 还会在 **data-src-type** 中返回优化图像的图像类型。
  
 
 #### <a name="output-attributes"></a>输出属性
@@ -244,7 +244,7 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
 </div>
 ```
 
-用户可以在页面上移动图像，因此返回的索引可能是无序的。 排序应从上到下 y-顺序中，然后从左到右的 x 顺序 y 顺序冲突时。
+用户可以在页面上移动图像，因此返回的索引可能是无序的。 排序方法应采用从上到下的 Y 轴排序，如果 Y 轴顺序存在冲突，则从左到右按 X 轴进行排序。
 
 ## <a name="iframe-elements"></a>iframe 元素
 
@@ -256,8 +256,8 @@ OneNote 页可包含由 **iframe** 元素所表示的嵌入的视频。
 
 |输入属性|说明|
 |:------|:------|
-| data-original-src | 必需。 视频源的 URL。 请参阅[受支持的视频源的列表](onenote-images-files.md#adding-videos)。 <br/><br/>示例： `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
-| width，height | iframe 的宽度或高度，以像素为单位。 示例： `width=300` |
+| data-original-src | 必需。 视频源的 URL。 请参阅[受支持的视频源的列表](onenote-images-files.md#adding-videos)。 <br/><br/>示例：`data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
+| width，height | iframe 的宽度或高度，以像素为单位。 示例：`width=300` |
 
 #### <a name="output-attributes"></a>输出属性
 
@@ -265,7 +265,7 @@ OneNote 页可包含由 **iframe** 元素所表示的嵌入的视频。
 |:------|:------|
 | data-original-src | 视频源的 URL。 |
 | src | 在 OneNote 页中嵌入的视频的链接。 |
-| width，height | iframe 的宽度或高度，以像素为单位。<br/><br/>示例： `width=300` |
+| width，height | iframe 的宽度或高度，以像素为单位。<br/><br/>示例：`width=300` |
  
 ### <a name="output-html-example-for-videos"></a>视频的输出 HTML 示例
 
@@ -278,7 +278,7 @@ OneNote 页可包含由 **iframe** 元素所表示的嵌入的视频。
     src="https://www.youtube.com/embed/3Ztr44aKmQ8?feature=oembed&autoplay=true" />
 ``` 
 
-## <a name="object-elements"></a>对象元素
+## <a name="object-elements"></a>object 元素
 
 OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元素可以在输入和输出 HTML 中包含下列属性。
 
@@ -293,7 +293,7 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 | data | 必需。 表示[多部分请求](/graph/api/section-post-pages?view=graph-rest-1.0#example)中文件的部分的名称。 |
 | data-attachment | 必需。文件名。 |
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| style | 对象的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**和**宽度**。<br/><br/>用于创建[绝对定位](onenote-abs-pos.md)对象（仅在正文设置 `data-absolute-enabled="true"` 且对象是正文的直接子级时）。<br/><br/>示例： `<object style="position:absolute;top:350px;left:300px" ... />` |
+| style | 对象的位置和大小属性：**位置**（仅限**绝对**）、**左侧**、**顶部**和**宽度**。<br/><br/>用于创建[绝对定位](onenote-abs-pos.md)对象（仅在正文设置 `data-absolute-enabled="true"` 且对象是正文的直接子级时）。<br/><br/>示例：`<object style="position:absolute;top:350px;left:300px" ... />` |
 | type | 必需。<br/><br/>标准媒体文件类型。 已知文件类型显示与 OneNote 页上的文件类型相关联的图标。 已知文件类型显示通用文件图标。 |
 <!--todo: add link to known file types--> 
 
@@ -383,7 +383,7 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 |输出属性|说明|
 |:------|:------|
 | data-id | 元素的引用。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
-| data-tag |  在**li**元素中的范围[注释标记](onenote-note-tags.md)。 |
+| data-tag |  **li** 元素中的 span 上的[笔记标记](onenote-note-tags.md)。 |
 | id | 元素的唯一生成的 ID。 使用 `includeIDs=true` 查询选项时，由[对页面的 *content* 终结点的 GET 请求](/graph/api/page-get?view=graph-rest-1.0)返回。<br/><br/>用于[更新页面内容](onenote-update-page.md)。 |
 | style | 元素的 **list-style-type** 和 CSS [style](#styles) 属性。 在输出 HTML 中，在列表项上返回列表级别设置。 不会返回默认属性。 |
  
@@ -391,14 +391,22 @@ OneNote 页可包含由 **object** 元素表示的文件附件。 **object** 元
 
 Microsoft Graph 中的 OneNote API 支持以下列表样式：
 
-|已排序列表|无序列表|
+|已排序列表|未排序列表|
 |:------|:------|
 | 无 | 无 |
-| 小数(默认) | 光盘（默认） |
-| 小写英文字母 | 圆圈 |
-| 小写罗马数字 | 方形 |
-| 大写英文字母 | &nbsp; |
-| 大写罗马数字 | &nbsp; |
+| 
+decimal (default) | 
+disc (default) |
+| 
+lower-alpha | 
+circle |
+| 
+lower-roman | 
+
+square |
+| 
+upper-alpha | &nbsp; |
+| upper-roman | &nbsp; |
  
 您可以在输入 HTML 中对 **ol** 或 **ul** 元素上的列表应用全局样式，但样式在 **li** 元素上返回。
 
@@ -472,7 +480,7 @@ Microsoft Graph 中的 OneNote API 支持以下列表样式：
 
 以下示例显示使用不同方法定义表样式的输入 HTML和返回的输出 HTML。
 
-#### <a name="input-html-with-optional-settings-at-different-levels"></a>输入 HTML 具有不同级别的可选设置
+#### <a name="input-html-with-optional-settings-at-different-levels"></a>具有不同级别可选设置的输入 HTML
 
 ```html
 <table style="border:0px;width:500px;background-color:green">
@@ -489,7 +497,7 @@ Microsoft Graph 中的 OneNote API 支持以下列表样式：
 </table>
 ```
  
-#### <a name="output-html-with-css-styles-returned-inline-on-the-td-elements"></a>使用 CSS 样式的输出 HTML 返回内嵌 td 元素
+#### <a name="output-html-with-css-styles-returned-inline-on-the-td-elements"></a>具有 CSS 样式的输出 HTML 在 td 元素上内嵌返回
 
 ```html
 <table style="border:0px">
@@ -513,37 +521,37 @@ Microsoft Graph 中的 OneNote API 支持页面正文中元素的以下内联 CS
 
 |属性|示例|
 |:------|:------|
-| 背景颜色 | `style="background-color:#66cc66"` （默认为白色）<br/><br/>支持十六进制格式和命名颜色。 |
-| color | `style="color:#ffffff"` （默认为黑色） |
-| 字体集 | `style="font-family:Courier"` （默认为 Calibri） |
+| background-color | `style="background-color:#66cc66"`（默认为白色）<br/><br/>支持十六进制格式和命名颜色。 |
+| color | `style="color:#ffffff"`（默认为黑色） |
+| font-family | `style="font-family:Courier"`（默认为 Calibri） |
 | font-size | `style="font-size:10pt"`（默认为 11pt）<br/><br/>API 接受 *pt* 或 *px* 的字体大小，但会将 *px* 转换为 *pt*。 十进制值被四舍五入为最接近的 n.0pt 或 n.5pt。 |
-| font-style | `style="font-style:italic"` （正常或仅倾斜） |
-| 字体粗细 | `style="font-weight:bold"` （正常或仅加粗） |
+| font-style | `style="font-style:italic"`（正常或仅倾斜） |
+| font-weight | `style="font-weight:bold"`（正常或仅加粗） |
 | strike-through | `style="text-decoration:line-through"` |
-| 文本对齐 | `style="text-align:center"` （仅适用于块元素） |
-| text-decoration | `style="text-decoration:underline"` （无或仅加下划线） |
+| text-align | `style="text-align:center"`（仅适用于块元素） |
+| text-decoration | `style="text-decoration:underline"`（无或仅加下划线） |
  
 
-此外支持以下内嵌字符样式：
+另外，还支持下列内联字符样式：
 
 <table id="simpletable">
 <tr>
-<td id="simplecell">&lt;b&gt;</td>
-<td id="simplecell">&lt;i&gt;</td>
-<td id="simplecell">&lt;u&gt;</td>
+<td id="simplecell"><b></td>
+<td id="simplecell"><i></td>
+<td id="simplecell"><u></td>
 </tr>
 <tr>
-<td id="simplecell">&lt;em&gt;</td>
-<td id="simplecell">&lt;strong&gt;</td>
-<td id="simplecell">&lt;strike&gt;</td>
+<td id="simplecell"><em></td>
+<td id="simplecell"><strong></td>
+<td id="simplecell"><strike></td>
 </tr>
 <tr>
-<td id="simplecell">&lt;sup&gt;</td>
-<td id="simplecell">&lt;sub&gt;</td>
-<td id="simplecell">&lt;del&gt;</td>
+<td id="simplecell"><sup></td>
+<td id="simplecell"><sub></td>
+<td id="simplecell"><del></td>
 </tr>
 <tr>
-<td id="simplecell">&lt;cite&gt;</td>
+<td id="simplecell"><cite></td>
 <td id="simplecell">&nbsp;</td>
 <td id="simplecell">&nbsp;</td>
 </tr>

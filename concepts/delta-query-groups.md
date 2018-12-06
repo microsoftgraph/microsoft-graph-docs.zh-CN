@@ -1,6 +1,6 @@
 ---
 title: 获取组的增量更改
-description: 增量查询可让您查询添加、 删除或更新到组，通过一系列增量函数调用的。 增量查询启用发现更改组
+description: 使用 delta 查询，可通过一系列 delta 函数调用来查询组的添加、删除或更新。 delta 查询可便于发现组的更改
 ms.openlocfilehash: b043d62e0d99b4d71e25a8367abc731d39ad6d45
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](/graph/api/resources/group?view=graph-rest-1.0)集合对象。 如果整个组集过大而无法适应一个响应，那么还将包括一个包含状态令牌的 `nextLink`。
 
-此示例中包含 `nextLink`；原始 `$select` 和 `$expand` 查询参数则在状态令牌中编码。
+此示例中包含 `nextLink`；原始 `$select` 和 `$expand` 查询参数则在状态令牌中进行了编码。
 
 ```http
 HTTP/1.1 200 OK
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
->**注意：** `members@delta`属性中的第一个组对象的 TestGroup1-包含且包含两个组的成员。 TestGroup2 不包含该属性，因为该组不具有任何成员。
+>**注意：**`members@delta` 属性包含在第一个组对象 (TestGroup1) 中，并包含此组的两个当前成员。 TestGroup2 不包含此属性，因为组中没有任何成员。
 
 ## <a name="nextlink-request"></a>nextLink 请求
 

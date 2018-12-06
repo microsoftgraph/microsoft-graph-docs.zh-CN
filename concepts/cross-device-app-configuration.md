@@ -35,10 +35,10 @@ ms.locfileid: "27091867"
 将你的应用可用的每个平台的推送通知凭据与跨设备应用关联时，用户的应用可以跨设备发送命令，以便可以构建跨多个屏幕的体验或实时将工作流从一个设备转换到另一个设备的体验。 
 
 ## <a name="select-the-right-hosting-method-for-your-cross-device-app-configuration"></a>为跨设备应用配置选择正确的托管方法
-可以将跨设备应用配置作为域上的 JSON 文件或作为可通过 [Windows 开发人员中心](https://developer.microsoft.com/en-us/windows)配置的配置文件进行托管。 根据要在应用中启用的 Project Rome 功能选择托管选项。 
+可以将跨设备应用配置作为域上的 JSON 文件或作为可通过 [Windows 开发人员中心](https://developer.microsoft.com/zh-CN/windows)配置的配置文件进行托管。 根据要在应用中启用的 Project Rome 功能选择托管选项。 
 
 ### <a name="windows-dev-center-profile-recommended"></a>Windows 开发人员中心配置文件（推荐） 
-可以使用 [Windows 开发人员中心](https://developer.microsoft.com/en-us/windows)中管理的跨设备应用访问所有 Project Rome 功能。 Windows 开发人员中心还提供管理任何跨设备应用配置更改的*最佳*方式。 可以更安全地将更新保存到现有配置文件，直到已准备好将更改发布到生产中。 将更改发布到开发人员中心中的现有跨设备应用时，新配置文件将在大约 **1 小时**后生效。  
+可以使用 [Windows 开发人员中心](https://developer.microsoft.com/zh-CN/windows)中管理的跨设备应用访问所有 Project Rome 功能。 Windows 开发人员中心还提供管理任何跨设备应用配置更改的*最佳*方式。 可以更安全地将更新保存到现有配置文件，直到已准备好将更改发布到生产中。 将更改发布到开发人员中心中的现有跨设备应用时，新配置文件将在大约 **1 小时**后生效。  
 
 ### <a name="externally-hosted-json-file-limited"></a>外部托管的 JSON 文件（有限） 
 可以通过作为外部托管的 JSON 文件管理的跨设备应用在所有受支持的平台上使用以下 Project Rome 功能：  
@@ -59,7 +59,7 @@ ms.locfileid: "27091867"
 #### <a name="assert-domain-ownership-with-the-windows-dev-center"></a>通过 Windows 开发人员中心声明域所有权
 使用 Windows 开发人员中心管理跨设备应用配置时，表示跨设备应用 ID 的域会作为跨设备应用配置文件的一部分进行存储，因此 Microsoft 可以确认你是域所有者。 要完成跨设备应用配置的发布，**必须验证**你的域所有权，因此最好先处理此事。如果尚未验证域，则可以保存跨设备应用详细信息并在完成此步骤后重新运行验证，以便可以发布跨设备应用。
 
-若要声明跨设备应用的域所有权，将需要为域添加具有在开发人员中心中为你提供的唯一值的 [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) 条目。 每个跨设备应用的此值都是唯一的。 若要查找应用的唯一值，请登录到 Windows 开发人员中心，然后从左侧菜单中选择“跨设备体验”**** 以开始配置新的跨设备应用。 为新的跨设备应用提供名称后，从子菜单中选择“验证跨设备应用域”****。 此页将显示与 **内嵌**唯一值的说明 (例如，MS = 95ff4557-813f-45a5-b2f6-1f94170b979f)。 确保复制整个值，包括“MS=”。
+若要声明跨设备应用的域所有权，将需要为域添加具有在开发人员中心中为你提供的唯一值的 [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) 条目。 每个跨设备应用的此值都是唯一的。 若要查找应用的唯一值，请登录到 Windows 开发人员中心，然后从左侧菜单中选择“跨设备体验”**** 以开始配置新的跨设备应用。 为新的跨设备应用提供名称后，从子菜单中选择“验证跨设备应用域”****。 此页面将显示包含唯一值  **inline** 的说明（例如，MS=95ff4557-813f-45a5-b2f6-1f94170b979f）。 确保复制整个值，包括“MS=”。
 
 ### <a name="step-2-collect-your-platform-specific-application-ids"></a>步骤 2：收集特定于平台的应用程序 ID
 为将使用 [Project Rome API](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) 的每个应用程序和平台收集特定于平台的应用程序 ID。
@@ -68,14 +68,14 @@ ms.locfileid: "27091867"
 
 若要查找 ID，请执行以下操作：
 
-* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
-* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
+* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
+* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
 * **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
 * **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
 * **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>步骤 3：配置对 Microsoft 帐户或 Azure AD 的支持
-若要启用跨设备体验，您的应用程序的用户必须使用登录以下任意一个 [Microsoft 帐户](https://account.microsoft.com/account) 或 [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) 帐户。 你将提供应用 ID/客户端 ID 以在跨设备应用配置过程中支持身份验证，从而启用跨平台支持。 最多可提供 10 个实例。
+若要启用跨设备体验，应用用户必须使用 [Microsoft 帐户](https://account.microsoft.com/account)或  [Azure Active Directory](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD) 帐户进行登录。 你将提供应用 ID/客户端 ID 以在跨设备应用配置过程中支持身份验证，从而启用跨平台支持。 最多可提供 10 个实例。
 
 可以通过使用你的开发人员帐户登录到[应用程序注册门户](https://apps.dev.microsoft.com)来查找现有应用 ID/客户端 ID 或预配新应用 ID/客户端 ID。 登录到门户后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
 
@@ -94,7 +94,7 @@ ms.locfileid: "27091867"
 若要查找 ID，请执行以下操作：
 
 * 
-  **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
+  **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/zh-CN/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
 * **Apple 推送通知服务** - 请参阅 [APNs 概述](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)。
 * **Google Cloud Messaging** - 请参阅 [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)。
 
@@ -141,8 +141,8 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 
 若要查找 ID，请执行以下操作：
 
-* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
-* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
+* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
+* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
 * **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
 * **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
 * **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
@@ -162,9 +162,9 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 ]
 ```
 
-您可以找到您现有的应用程序 ID/客户端 Id，或设置新的登录到您的开发人员帐户使用的 [应用程序注册门户](https://apps.dev.microsoft.com)。 登录后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。 添加用于启用对 Microsoft 帐户或 Azure AD 的支持的 ID 时使用平台类型“msa”，如前一个示例中所示。  
+可以通过使用你的开发人员帐户登录到 [应用程序注册门户](https://apps.dev.microsoft.com)来查找现有应用 ID/客户端 ID 或预配新应用 ID/客户端 ID。 登录后，可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。 添加用于启用对 Microsoft 帐户或 Azure AD 的支持的 ID 时使用平台类型“msa”，如前一个示例中所示。  
 
->**注意：** 如果您正在构建的应用程序支持 Azure AD 用户，并且不使用通过 [应用程序注册门户](https://apps.dev.microsoft.com)颁发聚合的应用程序 ID，您需要提供的 Azure 应用程序的应用程序 id 的 GUID。 此类型的 ID 还应配置为平台类型“msa”。 
+>**注意：** 如果正在构建支持 Azure AD 用户的应用程序，且不使用通过 [应用程序注册门户](https://apps.dev.microsoft.com)颁发的聚合应用程序 ID，则将需要为 Azure 应用的应用程序 ID 提供 GUID。 此类型的 ID 还应配置为平台类型“msa”。 
 
 若要在 Azure 门户中查找租户的 GUID，请执行以下操作： 
 
@@ -186,7 +186,7 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 如果你的应用使用 Microsoft Graph 中的活动源 API，则必须在 **activitySourceHost** 属性中提供主机值。 有关详细信息，请参阅[活动资源类型](/graph/api/resources/projectrome-activity?view=graph-rest-1.0)。
 
 ### <a name="universal-windows-apps"></a>通用 Windows 应用
-如果具有 Windows 应用，将需要在发布数据之前在应用清单中配置主机值。 有关详细信息，请参阅 [uap5:UserActivity](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity)。 
+如果具有 Windows 应用，将需要在发布数据之前在应用清单中配置主机值。 有关详细信息，请参阅 [uap5:UserActivity](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity)。 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps

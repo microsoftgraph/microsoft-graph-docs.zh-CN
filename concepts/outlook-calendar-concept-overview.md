@@ -1,6 +1,6 @@
 ---
 title: Outlook 日历 API 概述
-description: Outlook 日历属于还允许您管理电子邮件和联系人，在组织中，找到用户的信息的 Office 365 中的 Outlook 消息中心
+description: Outlook 日历属于 Office 365 中的 Outlook 消息传递中心，也便于管理电子邮件和联系人、查找组织用户的相关信息、
 ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -55,9 +55,9 @@ Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同
 Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 
 - 在 Outlook 日历应用设置中，客户可以启用在电子邮件中自动添加事件，如航班、酒店或就餐预订，以及开具发票等。 添加后，即可像用户邮箱中的任何其他[事件](/graph/api/resources/event?view=graph-rest-1.0)那样与这些事件交互，并借此 Outlook 功能生成创造性应用场景。
-- ** 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) 对象。 您可以[获取聊天室 （预览）](/graph/api/user-findrooms?view=graph-rest-beta)并[获取会议室列表 （预览）](/graph/api/user-findroomlists?view=graph-rest-beta)所提供的租户。 若要在特定房间内组织会议，请将其分配给**事件**的 **location** 属性。
-- * * 可以[查找用户和资源 （预览） 的忙/闲信息](outlook-get-free-busy-schedule.md)的特定时间段。 然后，您可以使用此数据要应用于不同方案包括资源规划和安排事件。
-- * * 如果您的方案涉及到在最佳时间安排会议，可以考虑[使用 findMeetingTimes 以确定可能的时间或位置，以满足](findmeetingtimes-example.md)。 [FindMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 函数会考虑与会者的闲/忙状态，以及你所提供的任何首选房间、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。
+- ** 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) 对象。 可以[获取租户中可用的会议室（预览版）](/graph/api/user-findrooms?view=graph-rest-beta)和[会议室列表（预览版）](/graph/api/user-findroomlists?view=graph-rest-beta)。 若要安排在特定会议室召开会议，请将它分配到 **event** 的 **location** 属性。
+- **可以[查找用户和资源在特定时间段内的忙/闲信息（预览版）](outlook-get-free-busy-schedule.md)。 然后，可以将此类数据应用于各种方案，包括资源计划和事件日程安排。
+- **如果方案涉及安排在最佳时间召开会议，不妨[使用 findMeetingTimes 标识可召开会议的可能时间或地点](findmeetingtimes-example.md)。 [FindMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 函数会考虑与会者的忙/闲状态，以及所提供的任何首选会议室、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。
 
 
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>跨多个地点和时区的电话会议
@@ -76,22 +76,22 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 节省在外部数据存储中存储和管理应用数据的开销。 使用 Microsoft Graph，可以在各个资源实例中将自定义应用数据存储为[开放扩展](extensibility-overview.md#open-extensions)。 如果需要键入数据，或者希望能够共享类型化架构，可以将自定义应用数据存储在[架构扩展](extensibility-overview.md#schema-extensions)中。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>后续步骤
 
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0)中选择和试用日历示例查询。
 - 了解以下信息：
-  - [在 Outlook 日历上找到可能的会议时间](findmeetingtimes-example.md)
-  - [获取闲/忙安排用户和资源 （预览）](outlook-get-free-busy-schedule.md)
+  - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
+  - [获取用户和资源的忙/闲日程安排（预览版）](outlook-get-free-busy-schedule.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
-  - [获取 Outlook 资源不可变标识符](outlook-immutable-id.md)
-  - [获取共享的事件](outlook-get-shared-events-calendars.md)
-- 查看 Outlook [日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 引用。
+  - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
+  - [获取共享事件](outlook-get-shared-events-calendars.md)
+- 查看 Outlook [日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 参考。
 
 <!-- Replace the last item with the calendar API overview when it's published.
 -->

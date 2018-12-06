@@ -111,7 +111,7 @@ Content-type: application/json
 
 ## <a name="final-nextlink-request"></a>最终 nextLink 请求
 
-第三个请求继续使用上一个同步请求返回的最新 `skipToken`。 
+第三个请求继续使用上次同步请求返回的最新 `skipToken`。 
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
@@ -168,7 +168,7 @@ Content-type: application/json
 }
 ```
 
-如果发生更改，则会返回同一 `deltaToken`，包括已更改用户的集合。
+如果发生更改，便会返回相同的 `deltaToken`，其中包括已更改用户的集合。
 
 ```http
 HTTP/1.1 200 OK
@@ -194,13 +194,13 @@ Content-type: application/json
 }
 ```
 
-关于上述示例响应需注意的一些事项：
+上面示例响应的一些注意事项如下：
 
-- 删除用户后，项目包含批注：`@removed`值为`"reason": "changed"`。
+- 如果用户遭删除，项中包含注释：`@removed` 值为 `"reason": "changed"`。
 
-- 永久删除用户，当项目包含批注：`@removed`值为`"reason": "deleted"`。
+- 如果用户遭永久删除，项中包含注释：`@removed` 值为 `"reason": "deleted"`。
 
-- 当用户创建，或还原时，没有任何注释。
+- 如果用户被创建或恢复，则没有注释。
 
 ## <a name="see-also"></a>另请参阅
 [Microsoft Graph delta 查询](delta-query-overview.md)概述。

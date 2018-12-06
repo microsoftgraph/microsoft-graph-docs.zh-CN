@@ -33,47 +33,47 @@ ms.locfileid: "27091815"
 
 ### <a name="using-delta-query"></a>使用 delta 查询
 
-有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
+有关使用 delta 查询方面的已知问题，请参阅本文中的[“delta 查询”部分](#delta-query)。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>应用程序权限
+### <a name="application-permissions"></a>应用权限
 
-进行更改时与团队和使用应用程序权限的通道，Microsoft 团队呈现张贴到常规通道使用空名称而不是应用程序名称控制消息。 这将在以后更新得到解决。 Fix 将追溯更新已发布的控制消息。
+使用应用权限更改团队和频道时，Microsoft Teams 使用空白名称（而不是应用名称）呈现发布到常规频道的控制消息。 今后发布的更新将解决此问题。 修补程序将追溯更新已发布的控制消息。
 
-### <a name="create-chat-thread-api"></a>创建聊天线程 API
+### <a name="create-chat-thread-api"></a>用于创建聊天线程的 API
 
-[创建聊天线程](/graph/api/channel-post-chatthreads?view=graph-rest-beta)当前 API 将替换更丰富的 API 的符合[列出通道消息](/graph/api/channel-list-messages?view=graph-rest-beta)的架构。
+当前用于[创建聊天线程](/graph/api/channel-post-chatthreads?view=graph-rest-beta)的 API 将被替换为，与用于[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)的架构一致的更丰富 API。
 
-### <a name="graph-explorer-and-v10"></a>图资源管理器和 v1.0
+### <a name="graph-explorer-and-v10"></a>Graph 浏览器和 v1.0
 
-图资源管理器示例查询未更新 v1.0 尚未。
-您仍可以在顶部的文本框中键入 v1.0 查询。
-请确保已设置具有适当的权限，如 Group.ReadWrite.All 和 User.Read.All 图资源管理器。
+Graph 浏览器示例查询尚未针对 v1.0 进行更新。
+仍可以在顶部的文本框中键入 v1.0 查询。
+请确保已为 Graph 浏览器设置适当权限，如 Group.ReadWrite.All 和 User.Read.All。
 
-### <a name="graph-explorer-and-global-admins"></a>图资源管理器和全局管理员
+### <a name="graph-explorer-and-global-admins"></a>Graph 浏览器和全局管理员
 
-目前，图资源管理器允许如果当前用户不是一个成员或团队的所有者的全局管理员来处理团队它们不是所有者或的成员，但其他应用程序尝试进行相同的 API 调用将失败。
+目前，Graph 浏览器允许全局管理员管理他们不拥有或不所属的团队；但如果当前用户不是团队的成员或所有者，其他应用便无法尝试执行相同的 API 调用。
 
-### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和文章 /teams
+### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和 POST /teams
 
-请参阅[团队需要所有列表](teams-list-all-teams.md)和[列表您的都团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)获得都团队的列表。
-请参阅[创建工作组](/graph/api/team-put-teams?view=graph-rest-1.0)创建团队。
+若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
+若要创建团队，请参阅[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
 
-### <a name="missing-teams-in-list-all-teams"></a>缺少的所有团队的列表中的团队
+### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
 
-按[列出所有团队](teams-list-all-teams.md)列出不在过去中创建但尚未由 Microsoft 团队用户已最近使用的某些团队。
-将列出新团队。
-某些旧团队没有**resourceProvisioningOptions**属性包含"团队"，对新创建的团队和团队中的 Microsoft 团队访问设置。
-将来，我们将**resourceProvisioningOptions**设置未对已打开的 Microsoft 团队中的现有团队。
+[列出所有团队](teams-list-all-teams.md)没有列出过去创建但 Microsoft Teams 用户最近未使用的一些团队。
+新团队会被列出。
+一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
+今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
 
-## <a name="groups"></a>Groups
+## <a name="groups"></a>组
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>组和 Microsoft Teams 的权限
 
-Microsoft Graph 公开 （[*Group.Read.All*](permissions-reference.md#group-permissions)和[*Group.ReadWrite.All*](permissions-reference.md#group-permissions)） 的两个权限组和 Microsoft 团队对 Api 的访问。
-必须由管理员同意这些权限。
-将来，我们计划添加组和用户可以同意的团队的新权限。
+Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权限（[*Group.Read.All*](permissions-reference.md#group-permissions) 和 [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)）。
+管理员必须同意授予这些权限。
+今后，我们计划新增用户可同意授予的组和团队权限。
 
 此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
 
@@ -88,7 +88,7 @@ Microsoft Graph 公开 （[*Group.Read.All*](permissions-reference.md#group-perm
 
 * 组对话、事件和照片
 * 外部发件人、被接受或拒绝的发件人、组订阅
-* 用户收藏夹和未读计数
+* 用户收藏夹和未看计数
 
 ### <a name="policy"></a>策略
 
@@ -176,9 +176,9 @@ GET \me\calendars('{id}')\events
 
 ## <a name="calls-and-online-meetings"></a>呼叫和联机会议
 
-> **注释**呼叫和联机会议当前正在预览和仅在 Microsoft Graph beta 终结点中可用。
+> **注意**：呼叫和联机会议暂处于预览阶段，仅适用于 Microsoft Graph beta 终结点。
 
-- 导航路径`/applications/{id}`不受支持。 导航到应用程序的全局应用程序节点甚至您自己的不允许。 请使用`/app`仅导航。
+- 导航路径 `/applications/{id}` 不受支持。 禁止通过全局应用节点转到应用，即使是你自己的应用，也不例外。 请仅使用 `/app` 导航。
 
 ## <a name="contacts"></a>联系人
 

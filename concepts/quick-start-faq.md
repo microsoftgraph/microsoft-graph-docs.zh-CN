@@ -1,6 +1,6 @@
 ---
-title: Microsoft Graph 快速启动 FAQ
-description: 此 FAQ 解答了与 Microsoft Graph 快速启动相关的问题。
+title: Microsoft Graph 快速入门 FAQ
+description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 ms.openlocfilehash: 90e16a340d4dbb337cbe0af5f799476b28eba200
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,7 +8,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091855"
 ---
-# <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速启动 FAQ
+# <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
 此 FAQ 解答了与 [Microsoft Graph 快速启动](https://developer.microsoft.com/graph/quick-start)相关的问题。
 

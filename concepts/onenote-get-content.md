@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Graph 获取 OneNote 内容和结构
-description: " 在 Office 365 的企业笔记本"
+description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: d5a1b382535988e48b5b710d3685a344c5f5a40d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "27091889"
 
 如果请求成功，Microsoft Graph 将返回一个 200 HTTP 状态代码以及请求的实体或内容。 OneNote 实体作为符合 OData 版本 4.0 规范的 JSON 对象返回。
 
-通过使用查询字符串选项，可以过滤查询并提高性能。
+通过使用查询字符串选项，可以筛选查询并提高性能。
 
 
 <a name="request-uri"></a>
@@ -31,7 +31,7 @@ ms.locfileid: "27091889"
 
 <br/>
 
-然后附加想要检索的资源端点。 （[资源路径](#resource-paths-for-get-requests) 将在下一节中介绍。）
+然后追加要检索的资源的终结点。 （[资源路径](#resource-paths-for-get-requests)会显示在下一个节中。）
 
 完整的请求 URI 类似于以下示例之一：
 
@@ -79,7 +79,7 @@ ms.locfileid: "27091889"
 
 页面的默认排序顺序是 `lastModifiedTime desc`。
 
-默认查询展开父节并选择节 `id`、 `name`和 `self` 属性。
+默认查询将展开父节并选择节的 `id`、`name` 和 `self` 属性。
 
 默认情况下，为 *GET 页面*请求返回仅前 20 个实体。 未指定 **top** 查询字符串选项的请求将在响应中返回 `@odata.nextLink` 链接，该链接可用于获取接下来的 20 个条目。
 
@@ -101,9 +101,9 @@ ms.locfileid: "27091889"
 
 <br/>
 
-页面可以扩展 **parentNotebook** 和 **parentSection** 属性。
+页面可以展开 **parentNotebook** 和 **parentSection** 属性。
 
-默认查询展开父节并选择节 `id`、 `name`和 `self` 属性。
+默认查询将展开父节并选择节的 `id`、`name` 和 `self` 属性。
 
 使用 **pagelevel** 返回页面的缩进级别及其在父节中的顺序。 
 
@@ -161,7 +161,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 使用 **includeIDs=true** 查询字符串选项获取生成的 ID，用于[更新页面](onenote-update-page.md)。
 
-使用 **preAuthenticated=true** 查询字符串选项以获取页面上的 [图像资源](#image-or-other-file-resource) 公共 URL。 公共 URL 的有效期为 1 小时。 
+使用 **preAuthenticated=true** 查询字符串选项获取指向该页面上[图像资源](#image-or-other-file-resource) 的公共 URL。 公共 URL 的有效期为 1 小时。 
 
 
 
@@ -191,7 +191,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 节的默认排序顺序是 `name asc`。
 
-默认查询扩展父笔记本和父节组，并选择它们的 `id`、 `name` 和 `self` 属性。
+默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
 
 
@@ -207,7 +207,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 节可以展开 **parentNotebook** 和 **parentSectionGroup** 属性。
 
-默认查询扩展父笔记本和父节组，并选择它们的 `id`、 `name` 和 `self` 属性。
+默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
 
 
@@ -229,9 +229,9 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 节组可以展开 **sections**、**sectionGroups**、**parentNotebook** 和 **parentSectionGroup** 属性。
 
-部分组的默认排序顺序是 `name asc`。
+节组的默认排序顺序是 `name asc`。
 
-默认查询扩展父笔记本和父节组，并选择它们的 `id`、 `name` 和 `self` 属性。
+默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
 
 
@@ -247,7 +247,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 节组可以展开 **sections**、**sectionGroups**、**parentNotebook** 和 **parentSectionGroup** 属性。
 
-默认查询扩展父笔记本和父节组，并选择它们的 `id`、 `name` 和 `self` 属性。
+默认查询将展开父笔记本和父节组，并选择它们的 `id`、`name` 和 `self` 属性。
 
 
 
@@ -448,7 +448,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 ### <a name="filter--expand"></a>filter & expand  
 
-获取特定笔记本中的所有页面。 该 API 默认返回 20 个条目。
+获取特定笔记本中的所有页面。 默认情况下，API 返回 20 个条目。
 
 ```
 [GET] ../pages?filter=parentNotebook/id eq '{notebook-id}'&expand=parentNotebook
@@ -558,12 +558,12 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 | 查询选项 | 示例和说明 |  
 |------|------|  
 | count | <p>`count=true`</p><p>集合中的实体计数。在响应的 **@odata.count** 属性中返回此值。</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中返回内联的导航属性。 **expand** 表达式支持以下属性：<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的**id**、**name** 和 **self** 属性。 </p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符： **EQ**， **NE**， **GT**， **ge**， **LT**， **le**<br /> - 逻辑运算符： **and**， **or**， **not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**：`filter=tolower(name) eq 'spring'`</p> |  
+| expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中返回内联的导航属性。 **expand** 表达式支持以下属性：<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的**id**、**name** 和 **self** 属性。</p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
+| filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符：**eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 逻辑运算符：**and**、**or**、**not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**：`filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>作为排序依据的[属性](#onenote-entity-properties)，具有可选的 **asc**（默认）或 **desc** 的排序顺序。您可以按请求集合中实体的任意属性进行排序。</p><p>笔记本、节组和节的默认排序顺序为 `name asc`，页面的默认排序顺序为 `lastModifiedTime desc`（最后修改的页面排第一）。</p><p>用逗号隔开多个属性，并按想要应用属性的顺序列出它们。 属性名区分大小写。</p> |  
-| search | <p>`search=cell div`</p><p>仅适用于消费者笔记本。</p><p>要在页面标题、页面正文、图像替换文字、图像 OCR 文本中搜索的术语或短语。默认情况下，搜索查询返回按相关性排序的结果。</p><p>OneNote 使用必应全文搜索来支持短语搜索、词干分解、拼写宽容、相关性和排名、断字、多语言以及其他全文搜索功能。 搜索字符串不区分大小写。</p><p>仅适用于用户拥有的笔记本中的页面。 已编入索引的内容具有私密性，只有所有者才能访问。 受密码保护的页面未被编入索引。 仅适用于 `pages` 端点。</p> |  
+| search | <p>`search=cell div`</p><p>仅适用于消费者笔记本。</p><p>要在页面标题、页面正文、图像替换文字、图像 OCR 文本中搜索的术语或短语。默认情况下，搜索查询返回按相关性排序的结果。</p><p>OneNote 使用必应全文搜索来支持短语搜索、词干分解、拼写宽容、相关性和排名、断字、多语言以及其他全文搜索功能。 搜索字符串不区分大小写。</p><p>仅适用于用户拥有的笔记本中的页面。 已编入索引的内容具有私密性，只有所有者才能访问。 受密码保护的页面未编入索引。 仅适用于 `pages` 终结点。</p> |  
 | select | <p>`select=id,title`</p><p>要返回的[属性](#onenote-entity-properties)。 可用于单个实体或集合。 使用逗号分隔多个属性。 属性名区分大小写。</p> |  
-| skip | <p>`skip=10`</p><p>结果集中要跳过的条目数量。 通常用于分页结果。</p> |  
+| skip | <p>`skip=10`</p><p>结果集中要跳过的条目数量。 通常用于对结果分页。</p> |  
 | top | <p>`top=50`</p><p>结果集中要返回的条目数量，最多可达 100 个条目。 默认值为 20。</p> |  
 
 Microsoft Graph 还提供 `pagelevel` 查询字符串选项，可使用该选项获取父节内页面的级别和顺序。 仅适用于特定节中页面的查询或特定页面中的查询。 
@@ -597,7 +597,8 @@ Microsoft Graph 支持 **filter** 表达式中的以下 OData 运算符和函数
 |------|------|  
 | 和 | `createdTime le 2014-01-30 and createdTime gt 2014-01-23` |  
 | 或 | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
-| not | `not contains(tolower(title),'school')` |  
+| 
+not | `not contains(tolower(title),'school')` |  
 
 <br/>
   
@@ -651,7 +652,7 @@ Microsoft Graph 支持 **filter** 表达式中的以下 OData 运算符和函数
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅 [身份验证和权限](permissions-reference.md)。</p> |  
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
 | 接受标头 | <p> `application/json` 适用于 OneNote 实体和实体集</p><p> `text/html` 适用于页面内容</p> | 
 
 <br/>
@@ -659,7 +660,7 @@ Microsoft Graph 支持 **filter** 表达式中的以下 OData 运算符和函数
 | 响应数据 | 说明 |  
 |------|------|  
 | 成功代码 | 200 HTTP 状态代码。 |  
-| 响应正文 | 以 JSON 格式设置的实体或实体的 OData 表示，页面 HTML 或文件资源二进制数据。  |  
+| 响应正文 | JSON 格式、页面 HTML 或文件资源二进制数据中的实体或实体集的 OData 表示形式。  |  
 | 错误 | 如果请求失败，API 将在响应正文的 **@api.diagnostics** 对象中返回[错误](onenote-error-codes.md)。 |  
 | X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 

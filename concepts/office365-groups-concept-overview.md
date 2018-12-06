@@ -55,12 +55,12 @@ Office 365 组是共享 Microsoft 服务或你的应用中资源访问权限的�
 
 - 配置广泛的[组策略设置](/graph/api/resources/groupsetting?view=graph-rest-1.0)，从而帮助定义行为，例如，除非所有者续订组并对 Office 365 组强制执行命名策略，否则会自动删除组。 
 - [续订](/graph/api/group-renew?view=graph-rest-1.0)即将到期的组，以让团队成员继续协作和访问内容。 如果未根据已建立的过期策略续订组，则会自动删除该组。 
-- [恢复](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)已删除的组。
+- [还原](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)已删除组。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 组 API](/graph/api/resources/groups-overview?view=graph-rest-1.0)
+- [Microsoft Graph v1.0 中的组 API](/graph/api/resources/groups-overview?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的组 API](/graph/api/resources/groups-overview?view=graph-rest-beta)
 
 

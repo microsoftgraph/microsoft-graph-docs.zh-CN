@@ -1,6 +1,6 @@
 ---
 title: 使用开放扩展向用户添加自定义数据
-description: '我们将引导你完成一个示例，演示如何使用*开放扩展*。 '
+description: '我们将举例逐步介绍如何使用*开放扩展*。 '
 ms.openlocfilehash: b2ff767e9eb0762ec3600166328d2bb0c5218936
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

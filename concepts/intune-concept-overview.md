@@ -45,9 +45,9 @@ Intune API 可用于执行下列应用管理任务：
 - 管理[电信费用](/graph/api/resources/intune-tem-conceptual?view=graph-rest-1.0)。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
+- [Microsoft Graph v1.0 中的 Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤

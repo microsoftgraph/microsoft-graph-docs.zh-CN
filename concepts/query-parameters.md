@@ -31,9 +31,9 @@ Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中�
 
 这些参数与 [OData V4 查询语言][odata-query]兼容。 并非所有的 Microsoft Graph API 都支持所有参数，而对 `v1.0` 和 `beta` 终结点的支持可能会显著不同。 
 
-> **注意：** 在`beta`和`v1.0`终结点，`$`是可选的前缀。 而不是，如`$filter`，您可以使用`filter`。 
+> **注意：** 在 `beta` 和 `v1.0` 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 
 
-## <a name="encoding-query-parameters"></a>编码的查询参数
+## <a name="encoding-query-parameters"></a>编码查询参数
 
 应对查询参数的值进行百分比编码。 许多 HTTP 客户端、浏览器和工具（例如，[Graph 浏览器][graph-explorer]）都可以帮助用户完成此操作。 如果查询失败，可能原因之一是未正确编码查询参数值。
 
@@ -228,12 +228,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 若要详细了解 可搜索的电子邮件属性、KQL 语法、受支持的运算符和搜索技巧，请参阅以下文章：
 
-- [Exchange 中的可搜索属性](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
+- [Exchange 中的可搜索属性](https://docs.microsoft.com/zh-CN/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 

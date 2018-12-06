@@ -1,6 +1,6 @@
 ---
 title: 在 OneNote 页中使用笔记标记
-description: " 在 Office 365 的企业笔记本"
+description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: 2f081dcda02c0f477aea7ccf908df558e82d77c0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

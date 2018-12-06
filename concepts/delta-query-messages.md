@@ -1,6 +1,6 @@
 ---
 title: 获取文件夹中邮件的增量更改
-description: 增量查询可让查询的附加信息、 删除或更新文件夹，通过一系列中的邮件
+description: Delta 查询可通过一系列的查询文件夹中查询邮件的添加、删除或更新。
 ms.openlocfilehash: bae652cc8382ae1b966a24fc4af58f720a2f0c9f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

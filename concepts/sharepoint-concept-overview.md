@@ -46,10 +46,10 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 
 当应用在 SharePoint 页面内运行时，可以使用 Microsoft Graph 轻松访问整个 Office 365 中的数据。
 
-若要了解这些模型的详细信息，请访问 [SharePoint 开发人员中心][]或 [SharePoint 开发人员文档][]。
+若要详细了解这些模型，请访问 [SharePoint 开发人员中心][]或 [SharePoint 开发人员文档][]。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的 SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta)
@@ -64,8 +64,7 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 [创建]: /graph/api/list-create?view=graph-rest-1.0
 [查询]: /graph/api/listitem-get?view=graph-rest-1.0
 [驱动器]: /graph/api/resources/drive?view=graph-rest-1.0
-
-  [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint 外接程序]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint 开发人员中心]: https://developer.microsoft.com/sharepoint

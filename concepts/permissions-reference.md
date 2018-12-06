@@ -3,7 +3,7 @@ title: 'Microsoft Graph 权限引用 '
 description: 'Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。作为开发人员，你可以决定应用程序请求哪些 Microsoft Graph 权限。当用户登录你的应用时，他们或处于某些情况下的管理员可以选择是否同意这些权限。如果用户同意，你的应用可以访问它所请求的资源和 API。对于没有已登录用户的应用，安装应用程序或注册时，管理员可以事先同意权限。 '
 ms.openlocfilehash: 3d6831c3c50818904a20a7dac2d3bf33c1baf515
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091907"

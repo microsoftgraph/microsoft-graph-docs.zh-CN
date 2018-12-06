@@ -8,11 +8,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091831"
 ---
-# <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>将 Office 365 帐户与 Azure AD 相关联以创建和管理应用
+# <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>将 Office 365 帐户与 Azure AD 关联以创建和管理应用
 
 若要使用 Microsoft Azure Active Directory (Azure AD) 验证应用，必须在 Azure AD 中注册应用。这也是存储 Office 365 用户帐户和应用信息的位置。必须有 Microsoft Azure 订阅，才能通过 Azure 门户管理 Azure AD。可以使用 Microsoft Azure 门户管理用户、角色和应用。 
 
-本文介绍了如何将 Office 365 帐户和 Azure AD 相关联，以创建和管理应用。
+本文介绍了如何将 Office 365 帐户和 Azure AD 关联以创建和管理应用。
 
  >**注意：** 本文将 Azure AD 用作应用的身份验证提供程序。如果使用的是 Azure AD v2.0 终结点，则无需执行此步骤。有关详细信息，请参阅 [Microsoft Graph 的应用身份验证](auth-overview.md)。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27091831"
 
 如果没有现成的 Office 365 商业版帐户，则可以：
 
-- 注册上面列出的 [Office 365 商业版计划](https://products.office.com/en-us/business/compare-office-365-for-business-plans)，或
+- 注册上面列出的 [Office 365 商业版计划](https://products.office.com/zh-CN/business/compare-office-365-for-business-plans)，或
 - [参加 Office 365 开发人员计划并获取为期 1 年的免费 Office 365 订阅](https://aka.ms/devprogramsignup)。
 
 **Microsoft Azure 订阅** 
@@ -45,7 +45,7 @@ ms.locfileid: "27091831"
     
 5. 在“**添加目录**”中，在“**目录**”下拉框中，选择“**使用现有目录**”。单击“**我已准备好注销**”，然后选中右下角的复选标记。 
     
-    这样可以返回到 Azure 门户。
+    这样，可以返回到 Azure 门户。
         
 3. 使用 Office 365 帐户信息登录。 
     
@@ -54,7 +54,7 @@ ms.locfileid: "27091831"
     >**重要说明：** 若要将 Office 365 帐户与 Azure AD 相关联，则需要具有全局管理员权限的 Office 365 商业版帐户。 
     
         
-4. 依次选择“继续”**** 和“立即注销”****。
+4. 依次选择“**继续**”和“**立即注销**”。
         
 5. 关闭浏览器，然后重新打开[门户](https://manage.windowsazure.com)。否则，你将收到访问被拒绝错误。
     
@@ -68,7 +68,7 @@ ms.locfileid: "27091831"
 
 
 1. 登录 Office 365。在“**主页**”中，选择“**管理员**”图标，打开 Office 365 管理中心。
-2. 在菜单页中，沿着页面左侧，向下滚动到“管理员”****，再选择“Azure AD”****。
+2. 在菜单页中，沿着页面左侧，向下滚动至“**管理员**”，然后选择“**Azure AD**”。
 
     >**重要说明：** 若要打开 Office 365 管理中心，则需要具有全局管理员权限的 Office 365 商业版帐户。 
     
@@ -89,8 +89,8 @@ ms.locfileid: "27091831"
         
 5. 此时，系统会显示 Azure 教程。你可以查看此教程，也可以选择“**X**”将它关闭。
         
-    现在应该可以在 Azure 订阅中看到所有项。它列出了包含 Office 365 租户名称的目录。
+    你现在应该可以在 Azure 订阅中看到所有项目。它列出了包含 Office 365 租户名称的目录。
     
 ## <a name="see-also"></a>另请参阅
-- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-integrating-applications/)

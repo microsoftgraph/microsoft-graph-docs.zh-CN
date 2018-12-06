@@ -1,6 +1,6 @@
 ---
-title: 共享或委派的日历中获取 Outlook 事件
-description: 在 Outlook 中，客户可以与其他用户共享日历并让他人查看或修改该日历中的事件。 客户还可以授予其代表，以接收或响应会议请求，或者创建或更改日历中的项目的代理人。
+title: 获取共享日历或委托日历中的 Outlook 事件
+description: 在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
 ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,55 +8,55 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091821"
 ---
-# <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>共享或委派的日历中获取 Outlook 事件
+# <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>获取共享日历或委托日历中的 Outlook 事件
 
-在 Outlook 中，客户可以与其他用户共享日历并让他人查看或修改该日历中的事件。 客户还可以授予其代表，以接收或响应会议请求，或者创建或更改日历中的项目的代理人。
+在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
 
-以编程方式，Microsoft Graph 支持获取已由其他用户共享的日历中的事件，以及获取共享日历本身。 支持也适用于已委派的日历。
+Microsoft Graph 支持以编程方式获取其他用户已共享日历中的事件，以及共享日历本身。 此支持还适用于已委托的日历。
 
-例如，Garth 具有与 John 共享其默认日历和授予 John 读取访问权限。 如果 John 已登录到您的应用程序，并提供委派的权限 （Calendars.Read.Shared 或 Calendars.ReadWrite.Shared），您的应用程序都将能够访问 Garth 的默认日历和事件，如下所述的日历中。
+例如，Garth 已与 John 共享自己的默认日历，并向 John 授予读取访问权限。 如果 John 已登录应用并授予委托的权限（Calendars.Read.Shared 或 Calendars.ReadWrite.Shared），应用便能访问 Garth 的默认日历及其中的事件，如下所述。
 
-## <a name="get-an-event-in-the-shared-calendar"></a>共享日历中获取事件
+## <a name="get-an-event-in-the-shared-calendar"></a>获取共享日历中的事件
 
-您可以获取 Garth 的共享的默认日历中的特定事件：
+可以获取 Garth 共享的默认日历中的特定事件：
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar/events/{id}
 ```
 
-在操作成功完成，您将获取 HTTP 200 确定和[事件](/graph/api/resources/event?view=graph-rest-1.0)实例由标识`{id}`Garth 的默认日历。
+成功完成后，便会收到“HTTP 200 正常”消息，以及 Garth 默认日历中由 `{id}` 标识的 [event](/graph/api/resources/event?view=graph-rest-1.0) 实例。
 
-## <a name="get-all-the-events-in-the-shared-calendar"></a>共享日历中获取所有事件
+## <a name="get-all-the-events-in-the-shared-calendar"></a>获取共享日历中的所有事件
 
-获取与 John 共享 Garth 默认日历中的所有事件：
+获取 Garth 已与 John 共享的默认日历中的所有事件：
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar/events
 ```
 
-在操作成功完成，您将获取 HTTP 200 确定和 Garth 的默认日历中的[事件](/graph/api/resources/event?view=graph-rest-1.0)实例的集合。
+成功完成后，便会收到“HTTP 200 正常”消息，以及 Garth 默认日历中的 [event](/graph/api/resources/event?view=graph-rest-1.0) 实例集合。
 
-## <a name="get-the-shared-calendar"></a>获取共享的日历
+## <a name="get-the-shared-calendar"></a>获取共享日历
 
-获取与 John 共享 Garth 的默认日历。
+获取 Garth 已与 John 共享的默认日历。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar
 ```
 
-在操作成功完成，您将获取 HTTP 200 确定和代表 Garth 的默认文件夹的[日历](/graph/api/resources/calendar?view=graph-rest-1.0)实例。
+成功完成后，便会收到“HTTP 200 正常”消息，以及表示 Garth 默认文件夹的 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实例。
 
-如果 Garth 具有委派 John 进一步访问 Garth 的默认日历，或者 Garth 具有委派 John 其整个邮箱将应用相同的 GET 功能。
+如果 Garth 已委托 John 进一步访问自己的默认日历，或如果 Garth 已将自己的整个邮箱委托给 John，那么相同的 GET 功能适用。
 
-如果 Garth 不具有与 John、 共享其默认日历也有他代理其邮箱到 John，这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称将返回错误。 
+如果 Garth 既未与 John 共享自己的默认日历，也未将自己的邮箱委托给 John，那么在这些 GET 操作中指定 Garth 的用户 ID 或用户主体名称便会返回错误。 
 
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解以下信息：
+详细了解：
 
-- [为什么与 Outlook 日历集成](outlook-calendar-concept-overview.md)
-- Microsoft Graph v1.0 中的[日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 。
+- [为什么要与 Outlook 日历集成](outlook-calendar-concept-overview.md)
+- Microsoft Graph v1.0 中的[日历 API](/graph/api/resources/calendar?view=graph-rest-1.0)。

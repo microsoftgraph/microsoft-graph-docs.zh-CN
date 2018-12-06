@@ -38,7 +38,7 @@ Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Micr
 
 ## <a name="connect-to-school-services"></a>连接到学校服务
 
-使用 Microsoft Graph 可覆盖拥有教育版 Microsoft 365 服务许可证的学生、教师和学校。 征得他们的同意后，可使用 Microsoft Graph 中的教育 API 增强 Office 365 资源和与教育场景（包括学校、学生、教师、班级、注册和作业）相关的信息数据。 了解有关[使用教育 API 集成](education-concept-overview.md)。
+使用 Microsoft Graph 可覆盖拥有教育版 Microsoft 365 服务许可证的学生、教师和学校。 征得他们的同意后，可使用 Microsoft Graph 中的教育 API 增强 Office 365 资源和与教育场景（包括学校、学生、教师、班级、注册和作业）相关的信息数据。 详细了解如何[与教育 API 集成](education-concept-overview.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

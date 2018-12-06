@@ -1,6 +1,6 @@
 ---
 title: 创建 OneNote 页
-description: " 在 Office 365 的企业笔记本"
+description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: 73ff77b16aaf5927bf28d009ca8ee1274f954c06
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -194,7 +194,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote-images-files.md)、我们的[教程](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
+有关介绍如何创建包含图像和其他文件的页面的更多示例，请参阅[添加图像和文件](onenote-images-files.md)、我们的[教程](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-tutorial)及[示例](https://github.com/onenotedev)。 此外，了解如何针对名片捕获、线上食谱和产品列表[创建绝对定位元素](onenote-abs-pos.md)、[使用笔记标记](onenote-note-tags.md)和[提取数据](onenote-extract-data.md)。
 
 Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRLF 换行符。 为降低创造格式不正确的有效负载的风险，应使用库来构造多部分消息。 
 
@@ -210,7 +210,7 @@ Microsoft Graph 对某些格式非常严格，如多部分邮件正文中的 CRL
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅 [身份验证和权限](permissions-reference.md)。</p> |  
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
 | Content-Type 标头 | <p>HTML 内容的 `text/html` 或 `application/xhtml+xml`，确定是直接在邮件正文中发送还是在多部分请求的“演示”部分中发送。</p><p>发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</p> |  
 | 接受标头 | `application/json` | 
 

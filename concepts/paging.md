@@ -1,6 +1,6 @@
 ---
 title: '在应用中对 Microsoft Graph 数据进行分页 '
-description: 'odata.nextLink 包含在指向下一页的结果 URL 的响应中的属性。 '
+description: '响应中的 odata.nextLink` 属性，其中包含下一页结果的 URL。 '
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -12,7 +12,7 @@ ms.locfileid: "27091891"
 
 由于服务器端分页或由于使用 `$top` 查询参数来明确限制请求中的页面大小，致使针对 Microsoft Graph 的一些查询返回多页数据。当结果集跨多个页面时，Microsoft Graph 将在响应中返回 `@odata.nextLink` 属性，该属性包含指向结果下一页的 URL。 
 
-例如，以下 URL 请求页面大小为 5，与指定的组织中的所有用户`$top`查询参数：
+例如，以下 URL 要求对组织中的所有用户使用页面大小 5（使用 `$top` 查询参数指定）：
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5

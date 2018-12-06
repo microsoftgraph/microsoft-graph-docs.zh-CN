@@ -28,11 +28,11 @@ ms.locfileid: "27091775"
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 错误的请求 (Bad Request)                     | 无法处理请求，因为格式有误或者不正确。                                                                       |
 | 401         | 未经授权 (Unauthorized)                    | 资源所需的身份验证信息缺少或无效。                                                   |
-| 403         | 禁止访问 (Forbidden)                       | 对于请求的资源，访问被拒绝。用户可能没有足够的权限。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | 禁止访问 (Forbidden)                       | 对所需资源的访问遭拒。用户权限可能不足。<br /><br /> **重要说明：** 如果向资源应用了条件访问策略，可能会返回 HTTP 403 禁止错误 (error=insufficent_claims)。 有关 Microsoft Graph 和条件访问的详细信息，请参阅 [Azure Active Directory 条件性访问开发人员指南](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | 未找到 (Not Found)                       | 所请求的资源不存在。                                                                                                  |
 | 405         | 方法不允许 (Method Not Allowed)              | 请求中的 HTTP 方法在资源上不允许。                                                                         |
 | 406         | 不接受 (Not Acceptable)                  | 该服务不支持“Accept”标头中请求的格式。                                                                |
-| 409         | Conflict                        | 当前状态与请求预期的状态的冲突。例如，指定的父文件夹可能不存在。                   |
+| 409         | 冲突 (Conflict)                        | 当前状态与请求预期的状态的冲突。例如，指定的父文件夹可能不存在。                   |
 | 410         | 不存在 (Gone)                            | 所请求的资源在服务器不再可用。                                               |
 | 411         | 需要长度 (Length Required)                 | 请求上需要 Content-Length 标头。                                                                                    |
 | 412         | 前提条件不满足 (Precondition Failed)             | 请求中提供的前提条件（例如“If-Match”标头）与资源的当前状态不匹配。                       |
@@ -40,7 +40,7 @@ ms.locfileid: "27091775"
 | 415         | 媒体类型不受支持 (Unsupported Media Type)          | 请求的内容类型的格式不受服务支持。                                                      |
 | 416         | 请求的范围不满足 (Requested Range Not Satisfiable) | 指定的字节范围无效或不可用。                                                                                    |
 | 422         | 实体无法处理 (Unprocessable Entity)            | 无法处理请求，因为语义上不正确。                                                                        |
-| 423         | Locked                          | 正在访问该资源被锁定。                                                                                          |
+| 423         | 已锁定                          | 正在访问的资源被锁定。                                                                                          |
 | 429         | 请求过多 (Too Many Requests)               | 客户端应用程序已被限制，经过一段时间之后再尝试重复的请求。                |
 | 500         | 内部服务器错误 (Internal Server Error)           | 处理请求时出现内部服务器错误。                                                                       |
 | 501         | 未实现 (Not Implemented)                 | 所请求的功能未实现。                                                                                               |
@@ -105,7 +105,7 @@ ms.locfileid: "27091775"
 
 <!--<a name="msg_code_property"> </a> -->
 
-#### <a name="code-property"></a>Code 属性
+#### <a name="code-property"></a>代码属性
 
 `code` 属性包含下列可能值之一。您的应用应做好准备处理任意这些错误。
 
@@ -125,7 +125,7 @@ ms.locfileid: "27091775"
 | **resyncRequired**        | 增量令牌将不再有效，并且应用必须重置同步状态。
 | **serviceNotAvailable**   | 服务不可用。过段时间后再次尝试请求。可能会有 Retry-After 标头。 
 | **quotaLimitReached**     | 用户已达到其配额限制。
-| **unauthenticated**       | 调用方未经验证。
+| **unauthenticated**       | 调用方未进行身份验证。
 
 `innererror` 对象可能以递归方式包含更多 `innererror` 对象，其中具有其他更多具体的错误代码。处理错误时，应用应遍历所有可用错误代码并使用它们认为最详细的错误代码。在本页底部列出了一些更详细的代码。
 

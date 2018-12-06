@@ -45,15 +45,15 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 - 可以将联系人实例中的应用存储扩展为[开放扩展](extensibility-overview.md#open-extensions)，或者将强类型化的自定义数据添加到联系人架构中作为[架构扩展](extensibility-overview.md#schema-extensions)。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 中的 outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单可打开“个人联系人”****。
-- 了解以下信息：
-  - [获取 Outlook 资源不可变标识符](outlook-immutable-id.md)
-  - [获取共享的联系人](outlook-get-shared-contacts-folders.md)
-- 查看 Outlook [联系人 API](/graph/api/resources/contact?view=graph-rest-1.0) 引用。
+- 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0)中选择和试用联系人示例查询。 选择左侧列中的“显示更多示例”****。 使用菜单启用“个人联系人”****。
+- 了解如何：
+  - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
+  - [获取共享联系人](outlook-get-shared-contacts-folders.md)
+- 查看 Outlook [联系人 API](/graph/api/resources/contact?view=graph-rest-1.0) 参考。

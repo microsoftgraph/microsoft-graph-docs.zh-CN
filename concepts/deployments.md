@@ -1,6 +1,6 @@
 ---
 title: 区域云部署
-description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些区域云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们仅限于特定国家/地区的地理边界内，由当地人员运营。 若要了解详细信息，请参阅Microsoft 区域云。
+description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些区域云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们仅限于特定国家/地区的地理边界内，由当地人员运营。 若要了解详细信息，请参阅“Microsoft 区域云”。
 ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -11,7 +11,7 @@ ms.locfileid: "27091754"
 # <a name="national-cloud-deployments"></a>区域云部署
 
 
-除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些区域云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们仅限于特定国家/地区的地理边界内，由当地人员运营。 若要了解详细信息，请参阅[Microsoft 区域云](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud)。
+除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些区域云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们仅限于特定国家/地区的地理边界内，由当地人员运营。 若要了解详细信息，请参阅[Microsoft 区域云](https://www.microsoft.com/zh-CN/TrustCenter/CloudServices/NationalCloud)。
 
 当前区域云包括：
 
@@ -52,7 +52,7 @@ ms.locfileid: "27091754"
 
 可以通过使用租户 ID 或租户的验证域替换上述 URL 中的“common”来生成租户特定的终结点。是使用常用终结点还是租户特定的终结点将取决于应用的要求和用于获取令牌的身份验证流。要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅[获取身份验证令牌](./auth-overview.md)。
 
-> **注意：**[Azure AD v2.0 授权和令牌终结点](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/)仅在全局服务中可用；它们尚不支持用于区域云部署。
+> **注意：**[Azure AD v2.0 授权和令牌终结点](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-appmodel-v2-overview/)仅在全局服务中可用；它们尚不支持用于区域云部署。
 
 ## <a name="supported-features"></a>支持的功能
 

@@ -87,10 +87,10 @@ GET /me/people/?$search="topic:beetle"
 ![Outlook 网页版中用户的人员卡片屏幕截图，显示最近使用的文件](images/peoplecard-concept.png)
 
 ## <a name="api-reference"></a>API 参考
-寻找这些服务的 API 参考？
+在查找这些服务的 API 参考？
 
-- [People API 在 Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [用于社交智能和 Microsoft Graph beta 中的分析 API](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的人员 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的社交智能和分析 API](/graph/api/resources/social-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 

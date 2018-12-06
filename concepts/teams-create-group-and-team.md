@@ -1,6 +1,6 @@
 ---
-title: 与 Microsoft 团队团队创建组
-description: '创建组，其中包括团队涉及两个步骤： '
+title: 创建包含 Microsoft Teams 团队的组
+description: '若要创建包含团队的组，请按以下两步操作： '
 ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,18 +8,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091803"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a>与 Microsoft 团队团队创建组
+# <a name="creating-a-group-with-a-microsoft-teams-team"></a>创建包含 Microsoft Teams 团队的组
 
-创建[组](/graph/api/resources/group?view=graph-rest-beta)，其中包括[团队](/graph/api/resources/team?view=graph-rest-beta)涉及两个步骤： 
+若要创建包含[团队](/graph/api/resources/team?view=graph-rest-beta)的[组](/graph/api/resources/group?view=graph-rest-beta)，请按以下两步操作： 
 
-- [创建组](/graph/api/group-post-groups?view=graph-rest-beta)具有正确的属性。
-- [团队添加](/graph/api/team-put-teams?view=graph-rest-beta)到组。
+- 使用正确属性[创建组](/graph/api/group-post-groups?view=graph-rest-beta)。
+- [将团队添加](/graph/api/team-put-teams?view=graph-rest-beta)到组。
 
 ## <a name="create-a-group"></a>创建组
 
-为了包括团队，您需要设置以下属性值，如下面的示例中所示：
+若要添加团队，必须设置以下属性值，如下面的示例所示：
 
-- **groupTypes** = {"Unified"} 
+- **groupTypes** = { "Unified" } 
 - **mailEnabled** = true
 - **securityEnabled** = false
 
@@ -46,9 +46,9 @@ POST /groups
 }
 ```
 
-下面的示例演示响应。 
+下面的示例展示了响应。 
 
->**注意：** 为便于阅读，可能缩短显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有属性都是从实际调用返回。
 
 ```http
 HTTP/1.1 200 OK
@@ -60,18 +60,18 @@ Content-length: xxx
 }
 ```
 
-## <a name="add-a-team-to-the-group"></a>团队添加到组
+## <a name="add-a-team-to-the-group"></a>将团队添加到组
 
-添加到组，团队，如下所示。
+将团队添加到组，如下所示。
 
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-以下示例显示了相应的响应。 
+下面的示例展示了响应。 
 
->**注意：** 为便于阅读，可能缩短显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有属性都是从实际调用返回。
 
 ```http
 HTTP/1.1 200 OK
@@ -89,4 +89,4 @@ Content-length: xxx
 }
 ```
 
-创建的团队具有组相同的 ID。
+已创建团队的 ID 与组相同。

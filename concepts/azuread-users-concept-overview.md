@@ -55,7 +55,7 @@ ms.locfileid: "27091875"
 - 列出通过电子邮件或 OneDrive for Business 与用户共享的文档。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的用户 API](/graph/api/resources/users?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的用户 API](/graph/api/resources/users?view=graph-rest-beta)

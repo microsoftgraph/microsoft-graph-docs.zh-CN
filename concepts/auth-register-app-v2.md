@@ -62,7 +62,7 @@ ms.locfileid: "27091779"
     4. 在“**应用程序机密**”下，选择“**生成新密码**”。从“**生成的新密码**”对话框复制应用机密。
         > **重要信息** 关闭“生成的新密码”**** 对话框之前，必须复制应用密钥。关闭该对话框后，将无法检索密钥。 
             
-6. 选择“保存”****。
+6. 选择“**保存**”。
 
 
 下表显示了针对不同类型的应用需要配置和复制的属性。_已分配_表示你应该使用由 Azure AD 分配的值。
@@ -77,7 +77,7 @@ ms.locfileid: "27091779"
 
 提供管理员同意体验的应用可能需要用于 Azure AD 的其他重定向 URL 返回响应。
 
-有关应用注册门户以及你可以为应用配置的属性的详细信息，请参阅[应用注册引用](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal)。  
+有关应用注册门户以及你可以为应用配置的属性的详细信息，请参阅[应用注册引用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-registration-portal)。  
 
 ## <a name="azure-ad-endpoint-considerations"></a>Azure AD 终结点注意事项
 

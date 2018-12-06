@@ -1,6 +1,6 @@
 ---
 title: OneNote API 概述
-description: OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及通过与他人实时交互笔记展开协作。
+description: OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及与他人展开实时笔记协作。
 ms.openlocfilehash: 9f0c82c8cdc4e336a1ee9d604b13e7e5b5bc0282
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -71,24 +71,24 @@ OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板�
 
 * [在 OneNote 页中创建绝对定位的元素](onenote-abs-pos.md)
 * [将图像、视频和文件添加到 OneNote 页](onenote-images-files.md)
-* [使用 OneNote API div 标签从捕获内容中提取数据](onenote-extract-data.md)
+* [使用 OneNote API div 标记从捕获内容中提取数据](onenote-extract-data.md)
 
 ## <a name="see-also"></a>另请参阅
-了解有关其他的一些 OneNote 功能仅在 OneNote 特定于服务的 REST 终结点公开。
+了解仅对 OneNote 服务专用 REST 终结点公开的其他一些 OneNote 功能。
 
-- [OneNote 开发](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [处理课堂笔记本](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [使用异步课堂笔记本](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [使用教职员工笔记本](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [复制笔记本、节和页面](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [管理 OneNote 实体的权限](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [使用网页上的 OneNote 保存对话框](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [订阅 Webhook](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote 开发](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [处理课堂笔记本](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [使用异步课堂笔记本](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [使用教职员工笔记本](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [复制笔记本、节和页面](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [管理 OneNote 实体的权限](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [使用网页上的 OneNote 保存对话框](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [订阅 Webhook](https://docs.microsoft.com/zh-CN/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+- [Microsoft Graph v1.0 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤

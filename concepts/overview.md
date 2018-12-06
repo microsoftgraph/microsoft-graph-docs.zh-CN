@@ -14,8 +14,8 @@ Microsoft Graph 是 Microsoft 365 中数据和智能的网关。 Microsoft Graph
 
 Microsoft Graph API 可用于为组织和消费者生成应用，与数百万用户的数据进行交互。 使用 Microsoft Graph，可以与丰富的资源、关系和智能相连接，所有这些均通过单个终结点实现：`https://graph.microsoft.com`。
 
-## <a name="whats-in-the-graph"></a>Graph 有哪些功能？
-Microsoft Graph 公开 REST Api 和客户端库访问以下数据：
+## <a name="whats-in-the-graph"></a>Graph 中有什么？
+Microsoft Graph 公开了 REST API 和客户端库，用于访问以下数据：
 
 - Azure Active Directory
 - Office 365 服务：SharePoint、OneDrive、Outlook/Exchange、Microsoft Teams、OneNote、Planner 和 Excel
@@ -66,33 +66,33 @@ Microsoft Graph 通过关系连接这些服务中的所有资源。 例如，用
 |   获取我组织中的组 | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   获取与我相关的人员    | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
 |   获取我常用的项目 |  [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
-|   获取我的注释 |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
+|   获取我的笔记 |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
-## <a name="access-microsoft-graph-at-scale"></a>访问 Microsoft Graph 规模
+## <a name="access-microsoft-graph-at-scale"></a>批量访问 Microsoft Graph
 
 
-Microsoft Graph 数据连接启用批量-而不是传统事务性-访问 Office 365 数据。 批量 Office 365 数据，您可以使用 Azure 工具以构建智能应用程序的：
+Microsoft Graph 数据连接提供了对 Office 365 数据的批量访问权限，而不是传统的事务访问权限。 借助批量 Office 365 数据，可使用 Azure 工具生成具有以下功能的智能应用：
 
-- 找到您对您组织中的主题关系较好的专家 
-- 自动知识库创建
-- 会议请求，提供深入了解会议会议室使用情况分析
-- 检测欺诈工作效率和通信数据
+- 为你在组织中查找与某主题最相关的专家 
+- 自动执行知识库创建
+- 分析会议请求，以提供会议室利用率方面的见解
+- 检测生产力和通信数据欺诈
 
-## <a name="when-should-i-use-microsoft-graph-data-connect"></a>何时应使用 Microsoft Graph 数据连接？
+## <a name="when-should-i-use-microsoft-graph-data-connect"></a>我应何时使用 Microsoft Graph 数据连接？
 
-Microsoft Graph 数据连接提供要与数据，可通过 Microsoft Graph Api 进行交互的新方法。 除了提供可扩展访问 Office 365 数据，Microsoft Graph 数据连接还提供了一组唯一的简化的智能中的应用程序，所有 Microsoft 云构建的功能。
+使用 Microsoft Graph 数据连接，可以一种新方式与通过 Microsoft Graph API 公开的数据进行交互。 除了提供对 Office 365 数据的可缩放访问权限以外，Microsoft Graph 数据连接还提供一组独特功能，用于简化智能应用的生成过程，所有这些都是在 Microsoft 云中完成。
 
 |**功能**| **Microsoft Graph API** | **Microsoft Graph 数据连接** |
 |:----------|:------------------------|:--------------------------------------|
-| **访问作用域** | 单个用户或整个租户 | 多个用户或组 |
-| **访问模式** | 实时 | 定期计划 |
-| **数据操作** | 在数据主控形状上运行 | 缓存数据的上运行 |
-| **数据保护** | 在 Microsoft 365 中保护数据 | 数据保护扩展到 Azure 订阅中的数据缓存 |
+| **访问范围** | 单个用户或整个租户 | 多个用户或组 |
+| **访问模式** | 实时 | 定期重复 |
+| **数据操作** | 对主数据执行操作 | 对数据缓存执行操作 |
+| **数据保护** | 保护 Microsoft 365 中的数据 | 数据保护延伸至 Azure 订阅中的数据缓存 |
 | **用户同意** | 自我<br>资源类型 | 无 |
-| **管理员同意** | 整个组织<br>资源类型 | 选择用户组<br>资源类型和属性<br>排除属于用户 |
-| **访问工具** | RESTful web 查询 | Azure 数据中心 |
+| **管理员同意** | 整个组织<br>资源类型 | 选择用户组<br>资源类型和属性<br>排除用户 |
+| **访问工具** | RESTful Web 查询 | Azure 数据工厂 |
 
-有关 Microsoft Graph 数据连接的详细信息，请参阅[Microsoft Graph 数据连接](data-connect-overview.md)。 若要开始，请参阅[概述 （英文） 的 Microsoft Graph 数据连接](data-connect-concept-overview.md)。 
+若要详细了解 Microsoft Graph 数据连接，请参阅 [Microsoft Graph 数据连接](data-connect-overview.md)。 首先，请参阅 [Microsoft Graph 数据连接概述](data-connect-concept-overview.md)。 
 
 ## <a name="next-steps"></a>后续步骤
 

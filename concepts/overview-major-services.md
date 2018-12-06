@@ -1,6 +1,6 @@
 ---
 title: Microsoft Graph 中的主要服务和功能
-description: 'Microsoft Graph 使您能够提供最佳的 Office 365、 Windows 10 和企业移动和 Microsoft 365，使用 REST Api 和客户端库中的安全服务集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
+description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 ms.openlocfilehash: 12092b4b36159ae1b1cbd490815b0b00722e5ad8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -10,7 +10,7 @@ ms.locfileid: "27091783"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
-Microsoft Graph 使您能够提供最佳的 Office 365、 Windows 10 和企业移动和 Microsoft 365，使用 REST Api 和客户端库中的安全服务集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 
+借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它还提供安全性和社交智能，可以提升用户的工作效率、创意和团队协作，并保护企业资源和用户数据。 
 
 ## <a name="users-and-groups"></a>用户和组
 
@@ -40,7 +40,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 标识和访问管理 | Azure AD | 创建和管理目录资源，如用户、组和应用程序。 管理对资源和数据的访问。 向客户访问提供 Azure AD 中的登录和帐户风险数据。| [Azure AD 标识和访问管理概述](azuread-identity-access-management-concept-overview.md)  |
+| 标识和访问管理 | Azure AD | 创建和管理目录资源，如用户、组和应用程序。 管理对资源和数据的访问。 授权客户登录并访问 Azure AD 中的帐户风险数据。| [Azure AD 标识和访问管理概述](azuread-identity-access-management-concept-overview.md)  |
 
 
 ## <a name="productivity"></a>工作效率
@@ -63,7 +63,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 站点和列表  | SharePoint | 面向用户和 Office 365 组的基于 Web 的平台，以共享、组织、管理和发现内容（包括列表、文件和笔记）。 | [SharePoint 网站和内容概述](sharepoint-concept-overview.md) | 
 |任务和计划 | Planner | 使 Office 365 组中的用户能够创建计划、分配任务和跟踪进度。 | [Planner 计划和任务概述](planner-concept-overview.md) |
-|团队协作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
+|团队合作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
 
 
 ## <a name="social-intelligence-and-analytics"></a>社交智能和分析
@@ -85,7 +85,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 安全集成 | Azure AD 身份保护、 Azure 信息保护、 Azure 安全中心、 Microsoft 云应用程序安全性、 Windows Defender 高级威胁保护和[更多](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | 在整个 Microsoft 和生态系统合作伙伴中提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
+| 安全集成 | Azure AD Identity Protection、Azure 信息保护、Azure 安全中心、Microsoft 云应用安全性、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
 
 
 

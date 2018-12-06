@@ -1,6 +1,6 @@
 ---
-title: 更新 OneNote 页面内容
-description: " 在 Office 365 的企业笔记本"
+title: 更新 OneNote 页内容
+description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,21 +8,21 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091819"
 ---
-# <a name="update-onenote-page-content"></a>更新 OneNote 页面内容
+# <a name="update-onenote-page-content"></a>更新 OneNote 页内容
 
 **适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
 
 
-若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：
+若要更新 OneNote 页内容，请向此页的 *content* 终结点发送 PATCH 请求：
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-在消息正文中发送一个 JSON 修改对象。 如果请求成功，Microsoft Graph 将返回 204 HTTP 状态代码。
+在邮件正文中发送 JSON 更改对象。如果请求成功，Microsoft Graph 便会返回 204 HTTP 状态代码。
 
 
 <a name="request-uri"></a>
 
-## <a name="construct-the-request-uri"></a>构建请求 URI
+## <a name="construct-the-request-uri"></a>构造请求 URI
 
 若要构建请求 URI，请从服务根 URL 开始：
 
@@ -30,13 +30,13 @@ ms.locfileid: "27091819"
 
 <br/>
 
-然后追加页面 *内容* 端点：
+然后，追加页面的 *content* 终结点：
 
-- **获取页面HTML和全部定义 *data-id* 值**<br/><br/>`../pages/{id}/content`   
+- **获取页面 HTML 和所有定义的 *data-id* 值**<br/><br/>`../pages/{id}/content`   
 
-- **获取页面HTML、全部定义 *data-id* 值和全部生成的 *ID* 值**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
+- **获取页面 HTML、所有定义的 *data-id* 值和所有生成的 *id* 值**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
-该 **data-id** 和 **ID** 值被用作您要更新元素的 **目标** 标识符。
+**data-id** 和 **id** 值均用作要更新的元素的 **target** 标识符。
 
  
 完整的请求 URI 将如下所示：<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
@@ -436,7 +436,7 @@ Content-Type: image/png
 | 请求数据 | 说明 |  
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
-| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅 [身份验证和权限](permissions-reference.md)。</p> |  
+| 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
 | Content-Type 标头 | <p>JSON 更改对象的数组的 `application/json`，确定是直接在邮件正文中发送还是在必须的[多部分请求](#multipart-request-with-binary-content)的“命令”部分中发送。</p><p>发送二进制数据时，多部分请求是必需的，并使用 `multipart/form-data; boundary=part-boundary` 内容类型，其中 `{part-boundary}` 是一个字符串，表示每个数据部件的开始和结束。</p> |  
 
 <br/> 

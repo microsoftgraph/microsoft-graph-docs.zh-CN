@@ -1,6 +1,6 @@
 ---
 title: 在 Outlook 日历上找到可能的会议时间
-description: '在工作区或学校，寻找的常用时间和地点以满足通常造成系统开销。 可以使用 Microsoft Graph 应用程序 '
+description: '在工作场所或学校，寻找开会的公共时间和场所经常会产生开销。 Microsoft Graph 应用程序可使用 '
 ms.openlocfilehash: 92390509f68d469cf9912e9e903a2576b8fa7506
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

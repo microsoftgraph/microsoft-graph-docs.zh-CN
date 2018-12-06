@@ -1,6 +1,6 @@
 ---
 title: Outlook 邮件 API 概述
-description: Outlook 是 Office 365 的消息传递通信中心。 允许您管理联系人、 安排会议、 在组织中，查找用户的信息
+description: Outlook 是 Office 365 的消息传递通信中心。 使用它，还可以管理联系人、安排会议、查找组织用户的相关信息、
 ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -36,26 +36,26 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 
 使用 Microsoft Graph 向应用用户建议上下文数据：
 
-- 与[重点收件箱](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0)和 [@-提及（预览）](/graph/api/message-get?view=graph-rest-beta#request-2)集成，让应用用户能够首先阅读和答复与自己相关的邮件。
+- 与[重点收件箱](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0)和 [@提及（预览版）](/graph/api/message-get?view=graph-rest-beta#request-2)集成，让应用用户能够先阅读和答复与自己相关的邮件。
 
-- 检查[邮件提示](/graph/api/resources/mailtips?view=graph-rest-1.0)，同时仍撰写邮件获取收件人的有用的状态信息 (如收件人发送自动答复或具有完全邮箱)。 邮件提示可以提醒某些条件的应用，以便采取更有效的跟进操作。
+- 一边查看[邮件提示](/graph/api/resources/mailtips?view=graph-rest-1.0)，一边仍能撰写邮件，以获取收件人的实用状态信息（如收件人正在发送自动答复或邮箱已满）。 邮件提示可以提醒应用注意特定条件，以便采取更高效的跟进操作。
 
 - 使用[人员 API](people-example.md) 提供交互式控件，如应用中的人员选取器。 人员 API 可根据用户通信和协作模式及业务关系建议与用户相关度最高的人员。
 
-- 为应用用户提供智能文件选取器并建议他们最近与之交互的文件，以便在撰写邮件时以附件形式添加。 [见解 （预览）](/graph/api/resources/insights?view=graph-rest-beta)使用高级分析建议周围的用户最近查看或编辑的用户，或与用户共享趋势的文件。
+- 为应用用户提供智能文件选取器并建议他们最近与之交互的文件，以便在撰写邮件时以附件形式添加。 [见解（预览版）](/graph/api/resources/insights?view=graph-rest-beta)使用高级分析来推荐用户有可能使用的文件、用户最近查看或编辑过的文件或与用户共享的文件。
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>在资源或资源实例中存储应用数据
 
-大部分情况下，应用需要将其数据存储在外部数据存储中，并在管理和访问数据时需要开销。 Microsoft Graph，您可以只包含作为 Internet 邮件头的应用程序数据时[创建](/graph/api/user-post-messages?view=graph-rest-1.0#request-2)或[发送](/graph/api/user-sendmail?view=graph-rest-1.0#request-2)新邮件，或答复邮件。
+大部分情况下，应用需要将数据存储在外部数据存储中，并承担数据管理和访问开销。 借助 Microsoft Graph，可以在[创建](/graph/api/user-post-messages?view=graph-rest-1.0#request-2)或[发送](/graph/api/user-sendmail?view=graph-rest-1.0#request-2)新邮件或邮件回复时，直接将应用数据添加为 Internet 邮件头。
 
-如果您需要添加并随后更新自定义数据，则可以[存储各个资源实例中的数据](extensibility-overview.md#open-extensions)。 如果适用，或者可以扩展架构，添加自定义属性，并将类型化的数据存储在 Microsoft Graph 资源。 你可以使[架构扩展](extensibility-overview.md#schema-extensions)等可查找和可共享。
+如果需要添加并随后更新自定义数据，可以[在各个资源实例中存储数据](extensibility-overview.md#open-extensions)。 也可以在适当情况下扩展架构、添加自定义属性，并在 Microsoft Graph 资源中存储类型化数据。 可以让此类[架构扩展](extensibility-overview.md#schema-extensions)可供发现和共享。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 outlook 邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 outlook 邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Outlook 邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Outlook 邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>后续步骤
@@ -64,10 +64,10 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 - 了解以下信息：
 
   - [创建和发送邮件](outlook-create-send-messages.md)
-  - [组织邮件](outlook-organize-messages.md)的方法
-  - 如何[获取共享的邮件](outlook-share-messages-folders.md)
-  - [获取 Outlook 资源不可变标识符](outlook-immutable-id.md)
+  - [邮件整理](outlook-organize-messages.md)方法
+  - 如何[获取已共享邮件](outlook-share-messages-folders.md)
+  - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
 
-- 查找更多有关[使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)信息。
+- 详细了解如何使用 Microsoft Graph v1.0 中的[邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
 
 

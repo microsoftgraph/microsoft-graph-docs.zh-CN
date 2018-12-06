@@ -1,6 +1,6 @@
 ---
 title: '获取日历视图中事件的增量更改 '
-description: '日历视图是日期/时间范围为从默认日历中的事件的集合 (.../ 我/calendarview) '
+description: '日历视图是默认日历中特定日期/时间范围内的事件集合 (../me/calendarview)。 '
 ms.openlocfilehash: 68e4053c29fd95f04ff0b031bf519301e63dc08a
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

@@ -59,10 +59,10 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 ### <a name="react-to-file-changes"></a>对文件更改做出反应
 
 通过 webhooks[][]，当文件发生更改时你将收到通知，以此可以快速做出响应。
-使用[][]增量 API 可查看自上次应用与云同步以来发生了哪些变更。
+[delta API][] 可用于查看自上次应用与云同步以来发生的更改。
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 OneDrive 文件存储 API](/graph/api/resources/onedrive?view=graph-rest-beta)
@@ -74,27 +74,16 @@ OneDrive 客户可以直接在 OneDrive 中使用或启动你的应用，以打�
 [SharePoint]: sharepoint-concept-overview.md
 [文件选取器]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [文件处理程序]: https://docs.microsoft.com/onedrive/developer/file-handlers
-
-  [特殊文件夹]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
-
-  [注释 API]: integrate-with-onenote.md
-
-  [Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
+[特殊文件夹]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[注释 API]: integrate-with-onenote.md
+[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
 [REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-
-  [增量 API]: /graph/api/driveitem-delta?view=graph-rest-1.0
-
-  [视频]: /graph/api/resources/video?view=graph-rest-1.0
-
-  [照片]: /graph/api/resources/photo?view=graph-rest-1.0
-
-  [音频]: /graph/api/resources/audio?view=graph-rest-1.0
-
-  [格式]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-
-  [缩略图]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-
-  [预览]: /graph/api/driveitem-preview?view=graph-rest-beta
-
-  [webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
+[增量 API]: /graph/api/driveitem-delta?view=graph-rest-1.0
+[视频]: /graph/api/resources/video?view=graph-rest-1.0
+[照片]: /graph/api/resources/photo?view=graph-rest-1.0
+[音频]: /graph/api/resources/audio?view=graph-rest-1.0
+[格式]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
+[缩略图]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
+[预览]: /graph/api/driveitem-preview?view=graph-rest-beta
+[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
 [Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

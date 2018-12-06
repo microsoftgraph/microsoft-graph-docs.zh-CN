@@ -35,10 +35,10 @@ ms.locfileid: "27091877"
 |Yammer |[活动](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[设备使用情况](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[组活动](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0)|
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [Microsoft Graph v1.0 中的 office 365 使用率报告 API](/graph/api/resources/report?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的 office 365 使用率报告 API](/graph/api/resources/report?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Office 365 使用情况报告 API](/graph/api/resources/report?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Office 365 使用情况报告 API](/graph/api/resources/report?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 

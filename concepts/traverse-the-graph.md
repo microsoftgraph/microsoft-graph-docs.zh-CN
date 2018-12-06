@@ -37,7 +37,7 @@ ms.locfileid: "27091777"
 
 Microsoft Graph 允许用户使用 HTTP GET 查询查看租户中的资源。查询响应包括每个资源的属性，每个资源由其 ID 标识。资源 ID 的格式可以是 GUID，并且通常根据资源类型而变化。 
 
-例如，可以获取在租户中定义的用户的集合：
+例如，可以获取在租户中定义的用户集合：
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP
 Authorization : Bearer {access_token}
 ```
 
-如果成功，将会收到 200 OK 响应，其中包含有效负载中的用户资源声明，如下所示。
+如果成功，便会收到“200 正常”响应，其中包含有效负载中的用户资源表示，如下所示。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/dire
 Authorization : Bearer {access_token}
 ```
 
-成功的响应返回 200 OK 状态和有效负载，如下所示。
+成功响应返回“200 正常”状态和有效负载，如下所示。
 
 ```no-highlight 
 HTTP/1.1 200 OK

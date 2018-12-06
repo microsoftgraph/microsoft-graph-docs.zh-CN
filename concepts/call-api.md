@@ -1,6 +1,6 @@
 ---
 title: 调用 Microsoft Graph API
-description: '若要访问和操纵 Microsoft Graph 资源，请使用以下一项操作来调用和指定资源 URL。   '
+description: '若要访问和操纵 Microsoft Graph 资源，请使用以下一项操作来调用和指定资源 URL：   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -305,4 +305,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>使用 Microsoft Graph 客户端库
 喜欢 SDK 的强大功能和易用性吗？虽然你可以随时使用 REST API 调用 Microsoft Graph，但我们还提供了适用于许多常用平台的 SDK。
 
-研究我们[代码示例和 Sdk](https://developer.microsoft.com/graph/code-samples-and-sdks)。
+浏览[代码示例和 SDK](https://developer.microsoft.com/graph/code-samples-and-sdks)。

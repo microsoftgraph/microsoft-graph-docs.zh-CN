@@ -43,13 +43,13 @@ Note: Put an image here showing the relationship between Planner and other thing
 |查看不同计划中分配给我的所有[我的任务](/graph/api/planneruser-list-tasks?view=graph-rest-beta)|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
 |[新建任务](/graph/api/planner-post-tasks?view=graph-rest-1.0)|POST [https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[更新任务](/graph/api/plannertask-update?view=graph-rest-1.0)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
-|[删除任务](/graph/api/plannertask-delete?view=graph-rest-1.0)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|[删除任务](/graph/api/plannertask-delete?view=graph-rest-1.0)|删除 [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 
 ## <a name="api-reference"></a>API 参考
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [在 Microsoft Graph v1.0 计划 API 工具](/graph/api/resources/planner-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的计划程序 API](/graph/api/resources/planner-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Planner API](/graph/api/resources/planner-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Planner API](/graph/api/resources/planner-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>后续步骤
