@@ -1,12 +1,12 @@
 ---
 title: 列表 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
-ms.openlocfilehash: 4b47756f75c7da1b0e9293eda449c5a244d015b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0f4680c8998191fa07af993e8ee3712557b7010d
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191065"
 ---
 # <a name="list-governanceroleassignments"></a>列表 governanceRoleAssignments
 
@@ -85,7 +85,6 @@ Content-Length: 2062
             "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
             "linkedEligibleRoleAssignmentId": null,
             "externalId": null,
-            "isPermanent": false,
             "startDateTime": "2018-03-13T01:19:08.59Z",
             "endDateTime": "2018-06-11T01:18:37.08Z",
             "memberType": "Direct",
@@ -99,7 +98,6 @@ Content-Length: 2062
             "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
             "linkedEligibleRoleAssignmentId": null,
             "externalId": null,
-            "isPermanent": false,
             "startDateTime": "2018-03-28T16:56:48.243Z",
             "endDateTime": "2018-09-24T16:56:30.547Z",
             "memberType": "Direct",

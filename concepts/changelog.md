@@ -1,18 +1,39 @@
 ---
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
-ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184558"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191212"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="december-2018"></a>12 月 2018
+
+### <a name="directory-apis"></a>目录 API
+
+| 更改类型 | 版本                                    | 说明                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| 添加项    | Beta | 添加`createdDateTime`属性设为[组织](/graph/api/resources/organization?view=graph-rest-beta)资源。|
+| 添加项 | v1.0 | 添加方法`memberOf`获取[设备](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 此方法中添加了获取包括嵌套的成员身份的成员身份的列表。|
+
+### <a name="privileged-identity-management-apis"></a>特权身份管理 API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加属性`registeredRoot`到[governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta)实体。|
+| 更改 | beta | 重命名属性`onboardDateTime`的[governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta)实体到`registeredDateTime`。|
+| 添加项 | beta | 添加了新操作[注册资源](/graph/api/governanceresource-register?view=graph-rest-beta)。|
+| 删除 | beta | 删除`isPermanent` [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta)实体的属性。|
+| 删除 | beta | 删除`roleAssignmentStartDateTime` [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta)实体的属性。|
+| 删除 | beta | 删除`roleAssignmentEndDateTime` [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta)实体的属性。|
+
 
 ## <a name="november-2018"></a>11 月 2018
 
@@ -52,7 +73,7 @@ ms.locfileid: "27184558"
 |添加项 |beta| 引入的新资源类型[teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta)。|
 |添加项 |beta| 引入的新资源类型[teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta)。|
 |添加项 |beta| 引入的新资源类型[teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta)。|
-|添加项 |beta| 引入到 teamVisibilityType 的新枚举成员 hiddenMembership。|
+|Addition |beta| 引入到 teamVisibilityType 的新枚举成员 hiddenMembership。|
 |添加项 |beta| 引入到 teamsAsyncOperationType 的新枚举成员 createTeam。|
 |添加项 |beta| 引入的新枚举成员 teamsAppDistributionMethod。|
 |添加项 |beta| 引入新升级应用程序操作下的[/teams/ {id} / installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta)。 |

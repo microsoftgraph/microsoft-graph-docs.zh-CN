@@ -1,12 +1,12 @@
 ---
 title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
-ms.openlocfilehash: ca5752d51e5d59578594a12c80ae1cac316b48bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041717"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191114"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -17,19 +17,20 @@ ms.locfileid: "27041717"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+>**注意：** 此 API 还需要请求者必须至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
+
 |权限类型      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
 
-除了权限范围，此 API 要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-request-headers"></a>可选的请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | 持有者 {code}|
@@ -49,8 +50,9 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 NoContent` 响应代码。它不在响应正文中返回任何内容。 
 
-## <a name="error-codes"></a>错误代码
-此 API 遵循标准的 HTTP 代码。 此外，如下所示的自定义的错误代码。
+### <a name="error-codes"></a>错误代码
+此 API 返回的标准 HTTP 错误代码。 此外，它将返回以下自定义错误代码。
+
 |错误代码     | 错误消息         | 详细信息             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md)系统中不存在。

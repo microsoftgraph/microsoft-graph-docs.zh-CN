@@ -1,12 +1,12 @@
 ---
 title: 组织资源类型
 description: '代表 Azure Active Directory 租户。 '
-ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191142"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -38,11 +38,12 @@ ms.locfileid: "27044142"
 |companyLastDirSyncTime|DateTimeOffset|租户最后一次与本地目录同步的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |country|字符串| 组织地址所在的国家/地区名称。 |
 |countryLetterCode|字符串| 组织所在的国家/地区缩写 |
+|createdDateTime|DateTimeOffset| 创建组织时的时间戳。 值不能修改和创建组织时将自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |deletionTimestamp|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
 |id|String|租户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isMultipleDataLocationsForServicesEnabled|布尔值|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |marketingNotificationEmails|String collection| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 |postalCode|String| 组织地址的邮政编码。 |

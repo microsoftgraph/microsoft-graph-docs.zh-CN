@@ -45,7 +45,7 @@ items:
       href: /graph/extensibility-open-users?toc=./ref/toc.json
     - name: 使用架构扩展 （示例）
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-  - name: Resources
+  - name: 资源
     items:
     - name: 最佳做法
       href: /graph/best-practices-concept?toc=./ref/toc.json
@@ -6517,6 +6517,8 @@ items:
           href: api/governanceresource-list.md
         - name: 获取
           href: api/governanceresource-get.md
+        - name: 注册
+          href: api/governanceresource-register.md
       - name: 角色定义
         href: resources/governanceroledefinition.md
         items:
@@ -6879,7 +6881,7 @@ items:
         href: api/page-delete.md
       - name: 复制到部分
         href: api/page-copytosection.md
-    - name: Resources
+    - name: 资源
       href: resources/resource.md
       items:
       - name: 获取资源
@@ -7193,7 +7195,7 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: 获取活动计数
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: 安全性
+  - name: 安全
     href: resources/security-api-overview.md
     items:
     - name: 警报
@@ -7814,9 +7816,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: acde8e2772a4c97d9d299d024088b79387c1d6f7
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+ms.openlocfilehash: d223c8f9b7eb4e899705a51f9cb1fa09bff4db4e
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123992"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191198"

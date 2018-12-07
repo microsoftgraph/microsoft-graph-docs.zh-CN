@@ -1,12 +1,12 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够更新其决策 (`AdminApproved`或`AdminDenied`) 中的状态的 governanceRoleAssignmentRequests 上`PendingAdminDecision`。
-ms.openlocfilehash: 0f52b810b861e18a679ae8aea4ffdf7fd2d67abd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048956"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191149"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -17,13 +17,13 @@ ms.locfileid: "27048956"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+>**注意：** 此 API 还需要请求者必须至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)所属的资源。 
+
 |权限类型      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
-
-除了权限范围，此 API 要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 上的资源， [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)属于。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,13 +31,14 @@ ms.locfileid: "27048956"
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称           | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者 {code}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
+
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
 |原因        |字符串                 |✓        |提供由管理员为其决策的原因。|
@@ -47,9 +48,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### <a name="response"></a>响应
 此方法可以仅适用于请求的状态中的`PendingAdminDecision`。
 
-如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-### <a name="example"></a>示例
+## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",

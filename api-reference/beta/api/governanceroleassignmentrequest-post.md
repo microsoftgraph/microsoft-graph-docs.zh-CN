@@ -1,12 +1,12 @@
 ---
 title: 创建 governanceRoleAssignmentRequest
 description: 创建角色分配请求以表示该操作所需角色分配。 下表列出的操作。
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044348"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191170"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -42,16 +42,13 @@ ms.locfileid: "27044348"
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法执行**不**支持[OData 查询参数](/graph/query-parameters)。
-
-### <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者 {code}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>请求正文
+## <a name="request-body"></a>请求正文
 在请求正文中，提供[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象的 JSON 表示形式。 
 
 | 属性     | 类型    |必需|  说明|
@@ -64,11 +61,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |原因|字符串| |原因需要提供角色分配请求的审核和查看用途。|
 |计划|[governanceSchedule](../resources/governanceschedule.md)| | 角色分配请求的时间表。 请求类型的`UserAdd`， `AdminAdd`， `AdminUpdate`，和`AdminExtend`，需要。|
 
-### <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
+## <a name="response"></a>响应
+如果成功，此方法返回`201 Created`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
 
-## <a name="error-codes"></a>错误代码
-此 API 遵循标准的 HTTP 代码，除了下表中列出的错误代码。
+### <a name="error-codes"></a>错误代码
+此 API 返回的标准 HTTP 错误代码。 此外，它也会返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 详细信息 |
 |:--------------------| :---------------------|:--------------------|
@@ -80,10 +77,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 400 BadRequest | RoleAssignmentDoesNotExist    | 系统中不存在[governanceRoleAssignment](../resources/governanceroleassignment.md)请求来更新/扩展。
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部的策略，且无法创建。
 
-## <a name="example-1"></a>示例 1
+## <a name="examples"></a>示例
+下面的示例演示如何使用此 API。
+
+### <a name="example-1"></a>示例 1
 本示例中，管理员为帐单读者角色分配用户 nawu@fimdev.net。
 
- >**注意：** 除了权限，此示例要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。 
+ >**注意：** 除了权限，此示例要求申请者有至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。 
 
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,7 +165,7 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>示例 2
+### <a name="example-2"></a>示例 2
 本示例中，用户 nawu@fimdev.net 激活合格的帐单读取器角色。
 
 | 属性     | 类型    |是否必需|  值 |
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>示例 3
+### <a name="example-3"></a>示例 3
 本示例中，用户 nawu@fimdev.net 停用活动的帐单读取器角色。
 
 | 属性     | 类型    |是否必需|  值 |
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,7 +324,7 @@ Content-length: 226
 ### <a name="example-4"></a>示例 4
 本示例中，管理员从帐单读者角色中移除用户 nawu@fimdev.net。
 
- >**注意：** 除了权限范围，此示例要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
+ >**注意：** 除了权限，此示例要求申请者有至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
  
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,7 +386,8 @@ Content-length: 226
 ### <a name="example-5"></a>示例 5
 本示例中，管理员向所有者更新用户 nawu@fimdev.net 的角色分配。
 
- >**注意：** 除了权限范围，此示例要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。 
+ >**注意：** 除了权限，此示例要求申请者有至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。 
+
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|字符串|是|\<resourceId\>|
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,7 +466,7 @@ Content-length: 226
 ### <a name="example-6"></a>示例 6
 本示例将用户 ANUJCUSER 即将过期的角色分配给 API 管理服务参与者。
 
- >**注意：** 除了权限范围，此示例要求至少有一个请求程序`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
+ >**注意：** 另外还包括的权限，此示例要求申请者有至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
  
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

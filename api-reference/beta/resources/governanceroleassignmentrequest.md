@@ -1,12 +1,12 @@
 ---
 title: governanceRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理角色分配操作的请求。
-ms.openlocfilehash: 4b19ed04b4c78fa084c1247fc1798a39b08c3fdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b3f3c7b3ec324b9b3df24cc0c53eaa6d1cda7a4c
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041276"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191121"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest 资源类型
 
@@ -30,14 +30,12 @@ ms.locfileid: "27041276"
 | 属性                  | 类型          |说明|
 |:--------------------------|:--------------|:----------|
 |id                         |字符串         |角色分配请求的 id。|
-|resourceId                 |String         |必需项。 与关联的角色分配请求的资源的 id。|
-|roleDefinitionId           |字符串         |必需项。 角色分配请求相关联的角色定义的 id。|
-|subjectId                  |字符串         |必需项。 其关联的角色分配请求的主题的 id。|
-|type                       |字符串         |必需项。 表示的角色分配操作的类型。 值可以是 <ul><li>`AdminAdd`： 管理员分配给角色; 用户/组</li><li>`UserAdd`： 用户激活合格分配;</li><li> `AdminUpdate`： 管理员更改现有角色分配</li><li>`AdminRemove`： 管理员角色中移除用户/组<li>`UserRemove`： 用户停用活动的工作分配;<li>`UserExtend`： 用户请求扩展其即将过期的分配;</li><li>`AdminExtend`： 管理员扩展即将过期的工作分配。</li><li>`UserRenew`: 续订其过期的分配; 用户申请</li><li>`AdminRenew`： 管理员扩展即将过期的工作分配。</li></ul>|
-|assignmentState|字符串  |必需项。 工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
+|resourceId                 |String         |必需。 与关联的角色分配请求的资源的 id。|
+|roleDefinitionId           |字符串         |必需。 角色分配请求相关联的角色定义的 id。|
+|subjectId                  |字符串         |必需。 其关联的角色分配请求的主题的 id。|
+|type                       |字符串         |必需。 表示的角色分配操作的类型。 值可以是 <ul><li>`AdminAdd`： 管理员分配给角色; 用户/组</li><li>`UserAdd`： 用户激活合格分配;</li><li> `AdminUpdate`： 管理员更改现有角色分配</li><li>`AdminRemove`： 管理员角色中移除用户/组<li>`UserRemove`： 用户停用活动的工作分配;<li>`UserExtend`： 用户请求扩展其即将过期的分配;</li><li>`AdminExtend`： 管理员扩展即将过期的工作分配。</li><li>`UserRenew`: 续订其过期的分配; 用户申请</li><li>`AdminRenew`： 管理员扩展即将过期的工作分配。</li></ul>|
+|assignmentState|字符串  |必需。 工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
 |requestedDateTime          |DateTimeOffset |只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|roleAssignmentStartDateTime|DateTimeOffset |角色分配开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|roleAssignmentEndDateTime|DateTimeOffset   |角色分配结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |计划                   |[governanceSchedule](governanceschedule.md)|角色分配请求的计划对象。|
 |原因                     |字符串         |用户和管理员提供的一条消息时创建有关为什么需要请求。|
 |状态                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |角色分配请求的状态。|
@@ -74,8 +72,6 @@ ms.locfileid: "27041276"
   "assignmentState": "String",
   "reason": "String",
   "requestedDateTime": "String (timestamp)",
-  "roleAssignmentStartDateTime": "String (timestamp)",
-  "roleAssignmentEndDateTime": "String (timestamp)",
   "schedule": {"@odata.type": "microsoft.graph.governanceSchedule"},
   "status": {"@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"},
   "linkedEligibleRoleAssignmentId": "String"

@@ -1,12 +1,12 @@
 ---
 title: governanceRoleAssignment 资源类型
 description: 代表向角色分配的用户或组。
-ms.openlocfilehash: e29ab163c837ee04f141bdc496abeac760d6a372
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042146"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191135"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment 资源类型
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
@@ -15,8 +15,8 @@ ms.locfileid: "27042146"
 
 特权标识管理 (PIM) 支持两种类型的工作分配：
 
-1. 活动的工作分配-资源表示直接访问。
-2. 合格的工作分配的资源，之间没有访问和直接访问代表中间阶段的访问权限。 管理员可以暂时分配到的用户/组`eligible assignment`提前。 只要用户/组成员，需要访问`activation`上`eligible assignment`需要几个小时才能资源即时访问。 激活之后，`active assignment`将创建为以指示的激活的状态的用户/组成员。
+1. 活动的工作分配-表示激活直接/资源访问权限。
+2. 合格的工作分配的资源，之间没有访问和直接访问代表中间阶段的访问权限。 管理员可以分配给用户/组`eligible assignment`提前，每当和需要访问时，`activation`上`eligible assignment`需要几个小时才能资源即时访问。 激活之后，`active assignment`将创建为以指示的激活的状态的用户/组成员。
 
 ## <a name="methods"></a>方法
 
@@ -32,12 +32,11 @@ ms.locfileid: "27042146"
 | 属性  | 类型      |说明|
 |:----------|:----------|:----------|
 |id         |字符串     |角色分配的 ID。 处于 GUID 格式。|
-|resourceId |String     |必需项。 资源的角色分配相关联的 ID。 |
-|roleDefinitionId|字符串|必需项。 角色分配相关联的角色定义的 ID。 |
-|subjectId|字符串       |必需项。 该角色分配相关联的主题的 ID。 |
+|resourceId |String     |必需。 资源的角色分配相关联的 ID。 |
+|roleDefinitionId|字符串|必需。 角色分配相关联的角色定义的 ID。 |
+|subjectId|字符串       |必需。 该角色分配相关联的主题的 ID。 |
 |linkedEligibleRoleAssignmentId|字符串|如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表该 ID `eligible assignment`;否则，值为`null`。 |
 |externalId   |String     |外部 ID 用于标识提供程序中的角色分配的资源。|
-|isPermanent|布尔    |指示该角色分配是否是一个永久的分配。|
 |startDateTime|DateTimeOffset|角色分配的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|对于非永久角色分配，这是时将过期的角色分配的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |assignmentState|字符串  |工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
@@ -73,7 +72,6 @@ ms.locfileid: "27042146"
   "subjectId": "String",
   "linkedEligibleRoleAssignmentId": "String",
   "externalId": "String",
-  "isPermanent": true,
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "assignmentState": "String",

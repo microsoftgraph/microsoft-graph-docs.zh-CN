@@ -45,7 +45,7 @@ items:
       href: /graph/extensibility-open-users?toc=./ref/toc.json
     - name: 使用架构扩展 （示例）
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-  - name: Resources
+  - name: 资源
     items:
     - name: 最佳做法
       href: /graph/best-practices-concept?toc=./ref/toc.json
@@ -3074,6 +3074,8 @@ items:
         href: api/device-post-registeredowners.md
       - name: 创建注册的用户
         href: api/device-post-registeredusers.md
+      - name: 列表设备组
+        href: api/device-list-memberof.md
     - name: 目录对象
       href: resources/directoryobject.md
       items:
@@ -3391,7 +3393,7 @@ items:
         href: api/page-delete.md
       - name: 复制到部分
         href: api/page-copytosection.md
-    - name: Resources
+    - name: 资源
       href: resources/resource.md
       items:
       - name: 获取资源
@@ -3672,7 +3674,7 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: 获取活动计数
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: 安全性
+  - name: 安全
     href: resources/security-api-overview.md
     items:
     - name: 警报
@@ -4107,9 +4109,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 865c124cdf6634855e01cfa6a46a1e5aacda1304
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+ms.openlocfilehash: 5fd08c5b36c9fcec78cc6b48400347b90289b496
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123978"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191184"
