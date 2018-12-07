@@ -1,12 +1,12 @@
 ---
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
-ms.openlocfilehash: f7930e73cbfb1a8bf924e72ea790167bb263ba6a
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156066"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184558"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -20,7 +20,7 @@ ms.locfileid: "27156066"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | beta        | 添加了新**进度**属性设置为[dataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation)。 此选项指定操作的进度。
+| 添加项        | beta        | 添加了新**进度**属性设置为[dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta)。 此选项指定操作的进度。
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -118,10 +118,10 @@ ms.locfileid: "27156066"
 
 ### <a name="directory-apis"></a>目录 API
 
-| **更改类型** | **版本**   | **说明**                          | 
-| :-------------- | :------------ | :--------------------------------------- | 
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | [组基于许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) **licenseAssignmentStates**属性添加到[用户](/graph/api/resources/user?view=graph-rest-beta)实体。|
-| 添加项 | Beta | 添加**licenseAssignmentState**资源[组基于授权](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)的。| 
+| 添加项 | Beta | 添加**licenseAssignmentState**资源[组基于授权](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)的。|
 | 添加项 | Beta | [组基于许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) **assignedLicenses**、 **licenseProcessingState**、 **hasMembersWithLicenseErrors**和**membersWithLicenseErrors**属性添加到[组](/graph/api/resources/group?view=graph-rest-beta)实体。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
