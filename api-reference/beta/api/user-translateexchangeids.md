@@ -1,12 +1,12 @@
 ---
 title: 用户： translateExchangeIds
 description: 翻译格式之间的 Outlook 相关的资源的标识符。
-ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045916"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184488"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[convertIdResult](../resources/meetingtimesuggestionsresult.md)集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[convertIdResult](../resources/convertidresult.md)集合。
 
 ## <a name="example"></a>示例
 

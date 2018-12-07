@@ -1,12 +1,12 @@
 ---
 title: 使用 Microsoft Graph 安全 API
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 556725597b7b020bc7ef5b55857ae59dfb127e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: dff91665fc288bf1714d1975f3ec2e109f576530
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046889"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184530"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全 API
 
@@ -27,14 +27,14 @@ Microsoft Graph 安全 API 包括以下主要实体。
 
 Microsoft Graph 安全集成解决方案将收到来自下列安全提供程序的通知：
 
-- Azure 安全中心
-- Azure Active Directory 标识保护
-- Azure 信息保护
-- Microsoft 云应用程序安全性
-- Windows Defender 高级威胁保护
-- Microsoft Intune （专用预览）
-- Office 365 （即将推出）
-- （即将推出） azure 高级威胁保护
+- [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Microsoft 云应用程序安全性](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender 高级威胁保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure 信息保护](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览）**
+- Microsoft Intune **（专用预览）**
+- Office 365 **（即将推出）**
+- Azure 高级威胁保护 **（即将推出）**
 - 合作伙伴解决方案，如帕洛阿尔托市网络应用程序框架
 
 > **注意：** 新的提供程序持续是加入到 Microsoft Graph Security 生态系统。

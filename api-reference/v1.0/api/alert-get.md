@@ -1,12 +1,12 @@
 ---
 title: 获取警报
 description: " 检索的属性和警报对象的关系。"
-ms.openlocfilehash: b5e85fe33f4896714c4100c22a26417091d154ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010710"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184474"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -42,7 +42,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

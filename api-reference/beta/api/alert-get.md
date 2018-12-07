@@ -1,12 +1,12 @@
 ---
 title: 获取警报
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: a3c8acb8ab748636d7a79b7ce3995a61699f7946
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042687"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184481"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -44,7 +44,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

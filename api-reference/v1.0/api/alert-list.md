@@ -1,12 +1,12 @@
 ---
 title: 列出警报
 description: 检索警报对象的列表。
-ms.openlocfilehash: c25784f62d37722fc997e57b9f15c9857133b964
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010395"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184523"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -47,6 +47,8 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 若要返回替代属性集，请使用 OData`$select`查询参数指定的所需的**通知**属性集。  例如，若要返回**assignedTo**、**类别**和**严重性**属性，请添加以下到您的查询： `$select=assignedTo,category,severity`。
 
+> **注意：**`$top`的限制为 1000年警报和组合`$top`  +  `$skip`不能超过 6000 通知。 例如，`/security/alerts?$top=10&$skip=5990`会返回`200 OK`响应代码，但`/security/alerts?$top=10&$skip=5991`将返回`400 Bad Request`响应代码。  有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
@@ -59,7 +61,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象的集合。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与提供程序响应警告标头中的状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象的集合。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

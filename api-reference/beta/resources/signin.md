@@ -1,12 +1,12 @@
 ---
 title: 登录资源类型
 description: '此资源详细介绍用户或应用程序登录活动目录中。 '
-ms.openlocfilehash: 2bc6c8b961f0626a6409d9be868235f285f48e52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048338"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184537"
 ---
 # <a name="signin-resource-type"></a>登录资源类型
 此资源详细介绍用户或应用程序登录活动目录中。 
@@ -19,16 +19,15 @@ ms.locfileid: "27048338"
 |[获取登录](../api/signin-get.md) | [登录](signin.md) |读取属性和登录对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appDisplayName|字符串|指 Azure 门户中显示的应用程序名称。|
 |appId|String|引用代表 Azure Active Directory 中的应用程序 Id 的唯一 guid。|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|提供与身份验证处理器相关联的详细信息。|
 |clientAppUsed|字符串|提供用于登录 activty.E.g 旧客户端。 包括浏览器、 Exchange Active Sync、 IMAP、 MAPI、 SMTP、 POP 现代客户端。|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)集合|提供由相应的登录活动触发的条件的访问策略的列表。|
 |conditionalAccessStatus|string| 提供的触发条件访问策略的状态。 可取值为：`success`、`failure`、`notApplied`、`unknownFutureValue`。|
 |originalRequestId|字符串|身份验证序列中的第一个请求的请求 id。|
-|isInteractive|布尔值|指示是否是交互式登录。|
+|isInteractive|Boolean|指示是否是交互式登录。|
 |tokenIssuerName|字符串|标识提供程序 (例如 sts.microsoft.com) 的名称|
 |tokenIssuerType|字符串|提供了 identityProvider 的类型。 可能的值为`AzureAD`， `ADFederationServices`， `UnknownFutureValue`。|
 |correlationId|String|指启动登录时，从客户端发送的 ID。 这用于解决对应的登录活动，调用支持人员或支持时。|
@@ -41,7 +40,7 @@ ms.locfileid: "27048338"
 |riskDetail|`riskDetail`|提供原因后面的 risky 用户、 登录或风险事件特定状态。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecuredPasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`， `unknownFutureValue`。 值`none`是指的任何操作已执行上的用户或登录到目前为止。|
 |riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
 |riskLevelDuringSignIn|`riskLevel`|登录过程中提供的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
-|riskEventTypes|`riskEventTypes`|提供与登录相关联的风险事件类型的列表。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecurePasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`，`hidden`和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
+|riskEventTypes|`riskEventTypes`|提供与登录相关联的风险事件类型的列表。 可能的值为： `unlikelyTravel`， `anonymizedIPAddress`， `maliciousIPAddress`， `unfamiliarFeatures`， `malwareInfectedIPAddress`， `suspiciousIPAddress`， `leakedCredentials`， `investigationsThreatIntelligence`， `generic`，和`unknownFutureValue`。|
 |riskState|`riskState`|提供 risky 用户、 登录或风险事件的风险状态。 可能的值为： `none`， `confirmedSafe`， `remediated`， `dismissed`， `atRisk`， `confirmedCompromised`， `unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|提供相关 MFA 像 MFA 需要，MFA 相应登录状态的信息。|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|提供有关的网络位置的详细信息。|
@@ -91,7 +90,14 @@ ms.locfileid: "27048338"
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

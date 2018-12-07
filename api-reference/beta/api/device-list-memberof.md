@@ -1,12 +1,12 @@
 ---
 title: 列表设备组
 description: 获取此设备直接成员的组。 此操作是不可传递的。
-ms.openlocfilehash: 8674bed8f00c6cbe9c55dd218a3611ecde9e548d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043915"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184467"
 ---
 # <a name="list-device-groups"></a>列表设备组
 
@@ -27,10 +27,10 @@ ms.locfileid: "27043915"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{id | userPrincipalName}/memberOf
+GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持 [OData 查询参数](/graph/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
