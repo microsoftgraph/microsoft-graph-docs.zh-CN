@@ -1,12 +1,12 @@
 ---
 title: 获取 educationSynchronizationErrors
 description: '获取验证期间和/或租户中的特定学校数据同步配置文件同步期间生成的错误。 '
-ms.openlocfilehash: 5853834187dcf470dff093a21589b3eba798e793
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044881"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209661"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
@@ -30,7 +30,7 @@ GET /synchronizationProfiles/{id}/errors
 此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应： $filter、 $orderby、 $top、 $skip 和 $count。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 
@@ -47,7 +47,7 @@ GET /synchronizationProfiles/{id}/errors
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
 ##### <a name="response"></a>响应

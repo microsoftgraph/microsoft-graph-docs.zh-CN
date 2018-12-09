@@ -1,12 +1,12 @@
 ---
 title: 获取 riskyUsers
 description: 检索的属性和**riskyUsers**对象的关系。
-ms.openlocfilehash: f0a6ac24bf66184d0547e9284f5a35b84b9358b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042464"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209682"
 ---
 # <a name="get-riskyusers"></a>获取 riskyUsers
 
@@ -18,7 +18,7 @@ ms.locfileid: "27042464"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | IdentityrRskyUser.Read.All    |
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | IdentityRiskyUser.Read.All |
 
@@ -30,7 +30,7 @@ GET /riskyUsers/{query}
 
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

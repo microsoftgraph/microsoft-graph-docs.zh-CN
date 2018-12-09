@@ -3,19 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 转换为其他格式
-ms.openlocfilehash: f3dfe3b01cac66754b9a8151a2bb46adee157741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d5fbeeb28e2c0d2bf23652f451f87d12b1a06435
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008897"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209703"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
 使用此 API 检索特定格式的项的内容。
 并非所有文件都可转换成全部格式。
 
-若要以原始格式下载项，请参阅[下载项内容](driveitem-get-content.md)。
+若要下载其原始格式中的项，请参阅[下载项目的内容](driveitem-get-content.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -47,7 +47,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
-| 名称            | 值   | 说明                                                                                                                                              |
+| Name            | 值   | 说明                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 

@@ -1,12 +1,12 @@
 ---
 title: 通道资源类型
 description: '频道是 chatMessages 团队中的集合。 '
-ms.openlocfilehash: 90a2c6641a79829e340f2487d7f0381998d2a205
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e69c0e7cdef347c59006b1dcce192e7949c2f07e
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048622"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209710"
 ---
 # <a name="channel-resource-type"></a>通道资源类型
 
@@ -33,6 +33,10 @@ ms.locfileid: "27048622"
 |说明|字符串|通道的可选文字说明。|
 |displayName|字符串|通道名称将显示于 Microsoft 团队中的用户。|
 |id|字符串|通道的唯一标识符。 只读。|
+|isFavoriteByDefault|Boolean|是否通道应自动标记喜欢为团队的所有成员。 默认值： `false`。|
+|email|Boolean| 向通道发送邮件的电子邮件地址。 只读。|
+|WebUrl|String|将导航至 Microsoft 团队中的通道超链接。 这是您获取右键单击 Microsoft 团队中的通道，然后选择 Get 链接到通道时的 URL。 此 URL 应是视为不透明 blob，并且未分列。 只读。|
+
 
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|

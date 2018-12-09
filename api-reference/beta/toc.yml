@@ -6212,7 +6212,7 @@ items:
         href: api/approleassignment-update.md
       - name: 删除 appRoleAssignment
         href: api/approleassignment-delete.md
-    - name: 应用程序
+    - name: Application
       href: resources/application.md
       items:
       - name: 应用程序列表
@@ -6287,6 +6287,8 @@ items:
         href: api/device-post-registeredowners.md
       - name: 创建注册的用户
         href: api/device-post-registeredusers.md
+      - name: 列表设备组
+        href: api/device-list-memberof.md
     - name: 目录对象
       href: resources/directoryobject.md
       items:
@@ -7195,7 +7197,7 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: 获取活动计数
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: 安全
+  - name: 安全性
     href: resources/security-api-overview.md
     items:
     - name: 警报
@@ -7409,6 +7411,8 @@ items:
       href: resources/team.md
       items:
       - name: 创建工作组
+        href: api/team-post.md
+      - name: 从组中创建工作组
         href: api/team-put-teams.md
       - name: 获取工作组
         href: api/team-get.md
@@ -7816,9 +7820,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: d223c8f9b7eb4e899705a51f9cb1fa09bff4db4e
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: ab3329a853822812c08174e95ce080d712e7e4de
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191198"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209752"

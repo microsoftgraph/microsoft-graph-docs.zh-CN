@@ -1,18 +1,18 @@
 ---
-title: 创建工作组
-description: 创建新组下的工作组。
-ms.openlocfilehash: 2e0331724006d18a0c02227427e7251b1d7e096d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: 从组中创建工作组
+description: 从组中创建新的团队。
+ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048350"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209668"
 ---
-# <a name="create-team"></a>创建工作组
+# <a name="create-team-from-group"></a>从组中创建工作组
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-创建新[团队](../resources/team.md)下一个[组](../resources/group.md)。
+从[组](../resources/group.md)中创建新的[团队](../resources/team.md)。
 
 用于创建团队、 组必须具有至少一个所有者。
 

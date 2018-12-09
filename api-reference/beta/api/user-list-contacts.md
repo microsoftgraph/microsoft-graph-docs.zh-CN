@@ -1,12 +1,12 @@
 ---
 title: 列出联系人
 description: 获取用户的邮箱中的联系人。
-ms.openlocfilehash: 2554836607705138702e5b04a60cf4a77a8e53f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 649adacf88b13e080ae02ca67986b448f3426cac
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042063"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209738"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -50,11 +50,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+您可以使用`$filter`筛选器的联系人的查询参数基于其电子邮件地址：
 
-例如，你可以使用 `$filter` 查询参数根据联系人的电子邮件地址的域来过滤联系人：
+<!-- { "blockType": "ignored" } -->
+``` http
+GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
+```
 
-`https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq '@domain.com')`
+请注意，您可以使用`$filter`， `any`，和`eq`仅子的**address**属性**emailAddresses**集合中的实例上的运算符。 即您不能筛选所依据的**名称**或任何其他子属性的实例**emailAddresses**，也可以应用任何其他运算符或运行`filter`，如`ne`， `le`，和`startswith()`。
+
+有关一般信息`$filter`查询参数，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
