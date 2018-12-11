@@ -1,12 +1,12 @@
 ---
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
-ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209766"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222658"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,9 +18,10 @@ ms.locfileid: "27209766"
 
 ### <a name="directory-apis"></a>目录 API
 
-| 更改类型 | 版本                                    | 说明                              |
-| :---------- | :----------------------------------------- | :--------------------------------------- |
-| 添加项    | Beta | 添加了`createdDateTime`组织[属性](/graph/api/resources/organization?view=graph-rest-beta)资源。|
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
+| 添加 | beta | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
@@ -43,7 +44,7 @@ ms.locfileid: "27209766"
 |添加 |beta| 向 teamsAsyncOperationStatus 中引入了新枚举成员 unknownFutureValue。|
 |添加 |beta| 向 teamsAppDistributionMethod 中引入了新枚举成员 unknownFutureValue。|
 |添加 |beta| 引入了新资源 [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta)。|
-
+|添加 | v1.0 | 向 [team](/graph/api/resources/team?view=graph-rest-1.0)、[channel](/graph/api/resources/channel?view=graph-rest-1.0) 和 [tab](/graph/api/resources/teamstab?view=graph-rest-1.0) 操作添加了管理员权限支持。 |
 
 ### <a name="privileged-identity-management-apis"></a>特权身份管理 API
 
@@ -2106,7 +2107,7 @@ ms.locfileid: "27209766"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 添加新的 **outlook** 导航属性以访问  Outlook 任务。 |
 | 添加项        | Beta        | 新实体 [outlookuser](/graph/api/resources/outlookuser?view=graph-rest-beta)、[outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta)、[outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta) 和 [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta) 及其方法支持组织和访问 Outlook 任务。 |
-| 添加项        | Beta        | Outlook 任务支持附件（[attachment](/graph/api/resources/attachment?view=graph-rest-beta)、[fileAttachment](/graph/api/resources/fileattachment?view=graph-rest-beta)、[itemAttachment](/graph/api/resources/itemattachment?view=graph-rest-beta) 和 [referenceAttachment](/graph/api/resources/referenceattachment?view=graph-rest-beta) 资源）。 |
+| 添加        | Beta        | Outlook 任务支持附件（[attachment](/graph/api/resources/attachment?view=graph-rest-beta)、[fileAttachment](/graph/api/resources/fileattachment?view=graph-rest-beta)、[itemAttachment](/graph/api/resources/itemattachment?view=graph-rest-beta) 和 [referenceAttachment](/graph/api/resources/referenceattachment?view=graph-rest-beta) 资源）。 |
 | 添加项        | Beta        | Outlook 任务支持[扩展的属性](/graph/api/resources/extended-properties-overview?view=graph-rest-beta)（[singleValueLegacyExtendedProperty](/graph/api/resources/singlevaluelegacyextendedproperty?view=graph-rest-beta) 和 [multiValueLegacyExtendedProperty](/graph/api/resources/multivaluelegacyextendedproperty?view=graph-rest-beta) 资源）。 |
 
 ### <a name="planner-apis"></a>规划器 API
