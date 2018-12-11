@@ -1,12 +1,12 @@
 ---
 title: 从组中创建工作组
 description: 从组中创建新的团队。
-ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209668"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222630"
 ---
 # <a name="create-team-from-group"></a>从组中创建工作组
 
@@ -27,6 +27,8 @@ ms.locfileid: "27209668"
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问它们不的成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 

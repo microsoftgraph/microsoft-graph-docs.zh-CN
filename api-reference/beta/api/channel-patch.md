@@ -1,12 +1,12 @@
 ---
 title: 修补程序通道
 description: 更新指定的频道的属性。
-ms.openlocfilehash: 833b5cf4999f43e9de799691a9f6d7a98318d4fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041649"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222378"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -24,6 +24,8 @@ ms.locfileid: "27041649"
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

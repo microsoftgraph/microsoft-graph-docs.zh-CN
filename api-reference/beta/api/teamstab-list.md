@@ -1,12 +1,12 @@
 ---
 title: 在通道列表选项卡
 description: '检索团队中指定的通道中的选项卡的列表。 '
-ms.openlocfilehash: 6c72bae20542911c7ab1563e994ca9ebdb79b37a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0628874876093447802583db70e160ad17e21f87
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048353"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222504"
 ---
 # <a name="list-tabs-in-channel"></a>在通道列表选项卡
 
@@ -22,6 +22,8 @@ ms.locfileid: "27048353"
 |委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
 
 ## <a name="http-request"></a>HTTP 请求
 

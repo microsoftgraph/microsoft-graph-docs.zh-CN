@@ -1,12 +1,12 @@
 ---
 title: 获取 ID 列表中的目录对象
 description: 选择查询选项不适用于此操作。
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042400"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222444"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -16,7 +16,7 @@ ms.locfileid: "27042400"
 
 该函数的一些常见用途是：
 
-* 将返回 ID 集合的函数（例如 [getMemberObjects](directoryobject-getmemberobjects.md) 或 [getMemberGroups](directoryobject-getmembergroups.md)）返回的 ID 解析到其后备目录对象。
+* 将返回 ID 集合的函数（例如 [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) 或 [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)）返回的 ID 解析到其后备目录对象。
 * 将应用程序保存在外部存储中的 ID 解析到其后备目录对象。
 
 ## <a name="permissions"></a>权限
@@ -35,12 +35,12 @@ ms.locfileid: "27042400"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
@@ -52,7 +52,7 @@ POST /directoryObjects/getById
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
-|types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](../resources/directoryobject.md)，其中包含所有目录中定义的资源类型。 派生的任何对象`directoryObject`可能指定集合中的例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)，等等。 值不区分大小写。|
+|types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录中定义的资源类型。 可能集合中的指定派生自[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)任何对象例如：[用户](/graph/api/resources/user?view=graph-rest-beta)、[组](/graph/api/resources/group?view=graph-rest-beta)、[设备](/graph/api/resources/device?view=graph-rest-beta)，等等。 若要搜索引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录，除引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织中定义的资源类型。 值不区分大小写。|
 
 ## <a name="response"></a>响应
 
@@ -64,7 +64,7 @@ POST /directoryObjects/getById
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http

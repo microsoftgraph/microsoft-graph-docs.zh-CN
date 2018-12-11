@@ -1,12 +1,12 @@
 ---
 title: 创建通道
 description: 在 Microsoft 团队，在请求正文中的规定创建新的通道。
-ms.openlocfilehash: f9767c70c94ce4cfe3379310c425005ace8fbe1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7f561c13b688d76ec4d45f03c2fd7f73192fe8a8
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043944"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222525"
 ---
 # <a name="create-channel"></a>创建通道
 
@@ -25,6 +25,8 @@ ms.locfileid: "27043944"
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All    |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

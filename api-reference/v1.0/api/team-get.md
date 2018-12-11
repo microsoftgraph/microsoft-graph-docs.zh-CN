@@ -1,12 +1,12 @@
 ---
 title: 获取工作组
 description: 检索的属性和指定团队的关系。
-ms.openlocfilehash: 790d550024742875b0fb3a5b4383f0ec9ba793bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010192"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222644"
 ---
 # <a name="get-team"></a>获取工作组
 
@@ -23,7 +23,10 @@ ms.locfileid: "27010192"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All    |
 
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}

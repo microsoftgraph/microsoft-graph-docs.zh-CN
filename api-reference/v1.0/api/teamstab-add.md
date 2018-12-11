@@ -1,12 +1,12 @@
 ---
 title: 选项卡添加到频道
 description: '将 (pin) 添加到指定的通道团队中的一个选项卡。 '
-ms.openlocfilehash: 1bf2021438cc9c0c74a2a4133e54a4fbc42fdf4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a32f0a289de08d49cfc12a9fa0cef60732f3364c
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009704"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222442"
 ---
 # <a name="add-tab-to-channel"></a>选项卡添加到频道
 
@@ -22,6 +22,8 @@ ms.locfileid: "27009704"
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.ReadWrite.All                         |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

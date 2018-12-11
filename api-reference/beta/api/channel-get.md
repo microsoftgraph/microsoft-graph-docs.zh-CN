@@ -1,12 +1,12 @@
 ---
 title: 获取通道
 description: 检索的属性和频道的关系。
-ms.openlocfilehash: 977484c57d7d82d13b781f658bb53eea091e2066
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a25f97c456ec92bfa1d15974d42698f6968b6338
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046120"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222413"
 ---
 # <a name="get-channel"></a>获取通道
 
@@ -22,6 +22,8 @@ ms.locfileid: "27046120"
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All    |
+
+> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
