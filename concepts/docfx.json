@@ -41,8 +41,9 @@
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
       "ms.date": "06/11/2018",
-      "bilingual_type": "hover over",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
+      "ms.suite": "microsoft graph",
+      "bilingual_type": "hover over",
       "hide_comments": true
     },
     "fileMetadata": {
