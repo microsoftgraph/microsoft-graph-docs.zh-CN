@@ -3,7 +3,7 @@ title: 从云解决方案提供商应用程序中调用 Microsoft Graph
 description: 本主题介绍如何使应用程序使用授权代码授予流或服务到服务客户端凭据流，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
 ms.openlocfilehash: a14c610090a1232c72ec2fde4469dd1cd1d6f694
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091838"

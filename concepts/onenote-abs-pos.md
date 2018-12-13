@@ -3,7 +3,7 @@ title: 在 OneNote 页中创建绝对定位的元素
 description: OneNote 页正文可以包含多个能在页面上独立定位的直接 `div`、`img` 和 `object` 子元素。
 ms.openlocfilehash: 8478f5ae0da4d8c4617573fb99f91646a67d9356
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091787"

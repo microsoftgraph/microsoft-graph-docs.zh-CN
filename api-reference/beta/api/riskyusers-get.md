@@ -1,18 +1,21 @@
 ---
 title: 获取 riskyUsers
 description: 检索的属性和**riskyUsers**对象的关系。
-ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: 14a944012a8015ecf3c60f761edba680c2c7a68b
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209682"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241025"
 ---
 # <a name="get-riskyusers"></a>获取 riskyUsers
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 检索的属性和**riskyUsers**对象的关系。
+
+> **注意：** 此 API 要求的 Azure AD Premium P2 许可证。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -1,12 +1,12 @@
 ---
 title: 从工作组中删除应用程序
 description: 从指定的团队中卸载应用程序。
-ms.openlocfilehash: a1ba2ce7234796e3a2df508d40432a15690b1a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f9e04ad9d6672c3b9cfaaee9109b1bba0f7ab4c6
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008601"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241053"
 ---
 # <a name="delete-app-from-team"></a>从工作组中删除应用程序
 
@@ -49,7 +49,7 @@ DELETE /teams/{id}/installedApps/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+DELETE /teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。

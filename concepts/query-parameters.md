@@ -3,7 +3,7 @@ title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
 ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/30/2018
 ms.locfileid: "27091939"
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 - [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN/library/dn774955(v=exchg.160).aspx)
+  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 

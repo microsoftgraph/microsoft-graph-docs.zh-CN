@@ -3,7 +3,7 @@ title: 在 Microsoft Teams 中配置内置选项卡类型
 description: '使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项卡 '
 ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091797"
@@ -15,7 +15,7 @@ ms.locfileid: "27091797"
 
 ## <a name="custom-tabs"></a>自定义选项卡
 
-若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](https://docs.microsoft.com/zh-CN/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
+若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
 
 `teamsAppId` 与 [Microsoft Teams 的应用清单架构](https://docs.microsoft.com/zh-CN/microsoftteams/platform/resources/schema/manifest-schema)中的 `id` 相同。
 

@@ -3,7 +3,7 @@ title: 通过 Microsoft Graph 显示 Excel 图表图像
 description: 如果你通过执行 GET 操作来检索图表图像，Excel API 便会以 base-64 字符串形式返回图像。
 ms.openlocfilehash: ae721547fca9a6fe835843544bf550c5fe222426
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091911"

@@ -3,7 +3,7 @@ title: 使用 Microsoft Graph 中的 OneNote API 的最佳做法
 description: 本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Stack Overflow 和 Twitter 上的常见问题的解答。
 ms.openlocfilehash: d7135b09c11150181a479b6b9a00ab11247de11c
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091851"

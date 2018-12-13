@@ -3,7 +3,7 @@ title: 使用 Microsoft Graph 可覆盖的用户
 description: 'Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。 '
 ms.openlocfilehash: c50ce779b0f6e990a360463da64b3b0e1a9aef34
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091895"

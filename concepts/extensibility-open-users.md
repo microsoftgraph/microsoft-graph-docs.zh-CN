@@ -3,7 +3,7 @@ title: 使用开放扩展向用户添加自定义数据
 description: '我们将举例逐步介绍如何使用*开放扩展*。 '
 ms.openlocfilehash: b2ff767e9eb0762ec3600166328d2bb0c5218936
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091927"

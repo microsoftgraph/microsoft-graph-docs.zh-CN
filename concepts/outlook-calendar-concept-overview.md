@@ -3,7 +3,7 @@ title: Outlook 日历 API 概述
 description: Outlook 日历属于 Office 365 中的 Outlook 消息传递中心，也便于管理电子邮件和联系人、查找组织用户的相关信息、
 ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091823"

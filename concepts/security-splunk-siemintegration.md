@@ -3,7 +3,7 @@ title: 使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集
 description: 可通过一个 REST 终结点管理 Microsoft Graph 安全提供程序。 可以将此终结点配置为，支持连接到多个 SIEM 产品的 Azure Monitor。 本文第 1 步和第 2 步中的说明是指，支持通过事件中心使用的所有 Azure Monitor 连接器。 本文介绍了 Splunk SIEM 连接器的端到端集成。
 ms.openlocfilehash: bdd1d1e192a4945c67727d20e594006a387fb156
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091865"

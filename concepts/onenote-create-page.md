@@ -3,7 +3,7 @@ title: 创建 OneNote 页
 description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: 73ff77b16aaf5927bf28d009ca8ee1274f954c06
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091937"

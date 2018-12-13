@@ -3,7 +3,7 @@ title: 更新 OneNote 页内容
 description: " Office 365 中的企业笔记本"
 ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091819"

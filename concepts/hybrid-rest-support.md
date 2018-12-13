@@ -3,7 +3,7 @@ title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览）
 description: 在属于 Office 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
 ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091760"
@@ -45,6 +45,6 @@ Microsoft Graph 提供开放性（支持 JSON、OAUTH 和 ODATA 等开放标准�
 IT 管理员可以在以下资源中找到详细信息：
 
 - 
-  [Exchange Server 混合部署](https://technet.microsoft.com/zh-CN/library/jj200581(v=exchg.150).aspx)
+  [Exchange Server 混合部署](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [2016 年 9 月累积更新版本](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [针对 REST API 的本地体系结构要求](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

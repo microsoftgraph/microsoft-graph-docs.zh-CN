@@ -3,7 +3,7 @@ title: Azure AD 标识和访问管理 API 概述
 description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
 ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156045"
@@ -40,7 +40,7 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 
 ### <a name="manage-devices"></a>管理设备
 
-[管理组织中注册的设备](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
+[管理组织中注册的设备](https://docs.microsoft.com/zh-CN/azure/active-directory/device-management-introduction)。 设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。 设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。 条件访问策略使用它们进行多重身份验证。
 
 ### <a name="partner-tenant-management"></a>合作伙伴租户管理
 
@@ -56,33 +56,33 @@ Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)�
 - 获取公司订阅的[服务 SKU](/graph/api/resources/subscribedsku?view=graph-rest-1.0) 的相关信息。
 - [邀请外部](/graph/api/resources/invitation?view=graph-rest-1.0)（来宾）用户加入组织。
 
-### <a name="monitor-identity-risks-preview"></a>监视标识风险 （预览）
+### <a name="monitor-identity-risks-preview"></a>监视标识风险（预览版）
 
 大多数安全漏洞都会导致攻击者窃取用户的身份，攻击者利用第三方漏洞、密码喷洒攻击和复杂的网络钓鱼攻击，从而使攻击变得非常有效。 这就意味着，你需要保护所有用户帐户免受这些攻击，并主动防止泄露的身份信息被滥用。
 
-Azure AD 使用自适应机器学习算法和启发式方法来检测异常情况，指示可能会遭到入侵的帐户。 使用此数据，Azure AD 身份保护保护您的用户与基于风险的条件访问策略，并生成报告和其检测上的通知。
+Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能已遭入侵的异常。 使用此类数据，Azure AD Identity Protection 可使用基于风险的条件访问策略来保护用户，并根据检测结果生成报告和警报。
 
-目前，Microsoft Graph 使 Azure AD Premium P2 到[检测到的标识保护查询风险事件](/graph/api/resources/identityprotection-root?view=graph-rest-beta)，包括风险事件的类型、 严重性、 日期、 时间、 位置、 受影响的用户等客户能够轻松访问。 然后，客户可以 SIEM 系统和安全应用程序中使用这些事件。
+现在，Azure AD Premium P2 客户可以通过 Microsoft Graph 轻松[查询 Identity Protection 检测到的风险事件](/graph/api/resources/identityprotection-root?view=graph-rest-beta)，包括风险事件类型、严重性、日期、时间、位置、受影响用户等。 然后，客户可以在 SIEM 系统和安全应用中使用这些事件。
 
-### <a name="activate-users-into-privileged-roles-preview"></a>激活用户成为特权角色（预览）
+### <a name="activate-users-into-privileged-roles-preview"></a>激活用户的特权角色（预览版）
 
-你可以通过按需激活管理权限来保护对资源的访问权限。 [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) 是 Azure AD Premium P2 中提供的功能。
+你可以通过按需激活管理权限来保护对资源的访问权限。 [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) 是一项 Azure AD Premium P2 功能。
 
-### <a name="manage-user-access-reviews-preview"></a>管理用户访问审阅 （预览）
+### <a name="manage-user-access-reviews-preview"></a>管理用户访问评审（预览版）
 
-您可以配置访问 reviews （英文） 的组成员身份和应用程序访问。 [Access 会检查](/graph/api/resources/accessreviews-root?view=graph-rest-beta)的功能在 Azure AD Premium P2。
+可以配置组成员资格和应用访问权限的访问评审。 [访问评审](/graph/api/resources/accessreviews-root?view=graph-rest-beta)是一项 Azure AD Premium P2 功能。
 
 ## <a name="api-reference"></a>API 参考
 
-正在寻找此服务的 API 参考？
+在查找此服务的 API 参考？
 
-- [Azure AD 身份和访问管理 API 中 Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
-- [Azure AD 身份和访问管理 API 中 Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 中的 Azure AD 标识和访问管理 API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
+- [Microsoft Graph beta 中的 Azure AD 标识和访问管理 API](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 
 - 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)。
 - 使用 Azure AD 对 Microsoft Graph [进行身份验证](auth-overview.md)。
-- 将 [Azure AD 登录](https://azure.microsoft.com/en-us/develop/identity/signin/)集成到应用或网站中。
+- 将 [Azure AD 登录](https://azure.microsoft.com/zh-CN/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

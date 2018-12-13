@@ -1,18 +1,20 @@
 ---
 title: riskyUsers 资源类型
 description: 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户根据各种信号和机器学习的风险。 此 API 在 Azure AD 中所有存在风险的用户提供编程访问。
-ms.openlocfilehash: 5d51c303d25a781f8e432badb42acb48cf135217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 47856ab28a52046f19087e0f59745efb9855e81a
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043298"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241060"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户根据各种信号和机器学习的风险。 此 API 在 Azure AD 中所有存在风险的用户提供编程访问。
+
+> **注意：** 此 API 要求的 Azure AD Premium P2 许可证。
 
 有关风险事件的详细信息，请参阅[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
 

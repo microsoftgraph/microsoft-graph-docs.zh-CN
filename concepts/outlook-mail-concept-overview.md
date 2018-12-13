@@ -3,7 +3,7 @@ title: Outlook 邮件 API 概述
 description: Outlook 是 Office 365 的消息传递通信中心。 使用它，还可以管理联系人、安排会议、查找组织用户的相关信息、
 ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091915"

@@ -3,7 +3,7 @@ title: 使用 JSON 批处理将多个请求合并为一个 HTTP 调用
 description: JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：
 ms.openlocfilehash: 875f5f8758d37e84498446876eb863f474e00f21
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091752"

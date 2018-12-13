@@ -3,7 +3,7 @@ title: 通过 Microsoft Graph 更新 Excel 区域格式
 description: 下面的几个示例展示了如何更新指定区域的 RangeFormat、RangeFill 和 RangeFont 属性。
 ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091772"

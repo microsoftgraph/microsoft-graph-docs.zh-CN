@@ -3,7 +3,7 @@ title: 调用 Microsoft Graph API
 description: '若要访问和操纵 Microsoft Graph 资源，请使用以下一项操作来调用和指定资源 URL：   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091826"

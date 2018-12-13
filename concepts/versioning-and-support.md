@@ -3,7 +3,7 @@ title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091923"

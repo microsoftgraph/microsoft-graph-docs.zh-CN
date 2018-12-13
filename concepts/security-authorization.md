@@ -3,7 +3,7 @@ title: 授权和 Microsoft Graph 安全性 API
 description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很敏感的，它受到权限和 Azure Active Directory (Azure AD) 角色保护。
 ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091741"

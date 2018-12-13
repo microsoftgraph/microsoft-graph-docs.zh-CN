@@ -1,18 +1,21 @@
 ---
 title: 列表 riskyUsers
 description: 检索的属性和**riskyUsers**对象的关系。
-ms.openlocfilehash: 152171ff098bb58e8cbb247ca687841e77594ead
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049462"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241039"
 ---
 # <a name="list-riskyusers"></a>列表 riskyUsers
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 检索的属性和**riskyUsers**对象的关系。
+
+> **注意：** 此 API 要求的 Azure AD Premium P2 许可证。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +34,7 @@ GET /riskyUsers/{query}
 此方法支持`$filter`自定义的查询响应。 请参阅本主题后面的示例。 
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -3,7 +3,7 @@ title: '使用架构扩展向组添加自定义数据 '
 description: '我们将通过一个示例逐步介绍如何使用*架构扩展*。 '
 ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091817"

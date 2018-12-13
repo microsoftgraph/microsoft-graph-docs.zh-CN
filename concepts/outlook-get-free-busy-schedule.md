@@ -3,7 +3,7 @@ title: 获取用户和资源的忙/闲日程安排（预览版）
 description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091896"

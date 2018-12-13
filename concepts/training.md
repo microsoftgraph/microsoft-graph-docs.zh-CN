@@ -3,7 +3,7 @@ title: Microsoft Graph 培训
 description: Microsoft Graph 培训练习是分步教程，分步介绍了如何创建使用 Azure Active Directory 身份验证并通过 Microsoft Graph 访问数据的基本应用。
 ms.openlocfilehash: 4704377c7d54e1d2052f471e5d2b5c18ed6b9867
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091791"

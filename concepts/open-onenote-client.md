@@ -3,7 +3,7 @@ title: 打开 OneNote 客户端
 description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
 ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091860"

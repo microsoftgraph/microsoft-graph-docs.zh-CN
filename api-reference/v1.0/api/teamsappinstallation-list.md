@@ -1,12 +1,12 @@
 ---
 title: 团队中的列表应用程序
 description: 检索指定团队中安装的应用程序的列表。
-ms.openlocfilehash: 6a9deb01e4874861b798ffcae32bebd77899fad9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 214685302b9c3a09f06cb4d5c13525c222bf658f
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008255"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241046"
 ---
 # <a name="list-apps-in-team"></a>团队中的列表应用程序
 
@@ -61,7 +61,7 @@ GET /teams/{id}/installedApps
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET /teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>响应
@@ -100,7 +100,7 @@ Content-length: 55
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>响应

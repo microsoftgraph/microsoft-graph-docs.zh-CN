@@ -3,7 +3,7 @@ title: 获取共享文件夹中的 Outlook 联系人
 description: " 另外，还有 "
 ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091792"

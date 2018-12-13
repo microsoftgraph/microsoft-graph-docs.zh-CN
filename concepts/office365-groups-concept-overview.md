@@ -3,7 +3,7 @@ title: Microsoft Graph 中的 Office 365 组概述
 description: 'Office 365 组为用户提供了基础成员身份服务，可用于共享会话、文件、备注、日历、计划和许多其他资产。 '
 ms.openlocfilehash: bf230b6e698c065a443ddab47b68439f2d6291d1
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091841"

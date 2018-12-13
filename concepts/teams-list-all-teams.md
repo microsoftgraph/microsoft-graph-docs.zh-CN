@@ -3,7 +3,7 @@ title: 列出组织中 Microsoft Teams 的所有团队
 description: '列出所有团队 '
 ms.openlocfilehash: 2a9dbaa1fc9a02897870865295fd8d0dac9266a8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091859"

@@ -3,7 +3,7 @@ title: Microsoft Bookings API 概述（预览版）
 description: Microsoft Bookings 提供了联机的移动应用，可使小型企业及其客户简单高效地制定预约计划。 任何提供预约服务的小型企业（如汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业都可以使用 Microsoft Bookings。
 ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091878"
@@ -39,6 +39,6 @@ Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客�
 详细了解以下信息：
 
 - 
-  [Microsoft Bookings](https://support.office.com/zh-CN/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Office 365 商业版应用](https://support.office.com/zh-CN/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+  [Microsoft Bookings](https://support.office.com/zh-CN/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) 和其他 [Office 365 商业版应用](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - 在 Microsoft Graph 中[使用 Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 

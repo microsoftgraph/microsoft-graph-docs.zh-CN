@@ -3,7 +3,7 @@ title: OneNote 页中的输入和输出 HTML
 description: '创建或更新 OneNote 页时定义页面内容和结构的 HTML 被称为*输入 HTML*。 '
 ms.openlocfilehash: f75601771437e359626ef9ffbb474b9a29f07033
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091901"

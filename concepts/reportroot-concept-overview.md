@@ -3,7 +3,7 @@ title: Microsoft Graph 报告 API 概述
 description: 借助 Microsoft 365 管理中心中的使用情况报告，管理员可以了解其公司各 Office 365 服务的使用情况。 Microsoft Graph 中的报告 API 可用于与 Office 365 使用情况报告集成。
 ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091877"

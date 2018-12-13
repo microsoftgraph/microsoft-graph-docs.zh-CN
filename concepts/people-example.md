@@ -1,10 +1,10 @@
 ---
 title: 在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
-description: Microsoft Graph 应用程序可以使用人员 API 检索最相关的用户的人员。 相关性取决于用户的通信和协作模式和业务关系。 人员可以是本地的联系人，联系人中的社交网络或从组织的目录，并从 （如电子邮件和 Skype） 最近通信的人员。 以及生成此洞察，人员 API 还提供模糊匹配的搜索支持和能够检索用户与登录用户的组织中的另一个用户相关的列表。
+description: Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。
 ms.date: 12/04/2018
 ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156052"
@@ -18,7 +18,7 @@ Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最�
 若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限：
 
 * People.Read - 用于进行常规的 People API 调用，例如 `https://graph.microsoft.com/v1.0/me/people/`。People.Read 需要获得最终用户的同意。
-* People.Read.All-需要检索指定用户登录用户的组织中与最相关的人员 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) 呼叫。 People.Read.All 需要管理员同意。
+* People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) 调用时需要。 People.Read.All 需要获得管理员的同意。
 
 ## <a name="browse-people"></a>浏览人员
 

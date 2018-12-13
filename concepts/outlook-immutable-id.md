@@ -3,7 +3,7 @@ title: 获取 Outlook 资源的不可变标识符
 description: Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
 ms.openlocfilehash: a7b188c968ad6e0bf93f92ec99cb473075f29a4d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091902"

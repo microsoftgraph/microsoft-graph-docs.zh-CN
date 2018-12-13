@@ -3,7 +3,7 @@ title: 将图像、视频和文件添加到 OneNote 页面
 description: " Office 365 上的企业级笔记本"
 ms.openlocfilehash: bc298339d73b162da6b2e37c314ffedfb76bd193
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091810"

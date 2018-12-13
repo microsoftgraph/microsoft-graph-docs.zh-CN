@@ -3,7 +3,7 @@ title: '在应用中对 Microsoft Graph 数据进行分页 '
 description: '响应中的 odata.nextLink` 属性，其中包含下一页结果的 URL。 '
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091891"

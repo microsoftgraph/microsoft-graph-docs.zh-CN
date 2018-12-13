@@ -3,7 +3,7 @@ title: SharePoint 网站和内容 API 概述
 description: SharePoint 是移动且智能的内部网。 借助 SharePoint，用户可以共享和管理内容、知识和应用程序，以增强团队合作、查找信息并在整个组织内进行协作。 你可以在 Microsoft Graph 中使用 SharePoint REST API，将解决方案与 SharePoint 网站和内容进行集成。
 ms.openlocfilehash: e71ef735cadf13ddb05799431fcf74ae9b3fa463
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091892"

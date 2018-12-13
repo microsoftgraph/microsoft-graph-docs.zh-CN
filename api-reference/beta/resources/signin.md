@@ -1,12 +1,12 @@
 ---
 title: 登录资源类型
 description: '此资源详细介绍用户或应用程序登录活动目录中。 '
-ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184537"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241074"
 ---
 # <a name="signin-resource-type"></a>登录资源类型
 此资源详细介绍用户或应用程序登录活动目录中。 
@@ -37,15 +37,15 @@ ms.locfileid: "27184537"
 |ipAddress|String|提供客户端登录出现的 IP 地址。|
 |location|[signInLocation](signinlocation.md)|提供市/县、 状态和 2 个字母国家/地区代码从登录出现的位置。|
 |processingTimeInMilliseconds|Int|提供处理时间 （毫秒） AD STS 中请求|
-|riskDetail|`riskDetail`|提供原因后面的 risky 用户、 登录或风险事件特定状态。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecuredPasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`， `unknownFutureValue`。 值`none`是指的任何操作已执行上的用户或登录到目前为止。|
-|riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
-|riskLevelDuringSignIn|`riskLevel`|登录过程中提供的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
+|riskDetail|`riskDetail`|提供原因后面的 risky 用户、 登录或风险事件特定状态。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecuredPasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`， `unknownFutureValue`。 值`none`是指的任何操作已执行上的用户或登录到目前为止。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
+|riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
+|riskLevelDuringSignIn|`riskLevel`|登录过程中提供的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
 |riskEventTypes|`riskEventTypes`|提供与登录相关联的风险事件类型的列表。 可能的值为： `unlikelyTravel`， `anonymizedIPAddress`， `maliciousIPAddress`， `unfamiliarFeatures`， `malwareInfectedIPAddress`， `suspiciousIPAddress`， `leakedCredentials`， `investigationsThreatIntelligence`， `generic`，和`unknownFutureValue`。|
 |riskState|`riskState`|提供 risky 用户、 登录或风险事件的风险状态。 可能的值为： `none`， `confirmedSafe`， `remediated`， `dismissed`， `atRisk`， `confirmedCompromised`， `unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|提供相关 MFA 像 MFA 需要，MFA 相应登录状态的信息。|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|提供有关的网络位置的详细信息。|
 |riskLevel|string| 提供与登录相关联的风险级别。可能的值为： `low`， `medium`， `high`。|
-|状态|[signInStatus](signinstatus.md)|提供的登录状态。 可能值包括`Success`和`Failure`。|
+|status|[signInStatus](signinstatus.md)|提供的登录状态。 可能值包括`Success`和`Failure`。|
 |userDisplayName|String|指示显示用户的名称。|
 |userId|String|指示用户的用户 Id。|
 |userPrincipalName|字符串|指示用户的 UPN。|

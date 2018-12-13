@@ -3,7 +3,7 @@ title: '构建由 Project Rome 提供支持的跨设备应用 '
 description: '可以使用 Project Rome 构建无缝跨设备和平台的体验，从而为用户减少摩擦并帮助促进应用参与。 对于要使用 Project Rome API 跨设备和平台共享数据的应用程序，你需要配置跨设备应用，其中包含有关你特定于平台的应用的信息。 '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091867"
@@ -68,8 +68,8 @@ ms.locfileid: "27091867"
 
 若要查找 ID，请执行以下操作：
 
-* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
-* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
+* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
+* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
 * **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
 * **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
 * **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
@@ -94,7 +94,7 @@ ms.locfileid: "27091867"
 若要查找 ID，请执行以下操作：
 
 * 
-  **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/zh-CN/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
+  **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
 * **Apple 推送通知服务** - 请参阅 [APNs 概述](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)。
 * **Google Cloud Messaging** - 请参阅 [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)。
 
@@ -141,8 +141,8 @@ JSON 文件本身必须命名为 **cross-platform-app-identifiers** 并托管在
 
 若要查找 ID，请执行以下操作：
 
-* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
-* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/zh-CN/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
+* **windows_universal** - 为每个 UWP 应用提供 AUMID。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) 和[应用程序](https://docs.microsoft.com/zh-CN/uwp/schemas/appxpackage/appxmanifestschema/element-application)。
+* **windows_win32** - 为每个应用提供 AUMID。 对于 win32 应用，将需要使用脚本来检索此信息。 有关详细信息，请参阅[查找已安装应用 (Industry 8.1) 的应用程序用户模型 ID](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))。
 * **android** - 有关详细信息，请参阅[更改包名称](https://developer.android.com/studio/build/application-id.html#change_the_package_name)。 
 * **ios** - 有关详细信息，请参阅[捆绑](https://developer.apple.com/documentation/foundation/bundle)和[必需、可本地化和可编辑属性](https://help.apple.com/itunes-connect/developer/#/devfc3066644)。
 * **msa** – 登录到[应用程序注册门户](https://apps.dev.microsoft.com)。 可以查看任何应用的应用 ID/客户端 ID。 同时支持 Live SDK（十六进制值）和聚合应用 ID (GUID)。   
