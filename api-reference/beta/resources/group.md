@@ -1,12 +1,12 @@
 ---
 title: 组资源类型
 description: 代表 Azure Active Directory (Azure AD) 组，这可以是 Office 365 组、 团队中的 Microsoft 团队、 动态组或安全组。
-ms.openlocfilehash: a1a200918c34f5e2fa220a88d3c69871d6b93ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
+ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047822"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "27265232"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -89,7 +89,7 @@ ms.locfileid: "27047822"
 |[addFavorite](../api/group-addfavorite.md)|无|将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。|
 |[removeFavorite](../api/group-removefavorite.md)|无|从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。|
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 **memberOf** 导航属性，获取此用户是其直接成员的组和管理单元。|
-|[列表 joinedTeams](../api/user-list-joinedteams.md) |[组](group.md) 集合| 获取用户属于其直接成员的 Microsoft 团队。|
+|[列出 joinedTeams](../api/user-list-joinedteams.md) |[组](group.md) 集合| 获取用户属于其直接成员的 Microsoft 团队。|
 |[subscribeByMail](../api/group-subscribebymail.md)|无|将 isSubscribedByMail 属性设置为**true**。 使当前用户可以接收电子邮件对话。 Office 365 组仅支持。|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为**false**。 禁用当前用户接收电子邮件对话。 Office 365 组仅支持。|
 |[resetUnseenCount](../api/group-resetunseencount.md)|无|将 unseenCount 重置为 0 的上次访问后没有发现当前用户的所有文章。 Office 365 组仅支持。|
@@ -97,7 +97,7 @@ ms.locfileid: "27047822"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给组的许可证。 只读。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
 |Classification|String|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。|
@@ -106,7 +106,7 @@ ms.locfileid: "27047822"
 |displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection| 指定要创建组的类型。 可能的值为`Unified`创建 Office 365 组，或`DynamicMembership`动态组。  所有其他组类型，如启用安全的组和已启用电子邮件的安全组，未设置此属性。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isSubscribedByMail|布尔|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
+|isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
 |licenseProcessingState|字符串|指示的组许可证分配给组的所有成员的状态。 只读。 可能的值： `QueuedForProcessing`， `ProcessingInProgress`，和`ProcessingComplete`。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
@@ -145,11 +145,13 @@ ms.locfileid: "27047822"
 |日历|[日历](calendar.md)|组日历。只读。|
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|驱动器|[驱动器](drive.md)|组的驱动器。只读。|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
+|驱动器|[驱动器](drive.md)|组的默认驱动器。 只读。|
+|驱动器|[驱动器](drive.md) 集合|组的驱动器。 只读。|
 |终结点|[终结点](endpoint.md)集合| 组的终结点。 只读。 可为 Null。|
 |events|[事件](event.md) 集合|组的事件。|
-|extensions|[扩展](extension.md)集合|打开扩展名为组定义的集合。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|对此组的生命周期策略的集合。 只读。 可为 Null。|
 |memberOf|[directoryObject](directoryobject.md) 集合|组和管理单位属于此组的成员。 HTTP 方法： 获取 （支持的所有组）。 只读。 可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 用户、 联系人和组属于此组的成员。 HTTP 方法： 获取 （受支持的所有组），开机自检 （支持安全组和已启用邮件的安全组），删除 （只支持针对安全组） 只读的。 可为 Null。|
 |membersWithLicenseErrors|[用户](user.md)集合|与此组基于许可证分配许可证错误的组成员的列表。 只读。|
