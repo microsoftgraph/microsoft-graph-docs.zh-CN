@@ -94,7 +94,7 @@ items:
           - name: 邮件
             href: outlook-mail-concept-overview.md
             items:
-              - name: 创建和发送邮件
+              - name: 自动发送邮件
                 href: outlook-create-send-messages.md
               - name: 整理邮件
                 href: outlook-organize-messages.md

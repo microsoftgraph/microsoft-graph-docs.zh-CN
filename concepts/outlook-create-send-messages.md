@@ -1,18 +1,18 @@
 ---
-title: 创建和发送 Outlook 邮件
+title: 自动创建、发送和处理邮件
 description: 电子邮件通过 Microsoft Graph 中的邮件资源表示。
-ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091862"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283687"
 ---
-# <a name="create-and-send-outlook-messages"></a>创建和发送 Outlook 邮件
+# <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
 电子邮件通过 Microsoft Graph 中的[邮件](/graph/api/resources/message?view=graph-rest-1.0)资源表示。
 
-默认情况下，邮件由 **ID** 属性中的唯一条目 ID 标识。 当邮件最初保存为草稿或已发送时，存储提供程序会为消息分配一个条目 ID。 当将邮件复制或移动到另一个文件夹、存储或 .PST 文件时，该 ID 会发生变化。
+默认情况下，邮件由 **ID** 属性中的唯一条目 ID 标识。 当最初创建、保存为草稿或发送邮件时，存储提供程序会为邮件分配一个条目 ID。 默认情况下，当将邮件复制或移动到另一个文件夹、存储空间或 .PST 文件时，该 ID 会发生变化。 可以通过当前 ID 引用邮件，以便后续处理。
 
 ## <a name="creating-and-sending-mail"></a>创建和发送邮件
 
@@ -22,20 +22,43 @@ ms.locfileid: "27091862"
 
 要以编程方式区分草稿和已发送邮件，请选中 **isDraft** 属性。
 
-默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](/graph/api/resources/mailfolder?view=graph-rest-1.0)来识别 Drafts 文件夹和 SentItems 文件夹。 例如，可以执行以下操作[获取 Drafts 文件夹中的邮件](/graph/api/user-list-messages?view=graph-rest-1.0)：
+默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](/graph/api/resources/mailfolder?view=graph-rest-1.0)来识别 Drafts 文件夹和 SentItems 文件夹。 
 
+### <a name="setting-the-from-and-sender-properties"></a>设置 from 和 sender 属性
+
+撰写邮件时，Outlook 在大多数情况下会将 **from** 和 **sender** 属性设置为同一登录用户。 你可以在以下情况下更新这些属性：
+
+- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
+- 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。 可以在 Outlook 中委派邮箱所有者。 当代理代表邮箱所有者发送邮件时，Outlook 将 **sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。 通过编程方式，你可以将 **sender** 属性设置为已拥有邮箱委派权限的用户。
+
+## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>使用邮件提醒检查收件人状态并节省时间（预览版）
+
+在发送电子邮件之前，可使用[邮件提醒](/graph/api/resources/mailtips?view=graph-rest-beta)做出明智的决定。
+邮件提醒可以告诉你诸如收件人的邮箱限于特定发件人，或者需要批准才能向收件人发送电子邮件等信息。
+
+
+## <a name="reading-messages-with-control-over-the-body-format-returned"></a>阅读邮件并控制返回的正文格式
+
+可以通过引用邮件 ID 来[阅读邮箱中的邮件](/graph/api/message-get?view=graph-rest-1.0)：
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["AAMkADhMGAAA="]
+}-->
+```http
+GET /me/messages/AAMkADhMGAAA=
+```
+
+或者，也可以[获取特定文件夹中的邮件](/graph/api/user-list-messages?view=graph-rest-1.0)。 例如，阅读单点登录用户的“草稿”文件夹中的邮件：
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailfolders('Drafts')
 ```
 
-### <a name="body-format-and-malicious-script"></a>正文格式和恶意脚本
+Outlook 邮件正文可以是 HTML 或文本，其中 HTML 作为 GET 响应中返回的默认邮件正文类型。
 
-<!-- Remove the following 2 sections from the message.md topics
--->
-
-邮件正文可以是 HTML 或文本，其中 HTML 作为 GET 响应中返回的默认邮件正文类型。
-
-当[获取邮件](/graph/api/message-get?view=graph-rest-1.0)时，你可以指定以下请求标头以文本格式返回 **body** 和 **uniqueBody** 属性：
+获取邮件时，你可以指定以下请求标头以文本格式返回 **body** 和 **uniqueBody** 属性：
 
 ```http
 Prefer: outlook.body-content-type="text"
@@ -60,18 +83,6 @@ Prefer: outlook.body-content-type="html"
 Prefer: outlook.allow-unsafe-html
 ```
 
-### <a name="differentiating-the-from-and-sender-properties"></a>区分 from 和 sender 属性
-
-撰写邮件时，Outlook 在大多数情况下会将 **from** 和 **sender** 属性设置为同一登录用户。 你可以在以下情况下更新这些属性：
-
-- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
-- 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。 可以在 Outlook 中委派邮箱所有者。 当代理代表邮箱所有者发送邮件时，Outlook 将 **sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。 通过编程方式，你可以将 **sender** 属性设置为已拥有邮箱委派权限的用户。
-
-## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>使用邮件提醒检查收件人状态并节省时间（预览版）
-
-在发送电子邮件之前，可使用[邮件提醒](/graph/api/resources/mailtips?view=graph-rest-beta)做出明智的决定。
-邮件提醒可以告诉你诸如收件人的邮箱限于特定发件人，或者需要批准才能向收件人发送电子邮件等信息。
-
 ## <a name="integrating-with--social-gesture-preview"></a>与“@”社交手势集成（预览版）
 
 @-mention 是提醒用户邮件中是否有提到他们的通知。 [mention](/graph/api/resources/mention?view=graph-rest-beta)资源使应用能够在电子邮件中设置和获取常见的在线社交手势，即“@”前缀。
@@ -95,4 +106,5 @@ Prefer: outlook.allow-unsafe-html
 详细了解以下信息：
 
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
+- [获取 Outlook 资源的不可变标识符（预览版）](outlook-immutable-id.md)
 - [使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
