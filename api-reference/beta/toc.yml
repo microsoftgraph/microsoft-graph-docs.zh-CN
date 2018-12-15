@@ -6,22 +6,22 @@ items:
   items:
   - name: 注册应用
     href: /graph/auth-register-app-v2?toc=./ref/toc.json
-  - name: 代表用户访问
+  - name: 代表用户获取访问权限
     href: /graph/auth-v2-user?toc=./ref/toc.json
   - name: 无用户访问
     href: /graph/auth-v2-service?toc=./ref/toc.json
-  - name: Permissions
+  - name: 权限
     href: /graph/permissions-reference?toc=./ref/toc.json
-  - name: 管理应用程序的访问 (Csp)
+  - name: 管理应用访问权限 (CSP)
     href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
 - name: 使用 API
   href: /graph/use-the-api?toc=./ref/toc.json
   items:
-  - name: Paging
+  - name: 分页
     href: /graph/paging?toc=./ref/toc.json
   - name: 使用查询参数
     href: /graph/query-parameters?toc=./ref/toc.json
-  - name: 批处理请求
+  - name: 批量请求
     href: /graph/json-batching?toc=./ref/toc.json
   - name: 限制
     href: /graph/throttling?toc=./ref/toc.json
@@ -30,20 +30,20 @@ items:
   - name: 跟踪更改
     href: /graph/delta-query-overview?toc=./ref/toc.json
     items:
-    - name: 获取对事件 （示例） 的更改
+    - name: 获取事件更改（示例）
       href: /graph/delta-query-events?toc=./ref/toc.json
-    - name: 更改进入组 （示例）
+    - name: 获取组更改（示例）
       href: /graph/delta-query-groups?toc=./ref/toc.json
-    - name: 获取对邮件 （示例）
+    - name: 获取消息更改（示例）
       href: /graph/delta-query-messages?toc=./ref/toc.json
-    - name: 获取更改为用户 （示例）
+    - name: 获取用户更改（示例）
       href: /graph/delta-query-users?toc=./ref/toc.json
   - name: 添加自定义数据
     href: /graph/extensibility-overview?toc=./ref/toc.json
     items:
-    - name: 使用 open 扩展 （示例）
+    - name: 使用开放扩展（示例）
       href: /graph/extensibility-open-users?toc=./ref/toc.json
-    - name: 使用架构扩展 （示例）
+    - name: 使用架构扩展（示例）
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
   - name: 资源
     items:
@@ -58,7 +58,7 @@ items:
 - name: 参考
   href: overview.md
   items:
-  - name: Users
+  - name: 用户
     href: resources/users.md
     items:
     - name: User
@@ -95,7 +95,7 @@ items:
         href: api/calendar-list-calendarview.md
       - name: 提醒视图
         href: api/user-reminderview.md
-      - name: 获取闲/忙安排
+      - name: 获取忙/闲日程安排
         href: api/calendar-getschedule.md
       - name: 查找会议室列表
         href: api/user-findroomlists.md
@@ -142,7 +142,7 @@ items:
         href: api/drive-get.md
       - name: 列出子项
         href: api/driveitem-list-children.md
-    - name: Groups
+    - name: 组
       href: resources/group.md
       items:
       - name: 列出联接的团队
@@ -251,10 +251,10 @@ items:
         href: api/user-get-settings.md
       - name: 更新设置
         href: api/user-update-settings.md
-  - name: Groups
+  - name: 组
     href: resources/groups-overview.md
     items:
-    - name: Group
+    - name: 组
       href: resources/group.md
       items:
       - name: 添加收藏夹
@@ -473,7 +473,7 @@ items:
   - name: 日历
     href: resources/calendar.md
     items:
-    - name: Event
+    - name: 事件
       href: resources/event.md
       items:
       - name: 列出事件
@@ -581,9 +581,9 @@ items:
         href: api/calendar-list-events.md
       - name: 创建事件
         href: api/calendar-post-events.md
-      - name: 找到的会议时间
+      - name: 查找会议时间
         href: api/user-findmeetingtimes.md
-      - name: 获取闲/忙安排
+      - name: 获取忙/闲日程安排
         href: api/calendar-getschedule.md
       - name: 查找会议室列表
         href: api/user-findroomlists.md
@@ -651,7 +651,7 @@ items:
     - name: 调用
       href: resources/call.md
       items:
-      - name: 创建
+      - name: Create
         href: api/application-post-calls.md
       - name: 获取呼叫
         href: api/call-get.md
@@ -747,7 +747,7 @@ items:
           href: api/projectrome-put-historyitem.md
         - name: 删除历史记录项
           href: api/projectrome-delete-historyitem.md
-    - name: Notifications
+    - name: 通知
       href: resources/notifications-api-overview.md
       items:
       - name: Notification
@@ -763,7 +763,7 @@ items:
       items:
       - name: 列表
         href: api/bookingbusiness-list.md
-      - name: 创建
+      - name: Create
         href: api/bookingbusiness-post-bookingbusinesses.md
       - name: 获取
         href: api/bookingbusiness-get.md
@@ -804,7 +804,7 @@ items:
       items:
       - name: 列表
         href: api/bookingbusiness-list-customers.md
-      - name: 创建
+      - name: Create
         href: api/bookingbusiness-post-customers.md
       - name: 获取
         href: api/bookingcustomer-get.md
@@ -817,7 +817,7 @@ items:
       items:
       - name: 列表
         href: api/bookingbusiness-list-services.md
-      - name: 创建
+      - name: Create
         href: api/bookingbusiness-post-services.md
       - name: 获取
         href: api/bookingservice-get.md
@@ -830,7 +830,7 @@ items:
       items:
       - name: 列表
         href: api/bookingbusiness-list-staffmembers.md
-      - name: 创建
+      - name: Create
         href: api/bookingbusiness-post-staffmembers.md
       - name: 获取
         href: api/bookingstaffmember-get.md
@@ -851,7 +851,7 @@ items:
           href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
         - name: 获取
           href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md
         - name: Delete
           href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md
@@ -868,7 +868,7 @@ items:
           href: api/intune-apps-androidforworkapp-list.md
         - name: 获取
           href: api/intune-apps-androidforworkapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidforworkapp-create.md
         - name: Delete
           href: api/intune-apps-androidforworkapp-delete.md
@@ -881,7 +881,7 @@ items:
           href: api/intune-androidforwork-androidforworkappconfigurationschema-list.md
         - name: 获取
           href: api/intune-androidforwork-androidforworkappconfigurationschema-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-androidforwork-androidforworkappconfigurationschema-create.md
         - name: Delete
           href: api/intune-androidforwork-androidforworkappconfigurationschema-delete.md
@@ -900,7 +900,7 @@ items:
           href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
         - name: 获取
           href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-androidforwork-androidforworkenrollmentprofile-create.md
         - name: Delete
           href: api/intune-androidforwork-androidforworkenrollmentprofile-delete.md
@@ -919,7 +919,7 @@ items:
           href: api/intune-apps-androidforworkmobileappconfiguration-list.md
         - name: 获取
           href: api/intune-apps-androidforworkmobileappconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidforworkmobileappconfiguration-create.md
         - name: Delete
           href: api/intune-apps-androidforworkmobileappconfiguration-delete.md
@@ -949,7 +949,7 @@ items:
           href: api/intune-apps-androidlobapp-list.md
         - name: 获取
           href: api/intune-apps-androidlobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidlobapp-create.md
         - name: Delete
           href: api/intune-apps-androidlobapp-delete.md
@@ -985,7 +985,7 @@ items:
           href: api/intune-apps-androidmanagedstoreapp-list.md
         - name: 获取
           href: api/intune-apps-androidmanagedstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidmanagedstoreapp-create.md
         - name: Delete
           href: api/intune-apps-androidmanagedstoreapp-delete.md
@@ -998,7 +998,7 @@ items:
           href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
         - name: 获取
           href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidmanagedstoreappconfiguration-create.md
         - name: Delete
           href: api/intune-apps-androidmanagedstoreappconfiguration-delete.md
@@ -1011,7 +1011,7 @@ items:
           href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
         - name: 获取
           href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-create.md
         - name: Delete
           href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-delete.md
@@ -1034,7 +1034,7 @@ items:
           href: api/intune-apps-androidstoreapp-list.md
         - name: 获取
           href: api/intune-apps-androidstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-androidstoreapp-create.md
         - name: Delete
           href: api/intune-apps-androidstoreapp-delete.md
@@ -1051,7 +1051,7 @@ items:
           href: api/intune-books-deviceinstallstate-list.md
         - name: 获取
           href: api/intune-books-deviceinstallstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-deviceinstallstate-create.md
         - name: Delete
           href: api/intune-books-deviceinstallstate-delete.md
@@ -1071,7 +1071,7 @@ items:
           href: api/intune-apps-enterprisecodesigningcertificate-list.md
         - name: 获取
           href: api/intune-apps-enterprisecodesigningcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-enterprisecodesigningcertificate-create.md
         - name: Delete
           href: api/intune-apps-enterprisecodesigningcertificate-delete.md
@@ -1092,7 +1092,7 @@ items:
           href: api/intune-apps-ioslobapp-list.md
         - name: 获取
           href: api/intune-apps-ioslobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-ioslobapp-create.md
         - name: Delete
           href: api/intune-apps-ioslobapp-delete.md
@@ -1107,7 +1107,7 @@ items:
           href: api/intune-apps-ioslobappprovisioningconfiguration-list.md
         - name: 获取
           href: api/intune-apps-ioslobappprovisioningconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-ioslobappprovisioningconfiguration-create.md
         - name: Delete
           href: api/intune-apps-ioslobappprovisioningconfiguration-delete.md
@@ -1122,7 +1122,7 @@ items:
           href: api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md
         - name: 获取
           href: api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md
         - name: Delete
           href: api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md
@@ -1137,7 +1137,7 @@ items:
           href: api/intune-apps-iosmobileappconfiguration-list.md
         - name: 获取
           href: api/intune-apps-iosmobileappconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosmobileappconfiguration-create.md
         - name: Delete
           href: api/intune-apps-iosmobileappconfiguration-delete.md
@@ -1150,7 +1150,7 @@ items:
           href: api/intune-apps-iosstoreapp-list.md
         - name: 获取
           href: api/intune-apps-iosstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosstoreapp-create.md
         - name: Delete
           href: api/intune-apps-iosstoreapp-delete.md
@@ -1165,7 +1165,7 @@ items:
           href: api/intune-apps-iosvppapp-list.md
         - name: 获取
           href: api/intune-apps-iosvppapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosvppapp-create.md
         - name: Delete
           href: api/intune-apps-iosvppapp-delete.md
@@ -1184,7 +1184,7 @@ items:
           href: api/intune-apps-iosvppappassigneddevicelicense-list.md
         - name: 获取
           href: api/intune-apps-iosvppappassigneddevicelicense-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosvppappassigneddevicelicense-create.md
         - name: Delete
           href: api/intune-apps-iosvppappassigneddevicelicense-delete.md
@@ -1197,7 +1197,7 @@ items:
           href: api/intune-apps-iosvppappassignedlicense-list.md
         - name: 获取
           href: api/intune-apps-iosvppappassignedlicense-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosvppappassignedlicense-create.md
         - name: Delete
           href: api/intune-apps-iosvppappassignedlicense-delete.md
@@ -1210,7 +1210,7 @@ items:
           href: api/intune-apps-iosvppappassigneduserlicense-list.md
         - name: 获取
           href: api/intune-apps-iosvppappassigneduserlicense-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-iosvppappassigneduserlicense-create.md
         - name: Delete
           href: api/intune-apps-iosvppappassigneduserlicense-delete.md
@@ -1227,7 +1227,7 @@ items:
           href: api/intune-books-iosvppebook-list.md
         - name: 获取
           href: api/intune-books-iosvppebook-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-iosvppebook-create.md
         - name: Delete
           href: api/intune-books-iosvppebook-delete.md
@@ -1240,7 +1240,7 @@ items:
           href: api/intune-books-iosvppebookassignment-list.md
         - name: 获取
           href: api/intune-books-iosvppebookassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-iosvppebookassignment-create.md
         - name: Delete
           href: api/intune-books-iosvppebookassignment-delete.md
@@ -1253,7 +1253,7 @@ items:
           href: api/intune-apps-macoslobapp-list.md
         - name: 获取
           href: api/intune-apps-macoslobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-macoslobapp-create.md
         - name: Delete
           href: api/intune-apps-macoslobapp-delete.md
@@ -1270,7 +1270,7 @@ items:
           href: api/intune-apps-macosofficesuiteapp-list.md
         - name: 获取
           href: api/intune-apps-macosofficesuiteapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-macosofficesuiteapp-create.md
         - name: Delete
           href: api/intune-apps-macosofficesuiteapp-delete.md
@@ -1283,7 +1283,7 @@ items:
           href: api/intune-apps-managedandroidlobapp-list.md
         - name: 获取
           href: api/intune-apps-managedandroidlobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-managedandroidlobapp-create.md
         - name: Delete
           href: api/intune-apps-managedandroidlobapp-delete.md
@@ -1296,7 +1296,7 @@ items:
           href: api/intune-apps-managedandroidstoreapp-list.md
         - name: 获取
           href: api/intune-apps-managedandroidstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-managedandroidstoreapp-create.md
         - name: Delete
           href: api/intune-apps-managedandroidstoreapp-delete.md
@@ -1327,7 +1327,7 @@ items:
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
         - name: 获取
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-create.md
         - name: Delete
           href: api/intune-apps-manageddevicemobileappconfigurationassignment-delete.md
@@ -1340,7 +1340,7 @@ items:
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
         - name: 获取
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-create.md
         - name: Delete
           href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete.md
@@ -1360,7 +1360,7 @@ items:
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
         - name: 获取
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-create.md
         - name: Delete
           href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-delete.md
@@ -1389,7 +1389,7 @@ items:
           href: api/intune-books-managedebookassignment-list.md
         - name: 获取
           href: api/intune-books-managedebookassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-managedebookassignment-create.md
         - name: Delete
           href: api/intune-books-managedebookassignment-delete.md
@@ -1402,7 +1402,7 @@ items:
           href: api/intune-books-managedebookcategory-list.md
         - name: 获取
           href: api/intune-books-managedebookcategory-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-managedebookcategory-create.md
         - name: Delete
           href: api/intune-books-managedebookcategory-delete.md
@@ -1415,7 +1415,7 @@ items:
           href: api/intune-apps-managedioslobapp-list.md
         - name: 获取
           href: api/intune-apps-managedioslobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-managedioslobapp-create.md
         - name: Delete
           href: api/intune-apps-managedioslobapp-delete.md
@@ -1428,7 +1428,7 @@ items:
           href: api/intune-apps-managediosstoreapp-list.md
         - name: 获取
           href: api/intune-apps-managediosstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-managediosstoreapp-create.md
         - name: Delete
           href: api/intune-apps-managediosstoreapp-delete.md
@@ -1450,7 +1450,7 @@ items:
           href: api/intune-apps-microsoftstoreforbusinessapp-list.md
         - name: 获取
           href: api/intune-apps-microsoftstoreforbusinessapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-microsoftstoreforbusinessapp-create.md
         - name: Delete
           href: api/intune-apps-microsoftstoreforbusinessapp-delete.md
@@ -1465,7 +1465,7 @@ items:
           href: api/intune-apps-microsoftstoreforbusinesscontainedapp-list.md
         - name: 获取
           href: api/intune-apps-microsoftstoreforbusinesscontainedapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-microsoftstoreforbusinesscontainedapp-create.md
         - name: Delete
           href: api/intune-apps-microsoftstoreforbusinesscontainedapp-delete.md
@@ -1491,7 +1491,7 @@ items:
           href: api/intune-apps-mobileappassignment-list.md
         - name: 获取
           href: api/intune-apps-mobileappassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappassignment-create.md
         - name: Delete
           href: api/intune-apps-mobileappassignment-delete.md
@@ -1506,7 +1506,7 @@ items:
           href: api/intune-apps-mobileappcategory-list.md
         - name: 获取
           href: api/intune-apps-mobileappcategory-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappcategory-create.md
         - name: Delete
           href: api/intune-apps-mobileappcategory-delete.md
@@ -1519,7 +1519,7 @@ items:
           href: api/intune-apps-mobileappcontent-list.md
         - name: 获取
           href: api/intune-apps-mobileappcontent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappcontent-create.md
         - name: Delete
           href: api/intune-apps-mobileappcontent-delete.md
@@ -1532,7 +1532,7 @@ items:
           href: api/intune-apps-mobileappcontentfile-list.md
         - name: 获取
           href: api/intune-apps-mobileappcontentfile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappcontentfile-create.md
         - name: Delete
           href: api/intune-apps-mobileappcontentfile-delete.md
@@ -1551,7 +1551,7 @@ items:
           href: api/intune-apps-mobileappinstallstatus-list.md
         - name: 获取
           href: api/intune-apps-mobileappinstallstatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappinstallstatus-create.md
         - name: Delete
           href: api/intune-apps-mobileappinstallstatus-delete.md
@@ -1571,7 +1571,7 @@ items:
           href: api/intune-apps-mobileappprovisioningconfiggroupassignment-list.md
         - name: 获取
           href: api/intune-apps-mobileappprovisioningconfiggroupassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-mobileappprovisioningconfiggroupassignment-create.md
         - name: Delete
           href: api/intune-apps-mobileappprovisioningconfiggroupassignment-delete.md
@@ -1602,7 +1602,7 @@ items:
           href: api/intune-apps-officesuiteapp-list.md
         - name: 获取
           href: api/intune-apps-officesuiteapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-officesuiteapp-create.md
         - name: Delete
           href: api/intune-apps-officesuiteapp-delete.md
@@ -1628,7 +1628,7 @@ items:
           href: api/intune-apps-userappinstallstatus-list.md
         - name: 获取
           href: api/intune-apps-userappinstallstatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-userappinstallstatus-create.md
         - name: Delete
           href: api/intune-apps-userappinstallstatus-delete.md
@@ -1641,7 +1641,7 @@ items:
           href: api/intune-books-userinstallstatesummary-list.md
         - name: 获取
           href: api/intune-books-userinstallstatesummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-books-userinstallstatesummary-create.md
         - name: Delete
           href: api/intune-books-userinstallstatesummary-delete.md
@@ -1656,7 +1656,7 @@ items:
           href: api/intune-apps-webapp-list.md
         - name: 获取
           href: api/intune-apps-webapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-webapp-create.md
         - name: Delete
           href: api/intune-apps-webapp-delete.md
@@ -1669,7 +1669,7 @@ items:
           href: api/intune-apps-win32lobapp-list.md
         - name: 获取
           href: api/intune-apps-win32lobapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-win32lobapp-create.md
         - name: Delete
           href: api/intune-apps-win32lobapp-delete.md
@@ -1708,7 +1708,7 @@ items:
           href: api/intune-apps-windowsappx-list.md
         - name: 获取
           href: api/intune-apps-windowsappx-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsappx-create.md
         - name: Delete
           href: api/intune-apps-windowsappx-delete.md
@@ -1729,7 +1729,7 @@ items:
           href: api/intune-apps-windowsmobilemsi-list.md
         - name: 获取
           href: api/intune-apps-windowsmobilemsi-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsmobilemsi-create.md
         - name: Delete
           href: api/intune-apps-windowsmobilemsi-delete.md
@@ -1744,7 +1744,7 @@ items:
           href: api/intune-apps-windowsphone81appx-list.md
         - name: 获取
           href: api/intune-apps-windowsphone81appx-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsphone81appx-create.md
         - name: Delete
           href: api/intune-apps-windowsphone81appx-delete.md
@@ -1757,7 +1757,7 @@ items:
           href: api/intune-apps-windowsphone81appxbundle-list.md
         - name: 获取
           href: api/intune-apps-windowsphone81appxbundle-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsphone81appxbundle-create.md
         - name: Delete
           href: api/intune-apps-windowsphone81appxbundle-delete.md
@@ -1770,7 +1770,7 @@ items:
           href: api/intune-apps-windowsphone81storeapp-list.md
         - name: 获取
           href: api/intune-apps-windowsphone81storeapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsphone81storeapp-create.md
         - name: Delete
           href: api/intune-apps-windowsphone81storeapp-delete.md
@@ -1783,7 +1783,7 @@ items:
           href: api/intune-apps-windowsphonexap-list.md
         - name: 获取
           href: api/intune-apps-windowsphonexap-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsphonexap-create.md
         - name: Delete
           href: api/intune-apps-windowsphonexap-delete.md
@@ -1796,7 +1796,7 @@ items:
           href: api/intune-apps-windowsstoreapp-list.md
         - name: 获取
           href: api/intune-apps-windowsstoreapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsstoreapp-create.md
         - name: Delete
           href: api/intune-apps-windowsstoreapp-delete.md
@@ -1809,7 +1809,7 @@ items:
           href: api/intune-apps-windowsuniversalappx-list.md
         - name: 获取
           href: api/intune-apps-windowsuniversalappx-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsuniversalappx-create.md
         - name: Delete
           href: api/intune-apps-windowsuniversalappx-delete.md
@@ -1824,7 +1824,7 @@ items:
           href: api/intune-apps-windowsuniversalappxcontainedapp-list.md
         - name: 获取
           href: api/intune-apps-windowsuniversalappxcontainedapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-apps-windowsuniversalappxcontainedapp-create.md
         - name: Delete
           href: api/intune-apps-windowsuniversalappxcontainedapp-delete.md
@@ -1840,7 +1840,7 @@ items:
           href: api/intune-companyterms-termsandconditions-list.md
         - name: 获取
           href: api/intune-companyterms-termsandconditions-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-companyterms-termsandconditions-create.md
         - name: Delete
           href: api/intune-companyterms-termsandconditions-delete.md
@@ -1853,7 +1853,7 @@ items:
           href: api/intune-companyterms-termsandconditionsacceptancestatus-list.md
         - name: 获取
           href: api/intune-companyterms-termsandconditionsacceptancestatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-companyterms-termsandconditionsacceptancestatus-create.md
         - name: Delete
           href: api/intune-companyterms-termsandconditionsacceptancestatus-delete.md
@@ -1866,7 +1866,7 @@ items:
           href: api/intune-companyterms-termsandconditionsassignment-list.md
         - name: 获取
           href: api/intune-companyterms-termsandconditionsassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-companyterms-termsandconditionsassignment-create.md
         - name: Delete
           href: api/intune-companyterms-termsandconditionsassignment-delete.md
@@ -1879,7 +1879,7 @@ items:
           href: api/intune-companyterms-termsandconditionsgroupassignment-list.md
         - name: 获取
           href: api/intune-companyterms-termsandconditionsgroupassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-companyterms-termsandconditionsgroupassignment-create.md
         - name: Delete
           href: api/intune-companyterms-termsandconditionsgroupassignment-delete.md
@@ -1895,7 +1895,7 @@ items:
           href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md
@@ -1908,7 +1908,7 @@ items:
           href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-delete.md
@@ -1928,7 +1928,7 @@ items:
           href: api/intune-enrollment-depenrollmentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-depenrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-depenrollmentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-depenrollmentprofile-delete.md
@@ -1941,7 +1941,7 @@ items:
           href: api/intune-enrollment-depiosenrollmentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-depiosenrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-depiosenrollmentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-depiosenrollmentprofile-delete.md
@@ -1954,7 +1954,7 @@ items:
           href: api/intune-enrollment-depmacosenrollmentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-depmacosenrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-depmacosenrollmentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-depmacosenrollmentprofile-delete.md
@@ -1967,7 +1967,7 @@ items:
           href: api/intune-enrollment-deponboardingsetting-list.md
         - name: 获取
           href: api/intune-enrollment-deponboardingsetting-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-deponboardingsetting-create.md
         - name: Delete
           href: api/intune-enrollment-deponboardingsetting-delete.md
@@ -1992,7 +1992,7 @@ items:
           href: api/intune-enrollment-enrollmentprofile-list.md
         - name: 获取
           href: api/intune-enrollment-enrollmentprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-enrollmentprofile-create.md
         - name: Delete
           href: api/intune-enrollment-enrollmentprofile-delete.md
@@ -2011,7 +2011,7 @@ items:
           href: api/intune-enrollment-importedappledeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedappledeviceidentity-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importedappledeviceidentity-create.md
         - name: Delete
           href: api/intune-enrollment-importedappledeviceidentity-delete.md
@@ -2026,7 +2026,7 @@ items:
           href: api/intune-enrollment-importedappledeviceidentityresult-list.md
         - name: 获取
           href: api/intune-enrollment-importedappledeviceidentityresult-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importedappledeviceidentityresult-create.md
         - name: Delete
           href: api/intune-enrollment-importedappledeviceidentityresult-delete.md
@@ -2039,7 +2039,7 @@ items:
           href: api/intune-enrollment-importeddeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importeddeviceidentity-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importeddeviceidentity-create.md
         - name: Delete
           href: api/intune-enrollment-importeddeviceidentity-delete.md
@@ -2054,7 +2054,7 @@ items:
           href: api/intune-enrollment-importeddeviceidentityresult-list.md
         - name: 获取
           href: api/intune-enrollment-importeddeviceidentityresult-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importeddeviceidentityresult-create.md
         - name: Delete
           href: api/intune-enrollment-importeddeviceidentityresult-delete.md
@@ -2069,7 +2069,7 @@ items:
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
         - name: Delete
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
@@ -2086,7 +2086,7 @@ items:
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
         - name: Delete
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
@@ -2116,7 +2116,7 @@ items:
           href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-list.md
         - name: 获取
           href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-create.md
         - name: Delete
           href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
@@ -2129,7 +2129,7 @@ items:
           href: api/intune-enrollment-windowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-windowsautopilotdeviceidentity-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-enrollment-windowsautopilotdeviceidentity-create.md
         - name: Delete
           href: api/intune-enrollment-windowsautopilotdeviceidentity-delete.md
@@ -2172,7 +2172,7 @@ items:
           href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md
         - name: 获取
           href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-create.md
         - name: Delete
           href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-delete.md
@@ -2201,7 +2201,7 @@ items:
           href: api/intune-deviceconfig-androidcompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidcompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidcompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidcompliancepolicy-delete.md
@@ -2214,7 +2214,7 @@ items:
           href: api/intune-deviceconfig-androidcustomconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidcustomconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidcustomconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidcustomconfiguration-delete.md
@@ -2233,7 +2233,7 @@ items:
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
@@ -2250,7 +2250,7 @@ items:
           href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-delete.md
@@ -2267,7 +2267,7 @@ items:
           href: api/intune-deviceconfig-androideasemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androideasemailprofileconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androideasemailprofileconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androideasemailprofileconfiguration-delete.md
@@ -2280,7 +2280,7 @@ items:
           href: api/intune-deviceconfig-androidenterprisewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidenterprisewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidenterprisewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidenterprisewificonfiguration-delete.md
@@ -2300,7 +2300,7 @@ items:
           href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkcompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkcompliancepolicy-delete.md
@@ -2315,7 +2315,7 @@ items:
           href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkcustomconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkcustomconfiguration-delete.md
@@ -2337,7 +2337,7 @@ items:
           href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-delete.md
@@ -2350,7 +2350,7 @@ items:
           href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-delete.md
@@ -2363,7 +2363,7 @@ items:
           href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-delete.md
@@ -2376,7 +2376,7 @@ items:
           href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-delete.md
@@ -2389,7 +2389,7 @@ items:
           href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-delete.md
@@ -2402,7 +2402,7 @@ items:
           href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-delete.md
@@ -2417,7 +2417,7 @@ items:
           href: api/intune-deviceconfig-androidforworkscepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkscepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkscepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkscepcertificateprofile-delete.md
@@ -2430,7 +2430,7 @@ items:
           href: api/intune-deviceconfig-androidforworktrustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworktrustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworktrustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworktrustedrootcertificate-delete.md
@@ -2443,7 +2443,7 @@ items:
           href: api/intune-deviceconfig-androidforworkvpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkvpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkvpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkvpnconfiguration-delete.md
@@ -2458,7 +2458,7 @@ items:
           href: api/intune-deviceconfig-androidforworkwificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidforworkwificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidforworkwificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidforworkwificonfiguration-delete.md
@@ -2471,7 +2471,7 @@ items:
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-delete.md
@@ -2484,7 +2484,7 @@ items:
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-delete.md
@@ -2497,7 +2497,7 @@ items:
           href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidpkcscertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
@@ -2512,7 +2512,7 @@ items:
           href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidscepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidscepcertificateprofile-delete.md
@@ -2525,7 +2525,7 @@ items:
           href: api/intune-deviceconfig-androidtrustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidtrustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidtrustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidtrustedrootcertificate-delete.md
@@ -2540,7 +2540,7 @@ items:
           href: api/intune-deviceconfig-androidvpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidvpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidvpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidvpnconfiguration-delete.md
@@ -2555,7 +2555,7 @@ items:
           href: api/intune-deviceconfig-androidwificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidwificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidwificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidwificonfiguration-delete.md
@@ -2577,7 +2577,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md
@@ -2592,7 +2592,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md
@@ -2614,7 +2614,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-delete.md
@@ -2627,7 +2627,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md
@@ -2640,7 +2640,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-delete.md
@@ -2653,7 +2653,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-delete.md
@@ -2666,7 +2666,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-delete.md
@@ -2681,7 +2681,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-delete.md
@@ -2694,7 +2694,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-delete.md
@@ -2707,7 +2707,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-delete.md
@@ -2722,7 +2722,7 @@ items:
           href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-androidworkprofilewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
@@ -2781,7 +2781,7 @@ items:
           href: api/intune-deviceconfig-carttoclassassociation-list.md
         - name: 获取
           href: api/intune-deviceconfig-carttoclassassociation-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-carttoclassassociation-create.md
         - name: Delete
           href: api/intune-deviceconfig-carttoclassassociation-delete.md
@@ -2810,7 +2810,7 @@ items:
           href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-defaultdevicecompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-defaultdevicecompliancepolicy-delete.md
@@ -2849,7 +2849,7 @@ items:
           href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecomplianceactionitem-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecomplianceactionitem-delete.md
@@ -2871,7 +2871,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecompliancedevicestatus-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecompliancedevicestatus-delete.md
@@ -2895,7 +2895,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecompliancepolicyassignment-delete.md
@@ -2917,7 +2917,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-delete.md
@@ -2930,7 +2930,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
@@ -2943,7 +2943,7 @@ items:
           href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecompliancesettingstate-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecompliancesettingstate-delete.md
@@ -2963,7 +2963,7 @@ items:
           href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
         - name: 获取
           href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-devicecomplianceuserstatus-create.md
         - name: Delete
           href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
@@ -2991,7 +2991,7 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
         - name: 获取
           href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-deviceconfigurationassignment-create.md
         - name: Delete
           href: api/intune-deviceconfig-deviceconfigurationassignment-delete.md
@@ -3004,7 +3004,7 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md
         - name: 获取
           href: api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-deviceconfigurationconflictsummary-create.md
         - name: Delete
           href: api/intune-deviceconfig-deviceconfigurationconflictsummary-delete.md
@@ -3031,7 +3031,7 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-list.md
         - name: 获取
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-create.md
         - name: Delete
           href: api/intune-deviceconfig-deviceconfigurationdevicestatus-delete.md
@@ -3044,7 +3044,7 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
         - name: 获取
           href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-deviceconfigurationgroupassignment-create.md
         - name: Delete
           href: api/intune-deviceconfig-deviceconfigurationgroupassignment-delete.md
@@ -3075,7 +3075,7 @@ items:
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
         - name: 获取
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-create.md
         - name: Delete
           href: api/intune-deviceconfig-deviceconfigurationuserstatus-delete.md
@@ -3125,7 +3125,7 @@ items:
           href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-editionupgradeconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-editionupgradeconfiguration-delete.md
@@ -3178,7 +3178,7 @@ items:
           href: api/intune-deviceconfig-ioscompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-ioscompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ioscompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
@@ -3191,7 +3191,7 @@ items:
           href: api/intune-deviceconfig-ioscustomconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-ioscustomconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ioscustomconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
@@ -3204,7 +3204,7 @@ items:
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-delete.md
@@ -3217,7 +3217,7 @@ items:
           href: api/intune-deviceconfig-ioseasemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-ioseasemailprofileconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ioseasemailprofileconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-ioseasemailprofileconfiguration-delete.md
@@ -3232,7 +3232,7 @@ items:
           href: api/intune-deviceconfig-iosedudeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosedudeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosedudeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosedudeviceconfiguration-delete.md
@@ -3245,7 +3245,7 @@ items:
           href: api/intune-deviceconfig-ioseducationdeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-ioseducationdeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ioseducationdeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-ioseducationdeviceconfiguration-delete.md
@@ -3258,7 +3258,7 @@ items:
           href: api/intune-deviceconfig-iosenterprisewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosenterprisewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosenterprisewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md
@@ -3271,7 +3271,7 @@ items:
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-delete.md
@@ -3294,7 +3294,7 @@ items:
           href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-delete.md
@@ -3313,7 +3313,7 @@ items:
           href: api/intune-deviceconfig-iospkcscertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-iospkcscertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iospkcscertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-iospkcscertificateprofile-delete.md
@@ -3326,7 +3326,7 @@ items:
           href: api/intune-deviceconfig-iosscepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosscepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosscepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosscepcertificateprofile-delete.md
@@ -3341,7 +3341,7 @@ items:
           href: api/intune-deviceconfig-iostrustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-iostrustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iostrustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-iostrustedrootcertificate-delete.md
@@ -3354,7 +3354,7 @@ items:
           href: api/intune-deviceconfig-iosupdateconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosupdateconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosupdateconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosupdateconfiguration-delete.md
@@ -3367,7 +3367,7 @@ items:
           href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosupdatedevicestatus-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosupdatedevicestatus-delete.md
@@ -3382,7 +3382,7 @@ items:
           href: api/intune-deviceconfig-iosvpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-iosvpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-iosvpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-iosvpnconfiguration-delete.md
@@ -3401,7 +3401,7 @@ items:
           href: api/intune-deviceconfig-ioswificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-ioswificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ioswificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-ioswificonfiguration-delete.md
@@ -3445,7 +3445,7 @@ items:
           href: api/intune-deviceconfig-macoscompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-macoscompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macoscompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
@@ -3458,7 +3458,7 @@ items:
           href: api/intune-deviceconfig-macoscustomconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macoscustomconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macoscustomconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macoscustomconfiguration-delete.md
@@ -3471,7 +3471,7 @@ items:
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-delete.md
@@ -3484,7 +3484,7 @@ items:
           href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosendpointprotectionconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosendpointprotectionconfiguration-delete.md
@@ -3497,7 +3497,7 @@ items:
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
@@ -3514,7 +3514,7 @@ items:
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md
@@ -3527,7 +3527,7 @@ items:
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
@@ -3540,7 +3540,7 @@ items:
           href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosscepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosscepcertificateprofile-delete.md
@@ -3553,7 +3553,7 @@ items:
           href: api/intune-deviceconfig-macostrustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-macostrustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macostrustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-macostrustedrootcertificate-delete.md
@@ -3566,7 +3566,7 @@ items:
           href: api/intune-deviceconfig-macosvpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macosvpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macosvpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macosvpnconfiguration-delete.md
@@ -3579,7 +3579,7 @@ items:
           href: api/intune-deviceconfig-macoswificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-macoswificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-macoswificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-macoswificonfiguration-delete.md
@@ -3592,7 +3592,7 @@ items:
           href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
         - name: 获取
           href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-manageddevicecertificatestate-create.md
         - name: Delete
           href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
@@ -3629,7 +3629,7 @@ items:
           href: api/intune-deviceconfig-ndesconnector-list.md
         - name: 获取
           href: api/intune-deviceconfig-ndesconnector-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-ndesconnector-create.md
         - name: Delete
           href: api/intune-deviceconfig-ndesconnector-delete.md
@@ -3716,7 +3716,7 @@ items:
           href: api/intune-deviceconfig-restrictedappsviolation-list.md
         - name: 获取
           href: api/intune-deviceconfig-restrictedappsviolation-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-restrictedappsviolation-create.md
         - name: Delete
           href: api/intune-deviceconfig-restrictedappsviolation-delete.md
@@ -3737,7 +3737,7 @@ items:
           href: api/intune-deviceconfig-settingstatedevicesummary-list.md
         - name: 获取
           href: api/intune-deviceconfig-settingstatedevicesummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-settingstatedevicesummary-create.md
         - name: Delete
           href: api/intune-deviceconfig-settingstatedevicesummary-delete.md
@@ -3756,7 +3756,7 @@ items:
           href: api/intune-deviceconfig-sharedpcconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-sharedpcconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-sharedpcconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-sharedpcconfiguration-delete.md
@@ -3786,7 +3786,7 @@ items:
           href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-unsupporteddeviceconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-unsupporteddeviceconfiguration-delete.md
@@ -3805,7 +3805,7 @@ items:
           href: api/intune-raimportcerts-userpfxcertificate-list.md
         - name: 获取
           href: api/intune-raimportcerts-userpfxcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-raimportcerts-userpfxcertificate-create.md
         - name: Delete
           href: api/intune-raimportcerts-userpfxcertificate-delete.md
@@ -3877,7 +3877,7 @@ items:
           href: api/intune-deviceconfig-windows10compliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10compliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10compliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10compliancepolicy-delete.md
@@ -3890,7 +3890,7 @@ items:
           href: api/intune-deviceconfig-windows10customconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10customconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10customconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10customconfiguration-delete.md
@@ -3903,7 +3903,7 @@ items:
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -3918,7 +3918,7 @@ items:
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md
@@ -3931,7 +3931,7 @@ items:
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-delete.md
@@ -3944,7 +3944,7 @@ items:
           href: api/intune-deviceconfig-windows10generalconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10generalconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10generalconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10generalconfiguration-delete.md
@@ -3957,7 +3957,7 @@ items:
           href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-delete.md
@@ -3970,7 +3970,7 @@ items:
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10mobilecompliancepolicy-delete.md
@@ -3983,7 +3983,7 @@ items:
           href: api/intune-deviceconfig-windows10networkboundaryconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10networkboundaryconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10networkboundaryconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10networkboundaryconfiguration-delete.md
@@ -3998,7 +3998,7 @@ items:
           href: api/intune-deviceconfig-windows10pfximportcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10pfximportcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10pfximportcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10pfximportcertificateprofile-delete.md
@@ -4011,7 +4011,7 @@ items:
           href: api/intune-deviceconfig-windows10pkcscertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10pkcscertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10pkcscertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10pkcscertificateprofile-delete.md
@@ -4024,7 +4024,7 @@ items:
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10secureassessmentconfiguration-delete.md
@@ -4037,7 +4037,7 @@ items:
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10teamgeneralconfiguration-delete.md
@@ -4052,7 +4052,7 @@ items:
           href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10vpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows10vpnconfiguration-delete.md
@@ -4078,7 +4078,7 @@ items:
           href: api/intune-deviceconfig-windows81compliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81compliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81compliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81compliancepolicy-delete.md
@@ -4091,7 +4091,7 @@ items:
           href: api/intune-deviceconfig-windows81generalconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81generalconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81generalconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81generalconfiguration-delete.md
@@ -4104,7 +4104,7 @@ items:
           href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81scepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81scepcertificateprofile-delete.md
@@ -4117,7 +4117,7 @@ items:
           href: api/intune-deviceconfig-windows81trustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81trustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81trustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81trustedrootcertificate-delete.md
@@ -4130,7 +4130,7 @@ items:
           href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81vpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81vpnconfiguration-delete.md
@@ -4145,7 +4145,7 @@ items:
           href: api/intune-deviceconfig-windows81wifiimportconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows81wifiimportconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows81wifiimportconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windows81wifiimportconfiguration-delete.md
@@ -4160,7 +4160,7 @@ items:
           href: api/intune-deviceconfig-windowsassignedaccessprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsassignedaccessprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsassignedaccessprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsassignedaccessprofile-delete.md
@@ -4180,7 +4180,7 @@ items:
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
@@ -4197,7 +4197,7 @@ items:
           href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-delete.md
@@ -4222,7 +4222,7 @@ items:
           href: api/intune-deviceconfig-windowskioskconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowskioskconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowskioskconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowskioskconfiguration-delete.md
@@ -4262,7 +4262,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md
@@ -4275,7 +4275,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81customconfiguration-delete.md
@@ -4288,7 +4288,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81generalconfiguration-delete.md
@@ -4301,7 +4301,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-delete.md
@@ -4314,7 +4314,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-delete.md
@@ -4327,7 +4327,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-delete.md
@@ -4340,7 +4340,7 @@ items:
           href: api/intune-deviceconfig-windowsphone81vpnconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphone81vpnconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphone81vpnconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphone81vpnconfiguration-delete.md
@@ -4353,7 +4353,7 @@ items:
           href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-delete.md
@@ -4366,7 +4366,7 @@ items:
           href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-delete.md
@@ -4393,7 +4393,7 @@ items:
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
@@ -4429,7 +4429,7 @@ items:
           href: api/intune-deviceconfig-windowswificonfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowswificonfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowswificonfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowswificonfiguration-delete.md
@@ -4442,7 +4442,7 @@ items:
           href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md
         - name: Delete
           href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
@@ -4471,7 +4471,7 @@ items:
           href: api/intune-auditing-auditevent-list.md
         - name: 获取
           href: api/intune-auditing-auditevent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-auditing-auditevent-create.md
         - name: Delete
           href: api/intune-auditing-auditevent-delete.md
@@ -4496,7 +4496,7 @@ items:
           href: api/intune-fencing-circulargeofencemanagementcondition-list.md
         - name: 获取
           href: api/intune-fencing-circulargeofencemanagementcondition-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-fencing-circulargeofencemanagementcondition-create.md
         - name: Delete
           href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
@@ -4519,7 +4519,7 @@ items:
           href: api/intune-devices-datasharingconsent-list.md
         - name: 获取
           href: api/intune-devices-datasharingconsent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-datasharingconsent-create.md
         - name: Delete
           href: api/intune-devices-datasharingconsent-delete.md
@@ -4538,7 +4538,7 @@ items:
           href: api/intune-devices-detectedapp-list.md
         - name: 获取
           href: api/intune-devices-detectedapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-detectedapp-create.md
         - name: Delete
           href: api/intune-devices-detectedapp-delete.md
@@ -4571,7 +4571,7 @@ items:
           href: api/intune-devices-devicemanagementscript-list.md
         - name: 获取
           href: api/intune-devices-devicemanagementscript-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-devicemanagementscript-create.md
         - name: Delete
           href: api/intune-devices-devicemanagementscript-delete.md
@@ -4586,7 +4586,7 @@ items:
           href: api/intune-devices-devicemanagementscriptassignment-list.md
         - name: 获取
           href: api/intune-devices-devicemanagementscriptassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-devicemanagementscriptassignment-create.md
         - name: Delete
           href: api/intune-devices-devicemanagementscriptassignment-delete.md
@@ -4599,7 +4599,7 @@ items:
           href: api/intune-devices-devicemanagementscriptdevicestate-list.md
         - name: 获取
           href: api/intune-devices-devicemanagementscriptdevicestate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-devicemanagementscriptdevicestate-create.md
         - name: Delete
           href: api/intune-devices-devicemanagementscriptdevicestate-delete.md
@@ -4612,7 +4612,7 @@ items:
           href: api/intune-devices-devicemanagementscriptgroupassignment-list.md
         - name: 获取
           href: api/intune-devices-devicemanagementscriptgroupassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-devicemanagementscriptgroupassignment-create.md
         - name: Delete
           href: api/intune-devices-devicemanagementscriptgroupassignment-delete.md
@@ -4632,7 +4632,7 @@ items:
           href: api/intune-devices-devicemanagementscriptuserstate-list.md
         - name: 获取
           href: api/intune-devices-devicemanagementscriptuserstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-devicemanagementscriptuserstate-create.md
         - name: Delete
           href: api/intune-devices-devicemanagementscriptuserstate-delete.md
@@ -4649,7 +4649,7 @@ items:
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
         - name: 获取
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
         - name: Delete
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
@@ -4670,7 +4670,7 @@ items:
           href: api/intune-esim-embeddedsimactivationcodepool-list.md
         - name: 获取
           href: api/intune-esim-embeddedsimactivationcodepool-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-esim-embeddedsimactivationcodepool-create.md
         - name: Delete
           href: api/intune-esim-embeddedsimactivationcodepool-delete.md
@@ -4685,7 +4685,7 @@ items:
           href: api/intune-esim-embeddedsimactivationcodepoolassignment-list.md
         - name: 获取
           href: api/intune-esim-embeddedsimactivationcodepoolassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-esim-embeddedsimactivationcodepoolassignment-create.md
         - name: Delete
           href: api/intune-esim-embeddedsimactivationcodepoolassignment-delete.md
@@ -4698,7 +4698,7 @@ items:
           href: api/intune-esim-embeddedsimdevicestate-list.md
         - name: 获取
           href: api/intune-esim-embeddedsimdevicestate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-esim-embeddedsimdevicestate-create.md
         - name: Delete
           href: api/intune-esim-embeddedsimdevicestate-delete.md
@@ -4713,7 +4713,7 @@ items:
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
         - name: 获取
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
         - name: Delete
           href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
@@ -4732,7 +4732,7 @@ items:
           href: api/intune-notification-localizednotificationmessage-list.md
         - name: 获取
           href: api/intune-notification-localizednotificationmessage-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-notification-localizednotificationmessage-create.md
         - name: Delete
           href: api/intune-notification-localizednotificationmessage-delete.md
@@ -4845,7 +4845,7 @@ items:
           href: api/intune-fencing-managementconditionstatement-list.md
         - name: 获取
           href: api/intune-fencing-managementconditionstatement-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-fencing-managementconditionstatement-create.md
         - name: Delete
           href: api/intune-fencing-managementconditionstatement-delete.md
@@ -4866,7 +4866,7 @@ items:
           href: api/intune-troubleshooting-mobileappintentandstate-list.md
         - name: 获取
           href: api/intune-troubleshooting-mobileappintentandstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-troubleshooting-mobileappintentandstate-create.md
         - name: Delete
           href: api/intune-troubleshooting-mobileappintentandstate-delete.md
@@ -4893,7 +4893,7 @@ items:
           href: api/intune-troubleshooting-mobileapptroubleshootingevent-list.md
         - name: 获取
           href: api/intune-troubleshooting-mobileapptroubleshootingevent-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-troubleshooting-mobileapptroubleshootingevent-create.md
         - name: Delete
           href: api/intune-troubleshooting-mobileapptroubleshootingevent-delete.md
@@ -4908,7 +4908,7 @@ items:
           href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
         - name: 获取
           href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-fencing-networkipv4configurationmanagementcondition-create.md
         - name: Delete
           href: api/intune-fencing-networkipv4configurationmanagementcondition-delete.md
@@ -4921,7 +4921,7 @@ items:
           href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
         - name: 获取
           href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-fencing-networkipv6configurationmanagementcondition-create.md
         - name: Delete
           href: api/intune-fencing-networkipv6configurationmanagementcondition-delete.md
@@ -4941,7 +4941,7 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 获取
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: Delete
           href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -4964,7 +4964,7 @@ items:
           href: api/intune-devices-remoteactionaudit-list.md
         - name: 获取
           href: api/intune-devices-remoteactionaudit-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-remoteactionaudit-create.md
         - name: Delete
           href: api/intune-devices-remoteactionaudit-delete.md
@@ -4979,7 +4979,7 @@ items:
           href: api/intune-remoteassistance-remoteassistancepartner-list.md
         - name: 获取
           href: api/intune-remoteassistance-remoteassistancepartner-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-remoteassistance-remoteassistancepartner-create.md
         - name: Delete
           href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -5024,7 +5024,7 @@ items:
           href: api/intune-devices-windowsdevicemalwarestate-list.md
         - name: 获取
           href: api/intune-devices-windowsdevicemalwarestate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-windowsdevicemalwarestate-create.md
         - name: Delete
           href: api/intune-devices-windowsdevicemalwarestate-delete.md
@@ -5045,7 +5045,7 @@ items:
           href: api/intune-devices-windowsmalwareinformation-list.md
         - name: 获取
           href: api/intune-devices-windowsmalwareinformation-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-windowsmalwareinformation-create.md
         - name: Delete
           href: api/intune-devices-windowsmalwareinformation-delete.md
@@ -5070,7 +5070,7 @@ items:
           href: api/intune-devices-windowsmanageddevice-list.md
         - name: 获取
           href: api/intune-devices-windowsmanageddevice-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-windowsmanageddevice-create.md
         - name: Delete
           href: api/intune-devices-windowsmanageddevice-delete.md
@@ -5090,7 +5090,7 @@ items:
           href: api/intune-devices-windowsmanagementapphealthstate-list.md
         - name: 获取
           href: api/intune-devices-windowsmanagementapphealthstate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-devices-windowsmanagementapphealthstate-create.md
         - name: Delete
           href: api/intune-devices-windowsmanagementapphealthstate-delete.md
@@ -5120,7 +5120,7 @@ items:
           href: api/intune-mam-androidmanagedappprotection-list.md
         - name: 获取
           href: api/intune-mam-androidmanagedappprotection-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-androidmanagedappprotection-create.md
         - name: Delete
           href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -5133,7 +5133,7 @@ items:
           href: api/intune-mam-androidmanagedappregistration-list.md
         - name: 获取
           href: api/intune-mam-androidmanagedappregistration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-androidmanagedappregistration-create.md
       - name: Android 移动应用标识符
         href: resources/intune-mam-androidmobileappidentifier.md
@@ -5148,7 +5148,7 @@ items:
           href: api/intune-mam-defaultmanagedappprotection-list.md
         - name: 获取
           href: api/intune-mam-defaultmanagedappprotection-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-defaultmanagedappprotection-create.md
         - name: Delete
           href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -5161,7 +5161,7 @@ items:
           href: api/intune-wip-intunebrandingprofile-list.md
         - name: 获取
           href: api/intune-wip-intunebrandingprofile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-wip-intunebrandingprofile-create.md
         - name: Delete
           href: api/intune-wip-intunebrandingprofile-delete.md
@@ -5174,7 +5174,7 @@ items:
           href: api/intune-mam-iosmanagedappprotection-list.md
         - name: 获取
           href: api/intune-mam-iosmanagedappprotection-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-iosmanagedappprotection-create.md
         - name: Delete
           href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -5217,7 +5217,7 @@ items:
           href: api/intune-mam-managedappoperation-list.md
         - name: 获取
           href: api/intune-mam-managedappoperation-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-managedappoperation-create.md
         - name: Delete
           href: api/intune-mam-managedappoperation-delete.md
@@ -5282,7 +5282,7 @@ items:
           href: api/intune-mam-managedmobileapp-list.md
         - name: 获取
           href: api/intune-mam-managedmobileapp-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-managedmobileapp-create.md
         - name: Delete
           href: api/intune-mam-managedmobileapp-delete.md
@@ -5295,7 +5295,7 @@ items:
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
         - name: 获取
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
         - name: Delete
           href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
@@ -5310,7 +5310,7 @@ items:
           href: api/intune-mam-targetedmanagedappconfiguration-list.md
         - name: 获取
           href: api/intune-mam-targetedmanagedappconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-targetedmanagedappconfiguration-create.md
         - name: Delete
           href: api/intune-mam-targetedmanagedappconfiguration-delete.md
@@ -5358,7 +5358,7 @@ items:
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
         - name: 获取
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
         - name: Delete
           href: api/intune-wip-windowsinformationprotectionapplearningsummary-delete.md
@@ -5371,7 +5371,7 @@ items:
           href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
         - name: 获取
           href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
         - name: Delete
           href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
@@ -5392,7 +5392,7 @@ items:
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
         - name: 获取
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
         - name: Delete
           href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete.md
@@ -5407,7 +5407,7 @@ items:
           href: api/intune-mam-windowsinformationprotectionpolicy-list.md
         - name: 获取
           href: api/intune-mam-windowsinformationprotectionpolicy-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-mam-windowsinformationprotectionpolicy-create.md
         - name: Delete
           href: api/intune-mam-windowsinformationprotectionpolicy-delete.md
@@ -5444,7 +5444,7 @@ items:
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
         - name: 获取
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
         - name: Delete
           href: api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
@@ -5459,7 +5459,7 @@ items:
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
         - name: 获取
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
         - name: Delete
           href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
@@ -5472,7 +5472,7 @@ items:
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
         - name: 获取
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
         - name: Delete
           href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
@@ -5491,7 +5491,7 @@ items:
           href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
         - name: 获取
           href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
         - name: Delete
           href: api/intune-onboarding-devicemanagementexchangeconnector-delete.md
@@ -5521,7 +5521,7 @@ items:
           href: api/intune-onboarding-devicemanagementpartner-list.md
         - name: 获取
           href: api/intune-onboarding-devicemanagementpartner-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-devicemanagementpartner-create.md
         - name: Delete
           href: api/intune-onboarding-devicemanagementpartner-delete.md
@@ -5538,7 +5538,7 @@ items:
           href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
         - name: 获取
           href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
         - name: Delete
           href: api/intune-onboarding-enrollmentconfigurationassignment-delete.md
@@ -5557,7 +5557,7 @@ items:
           href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
         - name: 获取
           href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
         - name: Delete
           href: api/intune-onboarding-mobilethreatdefenseconnector-delete.md
@@ -5590,7 +5590,7 @@ items:
           href: api/intune-onboarding-sideloadingkey-list.md
         - name: 获取
           href: api/intune-onboarding-sideloadingkey-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-sideloadingkey-create.md
         - name: Delete
           href: api/intune-onboarding-sideloadingkey-delete.md
@@ -5603,7 +5603,7 @@ items:
           href: api/intune-onboarding-vpptoken-list.md
         - name: 获取
           href: api/intune-onboarding-vpptoken-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-vpptoken-create.md
         - name: Delete
           href: api/intune-onboarding-vpptoken-delete.md
@@ -5632,7 +5632,7 @@ items:
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md
         - name: 获取
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-create.md
         - name: Delete
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-delete.md
@@ -5652,7 +5652,7 @@ items:
           href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
         - name: 获取
           href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-deviceandappmanagementroleassignment-create.md
         - name: Delete
           href: api/intune-rbac-deviceandappmanagementroleassignment-delete.md
@@ -5665,7 +5665,7 @@ items:
           href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
         - name: 获取
           href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-deviceandappmanagementroledefinition-create.md
         - name: Delete
           href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
@@ -5680,7 +5680,7 @@ items:
           href: api/intune-rbac-resourceoperation-list.md
         - name: 获取
           href: api/intune-rbac-resourceoperation-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-resourceoperation-create.md
         - name: Delete
           href: api/intune-rbac-resourceoperation-delete.md
@@ -5693,7 +5693,7 @@ items:
           href: api/intune-rbac-roleassignment-list.md
         - name: 获取
           href: api/intune-rbac-roleassignment-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-roleassignment-create.md
         - name: Delete
           href: api/intune-rbac-roleassignment-delete.md
@@ -5708,7 +5708,7 @@ items:
           href: api/intune-rbac-roledefinition-list.md
         - name: 获取
           href: api/intune-rbac-roledefinition-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-roledefinition-create.md
         - name: Delete
           href: api/intune-rbac-roledefinition-delete.md
@@ -5723,7 +5723,7 @@ items:
           href: api/intune-rbac-rolescopetag-list.md
         - name: 获取
           href: api/intune-rbac-rolescopetag-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-rbac-rolescopetag-create.md
         - name: Delete
           href: api/intune-rbac-rolescopetag-delete.md
@@ -5758,7 +5758,7 @@ items:
           href: api/intune-shared-devicecategory-list.md
         - name: 获取
           href: api/intune-shared-devicecategory-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-shared-devicecategory-create.md
         - name: Delete
           href: api/intune-shared-devicecategory-delete.md
@@ -5829,7 +5829,7 @@ items:
           href: api/intune-shared-user-list.md
         - name: 获取
           href: api/intune-shared-user-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-shared-user-create.md
         - name: Delete
           href: api/intune-shared-user-delete.md
@@ -5852,7 +5852,7 @@ items:
           href: api/intune-shared-windowsdomainjoinconfiguration-list.md
         - name: 获取
           href: api/intune-shared-windowsdomainjoinconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-shared-windowsdomainjoinconfiguration-create.md
         - name: Delete
           href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
@@ -5868,7 +5868,7 @@ items:
           href: api/intune-tem-telecomexpensemanagementpartner-list.md
         - name: 获取
           href: api/intune-tem-telecomexpensemanagementpartner-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-tem-telecomexpensemanagementpartner-create.md
         - name: Delete
           href: api/intune-tem-telecomexpensemanagementpartner-delete.md
@@ -5933,7 +5933,7 @@ items:
         href: api/educationclass-list-assignments.md
       - name: 创建工作分配
         href: api/educationclass-post-assignments.md
-    - name: Users
+    - name: 用户
       href: resources/educationuser.md
       items:
       - name: 列出学校
@@ -6092,7 +6092,7 @@ items:
         href: api/itemactivity-getbyinterval.md
       - name: 预览项
         href: api/driveitem-preview.md
-    - name: Permissions
+    - name: 权限
       href: resources/permission.md
       items:
       - name: 创建共享链接
@@ -6109,7 +6109,7 @@ items:
         href: api/permission-update.md
       - name: 删除权限
         href: api/permission-delete.md
-  - name: 标识和访问
+  - name: 身份和访问控制
     href: resources/azure-ad-overview.md
     items:
     - name: 访问 reviews （英文）
@@ -6150,7 +6150,7 @@ items:
       - name: 程序
         href: resources/program.md
         items:
-        - name: 创建
+        - name: Create
           href: api/program-list.md
         - name: Delete
           href: api/program-list.md
@@ -6163,7 +6163,7 @@ items:
       - name: 程序控件
         href: resources/programcontrol.md
         items:
-        - name: 创建
+        - name: Create
           href: api/programcontrol-create.md
         - name: Delete
           href: api/programcontrol-delete.md
@@ -6253,6 +6253,11 @@ items:
         href: api/contract-get.md
       - name: 列出 contract
         href: api/contract-list.md
+    - name: 数据策略操作
+      href: resources/datapolicyoperation.md
+      items:
+      - name: 获取数据策略操作
+        href: api/datapolicyoperation-get.md
     - name: 已删除的项目
       href: resources/directory.md
       items:
@@ -6266,7 +6271,7 @@ items:
         href: api/directory-deleteditems-restore.md
       - name: 由用户拥有的删除列表项
         href: api/directory-deleteditems-user-owned.md
-    - name: 设备
+    - name: Device
       href: resources/device.md
       items:
       - name: 列出设备
@@ -6438,6 +6443,39 @@ items:
         href: api/organization-get.md
       - name: 更新组织的详细信息
         href: api/organization-update.md
+    - name: 组织联系人
+      href: resources/orgcontact.md
+      items:
+      - name: 联系人
+        href: resources/orgcontact.md
+        items:
+        - name: 组织联系人列表
+          href: api/orgcontact-list.md
+        - name: 获取组织联系人
+          href: api/orgcontact-get.md
+        - name: 更新组织的联系人
+          href: api/orgcontact-update.md
+        - name: 删除组织联系人
+          href: api/orgcontact-delete.md
+      - name: 组
+        href: resources/group.md
+        items:
+        - name: 列出 memberOf
+          href: api/orgcontact-list-memberof.md
+        - name: 获取成员组
+          href: api/orgcontact-getmembergroups.md
+        - name: 检查成员组
+          href: api/orgcontact-checkmembergroups.md
+      - name: 组织层次结构
+        href: resources/directoryobject.md
+        items:
+        - name: 列表的直接下属
+          href: api/orgcontact-list-directreports.md
+      - name: 目录对象
+        href: resources/directoryobject.md
+        items:
+        - name: 获取成员对象
+          href: api/orgcontact-getmemberobjects.md
     - name: 策略
       href: resources/policy.md
       items:
@@ -6551,7 +6589,7 @@ items:
         items:
         - name: 列表
           href: api/governanceroleassignmentrequest-list.md
-        - name: 创建
+        - name: Create
           href: api/governanceroleassignmentrequest-post.md
         - name: 获取
           href: api/governanceroleassignmentrequest-get.md
@@ -6888,43 +6926,10 @@ items:
       items:
       - name: 获取资源
         href: api/resource-get.md
-  - name: 组织联系人
-    href: resources/orgcontact.md
-    items:
-    - name: Contact
-      href: resources/orgcontact.md
-      items:
-      - name: 组织联系人列表
-        href: api/orgcontact-list.md
-      - name: 获取组织联系人
-        href: api/orgcontact-get.md
-      - name: 更新组织的联系人
-        href: api/orgcontact-update.md
-      - name: 删除组织联系人
-        href: api/orgcontact-delete.md
-    - name: Groups
-      href: resources/group.md
-      items:
-      - name: 列出 memberOf
-        href: api/orgcontact-list-memberof.md
-      - name: 获取成员组
-        href: api/orgcontact-getmembergroups.md
-      - name: 检查成员组
-        href: api/orgcontact-checkmembergroups.md
-    - name: 组织层次结构
-      href: resources/directoryobject.md
-      items:
-      - name: 列表的直接下属
-        href: api/orgcontact-list-directreports.md
-    - name: 目录对象
-      href: resources/directoryobject.md
-      items:
-      - name: 获取成员对象
-        href: api/orgcontact-getmemberobjects.md
   - name: 个人联系人
     href: resources/contact.md
     items:
-    - name: Contact
+    - name: 联系人
       href: resources/contact.md
       items:
       - name: 列出联系人
@@ -7223,7 +7228,7 @@ items:
         href: api/securescorecontrolprofiles-update.md
     - name: 错误
       href: resources/security-error-codes.md
-  - name: 站点和列表
+  - name: 网站和列表
     href: resources/sharepoint.md
     items:
     - name: 网站
@@ -7404,7 +7409,7 @@ items:
         href: api/plannerprogresstaskboardtaskformat-get.md
       - name: 更新进度任务板格式
         href: api/plannerprogresstaskboardtaskformat-update.md
-  - name: 团队协作
+  - name: 团队合作
     href: resources/teams-api-overview.md
     items:
     - name: 工作组
@@ -7572,7 +7577,7 @@ items:
       items:
       - name: 列表
         href: api/outlookuser-list-tasks.md
-      - name: 创建
+      - name: Create
         href: api/outlookuser-post-tasks.md
       - name: 获取
         href: api/outlooktask-get.md
@@ -7591,7 +7596,7 @@ items:
       items:
       - name: 列表
         href: api/outlookuser-list-taskfolders.md
-      - name: 创建
+      - name: Create
         href: api/outlookuser-post-taskfolders.md
       - name: 获取
         href: api/outlooktaskfolder-get.md
@@ -7608,7 +7613,7 @@ items:
       items:
       - name: 列表
         href: api/outlookuser-list-taskgroups.md
-      - name: 创建
+      - name: Create
         href: api/outlookuser-post-taskgroups.md
       - name: 获取
         href: api/outlooktaskgroup-get.md
@@ -7820,9 +7825,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: ab3329a853822812c08174e95ce080d712e7e4de
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: c65243ef45c288e7e6a592ad6778a20ad563ec86
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209752"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283715"
