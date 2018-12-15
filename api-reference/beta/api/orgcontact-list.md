@@ -1,12 +1,12 @@
 ---
 title: 列表 orgContacts
 description: 检索为组织的组织联系人列表中。
-ms.openlocfilehash: 3860a4a4235bca9ea1aefe7ef420da5dfdd16c22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046818"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283624"
 ---
 # <a name="list-orgcontacts"></a>列表 orgContacts
 
@@ -32,7 +32,7 @@ GET /contacts
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -68,14 +68,25 @@ Content-length: 222
 {
   "value": [
     {
-      "businessPhones": [
-        "businessPhones-value"
+      "addresses":[
+          {
+            "city": "string",
+            "countryOrRegion": "string",
+            "officeLocation": "string",
+            "postalCode": "string",
+            "state": "string",
+            "street": "string"
+          }
       ],
-      "city": "city-value",
       "companyName": "companyName-value",
-      "country": "country-value",
       "department": "department-value",
-      "displayName": "displayName-value"
+      "displayName": "displayName-value",
+      "phones":[
+          {
+            "type": "string",
+            "number": "string"
+          }
+      ]
     }
   ]
 }

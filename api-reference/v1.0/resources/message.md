@@ -1,12 +1,12 @@
 ---
 title: 邮件资源类型
 description: mailFolder 中的邮件。
-ms.openlocfilehash: 0a68b48ea89fa41db1e77e0597a54f6fb495a438
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 146418a03944eb7bc3c1b537f359887b5515906f
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008339"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283673"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -56,7 +56,7 @@ mailFolder 中的邮件。
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
-|body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
+|body|[itemBody](itembody.md)|邮件的正文。 它可以是以 HTML 或文本格式。 了解有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
 |bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
@@ -64,41 +64,28 @@ mailFolder 中的邮件。
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |标记|[followupFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
-|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须为实际的邮箱使用对应。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须为实际的邮箱使用对应。 查找更多有关[设置从和发件人属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的一条消息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|importance| 邮件的重要性：`Low`、`Normal`、`High`。|
 |inferenceClassification | inferenceClassificationType | 为用户、 基于推测的相关性或重要性-或显式重写的邮件分类。 可能的值为：`focused`或`other`。 |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 在大多数情况下，此值是**从**属性相同。 从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)，或作为[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息发送邮件时，您可以为不同的值设置该属性。 在任何情况下的值必须为实际的邮箱使用对应。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 在大多数情况下，此值是**从**属性相同。 从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)，或作为[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息发送邮件时，您可以为不同的值设置该属性。 在任何情况下的值必须为实际的邮箱使用对应。 查找更多有关[设置从和发件人属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的一条消息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
 |uniqueBody|[itemBody](itembody.md)|对于当前邮件独一无二的邮件正文部分。**uniqueBody** 默认不返回，但可以使用 `?$select=uniqueBody` 查询为给定邮件检索它。可以是 HTML 格式或文本格式。|
 |webLink|String|要在 Outlook Web App 中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook Web App 审阅窗格中显示邮件。<br><br>如果通过 Outlook Web App 登录邮箱，该邮件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br><br>可以从 iFrame 中访问此 URL。|
 
-**从 body 属性中删除脚本**
-
-邮件正文可以是 HTML 或文本格式。如果正文是 HTML 格式，默认情况下，在 REST 响应中返回正文内容之前，将删除嵌入 **body** 属性中的任意具有潜在不安全性的 HTML（例如 JavaScript）。若要获取整个原始 HTML 内容，请包括以下 HTTP 请求标头：
-```
-Prefer: outlook.allow-unsafe-html
-```
-
-**设置 from 和 sender 属性**
-
-撰写邮件时，在大多数情况下，From 和 Sender 属性表示同一个已登录用户，除非其中一个属性已更新，如以下情况中所述：
-
-- 如果 Exchange 管理员已将邮箱的 **sendAs** 权限分配给其他一些用户，可以更改 **from** 属性。为此，管理员可以在 Azure 门户中选择邮箱所有者的**邮箱权限**，也可以使用 Exchange 管理中心或 Windows PowerShell Add-ADPermission cmdlet。然后，可以编程方式将 **from** 属性设置为，对相应邮箱拥有 **sendAs** 权限的用户之一。
-- 如果邮箱所有者已委派一个或多个用户能够从该邮箱发送邮件，则可以更改 **sender** 属性。可以在 Outlook 中委派邮箱所有者。当代理代表邮箱所有者发送邮件时，**sender** 属性设置为代理的帐户，**from** 属性仍保持为邮箱所有者。可以通过编程方式将 **sender** 属性设置为拥有邮箱代理权限的用户。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
