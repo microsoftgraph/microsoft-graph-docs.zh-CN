@@ -1,46 +1,47 @@
 ---
 title: 删除用户
 description: 删除用户。
-ms.openlocfilehash: 365b0385bed62b117cfcd77ad9f5deeaa252de6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 44e0439a95b0104472101b43adfae39b2c553d58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008069"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301174"
 ---
-# <a name="delete-a-user"></a><span data-ttu-id="dad7d-103">删除用户</span><span class="sxs-lookup"><span data-stu-id="dad7d-103">Delete a user</span></span>
+# <a name="delete-a-user"></a><span data-ttu-id="53b9a-103">删除用户</span><span class="sxs-lookup"><span data-stu-id="53b9a-103">Delete a user</span></span>
 
-<span data-ttu-id="dad7d-104">删除用户。</span><span class="sxs-lookup"><span data-stu-id="dad7d-104">Delete user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="dad7d-105">权限</span><span class="sxs-lookup"><span data-stu-id="dad7d-105">Permissions</span></span>
-<span data-ttu-id="dad7d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dad7d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="53b9a-104">删除用户。</span><span class="sxs-lookup"><span data-stu-id="53b9a-104">Delete user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="53b9a-105">权限</span><span class="sxs-lookup"><span data-stu-id="53b9a-105">Permissions</span></span>
+<span data-ttu-id="53b9a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="53b9a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dad7d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dad7d-108">Permission type</span></span>      | <span data-ttu-id="dad7d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dad7d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53b9a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="53b9a-108">Permission type</span></span>      | <span data-ttu-id="53b9a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="53b9a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dad7d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dad7d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dad7d-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dad7d-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="dad7d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dad7d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dad7d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="dad7d-113">Not supported.</span></span>    |
-|<span data-ttu-id="dad7d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dad7d-114">Application</span></span> | <span data-ttu-id="dad7d-115">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dad7d-115">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="53b9a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="53b9a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="53b9a-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="53b9a-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="53b9a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="53b9a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53b9a-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="53b9a-113">Not supported.</span></span>    |
+|<span data-ttu-id="53b9a-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="53b9a-114">Application</span></span> | <span data-ttu-id="53b9a-115">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53b9a-115">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dad7d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dad7d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53b9a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53b9a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dad7d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="dad7d-117">Request headers</span></span>
-| <span data-ttu-id="dad7d-118">标头</span><span class="sxs-lookup"><span data-stu-id="dad7d-118">Header</span></span>       | <span data-ttu-id="dad7d-119">值</span><span class="sxs-lookup"><span data-stu-id="dad7d-119">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="53b9a-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="53b9a-117">Request headers</span></span>
+| <span data-ttu-id="53b9a-118">标头</span><span class="sxs-lookup"><span data-stu-id="53b9a-118">Header</span></span>       | <span data-ttu-id="53b9a-119">值</span><span class="sxs-lookup"><span data-stu-id="53b9a-119">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="dad7d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dad7d-120">Authorization</span></span>  | <span data-ttu-id="dad7d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dad7d-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="53b9a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="53b9a-120">Authorization</span></span>  | <span data-ttu-id="53b9a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="53b9a-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="dad7d-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="dad7d-123">Request body</span></span>
-<span data-ttu-id="dad7d-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dad7d-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="53b9a-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="53b9a-123">Request body</span></span>
+<span data-ttu-id="53b9a-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="53b9a-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dad7d-125">响应</span><span class="sxs-lookup"><span data-stu-id="dad7d-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="53b9a-125">响应</span><span class="sxs-lookup"><span data-stu-id="53b9a-125">Response</span></span>
 
-<span data-ttu-id="dad7d-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="dad7d-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="53b9a-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="53b9a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dad7d-128">示例</span><span class="sxs-lookup"><span data-stu-id="dad7d-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dad7d-129">请求</span><span class="sxs-lookup"><span data-stu-id="dad7d-129">Request</span></span>
-<span data-ttu-id="dad7d-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dad7d-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="53b9a-128">示例</span><span class="sxs-lookup"><span data-stu-id="53b9a-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="53b9a-129">请求</span><span class="sxs-lookup"><span data-stu-id="53b9a-129">Request</span></span>
+<span data-ttu-id="53b9a-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="53b9a-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -48,8 +49,8 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-##### <a name="response"></a><span data-ttu-id="dad7d-131">响应</span><span class="sxs-lookup"><span data-stu-id="dad7d-131">Response</span></span>
-<span data-ttu-id="dad7d-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="dad7d-132">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="53b9a-131">响应</span><span class="sxs-lookup"><span data-stu-id="53b9a-131">Response</span></span>
+<span data-ttu-id="53b9a-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="53b9a-132">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
