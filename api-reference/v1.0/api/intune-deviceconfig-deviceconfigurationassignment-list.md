@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceConfigurationAssignments
 description: 列出 deviceConfigurationAssignment 对象的属性和关系。
-ms.openlocfilehash: 6d8407f17d5ef1cb5ac771fd86bd4365d9e92876
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 531e9bbdbae61b7ef86dad8c558cee9e20a015e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343944"
 ---
 # <a name="list-deviceconfigurationassignments"></a>列出 deviceConfigurationAssignments
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

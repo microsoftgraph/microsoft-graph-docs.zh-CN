@@ -1,12 +1,13 @@
 ---
 title: auditResource 资源类型
 description: 包含审核资源的属性的类。
-ms.openlocfilehash: a3825418c1406bbe9fcce7feeba96217342c735e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c60c76f899fabfbced271e6ec38043337b8b3851
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047072"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339863"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: importDeviceIdentityList 操作
 description: 尚未记录
-ms.openlocfilehash: a99b610e4a781aa6f11aec3517f06646f3b436ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d3f719a9f2b7358acfa413810b6bd091d32f52f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042182"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338162"
 ---
 # <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +49,7 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 |属性|类型|说明|
 |:---|:---|:---|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|尚未记录|
-|overwriteImportedDeviceIdentities|布尔|尚未记录|
+|overwriteImportedDeviceIdentities|Boolean|尚未记录|
 
 
 

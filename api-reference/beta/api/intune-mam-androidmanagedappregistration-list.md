@@ -1,12 +1,13 @@
 ---
 title: 列出 androidManagedAppRegistrations
 description: 列出 androidManagedAppRegistration 对象的属性和关系。
-ms.openlocfilehash: 208faffd512cfa517a999e6f3c043e1bc637a8e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b3e3839ac84133c8213582429e9826cf1af2d249
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337392"
 ---
 # <a name="list-androidmanagedappregistrations"></a>列出 androidManagedAppRegistrations
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

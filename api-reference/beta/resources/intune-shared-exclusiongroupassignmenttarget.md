@@ -1,12 +1,13 @@
 ---
 title: exclusionGroupAssignmentTarget 资源类型
 description: 表示应从赋值中排除的组。
-ms.openlocfilehash: c5d104af3e87d285f0157a6fe6edbc46949f97bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 783231c451668169ba85e8ce1cfecd669b5c0b7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343181"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget 资源类型
 

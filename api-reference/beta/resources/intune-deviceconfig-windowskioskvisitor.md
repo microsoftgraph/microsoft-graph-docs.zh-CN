@@ -1,12 +1,13 @@
 ---
 title: windowsKioskVisitor 资源类型
 description: 用于标识访问者网亭帐户的类
-ms.openlocfilehash: fa57cd379e90683d9a82754d8cd50ffb114036a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c53172a1321a7e40e28745aa6b9d3f9078ff836
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341592"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>windowsKioskVisitor 资源类型
 

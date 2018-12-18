@@ -1,12 +1,13 @@
 ---
 title: 获取通道
 description: 检索的属性和频道的关系。
-ms.openlocfilehash: fd46e3f27c9da53a36107c3ec39c1ac5da1c0753
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 38081fbc23e0f77dc69d1dbb6beba64b8f6d0a82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222420"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324771"
 ---
 # <a name="get-channel"></a>获取通道
 

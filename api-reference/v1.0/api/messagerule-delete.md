@@ -1,12 +1,13 @@
 ---
 title: 删除 messageRule
 description: 删除指定的 messageRule 对象。
-ms.openlocfilehash: 6cd050a09f6c8036540c2515a815c6333726e117
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 5fe208b72ddc28ca3d2ee5d2b0f1c48113e49c64
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008063"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343461"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 
@@ -29,7 +30,7 @@ DELETE /me/mailFolders/inbox/messageRules/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 创建 webApp
 description: 创建新的 webApp 对象。
-ms.openlocfilehash: d113ed2f4d2f20de039f0ef0db9ff5cc1b557acc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75d26e735db898f6175aed3ce5999c3a47e6bcdb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343790"
 ---
 # <a name="create-webapp"></a>创建 webApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: remoteLockActionResult 资源类型
 description: 锁定操作结果，包含用于解锁的 PIN
-ms.openlocfilehash: 39791c2e20d39a8fced01a16c6cf0cea0c0db4cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9cde6019329be909e688bbc1b7a568aa3a9e7781
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324890"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 

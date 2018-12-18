@@ -1,12 +1,13 @@
 ---
 title: 列出名称
 description: 检索 nameditem 对象的列表。
-ms.openlocfilehash: c2683c8f678d66019a4bb143aa993460687bbf2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3f629e1a4073c63e5a6828588432472225b03f4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340843"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -31,7 +32,7 @@ GET /workbook/names
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

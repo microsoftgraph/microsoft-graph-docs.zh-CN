@@ -1,12 +1,13 @@
 ---
 title: updateClassification 枚举类型
 description: 自动更新分类的可能值。
-ms.openlocfilehash: 5ea4bf39489b1fc27a84de1db8f5ad3ac0cec717
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf52ac76cb625d38af4737c0ca87bb47beffd6c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337952"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 

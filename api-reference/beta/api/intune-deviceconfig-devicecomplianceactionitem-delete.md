@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceComplianceActionItem
 description: 删除 deviceComplianceActionItem。
-ms.openlocfilehash: a687e12c09fe980ceda7d5d706e3993b9ce4f3e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5455740172bf77c94db1899edad7bf1e6d8984cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337994"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>删除 deviceComplianceActionItem
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sch
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

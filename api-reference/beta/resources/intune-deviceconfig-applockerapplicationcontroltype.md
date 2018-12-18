@@ -1,12 +1,13 @@
 ---
 title: appLockerApplicationControlType 枚举类型
 description: AppLocker 应用程序控件类型的可能值
-ms.openlocfilehash: 150e3daa6b8deb2d1e17c3ea7caf345ba39446f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0d6190170d6f6695a3303047f9ccb193afd248f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330203"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType 枚举类型
 

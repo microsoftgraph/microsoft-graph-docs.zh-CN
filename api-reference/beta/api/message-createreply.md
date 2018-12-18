@@ -1,12 +1,13 @@
 ---
 title: 'message: createReply'
 description: '创建包含评论或更新任何邮件属性的答复邮件草稿 '
-ms.openlocfilehash: 40bdd5792e9d7a018fc8c7b1aca2d5955a8ef807
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338939"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -37,7 +38,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -45,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |message|[message](../resources/message.md)|若要在答复邮件更新任何可写属性。|

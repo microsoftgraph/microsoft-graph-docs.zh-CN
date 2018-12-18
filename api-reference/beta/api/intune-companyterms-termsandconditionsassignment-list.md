@@ -1,12 +1,13 @@
 ---
 title: 列出 termsAndConditionsAssignments
 description: 列出 termsAndConditionsAssignment 对象的属性和关系。
-ms.openlocfilehash: 79a8533a556cfc78944948403f2cfa533284c748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f32698a82447e18b6086f565e0acf2f07055662
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340234"
 ---
 # <a name="list-termsandconditionsassignments"></a>列出 termsAndConditionsAssignments
 
@@ -37,7 +38,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

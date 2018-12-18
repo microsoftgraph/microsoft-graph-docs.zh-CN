@@ -1,12 +1,13 @@
 ---
 title: 帖子资源类型
 description: 表示 conversationThread 实体中的各个帖子项。
-ms.openlocfilehash: 11ba79153b8d2a972c952fb3d224832fc1fe2eb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dcbf62d5415273ebd805fc930c746282519f386a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340038"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 表示 [conversationThread](conversationthread.md) 实体中的各个帖子项。
@@ -52,7 +53,7 @@ ms.locfileid: "27009751"
 |conversationThreadId|String|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |from|[收件人](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
-|hasAttachments|布尔|指示帖子是否具有至少一个附件。这是默认属性。|
+|hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|

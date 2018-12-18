@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsPhone81AppXBundle
 description: 创建新的 windowsPhone81AppXBundle 对象。
-ms.openlocfilehash: 1df7a11bedf52d8c0ab685e786beb6b961e9f4dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1b4c6f92edc6b6b123667ff44f337081550405b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353093"
 ---
 # <a name="create-windowsphone81appxbundle"></a>创建 windowsPhone81AppXBundle
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: certificateIssuanceStates 枚举类型
 description: 证书颁发状态选项。
-ms.openlocfilehash: 6335b6c6368e655c0a429b4c8fae3219b1bf8dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1076ce6cae423e8eed459c008e74e710e528e48d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328033"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
 

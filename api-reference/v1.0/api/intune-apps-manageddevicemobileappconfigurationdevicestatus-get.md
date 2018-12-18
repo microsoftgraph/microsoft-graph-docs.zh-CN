@@ -1,12 +1,13 @@
 ---
 title: 获取 managedDeviceMobileAppConfigurationDeviceStatus
 description: 读取属性和 managedDeviceMobileAppConfigurationDeviceStatus 对象的关系。
-ms.openlocfilehash: f9e55112a29abc89adfdef2172d86aa9914e3d1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc38c226135a7f0660f4d62fe56fb05371cf35f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342392"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>获取 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

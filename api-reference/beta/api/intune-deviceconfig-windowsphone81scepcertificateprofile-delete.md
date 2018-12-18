@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsPhone81SCEPCertificateProfile
 description: 删除 windowsPhone81SCEPCertificateProfile。
-ms.openlocfilehash: 7c1b4034e674496753ce1bab60d68bcb6a6a50ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e956326bae372edf013097a22a77b19045f541a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324330"
 ---
 # <a name="delete-windowsphone81scepcertificateprofile"></a>删除 windowsPhone81SCEPCertificateProfile
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

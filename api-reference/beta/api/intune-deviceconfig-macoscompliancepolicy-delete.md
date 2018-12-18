@@ -1,12 +1,13 @@
 ---
 title: 删除 macOSCompliancePolicy
 description: 删除 macOSCompliancePolicy。
-ms.openlocfilehash: 576b302d7c259c8c22e5f44c63d1af790996c009
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4d9430f558b27b65974e594a1427282dc0572cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338365"
 ---
 # <a name="delete-macoscompliancepolicy"></a>删除 macOSCompliancePolicy
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

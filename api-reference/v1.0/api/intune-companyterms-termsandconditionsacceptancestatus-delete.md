@@ -1,12 +1,13 @@
 ---
 title: 删除 termsAndConditionsAcceptanceStatus
 description: 删除 termsAndConditionsAcceptanceStatus。
-ms.openlocfilehash: a034cf9574cd8e9894924aa555c999a31408e0b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ceb9d5deeb04e1a48021978e07d7449540bba9c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009399"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343580"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>删除 termsAndConditionsAcceptanceStatus
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

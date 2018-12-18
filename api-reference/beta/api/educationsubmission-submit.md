@@ -1,12 +1,13 @@
 ---
 title: educationSubmission： 提交
-description: . 在提交过程中，所有资源将都复制到 submittedResources 地址散列表元中。 教师将看评分的提交的资源列表。
-ms.openlocfilehash: 566948278ffacb1169842c49aa11c78cba0a5f3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 指示学生完成的工作，并且已准备好分配中分发操作。 仅可由学生执行此操作。
+author: dipakboyed
+ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343328"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission： 提交
 

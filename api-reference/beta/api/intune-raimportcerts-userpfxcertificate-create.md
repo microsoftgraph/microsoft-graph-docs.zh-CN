@@ -1,12 +1,13 @@
 ---
 title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
-ms.openlocfilehash: 3f9ec2d223911191ea9e137bb2d50b5f5d03bb73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f577189dc2e8a420bc4f62d0c7d59510c610ac9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046226"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337735"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -37,7 +38,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +57,7 @@ POST /deviceManagement/userPfxCertificates
 |providerName|字符串|用于加密此 blob 的加密提供程序。|
 |键名|字符串|用于加密 blob （在提供程序） 项的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|填充在加密/解密过程中使用提供程序的方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|二进制数|加密的 PFX blob。|
+|encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|日期/时间时此 PFX 证书已导入。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书时的日期/时间。|

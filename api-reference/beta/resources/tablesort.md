@@ -1,12 +1,13 @@
 ---
 title: TableSort 资源类型
 description: 管理对 Table 对象的排序操作。
-ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049394"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339821"
 ---
 # <a name="tablesort-resource-type"></a>TableSort 资源类型
 

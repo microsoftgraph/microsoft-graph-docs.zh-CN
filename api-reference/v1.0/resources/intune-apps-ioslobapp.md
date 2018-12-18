@@ -1,12 +1,13 @@
 ---
 title: iosLobApp 资源类型
 description: 包含 iOS 业务线应用的属性和继承的属性。
-ms.openlocfilehash: 5a9330a3153819814774f52e3872257f227eaee0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5dfa3ed81ea72a106605803acd5ad51bcab68914
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324323"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp 资源类型
 

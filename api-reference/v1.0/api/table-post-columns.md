@@ -1,12 +1,13 @@
 ---
 title: 创建 TableColumn
 description: 使用此 API 创建新的 TableColumn。
-ms.openlocfilehash: 44a3bc0c3f33af7ffdca3c35778b6aafb5fd626b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 00cef446f6f7c75961bb081975af8f908bacc674
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008042"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339968"
 ---
 # <a name="create-tablecolumn"></a>创建 TableColumn
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

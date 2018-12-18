@@ -1,12 +1,13 @@
 ---
 title: win32LobAppDetection 资源类型
 description: 若要检测 Win32 应用程序的基类
-ms.openlocfilehash: 2ea5eba5b699ff2b86a7e66f218f31a2d9f9c5e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79f477271ed900003bb77a1c9d85e7c46fc010f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324470"
 ---
 # <a name="win32lobappdetection-resource-type"></a>win32LobAppDetection 资源类型
 

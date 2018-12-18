@@ -1,12 +1,13 @@
 ---
 title: vpnTrafficRuleRoutingPolicyType 枚举类型
 description: 指定对于 VPN 通信规则路由的策略。
-ms.openlocfilehash: df51851ef0820f5982a6689421503364e9064c78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044236"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343419"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 枚举类型
 

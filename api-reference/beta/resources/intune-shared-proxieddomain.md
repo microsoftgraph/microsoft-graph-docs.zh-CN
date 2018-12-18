@@ -1,12 +1,13 @@
 ---
 title: proxiedDomain 资源类型
 description: 代理域
-ms.openlocfilehash: 310ccb1420ed450c9e7c53d534181720f9051ff4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d00dc72d7a7156fb90cbeee914c157f446dda81a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341984"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列表 windows10EnrollmentCompletionPageConfigurations
 description: 列出属性和 windows10EnrollmentCompletionPageConfiguration 对象之间的关系。
-ms.openlocfilehash: 0346b16e507d8c312ac82c94781fb962f5ae7392
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a58303efbf97e8f447d0fdd0345d46d559b3c77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338722"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>列表 windows10EnrollmentCompletionPageConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

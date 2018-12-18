@@ -1,12 +1,13 @@
 ---
 title: 呼叫： 答案
 description: 应答传入呼叫。
-ms.openlocfilehash: d2cf1030179d8822fd4620224addbabb95c5482f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042024"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343202"
 ---
 # <a name="call-answer"></a>呼叫： 答案
 
@@ -21,7 +22,7 @@ ms.locfileid: "27042024"
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                        |
 | 委派（个人 Microsoft 帐户） | 不支持                        |
-| 应用程序     | 无                                                        |
+| Application     | 无                                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +32,14 @@ POST /applications/{id}/calls/{id}/answer
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |说明                                                                                                                                    |
+| 参数        | Type                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |字符串                                    |将在其传递回调回调或订阅 ID。 （必需）                                                               |
 |acceptedModalities|String 集合                         |列表接受形式。 可能的值是： `unknown`， `audio`， `video`， `screenSharing`， `videoBasedScreenSharing`， `data`。 （必需） |

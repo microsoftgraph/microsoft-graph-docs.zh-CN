@@ -1,12 +1,13 @@
 ---
 title: 事件： 取消
 description: '此操作允许组织者的会议发送取消邮件和取消事件。 '
-ms.openlocfilehash: bf118b0ead0688967b6275c55fd9b665ffdc1057
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350306"
 ---
 # <a name="event-cancel"></a>事件： 取消
 
@@ -50,7 +51,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -58,7 +59,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |注释|String|有关取消发送给所有与会者的注释。 可选。|
 

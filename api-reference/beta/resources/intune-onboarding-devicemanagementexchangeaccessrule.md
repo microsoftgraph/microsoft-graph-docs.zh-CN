@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeAccessRule 资源类型
 description: Exchange 中的设备访问规则。
-ms.openlocfilehash: e59c81fdfe6cb6a0a7f7f952e6bfc8929bbc2633
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d56365bb30825c48139d746fe048649940b5d55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339590"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 

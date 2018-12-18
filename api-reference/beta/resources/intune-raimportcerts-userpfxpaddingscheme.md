@@ -1,12 +1,13 @@
 ---
 title: userPfxPaddingScheme 枚举类型
 description: 支持加密服务提供商使用的填充方案值。
-ms.openlocfilehash: 4b77519b361c4b86f5c8bea5d5afebe6d5328744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa2c2e67419b92c17a6fdb62df108847964f49a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049050"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337161"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: androidCompliancePolicy 资源类型
 description: 此类包含 Android 的合规性设置。
-ms.openlocfilehash: e8db048758f290fc29b756bece43009a7520ea17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 025b0203c36c204e5df853627e9ba2f8cb53b276
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339688"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 

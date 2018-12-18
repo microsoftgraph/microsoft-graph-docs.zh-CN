@@ -1,12 +1,13 @@
 ---
 title: exportDeviceAndAppManagementData 函数
 description: 尚未记录
-ms.openlocfilehash: fdcf75817d3fae157480b4e232bf4052ac84f64b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ec79080a2e4f6f5da3622dedfedc486231703ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042475"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352218"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 函数
 
@@ -42,7 +43,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

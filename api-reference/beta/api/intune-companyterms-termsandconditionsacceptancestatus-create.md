@@ -1,12 +1,13 @@
 ---
 title: 创建 termsAndConditionsAcceptanceStatus
 description: 创建新的 termsAndConditionsAcceptanceStatus 对象。
-ms.openlocfilehash: 0c23689addf5c1c7a53f2d9f5a7c5f09918fd9f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 857e927d970f91070032dae95e699247aa7b11b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340591"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
 
@@ -37,7 +38,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

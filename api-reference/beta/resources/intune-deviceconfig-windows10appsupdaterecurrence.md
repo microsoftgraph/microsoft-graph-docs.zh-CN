@@ -1,12 +1,13 @@
 ---
 title: windows10AppsUpdateRecurrence 枚举类型
 description: 上 Windows10 定期更新应用程序的可能值。
-ms.openlocfilehash: 608668817ab0bacbe1c2c22bcbd1d7807ed997bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 940c5ad7affc6b46288942b5d307c0f0dbfece7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043806"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324302"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 

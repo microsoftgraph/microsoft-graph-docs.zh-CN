@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceCompliancePolicyDeviceStateSummary
 description: 读取 deviceCompliancePolicyDeviceStateSummary 对象的属性和关系。
-ms.openlocfilehash: 748c812a2dad2444e30456faf9b5be8791f8ee18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4d0c97f94b7dd92f735cdec80d0acf9826ab4ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009911"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330161"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>获取 deviceCompliancePolicyDeviceStateSummary
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

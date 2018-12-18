@@ -1,12 +1,13 @@
 ---
 title: 获取 targetedManagedAppPolicyAssignment
 description: 读取 targetedManagedAppPolicyAssignment 对象的属性和关系。
-ms.openlocfilehash: 1d318a63f731fd3b28f2dd67a0e3c2ce8cff4740
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d70a0897c2d750ac02ccd4fec9a7e7d97882e0e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339541"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>获取 targetedManagedAppPolicyAssignment
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

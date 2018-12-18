@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceManagementPartners
 description: 列出 deviceManagementPartner 对象的属性和关系。
-ms.openlocfilehash: c308dc378fdcd0257b72b4a5948635ec0c1fa257
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a70a05e965becc15633522b9e38f1ea85fcdea7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339807"
 ---
 # <a name="list-devicemanagementpartners"></a>列出 deviceManagementPartners
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

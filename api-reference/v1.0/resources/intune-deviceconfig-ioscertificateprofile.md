@@ -1,12 +1,13 @@
 ---
 title: iosCertificateProfile 资源类型
 description: 设备配置。
-ms.openlocfilehash: af16bc86481a3ea3f5c335235dc99bc07744a0bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1234122c35715243ba9acb11c77ad3399ba3e98b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010406"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343867"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>iosCertificateProfile 资源类型
 

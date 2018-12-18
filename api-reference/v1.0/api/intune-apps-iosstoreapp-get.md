@@ -1,12 +1,13 @@
 ---
 title: 获取 iosStoreApp
 description: 读取 iosStoreApp 对象的属性和关系。
-ms.openlocfilehash: 39508db2bb510d6a708e0c099d7a767513ef83ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dfe25e6b5f57ea8e862d9a9c86d40aa35ec0ca05
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340367"
 ---
 # <a name="get-iosstoreapp"></a>获取 iosStoreApp
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 创建 advancedThreatProtectionOnboardingDeviceSettingState
 description: 创建新的 advancedThreatProtectionOnboardingDeviceSettingState 对象。
-ms.openlocfilehash: 623db746a44792f80255b1f76d3d92fca0ab30cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 221ecef8a9aebdd7a04ec889ff2a04d524ac05d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342950"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>创建 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -37,7 +38,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

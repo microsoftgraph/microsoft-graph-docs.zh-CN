@@ -1,12 +1,13 @@
 ---
 title: 列出 createdObjects
 description: 获取由用户创建的 directory 对象列表。
-ms.openlocfilehash: 030de28bdd402720f2b5c62e9b276a080583f687
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a7067926e5104c08d65a1753fc716787bed52fd5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342103"
 ---
 # <a name="list-createdobjects"></a>列出 createdObjects
 

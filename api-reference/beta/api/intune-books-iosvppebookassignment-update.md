@@ -1,12 +1,13 @@
 ---
 title: 更新 iosVppEBookAssignment
 description: 更新 iosVppEBookAssignment 对象的属性。
-ms.openlocfilehash: 9ab308f73712357daf17442045cc1982c25c8171
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 537c2ef5838dc68881f3de693a6591570219ece4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338148"
 ---
 # <a name="update-iosvppebookassignment"></a>更新 iosVppEBookAssignment
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

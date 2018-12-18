@@ -1,12 +1,13 @@
 ---
 title: 更新 chartaxistitle
 description: 更新 chartaxistitle 对象的属性。
-ms.openlocfilehash: d7cd9e9904efce5a09cdb50304f413a98388f8c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b063f4177d1c9d90e6468965958a6d617c7dc507
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008705"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324820"
 ---
 # <a name="update-chartaxistitle"></a>更新 chartaxistitle
 
@@ -28,7 +29,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: bitLockerRemovableDrivePolicy 资源类型
 description: BitLocker 可移动驱动器策略。
-ms.openlocfilehash: 886ed1912c9c6626a06f1efaef83de5ed1f52a66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 77f4161f7cd7aef61ee257ba665ab19e03ff4dc8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007610"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340010"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy 资源类型
 

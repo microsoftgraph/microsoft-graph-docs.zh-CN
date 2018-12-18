@@ -1,12 +1,13 @@
 ---
 title: 更新 cartToClassAssociation
 description: 更新 cartToClassAssociation 对象的属性。
-ms.openlocfilehash: ecdfdca855920c26e607f24771e41392f74d7095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43b272a5fa2871daebbf7cfeea890ba0b9e204e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343013"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

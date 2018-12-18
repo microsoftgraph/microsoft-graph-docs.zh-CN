@@ -1,12 +1,13 @@
 ---
 title: 获取 windows10TeamGeneralConfiguration
 description: 读取 windows10TeamGeneralConfiguration 对象的属性和关系。
-ms.openlocfilehash: 4102eefba37ab0071415d4b609082046f5b690df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f5bff7f16ff3252e445569c313d47b862e26b50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341662"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>获取 windows10TeamGeneralConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 呼叫： 拒绝
 description: 拒绝传入的呼叫。
-ms.openlocfilehash: 4731d377021871569fcec895af832aeea66b3431
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343454"
 ---
 # <a name="call-reject"></a>呼叫： 拒绝
 
@@ -21,7 +22,7 @@ ms.locfileid: "27045257"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | 无                                                       |
+| Application     | 无                                                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +32,14 @@ POST /applications/{id}/calls/{id}/reject
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | Type    |说明|
 |:---------------|:--------|:----------|
 |原因|字符串|拒绝原因。|
 

@@ -1,12 +1,13 @@
 ---
 title: 呼叫： cancelMediaProcessing
 description: 取消媒体处理所有正在进行的任何 PlayPrompt 或记录的操作。
-ms.openlocfilehash: 27a978a28c94cc161e2d62137c5afc0e9ff085df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328271"
 ---
 # <a name="call-cancelmediaprocessing"></a>呼叫： cancelMediaProcessing
 
@@ -31,16 +32,16 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    | 说明                                                    |
+| 参数      | Type    | 说明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | 布尔 | 指示是否要停止所有操作或当前标志。 |
+| all            | Boolean | 指示是否要停止所有操作或当前标志。 |
 | clientContext  | 字符串  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应

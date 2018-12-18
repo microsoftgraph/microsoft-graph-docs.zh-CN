@@ -1,12 +1,13 @@
 ---
 title: 参与者列表
 description: 检索呼叫中的参与者对象的列表。
-ms.openlocfilehash: a18dc609204712f1b7c7b31150975543277ffa67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339116"
 ---
 # <a name="list-participants"></a>参与者列表
 
@@ -21,7 +22,7 @@ ms.locfileid: "27043294"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| Application     | 无                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +35,7 @@ GET /applications/{id}/calls/{id}/participants
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

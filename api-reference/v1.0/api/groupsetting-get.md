@@ -1,12 +1,13 @@
 ---
 title: 获取组设置
 description: 检索特定组设置对象的属性。
-ms.openlocfilehash: fd225a5bd2c3906e19ae6f9cac2f720163b09210
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 567fc7a38f95f295ca6d896b1aed6c456abbab4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339065"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -38,7 +39,7 @@ GET /groups/{id}/settings/{id}
 > 注意：不支持 $filter。
 
 ## <a name="request-headers"></a>请求标头
-| 名称 | 说明 |
+| Name | 说明 |
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
 

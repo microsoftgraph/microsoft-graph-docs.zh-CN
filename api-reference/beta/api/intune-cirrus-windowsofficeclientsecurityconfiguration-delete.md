@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsOfficeClientSecurityConfiguration
 description: 删除安全策略 windowsOfficeClientSecurityConfiguration。
-ms.openlocfilehash: 17b0d78ccb1f46498d193574bdb1f11609f18a05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 779ded74f3b07934db9fa10f1495bb6f3baf35e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324848"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>删除 windowsOfficeClientSecurityConfiguration
 
@@ -37,7 +38,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
