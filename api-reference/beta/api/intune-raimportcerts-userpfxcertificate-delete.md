@@ -1,12 +1,13 @@
 ---
 title: 删除 userPFXCertificate
 description: 删除 userPFXCertificate。
-ms.openlocfilehash: df1877073c2b17f68ce32870c852676bce588f35
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e25f7993d3fabd5746f8501eb0bc1cd1818911b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041241"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309861"
 ---
 # <a name="delete-userpfxcertificate"></a>删除 userPFXCertificate
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 列表 networkIPv6ConfigurationManagementConditions
 description: 列出属性和 networkIPv6ConfigurationManagementCondition 对象之间的关系。
-ms.openlocfilehash: eb71bd64369a0cf02fff8e0390ba779a106d9684
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad138f098413cc09c06bc25e48d603d43f3d45a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043791"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305612"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>列表 networkIPv6ConfigurationManagementConditions
 
@@ -38,7 +39,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

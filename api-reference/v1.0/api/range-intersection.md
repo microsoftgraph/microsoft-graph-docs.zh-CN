@@ -1,12 +1,13 @@
 ---
 title: Range:Intersection
 description: 获取表示给定范围的矩形交集的 range 对象。
-ms.openlocfilehash: e2480630435a8fdf7195af1d174e6141e5f068c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e35bf93a07930b34e984df4a84d5ed30b907ea15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309686"
 ---
 # <a name="range-intersection"></a>Range:Intersection
 
@@ -29,7 +30,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |anotherRange|string|将用于确定区域交集的 range 对象或区域地址。|
 

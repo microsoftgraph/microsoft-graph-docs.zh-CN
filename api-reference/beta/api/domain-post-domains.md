@@ -1,12 +1,13 @@
 ---
 title: 创建域
 description: 向租户添加域。
-ms.openlocfilehash: d9e6acc2f36e36cfa85bcd35ce13458731f83699
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: eae00bb3da0321d5c06d0fc3e4dc76e3ac410589
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308888"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -34,7 +35,7 @@ ms.locfileid: "27046390"
 POST /domains
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type  | application/json |

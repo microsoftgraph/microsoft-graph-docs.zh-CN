@@ -1,12 +1,13 @@
 ---
 title: Range:LastColumn
 description: .
-ms.openlocfilehash: 535d8de6fbda99fbe175b3d918cab670958e8b20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1bdebd4ab90cd0c975424700b30f865dde474b28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305689"
 ---
 # <a name="range-lastcolumn"></a>Range:LastColumn
 
@@ -31,7 +32,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

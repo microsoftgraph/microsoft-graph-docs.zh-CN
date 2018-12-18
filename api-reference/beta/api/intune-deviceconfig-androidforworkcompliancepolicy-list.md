@@ -1,12 +1,13 @@
 ---
 title: 列表 androidForWorkCompliancePolicies
 description: 列出属性和 androidForWorkCompliancePolicy 对象之间的关系。
-ms.openlocfilehash: 21ce1a7fc8104152d4e1bde8bdff1254f915cfa7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ecc46c6714af0220325879d0ae742a30f506b477
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310267"
 ---
 # <a name="list-androidforworkcompliancepolicies"></a>列表 androidForWorkCompliancePolicies
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

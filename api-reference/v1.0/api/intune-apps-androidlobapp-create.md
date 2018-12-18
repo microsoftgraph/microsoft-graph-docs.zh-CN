@@ -1,12 +1,13 @@
 ---
 title: 创建 androidLobApp
 description: 创建新的 androidLobApp 对象。
-ms.openlocfilehash: 4e914ed0d21b81a3d57085180d484ef86f087e53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c0840b1da223effddd8f22687539e6f7258521b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011069"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309651"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

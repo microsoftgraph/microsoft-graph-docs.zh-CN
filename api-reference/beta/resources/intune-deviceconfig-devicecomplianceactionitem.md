@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem 资源类型
 description: 计划的操作配置
-ms.openlocfilehash: dc84ee71e6544bf089f3470d607772c2242f7278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2df3b7eaf62c5a50e24f7b64a797b7bb91c2264
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308727"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem 资源类型
 

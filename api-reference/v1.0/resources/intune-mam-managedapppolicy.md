@@ -1,12 +1,13 @@
 ---
 title: managedAppPolicy 资源类型
 description: ManagedAppPolicy 资源表示特定于平台的策略的基类型。
-ms.openlocfilehash: 0cd886e594e58dec3486af6d447969f1610c84fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1efe085bc2fc43804049ff4b091e10c458b9a98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010283"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310547"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 

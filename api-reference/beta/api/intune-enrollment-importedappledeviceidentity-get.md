@@ -1,12 +1,13 @@
 ---
 title: 获取 importedAppleDeviceIdentity
 description: 读取属性和 importedAppleDeviceIdentity 对象的关系。
-ms.openlocfilehash: bad76da11545d2fafef6843403077f31d87878a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc4a68086620e8c152703af8da1d604e3a4da7f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310190"
 ---
 # <a name="get-importedappledeviceidentity"></a>获取 importedAppleDeviceIdentity
 
@@ -39,7 +40,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

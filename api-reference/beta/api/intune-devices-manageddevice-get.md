@@ -1,12 +1,13 @@
 ---
 title: 获取 managedDevice
 description: 读取 managedDevice 对象的属性和关系。
-ms.openlocfilehash: 3e07c63fe136d77668cc8e370131875eb782a9e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d7faff117c7df1373fd38ee53149197346654f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307866"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

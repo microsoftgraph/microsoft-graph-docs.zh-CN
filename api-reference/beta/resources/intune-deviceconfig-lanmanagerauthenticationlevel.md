@@ -1,12 +1,13 @@
 ---
 title: lanManagerAuthenticationLevel 枚举类型
 description: LanManagerAuthenticationLevel 的可能值
-ms.openlocfilehash: 9fb8113c4953a0cabcecfbc5303b9f62f685d5ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd5d63f262b9b6e9a27060725e721cb81c495a57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308741"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 枚举类型
 

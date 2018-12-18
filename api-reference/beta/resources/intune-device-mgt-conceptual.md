@@ -1,12 +1,13 @@
 ---
 title: Microsoft Intune 中的设备管理
 description: ''
-ms.openlocfilehash: ba6f7d86b86718f7121b2c4f075b65f13b5e2176
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed7dde45199ae411b84f29e31d00a9ca936f9d04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310029"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 

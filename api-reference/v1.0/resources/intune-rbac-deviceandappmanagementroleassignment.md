@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleAssignment 资源类型
 description: 角色分配资源。 角色分配将角色定义与成员和作用域绑定在一起。 每个角色可以具有一个或多个角色分配。 这适用于自定义和内置角色。
-ms.openlocfilehash: 4e81c48435b941170442d7a1287a2157ebd764af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 23300e40afab6edd2033857e828ea0f65e52d604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309308"
 ---
 # <a name="deviceandappmanagementroleassignment-resource-type"></a>deviceAndAppManagementRoleAssignment 资源类型
 

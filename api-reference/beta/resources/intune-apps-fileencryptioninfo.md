@@ -1,12 +1,13 @@
 ---
 title: fileEncryptionInfo 资源类型
 description: 包含业务线应用内容版本文件加密信息的属性。
-ms.openlocfilehash: 17895b0bf081cc249f9081c737a2445683514280
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13c451193d248d09e020cc6b308b9f03d991295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307852"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 

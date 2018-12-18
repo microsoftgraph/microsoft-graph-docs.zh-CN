@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerWiFiSecurityType 枚举类型
 description: 用于 Android 设备所有者 Wi-fi 安全类型。
-ms.openlocfilehash: 09654e6863677bc7eb0a88452487bef183c649cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02f3830d82e08a10f6726cf1ebd2e7f04a2e8f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306683"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列出联系人
 description: 从已登录的用户默认联系人文件夹中获取联系人的集合。
-ms.openlocfilehash: 9322810d90f38c0b7643379f22a90a89cf7070df
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: dkershaw10
+ms.openlocfilehash: a4fa40b66280ea3447c1d07a531a596a42c14ed2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209731"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307495"
 ---
 # <a name="list-contacts"></a>列出联系人
 

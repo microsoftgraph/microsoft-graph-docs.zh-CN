@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 Mobile 的合规性设置。
-ms.openlocfilehash: bed10d23feed4ed77bfc7a1867021cedeae34f33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dd8e47c380965e740a3259481e20f1e278f00a5d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306970"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "27044577"
 |[Update windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-update.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|更新 [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

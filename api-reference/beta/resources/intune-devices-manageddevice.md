@@ -1,12 +1,13 @@
 ---
 title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
-ms.openlocfilehash: eaca9444df77c2f95f6a6f9845c9383cd53cd99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046856"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309609"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -104,8 +105,8 @@ ms.locfileid: "27046856"
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的设备的用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。|
-|autopilotEnrolled|布尔|如果通过自动试点注册托管的设备，报告。|
-|requireUserEnrollmentApproval|布尔|报告托管的 iOS 设备是否用户审批注册。|
+|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。|
+|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期|
 |iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
 |udid|字符串|IOS 和 macOS 设备的唯一设备标识符。|

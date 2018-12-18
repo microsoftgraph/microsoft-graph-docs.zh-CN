@@ -1,12 +1,13 @@
 ---
 title: 列表设备组
 description: 获取此设备直接成员的组。 此操作是不可传递的。
-ms.openlocfilehash: f5be774d75410e613214ec9ce2e867f901c0991b
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+author: tfitzmac
+ms.openlocfilehash: a73bc3c2db80169634f8217418026c0e5c34a033
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27195290"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306921"
 ---
 # <a name="list-device-groups"></a>列表设备组
 

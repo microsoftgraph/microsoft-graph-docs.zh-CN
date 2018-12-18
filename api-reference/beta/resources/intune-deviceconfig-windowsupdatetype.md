@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateType 枚举类型
 description: 分支的设备将接收从其更新
-ms.openlocfilehash: 7669caa27be93786d381266f88b41ae456314bb4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b41fea0254cbbb6a590d240c2db9e4fb7aa0e6eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309623"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 

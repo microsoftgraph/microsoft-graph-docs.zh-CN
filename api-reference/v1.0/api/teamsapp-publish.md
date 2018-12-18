@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: 权限
 description: '将应用程序发布到 Microsoft 团队的应用程序目录。 '
-ms.openlocfilehash: c33a1d85673b9f59aade253b2ea5fd237eb5fc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 76750e385c8048c44d77064722d84c5765c2bcc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306151"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>将应用程序发布到组织的应用程序目录
 

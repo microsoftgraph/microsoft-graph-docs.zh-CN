@@ -1,12 +1,13 @@
 ---
 title: subjectNameFormat 枚举类型
 description: 使用者名称格式选项。
-ms.openlocfilehash: 7299558011c471f02e5c1149da6ac23183faa150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 61aeddb1e751885c3a0ba39fd5628b71830dded5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041641"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307005"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 

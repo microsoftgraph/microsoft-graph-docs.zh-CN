@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: reapply'
 description: 对表重新应用当前的排序参数。
-ms.openlocfilehash: 24d6bcd5f9b481291bb3888dfd4bbad2845cd43c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ce369ed95d8940a34b02f6e406042123529cf5e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306858"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: 删除 androidWorkProfileCustomConfiguration
 description: 删除 androidWorkProfileCustomConfiguration。
-ms.openlocfilehash: e53ec00821e5fcc0b7cd9cf491828f195e93b29d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c80f2932c71c879835b3797f8f54fe14c0bbd2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045601"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307992"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>删除 androidWorkProfileCustomConfiguration
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

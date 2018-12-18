@@ -1,12 +1,13 @@
 ---
 title: mdmAppConfigKeyType 枚举类型
 description: 应用程序配置关键类型。
-ms.openlocfilehash: 4b725f01eef3ef1bf8d897f3f75c1cc192e1d319
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a241346ec26455917dc3e4245cd67757757a096f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010680"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307117"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 

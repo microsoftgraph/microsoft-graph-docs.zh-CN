@@ -1,12 +1,13 @@
 ---
 title: 更新 intuneBrandingProfile
 description: 更新 intuneBrandingProfile 对象的属性。
-ms.openlocfilehash: 094de592e0e8d80472f1b0c6ed3d751ac79ba863
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048791"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309945"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +51,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|字符串|配置文件密钥|
 |profileName|字符串|配置文件的名称|
 |profileDescription|字符串|配置文件的说明|
-|isDefaultProfile|布尔|如果在配置文件使用的默认，呈现。|
+|isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
 |displayName|String|向最终用户显示的公司/组织名称。|

@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsManagedDevice
 description: 删除 windowsManagedDevice。
-ms.openlocfilehash: 01297cc37b0c60dd25cb98845f9d25e5a56e1b91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13960f29fc6317b4b74360b12c9063abddb62906
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310183"
 ---
 # <a name="delete-windowsmanageddevice"></a>删除 windowsManagedDevice
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

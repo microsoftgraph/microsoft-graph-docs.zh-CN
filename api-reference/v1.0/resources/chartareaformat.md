@@ -1,12 +1,13 @@
 ---
 title: ChartAreaFormat 资源类型
 description: 封装整个图表区域的格式属性。
-ms.openlocfilehash: 19f09ab735f6df4fe4cdc0ccbf13bc75a5ca834e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d9db44fefeff00ae6f7363126de35d4028964d14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007959"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310001"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
 

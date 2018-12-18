@@ -1,12 +1,13 @@
 ---
 title: setPriority 操作
 description: 尚未记录
-ms.openlocfilehash: d041c5c27d3ae0a83839a50bb8b841f570a81cbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3aa4363a89ed1d21a90d953ce476998bffb600ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307012"
 ---
 # <a name="setpriority-action"></a>setPriority 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 删除 networkIPv6ConfigurationManagementCondition
 description: 删除 networkIPv6ConfigurationManagementCondition。
-ms.openlocfilehash: 8555b55cb92837690e043919b3a6df5955b90d2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a872248dd5cdf965ae883937f12d4eee5ac142d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043149"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308258"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>删除 networkIPv6ConfigurationManagementCondition
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

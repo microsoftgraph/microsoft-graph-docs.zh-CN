@@ -1,12 +1,13 @@
 ---
 title: managedEBookAssignment 资源类型
 description: 包含用于为组分配电子书的属性。
-ms.openlocfilehash: 7c4ddba8f4a0c115be18f760d6874a6f54d429e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26694093b320be1518f92e97877a7331f3f78866
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044908"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308461"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment 资源类型
 

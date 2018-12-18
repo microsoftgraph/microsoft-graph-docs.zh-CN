@@ -1,12 +1,13 @@
 ---
 title: iosVppAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS APP 移动应用的属性。
-ms.openlocfilehash: 6fc529fe1aeea6bdbef46ad0cd97fb5830250b4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65a143c1f6cc9eed4dfdc6dabeb6f9379517277c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010683"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310246"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 

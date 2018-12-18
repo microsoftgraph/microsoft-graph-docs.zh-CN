@@ -1,12 +1,13 @@
 ---
 title: serviceStartType 枚举类型
 description: 可能的值的 xbox 服务启动类型
-ms.openlocfilehash: b99861955967c675859d53d420090d8ba63bdc5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f859e0620abe9953f974778d3a816d7814572476
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308062"
 ---
 # <a name="servicestarttype-enum-type"></a>serviceStartType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27047688"
 
 可能的值的 xbox 服务启动类型
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |手动|0|手动服务开始 type(default)|
 |automatic|1|自动服务启动类型|

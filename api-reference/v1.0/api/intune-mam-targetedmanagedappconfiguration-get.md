@@ -1,12 +1,13 @@
 ---
 title: 获取 targetedManagedAppConfiguration
 description: 读取 targetedManagedAppConfiguration 对象的属性和关系。
-ms.openlocfilehash: 5150fe9e4198f46a89a1fcf6ea9cc01da1ec3e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f40ae61063967239642ba3cc16403b7fcb7b04e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306711"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>获取 targetedManagedAppConfiguration
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

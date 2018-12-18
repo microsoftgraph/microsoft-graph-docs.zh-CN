@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceComplianceActionItem
 description: 读取 deviceComplianceActionItem 对象的属性和关系。
-ms.openlocfilehash: 3575a137d3f08cf50684a82d00587a35e601c45b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fd6762ca3f0d7128721eb240d7d00bcf1291da4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043208"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307950"
 ---
 # <a name="get-devicecomplianceactionitem"></a>获取 deviceComplianceActionItem
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

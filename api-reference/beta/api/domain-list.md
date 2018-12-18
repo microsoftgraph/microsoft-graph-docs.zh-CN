@@ -1,12 +1,13 @@
 ---
 title: 列出域
 description: 检索 domain 对象列表。
-ms.openlocfilehash: 8038f2456c2eafdd74688d7f0815fd3cd264b3c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: ec8598daf47907dd409af0fa58af0dd7d7abf47c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308804"
 ---
 # <a name="list-domains"></a>列出域
 
@@ -32,7 +33,7 @@ GET /domains
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Accept         | application/json； |

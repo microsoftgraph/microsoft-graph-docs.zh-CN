@@ -1,12 +1,13 @@
 ---
 title: 创建 managedDeviceCertificateState
 description: 创建新的 managedDeviceCertificateState 对象。
-ms.openlocfilehash: 7369b6d4eb8c5639fd928c5ff2be46b9db8dc10e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22b8a0db82e86b9136ee997a821223afe608b51a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046292"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305955"
 ---
 # <a name="create-manageddevicecertificatestate"></a>创建 managedDeviceCertificateState
 
@@ -53,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

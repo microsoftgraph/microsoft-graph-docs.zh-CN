@@ -1,18 +1,20 @@
 ---
 title: 添加组所有者
 description: 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
-ms.openlocfilehash: e65db3a57f6a50afb95b432a53b1821065e5867a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 903c659722877263038860c7d2ff47b301b6d5c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308895"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
+
+>**重要：** 如果更新组的所有者和创建组团队，它可以最多为 2 小时数所有者以便与 Microsoft 团队进行同步。 此外，如果您希望能够-例如，通过创建计划工具计划-团队中做出的更改的所有者所有者还需要添加为组/工作组成员。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +31,7 @@ ms.locfileid: "27042279"
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

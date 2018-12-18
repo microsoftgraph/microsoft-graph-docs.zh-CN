@@ -1,12 +1,13 @@
 ---
 title: windows10VpnProxyServer 资源类型
 description: VPN 代理服务器。
-ms.openlocfilehash: cae448924087cba4b039eab92c83c8bffc94f9fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e21b964ab1bd648cd042a1364ecf5f0942ded085
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309455"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer 资源类型
 
@@ -24,7 +25,7 @@ VPN 代理服务器。
 |automaticConfigurationScriptUrl|字符串|代理服务器的自动配置脚本的 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|地址。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|端口。 有效值 0 到 65535 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|布尔|对于本地地址绕过代理服务器。|
+|bypassProxyServerForLocalAddress|Boolean|对于本地地址绕过代理服务器。|
 
 ## <a name="relationships"></a>Relationships
 无

@@ -1,12 +1,13 @@
 ---
 title: vppToken 资源类型
 description: 通过 Apple Volume Purchase Program 企业版或教育版为 iOS 应用购买多个许可证。 这涉及从 Apple 网站设置 Apple VPP 帐户并将 Apple VPP 企业版 或教育版令牌上传到 Intune。 然后可以将批量采购信息与 Intune 同步，并跟踪批量采购应用的使用情况。 可上传多个 Apple VPP 企业版或教育版令牌。
-ms.openlocfilehash: 48b7b455cc4e8af99ccfb33dfa5cc7c4a7989e15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd4fdcda2af6964b7ad506d8f1b08b23586b4af9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306837"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -43,10 +44,10 @@ ms.locfileid: "27047651"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|布尔|Consent 授予与 Apple 卷购买程序共享的数据。|
+|dataSharingConsentGranted|Boolean|Consent 授予与 Apple 卷购买程序共享的数据。|
 |displayName|字符串|管理员指定标记的友好名称。|
 |locationName|字符串|返回从 Apple VPP 令牌的位置。|
-|claimTokenManagementFromExternalMdm|布尔|管理员同意以允许声称令牌管理从外部 mdm。|
+|claimTokenManagementFromExternalMdm|Boolean|管理员同意以允许声称令牌管理从外部 mdm。|
 
 ## <a name="relationships"></a>Relationships
 无

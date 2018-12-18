@@ -1,12 +1,13 @@
 ---
 title: outlookTaskFolder 资源类型
 description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件夹。 '
-ms.openlocfilehash: e3fb9d73dbd9458048749331d14f933d838d4243
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046985"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306207"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27046985"
 |:---------------|:--------|:----------|
 |changeKey|字符串|任务文件夹的版本。|
 |id|字符串|任务文件夹中，用户的邮箱中的唯一标识符。 只读。|
-|isDefaultFolder|布尔|如果文件夹为默认的任务文件夹，则为 true。|
+|isDefaultFolder|Boolean|如果文件夹为默认的任务文件夹，则为 true。|
 |name|字符串|任务文件夹的名称。|
 |parentGroupKey|Guid|任务文件夹的父组的唯一 GUID 标识符。|
 

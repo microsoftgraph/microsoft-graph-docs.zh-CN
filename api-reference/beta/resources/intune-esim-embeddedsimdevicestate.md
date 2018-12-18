@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMDeviceState 资源类型
 description: 描述与设备相关的嵌入的 SIM 激活代码部署状态。
-ms.openlocfilehash: 03d5d5d5dea85b3ecccf98fe57bc0611e2986063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308454"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 

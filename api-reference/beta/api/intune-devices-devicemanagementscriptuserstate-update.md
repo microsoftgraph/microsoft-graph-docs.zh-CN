@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceManagementScriptUserState
 description: 更新 deviceManagementScriptUserState 对象的属性。
-ms.openlocfilehash: f6428579bc19a005a1bf10b769916ac302304485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a2601df84b022d13fd45ef3c506a4ee229fe6ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307831"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>更新 deviceManagementScriptUserState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

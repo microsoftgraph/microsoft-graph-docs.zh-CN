@@ -1,12 +1,13 @@
 ---
 title: omaSettingDateTime 资源类型
 description: OMA 设置日期时间定义。
-ms.openlocfilehash: c81e4aa257bf2ddf61bbb27613a44dab92af5a82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2bf55308c230ec848f7ee58f66e710f1b31c1692
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307985"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime 资源类型
 

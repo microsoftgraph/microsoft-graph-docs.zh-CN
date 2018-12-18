@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsOfficeClientSecurityConfiguration
 description: 更新 windowsOfficeClientSecurityConfiguration 对象的属性。
-ms.openlocfilehash: 4e3430250a8b4332e07f9e6548c743aa122e1b19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c047601882210d83c6f71114c62615a79e743d93
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044843"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307789"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>更新 windowsOfficeClientSecurityConfiguration
 
@@ -37,7 +38,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +55,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 |displayName|字符串|管理员提供的 office 客户端配置策略的名称。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|策略的组分配列表正在 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|优先级值应为每个策略下租户的唯一值并将用于指定在冲突解决，较低值意味着很高的优先级。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|lastModifiedDateTime|DateTime|上次修改日期时间戳的策略。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|lastModifiedDateTime|日期时间|上次修改日期时间戳的策略。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|用户签入的摘要策略。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端中签入状态的列表。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 

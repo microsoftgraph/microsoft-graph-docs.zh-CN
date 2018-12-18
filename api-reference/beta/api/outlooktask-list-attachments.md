@@ -1,12 +1,13 @@
 ---
 title: 列出附件
 description: 获取附件对象附加到 Outlook 任务的列表。
-ms.openlocfilehash: 11388a2a0bc2df1b0bb680e97326f7d0058c9e07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309931"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -33,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

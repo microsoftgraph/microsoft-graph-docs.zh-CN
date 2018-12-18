@@ -1,12 +1,13 @@
 ---
 title: windowsAutopilotDeviceIdentity 资源类型
 description: WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设备。
-ms.openlocfilehash: 82ce93928e90d3649dd11d32cb8609254533315b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79c685258417ab0cd7a1531b1661f03cf5be1bea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306501"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 

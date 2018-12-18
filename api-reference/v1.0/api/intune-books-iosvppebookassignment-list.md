@@ -1,12 +1,13 @@
 ---
 title: 列出 iosVppEBookAssignments
 description: 列出 iosVppEBookAssignment 对象的属性和关系。
-ms.openlocfilehash: f6e03361a3413c772517ab92deed6e7c9dc2322b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec1540956ef9972dd4dddc75921bec006953a8b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007911"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309252"
 ---
 # <a name="list-iosvppebookassignments"></a>列出 iosVppEBookAssignments
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

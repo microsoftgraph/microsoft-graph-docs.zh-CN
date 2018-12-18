@@ -1,12 +1,13 @@
 ---
 title: 删除用户
 description: 删除 user。
-ms.openlocfilehash: 94c9909ef64f5b358c7e14d4d201a081db584851
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 950e267a929bc1c04627e94207bc933bff4466cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309434"
 ---
 # <a name="delete-user"></a>删除用户
 
@@ -24,7 +25,7 @@ ms.locfileid: "27042480"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -42,7 +43,7 @@ DELETE /users/{usersId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

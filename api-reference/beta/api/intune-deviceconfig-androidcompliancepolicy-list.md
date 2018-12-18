@@ -1,12 +1,13 @@
 ---
 title: 列出 androidCompliancePolicies
 description: 列出 androidCompliancePolicy 对象的属性和关系。
-ms.openlocfilehash: 32953967a7ea84f9e769ee415b79f28ce95e8f4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53097963cdd489006c176abd5dbf32633f7297d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307180"
 ---
 # <a name="list-androidcompliancepolicies"></a>列出 androidCompliancePolicies
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

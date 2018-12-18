@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceCategory
 description: 创建新的 deviceCategory 对象。
-ms.openlocfilehash: 18b52a9355abac794288b7dba2351776a4278ffc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6481784721396bc6d7011fb91ea18e8119390bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042392"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307299"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

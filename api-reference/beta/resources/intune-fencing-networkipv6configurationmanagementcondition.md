@@ -1,12 +1,13 @@
 ---
 title: networkIPv6ConfigurationManagementCondition 资源类型
 description: 配置基于管理条件可能定义设备检测到某些 IP 时将触发的 IPv6 的网络设置。 IP 配置管理条件仅被视为 TRUE 的网络连接处于活动状态时。
-ms.openlocfilehash: b62cd29b56764fa1affd97a373e68907f9c28ff1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305738"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: windowsKioskAppBase 资源类型
 description: 一种类型的应用程序的基类
-ms.openlocfilehash: bbd2a961e86e698ff0b9a98401927c518beafe49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043808"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307446"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
 

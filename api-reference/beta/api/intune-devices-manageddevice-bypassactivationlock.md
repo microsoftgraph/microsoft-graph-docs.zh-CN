@@ -1,12 +1,13 @@
 ---
 title: bypassActivationLock 操作
 description: 跳过激活锁
-ms.openlocfilehash: 262f746e63980dd646638fa4600297c9a9e9e049
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: faf627a3f2c0d635398c11b1a7a82431884152a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049201"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306053"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

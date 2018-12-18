@@ -1,12 +1,13 @@
 ---
 title: eBookInstallSummary 资源类型
 description: 包含某个设备的书籍安装摘要的属性。
-ms.openlocfilehash: 76ae1348572bc40d01c958f676983d09456dcf03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 631ebbcc704072051f5c9a954040de4cc94a2c48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307810"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 

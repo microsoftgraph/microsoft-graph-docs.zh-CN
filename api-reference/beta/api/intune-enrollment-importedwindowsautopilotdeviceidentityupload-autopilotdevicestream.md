@@ -1,12 +1,13 @@
 ---
 title: autopilotDeviceStream 函数
 description: 创建自动执行某些操作设备流上载请求。
-ms.openlocfilehash: 51b48ecada61718a9c49b6689a0ce2ffce6e4b27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd7f2b1c452d69f772d2a3d80cf9a68ba8139df1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041544"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307131"
 ---
 # <a name="autopilotdevicestream-function"></a>autopilotDeviceStream 函数
 
@@ -37,7 +38,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

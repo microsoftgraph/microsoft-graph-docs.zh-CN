@@ -1,12 +1,13 @@
 ---
 title: 删除 windows81GeneralConfiguration
 description: 删除 windows81GeneralConfiguration。
-ms.openlocfilehash: 50008dceb9bd41ba644e0446a2b8b9af3b4326a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d812acb4f5c9ac13eb1dedcdbe20ce1492c8ddc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307250"
 ---
 # <a name="delete-windows81generalconfiguration"></a>删除 windows81GeneralConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

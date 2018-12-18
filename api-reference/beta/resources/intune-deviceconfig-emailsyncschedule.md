@@ -1,12 +1,13 @@
 ---
 title: emailSyncSchedule 枚举类型
 description: 电子邮件同步计划的可能值。
-ms.openlocfilehash: 48c5d433815d5f27d018d97ac479641146754669
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0e6673064f7e483756dfcfec8ce074e809dfcf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308678"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateActiveHoursInstall 资源类型
 description: 尚未记录
-ms.openlocfilehash: 7a40a791a9a00d7cfd60287bade1759592e1bcf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d1328723f546f553bc31903d36ada2242d8cda3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307103"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall 资源类型
 

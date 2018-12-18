@@ -1,12 +1,13 @@
 ---
 title: 列出笔记本
 description: 检索 notebook 对象列表。
-ms.openlocfilehash: 429c02d0032453fc00a7517af32cac8b9d3c66f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: c5925d858b7cbd567b018bd5d8491f2f20b33f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309826"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -36,7 +37,7 @@ GET /sites/{id}/onenote/notebooks
 笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

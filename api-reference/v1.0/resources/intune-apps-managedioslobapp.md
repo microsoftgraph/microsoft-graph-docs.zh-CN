@@ -1,12 +1,13 @@
 ---
 title: managedIOSLobApp 资源类型
 description: 包含托管 iOS 业务线应用的属性和继承的属性。
-ms.openlocfilehash: 98f49e201f0882fe33932fc0ab443f18ef887a1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41d22797fb64eb62760de525226ab66b9665c2a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010571"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307229"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp 资源类型
 

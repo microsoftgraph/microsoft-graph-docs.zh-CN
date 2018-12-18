@@ -1,12 +1,13 @@
 ---
 title: windowsAutopilotSyncStatus 枚举类型
 description: 尚未记录
-ms.openlocfilehash: 0ea16ec0fc73183e5815cf47e0d1d539bfdc4804
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48b61be225ae4d1f3db54116f290149124f1a1b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305675"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>windowsAutopilotSyncStatus 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: 获取 windows10CompliancePolicy
 description: 读取 windows10CompliancePolicy 对象的属性和关系。
-ms.openlocfilehash: 1e9f6910265e9ee89c9f22ab1876408214858dab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58208e40cba356cec312d07bf98e945a2ef4ebf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307964"
 ---
 # <a name="get-windows10compliancepolicy"></a>获取 windows10CompliancePolicy
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

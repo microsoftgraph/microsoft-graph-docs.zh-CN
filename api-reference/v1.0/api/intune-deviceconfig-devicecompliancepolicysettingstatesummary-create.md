@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceCompliancePolicySettingStateSummary
 description: 创建新的 deviceCompliancePolicySettingStateSummary 对象。
-ms.openlocfilehash: f7924b8ec3e8c32ccd62899a8576d56c85f0b233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 289fb312e0c4f208a6ac494dfea090c21fc52295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307390"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

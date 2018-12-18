@@ -1,12 +1,13 @@
 ---
 title: 获取 iosManagedAppProtection
 description: 读取 iosManagedAppProtection 对象的属性和关系。
-ms.openlocfilehash: 2dd50cbc226b7a5c0888d14eeb0f20c3502f2378
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b913d26ae7022cff368984b65fbbf6eaa85aaad2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310204"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

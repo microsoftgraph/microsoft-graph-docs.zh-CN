@@ -1,12 +1,13 @@
 ---
 title: 获取 sideLoadingKey
 description: 读取属性和 sideLoadingKey 对象的关系。
-ms.openlocfilehash: 73b49ce356619543263d6e1779b7c8d138c883ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cae8f35c31072cf7078a50eae4a9691bd9516f8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041397"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308643"
 ---
 # <a name="get-sideloadingkey"></a>获取 sideLoadingKey
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

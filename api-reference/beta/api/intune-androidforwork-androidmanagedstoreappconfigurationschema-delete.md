@@ -1,12 +1,13 @@
 ---
 title: 删除 androidManagedStoreAppConfigurationSchema
 description: 删除 androidManagedStoreAppConfigurationSchema。
-ms.openlocfilehash: acfc1b02fef1382349c266fd08df8101fb839e13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e64923a206329086e053052eb7c5f2314714dac6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305668"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>删除 androidManagedStoreAppConfigurationSchema
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidMana
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

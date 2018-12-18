@@ -1,12 +1,13 @@
 ---
 title: 列表 windowsAutopilotDeploymentProfileAssignments
 description: 列出属性和 windowsAutopilotDeploymentProfileAssignment 对象之间的关系。
-ms.openlocfilehash: 96bddc848d5b2447c7e25b7a38040c101fab3755
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46751889ef197f56ea0681a354b276a695185a23
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308524"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>列表 windowsAutopilotDeploymentProfileAssignments
 
@@ -37,7 +38,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

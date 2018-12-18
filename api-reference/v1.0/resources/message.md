@@ -1,12 +1,13 @@
 ---
 title: 邮件资源类型
 description: mailFolder 中的邮件。
-ms.openlocfilehash: 146418a03944eb7bc3c1b537f359887b5515906f
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: angelgolfer-ms
+ms.openlocfilehash: a77a50835dcba41555fa646c94c66d05b15e3e48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310288"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 

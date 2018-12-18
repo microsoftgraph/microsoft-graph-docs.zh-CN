@@ -1,12 +1,13 @@
 ---
 title: assign 操作
 description: 更换所有目标的组策略。
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047648"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307824"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -37,7 +38,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

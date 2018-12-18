@@ -1,12 +1,13 @@
 ---
 title: macOSLobApp 资源类型
 description: MacOS LOB 应用程序中包含的属性和继承的属性。
-ms.openlocfilehash: bf3e51b077d7bcf97a4966dfbe63d468fa02a97f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0494c46f770d1e46821ce23a7cedff22e0c087a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045860"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309560"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp 资源类型
 

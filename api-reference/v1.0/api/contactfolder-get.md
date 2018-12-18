@@ -1,12 +1,13 @@
 ---
 title: 获取 contactFolder
 description: 通过使用联系人文件夹 ID 获取联系人文件夹。
-ms.openlocfilehash: 9bc65841ab81d8486b2996f504b8edf6b1b8d758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4d898a4e983f9b1c8d1dac3499de1123a85c030f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009087"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310477"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
@@ -36,7 +37,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

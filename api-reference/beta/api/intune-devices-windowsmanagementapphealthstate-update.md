@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsManagementAppHealthState
 description: 更新 windowsManagementAppHealthState 对象的属性。
-ms.openlocfilehash: e333e974e4c6ec52da3044359db5464ce9fa47bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309084"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>更新 windowsManagementAppHealthState
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

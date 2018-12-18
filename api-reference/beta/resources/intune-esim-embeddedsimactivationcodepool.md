@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMActivationCodePool 资源类型
 description: 池代表嵌入 SIM 激活代码的一组。
-ms.openlocfilehash: f6c80d82d4be6a794547e3ec0b93d4206d7edbe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307138"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 

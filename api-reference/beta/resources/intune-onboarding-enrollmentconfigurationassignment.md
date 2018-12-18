@@ -1,12 +1,13 @@
 ---
 title: enrollmentConfigurationAssignment 资源类型
 description: 尚未记录
-ms.openlocfilehash: 3e5992aaba579a1eb86dfeef283cb017ed119933
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c2668b2c31425c76f904e6d78a2fa61907f3964
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306599"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 

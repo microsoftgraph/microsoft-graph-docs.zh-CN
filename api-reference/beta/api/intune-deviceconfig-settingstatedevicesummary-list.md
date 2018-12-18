@@ -1,12 +1,13 @@
 ---
 title: 列出 settingStateDeviceSummaries
 description: 列出 settingStateDeviceSummary 对象的属性和关系。
-ms.openlocfilehash: 67439546e66b863ea4a0fbc91dbbab76ef2d66c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a18bb843e11eaf8d87ba9b6977cbd4f47e9d23b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308328"
 ---
 # <a name="list-settingstatedevicesummaries"></a>列出 settingStateDeviceSummaries
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

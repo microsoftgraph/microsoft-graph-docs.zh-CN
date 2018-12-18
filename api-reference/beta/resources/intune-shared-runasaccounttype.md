@@ -1,12 +1,13 @@
 ---
 title: runAsAccountType 枚举类型
 description: 指示执行设备管理脚本的应用程序的上下文。
-ms.openlocfilehash: b22e5f047da2e15b53f852615cdf7222487f4224
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 118e7ca2e4e9e7e9cdccab9adff8745e7e8bcee8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308496"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 枚举类型
 

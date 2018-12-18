@@ -1,12 +1,13 @@
 ---
 title: androidManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 Android 设备上指定的一组应用的详细管理设置的策略
-ms.openlocfilehash: 215de0589b2d055bd07a9dd13ba3a014c1d133b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13db6d2185d30feeec8362b83f96b34ed83ffe0c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010009"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309287"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
