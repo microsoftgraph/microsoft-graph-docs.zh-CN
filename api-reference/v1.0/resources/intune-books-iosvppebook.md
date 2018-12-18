@@ -1,12 +1,13 @@
 ---
 title: iosVppEBook 资源类型
 description: 包含 iOS Vpp eBook的属性的类。
-ms.openlocfilehash: 7d6641c4cfbd7e902342a37b7b8dd78081cd54dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a54c3a846be339dd1b7dcb98169e249122899d84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008369"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362088"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 

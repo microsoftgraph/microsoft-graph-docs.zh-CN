@@ -1,12 +1,13 @@
 ---
 title: 获取 iosCustomConfiguration
 description: 读取 iosCustomConfiguration 对象的属性和关系。
-ms.openlocfilehash: a217449ba6afb34a50e4d0edf5157c75e714b513
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6127fe9690144d72b3eaf884e758d1280aad5f0a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362459"
 ---
 # <a name="get-ioscustomconfiguration"></a>获取 iosCustomConfiguration
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

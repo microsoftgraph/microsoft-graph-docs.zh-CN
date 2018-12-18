@@ -1,12 +1,13 @@
 ---
 title: sendTestMessage 操作
 description: 使用默认区域设置中指定的 notificationMessageTemplate 发送测试消息
-ms.openlocfilehash: 99e93f64d1ca308c17b1a548c938a46922039c46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4495b4064f18739744d0f1f5f8709f28373d5f89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362753"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage 操作
 
@@ -35,7 +36,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
