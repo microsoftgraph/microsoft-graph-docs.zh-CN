@@ -1,12 +1,13 @@
 ---
 title: 用户： translateExchangeIds
 description: 翻译格式之间的 Outlook 相关的资源的标识符。
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360576"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -22,7 +23,7 @@ ms.locfileid: "27184488"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | User.ReadBasic、 User.Read、 User.ReadWrite、 User.ReadBasic.All、 User.Read.All、 User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.ReadBasic，User.Read，User.ReadWrite |
-| 应用程序 | User.Read.All、User.ReadWrite.All |
+| Application | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,13 +36,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称 | 值 |
+| Name | 值 |
 |:-----|:------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-| 参数 | 类型 | 说明 |
+| 参数 | Type | 说明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中项目的。 此集合的最大大小是 1000年字符串。 |
 | sourceIdType | exchangeIdFormat | ID 类型的标识符的`InputIds`参数。 |

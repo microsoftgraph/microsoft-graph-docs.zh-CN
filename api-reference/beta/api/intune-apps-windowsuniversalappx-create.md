@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsUniversalAppX
 description: 创建新的 windowsUniversalAppX 对象。
-ms.openlocfilehash: 5a2085fee43609bdca375a6fbc23fe7f9c60862e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27fc37804da09f2740f0cfcf6548de529d82fbd9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360212"
 ---
 # <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

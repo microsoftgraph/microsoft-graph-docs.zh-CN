@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingFrance 资源类型
 description: 尚未记录
-ms.openlocfilehash: bd2f4933ea05c7db193d700799cdcbdc79490356
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0981a73fdc1e8468d9e8ab8590387dfa357a39c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361640"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>mediaContentRatingFrance 资源类型
 

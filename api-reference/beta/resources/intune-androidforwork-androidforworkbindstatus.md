@@ -1,12 +1,13 @@
 ---
 title: androidForWorkBindStatus 枚举类型
 description: 绑定使用 Google EMM API 的租户的状态
-ms.openlocfilehash: 4e2764dcab584104de64c360b5502a8f31e92a78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56ec9c1d501d54a10f1fc8880086a56061fa865b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042091"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360884"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 枚举类型
 

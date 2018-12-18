@@ -1,12 +1,13 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态属性。
-ms.openlocfilehash: 588a84afc9cec8e9227c0059ec53a6652e047d3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a0edd5f7fe5068077d4e1dde813a3424f4c8c3c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008426"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360744"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 

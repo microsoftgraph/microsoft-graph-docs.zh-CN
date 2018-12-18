@@ -1,12 +1,13 @@
 ---
 title: 删除 androidStoreApp
 description: 删除 androidStoreApp
-ms.openlocfilehash: 3e90aeb81163ae1cd9a6e957a83a4aaa074bb9f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c49a2ac2c0261df3fa59a4807eec220c34f76bd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361514"
 ---
 # <a name="delete-androidstoreapp"></a>删除 androidStoreApp
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

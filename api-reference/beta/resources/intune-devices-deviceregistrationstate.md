@@ -1,12 +1,13 @@
 ---
 title: deviceRegistrationState 枚举类型
 description: 设备注册状态。
-ms.openlocfilehash: 5496bce53e061894a829745fce0687815c855c01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a622613bd4ca5e065c3d9eb0331c05c360c1837c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360541"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 

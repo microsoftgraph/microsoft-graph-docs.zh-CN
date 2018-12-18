@@ -1,12 +1,13 @@
 ---
 title: deviceInstallState 资源类型
 description: 包含某个设备的安装状态的属性。
-ms.openlocfilehash: 944cb57d397ffe7b75f0a378680b0f1468b10f49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fb11f93682093655a38ac554b2816348f9b0c6bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360366"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 

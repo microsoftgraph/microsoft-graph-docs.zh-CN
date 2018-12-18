@@ -1,12 +1,13 @@
 ---
 title: educationSubmissionResource 资源类型
 description: '用于在提交资源周围的包装。 包装将指针添加到工作分配的资源，如果这从工作分配复制。  '
-ms.openlocfilehash: 243d0d8683683df19f7787f7cf6298770950455f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047586"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361556"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27047586"
 |[删除](../api/educationsubmissionresource-delete.md) | 无 |删除**educationSubmissionResource**对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignmentResourceUrl|字符串|到从中复制此资源分配的指针。 如果这是 null，则学生上载资源。|
 |id|String| 只读。|

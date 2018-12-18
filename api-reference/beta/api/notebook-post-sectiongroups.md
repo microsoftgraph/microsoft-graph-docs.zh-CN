@@ -1,12 +1,13 @@
 ---
 title: 创建 sectionGroup
 description: 在指定的笔记本中新建分区组。
-ms.openlocfilehash: 398b8ee365b13a642fbe765fb7646b8648ddd039
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7bdf81023cea5738ac434add597124151740a6e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360247"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -31,7 +32,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
 POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string | `application/json` |

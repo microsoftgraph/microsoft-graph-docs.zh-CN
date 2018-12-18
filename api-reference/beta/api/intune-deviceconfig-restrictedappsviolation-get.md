@@ -1,12 +1,13 @@
 ---
 title: 获取 restrictedAppsViolation
 description: 读取属性和 restrictedAppsViolation 对象的关系。
-ms.openlocfilehash: 1fe6bb6786cdcc4d0d8d483503691413c985d5b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2180c4a37344520511a57b55b3105bd7b1cb746
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360275"
 ---
 # <a name="get-restrictedappsviolation"></a>获取 restrictedAppsViolation
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

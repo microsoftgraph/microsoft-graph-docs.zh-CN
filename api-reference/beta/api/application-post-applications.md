@@ -1,12 +1,13 @@
 ---
 title: 创建应用程序
 description: 使用此 API 创建新的应用程序。
-ms.openlocfilehash: d192f543d123c29cf2686c203ffc8c7c69b1bcc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361528"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -31,7 +32,7 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

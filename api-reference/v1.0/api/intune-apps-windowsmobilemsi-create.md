@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsMobileMSI
 description: 创建新的 windowsMobileMSI 对象。
-ms.openlocfilehash: 18415ddbcfaacdc4db91653a4f0988520905e6c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a67458a860227f68dac2825fd286bc0a0d18c451
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360695"
 ---
 # <a name="create-windowsmobilemsi"></a>创建 windowsMobileMSI
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

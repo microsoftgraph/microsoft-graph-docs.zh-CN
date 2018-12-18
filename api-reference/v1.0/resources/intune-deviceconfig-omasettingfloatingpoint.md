@@ -1,12 +1,13 @@
 ---
 title: omaSettingFloatingPoint 资源类型
 description: OMA 设置浮点定义。
-ms.openlocfilehash: 649e3b3d7716122610ac60291ef58cc25e32c4e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efed2112f85ee0600fcbe499616a7f3e787beb59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009343"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360751"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint 资源类型
 

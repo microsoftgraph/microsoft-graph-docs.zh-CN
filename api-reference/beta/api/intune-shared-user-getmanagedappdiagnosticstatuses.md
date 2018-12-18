@@ -1,12 +1,13 @@
 ---
 title: getManagedAppDiagnosticStatuses 函数
 description: 获取给定用户的诊断验证状态。
-ms.openlocfilehash: bbbb399ef26c38972f989c2e1129fe61baffa0fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f230a29e865a4fbecef96d388e470a299808c534
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047994"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359694"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
 
@@ -38,7 +39,7 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

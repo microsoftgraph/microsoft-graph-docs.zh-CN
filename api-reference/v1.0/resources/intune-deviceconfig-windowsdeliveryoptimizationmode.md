@@ -1,12 +1,13 @@
 ---
 title: windowsDeliveryOptimizationMode 枚举类型
 description: 对等方通讯组的传递优化模式
-ms.openlocfilehash: 2d393a82f855f3e3a0226c8ccb450fa2dae1a95c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae61d7dde5fc02ff329eaf9cc970ee7078c3a254
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360156"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
