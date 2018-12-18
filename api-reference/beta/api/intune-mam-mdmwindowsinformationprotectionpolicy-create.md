@@ -1,12 +1,13 @@
 ---
 title: 创建 mdmWindowsInformationProtectionPolicy
 description: 创建新的 mdmWindowsInformationProtectionPolicy 对象。
-ms.openlocfilehash: 4546a44e859c768303179335e54787f892f6d594
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed717b6e91c2b919938fb62c4141b8bc47c15a1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347521"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>创建 mdmWindowsInformationProtectionPolicy
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: deviceManagementScriptGroupAssignment 资源类型
 description: 包含用于分配给组的设备管理脚本的属性。
-ms.openlocfilehash: e5128403e239f17cbd450726300da1aef3ada193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 446e293ee3d4c0cc2071f6a93e01bcdf8cf72a2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345939"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>deviceManagementScriptGroupAssignment 资源类型
 

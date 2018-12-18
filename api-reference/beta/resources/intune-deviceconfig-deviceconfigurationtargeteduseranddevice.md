@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationTargetedUserAndDevice 资源类型
 description: 冲突一设备配置策略的摘要。
-ms.openlocfilehash: 6f79a8fe24e06d2bdafa81c30cabf8158b4e5773
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345239"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice 资源类型
 

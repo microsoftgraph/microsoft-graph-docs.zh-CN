@@ -1,12 +1,13 @@
 ---
 title: 团队资源类型
 description: '团队中的 Microsoft 团队是通道的集合。 '
-ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 0ed654bf4c8d627dd9466f9263b121f85800b853
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209696"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345478"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 

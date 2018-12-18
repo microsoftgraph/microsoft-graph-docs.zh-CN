@@ -1,12 +1,13 @@
 ---
 title: 创建 notificationMessageTemplate
 description: 创建新的 notificationMessageTemplate 对象。
-ms.openlocfilehash: 013acd831979fdbb22eb67be66552b2d21d590b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 396d8cbcb312e4bbacc94770e3eceb4a4dc88067
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049526"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347626"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 
@@ -37,7 +38,7 @@ POST /deviceManagement/notificationMessageTemplates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

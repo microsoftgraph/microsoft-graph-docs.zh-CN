@@ -1,12 +1,13 @@
 ---
 title: Microsoft Bookings API 概述（预览版）
-description: Microsoft Bookings 提供了联机的移动应用，可使小型企业及其客户简单高效地制定预约计划。 任何提供预约服务的小型企业（如汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业都可以使用 Microsoft Bookings。
-ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Bookings 提供了联机移动应用，可便于小型企业及其客户轻松高效地安排约会。 任何提供预约服务的小型企业（如汽车维修店、发廊和律师事务所）都可以从管理他们的预订中受益，从而有时间来做一些有助于业务增长的更重要的任务。 拥有 Office 365 商业高级版订阅的企业都可以使用 Microsoft Bookings。
+author: angelgolfer-ms
+ms.openlocfilehash: 7e76c72950ea889b0c6029568ef287ee1ae5eedb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091878"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339814"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API 概述（预览版）
 

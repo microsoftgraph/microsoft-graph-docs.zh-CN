@@ -1,12 +1,13 @@
 ---
 title: notebookLinks 资源类型
 description: 用于打开 OneNote 笔记本的链接。
-ms.openlocfilehash: 33f9a877ea6cae64acf3f05234362bfb86530c2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 88ad146dc4b1499882a2605605c5bb725b6ed531
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345232"
 ---
 # <a name="notebooklinks-resource-type"></a>notebookLinks 资源类型
 

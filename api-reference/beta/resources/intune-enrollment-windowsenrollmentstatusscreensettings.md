@@ -1,12 +1,13 @@
 ---
 title: windowsEnrollmentStatusScreenSettings 资源类型
 description: 注册状态屏幕设置
-ms.openlocfilehash: 5ec77e41634a2db9f44fd4146cb5266ca00923e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ccf2565d722a09de5f08ebe7333436729ce1b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346926"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 
@@ -18,13 +19,13 @@ ms.locfileid: "27042582"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hideInstallationProgress|布尔|显示或隐藏用户安装进度|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔|允许或阻止用户使用配置文件和应用程序安装完成之前的设备|
-|blockDeviceSetupRetryByUser|布尔|允许用户重试上安装失败的设置|
-|allowLogCollectionOnInstallFailure|布尔|允许或阻止上安装失败日志集合|
+|hideInstallationProgress|Boolean|显示或隐藏用户安装进度|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|允许或阻止用户使用配置文件和应用程序安装完成之前的设备|
+|blockDeviceSetupRetryByUser|Boolean|允许用户重试上安装失败的设置|
+|allowLogCollectionOnInstallFailure|Boolean|允许或阻止上安装失败日志集合|
 |customErrorMessage|字符串|设置要在安装失败时显示自定义错误消息|
 |installProgressTimeoutInMinutes|Int32|以分钟为单位的设置安装进度超时|
-|allowDeviceUseOnInstallFailure|布尔|允许用户继续使用设备上安装失败|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户继续使用设备上安装失败|
 
 ## <a name="relationships"></a>Relationships
 无

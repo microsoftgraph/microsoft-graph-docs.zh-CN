@@ -1,12 +1,13 @@
 ---
 title: 更新 userPFXCertificate
 description: 更新 userPFXCertificate 对象的属性。
-ms.openlocfilehash: 9fde1e8ff073df7acf76119ace0848616424951a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347605"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +57,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |providerName|字符串|用于加密此 blob 的加密提供程序。|
 |键名|字符串|用于加密 blob （在提供程序） 项的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|填充在加密/解密过程中使用提供程序的方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|二进制数|加密的 PFX blob。|
+|encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|日期/时间时此 PFX 证书已导入。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书时的日期/时间。|

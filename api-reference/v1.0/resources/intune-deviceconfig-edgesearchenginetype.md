@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngineType 枚举类型
 description: 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
-ms.openlocfilehash: beccae3f3f29c2ced17354630be01c4b684eae74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 092ffd9e8ad1ae610bd3f9202f205a4ea348807a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346583"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 枚举类型
 

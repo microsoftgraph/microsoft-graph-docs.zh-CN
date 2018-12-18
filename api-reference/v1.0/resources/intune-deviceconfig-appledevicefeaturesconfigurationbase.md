@@ -1,12 +1,13 @@
 ---
 title: appleDeviceFeaturesConfigurationBase 资源类型
 description: Apple 设备功能配置的配置文件。
-ms.openlocfilehash: cdc2fa09eb535e6fd30fc621f1bebeecf34c840e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c243d67c44e9e9c73999e023cd7ca7d2c9938a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009647"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347220"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase 资源类型
 

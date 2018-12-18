@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceManagementScriptUserState
 description: 创建新的 deviceManagementScriptUserState 对象。
-ms.openlocfilehash: 4d6aba6ae11f2d6250d20524a1e6f47e55bbda2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbe9c964296854a92e62a86743d06d8577b675f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347577"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

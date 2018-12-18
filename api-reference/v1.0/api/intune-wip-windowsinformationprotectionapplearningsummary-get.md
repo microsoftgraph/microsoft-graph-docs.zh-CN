@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsInformationProtectionAppLearningSummary
 description: 读取 windowsInformationProtectionAppLearningSummary 对象的属性和关系。
-ms.openlocfilehash: 48031664a5a8a1351a51f32fe94f9c071e79f918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6686a1d09f0e6ef8378587d410a1f356e981a991
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346268"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>获取 windowsInformationProtectionAppLearningSummary
 
@@ -37,7 +38,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

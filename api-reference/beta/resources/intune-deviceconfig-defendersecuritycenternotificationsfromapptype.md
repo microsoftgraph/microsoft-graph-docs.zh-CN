@@ -1,12 +1,13 @@
 ---
 title: defenderSecurityCenterNotificationsFromAppType 枚举类型
 description: DefenderSecurityCenterNotificationsFromApp 的可能值
-ms.openlocfilehash: 4e547433affb590f6bea657f7b4c84da45bfcf23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13bba5deea6bf399654c8d08f449039d52f31371
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047160"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347276"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 枚举类型
 

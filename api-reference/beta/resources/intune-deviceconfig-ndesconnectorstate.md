@@ -1,12 +1,13 @@
 ---
 title: ndesConnectorState 枚举类型
 description: Ndes 连接符的当前状态。
-ms.openlocfilehash: 30d0f4a6244bcf6d0365f81e00dd55a71acaa8bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e52f1651ab5e829e1ebe3dca77fc5056d17bf13f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347472"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>ndesConnectorState 枚举类型
 

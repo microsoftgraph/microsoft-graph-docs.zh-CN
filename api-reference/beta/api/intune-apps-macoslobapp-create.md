@@ -1,12 +1,13 @@
 ---
 title: 创建 macOSLobApp
 description: 创建新的 macOSLobApp 对象。
-ms.openlocfilehash: 71f925bd2279365c0d3d73e4f63eca74bde46c86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 749aedf714a6b7319f92a1159fd522a1f2a8580e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046406"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345561"
 ---
 # <a name="create-macoslobapp"></a>创建 macOSLobApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 'TableRowCollection: ItemAt'
 description: 根据其在集合中的位置获取行。
-ms.openlocfilehash: 786e4cfb4ea9cbe86d2dff222a31737ab487b68f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 653f6154b36036f851ffc39d32e2e551b810dbfd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011131"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346814"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |index|Int32|要检索的对象的索引值。从零开始编制索引。|
 

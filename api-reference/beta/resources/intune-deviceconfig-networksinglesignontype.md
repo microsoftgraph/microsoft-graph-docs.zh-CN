@@ -1,12 +1,13 @@
 ---
 title: networkSingleSignOnType 枚举类型
 description: Wi-fi 网络单一登录类型设置。
-ms.openlocfilehash: f880da2485fbf8825441d5891a3d664a63067e30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345260"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: iosStoreApp 资源类型
 description: 包含 iOS 应用商店应用的属性和继承的属性。
-ms.openlocfilehash: 30712ff3f880d5eb59ba7a349735adee1af1da42
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0abc06f6bcae7f31ad60308423e8156b6e27a84d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346443"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: mobileLobApp 资源类型
 description: 包含所有移动业务线应用的属性的抽象基类。
-ms.openlocfilehash: cbfa3d69431f0113e263981053dbeeb176126204
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d807f0f49c9a15ef4532391f7db3be66605a5358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346331"
 ---
 # <a name="mobilelobapp-resource-type"></a>mobileLobApp 资源类型
 

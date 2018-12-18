@@ -1,12 +1,13 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 description: 凭据 Guard 设置的可能值。
-ms.openlocfilehash: 73668ec4d6d5026402757fae3443da4540fb374c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f6c952d1c480d42db45de6345eba883ff5848a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346961"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 

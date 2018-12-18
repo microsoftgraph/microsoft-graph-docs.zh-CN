@@ -1,12 +1,13 @@
 ---
 title: 列出 windowsPhone81GeneralConfigurations
 description: 列出 windowsPhone81GeneralConfiguration 对象的属性和关系。
-ms.openlocfilehash: a75593ebc64c08db5f73fd758c5187c4397cc0d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9b6bd1faa1a6c4460c97374d90967b8fc7b18e25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346877"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>列出 windowsPhone81GeneralConfigurations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

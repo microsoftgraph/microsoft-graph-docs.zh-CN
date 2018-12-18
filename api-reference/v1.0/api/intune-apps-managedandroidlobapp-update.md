@@ -1,12 +1,13 @@
 ---
 title: 更新 managedAndroidLobApp
 description: 更新 managedAndroidLobApp 对象的属性。
-ms.openlocfilehash: 8991efc1a3957100902a3801a284a17ee93c659a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d121570b5d1a5de6529dcf5b163354849178366
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009746"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346261"
 ---
 # <a name="update-managedandroidlobapp"></a>更新 managedAndroidLobApp
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

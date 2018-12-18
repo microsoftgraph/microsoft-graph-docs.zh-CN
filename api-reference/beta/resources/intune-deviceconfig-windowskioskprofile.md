@@ -1,12 +1,13 @@
 ---
 title: windowsKioskProfile 资源类型
 description: 尚未记录
-ms.openlocfilehash: 074c6caa9b632016f092f67192064ae18e9dcce3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce57b18e86f40a46053a5e0a0f41652763a6d055
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345351"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列出人员
 description: 检索按其与用户，这由用户的通信和协作模式和业务关系的相关性排序的 person 对象的列表。
-ms.openlocfilehash: fc39f983251f668b4e1aa43ccb8be9cee5d23791
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 64d24111f295fd076024a889d050c8c48c104295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347654"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -37,7 +38,7 @@ GET /users/{id | userPrincipalName}/people
 
 此方法支持以下 OData 查询参数，以帮助自定义响应。
 
-|名称|值|说明|
+|Name|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
@@ -48,7 +49,7 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Accept | application/json |

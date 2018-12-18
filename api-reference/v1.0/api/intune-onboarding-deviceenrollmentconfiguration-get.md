@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceEnrollmentConfiguration
 description: 读取 deviceEnrollmentConfiguration 对象的属性和关系。
-ms.openlocfilehash: 833dcacc91aee8d5f61c44be281f9168287b68e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 941f7b9a00c6a8b5be7bb49560e3795ac41ab1f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345897"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>获取 deviceEnrollmentConfiguration
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

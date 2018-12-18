@@ -1,12 +1,13 @@
 ---
 title: 获取 importedWindowsAutopilotDeviceIdentity
 description: 阅读属性和关系importedWindowsAutopilotDeviceIdentity对象。
-ms.openlocfilehash: be98ceb835469301184bc12a782ecae57340db70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e6ef991f8bf50fbc87300673925b6f25fec6e16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048452"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345323"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
 
@@ -40,7 +41,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

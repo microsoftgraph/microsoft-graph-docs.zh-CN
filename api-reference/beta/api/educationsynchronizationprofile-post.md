@@ -1,12 +1,13 @@
 ---
 title: 创建 educationSynchronizationProfile
 description: '在租户中创建一个新的学校数据同步配置文件的请求。 查询以获取配置文件的状态的状态。 '
-ms.openlocfilehash: 0d2c4126ab92e376919ee0b69378754828a924a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044258"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345309"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ ms.locfileid: "27044258"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | Permissions |
+| 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 （个人 Microsoft 帐户|不支持。|
@@ -30,7 +31,7 @@ POST /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 | Content-Type | string | 应用程序/json。 必需。 |

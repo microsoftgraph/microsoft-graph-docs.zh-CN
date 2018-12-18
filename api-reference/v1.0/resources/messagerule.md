@@ -1,12 +1,13 @@
 ---
 title: messageRule 资源类型
 description: 适用于用户收件箱邮件的规则。
-ms.openlocfilehash: beada909a5b4abc1d91a40cf1674916f3d3c04ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1a8e0bb0c8540848c9a57bd59b7536688afd6926
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010908"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347325"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 

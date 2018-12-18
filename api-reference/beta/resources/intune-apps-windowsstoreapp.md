@@ -1,12 +1,13 @@
 ---
 title: windowsStoreApp 资源类型
 description: 包含属性和 Windows 应用商店应用程序继承的属性。
-ms.openlocfilehash: 17b596a9874243f78c245e80df7a47791fe6472c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c02681dcc8538116967a4b45e01485f9b69b75c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346492"
 ---
 # <a name="windowsstoreapp-resource-type"></a>windowsStoreApp 资源类型
 

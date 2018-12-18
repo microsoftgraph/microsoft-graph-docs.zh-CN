@@ -1,12 +1,13 @@
 ---
 title: 删除 localizedNotificationMessage
 description: 删除 localizedNotificationMessage。
-ms.openlocfilehash: a601930455318e08eeeb978b8fc8958a9e6375bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 301038af67d521f41243f5f537388f51052852b2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042656"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347374"
 ---
 # <a name="delete-localizednotificationmessage"></a>删除 localizedNotificationMessage
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

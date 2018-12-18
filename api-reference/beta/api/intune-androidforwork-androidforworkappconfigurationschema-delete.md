@@ -1,12 +1,13 @@
 ---
 title: 删除 androidForWorkAppConfigurationSchema
 description: 删除 androidForWorkAppConfigurationSchema。
-ms.openlocfilehash: 83d41173dc4e6d34cc482ae224816c937fb014dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e88f137fc3b3893337d6b20f65ef07c887e0c0b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044156"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346674"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>删除 androidForWorkAppConfigurationSchema
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
