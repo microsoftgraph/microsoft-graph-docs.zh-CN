@@ -1,50 +1,51 @@
 ---
 title: 列表 administrativeUnits
 description: 检索 administrativeUnit 对象的列表。
-ms.openlocfilehash: 6baf04cfe668bb33256ad252261a3b7dae807c4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 03ccd5293bc12d6f3e13128367c29fa0317accff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322825"
 ---
-# <a name="list-administrativeunits"></a><span data-ttu-id="901d1-103">列表 administrativeUnits</span><span class="sxs-lookup"><span data-stu-id="901d1-103">List administrativeUnits</span></span>
+# <a name="list-administrativeunits"></a><span data-ttu-id="2ea6b-103">列表 administrativeUnits</span><span class="sxs-lookup"><span data-stu-id="2ea6b-103">List administrativeUnits</span></span>
 
-> <span data-ttu-id="901d1-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="901d1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="901d1-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="901d1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2ea6b-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2ea6b-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="901d1-106">检索[administrativeUnit](../resources/administrativeunit.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="901d1-106">Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="901d1-107">权限</span><span class="sxs-lookup"><span data-stu-id="901d1-107">Permissions</span></span>
-<span data-ttu-id="901d1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="901d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2ea6b-106">检索[administrativeUnit](../resources/administrativeunit.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-106">Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2ea6b-107">权限</span><span class="sxs-lookup"><span data-stu-id="2ea6b-107">Permissions</span></span>
+<span data-ttu-id="2ea6b-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="901d1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="901d1-110">Permission type</span></span>      | <span data-ttu-id="901d1-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="901d1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2ea6b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2ea6b-110">Permission type</span></span>      | <span data-ttu-id="2ea6b-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2ea6b-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="901d1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="901d1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="901d1-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="901d1-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="901d1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="901d1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="901d1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="901d1-115">Not supported.</span></span>    |
-|<span data-ttu-id="901d1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="901d1-116">Application</span></span> | <span data-ttu-id="901d1-117">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="901d1-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2ea6b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2ea6b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2ea6b-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2ea6b-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2ea6b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2ea6b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ea6b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-115">Not supported.</span></span>    |
+|<span data-ttu-id="2ea6b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2ea6b-116">Application</span></span> | <span data-ttu-id="2ea6b-117">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ea6b-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="901d1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="901d1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2ea6b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2ea6b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="901d1-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="901d1-119">Optional query parameters</span></span>
-<span data-ttu-id="901d1-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="901d1-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2ea6b-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2ea6b-119">Optional query parameters</span></span>
+<span data-ttu-id="2ea6b-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="901d1-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="901d1-121">Request headers</span></span>
-| <span data-ttu-id="901d1-122">名称</span><span class="sxs-lookup"><span data-stu-id="901d1-122">Name</span></span>      |<span data-ttu-id="901d1-123">说明</span><span class="sxs-lookup"><span data-stu-id="901d1-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2ea6b-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2ea6b-121">Request headers</span></span>
+| <span data-ttu-id="2ea6b-122">Name</span><span class="sxs-lookup"><span data-stu-id="2ea6b-122">Name</span></span>      |<span data-ttu-id="2ea6b-123">说明</span><span class="sxs-lookup"><span data-stu-id="2ea6b-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="901d1-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="901d1-124">Authorization</span></span>  | <span data-ttu-id="901d1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="901d1-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="2ea6b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2ea6b-124">Authorization</span></span>  | <span data-ttu-id="2ea6b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="901d1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="901d1-127">Request body</span></span>
-<span data-ttu-id="901d1-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="901d1-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2ea6b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2ea6b-127">Request body</span></span>
+<span data-ttu-id="2ea6b-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="901d1-129">响应</span><span class="sxs-lookup"><span data-stu-id="901d1-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2ea6b-129">响应</span><span class="sxs-lookup"><span data-stu-id="2ea6b-129">Response</span></span>
 
-<span data-ttu-id="901d1-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[administrativeUnit](../resources/administrativeunit.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="901d1-130">If successful, this method returns a `200 OK` response code and collection of [administrativeUnit](../resources/administrativeunit.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="901d1-131">示例</span><span class="sxs-lookup"><span data-stu-id="901d1-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="901d1-132">请求</span><span class="sxs-lookup"><span data-stu-id="901d1-132">Request</span></span>
-<span data-ttu-id="901d1-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="901d1-133">Here is an example of the request.</span></span>
+<span data-ttu-id="2ea6b-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[administrativeUnit](../resources/administrativeunit.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-130">If successful, this method returns a `200 OK` response code and collection of [administrativeUnit](../resources/administrativeunit.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2ea6b-131">示例</span><span class="sxs-lookup"><span data-stu-id="2ea6b-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2ea6b-132">请求</span><span class="sxs-lookup"><span data-stu-id="2ea6b-132">Request</span></span>
+<span data-ttu-id="2ea6b-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunits"
@@ -52,8 +53,8 @@ GET /administrativeUnits
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits
 ```
-##### <a name="response"></a><span data-ttu-id="901d1-134">响应</span><span class="sxs-lookup"><span data-stu-id="901d1-134">Response</span></span>
-<span data-ttu-id="901d1-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="901d1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2ea6b-134">响应</span><span class="sxs-lookup"><span data-stu-id="2ea6b-134">Response</span></span>
+<span data-ttu-id="2ea6b-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2ea6b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

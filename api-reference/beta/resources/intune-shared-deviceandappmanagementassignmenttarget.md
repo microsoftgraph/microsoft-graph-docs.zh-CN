@@ -1,28 +1,29 @@
 ---
 title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
-ms.openlocfilehash: a4d0a3c50bd63c2381b7b7dea5275449c8248436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d655bd9f8f18087916eb4943ffdb2cbf8921b790
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320788"
 ---
-# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="9716b-103">deviceAndAppManagementAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="9716b-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
+# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="1d4b5-103">deviceAndAppManagementAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="1d4b5-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="9716b-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="9716b-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9716b-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="9716b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1d4b5-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="1d4b5-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d4b5-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="1d4b5-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9716b-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="9716b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1d4b5-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="1d4b5-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9716b-107">赋值目标的基类型。</span><span class="sxs-lookup"><span data-stu-id="9716b-107">Base type for assignment targets.</span></span>
-## <a name="properties"></a><span data-ttu-id="9716b-108">属性</span><span class="sxs-lookup"><span data-stu-id="9716b-108">Properties</span></span>
-|<span data-ttu-id="9716b-109">属性</span><span class="sxs-lookup"><span data-stu-id="9716b-109">Property</span></span>|<span data-ttu-id="9716b-110">类型</span><span class="sxs-lookup"><span data-stu-id="9716b-110">Type</span></span>|<span data-ttu-id="9716b-111">说明</span><span class="sxs-lookup"><span data-stu-id="9716b-111">Description</span></span>|
+<span data-ttu-id="1d4b5-107">赋值目标的基类型。</span><span class="sxs-lookup"><span data-stu-id="1d4b5-107">Base type for assignment targets.</span></span>
+## <a name="properties"></a><span data-ttu-id="1d4b5-108">属性</span><span class="sxs-lookup"><span data-stu-id="1d4b5-108">Properties</span></span>
+|<span data-ttu-id="1d4b5-109">属性</span><span class="sxs-lookup"><span data-stu-id="1d4b5-109">Property</span></span>|<span data-ttu-id="1d4b5-110">类型</span><span class="sxs-lookup"><span data-stu-id="1d4b5-110">Type</span></span>|<span data-ttu-id="1d4b5-111">说明</span><span class="sxs-lookup"><span data-stu-id="1d4b5-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="9716b-112">关系</span><span class="sxs-lookup"><span data-stu-id="9716b-112">Relationships</span></span>
-<span data-ttu-id="9716b-113">无</span><span class="sxs-lookup"><span data-stu-id="9716b-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="9716b-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9716b-114">JSON Representation</span></span>
-<span data-ttu-id="9716b-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9716b-115">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="1d4b5-112">关系</span><span class="sxs-lookup"><span data-stu-id="1d4b5-112">Relationships</span></span>
+<span data-ttu-id="1d4b5-113">无</span><span class="sxs-lookup"><span data-stu-id="1d4b5-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1d4b5-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1d4b5-114">JSON Representation</span></span>
+<span data-ttu-id="1d4b5-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1d4b5-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
