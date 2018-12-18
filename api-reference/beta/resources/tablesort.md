@@ -1,43 +1,44 @@
 ---
 title: TableSort 资源类型
 description: 管理对 Table 对象的排序操作。
-ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049394"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339821"
 ---
-# <a name="tablesort-resource-type"></a><span data-ttu-id="7fff3-103">TableSort 资源类型</span><span class="sxs-lookup"><span data-stu-id="7fff3-103">TableSort resource type</span></span>
+# <a name="tablesort-resource-type"></a><span data-ttu-id="deb60-103">TableSort 资源类型</span><span class="sxs-lookup"><span data-stu-id="deb60-103">TableSort resource type</span></span>
 
-> <span data-ttu-id="7fff3-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="7fff3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7fff3-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="7fff3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="deb60-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="deb60-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="deb60-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="deb60-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7fff3-106">管理对 Table 对象的排序操作。</span><span class="sxs-lookup"><span data-stu-id="7fff3-106">Manages sorting operations on Table objects.</span></span>
+<span data-ttu-id="deb60-106">管理对 Table 对象的排序操作。</span><span class="sxs-lookup"><span data-stu-id="deb60-106">Manages sorting operations on Table objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="7fff3-107">方法</span><span class="sxs-lookup"><span data-stu-id="7fff3-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="deb60-107">方法</span><span class="sxs-lookup"><span data-stu-id="deb60-107">Methods</span></span>
 
-| <span data-ttu-id="7fff3-108">方法</span><span class="sxs-lookup"><span data-stu-id="7fff3-108">Method</span></span>           | <span data-ttu-id="7fff3-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="7fff3-109">Return Type</span></span>    |<span data-ttu-id="7fff3-110">说明</span><span class="sxs-lookup"><span data-stu-id="7fff3-110">Description</span></span>|
+| <span data-ttu-id="deb60-108">方法</span><span class="sxs-lookup"><span data-stu-id="deb60-108">Method</span></span>           | <span data-ttu-id="deb60-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="deb60-109">Return Type</span></span>    |<span data-ttu-id="deb60-110">说明</span><span class="sxs-lookup"><span data-stu-id="deb60-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="7fff3-111">获取 TableSort</span><span class="sxs-lookup"><span data-stu-id="7fff3-111">Get TableSort</span></span>](../api/tablesort-get.md) | [<span data-ttu-id="7fff3-112">TableSort</span><span class="sxs-lookup"><span data-stu-id="7fff3-112">TableSort</span></span>](tablesort.md) |<span data-ttu-id="7fff3-113">读取 tableSort 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="7fff3-113">Read properties and relationships of tableSort object.</span></span>|
-|[<span data-ttu-id="7fff3-114">应用</span><span class="sxs-lookup"><span data-stu-id="7fff3-114">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="7fff3-115">无</span><span class="sxs-lookup"><span data-stu-id="7fff3-115">None</span></span>|<span data-ttu-id="7fff3-116">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="7fff3-116">Perform a sort operation.</span></span>|
-|[<span data-ttu-id="7fff3-117">Clear</span><span class="sxs-lookup"><span data-stu-id="7fff3-117">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="7fff3-118">无</span><span class="sxs-lookup"><span data-stu-id="7fff3-118">None</span></span>|<span data-ttu-id="7fff3-p102">清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。</span><span class="sxs-lookup"><span data-stu-id="7fff3-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
-|[<span data-ttu-id="7fff3-121">重新应用</span><span class="sxs-lookup"><span data-stu-id="7fff3-121">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="7fff3-122">无</span><span class="sxs-lookup"><span data-stu-id="7fff3-122">None</span></span>|<span data-ttu-id="7fff3-123">对表重新应用当前的排序参数。</span><span class="sxs-lookup"><span data-stu-id="7fff3-123">Reapplies the current sorting parameters to the table.</span></span>|
+|[<span data-ttu-id="deb60-111">获取 TableSort</span><span class="sxs-lookup"><span data-stu-id="deb60-111">Get TableSort</span></span>](../api/tablesort-get.md) | [<span data-ttu-id="deb60-112">TableSort</span><span class="sxs-lookup"><span data-stu-id="deb60-112">TableSort</span></span>](tablesort.md) |<span data-ttu-id="deb60-113">读取 tableSort 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="deb60-113">Read properties and relationships of tableSort object.</span></span>|
+|[<span data-ttu-id="deb60-114">应用</span><span class="sxs-lookup"><span data-stu-id="deb60-114">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="deb60-115">无</span><span class="sxs-lookup"><span data-stu-id="deb60-115">None</span></span>|<span data-ttu-id="deb60-116">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="deb60-116">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="deb60-117">Clear</span><span class="sxs-lookup"><span data-stu-id="deb60-117">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="deb60-118">无</span><span class="sxs-lookup"><span data-stu-id="deb60-118">None</span></span>|<span data-ttu-id="deb60-p102">清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。</span><span class="sxs-lookup"><span data-stu-id="deb60-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
+|[<span data-ttu-id="deb60-121">重新应用</span><span class="sxs-lookup"><span data-stu-id="deb60-121">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="deb60-122">无</span><span class="sxs-lookup"><span data-stu-id="deb60-122">None</span></span>|<span data-ttu-id="deb60-123">对表重新应用当前的排序参数。</span><span class="sxs-lookup"><span data-stu-id="deb60-123">Reapplies the current sorting parameters to the table.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="7fff3-124">属性</span><span class="sxs-lookup"><span data-stu-id="7fff3-124">Properties</span></span>
-| <span data-ttu-id="7fff3-125">属性</span><span class="sxs-lookup"><span data-stu-id="7fff3-125">Property</span></span>     | <span data-ttu-id="7fff3-126">类型</span><span class="sxs-lookup"><span data-stu-id="7fff3-126">Type</span></span>   |<span data-ttu-id="7fff3-127">说明</span><span class="sxs-lookup"><span data-stu-id="7fff3-127">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="deb60-124">属性</span><span class="sxs-lookup"><span data-stu-id="deb60-124">Properties</span></span>
+| <span data-ttu-id="deb60-125">属性</span><span class="sxs-lookup"><span data-stu-id="deb60-125">Property</span></span>     | <span data-ttu-id="deb60-126">类型</span><span class="sxs-lookup"><span data-stu-id="deb60-126">Type</span></span>   |<span data-ttu-id="deb60-127">说明</span><span class="sxs-lookup"><span data-stu-id="deb60-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7fff3-128">matchCase</span><span class="sxs-lookup"><span data-stu-id="7fff3-128">matchCase</span></span>|<span data-ttu-id="7fff3-129">boolean</span><span class="sxs-lookup"><span data-stu-id="7fff3-129">boolean</span></span>|<span data-ttu-id="7fff3-p103">表示最后一次对表进行排序时大小写是否有影响。只读。</span><span class="sxs-lookup"><span data-stu-id="7fff3-p103">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
-|<span data-ttu-id="7fff3-132">方法</span><span class="sxs-lookup"><span data-stu-id="7fff3-132">method</span></span>|<span data-ttu-id="7fff3-133">string</span><span class="sxs-lookup"><span data-stu-id="7fff3-133">string</span></span>|<span data-ttu-id="7fff3-p104">表示最后一次对表排序所使用的中文字符排序方法。可能的值是：`PinYin`、`StrokeCount`。只读。</span><span class="sxs-lookup"><span data-stu-id="7fff3-p104">Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.</span></span>|
+|<span data-ttu-id="deb60-128">matchCase</span><span class="sxs-lookup"><span data-stu-id="deb60-128">matchCase</span></span>|<span data-ttu-id="deb60-129">boolean</span><span class="sxs-lookup"><span data-stu-id="deb60-129">boolean</span></span>|<span data-ttu-id="deb60-p103">表示最后一次对表进行排序时大小写是否有影响。只读。</span><span class="sxs-lookup"><span data-stu-id="deb60-p103">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
+|<span data-ttu-id="deb60-132">方法</span><span class="sxs-lookup"><span data-stu-id="deb60-132">method</span></span>|<span data-ttu-id="deb60-133">string</span><span class="sxs-lookup"><span data-stu-id="deb60-133">string</span></span>|<span data-ttu-id="deb60-p104">表示最后一次对表排序所使用的中文字符排序方法。可能的值是：`PinYin`、`StrokeCount`。只读。</span><span class="sxs-lookup"><span data-stu-id="deb60-p104">Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7fff3-137">Relationships</span><span class="sxs-lookup"><span data-stu-id="7fff3-137">Relationships</span></span>
-| <span data-ttu-id="7fff3-138">关系</span><span class="sxs-lookup"><span data-stu-id="7fff3-138">Relationship</span></span> | <span data-ttu-id="7fff3-139">类型</span><span class="sxs-lookup"><span data-stu-id="7fff3-139">Type</span></span>   |<span data-ttu-id="7fff3-140">说明</span><span class="sxs-lookup"><span data-stu-id="7fff3-140">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="deb60-137">Relationships</span><span class="sxs-lookup"><span data-stu-id="deb60-137">Relationships</span></span>
+| <span data-ttu-id="deb60-138">关系</span><span class="sxs-lookup"><span data-stu-id="deb60-138">Relationship</span></span> | <span data-ttu-id="deb60-139">类型</span><span class="sxs-lookup"><span data-stu-id="deb60-139">Type</span></span>   |<span data-ttu-id="deb60-140">说明</span><span class="sxs-lookup"><span data-stu-id="deb60-140">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7fff3-141">fields</span><span class="sxs-lookup"><span data-stu-id="7fff3-141">fields</span></span>|[<span data-ttu-id="7fff3-142">SortField</span><span class="sxs-lookup"><span data-stu-id="7fff3-142">SortField</span></span>](sortfield.md)|<span data-ttu-id="7fff3-p105">表示最后一次对表排序所使用的当前条件。只读。</span><span class="sxs-lookup"><span data-stu-id="7fff3-p105">Represents the current conditions used to last sort the table. Read-only.</span></span>|
+|<span data-ttu-id="deb60-141">fields</span><span class="sxs-lookup"><span data-stu-id="deb60-141">fields</span></span>|[<span data-ttu-id="deb60-142">SortField</span><span class="sxs-lookup"><span data-stu-id="deb60-142">SortField</span></span>](sortfield.md)|<span data-ttu-id="deb60-p105">表示最后一次对表排序所使用的当前条件。只读。</span><span class="sxs-lookup"><span data-stu-id="deb60-p105">Represents the current conditions used to last sort the table. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7fff3-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7fff3-145">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="deb60-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="deb60-145">JSON representation</span></span>
 
-<span data-ttu-id="7fff3-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7fff3-146">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="deb60-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="deb60-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
