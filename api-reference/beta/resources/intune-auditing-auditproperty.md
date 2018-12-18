@@ -1,31 +1,32 @@
 ---
 title: auditProperty 资源类型
 description: 包含审核属性的属性的类。
-ms.openlocfilehash: 944928014eee2e47ee0478053196bfbc1a999fc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 801ac78cb81e126ff49c4c680fc0624611a9f6d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044897"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316315"
 ---
-# <a name="auditproperty-resource-type"></a><span data-ttu-id="ff255-103">auditProperty 资源类型</span><span class="sxs-lookup"><span data-stu-id="ff255-103">auditProperty resource type</span></span>
+# <a name="auditproperty-resource-type"></a><span data-ttu-id="6a068-103">auditProperty 资源类型</span><span class="sxs-lookup"><span data-stu-id="6a068-103">auditProperty resource type</span></span>
 
-> <span data-ttu-id="ff255-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ff255-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ff255-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ff255-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6a068-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6a068-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6a068-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6a068-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ff255-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="ff255-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6a068-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="6a068-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ff255-107">包含审核属性的属性的类。</span><span class="sxs-lookup"><span data-stu-id="ff255-107">A class containing the properties for Audit Property.</span></span>
-## <a name="properties"></a><span data-ttu-id="ff255-108">属性</span><span class="sxs-lookup"><span data-stu-id="ff255-108">Properties</span></span>
-|<span data-ttu-id="ff255-109">属性</span><span class="sxs-lookup"><span data-stu-id="ff255-109">Property</span></span>|<span data-ttu-id="ff255-110">类型</span><span class="sxs-lookup"><span data-stu-id="ff255-110">Type</span></span>|<span data-ttu-id="ff255-111">说明</span><span class="sxs-lookup"><span data-stu-id="ff255-111">Description</span></span>|
+<span data-ttu-id="6a068-107">包含审核属性的属性的类。</span><span class="sxs-lookup"><span data-stu-id="6a068-107">A class containing the properties for Audit Property.</span></span>
+## <a name="properties"></a><span data-ttu-id="6a068-108">属性</span><span class="sxs-lookup"><span data-stu-id="6a068-108">Properties</span></span>
+|<span data-ttu-id="6a068-109">属性</span><span class="sxs-lookup"><span data-stu-id="6a068-109">Property</span></span>|<span data-ttu-id="6a068-110">类型</span><span class="sxs-lookup"><span data-stu-id="6a068-110">Type</span></span>|<span data-ttu-id="6a068-111">说明</span><span class="sxs-lookup"><span data-stu-id="6a068-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ff255-112">displayName</span><span class="sxs-lookup"><span data-stu-id="ff255-112">displayName</span></span>|<span data-ttu-id="ff255-113">String</span><span class="sxs-lookup"><span data-stu-id="ff255-113">String</span></span>|<span data-ttu-id="ff255-114">显示名称。</span><span class="sxs-lookup"><span data-stu-id="ff255-114">Display name.</span></span>|
-|<span data-ttu-id="ff255-115">oldValue</span><span class="sxs-lookup"><span data-stu-id="ff255-115">oldValue</span></span>|<span data-ttu-id="ff255-116">String</span><span class="sxs-lookup"><span data-stu-id="ff255-116">String</span></span>|<span data-ttu-id="ff255-117">旧值。</span><span class="sxs-lookup"><span data-stu-id="ff255-117">Old value.</span></span>|
-|<span data-ttu-id="ff255-118">NewValue</span><span class="sxs-lookup"><span data-stu-id="ff255-118">newValue</span></span>|<span data-ttu-id="ff255-119">String</span><span class="sxs-lookup"><span data-stu-id="ff255-119">String</span></span>|<span data-ttu-id="ff255-120">新值。</span><span class="sxs-lookup"><span data-stu-id="ff255-120">New value.</span></span>|
+|<span data-ttu-id="6a068-112">displayName</span><span class="sxs-lookup"><span data-stu-id="6a068-112">displayName</span></span>|<span data-ttu-id="6a068-113">String</span><span class="sxs-lookup"><span data-stu-id="6a068-113">String</span></span>|<span data-ttu-id="6a068-114">显示名称。</span><span class="sxs-lookup"><span data-stu-id="6a068-114">Display name.</span></span>|
+|<span data-ttu-id="6a068-115">oldValue</span><span class="sxs-lookup"><span data-stu-id="6a068-115">oldValue</span></span>|<span data-ttu-id="6a068-116">String</span><span class="sxs-lookup"><span data-stu-id="6a068-116">String</span></span>|<span data-ttu-id="6a068-117">旧值。</span><span class="sxs-lookup"><span data-stu-id="6a068-117">Old value.</span></span>|
+|<span data-ttu-id="6a068-118">NewValue</span><span class="sxs-lookup"><span data-stu-id="6a068-118">newValue</span></span>|<span data-ttu-id="6a068-119">String</span><span class="sxs-lookup"><span data-stu-id="6a068-119">String</span></span>|<span data-ttu-id="6a068-120">新值。</span><span class="sxs-lookup"><span data-stu-id="6a068-120">New value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ff255-121">关系</span><span class="sxs-lookup"><span data-stu-id="ff255-121">Relationships</span></span>
-<span data-ttu-id="ff255-122">无</span><span class="sxs-lookup"><span data-stu-id="ff255-122">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="ff255-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ff255-123">JSON Representation</span></span>
-<span data-ttu-id="ff255-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ff255-124">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="6a068-121">关系</span><span class="sxs-lookup"><span data-stu-id="6a068-121">Relationships</span></span>
+<span data-ttu-id="6a068-122">无</span><span class="sxs-lookup"><span data-stu-id="6a068-122">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a068-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6a068-123">JSON Representation</span></span>
+<span data-ttu-id="6a068-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6a068-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditProperty"
