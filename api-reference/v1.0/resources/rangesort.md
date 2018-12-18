@@ -1,33 +1,34 @@
 ---
 title: RangeSort 资源类型
 description: 管理对 Range 对象的排序操作。
-ms.openlocfilehash: 09f9a6763c634ee12251651a650d29528a534084
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 44aa472b218fa2c5f4f0d0db1af6f9c919283197
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353506"
 ---
-# <a name="rangesort-resource-type"></a><span data-ttu-id="c3e17-103">RangeSort 资源类型</span><span class="sxs-lookup"><span data-stu-id="c3e17-103">RangeSort resource type</span></span>
+# <a name="rangesort-resource-type"></a><span data-ttu-id="2e53c-103">RangeSort 资源类型</span><span class="sxs-lookup"><span data-stu-id="2e53c-103">RangeSort resource type</span></span>
 
-<span data-ttu-id="c3e17-104">管理对 Range 对象的排序操作。</span><span class="sxs-lookup"><span data-stu-id="c3e17-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="2e53c-104">管理对 Range 对象的排序操作。</span><span class="sxs-lookup"><span data-stu-id="2e53c-104">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="c3e17-105">方法</span><span class="sxs-lookup"><span data-stu-id="c3e17-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="2e53c-105">方法</span><span class="sxs-lookup"><span data-stu-id="2e53c-105">Methods</span></span>
 
-| <span data-ttu-id="c3e17-106">方法</span><span class="sxs-lookup"><span data-stu-id="c3e17-106">Method</span></span>           | <span data-ttu-id="c3e17-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="c3e17-107">Return Type</span></span>    |<span data-ttu-id="c3e17-108">说明</span><span class="sxs-lookup"><span data-stu-id="c3e17-108">Description</span></span>|
+| <span data-ttu-id="2e53c-106">方法</span><span class="sxs-lookup"><span data-stu-id="2e53c-106">Method</span></span>           | <span data-ttu-id="2e53c-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="2e53c-107">Return Type</span></span>    |<span data-ttu-id="2e53c-108">说明</span><span class="sxs-lookup"><span data-stu-id="2e53c-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c3e17-109">应用</span><span class="sxs-lookup"><span data-stu-id="c3e17-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="c3e17-110">无</span><span class="sxs-lookup"><span data-stu-id="c3e17-110">None</span></span>|<span data-ttu-id="c3e17-111">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="c3e17-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="2e53c-109">应用</span><span class="sxs-lookup"><span data-stu-id="2e53c-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="2e53c-110">无</span><span class="sxs-lookup"><span data-stu-id="2e53c-110">None</span></span>|<span data-ttu-id="2e53c-111">执行排序操作。</span><span class="sxs-lookup"><span data-stu-id="2e53c-111">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c3e17-112">属性</span><span class="sxs-lookup"><span data-stu-id="c3e17-112">Properties</span></span>
-<span data-ttu-id="c3e17-113">无</span><span class="sxs-lookup"><span data-stu-id="c3e17-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="2e53c-112">属性</span><span class="sxs-lookup"><span data-stu-id="2e53c-112">Properties</span></span>
+<span data-ttu-id="2e53c-113">无</span><span class="sxs-lookup"><span data-stu-id="2e53c-113">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="c3e17-114">Relationships</span><span class="sxs-lookup"><span data-stu-id="c3e17-114">Relationships</span></span>
-<span data-ttu-id="c3e17-115">无</span><span class="sxs-lookup"><span data-stu-id="c3e17-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2e53c-114">Relationships</span><span class="sxs-lookup"><span data-stu-id="2e53c-114">Relationships</span></span>
+<span data-ttu-id="2e53c-115">无</span><span class="sxs-lookup"><span data-stu-id="2e53c-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c3e17-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c3e17-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2e53c-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2e53c-116">JSON representation</span></span>
 
-<span data-ttu-id="c3e17-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c3e17-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2e53c-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2e53c-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,8 +44,8 @@ ms.locfileid: "27008634"
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="c3e17-118">请求</span><span class="sxs-lookup"><span data-stu-id="c3e17-118">Request</span></span>
-<span data-ttu-id="c3e17-119">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c3e17-119">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2e53c-118">请求</span><span class="sxs-lookup"><span data-stu-id="2e53c-118">Request</span></span>
+<span data-ttu-id="2e53c-119">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2e53c-119">Here is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -54,8 +55,8 @@ ms.locfileid: "27008634"
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
 
-##### <a name="response"></a><span data-ttu-id="c3e17-120">响应</span><span class="sxs-lookup"><span data-stu-id="c3e17-120">Response</span></span>
-<span data-ttu-id="c3e17-121">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c3e17-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2e53c-120">响应</span><span class="sxs-lookup"><span data-stu-id="2e53c-120">Response</span></span>
+<span data-ttu-id="2e53c-121">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2e53c-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
