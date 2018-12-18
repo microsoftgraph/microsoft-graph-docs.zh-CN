@@ -1,12 +1,13 @@
 ---
 title: managedAppDataEncryptionType 枚举类型
 description: 代表向其应用程序数据进行加密托管应用程序的级别
-ms.openlocfilehash: a642a3efc01f719ca72134f737fe2bdd2596d2b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bd23f6cd590724c2c981ddf2c3087ead4c21817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326115"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 

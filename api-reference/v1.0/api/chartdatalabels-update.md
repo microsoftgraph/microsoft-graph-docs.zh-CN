@@ -1,12 +1,13 @@
 ---
 title: 更新 chartdatalabels
 description: 更新 chartdatalabels 对象的属性。
-ms.openlocfilehash: d0e7628bc342d83dfd349104105428bb81c4c8f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 86799ea99bbd4f5e2eecdc5ff72745619a46a5a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008707"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335761"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -26,7 +27,7 @@ ms.locfileid: "27008707"
 PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

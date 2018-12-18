@@ -1,12 +1,13 @@
 ---
 title: Microsoft Intune 中的设备配置
 description: 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
-ms.openlocfilehash: d5a4d62284a04ffef0c6d53168fc1b484d203e4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 981a7fee59ebfcf302b5325f33beb9abd6a2a1c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329251"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 

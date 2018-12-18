@@ -1,12 +1,13 @@
 ---
 title: getAssignedRoleIdsForLoggedInUser 函数
 description: 检索已分配的角色定义和角色分配的当前经过身份验证的用户。
-ms.openlocfilehash: 0e19a04154762f917a968e103911a66926a2d96e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccfa8c3eff38854f3576aa0cb50688c80fdacdcf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335061"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 
@@ -37,7 +38,7 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

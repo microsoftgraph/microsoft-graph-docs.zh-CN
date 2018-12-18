@@ -1,12 +1,13 @@
 ---
 title: uploadDepToken 操作
 description: 上载新的设备注册程序令牌
-ms.openlocfilehash: 0230717d84e5d73834f8ce82a73e076f1b2e7142
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6fc303afa5efb5fab312732c95545b73004660a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330644"
 ---
 # <a name="uploaddeptoken-action"></a>uploadDepToken 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

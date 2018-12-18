@@ -1,12 +1,13 @@
 ---
 title: 更新工作表
 description: 更新 worksheet 对象的属性。
-ms.openlocfilehash: 16db37919009dbd935bcd8959111f888ffa97d2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ab61b65c03ea69a77253226c5be785d0314117bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045275"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326437"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -28,7 +29,7 @@ ms.locfileid: "27045275"
 PATCH /workbook/worksheets/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

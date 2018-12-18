@@ -1,12 +1,13 @@
 ---
 title: mobileAppTroubleshootingHistoryItem 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
-ms.openlocfilehash: 8fdeb522cd714f9265bc9f453fb5381bd925c481
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 132039a0b6e457ebd2ca3e545f6f15dd4ad7ac58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046903"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329524"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem 资源类型
 

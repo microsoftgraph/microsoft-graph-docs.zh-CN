@@ -1,12 +1,13 @@
 ---
 title: shutDown 操作
 description: 关闭设备
-ms.openlocfilehash: ff6a364f43168e06f6a129a2bc666ab9fcd57899
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7fab644bbdbb13cde0ca2bf725e19546e2c6c9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335152"
 ---
 # <a name="shutdown-action"></a>shutDown 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

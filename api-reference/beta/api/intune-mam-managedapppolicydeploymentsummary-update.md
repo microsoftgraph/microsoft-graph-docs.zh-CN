@@ -1,12 +1,13 @@
 ---
 title: 更新 managedAppPolicyDeploymentSummary
 description: 更新 managedAppPolicyDeploymentSummary 对象的属性。
-ms.openlocfilehash: 2c0bf77e3dbd3720bcb0cfea28d69155174fb776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3d8445ac8b937b1a4b5ce10c0b89987103967dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325184"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

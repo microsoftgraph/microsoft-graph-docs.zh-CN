@@ -1,12 +1,13 @@
 ---
 title: Table:DataBodyRange
 description: 获取与表的数据体相关的 range 对象。
-ms.openlocfilehash: b43458707d2cb7063b2ad81a89ac39aea7e94c29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f36ec6ca005e529ac06e410bbbeb425db3096261
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326745"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: 创建 cartToClassAssociation
 description: 创建新的 cartToClassAssociation 对象。
-ms.openlocfilehash: 87e4a21a998e4226d429bfd92fca5560b9d716e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330651"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -37,7 +38,7 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

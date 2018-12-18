@@ -1,12 +1,13 @@
 ---
 title: 列出 remoteAssistancePartners
 description: 列出 remoteAssistancePartner 对象的属性和关系。
-ms.openlocfilehash: 4f3095cf9f031a7dd6f0046fc9cdfdc28e2fb673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 770e2935cc1ebab9eed75a70ed9adee34e07b9c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009649"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331617"
 ---
 # <a name="list-remoteassistancepartners"></a>列出 remoteAssistancePartners
 
@@ -35,7 +36,7 @@ GET /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

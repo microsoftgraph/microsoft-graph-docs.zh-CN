@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenItem 资源类型
 description: 表示 iOS 主屏幕上的项
-ms.openlocfilehash: 705849569dd91d339633e52187d16dfdd25b5ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a8d71e01ca8f2c284bcc3eddd7eb39b87c025d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328187"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: domainDnsCnameRecord 资源类型
 description: 表示已添加到租户中特定域的 DNS 区域文件的 CNAME 记录。继承自 DomainDnsRecord 实体。
-ms.openlocfilehash: 1c8df7148a4d843d5cd6278f5cbcc03358159424
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: bd1701e0757dc2facecb066beb7fe9108345a7f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330833"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
 

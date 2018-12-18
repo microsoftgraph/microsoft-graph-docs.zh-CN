@@ -1,12 +1,13 @@
 ---
 title: 列表 iosCertificateProfileBases
 description: 列出属性和 iosCertificateProfileBase 对象之间的关系。
-ms.openlocfilehash: 25d4aab6a101496a4966b1145e5eae14035b9f99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cfee1e89726582fcf8ac961dd079ce1d7e0506e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332842"
 ---
 # <a name="list-ioscertificateprofilebases"></a>列表 iosCertificateProfileBases
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 删除 windows10TeamGeneralConfiguration
 description: 删除 windows10TeamGeneralConfiguration。
-ms.openlocfilehash: f1e99cc8c45ea5bfcddb97712f354daa14f8bba7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed649e7e34063b69b81d7e7fcbd872e25b6bed3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010768"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331806"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>删除 windows10TeamGeneralConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

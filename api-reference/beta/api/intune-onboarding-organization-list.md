@@ -1,12 +1,13 @@
 ---
 title: 列出 organizations
 description: 列出 organization 对象的属性和关系。
-ms.openlocfilehash: 9b4b211b71ad619d50b3813022bcc03bf24a87c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e01ebb56c8630a847f8f384f10f3d21fe41fa6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330714"
 ---
 # <a name="list-organizations"></a>列出 organizations
 
@@ -37,7 +38,7 @@ GET /organization
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

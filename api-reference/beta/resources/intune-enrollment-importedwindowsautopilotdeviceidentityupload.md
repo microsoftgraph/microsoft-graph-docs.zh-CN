@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentityUpload 资源类型
 description: 导入 windows 自动执行某些操作设备使用上载。
-ms.openlocfilehash: 5088062eed35e73281ceb8936ab3c48d94d9ba22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f520601cfceca5acf58d30f9588c3f2ca85a99e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324295"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>importedWindowsAutopilotDeviceIdentityUpload 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27048871"
 |:---|:---|:---|
 |id|字符串|对象的 GUID|
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期时间。|
-|状态|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|

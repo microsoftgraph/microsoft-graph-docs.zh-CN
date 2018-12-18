@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsKioskConfiguration
 description: 创建新的 windowsKioskConfiguration 对象。
-ms.openlocfilehash: 4878ea77d866e29f5b225ba6e50bc3394f3a3545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35630494206a234e248935a75483afa2da969ed4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043451"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327536"
 ---
 # <a name="create-windowskioskconfiguration"></a>创建 windowsKioskConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,16 +52,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)集合|此策略设置允许定义网亭配置网亭配置文件的列表。 该集合最多可包含 500 个元素。|
 |kioskBrowserDefaultUrl|字符串|在启动上指定浏览器应导航到的默认 URL。|
-|kioskBrowserEnableHomeButton|布尔|启用网亭浏览器的主页按钮。 默认情况下禁用主页按钮。|
-|kioskBrowserEnableNavigationButtons|布尔|启用网亭浏览器的导航 buttons(forward/back)。 默认情况下，禁用导航按钮。|
-|kioskBrowserEnableEndSessionButton|布尔|启用网亭浏览器的结束会话按钮。 默认情况下禁用结束会话按钮。|
+|kioskBrowserEnableHomeButton|Boolean|启用网亭浏览器的主页按钮。 默认情况下禁用主页按钮。|
+|kioskBrowserEnableNavigationButtons|Boolean|启用网亭浏览器的导航 buttons(forward/back)。 默认情况下，禁用导航按钮。|
+|kioskBrowserEnableEndSessionButton|Boolean|启用网亭浏览器的结束会话按钮。 默认情况下禁用结束会话按钮。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定网亭浏览器中刷新状态重新启动之前，会话处于空闲状态的分钟数。  有效值为 1 1440年。 1 到 1440 之间的有效值|
 |kioskBrowserBlockedURLs|String 集合|指定网亭浏览器不应导航到的 Url|
 |kioskBrowserBlockedUrlExceptions|String 集合|指定允许网亭浏览器导航到的 Url|

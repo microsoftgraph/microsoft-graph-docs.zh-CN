@@ -1,12 +1,13 @@
 ---
 title: enterpriseCodeSigningCertificate 资源类型
 description: 尚未记录
-ms.openlocfilehash: 39a33ba019bd5d7e393f38dbb4701374ac7c5304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328698"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate 资源类型
 
@@ -28,8 +29,8 @@ ms.locfileid: "27043509"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|二进制数|中的原始数据格式的 Windows 企业代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|中的原始数据格式的 Windows 企业代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书使用者名称。|
 |subject|字符串|证书使用者值。|
 |issuerName|字符串|证书颁发者名称。|

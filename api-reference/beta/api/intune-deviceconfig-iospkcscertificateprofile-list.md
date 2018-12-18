@@ -1,12 +1,13 @@
 ---
 title: 列表 iosPkcsCertificateProfiles
 description: 列出属性和 iosPkcsCertificateProfile 对象之间的关系。
-ms.openlocfilehash: 409c30373ed2e8d709a607ff6baa636f5fd23002
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27e2668ef5af27920def194e3fa488fbdb337156
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329860"
 ---
 # <a name="list-iospkcscertificateprofiles"></a>列表 iosPkcsCertificateProfiles
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

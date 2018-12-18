@@ -1,12 +1,13 @@
 ---
 title: windowsKioskAzureADUser 资源类型
 description: 用于标识网亭配置 AzureAD 用户帐户的类
-ms.openlocfilehash: 22e71ab10ac7fb755050e8d6e5d19568bef2fae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4048b4cbea592af350af20bf433ca00ac6d4980
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044657"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330070"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 

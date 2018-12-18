@@ -1,12 +1,13 @@
 ---
 title: ndesConnector 资源类型
 description: 代表 OnPrem Ndes 连接器的实体。
-ms.openlocfilehash: d8cce2601f0f51703cccabe0690165e67b0af2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e37a20c440546094424d0284bd1d7ffbbeb60bdd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041956"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332289"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 

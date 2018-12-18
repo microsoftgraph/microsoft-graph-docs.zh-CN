@@ -1,12 +1,13 @@
 ---
 title: sharedPCAccountDeletionPolicyType 枚举类型
 description: 当共享 PC 上删除帐户可能值。
-ms.openlocfilehash: bf58a865dcb970760c4cf5284533cd833fcf9304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 626bc7ee4006639396a7959c4f09bec47c2d7f68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335047"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 

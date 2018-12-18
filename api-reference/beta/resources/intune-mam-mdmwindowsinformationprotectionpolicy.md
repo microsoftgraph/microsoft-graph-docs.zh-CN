@@ -1,12 +1,13 @@
 ---
 title: mdmWindowsInformationProtectionPolicy 资源类型
 description: 使用 MDM 进行 Windows 信息保护的策略
-ms.openlocfilehash: f714b74a5fcb4c45c92ba262d1fa573647722336
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e78cd5e759d3ed3b24a1c538e8efbb0633e3ab1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043852"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325002"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>mdmWindowsInformationProtectionPolicy 资源类型
 

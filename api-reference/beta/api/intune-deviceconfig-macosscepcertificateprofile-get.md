@@ -1,12 +1,13 @@
 ---
 title: 获取 macOSScepCertificateProfile
 description: 读取属性和 macOSScepCertificateProfile 对象的关系。
-ms.openlocfilehash: a5d3d274c55e1b0da69aaa3158a61a2a7b7b1355
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f44b0eae6f7a1c38897d9f90737c58f5d5e2c8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330112"
 ---
 # <a name="get-macosscepcertificateprofile"></a>获取 macOSScepCertificateProfile
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

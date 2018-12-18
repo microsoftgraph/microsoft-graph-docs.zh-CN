@@ -1,12 +1,13 @@
 ---
 title: wiFiProxySetting 枚举类型
 description: Wi-fi 代理设置。
-ms.openlocfilehash: 1ff64c4aaa2817061e60b34a1ea4764e0da53746
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27355dbd26fd889c334843d831ef3f00c38c6591
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042838"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332338"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042838"
 
 Wi-fi 代理设置。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|没有代理。|
 |手动|1|通过地址和端口的手动代理设置。|

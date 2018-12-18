@@ -1,12 +1,13 @@
 ---
 title: officeClientCheckinStatus 资源类型
 description: 介绍租户中签入 stats 的实体。
-ms.openlocfilehash: a87a085d42ce0754e046b319b270ddf90a3bdba7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331715"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27044089"
 |deviceName|String|要签入的设备名称。|
 |devicePlatform|字符串|要签入的设备平台。|
 |devicePlatformVersion|字符串|要签入的设备平台版本。|
-|准备成功|布尔|如果上次签入已成功。|
+|准备成功|Boolean|如果上次签入已成功。|
 |userId|String|使用设备的用户标识符。|
 |checkinDateTime|DateTimeOffset|最后一个设备签入时间采用 UTC 时间。|
 |errorMessage|字符串|如果有关联的最后一个签入的错误消息。|

@@ -1,12 +1,13 @@
 ---
 title: windowsAssignedAccessProfile 资源类型
 description: 用于 Windows 的分配的访问配置文件。
-ms.openlocfilehash: 2fc23bfed54ef850050b177589d5b4c0c79c22cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328789"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>windowsAssignedAccessProfile 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27042744"
 |:---|:---|:---|
 |id|String|实体的键。|
 |profileName|字符串|这是用于标识一组应用程序，在开始菜单和用户为其分配此网亭配置这些应用程序的布局的友好名称。|
-|showTaskBar|布尔|此设置，管理员可以指定任务条形图或不所示。|
+|showTaskBar|Boolean|此设置，管理员可以指定任务条形图或不所示。|
 |appUserModelIds|String 集合|这些是唯一的 Windows 应用商店应用程序将可以从开始菜单启动。|
 |desktopAppPaths|String 集合|在开始菜单可用桌面应用程序的路径和仅应用程序用户都将能够启动。|
 |用户帐户|String 集合|将锁定到此网亭配置用户帐户。|

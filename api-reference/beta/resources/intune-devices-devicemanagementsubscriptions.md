@@ -1,12 +1,13 @@
 ---
 title: deviceManagementSubscriptions 枚举类型
 description: 租户移动设备管理订阅。
-ms.openlocfilehash: b317b6bf86dd72138d8cbdf0de19432b7655fc66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 064363ff05617b48ffd5ef66d57c315545223910
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046633"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326150"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 

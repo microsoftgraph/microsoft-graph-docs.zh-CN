@@ -1,12 +1,13 @@
 ---
 title: androidManagedStoreAccountEnterpriseSettings 资源类型
 description: Android 的企业设置管理存储的帐户。
-ms.openlocfilehash: 976e4e2ea9d6e01a81f8f821388a1d4390908754
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0dfea72e9d6a24b4d76cc839259acd642d51fa9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326290"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings 资源类型
 
@@ -38,7 +39,7 @@ Android 的企业设置管理存储的帐户。
 |lastModifiedDateTime|DateTimeOffset|上次修改时间 Android 企业设置|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|指示哪些用户可以注册 Android 企业设备管理的设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String 集合|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
+|deviceOwnerManagementEnabled|Boolean|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
 
 ## <a name="relationships"></a>Relationships
 无

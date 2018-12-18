@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateInstallScheduleType 资源类型
 description: 尚未记录
-ms.openlocfilehash: 214b95ddcfaf8e884b600e7028d86dc27c777e7a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ec63efbc5b4e6949075c68037b795556c06db1c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325772"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>windowsUpdateInstallScheduleType 资源类型
 

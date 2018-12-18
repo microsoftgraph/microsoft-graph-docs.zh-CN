@@ -1,12 +1,13 @@
 ---
 title: 获取 macOSCustomConfiguration
 description: 读取 macOSCustomConfiguration 对象的属性和关系。
-ms.openlocfilehash: ae1202f00cdd5b80004a209700335cf2a6776826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 20e5cb57507bee1636fdb4dd299a7b8948ecd4f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332856"
 ---
 # <a name="get-macoscustomconfiguration"></a>获取 macOSCustomConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

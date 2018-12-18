@@ -1,12 +1,13 @@
 ---
 title: vppTokenAccountType 枚举类型
 description: 可能的 Apple 卷购买计划令牌的类型。
-ms.openlocfilehash: 511b0f510593ab9aa00cafd73bf9fbea6d435ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4f7caa3deaf11aaa9fe02935b32bbe3e1a0e9e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325044"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 

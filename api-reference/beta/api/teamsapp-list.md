@@ -1,12 +1,13 @@
 ---
 title: 列表中的 Microsoft 团队应用程序目录发布应用程序
 description: '列出来自 Microsoft 团队应用程序目录的应用程序。 '
-ms.openlocfilehash: 84b5576ed2a7d38783e45b1384c79f05c9ea418b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326465"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>列表中的 Microsoft 团队应用程序目录发布应用程序
 

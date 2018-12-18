@@ -1,12 +1,13 @@
 ---
 title: 更新 windows10CompliancePolicy
 description: 更新 windows10CompliancePolicy 对象的属性。
-ms.openlocfilehash: 5dd0e5f00adc5e14872c5056f083064253000d45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d80bcd8852a21a1aac216fdee283fb6ba61b461e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333395"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -73,17 +74,17 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|布尔|要求在 Windows 设备上的活动防火墙。|
-|defenderEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件。|
+|activeFirewallRequired|Boolean|要求在 Windows 设备上的活动防火墙。|
+|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
 |defenderVersion|字符串|需要 Windows Defender 反恶意软件在 Windows 设备上的最低版本。|
-|signatureOutOfDate|布尔|需要 Windows Defender 反恶意软件签名是最新 Windows 设备上。|
-|rtpEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
-|antivirusRequired|布尔|需要与 Windows Decurity 中心上注册和监视 (例如 Symantec，Windows Defender) 的任何防病毒解决方案。|
-|antiSpywareRequired|布尔|需要的任何反间谍软件解决方案注册 Windows Decurity 中心上为和监视 （例如 Symantec、 Windows Defender）。|
+|signatureOutOfDate|Boolean|需要 Windows Defender 反恶意软件签名是最新 Windows 设备上。|
+|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
+|antivirusRequired|Boolean|需要与 Windows Decurity 中心上注册和监视 (例如 Symantec，Windows Defender) 的任何防病毒解决方案。|
+|antiSpywareRequired|Boolean|需要的任何反间谍软件解决方案注册 Windows Decurity 中心上为和监视 （例如 Symantec、 Windows Defender）。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|有效的操作系统构建 Windows 设备上的区域。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求设备威胁保护最低风险级别报告如此。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|布尔|需要考虑 Intune 合规性状态考虑 SCCM 合规性状态。|
+|configurationManagerComplianceRequired|Boolean|需要考虑 Intune 合规性状态考虑 SCCM 合规性状态。|
 
 
 

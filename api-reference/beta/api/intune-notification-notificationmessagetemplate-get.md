@@ -1,12 +1,13 @@
 ---
 title: 获取 notificationMessageTemplate
 description: 读取 notificationMessageTemplate 对象的属性和关系。
-ms.openlocfilehash: 43a07e0d8605fc2a8e5903e584dada45a2ea3d6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41dd8fb38676f75bd00bbb6bfd8b1085a002d901
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047341"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327207"
 ---
 # <a name="get-notificationmessagetemplate"></a>获取 notificationMessageTemplate
 
@@ -39,7 +40,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity 资源类型
 description: 导入 Windows AutoPilot 的设备。
-ms.openlocfilehash: 9be7ce3500c467c93bdb4bf0fffbce5b738aa2ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bca28ef0e57068beef4c6b305c20115dbcdecd51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011213"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325986"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27011213"
 |orderIdentifier|字符串|Windows autopilot 设备订单 Id。|
 |serialNumber|字符串|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
-|hardwareIdentifier|二进制数|Windows autopilot 设备硬件 Blob。|
+|hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |状态|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
 
 ## <a name="relationships"></a>关系

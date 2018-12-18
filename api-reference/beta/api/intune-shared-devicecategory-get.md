@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceCategory
 description: 读取 deviceCategory 对象的属性和关系。
-ms.openlocfilehash: bcdaa21b66e8abfd2313217433c84f82faf82a8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a43f0d2551e98ce0a51e28764c90b234015ec29
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047144"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331062"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
@@ -59,7 +60,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 呼叫： subscribeToTone
 description: " 电话。"
-ms.openlocfilehash: c3793931c2f06e54cdac278f0f0539b42d7e622c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328299"
 ---
 # <a name="call-subscribetotone"></a>呼叫： subscribeToTone
 
@@ -21,7 +22,7 @@ ms.locfileid: "27046019"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +32,14 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    | 说明 |
+| 参数      | Type    | 说明 |
 |:---------------|:--------|:------------|
 | clientContext  | 字符串  | 客户端上下文。 |
 

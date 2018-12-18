@@ -1,12 +1,13 @@
 ---
 title: hashAlgorithms 枚举类型
 description: 哈希算法选项。
-ms.openlocfilehash: cfdd043c2171b61ad6337e09eebab9bb22dea19d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb02601cb1c0aa0782c05d42be37ec7c527f7c62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043399"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328116"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms 枚举类型
 

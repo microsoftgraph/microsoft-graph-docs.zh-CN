@@ -1,12 +1,13 @@
 ---
 title: updateWindowsDeviceAccountActionParameter 资源类型
 description: 尚未记录
-ms.openlocfilehash: d37a8f6c551e4e2284f703ddd63b27681ecfab55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba23c3b302d1a988a814c31ab0a1efcec405641f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043403"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332212"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter 资源类型
 

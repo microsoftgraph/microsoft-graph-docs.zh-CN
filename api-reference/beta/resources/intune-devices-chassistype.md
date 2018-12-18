@@ -1,12 +1,13 @@
 ---
 title: chassisType 枚举类型
 description: 机箱类型。
-ms.openlocfilehash: bdb11b41b5e4ebc5be32211b5b5498bcfa493c56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c65df4e324d186413936c44e611165b447df242
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327872"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 枚举类型
 

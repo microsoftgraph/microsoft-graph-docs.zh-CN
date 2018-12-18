@@ -1,12 +1,13 @@
 ---
 title: 域资源类型
 description: 表示与租户相关联的域。
-ms.openlocfilehash: c3a130f00afd3c9136b8ae8238f37cf99d5a6fc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f548e54bd1aaf53d2850ffdb30f18d38644e257c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008125"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326199"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -47,11 +48,11 @@ ms.locfileid: "27008125"
 |authenticationType|String| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
 |availabilityStatus|String| 使用[验证](../api/domain-verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain-verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
 |id|字符串| 域的完全限定的名称。密钥、不可变、不可为 Null、唯一 |
-|isAdminManaged|布尔| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
-|isDefault|布尔| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
-|isInitial|布尔| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
-|isRoot|布尔| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
-|isVerified|布尔| 如果域已完成域所有权验证，则为 true。不可为 Null |
+|isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
+|isDefault|Boolean| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
+|isInitial|Boolean| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
+|isRoot|Boolean| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
+|isVerified|Boolean| 如果域已完成域所有权验证，则为 true。不可为 Null |
 |supportedServices|字符串集合| 分配给域的功能。<br><br>可以包含下列值中的 0 个、1 个或更多个：*电子邮件*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> 可以使用 Graph API 添加/删除的值包括：*电子邮件*、*OfficeCommunicationsOnline*、*Yammer*<br>不可为 Null|
 |状态|[domainState](domainstate.md)| 为域计划的异步操作的状态。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
-ms.openlocfilehash: ec28b7ec44eddfa1e1e8b372956d1a29dc78553d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88db96c374321f428f40971da530ab8ba82965c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329216"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27045979"
 |**入职培训**|
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
 |[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|尚未记录|
-|**故障排除**|
+|**疑难解答**|
 |[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String 集合|检索与失败的应用程序的设备的列表。|
 
 
@@ -55,7 +56,7 @@ ms.locfileid: "27045979"
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**入职培训**|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|获取目标设定为用户的注册配置|
-|**故障排除**|
+|**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)集合|此用户的故障排除事件列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)集合|为此用户的事件的故障排除的移动应用程序的列表。|

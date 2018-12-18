@@ -1,12 +1,13 @@
 ---
 title: 'ChartLineFormat: clear'
 description: 清除图表元素的线条格式。
-ms.openlocfilehash: 0bb03fc43c9a8b059d384f59c2691b995a4e533e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 7e68d953ebc68d55c899eec6304255dfca0667a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331757"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

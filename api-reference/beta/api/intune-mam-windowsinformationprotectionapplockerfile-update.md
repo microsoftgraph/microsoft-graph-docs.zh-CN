@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsInformationProtectionAppLockerFile
 description: 更新 windowsInformationProtectionAppLockerFile 对象的属性。
-ms.openlocfilehash: bb19293b88c5956ee6836a207af728ae06c36364
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff0f0ae2d546c67c08a1d4928f8301aff476c776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332254"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

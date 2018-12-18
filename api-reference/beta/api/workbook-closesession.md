@@ -1,12 +1,13 @@
 ---
 title: 关闭会话
 description: '使用此 API 关闭现有的工作簿会话。 '
-ms.openlocfilehash: b591ea94552e05e108bf0582a6026087d7c115f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b44e708616bd6f115c166f5c66d74a54fb3734b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324960"
 ---
 # <a name="close-session"></a>关闭会话
 
@@ -28,7 +29,7 @@ POST /workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | workbook-session-id | 要关闭的工作簿会话 ID |

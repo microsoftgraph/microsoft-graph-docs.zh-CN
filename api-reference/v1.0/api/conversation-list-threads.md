@@ -1,12 +1,13 @@
 ---
 title: 列出线程
 description: 获取组对话中的所有线程。
-ms.openlocfilehash: 9d3a981b71b369e745acae0b362e5711a18f0272
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e9203fce8d2b6b5b216d051bcb00193ced3da4a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333003"
 ---
 # <a name="list-threads"></a>列出线程
 

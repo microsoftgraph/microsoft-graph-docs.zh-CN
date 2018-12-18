@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentType 枚举类型
 description: 将移动设备添加到管理的可能方式。
-ms.openlocfilehash: d65c66d47e48f750d515fc6ce43b67b3b27b7238
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88135947f882433a35fa518b750274f38f48dcc1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329601"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 

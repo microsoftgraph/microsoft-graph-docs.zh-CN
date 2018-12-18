@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceManagementScriptGroupAssignment
 description: 创建新的 deviceManagementScriptGroupAssignment 对象。
-ms.openlocfilehash: 3a92632ad1ab900ddff8371ce37bedb4f16f6d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042113"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324778"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

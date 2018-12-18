@@ -1,12 +1,13 @@
 ---
 title: consentToDataSharing 操作
 description: 尚未记录
-ms.openlocfilehash: dfd5cd5c536b25c82588f5895c11135f574a5c59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e2e8f198c10e1ff043544ee25dcdb889a9e2635
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329888"
 ---
 # <a name="consenttodatasharing-action"></a>consentToDataSharing 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/dataSharingConsents/{dataSharingConsentId}/consentToDataS
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

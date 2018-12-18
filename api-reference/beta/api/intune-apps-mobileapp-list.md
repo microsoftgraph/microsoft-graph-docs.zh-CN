@@ -1,12 +1,13 @@
 ---
 title: 列出 mobileApps
 description: 列出 mobileApp 对象的属性和关系。
-ms.openlocfilehash: e39ac7a6524b029f8815a74efd82e759614832e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84ebb7e1dad52a075a84c50e6b6fc94d6e84e148
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048535"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326185"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

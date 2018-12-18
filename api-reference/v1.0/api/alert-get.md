@@ -1,12 +1,13 @@
 ---
 title: 获取警报
 description: " 检索的属性和警报对象的关系。"
-ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: fe265f82e6013081a33abeaa25baa78e0e87fdcb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184474"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326122"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -32,9 +33,9 @@ GET /security/alerts/{alert_id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| 授权  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 

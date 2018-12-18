@@ -1,12 +1,13 @@
 ---
 title: visibilitySetting 枚举类型
 description: 泛型可见性状态。
-ms.openlocfilehash: 1bfaf112111f837270f5f088c78822bf4b98e45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3a765a2c3404875d047bd81774c204b280b90ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333451"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 

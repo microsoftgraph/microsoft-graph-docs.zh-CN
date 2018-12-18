@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicySettingState 资源类型
 description: 给定设备的设备符合性策略设置状态。
-ms.openlocfilehash: d73cbe591e30e465065e0c446c6d98d7232a049c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbad84edffaeb3abdff0c00fdd55c1451d23a721
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327956"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState 资源类型
 

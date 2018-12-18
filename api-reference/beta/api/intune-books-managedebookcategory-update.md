@@ -1,12 +1,13 @@
 ---
 title: 更新 managedEBookCategory
 description: 更新 managedEBookCategory 对象的属性。
-ms.openlocfilehash: 166d274d4d4eed8d6dff8efc8583af8c7ae9778e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5dea4bce1750617367f972f64a734ac151d2676f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333654"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: managedAppDataTransferLevel 枚举类型
 description: 可以从到应用程序的这些类传输数据
-ms.openlocfilehash: 92ea576aa1fe0746b3a98a8ef01dc147b475b504
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41e813e9ea3450a349966ec8a212fa45dd419625
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045625"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331911"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 

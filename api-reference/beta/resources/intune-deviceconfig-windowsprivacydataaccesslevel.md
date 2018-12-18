@@ -1,12 +1,13 @@
 ---
 title: windowsPrivacyDataAccessLevel 枚举类型
 description: 确定到特定 Windows 隐私数据类别的访问级别。
-ms.openlocfilehash: 09db03706795cc2aba4cc0c93dce87dc7069cd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6eb1c1ea6eff28d90979da3ff998fd8442df353a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332408"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 枚举类型
 

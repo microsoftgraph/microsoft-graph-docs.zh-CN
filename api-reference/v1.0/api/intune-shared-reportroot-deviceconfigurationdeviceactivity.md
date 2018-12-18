@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceActivity 函数
 description: 设备配置设备活动报告的元数据
-ms.openlocfilehash: 43b1844b5fd562553114bcaa8e0652b1105c7f69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 978ba8d3031f0c8f2bfcbbe6efbbc4433063a1a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326066"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 
@@ -37,7 +38,7 @@ GET /reports/deviceConfigurationDeviceActivity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

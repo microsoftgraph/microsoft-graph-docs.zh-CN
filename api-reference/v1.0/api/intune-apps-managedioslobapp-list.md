@@ -1,12 +1,13 @@
 ---
 title: 列出 managedIOSLobApps
 description: 列出 managedIOSLobApp 对象的属性和关系。
-ms.openlocfilehash: 8abe28a64baae857a16f95bd005568602fd6f8f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dc053035c66fd7be477d6d8991247d5137b23f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331449"
 ---
 # <a name="list-managedioslobapps"></a>列出 managedIOSLobApps
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

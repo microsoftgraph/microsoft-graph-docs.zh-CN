@@ -1,12 +1,13 @@
 ---
 title: 删除 managedIOSLobApp
 description: 删除 managedIOSLobApp。
-ms.openlocfilehash: f545c7bc1722244b707721a6beb960d41b2e35b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 709c6a1d2d0f0254cb3365a9b9c61eeffae7d509
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333878"
 ---
 # <a name="delete-managedioslobapp"></a>删除 managedIOSLobApp
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

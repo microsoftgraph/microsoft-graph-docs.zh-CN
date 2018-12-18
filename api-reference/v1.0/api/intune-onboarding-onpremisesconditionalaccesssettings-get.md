@@ -1,12 +1,13 @@
 ---
 title: 获取 onPremisesConditionalAccessSettings
 description: 读取 onPremisesConditionalAccessSettings 对象的属性和关系。
-ms.openlocfilehash: 2f80db475d375e83f1dcf81d6a0b584419262ccc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31f5bb9804c8a4a469d877727f073919dfdff73e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332352"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>获取 onPremisesConditionalAccessSettings
 
@@ -37,7 +38,7 @@ GET /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

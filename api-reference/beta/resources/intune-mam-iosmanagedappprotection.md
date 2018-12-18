@@ -1,12 +1,13 @@
 ---
 title: iosManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 iOS 设备上指定的一组应用的详细管理设置的策略
-ms.openlocfilehash: 6d21b2fd434cc3fcb5dcc6498b36e2e3f1313d8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00fefa8c829ecaf4d3d87023719dba61b9964ab9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042369"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334606"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection 资源类型
 
@@ -78,10 +79,10 @@ ms.locfileid: "27042369"
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |allowedIosDeviceModels|字符串|作为字符串的托管的应用程序，以允许的设备模型的分号分隔列表。|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备模型。 可取值为：`block`、`wipe`。|
-|thirdPartyKeyboardsBlocked|布尔|如果第三方键盘允许时访问托管的应用程序，定义|
-|filterOpenInToOnlyManagedApps|布尔|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。|
-|disableProtectionOfManagedOutboundOpenInData|布尔|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。|
-|protectInboundDataFromUnknownSources|布尔|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。|
+|thirdPartyKeyboardsBlocked|Boolean|如果第三方键盘允许时访问托管的应用程序，定义|
+|filterOpenInToOnlyManagedApps|Boolean|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。|
+|protectInboundDataFromUnknownSources|Boolean|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|

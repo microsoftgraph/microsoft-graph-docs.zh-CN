@@ -1,12 +1,13 @@
 ---
 title: unassignUserFromDevice 操作
 description: Unassigns 自动执行某些操作设备用户。
-ms.openlocfilehash: 93feafa6ff8dc18cee8d5f0535b6a6fabe61ca81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9374111b9a73bdaa9ef25391c62bb1a5fbb38d8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329734"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceComplianceSettingState
 description: 创建新的 deviceComplianceSettingState 对象。
-ms.openlocfilehash: cb5f4ba5a71b9c7887dabdbf1c51c7665db26d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab149e492b133ae2d39805e6ef6e3b6f93e484e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332891"
 ---
 # <a name="create-devicecompliancesettingstate"></a>创建 deviceComplianceSettingState
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

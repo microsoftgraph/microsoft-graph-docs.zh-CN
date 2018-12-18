@@ -1,12 +1,13 @@
 ---
 title: 更新 macOSOfficeSuiteApp
 description: 更新 macOSOfficeSuiteApp 对象的属性。
-ms.openlocfilehash: a7747c4b4bd4325a2a39477de9d2593bb436024b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae4dea6f9e7bc1740d2677e61c5ed24532c6111e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331476"
 ---
 # <a name="update-macosofficesuiteapp"></a>更新 macOSOfficeSuiteApp
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

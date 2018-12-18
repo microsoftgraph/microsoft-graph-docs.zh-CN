@@ -1,12 +1,13 @@
 ---
 title: 更新 chartlegend
 description: 更新 chartlegend 对象的属性。
-ms.openlocfilehash: 7eb89f40e0f691e597d519070997f90729d8a2f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 05353f51fc7ba659c37fe3d185be48df889bfb55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041657"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333991"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -28,7 +29,7 @@ ms.locfileid: "27041657"
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

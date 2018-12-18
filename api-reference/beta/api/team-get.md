@@ -1,12 +1,13 @@
 ---
 title: 获取工作组
 description: 检索的属性和指定团队的关系。
-ms.openlocfilehash: 1b255e54f4c46f2efe06e59452011b4a1f78ed36
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: dfa59948a9bffce77c98a3462f919e75fe18042e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222469"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329230"
 ---
 # <a name="get-team"></a>获取工作组
 
