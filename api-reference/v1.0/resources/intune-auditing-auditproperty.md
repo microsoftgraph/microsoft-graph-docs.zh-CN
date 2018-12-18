@@ -1,12 +1,13 @@
 ---
 title: auditProperty 资源类型
 description: 包含审核属性的属性的类。
-ms.openlocfilehash: eaffa5552d611ac2ef8bb236009b9520d1134586
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d7cd7f1fbbf9f813cf447ca53e0d4652eb0feda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312899"
 ---
 # <a name="auditproperty-resource-type"></a>auditProperty 资源类型
 

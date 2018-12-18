@@ -1,12 +1,13 @@
 ---
 title: 列表 windowsPhone81StoreApps
 description: 列出属性和 windowsPhone81StoreApp 对象之间的关系。
-ms.openlocfilehash: 4c65ffad64457a5aa1608d8f1325efc3c2bc48a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 39fb1b2f9c7fe766bd294ebc05295f6e1b374034
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313382"
 ---
 # <a name="list-windowsphone81storeapps"></a>列表 windowsPhone81StoreApps
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

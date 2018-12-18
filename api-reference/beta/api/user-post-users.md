@@ -1,12 +1,13 @@
 ---
 title: 创建用户
 description: 使用此 API 创建新用户。
-ms.openlocfilehash: 17df752fb3767e82b72e46857e9ce6a2a8769db7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ace74039d3740b51487252447ba3d56a018f745e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314852"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -39,7 +40,7 @@ POST /users
 
 下表显示创建用户时所需的属性。
 
-| 参数 | 类型 | 说明|
+| 参数 | Type | 说明|
 |:---------------|:--------|:----------|
 |accountEnabled |boolean |启用此帐户时为 true，否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|

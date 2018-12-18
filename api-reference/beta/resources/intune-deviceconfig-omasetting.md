@@ -1,12 +1,13 @@
 ---
 title: omaSetting 资源类型
 description: OMA 设置定义。
-ms.openlocfilehash: 900e3f4d8e24743ed75b15f7a57188b46630c9fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa1fc438ef97357ebd5f13443077384bc98e24f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314040"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 

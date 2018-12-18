@@ -1,12 +1,13 @@
 ---
 title: managedAppProtection 资源类型
 description: 用于为指定的一组应用配置详细管理设置的策略
-ms.openlocfilehash: 565ec8b2658ba93f6163845f5bb79255bf3d45f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd67c482ab3f255361f23b290b48a44fdd11dec5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311261"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 

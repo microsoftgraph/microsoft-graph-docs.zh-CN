@@ -1,12 +1,13 @@
 ---
 title: 获取 androidForWorkCertificateProfileBase
 description: 读取属性和 androidForWorkCertificateProfileBase 对象的关系。
-ms.openlocfilehash: 02f2add4dd614d4888e2e2b1e5e46706d8140a6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68a74d14de0465c9bd62b20482523b30df1cc458
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315139"
 ---
 # <a name="get-androidforworkcertificateprofilebase"></a>获取 androidForWorkCertificateProfileBase
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

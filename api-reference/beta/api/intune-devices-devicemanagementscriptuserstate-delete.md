@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceManagementScriptUserState
 description: 删除 deviceManagementScriptUserState。
-ms.openlocfilehash: 2e16460538f31823d3e8aded98185f544bd64a60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2aa88ae9fa443feca4c9e36dfa6f676d773afee8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044061"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310925"
 ---
 # <a name="delete-devicemanagementscriptuserstate"></a>删除 deviceManagementScriptUserState
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

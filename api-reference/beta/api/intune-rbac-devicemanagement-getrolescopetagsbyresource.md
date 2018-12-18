@@ -1,12 +1,13 @@
 ---
 title: getRoleScopeTagsByResource 函数
 description: 尚未记录
-ms.openlocfilehash: 10c440464224877865e74d9c9fe1750088241af7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fc5592927d51a8f153d02d74834aeefdb449604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313543"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 函数
 
@@ -37,7 +38,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

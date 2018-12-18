@@ -1,12 +1,13 @@
 ---
 title: 创建 windows10CompliancePolicy
 description: 创建新的 windows10CompliancePolicy 对象。
-ms.openlocfilehash: d408c6663959c417196b54a5798317a021b1e35b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a5c2fa1ce1bf993f93212dbc3b6471c74028fd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313249"
 ---
 # <a name="create-windows10compliancepolicy"></a>创建 windows10CompliancePolicy
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

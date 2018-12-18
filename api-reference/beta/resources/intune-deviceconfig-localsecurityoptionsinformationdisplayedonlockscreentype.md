@@ -1,12 +1,13 @@
 ---
 title: localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 description: LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
-ms.openlocfilehash: 6a329327fe1b5130523ccc9f9d31eda8bff7fda4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1cb998c5765a81d6f40d17e49193eb143fc94f6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313634"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 

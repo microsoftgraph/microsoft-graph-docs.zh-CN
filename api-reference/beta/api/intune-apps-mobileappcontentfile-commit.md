@@ -1,12 +1,13 @@
 ---
 title: commit 操作
 description: 提交给定应用的文件。
-ms.openlocfilehash: 923bd9cc74d377cc61a466dfda12148c84d706c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c3993104334284c789db51c4306d562a4b89eacd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043301"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310701"
 ---
 # <a name="commit-action"></a>commit 操作
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

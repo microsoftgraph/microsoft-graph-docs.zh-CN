@@ -1,12 +1,13 @@
 ---
 title: 删除 rejectedSender
 description: 从 rejectedSenders 列表中删除用户或组。
-ms.openlocfilehash: a78a81c229e18c91e3c314ffd04816fe1505c247
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: cd84f14f15288207ff8c3362ea0295ae3eba1856
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311254"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 

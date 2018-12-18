@@ -1,12 +1,13 @@
 ---
 title: TableColumn 资源类型
 description: 代表表中的一列。
-ms.openlocfilehash: 3db97f1d80a0c36278cb27b806ab2a82be6c8b01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009516"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315125"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 

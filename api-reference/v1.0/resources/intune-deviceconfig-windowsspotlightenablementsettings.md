@@ -1,12 +1,13 @@
 ---
 title: windowsSpotlightEnablementSettings 枚举类型
 description: 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
-ms.openlocfilehash: a9d2d1231abf57f47fb510ad0ebe603ff2fa5213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ce0c09bd155e493a4df9a105edb12d09e8f9e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008413"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312990"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 枚举类型
 

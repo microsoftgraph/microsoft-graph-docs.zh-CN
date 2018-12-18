@@ -1,12 +1,13 @@
 ---
 title: 列出 managedAppPolicies
 description: 列出 managedAppPolicy 对象的属性和关系。
-ms.openlocfilehash: d6cbcf9145fc4f876d7e940a8c4d169249e9cbef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46242412fc24c8e36484753c998b9f67230794ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314453"
 ---
 # <a name="list-managedapppolicies"></a>列出 managedAppPolicies
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

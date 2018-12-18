@@ -1,12 +1,13 @@
 ---
 title: mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
-ms.openlocfilehash: b8050a6d99eeca008477059c9d39a40dbda906a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aadaf94a2b021e6207a1639ec215445d602b4c3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312934"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 

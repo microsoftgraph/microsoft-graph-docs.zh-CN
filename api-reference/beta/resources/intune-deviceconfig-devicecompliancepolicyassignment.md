@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyAssignment 资源类型
 description: 设备符合性策略分配。
-ms.openlocfilehash: 1e553553e81a3d3d68f0766754d770c3f3f24d7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e589cb6191a7d8ca7406125419bcfae03304ade
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047505"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310673"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment 资源类型
 

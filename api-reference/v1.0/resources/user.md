@@ -1,12 +1,13 @@
 ---
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
-ms.openlocfilehash: 893a5bef5fd3a2fce730c5f971ceca523e260be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011161"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312479"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -68,7 +69,7 @@ ms.locfileid: "27011161"
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
 |ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`，`notAdult`和`adult`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |

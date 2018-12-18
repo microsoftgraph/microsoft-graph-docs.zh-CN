@@ -1,12 +1,13 @@
 ---
 title: 列出线程
 description: 获取某个组的所有线程。
-ms.openlocfilehash: 659d80793f2ad4ededaabca7087f470c0cc6c081
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 8052ec02a2f9bfbcec0a12681463f3e33cb0f12d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311799"
 ---
 # <a name="list-threads"></a>列出线程
 获取某个组的所有线程。

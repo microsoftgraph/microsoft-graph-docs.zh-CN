@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMActivationCode 资源类型
 description: 为移动运营商提供嵌入的 SIM 激活代码。
-ms.openlocfilehash: ad0b5d9ff2ac06387d81354cf74f2784d4838600
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311786"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode 资源类型
 

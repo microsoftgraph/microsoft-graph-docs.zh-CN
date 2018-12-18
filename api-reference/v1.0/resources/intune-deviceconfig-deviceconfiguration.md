@@ -1,12 +1,13 @@
 ---
 title: deviceConfiguration 资源类型
 description: 设备配置。
-ms.openlocfilehash: 7cde579aa9d2e096380286d628a9964d4522f402
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5624b52c4c92f49b5ce5300cd3e1abc45afe2e9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011748"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311667"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration 资源类型
 

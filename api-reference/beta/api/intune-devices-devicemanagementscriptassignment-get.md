@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceManagementScriptAssignment
 description: 读取属性和 deviceManagementScriptAssignment 对象的关系。
-ms.openlocfilehash: 18ba1766771b8ecacd0da17b2b7342454ed5153c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58360cb52c006c68e5a6da493a79fc86609dc5fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046859"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310918"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>获取 deviceManagementScriptAssignment
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignm
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

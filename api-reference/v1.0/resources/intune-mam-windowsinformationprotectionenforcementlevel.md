@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionEnforcementLevel 枚举类型
 description: WIP 保护实施级别的可能值
-ms.openlocfilehash: 5d27923c53dbae0aaeebc6bd664f0cd7f6bd9e8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84f60f0e4f59206d420219e8547160c85202f9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313263"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 枚举类型
 

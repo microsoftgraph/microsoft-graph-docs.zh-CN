@@ -1,12 +1,13 @@
 ---
 title: applicationGuardBlockClipboardSharingType 枚举类型
 description: ApplicationGuardBlockClipboardSharingType 的可能值
-ms.openlocfilehash: e0e05001e4f3cedc2893fc6b2006f5b5b5d74db6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d55945c0e229801bab9a338a475e6ef6fd5e8b02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045892"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311506"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
 

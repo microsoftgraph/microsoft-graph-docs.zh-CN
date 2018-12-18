@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 读取 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性和关系。
-ms.openlocfilehash: 08c145fe1ff7c18f9a6ac724dd80012ba2a42b8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a85ef90851dfc749f36a36a73f92b33133fcee49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314019"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>获取 windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

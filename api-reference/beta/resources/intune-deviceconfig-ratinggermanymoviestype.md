@@ -1,12 +1,13 @@
 ---
 title: ratingGermanyMoviesType 枚举类型
 description: 电影分级德国的标签
-ms.openlocfilehash: a765ee293ab9d5c3a8e152a59371125a37148f4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2dc78b1de99c193ab575b28ef3658ddd2b5f6df2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312339"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 

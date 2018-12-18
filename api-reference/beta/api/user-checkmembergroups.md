@@ -1,12 +1,13 @@
 ---
 title: checkMemberGroups
 description: 检查指定组的列表中的成员身份。 从列表中返回这些的组
-ms.openlocfilehash: c6e232a6c34c0bbffdb41695a51694a688fecc7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 613faacdbd2651700f264cdf89ec396b54752b76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310596"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -47,7 +48,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型   | 说明           |
+| 参数 | Type   | 说明           |
 | :-------- | :----- | :-------------------- |
 | groupIds  | String | 组 ID 的数组 |
 

@@ -1,12 +1,13 @@
 ---
 title: mobileAppTroubleshootingEvent 资源类型
 description: 代表用户设备应用程序事件安装状态。
-ms.openlocfilehash: 8e8f45c2008600ebfb75b3207b4f3bb310ae072b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92b16d0dd3678aed8cec810f27172e05f37f1ad8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314398"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent 资源类型
 

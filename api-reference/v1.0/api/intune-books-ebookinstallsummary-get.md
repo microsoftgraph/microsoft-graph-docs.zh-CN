@@ -1,12 +1,13 @@
 ---
 title: 获取 eBookInstallSummary
 description: 读取 eBookInstallSummary 对象的属性和关系。
-ms.openlocfilehash: 6bde238d86605d4568cd43879bebbf4ad8768233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 186383e98e87fbf96af47d290593eee6d2f1723b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314572"
 ---
 # <a name="get-ebookinstallsummary"></a>获取 eBookInstallSummary
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

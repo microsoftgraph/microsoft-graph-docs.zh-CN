@@ -1,12 +1,13 @@
 ---
 title: 更新 tablerow
 description: 更新 tablerow 对象的属性。
-ms.openlocfilehash: 1bfad780ed51ffc4d4c27abff980716aad5533f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3990885ac237ccfe5e7a01c71353b0ec44d1a14d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007856"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314257"
 ---
 # <a name="update-tablerow"></a>更新 tablerow
 
@@ -27,7 +28,7 @@ PATCH /workbook/tables/{id|name}/rows/{index}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

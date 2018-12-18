@@ -1,12 +1,13 @@
 ---
 title: 为目录角色的列表 scopedMembers
 description: 检索为目录角色 scopedRoleMembership 对象的列表。
-ms.openlocfilehash: 02d139ddee53c9ee7176fd736e79b3ce34de8860
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b3d0e8bc67b6ab670b7dc8a149bad0f031b03762
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311716"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>为目录角色的列表 scopedMembers
 
@@ -31,7 +32,7 @@ GET /directoryroles/{id}/scopedMembers
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

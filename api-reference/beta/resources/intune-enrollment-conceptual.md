@@ -1,12 +1,13 @@
 ---
 title: 使用 Intune 注册企业拥有的设备
 description: " (BYOD) 方案。"
-ms.openlocfilehash: b6c498a1471b95f28c26fb035eec3349108e1ec3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: da074f2176821ff8a554c7ca303cea5cd8ba3e13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047563"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314401"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 

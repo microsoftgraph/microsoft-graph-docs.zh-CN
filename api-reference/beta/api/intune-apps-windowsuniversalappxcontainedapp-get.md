@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsUniversalAppXContainedApp
 description: 读取属性和 windowsUniversalAppXContainedApp 对象的关系。
-ms.openlocfilehash: 0b76faeabbc6d72715e779544a97e7cd6aaaece6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78d4d015be2e614ddd1d5463824b49281c375d86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311177"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>获取 windowsUniversalAppXContainedApp
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

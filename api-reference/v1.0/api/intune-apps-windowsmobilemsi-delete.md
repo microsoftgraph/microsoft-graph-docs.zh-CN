@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsMobileMSI
 description: 删除 windowsMobileMSI。
-ms.openlocfilehash: 7d130ec2f369d39608d75a4b76437ba468ff2318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4161e489b1ee0f68bb444af4f0fef432456a5447
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314831"
 ---
 # <a name="delete-windowsmobilemsi"></a>删除 windowsMobileMSI
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

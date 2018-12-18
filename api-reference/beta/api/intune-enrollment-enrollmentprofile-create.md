@@ -1,12 +1,13 @@
 ---
 title: 创建 enrollmentProfile
 description: 创建新的 enrollmentProfile 对象。
-ms.openlocfilehash: 8b24964413250e9a0f9d8d98577e930e1ef99b84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: becfc040bb7fa500a5378f16f50f6bcb2e4f106d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313648"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
@@ -37,7 +38,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,9 +51,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|字符串|对象的 GUID|
 |displayName|字符串|配置文件的名称|
 |说明|字符串|配置文件的说明|
-|requiresUserAuthentication|布尔|指示该配置文件是否要求用户身份验证|
+|requiresUserAuthentication|Boolean|指示该配置文件是否要求用户身份验证|
 |configurationEndpointUrl|字符串|配置用于注册的终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。|
+|enableAuthenticationViaCompanyPortal|Boolean|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 managedAppOperation
 description: 更新 managedAppOperation 对象的属性。
-ms.openlocfilehash: 793b4eb48a0f70c0b1877aebd40969fba334e65e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ec9e327f1eae83eca31661742c241cec58740bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312941"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

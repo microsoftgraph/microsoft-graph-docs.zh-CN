@@ -1,12 +1,13 @@
 ---
 title: 删除 roleDefinition
 description: 删除 roleDefinition。
-ms.openlocfilehash: 4f423c8aafc98f8cefce632c3e3fadc617a04376
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cba2f9e1f72f3f766836e9778f1a6a9de9c0c39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315132"
 ---
 # <a name="delete-roledefinition"></a>删除 roleDefinition
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

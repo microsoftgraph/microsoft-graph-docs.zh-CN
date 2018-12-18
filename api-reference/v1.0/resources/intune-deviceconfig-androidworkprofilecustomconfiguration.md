@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileCustomConfiguration 资源类型
 description: Android 工作配置文件自定义配置
-ms.openlocfilehash: aa9ba0c0e166acedba61b54ed5a4e9b6ad3b3052
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ef43145c8fe259e60cb897786bd9805c6de8b8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310995"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>androidWorkProfileCustomConfiguration 资源类型
 

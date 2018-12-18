@@ -1,12 +1,13 @@
 ---
 title: 列表 androidWorkProfilePkcsCertificateProfiles
 description: 列出属性和 androidWorkProfilePkcsCertificateProfile 对象之间的关系。
-ms.openlocfilehash: 1d868fc798a3a28d0970f6aef2b915b8487cc951
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66b724592c604a847e674cacf154b38b14509b47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312857"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>列表 androidWorkProfilePkcsCertificateProfiles
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 获取 ChartTitle
 description: 检索 charttitle 对象的属性和关系。
-ms.openlocfilehash: b338b46a77e153a500277f762b6f2792453d1505
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2216ba5fe3e99819bf103b1517d0aae159be5363
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312920"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 
@@ -29,7 +30,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

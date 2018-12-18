@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserOverview 资源类型
 description: 尚未记录
-ms.openlocfilehash: cc4617d9545d883ce2cb5c595425fba437b037d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c844fd17e3287707a5ecacfb89c7b622497e2aac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047166"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310659"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview 资源类型
 

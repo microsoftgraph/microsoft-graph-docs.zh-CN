@@ -1,12 +1,13 @@
 ---
 title: 创建 restrictedAppsViolation
 description: 创建新的 restrictedAppsViolation 对象。
-ms.openlocfilehash: 2d43ddf5ae6c5965f67fdb32c4b242fd0a3f82e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313326"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

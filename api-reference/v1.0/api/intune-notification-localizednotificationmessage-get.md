@@ -1,12 +1,13 @@
 ---
 title: 获取 localizedNotificationMessage
 description: 读取 localizedNotificationMessage 对象的属性和关系。
-ms.openlocfilehash: 8cc3e54f5fa3487b0685887eb1a4293a611ee6a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c11ea79e2b2d7a11cf763d2ec475ebc504dafef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311751"
 ---
 # <a name="get-localizednotificationmessage"></a>获取 localizedNotificationMessage
 
@@ -37,7 +38,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

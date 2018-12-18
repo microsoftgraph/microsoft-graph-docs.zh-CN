@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsPhoneXAP
 description: 创建新的 windowsPhoneXAP 对象。
-ms.openlocfilehash: 8b22ed8d9294c8e7a3e5c2e91e5b3d82e8f6bce9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f20a1cc210f87bc9a2bad31cc6d79eac6aa892bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048595"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312962"
 ---
 # <a name="create-windowsphonexap"></a>创建 windowsPhoneXAP
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

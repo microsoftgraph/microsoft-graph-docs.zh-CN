@@ -1,12 +1,13 @@
 ---
 title: 'TableColumn: TotalRowRange'
 description: 获取与列的总计行相关的 range 对象。
-ms.openlocfilehash: b4d6b3184d25751fdc082dafd1ca3a541adc69e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8fe3e4cb209b91fa8ef04810a88f37f9ef9ea337
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313074"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowR
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

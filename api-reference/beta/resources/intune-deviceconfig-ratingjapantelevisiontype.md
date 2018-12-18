@@ -1,12 +1,13 @@
 ---
 title: ratingJapanTelevisionType 枚举类型
 description: 日本 TV 内容评级标签
-ms.openlocfilehash: 12e0554d58f8f277687e5e98ea5d9178d1ffd631
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 902c8253b45f20086795a06bea60b379a3ebddd3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042729"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313956"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042729"
 
 日本 TV 内容评级标签
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有 TV 都显示内容|
 |allBlocked|1|不允许任何电视显示内容|

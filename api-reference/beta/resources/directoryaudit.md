@@ -1,12 +1,13 @@
 ---
 title: directoryAudit 资源类型
 description: 此资源表示的目录审核项，并且其集合
-ms.openlocfilehash: 8656bd910cd5b84d7760f973b160d91efe08abe1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312787"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 此资源表示的目录审核项，并且其集合
@@ -31,7 +32,7 @@ ms.locfileid: "27041262"
 |id|字符串| 指示活动的唯一 ID。 这是一个 GUID。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|指示信息的用户或应用程序启动活动。|
 |loggedByService|字符串|指示服务在其启动活动的信息 (例如： 自助服务密码管理、 核心目录、 B2C、 邀请用户、 Microsoft Identity Manager、 特权身份管理。|
-|result|string| 指示活动的结果。可能的值为： `success`， `failure`， `timeout`， `unknownFutureValue`。||
+|结果|string| 指示活动的结果。可能的值为： `success`， `failure`， `timeout`， `unknownFutureValue`。||
 |resultReason|字符串|如果结果为"Failure"或"超时"，指示失败的原因。|
 |targetResources|[targetResource](targetresource.md)集合|指示由于活动更改资源的信息。 目标资源类型可以是用户、 设备、 目录、 应用程序、 角色、 组、 策略或其他。
 

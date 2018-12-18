@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceComplianceSettingStates
 description: 列出 deviceComplianceSettingState 对象的属性和关系。
-ms.openlocfilehash: 4ad3cc5d8bbbd9d143208dba7812ee4170084e43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a282b306478cc1ff2ecbe7f86a063183eee0edd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009079"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313795"
 ---
 # <a name="list-devicecompliancesettingstates"></a>列出 deviceComplianceSettingStates
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

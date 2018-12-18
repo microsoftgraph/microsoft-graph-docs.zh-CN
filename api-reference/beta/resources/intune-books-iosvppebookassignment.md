@@ -1,12 +1,13 @@
 ---
 title: iosVppEBookAssignment 资源类型
 description: 包含用于为组分配 iOS VPP 电子书的属性。
-ms.openlocfilehash: c4ce93dcbc9680bdd7439e71aa2ab585295cd4d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1383c3370c7074e615d9b95300bbd57d940fc81f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314271"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment 资源类型
 

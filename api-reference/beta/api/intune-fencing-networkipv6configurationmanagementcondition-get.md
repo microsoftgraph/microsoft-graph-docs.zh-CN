@@ -1,12 +1,13 @@
 ---
 title: 获取 networkIPv6ConfigurationManagementCondition
 description: 读取属性和 networkIPv6ConfigurationManagementCondition 对象的关系。
-ms.openlocfilehash: acd7c5d08f0b926f411a468c8c0d03814d23a114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ca4417a66c869a65cc7ff3a6ed9700801452140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312780"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>获取 networkIPv6ConfigurationManagementCondition
 
@@ -40,7 +41,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

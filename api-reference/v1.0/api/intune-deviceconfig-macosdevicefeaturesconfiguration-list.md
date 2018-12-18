@@ -1,12 +1,13 @@
 ---
 title: 列出 macOSDeviceFeaturesConfigurations
 description: 列出 macOSDeviceFeaturesConfiguration 对象的属性和关系。
-ms.openlocfilehash: e9888496ab5c94307217815be5764ab5ea0c6067
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fb6d0c2e8068cf5fe2adb45f9bfd9ff8c26139a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314082"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>列出 macOSDeviceFeaturesConfigurations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

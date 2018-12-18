@@ -1,12 +1,13 @@
 ---
 title: webApp 资源类型
 description: 包含 Web 应用的属性和继承的属性。
-ms.openlocfilehash: ff661063c0cdc5fe6c41b5e93d57487a1236ca03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de2ad3c372c7538f07bf506ce00dc636a86a3454
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312451"
 ---
 # <a name="webapp-resource-type"></a>webApp 资源类型
 

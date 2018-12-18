@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
-ms.openlocfilehash: 02ccc2ab618187824ca69fb536f0a73b922ef1d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 269e749c7fae0b2eeb397d86907a7cf2d6653ee7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314194"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

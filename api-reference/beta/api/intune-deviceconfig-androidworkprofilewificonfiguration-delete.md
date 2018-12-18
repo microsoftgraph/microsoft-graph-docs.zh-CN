@@ -1,12 +1,13 @@
 ---
 title: 删除 androidWorkProfileWiFiConfiguration
 description: 删除 androidWorkProfileWiFiConfiguration。
-ms.openlocfilehash: 85d8a463eedfbe88f003e15056c64b0aeebb73e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e9ddc5d8c1d5779d388e3425ff0b252ff04f1c68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310841"
 ---
 # <a name="delete-androidworkprofilewificonfiguration"></a>删除 androidWorkProfileWiFiConfiguration
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

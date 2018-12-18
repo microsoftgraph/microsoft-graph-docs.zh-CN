@@ -1,12 +1,13 @@
 ---
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
-ms.openlocfilehash: cff38564d337638952dd11615c0ffb41281d67f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64b884f797001f127c7a55b98670e7f339054442
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008581"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312255"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 

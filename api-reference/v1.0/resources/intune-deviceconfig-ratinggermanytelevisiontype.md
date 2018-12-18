@@ -1,12 +1,13 @@
 ---
 title: ratingGermanyTelevisionType 枚举类型
 description: 在德国 TV 内容评级标签
-ms.openlocfilehash: 390d086db61cb90bc3e8bd6b005b47d937a7918e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee2ec1ec2f77cc9b2f65f41f0d8616108d0b300f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314460"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 

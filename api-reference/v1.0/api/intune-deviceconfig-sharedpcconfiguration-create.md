@@ -1,12 +1,13 @@
 ---
 title: 创建 sharedPCConfiguration
 description: 创建新的 sharedPCConfiguration 对象。
-ms.openlocfilehash: 3033bc44c683db6f574e794eb9a7d409b6de5ea7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53a59f4c63d044cf29a777136bb6418a202285b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011201"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314502"
 ---
 # <a name="create-sharedpcconfiguration"></a>创建 sharedPCConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

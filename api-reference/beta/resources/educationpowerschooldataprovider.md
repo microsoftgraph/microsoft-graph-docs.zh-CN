@@ -1,12 +1,13 @@
 ---
 title: educationPowerSchoolDataProvider 资源
 description: 用于 PowerSchool 用作输入源时设置学校数据同步配置文件。
-ms.openlocfilehash: 4c58d3b8baf1569aaeff68375b2dd3643db8b063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312801"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
 
@@ -25,7 +26,7 @@ ms.locfileid: "27046868"
 | **clientSecret** | 字符串 |  客户端机密进行身份验证与 PowerSchool 实例的连接。 |
 | **schoolsIds** | String 集合 |  学校同步的列表。 |
 | **schoolYear** | 字符串 |  要同步的学校年份。 |
-| **allowTeachersInMultipleSchools** | 布尔 |  指示源是否有多个标识符是单个学生或教师。 |
+| **allowTeachersInMultipleSchools** | Boolean |  指示源是否有多个标识符是单个学生或教师。 |
 | **自定义项** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 可选自定义要应用于同步配置文件。|
 
 ## <a name="json-representation"></a>JSON 表示形式

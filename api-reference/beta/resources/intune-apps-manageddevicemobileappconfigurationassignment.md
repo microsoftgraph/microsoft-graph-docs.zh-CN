@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationAssignment 资源类型
 description: 包含用于为组分配 MDM 应用配置的属性。
-ms.openlocfilehash: 7d9b0daaae3f8af4065cd0e85e2708ba8efe1f05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e84c0a8624e868bc9fb1b76714c60f883375945
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045814"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312584"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>managedDeviceMobileAppConfigurationAssignment 资源类型
 

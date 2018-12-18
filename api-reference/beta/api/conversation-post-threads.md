@@ -1,12 +1,13 @@
 ---
 title: 创建线程
 description: 在指定会话中创建新线程。
-ms.openlocfilehash: d545cc8fcc9ac78e9fcda1a7722bb622bf0d72ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5fafbcae4a7dcf451d8bb707dd19456cc9da3f90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313844"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -33,7 +34,7 @@ ms.locfileid: "27042355"
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

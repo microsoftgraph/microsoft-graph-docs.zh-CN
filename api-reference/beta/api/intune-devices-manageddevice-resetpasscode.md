@@ -1,12 +1,13 @@
 ---
 title: resetPasscode 操作
 description: 重置密码
-ms.openlocfilehash: 6c64fe6e3d19d70c97427e852060787c6d35bb15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89a8cbd6bfc1d0208d22ea4e43b48f2e1c6963da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315202"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

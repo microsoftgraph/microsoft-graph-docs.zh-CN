@@ -1,12 +1,13 @@
 ---
 title: mobileThreatDefenseConnector 资源类型
 description: 表示移动威胁防护合作伙伴连接的实体。
-ms.openlocfilehash: c3f91dfacf62863b263925a4c29d0418ab51aaca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1f47f534037ed7547c2d0824ead6cdf565b27d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010853"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311737"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 

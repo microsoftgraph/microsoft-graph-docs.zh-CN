@@ -1,12 +1,13 @@
 ---
 title: 列表 windows81WifiImportConfigurations
 description: 列出属性和 windows81WifiImportConfiguration 对象之间的关系。
-ms.openlocfilehash: d09538a0f6a74b243efb6605601ac20c18496795
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 144c78fd00ad46702b6a042d2d11018498325cc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313963"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>列表 windows81WifiImportConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

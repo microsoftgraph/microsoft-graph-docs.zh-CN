@@ -1,12 +1,13 @@
 ---
 title: windowsKioskLocalUser 资源类型
 description: 用于标识网亭配置的本地帐户的类
-ms.openlocfilehash: 1b5b8837f4f93005dabf839a7fc20e3b05b1fbf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ac98147172fd08fc9914a7d9302e3b074ca3246
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310820"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>windowsKioskLocalUser 资源类型
 

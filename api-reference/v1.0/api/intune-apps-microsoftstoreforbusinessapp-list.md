@@ -1,12 +1,13 @@
 ---
 title: 列出 microsoftStoreForBusinessApps
 description: 列出 microsoftStoreForBusinessApp 对象的属性和关系。
-ms.openlocfilehash: 29654e124e2f269ff0e63f1d6ffed1c03f87e641
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bbac2b4e294f99f9561df4b1139715244e0eaa80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315055"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>列出 microsoftStoreForBusinessApps
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

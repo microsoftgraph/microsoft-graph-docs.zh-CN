@@ -1,12 +1,13 @@
 ---
 title: 创建 roleScopeTag
 description: 创建新的 roleScopeTag 对象。
-ms.openlocfilehash: b2f42999c785786175e5a6fb4dfd2b510d148927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2aaede673afa4346a1defbc9449a4e08d9d1c614
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315146"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
@@ -38,7 +39,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

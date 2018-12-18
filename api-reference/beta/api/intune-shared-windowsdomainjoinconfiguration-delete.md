@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsDomainJoinConfiguration
 description: 删除 windowsDomainJoinConfiguration。
-ms.openlocfilehash: 79126f49689ce9a25b6a0efe8e99e2427225403f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c30f871ed56556052e30965fa8f1e33be4e276d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315153"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>删除 windowsDomainJoinConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

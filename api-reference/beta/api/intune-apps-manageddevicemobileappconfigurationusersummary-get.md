@@ -1,12 +1,13 @@
 ---
 title: 获取 managedDeviceMobileAppConfigurationUserSummary
 description: 读取 managedDeviceMobileAppConfigurationUserSummary 对象的属性和关系。
-ms.openlocfilehash: c3b768a514f33d3bc6b24453473d2d0b79a5d2de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 06b4972b129c18f8ddda6c1cd9335923517db37e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311429"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>获取 managedDeviceMobileAppConfigurationUserSummary
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

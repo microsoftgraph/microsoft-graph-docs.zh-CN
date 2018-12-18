@@ -1,12 +1,13 @@
 ---
 title: 获取 ChartAxis
 description: 检索 chartaxis 对象的属性和关系。
-ms.openlocfilehash: 8c0c17e5007f8973536d0b989dbe01e3888b4985
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 138537d0a2de5609b3901391b259cfbd27b43e3e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313949"
 ---
 # <a name="get-chartaxis"></a>获取 ChartAxis
 
@@ -33,7 +34,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

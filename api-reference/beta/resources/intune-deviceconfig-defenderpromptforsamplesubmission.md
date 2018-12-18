@@ -1,12 +1,13 @@
 ---
 title: defenderPromptForSampleSubmission 枚举类型
 description: 提示用户输入示例提交的可能值。
-ms.openlocfilehash: b70e86cb010395d5c3dfbd3266cc0cb7f6383fbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19498f587759df56ae671b119b59abe7e7acd62c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314929"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 

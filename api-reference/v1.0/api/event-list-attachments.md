@@ -1,12 +1,13 @@
 ---
 title: 列出附件
 description: 检索附加到事件的 attachment 对象列表。
-ms.openlocfilehash: 4ba864aad8e36429354bd7aa71bca061bba9f7d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: ca179e935279fce80f4364c0412f2c038ce4bcde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315468"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -61,7 +62,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
