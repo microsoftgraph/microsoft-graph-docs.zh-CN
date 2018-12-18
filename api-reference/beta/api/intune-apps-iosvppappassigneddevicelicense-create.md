@@ -1,12 +1,13 @@
 ---
 title: 创建 iosVppAppAssignedDeviceLicense
 description: 创建新的 iosVppAppAssignedDeviceLicense 对象。
-ms.openlocfilehash: 968f272fae21ccf78d41b384c34675f6a5d3f4c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b949ac66392be1069383addbecfa479f40b37051
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315776"
 ---
 # <a name="create-iosvppappassigneddevicelicense"></a>创建 iosVppAppAssignedDeviceLicense
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

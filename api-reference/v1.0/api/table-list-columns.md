@@ -1,12 +1,13 @@
 ---
 title: 列出列
 description: 检索 tablecolumn 对象的列表。
-ms.openlocfilehash: dcaaaa92bf8d97119233b35f39fd98b2589be129
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 52c3b930e16e8dca7386be5accff9cfb4937a949
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008575"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316832"
 ---
 # <a name="list-columns"></a>列出列
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
 ## <a name="request-headers"></a>请求头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

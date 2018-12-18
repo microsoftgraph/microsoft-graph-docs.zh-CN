@@ -1,12 +1,13 @@
 ---
 title: 共享的资源类型
 description: 表示文件共享或特定用户洞察。 支持以下共享的文件：
-ms.openlocfilehash: 786e3cc94a3c108b30cca880491dab5725014570
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315804"
 ---
 # <a name="shared-resource-type"></a>共享的资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "27046445"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体        | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
+| 资源      | Entity        | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

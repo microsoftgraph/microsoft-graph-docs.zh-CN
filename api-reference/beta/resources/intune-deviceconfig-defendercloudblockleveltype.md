@@ -1,12 +1,13 @@
 ---
 title: defenderCloudBlockLevelType 枚举类型
 description: 云块级别的可能值
-ms.openlocfilehash: 70e43e9659e7dd7be1d3c0a190e21d80d7b8dc41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c58c844097c18ff86beaef4a0e48d9b8a39043f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317442"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 

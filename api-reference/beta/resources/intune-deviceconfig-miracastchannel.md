@@ -1,12 +1,13 @@
 ---
 title: miracastChannel 枚举类型
 description: Miracast 通道的可能值。
-ms.openlocfilehash: 8c91612e25444502b0d3c2c5d6e2e6e5372372ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f874cfaee0a20b4aaa82af0605df864179d8635e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317379"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 

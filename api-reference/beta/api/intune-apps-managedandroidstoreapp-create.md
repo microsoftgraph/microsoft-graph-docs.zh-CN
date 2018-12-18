@@ -1,12 +1,13 @@
 ---
 title: 创建 managedAndroidStoreApp
 description: 创建新的 managedAndroidStoreApp 对象。
-ms.openlocfilehash: 10f343b694f7e852eff28be1182f335e1a723a34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f7b54f9da6197e9f4c1cbf3265a58fc7aa11e1c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316273"
 ---
 # <a name="create-managedandroidstoreapp"></a>创建 managedAndroidStoreApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

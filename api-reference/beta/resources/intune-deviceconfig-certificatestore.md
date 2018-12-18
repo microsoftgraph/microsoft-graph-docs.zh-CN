@@ -1,12 +1,13 @@
 ---
 title: certificateStore 枚举类型
 description: CertificateStore 类型
-ms.openlocfilehash: ffcf3e47260cc5fab15c8d15c07f0adbf587c832
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32a40db850d5b725e12e7244a00b9c7fcee139de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316917"
 ---
 # <a name="certificatestore-enum-type"></a>certificateStore 枚举类型
 

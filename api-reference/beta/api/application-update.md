@@ -1,12 +1,13 @@
 ---
 title: 更新应用程序
 description: 更新应用程序对象的属性。
-ms.openlocfilehash: eaf3eaaab7e14407c6c778e4e38711b2842ed46c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041451"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316686"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -29,16 +30,16 @@ ms.locfileid: "27041451"
 PATCH /applications/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowPublicClient|布尔值| 指定应用程序可用作公共客户端。 例如，移动设备上运行安装的应用程序。 默认值为 *false*。 |
+|allowPublicClient|Boolean| 指定应用程序可用作公共客户端。 例如，移动设备上运行安装的应用程序。 默认值为 *false*。 |
 |api|[api](../resources/api.md)| 指定 API 应用程序的设置。 |
 |appRoles|[appRole](../resources/approle.md)集合|声明应用程序可能的应用程序角色的集合。 这些角色可以分配给用户、 组或服务主体。 不可为 null。|
 |applicationAliases|String 集合| 标识应用程序的 Uri。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 *Any*运算符，则需要为多值属性的筛选器表达式。 不可为 null。 |

@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsManagementApp
 description: 读取属性和 windowsManagementApp 对象的关系。
-ms.openlocfilehash: b5a614a4bfdf68d94bef266f6013bade627cc7f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc1baf7e8d85d315d2778102b0e86f3c51178abb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316574"
 ---
 # <a name="get-windowsmanagementapp"></a>获取 windowsManagementApp
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

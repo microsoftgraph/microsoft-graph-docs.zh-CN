@@ -1,12 +1,13 @@
 ---
 title: hourlySchedule 资源类型
 description: 每小时运行计划的定期设备管理脚本。
-ms.openlocfilehash: 1161f7dfc3d74224c22075db8eff83b7f412b9b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e73ff542b7de780d16d9f2bd76c11c2d0f92e8ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317575"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule 资源类型
 

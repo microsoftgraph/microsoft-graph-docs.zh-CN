@@ -1,12 +1,13 @@
 ---
 title: 获取 androidForWorkCustomConfiguration
 description: 读取属性和 androidForWorkCustomConfiguration 对象的关系。
-ms.openlocfilehash: df5272ba06c049b7e69f62098afbd256cda5a78a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3b80e8b7ea5d05d22d2a42121539decb8e973384
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317596"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>获取 androidForWorkCustomConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

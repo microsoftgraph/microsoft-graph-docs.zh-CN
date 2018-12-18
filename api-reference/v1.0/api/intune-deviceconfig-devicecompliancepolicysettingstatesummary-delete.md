@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceCompliancePolicySettingStateSummary
 description: 删除 deviceCompliancePolicySettingStateSummary。
-ms.openlocfilehash: 72977d504c4b5db51d88266872132db07f2ead1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce1a9ddc7e056a25968a4e09c6a963266a1d2e44
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317967"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>删除 deviceCompliancePolicySettingStateSummary
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: educationExcelResource 资源类型
 description: 'EducationResource 一个子类。 此资源类型表示 Excel 文档。  '
-ms.openlocfilehash: cdd86cf1048863ac3def2ae6be13c3f39b37e642
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 427de6fac1f5f4ad63de8286e2714dd8fad472f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048486"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315937"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
 

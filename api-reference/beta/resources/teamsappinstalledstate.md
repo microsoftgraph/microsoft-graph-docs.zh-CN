@@ -1,12 +1,13 @@
 ---
-title: 成员
+title: Members
 description: 介绍 teamsApp 的当前安装状态。
-ms.openlocfilehash: 7f358a621a25219e78e3a02ce081d07a27395d2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: a73c68298c4cdf65deee68fb3bd707d50bc2475a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316791"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 枚举类型
 

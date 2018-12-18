@@ -1,12 +1,13 @@
 ---
 title: 图表：图像
 description: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
-ms.openlocfilehash: 33a28f5b5033f9e123fede12eacfbaa78215f313
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ccf2ba82dad05508b0857122f0316be8afcd03bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318191"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -29,7 +30,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
 GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 ## <a name="path-parameters"></a>路径参数
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |height|Int32|所需结果图像的高度。 可选。|
 |width|Int32|所需结果图像的宽度。 可选。|

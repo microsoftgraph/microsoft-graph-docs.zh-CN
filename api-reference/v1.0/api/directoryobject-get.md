@@ -1,12 +1,13 @@
 ---
 title: 获取 directoryObject
 description: 检索 directoryObject 对象的属性和关系。
-ms.openlocfilehash: 21086b7d30b1e4480450b0bb63f4be27f7e7bd5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 452d88e5443a4fdf0f9c48cad127b3882a82217b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011151"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316854"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -28,7 +29,7 @@ GET /directoryObjects/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

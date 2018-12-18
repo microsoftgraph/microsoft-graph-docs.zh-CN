@@ -1,12 +1,13 @@
 ---
 title: androidUsernameSource 枚举类型
 description: Android 用户名源。
-ms.openlocfilehash: a2c4816a88d41b18b82042d482ca9a92be650715
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45a76a7b90e0bf38e91082a12bfe941f7c765d72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048186"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315916"
 ---
 # <a name="androidusernamesource-enum-type"></a>androidUsernameSource 枚举类型
 

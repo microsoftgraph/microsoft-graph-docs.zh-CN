@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsInformationProtectionAppLockerFile
 description: 创建新的 windowsInformationProtectionAppLockerFile 对象。
-ms.openlocfilehash: 380b4b9358c3bc30337272ced4b92563978d7ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f2cbed922d6f2ac130169e5d9c85e3a5231184a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046131"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317120"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>创建 windowsInformationProtectionAppLockerFile
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

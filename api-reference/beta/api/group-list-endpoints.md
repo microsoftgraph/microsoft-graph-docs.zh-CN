@@ -1,12 +1,13 @@
 ---
 title: 列出终结点
 description: 检索的终结点对象的列表。
-ms.openlocfilehash: 350cf31897a22b5cc6342a7e1fc6537f49fb2daa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: d455cb8a5d1fb07a3d97cea376d9e2e49266892d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315944"
 ---
 # <a name="list-endpoints"></a>列出终结点
 
@@ -32,7 +33,7 @@ GET /groups/{id}/endpoints
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type   | Application/Json |

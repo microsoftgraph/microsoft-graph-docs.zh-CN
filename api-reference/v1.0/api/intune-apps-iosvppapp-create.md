@@ -1,12 +1,13 @@
 ---
 title: 创建 iosVppApp
 description: 创建新的 iosVppApp 对象。
-ms.openlocfilehash: cb7b0926145d2448195662cef817292fb41ac1e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0fa2f1c74586fd865e649c4f997c957f118d36fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316721"
 ---
 # <a name="create-iosvppapp"></a>创建 iosVppApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

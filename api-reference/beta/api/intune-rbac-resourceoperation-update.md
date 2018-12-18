@@ -1,12 +1,13 @@
 ---
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
-ms.openlocfilehash: b89cfb962c6c7f573b4f7f7c6862edd9a66fa833
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048827"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317820"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +53,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔|确定是否定义每个角色分配的作用域验证权限。|
+|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
 
 
 

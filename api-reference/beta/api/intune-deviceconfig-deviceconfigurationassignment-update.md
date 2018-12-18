@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceConfigurationAssignment
 description: 更新 deviceConfigurationAssignment 对象的属性。
-ms.openlocfilehash: 2933f66f648a00f4fd66dd4ec20cbcbba395acd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50a4c677cf54b4d4b262a7b559f14d454e6765be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317680"
 ---
 # <a name="update-deviceconfigurationassignment"></a>更新 deviceConfigurationAssignment
 
@@ -45,7 +46,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

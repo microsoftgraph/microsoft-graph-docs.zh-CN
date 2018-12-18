@@ -1,12 +1,13 @@
 ---
 title: defaultManagedAppProtection 资源类型
 description: 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
-ms.openlocfilehash: 2627ffdafe46d524f31c2a4068cd0c96665ebc8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17f5377df623d439fbd68342f26d9a570c676f55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046009"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317043"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 
@@ -87,10 +88,10 @@ ms.locfileid: "27046009"
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备模型。 (仅 iOS)。 可取值为：`block`、`wipe`。|
 |allowedAndroidDeviceManufacturers|字符串|作为字符串的托管的应用程序，以允许的设备制造商的分号分隔列表。 （仅限 Android）|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备制造商。 (仅 android)。 可取值为：`block`、`wipe`。|
-|thirdPartyKeyboardsBlocked|布尔|如果第三方键盘允许访问托管的应用程序时，定义。 (仅适用于 iOS)|
-|filterOpenInToOnlyManagedApps|布尔|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。 (仅适用于 iOS)|
-|disableProtectionOfManagedOutboundOpenInData|布尔|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。 (仅适用于 iOS)|
-|protectInboundDataFromUnknownSources|布尔|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。 (仅适用于 iOS)|
+|thirdPartyKeyboardsBlocked|Boolean|如果第三方键盘允许访问托管的应用程序时，定义。 (仅适用于 iOS)|
+|filterOpenInToOnlyManagedApps|Boolean|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。 (仅适用于 iOS)|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。 (仅适用于 iOS)|
+|protectInboundDataFromUnknownSources|Boolean|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。 (仅适用于 iOS)|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|

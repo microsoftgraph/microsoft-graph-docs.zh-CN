@@ -1,12 +1,13 @@
 ---
 title: ratingUnitedStatesMoviesType 枚举类型
 description: 电影分级美国的标签
-ms.openlocfilehash: a281f9c2d50a4f2b960e98422501e73c256fc6ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d408d16dd0f026a6e2ab3711a9600f1423db7f6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317225"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 

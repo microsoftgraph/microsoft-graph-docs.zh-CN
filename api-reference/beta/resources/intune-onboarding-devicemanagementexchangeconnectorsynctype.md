@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnectorSyncType 枚举类型
 description: Exchange 连接器同步请求的类型。
-ms.openlocfilehash: 96117a7d11ca49cd39b60cb932bbb985ccf50d2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcad9b1455d488c9243b57f607281b39857cbf25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316847"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 枚举类型
 

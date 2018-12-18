@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeDeviceClass 资源类型
 description: Exchange 中的设备类。
-ms.openlocfilehash: 53234a97ffd2581eea1a4c480161ec9243a710d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01e0877388391deaebbda18e48247f4e3585a63a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316777"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 

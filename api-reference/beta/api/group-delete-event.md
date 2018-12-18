@@ -1,12 +1,13 @@
 ---
 title: 删除事件
 description: 删除 event 对象。
-ms.openlocfilehash: 41623ad938a37ba762e843ab007f772ac8ae7504
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b9867fb9847ca2971dfca217a48808cc5f962069
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318436"
 ---
 # <a name="delete-event"></a>删除事件
 
@@ -31,7 +32,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

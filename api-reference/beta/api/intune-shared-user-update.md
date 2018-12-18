@@ -1,12 +1,13 @@
 ---
 title: 更新用户
 description: 更新 user 对象的属性。
-ms.openlocfilehash: e1909d25e9cfd8281801ba0a398a3fc6901693bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4fb2bde10d913b6bd9c30a34b6e1b9e8169a9e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042105"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317386"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -27,7 +28,7 @@ ms.locfileid: "27042105"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -45,7 +46,7 @@ PATCH /users/{usersId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

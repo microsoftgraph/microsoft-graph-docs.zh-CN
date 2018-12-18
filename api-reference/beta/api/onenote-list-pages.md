@@ -1,12 +1,13 @@
 ---
 title: 列出页面
 description: 检索 page 对象列表。
-ms.openlocfilehash: 9144d443b7fe73cc2720c85adb4199ae6ab9a589
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 75673f046d062b22285213df0c20445cc41910be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049528"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316644"
 ---
 # <a name="list-pages"></a>列出页面
 
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/pages
 默认响应将展开 `parentSection` 并选择分区的 `id`、`displayName`、和 `self` 属性。页面的有效 `expand` 值为 `parentNotebook` 和 `parentSection`。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

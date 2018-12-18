@@ -1,12 +1,13 @@
 ---
 title: devicePlatformType 枚举类型
 description: 支持的平台类型。
-ms.openlocfilehash: a5698a00b712606632e9b44783b5b9d1ffc3caab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6609ea65eb7469155f4e1bf3f8d6e5ccc424d338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046315"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316217"
 ---
 # <a name="deviceplatformtype-enum-type"></a>devicePlatformType 枚举类型
 

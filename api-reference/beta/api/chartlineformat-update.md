@@ -1,12 +1,13 @@
 ---
 title: 更新 chartlineformat
 description: 更新 chartlineformat 对象的属性。
-ms.openlocfilehash: 9bd1a267a463b9ba7a12f743b25571d2825b09a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 816056cefea715317a05d65eebf696c2cc907cfe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316441"
 ---
 # <a name="update-chartlineformat"></a>更新 chartlineformat
 
@@ -30,7 +31,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/lin
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

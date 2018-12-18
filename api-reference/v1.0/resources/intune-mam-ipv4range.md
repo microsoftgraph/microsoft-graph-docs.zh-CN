@@ -1,12 +1,13 @@
 ---
 title: iPv4Range 资源类型
 description: IP V4 范围
-ms.openlocfilehash: 8b59101e1fcdb5ab88d9c24a0359f8abb1687818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dd5479776cf5f497ab6f26e893a78c73fa6ad86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316665"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 

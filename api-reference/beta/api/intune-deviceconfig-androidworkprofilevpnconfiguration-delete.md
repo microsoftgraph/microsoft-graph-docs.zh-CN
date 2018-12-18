@@ -1,12 +1,13 @@
 ---
 title: 删除 androidWorkProfileVpnConfiguration
 description: 删除 androidWorkProfileVpnConfiguration。
-ms.openlocfilehash: b267261d088c03209b295b8f27085b9ea4411a21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 197cf31631d9baaf64cf8e87477d4a3698960ff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317778"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>删除 androidWorkProfileVpnConfiguration
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

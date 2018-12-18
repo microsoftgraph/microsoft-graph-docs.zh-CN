@@ -1,14 +1,15 @@
 ---
-title: 列表 joinedTeams
+title: 列出 joinedTeams
 description: 获取用户已是直接成员的 Microsoft 团队中的团队。
-ms.openlocfilehash: fc5e7f01775e352c61802c457bfa9c41a218463a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1e29b21adbf37128ccf8fe7ff9d70596c7b72499
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009420"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317743"
 ---
-# <a name="list-joinedteams"></a>列表 joinedTeams
+# <a name="list-joinedteams"></a>列出 joinedTeams
 
 
 

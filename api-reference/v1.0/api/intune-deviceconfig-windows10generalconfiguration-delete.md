@@ -1,12 +1,13 @@
 ---
 title: 删除 windows10GeneralConfiguration
 description: 删除 windows10GeneralConfiguration。
-ms.openlocfilehash: 148a4aaf4adf22ef7caa4bca1a86164f955af597
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17a9a45de96c4cb0d8dd4c1dc2ff7bf92ea9c43a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318177"
 ---
 # <a name="delete-windows10generalconfiguration"></a>删除 windows10GeneralConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

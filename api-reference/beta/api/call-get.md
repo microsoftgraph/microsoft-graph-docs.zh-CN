@@ -1,12 +1,13 @@
 ---
 title: 获取呼叫
 description: 检索的属性和呼叫对象的关系。
-ms.openlocfilehash: d161160fbce95e1aa549c8561c0c271b5c641818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f2e3ee4b18dadfaeddd4df89745b469648644a36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316546"
 ---
 # <a name="get-call"></a>获取呼叫
 
@@ -34,7 +35,7 @@ GET /applications/{id}/calls/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

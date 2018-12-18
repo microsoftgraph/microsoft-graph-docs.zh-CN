@@ -1,12 +1,13 @@
 ---
 title: 域： forceDelete
 description: 删除使用异步操作的域。
-ms.openlocfilehash: 590ba49a4aff99385a2584b3d544d7682a030eb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4af5b70fca7600538d4212768243d8de82eb79ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042903"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316210"
 ---
 # <a name="domain-forcedelete"></a>域： forceDelete
 
@@ -50,7 +51,7 @@ POST /domains/{id}/forceDelete
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type  | application/json |
@@ -59,9 +60,9 @@ POST /domains/{id}/forceDelete
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|布尔| 若要禁用重命名的用户帐户的选项。 如果禁用的用户帐户，则用户将不允许登录。<br>*True*（默认值）-重命名此操作的一部分的帐户被禁用的用户。<br>未禁用*false* -重命名此操作的一部分的用户帐户。 |
+|disableUserAccounts|Boolean| 若要禁用重命名的用户帐户的选项。 如果禁用的用户帐户，则用户将不允许登录。<br>*True*（默认值）-重命名此操作的一部分的帐户被禁用的用户。<br>未禁用*false* -重命名此操作的一部分的用户帐户。 |
 
 ## <a name="response"></a>响应
 

@@ -1,12 +1,13 @@
 ---
 title: educationCsvDataProvider 资源类型
 description: '用于输入的源 CSV 文件时设置学校数据同步配置文件。  '
-ms.openlocfilehash: a3079b4f18c74c95fb0f8646116f2c7901d17b3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 1a816d4e176147d549381465154e35cf0a821b98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041862"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317897"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>educationCsvDataProvider 资源类型
 
