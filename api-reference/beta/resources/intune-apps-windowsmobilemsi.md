@@ -1,12 +1,13 @@
 ---
 title: windowsMobileMSI 资源类型
 description: 包含 Windows Mobile MSI 业务线应用的属性和继承的属性。
-ms.openlocfilehash: 4041dd8e8b43170318507c17ec5edc4986ab2ce2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 403000833a344eff62b6190d92a842fc89957f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349383"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI 资源类型
 

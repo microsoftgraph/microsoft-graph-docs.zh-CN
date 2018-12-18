@@ -1,12 +1,13 @@
 ---
 title: teamSpecialization 枚举类型
 description: 描述为团队的特殊的使用情况。
-ms.openlocfilehash: 8f50e158e6eedc964226478841c5322eefca9f77
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348011"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
 

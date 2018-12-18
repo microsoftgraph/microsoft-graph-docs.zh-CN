@@ -1,12 +1,13 @@
 ---
 title: 列出 managedIOSStoreApps
 description: 列出 managedIOSStoreApp 对象的属性和关系。
-ms.openlocfilehash: 388a22e30391bc430ae5cb7eea61b3a6e0392606
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01e3789ae9e6bd1c372c70d2afebcf62c4eabd97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349873"
 ---
 # <a name="list-managediosstoreapps"></a>列出 managedIOSStoreApps
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

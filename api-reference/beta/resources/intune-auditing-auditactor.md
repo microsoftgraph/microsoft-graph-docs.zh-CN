@@ -1,12 +1,13 @@
 ---
 title: auditActor 资源类型
 description: 包含审核主角的属性的类。
-ms.openlocfilehash: f8a2858854a8efb07cd710c5bccb718dd504a81e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b1f3a182aa710564bdf5e134a4ceabf22f3fb71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348928"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 

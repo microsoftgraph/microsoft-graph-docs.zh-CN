@@ -1,12 +1,13 @@
 ---
 title: windows81VpnProxyServer 资源类型
 description: VPN 代理服务器。
-ms.openlocfilehash: 27100dd3faecc9ba20a4bcc28985c56c9cb409c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 015df762d25e1a87a9ce29bd4efbc15e98ed7e08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349362"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer 资源类型
 
@@ -24,8 +25,8 @@ VPN 代理服务器。
 |automaticConfigurationScriptUrl|字符串|代理服务器的自动配置脚本的 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|地址。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|端口。 有效值 0 到 65535 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|布尔|自动检测代理设置。|
-|bypassProxyServerForLocalAddress|布尔|对于本地地址绕过代理服务器。|
+|automaticallyDetectProxySettings|Boolean|自动检测代理设置。|
+|bypassProxyServerForLocalAddress|Boolean|对于本地地址绕过代理服务器。|
 
 ## <a name="relationships"></a>Relationships
 无

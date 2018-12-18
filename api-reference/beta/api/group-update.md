@@ -1,12 +1,13 @@
 ---
 title: 更新组
 description: 更新 group 对象的属性。
-ms.openlocfilehash: 1a87bc3e6599d37cab25e3e98c9dcf63d7d078e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348431"
 ---
 # <a name="update-group"></a>更新组
 
@@ -34,7 +35,7 @@ PATCH /groups/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -44,8 +45,8 @@ PATCH /groups/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
-|autoSubscribeNewMembers|布尔|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |说明|String|可选的组说明。 |
 |displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection|指定要创建的组的类型。可取值为 **Unified**（要创建 Office 365 组）或 **DynamicMembership**（要创建动态组）。对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。|

@@ -1,12 +1,13 @@
 ---
 title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
-ms.openlocfilehash: 15151f7d5dadfd7cbbdefa088c72f2c70c0bba65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56829adcba15ca1c46e5548212e71e619e339a1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010788"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348998"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

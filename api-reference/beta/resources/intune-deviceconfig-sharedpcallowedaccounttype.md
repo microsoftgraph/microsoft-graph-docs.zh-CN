@@ -1,12 +1,13 @@
 ---
 title: sharedPCAllowedAccountType 枚举类型
 description: 允许共享 PC 的帐户的类型。
-ms.openlocfilehash: 6fcc8052587935a2145f8dd46907f29e427f3ff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97e6dda043043346e5a1310ef049013eb11e5027
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349243"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
 
@@ -19,7 +20,7 @@ ms.locfileid: "27048879"
 |成员|值|说明|
 |:---|:---|:---|
 |来宾|1|仅来宾帐户。 默认值。|
-|域|2|只能加入域的帐户。|
+|domain|2|只能加入域的帐户。|
 
 
 

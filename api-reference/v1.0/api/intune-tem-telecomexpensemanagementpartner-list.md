@@ -1,12 +1,13 @@
 ---
 title: 列出 telecomExpenseManagementPartners
 description: 列出 telecomExpenseManagementPartner 对象的属性和关系。
-ms.openlocfilehash: e71be2fb4975407fc0e1ad272899d2d73f39d861
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ef437d2aa8eb6a6f36f10e8951530fba1d5207d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007591"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349390"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>列出 telecomExpenseManagementPartners
 
@@ -35,7 +36,7 @@ GET /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

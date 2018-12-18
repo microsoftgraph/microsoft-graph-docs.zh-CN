@@ -1,12 +1,13 @@
 ---
 title: 获取 mobileAppCategory
 description: 读取 mobileAppCategory 对象的属性和关系。
-ms.openlocfilehash: b1b4425c37431c91c86682c3ca301dd1411180e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 99ed0bb0159bd39efe417aa66950a13a5d2dbcfe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349901"
 ---
 # <a name="get-mobileappcategory"></a>获取 mobileAppCategory
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

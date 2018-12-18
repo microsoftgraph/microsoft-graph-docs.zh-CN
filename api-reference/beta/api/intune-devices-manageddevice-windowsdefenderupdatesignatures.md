@@ -1,12 +1,13 @@
 ---
 title: windowsDefenderUpdateSignatures 操作
 description: 尚未记录
-ms.openlocfilehash: 688c50123e51273309dfe09ce13cab78a2458c31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b491477b2a16c1e703fc761c542e1bb83b04f8e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349481"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>windowsDefenderUpdateSignatures 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

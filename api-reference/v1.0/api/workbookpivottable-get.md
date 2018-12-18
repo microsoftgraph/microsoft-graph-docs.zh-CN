@@ -1,12 +1,13 @@
 ---
 title: Get workbookPivotTable
 description: 检索 workbookPivotTable 对象的属性和关系。
-ms.openlocfilehash: b49a05076f9906d1399fc301b31135879ac9e596
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f4d42f05fe5e9908aa9f2d60c88533a6608850a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007961"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347955"
 ---
 # <a name="get-workbookpivottable"></a>Get workbookPivotTable
 
@@ -31,7 +32,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

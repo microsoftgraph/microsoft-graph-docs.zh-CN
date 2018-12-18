@@ -1,12 +1,13 @@
 ---
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
-ms.openlocfilehash: 496e349162ddffe918c2d293cc9032cff6fd14c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048394"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348200"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -49,7 +50,7 @@ ms.locfileid: "27048394"
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或联系人。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 获取组、 目录角色和管理用户属于其直接成员的 memberOf 导航属性中的单位。|
 |[列表可传递 memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出了组、 目录角色和管理单元的用户的成员。 此操作可传递，包括用户的嵌套的成员的组。 |
-|[列表 joinedTeams](../api/user-list-joinedteams.md) |[groups](group.md)集合| 获取用户从 joinedTeams 导航属性直接成员的 Microsoft 团队。|
+|[列出 joinedTeams](../api/user-list-joinedteams.md) |[groups](group.md)集合| 获取用户从 joinedTeams 导航属性直接成员的 Microsoft 团队。|
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| 从 ownedDevices 导航属性中获取此用户所拥有的设备。|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取 plannerTasks 分配给用户。|
@@ -81,7 +82,7 @@ ms.locfileid: "27048394"
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
 |ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`，`notAdult`和`adult`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |
@@ -133,7 +134,7 @@ ms.locfileid: "27048394"
 |refreshTokensValidFromDateTime|DateTimeOffset| 这次均无效，和应用程序会发生错误时使用无效刷新或会话令牌获取委派的访问令牌 （用于访问 Microsoft Graph 如 Api） 之前，发出任何刷新令牌或会话令牌 (会话 cookie)。  如果发生这种情况，应用程序需要获取新刷新令牌的授权终结点向发出请求。 只读。 使用[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)重置。|
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
-|showInAddressList|布尔|**true**如果 Outlook 全局地址列表应包含此用户，否则为**false**。 如果未设置，这将被视为**true**。 对于用户通过邀请管理器邀请，此属性将设置为**false**。|
+|showInAddressList|Boolean|**true**如果 Outlook 全局地址列表应包含此用户，否则为**false**。 如果未设置，这将被视为**true**。 对于用户通过邀请管理器邀请，此属性将设置为**false**。|
 |skills|String collection|供用户枚举其技能的列表。|
 |state|字符串|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|

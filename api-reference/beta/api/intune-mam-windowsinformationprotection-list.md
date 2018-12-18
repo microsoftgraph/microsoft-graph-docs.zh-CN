@@ -1,12 +1,13 @@
 ---
 title: 列出 windowsInformationProtections
 description: 列出 windowsInformationProtection 对象的属性和关系。
-ms.openlocfilehash: 94c26f1128374a571d1d719659845246213e619f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34491a305124cf4d9f31ed6dcb1529f2c7b88e5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348173"
 ---
 # <a name="list-windowsinformationprotections"></a>列出 windowsInformationProtections
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

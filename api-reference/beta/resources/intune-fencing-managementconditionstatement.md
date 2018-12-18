@@ -1,12 +1,13 @@
 ---
 title: managementConditionStatement 资源类型
 description: 管理条件语句是一组的管理条件的启用/禁用设备/应用程序配置满足所有包含的管理条件时。
-ms.openlocfilehash: 98b76ce96550d894f8b32f6f6174d5c565e322ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347675"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 

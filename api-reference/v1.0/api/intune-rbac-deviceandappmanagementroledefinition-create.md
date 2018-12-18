@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceAndAppManagementRoleDefinition
 description: 创建新的 deviceAndAppManagementRoleDefinition 对象。
-ms.openlocfilehash: 71ac4a42dcf0795ad9e1e26d20be5be09fbf0705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348515"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>创建 deviceAndAppManagementRoleDefinition
 
@@ -35,7 +36,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +50,7 @@ POST /deviceManagement/roleDefinitions
 |displayName|String|角色定义的显示名称。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|String|角色定义的说明。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|isBuiltIn|布尔值|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 win32LobApp
 description: 更新 win32LobApp 对象的属性。
-ms.openlocfilehash: ec543716bcbf387b9b880535702a832a25319302
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c05da48719aa2e923ae767faec4979f23976e14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048599"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348620"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

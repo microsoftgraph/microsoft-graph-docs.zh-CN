@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsAppX
 description: 删除 windowsAppX。
-ms.openlocfilehash: 923d8f76800b11deaeec4807fa4067cb87c95ae3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d8e0f059e679cd79ffe8be752e3f077b8fe4adf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044517"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348466"
 ---
 # <a name="delete-windowsappx"></a>删除 windowsAppX
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

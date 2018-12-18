@@ -1,12 +1,13 @@
 ---
 title: 趋势资源类型
 description: 将用户连接到的文档的用户 （与用户相关) 周围趋势丰富的关系。 OneDrive 文件和文件存储在 SharePoint 工作组网站可以趋势周围用户。
-ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347997"
 ---
 # <a name="trending-resource-type"></a>趋势资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27045493"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体        | 用于导航到趋势文档。 |
+| 资源      | Entity        | 用于导航到趋势文档。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

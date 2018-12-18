@@ -1,12 +1,13 @@
 ---
 title: 删除 androidScepCertificateProfile
 description: 删除 androidScepCertificateProfile。
-ms.openlocfilehash: 8291fa9d0488068071eafc62e08fbf320b753b98
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb97f2a4b5e37c0fcf599e8af1e3eb583e82e169
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347864"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>删除 androidScepCertificateProfile
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

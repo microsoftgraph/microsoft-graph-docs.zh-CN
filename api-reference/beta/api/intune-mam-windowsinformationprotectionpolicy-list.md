@@ -1,12 +1,13 @@
 ---
 title: 列出 windowsInformationProtectionPolicies
 description: 列出 windowsInformationProtectionPolicy 对象的属性和关系。
-ms.openlocfilehash: 98d6817bd53a695bdac1cf1902063e4c3c1252d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df9404efbb2dd9200312dc1db217866e3dba53f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349740"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>列出 windowsInformationProtectionPolicies
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: domainDnsTxtRecord 资源类型
 description: 表示已添加到租户中特定域的 DNS 区域文件的 TXT 记录。继承自 DomainDnsRecord 实体。
-ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: caefb97b39219c282c45949b504c3d0b91cdada9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349012"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord 资源类型
 

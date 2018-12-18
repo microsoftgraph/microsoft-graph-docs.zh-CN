@@ -1,12 +1,13 @@
 ---
 title: 更新 reportRoot
 description: 更新 reportRoot 对象的属性。
-ms.openlocfilehash: 199ebfa724b5cdfc510aa0d82f8ae3bfd87aee58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f3d0e297a9b7d122e9b21afd7555c1af307d2d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349530"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
@@ -23,7 +24,7 @@ ms.locfileid: "27044672"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -39,7 +40,7 @@ PATCH /reports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: managedAppRegistration 资源类型
 description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
-ms.openlocfilehash: efccea80c953ee4eac07588a21944d10810f8532
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 218a36a283febe646afcc6f9c9bcbd0ed5abf46a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008374"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347787"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
