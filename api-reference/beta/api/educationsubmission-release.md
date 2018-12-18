@@ -1,49 +1,50 @@
 ---
 title: educationSubmission： 发行版
 description: " 指示完成分级。 此操作仅可通过教师。"
-ms.openlocfilehash: b521938737f9a3d8208c56ef5ee1b4091d075738
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 9a21c45198ccd0ef933d58721c2d594cf29443bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308587"
 ---
-# <a name="educationsubmission-release"></a><span data-ttu-id="9b132-104">educationSubmission： 发行版</span><span class="sxs-lookup"><span data-stu-id="9b132-104">educationSubmission: release</span></span>
+# <a name="educationsubmission-release"></a><span data-ttu-id="55e0d-104">educationSubmission： 发行版</span><span class="sxs-lookup"><span data-stu-id="55e0d-104">educationSubmission: release</span></span>
 
-> <span data-ttu-id="9b132-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="9b132-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9b132-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="9b132-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="55e0d-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="55e0d-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="55e0d-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="55e0d-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="9b132-107">此操作会使薪等级和学生向此提交操作相关联的反馈。</span><span class="sxs-lookup"><span data-stu-id="9b132-107">This action makes the grade and feedback associated with this submission available to the student.</span></span> <span data-ttu-id="9b132-108">这将提交的状态从"提交"变为"发布"，并指示完成分级。</span><span class="sxs-lookup"><span data-stu-id="9b132-108">This will change the status of the submission from "submitted" to "released" and indicates that grading is done.</span></span> <span data-ttu-id="9b132-109">此操作仅可通过教师。</span><span class="sxs-lookup"><span data-stu-id="9b132-109">This action can only be done by the teacher.</span></span>
+<span data-ttu-id="55e0d-107">此操作会使薪等级和学生向此提交操作相关联的反馈。</span><span class="sxs-lookup"><span data-stu-id="55e0d-107">This action makes the grade and feedback associated with this submission available to the student.</span></span> <span data-ttu-id="55e0d-108">这将提交的状态从"提交"变为"发布"，并指示完成分级。</span><span class="sxs-lookup"><span data-stu-id="55e0d-108">This will change the status of the submission from "submitted" to "released" and indicates that grading is done.</span></span> <span data-ttu-id="55e0d-109">此操作仅可通过教师。</span><span class="sxs-lookup"><span data-stu-id="55e0d-109">This action can only be done by the teacher.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9b132-110">权限</span><span class="sxs-lookup"><span data-stu-id="9b132-110">Permissions</span></span>
-<span data-ttu-id="9b132-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9b132-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="55e0d-110">权限</span><span class="sxs-lookup"><span data-stu-id="55e0d-110">Permissions</span></span>
+<span data-ttu-id="55e0d-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="55e0d-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9b132-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="9b132-113">Permission type</span></span>      | <span data-ttu-id="9b132-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9b132-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="55e0d-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="55e0d-113">Permission type</span></span>      | <span data-ttu-id="55e0d-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55e0d-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9b132-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9b132-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="9b132-116">EduAssignments.ReadWriteBasic EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9b132-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
-|<span data-ttu-id="9b132-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9b132-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="9b132-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="9b132-118">Not supported.</span></span>  |
-|<span data-ttu-id="9b132-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="9b132-119">Application</span></span> | <span data-ttu-id="9b132-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="9b132-120">Not supported.</span></span> | 
+|<span data-ttu-id="55e0d-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55e0d-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="55e0d-116">EduAssignments.ReadWriteBasic EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55e0d-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
+|<span data-ttu-id="55e0d-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55e0d-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="55e0d-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="55e0d-118">Not supported.</span></span>  |
+|<span data-ttu-id="55e0d-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="55e0d-119">Application</span></span> | <span data-ttu-id="55e0d-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="55e0d-120">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="9b132-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9b132-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55e0d-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55e0d-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="9b132-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="9b132-122">Request headers</span></span>
-| <span data-ttu-id="9b132-123">标头</span><span class="sxs-lookup"><span data-stu-id="9b132-123">Header</span></span>       | <span data-ttu-id="9b132-124">值</span><span class="sxs-lookup"><span data-stu-id="9b132-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="55e0d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="55e0d-122">Request headers</span></span>
+| <span data-ttu-id="55e0d-123">标头</span><span class="sxs-lookup"><span data-stu-id="55e0d-123">Header</span></span>       | <span data-ttu-id="55e0d-124">值</span><span class="sxs-lookup"><span data-stu-id="55e0d-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9b132-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="9b132-125">Authorization</span></span>  | <span data-ttu-id="9b132-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9b132-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="55e0d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="55e0d-125">Authorization</span></span>  | <span data-ttu-id="55e0d-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="55e0d-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9b132-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="9b132-128">Request body</span></span>
-<span data-ttu-id="9b132-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9b132-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="55e0d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="55e0d-128">Request body</span></span>
+<span data-ttu-id="55e0d-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="55e0d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9b132-130">响应</span><span class="sxs-lookup"><span data-stu-id="9b132-130">Response</span></span>
-<span data-ttu-id="9b132-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9b132-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="55e0d-130">响应</span><span class="sxs-lookup"><span data-stu-id="55e0d-130">Response</span></span>
+<span data-ttu-id="55e0d-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="55e0d-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9b132-133">示例</span><span class="sxs-lookup"><span data-stu-id="9b132-133">Example</span></span>
-<span data-ttu-id="9b132-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="9b132-134">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="9b132-135">请求</span><span class="sxs-lookup"><span data-stu-id="9b132-135">Request</span></span>
-<span data-ttu-id="9b132-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9b132-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="55e0d-133">示例</span><span class="sxs-lookup"><span data-stu-id="55e0d-133">Example</span></span>
+<span data-ttu-id="55e0d-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="55e0d-134">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="55e0d-135">请求</span><span class="sxs-lookup"><span data-stu-id="55e0d-135">Request</span></span>
+<span data-ttu-id="55e0d-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="55e0d-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_release"
@@ -53,8 +54,8 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/release
 ```
 
-##### <a name="response"></a><span data-ttu-id="9b132-137">响应</span><span class="sxs-lookup"><span data-stu-id="9b132-137">Response</span></span>
-<span data-ttu-id="9b132-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9b132-138">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="55e0d-137">响应</span><span class="sxs-lookup"><span data-stu-id="55e0d-137">Response</span></span>
+<span data-ttu-id="55e0d-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="55e0d-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
