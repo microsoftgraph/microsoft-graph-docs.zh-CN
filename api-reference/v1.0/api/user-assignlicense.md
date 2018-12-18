@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
-ms.openlocfilehash: 93b28385296d2ef3b05b200b3b63d77369647df7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 26c65c0597d5c066af1388087aef07e181076e7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326395"
 ---
 # <a name="assignlicense"></a>assignLicense
 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
@@ -34,7 +35,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |addLicenses|AssignedLicense 集合|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。|
 |removeLicenses|Guid 集合|标识要删除的许可证的 GUID 的集合。|

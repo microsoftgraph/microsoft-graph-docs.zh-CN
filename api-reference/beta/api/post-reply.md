@@ -1,12 +1,13 @@
 ---
 title: 'post: reply'
 description: '在组对话中答复帖子，并向指定线程中添加新帖子。 您可以指定 '
-ms.openlocfilehash: 9698efa8fcd2670f5a837652b8db327ef5c5f55d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 33cd99fd24dc5acfca4b96f232f748a0377d1564
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324225"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -38,7 +39,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |帖子|[帖子](../resources/post.md)|正在回复的新帖子。|
 

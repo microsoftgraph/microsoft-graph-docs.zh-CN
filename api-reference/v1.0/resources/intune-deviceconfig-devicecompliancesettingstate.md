@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceSettingState 资源类型
 description: 给定设备的设备符合性设置状态。
-ms.openlocfilehash: f91e7eb4cdd72899b32419fc9401c055fff0bc3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4edce4b22b70c6018703e086d606b84781b6b91
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326171"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列表 managementConditionStatements
 description: 列出属性和 managementConditionStatement 对象之间的关系。
-ms.openlocfilehash: 7bc14cba615e6cbb4823f2b194f1756a7d728473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b151a441417ab9083b0db077921d5d3c33ca121
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325387"
 ---
 # <a name="list-managementconditionstatements"></a>列表 managementConditionStatements
 
@@ -38,7 +39,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

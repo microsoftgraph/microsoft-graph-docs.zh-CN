@@ -1,12 +1,13 @@
 ---
 title: 获取 windows10EnterpriseModernAppManagementConfiguration
 description: 读取 windows10EnterpriseModernAppManagementConfiguration 对象的属性和关系。
-ms.openlocfilehash: 70c689db666d71f9bbfebcb8d84510e6c6473938
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2053d26c8678fadbe0ebee7e3e0b0acac8b2ebea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327165"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>获取 windows10EnterpriseModernAppManagementConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

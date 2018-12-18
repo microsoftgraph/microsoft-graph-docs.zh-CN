@@ -1,12 +1,13 @@
 ---
 title: 通道资源类型
 description: '频道是 chatMessages 团队中的集合。 '
-ms.openlocfilehash: e69c0e7cdef347c59006b1dcce192e7949c2f07e
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 18a3293b757e641eab98b166a43ce023762ccc6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326773"
 ---
 # <a name="channel-resource-type"></a>通道资源类型
 

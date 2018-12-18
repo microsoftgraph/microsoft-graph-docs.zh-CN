@@ -1,12 +1,13 @@
 ---
 title: 创建 iosCompliancePolicy
 description: 创建新的 iosCompliancePolicy 对象。
-ms.openlocfilehash: f21334d888a0885359e7caa4028bf8f1dea44cf1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd039005455c94cf55fa1afe21eee33fde9b4588
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346170"
 ---
 # <a name="create-ioscompliancepolicy"></a>创建 iosCompliancePolicy
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

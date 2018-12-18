@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsManagedDevice
 description: 创建新的 windowsManagedDevice 对象。
-ms.openlocfilehash: 79db6b0f2d5f8e918b42fb9b1c5a40b05983edae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21626854a52ed305dbf237562e151e168330f170
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324442"
 ---
 # <a name="create-windowsmanageddevice"></a>创建 windowsManagedDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -106,8 +107,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的用户从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|布尔|如果通过自动试点注册托管的设备，报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|布尔|报告托管的 iOS 设备是否用户审批注册。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期继承从[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|

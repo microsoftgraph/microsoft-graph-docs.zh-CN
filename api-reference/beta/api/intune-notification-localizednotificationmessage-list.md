@@ -1,12 +1,13 @@
 ---
 title: 列出 localizedNotificationMessages
 description: 列出 localizedNotificationMessage 对象的属性和关系。
-ms.openlocfilehash: 649864ae18c48ec86090c18cf4f50a9ac1801f86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 070488840f04f21b8a96c8532c9f863ee5934299
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323973"
 ---
 # <a name="list-localizednotificationmessages"></a>列出 localizedNotificationMessages
 
@@ -37,7 +38,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

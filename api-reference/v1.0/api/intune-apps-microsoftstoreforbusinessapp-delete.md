@@ -1,12 +1,13 @@
 ---
 title: 删除 microsoftStoreForBusinessApp
 description: 删除 microsoftStoreForBusinessApp。
-ms.openlocfilehash: 7c99e4983ad6a62a329e03832117c34038a8fc86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f84057191462268e6c51c3b1fa1336d2cb89d371
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326255"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>删除 microsoftStoreForBusinessApp
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

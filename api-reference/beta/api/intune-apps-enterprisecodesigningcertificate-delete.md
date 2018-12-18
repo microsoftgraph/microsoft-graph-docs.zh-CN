@@ -1,12 +1,13 @@
 ---
 title: 删除 enterpriseCodeSigningCertificate
 description: 删除 enterpriseCodeSigningCertificate。
-ms.openlocfilehash: 3927b0a1588c9adc6cf1fb89918620aedf041148
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec733f23e30dc00d62496e9b2bbd1f90236bf2d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343846"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>删除 enterpriseCodeSigningCertificate
 
@@ -37,7 +38,7 @@ DELETE /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSig
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

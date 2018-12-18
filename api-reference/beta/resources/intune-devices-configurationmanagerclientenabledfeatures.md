@@ -1,12 +1,13 @@
 ---
 title: configurationManagerClientEnabledFeatures 资源类型
 description: Configuration Manager 客户端已启用的功能
-ms.openlocfilehash: 60d0e9e78bc4b641bb1f9ee0d61cc09744500424
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0d704fddc084a455c83c5b55ea9b3911f3f232a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042837"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343937"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 

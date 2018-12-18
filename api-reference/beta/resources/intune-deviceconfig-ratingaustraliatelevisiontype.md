@@ -1,12 +1,13 @@
 ---
 title: ratingAustraliaTelevisionType 枚举类型
 description: 澳大利亚中的 TV 内容评级标签
-ms.openlocfilehash: add9febca378dc2be766c0013ace5ed0987578fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff2f6292638f8a7be451329ae24c3b479d1a772b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041369"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326689"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 

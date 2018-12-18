@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceScheduledActionForRule 资源类型
 description: 计划的规则操作
-ms.openlocfilehash: afb2544312a90c2cea0855ad6f0b91f8bbdd74fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 912a0722b85857aa64daa5339cc7730a4c0413ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041501"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344770"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 

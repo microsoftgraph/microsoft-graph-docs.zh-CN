@@ -1,12 +1,13 @@
 ---
 title: networkIPv4ConfigurationManagementCondition 资源类型
 description: 配置基于管理条件可能定义设备检测到某些 IP 时将触发的 IPv4 网络设置。 IP 配置管理条件仅被视为 TRUE 的网络连接处于活动状态时。
-ms.openlocfilehash: f8727fdf67f9602799b0ddacdb94c2c8570d72b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344259"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 

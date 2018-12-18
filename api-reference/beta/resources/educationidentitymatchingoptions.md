@@ -1,12 +1,13 @@
 ---
 title: educationIdentityMatchingOptions 资源类型
 description: 提供用于匹配的用户帐户的 source 属性和目标属性之间的映射。 Source 属性应存在的源数据中。 目标属性应为 Azure Active Directory (Azure AD) 中的有效属性。
-ms.openlocfilehash: 2cabb255648f4089d437912a97bb7d29ff286779
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: bc2b99654d8e27d52ed92d9b55a32fdff8e730f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325429"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>educationIdentityMatchingOptions 资源类型
 

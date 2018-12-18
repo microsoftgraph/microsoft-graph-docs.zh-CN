@@ -1,12 +1,13 @@
 ---
 title: omaSettingStringXml 资源类型
 description: OMA 设置字符串 XML 定义。
-ms.openlocfilehash: bb95041a10a71591c06a55dca39a4377d32376b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5582ca84a9d6c918ce7b8dea5a21f616804da4ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323784"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml 资源类型
 

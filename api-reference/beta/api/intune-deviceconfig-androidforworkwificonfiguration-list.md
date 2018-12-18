@@ -1,12 +1,13 @@
 ---
 title: 列表 androidForWorkWiFiConfigurations
 description: 列出属性和 androidForWorkWiFiConfiguration 对象之间的关系。
-ms.openlocfilehash: fcbaeced17e48575112e10a3cf593ef5f5b4592e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07471de02b19e2bd3c201e5e36a63580e509268
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344994"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>列表 androidForWorkWiFiConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

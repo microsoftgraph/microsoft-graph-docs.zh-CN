@@ -1,12 +1,13 @@
 ---
 title: 获取 ChartGridlines
 description: 检索 chartgridlines 对象的属性和关系。
-ms.openlocfilehash: 8214d209e439f8a6d4d6a866b51c04d9a06e8ff6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: aae489ec766f7a3f03407915ad2a01f60ca13f8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343510"
 ---
 # <a name="get-chartgridlines"></a>获取 ChartGridlines
 
@@ -33,7 +34,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

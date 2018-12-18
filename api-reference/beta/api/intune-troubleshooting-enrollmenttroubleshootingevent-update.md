@@ -1,12 +1,13 @@
 ---
 title: 更新 enrollmentTroubleshootingEvent
 description: 更新 enrollmentTroubleshootingEvent 对象的属性。
-ms.openlocfilehash: 1020b3605a80c0bca995efab4cb173dfa12856cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38fb219c653e59504e5402c5313c1c871ee732d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325366"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

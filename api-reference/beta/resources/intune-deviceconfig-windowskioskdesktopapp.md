@@ -1,12 +1,13 @@
 ---
 title: windowsKioskDesktopApp 资源类型
 description: 一种类型的应用程序的基类
-ms.openlocfilehash: 8b3a3cd8bfc7c35fa2a730c85adafc3ae6dceba2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5ef4000b66f15f5951b49a152d25df30167004d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344518"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>windowsKioskDesktopApp 资源类型
 
