@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
-ms.openlocfilehash: 038bfecf443972921c7aeacc508e9b1b81331cf4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11c8da3a5073f17e6bf104de4fc4fb081c36811b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337070"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

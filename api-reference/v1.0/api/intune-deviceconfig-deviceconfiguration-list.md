@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceConfigurations
 description: 列出 deviceConfiguration 对象的属性和关系。
-ms.openlocfilehash: 86d0e4fe85403e500850253e4085a2af45f63507
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4340f4dfc57ecde4e6e3e434542ed8a246f22e3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355466"
 ---
 # <a name="list-deviceconfigurations"></a>列出 deviceConfigurations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 列表 workingWith
 description: 计算的洞察力进行的用户使用的用户列表。
-ms.openlocfilehash: ce464667c66a430f20c60485712c649120dac4a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 3d4b21745ddbb98567d75e240ae460c3e1a48966
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043129"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344749"
 ---
 # <a name="list-workingwith"></a>列表 workingWith
 

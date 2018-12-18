@@ -1,12 +1,13 @@
 ---
 title: 创建 mailFolder
 description: 使用此 API 创建新的子 mailFolder。
-ms.openlocfilehash: 44d9e9ebfd721a68734376342500ad1e2a182cda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e893f28878b14fa76d8cda16a5b37f795ed235f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045863"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357272"
 ---
 # <a name="create-mailfolder"></a>创建 mailFolder
 
@@ -39,14 +40,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必需。 |
+| 授权 | `Bearer {token}`. 必需。 |
 | Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
-| 参数 | 类型 | 说明 |
+| 参数 | Type | 说明 |
 |:----------|:-----|:------------|
 |displayName|String|新文件夹的显示名称。|
 

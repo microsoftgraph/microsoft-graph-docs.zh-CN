@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsPhone81AppX
 description: 删除 windowsPhone81AppX。
-ms.openlocfilehash: 72d0f0eae4c5cbb1d30c0fdf93b2c2a8d633083e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff815a74d09b739146f36f248a601a75fe06bccf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356327"
 ---
 # <a name="delete-windowsphone81appx"></a>删除 windowsPhone81AppX
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

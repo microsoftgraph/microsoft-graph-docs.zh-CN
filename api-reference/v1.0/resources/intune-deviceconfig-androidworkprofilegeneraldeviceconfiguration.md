@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileGeneralDeviceConfiguration 资源类型
 description: Android 工作模板常规设备配置。
-ms.openlocfilehash: 89329bbe4bce88153b56df3e2567688d910e9543
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbcbb87e8ae9c9d4a36f196b18b6577f423c90a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008215"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337693"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration 资源类型
 
@@ -43,17 +44,17 @@ Android 工作模板常规设备配置。
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 4 至 11|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许共享的数据的类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|布尔|指示阻止通知时设备锁定。|
-|workProfileBlockAddingAccounts|布尔|阻止用户添加/移除工作配置文件中的帐户。|
-|workProfileBluetoothEnableContactSharing|布尔|允许蓝牙设备访问企业联系人。|
-|workProfileBlockScreenCapture|布尔|阻止工作配置文件中的屏幕截图。|
-|workProfileBlockCrossProfileCallerId|布尔|阻止显示工作 profile 呼叫者 ID 个人配置文件中。|
-|workProfileBlockCamera|布尔|阻止工作 profile 摄像头。|
-|workProfileBlockCrossProfileContactsSearch|布尔|个人配置文件中，阻止工作 profile 联系人可用性。|
-|workProfileBlockCrossProfileCopyPaste|布尔|布尔值，指示设置不允许跨是否启用配置文件复制/粘贴。|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示阻止通知时设备锁定。|
+|workProfileBlockAddingAccounts|Boolean|阻止用户添加/移除工作配置文件中的帐户。|
+|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
+|workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕截图。|
+|workProfileBlockCrossProfileCallerId|Boolean|阻止显示工作 profile 呼叫者 ID 个人配置文件中。|
+|workProfileBlockCamera|Boolean|阻止工作 profile 摄像头。|
+|workProfileBlockCrossProfileContactsSearch|Boolean|个人配置文件中，阻止工作 profile 联系人可用性。|
+|workProfileBlockCrossProfileCopyPaste|Boolean|布尔值，指示设置不允许跨是否启用配置文件复制/粘贴。|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
-|workProfilePasswordBlockFingerprintUnlock|布尔|指示是否阻止指纹解锁工作配置文件。|
-|workProfilePasswordBlockTrustAgents|布尔|指示阻止智能锁定和其他信任代理工作配置文件。|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁工作配置文件。|
+|workProfilePasswordBlockTrustAgents|Boolean|指示阻止智能锁定和其他信任代理工作配置文件。|
 |workProfilePasswordExpirationDays|Int32|过期工作配置文件密码之前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码最小长度。 有效值为 4 至 16|
 |workProfilePasswordMinNumericCharacters|Int32|最小 ハ  工作配置文件密码中所需的数字字符。 有效的值 1 到 10|
@@ -66,7 +67,7 @@ Android 工作模板常规设备配置。
 |workProfilePasswordPreviousPasswordBlockCount|Int32|以前的工作配置文件密码，以阻止数。 有效值为 0 至 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|登录失败之前删除工作配置文件允许和已删除的所有企业数据的数量。 有效值为 4 至 11|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|工作所需的配置文件密码的类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|布尔|密码，则需要或不工作配置文件|
+|workProfileRequirePassword|Boolean|密码，则需要或不工作配置文件|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
 
 ## <a name="relationships"></a>关系

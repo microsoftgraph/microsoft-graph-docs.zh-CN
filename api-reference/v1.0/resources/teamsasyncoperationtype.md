@@ -1,12 +1,13 @@
 ---
 title: teamsAsyncOperationType 枚举类型
 description: TeamsAsyncOperation 的类型。 将要添加的成员此处为多个异步支持操作。
-ms.openlocfilehash: 7c0774457af6f19ad4b6c1f98198ad924929efb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 2b6487e1f1d0d98aeddeb5d44fddd9694d68436d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008113"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355018"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 

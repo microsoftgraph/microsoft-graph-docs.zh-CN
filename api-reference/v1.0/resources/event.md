@@ -1,12 +1,13 @@
 ---
 title: 事件资源类型
 description: 日历中的事件。
-ms.openlocfilehash: 33226ac04bcf0dc8365ee56bf70bfa1a381b5ebc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356593"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -57,14 +58,14 @@ ms.locfileid: "27007889"
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
-|hasAttachments|布尔|如果事件包含附件，则设置为 true。|
+|hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 只读。|
 |id|String| 只读。|
 |importance|importance|事件的重要性。 可能的值为： `low`， `normal`， `high`。|
-|isAllDay|布尔|如果事件持续一整天，则设置为 true。|
-|isCancelled|布尔|如果事件已取消，则设置为 true。|
-|isOrganizer|布尔|如果邮件发件人也是组织者，则设置为 true。|
-|isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
+|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+|isCancelled|Boolean|如果事件已取消，则设置为 true。|
+|isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
+|isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
 |locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
@@ -75,7 +76,7 @@ ms.locfileid: "27007889"
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|布尔|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |responseStatus|[responseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
 |sensitivity|sensitivity| 可能的值为： `normal`， `personal`， `private`， `confidential`。|
 |seriesMasterId|String|定期系列主项目，如果该事件是定期系列的一部分的 ID。|

@@ -1,12 +1,13 @@
 ---
 title: 获取组
 description: 获取组对象的属性和关系。
-ms.openlocfilehash: fbae878043580a9c5495b0462290e1da7af3bdd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: aed805172759971740d1576b4b3040934116cd66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009586"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340311"
 ---
 # <a name="get-group"></a>获取组
 获取组对象的属性和关系。
@@ -65,7 +66,7 @@ GET /groups/{id}
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

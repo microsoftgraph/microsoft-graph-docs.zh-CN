@@ -1,12 +1,13 @@
 ---
 title: 列表组 memberOf
 description: 获取组和管理组是直接成员的单位。
-ms.openlocfilehash: 5c189571095676d0c52b8bb93a8d27136d4aaa3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: fa8977cd128fdb51296b31dac2ee959aea8c80b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335929"
 ---
 # <a name="list-group-memberof"></a>列表组 memberOf
 
@@ -36,7 +37,7 @@ GET /groups/{id}/memberOf
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

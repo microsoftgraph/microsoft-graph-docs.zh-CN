@@ -1,12 +1,13 @@
 ---
 title: 获取 roleDefinition
 description: 读取 roleDefinition 对象的属性和关系。
-ms.openlocfilehash: 9e06a8c61519e56c3bced8964c4bd5fde13ef138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d7ea55079969bc07f17af305cc38a2f4711777
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337833"
 ---
 # <a name="get-roledefinition"></a>获取 roleDefinition
 
@@ -40,7 +41,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

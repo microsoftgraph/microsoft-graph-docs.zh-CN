@@ -1,12 +1,13 @@
 ---
 title: windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 description: 尚未记录
-ms.openlocfilehash: 151e38bbf773e5bcaa31047d7498c741105fce28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa8d5e32720f7c2d6666085edd554f9dd7599b01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047153"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357804"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 

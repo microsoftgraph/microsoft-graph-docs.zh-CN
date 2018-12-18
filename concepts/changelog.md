@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
-ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: jthake-msft
+ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283729"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358560"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -2779,7 +2780,7 @@ ms.locfileid: "27283729"
 | 添加项        | v1.0 和 beta | 收到含有空持有者令牌的请求时，在 www-authenticate 标头中现在返回授权服务终结点的位置。 |
 | 添加项        | v1.0 和 beta | 现已修复按实体 ID 属性筛选的功能。 例如：GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前，如果对服务操作和功能发生任何 POST 请求，都需要在操作或功能名称前面加上 microsoft.graph 前缀。 例如，POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups。<br/>现在不再需要添加此前缀（但仍可以指定它）。 因此，以下请求现在同样有效：POST https://graph.microsoft.com/v1.0/me/getMemberGroups。 |
 | 更改          | Beta          | 清理了订阅属性名称。  |
-| 添加        | Beta          | 我们为实体及其关联功能添加了发现（通过 _directorySettingTemplates_）和替代默认行为（通过在模板中创建 _setting_）的功能。最初提供这个唯一的模板是为了控制 Office 组的行为。 |
+| 添加项        | Beta          | 我们为实体及其关联功能添加了发现（通过 _directorySettingTemplates_）和替代默认行为（通过在模板中创建 _setting_）的功能。最初提供这个唯一的模板是为了控制 Office 组的行为。 |
 
 ### <a name="mail-folder"></a>邮件文件夹
 

@@ -1,12 +1,13 @@
 ---
 title: binaryManagementConditionExpression 资源类型
 description: 管理条件表达式进行求值使用二进制操作。
-ms.openlocfilehash: e675a5696d545ba48fc676d1716ed49c7c0b7c65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f271be2527427daaa04436899552abb4d21475e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357517"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression 资源类型
 

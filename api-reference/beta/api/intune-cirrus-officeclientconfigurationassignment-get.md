@@ -1,12 +1,13 @@
 ---
 title: 获取 officeClientConfigurationAssignment
 description: 读取属性和 officeClientConfigurationAssignment 对象的关系。
-ms.openlocfilehash: f0d68aab26f6f0704f7714bb9e897a7592f53801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4aec74e0df54d86ccffd5fb216ebfc1781412f5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041629"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356313"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>获取 officeClientConfigurationAssignment
 
@@ -39,7 +40,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

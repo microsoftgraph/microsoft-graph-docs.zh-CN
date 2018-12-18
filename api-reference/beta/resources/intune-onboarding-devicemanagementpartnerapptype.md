@@ -1,12 +1,13 @@
 ---
 title: deviceManagementPartnerAppType 枚举类型
 description: 合作伙伴应用程序类型。
-ms.openlocfilehash: fe23918c48e7cee23f9037344259c74a1b92ae77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7d54604aeb86c44a1964e1d24b3a1b131551149
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354290"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 

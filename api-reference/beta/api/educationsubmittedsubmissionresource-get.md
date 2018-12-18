@@ -1,12 +1,13 @@
 ---
 title: 获取 educationSubmittedSubmissionResource
 description: 返回提交的资源。 这将供教师后学生已提交，并教师已发布提交之后将可供学生。  注意教师会保留在一些资源的备注。
-ms.openlocfilehash: 89235ad1d33e86da13ec5f4637af7cda949a940a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336531"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 

@@ -1,12 +1,13 @@
 ---
 title: 删除 dataSharingConsent
 description: 删除 dataSharingConsent。
-ms.openlocfilehash: 6c7bc3528a9d6c8ff4e9df07aa2c360572050091
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aef28ba2eaeccfe31404ee7bda166a2aa299abfd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047295"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355095"
 ---
 # <a name="delete-datasharingconsent"></a>删除 dataSharingConsent
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

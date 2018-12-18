@@ -1,12 +1,13 @@
 ---
 title: 创建 macOSOfficeSuiteApp
 description: 创建新的 macOSOfficeSuiteApp 对象。
-ms.openlocfilehash: 4130cd62d8a7744f477a9cc3db773abd06e1b76d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d0f71c501e3645f0f8b4f89610094fa9b13dd2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046450"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358868"
 ---
 # <a name="create-macosofficesuiteapp"></a>创建 macOSOfficeSuiteApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

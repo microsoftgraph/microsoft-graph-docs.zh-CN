@@ -1,12 +1,13 @@
 ---
 title: 删除 win32LobApp
 description: 删除 win32LobApp。
-ms.openlocfilehash: 55ba2e17d8e53b05b2fe4f1a7108cfc6391168cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5bd43c7196ddd8aa9bf769878eddbda69582415
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049316"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356446"
 ---
 # <a name="delete-win32lobapp"></a>删除 win32LobApp
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

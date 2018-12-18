@@ -1,12 +1,13 @@
 ---
 title: teamsTabConfiguration 资源类型 （打开类型）
 description: 确定内容的选项卡的设置。
-ms.openlocfilehash: 4d04ca9128760ee6fed9c0fa704fa991384ac17a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344959"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration 资源类型 （打开类型）
 

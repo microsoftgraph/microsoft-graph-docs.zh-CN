@@ -1,12 +1,13 @@
 ---
 title: 删除对话线程
 description: 删除 thread 对象。
-ms.openlocfilehash: e6b7d697078df2e11d78031158790f9835a78850
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b8dc8d2675804fabbd6c6b5dcbb7d30ad34a211c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339443"
 ---
 # <a name="delete-conversation-thread"></a>删除对话线程
 删除 [thread](../resources/conversationthread.md) 对象。
@@ -27,7 +28,7 @@ DELETE /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

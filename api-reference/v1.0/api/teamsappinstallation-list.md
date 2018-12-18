@@ -1,12 +1,13 @@
 ---
 title: 团队中的列表应用程序
 description: 检索指定团队中安装的应用程序的列表。
-ms.openlocfilehash: 214685302b9c3a09f06cb4d5c13525c222bf658f
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+author: nkramer
+ms.openlocfilehash: c1fabf1418bc704788e96cc762a251186077f52c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241046"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353737"
 ---
 # <a name="list-apps-in-team"></a>团队中的列表应用程序
 

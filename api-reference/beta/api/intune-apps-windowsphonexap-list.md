@@ -1,12 +1,13 @@
 ---
 title: 列表 windowsPhoneXAPs
 description: 列出属性和 windowsPhoneXAP 对象之间的关系。
-ms.openlocfilehash: 86eab5078e31648b64003f362ffa0f315cb51978
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d341b3391da819a1da69cc4cf3fd09ce53333a91
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356467"
 ---
 # <a name="list-windowsphonexaps"></a>列表 windowsPhoneXAPs
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: windowsPackageInformation 资源类型
 description: 包含为业务应用程序的 Windows 行的程序包信息的属性。
-ms.openlocfilehash: a7676320d5aa2eeab1140e6cc631c4061d2c5d14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcc277c610e6ceb27a94ab41993e599a258dd55e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342824"
 ---
 # <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation 资源类型
 

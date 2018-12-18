@@ -1,12 +1,13 @@
 ---
 title: 列出 sharedPCConfigurations
 description: 列出 sharedPCConfiguration 对象的属性和关系。
-ms.openlocfilehash: 18cd0562dbb53b796923f76bff5156a306b51962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7266db5644b748828889351bd6e1f21d556ba8a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337672"
 ---
 # <a name="list-sharedpcconfigurations"></a>列出 sharedPCConfigurations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

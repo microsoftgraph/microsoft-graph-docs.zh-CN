@@ -1,12 +1,13 @@
 ---
 title: 创建 networkIPv4ConfigurationManagementCondition
 description: 创建新的 networkIPv4ConfigurationManagementCondition 对象。
-ms.openlocfilehash: f42bd52da9175192a71ed0be2b36f8f656f6a538
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048713"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356362"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 
@@ -38,7 +39,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

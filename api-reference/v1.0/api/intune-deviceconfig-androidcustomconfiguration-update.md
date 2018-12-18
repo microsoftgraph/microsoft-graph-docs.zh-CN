@@ -1,12 +1,13 @@
 ---
 title: 更新 androidCustomConfiguration
 description: 更新 androidCustomConfiguration 对象的属性。
-ms.openlocfilehash: 36b19923166ae808b1a7c0cb06126082b3bb2381
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ed0f4eb37ebee3c6915dafe271a2827e7b39c3e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356019"
 ---
 # <a name="update-androidcustomconfiguration"></a>更新 androidCustomConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

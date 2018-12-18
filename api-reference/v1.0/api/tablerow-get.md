@@ -1,12 +1,13 @@
 ---
 title: 获取 TableRow
 description: 检索 tablerow 对象的属性和关系。
-ms.openlocfilehash: 330f29b58b05754f9feebac80a46c1b8745c70a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 26fe5cd6292b93df956f34876120dbfe4861ca2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345106"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

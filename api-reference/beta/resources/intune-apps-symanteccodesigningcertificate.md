@@ -1,12 +1,13 @@
 ---
 title: symantecCodeSigningCertificate 资源类型
 description: 尚未记录
-ms.openlocfilehash: f867f5bf6b0cad43f32dcc5ad9320421eee6d5c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 979502f51674b32f10627762d08d8216a466dff9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357237"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate 资源类型
 
@@ -25,8 +26,8 @@ ms.locfileid: "27044717"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|二进制数|中的原始数据格式的 Windows Symantec 代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|中的原始数据格式的 Windows Symantec 代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
 |password|字符串|.Pfx 文件所需的密码。|
 |SubjectName|String|证书使用者名称。|
 |subject|字符串|证书使用者值。|

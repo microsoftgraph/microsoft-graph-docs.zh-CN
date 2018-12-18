@@ -1,12 +1,13 @@
 ---
 title: 在 Outlook 中将重复约会安排为定期事件
 description: 定期事件是 Outlook 日历的重要组成部分。 无论是与经理每周进行的一对一会议，还是每月第二个星期二的部门评审会议，定期规则只需要创建一次事件，然后让服务器填充系列中的其他内容，从而使过程变得简单。
-ms.openlocfilehash: 1af082a32d79f6011e93a7fc0c5fc9d553d16712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 85d856cd9f59ee7df643ff74ed4b3dd9f48ba3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091759"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340073"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>在 Outlook 中将重复约会安排为定期事件
 

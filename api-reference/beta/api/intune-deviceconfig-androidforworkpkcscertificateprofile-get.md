@@ -1,12 +1,13 @@
 ---
 title: 获取 androidForWorkPkcsCertificateProfile
 description: 读取属性和 androidForWorkPkcsCertificateProfile 对象的关系。
-ms.openlocfilehash: 3549871def9abd10431471a26de0263669d30392
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f81b1843121909e8faf86e23789622739fd6404
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354899"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>获取 androidForWorkPkcsCertificateProfile
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

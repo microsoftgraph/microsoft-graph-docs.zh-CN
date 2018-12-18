@@ -1,12 +1,13 @@
 ---
 title: 在组中创建一个目录设置
 description: 使用此 API 创建新目录设置组。
-ms.openlocfilehash: d8bb0750085a23df05100ec0072024d42247b3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e400babc809bdc8d9277cad1bd41b8b714e4e92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358994"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>在组中创建一个目录设置
 
@@ -28,9 +29,9 @@ ms.locfileid: "27047244"
 POST /groups/{id}/settings
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者<token>。 必需|
+| 授权  | 持有者<token>。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。

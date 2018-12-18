@@ -1,12 +1,13 @@
 ---
 title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
-ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: piotrci
+ms.openlocfilehash: 6af6f3c54a7956d6a505c88bfc82fc8233dccdad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184544"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337042"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 

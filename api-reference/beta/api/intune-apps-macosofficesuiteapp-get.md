@@ -1,12 +1,13 @@
 ---
 title: 获取 macOSOfficeSuiteApp
 description: 读取 macOSOfficeSuiteApp 对象的属性和关系。
-ms.openlocfilehash: 3ebea6aa66eaf40cf45a48127acb816b1d9652ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04cc1c85e627bb0c06a71be0b82b97cfa96764b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046365"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356719"
 ---
 # <a name="get-macosofficesuiteapp"></a>获取 macOSOfficeSuiteApp
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

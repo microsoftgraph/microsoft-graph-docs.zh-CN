@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsWifiEnterpriseEAPConfiguration
 description: 删除 windowsWifiEnterpriseEAPConfiguration。
-ms.openlocfilehash: 245781896e627f7cade96cefe186806e62738cdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11fc745f9d644a1a4c8f376f1838e4ad69cbe50c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357699"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>删除 windowsWifiEnterpriseEAPConfiguration
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

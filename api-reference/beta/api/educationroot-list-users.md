@@ -1,12 +1,13 @@
 ---
 title: 列出用户
 description: 检索 user 对象列表。 这些 user 对象将包含特定于教育的属性。
-ms.openlocfilehash: 476741b04da049c019276f78b4842e9732ff9c29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: dd7d086b4471b2938cb5480f9d351a46a27e1f06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338498"
 ---
 # <a name="list-users"></a>列出用户
 

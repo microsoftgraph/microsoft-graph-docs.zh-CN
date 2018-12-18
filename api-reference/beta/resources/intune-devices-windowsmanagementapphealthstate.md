@@ -1,12 +1,13 @@
 ---
 title: windowsManagementAppHealthState 资源类型
 description: Windows 管理应用程序运行状况状态实体。
-ms.openlocfilehash: 8c8f35d25e42b8f833acb0cb86b313c37006b0b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ff77ce54a99ed71a8f4b3498a469342b2e46367
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359701"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 

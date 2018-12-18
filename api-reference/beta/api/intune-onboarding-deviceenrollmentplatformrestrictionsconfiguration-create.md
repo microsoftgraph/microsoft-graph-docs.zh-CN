@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceEnrollmentPlatformRestrictionsConfiguration
 description: 创建新的 deviceEnrollmentPlatformRestrictionsConfiguration 对象。
-ms.openlocfilehash: e28bea6cc182684ec10abddf97801772c111bf0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af34d4d845a3b0804391a1ba5b4f1dd3aa70730f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043848"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358770"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>创建 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

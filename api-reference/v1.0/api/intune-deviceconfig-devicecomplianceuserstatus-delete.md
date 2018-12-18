@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceComplianceUserStatus
 description: 删除 deviceComplianceUserStatus。
-ms.openlocfilehash: 585616487dbb3b7db64ffce0bd8b580f7d91d4a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 14bd169fb65c839e96a7405d8d99c5313f8c547b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007576"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337238"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>删除 deviceComplianceUserStatus
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/use
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

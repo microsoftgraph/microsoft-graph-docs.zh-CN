@@ -1,12 +1,13 @@
 ---
 title: 列出 androidForWorkEnrollmentProfiles
 description: 列出 androidForWorkEnrollmentProfile 对象的属性和关系。
-ms.openlocfilehash: b12e93a6895ff9b7245082f3b2c3cfbe3f940461
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f01037e67a87ee38d6458dd8f2612473970e6680
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044839"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340787"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>列出 androidForWorkEnrollmentProfiles
 
@@ -37,7 +38,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

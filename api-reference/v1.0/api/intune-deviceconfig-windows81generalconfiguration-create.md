@@ -1,12 +1,13 @@
 ---
 title: 创建 windows81GeneralConfiguration
 description: 创建新的 windows81GeneralConfiguration 对象。
-ms.openlocfilehash: a9184e6bde7d61751d00bec23dfa710126c75bb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a289e987732964c2427736f868eb42219bd04ec5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008029"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344336"
 ---
 # <a name="create-windows81generalconfiguration"></a>创建 windows81GeneralConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

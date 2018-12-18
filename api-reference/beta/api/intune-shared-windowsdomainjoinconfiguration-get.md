@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsDomainJoinConfiguration
 description: 读取属性和 windowsDomainJoinConfiguration 对象的关系。
-ms.openlocfilehash: b3b76a902b4a740d142e1027f04d1f98f5fb32aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94c3b69d13b3b4d4d14a1af9c78f858e1eb50879
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342236"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>获取 windowsDomainJoinConfiguration
 
@@ -59,7 +60,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

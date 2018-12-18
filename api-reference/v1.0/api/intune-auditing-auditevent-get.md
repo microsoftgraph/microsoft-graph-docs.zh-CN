@@ -1,12 +1,13 @@
 ---
 title: 获取 auditEvent
 description: 读取 auditEvent 对象的属性和关系。
-ms.openlocfilehash: 07ad8006619a22425a46f4679dccc9b50edf4af6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4bcc13b5cce4e90e2a1b0ce31311723252d07c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339254"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 
@@ -37,7 +38,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

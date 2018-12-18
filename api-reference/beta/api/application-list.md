@@ -1,12 +1,13 @@
 ---
 title: 应用程序列表
 description: 检索此组织中的应用程序的列表。
-ms.openlocfilehash: 073a7f91596afcf87cbd99969b570bf1bea68bcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336692"
 ---
 # <a name="list-applications"></a>应用程序列表
 
@@ -33,7 +34,7 @@ GET /applications
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

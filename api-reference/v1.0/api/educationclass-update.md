@@ -1,12 +1,13 @@
 ---
 title: 更新 educationclass 属性
 description: 更新课程属性。
-ms.openlocfilehash: 5b601fae6680b84d425a105bc39c559110872b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9a11ae5e1a2139df4ade3417c940d00dea2d1888
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358707"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 

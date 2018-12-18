@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsPrivacyDataAccessControlItem
 description: 创建新的 windowsPrivacyDataAccessControlItem 对象。
-ms.openlocfilehash: 6466e4ddc0db738c30111e1ca836c60e5ec885ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 262f6866c37d3ed624916189a25ce5a5b5fd0634
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337679"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>创建 windowsPrivacyDataAccessControlItem
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

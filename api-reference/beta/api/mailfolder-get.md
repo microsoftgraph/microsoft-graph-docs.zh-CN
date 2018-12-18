@@ -1,12 +1,13 @@
 ---
 title: 获取 mailFolder
 description: 检索邮件文件夹对象的属性和关系。
-ms.openlocfilehash: 669ebca608d5df6532ee2f1b10a4217eecfb60d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e1394c6bf97a3c5d65bda0ee7b8f29d8a29643bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357811"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

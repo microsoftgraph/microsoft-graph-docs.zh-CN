@@ -1,12 +1,13 @@
 ---
 title: 列出 scopedAdministratorOf
 description: 检索用户的 scopedRoleMembership 的列表。
-ms.openlocfilehash: a3aeea1757ff98dc968355dfe704eb41a40cc23b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 48aead850e7f7b90a38229da1016007aeec40a9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357342"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 

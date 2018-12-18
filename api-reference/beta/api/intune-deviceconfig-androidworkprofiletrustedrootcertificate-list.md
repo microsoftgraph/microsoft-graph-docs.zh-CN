@@ -1,12 +1,13 @@
 ---
 title: 列表 androidWorkProfileTrustedRootCertificates
 description: 列出属性和 androidWorkProfileTrustedRootCertificate 对象之间的关系。
-ms.openlocfilehash: 71abfb714a513a09b66d30c700e8ad3f6c313ede
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87fd15f1e97e7924abbae4fc47537e298058788d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355119"
 ---
 # <a name="list-androidworkprofiletrustedrootcertificates"></a>列表 androidWorkProfileTrustedRootCertificates
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

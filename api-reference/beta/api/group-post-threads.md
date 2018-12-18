@@ -1,12 +1,13 @@
 ---
 title: 创建对话线程
 description: '首先，通过创建线程来启动新的组对话。 '
-ms.openlocfilehash: a18c64b976562a609501c6c50c809b4d11e26866
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f3800d95604ff6c094ade7d5e4d567d19a57600f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355620"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 

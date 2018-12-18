@@ -1,12 +1,13 @@
 ---
 title: adminConsentState 枚举类型
 description: 管理员同意状态。
-ms.openlocfilehash: 1e2e303343c8d13723773b69b34a65c9bd36a0fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8a22d29157e09b3c038232a34f854da49e9cb4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353779"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
 

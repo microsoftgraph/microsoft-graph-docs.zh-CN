@@ -1,12 +1,13 @@
 ---
 title: deviceThreatProtectionLevel 枚举类型
 description: 设备的设备威胁保护 API 的威胁保护级别。
-ms.openlocfilehash: 9b6a5066c26dcfe5ee2922bc736cf0292b1d3055
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 755fd861196839ec261dd18f458b88aa97cf0191
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356005"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 

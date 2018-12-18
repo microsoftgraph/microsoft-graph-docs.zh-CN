@@ -1,14 +1,15 @@
 ---
-title: 列表 joinedTeams
+title: 列出 joinedTeams
 description: 获取用户已是直接成员的 Microsoft 团队中的团队。
-ms.openlocfilehash: 8eabc9a27de2deb80153c9cbec5e8266dd38ed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1fdc3ac9f2f09e31af71cdb4707dd84adf2c74a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043709"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343839"
 ---
-# <a name="list-joinedteams"></a>列表 joinedTeams
+# <a name="list-joinedteams"></a>列出 joinedTeams
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
