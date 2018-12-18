@@ -1,18 +1,19 @@
 ---
 title: 打开 OneNote 客户端
 description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
-ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: df1aa569eb4f097bc4ca7ea6da191b72d40296cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091860"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324603"
 ---
-# <a name="open-the-onenote-client"></a><span data-ttu-id="baffa-103">打开 OneNote 客户端</span><span class="sxs-lookup"><span data-stu-id="baffa-103">Open the OneNote client</span></span>
+# <a name="open-the-onenote-client"></a><span data-ttu-id="4bd00-103">打开 OneNote 客户端</span><span class="sxs-lookup"><span data-stu-id="4bd00-103">Open the OneNote client</span></span>
 
-<span data-ttu-id="baffa-104">可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。</span><span class="sxs-lookup"><span data-stu-id="baffa-104">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
+<span data-ttu-id="4bd00-104">可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。</span><span class="sxs-lookup"><span data-stu-id="4bd00-104">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
 
-<span data-ttu-id="baffa-105">**links** 属性是一个 JSON 对象，它包含两个 URL。</span><span class="sxs-lookup"><span data-stu-id="baffa-105">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="baffa-106">URL 将在 OneNote 客户端应用程序或 OneNote Online 中打开页面或笔记本。</span><span class="sxs-lookup"><span data-stu-id="baffa-106">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
+<span data-ttu-id="4bd00-105">**links** 属性是一个 JSON 对象，它包含两个 URL。</span><span class="sxs-lookup"><span data-stu-id="4bd00-105">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="4bd00-106">URL 将在 OneNote 客户端应用程序或 OneNote Online 中打开页面或笔记本。</span><span class="sxs-lookup"><span data-stu-id="4bd00-106">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
 
 ```json
 { 
@@ -27,32 +28,32 @@ ms.locfileid: "27091860"
 }
 ```
 
-- <span data-ttu-id="baffa-107">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="baffa-107">**oneNoteClientUrl**</span></span> 
+- <span data-ttu-id="4bd00-107">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="4bd00-107">**oneNoteClientUrl**</span></span> 
 
-    - <span data-ttu-id="baffa-108">打开 OneNote 客户端（如果设备上已安装）。</span><span class="sxs-lookup"><span data-stu-id="baffa-108">Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="baffa-109">此 URL 包括 *onenote* 前缀。</span><span class="sxs-lookup"><span data-stu-id="baffa-109">This URL includes the *onenote* prefix.</span></span>
-    - <span data-ttu-id="baffa-110">如果设备上安装了特定于语言的版本，则打开该版本。</span><span class="sxs-lookup"><span data-stu-id="baffa-110">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="baffa-111">否则，请使用平台语言设置。</span><span class="sxs-lookup"><span data-stu-id="baffa-111">Otherwise, uses the platform language setting.</span></span>
+    - <span data-ttu-id="4bd00-108">打开 OneNote 客户端（如果设备上已安装）。</span><span class="sxs-lookup"><span data-stu-id="4bd00-108">Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="4bd00-109">此 URL 包括 *onenote* 前缀。</span><span class="sxs-lookup"><span data-stu-id="4bd00-109">This URL includes the *onenote* prefix.</span></span>
+    - <span data-ttu-id="4bd00-110">如果设备上安装了特定于语言的版本，则打开该版本。</span><span class="sxs-lookup"><span data-stu-id="4bd00-110">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="4bd00-111">否则，请使用平台语言设置。</span><span class="sxs-lookup"><span data-stu-id="4bd00-111">Otherwise, uses the platform language setting.</span></span>
 
-- <span data-ttu-id="baffa-112">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="baffa-112">**oneNoteWebUrl**</span></span> 
+- <span data-ttu-id="4bd00-112">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="4bd00-112">**oneNoteWebUrl**</span></span> 
 
-    - <span data-ttu-id="baffa-113">打开 OneNote Online（如果设备上的默认浏览器支持）。</span><span class="sxs-lookup"><span data-stu-id="baffa-113">Opens OneNote Online if the default browser on the device supports it.</span></span> 
-    - <span data-ttu-id="baffa-114">使用浏览器语言设置。</span><span class="sxs-lookup"><span data-stu-id="baffa-114">Uses the browser language setting.</span></span>
+    - <span data-ttu-id="4bd00-113">打开 OneNote Online（如果设备上的默认浏览器支持）。</span><span class="sxs-lookup"><span data-stu-id="4bd00-113">Opens OneNote Online if the default browser on the device supports it.</span></span> 
+    - <span data-ttu-id="4bd00-114">使用浏览器语言设置。</span><span class="sxs-lookup"><span data-stu-id="4bd00-114">Uses the browser language setting.</span></span>
 
 
-<span data-ttu-id="baffa-115">OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：</span><span class="sxs-lookup"><span data-stu-id="baffa-115">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
+<span data-ttu-id="4bd00-115">OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：</span><span class="sxs-lookup"><span data-stu-id="4bd00-115">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
 
-- <span data-ttu-id="baffa-116">通过发送 [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) 请求创建页面。</span><span class="sxs-lookup"><span data-stu-id="baffa-116">Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="4bd00-116">通过发送 [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) 请求创建页面。</span><span class="sxs-lookup"><span data-stu-id="4bd00-116">Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="baffa-117">通过发送 [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) 请求创建笔记本。</span><span class="sxs-lookup"><span data-stu-id="baffa-117">Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="4bd00-117">通过发送 [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) 请求创建笔记本。</span><span class="sxs-lookup"><span data-stu-id="4bd00-117">Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="baffa-118">通过发送 [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) 或 [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) 请求获取页面元数据。</span><span class="sxs-lookup"><span data-stu-id="baffa-118">Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="4bd00-118">通过发送 [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) 或 [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) 请求获取页面元数据。</span><span class="sxs-lookup"><span data-stu-id="4bd00-118">Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="baffa-119">通过发送 [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) 或 [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) 请求获取笔记本元数据。</span><span class="sxs-lookup"><span data-stu-id="baffa-119">Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="4bd00-119">通过发送 [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) 或 [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) 请求获取笔记本元数据。</span><span class="sxs-lookup"><span data-stu-id="4bd00-119">Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.</span></span>
 
-<span data-ttu-id="baffa-120">下面的示例显示如何检查响应的状态代码、分析 JSON 以提取 URL，然后打开 OneNote 客户端。</span><span class="sxs-lookup"><span data-stu-id="baffa-120">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+<span data-ttu-id="4bd00-120">下面的示例显示如何检查响应的状态代码、分析 JSON 以提取 URL，然后打开 OneNote 客户端。</span><span class="sxs-lookup"><span data-stu-id="4bd00-120">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
 
-## <a name="ios-example"></a><span data-ttu-id="baffa-121">iOS 示例</span><span class="sxs-lookup"><span data-stu-id="baffa-121">iOS example</span></span>
+## <a name="ios-example"></a><span data-ttu-id="4bd00-121">iOS 示例</span><span class="sxs-lookup"><span data-stu-id="4bd00-121">iOS example</span></span>
 
-<span data-ttu-id="baffa-122">下面的示例从 JSON 响应获取 OneNote 客户端 URL。</span><span class="sxs-lookup"><span data-stu-id="baffa-122">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="baffa-123">它使用 AFNetworking 库 (https://afnetworking.com/)) 提取两个 URL。</span><span class="sxs-lookup"><span data-stu-id="baffa-123">It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="baffa-124">在示例中，`created` 是指向用于存储响应值的 **ONSCPSStandardResponse** 对象的指针，`responseObject` 包含已分析的 JSON。</span><span class="sxs-lookup"><span data-stu-id="baffa-124">In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
+<span data-ttu-id="4bd00-122">下面的示例从 JSON 响应获取 OneNote 客户端 URL。</span><span class="sxs-lookup"><span data-stu-id="4bd00-122">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="4bd00-123">它使用 AFNetworking 库 (https://afnetworking.com/)) 提取两个 URL。</span><span class="sxs-lookup"><span data-stu-id="4bd00-123">It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="4bd00-124">在示例中，`created` 是指向用于存储响应值的 **ONSCPSStandardResponse** 对象的指针，`responseObject` 包含已分析的 JSON。</span><span class="sxs-lookup"><span data-stu-id="4bd00-124">In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
 
 ```objc
     /* Import the JSON library */
@@ -94,16 +95,16 @@ ms.locfileid: "27091860"
 
 <br/>
 
-<span data-ttu-id="baffa-125">分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。</span><span class="sxs-lookup"><span data-stu-id="baffa-125">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="baffa-126">使用 `oneNoteClientUrl` 打开已安装的 OneNote 客户端，或使用 `oneNoteWebURL` 打开 OneNote Online。</span><span class="sxs-lookup"><span data-stu-id="baffa-126">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+<span data-ttu-id="4bd00-125">分析响应中的 URL 后，可以通过使用以下代码打开 OneNote。</span><span class="sxs-lookup"><span data-stu-id="4bd00-125">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="4bd00-126">使用 `oneNoteClientUrl` 打开已安装的 OneNote 客户端，或使用 `oneNoteWebURL` 打开 OneNote Online。</span><span class="sxs-lookup"><span data-stu-id="4bd00-126">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
 
-## <a name="android-example"></a><span data-ttu-id="baffa-127">Android 示例</span><span class="sxs-lookup"><span data-stu-id="baffa-127">Android example</span></span>
+## <a name="android-example"></a><span data-ttu-id="4bd00-127">Android 示例</span><span class="sxs-lookup"><span data-stu-id="4bd00-127">Android example</span></span>
 
-<span data-ttu-id="baffa-128">首先，检查成功的状态代码，然后分析 JSON。</span><span class="sxs-lookup"><span data-stu-id="baffa-128">First, check for the success status code, and then parse the JSON.</span></span> <span data-ttu-id="baffa-129">该示例假定已发送 POST 请求，因此，它会检查 `201 Created` 状态代码。</span><span class="sxs-lookup"><span data-stu-id="baffa-129">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="baffa-130">如果发出了 `GET` 请求，则应检查 `200` 状态代码。</span><span class="sxs-lookup"><span data-stu-id="baffa-130">If you made a `GET` request, check for a `200` status code instead.</span></span>
+<span data-ttu-id="4bd00-128">首先，检查成功的状态代码，然后分析 JSON。</span><span class="sxs-lookup"><span data-stu-id="4bd00-128">First, check for the success status code, and then parse the JSON.</span></span> <span data-ttu-id="4bd00-129">该示例假定已发送 POST 请求，因此，它会检查 `201 Created` 状态代码。</span><span class="sxs-lookup"><span data-stu-id="4bd00-129">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="4bd00-130">如果发出了 `GET` 请求，则应检查 `200` 状态代码。</span><span class="sxs-lookup"><span data-stu-id="4bd00-130">If you made a `GET` request, check for a `200` status code instead.</span></span>
 
 ```java
 public ApiResponse getResponse() throws Exception {
@@ -162,7 +163,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-<span data-ttu-id="baffa-131">借助响应属性，应用可以打开 OneNote Online，如下面的示例中所示。</span><span class="sxs-lookup"><span data-stu-id="baffa-131">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
+<span data-ttu-id="4bd00-131">借助响应属性，应用可以打开 OneNote Online，如下面的示例中所示。</span><span class="sxs-lookup"><span data-stu-id="4bd00-131">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -174,7 +175,7 @@ if (response.getResponseCode() == 201) {
 
 <br/>
 
-<span data-ttu-id="baffa-132">或者，应用可以打开 Android 设备上的 OneNote 客户端。</span><span class="sxs-lookup"><span data-stu-id="baffa-132">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="baffa-133">使用 `oneNoteClientUrl` 属性时，必须先用大括号 `{ }` 将 GUID 字符串括起来，然后再开始操作。</span><span class="sxs-lookup"><span data-stu-id="baffa-133">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="baffa-134">以下示例演示如何执行此操作。</span><span class="sxs-lookup"><span data-stu-id="baffa-134">The following example shows how to do that.</span></span>
+<span data-ttu-id="4bd00-132">或者，应用可以打开 Android 设备上的 OneNote 客户端。</span><span class="sxs-lookup"><span data-stu-id="4bd00-132">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="4bd00-133">使用 `oneNoteClientUrl` 属性时，必须先用大括号 `{ }` 将 GUID 字符串括起来，然后再开始操作。</span><span class="sxs-lookup"><span data-stu-id="4bd00-133">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="4bd00-134">以下示例演示如何执行此操作。</span><span class="sxs-lookup"><span data-stu-id="4bd00-134">The following example shows how to do that.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -193,7 +194,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="baffa-135">另请参阅</span><span class="sxs-lookup"><span data-stu-id="baffa-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4bd00-135">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4bd00-135">See also</span></span>
 
-- [<span data-ttu-id="baffa-136">获取 OneNote 内容和结构</span><span class="sxs-lookup"><span data-stu-id="baffa-136">Get OneNote content and structure</span></span>](onenote-get-content.md)
-- [<span data-ttu-id="baffa-137">创建 OneNote 页</span><span class="sxs-lookup"><span data-stu-id="baffa-137">Create OneNote pages</span></span>](onenote-create-page.md)
+- [<span data-ttu-id="4bd00-136">获取 OneNote 内容和结构</span><span class="sxs-lookup"><span data-stu-id="4bd00-136">Get OneNote content and structure</span></span>](onenote-get-content.md)
+- [<span data-ttu-id="4bd00-137">创建 OneNote 页</span><span class="sxs-lookup"><span data-stu-id="4bd00-137">Create OneNote pages</span></span>](onenote-create-page.md)
