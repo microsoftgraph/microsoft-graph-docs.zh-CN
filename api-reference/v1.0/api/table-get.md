@@ -1,12 +1,13 @@
 ---
 title: 获取表格
 description: 检索 table 对象的属性和关系。
-ms.openlocfilehash: 8ca0a2c7029edf1b4d9d077b7caa6e09b3e31aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 57e3c88cb2a483bb567095a59769e770ae974edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353394"
 ---
 # <a name="get-table"></a>获取表格
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 description: 到门户管理员将同步业务应用程序的可用 Microsoft 存储。 这是 Intune 管理控制台中可用。
-ms.openlocfilehash: 0e000bcf2c7f3bedf3b463098fa137f9954c461b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc1e95b4dea6bf1de6439c4c0a12ad4888ff6bb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046307"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359379"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: 使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集成
 description: 可通过一个 REST 终结点管理 Microsoft Graph 安全提供程序。 可以将此终结点配置为，支持连接到多个 SIEM 产品的 Azure Monitor。 本文第 1 步和第 2 步中的说明是指，支持通过事件中心使用的所有 Azure Monitor 连接器。 本文介绍了 Splunk SIEM 连接器的端到端集成。
-ms.openlocfilehash: bdd1d1e192a4945c67727d20e594006a387fb156
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: f303bc9e75599df9882e2c4dfa415481fd7890e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301503"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集成
 
@@ -23,9 +24,9 @@ ms.locfileid: "27091865"
 
 完成这些步骤后，Splunk Enterprise 将使用获许可租户的所有 Microsoft Graph 集成安全产品的安全警报。 许可的任何新安全产品也将通过此连接发送警报（在同一架构且无需进一步集成）。
 
-## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>第 1 步：在 Azure 中创建用于接收租户的安全警报的事件中心命名空间
+## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>步骤 1：在 Azure 中设置事件中心命名空间，以接收租户的安全警报
 
-首先，需要创建 [Microsoft Azure 事件中心](https://docs.microsoft.com/zh-CN/azure/event-hubs/)命名空间和事件中心。 此命名空间和事件中心是组织的所有安全警报的目标。 事件中心命名空间是共享同一访问策略的事件中心的逻辑分组。 请注意有关你创建的事件中心命名空间和事件中心的一些详细信息：
+首先，需要创建 [Microsoft Azure 事件中心](https://docs.microsoft.com/zh-CN/azure/event-hubs/)命名空间和事件中心。 此命名空间和事件中心是所有组织的安全警报的目标。 事件中心命名空间是共享同一访问策略的事件中心的逻辑分组。 请注意有关你创建的事件中心命名空间和事件中心的一些详细信息：
 
 - 我们建议使用标准事件中心命名空间（尤其是当你通过这些相同的事件中心发送其他 Azure 监控数据时）。
 - 通常情况下，一个吞吐量单位就已足够。 如果随着使用情况的增加而需要扩展吞吐量，则可在以后随时手动增加命名空间的吞吐量单位数或启用自动膨胀。
@@ -50,14 +51,14 @@ ms.locfileid: "27091865"
 
 ## <a name="step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub"></a>步骤 2：配置 Azure Monitor 以将租户的安全警报发送至事件中心
 
-通过 Azure Monitor 为整个 Azure Active Directory (Azure AD) 租户启用组织安全警报的流式处理操作已执行一次。 已授权和启用 Microsoft Graph 安全性 API 的所有产品都会开始向 Azure Monitor 发送安全警报，同时将数据流式处理到使用应用。 组织授权和部署的其他任何已启用 Microsoft Graph 安全性 API 的产品，也会自动通过这一相同的 Azure Monitor 配置流式处理安全警报。 组织无需进一步集成。
+通过 Azure Monitor 为整个 Azure Active Directory (Azure AD) 租户启用组织安全警报的流式处理操作已执行一次。 所有 Microsoft Graph 安全性 API 许可和启用的产品都将开始向 Azure Monitor 发送安全警报，流式处理数据以使用应用程序。 组织许可和部署的其他任何已启用 Microsoft Graph 安全性 API 的产品，也会自动通过这一相同的 Azure Monitor 配置流式处理安全警报。 无需在组织中进行进一步集成。
 
-安全警报是具有很多特权的数据，通常只能由组织内的安全响应人员和全局管理员查看。 为此，在 SIEM 系统中配置租户安全警报集成所需的步骤将需要使用 Azure AD 全局管理员帐户。 在设置过程中只需使用此帐户一次，以请求获取要发送到 Azure Monitor 的组织安全警报。
+安全警报是具有很多特权的数据，通常只能由组织内的安全响应人员和全局管理员查看。 为此，在 SIEM 系统中配置租户安全警报集成所需的步骤将需要使用 Azure AD 全局管理员帐户。 此帐户在设置过程中只需使用一次，用以请求将组织的安全警报发送到 Azure Monitor。
 
 > **注意：** 目前，Azure Monitor 的“诊断设置”边栏选项卡不支持配置租户级资源。 由于 Microsoft Graph 安全性 API 警报是租户级资源，因此必须使用 Azure 资源管理器 API 将 Azure Monitor 配置为支持使用组织的安全警报。
 
 1. 在 Azure 订阅中，将“microsoft.insights”(Azure Monitor) 注册为资源提供程序。  
- > **注意：** 不要将“Microsoft.SecurityGraph”（Microsoft Graph 安全性 API）注册为 Azure 订阅中的资源提供程序，因为“Microsoft.SecurityGraph”是租户级资源（如前所述）。 下面的 #6 中介绍了租户级配置。
+ > **注意：** 不要将“Microsoft.SecurityGraph”（Microsoft Graph 安全性 API）注册为 Azure 订阅中的资源提供程序，因为“Microsoft.SecurityGraph”是租户级资源（如前所述）。 租户级配置将是下面 #6 的一部分。
 
 2. 若要使用 Azure 资源管理器 API 配置 Azure Monitor，请获取 [ARMClient](https://github.com/projectkudu/ARMClient) 工具。 此工具将用于将 REST API 调用从命令行发送到 Azure 门户。
 
@@ -91,11 +92,11 @@ ms.locfileid: "27091865"
 
   * **SUBSCRIPTION_ID** 是托管资源组和事件中心命名空间的 Azure 订阅的订阅 ID，你将在此处发送组织的安全警报。
   * **RESOURCE_GROUP** 是包含事件中心命名空间的资源组，你将在此处发送组织的安全警报。
-  * **EVENT_HUB_NAMESPACE** 是用于发送组织安全警报的事件中心命名空间。
+  * **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
   * **“days”** 是要将消息保留在事件中心内的天数。
   
 &nbsp;
-4. 以 JSON 格式将文件保存到从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
+4. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
 
 5. 运行以下命令以登录到 ARMClient 工具。 你需要使用全局管理员帐户凭据。
 

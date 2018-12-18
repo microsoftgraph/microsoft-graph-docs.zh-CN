@@ -1,12 +1,13 @@
 ---
 title: List rangeView rows
 description: 检索范围视图对象的列表。
-ms.openlocfilehash: 450fc3c71ec6ce4e417e328d99f8ed851672bd07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f6832294cc92b1e5b5e04bd73996aef9c638f069
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359764"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -33,7 +34,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

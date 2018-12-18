@@ -1,12 +1,13 @@
 ---
 title: roleScopeTag 资源类型
 description: 角色作用域标记
-ms.openlocfilehash: 9be1f1307243c18e10f8e6dfc3f302502cdb54a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49059ceddcd043f39f51c563c85ba8986b6fc61b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044758"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354766"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 

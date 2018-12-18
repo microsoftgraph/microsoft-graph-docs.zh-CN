@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentConfiguration 资源类型
 description: 尚未记录
-ms.openlocfilehash: a748419edcecaeeafae96828048cf74929cb3f94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d3c8b1114a19429f89d5f5b6b466a1dec12eb26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326577"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 

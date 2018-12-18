@@ -1,12 +1,13 @@
 ---
 title: 列表 favoritePlans
 description: 检索 plannerPlans 由用户标记为最喜爱的列表。 您可以通过更新 plannerUser 资源标记为最喜爱的计划。
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324582"
 ---
 # <a name="list-favoriteplans"></a>列表 favoritePlans
 
@@ -33,9 +34,9 @@ GET /users/<id>/planner/favoritePlans
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| 授权  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

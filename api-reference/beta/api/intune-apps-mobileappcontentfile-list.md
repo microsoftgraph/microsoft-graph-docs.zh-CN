@@ -1,12 +1,13 @@
 ---
 title: 列出 mobileAppContentFiles
 description: 列出 mobileAppContentFile 对象的属性和关系。
-ms.openlocfilehash: 73291cfc543bb990c1abf6561d139772edfe4d99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cc03ebec18871234bd69587208d2fd3aa46c8da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353009"
 ---
 # <a name="list-mobileappcontentfiles"></a>列出 mobileAppContentFiles
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

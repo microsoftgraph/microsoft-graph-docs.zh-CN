@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngine 资源类型
 description: 允许 IT 管理员为 MDM 控制的设备设置预定义的默认搜索引擎。
-ms.openlocfilehash: 51f947911e73927816eb4f1150cab36cba904f58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bbe5ba35c9d5832a1910414f99a4de4e9fa957e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361227"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
 

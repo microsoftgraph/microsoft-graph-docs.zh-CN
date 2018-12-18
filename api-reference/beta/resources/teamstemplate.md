@@ -1,12 +1,13 @@
 ---
 title: teamsTemplate 资源类型
 description: 介绍 teamsTemplate 实体。
-ms.openlocfilehash: 76b2921e884d38a57097789b1ba64df3309d141c
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: b4e32448f864048fdcb54dc001b21b262df2bba3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327711"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 windows10CustomConfiguration
 description: 更新 windows10CustomConfiguration 对象的属性。
-ms.openlocfilehash: 6cee327a6a233141dd04c858d28121d3720267bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ca09c829adfad05724075b2934693b693b9056d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009711"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361297"
 ---
 # <a name="update-windows10customconfiguration"></a>更新 windows10CustomConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

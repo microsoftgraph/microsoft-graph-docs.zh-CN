@@ -1,12 +1,13 @@
 ---
 title: deviceExchangeAccessStateSummary 资源类型
 description: 设备 Exchange 访问状态摘要
-ms.openlocfilehash: fec7290ec559f411bed04e03166b31678d43036f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb04de02e44f16534e9a57383e48d989a16f8582
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326598"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 

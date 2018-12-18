@@ -1,12 +1,13 @@
 ---
 title: 图表资源类型
 description: 表示工作簿中的 chart 对象。
-ms.openlocfilehash: 3305c674bf299fa68ce139ba16b3174965b694ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325716"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27047597"
 |[创建 ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
 |[创建系列](../api/chart-list-series.md) |[ChartSeries](chartseries.md) 集合| 获取 ChartSeries 对象集合。|
 |[Update](../api/chart-update.md) | [Chart](chart.md)   |更新 Chart 对象。 |
-|[图像](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
+|[Image](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
@@ -50,7 +51,7 @@ ms.locfileid: "27047597"
 |legend|[ChartLegend](chartlegend.md)|表示图表的图例。只读。|
 |series|[ChartSeries](chartseries.md) 集合|表示单个系列或图表中的系列集合。只读。|
 |title|[ChartTitle](charttitle.md)|表示指定图表的标题，包括标题的文本、可见性、位置和格式。只读。|
-|工作表|[工作表](worksheet.md)|包含当前图表的工作表。只读。|
+|worksheet|[工作表](worksheet.md)|包含当前图表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

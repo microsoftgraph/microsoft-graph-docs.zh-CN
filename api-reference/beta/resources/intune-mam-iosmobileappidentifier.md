@@ -1,12 +1,13 @@
 ---
 title: iosMobileAppIdentifier 资源类型
 description: iOS 应用的标识符。
-ms.openlocfilehash: d95a9820c06d4d8e4122c3555e6e225c3d747761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e68bfcca4b0873013c0c9e0fd0295483257ae52c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354171"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 

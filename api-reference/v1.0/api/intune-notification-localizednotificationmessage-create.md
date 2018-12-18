@@ -1,12 +1,13 @@
 ---
 title: 创建 localizedNotificationMessage
 description: 创建新的 localizedNotificationMessage 对象。
-ms.openlocfilehash: d4617438909c5d78e236f85e7a1d51cc68174b2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bc782f69e769e32acd29932b4f224c7cf764c04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010581"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353541"
 ---
 # <a name="create-localizednotificationmessage"></a>创建 localizedNotificationMessage
 
@@ -35,7 +36,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

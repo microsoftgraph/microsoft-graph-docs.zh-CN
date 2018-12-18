@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph 安全性 API 概述
 description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 Microsoft Graph 安全提供程序（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅“Microsoft Graph 安全性 API 数据流”。
-ms.openlocfilehash: b5e1fb3d60cfc55cb940a217aaba872175887297
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 2c693643e1b3c9a132e5ba28bd911b18df25c95a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091765"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303057"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 

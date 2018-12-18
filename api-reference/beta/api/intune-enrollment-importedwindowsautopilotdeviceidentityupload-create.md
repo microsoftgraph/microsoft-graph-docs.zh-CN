@@ -1,12 +1,13 @@
 ---
 title: 创建 importedWindowsAutopilotDeviceIdentityUpload
 description: 创建新的 importedWindowsAutopilotDeviceIdentityUpload 对象。
-ms.openlocfilehash: 2538f08d18309d430896bae0e6d654903ac895bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4042129f33b617546e32d46435179af5c9d3282
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044399"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354808"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>创建 importedWindowsAutopilotDeviceIdentityUpload
 
@@ -37,7 +38,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +50,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |:---|:---|:---|
 |id|字符串|对象的 GUID|
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期时间。|
-|状态|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
 
 

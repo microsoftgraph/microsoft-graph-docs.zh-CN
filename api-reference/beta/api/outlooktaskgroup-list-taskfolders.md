@@ -1,12 +1,13 @@
 ---
 title: 列表 taskFolders
 description: 获取特定 outlookTaskGroup Outlook 任务文件夹。
-ms.openlocfilehash: 243d93bbe31f0e7bb51b971a303105a8a22e7eea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: b128542ddcfe78cb379da1a7b87f1ee012858cc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047909"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354731"
 ---
 # <a name="list-taskfolders"></a>列表 taskFolders
 
@@ -31,7 +32,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

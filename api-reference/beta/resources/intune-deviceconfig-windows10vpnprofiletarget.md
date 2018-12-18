@@ -1,12 +1,13 @@
 ---
 title: windows10VpnProfileTarget 枚举类型
 description: Windows 10 VPN 配置文件的目标类型。
-ms.openlocfilehash: 8868811a0459ac5428fe7d50e5cf3315742ecc2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66adac1fe6e517a442988a5f8e43f9aaafa2793e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046442"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361745"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget 枚举类型
 

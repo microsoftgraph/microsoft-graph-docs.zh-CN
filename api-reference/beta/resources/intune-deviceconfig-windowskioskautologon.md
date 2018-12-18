@@ -1,12 +1,13 @@
 ---
 title: windowsKioskAutologon 资源类型
 description: 用于标识自动登录网亭配置类
-ms.openlocfilehash: 1e60596860a88f08900fe25e06fe3d9844b0d8c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c3dd2003ace5d28a7e4807982b865689f7a6825
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044540"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362634"
 ---
 # <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon 资源类型
 

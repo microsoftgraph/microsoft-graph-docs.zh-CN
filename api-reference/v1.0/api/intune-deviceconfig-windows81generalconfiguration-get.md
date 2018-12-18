@@ -1,12 +1,13 @@
 ---
 title: 获取 windows81GeneralConfiguration
 description: 读取 windows81GeneralConfiguration 对象的属性和关系。
-ms.openlocfilehash: cc64f6ac791648b02558c7ce30e21b78841fac0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd35bee5e035317dd67b3eb2bb0ec20676e9a4d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354017"
 ---
 # <a name="get-windows81generalconfiguration"></a>获取 windows81GeneralConfiguration
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

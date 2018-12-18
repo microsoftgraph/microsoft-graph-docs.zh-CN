@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementAssignedRoleIds 资源类型
 description: 尚未记录
-ms.openlocfilehash: 9d9fbf9bc6dcfa422316a236dfd890369d069c2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 034120b891812a43c6c1683f61e52f071dc89816
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045806"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353380"
 ---
 # <a name="deviceandappmanagementassignedroleids-resource-type"></a>deviceAndAppManagementAssignedRoleIds 资源类型
 

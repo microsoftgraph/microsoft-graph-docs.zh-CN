@@ -1,12 +1,13 @@
 ---
 title: 获取 iosEducationDeviceConfiguration
 description: 读取属性和 iosEducationDeviceConfiguration 对象的关系。
-ms.openlocfilehash: b0584821d9d44f7ad4dda15867aabe54b5fe0792
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b355ee02b510d860979a420c032be4d00298abf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327032"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>获取 iosEducationDeviceConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

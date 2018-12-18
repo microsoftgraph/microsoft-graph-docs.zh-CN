@@ -1,12 +1,13 @@
 ---
 title: 更新 managedEBookAssignment
 description: 更新 managedEBookAssignment 对象的属性。
-ms.openlocfilehash: 23a4847b45f9e8c36b92dd1018368d8c102d7b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 041d1b16754c7c3f8047a40073590d5647e91f3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010796"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326500"
 ---
 # <a name="update-managedebookassignment"></a>更新 managedEBookAssignment
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

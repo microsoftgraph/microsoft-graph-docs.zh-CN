@@ -1,12 +1,13 @@
 ---
 title: roleAssignment 资源类型
 description: 角色分配资源。 角色分配将角色定义与成员和作用域绑定在一起。 每个角色可以具有一个或多个角色分配。 这适用于自定义和内置角色。
-ms.openlocfilehash: 8af3c9778fefd2485948a48f1621c9d9e034c6db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6af73146c47ab3565722497146944a0b301e6a56
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009653"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329580"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 联系人资源类型
 description: 联系人是 Outlook 中的一个项目，你可以在这里组织和保存有关你通信的人员和组织的信息。联系人包含在联系人文件夹中。
-ms.openlocfilehash: 1f18118855417727a441b25c008cee9a0e826aff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354185"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -123,7 +124,7 @@ ms.locfileid: "27044043"
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
-|photo|[photo](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
+|photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="methods"></a>方法

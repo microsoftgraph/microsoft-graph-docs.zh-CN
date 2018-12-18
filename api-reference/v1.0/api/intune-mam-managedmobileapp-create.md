@@ -1,12 +1,13 @@
 ---
 title: 创建 managedMobileApp
 description: 创建新的 managedMobileApp 对象。
-ms.openlocfilehash: 56eabc98d51e2717406b2aa4993e21b26aecd47d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f431dd7d2f8e64ea9421f1558d3dca411b92c51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008952"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354346"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

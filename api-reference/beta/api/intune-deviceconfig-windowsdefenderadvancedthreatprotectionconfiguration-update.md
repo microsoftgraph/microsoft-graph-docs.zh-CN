@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 更新 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性。
-ms.openlocfilehash: b21ad952d5b8abefc9d4c6bb275474437aceefa8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e49b118082ad9979eeb7023bdc75c50027ad8d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361290"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>更新 windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,14 +53,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|字符串|Windows Defender AdvancedThreatProtection 入职培训 Blob。|
 |advancedThreatProtectionOnboardingFilename|字符串|从中获取 AdvancedThreatProtectionOnboardingBlob 文件的名称。|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|布尔|自动填充入职培训 blob 以编程方式从高级威胁保护服务|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|自动填充入职培训 blob 以编程方式从高级威胁保护服务|
 |allowSampleSharing|Boolean|Windows Defender 高级威胁防护“允许示例共享”规则|
 |enableExpeditedTelemetryReporting|Boolean|加速 Windows Defender 高级威胁防护遥测报告的频率。|
 |advancedThreatProtectionOffboardingBlob|字符串|Windows Defender AdvancedThreatProtection 分离 Blob。|

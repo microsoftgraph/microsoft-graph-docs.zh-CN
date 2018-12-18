@@ -1,12 +1,13 @@
 ---
 title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
-ms.openlocfilehash: 34daebc90ca6a58d28b351eebcfcc3a29b8b5021
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e04d1d6d98cbbdbbb2b28250305e3b42a20af688
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327088"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 呼叫： 传输
 description: 将活动呼叫转接。
-ms.openlocfilehash: d02e028c4d7e3b51f3aee371e22d00b95841d9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046112"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362480"
 ---
 # <a name="call-transfer"></a>呼叫： 传输
 
@@ -21,7 +22,7 @@ ms.locfileid: "27046112"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| 应用程序     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +32,14 @@ POST /applications/{id}/calls/{id}/transfer
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | Type    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|这是目标转接的参与者。|
 |target|[identitySet](../resources/identityset.md)||

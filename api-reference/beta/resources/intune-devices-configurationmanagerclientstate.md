@@ -1,12 +1,13 @@
 ---
 title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
-ms.openlocfilehash: c76fc33fee0fd5f6f5782f77d988535ec851cc86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc67a5fb1c517e65da937996ed65adaa621fa3c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354045"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 

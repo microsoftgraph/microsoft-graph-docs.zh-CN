@@ -1,12 +1,13 @@
 ---
 title: 获取 educationSubmission
 description: '检索特定提交。 一个提交对象，代表学生的工作分配。 提交表示与此工作关联资源。 仅提交分配给学生可以查看和修改提交。 教师具有所有提交到的完全访问权限。 '
-ms.openlocfilehash: 016e8d2e04377ec24fa55ad940fb97364786f433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 39e3591c0236d7a6fbc4896d4009fe5a00157d9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353079"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 

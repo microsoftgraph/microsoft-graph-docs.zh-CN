@@ -1,12 +1,13 @@
 ---
 title: 列出 androidLobApps
 description: 列出 androidLobApp 对象的属性和关系。
-ms.openlocfilehash: 00d2da91c2f9b74456e3e07cf19a5f7bb5344c9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0fc6231d21b3a33b7fc9e4afec2b2a6bc9ee4e47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326514"
 ---
 # <a name="list-androidlobapps"></a>列出 androidLobApps
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

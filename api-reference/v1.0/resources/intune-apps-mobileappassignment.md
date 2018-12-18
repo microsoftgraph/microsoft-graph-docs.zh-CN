@@ -1,12 +1,13 @@
 ---
 title: mobileAppAssignment 资源类型
 description: 包含用于移动应用的组分配的属性的类。
-ms.openlocfilehash: 8fc44919528dd4b5c5ab3d21e082fe2b07aec4e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fadc1cace3acd07ee5d42d77296a34cc34eb3027
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009452"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327746"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 

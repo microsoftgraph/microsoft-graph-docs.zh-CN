@@ -1,12 +1,13 @@
 ---
 title: 获取 iosVppAppAssignedUserLicense
 description: 读取属性和 iosVppAppAssignedUserLicense 对象的关系。
-ms.openlocfilehash: b130641a81be1ee3d612a75527f37cabee817722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4189cdc8df0ad8d3358087694d54b0d8d499a7ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043894"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353072"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>获取 iosVppAppAssignedUserLicense
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

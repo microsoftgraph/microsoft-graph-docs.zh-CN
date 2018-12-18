@@ -1,12 +1,13 @@
 ---
 title: windows10EditionType 枚举类型
 description: Windows 10 Edition 类型。
-ms.openlocfilehash: ee80bb602ee888f86e2c12c755aec7596c15ff3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc7d198e523fe01a4e10887bc0a8cbb13bac345a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327788"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 

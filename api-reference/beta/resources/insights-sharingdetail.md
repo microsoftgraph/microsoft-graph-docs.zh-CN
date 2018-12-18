@@ -1,12 +1,13 @@
 ---
 title: sharingDetail 资源类型
 description: '包含共享项目的属性的复杂类型。 '
-ms.openlocfilehash: 5ea54c9b8622c9f302609c6fbe299b9b68720793
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 8454fd451f0659ff3ccad270df3414a850bee180
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045096"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353373"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 

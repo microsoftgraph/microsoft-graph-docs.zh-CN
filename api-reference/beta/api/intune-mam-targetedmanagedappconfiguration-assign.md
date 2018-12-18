@@ -1,12 +1,13 @@
 ---
 title: assign 操作
 description: 尚未记录
-ms.openlocfilehash: bb38ae7db4614a15900cee9ad48f61bb622c8233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53a4d20a3d228b278b0053e24daf894fabd24cbf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354479"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

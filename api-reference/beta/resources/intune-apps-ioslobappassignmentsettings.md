@@ -1,12 +1,13 @@
 ---
 title: iosLobAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS LOB 移动应用的属性。
-ms.openlocfilehash: 5c4380103c7d06032d3605d944fe8d420258d070
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca85fff558285ea52f14e359d17511a3e879e24a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042515"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361738"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 

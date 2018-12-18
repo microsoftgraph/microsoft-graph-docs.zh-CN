@@ -1,12 +1,13 @@
 ---
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
-ms.openlocfilehash: 5d1d8e18e120fb26cfd5cea1cd223a6c38ad0aa9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f8e5ac52fc5322e7fb7a0fce9335f1dea864fff7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354199"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -44,7 +45,7 @@ ms.locfileid: "27010274"
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
 |**移动应用程序管理 (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
-|**故障排除**|
+|**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式

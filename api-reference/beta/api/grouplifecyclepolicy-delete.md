@@ -1,12 +1,13 @@
 ---
 title: 删除 groupLifecyclePolicy
 description: 删除 groupLifecyclePolicy。
-ms.openlocfilehash: 0e291ec0d05f03153f18974ad0aad29f2a8a86d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 41c679a9fa2a55a0137d1197f08515e64750d4dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042270"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361962"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 
@@ -33,7 +34,7 @@ DELETE /groupLifecyclePolicies/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称 | 说明 |
+| Name | 说明 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json |

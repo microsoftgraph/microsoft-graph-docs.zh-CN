@@ -1,12 +1,13 @@
 ---
 title: certificateValidityPeriodScale 枚举类型
 description: 证书有效期限选项。
-ms.openlocfilehash: f082f7984fe77c531392ef59118e30be8aa8ef73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 669b3cf929ec8daee21e99516d1511f84b85b646
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354801"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 枚举类型
 
