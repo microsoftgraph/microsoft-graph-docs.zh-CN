@@ -1,32 +1,33 @@
 ---
 title: deviceOperatingSystemSummary 资源类型
 description: 设备操作系统摘要。
-ms.openlocfilehash: 1a543f21d1f82b9f2bee0f004d3b8fab88c863b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73615964d0c2b187c36b57956d534fa08d60684f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346618"
 ---
-# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="595de-103">deviceOperatingSystemSummary 资源类型</span><span class="sxs-lookup"><span data-stu-id="595de-103">deviceOperatingSystemSummary resource type</span></span>
+# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="0b546-103">deviceOperatingSystemSummary 资源类型</span><span class="sxs-lookup"><span data-stu-id="0b546-103">deviceOperatingSystemSummary resource type</span></span>
 
-> <span data-ttu-id="595de-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="595de-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0b546-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="0b546-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="595de-105">设备操作系统摘要。</span><span class="sxs-lookup"><span data-stu-id="595de-105">Device operating system summary.</span></span>
-## <a name="properties"></a><span data-ttu-id="595de-106">属性</span><span class="sxs-lookup"><span data-stu-id="595de-106">Properties</span></span>
-|<span data-ttu-id="595de-107">属性</span><span class="sxs-lookup"><span data-stu-id="595de-107">Property</span></span>|<span data-ttu-id="595de-108">类型</span><span class="sxs-lookup"><span data-stu-id="595de-108">Type</span></span>|<span data-ttu-id="595de-109">说明</span><span class="sxs-lookup"><span data-stu-id="595de-109">Description</span></span>|
+<span data-ttu-id="0b546-105">设备操作系统摘要。</span><span class="sxs-lookup"><span data-stu-id="0b546-105">Device operating system summary.</span></span>
+## <a name="properties"></a><span data-ttu-id="0b546-106">属性</span><span class="sxs-lookup"><span data-stu-id="0b546-106">Properties</span></span>
+|<span data-ttu-id="0b546-107">属性</span><span class="sxs-lookup"><span data-stu-id="0b546-107">Property</span></span>|<span data-ttu-id="0b546-108">类型</span><span class="sxs-lookup"><span data-stu-id="0b546-108">Type</span></span>|<span data-ttu-id="0b546-109">说明</span><span class="sxs-lookup"><span data-stu-id="0b546-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="595de-110">androidCount</span><span class="sxs-lookup"><span data-stu-id="595de-110">androidCount</span></span>|<span data-ttu-id="595de-111">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-111">Int32</span></span>|<span data-ttu-id="595de-112">Android 设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-112">Number of android device count.</span></span>|
-|<span data-ttu-id="595de-113">iosCount</span><span class="sxs-lookup"><span data-stu-id="595de-113">iosCount</span></span>|<span data-ttu-id="595de-114">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-114">Int32</span></span>|<span data-ttu-id="595de-115">iOS 设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-115">Number of iOS device count.</span></span>|
-|<span data-ttu-id="595de-116">macOSCount</span><span class="sxs-lookup"><span data-stu-id="595de-116">macOSCount</span></span>|<span data-ttu-id="595de-117">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-117">Int32</span></span>|<span data-ttu-id="595de-118">Mac OS X 设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-118">Number of Mac OS X device count.</span></span>|
-|<span data-ttu-id="595de-119">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="595de-119">windowsMobileCount</span></span>|<span data-ttu-id="595de-120">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-120">Int32</span></span>|<span data-ttu-id="595de-121">Windows 移动设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-121">Number of Windows mobile device count.</span></span>|
-|<span data-ttu-id="595de-122">windowsCount</span><span class="sxs-lookup"><span data-stu-id="595de-122">windowsCount</span></span>|<span data-ttu-id="595de-123">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-123">Int32</span></span>|<span data-ttu-id="595de-124">Windows 设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-124">Number of Windows device count.</span></span>|
-|<span data-ttu-id="595de-125">unknownCount</span><span class="sxs-lookup"><span data-stu-id="595de-125">unknownCount</span></span>|<span data-ttu-id="595de-126">Int32</span><span class="sxs-lookup"><span data-stu-id="595de-126">Int32</span></span>|<span data-ttu-id="595de-127">未知设备计数。</span><span class="sxs-lookup"><span data-stu-id="595de-127">Number of unknown device count.</span></span>|
+|<span data-ttu-id="0b546-110">androidCount</span><span class="sxs-lookup"><span data-stu-id="0b546-110">androidCount</span></span>|<span data-ttu-id="0b546-111">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-111">Int32</span></span>|<span data-ttu-id="0b546-112">Android 设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-112">Number of android device count.</span></span>|
+|<span data-ttu-id="0b546-113">iosCount</span><span class="sxs-lookup"><span data-stu-id="0b546-113">iosCount</span></span>|<span data-ttu-id="0b546-114">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-114">Int32</span></span>|<span data-ttu-id="0b546-115">iOS 设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-115">Number of iOS device count.</span></span>|
+|<span data-ttu-id="0b546-116">macOSCount</span><span class="sxs-lookup"><span data-stu-id="0b546-116">macOSCount</span></span>|<span data-ttu-id="0b546-117">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-117">Int32</span></span>|<span data-ttu-id="0b546-118">Mac OS X 设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-118">Number of Mac OS X device count.</span></span>|
+|<span data-ttu-id="0b546-119">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="0b546-119">windowsMobileCount</span></span>|<span data-ttu-id="0b546-120">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-120">Int32</span></span>|<span data-ttu-id="0b546-121">Windows 移动设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-121">Number of Windows mobile device count.</span></span>|
+|<span data-ttu-id="0b546-122">windowsCount</span><span class="sxs-lookup"><span data-stu-id="0b546-122">windowsCount</span></span>|<span data-ttu-id="0b546-123">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-123">Int32</span></span>|<span data-ttu-id="0b546-124">Windows 设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-124">Number of Windows device count.</span></span>|
+|<span data-ttu-id="0b546-125">unknownCount</span><span class="sxs-lookup"><span data-stu-id="0b546-125">unknownCount</span></span>|<span data-ttu-id="0b546-126">Int32</span><span class="sxs-lookup"><span data-stu-id="0b546-126">Int32</span></span>|<span data-ttu-id="0b546-127">未知设备计数。</span><span class="sxs-lookup"><span data-stu-id="0b546-127">Number of unknown device count.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="595de-128">关系</span><span class="sxs-lookup"><span data-stu-id="595de-128">Relationships</span></span>
-<span data-ttu-id="595de-129">无</span><span class="sxs-lookup"><span data-stu-id="595de-129">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="595de-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="595de-130">JSON Representation</span></span>
-<span data-ttu-id="595de-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="595de-131">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="0b546-128">关系</span><span class="sxs-lookup"><span data-stu-id="0b546-128">Relationships</span></span>
+<span data-ttu-id="0b546-129">无</span><span class="sxs-lookup"><span data-stu-id="0b546-129">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0b546-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0b546-130">JSON Representation</span></span>
+<span data-ttu-id="0b546-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0b546-131">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"
