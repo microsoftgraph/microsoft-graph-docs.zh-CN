@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceEnrollmentLimitConfiguration
 description: 删除 deviceEnrollmentLimitConfiguration。
-ms.openlocfilehash: a12e5d3d7733f2c6fb3825d341b06548fe193994
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31ae7c60f6a7014ef2203f11a60e4ff3b7d8c522
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336272"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>删除 deviceEnrollmentLimitConfiguration
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

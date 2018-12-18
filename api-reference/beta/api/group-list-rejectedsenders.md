@@ -1,12 +1,13 @@
 ---
 title: 列出 rejectedSender
 description: '获取此组 rejectedSenders 列表中的用户或组列表。 '
-ms.openlocfilehash: c3142f205442b6c14cb45e0d0706dd111e2ec2f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: aa79ec70982e75349c41ecb551cbf0150b82ad60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336076"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 
