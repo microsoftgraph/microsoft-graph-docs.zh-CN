@@ -1,12 +1,13 @@
 ---
 title: 列出 resourceOperations
 description: 列出 resourceOperation 对象的属性和关系。
-ms.openlocfilehash: 7d206eb9eaada3f3947591037fb5129c5662d580
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af691d9f0563fa3b9805a512f234b35d1bad4d74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319192"
 ---
 # <a name="list-resourceoperations"></a>列出 resourceOperations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

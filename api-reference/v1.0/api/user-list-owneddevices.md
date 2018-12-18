@@ -1,12 +1,13 @@
 ---
 title: 列出 ownedDevices
 description: 获取用户拥有的设备列表。
-ms.openlocfilehash: 2346c40fa8d74c71decc16170506a7ad6dc7bdb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: bae014e3916547cdd2782a7ec267df14eeda822d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320074"
 ---
 # <a name="list-owneddevices"></a>列出 ownedDevices
 

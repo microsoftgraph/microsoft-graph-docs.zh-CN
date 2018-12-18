@@ -1,12 +1,13 @@
 ---
 title: 组织资源类型
 description: 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
-ms.openlocfilehash: ddc3b47777ea586a0f31c0d1d18aaa5727c828e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: da2d127dc5ba44187d8a3a066f5fe261d3dee859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322846"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 

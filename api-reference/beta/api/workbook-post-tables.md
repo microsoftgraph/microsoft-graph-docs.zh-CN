@@ -1,12 +1,13 @@
 ---
 title: 创建表
 description: 使用此 API 创建新的表。
-ms.openlocfilehash: f82ea610a9c458a5cfbba9985cecba80d7ce3dc3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 75d4199b4c5cefcb17acccfedfb5c45a3f296de0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321621"
 ---
 # <a name="create-table"></a>创建表
 
@@ -29,7 +30,7 @@ POST /workbook/tables/$/add
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -37,7 +38,7 @@ POST /workbook/tables/$/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数           | 类型      |说明|
+| 参数           | Type      |说明|
 |:---------------|:----------|:----------|
 | Address  | string| 区域地址。若要从 `worksheets/{id or name}/tables/add` 路径调用此 API，地址中无需有工作表名称前缀。不过，若要从 `workbook/tables/add` 路径调用此 API，请提供需要在其中创建表的工作表名称（例如：`sheet1!A1:D4`）|
 | hasHeaders  | boolean|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|

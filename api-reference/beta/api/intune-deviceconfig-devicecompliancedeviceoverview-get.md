@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceComplianceDeviceOverview
 description: 读取 deviceComplianceDeviceOverview 对象的属性和关系。
-ms.openlocfilehash: e20838865964b397fc70415e34e32a9bdc24aa29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae32034bbcdd664640050f5b25f40717a76fd297
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318590"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>获取 deviceComplianceDeviceOverview
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 列出 managedDeviceMobileAppConfigurationUserStatuses
 description: 列出 managedDeviceMobileAppConfigurationUserStatus 对象的属性和关系。
-ms.openlocfilehash: 942847216d196eac94a5c7f55bc4f624989c59ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8db43a69e0825ff27de9a926524b1d5e762f846c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319689"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>列出 managedDeviceMobileAppConfigurationUserStatuses
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

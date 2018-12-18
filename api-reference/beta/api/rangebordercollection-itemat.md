@@ -1,12 +1,13 @@
 ---
 title: 'RangeBorderCollection: ItemAt'
 description: 使用其索引获取 border 对象
-ms.openlocfilehash: e045f700e61301c5f0cf801827279b4b51b71b92
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0faddd08657881af1aa70d98f45ec740c351744e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042756"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322111"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -31,7 +32,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -39,7 +40,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |index|number|要检索的对象的索引值。从零开始编制索引。|
 

@@ -1,12 +1,13 @@
 ---
 title: 删除 educationSchool
 description: 删除学校。
-ms.openlocfilehash: 6ae69b725021c2a3e0a2776e8593c4346c5c6e34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: e104265f718ad69a84b9e2362962d72763e8fc54
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323063"
 ---
 # <a name="delete-educationschool"></a>删除 educationSchool
 

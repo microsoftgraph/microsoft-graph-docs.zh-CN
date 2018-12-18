@@ -1,12 +1,13 @@
 ---
 title: 创建组
 description: 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
-ms.openlocfilehash: a43ce33d71493d01a53a6d357937a10e29810230
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1c77b3a33b19e9f0254642ef89e3d7fddc224b9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320767"
 ---
 # <a name="create-group"></a>创建组
 
@@ -36,7 +37,7 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

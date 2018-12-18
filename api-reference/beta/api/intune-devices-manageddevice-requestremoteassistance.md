@@ -1,12 +1,13 @@
 ---
 title: requestRemoteAssistance 操作
 description: 请求远程协助
-ms.openlocfilehash: b33b8ef0c9af355325d2d27d0db476338766c741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d84f939fbd7d411bce21eca284d951f4c5cd43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321481"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

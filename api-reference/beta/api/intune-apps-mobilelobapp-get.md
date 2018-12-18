@@ -1,12 +1,13 @@
 ---
 title: 获取 mobileLobApp
 description: 读取 mobileLobApp 对象的属性和关系。
-ms.openlocfilehash: fea0e895752016caa640ba6ceefab2f28c977be4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dec2c91e3a2484f0b6f725cc96bb370230a1b72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319129"
 ---
 # <a name="get-mobilelobapp"></a>获取 mobileLobApp
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

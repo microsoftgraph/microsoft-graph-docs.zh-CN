@@ -1,12 +1,13 @@
 ---
 title: 获取联系人
 description: 检索的属性和关系的联系人对象。
-ms.openlocfilehash: 41784971e4e74fe34c4d0f55b8b0139ce3356e79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fceda46729f539081458c1f26c5d385a984ed2d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046142"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322923"
 ---
 # <a name="get-contact"></a>获取联系人
 

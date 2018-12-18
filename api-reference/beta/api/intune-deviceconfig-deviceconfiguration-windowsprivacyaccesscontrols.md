@@ -1,12 +1,13 @@
 ---
 title: windowsPrivacyAccessControls 操作
 description: 尚未记录
-ms.openlocfilehash: b9b8a3e9d5042d4bb896ac4a0f310f78d7bd78a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321040"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls 操作
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: vpnRoute 资源类型
 description: VPN 路由定义。
-ms.openlocfilehash: 385ed5f369660805afa8cf935273b6689fc90173
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64d755c4f21b47e928c64348a2f1d6dad1f7206a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322020"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute 资源类型
 

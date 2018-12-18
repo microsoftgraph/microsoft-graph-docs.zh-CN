@@ -1,12 +1,13 @@
 ---
 title: 创建联系人
 description: 将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。
-ms.openlocfilehash: 8e2745df6e7e43a903020f47cc627aa627e56ca1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: cb95f9affa637dfb04109fc7192c6ddafe61362a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042077"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318989"
 ---
 # <a name="create-contact"></a>创建联系人
 

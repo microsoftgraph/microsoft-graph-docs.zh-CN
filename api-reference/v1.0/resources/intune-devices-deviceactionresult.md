@@ -1,12 +1,13 @@
 ---
 title: deviceActionResult 资源类型
 description: 设备操作结果
-ms.openlocfilehash: 9d7804b994474778f0f06c52079e09ed5887a09f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48429e059616d9af0e3cbdac8544e68354b94fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010426"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320543"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列出 mobileAppContents
 description: 列出 mobileAppContent 对象的属性和关系。
-ms.openlocfilehash: 6a82c5da8ae5a7e411baedf1ac969d27551889d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: abb91f1607431bdbc8013b21676ecf57142ddb78
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322461"
 ---
 # <a name="list-mobileappcontents"></a>列出 mobileAppContents
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

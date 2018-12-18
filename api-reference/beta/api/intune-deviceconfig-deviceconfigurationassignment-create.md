@@ -1,12 +1,13 @@
 ---
 title: 创建 deviceConfigurationAssignment
 description: 创建新的 deviceConfigurationAssignment 对象。
-ms.openlocfilehash: 366c4b68b6518999e696adf0363f93c7d29faec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87d5ba51fce59340b869e6b78b7227546ab67df1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321446"
 ---
 # <a name="create-deviceconfigurationassignment"></a>创建 deviceConfigurationAssignment
 
@@ -45,7 +46,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

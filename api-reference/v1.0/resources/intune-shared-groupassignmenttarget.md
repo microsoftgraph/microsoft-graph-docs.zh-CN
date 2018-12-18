@@ -1,12 +1,13 @@
 ---
 title: groupAssignmentTarget 资源类型
 description: 表示组的赋值。
-ms.openlocfilehash: 0ebb41b1f737a20a37d322bac7ab5ae6ab2a248f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6dbcb5cd55fcddd22fdf205d7fc8fc50e6b397c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009882"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319794"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget 资源类型
 

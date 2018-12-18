@@ -1,12 +1,13 @@
 ---
 title: teamsCatalogApp 资源类型
 description: 请参阅 teamsApp。
-ms.openlocfilehash: 7634a88325f502d206e9959fa8f6f96ccd99b1ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: a7df56d9d9a0bd36f50d7e9e56193539d55b18e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010840"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320116"
 ---
 # <a name="teamscatalogapp-resource-type"></a>teamsCatalogApp 资源类型
 

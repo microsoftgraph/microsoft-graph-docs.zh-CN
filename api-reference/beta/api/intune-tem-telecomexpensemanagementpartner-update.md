@@ -1,12 +1,13 @@
 ---
 title: 更新 telecomExpenseManagementPartner
 description: 更新 telecomExpenseManagementPartner 对象的属性。
-ms.openlocfilehash: 51c3ed10b0002b4ba1a2d70a3be0a3cde69a5a05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5180ce7338bdffde0fb51f504882e2b82ca96cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046505"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318723"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>更新 telecomExpenseManagementPartner
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

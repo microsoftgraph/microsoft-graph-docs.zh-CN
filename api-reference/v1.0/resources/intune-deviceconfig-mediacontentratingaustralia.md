@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingAustralia 资源类型
 description: 尚未记录
-ms.openlocfilehash: f60df6c4948d0e0208b545a8a25e31ca29247879
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01d809b43bc8ce68ffc92600d3634c8bd437a954
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319500"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>mediaContentRatingAustralia 资源类型
 

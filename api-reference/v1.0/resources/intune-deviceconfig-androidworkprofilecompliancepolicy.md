@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileCompliancePolicy 资源类型
 description: 此类包含 Android 工作配置文件的合规性设置。
-ms.openlocfilehash: 675ac46c71dff82ff284ead42d2e4b98f4e24d9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e3b458aacea23da7fc0686f90bfa75581af119e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319381"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy 资源类型
 

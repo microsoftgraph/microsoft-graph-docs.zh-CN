@@ -1,12 +1,13 @@
 ---
 title: windows10MobileCompliancePolicy 资源类型
 description: 此类包含 Windows 10 Mobile 的合规性设置。
-ms.openlocfilehash: b060608a0bb3a51b0c5788d786e02d5ade6fb419
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db404563e02bc76d47e0380f74db1f8f0c058842
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322622"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy 资源类型
 
@@ -53,7 +54,7 @@ ms.locfileid: "27042017"
 |secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|布尔|要求在 Windows 设备上的活动防火墙。|
+|activeFirewallRequired|Boolean|要求在 Windows 设备上的活动防火墙。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|有效的操作系统构建 Windows 设备上的区域。 该集合最多可包含 10000 个元素。|
 
 ## <a name="relationships"></a>Relationships

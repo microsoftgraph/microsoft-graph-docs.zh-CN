@@ -1,12 +1,13 @@
 ---
 title: 删除 mobileAppContentFile
 description: 删除 mobileAppContentFile。
-ms.openlocfilehash: d9731a3cb1b6d4a18235aa5b37348900b5ed06e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a36f68ed0770954f06f346473135d1bc297ef09b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322447"
 ---
 # <a name="delete-mobileappcontentfile"></a>删除 mobileAppContentFile
 
@@ -37,7 +38,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

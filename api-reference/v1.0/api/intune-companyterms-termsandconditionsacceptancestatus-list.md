@@ -1,12 +1,13 @@
 ---
 title: 列出 termsAndConditionsAcceptanceStatuses
 description: 列出 termsAndConditionsAcceptanceStatus 对象的属性和关系。
-ms.openlocfilehash: 493af3465058651aca1e467a65c7c542fe7f6943
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c32cbde73a27ce88fdb6049cf2e3aacf869b1bdd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010795"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321110"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>列出 termsAndConditionsAcceptanceStatuses
 
@@ -35,7 +36,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

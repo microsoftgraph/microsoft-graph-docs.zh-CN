@@ -1,12 +1,13 @@
 ---
 title: 删除 outlookTaskGroup
 description: 删除指定的 outlookTaskGroup。
-ms.openlocfilehash: c700b104db6c89d9b762ca7d6f7dc571d430878d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e2494823db2415afda2d6b5060c1a34e2d78d131
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319472"
 ---
 # <a name="delete-outlooktaskgroup"></a>删除 outlookTaskGroup
 
@@ -29,7 +30,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

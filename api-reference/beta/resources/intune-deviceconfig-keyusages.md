@@ -1,12 +1,13 @@
 ---
 title: keyUsages 枚举类型
 description: 密钥用法选项。
-ms.openlocfilehash: 8e1c03f5f96f9ed8b4aaac3f029d2a49e2ea478b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf13e124ae2d97120dae122c1b69003eb7c4b6a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319031"
 ---
 # <a name="keyusages-enum-type"></a>keyUsages 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042928"
 
 密钥用法选项。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |keyEncipherment|1|密钥加密用法。|
 |digitalSignature|2|数字签名用法。|

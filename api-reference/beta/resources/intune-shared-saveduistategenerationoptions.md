@@ -1,12 +1,13 @@
 ---
 title: savedUIStateGenerationOptions 枚举类型
 description: 尚未记录
-ms.openlocfilehash: afedd2d2bc8055788d44189e459ed2efa35471fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d262d6539c249d7eb2502a82ae3cbee4382b8d87
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323679"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 枚举类型
 

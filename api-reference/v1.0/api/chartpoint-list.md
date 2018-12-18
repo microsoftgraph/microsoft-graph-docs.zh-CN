@@ -1,12 +1,13 @@
 ---
 title: 列出 ChartPointsCollection
 description: 检索 chartpoint 对象的列表。
-ms.openlocfilehash: 3d44c7fa816b1c1e9789f19e62ff1df6ada37158
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6ab86bdc8a62ca4553c3bc36f3c8aec6f6ab44d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322013"
 ---
 # <a name="list-chartpointscollection"></a>列出 ChartPointsCollection
 
@@ -29,7 +30,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

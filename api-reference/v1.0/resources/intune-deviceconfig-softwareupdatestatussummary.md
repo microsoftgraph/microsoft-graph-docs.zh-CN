@@ -1,12 +1,13 @@
 ---
 title: softwareUpdateStatusSummary 资源类型
 description: 尚未记录
-ms.openlocfilehash: a090c9a88a72e03206c6eeb1f644ce31c88ef808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8813614be9f0fbc87839924a802fcb486a32ba8f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319430"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary 资源类型
 

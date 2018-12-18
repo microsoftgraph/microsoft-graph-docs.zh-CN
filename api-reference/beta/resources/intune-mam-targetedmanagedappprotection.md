@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppProtection 资源类型
 description: 用于配置针对特定安全组的详细管理设置的策略
-ms.openlocfilehash: eedcebf9a4488663ddc5e360f549421e77a0ddfd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 823f2bea754c6e8a38bb6047505d15d4b453a67a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322650"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection 资源类型
 

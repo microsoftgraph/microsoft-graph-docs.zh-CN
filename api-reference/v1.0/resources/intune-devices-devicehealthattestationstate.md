@@ -1,12 +1,13 @@
 ---
 title: deviceHealthAttestationState 资源类型
 description: 尚未记录
-ms.openlocfilehash: 4b394a6113c0b695092ba7f53d68db937ababfbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5aeadafbdfc69a34b8ddc4599078c1374a043821
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010486"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320165"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
 

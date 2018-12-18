@@ -1,12 +1,13 @@
 ---
 title: resourceAction 资源类型
 description: 尚未记录
-ms.openlocfilehash: d4f585ec52096cc9bd6d1430825d61426df644fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c373cc15b1dfce1ca3cede9fa1c7a642da48f5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319157"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
 

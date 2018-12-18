@@ -1,12 +1,13 @@
 ---
 title: 列表 windowsPhone81ImportedPFXCertificateProfiles
 description: 列出属性和 windowsPhone81ImportedPFXCertificateProfile 对象之间的关系。
-ms.openlocfilehash: ae62c3fa4e421481e7120422f70e6935257c2159
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05b2df41d64e109ad28f55004e81c41d15e3ae2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322118"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>列表 windowsPhone81ImportedPFXCertificateProfiles
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

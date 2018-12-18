@@ -1,12 +1,13 @@
 ---
 title: mobileAppInstallStatus 资源类型
 description: 包含用于设备的移动应用程序的安装状态属性。
-ms.openlocfilehash: efd5969e2c00d0230d8efeddff3c41bac90fe9c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043514"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320886"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus 资源类型
 

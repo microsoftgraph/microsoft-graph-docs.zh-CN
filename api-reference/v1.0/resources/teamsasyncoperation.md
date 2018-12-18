@@ -1,12 +1,13 @@
 ---
 title: teamsAsyncOperation 资源类型
 description: 'Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作。 '
-ms.openlocfilehash: 4ec60a5f0137c45a9bc0488b31b76f80799e0545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fd64f99c20505a8e670c865faa039e9db3174ed6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320606"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
@@ -24,7 +25,7 @@ Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作�
 |ID|string |唯一的操作的 id。|
 |： 键入|[teamsAsyncOperationType](teamsasyncoperationtype.md) |表示所描述的操作的类型。|
 |createdDateTime|DateTimeOffset |创建操作的时间。|
-|状态|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
 |lastActionDateTime|DateTimeOffset |上次更新时间异步操作的时间。|
 |attemptsCount|Int32|操作已被标记为成功或失败前尝试次数。|
 |targetResourceId|guid |创建或修改此异步操作，通常[团队](../resources/team.md)的结果的对象 ID。|

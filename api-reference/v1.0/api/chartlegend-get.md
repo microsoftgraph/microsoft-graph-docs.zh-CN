@@ -1,12 +1,13 @@
 ---
 title: 获取 ChartLegend
 description: 检索 chartlegend 对象的属性和关系。
-ms.openlocfilehash: 2a98ad13b93900c516921c246f18f6f4f370e574
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 27b1680adb36222e9d05ca01619d87e73f1a6d8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321887"
 ---
 # <a name="get-chartlegend"></a>获取 ChartLegend
 
@@ -29,7 +30,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/legend
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

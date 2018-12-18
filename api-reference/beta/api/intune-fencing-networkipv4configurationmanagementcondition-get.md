@@ -1,12 +1,13 @@
 ---
 title: 获取 networkIPv4ConfigurationManagementCondition
 description: 读取属性和 networkIPv4ConfigurationManagementCondition 对象的关系。
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047087"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319493"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>获取 networkIPv4ConfigurationManagementCondition
 
@@ -40,7 +41,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

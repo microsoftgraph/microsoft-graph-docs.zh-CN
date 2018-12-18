@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsPhone81StoreApp
 description: 读取属性和 windowsPhone81StoreApp 对象的关系。
-ms.openlocfilehash: 65a242a1ac906ee07ac7be98afa945db10b9e048
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea7a0fc6f379523cf6e5485578c9092ea9a5c02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046610"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323217"
 ---
 # <a name="get-windowsphone81storeapp"></a>获取 windowsPhone81StoreApp
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

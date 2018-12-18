@@ -1,12 +1,13 @@
 ---
 title: win32LobApp 资源类型
 description: 包含属性和继承的 Win32 应用程序的属性。
-ms.openlocfilehash: 00bbf4be533d56661786bbde3ae68478af5d27b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0941db87aeb5f2414d7e1c06729461de3483bc9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046327"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323091"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 

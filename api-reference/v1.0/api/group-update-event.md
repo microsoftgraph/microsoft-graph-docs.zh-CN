@@ -1,12 +1,13 @@
 ---
 title: 更新事件
 description: 更新 event 对象。
-ms.openlocfilehash: e06f08b0c1f0703904c2418ac490be2100e39619
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c8aacc7df62bf336c355801e89e1b6bea5c2b1f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009774"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321159"
 ---
 # <a name="update-event"></a>更新事件
 更新 [event](../resources/event.md) 对象。
@@ -28,7 +29,7 @@ PATCH /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

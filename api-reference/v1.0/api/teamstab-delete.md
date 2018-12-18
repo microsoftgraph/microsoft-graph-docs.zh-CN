@@ -1,12 +1,13 @@
 ---
 title: 从通道删除选项卡
 description: '删除 （取消锁定） 从指定的通道团队中的一个选项卡。 '
-ms.openlocfilehash: 2b132d2d127ff665b1cf408f38221e8bda09c166
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: eef80488fe1a14d8c7021dd25625aac0716665de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320760"
 ---
 # <a name="delete-tab-from-channel"></a>从通道删除选项卡
 

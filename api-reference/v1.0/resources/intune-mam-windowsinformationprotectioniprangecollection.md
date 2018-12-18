@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionIPRangeCollection 资源类型
 description: Windows 信息保护 IP 范围集合
-ms.openlocfilehash: 41558014ec3d48af06788e15fc40786fe7f9aea4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12030ab0b71448c644e4e664f9095dea3e48a26c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319752"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection 资源类型
 
