@@ -1,68 +1,69 @@
 ---
 title: 获取联系人
 description: 检索 contact 对象的属性和关系。
-ms.openlocfilehash: a44e90cac7a114afc8dbe1e20d4a09b89e5bd50d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 20677bd9cf10f1098ff233a8f60d69e7728aab85
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009152"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331484"
 ---
-# <a name="get-contact"></a><span data-ttu-id="f4282-103">获取联系人</span><span class="sxs-lookup"><span data-stu-id="f4282-103">Get contact</span></span>
+# <a name="get-contact"></a><span data-ttu-id="578ba-103">获取联系人</span><span class="sxs-lookup"><span data-stu-id="578ba-103">Get contact</span></span>
 
-<span data-ttu-id="f4282-104">检索 contact 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f4282-104">Retrieve the properties and relationships of a contact object.</span></span>
+<span data-ttu-id="578ba-104">检索 contact 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="578ba-104">Retrieve the properties and relationships of a contact object.</span></span>
 
-<span data-ttu-id="f4282-105">有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：</span><span class="sxs-lookup"><span data-stu-id="f4282-105">There are two scenarios where an app can get a contact in another user's contact folder:</span></span>
+<span data-ttu-id="578ba-105">有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：</span><span class="sxs-lookup"><span data-stu-id="578ba-105">There are two scenarios where an app can get a contact in another user's contact folder:</span></span>
 
-* <span data-ttu-id="f4282-106">如果应用程序具有应用程序权限，或，</span><span class="sxs-lookup"><span data-stu-id="f4282-106">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="f4282-107">如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。</span><span class="sxs-lookup"><span data-stu-id="f4282-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="f4282-108">请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。</span><span class="sxs-lookup"><span data-stu-id="f4282-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
+* <span data-ttu-id="578ba-106">如果应用程序具有应用程序权限，或，</span><span class="sxs-lookup"><span data-stu-id="578ba-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="578ba-107">如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。</span><span class="sxs-lookup"><span data-stu-id="578ba-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="578ba-108">请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。</span><span class="sxs-lookup"><span data-stu-id="578ba-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f4282-109">权限</span><span class="sxs-lookup"><span data-stu-id="f4282-109">Permissions</span></span>
-<span data-ttu-id="f4282-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4282-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="578ba-109">权限</span><span class="sxs-lookup"><span data-stu-id="578ba-109">Permissions</span></span>
+<span data-ttu-id="578ba-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="578ba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f4282-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4282-112">Permission type</span></span>      | <span data-ttu-id="f4282-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4282-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="578ba-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="578ba-112">Permission type</span></span>      | <span data-ttu-id="578ba-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="578ba-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f4282-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4282-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f4282-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f4282-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="f4282-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4282-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4282-117">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f4282-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="f4282-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4282-118">Application</span></span> | <span data-ttu-id="f4282-119">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f4282-119">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="578ba-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="578ba-114">Delegated (work or school account)</span></span> | <span data-ttu-id="578ba-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="578ba-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="578ba-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="578ba-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="578ba-117">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="578ba-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="578ba-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="578ba-118">Application</span></span> | <span data-ttu-id="578ba-119">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="578ba-119">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4282-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4282-120">HTTP request</span></span>
-<span data-ttu-id="f4282-121"><!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)从用户的默认[contactFolder](../resources/contactfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="f4282-121"><!-- { "blockType": "ignored" } --> A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="578ba-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="578ba-120">HTTP request</span></span>
+<span data-ttu-id="578ba-121"><!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)从用户的默认[contactFolder](../resources/contactfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="578ba-121"><!-- { "blockType": "ignored" } --> A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-<span data-ttu-id="f4282-122">来自用户的顶级 [contactFolder](../resources/contactfolder.md) 中的 [联系人](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="f4282-122">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
+<span data-ttu-id="578ba-122">来自用户的顶级 [contactFolder](../resources/contactfolder.md) 中的 [联系人](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="578ba-122">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-<span data-ttu-id="f4282-p103">[contactFolder](../resources/mailfolder.md) 的子文件夹中包含的 [联系人](../resources/contact.md)。下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="f4282-p103">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="578ba-p103">[contactFolder](../resources/mailfolder.md) 的子文件夹中包含的 [联系人](../resources/contact.md)。下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="578ba-p103">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f4282-125">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f4282-125">Optional query parameters</span></span>
-|<span data-ttu-id="f4282-126">Name</span><span class="sxs-lookup"><span data-stu-id="f4282-126">Name</span></span>|<span data-ttu-id="f4282-127">值</span><span class="sxs-lookup"><span data-stu-id="f4282-127">Value</span></span>|<span data-ttu-id="f4282-128">说明</span><span class="sxs-lookup"><span data-stu-id="f4282-128">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="578ba-125">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="578ba-125">Optional query parameters</span></span>
+|<span data-ttu-id="578ba-126">Name</span><span class="sxs-lookup"><span data-stu-id="578ba-126">Name</span></span>|<span data-ttu-id="578ba-127">值</span><span class="sxs-lookup"><span data-stu-id="578ba-127">Value</span></span>|<span data-ttu-id="578ba-128">说明</span><span class="sxs-lookup"><span data-stu-id="578ba-128">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="f4282-129">$expand</span><span class="sxs-lookup"><span data-stu-id="f4282-129">$expand</span></span>|<span data-ttu-id="f4282-130">string</span><span class="sxs-lookup"><span data-stu-id="f4282-130">string</span></span>|<span data-ttu-id="f4282-p104">要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。</span><span class="sxs-lookup"><span data-stu-id="f4282-p104">Comma-separated list of relationships to expand and include in the response. See the relationships table of the [contact](../resources/contact.md) object for supported names.</span></span> |
-|<span data-ttu-id="f4282-133">$select</span><span class="sxs-lookup"><span data-stu-id="f4282-133">$select</span></span>|<span data-ttu-id="f4282-134">string</span><span class="sxs-lookup"><span data-stu-id="f4282-134">string</span></span>|<span data-ttu-id="f4282-135">要在响应中包括的属性的列表（以逗号分隔）。</span><span class="sxs-lookup"><span data-stu-id="f4282-135">Comma-separated list of properties to include in the response.</span></span>|
+|<span data-ttu-id="578ba-129">$expand</span><span class="sxs-lookup"><span data-stu-id="578ba-129">$expand</span></span>|<span data-ttu-id="578ba-130">string</span><span class="sxs-lookup"><span data-stu-id="578ba-130">string</span></span>|<span data-ttu-id="578ba-p104">要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。</span><span class="sxs-lookup"><span data-stu-id="578ba-p104">Comma-separated list of relationships to expand and include in the response. See the relationships table of the [contact](../resources/contact.md) object for supported names.</span></span> |
+|<span data-ttu-id="578ba-133">$select</span><span class="sxs-lookup"><span data-stu-id="578ba-133">$select</span></span>|<span data-ttu-id="578ba-134">string</span><span class="sxs-lookup"><span data-stu-id="578ba-134">string</span></span>|<span data-ttu-id="578ba-135">要在响应中包括的属性的列表（以逗号分隔）。</span><span class="sxs-lookup"><span data-stu-id="578ba-135">Comma-separated list of properties to include in the response.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="f4282-136">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4282-136">Request headers</span></span>
-| <span data-ttu-id="f4282-137">标头</span><span class="sxs-lookup"><span data-stu-id="f4282-137">Header</span></span>       | <span data-ttu-id="f4282-138">值</span><span class="sxs-lookup"><span data-stu-id="f4282-138">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="578ba-136">请求标头</span><span class="sxs-lookup"><span data-stu-id="578ba-136">Request headers</span></span>
+| <span data-ttu-id="578ba-137">标头</span><span class="sxs-lookup"><span data-stu-id="578ba-137">Header</span></span>       | <span data-ttu-id="578ba-138">值</span><span class="sxs-lookup"><span data-stu-id="578ba-138">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f4282-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4282-139">Authorization</span></span>  | <span data-ttu-id="f4282-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4282-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="578ba-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="578ba-139">Authorization</span></span>  | <span data-ttu-id="578ba-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="578ba-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f4282-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4282-142">Request body</span></span>
-<span data-ttu-id="f4282-143">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f4282-143">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="578ba-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="578ba-142">Request body</span></span>
+<span data-ttu-id="578ba-143">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="578ba-143">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4282-144">响应</span><span class="sxs-lookup"><span data-stu-id="f4282-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="578ba-144">响应</span><span class="sxs-lookup"><span data-stu-id="578ba-144">Response</span></span>
 
-<span data-ttu-id="f4282-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [contact](../resources/contact.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f4282-145">If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f4282-146">示例</span><span class="sxs-lookup"><span data-stu-id="f4282-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f4282-147">请求</span><span class="sxs-lookup"><span data-stu-id="f4282-147">Request</span></span>
-<span data-ttu-id="f4282-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f4282-148">Here is an example of the request.</span></span>
+<span data-ttu-id="578ba-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [contact](../resources/contact.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="578ba-145">If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="578ba-146">示例</span><span class="sxs-lookup"><span data-stu-id="578ba-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="578ba-147">请求</span><span class="sxs-lookup"><span data-stu-id="578ba-147">Request</span></span>
+<span data-ttu-id="578ba-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="578ba-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_contact"
@@ -70,8 +71,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="f4282-149">响应</span><span class="sxs-lookup"><span data-stu-id="f4282-149">Response</span></span>
-<span data-ttu-id="f4282-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f4282-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="578ba-149">响应</span><span class="sxs-lookup"><span data-stu-id="578ba-149">Response</span></span>
+<span data-ttu-id="578ba-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="578ba-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
