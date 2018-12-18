@@ -1,12 +1,13 @@
 ---
 title: 删除 androidGeneralDeviceConfiguration
 description: 删除 androidGeneralDeviceConfiguration。
-ms.openlocfilehash: 0837a728d5e08e9c21a74d9d80259fe5347f4f54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45912bca710cdf31da09d3db5ceff52bd68bb23e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305514"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>删除 androidGeneralDeviceConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: extendFeatureUpdatesPause 操作
 description: 扩展的业务拨打 Windows Update 功能更新暂停。
-ms.openlocfilehash: c569d0295cf448568dfb6b39da6d32896e8a4218
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 24e1e2101b740d3c33e92ab52c40958a99d56078
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049203"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301391"
 ---
 # <a name="extendfeatureupdatespause-action"></a>extendFeatureUpdatesPause 操作
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

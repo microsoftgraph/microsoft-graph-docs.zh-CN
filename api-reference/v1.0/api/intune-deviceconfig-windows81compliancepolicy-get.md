@@ -1,12 +1,13 @@
 ---
 title: 获取 windows81CompliancePolicy
 description: 读取 windows81CompliancePolicy 对象的属性和关系。
-ms.openlocfilehash: 7e7b104c547c3a703d47aec8c6d952ad34cf7dac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a156ec9d40d3e952b635a8a0dccbf2e46a4001d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301202"
 ---
 # <a name="get-windows81compliancepolicy"></a>获取 windows81CompliancePolicy
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

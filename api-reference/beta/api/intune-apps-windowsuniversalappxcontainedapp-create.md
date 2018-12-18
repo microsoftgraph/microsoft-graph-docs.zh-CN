@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsUniversalAppXContainedApp
 description: 创建新的 windowsUniversalAppXContainedApp 对象。
-ms.openlocfilehash: 156af7a32e6041fbe06bc4f3dca4071425e5b468
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97f50a79194af878569327073ae8911bf08199f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048510"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302812"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>创建 windowsUniversalAppXContainedApp
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

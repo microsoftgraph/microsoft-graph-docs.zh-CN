@@ -1,12 +1,13 @@
 ---
 title: 'ChartCollection: ItemAt'
 description: 根据其在集合中的位置获取图表。
-ms.openlocfilehash: 088a3a9b8ef7c7d4ceb99eaf47a94f35184d3327
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6490958908e7f6093e2d307764dd422026205f46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303736"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |index|number|要检索的对象的索引值。从零开始编制索引。|
 

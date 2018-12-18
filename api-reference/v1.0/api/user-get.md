@@ -1,12 +1,13 @@
 ---
 title: 获取用户
 description: 检索用户对象的属性和关系。
-ms.openlocfilehash: 6e0acf36f23e28c2b7007d9b82daed6203dc1e0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f26b77ccb21c4b25cc3d869582ce1d4064b16f53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009139"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304660"
 ---
 # <a name="get-a-user"></a>获取用户
 

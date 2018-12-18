@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceUserStatus 资源类型
 description: 尚未记录
-ms.openlocfilehash: 20e4244bbceb14b14c9e0ef47ed81c16a10eae7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: caed46772cd17a08b7da68a696914153cb47878a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010953"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302308"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>deviceComplianceUserStatus 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "27010953"
 |id|String|实体的键。|
 |userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|状态|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
 |userPrincipalName|String|UserPrincipalName。|
 

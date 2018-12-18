@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: columnsAfter'
 description: 获取给定范围右侧的一定数量的列。
-ms.openlocfilehash: 7879bdac135f8f54a661d9e40e74c676011e36fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b80657c6afb7709049a1e0ccaa3c3b232f5501c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304233"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -30,12 +31,12 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |count|Int32|可选。 要在结果区域中包括的列数。 一般情况下，使用正数创建当前范围之外的范围。 为负数还可用于创建当前范围内的范围。 默认值为 1|
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

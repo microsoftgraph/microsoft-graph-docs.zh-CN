@@ -1,12 +1,13 @@
 ---
 title: signInAssistantOptions 枚举类型
 description: SignInAssistantSettings 值。
-ms.openlocfilehash: 44a842beda37d83c33f793883c786638f9ce4a7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97bcb162168964283e2e741f33980a7cf2904e7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302119"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 

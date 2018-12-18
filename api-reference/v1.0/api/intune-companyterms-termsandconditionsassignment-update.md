@@ -1,12 +1,13 @@
 ---
 title: 更新 termsAndConditionsAssignment
 description: 更新 termsAndConditionsAssignment 对象的属性。
-ms.openlocfilehash: 17a442b2a028542d3c40a07de5987a937763aa58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b55ec01c6bac55f9b1d72a5aad5f931bed6b6b2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010994"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301405"
 ---
 # <a name="update-termsandconditionsassignment"></a>更新 termsAndConditionsAssignment
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

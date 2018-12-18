@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppPolicyAssignment 资源类型
 description: 组或应用的部署类型。
-ms.openlocfilehash: 06850c27b9f13a4613301a14ca7ba29e758be9ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89caa9b24f9b22bd064931763fef2361102a689e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303113"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 

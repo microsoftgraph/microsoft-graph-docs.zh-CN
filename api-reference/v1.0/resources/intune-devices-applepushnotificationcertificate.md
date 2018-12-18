@@ -1,12 +1,13 @@
 ---
 title: applePushNotificationCertificate 资源类型
 description: Apple 推送通知证书。
-ms.openlocfilehash: 7980f615d657b1c79dd09d1f5c06ced58151dbec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5be59f1a6318e07fff981fd32ec6461cb530798
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008863"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305437"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 

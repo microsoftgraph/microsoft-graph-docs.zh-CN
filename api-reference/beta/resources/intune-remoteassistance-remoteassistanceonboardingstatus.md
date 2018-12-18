@@ -1,12 +1,13 @@
 ---
 title: remoteAssistanceOnboardingStatus 枚举类型
 description: 尚未记录
-ms.openlocfilehash: e14f01da0808fb2528d9c9347390f4c9ea6b6745
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88472833f47ac2cea862d6780c46223fb5f09525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304065"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 

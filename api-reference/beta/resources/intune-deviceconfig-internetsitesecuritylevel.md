@@ -1,12 +1,13 @@
 ---
 title: internetSiteSecurityLevel 枚举类型
 description: Internet 网站的安全级别的可能值。
-ms.openlocfilehash: b54d4ae5f1d257d4a5306caae0d7e31f52f0d3f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57457a9ed222c07b7a1c82b9b9c20fae2653f673
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303862"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 枚举类型
 

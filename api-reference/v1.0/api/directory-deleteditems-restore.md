@@ -1,12 +1,13 @@
 ---
 title: 恢复已删除的项目
 description: '从已删除的项目中还原最近删除的项目。 '
-ms.openlocfilehash: 3fa47d269cefaf54994b57f8f06a92a8ac8fc4b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 3a78d2d481fb26c6c6b56770375d4ce23f007bd5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301314"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -42,7 +43,7 @@ POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
 | Accept | application/json |

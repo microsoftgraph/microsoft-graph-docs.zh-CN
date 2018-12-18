@@ -1,12 +1,13 @@
 ---
 title: 呼叫： 记录
 description: 记录呼叫。
-ms.openlocfilehash: 2d876b30205594e162ac9f5aa1b2068058efea7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303547"
 ---
 # <a name="call-record"></a>呼叫： 记录
 
@@ -21,7 +22,7 @@ ms.locfileid: "27043958"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,22 +32,22 @@ POST /applications/{id}/calls/{id}/record
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | Type    |说明|
 |:---------------|:--------|:----------|
 |提示|[mediaprompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
-|bargeInAllowed|布尔| 允许用户提示完成之前输入的选择。                                                                 |
+|bargeInAllowed|Boolean| 允许用户提示完成之前输入的选择。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 从我们开始之前我们记录操作超时和失败操作的时间允许的最大初始静音。 如果我们播放提示时，提示完成后从开始此计时器。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时秒数。|
 |maxRecordDurationInSeconds|Int32| 最大记录持续时间，以秒为单位。|
-|playBeep|布尔| 播放提示音后播放提示。|
-|streamWhileRecording|布尔|如果设置为 true，资源位置将提供一旦开始录制。 |
+|playBeep|Boolean| 播放提示音后播放提示。|
+|streamWhileRecording|Boolean|如果设置为 true，资源位置将提供一旦开始录制。 |
 |stopTones|String 集合|停止指定结束录制音。|
 |clientContext|字符串|客户端上下文。|
 

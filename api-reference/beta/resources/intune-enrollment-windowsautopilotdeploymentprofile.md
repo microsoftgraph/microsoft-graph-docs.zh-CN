@@ -1,12 +1,13 @@
 ---
 title: windowsAutopilotDeploymentProfile 资源类型
 description: Windows 自动执行某些操作部署配置文件
-ms.openlocfilehash: ed109af370d73d22d46198b206ba42dc4ebab2da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042843"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301440"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
@@ -32,7 +33,7 @@ Windows 自动执行某些操作部署配置文件
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|即开体验设置|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|注册状态屏幕设置|
-|extractHardwareHash|布尔|配置文件的 HardwareHash 提取|
+|extractHardwareHash|Boolean|配置文件的 HardwareHash 提取|
 |deviceNameTemplate|字符串|用于自动执行某些操作设备命名的模板。 这可以是自定义文本，并且还可以包含该设备，序列号或随机生成的编号。 由模板生成的文本的总长度可不超过 15 个字符。|
 
 ## <a name="relationships"></a>Relationships

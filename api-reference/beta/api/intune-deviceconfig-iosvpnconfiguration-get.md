@@ -1,12 +1,13 @@
 ---
 title: 获取 iosVpnConfiguration
 description: 读取属性和 iosVpnConfiguration 对象的关系。
-ms.openlocfilehash: 4a9ad73346dd93c05b55cd76322258bc330be3c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46f8f47054186c2208e29f95f78ce6926ab62fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045675"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302322"
 ---
 # <a name="get-iosvpnconfiguration"></a>获取 iosVpnConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

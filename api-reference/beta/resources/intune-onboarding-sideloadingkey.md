@@ -1,12 +1,13 @@
 ---
 title: sideLoadingKey 资源类型
 description: Windows 8 和租户 8.1 设备安装业务线应用程序需要 SideLoadingKey 实体。
-ms.openlocfilehash: cac2360e2c50e64e1b421df4efaf53802d78558b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66dc833ab46f8dc1c030a3ef97be78cd73ee3660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304310"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 

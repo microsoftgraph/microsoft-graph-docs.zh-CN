@@ -1,12 +1,13 @@
 ---
 title: omaSettingBase64 资源类型
 description: OMA 设置 Base64 定义。
-ms.openlocfilehash: eebe9730c36ab4bc7e48aa765ecd3959897c6c12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee25db94cc1426194166a7c66b9a8a626d62c3e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304072"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 资源类型
 

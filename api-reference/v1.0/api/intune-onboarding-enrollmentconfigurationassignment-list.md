@@ -1,12 +1,13 @@
 ---
 title: 列出 enrollmentConfigurationAssignments
 description: 列出 enrollmentConfigurationAssignment 对象的属性和关系。
-ms.openlocfilehash: baeba282dccfbb72821ae75f53e4771771854b14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d266cb9782e8be4e7e99fd10eef18680adbf4e40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303869"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>列出 enrollmentConfigurationAssignments
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

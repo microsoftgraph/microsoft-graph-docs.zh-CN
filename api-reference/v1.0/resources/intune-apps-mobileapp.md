@@ -1,12 +1,13 @@
 ---
 title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
-ms.openlocfilehash: 7de5450ade7c95984107026eb8a6b19e07a2ba82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d28205e532779504b5b9a846e835d4178fc94e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301538"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 

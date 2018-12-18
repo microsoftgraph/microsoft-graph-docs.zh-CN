@@ -1,12 +1,13 @@
 ---
 title: 列出 macOSGeneralDeviceConfigurations
 description: 列出 macOSGeneralDeviceConfiguration 对象的属性和关系。
-ms.openlocfilehash: a1d0bb60b5a75af5d65f7debb6141ac7c5dfee0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c9523d10de17845642925cc30e59ca86b26008a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045486"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301804"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

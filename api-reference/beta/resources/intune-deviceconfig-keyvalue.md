@@ -1,12 +1,13 @@
 ---
 title: keyValue 资源类型
 description: 键值定义。
-ms.openlocfilehash: 7279b48243139b9234b737ceb7d7fb1ad7232451
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e5754657e679f3a703c2b5dec7cea36d1bad860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043905"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302637"
 ---
 # <a name="keyvalue-resource-type"></a>keyValue 资源类型
 

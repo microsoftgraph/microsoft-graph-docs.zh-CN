@@ -1,12 +1,13 @@
 ---
 title: enrollmentState 枚举类型
 description: 尚未记录
-ms.openlocfilehash: 8e8e20c0fd04e4da57eddfa7384052a6ab468152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e432f73ace1adbd529c910f70b97b7357a406e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301293"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 枚举类型
 

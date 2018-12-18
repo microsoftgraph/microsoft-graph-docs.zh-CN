@@ -1,12 +1,13 @@
 ---
 title: officeClientConfiguration 资源类型
 description: Office 客户端配置。
-ms.openlocfilehash: de510d7a57c10d1f74a3e58856afb9233243ec17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303834"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
@@ -31,7 +32,7 @@ Office 客户端配置。
 |policyPayload|Stream|策略设置 JSON 字符串以二进制格式，不能由用户更改这些值。|
 |说明|字符串|尚未记录|
 |displayName|字符串|管理员提供的 office 客户端的说明配置策略。|
-|lastModifiedDateTime|DateTime|上次修改日期时间戳的策略。|
+|lastModifiedDateTime|日期时间|上次修改日期时间戳的策略。|
 |priority|Int32|优先级值应为每个策略下租户的唯一值并将用于指定在冲突解决，较低值意味着很高的优先级。|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|用户签入的摘要策略。|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端中签入状态的列表。|

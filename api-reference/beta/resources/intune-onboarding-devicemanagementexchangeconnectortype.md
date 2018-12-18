@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnectorType 枚举类型
 description: Exchange 连接器的类型。
-ms.openlocfilehash: 59bc1aa080f84fdd25a2da26ec9e7ff9aba20641
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31459d4053e2ba1ef22a516995796baef2407dbf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043122"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301727"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 枚举类型
 

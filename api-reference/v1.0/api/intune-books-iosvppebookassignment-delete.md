@@ -1,12 +1,13 @@
 ---
 title: 删除 iosVppEBookAssignment
 description: 删除 iosVppEBookAssignment。
-ms.openlocfilehash: 4f791150eb14deaec79be82166e2695d7bb8fbce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cda2654ba20e04f27fd9e38a4d3708d11ba9df7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010876"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301853"
 ---
 # <a name="delete-iosvppebookassignment"></a>删除 iosVppEBookAssignment
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

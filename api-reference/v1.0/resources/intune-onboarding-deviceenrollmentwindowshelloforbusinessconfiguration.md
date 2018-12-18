@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 description: 尚未记录
-ms.openlocfilehash: 1be92fc0cfa5cc9fb19ff5532c13cc612bef5996
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 403d549140dd4eee5c1d6f5f62a852c38f22a1e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301790"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 

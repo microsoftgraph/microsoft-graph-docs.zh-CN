@@ -1,12 +1,13 @@
 ---
 title: 删除 mobileAppContent
 description: 删除 mobileAppContent。
-ms.openlocfilehash: e631e414ff0a29caef8584a3649d296cf50e2076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcce8b7a1a79506218b9ac0a306b5e1b9f22bbb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302609"
 ---
 # <a name="delete-mobileappcontent"></a>删除 mobileAppContent
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

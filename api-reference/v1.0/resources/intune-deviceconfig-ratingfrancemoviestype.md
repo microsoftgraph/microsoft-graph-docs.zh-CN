@@ -1,12 +1,13 @@
 ---
 title: ratingFranceMoviesType 枚举类型
 description: 在法国分级标签 movies
-ms.openlocfilehash: b55c5bc3e2c863fa6846f0ee349fd290ee871197
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33289d4419f1dc9bcf0a1115765e9b21c51353fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011116"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304842"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 

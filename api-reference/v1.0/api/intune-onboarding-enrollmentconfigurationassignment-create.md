@@ -1,12 +1,13 @@
 ---
 title: 创建 enrollmentConfigurationAssignment
 description: 创建新的 enrollmentConfigurationAssignment 对象。
-ms.openlocfilehash: 48afdefb08b9520a2ce4564bd0cc528bed7d0012
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2677c6a1ecabe71a0ff46c8e11e2e8d4515f786
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301615"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>创建 enrollmentConfigurationAssignment
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

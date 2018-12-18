@@ -1,12 +1,13 @@
 ---
 title: 删除 acceptedSender
 description: 向 acceptedSender 列表中添加新用户或组。
-ms.openlocfilehash: 4a3cfd89d37a18cbb85644b2c4adc71470950235
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 7a0fc795507a1c2b6a8b20407b9f72347503e507
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300852"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 向 acceptedSender 列表中添加新用户或组。

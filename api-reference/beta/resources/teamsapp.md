@@ -1,12 +1,13 @@
 ---
 title: teamsApp 资源类型
 description: 应用程序中的 Microsoft 团队应用程序目录。
-ms.openlocfilehash: bb9081306cbcc5d8537c86e7f3f59afff89a03b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: b0f3bb42bb90c2c3f0211c5a7092fa7fdb9b10b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305325"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27044479"
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
 
-|成员|值|说明|
+|Member|值|说明|
 |:---|:---|:---|
 |存储|0| 应用程序都可以通过 Microsoft 团队应用程序商店的所有租户。|
 |组织|1|只能在此租户应用程序。|

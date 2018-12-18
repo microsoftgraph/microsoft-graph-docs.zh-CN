@@ -1,12 +1,13 @@
 ---
 title: 创建 educationUser
 description: 新建用户。
-ms.openlocfilehash: 5bff21a62c0da0ecaf0e5972ee0b0b8e12a100bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4d55d1678dca04e4ad8745e687931b6382f96486
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303498"
 ---
 # <a name="create-educationuser"></a>创建 educationUser
 

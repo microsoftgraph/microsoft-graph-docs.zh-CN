@@ -1,12 +1,13 @@
 ---
 title: teamMessagingSettings 资源类型
 description: 要配置的消息设置和团队中的提及。
-ms.openlocfilehash: 6d1ca12b473f2773d4f56e12405b17e21b0bd0ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 387c2e3ccedc6f11f17d4868b1b0d3eaf67624fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304548"
 ---
 # <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings 资源类型
 
@@ -17,11 +18,11 @@ ms.locfileid: "27008813"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|布尔|如果设置为 true，则用户可以编辑他们的邮件。|
-|allowUserDeleteMessages|布尔|如果设置为 true，则用户可以删除其邮件。|
-|allowOwnerDeleteMessages|布尔|如果设置为 true，则所有者可以删除任何消息。|
-|allowTeamMentions|布尔|如果设置为 true，允许提及的 @team。|
-|allowChannelMentions|布尔|如果设置为 true，允许提及的 @channel。|
+|allowUserEditMessages|Boolean|如果设置为 true，则用户可以编辑他们的邮件。|
+|allowUserDeleteMessages|Boolean|如果设置为 true，则用户可以删除其邮件。|
+|allowOwnerDeleteMessages|Boolean|如果设置为 true，则所有者可以删除任何消息。|
+|allowTeamMentions|Boolean|如果设置为 true，允许提及的 @team。|
+|allowChannelMentions|Boolean|如果设置为 true，允许提及的 @channel。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

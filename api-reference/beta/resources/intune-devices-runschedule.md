@@ -1,12 +1,13 @@
 ---
 title: runSchedule 资源类型
 description: 运行计划的定期设备管理脚本。
-ms.openlocfilehash: 6c9eaffd877a0c60fb89c240e389f95c16afa428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11fc574d87099560937af59f7045b9bf4a8630e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302959"
 ---
 # <a name="runschedule-resource-type"></a>runSchedule 资源类型
 

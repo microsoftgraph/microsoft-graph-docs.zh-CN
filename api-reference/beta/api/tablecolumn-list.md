@@ -1,12 +1,13 @@
 ---
 title: 列出 TableColumnCollection
 description: 检索 tablecolumn 对象的列表。
-ms.openlocfilehash: 1eaae1bec61b144ee1d27354015baef441c5a720
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 02b04e619dddc352bc5af2da486cee843e941bb3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047486"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302021"
 ---
 # <a name="list-tablecolumncollection"></a>列出 TableColumnCollection
 
@@ -32,7 +33,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: 添加目录角色成员
 description: 使用此 API 创建新的目录角色成员。
-ms.openlocfilehash: f3a778e501c7eefddd206282c3e79c96b262220c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 790a2b71f05e19edb01c371d1a54283b5037e4f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303953"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -29,7 +30,7 @@ POST /directoryRoles/{id}/members/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

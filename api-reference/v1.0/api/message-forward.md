@@ -1,12 +1,13 @@
 ---
 title: 邮件：转发
 description: 转发邮件。邮件保存在已发送邮件文件夹中。
-ms.openlocfilehash: 862ce3c40d6e83595373c5530df94cfa18c14b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fe1b5f9498d8be417818168b83abc56da8986bd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301580"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -30,7 +31,7 @@ POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[Recipient](../resources/recipient.md) collection|收件人列表|

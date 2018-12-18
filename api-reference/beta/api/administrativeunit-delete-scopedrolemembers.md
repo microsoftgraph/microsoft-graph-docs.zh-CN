@@ -1,12 +1,13 @@
 ---
 title: 删除 scopedRoleMember
 description: 删除管理单元的作用域角色成员。
-ms.openlocfilehash: 562bf81d5c9c3db04a85d45110e6dce5a3ca9d53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0c312266b672a93d58723fd39a26cf7bd48bd7f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303001"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
@@ -31,7 +32,7 @@ DELETE /administrativeUnits/{id}/scopedRoleMembers/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

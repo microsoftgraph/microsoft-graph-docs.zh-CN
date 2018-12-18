@@ -1,12 +1,13 @@
 ---
 title: 列出图表
 description: 检索 chart 对象的列表。
-ms.openlocfilehash: 4720116c4f6a0095c00b7b4256633ed69e1facb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2c6366c87b18769ee07d995352ae2fca2f4d0513
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305279"
 ---
 # <a name="list-charts"></a>列出图表
 
@@ -29,7 +30,7 @@ GET /workbook/worksheets/{id|name}/charts
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

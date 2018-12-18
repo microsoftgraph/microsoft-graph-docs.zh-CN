@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceCategories
 description: 列出 deviceCategory 对象的属性和关系。
-ms.openlocfilehash: 826310d9ba694fe5cfd2e8966bd8545fa3fc042a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 345fec4d151dab0e73cadccf2b4618f4e292ef4e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304177"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

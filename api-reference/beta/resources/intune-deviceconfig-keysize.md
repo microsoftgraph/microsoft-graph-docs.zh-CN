@@ -1,12 +1,13 @@
 ---
 title: keySize 枚举类型
 description: 密钥大小选项。
-ms.openlocfilehash: 36d5ccf31c89b46b071db11f9960f80eb56397b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03ba06cf8d2059536e46ca629ed6cbbd4ce5a9cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045759"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302497"
 ---
 # <a name="keysize-enum-type"></a>keySize 枚举类型
 

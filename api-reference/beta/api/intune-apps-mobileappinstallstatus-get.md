@@ -1,12 +1,13 @@
 ---
 title: 获取 mobileAppInstallStatus
 description: 读取属性和 mobileAppInstallStatus 对象的关系。
-ms.openlocfilehash: 0663b3cb13714be201fd9f6917a2a0689d84402b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 163e694d6b60d7d7d97408d33ebf682a88be6ea9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303421"
 ---
 # <a name="get-mobileappinstallstatus"></a>获取 mobileAppInstallStatus
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

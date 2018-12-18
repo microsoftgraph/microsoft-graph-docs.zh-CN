@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: unsubmit'
-description: . 在提交过程中，所有资源将都复制从 submittedResources 到 workingResources 地址散列表元。 教师将看的分级工作资源列表。
-ms.openlocfilehash: 610b5a69a06c29d2e2b9b1fa6eb501a56d59b076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: '指示学生希望后没有打开从事的工作分配的提交操作。 仅可由学生执行此操作。 '
+author: dipakboyed
+ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304226"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 

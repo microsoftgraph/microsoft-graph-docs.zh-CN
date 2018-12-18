@@ -1,12 +1,13 @@
 ---
 title: windowsPrivacyDataCategory 枚举类型
 description: 隐私数据访问的 Windows 隐私数据类别说明符。
-ms.openlocfilehash: 3174ce8d5aa95219bfe9e544a87da33139bb1cc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304947"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 

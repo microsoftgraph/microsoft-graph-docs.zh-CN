@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceConfigurationUserOverview
 description: 读取 deviceConfigurationUserOverview 对象的属性和关系。
-ms.openlocfilehash: 7aafa1b56b3bb7f308eac87ca95767837b443f81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c70c1e188a35222a538db3162bc8272968f16fe5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302140"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>获取 deviceConfigurationUserOverview
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOve
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

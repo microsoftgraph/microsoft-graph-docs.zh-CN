@@ -1,12 +1,13 @@
 ---
 title: localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 description: LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能值
-ms.openlocfilehash: 96be8f96bf78c9af8d7a71b511a69df64270115b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcd5e4794fd1b8ea2887c744201f4804a003f3e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303589"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 

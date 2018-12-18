@@ -1,12 +1,13 @@
 ---
 title: getLoggedOnManagedDevices 函数
 description: 尚未记录
-ms.openlocfilehash: 4d8d6505cb4715cbda45e53e7b866644c2ab1d07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e56ff33ce0413e1ccaa8ee4d16245f314e56839
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301860"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices 函数
 
@@ -41,7 +42,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

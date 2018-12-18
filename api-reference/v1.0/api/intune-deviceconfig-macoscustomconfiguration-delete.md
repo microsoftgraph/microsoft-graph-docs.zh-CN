@@ -1,12 +1,13 @@
 ---
 title: 删除 macOSCustomConfiguration
 description: 删除 macOSCustomConfiguration。
-ms.openlocfilehash: a7e4bdc08848bbc67c7089fce8af92b57d820265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45523f61e1ee75a534b54ff50c4d70f1f6ff724b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305108"
 ---
 # <a name="delete-macoscustomconfiguration"></a>删除 macOSCustomConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceConfigurationUserStateSummary
 description: 更新 deviceConfigurationUserStateSummary 对象的属性。
-ms.openlocfilehash: fd22d51f9d52f97c080cace5c6cf434ccaff2416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301566"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>更新 deviceConfigurationUserStateSummary
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

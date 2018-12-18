@@ -1,12 +1,13 @@
 ---
 title: mobileAppAssignmentSettings 资源类型
 description: 包含用于为组分配移动应用的属性的抽象类。
-ms.openlocfilehash: 1a08de28100dfa78d7161a2c178596e0a7e5dcc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34f742ca6e08ee39bcb179187e387906414444a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301622"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>mobileAppAssignmentSettings 资源类型
 

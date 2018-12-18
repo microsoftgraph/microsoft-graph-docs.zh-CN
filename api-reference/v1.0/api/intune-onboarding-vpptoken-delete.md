@@ -1,12 +1,13 @@
 ---
 title: 删除 vppToken
 description: 删除 vppToken。
-ms.openlocfilehash: e1c6471752bcf4414942de954848a6424d6a01ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34d079883344f0725b87d4c1b46c92a37000fb40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302854"
 ---
 # <a name="delete-vpptoken"></a>删除 vppToken
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

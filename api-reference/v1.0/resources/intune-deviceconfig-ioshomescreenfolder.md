@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenFolder 资源类型
 description: 包含主屏幕上的应用页面的文件夹
-ms.openlocfilehash: 1b3d4c75ec177eb4c277c7f5bc7f76ccf550d30b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 251f854a0038c905175b863e2c19dd638c49b452
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302798"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>iosHomeScreenFolder 资源类型
 

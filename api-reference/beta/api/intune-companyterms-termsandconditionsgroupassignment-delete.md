@@ -1,12 +1,13 @@
 ---
 title: 删除 termsAndConditionsGroupAssignment
 description: 删除 termsAndConditionsGroupAssignment。
-ms.openlocfilehash: 225d411b9b0781c69122b34341e68264b32645ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdbc54434741bab2fee78f35b62a0ddce8d6ad74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304359"
 ---
 # <a name="delete-termsandconditionsgroupassignment"></a>删除 termsAndConditionsGroupAssignment
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

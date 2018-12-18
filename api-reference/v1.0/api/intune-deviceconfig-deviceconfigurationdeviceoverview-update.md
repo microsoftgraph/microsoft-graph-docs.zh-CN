@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceConfigurationDeviceOverview
 description: 更新 deviceConfigurationDeviceOverview 对象的属性。
-ms.openlocfilehash: 7eecc3e7871ae1ec8891c5f3f8c7dfde9d517c00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5b47dfc9b3a716abcea1d77d093e2cce1d927efe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009693"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301139"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>更新 deviceConfigurationDeviceOverview
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

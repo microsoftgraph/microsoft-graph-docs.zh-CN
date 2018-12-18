@@ -1,12 +1,13 @@
 ---
 title: 更新 androidGeneralDeviceConfiguration
 description: 更新 androidGeneralDeviceConfiguration 对象的属性。
-ms.openlocfilehash: e8ec4865cb5c031f698b5e1660b546a3fcf09bdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bce3fa318ed7ff0e818c19a6907a34c26b804b35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302441"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>更新 androidGeneralDeviceConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
