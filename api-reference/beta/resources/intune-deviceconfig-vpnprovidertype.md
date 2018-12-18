@@ -1,12 +1,13 @@
 ---
 title: vpnProviderType 枚举类型
 description: 每个应用程序 VPN 的提供程序类型。
-ms.openlocfilehash: 133b1663ce3c72ba520dd5c1eeadf963154e9cc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8f002582879302bcbe0fb965110eaa5e674a689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351595"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 枚举类型
 

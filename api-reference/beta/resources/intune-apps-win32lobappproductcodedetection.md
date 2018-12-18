@@ -1,12 +1,13 @@
 ---
 title: win32LobAppProductCodeDetection 资源类型
 description: 包含产品代码和版本属性，以检测 Win32 应用程序
-ms.openlocfilehash: fcb9d5927ce1518a7bba2086a8578867d4fdf01a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049261"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353982"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection 资源类型
 

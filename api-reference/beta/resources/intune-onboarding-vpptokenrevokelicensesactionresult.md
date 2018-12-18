@@ -1,12 +1,13 @@
 ---
 title: vppTokenRevokeLicensesActionResult 资源类型
 description: 在 Apple 卷购买计划令牌上执行吊销许可证操作的状态。
-ms.openlocfilehash: 89baf69ba89ac11c52b8e05b35f38aca422cc1b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4188a269f9273b955fd29b32348dec82023b181
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044848"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351455"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 

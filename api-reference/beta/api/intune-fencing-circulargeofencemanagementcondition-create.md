@@ -1,12 +1,13 @@
 ---
 title: 创建 circularGeofenceManagementCondition
 description: 创建新的 circularGeofenceManagementCondition 对象。
-ms.openlocfilehash: 1d25e2e8f712683462e7751b4ca874403b750da2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe99dd39aeeee3f9db3e15bdb61c0f3df1c937ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048427"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352113"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>创建 circularGeofenceManagementCondition
 
@@ -38,7 +39,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceManagementExchangeConnector
 description: 删除 deviceManagementExchangeConnector。
-ms.openlocfilehash: 4b1ab255440eeddf534fb7237dbe5588873723b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04bd6dc1122cb8fcc81b28f334434b60d1672d65
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351721"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>删除 deviceManagementExchangeConnector
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

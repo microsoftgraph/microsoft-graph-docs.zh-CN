@@ -1,12 +1,13 @@
 ---
 title: 发送邮件
 description: 发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。
-ms.openlocfilehash: 8103a1f0b4004e602c23d114e199b60fa96c15e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: bceafc0a5142a85acfca59872a9ee897ac839f19
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351763"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -43,10 +44,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |Message|[邮件](../resources/message.md)|要发送的邮件。必需。|
-|SaveToSentItems|布尔|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
+|SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
 如果您想要使用**提及**指出在新邮件中的另一个用户：
 

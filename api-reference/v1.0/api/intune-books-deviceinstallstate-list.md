@@ -1,12 +1,13 @@
 ---
 title: 列出 deviceInstallStates
 description: 列出 deviceInstallState 对象的属性和关系。
-ms.openlocfilehash: 609686153c42f04b56fd2226b56d7edad7b6cb79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94c4039e2605ab6139623cfac50343aac5b0b925
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350783"
 ---
 # <a name="list-deviceinstallstates"></a>列出 deviceInstallStates
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

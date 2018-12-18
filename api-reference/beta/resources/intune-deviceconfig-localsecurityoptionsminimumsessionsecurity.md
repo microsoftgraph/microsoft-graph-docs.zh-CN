@@ -1,12 +1,13 @@
 ---
 title: localSecurityOptionsMinimumSessionSecurity 枚举类型
 description: LocalSecurityOptionsMinimumSessionSecurity 的可能值
-ms.openlocfilehash: 969c7d6576c613f5214bfc3b8a5a1ad36722f0df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5feabd9c84ec42f55bb45b952be5af834fd84498
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047330"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350629"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 枚举类型
 

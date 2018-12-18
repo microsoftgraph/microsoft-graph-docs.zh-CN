@@ -1,12 +1,13 @@
 ---
 title: safeSearchFilterType 枚举类型
 description: 指定需要何种级别的安全搜索 （筛选成人内容）
-ms.openlocfilehash: 71a59574fd98e2571a33e58415acb612f32326a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7bec68919b6af5d773c34caadaf0c1d85b0f5224
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042728"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351413"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 枚举类型
 

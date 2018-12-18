@@ -1,12 +1,13 @@
 ---
 title: 更新 androidForWorkSettings
 description: 更新 androidForWorkSettings 对象的属性。
-ms.openlocfilehash: 58d47117dd574dd6adf96f0ebeb46768c8c7368b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5514de226d138291743c5b017a50682e91e1e9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049357"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352540"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/androidForWorkSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +57,7 @@ PATCH /deviceManagement/androidForWorkSettings
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以注册工作设备管理中 Android 设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String 集合|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
+|deviceOwnerManagementEnabled|Boolean|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
 
 
 

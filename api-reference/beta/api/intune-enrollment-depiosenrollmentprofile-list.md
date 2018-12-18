@@ -1,12 +1,13 @@
 ---
 title: 列表 depIOSEnrollmentProfiles
 description: 列出属性和 depIOSEnrollmentProfile 对象之间的关系。
-ms.openlocfilehash: f3cf1c7107351315cfc1ee8586ad23f4f53dfc91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d853d119909429d85943494967f5b8a201ac680c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350447"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列表 depIOSEnrollmentProfiles
 
@@ -37,7 +38,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

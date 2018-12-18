@@ -1,12 +1,13 @@
 ---
 title: 列表 importedWindowsAutopilotDeviceIdentities
 description: 列表属性和importedWindowsAutopilotDeviceIdentity对象关系。
-ms.openlocfilehash: 74387db4dbfb4055a558f1213a2670e7ed3449a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38d825b5e906d7d0512cded444aefcc2ba3b0f2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007795"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350846"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
 
@@ -36,7 +37,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

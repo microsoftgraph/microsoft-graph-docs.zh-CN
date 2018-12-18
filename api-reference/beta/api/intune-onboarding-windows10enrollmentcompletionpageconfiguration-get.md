@@ -1,12 +1,13 @@
 ---
 title: 获取 windows10EnrollmentCompletionPageConfiguration
 description: 读取属性和 windows10EnrollmentCompletionPageConfiguration 对象的关系。
-ms.openlocfilehash: aaaad95bcad4485f1528a0a1bf0afa99a5161e48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a24f5ae9ff86e6aa7e827d5bd6c63f4d667f03ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047142"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351740"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>获取 windows10EnrollmentCompletionPageConfiguration
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

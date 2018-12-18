@@ -1,12 +1,13 @@
 ---
 title: 'Range: delete'
 description: 删除与范围相关的单元格。
-ms.openlocfilehash: eb0de43411145442b7ffb4b6b6ccf7af9b333520
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 00b6d8a35012a3e6d1e6c0755a077d0575baa00e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352701"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -31,7 +32,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -39,7 +40,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |Shift|string|指定移动单元格的方式。可能的值是：`Up`、`Left`。|
 

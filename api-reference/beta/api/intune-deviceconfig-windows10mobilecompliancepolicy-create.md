@@ -1,12 +1,13 @@
 ---
 title: 创建 windows10MobileCompliancePolicy
 description: 创建新的 windows10MobileCompliancePolicy 对象。
-ms.openlocfilehash: 692c8d5188e59223648d3bacbf01286502c70e82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83212832e52014635d6ea577ade775f823a76e59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352890"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>创建 windows10MobileCompliancePolicy
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -45,7 +46,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示了创建 windows10MobileCompliancePolicy 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -70,7 +71,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|布尔值|要求在 Windows 设备上的活动防火墙。|
+|activeFirewallRequired|Boolean|要求在 Windows 设备上的活动防火墙。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|有效的操作系统构建 Windows 设备上的区域。 该集合最多可包含 10000 个元素。|
 
 

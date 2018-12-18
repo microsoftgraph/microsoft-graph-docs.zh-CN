@@ -1,12 +1,13 @@
 ---
 title: 列表 officeSuiteApps
 description: 列出属性和 officeSuiteApp 对象之间的关系。
-ms.openlocfilehash: 51cf3388150411ca6e414da2f68a9951ed5360f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b6366da8bf36954fedaa9670f0de71ed723c06c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047372"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350664"
 ---
 # <a name="list-officesuiteapps"></a>列表 officeSuiteApps
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

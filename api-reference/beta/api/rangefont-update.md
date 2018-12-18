@@ -1,12 +1,13 @@
 ---
 title: 更新 rangefont
 description: 更新 rangefont 对象的属性。
-ms.openlocfilehash: 199fb62bdc50ab3826cdbd02914412e461022287
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 29cda6e2902f20c040ecc307755eed8fc58d25a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350048"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 
@@ -30,7 +31,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

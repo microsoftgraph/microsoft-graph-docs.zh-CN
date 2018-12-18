@@ -1,12 +1,13 @@
 ---
 title: extendQualityUpdatesPause 操作
 description: 扩展的业务拨打 Windows Update 质量更新暂停。
-ms.openlocfilehash: ef54ebf7960de709a65cda169050adb378be7d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea6f36922b438e5f643e073c4d5d2697a6f77efc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355606"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause 操作
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: dailySchedule 资源类型
 description: 运行的每日计划的定期设备管理脚本。
-ms.openlocfilehash: 5d517b0bcd15f041b934a0ca936075bc6d3d3741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 86a3dda75c0aecef6ba0672bc114092bd301a582
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351126"
 ---
 # <a name="dailyschedule-resource-type"></a>dailySchedule 资源类型
 

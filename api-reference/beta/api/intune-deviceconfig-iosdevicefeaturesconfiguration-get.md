@@ -1,12 +1,13 @@
 ---
 title: 获取 iosDeviceFeaturesConfiguration
 description: 读取 iosDeviceFeaturesConfiguration 对象的属性和关系。
-ms.openlocfilehash: 3dea039228524b946003ab688670b1e39582907e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ebec8b5bb1462d035d5c3d4da6580779d235124
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352694"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

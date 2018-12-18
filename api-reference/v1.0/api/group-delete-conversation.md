@@ -1,12 +1,13 @@
 ---
 title: 删除对话
 description: 删除 conversation 对象。
-ms.openlocfilehash: df770b3782b727542571f308c32d9c654c53f169
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 75a6fcad13822665eb1722383084591893c64cbe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352568"
 ---
 # <a name="delete-conversation"></a>删除对话
 删除 [conversation](../resources/conversation.md) 对象。
@@ -27,7 +28,7 @@ DELETE /groups/{id}/conversations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

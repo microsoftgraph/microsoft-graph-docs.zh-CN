@@ -1,12 +1,13 @@
 ---
 title: 更新表
 description: 更新 table 对象的属性。
-ms.openlocfilehash: a929329ed9a88b7dda6206193292f1ca1e63ced1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 020d0fcf4f162fbb800d54fbf703fb3af59e8385
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350202"
 ---
 # <a name="update-table"></a>更新表
 
@@ -29,7 +30,7 @@ PATCH /workbook/tables/{id|name}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: 参与者： configureMixer
 description: 配置如何将音频混合的多方对话中的不同参与者。
-ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351987"
 ---
 # <a name="participant-configuremixer"></a>参与者： configureMixer
 
@@ -21,7 +22,7 @@ ms.locfileid: "27155997"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +32,14 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | Type    |说明|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)集合| 混音器配置为级别给定音频参与者。|
 |clientContext|字符串|客户端上下文。|

@@ -1,12 +1,13 @@
 ---
 title: 更新 localizedNotificationMessage
 description: 更新 localizedNotificationMessage 对象的属性。
-ms.openlocfilehash: d61f97d44e4c5b2e6f5b17e1538620f774200a18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 915a053501f40633be8662fb7196a84ff9db4b1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351791"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

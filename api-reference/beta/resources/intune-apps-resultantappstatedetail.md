@@ -1,12 +1,13 @@
 ---
 title: resultantAppStateDetail 枚举类型
 description: 枚举指示其他详细信息有关为什么应用程序具有特定安装状态。
-ms.openlocfilehash: 6557047249483273abff93bbbd352cba72256755
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352526"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 

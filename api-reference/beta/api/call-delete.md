@@ -1,12 +1,13 @@
 ---
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
-ms.openlocfilehash: ed0fb6928806511f92771237acb8ba08c8a162de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 07183b4837e6107f347947b901d4efea76b7da98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350965"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -32,7 +33,7 @@ DELETE /applications/{id}/calls/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

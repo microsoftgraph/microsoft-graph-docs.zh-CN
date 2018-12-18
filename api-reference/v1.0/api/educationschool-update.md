@@ -1,12 +1,13 @@
 ---
 title: 更新 educationschool 属性
 description: 更新 school 对象的属性。
-ms.openlocfilehash: aa413360305b32f3e2c5288192929ae48279bd60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9cb16fa6f3aa20f21af2532b8bea17c09dd0be57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351091"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
 

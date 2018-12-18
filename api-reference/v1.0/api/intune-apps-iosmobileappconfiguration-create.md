@@ -1,12 +1,13 @@
 ---
 title: 创建 iosMobileAppConfiguration
 description: 创建新的 iosMobileAppConfiguration 对象。
-ms.openlocfilehash: 24bd4b7a606ce95a146d0ce5273ba268766bb6c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2437b71851a6476bb8607c46c4158dd6cb8337d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355557"
 ---
 # <a name="create-iosmobileappconfiguration"></a>创建 iosMobileAppConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

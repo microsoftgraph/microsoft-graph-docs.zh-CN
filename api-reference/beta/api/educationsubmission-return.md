@@ -1,12 +1,13 @@
 ---
 title: educationSubmission： 返回
-description: " 指示提供反馈或分级完成。 此操作仅可通过教师。"
-ms.openlocfilehash: de81f5429119556753462781f701fb7c936826b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 此操作会使薪等级和学生向此提交操作相关联的反馈。
+author: dipakboyed
+ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350874"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission： 返回
 

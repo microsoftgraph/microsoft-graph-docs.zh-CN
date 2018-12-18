@@ -1,12 +1,13 @@
 ---
 title: 'Table: delete'
 description: 删除表。
-ms.openlocfilehash: ec733b9bdf49ea8dd0bd6600e80ce83c0bfe1464
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e7b9b54ad5e47893c73ff6820eab3919eb67582b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351175"
 ---
 # <a name="table-delete"></a>Table: delete
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/delete
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

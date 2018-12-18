@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfiguration 资源类型
 description: 已注册设备移动应用配置的抽象类
-ms.openlocfilehash: c829e720e8d998428e778e5b7bf20e5fe465dfd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352036"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 

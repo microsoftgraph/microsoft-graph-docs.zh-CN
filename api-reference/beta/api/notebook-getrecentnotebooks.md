@@ -1,12 +1,13 @@
 ---
 title: 笔记本：getRecentNotebooks
 description: 获取登录用户访问的 recentNotebook 实例列表。
-ms.openlocfilehash: dd273197ecfc417bd385ff6d769f96efd3972362
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 43141d7734a3427a3325a852d8185ebbee5d752c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044260"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350496"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 
@@ -35,12 +36,12 @@ GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(include
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|添加用户拥有的笔记本。 若要添加用户拥有的笔记本，请设置为 `true`；否则，设置为 `false`。 如果不添加 `includePersonalNotebooks` 参数，请求会返回 `400` 错误响应。|
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 

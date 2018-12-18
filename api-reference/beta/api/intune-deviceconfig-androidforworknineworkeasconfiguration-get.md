@@ -1,12 +1,13 @@
 ---
 title: 获取 androidForWorkNineWorkEasConfiguration
 description: 读取属性和 androidForWorkNineWorkEasConfiguration 对象的关系。
-ms.openlocfilehash: 2420451b63d1fef2383e12b0eb2bb092e93915b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d03fd33d686e40537403c6c1f88c69f14137d15b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354836"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>获取 androidForWorkNineWorkEasConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

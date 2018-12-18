@@ -1,12 +1,13 @@
 ---
 title: 获取 embeddedSIMDeviceState
 description: 读取属性和 embeddedSIMDeviceState 对象的关系。
-ms.openlocfilehash: fef28c065e7c5ab4350145e736d05ac546a2908f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352008"
 ---
 # <a name="get-embeddedsimdevicestate"></a>获取 embeddedSIMDeviceState
 
@@ -39,7 +40,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

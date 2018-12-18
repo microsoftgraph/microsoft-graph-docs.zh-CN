@@ -1,12 +1,13 @@
 ---
 title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
-ms.openlocfilehash: 6ead17a53220a4c2244a50fa1ddb833e50424364
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 875e71e03cf3d43e3f7fadabfea65cecd1e3761c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043704"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352547"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -32,7 +33,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>函数参数
 在请求 URL 中，提供以下包含值的函数参数。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |startDateTime|字符串|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|字符串|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|

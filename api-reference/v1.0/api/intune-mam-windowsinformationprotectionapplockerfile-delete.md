@@ -1,12 +1,13 @@
 ---
 title: 删除 windowsInformationProtectionAppLockerFile
 description: 删除 windowsInformationProtectionAppLockerFile。
-ms.openlocfilehash: a408e023314f39d208c5a9be82038d8b79202ae3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 25d59439e0a6af9ecc428a372d56b83d7162d72f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010709"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351623"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>删除 windowsInformationProtectionAppLockerFile
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

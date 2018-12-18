@@ -1,12 +1,13 @@
 ---
 title: editionUpgradeLicenseType 枚举类型
 description: Edition 升级许可证类型
-ms.openlocfilehash: 075c31e1f0b7f42d3c4ae1f4cbe0aff86602a415
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: caa00a8ab144e6524eb327fa6b7fab3134a9915f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352456"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 

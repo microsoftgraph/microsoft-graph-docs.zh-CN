@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAssignment 资源类型
 description: C） 到给定的组策略。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
-ms.openlocfilehash: ab98b7cdbb56a3d92ce5596063d0af03825c9109
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7b0e9deb391b9431be1ed4f282cb6e5a63ced6e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351049"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment 资源类型
 

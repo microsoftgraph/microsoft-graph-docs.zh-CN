@@ -1,12 +1,13 @@
 ---
 title: 删除 androidWorkProfileGeneralDeviceConfiguration
 description: 删除 androidWorkProfileGeneralDeviceConfiguration。
-ms.openlocfilehash: d51e44a870ca1dac9031e8fb49a06a2540e94648
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d9fc28fd367afed7e647af43ecee09cd37a85ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350342"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>删除 androidWorkProfileGeneralDeviceConfiguration
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

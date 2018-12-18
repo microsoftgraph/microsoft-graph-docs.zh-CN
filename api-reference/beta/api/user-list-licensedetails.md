@@ -1,12 +1,13 @@
 ---
 title: 列出 licenseDetails
 description: 检索 licenseDetails 对象列表。
-ms.openlocfilehash: aefcc158721a83b53bdb4557c6dc7a1b47bc6bfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 9c8c7d9ddcc951df7a2ac8c8151ae368c7e76483
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048029"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351364"
 ---
 # <a name="list-licensedetails"></a>列出 licenseDetails
 
@@ -33,7 +34,7 @@ GET /users/{id}/licenseDetails
 该方法**不**支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | 持有者&lt;代码&gt;|
 

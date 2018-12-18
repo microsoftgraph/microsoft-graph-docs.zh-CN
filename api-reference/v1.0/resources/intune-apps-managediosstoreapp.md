@@ -1,12 +1,13 @@
 ---
 title: managedIOSStoreApp 资源类型
 description: 包含可以使用 Intune 应用保护策略管理的 iOS 应用商店应用的属性和继承的属性。
-ms.openlocfilehash: b5b6550535857961599ab6f01cb77d2d95af07b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 607db968bbdd693a98c58f0b5dd2844833efebcf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351448"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp 资源类型
 

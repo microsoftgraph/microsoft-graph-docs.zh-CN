@@ -1,12 +1,13 @@
 ---
 title: 获取 iosImportedPFXCertificateProfile
 description: 读取属性和 iosImportedPFXCertificateProfile 对象的关系。
-ms.openlocfilehash: d9be44dd4ff9099212fc0c9729272cb7e034bdd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d12dfdad92a672d4515ae6190d6ce5de73845b3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350862"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>获取 iosImportedPFXCertificateProfile
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

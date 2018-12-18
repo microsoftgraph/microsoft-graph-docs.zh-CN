@@ -1,12 +1,13 @@
 ---
 title: 列出 childFolder
 description: '在指定的文件夹下获取文件夹集合。 您可以使用`.../me/MailFolders`快捷方式来获取顶级 '
-ms.openlocfilehash: 826ce59f0f808ee94107a41e76207e83632361ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: b852e245ee0b553d83e144eb42a719060837ef68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046215"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351665"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
