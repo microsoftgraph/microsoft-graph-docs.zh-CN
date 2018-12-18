@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetProtection: unprotect'
 description: 解除工作表保护
-ms.openlocfilehash: fdb5d74a9f47c6cc3a56527058db02c9c30a1ed2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b64c85d6d8f7c37b71c2082f1730045eeb6a055a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319990"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -27,7 +28,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | Type   |说明|
 |:---------------|:--------|:----------|
 |password|string|可选。工作表保护密码。|
 

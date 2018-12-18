@@ -1,12 +1,13 @@
 ---
 title: 获取共享文件夹中的 Outlook 联系人
 description: " 另外，还有 "
-ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315174"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>获取共享文件夹中的 Outlook 联系人
 

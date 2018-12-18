@@ -1,12 +1,13 @@
 ---
 title: 列表目录设置
 description: 检索目录设置对象的列表。
-ms.openlocfilehash: 844d2102b9bfd98e2ba0a585a7eb04c8e46b6a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 2d3c7d24009fb0068376629aa50197678774f683
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319038"
 ---
 # <a name="list-directory-settings"></a>列表目录设置
 
@@ -35,7 +36,7 @@ GET /group/{id}/settings
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
 

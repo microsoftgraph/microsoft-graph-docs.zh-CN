@@ -1,12 +1,13 @@
 ---
 title: 'Worksheet: delete'
 description: 从工作簿中删除工作表。
-ms.openlocfilehash: 369364074f5763502db236a31608c17ae86d84dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 37a87ecbefbb88afb30a6cb773e03775c4de36b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318982"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/delete
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

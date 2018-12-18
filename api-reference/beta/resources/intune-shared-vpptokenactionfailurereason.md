@@ -1,12 +1,13 @@
 ---
 title: vppTokenActionFailureReason 枚举类型
 description: 可能的 Apple 卷购买计划令牌操作失败的原因的类型。
-ms.openlocfilehash: 0fece0417a5585540f15e3f8a8631fd30eaa414e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f36b92238b097f50990bbdb2f3c3584b2ff48901
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320960"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 枚举类型
 

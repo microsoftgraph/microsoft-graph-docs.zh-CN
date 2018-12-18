@@ -1,12 +1,13 @@
 ---
 title: 创建 windows10EnrollmentCompletionPageConfiguration
 description: 创建新的 windows10EnrollmentCompletionPageConfiguration 对象。
-ms.openlocfilehash: db276cefec8a764b2ad2ddcade93bae7a518f264
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f9e9fa454f7a48c31b8568bba8d7e63a80e99f81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321523"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +55,13 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|布尔|显示或隐藏用户安装进度|
-|blockDeviceSetupRetryByUser|布尔|允许用户重试上安装失败的设置|
-|allowDeviceResetOnInstallFailure|布尔|允许或阻止安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔|允许或阻止上安装失败日志集合|
+|showInstallationProgress|Boolean|显示或隐藏用户安装进度|
+|blockDeviceSetupRetryByUser|Boolean|允许用户重试上安装失败的设置|
+|allowDeviceResetOnInstallFailure|Boolean|允许或阻止安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|Boolean|允许或阻止上安装失败日志集合|
 |customErrorMessage|字符串|设置要在安装失败时显示自定义错误消息|
 |installProgressTimeoutInMinutes|Int32|以分钟为单位的设置安装进度超时|
-|allowDeviceUseOnInstallFailure|布尔|允许用户继续使用设备上安装失败|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户继续使用设备上安装失败|
 |selectedMobileAppIds|String 集合|所选应用程序来跟踪的安装状态|
 
 

@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceCategory
 description: 删除 deviceCategory。
-ms.openlocfilehash: 0e63a6593f49ce0930ee2e46262a98cda5f74834
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea8f8860f79cc0c14e985c64a1457b114d30b6b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048363"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321292"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

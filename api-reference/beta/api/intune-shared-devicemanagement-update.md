@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceManagement
 description: 更新 deviceManagement 对象的属性。
-ms.openlocfilehash: 7f73d3fc944dcbc36709cd7f1b46e61bca271152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044048"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323763"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -58,7 +59,7 @@ PATCH /deviceManagement
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -72,7 +73,7 @@ PATCH /deviceManagement
 |id|字符串|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|Intune 帐户 ID 给定租户|
-|legacyPcManangementEnabled|布尔值|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户的 DEP 令牌的最大数量。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|

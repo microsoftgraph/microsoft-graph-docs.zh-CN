@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsInformationProtectionAppLockerFile
 description: 读取 windowsInformationProtectionAppLockerFile 对象的属性和关系。
-ms.openlocfilehash: f5e035ec59819d29ef99a96993cf59816fcf0e5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4c23d4aacfdba6bc6dd2482c583bc160462f646
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010526"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323546"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>获取 windowsInformationProtectionAppLockerFile
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

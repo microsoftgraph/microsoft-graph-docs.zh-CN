@@ -1,12 +1,13 @@
 ---
 title: 删除 iosManagedAppProtection
 description: 删除 iosManagedAppProtection。
-ms.openlocfilehash: e9462c5be6cf1a7ad8e0ff9a2b8cccfd234c42a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0de0f993da11f9c06f3853a615928906989a63c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320823"
 ---
 # <a name="delete-iosmanagedappprotection"></a>删除 iosManagedAppProtection
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

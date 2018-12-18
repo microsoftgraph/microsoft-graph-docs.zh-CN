@@ -1,12 +1,13 @@
 ---
 title: 更新 OneNote 页内容
 description: " Office 365 中的企业笔记本"
-ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 0472e6ad96061c1d1ba2932819bca784c50a4741
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324540"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页内容
 

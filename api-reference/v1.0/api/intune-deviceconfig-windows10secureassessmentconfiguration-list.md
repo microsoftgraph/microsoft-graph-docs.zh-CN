@@ -1,12 +1,13 @@
 ---
 title: 列出 windows10SecureAssessmentConfigurations
 description: 列出 windows10SecureAssessmentConfiguration 对象的属性和关系。
-ms.openlocfilehash: d9bd3e3491fc5f46c0b8a98c909cd0d6343e801b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 520434de48da37d30d0945c429dfb7767096420c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320851"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>列出 windows10SecureAssessmentConfigurations
 
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

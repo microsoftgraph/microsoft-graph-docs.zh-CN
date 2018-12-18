@@ -1,12 +1,13 @@
 ---
 title: 更新 eventMessage
 description: 更新 eventMessage 对象的属性。
-ms.openlocfilehash: 2bad679d4e460705c1716bd682c9e1afb0acc22b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008598"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320421"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -30,7 +31,7 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -41,9 +42,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
 |重要性|String|邮件的重要性。 可能的值为： `Low`， `Normal`， `High`。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 
 ## <a name="response"></a>响应
 

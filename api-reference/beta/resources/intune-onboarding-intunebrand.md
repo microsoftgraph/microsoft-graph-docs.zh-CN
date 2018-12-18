@@ -1,12 +1,13 @@
 ---
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
-ms.openlocfilehash: b8ed558e2be032110470cc4e2c64d27d8011af1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f59920d927e96f2c74e44670134e74a0db27dd7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323539"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 

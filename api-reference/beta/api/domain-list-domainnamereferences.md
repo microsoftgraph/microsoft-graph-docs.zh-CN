@@ -1,12 +1,13 @@
 ---
 title: 列出 domainNameReferences
 description: 通过对域的引用检索 directoryObject 列表。返回列表将包含依赖域的所有目录对象。
-ms.openlocfilehash: 145fbf3221467d4802a93f4f5112b49eaa99b339
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d100855bf55c31d1c51308c0fd2330461b44981e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322587"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -39,7 +40,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 创建包含 Microsoft Teams 团队的组
 description: '若要创建包含团队的组，请按以下两步操作： '
-ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313886"
 ---
 # <a name="creating-a-group-with-a-microsoft-teams-team"></a>创建包含 Microsoft Teams 团队的组
 

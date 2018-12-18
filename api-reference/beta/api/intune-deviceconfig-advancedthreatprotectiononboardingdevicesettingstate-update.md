@@ -1,12 +1,13 @@
 ---
 title: 更新 advancedThreatProtectionOnboardingDeviceSettingState
 description: 更新 advancedThreatProtectionOnboardingDeviceSettingState 对象的属性。
-ms.openlocfilehash: 1659887463f7057b672f9fc7833dcb4e66ae968d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0194eca0c9d36c7d0e4e24cca6eb276beb7d49e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048079"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321691"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>更新 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

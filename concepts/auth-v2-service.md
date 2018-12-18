@@ -1,12 +1,13 @@
 ---
 title: 无用户访问
 description: '一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。在许多情况下，这些是在的服务器上运行的后台服务或守护程序，不存在登录用户。此类应用的一个示例是电子邮件存档服务，它可以在夜间保持清醒状态并运行。在某些情况下，具有登录用户的应用可能还需要以他们自己的标识调用 Microsoft Graph。例如，应用可能需要使用以下特定功能，该功能要求在组织中具有比登录用户的提升权限更多的权限。  '
-ms.openlocfilehash: 62bea47d8d4926a4d618ebc0c434b6fe2baad376
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: jackson-woods
+ms.openlocfilehash: 7798afd402e0ebc6fb70f8f0cc056b484f559dc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320872"
 ---
 # <a name="get-access-without-a-user"></a>无用户访问
 

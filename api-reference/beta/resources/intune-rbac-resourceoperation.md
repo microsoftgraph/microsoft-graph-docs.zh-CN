@@ -1,12 +1,13 @@
 ---
 title: resourceOperation 资源类型
 description: " 操作用于 MobileApp 资源分配给 AAD 安全组。  无法修改内置角色的资源操作。"
-ms.openlocfilehash: 2aed25c7558d674abb39fdb4147b722afe69c0f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042560"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323294"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27042560"
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔值|确定是否定义每个角色分配的作用域验证权限。|
+|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
 
 ## <a name="relationships"></a>Relationships
 无

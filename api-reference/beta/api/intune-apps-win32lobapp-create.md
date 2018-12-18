@@ -1,12 +1,13 @@
 ---
 title: 创建 win32LobApp
 description: 创建新的 win32LobApp 对象。
-ms.openlocfilehash: 571d3cb48547356d8a1290979b6d2d72e9e72ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7eb282ad8c12172e0af960ac71c3a1a5a4ba8fd9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318877"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

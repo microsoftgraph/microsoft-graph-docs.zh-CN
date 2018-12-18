@@ -1,12 +1,13 @@
 ---
 title: 列出 memberOf
 description: '获取直接成员组构成的组集合。 '
-ms.openlocfilehash: 9733fd1bc2def3642913887a228275744e17b61c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323581"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 获取直接成员组构成的组集合。 
@@ -32,7 +33,7 @@ GET /groups/{id}/memberOf
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

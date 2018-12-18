@@ -1,12 +1,13 @@
 ---
 title: 更新 managedMobileApp
 description: 更新 managedMobileApp 对象的属性。
-ms.openlocfilehash: af27f6aef199e896c251259cad7c22ae39566ffc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7dc10fa3d7272c2042712d385425504885020f1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007780"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321096"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

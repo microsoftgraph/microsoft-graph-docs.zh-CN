@@ -1,12 +1,13 @@
 ---
 title: 更新 symantecCodeSigningCertificate
 description: 更新 symantecCodeSigningCertificate 对象的属性。
-ms.openlocfilehash: a6122997a4bc0c76521612b5b17a9c42cd944664
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318058"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,8 +49,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|二进制数|中的原始数据格式的 Windows Symantec 代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|中的原始数据格式的 Windows Symantec 代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
 |password|字符串|.Pfx 文件所需的密码。|
 |SubjectName|String|证书使用者名称。|
 |subject|字符串|证书使用者值。|

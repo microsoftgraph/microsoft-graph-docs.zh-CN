@@ -1,12 +1,13 @@
 ---
 title: windowsDefenderScanActionResult 资源类型
 description: Windows Defender 最后扫描结果
-ms.openlocfilehash: 9adfa41f21bb23f5073f0d62c1c49bc1cfea3912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa988a971925cf61db0ab9f7e962162565e8a4b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047684"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323035"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 

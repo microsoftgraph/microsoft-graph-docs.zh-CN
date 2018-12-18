@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceManagementScript
 description: 更新 deviceManagementScript 对象的属性。
-ms.openlocfilehash: d88579f130607b08b0d34620b701be5c239bc03f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044612"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325310"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +52,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |displayName|字符串|设备管理脚本的名称。|
 |说明|字符串|设备管理脚本的可选说明。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Script to run 时间间隔。 如果未定义脚本将运行一次|
-|scriptContent|二进制数|脚本内容。|
+|scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|日期和设备管理脚本上次修改的时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文中运行的设备管理脚本的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要签脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要签脚本签名。|
 |fileName|String|脚本文件的名称。|
 
 

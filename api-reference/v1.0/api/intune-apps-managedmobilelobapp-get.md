@@ -1,12 +1,13 @@
 ---
 title: 获取 managedMobileLobApp
 description: 读取 managedMobileLobApp 对象的属性和关系。
-ms.openlocfilehash: 5a177ad9761f569a604a5a0122a3a4bb8ad828d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b15f4337c8ff5669d50ada9335f1fde7b111f205
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325464"
 ---
 # <a name="get-managedmobilelobapp"></a>获取 managedMobileLobApp
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

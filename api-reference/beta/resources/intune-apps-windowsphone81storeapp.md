@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81StoreApp 资源类型
 description: 包含属性和继承的 Windows Phone 8.1 应用商店应用程序的属性。
-ms.openlocfilehash: c48edd3ebc7948161fe604fa659f294c1d82b8b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ce242fd2337a9db602d361f8fceb05c126478fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321215"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>windowsPhone81StoreApp 资源类型
 

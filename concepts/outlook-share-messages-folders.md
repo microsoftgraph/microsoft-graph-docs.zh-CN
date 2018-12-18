@@ -1,12 +1,13 @@
 ---
 title: 获取共享文件夹或委托文件夹中的 Outlook 邮件
 description: 这些主题还有类似的部分：列出事件、获取事件、获取日历、列出联系人、获取联系人、获取联系人文件夹。
-ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320109"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取共享文件夹或委托文件夹中的 Outlook 邮件
 

@@ -1,12 +1,13 @@
 ---
 title: 列出 Outlook 类别
 description: 获取为用户定义的所有类别。
-ms.openlocfilehash: 7eff66ea876c88e6a75953f4bd219e817a9a2e2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a90eb368c3c6a03db6dbdf3d77518029abbfdaa9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318303"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -33,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

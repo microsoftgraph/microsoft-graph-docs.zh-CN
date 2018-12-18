@@ -1,12 +1,13 @@
 ---
 title: 向 educationSchool 添加 educationUser
 description: 向学校添加用户。
-ms.openlocfilehash: 950dd0519c97277b61251229f56abfb18328c14e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d7cabee054eddb6ac83bfdee5b0dea1ea25f9f36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011154"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323077"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>向 educationSchool 添加 educationUser
 

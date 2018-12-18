@@ -1,12 +1,13 @@
 ---
 title: vppLicensingType 资源类型
 description: 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
-ms.openlocfilehash: 4e02cc4ee100fe9fa6be0eb116cff18e343fd8ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7958266fe208e0a04bc72ab658291c58455c763b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008349"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322559"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 outlooktask
 description: 更改 Outlook 任务的可写属性。
-ms.openlocfilehash: 1e2afb7fb69b4f305ffc69d0f40960edf9b6ca2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041791"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325702"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
@@ -35,7 +36,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 响应，它可以采用 UTC 如果未指定此标头中指定的时间属性的时区。 可选。|
@@ -52,9 +53,9 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|中指定的时区任务已完成的日期。|
 |createdDateTime|DateTimeOffset|日期和时间创建任务时。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区的任务完成日期。|
-|hasAttachments|布尔|设置为 true 如果任务的附件。|
+|hasAttachments|Boolean|设置为 true 如果任务的附件。|
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isReminderOn|布尔|如果，设置为 true 设置通知提醒的用户的任务。|
+|isReminderOn|Boolean|如果，设置为 true 设置通知提醒的用户的任务。|
 |lastModifiedDateTime|DateTimeOffset|日期和上次修改任务的时间。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |owner|字符串|创建任务的人员的名称。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|

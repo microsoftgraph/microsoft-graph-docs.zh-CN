@@ -1,12 +1,13 @@
 ---
 title: 使用资源类型
-description: 表示特定用户所使用的文档洞察。 见解返回最相关的文档的用户查看或访问。 这包括文档中的文档：
-ms.openlocfilehash: 3c82d268a67ef52d0ddfdad9193558080048ad6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 表示特定用户所使用的文档洞察。 见解返回最相关的文档的用户查看或访问。
+author: simonhult
+ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323483"
 ---
 # <a name="used-resource-type"></a>使用资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27047325"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体        | 用于导航到已使用的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
+| 资源      | Entity        | 用于导航到已使用的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

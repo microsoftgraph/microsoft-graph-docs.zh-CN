@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
-ms.openlocfilehash: 467970b31709b8ab7ca48e786326b89c8ee73733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0394de24fb0dee6ba0df1434ea199b131cf05df8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322496"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 

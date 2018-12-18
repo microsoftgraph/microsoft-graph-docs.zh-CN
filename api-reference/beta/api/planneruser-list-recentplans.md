@@ -1,12 +1,13 @@
 ---
 title: 列表 recentPlans
 description: 检索 plannerPlans 用户最近查看的列表。 您可以通过更新 plannerUser 资源更新最近查看的计划。
-ms.openlocfilehash: 58c4d786dfdf596df8786db93c32e88b0cf93dfd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048166"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322504"
 ---
 # <a name="list-recentplans"></a>列表 recentPlans
 
@@ -30,9 +31,9 @@ GET /users/<id>/planner/recentPlans
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| 授权  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

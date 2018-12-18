@@ -1,12 +1,13 @@
 ---
 title: 获取用户和资源的忙/闲日程安排（预览版）
 description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
-ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317757"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>获取用户和资源的忙/闲日程安排（预览版）
 

@@ -1,12 +1,13 @@
 ---
 title: 删除 macOSImportedPFXCertificateProfile
 description: 删除 macOSImportedPFXCertificateProfile。
-ms.openlocfilehash: 01e5b094bf4e89edb0c82f427b8fa7e6f21fd29b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c15d1e2183034bdd2374062491a7c4ebc692d37c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043124"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322258"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>删除 macOSImportedPFXCertificateProfile
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

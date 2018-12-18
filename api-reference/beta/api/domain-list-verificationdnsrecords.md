@@ -1,12 +1,13 @@
 ---
 title: 列出 verificationDnsRecords
 description: 检索 domainDnsRecord 对象列表。
-ms.openlocfilehash: bcc5144c818d6914e72664c8105ec3460c6942b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4beaac56892a33a5b5dfe46e2739b933d1598c45
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041654"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323252"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -43,7 +44,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |

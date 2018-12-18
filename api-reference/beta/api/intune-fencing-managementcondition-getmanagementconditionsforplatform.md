@@ -1,12 +1,13 @@
 ---
 title: getManagementConditionsForPlatform 函数
 description: 尚未记录
-ms.openlocfilehash: fd2de51131a2b4a6b125bfe935bce5c2cfc93fad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d0d36750f568102a69309615285c7460aa31aec3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047132"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320032"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform 函数
 
@@ -38,7 +39,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 IBM QRadar SIEM 集成
 description: 可通过单个 REST 终结点管理 Microsoft Graph 安全提供程序。 可以将此终结点配置为支持多个 SIEM 产品的连接器的 Azure Monitor。 本文步骤 1 和步骤 2 中的说明指的是通过事件中心支持使用的所有 Azure Monitor 连接器。 本文介绍了 QRadar SIEM 连接器的端到端集成。
-ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 663ff74741bdb3847cc0b47b56651c28bceef8f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309259"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 IBM QRadar SIEM 集成
 

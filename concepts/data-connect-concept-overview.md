@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph 数据连接（预览）概述
 description: Microsoft Graph 包含有关工作人员及其工作区的丰富数据，包括有关人员如何工作以及他们如何沟通、协作和管理时间的信息。 Microsoft Graph 数据连接将此数据提供给 Microsoft Azure，从而使用户可以访问使用此数据的最佳开发和托管工具。 这使客户能够受益于创新或行业特定的应用程序，这些应用程序可以提高他们的工作效率，同时他们又可以完全掌控其 Microsoft Graph 数据。 Microsoft 不断引入客户期望的更加安全的控件。
-ms.openlocfilehash: cce6046c9ed9b57171e998b1cb17c4e92fa0fcb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 4f621dc40f99ec7b827ecb5cec61d6c2916b7ada
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091834"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323371"
 ---
 # <a name="overview-of-microsoft-graph-data-connect-preview"></a>Microsoft Graph 数据连接（预览）概述
 Microsoft Graph 包含有关工作人员及其工作区的丰富数据，包括有关人员如何工作以及他们如何沟通、协作和管理时间的信息。 Microsoft Graph 数据连接将此数据提供给 Microsoft Azure，从而使用户可以访问使用此数据的最佳开发和托管工具。 这使客户能够受益于创新或行业特定的应用程序，这些应用程序可以提高他们的工作效率，同时他们又可以完全掌控其 Microsoft Graph 数据。 Microsoft 不断引入客户期望的更加安全的控件。

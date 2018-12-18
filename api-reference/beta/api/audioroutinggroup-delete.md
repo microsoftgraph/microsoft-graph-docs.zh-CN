@@ -1,12 +1,13 @@
 ---
 title: 删除音频路由组
 description: 删除指定的 audioRoutingGroup。
-ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 025498e1ceb6178ede4c7ca938c7b0d3d05a80ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323938"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -21,7 +22,7 @@ ms.locfileid: "27155989"
 | :-------------- | :------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +32,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
-ms.openlocfilehash: 056d4e1b501d438feb5bbda6b7910c9998c73cdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545cb9bf0be410a5e9a0e25dbc242399c6dbc61f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320641"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 获取 educationSynchronizationErrors
 description: '获取验证期间和/或租户中的特定学校数据同步配置文件同步期间生成的错误。 '
-ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: mmast-msft
+ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209661"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322153"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 

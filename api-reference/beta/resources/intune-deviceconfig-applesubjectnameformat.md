@@ -1,12 +1,13 @@
 ---
 title: appleSubjectNameFormat 枚举类型
 description: Apple 设备的使用者名称格式选项。
-ms.openlocfilehash: fd4c024f6243d79c69a812d8dc996bc728d72673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6aa3616050e3d908fd093310de5bbed065766fc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046508"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323672"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 枚举类型
 

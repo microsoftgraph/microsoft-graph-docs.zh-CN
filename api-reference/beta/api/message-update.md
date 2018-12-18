@@ -1,12 +1,13 @@
 ---
 title: 更新邮件
 description: 更新 message 对象的属性。
-ms.openlocfilehash: 0411decc2758505f6116b0a7c619887f3d8e239e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9c717e913c641b6dffd582252538965961369a7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049422"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321474"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -31,7 +32,7 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -47,13 +48,13 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
 |inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 可更新才 isDraft = true。|
-|isRead|布尔|指示是否已阅读该邮件。|
+|isRead|Boolean|指示是否已阅读该邮件。|
 |replyTo|Recipient collection|在答复时使用的电子邮件地址。 可更新才 isDraft = true。|
 |sender|Recipient|实际用于生成邮件的帐户。 可更新才 isDraft = true，以及何时从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送消息或[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息。 在任何情况下的值必须为实际的邮箱使用对应。|
 |toRecipients|Recipient collection|邮件的收件人。 可更新才 isDraft = true。|
 |body|ItemBody|邮件的正文。 可更新才 isDraft = true。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |subject|String|邮件的主题。 可更新才 isDraft = true。|
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有**邮件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。

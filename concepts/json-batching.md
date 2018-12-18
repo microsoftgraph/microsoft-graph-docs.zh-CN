@@ -1,12 +1,13 @@
 ---
 title: 使用 JSON 批处理将多个请求合并为一个 HTTP 调用
 description: JSON 批处理使你能够通过将多个请求合并为一个单一的 JSON 对象优化应用程序。例如，客户可能希望撰写一个无关的数据视图，例如：
-ms.openlocfilehash: 875f5f8758d37e84498446876eb863f474e00f21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: d41fb252b9c5c1c1b8f6260b5b45244fc0b32b8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323224"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 embeddedSIMDeviceState
 description: 更新 embeddedSIMDeviceState 对象的属性。
-ms.openlocfilehash: 5a102bd686a65cf14bb078e1ae66df31bbe4dae5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c377199caae31bb45d65f0ad557cb27fb3916b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318520"
 ---
 # <a name="update-embeddedsimdevicestate"></a>更新 embeddedSIMDeviceState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

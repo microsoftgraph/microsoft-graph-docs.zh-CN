@@ -1,12 +1,13 @@
 ---
 title: educationSubmissionIndividualRecipient 资源类型
 description: 'EducationSubmissionRecipient 指示提交分配给单个类中的一个子类。  '
-ms.openlocfilehash: 4b74defc1a21427b6169e399262d827561178e5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 3447c91fe4f387508a3afdf80a7337786d46f860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318800"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient 资源类型
 
