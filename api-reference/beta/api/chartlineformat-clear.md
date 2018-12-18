@@ -1,28 +1,29 @@
 ---
 title: 'ChartLineFormat: clear'
 description: 清除图表元素的线条格式。
-ms.openlocfilehash: 0006df0fec41d422d46ee11263b7c22360a53162
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 123efee9740c2ef78d5dc4c1ad76c5fb28c23ba7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314033"
 ---
-# <a name="chartlineformat-clear"></a><span data-ttu-id="6301b-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="6301b-103">ChartLineFormat: clear</span></span>
+# <a name="chartlineformat-clear"></a><span data-ttu-id="b9d21-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="b9d21-103">ChartLineFormat: clear</span></span>
 
-> <span data-ttu-id="6301b-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6301b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6301b-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6301b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b9d21-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="b9d21-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b9d21-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b9d21-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6301b-106">清除图表元素的线条格式。</span><span class="sxs-lookup"><span data-stu-id="6301b-106">Clear the line format of a chart element.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6301b-107">权限</span><span class="sxs-lookup"><span data-stu-id="6301b-107">Permissions</span></span>
-<span data-ttu-id="6301b-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6301b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b9d21-106">清除图表元素的线条格式。</span><span class="sxs-lookup"><span data-stu-id="b9d21-106">Clear the line format of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9d21-107">权限</span><span class="sxs-lookup"><span data-stu-id="b9d21-107">Permissions</span></span>
+<span data-ttu-id="b9d21-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9d21-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6301b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="6301b-110">Permission type</span></span>      | <span data-ttu-id="6301b-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6301b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b9d21-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9d21-110">Permission type</span></span>      | <span data-ttu-id="b9d21-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9d21-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6301b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6301b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6301b-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6301b-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6301b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6301b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6301b-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6301b-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6301b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="6301b-116">Application</span></span> | <span data-ttu-id="6301b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="6301b-117">Not supported.</span></span> |
+|<span data-ttu-id="b9d21-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9d21-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b9d21-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9d21-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b9d21-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9d21-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9d21-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9d21-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b9d21-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9d21-116">Application</span></span> | <span data-ttu-id="b9d21-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="b9d21-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6301b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6301b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9d21-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9d21-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
@@ -30,22 +31,22 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
 POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6301b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="6301b-119">Request headers</span></span>
-| <span data-ttu-id="6301b-120">名称</span><span class="sxs-lookup"><span data-stu-id="6301b-120">Name</span></span>       | <span data-ttu-id="6301b-121">说明</span><span class="sxs-lookup"><span data-stu-id="6301b-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b9d21-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="b9d21-119">Request headers</span></span>
+| <span data-ttu-id="b9d21-120">Name</span><span class="sxs-lookup"><span data-stu-id="b9d21-120">Name</span></span>       | <span data-ttu-id="b9d21-121">说明</span><span class="sxs-lookup"><span data-stu-id="b9d21-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6301b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6301b-122">Authorization</span></span>  | <span data-ttu-id="6301b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6301b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6301b-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6301b-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="6301b-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="6301b-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b9d21-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9d21-122">Authorization</span></span>  | <span data-ttu-id="b9d21-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b9d21-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b9d21-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b9d21-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="b9d21-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="b9d21-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6301b-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="6301b-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9d21-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9d21-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="6301b-129">响应</span><span class="sxs-lookup"><span data-stu-id="6301b-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9d21-129">响应</span><span class="sxs-lookup"><span data-stu-id="b9d21-129">Response</span></span>
 
-<span data-ttu-id="6301b-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="6301b-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b9d21-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="b9d21-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6301b-132">示例</span><span class="sxs-lookup"><span data-stu-id="6301b-132">Example</span></span>
-<span data-ttu-id="6301b-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="6301b-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6301b-134">请求</span><span class="sxs-lookup"><span data-stu-id="6301b-134">Request</span></span>
-<span data-ttu-id="6301b-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6301b-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b9d21-132">示例</span><span class="sxs-lookup"><span data-stu-id="b9d21-132">Example</span></span>
+<span data-ttu-id="b9d21-133">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="b9d21-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b9d21-134">请求</span><span class="sxs-lookup"><span data-stu-id="b9d21-134">Request</span></span>
+<span data-ttu-id="b9d21-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b9d21-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartlineformat_clear"
@@ -54,8 +55,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridline
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="6301b-136">响应</span><span class="sxs-lookup"><span data-stu-id="6301b-136">Response</span></span>
-<span data-ttu-id="6301b-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6301b-137">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="b9d21-136">响应</span><span class="sxs-lookup"><span data-stu-id="b9d21-136">Response</span></span>
+<span data-ttu-id="b9d21-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b9d21-137">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
