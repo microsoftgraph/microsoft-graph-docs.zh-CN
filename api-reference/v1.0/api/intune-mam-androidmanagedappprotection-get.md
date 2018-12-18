@@ -1,12 +1,13 @@
 ---
 title: 获取 androidManagedAppProtection
 description: 读取 androidManagedAppProtection 对象的属性和关系。
-ms.openlocfilehash: ed5b0e8c2f4a56cdd6cc05eb4d6924bcb540b31d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1342ae17333f86b7512ffbc4af1f8d97cce6cbfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011641"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330133"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

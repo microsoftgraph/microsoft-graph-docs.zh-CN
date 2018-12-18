@@ -1,12 +1,13 @@
 ---
 title: androidPermissionAction 资源类型
 description: 请求的权限时，应采取 Android 应用程序权限和 Android 的操作之间的映射。
-ms.openlocfilehash: e65f9b28169e231e34b5a7a46316821f77639233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043505"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331134"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 

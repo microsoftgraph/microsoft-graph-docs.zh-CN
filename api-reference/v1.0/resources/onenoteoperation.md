@@ -1,12 +1,13 @@
 ---
 title: onenoteOperation 资源类型
 description: 某些长时间运行的 OneNote 操作的状态。
-ms.openlocfilehash: 913562abf1d2f644bd621268c93768c7500f4399
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: bbb7b9457ce5a3d7ba9faf45d893ae86cdfd8b32
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326906"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
 

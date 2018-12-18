@@ -1,12 +1,13 @@
 ---
 title: 列表 windowsIdentityProtectionConfigurations
 description: 列出属性和 windowsIdentityProtectionConfiguration 对象之间的关系。
-ms.openlocfilehash: 6f19d01a001596faff582793ce72048d8e02d376
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ce4e97da0477cbc79015271b36b86dfebef6a4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331302"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>列表 windowsIdentityProtectionConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsStoreApp
 description: 更新 windowsStoreApp 对象的属性。
-ms.openlocfilehash: 580c1e3570b5315d3ded9c126cf3bbdf17d7450c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdb07375b388e829f93d045198349e8f673d1fad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331113"
 ---
 # <a name="update-windowsstoreapp"></a>更新 windowsStoreApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 表资源类型
 description: 表示一个 Excel 表。
-ms.openlocfilehash: 0a078965febef44f1fc27f21c7c29cc184ea526a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 06c87f4d4f50985f7c9e3420d481c564dbfa317b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327417"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -56,7 +57,7 @@ ms.locfileid: "27049117"
 |columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
 |rows|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
 |sort|[TableSort](tablesort.md)|表示表的排序。只读。|
-|工作表|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
+|worksheet|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

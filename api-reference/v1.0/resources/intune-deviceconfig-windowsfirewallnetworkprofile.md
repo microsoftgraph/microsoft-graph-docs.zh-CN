@@ -1,12 +1,13 @@
 ---
 title: windowsFirewallNetworkProfile 资源类型
 description: Windows 防火墙配置文件策略。
-ms.openlocfilehash: c442f6bd62cca71247eef6ff7662034a04023e3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa3985a6f41939c11646d47a69e669af4c93913e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008851"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327228"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile 资源类型
 

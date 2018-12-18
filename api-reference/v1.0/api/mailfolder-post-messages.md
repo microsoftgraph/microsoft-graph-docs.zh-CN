@@ -1,12 +1,13 @@
 ---
 title: 创建邮件
 description: 使用此 API 在 mailfolder 中新建邮件。
-ms.openlocfilehash: 4d901385559ed89b6215069b97ae2f323cc66cf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bb88a061a8e867f4cc15470073925c51fe6a3cf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332541"
 ---
 # <a name="create-message"></a>创建邮件
 

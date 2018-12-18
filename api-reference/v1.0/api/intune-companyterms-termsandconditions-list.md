@@ -1,12 +1,13 @@
 ---
 title: 列出 termsAndConditionses
 description: 列出 termsAndConditions 对象的属性和关系。
-ms.openlocfilehash: eb67d5e3704ac18f5d6b9343b459a2ba6e910115
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a4d80f0f660a44c1b50d44c7ccebf8f49c891cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330490"
 ---
 # <a name="list-termsandconditionses"></a>列出 termsAndConditionses
 
@@ -35,7 +36,7 @@ GET /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

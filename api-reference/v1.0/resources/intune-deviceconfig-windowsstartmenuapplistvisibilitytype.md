@@ -1,12 +1,13 @@
 ---
 title: windowsStartMenuAppListVisibilityType 枚举类型
 description: 类型的列表开始菜单应用程序的可见性。
-ms.openlocfilehash: a80f335f2278e658ba736006d24d9ac1c1ac3d12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f63a9b0620fb08f9710575130ece1e3d02f6cf88
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330602"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 枚举类型
 

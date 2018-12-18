@@ -1,12 +1,13 @@
 ---
 title: 'Table: convertToRange'
 description: 将表转换为普通单元格区域。保留所有数据。
-ms.openlocfilehash: 5ab84f5fc4d849f46175a594bdbe088f747379ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4685d29bf84f7e30dc8e289ff46c4293e5553421
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008574"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331526"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

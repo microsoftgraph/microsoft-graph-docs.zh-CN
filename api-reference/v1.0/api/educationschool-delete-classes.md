@@ -1,12 +1,13 @@
 ---
 title: 删除 educationClass
 description: 从学校删除课程。
-ms.openlocfilehash: 5103265bbb0c0f74def65c9adba9cc28dc41785b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 6f917946e0fc24a34c5560e5b01a2bd4acca030d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331575"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 

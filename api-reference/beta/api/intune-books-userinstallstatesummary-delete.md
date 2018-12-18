@@ -1,12 +1,13 @@
 ---
 title: 删除 userInstallStateSummary
 description: 删除 userInstallStateSummary。
-ms.openlocfilehash: 3a2bdcfa1fbced6cf60343fe998b8133c0aac177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 854be19ec7c1def053992b3b690bdc8acd15cd94
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327249"
 ---
 # <a name="delete-userinstallstatesummary"></a>删除 userInstallStateSummary
 
@@ -37,7 +38,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

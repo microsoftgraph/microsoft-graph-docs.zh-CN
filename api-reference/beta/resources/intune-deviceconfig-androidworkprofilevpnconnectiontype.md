@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileVpnConnectionType 枚举类型
 description: Android 工作 Profile VPN 连接类型。
-ms.openlocfilehash: e7a7d02a8a3e4097d396bb8898cfcea059769ec9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4db1d3a642945d3759c885f9364003092105fe03
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046297"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331155"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
 

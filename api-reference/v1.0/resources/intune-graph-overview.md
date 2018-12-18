@@ -1,12 +1,13 @@
 ---
 title: 使用 Intune Graph API
 description: " 不支持 Intune 混合部署。 "
-ms.openlocfilehash: 23f6550fca708b64357b7b5132a2a42060cfa4bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ac823fcc1e3c09bfedc57d9caf4901c95aa9142
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332730"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
@@ -14,13 +15,13 @@ ms.locfileid: "27007593"
 
 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 **Azure 门户**执行的相同 Intune 操作。  
 
-对于移动设备管理 (MDM) 场景，适用于 Intune 的 Graph API 支持独立部署；不支持 Intune [混合部署](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。 
+为移动设备管理 (MDM) 方案，Intune Microsoft Graph API 支持独立部署;不支持 Intune[混合部署](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。 
 
-## <a name="using-the-intune-graph-api"></a>使用 Intune Graph API
+## <a name="using-the-microsoft-graph-api-for-intune"></a>使用 Intune Microsoft Graph API
 
-Intune 向 Microsoft Graph API 提供数据的方式与其他云服务相同，具有丰富的实体信息和关系导航。使用 Microsoft Graph API 将来自其他服务和 Intune 的信息进行组合，为 IT 专业人员和最终用户构建丰富的跨服务应用程序。     
+Intune 向 Microsoft Graph API 提供数据的方式与其他云服务相同，具有丰富的实体信息和关系导航。使用 Microsoft Graph API 来合并来自其他服务和 Intune IT 专业人员或最终用户构建丰富跨服务应用程序的信息。     
 
-以下是如何能够确定是否在用户的设备上安装了应用程序的方法示例： 
+下面的示例演示如何确定用户的设备上是否安装了应用程序： 
 
 1. 从 Azure Active Directory 获取注册到用户的设备列表： 
 
@@ -35,11 +36,11 @@ Intune 向 Microsoft Graph API 提供数据的方式与其他云服务相同，�
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 
-## <a name="using-permission-scopes"></a>使用权限范围
+## <a name="using-permissions"></a>使用权限
 
-Microsoft Graph API 可以使用权限范围控制对资源的访问。 作为开发者，你必须指定访问 Intune 资源需要的权限范围。 通常情况下，可以在 Azure Active Directory 门户中指定需要的权限范围。 有关详细信息，请参阅 [Microsoft Graph 权限范围](https://developer.microsoft.com/graph/docs/authorization/permission_scopes)和 [Intune 权限范围](https://developer.microsoft.com/graph/docs/authorization/permission_scopes#permission-scopes-in-preview)。
+Microsoft Graph API 控制通过权限的资源的访问权限。 作为开发人员，您必须指定需要访问 Intune 资源的权限。 通常情况下，您将在 Azure Active Directory 门户中指定的权限。 有关详细信息，请参阅[Microsoft Graph 权限参考](https://docs.microsoft.com/en-us/graph/permissions-reference)。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 了解[如何使用 Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis)以访问 Intune Microsoft Graph API。  
-- 浏览这些[PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)，其中显示如何为 Intune 工作示例上下文中使用图形 API。
+- 浏览这些[PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)，其中显示如何使用示例上下文中使用 Intune Microsoft Graph API。

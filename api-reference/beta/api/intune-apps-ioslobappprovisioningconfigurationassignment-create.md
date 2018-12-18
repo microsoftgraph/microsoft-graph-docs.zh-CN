@@ -1,12 +1,13 @@
 ---
 title: 创建 iosLobAppProvisioningConfigurationAssignment
 description: 创建新的 iosLobAppProvisioningConfigurationAssignment 对象。
-ms.openlocfilehash: 5d3a51aab8560e4922d74e48675aa95c25be5c72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4146ecdd2c2ee70239fc07a0eb2d7bf21edbe7c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331344"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>创建 iosLobAppProvisioningConfigurationAssignment
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

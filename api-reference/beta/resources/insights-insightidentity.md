@@ -1,18 +1,17 @@
 ---
 title: insightIdentity
-description: " 资源类型"
-ms.openlocfilehash: e13d08eb111844896c96b02ab22c52d2f598ce58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 包含共享项目的属性的复杂类型。
+author: simonhult
+ms.openlocfilehash: 648242b827c0390029522955b0fe6347b98100c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331330"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
-
- 资源类型
 
 包含[共享](insights-shared.md)项目的属性的复杂类型。 
 

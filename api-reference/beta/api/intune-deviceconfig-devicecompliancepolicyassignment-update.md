@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceCompliancePolicyAssignment
 description: 更新 deviceCompliancePolicyAssignment 对象的属性。
-ms.openlocfilehash: f472403ff97d2cce4fa7f24f9f75028652d56171
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c968232fdcc629376e5d7cc22758dd626d7f2a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046341"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327235"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>更新 deviceCompliancePolicyAssignment
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

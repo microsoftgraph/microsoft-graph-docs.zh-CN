@@ -1,12 +1,13 @@
 ---
 title: win32LobAppPowerShellScriptDetection 资源类型
 description: 包含要检测 Win32 应用程序的 PowerShell 脚本属性
-ms.openlocfilehash: e5d87d3d2a90c0ac7f8ce6db7e14b105583a76f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327571"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection 资源类型
 
@@ -21,8 +22,8 @@ ms.locfileid: "27045289"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enforceSignatureCheck|布尔|一个值，指示是否强制执行签名检查|
-|runAs32Bit|布尔|指示是否应运行此脚本为 32 位的值|
+|enforceSignatureCheck|Boolean|一个值，指示是否强制执行签名检查|
+|runAs32Bit|Boolean|指示是否应运行此脚本为 32 位的值|
 |scriptContent|字符串|以 base64 编码的脚本内容来检测 Win32 业务线 (LoB) 应用程序|
 
 ## <a name="relationships"></a>Relationships

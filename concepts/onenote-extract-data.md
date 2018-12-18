@@ -1,12 +1,13 @@
 ---
 title: '使用 OneNote API div 标记从捕获中提取数据 '
 description: " Office 365 上的企业级笔记本"
-ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 902b65d9b8451a3c75db5240bc8d542744e2a478
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091829"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328859"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>使用 OneNote API div 标记从捕获中提取数据 
 

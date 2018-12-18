@@ -1,12 +1,13 @@
 ---
 title: 更新 enterpriseCodeSigningCertificate
 description: 更新 enterpriseCodeSigningCertificate 对象的属性。
-ms.openlocfilehash: eb3ca8eeafc15a3643633758839104e83845cbea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4cf0eb5607af176e1c0cb0a6418f01339b2bb96f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332800"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>更新 enterpriseCodeSigningCertificate
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,8 +49,8 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|二进制数|中的原始数据格式的 Windows 企业代码签名证书。|
-|状态|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
+|content|Binary|中的原始数据格式的 Windows 企业代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书使用者名称。|
 |subject|字符串|证书使用者值。|
 |issuerName|字符串|证书颁发者名称。|

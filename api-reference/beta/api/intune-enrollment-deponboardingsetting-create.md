@@ -1,12 +1,13 @@
 ---
 title: 创建 depOnboardingSetting
 description: 创建新的 depOnboardingSetting 对象。
-ms.openlocfilehash: 612afd3111af00cc8fd9819017b272ce5a38fe4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330658"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
 
@@ -37,7 +38,7 @@ POST /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,13 +54,13 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|当该服务已 onboarded。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|当服务与 Intune 的最后一个 syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|当 Intune 上次请求同步。|
-|shareTokenWithSchoolDataSyncService|布尔|是否 Dep 令牌共享将启用学校数据同步服务。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
 |lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|字符串|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步设备计数|
 |defaultProfileDisplayName|字符串|获取同步设备计数|
-|dataSharingConsentGranted|布尔|授予许可与 Apple Dep 服务共享的数据|
+|dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
 
 
 

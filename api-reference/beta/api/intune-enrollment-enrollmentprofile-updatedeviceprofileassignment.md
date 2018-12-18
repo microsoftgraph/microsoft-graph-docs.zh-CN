@@ -1,12 +1,13 @@
 ---
 title: updateDeviceProfileAssignment 操作
 description: 尚未记录
-ms.openlocfilehash: b42460956f8e39e696bed5a2adc256e37ac7676e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f9fb1b628d12dd1eacb2a30dfefa82a3736c23e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326703"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

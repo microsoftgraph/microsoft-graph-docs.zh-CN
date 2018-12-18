@@ -1,12 +1,13 @@
 ---
 title: 获取 macOSWiFiConfiguration
 description: 读取属性和 macOSWiFiConfiguration 对象的关系。
-ms.openlocfilehash: ec71efe71c8bb70ce873bd39ba69f6bc7799cb09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: da7920da6c61acef0f31914080e05aaac24fc101
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330427"
 ---
 # <a name="get-macoswificonfiguration"></a>获取 macOSWiFiConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

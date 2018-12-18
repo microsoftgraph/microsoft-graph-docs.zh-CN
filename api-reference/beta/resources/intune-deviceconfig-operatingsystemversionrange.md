@@ -1,12 +1,13 @@
 ---
 title: operatingSystemVersionRange 资源类型
 description: 操作系统版本范围。
-ms.openlocfilehash: af140bf2a5d889b66d45460465e47c466bb2160b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b853e71b2d8f66d24122afb51cea97fc6a8f8d7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331162"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange 资源类型
 

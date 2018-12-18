@@ -1,12 +1,13 @@
 ---
 title: 创建联机会议
 description: 创建一个代表指定在请求正文中的用户的联机会议。
-ms.openlocfilehash: c2e62ee3e705f93a97af5682679790b7747cdeef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4a68e25156353b41c3ff43685d7b021a2454a927
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044297"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331428"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
@@ -23,7 +24,7 @@ ms.locfileid: "27044297"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | OnlineMeetings.ReadWrite.All                |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +34,7 @@ POST /applications/{id}/onlineMeetings
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

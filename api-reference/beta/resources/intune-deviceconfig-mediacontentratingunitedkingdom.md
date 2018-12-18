@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingUnitedKingdom 资源类型
 description: 尚未记录
-ms.openlocfilehash: 34117db449f65943d0f6e5e0700bbb2c0d19c426
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd4285f3be40961d2368da180c52e16b0ff6ea47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332561"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>mediaContentRatingUnitedKingdom 资源类型
 
