@@ -1,12 +1,13 @@
 ---
 title: 添加成员
 description: 使用此 API 成员 （用户或组） 添加到一个管理单元。
-ms.openlocfilehash: d969be353a1ae41f0b1ba0d302b497596804e325
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: be47dbf06c5f59c0a4aaaea4f8c8b4aa8c3ce902
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042407"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339226"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -32,7 +33,7 @@ ms.locfileid: "27042407"
 POST /administrativeUnits/{id}/members/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 windows10EndpointProtectionConfiguration
 description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
-ms.openlocfilehash: e30091162446a8821d6cae9422e28a38024fcda6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51cfade0d1e04a72cf57e73f967048548b621224
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338449"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -86,69 +87,69 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限决定哪些用户可以跳过文件、 目录、 注册表和权限还原时备份文件和目录，其他持久对象，决定哪些用户可以设置为对象的所有者的任何有效的安全主体。 支持状态 NotConfigured 和允许。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限决定哪些用户可以在系统中，包括 Active Directory 对象、 文件和文件夹、 打印机、 注册表项、 流程和线程执行任何安全对象的所有权。 支持状态 NotConfigured 和允许。|
 |userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此安全设置确定被阻止的服务帐户注册为服务的进程。 注意： 此安全设置不适用于系统、 本地服务或网络服务帐户。 仅支持已阻止的状态。|
-|xboxServicesEnableXboxGameSaveTask|布尔值|此设置确定 xbox 游戏保存是否启用 (1) 或禁用 (0)。|
+|xboxServicesEnableXboxGameSaveTask|Boolean|此设置确定 xbox 游戏保存是否启用 (1) 或禁用 (0)。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定的附件管理服务启动类型是 Automatic(2) Manual(3)、 Disabled(4)。 默认： 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定 Live 身份验证管理器服务启动类型是 Automatic(2) Manual(3)、 Disabled(4)。 默认： 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定是否 Automatic(2) Manual(3)、 Disabled(4) Live 保存服务的启动类型的游戏。 默认： 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定网络服务启动类型是 Automatic(2) Manual(3)、 Disabled(4)。 默认： 手动。 可取值为：`manual`、`automatic`、`disabled`。|
-|localSecurityOptionsBlockMicrosoftAccounts|布尔值|禁止用户添加到此计算机的新的 Microsoft 帐户。|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|布尔值|启用本地帐户不受密码保护登录从物理设备以外的位置。将启用默认值|
-|localSecurityOptionsEnableAdministratorAccount|布尔值|确定是否启用或禁用的本地管理员帐户。|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|禁止用户添加到此计算机的新的 Microsoft 帐户。|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|启用本地帐户不受密码保护登录从物理设备以外的位置。将启用默认值|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|确定是否启用或禁用的本地管理员帐户。|
 |localSecurityOptionsAdministratorAccountName|字符串|定义要与"管理员"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
-|localSecurityOptionsEnableGuestAccount|布尔值|确定是启用还是禁用来宾帐户。|
+|localSecurityOptionsEnableGuestAccount|Boolean|确定是启用还是禁用来宾帐户。|
 |localSecurityOptionsGuestAccountName|字符串|定义要为"来宾"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|布尔值|正在取消停靠而无需登录阻止便携式计算机。|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|布尔值|限制为连接到向管理员仅共享打印机的一部分安装的打印机驱动程序。|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|布尔值|启用此设置允许访问 CD-ROM 媒体仅以交互方式登录的用户。|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|正在取消停靠而无需登录阻止便携式计算机。|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|限制为连接到向管理员仅共享打印机的一部分安装的打印机驱动程序。|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|启用此设置允许访问 CD-ROM 媒体仅以交互方式登录的用户。|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|定义允许谁格式化和弹出可移动 NTFS 媒体。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
 |localSecurityOptionsMachineInactivityLimit|Int32|交互式桌面上登录屏幕上定义最大分钟无活动，直到屏幕保护程序运行。 有效的值 0 到 9999 之间|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|交互式桌面上登录屏幕上定义最大分钟无活动，直到屏幕保护程序运行。 有效的值 0 到 9999 之间|
-|localSecurityOptionsDoNotRequireCtrlAltDel|布尔值|需要 CTRL + ALT + DEL 要按用户登录之前。|
-|localSecurityOptionsHideLastSignedInUser|布尔值|不在此设备上显示的签名的最后一个人的用户名。|
-|localSecurityOptionsHideUsernameAtSignIn|布尔值|不显示登录到此设备输入凭据之后和之前显示设备的桌面的人员的用户名。|
+|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|需要 CTRL + ALT + DEL 要按用户登录之前。|
+|localSecurityOptionsHideLastSignedInUser|Boolean|不在此设备上显示的签名的最后一个人的用户名。|
+|localSecurityOptionsHideUsernameAtSignIn|Boolean|不显示登录到此设备输入凭据之后和之前显示设备的桌面的人员的用户名。|
 |localSecurityOptionsLogOnMessageTitle|字符串|用户尝试登录的设置邮件标题。|
 |localSecurityOptionsLogOnMessageText|字符串|设置用户试图登录消息文本。|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|布尔值|对此设备块 PKU2U 身份验证请求使用联机标识。|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|布尔值|用户界面帮助程序布尔 LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|对此设备块 PKU2U 身份验证请求使用联机标识。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|用户界面帮助程序布尔 LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认安全描述符定义语言字符串，以允许或拒绝远程调用 SAM 用户和组。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求 128 位加密和/或 NTLMv2 会话安全协商。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求 128 位加密和/或 NTLMv2 会话安全协商。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定哪个质询/响应身份验证协议用于网络登录。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationEnableInsecureGuestLogons|布尔值|如果启用，则 SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
-|localSecurityOptionsClearVirtualMemoryPageFile|布尔值|此安全设置确定系统关闭时是否清除虚拟内存页面文件。|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|布尔值|此安全设置确定是否可以关闭计算机而无需登录到 Windows。|
-|localSecurityOptionsAllowUIAccessApplicationElevation|布尔值|允许 UIAccess 应用程序无需使用安全桌面提示提升。|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|布尔值|虚拟化文件和注册表写入失败次数为每用户位置|
-|localSecurityOptionsOnlyElevateSignedExecutables|布尔值|允许运行之前，强制实施 PKI 证书路径验证给定的可执行文件。|
+|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|如果启用，则 SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
+|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|此安全设置确定系统关闭时是否清除虚拟内存页面文件。|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|此安全设置确定是否可以关闭计算机而无需登录到 Windows。|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|允许 UIAccess 应用程序无需使用安全桌面提示提升。|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|虚拟化文件和注册表写入失败次数为每用户位置|
+|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|允许运行之前，强制实施 PKI 证书路径验证给定的可执行文件。|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|管理员批准模式中定义管理员的提升提示的行为。 可取值为：`notConfigured`、`elevateWithoutPrompting`、`promptForCredentialsOnTheSecureDesktop`、`promptForConsentOnTheSecureDesktop`、`promptForCredentials`、`promptForConsent`、`promptForConsentForNonWindowsBinaries`。|
 |localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|定义标准用户的提升提示的行为。 可取值为：`notConfigured`、`automaticallyDenyElevationRequests`、`promptForCredentialsOnTheSecureDesktop`、`promptForCredentials`。|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|布尔值|启用所有提升请求，以转到交互式用户的桌面，而不是安全的桌面。 使用提示行为 admins 和标准用户的策略设置。|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|布尔值|需要提升的权限的应用程序安装将会进行提示管理员凭据。将启用默认值|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|布尔值|允许 UIAccess 应用程序无需使用安全桌面提示提升。将启用默认值|
-|localSecurityOptionsUseAdminApprovalMode|布尔值|定义的内置的管理帐户使用管理员批准模式还是具有完整的管理员权限运行所有应用程序。将启用默认值|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|布尔值|定义是否启用管理员批准模式和所有 UAC 策略设置，将启用默认值|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|启用所有提升请求，以转到交互式用户的桌面，而不是安全的桌面。 使用提示行为 admins 和标准用户的策略设置。|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|需要提升的权限的应用程序安装将会进行提示管理员凭据。将启用默认值|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|允许 UIAccess 应用程序无需使用安全桌面提示提升。将启用默认值|
+|localSecurityOptionsUseAdminApprovalMode|Boolean|定义的内置的管理帐户使用管理员批准模式还是具有完整的管理员权限运行所有应用程序。将启用默认值|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|定义是否启用管理员批准模式和所有 UAC 策略设置，将启用默认值|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|配置会话已被锁定时显示的用户信息。 如果未配置，将显示用户的显示名称、 域和用户名。 可取值为：`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser`。|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|配置会话已被锁定时显示的用户信息。 如果未配置，将显示用户的显示名称、 域和用户名。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|布尔值|此安全设置确定是否 SMB 客户端尝试协商 SMB 数据包签名。|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|布尔值|此安全设置确定是否数据包签名所需 SMB 客户端组件。|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|布尔值|如果启用此安全设置，则允许服务器消息块 (SMB) 重定向到不支持期间身份验证的密码加密的非 Microsoft SMB 服务器发送纯文本密码。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|布尔值|此安全设置确定是否由 SMB 服务器组件要求签名数据包。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|布尔值|此安全设置确定 SMB 服务器是否协商 SMB 数据包签名与请求的客户端。|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|布尔值|默认情况下，此安全设置将匿名访问限制为共享和管道的可匿名访问的命名的管道和可匿名访问的共享的设置|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|布尔值|此安全设置确定将对匿名连接到计算机上授予其他权限。|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|布尔值|此安全设置确定是否允许匿名用户执行某些活动，如枚举的域帐户和网络共享名称。|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|布尔值|此安全设置确定，是否在下次密码更改，存储新密码的 LAN Manager (LM) 哈希值。 默认情况下，它不存储。|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|此安全设置确定是否 SMB 客户端尝试协商 SMB 数据包签名。|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|此安全设置确定是否数据包签名所需 SMB 客户端组件。|
+|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|如果启用此安全设置，则允许服务器消息块 (SMB) 重定向到不支持期间身份验证的密码加密的非 Microsoft SMB 服务器发送纯文本密码。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|此安全设置确定是否由 SMB 服务器组件要求签名数据包。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|此安全设置确定 SMB 服务器是否协商 SMB 数据包签名与请求的客户端。|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|默认情况下，此安全设置将匿名访问限制为共享和管道的可匿名访问的命名的管道和可匿名访问的共享的设置|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|此安全设置确定将对匿名连接到计算机上授予其他权限。|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|此安全设置确定是否允许匿名用户执行某些活动，如枚举的域帐户和网络共享名称。|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|此安全设置确定，是否在下次密码更改，存储新密码的 LAN Manager (LM) 哈希值。 默认情况下，它不存储。|
 |localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|此安全设置确定智能卡读卡器从移除智能卡登录的用户时，会发生什么情况。 可取值为：`lockWorkstation`、`noAction`、`forceLogoff`、`disconnectRemoteDesktopSession`。|
-|defenderSecurityCenterDisableAppBrowserUI|布尔值|用于禁用的应用程序和浏览器的保护区域显示。|
-|defenderSecurityCenterDisableFamilyUI|布尔值|用于禁用系列选项区域的显示。|
-|defenderSecurityCenterDisableHealthUI|布尔值|用于禁用设备性能和运行状况区域的显示。|
-|defenderSecurityCenterDisableNetworkUI|布尔值|用于禁用防火墙和网络保护区域的显示。|
-|defenderSecurityCenterDisableVirusUI|布尔值|用于禁用病毒和威胁保护区域的显示。|
-|defenderSecurityCenterDisableAccountUI|布尔值|用于禁用帐户保护区域的显示。|
-|defenderSecurityCenterDisableHardwareUI|布尔值|用于禁用硬件保护区域的显示。|
-|defenderSecurityCenterDisableRansomwareUI|布尔值|用于禁用勒索软件保护区域的显示。 |
-|defenderSecurityCenterDisableSecureBootUI|布尔值|用于禁用的设备安全下的安全启动区域显示。|
-|defenderSecurityCenterDisableTroubleshootingUI|布尔值|用于禁用安全过程下设备安全疑难解答的显示。|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|用于禁用的应用程序和浏览器的保护区域显示。|
+|defenderSecurityCenterDisableFamilyUI|Boolean|用于禁用系列选项区域的显示。|
+|defenderSecurityCenterDisableHealthUI|Boolean|用于禁用设备性能和运行状况区域的显示。|
+|defenderSecurityCenterDisableNetworkUI|Boolean|用于禁用防火墙和网络保护区域的显示。|
+|defenderSecurityCenterDisableVirusUI|Boolean|用于禁用病毒和威胁保护区域的显示。|
+|defenderSecurityCenterDisableAccountUI|Boolean|用于禁用帐户保护区域的显示。|
+|defenderSecurityCenterDisableHardwareUI|Boolean|用于禁用硬件保护区域的显示。|
+|defenderSecurityCenterDisableRansomwareUI|Boolean|用于禁用勒索软件保护区域的显示。 |
+|defenderSecurityCenterDisableSecureBootUI|Boolean|用于禁用的设备安全下的安全启动区域显示。|
+|defenderSecurityCenterDisableTroubleshootingUI|Boolean|用于禁用安全过程下设备安全疑难解答的显示。|
 |defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示公司名称。|
 |defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
 |defenderSecurityCenterHelpPhone|字符串|电话号码或向用户显示的 Skype ID 中。|
@@ -200,8 +201,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|指示是否阻止用户覆盖 Exploit Protection 设置。|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|使管理员能够选择在设备上允许哪些类型的应用。 可取值为：`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker`、`auditComponentsStoreAppsAndSmartlocker`。|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|在凭据 Guard 时同时启用对安全启动和虚拟化基于安全平台安全级别打开。 可取值为：`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock`。|
-|deviceGuardEnableVirtualizationBasedSecurity|布尔值|虚拟化选项会启用基于 Security(VBS)。|
-|deviceGuardEnableSecureBootWithDMA|布尔值|指定是否将在下次重新启动启用平台安全级别。|
+|deviceGuardEnableVirtualizationBasedSecurity|Boolean|虚拟化选项会启用基于 Security(VBS)。|
+|deviceGuardEnableSecureBootWithDMA|Boolean|指定是否将在下次重新启动启用平台安全级别。|
 |smartScreenEnableInShell|Boolean|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
 |smartScreenBlockOverrideForFiles|Boolean|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
 |applicationGuardEnabled|Boolean|启用 Windows Defender 应用程序防护|
@@ -215,8 +216,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |applicationGuardAllowPrintToXPS|Boolean|允许从容器打印为 XPS 格式|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|允许从容器打印到本地打印机|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|允许从容器打印到网络打印机|
-|applicationGuardAllowVirtualGPU|布尔值|允许应用程序 guard 用于虚拟 GPU|
-|applicationGuardAllowFileSaveOnHost|布尔值|允许用户从应用程序 guard 容器中的边缘下载文件并将其保存在主机上文件系统|
+|applicationGuardAllowVirtualGPU|Boolean|允许应用程序 guard 用于虚拟 GPU|
+|applicationGuardAllowFileSaveOnHost|Boolean|允许用户从应用程序 guard 容器中的边缘下载文件并将其保存在主机上文件系统|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|允许管理员要求使用 BitLocker 开启加密功能。 此策略仅适用于移动 SKU。|
 |bitLockerEncryptDevice|Boolean|允许管理员要求使用 BitLocker 开启加密功能。|

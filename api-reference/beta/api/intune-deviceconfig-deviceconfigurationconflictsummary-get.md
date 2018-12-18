@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceConfigurationConflictSummary
 description: 读取属性和 deviceConfigurationConflictSummary 对象的关系。
-ms.openlocfilehash: 85af2e1ffcacc5d3944680afdc6a80b4e72b1213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5f38a613d10ebfd610bc8bf71bfaa30243d0d5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046707"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333969"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>获取 deviceConfigurationConflictSummary
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

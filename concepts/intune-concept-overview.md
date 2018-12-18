@@ -1,12 +1,13 @@
 ---
 title: Intune 设备和应用 API 概述
 description: 'Microsoft Intune 可帮助企业管理组织内的设备和应用。 你可以使用 Microsoft Graph 中的 Intune API 来管理设备和应用，甚至可以在使用首选工具时配置 Intune。 '
-ms.openlocfilehash: fced71d317aa5f2aebfd2c44237ea9087a6be4f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0eac57d7434e85faae86a7f1042cc6bb61783e52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091876"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332849"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune 设备和应用 API 概述
 

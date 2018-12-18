@@ -1,12 +1,13 @@
 ---
 title: excludedApps 资源类型
 description: 包含用于排除 Office365 应用程序的属性。
-ms.openlocfilehash: 05c1ed7f4789e1a27ddacf92dbd773b2f5a21847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8c9eff985783c953ff099dbf4d5ba00826652c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344623"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
@@ -18,19 +19,19 @@ ms.locfileid: "27043898"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|访问|布尔|值为 if 或不应排除 MS Office Access。|
-|excel|布尔|值为 if 或不应排除 MS Office Excel。|
-|groove|布尔|如果值或不应排除 MS Office OneDrive for Business 的 Groove。|
-|infoPath|布尔|值为 if 或不应排除 MS Office InfoPath。|
-|lync|布尔|如果值或不应排除 MS Office Skype for Business-Lync。|
-|oneDrive|布尔|值为 if 或不应排除 MS Office OneDrive。|
-|oneNote|布尔|值为 if 或不应排除 MS Office OneNote。|
-|outlook|布尔|值为 if 或不应排除 MS Office Outlook。|
-|powerPoint|布尔|值为 if 或不应排除 MS Office PowerPoint。|
-|publisher|布尔|值为 if 或不应排除 MS Office Publisher。|
-|sharePointDesigner|布尔|值为 if 或不应排除 MS Office SharePointDesigner。|
-|visio|布尔|值为 if 或不应排除 MS Office Visio。|
-|word|布尔|值为 if 或不应排除 MS Office Word。|
+|访问|Boolean|值为 if 或不应排除 MS Office Access。|
+|excel|Boolean|值为 if 或不应排除 MS Office Excel。|
+|groove|Boolean|如果值或不应排除 MS Office OneDrive for Business 的 Groove。|
+|infoPath|Boolean|值为 if 或不应排除 MS Office InfoPath。|
+|lync|Boolean|如果值或不应排除 MS Office Skype for Business-Lync。|
+|oneDrive|Boolean|值为 if 或不应排除 MS Office OneDrive。|
+|oneNote|Boolean|值为 if 或不应排除 MS Office OneNote。|
+|outlook|Boolean|值为 if 或不应排除 MS Office Outlook。|
+|powerPoint|Boolean|值为 if 或不应排除 MS Office PowerPoint。|
+|publisher|Boolean|值为 if 或不应排除 MS Office Publisher。|
+|sharePointDesigner|Boolean|值为 if 或不应排除 MS Office SharePointDesigner。|
+|visio|Boolean|值为 if 或不应排除 MS Office Visio。|
+|word|Boolean|值为 if 或不应排除 MS Office Word。|
 
 ## <a name="relationships"></a>Relationships
 无

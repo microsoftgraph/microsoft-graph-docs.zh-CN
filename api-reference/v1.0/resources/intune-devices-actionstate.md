@@ -1,12 +1,13 @@
 ---
 title: actionState 枚举类型
 description: 在设备上的操作的状态
-ms.openlocfilehash: 1a18eb87cb4c9162777d16dc866de5f5766c87b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53ee72430ac646bf978a3167b87feaf398c8ac37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333381"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 

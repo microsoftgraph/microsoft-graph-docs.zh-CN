@@ -1,12 +1,13 @@
 ---
 title: 列出行
 description: 检索 tablerow 对象的列表。
-ms.openlocfilehash: d284b49b46c87ec30996d8b7ad0262af43365ad7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8fc72a65f7f20db2011df4b0327caa114590a560
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339387"
 ---
 # <a name="list-rows"></a>列出行
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
 ## <a name="request-headers"></a>请求头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

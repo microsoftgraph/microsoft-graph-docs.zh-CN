@@ -1,12 +1,13 @@
 ---
 title: 创建 androidForWorkCompliancePolicy
 description: 创建新的 androidForWorkCompliancePolicy 对象。
-ms.openlocfilehash: e9c525035eb422d8332a4b81e7828c0a4d297b35
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45bce6c48c3b230a9ee751ee28a721323b2a5a29
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042007"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362725"
 ---
 # <a name="create-androidforworkcompliancepolicy"></a>创建 androidForWorkCompliancePolicy
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

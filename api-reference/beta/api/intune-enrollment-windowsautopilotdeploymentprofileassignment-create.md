@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsAutopilotDeploymentProfileAssignment
 description: 创建新的 windowsAutopilotDeploymentProfileAssignment 对象。
-ms.openlocfilehash: 7c6e6e41711a89f5e9690f16a569b5a4afbe91c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c73cd0c8f32ea5b5e84afb5873700a6523186059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338848"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>创建 windowsAutopilotDeploymentProfileAssignment
 
@@ -37,7 +38,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

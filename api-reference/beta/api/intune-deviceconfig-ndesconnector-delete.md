@@ -1,12 +1,13 @@
 ---
 title: 删除 ndesConnector
 description: 删除 ndesConnector。
-ms.openlocfilehash: 4f9429b0f5d2632aad2aa4a6f848c2d1756a86d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea890f4ca2a4951f670473def343a58ebe4a0a9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048202"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338400"
 ---
 # <a name="delete-ndesconnector"></a>删除 ndesConnector
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: TableRow 资源类型
 description: 表示表中的行。
-ms.openlocfilehash: e96367137fb6b2fe70e15aa932a104c2042651c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f34190aa4ac565d09ec8b07e96b2923f785b8d7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007723"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341333"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 

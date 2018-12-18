@@ -1,12 +1,13 @@
 ---
 title: 选项卡添加到频道
 description: '将 (pin) 添加到指定的通道团队中的一个选项卡。 '
-ms.openlocfilehash: f4e57839436b6c40669125114b82fe67d58efc2d
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e16cd81735f765ce175e66a76e7ac0a84d41ef8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333325"
 ---
 # <a name="add-tab-to-channel"></a>选项卡添加到频道
 

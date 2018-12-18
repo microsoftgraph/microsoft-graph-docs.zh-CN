@@ -1,12 +1,13 @@
 ---
 title: 获取 mobileAppAssignment
 description: 读取 mobileAppAssignment 对象的属性和关系。
-ms.openlocfilehash: 4f27085439240b79ba77778893931872715c851f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca8905962126d53b476bde8d8322024fa8cbb3b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334893"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

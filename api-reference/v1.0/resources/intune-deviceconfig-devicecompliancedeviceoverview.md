@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceDeviceOverview 资源类型
 description: 尚未记录
-ms.openlocfilehash: 3d4a52274e3cc68fbf98f0950ad2bda3ed04b265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7384eef7a1a1c9ddf7be8e3be14807c45604593
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334774"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>deviceComplianceDeviceOverview 资源类型
 

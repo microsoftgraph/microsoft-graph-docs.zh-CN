@@ -1,12 +1,13 @@
 ---
 title: educationFeedback 资源类型
 description: 从教师向学生的反馈。 此属性表示以及 who 反馈这两个的文本部分。
-ms.openlocfilehash: 4d9a08744ac818b4aadfac965a53655d498923ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363590"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback 资源类型
 

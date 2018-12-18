@@ -1,12 +1,13 @@
 ---
 title: 创建 windows10CustomConfiguration
 description: 创建新的 windows10CustomConfiguration 对象。
-ms.openlocfilehash: c7c180b26cd5e25aba9ff36d0190ab455000f839
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe23261967e3f350ac1432ebe2869d23cfd6fc89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338267"
 ---
 # <a name="create-windows10customconfiguration"></a>创建 windows10CustomConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

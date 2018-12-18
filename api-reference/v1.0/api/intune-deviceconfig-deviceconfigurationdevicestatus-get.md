@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceConfigurationDeviceStatus
 description: 读取 deviceConfigurationDeviceStatus 对象的属性和关系。
-ms.openlocfilehash: 0778884d0d1933e53be6e1cac5fc96b0ba8d5697
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bafdda535bd6737454370bd640efc3c9f7869b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010467"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339268"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>获取 deviceConfigurationDeviceStatus
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuse
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

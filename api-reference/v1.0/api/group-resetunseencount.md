@@ -1,12 +1,13 @@
 ---
 title: 组：resetUnseenCount
 description: 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。
-ms.openlocfilehash: 9747c0676a140abbab0bef66733dba7730fc397c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6cb7533dc44ff86b2e1dbec5c99f4038ed03d224
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011353"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337455"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。

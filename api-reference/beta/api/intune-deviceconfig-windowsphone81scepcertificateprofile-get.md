@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsPhone81SCEPCertificateProfile
 description: 读取属性和 windowsPhone81SCEPCertificateProfile 对象的关系。
-ms.openlocfilehash: a826080593ef0c05f16914389bb57a70e2d90f1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cf26d39793939a722485bab6d7a8589d5d461f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363639"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>获取 windowsPhone81SCEPCertificateProfile
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 删除 detectedApp
 description: 删除 detectedApp。
-ms.openlocfilehash: e20ad114d28958951f3b68ba5d1d945fb9876bb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44ea6352dc1cedd444be108fb31b518f35d7f522
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043427"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335320"
 ---
 # <a name="delete-detectedapp"></a>删除 detectedApp
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

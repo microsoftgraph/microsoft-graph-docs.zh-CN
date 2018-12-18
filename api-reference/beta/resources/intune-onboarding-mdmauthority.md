@@ -1,12 +1,13 @@
 ---
 title: mdmAuthority 枚举类型
 description: 移动设备管理机构。
-ms.openlocfilehash: a4f73a188baa55a5fb5eff64c2b6a08cbe8dc11b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d4efb5f0debb5c18fac78e4ce0381d91848bc08f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049072"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344140"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 

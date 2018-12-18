@@ -1,12 +1,13 @@
 ---
 title: omaSettingInteger 资源类型
 description: OMA 设置整数定义。
-ms.openlocfilehash: fe435146cc0ab8a4c97f12c443e0c30ad0ca78ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27d38d1e1fe035ef95203ca1e636dedf7a05f103
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044113"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363604"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 

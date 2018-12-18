@@ -1,12 +1,13 @@
 ---
 title: ratingCanadaTelevisionType 枚举类型
 description: 在加拿大 TV 内容评级标签
-ms.openlocfilehash: 636a59e9bbb4c6ce09a9118b912cdd9c6be8440b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf11640b65fd5f0e724c7866dc14322306c3f760
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338708"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 

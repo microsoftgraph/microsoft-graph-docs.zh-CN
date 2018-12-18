@@ -1,12 +1,13 @@
 ---
 title: defenderScanType 枚举类型
 description: 系统的可能值扫描类型。
-ms.openlocfilehash: 5230c3c0732995632a33e619089d1360d8338103
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 985b63061f084e76aa2c90d116a4a5c90a0e120c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344308"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 

@@ -1,12 +1,13 @@
 ---
 title: 创建 ContactFolder
 description: '创建新的 contactFolder 作为指定文件夹的子文件夹。 '
-ms.openlocfilehash: 5e73a80556a9b896afa166c4207efffb831c9a3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a6b638610ed487fe69d80254c36efc3478f476cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336482"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 

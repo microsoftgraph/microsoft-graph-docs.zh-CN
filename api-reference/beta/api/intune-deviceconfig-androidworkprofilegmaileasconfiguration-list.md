@@ -1,12 +1,13 @@
 ---
 title: 列表 androidWorkProfileGmailEasConfigurations
 description: 列出属性和 androidWorkProfileGmailEasConfiguration 对象之间的关系。
-ms.openlocfilehash: ddb3c3441403767ddea859d504a382d574fed736
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc84777da8bdfac12d743c0225128db22e6c4024
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045229"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363667"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>列表 androidWorkProfileGmailEasConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: outlookTask 资源类型
 description: '可以跟踪工作项的 Outlook 项目。 '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335229"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
@@ -39,7 +40,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |更改 Outlook 任务的可写属性。 |
 |[删除](../api/outlooktask-delete.md) | 无 |删除用户的邮箱中指定的任务。 |
 |[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md)集合|完成 Outlook 任务，这将**completedDateTime**属性设置为当前日期，并**状态**属性设为`completed`。|
-|**Attachments**| | |
+|**附件**| | |
 |[列出附件](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) 集合| 获取有关 Outlook 任务的所有附件。|
 |[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| 添加的文件、 项 （邮件、 事件或联系人） 或链接到文件作为附件到一个任务。|
 |**扩展属性**| | |
@@ -49,7 +50,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[获取与多值扩展属性的任务](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 获取包含多值扩展的属性，通过使用 Outlook 任务`$expand`。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignedTo|字符串|已分配任务的人员的名称。|
 |body|[itemBody](itembody.md)|任务正文通常包含有关任务的信息。 请注意，仅 HTML 支持类型。|
@@ -58,10 +59,10 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|中指定的时区任务已完成的日期。|
 |createdDateTime|DateTimeOffset|日期和时间创建任务时。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区的任务完成日期。|
-|hasAttachments|布尔|设置为 true 如果任务的附件。|
+|hasAttachments|Boolean|设置为 true 如果任务的附件。|
 |id|字符串|任务的唯一标识符。 只读。|
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isReminderOn|布尔|如果，设置为 true 设置通知提醒的用户的任务。|
+|isReminderOn|Boolean|如果，设置为 true 设置通知提醒的用户的任务。|
 |lastModifiedDateTime|DateTimeOffset|日期和上次修改任务的时间。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |owner|字符串|创建任务的人员的名称。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|

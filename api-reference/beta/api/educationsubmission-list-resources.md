@@ -1,12 +1,13 @@
 ---
 title: 列表资源
 description: 列出与此提交关联的资源。 **SubmissionResource**对象是正在从事实际资源对象学生的包装。 如果这复制从分配过程的工作分配，包装还包括指向上工作分配的资源的指针。 这些资源是工作分配的工作副本。 **SubmittedResources**是正式已提交以进行评分的资源。
-ms.openlocfilehash: 0035f34b734cb4335fd1fd9ec3eece9183eed67b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341067"
 ---
 # <a name="list-resources"></a>列表资源
 

@@ -1,12 +1,13 @@
 ---
 title: 获取 softwareUpdateStatusSummary
 description: 读取 softwareUpdateStatusSummary 对象的属性和关系。
-ms.openlocfilehash: 7dfbcbf5ce2e2424abcf2b6180548b882591d09e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2497f6f2431e2f921ae84ccc300e158cd341e75e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048451"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333059"
 ---
 # <a name="get-softwareupdatestatussummary"></a>获取 softwareUpdateStatusSummary
 
@@ -39,7 +40,7 @@ GET /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

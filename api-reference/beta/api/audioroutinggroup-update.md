@@ -1,12 +1,13 @@
 ---
 title: 更新音频路由组
 description: 源和接收器 audioRoutingGroup 的修改。
-ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: ae9e67a9f116a9c1e9dec2b5d742f13917374718
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156024"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336685"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -21,7 +22,7 @@ ms.locfileid: "27156024"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +32,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 

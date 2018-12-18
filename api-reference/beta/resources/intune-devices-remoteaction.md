@@ -1,12 +1,13 @@
 ---
 title: remoteAction 枚举类型
 description: 远程操作 Intune 支持。
-ms.openlocfilehash: 8ab503538edd1005106be9d30e67b35b6bb59583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b301757ec5bb8c9c9a0336cbc83d6a458579916
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362557"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 

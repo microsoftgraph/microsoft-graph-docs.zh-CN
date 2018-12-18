@@ -1,12 +1,13 @@
 ---
 title: 更新设置
 description: '更新设置对象的属性。 '
-ms.openlocfilehash: 53b5fb2ce37aa9d80466face5ec03d1b54e87c09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 61d44c1c726b91bc21d9fc5498cd2ba11a5a830b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363779"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -49,7 +50,7 @@ PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔|设置为 true 禁用代理人访问的[趋势](../resources/insights-trending.md)API 或禁止用户访问 Office 深入中的文档。 设置为 true 还会影响的 Office 365 中显示的内容相关性-例如，建议 SharePoint 主页中的网站和中的 OneDrive for Business 的发现视图显示相关性较低的结果。 此设置反映在[Office 深入](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)的控件状态。|
+|contributionToContentDiscoveryDisabled|Boolean|设置为 true 禁用代理人访问的[趋势](../resources/insights-trending.md)API 或禁止用户访问 Office 深入中的文档。 设置为 true 还会影响的 Office 365 中显示的内容相关性-例如，建议 SharePoint 主页中的网站和中的 OneDrive for Business 的发现视图显示相关性较低的结果。 此设置反映在[Office 深入](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)的控件状态。|
 
 ## <a name="example"></a>示例 
 

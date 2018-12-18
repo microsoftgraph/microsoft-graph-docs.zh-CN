@@ -1,12 +1,13 @@
 ---
 title: hardwareInformation 资源类型
 description: 硬件的给定设备的信息。
-ms.openlocfilehash: 90762426ef3d7b550b9a6fe89343e54d797b3a51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045881"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334522"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27045881"
 |operatingSystemLanguage|字符串|设备的操作系统语言|
 |isSupervised|Boolean|设备监管的模式|
 |isEncrypted|Boolean|设备加密状态|
-|isSharedDevice|布尔|共享的 iPad|
+|isSharedDevice|Boolean|共享的 iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享的 Apple 设备上的所有用户|
 |tpmSpecificationVersion|字符串|指定规范版本的字符串。|
 |operatingSystemEdition|字符串|指定的操作系统版本的字符串。|

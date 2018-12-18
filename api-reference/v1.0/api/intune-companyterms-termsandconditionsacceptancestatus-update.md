@@ -1,12 +1,13 @@
 ---
 title: 更新 termsAndConditionsAcceptanceStatus
 description: 更新 termsAndConditionsAcceptanceStatus 对象的属性。
-ms.openlocfilehash: 4078cc304e85b360b7156235105fc9a0e4949402
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2f1cf0dea9ccb6c23fe55ce201bd3a6939d5976f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008168"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354269"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>更新 termsAndConditionsAcceptanceStatus
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

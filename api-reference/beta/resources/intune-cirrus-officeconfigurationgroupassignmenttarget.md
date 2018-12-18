@@ -1,12 +1,13 @@
 ---
 title: officeConfigurationGroupAssignmentTarget 资源类型
 description: Office 客户端配置 AAD 组工作分配目标。
-ms.openlocfilehash: 263e48bfc5800231a9f36159e802f65294e6ac02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 82008de6e5cb64885e9e2d5804a00956da2ff434
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047324"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335866"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget 资源类型
 

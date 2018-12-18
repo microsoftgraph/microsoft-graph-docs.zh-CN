@@ -1,12 +1,13 @@
 ---
 title: 域：验证
 description: 验证域的所有权。
-ms.openlocfilehash: 02b5d823198b29114cd38c879a479b4b042289c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 246d037d7f87ec463c6d68a9d9e22b4cff7cb695
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336643"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -38,7 +39,7 @@ POST /domains/{id}/verify
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type  | application/json |

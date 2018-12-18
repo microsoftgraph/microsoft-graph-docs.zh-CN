@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsPhone81VpnConfiguration
 description: 读取属性和 windowsPhone81VpnConfiguration 对象的关系。
-ms.openlocfilehash: 7813bfbd1da0bfe4311af1447a9c47d902204467
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 845f5f9ecb26227e1ca72663b5996864e35aaaba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363674"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>获取 windowsPhone81VpnConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

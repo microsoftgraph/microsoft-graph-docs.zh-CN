@@ -1,12 +1,13 @@
 ---
 title: 创建 remoteAssistancePartner
 description: 创建新的 remoteAssistancePartner 对象。
-ms.openlocfilehash: c1ae8b44a6ffc11432c2dce1ab5f98c02abdb0ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 477f16ef50828d7248cb75697c59163ab76702f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010372"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334326"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
@@ -35,7 +36,7 @@ POST /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

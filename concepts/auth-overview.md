@@ -1,12 +1,13 @@
 ---
 title: 获取访问令牌以调用 Microsoft Graph
 description: '为了调用 Microsoft Graph，应用需要从 Microsoft 的云标识服务 Azure Active Directory (Azure AD) 获取访问令牌。访问令牌包含有关应用的信息（或声明）以及其具有的可通过 Microsoft Graph 使用资源和 API 的权限。若要获取一个访问令牌，应用必须能够使用 Azure AD 进行身份验证，并且用户或管理员需要获得授权以访问所需的 Microsoft Graph 资源。 '
-ms.openlocfilehash: 2dc05d2edf1e5096b525d880b7d363f2e98721b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 2352802393d3e36c611dfab1d767e6bd76d69d8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334298"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>获取访问令牌以调用 Microsoft Graph
 

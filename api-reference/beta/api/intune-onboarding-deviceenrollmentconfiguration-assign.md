@@ -1,12 +1,13 @@
 ---
 title: assign 操作
 description: 尚未记录
-ms.openlocfilehash: 029397cbbc00a4e29ed2998c66567ba3c843a1ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 058bdf827b93d04a92d5064f32ce96d6b5c42c49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337756"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

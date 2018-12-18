@@ -1,12 +1,13 @@
 ---
 title: 删除 advancedThreatProtectionOnboardingDeviceSettingState
 description: 删除 advancedThreatProtectionOnboardingDeviceSettingState。
-ms.openlocfilehash: 171fa331ae6dcb2c9fc193376df61c27e29d3485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b6082f84253b3ad1fe43f28433e00b2b341a64f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046718"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344644"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>删除 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advanced
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

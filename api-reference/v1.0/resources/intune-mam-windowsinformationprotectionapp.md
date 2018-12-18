@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionApp 资源类型
 description: 用于 Windows 信息保护的应用
-ms.openlocfilehash: 0ea48e087d4a8450ee47b2239b7c67f3b050da85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 480d9d2b1d8049eebb664923c0b1e31bd86bd9da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008295"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337476"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27008295"
 |description|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
-|denied|布尔值|如果为 true，则应用的保护或免除受到拒绝。|
+|denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|
 
 ## <a name="relationships"></a>关系
 无

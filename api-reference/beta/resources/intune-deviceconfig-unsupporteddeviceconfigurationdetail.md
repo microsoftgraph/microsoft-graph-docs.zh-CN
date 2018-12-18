@@ -1,12 +1,13 @@
 ---
 title: unsupportedDeviceConfigurationDetail 资源类型
 description: 为什么说实体是不受支持的说明。
-ms.openlocfilehash: d64d6aedf5da0f3cd79e2582d84fa4f19ea7ccfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4cccf49366a803e5f964605a4dc4ba7f56707823
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344049"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail 资源类型
 

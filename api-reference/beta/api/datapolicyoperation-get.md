@@ -1,12 +1,12 @@
 ---
 title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
-ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362081"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -17,9 +17,9 @@ ms.locfileid: "27156017"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委派（工作或学校帐户） |  User.Export.All 和 User.Read.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All | 
+|Application | User.Export.All 和 User.Read.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +28,7 @@ GET /dataPolicyOperations/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | 持有者 {token}|
 

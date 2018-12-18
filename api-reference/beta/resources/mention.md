@@ -1,12 +1,13 @@
 ---
 title: 有提及资源类型
-description: '代表到个人基于此人的电子邮件地址的通知。 也称为是通知的这种类型 '
-ms.openlocfilehash: 7e70c6a84665b474ea4d8421f60e78687ebb49b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 代表到个人基于此人的电子邮件地址的通知。
+author: simonhult
+ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334227"
 ---
 # <a name="mention-resource-type"></a>有提及资源类型
 

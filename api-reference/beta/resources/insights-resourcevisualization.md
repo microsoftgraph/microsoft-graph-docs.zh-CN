@@ -1,12 +1,13 @@
 ---
 title: resourceVisualization 资源类型
 description: 包含属性的见解复杂类型。
-ms.openlocfilehash: 3ed61a8547e072938fc073d90f2592baf4c08fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046537"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333535"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
@@ -54,7 +55,7 @@ ms.locfileid: "27046537"
 -   InfoPath
 -   Visio
 -   Publisher
--   项目
+-   Project
 -   Access
 -   邮件
 -   Csv
@@ -68,8 +69,8 @@ ms.locfileid: "27046537"
 -   Xml
 -   文章
 -   ExternalContent
--   文件夹
--   其他
+-   Folder
+-   Other
 
 示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -77,7 +78,7 @@ ms.locfileid: "27046537"
 受支持的类型从其[洞察](insights.md)返回文件的容器可能因用。 例如，仅[共享](insights-shared.md)洞察返回文件 '收存箱、 框中，和 GDrive。
 
 -   OneDriveBusiness
--   网站
+-   Site
 -   邮件
 -   收存箱
 -   盒状

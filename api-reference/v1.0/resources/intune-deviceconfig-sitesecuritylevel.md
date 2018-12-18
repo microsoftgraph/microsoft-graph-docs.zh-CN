@@ -1,12 +1,13 @@
 ---
 title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
-ms.openlocfilehash: 3750cb841c1ea8df470863e12c7ab5c25cb295e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfb429ec1b409e2ccc79d2b0cd029cd06d517b5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335586"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 

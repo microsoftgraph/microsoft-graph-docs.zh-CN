@@ -1,12 +1,13 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
 description: 将源文件上载到租户中的特定学校数据同步配置文件的 Azure blob 存储检索共享的访问签名 (SA)。 SAS 令牌具有一小时的有效性。
-ms.openlocfilehash: cf685b56718664ca68e0fde697872fe624c7e7b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 15a4536e21307067ac55783edd9eac675ae4144b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341060"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -21,7 +22,7 @@ ms.locfileid: "27047257"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | Permissions |
+| 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 （个人 Microsoft 帐户|不支持。|
@@ -34,7 +35,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
+| Name       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

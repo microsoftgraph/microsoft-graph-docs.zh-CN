@@ -1,12 +1,13 @@
 ---
 title: 列表 iosEduDeviceConfigurations
 description: 列出属性和 iosEduDeviceConfiguration 对象之间的关系。
-ms.openlocfilehash: ed9d6aebcc0437d21bd64027dc41092f9e5fb471
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9b068086d24114e7fcebd196c2cda56d19d4b27
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045098"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332905"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>列表 iosEduDeviceConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

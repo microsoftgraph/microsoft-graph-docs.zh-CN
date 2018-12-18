@@ -1,12 +1,13 @@
 ---
 title: deviceOperatingSystemSummary 资源类型
 description: 设备操作系统摘要。
-ms.openlocfilehash: 13224e18f117f13a6f7c7090d1aa9cb2686350c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8dd3bf85a75d5acf6ae4bb0cecb8fd360c4e0459
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341858"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 windowsInformationProtectionPolicy
 description: 更新 windowsInformationProtectionPolicy 对象的属性。
-ms.openlocfilehash: b16084790fcdb4ad613dcedcc04cf5d0bf9ab2ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b2ab06d8ee197842314a2bd03d4cc457401c4ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363765"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>更新 windowsInformationProtectionPolicy
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

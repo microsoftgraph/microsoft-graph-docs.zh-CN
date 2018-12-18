@@ -1,12 +1,13 @@
 ---
 title: 更新区域
 description: 更新 range 对象的属性。
-ms.openlocfilehash: c02dbc7cec4aa53f5b857f4d82ae9d7a7b4e8a3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3af876a73a8e7c401512c9aafc38e677769f868e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354948"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -28,7 +29,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -41,7 +42,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 |columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
 |formulas|Json|表示采用 A1 表示法的公式。|
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
-|formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
+|formulasR1C1|Json|表示采用 R1C1 表示法的公式。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。|
 |rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|

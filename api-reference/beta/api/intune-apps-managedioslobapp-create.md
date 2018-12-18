@@ -1,12 +1,13 @@
 ---
 title: 创建 managedIOSLobApp
 description: 创建新的 managedIOSLobApp 对象。
-ms.openlocfilehash: 8e5e4bf9e4d713ce973394eaedfc626114ebc6da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c40e43864395c7bb7c86b1a424837f2b129468a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342810"
 ---
 # <a name="create-managedioslobapp"></a>创建 managedIOSLobApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

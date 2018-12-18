@@ -1,12 +1,13 @@
 ---
 title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
-ms.openlocfilehash: 47f732d850b96e24b0542114d2d868169c718da9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 99ec27bc9a60e25d28202d2ebd82155089963c21
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042985"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362165"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -31,7 +32,7 @@ PATCH /administrativeUnits/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

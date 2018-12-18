@@ -1,12 +1,13 @@
 ---
 title: 列出 vppTokens
 description: 列出 vppToken 对象的属性和关系。
-ms.openlocfilehash: abd0f194ab05778ce02c8b2c236d5f1506f84306
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a3e1d52c91d28b1714b1111f3207942355c5156
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344329"
 ---
 # <a name="list-vpptokens"></a>列出 vppTokens
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

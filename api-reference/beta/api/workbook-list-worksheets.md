@@ -1,12 +1,13 @@
 ---
 title: 列出工作表
 description: 检索 worksheet 对象的列表。
-ms.openlocfilehash: 37cca19ac3f93e3795f242d7d1cc7da509b3a11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 218138a8bb9c15430c3693ab137afea9de91e059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049506"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332989"
 ---
 # <a name="list-worksheets"></a>列出工作表
 
@@ -31,7 +32,7 @@ GET /workbook/worksheets
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

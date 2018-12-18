@@ -1,12 +1,13 @@
 ---
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
-ms.openlocfilehash: f08335f131c97e67cb93d8dafcbce4c39bbef2e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02fec89a615993bb409fbf3ae6c0a98799311bce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333346"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

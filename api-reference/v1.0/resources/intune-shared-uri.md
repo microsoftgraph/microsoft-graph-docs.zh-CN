@@ -1,12 +1,13 @@
 ---
 title: uri 资源类型
 description: 尚未记录
-ms.openlocfilehash: 260e5ebab03281498d51165f606963f182ee6f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c158b53a525d58ce6496547a28d3d278775d9f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362704"
 ---
 # <a name="uri-resource-type"></a>uri 资源类型
 

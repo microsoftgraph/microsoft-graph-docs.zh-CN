@@ -1,12 +1,13 @@
 ---
 title: 'workbookRangeView: range'
 description: 返回与 rangeView 资源相关联的范围。
-ms.openlocfilehash: cebab10e1a8904cf453971e4c3f04badb4b712cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e9c0c0f36231a29689c24d721d8c8978e8f1bf0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007643"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362732"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 返回与 rangeView 资源相关联的范围。
@@ -28,7 +29,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: windowsAutopilotSettings 资源类型
 description: WindowsAutopilotSettings 资源表示为与 Windows 设备数据同步服务的同步数据的 Windows 自动执行某些操作帐户。
-ms.openlocfilehash: 41caab7578be08a56ecad94bbae11c43945037c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d502af67cc1a68c56e1bdd74965e77224947b5d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045515"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344630"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings 资源类型
 

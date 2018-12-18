@@ -1,12 +1,13 @@
 ---
 title: plannerFavoritePlanReferenceCollection 资源类型
 description: " 值是 plannerFavoritePlanReference 对象。"
-ms.openlocfilehash: 78544e17604a0938cc0e88969e2542fc26bdff1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 056cb7b9ba728aa9dfe44ae4b90e550876461d6b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344224"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27047579"
 **PlannerFavoritePlanReferenceCollection**资源代表由用户标记为收藏的计划对引用的集合。 此资源是开放的类型， [plannerUser](planneruser.md)对象的一部分。 中的属性值对的属性名称是相应计划; 的 ID值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。
 
 
-## <a name="properties"></a>属性
+## <a name="properties"></a>Properties
 您可以定义此打开类型的属性。 属性名称是`id` [plannerPlan](plannerplan.md)资源的值和它们的值必须是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。 在收藏夹列表中删除项目，设置对属性的值`null`。
 
 

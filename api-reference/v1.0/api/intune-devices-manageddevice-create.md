@@ -1,12 +1,13 @@
 ---
 title: 创建 managedDevice
 description: 创建新的 managedDevice 对象。
-ms.openlocfilehash: 9fa8efe9a4dd1a4ec753c25382f95f383bf0fe8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa37f7114dac2d990d5d5cd90fd26ae64555661d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340304"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 
@@ -37,7 +38,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
