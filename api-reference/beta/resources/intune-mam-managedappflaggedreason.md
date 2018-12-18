@@ -1,12 +1,13 @@
 ---
 title: managedAppFlaggedReason 枚举类型
 description: 用户已标记为其原因
-ms.openlocfilehash: 3955c5c841b4eede13149c08ca61a3f3aa84e97a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 395cd446863b88fade45c7160302cd05132f1d52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358420"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 

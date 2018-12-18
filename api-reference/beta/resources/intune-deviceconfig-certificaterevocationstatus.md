@@ -1,12 +1,13 @@
 ---
 title: certificateRevocationStatus 枚举类型
 description: 证书吊销状态。
-ms.openlocfilehash: 5fb80b85cb6fe65e20439f8a3242b6bc74b30184
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d41845ba882136c15d944c8a7f91083e6fa47cdb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042938"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358224"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
 

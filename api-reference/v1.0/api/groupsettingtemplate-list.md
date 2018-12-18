@@ -1,12 +1,13 @@
 ---
 title: List groupSettingTemplates
 description: 组设置模板表示一组模板，用于创建组设置并在租户内使用。此操作将检索可用 groupSettingTemplates 对象的列表。
-ms.openlocfilehash: e3a92b174b4d1d95cbbf22385b56484441a6e3eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359358"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -34,7 +35,7 @@ GET /groupSettingTemplates
 > **注意：** 不支持 $filter。
 
 ## <a name="request-headers"></a>请求标头
-| 名称 | 说明 |
+| Name | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

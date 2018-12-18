@@ -1,12 +1,13 @@
 ---
 title: notificationMessageTemplate 资源类型
 description: " 部分。 使用 notificationMessageTemplate 对象创建自定义通知，以便管理员在配置非合规操作时进行选择。"
-ms.openlocfilehash: 1708dcb947eaa71f6a079b65041b6612267a160c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 110fdfd12c7fc8f556b276581c470d688ae4a35d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358091"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate 资源类型
 

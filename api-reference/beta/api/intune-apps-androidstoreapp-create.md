@@ -1,12 +1,13 @@
 ---
 title: 创建 androidStoreApp
 description: 创建新的 androidStoreApp 对象。
-ms.openlocfilehash: cfb571610880a54f0b3b73e0d86841b8c1365db9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a28a00433d6a5cda83892efcc12284f7c10480a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358665"
 ---
 # <a name="create-androidstoreapp"></a>创建 androidStoreApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

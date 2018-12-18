@@ -1,12 +1,13 @@
 ---
 title: windowsStartMenuModeType 枚举类型
 description: 开始菜单的显示模式的类型。
-ms.openlocfilehash: d9f44873c0c0fc8003e07b035939d28d5266a6ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fb0f80a24442af2ce584123633c1d25b41f7077b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357363"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 

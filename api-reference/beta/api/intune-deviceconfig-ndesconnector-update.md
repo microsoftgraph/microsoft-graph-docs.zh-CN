@@ -1,12 +1,13 @@
 ---
 title: 更新 ndesConnector
 description: 更新 ndesConnector 对象的属性。
-ms.openlocfilehash: 963d27b89cb8c8731eb466475f65b36257f56b45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043434"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358301"
 ---
 # <a name="update-ndesconnector"></a>更新 ndesConnector
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 获取 mobileContainedApp
 description: 读取属性和 mobileContainedApp 对象的关系。
-ms.openlocfilehash: cb03323f3d56704c8e64c5bd1f710e2e278f128e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dac57ef838c56868a655968317df653f3b0f5488
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359246"
 ---
 # <a name="get-mobilecontainedapp"></a>获取 mobileContainedApp
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

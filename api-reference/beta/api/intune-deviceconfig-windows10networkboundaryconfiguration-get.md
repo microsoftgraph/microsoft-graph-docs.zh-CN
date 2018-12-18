@@ -1,12 +1,13 @@
 ---
 title: 获取 windows10NetworkBoundaryConfiguration
 description: 读取属性和 windows10NetworkBoundaryConfiguration 对象的关系。
-ms.openlocfilehash: 1c8cfb8136a453d94457dd74d81d495e5572f4dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3fb567119ebacc4fdcffa3c252e0300ba145bcf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358350"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>获取 windows10NetworkBoundaryConfiguration
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

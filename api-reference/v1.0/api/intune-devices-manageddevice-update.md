@@ -1,12 +1,13 @@
 ---
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
-ms.openlocfilehash: 4e4f0cc7213a20477227683431fdd8af6e06bb9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 85803f6d5474ecc0e0e2f05cf974d705d4d47737
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358749"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

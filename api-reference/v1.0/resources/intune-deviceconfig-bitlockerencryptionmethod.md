@@ -1,12 +1,13 @@
 ---
 title: bitLockerEncryptionMethod 枚举类型
 description: BitLockerEncryptionMethod 类型
-ms.openlocfilehash: d7fbb07b993fac954073b411276bd1f864acfa00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2660214952924210e7fafe45a99fb3449b8281a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359596"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>bitLockerEncryptionMethod 枚举类型
 

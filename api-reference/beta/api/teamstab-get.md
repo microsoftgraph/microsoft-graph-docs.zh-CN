@@ -1,12 +1,13 @@
 ---
 title: 获取选项卡
 description: '检索的属性和指定的选项卡的关系。 '
-ms.openlocfilehash: 7bef495fbb37a878a291f2aac6004d386e932cbd
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 35aa21e1ffce9579fd11de25fb453ff6b71aa173
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222406"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357888"
 ---
 # <a name="get-tab"></a>获取选项卡
 

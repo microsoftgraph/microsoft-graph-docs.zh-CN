@@ -1,12 +1,13 @@
 ---
 title: androidRequiredPasswordType 枚举类型
 description: Android 所需的密码类型。
-ms.openlocfilehash: 96873cdc228759ea1354c7f55d97ba1046ffb2e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e08df0ef61b6d60227f9dec2382a57884c2f4bdf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355984"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 

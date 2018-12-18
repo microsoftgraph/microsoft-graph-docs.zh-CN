@@ -1,12 +1,13 @@
 ---
 title: ChartAxisTitle 资源类型
 description: 表示图表坐标轴的标题。
-ms.openlocfilehash: 83d3712367b3c56b2fe30e7e1e464491b77fbee5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f787e4572c0b0f499740e2ba1e790fec1ce7ba61
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357293"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle 资源类型
 

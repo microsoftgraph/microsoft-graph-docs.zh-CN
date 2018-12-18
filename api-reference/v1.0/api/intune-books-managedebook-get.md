@@ -1,12 +1,13 @@
 ---
 title: 获取 managedEBook
 description: 读取 managedEBook 对象的属性和关系。
-ms.openlocfilehash: 852bce05d023dc2adff92ccb670da2b9996d45af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1be4f5915334242055a37a942ea28077350c435f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008214"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359645"
 ---
 # <a name="get-managedebook"></a>获取 managedEBook
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

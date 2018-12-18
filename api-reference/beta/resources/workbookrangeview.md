@@ -1,12 +1,13 @@
 ---
 title: rangeView 资源类型
 description: RangeView 表示父范围的一组可见单元格。
-ms.openlocfilehash: 84ff9d315a6bfa8c4b03fad1b8f05670cb2b155c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a5157d3917f9f4ed51437d9ae9854194b85ae4d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359484"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 

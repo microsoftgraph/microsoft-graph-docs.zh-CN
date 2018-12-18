@@ -1,12 +1,13 @@
 ---
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
-ms.openlocfilehash: fa831967b7c091e8f698de4acef70cfec7119435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f608f13f7580e76d1e1934d5aea788a2ce6738f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357825"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -107,8 +108,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的设备的用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。|
-|autopilotEnrolled|布尔值|如果通过自动试点注册托管的设备，报告。|
-|requireUserEnrollmentApproval|布尔值|报告托管的 iOS 设备是否用户审批注册。|
+|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。|
+|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期|
 |iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
 |udid|字符串|IOS 和 macOS 设备的唯一设备标识符。|

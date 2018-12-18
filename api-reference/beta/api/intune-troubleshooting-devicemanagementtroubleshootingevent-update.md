@@ -1,12 +1,13 @@
 ---
 title: 更新 deviceManagementTroubleshootingEvent
 description: 更新 deviceManagementTroubleshootingEvent 对象的属性。
-ms.openlocfilehash: aba683521c34168c31991cda46ff3e965f73e320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec4cf8d98d51ec369739158c3cf8f6daf2e2ac8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047709"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358805"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>更新 deviceManagementTroubleshootingEvent
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

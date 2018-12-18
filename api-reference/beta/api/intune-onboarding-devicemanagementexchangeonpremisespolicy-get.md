@@ -1,12 +1,13 @@
 ---
 title: 获取 deviceManagementExchangeOnPremisesPolicy
 description: 读取属性和 deviceManagementExchangeOnPremisesPolicy 对象的关系。
-ms.openlocfilehash: 0d6047569f6b8bfa5809b41e5308f787bba2101a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03e7bfcb1a09fd01d83e0dabcd99e31d69537446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357328"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>获取 deviceManagementExchangeOnPremisesPolicy
 
@@ -40,7 +41,7 @@ GET /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPrem
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

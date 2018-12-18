@@ -1,12 +1,13 @@
 ---
 title: 列表 remoteActionAudits
 description: 列出属性和 remoteActionAudit 对象之间的关系。
-ms.openlocfilehash: f3387c7857f0e02042775de7ef18d8915a464060
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a261cc164ab4a792ed22613831f32b755e3216ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359064"
 ---
 # <a name="list-remoteactionaudits"></a>列表 remoteActionAudits
 
@@ -37,7 +38,7 @@ GET /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

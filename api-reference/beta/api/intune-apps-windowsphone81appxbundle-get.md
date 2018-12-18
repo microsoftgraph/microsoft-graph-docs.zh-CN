@@ -1,12 +1,13 @@
 ---
 title: 获取 windowsPhone81AppXBundle
 description: 读取属性和 windowsPhone81AppXBundle 对象的关系。
-ms.openlocfilehash: bbf32f723ae9794aafb6a337338b54430fd0cbaa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a48b58201952f9d6115ee496e29355ab9015f21c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043620"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358112"
 ---
 # <a name="get-windowsphone81appxbundle"></a>获取 windowsPhone81AppXBundle
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

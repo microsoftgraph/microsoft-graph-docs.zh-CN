@@ -1,12 +1,13 @@
 ---
 title: 获取 educationAssignmentResource
 description: '工作分配上获取特定资源的属性。  '
-ms.openlocfilehash: fb557e72082476e4bcecc6328dd97717f7221d01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 25c448f3247631c9129a837bd00842588bf152d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358812"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 

@@ -1,12 +1,13 @@
 ---
 title: 删除 deviceConfigurationConflictSummary
 description: 删除 deviceConfigurationConflictSummary。
-ms.openlocfilehash: 2b33bb6fd277f72d0b026d98c269e147e780e8f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0dba169b531a7fb5f01661c617cf01950d3e90b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041836"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357531"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>删除 deviceConfigurationConflictSummary
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceConfigurationConflictSummary/{deviceConfiguration
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

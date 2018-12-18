@@ -1,12 +1,13 @@
 ---
 title: 获取 calendarGroup
 description: 检索日历组对象的属性和关系。
-ms.openlocfilehash: ffaf4fa4fbc96649bb93a430e77be758e8768ceb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fce49730733537b14eff145a6f6acd9fe4d82485
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358315"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 类型   | 说明               |
+| Name          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {token}。必需。 |
 

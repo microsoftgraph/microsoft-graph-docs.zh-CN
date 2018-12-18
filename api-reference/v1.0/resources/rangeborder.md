@@ -1,12 +1,13 @@
 ---
 title: RangeBorder 资源类型
 description: 表示对象的边框。
-ms.openlocfilehash: 30d5548ba867dc652c700985d65a6db01ce8bc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359148"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: androidForWorkRequiredPasswordType 枚举类型
 description: Android 的工作被必需的密码类型。
-ms.openlocfilehash: 8866ac49126f39204e0323082bf80e27f5f59962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cefb41dea7a92f1b1a640d8c9bf701a321ad9ead
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044096"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357279"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 枚举类型
 

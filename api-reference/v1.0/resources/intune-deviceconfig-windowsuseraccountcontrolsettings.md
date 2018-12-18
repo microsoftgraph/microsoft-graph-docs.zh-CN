@@ -1,12 +1,13 @@
 ---
 title: windowsUserAccountControlSettings 枚举类型
 description: 对于 Windows 用户帐户控制设置的可能值。
-ms.openlocfilehash: 6bfbf4b08abb5c0105d788c652932e6b03061bdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33e9c914e9c816257cebbebe3754865c5ef17db7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358070"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 

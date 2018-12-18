@@ -1,12 +1,13 @@
 ---
 title: 创建 windowsStoreApp
 description: 创建新的 windowsStoreApp 对象。
-ms.openlocfilehash: 97b791e89752cc059f1adf77691b0a50edee4dc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0640975c41aa8ad12abf481ae37c6770976f321a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356635"
 ---
 # <a name="create-windowsstoreapp"></a>创建 windowsStoreApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
