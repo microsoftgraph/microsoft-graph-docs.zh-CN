@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph 中的社交智能和分析概述
-description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
-ms.openlocfilehash: 518d7cb773ae32199c38f2eb8459d785b2750f18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。
+author: simonhult
+ms.openlocfilehash: b4fd267f577f8427bd13ba314183d7f9b345c8d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314586"
 ---
 # <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Microsoft Graph 中的社交智能和分析概述
 

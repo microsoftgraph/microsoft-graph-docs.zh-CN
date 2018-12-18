@@ -1,12 +1,13 @@
 ---
 title: 在 Microsoft Teams 中配置内置选项卡类型
-description: '使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项卡 '
-ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项卡
+author: nkramer
+ms.openlocfilehash: 05a7f719cdedad8ea9040721d9411e45529d3c09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091797"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316385"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
