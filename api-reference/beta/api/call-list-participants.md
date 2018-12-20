@@ -2,67 +2,67 @@
 title: 参与者列表
 description: 检索呼叫中的参与者对象的列表。
 author: VinodRavichandran
-ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c22e276f7b7bb1ddd0a082bd54f0b5b8d93226c1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339116"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380441"
 ---
-# <a name="list-participants"></a><span data-ttu-id="5939e-103">参与者列表</span><span class="sxs-lookup"><span data-stu-id="5939e-103">List participants</span></span>
+# <a name="list-participants"></a><span data-ttu-id="c5e27-103">参与者列表</span><span class="sxs-lookup"><span data-stu-id="c5e27-103">List participants</span></span>
 
-> <span data-ttu-id="5939e-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="5939e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5939e-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5939e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c5e27-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="c5e27-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c5e27-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="c5e27-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="5939e-106">检索呼叫中的参与者对象的列表。</span><span class="sxs-lookup"><span data-stu-id="5939e-106">Retrieve a list of participant objects in the call.</span></span>
+<span data-ttu-id="c5e27-106">检索呼叫中的参与者对象的列表。</span><span class="sxs-lookup"><span data-stu-id="c5e27-106">Retrieve a list of participant objects in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5939e-107">权限</span><span class="sxs-lookup"><span data-stu-id="5939e-107">Permissions</span></span>
-<span data-ttu-id="5939e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5939e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5e27-107">权限</span><span class="sxs-lookup"><span data-stu-id="c5e27-107">Permissions</span></span>
+<span data-ttu-id="c5e27-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c5e27-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5939e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5939e-110">Permission type</span></span> | <span data-ttu-id="5939e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5939e-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c5e27-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c5e27-110">Permission type</span></span> | <span data-ttu-id="c5e27-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c5e27-111">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="5939e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5939e-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="5939e-113">不支持</span><span class="sxs-lookup"><span data-stu-id="5939e-113">Not Supported</span></span>        |
-| <span data-ttu-id="5939e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5939e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5939e-115">不支持</span><span class="sxs-lookup"><span data-stu-id="5939e-115">Not Supported</span></span>        |
-| <span data-ttu-id="5939e-116">Application</span><span class="sxs-lookup"><span data-stu-id="5939e-116">Application</span></span>     | <span data-ttu-id="5939e-117">无</span><span class="sxs-lookup"><span data-stu-id="5939e-117">None</span></span>                                        |
+| <span data-ttu-id="c5e27-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c5e27-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="c5e27-113">不支持</span><span class="sxs-lookup"><span data-stu-id="c5e27-113">Not Supported</span></span>        |
+| <span data-ttu-id="c5e27-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c5e27-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5e27-115">不支持</span><span class="sxs-lookup"><span data-stu-id="c5e27-115">Not Supported</span></span>        |
+| <span data-ttu-id="c5e27-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c5e27-116">Application</span></span>     | <span data-ttu-id="c5e27-117">无</span><span class="sxs-lookup"><span data-stu-id="c5e27-117">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="5939e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5939e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5e27-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c5e27-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5939e-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5939e-119">Optional query parameters</span></span>
-<span data-ttu-id="5939e-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5939e-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c5e27-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c5e27-119">Optional query parameters</span></span>
+<span data-ttu-id="c5e27-120">此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。</span><span class="sxs-lookup"><span data-stu-id="c5e27-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5939e-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="5939e-121">Request headers</span></span>
-| <span data-ttu-id="5939e-122">Name</span><span class="sxs-lookup"><span data-stu-id="5939e-122">Name</span></span>          | <span data-ttu-id="5939e-123">说明</span><span class="sxs-lookup"><span data-stu-id="5939e-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c5e27-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="c5e27-121">Request headers</span></span>
+| <span data-ttu-id="c5e27-122">名称</span><span class="sxs-lookup"><span data-stu-id="c5e27-122">Name</span></span>          | <span data-ttu-id="c5e27-123">说明</span><span class="sxs-lookup"><span data-stu-id="c5e27-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="5939e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5939e-124">Authorization</span></span> | <span data-ttu-id="5939e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5939e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c5e27-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5e27-124">Authorization</span></span> | <span data-ttu-id="c5e27-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c5e27-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5939e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5939e-127">Request body</span></span>
-<span data-ttu-id="5939e-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5939e-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5e27-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="c5e27-127">Request body</span></span>
+<span data-ttu-id="c5e27-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c5e27-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5939e-129">响应</span><span class="sxs-lookup"><span data-stu-id="5939e-129">Response</span></span>
-<span data-ttu-id="5939e-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[参与者](../resources/participant.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="5939e-130">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c5e27-129">响应</span><span class="sxs-lookup"><span data-stu-id="c5e27-129">Response</span></span>
+<span data-ttu-id="c5e27-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[参与者](../resources/participant.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c5e27-130">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5939e-131">示例</span><span class="sxs-lookup"><span data-stu-id="5939e-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c5e27-131">示例</span><span class="sxs-lookup"><span data-stu-id="c5e27-131">Examples</span></span>
 
-### <a name="example-1"></a><span data-ttu-id="5939e-132">示例 1</span><span class="sxs-lookup"><span data-stu-id="5939e-132">Example 1</span></span>
+### <a name="example-1"></a><span data-ttu-id="c5e27-132">示例 1</span><span class="sxs-lookup"><span data-stu-id="c5e27-132">Example 1</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5939e-133">请求</span><span class="sxs-lookup"><span data-stu-id="5939e-133">Request</span></span>
-<span data-ttu-id="5939e-134">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5939e-134">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c5e27-133">请求</span><span class="sxs-lookup"><span data-stu-id="c5e27-133">Request</span></span>
+<span data-ttu-id="c5e27-134">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="c5e27-134">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "get_participants"
+  "name": "get-participants"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants
 ```
 
-##### <a name="response"></a><span data-ttu-id="5939e-135">响应</span><span class="sxs-lookup"><span data-stu-id="5939e-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c5e27-135">响应</span><span class="sxs-lookup"><span data-stu-id="c5e27-135">Response</span></span>
 
-> <span data-ttu-id="5939e-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5939e-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c5e27-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c5e27-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -108,16 +108,16 @@ Content-Length: 1152
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="5939e-138">示例 2</span><span class="sxs-lookup"><span data-stu-id="5939e-138">Example 2</span></span>
+### <a name="example-2"></a><span data-ttu-id="c5e27-138">示例 2</span><span class="sxs-lookup"><span data-stu-id="c5e27-138">Example 2</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5939e-139">请求</span><span class="sxs-lookup"><span data-stu-id="5939e-139">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c5e27-139">请求</span><span class="sxs-lookup"><span data-stu-id="c5e27-139">Request</span></span>
 
 ```http
 GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
 Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a><span data-ttu-id="5939e-140">响应</span><span class="sxs-lookup"><span data-stu-id="5939e-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c5e27-140">响应</span><span class="sxs-lookup"><span data-stu-id="c5e27-140">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK

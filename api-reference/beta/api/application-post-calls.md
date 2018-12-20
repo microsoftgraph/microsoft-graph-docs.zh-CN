@@ -1,63 +1,63 @@
 ---
 title: 创建呼叫
 description: 创建新的呼叫。
-author: lleonard-msft
-ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348767"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380385"
 ---
-# <a name="create-call"></a><span data-ttu-id="93dbb-103">创建呼叫</span><span class="sxs-lookup"><span data-stu-id="93dbb-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="460bf-103">创建呼叫</span><span class="sxs-lookup"><span data-stu-id="460bf-103">Create call</span></span>
 
-> <span data-ttu-id="93dbb-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="93dbb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="93dbb-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="93dbb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="460bf-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="460bf-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="460bf-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="460bf-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="93dbb-106">创建新的呼叫。</span><span class="sxs-lookup"><span data-stu-id="93dbb-106">Create a new call.</span></span>
+<span data-ttu-id="460bf-106">创建新的呼叫。</span><span class="sxs-lookup"><span data-stu-id="460bf-106">Create a new call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="93dbb-107">权限</span><span class="sxs-lookup"><span data-stu-id="93dbb-107">Permissions</span></span>
-<span data-ttu-id="93dbb-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="93dbb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="460bf-107">权限</span><span class="sxs-lookup"><span data-stu-id="460bf-107">Permissions</span></span>
+<span data-ttu-id="460bf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="460bf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="93dbb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="93dbb-110">Permission type</span></span>                        | <span data-ttu-id="93dbb-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="93dbb-111">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="460bf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="460bf-110">Permission type</span></span>                        | <span data-ttu-id="460bf-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="460bf-111">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="93dbb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="93dbb-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="93dbb-113">不支持</span><span class="sxs-lookup"><span data-stu-id="93dbb-113">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="93dbb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="93dbb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93dbb-115">不支持</span><span class="sxs-lookup"><span data-stu-id="93dbb-115">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="93dbb-116">Application</span><span class="sxs-lookup"><span data-stu-id="93dbb-116">Application</span></span>                            | <span data-ttu-id="93dbb-117">Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="93dbb-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="460bf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="460bf-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="460bf-113">不支持</span><span class="sxs-lookup"><span data-stu-id="460bf-113">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="460bf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="460bf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="460bf-115">不支持</span><span class="sxs-lookup"><span data-stu-id="460bf-115">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="460bf-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="460bf-116">Application</span></span>                            | <span data-ttu-id="460bf-117">Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="460bf-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="93dbb-118">**注意：** 与承载的应用程序媒体呼叫，您需要使用上表中列出的权限之一 Calls.AccessMedia.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
+> <span data-ttu-id="460bf-118">**注意：** 与承载的应用程序媒体呼叫，您需要使用上表中列出的权限之一 Calls.AccessMedia.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="93dbb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="460bf-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="460bf-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 POST /applications/{id}/calls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="93dbb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="93dbb-120">Request headers</span></span>
-| <span data-ttu-id="93dbb-121">Name</span><span class="sxs-lookup"><span data-stu-id="93dbb-121">Name</span></span>          | <span data-ttu-id="93dbb-122">说明</span><span class="sxs-lookup"><span data-stu-id="93dbb-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="460bf-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="460bf-120">Request headers</span></span>
+| <span data-ttu-id="460bf-121">名称</span><span class="sxs-lookup"><span data-stu-id="460bf-121">Name</span></span>          | <span data-ttu-id="460bf-122">说明</span><span class="sxs-lookup"><span data-stu-id="460bf-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="93dbb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="93dbb-123">Authorization</span></span> | <span data-ttu-id="93dbb-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="93dbb-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="460bf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="460bf-123">Authorization</span></span> | <span data-ttu-id="460bf-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="460bf-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="93dbb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="93dbb-126">Request body</span></span>
-<span data-ttu-id="93dbb-127">在请求正文中，提供[呼叫](../resources/call.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93dbb-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="460bf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="460bf-126">Request body</span></span>
+<span data-ttu-id="460bf-127">在请求正文中，提供[呼叫](../resources/call.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="460bf-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-> <span data-ttu-id="93dbb-128">**注意：** 属性标记为`Server generated`处理时，将忽略`POST`上`app/calls`。</span><span class="sxs-lookup"><span data-stu-id="93dbb-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
+> <span data-ttu-id="460bf-128">**注意：** 属性标记为`Server generated`处理时，将忽略`POST`上`app/calls`。</span><span class="sxs-lookup"><span data-stu-id="460bf-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="93dbb-129">响应</span><span class="sxs-lookup"><span data-stu-id="93dbb-129">Response</span></span>
-<span data-ttu-id="93dbb-130">如果成功，此方法返回`201 Created`响应代码和响应正文中的[呼叫](../resources/call.md)对象。</span><span class="sxs-lookup"><span data-stu-id="93dbb-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="460bf-129">响应</span><span class="sxs-lookup"><span data-stu-id="460bf-129">Response</span></span>
+<span data-ttu-id="460bf-130">如果成功，此方法返回`201 Created`响应代码和响应正文中的[呼叫](../resources/call.md)对象。</span><span class="sxs-lookup"><span data-stu-id="460bf-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="93dbb-131">示例</span><span class="sxs-lookup"><span data-stu-id="93dbb-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="460bf-131">示例</span><span class="sxs-lookup"><span data-stu-id="460bf-131">Examples</span></span>
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="93dbb-132">创建与承载的服务媒体的对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="93dbb-132">Create peer to peer VOIP call with service hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="460bf-132">创建与承载的服务媒体的对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="460bf-132">Create peer to peer VOIP call with service hosted media</span></span>
 
-> <span data-ttu-id="93dbb-133">**注意：** 此呼叫需要 Calls.Initiate.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="460bf-133">**注意：** 此呼叫需要 Calls.Initiate.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-134">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-134">Request</span></span>
-<span data-ttu-id="93dbb-135">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="93dbb-135">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-134">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-134">Request</span></span>
+<span data-ttu-id="460bf-135">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="460bf-135">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "create_call_from_application"
+  "name": "create-call-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -103,9 +103,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="93dbb-136">响应</span><span class="sxs-lookup"><span data-stu-id="93dbb-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="460bf-136">响应</span><span class="sxs-lookup"><span data-stu-id="460bf-136">Response</span></span>
 
-> <span data-ttu-id="93dbb-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="93dbb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="460bf-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="460bf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,6 +115,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",
@@ -157,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="93dbb-139">通知-建立</span><span class="sxs-lookup"><span data-stu-id="93dbb-139">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="460bf-139">通知-建立</span><span class="sxs-lookup"><span data-stu-id="460bf-139">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -185,7 +186,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="93dbb-140">通知-建立</span><span class="sxs-lookup"><span data-stu-id="93dbb-140">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="460bf-140">通知-建立</span><span class="sxs-lookup"><span data-stu-id="460bf-140">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -214,12 +215,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="93dbb-141">创建与承载的应用程序媒体的对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="93dbb-141">Create peer to peer VOIP call with application hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="460bf-141">创建与承载的应用程序媒体的对等 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="460bf-141">Create peer to peer VOIP call with application hosted media</span></span>
 
-> <span data-ttu-id="93dbb-142">注意： 需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="460bf-142">注意： 需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-143">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-143">Request</span></span>
-<span data-ttu-id="93dbb-144">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="93dbb-144">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-143">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-143">Request</span></span>
+<span data-ttu-id="460bf-144">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="460bf-144">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -265,11 +266,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="93dbb-145">创建承载服务媒体组呼叫</span><span class="sxs-lookup"><span data-stu-id="93dbb-145">Create group call with service hosted media</span></span>
+### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="460bf-145">创建承载服务媒体组呼叫</span><span class="sxs-lookup"><span data-stu-id="460bf-145">Create group call with service hosted media</span></span>
 
-> <span data-ttu-id="93dbb-146">**注意：** 本示例需要 Calls.InitiateGroupCalls.All 和 Calls.AccessMedia.All 的权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
+> <span data-ttu-id="460bf-146">**注意：** 本示例需要 Calls.InitiateGroupCalls.All 和 Calls.AccessMedia.All 的权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-147">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-147">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-147">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -331,11 +332,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="93dbb-148">加入与服务的专用会议承载媒体</span><span class="sxs-lookup"><span data-stu-id="93dbb-148">Join private meeting with service hosted media</span></span>
+### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="460bf-148">加入与服务的专用会议承载媒体</span><span class="sxs-lookup"><span data-stu-id="460bf-148">Join private meeting with service hosted media</span></span>
 
-> <span data-ttu-id="93dbb-149">**注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="460bf-149">**注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-150">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-150">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-150">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -387,11 +388,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="93dbb-151">通道使用加入会议服务承载媒体</span><span class="sxs-lookup"><span data-stu-id="93dbb-151">Join channel meeting with service hosted media</span></span>
+### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="460bf-151">通道使用加入会议服务承载媒体</span><span class="sxs-lookup"><span data-stu-id="460bf-151">Join channel meeting with service hosted media</span></span>
 
-> <span data-ttu-id="93dbb-152">**注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="460bf-152">**注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-153">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-153">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-153">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-153">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -444,11 +445,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="93dbb-154">以与承载的服务媒体来宾身份加入通道</span><span class="sxs-lookup"><span data-stu-id="93dbb-154">Join channel meeting as a guest with service hosted media</span></span>
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="460bf-154">以与承载的服务媒体来宾身份加入通道</span><span class="sxs-lookup"><span data-stu-id="460bf-154">Join channel meeting as a guest with service hosted media</span></span>
 
-> <span data-ttu-id="93dbb-155">**注意：** 本示例需要 Calls.JoinGroupCallsAsGuest.All 权限。</span><span class="sxs-lookup"><span data-stu-id="93dbb-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
+> <span data-ttu-id="460bf-155">**注意：** 本示例需要 Calls.JoinGroupCallsAsGuest.All 权限。</span><span class="sxs-lookup"><span data-stu-id="460bf-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="93dbb-156">请求</span><span class="sxs-lookup"><span data-stu-id="93dbb-156">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="460bf-156">请求</span><span class="sxs-lookup"><span data-stu-id="460bf-156">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls

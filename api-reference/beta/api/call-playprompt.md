@@ -2,60 +2,61 @@
 title: 呼叫： playPrompt
 description: 在呼叫中播放提示。
 author: VinodRavichandran
-ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316581"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380343"
 ---
-# <a name="call-playprompt"></a><span data-ttu-id="4541c-103">呼叫： playPrompt</span><span class="sxs-lookup"><span data-stu-id="4541c-103">call: playPrompt</span></span>
+# <a name="call-playprompt"></a><span data-ttu-id="669e8-103">呼叫： playPrompt</span><span class="sxs-lookup"><span data-stu-id="669e8-103">call: playPrompt</span></span>
 
-> <span data-ttu-id="4541c-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4541c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4541c-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4541c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="669e8-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="669e8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="669e8-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="669e8-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4541c-106">在呼叫中播放提示。</span><span class="sxs-lookup"><span data-stu-id="4541c-106">Play a prompt in the call.</span></span>
+<span data-ttu-id="669e8-106">在呼叫中播放提示。</span><span class="sxs-lookup"><span data-stu-id="669e8-106">Play a prompt in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4541c-107">权限</span><span class="sxs-lookup"><span data-stu-id="4541c-107">Permissions</span></span>
-<span data-ttu-id="4541c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4541c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="669e8-107">权限</span><span class="sxs-lookup"><span data-stu-id="669e8-107">Permissions</span></span>
+<span data-ttu-id="669e8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="669e8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4541c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4541c-110">Permission type</span></span>                        | <span data-ttu-id="4541c-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4541c-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="669e8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="669e8-110">Permission type</span></span>                        | <span data-ttu-id="669e8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="669e8-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4541c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4541c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4541c-113">不受支持。</span><span class="sxs-lookup"><span data-stu-id="4541c-113">Not Supported.</span></span>                               |
-| <span data-ttu-id="4541c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4541c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4541c-115">不受支持。</span><span class="sxs-lookup"><span data-stu-id="4541c-115">Not Supported.</span></span>                               |
-| <span data-ttu-id="4541c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4541c-116">Application</span></span>                            | <span data-ttu-id="4541c-117">无。</span><span class="sxs-lookup"><span data-stu-id="4541c-117">None.</span></span>                                        |
+| <span data-ttu-id="669e8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="669e8-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="669e8-113">不受支持。</span><span class="sxs-lookup"><span data-stu-id="669e8-113">Not Supported.</span></span>                               |
+| <span data-ttu-id="669e8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="669e8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="669e8-115">不受支持。</span><span class="sxs-lookup"><span data-stu-id="669e8-115">Not Supported.</span></span>                               |
+| <span data-ttu-id="669e8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="669e8-116">Application</span></span>                            | <span data-ttu-id="669e8-117">无。</span><span class="sxs-lookup"><span data-stu-id="669e8-117">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="4541c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4541c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="669e8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="669e8-118">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
 POST /applications/{id}/calls/{id}/playPrompt
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4541c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4541c-119">Request headers</span></span>
-| <span data-ttu-id="4541c-120">Name</span><span class="sxs-lookup"><span data-stu-id="4541c-120">Name</span></span>          | <span data-ttu-id="4541c-121">说明</span><span class="sxs-lookup"><span data-stu-id="4541c-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="669e8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="669e8-119">Request headers</span></span>
+| <span data-ttu-id="669e8-120">名称</span><span class="sxs-lookup"><span data-stu-id="669e8-120">Name</span></span>          | <span data-ttu-id="669e8-121">说明</span><span class="sxs-lookup"><span data-stu-id="669e8-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="4541c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4541c-122">Authorization</span></span> | <span data-ttu-id="4541c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4541c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="669e8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="669e8-122">Authorization</span></span> | <span data-ttu-id="669e8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="669e8-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4541c-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="4541c-125">Request body</span></span>
-<span data-ttu-id="4541c-126">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4541c-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="669e8-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="669e8-125">Request body</span></span>
+<span data-ttu-id="669e8-126">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="669e8-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4541c-127">参数</span><span class="sxs-lookup"><span data-stu-id="4541c-127">Parameter</span></span>      | <span data-ttu-id="4541c-128">Type</span><span class="sxs-lookup"><span data-stu-id="4541c-128">Type</span></span>    |<span data-ttu-id="4541c-129">说明</span><span class="sxs-lookup"><span data-stu-id="4541c-129">Description</span></span>|
+| <span data-ttu-id="669e8-127">参数</span><span class="sxs-lookup"><span data-stu-id="669e8-127">Parameter</span></span>      | <span data-ttu-id="669e8-128">类型</span><span class="sxs-lookup"><span data-stu-id="669e8-128">Type</span></span>    |<span data-ttu-id="669e8-129">说明</span><span class="sxs-lookup"><span data-stu-id="669e8-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4541c-130">提示</span><span class="sxs-lookup"><span data-stu-id="4541c-130">prompts</span></span>|<span data-ttu-id="4541c-131">[提示](../resources/prompt.md)集合</span><span class="sxs-lookup"><span data-stu-id="4541c-131">[prompt](../resources/prompt.md) collection</span></span>||
-|<span data-ttu-id="4541c-132">clientContext</span><span class="sxs-lookup"><span data-stu-id="4541c-132">clientContext</span></span>|<span data-ttu-id="4541c-133">字符串</span><span class="sxs-lookup"><span data-stu-id="4541c-133">String</span></span>|<span data-ttu-id="4541c-134">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="4541c-134">The client context.</span></span>|
+|<span data-ttu-id="669e8-130">提示</span><span class="sxs-lookup"><span data-stu-id="669e8-130">prompts</span></span>|<span data-ttu-id="669e8-131">[提示](../resources/prompt.md)集合</span><span class="sxs-lookup"><span data-stu-id="669e8-131">[prompt](../resources/prompt.md) collection</span></span>||
+|<span data-ttu-id="669e8-132">clientContext</span><span class="sxs-lookup"><span data-stu-id="669e8-132">clientContext</span></span>|<span data-ttu-id="669e8-133">字符串</span><span class="sxs-lookup"><span data-stu-id="669e8-133">String</span></span>|<span data-ttu-id="669e8-134">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="669e8-134">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4541c-135">响应</span><span class="sxs-lookup"><span data-stu-id="4541c-135">Response</span></span>
-<span data-ttu-id="4541c-136">返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。</span><span class="sxs-lookup"><span data-stu-id="4541c-136">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="669e8-135">响应</span><span class="sxs-lookup"><span data-stu-id="669e8-135">Response</span></span>
+<span data-ttu-id="669e8-136">如果成功，此方法返回`200 OK`响应正文中的响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="669e8-136">If successful, this method returns `200 OK` response code and [playPromptOperation](../resources/playPromptOperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4541c-137">示例</span><span class="sxs-lookup"><span data-stu-id="4541c-137">Example</span></span>
-<span data-ttu-id="4541c-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="4541c-138">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="669e8-137">示例</span><span class="sxs-lookup"><span data-stu-id="669e8-137">Example</span></span>
+<span data-ttu-id="669e8-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="669e8-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4541c-139">请求</span><span class="sxs-lookup"><span data-stu-id="4541c-139">Request</span></span>
-<span data-ttu-id="4541c-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="4541c-140">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="669e8-139">请求</span><span class="sxs-lookup"><span data-stu-id="669e8-139">Request</span></span>
+<span data-ttu-id="669e8-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="669e8-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "call_playPrompt"
+  "name": "call-playPrompt"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
@@ -77,21 +78,21 @@ Content-Length: 166
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4541c-141">响应</span><span class="sxs-lookup"><span data-stu-id="4541c-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="669e8-141">响应</span><span class="sxs-lookup"><span data-stu-id="669e8-141">Response</span></span>
 
-> <span data-ttu-id="4541c-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4541c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="669e8-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="669e8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.playPromptOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="4541c-144">通知-完成的操作</span><span class="sxs-lookup"><span data-stu-id="4541c-144">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="669e8-144">通知-完成的操作</span><span class="sxs-lookup"><span data-stu-id="669e8-144">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -110,7 +111,7 @@ Content-Type: application/json
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.playPromptOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
