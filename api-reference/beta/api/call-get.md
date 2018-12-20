@@ -2,12 +2,12 @@
 title: 获取呼叫
 description: 检索的属性和呼叫对象的关系。
 author: VinodRavichandran
-ms.openlocfilehash: f2e3ee4b18dadfaeddd4df89745b469648644a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316546"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380322"
 ---
 # <a name="get-call"></a>获取呼叫
 
@@ -32,10 +32,10 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_call"
+  "name": "get-call"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}
@@ -118,6 +118,7 @@ Content-Length: 2821
   },
   "meetingCapability": {
     "allowAnonymousUsersToDialOut": true,
+    "allowAnonymousUsersToStartMeeting": true,
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {

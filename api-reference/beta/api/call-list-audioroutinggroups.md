@@ -1,12 +1,13 @@
 ---
 title: 列表音频路由组
 description: 检索**audioRoutingGroup**对象的列表。
-ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 7ed00bbd3d000e71afe55a5e663408139174640b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155999"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380133"
 ---
 # <a name="list-audio-routing-groups"></a>列表音频路由组
 
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -51,7 +52,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroups"
+  "name": "get-audioRoutingGroups"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups

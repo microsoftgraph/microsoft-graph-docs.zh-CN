@@ -1,22 +1,25 @@
 ---
 title: organizerMeetingInfo 资源类型
-description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 包含会议的组织者的会议信息。
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045344"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380210"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
+包含会议的组织者的会议信息。
+
 ## <a name="properties"></a>属性
 
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | 布尔                       | 指示是否一旦离开对话的主机，也可以继续对话。 |
+| allowConversationWithoutHost | Boolean                       | 指示是否一旦离开对话的主机，也可以继续对话。 |
 | organizer                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式

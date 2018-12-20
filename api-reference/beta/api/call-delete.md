@@ -2,12 +2,12 @@
 title: 删除呼叫
 description: 删除或挂断活动呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 07183b4837e6107f347947b901d4efea76b7da98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350965"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380252"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -33,7 +33,7 @@ DELETE /applications/{id}/calls/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -50,7 +50,7 @@ DELETE /applications/{id}/calls/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "delete_call"
+  "name": "delete-call"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}

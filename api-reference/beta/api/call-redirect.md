@@ -2,12 +2,12 @@
 title: 呼叫： 重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309098"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380217"
 ---
 # <a name="call-redirect"></a>呼叫： 重定向
 
@@ -22,7 +22,7 @@ ms.locfileid: "27309098"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| Application     | Calls.Initiate.All                                  |
+| 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/redirect
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |目标|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
 |targetDisposition|字符串|可能的值是：`default`|
@@ -59,7 +59,7 @@ POST /applications/{id}/calls/{id}/redirect
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect

@@ -1,16 +1,19 @@
 ---
 title: 提示资源类型
-description: 无
-ms.openlocfilehash: 74991deb977d04fb92b9f4e1fedc05dacefafeb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 提示操作基类型。
+author: VinodRavichandran
+ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049007"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380162"
 ---
 # <a name="prompt-resource-type"></a>提示资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+提示操作基类型。
 
 ## <a name="properties"></a>属性
 

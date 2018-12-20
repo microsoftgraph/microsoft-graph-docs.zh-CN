@@ -2,12 +2,12 @@
 title: 呼叫： 传输
 description: 将活动呼叫转接。
 author: VinodRavichandran
-ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362480"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380504"
 ---
 # <a name="call-transfer"></a>呼叫： 传输
 
@@ -22,7 +22,7 @@ ms.locfileid: "27362480"
 | :-------------- | :-------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                |
 | 委派（个人 Microsoft 帐户） | 不支持                |
-| Application     | Calls.Initiate.All                                  |
+| 应用程序     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,18 +32,16 @@ POST /applications/{id}/calls/{id}/transfer
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|这是目标转接的参与者。|
-|target|[identitySet](../resources/identityset.md)||
-|replacesCallId|字符串|要转接的参与者的原始呼叫 id。|
 |clientContext|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
@@ -60,7 +58,7 @@ POST /applications/{id}/calls/{id}/transfer
 
 <!-- {
   "blockType": "request",
-  "name": "call_transfer"
+  "name": "call-transfer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
@@ -207,7 +205,7 @@ Content-Type: application/json
 ```
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "call_transfer"
+  "@odata.type": "call-transfer"
 }-->
 ```json
 {

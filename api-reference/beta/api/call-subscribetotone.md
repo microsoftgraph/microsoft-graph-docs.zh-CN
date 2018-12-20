@@ -1,13 +1,13 @@
 ---
 title: 呼叫： subscribeToTone
-description: " 电话。"
+description: 订阅 DTMF （双音多频信号）。 这使您用户按键在电话上按下键时收到通知。
 author: VinodRavichandran
-ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328299"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380434"
 ---
 # <a name="call-subscribetotone"></a>呼叫： subscribeToTone
 
@@ -22,7 +22,7 @@ ms.locfileid: "27328299"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| Application     | Calls.AccessMedia.All                       |
+| 应用程序     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    | 说明 |
+| 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
 | clientContext  | 字符串  | 客户端上下文。 |
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

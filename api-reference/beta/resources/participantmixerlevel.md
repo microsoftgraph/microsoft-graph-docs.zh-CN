@@ -1,12 +1,13 @@
 ---
 title: participantMixerLevel 资源类型
 description: 级别，以便进行音频参与者给定的混音器配置
-ms.openlocfilehash: 920c22cf423391d2efcdf7177fdc7491250d0f19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049125"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380140"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 

@@ -1,13 +1,13 @@
 ---
 title: 创建呼叫
 description: 创建新的呼叫。
-author: lleonard-msft
-ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348767"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380385"
 ---
 # <a name="create-call"></a>创建呼叫
 
@@ -22,7 +22,7 @@ ms.locfileid: "27348767"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| Application                            | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All |
 
 > **注意：** 与承载的应用程序媒体呼叫，您需要使用上表中列出的权限之一 Calls.AccessMedia.All 权限。
 
@@ -34,7 +34,7 @@ POST /applications/{id}/calls
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -57,7 +57,7 @@ POST /applications/{id}/calls
 
 <!-- {
   "blockType": "request",
-  "name": "create_call_from_application"
+  "name": "create-call-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -115,6 +115,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

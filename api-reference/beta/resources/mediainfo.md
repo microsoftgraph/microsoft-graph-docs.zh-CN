@@ -1,22 +1,25 @@
 ---
 title: mediaInfo 资源类型
-description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 961ce2375b742b2a657db28ec11d5439985583d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 操作中使用的媒体信息提示。
+author: VinodRavichandran
+ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048015"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380273"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
+操作中使用的媒体信息提示。
+
 ## <a name="properties"></a>属性
-| 属性   | 类型    |说明|
-|:---------------|:--------|:----------|
-| resourceId     | String  |           |
-| uri            | String  |           |
+| 属性       | 类型    | 说明                      |
+|:---------------|:--------|:---------------------------------|
+| resourceId     | String  | 唯一标识的资源。 |
+| uri            | 字符串  | 资源的路径。            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

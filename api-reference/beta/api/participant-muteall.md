@@ -2,12 +2,12 @@
 title: 参与者： muteAll
 description: 将呼叫中的所有参与者设为都静音。
 author: VinodRavichandran
-ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310176"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380497"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -22,7 +22,7 @@ ms.locfileid: "27310176"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | 无                                        |
+| 应用程序                            | 无                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|String 集合|若要将设为静音的参与者。|
 |clientContext|字符串|客户端上下文。|
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 下面为请求示例。
 <!-- {
   "blockType": "request",
-  "name": "participant_muteAll"
+  "name": "participant-muteAll"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll

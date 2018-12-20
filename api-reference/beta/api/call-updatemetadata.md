@@ -1,12 +1,13 @@
 ---
 title: 呼叫： updateMetadata
 description: 更新应用程序的元数据与呼叫相关联。
-ms.openlocfilehash: fbd43db654294c92d05a8c4c6f12d2118298ff5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043289"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380539"
 ---
 # <a name="call-updatemetadata"></a>呼叫： updateMetadata
 
@@ -54,7 +55,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 <!-- {
   "blockType": "request",
-  "name": "call_updateMetadata"
+  "name": "call-updateMetadata"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata

@@ -1,12 +1,13 @@
 ---
 title: recordOperation 资源类型
 description: RecordOperation 类型
-ms.openlocfilehash: 5863e5ef84b00c65cd0806af8a3364fe3d1ab73f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042826"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380420"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -19,14 +20,14 @@ RecordOperation 类型
 | 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | 字符串                      | 客户端上下文。                                                                                                                               |
-| completionReason               | 字符串                      | 可取值为：`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`。 |
+| completionReason               | 字符串                      | 可取值为：`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none`。 |
 | createdDateTime                | DateTimeOffset              | 录制已创建的时间。                                                                                                          |
 | id                             | 字符串                      | 服务器操作 id。只读的。 生成的服务器。                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | 操作的上次活动时间。                                                                                                     |
-| recordResourceLocation         | 字符串                      | 录制所在位置。                                                                                                      |
 | recordResourceAccessToken      | 字符串                      | 要检索录制，需要访问令牌。                                                                                              |
+| recordResourceLocation         | 字符串                      | 录制所在位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果的信息。  只读。 生成的服务器。                                                                                             |
-| 状态                         | String                      | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 生成的服务器。                                                 |
+| status                         | String                      | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 生成的服务器。                                                 |
 
 ## <a name="relationships"></a>Relationships
 无
@@ -45,12 +46,12 @@ RecordOperation 类型
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceLocation": "String",
   "recordResourceAccessToken": "String",
+  "recordResourceLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -67,8 +68,8 @@ RecordOperation 类型
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "recordResourceAccessToken": "<access-token>",
+  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

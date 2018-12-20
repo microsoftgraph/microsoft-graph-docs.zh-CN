@@ -2,12 +2,12 @@
 title: 参与者： 邀请
 description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335278"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380525"
 ---
 # <a name="participant-invite"></a>参与者： 邀请
 
@@ -22,7 +22,7 @@ ms.locfileid: "27335278"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| 应用程序     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/participants/invite
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 邀请参与者。|
 |clientContext|字符串|客户端上下文。|
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 下面为请求示例。
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

@@ -1,12 +1,13 @@
 ---
 title: 获取参与者
 description: 检索的属性和**参与者**对象的关系。
-ms.openlocfilehash: 4e97278b7ac93d784884c789f4da089e63e195ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042086"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380189"
 ---
 # <a name="get-participant"></a>获取参与者
 
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -50,7 +51,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 下面为请求示例。
 <!-- {
   "blockType": "request",
-  "name": "get_participant"
+  "name": "get-participant"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}

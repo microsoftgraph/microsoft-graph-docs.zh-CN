@@ -1,12 +1,13 @@
 ---
 title: audioDuckingConfiguration 资源类型
 description: 参数放掉的其他源 （逐步注销其他源。）
-ms.openlocfilehash: 16003933bc2436c333a80754eb9c4d5d9049172c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049501"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380176"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration 资源类型
 

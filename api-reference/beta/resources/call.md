@@ -1,12 +1,13 @@
 ---
 title: 呼叫资源类型
 description: 没有传入呼叫的应用程序或应用程序创建新的传出呼叫通过时创建的**呼叫**资源`POST`上`app/calls`。
-ms.openlocfilehash: 8819f03b844f1d67a56f8bbd9e6eca0608de92ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046570"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380567"
 ---
 # <a name="call-resource-type"></a>呼叫资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27046570"
 | [创建 audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | 通过发布到 audioRoutingGroups 集合中创建新 audioRoutingGroup。 |
 | [列表 audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)集合|获取 audioRoutingGroup 对象集合。  |
 | **互动语音响应**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | 播放提示呼叫中。                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | 播放提示呼叫中。                     |
 | [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 记录呼叫。                             |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | 取消处理媒体。                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | 订阅 DTMF 声音信号。                     |
@@ -67,7 +68,7 @@ ms.locfileid: "27046570"
 | ringingTimeoutInSeconds | Int32                                                                                              | 传出的对等呼叫的的响铃超时                                                                                                                                                     |
 | routingPolicies     | String 集合                                                                                      | 可取值为：`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`。                                                                                                   |
 | 源              | [participantInfo](participantinfo.md)                                                                  | 呼叫发起方。                                                                                                                                                                         |
-| 状态               | 字符串                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。 生成的服务器。                         |
+| state               | 字符串                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。 生成的服务器。                         |
 | subject             | 字符串                                                                                                 | 对话的主题。                                                                                                                                                                    |
 | 目标             | [participantInfo](participantinfo.md)集合                                                       | 呼叫的目标。                                                                                                                                                                            |
 | tenantId            | 字符串                                                                                                 | Azure Active Directory 中的 tenantId。                                                                                                                                                                 |

@@ -2,12 +2,12 @@
 title: 呼叫： 取消静音
 description: 允许应用程序本身取消静音。
 author: VinodRavichandran
-ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343468"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380399"
 ---
 # <a name="call-unmute"></a>呼叫： 取消静音
 
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/unmute
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |clientContext|字符串|客户端上下文。|
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/unmute
 
 <!-- {
   "blockType": "request",
-  "name": "call_unmute"
+  "name": "call-unmute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/unmute

@@ -1,12 +1,13 @@
 ---
 title: serviceHostedMediaConfig 资源类型
 description: ServiceHostedMediaConfig 类型。
-ms.openlocfilehash: 111988574b1f16a9e53bf9db44e44da12e7bbab5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 544c1d3bce934064092e0f9c74b888686e49d426
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044802"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380315"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
@@ -19,7 +20,7 @@ ServiceHostedMediaConfig 类型。
 | 属性                    | 类型                                                        | 说明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 媒体预取列表。                   |
-| removeFromDefaultAudioGroup | 布尔                                                     | 从默认音频组中删除自我参与者。 |
+| removeFromDefaultAudioGroup | Boolean                                                     | 从默认音频组中删除自我参与者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

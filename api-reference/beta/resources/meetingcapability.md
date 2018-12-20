@@ -1,12 +1,13 @@
 ---
 title: meetingCapability 资源类型
 description: 包含会议的功能
-ms.openlocfilehash: 438193d08ab5542f07d4cbf61704520d81433e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044748"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380245"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability 资源类型
 
@@ -16,10 +17,11 @@ ms.locfileid: "27044748"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
-|:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | 布尔 | 指示是否在会议中允许匿名用户拨出。 |
-| autoAdmittedUsers | String | 可取值为：`everyoneInCompany`、`everyone`。 |
+| 属性                          | 类型    | 说明                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| allowAnonymousUsersToDialOut      | Boolean | 指示是否在会议中允许匿名用户拨出。 |
+| allowAnonymousUsersToStartMeeting | Boolean | 指示是否允许匿名用户开始会议。  |
+| autoAdmittedUsers                 | String  | 可取值为：`everyoneInCompany`、`everyone`。              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,6 +37,7 @@ ms.locfileid: "27044748"
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```

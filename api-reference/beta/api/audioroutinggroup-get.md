@@ -2,12 +2,12 @@
 title: 获取音频路由组
 description: 检索的属性和 audioRoutingGroup 对象的关系。
 author: VinodRavichandran
-ms.openlocfilehash: e6aca0300287e502fd065d69db1ce4855a42b823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331421"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380427"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 
@@ -22,7 +22,7 @@ ms.locfileid: "27331421"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,10 +32,10 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

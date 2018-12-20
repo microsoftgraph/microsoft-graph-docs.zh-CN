@@ -1,13 +1,13 @@
 ---
 title: 创建联机会议
 description: 创建一个代表指定在请求正文中的用户的联机会议。
-author: lleonard-msft
-ms.openlocfilehash: 4a68e25156353b41c3ff43685d7b021a2454a927
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: 7b40bd2b9bedcee4777138403eb895f972bab9fb
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331428"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380329"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
@@ -24,7 +24,7 @@ ms.locfileid: "27331428"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| Application                            | OnlineMeetings.ReadWrite.All                |
+| 应用程序                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ POST /applications/{id}/onlineMeetings
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -51,7 +51,7 @@ POST /applications/{id}/onlineMeetings
 
 <!-- {
   "blockType": "request",
-  "name": "create_onlineMeeting_from_application"
+  "name": "create-onlinemeeting-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/onlineMeetings

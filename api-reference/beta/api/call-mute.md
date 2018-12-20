@@ -2,12 +2,12 @@
 title: 呼叫： 设为静音
 description: 允许应用程序本身设为静音。
 author: VinodRavichandran
-ms.openlocfilehash: 54de4aa598500d1effa1c66c74e5809ad3570959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341585"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380164"
 ---
 # <a name="call-mute"></a>呼叫： 设为静音
 
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/mute
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |clientContext|字符串|客户端上下文。|
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/mute
 
 <!-- {
   "blockType": "request",
-  "name": "call_mute"
+  "name": "call-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/mute

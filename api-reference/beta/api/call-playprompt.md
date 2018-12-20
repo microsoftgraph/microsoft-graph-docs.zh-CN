@@ -2,12 +2,12 @@
 title: 呼叫： playPrompt
 description: 在呼叫中播放提示。
 author: VinodRavichandran
-ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316581"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380343"
 ---
 # <a name="call-playprompt"></a>呼叫： playPrompt
 
@@ -25,6 +25,7 @@ ms.locfileid: "27316581"
 | 应用程序                            | 无。                                        |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
@@ -32,20 +33,20 @@ POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | Type    |说明|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[提示](../resources/prompt.md)集合||
 |clientContext|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+如果成功，此方法返回`200 OK`响应正文中的响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -55,7 +56,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 <!-- {
   "blockType": "request",
-  "name": "call_playPrompt"
+  "name": "call-playPrompt"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
@@ -84,10 +85,10 @@ Content-Length: 166
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.playPromptOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
@@ -110,7 +111,7 @@ Content-Type: application/json
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.playPromptOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",

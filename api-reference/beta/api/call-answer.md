@@ -2,12 +2,12 @@
 title: 呼叫： 答案
 description: 应答传入呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343202"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380511"
 ---
 # <a name="call-answer"></a>呼叫： 答案
 
@@ -22,7 +22,7 @@ ms.locfileid: "27343202"
 | :-------------- | :-----------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                        |
 | 委派（个人 Microsoft 帐户） | 不支持                        |
-| Application     | 无                                                        |
+| 应用程序     | 无                                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,14 +32,14 @@ POST /applications/{id}/calls/{id}/answer
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | Type                                     |说明                                                                                                                                    |
+| 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |字符串                                    |将在其传递回调回调或订阅 ID。 （必需）                                                               |
 |acceptedModalities|String 集合                         |列表接受形式。 可能的值是： `unknown`， `audio`， `video`， `screenSharing`， `videoBasedScreenSharing`， `data`。 （必需） |
@@ -56,7 +56,7 @@ POST /applications/{id}/calls/{id}/answer
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

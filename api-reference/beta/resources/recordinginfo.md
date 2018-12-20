@@ -1,23 +1,26 @@
 ---
 title: recordingInfo 资源类型
-description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 92af3fcb52ab08f3f25a2c16cc720a4053a9bdfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 参与者录制信息。
+author: VinodRavichandran
+ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044796"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380301"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+
+参与者录制信息。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | 参与者发起录制。 |
-| 状态 | 字符串 | 可取值为：`recordingCapable`、`notRecording`、`startedRecording`。 |
+| status | 字符串 | 可取值为：`recordingCapable`、`notRecording`、`startedRecording`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
