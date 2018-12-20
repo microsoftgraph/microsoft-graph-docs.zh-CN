@@ -2,12 +2,12 @@
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
-ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358560"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380595"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -16,6 +16,13 @@ ms.locfileid: "27358560"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="december-2018"></a>2018 年 12 月
+
+### <a name="security-apis"></a>安全 API
+
+| **更改类型** | **版本** | **说明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | Beta        | 引入了新的复杂类型 [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta)。|
+| 添加项        | Beta        | 引入了新的复杂类型 [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta)。|
 
 ### <a name="data-policy-api"></a>数据策略 API
 
@@ -348,7 +355,9 @@ ms.locfileid: "27358560"
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta       | 向[安全 API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) 添加了安全功能分数 API，包括以下资源和操作：<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（和相关实体）<br/>[列出 secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[列出 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[更新 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)
+| 添加项        | Beta       | 向[安全 API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) 添加了安全功能分数 API，包括以下资源和操作：<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（和相关实体）<br/>[列出 secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[列出 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[更新 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| 添加项        | Beta        | 引入了新的复杂类型 [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) |
+
 
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive 和 SharePoint API
