@@ -34,17 +34,19 @@
     "externalReference": [],
     "globalMetadata": { 
       "feedback_system": "None",
+      "hide_comments": true,
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
-      "ms.date": "06/11/2018",
+      "ms.date": "11/27/2018",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft graph",
       "bilingual_type": "hover over",
-      "hide_comments": true
+      "searchScope": ["graph"],
+      "hideScope": true
     },
     "fileMetadata": {
       "ms.technology": {
