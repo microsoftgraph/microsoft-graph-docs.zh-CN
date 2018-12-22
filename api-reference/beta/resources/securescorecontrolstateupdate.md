@@ -1,0 +1,44 @@
+---
+title: " secureScoreControlStateUpdate 资源类型"
+description: 此资源包含控件状态更新的用户的历史记录 （控件状态包括默认、 忽略、 ThirdParty、 已审阅）。
+ms.openlocfilehash: ba98f2fc85f3f8e12355f9acf5d232599a7f29f7
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27428838"
+---
+ #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate 资源类型
+包含由用户更新控件状态的历史记录 （控件状态包括默认、 忽略、 ThirdParty、 已审阅）。
+
+|属性 |类型 |说明 |
+|:--|:--|:--|
+|assignedTo | string | 分配将执行的操作的用户控件 |
+|批注 | string | 提供有关控件的可选注释 |
+|state | string | 可以使用修补程序命令修改控件的状态 (例如： 忽略，第三方等) |
+|updatedBy | string |更新租户状态的用户的 ID |
+|updatedDateTime | 方法？ |在哪个控件更新状态的时间 |
+ ## <a name="json-representation"></a>JSON 表示形式
+ 下面是资源的 JSON 表示形式。
+ <!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+   ],
+  "@odata.type": "microsoft.graph.secureScoreControlStateUpdate"
+}-->
+ ```json
+{
+  "assignedTo": "String",
+  "comment": "Double",
+  "state": "Double",
+  "updatedBy": "Double",
+  "updatedDateTime": "Double"
+}
+ ```
+ <!-- {
+  "type": "#page.annotation",
+  "description": "secureScoreControlStateUpdate resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
