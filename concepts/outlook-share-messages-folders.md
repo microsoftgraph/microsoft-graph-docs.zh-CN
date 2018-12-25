@@ -1,25 +1,23 @@
 ---
 title: 获取共享文件夹或委托文件夹中的 Outlook 邮件
-description: 这些主题还有类似的部分：列出事件、获取事件、获取日历、列出联系人、获取联系人、获取联系人文件夹。
+description: 使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的读取、创建、修改或删除访问权限。 通过 Outlook，客户还可以委托其他用户代表自己执行操作。
 author: angelgolfer-ms
-ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: cdb2228c64647497674402825577942323c3d2ff
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320109"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413174"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>获取共享文件夹或委托文件夹中的 Outlook 邮件
-
-<!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
-These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
--->
 
 使用 Outlook，客户可以与其他人共享邮件文件夹，并授予对各个文件夹的“读取”、“创建”、“修改”或“删除”访问权限。 此外，使用 Outlook，客户还可以委托其他用户代表自己执行操作，并访问特定邮件文件夹或客户的整个邮箱；在 Outlook 中，这也称为“委托”。
 
 Microsoft Graph 以编程方式支持在其他用户共享的邮件文件夹中获取邮件，以及获取共享文件夹本身。 此支持还适用于已委托的文件夹。
 
 例如，Garth 已与 John 共享自己的收件箱，并向 John 授予对自己收件箱的读取访问权限。 如果 John 已登录应用并授予委托的权限（Mail.Read.Shared 或 Mail.ReadWrite.Shared），应用便能访问 Garth 的邮件和收件箱，如下所述。
+
+> **注意**通过共享权限（Mail.Read.Shared 或 Mail.ReadWrite.Shared），你可以在共享或委托文件夹中读取或写入邮件。 它们不支持[订阅此类文件夹中的项的更改通知](webhooks.md)。 若要对租户中共享、委托或任何其他用户的邮件文件夹中的邮件设置更改通知订阅，请使用应用程序权限 Mail.Read。
 
 ## <a name="get-a-message-in-the-shared-folder"></a>获取共享文件夹中的邮件
 

@@ -1,13 +1,13 @@
 ---
 title: 获取共享文件夹中的 Outlook 联系人
-description: " 另外，还有 "
+description: 使用 Outlook，客户可以与其他人共享文件夹，并授予对各个联系人文件夹的读取、创建、修改或删除访问权限。 通过 Outlook，客户还可以委托其他用户代表自己执行操作。
 author: angelgolfer-ms
-ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315174"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413153"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>获取共享文件夹中的 Outlook 联系人
 
@@ -16,6 +16,8 @@ ms.locfileid: "27315174"
 Microsoft Graph 以编程方式支持在其他用户共享的联系人文件夹中获取联系人，以及获取共享文件夹本身。 此支持还适用于已委托的邮箱中的文件夹。
 
 例如，Garth 已与 John 共享自定义联系人文件夹并向 John 授予读取权限。 如果 John 已登录应用并提供委托的权限（Contacts.Read.Shared 或 Contacts.ReadWrite.Shared），应用便能访问 Garth 的自定义联系人文件夹和该文件夹中的联系人，如下所述。
+
+> **注意**通过共享权限（Contacts.Read.Shared 或 Contacts.ReadWrite.Shared），你可以在共享或委托文件夹中读取或写入联系人。 它们不支持[订阅此类文件夹中的项的更改通知](webhooks.md)。 若要对租户中共享、委托或任何其他用户的联系人文件夹中的联系人设置更改通知订阅，请使用应用程序权限 Contacts.Read。
 
 ## <a name="get-a-contact-in-the-shared-folder"></a>获取共享文件夹中的联系人
 

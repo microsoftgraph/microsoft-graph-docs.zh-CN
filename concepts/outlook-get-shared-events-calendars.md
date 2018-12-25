@@ -2,12 +2,12 @@
 title: 获取共享日历或委托日历中的 Outlook 事件
 description: 在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
 author: angelgolfer-ms
-ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ef4de6cedeeb9a5688f250652eef0cd6cd5f5183
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346562"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413146"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>获取共享日历或委托日历中的 Outlook 事件
 
@@ -16,6 +16,8 @@ ms.locfileid: "27346562"
 Microsoft Graph 支持以编程方式获取其他用户已共享日历中的事件，以及共享日历本身。 此支持还适用于已委托的日历。
 
 例如，Garth 已与 John 共享自己的默认日历，并向 John 授予读取访问权限。 如果 John 已登录应用并授予委托的权限（Calendars.Read.Shared 或 Calendars.ReadWrite.Shared），应用便能访问 Garth 的默认日历及其中的事件，如下所述。
+
+> **注意**通过共享权限（Calendars.Read.Shared 或 Calendars.ReadWrite.Shared），你可以在共享或委托日历中读取或写入事件。 它们不支持[订阅此类文件夹中的项的更改通知](webhooks.md)。 若要对租户中共享、委托或任何其他用户或资源日历中的事件设置更改通知订阅，请使用应用程序权限 Calendars.Read。
 
 ## <a name="get-an-event-in-the-shared-calendar"></a>获取共享日历中的事件
 
