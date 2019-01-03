@@ -46,7 +46,8 @@ Microsoft Graph 通过关系连接这些服务中的所有资源。 例如，用
 
 使用 Microsoft Graph API，你可以实现这些功能及其他更多功能。
 
->**注意：** 使用 Microsoft Graph API 时，表示你同意 [Microsoft Graph 使用条款](https://developer.microsoft.com/graph/docs/misc/terms-of-use)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。
+>
+  **注意：** 使用 Microsoft Graph API 时，表示你同意 [Microsoft Graph 使用条款](https://developer.microsoft.com/graph/docs/misc/terms-of-use)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。
 
 ### <a name="popular-requests"></a>常见请求
 
