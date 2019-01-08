@@ -61,7 +61,7 @@ items:
   - name: 用户
     href: resources/users.md
     items:
-    - name: User
+    - name: 用户
       href: resources/user.md
       items:
       - name: 列出用户
@@ -533,7 +533,7 @@ items:
       - name: 查找会议时间
         href: api/user-findmeetingtimes.md
     - name: 日历视图
-      href: api/user-list-calendarview.md
+      href: api/calendar-list-calendarview.md
       items:
       - name: 列表日历视图
         href: api/calendar-list-calendarview.md
@@ -2861,7 +2861,7 @@ items:
         href: resources/intune-shared-saveduistategenerationoptions.md
       - name: URI
         href: resources/intune-shared-uri.md
-      - name: User
+      - name: 用户
         href: resources/intune-shared-user.md
         items:
         - name: 列表
@@ -3482,7 +3482,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 报表
+  - name: 报告
     href: resources/report.md
     items:
     - name: Microsoft 团队设备用法
@@ -3695,7 +3695,7 @@ items:
         href: api/alert-update.md
     - name: 错误
       href: resources/security-error-codes.md
-  - name: 网站和列表
+  - name: 站点和列表
     href: resources/sharepoint.md
     items:
     - name: 网站
@@ -4116,9 +4116,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: fbcf6261a173e7d99ae8aa25a8293f4a1e9c1ba7
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+ms.openlocfilehash: 02939d2bfd7900587e85fa9cdb18f684749049ff
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283701"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748603"
