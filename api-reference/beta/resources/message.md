@@ -2,12 +2,12 @@
 title: 邮件资源类型
 description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
-ms.openlocfilehash: e0c1b539baa16c60904c5c9a726bac6cb5c7d557
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353667"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748477"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -100,7 +100,7 @@ ms.locfileid: "27353667"
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。 |
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification|字符串| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
+|inferenceClassification|String| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
 |internetMessageId | String | 所指定的[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)格式中邮件 ID。 **IsDraft**为 true 时，才可更新。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
@@ -128,8 +128,8 @@ ms.locfileid: "27353667"
 |attachments|[附件](attachment.md) 集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
 |extensions|[扩展](extension.md)集合| 打开扩展名为消息定义的集合。 可为 Null。|
 |提及|[提及](mention.md)集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 多值为消息定义的扩展属性的集合。 可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为消息定义的单值扩展属性的集合。 可为 Null。|
 
 ## <a name="methods"></a>方法
 

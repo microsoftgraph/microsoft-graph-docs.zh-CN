@@ -61,7 +61,7 @@ items:
   - name: 用户
     href: resources/users.md
     items:
-    - name: User
+    - name: 用户
       href: resources/user.md
       items:
       - name: 列出用户
@@ -92,7 +92,7 @@ items:
       - name: 创建日历组
         href: api/user-post-calendargroups.md
       - name: 列表日历视图
-        href: api/calendar-list-calendarview.md
+        href: api/user-list-calendarview.md
       - name: 提醒视图
         href: api/user-reminderview.md
       - name: 获取忙/闲日程安排
@@ -607,10 +607,10 @@ items:
       - name: 在日历组中创建日历
         href: api/calendargroup-post-calendars.md
     - name: 日历视图
-      href: api/user-list-calendarview.md
+      href: api/calendar-list-calendarview.md
       items:
       - name: 列表日历视图
-        href: api/user-list-calendarview.md
+        href: api/calendar-list-calendarview.md
       - name: 获取增量
         href: api/event-delta.md
       - name: 提醒视图
@@ -5822,7 +5822,7 @@ items:
         href: resources/intune-shared-saveduistategenerationoptions.md
       - name: URI
         href: resources/intune-shared-uri.md
-      - name: User
+      - name: 用户
         href: resources/intune-shared-user.md
         items:
         - name: 列表
@@ -6212,7 +6212,7 @@ items:
         href: api/approleassignment-update.md
       - name: 删除 appRoleAssignment
         href: api/approleassignment-delete.md
-    - name: Application
+    - name: 应用程序
       href: resources/application.md
       items:
       - name: 应用程序列表
@@ -6545,6 +6545,15 @@ items:
           href: api/privilegedroleassignmentrequest-cancel.md
         - name: 获取我角色分配
           href: api/privilegedroleassignmentrequest-my.md
+      - name: 特权的审批
+        href: resources/privilegedapproval.md
+        items:
+        - name: 列出特权的审批
+          href: api/privilegedapproval-list.md
+        - name: 获取特权的审批
+          href: api/privilegedapproval-get.md
+        - name: 更新角色分配
+          href: api/privilegedapproval-update.md
       - name: 审核事件
         href: resources/privilegedoperationevent.md
         items:
@@ -7003,7 +7012,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 报表
+  - name: 报告
     href: resources/report.md
     items:
     - name: Microsoft 团队设备用法
@@ -7228,7 +7237,7 @@ items:
         href: api/securescorecontrolprofiles-update.md
     - name: 错误
       href: resources/security-error-codes.md
-  - name: 网站和列表
+  - name: 站点和列表
     href: resources/sharepoint.md
     items:
     - name: 网站
@@ -7825,9 +7834,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: c65243ef45c288e7e6a592ad6778a20ad563ec86
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+ms.openlocfilehash: 2b3156dec808c15e0a69004e2a9739df5d010dfe
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748617"

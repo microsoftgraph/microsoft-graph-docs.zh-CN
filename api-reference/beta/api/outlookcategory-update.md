@@ -1,12 +1,12 @@
 ---
 title: 更新 Outlook 类别
 description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改的**displayName**属性 '
-ms.openlocfilehash: c9dee74de9955495e0134f68d00a75929a46f16e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 741536a659add633da21b27e00006a6782a8beb7
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045698"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748533"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -29,8 +29,6 @@ ms.locfileid: "27045698"
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

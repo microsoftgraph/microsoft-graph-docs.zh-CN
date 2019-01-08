@@ -2,12 +2,12 @@
 title: 邮件资源类型
 description: mailFolder 中的邮件。
 author: angelgolfer-ms
-ms.openlocfilehash: a77a50835dcba41555fa646c94c66d05b15e3e48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310288"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748575"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -58,7 +58,7 @@ mailFolder 中的邮件。
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。 它可以是以 HTML 或文本格式。 了解有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
-|bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
+|bodyPreview|String|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
@@ -92,9 +92,9 @@ mailFolder 中的邮件。
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
-|extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。只读。可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。只读。可为 Null。|
+|extensions|[扩展](extension.md)集合|打开扩展名为消息定义的集合。 可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 多值为消息定义的扩展属性的集合。 可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为消息定义的单值扩展属性的集合。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,12 +1,12 @@
 ---
 title: 用户： exportPersonalData
 description: 提交数据策略操作发出的请求，公司管理员通过导出组织用户的数据。
-ms.openlocfilehash: 7d41d6d855fee992a4ff3a542e6c11f692adcfe3
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+ms.openlocfilehash: 9308e955e83ccad5779d8261537306a5220d8086
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27284131"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748211"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -19,7 +19,7 @@ ms.locfileid: "27284131"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  User.Export.All User.Read.All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|Application | User.Export.All User.Read.All |
+|应用程序 | User.Export.All User.Read.All |
 
 >**注意：** 由公司管理员可以仅执行导出时所使用的委派的权限。
 
@@ -30,19 +30,24 @@ POST /users/{id}/exportPersonalData
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者 {token}|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |storageLocation|字符串|这是指向 Azure 存储帐户，其中应导出数据的共享的访问签名 (SA) URL。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不返回任何响应正文中。 则响应中包含以下响应标头。
+
+| 名称       | 说明|
+|:---------------|:----------|
+| Location  | 若要检查请求的状态的 URL。 |
+| 重试间隔后  | 以秒为单位的时间段。 请求 maker 应等待这长之后提交请求以检查的状态。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -59,8 +64,14 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-
 ##### <a name="response"></a>响应
+
+```
+{
+  Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
+```
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,6 +80,7 @@ Content-length: 48
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

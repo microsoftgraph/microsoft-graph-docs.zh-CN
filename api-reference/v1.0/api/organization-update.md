@@ -1,16 +1,17 @@
 ---
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010805"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748526"
 ---
 # <a name="update-organization"></a>更新组织
 
-更新当前经过身份验证的组织的属性。
+更新当前经过身份验证的组织的属性。 在这种情况下，`organization`指一准确按照一条记录上，因此必须请求中指定其**ID** 。  **ID**是也称为组织**tenantId** 。
+
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +28,7 @@ ms.locfileid: "27010805"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -38,6 +39,7 @@ PATCH /organization
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加尚未变化的现有值。
 
 | 属性     | 类型   |说明|
@@ -62,7 +64,7 @@ PATCH /organization
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 

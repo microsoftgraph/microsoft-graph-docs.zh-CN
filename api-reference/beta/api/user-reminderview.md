@@ -2,18 +2,18 @@
 title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
 author: dkershaw10
-ms.openlocfilehash: 875e71e03cf3d43e3f7fadabfea65cecd1e3761c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9f71617d1775579e913df814a2e9aecd61ba7402
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352547"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748239"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-返回指定开始时间和结束时间范围内的日历提醒列表。 
+返回一组事件提醒中用户日历中指定的开始和结束时间。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,10 +33,10 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>函数参数
 在请求 URL 中，提供以下包含值的函数参数。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|字符串|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|字符串|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
+|startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
+|endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|

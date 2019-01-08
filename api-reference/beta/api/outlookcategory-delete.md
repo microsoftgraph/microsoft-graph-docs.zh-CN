@@ -2,12 +2,12 @@
 title: 删除 Outlook 类别
 description: 删除指定的 outlookCategory 对象。
 author: angelgolfer-ms
-ms.openlocfilehash: 1654b0d67e61ea9f999495eb239eb1d837690159
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 114dee21aea5143bd3ad1d6503490ed7941fe6f3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321236"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748232"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
@@ -30,11 +30,9 @@ ms.locfileid: "27321236"
 DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

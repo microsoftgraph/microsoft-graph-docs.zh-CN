@@ -1,12 +1,12 @@
 ---
 title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
-ms.openlocfilehash: 566351ba89d0173718320640e6fa45b0650aaf0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042661"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748351"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "27042661"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -50,7 +50,7 @@ PATCH /privilegedApproval/<id>
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[privilegedApproval](../resources/privilegedapproval.md)对象。
+如果成功，此方法返回`204 No Content`响应代码
 
 请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
 
@@ -62,16 +62,13 @@ PATCH /privilegedApproval/<id>
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval/<id>
+PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
 Content-type: application/json
 Content-length: 180
 
 {
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
+  "approverReason": "approverReason-value"
 }
 ```
 ##### <a name="response"></a>响应
@@ -82,18 +79,7 @@ Content-length: 180
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "id": "id-value",
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
-  "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,12 +1,12 @@
 ---
 title: 可传递列表组的成员
 description: 获取组的成员的列表。 一组可将用户、 联系人、 设备、 服务主体和其他组作为成员。 此操作可传递，也将返回所有嵌套成员一个平面列表。
-ms.openlocfilehash: a3cdc0048db3b3d1aa90b5d3426d22439a18b298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044862"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748554"
 ---
 # <a name="list-group-transitive-members"></a>可传递列表组的成员
 
@@ -63,7 +63,7 @@ GET /groups/{id}/transitiveMembers
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### <a name="response"></a>响应

@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 同步驱动器的内容
-ms.openlocfilehash: d1fa3cb1e28a22f8cd8b016b9f6a93ff9ec41583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0c884c69a7c162fb5009dfda80e8def4ee201033
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010081"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748547"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -46,7 +46,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>函数参数
 
-| 名称   | 值  | 说明                                                                                                                          |
+| 参数   | 类型  | 说明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | 可选。 如果未指定，枚举层次结构的当前状态。 如果`latest`，返回空与最新的增量令牌的响应。 如果以前的增量令牌，该令牌以来返回新的状态。
 
@@ -205,10 +205,9 @@ Content-type: application/json
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
 * Delta 不会返回以下 DriveItem 属性：
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## <a name="error-responses"></a>错误响应
 

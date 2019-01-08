@@ -3,12 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: 按间隔中获取项活动状态
-ms.openlocfilehash: 0b5a9782528e75d4d50734dedc49460d30252410
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044412"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748189"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔中获取项活动状态
 
@@ -44,7 +44,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>函数参数
 
-| 名称           | 值              | 说明
+| 参数      | 类型               | 说明
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | 字符串 （时间戳） | 聚合活动的开始时间。
 | endDateTime    | 字符串 （时间戳） | 聚合活动哪些结束时间。

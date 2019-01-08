@@ -1,12 +1,12 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。
-ms.openlocfilehash: c5886cc435b482a0acfcd99c65f356efe3a99d59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042100"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748470"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -39,7 +39,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>函数参数
-| 函数参数       | 类型 | 说明|
+| 参数      | 类型    | 说明|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | String  | 时区格式。 支持的值：`Windows` 和 `Iana`。 可选。 |
 

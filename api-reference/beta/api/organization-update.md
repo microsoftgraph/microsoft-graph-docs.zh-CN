@@ -1,19 +1,21 @@
 ---
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
-ms.openlocfilehash: 62e03d7bee58f14acc5d5ace12d55f95d1d07a2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a7b9521ccd39cb7cb64236c7d563a8a5c08d64a3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043341"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748561"
 ---
 # <a name="update-organization"></a>更新组织
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-更新当前经过身份验证的组织的属性。
+更新当前经过身份验证的组织的属性。 在这种情况下，`organization`指一准确按照一条记录上，因此必须请求中指定其**ID** 。  **ID**是也称为组织**tenantId** 。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -23,17 +25,21 @@ ms.locfileid: "27043341"
 |应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /organization
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
@@ -57,8 +63,9 @@ PATCH /organization
   "blockType": "request",
   "name": "update_organization"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/organization
+PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -74,13 +81,16 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 ##### <a name="response"></a>响应
+
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -89,6 +99,7 @@ HTTP/1.1 204 No Content
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
 - [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

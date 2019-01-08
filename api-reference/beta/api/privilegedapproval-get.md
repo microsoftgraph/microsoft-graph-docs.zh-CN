@@ -1,12 +1,12 @@
 ---
 title: 获取 privilegedApproval
 description: 检索的属性和 privilegedapproval 对象的关系。
-ms.openlocfilehash: 77db18f46bbdfec6a5a9a62e4e481facaab6cb8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047475"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748197"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "27047475"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

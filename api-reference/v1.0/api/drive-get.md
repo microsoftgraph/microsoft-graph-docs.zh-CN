@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取驱动器
-ms.openlocfilehash: 6ff71104c18a5a9354d18689c62a96be72b7fe12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 67d5dd612073db96ebcc5bf9c19aa004a034243c
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008907"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748421"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -116,7 +116,7 @@ GET /drives/{drive-id}
 
 这些方法支持 [$select 查询参数][odata-query-parameters]塑造响应。
 
-## <a name="http-response"></a>HTTP 响应
+## <a name="response"></a>响应
 
 每个方法将在响应正文中返回匹配驱动器的 [Drive 资源][drive-resource]。
 

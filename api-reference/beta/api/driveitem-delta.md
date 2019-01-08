@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 同步驱动器的内容
-ms.openlocfilehash: 4ccaec230d5801f563f81e6a30584db9f7ed5714
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b16787a3939d514e3c84ea0f06b562cd3c689e76
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042955"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748428"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -48,7 +48,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>函数参数
 
-| 名称   | 值  | 说明                                                                                                                          |
+| 参数   | 类型  | 说明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | 可选。 如果未指定，枚举层次结构的当前状态。 如果`latest`，返回空与最新的增量令牌的响应。 如果以前的增量令牌，该令牌以来返回新的状态。
 

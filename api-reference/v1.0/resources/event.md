@@ -2,16 +2,16 @@
 title: 事件资源类型
 description: 日历中的事件。
 author: angelgolfer-ms
-ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356593"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748512"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
-日历中的事件。
+[用户](user.md)日历或 Office 365[组](group.md)的默认日历中的事件。
 
 该资源支持：
 
@@ -19,6 +19,11 @@ ms.locfileid: "27356593"
 - 订阅[更改通知](/graph/webhooks)。
 - 通过提供 [delta](../api/event-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
+> **注意：** 有几个您可以与用户日历、 组日历和其事件交互的方式不同：
+
+ - 您可以组织只有用户日历中[calendarGroup](calendargroup.md)。
+ - Outlook 自动接受代表组的所有会议请求。 您可以为_用户_日历仅[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)会议请求。
+  - Outlook 不支持为组事件的提醒。 您可以为仅_用户_日历[snooze](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)的[提醒](reminder.md)。
 
 ## <a name="methods"></a>方法
 
@@ -29,12 +34,12 @@ ms.locfileid: "27356593"
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md) |更新事件对象。 |
 |[删除](../api/event-delete.md) | 无 |删除事件对象。 |
-|[接受](../api/event-accept.md)|无|接受指定的事件。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受指定的事件。|
-|[拒绝](../api/event-decline.md)|无|拒绝对指定事件的邀请。|
+|[接受](../api/event-accept.md)|无|接受用户日历中指定的事件。|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定的事件。|
+|[拒绝](../api/event-decline.md)|无|拒绝邀请用户日历中指定的事件。|
 |[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
-|[dismissReminder](../api/event-dismissreminder.md)|无|消除指定事件的提醒。|
-|[snoozeReminder](../api/event-snoozereminder.md)|无|暂停指定事件的提醒。|
+|[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定的事件的提醒。|
+|[snoozeReminder](../api/event-snoozereminder.md)|无|推迟指定事件提醒用户日历中的新时间之前。|
 |[列出实例](../api/event-list-instances.md) |[事件](event.md) 集合| 获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。|
 |**附件**| | |
 |[列出附件](../api/event-list-attachments.md) |[attachment](attachment.md) 集合| 获取事件的所有附件。|
@@ -53,7 +58,7 @@ ms.locfileid: "27356593"
 |:---------------|:--------|:----------|
 |attendees|[与会者](attendee.md) 集合|事件的与会者集合。|
 |body|[itemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
-|bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
+|bodyPreview|String|与事件相关联的邮件预览。文本格式。|
 |categories|String collection|与事件相关联的类别。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

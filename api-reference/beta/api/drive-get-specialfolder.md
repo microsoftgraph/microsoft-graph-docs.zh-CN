@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取特殊文件夹
-ms.openlocfilehash: cbf7e3c3f5add9fd147ef8a8e8add7496ddbed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8b8b1186682421a5ab564272fd473cb72819202d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046463"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748498"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 
@@ -57,7 +57,7 @@ GET /me/drive/special/{name}
 
 此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
-## <a name="http-response"></a>HTTP 响应
+## <a name="response"></a>响应
 
 此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。
 
@@ -91,7 +91,7 @@ Content-type: application/json
 GET /me/drive/special/{name}/children
 ```
 
-### <a name="http-response"></a>HTTP 响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 > **注意：** 带有 `specialFolder` facet 的 DriveItem 指示项目是特殊文件夹，且可以通过 `special` 集合访问。
 

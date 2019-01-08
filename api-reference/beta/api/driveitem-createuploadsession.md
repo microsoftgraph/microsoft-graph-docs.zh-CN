@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 可恢复的文件上传
-ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748435"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -87,14 +87,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | driveItemUploadableProperties | 有关所上载文件的数据
-| deferCommit          | 布尔                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
+| deferCommit          | 布尔值                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
 
 ## <a name="item-properties"></a>项目属性
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | 字符串             | 提供用户可见项目的说明。 读写。 仅在 OneDrive 个人。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| 说明          | String             | 提供用户可见项目的说明。 读写。 仅在 OneDrive 个人。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 
@@ -365,7 +365,7 @@ If-Match: {etag or ctag}
 
 **注意：** 可以在此调用中正常使用 `@microsoft.graph.conflictBehavior` 和 `if-match` 头。
 
-### <a name="http-response"></a>HTTP 响应
+### <a name="response"></a>响应
 
 如果可以使用新的元数据提交文件，将返回 `HTTP 201 Created` 或 `HTTP 200 OK` 响应，其中包含已上传文件的项元数据。
 
