@@ -1,18 +1,18 @@
 ---
 title: Get attachment
-description: '读取的属性和附件，附加到事件的关系 '
-ms.openlocfilehash: a432e4f3fb98062a701e4c6e7b177145faa65e1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 读取的属性和附件，附加到事件、 邮件、 Outlook 任务或公告的关系。
+ms.openlocfilehash: 040e6995a24fcff62e8e7f476afdc602a6c9617c
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043031"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771812"
 ---
 # <a name="get-attachment"></a>Get attachment
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-读取的属性和附件，附加到[事件](../resources/event.md)、[消息](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[发布](../resources/post.md)的关系。 
+读取的属性和附件，附加到[事件](../resources/event.md)、[消息](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[发布](../resources/post.md)的关系。
 
 附件可以是下列类型之一：
 
@@ -20,100 +20,88 @@ ms.locfileid: "27043031"
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。可以使用 `$expand` 来进一步获取该项的属性。请参阅以下[示例](#request-2)。
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。
 
-所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
+所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 * 如果访问邮件中的附件： Mail.Read
 * 如果访问事件中的附件： Calendars.Read
 * 如果访问 Outlook 任务中的附件： Tasks.Read
 * 如果访问组文章中的附件： Group.Read.All
+
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
 -->
 
 ## <a name="http-request"></a>HTTP 请求
-[事件](../resources/event.md)在用户的默认[日历](../resources/calendar.md)中的附件。
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
+[事件](../resources/event.md)的附件。
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-
-GET /me/calendar/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
 用户邮箱中的 [邮件](../resources/message.md) 附件。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
+
 用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
+
 [邮件](../resources/message.md)的用户的邮箱中[mailFolder](../resources/mailfolder.md)子文件夹中包含的附件。  下面的示例演示一个级别的嵌套，但一条消息可以位于子级的子级，依此类推。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-为[Outlook 任务](../resources/outlooktask.md)在用户的邮箱，或指定的任务文件夹或任务组中的附件。
+为[Outlook 任务](../resources/outlooktask.md)的附件。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/outlook/tasks/<id>/attachments/{id}
 GET /users/<id>/outlook/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
 ```
 
 属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -122,23 +110,27 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面的示例展示了用于获取事件的文件附件的请求。
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -157,24 +149,29 @@ Content-length: 199
   "size": 99
 }
 ```
+
 ## <a name="example-item-attachment"></a>示例（项目附件）
 
-##### <a name="request-1"></a>请求 1
+### <a name="request-1"></a>请求 1
+
 第一个示例演示如何在邮件上获取项目附件。返回 **itemAttachment** 的属性。
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response-1"></a>响应 1
+### <a name="response-1"></a>响应 1
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -191,23 +188,26 @@ Content-type: application/json
 }
 ```
 
+### <a name="request-2"></a>请求 2
 
-##### <a name="request-2"></a>请求 2
 下面的示例演示如何使用 `$expand` 来获取附加到该邮件的项目的属性。在此示例中，该项目是一封邮件；还会返回该附加邮件的属性。
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-##### <a name="response-2"></a>响应 2
+### <a name="response-2"></a>响应 2
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -279,25 +279,28 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="example-reference-attachment"></a>示例（参考附件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面的示例展示了用于获取事件的参考附件的请求。
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

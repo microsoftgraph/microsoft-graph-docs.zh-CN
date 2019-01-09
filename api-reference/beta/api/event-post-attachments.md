@@ -2,19 +2,21 @@
 title: Add attachment
 description: 使用此 API 附件添加到事件。 相那里
 author: angelgolfer-ms
-ms.openlocfilehash: 2f55646c8f0f115640ced91a90ef16d40599b3b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355956"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771770"
 ---
 # <a name="add-attachment"></a>Add attachment
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 使用此 API 将 [附件](../resources/attachment.md) 添加到事件。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -24,47 +26,27 @@ ms.locfileid: "27355956"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-[事件](../resources/event.md)在用户的默认[日历](../resources/calendar.md)中的附件。
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
 ```
 
 <!--
 POST /groups/{id}/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
@@ -73,33 +55,37 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
 在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-Length: 735
@@ -121,7 +107,7 @@ Content-Length: 735
 
 ## <a name="example-item-attachment"></a>示例（项目附件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面将一个事件附加到另一个事件作为项目附件的示例。
 
@@ -129,6 +115,7 @@ Content-Length: 735
   "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
@@ -136,7 +123,7 @@ Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
         "@odata.type": "microsoft.graph.event",
         "subject": "Discuss gifts for children",
@@ -156,13 +143,15 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -183,7 +172,8 @@ Content-length: 162
 
 ## <a name="example-reference-attachment"></a>示例（参考附件）
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面是请求的添加到现有的事件的引用附件的示例。
 附件指向 OneDrive 上的文件夹。
 <!-- {
@@ -192,28 +182,30 @@ Content-length: 162
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
-```
+```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
 Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是响应的完整的一个示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 

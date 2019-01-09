@@ -2,12 +2,12 @@
 title: 用户： translateExchangeIds
 description: 翻译格式之间的 Outlook 相关的资源的标识符。
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360576"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771819"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -23,7 +23,7 @@ ms.locfileid: "27360576"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | User.ReadBasic、 User.Read、 User.ReadWrite、 User.ReadBasic.All、 User.Read.All、 User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.ReadBasic，User.Read，User.ReadWrite |
-| Application | User.Read.All、User.ReadWrite.All |
+| 应用程序 | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,13 +36,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-headers"></a>请求标头
 
-| Name | 值 |
+| 名称 | 值 |
 |:-----|:------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-| 参数 | Type | 说明 |
+| 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中项目的。 此集合的最大大小是 1000年字符串。 |
 | sourceIdType | exchangeIdFormat | ID 类型的标识符的`InputIds`参数。 |
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | entryId | MAPI 客户端使用二进制条目 ID 格式。 |
 | ewsId | 使用 Exchange Web 服务客户端 ID 格式。 |
-| immutableEntryId | MAPI 兼容变 ID 格式。 |
+| immutableEntryId | 二进制 MAPI 兼容变 ID 的格式。 |
 | restId | 由 Microsoft Graph 中使用的默认 ID 格式。 |
 | restImmutableEntryId | 由 Microsoft Graph 变 ID 格式。 |
+
+二进制格式 (`entryId`和`immutableEntryId`) 的 URL 安全 base64 编码。 URL safeness 实现通过修改 base64 编码的二进制数据采用以下方式：
+
+- 替换`+`与`-`
+- 替换`/`与`_`
+- 删除任何尾随空白字符 (`=`)
+- 指示在原始了多少填充字符的字符串的末尾添加一个整数 (`0`， `1`，或`2`)
 
 ## <a name="response"></a>响应
 
@@ -66,7 +73,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 下面的示例演示如何将多个标识符转换从普通的 REST API 格式 (`restId`) 为 REST 变格式 (`restImmutableEntryId`)。
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面是示例响应
 <!-- {

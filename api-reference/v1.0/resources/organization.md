@@ -1,12 +1,12 @@
 ---
 title: 组织资源类型
 description: " 创建并删除不受支持。 继承自 directoryObject。"
-ms.openlocfilehash: b98455c52d963d4e523253dc2a3b75137be9e854
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 5651e300c4ebfc7adbbccc7aef485a43263b4830
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748330"
+ms.locfileid: "27771735"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -38,8 +38,8 @@ ms.locfileid: "27748330"
 |createdDateTime|DateTimeOffset| 创建组织时的时间戳。 值不能修改和创建组织时将自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | deletedDateTime                    | DateTimeOffset                                                    | 表示日期和时间的 Azure AD 租户已删除使用 ISO 8601 格式时，始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。                                                                                     |
 | displayName                          | String                                                            | 租户的显示名称。                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | 租户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。                                                                                                                                                            |
-|isMultipleDataLocationsForServicesEnabled|布尔值|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+| id                                   | String                                                            | 租户 ID，代表组织 （或租户） 的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。                                                                                                                                                            |
+|isMultipleDataLocationsForServicesEnabled|布尔值|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 此为只读属性。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 | marketingNotificationEmails          | String collection                                                 | 不可为 null。                                                                                                                                                                                                                                                                        |
 | onPremisesLastSyncDateTime               | DateTimeOffset                                                    | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | onPremisesSyncEnabled                       | Boolean                                                           | 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。                        |

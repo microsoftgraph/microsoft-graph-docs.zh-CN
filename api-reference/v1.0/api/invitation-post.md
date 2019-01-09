@@ -1,12 +1,12 @@
 ---
 title: 创建邀请
 description: 使用该 API 创建新的邀请。邀请将外部用户添加至组织。
-ms.openlocfilehash: 6150acd3340ff198e2cc344dcc2fb360314c0320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 553204f469fcd6db8fb988070b43e75d8b679a74
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008058"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771686"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -102,7 +102,7 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
 
