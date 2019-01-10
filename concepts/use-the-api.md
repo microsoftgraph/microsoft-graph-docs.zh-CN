@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Graph API
-description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API.在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
+description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
 author: jackson-woods
 ms.openlocfilehash: 6f319540853e94497c6553b1bd44f7a8d3a33575
 ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
@@ -11,7 +11,7 @@ ms.locfileid: "27340052"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
-Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API.在你[注册应用](auth-register-app-v2.md)并[获取身份验证令牌以用于用户](auth-v2-user.md)或[服务](auth-v2-service.md)后，可以向 Microsoft Graph API 发送请求。
+Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你[注册应用](auth-register-app-v2.md)并[获取身份验证令牌以用于用户](auth-v2-user.md)或[服务](auth-v2-service.md)后，可以向 Microsoft Graph API 发送请求。
 
 > **重要说明：** 条件访问策略应用于 Microsoft Graph 的方式在发生变化。 应用程序需要进行更新以处理配置了条件访问策略的应用场景。 有关详细信息和指南，请参阅 [Azure Active Directory 条件访问开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)。
 
@@ -32,7 +32,7 @@ https://graph.microsoft.com/{version}/{resource}?query-parameters
 
 * 状态代码 - 表示成功或失败的 HTTP 状态代码。若要详细了解 HTTP 错误代码，请参阅[错误](errors.md)。
 * 响应消息 - 请求获取的数据或操作结果。对于某些操作，响应消息可能为空。
-* “下一步”**** 链接 - 如果请求返回大量数据，需要通过选择“下一步”**** 翻阅数据。有关详细信息，请参阅[分页](paging.md)。
+* **“下一步”** 链接 - 如果请求返回大量数据，需要通过选择 **“下一步”** 翻阅数据。有关详细信息，请参阅[分页](paging.md)。
 
 ## <a name="http-methods"></a>HTTP 方法
 
