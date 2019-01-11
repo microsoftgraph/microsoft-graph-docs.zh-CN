@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: GeoCoordinates
-ms.openlocfilehash: f9110591ee1e3350979aa2c7785cdebb2d4a584c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d49142ed414ad82ec149792e11e5a8c42d9837dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044901"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852638"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
@@ -40,9 +41,9 @@ ms.locfileid: "27044901"
 
 | 属性  | 类型   | 说明
 |:----------|:-------|:--------------------------------------------------------
-| 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
-| 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。
-| 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。
+| 海拔  | Double | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | Double | 可选。此项的纬度（以十进制表示）。只读。
+| 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解
 

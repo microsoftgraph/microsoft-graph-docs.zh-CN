@@ -1,12 +1,13 @@
 ---
 title: 使用 Microsoft Graph API 实现跨设备体验
 description: '{这是 beta 版本。 内容等同于现有 project_rome_overview.md 连接}。'
-ms.openlocfilehash: b1ded917ddb2f623c0317a8fb85c390a7f9ff784
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5379c6690d23167f1b0743b83ca555c146b9a70d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852848"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>使用 Microsoft Graph API 实现跨设备体验
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 签入文件
-ms.openlocfilehash: 49ff3d52ae95cfbe11defbddc0959e8fd8ab7fa6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 685bd89ed13bba4c4687620b00d346c7557214c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853923"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>签入对 DriveItem 资源的更改
 

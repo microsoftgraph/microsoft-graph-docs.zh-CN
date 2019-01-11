@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.openlocfilehash: 067cf88773b5f5d69b2b3538a2ddeab6741631a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854248"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
@@ -42,17 +43,17 @@ ms.locfileid: "27041799"
 
 ## <a name="properties"></a>属性
 
-| 属性         | 类型                    | 说明
+| 属性         | 类型                    | Description
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | 布尔                 | 指示是否项目"趋势。" 只读。
-| startDateTime    | DateTimeOffset          | 当开始间隔。 只读。
-| endDateTime      | DateTimeOffset          | 当结束间隔。 只读。
-| create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
-| edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 只读。
-| delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 只读。
-| move             | [itemActionStat][]      | 有关此间隔中的**移动**操作的统计信息。 只读。
-| 访问           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 只读。
+| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 此为只读属性。
+| isTrending       | 布尔                 | 指示是否项目"趋势。" 此为只读属性。
+| startDateTime    | DateTimeOffset          | 当开始间隔。 此为只读属性。
+| endDateTime      | DateTimeOffset          | 当结束间隔。 此为只读属性。
+| create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 此为只读属性。
+| edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 此为只读属性。
+| delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 此为只读属性。
+| move             | [itemActionStat][]      | 有关此间隔中的**移动**操作的统计信息。 此为只读属性。
+| 访问           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 此为只读属性。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md

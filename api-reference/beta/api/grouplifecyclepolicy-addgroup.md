@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: addGroup'
 description: 将组添加到生命周期策略。
 author: dkershaw10
-ms.openlocfilehash: 57af4383c471832acbffb4136a057c91a1d061d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac0bf455ba2d4aa5f1f6add5827124581ce663b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853359"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -34,7 +35,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 ## <a name="request-headers"></a>请求标头
 
-| Name | 说明 |
+| 名称 | 说明 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json |
@@ -42,7 +43,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | Type | 说明 |
+| 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |groupId|Guid| 要添加到策略的组的 ID。 |
 

@@ -2,12 +2,13 @@
 title: 列表 advancedThreatProtectionOnboardingDeviceSettingStates
 description: 列出属性和 advancedThreatProtectionOnboardingDeviceSettingState 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 1f0dec60ad0cfa9fb57ba7580d5c28fb9e084468
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d238b10cc9b40a6ae590617213521f067c3acc4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854612"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>列表 advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -38,7 +39,7 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedThr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

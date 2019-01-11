@@ -1,12 +1,13 @@
 ---
 title: hostSecurityState 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: ae64d4e0f13e39cb344fd54f5e600cfbfe0dc4f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ae1436dd9771d34c37542eb756f81a4f8f0306a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853373"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27044895"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |fqdn|字符串|主机 FQDN （完全限定域名） (例如，machine.company.com)。|
 |isAzureAadJoined|布尔|如果主机是加入到 Azure Active Directory 域服务的域，则为 true。|

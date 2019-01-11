@@ -1,12 +1,13 @@
 ---
 title: 筛选器资源类型
 description: 管理表格列的筛选。
-ms.openlocfilehash: df896d10b1e8734015d38b92b5824e3e3652e3a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5bbc4eff85f40e116ea513c27fa2966dd28a5493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852785"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 

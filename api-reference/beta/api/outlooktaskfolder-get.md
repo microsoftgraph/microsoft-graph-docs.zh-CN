@@ -2,12 +2,13 @@
 title: 获取 outlookTaskFolder
 description: 要获取的属性和指定 Outlook 任务文件夹的关系。
 author: angelgolfer-ms
-ms.openlocfilehash: 093741ebffb8c2bd3305399b61391af1216eef9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61f31f95ab31aab254c3497f088117480e84a512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853541"
 ---
 # <a name="get-outlooktaskfolder"></a>获取 outlookTaskFolder
 
@@ -33,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

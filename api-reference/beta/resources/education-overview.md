@@ -1,12 +1,13 @@
 ---
 title: 在 Microsoft Graph 中使用教育 API
 description: 教育在 Microsoft Graph 中的 Api 增强 Office 365 资源和数据的教育方案，其中包括学校、 学生、 教师、 类、 注册，和工作分配的相关信息。 这使你能够轻松地构建与教育资源集成的解决方案。
-ms.openlocfilehash: 610a16af6993397ae9162fb27add97cd6c5af0ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852470"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -95,7 +96,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 以下是一些常见的使用案例工作分配相关教育版 Api。
 
-|用例|说明|另请参阅|
+|用例|Description|另请参阅|
 |:-------|:----------|:-------|
 |创建工作分配|外部系统可以创建类的工作分配，并附加到工作分配的资源。|[创建工作分配](../api/educationassignment-post-resources.md)|
 |读取工作分配信息|分析应用程序可以获取有关分配和学生提交，包括多个日期和薪等级的信息。|[获取工作分配](../api/educationassignment-get.md)|

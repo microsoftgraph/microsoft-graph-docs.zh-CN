@@ -2,12 +2,13 @@
 title: 列表 userAppInstallStatuses
 description: 列出属性和 userAppInstallStatus 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 0aeef4d97e63c42e11fefdb84a4dfb6138fdc6a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6c0fb5a35dc2bdd712df53305020102cd82e15
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853758"
 ---
 # <a name="list-userappinstallstatuses"></a>列表 userAppInstallStatuses
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

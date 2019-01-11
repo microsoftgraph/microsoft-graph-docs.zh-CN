@@ -2,12 +2,13 @@
 title: chatInfo 资源类型
 description: 有关 Microsoft 团队中的邮件的信息。
 author: VinodRavichandran
-ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c2cc0dd288abdab7852017600c4c55b9a40b0aa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852939"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380413"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型    | 说明|
+| 属性            | 类型    | Description|
 |:--------------------|:--------|:-----------|
 | messageId           | 字符串  | Microsoft 团队通道中的邮件的唯一标识符。 |
 | replyChainMessageId | 字符串  | 答复邮件的 ID。 |

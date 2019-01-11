@@ -1,12 +1,13 @@
 ---
 title: directoryObject： 增量
 description: 获取新创建、 更新或删除以下类型的目录对象： 用户、 组和组织的联系人，请在单个增量查询。 请参阅修订的详细信息。
-ms.openlocfilehash: 98674a141c0567defb06da7b1ccd95a209aaa4f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854493"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： 增量
 

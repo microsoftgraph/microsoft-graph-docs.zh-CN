@@ -1,12 +1,13 @@
 ---
 title: 检查成员组
 description: 检查这些组的组和从该列表中的返回指定列表中的成员资格
-ms.openlocfilehash: b7baccd19b9d5a84ecbca4d75bca053eb51bc3f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854038"
 ---
 # <a name="check-member-groups"></a>检查成员组
 

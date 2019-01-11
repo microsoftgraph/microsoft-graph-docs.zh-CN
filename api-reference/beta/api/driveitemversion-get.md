@@ -1,12 +1,13 @@
 ---
 title: 获取 DriveItemVersion 资源（预览）
 description: 检索 DriveItem 的某个特定版本的元数据。
-ms.openlocfilehash: c78a81d1a5428bbb969f8761b238655ab7919e5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0c5611b769ed5e8adb63550a76016a055245504
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853709"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>获取 DriveItemVersion 资源（预览）
 

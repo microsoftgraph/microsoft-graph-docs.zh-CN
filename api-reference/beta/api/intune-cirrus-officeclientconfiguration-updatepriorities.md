@@ -2,12 +2,13 @@
 title: updatePriorities 操作
 description: 更新策略优先级。
 author: tfitzmac
-ms.openlocfilehash: d8c493200d5ed1c0e6eb2228a1e74337237e73e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2aeffb76268266f239413437369cefddadb72cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853156"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 
@@ -38,7 +39,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |officeConfigurationPolicyIds|String 集合|Office 配置策略 id 列表|
 |officeConfigurationPriorities|Int32 集合|Office 配置优先级列表|

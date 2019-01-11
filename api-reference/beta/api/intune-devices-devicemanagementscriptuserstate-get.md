@@ -2,12 +2,13 @@
 title: 获取 deviceManagementScriptUserState
 description: 读取属性和 deviceManagementScriptUserState 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: a1dbe0bf839c52dc8b1d8c4834188154a0bd1095
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b93cc1dc2d957dcbba6816095df9ebe3e8755ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852561"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>获取 deviceManagementScriptUserState
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

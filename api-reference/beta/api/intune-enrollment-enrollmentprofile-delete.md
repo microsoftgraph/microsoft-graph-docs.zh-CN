@@ -2,12 +2,13 @@
 title: 删除 enrollmentProfile
 description: 删除 enrollmentProfile。
 author: tfitzmac
-ms.openlocfilehash: b1560c2972193934484cae3e1a81f977418d3d22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af058a998d20248ab226e08a281566e2e4a116ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852302"
 ---
 # <a name="delete-enrollmentprofile"></a>删除 enrollmentProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

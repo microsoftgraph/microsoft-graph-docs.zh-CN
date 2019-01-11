@@ -1,12 +1,13 @@
 ---
 title: referenceAttachment 资源类型
 description: 到 OneDrive for Business 云驱动器或其他支持的存储位置上的文件（例如文本文件或 Word 文档）的链接，附加到事件、邮件或帖子中。
-ms.openlocfilehash: b3604791c7e06d4f765a81263e1f6afe51743390
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853121"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment 资源类型
 

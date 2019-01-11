@@ -2,12 +2,13 @@
 title: deviceManagementSettings 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 048755ef068bf28381e84067a9eff5d5cbe88ad6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f973f2645b37375641bc536b5ace0fa508fb0b0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854416"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27334886"
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。 有效值为 0 至 120|
 |isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
-|enhancedJailBreak|Boolean|功能启用或非增强 jailbreak 检测。|
+|enhancedJailBreak|布尔|功能启用或非增强 jailbreak 检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|当设备不检查指定天数，公司数据可能会删除，设备将不会在管理下。 有效值 30 到 270|
 
 ## <a name="relationships"></a>Relationships

@@ -2,12 +2,13 @@
 title: 删除设备
 description: 删除已注册的设备。
 author: tfitzmac
-ms.openlocfilehash: e171656e0d4ab32f140c1b53f5ea42e8424cb2e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2b34cffbff6b3c627ed13d6e4b2917f6f36f4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854570"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -35,7 +36,7 @@ DELETE /devices/{id}
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

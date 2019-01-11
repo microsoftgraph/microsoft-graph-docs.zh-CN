@@ -2,12 +2,13 @@
 title: 列表 educationSynchronizationProfiles
 description: 检索为租户中的学校数据同步配置文件的集合。
 author: mmast-msft
-ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b234ac8a6a99f5cc32a3f4416975ea77f4c66ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853667"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列表 educationSynchronizationProfiles
 
@@ -34,7 +35,7 @@ GET /synchronizationProfiles
 此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应： $filter、 $orderby、 $top、 $skip 和 $count。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

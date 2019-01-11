@@ -1,12 +1,13 @@
 ---
 title: defenderThreatAction 枚举类型
 description: Defender 的默认操作以对其执行检测到恶意软件的威胁。
-ms.openlocfilehash: a5eb108a3ab26596eec9abe838e3bbfe853d96d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed84a16dbac493a3e962e37ba246d8d418782a91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852820"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27010513"
 
 Defender 的默认操作以对其执行检测到恶意软件的威胁。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|应用基于更新定义的操作。|
 |clean|1|清理检测到的威胁。|

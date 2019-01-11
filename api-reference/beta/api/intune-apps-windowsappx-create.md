@@ -2,12 +2,13 @@
 title: 创建 windowsAppX
 description: 创建新的 windowsAppX 对象。
 author: tfitzmac
-ms.openlocfilehash: 9a7f2f0327fb8b0b8f2971efe58c6d3bdb5e03ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd6e79a3dfda5d222a56646901a4efe07101aec5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854241"
 ---
 # <a name="create-windowsappx"></a>创建 windowsAppX
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 获取 educationSynchronizationErrors
 description: '获取验证期间和/或租户中的特定学校数据同步配置文件同步期间生成的错误。 '
 author: mmast-msft
-ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854003"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
@@ -31,7 +32,7 @@ GET /synchronizationProfiles/{id}/errors
 此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应： $filter、 $orderby、 $top、 $skip 和 $count。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

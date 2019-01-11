@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerGroupsActivityDetail'
 description: 获取组执行的 Yammer 组活动的详细信息。
-ms.openlocfilehash: c13e7160d667d479f4f4ecf17287934bb9c78aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8329125c2bc1b1de5716668675d50c796c81039b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853597"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 

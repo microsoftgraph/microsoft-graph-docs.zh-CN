@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentFailureTrends 函数
 description: 注册失败趋势报告的元数据
 author: tfitzmac
-ms.openlocfilehash: 873169eb3532b149de337ff21afe4fb8c3f67fe1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c115ee0ada2297c237db839049f9cd33cb77e2ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853486"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>managedDeviceEnrollmentFailureTrends 函数
 
@@ -23,7 +24,7 @@ ms.locfileid: "27316329"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -39,7 +40,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

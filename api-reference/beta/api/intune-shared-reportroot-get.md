@@ -2,12 +2,13 @@
 title: 获取 reportRoot
 description: 读取 reportRoot 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 9c33b39dd3bf504c1ebfaad7ca41ca19eff69975
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e21d6071ad08da63d0df839808d12b9bf288887
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853450"
 ---
 # <a name="get-reportroot"></a>获取 reportRoot
 
@@ -24,7 +25,7 @@ ms.locfileid: "27316322"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -42,7 +43,7 @@ GET /reports
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

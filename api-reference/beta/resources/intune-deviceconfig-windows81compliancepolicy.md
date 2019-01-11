@@ -2,12 +2,13 @@
 title: windows81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 的合规性设置。
 author: tfitzmac
-ms.openlocfilehash: 43a61c203a74123877264b070c3ed6a0322f3859
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15974a542d6e43b7d740f2abb2b038a0e77c64ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853261"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27335992"
 |[Update windows81CompliancePolicy](../api/intune-deviceconfig-windows81compliancepolicy-update.md)|[windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md)|更新 [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

@@ -2,12 +2,13 @@
 title: educationSynchronizationError 资源类型
 description: 代表在学校数据配置文件的验证和/或同步过程中的错误。无法验证和/或与 Azure Active Directory (Azure AD) 将同步的每个条目生成是唯一的错误。
 author: mmast-msft
-ms.openlocfilehash: d950e906a506c3cf1ee5bc5b627200dc79c1d0fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5cf502c76aca816e75293ec8ac64cc544eeef7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852393"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27335999"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **entryType** | string |  代表同步实体 （学校、 节、 学生、 教师）。       |
 | **errorCode** | string |  表示此错误的错误代码。         |

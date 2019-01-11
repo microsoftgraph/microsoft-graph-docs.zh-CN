@@ -2,12 +2,13 @@
 title: 列表趋势分析
 description: 返回用户周围趋势分析的项的列表的计算的洞察。
 author: simonhult
-ms.openlocfilehash: de169f9960a1694e452b8dcfd16aafde89d3ac29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b9daf96529d50d8767f234c3b1a6d9526eaac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343412"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854787"
 ---
 # <a name="list-trending"></a>列表趋势分析
 

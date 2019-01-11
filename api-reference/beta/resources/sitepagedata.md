@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
 title: SitePageData
-ms.openlocfilehash: 79827864ec674074bab1de219834a4a7d4fc7ad9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bee5aaef0f690146f2829f903e25861e74034b7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044807"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852834"
 ---
 # <a name="sitepagedata-resource"></a>sitePageData 资源
 

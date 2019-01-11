@@ -2,12 +2,13 @@
 title: 永久删除项目
 description: 永久删除已删除的项目中的项目
 author: lleonard-msft
-ms.openlocfilehash: cdea85ee1b46b4d3c7156a599081a93f31318eac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5f9bfb7a235386abb6f0e885aa9ada5f1e32517
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853969"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -29,7 +30,7 @@ ms.locfileid: "27336468"
 DELETE /directory/deleteditems/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
 | Accept  | application/json |

@@ -1,12 +1,13 @@
 ---
 title: Microsoft Intune 中共享的资源
 description: 这些终结点用于多个 Microsoft Graph API 中 Intune 工作流。  用途、 用途以及使用给定的资源所需的权限会有所不同，根据特定工作流和基础调用上下文。  此外，仅对特定的工作流支持某些方法、 属性和操作。
-ms.openlocfilehash: a0e896b2aed219679ec45804dc94b22b7cb9d727
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852624"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中共享的资源
 
@@ -47,7 +48,7 @@ ms.locfileid: "27048897"
 - [运行状态](intune-shared-runstate.md)
 - [保存 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [用户](intune-shared-user.md)
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
 - [VPP 令牌操作失败的原因](intune-shared-vpptokenactionfailurereason.md)
 - [Windows 域与会配置](intune-shared-windowsdomainjoinconfiguration.md)

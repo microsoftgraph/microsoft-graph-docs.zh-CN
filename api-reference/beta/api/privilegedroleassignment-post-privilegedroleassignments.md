@@ -1,12 +1,13 @@
 ---
 title: 创建 privilegedRoleAssignment
 description: 使用此 API 创建新 privilegedRoleAssignment。
-ms.openlocfilehash: cee00a71ff9ff233902ba19fb1f3f699ab746f98
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7957aa964361890572de11c375753a49a3a9e9e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852211"
 ---
 # <a name="create-privilegedroleassignment"></a>创建 privilegedRoleAssignment
 

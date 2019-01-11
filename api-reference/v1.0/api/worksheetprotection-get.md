@@ -2,12 +2,13 @@
 title: Get WorksheetProtection
 description: 检索 worksheetprotection 对象的属性和关系。
 author: lumine2008
-ms.openlocfilehash: 335492707cc3411d39fa5c95b1668dd1768fd8cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d18b20b9d4af7dc9351c90039290cf93d2aec741
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853940"
 ---
 # <a name="get-worksheetprotection"></a>Get WorksheetProtection
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/protection
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

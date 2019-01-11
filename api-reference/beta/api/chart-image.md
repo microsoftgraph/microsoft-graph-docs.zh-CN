@@ -2,12 +2,13 @@
 title: 图表：图像
 description: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
 author: lumine2008
-ms.openlocfilehash: 6a86e8df1c49fb02626ed7d0d468c3031742d615
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7d3b0bc33be46301a4abffa90d37c53c553e37d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854234"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |height|number|可选。生成的图像的所需高度。|
 |width|number|可选。生成的图像的所需宽度。|

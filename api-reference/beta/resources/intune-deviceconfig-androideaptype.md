@@ -2,12 +2,13 @@
 title: androidEapType 枚举类型
 description: 可扩展的身份验证协议 (EAP) 配置类型。
 author: tfitzmac
-ms.openlocfilehash: 6a1133fa83c2daba414530eb46191f7263953bcd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 009000adbe5f84628bd7f15375391cd2c026e7e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852807"
 ---
 # <a name="androideaptype-enum-type"></a>androidEapType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333227"
 
 可扩展的身份验证协议 (EAP) 配置类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |eapTls|13|可扩展的身份验证协议传输层安全性 (EAP TLS)。|
 |eapTtls|21|可扩展的身份验证协议隧道传输层安全性 (EAP TTL)。|

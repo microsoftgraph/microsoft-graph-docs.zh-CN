@@ -2,12 +2,13 @@
 title: 创建 settingStateDeviceSummary
 description: 创建新的 settingStateDeviceSummary 对象。
 author: tfitzmac
-ms.openlocfilehash: 44cb33bd0445586ead64c5101c297b7a27351344
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06c9851a534f59be935791e1c1f435d2180bf9d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852106"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

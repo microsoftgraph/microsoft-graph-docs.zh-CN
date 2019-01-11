@@ -2,12 +2,13 @@
 title: 从工作组中删除应用程序
 description: 从指定的团队中卸载应用程序。
 author: nkramer
-ms.openlocfilehash: 5896d71e0b6b20d8aeed3020c3d8dc9251797ccd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0d1c7d8344218d6eba4165e94b09158d60846ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852491"
 ---
 # <a name="delete-app-from-team"></a>从工作组中删除应用程序
 
