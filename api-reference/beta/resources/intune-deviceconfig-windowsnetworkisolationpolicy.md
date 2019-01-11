@@ -2,12 +2,13 @@
 title: windowsNetworkIsolationPolicy 资源类型
 description: Windows 网络隔离策略
 author: tfitzmac
-ms.openlocfilehash: af8cac99a359136bbc3d5d19842b56b57c80c6c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82026ba4d82b85a0275f83bb729b495e17ff5d5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834613"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323287"
 
 Windows 网络隔离策略
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |enterpriseNetworkDomainNames|String 集合|这是构成企业边界的域列表。 将被视为企业数据和保护数据从一个发送到的设备这些域。 这些位置将被视为企业数据到共享的安全目标。|
 |enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) 集合|包含需要保护在云中承载的企业资源域的列表。 与这些资源的连接被视为企业数据。 如果代理与云资源配对，则到云资源的流量将通过表示的代理服务器（在端口 80 上）通过企业网络进行路由。 此外必须使用 EnterpriseInternalProxyServers 策略配置代理服务器使用实现此目的。 该集合最多可包含 500 个元素。|

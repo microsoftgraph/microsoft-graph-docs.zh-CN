@@ -2,12 +2,13 @@
 title: 更新 deviceCategory
 description: 更新 deviceCategory 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 73980aa4c178ff610ce44dc3b832c8c931d72740
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38377c7b92983f10ad42284b7790782cde2264fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832975"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

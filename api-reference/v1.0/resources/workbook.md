@@ -1,12 +1,13 @@
 ---
 title: 工作簿资源类型
 description: 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
-ms.openlocfilehash: 6575cc2d49e4b30e78e07989f38600ae64d5c5a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 25b74bcc0ce0b54aace11ed9f829435a510f9c9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835418"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -54,7 +55,7 @@ ms.locfileid: "27009660"
 
 [Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
 
-受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
+受支持函数的完整列表在[此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_： 
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  

@@ -2,12 +2,13 @@
 title: 更新组织
 description: 更新 organization 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: d26d11bb2f67b933ba5d78e444ae8e52d32339ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7ecdb1ea142f31b07038f1ffe8779c675eeaaf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835523"
 ---
 # <a name="update-organization"></a>更新 organization
 
@@ -36,7 +37,7 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

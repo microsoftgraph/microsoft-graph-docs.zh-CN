@@ -2,12 +2,13 @@
 title: domainDnsSrvRecord 资源类型
 description: 表示已添加到租户中特定域的 DNS 区域文件的 SRV 记录。继承自 DomainDnsRecord 实体。
 author: lleonard-msft
-ms.openlocfilehash: d8fbdb6a99e2a4c88b38d350ace3976842eb7f92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 655dc6fcbccdcb6e1794c94d97dd8e7fc4837f04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835789"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 

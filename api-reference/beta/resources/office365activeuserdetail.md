@@ -1,18 +1,19 @@
 ---
 title: office365ActiveUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 95912e736459894a69f8e2e1a18c2aaf672a19a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 462858f42b48560db4cd2f311ffdffd911504afe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833955"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>office365ActiveUserDetail 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性                          | 类型              | 说明                              |
+| 属性                          | 类型              | Description                              |
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | 日期              | 内容最晚日期。          |
 | userPrincipalName                 | 字符串            | 用户主体名称 (UPN) 的用户。 UPN 是基于 Internet 标准 RFC 822 用户 Internet 风格登录名。 按照惯例，这应映射到用户的电子邮件名称。 常规格式为 alias@domain，域必须存在于中的已验证域的租户的集合。 创建用户时此属性是必需的。 |

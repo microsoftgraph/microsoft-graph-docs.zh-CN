@@ -1,12 +1,13 @@
 ---
 title: parseExpressionResponse 资源类型
 description: '代表来自响应[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作。'
-ms.openlocfilehash: 625df0ca16135eaa35c5b679c79dea582c4012e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 550a46b0c27c2ca8d2d4c01baa975d8a204546f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832947"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>parseExpressionResponse 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27048522"
 代表来自响应[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |error|odata.error|错误详细信息，如果表达式评估导致出错。|
 |evaluationResult|String 集合|无条件表达式的计算值的集合。|

@@ -1,12 +1,13 @@
 ---
 title: orgContact 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 90d25d3ef7688372e4e961220bc454a2b5607344
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832968"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -27,7 +28,7 @@ ms.locfileid: "27283666"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | 此组织联系人的的邮政地址。 现在联系人只能有一个物理地址。 |
 | companyName                  | String                                                    | 此组织联系人属于公司的名称。                                                                                                                                                                                                                                                                                                                 |
@@ -41,17 +42,17 @@ ms.locfileid: "27283666"
 | mailNickname                 | 字符串                                                     | 电子邮件别名 (预挂起的电子邮件地址部分 @ 符号) 为此组织联系人。                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | 日期和时间此组织联系人上次同步从内部部署 AD。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，在 2014 年 1 月 1 日午夜 UTC 如下所示:"2014年-01-01T00:00:00Z。   |
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合       | 设置为此组织联系人错误任何同步的列表。                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolean|**true**如果此对象同步从内部部署目录;**false**如果此对象最初从内部部署目录同步，但不再同步并立即掌握 Exchange;**null**如果此对象包含从不已同步从内部部署目录 （默认值）。|
+|onPremisesSyncEnabled|布尔|**true**如果此对象同步从内部部署目录;**false**如果此对象最初从内部部署目录同步，但不再同步并立即掌握 Exchange;**null**如果此对象包含从不已同步从内部部署目录 （默认值）。|
 | phones                       | [phone](phone.md) collection                            | 为此组织联系人的电话的列表。 电话类型可以是移动、 业务和商务传真。 每种类型的唯一一个以往任何时候都可以存在集合中。                                                                                                                       |
 | proxyAddresses               | String collection                                         | 例如: ["SMTP: bob@contoso.com"，"smtp: bob@sales.contoso.com"]。 **Any**运算符，则需要为多值属性的筛选器表达式。 支持\$筛选器。                                                                                                                                                                               |
 | surname                      | 字符串                                                     | 此组织联系人的的姓。                          |
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |directReports|[directoryObject](directoryobject.md) collection| 联系人的直接下属。 （用户和其管理器属性设置为此联系人的联系人。） 只读的。 可为 Null。|
-|manager|[directoryObject](directoryobject.md)| 用户或此联系人的管理器的联系人。 只读。|
+|manager|[directoryObject](directoryobject.md)| 用户或此联系人的管理器的联系人。 此为只读属性。|
 |memberOf|[directoryObject](directoryobject.md) 集合| 此联系人所在的组。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
