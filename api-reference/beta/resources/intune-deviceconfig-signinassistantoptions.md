@@ -2,12 +2,13 @@
 title: signInAssistantOptions 枚举类型
 description: SignInAssistantSettings 值。
 author: tfitzmac
-ms.openlocfilehash: 97bcb162168964283e2e741f33980a7cf2904e7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f80b67a40d0b551386b9f03273efb26e294d3520
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825394"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302119"
 
 SignInAssistantSettings 值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置-wlidsvc 开始将被设置为 SERVICE_DEMAND_START。|
 |禁用|1|禁用-wlidsvc 开始将设置为 SERVICE_DISABLED。|

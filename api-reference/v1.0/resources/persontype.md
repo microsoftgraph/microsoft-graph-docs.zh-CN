@@ -1,12 +1,13 @@
 ---
 title: personType 资源类型
 description: 表示人员类型。
-ms.openlocfilehash: 3938be8d1dd0bf4a4934de4bbcd7862185971128
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d30441a9eab3f51b63e31e5c3c627444312449ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831491"
 ---
 # <a name="persontype-resource-type"></a>personType 资源类型
 

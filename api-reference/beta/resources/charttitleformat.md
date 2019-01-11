@@ -2,12 +2,13 @@
 title: ChartTitleFormat 资源类型
 description: 提供对图表标题的 Office 艺术格式的访问权限。
 author: lumine2008
-ms.openlocfilehash: 2f35df79f22ae0bd2fe771414bcbe838f5672ad1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79dc22d149bb09aa9ec928dbb72f19af3dfd3277
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836013"
 ---
 # <a name="charttitleformat-resource-type"></a>ChartTitleFormat 资源类型
 

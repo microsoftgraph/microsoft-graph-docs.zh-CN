@@ -2,12 +2,13 @@
 title: bitLockerRecoveryInformationType 枚举类型
 description: BitLockerRecoveryInformationType 类型
 author: tfitzmac
-ms.openlocfilehash: 4844168823c4f6da1e8444c4cffde6affc47eaad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14618bcf74112168e0451056bcb8939d09e7366c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831050"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>bitLockerRecoveryInformationType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357559"
 
 BitLockerRecoveryInformationType 类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |passwordAndKey|1|存储恢复密码和密钥包。|
 |passwordOnly|2|存储恢复的密码。|

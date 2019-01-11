@@ -1,12 +1,13 @@
 ---
 title: 'Filter: clear'
 description: 清除给定列上的筛选器。
-ms.openlocfilehash: ae71723ed3ca9074bb7a71ea131fd7103f3714af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dd13991572d28e61dafce3049698117729161fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838183"
 ---
 # <a name="filter-clear"></a>Filter: clear
 

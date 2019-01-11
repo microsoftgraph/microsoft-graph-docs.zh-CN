@@ -1,18 +1,19 @@
 ---
 title: office365ActivationCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: e53a979ac627735ef63a24e1823d83f4c9fe9f7a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30386b3833b8140d4c602e27cb3a78f3a68670dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824988"
 ---
 # <a name="office365activationcounts-resource-type"></a>office365ActivationCounts 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型   | 说明                              |
+| 属性          | 类型   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容最晚日期。          |
 | productType       | 字符串 | 产品类型，如"Office 365 ProPlus"、"Project 客户端"或"Visio Pro for Office 365"。 |

@@ -2,12 +2,13 @@
 title: 升级团队中应用程序
 description: 升级团队中的应用程序安装
 author: nkramer
-ms.openlocfilehash: 1e3ebffa9786d170424dd60618f553c515154140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 194763ea8464dd0651c3af1cef73e479b403d083
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831372"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中应用程序
 

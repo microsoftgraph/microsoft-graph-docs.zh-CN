@@ -2,12 +2,13 @@
 title: TableSort 资源类型
 description: 管理对 Table 对象的排序操作。
 author: lumine2008
-ms.openlocfilehash: 1d40182fbd92da0022136cb694928397e468d7ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d56d739a51b78ad7fdfd9f5cc8033b544ebb87ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835075"
 ---
 # <a name="tablesort-resource-type"></a>TableSort 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "27346975"
 |:---------------|:--------|:----------|
 |fields|[WorkbookSortField](sortfield.md)集合|表示最后一次对表排序所使用的当前条件。只读。|
 |matchCase|boolean|表示最后一次对表进行排序时大小写是否有影响。只读。|
-|方法|string|代表中文排序方法上次使用的表进行排序的字符。 可能的值为： `PinYin`， `StrokeCount`。 只读。|
+|方法|string|代表中文排序方法上次使用的表进行排序的字符。 可能的值为： `PinYin`， `StrokeCount`。 此为只读属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

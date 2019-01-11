@@ -1,12 +1,13 @@
 ---
 title: accessReview 资源类型
 description: '在 Azure AD 中访问审阅功能，`accessReview`代表访问审阅。  '
-ms.openlocfilehash: 1ad1edc9d3909ea2648f2644e1ba5438ce981c2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826073"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -43,7 +44,7 @@ ms.locfileid: "27042535"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 功能分配的唯一标识符访问审阅。 |
 | `displayName`             |`String`                                                        | 访问审阅名称。 所需在创建。 |
@@ -64,7 +65,7 @@ ms.locfileid: "27042535"
 
 
 
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 | `reviewers`               |[userIdentity](useridentity.md)集合                     | 访问审阅，如果访问审阅 reviewerType 的类型的审阅者的集合`delegate`。 |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md)集合 | 此访问审查的决策的集合。 |
@@ -113,7 +114,7 @@ ms.locfileid: "27042535"
 
 `accessReviewSettings`创建访问检查，以控制时开始访问审阅功能行为时提供其他设置。  此类型具有以下属性： 
 
-| 属性                     | 类型                      | 说明 |
+| 属性                     | 类型                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | 用于指示是否启用将邮件发送给审阅者和审阅创建者的标志。                |
 | `remindersEnabled`|`Boolean`       | 用于指示是否启用发送给审阅者的提醒电子邮件标志。       |
@@ -131,7 +132,7 @@ ms.locfileid: "27042535"
 
 `autoReviewSettings`嵌入访问查看设置，并访问查看完成时指定功能的行为。  该类型具有一个属性， `notReviewedResult`。
 
-| 属性                     | 类型     | 说明                          |
+| 属性                     | 类型     | Description                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | 必须为 `Approve`、`Deny` 或 `Recommendation` 的其中一个。 |
 
@@ -140,7 +141,7 @@ ms.locfileid: "27042535"
 
 `accessReviewRecurrenceSettings`嵌入访问查看设置，并指定访问审阅重复的时间间隔定期。  此类型具有以下属性：
 
-| 属性                     | 类型                                                                                                          | 说明 |
+| 属性                     | 类型                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | 重复出现的间隔，其必须是下列之一的`onetime`， `weekly`， `monthly`，`quarterly`或`annual`。                                                                   |
 | `recurrenceEndType`|`String` | 如何循环将结束。 它可以是一个`Never`，是否存在重复系列，没有明确结束`Endby`，在特定日期的定期结束和`occurrences`，系列结束后完成一定数量的审阅的实例。 |

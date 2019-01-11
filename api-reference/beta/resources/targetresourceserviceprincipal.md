@@ -1,12 +1,13 @@
 ---
 title: targetResourceServicePrincipal 资源类型
 description: 指示资源的影响审核活动 ServicePrincipalId。 派生 targetResource 资源。
-ms.openlocfilehash: 6d6e19997f4bfead771fc0230207df62dde6c6cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37bd63851ca9169afb669c710ef4cb2c150ea615
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047396"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839597"
 ---
 # <a name="targetresourceserviceprincipal-resource-type"></a>targetResourceServicePrincipal 资源类型
 指示资源的影响审核活动 ServicePrincipalId。 派生[targetResource](targetresource.md)资源。
@@ -14,7 +15,7 @@ ms.locfileid: "27047396"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |appId|String|指示应用程序的唯一 Id。 指的特定应用程序的应用程序 Id。|
 

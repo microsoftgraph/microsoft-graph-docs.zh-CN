@@ -2,12 +2,13 @@
 title: 删除 managedDeviceMobileAppConfigurationAssignment
 description: 删除 managedDeviceMobileAppConfigurationAssignment。
 author: tfitzmac
-ms.openlocfilehash: 0c66acc94ffefc3269653f291fb256742df60379
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9aab02c418bdcd78288d027995270abd6ed427de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835375"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>删除 managedDeviceMobileAppConfigurationAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

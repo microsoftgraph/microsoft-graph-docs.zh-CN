@@ -2,12 +2,13 @@
 title: 更新 managedDeviceMobileAppConfigurationUserStatus
 description: 更新 managedDeviceMobileAppConfigurationUserStatus 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e76c6ef607c97cb0f2fb4572cbea4009bc80fd7c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23e44eeb6773c24e8959a399231fa5fa4aca5ab0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838386"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>更新 managedDeviceMobileAppConfigurationUserStatus
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

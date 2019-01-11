@@ -1,12 +1,13 @@
 ---
 title: 更新 bookingstaffmember
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 99501f31ccd2b810d6a0c7f836d5b70bb98f223b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824981"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -35,7 +36,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|布尔|True 表示，如果该人员成员是 Office 365 用户，预订 API 使用 Office 365，以及**workingHours**属性的员工成员的个人日历来确定可用性。 |
 |colorIndex|Int32|标识要表示员工成员的颜色。 颜色对应于预订应用程序中的**人员详细信息**页面中的调色板。|

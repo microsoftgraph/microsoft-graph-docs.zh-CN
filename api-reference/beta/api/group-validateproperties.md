@@ -1,12 +1,13 @@
 ---
 title: 组： validateProperties
 description: 验证如果 Office 365 组的显示名称或邮件昵称符合命名策略。 客户端可以使用 API 以确定是否显示名称或邮件昵称有效，然后尝试**更新**到 Office 365 组。 用于创建组之前验证属性，将 validateProperties 函数用于目录对象。
-ms.openlocfilehash: d7f2767908e6cbf9116bec769a1abc32731e4758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833899"
 ---
 # <a name="group-validateproperties"></a>组： validateProperties
 

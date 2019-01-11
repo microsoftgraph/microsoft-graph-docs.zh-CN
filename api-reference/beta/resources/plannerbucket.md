@@ -2,12 +2,13 @@
 title: plannerBucket 资源类型
 description: ) 中的 Office 365 中的计划任务。 它包含在 plannerPlan，并且可以具有的 plannerTasks 集合。
 author: TarkanSevilmis
-ms.openlocfilehash: e3b09e50c62842d5b3f60206da49e9596648c565
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4868fb3925fa3ae94571d5cc93b0da12434b00dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808118"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 

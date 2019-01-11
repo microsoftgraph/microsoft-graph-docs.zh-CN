@@ -2,12 +2,13 @@
 title: mobileContainedApp 资源类型
 description: 表示 mobileApp 充当包中的包含应用程序的抽象类。
 author: tfitzmac
-ms.openlocfilehash: 314225c46247bd122c825f0f883378513445ce0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b81ee4ca194d1d01e3d834b3287f6b400e712a27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826283"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>mobileContainedApp 资源类型
 

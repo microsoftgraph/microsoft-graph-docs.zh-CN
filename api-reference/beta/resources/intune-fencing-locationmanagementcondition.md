@@ -1,12 +1,13 @@
 ---
 title: locationManagementCondition 资源类型
 description: 包含定义位置管理条件，感兴趣，要监视的领域的信息。
-ms.openlocfilehash: 45f6fedf55c7a45147b9a8d988823666a4dc9988
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85d3b638c81990a98623501b8dcb3ad0705f2e6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832632"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>locationManagementCondition 资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27048962"
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|此管理条件适用的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|为管理 condition 相关联的管理条件语句。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 

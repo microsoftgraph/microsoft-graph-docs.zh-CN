@@ -2,12 +2,13 @@
 title: officeUserCheckinSummary 资源类型
 description: 介绍租户中签入 stats 的实体。
 author: tfitzmac
-ms.openlocfilehash: 5064882f74a13feca726a6ebb91c34cf9a85af86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2470b1e531f1b268d6797fe2692baf0031728b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834018"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27306326"
 
 介绍租户中签入 stats 的实体。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |succeededUserCount|Int32|总用户成功检查的最近 3 个月的项。|
 |failedUserCount|Int32|失败的总用户检查的最近 3 个月的项。|

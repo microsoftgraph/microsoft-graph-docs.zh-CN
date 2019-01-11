@@ -2,12 +2,13 @@
 title: 删除 androidForWorkNineWorkEasConfiguration
 description: 删除 androidForWorkNineWorkEasConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 34e85f46edce404889ca57e91aa2ac23ee59349e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b55921e631568434bd3e6c319e436e76ed9400a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837017"
 ---
 # <a name="delete-androidforworknineworkeasconfiguration"></a>删除 androidForWorkNineWorkEasConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

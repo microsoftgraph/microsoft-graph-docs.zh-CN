@@ -1,14 +1,15 @@
 ---
-title: 列表 secureScores
+title: 列出 secureScores
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: f5466e24d6b523809a72f712666063808987e530
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831813"
 ---
-# <a name="list-securescores"></a>列表 secureScores
+# <a name="list-securescores"></a>列出 secureScores
 
  > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

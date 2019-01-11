@@ -1,12 +1,13 @@
 ---
 title: timeZoneStandard 值
 description: " 值"
-ms.openlocfilehash: 7212a3ca1394ce73357aa9c22550a79f638ea973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825730"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
@@ -258,7 +259,7 @@ ms.locfileid: "27008550"
 
 | 值
 |:-------------------------
-| Replace
+| 替换
 | 追加
 | Delete
 | 插入
@@ -278,7 +279,7 @@ ms.locfileid: "27008550"
 |:-------------------------
 | 主页
 | 业务
-| mobile
+| 移动
 | 其他
 | 助理
 | homeFax
@@ -435,7 +436,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |truePositive|1|通知是 true 误报。|
@@ -448,7 +449,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的类型。|
 |sha1|1|SHA1 哈希值类型。|
@@ -466,7 +467,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的连接。|
 |入站|1|入站连接。|
@@ -478,7 +479,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
 |尝试|1|尝试连接。|
@@ -492,7 +493,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |不受信任|10|完整性级别是不受信任。|
@@ -507,7 +508,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知配置单元。|
 |currentConfig|1|HKEY_CURRENT_CONFIG 配置单元。|
@@ -523,7 +524,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |create|1|创建注册表。|
@@ -536,7 +537,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |二进制文件|1|REG_BINARY 注册表值类型。|
@@ -557,7 +558,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知严重性。|
 |信息性|1|严重级别是仅的信息。|
@@ -571,7 +572,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|状态未知。|
 |newAlert|10| 新通知。|
@@ -584,7 +585,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的角色。|
 |sender|1|电子邮件的发件人。|
@@ -596,7 +597,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|未知。|
 |交互式|0|交互式登录。|
@@ -611,7 +612,7 @@ ms.locfileid: "27008550"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|未知。|
 |标准|0|标准用户组的成员。|

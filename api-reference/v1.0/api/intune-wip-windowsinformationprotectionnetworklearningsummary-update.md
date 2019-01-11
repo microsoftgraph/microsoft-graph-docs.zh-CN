@@ -2,12 +2,13 @@
 title: 更新 windowsInformationProtectionNetworkLearningSummary
 description: 更新 windowsInformationProtectionNetworkLearningSummary 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 30f5585149a1130a92c203394950c581655cc78b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 663b13d803e1205de07dc2f8a1311c82f5376cb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830476"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

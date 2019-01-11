@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerActivityUserDetail'
 description: 获取用户执行的 Yammer 活动的详细信息。
-ms.openlocfilehash: 01447cee4fde700b785e29f7410cf5d760efb81d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da1337d6b925c7b729c950eeac35cc3a8981596e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839618"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 

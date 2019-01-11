@@ -2,12 +2,13 @@
 title: 更新 managedIOSLobApp
 description: 更新 managedIOSLobApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: af73dac3e1ccb785664f48a02837cec369b91297
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 353c4827070dd84112f8c646092b4e434394b3e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825387"
 ---
 # <a name="update-managedioslobapp"></a>更新 managedIOSLobApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 列表 servicePrincipals
 description: 检索 servicePrincipal 对象的列表。
-ms.openlocfilehash: deb0fdc0634d7702beaba5b4066b4e83b28c267b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7e0a9a34ac0ab7a166c40336671ec4d0a89ddd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837609"
 ---
 # <a name="list-serviceprincipals"></a>列表 servicePrincipals
 

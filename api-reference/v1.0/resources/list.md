@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: 3439443090e27c5ef48c2877fe9ea74a9c00cf42
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 121b65dcf67e847f507c24385f89324224b41a85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827291"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -85,7 +86,7 @@ ms.locfileid: "27009999"
 
 **list **资源具有以下属性。
 
-| 属性名称    | 类型                             | 说明
+| 属性名称    | 类型                             | Description
 |:-----------------|:---------------------------------|:---------------------------
 | **displayName**  | string                           | 列表的可显示标题。
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。

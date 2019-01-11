@@ -2,12 +2,13 @@
 title: 列表 ndesConnectors
 description: 列出属性和 ndesConnector 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: cd91f4aad8a3e4969594e34a7f8124411687c9be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9406151d58940f0a8a0f220a938be38743cf60d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832563"
 ---
 # <a name="list-ndesconnectors"></a>列表 ndesConnectors
 
@@ -38,7 +39,7 @@ GET /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

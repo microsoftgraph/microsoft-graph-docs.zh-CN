@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: 验证的凭据是在租户中有效。
-ms.openlocfilehash: b4f488787474158172800fe23d7d0ae78ef6a366
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b78d6f7b3ff197607897fbdce123aa1e7e646afc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834915"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -37,7 +38,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |useSavedCredentials|布尔|当`true`、`credentials`将忽略参数并将改为验证以前保存的凭据 （如果有）。 |
 |凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|若要验证的凭据。 忽略何时`useSavedCredentials`，则参数`true`。|

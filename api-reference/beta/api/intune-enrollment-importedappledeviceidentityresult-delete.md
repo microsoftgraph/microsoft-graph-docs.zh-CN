@@ -2,12 +2,13 @@
 title: 删除 importedAppleDeviceIdentityResult
 description: 删除 importedAppleDeviceIdentityResult。
 author: tfitzmac
-ms.openlocfilehash: 0a9be53ea8fa0084ae235417d757cc0a85a4120e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6113d6fff7ba8648812faf3eb32510f43895e97c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837490"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>删除 importedAppleDeviceIdentityResult
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/imported
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

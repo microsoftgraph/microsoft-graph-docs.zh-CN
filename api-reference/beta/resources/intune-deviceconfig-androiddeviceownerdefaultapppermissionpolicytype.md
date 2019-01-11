@@ -2,12 +2,13 @@
 title: androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 description: Android 设备所有者默认应用程序权限策略类型。
 author: tfitzmac
-ms.openlocfilehash: 28b374d9d39bc1b7f8b744bd63759d56f9ebdaf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7ea8312bfe8f692f878180a16646cb9d7f07a86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807663"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327900"
 
 Android 设备所有者默认应用程序权限策略类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |提示|1|提示。|

@@ -1,12 +1,13 @@
 ---
 title: 列出 NamedItemCollection
 description: 检索 nameditem 对象的列表。
-ms.openlocfilehash: c4dbf671a1e4d6baedaffc35623f040d68ea3e32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 12646162cb326d8a6db5c082b44ecc3706024e28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832695"
 ---
 # <a name="list-nameditemcollection"></a>列出 NamedItemCollection
 

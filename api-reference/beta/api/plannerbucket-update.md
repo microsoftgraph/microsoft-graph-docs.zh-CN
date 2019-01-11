@@ -1,12 +1,13 @@
 ---
 title: 更新 plannerbucket
 description: 更新 **plannerbucket** 对象的属性。
-ms.openlocfilehash: 22414bb7aaa3155974679a765eb4b83f1c98fd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2a3e0daec852e4c871a42b1bbc88dcc950afa6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836041"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 

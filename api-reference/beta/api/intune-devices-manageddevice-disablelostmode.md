@@ -2,12 +2,13 @@
 title: disableLostMode 操作
 description: 禁用丢失模式
 author: tfitzmac
-ms.openlocfilehash: 2fb8b58862640aa40a0722e24a223feb07a1ec15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdde0783a6e4195ff7a51102adb6007f49a82ef9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827522"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode 操作
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

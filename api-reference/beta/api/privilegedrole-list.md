@@ -1,12 +1,13 @@
 ---
 title: 列表 privilegedRoles
 description: 检索 privilegedRole 对象的列表。
-ms.openlocfilehash: 6800096f36e1fb8237216cf9ea708b3b20ff21ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c36ea34cc6d7ee1999e37f15eff543f48bbfc2bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826045"
 ---
 # <a name="list-privilegedroles"></a>列表 privilegedRoles
 

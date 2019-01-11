@@ -1,12 +1,13 @@
 ---
 title: 'group: getMemberObjects'
 description: 返回的所有组和管理单元的组的成员。 检查是传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
-ms.openlocfilehash: e0ff719b58f13f036cbf8502725fb1e146cb1227
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72d9bc23fa5499ebf1f43d8baee9c9562a57c645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044861"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838106"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

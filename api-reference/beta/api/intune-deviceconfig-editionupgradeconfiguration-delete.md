@@ -2,12 +2,13 @@
 title: 删除 editionUpgradeConfiguration
 description: 删除 editionUpgradeConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 5c922a08d262dc57ea1c2b472446edae7e5c4df4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ca21a69ff1a3dc8141429d05c18c0ab653f0880
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352379"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831881"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>删除 editionUpgradeConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

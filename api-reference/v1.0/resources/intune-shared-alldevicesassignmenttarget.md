@@ -2,12 +2,13 @@
 title: allDevicesAssignmentTarget 资源类型
 description: 表示租户中所有托管设备的赋值。
 author: tfitzmac
-ms.openlocfilehash: 59cdab8b3e55e4909cb4632fc0a54129be01c1ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c91021a1cd36e140af7b5a140a2b34d667615aef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833724"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget 资源类型
 

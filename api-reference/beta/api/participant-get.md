@@ -2,12 +2,13 @@
 title: 获取参与者
 description: 检索的属性和**参与者**对象的关系。
 author: VinodRavichandran
-ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bdcf52f844ea000458d35aa211e7c32a5c6566e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837693"
 ---
 # <a name="get-participant"></a>获取参与者
 

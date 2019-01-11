@@ -2,12 +2,13 @@
 title: setMobileDeviceManagementAuthority 操作
 description: 设置移动设备管理机构
 author: tfitzmac
-ms.openlocfilehash: 87831691b1e1c12d7544f2893c759a28d46617e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 205a84dcef7099c36c21d0592de127cb1b66d876
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834991"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority 操作
 
@@ -38,7 +39,7 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

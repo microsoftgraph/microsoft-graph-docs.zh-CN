@@ -2,12 +2,13 @@
 title: 'mailFolder: move'
 description: 将 Mailfolder 及其内容移动到其他 mailfolder。
 author: angelgolfer-ms
-ms.openlocfilehash: 50c982a9c2277530c884ee2807543f858fd3b696
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d96e01c54c91b3de38b0594c29e38ccf8691603
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831113"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -38,14 +39,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| Authorization | `Bearer {token}`. 必填。 |
+| Content-Type | `application/json`. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | Type | 说明 |
+| 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 |destinationId|字符串|文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 

@@ -1,12 +1,13 @@
 ---
 title: 列出组织
 description: 检索 organization 对象列表。
-ms.openlocfilehash: 9a66fac482e5bc4a6fe822210ae274abdb725360
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a394599b6aaf4807e5eba96d6fc58d90422e0ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839674"
 ---
 # <a name="list-organization"></a>列出组织
 

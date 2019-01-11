@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
-ms.openlocfilehash: da8398bbb87111648ea561e1799e062ed46b0ee6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 881a150f750fa947888a60b4c22ceeb5b0c826d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830728"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
 

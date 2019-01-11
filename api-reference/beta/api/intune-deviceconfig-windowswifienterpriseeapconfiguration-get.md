@@ -2,12 +2,13 @@
 title: 获取 windowsWifiEnterpriseEAPConfiguration
 description: 读取属性和 windowsWifiEnterpriseEAPConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: f46acbf55be1f03d902760cfb523a7f3ce321da4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57fa955fac59085e1dd967b1020209488f6a93bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835012"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>获取 windowsWifiEnterpriseEAPConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

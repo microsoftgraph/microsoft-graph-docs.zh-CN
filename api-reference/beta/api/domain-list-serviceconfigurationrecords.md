@@ -2,12 +2,13 @@
 title: 列出 serviceConfigurationRecords
 description: 检索启用域服务所需的 domainDnsRecord 对象列表。
 author: lleonard-msft
-ms.openlocfilehash: d61c3d1fc877b7e4902f79d1b8f92cc1ca9ad1c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a68938b7eb5b2abed1a2d0476fdfeb5fdd783ec4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833717"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -40,7 +41,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 ## <a name="request-headers"></a>请求标头
 
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |

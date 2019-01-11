@@ -1,12 +1,13 @@
 ---
 title: 操作资源类型
 description: 长时间运行操作的状态。
-ms.openlocfilehash: 71e6a1c47e1f3b18f1481700320779714d716bec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830343"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "27044166"
 | createdDateTime    | DateTimeOffset  | 操作的开始时间。                                                |
 | id                 | 字符串          | 操作 ID。只读。 生成的服务器。                                  |
 | lastActionDateTime | DateTimeOffset  | 操作的上次活动时间。                                   |
-| 状态             | String          | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 |
+| status             | String          | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>Relationships
 

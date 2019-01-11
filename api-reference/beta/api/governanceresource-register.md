@@ -1,12 +1,13 @@
 ---
 title: 注册 governanceResource
 description: 在 PIM 中注册一个非托管的 governanceResource 对象。
-ms.openlocfilehash: 53452202b58c2d2187b6876eabfaae1ae646710d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: ce439d53eb9f017340f561ca509e8da43dbafbfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27195289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837749"
 ---
 # <a name="register-governanceresource"></a>注册 governanceResource
 
@@ -42,7 +43,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 ### <a name="request-body"></a>请求正文
 
-|参数      |类型                 |必需 |说明|
+|参数      |类型                 |是否必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
 |externalId    |String                 |✓        |要在 PIM 中注册的资源 externalId。|
 

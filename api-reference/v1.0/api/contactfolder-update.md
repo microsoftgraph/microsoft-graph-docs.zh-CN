@@ -2,12 +2,13 @@
 title: 更新 contactfolder
 description: 更新 contactfolder 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 1bed74aa9efd6f8d82677d3c50feedc03fa34fe3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01ecca2b59482c1c2c75096b711904f3054fd338
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836419"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 

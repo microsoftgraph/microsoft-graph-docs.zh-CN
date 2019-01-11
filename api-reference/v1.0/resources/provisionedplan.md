@@ -1,12 +1,13 @@
 ---
 title: provisionedPlan 资源类型
 description: 用户 实体和 组织 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
-ms.openlocfilehash: 7808e3a17e471123f702381fb52535e53682e276
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831484"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
 

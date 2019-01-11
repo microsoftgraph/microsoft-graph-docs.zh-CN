@@ -1,12 +1,13 @@
 ---
 title: 列表 accessReview 审阅者
 description: 在 Azure AD 中访问审阅功能，检索 accessReview 对象的审阅者。
-ms.openlocfilehash: 24c8b3dacbbe1a5868c9ba82141f37b006dc7a75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829370"
 ---
 # <a name="list-accessreview-reviewers"></a>列表 accessReview 审阅者
 
@@ -30,7 +31,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

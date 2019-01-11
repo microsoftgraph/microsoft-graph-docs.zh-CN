@@ -2,12 +2,13 @@
 title: 列出 directoryRole
 description: 列出租户中激活的目录角色。
 author: lleonard-msft
-ms.openlocfilehash: 102360728e31e7fbec10c165ab026432a5b71585
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03f81de99fadc8beb96f7f07361b6152689b680a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838120"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRole
 
@@ -32,7 +33,7 @@ GET /directoryRoles
 此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

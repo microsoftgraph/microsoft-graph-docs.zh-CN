@@ -2,12 +2,13 @@
 title: 删除 webApp
 description: 删除 webApp。
 author: tfitzmac
-ms.openlocfilehash: 30b3ed44ead828c07e304a9a6c5c046300f636a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53d14ed6f54719b5846e668a2a60f200f55da5b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837245"
 ---
 # <a name="delete-webapp"></a>删除 webApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

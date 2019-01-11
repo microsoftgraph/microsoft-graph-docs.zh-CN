@@ -1,12 +1,13 @@
 ---
 title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
-ms.openlocfilehash: bf8d8c064a3a29aec8f59a2d4de5ae6732d0f0e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9468034f3a98e949eeb9f2da28c4a74c42cd991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043990"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834977"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 

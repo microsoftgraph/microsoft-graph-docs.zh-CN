@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 移动文件或文件夹
-ms.openlocfilehash: 4fdf9b079068f3a07a74f117c3e3ad6798a2cd1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a6135993d77e4fb23fbbba89757a6bd385ebcd60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833710"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到新文件夹
 

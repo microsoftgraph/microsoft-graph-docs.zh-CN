@@ -1,12 +1,13 @@
 ---
 title: 创建 outlookTaskFolder
 description: 创建任务文件夹中的默认任务组 (`My Tasks`) 的用户的邮箱。
-ms.openlocfilehash: 688f3dfb603bec1bc5acb05344e1dc9e8465ae47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d863786028f29419d6e20d8be7c18d6b37250e25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832566"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 

@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
-ms.openlocfilehash: aaa7afcb7d4a2b737f5ea71b355a3d483f0e5a25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b7554c97eead38d13112e20eefeb411221d7716
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831400"
 ---
 # <a name="system-facet"></a>系统 Facet
 

@@ -1,12 +1,13 @@
 ---
 title: keyValue 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 86f5f3c434a52c63536f36e6e7a0dbd1fabf3125
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f81d5aaef6e045abec02ebb5a55c4eb19db2665
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833843"
 ---
 # <a name="keyvalue-resource-type"></a>keyValue 资源类型
 

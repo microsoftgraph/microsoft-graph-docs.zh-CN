@@ -2,12 +2,13 @@
 title: ChartAxis 资源类型
 description: 表示图表中的单个坐标轴。
 author: lumine2008
-ms.openlocfilehash: 39c71e9fa832ffb967a1ef147ccd7e07d6b9aaec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57c8e28633d4fc60f60f456e34a6a0cafef22252
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829083"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27344364"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| ID       |string   | 唯一标识符。 只读。|
+| ID       |string   | 唯一标识符。 此为只读属性。|
 |majorUnit|Json|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
 |maximum|Json|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 |minimum|Json|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|

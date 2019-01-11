@@ -2,12 +2,13 @@
 title: 获取 iosVppApp
 description: 读取 iosVppApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: a908fcecb64bbe9624e837b4ab61454e61054338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdfb2e6e6c116058eea43d92a15adb886d73a463
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834984"
 ---
 # <a name="get-iosvppapp"></a>获取 iosVppApp
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

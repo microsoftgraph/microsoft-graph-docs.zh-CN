@@ -1,12 +1,13 @@
 ---
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
-ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 83b1514831e930e3eabe6e6a78203c44ec3b5b3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834956"
 ---
 # <a name="update-organization"></a>更新组织
 

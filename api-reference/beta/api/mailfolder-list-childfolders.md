@@ -2,12 +2,13 @@
 title: 列出 childFolder
 description: '在指定的文件夹下获取文件夹集合。 您可以使用`.../me/MailFolders`快捷方式来获取顶级 '
 author: angelgolfer-ms
-ms.openlocfilehash: b852e245ee0b553d83e144eb42a719060837ef68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3af208919b1f733e913d8ac374bb72608d8fa1aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837434"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -35,7 +36,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -58,7 +59,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 #### <a name="response-1"></a>响应 1
 下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",

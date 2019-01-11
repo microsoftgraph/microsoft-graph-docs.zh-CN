@@ -1,12 +1,13 @@
 ---
 title: userIdentity 类型
 description: '为 Azure AD 访问 reviews （英文），此类型的访问评审的审阅者表示 Azure AD 用户标识。  '
-ms.openlocfilehash: 6cbbe7aa017572bcd753a57edbf82751ac4986a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044478"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839639"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27044478"
 无。  您将在请求正文中包含此类型的对象时[创建 accessReview](../api/accessreview-create.md)。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | 标识的显示名称。 请注意，这可能会始终不可用或最新。    |
 | `id`          | `String` | 身份的唯一标识符。  |

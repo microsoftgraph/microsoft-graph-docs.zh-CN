@@ -2,12 +2,13 @@
 title: vppTokenActionResult 资源类型
 description: 使用 Apple 卷购买计划令牌执行操作的状态。
 author: tfitzmac
-ms.openlocfilehash: 0b8b074e879321d0aed361373c49e6ed1fd16e62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3cf05c566367acb6def9576eadb1f02e31fb155
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835243"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
 

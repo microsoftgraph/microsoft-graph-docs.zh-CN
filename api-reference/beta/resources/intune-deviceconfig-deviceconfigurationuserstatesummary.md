@@ -2,12 +2,13 @@
 title: deviceConfigurationUserStateSummary 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 6a17e6cfae7c0af987a9d7333614817622322dc7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5eb6ebc29b2482628daf1879a55d00048621b314
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830826"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>deviceConfigurationUserStateSummary 资源类型
 

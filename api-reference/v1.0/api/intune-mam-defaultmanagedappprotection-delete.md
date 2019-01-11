@@ -2,12 +2,13 @@
 title: 删除 defaultManagedAppProtection
 description: 删除 defaultManagedAppProtection。
 author: tfitzmac
-ms.openlocfilehash: d9e9e4909d420fcf6747c6cfdba1d9c85a4d8667
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ad936589522672a726f9ea5415e82f5edf404c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837826"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>删除 defaultManagedAppProtection
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

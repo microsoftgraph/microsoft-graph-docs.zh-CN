@@ -2,12 +2,13 @@
 title: 列出 managedEBookAssignments
 description: 列出 managedEBookAssignment 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 43625693f6510eb632f4c361cebab07066ae058f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdcfbca3e08e87eb6811162a1c2a9ea833b29d3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340577"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808083"
 ---
 # <a name="list-managedebookassignments"></a>列出 managedEBookAssignments
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

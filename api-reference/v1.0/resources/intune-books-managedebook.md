@@ -2,12 +2,13 @@
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
 author: tfitzmac
-ms.openlocfilehash: 584464b95eaa242ddae6653af65f16d9d2eeab3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61a4098850f9b3b4a6b82f2fcee5d1ce89b0696d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830252"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 

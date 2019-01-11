@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: RestoreAction
-ms.openlocfilehash: ce8f964b336f648cd1432532eb85a69629eb2207
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 25cfe884d74b54e1cc7881415009e2df0daafa11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831673"
 ---
 # <a name="restoreaction-resource-type"></a>RestoreAction 资源类型
 

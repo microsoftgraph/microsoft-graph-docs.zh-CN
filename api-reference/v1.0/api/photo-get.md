@@ -1,12 +1,13 @@
 ---
 title: 获取照片
 description: 检索 photo 对象的属性和关系。
-ms.openlocfilehash: c7a18f5c765bcbd9f2bc6f9eb4844f11fc282058
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 808eda22550eb6c9affed42bdac9a21189a22cf0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837217"
 ---
 # <a name="get-photo"></a>获取照片
 

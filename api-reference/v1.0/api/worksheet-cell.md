@@ -1,12 +1,13 @@
 ---
 title: Worksheet:Cell
 description: 根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。
-ms.openlocfilehash: 5e9134fe9ba685a5770cf0671ce06e740a886891
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94abdb533e64ef1b6fd94e9e7f0b5b149c0c2666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831379"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
 

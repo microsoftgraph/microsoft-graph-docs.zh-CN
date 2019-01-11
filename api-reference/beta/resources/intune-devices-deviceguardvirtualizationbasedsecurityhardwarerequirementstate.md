@@ -2,12 +2,13 @@
 title: deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: a14fa73e681b36d1676b789e598ab497bc0d2aaa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f849685846e64177197d7489129a95e9dde39e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808139"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360555"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |meetHardwareRequirements|0|系统满足硬件配置要求|
 |secureBootRequired|1|所需的安全启动|

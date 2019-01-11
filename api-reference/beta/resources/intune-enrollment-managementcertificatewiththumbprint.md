@@ -2,12 +2,13 @@
 title: managementCertificateWithThumbprint 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 03846890822cae02a2eb04fc058895992119c98a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8f18e7fc117f00f99346267f544abc7d12db17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827214"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348935"
 
 尚未记录
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |指纹|字符串|管理证书的指纹|
 |certificate|String|Base 64 编码的管理证书|

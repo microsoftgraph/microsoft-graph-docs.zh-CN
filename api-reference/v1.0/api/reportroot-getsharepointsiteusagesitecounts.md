@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageSiteCounts'
 description: 获取跨所有网站的文件总数和活跃文件数。 如果文件（用户或系统）在指定时间段内被保存、同步、修改或共享，则视为活跃文件（用户或系统）。
-ms.openlocfilehash: d5d3f3b104fbed49ce669b0d6051fc2a3ef13b0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e16470419654f1c75b3c74b445a6677974ef20b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837184"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 

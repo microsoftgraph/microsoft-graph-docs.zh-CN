@@ -1,12 +1,13 @@
 ---
 title: settingValue 资源类型
 description: 由名称/值对表示的设置。
-ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3edf5bdc1fae77702206eae78d53fcf0fdc5b644
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834032"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 

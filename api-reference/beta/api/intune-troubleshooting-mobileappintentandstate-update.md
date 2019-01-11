@@ -2,12 +2,13 @@
 title: 更新 mobileAppIntentAndState
 description: 更新 mobileAppIntentAndState 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827095"
 ---
 # <a name="update-mobileappintentandstate"></a>更新 mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

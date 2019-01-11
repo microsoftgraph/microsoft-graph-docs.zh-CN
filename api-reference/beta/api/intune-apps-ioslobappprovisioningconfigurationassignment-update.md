@@ -2,12 +2,13 @@
 title: 更新 iosLobAppProvisioningConfigurationAssignment
 description: 更新 iosLobAppProvisioningConfigurationAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 0212d357ceee946e8515a5143ffd7bf7307a7773
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa713ab3293cfcb922d8e85306bcf2645b549450
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832576"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>更新 iosLobAppProvisioningConfigurationAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 用户： translateExchangeIds
 description: 翻译格式之间的 Outlook 相关的资源的标识符。
 author: dkershaw10
-ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: b59cc33765586648432736df6067e6c089318729
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831904"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -42,7 +43,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>请求正文
 
-| 参数 | 类型 | 说明 |
+| 参数 | 类型 | Description |
 |:----------|:-----|:------------|
 | inputIds | Edm.String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中项目的。 此集合的最大大小是 1000年字符串。 |
 | sourceIdType | exchangeIdFormat | ID 类型的标识符的`InputIds`参数。 |

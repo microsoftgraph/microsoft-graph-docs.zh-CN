@@ -1,12 +1,13 @@
 ---
 title: 更新 accessReview
 description: 在 Azure AD 访问评论功能中，更新现有 accessReview 对象更改一个或多个其属性。
-ms.openlocfilehash: 8913377db8acea17023605f85d01c8c9ecea419b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042695"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833745"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -34,14 +35,14 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[accessReview](../resources/accessreview.md)对象的参数的 JSON 表示形式。
 
 下表显示可更新 accessReview 时提供的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这必须是在将来的日期。   |

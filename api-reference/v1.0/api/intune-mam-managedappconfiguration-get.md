@@ -2,12 +2,13 @@
 title: 获取 managedAppConfiguration
 description: 读取 managedAppConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 282ae5c8476ac623c0152bf89fb8ad3e5fda1852
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7638112219202d6a76e10691b31092bdc065c32e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837056"
 ---
 # <a name="get-managedappconfiguration"></a>获取 managedAppConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

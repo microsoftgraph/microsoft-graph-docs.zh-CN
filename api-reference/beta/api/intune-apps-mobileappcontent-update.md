@@ -2,12 +2,13 @@
 title: 更新 mobileAppContent
 description: 更新 mobileAppContent 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 478c01624c7b8bf42b71fa8224b31b38e8f0ae58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d793c25763de7a33cbb18bebc8888d0c5cfd512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838358"
 ---
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

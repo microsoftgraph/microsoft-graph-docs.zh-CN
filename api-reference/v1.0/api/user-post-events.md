@@ -1,12 +1,13 @@
 ---
 title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
-ms.openlocfilehash: bbbd01375b4a84633bf6fb3a339a214b44a75318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 178891392d32e97bb8f3db85f9f32acc43a177a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836468"
 ---
 # <a name="create-event"></a>创建事件
 

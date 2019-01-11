@@ -2,12 +2,13 @@
 title: commsNotification 资源类型
 description: 通信，请通知发布 Communications 服务器以更改通知的基类型。
 author: VinodRavichandran
-ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 526ed88f4b1c5983a06b1830f5c0b0bb97cc874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837147"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 

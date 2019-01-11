@@ -1,12 +1,13 @@
 ---
 title: 更新 identityProvider
 description: 更新现有 identityProvider 中的属性。
-ms.openlocfilehash: b89b0f50ef2f62625a1707c3e77c32865adaec67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832807"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -44,7 +45,7 @@ PATCH /identityProviders/{id}
 
 在请求正文中，将一个 JSON 对象，提供需要更新的一个或多个属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---------------|:--------|:----------|
 |clientId|字符串|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
 |clientSecret|字符串|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|

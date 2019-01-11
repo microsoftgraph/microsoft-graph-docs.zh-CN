@@ -2,12 +2,13 @@
 title: 创建 mobileAppContent
 description: 创建新的 mobileAppContent 对象。
 author: tfitzmac
-ms.openlocfilehash: 0cc1abf7a1e13a151117db9407b1a03d6f4524c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c59d06f506dd27a8aa7b4731df94e0bed2c5480f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831197"
 ---
 # <a name="create-mobileappcontent"></a>创建 mobileAppContent
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 收件人资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: aa620fa920b4f91b2b2214f02c2e75d7a8cbcc4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c0afde5b7bd427389b5b81be055781dfaff194e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829581"
 ---
 # <a name="recipients-resource-type"></a>收件人资源类型
 

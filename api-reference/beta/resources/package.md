@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 程序包
-ms.openlocfilehash: fe26cf0dc5de00673d5c3c2ae4a90ac80a62897f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab3d9298b0a03e31a9e33e9c187c1a0af8691cc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047812"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833941"
 ---
 # <a name="package-resource-type"></a>包资源类型
 

@@ -2,12 +2,13 @@
 title: 列出 mobileAppCategories
 description: 列出 mobileAppCategory 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 3bdfb847b850bb58c85134321f28aca4402ae5c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 646fc280de072a10cbd4fd7522ed0d935a485d03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807609"
 ---
 # <a name="list-mobileappcategories"></a>列出 mobileAppCategories
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

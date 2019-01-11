@@ -1,12 +1,13 @@
 ---
 title: profilePhoto 资源类型
 description: 用户、 组或 Outlook 联系人从 Exchange Online 或 Azure Active Directory (AAD) 访问的配置文件照片。 它是未使用 base64 编码的二进制数据。
-ms.openlocfilehash: 61123542ce66c1e999fb6d90c154a78dbb77df50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7754d70c4e59b13b1b0003022ddc0f185cc18ae2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837064"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 

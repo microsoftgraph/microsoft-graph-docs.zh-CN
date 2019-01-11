@@ -2,12 +2,13 @@
 title: 列出 auditEvents
 description: 列出 auditEvent 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: b4ef3d3993884c045428134c03b5097643b3b171
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 344e6a1413d95ede901d2cd6d3390ad83281af47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839793"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
 
@@ -36,7 +37,7 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

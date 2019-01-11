@@ -2,12 +2,13 @@
 title: 列出 iosGeneralDeviceConfigurations
 description: 列出 iosGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 2c6d243ac40f1089a2745413c5119e36f6b6e602
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 982ee0b219b435d2226e70399bbe011b9d32ce27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832989"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

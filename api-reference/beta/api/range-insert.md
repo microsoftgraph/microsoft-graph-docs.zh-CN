@@ -1,12 +1,13 @@
 ---
 title: 'Range: insert'
 description: 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
-ms.openlocfilehash: 57068d081cccf05f06adf966b476df60c482574e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0e7ab0d729dad4eec7fb455774cfed19bf4f5013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831512"
 ---
 # <a name="range-insert"></a>Range: insert
 

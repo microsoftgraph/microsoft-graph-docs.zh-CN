@@ -2,12 +2,13 @@
 title: windowsManagementApp 资源类型
 description: Windows 管理应用程序实体。
 author: tfitzmac
-ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47262f93e619690352cac9ae3f9a500d0dc77c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833405"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 
@@ -29,7 +30,7 @@ Windows 管理应用程序实体。
 |availableVersion|字符串|Windows 管理应用程序可用版本。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|运行状况摘要 Windows 管理应用程序。|
 |healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)集合|安装 Windows 管理应用程序的运行状况状态的列表。|
