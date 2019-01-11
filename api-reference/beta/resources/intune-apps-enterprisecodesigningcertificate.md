@@ -2,12 +2,13 @@
 title: enterpriseCodeSigningCertificate 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842131"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate 资源类型
 

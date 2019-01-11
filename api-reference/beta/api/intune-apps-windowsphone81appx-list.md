@@ -2,12 +2,13 @@
 title: 列表 windowsPhone81AppXs
 description: 列出属性和 windowsPhone81AppX 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 94f9cafa6261b48dea49356b208b20b6a076cd40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b799dfcf8daf0b07bdc0f4a7ef9ffc5dc7509466
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864552"
 ---
 # <a name="list-windowsphone81appxs"></a>列表 windowsPhone81AppXs
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

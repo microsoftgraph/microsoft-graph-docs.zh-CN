@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 810554620e747d3160a6d8c74913518b8590c19d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d064253cfad141d5879afb52451ca28fa2aeca67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860877"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 

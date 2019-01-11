@@ -2,12 +2,13 @@
 title: 删除 managedDeviceMobileAppConfigurationDeviceStatus
 description: 删除 managedDeviceMobileAppConfigurationDeviceStatus。
 author: tfitzmac
-ms.openlocfilehash: 72b23666d80c77ae85a8dbdb39e16508323d6b9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9053b3f86b8809f4920b7d10c157e40fe58ba4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867317"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>删除 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

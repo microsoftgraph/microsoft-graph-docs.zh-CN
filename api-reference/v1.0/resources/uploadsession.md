@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: UploadSession
-ms.openlocfilehash: 48dbe479fbe69f8c93e168b86ca66853f5a012c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc03a25a790786c6d25d160a8b7f867c726dfc1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860702"
 ---
 # <a name="uploadsession-resource"></a>UploadSession 资源
 

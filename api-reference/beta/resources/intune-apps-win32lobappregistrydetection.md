@@ -2,12 +2,13 @@
 title: win32LobAppRegistryDetection 资源类型
 description: 包含要检测 Win32 应用程序的注册表属性
 author: tfitzmac
-ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faccc030a9f15b511af4123c94687c904e60ff10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867135"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection 资源类型
 
@@ -20,9 +21,9 @@ ms.locfileid: "27347738"
 继承自[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|check32BitOn64System|Boolean|一个值，该值此注册表路径是否检查 64 位系统上的 32 位应用程序|
+|check32BitOn64System|布尔|一个值，该值此注册表路径是否检查 64 位系统上的 32 位应用程序|
 |keyPath|字符串|注册表项路径来检测 Win32 业务线 (LoB) 应用程序|
 |数值名称|字符串|注册表值名称|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|注册表数据检测类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|

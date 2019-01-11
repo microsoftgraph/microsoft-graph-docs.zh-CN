@@ -1,12 +1,13 @@
 ---
 title: 获取 singleValueLegacyExtendedProperty
 description: 您可以获取单个资源实例展开为一个特定的扩展的属性或资源实例的集合
-ms.openlocfilehash: e9859adf2eea35037c82f36100a8fcb147f9ca3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49df9dcc6142086cead43731243c50911e2a7cc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867247"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -201,7 +202,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```
 
 ## <a name="path-parameters"></a>路径参数
-|参数|类型|说明|
+|参数|类型|Description|
 |:-----|:-----|:-----|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |

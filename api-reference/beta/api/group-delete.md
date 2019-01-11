@@ -2,12 +2,13 @@
 title: 删除组
 description: 删除组。
 author: dkershaw10
-ms.openlocfilehash: ba159e5ce603d1da75b424f69a01f7bf8a3b2332
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9eb46ffbfe767accee457f9b5b6dc292891fb95c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865077"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -33,7 +34,7 @@ DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

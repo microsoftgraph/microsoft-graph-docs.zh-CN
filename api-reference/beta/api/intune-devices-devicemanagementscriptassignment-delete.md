@@ -2,12 +2,13 @@
 title: 删除 deviceManagementScriptAssignment
 description: 删除 deviceManagementScriptAssignment。
 author: tfitzmac
-ms.openlocfilehash: e579ae4a4463f6d600cd019e098f32e5d2a995ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79440d85595f59ba54543e01c42ab6da853cddc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864895"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>删除 deviceManagementScriptAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

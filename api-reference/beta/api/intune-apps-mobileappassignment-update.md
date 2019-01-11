@@ -2,12 +2,13 @@
 title: 更新 mobileAppAssignment
 description: 更新 mobileAppAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: ee6a6de3d20257121721ccb94f316230db8112d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe3d54c7919df77a8d862590c18d41a86cf7279a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865350"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

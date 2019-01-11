@@ -2,12 +2,13 @@
 title: macOSMinimumOperatingSystem 资源类型
 description: 最低操作系统要求 MacOS 应用程序。
 author: tfitzmac
-ms.openlocfilehash: ff9d4e3fc375f17d7b3c3efdd4af16cd7e87ceb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f557ebd3fbc1ae5e86a1991eb1a0207a902ce2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862088"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 
@@ -17,15 +18,15 @@ ms.locfileid: "27354773"
 
 最低操作系统要求 MacOS 应用程序。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|v10_7|Boolean|Mac OS 10.7 或更高版本。|
-|v10_8|Boolean|Mac OS 10.8 或更高版本。|
-|v10_9|Boolean|Mac OS 10.9 或更高版本。|
-|v10_10|Boolean|Mac OS 10.10 或更高版本。|
-|v10_11|Boolean|Mac OS 10.11 或更高版本。|
-|v10_12|Boolean|Mac OS 10.12 或更高版本。|
-|v10_13|Boolean|Mac OS 10.13 或更高版本。|
+|v10_7|布尔|Mac OS 10.7 或更高版本。|
+|v10_8|布尔|Mac OS 10.8 或更高版本。|
+|v10_9|布尔|Mac OS 10.9 或更高版本。|
+|v10_10|布尔|Mac OS 10.10 或更高版本。|
+|v10_11|布尔|Mac OS 10.11 或更高版本。|
+|v10_12|布尔|Mac OS 10.12 或更高版本。|
+|v10_13|布尔|Mac OS 10.13 或更高版本。|
 
 ## <a name="relationships"></a>Relationships
 无

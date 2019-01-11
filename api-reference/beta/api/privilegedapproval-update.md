@@ -1,12 +1,13 @@
 ---
 title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
-ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866883"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -36,7 +37,7 @@ PATCH /privilegedApproval/<id>
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|

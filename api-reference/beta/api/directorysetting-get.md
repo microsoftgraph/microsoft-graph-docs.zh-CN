@@ -2,12 +2,13 @@
 title: 获取一个目录设置
 description: 检索特定目录设置对象的属性。
 author: lleonard-msft
-ms.openlocfilehash: 7dfd6d7f7623aef082a43c0b67c1867edb691f31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 132cfc64323a429431efa53bbe1d569f17095941
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864888"
 ---
 # <a name="get-a-directory-setting"></a>获取一个目录设置
 
@@ -36,7 +37,7 @@ GET /groups/{id}/settings/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
 

@@ -2,12 +2,13 @@
 title: 删除 iosLobApp
 description: 删除 iosLobApp。
 author: tfitzmac
-ms.openlocfilehash: 9c4da47e4e52d69fbb10515185a7fef33cee4721
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a64d4589ea53970e43d2176abddc4ee7e924bfa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864384"
 ---
 # <a name="delete-ioslobapp"></a>删除 iosLobApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

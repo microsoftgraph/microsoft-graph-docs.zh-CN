@@ -2,12 +2,13 @@
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
 author: angelgolfer-ms
-ms.openlocfilehash: 740616e0f2da0a941f6dc49944d81168dcc7d2c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b4f86871e31dcaaf9303d0cbd19e7d178137a9a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867023"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

@@ -2,12 +2,13 @@
 title: WorksheetProtection 资源类型
 description: 表示对 sheet 对象的保护。
 author: lumine2008
-ms.openlocfilehash: 3df3ea522b7d4f476bf09173ed7998e62e9562d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0bbf3652223a532cd3d815aca832d4cfcd37171
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860711"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 

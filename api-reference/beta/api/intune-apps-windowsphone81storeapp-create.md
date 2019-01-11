@@ -2,12 +2,13 @@
 title: 创建 windowsPhone81StoreApp
 description: 创建新的 windowsPhone81StoreApp 对象。
 author: tfitzmac
-ms.openlocfilehash: 2fe6f1bc2ee2884b5e9ab6251d63a30d2972ef2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e17b119bd29cb59080c05b3b1c8bc6547a2694c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864566"
 ---
 # <a name="create-windowsphone81storeapp"></a>创建 windowsPhone81StoreApp
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

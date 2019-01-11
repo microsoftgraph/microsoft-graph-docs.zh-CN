@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
-ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3478a8911a402bf86a04f196d87409e7cddb246e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868073"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 

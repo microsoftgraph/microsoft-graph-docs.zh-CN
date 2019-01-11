@@ -2,12 +2,13 @@
 title: 更新 mobileThreatDefenseConnector
 description: 更新 mobileThreatDefenseConnector 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: bd53fb377adb160db1700b088e293217bdee5292
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 451e0451e7fbbce35f90c348d5f162cc401a7ed4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866974"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

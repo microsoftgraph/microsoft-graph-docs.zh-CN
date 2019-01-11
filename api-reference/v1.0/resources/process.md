@@ -1,12 +1,13 @@
 ---
 title: 过程资源类型
 description: 包含有关与通知相关的过程的状态信息。
-ms.openlocfilehash: 67bc65cfa47cda877578d89aa20c4e34b3a0c501
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0b4207c1780dfd6327ceb67e837f793341e609ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864419"
 ---
 # <a name="process-resource-type"></a>过程资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27010554"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |accountName|字符串|用户帐户标识符 （下运行过程的用户帐户上下文） 的示例、 AccountName、 SID，等等。|
 |commandLine|String|包括所有参数中的完整过程调用 commandline。|

@@ -1,12 +1,13 @@
 ---
 title: managedAppAvailability 枚举类型
 description: 托管 (MAM) 应用程序的可用性。
-ms.openlocfilehash: 13a9c211c4c6bb2df163759827a8950b9ac4a0c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da6868357e068c7cff2ca43ad603465d26c9a81a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861934"
 ---
 # <a name="managedappavailability-enum-type"></a>managedAppAvailability 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27049065"
 
 托管 (MAM) 应用程序的可用性。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |全局|0|对所有租户全局可用应用程序。|
 |lineOfBusiness|1|专用于组织的业务应用程序的行。|

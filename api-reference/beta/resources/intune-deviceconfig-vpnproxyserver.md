@@ -2,12 +2,13 @@
 title: vpnProxyServer 资源类型
 description: VPN 代理服务器。
 author: tfitzmac
-ms.openlocfilehash: f622d476e041fd89a639c14113e273a16aca992f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b4842444bc248e51e1967fcbef4a863ed50498c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867674"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333472"
 
 VPN 代理服务器。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |automaticConfigurationScriptUrl|字符串|代理服务器的自动配置脚本的 url。|
 |address|String|地址。|

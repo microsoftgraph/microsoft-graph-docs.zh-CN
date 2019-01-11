@@ -2,12 +2,13 @@
 title: 更新 deviceManagementExchangeConnector
 description: 更新 deviceManagementExchangeConnector 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 37fe0adbb2fb80e2a792b1a75a6b35235ab30f16
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5bb6a490f5f192a673a050f9c4711fd4981665d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865994"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

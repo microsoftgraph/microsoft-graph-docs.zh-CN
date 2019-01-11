@@ -1,12 +1,13 @@
 ---
 title: RangeFont 资源类型
 description: 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
-ms.openlocfilehash: fc1f3e35bb2ea612dd462d97075ad9757e27bf22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1ec2d6dc97b0403c3e52cb2faec11b25d805391
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042120"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864202"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: secureScoreControlProfiles 资源类型
 description: 表示每个控件数据的租户的安全分数。 默认情况下，它返回租户的所有控件并且可以显式拉单个控件。
-ms.openlocfilehash: 3e7dc463d7521e1980b41034ae4121ab610dd8f5
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 866b2086ff5160744f848292cedf30c3cedf6daa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866218"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>secureScoreControlProfiles 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27380581"
 
 ## <a name="properties"></a>属性
 
-|名称 |类型 |说明 |
+|名称 |类型 |Description |
 |:--|:--|:--|
 |   azureTenantId   |   字符串  |   GUID string 租户 id。  |
 |   控件名称 |   字符串  |   控件的名称。 |
@@ -39,7 +40,7 @@ ms.locfileid: "27380581"
 |   implementationCost |    字符串  |   资源成本 implemmentating 控件 （低、 中等，高）。 |
 |   排名 |  Int32   |   Microsoft 的堆栈控件的排名。   |
 |   威胁 |   字符串集合   |   控制可以缓解的威胁的列表 (accountBreach，dataDeletion，dataExfiltration，dataSpillage，elevationOfPrivilege，maliciousInsider，passwordCracking，phishingOrWhaling，欺骗)。 |
-|   弃用 |    Boolean |   用于指示控件进行折旧计算的标志。   |
+|   弃用 |    布尔 |   用于指示控件进行折旧计算的标志。   |
 |   修正 |   字符串  |   内容控件的说明将帮助纠正。 |
 |   remediationImpact | 字符串  |   对用户的修正影响的说明。 |
 |   actionUrl | 字符串  |   该控件可进行的 URL。 |

@@ -2,12 +2,13 @@
 title: 删除 acceptedSender
 description: '从 acceptedSenders 列表中删除用户或组。 '
 author: dkershaw10
-ms.openlocfilehash: 7f175be4e7f3acc470170d863a43c36db42299b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5eaa89c895c0b3e46f63754f7943f22e52cb1566
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867611"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
 从 acceptedSenders 列表中删除用户或组。 

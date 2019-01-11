@@ -2,12 +2,13 @@
 title: 列出 managedAppStatusRaws
 description: 列出 managedAppStatusRaw 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 5f87e8056699a5f7b428a44bb36f4674864af223
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb7d20e07a0c439c64ac9a083bbf302051d324d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867744"
 ---
 # <a name="list-managedappstatusraws"></a>列出 managedAppStatusRaws
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

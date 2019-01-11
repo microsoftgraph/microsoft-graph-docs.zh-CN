@@ -2,12 +2,13 @@
 title: 'Table: reapplyFilters'
 description: 重新应用当前表上的所有筛选器。
 author: lumine2008
-ms.openlocfilehash: 3a6b4f7ca8db046c5009fb710122c5b15e57030b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d93c3a0db6e28428642fbe1fc4b42afbb4cfaeb2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866400"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -31,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

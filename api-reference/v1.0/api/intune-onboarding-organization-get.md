@@ -2,12 +2,13 @@
 title: 获取组织
 description: 读取 organization 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: c741449f18bfba0bb25d07ad0edf578a9760c2dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af2d9e496320eb3c286da2a489442da26388beaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867268"
 ---
 # <a name="get-organization"></a>获取 organization
 
@@ -38,7 +39,7 @@ GET /organization/{organizationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 获取 macOSDeviceFeaturesConfiguration
 description: 读取 macOSDeviceFeaturesConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 358d7e1e1632fa2ece22a2ef1ad346a5f10902ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41bc1f0ae3abf6f6d52e96e0a34354468bd6b5ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863971"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>获取 macOSDeviceFeaturesConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

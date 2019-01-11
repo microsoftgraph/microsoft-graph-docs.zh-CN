@@ -2,12 +2,13 @@
 title: 列出系列
 description: 检索 chartseries 对象的列表。
 author: lumine2008
-ms.openlocfilehash: 6c623a939a760dd0128a5c60ab752ad67415a0d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29283563b9c939dfe0309943b6173e4b992a312a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865987"
 ---
 # <a name="list-series"></a>列出系列
 
@@ -32,7 +33,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

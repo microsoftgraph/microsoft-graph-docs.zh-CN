@@ -2,12 +2,13 @@
 title: Worksheet:Range
 description: 获取地址或名称指定的 range 对象。
 author: lumine2008
-ms.openlocfilehash: 449851fca7d6f5f57193bf456f7358b76e68e3b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78865ab8f7e4aa7d59bb6f3c782731bae058ae80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860667"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/Range
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 

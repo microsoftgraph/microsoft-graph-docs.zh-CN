@@ -1,12 +1,13 @@
 ---
 title: sharedPCConfiguration 资源类型
 description: 本主题提供由 sharedPCConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: efb4a3591da30d8c1c8e27ef09b7ae15601cbf1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a95c10a57751143f3ed4da19db6e351693fe0410
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862081"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 

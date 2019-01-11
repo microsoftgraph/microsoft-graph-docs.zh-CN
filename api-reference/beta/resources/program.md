@@ -1,12 +1,13 @@
 ---
 title: 计划资源类型
 description: '在 Azure AD 中访问审阅功能，程序是容器，保存程序控件。 租户可以有一个或多个程序。  每个控件链接到程序访问检查，以使其更轻松地找到相关的 access 审阅。  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048663"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863901"
 ---
 # <a name="program-resource-type"></a>计划资源类型
 
@@ -37,14 +38,14 @@ ms.locfileid: "27048663"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `id`                        |`String`                              |  功能分配的程序标识符。                    |
 | `displayName`               |`String`                              |  程序的名称。  所需在创建。                  |
 | `description`               |`String`                              |  该程序的描述。           |
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | 程序相关联的控件。 |
 

@@ -2,12 +2,13 @@
 title: 从 educationSchool 删除 educationUser
 description: 从学校删除用户。
 author: mmast-msft
-ms.openlocfilehash: c8fc91aafa1de22d156d077b51bb081f8f940f00
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4249ae683cab4dc2c9d42699f67dfbd5ca9c3ece
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865546"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>从 educationSchool 删除 educationUser
 

@@ -2,12 +2,13 @@
 title: Range:UsedRange
 description: 返回指定 range 对象的所用范围。
 author: lumine2008
-ms.openlocfilehash: a2a4d4a2de3b86b8682421a62e4e0b6b2cb7c2b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ace6df8491945e405dab1f33cf628e9b97fabe4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862011"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 
@@ -32,7 +33,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|可选。仅将有值的单元格视为已使用的单元格。|
 

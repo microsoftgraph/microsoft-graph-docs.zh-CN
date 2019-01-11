@@ -1,12 +1,13 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
 description: 用户实体的**onPremisesExtensionAttributes**属性包含 15 个自定义扩展特性的属性。 此组属性是**onPremisesSyncEnabled**用户掌握了内部部署 Active Directory 中和同步到 Azure AD 和是只读的。 仅限云用户 （其中**onPremisesSyncEnabled**为 false），这些属性的创建过程中可以设置或更新。
-ms.openlocfilehash: 547fc8ac19059611f5983a8b5ee0bd905f130f79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44589338e25e01cb483df6bfa3c1e078e352f5ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868157"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046967"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |extensionAttribute1|字符串| 第一个可自定义扩展属性。 |
 |extensionAttribute2|字符串| 第二个可自定义扩展属性。 |

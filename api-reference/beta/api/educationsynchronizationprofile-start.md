@@ -1,12 +1,13 @@
 ---
 title: 将文件上载到 educationSynchronizationProfile 后启动同步
 description: 验证文件上载到租户中的特定学校数据同步配置文件。 如果验证操作成功，将配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应中包含错误，将不会启动同步。 如果则响应中包含仅警告，将启动同步。
-ms.openlocfilehash: 4b123c5a90b65b333d881da471c475161b1c6507
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866736"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上载到 educationSynchronizationProfile 后启动同步
 

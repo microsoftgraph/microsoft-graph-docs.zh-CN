@@ -1,12 +1,13 @@
 ---
 title: 添加成员
 description: 使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
-ms.openlocfilehash: 1fe2d5c259b4e1974168df30e282d97d3342e0bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 89f4bd5060e167e1920e5f64d70127c1fed41ad6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867520"
 ---
 # <a name="add-member"></a>添加成员
 使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserDetail'
 description: 按用户获取有关 Microsoft Teams 设备使用情况的详细信息。
-ms.openlocfilehash: 61954c3eb8853a74044d3da921985b63113c03b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ade8bbcd2ce680bb7103bd0e9dbb09f3d49d1b03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842208"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 

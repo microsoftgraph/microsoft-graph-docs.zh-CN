@@ -1,12 +1,13 @@
 ---
 title: plannerOrderHintsByAssignee 资源类型
 description: '**PlannerOrderHintsByAssignee**是包含订购提示 plannerTask 资源，以指示分配给任务板视图中的任务顺序中的代理人的资源。'
-ms.openlocfilehash: a15a1f81b348958e5c38189db10743b83d72050f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cdc254eab43972d321e01e646880b3087f3af6f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863943"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee 资源类型
 

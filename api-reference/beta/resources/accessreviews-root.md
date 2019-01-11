@@ -1,12 +1,13 @@
 ---
 title: Azure AD 访问审阅
 description: 您可以使用 Azure AD 访问 reviews （英文） 配置的用户的访问权限的审计一次性或定期访问审阅。
-ms.openlocfilehash: 33722c68429729e3996ad289d07146c95ee219ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860786"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审阅
 

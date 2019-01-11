@@ -1,12 +1,13 @@
 ---
 title: alertTrigger 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 353f7dd09b11a2bfc509b53665c7f13ec390c80a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e375538806f09f85539f7a03e31c8a1ae041afdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866645"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 

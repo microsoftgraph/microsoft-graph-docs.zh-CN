@@ -2,12 +2,13 @@
 title: 呼叫： changeScreenSharingRole
 description: 启动和停止共享的调用中的屏幕。 此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。
 author: VinodRavichandran
-ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865007"
 ---
 # <a name="call-changescreensharingrole"></a>呼叫： changeScreenSharingRole
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |role|字符串|可能的值为: 查看、 共享|
 

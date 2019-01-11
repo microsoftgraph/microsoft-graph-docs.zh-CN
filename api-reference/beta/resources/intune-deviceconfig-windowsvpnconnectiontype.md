@@ -2,12 +2,13 @@
 title: windowsVpnConnectionType 枚举类型
 description: Windows VPN 连接类型。
 author: tfitzmac
-ms.openlocfilehash: d26b55b2d1b8fb38336c2dffcab4f002b03b1e82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3319fc96dfee6b41c6950c4184223808b6560f2f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867331"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsVpnConnectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27306361"
 
 Windows VPN 连接类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |pulseSecure|0|脉冲安全。|
 |f5EdgeClient|1|F5 边缘客户端。|

@@ -2,12 +2,13 @@
 title: mediaConfig 资源类型
 description: 用于连接到呼叫的媒体配置。
 author: VinodRavichandran
-ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ec76adf2d3a508ebe2518ed0010a1c653daca546
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867346"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380259"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
+| 属性       | 类型    | Description|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | 布尔 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

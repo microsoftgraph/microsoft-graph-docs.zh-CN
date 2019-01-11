@@ -2,12 +2,13 @@
 title: 列出 roleAssignments
 description: 列出 roleAssignment 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 4d7ff77844b2005e761f1388dec190ad1bc102e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 534fdd1e971dc46033be4d07679969f2d1a4c221
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868094"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 
@@ -38,7 +39,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

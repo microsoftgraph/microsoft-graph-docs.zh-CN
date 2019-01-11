@@ -2,12 +2,13 @@
 title: 创建 windowsPhone81GeneralConfiguration
 description: 创建新的 windowsPhone81GeneralConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 23e98acd93fc5851df690b7f06ee0bac3a16ce70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 594dc82a4be7e939bd04d937cbf4d2ed583d7ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867079"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>创建 windowsPhone81GeneralConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

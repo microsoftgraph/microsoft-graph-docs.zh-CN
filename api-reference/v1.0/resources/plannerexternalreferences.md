@@ -1,12 +1,13 @@
 ---
 title: plannerExternalReferences 资源类型
 description: '**plannerExternalReferences** 资源表示任务上的引用集合。它是开放类型。它是任务详细信息对象的组成部分。该属性-值对中的值是 externalReference 对象。'
-ms.openlocfilehash: 6c1141ebdfd95fef5706c36ecf38d6c1ca0b8783
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aedfd0321843c4a906defe22f184bac7d293a6e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862074"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
 

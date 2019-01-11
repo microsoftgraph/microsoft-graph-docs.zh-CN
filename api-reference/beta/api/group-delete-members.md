@@ -1,12 +1,13 @@
 ---
 title: 删除成员
 description: 使用此 API 可以通过 **members** 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除成员。可以删除用户或其他组。
-ms.openlocfilehash: be011101208d33293906ab7c8e79e242ca4c8f9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 917e662158785111847d5d74821bfedbb61205dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864475"
 ---
 # <a name="remove-member"></a>删除成员
 

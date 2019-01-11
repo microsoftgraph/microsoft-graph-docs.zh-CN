@@ -2,12 +2,13 @@
 title: 删除 iosLobAppProvisioningConfiguration
 description: 删除 iosLobAppProvisioningConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 382e067e56f367f3c4b6535c20f848d2db0ebe5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b88362c9730445a0d92b7878e097050156a95b17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864482"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

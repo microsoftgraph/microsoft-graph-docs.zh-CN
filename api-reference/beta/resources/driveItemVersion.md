@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
 title: DriveItemVersion
-ms.openlocfilehash: 6abe10a14a4995231b12cf0c828325259775ffd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4267a82cc2dee7f0b9b301e13073f32cf95c6844
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841738"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 

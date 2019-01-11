@@ -2,12 +2,13 @@
 title: windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 description: Windows Defender 高级威胁防护配置。
 author: tfitzmac
-ms.openlocfilehash: 349310a08b279bc56ee85ef4d07b5f6a6f7f03e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dccee9c663d3e85e1767219252271faddf578a25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867709"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 

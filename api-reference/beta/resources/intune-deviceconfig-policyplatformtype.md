@@ -2,12 +2,13 @@
 title: policyPlatformType 枚举类型
 description: 策略升高平台类型。
 author: tfitzmac
-ms.openlocfilehash: c36551393be37f2087c64d03a323ff82a5e6e037
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ac41cfe96a452dab4164c73327494684f15debf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862039"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323945"
 
 策略升高平台类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |android|0|Android。|
 |androidForWork|1|AndroidForWork。|

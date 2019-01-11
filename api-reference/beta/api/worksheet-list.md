@@ -2,12 +2,13 @@
 title: 列出 WorksheetCollection
 description: 检索 worksheet 对象的列表。
 author: lumine2008
-ms.openlocfilehash: 23688e9f1159d9864c39720b7e4f2676eec6b43a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55be7c180f97c89337d6e4c878f3339fd84ae36c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866379"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 
@@ -32,7 +33,7 @@ GET /workbook/worksheets
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

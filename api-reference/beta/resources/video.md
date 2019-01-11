@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
-ms.openlocfilehash: a9bf228d814526d089fb102444e6952558b07e1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3883dd494304409b76d10781039424267ada85f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866631"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 

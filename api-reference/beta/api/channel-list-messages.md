@@ -1,12 +1,13 @@
 ---
 title: 列表通道消息
 description: '检索 （不带答复） 中的工作组的通道的邮件的列表。 若要获取答复一条消息，请调用列表邮件答复或获取邮件答复 API。 '
-ms.openlocfilehash: b53b2616e88a07aa8f870304111680c4e842ef1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c972b84b0ec4de9389f8a0e861cafb74d7b23020
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867093"
 ---
 # <a name="list-channel-messages"></a>列表通道消息
 

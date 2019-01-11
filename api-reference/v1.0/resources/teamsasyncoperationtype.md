@@ -2,12 +2,13 @@
 title: teamsAsyncOperationType 枚举类型
 description: TeamsAsyncOperation 的类型。 将要添加的成员此处为多个异步支持操作。
 author: nkramer
-ms.openlocfilehash: 2b6487e1f1d0d98aeddeb5d44fddd9694d68436d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bfff4b64531032ac62444a322bf5ea8205ad801
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355018"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860870"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27355018"
 
 ## <a name="members"></a>成员
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |无效|0|值无效。|
 |cloneTeam|1|要克隆团队的操作。|

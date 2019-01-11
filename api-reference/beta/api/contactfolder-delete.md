@@ -2,12 +2,13 @@
 title: 删除 contactFolder
 description: 删除默认 contactFolder 以外的 contactFolder。
 author: angelgolfer-ms
-ms.openlocfilehash: 26ff5f9a2ef78d33fd60b498e891f031891b6f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b175251a1a9a4862dc1df36d607ed62e56c3e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864860"
 ---
 # <a name="delete-contactfolder"></a>删除 contactFolder
 
@@ -30,7 +31,7 @@ DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

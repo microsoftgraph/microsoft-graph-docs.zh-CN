@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: File
-ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a247987447dcd97ac0f42a6a4e743a0c80f6bd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862305"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 

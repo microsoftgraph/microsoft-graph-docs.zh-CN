@@ -2,12 +2,13 @@
 title: 列表 windowsDomainJoinConfigurations
 description: 列出属性和 windowsDomainJoinConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 8509cdaf97f98d55ec73fe010ded3d8f086af685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36620c4b4d03bb883d5b69fd1707f2fe384f9347
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867730"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>列表 windowsDomainJoinConfigurations
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: servicePrincipal： 列表 appRoleAssignments
 description: 检索 approleassignment 对象的列表。
-ms.openlocfilehash: 55a2a90981236afadabafdd8dc24e21aa874dbbe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 072060fe1cb7c7286632216c619bb064004baf7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864153"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal： 列表 appRoleAssignments
 

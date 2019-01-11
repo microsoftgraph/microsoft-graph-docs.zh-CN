@@ -1,12 +1,13 @@
 ---
 title: privilegedRole 资源类型
 description: 表示 Azure AD 管理员角色，如：**全局管理员、 帐单管理员、 服务管理员、 用户管理员、 密码管理员**等。
-ms.openlocfilehash: 0c04ab9de13732e4ac9eecb943a10945bec59d02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 75763e18731cb969623cc4df6360d50abc018b41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860856"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
 

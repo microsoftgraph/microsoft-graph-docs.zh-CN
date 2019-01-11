@@ -2,12 +2,13 @@
 title: bitLockerSystemDrivePolicy 资源类型
 description: BitLocker 加密的基本策略。
 author: tfitzmac
-ms.openlocfilehash: ba1199970099bb841fc363a747abb5b8dcac2ec1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 030051faf1405cf15c138384c1b6ab8891fbae95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867429"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy 资源类型
 
@@ -20,15 +21,15 @@ BitLocker 加密的基本策略。
 |属性|类型|说明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择操作系统驱动器的加密的方法。 可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`。|
-|startupAuthenticationRequired|Boolean|需要在启动时的其他身份验证。|
-|startupAuthenticationBlockWithoutTpmChip|Boolean|指示是否允许 BitLocker 不兼容的 TPM （需要密码或 USB 闪存驱动器上的启动项）。|
+|startupAuthenticationRequired|布尔|需要在启动时的其他身份验证。|
+|startupAuthenticationBlockWithoutTpmChip|布尔|指示是否允许 BitLocker 不兼容的 TPM （需要密码或 USB 闪存驱动器上的启动项）。|
 |startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许使用或所需/禁止 TPM 启动。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许使用或所需/禁止 TPM 启动 pin。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许使用或所需/禁止 TPM 启动密钥。 可取值为：`blocked`、`required`、`allowed`。|
 |startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否 TPM 启动固定键和密钥是允许/所需/被禁止。 可取值为：`blocked`、`required`、`allowed`。|
 |minimumPinLength|Int32|指示启动旋转中心点的最小长度。 有效值 4 到 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|允许恢复需要的启动关键信息不存在的 BitLocker 加密操作系统驱动器。 Bitlocker 打开时，将应用此策略设置。|
-|prebootRecoveryEnableMessageAndUrl|Boolean|启用预启动恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则不会影响此值。|
+|prebootRecoveryEnableMessageAndUrl|布尔|启用预启动恢复消息和 Url。 如果 requireStartupAuthentication 为 false，则不会影响此值。|
 |prebootRecoveryMessage|字符串|定义的自定义恢复消息。|
 |prebootRecoveryUrl|字符串|定义自定义恢复 URL。|
 

@@ -1,12 +1,13 @@
 ---
 title: teamsTab 资源类型
 description: 'TeamsTab 是一个选项卡的具有固定 （附加） 到团队中的通道。 '
-ms.openlocfilehash: 4e9773fa2e4ea6a114c1f2695906c09d84b3f043
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a1c3302251ac9b68be1cd8d6a011b7e0a7d216b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860842"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -31,13 +32,13 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 |:---------------|:--------|:----------|
 |  ID              |   string                  |  唯一标识通道选项读取仅的特定实例的标识符。     |
 |  displayName            |   string                  |  Tab 的名称。     |
-|  sortOrderIndex  |   整数                     |  用于排序选项卡的顺序的索引     |
+|  sortOrderIndex  |   int                     |  用于排序选项卡的顺序的索引     |
 |  webUrl          |   string                  |  深度链接的选项卡实例的 url。 只读。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。配置仅后设置此属性时，才视为选项卡。     |
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型   | 说明 |
+| 关系 | 类型   | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | 应用程序的链接到选项卡。这不能更改选项卡创建后。 |
 

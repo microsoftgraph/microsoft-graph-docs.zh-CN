@@ -2,12 +2,13 @@
 title: 'ChartCollection: add'
 description: 创建新图表。
 author: lumine2008
-ms.openlocfilehash: bfae5968c6a1131cb58bda80bd2587a68047bed9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4aa1a017da88fdd06b8e396130d5b09fbbeaebb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867940"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -28,7 +29,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |type|string|代表图表的类型。  可能的值为： `ColumnClustered`， `ColumnStacked`， `ColumnStacked100`， `BarClustered`， `BarStacked`， `BarStacked100`， `LineStacked`， `LineStacked100`， `LineMarkers`， `LineMarkersStacked`， `LineMarkersStacked100`， `PieOfPie`， `etc.`。|
 |sourceData|Json|对应于源数据的 Range 对象。|

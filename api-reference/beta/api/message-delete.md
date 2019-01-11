@@ -1,12 +1,13 @@
 ---
 title: 删除邮件
 description: 删除指定的用户邮箱中的邮件或删除邮件的关系。
-ms.openlocfilehash: 8f7429dfa4ee586f7bb6c263bdbb80971416d006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a76c936f72ebd238ee6d7a898dfd6a3e0356036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864524"
 ---
 # <a name="delete-message"></a>删除邮件
 

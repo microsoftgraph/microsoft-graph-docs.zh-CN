@@ -1,12 +1,13 @@
 ---
 title: synchronizationJobRestartCriteria 资源类型
 description: 定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
-ms.openlocfilehash: edf5cf258750df72dda2c9754d3543e07fc32e39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e26bae2e418da22a2b56e3acb973e4111066df23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867877"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27041881"
 定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |resetScope|字符串| 以逗号分隔的下列值的组合： `Full`， `QuarantineState`， `Watermark`， `Escrows`， `ConnectorDataStore`。 使用`Full`如果希望所有选项。|
 

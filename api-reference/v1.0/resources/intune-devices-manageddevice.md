@@ -2,12 +2,13 @@
 title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
 author: tfitzmac
-ms.openlocfilehash: 3d20c5eddf16933c4d428f88aa0dd00ebdeeef37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18904807f6c5158284809c6b4c697e517680c6f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862257"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
