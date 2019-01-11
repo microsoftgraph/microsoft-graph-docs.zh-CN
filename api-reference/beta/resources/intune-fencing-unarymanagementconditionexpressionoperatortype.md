@@ -2,12 +2,13 @@
 title: unaryManagementConditionExpressionOperatorType 枚举类型
 description: 受支持的运算符的一元管理条件表达式
 author: tfitzmac
-ms.openlocfilehash: 8444718cc93efd191727a4462338b4617ad4ed1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0707c38a7cd806251b51e467c9d5d7d1b4075f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892048"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27320578"
 
 受支持的运算符的一元管理条件表达式
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |
 not|0|否定操作数的计算。|

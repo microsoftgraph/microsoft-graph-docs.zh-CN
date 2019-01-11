@@ -1,12 +1,13 @@
 ---
 title: synchronizationJob 资源类型
 description: 通过在后台定期运行、 轮询一个目录，并将其推送到另一个目录中的更改执行同步。 同步作业始终是特定于您的租户中的应用程序的特定实例。 作为同步作业设置的一部分，您需要提供读取和写入您的目标目录中的对象的授权和自定义的作业同步架构。
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892146"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
@@ -33,13 +34,13 @@ ms.locfileid: "27048909"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id             |字符串                     |唯一同步作业标识符。 只读。|
-|计划       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
-|状态         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业，其中包括上次运行作业、 当前作业状态和错误的状态。|
+|id             |字符串                     |唯一同步作业标识符。 此为只读属性。|
+|计划       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 此为只读属性。|
+|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业，其中包括上次运行作业、 当前作业状态和错误的状态。|
 |templateId     |字符串    |基于此作业[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |架构|[synchronizationSchema](synchronization-synchronizationschema.md)| 配置作业同步架构。|
 

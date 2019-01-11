@@ -2,12 +2,13 @@
 title: 列表 windowsAutopilotDeviceIdentities
 description: 列出属性和 windowsAutopilotDeviceIdentity 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 998a1af97c4ae6173fdfed8b36a84c91ccd20f80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3519dbd27086c8d22ec03f201512f6d15283075
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316063"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891348"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>列表 windowsAutopilotDeviceIdentities
 
@@ -39,7 +40,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

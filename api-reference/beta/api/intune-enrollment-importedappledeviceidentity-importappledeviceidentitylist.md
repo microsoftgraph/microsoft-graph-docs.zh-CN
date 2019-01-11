@@ -2,12 +2,13 @@
 title: importAppleDeviceIdentityList 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 9ddd4ea6be25faaba089ee8e8d8b9a40edfbf9a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75a40be8d2ea3ddafadb78f95662dcadf7a9ac01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890599"
 ---
 # <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,10 +47,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)集合|尚未记录|
-|overwriteImportedDeviceIdentities|Boolean|尚未记录|
+|overwriteImportedDeviceIdentities|布尔|尚未记录|
 
 
 

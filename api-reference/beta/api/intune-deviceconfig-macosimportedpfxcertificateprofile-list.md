@@ -2,12 +2,13 @@
 title: 列表 macOSImportedPFXCertificateProfiles
 description: 列出属性和 macOSImportedPFXCertificateProfile 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 4b0f47303a29506cc5457893c54abc7a0ce27470
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 011548f672c14c8c2d9bb9a83a241136a7c25168
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891173"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>列表 macOSImportedPFXCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

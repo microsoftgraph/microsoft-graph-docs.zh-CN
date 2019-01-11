@@ -2,12 +2,13 @@
 title: 列出 macOSCustomConfigurations
 description: 列出 macOSCustomConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: ae4186852a08d91e0fffa56068b0ec7aa8cb4155
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb393a1babdb439675eb1b05fd3362fefaf663f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892083"
 ---
 # <a name="list-macoscustomconfigurations"></a>列出 macOSCustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

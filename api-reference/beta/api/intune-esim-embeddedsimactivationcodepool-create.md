@@ -2,12 +2,13 @@
 title: 创建 embeddedSIMActivationCodePool
 description: 创建新的 embeddedSIMActivationCodePool 对象。
 author: tfitzmac
-ms.openlocfilehash: 88b495437859e6e7552763581886e0bf6786374c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5d01b376c886ef5753abbb59d0be557702e394f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891355"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
@@ -38,7 +39,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 获取 androidForWorkSettings
 description: 读取 androidForWorkSettings 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 4fe705a98622ac4a40fb96b6aed6abbe92e51660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bfc8b61cbb4e4074659eac660fd2b7dbfc700ddc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360842"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892258"
 ---
 # <a name="get-androidforworksettings"></a>获取 androidForWorkSettings
 
@@ -40,7 +41,7 @@ GET /deviceManagement/androidForWorkSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

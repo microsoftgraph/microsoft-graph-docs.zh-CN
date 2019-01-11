@@ -2,12 +2,13 @@
 title: 获取 embeddedSIMActivationCodePool
 description: 读取属性和 embeddedSIMActivationCodePool 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: f81a9d52e824d81b50be4de32a0ceee66a5db06c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 123a8fa12555e9ff6722faafc73c16ee4e751544
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892531"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>获取 embeddedSIMActivationCodePool
 
@@ -40,7 +41,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

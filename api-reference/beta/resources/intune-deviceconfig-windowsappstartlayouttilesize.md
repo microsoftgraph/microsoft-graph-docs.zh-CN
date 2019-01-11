@@ -2,12 +2,13 @@
 title: windowsAppStartLayoutTileSize 枚举类型
 description: 在开始布局中的 Windows 应用程序图块大小。
 author: tfitzmac
-ms.openlocfilehash: ef00ebd06528fdd8f5d832d11ef34ee9f0093a3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dde8aff258e495fce58baafc40e44ba3041d2bc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891432"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27313494"
 
 在开始布局中的 Windows 应用程序图块大小。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |hidden|0|隐藏。|
 |小|1|小型 1 x 1。|

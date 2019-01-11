@@ -2,12 +2,13 @@
 title: 获取 androidManagedStoreApp
 description: 读取属性和 androidManagedStoreApp 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 8c284d12ef98105e5e241913c9505c0645bb8968
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9a67ca7d71a25bddf217d8a115e8a2934aba728
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892250"
 ---
 # <a name="get-androidmanagedstoreapp"></a>获取 androidManagedStoreApp
 
@@ -42,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

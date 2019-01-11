@@ -2,12 +2,13 @@
 title: educationSubmissionRecipient 资源类型
 description: 代表一组不同的用户可以向其分配提交的抽象类。 可能值包括个人或组。 **Submission.recipient**属性中使用此选项。
 author: dipakboyed
-ms.openlocfilehash: fc0837b15b1b45d61ab9a69a9074f1bbf104cee5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41a1630322e148471a00ddd1779d85e9b5d1845b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891978"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>educationSubmissionRecipient 资源类型
 

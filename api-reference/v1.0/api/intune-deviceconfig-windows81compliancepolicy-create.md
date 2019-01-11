@@ -2,12 +2,13 @@
 title: 创建 windows81CompliancePolicy
 description: 创建新的 windows81CompliancePolicy 对象。
 author: tfitzmac
-ms.openlocfilehash: 683c6c29cc27d314b00e24fdd6ffbd6d50c03735
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 675c6a7addb6c63e49d85cf226dae3be588b699f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891719"
 ---
 # <a name="create-windows81compliancepolicy"></a>创建 windows81CompliancePolicy
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

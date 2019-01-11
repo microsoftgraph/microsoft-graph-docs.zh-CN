@@ -2,12 +2,13 @@
 title: 列表 androidForWorkEasEmailProfileBases
 description: 列出属性和 androidForWorkEasEmailProfileBase 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: b10b5e863cf55715e10dd8f2e009e3f0fb6b7aa8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c030372847600ff9c43752cc820ad649bb5d209b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891838"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>列表 androidForWorkEasEmailProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

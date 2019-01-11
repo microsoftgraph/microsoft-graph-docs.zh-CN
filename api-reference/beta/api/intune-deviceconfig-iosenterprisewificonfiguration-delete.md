@@ -2,12 +2,13 @@
 title: 删除 iosEnterpriseWiFiConfiguration
 description: 删除 iosEnterpriseWiFiConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 043890a5789151f4865f969593135c98261a70d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 938ad78717a9a52a2c4e764171a7979a2aa2e561
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891264"
 ---
 # <a name="delete-iosenterprisewificonfiguration"></a>删除 iosEnterpriseWiFiConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

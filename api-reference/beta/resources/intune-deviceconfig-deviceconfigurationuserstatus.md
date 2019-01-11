@@ -2,12 +2,13 @@
 title: deviceConfigurationUserStatus 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 151321955a759bc4afaca7b2b46ba4b7d34ccb5e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34fbded553017182894f6459c4eed924cf187592
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892316"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>deviceConfigurationUserStatus 资源类型
 

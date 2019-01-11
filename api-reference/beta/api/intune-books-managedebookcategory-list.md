@@ -2,12 +2,13 @@
 title: 列表 managedEBookCategories
 description: 列出属性和 managedEBookCategory 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: f4ffe260e1d6e66d981376cf0d5f96a22790a1f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b263135e04c3ca27728deb1304d15a38e3a033a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892209"
 ---
 # <a name="list-managedebookcategories"></a>列表 managedEBookCategories
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

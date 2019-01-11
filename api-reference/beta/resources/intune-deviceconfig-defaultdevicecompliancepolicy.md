@@ -2,12 +2,13 @@
 title: defaultDeviceCompliancePolicy 资源类型
 description: 默认设备合规性策略规则的强制实施帐户范围。
 author: tfitzmac
-ms.openlocfilehash: fb5b10153e9684287e43140c4196835869431c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4629a5fb4dbf49c9ff94a7a9606ac2ec36c71986
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891453"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>defaultDeviceCompliancePolicy 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27336405"
 |[更新 defaultDeviceCompliancePolicy](../api/intune-deviceconfig-defaultdevicecompliancepolicy-update.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|更新[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

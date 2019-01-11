@@ -2,12 +2,13 @@
 title: 删除 mobileAppAssignment
 description: 删除 mobileAppAssignment
 author: tfitzmac
-ms.openlocfilehash: 55f9f1b776414d9baf0b5a19fb43ddd18baab2e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65d511a390a75412d363d70059728f95d0e59064
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891705"
 ---
 # <a name="delete-mobileappassignment"></a>删除 mobileAppAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

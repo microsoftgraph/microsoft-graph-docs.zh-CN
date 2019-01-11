@@ -2,12 +2,13 @@
 title: mobileAppPublishingState 枚举类型
 description: 指示应用程序的发布状态。
 author: tfitzmac
-ms.openlocfilehash: 2415e2ba244d7766cbdc670c303643ec125c1091
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24a17e63570d46a1fd1771bf25e5bd0d397f9088
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890984"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302329"
 
 指示应用程序的发布状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notPublished|0|尚未发布应用程序。|
 |处理|1|待处理的服务商处理应用程序。|

@@ -1,12 +1,13 @@
 ---
 title: openTypeExtension 资源类型（开放扩展）
 description: 打开扩展 （之前被称为 Office 365 数据扩展） 提供轻松直接将非类型化的属性添加到 Microsoft Graph 中的资源。
-ms.openlocfilehash: eedf61ccdda62ab69673a4489b49db782f514ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: e0e7bf992d75ccb8ee04a3cccb90fd42c996d50a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891684"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 

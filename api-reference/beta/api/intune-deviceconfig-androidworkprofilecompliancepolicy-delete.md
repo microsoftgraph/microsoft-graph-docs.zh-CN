@@ -2,12 +2,13 @@
 title: 删除 androidWorkProfileCompliancePolicy
 description: 删除 androidWorkProfileCompliancePolicy。
 author: tfitzmac
-ms.openlocfilehash: 50c84b4f5e78ba70c376fc51a7c7ddcb0cc7dd6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebee9ed6fa2935ee299406b3cf2c6d90ffa9fd3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892440"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>删除 androidWorkProfileCompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

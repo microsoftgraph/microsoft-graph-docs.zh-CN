@@ -1,12 +1,13 @@
 ---
 title: attributeMappingParameterSchema 资源类型
 description: 介绍在 attributeMappingFunctionSchema 中使用的单个参数。
-ms.openlocfilehash: 164387a345f245f390d24b89a349e02ee2242041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892167"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27048170"
 
 ## <a name="properties"></a>属性
 
-| 属性                   | 类型                      | 说明    |
+| 属性                   | 类型                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
 |allowMultipleOccurrences    |布尔                   |给定的参数可提供多次 (多个输入中的字符串，如`Concatenate(string,string,...)`函数)。 |
 |name                        |字符串                    |参数名称。 |

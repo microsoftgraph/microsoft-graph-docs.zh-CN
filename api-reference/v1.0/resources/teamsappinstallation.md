@@ -2,12 +2,13 @@
 title: teamsAppInstallation 资源类型
 description: '团队中安装 teamsApp。 '
 author: nkramer
-ms.openlocfilehash: e845bf10bc5513bc6a5079c295fde2eb6d7b6fa5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 037cda1a98f45db94ecfc31b112bc3ab82bf4698
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891187"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27312808"
 
 ## <a name="relationships"></a>Relationships
 
-| 关系   | 类型    | 说明 |
+| 关系   | 类型    | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| 安装应用程序。 |
 |teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| 此版本的应用程序的详细信息。 |

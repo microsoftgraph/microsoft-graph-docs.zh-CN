@@ -1,12 +1,13 @@
 ---
 title: 发送设备命令
 description: '此 API 支持 Project Rome 功能命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后`me/devices`，向您的设备发出命令的设备 ID 中传递。 支持两种类型的命令： LaunchURI 和 AppServices。 如果您正在使用 LaunchURI，指定*类型*和*负载*参数。 对于 AppService 呼叫，指定 '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891985"
 ---
 # <a name="send-device-command"></a>发送设备命令
 

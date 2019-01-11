@@ -2,12 +2,13 @@
 title: educationRoot 资源类型
 description: '`/education` 命名空间公开特定于教育部门的功能。 '
 author: mmast-msft
-ms.openlocfilehash: 2a9eac02552e62e7bfb889e9e87efe47fa5f88f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c268c7b910bd9f6f14763f3a7b5445af0ac12826
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890655"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 

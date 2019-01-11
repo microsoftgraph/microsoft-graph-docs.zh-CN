@@ -2,12 +2,13 @@
 title: 列表 iosLobAppProvisioningConfigurations
 description: 列出属性和 iosLobAppProvisioningConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: f3535b412cb0eaac732b2237cc96adec88d19a35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c61c5eba8b9bdb9654d573fbdf90e20bd8ff7cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892454"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>列表 iosLobAppProvisioningConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

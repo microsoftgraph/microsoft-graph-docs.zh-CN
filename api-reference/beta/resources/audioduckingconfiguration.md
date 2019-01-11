@@ -2,12 +2,13 @@
 title: audioDuckingConfiguration 资源类型
 description: 参数放掉的其他源 （逐步注销其他源。）
 author: VinodRavichandran
-ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 713e7012381bf6b727321494f81e75c88c66ebe6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891558"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380176"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型     | 说明                                                                     |
+| 属性      | 类型     | Description                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
 | lowerLevel    | Int64    | 源中时源正在 ducked %的卷。             |
 | rampActive    | Int64    | 时间 （以毫秒计） 计的 ducked 源以"淡出"。 |

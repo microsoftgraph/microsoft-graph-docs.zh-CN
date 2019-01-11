@@ -2,12 +2,13 @@
 title: 创建分区
 description: 在指定的笔记本中新建分区。
 author: Jewan-microsoft
-ms.openlocfilehash: 026473c7bed93fa127fd8fc4db8c27cfcb47acdc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6c091d399ae2b9fc69d249a3e2a34f3051c1611
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892461"
 ---
 # <a name="create-section"></a>创建分区
 
@@ -32,7 +33,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sections
 POST /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string | `application/json` |

@@ -2,12 +2,13 @@
 title: 列出 acceptedSender
 description: 获取此组 acceptedSenders 列表中的用户或组列表。
 author: dkershaw10
-ms.openlocfilehash: 8cd753dbdeea78e18e08a75ed4588ff67c225f09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b073ea0a6173c86b298628c7e78baaaf0512eaac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892398"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 

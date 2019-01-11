@@ -1,12 +1,13 @@
 ---
 title: appRole 资源类型
 description: 表示应用程序角色调用另一个应用程序的客户端应用程序可能请求的或可能用于分配给用户或组指定的应用程序角色中的应用程序。 **AppRoles**属性和应用程序实体的 servicePrincipal 实体是**appRole**的集合。
-ms.openlocfilehash: f87ef6f40fbeb18ec4b3a2373fb2a19e14da84a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26fe11fc4f0c362de002c205c7e3b95a6ec4a314
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891544"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -41,7 +42,7 @@ ms.locfileid: "27042921"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|String 集合|指定此应用程序角色定义可以设置为"User"，或其他应用程序 （即正在访问此端口监控程序服务方案中的应用程序） 分配给用户和组设置到"应用程序"，或两者。|
 |说明|字符串|权限帮助管理应用程序分配中显示的文本和同意体验。|

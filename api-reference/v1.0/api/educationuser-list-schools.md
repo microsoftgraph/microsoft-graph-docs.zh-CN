@@ -2,12 +2,13 @@
 title: 列出学校
 description: 检索用户所在的学校列表。
 author: mmast-msft
-ms.openlocfilehash: 6197096da6638f892c8a3819918d8f2bb6690afa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9124c827923d72c58e33b968a44050db33d1c2dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890914"
 ---
 # <a name="list-schools"></a>列出学校
 

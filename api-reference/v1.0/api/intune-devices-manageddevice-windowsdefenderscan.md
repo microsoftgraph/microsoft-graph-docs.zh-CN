@@ -2,12 +2,13 @@
 title: windowsDefenderScan 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 21a1737289da41885b578ed7d735916e225f1a30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad9a89fa67c7e6e7b5378bae54b4eb4affbfd852
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891677"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

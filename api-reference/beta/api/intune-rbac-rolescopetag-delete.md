@@ -2,12 +2,13 @@
 title: 删除 roleScopeTag
 description: 删除 roleScopeTag。
 author: tfitzmac
-ms.openlocfilehash: fe141f3a435b591da1cbc6459ba88b3857ccf717
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44939792bd132ac64bcaa1929eb0fee2f8ca0b9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891894"
 ---
 # <a name="delete-rolescopetag"></a>删除 roleScopeTag
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

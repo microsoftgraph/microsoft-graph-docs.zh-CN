@@ -2,12 +2,13 @@
 title: 创建 managedDeviceMobileAppConfigurationUserStatus
 description: 创建新的 managedDeviceMobileAppConfigurationUserStatus 对象。
 author: tfitzmac
-ms.openlocfilehash: 9fdd6a55f0a82de852e44e7ffdc0720830659c3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31ba14dc9ceffebd0d30522e0dd9adba16990377
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892447"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>创建 managedDeviceMobileAppConfigurationUserStatus
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
