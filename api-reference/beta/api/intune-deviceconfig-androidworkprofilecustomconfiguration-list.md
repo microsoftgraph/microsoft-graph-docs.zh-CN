@@ -2,12 +2,13 @@
 title: 列表 androidWorkProfileCustomConfigurations
 description: 列出属性和 androidWorkProfileCustomConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 04af0c0b42065900786b1a6d0fb6bdf4bce25d1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c40cd6d71ff22c4ec393759623f53bc044b51f56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837000"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>列表 androidWorkProfileCustomConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: oneDriveUsageAccountDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 4b80ebc24aa45be0368dbb59d6d3e99e7adacc8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92695f509302ede4b3ce64320e8f4ed42418f7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842607"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>oneDriveUsageAccountDetail 资源类型
 

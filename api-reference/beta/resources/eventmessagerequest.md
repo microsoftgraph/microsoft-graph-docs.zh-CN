@@ -2,12 +2,13 @@
 title: eventMessageRequest 资源类型
 description: 代表一个会议请求消息。
 author: angelgolfer-ms
-ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a4af3bef767213c977dde1195c89d1de02a0cf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844021"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest 资源类型
 
@@ -87,15 +88,15 @@ ms.locfileid: "27335642"
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求会议结束时间。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
-|hasAttachments|Boolean|指示邮件是否包含附件。|
+|hasAttachments|布尔|指示邮件是否包含附件。|
 |id|String|只读。|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
 |inferenceClassification|String| 可取值为：`Focused`、`Other`。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|Boolean|指示是否此会议请求已过期较新的请求。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isOutOfDate|布尔|指示是否此会议请求已过期较新的请求。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |位置|[位置](location.md)|请求会议的位置。|
 |meetingMessageType|String| 事件消息的类型：`None`、`MeetingRequest`、`MeetingCancelled`、`MeetingAccepted`、`MeetingTenativelyAccepted`、`MeetingDeclined`。|

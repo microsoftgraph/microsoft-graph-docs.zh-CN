@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 0a98080434dcb18944e58c2f1ada5019e3c32332
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 988a4d6dcd1b04b34c5d2d03aca404b0a570922f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834165"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 

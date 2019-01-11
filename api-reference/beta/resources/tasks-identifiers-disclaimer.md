@@ -1,12 +1,13 @@
 ---
 title: 任务中的标识符
 description: 任务中对象的标识符是服务生成的字符串值。 . 值 28 字符，都区分大小写。 作为中传递，该服务将执行操作标识符，简单格式的验证，如果格式验证失败，呼叫者将收到错误请求 (400) 错误响应，指示此问题。 收到此错误指示 bug 中调用应用程序，如：
-ms.openlocfilehash: d57ca282de87c2bce42b37d0be6d08dbe128c522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb66f0a610d6fe7d383e078674ca349776ddb4e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836664"
 ---
 # <a name="identifiers-in-tasks"></a>任务中的标识符
 

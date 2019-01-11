@@ -1,12 +1,13 @@
 ---
 title: privilegedRoleSettings 资源类型
 description: 代表特权角色的设置。
-ms.openlocfilehash: 14b4919d653de80c97f06aff507c011162c3c0e4
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27049557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842740"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "27049557"
 |[获取 privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |读取属性和 privilegedRoleSettings 对象的关系。|
 |[更新 privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |更新 privilegedRoleSettings 对象。|
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|当激活角色持续时间。|
-|id|string| 角色设置唯一标识符。 只读。|
+|id|string| 角色设置唯一标识符。 此为只读属性。|
 |isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。|
 |lastGlobalAdmin|boolean|仅供内部。|
 |maxElavationDuration|duration|激活角色的最大持续时间。|

@@ -2,12 +2,13 @@
 title: 列出 iosVppApps
 description: 列出 iosVppApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 095736952a934586562c51f5f394cb68aee9e2ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b04cc13d814a57d07cdd9f2f15b184c7135ddf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843237"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 删除订阅
 description: 删除订阅。
-ms.openlocfilehash: be2c32f0915e8718203e46489be9861bf0f05451
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e2efb9835e5e625bdac0385b5011cfe5c8c64b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842047"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -24,8 +25,8 @@ ms.locfileid: "27043064"
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| 组                      | Group.Read.All      |
+| 用户                       | User.Read.All       |
 | Drive（用户的 OneDrive）    | Files.ReadWrite     |
 | 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
 | 安全警报              | SecurityEvents.ReadWrite.All |

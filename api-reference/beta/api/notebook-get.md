@@ -2,12 +2,13 @@
 title: 获取笔记本
 description: 检索 notebook 对象的属性和关系。
 author: Jewan-microsoft
-ms.openlocfilehash: 1c4ef1db34f115e3904ff48b871e52f969b08d5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7193e7ac0e94c15c467c0d9c49d41fb73eff324b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838575"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -37,7 +38,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 description: 本主题提供的声明方法属性和公开 androidDeviceOwnerGeneralDeviceConfiguration 资源的关系的说明。
-ms.openlocfilehash: 394ed46f040659394e416172b7a4aa9b5fd97232
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4388c7a79a1db16df92bfa55ec0e205da692fb1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835453"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 
@@ -80,7 +81,7 @@ ms.locfileid: "27045389"
 |wifiBlockEditPolicyDefinedConfigurations|布尔|指示阻止用户编辑只策略定义的网络。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

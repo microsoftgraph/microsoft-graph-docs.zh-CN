@@ -2,12 +2,13 @@
 title: 创建 CalendarGroup
 description: 使用此 API 创建新的 CalendarGroup。
 author: dkershaw10
-ms.openlocfilehash: 42f094b599abf49de66245383e70f032e4388e0e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a969c2f9916bf94d05f4082f6c429460652c860
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834782"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
 

@@ -2,12 +2,13 @@
 title: 'ChartFill: clear'
 description: 清除图表元素的填充颜色。
 author: lumine2008
-ms.openlocfilehash: db7b02c59f2391099b86756a2d3a82bdbd48630d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3dc40f7ece8eb8bb5821e6ee924a80f0c19cf5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843803"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -32,7 +33,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

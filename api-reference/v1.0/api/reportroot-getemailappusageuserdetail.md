@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageUserDetail'
 description: 获取用户在不同电子邮件应用中执行的活动的详细信息。
-ms.openlocfilehash: 6ea60e5729c17d25a36ad0651da4eb55dbe61560
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8e9abd90bc90bcba219c9b4f0c259dceec9f581f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844987"
 ---
 # <a name="reportroot-getemailappusageuserdetail"></a>reportRoot: getEmailAppUsageUserDetail
 

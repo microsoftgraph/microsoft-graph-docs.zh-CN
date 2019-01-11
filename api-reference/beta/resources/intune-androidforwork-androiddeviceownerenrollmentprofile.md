@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerEnrollmentProfile 资源类型
 description: 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
-ms.openlocfilehash: 0ca468a624f5b1793b09eb6b4d9d9e003cae3ac7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17d8d00fb0c21d9474607e0cc388ce38687af0ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841872"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 

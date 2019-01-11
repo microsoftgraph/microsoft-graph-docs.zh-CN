@@ -2,12 +2,13 @@
 title: windowsKioskActiveDirectoryGroup 资源类型
 description: 用于标识为网亭配置 Azure Directory 组的类
 author: tfitzmac
-ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc9db9aa120411c423492efa162973e33cc4c303
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850524"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27331771"
 继承自[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |groupName|字符串|将锁定到此网亭配置 AD 组的名称|
 

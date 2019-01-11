@@ -1,12 +1,13 @@
 ---
 title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
-ms.openlocfilehash: e83ace1a50998b6645e059fe0f63e3922497c1cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8ccecfd0d8cffa383ecc96cc908d31452db5fb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835768"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -25,7 +26,7 @@ ms.locfileid: "27010687"
 |[由用户拥有的删除列表项](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出了由用户拥有的目录项。 |
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |deletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 Null。|
 

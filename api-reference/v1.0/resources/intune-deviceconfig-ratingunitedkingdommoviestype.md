@@ -2,12 +2,13 @@
 title: ratingUnitedKingdomMoviesType 枚举类型
 description: 电影分级中英国标签
 author: tfitzmac
-ms.openlocfilehash: 6593ff7f65e49b103c0a7004f3f701bbe9590a2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8c659ea3484111261b3fd0e7e69ba5b3286cb38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834389"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27334480"
 
 电影分级中英国标签
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|

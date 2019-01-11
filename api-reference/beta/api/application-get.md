@@ -2,12 +2,13 @@
 title: 获取应用程序
 description: 检索的属性和 application 对象的关系。
 author: lleonard-msft
-ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0b83a2ee5ed94d9e793a8f1a37f5fb41acaedaf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849705"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -33,7 +34,7 @@ GET /applications/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

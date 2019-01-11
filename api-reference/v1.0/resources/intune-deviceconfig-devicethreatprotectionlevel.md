@@ -2,12 +2,13 @@
 title: deviceThreatProtectionLevel 枚举类型
 description: 设备的设备威胁保护 API 的威胁保护级别。
 author: tfitzmac
-ms.openlocfilehash: 755fd861196839ec261dd18f458b88aa97cf0191
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa287d9259ed88f1b2240fd9bbdcaf77bcf9170e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850580"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27356005"
 
 设备的设备威胁保护 API 的威胁保护级别。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |不可用|0|默认值。 请勿使用。|
 |保护|1|设备威胁级别要求： 安全。 这是最安全的级别，表示在设备上未发现任何威胁。|

@@ -1,12 +1,13 @@
 ---
 title: 更新图标
 description: 更新 icon 对象的属性。
-ms.openlocfilehash: 0cb3b1af0369c86290c842232acc57792d1552ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 250dc23e4e046d159be5f9c1d4eb2421d93a2c34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839163"
 ---
 # <a name="update-icon"></a>更新图标
 
@@ -37,7 +38,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|整数|表示给定集合中图标的索引。|
+|index|int|表示给定集合中图标的索引。|
 |set|string|表示的图标集。 可能的值为： `Invalid`， `ThreeArrows`， `ThreeArrowsGray`， `ThreeFlags`， `ThreeTrafficLights1`， `ThreeTrafficLights2`， `ThreeSigns`， `ThreeSymbols`， `ThreeSymbols2`， `FourArrows`， `FourArrowsGray`， `FourRedToBlack`， `FourRating`， `FourTrafficLights`， `FiveArrows`， `FiveArrowsGray`， `FiveRating`， `FiveQuarters`， `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="response"></a>响应

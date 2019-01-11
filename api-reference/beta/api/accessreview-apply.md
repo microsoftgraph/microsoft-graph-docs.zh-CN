@@ -1,12 +1,13 @@
 ---
 title: 应用 accessReview
 description: '在 Azure AD 中访问评论功能、 apply 完成 accessReview 的决策。  目标对象可以是一次性访问回顾或定期访问评审的实例。  '
-ms.openlocfilehash: 2a5675eee989e21fcc275ddf859738af46742610
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 762acb3dde490ea8867fb008d07b9914326f20fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838883"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -39,7 +40,7 @@ POST /accessReviews('<id>')/applyDecisions()
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

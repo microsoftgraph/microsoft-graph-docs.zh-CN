@@ -2,12 +2,13 @@
 title: 更新 ndesConnector
 description: 更新 ndesConnector 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef3857d6b12803279c50540883125ec0685ff81b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847311"
 ---
 # <a name="update-ndesconnector"></a>更新 ndesConnector
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +51,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |:---|:---|:---|
 |id|字符串|NDES 连接符的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的最后一个连接时间|
-|状态|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|字符串|Ndes 连接器的友好名称。|
 
 

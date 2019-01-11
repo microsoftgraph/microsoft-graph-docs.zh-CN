@@ -2,12 +2,13 @@
 title: restrictedAppsViolation 资源类型
 description: 与每个每个用户的设备的受限的应用程序配置文件的冲突
 author: tfitzmac
-ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aefd9996805f0ee454bebc8871662b0ceac05a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304933"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849376"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 

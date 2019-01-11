@@ -2,12 +2,13 @@
 title: appListType 枚举类型
 description: 合规性应用程序列表的可能值。
 author: tfitzmac
-ms.openlocfilehash: 3f0fa162131fc1f59beba1f057fa888e0f2260c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17452d09976d84f19ed56bbaeb4e558a727b1c7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841018"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27331190"
 
 合规性应用程序列表的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|默认值，没有用途。|
 |appsInListCompliant|1|在列表代表将被视为符合 （仅在列表上的应用程序都符合） 的应用程序。|

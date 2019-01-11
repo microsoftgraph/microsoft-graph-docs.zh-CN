@@ -1,12 +1,13 @@
 ---
 title: ChartFont 资源类型
 description: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
-ms.openlocfilehash: dc4b1f8cd0653d89c3486a61604dd09c0e23cb2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b2d6e07f5049449d71be45b41585ed3bd300b7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850783"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont 资源类型
 

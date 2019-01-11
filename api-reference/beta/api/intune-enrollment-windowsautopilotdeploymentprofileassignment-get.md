@@ -2,12 +2,13 @@
 title: 获取 windowsAutopilotDeploymentProfileAssignment
 description: 读取属性和 windowsAutopilotDeploymentProfileAssignment 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: eaeb8668c0ce4cc9fbf7c8353a999afccb6a3f14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c9888361cd25728a2dbebccf0ed019a9ffe234c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849852"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>获取 windowsAutopilotDeploymentProfileAssignment
 
@@ -40,7 +41,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

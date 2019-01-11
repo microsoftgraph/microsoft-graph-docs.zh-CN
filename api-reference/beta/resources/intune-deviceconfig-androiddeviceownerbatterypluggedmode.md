@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerBatteryPluggedMode 枚举类型
 description: Android 设备所有者的可能值的设备的插入电源模式状态。
-ms.openlocfilehash: 896e1c8a3a295a0d588a13b7a3e87eb1def02099
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ce7db347239a30b69fa8f22ff8b76804d7cdb52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843832"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042919"
 
 Android 设备所有者的可能值的设备的插入电源模式状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
 |交流|1|电源源是交流充电器。|

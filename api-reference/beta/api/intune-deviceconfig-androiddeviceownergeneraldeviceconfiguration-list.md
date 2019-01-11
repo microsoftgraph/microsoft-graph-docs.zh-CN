@@ -2,12 +2,13 @@
 title: 列表 androidDeviceOwnerGeneralDeviceConfigurations
 description: 列出属性和 androidDeviceOwnerGeneralDeviceConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: ad0b8a59ae5db2b1feb38922b8eece9af8132301
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c45dac2aea007b2c9b54828376d8ae0b519fd736
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838568"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列表 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

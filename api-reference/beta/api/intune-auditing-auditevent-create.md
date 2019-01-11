@@ -2,12 +2,13 @@
 title: 创建 auditEvent
 description: 创建新的 auditEvent 对象。
 author: tfitzmac
-ms.openlocfilehash: 436a66b9652477b00ab40e4a874c9a385c9d1f7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcc7a84e22b86e4ec0f9e5d17eb05f75cbe83c6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837882"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -38,7 +39,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

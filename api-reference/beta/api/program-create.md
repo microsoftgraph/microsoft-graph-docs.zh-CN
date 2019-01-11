@@ -1,12 +1,13 @@
 ---
 title: 创建程序
 description: Azure AD 中访问审阅功能，创建一个新的程序对象。
-ms.openlocfilehash: 1ac3fa1f0b555fc92449adf0e57217d0a7d50375
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b982242bbdddb9769d64c9757d9041fddc215d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844014"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -30,14 +31,14 @@ POST /programs
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[程序](../resources/program.md)的对象的 JSON 表示形式。
 
 下表显示时创建程序所需的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  程序的名称。                   |
 | `description`               |`String`                              |  该程序的描述。           |

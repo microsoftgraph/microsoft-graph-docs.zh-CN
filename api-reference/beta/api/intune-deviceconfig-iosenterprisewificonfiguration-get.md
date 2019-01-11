@@ -2,12 +2,13 @@
 title: 获取 iosEnterpriseWiFiConfiguration
 description: 读取属性和 iosEnterpriseWiFiConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: c9e75d76b9c4deac53894268e6a7c9a8682d0061
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9707e8daa6b987c2e36a34a6a4b66a501e2be874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841732"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>获取 iosEnterpriseWiFiConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

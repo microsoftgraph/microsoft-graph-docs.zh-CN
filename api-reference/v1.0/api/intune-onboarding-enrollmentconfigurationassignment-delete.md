@@ -2,12 +2,13 @@
 title: 删除 enrollmentConfigurationAssignment
 description: 删除 enrollmentConfigurationAssignment。
 author: tfitzmac
-ms.openlocfilehash: aa809a2a69ec5e40470b9b95e9ca51dec13b9f10
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3af630f24c5a976cc8d1be948a542f18f0c4c70c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355032"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850062"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>删除 enrollmentConfigurationAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

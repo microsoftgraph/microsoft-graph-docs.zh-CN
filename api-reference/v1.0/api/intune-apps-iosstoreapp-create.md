@@ -2,12 +2,13 @@
 title: 创建 iosStoreApp
 description: 创建新的 iosStoreApp 对象。
 author: tfitzmac
-ms.openlocfilehash: 0d46f8f8e123563f86a0475593f2699705f8fd5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6dc5f1b6a3690fa66689aa0c8cebe1cd27d3ce4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836342"
 ---
 # <a name="create-iosstoreapp"></a>创建 iosStoreApp
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

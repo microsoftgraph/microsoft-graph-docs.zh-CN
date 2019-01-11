@@ -2,12 +2,13 @@
 title: 列表 managedDeviceMobileAppConfigurationDeviceStatuses
 description: 列出属性和 managedDeviceMobileAppConfigurationDeviceStatus 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: eebe5ec2da36cad972af87600b6d6776debcbbee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 346525606117bd0de1646c0d5a1529b78c8baf11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838078"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>列表 managedDeviceMobileAppConfigurationDeviceStatuses
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

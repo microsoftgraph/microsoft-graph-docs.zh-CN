@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: CommentAction
-ms.openlocfilehash: 92dc26945cd591de2ba107907a593159f1e128c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 952a86161047ab869238feaba50b8ad4d8ce0658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845596"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction 资源类型
 

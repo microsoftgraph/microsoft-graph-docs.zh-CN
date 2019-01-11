@@ -1,12 +1,13 @@
 ---
 title: 创建 inferenceClassificationOverride
 description: '创建发件人标识的 SMTP 地址重写。 今后来自该 SMTP 地址的邮件将被始终分类 '
-ms.openlocfilehash: f068984598ce841b2e7af52c1ed1d25c0e101d10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37648d699d4d54b2995af6bf847347c6537a414d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010979"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848690"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 

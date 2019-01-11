@@ -2,12 +2,13 @@
 title: 'TableSort: apply'
 description: 执行排序操作。
 author: lumine2008
-ms.openlocfilehash: ed5b862227986e9e280462d0118f2286dd1c9107
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dc8d9c0619e434d3799ae03e0ef54354c868852
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844098"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -31,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |fields|SortField|作为排序依据的条件列表。|
 |matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 新建文件夹
-ms.openlocfilehash: 413d3dc5ceb2eaac38d1d088916fc8c9de2401b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 68dfadf98b705812d36fbaf46fc6c59d4de20af9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010059"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841865"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 

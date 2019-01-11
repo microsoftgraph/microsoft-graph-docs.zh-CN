@@ -2,12 +2,13 @@
 title: setDefaultProfile 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: e2399dcbdcef0d1fcec7515c7eb64ec3c865c855
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4be78e91767d1623c2d8370eaccec5b0e78727de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836874"
 ---
 # <a name="setdefaultprofile-action"></a>setDefaultProfile 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 删除目录设置
 description: 删除目录设置。
 author: lleonard-msft
-ms.openlocfilehash: 94359db03bfd58af659b4891295063477fc658e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35954404b21eea883c9240bb1647feb85f490b16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843825"
 ---
 # <a name="delete-a-directory-setting"></a>删除目录设置
 
@@ -34,7 +35,7 @@ DELETE /groups/{id}/settings/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

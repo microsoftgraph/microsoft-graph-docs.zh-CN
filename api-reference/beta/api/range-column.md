@@ -2,12 +2,13 @@
 title: Range:Column
 description: 获取范围中包含的列。
 author: lumine2008
-ms.openlocfilehash: 6606562be4005528978696e2fe4e23fae991278d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96469ba20e7e9b011e045e7e7a3303139842979e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841711"
 ---
 # <a name="range-column"></a>Range:Column
 
@@ -32,7 +33,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |column|number|要检索的区域的列号。从零开始编制索引。|
 

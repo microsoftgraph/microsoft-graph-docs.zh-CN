@@ -1,12 +1,13 @@
 ---
 title: 更新 educationassignment
 description: 更新的 assignment 对象。 仅教师类中的可以执行此操作。 请注意，您无法使用 PATCH 请求更改的工作分配状态。 使用发布操作更改的工作分配状态。
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838288"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -37,7 +38,7 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowLateSubmissions|布尔| 是否可以在截止日期之后提交提交。|
 |allowStudentsToAddResourcesToSubmission|布尔| 是否学生可以将资源添加到提交。 指示在提交的那些项目是否来自工作分配资源列表。 |

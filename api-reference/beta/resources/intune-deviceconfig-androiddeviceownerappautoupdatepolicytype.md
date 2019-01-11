@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 description: Android 设备所有者可能值的状态的设备的应用程序自动更新策略。
-ms.openlocfilehash: 0287a26b4974bc0b376341ca91791d1fa768a9e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 721d08220553bf6acfaac0f84bf0d71725c39ba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834116"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27041481"
 
 Android 设备所有者可能值的状态的设备的应用程序自动更新策略。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
 |userChoice|1|用户可以控制自动更新。|

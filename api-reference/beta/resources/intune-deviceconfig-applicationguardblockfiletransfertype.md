@@ -2,12 +2,13 @@
 title: applicationGuardBlockFileTransferType 枚举类型
 description: ApplicationGuardBlockFileTransfer 的可能值
 author: tfitzmac
-ms.openlocfilehash: fe1be9b0ceaee5651302b041b6612515557d899e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63460da5d7b3d78c302b706a8aeedcdedb066c48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835298"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347388"
 
 ApplicationGuardBlockFileTransfer 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |blockImageAndTextFile|1|阻止剪贴板将图像和文本文件传输|

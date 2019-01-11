@@ -2,12 +2,13 @@
 title: 获取 windowsManagementAppHealthSummary
 description: 读取属性和 windowsManagementAppHealthSummary 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 36114684b03f1945fe6a302c44b6b04af751f938
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6f86303130f9e25e77b016854eea81ead05e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842124"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>获取 windowsManagementAppHealthSummary
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/windowsManagementApp/healthSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

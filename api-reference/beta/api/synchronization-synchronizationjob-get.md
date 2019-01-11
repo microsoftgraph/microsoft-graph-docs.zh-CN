@@ -1,12 +1,13 @@
 ---
 title: 获取 synchronizationJob
 description: 检索现有同步作业，并将其属性。
-ms.openlocfilehash: c0c999d5b9ce168ba3f21af20ec5cff026d68f8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5e6be3cc707fdb70b80c6bd2ebe924232aaa674c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850314"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 

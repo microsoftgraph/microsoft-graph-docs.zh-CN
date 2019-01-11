@@ -2,12 +2,13 @@
 title: 获取 androidManagedStoreAppConfiguration
 description: 读取属性和 androidManagedStoreAppConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: d3b3fa7d88062abcb4e0f1980657bcd446d8b03e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4703dca3b7aa532d912a36b071bbf9b28a2b7d6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837945"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>获取 androidManagedStoreAppConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

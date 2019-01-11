@@ -2,12 +2,13 @@
 title: 更新 deviceAndAppManagementRoleAssignment
 description: 更新 deviceAndAppManagementRoleAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: d701d859798095442b3ba0e0ee0287e8afced8cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db512f238f2900643cc9ecc25245f53bf161aa0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835355"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>更新 deviceAndAppManagementRoleAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

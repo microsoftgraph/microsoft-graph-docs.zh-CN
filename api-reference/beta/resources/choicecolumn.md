@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ChoiceColumn
-ms.openlocfilehash: 659ece2eab255fe7b55a258b0980eda4e7bde5b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2e0798f558ace72f59a6acccc0cc8ce3eb6e2291
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842544"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 

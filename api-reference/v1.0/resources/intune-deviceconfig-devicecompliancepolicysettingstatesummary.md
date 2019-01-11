@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummary 资源类型
 description: 跨帐户的设备合规性策略设置状态摘要。
 author: tfitzmac
-ms.openlocfilehash: d059574e1286bdcc1cc7199e0e1cbea1c7f9e9ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afe2b1518aa2ac9c803cc41fce2efffabf4c44d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844840"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary 资源类型
 

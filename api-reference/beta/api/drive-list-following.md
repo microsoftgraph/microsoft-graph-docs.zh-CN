@@ -2,12 +2,13 @@
 author: chackman
 ms.author: chackman
 title: 后面的列表项
-ms.openlocfilehash: dfaa727d25b3713d1be2a8d49f87dab8dba3b553
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8892bc96c53efef49f91d92b24b3ea97c937845
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849432"
 ---
 # <a name="list-followed-items"></a>后面的列表项
 

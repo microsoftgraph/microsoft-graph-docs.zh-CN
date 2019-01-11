@@ -2,12 +2,13 @@
 title: 更新设备
 description: 更新设备的属性。
 author: tfitzmac
-ms.openlocfilehash: df86581c1edb531e822204698486358fac29f106
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37c9dc2d363ad2b2b6f91bc04879250bab6f0ad2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849565"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -35,7 +36,7 @@ PATCH /devices/{id}
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

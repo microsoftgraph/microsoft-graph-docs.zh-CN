@@ -2,12 +2,13 @@
 title: androidWorkProfileCompliancePolicy 资源类型
 description: 此类包含 Android 工作配置文件的合规性设置。
 author: tfitzmac
-ms.openlocfilehash: 09276ead1588fcbb623d927b859d9f9b012bf88f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f3180c9f8a12aad8c17717265f37b81c44b0288
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850601"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27313347"
 |[更新 androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|更新[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

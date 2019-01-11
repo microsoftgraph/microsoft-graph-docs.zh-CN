@@ -2,12 +2,13 @@
 title: 获取 macOSCertificateProfileBase
 description: 读取属性和 macOSCertificateProfileBase 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 3f552c982a12cffc7fc089a30ba3a8cf540bb318
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74462445eec8b7f71636dc86c4d66ccc75121c02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842614"
 ---
 # <a name="get-macoscertificateprofilebase"></a>获取 macOSCertificateProfileBase
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

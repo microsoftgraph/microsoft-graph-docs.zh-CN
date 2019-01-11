@@ -2,12 +2,13 @@
 title: deviceConfigurationAssignment 资源类型
 description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: tfitzmac
-ms.openlocfilehash: 26afc67312ab8544b395b5e20b89a01558fc75d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8031566663d9113fa40014bdb7bdd7603d3c6174
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306242"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842418"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 

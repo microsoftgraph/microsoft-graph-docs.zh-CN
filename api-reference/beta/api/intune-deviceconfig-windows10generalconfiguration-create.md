@@ -2,12 +2,13 @@
 title: 创建 windows10GeneralConfiguration
 description: 创建新的 windows10GeneralConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: dbaf6ca944295b0bba4786ef55174db57c178360
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6abaa9a330c564b38a1c30457b0c0bf3dcd491c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844826"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,19 +53,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|应用程序的 Windows 10 强制更新计划。|
-|enableAutomaticRedeployment|Boolean|允许用户具有管理权限，以删除所有用户数据和设置在设备锁定屏幕上使用 CTRL + Win + R，以便可以自动重新配置和管理到 re-enrolled 设备。|
+|enableAutomaticRedeployment|布尔|允许用户具有管理权限，以删除所有用户数据和设置在设备锁定屏幕上使用 CTRL + Win + R，以便可以自动重新配置和管理到 re-enrolled 设备。|
 |assignedAccessSingleModeUserName|字符串|此策略设置允许为单个应用程序展台模式定义的用户帐户将被锁定。|
 |assignedAccessSingleModeAppUserModelId|字符串|此策略设置允许为单个应用程序展台模式定义应用程序用户模型 ID (AUMID)，将被锁定。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手 (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
-|authenticationAllowSecondaryDevice|Boolean|允许使用 Windows 的辅助身份验证设备。|
-|authenticationAllowFIDODevice|Boolean|指示允许使用 FIDO 身份验证设备 （https://fidoalliance.org/)|
-|cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是否允许或禁止联邦信息处理标准 (FIPS) 策略。|
+|authenticationAllowSecondaryDevice|布尔|允许使用 Windows 的辅助身份验证设备。|
+|authenticationAllowFIDODevice|布尔|指示允许使用 FIDO 身份验证设备 （https://fidoalliance.org/)|
+|cryptographyAllowFipsAlgorithmPolicy|布尔|指定是否允许或禁止联邦信息处理标准 (FIPS) 策略。|
 |displayAppListWithGdiDPIScalingTurnedOn|String 集合|已打开 GDI DPI 缩放比例的旧应用程序的列表。|
 |displayAppListWithGdiDPIScalingTurnedOff|String 集合|已关闭 GDI DPI 缩放比例的旧应用程序的列表。|
 |enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
@@ -73,29 +74,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enterpriseCloudPrintResourceIdentifier|String|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|应该从发现终结点查询的打印机最大数量。 此设置仅限移动设备。 有效值为 1 至 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
-|messagingBlockSync|Boolean|指示阻止短信备份和还原和消息无处不在。|
-|messagingBlockMMS|Boolean|指示是否阻止 MMS 发送/接收的设备上的功能。|
-|messagingBlockRichCommunicationServices|Boolean|指示是否阻止 RC 发送/接收的设备上的功能。|
+|messagingBlockSync|布尔|指示阻止短信备份和还原和消息无处不在。|
+|messagingBlockMMS|布尔|指示是否阻止 MMS 发送/接收的设备上的功能。|
+|messagingBlockRichCommunicationServices|布尔|指示是否阻止 RC 发送/接收的设备上的功能。|
 |printerNames|String 集合|自动设置打印机根据其名称 （网络主机名）。|
 |printerDefaultName|字符串|已安装的打印机的名称 （网络主机名）。|
-|printerBlockAddition|Boolean|阻止用户安装的打印机设置中的其他打印机。|
+|printerBlockAddition|布尔|阻止用户安装的打印机设置中的其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|Boolean|指定建立内容和属性索引时是否使用自动语言检测。|
 |searchDisableIndexingEncryptedItems|Boolean|指示是否阻止建立 WIP 保护项的索引，以阻止它们出现在 Cortana 或资源管理器的搜索结果中。|
 |searchEnableRemoteQueries|Boolean|指示是否阻止此计算机索引的远程查询。|
-|searchDisableUseLocation|Boolean|指定搜索可以使用位置信息。|
-|searchDisableLocation|Boolean|指定搜索可以使用位置信息。|
+|searchDisableUseLocation|布尔|指定搜索可以使用位置信息。|
+|searchDisableLocation|布尔|指定搜索可以使用位置信息。|
 |searchDisableIndexerBackoff|Boolean|指示是否禁用搜索索引器回退功能。|
 |searchDisableIndexingRemovableDrive|Boolean|指示是否允许用户将可移动驱动器上的位置添加到库并建立索引。|
 |searchEnableAutomaticIndexSizeManangement|Boolean|在建立索引停止之前，指定与索引位置相同的驱动器上的最小硬盘空间量。|
-|searchBlockWebResults|Boolean|指示阻止 web 搜索。|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|指定是否允许设备自动加密期间 OOBE 设备时 Azure AD 加入 （仅适用于桌面）。|
+|searchBlockWebResults|布尔|指示阻止 web 搜索。|
+|securityBlockAzureADJoinedDevicesAutoEncryption|布尔|指定是否允许设备自动加密期间 OOBE 设备时 Azure AD 加入 （仅适用于桌面）。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
 |systemTelemetryProxyServer|字符串|获取或设置的完全限定的域名 (FQDN) 或代理服务器连接的用户体验和遥测请求转发的 IP 地址。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|控制用户访问墨迹工作区中，在桌面上，然后从锁定屏幕上上述。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|控制用户访问墨迹工作区中，在桌面上，然后从锁定屏幕上上述。 可取值为：`notConfigured`、`blocked`、`allowed`。|
-|inkWorkspaceBlockSuggestedApps|Boolean|指定是否在墨迹工作区中显示建议的应用程序建议。|
+|inkWorkspaceBlockSuggestedApps|布尔|指定是否在墨迹工作区中显示建议的应用程序建议。|
 |smartScreenEnableAppInstallControl|Boolean|允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
 |personalizationDesktopImageUrl|String|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
 |personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
@@ -120,7 +121,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockLiveTileDataCollection|Boolean|当用户将某个网站固定为从 Microsoft Edge 启动时，阻止 Microsoft 收集用于实时磁贴创建的信息。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|在 Internet Explorer 和 Microsoft Edge 之间启用收藏夹同步。 在浏览器之间共享对收藏夹的添加、删除、修改和顺序更改。|
 |edgeFavoritesListLocation|字符串|设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
-|edgeBlockEditFavorites|Boolean|指示阻止用户更改收藏夹。|
+|edgeBlockEditFavorites|布尔|指示阻止用户更改收藏夹。|
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
 |cellularBlockVpn|Boolean|是否阻止用户通过手机网络使用 VPN。|
 |cellularBlockVpnWhenRoaming|Boolean|是否阻止用户在通过手机网络漫游时使用 VPN。|
@@ -155,7 +156,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|指定云提供的保护级别。 可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
 |defenderCloudExtendedTimeout|Int32|超时的云扫描的文件扩展名。 有效值为 0 至 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|超时的云扫描的文件扩展名。 有效值为 0 至 50|
-|defenderBlockOnAccessProtection|Boolean|允许或禁止 Windows Defender 上访问保护功能。|
+|defenderBlockOnAccessProtection|布尔|允许或禁止 Windows Defender 上访问保护功能。|
 |defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|选择应在运行 Windows Defender 扫描的日期。 可取值为：`everyday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`sunday`、`noScheduledScan`。|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查用户同意中发送数据的 Windows Defender 级别。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
 |lockScreenAllowTimeoutConfiguration|Boolean|指定是否在 Windows 10 移动版设备的锁定屏幕上显示用户可配置设置以控制屏幕超时。 如果此策略设置为 Allow，则由 lockScreenTimeoutInSeconds 设置的值将被忽略。|
@@ -177,8 +178,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|启用或禁用广告 ID 的使用。 已添加到 Windows 10 版本 1607 中。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|指示在启动应用时是否允许自动接受配对和隐私用户许可对话框。|
 |privacyBlockInputPersonalization|Boolean|指示是否阻止 Cortana、Dictation 或 Store 应用程序使用基于云的语音服务。|
-|privacyBlockPublishUserActivities|Boolean|阻止共享的体验/发现最近使用过中的资源任务切换器等。|
-|privacyBlockActivityFeed|Boolean|阻止对 Cortana、 口述或存储应用程序的基于云语音服务的使用情况。|
+|privacyBlockPublishUserActivities|布尔|阻止共享的体验/发现最近使用过中的资源任务切换器等。|
+|privacyBlockActivityFeed|布尔|阻止对 Cortana、 口述或存储应用程序的基于云语音服务的使用情况。|
 |startBlockUnpinningAppsFromTaskbar|Boolean|指示是否阻止用户从任务栏取消固定应用。|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|设置此值会折叠应用列表，完全删除应用列表，或者在“设置”应用中禁用相应的切换。 可取值为：`userDefined`、`collapse`、`remove`、`disableSettingsApp`。|
 |startMenuHideChangeAccountSettings|Boolean|启用此策略会将更改帐户设置从开始菜单的用户磁贴中隐藏。|
@@ -293,10 +294,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |experienceBlockErrorDialogWhenNoSIM|Boolean|指示是否允许在未检测到 SIM 卡时显示错误对话框。|
 |experienceBlockTaskSwitcher|Boolean|指示是否在设备上启用任务切换。|
 |logonBlockFastUserSwitching|Boolean|禁用在不注销的情况下在同时登录的用户之间快速切换的功能。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|设备是否需要连接到网络。|
-|appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常只能由系统管理员的安装选项。|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|此策略设置指示 Windows Installer 系统上安装任何程序时使用提升的权限。|
-|dataProtectionBlockDirectMemoryAccess|Boolean|此策略设置允许您阻止直接内存访问 (DMA) 的所有热 pluggable PCI 下游端口直到用户登录到 Windows。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|布尔|设备是否需要连接到网络。|
+|appManagementMSIAllowUserControlOverInstall|布尔|此策略设置允许用户更改通常只能由系统管理员的安装选项。|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|布尔|此策略设置指示 Windows Installer 系统上安装任何程序时使用提升的权限。|
+|dataProtectionBlockDirectMemoryAccess|布尔|此策略设置允许您阻止直接内存访问 (DMA) 的所有热 pluggable PCI 下游端口直到用户登录到 Windows。|
 
 
 

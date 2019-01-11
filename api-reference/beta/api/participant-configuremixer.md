@@ -2,12 +2,13 @@
 title: 参与者： configureMixer
 description: 配置如何将音频混合的多方对话中的不同参与者。
 author: VinodRavichandran
-ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fa8e7395eb39a3d0a2c05daa8eb215377f3976f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836286"
 ---
 # <a name="participant-configuremixer"></a>参与者： configureMixer
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)集合| 混音器配置为级别给定音频参与者。|
 |clientContext|字符串|客户端上下文。|

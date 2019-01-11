@@ -2,12 +2,13 @@
 title: 获取 managementCondition
 description: 读取属性和 managementCondition 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: ead4d2643644c79f84704b87c3a71d0d302ebd0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6935796d429b478eca53d058690d2e0dcc6ea75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841844"
 ---
 # <a name="get-managementcondition"></a>获取 managementCondition
 
@@ -41,7 +42,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

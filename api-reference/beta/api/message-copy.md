@@ -2,12 +2,13 @@
 title: 'message: copy'
 description: 将邮件复制到文件夹。
 author: angelgolfer-ms
-ms.openlocfilehash: e9d0661c01103fbfcf8991e0b28126b2f92e6ea4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a713238abe0ab4ccd4ef3ec032e73fe2d83a062e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353247"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846702"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -40,14 +41,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| Authorization | `Bearer {token}`. 必填。 |
+| Content-Type | `application/json`. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | Type | 说明 |
+| 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 |destinationId|字符串|目标文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 

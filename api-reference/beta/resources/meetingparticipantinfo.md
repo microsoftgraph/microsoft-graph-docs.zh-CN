@@ -2,12 +2,13 @@
 title: meetingParticipantInfo 资源类型
 description: 有关会议中的参与者的信息。
 author: VinodRavichandran
-ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d7b5ae17bd3bfb566bce0da9814b86aab98173da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834256"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380196"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 说明                              |
+| 属性       | 类型                          | Description                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | 标识       | [identitySet](identityset.md) | 参与者的标识信息。 |
 | upn            | 字符串                        | 参与者的用户主体名称。  |

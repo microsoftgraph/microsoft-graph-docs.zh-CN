@@ -1,12 +1,13 @@
 ---
 title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
-ms.openlocfilehash: 1b3d735e0997ca128b539bff9a05c9c7c56799df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834669"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 

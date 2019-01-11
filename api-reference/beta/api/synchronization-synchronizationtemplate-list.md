@@ -1,12 +1,13 @@
 ---
 title: 列表同步的现有模板
 description: 列出与给定应用程序或服务主体关联的同步模板。
-ms.openlocfilehash: 0842d5923368fa0df72af03e51d45dc3444e6dce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49e9e257322886fe294807207276f8b6d6919909
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839436"
 ---
 # <a name="list-existing-synchronization-templates"></a>列表同步的现有模板
 

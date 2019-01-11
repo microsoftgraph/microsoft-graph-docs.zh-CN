@@ -1,12 +1,13 @@
 ---
 title: 组：subscribeByMail
 description: 调用此方法将允许当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。
-ms.openlocfilehash: c075f11de44899b15873baa226a68767e776971e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4127ae68caba0295426f81dc1c0c537ee2fb96b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837980"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 调用此方法将允许当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。

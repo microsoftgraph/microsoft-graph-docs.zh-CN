@@ -2,12 +2,13 @@
 title: 呼叫： 拒绝
 description: 拒绝传入的呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 06037d86be99e162a57b54f77d7b4363062f5858
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849474"
 ---
 # <a name="call-reject"></a>呼叫： 拒绝
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |原因|字符串|拒绝原因。|
 

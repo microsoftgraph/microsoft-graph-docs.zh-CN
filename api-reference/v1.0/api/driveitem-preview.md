@@ -1,12 +1,13 @@
 ---
 title: driveItem： 预览
 description: 此操作，可以获取项目的短期嵌入 Url 以便呈现临时预览。
-ms.openlocfilehash: 741e449c972ad372aae30d9921cdb3b7fa1fc40d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850769"
 ---
 # <a name="driveitem-preview"></a>driveItem： 预览
 
@@ -49,7 +50,7 @@ POST /shares/{shareId}/driveItem/preview
 |   名称      |  类型         | 说明
 |:------------|:--------------|:-----------------------------------------------
 | page        | 字符串/编号 | 可选。 要启动，如果适用文档的页码。 指定为字符串的文件类型，如 ZIP 周围的将来使用情况。
-| zoom        | number        | 可选。 如果适用，则缩放级别，从开始。
+| zoom        | 数字        | 可选。 如果适用，则缩放级别，从开始。
 
 ## <a name="response"></a>响应
 
@@ -63,7 +64,7 @@ POST /shares/{shareId}/driveItem/preview
 
 响应将是一个 JSON 对象，包含以下属性：
 
-| 名称           | 类型   | 说明
+| 名称           | 类型   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）

@@ -2,12 +2,13 @@
 title: iosHomeScreenApp 资源类型
 description: 表示主屏幕上应用的图标
 author: tfitzmac
-ms.openlocfilehash: 63bcfe53cc2d3ee60b5f784e99798f1f97e883af
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39db8de19fbfc568f85c4930e8c3124ffea2dd57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850594"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 

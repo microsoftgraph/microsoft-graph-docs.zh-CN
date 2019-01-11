@@ -2,12 +2,13 @@
 title: windowsKioskAzureADUser 资源类型
 description: 用于标识网亭配置 AzureAD 用户帐户的类
 author: tfitzmac
-ms.openlocfilehash: e4048b4cbea592af350af20bf433ca00ac6d4980
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57b48bcdbac3f95da37704222cded29ba61cd32d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845883"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27330070"
 继承自[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |userId|String|将锁定到此网亭配置 AzureAD 用户的 ID|
 |userPrincipalName|字符串|将锁定到此网亭配置用户帐户|

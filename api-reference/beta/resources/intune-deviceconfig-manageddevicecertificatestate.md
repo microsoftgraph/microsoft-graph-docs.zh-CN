@@ -2,12 +2,13 @@
 title: managedDeviceCertificateState 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 087bd1e6ed1eb9c065d1c2f0f3a03941d77cc7bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844042"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>managedDeviceCertificateState 资源类型
 

@@ -2,12 +2,13 @@
 title: 列表通道邮件答复
 description: 列表中的工作组的通道的邮件的所有的回复。
 author: nkramer
-ms.openlocfilehash: ac0447e8c0e29e21b60b52c78362c22b0acbd5de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b2866bf2b6768eca4b6227f53ab50adec0ba5ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849838"
 ---
 # <a name="list-channel-message-replies"></a>列表通道邮件答复
 

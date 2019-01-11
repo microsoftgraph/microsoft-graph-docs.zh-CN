@@ -2,12 +2,13 @@
 title: deviceEnrollmentFailureReason 枚举类型
 description: 注册的顶部级别故障类别。
 author: tfitzmac
-ms.openlocfilehash: 7747008f00348a4671713a28c0d1e48e156e9b38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 576d054a8d2e5563b0c54ace1c7ef2c08f9844f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834298"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27325079"
 
 注册的顶部级别故障类别。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|默认值是未知失败原因。|
 |身份验证|1|失败的身份验证|

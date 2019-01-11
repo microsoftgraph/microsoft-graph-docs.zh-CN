@@ -1,12 +1,13 @@
 ---
 title: 日历资源类型
 description: 日历即事件容器。 可以是用户的日历，也可以是 Office 365 组的默认日历。
-ms.openlocfilehash: 1c1797897c0efcd7d7196977f93b6a8c611f83f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843244"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 

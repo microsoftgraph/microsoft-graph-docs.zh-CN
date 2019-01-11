@@ -2,12 +2,13 @@
 title: officeProductId 枚举类型
 description: 若要指定表示 Office365 套件 Sku Office365 ProductIds 枚举。
 author: tfitzmac
-ms.openlocfilehash: 228478b6814bed360cbba77539e5ee39343e2bfa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: deaae02dfa7006fdfb70f230f8c0f1dc2b37a680
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834557"
 ---
 # <a name="officeproductid-enum-type"></a>officeProductId 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302791"
 
 若要指定表示 Office365 套件 Sku Office365 ProductIds 枚举。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |o365ProPlusRetail|0|尚未记录|
 |o365BusinessRetail|1|尚未记录|

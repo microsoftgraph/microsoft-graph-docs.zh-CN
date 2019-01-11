@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemAnalytics
-ms.openlocfilehash: b50df7d1fdf67cffd508c3b5891d07c599521c8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03626b5dad041181558af076b5dc0ac05b684e13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842411"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "27043819"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                 | 说明
+| 属性      | 类型                 | Description
 |:--------------|:---------------------|:--------------------------------------
 | allTime       | [itemActivityStat][] | 通过分析的项目生命周期。
 | lastSevenDays | [itemActivityStat][] | 最近七天的分析。

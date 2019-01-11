@@ -2,12 +2,13 @@
 title: 获取图表
 description: 检索 chart 对象的属性和关系。
 author: lumine2008
-ms.openlocfilehash: 3020b558917e866eb7f655ebf7b309d960dee4c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84517a9bf31a3e8f9bdbb41df0d309eff1750dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838505"
 ---
 # <a name="get-chart"></a>获取图表
 
@@ -32,7 +33,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

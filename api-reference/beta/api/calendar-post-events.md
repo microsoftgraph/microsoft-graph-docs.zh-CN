@@ -2,12 +2,13 @@
 title: 创建事件
 description: 使用此 API 在默认或指定的日历中创建新事件。
 author: angelgolfer-ms
-ms.openlocfilehash: 136a4b6ead8789a162403364b5fc2d9d7a4a9997
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52a8db47af0adb9850d46400b77eb1e997e31fc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336734"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838848"
 ---
 # <a name="create-event"></a>创建事件
 

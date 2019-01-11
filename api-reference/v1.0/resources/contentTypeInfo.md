@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
-ms.openlocfilehash: b4ca2c99361aa521df9ec663478575390538b9c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e5c418cf1a72fd529c2e48e70eb12767dcf56041
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836328"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 

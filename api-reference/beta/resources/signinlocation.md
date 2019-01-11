@@ -1,12 +1,13 @@
 ---
 title: signInLocation 资源类型
 description: 提供市/县、 状态和国家/地区从其中登录发生。
-ms.openlocfilehash: a3d4f6ca5ec18e70960f45a3da1bb06d51ee1e65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045572"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839135"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 提供市/县、 状态和国家/地区从其中登录发生。
@@ -19,7 +20,7 @@ ms.locfileid: "27045572"
 |city|字符串|提供登录发起的城市。 这被计算使用登录活动纬度/经度信息。|
 |countryOrRegion|字符串|提供的国家/地区代码信息 （2 字母代码） 的登录来源。  这被计算使用登录活动纬度/经度信息。|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|提供、 纬度和海拔高度的登录来源。|
-|状态|字符串|提供登录发起的状态。 这被计算使用登录活动纬度/经度信息。|
+|state|字符串|提供登录发起的状态。 这被计算使用登录活动纬度/经度信息。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

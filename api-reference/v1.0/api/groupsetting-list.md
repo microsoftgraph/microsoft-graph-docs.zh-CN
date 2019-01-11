@@ -2,12 +2,13 @@
 title: 列出组设置
 description: 检索组设置对象列表。
 author: dkershaw10
-ms.openlocfilehash: 834e843ee470d559427775370ed723fe6dafaf5e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7eedf4401c19de698563a809f6e490085a92d7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849789"
 ---
 # <a name="list-group-settings"></a>列出组设置
 
@@ -39,7 +40,7 @@ GET group/{id}/settings
 > 注意：不支持 $filter。
 
 ## <a name="request-headers"></a>请求标头
-| Name | 说明 |
+| 名称 | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

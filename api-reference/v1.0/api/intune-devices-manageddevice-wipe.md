@@ -2,12 +2,13 @@
 title: wipe 操作
 description: 擦除设备
 author: tfitzmac
-ms.openlocfilehash: 6ac3c21b517523d46cfc2958a661d058a86d708e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3da2d5619c57a083c7702d3b9accfa8d52f20568
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834417"
 ---
 # <a name="wipe-action"></a>wipe 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +50,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |属性|类型|说明|
 |:---|:---|:---|
 |keepEnrollmentData|布尔|尚未记录|
-|keepUserData|Boolean|尚未记录|
+|keepUserData|布尔|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
 
 

@@ -2,12 +2,13 @@
 title: 参与者： muteAll
 description: 将呼叫中的所有参与者设为都静音。
 author: VinodRavichandran
-ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837805"
 ---
 # <a name="participant-muteall"></a>参与者： muteAll
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |participants|String 集合|若要将设为静音的参与者。|
 |clientContext|字符串|客户端上下文。|

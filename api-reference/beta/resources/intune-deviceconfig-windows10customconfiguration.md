@@ -1,12 +1,13 @@
 ---
 title: windows10CustomConfiguration 资源类型
 description: 本主题提供由 windows10CustomConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: cebf8c46cf0a21c4e39b1458a6d2a9797c0e11ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cebc68c6d4e0e7da0231d664b9bbb9478016a929
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835628"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>windows10CustomConfiguration 资源类型
 
@@ -41,7 +42,7 @@ ms.locfileid: "27048181"
 |omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) 集合|OMA 设置。 该集合最多可包含 1000 个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

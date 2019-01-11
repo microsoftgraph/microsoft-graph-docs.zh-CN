@@ -1,12 +1,13 @@
 ---
 title: 更新协议
 description: 更新协议对象的属性。
-ms.openlocfilehash: b9405a8c469876a349b5c1b0c00e6f6a5f225e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b16a503b33193fa453ca52481854879ae4dcd121
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838729"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -30,7 +31,7 @@ PATCH /agreements/<id>
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。

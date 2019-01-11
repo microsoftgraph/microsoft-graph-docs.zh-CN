@@ -2,12 +2,13 @@
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
 author: tfitzmac
-ms.openlocfilehash: 9fba589cdb04d6c0258b18cb17da4c96441123e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2cef9b1d496ca4838f5e4f8be6f155180913118b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850825"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

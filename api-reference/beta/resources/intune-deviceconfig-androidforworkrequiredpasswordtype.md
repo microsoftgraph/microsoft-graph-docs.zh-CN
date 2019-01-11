@@ -2,12 +2,13 @@
 title: androidForWorkRequiredPasswordType 枚举类型
 description: Android 的工作被必需的密码类型。
 author: tfitzmac
-ms.openlocfilehash: cefb41dea7a92f1b1a640d8c9bf701a321ad9ead
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b7d64ce762b3c07af74e02ed0aa37accf615ef7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850209"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 枚举类型
 
@@ -17,11 +18,11 @@ ms.locfileid: "27357279"
 
 Android 的工作被必需的密码类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |lowSecurityBiometric|1|低安全性生物基于所需的密码。|
-|必需|2|必需。|
+|必需|2|必填。|
 |atLeastNumeric|3|所需的密码至少数值。|
 |numericComplex|4|所需的数字复杂密码。|
 |atLeastAlphabetic|5|所需的密码至少字母。|

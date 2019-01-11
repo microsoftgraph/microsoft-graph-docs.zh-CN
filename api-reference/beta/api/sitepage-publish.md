@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/10/2018
 title: 发布页面
-ms.openlocfilehash: d932b1d37b5ab81f86f6e87aab43aa1cf9dc3eae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0b98f22dda2c4b08d04150b8b24126fdff5ca505
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836153"
 ---
 # <a name="sitepage-publish"></a>sitePage： 发布
 

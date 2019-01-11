@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
 title: 文件活动
-ms.openlocfilehash: f228f96083d899c4d9a43f6a4d41f2b90ce2eaf7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55719340eb8baa565c79802403909b66ee5a4e49
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833766"
 ---
 # <a name="enumerate-activities-preview"></a>枚举活动（预览）
 

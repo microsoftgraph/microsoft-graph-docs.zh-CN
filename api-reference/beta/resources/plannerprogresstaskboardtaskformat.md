@@ -1,12 +1,13 @@
 ---
 title: plannerProgressTaskBoardTaskFormat 资源类型
 description: '**plannerProgressTaskBoardTaskFormat** 资源表示用于在“任务板”的“进度”视图（由任务对象上的 PercentComplete 字段的状态组成的视图，包含“未启动”、“正在进行”和“完成”列）下正确呈现任务的信息。每个任务均将有一个与其相关联的 **plannerProgressTaskBoardTaskFormat** 对象。'
-ms.openlocfilehash: 8ff6f536920bafb8734f63ef9fe9b72f8c2b1acb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f3395e0b63d038b8c280e54a76afcc2ca864789
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845582"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>plannerProgressTaskBoardTaskFormat 资源类型
 

@@ -2,12 +2,13 @@
 title: reportRoot 资源类型
 description: 表示一个历史记录报告实例的资源。
 author: tfitzmac
-ms.openlocfilehash: 46b4844487a1cb714dde791e6867c277c1693f66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53fedc78575e48d77419a598b73e1760c8c6457c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850286"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27303967"
 |**设备配置**|
 |[deviceConfigurationDeviceActivity 函数](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|[报告](../resources/intune-shared-report.md)|设备配置设备活动报告的元数据|
 |[deviceConfigurationUserActivity 函数](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|[报告](../resources/intune-shared-report.md)|设备配置用户活动报告的元数据|
-|**疑难解答**|
+|**故障排除**|
 |[managedDeviceEnrollmentFailureDetails 函数](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|[报告](../resources/intune-shared-report.md)|尚未编档。|
 |[managedDeviceEnrollmentTopFailures 函数](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|[报告](../resources/intune-shared-report.md)|尚未编档。|
 

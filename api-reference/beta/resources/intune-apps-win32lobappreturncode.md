@@ -2,12 +2,13 @@
 title: win32LobAppReturnCode 资源类型
 description: Win32 应用程序包含返回代码属性
 author: tfitzmac
-ms.openlocfilehash: 1ac6b01240e25d1a0163148e61851d6e9405aa44
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f635c49ece6a1083ef3a89271faf76e01206e9ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849817"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346233"
 
 Win32 应用程序包含返回代码属性
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |returnCode|Int32|返回代码。|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|返回代码的类型。 可取值为：`failed`、`success`、`softReboot`、`hardReboot`、`retry`。|

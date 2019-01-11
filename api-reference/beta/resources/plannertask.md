@@ -1,12 +1,13 @@
 ---
 title: plannerTask 资源类型
 description: '**plannerTask** 资源表示 Office 365 中的规划器任务。规划器任务包含在计划内，可以分配给计划中的存储桶。每个任务对象具有可以包含此任务的更多信息的 details 对象。请参阅概述了解有关组、计划和任务之间的关系的详细信息。'
-ms.openlocfilehash: e3790721779fd203680a43617f481cd1acf96211
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d52dc1311ca17c4473b1971b9aafb3c04f36cd54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041877"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849411"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 

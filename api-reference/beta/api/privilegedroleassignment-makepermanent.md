@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRoleAssignment: makePermanent'
 description: 请为永久的角色分配。
-ms.openlocfilehash: 06875fc62539598a5e1e806714fcae3d973ba29c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2c834454f7c6c7bd931b6985f5b35b92e48096d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849691"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -40,7 +41,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |原因|string|可选。 若要使此呼叫原因。|
 |ticketNumber|string|可选。 与此操作关联的票证数。|

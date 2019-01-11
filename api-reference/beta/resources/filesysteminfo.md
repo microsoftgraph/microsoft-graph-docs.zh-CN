@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FileSystemInfo
-ms.openlocfilehash: 08a79a265e8d4dbda3017a1ff8a32c5e4cab51ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d69f00c8c52352acdd00ff4d6adc41908fffe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835831"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
 

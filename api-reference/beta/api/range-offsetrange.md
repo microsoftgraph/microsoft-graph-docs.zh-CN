@@ -1,12 +1,13 @@
 ---
 title: Range:OffsetRange
 description: 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。
-ms.openlocfilehash: 301862e46a571754bcb4032c7c7bf87e3564268f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d1486c3ee4271d9e9acafeb2883ca4522f598d1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834452"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 

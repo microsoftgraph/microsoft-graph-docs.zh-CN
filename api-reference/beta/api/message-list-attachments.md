@@ -2,12 +2,13 @@
 title: 列出附件
 description: 检索附加到邮件的 attachment 对象列表。
 author: angelgolfer-ms
-ms.openlocfilehash: 9f083af679335eb0bf54fa9bd0eadfaa7a5a1250
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350861"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806683"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -48,7 +49,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
