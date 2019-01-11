@@ -2,12 +2,13 @@
 title: 获取 ID 列表中的目录对象
 description: 选择查询选项不适用于此操作。
 author: lleonard-msft
-ms.openlocfilehash: 335a6ba915e714ebbd95ba818d14043037f38050
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c63ea85113ec54dec8e5d818c3add1005aebb19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888058"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -41,7 +42,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>请求标头
 
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | application/json  |
@@ -50,7 +51,7 @@ POST /directoryObjects/getByIds
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数   | Type |说明|
+| 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
 |types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录中定义的资源类型。 可能集合中的指定派生自[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)任何对象例如：[用户](/graph/api/resources/user?view=graph-rest-beta)、[组](/graph/api/resources/group?view=graph-rest-beta)、[设备](/graph/api/resources/device?view=graph-rest-beta)，等等。 若要搜索引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录，除引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织中定义的资源类型。 值不区分大小写。|

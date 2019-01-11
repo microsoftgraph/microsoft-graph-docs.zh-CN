@@ -1,12 +1,13 @@
 ---
 title: 添加组所有者
 description: 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
-ms.openlocfilehash: 903c659722877263038860c7d2ff47b301b6d5c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3fe136b0ea76ae2d6f535af421d016bf27c58a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883193"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -31,7 +32,7 @@ ms.locfileid: "27308895"
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

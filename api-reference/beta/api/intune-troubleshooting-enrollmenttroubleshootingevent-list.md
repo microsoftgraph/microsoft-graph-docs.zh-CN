@@ -2,12 +2,13 @@
 title: 列出 enrollmentTroubleshootingEvents
 description: 列出 enrollmentTroubleshootingEvent 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 7fbf8919e84846337d1c86c6ef664b2fdba2f4b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2d98aa5e411fba91ec2fd9d4112a23483758f42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882640"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>列出 enrollmentTroubleshootingEvents
 
@@ -38,7 +39,7 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

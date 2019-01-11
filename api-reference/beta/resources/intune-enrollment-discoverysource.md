@@ -2,12 +2,13 @@
 title: discoverySource 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 3e680e231a3bb701a4c1b66347078d49463172de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec4c7c9f29ef116b851f925fecdaf1de0f79cf2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885972"
 ---
 # <a name="discoverysource-enum-type"></a>discoverySource 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27309770"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|DiscoverySource 是未知。|
 |adminImport|2|设备是导入的管理员。|

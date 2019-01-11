@@ -2,12 +2,13 @@
 title: 删除学生
 description: 从 educationClass 删除 educationUser
 author: mmast-msft
-ms.openlocfilehash: a887b3286a0c9cbdbb7d12f0bdaa26131332346f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5d0a51f7687c0ccab6da1a85dd5407faf08fd50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883851"
 ---
 # <a name="remove-a-student"></a>删除学生
 

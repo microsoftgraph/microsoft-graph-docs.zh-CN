@@ -2,12 +2,13 @@
 title: renewUpload 操作
 description: 续订用于应用程序文件上传的 SAS URI。
 author: tfitzmac
-ms.openlocfilehash: c952b6e43121e7ad36b8b30d6b915477191840f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48c3c4efeae4e82404303c1a5baba9243ce6f23e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882430"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 'Chart: setData'
 description: 重置图表的源数据。
 author: lumine2008
-ms.openlocfilehash: 91e46e519ab590388aad17eb30e9ca2ea19c90f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 83d74036019ffe1f58e86778859d5123dc3df8c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325807"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883753"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |sourceData|string|对应于源数据的 Range 对象。|
 |seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可以是下列值之一：自动（默认）、行、列。可能的值是：`Auto`、`Columns`、`Rows`。|

@@ -2,12 +2,13 @@
 title: ndesConnector 资源类型
 description: 代表 OnPrem Ndes 连接器的实体。
 author: tfitzmac
-ms.openlocfilehash: e37a20c440546094424d0284bd1d7ffbbeb60bdd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 582d49ccd9a5d61c144e3ef915994302515dbe40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884915"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27332289"
 |:---|:---|:---|
 |id|字符串|NDES 连接符的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的最后一个连接时间|
-|状态|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|字符串|Ndes 连接器的友好名称。|
 
 ## <a name="relationships"></a>Relationships

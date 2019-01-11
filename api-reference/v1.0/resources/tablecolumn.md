@@ -2,12 +2,13 @@
 title: TableColumn 资源类型
 description: 代表表中的一列。
 author: lumine2008
-ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c2506c34e25ba4b3754e1fd7b13557b21176e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882115"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27315125"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |ID|string|返回用于标识表中列的唯一键。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
-|Index|整数|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
+|Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。只读。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 

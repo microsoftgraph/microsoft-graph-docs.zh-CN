@@ -2,12 +2,13 @@
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
 author: tfitzmac
-ms.openlocfilehash: 456ac0f136c8d118dcc0b3fcbe165170da918aa6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6b8098a4311c723627d671980bfb006d4cab036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356628"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883242"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,8 +59,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|Boolean|指示文件是否框架文件的值。|
-|isDependency|Boolean|内容的文件是否依赖关系的主要内容文件。|
+|isFrameworkFile|布尔|指示文件是否框架文件的值。|
+|isDependency|布尔|内容的文件是否依赖关系的主要内容文件。|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: 列出规则
 description: 获取为用户收件箱定义的所有 messageRule 对象。
-ms.openlocfilehash: 05d852171c88c519274b18a42655567f46529b9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d7567612ddf3dff7b85675204438442909d49bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882801"
 ---
 # <a name="list-rules"></a>列出规则
 

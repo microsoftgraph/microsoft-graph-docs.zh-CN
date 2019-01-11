@@ -2,12 +2,13 @@
 title: deviceManagementUserRightsLocalUserOrGroup 资源类型
 description: 表示一个本地用户或一组用于设置的用户权限的信息。
 author: tfitzmac
-ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303729"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885736"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 

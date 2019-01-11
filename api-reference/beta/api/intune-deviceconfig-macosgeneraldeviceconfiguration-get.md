@@ -2,12 +2,13 @@
 title: 获取 macOSGeneralDeviceConfiguration
 description: 读取 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 44db02a9a7e30ddd48c6ad4de2c74e7ea9619dcc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 392ca97505434aaedb9c235900134bd30ec7501c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886819"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

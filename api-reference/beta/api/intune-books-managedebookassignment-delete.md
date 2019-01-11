@@ -2,12 +2,13 @@
 title: 删除 managedEBookAssignment
 description: 删除 managedEBookAssignment。
 author: tfitzmac
-ms.openlocfilehash: 512ebf28739a29f941ce0a9175c7cdae2e6b9bc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9424f028dd678aedf980fa9385188dc6e4e5df62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313564"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882787"
 ---
 # <a name="delete-managedebookassignment"></a>删除 managedEBookAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

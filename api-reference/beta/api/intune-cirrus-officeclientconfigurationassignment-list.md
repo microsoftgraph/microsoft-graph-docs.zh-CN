@@ -2,12 +2,13 @@
 title: 列表 officeClientConfigurationAssignments
 description: 列出属性和 officeClientConfigurationAssignment 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 34f926b0e02a963c1ab16ec7a0dd3eefcc06852c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0a9a0c759bfc73ed5eeb998952f9634d1eb99ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886805"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>列表 officeClientConfigurationAssignments
 
@@ -38,7 +39,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

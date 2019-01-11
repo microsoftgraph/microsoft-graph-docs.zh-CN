@@ -2,12 +2,13 @@
 title: 列出 windowsMobileMSIs
 description: 列出 windowsMobileMSI 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 6874f769330a3c9e0877fffb1c09688d7828bab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e38f15d08636f33854fc95d1ae6215b547bc587
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883284"
 ---
 # <a name="list-windowsmobilemsis"></a>列出 windowsMobileMSIs
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

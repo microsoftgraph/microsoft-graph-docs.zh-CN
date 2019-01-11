@@ -1,12 +1,13 @@
 ---
 title: 创建邮件
 description: 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
-ms.openlocfilehash: 21a5f9dc54afdbfd6298841f1f441a78103ab28c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff4472b84ed218607ff6cda2b991f6bf2b63cda3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883732"
 ---
 # <a name="create-message"></a>创建邮件
 

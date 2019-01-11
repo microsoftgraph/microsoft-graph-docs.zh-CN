@@ -1,12 +1,13 @@
 ---
 title: Azure AD 权限身份管理
 description: 下面是由特权身份管理服务所提供的方法的列表。
-ms.openlocfilehash: ec060c4dc233677f1333e9588e4fb888f8dff9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c1108711c96dd253f784a418a396ca30507c5f7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884061"
 ---
 # <a name="azure-ad-privileged-identity-management"></a>Azure AD 权限身份管理
 

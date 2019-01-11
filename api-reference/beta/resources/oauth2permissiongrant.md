@@ -1,12 +1,13 @@
 ---
 title: oAuth2PermissionGrant 资源类型
 description: 代表已被授予对 （由服务主体） 应用程序的 OAuth 2.0 范围 （委派权限） 为用户或管理员同意过程的一部分。
-ms.openlocfilehash: 8fc5154ddba1b78976dc3e24c6712f9fc8944f43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 835e4a2c1a8d19c9c21e706adbf2f10a6a505bb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884446"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
@@ -40,12 +41,12 @@ ms.locfileid: "27042678"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |clientId|字符串| 服务主体的 id 授予同意以访问 （由 resourceId 属性） 的资源时模拟用户。 |
 |consentType|字符串| 指示由 （代表组织） 管理员或个人是否提供同意。 可能的值为*AllPrincipals*或*主体*。 |
 |expiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
-|id|字符串| 唯一标识符。 只读。|
+|id|字符串| 唯一标识符。 此为只读属性。|
 |principalId|字符串| 如果 consentType *AllPrincipals*此值为 null，并同意应用于组织中的所有用户。 如果*主体*consentType，此属性将指定的用户的授予许可，并且仅适用于该用户的 id。 |
 |resourceId|String| 指定已向其授予访问的资源服务主体的 id。 |
 |scope|字符串| OAuth 2.0 访问令牌中指定资源应用程序应产生预期[范围](/graph/permissions-reference)声明的值。 例如， *User.Read* |

@@ -2,12 +2,13 @@
 title: officeClientConfiguration 资源类型
 description: Office 客户端配置。
 author: tfitzmac
-ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879630"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 

@@ -2,12 +2,13 @@
 title: 获取 windowsManagedDevice
 description: 读取属性和 windowsManagedDevice 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 51d5adb884779a850c9689ec8b25704cde916a13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 639b67d9feddb83835c5da5f2a39a3454f47d19b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886595"
 ---
 # <a name="get-windowsmanageddevice"></a>获取 windowsManagedDevice
 
@@ -43,7 +44,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

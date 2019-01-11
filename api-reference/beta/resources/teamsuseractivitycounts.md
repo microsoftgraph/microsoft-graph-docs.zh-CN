@@ -2,12 +2,13 @@
 title: teamsUserActivityCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 author: nkramer
-ms.openlocfilehash: f67540f4172993b1076d9590438262b0d4da1846
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7351795f6b3dafbac996844fc1ac11cd24bbc03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886588"
 ---
 # <a name="teamsuseractivitycounts-resource-type"></a>teamsUserActivityCounts 资源类型
 

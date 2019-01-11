@@ -2,12 +2,13 @@
 title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886868"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,15 +51,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|反恶意软件被启用还是没有|
+|malwareProtectionEnabled|布尔|反恶意软件被启用还是没有|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 （如清理挂起完全扫描或挂起的重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用实时保护？|
-|networkInspectionSystemEnabled|Boolean|启用或不网络检查系统？|
-|quickScanOverdue|Boolean|快速扫描过期，或不？|
-|fullScanOverdue|Boolean|或不完全扫描过期？|
-|signatureUpdateOverdue|Boolean|过期的签名或不？|
-|rebootRequired|Boolean|需要或不重新启动？|
-|fullScanRequired|Boolean|所需或不完全扫描？|
+|realTimeProtectionEnabled|布尔|是否启用实时保护？|
+|networkInspectionSystemEnabled|布尔|启用或不网络检查系统？|
+|quickScanOverdue|布尔|快速扫描过期，或不？|
+|fullScanOverdue|布尔|或不完全扫描过期？|
+|signatureUpdateOverdue|布尔|过期的签名或不？|
+|rebootRequired|布尔|需要或不重新启动？|
+|fullScanRequired|布尔|所需或不完全扫描？|
 |engineVersion|字符串|当前终结点保护引擎的版本|
 |特征码版本|字符串|当前的恶意软件定义版本|
 |antiMalwareVersion|字符串|当前防恶意软件版本|

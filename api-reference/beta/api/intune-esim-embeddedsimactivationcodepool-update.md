@@ -2,12 +2,13 @@
 title: 更新 embeddedSIMActivationCodePool
 description: 更新 embeddedSIMActivationCodePool 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 83a374ab748ec7b9f93c327b609a5213073f470b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e2b8d3a8163292f2dfac431d72dab83ea71b658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882654"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>更新 embeddedSIMActivationCodePool
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

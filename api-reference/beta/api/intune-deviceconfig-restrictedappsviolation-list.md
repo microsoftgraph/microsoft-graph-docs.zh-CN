@@ -2,12 +2,13 @@
 title: 列表 restrictedAppsViolations
 description: 列出属性和 restrictedAppsViolation 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 7c39927b681953296bb23715457a7353151e58b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52f0d9a6d590c6f9b194817c1ec7aac3cc2bdc5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881926"
 ---
 # <a name="list-restrictedappsviolations"></a>列表 restrictedAppsViolations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: managedAppStatusRaw 资源类型
 description: 表示有关组织应用保护和配置的非类型化状态报告。
 author: tfitzmac
-ms.openlocfilehash: 9b7c957451e3fc92ad79ef10433e26bf39fd1c48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 975f43d064718b8457b40be707a54a0ea0eb69f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884012"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 

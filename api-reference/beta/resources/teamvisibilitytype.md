@@ -1,13 +1,14 @@
 ---
-title: Members
+title: 成员
 description: '介绍团队的可见性。 '
 author: nkramer
-ms.openlocfilehash: 5f03eb52a5eb7aa672998897e11fb5d3a358bf9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f53b1d7631cde46f1bd70afcbb1346f9199d9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884537"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27305290"
 
 ## <a name="members"></a>成员
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |专用|0|任何人都能看到团队，但只有所有者可以将用户添加到团队。|
 |公开|1|任何人都可以加入团队。|

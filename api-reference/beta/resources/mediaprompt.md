@@ -2,12 +2,13 @@
 title: mediaPrompt 资源类型
 description: MediaPrompt 类型。
 author: VinodRavichandran
-ms.openlocfilehash: 4782772f463a613a759ad3b2b25cb05e7e160555
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 31e1e0e1d842c758cddfb78a39b2dcc185e97ec9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884264"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 
@@ -17,9 +18,9 @@ MediaPrompt 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型                      | 说明                                                                     |
+| 属性    | 类型                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| 循环        | Int32                     | 循环计数。 0 值表示无限循环。 默认值是`1`。 |
+| 循环        | Int32                     | 循环计数。 0 值表示无限循环。 默认值为 `1`。 |
 | mediaInfo   | [mediaInfo](mediainfo.md) | 媒体信息                                                           |
 
 ## <a name="json-representation"></a>JSON 表示形式

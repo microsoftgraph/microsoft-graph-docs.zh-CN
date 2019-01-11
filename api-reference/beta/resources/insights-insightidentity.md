@@ -2,12 +2,13 @@
 title: insightIdentity
 description: 包含共享项目的属性的复杂类型。
 author: simonhult
-ms.openlocfilehash: 648242b827c0390029522955b0fe6347b98100c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 395c865a38ebe6ea84dc64857f441cd529e4f2d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886574"
 ---
 # <a name="insightidentity"></a>insightIdentity
 

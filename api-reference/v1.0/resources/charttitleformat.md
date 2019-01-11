@@ -2,12 +2,13 @@
 title: ChartTitleFormat 资源类型
 description: 封装图表标题的格式属性。
 author: lumine2008
-ms.openlocfilehash: 16169af251a0764c99ae04c5516ad9d552d1654c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee70eb991f2981a41de3e401a420a7fc0515d7c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885545"
 ---
 # <a name="charttitleformat-resource-type"></a>ChartTitleFormat 资源类型
 

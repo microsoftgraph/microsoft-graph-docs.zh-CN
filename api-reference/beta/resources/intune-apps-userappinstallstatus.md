@@ -2,12 +2,13 @@
 title: userAppInstallStatus 资源类型
 description: 包含用户的安装状态属性。
 author: tfitzmac
-ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885202"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27302756"
 |notInstalledDeviceCount|Int32|Not installed device count。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |应用程序|[mobileApp](../resources/intune-apps-mobileapp.md)|导航到移动应用程序链接。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|在设备上应用程序的安装状态。|

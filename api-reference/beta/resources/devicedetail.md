@@ -1,12 +1,13 @@
 ---
 title: deviceDetail 资源类型
 description: 指示与用于登录的设备的设备详细信息。 如果设备是托管的 Azure AD，包括设备的浏览器和操作系统信息等信息。
-ms.openlocfilehash: d7c1830ee5c99fc139a937fcee3896e2a9926592
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca4679a8c484b6dc5b36ef39d3d6d039537cbdbb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884838"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 指示与用于登录的设备的设备详细信息。 如果设备是托管的 Azure AD，包括设备的浏览器和操作系统信息等信息。
@@ -14,7 +15,7 @@ ms.locfileid: "27042471"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |浏览器|字符串|指示使用的浏览器信息签名项。|
 |deviceId|String|指用于签名中的设备的 UniqueID。|

@@ -2,12 +2,13 @@
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: tfitzmac
-ms.openlocfilehash: f75cfee95b798a38942f70e313f4c18dda7aabe8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86bcd9af52a25e47b3a1fb07ec86f4ff7da0f8ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884705"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -36,7 +37,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

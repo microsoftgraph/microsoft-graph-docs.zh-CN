@@ -2,12 +2,13 @@
 title: 更新 windowsManagementAppHealthSummary
 description: 更新 windowsManagementAppHealthSummary 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887190"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>更新 windowsManagementAppHealthSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

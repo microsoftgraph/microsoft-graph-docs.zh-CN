@@ -2,12 +2,13 @@
 title: embeddedSIMDeviceStateValue 枚举类型
 description: 介绍为嵌入 SIM 激活代码的各种状态。
 author: tfitzmac
-ms.openlocfilehash: 51e550669d9cd29d7d5bb246fe2cba017b02187c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3974c0df65ef9f59242f390b7166e11c3e0c592
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886056"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27320592"
 
 介绍为嵌入 SIM 激活代码的各种状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notEvaluated|0|指定嵌入的 SIM 激活代码可用，并且可以分配给设备。|
 |failed|1|指定 Intune 服务未能向设备提供此配置文件。|

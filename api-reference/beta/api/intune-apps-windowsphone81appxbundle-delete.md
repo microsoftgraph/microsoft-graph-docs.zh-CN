@@ -2,12 +2,13 @@
 title: 删除 windowsPhone81AppXBundle
 description: 删除 windowsPhone81AppXBundle。
 author: tfitzmac
-ms.openlocfilehash: e63d69255866565807ac23e3f6801bdd97be9861
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2b4cb1df708f6773a67dab134fe6f1989d16574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887106"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>删除 windowsPhone81AppXBundle
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

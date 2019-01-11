@@ -1,12 +1,13 @@
 ---
 title: governancePermission 资源类型
 description: '表示对特定 governanceResource governanceSubject 具有访问权限。  '
-ms.openlocfilehash: d7b3e1eb70c89c278ccc2a8b3e9a16e265e4ae97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e082ca50e5642e865b3e30859eea607df63a03b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882871"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046070"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |accessLevel|字符串|访问级别。 有效值： ``None``， ``UserRead``， ``AdminRead``，和``AdminReadWrite``。|
 |isActive|布尔|指示如果请求者有任何主动角色分配访问级别。|

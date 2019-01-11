@@ -1,12 +1,13 @@
 ---
 title: historyItem 资源类型
 description: 表示为活动应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
-ms.openlocfilehash: f413da4280f7b39f0be2a9dafd872ebee041ccc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 510913be6a3f70190c7cf657d9540d75f481c3a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882913"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -25,19 +26,19 @@ ms.locfileid: "27010288"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|状态 | 状态 | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
+|状态 | status | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
 |userTimezone | 字符串 | 可选。 在其中用户的设备用来生成活动位于在活动创建时间的时区。 为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。|
-|id | 字符串 | 必需项。 **HistoryItem**对象的客户端集 GUID。|
-|startedDateTime | DateTimeOffset | 必需。 启动**historyItem** （活动会话） 时，日期 UTC 时间。 所需的时间线历史记录。|
+|id | 字符串 | 必需。 **HistoryItem**对象的客户端集 GUID。|
+|startedDateTime | DateTimeOffset | 必填。 启动**historyItem** （活动会话） 时，日期 UTC 时间。 所需的时间线历史记录。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime **historyItem** （活动会话） 的最后一个了解作为活动或完成-如果为空， **historyItem**状态时应日常。|
 |expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**会经过硬删除时，日期 UTC 时间。 可以由客户端设置。|
-|activeDurationSeconds | 整数 | 可选。 活动用户工作效率的持续时间。 如果未提供，则从**startedDateTime**和**lastActiveDateTime**计算此。|
+|activeDurationSeconds | int | 可选。 活动用户工作效率的持续时间。 如果未提供，则从**startedDateTime**和**lastActiveDateTime**计算此。|
 
 ## <a name="relationships"></a>Relationships
 
-|关系 | 类型 | 说明|
+|关系 | 类型 | Description|
 |:------------|:-----|:-----------|
 |activity| [userActivity](../resources/projectrome-activity.md) | 可选。 NavigationProperty/包容;导航到关联的活动的属性。|
 

@@ -2,12 +2,13 @@
 title: editionUpgradeLicenseType 枚举类型
 description: Edition 升级许可证类型
 author: tfitzmac
-ms.openlocfilehash: bfaa9cd53e27cedd99026991537e27db9cfbf209
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90fb91094a8d8dae6ecb1f742edda382e5059791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883179"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27318394"
 
 Edition 升级许可证类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |productKey|0|产品密钥类型|
 |licenseFile|1|许可证文件类型|

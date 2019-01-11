@@ -2,12 +2,13 @@
 title: uploadDepToken 操作
 description: 上载新的设备注册程序令牌
 author: tfitzmac
-ms.openlocfilehash: 6fc303afa5efb5fab312732c95545b73004660a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e146ebe7d25c428c3451830eb7fa223096fff8af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886581"
 ---
 # <a name="uploaddeptoken-action"></a>uploadDepToken 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |appleId|String|尚未记录|
 |depToken|字符串|尚未记录|

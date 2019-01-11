@@ -2,12 +2,13 @@
 title: managedAppDataEncryptionType 枚举类型
 description: 代表向其应用程序数据进行加密托管应用程序的级别
 author: tfitzmac
-ms.openlocfilehash: 6bd23f6cd590724c2c981ddf2c3087ead4c21817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2c494b6822a2a85cd4a3d295ac70b80efffcd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885944"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326115"
 
 代表向其应用程序数据进行加密托管应用程序的级别
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |useDeviceSettings|0|应用程序数据进行加密根据设备上的默认设置。|
 |afterDeviceRestart|1|应用程序数据进行加密时重新启动设备。|

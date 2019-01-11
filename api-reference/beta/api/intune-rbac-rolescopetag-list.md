@@ -2,12 +2,13 @@
 title: 列表 roleScopeTags
 description: 列出属性和 roleScopeTag 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 786276f5e0d74871ebf38fce235f584911bebb20
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f24b52fba2d7007c6528c5ac32003af92d48f90c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886406"
 ---
 # <a name="list-rolescopetags"></a>列表 roleScopeTags
 
@@ -39,7 +40,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

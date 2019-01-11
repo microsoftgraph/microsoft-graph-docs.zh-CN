@@ -1,12 +1,13 @@
 ---
 title: synchronizationProgress 资源类型
 description: 代表完成 synchronizationJob 的进度。
-ms.openlocfilehash: 412b7754dac97a36efe082026ab360569c0fe789
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885384"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27049095"
 
 ## <a name="properties"></a>属性
 
-| 属性                              | 类型      | 说明    |
+| 属性                              | 类型      | Description    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|进度比例; 分子已处理的更改的单位数。|
 |progressObservationDateTime|DateTimeOffset|进度观察值作为偏移量，以分钟为单位从 UTC 时间。|

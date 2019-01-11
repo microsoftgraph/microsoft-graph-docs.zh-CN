@@ -1,12 +1,13 @@
 ---
 title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
-ms.openlocfilehash: f166f72bda0353d59c99a161b8b89694f13df5d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: bf382b697976ba264b610afb2946abb094f8ac4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008264"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885237"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 检索组织已获取的商业订阅列表。

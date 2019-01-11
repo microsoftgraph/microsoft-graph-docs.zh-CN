@@ -1,12 +1,13 @@
 ---
 title: managedAppPinCharacterSet 枚举类型
 description: 这是用于应用程序用户的 PIN 的字符集
-ms.openlocfilehash: 3597db9bf773d7bb0a030d4b5129e5b65aa2b7dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9f1bc59e52a7fb37666050f4f6051ff22497cdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885930"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27048444"
 
 这是用于应用程序用户的 PIN 的字符集
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |数值|0|数字字符|
 |alphanumericAndSymbol|1|全角字母数字和符号字符|

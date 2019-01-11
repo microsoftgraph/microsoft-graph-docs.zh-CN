@@ -1,12 +1,13 @@
 ---
 title: governanceSchedule 资源类型
 description: '代表 governanceRoleAssignmentRequest 的计划。 角色分配请求，时间表控制时执行该角色分配操作，何时停止角色分配，以及如何经常角色分配操作。 '
-ms.openlocfilehash: 6eff3977aa7806c975f968b8706f2e8c21e5d99e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882311"
 ---
 # <a name="governanceschedule-resource-type"></a>governanceSchedule 资源类型
 

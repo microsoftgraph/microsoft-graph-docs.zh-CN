@@ -2,12 +2,13 @@
 title: educationSubmission： 返回
 description: 此操作会使薪等级和学生向此提交操作相关联的反馈。
 author: dipakboyed
-ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4e5802e819543679158a3940fcf35ca624bad71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887729"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission： 返回
 

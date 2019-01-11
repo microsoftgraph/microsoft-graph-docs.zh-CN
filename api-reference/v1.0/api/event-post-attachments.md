@@ -2,12 +2,13 @@
 title: Add attachment
 description: 使用此 API 附件添加到事件。 相那里
 author: angelgolfer-ms
-ms.openlocfilehash: 010e0d4501d9a9e520e977af28f9ff453f9c4c6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ee980056c8a18183f81fad01cfc09e92ac35c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886609"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -57,7 +58,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |

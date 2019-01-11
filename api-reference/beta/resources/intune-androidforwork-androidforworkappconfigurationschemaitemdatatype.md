@@ -1,12 +1,13 @@
 ---
 title: androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 description: 配置项目内 Android 工作应用程序的自定义配置架构数据类型
-ms.openlocfilehash: cda4a7fe0d26050c9d8422cb5cfa866347ca9810
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff5ca9fedd3632960bf249dd40fb3e8a98ab23a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886623"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 
@@ -16,9 +17,9 @@ ms.locfileid: "27043102"
 
 配置项目内 Android 工作应用程序的自定义配置架构数据类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|bool|0|尚未记录|
+|布尔值|0|尚未记录|
 |integer|1|尚未记录|
 |string|2|尚未记录|
 |选择|3|尚未记录|

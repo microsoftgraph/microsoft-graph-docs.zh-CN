@@ -2,12 +2,13 @@
 title: 更新 macOSCompliancePolicy
 description: 更新 macOSCompliancePolicy 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 08b256fc12dcfd7d2d5e79f0dc0b277244214a2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09bba9c19d912d1d4065f390ed35cc209f1879a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321061"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886763"
 ---
 # <a name="update-macoscompliancepolicy"></a>更新 macOSCompliancePolicy
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,9 +67,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|firewallEnabled|Boolean|是否应启用防火墙，或不。|
-|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
+|firewallEnabled|布尔|是否应启用防火墙，或不。|
+|firewallBlockAllIncoming|布尔|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|布尔|对应于"启用隐藏模式"。|
 
 
 

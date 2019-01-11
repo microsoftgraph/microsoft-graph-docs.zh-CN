@@ -2,12 +2,13 @@
 title: windowsProtectionState 资源类型
 description: 设备的保护状态实体。
 author: tfitzmac
-ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884103"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 
@@ -26,15 +27,15 @@ ms.locfileid: "27328075"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|反恶意软件被启用还是没有|
+|malwareProtectionEnabled|布尔|反恶意软件被启用还是没有|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 （如清理挂起完全扫描或挂起的重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用实时保护？|
-|networkInspectionSystemEnabled|Boolean|启用或不网络检查系统？|
-|quickScanOverdue|Boolean|快速扫描过期，或不？|
-|fullScanOverdue|Boolean|或不完全扫描过期？|
-|signatureUpdateOverdue|Boolean|过期的签名或不？|
-|rebootRequired|Boolean|需要或不重新启动？|
-|fullScanRequired|Boolean|所需或不完全扫描？|
+|realTimeProtectionEnabled|布尔|是否启用实时保护？|
+|networkInspectionSystemEnabled|布尔|启用或不网络检查系统？|
+|quickScanOverdue|布尔|快速扫描过期，或不？|
+|fullScanOverdue|布尔|或不完全扫描过期？|
+|signatureUpdateOverdue|布尔|过期的签名或不？|
+|rebootRequired|布尔|需要或不重新启动？|
+|fullScanRequired|布尔|所需或不完全扫描？|
 |engineVersion|字符串|当前终结点保护引擎的版本|
 |特征码版本|字符串|当前的恶意软件定义版本|
 |antiMalwareVersion|字符串|当前防恶意软件版本|
@@ -45,7 +46,7 @@ ms.locfileid: "27328075"
 |lastReportedDateTime|DateTimeOffset|最后一个设备运行状况状态报告的时间|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)集合|设备恶意软件的列表|
 

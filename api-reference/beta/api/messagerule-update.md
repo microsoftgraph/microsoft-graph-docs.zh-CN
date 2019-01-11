@@ -2,12 +2,13 @@
 title: 更新规则
 description: 为 messageRule 对象更改可写属性并保存更改。
 author: angelgolfer-ms
-ms.openlocfilehash: 9ecef5c23502065d0d9e6fc32850b1ce89a1508c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b034c7c428821c23b92d78644b43de9d7a2946d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886357"
 ---
 # <a name="update-rule"></a>更新规则
 
@@ -31,7 +32,7 @@ PATCH /me/mailFolders/inbox/messagerules/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 

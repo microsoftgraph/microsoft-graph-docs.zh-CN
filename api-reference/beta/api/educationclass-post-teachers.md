@@ -2,12 +2,13 @@
 title: 添加教师
 description: 向课程添加教师。
 author: mmast-msft
-ms.openlocfilehash: 72887960cd43fcbc84ecdf33c3c9cca3e2a0cdd3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 284c84cc140f0f9c15831396ed5adddaff73fdc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882983"
 ---
 # <a name="add-teacher"></a>添加教师
 

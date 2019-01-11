@@ -2,12 +2,13 @@
 title: 更新邮件
 description: 更新 message 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 04a52e28728eda7d778ac76cdc69080cd5b9edf5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: fd0573ecb2e5410d8bbe0d0c557d4f3f78e0f131
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883043"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -49,9 +50,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
 |inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 可更新才 isDraft = true。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 多值为消息定义的扩展属性的集合。 可为 Null。|
 |replyTo|Recipient collection|在答复时使用的电子邮件地址。 可更新才 isDraft = true。|
 |sender|Recipient|实际用于生成邮件的帐户。 从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)，或作为[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息发送邮件时可更新。 在任何情况下的值必须为实际的邮箱使用对应。|

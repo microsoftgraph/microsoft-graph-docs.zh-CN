@@ -2,12 +2,13 @@
 title: 更新 windowsUniversalAppXContainedApp
 description: 更新 windowsUniversalAppXContainedApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: f39046e10917a45ba880777992247748e89a24e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 642921c66bfbc996c5c3b0f3f16cf812c75a5618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882339"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>更新 windowsUniversalAppXContainedApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

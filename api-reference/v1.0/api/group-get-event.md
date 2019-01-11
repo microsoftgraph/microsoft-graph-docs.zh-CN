@@ -2,12 +2,13 @@
 title: 获取事件
 description: 获取 event 对象。
 author: dkershaw10
-ms.openlocfilehash: d599df555d93459df8d7985dd726d2280b019e68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1ac0dd97253085bf42c5123ac6fca08baea00fbf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886812"
 ---
 # <a name="get-event"></a>获取事件
 获取 [event](../resources/event.md) 对象。
@@ -32,7 +33,7 @@ GET /groups/{id}/calendar/events/{id}
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明 |
+| 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |

@@ -1,12 +1,13 @@
 ---
 title: 获取 governanceResource
 description: 检索的属性和 governanceResource 对象的关系。
-ms.openlocfilehash: 55fcea026a2816f33ab6064ea5828d3af4526690
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 16442ea971a635aedfd89f09c48ffddf14c83b95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888030"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 

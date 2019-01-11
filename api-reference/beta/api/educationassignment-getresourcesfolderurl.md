@@ -1,12 +1,13 @@
 ---
 title: 'educationAssignment: getResourcesFolderUrl'
 description: '此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。  '
-ms.openlocfilehash: 129fa76d57e2016141397f967e833c765e737b19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4352fb051573f91ef93e781a1a06ba984b17a9ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887386"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 

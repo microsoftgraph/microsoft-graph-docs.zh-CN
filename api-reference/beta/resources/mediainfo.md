@@ -2,12 +2,13 @@
 title: mediaInfo 资源类型
 description: 操作中使用的媒体信息提示。
 author: VinodRavichandran
-ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fe2c49e86bac9d5961310694b21e9439a4896ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885601"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27380273"
 操作中使用的媒体信息提示。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    | 说明                      |
+| 属性       | 类型    | Description                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | String  | 唯一标识的资源。 |
 | uri            | 字符串  | 资源的路径。            |

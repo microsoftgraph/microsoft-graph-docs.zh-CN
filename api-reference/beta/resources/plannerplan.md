@@ -1,12 +1,13 @@
 ---
 title: plannerPlan 资源类型
 description: '**PlannerPlan**资源表示 Office 365 中的计划。 规划组可以拥有和包含 plannerTasks 的集合。 它还可以具有 plannerBuckets 的集合。 每个计划对象都可以包含有关计划的详细信息的详细信息对象。 有关组、 计划和任务之间的关系的详细信息，请参阅计划程序。'
-ms.openlocfilehash: 236b6cb5d35e11a30bcb4371e0563b56ac93de8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4890daa6ad221a36cf0029b49ce39560fc80afcd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888100"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27043678"
 |owner|字符串|拥有计划的[组](group.md)ID。 此字段可以设置之前，必须存在有效的组。 设置后，无法更新此属性。|
 |title|String|必填。计划的标题|
 |createdBy|[identitySet](identityset.md)|只读。创建计划的用户。|
-|上下文|[plannerPlanContextCollection](plannerplancontextcollection.md)| 只读。 使用此计划的其他用户体验表示为[plannerPlanContext](plannerplancontext.md)条目。|
+|上下文|[plannerPlanContextCollection](plannerplancontextcollection.md)| 此为只读属性。 使用此计划的其他用户体验表示为[plannerPlanContext](plannerplancontext.md)条目。|
 
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|

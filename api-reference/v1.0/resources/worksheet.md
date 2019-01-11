@@ -1,12 +1,13 @@
 ---
 title: 工作表资源类型
 description: Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
-ms.openlocfilehash: 3d2f5a62c8568a8717909c0fbf051566cab3a880
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884810"
 ---
 # <a name="worksheet-resource-type"></a>工作表资源类型
 
@@ -37,7 +38,7 @@ Excel 工作表是由单元格组成的网格。它可以包含数据、表、�
 |:---------------|:--------|:----------|
 |ID|string|返回用于唯一标识指定工作簿中工作表的值。即使工作表被重命名或移动，标识符的值仍然相同。只读。|
 |name|string|工作表的显示名称。|
-|position|整数|工作表在工作簿中的位置，从零开始。|
+|position|int|工作表在工作簿中的位置，从零开始。|
 |visibility|string|在工作表的可见性。 可能的值为： `Visible`， `Hidden`， `VeryHidden`。|
 
 ## <a name="relationships"></a>Relationships

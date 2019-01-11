@@ -2,12 +2,13 @@
 title: 更新团队
 description: 更新指定的团队的属性。
 author: nkramer
-ms.openlocfilehash: 19a3c55295bc54fcd7f1c9e24f88e386fc4dc2bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 478da815a7bdf5dca15ddba358b5e12c46c1f045
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885287"
 ---
 # <a name="update-team"></a>更新团队
 

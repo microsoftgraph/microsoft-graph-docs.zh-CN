@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 转换为其他格式
-ms.openlocfilehash: 70558e7c0497c71f620481ff67b7d07cc255cd95
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+localization_priority: Normal
+ms.openlocfilehash: d27420153a295eac9d3f880910d63bd701525427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887435"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -50,7 +51,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
-| Name            | 值   | 说明                                                                                                                                              |
+| 名称            | 值   | 说明                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | 如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。 |
 

@@ -2,12 +2,13 @@
 title: 删除 sharedPCConfiguration
 description: 删除 sharedPCConfiguration。
 author: tfitzmac
-ms.openlocfilehash: aca06e7a2d0d3ce6aaa28a7b86274c8c4f44acc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2564f8cfbd7d9648f7a9362da10f3d00d18c6be9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883270"
 ---
 # <a name="delete-sharedpcconfiguration"></a>删除 sharedPCConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

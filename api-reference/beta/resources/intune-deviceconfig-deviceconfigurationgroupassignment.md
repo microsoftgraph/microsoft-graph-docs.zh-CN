@@ -2,12 +2,13 @@
 title: deviceConfigurationGroupAssignment 资源类型
 description: 设备配置组工作分配。
 author: tfitzmac
-ms.openlocfilehash: 648edd8122c4e14ad06a6e8b19e5fb83a042affa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b670ffd828634e244053b8a83e5f1f05f79ebbe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883977"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment 资源类型
 
@@ -30,10 +31,10 @@ ms.locfileid: "27334634"
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|字符串|AAD 组 Id 目标到该设备的配置。|
-|excludeGroup|Boolean|指示此组是否应排除。 应包含的组的默认值|
+|excludeGroup|布尔|指示此组是否应排除。 应包含的组的默认值|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|导航链接到目标的设备配置。|
 

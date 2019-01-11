@@ -1,12 +1,13 @@
 ---
 title: servicePrincipals： 列表 ownedObjects
 description: 检索拥有的 servicePrincipal 对象的列表。  这可能包括应用程序或组。
-ms.openlocfilehash: 79ca70c5c86e535a7d8a11598509e7ebf61780a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f061a99c6389651985779ac71df2ced5a91ba527
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882864"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： 列表 ownedObjects
 

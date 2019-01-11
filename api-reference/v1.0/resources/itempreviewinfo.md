@@ -3,12 +3,13 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
-ms.openlocfilehash: 8b8f7a962e237cc20a42503efd31f083996ad715
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7df636f9c406a499baa5ef3be1748273920cac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885475"
 ---
 # <a name="itempreviewinfo-resource-type"></a>itemPreviewInfo 资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "27010064"
 
 ## <a name="properties"></a>属性
 
-| 名称           | 类型   | 说明
+| 名称           | 类型   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）

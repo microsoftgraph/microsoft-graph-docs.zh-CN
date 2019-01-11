@@ -2,12 +2,13 @@
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
 author: tfitzmac
-ms.openlocfilehash: 1c77a7c08f50f765d45d22fc95e2e086ac904c6e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7be07f04c33dcb81ab0dfe350290fa95fb8c1679
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885104"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27317218"
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|最终用户门户信息用于同步 Intune 的公司门户从 Microsoft 存储的业务应用程序。 有三个选项，可以从中进行选取\[公司仅门户、 公司门户和专用存储、 仅专用存储\]。 可取值为：`none`、`companyPortal`、`privateStore`。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |**应用程序**|
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)集合|Windows 企业代码签名证书。|

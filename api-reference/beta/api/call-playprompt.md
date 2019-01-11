@@ -2,12 +2,13 @@
 title: 呼叫： playPrompt
 description: 在呼叫中播放提示。
 author: VinodRavichandran
-ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883655"
 ---
 # <a name="call-playprompt"></a>呼叫： playPrompt
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |提示|[提示](../resources/prompt.md)集合||
 |clientContext|字符串|客户端上下文。|

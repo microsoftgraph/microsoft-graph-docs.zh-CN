@@ -1,12 +1,13 @@
 ---
 title: 下载 DriveItemVersion 资源的内容
 description: 检索某个特定版本的 DriveItem 的内容。
-ms.openlocfilehash: 3f8f7ca6202be0ac8882cc513aac178dc1ac632f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1b6027e6f9b3e8b771bfe410045e63d023955674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883963"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 DriveItemVersion 资源的内容
 

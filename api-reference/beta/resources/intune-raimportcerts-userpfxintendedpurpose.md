@@ -2,12 +2,13 @@
 title: userPfxIntendedPurpose 枚举类型
 description: 支持用户 PFX 证书的预期目的值。
 author: tfitzmac
-ms.openlocfilehash: 285bf4b9d8cdca2ef477a7dde591ab373c600821
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89d2402b0a652cdb94a392b5ec0b6997b972b6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885860"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27341326"
 
 支持用户 PFX 证书的预期目的值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |未分配|0|尚未记录|
 |smimeEncryption|1|尚未记录|

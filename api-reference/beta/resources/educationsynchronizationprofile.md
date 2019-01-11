@@ -2,12 +2,13 @@
 title: educationSynchronizationProfile 资源类型
 description: 代表一组配置用于同步教育实体和 Azure Active Directory (Azure AD) 从源目录名单信息。 此资源提供了用于学校数据同步的编程表示。
 author: mmast-msft
-ms.openlocfilehash: 43cf3ebd882c1e2dd86ada5621abbcd28b0e84c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ed8cf39ff8ccd2b8cb4c5b5e31350fec6202d01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882920"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27363737"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **displayName** | string |  配置文件的同步标识名称。         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  用于配置文件数据提供程序。         |
@@ -43,7 +44,7 @@ ms.locfileid: "27363737"
 
 ## <a name="relationships"></a>Relationships
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **errors** | [educationSynchronizationError](educationsynchronizationerror.md)集合| 与此同步配置文件关联的所有错误。 |
 | **profileStatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | 同步状态。 |

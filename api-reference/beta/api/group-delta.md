@@ -1,12 +1,13 @@
 ---
 title: 'group: delta'
 description: 获取新创建、 更新或删除组，而无需执行整个组集合的完全读取包括组成员身份更改。 有关详细信息，请参阅使用增量查询。
-ms.openlocfilehash: 562321ddff9e5c9d2840c1c1178aa8e4f2fd4114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5645fa950faca9f5a49b9db6288eb138553aad0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887869"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -118,7 +119,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 以下是时使用的响应示例`deltaLink`获取从查询初始化。
 
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都是从实际调用返回。
 >
 > 请注意*members@delta*属性的组中包括的 member 对象的 id 的状态。
 

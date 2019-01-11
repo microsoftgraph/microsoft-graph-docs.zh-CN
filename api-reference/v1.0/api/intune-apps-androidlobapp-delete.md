@@ -2,12 +2,13 @@
 title: 删除 androidLobApp
 description: 删除 androidLobApp。
 author: tfitzmac
-ms.openlocfilehash: 9ca89f328dcc459b767ef81e9c02b5d3607816b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 587114c54d0d90c6a023d379bc0c48bde787e6dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884005"
 ---
 # <a name="delete-androidlobapp"></a>删除 androidLobApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

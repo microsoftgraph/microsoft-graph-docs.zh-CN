@@ -2,12 +2,13 @@
 title: windowsDeviceAccount 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 212443034126e7dba322fe435897244fdc0fdfcc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf5a6d1619ffe83c33551ac40de20a16c7ff50ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882661"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 

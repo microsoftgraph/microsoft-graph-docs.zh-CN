@@ -1,12 +1,13 @@
 ---
 title: 操作资源类型
 description: 长时间运行操作的状态。
-ms.openlocfilehash: 622a17233a25709047ea852b7df5020aee3ae343
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4f2e2c9a6fb9eb6d26a3511c637e79822919e2f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884964"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27008123"
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作的开始时间。|
 |lastActionDateTime| DateTimeOffset |操作的上次活动时间。|
-|状态|operationStatus|操作的当前状态：`notStarted`、`running`、`completed`、`failed` |
+|status|operationStatus|操作的当前状态：`notStarted`、`running`、`completed`、`failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

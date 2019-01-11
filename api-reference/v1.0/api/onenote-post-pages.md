@@ -2,12 +2,13 @@
 title: 创建页面
 description: 在默认笔记本的默认分区中新建 OneNote 页面。
 author: Jewan-microsoft
-ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 373ed0a8e63014efe853843fc111c638617b868a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884439"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -36,7 +37,7 @@ POST /sites/{id}/onenote/pages
 ```
 
 ## <a name="request-headers"></a>请求标头  
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |

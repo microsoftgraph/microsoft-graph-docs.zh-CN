@@ -2,12 +2,13 @@
 title: 列出 groupLifecyclePolicy
 description: 检索组所属的 groupLifecyclePolicy 对象的列表。
 author: dkershaw10
-ms.openlocfilehash: 9433716e8c2a6f91a15ca23a7aa915974d757bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b9559078e7859dc8b90240e513a8f4e03bccb69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883221"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -34,7 +35,7 @@ GET /groups/{id}/groupLifecyclePolicies
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name | 说明 |
+| 名称 | 说明 |
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
 

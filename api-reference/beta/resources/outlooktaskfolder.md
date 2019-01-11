@@ -2,12 +2,13 @@
 title: outlookTaskFolder 资源类型
 description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件夹。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882927"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
@@ -37,13 +38,13 @@ ms.locfileid: "27306207"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |changeKey|字符串|任务文件夹的版本。|
-|id|字符串|任务文件夹中，用户的邮箱中的唯一标识符。 只读。|
-|isDefaultFolder|Boolean|如果文件夹为默认的任务文件夹，则为 true。|
+|id|字符串|任务文件夹中，用户的邮箱中的唯一标识符。 此为只读属性。|
+|isDefaultFolder|布尔|如果文件夹为默认的任务文件夹，则为 true。|
 |name|字符串|任务文件夹的名称。|
 |parentGroupKey|Guid|任务文件夹的父组的唯一 GUID 标识符。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|多值定义的任务文件夹的扩展属性的集合。 只读。 可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|定义的任务文件夹的单值扩展属性的集合。 只读。 可为 Null。|

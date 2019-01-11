@@ -2,12 +2,13 @@
 title: androidWiFiSecurityType 枚举类型
 description: 用于 Android Wi-fi 安全类型。
 author: tfitzmac
-ms.openlocfilehash: 3f74f044b907e2bcbf398e7940188e0b26522a5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a8dde9046e6774726486753d7e4e1420af8a05f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885660"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348039"
 
 用于 Android Wi-fi 安全类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |打开|0|打开 （无身份验证）。|
 |wpaEnterprise|1|WPA-企业/WPA2-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|

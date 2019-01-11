@@ -1,12 +1,13 @@
 ---
 title: mailboxSettings 资源类型
 description: 已登录用户的主邮箱的设置。
-ms.openlocfilehash: 79a01c59ec0a891c13107095a950a7cc8ae0b547
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83bb3fffce2c4d61c92b9110c88d05fbba86893a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887722"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 

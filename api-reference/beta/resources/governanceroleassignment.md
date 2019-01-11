@@ -1,12 +1,13 @@
 ---
 title: governanceRoleAssignment 资源类型
 description: 代表向角色分配的用户或组。
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882689"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment 资源类型
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
@@ -46,10 +47,10 @@ ms.locfileid: "27191135"
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|只读。 与角色分配关联的资源。 |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 与角色分配相关联的角色定义。 |
-|subject|[governanceSubject](../resources/governancesubject.md)|只读。 主题的角色分配相关联。 |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|只读。 如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表的`eligible assignment`;否则，值为`null`。 |
+|资源|[governanceResource](../resources/governanceresource.md)|此为只读属性。 与角色分配关联的资源。 |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|此为只读属性。 与角色分配相关联的角色定义。 |
+|subject|[governanceSubject](../resources/governancesubject.md)|此为只读属性。 主题的角色分配相关联。 |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|此为只读属性。 如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表的`eligible assignment`;否则，值为`null`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

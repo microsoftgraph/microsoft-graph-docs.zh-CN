@@ -2,12 +2,13 @@
 title: defenderProtectionType 枚举类型
 description: 可能的值的 Defender 保护
 author: tfitzmac
-ms.openlocfilehash: b71e7c1b9212e38a0f208121a7153b1512326a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0f63a3c29975fb19f91b0c721b36470f3bc5c07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882416"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27339702"
 
 可能的值的 Defender 保护
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|设备默认值，没有用途。|
 |启用|1|阻止功能。|

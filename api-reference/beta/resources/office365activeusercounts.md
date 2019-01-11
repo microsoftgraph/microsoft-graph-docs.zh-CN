@@ -1,18 +1,19 @@
 ---
 title: office365ActiveUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 63d0469f5531d68a7b81c37014103a02e977e870
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044851"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882717"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型   | 说明                              |
+| 属性          | 类型   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容最晚日期。          |
 | office365         | Int64  | Office 365 中的活动用户数。 此数值包括 Exchange、 OneDrive、 SharePoint、 Skype 的业务、 Yammer，和 Microsoft 团队中的所有活动的用户。 您可以找到各自属性说明中的每个产品的活动用户定义。 |

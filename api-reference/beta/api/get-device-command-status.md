@@ -1,12 +1,13 @@
 ---
 title: 获取设备命令状态
 description: 获取设备上的命令的状态。 状态代码的完整列表，请参阅 actionStatus 的列表。
-ms.openlocfilehash: 1e51d3b4366e87d9802518a50fe348d3ba0f250d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dca743a50f248abee76fb4d54352df3d400ada1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883130"
 ---
 # <a name="get-device-command-status"></a>获取设备命令状态
 

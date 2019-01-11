@@ -1,12 +1,13 @@
 ---
 title: 在 Microsoft Graph 中使用文件
 description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
-ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8b44324987b94c824ed71da558b9ee3e5ded2d83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887162"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 

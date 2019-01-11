@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Deleted
-ms.openlocfilehash: 6a51d858f529e65820d7bc55bb7ec8fec80186d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a35bc781555486603c0319c819aa019704e362d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886140"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

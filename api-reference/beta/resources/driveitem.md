@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 1344d9a82459704354fc20a07c329949c4f5fc23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 255b9de7ad565228da093a9a40d23c3360df28b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882262"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 
@@ -98,7 +99,7 @@ ms.locfileid: "27047344"
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [音频][]          | 音频元数据（如果此项是一个音频文件）。只读。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
@@ -116,7 +117,7 @@ ms.locfileid: "27047344"
 | name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 | 包              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| photo                | [photo][]          | 照片元数据（如果此项包含照片）。只读。
+| photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
 | root                 | [根][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
@@ -125,7 +126,7 @@ ms.locfileid: "27047344"
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
+| video                | [视频][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 

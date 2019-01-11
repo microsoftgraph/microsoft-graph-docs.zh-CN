@@ -1,12 +1,13 @@
 ---
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
-ms.openlocfilehash: 915ec185931d3f7e77f010517a3ef0c3bff92204
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d34da38ad1a007f6c63154cb496006585df95c13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885735"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 

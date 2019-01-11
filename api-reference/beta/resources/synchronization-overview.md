@@ -1,12 +1,13 @@
 ---
 title: Azure AD 同步 API 概述
 description: ) 可自动执行创建、 维护和删除中的标识云 （软件作为服务，还是 SaaS） 应用程序，如收存箱、 销售队伍、 ServiceNow，等等。 您可以使用同步 Api 在 Microsoft Graph 中以编程方式管理标识同步包括：
-ms.openlocfilehash: ff3acb00801c9b04b8257345b06100297e11710c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884684"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
@@ -68,7 +69,7 @@ Azure AD 同步 API 使用 OAuth 2.0 授权。 Api 任何请求之前，您需�
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+**响应**
 
 <!-- { "blockType": "ignored" } -->
 ```http
