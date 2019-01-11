@@ -2,33 +2,34 @@
 title: ChartAreaFormat 资源类型
 description: 封装整个图表区域的格式属性。
 author: lumine2008
-ms.openlocfilehash: d9db44fefeff00ae6f7363126de35d4028964d14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79867ff3519467279abcb4b9684b713964eb8f98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310001"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838169"
 ---
-# <a name="chartareaformat-resource-type"></a><span data-ttu-id="deef6-103">ChartAreaFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="deef6-103">ChartAreaFormat resource type</span></span>
+# <a name="chartareaformat-resource-type"></a><span data-ttu-id="40755-103">ChartAreaFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="40755-103">ChartAreaFormat resource type</span></span>
 
-<span data-ttu-id="deef6-104">封装整个图表区域的格式属性。</span><span class="sxs-lookup"><span data-stu-id="deef6-104">Encapsulates the format properties for the overall chart area.</span></span>
+<span data-ttu-id="40755-104">封装整个图表区域的格式属性。</span><span class="sxs-lookup"><span data-stu-id="40755-104">Encapsulates the format properties for the overall chart area.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="deef6-105">方法</span><span class="sxs-lookup"><span data-stu-id="deef6-105">Methods</span></span>
-<span data-ttu-id="deef6-106">无</span><span class="sxs-lookup"><span data-stu-id="deef6-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="40755-105">方法</span><span class="sxs-lookup"><span data-stu-id="40755-105">Methods</span></span>
+<span data-ttu-id="40755-106">无</span><span class="sxs-lookup"><span data-stu-id="40755-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="deef6-107">属性</span><span class="sxs-lookup"><span data-stu-id="deef6-107">Properties</span></span>
-<span data-ttu-id="deef6-108">无</span><span class="sxs-lookup"><span data-stu-id="deef6-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="40755-107">属性</span><span class="sxs-lookup"><span data-stu-id="40755-107">Properties</span></span>
+<span data-ttu-id="40755-108">无</span><span class="sxs-lookup"><span data-stu-id="40755-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="deef6-109">Relationships</span><span class="sxs-lookup"><span data-stu-id="deef6-109">Relationships</span></span>
-| <span data-ttu-id="deef6-110">关系</span><span class="sxs-lookup"><span data-stu-id="deef6-110">Relationship</span></span> | <span data-ttu-id="deef6-111">类型</span><span class="sxs-lookup"><span data-stu-id="deef6-111">Type</span></span>   |<span data-ttu-id="deef6-112">说明</span><span class="sxs-lookup"><span data-stu-id="deef6-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="40755-109">Relationships</span><span class="sxs-lookup"><span data-stu-id="40755-109">Relationships</span></span>
+| <span data-ttu-id="40755-110">关系</span><span class="sxs-lookup"><span data-stu-id="40755-110">Relationship</span></span> | <span data-ttu-id="40755-111">类型</span><span class="sxs-lookup"><span data-stu-id="40755-111">Type</span></span>   |<span data-ttu-id="40755-112">说明</span><span class="sxs-lookup"><span data-stu-id="40755-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="deef6-113">fill</span><span class="sxs-lookup"><span data-stu-id="deef6-113">fill</span></span>|[<span data-ttu-id="deef6-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="deef6-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="deef6-p101">表示对象的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="deef6-p101">Represents the fill format of an object, which includes background formatting information. Read-only.</span></span>|
-|<span data-ttu-id="deef6-117">font</span><span class="sxs-lookup"><span data-stu-id="deef6-117">font</span></span>|[<span data-ttu-id="deef6-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="deef6-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="deef6-p102">表示当前对象的字体属性（字体名称、字体大小、颜色等）。只读。</span><span class="sxs-lookup"><span data-stu-id="deef6-p102">Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.</span></span>|
+|<span data-ttu-id="40755-113">fill</span><span class="sxs-lookup"><span data-stu-id="40755-113">fill</span></span>|[<span data-ttu-id="40755-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="40755-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="40755-p101">表示对象的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="40755-p101">Represents the fill format of an object, which includes background formatting information. Read-only.</span></span>|
+|<span data-ttu-id="40755-117">font</span><span class="sxs-lookup"><span data-stu-id="40755-117">font</span></span>|[<span data-ttu-id="40755-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="40755-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="40755-p102">表示当前对象的字体属性（字体名称、字体大小、颜色等）。只读。</span><span class="sxs-lookup"><span data-stu-id="40755-p102">Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="deef6-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="deef6-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="40755-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="40755-121">JSON representation</span></span>
 
-<span data-ttu-id="deef6-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="deef6-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="40755-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="40755-122">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
