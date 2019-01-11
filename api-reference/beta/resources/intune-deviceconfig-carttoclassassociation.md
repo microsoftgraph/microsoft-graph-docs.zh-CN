@@ -2,12 +2,13 @@
 title: cartToClassAssociation 资源类型
 description: 与教室关联设备车 CartToClassAssociation。
 author: tfitzmac
-ms.openlocfilehash: f712759d82b5edf7d364658211f1f2142fb6eb87
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02a7d04b40d4d984f98f04eb653ee45ed436d099
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868031"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 

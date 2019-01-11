@@ -1,12 +1,13 @@
 ---
 title: 'TableCollection: add'
 description: 创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。
-ms.openlocfilehash: 6435abe4a2671ec3937b7f1b0bbda8825fad1c7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8053ce8e8d0ac62e096fa70255064e82a03630f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868444"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

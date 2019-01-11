@@ -2,12 +2,13 @@
 title: 获取 Outlook category
 description: 获取指定的 outlookCategory 对象的属性和关系。
 author: angelgolfer-ms
-ms.openlocfilehash: f701a4447eb69b8ceb7dad1b861c5ea6b2103681
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a7a64c572754dc8256693781c5c540a13c1c53f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864125"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
@@ -33,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

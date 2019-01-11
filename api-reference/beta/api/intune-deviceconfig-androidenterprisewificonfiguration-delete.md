@@ -2,12 +2,13 @@
 title: 删除 androidEnterpriseWiFiConfiguration
 description: 删除 androidEnterpriseWiFiConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 5dc35335d41d96cfe3496c6b9245cb2f9a149c22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8366a1d3239f1e3fa990b95f44b74d165e45054
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868990"
 ---
 # <a name="delete-androidenterprisewificonfiguration"></a>删除 androidEnterpriseWiFiConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

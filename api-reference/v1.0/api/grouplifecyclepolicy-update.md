@@ -2,12 +2,13 @@
 title: 更新 groupLifecyclePolicy
 description: 更新 groupLifecyclePolicy 资源类型对象的属性。
 author: dkershaw10
-ms.openlocfilehash: 315e9b1688ca645c96ff477f0efb8d2f3642121c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66b0d19ac4f1ae24ec76702ffb55542b363e43ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864867"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -29,7 +30,7 @@ ms.locfileid: "27348585"
 PATCH /groupLifecyclePolicies/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name | 说明 |
+| 名称 | 说明 |
 |:-----------|:-----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json  |

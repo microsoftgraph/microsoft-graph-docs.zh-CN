@@ -2,12 +2,13 @@
 title: 创建 editionUpgradeConfiguration
 description: 创建新的 editionUpgradeConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 9ea7bb6206b882f81cad3cfd62419dc887f04898
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a0b40ce0ffc32f50b3152f55d6aa44237c35016
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866946"
 ---
 # <a name="create-editionupgradeconfiguration"></a>创建 editionUpgradeConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 获取 multiValueLegacyExtendedProperty
 description: 展开。
-ms.openlocfilehash: c56afa8492954bcb68c5f36df00abdfce51cc2b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866323"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -96,7 +97,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ```
 
 ## <a name="path-parameters"></a>路径参数
-|参数|类型|说明|
+|参数|类型|Description|
 |:-----|:-----|:-----|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 

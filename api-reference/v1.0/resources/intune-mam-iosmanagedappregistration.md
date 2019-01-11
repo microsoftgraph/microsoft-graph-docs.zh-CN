@@ -1,12 +1,13 @@
 ---
 title: iosManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 iOS 应用的同步详细信息。
-ms.openlocfilehash: f62024fe2b3222e1595bfd8fd8c15edb424daff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eb36bf1e96a8b7a54daf9d02b4cc2765a1844d4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868066"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 

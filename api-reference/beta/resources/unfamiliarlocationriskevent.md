@@ -1,12 +1,13 @@
 ---
 title: unfamiliarLocationRiskEvent 资源类型
 description: 风险事件检测到的 Azure Active Directory 标识保护其中帐户登录尝试从用户的新位置。 Azure AD 身份保护文档中，可以找到有关风险事件的完整信息。
-ms.openlocfilehash: 7fa75c28fcc6432a5f8e32bff695e32d76c5acdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 130d68bfb23bdb23b6a9de81fa988d38db1d8c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868738"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27042724"
 |[获取 unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |读取属性和 unfamiliarLocationRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
@@ -38,7 +39,7 @@ ms.locfileid: "27042724"
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为 NULL。|
 

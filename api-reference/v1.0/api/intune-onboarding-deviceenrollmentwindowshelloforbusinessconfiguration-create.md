@@ -2,12 +2,13 @@
 title: 创建 deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: 创建新的 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 1c17cfccfd6875b11a392e5d8c00785e1f10673b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c8dac652a317020771cbe522295d9a2f5e207d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348599"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860723"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>创建 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +59,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
-|状态|[启用](../resources/intune-onboarding-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|state|[启用](../resources/intune-onboarding-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |securityDeviceRequired|Boolean|尚未记录|
 |unlockWithBiometricsEnabled|Boolean|尚未记录|
 |remotePassportEnabled|Boolean|尚未记录|

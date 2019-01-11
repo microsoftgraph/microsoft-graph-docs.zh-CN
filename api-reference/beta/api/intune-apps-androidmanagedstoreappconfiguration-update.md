@@ -2,12 +2,13 @@
 title: 更新 androidManagedStoreAppConfiguration
 description: 更新 androidManagedStoreAppConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: a2643ac3f7ea23b500315a06505f5bb378ee0d58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2dd800fdc1447f142b6864f92145ada957ccc5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859309"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>更新 androidManagedStoreAppConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
