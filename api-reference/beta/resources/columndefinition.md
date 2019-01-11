@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 9b99abe78b009786d489ec7f0c0fdce1e2945b1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844490"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
@@ -58,7 +59,7 @@ ms.locfileid: "27041609"
 以下属性表示列存储的数据类型以及该数据的其他设置。
 （布尔值、 计算，选择、 货币、 日期时间、 查找、 数量、 personOrGroup、 文本） 与类型相关的属性都是互斥的--列可以仅具有指定两者之一。
 
-| 属性名           | 类型    | 说明
+| 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
 | **说明**         | string  | 面向用户的列描述。

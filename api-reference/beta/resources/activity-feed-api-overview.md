@@ -1,12 +1,13 @@
 ---
 title: 使用活动源 REST API
 description: '您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的活动设备和平台。 代表用户通过委派的权限和用户活动权限，可用于个人或工作和学校帐户执行活动订阅源的 API 请求。 '
-ms.openlocfilehash: 8f66f7b991df361c96404d4fe1a3c9d19faf2436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 677d98d8658c282c5db822c46a78fc664a34fbc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842852"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 

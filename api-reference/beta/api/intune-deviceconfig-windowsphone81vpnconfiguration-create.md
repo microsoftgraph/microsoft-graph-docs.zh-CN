@@ -2,12 +2,13 @@
 title: 创建 windowsPhone81VpnConfiguration
 description: 创建新的 windowsPhone81VpnConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 3880742f3c0ccafcf647b7747cba1d63d90def73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dfaa4f7c6a40f3acaa83583093291db6196cf79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844623"
 ---
 # <a name="create-windowsphone81vpnconfiguration"></a>创建 windowsPhone81VpnConfiguration
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -63,12 +64,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applyOnlyToWindows81|Boolean|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |连接|[windowsVpnConnectionType](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|连接类型。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)。 可取值为：`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`。|
 |loginGroupOrDomain|字符串|登录组或域时连接类型设置为 Dell 使 SonicWALL Mobile 连接。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|enableSplitTunneling|Boolean|启用拆分隧道的 VPN。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|enableSplitTunneling|布尔|启用拆分隧道的 VPN。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |代理服务器|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|代理服务器。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|bypassVpnOnCompanyWifi|Boolean|在公司 Wi-fi 绕过 VPN。|
-|bypassVpnOnHomeWifi|Boolean|绕过 Wi-fi 主页上的 VPN。|
+|bypassVpnOnCompanyWifi|布尔|在公司 Wi-fi 绕过 VPN。|
+|bypassVpnOnHomeWifi|布尔|绕过 Wi-fi 主页上的 VPN。|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`。|
-|rememberUserCredentials|Boolean|请记住用户凭据。|
+|rememberUserCredentials|布尔|请记住用户凭据。|
 |dnsSuffixSearchList|String 集合|DNS 后缀搜索列表。|
 
 

@@ -2,12 +2,13 @@
 title: managedDevicePartnerReportedHealthState 枚举类型
 description: 可用的运行状况状态的设备运行状况 API
 author: tfitzmac
-ms.openlocfilehash: 56935f924c0796fe0db1be7b34a4782b5072784f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c714c9ed2b070106a37b41712eeb29210d98e60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841249"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27301076"
 
 可用的运行状况状态的设备运行状况 API
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|设备运行状况不尚未报告|
 |激活|1|设备已激活通过移动的威胁防御合作伙伴，但不是报告运行状况。|

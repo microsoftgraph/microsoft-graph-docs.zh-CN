@@ -1,12 +1,13 @@
 ---
 title: 更新 plannertaskdetails
 description: 更新 **plannertaskdetails** 对象的属性。
-ms.openlocfilehash: c5c8f54785e2facfa7ab79d1f9e7fef11d328710
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b87688c91a3fe33439c15c403ff248b171a3241e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840192"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 

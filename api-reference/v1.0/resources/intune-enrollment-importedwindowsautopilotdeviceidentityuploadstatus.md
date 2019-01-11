@@ -2,12 +2,13 @@
 title: importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 9c25a51d8219277f009776c866ffcf4bb9ea63cd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85bf2b3567e3ef78c0958cb12cd65e1573af486f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840409"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27350839"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |noUpload|0|无上载状态。|
 |挂起|1|挂起的状态。|

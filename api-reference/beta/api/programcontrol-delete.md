@@ -1,12 +1,13 @@
 ---
 title: 删除 programControl
 description: 在 Azure AD 中访问审阅功能，删除 programControl 对象。  这将取消链接从某个程序访问审阅。
-ms.openlocfilehash: a7f21cd4c18ecda2ce15a6dd76d87322f75e4af0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 782cc8f336e84f82d937e3180d7de6af69e67e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843916"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
@@ -30,7 +31,7 @@ DELETE /programControls('<id>')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -1,12 +1,14 @@
 ---
 title: iosManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 iOS 设备上指定的一组应用的详细管理设置的策略
-ms.openlocfilehash: e0f38dc23d41b05be5f2e2e2a94edb19f199a1c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+localization_priority: Normal
+ms.openlocfilehash: 3e4cc50cc1f06609139b99b30688a9a88fafd9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841102"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection 资源类型
 

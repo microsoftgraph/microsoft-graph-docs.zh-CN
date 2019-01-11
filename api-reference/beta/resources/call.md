@@ -2,12 +2,13 @@
 title: 呼叫资源类型
 description: 没有传入呼叫的应用程序或应用程序创建新的传出呼叫通过时创建的**呼叫**资源`POST`上`app/calls`。
 author: VinodRavichandran
-ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810701"
 ---
 # <a name="call-resource-type"></a>呼叫资源类型
 
@@ -50,36 +51,36 @@ ms.locfileid: "27380567"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                                                                                                   | 说明                                                                                                                                                                                         |
+| 属性            | 类型                                                                                                   | Description                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activeModalities    | 字符串集合                                                                                      | 活动的形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 只读。 生成的服务器。                                                    |
-| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 应答呼叫参与者。 只读。 生成的服务器。                                                                                                                                |
-| callRoutes          | [callRoute](callroute.md)集合                                                                   | 呼叫已重定目标路由信息。 只读。 生成的服务器。                                                                                                                |
+| activeModalities    | 字符串集合                                                                                      | 活动的形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 此为只读属性。 生成的服务器。                                                    |
+| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 应答呼叫参与者。 此为只读属性。 生成的服务器。                                                                                                                                |
+| callRoutes          | [callRoute](callroute.md)集合                                                                   | 呼叫已重定目标路由信息。 此为只读属性。 生成的服务器。                                                                                                                |
 | callbackUri         | 字符串                                                                                                 | 将在其传递回调回调或订阅 ID。                                                                                                                               |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天的信息。                                                                                                                                                                               |
-| 方向           | 字符串                                                                                                 | 呼叫的方向。 可能的值是`incoming`或`outgoing`。 只读。 生成的服务器。                                                                                            |
+| 方向           | 字符串                                                                                                 | 呼叫的方向。 可能的值是`incoming`或`outgoing`。 此为只读属性。 生成的服务器。                                                                                            |
 | id                  | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md)或[serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。                                                                                                                                                                        |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议的功能。                                                                                                                                                             |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md)或[tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。                                                                                                                                                                            |
 | myParticipantId     | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
 | requestedModalities | String 集合                                                                                      | 请求的形式的列表。 | 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
-| resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果的信息。 例如可以保留终止原因。 只读。 生成的服务器。                                                                                                       |
+| resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果的信息。 例如可以保留终止原因。 此为只读属性。 生成的服务器。                                                                                                       |
 | ringingTimeoutInSeconds | Int32                                                                                              | 传出的对等呼叫的的响铃超时                                                                                                                                                     |
 | routingPolicies     | String 集合                                                                                      | 可取值为：`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`。                                                                                                   |
 | 源              | [participantInfo](participantinfo.md)                                                                  | 呼叫发起方。                                                                                                                                                                         |
-| state               | 字符串                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。 生成的服务器。                         |
+| state               | 字符串                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 此为只读属性。 生成的服务器。                         |
 | subject             | 字符串                                                                                                 | 对话的主题。                                                                                                                                                                    |
 | 目标             | [participantInfo](participantinfo.md)集合                                                       | 呼叫的目标。                                                                                                                                                                            |
 | tenantId            | 字符串                                                                                                 | Azure Active Directory 中的 tenantId。                                                                                                                                                                 |
 | terminationReason   | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
-| toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。 生成的服务器。                                                                                                                                                                        |
+| toneInfo            | [toneInfo](toneinfo.md)                                                                                | 此为只读属性。 生成的服务器。                                                                                                                                                                        |
 
 > 注意： 属性标记为`Server generated`处理时，将忽略`POST`上`app/calls`。
 
 ## <a name="relationships"></a>Relationships
 
-| 关系        | 类型                                                 | 说明                                                         |
+| 关系        | 类型                                                 | Description                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md)集合 | 只读。可为 NULL。                                                |
 | operations          | [commsOperation](commsoperation.md)集合       | 只读。可为 NULL。                                                |

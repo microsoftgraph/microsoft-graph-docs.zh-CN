@@ -2,12 +2,13 @@
 title: 列出 TableRowCollection
 description: 检索 tablerow 对象的列表。
 author: lumine2008
-ms.openlocfilehash: 422ccc499edad1e9ce22f45bc8dd49c0aa246978
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a841626b2f9a85e7cf36c7d968cafd9c1c9bced3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841228"
 ---
 # <a name="list-tablerowcollection"></a>列出 TableRowCollection
 
@@ -33,7 +34,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

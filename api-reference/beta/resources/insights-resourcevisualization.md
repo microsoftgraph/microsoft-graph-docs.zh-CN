@@ -2,12 +2,13 @@
 title: resourceVisualization 资源类型
 description: 包含属性的见解复杂类型。
 author: simonhult
-ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844973"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
@@ -70,7 +71,7 @@ ms.locfileid: "27333535"
 -   文章
 -   ExternalContent
 -   Folder
--   Other
+-   其他
 
 示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 

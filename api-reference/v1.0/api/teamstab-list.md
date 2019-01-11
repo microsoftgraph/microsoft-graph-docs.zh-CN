@@ -2,12 +2,13 @@
 title: 在通道列表选项卡
 description: '检索团队中指定的通道中的选项卡的列表。 '
 author: nkramer
-ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 628dcf57656782f2d921876dccb70173ef7b4623
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842880"
 ---
 # <a name="list-tabs-in-channel"></a>在通道列表选项卡
 

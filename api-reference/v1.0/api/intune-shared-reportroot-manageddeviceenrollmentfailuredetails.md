@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentFailureDetails 函数
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840367"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 函数
 
@@ -37,14 +38,14 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|

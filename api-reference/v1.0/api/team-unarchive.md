@@ -1,12 +1,13 @@
 ---
 title: Unarchive 团队
 description: 还原存档的团队。 这将还原发送消息和编辑团队，遵守租户和工作组设置用户的功能。 工作组已存档使用存档 API。
-ms.openlocfilehash: 7507a58ef75939110d0c740e20d8540838bda204
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f203e10c4f82379efcc6da3aff96bc1bc5bf702e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840080"
 ---
 # <a name="unarchive-team"></a>Unarchive 团队
 

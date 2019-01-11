@@ -1,12 +1,13 @@
 ---
 title: 创建 educationClass
 description: 创建新课程。 此操作还会创建通用组。 当您使用此 API 创建的类时，它将添加到组，这将特殊属性
-ms.openlocfilehash: 81b72b5b252c323a6a91152deaafaf8a927c8bf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b75ce58b1d56fe1ba231299b9c2c943ca28e0403
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843468"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 

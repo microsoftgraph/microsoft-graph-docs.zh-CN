@@ -2,12 +2,13 @@
 title: depEnrollmentBaseProfile 资源类型
 description: DepEnrollmentBaseProfile 资源表示 Apple 设备注册程序 (DEP) 注册配置文件。 相应的设备可以通过部署注册之前，必须将此类型的配置文件分配给 Apple DEP 序列号
 author: tfitzmac
-ms.openlocfilehash: 26335fd3d35494b815dd43531ad54b4796dc861c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16baaef2413bbbc169ef8823dc9043245cdfad91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308370"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844357"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile 资源类型
 
@@ -31,25 +32,25 @@ DepEnrollmentBaseProfile 资源表示 Apple 设备注册程序 (DEP) 注册配�
 |id|字符串|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象继承的 GUID|
 |displayName|字符串|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的继承配置文件的名称|
 |说明|字符串|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的继承配置文件的说明|
-|requiresUserAuthentication|Boolean|指示该配置文件是否要求来自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)用户身份验证继承|
+|requiresUserAuthentication|布尔|指示该配置文件是否要求来自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)用户身份验证继承|
 |configurationEndpointUrl|字符串|配置终结点 url，用于注册继承从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Boolean|指示是否这是默认配置文件|
-|supervisedModeEnabled|Boolean|监管模式下，设置为 True 可启用，false 否则。 请参阅https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune的其他信息。|
+|enableAuthenticationViaCompanyPortal|布尔|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|布尔|指示是否这是默认配置文件|
+|supervisedModeEnabled|布尔|监管模式下，设置为 True 可启用，false 否则。 请参阅https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune的其他信息。|
 |supportDepartment|字符串|支持部门信息|
-|passCodeDisabled|Boolean|指示是否密码设置窗格被禁用|
-|isMandatory|Boolean|指示是否强制配置文件|
-|locationDisabled|Boolean|指示是否位置服务设置窗格被禁用|
+|passCodeDisabled|布尔|指示是否密码设置窗格被禁用|
+|isMandatory|布尔|指示是否强制配置文件|
+|locationDisabled|布尔|指示是否位置服务设置窗格被禁用|
 |supportPhoneNumber|字符串|支持电话号码|
-|profileRemovalDisabled|Boolean|指示是否已禁用配置文件删除选项|
-|restoreBlocked|Boolean|指示是否还原设置窗格被阻止|
-|appleIdDisabled|Boolean|指示是否 Apple id 设置窗格被禁用|
-|termsAndConditionsDisabled|Boolean|指示是否已禁用条款和条件设置窗格|
-|touchIdDisabled|Boolean|指示是否触摸 id 设置窗格被禁用|
-|applePayDisabled|Boolean|指示是否 Apple 付薪设置窗格被禁用|
-|zoomDisabled|Boolean|指示是否缩放设置窗格被禁用|
-|siriDisabled|Boolean|指示是否 siri 设置窗格被禁用|
-|diagnosticsDisabled|Boolean|指示是否诊断设置窗格被禁用|
+|profileRemovalDisabled|布尔|指示是否已禁用配置文件删除选项|
+|restoreBlocked|布尔|指示是否还原设置窗格被阻止|
+|appleIdDisabled|布尔|指示是否 Apple id 设置窗格被禁用|
+|termsAndConditionsDisabled|布尔|指示是否已禁用条款和条件设置窗格|
+|touchIdDisabled|布尔|指示是否触摸 id 设置窗格被禁用|
+|applePayDisabled|布尔|指示是否 Apple 付薪设置窗格被禁用|
+|zoomDisabled|布尔|指示是否缩放设置窗格被禁用|
+|siriDisabled|布尔|指示是否 siri 设置窗格被禁用|
+|diagnosticsDisabled|布尔|指示是否诊断设置窗格被禁用|
 
 ## <a name="relationships"></a>Relationships
 无

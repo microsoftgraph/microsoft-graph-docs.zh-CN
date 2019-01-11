@@ -2,12 +2,13 @@
 title: 获取 managedDeviceMobileAppConfiguration
 description: 读取 managedDeviceMobileAppConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 7cd22bcd319c4cef7cc2781ac16435917ef8c8b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1eba97f75926ed22bd19762e5a44d3d070aa63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843839"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>获取 managedDeviceMobileAppConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

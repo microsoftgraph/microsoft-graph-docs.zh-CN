@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentAbandonmentDetails 函数
 description: 注册放弃的元数据的详细信息报表
 author: tfitzmac
-ms.openlocfilehash: 187f5389bbea761555f4067081d4e0557f2ce5bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840787"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 函数
 
@@ -39,14 +40,14 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|

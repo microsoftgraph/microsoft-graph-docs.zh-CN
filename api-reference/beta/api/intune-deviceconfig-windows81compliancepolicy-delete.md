@@ -2,12 +2,13 @@
 title: 删除 windows81CompliancePolicy
 description: 删除 windows81CompliancePolicy。
 author: tfitzmac
-ms.openlocfilehash: a4932f13aaa738ede3338843233af8a29e5d8526
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d82b5828f473f03fa9027e6ffe7a0ffb07d2ad3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842831"
 ---
 # <a name="delete-windows81compliancepolicy"></a>删除 windows81CompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

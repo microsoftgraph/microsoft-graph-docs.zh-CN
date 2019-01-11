@@ -1,12 +1,13 @@
 ---
 title: 列出 calendarView
 description: 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
-ms.openlocfilehash: 25090591750ed556407159f3744113b08d25fcae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 651484045823c3c189d2c4b5a6ee9f3c19815e06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843496"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 

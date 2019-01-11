@@ -2,12 +2,13 @@
 title: iosSingleSignOnSettings 资源类型
 description: iOS 的单一登录的 Kerberos 身份验证设置
 author: tfitzmac
-ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841060"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347367"
 
 iOS 的单一登录的 Kerberos 身份验证设置
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |allowedAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|允许使用此登录名的应用程序标识符的列表。 如果省略此字段，则在登录适用于设备上的所有应用程序。 该集合最多可包含 500 个元素。|
 |allowedUrls|String 集合|必须匹配才能使用此登录名的 HTTP Url 的列表。 与 iOS 9.0 或更高版本中，可以使用通配符。|

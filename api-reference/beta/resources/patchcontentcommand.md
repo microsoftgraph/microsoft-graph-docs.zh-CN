@@ -1,12 +1,13 @@
 ---
 title: patchContentCommand 资源类型
 description: PATCH 请求中要对 OneNote 页面进行的更改。
-ms.openlocfilehash: fb559a96aa5eef94dd07280b888da0df989b2363
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2e94f67a2a4e2e549d7367f0c48e31745d3bf659
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842726"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand 资源类型
 

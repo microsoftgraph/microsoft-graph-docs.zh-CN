@@ -1,12 +1,13 @@
 ---
 title: Get calendar
 description: '获取 calendar 对象的属性和关系。 日历可以是一个用户， '
-ms.openlocfilehash: f4ddefe694ea3afb03d9c6b1791f7774347deff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 15c21801702bf884a79f1dfed60867a2dc211efb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840857"
 ---
 # <a name="get-calendar"></a>Get calendar
 

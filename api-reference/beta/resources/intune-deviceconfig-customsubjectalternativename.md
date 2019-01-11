@@ -2,12 +2,13 @@
 title: customSubjectAlternativeName 资源类型
 description: 自定义的 Subject Alternative Name 定义
 author: tfitzmac
-ms.openlocfilehash: 5ed3f62cef38340ae7204b98e1fc984ba9bcb9cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8f0587e74e9c059ca3cbbda6af6947ded3b6bce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841130"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27349313"
 
 自定义的 Subject Alternative Name 定义
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|自定义 SAN 类型。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
 |name|字符串|自定义 SAN 名称|

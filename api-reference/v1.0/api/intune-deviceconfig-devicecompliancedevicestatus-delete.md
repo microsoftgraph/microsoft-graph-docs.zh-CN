@@ -2,12 +2,13 @@
 title: 删除 deviceComplianceDeviceStatus
 description: 删除 deviceComplianceDeviceStatus。
 author: tfitzmac
-ms.openlocfilehash: e84ab67867834cc5311015bc823ad39a7db15a7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b60260c3275f8fb0af2f38a4f935e20878748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804940"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>删除 deviceComplianceDeviceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

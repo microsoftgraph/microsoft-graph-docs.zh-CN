@@ -2,12 +2,13 @@
 title: 删除 mobileAppIntentAndState
 description: 删除 mobileAppIntentAndState。
 author: tfitzmac
-ms.openlocfilehash: dfc9b0f39a6933dd4972e47d09d652a4cc85107c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73f42ba38463c827f9863ab655f719996ac18cb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840717"
 ---
 # <a name="delete-mobileappintentandstate"></a>删除 mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ DELETE /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

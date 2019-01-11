@@ -2,12 +2,13 @@
 title: windowsKioskLocalUser 资源类型
 description: 用于标识网亭配置的本地帐户的类
 author: tfitzmac
-ms.openlocfilehash: 5ac98147172fd08fc9914a7d9302e3b074ca3246
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ab6a9dc0e3ea63ed5d9f60bb48b005aa98acab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844553"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>windowsKioskLocalUser 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27310820"
 继承自[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |userName|String|将锁定到此网亭配置本地用户|
 

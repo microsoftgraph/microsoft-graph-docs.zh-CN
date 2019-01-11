@@ -1,12 +1,13 @@
 ---
 title: iosMobileAppConfiguration 资源类型
 description: 包含 iOS 移动应用配置的属性、继承属性和操作。
-ms.openlocfilehash: dd93076f935073290b3b1d8c3457b827f5f0ed98
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ad2d701da1100a1ca1044efe89058aef7e1f874c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840927"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>iosMobileAppConfiguration 资源类型
 

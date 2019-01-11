@@ -1,12 +1,13 @@
 ---
 title: 更新程序
 description: 在 Azure AD 中访问审阅功能，则请更新现有程序对象。
-ms.openlocfilehash: e3d8ca75683a076f156e359431204517b60e7c6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840332"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -30,14 +31,14 @@ PATCH /programs('{programId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[程序](../resources/program.md)的对象的 JSON 表示形式。
 
 下表显示程序更新时可以提供的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  程序的名称。                   |
 | `description`               |`String`                              |  该程序的描述。           |

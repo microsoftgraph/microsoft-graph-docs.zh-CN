@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserCounts'
 description: 按产品获取报表周期内的每日活跃用户数。
-ms.openlocfilehash: 29cb7a18520774b192d5e9e71b62a7ca86fa9be5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0213ee12ec73fc43a0a321fa77d4c0d2495e4210
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844483"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 

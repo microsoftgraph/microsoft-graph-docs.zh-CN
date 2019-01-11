@@ -1,12 +1,13 @@
 ---
 title: 使用 Microsoft Graph API 来处理项目 Rome
 description: 项目 Rome 是 Microsoft 计划中，以构建一个跨设备体验平台。 当用户注销，使用客户端设备上登录这些用户使用同一 Microsoft 帐户时，项目 Rome 启用上进行交互的应用程序的本地客户端或服务应用程序和远程主机上的服务。 这将允许您围绕用户任务，而不是设备的程序跨设备和跨平台体验。
-ms.openlocfilehash: ab703ff76d3da4ec1c6a8cd1189f3d85e57bac65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840962"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 来处理项目 Rome
 

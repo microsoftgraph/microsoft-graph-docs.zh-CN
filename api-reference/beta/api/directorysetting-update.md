@@ -2,12 +2,13 @@
 title: 更新目录设置
 description: 更新特定目录设置对象的属性。
 author: lleonard-msft
-ms.openlocfilehash: c4ff2401397b7a89d30f1513c504acaca5c71140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1c4c4c408f287fe6bfcf84eed3599aa85e3afbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843349"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -33,7 +34,7 @@ PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。|
 

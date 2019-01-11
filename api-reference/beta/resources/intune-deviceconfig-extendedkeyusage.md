@@ -2,12 +2,13 @@
 title: extendedKeyUsage 资源类型
 description: 自定义扩展密钥使用率定义
 author: tfitzmac
-ms.openlocfilehash: 2b6155a0fbb234cb0b2081a8a4a226a8d218dbc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1fd159a9b9fdb621a1e52bd080c005c8b93129c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840976"
 ---
 # <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage 资源类型
 

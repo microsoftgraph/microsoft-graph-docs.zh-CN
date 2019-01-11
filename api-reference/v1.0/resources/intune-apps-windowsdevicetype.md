@@ -2,12 +2,13 @@
 title: windowsDeviceType 枚举类型
 description: 包含 Windows 设备类型的属性。
 author: tfitzmac
-ms.openlocfilehash: 74f169f66ab2fe1bf29fbd4a08c07c540367947f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d94bf34975c0bec7a7cb58e8b8cdcc099d500a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360688"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841081"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27360688"
 
 包含 Windows 设备类型的属性。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|无标志设置。|
 |桌面|1|是否支持桌面 Windows 设备类型。|

@@ -2,12 +2,13 @@
 title: deviceConfigurationConflictSummary 资源类型
 description: 冲突一设备配置策略的摘要。
 author: tfitzmac
-ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8d84a4240059ff9772fefd9737ad27d8fbae7a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843335"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>deviceConfigurationConflictSummary 资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "27308986"
 |[更新 deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|更新[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|组策略的给定设置冲突|
 |id|字符串|冲突策略的这组 id。 此 id 是分隔下划线字典顺序 ConflictingDeviceConfigurations 中的所有策略的 id。|

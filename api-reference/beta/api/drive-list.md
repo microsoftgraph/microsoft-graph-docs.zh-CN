@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出驱动器
-ms.openlocfilehash: f2a22e8bd7cca02aad549be5230f2436b3aa1791
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 81b5221e9c2823ac9729310d002f755e1c63e061
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843405"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 

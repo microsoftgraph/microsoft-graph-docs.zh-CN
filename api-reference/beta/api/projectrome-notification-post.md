@@ -1,12 +1,13 @@
 ---
 title: 创建和发送通知
 description: '创建和发送通知目标用户通过 Microsoft Graph。 通知存储在 Microsoft Graph 通知源存储，并发送到的用户登录到所有设备终结点上的所有应用程序客户端。  '
-ms.openlocfilehash: 7855d8b369a2efc6dada33c66c12ae76384a2760
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843895"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
@@ -30,7 +31,7 @@ POST /me/notifications/
 ## <a name="request-headers"></a>请求标头
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|Authorization | string |Authorization 标头用于传递的呼叫方凭据。 持有者 {令牌}。 必需。 |
+|Authorization | string |Authorization 标头用于传递的呼叫方凭据。 持有者 {令牌}。 必填。 |
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。
 

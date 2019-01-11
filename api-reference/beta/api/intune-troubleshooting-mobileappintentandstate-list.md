@@ -2,12 +2,13 @@
 title: 列表 mobileAppIntentAndStates
 description: 列出属性和 mobileAppIntentAndState 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: d8c26cc013714a755ac24242b7dad0dc26f1584c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 95fd038a37b81168fd0381d44bbdb2a29d604d0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841445"
 ---
 # <a name="list-mobileappintentandstates"></a>列表 mobileAppIntentAndStates
 
@@ -38,7 +39,7 @@ GET /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

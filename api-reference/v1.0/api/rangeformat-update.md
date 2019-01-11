@@ -2,12 +2,13 @@
 title: 更新 RangeFormat
 description: 更新 rangeformat 对象的属性。
 author: lumine2008
-ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 410c9fd705f0f91a48a0e0c6f542f4d539bcf914
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843090"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -29,7 +30,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

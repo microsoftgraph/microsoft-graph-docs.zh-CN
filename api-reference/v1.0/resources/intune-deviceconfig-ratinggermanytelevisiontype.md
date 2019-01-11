@@ -2,12 +2,13 @@
 title: ratingGermanyTelevisionType 枚举类型
 description: 在德国 TV 内容评级标签
 author: tfitzmac
-ms.openlocfilehash: ee2ec1ec2f77cc9b2f65f41f0d8616108d0b300f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1f0e16d43fe9a97f18b2bc02f2cacc8d54c7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841354"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27314460"
 
 在德国 TV 内容评级标签
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有 TV 都显示内容|
 |allBlocked|1|不允许任何电视显示内容|

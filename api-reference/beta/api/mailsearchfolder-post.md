@@ -1,12 +1,13 @@
 ---
 title: 创建 mailSearchFolder
 description: 此 API 用于指定的用户的邮箱中创建新 mailSearchFolder。
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840185"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -39,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| Authorization | `Bearer {token}`. 必填。 |
+| Content-Type | `application/json`. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 

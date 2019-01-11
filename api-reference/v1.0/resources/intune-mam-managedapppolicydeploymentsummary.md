@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummary 资源类型
 description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。
 author: tfitzmac
-ms.openlocfilehash: 1714a98e4ea6aa04eb7a91c4b6aace1dc78c01fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c767e6d5c5c5f93fac1f35bf0b256574425b559f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840710"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary 资源类型
 

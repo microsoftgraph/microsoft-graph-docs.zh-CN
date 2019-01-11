@@ -1,12 +1,13 @@
 ---
 title: governanceRoleDefinition 资源类型
 description: 表示角色定义。 有关 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、 读者、 参与者、 等。
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043111"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842447"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
@@ -27,7 +28,7 @@ ms.locfileid: "27043111"
 | 属性  | 类型      |说明|
 |:----|:----------|:----------|:----------|
 |id         |字符串     |角色定义的 id。 |
-|resourceId |String     |必需项。 与角色定义关联的资源的 id。 |
+|resourceId |String     |必需。 与角色定义关联的资源的 id。 |
 |externalId   |String     |外部角色定义的 id。|
 |displayName|字符串     |角色定义的显示名称。|
 |subjectCount|Int32     |可选。 分配给角色的主题数。 它表示对资源的请求者的访问状态。 若要获取的属性，请是明确使用`$select=subjectCount`查询中。|
@@ -38,7 +39,7 @@ ms.locfileid: "27043111"
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|只读。 相关联的角色定义的资源。|
+|资源|[governanceResource](../resources/governanceresource.md)|此为只读属性。 相关联的角色定义的资源。|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|角色定义关联的角色设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式

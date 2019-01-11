@@ -2,12 +2,13 @@
 title: 更新 chartgridlines
 description: 更新 chartgridlines 对象的属性。
 author: lumine2008
-ms.openlocfilehash: d59372d7ca2cf202ba78b947de317af37d2e4a62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 716c7f8224eb24b9591f6bf14ddc2eb360b54714
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843867"
 ---
 # <a name="update-chartgridlines"></a>更新 chartgridlines
 
@@ -31,7 +32,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridline
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

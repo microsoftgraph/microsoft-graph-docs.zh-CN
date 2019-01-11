@@ -1,12 +1,13 @@
 ---
 title: 删除 plannerPlan
 description: 删除 **plannerPlan**。
-ms.openlocfilehash: 6395d51eaed38b26d07f9b1ba8b0d78e52394404
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a996557c80acbc76044f66bcbba8893e358b552c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841383"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 

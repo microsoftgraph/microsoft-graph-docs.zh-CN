@@ -1,12 +1,13 @@
 ---
 title: 将 /me 定义为单一实例
 description: 这些是我必须以确保减价扫描程序文档中添加的内容
-ms.openlocfilehash: 76e8cc2ed8cb481d732e1b0727107eee8d520e77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da71bfcb25efbebdf4e6a111f23d8d16e3aca342
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842894"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 

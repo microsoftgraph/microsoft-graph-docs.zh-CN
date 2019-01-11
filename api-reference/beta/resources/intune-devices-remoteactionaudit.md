@@ -2,12 +2,13 @@
 title: remoteActionAudit 资源类型
 description: 属于某些租户的设备上启动远程操作的报告。
 author: tfitzmac
-ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840808"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit 资源类型
 

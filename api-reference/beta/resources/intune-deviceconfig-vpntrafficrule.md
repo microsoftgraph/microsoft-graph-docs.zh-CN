@@ -2,12 +2,13 @@
 title: vpnTrafficRule 资源类型
 description: VPN 流量规则定义。
 author: tfitzmac
-ms.openlocfilehash: 39303510fdfef39cbcb99df3f824ce29bcbfd65c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b7a4a1841850c0276e50068b9e9c7d1ce69e765
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324645"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840220"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 

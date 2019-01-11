@@ -1,12 +1,13 @@
 ---
 title: patternedRecurrence 资源类型
 description: 定期模式和区域。
-ms.openlocfilehash: 10a90db032cd7461e28bc096fd6213df44f3ea45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a9581150e3b7790f32268eb34f35b22abcb3642
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840794"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 

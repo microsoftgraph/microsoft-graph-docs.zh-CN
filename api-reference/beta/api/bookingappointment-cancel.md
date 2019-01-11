@@ -1,12 +1,13 @@
 ---
 title: bookingAppointment： 取消
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 4cd7b511f997f32c134f70a976cd94c2ed910fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844476"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment： 取消
 
@@ -37,7 +38,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |cancellationMessage|字符串|要与客户约会已被取消的确认消息。|
 

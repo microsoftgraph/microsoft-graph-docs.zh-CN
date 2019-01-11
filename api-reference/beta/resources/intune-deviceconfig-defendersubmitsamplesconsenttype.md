@@ -2,12 +2,13 @@
 title: defenderSubmitSamplesConsentType 枚举类型
 description: DefenderSubmitSamplesConsentType 的可能值
 author: tfitzmac
-ms.openlocfilehash: b9d9e02e384c4042d45b7850593559e86c1fe68d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48088f9bc24b3a1dc8d7a9ead1d8ad86f89572da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842166"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27337021"
 
 DefenderSubmitSamplesConsentType 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|0|自动发送安全示例|
 |alwaysPrompt|1|总是提示|

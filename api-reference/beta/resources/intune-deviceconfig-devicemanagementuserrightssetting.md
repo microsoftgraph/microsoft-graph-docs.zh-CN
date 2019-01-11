@@ -2,12 +2,13 @@
 title: deviceManagementUserRightsSetting 资源类型
 description: 代表设置用户权限。
 author: tfitzmac
-ms.openlocfilehash: c58a1d3e9a352561a1abec87fa4efa90c599fd7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b12dc0c1c682b59ef741b3d49083fd0739d27abb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844805"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting 资源类型
 

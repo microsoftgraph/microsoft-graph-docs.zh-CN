@@ -2,12 +2,13 @@
 title: ChartFill 资源类型
 description: 表示图表元素的填充格式。
 author: lumine2008
-ms.openlocfilehash: 6e34c06825f52d9cfec271e8bd62a0a5ae3ae451
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2ce5a3b9ea776d71fc3c6805f2bb66c93391894
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840038"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill 资源类型
 

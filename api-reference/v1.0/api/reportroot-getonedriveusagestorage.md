@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOneDriveUsageStorage'
 description: 获取 OneDrive for Business 使用的存储空间趋势。
-ms.openlocfilehash: 00205de201ef168c0c50cff29f903325411b371c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 454cf77d0dead87e6680828f978b9451466c216b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840129"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 

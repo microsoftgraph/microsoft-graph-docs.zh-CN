@@ -2,12 +2,13 @@
 title: 删除 androidCustomConfiguration
 description: 删除 androidCustomConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 06af1113f18dca40b39e1826db5a26af0f317685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27c37c5c983c8dddb45890d8914ed3c81d8fd551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844462"
 ---
 # <a name="delete-androidcustomconfiguration"></a>删除 androidCustomConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

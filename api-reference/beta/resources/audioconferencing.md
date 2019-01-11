@@ -2,12 +2,13 @@
 title: audioConferencing 资源类型
 description: 代表 onlineMeeting 电话访问信息。
 author: VinodRavichandran
-ms.openlocfilehash: 4e2ee26e6f9a86d50efcb21cd95b84b207488ef1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843622"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380224"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型    | 说明                                                                    |
+| 属性            | 类型    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | 字符串  | 指向包含拨入信息的可从外部访问网页的 URL。 |
 | leaderPasscode      | 字符串  | 连接到音频会议提供商所需的主持人密码。      |

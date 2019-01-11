@@ -2,12 +2,13 @@
 title: 删除 managedAppOperation
 description: 删除 managedAppOperation。
 author: tfitzmac
-ms.openlocfilehash: 9972f55149770874d1af2a8d52ae915f39b2f283
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ff02c7556657b9c20a5627a846a62cd03ef9dcb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841935"
 ---
 # <a name="delete-managedappoperation"></a>删除 managedAppOperation
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

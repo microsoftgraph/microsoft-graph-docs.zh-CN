@@ -2,12 +2,13 @@
 title: 列出 deviceComplianceUserStatuses
 description: 列出 deviceComplianceUserStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: aef65e47fea594cae0a47d7ae50c50f83120be21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 517bf763f6b7de4c65b2106d7a50af7ecf263313
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839961"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>列出 deviceComplianceUserStatuses
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

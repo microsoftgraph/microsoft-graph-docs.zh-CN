@@ -2,12 +2,13 @@
 title: 消息：replyAll
 description: '通过指定注释和修改任何可更新属性回复邮件的所有收件人 '
 author: angelgolfer-ms
-ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843300"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
@@ -42,7 +43,7 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |message|[message](../resources/message.md)|若要在答复邮件更新任何可写属性。|

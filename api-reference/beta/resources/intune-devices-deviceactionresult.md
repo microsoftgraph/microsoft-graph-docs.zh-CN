@@ -2,12 +2,13 @@
 title: deviceActionResult 资源类型
 description: 设备操作结果
 author: tfitzmac
-ms.openlocfilehash: fd2160c501820ec04a94b618b3456a3f8fafa6cd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 051d5f381e27e4901f7e2fb9280cea3dc0bb71c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806102"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult 资源类型
 

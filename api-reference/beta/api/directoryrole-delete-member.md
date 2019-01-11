@@ -2,12 +2,13 @@
 title: 删除目录角色成员
 description: 从 directoryRole 中删除成员。
 author: lleonard-msft
-ms.openlocfilehash: c2b0f8896ca2cc13ebb9f53900638875ade365bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57b99ec59765d58a96ae43919e7907d480e8817a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843321"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -36,7 +37,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 ## <a name="request-headers"></a>请求标头
 
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

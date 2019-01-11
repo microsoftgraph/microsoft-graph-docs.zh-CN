@@ -2,12 +2,13 @@
 title: 列出 windowsPhone81CompliancePolicies
 description: 列出 windowsPhone81CompliancePolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: c29426788d8ad045b31364de55880a24c47f6eed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c015e303580831a38c073739cd34e6171ac03791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810729"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>列出 windowsPhone81CompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

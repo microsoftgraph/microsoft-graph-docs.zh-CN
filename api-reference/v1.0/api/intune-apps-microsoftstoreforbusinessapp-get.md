@@ -2,12 +2,13 @@
 title: 获取 microsoftStoreForBusinessApp
 description: 读取 microsoftStoreForBusinessApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 52bd1170d0f310dae2401f261fe5f92dd3444787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8067e61e1184ff4a9de271ee94e924fc36b67783
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841431"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>获取 microsoftStoreForBusinessApp
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

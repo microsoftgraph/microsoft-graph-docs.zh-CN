@@ -2,12 +2,13 @@
 title: appleVpnConnectionType 枚举类型
 description: Apple VPN 连接类型。
 author: tfitzmac
-ms.openlocfilehash: 0904dbff2c9d30b362e3a024f4ff57fbd0769bb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46469b21fecdec5f4a7bb97d09eed9c9345914b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842159"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348557"
 
 Apple VPN 连接类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
 |pulseSecure|1|脉冲安全。|

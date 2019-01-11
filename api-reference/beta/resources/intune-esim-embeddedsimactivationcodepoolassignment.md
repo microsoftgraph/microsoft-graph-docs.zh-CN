@@ -2,12 +2,13 @@
 title: embeddedSIMActivationCodePoolAssignment 资源类型
 description: 嵌入的 SIM 激活代码池工作分配实体将特定 embeddedSIMActivationCodePool 分配给 AAD 设备组。
 author: tfitzmac
-ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8faac932014d4dc770748daa6a3d883b4e648d70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843307"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment 资源类型
 

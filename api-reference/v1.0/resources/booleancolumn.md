@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: BooleanColumn
-ms.openlocfilehash: f49824bc0b25d5c0d5a4bf230dd618c08dea1cf1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 395e2a2afe257ecb81f0333fa3145ac89e4ca88a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808601"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 

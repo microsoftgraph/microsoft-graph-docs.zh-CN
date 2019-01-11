@@ -2,12 +2,13 @@
 title: wiFiSecurityType 枚举类型
 description: Wi-fi 安全类型。
 author: tfitzmac
-ms.openlocfilehash: 291bc3660971a90ea113959368542e715a86b570
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90290b9b47154b95aca81d931fa66e7984688db1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839919"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27329188"
 
 Wi-fi 安全类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |打开|0|打开 （无身份验证）。|
 |wpaPersonal|1|WPA-个人。|

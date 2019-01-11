@@ -1,12 +1,13 @@
 ---
 title: modifiedProperty 资源类型
 description: 指示已更改的 Azure AD 中与旧值和新值的任何资源所有修改的属性
-ms.openlocfilehash: c504969ee12798969aa39490e79cb5b60bdb5435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844450"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty 资源类型
 指示已更改的 Azure AD 中与旧值和新值的任何资源所有修改的属性

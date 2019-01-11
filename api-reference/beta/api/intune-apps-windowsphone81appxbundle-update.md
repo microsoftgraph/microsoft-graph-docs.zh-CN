@@ -2,12 +2,13 @@
 title: 更新 windowsPhone81AppXBundle
 description: 更新 windowsPhone81AppXBundle 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 7e377b7ec81d16df768c42555cbdd17b9f2fdd64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14f221eae60a64629eea3fd5e9a2246a36e76ae3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808594"
 ---
 # <a name="update-windowsphone81appxbundle"></a>更新 windowsPhone81AppXBundle
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

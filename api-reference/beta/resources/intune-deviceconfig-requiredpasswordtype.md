@@ -2,12 +2,13 @@
 title: requiredPasswordType 枚举类型
 description: 所需的密码的可能值。
 author: tfitzmac
-ms.openlocfilehash: d4a46b800e7643eeefe1ada2282e437eb543cf9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39bf880de1cc8ea63af605e868ae37f7b32894bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839926"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27313655"
 
 所需的密码的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |字母数字|1|所需的字母数字密码。|

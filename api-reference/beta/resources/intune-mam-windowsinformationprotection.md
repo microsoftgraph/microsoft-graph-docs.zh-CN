@@ -2,12 +2,13 @@
 title: windowsInformationProtection 资源类型
 description: 用于配置详细管理设置的 Windows 信息保护策略
 author: tfitzmac
-ms.openlocfilehash: 5d4d36e0b4be5c5549c9ff1120756f8e851c2869
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea46d80d2d1c94be92dff92cc7c40eb01135254a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845099"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>windowsInformationProtection 资源类型
 

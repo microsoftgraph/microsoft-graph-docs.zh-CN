@@ -2,12 +2,13 @@
 title: runState 枚举类型
 description: 指示设备管理脚本执行状态的类型。
 author: tfitzmac
-ms.openlocfilehash: 87c845c02bd5a1571ab2f6382acbcc92cf81170d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38831625e5f3fc5f3e05b599054c738482b0a6cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845001"
 ---
 # <a name="runstate-enum-type"></a>runState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27349271"
 
 指示设备管理脚本执行状态的类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的结果。|
 |success|1|成功运行脚本。|

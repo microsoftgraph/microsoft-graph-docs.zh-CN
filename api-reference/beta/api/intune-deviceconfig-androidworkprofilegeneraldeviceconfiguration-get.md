@@ -2,12 +2,13 @@
 title: 获取 androidWorkProfileGeneralDeviceConfiguration
 description: 读取属性和 androidWorkProfileGeneralDeviceConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: de88aed944a6613005f76b467ba0bf71550f1bb1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e977ed702559d970e7928c26fdf441647602f901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842019"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>获取 androidWorkProfileGeneralDeviceConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

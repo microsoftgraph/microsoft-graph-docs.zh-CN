@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 195d4840fdb25339eda3858c0bac2395ee9b1c4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843314"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -63,14 +64,14 @@ ms.locfileid: "27048302"
 |:--------------------|:----------------------------|:-------------------------
 | id                  | 字符串                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | 集合 ([IdentitySet][]) | 有关链接类型的权限，向其授予权限的用户的详细信息。 只读。
+| grantedToIdentities | 集合 ([IdentitySet][]) | 有关链接类型的权限，向其授予权限的用户的详细信息。 此为只读属性。
 | 邀请          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom       | [ItemReference][]           | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
-| shareId             | 字符串                      | 一个可用于访问此**[共享 API][]** 通过共享项目的唯一标记。 只读。
+| shareId             | 字符串                      | 一个可用于访问此**[共享 API][]** 通过共享项目的唯一标记。 此为只读属性。
 | expirationDateTime  | DateTimeOffset              | 一种格式的 yyyy-MM-ddTHH:mm:ssZ 方法的指示权限的到期时间。 DateTime.MinValue 表示那里无过期期限设置此权限。 可选。
-| hasPassword         | 布尔值                     | 这指示是否将密码设置此权限，仅显示响应。 可选只读和仅 OneDrive 个人。
+| hasPassword         | 布尔                     | 这指示是否将密码设置此权限，仅显示响应。 可选只读和仅 OneDrive 个人。
 
 ### <a name="roles-enumeration-values"></a>角色枚举值
 

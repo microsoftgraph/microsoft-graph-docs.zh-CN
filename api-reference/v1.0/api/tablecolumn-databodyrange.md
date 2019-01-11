@@ -2,12 +2,13 @@
 title: 'TableColumn: DataBodyRange'
 description: 获取与列的数据体相关的 range 对象。
 author: lumine2008
-ms.openlocfilehash: 3a9555ceb03902e129fd6ec296894357461fe755
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 549f3f2af9ea7d7fbdd323f349397e72a5729684
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842691"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyR
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

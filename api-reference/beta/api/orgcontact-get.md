@@ -1,12 +1,13 @@
 ---
 title: 获取 orgContact
 description: 检索的属性和 orgcontact 对象的关系。
-ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 4a806c48ef7fc9adc4a8eb94bc7c28e3add78d14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283610"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842929"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 
@@ -31,7 +32,7 @@ GET /contacts/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

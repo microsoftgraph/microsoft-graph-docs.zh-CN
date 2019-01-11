@@ -2,12 +2,13 @@
 title: 列出 educationSchools
 description: 检索所有 school 对象的列表。
 author: mmast-msft
-ms.openlocfilehash: 361c0ae0f15244b78fcbd13bc7c190c0e53bf079
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39aa3625979b942b625389580f4c707af29f3077
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841375"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
