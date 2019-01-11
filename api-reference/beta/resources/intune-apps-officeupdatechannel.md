@@ -2,12 +2,13 @@
 title: officeUpdateChannel 枚举类型
 description: 若要指定 Office365 更新通道枚举。
 author: tfitzmac
-ms.openlocfilehash: 71a9d8f8722dd2ef151dcb7aad1bd6b825930ba6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 753c85c451934e8a9c2ee0f8fe2439900c487ded
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828481"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27338064"
 
 若要指定 Office365 更新通道枚举。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|尚未记录|
 |当前|1|尚未记录|

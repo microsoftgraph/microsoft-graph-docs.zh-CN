@@ -1,12 +1,13 @@
 ---
 title: skypeForBusinessActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 7a2438d0c4ecbaf6ae06e240ee6fd456c87c180f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828649"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail 资源类型
 

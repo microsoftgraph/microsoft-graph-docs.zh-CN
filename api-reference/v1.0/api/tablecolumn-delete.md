@@ -2,12 +2,13 @@
 title: 'TableColumn: delete'
 description: 从表中删除列。
 author: lumine2008
-ms.openlocfilehash: 8671a2ba6c37105e0746f12acbad50674ada5274
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96cd352df54decf5b86e63de89c6ab42819055a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826570"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: secureScores 资源类型
 description: '顶部 = n，其中 n = 要检索的数据的天数。 '
-ms.openlocfilehash: 96d5c487bb854559b0128d93ea8e0783fcc61f0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828733"
 ---
 # <a name="securescores-resource-type"></a>secureScores 资源类型
 
@@ -19,21 +20,21 @@ ms.locfileid: "27042314"
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列表 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取属性和 secureScores 对象的元数据。|
+|[列出 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取属性和 secureScores 对象的元数据。|
 
 
 ## <a name="properties"></a>属性
 实体类型包含属性的租户安全得分 （每日快照数据）。
 
-|属性 |类型 |说明 |
+|属性 |类型 |Description |
 |:--|:--|:--|
 |   azureTenantId   |   字符串  |   GUID string 租户 id。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
 |   id  |   字符串  |   AzureTenantId_createdDateTime 的组合。   |
 |   licensedUserCount   |   Int32   |   许可的给定租户的用户计数。    |
 |   activeUserCount |   Int32   |   给定租户的活动用户数。  |
-|   currentScore    |   双精度数  |   在指定日期的租户当前获得分数。    |
-|   maxScore |  双精度数  |   在指定日期租户最大得分。    |
+|   currentScore    |   Double  |   在指定日期的租户当前获得分数。    |
+|   maxScore |  Double  |   在指定日期租户最大得分。    |
 |   enabledServices |   String 集合   |   租户 （例如，Exchange online、 Skype、 Sharepoint） 的 Microsoft 提供服务。   |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |按不同的作用域 （例如，按行业，平均由安装的平均） 和控制类别 （Identity、 数据、 设备、 应用程序、 基础结构） 范围内的平均得分。 |
 |   controlScores | [controlScore](controlscore.md)集合  |   包含租户分数的一组控件。   |

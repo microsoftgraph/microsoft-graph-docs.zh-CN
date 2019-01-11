@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 更改共享权限
-ms.openlocfilehash: d6c710ca4d90bffba18cde316410480f1dde5821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825338"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -51,7 +52,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
 为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型              | 说明                   |
+| 属性 | 类型              | Description                   |
 |:---------|:------------------|:------------------------------|
 | roles    | String 集合 | 权限类型的数组。 |
 

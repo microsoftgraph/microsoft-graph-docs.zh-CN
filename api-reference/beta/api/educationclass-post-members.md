@@ -2,12 +2,13 @@
 title: 添加学生
 description: 向课程添加成员。
 author: mmast-msft
-ms.openlocfilehash: f38edbfdf3abbb66e3de839485b2c4fdbfaa48df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fda89865e706fb64deb40d3791431cac0a57e1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824197"
 ---
 # <a name="add-a-student"></a>添加学生
 

@@ -2,12 +2,13 @@
 title: androidForWorkSyncStatus 枚举类型
 description: 使用 Google EMM API 的租户的同步状态
 author: tfitzmac
-ms.openlocfilehash: 937abe8d814144f1bda65f87f48ac363ad71d76e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0149c76c3f06a0c8cad754431b852d637ba185d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807915"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>androidForWorkSyncStatus 枚举类型
 

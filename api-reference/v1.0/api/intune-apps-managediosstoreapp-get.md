@@ -2,12 +2,13 @@
 title: 获取 managedIOSStoreApp
 description: 读取 managedIOSStoreApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: cebe7a431b7b41f3f1cb05e4464e932118322516
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce32e629ff59a63d4d321b7b59972e2aa9dfbd31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830287"
 ---
 # <a name="get-managediosstoreapp"></a>获取 managedIOSStoreApp
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

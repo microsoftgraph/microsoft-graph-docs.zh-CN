@@ -2,12 +2,13 @@
 title: windowsUpdateScheduledInstall 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 4a8943fa0275d8b9e5a668be207c90304f22a327
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19e0ced371108103398e26c6067f4ce3b3ab67e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806403"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 

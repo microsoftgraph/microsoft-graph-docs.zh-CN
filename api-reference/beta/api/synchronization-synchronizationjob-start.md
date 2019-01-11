@@ -1,12 +1,13 @@
 ---
 title: 启动 synchronizationJob
 description: 启动现有同步作业。 如果该作业暂停状态，它将继续处理更改从暂停的位置的点。 如果该作业在隔离，将被清除隔离状态。
-ms.openlocfilehash: c9f326a2c00564f25fb0ff982ede7e8454e14c8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 478f29d1c49cf6cc820fcc52393f4721ff94caac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826213"
 ---
 # <a name="start-synchronizationjob"></a>启动 synchronizationJob
 

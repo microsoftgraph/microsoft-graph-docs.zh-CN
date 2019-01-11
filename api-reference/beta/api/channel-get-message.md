@@ -2,12 +2,13 @@
 title: 获取频道消息
 description: 检索单个邮件 （不带及其答复） 中的工作组的通道。
 author: nkramer
-ms.openlocfilehash: 2da10f4151cc1ddaaa1bddfe376f4035a6baa180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 202e2c341e58175e1807e1aa47c120f6c829a7c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829118"
 ---
 # <a name="get-channel-message"></a>获取频道消息
 

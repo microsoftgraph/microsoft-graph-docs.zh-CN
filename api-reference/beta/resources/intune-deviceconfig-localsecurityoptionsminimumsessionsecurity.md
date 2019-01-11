@@ -2,12 +2,13 @@
 title: localSecurityOptionsMinimumSessionSecurity 枚举类型
 description: LocalSecurityOptionsMinimumSessionSecurity 的可能值
 author: tfitzmac
-ms.openlocfilehash: 5feabd9c84ec42f55bb45b952be5af834fd84498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb6912e7d3bba42364849165cceb28050ddacfae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833234"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27350629"
 
 LocalSecurityOptionsMinimumSessionSecurity 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|发送 LM 和 NTLM 响应|
 |requireNtmlV2SessionSecurity|1|如果协商，发送 LM 和 NTLM 使用 NTLMv2 会话安全|

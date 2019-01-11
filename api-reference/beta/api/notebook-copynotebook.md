@@ -1,12 +1,13 @@
 ---
 title: 'notebook: copyNotebook'
 description: 将笔记本复制到目标文档库中的 Notebooks 文件夹。如果该文件夹不存在，则将创建该文件夹。
-ms.openlocfilehash: 4d22c6904f14d0ccc5d4f3de35cdf46fbd3afd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba9ed886ab0102a3ed66c31efbc420832e67d316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833052"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 
@@ -42,7 +43,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供包含操作所需参数的 JSON 对象。如果无需任何参数，则可以发送空的正文。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |siteCollectionId|字符串|若要将复制到的 SharePoint 网站的 id。 仅当将复制到 Office 365 团队网站使用。|
 |siteId|字符串|SharePoint 网站复制到的 id。 仅当将复制到 Office 365 团队网站使用。|

@@ -2,12 +2,13 @@
 title: 列出成员
 description: 检索分配给目录角色的用户列表。只能将用户分配给目录角色。
 author: lleonard-msft
-ms.openlocfilehash: 8bd0f67d6ca565dac6dfae501f5bc5c829f4db3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824806"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -32,7 +33,7 @@ GET /directoryRoles/{id}/members
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

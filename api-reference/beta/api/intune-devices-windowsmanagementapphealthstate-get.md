@@ -2,12 +2,13 @@
 title: 获取 windowsManagementAppHealthState
 description: 读取属性和 windowsManagementAppHealthState 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 08a6964f44b8169867aa9514049cce9f0e8cd3f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43030b06ea2913132e43086bd8eec9af3a616262
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828544"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>获取 windowsManagementAppHealthState
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

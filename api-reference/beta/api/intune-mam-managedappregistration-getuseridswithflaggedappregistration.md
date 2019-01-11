@@ -2,12 +2,13 @@
 title: getUserIdsWithFlaggedAppRegistration 函数
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 7f57ab3af48ac7e815b914be3339435d6be58fc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02e74fe01ea289ba2ba18f06bbe0b980934484a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827207"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>getUserIdsWithFlaggedAppRegistration 函数
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

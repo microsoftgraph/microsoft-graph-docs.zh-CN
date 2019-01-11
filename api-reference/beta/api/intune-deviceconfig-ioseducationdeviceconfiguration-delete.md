@@ -2,12 +2,13 @@
 title: 删除 iosEducationDeviceConfiguration
 description: 删除 iosEducationDeviceConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 6cb888885a3c38660e79547587e2cc20a4533539
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 452a5798b745220e3e5144adfc2d0f9b7daad926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806984"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>删除 iosEducationDeviceConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

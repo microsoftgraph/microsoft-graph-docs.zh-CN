@@ -1,12 +1,13 @@
 ---
 title: 获取 connectorGroup
 description: 检索 connectorGroup 对象的属性。
-ms.openlocfilehash: 8677432bf14559d47811218dc20cd0af6837dd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df809efdd9e89d34abf79893bb5a747e500a7a81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824302"
 ---
 # <a name="get-connectorgroup"></a>获取 connectorGroup
 
@@ -33,7 +34,7 @@ GET /connectorGroups/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

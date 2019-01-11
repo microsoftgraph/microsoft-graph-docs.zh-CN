@@ -1,12 +1,13 @@
 ---
 title: 创建应用程序
 description: 使用此 API 创建新的应用程序。
-ms.openlocfilehash: 08300057f78671ce74dd98bd98f7d3182bde083d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9d1c76f153c27ab3df24a93b44a570c2c1d836a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824666"
 ---
 # <a name="create-application"></a>创建应用程序
 
@@ -31,7 +32,7 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[应用程序](../resources/application.md)对象的 JSON 表示形式。

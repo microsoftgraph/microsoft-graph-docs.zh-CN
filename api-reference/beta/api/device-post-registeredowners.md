@@ -2,12 +2,13 @@
 title: 创建 registeredOwner
 description: 将用户添加为设备的已注册所有者。
 author: tfitzmac
-ms.openlocfilehash: 39cbd53b634b3f1388a27acf81e80ca2a7953693
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1c8151f43ea7c4eb8e1235727a6b9f40f193853
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824260"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
@@ -31,7 +32,7 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

@@ -2,12 +2,13 @@
 title: managedDeviceRemoteAction 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 1a9db8f1c4f826d3645caf05c8ca42214930dd52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc75efe53e561f90669c0619078c1b218531a6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827375"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27330497"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |停用|0|尚未记录|
 |delete|1|尚未记录|

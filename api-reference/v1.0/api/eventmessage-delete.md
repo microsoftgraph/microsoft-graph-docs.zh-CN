@@ -2,12 +2,13 @@
 title: 删除 eventMessage
 description: 删除 eventMessage。
 author: angelgolfer-ms
-ms.openlocfilehash: 13ca9c908dc1b00a355c33f69951e04b80f26e0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb6f00b642a919e63250074dc6f447be7997a722
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831274"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 
@@ -31,7 +32,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

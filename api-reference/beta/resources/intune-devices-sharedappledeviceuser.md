@@ -2,12 +2,13 @@
 title: sharedAppleDeviceUser 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 4e16d691ed6286fb8046c0693292012e1e94a0ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ee74080b95328cf55813dc628ee7a517dff08e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806851"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27315986"
 |属性|类型|说明|
 |:---|:---|:---|
 |userPrincipalName|字符串|用户名|
-|dataToSync|Boolean|数据同步|
+|dataToSync|布尔|数据同步|
 |dataQuota|Int64|数据配额|
 |dataUsed|Int64|数据配额|
 

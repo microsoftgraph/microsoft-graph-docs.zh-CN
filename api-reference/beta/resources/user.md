@@ -2,12 +2,13 @@
 title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
-ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 1bec385ef452316e3c7c9eb79989fc10e534de26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833304"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -82,7 +83,7 @@ ms.locfileid: "27348200"
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
 |ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`，`notAdult`和`adult`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |
@@ -104,23 +105,23 @@ ms.locfileid: "27348200"
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|字符串|用户的职务。支持 $filter。|
 |legalAgeGroupClassification|字符串| 企业应用程序用于确定的用户的法律年龄组。 此属性是只读的计算基于`ageGroup`和`consentProvidedForMinor`属性。 允许值： `null`， `minorWithOutParentalConsent`， `minorWithParentalConsent`， `minorNoParentalConsentRequired`，`notAdult`和`adult`。 引用[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。）|
-|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)集合|为此用户的许可证分配状态。 只读。|
+|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)集合|为此用户的许可证分配状态。 此为只读属性。|
 |mail|字符串|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。 您可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)设置发送自动答复传入邮件、 区域设置、 和时区。|
 |mailNickname|字符串|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
-|onPremisesDistinguishedName|字符串| 包含在本地 Active Directory`distinguished name`或`DN`。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
-|onPremisesDomainName|字符串| 包含本地`domainFQDN`，也称为 dnsDomainName 从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
+|onPremisesDistinguishedName|字符串| 包含在本地 Active Directory`distinguished name`或`DN`。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
+|onPremisesDomainName|字符串| 包含本地`domainFQDN`，也称为 dnsDomainName 从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选，也不可筛选。 为`onPremisesSyncEnabled`用户，此组属性是主要的内部部署和是只读的。 仅限云用户 (其中`onPremisesSyncEnabled`为 false)，这些属性的创建过程中可以设置或更新。 |
 |onPremisesImmutableId|字符串|此属性用于将内部部署 Active Directory 用户帐户对其 Azure AD 用户对象相关联。 必须指定此属性，当在图表中创建新的用户帐户，如果您将联盟的域用户的`userPrincipalName`(UPN) 属性。 **重要：****$** 和指定此属性时，不能使用 **_** 字符。 支持 $filter。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合| 设置过程中使用 Microsoft 同步产品时错误。 |
-|onPremisesSamAccountName|字符串| 包含本地`sAMAccountName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
+|onPremisesSamAccountName|字符串| 包含本地`sAMAccountName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
 |onPremisesSecurityIdentifier|字符串|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读 |
-|onPremisesUserPrincipalName|字符串| 包含本地`userPrincipalName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
+|onPremisesUserPrincipalName|字符串| 包含本地`userPrincipalName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
 |otherMails|字符串| 用户; 其他电子邮件地址列表例如： `["bob@contoso.com", "Robert@fabrikam.com"]`。 支持 $filter。|
 |passwordPolicies|字符串|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
@@ -131,10 +132,10 @@ ms.locfileid: "27348200"
 |preferredName|String|用户的首选名称。|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
 |proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 需要多值属性筛选器表达式的 **any** 运算符。只读，不可为 Null。支持 $filter。          |
-|refreshTokensValidFromDateTime|DateTimeOffset| 这次均无效，和应用程序会发生错误时使用无效刷新或会话令牌获取委派的访问令牌 （用于访问 Microsoft Graph 如 Api） 之前，发出任何刷新令牌或会话令牌 (会话 cookie)。  如果发生这种情况，应用程序需要获取新刷新令牌的授权终结点向发出请求。 只读。 使用[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)重置。|
+|refreshTokensValidFromDateTime|DateTimeOffset| 这次均无效，和应用程序会发生错误时使用无效刷新或会话令牌获取委派的访问令牌 （用于访问 Microsoft Graph 如 Api） 之前，发出任何刷新令牌或会话令牌 (会话 cookie)。  如果发生这种情况，应用程序需要获取新刷新令牌的授权终结点向发出请求。 此为只读属性。 使用[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)重置。|
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
-|showInAddressList|Boolean|**true**如果 Outlook 全局地址列表应包含此用户，否则为**false**。 如果未设置，这将被视为**true**。 对于用户通过邀请管理器邀请，此属性将设置为**false**。|
+|showInAddressList|布尔|**true**如果 Outlook 全局地址列表应包含此用户，否则为**false**。 如果未设置，这将被视为**true**。 对于用户通过邀请管理器邀请，此属性将设置为**false**。|
 |skills|String collection|供用户枚举其技能的列表。|
 |state|字符串|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
@@ -153,7 +154,7 @@ ms.locfileid: "27348200"
 
 企业应用程序开发人员使用此只读属性以确保正确处理根据其法律年龄组的用户。 计算基于用户的`ageGroup`和`consentProvidedForMinor`属性。
 
-| 值   | # |说明|
+| 值   | # |Description|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`ageGroup`已经为用户设置。|
 |minorWithoutParentalConsent |1|（留作将来使用）|
@@ -168,7 +169,7 @@ ms.locfileid: "27348200"
 
 #### <a name="agegroup-property"></a>ageGroup 属性
 
-| 值    | # |说明|
+| 值    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`ageGroup`已经为用户设置。|
 |次要|1|用户是考虑次要。|
@@ -177,7 +178,7 @@ ms.locfileid: "27348200"
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
 
-| 值    | # |说明|
+| 值    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`consentProvidedForMinor`已经为用户设置。|
 |授予|1|已为用户都具有帐户获得许可。|
@@ -186,7 +187,7 @@ ms.locfileid: "27348200"
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型 |说明|
+| 关系 | 类型 |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md)集合| 使用验收状态的用户的词。 只读。 可为 Null。|
 |日历|[日历](calendar.md)|用户的主日历。只读。|

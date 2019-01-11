@@ -1,12 +1,13 @@
 ---
 title: 消息：答复
 description: '答复邮件发件人、 将注释添加或修改任何可更新一个**答复**呼叫中的所有属性。 '
-ms.openlocfilehash: 93130e8a877b9a7bdc553646037f583fd8da84fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3844969c8c4bbec9026aee8477db968d5a3b0e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827459"
 ---
 # <a name="message-reply"></a>消息：答复
 

@@ -1,12 +1,13 @@
 ---
 title: networkConnection 资源类型
 description: 包含有关与通知相关的网络连接的状态信息。
-ms.openlocfilehash: e3352cbda430412691285c209c566fb379045681
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78ddcfd19d68b8dcd64c74a5beed6d1430f0ca38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826507"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27011316"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |applicationName|String|管理网络连接 （例如，Facebook、 SMTP 等） 的应用程序的名称。|
 |destinationAddress|字符串|目标 IP 地址 （的网络连接）。|
@@ -32,7 +33,7 @@ ms.locfileid: "27011316"
 |riskScore|字符串|提供程序生成/计算风险的网络连接的分数。 建议值的范围为 0-1，这相当于百分比。|
 |sourceAddress|字符串|源 （即原点） IP 地址 （的网络连接）。|
 |sourcePort|字符串|源 （即原点） IP （网络连接端口）。|
-|状态|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
+|status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|字符串|目标 URL 参数 （后缀）。|
 
 ## <a name="json-representation"></a>JSON 表示形式

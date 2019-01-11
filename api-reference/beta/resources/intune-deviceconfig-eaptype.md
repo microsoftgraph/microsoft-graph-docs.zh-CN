@@ -2,12 +2,13 @@
 title: eapType 枚举类型
 description: 可扩展的身份验证协议 (EAP) 配置类型。
 author: tfitzmac
-ms.openlocfilehash: e95924209b8137a1c5d35896c0195e9e962d7af9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92c1cddd42f16556cbba51be7eb06a0f75c537a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828894"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27319542"
 
 可扩展的身份验证协议 (EAP) 配置类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |eapTls|13|EAP 传输层安全性 (EAP TLS)。|
 |闰|17|轻型可扩展的身份验证协议 （闰）。|

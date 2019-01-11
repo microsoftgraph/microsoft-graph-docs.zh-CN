@@ -1,12 +1,13 @@
 ---
 title: 列表 orgContacts
 description: 检索为组织的组织联系人列表中。
-ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 0b4dc4a099562b8817396bee8f3141fa32c28572
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831974"
 ---
 # <a name="list-orgcontacts"></a>列表 orgContacts
 
@@ -32,7 +33,7 @@ GET /contacts
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: stringKeyObjectValuePair 资源类型
 description: 表示其中的密钥是一个字符串，值是一个任意 JSON 对象的键 / 值对。 这是认为应该有一个名为属性 OData 打开类型`value`，它是一个有效的 JSON 对象。
-ms.openlocfilehash: ae536b2aab87b9920c2afcbe324e30b5f5380dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8545a4ef5a4931d3b886c95b4f39218bc418f53d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831449"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>stringKeyObjectValuePair 资源类型
 

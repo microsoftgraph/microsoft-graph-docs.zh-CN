@@ -1,12 +1,13 @@
 ---
 title: 更新 synchronizationSchema
 description: 更新给定的作业或模板的同步架构。 此方法完全请求中提供的一个与替换当前架构。 若要更新的模板架构，进行应用程序对象上的呼叫。 您必须是应用程序的所有者。
-ms.openlocfilehash: 18ad164f0f1860ce954a9d4e1170f71e47f513b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4f3f3540fe0d304b4edc3a5fcaec7b3366dbb0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826136"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 

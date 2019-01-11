@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: '创建包含评论或更新任何消息属性的全部答复邮件草稿 '
-ms.openlocfilehash: 85cdef106fcd84764fe0d5f86d24ecef6b6ed29e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d56f79b415232954434841d89cbdc95bafc1c6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816924"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

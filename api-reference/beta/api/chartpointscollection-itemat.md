@@ -2,12 +2,13 @@
 title: 'ChartPointsCollection: ItemAt'
 description: 根据其在系列中的位置检索点。
 author: lumine2008
-ms.openlocfilehash: f48a51e8da2c3dca76952460da61b492ea1235ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c497f0f15b3d1ddcdb3e5adb05d9e9d0b1ade57e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829013"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|要检索的对象的索引值。从零开始编制索引。|
 

@@ -1,12 +1,13 @@
 ---
 title: 列表 directorySettingTemplates
 description: 目录设置模板代表一组目录设置，从目录设置可能会创建和租户中使用的模板。  此操作检索可用的 directorySettingTemplates 对象的列表。
-ms.openlocfilehash: 964e2cfc9e06b6a996f63c92cae830e03c953cd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 288a914da11c09cd39767a48d527510998c9be1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833325"
 ---
 # <a name="list-directorysettingtemplates"></a>列表 directorySettingTemplates
 

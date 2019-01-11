@@ -2,12 +2,13 @@
 title: 获取已删除的项目
 description: 检索已删除的项目中最近删除项目的属性。
 author: lleonard-msft
-ms.openlocfilehash: e3a42fffba9a447661010ac9f6f5cff19df880c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 928ec2c303567afc7edc8e50b52f3a9ac327af80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831337"
 ---
 # <a name="get-deleted-item"></a>获取已删除的项目
 
@@ -44,7 +45,7 @@ GET /directory/deletedItems/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
 | Accept  | application/json |

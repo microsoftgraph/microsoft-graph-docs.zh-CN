@@ -1,12 +1,13 @@
 ---
 title: targetResource 资源类型
 description: 指示与审核活动关联的目标资源类型的集合。 每个目标资源类型将继承此资源从下面概括的属性。
-ms.openlocfilehash: ba3bee7ce89f73ed97610d62676c22d14488ed9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828677"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 指示与审核活动关联的目标资源类型的集合。 每个目标资源类型将继承此资源从下面概括的属性。
@@ -25,13 +26,13 @@ ms.locfileid: "27041893"
 
 |资源名称| 参考|
 |-------------|----------|
-设备|[targetResourceDevice](targetresourcedevice.md)
+Device|[targetResourceDevice](targetresourcedevice.md)
 目录|[targetResourceDirectory](targetresourcedirectory.md]
 Group|[targetResourceGroup](targetresourcegroup.md)
 策略|[targetResourcePolicy](targetresourcepolicy.md)
 Role|[targetResourceRole](targetresourcerole.md)
 服务主体|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
-User|[targetResourceUser](targetresourceuser.md)
+用户|[targetResourceUser](targetresourceuser.md)
 其他|[targetResourceOther](targetresourceother.md)
 
 ## <a name="json-representation"></a>JSON 表示形式

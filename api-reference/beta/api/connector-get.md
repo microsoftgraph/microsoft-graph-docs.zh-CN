@@ -1,12 +1,13 @@
 ---
 title: 获取连接器
 description: 检索连接器对象的属性。
-ms.openlocfilehash: f299648093350d4d91637268aa76908f69ca7a38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59a27a24dbb0f91881c4be71c0715ce0c648c4d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833332"
 ---
 # <a name="get-connector"></a>获取连接器
 
@@ -33,7 +34,7 @@ GET /connectorGroups/{id}/members/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

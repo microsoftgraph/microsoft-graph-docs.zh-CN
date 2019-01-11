@@ -2,12 +2,13 @@
 title: 删除 cartToClassAssociation
 description: 删除 cartToClassAssociation。
 author: tfitzmac
-ms.openlocfilehash: 736ac7b40582faa4643ae6ef980bf2b4c627d85e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c2204dceb7a21f071f9fae416160c99557ae01b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824512"
 ---
 # <a name="delete-carttoclassassociation"></a>删除 cartToClassAssociation
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

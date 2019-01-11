@@ -2,12 +2,13 @@
 title: 更新 educationsubmission
 description: 将薪等级和反馈添加到提交。 仅教师可以执行此操作。 请注意，基本权限不具有访问薪等级属性，因此无法写入薪等级或反馈。 此操作不会释放分数，以及向学生发送反馈。 教师必须采取的薪等级数据返回到学生显式释放操作。
 author: dipakboyed
-ms.openlocfilehash: 2a63091eb8778ee9a67f55ecb3b18680f80f017d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828782"
 ---
 # <a name="update-educationsubmission"></a>更新 educationsubmission
 
@@ -39,7 +40,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 
 <!-- Provide the property descriptions. -->
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |反馈|educationFeedback||
 |grade|educationAssignmentGrade||

@@ -1,12 +1,13 @@
 ---
 title: 获取 unfamiliarLocationRiskEvent
 description: 检索的属性和 unfamiliarlocationriskevent 对象的关系。
-ms.openlocfilehash: e75399b79b8f3535741549ce49f5cfcb5ee40077
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d58fc2c5b2c84ae0b43bbc2b83345d6bc6bff700
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827932"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>获取 unfamiliarLocationRiskEvent
 

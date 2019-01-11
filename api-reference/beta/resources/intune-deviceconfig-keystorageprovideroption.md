@@ -2,12 +2,13 @@
 title: keyStorageProviderOption 枚举类型
 description: 密钥存储提供程序 (KSP) 导入选项。
 author: tfitzmac
-ms.openlocfilehash: 7923dd5c4b8a09d834d29b65928430828f3dafac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4609092c3022b62331bbb6226a5b91e4b287ff79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826465"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342215"
 
 密钥存储提供程序 (KSP) 导入选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |useTpmKspOtherwiseUseSoftwareKsp|0|导入到受信任平台模块 (TPM) KSP 如果存在此参数，否则导入到软件 KSP。|
 |useTpmKspOtherwiseFail|1|导入到受信任平台模块 (TPM) KSP 如果存在此参数，否则会失败。|

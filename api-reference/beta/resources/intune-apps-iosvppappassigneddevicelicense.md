@@ -1,12 +1,13 @@
 ---
 title: iosVppAppAssignedDeviceLicense 资源类型
 description: iOS 卷购买计划设备许可证分配。 此类不支持创建、删除或更新。
-ms.openlocfilehash: 3adc3ea1de5f0e27d367c47ca88c978f18f15655
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5c7f378def53950fd4dfbcd76b2a2820506ed7d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828327"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense 资源类型
 

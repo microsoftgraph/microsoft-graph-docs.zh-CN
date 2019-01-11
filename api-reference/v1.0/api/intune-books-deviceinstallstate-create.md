@@ -2,12 +2,13 @@
 title: 创建 deviceInstallState
 description: 创建新的 deviceInstallState 对象。
 author: tfitzmac
-ms.openlocfilehash: c9fd02e51f9b78473762d99763ea37cdaeffb197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49979b883ffef895124d8bb57837d5c5103a0d67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825478"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

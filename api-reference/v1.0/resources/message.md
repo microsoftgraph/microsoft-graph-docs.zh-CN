@@ -2,12 +2,13 @@
 title: 邮件资源类型
 description: mailFolder 中的邮件。
 author: angelgolfer-ms
-ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833017"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -58,7 +59,7 @@ mailFolder 中的邮件。
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。 它可以是以 HTML 或文本格式。 了解有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
-|bodyPreview|String|邮件正文中的前 255 个字符。文本格式。|
+|bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
@@ -72,10 +73,10 @@ mailFolder 中的邮件。
 |inferenceClassification | inferenceClassificationType | 为用户、 基于推测的相关性或重要性-或显式重写的邮件分类。 可能的值为：`focused`或`other`。 |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|

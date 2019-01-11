@@ -2,12 +2,13 @@
 title: 列出 iosMobileAppConfigurations
 description: 列出 iosMobileAppConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: ecf23edce97954f0c6305e9a49503b857479728a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4af324de29c6ecaceb6a2f13da86d8337a008cdd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822328"
 ---
 # <a name="list-iosmobileappconfigurations"></a>列出 iosMobileAppConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

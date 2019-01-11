@@ -1,13 +1,14 @@
 ---
-title: Members
+title: 成员
 description: 介绍 teamsApp 的当前安装状态。
 author: nkramer
-ms.openlocfilehash: 52da05b61d1ef94f1dbc9b799c53b39049205fb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db2b21dc63399031f129ab06273c6cc1aef7928e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826171"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346352"
 
 ## <a name="members"></a>成员
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |notInstalled|0|应用程序并不安装到团队。|
 |安装|1|通常安装应用程序。|

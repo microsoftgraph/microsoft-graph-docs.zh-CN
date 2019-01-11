@@ -2,12 +2,13 @@
 title: 创建 ndesConnector
 description: 创建新的 ndesConnector 对象。
 author: tfitzmac
-ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be52a9b8b3b11a56c89c4c90ab42ef136017847d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832275"
 ---
 # <a name="create-ndesconnector"></a>创建 ndesConnector
 
@@ -38,7 +39,7 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +51,7 @@ POST /deviceManagement/ndesConnectors
 |:---|:---|:---|
 |id|字符串|NDES 连接符的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的最后一个连接时间|
-|状态|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|字符串|Ndes 连接器的友好名称。|
 
 

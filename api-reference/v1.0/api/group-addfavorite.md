@@ -1,12 +1,13 @@
 ---
 title: 'group: addFavorite'
 description: 将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。
-ms.openlocfilehash: 6703b0c159457ec2c2f3ea71ff1e48188c05ff2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2de37dccfa1912240b6ac131c700d3031b2ea2b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826731"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。

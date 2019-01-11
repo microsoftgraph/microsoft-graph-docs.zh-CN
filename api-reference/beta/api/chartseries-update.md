@@ -2,12 +2,13 @@
 title: 更新 chartseries
 description: 更新 chartseries 对象的属性。
 author: lumine2008
-ms.openlocfilehash: 69e6de2e6d332a63f4ea7b1cc23ca48032cbbaba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b7d80aca2aa0d98d37fabd7820f0d6752d9da3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833276"
 ---
 # <a name="update-chartseries"></a>更新 chartseries
 
@@ -29,7 +30,7 @@ ms.locfileid: "27358952"
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

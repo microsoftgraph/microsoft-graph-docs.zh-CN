@@ -1,12 +1,13 @@
 ---
 title: automaticRepliesMailTips 资源类型
 description: 有关对邮箱设置任何自动答复邮件提示。
-ms.openlocfilehash: 51657578474710d40cfc3feabdf41e50e7105942
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 80ecaaa9fced0bcb00494b0414a86f0a11fd8996
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833227"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27049222"
 有关对邮箱设置任何自动答复[邮件提示](../resources/mailtips.md)。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:-----|:-----|:-----|
 | message | 字符串 | 自动答复邮件。 |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | 一种语言中的自动答复邮件。 |

@@ -1,12 +1,13 @@
 ---
 title: circularGeofenceManagementCondition 资源类型
 description: 包含定义循环地理围管理条件，感兴趣，要监视的领域的信息。
-ms.openlocfilehash: 0ae10d226b48772bb70e975496295afd2d67229d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de1f924cf1e56cbb1084122b01b001e21dd6b5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828887"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
@@ -38,8 +39,8 @@ ms.locfileid: "27045551"
 |modifiedDateTime|DateTimeOffset|管理条件上次修改时间。 更新服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|此管理条件适用的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|latitude|双精度数|中度之间-90 到 + 90 非独占的纬度。|
-|longitude|双精度数|中度-180 和 180 非独占之间的经度。|
+|latitude|Double|中度之间-90 到 + 90 非独占的纬度。|
+|longitude|Double|中度-180 和 180 非独占之间的经度。|
 |radiusInMeters|Single|米半径。|
 
 ## <a name="relationships"></a>Relationships

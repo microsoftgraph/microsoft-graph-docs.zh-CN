@@ -2,12 +2,13 @@
 title: 删除 deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: 删除 deviceEnrollmentWindowsHelloForBusinessConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 85799e808201b4f0d8761ac21f375edcae9a729c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a69b4a786fdced748da7bdd224185ef7d0a3057a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826934"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>删除 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

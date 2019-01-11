@@ -1,12 +1,13 @@
 ---
 title: agreementAcceptance 资源类型
 description: 表示的公司的可自定义使用条款由 Azure Active Directory (Azure AD) 的范围内的用户的当前状态。
-ms.openlocfilehash: 23221fe88a65b003c8d26aca99eaf1f03d935722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1c8a5e40fe6a12daf23566ae902ddf61f3ee4df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828279"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "27041477"
 -->
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |agreementFileId|字符串|由用户接受协议文件的 ID。|
 |agreementId|字符串|协议中的 ID。|

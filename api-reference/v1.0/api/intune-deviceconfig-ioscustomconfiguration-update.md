@@ -2,12 +2,13 @@
 title: 更新 iosCustomConfiguration
 description: 更新 iosCustomConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e7056ab274223fc65b4a8dbf600744b9adab77a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 585da3f9e11596193bc82ce0a34ee17edcada4db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825541"
 ---
 # <a name="update-ioscustomconfiguration"></a>更新 iosCustomConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

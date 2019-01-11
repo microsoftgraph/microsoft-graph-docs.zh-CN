@@ -2,12 +2,13 @@
 title: educationSubmission： 提交
 description: 指示学生完成的工作，并且已准备好分配中分发操作。 仅可由学生执行此操作。
 author: dipakboyed
-ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef2ef84819a6bfbeeb83a012b4c26fe7cb56662c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808573"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission： 提交
 

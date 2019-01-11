@@ -2,12 +2,13 @@
 title: 获取 managedIOSLobApp
 description: 读取 managedIOSLobApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 38e53954b9beba328fd5a6d86e2109b751b1c7f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59e15c522c6ffcd0570fc74fdd0133870c47a64d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833375"
 ---
 # <a name="get-managedioslobapp"></a>获取 managedIOSLobApp
 
@@ -42,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

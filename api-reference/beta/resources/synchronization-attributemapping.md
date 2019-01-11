@@ -1,12 +1,13 @@
 ---
 title: attributeMapping 资源类型
 description: 定义同步过程中流给定的目标属性的值应如何。
-ms.openlocfilehash: e4fd8ba0aece448f358d51373dfca0157759a23e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c7a6367684b3e11013355b6d4726afe3346dab9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044844"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825275"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: meetingTimeCandidatesResult 资源类型
 description: 一组会议时间建议（若有）；如果没有建议，则返回原因。
-ms.openlocfilehash: 38ca5b6be15d3cd268403f7f95645a8aaf31cf9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b261295de43dcb0bfb94f85c833559430365002
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810652"
 ---
 # <a name="meetingtimecandidatesresult-resource-type"></a>meetingTimeCandidatesResult 资源类型
 
@@ -44,7 +45,7 @@ ms.locfileid: "27042193"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |emptySuggestionsHint|字符串|未返回任何会议时间建议的原因。可取值为：`attendeesUnavailable`、`attendeesUnavailableOrUnknown`、`locationsUnavailable`、`organizerUnavailable` 或 `unknown`。|
 |meetingTimeSlots|[meetingTimeCandidate](meetingtimecandidate.md)集合|一组会议时间建议。|

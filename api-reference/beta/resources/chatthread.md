@@ -1,12 +1,13 @@
 ---
 title: chatThread 资源类型
 description: ChatThread 是 chatMessages 中的 Microsoft 团队的集合。
-ms.openlocfilehash: ef8f118ae4354a5e4197802708aecfa1fb6f8cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048298"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833241"
 ---
 # <a name="chatthread-resource-type"></a>chatThread 资源类型
 
@@ -28,7 +29,7 @@ ChatThread 是[chatMessages](chatmessage.md)中的 Microsoft 团队的集合。
 |id|String| 只读。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |rootMessage|[chatMessage](chatmessage.md)| 可为 Null。|
 |chatMessages|[chatMessage](chatmessage.md)集合| 可为 Null。|

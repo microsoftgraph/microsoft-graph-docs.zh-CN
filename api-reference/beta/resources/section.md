@@ -1,12 +1,13 @@
 ---
 title: section 资源类型
 description: OneNote 笔记本中的分区。分区可包含页面。
-ms.openlocfilehash: c07f8f2e5c9f9f9d367cbc1186983c0870b2e979
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 181fa3399f13d0490d9cd7d4599d8208633107b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831849"
 ---
 # <a name="section-resource-type"></a>section 资源类型
 

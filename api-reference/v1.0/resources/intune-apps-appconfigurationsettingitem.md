@@ -2,12 +2,13 @@
 title: appConfigurationSettingItem 资源类型
 description: 包含应用配置设置项的属性。
 author: tfitzmac
-ms.openlocfilehash: b75579e56602ad5359bc32d52312931342b42a6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 900a16544b0166263b7d40c428c2c4cbaf5a0bb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830420"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem 资源类型
 

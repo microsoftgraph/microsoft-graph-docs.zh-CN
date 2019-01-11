@@ -2,12 +2,13 @@
 title: windowsDeviceADAccount 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 58f0e86f6bddb11ffcd9462e1298456ad60f9c7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3904178df07fd879f6d3a38d06e9fc716aab7fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832282"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount 资源类型
 

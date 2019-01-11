@@ -2,12 +2,13 @@
 title: 列出 deviceConfigurationUserStatuses
 description: 列出 deviceConfigurationUserStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 3f8c1910cfc06a40b477f8a4010caaf167b060a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5da16c1d1495359c138fc34491f100955fa72c33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827963"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>列出 deviceConfigurationUserStatuses
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

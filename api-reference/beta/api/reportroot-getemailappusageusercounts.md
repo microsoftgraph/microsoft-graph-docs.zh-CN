@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageUserCounts'
 description: 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。
-ms.openlocfilehash: ea6cd827c66fba8541137fae847b9da6a88e9de9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 00ee06d2ccbf10a24bdfe5a2aa368692e61d4e58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831141"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 

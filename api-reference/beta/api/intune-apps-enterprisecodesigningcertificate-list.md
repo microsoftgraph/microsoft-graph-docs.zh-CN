@@ -2,12 +2,13 @@
 title: 列表 enterpriseCodeSigningCertificates
 description: 列出属性和 enterpriseCodeSigningCertificate 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 60790e451ac72f03e61286a1a12d1a2bcc8c9bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 648b58e12ebd314366ff171ee5a4304b8aac59bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824429"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>列表 enterpriseCodeSigningCertificates
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

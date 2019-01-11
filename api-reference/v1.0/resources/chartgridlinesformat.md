@@ -2,12 +2,13 @@
 title: ChartGridlinesFormat 资源类型
 description: 封装图表网格线的格式属性。
 author: lumine2008
-ms.openlocfilehash: 61e75f644e70174bad04d5ae37b15cd07bc4d4bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8fde51cc220b20c533c3af122375047dd3276a9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328957"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826458"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat 资源类型
 

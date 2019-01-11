@@ -1,12 +1,13 @@
 ---
 title: 组资源类型
 description: 代表 Azure Active Directory (Azure AD) 组中，可以是 Office 365 组、 动态组或安全组。
-ms.openlocfilehash: e9e6d652bba485a28a36a5efa8d670d9f4a6053f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828012"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -119,7 +120,7 @@ ms.locfileid: "27009246"
 
 下面是每个**可见性**属性值的含义：
  
-|值|说明|
+|值|Description|
 |:----|-----------|
 | `public` | 任何人都可以加入的组，而无需所有者权限。<br>任何人都可以查看组的内容。|
 | `private` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。|
@@ -134,8 +135,8 @@ ms.locfileid: "27009246"
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
-|驱动器|[驱动器](drive.md)|组的默认驱动器。 只读。|
-|驱动器|[驱动器](drive.md) 集合|组的驱动器。 只读。|
+|驱动器|[驱动器](drive.md)|组的默认驱动器。 此为只读属性。|
+|驱动器|[驱动器](drive.md) 集合|组的驱动器。 此为只读属性。|
 |events|[事件](event.md) 集合|组的日历事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|对此组的生命周期策略的集合。 只读。 可为 Null。|

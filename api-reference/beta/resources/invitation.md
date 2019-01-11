@@ -1,12 +1,13 @@
 ---
 title: 邀请管理器
 description: '使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 '
-ms.openlocfilehash: 3f179df6c11dfc815ffbfc42c39aae5407a66a93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffe09e5043b60b01728d497b88034b289bdc5131
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811240"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 

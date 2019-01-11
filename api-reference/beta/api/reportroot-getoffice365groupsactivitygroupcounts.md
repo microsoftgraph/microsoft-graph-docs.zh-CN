@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityGroupCounts'
 description: 获取每日总组数和活跃组数（以电子邮件对话、Yammer 帖子和 SharePoint 文件活动为依据）。
-ms.openlocfilehash: e1b70d9253c99239d6ef980de6edcfde03d7dbed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa48d561cdb70dbb2ce47b07444e1fd3782b1f42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811674"
 ---
 # <a name="reportroot-getoffice365groupsactivitygroupcounts"></a>reportRoot: getOffice365GroupsActivityGroupCounts
 

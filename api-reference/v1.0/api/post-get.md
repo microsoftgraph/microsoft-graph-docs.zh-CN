@@ -2,12 +2,13 @@
 title: 获取帖子
 description: '获取指定的线程中帖子的属性和关系。 您可以指定父 '
 author: dkershaw10
-ms.openlocfilehash: f21f2a55e3bf456030131a2b14a6d9db5739a43f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9644b4be1ac1a64274703aecddca257e5559759e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825324"
 ---
 # <a name="get-post"></a>获取帖子
 

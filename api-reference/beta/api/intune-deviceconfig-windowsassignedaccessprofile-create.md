@@ -2,12 +2,13 @@
 title: 创建 windowsAssignedAccessProfile
 description: 创建新的 windowsAssignedAccessProfile 对象。
 author: tfitzmac
-ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db64578ec2d03f81d10110951a4caf93dc564c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827354"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>创建 windowsAssignedAccessProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |profileName|字符串|这是用于标识一组应用程序，在开始菜单和用户为其分配此网亭配置这些应用程序的布局的友好名称。|
-|showTaskBar|Boolean|此设置，管理员可以指定任务条形图或不所示。|
+|showTaskBar|布尔|此设置，管理员可以指定任务条形图或不所示。|
 |appUserModelIds|String 集合|这些是唯一的 Windows 应用商店应用程序将可以从开始菜单启动。|
 |desktopAppPaths|String 集合|在开始菜单可用桌面应用程序的路径和仅应用程序用户都将能够启动。|
 |用户帐户|String 集合|将锁定到此网亭配置用户帐户。|

@@ -2,12 +2,13 @@
 title: 列出 educationUsers
 description: 检索学校中的用户列表。
 author: mmast-msft
-ms.openlocfilehash: d282c2df8f78b38e8e21adff115f1af8b11bc1db
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ebd8a9628292ba7ec8a795361dcde438ce93400
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825317"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
 

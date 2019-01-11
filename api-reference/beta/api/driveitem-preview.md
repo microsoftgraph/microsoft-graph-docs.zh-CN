@@ -1,12 +1,13 @@
 ---
 title: driveItem： 预览
 description: 此操作，可以获取项目的短期嵌入 Url 以便呈现临时预览。
-ms.openlocfilehash: 51432e53d6986e680dda8508ef0069c7713b3a9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833171"
 ---
 # <a name="driveitem-preview"></a>driveItem： 预览
 
@@ -48,13 +49,13 @@ POST /shares/{shareId}/driveItem/preview
 在请求正文定义嵌入请求您的应用程序的 URL 的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称      |  类型         | 说明
+|   名称      |  类型         | Description
 |:------------|:--------------|:-----------------------------------------------
 | 查看器      | string        | 可选。 预览应用程序使用。 `onedrive` 或 `office`）。 如果为空，将自动选择合适的查看器。
 | 边框  | boolean       | 可选。 如果`true`（默认），嵌入视图将不包括任何控件。
 | allowEdit   | boolean       | 可选。 如果`true`，该文件可以从嵌入 UI 进行编辑。
 | page        | 字符串/编号 | 可选。 要启动，如果适用文档的页码。 指定为字符串的文件类型，如 ZIP 周围的将来使用情况。
-| zoom        | number        | 可选。 如果适用，则缩放级别，从开始。
+| zoom        | 数字        | 可选。 如果适用，则缩放级别，从开始。
 
 ## <a name="response"></a>响应
 
@@ -68,7 +69,7 @@ POST /shares/{shareId}/driveItem/preview
 
 响应将是一个 JSON 对象，包含以下属性：
 
-| 名称           | 类型   | 说明
+| 名称           | 类型   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）

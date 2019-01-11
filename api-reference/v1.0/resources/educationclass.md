@@ -1,12 +1,13 @@
 ---
 title: educationClass 资源类型
 description: '表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  '
-ms.openlocfilehash: 4d61ca209b61b8b2b65fbe92b7ba16854e11fb37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 97cf3b63cfb25a4c50df03c9c10212bd774c8b61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831842"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 

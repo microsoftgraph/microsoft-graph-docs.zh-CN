@@ -1,12 +1,13 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
 description: 检索的格式 governanceRoleAssignmentRequests 集合`application/octet-stream`，其中可以解析为浏览器中的.csv 文件。
-ms.openlocfilehash: 8b9e64faeb8134f5b0bb964d296b1bab309021d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10fd7c720bf7b6f162a4d8c2189e81a9205e53ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828726"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 

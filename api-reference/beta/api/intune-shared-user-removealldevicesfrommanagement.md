@@ -2,12 +2,13 @@
 title: removeAllDevicesFromManagement 操作
 description: 停用该用户管理的所有设备
 author: tfitzmac
-ms.openlocfilehash: 9c3607a9a61dc1bc4b0d713496dde4eca8dfe023
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d306ddcb806575a5d1cf6778e1f85ef01c994d41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811794"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 
@@ -39,7 +40,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

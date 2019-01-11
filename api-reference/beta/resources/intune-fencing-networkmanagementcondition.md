@@ -2,12 +2,13 @@
 title: networkManagementCondition 资源类型
 description: 包含定义网络管理条件的信息。
 author: tfitzmac
-ms.openlocfilehash: d906520d30b78b0acdb1f33d7b4d7046d84c53e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d91ac60ae52f3317e8148e8bb4adcaf82afac53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806508"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>networkManagementCondition 资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "27347591"
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|此管理条件适用的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|为管理 condition 相关联的管理条件语句。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 

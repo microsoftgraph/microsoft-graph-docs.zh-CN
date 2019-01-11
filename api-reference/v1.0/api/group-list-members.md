@@ -1,12 +1,13 @@
 ---
 title: 列出成员
 description: 获取组的直接成员的列表。 一组可将用户、 联系人和其他组作为成员。
-ms.openlocfilehash: d9e756ecdbedbd17a446b27d33d3fafc23822636
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: d7dfaede0e9deae6806499b504c6a58da2381ef5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833283"
 ---
 # <a name="list-members"></a>列出成员
 获取组的直接成员列表。组可将用户、联系人和其他组作为成员。此操作不可传递。

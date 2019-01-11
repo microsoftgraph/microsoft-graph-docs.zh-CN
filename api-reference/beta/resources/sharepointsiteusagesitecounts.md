@@ -1,12 +1,13 @@
 ---
 title: sharePointSiteUsageSiteCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 631e01a417e177e356b701ca8dc93ffa51b4f50f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 913f9de5972d857b859b713298a0413d615b8991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828124"
 ---
 # <a name="sharepointsiteusagesitecounts-resource-type"></a>sharePointSiteUsageSiteCounts 资源类型
 

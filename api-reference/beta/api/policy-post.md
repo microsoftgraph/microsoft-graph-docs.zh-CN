@@ -1,12 +1,13 @@
 ---
 title: 创建策略
 description: 通过指定显示名称、 策略类型和策略说明创建新的策略对象。
-ms.openlocfilehash: fca6201d7afa6a78f15da0d37fb611e4114783e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831232"
 ---
 # <a name="create-policy"></a>创建策略
 
@@ -41,7 +42,7 @@ POST /policies
 
 下表显示当您创建策略时所需的属性。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |definition|字符串|[策略](../resources/policy.md)对象的字符串版本。|
 |displayName|字符串|自定义策略名称。|

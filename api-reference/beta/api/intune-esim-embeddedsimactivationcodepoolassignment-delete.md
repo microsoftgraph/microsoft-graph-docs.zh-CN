@@ -2,12 +2,13 @@
 title: 删除 embeddedSIMActivationCodePoolAssignment
 description: 删除 embeddedSIMActivationCodePoolAssignment。
 author: tfitzmac
-ms.openlocfilehash: d96f1354efea2a287672a71cfadbac42d3b45916
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 672104a9de7d5db59041f19c145773e0dfe53d91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832135"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>删除 embeddedSIMActivationCodePoolAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

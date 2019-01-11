@@ -1,12 +1,13 @@
 ---
 title: scheduleInformation 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 0b7bbd861a044b28cd22603fd0ccc27d20f46fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e535f5c2b47e810fc767cb29d0b24f28ed3c7bf0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828705"
 ---
 # <a name="scheduleinformation-resource-type"></a>scheduleInformation 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27044801"
 在指定的时间段代表用户、 通讯组列表或资源的可用性。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |availabilityView |字符串 |表示的合并的视图中的所有项目的可用性的`scheduleItems`。 视图包含的时间段。 指示期间每个时间段的可用性：`0`免费 = `1`= 暂定、 `2`= 忙`3`= 外出、 `4`= 其他地方工作。|
 |error |[freeBusyError](freebusyerror.md) |从尝试获取用户、 通讯组列表或资源的可用性信息的错误。 |
