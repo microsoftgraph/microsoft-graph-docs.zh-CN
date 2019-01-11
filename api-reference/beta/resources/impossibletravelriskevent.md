@@ -1,12 +1,13 @@
 ---
 title: impossibleTravelRiskEvent 资源类型
 description: 检测到的 Azure Active Directory 标识保护其中两个帐户登录发生从用户在典型的位置，并将不可能要登录宏的完整信息之间的工期中的位置之间的差旅风险事件Azure AD 身份保护文档中找不到风险事件。
-ms.openlocfilehash: 38e61927121f520e79fd1fec8b8e6443fa8b76e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9ce064a5ea724b498f3290f630a4169b1aef897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846450"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>impossibleTravelRiskEvent 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27041783"
 |[获取 impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |读取属性和 impossibleTravelRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
@@ -44,7 +45,7 @@ ms.locfileid: "27041783"
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为 NULL。|
 

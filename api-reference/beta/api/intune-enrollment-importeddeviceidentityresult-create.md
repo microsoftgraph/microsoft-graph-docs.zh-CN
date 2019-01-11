@@ -2,12 +2,13 @@
 title: 创建 importedDeviceIdentityResult
 description: 创建新的 importedDeviceIdentityResult 对象。
 author: tfitzmac
-ms.openlocfilehash: 2613cd100ccb1803464907821d56eb75fc4024fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5c9494b4170493ef25bee0d72091c49ecde098d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829440"
 ---
 # <a name="create-importeddeviceidentityresult"></a>创建 importedDeviceIdentityResult
 
@@ -38,7 +39,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,7 +58,7 @@ POST /deviceManagement/importedDeviceIdentities
 |说明|字符串|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)设备继承说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)中 Intune 继承的设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|Boolean|导入的设备标识的状态|
+|status|布尔|导入的设备标识的状态|
 
 
 

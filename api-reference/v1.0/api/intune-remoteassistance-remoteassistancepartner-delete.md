@@ -2,12 +2,13 @@
 title: 删除 remoteAssistancePartner
 description: 删除 remoteAssistancePartner。
 author: tfitzmac
-ms.openlocfilehash: 1839288c8634730a782db960d573b354e60756b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62f7bc9ba8da090fa62d93b78424c647d5e7f2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828663"
 ---
 # <a name="delete-remoteassistancepartner"></a>删除 remoteAssistancePartner
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

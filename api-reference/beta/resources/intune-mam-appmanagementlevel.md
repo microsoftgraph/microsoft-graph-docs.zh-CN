@@ -2,12 +2,13 @@
 title: appManagementLevel 枚举类型
 description: 应用程序的管理级别
 author: tfitzmac
-ms.openlocfilehash: e552055d7abd7f61c71243aa696acbbd263008e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 760d745a6f449ac5f2458db50e40953ead783e83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301335"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846996"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27301335"
 
 应用程序的管理级别
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |未指定|0|Unspecified|
 |非托管|1|非托管|

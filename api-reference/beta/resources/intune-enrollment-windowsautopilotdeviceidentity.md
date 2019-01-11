@@ -2,12 +2,13 @@
 title: windowsAutopilotDeviceIdentity 资源类型
 description: WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设备。
 author: tfitzmac
-ms.openlocfilehash: 79c685258417ab0cd7a1531b1661f03cf5be1bea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fd7ac1f6cc97c16fc5ab393cc9b893386eb9e65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851149"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -46,7 +47,7 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设�
 |userPrincipalName|字符串|用户主体名称。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|当前已分配给 Windows 自动执行某些操作设备的部署配置文件。|
 |intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|适用于部署配置文件分配给 Windows 自动执行某些操作设备。|

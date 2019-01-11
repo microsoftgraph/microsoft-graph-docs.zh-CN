@@ -1,12 +1,13 @@
 ---
 title: 列表同步作业
 description: 列出现有作业的给定应用程序实例 （服务主体）。
-ms.openlocfilehash: 179a6906936fddbfc31ffc7b016de05908f2383a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: daf486ed8da41be2e13be622bc18b81711de3ff7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846954"
 ---
 # <a name="list-synchronization-jobs"></a>列表同步作业
 

@@ -2,12 +2,13 @@
 title: 获取 androidPkcsCertificateProfile
 description: 读取属性和 androidPkcsCertificateProfile 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 302c0bdc0977f7eb3fa09c3cc2fe285522295d60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 30db1abc59e0120e48de97d11224fec1463aa04f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847577"
 ---
 # <a name="get-androidpkcscertificateprofile"></a>获取 androidPkcsCertificateProfile
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

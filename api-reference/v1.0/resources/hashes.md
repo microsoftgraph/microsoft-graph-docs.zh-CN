@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3ed0023e80457598bd80b068156b60a5ace4984b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830483"
 ---
 # <a name="hashes-resource-type"></a>哈希资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "27011062"
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **crc32Hash**    | String | Little-endian （如果可用） 中的文件 CRC32 值。 只读。            |
+| **crc32Hash**    | String | Little-endian （如果可用） 中的文件 CRC32 值。 此为只读属性。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
 **注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。

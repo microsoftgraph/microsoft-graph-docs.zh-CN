@@ -2,12 +2,13 @@
 title: TableRow:Range
 description: 返回与整个行相关的 range 对象。
 author: lumine2008
-ms.openlocfilehash: 1fc6b8e97e94c1642873419e0f50ee5ddb4a2a1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d0a180010fccd7f6a7246bddacb449de88ad649a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829201"
 ---
 # <a name="tablerow-range"></a>TableRow:Range
 
@@ -31,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

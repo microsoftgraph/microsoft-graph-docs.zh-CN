@@ -2,12 +2,13 @@
 title: 添加应用程序密码
 description: 向应用程序中的强密码。
 author: lleonard-msft
-ms.openlocfilehash: 88aa499cd478511aacba94c0d28c96592c79a5d5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03e3e712f621856634c931202904db3300d6166b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829398"
 ---
 # <a name="add-application-password"></a>添加应用程序密码
 
@@ -31,7 +32,7 @@ POST /applications/{id}/addPassword
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

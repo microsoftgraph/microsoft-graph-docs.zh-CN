@@ -2,12 +2,13 @@
 title: educationFeedback 资源类型
 description: 从教师向学生的反馈。 此属性表示以及 who 反馈这两个的文本部分。
 author: mmast-msft
-ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d08f3bc5c7b4882693cdcbba41b364734c6ccef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873561"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27363590"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|创建用户的反馈。|
 |feedbackDateTime|DateTimeOffset|提供反馈时时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

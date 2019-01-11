@@ -2,12 +2,13 @@
 title: getRoleScopeTagsByIds 函数
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 6b2efeff02b7404aefce1e6acbfbc3a0aca663f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd5389c4cece513bfaea434192fd612dd60bc239
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868332"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 函数
 
@@ -38,7 +39,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

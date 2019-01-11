@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserStatus 资源类型
 description: 包含某个用户的 MDM 移动应用配置状态的属性、继承属性和操作。
-ms.openlocfilehash: d3533e4b98523493f1b7ff033cbcf87d9200654d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 719f784b2b135d58950892c185614a1247b5d25b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042625"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846751"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27042625"
 |id|String|实体的键。|
 |userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
-|状态|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
 |userPrincipalName|String|UserPrincipalName。|
 

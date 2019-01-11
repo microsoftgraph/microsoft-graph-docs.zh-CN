@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingInvitation
-ms.openlocfilehash: 187a7bd8fe51be57b663c215436272ee711512e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f51f08ad174c661df14b688dc111d9447708523c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846695"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 

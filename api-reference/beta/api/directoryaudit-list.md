@@ -1,12 +1,13 @@
 ---
 title: 列表 directoryAudits
 description: 提供了生成的 Azure Active Directory 的审核日志的列表。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
-ms.openlocfilehash: e607d866443a07f1405260b02a630276951ce310
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829335"
 ---
 # <a name="list-directoryaudits"></a>列表 directoryAudits
 

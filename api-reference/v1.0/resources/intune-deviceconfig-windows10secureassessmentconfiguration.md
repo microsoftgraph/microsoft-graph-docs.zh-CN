@@ -1,12 +1,13 @@
 ---
 title: windows10SecureAssessmentConfiguration 资源类型
 description: 本主题提供由 secureAssessment 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: c4051350182c3a3876d6be101d39b8d11d058732
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 954bc43a6b179e2b5a680dfe4f6368b5990312e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846023"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>windows10SecureAssessmentConfiguration 资源类型
 

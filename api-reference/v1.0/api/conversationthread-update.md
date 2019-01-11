@@ -1,12 +1,13 @@
 ---
 title: 更新 conversationthread
 description: 锁定或解锁线程，以允许或避免进一步向线程发布。
-ms.openlocfilehash: 7fe8ded506246125d9e61f9c9d84c990a9838dbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7f0738314bc071d5d084903fdc46b7fac1cf8cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846492"
 ---
 # <a name="update-conversationthread"></a>更新 conversationthread
 

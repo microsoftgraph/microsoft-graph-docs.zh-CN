@@ -1,12 +1,13 @@
 ---
 title: 创建 identityProvider
 description: 通过指定显示名称、 identityProvider 类型、 客户端 ID 和客户端机密创建新 identityProvider。
-ms.openlocfilehash: 8786cbf6676567a0c6aaef5bf497f50cff1ce9a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866232"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -44,7 +45,7 @@ POST /identityProviders
 
 在请求正文中，提供[identityProvider](../resources/identityprovider.md)对象的 JSON 表示形式。 下表中列出的所有属性都是必需的。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---------------|:--------|:----------|
 |clientId|字符串|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
 |clientSecret|字符串|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|

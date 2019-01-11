@@ -1,12 +1,13 @@
 ---
 title: attributeMappingSource 资源类型
 description: '定义如何值应为源对象中提取 （或转换）。 例如，它可以是简单取自源对象上, 一个给定属性的值或它可以是字符串串联/提取/替换基于多个源属性更为复杂的表达式。 '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825009"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource 资源类型
 
@@ -16,11 +17,11 @@ ms.locfileid: "27044823"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型                      | 说明               |
+| 属性              | 类型                      | Description               |
 |:----------------------|:--------------------------|:--------------------------|
 |表达式             |字符串                     |此**attributeMappingSource**对象的表达式等效表示形式。|
 |name                   |字符串                     |映射源名称参数。 具体取决于**type**属性值，这可以是函数，源属性或用于以常量值的名称的名称。 |
-|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果该对象代表一个函数，列出函数参数。 参数包含**attributeMappingSource**对象本身，允许使用复杂的表达式。 如果**类型**不是`Function`，此属性将为空数组。 |
+|参数             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果该对象代表一个函数，列出函数参数。 参数包含**attributeMappingSource**对象本身，允许使用复杂的表达式。 如果**类型**不是`Function`，此属性将为空数组。 |
 |type                   | 字符串                    |此属性映射源的类型。 可取值为：`Attribute`、`Constant`、`Function`。 默认值为 `Attribute`。| 
 
 ## <a name="json-representation"></a>JSON 表示形式

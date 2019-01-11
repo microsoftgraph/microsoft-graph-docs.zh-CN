@@ -1,12 +1,13 @@
 ---
 title: cloudAppSecurityState 资源类型
 description: 包含状态信息的云应用程序 （destinationServiceName、 destinationServiceIp）。
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876802"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27011395"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |destinationServiceIp|字符串|连接到云应用程序/服务的目标 IP 地址。|
 |destinationServiceName|字符串|云应用程序/服务名称 （例如"销售"、"收存箱"等）。|

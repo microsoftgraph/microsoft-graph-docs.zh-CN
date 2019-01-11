@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取特殊文件夹
-ms.openlocfilehash: 8b8b1186682421a5ab564272fd473cb72819202d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c63f3ae585db0aff812e16eb9f125d19e77a806c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887953"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 

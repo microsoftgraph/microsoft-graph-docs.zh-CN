@@ -1,12 +1,13 @@
 ---
 title: attributeDefinition 资源类型
 description: 描述对象的属性。
-ms.openlocfilehash: 2199f8dbe5c528cf3b1b73f007fdae3451833815
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63b7f67808ab6695b30f5464d72aed2814e46c5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829678"
 ---
 # <a name="attributedefinition-resource-type"></a>attributeDefinition 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27048339"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |定位         |布尔    | `true`如果属性应用作对象的定位标记。 定位属性必须具有识别对象的唯一值，并且必须变。 默认值为 `false`。 有，并且只有一个对象的属性必须被指定为定位标记为支持同步。 |
 |caseExact      |布尔    |`true`如果此属性的值应处理，区分大小写。 此设置会影响如何同步引擎检测到的属性的更改。|

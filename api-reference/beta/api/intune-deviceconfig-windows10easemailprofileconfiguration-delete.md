@@ -2,12 +2,13 @@
 title: 删除 windows10EasEmailProfileConfiguration
 description: 删除 windows10EasEmailProfileConfiguration。
 author: tfitzmac
-ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3489cd01c73cded23baa9fa4986b7804c752cedf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847654"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>删除 windows10EasEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

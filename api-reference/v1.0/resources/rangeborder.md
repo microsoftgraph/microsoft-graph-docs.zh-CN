@@ -2,12 +2,13 @@
 title: RangeBorder 资源类型
 description: 表示对象的边框。
 author: lumine2008
-ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b20078b7d4d0cabf4c16e212fd3e9264cad1650
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830798"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 
@@ -27,8 +28,8 @@ ms.locfileid: "27359148"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|id|string|代表边框标识符。 可能的值为： `EdgeTop`， `EdgeBottom`， `EdgeLeft`， `EdgeRight`， `InsideVertical`， `InsideHorizontal`， `DiagonalDown`， `DiagonalUp`。 只读。|
-|sideIndex|string|常量值，该值指示的特定的一侧边框。 可能的值为： `EdgeTop`， `EdgeBottom`， `EdgeLeft`， `EdgeRight`， `InsideVertical`， `InsideHorizontal`， `DiagonalDown`， `DiagonalUp`。 只读。|
+|id|string|代表边框标识符。 可能的值为： `EdgeTop`， `EdgeBottom`， `EdgeLeft`， `EdgeRight`， `InsideVertical`， `InsideHorizontal`， `DiagonalDown`， `DiagonalUp`。 此为只读属性。|
+|sideIndex|string|常量值，该值指示的特定的一侧边框。 可能的值为： `EdgeTop`， `EdgeBottom`， `EdgeLeft`， `EdgeRight`， `InsideVertical`， `InsideHorizontal`， `DiagonalDown`， `DiagonalUp`。 此为只读属性。|
 |style|string|指定边框线型的线条样式的常量之一。 可能的值为： `None`， `Continuous`， `Dash`， `DashDot`， `DashDotDot`， `Dot`， `Double`， `SlantDashDot`。|
 |weight|string|指定某一区域周围的边框的粗细。 可能的值为： `Hairline`， `Thin`， `Medium`， `Thick`。|
 

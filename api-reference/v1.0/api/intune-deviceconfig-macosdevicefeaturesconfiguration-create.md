@@ -2,12 +2,13 @@
 title: 创建 macOSDeviceFeaturesConfiguration
 description: 创建新的 macOSDeviceFeaturesConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 15539bb2aebf1e05a8eec9c42262f3436a516919
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db5b900250f166d829b56dcf3542fa4a9824af7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829804"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

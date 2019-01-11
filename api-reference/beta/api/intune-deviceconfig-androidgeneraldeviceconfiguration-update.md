@@ -2,12 +2,13 @@
 title: 更新 androidGeneralDeviceConfiguration
 description: 更新 androidGeneralDeviceConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: a495a071577798597685d1ff15e1705968c32d31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 175546ec4f91067605b8af05eb517563c1f4897e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887701"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>更新 androidGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -75,7 +76,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |googlePlayStoreBlocked|Boolean|指示是否阻止 Google Play 商店。|
 |kioskModeBlockSleepButton|Boolean|指示在展台模式下是否阻止屏幕睡眠按钮。|
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
-|dateAndTimeBlockChanges|Boolean|指示阻止不断变化的日期和时间在 KNOX 模式下。|
+|dateAndTimeBlockChanges|布尔|指示阻止不断变化的日期和时间在 KNOX 模式下。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将允许运行的应用列表。 该集合最多可包含 500 个元素。|
 |nfcBlocked|Boolean|指示是否阻止近场通信。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|

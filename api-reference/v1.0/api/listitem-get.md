@@ -3,18 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中获取条目
-ms.openlocfilehash: b650507e8a8bc74b8156117f765220712a2a46d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ab263c074497d43bb03ea7c69748bb1c64fd9425
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881128"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
 返回[列表][]中某个[项][]的元数据。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [项]: ../resources/listitem.md
 
 ## <a name="permissions"></a>权限

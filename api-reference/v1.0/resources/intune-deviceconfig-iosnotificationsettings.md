@@ -2,12 +2,13 @@
 title: iosNotificationSettings 资源类型
 description: 说明通知设置的项。
 author: tfitzmac
-ms.openlocfilehash: 197de8b9cd59d1f6c998f92460e62aab480ef455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f7e94d9db5c649329476b3df9a1489f9ffcfbba3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829986"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 

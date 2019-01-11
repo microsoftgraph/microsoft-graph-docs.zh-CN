@@ -2,12 +2,13 @@
 title: mobileAppIdentifier 资源类型
 description: 移动应用的标识符。
 author: tfitzmac
-ms.openlocfilehash: 7dd1f970ed60e85a93cdc4ea7c93c9acefd75376
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9552ae893d51f950856eeb9b5c99d9fa41bf9c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808181"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier 资源类型
 

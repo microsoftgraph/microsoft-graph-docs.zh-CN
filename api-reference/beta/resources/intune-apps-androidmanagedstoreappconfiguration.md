@@ -1,12 +1,13 @@
 ---
 title: androidManagedStoreAppConfiguration 资源类型
 description: 包含的属性、 继承的属性和 Android 企业移动应用程序配置的操作。
-ms.openlocfilehash: e9e92065d46d311f3e6891f9dc13fa0ab60ff2b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 53d8ad4e566bac9d96c467e459ac08bc2e4d011d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866351"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidManagedStoreAppConfiguration 资源类型
 

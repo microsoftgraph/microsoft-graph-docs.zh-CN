@@ -1,12 +1,13 @@
 ---
 title: ipRange 资源类型
 description: 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
-ms.openlocfilehash: 097ebec0c92c5d9aa267947c8be600108b83346a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0361b2b93b357bd98ba5a580069c05c9bc2b87e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830070"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 

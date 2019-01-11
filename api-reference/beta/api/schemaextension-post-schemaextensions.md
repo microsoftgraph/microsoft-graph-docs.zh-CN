@@ -1,12 +1,13 @@
 ---
 title: 创建 schemaExtension
 description: 创建一个新的 schemaExtension 定义以扩展支持资源类型。
-ms.openlocfilehash: 3ad3e3cb52b6abacf16643a7419b6297217d074c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d351565d697e1e9c399dcabd0d03a701cac2e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826388"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 

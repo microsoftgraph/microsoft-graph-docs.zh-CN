@@ -2,12 +2,13 @@
 title: 删除成员
 description: 使用此 API 可删除成员 （用户或组） 从一个管理单元。
 author: lleonard-msft
-ms.openlocfilehash: 0b7b03042982b1eb50d9dfd7382186f0b3d28469
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cb727c60e102786948311f10df48f9230a9dd2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865196"
 ---
 # <a name="remove-a-member"></a>删除成员
 
@@ -31,7 +32,7 @@ ms.locfileid: "27353415"
 DELETE /administrativeUnits/{id}/members/{id}/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

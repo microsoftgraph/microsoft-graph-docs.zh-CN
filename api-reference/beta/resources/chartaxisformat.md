@@ -2,12 +2,13 @@
 title: ChartAxisFormat 资源类型
 description: 封装图表坐标轴的格式属性。
 author: lumine2008
-ms.openlocfilehash: 8961ae7381646e40aedafe2cbd3bac3d2650d7a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 058c423ac237ec2a616efd47b26407121755ed38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876109"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat 资源类型
 

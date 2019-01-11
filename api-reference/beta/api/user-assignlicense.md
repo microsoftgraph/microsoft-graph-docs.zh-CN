@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: 添加或删除的用户启用或禁用 Microsoft 云服务及其使用的许可证。 例如，组织可以有 100 许可证，与 Office 365 企业版 E3 订阅，此请求将一个这些许可证分配给特定用户。 您还可以启用和禁用与订阅关联的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅以下 Technet 文章。
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876200"
 ---
 # <a name="assignlicense"></a>assignLicense
 

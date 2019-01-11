@@ -2,12 +2,13 @@
 title: binaryManagementConditionExpressionOperatorType 枚举类型
 description: 支持管理条件表达式二元运算符。
 author: tfitzmac
-ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b836dba7c45eacf0f2d8ffe425b301733e60759
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891068"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346954"
 
 支持管理条件表达式二元运算符。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |或|0|计算一操作数为 true，当且仅当一个或多个操作数为 true。|
 |和|1|当且仅当所有的操作数，则，计算一操作数为 true。|

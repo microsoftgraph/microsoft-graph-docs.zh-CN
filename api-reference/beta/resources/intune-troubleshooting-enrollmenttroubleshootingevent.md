@@ -2,12 +2,13 @@
 title: enrollmentTroubleshootingEvent 资源类型
 description: 表示注册失败的事件。
 author: tfitzmac
-ms.openlocfilehash: fd4320ecb62d4f9441f4e507ac451565d418a015
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 513f65198e234d78ffe91bf00736796dff14707b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847017"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>enrollmentTroubleshootingEvent 资源类型
 

@@ -2,12 +2,13 @@
 title: adminConsentState 枚举类型
 description: 管理员同意状态。
 author: tfitzmac
-ms.openlocfilehash: d8a22d29157e09b3c038232a34f854da49e9cb4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40f2c30327f7e8af3792c4332fb5605159a28628
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876795"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27353779"
 
 管理员同意状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|管理未配置项目|
 |授予|1|管理员授予项目|

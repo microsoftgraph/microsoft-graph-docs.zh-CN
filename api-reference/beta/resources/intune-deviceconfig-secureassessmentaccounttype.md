@@ -2,12 +2,13 @@
 title: secureAssessmentAccountType 枚举类型
 description: Windows10SecureAssessment ConfigurationAccount 允许的帐户的类型。
 author: tfitzmac
-ms.openlocfilehash: faf504410336bdc491c29b676aaa1b57cd0a5ee2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b1f8a3d03c0e7b9e91c68ff5a87611fcaa6f31e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826052"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27362221"
 
 Windows10SecureAssessment ConfigurationAccount 允许的帐户的类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |azureADAccount|0|指示的 AzureAD\ username@tenant.com 格式中的 Azure AD 帐户。|
 |domainAccount|1|指示以 domain\user 或 user@domain.com 格式为域帐户。|

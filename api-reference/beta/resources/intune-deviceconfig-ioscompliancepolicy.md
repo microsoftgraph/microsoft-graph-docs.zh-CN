@@ -2,12 +2,13 @@
 title: iosCompliancePolicy 资源类型
 description: 此类包含 iOS 的合规性设置。
 author: tfitzmac
-ms.openlocfilehash: ae7c5c1df55236c7232e34e377a1b55e947e84ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbfff1a4dee9d9875c7bfe4fd27ddc3589ea0697
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830273"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27336377"
 |[Update iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|更新 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

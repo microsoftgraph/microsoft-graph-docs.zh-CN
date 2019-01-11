@@ -2,12 +2,13 @@
 title: 删除 iosVppApp
 description: 删除 iosVppApp。
 author: tfitzmac
-ms.openlocfilehash: 1ada3e59b302f763cc63c5cdc9a11bda86bcac56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da40be70f4f6ead60e98c260f23a41cb32a722d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869648"
 ---
 # <a name="delete-iosvppapp"></a>删除 iosVppApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

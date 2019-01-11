@@ -1,12 +1,13 @@
 ---
 title: 过程资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 2e60c9e008ccfddaa0bcc3e78c27cc17c65a3844
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 36acd6ed0f6e2cee5095d445de3ba4ff024a024a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869466"
 ---
 # <a name="process-resource-type"></a>过程资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27044708"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |accountName|字符串|用户帐户标识符 （下运行过程的用户帐户上下文） 的示例、 AccountName、 SID，等等。|
 |commandLine|String|包括所有参数中的完整过程调用 commandline。|

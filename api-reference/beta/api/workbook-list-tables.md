@@ -2,12 +2,13 @@
 title: 列出表
 description: 检索 table 对象的列表。
 author: lumine2008
-ms.openlocfilehash: da3c11d4a7a0c5380d70ca554d993530a206c557
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ede107368a7fbdfe18b116c64c61da473afa778
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846989"
 ---
 # <a name="list-tables"></a>列出表
 
@@ -32,7 +33,7 @@ GET /workbook/tables
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

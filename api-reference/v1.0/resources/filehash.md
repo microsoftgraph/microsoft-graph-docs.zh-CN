@@ -1,12 +1,13 @@
 ---
 title: fileHash 资源类型
 description: 包含有关文件哈希 （加密和位置） 的状态信息。
-ms.openlocfilehash: f7e1f5ceba700a30f1e68e0670ebcec40c3d6fd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876767"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27008800"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |hashType|fileHashType|文件哈希值类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。|
 |hashValue|字符串|文件哈希值。|

@@ -2,12 +2,13 @@
 title: windowsUpdateForBusinessUpdateWeeks 枚举类型
 description: 计划更新安装在相应月份的周
 author: tfitzmac
-ms.openlocfilehash: 2d42e9e4951cdcbec1acc89f9478421b1aef0a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 563c1cf2a756fb77560b11a6ec42d8b698879374
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877033"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328806"
 
 计划更新安装在相应月份的周
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|允许用户设置。|
 |firstWeek|1|计划更新安装在相应月份的第一周|

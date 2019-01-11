@@ -2,12 +2,13 @@
 title: 更新事件
 description: 更新 event 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 1ea0ae20a88159f9d96a23028fa731ea04d6817b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b7d969b3f374bfddb12a49d1318fb8c1bb2105e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846646"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -42,7 +43,7 @@ PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -56,13 +57,13 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |categories|String|与事件相关联的类别。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
 |importance|String|事件的重要性。 可能的值为： `low`， `normal`， `high`。|
-|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
-|isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
+|isAllDay|布尔|如果事件持续一整天，则设置为 true。|
+|isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
 |位置|[位置](../resources/location.md)|事件的位置。|
 |locations|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|布尔|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |sensitivity|String| 可能的值为： `normal`， `personal`， `private`， `confidential`。|
 |showAs|String|要显示的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |

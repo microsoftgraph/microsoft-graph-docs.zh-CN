@@ -2,12 +2,13 @@
 title: 创建 windows10TeamGeneralConfiguration
 description: 创建新的 windows10TeamGeneralConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 1634de20684f751dbb540b2fa619cd9153d8b0f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ef95d24823abd5a125ad210a4eed81a61e1de1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846611"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>创建 windows10TeamGeneralConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

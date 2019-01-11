@@ -2,12 +2,13 @@
 title: 删除用户
 description: 删除用户。
 author: dkershaw10
-ms.openlocfilehash: 44e0439a95b0104472101b43adfae39b2c553d58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c7cbdf08b8bf18d393dd8e388c4d6de9f7fbf407
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875689"
 ---
 # <a name="delete-a-user"></a>删除用户
 

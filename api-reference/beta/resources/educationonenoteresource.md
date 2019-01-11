@@ -2,12 +2,13 @@
 title: educationOneNoteResource 资源类型
 description: 'EducationResource 一个子类。 这表示在 OneNote 页面的位置。  '
 author: mmast-msft
-ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dea19683786d22c48af2eedd6239ffe76441ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825926"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27359862"
 [EducationResource](educationresource.md)一个子类。 这表示在 OneNote 页面的位置。  
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |pageUrl|字符串|在 OneNote 中页的 Microsoft Graph URL。|
 |sectionName|字符串|分配应复制到或已复制到的部分名称。|

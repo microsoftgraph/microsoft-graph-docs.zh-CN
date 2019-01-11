@@ -2,12 +2,13 @@
 title: targetApps 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 53b80dd080722cc86b923576de9b333dfd61dba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 957a1003554299e3dec52b05838fe58e0b2eea4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882066"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

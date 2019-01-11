@@ -2,12 +2,13 @@
 title: 获取 windowsAssignedAccessProfile
 description: 读取属性和 windowsAssignedAccessProfile 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: a4a4fd692c8147283950bb3a2d5de6ebebcd4173
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7fa26f3cdbb158991287ea8cdf5440a58bd469b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827242"
 ---
 # <a name="get-windowsassignedaccessprofile"></a>获取 windowsAssignedAccessProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

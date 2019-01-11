@@ -1,12 +1,13 @@
 ---
 title: privilegedApproval 资源类型
 description: 代表用于获取到角色特权标识管理中请求审批。
-ms.openlocfilehash: 3f900ef4a141b2f71c303becd49789b86cefb1b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dee8cffba02270308c6786b2549b66aa5ad9dfa8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868346"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "27045365"
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|获取请求者的审批请求。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
@@ -40,10 +41,10 @@ ms.locfileid: "27045365"
 |userId|String||
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| 只读。可为 NULL。|
-|请求|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 对此审批对象的角色分配请求|
+|请求|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 此为只读属性。 对此审批对象的角色分配请求|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

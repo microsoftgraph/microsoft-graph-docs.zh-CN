@@ -2,12 +2,13 @@
 title: windowsPhone81AppXBundle 资源类型
 description: 包含属性和 Windows Phone 8.1 约绑定的业务线应用程序继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 76bdf536ba7b895e347555fbd84d4af23bde3ff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c12bcc3afa8e7e7e681c786f5a24e9448ba3e18a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825030"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle 资源类型
 

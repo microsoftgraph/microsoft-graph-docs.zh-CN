@@ -2,12 +2,13 @@
 title: managedDeviceReportedApp 资源类型
 description: 用于报告功能的应用程序数据
 author: tfitzmac
-ms.openlocfilehash: 7fd01c5fd7553769653abd6e16ecc9ec40a79b8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 676b89e98f5d54367916a3f3219ab5fc02ddbd80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877215"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27359491"
 
 用于报告功能的应用程序数据
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |appId|String|应用程序或应用程序的捆绑标识符|
 

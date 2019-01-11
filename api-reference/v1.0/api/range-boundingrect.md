@@ -2,12 +2,13 @@
 title: Range:BoundingRect
 description: .
 author: lumine2008
-ms.openlocfilehash: fbe8354a8905fde587ec1d30a5dff9a4ceb2238c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c19bf1c77e2173fa0568b3944506c43c87ecaac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826122"
 ---
 # <a name="range-boundingrect"></a>Range:BoundingRect
 
@@ -30,7 +31,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |anotherRange|string|Range 对象或地址或区域名称。|
 

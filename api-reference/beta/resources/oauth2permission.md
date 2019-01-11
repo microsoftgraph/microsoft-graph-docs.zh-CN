@@ -1,12 +1,13 @@
 ---
 title: oAuth2Permission 资源类型
 description: 表示一个 OAuth 2.0 委派权限范围。 指定的 OAuth 2.0 委派的权限范围可能请求 （通过 application 对象的**requiredResourceAccess**集合） 的客户端应用程序调用资源应用程序时。 **AppRoles**属性和应用程序实体的 servicePrincipal 实体是**oAuth2Permission**的集合。
-ms.openlocfilehash: 4a790c935dd84fb7bd4e1422ca59914d9a319ae9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 420a7b181aa2590d3c5bc8eaa7f104251915ae0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829706"
 ---
 # <a name="oauth2permission-resource-type"></a>oAuth2Permission 资源类型
 
@@ -42,7 +43,7 @@ ms.locfileid: "27046965"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |adminConsentDescription|字符串|权限管理员同意和应用程序分配体验中显示的帮助文本。|
 |adminConsentDisplayName|字符串|权限管理的同意和应用程序分配体验中显示的的显示名称。|

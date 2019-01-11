@@ -2,12 +2,13 @@
 title: Table:HeaderRowRange
 description: 获取与表的标头行相关的 range 对象。
 author: lumine2008
-ms.openlocfilehash: 9abec04918f8944ebbafc238812e4f50c97a997f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8d584ef8f00bf6c88894a37df16b5cca231ea3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336979"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877432"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 
@@ -31,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/HeaderRowRange
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

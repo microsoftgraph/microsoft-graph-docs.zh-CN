@@ -2,12 +2,13 @@
 title: 列表 sideLoadingKeies
 description: 列出属性和 sideLoadingKey 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: d18a9dbffea23408f7ba32c89620bcf340fe47e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0aef5a2762d2b1681ef39d9394d753164355d34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829405"
 ---
 # <a name="list-sideloadingkeies"></a>列表 sideLoadingKeies
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

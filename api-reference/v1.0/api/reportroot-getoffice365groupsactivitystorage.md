@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityStorage'
 description: 获取跨所有组邮箱和组网站使用的总存储。
-ms.openlocfilehash: 636a23e8bb094e31c648a701a59f55a8c7c6c73d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3cd16119a1d78d0772d29d07306780503cf11d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846121"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 

@@ -1,12 +1,13 @@
 ---
 title: website 资源类型
 description: 代表一个网站。
-ms.openlocfilehash: fa117dc6279e90b49c3c54d0a0ac534e30e633af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15cc926ad1c251fd169ccdb0b1374df7f434a645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826115"
 ---
 # <a name="website-resource-type"></a>website 资源类型
 

@@ -2,12 +2,13 @@
 title: teamSpecialization 枚举类型
 description: 描述为团队的特殊的使用情况。
 author: nkramer
-ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18e1993272a94df989066cf95d01b6a4f66fd8d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826038"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348011"
 
 ## <a name="members"></a>成员
 
-| 成员             | 值 | 说明                                                                |
+| 成员             | 值 | Description                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
 | 无               | 0     | 默认为团队通过该组件的标准团队体验的类型。          |
 | unknownFutureValue | 7     | Sentinel 保留作为以供将来扩展枚举的占位符值。 |

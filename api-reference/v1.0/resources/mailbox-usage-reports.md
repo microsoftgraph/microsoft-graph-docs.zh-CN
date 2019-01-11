@@ -1,12 +1,13 @@
 ---
 title: 邮箱使用情况报表
 description: 邮箱使用情况报表可用于获取使用邮箱的用户及其活动级别（主要是以发送和接收的电子邮件数为依据）。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
-ms.openlocfilehash: 6ebaa1e829d4f97f8fa354a42a175a8f392e0c69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a802b392d6dda1e7a56fecbee9cc489f1833caba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009884"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826290"
 ---
 # <a name="mailbox-usage-reports"></a>邮箱使用情况报表
 

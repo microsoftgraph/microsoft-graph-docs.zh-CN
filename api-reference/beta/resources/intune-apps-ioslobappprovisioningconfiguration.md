@@ -1,12 +1,13 @@
 ---
 title: iosLobAppProvisioningConfiguration 资源类型
 description: 本主题提供的声明的方法、 属性和公开 IOS Lob 的应用程序设置配置资源的关系的说明。
-ms.openlocfilehash: 07ae7c53f481aa6f2c9ad083881752591ab421fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866393"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 
@@ -39,7 +40,7 @@ ms.locfileid: "27045508"
 |version|Int32|设备配置的版本。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)集合|相关联的组工作分配。|
 |assignments|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)集合|IosLobAppProvisioningConfiguration 相关联的组分配。|

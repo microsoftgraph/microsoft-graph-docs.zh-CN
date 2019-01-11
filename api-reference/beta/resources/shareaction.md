@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ShareAction
-ms.openlocfilehash: c9f06c7a4a6351b8a6554c944c0efe9af379e030
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 16bc590fcfe14f9ce7f6f1bbe38492225cce099c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828656"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
 

@@ -2,12 +2,13 @@
 title: networkIPv4ConfigurationManagementCondition 资源类型
 description: 配置基于管理条件可能定义设备检测到某些 IP 时将触发的 IPv4 网络设置。 IP 配置管理条件仅被视为 TRUE 的网络连接处于活动状态时。
 author: tfitzmac
-ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847297"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 
@@ -46,7 +47,7 @@ ms.locfileid: "27344259"
 |dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|为管理 condition 相关联的管理条件语句。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 

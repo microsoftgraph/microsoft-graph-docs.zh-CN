@@ -2,12 +2,13 @@
 title: 删除 importedWindowsAutopilotDeviceIdentity
 description: 删除importedWindowsAutopilotDeviceIdentity。
 author: tfitzmac
-ms.openlocfilehash: 33f69977f8cf3f78fb23a4ca287c0dd053ac320e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 391c01a789e37e9aef0057e87ecb4f642785fef9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826871"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>删除 importedWindowsAutopilotDeviceIdentity
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

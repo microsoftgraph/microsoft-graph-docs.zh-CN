@@ -2,12 +2,13 @@
 title: 创建 deviceAndAppManagementRoleDefinition
 description: 创建新的 deviceAndAppManagementRoleDefinition 对象。
 author: tfitzmac
-ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1eb68651a32f10d2b8daaab4fe7eaac0b8b2666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826031"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>创建 deviceAndAppManagementRoleDefinition
 
@@ -36,7 +37,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

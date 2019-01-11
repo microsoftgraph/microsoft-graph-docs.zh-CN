@@ -1,12 +1,13 @@
 ---
 title: 'TableRowCollection: add'
 description: '向表末尾的行。 请注意 API 可以接受使用此 API 的多个行数据。 一次添加一个行可能导致性能下降。 建议的方法是批处理一起中单个呼叫，而不是以单个行插入行。 为了获得最佳结果，收集要插入的应用程序一侧，并执行单个行的行添加操作。 试验要确定的理想要使用一个 API 调用中的行数的行数。 '
-ms.openlocfilehash: 20f131737d51ff0fa09004a80d5d24c3b6673cc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2b9f1858f77c8c6378f7fc189144ab4c9062d562
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877026"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 

@@ -2,12 +2,13 @@
 title: androidStoreApp 资源类型
 description: 包含 Android 应用商店应用的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 8dc3a093aa17fc9eb97a062d24d49be69e9e439d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7296275231079dd8e75225ec461a6b3eb269da8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325884"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826857"
 ---
 # <a name="androidstoreapp-resource-type"></a>androidStoreApp 资源类型
 

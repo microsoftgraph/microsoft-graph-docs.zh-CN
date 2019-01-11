@@ -2,12 +2,13 @@
 title: windowsUniversalAppX 资源类型
 description: 包含 Windows Universal AppX 业务线应用的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 046c5c541d567f587ec1f7bffd95aa7bc437a1b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 025560143081e1bb8f520aa89e281f4d00955d31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866295"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX 资源类型
 

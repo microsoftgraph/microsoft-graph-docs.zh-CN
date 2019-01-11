@@ -1,12 +1,13 @@
 ---
 title: daylightTimeZoneOffset 资源类型
 description: 指定时区何时从标准时间切换到夏令时。
-ms.openlocfilehash: 1504a3c1bb1b2d6c691aadf1d073a95453f76d2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37e08ec0e695fd245678510ac4a40bc978b1a93e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041857"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825604"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
 

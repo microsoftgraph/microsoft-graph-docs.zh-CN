@@ -2,12 +2,13 @@
 title: win32LobAppFileSystemDetectionType 枚举类型
 description: 包含所有受支持的文件系统检测类型。
 author: tfitzmac
-ms.openlocfilehash: 240d5e93400ce44dca97d72688e3e5ae9f386278
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1748b98732e77c8da7360dbd7a4474235da31925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846562"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354010"
 
 包含所有受支持的文件系统检测类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |存在|1|是否指定的文件或文件夹存在。|

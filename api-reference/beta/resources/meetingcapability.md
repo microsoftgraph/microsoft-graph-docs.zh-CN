@@ -2,12 +2,13 @@
 title: meetingCapability 资源类型
 description: 包含会议的功能
 author: VinodRavichandran
-ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825807"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability 资源类型
 
@@ -17,10 +18,10 @@ ms.locfileid: "27380245"
 
 ## <a name="properties"></a>属性
 
-| 属性                          | 类型    | 说明                                                        |
+| 属性                          | 类型    | Description                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | 指示是否在会议中允许匿名用户拨出。 |
-| allowAnonymousUsersToStartMeeting | Boolean | 指示是否允许匿名用户开始会议。  |
+| allowAnonymousUsersToDialOut      | 布尔 | 指示是否在会议中允许匿名用户拨出。 |
+| allowAnonymousUsersToStartMeeting | 布尔 | 指示是否允许匿名用户开始会议。  |
 | autoAdmittedUsers                 | String  | 可取值为：`everyoneInCompany`、`everyone`。              |
 
 ## <a name="json-representation"></a>JSON 表示形式

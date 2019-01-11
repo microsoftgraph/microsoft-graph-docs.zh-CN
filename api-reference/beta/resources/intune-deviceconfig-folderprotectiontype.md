@@ -2,12 +2,13 @@
 title: folderProtectionType 枚举类型
 description: 可能的值的文件夹保护
 author: tfitzmac
-ms.openlocfilehash: 93df62da9bb5d849cba86b52384f45bfe7bd760f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 435f3ea01f5a8ffc3c4cb54034d415d54732db5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826129"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderProtectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27350601"
 
 可能的值的文件夹保护
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|设备默认值，没有用途。|
 |启用|1|阻止功能。|

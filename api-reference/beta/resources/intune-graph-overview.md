@@ -2,12 +2,13 @@
 title: 使用 Intune Graph API
 description: " 不支持 Intune 混合部署。 "
 author: tfitzmac
-ms.openlocfilehash: cecce61dba0ddfc044c2e06e0e16d68401fcafb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 606c2324476492f8dc9271646d0109bb3d57de99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869711"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 

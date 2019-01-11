@@ -2,12 +2,13 @@
 title: 删除 officeClientConfigurationAssignment
 description: 删除 officeClientConfigurationAssignment。
 author: tfitzmac
-ms.openlocfilehash: 2125a736cdcaa5e5ab6623dd8802380b3ce602d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2ab631c6b7e864def9abafac183377294a22737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808125"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>删除 officeClientConfigurationAssignment
 
@@ -38,7 +39,7 @@ DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/a
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

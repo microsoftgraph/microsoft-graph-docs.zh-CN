@@ -2,12 +2,13 @@
 title: Worksheet:Range
 description: 获取地址或名称指定的 range 对象。
 author: lumine2008
-ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f057b93cbc0bd2e846330b9e5e1e49b2323bf8b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873316"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 
@@ -28,14 +29,14 @@ GET /workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 

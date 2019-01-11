@@ -1,12 +1,13 @@
 ---
 title: fileSecurityState 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: cbf535dd6b30387afbe361389fa6bcfca1fc68fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d18021591b24d26577e41897111b90310746d18
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869501"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 

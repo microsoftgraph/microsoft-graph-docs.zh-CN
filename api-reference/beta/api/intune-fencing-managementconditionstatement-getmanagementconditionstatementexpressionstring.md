@@ -2,12 +2,13 @@
 title: getManagementConditionStatementExpressionString 函数
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: cde3e5b3c4867d2b3b0156fce550896b0748c8e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 052db6185c59d25ed9a223e5ae8dbb95e81e4e1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851602"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>getManagementConditionStatementExpressionString 函数
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

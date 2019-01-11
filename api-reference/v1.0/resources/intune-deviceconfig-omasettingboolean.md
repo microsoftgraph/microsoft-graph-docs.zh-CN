@@ -2,12 +2,13 @@
 title: omaSettingBoolean 资源类型
 description: OMA 设置布尔定义。
 author: tfitzmac
-ms.openlocfilehash: 10101217d1c0f07931cb847e1c14f36844c8dc9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46bca1f6052dae3f4699b88258abce4b346c67bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868206"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 

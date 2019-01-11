@@ -1,12 +1,13 @@
 ---
 title: 列出 schemaExtensions
 description: '获取由您拥有当前租户 （即可以是任何应用程序创建的 schemaExtension 对象的列表 '
-ms.openlocfilehash: 9e366ae62276198ad08f322646c920816d25ec64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9d34552229f5b18035a2ba5d84b0ac0a4de5b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868416"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtensions
 

@@ -2,12 +2,13 @@
 title: 更新用户
 description: 更新 user 对象的属性。
 author: dkershaw10
-ms.openlocfilehash: 1242c16ba0e99670e774c10072528125e12dc0fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: cda0ddd32331edb4274404d3862e044a735dc7d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849110"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -40,7 +41,7 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |city|字符串|用户所在的城市。支持 $filter。|
 |country|字符串|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|

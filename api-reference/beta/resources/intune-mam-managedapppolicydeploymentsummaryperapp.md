@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummaryPerApp 资源类型
 description: 表示每个应用的策略部署摘要。
 author: tfitzmac
-ms.openlocfilehash: 8786ff0600b59a2cb729d1d7b5b4c692ab1704de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23966e2017780d3dcfde592d7159576403fe3192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829748"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp 资源类型
 

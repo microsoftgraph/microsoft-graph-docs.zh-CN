@@ -2,12 +2,13 @@
 title: iosNotificationAlertType 枚举类型
 description: 通知设置的警报类型。
 author: tfitzmac
-ms.openlocfilehash: 26da4afdec3adeadaf4dd1f8513243d411f430c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7530a0d63ce263636ae822c25f78deb57cf8083a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846884"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27309525"
 
 通知设置的警报类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |横幅|1|横幅。|

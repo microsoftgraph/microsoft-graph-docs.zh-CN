@@ -2,12 +2,13 @@
 title: windowsAutopilotProfileAssignmentStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 255aab9770305baa29e73278b3bfceec1079351a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48d08ad4d4c80c3d5a68cca5af36c958deaac819
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869641"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27320998"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的工作分配状态|
 |assignedInSync|1|分配 Intune 中成功的 Windows 自动试用计划同步|

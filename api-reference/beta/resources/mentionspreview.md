@@ -1,12 +1,13 @@
 ---
 title: mentionsPreview 资源类型
 description: 代表资源实例中提及对象的信息。
-ms.openlocfilehash: cf6bed3cdfb2d3f541438da0c06fcf8f4873c17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1534b7f0ef48a80d0faaaa09880b91cb270e8eca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826108"
 ---
 # <a name="mentionspreview-resource-type"></a>mentionsPreview 资源类型
 
@@ -15,9 +16,9 @@ ms.locfileid: "27048096"
 代表资源实例中[有提及](../resources/mention.md)对象的信息。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-| isMentioned | 布尔 | 如果已登录的用户提及的父资源实例中，则为 true。 只读。 支持的筛选器。 |
+| isMentioned | 布尔 | 如果已登录的用户提及的父资源实例中，则为 true。 此为只读属性。 支持的筛选器。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

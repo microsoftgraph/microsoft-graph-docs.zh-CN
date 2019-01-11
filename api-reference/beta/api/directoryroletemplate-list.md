@@ -2,12 +2,13 @@
 title: 列出 directoryRoleTemplate
 description: 检索 directoryroletemplate 对象的列表。
 author: lleonard-msft
-ms.openlocfilehash: bc61c7b4c41fd3d5a6a884cf27c6f86c09aabf94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a61127b7fdd31ce55f44a42ac847c5ac50932cf6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848564"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplate
 
@@ -32,7 +33,7 @@ GET /directoryRoleTemplates
 此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

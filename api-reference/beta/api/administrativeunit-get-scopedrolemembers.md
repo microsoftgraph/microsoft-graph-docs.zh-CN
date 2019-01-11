@@ -2,12 +2,13 @@
 title: 获取 scopedRoleMember
 description: 检索特定 scopedRoleMembership 资源。
 author: lleonard-msft
-ms.openlocfilehash: a0a947895c7c172ae4e3f3a44566e5ea19e9dc8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb014bba18fabaeaf1bd2a118ed0adce3b15122d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829342"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 
@@ -33,7 +34,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

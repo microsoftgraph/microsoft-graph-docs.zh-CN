@@ -1,12 +1,13 @@
 ---
 title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
-ms.openlocfilehash: 691715a921ae98f725f26566fb144530f27330b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26e51babc4610c331563923c464db341d4517c51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847640"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 

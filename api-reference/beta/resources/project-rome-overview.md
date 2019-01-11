@@ -1,12 +1,13 @@
 ---
 title: '使用 Microsoft Graph API 来处理项目 Rome '
 description: '项目 Rome 是 Microsoft 旨在构建一个平台，使应用程序开发人员可以构建出色的跨设备体验。 项目 Rome 启用连接不同的服务和客户端终结点，当用户迹象使用同一 Microsoft 帐户或工作或学校帐户时的不同功能。 这样，您可以实现跨设备和跨平台围绕用户任务，而不是设备的体验。 '
-ms.openlocfilehash: f779c04a76331d27fdcae6436e758bacfc052f8e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830000"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 来处理项目 Rome 
 
@@ -53,7 +54,7 @@ ms.locfileid: "27043778"
 - [向设备发送命令](../api/send-device-command.md)
 - [获取 status 命令](../api/get-device-command-status.md)
 
-## <a name="notifications"></a>Notifications
+## <a name="notifications"></a>通知
 
 您可以使用在 Microsoft Graph 通知 Api 个相同的用户登录的多个终结点发送通知。 发布而不是担心设备地址/通道通知时，您可以直接目标用户。 这种方式，您可以集中设计 human 为中心，而不是一种设备中心的方法中的右侧的通知方案。 
 
