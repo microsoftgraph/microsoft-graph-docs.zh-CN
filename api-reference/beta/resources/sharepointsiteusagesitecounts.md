@@ -1,29 +1,30 @@
 ---
 title: sharePointSiteUsageSiteCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 631e01a417e177e356b701ca8dc93ffa51b4f50f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 913f9de5972d857b859b713298a0413d615b8991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828124"
 ---
-# <a name="sharepointsiteusagesitecounts-resource-type"></a><span data-ttu-id="d75c4-103">sharePointSiteUsageSiteCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="d75c4-103">sharePointSiteUsageSiteCounts resource type</span></span>
+# <a name="sharepointsiteusagesitecounts-resource-type"></a><span data-ttu-id="88974-103">sharePointSiteUsageSiteCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="88974-103">sharePointSiteUsageSiteCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d75c4-104">属性</span><span class="sxs-lookup"><span data-stu-id="d75c4-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="88974-104">属性</span><span class="sxs-lookup"><span data-stu-id="88974-104">Properties</span></span>
 
-| <span data-ttu-id="d75c4-105">属性</span><span class="sxs-lookup"><span data-stu-id="d75c4-105">Property</span></span>          | <span data-ttu-id="d75c4-106">类型</span><span class="sxs-lookup"><span data-stu-id="d75c4-106">Type</span></span>   |
+| <span data-ttu-id="88974-105">属性</span><span class="sxs-lookup"><span data-stu-id="88974-105">Property</span></span>          | <span data-ttu-id="88974-106">类型</span><span class="sxs-lookup"><span data-stu-id="88974-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="d75c4-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="d75c4-107">reportRefreshDate</span></span> | <span data-ttu-id="d75c4-108">日期</span><span class="sxs-lookup"><span data-stu-id="d75c4-108">Date</span></span>   |
-| <span data-ttu-id="d75c4-109">键入一个文件夹</span><span class="sxs-lookup"><span data-stu-id="d75c4-109">siteType</span></span>          | <span data-ttu-id="d75c4-110">字符串</span><span class="sxs-lookup"><span data-stu-id="d75c4-110">String</span></span> |
-| <span data-ttu-id="d75c4-111">total</span><span class="sxs-lookup"><span data-stu-id="d75c4-111">total</span></span>             | <span data-ttu-id="d75c4-112">Int64</span><span class="sxs-lookup"><span data-stu-id="d75c4-112">Int64</span></span>  |
-| <span data-ttu-id="d75c4-113">活动</span><span class="sxs-lookup"><span data-stu-id="d75c4-113">active</span></span>            | <span data-ttu-id="d75c4-114">Int64</span><span class="sxs-lookup"><span data-stu-id="d75c4-114">Int64</span></span>  |
-| <span data-ttu-id="d75c4-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="d75c4-115">reportDate</span></span>        | <span data-ttu-id="d75c4-116">日期</span><span class="sxs-lookup"><span data-stu-id="d75c4-116">Date</span></span>   |
-| <span data-ttu-id="d75c4-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="d75c4-117">reportPeriod</span></span>      | <span data-ttu-id="d75c4-118">String</span><span class="sxs-lookup"><span data-stu-id="d75c4-118">String</span></span> |
+| <span data-ttu-id="88974-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="88974-107">reportRefreshDate</span></span> | <span data-ttu-id="88974-108">日期</span><span class="sxs-lookup"><span data-stu-id="88974-108">Date</span></span>   |
+| <span data-ttu-id="88974-109">键入一个文件夹</span><span class="sxs-lookup"><span data-stu-id="88974-109">siteType</span></span>          | <span data-ttu-id="88974-110">字符串</span><span class="sxs-lookup"><span data-stu-id="88974-110">String</span></span> |
+| <span data-ttu-id="88974-111">total</span><span class="sxs-lookup"><span data-stu-id="88974-111">total</span></span>             | <span data-ttu-id="88974-112">Int64</span><span class="sxs-lookup"><span data-stu-id="88974-112">Int64</span></span>  |
+| <span data-ttu-id="88974-113">活动</span><span class="sxs-lookup"><span data-stu-id="88974-113">active</span></span>            | <span data-ttu-id="88974-114">Int64</span><span class="sxs-lookup"><span data-stu-id="88974-114">Int64</span></span>  |
+| <span data-ttu-id="88974-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="88974-115">reportDate</span></span>        | <span data-ttu-id="88974-116">日期</span><span class="sxs-lookup"><span data-stu-id="88974-116">Date</span></span>   |
+| <span data-ttu-id="88974-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="88974-117">reportPeriod</span></span>      | <span data-ttu-id="88974-118">String</span><span class="sxs-lookup"><span data-stu-id="88974-118">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="d75c4-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d75c4-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="88974-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="88974-119">JSON representation</span></span>
 
-<span data-ttu-id="d75c4-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d75c4-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="88974-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="88974-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
