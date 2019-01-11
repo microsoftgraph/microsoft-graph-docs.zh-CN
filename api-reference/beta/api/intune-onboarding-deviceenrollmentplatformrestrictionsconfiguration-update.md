@@ -2,12 +2,13 @@
 title: 更新 deviceEnrollmentPlatformRestrictionsConfiguration
 description: 更新 deviceEnrollmentPlatformRestrictionsConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: c654e9b5620dd2812fd1d5793b7574e9f3787f47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 606bf82b6556f42c661b4cb46d8ddb978cfbbe7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813109"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>更新 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

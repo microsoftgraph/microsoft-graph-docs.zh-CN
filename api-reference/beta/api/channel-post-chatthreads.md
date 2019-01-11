@@ -2,12 +2,13 @@
 title: 创建聊天线程
 description: 通过提供根邮件，在指定的通道中创建新的聊天线程。
 author: nkramer
-ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809070"
 ---
 # <a name="create-chat-thread"></a>创建聊天线程
 
@@ -32,7 +33,7 @@ ms.locfileid: "27325611"
 POST /teams/{id}/channels/{id}/chatThreads
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

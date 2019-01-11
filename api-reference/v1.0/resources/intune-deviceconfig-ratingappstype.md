@@ -2,12 +2,13 @@
 title: ratingAppsType 枚举类型
 description: 分级如媒体内容中所示的应用程序
 author: tfitzmac
-ms.openlocfilehash: e0340b9e1a188df6fd7fea0972ba4db8da2060e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fef3a964277267b73a8e6e4f4b3b8fa5afb9fb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822307"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27360737"
 
 分级如媒体内容中所示的应用程序
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有应用程序内容|
 |allBlocked|1|不允许任何应用程序内容|

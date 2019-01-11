@@ -2,12 +2,13 @@
 title: 删除 androidForWorkTrustedRootCertificate
 description: 删除 androidForWorkTrustedRootCertificate。
 author: tfitzmac
-ms.openlocfilehash: 2571e3fd270ef56e8b93ea44efc826cf89a8613f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab73a40b7e50bde91d352f65fa8295894c9e5927
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812738"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>删除 androidForWorkTrustedRootCertificate
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

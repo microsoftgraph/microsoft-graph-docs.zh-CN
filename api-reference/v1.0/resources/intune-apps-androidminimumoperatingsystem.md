@@ -2,12 +2,13 @@
 title: androidMinimumOperatingSystem 资源类型
 description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: tfitzmac
-ms.openlocfilehash: 3c477a624377febe6001b92f6694fe27b0666cf5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79a59104d2cfc062852b3f6e8e39627b49072a31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808832"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 

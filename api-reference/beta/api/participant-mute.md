@@ -2,12 +2,13 @@
 title: 参与者： 设为静音
 description: 将呼叫中的特定参与者设为静音。
 author: VinodRavichandran
-ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ab8c0ee24b1175a77ad157f51437a29b99404392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808223"
 ---
 # <a name="participant-mute"></a>参与者： 设为静音
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |clientContext|字符串|客户端上下文。|
 

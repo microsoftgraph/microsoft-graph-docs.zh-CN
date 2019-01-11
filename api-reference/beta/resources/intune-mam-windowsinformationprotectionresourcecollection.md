@@ -2,12 +2,13 @@
 title: windowsInformationProtectionResourceCollection 资源类型
 description: Windows 信息保护资源集合
 author: tfitzmac
-ms.openlocfilehash: 96b3b36f40d1eeb88731f6f44ebec812a18fe713
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf1d7881c7028e14a048d3f286f684f26393ab58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807005"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
 

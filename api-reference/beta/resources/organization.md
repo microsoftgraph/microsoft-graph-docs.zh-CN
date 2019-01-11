@@ -1,12 +1,13 @@
 ---
 title: 组织资源类型
 description: '代表 Azure Active Directory 租户。 '
-ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771826"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823140"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -41,8 +42,8 @@ ms.locfileid: "27771826"
 | deletedDateTime                    | DateTimeOffset                                                    | 表示日期和时间的 Azure AD 租户已删除使用 ISO 8601 格式时，始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。                                                                                     |
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
-|id|String|租户 ID，代表组织 （或租户） 的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
-|isMultipleDataLocationsForServicesEnabled|布尔值|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 此为只读属性。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|id|字符串|租户 ID，代表组织 （或租户） 的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
+|isMultipleDataLocationsForServicesEnabled|布尔|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 此为只读属性。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |marketingNotificationEmails|String collection| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 |postalCode|String| 组织地址的邮政编码。 |

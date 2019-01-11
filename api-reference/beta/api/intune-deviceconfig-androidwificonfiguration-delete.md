@@ -2,12 +2,13 @@
 title: 删除 androidWiFiConfiguration
 description: 删除 androidWiFiConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 5280daf445d7fdf62bffc90701aefd461ccdea79
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ff7ad06a89b2853c5daf83bd6b3abe7da4e1140
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807929"
 ---
 # <a name="delete-androidwificonfiguration"></a>删除 androidWiFiConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

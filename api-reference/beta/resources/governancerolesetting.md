@@ -1,12 +1,13 @@
 ---
 title: governanceRoleSetting 资源类型
 description: " 规则，依此类推。"
-ms.openlocfilehash: 64245b2d6f0aa9e0ea3ffda4a5eaebfb9fd205df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d63685ae1a4383ce7ab245dda0fd7d1207c57f88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805885"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
@@ -26,10 +27,10 @@ ms.locfileid: "27045763"
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |字符串                                  |RoleSetting 的 id。|
-|resourceId           |String                                  |必需项。 与关联的角色设置资源的 id。|
-|roleDefinitionId     |字符串                                  |必需项。 角色设置相关联的角色定义 id。|
-|isDefault            |布尔                                 |只读。 指示 roleSetting 是否是默认 roleSetting|
-|lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新时间角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|resourceId           |String                                  |必需。 与关联的角色设置资源的 id。|
+|roleDefinitionId     |字符串                                  |必需。 角色设置相关联的角色定义 id。|
+|isDefault            |布尔                                 |此为只读属性。 指示 roleSetting 是否是默认 roleSetting|
+|lastUpdatedDateTime  |DateTimeOffset                          |此为只读属性。 上次更新时间角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |String                                  |只读。 显示上次更新时间 roleSetting 的管理员名称。|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|管理员尝试添加合格的角色分配时计算规则设置。|
 |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md)集合|管理员尝试添加直接成员角色分配时计算规则设置。|
@@ -39,8 +40,8 @@ ms.locfileid: "27045763"
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|只读。 此角色设置关联的资源。|
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 角色定义的强制执行与此角色设置。 |
+|资源|[governanceResource](../resources/governanceresource.md)|此为只读属性。 此角色设置关联的资源。|
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|此为只读属性。 角色定义的强制执行与此角色设置。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

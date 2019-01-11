@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取 SharePoint 网站
-ms.openlocfilehash: 03edd76f6d6855d8b8d2271d2d99f8b39071710d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 67da055677bf566229e4b1a2cca5ae327c7b6fe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806312"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 

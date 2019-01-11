@@ -2,12 +2,13 @@
 title: 更新 tablecolumn
 description: 更新 tablecolumn 对象的属性。
 author: lumine2008
-ms.openlocfilehash: 8b3d2872d574882b1d9fca24cee9e41e51ef3b23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3e6bc61f66af286e348610c2463b6aad611f49c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806130"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -30,7 +31,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

@@ -1,12 +1,13 @@
 ---
 title: 邮件：发送
 description: 在草稿文件夹发送邮件。 草稿消息可以是新的邮件草稿、 答复草稿、 全部答复草稿或
-ms.openlocfilehash: b295cd5b234bf9dafe1fbba44a03cdc6e9c1842e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ccef4d1a58faea7678acefee5d175403a8827b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806641"
 ---
 # <a name="message-send"></a>邮件：发送
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Length | number | 0。 被必需。 |
+| Content-Length | 数字 | 0。 被必需。 |
 
 ## <a name="request-body"></a>请求正文
 

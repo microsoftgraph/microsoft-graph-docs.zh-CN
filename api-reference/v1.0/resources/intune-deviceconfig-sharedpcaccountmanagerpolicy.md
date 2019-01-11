@@ -2,12 +2,13 @@
 title: sharedPCAccountManagerPolicy 资源类型
 description: 共享电脑帐户管理器策略 仅在启用了帐户管理器时适用。
 author: tfitzmac
-ms.openlocfilehash: 7eafffbfac115c95cbf2c62be630cf7958965ce9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4597d4bc6fd818bc0437a3ad3675c2aa5683ec61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306564"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815678"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy 资源类型
 

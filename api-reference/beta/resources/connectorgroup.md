@@ -1,12 +1,13 @@
 ---
 title: connectorGroup 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: a3131b887216f1f400f70ed8d607477f65793cc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 211efe5d8caae57457a6a5cc4fa95d145cd176f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823189"
 ---
 # <a name="connectorgroup-resource-type"></a>connectorGroup 资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "27046539"
 |[删除](../api/connectorgroup-delete.md) | 无 |删除 connectorGroup 对象。 可以删除连接器组之前必须删除所有连接线。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| 将使用与组的连接器的类型。 可能的值为： `applicationProxy`。|
 |id|字符串| ConnectorGroup 对象 id|
@@ -33,7 +34,7 @@ ms.locfileid: "27046539"
 |name|字符串| 与 connectorGroup 关联的名称。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |应用程序|[应用程序](application.md)集合| 只读。可为 NULL。|
 |members|[连接器](connector.md)集合| 只读。可为 NULL。|

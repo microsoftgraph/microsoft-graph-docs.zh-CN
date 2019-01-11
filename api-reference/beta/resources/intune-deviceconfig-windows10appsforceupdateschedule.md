@@ -2,12 +2,13 @@
 title: windows10AppsForceUpdateSchedule 资源类型
 description: Windows 10 强制更新计划程序
 author: tfitzmac
-ms.openlocfilehash: 851f22e092f2669dfc44911783df6182cda1dc6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef8a0583bd02a62a4461a3415aae86833e24e948
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811233"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
 
@@ -21,7 +22,7 @@ Windows 10 强制更新计划程序
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|强制的开始时间重新启动。|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
-|runImmediatelyIfAfterStartDateTime|Boolean|如果为 true，请在过去，其他人，会在下一个定期运行开始日期时间是否立即运行任务。|
+|runImmediatelyIfAfterStartDateTime|布尔|如果为 true，请在过去，其他人，会在下一个定期运行开始日期时间是否立即运行任务。|
 
 ## <a name="relationships"></a>Relationships
 无

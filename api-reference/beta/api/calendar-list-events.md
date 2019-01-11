@@ -2,12 +2,13 @@
 title: 列出事件
 description: 检索日历中的事件列表。该列表包含单个实例会议和系列主控形状。
 author: angelgolfer-ms
-ms.openlocfilehash: 3cf431d600f36350d8654e9624b596222fcbff8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d3f4110b33cb401126200eadc57c14fef379f9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814229"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -49,7 +50,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明 |
+| 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |

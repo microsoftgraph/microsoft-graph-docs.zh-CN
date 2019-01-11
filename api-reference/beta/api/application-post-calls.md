@@ -2,12 +2,13 @@
 title: 创建呼叫
 description: 创建新的呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 1a2c6e85579e82787abf0bb7bb8b541c81aaf12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818737"
 ---
 # <a name="create-call"></a>创建呼叫
 

@@ -2,12 +2,13 @@
 title: 创建日历
 description: 此 API 可用于在用户的日历组中新建日历。
 author: angelgolfer-ms
-ms.openlocfilehash: 09b98abeaae5e908046aeac370c791e45a1e894d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cdb24b32bfd23cf5c6c6cf41673b4f8fa0ff61dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806935"
 ---
 # <a name="create-calendar"></a>创建日历
 

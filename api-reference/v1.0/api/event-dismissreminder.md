@@ -2,12 +2,13 @@
 title: 'event: dismissReminder'
 description: 消除提醒用户日历中触发事件。
 author: angelgolfer-ms
-ms.openlocfilehash: 1075ee86ee174bab23bd0436c69da37f1f001d66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1165dbf036848ee01ad80a1080a01e9b344fc399
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811569"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 <br/>
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

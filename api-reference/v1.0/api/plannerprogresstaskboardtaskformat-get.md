@@ -1,12 +1,13 @@
 ---
 title: 获取 plannerProgressTaskBoardTaskFormat
 description: 检索 **plannerProgressTaskBoardTaskFormat** 对象的属性和关系。
-ms.openlocfilehash: 326ff2f551fdb7a93f40737788c59ca114ac64db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46a6987903654d228bc4a8e51dc6d3b90593af3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823280"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>获取 plannerProgressTaskBoardTaskFormat
 

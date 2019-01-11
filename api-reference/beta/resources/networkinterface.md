@@ -1,12 +1,13 @@
 ---
 title: networkInterface 资源类型
 description: 表示与此主机网络接口卡 (NIC)。
-ms.openlocfilehash: 7044b4f469e74424b0dc27ffa38c5feb081faa45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823301"
 ---
 # <a name="networkinterface-resource-type"></a>networkInterface 资源类型
 

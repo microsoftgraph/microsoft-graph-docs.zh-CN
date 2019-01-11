@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationCustomizations 资源类型
 description: 如果有，包含与同步和其自定义的实体列表。
-ms.openlocfilehash: d694c5ea1136d38e11ff3f1aca0ad0fde34b9d02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c07b166c09b2bfa6bf88159533523dab869a325
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817036"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>educationSynchronizationCustomizations 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27045739"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **学校** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  学校实体的自定义。        |
 | **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  针对部分实体的自定义项。         |

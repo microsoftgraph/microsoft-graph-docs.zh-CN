@@ -2,12 +2,13 @@
 title: 'workbookPivotTable: refreshAll'
 description: 刷新给定工作表中的数据透视表。
 author: lumine2008
-ms.openlocfilehash: 08a4015d58e68a3099448be91537b7970d5c1ddd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd70ed9a0f0681ac8b1f90d2839e85a419762653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822300"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -31,7 +32,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

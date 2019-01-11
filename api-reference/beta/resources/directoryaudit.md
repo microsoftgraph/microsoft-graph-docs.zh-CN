@@ -2,12 +2,13 @@
 title: directoryAudit 资源类型
 description: 此资源表示的目录审核项，并且其集合
 author: lleonard-msft
-ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: f3b1aa12c18205379220a924be81b53bf6014900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820508"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 此资源表示的目录审核项，并且其集合
@@ -22,7 +23,7 @@ ms.locfileid: "27312787"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|指示的日期和时间执行活动。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |activityDisplayName|字符串|指示活动名称或操作名称 （例如 "创建用户"，"向组添加成员")。 有关记录的活动的列表，请参阅[Azure Ad 活动列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|

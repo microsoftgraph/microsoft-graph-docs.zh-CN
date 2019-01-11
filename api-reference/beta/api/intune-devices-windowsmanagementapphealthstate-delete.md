@@ -2,12 +2,13 @@
 title: 删除 windowsManagementAppHealthState
 description: 删除 windowsManagementAppHealthState。
 author: tfitzmac
-ms.openlocfilehash: 42d8ddcded88d43e49627830cc73b8be525ef817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e0ddcc407a6140b96a12329dd939e2837cf22f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808678"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>删除 windowsManagementAppHealthState
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

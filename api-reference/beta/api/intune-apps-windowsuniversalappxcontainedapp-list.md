@@ -2,12 +2,13 @@
 title: 列表 windowsUniversalAppXContainedApps
 description: 列出属性和 windowsUniversalAppXContainedApp 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: f28efa8a32c45d297670789a7726319fd96cc0b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f5c7afb65c3628629d5349bca76c1b46467dfc9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301979"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808685"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>列表 windowsUniversalAppXContainedApps
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

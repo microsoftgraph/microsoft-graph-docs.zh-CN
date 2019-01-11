@@ -2,12 +2,13 @@
 title: 获取 androidForWorkAppConfigurationSchema
 description: 读取 androidForWorkAppConfigurationSchema 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 94aea1a7fc058e3e318edf73ad45c6aebde8f3e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb6c18d633d9194e692a374e2e551ee482d69cb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823826"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>获取 androidForWorkAppConfigurationSchema
 
@@ -40,7 +41,7 @@ GET /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

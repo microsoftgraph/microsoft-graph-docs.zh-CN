@@ -2,12 +2,13 @@
 title: 获取 cartToClassAssociation
 description: 读取属性和 cartToClassAssociation 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: f7a787ef26317993b0bb9c9f0fd67d2e9ff6ab8f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38c31d28e361c06e6178a8943a345287d6c5f529
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817099"
 ---
 # <a name="get-carttoclassassociation"></a>获取 cartToClassAssociation
 
@@ -40,7 +41,7 @@ GET /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 创建 governanceRoleAssignmentRequest
 description: 创建角色分配请求以表示该操作所需角色分配。 下表列出的操作。
-ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823770"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -51,7 +52,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象的 JSON 表示形式。 
 
-| 属性     | 类型    |必需|  说明|
+| 属性     | 类型    |是否必需|  Description|
 |:---------------|:--------|:----------|:----------|
 |resourceId|字符串|是|资源的 ID。|
 |roleDefinitionId|字符串|是|角色定义的 ID。|
@@ -173,7 +174,7 @@ Content-length: 226
 |resourceId|字符串|是|\<resourceId\>|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
-|assignmentState|字符串|是| 活跃|
+|assignmentState|字符串|是| 活动|
 |type|字符串|是| UserAdd|
 |原因|字符串| 取决于角色设置||
 |计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
@@ -268,7 +269,7 @@ Content-type: application/json
 |resourceId|字符串|是|\<resourceId\>|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
-|assignmentState|字符串|是| 活跃|
+|assignmentState|字符串|是| 活动|
 |type|字符串|是| UserRemove|
 |原因|字符串| 否||
 |计划|[governanceSchedule](../resources/governanceschedule.md)|否|        |

@@ -2,12 +2,13 @@
 title: 删除 iosVppEBook
 description: 删除 iosVppEBook。
 author: tfitzmac
-ms.openlocfilehash: 33fd091df734ae6c6d176a4df8413efba859e795
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e7f03469a11da9253901c7283118068e14c4acb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817022"
 ---
 # <a name="delete-iosvppebook"></a>删除 iosVppEBook
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

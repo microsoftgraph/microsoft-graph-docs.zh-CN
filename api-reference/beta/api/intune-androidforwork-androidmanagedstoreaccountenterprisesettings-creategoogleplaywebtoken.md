@@ -2,12 +2,13 @@
 title: createGooglePlayWebToken 操作
 description: 生成嵌入组件中使用的 web 标记。
 author: tfitzmac
-ms.openlocfilehash: 206113b445d8b190e02b292dd661bc3c207de288
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4eaf622d10eb631b45694e23313443b444068e7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808958"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |parentUri|字符串|承载组件页上的 https 路径。|
 

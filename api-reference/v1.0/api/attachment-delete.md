@@ -1,12 +1,13 @@
 ---
 title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
-ms.openlocfilehash: 99f181b346f239462b12777c9737b76688459bde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816994"
 ---
 # <a name="delete-attachment"></a>删除附件
 

@@ -2,12 +2,13 @@
 title: firewallPacketQueueingMethodType 枚举类型
 description: FirewallPacketQueueingMethod 的可能值
 author: tfitzmac
-ms.openlocfilehash: 9f3d63b7e58b6f9c5ba369c3ceb12d06704c4725
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1303287e521cf0b542047e8acaf122bc08a770a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823217"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304555"
 
 FirewallPacketQueueingMethod 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|配置通过 Intune，没有值不会替代的用户配置设备默认值|
 |禁用|1|停用数据包的队列|

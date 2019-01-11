@@ -2,12 +2,13 @@
 title: 更新 deviceConfigurationGroupAssignment
 description: 更新 deviceConfigurationGroupAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822988"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>更新 deviceConfigurationGroupAssignment
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +59,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|字符串|AAD 组 Id 目标到该设备的配置。|
-|excludeGroup|Boolean|指示此组是否应排除。 应包含的组的默认值|
+|excludeGroup|布尔|指示此组是否应排除。 应包含的组的默认值|
 
 
 

@@ -2,12 +2,13 @@
 title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
 author: lleonard-msft
-ms.openlocfilehash: 4c972ca554f7a073ddfb5b3472784240c691c973
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41e8d3f33d5f77fc0101e501be916433a066ba8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815769"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
@@ -47,7 +48,7 @@ GET /directory/deletedItems/microsoft.graph.user
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
 | Accept  | application/json |

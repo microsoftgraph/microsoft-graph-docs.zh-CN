@@ -2,12 +2,13 @@
 title: windowsKioskProfile 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: ce57b18e86f40a46053a5e0a0f41652763a6d055
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c082b5fb9421af36bbc742051989492a5a3b19d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807649"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27345351"
 
 尚未记录
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |档案 Id|String|实体的键。|
 |profileName|字符串|这是用于标识一组应用程序，在开始菜单和用户为其分配此网亭配置这些应用程序的布局的友好名称。|

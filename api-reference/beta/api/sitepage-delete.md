@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: 从 SharePoint 网站中删除页面
-ms.openlocfilehash: c537acec2e205ffd556a35789f75be95e2b94017
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1089bd904167f4c86ee1f6becede2824a2b6f2f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815111"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>从网站的网站的页面列表中删除页
 

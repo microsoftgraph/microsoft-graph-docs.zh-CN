@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: 创建 SharePoint 列表
-ms.openlocfilehash: a1e247722e9e8874a78a1951619e08bff9bd36e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bf1bc2afdba13878050c13cf81dcdfadf230ee3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048857"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808272"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 

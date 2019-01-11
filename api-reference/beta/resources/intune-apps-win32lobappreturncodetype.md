@@ -2,12 +2,13 @@
 title: win32LobAppReturnCodeType 枚举类型
 description: 指示返回代码的类型。
 author: tfitzmac
-ms.openlocfilehash: 31023cb2d8f5a0f645f31890e56ab9a55641bbf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 684aa4f717adb0841c9f6c983c39afee2bf7210a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807299"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357951"
 
 指示返回代码的类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |failed|0|失败。|
 |success|1|成功。|

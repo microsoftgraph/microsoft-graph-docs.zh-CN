@@ -2,12 +2,13 @@
 title: 获取 macOSEnterpriseWiFiConfiguration
 description: 读取属性和 macOSEnterpriseWiFiConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: c33a2427bf6d576209567df71361a244ef4601c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 231a8549546ef84baf5fddd1edeb45ca105cabb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822931"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>获取 macOSEnterpriseWiFiConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

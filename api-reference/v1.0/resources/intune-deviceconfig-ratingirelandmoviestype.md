@@ -2,12 +2,13 @@
 title: ratingIrelandMoviesType 枚举类型
 description: 电影分级在爱尔兰标签
 author: tfitzmac
-ms.openlocfilehash: bf36790325edfa665f504f161c1de59ebe7c5bbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8c88b14f704b0904d2b8e961ebfb99ef1f55cfa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814341"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>ratingIrelandMoviesType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27349194"
 
 电影分级在爱尔兰标签
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|

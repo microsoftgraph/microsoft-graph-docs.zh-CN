@@ -1,12 +1,13 @@
 ---
 title: governanceRoleAssignmentRequestStatus 资源类型
 description: 代表 governanceRoleAssignmentRequest 的状态。
-ms.openlocfilehash: 06b0f17513d5d796d3fe71cbd3888963bc4a34ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5daac53661cc607d51e5bfd1ec9031cfa599fca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808069"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 

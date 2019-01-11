@@ -1,12 +1,13 @@
 ---
 title: 列出我 accessReview 决策
 description: 在 Azure AD 访问评论功能中，为审阅者检索呼叫用户的 accessReview 对象的决策。
-ms.openlocfilehash: 6a1c2769e8997110c3471eff7f6e18c6ad23286f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 27ae3129810b6019ecf47e23f1e4cc48362df6fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819010"
 ---
 # <a name="list-my-accessreview-decisions"></a>列出我 accessReview 决策
 
@@ -30,7 +31,7 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

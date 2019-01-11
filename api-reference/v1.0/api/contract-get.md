@@ -1,12 +1,13 @@
 ---
 title: 获取 Contract
 description: 检索 contract 对象的属性和关系。
-ms.openlocfilehash: 2542fd551277e0a8d9ef76cfe82c2f8c80ec3d7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd379286e161cc68e33af49bec20bb580512ef0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805773"
 ---
 # <a name="get-contract"></a>获取 Contract
 

@@ -2,12 +2,13 @@
 title: configurationUsage 枚举类型
 description: ConfigurationUsage 列表的可能值。
 author: tfitzmac
-ms.openlocfilehash: 7ecfbb77404e3f50c484680c7e3868ae3da3c228
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bbbd0b88ff4c81c141a687b106ac1795f75b6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808314"
 ---
 # <a name="configurationusage-enum-type"></a>configurationUsage 枚举类型
 
@@ -17,10 +18,10 @@ ms.locfileid: "27311639"
 
 ConfigurationUsage 列表的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |已阻止|0|不允许。|
-|必需|1|必需。|
+|必需|1|必填。|
 |允许|2|可选。|
 
 

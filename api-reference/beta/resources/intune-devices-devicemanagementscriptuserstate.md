@@ -2,12 +2,13 @@
 title: deviceManagementScriptUserState 资源类型
 description: 包含运行状态的设备管理脚本的用户的属性。
 author: tfitzmac
-ms.openlocfilehash: acce3d40d390c22d848b9ee3f8c94c997ae6da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806025"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState 资源类型
 
@@ -34,7 +35,7 @@ ms.locfileid: "27301209"
 |userPrincipalName|字符串|特定用户的用户主体名称。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)集合|此脚本的特定用户的所有设备上的运行状态的列表。|
 

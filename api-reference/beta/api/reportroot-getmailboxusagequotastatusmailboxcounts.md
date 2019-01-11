@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: 获取每个配额类别中的用户邮箱数。
-ms.openlocfilehash: 0adb7a0edcddc6aa7a0c2dfd76a4a10142d91344
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e27418900e79597fcaac7795003983e71b91f66d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823749"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 

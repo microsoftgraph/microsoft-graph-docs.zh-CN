@@ -2,12 +2,13 @@
 title: playPromptOperation 资源类型
 description: 要获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
-ms.openlocfilehash: d63b8f6cfa96706104cd7baaa08475974b12ca13
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380950"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814376"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 
@@ -17,14 +18,14 @@ ms.locfileid: "27380950"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                        | 说明|
+| 属性            | 类型                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | 字符串                      | 客户端上下文。                                                                |
 | completionReason    | 字符串                      | 可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。 |
 | createdDateTime     | DateTimeOffset              | 操作的开始时间。                                                   |
 | id                  | String                      | 只读。                                                                         |
 | lastActionDateTime  | DateTimeOffset              | 操作的上次活动时间。                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | 结果的信息。 只读。 生成的服务器。                               |
+| resultInfo          | [resultInfo](resultInfo.md) | 结果的信息。 此为只读属性。 生成的服务器。                               |
 | status              | String                      | 可取值为：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>Relationships

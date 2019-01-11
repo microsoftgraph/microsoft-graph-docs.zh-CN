@@ -2,12 +2,13 @@
 title: 列表 androidImportedPFXCertificateProfiles
 description: 列出属性和 androidImportedPFXCertificateProfile 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: b92ce652296d69d0a6db8b71e22badd6558e9f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3327c1d30c67ef86d563a44e9d456a6a8d348427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807481"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>列表 androidImportedPFXCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

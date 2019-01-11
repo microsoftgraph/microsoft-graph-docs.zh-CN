@@ -1,12 +1,13 @@
 ---
 title: 列表连接器
 description: 检索连接器对象的列表。
-ms.openlocfilehash: 663105bc3f2ac7ae8826a22dc6c849d1095551d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a66a6c11c6001c327648da5cd53fb781f507673d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041645"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808909"
 ---
 # <a name="list-connectors"></a>列表连接器
 
@@ -33,7 +34,7 @@ GET /connectors
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

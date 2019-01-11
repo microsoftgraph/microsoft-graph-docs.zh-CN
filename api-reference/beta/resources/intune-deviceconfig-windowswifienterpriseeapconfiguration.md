@@ -1,12 +1,13 @@
 ---
 title: windowsWifiEnterpriseEAPConfiguration 资源类型
 description: 此实体提供声明的方法、 属性和由 Wifi CSP 公开的关系的说明。
-ms.openlocfilehash: 5ed685d5dc25b3adea2a11a632c66dbe68fbebf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b2406d0d41c1cbe6624bf55dcaa39faa848f238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805759"
 ---
 # <a name="windowswifienterpriseeapconfiguration-resource-type"></a>windowsWifiEnterpriseEAPConfiguration 资源类型
 
@@ -66,7 +67,7 @@ ms.locfileid: "27043882"
 |outerIdentityPrivacyTemporaryValue|字符串|指定要使用 EAP TTL 或 PEAP 时替换为隐私的用户名的字符串。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

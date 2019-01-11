@@ -2,12 +2,13 @@
 title: enableLostMode 操作
 description: 启用丢失的模式
 author: tfitzmac
-ms.openlocfilehash: b75df200a57f5861515f1e5d3c867df8b3f08276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807243"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |message|字符串|尚未记录|
 |phoneNumber|String|尚未记录|

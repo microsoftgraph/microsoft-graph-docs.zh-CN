@@ -1,12 +1,13 @@
 ---
 title: programControlType 资源类型
 description: '在 Azure AD 中访问审阅功能，为关联到程序，以指示类型的访问审阅控件控件时使用的程序控件类型。  '
-ms.openlocfilehash: 8fc406648d8f8c943920507a5734f47d2add1b4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0091c23fd5d537e7c1fd62051778e56b510a3dab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808230"
 ---
 # <a name="programcontroltype-resource-type"></a>programControlType 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27045454"
 |[列表 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控件类型。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 程序控件类型的功能指派的标识符                                      |
 | `displayName`            |`String`                | 程序控件类型的名称                                                             |

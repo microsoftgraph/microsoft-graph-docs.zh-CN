@@ -1,12 +1,13 @@
 ---
 title: bookingService 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: bb42768cb913abca7c17e6d617670a3a035ec16a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815440"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService 资源类型
 
@@ -25,17 +26,17 @@ ms.locfileid: "27042820"
 |[删除](../api/bookingservice-delete.md) | 无 |删除在指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
 |defaultLocation|[location](location.md)|服务的默认物理位置。|
-|defaultPrice|双精度数|该服务默认货币价格。|
+|defaultPrice|Double|该服务默认货币价格。|
 |defaultPriceType|string|负责服务的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](bookingreminder.md)集合|默认设置的该服务的约会的提醒。 此属性的值时，可仅读取此**bookingService**由其 id。|
 |说明|字符串|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字符串|该服务，以 GUID 格式的 ID。 只读。|
+|id|字符串|该服务，以 GUID 格式的 ID。 此为只读属性。|
 |isHiddenFromCustomers|布尔|True 表示该服务不是预定的客户。|
 |notes|String|有关此服务的其他信息。|
 |后|Duration|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|

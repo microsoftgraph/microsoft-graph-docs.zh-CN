@@ -1,12 +1,13 @@
 ---
 title: 列出存储桶
 description: 检索 plannerPlan 对象包含的 **plannerbucket** 对象的列表。
-ms.openlocfilehash: 0f20e4f9c59fbaa9f2242142da254e49a107e68b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3126a25c836642bfb87b8ae50570c21707f011de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818863"
 ---
 # <a name="list-buckets"></a>列出存储桶
 

@@ -2,12 +2,13 @@
 title: educationOrganization 资源类型
 description: '用于模型之间的教育扇区中的不同组织类型通用性抽象实体。  '
 author: mmast-msft
-ms.openlocfilehash: 54f281de29033418b6acb2f9821c5ebd1eaf4db0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9930a32e52e9380e26c6fa94095b3a7099beb70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349887"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822503"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 

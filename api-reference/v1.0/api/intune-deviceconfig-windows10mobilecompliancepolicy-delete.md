@@ -2,12 +2,13 @@
 title: 删除 windows10MobileCompliancePolicy
 description: 删除 windows10MobileCompliancePolicy。
 author: tfitzmac
-ms.openlocfilehash: 46c9b22edfb84e0bb709b7de238c6a09fe82ee3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb0b2b53343807d3650efc2b869b1e145a4f0d6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814320"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>删除 windows10MobileCompliancePolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: RangeFormat 资源类型
 description: 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
-ms.openlocfilehash: 8451b1f24f7c0df3842ed390a2a182746a0a7b20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 86ec37ffa85d7d9785b6a2f632ff3f337ce0e734
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823805"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 

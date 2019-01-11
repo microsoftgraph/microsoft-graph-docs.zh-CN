@@ -2,12 +2,13 @@
 title: educationUser 资源类型
 description: 系统中的用户。 这是特定于教育的用户变体，具有 Microsoft Graph 将从非特定于教育的 `/users` 终结点返回的相同 `id`。
 author: mmast-msft
-ms.openlocfilehash: 10f11c8d621fc2558fa6a82ca1f5d2a0e2e3dc4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a577fae0896ca4f32b0266f5353e963ce0c7d35a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347262"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822748"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 

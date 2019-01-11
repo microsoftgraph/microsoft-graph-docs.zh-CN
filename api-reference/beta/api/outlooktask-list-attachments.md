@@ -2,12 +2,13 @@
 title: 列出附件
 description: 获取附件对象附加到 Outlook 任务的列表。
 author: angelgolfer-ms
-ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: c76a11b960b8c1bb30e943cdc59205d2e0c3d4d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818905"
 ---
 # <a name="list-attachments"></a>列出附件
 

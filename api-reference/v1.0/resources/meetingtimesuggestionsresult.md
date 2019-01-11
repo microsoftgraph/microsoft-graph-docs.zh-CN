@@ -1,12 +1,13 @@
 ---
 title: meetingTimeSuggestionsResult 资源类型
 description: 一组会议时间建议（若有）；如果没有建议，则返回原因。
-ms.openlocfilehash: 5504971618e6b8f6fdb82b203142e84c23c595f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85a0c3ade54204cb78957e81325869197f403c5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823693"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult 资源类型
 

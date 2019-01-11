@@ -1,12 +1,13 @@
 ---
 title: 列表 connectorGroups
 description: 检索 connectorgroup 对象的列表。
-ms.openlocfilehash: 284684312aec1e7409ed7ebf51d7c18e93ad4da8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9629e045487e7f29c84f3f24be0abedbe846ea8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808357"
 ---
 # <a name="list-connectorgroups"></a>列表 connectorGroups
 
@@ -33,7 +34,7 @@ GET /connectorGroups
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

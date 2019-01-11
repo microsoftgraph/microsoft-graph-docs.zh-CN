@@ -2,12 +2,13 @@
 title: 列出所有者
 description: 检索 directoryObject 对象的列表。
 author: lleonard-msft
-ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37bdd7088460ae5d4ff70f3bbde271778c922115
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814236"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -32,7 +33,7 @@ GET /applications/{id}/owners
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

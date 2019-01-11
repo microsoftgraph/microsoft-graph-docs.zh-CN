@@ -2,12 +2,13 @@
 title: 获取 symantecCodeSigningCertificate
 description: 读取属性和 symantecCodeSigningCertificate 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 76e965e3f8281bcfc8dab5a56e7f9a7491a31574
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ec92d04b65d10dec1ec8cb91aaae01e3323e197
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819314"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>获取 symantecCodeSigningCertificate
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

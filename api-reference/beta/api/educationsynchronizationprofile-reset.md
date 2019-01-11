@@ -2,12 +2,13 @@
 title: 重置 sync educationSynchronizationProfile 上
 description: 重置为租户中的特定学校数据同步配置文件同步。
 author: mmast-msft
-ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54352d29280d671aaddc152307d8669f64c11bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808538"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>重置 sync educationSynchronizationProfile 上
 
@@ -20,7 +21,7 @@ ms.locfileid: "27362438"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | 权限 |
+| 权限类型 | Permissions |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 （个人 Microsoft 帐户|不支持。|
@@ -33,7 +34,7 @@ POST /synchronizationProfiles/{id}/reset
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

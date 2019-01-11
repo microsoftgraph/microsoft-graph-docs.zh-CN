@@ -1,12 +1,13 @@
 ---
 title: deviceManagement 资源类型
 description: 'DeviceManagement 资源表示的容器其内容因工作流，包括：  '
-ms.openlocfilehash: 4e092c3d1ae318da47f52e6ccfb2d5efe577e8eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822202"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -20,7 +21,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 - 设备管理  
 - 终结点保护  
 - 注册配置文件  
-- Notifications  
+- 通知  
 - 入职培训策略、 设置和详细信息  
 - 基于角色的访问控制 (RBAC) 策略  
 - 远程协助合作伙伴  
@@ -50,7 +51,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |**审核**|
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) 集合|审核事件|
@@ -72,7 +73,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |**注册**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
 |importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)集合|Windows 自动执行某些操作设备上载的集合。|
-|**Notifications**|
+|**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**入职培训**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Exchange 本地条件访问设置。 本地条件访问需要设备注册并符合邮件访问要求|

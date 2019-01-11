@@ -2,12 +2,13 @@
 title: 创建 outlookTaskFolder
 description: Outlook 任务下创建文件夹指定 outlookTaskGroup。
 author: angelgolfer-ms
-ms.openlocfilehash: e1e45cce9d047086d9aee025d38ca883fcda6fad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d6d6f103c1dd002f4c01e0dbdd71d1ebd7ddd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823833"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
@@ -30,7 +31,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

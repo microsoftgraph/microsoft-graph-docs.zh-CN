@@ -2,12 +2,13 @@
 title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
 author: tfitzmac
-ms.openlocfilehash: dc67a5fb1c517e65da937996ed65adaa621fa3c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36abbe4451a6e053387b27fce3e9a4e25dcc1a95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806249"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354045"
 
 配置管理器客户端状态
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|配置管理器代理早于 1806年或未安装或此设备超过 30 天未签入 Intune。|
 |安装|1|配置管理器代理已安装，但可能不出现在配置管理器控制台尚未。 等待几个小时才能刷新。|

@@ -2,12 +2,13 @@
 title: teamsUserActivityUserDetail 资源类型
 description: 以下是资源 JSON representaion。
 author: nkramer
-ms.openlocfilehash: a1f47bc52c2a0a613598ce663f16023dce208c51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e3f64c7065343712f6a9d9c6a114bf95f24c171
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823651"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>teamsUserActivityUserDetail 资源类型
 
@@ -18,14 +19,14 @@ ms.locfileid: "27331939"
 | reportRefreshDate       | 日期              |
 | userPrincipalName       | 字符串            |
 | lastActivityDate        | 日期              |
-| 被               | Boolean           |
+| 被               | 布尔           |
 | deletedDate             | 日期              |
 | assignedProducts        | String 集合 |
 | teamChatMessageCount    | Int64             |
 | privateChatMessageCount | Int64             |
 | callCount               | Int64             |
 | meetingCount            | Int64             |
-| hasOtherAction          | Boolean           |
+| hasOtherAction          | 布尔           |
 | reportPeriod            | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

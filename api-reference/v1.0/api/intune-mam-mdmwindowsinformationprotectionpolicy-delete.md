@@ -2,12 +2,13 @@
 title: 删除 mdmWindowsInformationProtectionPolicy
 description: 删除 mdmWindowsInformationProtectionPolicy。
 author: tfitzmac
-ms.openlocfilehash: 00ef8d9a187d269f90f8a40213cf4dd08c8a72ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53e3d582ba44a2b5f409b709c677963d3d257d44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810722"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>删除 mdmWindowsInformationProtectionPolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

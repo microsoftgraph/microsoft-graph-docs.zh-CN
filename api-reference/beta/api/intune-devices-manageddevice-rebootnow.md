@@ -2,12 +2,13 @@
 title: rebootNow 操作
 description: 重新启动设备
 author: tfitzmac
-ms.openlocfilehash: a90e1b00bb49016cb4085fdce85c77261fc5ddcc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55141ba41df9df8d78bd7d51e680416809fcd610
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310456"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807446"
 ---
 # <a name="rebootnow-action"></a>rebootNow 操作
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

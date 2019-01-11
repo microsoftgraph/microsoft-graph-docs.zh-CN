@@ -2,12 +2,13 @@
 title: deviceManagementScriptRunSummary 资源类型
 description: 包含的设备管理脚本运行摘要属性。
 author: tfitzmac
-ms.openlocfilehash: 347a4e5cd3c4201949841054b69c217ad4f9fa8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2109822ce081fc18286722cb48209a4349aa2b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823539"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 

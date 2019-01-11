@@ -1,12 +1,13 @@
 ---
 title: leakedCredentialsRiskEvent 资源类型
 description: 检测到的 Azure Active Directory 标识保护其中已帐户的凭据检测到的风险事件。 Azure AD 身份保护文档中，可以找到有关风险事件的完整信息。
-ms.openlocfilehash: 2404564726c3ca7ee1f577b3d81daaa339941406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a8f2a8cf72b713fab30887fcc4d81b8a88e71ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815979"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27047814"
 |[获取 leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |读取属性和 leakedCredentialsRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
@@ -36,7 +37,7 @@ ms.locfileid: "27047814"
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为 NULL。|
 

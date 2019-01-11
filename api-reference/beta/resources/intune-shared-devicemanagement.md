@@ -1,12 +1,13 @@
 ---
 title: deviceManagement 资源类型
 description: 'DeviceManagement 资源表示的容器其内容因工作流，包括：  '
-ms.openlocfilehash: 14303da517e26158d1432a67076e64424a40253c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045213"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823245"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -22,7 +23,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 - 设备管理
 - 电子 SIM (ESIM)
 - 防御
-- Notifications
+- 通知
 - 入职培训策略、 设置和详细信息
 - 远程访问
 - 远程协助合作伙伴
@@ -122,7 +123,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |**防御**|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md)集合|与公司的设备管理相关的管理条件。|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|设备管理的公司相关联的管理条件语句。|
-|**Notifications**|
+|**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**入职培训**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Exchange 本地条件访问设置。 本地条件访问需要设备注册并符合邮件访问要求|

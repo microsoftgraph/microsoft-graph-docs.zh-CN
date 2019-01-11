@@ -2,12 +2,13 @@
 title: getEncryptionPublicKey 函数
 description: 获取要用于加密 Apple 设备注册程序的公钥标记
 author: tfitzmac
-ms.openlocfilehash: 206d5fa297a89537c8e94e72fbc6f69fb00ce056
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb373b862dc39d9636e59bf32ba00b84b7bf5563
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807628"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

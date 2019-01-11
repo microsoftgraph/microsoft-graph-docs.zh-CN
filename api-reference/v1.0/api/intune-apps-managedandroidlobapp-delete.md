@@ -2,12 +2,13 @@
 title: 删除 managedAndroidLobApp
 description: 删除 managedAndroidLobApp。
 author: tfitzmac
-ms.openlocfilehash: a5483ef54f86a9627ecad777ca34e15ffe1dd447
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a995c5f006e7946f517f128f41feb9fab202c93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349971"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808279"
 ---
 # <a name="delete-managedandroidlobapp"></a>删除 managedAndroidLobApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

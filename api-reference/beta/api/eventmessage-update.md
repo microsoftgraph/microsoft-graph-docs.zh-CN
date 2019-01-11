@@ -2,12 +2,13 @@
 title: 更新 eventMessage
 description: 更新 eventMessage 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 922f17528b864c8cdfae39a4df475a0a61f40103
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6af0d681c9e0de820dd34cf659991df648c2e7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809217"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -33,7 +34,7 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -44,10 +45,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
 |重要性|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|isAllDay |Boolean|指示是否事件持续的整个天。 调整此属性需要调整事件以及的**开始日期时间**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isAllDay |布尔|指示是否事件持续的整个天。 调整此属性需要调整事件以及的**开始日期时间**和**endDateTime**属性。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 
 ## <a name="response"></a>响应
 

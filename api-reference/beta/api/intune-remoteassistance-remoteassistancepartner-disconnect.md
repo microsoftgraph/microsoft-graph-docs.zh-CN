@@ -2,12 +2,13 @@
 title: disconnect 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 99fbd3bc1f16a96252deaf573c545115bab8106d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f49aa57400d15410c31cc4a45793ef0e230ab5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808195"
 ---
 # <a name="disconnect-action"></a>disconnect 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

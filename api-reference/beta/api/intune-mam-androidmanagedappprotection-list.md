@@ -2,12 +2,13 @@
 title: 列出 androidManagedAppProtections
 description: 列出 androidManagedAppProtection 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: e5ef8d09df2af166f5a672b06ac2dc3d3792fc82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e1fc0e76f2693ddb638a5436d265452f8594258
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821966"
 ---
 # <a name="list-androidmanagedappprotections"></a>列出 androidManagedAppProtections
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/androidManagedAppProtections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

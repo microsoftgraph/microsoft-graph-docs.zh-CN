@@ -2,12 +2,13 @@
 title: assign 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: fae5747fc058f1bcea7d4bafd02fa965c7c355ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22e440a89059a2df0c4a3f187bba790c1ed38f87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326017"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815727"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

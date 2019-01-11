@@ -1,12 +1,13 @@
 ---
 title: synchronizationStatus 资源类型
 description: 代表 synchronizationJob 的当前状态。
-ms.openlocfilehash: cf1b1e79e5ad784f1f43a2e5bf082c68b41e96ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817029"
 ---
 # <a name="synchronizationstatus-resource-type"></a>synchronizationStatus 资源类型
 
@@ -33,11 +34,11 @@ ms.locfileid: "27049415"
 
 ### <a name="synchronization-status-code-details"></a>同步状态代码的详细信息
 
-| 值                              | 说明    |
+| 值                              | Description    |
 |:-----------------------------------|:---------------|
 |NotConfigured                       |作业已未配置，永远不会运行。 提供未授权。 |
 |NotRun                              |作业已配置并可能启动，但尚未完成其第一个域。|
-|活跃                              |定期运行作业。|
+|活动                              |定期运行作业。|
 |暂停                              |作业已暂停 （通常是由管理员） 和当前未运行，但保留作业的状态。|
 |隔离                          |作业处于隔离。 有大量的错误，或者关键错误，例如吊销过期凭据时，可能发生此错误。 在隔离中同步过程将尝试减少频率运行作业。|
 

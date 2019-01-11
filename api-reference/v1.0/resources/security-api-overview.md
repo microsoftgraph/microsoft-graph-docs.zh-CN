@@ -1,14 +1,15 @@
 ---
-title: 使用 Microsoft Graph 安全 API
+title: 使用 Microsoft Graph 安全性 API
 description: Microsoft Graph 安全 API 提供统一的接口和集成使用经 Microsoft 和生态系统的合作伙伴的安全解决方案的架构。 这使客户能够简化安全性操作和更好地防御增加网络威胁。 Microsoft Graph 安全 API 可以作为联盟的安全聚合服务，用于向所有 onboarded 安全提供程序获取聚合的响应提交查询。 使用 Microsoft Graph 安全 API 来构建应用程序的：
-ms.openlocfilehash: b675ecd66081aec29f2727a394a91d9e2ee5fd5b
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Priority
+ms.openlocfilehash: 79a4af5f340bbaf8b8d93938e83a60b524f9be2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823798"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全 API
+# <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
 Microsoft Graph 安全 API 提供统一的接口和集成使用经 Microsoft 和生态系统的合作伙伴的安全解决方案的架构。 这使客户能够简化安全性操作和更好地防御增加网络威胁。 Microsoft Graph 安全 API 可以作为联盟的安全聚合服务，用于向所有 onboarded 安全提供程序获取聚合的响应提交查询。 使用 Microsoft Graph 安全 API 来构建应用程序的：
 
@@ -48,7 +49,7 @@ Microsoft Graph 安全集成解决方案将收到来自下列安全提供程序�
 
 您可以使用 Microsoft Graph [webhooks](/graph/webhooks)订阅和接收有关 Microsoft Graph Security 实体更新通知。
 
-## <a name="resources"></a>资源
+## <a name="resources"></a>Resources
 
 代码并参与到这些 Microsoft Graph 安全 API 示例：
 

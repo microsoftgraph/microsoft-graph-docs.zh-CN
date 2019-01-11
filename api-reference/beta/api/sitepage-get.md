@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: 获取网站中的页面
-ms.openlocfilehash: e2c2c9126700bebc0be6b9583805a86a8c256a5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a212dab1c7a15a51d525b332ca5822da8fe28bdd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806669"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 

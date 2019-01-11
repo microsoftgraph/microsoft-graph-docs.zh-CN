@@ -1,12 +1,13 @@
 ---
 title: 获取 schemaExtension
 description: 获取指定的 schemaExtension 定义的属性。
-ms.openlocfilehash: bbb2b93d7ba66d6d18d854187a89e3dc2ecc22ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 694dd29bb9ed997512cf389888f4b69fa9ad290c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810736"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 获取指定的 [schemaExtension](../resources/schemaextension.md) 定义的属性。

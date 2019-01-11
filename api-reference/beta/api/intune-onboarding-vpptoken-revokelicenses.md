@@ -2,12 +2,13 @@
 title: revokeLicenses 操作
 description: 撤消特定 appleVolumePurchaseProgramToken 相关联的许可证
 author: tfitzmac
-ms.openlocfilehash: 1b5551f29da23aeaf6a024e5ea41588211a69bd0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa439f6dd973b74ab1098cc73755897a55d018c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811744"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,9 +47,9 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|尚未记录|
+|notifyManagedDevices|布尔|尚未记录|
 
 
 

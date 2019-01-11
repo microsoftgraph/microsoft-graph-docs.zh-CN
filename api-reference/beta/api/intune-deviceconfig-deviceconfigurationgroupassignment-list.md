@@ -2,12 +2,13 @@
 title: 列表 deviceConfigurationGroupAssignments
 description: 列出属性和 deviceConfigurationGroupAssignment 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: a1dce979ab078d22c755b77724abfd274a1872cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34e222c249f25f854c5b5183fccbbb46738c4f10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807782"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>列表 deviceConfigurationGroupAssignments
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

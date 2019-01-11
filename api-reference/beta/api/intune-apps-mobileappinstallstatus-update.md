@@ -2,12 +2,13 @@
 title: 更新 mobileAppInstallStatus
 description: 更新 mobileAppInstallStatus 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: dbf65aa07258b48a8ce64cf01db0a5ef00097f3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a60bcf69ded37ea0b4a04430c6a837bb6df95100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817946"
 ---
 # <a name="update-mobileappinstallstatus"></a>更新 mobileAppInstallStatus
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: ChartLegendFormat 资源类型
 description: 封装图表图例的格式属性。
 author: lumine2008
-ms.openlocfilehash: 6ef6f2d26ade1d8d93489fbc560d4e0eb511bc86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d57ad66da6e5f280684cf364ac7890bcc3ed259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811065"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat 资源类型
 

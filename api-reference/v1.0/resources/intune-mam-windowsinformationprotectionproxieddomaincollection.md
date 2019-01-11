@@ -2,12 +2,13 @@
 title: windowsInformationProtectionProxiedDomainCollection 资源类型
 description: Windows 信息保护代理域集合
 author: tfitzmac
-ms.openlocfilehash: c95c54c5bbfcc1b5202a0c56a6e3932b35ffac88
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfc07b47115e4e5ce4be959ac7867a2963021abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822097"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
 

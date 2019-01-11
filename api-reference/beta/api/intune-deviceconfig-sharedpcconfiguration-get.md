@@ -2,12 +2,13 @@
 title: 获取 sharedPCConfiguration
 description: 读取 sharedPCConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 8e370d81aca64fb7fe82e173603cf9dbdd270f3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd5188c06d979fb9c81d382ae075b6e3b0fc10aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823014"
 ---
 # <a name="get-sharedpcconfiguration"></a>获取 sharedPCConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

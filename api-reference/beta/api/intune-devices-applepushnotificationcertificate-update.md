@@ -2,12 +2,13 @@
 title: 更新 applePushNotificationCertificate
 description: 更新 applePushNotificationCertificate 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: fb89ee3eb12e33dc2f1d7fc968aee8688d7aff99
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9eaca912e32c8575c692746040fc23535906466
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821747"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

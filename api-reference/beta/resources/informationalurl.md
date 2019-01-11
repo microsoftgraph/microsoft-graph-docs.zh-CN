@@ -1,12 +1,13 @@
 ---
 title: informationalUrl 资源类型
 description: 应用程序的基本配置文件信息。
-ms.openlocfilehash: c8a13f4f686fe3b6ffd460ab05342b7da9b4a808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78fd03a2673b342d1a0c904f521fe5a0f8cba205
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816980"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046530"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |市场营销|字符串| 链接到应用程序的市场营销页。 例如，https://www.contoso.com/app/marketing |
 |隐私|字符串| 链接到应用程序的隐私声明。 例如，https://www.contoso.com/app/privacy |
