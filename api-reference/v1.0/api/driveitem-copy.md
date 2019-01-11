@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 复制文件或文件夹
-ms.openlocfilehash: 453a407775f6dc3b7afa8cb5d4d122f351c0a75f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1d949d7a0bb19d03feccf353ec4803c37e7ec7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828068"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 

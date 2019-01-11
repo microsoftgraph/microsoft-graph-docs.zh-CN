@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: 9854ad35c602ff474604f2ca88e7182c325e797d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03ebb78adda52a9f98aec6635bbda48dd61e37e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889213"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

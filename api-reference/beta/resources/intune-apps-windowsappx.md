@@ -2,12 +2,13 @@
 title: windowsAppX 资源类型
 description: 包含属性和继承的 Windows 约业务线应用程序的属性。
 author: tfitzmac
-ms.openlocfilehash: 372c1c2827e3d873d0266715502a837dca27d76b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a39c93aaec3d27a75775a3760eedf9a85bcb8fd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889339"
 ---
 # <a name="windowsappx-resource-type"></a>windowsAppX 资源类型
 

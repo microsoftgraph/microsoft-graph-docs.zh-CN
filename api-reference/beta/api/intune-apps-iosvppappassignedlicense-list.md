@@ -2,12 +2,13 @@
 title: 列表 iosVppAppAssignedLicenses
 description: 列出属性和 iosVppAppAssignedLicense 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: ee5787593a841246165ad10673a772b6e24ddf09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b02e35b7f0d2a6f64c2e1e891db6a6ae066be90b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883209"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>列表 iosVppAppAssignedLicenses
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

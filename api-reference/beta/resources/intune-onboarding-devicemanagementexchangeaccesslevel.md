@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessLevel 枚举类型
 description: Exchange 中的访问级别。
 author: tfitzmac
-ms.openlocfilehash: 8f163c5186c1fc8dac13a22d730870c52df66a06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03588e51a301bfcc4aac5eb3f9c0bfe0fbba9ea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889549"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>deviceManagementExchangeAccessLevel 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27320795"
 
 Exchange 中的访问级别。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|已在 Exchange 中不配置任何设备访问规则。|
 |允许|1|允许 Exchange 设备访问。|

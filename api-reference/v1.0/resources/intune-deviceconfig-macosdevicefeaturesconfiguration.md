@@ -2,12 +2,13 @@
 title: macOSDeviceFeaturesConfiguration 资源类型
 description: MacOS 设备功能配置的配置文件。
 author: tfitzmac
-ms.openlocfilehash: edde842d286e3237aac8f0636c2268ca06efbb9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45b30b11e34e75a11603bcc14439549e8bcc5a54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355844"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880561"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration 资源类型
 

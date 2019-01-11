@@ -1,12 +1,13 @@
 ---
 title: 获取用户的邮箱设置
 description: 更新用户邮箱的一个或多个设置。这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）、时区和工作时间的设置。
-ms.openlocfilehash: fb4e3f49c014b9bebee3076db49594eb1aee0fa8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67b8c3dbc0dd4c4de9c94807d09bbd0f9ff79f4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889696"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 

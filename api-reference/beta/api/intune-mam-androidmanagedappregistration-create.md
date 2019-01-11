@@ -2,12 +2,13 @@
 title: 创建 androidManagedAppRegistration
 description: 创建新的 androidManagedAppRegistration 对象。
 author: tfitzmac
-ms.openlocfilehash: 074d8d01a086956af1f88e0d0315ccc84b84c9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f95b47292c5fb018e5406278fda84c8d6a15034a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890375"
 ---
 # <a name="create-androidmanagedappregistration"></a>创建 androidManagedAppRegistration
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

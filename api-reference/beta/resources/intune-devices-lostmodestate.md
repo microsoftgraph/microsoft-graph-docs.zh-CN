@@ -1,12 +1,13 @@
 ---
 title: lostModeState 枚举类型
 description: 丢失的模式，指示丢失的模式是否启用或禁用状态
-ms.openlocfilehash: 5e106a8d93381bcda24451ed5d8f1db1bfeeb115
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 667d4f088dafaec5ba040f592a478a30ee51c298
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890263"
 ---
 # <a name="lostmodestate-enum-type"></a>lostModeState 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27047763"
 
 丢失的模式，指示丢失的模式是否启用或禁用状态
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |禁用|0|丢失的模式被禁用。|
 |enabled|1|启用丢失的模式。|

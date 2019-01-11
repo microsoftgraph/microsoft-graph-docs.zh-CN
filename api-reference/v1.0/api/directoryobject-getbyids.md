@@ -2,12 +2,13 @@
 title: 获取 ID 列表中的目录对象
 description: 选择查询选项不适用于此操作。
 author: lleonard-msft
-ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b504fc69deecd6688f61c20c30e17133f80b1dc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889647"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -39,7 +40,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>请求标头
 
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type  | string | application/json  |
@@ -48,7 +49,7 @@ POST /directoryObjects/getByIds
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数   | Type |说明|
+| 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
 |types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](../resources/directoryobject.md)，其中包含所有目录中定义的资源类型。 派生的任何对象`directoryObject`可能指定集合中的例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)，等等。 值不区分大小写。|

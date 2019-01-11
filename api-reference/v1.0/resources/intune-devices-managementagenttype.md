@@ -2,12 +2,13 @@
 title: managementAgentType 枚举类型
 description: 管理代理类型。
 author: tfitzmac
-ms.openlocfilehash: b1f6db6eaea1a488831bec3d7ff61d6170414956
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66441a37b417cef13cbb09219a26a98250cbf610
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888485"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27355515"
 
 管理代理类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |eas|1|设备管理 Exchange server。|
 |mdm|2|设备管理由 Intune mdm。|

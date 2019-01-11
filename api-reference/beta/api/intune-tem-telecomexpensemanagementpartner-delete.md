@@ -2,12 +2,13 @@
 title: 删除 telecomExpenseManagementPartner
 description: 删除 telecomExpenseManagementPartner。
 author: tfitzmac
-ms.openlocfilehash: d79296283b57097d2aa46ae062f4391e93e3ba46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcf35d5187d1360470984555212fc3f4112916f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889878"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>删除 telecomExpenseManagementPartner
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

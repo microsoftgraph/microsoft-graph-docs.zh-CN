@@ -2,12 +2,13 @@
 title: 删除 windowsUpdateForBusinessConfiguration
 description: 删除 windowsUpdateForBusinessConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 24ecae6bfa1fd00fa3a8c220e084db6062b67e6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69648a827287a244540e6845f477a4f8fa5849b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889451"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>删除 windowsUpdateForBusinessConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

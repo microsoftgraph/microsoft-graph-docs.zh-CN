@@ -2,12 +2,13 @@
 title: userPfxPaddingScheme 枚举类型
 description: 支持加密服务提供商使用的填充方案值。
 author: tfitzmac
-ms.openlocfilehash: aa2c2e67419b92c17a6fdb62df108847964f49a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c588b31e4bfe6f78dbc09c199b56cabdef72198
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889654"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27337161"
 
 支持加密服务提供商使用的填充方案值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|尚未记录|
 |pkcs1|1|尚未记录|

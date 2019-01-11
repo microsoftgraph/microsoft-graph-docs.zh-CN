@@ -1,12 +1,13 @@
 ---
 title: SharePoint 活动报表
 description: 您可以获取许可的可供 SharePoint 看它们与文件的交互的每个用户的活动。 也可以查看以共享文件数为依据的协作级别。
-ms.openlocfilehash: fd516b5ca56f8625c98fce943cafc90b32346416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f6454399f25c035a55eb25a64bc0e38d26f42634
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890396"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint 活动报表
 

@@ -1,12 +1,13 @@
 ---
 title: web 资源类型
 description: 指定 web 应用程序的设置。
-ms.openlocfilehash: c040de0c323e57f20e04dcf662ea088b1018c144
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26efe59eda739597e7193fa1ff79443f3d64b5a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890200"
 ---
 # <a name="web-resource-type"></a>web 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27047401"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| 指定此 web 应用程序是否可以请求令牌使用 OAuth 2.0 隐式流。|
 |logoutUrl|字符串| 指定将由 Microsoft 的授权服务的用户使用[前信道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议的注销 URL。 |

@@ -1,12 +1,13 @@
 ---
 title: plannerTaskDetails 资源类型
 description: '**plannerTaskDetails** 资源表示任务的其他相关信息。每个任务对象均有一个详细信息对象。'
-ms.openlocfilehash: 3d5ab0b3a2f0c2e6c1abf284d5a87c2726c7aa15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0bec5b47d1472eae43906841c5074e4080672817
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888163"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
 

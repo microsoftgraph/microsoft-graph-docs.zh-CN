@@ -2,12 +2,13 @@
 title: Range:UsedRange
 description: 返回指定 range 对象的所用范围。
 author: lumine2008
-ms.openlocfilehash: 108c19b5af6fcaf5b4c0792d9a71b8f32f1d6148
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980d0cc8ac59c28e148a50c25b90b52baad51110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889927"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 
@@ -30,13 +31,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="path-parameters"></a>路径参数
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|可选。仅将有值的单元格视为已使用的单元格。|
 

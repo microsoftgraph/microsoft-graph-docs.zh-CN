@@ -1,12 +1,13 @@
 ---
 title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
-ms.openlocfilehash: 72f9a2d97733901ea4d543045d85be60978c5e5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 07b2c055c49a79f1d9d3407ba8da5a5658766d20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889626"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -22,8 +23,8 @@ ms.locfileid: "27009557"
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| 组                      | Group.Read.All      |
+| 用户                       | User.Read.All       |
 | Drive（用户的 OneDrive）    | Files.ReadWrite     |
 | 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
 |安全警报| SecurityEvents.ReadWrite.All |
@@ -83,8 +84,8 @@ Content-type: application/json
 |邮件|me/mailfolders('inbox')/messages<br />me/messages|
 |联系人|me/contacts|
 |日历|me/events|
-|Users|users|
-|Groups|组|
+|用户|users|
+|组|组|
 |对话|groups('*{id}*')/conversations|
 |驱动器|me/drive/root|
 |安全警报|安全/警告？ $filter = 状态 eq 新建|

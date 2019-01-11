@@ -2,12 +2,13 @@
 title: mediaStream 资源类型
 description: MediaStream 类型。
 author: VinodRavichandran
-ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889612"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
@@ -17,12 +18,12 @@ MediaStream 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型    | 说明                                                                                                   |
+| 属性    | 类型    | Description                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | 方向   | 字符串  | 方向。 可能的值为`inactive`， `sendOnly`， `receiveOnly`， `sendReceive`。                  |
 | 标签       | 字符串  | 媒体流标签。                                                                                       |
 | 媒体类型   | 字符串  | 媒体类型。 可能的值是`unknown`， `audio`， `video`， `videoBasedScreenSharing`， `data`。        |
-| serverMuted | Boolean | 如果媒体服务器将设为静音。                                                                          |
+| serverMuted | 布尔 | 如果媒体服务器将设为静音。                                                                          |
 | sourceId    | 字符串  | 源 id。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式

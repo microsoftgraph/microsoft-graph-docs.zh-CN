@@ -1,12 +1,13 @@
 ---
 title: 'message: createForward'
 description: 创建草稿以转发指定邮件。 然后，可以更新草稿以将内容添加到**正文**，或更改其他邮件属性，或者只是发送草稿。
-ms.openlocfilehash: dda0ed8d40f480ec9660598cea24ae9a6f6c39ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 230fdfd4a1700e5bcbe2e1cb364de08d86c7be39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888261"
 ---
 # <a name="message-createforward"></a>message: createForward
 

@@ -2,12 +2,13 @@
 title: 所有者类型枚举类型
 description: 设备的所有者类型。
 author: tfitzmac
-ms.openlocfilehash: 4c73227a9dd85a8b26ea9d3bc3a2494effe429f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08d1021fea21b833371627dfde62f5b06399e3b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890158"
 ---
 # <a name="ownertype-enum-type"></a>所有者类型枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27311002"
 
 设备的所有者类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |公司|1|由公司拥有。|

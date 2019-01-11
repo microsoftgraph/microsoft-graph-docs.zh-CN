@@ -2,12 +2,13 @@
 title: 启用枚举类型
 description: '用于指示状态的设备的值。 '
 author: tfitzmac
-ms.openlocfilehash: 5b1d494fd116eab437b4654d396b029e1384a817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c77da7026640e9ad0a6f6f08f077d509cb411f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356887"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888254"
 ---
 # <a name="enablement-enum-type"></a>启用枚举类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27356887"
 请注意，没有区别禁用，且未配置。
 
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，没有用途。|
 |enabled|1|允许在设备上的设置。|

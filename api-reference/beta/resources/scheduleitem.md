@@ -1,12 +1,13 @@
 ---
 title: scheduleItem 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: a7a31f47cde92549a72299b22a40b10c6f7845c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e5d14826a27153af27648484554ec864d62ed6c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890431"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27046870"
 |isPrivate |布尔 |区分大小写的对应的事件。 如果事件标记为`private`，则返回 false 否则为。 |
 |location |字符串 | 相应的事件是保留或从参加的位置。 可选。|
 |start |[dateTimeTimeZone](datetimetimezone.md) |日期、 时间和相应事件开始的时区。 |
-|状态 |字符串 | 可用性的用户或资源的相应事件执行过程的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。 |
+|status |字符串 | 可用性的用户或资源的相应事件执行过程的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。 |
 |subject |字符串 | 相应的事件的主题行。 可选。|
 
 

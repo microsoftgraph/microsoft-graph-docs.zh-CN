@@ -1,12 +1,13 @@
 ---
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
-ms.openlocfilehash: 2eb3c337b89be8dc6109dc26de35fcaea88d6609
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889192"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
@@ -120,7 +121,7 @@ PATCH /groups/{id}/events/{id}
 
 提供每个 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 对象在资源实例的 **multiValueExtendedProperties** 集合属性中的 JSON 正文。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 一个或多个多值扩展属性的数组。 |
 |id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|

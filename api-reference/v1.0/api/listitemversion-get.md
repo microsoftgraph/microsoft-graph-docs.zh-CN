@@ -1,12 +1,13 @@
 ---
 title: 获取 ListItemVersion 资源
 description: 检索 ListItem 的某个特定版本的元数据。
-ms.openlocfilehash: 2796449496d14dd3c4a1faeeb52871a07fcb9599
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54fb491a13e90e1133127531d32c29e1ec2fa040
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888226"
 ---
 # <a name="get-a-listitemversion-resource"></a>获取 ListItemVersion 资源
 

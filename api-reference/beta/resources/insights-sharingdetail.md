@@ -2,12 +2,13 @@
 title: sharingDetail 资源类型
 description: '包含共享项目的属性的复杂类型。 '
 author: simonhult
-ms.openlocfilehash: 8454fd451f0659ff3ccad270df3414a850bee180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 463ba207d7b160bffb96319a994b82ee82f14b8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888457"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27353373"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型          | 说明  |
+| 属性              | 类型          | Description  |
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| 日期和时间上次共享文件。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。  |
 | sharingSubject        | 字符串          | 与共享文档主题。 |

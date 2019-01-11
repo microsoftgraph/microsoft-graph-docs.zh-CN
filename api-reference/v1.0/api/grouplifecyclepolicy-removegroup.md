@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: 从生命周期策略中删除组。
 author: dkershaw10
-ms.openlocfilehash: a22dae0a8065653972667c7de410330d6c91a454
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b17403babef2295ce8d9c8d18b21e16c63889e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805535"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -31,7 +32,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 ## <a name="request-headers"></a>请求标头
 
-| Name | 说明 |
+| 名称 | 说明 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json |
@@ -39,7 +40,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | Type | 说明 |
+| 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |groupId|Guid| 要从策略中删除的组的 ID。|
 

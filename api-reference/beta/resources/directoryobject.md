@@ -1,12 +1,13 @@
 ---
 title: directoryObject 资源类型
 description: 表示 Azure Active Directory 对象。**directoryObject** 类型是其他许多目录实体类型的基类型。
-ms.openlocfilehash: ed49c042ab9456479d0f9f7fee49a72a93767e81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a03ec966f966df556ab0122958b0b8f5464cf4fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889717"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 

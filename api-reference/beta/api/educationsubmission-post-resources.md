@@ -2,12 +2,13 @@
 title: 创建 educationSubmissionResource
 description: '将资源添加到资源列表中。 此操作仅可通过学生为其分配此提交。 此操作不会成功，如果未设置**allowStudentsToAddResources**标志，则为 true。 如果呼叫者想要创建新的基于文件的资源，该文件必须上载到提交与关联的资源文件夹中。 如果文件不存在或不在该文件夹中，在 POST 请求将失败。 '
 author: dipakboyed
-ms.openlocfilehash: 71d06e996213c133ed9c48d5d3e320a785e122ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 585ece0dd8239c5a3107420b88cf2103fe5fb7eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888114"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 

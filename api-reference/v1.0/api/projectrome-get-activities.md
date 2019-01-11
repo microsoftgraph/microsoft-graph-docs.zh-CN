@@ -1,12 +1,13 @@
 ---
 title: 获取用户活动
 description: 获得给定用户的活动。 与不同**最近**OData 函数，将返回不历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。
-ms.openlocfilehash: 7c0efad4927aa8bbf96c3d3609668f1e563f770c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7339805d4ef45cc9b0806c2ce6c14e7316bdba85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889682"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 

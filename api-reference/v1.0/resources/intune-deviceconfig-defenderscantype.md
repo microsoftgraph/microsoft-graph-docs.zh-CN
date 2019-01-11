@@ -2,12 +2,13 @@
 title: defenderScanType 枚举类型
 description: 系统的可能值扫描类型。
 author: tfitzmac
-ms.openlocfilehash: 985b63061f084e76aa2c90d116a4a5c90a0e120c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fb262bdd32d1c576a0c7cec4262dedfef1d3f63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889360"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27344308"
 
 系统的可能值扫描类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |禁用|1|系统禁用扫描。|

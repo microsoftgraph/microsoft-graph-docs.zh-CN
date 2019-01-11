@@ -1,12 +1,13 @@
 ---
 title: 帖子：转发
 description: '将帖子转发给收件人。 您可以在请求中，指定的父对话和线程 '
-ms.openlocfilehash: 736b23aaf90cb7e4af243129e52a014ae623b8f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 64b7d87745cf897ea827d37a9cd4f4c60d197068
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889437"
 ---
 # <a name="post-forward"></a>帖子：转发
 

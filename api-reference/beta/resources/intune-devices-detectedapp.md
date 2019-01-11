@@ -2,12 +2,13 @@
 title: detectedApp 资源类型
 description: 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 author: tfitzmac
-ms.openlocfilehash: 0b8e234651c0936fea71d8420b30fcc5d1c6fb7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f62e41b51d2b22d9524a0e86775e5f1cf9526618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890074"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 

@@ -2,12 +2,13 @@
 title: 更新工作表
 description: 更新 worksheet 对象的属性。
 author: lumine2008
-ms.openlocfilehash: 249fb16fea3c7086411bfa9f11a2ea23926b4b5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edf8f11bf446f28f63a27397865b873b69d76b20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889668"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -27,7 +28,7 @@ ms.locfileid: "27344077"
 PATCH /workbook/worksheets/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ PATCH /workbook/worksheets/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|工作表的显示名称。|
-|position|整数|工作表在工作簿中的位置，从零开始。|
+|position|int|工作表在工作簿中的位置，从零开始。|
 |visibility|string|在工作表的可见性。 可能的值为： `Visible`， `Hidden`， `VeryHidden`。|
 
 ## <a name="response"></a>响应

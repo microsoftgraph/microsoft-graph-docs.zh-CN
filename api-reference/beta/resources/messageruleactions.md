@@ -2,12 +2,13 @@
 title: messageRuleActions 资源类型
 description: 表示适用于规则的一组操作。
 author: angelgolfer-ms
-ms.openlocfilehash: 515d31ff8c11b95a3aa0042449d22df883e0eecf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6a78442dc82cade6b7e6d9a793fb6e49b3a1beb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889038"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 

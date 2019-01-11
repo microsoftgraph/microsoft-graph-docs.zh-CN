@@ -2,12 +2,13 @@
 title: 删除 roleAssignment
 description: 删除 roleAssignment。
 author: tfitzmac
-ms.openlocfilehash: 76ad4c0a683c5c51b2895e875e9259860f42e7d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa7e906b2ab4944789488dcf24658eb4421bb420
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889962"
 ---
 # <a name="delete-roleassignment"></a>删除 roleAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
