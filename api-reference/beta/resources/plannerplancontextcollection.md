@@ -1,12 +1,13 @@
 ---
 title: plannerPlanContextCollection 资源类型
 description: '**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型，plannerPlan 对象的一部分。 属性值对中的值是 plannerPlanContext 对象。'
-ms.openlocfilehash: ae17e604bf3d59b7b825fe36a8f93f05d5cc835f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805451"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection 资源类型
 

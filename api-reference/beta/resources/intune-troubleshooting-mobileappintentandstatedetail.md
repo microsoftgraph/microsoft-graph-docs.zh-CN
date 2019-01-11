@@ -2,12 +2,13 @@
 title: mobileAppIntentAndStateDetail 资源类型
 description: 移动应用程序的用途和给定的设备的安装状态。
 author: tfitzmac
-ms.openlocfilehash: 6a0a52d1cf8576778060c6f7b5e337e6e7a115e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad20ef00cbc8e5295a96107fbce2f5e7f1cb978a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805808"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail 资源类型
 

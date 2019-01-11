@@ -2,12 +2,13 @@
 title: onlineMeeting 资源类型
 description: 捕获有关会议，包括加入 URL、 与会者列表中，及其说明的信息。
 author: VinodRavichandran
-ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b1a0b09c0e7c792b0a9662c08daecd212c027c89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805157"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27380476"
 
 ## <a name="properties"></a>属性
 
-| 属性                  | 类型                                                   | 说明                                                                                                                |
+| 属性                  | 类型                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | accessLevel               | 字符串                                                 | 控制允许加入联机会议的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown`。 |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | 代表 onlineMeeting 电话访问信息。 |
@@ -31,10 +32,10 @@ ms.locfileid: "27380476"
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此会议聊天。 |
 | creationDateTime          | 日期时间                                               | 已创建会议的时间。 Readonly。
 | endDateTime               | 日期时间                                               | 会议结束时间。 |
-| entryExitAnnouncement     | Boolean                                                | 联机会议助理通知状态。 如果启用了出勤通知，联机会议将通过音频会议宣布 participantswho 联接的名称。 |
+| entryExitAnnouncement     | 布尔                                                | 联机会议助理通知状态。 如果启用了出勤通知，联机会议将通过音频会议宣布 participantswho 联接的名称。 |
 | expirationDateTime        | 日期时间                                               | 绝对协调世界时 (UTC) 日期和时间之后可以删除的联机会议。 日期和时间必须在前，一年之间十年后，当前日期和时间的服务器上。 |
-| id                        | 字符串                                                 | 与联机会议相关的 ID。 获取 HTTP 请求中用作 id。 只读。 生成的服务器。 |
-| isCancelled               | Boolean                                                | 是否已被取消会议。 |
+| id                        | 字符串                                                 | 与联机会议相关的 ID。 获取 HTTP 请求中用作 id。 此为只读属性。 生成的服务器。 |
+| isCancelled               | 布尔                                                | 是否已被取消会议。 |
 | joinUrl                   | 字符串                                                 | 从 web 加入联机会议时所使用的 URL。 |
 | meetingType               | 字符串                                                 | 可能的值为： `meetNow`， `scheduled`， `recurring`，`broadcast` |
 | participants              | [meetingParticipants](meetingparticipants.md)          | 相关联的联机会议参与者。  这包括组织者和与会者。 |

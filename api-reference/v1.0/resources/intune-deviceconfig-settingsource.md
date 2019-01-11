@@ -2,12 +2,13 @@
 title: settingSource 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: a0ac952dcf48abcfc9daad7e107f63e75b565840
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 277b103550df042491ccadb6ab0176fbca3fff5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804548"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 

@@ -2,12 +2,13 @@
 title: 获取 windowsInformationProtectionPolicy
 description: 读取 windowsInformationProtectionPolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 83c84982f55f0b891886acefac6e0c5eca57b850
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a0acef0d5a49da68a4c9f93ebba62871a58c187
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805976"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>获取 windowsInformationProtectionPolicy
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

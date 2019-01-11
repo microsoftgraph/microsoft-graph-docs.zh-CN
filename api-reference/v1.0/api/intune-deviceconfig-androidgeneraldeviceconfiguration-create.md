@@ -2,12 +2,13 @@
 title: 创建 androidGeneralDeviceConfiguration
 description: 创建新的 androidGeneralDeviceConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 67bbdf997c2157c7e3161ee1c37a7cdf47ac2d25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 058badbc1479f154e953674a7b6c0f6dd8bbe6f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805766"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>创建 androidGeneralDeviceConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

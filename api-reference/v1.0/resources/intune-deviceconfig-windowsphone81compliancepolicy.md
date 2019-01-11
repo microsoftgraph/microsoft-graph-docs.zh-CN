@@ -2,12 +2,13 @@
 title: windowsPhone81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 Mobile 的合规性设置。
 author: tfitzmac
-ms.openlocfilehash: ad221b831bef095235fa2b90b4ded7c441b5ed30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a91c2dc43992bed132a0e6cd7d463a5d9d3b6e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805283"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy 资源类型
 

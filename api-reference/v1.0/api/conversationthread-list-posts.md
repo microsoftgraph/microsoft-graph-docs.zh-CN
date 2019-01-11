@@ -1,12 +1,13 @@
 ---
 title: 列出帖子
 description: '获取指定线程的帖子。 您可以指定父对话和线程，或， '
-ms.openlocfilehash: 35c4c178b02cb700ab21a324c29a4522203fad19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 60c8cb3e369653c1ae5440a64195fb3ecfbfb513
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805318"
 ---
 # <a name="list-posts"></a>列出帖子
 

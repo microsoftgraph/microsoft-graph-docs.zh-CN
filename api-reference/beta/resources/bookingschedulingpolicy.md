@@ -1,12 +1,13 @@
 ---
 title: bookingSchedulingPolicy 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 7a16e9a2ec4e64978dd3c20f7510cfd42d76e826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805360"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>bookingSchedulingPolicy 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27044898"
 代表确定应如何在 Microsoft 预订日历中创建约会的策略的组。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowStaffSelection|布尔|True 如果以使客户能够选择特定预定的人员。|
 |maximumAdvance|Duration|最大天数提前所能进行预订。 遵循[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|

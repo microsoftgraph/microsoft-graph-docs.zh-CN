@@ -1,12 +1,13 @@
 ---
 title: 应用程序资源类型
 description: '代表应用程序。 必须在目录中注册 outsources Azure Active Directory (Azure AD) 身份验证的任何应用程序。 应用程序注册涉及告诉 Azure AD 关于您的应用程序，包括其具有位于何处，身份验证，以确定您的应用程序和更多的 URI 后发送答复的 URL 的 URL。 有关详细信息，请参阅基础知识的注册 Azure AD 中的应用程序。 继承自 directoryObject。 '
-ms.openlocfilehash: 66da35183b84d42d69d603cc840ba948d60d7bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805668"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "27046130"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |api|[api](api.md)| 指定 API 应用程序的设置。 |
 |appId| String | Azure AD 由分配给应用程序的应用程序的唯一标识符。 不可为 null。 只读。 |
@@ -57,7 +58,7 @@ ms.locfileid: "27046130"
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |指定应用程序的家长的控制设置。|
 |passwordCredentials|[passwordCredential](passwordcredential.md)集合|应用程序关联的密码凭据的集合。 不可为 null。|
 |publicClient|[publicClient](publicclient.md)| 指定安装客户端，如桌面或移动设备的设置。 |
-|publisherDomain| 字符串 | 应用程序验证的发行者域。 只读。|
+|publisherDomain| 字符串 | 应用程序验证的发行者域。 此为只读属性。|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md)集合|指定此应用程序需要访问和一组的 OAuth 权限范围和应用程序角色它需要在每个这些资源的资源。 此预配置完所需的资源访问驱动器的同意体验。 不可为 null。|
 |signInAudience | 字符串 | 指定当前应用程序支持哪些 Microsoft 帐户。 支持的值包括：<ul><li>**AzureADMyOrg**： 与 Microsoft 的用户工作或学校我的组织 Azure AD 租户 （即单租户） 中的帐户</li><li>**AzureADMultipleOrgs**： 与 Microsoft 的用户工作或学校任何组织的 Azure AD 租户 （即多租户） 中的帐户</li> <li>**AzureADandPersonalMicrosoftAccount**： 用户个人 Microsoft 帐户或任何组织的 Azure AD 租户中的工作或学校帐户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |标记前添加的标记|String 集合| 用于分类和确定应用程序的自定义字符串。 |
@@ -65,11 +66,11 @@ ms.locfileid: "27046130"
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型 | 说明 |
+| 关系 | 类型 | Description |
 |:---------------|:--------|:----------|
 |呼叫           |[呼叫](call.md)集合                  |只读。可为 NULL。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| ConnectorGroup 应用程序使用与 Azure AD 应用程序代理。 可为 Null。|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| 此为只读属性。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md)集合|只读。可为 NULL。|
 |owners|[directoryObject](directoryobject.md) 集合|目录对象的所有者的应用程序。 所有者是一组的非管理员用户有权修改此对象。 需要版本 2013年-11-08 或更高版本。 只读。 可为 Null。|
 |策略|[策略](policy.md)集合|分配给此应用程序的策略。|
