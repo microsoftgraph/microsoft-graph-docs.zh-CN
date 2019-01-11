@@ -2,12 +2,13 @@
 title: tokenMeetingInfo 资源类型
 description: TokenMeetingInfo 类型。
 author: VinodRavichandran
-ms.openlocfilehash: 6fa66fef6f401db848a9ed3e92c5a1003a5294b6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9a618906df450ce58f7428a76367e896b315591a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806977"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 
@@ -17,9 +18,9 @@ TokenMeetingInfo 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性                     | 类型    | 说明                                                                    |
+| 属性                     | 类型    | Description                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | 指示是否一旦离开对话的主机，也可以继续对话。 |
+| allowConversationWithoutHost | 布尔 | 指示是否一旦离开对话的主机，也可以继续对话。 |
 | token                        | String  | 要加入/激活会议的标记。                                        |
 
 ## <a name="json-representation"></a>JSON 表示形式

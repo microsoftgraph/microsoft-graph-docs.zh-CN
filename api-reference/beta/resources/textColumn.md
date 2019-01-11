@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 5ff280b6c969d9832e2f81f77dc32237f9905aad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87a5e27544a49613d1d1e44cd6f3e0e3b7fcf8c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822566"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 
@@ -37,8 +38,8 @@ ms.locfileid: "27044968"
 |:--------------------------------|:-------|:-----------------------------------------------
 | **allowMultipleLines**          | string | 是否支持多行文本。
 | **appendChangesToExistingText** | string | 对此列的更新应替换现有文本，还是附加到现有文本。
-| **linesForEditing**             | 整数    | 文本框的大小。
-| **maxLength**                   | 整数    | 值的最大字符数。
+| **linesForEditing**             | int    | 文本框的大小。
+| **maxLength**                   | int    | 值的最大字符数。
 | **textType**                    | string | 要存储的文本类型。 必须为 `plain` 或 `richText`.的其中一个
 
 <!-- {

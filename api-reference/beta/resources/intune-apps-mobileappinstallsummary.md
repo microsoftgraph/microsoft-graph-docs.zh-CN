@@ -2,12 +2,13 @@
 title: mobileAppInstallSummary 资源类型
 description: 包含的移动应用程序安装摘要属性。
 author: tfitzmac
-ms.openlocfilehash: d998e0fe5b136afe7aa18741c5c91fcde9adcc37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820354"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary 资源类型
 

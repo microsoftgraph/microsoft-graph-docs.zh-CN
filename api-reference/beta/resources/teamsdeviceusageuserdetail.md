@@ -2,12 +2,13 @@
 title: teamsDeviceUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 author: nkramer
-ms.openlocfilehash: 1947b66a59190945e5a6b823b47ef8df7d02683a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06e2cea1154c608b61642b07adbd96aae1710903
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807103"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>teamsDeviceUsageUserDetail 资源类型
 
@@ -18,14 +19,14 @@ ms.locfileid: "27328999"
 | reportRefreshDate | 日期    |
 | userPrincipalName | 字符串  |
 | lastActivityDate  | 日期    |
-| 被         | Boolean |
+| 被         | 布尔 |
 | deletedDate       | 日期    |
-| usedWeb           | Boolean |
-| usedWindowsPhone  | Boolean |
-| usediOS           | Boolean |
-| usedMac           | Boolean |
-| usedAndroidPhone  | Boolean |
-| usedWindows       | Boolean |
+| usedWeb           | 布尔 |
+| usedWindowsPhone  | 布尔 |
+| usediOS           | 布尔 |
+| usedMac           | 布尔 |
+| usedAndroidPhone  | 布尔 |
+| usedWindows       | 布尔 |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式

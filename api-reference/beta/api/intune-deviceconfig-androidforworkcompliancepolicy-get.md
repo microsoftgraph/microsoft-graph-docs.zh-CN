@@ -2,12 +2,13 @@
 title: 获取 androidForWorkCompliancePolicy
 description: 读取属性和 androidForWorkCompliancePolicy 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 24821571cceb593f1dfffacaef69c11305ff3987
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 326b610cef5cfec723d6035736e59c7e43b04560
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817540"
 ---
 # <a name="get-androidforworkcompliancepolicy"></a>获取 androidForWorkCompliancePolicy
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

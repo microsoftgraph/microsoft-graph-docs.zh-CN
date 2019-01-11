@@ -2,12 +2,13 @@
 title: 获取设置
 description: 读取用户和组织设置对象。
 author: dkershaw10
-ms.openlocfilehash: 817cfff56b028e242f0cfb65b966ac6b3173059e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ace7c43b27860832968572628838484bc8c91c84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815489"
 ---
 # <a name="get-settings"></a>获取设置
 

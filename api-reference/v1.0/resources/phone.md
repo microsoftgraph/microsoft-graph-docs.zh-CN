@@ -1,12 +1,13 @@
 ---
 title: phone 资源类型
 description: 表示一个电话号码。
-ms.openlocfilehash: 1293b1f84d9e73f5d92c9b6f6b078b5f39126e33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c34033b0895f81619589e7500441fc655842995
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805059"
 ---
 # <a name="phone-resource-type"></a>phone 资源类型
 

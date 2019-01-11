@@ -1,12 +1,13 @@
 ---
 title: yammerGroupsActivityCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: a308b6180eaf91614247b0b5f47064ae7e7de2b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8a205c2ecd74e8543a220508e7d4110a90317cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806788"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>yammerGroupsActivityCounts 资源类型
 

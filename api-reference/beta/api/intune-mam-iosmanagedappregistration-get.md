@@ -2,12 +2,13 @@
 title: 获取 iosManagedAppRegistration
 description: 读取 iosManagedAppRegistration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 8d0a93b9cddce5c21d923758b783ab7e40d5b27b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5365d6d653ce35fd1ffedc857abcd098a0c8b5b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821950"
 ---
 # <a name="get-iosmanagedappregistration"></a>获取 iosManagedAppRegistration
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

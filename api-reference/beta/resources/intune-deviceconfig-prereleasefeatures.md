@@ -2,12 +2,13 @@
 title: prereleaseFeatures 枚举类型
 description: 预发布功能的可能值。
 author: tfitzmac
-ms.openlocfilehash: d2a01822250854f2bb71542e5057de0b11405abf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78faf2e9360154b3562cbc52c97ff5f6c4e75219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821251"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342194"
 
 预发布功能的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |settingsOnly|1|设置仅预发布功能。|

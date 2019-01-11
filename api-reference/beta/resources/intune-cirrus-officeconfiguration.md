@@ -2,12 +2,13 @@
 title: officeConfiguration 资源类型
 description: 充当所有设备管理功能的容器的单例实体。
 author: tfitzmac
-ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817254"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27305542"
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|介绍租户中签入状态使用的实体|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |clientConfigurations|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)集合|Office 客户端配置的列表。|
 

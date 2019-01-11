@@ -2,12 +2,13 @@
 title: userInstallStateSummary 资源类型
 description: 包含某个用户的安装状态摘要的属性。
 author: tfitzmac
-ms.openlocfilehash: 3d8976cd7db7baabaec60bdf3fe2ed18094156c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c87ca0ab41a95a6a1d214e83eb94a03a4f2330a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820767"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary 资源类型
 

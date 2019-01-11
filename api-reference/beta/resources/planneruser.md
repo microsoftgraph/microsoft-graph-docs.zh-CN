@@ -1,12 +1,13 @@
 ---
 title: plannerUser 资源类型
 description: '**PlannerUser**资源的用户提供对计划工具资源的访问。 '
-ms.openlocfilehash: 592a26daacd1bd6d0a780ca0180d3ec5a57b6eb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820802"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 

@@ -2,12 +2,13 @@
 title: 获取 domain
 description: 检索 domain 对象的属性和关系。
 author: lleonard-msft
-ms.openlocfilehash: 6135f43ab305558c1ade7d9ec1bc27c9e5c4a043
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d49fe39f9e953b6e0bcdb4504a4f2296d5d4ff9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330063"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817218"
 ---
 # <a name="get-domain"></a>获取 domain
 
@@ -39,7 +40,7 @@ GET /domains/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |

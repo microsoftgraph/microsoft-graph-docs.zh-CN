@@ -2,12 +2,13 @@
 title: 刷新会话
 description: '使用此 API 刷新现有的工作簿会话。 '
 author: lumine2008
-ms.openlocfilehash: 4f039b0dd32cbcf5ba0e0a0346a593abc4078df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f4d454214d2f21d1f6447ee224f3013cebb9078
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822335"
 ---
 # <a name="refresh-session"></a>刷新会话
 
@@ -29,7 +30,7 @@ POST /workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | workbook-session-id | 要刷新的工作簿会话 ID |

@@ -2,12 +2,13 @@
 title: windowsInformationProtectionDataRecoveryCertificate 资源类型
 description: Windows 信息保护 DataRecoveryCertificate
 author: tfitzmac
-ms.openlocfilehash: a66c1eeae6d405aa8d0546ac0143e2a8b3404231
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72edbdc16b2d84a2df6a4582bba12bab2feaa04c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361661"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821061"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 

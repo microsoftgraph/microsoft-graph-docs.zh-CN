@@ -1,12 +1,13 @@
 ---
 title: automaticRepliesSetting 资源类型
 description: '配置设置以自动通知中的邮件传入电子邮件的发件人 '
-ms.openlocfilehash: 983f5062c5a7bacaccfdca4687705aed5aa7a604
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 81fb16a9124c60f43887150917f132579aa4f163
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821404"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27007635"
 |internalReplyMessage|string|如果 **Status** 为 `AlwaysEnabled` 或 `Scheduled`，则表示发送给已登录用户组织内部受众的自动答复。 |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为结束。 |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为开始。|
-|状态|automaticRepliesStatus|配置自动答复状态。 可能的值为： `disabled`， `alwaysEnabled`， `scheduled`。|
+|status|automaticRepliesStatus|配置自动答复状态。 可能的值为： `disabled`， `alwaysEnabled`， `scheduled`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

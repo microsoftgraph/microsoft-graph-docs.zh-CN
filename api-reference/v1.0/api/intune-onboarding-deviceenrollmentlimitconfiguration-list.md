@@ -2,12 +2,13 @@
 title: 列出 deviceEnrollmentLimitConfigurations
 description: 列出 deviceEnrollmentLimitConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: db91556e8810109cfcd5e98d54a641451215b36b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 814b9b2d9476b16754e21a8e7d38e451c9493ca4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821635"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>列出 deviceEnrollmentLimitConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

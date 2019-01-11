@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
 description: 请作为合格的角色分配。 如果角色分配已合格呼叫之前，它无实际作用。 如果是永久性的角色分配，请求者是不同于目标用户的角色分配将成为合格和角色将被停用的目标用户。 如果请求程序是目标用户和角色是安全管理员或具有权限的角色管理员，将默认过期激活角色。
-ms.openlocfilehash: f39f508c7aeae4d85db92b43f406cd3497533e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822587"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 

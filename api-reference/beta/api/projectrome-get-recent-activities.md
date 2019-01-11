@@ -1,12 +1,13 @@
 ---
 title: 获取最新的用户活动
 description: " API。 该服务将最近 historyItems，查询，然后提取这些相关的活动。 活动将根据最近**lastModified** **historyItem**上进行排序。 这意味着不**historyItems**活动将不包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。"
-ms.openlocfilehash: 7dbd51e416d62016add020b784b0f7d0ace473cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 36df29d2000934da417b473235575f5741078dc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819787"
 ---
 # <a name="get-recent-user-activities"></a>获取最新的用户活动
 

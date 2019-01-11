@@ -2,12 +2,13 @@
 title: 创建 androidEasEmailProfileConfiguration
 description: 创建新的 androidEasEmailProfileConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 38e4e36917ac1679420261746713205f77693b73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b59a1e551aaad0e4ad23c1001ca3fea515333ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817778"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>创建 androidEasEmailProfileConfiguration
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,23 +53,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountName|字符串|Exchange ActiveSync 帐户名，向用户显示为 EAS (this) 配置文件的名称。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Exchange ActiveSync 的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`。|
-|syncCalendar|Boolean|同步日历的切换。 如果设置为 false 的日历已在设备上关闭。|
-|syncContacts|Boolean|切换同步联系人。 如果设置为 false 的联系人设备上关闭。|
-|syncTasks|Boolean|同步任务的切换。 如果设置为 false 的任务在设备上关闭。|
-|syncNotes|Boolean|同步注释的切换。 如果设置为 false 的说明在设备上关闭。|
+|syncCalendar|布尔|同步日历的切换。 如果设置为 false 的日历已在设备上关闭。|
+|syncContacts|布尔|切换同步联系人。 如果设置为 false 的联系人设备上关闭。|
+|syncTasks|布尔|同步任务的切换。 如果设置为 false 的任务在设备上关闭。|
+|syncNotes|布尔|同步注释的切换。 如果设置为 false 的说明在设备上关闭。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|应为同步的时间电子邮件持续时间。 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|电子邮件是从 AAD 选取并在设备上安装之前将其插入此配置文件的属性。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |emailSyncSchedule|[emailSyncSchedule](../resources/intune-deviceconfig-emailsyncschedule.md)|电子邮件的同步计划。 可取值为：`userDefined`、`asMessagesArrive`、`manual`、`fifteenMinutes`、`thirtyMinutes`、`sixtyMinutes`、`basedOnMyUsage`。|
 |hostName|String|Exchange 位置 (URL) 的本机邮件应用程序连接到。|
-|requireSmime|Boolean|指示使用 S/MIME 证书。|
-|requireSsl|Boolean|指示使用 SSL。|
+|requireSmime|布尔|指示使用 S/MIME 证书。|
+|requireSsl|布尔|指示使用 SSL。|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Username 属性是从 AAD 选取并在设备上安装之前将其插入此配置文件。 可取值为：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|是从 AAD 选取并在设备上安装之前将其插入此配置文件的用户域名属性。 可取值为：`fullDomainName`、`netBiosDomainName`。|
 |customDomainName|字符串|在设备上安装之前生成的电子邮件配置文件时使用的自定义域名称值。|

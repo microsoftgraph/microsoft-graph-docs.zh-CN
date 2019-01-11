@@ -1,12 +1,13 @@
 ---
 title: 列表 privilegedOperationEvents
 description: 筛选器表达式。
-ms.openlocfilehash: c18e00086ae92610cdc05e31d9f04ecf7e5d5c48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 316240359b178dde2d307c4c0d8228dfb22c9ee5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821806"
 ---
 # <a name="list-privilegedoperationevents"></a>列表 privilegedOperationEvents
 

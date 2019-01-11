@@ -2,12 +2,13 @@
 title: 获取 androidDeviceOwnerEnrollmentProfile
 description: 读取属性和 androidDeviceOwnerEnrollmentProfile 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: af18430221961faf765ddb91c35fb0375c3dd45c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6947171c5d7a366cc5c5fab30bf3143e002c92a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818597"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>获取 androidDeviceOwnerEnrollmentProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

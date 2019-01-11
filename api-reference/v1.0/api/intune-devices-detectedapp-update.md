@@ -2,12 +2,13 @@
 title: 更新 detectedApp
 description: 更新 detectedApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: f9fca5810ab40b9d1001b4c711ec62d9d5bfd36a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b8eb3bc1bac0902ce36bd763c633f06919d2fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821929"
 ---
 # <a name="update-detectedapp"></a>更新 detectedApp
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

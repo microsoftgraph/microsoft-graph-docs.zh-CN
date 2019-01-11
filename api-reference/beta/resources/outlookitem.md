@@ -2,12 +2,13 @@
 title: outlookItem 资源类型
 description: 下面是资源的 JSON 表示形式。
 author: angelgolfer-ms
-ms.openlocfilehash: 4d375606a5104d48955561df3b904922a5daf042
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b88a450465798386ad57e82ff76896417301a606
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817631"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 

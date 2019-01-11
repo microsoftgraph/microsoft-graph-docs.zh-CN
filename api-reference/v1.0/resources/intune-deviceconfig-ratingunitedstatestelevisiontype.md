@@ -2,12 +2,13 @@
 title: ratingUnitedStatesTelevisionType 枚举类型
 description: 美国 TV 内容评级标签
 author: tfitzmac
-ms.openlocfilehash: 2b03a053851248bcd1238b2464c2a4f8879a5580
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6570ca0ee7a6edba91409fb51efbfb50bbb983e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819983"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27328383"
 
 美国 TV 内容评级标签
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有 TV 都显示内容|
 |allBlocked|1|不允许任何电视显示内容|

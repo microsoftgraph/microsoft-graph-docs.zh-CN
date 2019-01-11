@@ -2,12 +2,13 @@
 title: complianceState 枚举类型
 description: 合规性状态。
 author: tfitzmac
-ms.openlocfilehash: 3045685518f1c7718f9a5f46cd10e0add6fe05b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53b17f258f577e0842dbfc81c6341303f6b43799
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820340"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27330273"
 
 合规性状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |符合标准|1|兼容。|

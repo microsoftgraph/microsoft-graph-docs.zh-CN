@@ -1,12 +1,13 @@
 ---
 title: permissionScope 资源类型
 description: 表示一个 OAuth 2.0 委派权限范围。 指定的 OAuth 2.0 委派的权限范围可能请求 （通过 Application 对象的**requiredResourceAccess**集合） 的客户端应用程序调用资源应用程序时。 **Oauth2Permissions**属性和应用程序实体的 ServicePrincipal 实体是**OAuth2Permission**的集合。
-ms.openlocfilehash: b15ee9901632fca113d944000847c953e85be58c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a294316f5c6255d0873ce0dbe809c33dad89ae08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818149"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046973"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |adminConsentDescription|字符串| 权限管理员同意和应用程序分配体验中显示的帮助文本。 |
 |adminConsentDisplayName|字符串| 权限管理的同意和应用程序分配体验中显示的的显示名称。 |

@@ -2,12 +2,13 @@
 title: commsOperation 资源类型
 description: 某些长时间运行操作的状态。
 author: VinodRavichandran
-ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821446"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 
@@ -20,13 +21,13 @@ ms.locfileid: "27380350"
 
 ## <a name="properties"></a>属性
 
-| 属性           | 类型                        | 说明                                                                     |
+| 属性           | 类型                        | Description                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | 字符串                      | 客户端上下文。                                                             |
 | createdDateTime    | DateTimeOffset              | 操作的开始时间。                                                |
 | id                 | 字符串                      | 操作 ID。只读。 生成的服务器。                                  |
 | lastActionDateTime | DateTimeOffset              | 操作的上次活动时间。                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | 结果的信息。 只读。 生成的服务器。                            |
+| resultInfo         | [resultInfo](resultinfo.md) | 结果的信息。 此为只读属性。 生成的服务器。                            |
 | status             | String                      | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>Relationships

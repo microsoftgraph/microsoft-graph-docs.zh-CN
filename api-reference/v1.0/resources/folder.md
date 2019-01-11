@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
-ms.openlocfilehash: dc90624b14a88d06b45302f421a7e3fcfa802a67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fab5db026b47aa84f7d097a19782b70eac6b6064
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821418"
 ---
 # <a name="folder-resource-type"></a>Folder 资源类型
 

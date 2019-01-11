@@ -2,12 +2,13 @@
 title: managedMobileApp 资源类型
 description: 部署应用的标识符。
 author: tfitzmac
-ms.openlocfilehash: cf36295e27bc6198b6f8d0c53854c81dbd3ae30f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c020166da2fb8e33d9649935f89ef22e556e7d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819697"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 

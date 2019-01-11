@@ -2,12 +2,13 @@
 title: windowsArchitecture 枚举类型
 description: 包含 Windows 体系结构的属性。
 author: tfitzmac
-ms.openlocfilehash: c5559e47fad5e5490f601de00568b4d8ae0da827
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba40d9f38df3d1512b53e298943af1d59479a481
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820389"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27339709"
 
 包含 Windows 体系结构的属性。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|无标志设置。|
 |x86|1|是否支持 Windows 体系结构类型 X86。|

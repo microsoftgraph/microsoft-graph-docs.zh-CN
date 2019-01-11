@@ -2,12 +2,13 @@
 title: 删除 androidManagedStoreAppConfiguration
 description: 删除 androidManagedStoreAppConfiguration。
 author: tfitzmac
-ms.openlocfilehash: a874f3cca2e596f79fd4d30b54c531b9049a702f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 224b45e4fac0c8b235eaea2ed304fb9df46aba95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818107"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>删除 androidManagedStoreAppConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: siteActivitySummary 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 354b329f592964249590b2f551d66681f45de485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2eb5bdb89924338d1d352ea80bd516b8fb948250
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817764"
 ---
 # <a name="siteactivitysummary-resource-type"></a>siteActivitySummary 资源类型
 

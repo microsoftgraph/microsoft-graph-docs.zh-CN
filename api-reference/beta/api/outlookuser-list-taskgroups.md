@@ -1,12 +1,13 @@
 ---
 title: 列表 taskGroups
 description: 获取用户的邮箱中的所有 Outlook 任务组。
-ms.openlocfilehash: ba4291f72c1fc6afe3c5f445026169d11f8030db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f945527dd3e8c607205f0b4b0e6375600f74d29b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806760"
 ---
 # <a name="list-taskgroups"></a>列表 taskGroups
 

@@ -1,12 +1,13 @@
 ---
 title: Skype for Business 对等活动报表
 description: Skype for Business 对等活动报表可用于获取整个组织中对等活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
-ms.openlocfilehash: 08021570e70847bf230997b991e5901f887d0e4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 491c0df411ff84de7a08ef5a96b2a0d1a77dcbe8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820900"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business 对等活动报表
 

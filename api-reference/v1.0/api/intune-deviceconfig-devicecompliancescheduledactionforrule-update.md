@@ -2,12 +2,13 @@
 title: 更新 deviceComplianceScheduledActionForRule
 description: 更新 deviceComplianceScheduledActionForRule 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e63602cf39aa89bfdcda2db900d993d8e0a56d9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e12282024216582941ac4ed63108194a863cdc03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818303"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>更新 deviceComplianceScheduledActionForRule
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

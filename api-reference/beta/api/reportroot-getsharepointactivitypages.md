@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointActivityPages'
 description: 获取用户访问的唯一页面数。
-ms.openlocfilehash: b9e98eebccb82061d4a601068d4e953fb3f246b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c9f39467940b6aeab2a26568cb0e11c7dd4c616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042478"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816718"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 

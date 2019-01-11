@@ -2,12 +2,13 @@
 title: 列出 managedMobileApps
 description: 列出 managedMobileApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 9ccbc1a59ae8f324a83fdbe994c5c16e0a785738
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91cfb1097591102a3835b612660626f69517dc2d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816490"
 ---
 # <a name="list-managedmobileapps"></a>列出 managedMobileApps
 
@@ -41,7 +42,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

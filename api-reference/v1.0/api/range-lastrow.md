@@ -2,12 +2,13 @@
 title: Range:LastRow
 description: .
 author: lumine2008
-ms.openlocfilehash: 384304a008ba4204a2ebd2e0837b814f3956520d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e1aaaee039da7777fc2c32f978ca049900582ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816777"
 ---
 # <a name="range-lastrow"></a>Range:LastRow
 
@@ -30,7 +31,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastRow
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

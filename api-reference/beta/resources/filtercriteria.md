@@ -1,12 +1,13 @@
 ---
 title: FilterCriteria 资源类型
 description: 表示应用于列的筛选条件。
-ms.openlocfilehash: dbcc57ff940fec525b712eb11ac44209f5f8a4d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 56663e802aacc2dab3f08462724d0994b5bada85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821677"
 ---
 # <a name="filtercriteria-resource-type"></a>FilterCriteria 资源类型
 

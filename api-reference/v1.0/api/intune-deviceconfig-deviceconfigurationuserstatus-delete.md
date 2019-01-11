@@ -2,12 +2,13 @@
 title: 删除 deviceConfigurationUserStatus
 description: 删除 deviceConfigurationUserStatus。
 author: tfitzmac
-ms.openlocfilehash: d248f1440053aeac9a53a534b22af61cfc396c03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39c1ffbd81972c01fceff7b75857f4b27b0c19fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821327"
 ---
 # <a name="delete-deviceconfigurationuserstatus"></a>删除 deviceConfigurationUserStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatus
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

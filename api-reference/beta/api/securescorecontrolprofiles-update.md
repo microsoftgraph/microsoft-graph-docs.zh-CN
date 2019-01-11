@@ -1,12 +1,13 @@
 ---
 title: 更新 secureScoreControlProfiles
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: afbfcd1889c55dd53241ff8d796bb3ab492b2acf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817652"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -43,7 +44,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 下表列出了可以为 secureScoreControlProfile 更新字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |assignedTo|字符串|分析师控件的名称分配给进行会审、 实施或修复。|
 |tenantNote|字符串|分析师评论 （用于客户控件管理） 的控件。|

@@ -1,12 +1,13 @@
 ---
 title: securityVendorInformation 资源类型
 description: " subProvider = AppLocker)。"
-ms.openlocfilehash: 0eef5b1d53f4b7b61af0ccede6e02ffc7bdf76ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9d8551c085c05007388bf0c6e33143994c6969b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820144"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27010553"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |提供程序 |字符串|特定提供程序 （产品/服务 — 不供应商公司）;例如，WindowsDefenderATP。|
 |providerVersion|字符串|提供程序或 subprovider，如果存在，生成警报的版本。 *Required*|

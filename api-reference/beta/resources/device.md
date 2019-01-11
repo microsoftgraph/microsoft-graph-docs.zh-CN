@@ -1,12 +1,13 @@
 ---
 title: 设备资源类型
 description: 代表在目录中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
-ms.openlocfilehash: 41fc53790c9c12415606e9f6f993407e97068fe6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821670"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -50,11 +51,11 @@ ms.locfileid: "27049372"
 |onPremisesLastSyncDateTime|DateTimeOffset|对象最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。|
 |operatingSystem|String| 设备上操作系统的类型。必需。 |
-|operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
+|operatingSystemVersion|String| 设备的操作系统版本。 必填。 |
 |physicalIds|String 集合| 仅供内部使用。 不可为 null。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |名称| 字符串 | 设备的友好名称。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
-|Status | 字符串| 设备联机或脱机。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
+|状态 | 字符串| 设备联机或脱机。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
 |平台 |字符串|设备的平台。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。|
 |Kind| 字符串| 设备的外形因素。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
 |型号| 字符串| 设备的模型。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |

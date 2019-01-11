@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessAppAssignmentSettings 资源类型
 description: 包含用于为组分配适用于企业的 Microsoft 应用商店移动应用的属性。
 author: tfitzmac
-ms.openlocfilehash: 3a6d33eac4ee03a54e99a24cfde3b15c82cb0bad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ef23919912d8a91beceefeb034de7cc09cb941c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805023"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings 资源类型
 

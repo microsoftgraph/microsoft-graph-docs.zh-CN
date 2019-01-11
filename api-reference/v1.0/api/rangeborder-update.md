@@ -2,12 +2,13 @@
 title: 更新 RangeBorder
 description: 更新 rangeborder 对象的属性。
 author: lumine2008
-ms.openlocfilehash: ed9b2e5fa6b3d4a1dd3c227160eb71435e9a3817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a85bd70b3e8448dd460c2d572ab319142c17bd52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818289"
 ---
 # <a name="update-rangeborder"></a>更新 RangeBorder
 
@@ -29,7 +30,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

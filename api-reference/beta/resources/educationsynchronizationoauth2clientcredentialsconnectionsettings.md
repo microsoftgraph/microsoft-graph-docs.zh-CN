@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 description: 当 OAuth2 客户端凭据授予以用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
-ms.openlocfilehash: 901fabb802d4ed5fa0c99538e52b9a07199eb298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822580"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 
@@ -18,7 +19,7 @@ ms.locfileid: "27047205"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **tokenUrl** | 字符串 | 要获取访问令牌的数据提供程序的 URL。 |
 | **scope** | 字符串 | [访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。 |

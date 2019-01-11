@@ -2,12 +2,13 @@
 title: 获取 macOSTrustedRootCertificate
 description: 读取属性和 macOSTrustedRootCertificate 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 519d30222be929eb4094a69a4d6c69da42c027df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a388cf36e0f4e59766b4a22785ea49cfa388958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817568"
 ---
 # <a name="get-macostrustedrootcertificate"></a>获取 macOSTrustedRootCertificate
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

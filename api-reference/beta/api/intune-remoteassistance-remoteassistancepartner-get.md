@@ -2,12 +2,13 @@
 title: 获取 remoteAssistancePartner
 description: 读取 remoteAssistancePartner 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 35b9a02919d656aa0b56617ee37d9d8c0675ee09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1212ca8d51ac0fd2a896800d5467624cd1c08570
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806718"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 
@@ -40,7 +41,7 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

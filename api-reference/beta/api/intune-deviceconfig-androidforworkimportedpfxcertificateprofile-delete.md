@@ -2,12 +2,13 @@
 title: 删除 androidForWorkImportedPFXCertificateProfile
 description: 删除 androidForWorkImportedPFXCertificateProfile。
 author: tfitzmac
-ms.openlocfilehash: 2f0424dd5a627072ead8f618c5319a3702be4b40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e10754a1f01018b42d5a1e62152ed9c2cc558eb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812717"
 ---
 # <a name="delete-androidforworkimportedpfxcertificateprofile"></a>删除 androidForWorkImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

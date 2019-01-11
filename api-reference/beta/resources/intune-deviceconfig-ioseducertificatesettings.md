@@ -2,12 +2,13 @@
 title: iosEduCertificateSettings 资源类型
 description: 适用于 iOS EDU 的受信任的根和 PFX 证书。
 author: tfitzmac
-ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822076"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27332324"
 
 适用于 iOS EDU 的受信任的根和 PFX 证书。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |trustedRootCertificate|Binary|受信任的根证书。|
 |certFileName|字符串|若要在 UI 中显示的文件名。|

@@ -2,12 +2,13 @@
 title: 列出 windows10CustomConfigurations
 description: 列出 windows10CustomConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: e5752b64ed8d67e6bc112ed2b41d516b303d4ce2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8f6d300836482b267535a93b71a86cf31660777
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818044"
 ---
 # <a name="list-windows10customconfigurations"></a>列出 windows10CustomConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

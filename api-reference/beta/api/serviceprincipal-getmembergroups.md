@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: getMemberGroups'
 description: 获取组的成员的此服务主体的列表。  检查是传递的。
-ms.openlocfilehash: 3ea35e86269f370a3f4fc500555ae04705c038fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d552b410da23e5675257340ddc61cb4abbcd5e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817645"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 

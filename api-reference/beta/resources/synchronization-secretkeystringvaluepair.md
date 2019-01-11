@@ -1,12 +1,13 @@
 ---
 title: synchronizationSecretKeyStringValuePair 资源类型
 description: '代表单个机密值。 '
-ms.openlocfilehash: 31aa5d983a0117591d3be75939b2c881a9782e7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55cbd6b19ddf6c6f622ad7daddea569558e31f0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818730"
 ---
 # <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>synchronizationSecretKeyStringValuePair 资源类型
 

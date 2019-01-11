@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: MentionAction
-ms.openlocfilehash: be873ba2b5f9bc1fdd387407c1036435dc6f1fc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7843feebd8ebca2022b276007d21a89b754217a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804968"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction 资源类型
 

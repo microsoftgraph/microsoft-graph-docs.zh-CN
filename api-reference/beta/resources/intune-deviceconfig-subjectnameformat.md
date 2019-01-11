@@ -2,12 +2,13 @@
 title: subjectNameFormat 枚举类型
 description: 使用者名称格式选项。
 author: tfitzmac
-ms.openlocfilehash: 61aeddb1e751885c3a0ba39fd5628b71830dded5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85a11e8690c360e405df2453229a039ea9f9b1dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821334"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27307005"
 
 使用者名称格式选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |commonName|0|公用名。|
 |commonNameIncludingEmail|1|包括电子邮件的公用名。|

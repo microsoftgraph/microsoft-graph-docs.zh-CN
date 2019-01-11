@@ -2,12 +2,13 @@
 title: deviceManagementPartnerAppType 枚举类型
 description: 合作伙伴应用程序类型。
 author: tfitzmac
-ms.openlocfilehash: b7d54604aeb86c44a1964e1d24b3a1b131551149
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f174e9ad0c8d125c6d0a06336043923d53d81ed4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820403"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354290"
 
 合作伙伴应用程序类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知合作伙伴应用程序类型。|
 |singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|

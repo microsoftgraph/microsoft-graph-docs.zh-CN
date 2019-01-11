@@ -1,12 +1,13 @@
 ---
 title: attendeeAvailability 资源类型
 description: 与会者的类型和忙/闲状态。
-ms.openlocfilehash: ddea2be21f2dd9290637536e2a428e25fc03fcca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a00fe38e678c6a51cd252b823a7d2651e531d20a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820466"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 

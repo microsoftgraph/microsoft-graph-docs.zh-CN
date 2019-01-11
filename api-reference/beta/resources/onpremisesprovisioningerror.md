@@ -1,12 +1,13 @@
 ---
 title: onPremisesProvisioningError 资源类型
 description: 当同步部署到 Azure Active Directory 目录，则表示用户、 组或组织的 contact 实体的目录同步错误。
-ms.openlocfilehash: 9fa7850d39c9f7a490135a127938fc7fae30b6f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ea9efcd4d9db5cf7cc5b8f0a18b35345d06c3fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044120"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817736"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
 

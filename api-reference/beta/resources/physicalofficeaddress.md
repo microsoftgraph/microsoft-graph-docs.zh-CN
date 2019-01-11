@@ -1,12 +1,13 @@
 ---
 title: physicalOfficeAddress 资源类型
 description: 代表资源如 contact 或事件的业务地址。
-ms.openlocfilehash: 472e4dfd03670f5fd4ff6b5c5c53342fff5c391a
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bd4274e29b2ef0f9e7e8318528d18103be19fabc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27284096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817785"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress 资源类型
 

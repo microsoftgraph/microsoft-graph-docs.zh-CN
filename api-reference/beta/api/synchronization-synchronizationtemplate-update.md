@@ -1,12 +1,13 @@
 ---
 title: 更新 synchronizationTemplate
 description: 更新 （覆盖） 与给定应用程序关联的同步模板。
-ms.openlocfilehash: 9862b0a31294448e1b43e8438b76a16d471cb2d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea4dfdc418d04467a6060a8c3d7d83423ba16e38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816735"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 

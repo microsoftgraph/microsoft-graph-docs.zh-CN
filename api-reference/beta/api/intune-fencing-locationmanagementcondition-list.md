@@ -2,12 +2,13 @@
 title: 列表 locationManagementConditions
 description: 列出属性和 locationManagementCondition 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: fd45730df931828eb4c9bb8c92f4cb85628601be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7be9788aeab7a4969fe5e627d643760f6b21177
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817519"
 ---
 # <a name="list-locationmanagementconditions"></a>列表 locationManagementConditions
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

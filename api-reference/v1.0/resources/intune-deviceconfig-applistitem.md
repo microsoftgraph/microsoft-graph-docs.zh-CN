@@ -2,12 +2,13 @@
 title: appListItem 资源类型
 description: 表示托管应用程序列表中的应用
 author: tfitzmac
-ms.openlocfilehash: a7e33b986f95f610abff2c7b5321f48f3668e488
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b9d7df95ce8ddb71439763eb02b205772e06300
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820319"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 

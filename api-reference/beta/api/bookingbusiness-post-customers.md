@@ -1,12 +1,13 @@
 ---
 title: 创建 bookingCustomer
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: a1866c03124dd431f7f14f9c0244ac2f62bcac6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea534616c35f2ca43c7fb5b0b5169cc935aef1d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819451"
 ---
 # <a name="create-bookingcustomer"></a>创建 bookingCustomer
 

@@ -2,12 +2,13 @@
 title: wipeManagedAppRegistrationByDeviceTag 操作
 description: 对包含指定设备标记的应用注册发布擦除操作。
 author: tfitzmac
-ms.openlocfilehash: 54b5e969d66bff44d0ed19561546ebdc1bdb2c4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68d3e2d2a356e23c4b83509c827aee4e18f72aac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821838"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>wipeManagedAppRegistrationByDeviceTag 操作
 
@@ -42,7 +43,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

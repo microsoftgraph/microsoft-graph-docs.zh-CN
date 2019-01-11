@@ -2,12 +2,13 @@
 title: 获取 defaultDeviceCompliancePolicy
 description: 读取属性和 defaultDeviceCompliancePolicy 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 9d25f9074475f627d88449917fbe1615a0880119
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a50151857a5acdbbf34ccb0d8cc7b2386bbd162
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817148"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>获取 defaultDeviceCompliancePolicy
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

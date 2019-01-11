@@ -2,12 +2,13 @@
 title: 创建用户
 description: 新建用户对象。
 author: tfitzmac
-ms.openlocfilehash: dddfa5e6788aa56c1a983a889f692fc7cbdc4d94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9146f7292e003bb64c958e91d1305544b3980442
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821705"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -27,7 +28,7 @@ ms.locfileid: "27307670"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -45,7 +46,7 @@ POST /users
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

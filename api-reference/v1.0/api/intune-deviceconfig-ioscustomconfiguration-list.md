@@ -2,12 +2,13 @@
 title: 列出 iosCustomConfigurations
 description: 列出 iosCustomConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 09a0d9a22c124bdc4c5d9532b712b6ece0ba5987
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b0b0965131043cb36e391b1afe12ab16acac4cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352309"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820578"
 ---
 # <a name="list-ioscustomconfigurations"></a>列出 iosCustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

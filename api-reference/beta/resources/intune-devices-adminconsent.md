@@ -2,12 +2,13 @@
 title: adminConsent 资源类型
 description: 管理许可信息。
 author: tfitzmac
-ms.openlocfilehash: 7e535eb3475745c8c8aabb2701d9b9e24b8d3b02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b6b2d9a8c32c9a1ce7e8587ebe853f7646b703a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815580"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354080"
 
 管理许可信息。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|共享用户和设备数据到 Apple 管理员同意状态。 可取值为：`notConfigured`、`granted`、`notGranted`。|
 

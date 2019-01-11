@@ -1,12 +1,13 @@
 ---
 title: domainDnsRecord 资源类型
 description: 对于租户中的每个域，您可能需要先域可由 Microsoft Online Services 将 DNS 记录添加到域的 DNS 区域文件。 **DomainDnsRecord**实体用于显示此类的 DNS 记录。 DomainDnsCnameRecord、 DomainDnsMxRecord、 DomainDnsSrvRecord 和 DomainDnsSrvRecord 实体的基准实体。
-ms.openlocfilehash: d2cc25f459aebf4a410c152e5f5128436a8c8f61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30c5f63f4ecac2c716f7884ccf82fd129125c8b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822342"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 

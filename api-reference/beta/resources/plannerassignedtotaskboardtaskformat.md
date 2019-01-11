@@ -1,12 +1,13 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
 description: '**plannerAssignedToTaskBoardTaskFormat** 资源表示用于在“任务板”的“AssignedTo”视图（由已向其分配任务的用户组成的视图）下正确呈现任务的信息。每个任务均将有一个与其相关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。'
-ms.openlocfilehash: 8fc96d6fa7d4f05f6bc81f7030ebe766bf769e40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bae551e009faeb40418f10a082bb8955846e8901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045622"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818079"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat 资源类型
 

@@ -2,12 +2,13 @@
 title: 删除 depOnboardingSetting
 description: 删除 depOnboardingSetting。
 author: tfitzmac
-ms.openlocfilehash: 718fad673fc0e916c2687c368d7c542a42acdbde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bab4dae945307dc9211eb5559d50176fddf467d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806816"
 ---
 # <a name="delete-deponboardingsetting"></a>删除 depOnboardingSetting
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

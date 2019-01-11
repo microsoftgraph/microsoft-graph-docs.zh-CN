@@ -2,12 +2,13 @@
 title: meetingInfo 资源类型
 description: 会议指定要创建或加入会议的信息。
 author: VinodRavichandran
-ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 24ac0247fd39569276f2cb288646eca578447e07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817750"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380308"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
+| 属性       | 类型    | Description|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | Boolean |  |
+| allowConversationWithoutHost | 布尔 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

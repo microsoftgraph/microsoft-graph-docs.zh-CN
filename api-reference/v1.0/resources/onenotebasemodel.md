@@ -2,12 +2,13 @@
 title: onenoteEntityBaseModel 资源
 description: 这是 OneNote 实体的基类型。
 author: Jewan-microsoft
-ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c6a3d4916bf54eeec5856f51af87fa79e1f6e6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821229"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel 资源
 
@@ -34,7 +35,7 @@ ms.locfileid: "27310463"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |self|字符串|可以在其中获取关于页面的详细信息的终结点。只读。|
 

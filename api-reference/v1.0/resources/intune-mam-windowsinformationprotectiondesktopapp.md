@@ -2,12 +2,13 @@
 title: windowsInformationProtectionDesktopApp 资源类型
 description: 用于 Windows 信息保护的桌面应用
 author: tfitzmac
-ms.openlocfilehash: 5164e6d1a9165139de1895dfae38dd8c90927504
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c381541379feacff7611e77882069c5fe2119e67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822062"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27345512"
 |description|String|应用的说明。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |publisherName|String|继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) 的发布者名称|
 |productName|String|产品名称。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
-|denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
+|denied|布尔值|如果为 true，则应用的保护或免除受到拒绝。 继承自 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)|
 |binaryName|String|二进制名称。|
 |binaryVersionLow|String|较低的二进制版本。|
 |binaryVersionHigh|String|较高的二进制版本。|

@@ -2,12 +2,13 @@
 title: 邮件资源类型
 description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
-ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b6d5e3b66209515d03ad7e60a56bbde2c62442e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817281"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -100,13 +101,13 @@ ms.locfileid: "27748477"
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。 |
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification|String| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
+|inferenceClassification|字符串| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
 |internetMessageId | String | 所指定的[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)格式中邮件 ID。 **IsDraft**为 true 时，才可更新。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isRead|布尔|指示是否已阅读该邮件。|
+|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|邮件中的提及的相关信息。处理 `GET` /messages 请求时，服务器会设置此属性并默认将其包含在响应中。若邮件中无提及，则服务器返回 NULL。可选。 |
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|

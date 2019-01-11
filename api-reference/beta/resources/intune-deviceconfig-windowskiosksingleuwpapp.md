@@ -2,12 +2,13 @@
 title: windowsKioskSingleUWPApp 资源类型
 description: 用于标识网亭配置 UWP 应用程序信息的类
 author: tfitzmac
-ms.openlocfilehash: fd1dffd5a01b89db27132770d4c8ffe0094eed8f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c11469784e2c450b151c9a81a07f6c1568cf3a3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818142"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>windowsKioskSingleUWPApp 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27312178"
 继承自[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|这是仅应用程序用户模型 ID (AUMID) 将可用于启动在展台模式中使用|
 

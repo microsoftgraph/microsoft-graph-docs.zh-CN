@@ -2,12 +2,13 @@
 title: 获取 mobileAppInstallSummary
 description: 读取属性和 mobileAppInstallSummary 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 6f44cb4ae473ad8306f2fa3a4e61f93da900b380
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaf1d3a0a1c64fb71e336de4e2a9c37142e72b86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818114"
 ---
 # <a name="get-mobileappinstallsummary"></a>获取 mobileAppInstallSummary
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

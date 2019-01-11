@@ -2,12 +2,13 @@
 title: 更新 educationSynchronizationProfile
 description: 更新为租户中为现有学校数据同步配置文件属性。
 author: mmast-msft
-ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818527"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 
@@ -18,7 +19,7 @@ ms.locfileid: "27361465"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | 权限 |
+| 权限类型 | Permissions |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 （个人 Microsoft 帐户|不支持。|
@@ -31,7 +32,7 @@ PUT /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 | Content-Type | string | application/json. Required. |

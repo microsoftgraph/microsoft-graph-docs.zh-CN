@@ -1,12 +1,13 @@
 ---
 title: directoryRoleTemplate 资源类型
 description: 表示目录角色模板。 目录角色模板指定一个目录角色 (directoryRole) 的属性值。 没有可能在租户中激活目录角色的每个关联的目录角色 template 对象。 若要读取目录角色或更新其成员，它必须首先激活在租户中。 默认情况下已激活公司管理员的目录角色。 若要激活其他可用的目录角色您发送一个 POST 请求到`/directoryRoles`终结点请求的**roleTemplateId**参数中指定的目录角色模板目录角色所基于的 id。 在此请求成功完成，您就可以开始读取和分配目录角色的成员。 **注意**： 目录角色模板公开用户目录角色。 用户目录角色是隐式，而不是对目录客户端可见。 基础结构的情况下，为租户中的每个用户分配给此角色。 已激活的角色。 不要使用此模板。
-ms.openlocfilehash: 088b630a05044f4b3dba59dd1ff6c9a11dce6c0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bffff81db3416c538031bce58cfc80580c06f48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821187"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 获取协议
 description: 检索的属性和协议对象的关系。
-ms.openlocfilehash: 9887ed39bcb2a63980388e5265bb56d6500625d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ca4e941705fe716c3aa11a73c934c40deb279d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818653"
 ---
 # <a name="get-agreement"></a>获取协议
 
@@ -35,7 +36,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -2,12 +2,13 @@
 title: 删除 windows10EnrollmentCompletionPageConfiguration
 description: 删除 windows10EnrollmentCompletionPageConfiguration。
 author: tfitzmac
-ms.openlocfilehash: f77b44880817f3100bae0e4197e3f7f6c5e3b579
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc408ca4aa07744ccc6edd08d3d412874a717a16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816525"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>删除 windows10EnrollmentCompletionPageConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

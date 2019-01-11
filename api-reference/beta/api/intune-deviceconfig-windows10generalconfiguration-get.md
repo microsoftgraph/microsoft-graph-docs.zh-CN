@@ -2,12 +2,13 @@
 title: 获取 windows10GeneralConfiguration
 description: 读取 windows10GeneralConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 9f0ae3d32df8290616bcf50defa84515575c5bf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c21eb0522ea3c673fda6244e834323028bcec26c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816889"
 ---
 # <a name="get-windows10generalconfiguration"></a>获取 windows10GeneralConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

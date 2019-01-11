@@ -2,12 +2,13 @@
 title: 设置资源类型
 description: '当前用户设置。 '
 author: dkershaw10
-ms.openlocfilehash: c6a130dc9232114110735ebb0a98b0beeecbf835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0ba342ba7644e005fd8711616625957bc4a1f284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821138"
 ---
 # <a name="settings-resource-type"></a>设置资源类型
 
@@ -26,10 +27,10 @@ ms.locfileid: "27314495"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|设置为 true，代理访问权限的用户时禁用[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API。 当设置为在用户的 Office 深入为 true，则文档将被禁用。 当设置为 true，Office 365，例如在建议的网站中 SharePoint 主页中显示的内容的相关性和受影响的 OneDrive for Business 中的发现视图。 用户可以控制在[Office 深入](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)此设置。 |
-|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|反映[组织级别设置](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)控制对[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API 的代理访问。 当设置为 true，组织不具有对 Office 深入的访问。 为整个组织受影响的 Office 365，例如在建议的网站中 SharePoint 主页和 OneDrive for Business 中的发现视图中显示的内容相关性。 此设置是只读的并且只能通过[SharePoint 管理中心](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)中的管理员来更改。|
+|contributionToContentDiscoveryDisabled|布尔|设置为 true，代理访问权限的用户时禁用[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API。 当设置为在用户的 Office 深入为 true，则文档将被禁用。 当设置为 true，Office 365，例如在建议的网站中 SharePoint 主页中显示的内容的相关性和受影响的 OneDrive for Business 中的发现视图。 用户可以控制在[Office 深入](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)此设置。 |
+|contributionToContentDiscoveryAsOrganizationDisabled|布尔|反映[组织级别设置](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)控制对[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API 的代理访问。 当设置为 true，组织不具有对 Office 深入的访问。 为整个组织受影响的 Office 365，例如在建议的网站中 SharePoint 主页和 OneDrive for Business 中的发现视图中显示的内容相关性。 此设置是只读的并且只能通过[SharePoint 管理中心](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)中的管理员来更改。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

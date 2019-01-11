@@ -2,12 +2,13 @@
 title: 表资源类型
 description: 表示一个 Excel 表。
 author: lumine2008
-ms.openlocfilehash: 993216b4545b34a76295406ea497aeaf77e1e23d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ad5bb13960dba1308553b8162c13795e477adce6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820032"
 ---
 # <a name="table-resource-type"></a>表资源类型
 

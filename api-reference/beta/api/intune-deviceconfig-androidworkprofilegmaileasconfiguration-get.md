@@ -2,12 +2,13 @@
 title: 获取 androidWorkProfileGmailEasConfiguration
 description: 读取属性和 androidWorkProfileGmailEasConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 74f2313ea6092732445c65543a1be2c145201111
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8785fd27a3c56a38cbbfa88295fc91f89e999f7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817996"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>获取 androidWorkProfileGmailEasConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

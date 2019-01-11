@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerActivityUserCounts'
 description: 获取已发布、已阅读和已赞 Yammer 消息的唯一用户数趋势。
-ms.openlocfilehash: bdac79d93f2506f4781948cef0eeb27d9f0a99c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfa74d53198bb65ac86be50f84bdb7cae1c8c26d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822041"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 

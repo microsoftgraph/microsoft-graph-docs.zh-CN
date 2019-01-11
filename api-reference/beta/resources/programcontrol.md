@@ -1,12 +1,13 @@
 ---
 title: programControl 资源类型
 description: 在 Azure AD 中访问审阅功能，程序 control 对象代表链接到程序访问审阅的一个控件。
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817820"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
