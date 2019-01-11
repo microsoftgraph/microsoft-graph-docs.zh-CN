@@ -2,49 +2,50 @@
 title: 获取对话
 description: 检索 conversation 对象的属性和关系。
 author: dkershaw10
-ms.openlocfilehash: 7f5beb49140c898a4afeb059402c06fdade5f7ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ff3447931c3818bb92f1d188557d22a5bc5a65e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874625"
 ---
-# <a name="get-conversation"></a><span data-ttu-id="d5f12-103">获取对话</span><span class="sxs-lookup"><span data-stu-id="d5f12-103">Get conversation</span></span>
+# <a name="get-conversation"></a><span data-ttu-id="37981-103">获取对话</span><span class="sxs-lookup"><span data-stu-id="37981-103">Get conversation</span></span>
 
-> <span data-ttu-id="d5f12-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="d5f12-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d5f12-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d5f12-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="37981-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="37981-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="37981-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="37981-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d5f12-106">检索 conversation 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="d5f12-106">Retrieve the properties and relationships of conversation object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d5f12-107">权限</span><span class="sxs-lookup"><span data-stu-id="d5f12-107">Permissions</span></span>
-<span data-ttu-id="d5f12-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d5f12-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="37981-106">检索 conversation 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="37981-106">Retrieve the properties and relationships of conversation object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="37981-107">权限</span><span class="sxs-lookup"><span data-stu-id="37981-107">Permissions</span></span>
+<span data-ttu-id="37981-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="37981-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d5f12-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d5f12-110">Permission type</span></span>      | <span data-ttu-id="d5f12-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d5f12-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="37981-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="37981-110">Permission type</span></span>      | <span data-ttu-id="37981-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="37981-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d5f12-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d5f12-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d5f12-113">Group.ReadWrite.All、Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5f12-113">Group.ReadWrite.All, Group.Read.All</span></span>    |
-|<span data-ttu-id="d5f12-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d5f12-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5f12-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d5f12-115">Not supported.</span></span>    |
-|<span data-ttu-id="d5f12-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d5f12-116">Application</span></span> | <span data-ttu-id="d5f12-117">Group.ReadWrite.All、Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5f12-117">Group.ReadWrite.All, Group.Read.All</span></span> |
+|<span data-ttu-id="37981-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="37981-112">Delegated (work or school account)</span></span> | <span data-ttu-id="37981-113">Group.ReadWrite.All、Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="37981-113">Group.ReadWrite.All, Group.Read.All</span></span>    |
+|<span data-ttu-id="37981-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="37981-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37981-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="37981-115">Not supported.</span></span>    |
+|<span data-ttu-id="37981-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="37981-116">Application</span></span> | <span data-ttu-id="37981-117">Group.ReadWrite.All、Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="37981-117">Group.ReadWrite.All, Group.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d5f12-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d5f12-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37981-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="37981-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/conversations/{id}
 
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d5f12-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d5f12-119">Optional query parameters</span></span>
-<span data-ttu-id="d5f12-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d5f12-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="d5f12-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="d5f12-121">Request headers</span></span>
-| <span data-ttu-id="d5f12-122">标头</span><span class="sxs-lookup"><span data-stu-id="d5f12-122">Header</span></span>       | <span data-ttu-id="d5f12-123">值</span><span class="sxs-lookup"><span data-stu-id="d5f12-123">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="37981-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="37981-119">Optional query parameters</span></span>
+<span data-ttu-id="37981-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="37981-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="37981-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="37981-121">Request headers</span></span>
+| <span data-ttu-id="37981-122">标头</span><span class="sxs-lookup"><span data-stu-id="37981-122">Header</span></span>       | <span data-ttu-id="37981-123">值</span><span class="sxs-lookup"><span data-stu-id="37981-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d5f12-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5f12-124">Authorization</span></span>  | <span data-ttu-id="d5f12-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d5f12-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="37981-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="37981-124">Authorization</span></span>  | <span data-ttu-id="37981-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="37981-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d5f12-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d5f12-127">Request body</span></span>
-<span data-ttu-id="d5f12-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d5f12-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="37981-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="37981-127">Request body</span></span>
+<span data-ttu-id="37981-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="37981-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d5f12-129">响应</span><span class="sxs-lookup"><span data-stu-id="d5f12-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="37981-129">响应</span><span class="sxs-lookup"><span data-stu-id="37981-129">Response</span></span>
 
-<span data-ttu-id="d5f12-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d5f12-130">If successful, this method returns a `200 OK` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d5f12-131">示例</span><span class="sxs-lookup"><span data-stu-id="d5f12-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d5f12-132">请求</span><span class="sxs-lookup"><span data-stu-id="d5f12-132">Request</span></span>
-<span data-ttu-id="d5f12-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d5f12-133">Here is an example of the request.</span></span>
+<span data-ttu-id="37981-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="37981-130">If successful, this method returns a `200 OK` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="37981-131">示例</span><span class="sxs-lookup"><span data-stu-id="37981-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="37981-132">请求</span><span class="sxs-lookup"><span data-stu-id="37981-132">Request</span></span>
+<span data-ttu-id="37981-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="37981-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_conversation"
@@ -52,8 +53,8 @@ GET /groups/{id}/conversations/{id}
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="d5f12-134">响应</span><span class="sxs-lookup"><span data-stu-id="d5f12-134">Response</span></span>
-<span data-ttu-id="d5f12-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d5f12-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="37981-134">响应</span><span class="sxs-lookup"><span data-stu-id="37981-134">Response</span></span>
+<span data-ttu-id="37981-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="37981-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
