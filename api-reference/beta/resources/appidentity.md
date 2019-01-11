@@ -1,19 +1,20 @@
 ---
 title: appIdentity 资源类型
 description: 指示执行操作或已更改的应用程序的标识。 包含应用程序 Id、 名称、 服务主体 ID 和名称。 由 directoryAudit API 调用此资源
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855781"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity 资源类型
 指示执行操作或已更改的应用程序的标识。 包含应用程序 Id、 名称、 服务主体 ID 和名称。 由[directoryAudit](../api/directoryaudit-get.md) API 调用此资源
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |appId|String|引用代表 Azure Active Directory 中的应用程序 Id 的唯一 guid。|
 |displayName|字符串|指 Azure 门户中显示的应用程序名称。|

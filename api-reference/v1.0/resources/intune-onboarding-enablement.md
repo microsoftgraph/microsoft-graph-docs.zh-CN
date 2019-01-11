@@ -2,12 +2,13 @@
 title: 启用枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 196372e0b28b4c189fc6d8629ea74ece0df7a6ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9110769de94bd7863692787269fe7bc680c50f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311723"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888107"
 ---
 # <a name="enablement-enum-type"></a>启用枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311723"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|尚未记录|
 |enabled|1|尚未记录|

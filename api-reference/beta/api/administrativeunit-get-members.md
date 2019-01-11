@@ -2,12 +2,13 @@
 title: 获取成员
 description: 使用此 API 获取一个管理单元中的特定成员 （用户或组）。
 author: lleonard-msft
-ms.openlocfilehash: 9e0e8bedc349511c59e304cacfc713d54a0f8335
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33bbb0a34ba44102c34573059da2efa8824286ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854864"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -31,7 +32,7 @@ ms.locfileid: "27328390"
 GET /administrativeUnits/{id}/members/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

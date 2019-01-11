@@ -1,12 +1,13 @@
 ---
 title: sectionLinks 资源类型
 description: 用于打开 OneNote 分区的链接。
-ms.openlocfilehash: 26dbffd6f3bde9c05efabc737852c3619cc1e275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 190842708979d62430a4716a8785fd40309cb189
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858938"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 

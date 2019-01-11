@@ -1,12 +1,13 @@
 ---
 title: chatMessage 资源类型
 description: 代表单个聊天消息中的通道或聊天实体。 消息能为根邮件或由**replyToId**属性在消息中定义的线程的一部分。
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855990"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 

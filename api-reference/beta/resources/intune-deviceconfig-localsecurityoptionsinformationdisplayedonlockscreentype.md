@@ -2,12 +2,13 @@
 title: localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 description: LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
 author: tfitzmac
-ms.openlocfilehash: 1cb998c5765a81d6f40d17e49193eb143fc94f6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69923676a283e83778012222abb3255f7c58e41d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864538"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27313634"
 
 LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |管理员|1|用户显示名称、 域和用户名|

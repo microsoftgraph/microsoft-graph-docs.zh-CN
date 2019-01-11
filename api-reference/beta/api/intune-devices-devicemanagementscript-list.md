@@ -2,12 +2,13 @@
 title: 列表 deviceManagementScripts
 description: 列出属性和 deviceManagementScript 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 4c3f9163445fce348fe3e2a9b2635a0c44cab864
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c98ed25e43a0bb7990f900de816ee54a44c3da7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863635"
 ---
 # <a name="list-devicemanagementscripts"></a>列表 deviceManagementScripts
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

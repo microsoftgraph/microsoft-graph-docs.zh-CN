@@ -1,12 +1,13 @@
 ---
 title: bookingAppointment 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: d7ae5aa0a8a228bc4453742147ca9c858e093a8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856110"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
@@ -24,10 +25,10 @@ ms.locfileid: "27041868"
 |[获取 bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |读取的属性和**bookingAppointment**对象的关系。|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |更新**bookingAppointment**对象。 |
 |[删除](../api/bookingappointment-delete.md) | 无 |删除**bookingAppointment**对象。 |
-|[取消](../api/bookingappointment-cancel.md)|无| 取消**bookingAppointment**对象。|
+|[Cancel](../api/bookingappointment-cancel.md)|无| 取消**bookingAppointment**对象。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |customerEmailAddress|字符串|预订约会[bookingCustomer](bookingcustomer.md) SMTP 地址。|
 |customerId|字符串|该约会的[bookingCustomer](bookingcustomer.md)的 ID。 如果未指定 ID 创建约会时，将创建一个新的**bookingCustomer**对象。 设置后，您应考虑**customerId**变。|
@@ -37,8 +38,8 @@ ms.locfileid: "27041868"
 |customerPhone|字符串|客户的电话号码。|
 |duration|Duration|约会中[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式的长度。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|日期、 时间和约会的结束的时区。|
-|id|字符串| **BookingAppointment**的 ID。 只读。|
-|invoiceAmount|双精度数|记帐的发票量。|
+|id|字符串| **BookingAppointment**的 ID。 此为只读属性。|
+|invoiceAmount|Double|记帐的发票量。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|日期、 时间和此约会的发票的时区。|
 |invoiceId|字符串|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
@@ -46,7 +47,7 @@ ms.locfileid: "27041868"
 |optOutOfCustomerEmail|布尔|True 表示该约会的[bookingCustomer](bookingcustomer.md)不希望接收该约会的确认。|
 |后|Duration|保留后的清理，例如约会结束的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。 |
 |缓冲区|Duration|保留之前的准备，例如约会开始的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。|
-|价格|双精度数|指定[bookingService](bookingservice.md)约会正则价格。|
+|价格|Double|指定[bookingService](bookingservice.md)约会正则价格。|
 |priceType|string| 为服务定价结构提供灵活性设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |提醒|[bookingReminder](bookingreminder.md)集合|客户提醒发送该约会的集合。 此属性的值时，可仅读取此**bookingAppointment**由其 id。|
 |selfServiceAppointmentId|字符串|约会，如果约会的已创建直接通过计划页上的客户而不是由员工成员客户替的其他跟踪 ID。|

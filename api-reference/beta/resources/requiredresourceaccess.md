@@ -1,12 +1,13 @@
 ---
 title: requiredResourceAccess 资源类型
 description: 指定一组的 OAuth 2.0 权限范围和指定的资源的应用程序需要访问下的应用程序角色。 指定的 OAuth 2.0 权限范围可能请求 （通过**requiredResourceAccess**集合） 的客户端应用程序时调用资源应用程序。 应用程序实体的**requiredResourceAccess**属性是**ReqiredResourceAccess**的集合。
-ms.openlocfilehash: 937557f2f078ade1b336cfd00cd128d428d59cbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 473126365a7f0b3ba3ab0371322ff90bd36318e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856166"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>requiredResourceAccess 资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27047521"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |resourceAccess|[ResourceAccess](resourceaccess.md)集合|OAuth2.0 权限范围和应用程序需要从指定的资源的应用程序角色的列表。|
 |resourceAppId|字符串|应用程序需要访问资源的唯一标识符。  这应该是等于**appId**上的目标资源应用程序声明。|

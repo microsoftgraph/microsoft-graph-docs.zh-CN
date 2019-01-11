@@ -2,12 +2,13 @@
 title: participantMixerLevel 资源类型
 description: 级别，以便进行音频参与者给定的混音器配置
 author: VinodRavichandran
-ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874135"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380140"
 
 ## <a name="properties"></a>属性
 
-| 属性               | 类型                                                      | 说明                                                                                         |
+| 属性               | 类型                                                      | Description                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | 放掉                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 放掉的此 partipant 其他源的 （逐步中和输出） 自定义组合的配置。       |
 | exclusiveMode          | boolean                                                   | 是否应从组合中删除源而无需显式源级别。                       |

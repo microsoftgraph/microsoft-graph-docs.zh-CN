@@ -2,12 +2,13 @@
 title: 获取对通道消息的回复
 description: 获取对一条消息的单个回复中的工作组的通道。
 author: nkramer
-ms.openlocfilehash: 190bcd04adb07ccdeed83095e6a29b0bc1d23241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f88345e5d3681b481e4d2fdd15c9201a3dd77c66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866001"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对通道消息的回复
 

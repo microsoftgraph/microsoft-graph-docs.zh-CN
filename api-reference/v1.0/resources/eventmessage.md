@@ -1,12 +1,13 @@
 ---
 title: eventMessage 资源类型
 description: 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
-ms.openlocfilehash: c93f642d80fec8514af6a80afd8c47cd82569cd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83a7c0fa48f48536b468afe5f5e4f22031be50e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862746"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 

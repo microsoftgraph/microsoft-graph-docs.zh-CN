@@ -2,12 +2,13 @@
 title: 获取 androidForWorkEnterpriseWiFiConfiguration
 description: 读取属性和 androidForWorkEnterpriseWiFiConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 68862f02843a50e3673d0fbbb3d293664c1c3d7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 298ba87abbf6e88557bac5feed6b54c8846009a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863741"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>获取 androidForWorkEnterpriseWiFiConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

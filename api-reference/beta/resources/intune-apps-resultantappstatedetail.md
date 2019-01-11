@@ -2,12 +2,13 @@
 title: resultantAppStateDetail 枚举类型
 description: 枚举指示其他详细信息有关为什么应用程序具有特定安装状态。
 author: tfitzmac
-ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c5eb8c921be7c14a45c979a57ffcaa0704d9b4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874142"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27352526"
 
 枚举指示其他详细信息有关为什么应用程序具有特定安装状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |noAdditionalDetails|0|可用不的任何其他的详细信息。|
 |seeInstallErrorCode|2000|应用程序安装失败。 请参阅错误代码的详细信息的属性。|

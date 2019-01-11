@@ -1,12 +1,13 @@
 ---
 title: synchronizationRule 资源类型
 description: 定义同步引擎，包括要同步的对象和方向，应如何执行同步如何从源目录对象应匹配目标目录中的对象以及如何属性应转换他们正在同步时从源到目标目录。
-ms.openlocfilehash: c860228637a6cc3ad9137851408379bd7f779c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856151"
 ---
 # <a name="synchronizationrule-resource-type"></a>synchronizationRule 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27043410"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |可编辑       |布尔    |`true`如果可以自定义同步规则;，`false`如果此规则是只读的并且不应被更改。|
 |id             |字符串     |同步规则标识符。 必须是同步引擎识别的标识符。 支持标识符可以找到 API 返回的同步模板中的规则。|

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveRecipient
-ms.openlocfilehash: c658b45ad2e99fc447459e80bfca12c29029f5b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1bc78a8ec0648ce90221e4ad1f4473e49b625b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863726"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 

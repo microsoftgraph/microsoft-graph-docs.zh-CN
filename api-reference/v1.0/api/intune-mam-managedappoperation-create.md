@@ -2,12 +2,13 @@
 title: 创建 managedAppOperation
 description: 创建新的 managedAppOperation 对象。
 author: tfitzmac
-ms.openlocfilehash: 6d1aa54df40829d461ed62f9cbe30f8a00b1e305
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4afd179a33202eb7780495228f94f23326c7268
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347108"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855207"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

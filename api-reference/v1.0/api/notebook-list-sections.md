@@ -2,12 +2,13 @@
 title: 列出分区
 description: 从指定的笔记本中检索 onenoteSection 对象的列表。
 author: Jewan-microsoft
-ms.openlocfilehash: 06072dc31a18c6573dffef67d905da04afec1aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ddc884c99ed72608de0f23200ab7fb91e8e3501
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855802"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

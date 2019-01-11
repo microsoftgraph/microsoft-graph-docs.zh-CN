@@ -2,12 +2,13 @@
 title: importedDeviceIdentityType 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 46c4e7d8ce2c06a4e806329753920892c0cc46ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ead5ad597752b018dcf9d484e79c2fa08b937847
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863369"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328649"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|ImportedDeviceIdentityType 未知的值。|
 |imei|1|设备 Identity 是类型 imei。|

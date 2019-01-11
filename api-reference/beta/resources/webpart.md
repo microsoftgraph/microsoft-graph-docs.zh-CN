@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
 title: WebPart
-ms.openlocfilehash: e9bb612e20bc3d2416503f571f5abf364215efb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f7293b986b5e6d77d0601cffb6b60edc5dfd2dd7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856026"
 ---
 # <a name="webpart-resource"></a>web 部件资源
 
@@ -37,7 +38,7 @@ ms.locfileid: "27044474"
 
 | 属性                | 类型             | 说明
 |:------------------------|:-----------------|:----------------------------------
-| **类型**                | 字符串           | 指定 web 部件类型的唯一标识符。 只读。
+| **类型**                | 字符串           | 指定 web 部件类型的唯一标识符。 此为只读属性。
 | **data**                | [sitePageData][] | 所需的 web 部件 （随 web 部件） 属性
 
 [sitePageData]: sitepagedata.md

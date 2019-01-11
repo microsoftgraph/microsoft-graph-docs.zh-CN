@@ -2,12 +2,13 @@
 title: cleanWindowsDevice 操作
 description: 清理 Windows 设备
 author: tfitzmac
-ms.openlocfilehash: 9d19b71f200381c10b7501eadf9007162ff9fff3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c6d2eeff97e840cc4f9bb45492af168e2c95c37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856376"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +49,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|keepUserData|Boolean|尚未记录|
+|keepUserData|布尔|尚未记录|
 
 
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 缩略图
-ms.openlocfilehash: 8e56612185028891cf380d3240c999af78ff4740
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 22602d534c3fd1f308a5e2bb67992bd76086c4fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863222"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: 列表 servicePrincipal memberOf
 description: 获取主体此服务是直接成员的组和目录角色。 此操作是不可传递的。
-ms.openlocfilehash: 54376d80fdb3cc5084ac19aa331b94d40ac3103f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34f80b2741ac6fe9ac6f5b77fe84ae518bcb34c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863404"
 ---
 # <a name="list-serviceprincipal-memberof"></a>列表 servicePrincipal memberOf
 

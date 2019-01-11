@@ -2,12 +2,13 @@
 title: 列出日历
 description: 检索属于日历组的日历列表。
 author: angelgolfer-ms
-ms.openlocfilehash: e150d25976cda8cde52a70669fb38333f2a95fd2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55af5ab454b6afe534a1a8d2efa76de7a0e7f9d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862984"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -47,7 +48,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="request-headers"></a>请求标头
 
-| Name          | 类型   | 说明               |
+| 名称          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {token}。必需。 |
 

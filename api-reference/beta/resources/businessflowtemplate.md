@@ -1,12 +1,13 @@
 ---
 title: businessFlowTemplate 资源类型
 description: 在 Azure AD 中访问审阅功能，`businesFlowTemplate`代表 Azure AD 业务流程模板。 创建访问检查时，将呼叫者提供模板，如查看来宾组的成员的标识符。
-ms.openlocfilehash: 8faf1a1381f5cdcf4bfaab78adc7a6554479b427
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cad361d6c2d2aba70b2623ddf272e1eba42fd93b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889024"
 ---
 # <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27048210"
 |[列表 businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md)集合| 获取业务流程模板相应访问 reviews （英文）。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 业务流程模板的功能指派的标识符                                      |
 | `displayName`            |`String`                | 业务流程模板的名称                                                             |

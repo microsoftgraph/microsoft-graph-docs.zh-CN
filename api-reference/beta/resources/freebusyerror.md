@@ -1,12 +1,13 @@
 ---
 title: freeBusyError 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: d1bf6671d6c506d9959fcd5abc8843c1a08c924b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63cfc4b14ba6176d582155df57b7f7f787e63cf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889766"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27047538"
 表示从尝试获取用户、 通讯组列表或资源的可用性的错误信息。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |message |字符串 |描述的错误。 |
 |responseCode |字符串 |从查询的用户、 通讯组列表或资源可用性响应代码。 |

@@ -2,12 +2,13 @@
 title: 趋势资源类型
 description: 将用户连接到的文档的用户 （与用户相关) 周围趋势丰富的关系。 OneDrive 文件和文件存储在 SharePoint 工作组网站可以趋势周围用户。
 author: simonhult
-ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc0154d3985e5f6e1e4770bb7d10bc727a0eb0ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347997"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862382"
 ---
 # <a name="trending-resource-type"></a>趋势资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "27347997"
 | 属性      | 类型                              | 说明  |
 | ------------- |---------------                    | -------------|
 | id                    | 字符串                    | 关系的唯一标识符。 只读。        |
-| weight                | 双精度数                    | 值，该值指示当前趋势多少文档。 较大的号码，更多文档当前趋势周围用户 （更多相关)。 按此值，返回的文档进行排序。  |
+| weight                | Double                    | 值，该值指示当前趋势多少文档。 较大的号码，更多文档当前趋势周围用户 （更多相关)。 按此值，返回的文档进行排序。  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | 您可以使用可视化中您的体验的文档的属性。 |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | 趋势文档，如 url 和的文档类型的引用属性。 |
 

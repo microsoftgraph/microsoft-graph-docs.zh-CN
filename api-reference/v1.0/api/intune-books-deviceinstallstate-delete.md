@@ -2,12 +2,13 @@
 title: 删除 deviceInstallState
 description: 删除 deviceInstallState。
 author: tfitzmac
-ms.openlocfilehash: 75088da181233ad764250fe9bfb6a4bd54bf0cc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 461b4481dbfdfebff2ebcf2718707330ee4d5f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856019"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
 
@@ -37,7 +38,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

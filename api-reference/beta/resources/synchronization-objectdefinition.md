@@ -1,12 +1,13 @@
 ---
 title: objectDefinition 资源类型
 description: 描述对象和其属性。 对象定义属于 directoryDefinition，更新 synchronizationSchema 的一部分。
-ms.openlocfilehash: c4c2d54eb33f5140464e3e8aa479aa6baec72df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866078"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27048930"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md)集合    | 定义对象的属性。 |
 |元数据       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到，不应更改元数据值。|

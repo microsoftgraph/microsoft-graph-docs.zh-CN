@@ -1,12 +1,13 @@
 ---
 title: localeInfo 资源类型
 description: 有关已登录用户的区域设置信息，包括首选语言和国家/地区。
-ms.openlocfilehash: f61f1af1d4ad49b1083403576ac4069d97d694cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c89a133ba31965b99099555ad18f185495fe4c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862585"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo 资源类型
 

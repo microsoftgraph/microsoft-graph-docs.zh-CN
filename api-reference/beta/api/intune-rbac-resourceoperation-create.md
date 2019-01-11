@@ -2,12 +2,13 @@
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: tfitzmac
-ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862599"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -38,7 +39,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +54,7 @@ POST /deviceManagement/resourceOperations
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
+|enabledForScopeValidation|布尔|确定是否定义每个角色分配的作用域验证权限。|
 
 
 

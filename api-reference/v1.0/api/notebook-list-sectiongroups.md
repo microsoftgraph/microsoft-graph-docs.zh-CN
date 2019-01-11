@@ -2,12 +2,13 @@
 title: 列出 sectionGroups
 description: 从指定笔记本中检索分区组列表。
 author: Jewan-microsoft
-ms.openlocfilehash: ad0a8d82fc5fff7bfe8a6b9895e7d94f9a4bc9e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91ea3188b32657ad83963f12214e9987aa785d0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869137"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
@@ -37,7 +38,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区组的有效 `expand` 值为 `sections`、`sectionGroups`、`parentNotebook` 和 `parentSectionGroup`。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

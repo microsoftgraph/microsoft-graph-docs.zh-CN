@@ -2,12 +2,13 @@
 title: androidForWorkApp 资源类型
 description: 包含属性和继承的属性的 Android 工作 (AFW) 应用程序。
 author: tfitzmac
-ms.openlocfilehash: 1e754d6f893d536fbc52e492c87e163766afaffb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62dded43d1ea622bd27a122d6535d71fae0cd6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861437"
 ---
 # <a name="androidforworkapp-resource-type"></a>androidForWorkApp 资源类型
 

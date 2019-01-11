@@ -1,12 +1,13 @@
 ---
 title: 枚举网站
 description: 列出组织中的匹配提供的筛选器条件和查询选项可用 [站点] []。
-ms.openlocfilehash: 4e7d9d12f7b18df84a8b23cc3272084b310edb3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855816"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046159"
 
 当前支持仅以下查询选项：
 
-| 筛选语句             | Select 语句        | 说明
+| 筛选语句             | Select 语句        | Description
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 用于发现每个地理位置的主网站。
 

@@ -2,12 +2,13 @@
 title: 创建 ChartSeries
 description: 使用此 API 创建新 ChartSeries。
 author: lumine2008
-ms.openlocfilehash: abf5f6a62d80592c3268996fb7d040c31172ae32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a86ccc050d9cde4cc8f7fc37222b3401bbb0d768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859806"
 ---
 # <a name="create-chartseries"></a>创建 ChartSeries
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

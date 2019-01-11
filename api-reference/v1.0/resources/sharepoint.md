@@ -1,12 +1,13 @@
 ---
 title: 使用 Microsoft Graph 中的 SharePoint 网站
 description: Microsoft Graph 中的 SharePoint API 支持以下核心情形：
-ms.openlocfilehash: d86872ac714ad4675232cd76508310f3f265e4f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 0beb3e5d7b56e072632c093613fee5534ec0e54b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860954"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 

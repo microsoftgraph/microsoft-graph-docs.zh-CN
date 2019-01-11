@@ -2,12 +2,13 @@
 title: windows10VpnConnectionType 枚举类型
 description: VPN 连接类型。
 author: tfitzmac
-ms.openlocfilehash: 0452eff174cf12fdd7508e5000ed3fcbd9a01eeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4076ddcfbb0f391b2ade47dbea1e10113f0f6110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855347"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346429"
 
 VPN 连接类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |pulseSecure|0|脉冲安全。|
 |f5EdgeClient|1|F5 边缘客户端。|

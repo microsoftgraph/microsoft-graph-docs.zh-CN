@@ -2,12 +2,13 @@
 title: welcomeScreenMeetingInformation 枚举类型
 description: 欢迎屏幕上的会议信息的可能值。
 author: tfitzmac
-ms.openlocfilehash: f69f8d7497f5498f1d4a090b18c90a8a6edabeab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28ec39638c3048a6fda0c5a0cdeca3cd848ad578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861276"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315321"
 
 欢迎屏幕上的会议信息的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |showOrganizerAndTimeOnly|1|显示组织者和仅时间。|

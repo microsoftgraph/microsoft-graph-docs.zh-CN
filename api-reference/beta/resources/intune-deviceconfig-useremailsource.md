@@ -2,12 +2,13 @@
 title: userEmailSource 枚举类型
 description: Username 源或电子邮件源的可能值。
 author: tfitzmac
-ms.openlocfilehash: 3be75acdb6d5de5310cbd0ad8a562961a476df45
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d642992b233d6a249971b4e36099a4ff5ceb730
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861612"
 ---
 # <a name="useremailsource-enum-type"></a>userEmailSource 枚举类型
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-ms.openlocfilehash: 1ad021e724c807bf15e777b5438c22b5a532a4aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54fd97d30293f948de2ee3c9e194abfe6807797a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883675"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 

@@ -1,12 +1,13 @@
 ---
 title: 活动资源类型
 description: 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
-ms.openlocfilehash: 7a625afbc806c379c6823247629cde1532fa323f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 79ed44ef0f6a38fbef8ead233debce3fc9e66b42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877068"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -29,26 +30,26 @@ ms.locfileid: "27008556"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | 说明|
+|名称 | 类型 | Description|
 |:----|:-----|:-----------|
 |userTimezone | 字符串 | 可选。 在其中用于生成活动的用户的设备已位于在活动创建时; timezone为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。 |
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。 |
 |id | 字符串 | 使用的 URL 地址的服务器生成的 ID。|
-|appActivityId | 字符串 | 必需项。 应用程序-此后提供呼叫者和不可变的上下文中唯一的活动 ID。|
-|activitySourceHost | 字符串 | 必需项。 表示应用程序的跨平台标识映射的域的 URL。 映射是存储也为 JSON 文件域上托管或通过 Windows 开发人员中心可配置。 JSON 文件命名为跨平台应用程序标识符和承载在您的 HTTPS 域，在顶级域根目录或包括 sub 域。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 您必须具有唯一文件和域 （或 sub 域），每个跨平台应用程序标识。 例如，Word 与 PowerPoint 的需要单独的文件和域。|
+|appActivityId | 字符串 | 必需。 应用程序-此后提供呼叫者和不可变的上下文中唯一的活动 ID。|
+|activitySourceHost | 字符串 | 必需。 表示应用程序的跨平台标识映射的域的 URL。 映射是存储也为 JSON 文件域上托管或通过 Windows 开发人员中心可配置。 JSON 文件命名为跨平台应用程序标识符和承载在您的 HTTPS 域，在顶级域根目录或包括 sub 域。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 您必须具有唯一文件和域 （或 sub 域），每个跨平台应用程序标识。 例如，Word 与 PowerPoint 的需要单独的文件和域。|
 |appDisplayName | 字符串 | 可选。 用于生成使用活动情况下，用户的本地设备上未安装应用程序时应用程序的简短的文本说明。|
-|activationUrl | 字符串 | 必需项。 用于启动最佳本机体验由 appId 中的活动 URL。 如果没有的本机应用程序存在，则可能会启动一个基于 web 的应用程序。|
+|activationUrl | 字符串 | 必需。 用于启动最佳本机体验由 appId 中的活动 URL。 如果没有的本机应用程序存在，则可能会启动一个基于 web 的应用程序。|
 |fallbackUrl | 字符串 | 可选。 用于启动基于 web 的应用程序中的活动如果可用的 URL。|
 |contentUrl | 字符串 | 可选。 使用在事件的内容可以呈现之外的本机或基于 web 的应用程序体验 （例如，RSS 源中的项目的指针）。|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含信息呈现体验中的活动的对象|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必填。 包含信息呈现体验中的活动的对象|
 |contentInfo | 类型化的 JSON 对象 | 可选。 一个自定义的数据的 JSON LD 根据[schema.org](https://schema.org)语法的内容的可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 对象过期的服务器上时的日期和时间。|
-|状态 | 状态 | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
+|status | status | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
 
 ## <a name="relationships"></a>Relationships
 
-|关系 | 类型 | 说明|
+|关系 | 类型 | Description|
 |:------------|:-----|:-----------|
 |historyItems| [activityHistoryItem](../resources/projectrome-historyitem.md)集合 | 可选。 NavigationProperty/包容;导航到活动的 historyItems 属性。|
 

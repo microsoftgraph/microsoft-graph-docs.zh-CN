@@ -2,12 +2,13 @@
 title: teamsTabConfiguration 资源类型 （打开类型）
 description: 确定内容的选项卡的设置。
 author: nkramer
-ms.openlocfilehash: 9abb4e9089da760825b29c4001b68881ab74d815
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3fa51069b02ca72512c072f4952c5468c5dcb649
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874464"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration 资源类型 （打开类型）
 
@@ -21,7 +22,7 @@ ms.locfileid: "27301181"
 |属性|类型|说明|
 |-|-|-|
 |  entityId   |   string |  选项卡上的服务提供商托管实体的标识符。     |
-|  contentUrl |   string |  用于呈现团队中的选项卡内容的 Url。 必需。    |
+|  contentUrl |   string |  用于呈现团队中的选项卡内容的 Url。 必填。    |
 |  removeUrl  |   string |  使用团队客户端中移除一个选项卡时调用团队客户端的 Url。     |
 |  websiteUrl |   string |  显示选项卡团队之外的内容的 Url。     |
 

@@ -2,12 +2,13 @@
 title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
 author: tfitzmac
-ms.openlocfilehash: b147c4b069182bd7477eb849170c013955e2cb7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71267b37630861844e232270c3fb361cc2b2b396
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875899"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 

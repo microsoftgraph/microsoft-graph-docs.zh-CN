@@ -2,12 +2,13 @@
 title: teamsAsyncOperation 资源类型
 description: 'Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作。 '
 author: nkramer
-ms.openlocfilehash: fd64f99c20505a8e670c865faa039e9db3174ed6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 607730ff48213b45177560046dc6f38afe1bcc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873617"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 

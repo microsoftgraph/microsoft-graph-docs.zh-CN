@@ -2,12 +2,13 @@
 title: vpnServer 资源类型
 description: VPN 服务器定义。
 author: tfitzmac
-ms.openlocfilehash: a8f0e6bd38f243d0066da231ef07d1723961987b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b48daa95cc2227f6d1691902a75614446c93a10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889871"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer 资源类型
 
@@ -21,7 +22,7 @@ VPN 服务器定义。
 |:---|:---|:---|
 |说明|String|说明。|
 |address|String|地址 （IP 地址、 FQDN 或 URL）|
-|isDefaultServer|Boolean|默认服务器。|
+|isDefaultServer|布尔|默认服务器。|
 
 ## <a name="relationships"></a>Relationships
 无

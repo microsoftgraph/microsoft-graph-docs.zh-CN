@@ -1,12 +1,13 @@
 ---
 title: imageInfo 资源类型
 description: 代表活动对象的 visualInfo 部件中的**属性**属性的复杂类型。
-ms.openlocfilehash: 051338230850da7e754c5e8ad4f7d9c52fe17b32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2bac97ff945c0e0975ffa19636a954308b895e88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856460"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27010558"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | 说明|
+|名称 | 类型 | Description|
 |:----|:-----|:-----------|
 |iconUrl | 字符串 | 可选;指向一个表示用于生成活动的应用程序图标的 URI|
 |alternateText | 字符串 | 可选;可选文字辅助内容的图像|

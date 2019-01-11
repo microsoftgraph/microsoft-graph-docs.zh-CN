@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FolderView
-ms.openlocfilehash: 1658751371f3a3ae186d5a092ae5610f016d26b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 717dd93d82f109926cabf0168e4e176d7c68cd35
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861535"
 ---
 # <a name="folderview-resource-type"></a>FolderView 资源类型
 

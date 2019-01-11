@@ -2,12 +2,13 @@
 title: wiFiAuthenticationMethod 枚举类型
 description: Wi-fi 身份验证方法。
 author: tfitzmac
-ms.openlocfilehash: f0e7dc7e5ef19d79035bec59d9f7a1824881923e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15abeae8d3029e823439020857e045ef13f1b7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878832"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27336895"
 
 Wi-fi 身份验证方法。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |certificate|0|标识证书用于身份验证。|
 |usernameAndPassword|1|用于身份验证的用户名和密码。|

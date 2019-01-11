@@ -2,12 +2,13 @@
 title: educationSubmissionIndividualRecipient 资源类型
 description: 'EducationSubmissionRecipient 指示提交分配给单个类中的一个子类。  '
 author: dipakboyed
-ms.openlocfilehash: 3447c91fe4f387508a3afdf80a7337786d46f860
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 109919afbbc9fced24b46dede09c3a92df4f8c17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866792"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27318800"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |userId|String|向其分配提交的用户的用户 ID。|
 

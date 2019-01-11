@@ -2,12 +2,13 @@
 title: androidPermissionAction 资源类型
 description: 请求的权限时，应采取 Android 应用程序权限和 Android 的操作之间的映射。
 author: tfitzmac
-ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860534"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27331134"
 
 请求的权限时，应采取 Android 应用程序权限和 Android 的操作之间的映射。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |权限|字符串|正式 Android 文档中定义的 android 权限字符串。  示例 android.permission.READ_CONTACTS。|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android 权限操作的类型。 可取值为：`prompt`、`autoGrant`、`autoDeny`。|

@@ -2,12 +2,13 @@
 title: 删除 windowsOfficeClientConfiguration
 description: 删除特定的非安全策略。
 author: tfitzmac
-ms.openlocfilehash: ca6b26d423219e18c6886445875cc4abe85adc9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f24d9a8a39cffcbb6a9aeec614ba2a02d2c3d7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859843"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>删除 windowsOfficeClientConfiguration
 
@@ -38,7 +39,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

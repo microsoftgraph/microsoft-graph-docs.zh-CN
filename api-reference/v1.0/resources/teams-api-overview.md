@@ -1,12 +1,13 @@
 ---
 title: 将 Microsoft Graph API 与 Microsoft Teams 结合使用
 description: Microsoft 团队是基于聊天提供内置访问特定于团队的日历、 文件、 OneNote 笔记、 计划程序计划和更多的 Office 365 中工作区。
-ms.openlocfilehash: b42c33a34e0191eae236f675f29762834dfc29da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 196b7e3726609fe64f1621c0c1030dc6bfdd83be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866610"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -78,5 +79,5 @@ API 级别团队和组之间的差异如下：
 
 ## <a name="see-also"></a>另请参阅
 
-- [Microsoft 团队 API 概述](/graph/teams-concept-overview)
+- [Microsoft Teams API 概述](/graph/teams-concept-overview)
 - 示例代码： [Contoso 航空公司](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、 [C# 浮动示例](https://github.com/microsoftgraph/csharp-teams-sample-graph)

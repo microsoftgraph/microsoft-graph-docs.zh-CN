@@ -2,12 +2,13 @@
 title: educationTeacher 资源类型
 description: 添加到 educationUser 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。
 author: mmast-msft
-ms.openlocfilehash: ca174381fe8722c5b96848ced1d0e09b469068f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eece9080c34855d4546321b7605b47f4b2f231a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875962"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher 资源类型
 

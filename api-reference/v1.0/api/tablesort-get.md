@@ -2,12 +2,13 @@
 title: Get TableSort
 description: 检索 tablesort 对象的属性和关系。
 author: lumine2008
-ms.openlocfilehash: 41017260bd1b04798d2e62cce8a7fc7dac287f25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01cb4f6eaca0463d2fdc96c3dcefffdb9d6a0842
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861423"
 ---
 # <a name="get-tablesort"></a>Get TableSort
 
@@ -31,7 +32,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

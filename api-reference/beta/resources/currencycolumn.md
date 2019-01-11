@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CurrencyColumn
-ms.openlocfilehash: 21c95026eb61eb68c98010d8ac288be115e95ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 179c0bb1e5c82d7f2af17dcbcae08be8726f2ecd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888933"
 ---
 # <a name="currencycolumn-resource-type"></a>CurrencyColumn 资源类型
 

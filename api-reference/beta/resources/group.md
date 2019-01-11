@@ -1,12 +1,13 @@
 ---
 title: 组资源类型
 description: 代表 Azure Active Directory (Azure AD) 组，这可以是 Office 365 组、 团队中的 Microsoft 团队、 动态组或安全组。
-ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
-ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
+localization_priority: Priority
+ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "27265232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866890"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -97,17 +98,17 @@ ms.locfileid: "27265232"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给组的许可证。 只读。|
+|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给组的许可证。 此为只读属性。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
-|Classification|String|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。|
+|Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |说明|String|可选的组说明。|
 |displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection| 指定要创建组的类型。 可能的值为`Unified`创建 Office 365 组，或`DynamicMembership`动态组。  所有其他组类型，如启用安全的组和已启用电子邮件的安全组，未设置此属性。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
-|licenseProcessingState|字符串|指示的组许可证分配给组的所有成员的状态。 只读。 可能的值： `QueuedForProcessing`， `ProcessingInProgress`，和`ProcessingComplete`。|
+|isSubscribedByMail|布尔|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
+|licenseProcessingState|字符串|指示的组许可证分配给组的所有成员的状态。 此为只读属性。 可能的值： `QueuedForProcessing`， `ProcessingInProgress`，和`ProcessingComplete`。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。创建组时必须指定此属性。支持 $filter。|
@@ -119,7 +120,7 @@ ms.locfileid: "27265232"
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。 支持 $filter。|
 |preferredDataLocation|字符串|首选的数据组的位置。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |preferredLanguage|字符串|Office 365 组首选的语言。 应按照操作 ISO 639 1 代码;如"EN-US"。|
-|proxyAddresses|String collection| 例如： `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` **any**运算符，则需要为多值属性的筛选器表达式。 只读。 不可为 null。 支持 $filter。 |
+|proxyAddresses|String collection| 例如： `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` **any**运算符，则需要为多值属性的筛选器表达式。 此为只读属性。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则该组是已启用邮件的安全组；否则为安全组。对于 Office 365 组，必须为 **false**。支持 $filter。|
 |主题|字符串|指定 Office 365 组的颜色主题。 可能的值为`Teal`， `Purple`， `Green`， `Blue`， `Pink`，`Orange`或`Red`。|
@@ -132,7 +133,7 @@ ms.locfileid: "27265232"
 
 下面是每个**可见性**属性值的含义：
  
-|值|说明|
+|值|Description|
 |:----|-----------|
 | `public` | 任何人都可以加入的组，而无需所有者权限。<br>任何人都可以查看组的内容。|
 | `private` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。|
@@ -146,15 +147,15 @@ ms.locfileid: "27265232"
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
-|驱动器|[驱动器](drive.md)|组的默认驱动器。 只读。|
-|驱动器|[驱动器](drive.md) 集合|组的驱动器。 只读。|
+|驱动器|[驱动器](drive.md)|组的默认驱动器。 此为只读属性。|
+|驱动器|[驱动器](drive.md) 集合|组的驱动器。 此为只读属性。|
 |终结点|[终结点](endpoint.md)集合| 组的终结点。 只读。 可为 Null。|
 |events|[事件](event.md) 集合|组的事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|对此组的生命周期策略的集合。 只读。 可为 Null。|
 |memberOf|[directoryObject](directoryobject.md) 集合|组和管理单位属于此组的成员。 HTTP 方法： 获取 （支持的所有组）。 只读。 可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 用户、 联系人和组属于此组的成员。 HTTP 方法： 获取 （受支持的所有组），开机自检 （支持安全组和已启用邮件的安全组），删除 （只支持针对安全组） 只读的。 可为 Null。|
-|membersWithLicenseErrors|[用户](user.md)集合|与此组基于许可证分配许可证错误的组成员的列表。 只读。|
+|membersWithLicenseErrors|[用户](user.md)集合|与此组基于许可证分配许可证错误的组成员的列表。 此为只读属性。|
 |onenote|[OneNote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组的非管理员用户有权修改此对象。 HTTP 方法： 获取 （受支持的所有组），开机自检 （支持安全组和已启用邮件的安全组），删除 （只支持针对安全组） 只读的。 可为 Null。|
 |photo|[profilePhoto](profilephoto.md)| 组的配置文件照片。 |

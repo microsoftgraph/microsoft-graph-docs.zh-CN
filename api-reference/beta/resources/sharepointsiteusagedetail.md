@@ -1,12 +1,13 @@
 ---
 title: sharePointSiteUsageDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 2845980755ef7a1213bffbf4e5a5d2f87046d57d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b555132b2cd70d3a01e0c80fe95f0b14417c61fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861101"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>sharePointSiteUsageDetail 资源类型
 

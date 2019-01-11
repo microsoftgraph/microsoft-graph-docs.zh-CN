@@ -2,12 +2,13 @@
 title: 则 applicationType 枚举类型
 description: 可能的应用程序类型
 author: tfitzmac
-ms.openlocfilehash: 0485e6642ed4b4df68442f7a2dd840c047d6308f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed3c54798b7f65b5d580db0dde5812afec727892
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862543"
 ---
 # <a name="applicationtype-enum-type"></a>则 applicationType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27303365"
 
 可能的应用程序类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |通用|1|Windows 通用应用程序|
 |桌面|2|Windows 桌面应用程序|

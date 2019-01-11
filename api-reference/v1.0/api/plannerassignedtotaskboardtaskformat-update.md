@@ -1,12 +1,13 @@
 ---
 title: 更新 plannerAssignedToTaskBoardTaskFormat
 description: 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
-ms.openlocfilehash: c6577d6ee019bfbf0c1ff353bfd0809d556ac2f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9efb07bd8bda108497f77d4f982b42eb3c8e53b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855634"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 

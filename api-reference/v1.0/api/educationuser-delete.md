@@ -2,12 +2,13 @@
 title: 删除 educationUser
 description: 删除用户。
 author: mmast-msft
-ms.openlocfilehash: 445bfb84a67dfe598ac2de696b49d07db447e0e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fc544734d00ba713d6cb3f92020dfbb68a3857e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860352"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
 

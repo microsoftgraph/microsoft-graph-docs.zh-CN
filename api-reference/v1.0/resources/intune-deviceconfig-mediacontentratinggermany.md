@@ -2,12 +2,13 @@
 title: mediaContentRatingGermany 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 8add327725e5d3886d381b63c7debc16c256d810
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5dd25a8bd29211fd593daf3ecea20a7808384bc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860002"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany 资源类型
 

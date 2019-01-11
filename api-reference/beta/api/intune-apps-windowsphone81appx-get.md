@@ -2,12 +2,13 @@
 title: 获取 windowsPhone81AppX
 description: 读取属性和 windowsPhone81AppX 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 5e7c58e88fc701222ae290c9774f5a56f01f7960
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d52e5bc6a07f4640325a7565047e411161a6f62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858713"
 ---
 # <a name="get-windowsphone81appx"></a>获取 windowsPhone81AppX
 
@@ -42,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

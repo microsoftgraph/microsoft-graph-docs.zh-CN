@@ -3,18 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
-ms.openlocfilehash: 08cca45bc84ea3e9c66709951635efa46d48d237
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea4f4b7d1f0f681348bcc9802736041b81a63c3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863978"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
 从 [list][] 中删除项。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 

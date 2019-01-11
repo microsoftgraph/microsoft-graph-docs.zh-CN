@@ -1,12 +1,13 @@
 ---
 title: 时间戳资源类型
 description: 日期和时间点时间信息。
-ms.openlocfilehash: 4f392e880bb165841fd8a9a31b6ed00bf2ba36fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c63b3bba93f4b108a8eb9943d3fc2a1b2961f06c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888800"
 ---
 # <a name="timestamp-resource-type"></a>时间戳资源类型
 

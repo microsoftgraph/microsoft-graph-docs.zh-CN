@@ -2,12 +2,13 @@
 title: vpnAuthenticationMethod 枚举类型
 description: VPN 身份验证方法。
 author: tfitzmac
-ms.openlocfilehash: 975649ec9b8fc3d6ce6d69dbc5a5a59baba44aef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6954360a273a30457819dd865b34d771d1344b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888723"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27351602"
 
 VPN 身份验证方法。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |certificate|0|使用证书进行身份验证。|
 |usernameAndPassword|1|用于身份验证的用户名和密码。|

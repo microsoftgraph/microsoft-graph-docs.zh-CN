@@ -2,12 +2,13 @@
 title: 更新 depOnboardingSetting
 description: 更新 depOnboardingSetting 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: d4a50c485da98a182562ca5bd353d71dd854b4f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05b31f007aece229dacee41af354fdf7ab2807ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891117"
 ---
 # <a name="update-deponboardingsetting"></a>更新 depOnboardingSetting
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,13 +55,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|当该服务已 onboarded。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|当服务与 Intune 的最后一个 syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|当 Intune 上次请求同步。|
-|shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
+|shareTokenWithSchoolDataSyncService|布尔|是否 Dep 令牌共享将启用学校数据同步服务。|
 |lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|字符串|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步设备计数|
 |defaultProfileDisplayName|字符串|获取同步设备计数|
-|dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
+|dataSharingConsentGranted|布尔|授予许可与 Apple Dep 服务共享的数据|
 
 
 

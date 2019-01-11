@@ -1,12 +1,13 @@
 ---
 title: directoryDefinition 资源类型
 description: 提供有关目录和其对象的同步引擎信息。 此资源告知同步引擎，例如目录有对象名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性。 为了参与同步规则和对象映射的对象和属性，必须作为目录定义的一部分定义它们。
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874520"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: List messages
 description: 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
-ms.openlocfilehash: 861d56850a8a4a4a167540b221bd94b7b8e62ae0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5ded8cef8142bdeeaa17eabc1f78a8bfa0f0d019
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862704"
 ---
 # <a name="list-messages"></a>List messages
 

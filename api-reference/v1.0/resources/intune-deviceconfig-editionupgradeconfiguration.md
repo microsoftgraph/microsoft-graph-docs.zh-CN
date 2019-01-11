@@ -2,12 +2,13 @@
 title: editionUpgradeConfiguration 资源类型
 description: Windows 10 版本升级配置。
 author: tfitzmac
-ms.openlocfilehash: a7f7177f4379c8ee2b1aa62c1aac681cdc57cb05
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d82f05c1c64bbe3c5006798607dbd627cbf6630d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874184"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>editionUpgradeConfiguration 资源类型
 

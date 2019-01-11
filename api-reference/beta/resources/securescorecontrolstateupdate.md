@@ -1,17 +1,18 @@
 ---
 title: " secureScoreControlStateUpdate 资源类型"
 description: 此资源包含控件状态更新的用户的历史记录 （控件状态包括默认、 忽略、 ThirdParty、 已审阅）。
-ms.openlocfilehash: ba98f2fc85f3f8e12355f9acf5d232599a7f29f7
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Normal
+ms.openlocfilehash: 8d8c3122a6263ebc7b10b5edfb823953e2d587fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27428838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888919"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate 资源类型
 包含由用户更新控件状态的历史记录 （控件状态包括默认、 忽略、 ThirdParty、 已审阅）。
 
-|属性 |类型 |说明 |
+|属性 |类型 |Description |
 |:--|:--|:--|
 |assignedTo | string | 分配将执行的操作的用户控件 |
 |批注 | string | 提供有关控件的可选注释 |

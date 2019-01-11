@@ -2,12 +2,13 @@
 title: 获取用户
 description: 读取 user 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: b58485112929f39be76f1f908f3097d8971ac564
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c425f42dfd252d48b10eae595b9a2ba5734b255
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872154"
 ---
 # <a name="get-user"></a>获取 user
 
@@ -41,7 +42,7 @@ GET /users/{usersId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

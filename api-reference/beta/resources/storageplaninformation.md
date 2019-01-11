@@ -3,12 +3,13 @@ author: psampath
 ms.author: psampath
 ms.date: 06/20/2018
 title: StoragePlanInformation
-ms.openlocfilehash: 07552f405ec8c5d6ae8345a8238cd8aec3763b11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bbe4faaffbf53c24d4d0f5b8ea1f5ee1e1966a2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860121"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27046481"
 ```
 ## <a name="properties"></a>属性
 
-| 属性名称     | 类型      | 说明                                                             |
+| 属性名称     | 类型      | Description                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
 | upgradeAvailable  | 布尔   | 指示是否有较高的存储配额规划可用。 只读。 |
 

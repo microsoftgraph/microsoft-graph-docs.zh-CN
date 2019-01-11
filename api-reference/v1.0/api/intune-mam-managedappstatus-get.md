@@ -2,12 +2,13 @@
 title: 获取 managedAppStatus
 description: 读取 managedAppStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 77d3b46ffc9ba657269770e17aefb6fa6f4d821d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8397b041996403791da584812a9a598af8519278
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863376"
 ---
 # <a name="get-managedappstatus"></a>获取 managedAppStatus
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

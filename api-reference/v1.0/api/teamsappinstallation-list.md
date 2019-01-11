@@ -2,12 +2,13 @@
 title: 团队中的列表应用程序
 description: 检索指定团队中安装的应用程序的列表。
 author: nkramer
-ms.openlocfilehash: c1fabf1418bc704788e96cc762a251186077f52c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fbc603475cf1bdfcbdb50cff26d5fbfd7c2d34f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864244"
 ---
 # <a name="list-apps-in-team"></a>团队中的列表应用程序
 
@@ -68,7 +69,7 @@ GET /teams/{id}/installedApps
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都是从实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

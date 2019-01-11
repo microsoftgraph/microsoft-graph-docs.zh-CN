@@ -2,12 +2,13 @@
 title: 更新域
 description: 更新域对象的属性。
 author: lleonard-msft
-ms.openlocfilehash: d1ba59d345f172f1485dda628585fe8de549ee1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07e1e78a43902b846e070523802eeb128217f953
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861409"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -36,7 +37,7 @@ PATCH /domains/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |

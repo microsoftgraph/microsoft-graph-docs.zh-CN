@@ -2,12 +2,13 @@
 title: vpnTrafficRuleRoutingPolicyType 枚举类型
 description: 指定对于 VPN 通信规则路由的策略。
 author: tfitzmac
-ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b44a2b58cc42e9f3f88964d79473327f4ca2b74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855319"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27343419"
 
 指定对于 VPN 通信规则路由的策略。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|未指定的路由策略。|
 |splitTunnel|1|指定的应用程序的网络流量将通过 VPN 进行路由。|

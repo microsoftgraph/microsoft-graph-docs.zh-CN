@@ -2,12 +2,13 @@
 title: 创建 mobileAppCategory
 description: 创建新的 mobileAppCategory 对象。
 author: tfitzmac
-ms.openlocfilehash: 17084b8c02421b94b733a9ecb1011d647dab02d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c09b557da645767e090bfecca7974c0af41b17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870796"
 ---
 # <a name="create-mobileappcategory"></a>创建 mobileAppCategory
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

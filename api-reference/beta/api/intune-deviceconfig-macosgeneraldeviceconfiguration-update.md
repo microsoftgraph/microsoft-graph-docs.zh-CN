@@ -2,12 +2,13 @@
 title: 更新 macOSGeneralDeviceConfiguration
 description: 更新 macOSGeneralDeviceConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 84ea867f10a99f985e7789cab2071183b34751c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90dd325d44cd0ac8577ce82aa97ff516180f9cc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874100"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -70,27 +71,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordRequired|Boolean|是否需要密码。|
-|keychainBlockCloudSync|Boolean|指示 iCloud 钥匙链同步阻止 (macOS 10.12 及更高版本)。|
-|airPrintBlocked|Boolean|指示 AirPrint 阻止 (macOS 10.12 及更高版本)。|
-|airPrintForceTrustedTLS|Boolean|指示受信任的证书是否需要 TLS 打印通信 (macOS 10.13 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|Boolean|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (macOS 10.3 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
+|keychainBlockCloudSync|布尔|指示 iCloud 钥匙链同步阻止 (macOS 10.12 及更高版本)。|
+|airPrintBlocked|布尔|指示 AirPrint 阻止 (macOS 10.12 及更高版本)。|
+|airPrintForceTrustedTLS|布尔|指示受信任的证书是否需要 TLS 打印通信 (macOS 10.13 及更高版本)。|
+|airPrintBlockiBeaconDiscovery|布尔|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (macOS 10.3 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
 |safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
 |iTunesBlockMusicService|Boolean|指示阻止音乐服务并还原为经典模式的音乐应用程序。|
 |spotlightBlockInternetResults|Boolean|指示阻止聚焦从 Internet 搜索返回任何结果。|
 |keyboardBlockDictation|Boolean|指示阻止用户使用口述输入。|
 |definitionLookupBlocked|Boolean|指示阻止定义查找。|
-|appleWatchBlockAutoUnlock|Boolean|指示是否或阻止用户解锁与 Apple Watch 其 Mac。|
-|iTunesBlockFileSharing|Boolean|指示阻止进行文件传输使用 iTunes。|
+|appleWatchBlockAutoUnlock|布尔|指示是否或阻止用户解锁与 Apple Watch 其 Mac。|
+|iTunesBlockFileSharing|布尔|指示阻止进行文件传输使用 iTunes。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
-|iCloudBlockMail|Boolean|指示阻止 iCloud 从同步邮件。|
-|iCloudBlockAddressBook|Boolean|指示阻止 iCloud 从同步联系人。|
-|iCloudBlockCalendar|Boolean|指示阻止 iCloud 从同步日历。|
-|iCloudBlockReminders|Boolean|指示阻止 iCloud 从同步提醒。|
-|iCloudBlockBookmarks|Boolean|指示阻止 iCloud 从同步书签。|
-|iCloudBlockNotes|Boolean|指示阻止 iCloud 从同步注释。|
+|iCloudBlockMail|布尔|指示阻止 iCloud 从同步邮件。|
+|iCloudBlockAddressBook|布尔|指示阻止 iCloud 从同步联系人。|
+|iCloudBlockCalendar|布尔|指示阻止 iCloud 从同步日历。|
+|iCloudBlockReminders|布尔|指示阻止 iCloud 从同步提醒。|
+|iCloudBlockBookmarks|布尔|指示阻止 iCloud 从同步书签。|
+|iCloudBlockNotes|布尔|指示阻止 iCloud 从同步注释。|
 |airDropBlocked|Boolean|指示允许 AirDrop。|
-|passwordBlockModification|Boolean|指示允许密码修改。|
+|passwordBlockModification|布尔|指示允许密码修改。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
 
 

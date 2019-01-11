@@ -2,12 +2,13 @@
 title: 列出附件
 description: 检索附加到帖子的 attachment 对象列表。
 author: dkershaw10
-ms.openlocfilehash: f03cf2b9039c88690ddd4078ebe7c843b2e1766a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50d41b94300eaf93c6d0cd595e64facc982cb461
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321607"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872105"
 ---
 # <a name="list-attachments"></a>列出附件
 

@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessRuleType 枚举类型
 description: 此访问规则将应用条件，它定义的设备类型
 author: tfitzmac
-ms.openlocfilehash: 8e0bc166de6396e1b56dd89a4545c9b12b2a71cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7e554e2abce401108078d5bd1f66c46f8a4838b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854852"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>deviceManagementExchangeAccessRuleType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328530"
 
 此访问规则将应用条件，它定义的设备类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |系列|0|设备系列|
 |model|1|设备的特定模型|

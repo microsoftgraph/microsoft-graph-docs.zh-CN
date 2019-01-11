@@ -2,12 +2,13 @@
 title: iosVppApp 资源类型
 description: 包含 iOS 批量采购程序 (VPP) 应用的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 565bcf04bb7a5b903060c6492000377fdefeb495
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c85fe2220a9bbc9df6933951c779c5d898eadab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888747"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp 资源类型
 

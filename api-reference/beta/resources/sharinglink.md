@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 094de0cbdb77fe427ba70b9418ced5cc6e9cc731
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856390"
 ---
 # <a name="sharinglink-resource-type"></a>sharingLink 资源类型
 
@@ -66,7 +67,7 @@ ms.locfileid: "27043131"
 
 下表定义的**范围**属性的可能值。
 
-| 值            | 说明
+| 值            | Description
 |:-----------------|:------------------------------------------------------------
 | `anonymous`      | 带链接的任何人都访问，而无需登录。 这可能包括您的组织外部的人员。
 | `organization`   | 登录到您的组织 （租户） 的任何人都可以使用以下链接获取的访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。

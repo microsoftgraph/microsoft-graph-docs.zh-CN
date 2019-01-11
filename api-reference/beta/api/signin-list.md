@@ -1,12 +1,13 @@
 ---
 title: 列表 signIns
 description: 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。  最新 signIns 是首先返回。
-ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861787"
 ---
 # <a name="list-signins"></a>列表 signIns
 

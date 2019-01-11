@@ -1,12 +1,13 @@
 ---
 title: sectionGroup 资源类型
 description: OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
-ms.openlocfilehash: e27f3f468d660b2ffe778a46078054751ed8063e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e955d91fa49642100694da66421665a0d67b3da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855424"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 

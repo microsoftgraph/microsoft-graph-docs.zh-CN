@@ -1,12 +1,13 @@
 ---
 title: bookingBusiness 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 0ea11dcd16a129e6d6648be4b09435c5c052de9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861633"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
@@ -44,15 +45,15 @@ ms.locfileid: "27045086"
 |defaultCurrencyIso|字符串|企业中运行 Microsoft 预订的货币代码。|
 |displayName|字符串|业务，接口与客户的名称。 此名称将显示在业务计划页的顶部。|
 |email|字符串|业务电子邮件地址。|
-|id|字符串|业务唯一的编程标识符。 只读。|
-|isPublished|布尔|计划页上进行了可对外部客户。 使用**发布**和**取消发布**操作来设置此属性。 只读。|
+|id|字符串|业务唯一的编程标识符。 此为只读属性。|
+|isPublished|布尔|计划页上进行了可对外部客户。 使用**发布**和**取消发布**操作来设置此属性。 此为只读属性。|
 |phone|String|业务电话号码。 **电话**属性，以及**地址**和**webSiteUrl**，显示页脚中的企业计划页。|
-|publicUrl|字符串|计划页，其中您[发布](../api/bookingbusiness-publish.md)或[取消公开](../api/bookingbusiness-unpublish.md)后页上设置的 URL。 只读。|
+|publicUrl|字符串|计划页，其中您[发布](../api/bookingbusiness-publish.md)或[取消公开](../api/bookingbusiness-unpublish.md)后页上设置的 URL。 此为只读属性。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|指定如何创建此业务预订。|
 |webSiteUrl|字符串|业务网站的 URL。 **WebSiteUrl**属性，以及**地址**，**电话**，显示在业务计划页的页脚。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |appointments|[bookingAppointment](bookingappointment.md)集合| 此业务的所有约会。 只读。 可为 Null。|
 |calendarView|[bookingAppointment](bookingappointment.md)集合| 一组约会的指定的日期范围中的此业务。 只读。 可为 Null。|

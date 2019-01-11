@@ -1,12 +1,13 @@
 ---
 title: chatMessageMention 资源类型
 description: '代表 chatMessage 实体中的某个提及。 提及的可向用户、 团队、 自动程序或通道。 '
-ms.openlocfilehash: 5f1e427b0ed2b8ffcfbc86417beb4719dc6fb2a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b24d2af6f61f3da69480557e1c5b5f32c009c25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876134"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 

@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: CreateAction
-ms.openlocfilehash: 4b5d6a50c37c04b1c708e798820b8295d89ebf80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebdcabf51017bb407090d9ab4690b9e693a12953
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866057"
 ---
 # <a name="createaction-resource-type"></a>CreateAction 资源类型
 

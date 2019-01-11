@@ -2,12 +2,13 @@
 title: 删除 windows10VpnConfiguration
 description: 删除 windows10VpnConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 3c02b9b8add523137a24f6fd2c3ccfaaea108f4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 409bb303e4c5fcdedbca2a773c161cb857f3f5c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873687"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>删除 windows10VpnConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

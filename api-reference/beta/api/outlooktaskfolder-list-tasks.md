@@ -2,12 +2,13 @@
 title: 列出任务
 description: 在指定文件夹中获取所有 Outlook 任务。
 author: angelgolfer-ms
-ms.openlocfilehash: 4dc2e48e12cc03a0e7c95cb9e03e100b5f9922d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee6b4c2454ba6bfad0c0f4e6acd826917f02ca93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863075"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -38,7 +39,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 响应，它可以采用 UTC 如果未指定此标头中指定的时间属性的时区。 可选。|

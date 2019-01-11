@@ -2,12 +2,13 @@
 title: 删除 termsAndConditions
 description: 删除 termsAndConditions。
 author: tfitzmac
-ms.openlocfilehash: 3e356fddc3d4c635658c815abeefa29f7fd8f7f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6f46812efe5cfa2bef3e8532620eebfe56d597e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875472"
 ---
 # <a name="delete-termsandconditions"></a>删除 termsAndConditions
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

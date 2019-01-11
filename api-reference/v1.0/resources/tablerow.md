@@ -2,12 +2,13 @@
 title: TableRow 资源类型
 description: 表示表中的行。
 author: lumine2008
-ms.openlocfilehash: f34190aa4ac565d09ec8b07e96b2923f785b8d7c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 688c747797e7da8fdf8d3a855a831debcbf347b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860506"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27341333"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|整数|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
+|index|int|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>Relationships

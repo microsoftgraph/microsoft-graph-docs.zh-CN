@@ -2,12 +2,13 @@
 title: iosStoreAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS 应用商店移动应用的属性。
 author: tfitzmac
-ms.openlocfilehash: 19a9ba760a0e375d6afa4c504fd57e6ecac4d2ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 311b7469b0002dcf12369e650066e4e0b08ac83f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856525"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings 资源类型
 

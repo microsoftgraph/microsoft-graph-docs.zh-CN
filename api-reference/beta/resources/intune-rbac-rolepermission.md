@@ -2,12 +2,13 @@
 title: rolePermission 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: c33af6af3bc06a53bd24ddf97576551a5eea6e9c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0669a0e169a71ea3806b21a125a4921b5161d516
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855571"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 

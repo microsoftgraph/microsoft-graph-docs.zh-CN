@@ -1,12 +1,13 @@
 ---
 title: visualInfo 资源类型
 description: 代表活动对象中的**visualElements**属性的复杂类型。
-ms.openlocfilehash: ac895e854051cb487fa9afd0ff9ada972b97aa19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3e1dd3d7e4ecfaf5053f839f0ac0d0039692b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855312"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
@@ -22,9 +23,9 @@ ms.locfileid: "27045575"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | 说明|
+|名称 | 类型 | Description|
 |:----|:------|:-----------|
-|显示文本 | 字符串 | 必需项。 短用户的唯一活动 （例如，在其中活动是指创建文档的情况下的文档名称） 的文本的说明|
+|显示文本 | 字符串 | 必需。 短用户的唯一活动 （例如，在其中活动是指创建文档的情况下的文档名称） 的文本的说明|
 |说明 | 字符串 | 可选。 更长时间的用户的唯一的活动的文本说明 (示例： 文档名称、 第一句和/或元数据)|
 |backgroundColor | 字符串 | 可选。 用于呈现 UI 的品牌颜色活动的应用程序源中的活动的背景色。 必须是有效的十六进制颜色|
 |content | 类型化的 JSON 对象 | 可选。 自定义的数据的 JSON 对象，用于提供自定义呈现 Windows 命令行管理程序用户界面中的活动内容|

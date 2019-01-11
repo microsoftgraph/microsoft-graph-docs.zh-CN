@@ -1,12 +1,13 @@
 ---
 title: resourceAccess 资源类型
 description: 指定 OAuth 2.0 权限范围或应用程序需要应用程序角色。 RequiredResourceAccess 类型的**resourceAccess**属性是**ResourceAccess**的集合。
-ms.openlocfilehash: 56e9b2b006d63d2a9abebc9e9585744b08438800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5389915897c3aab8b8277a45b54042bc861b290
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862333"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 

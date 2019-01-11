@@ -2,12 +2,13 @@
 title: deviceManagementPartnerTenantState 枚举类型
 description: 合作伙伴的此租户的状态。
 author: tfitzmac
-ms.openlocfilehash: 84df2744a11b869492bab4f7305191cc91dc54dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be116132064a562378ab664e1a22b2561e9cf20b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855501"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27334277"
 
 合作伙伴的此租户的状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|合作伙伴状态为未知。|
 |不可用|1|合作伙伴不可用。|

@@ -2,12 +2,13 @@
 title: 呼叫中的 IVR 方案
 description: 在 Microsoft Graph 中的调用 Api 支持互动语音响应 (IVR) 方案如下：
 author: VinodRavichandran
-ms.openlocfilehash: cf7d6543c09b69050db9aedc270616cfea113c28
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 014fd2169678617043a5a540f625479e68302b34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855809"
 ---
 # <a name="ivr-scenarios-in-calls"></a>呼叫中的 IVR 方案
 

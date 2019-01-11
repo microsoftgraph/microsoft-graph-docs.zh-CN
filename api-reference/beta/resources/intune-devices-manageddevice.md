@@ -2,12 +2,13 @@
 title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
 author: tfitzmac
-ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869214"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -105,8 +106,8 @@ ms.locfileid: "27309609"
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的设备的用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。|
-|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。|
-|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。|
+|autopilotEnrolled|布尔|如果通过自动试点注册托管的设备，报告。|
+|requireUserEnrollmentApproval|布尔|报告托管的 iOS 设备是否用户审批注册。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期|
 |iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
 |udid|字符串|IOS 和 macOS 设备的唯一设备标识符。|
@@ -117,7 +118,7 @@ ms.locfileid: "27309609"
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|配置管理器客户端健康状态，仅供 MDM/ConfigMgr 代理管理设备|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|在设备上当前安装的所有应用程序|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|设备类别|

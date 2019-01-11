@@ -1,12 +1,13 @@
 ---
 title: logonUser 资源类型
 description: 包含有关在用户登录该主机上的状态信息
-ms.openlocfilehash: 80ff69453e99f5cd5103f85cd7d8c45696057f7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b7862555c62eb16aaceaa53d4df58541426e08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048456"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855592"
 ---
 # <a name="logonuser-resource-type"></a>logonUser 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27048456"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |accountDomain|字符串|域使用的用户帐户登录。|
 |accountName|字符串|使用的用户帐户的帐户名称为登录。|

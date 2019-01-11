@@ -2,12 +2,13 @@
 title: 删除 windowsPhoneXAP
 description: 删除 windowsPhoneXAP。
 author: tfitzmac
-ms.openlocfilehash: db80356b6dfd11195b20b9b5a498c23dce73b125
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6545555c78aa0138536afcaabf799f1f45e42f13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863985"
 ---
 # <a name="delete-windowsphonexap"></a>删除 windowsPhoneXAP
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

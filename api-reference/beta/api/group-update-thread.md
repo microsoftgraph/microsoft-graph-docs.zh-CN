@@ -2,12 +2,13 @@
 title: 更新对话线程
 description: 更新 thread 对象。
 author: dkershaw10
-ms.openlocfilehash: 5d95beec5eb95d6a62538aba62c57bd367c824a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a54a450064fc886e18687c31bb05ddc25868326c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878916"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 
@@ -31,7 +32,7 @@ PATCH /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessState 枚举类型
 description: 设备 Exchange 访问状态。
 author: tfitzmac
-ms.openlocfilehash: 37db054314375411dc237746ca6ca3bdb99e9016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73559bf01cfc619e38a30b0393a7d7f3a8754321
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889087"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27328719"
 
 设备 Exchange 访问状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|从 Exchange 发现没有访问状态|
 |unknown|1|到 Exchange 的设备访问状态是未知|

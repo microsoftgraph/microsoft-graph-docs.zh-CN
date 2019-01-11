@@ -2,12 +2,13 @@
 title: windows10AppType 枚举类型
 description: Windows 10 应用程序类型。
 author: tfitzmac
-ms.openlocfilehash: c75f8d97ecaa3db4a917042b75dab49d8a313300
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f971d88b1ebcec7a40c0f44b203c683bfee27f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856544"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27321992"
 
 Windows 10 应用程序类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |桌面|0|桌面。|
 |通用|1|通用。|

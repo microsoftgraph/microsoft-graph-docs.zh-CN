@@ -1,12 +1,13 @@
 ---
 title: 使用 Microsoft Graph API 将应用程序中的社交智能集成
 description: Microsoft Graph 社交手势支持在用户的社交上下文中，并提供对有用的个人和社会数据访问。
-ms.openlocfilehash: b83c5ea08c6d66dc800f736717f50324f0e2b4b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b3b71cf1bad0d860978c75c88f0b77a32eab1a0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862487"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>使用 Microsoft Graph API 将应用程序中的社交智能集成
 

@@ -2,12 +2,13 @@
 title: 列表 windowsPrivacyDataAccessControlItems
 description: 列出属性和 windowsPrivacyDataAccessControlItem 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 642db3e0381adf3bedfff52baf4987b7ea43cdaf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f6730bd76f0531767f8329ac72671fea1cad364
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862592"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>列表 windowsPrivacyDataAccessControlItems
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

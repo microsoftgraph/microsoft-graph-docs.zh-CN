@@ -1,12 +1,13 @@
 ---
 title: 图标资源类型
 description: 表示单元格图标。
-ms.openlocfilehash: 9485a831241ce92be3f8e7c4df5173285f926bbf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 833fa4cb4061a96b01077c3adeb7dcaed49e0a02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872567"
 ---
 # <a name="icon-resource-type"></a>图标资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27010422"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|整数|表示给定集合中图标的索引。|
+|index|int|表示给定集合中图标的索引。|
 |set|string|表示的图标集。 可能的值为： `Invalid`， `ThreeArrows`， `ThreeArrowsGray`， `ThreeFlags`， `ThreeTrafficLights1`， `ThreeTrafficLights2`， `ThreeSigns`， `ThreeSymbols`， `ThreeSymbols2`， `FourArrows`， `FourArrowsGray`， `FourRedToBlack`， `FourRating`， `FourTrafficLights`， `FiveArrows`， `FiveArrowsGray`， `FiveRating`， `FiveQuarters`， `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Relationships

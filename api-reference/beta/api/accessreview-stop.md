@@ -1,12 +1,13 @@
 ---
 title: 停止 accessReview
 description: 在 Azure AD 中访问审阅功能，停止当前的活动 accessReview。  目标对象可以是一次性访问回顾或定期访问评审的实例。  （若要防止定期访问回顾启动以后实例，更新其以更改其安排的结束日期）。  后访问查看停止，审阅者不再可以授予输入，以及可以应用访问审阅决策。
-ms.openlocfilehash: 2a4ac5d13f3be70cc5a4a24f4051429c473e7690
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860114"
 ---
 # <a name="stop-accessreview"></a>停止 accessReview
 
@@ -30,7 +31,7 @@ POST /accessReviews('<id>')/stop()
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

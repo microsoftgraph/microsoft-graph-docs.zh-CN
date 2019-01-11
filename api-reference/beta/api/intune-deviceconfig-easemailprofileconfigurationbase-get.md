@@ -2,12 +2,13 @@
 title: 获取 easEmailProfileConfigurationBase
 description: 读取属性和 easEmailProfileConfigurationBase 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 4019c22f2f07ee71c2bec0a558122db39e954a7e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91e60829772a13a6d7a8e1fa242cdb769c4e8fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863334"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>获取 easEmailProfileConfigurationBase
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

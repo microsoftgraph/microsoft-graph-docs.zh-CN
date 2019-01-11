@@ -1,12 +1,13 @@
 ---
 title: 列出任务
 description: 检索分配给用户的 **plannertask** 对象的列表。
-ms.openlocfilehash: 5018066ebdf436f94716b4d700b6ee1d0295894f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 4c268f666769b97aeff5fe7400b05ff5a6625810
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854983"
 ---
 # <a name="list-tasks"></a>列出任务
 

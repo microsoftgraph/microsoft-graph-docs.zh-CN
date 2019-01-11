@@ -2,12 +2,13 @@
 title: iosDeviceType 资源类型
 description: 包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。
 author: tfitzmac
-ms.openlocfilehash: 3111bc4b5fc78f6ed60b4a241b48e443923f7159
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffa46d1e8fb693822051250fb4a722815b1dcb73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313599"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866778"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 

@@ -2,12 +2,13 @@
 title: ChartPointFormat 资源类型
 description: 表示图表点的格式化对象。
 author: lumine2008
-ms.openlocfilehash: 94ba58eb60f80cf704de3d8a44e6e96f010429a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5923252a9fce47eedc58751def301b6515560ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883340"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat 资源类型
 

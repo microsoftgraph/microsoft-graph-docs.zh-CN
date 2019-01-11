@@ -1,12 +1,13 @@
 ---
 title: 列出用户设备
 description: 获取支持 Project Rome 功能的用户设备的列表。 这包括以启动应用程序，或者邮件或将数据发送到应用程序的能力。 在您之后执行 GET 呼叫我/设备，传递中要向您的设备发送命令的设备 ID。
-ms.openlocfilehash: b9e6132af0e16deae1a4175bfc811f74c18e1ae6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855921"
 ---
 # <a name="list-user-devices"></a>列出用户设备
 

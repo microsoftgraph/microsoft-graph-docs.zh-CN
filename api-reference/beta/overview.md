@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph beta 终结点引用
 description: 本节中的参考内容的文档的 Microsoft Graph beta 终结点。 Beta 终结点包括当前正在预览和尚不可用通常 Api。 我们邀请您尝试使用这些 Api，并提供以下频道通过您的反馈：
-ms.openlocfilehash: 9ed6362405a6ff542b707ac546383a9820a8228d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874303"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点引用
 

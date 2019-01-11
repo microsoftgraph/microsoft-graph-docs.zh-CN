@@ -2,12 +2,13 @@
 title: 获取 iosCompliancePolicy
 description: 读取 iosCompliancePolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 89e0c7c6d121fbc6ef73b84ba644748e79bf46ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfd7ea092053f6dd728b8a984a0a64292400bd8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855550"
 ---
 # <a name="get-ioscompliancepolicy"></a>获取 iosCompliancePolicy
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

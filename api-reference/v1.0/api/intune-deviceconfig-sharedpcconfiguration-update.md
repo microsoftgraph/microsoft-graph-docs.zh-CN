@@ -2,12 +2,13 @@
 title: 更新 sharedPCConfiguration
 description: 更新 sharedPCConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 72bf330dd6292d6f11fc648a32350d818ad8b114
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e129a455fad0ec3089b7f72224e73716751c7193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860373"
 ---
 # <a name="update-sharedpcconfiguration"></a>更新 sharedPCConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

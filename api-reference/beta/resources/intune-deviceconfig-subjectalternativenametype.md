@@ -2,12 +2,13 @@
 title: subjectAlternativeNameType 枚举类型
 description: 使用者替代名称选项。
 author: tfitzmac
-ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 914c4d577cc478e42e7982b9480bc8e43b8d88de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869543"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>subjectAlternativeNameType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326654"
 
 使用者替代名称选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|没有使用者替代名称。|
 |emailAddress|1|电子邮件地址。|

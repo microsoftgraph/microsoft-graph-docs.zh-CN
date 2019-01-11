@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Root
-ms.openlocfilehash: 771eb39baf2a7ce7a85fb43120d6e9e7358f6f6c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 017a4571288839d8d92f182a3a1a44023c4737e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866134"
 ---
 # <a name="root-resource-type"></a>根资源类型
 

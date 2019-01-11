@@ -2,12 +2,13 @@
 title: revokeDeviceLicense 操作
 description: Revoke 分配 iOS VPP 设备许可证的给定应用程序。
 author: tfitzmac
-ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864972"
 ---
 # <a name="revokedevicelicense-action"></a>revokeDeviceLicense 操作
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,10 +49,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |managedDeviceId|字符串|为其分配的应用程序许可证是将撤消 DeviceId|
-|notifyManagedDevices|Boolean|布尔值，指示 revoke 通知是否应发送给设备|
+|notifyManagedDevices|布尔|布尔值，指示 revoke 通知是否应发送给设备|
 
 
 

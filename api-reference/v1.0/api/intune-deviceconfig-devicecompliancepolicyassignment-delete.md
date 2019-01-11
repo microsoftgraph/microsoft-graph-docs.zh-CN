@@ -2,12 +2,13 @@
 title: 删除 deviceCompliancePolicyAssignment
 description: 删除 deviceCompliancePolicyAssignment。
 author: tfitzmac
-ms.openlocfilehash: 7fc38acb1e8eed0b61694cf9aa63bec296bfdf89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed20dfb52355c75f69995c8e15ffc2c06cf8a6ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889073"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>删除 deviceCompliancePolicyAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

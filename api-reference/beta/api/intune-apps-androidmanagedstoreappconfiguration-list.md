@@ -2,12 +2,13 @@
 title: 列表 androidManagedStoreAppConfigurations
 description: 列出属性和 androidManagedStoreAppConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 3d2cebb1075842c44419466a94c259cb45bbf070
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27d63dca0934d916ecbdfeb06be40c8fe9d6153c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874506"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>列表 androidManagedStoreAppConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

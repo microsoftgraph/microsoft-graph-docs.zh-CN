@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 发送访问项的邀请
-ms.openlocfilehash: db089fcd0a3f948d8e43f366a4e6674c2505fa2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ba3bc3465274c6e1525d54c1ba1b59041b1e59f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855578"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 

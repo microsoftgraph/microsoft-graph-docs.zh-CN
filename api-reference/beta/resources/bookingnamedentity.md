@@ -1,12 +1,13 @@
 ---
 title: bookingNamedEntity 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 1d82fcf6fcf7ffad6e60baea3f3e1118ec60345d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa307d0ee07b43a44210fc6ceaf4c74a29999caa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860499"
 ---
 # <a name="bookingnamedentity-resource-type"></a>bookingNamedEntity 资源类型
 

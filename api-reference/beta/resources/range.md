@@ -1,12 +1,13 @@
 ---
 title: 区域资源类型
 description: 区域表示一个或多个相邻的单元格，例如单元格、行、列、单元格块等。
-ms.openlocfilehash: 95951b45653309f1999ca5d8103c5c63a1249ada
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4b175cfc48ca4a0f55c430c6087ebbb907d6cb97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865693"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 
@@ -50,18 +51,18 @@ ms.locfileid: "27048345"
 |:---------------|:--------|:----------|
 |address|string|表示 A1 样式的区域引用。地址值将包含工作表引用（如 Sheet1!A1:B4）。只读。|
 |addressLocal|string|以用户语言表示对指定区域的区域引用。只读。|
-|cellCount|整数|区域中的单元格数目。只读。|
-|columnCount|整数|表示区域中的列总数。只读。|
+|cellCount|int|区域中的单元格数目。只读。|
+|columnCount|int|表示区域中的列总数。只读。|
 |columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
-|columnIndex|整数|表示区域中第一个单元格的列编号。从零开始编制索引。只读。|
+|columnIndex|int|表示区域中第一个单元格的列编号。从零开始编制索引。只读。|
 |formulas|json|表示采用 A1 样式表示法的公式。|
 |formulasLocal|json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|json|表示采用 R1C1 样式表示法的公式。|
 |hidden|boolean|表示当前区域中的所有单元格是否隐藏。只读。|
 |numberFormat|json|表示 Excel 中指定单元格的数字格式代码。|
-|rowCount|整数|返回区域中的总行数。只读。|
+|rowCount|int|返回区域中的总行数。只读。|
 |rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
-|rowIndex|整数|返回区域中第一个单元格的行编号。从零开始编制索引。只读。|
+|rowIndex|int|返回区域中第一个单元格的行编号。从零开始编制索引。只读。|
 |text|json|指定区域的文本值。文本值与单元格宽度无关。在 Excel UI 中替代 # 符号不会影响 API 返回的文本值。只读。|
 |valueTypes|string|表示每个单元格的数据类型。可能的值是：`Unknown`、`Empty`、`String`、`Integer`、`Double`、`Boolean`、`Error`。只读。|
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
@@ -71,7 +72,7 @@ ms.locfileid: "27048345"
 |:---------------|:--------|:----------|
 |格式|[RangeFormat](rangeformat.md)|返回一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。只读。|
 |sort|[RangeSort](rangesort.md)|包含当前区域的工作表。只读。|
-|工作表|[Worksheet](worksheet.md)|包含当前区域的工作表。只读。|
+|worksheet|[Worksheet](worksheet.md)|包含当前区域的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

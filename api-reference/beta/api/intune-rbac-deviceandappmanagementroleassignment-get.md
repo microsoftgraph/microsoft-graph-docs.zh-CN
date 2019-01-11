@@ -2,12 +2,13 @@
 title: 获取 deviceAndAppManagementRoleAssignment
 description: 读取 deviceAndAppManagementRoleAssignment 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 91d582850fec836480d9c84c741b60513f15a15d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f441db82b73a0c8d7f3a13e1212ee625b8c940f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865896"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>获取 deviceAndAppManagementRoleAssignment
 
@@ -40,7 +41,7 @@ GET /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

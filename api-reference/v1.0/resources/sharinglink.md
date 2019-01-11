@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 7639dab9f63a948b3e9a849d8d320de60f5a0954
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02a4c0251a5484edc7ba5e07095f44043c269ae5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863551"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 

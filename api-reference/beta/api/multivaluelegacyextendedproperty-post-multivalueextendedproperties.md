@@ -1,12 +1,13 @@
 ---
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
-ms.openlocfilehash: 17f1bf0a4dd03de3704349fcfd496b768f60d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54be6f428ac5d7b604093fdad3a03b48b89243a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863047"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 

@@ -2,12 +2,13 @@
 title: 获取对话
 description: 获取 conversation 对象。
 author: dkershaw10
-ms.openlocfilehash: 37a3f12c3d72be230e289a9f321b10910ab762be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64355f38d5cbab8d8a146125512338f98d830b62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863243"
 ---
 # <a name="get-conversation"></a>获取对话
 获取 [conversation](../resources/conversation.md) 对象。

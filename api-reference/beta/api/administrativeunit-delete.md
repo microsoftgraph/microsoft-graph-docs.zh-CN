@@ -2,12 +2,13 @@
 title: 删除 administrativeUnit
 description: 删除 administrativeUnit。
 author: lleonard-msft
-ms.openlocfilehash: 1ae08969f8faaa113f1bffa25a204f68a3340d03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c90fda4bdcbb6a431dbcb4caa6a50a130c7f78b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860051"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -32,7 +33,7 @@ DELETE /administrativeUnits/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

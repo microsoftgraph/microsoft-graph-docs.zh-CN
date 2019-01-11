@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: 18ba74fd677c83da5f8bfe5d13303f7b18ed43f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b2e151937d5e8db633edeb5d521d6e0c875b6d78
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866085"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -121,7 +122,7 @@ ms.locfileid: "27043181"
 [itemActivity]: itemactivity.md
 [itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
-[list]: list.md
+[列表]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

@@ -2,12 +2,13 @@
 title: vppTokenAccountType 枚举类型
 description: 可能的 Apple 卷购买计划令牌的类型。
 author: tfitzmac
-ms.openlocfilehash: 002af5091eb0eb540b2bf31434a173670ab548fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3cb089d94e2b7217fccfe3d9214cf3ebeb052bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856467"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27344014"
 
 可能的 Apple 卷购买计划令牌的类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |业务|0|与业务程序关联的 Apple 卷购买计划令牌。|
 |教育版|1|培训计划相关联的 Apple 卷购买计划令牌。|

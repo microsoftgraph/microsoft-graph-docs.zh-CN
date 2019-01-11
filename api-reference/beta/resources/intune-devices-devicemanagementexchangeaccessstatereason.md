@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备 Exchange 访问状态的原因。
 author: tfitzmac
-ms.openlocfilehash: 03e89b2405aac185f8b937828ade07479ced4cc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4e02f8536d7be21d850907c0239fec01e4d1920
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863782"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27318352"
 
 设备 Exchange 访问状态的原因。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|从 Exchange 发现没有访问状态理由|
 |unknown|1|未知的访问状态的原因|

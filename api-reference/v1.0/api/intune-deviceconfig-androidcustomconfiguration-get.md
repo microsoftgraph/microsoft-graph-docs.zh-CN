@@ -2,12 +2,13 @@
 title: 获取 androidCustomConfiguration
 description: 读取 androidCustomConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 79f2cafe9ad01b7e58ee3cbc798929662d506307
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be99c7296e7987ed32240138a849c21a3ef43520
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860087"
 ---
 # <a name="get-androidcustomconfiguration"></a>获取 androidCustomConfiguration
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

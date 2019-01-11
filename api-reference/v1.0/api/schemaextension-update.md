@@ -1,12 +1,13 @@
 ---
 title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
-ms.openlocfilehash: a09b3a4e2e48eb550acd5e77c60ab7213cc52de8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1316536f513ba126a504e1ad20d66591091157e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855648"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 

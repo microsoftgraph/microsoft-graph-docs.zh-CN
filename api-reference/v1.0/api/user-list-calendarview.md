@@ -1,12 +1,13 @@
 ---
 title: 列出 calendarView
 description: '获取由一个时间范围，从用户的默认日历中，定义日历视图中的匹配项、 例外和事件的单个实例 '
-ms.openlocfilehash: db2c0b4d5fe2b3929aab7c30e00aff0f30dff5b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 301573e5ecde07623c17dcf511ea70036f9a06ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874380"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 

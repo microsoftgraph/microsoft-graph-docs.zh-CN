@@ -2,12 +2,13 @@
 title: windows10AssociatedApps 资源类型
 description: Windows 10 相关应用程序定义。
 author: tfitzmac
-ms.openlocfilehash: a990d3b1f9b2b33a1e98fd30f5dea4da7fbf4ae8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 097edb32ca01d673bb4d42802e8588edd20cf2d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344826"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869620"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27344826"
 
 Windows 10 相关应用程序定义。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|应用程序类型。 可取值为：`desktop`、`universal`。|
 |标识符|字符串|标识符。|

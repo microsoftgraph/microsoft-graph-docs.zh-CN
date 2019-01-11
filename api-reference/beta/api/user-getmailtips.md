@@ -2,12 +2,13 @@
 title: 用户： getMailTips
 description: 获取已登录的用户作为可用的一个或多个收件人的邮件提示。
 author: dkershaw10
-ms.openlocfilehash: 039d86c728c2394153ebe1a5aebba1243d40d726
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2577b37f6cbfa3bd6dc5eff712c07562ecdadbf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855963"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
@@ -43,7 +44,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |EmailAddresses|String 集合|要获取的邮件提示的收件人的 SMTP 地址的集合。|
 |MailTipsOptions|字符串|Flags 一个枚举值，该值代表请求邮件提示。 可能的值为： `automaticReplies`， `customMailTip`， `deliveryRestriction`， `externalMemberCount`， `mailboxFullStatus`， `maxMessageSize`， `moderationStatus`， `recipientScope`， `recipientSuggestions`，和`totalMemberCount`。|

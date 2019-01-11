@@ -2,12 +2,13 @@
 title: deviceManagementExchangeOnPremisesPolicy 资源类型
 description: 代表为租户配置的 Exchange OnPremises 策略 singleton 实体。
 author: tfitzmac
-ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854997"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27337210"
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)集合|已知到 Exchange 的设备类列表|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Exchange 本地条件访问设置。 本地条件访问需要设备注册并符合邮件访问要求|
 

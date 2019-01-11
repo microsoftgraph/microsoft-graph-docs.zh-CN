@@ -2,12 +2,13 @@
 title: win32LobAppMsiPackageType 枚举类型
 description: 指示 MSI Win32LobApp 包类型。
 author: tfitzmac
-ms.openlocfilehash: 7caf13d48dda3cf8e1b88605c575ae5f6322c6fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb47ae6b068644ad5f1edb2316ce9b74821c0d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872574"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27335677"
 
 指示 MSI Win32LobApp 包类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |机器|0|指示每台计算机应用程序包。|
 |perUser|1|指示每个用户应用程序包。|

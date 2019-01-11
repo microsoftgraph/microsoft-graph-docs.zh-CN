@@ -1,12 +1,13 @@
 ---
 title: 登录资源类型
 description: '此资源详细介绍用户或应用程序登录活动目录中。 '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889066"
 ---
 # <a name="signin-resource-type"></a>登录资源类型
 此资源详细介绍用户或应用程序登录活动目录中。 
@@ -19,7 +20,7 @@ ms.locfileid: "27241074"
 |[获取登录](../api/signin-get.md) | [登录](signin.md) |读取属性和登录对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |appDisplayName|字符串|指 Azure 门户中显示的应用程序名称。|
 |appId|String|引用代表 Azure Active Directory 中的应用程序 Id 的唯一 guid。|
@@ -27,7 +28,7 @@ ms.locfileid: "27241074"
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)集合|提供由相应的登录活动触发的条件的访问策略的列表。|
 |conditionalAccessStatus|string| 提供的触发条件访问策略的状态。 可取值为：`success`、`failure`、`notApplied`、`unknownFutureValue`。|
 |originalRequestId|字符串|身份验证序列中的第一个请求的请求 id。|
-|isInteractive|Boolean|指示是否是交互式登录。|
+|isInteractive|布尔|指示是否是交互式登录。|
 |tokenIssuerName|字符串|标识提供程序 (例如 sts.microsoft.com) 的名称|
 |tokenIssuerType|字符串|提供了 identityProvider 的类型。 可能的值为`AzureAD`， `ADFederationServices`， `UnknownFutureValue`。|
 |correlationId|String|指启动登录时，从客户端发送的 ID。 这用于解决对应的登录活动，调用支持人员或支持时。|
