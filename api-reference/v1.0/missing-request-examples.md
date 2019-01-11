@@ -1,19 +1,20 @@
 ---
 title: 将 /me 定义为单一实例
 description: 这些是我必须以确保减价扫描程序文档中添加的内容
-ms.openlocfilehash: 76e8cc2ed8cb481d732e1b0727107eee8d520e77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da71bfcb25efbebdf4e6a111f23d8d16e3aca342
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842894"
 ---
-# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="22d51-103">帮助程序（未包含在文档中的示例）</span><span class="sxs-lookup"><span data-stu-id="22d51-103">Helpers (examples that aren't included in the docs)</span></span>
+# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="8acb6-103">帮助程序（未包含在文档中的示例）</span><span class="sxs-lookup"><span data-stu-id="8acb6-103">Helpers (examples that aren't included in the docs)</span></span>
 
-<span data-ttu-id="22d51-104">这些内容必须添加到文档中以确保 Markdown 扫描程序工具能够正确地处理 Graph 文档。</span><span class="sxs-lookup"><span data-stu-id="22d51-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
+<span data-ttu-id="8acb6-104">这些内容必须添加到文档中以确保 Markdown 扫描程序工具能够正确地处理 Graph 文档。</span><span class="sxs-lookup"><span data-stu-id="8acb6-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
 
 
-## <a name="define-the-me-as-singleton"></a><span data-ttu-id="22d51-105">将 /me 定义为单一实例</span><span class="sxs-lookup"><span data-stu-id="22d51-105">Define the /me as singleton</span></span>
+## <a name="define-the-me-as-singleton"></a><span data-ttu-id="8acb6-105">将 /me 定义为单一实例</span><span class="sxs-lookup"><span data-stu-id="8acb6-105">Define the /me as singleton</span></span>
 
 <!-- {"blockType": "request", "name": "get_current_user" } -->
 ```http
@@ -30,7 +31,7 @@ Content-Type: application/json
 ```
 
 
-## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="22d51-106">将驱动器定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="22d51-106">Define drives as an queryable entityset</span></span>
+## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="8acb6-106">将驱动器定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="8acb6-106">Define drives as an queryable entityset</span></span>
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
@@ -46,7 +47,7 @@ Content-Type: application/json
 ```
 
 
-## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="22d51-107">将用户定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="22d51-107">define users as an queryable entityset</span></span>
+## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="8acb6-107">将用户定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="8acb6-107">define users as an queryable entityset</span></span>
 
 <!-- {"blockType": "request", "name": "get_users" } -->
 ```http
