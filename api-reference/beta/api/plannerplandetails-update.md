@@ -1,55 +1,56 @@
 ---
 title: 更新 plannerplandetails
 description: 更新 **plannerplandetails** 对象的属性。
-ms.openlocfilehash: 418dac7a44a3ea7b8ad48ca6a087294818b64ab4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 45675e4c45e14b8574a66edda581e59203159608
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843993"
 ---
-# <a name="update-plannerplandetails"></a><span data-ttu-id="b66d8-103">更新 plannerplandetails</span><span class="sxs-lookup"><span data-stu-id="b66d8-103">Update plannerplandetails</span></span>
+# <a name="update-plannerplandetails"></a><span data-ttu-id="817ba-103">更新 plannerplandetails</span><span class="sxs-lookup"><span data-stu-id="817ba-103">Update plannerplandetails</span></span>
 
-> <span data-ttu-id="b66d8-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="b66d8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b66d8-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b66d8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="817ba-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="817ba-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="817ba-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="817ba-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="b66d8-106">更新 **plannerplandetails** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b66d8-106">Update the properties of **plannerplandetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b66d8-107">权限</span><span class="sxs-lookup"><span data-stu-id="b66d8-107">Permissions</span></span>
-<span data-ttu-id="b66d8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="817ba-106">更新 **plannerplandetails** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="817ba-106">Update the properties of **plannerplandetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="817ba-107">权限</span><span class="sxs-lookup"><span data-stu-id="817ba-107">Permissions</span></span>
+<span data-ttu-id="817ba-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="817ba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b66d8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b66d8-110">Permission type</span></span>      | <span data-ttu-id="b66d8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b66d8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="817ba-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="817ba-110">Permission type</span></span>      | <span data-ttu-id="817ba-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="817ba-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b66d8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b66d8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b66d8-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b66d8-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b66d8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b66d8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b66d8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b66d8-115">Not supported.</span></span>    |
-|<span data-ttu-id="b66d8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b66d8-116">Application</span></span> | <span data-ttu-id="b66d8-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="b66d8-117">Not supported.</span></span> |
+|<span data-ttu-id="817ba-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="817ba-112">Delegated (work or school account)</span></span> | <span data-ttu-id="817ba-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="817ba-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="817ba-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="817ba-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="817ba-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="817ba-115">Not supported.</span></span>    |
+|<span data-ttu-id="817ba-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="817ba-116">Application</span></span> | <span data-ttu-id="817ba-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="817ba-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b66d8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b66d8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="817ba-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="817ba-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/plans/<id>/details
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="b66d8-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="b66d8-119">Optional request headers</span></span>
-| <span data-ttu-id="b66d8-120">名称</span><span class="sxs-lookup"><span data-stu-id="b66d8-120">Name</span></span>       | <span data-ttu-id="b66d8-121">说明</span><span class="sxs-lookup"><span data-stu-id="b66d8-121">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="817ba-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="817ba-119">Optional request headers</span></span>
+| <span data-ttu-id="817ba-120">名称</span><span class="sxs-lookup"><span data-stu-id="817ba-120">Name</span></span>       | <span data-ttu-id="817ba-121">说明</span><span class="sxs-lookup"><span data-stu-id="817ba-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="b66d8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b66d8-122">Authorization</span></span>  | <span data-ttu-id="b66d8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b66d8-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="b66d8-125">If-Match</span></span>  | <span data-ttu-id="b66d8-p104">要更新的 plannerPlanDetails 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p104">Last known ETag value for the plannerPlanDetails to be updated. Required.</span></span>|
+| <span data-ttu-id="817ba-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="817ba-122">Authorization</span></span>  | <span data-ttu-id="817ba-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="817ba-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="817ba-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="817ba-125">If-Match</span></span>  | <span data-ttu-id="817ba-p104">要更新的 plannerPlanDetails 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="817ba-p104">Last known ETag value for the plannerPlanDetails to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b66d8-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b66d8-128">Request body</span></span>
-<span data-ttu-id="b66d8-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="817ba-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="817ba-128">Request body</span></span>
+<span data-ttu-id="817ba-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="817ba-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="b66d8-132">属性</span><span class="sxs-lookup"><span data-stu-id="b66d8-132">Property</span></span>     | <span data-ttu-id="b66d8-133">类型</span><span class="sxs-lookup"><span data-stu-id="b66d8-133">Type</span></span>   |<span data-ttu-id="b66d8-134">说明</span><span class="sxs-lookup"><span data-stu-id="b66d8-134">Description</span></span>|
+| <span data-ttu-id="817ba-132">属性</span><span class="sxs-lookup"><span data-stu-id="817ba-132">Property</span></span>     | <span data-ttu-id="817ba-133">类型</span><span class="sxs-lookup"><span data-stu-id="817ba-133">Type</span></span>   |<span data-ttu-id="817ba-134">说明</span><span class="sxs-lookup"><span data-stu-id="817ba-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b66d8-135">categoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="b66d8-135">categoryDescriptions</span></span>|[<span data-ttu-id="b66d8-136">plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="b66d8-136">plannerCategoryDescriptions</span></span>](../resources/plannercategorydescriptions.md)|<span data-ttu-id="b66d8-137">指定可与计划中的任务相关联的六个类别的描述的对象</span><span class="sxs-lookup"><span data-stu-id="b66d8-137">An object that specifies the descriptions of the six categories that can be associated with tasks in the plan</span></span>|
-|<span data-ttu-id="b66d8-138">sharedWith</span><span class="sxs-lookup"><span data-stu-id="b66d8-138">sharedWith</span></span>|[<span data-ttu-id="b66d8-139">plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="b66d8-139">plannerUserIds</span></span>](../resources/planneruserids.md)|<span data-ttu-id="b66d8-p106">此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](../resources/group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p106">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](../resources/group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|
+|<span data-ttu-id="817ba-135">categoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="817ba-135">categoryDescriptions</span></span>|[<span data-ttu-id="817ba-136">plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="817ba-136">plannerCategoryDescriptions</span></span>](../resources/plannercategorydescriptions.md)|<span data-ttu-id="817ba-137">指定可与计划中的任务相关联的六个类别的描述的对象</span><span class="sxs-lookup"><span data-stu-id="817ba-137">An object that specifies the descriptions of the six categories that can be associated with tasks in the plan</span></span>|
+|<span data-ttu-id="817ba-138">sharedWith</span><span class="sxs-lookup"><span data-stu-id="817ba-138">sharedWith</span></span>|[<span data-ttu-id="817ba-139">plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="817ba-139">plannerUserIds</span></span>](../resources/planneruserids.md)|<span data-ttu-id="817ba-p106">此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](../resources/group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。</span><span class="sxs-lookup"><span data-stu-id="817ba-p106">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](../resources/group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b66d8-143">响应</span><span class="sxs-lookup"><span data-stu-id="b66d8-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="817ba-143">响应</span><span class="sxs-lookup"><span data-stu-id="817ba-143">Response</span></span>
 
-<span data-ttu-id="b66d8-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b66d8-144">If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.</span></span>
+<span data-ttu-id="817ba-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerPlanDetails](../resources/plannerplandetails.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="817ba-144">If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="b66d8-p107">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="817ba-p107">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="817ba-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="b66d8-148">示例</span><span class="sxs-lookup"><span data-stu-id="b66d8-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b66d8-149">请求</span><span class="sxs-lookup"><span data-stu-id="b66d8-149">Request</span></span>
-<span data-ttu-id="b66d8-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b66d8-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="817ba-148">示例</span><span class="sxs-lookup"><span data-stu-id="817ba-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="817ba-149">请求</span><span class="sxs-lookup"><span data-stu-id="817ba-149">Request</span></span>
+<span data-ttu-id="817ba-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="817ba-150">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_plannerplandetails"
@@ -71,8 +72,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="b66d8-151">响应</span><span class="sxs-lookup"><span data-stu-id="b66d8-151">Response</span></span>
-<span data-ttu-id="b66d8-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b66d8-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="817ba-151">响应</span><span class="sxs-lookup"><span data-stu-id="817ba-151">Response</span></span>
+<span data-ttu-id="817ba-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="817ba-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

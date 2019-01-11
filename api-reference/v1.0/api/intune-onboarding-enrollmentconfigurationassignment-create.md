@@ -2,29 +2,30 @@
 title: 创建 enrollmentConfigurationAssignment
 description: 创建新的 enrollmentConfigurationAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: e2677c6a1ecabe71a0ff46c8e11e2e8d4515f786
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d378b9f4663a6f3770d00a0f7971d1bc4c3b01b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844084"
 ---
-# <a name="create-enrollmentconfigurationassignment"></a><span data-ttu-id="1b5f4-103">创建 enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="1b5f4-103">Create enrollmentConfigurationAssignment</span></span>
+# <a name="create-enrollmentconfigurationassignment"></a><span data-ttu-id="164fa-103">创建 enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="164fa-103">Create enrollmentConfigurationAssignment</span></span>
 
-> <span data-ttu-id="1b5f4-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="164fa-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="164fa-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="1b5f4-105">创建新的 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-105">Create a new [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="1b5f4-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="1b5f4-106">Prerequisites</span></span>
-<span data-ttu-id="1b5f4-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="1b5f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="164fa-105">创建新的 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="164fa-105">Create a new [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="164fa-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="164fa-106">Prerequisites</span></span>
+<span data-ttu-id="164fa-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="164fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1b5f4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1b5f4-109">Permission type</span></span>|<span data-ttu-id="1b5f4-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1b5f4-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="164fa-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="164fa-109">Permission type</span></span>|<span data-ttu-id="164fa-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="164fa-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1b5f4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1b5f4-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1b5f4-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b5f4-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="1b5f4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1b5f4-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1b5f4-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-114">Not supported.</span></span>|
-|<span data-ttu-id="1b5f4-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1b5f4-115">Application</span></span>|<span data-ttu-id="1b5f4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-116">Not supported.</span></span>|
+|<span data-ttu-id="164fa-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="164fa-111">Delegated (work or school account)</span></span>|<span data-ttu-id="164fa-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="164fa-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="164fa-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="164fa-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="164fa-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="164fa-114">Not supported.</span></span>|
+|<span data-ttu-id="164fa-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="164fa-115">Application</span></span>|<span data-ttu-id="164fa-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="164fa-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1b5f4-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1b5f4-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="164fa-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="164fa-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,30 +34,30 @@ ms.locfileid: "27301615"
 POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1b5f4-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="1b5f4-118">Request headers</span></span>
-|<span data-ttu-id="1b5f4-119">标头</span><span class="sxs-lookup"><span data-stu-id="1b5f4-119">Header</span></span>|<span data-ttu-id="1b5f4-120">值</span><span class="sxs-lookup"><span data-stu-id="1b5f4-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="164fa-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="164fa-118">Request headers</span></span>
+|<span data-ttu-id="164fa-119">标头</span><span class="sxs-lookup"><span data-stu-id="164fa-119">Header</span></span>|<span data-ttu-id="164fa-120">值</span><span class="sxs-lookup"><span data-stu-id="164fa-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1b5f4-121">授权</span><span class="sxs-lookup"><span data-stu-id="1b5f4-121">Authorization</span></span>|<span data-ttu-id="1b5f4-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1b5f4-123">Accept</span><span class="sxs-lookup"><span data-stu-id="1b5f4-123">Accept</span></span>|<span data-ttu-id="1b5f4-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1b5f4-124">application/json</span></span>|
+|<span data-ttu-id="164fa-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="164fa-121">Authorization</span></span>|<span data-ttu-id="164fa-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="164fa-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="164fa-123">Accept</span><span class="sxs-lookup"><span data-stu-id="164fa-123">Accept</span></span>|<span data-ttu-id="164fa-124">application/json</span><span class="sxs-lookup"><span data-stu-id="164fa-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1b5f4-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="1b5f4-125">Request body</span></span>
-<span data-ttu-id="1b5f4-126">在请求正文中，提供 enrollmentConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-126">In the request body, supply a JSON representation for the enrollmentConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="164fa-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="164fa-125">Request body</span></span>
+<span data-ttu-id="164fa-126">在请求正文中，提供 enrollmentConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="164fa-126">In the request body, supply a JSON representation for the enrollmentConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="1b5f4-127">下表显示创建 enrollmentConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-127">The following table shows the properties that are required when you create the enrollmentConfigurationAssignment.</span></span>
+<span data-ttu-id="164fa-127">下表显示创建 enrollmentConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="164fa-127">The following table shows the properties that are required when you create the enrollmentConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="1b5f4-128">属性</span><span class="sxs-lookup"><span data-stu-id="1b5f4-128">Property</span></span>|<span data-ttu-id="1b5f4-129">类型</span><span class="sxs-lookup"><span data-stu-id="1b5f4-129">Type</span></span>|<span data-ttu-id="1b5f4-130">说明</span><span class="sxs-lookup"><span data-stu-id="1b5f4-130">Description</span></span>|
+|<span data-ttu-id="164fa-128">属性</span><span class="sxs-lookup"><span data-stu-id="164fa-128">Property</span></span>|<span data-ttu-id="164fa-129">类型</span><span class="sxs-lookup"><span data-stu-id="164fa-129">Type</span></span>|<span data-ttu-id="164fa-130">说明</span><span class="sxs-lookup"><span data-stu-id="164fa-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1b5f4-131">id</span><span class="sxs-lookup"><span data-stu-id="1b5f4-131">id</span></span>|<span data-ttu-id="1b5f4-132">字符串</span><span class="sxs-lookup"><span data-stu-id="1b5f4-132">String</span></span>|<span data-ttu-id="1b5f4-133">尚未记录</span><span class="sxs-lookup"><span data-stu-id="1b5f4-133">Not yet documented</span></span>|
-|<span data-ttu-id="1b5f4-134">target</span><span class="sxs-lookup"><span data-stu-id="1b5f4-134">target</span></span>|[<span data-ttu-id="1b5f4-135">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="1b5f4-135">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="1b5f4-136">尚未记录</span><span class="sxs-lookup"><span data-stu-id="1b5f4-136">Not yet documented</span></span>|
+|<span data-ttu-id="164fa-131">id</span><span class="sxs-lookup"><span data-stu-id="164fa-131">id</span></span>|<span data-ttu-id="164fa-132">字符串</span><span class="sxs-lookup"><span data-stu-id="164fa-132">String</span></span>|<span data-ttu-id="164fa-133">尚未记录</span><span class="sxs-lookup"><span data-stu-id="164fa-133">Not yet documented</span></span>|
+|<span data-ttu-id="164fa-134">target</span><span class="sxs-lookup"><span data-stu-id="164fa-134">target</span></span>|[<span data-ttu-id="164fa-135">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="164fa-135">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="164fa-136">尚未记录</span><span class="sxs-lookup"><span data-stu-id="164fa-136">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1b5f4-137">响应</span><span class="sxs-lookup"><span data-stu-id="1b5f4-137">Response</span></span>
-<span data-ttu-id="1b5f4-138">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-138">If successful, this method returns a `201 Created` response code and a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="164fa-137">响应</span><span class="sxs-lookup"><span data-stu-id="164fa-137">Response</span></span>
+<span data-ttu-id="164fa-138">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="164fa-138">If successful, this method returns a `201 Created` response code and a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1b5f4-139">示例</span><span class="sxs-lookup"><span data-stu-id="1b5f4-139">Example</span></span>
-### <a name="request"></a><span data-ttu-id="1b5f4-140">请求</span><span class="sxs-lookup"><span data-stu-id="1b5f4-140">Request</span></span>
-<span data-ttu-id="1b5f4-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="164fa-139">示例</span><span class="sxs-lookup"><span data-stu-id="164fa-139">Example</span></span>
+### <a name="request"></a><span data-ttu-id="164fa-140">请求</span><span class="sxs-lookup"><span data-stu-id="164fa-140">Request</span></span>
+<span data-ttu-id="164fa-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="164fa-141">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments
 Content-type: application/json
@@ -70,8 +71,8 @@ Content-length: 173
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1b5f4-142">响应</span><span class="sxs-lookup"><span data-stu-id="1b5f4-142">Response</span></span>
-<span data-ttu-id="1b5f4-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1b5f4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="164fa-142">响应</span><span class="sxs-lookup"><span data-stu-id="164fa-142">Response</span></span>
+<span data-ttu-id="164fa-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="164fa-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

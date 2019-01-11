@@ -1,48 +1,49 @@
 ---
 title: 列出 registeredOwner
 description: 检索身份为已注册设备的所有者的用户列表。 已注册的所有者是云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。
-ms.openlocfilehash: 7a56e036ac904f98fdc1cc2d4f781f97f43c85dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f2b39217485ef248cb7da203152f8e87c483096d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845680"
 ---
-# <a name="list-registeredowners"></a><span data-ttu-id="e2e66-106">列出 registeredOwner</span><span class="sxs-lookup"><span data-stu-id="e2e66-106">List registeredOwners</span></span>
+# <a name="list-registeredowners"></a><span data-ttu-id="9687b-106">列出 registeredOwner</span><span class="sxs-lookup"><span data-stu-id="9687b-106">List registeredOwners</span></span>
 
-<span data-ttu-id="e2e66-107">检索身份为已注册设备的所有者的用户列表。</span><span class="sxs-lookup"><span data-stu-id="e2e66-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="e2e66-108">已注册的所有者是云加入设备或已注册个人设备的用户。</span><span class="sxs-lookup"><span data-stu-id="e2e66-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="e2e66-109">已注册的所有者是在注册时设置。</span><span class="sxs-lookup"><span data-stu-id="e2e66-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="e2e66-110">目前，只能有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="e2e66-110">Currently, there can be only one owner.</span></span>
+<span data-ttu-id="9687b-107">检索身份为已注册设备的所有者的用户列表。</span><span class="sxs-lookup"><span data-stu-id="9687b-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="9687b-108">已注册的所有者是云加入设备或已注册个人设备的用户。</span><span class="sxs-lookup"><span data-stu-id="9687b-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="9687b-109">已注册的所有者是在注册时设置。</span><span class="sxs-lookup"><span data-stu-id="9687b-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="9687b-110">目前，只能有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="9687b-110">Currently, there can be only one owner.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2e66-111">权限</span><span class="sxs-lookup"><span data-stu-id="e2e66-111">Permissions</span></span>
-<span data-ttu-id="e2e66-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e2e66-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9687b-111">权限</span><span class="sxs-lookup"><span data-stu-id="9687b-111">Permissions</span></span>
+<span data-ttu-id="9687b-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9687b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="e2e66-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="e2e66-114">Permission type</span></span>      | <span data-ttu-id="e2e66-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e2e66-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9687b-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="9687b-114">Permission type</span></span>      | <span data-ttu-id="9687b-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9687b-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2e66-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e2e66-116">Delegated (work or school account)</span></span> | <span data-ttu-id="e2e66-117">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e2e66-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e2e66-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e2e66-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2e66-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="e2e66-119">Not supported.</span></span>    |
-|<span data-ttu-id="e2e66-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="e2e66-120">Application</span></span> | <span data-ttu-id="e2e66-121">Directory.Read.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2e66-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="9687b-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9687b-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9687b-117">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9687b-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="9687b-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9687b-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9687b-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="9687b-119">Not supported.</span></span>    |
+|<span data-ttu-id="9687b-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="9687b-120">Application</span></span> | <span data-ttu-id="9687b-121">Directory.Read.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9687b-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2e66-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e2e66-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9687b-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9687b-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e2e66-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e2e66-123">Optional query parameters</span></span>
-<span data-ttu-id="e2e66-124">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e2e66-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="e2e66-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="e2e66-125">Request headers</span></span>
-| <span data-ttu-id="e2e66-126">名称</span><span class="sxs-lookup"><span data-stu-id="e2e66-126">Name</span></span>       | <span data-ttu-id="e2e66-127">类型</span><span class="sxs-lookup"><span data-stu-id="e2e66-127">Type</span></span> | <span data-ttu-id="e2e66-128">说明</span><span class="sxs-lookup"><span data-stu-id="e2e66-128">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="9687b-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9687b-123">Optional query parameters</span></span>
+<span data-ttu-id="9687b-124">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9687b-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9687b-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="9687b-125">Request headers</span></span>
+| <span data-ttu-id="9687b-126">名称</span><span class="sxs-lookup"><span data-stu-id="9687b-126">Name</span></span>       | <span data-ttu-id="9687b-127">类型</span><span class="sxs-lookup"><span data-stu-id="9687b-127">Type</span></span> | <span data-ttu-id="9687b-128">说明</span><span class="sxs-lookup"><span data-stu-id="9687b-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="e2e66-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="e2e66-129">Authorization</span></span>  | <span data-ttu-id="e2e66-130">string</span><span class="sxs-lookup"><span data-stu-id="e2e66-130">string</span></span>  | <span data-ttu-id="e2e66-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e2e66-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9687b-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="9687b-129">Authorization</span></span>  | <span data-ttu-id="9687b-130">string</span><span class="sxs-lookup"><span data-stu-id="9687b-130">string</span></span>  | <span data-ttu-id="9687b-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9687b-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e2e66-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="e2e66-133">Request body</span></span>
-<span data-ttu-id="e2e66-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e2e66-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9687b-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="9687b-133">Request body</span></span>
+<span data-ttu-id="9687b-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9687b-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e2e66-135">响应</span><span class="sxs-lookup"><span data-stu-id="e2e66-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9687b-135">响应</span><span class="sxs-lookup"><span data-stu-id="9687b-135">Response</span></span>
 
-<span data-ttu-id="e2e66-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e2e66-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e2e66-137">示例</span><span class="sxs-lookup"><span data-stu-id="e2e66-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e2e66-138">请求</span><span class="sxs-lookup"><span data-stu-id="e2e66-138">Request</span></span>
-<span data-ttu-id="e2e66-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e2e66-139">Here is an example of the request.</span></span>
+<span data-ttu-id="9687b-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="9687b-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9687b-137">示例</span><span class="sxs-lookup"><span data-stu-id="9687b-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9687b-138">请求</span><span class="sxs-lookup"><span data-stu-id="9687b-138">Request</span></span>
+<span data-ttu-id="9687b-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9687b-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_registeredowners"
@@ -50,8 +51,8 @@ GET /devices/{id}/registeredOwners
 ```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
-##### <a name="response"></a><span data-ttu-id="e2e66-140">响应</span><span class="sxs-lookup"><span data-stu-id="e2e66-140">Response</span></span>
-<span data-ttu-id="e2e66-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e2e66-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9687b-140">响应</span><span class="sxs-lookup"><span data-stu-id="9687b-140">Response</span></span>
+<span data-ttu-id="9687b-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9687b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

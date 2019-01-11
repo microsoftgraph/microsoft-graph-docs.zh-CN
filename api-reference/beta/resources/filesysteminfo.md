@@ -3,22 +3,23 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FileSystemInfo
-ms.openlocfilehash: 08a79a265e8d4dbda3017a1ff8a32c5e4cab51ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d69f00c8c52352acdd00ff4d6adc41908fffe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835831"
 ---
-# <a name="filesysteminfo-facet"></a><span data-ttu-id="6c10e-102">FileSystemInfo Facet</span><span class="sxs-lookup"><span data-stu-id="6c10e-102">FileSystemInfo facet</span></span>
+# <a name="filesysteminfo-facet"></a><span data-ttu-id="4a33f-102">FileSystemInfo Facet</span><span class="sxs-lookup"><span data-stu-id="4a33f-102">FileSystemInfo facet</span></span>
 
-> <span data-ttu-id="6c10e-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6c10e-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6c10e-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6c10e-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4a33f-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4a33f-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4a33f-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4a33f-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6c10e-p102"> *\*FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。</span><span class="sxs-lookup"><span data-stu-id="6c10e-p102">The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item. This facet can be used to specify the last modified date or created date of the item as it was on the local device.</span></span>
+<span data-ttu-id="4a33f-p102"> *\*FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。</span><span class="sxs-lookup"><span data-stu-id="4a33f-p102">The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item. This facet can be used to specify the last modified date or created date of the item as it was on the local device.</span></span>
 
-<span data-ttu-id="6c10e-107">可用于 [driveItem][item-resource] 资源的 fileSystemInfo 属性。</span><span class="sxs-lookup"><span data-stu-id="6c10e-107">It is available on the fileSystemInfo property of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="4a33f-107">可用于 [driveItem][item-resource] 资源的 fileSystemInfo 属性。</span><span class="sxs-lookup"><span data-stu-id="4a33f-107">It is available on the fileSystemInfo property of [driveItem][item-resource] resources.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6c10e-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6c10e-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4a33f-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4a33f-108">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,29 +37,29 @@ ms.locfileid: "27042184"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="6c10e-109">属性</span><span class="sxs-lookup"><span data-stu-id="6c10e-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4a33f-109">属性</span><span class="sxs-lookup"><span data-stu-id="4a33f-109">Properties</span></span>
 
-| <span data-ttu-id="6c10e-110">属性</span><span class="sxs-lookup"><span data-stu-id="6c10e-110">Property</span></span>                 | <span data-ttu-id="6c10e-111">类型</span><span class="sxs-lookup"><span data-stu-id="6c10e-111">Type</span></span>           | <span data-ttu-id="6c10e-112">说明</span><span class="sxs-lookup"><span data-stu-id="6c10e-112">Description</span></span>                                                                                                          |
+| <span data-ttu-id="4a33f-110">属性</span><span class="sxs-lookup"><span data-stu-id="4a33f-110">Property</span></span>                 | <span data-ttu-id="4a33f-111">类型</span><span class="sxs-lookup"><span data-stu-id="4a33f-111">Type</span></span>           | <span data-ttu-id="4a33f-112">说明</span><span class="sxs-lookup"><span data-stu-id="4a33f-112">Description</span></span>                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="6c10e-113">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="6c10e-113">**createdDateTime**</span></span>      | <span data-ttu-id="6c10e-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6c10e-114">DateTimeOffset</span></span> | <span data-ttu-id="6c10e-115">在客户端创建文件时的 UTC 日期和时间。</span><span class="sxs-lookup"><span data-stu-id="6c10e-115">The UTC date and time the file was created on a client.</span></span>                                                              |
-| <span data-ttu-id="6c10e-116">**lastAccessedDateTime**</span><span class="sxs-lookup"><span data-stu-id="6c10e-116">**lastAccessedDateTime**</span></span> | <span data-ttu-id="6c10e-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6c10e-117">DateTimeOffset</span></span> | <span data-ttu-id="6c10e-p103">上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive-recent.md)。</span><span class="sxs-lookup"><span data-stu-id="6c10e-p103">The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only.</span></span> |
-| <span data-ttu-id="6c10e-120">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="6c10e-120">**lastModifiedDateTime**</span></span> | <span data-ttu-id="6c10e-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6c10e-121">DateTimeOffset</span></span> | <span data-ttu-id="6c10e-122">在客户端上次修改文件时的 UTC 日期和时间。</span><span class="sxs-lookup"><span data-stu-id="6c10e-122">The UTC date and time the file was last modified on a client.</span></span>                                                        |
+| <span data-ttu-id="4a33f-113">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="4a33f-113">**createdDateTime**</span></span>      | <span data-ttu-id="4a33f-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a33f-114">DateTimeOffset</span></span> | <span data-ttu-id="4a33f-115">在客户端创建文件时的 UTC 日期和时间。</span><span class="sxs-lookup"><span data-stu-id="4a33f-115">The UTC date and time the file was created on a client.</span></span>                                                              |
+| <span data-ttu-id="4a33f-116">**lastAccessedDateTime**</span><span class="sxs-lookup"><span data-stu-id="4a33f-116">**lastAccessedDateTime**</span></span> | <span data-ttu-id="4a33f-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a33f-117">DateTimeOffset</span></span> | <span data-ttu-id="4a33f-p103">上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive-recent.md)。</span><span class="sxs-lookup"><span data-stu-id="4a33f-p103">The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only.</span></span> |
+| <span data-ttu-id="4a33f-120">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="4a33f-120">**lastModifiedDateTime**</span></span> | <span data-ttu-id="4a33f-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a33f-121">DateTimeOffset</span></span> | <span data-ttu-id="4a33f-122">在客户端上次修改文件时的 UTC 日期和时间。</span><span class="sxs-lookup"><span data-stu-id="4a33f-122">The UTC date and time the file was last modified on a client.</span></span>                                                        |
 
-## <a name="notes"></a><span data-ttu-id="6c10e-123">注释</span><span class="sxs-lookup"><span data-stu-id="6c10e-123">Notes</span></span>
+## <a name="notes"></a><span data-ttu-id="4a33f-123">注释</span><span class="sxs-lookup"><span data-stu-id="4a33f-123">Notes</span></span>
 
-<span data-ttu-id="6c10e-p104">来自 [DriveItem](driveitem.md) 资源上同一属性的 **createdDateTime** 和 **lastModifiedDateTime** 值有所不同。DriveItem 资源上的值是从服务中所见的创建和修改的日期和时间。**FileSystemInfo** 资源中存储的值由客户端提供。</span><span class="sxs-lookup"><span data-stu-id="6c10e-p104">Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](driveitem.md) resource. The values on the DriveItem resource are the created and modified date and time as seen from the service. The values stored in the **FileSystemInfo** resource are provided by the client.</span></span>
+<span data-ttu-id="4a33f-p104">来自 [DriveItem](driveitem.md) 资源上同一属性的 **createdDateTime** 和 **lastModifiedDateTime** 值有所不同。DriveItem 资源上的值是从服务中所见的创建和修改的日期和时间。**FileSystemInfo** 资源中存储的值由客户端提供。</span><span class="sxs-lookup"><span data-stu-id="4a33f-p104">Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](driveitem.md) resource. The values on the DriveItem resource are the created and modified date and time as seen from the service. The values stored in the **FileSystemInfo** resource are provided by the client.</span></span>
 
-<span data-ttu-id="6c10e-p105">例如，如果星期一在设备上创建文件，但直到星期二才上载到服务，则上载文件的客户端应写入 `fileSystemInfo` facet，以包括星期一这一创建日期。检索项元数据时，项的创建日期将反映为星期二，但 `fileSystemInfo` facet 将显示星期一这一创建的原始创建日期。</span><span class="sxs-lookup"><span data-stu-id="6c10e-p105">For example, if a file was created on the device on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the original created date on Monday.</span></span>
+<span data-ttu-id="4a33f-p105">例如，如果星期一在设备上创建文件，但直到星期二才上载到服务，则上载文件的客户端应写入 `fileSystemInfo` facet，以包括星期一这一创建日期。检索项元数据时，项的创建日期将反映为星期二，但 `fileSystemInfo` facet 将显示星期一这一创建的原始创建日期。</span><span class="sxs-lookup"><span data-stu-id="4a33f-p105">For example, if a file was created on the device on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the original created date on Monday.</span></span>
 
-<span data-ttu-id="6c10e-p106">这些属性为读/写。如果正在上载文件，并且知道这些字段的本地客户端值，则应该在请求中包括它们。</span><span class="sxs-lookup"><span data-stu-id="6c10e-p106">These properties are read/write. If you are uploading a file and know the local client values for these fields, you should include them in the request.</span></span>
+<span data-ttu-id="4a33f-p106">这些属性为读/写。如果正在上载文件，并且知道这些字段的本地客户端值，则应该在请求中包括它们。</span><span class="sxs-lookup"><span data-stu-id="4a33f-p106">These properties are read/write. If you are uploading a file and know the local client values for these fields, you should include them in the request.</span></span>
 
-<span data-ttu-id="6c10e-131">如果文件内容已更新且未提供这些属性，**lastModifiedDateTime** 将自动重置为当前时间。</span><span class="sxs-lookup"><span data-stu-id="6c10e-131">If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.</span></span>
+<span data-ttu-id="4a33f-131">如果文件内容已更新且未提供这些属性，**lastModifiedDateTime** 将自动重置为当前时间。</span><span class="sxs-lookup"><span data-stu-id="4a33f-131">If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6c10e-132">备注</span><span class="sxs-lookup"><span data-stu-id="6c10e-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4a33f-132">备注</span><span class="sxs-lookup"><span data-stu-id="4a33f-132">Remarks</span></span>
 
-* <span data-ttu-id="6c10e-133">**lastAccessedDateTime** 不适用于 SharePoint Online 或 OneDrive for Business 中的项。</span><span class="sxs-lookup"><span data-stu-id="6c10e-133">**lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.</span></span>
+* <span data-ttu-id="4a33f-133">**lastAccessedDateTime** 不适用于 SharePoint Online 或 OneDrive for Business 中的项。</span><span class="sxs-lookup"><span data-stu-id="4a33f-133">**lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.</span></span>
 
-<span data-ttu-id="6c10e-134">有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="6c10e-134">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="4a33f-134">有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="4a33f-134">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 [item-resource]: ../resources/driveitem.md
 
