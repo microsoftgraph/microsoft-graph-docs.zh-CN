@@ -1,22 +1,23 @@
 ---
 title: meetingTimeSuggestion 资源类型
 description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
-ms.openlocfilehash: 04b7996292decab5330cb17b8aada82d58cf759f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a38a971bb43fa13d8617e5fad1c4b5646bf224ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884425"
 ---
-# <a name="meetingtimesuggestion-resource-type"></a><span data-ttu-id="a4fca-103">meetingTimeSuggestion 资源类型</span><span class="sxs-lookup"><span data-stu-id="a4fca-103">meetingTimeSuggestion resource type</span></span>
+# <a name="meetingtimesuggestion-resource-type"></a><span data-ttu-id="76b16-103">meetingTimeSuggestion 资源类型</span><span class="sxs-lookup"><span data-stu-id="76b16-103">meetingTimeSuggestion resource type</span></span>
 
-> <span data-ttu-id="a4fca-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a4fca-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a4fca-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a4fca-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="76b16-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="76b16-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="76b16-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="76b16-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a4fca-106">会议时间建议包括会议时间、出席可能性、个人忙/闲状态和可用会议地点等信息。</span><span class="sxs-lookup"><span data-stu-id="a4fca-106">A meeting suggestion that includes information like meeting time, attendance likelihood, individual availability, and available meeting locations.</span></span>
+<span data-ttu-id="76b16-106">会议时间建议包括会议时间、出席可能性、个人忙/闲状态和可用会议地点等信息。</span><span class="sxs-lookup"><span data-stu-id="76b16-106">A meeting suggestion that includes information like meeting time, attendance likelihood, individual availability, and available meeting locations.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a4fca-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a4fca-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="76b16-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="76b16-107">JSON representation</span></span>
 
-<span data-ttu-id="a4fca-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a4fca-108">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="76b16-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="76b16-108">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,15 +38,15 @@ ms.locfileid: "27049055"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="a4fca-109">属性</span><span class="sxs-lookup"><span data-stu-id="a4fca-109">Properties</span></span>
-| <span data-ttu-id="a4fca-110">属性</span><span class="sxs-lookup"><span data-stu-id="a4fca-110">Property</span></span>     | <span data-ttu-id="a4fca-111">类型</span><span class="sxs-lookup"><span data-stu-id="a4fca-111">Type</span></span>   |<span data-ttu-id="a4fca-112">说明</span><span class="sxs-lookup"><span data-stu-id="a4fca-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="76b16-109">属性</span><span class="sxs-lookup"><span data-stu-id="76b16-109">Properties</span></span>
+| <span data-ttu-id="76b16-110">属性</span><span class="sxs-lookup"><span data-stu-id="76b16-110">Property</span></span>     | <span data-ttu-id="76b16-111">类型</span><span class="sxs-lookup"><span data-stu-id="76b16-111">Type</span></span>   |<span data-ttu-id="76b16-112">说明</span><span class="sxs-lookup"><span data-stu-id="76b16-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a4fca-113">attendeeAvailability</span><span class="sxs-lookup"><span data-stu-id="a4fca-113">attendeeAvailability</span></span>|<span data-ttu-id="a4fca-114">[attendeeAvailability](attendeeavailability.md) 集合</span><span class="sxs-lookup"><span data-stu-id="a4fca-114">[attendeeAvailability](attendeeavailability.md) collection</span></span>|<span data-ttu-id="a4fca-115">显示此会议时间建议中各个与会者的忙/闲状态的数组。</span><span class="sxs-lookup"><span data-stu-id="a4fca-115">An array that shows the availability status of each attendee for this meeting suggestion.</span></span>|
-|<span data-ttu-id="a4fca-116">confidence</span><span class="sxs-lookup"><span data-stu-id="a4fca-116">confidence</span></span>|<span data-ttu-id="a4fca-117">Double</span><span class="sxs-lookup"><span data-stu-id="a4fca-117">Double</span></span>|<span data-ttu-id="a4fca-118">表示所有与会者的出席可能性的百分比值。</span><span class="sxs-lookup"><span data-stu-id="a4fca-118">A percentage that represents the likelhood of all the attendees attending.</span></span>|
-|<span data-ttu-id="a4fca-119">locations</span><span class="sxs-lookup"><span data-stu-id="a4fca-119">locations</span></span>|<span data-ttu-id="a4fca-120">[location](location.md) 集合</span><span class="sxs-lookup"><span data-stu-id="a4fca-120">[location](location.md) collection</span></span>|<span data-ttu-id="a4fca-121">指定此会议时间建议中各个会议地点的名称和地理位置的数组。</span><span class="sxs-lookup"><span data-stu-id="a4fca-121">An array that specifies the name and geographic location of each meeting location for this meeting suggestion.</span></span>|
-|<span data-ttu-id="a4fca-122">meetingTimeSlot</span><span class="sxs-lookup"><span data-stu-id="a4fca-122">meetingTimeSlot</span></span>|[<span data-ttu-id="a4fca-123">timeSlot</span><span class="sxs-lookup"><span data-stu-id="a4fca-123">timeSlot</span></span>](timeslot.md)|<span data-ttu-id="a4fca-124">建议的会议时间段。</span><span class="sxs-lookup"><span data-stu-id="a4fca-124">A time period suggested for the meeting.</span></span>|
-|<span data-ttu-id="a4fca-125">organizerAvailability</span><span class="sxs-lookup"><span data-stu-id="a4fca-125">organizerAvailability</span></span>|<span data-ttu-id="a4fca-126">字符串</span><span class="sxs-lookup"><span data-stu-id="a4fca-126">String</span></span>| <span data-ttu-id="a4fca-p102">此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="a4fca-p102">Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
-|<span data-ttu-id="a4fca-129">suggestionReason</span><span class="sxs-lookup"><span data-stu-id="a4fca-129">suggestionReason</span></span>|<span data-ttu-id="a4fca-130">String</span><span class="sxs-lookup"><span data-stu-id="a4fca-130">String</span></span>|<span data-ttu-id="a4fca-131">会议时间建议的理由。</span><span class="sxs-lookup"><span data-stu-id="a4fca-131">Reason for suggesting the meeting time.</span></span>|
+|<span data-ttu-id="76b16-113">attendeeAvailability</span><span class="sxs-lookup"><span data-stu-id="76b16-113">attendeeAvailability</span></span>|<span data-ttu-id="76b16-114">[attendeeAvailability](attendeeavailability.md) 集合</span><span class="sxs-lookup"><span data-stu-id="76b16-114">[attendeeAvailability](attendeeavailability.md) collection</span></span>|<span data-ttu-id="76b16-115">显示此会议时间建议中各个与会者的忙/闲状态的数组。</span><span class="sxs-lookup"><span data-stu-id="76b16-115">An array that shows the availability status of each attendee for this meeting suggestion.</span></span>|
+|<span data-ttu-id="76b16-116">confidence</span><span class="sxs-lookup"><span data-stu-id="76b16-116">confidence</span></span>|<span data-ttu-id="76b16-117">Double</span><span class="sxs-lookup"><span data-stu-id="76b16-117">Double</span></span>|<span data-ttu-id="76b16-118">表示所有与会者的出席可能性的百分比值。</span><span class="sxs-lookup"><span data-stu-id="76b16-118">A percentage that represents the likelhood of all the attendees attending.</span></span>|
+|<span data-ttu-id="76b16-119">locations</span><span class="sxs-lookup"><span data-stu-id="76b16-119">locations</span></span>|<span data-ttu-id="76b16-120">[location](location.md) 集合</span><span class="sxs-lookup"><span data-stu-id="76b16-120">[location](location.md) collection</span></span>|<span data-ttu-id="76b16-121">指定此会议时间建议中各个会议地点的名称和地理位置的数组。</span><span class="sxs-lookup"><span data-stu-id="76b16-121">An array that specifies the name and geographic location of each meeting location for this meeting suggestion.</span></span>|
+|<span data-ttu-id="76b16-122">meetingTimeSlot</span><span class="sxs-lookup"><span data-stu-id="76b16-122">meetingTimeSlot</span></span>|[<span data-ttu-id="76b16-123">timeSlot</span><span class="sxs-lookup"><span data-stu-id="76b16-123">timeSlot</span></span>](timeslot.md)|<span data-ttu-id="76b16-124">建议的会议时间段。</span><span class="sxs-lookup"><span data-stu-id="76b16-124">A time period suggested for the meeting.</span></span>|
+|<span data-ttu-id="76b16-125">organizerAvailability</span><span class="sxs-lookup"><span data-stu-id="76b16-125">organizerAvailability</span></span>|<span data-ttu-id="76b16-126">字符串</span><span class="sxs-lookup"><span data-stu-id="76b16-126">String</span></span>| <span data-ttu-id="76b16-p102">此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="76b16-p102">Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
+|<span data-ttu-id="76b16-129">suggestionReason</span><span class="sxs-lookup"><span data-stu-id="76b16-129">suggestionReason</span></span>|<span data-ttu-id="76b16-130">String</span><span class="sxs-lookup"><span data-stu-id="76b16-130">String</span></span>|<span data-ttu-id="76b16-131">会议时间建议的理由。</span><span class="sxs-lookup"><span data-stu-id="76b16-131">Reason for suggesting the meeting time.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

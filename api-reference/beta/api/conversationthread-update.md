@@ -1,53 +1,54 @@
 ---
 title: 更新 conversationthread
 description: 锁定或解锁线程，以允许或避免进一步向线程发布。
-ms.openlocfilehash: 0d9de78717aeb35afa5b114f07430d9fc3e5e8fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49c5f26c9e7e995959b5d74f86d4a8a515708e24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887519"
 ---
-# <a name="update-conversationthread"></a><span data-ttu-id="081fd-103">更新 conversationthread</span><span class="sxs-lookup"><span data-stu-id="081fd-103">Update conversationthread</span></span>
+# <a name="update-conversationthread"></a><span data-ttu-id="7d5a0-103">更新 conversationthread</span><span class="sxs-lookup"><span data-stu-id="7d5a0-103">Update conversationthread</span></span>
 
-> <span data-ttu-id="081fd-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="081fd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="081fd-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="081fd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7d5a0-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7d5a0-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="081fd-106">锁定或解锁线程，以允许或避免进一步向线程发布。</span><span class="sxs-lookup"><span data-stu-id="081fd-106">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
-## <a name="permissions"></a><span data-ttu-id="081fd-107">权限</span><span class="sxs-lookup"><span data-stu-id="081fd-107">Permissions</span></span>
-<span data-ttu-id="081fd-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="081fd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d5a0-106">锁定或解锁线程，以允许或避免进一步向线程发布。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-106">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d5a0-107">权限</span><span class="sxs-lookup"><span data-stu-id="7d5a0-107">Permissions</span></span>
+<span data-ttu-id="7d5a0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="081fd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="081fd-110">Permission type</span></span>      | <span data-ttu-id="081fd-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="081fd-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d5a0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7d5a0-110">Permission type</span></span>      | <span data-ttu-id="7d5a0-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7d5a0-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="081fd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="081fd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="081fd-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="081fd-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="081fd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="081fd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="081fd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="081fd-115">Not supported.</span></span>    |
-|<span data-ttu-id="081fd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="081fd-116">Application</span></span> | <span data-ttu-id="081fd-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="081fd-117">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="7d5a0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7d5a0-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7d5a0-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d5a0-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7d5a0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7d5a0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d5a0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-115">Not supported.</span></span>    |
+|<span data-ttu-id="7d5a0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7d5a0-116">Application</span></span> | <span data-ttu-id="7d5a0-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d5a0-117">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="081fd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="081fd-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d5a0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7d5a0-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="081fd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="081fd-119">Request headers</span></span>
-| <span data-ttu-id="081fd-120">标头</span><span class="sxs-lookup"><span data-stu-id="081fd-120">Header</span></span>       | <span data-ttu-id="081fd-121">值</span><span class="sxs-lookup"><span data-stu-id="081fd-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7d5a0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7d5a0-119">Request headers</span></span>
+| <span data-ttu-id="7d5a0-120">标头</span><span class="sxs-lookup"><span data-stu-id="7d5a0-120">Header</span></span>       | <span data-ttu-id="7d5a0-121">值</span><span class="sxs-lookup"><span data-stu-id="7d5a0-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="081fd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="081fd-122">Authorization</span></span>  | <span data-ttu-id="081fd-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="081fd-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="081fd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="081fd-125">Content-Type</span></span>  | <span data-ttu-id="081fd-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="081fd-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="7d5a0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d5a0-122">Authorization</span></span>  | <span data-ttu-id="7d5a0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7d5a0-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7d5a0-125">Content-Type</span></span>  | <span data-ttu-id="7d5a0-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="081fd-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="081fd-128">Request body</span></span>
-<span data-ttu-id="081fd-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="081fd-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d5a0-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="7d5a0-128">Request body</span></span>
+<span data-ttu-id="7d5a0-p105">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="081fd-132">属性</span><span class="sxs-lookup"><span data-stu-id="081fd-132">Property</span></span>     | <span data-ttu-id="081fd-133">类型</span><span class="sxs-lookup"><span data-stu-id="081fd-133">Type</span></span>   |<span data-ttu-id="081fd-134">说明</span><span class="sxs-lookup"><span data-stu-id="081fd-134">Description</span></span>|
+| <span data-ttu-id="7d5a0-132">属性</span><span class="sxs-lookup"><span data-stu-id="7d5a0-132">Property</span></span>     | <span data-ttu-id="7d5a0-133">类型</span><span class="sxs-lookup"><span data-stu-id="7d5a0-133">Type</span></span>   |<span data-ttu-id="7d5a0-134">说明</span><span class="sxs-lookup"><span data-stu-id="7d5a0-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="081fd-135">isLocked</span><span class="sxs-lookup"><span data-stu-id="081fd-135">isLocked</span></span>|<span data-ttu-id="081fd-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="081fd-136">Boolean</span></span>|<span data-ttu-id="081fd-p106">指示线程是否已锁定。设置为 `true` 以禁止发布。</span><span class="sxs-lookup"><span data-stu-id="081fd-p106">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
+|<span data-ttu-id="7d5a0-135">isLocked</span><span class="sxs-lookup"><span data-stu-id="7d5a0-135">isLocked</span></span>|<span data-ttu-id="7d5a0-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="7d5a0-136">Boolean</span></span>|<span data-ttu-id="7d5a0-p106">指示线程是否已锁定。设置为 `true` 以禁止发布。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p106">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="081fd-139">响应</span><span class="sxs-lookup"><span data-stu-id="081fd-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d5a0-139">响应</span><span class="sxs-lookup"><span data-stu-id="7d5a0-139">Response</span></span>
 
-<span data-ttu-id="081fd-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [conversationThread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="081fd-140">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="081fd-141">示例</span><span class="sxs-lookup"><span data-stu-id="081fd-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="081fd-142">请求</span><span class="sxs-lookup"><span data-stu-id="081fd-142">Request</span></span>
-<span data-ttu-id="081fd-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="081fd-143">Here is an example of the request.</span></span>
+<span data-ttu-id="7d5a0-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [conversationThread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-140">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7d5a0-141">示例</span><span class="sxs-lookup"><span data-stu-id="7d5a0-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7d5a0-142">请求</span><span class="sxs-lookup"><span data-stu-id="7d5a0-142">Request</span></span>
+<span data-ttu-id="7d5a0-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_conversationthread"
@@ -62,8 +63,8 @@ Content-length: 419
   "isLocked": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="081fd-144">响应</span><span class="sxs-lookup"><span data-stu-id="081fd-144">Response</span></span>
-<span data-ttu-id="081fd-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="081fd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7d5a0-144">响应</span><span class="sxs-lookup"><span data-stu-id="7d5a0-144">Response</span></span>
+<span data-ttu-id="7d5a0-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7d5a0-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
