@@ -2,30 +2,31 @@
 title: windowsKioskAppBase 资源类型
 description: 一种类型的应用程序的基类
 author: tfitzmac
-ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845155"
 ---
-# <a name="windowskioskappbase-resource-type"></a><span data-ttu-id="93b13-103">windowsKioskAppBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="93b13-103">windowsKioskAppBase resource type</span></span>
+# <a name="windowskioskappbase-resource-type"></a><span data-ttu-id="65bd8-103">windowsKioskAppBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="65bd8-103">windowsKioskAppBase resource type</span></span>
 
-> <span data-ttu-id="93b13-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="93b13-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="93b13-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="93b13-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="65bd8-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="65bd8-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="65bd8-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="65bd8-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="93b13-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="93b13-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="65bd8-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="65bd8-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="93b13-107">一种类型的应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="93b13-107">The base class for a type of apps</span></span>
-## <a name="properties"></a><span data-ttu-id="93b13-108">属性</span><span class="sxs-lookup"><span data-stu-id="93b13-108">Properties</span></span>
-|<span data-ttu-id="93b13-109">属性</span><span class="sxs-lookup"><span data-stu-id="93b13-109">Property</span></span>|<span data-ttu-id="93b13-110">类型</span><span class="sxs-lookup"><span data-stu-id="93b13-110">Type</span></span>|<span data-ttu-id="93b13-111">说明</span><span class="sxs-lookup"><span data-stu-id="93b13-111">Description</span></span>|
+<span data-ttu-id="65bd8-107">一种类型的应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="65bd8-107">The base class for a type of apps</span></span>
+## <a name="properties"></a><span data-ttu-id="65bd8-108">属性</span><span class="sxs-lookup"><span data-stu-id="65bd8-108">Properties</span></span>
+|<span data-ttu-id="65bd8-109">属性</span><span class="sxs-lookup"><span data-stu-id="65bd8-109">Property</span></span>|<span data-ttu-id="65bd8-110">类型</span><span class="sxs-lookup"><span data-stu-id="65bd8-110">Type</span></span>|<span data-ttu-id="65bd8-111">Description</span><span class="sxs-lookup"><span data-stu-id="65bd8-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="93b13-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="93b13-112">startLayoutTileSize</span></span>|[<span data-ttu-id="93b13-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="93b13-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="93b13-114">开始版式应用程序图块大小。</span><span class="sxs-lookup"><span data-stu-id="93b13-114">The app tile size for the start layout.</span></span> <span data-ttu-id="93b13-115">可取值为：`hidden`、`small`、`medium`、`wide`、`large`。</span><span class="sxs-lookup"><span data-stu-id="93b13-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
-|<span data-ttu-id="93b13-116">name</span><span class="sxs-lookup"><span data-stu-id="93b13-116">name</span></span>|<span data-ttu-id="93b13-117">字符串</span><span class="sxs-lookup"><span data-stu-id="93b13-117">String</span></span>|<span data-ttu-id="93b13-118">代表应用程序的友好名称</span><span class="sxs-lookup"><span data-stu-id="93b13-118">Represents the friendly name of an app</span></span>|
+|<span data-ttu-id="65bd8-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="65bd8-112">startLayoutTileSize</span></span>|[<span data-ttu-id="65bd8-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="65bd8-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="65bd8-114">开始版式应用程序图块大小。</span><span class="sxs-lookup"><span data-stu-id="65bd8-114">The app tile size for the start layout.</span></span> <span data-ttu-id="65bd8-115">可取值为：`hidden`、`small`、`medium`、`wide`、`large`。</span><span class="sxs-lookup"><span data-stu-id="65bd8-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
+|<span data-ttu-id="65bd8-116">name</span><span class="sxs-lookup"><span data-stu-id="65bd8-116">name</span></span>|<span data-ttu-id="65bd8-117">字符串</span><span class="sxs-lookup"><span data-stu-id="65bd8-117">String</span></span>|<span data-ttu-id="65bd8-118">代表应用程序的友好名称</span><span class="sxs-lookup"><span data-stu-id="65bd8-118">Represents the friendly name of an app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="93b13-119">Relationships</span><span class="sxs-lookup"><span data-stu-id="93b13-119">Relationships</span></span>
-<span data-ttu-id="93b13-120">无</span><span class="sxs-lookup"><span data-stu-id="93b13-120">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="93b13-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="93b13-121">JSON Representation</span></span>
-<span data-ttu-id="93b13-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93b13-122">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="65bd8-119">Relationships</span><span class="sxs-lookup"><span data-stu-id="65bd8-119">Relationships</span></span>
+<span data-ttu-id="65bd8-120">无</span><span class="sxs-lookup"><span data-stu-id="65bd8-120">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="65bd8-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="65bd8-121">JSON Representation</span></span>
+<span data-ttu-id="65bd8-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="65bd8-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAppBase"

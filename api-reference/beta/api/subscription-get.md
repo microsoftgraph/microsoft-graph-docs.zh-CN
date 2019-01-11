@@ -1,38 +1,39 @@
 ---
 title: 获取订阅
 description: 检索订阅的属性和关系。
-ms.openlocfilehash: 5694015fe7e8cbf87b5d62f7ae4af35d1773532b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0feb4ffd49099eabb92e5519b25233100f2acbe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846835"
 ---
-# <a name="get-subscription"></a><span data-ttu-id="d8e56-103">获取订阅</span><span class="sxs-lookup"><span data-stu-id="d8e56-103">Get subscription</span></span>
+# <a name="get-subscription"></a><span data-ttu-id="8cdec-103">获取订阅</span><span class="sxs-lookup"><span data-stu-id="8cdec-103">Get subscription</span></span>
 
-> <span data-ttu-id="d8e56-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="d8e56-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d8e56-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d8e56-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8cdec-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="8cdec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8cdec-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="8cdec-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d8e56-106">检索订阅的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="d8e56-106">Retrieve the properties and relationships of a subscription.</span></span>
+<span data-ttu-id="8cdec-106">检索订阅的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="8cdec-106">Retrieve the properties and relationships of a subscription.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d8e56-107">权限</span><span class="sxs-lookup"><span data-stu-id="d8e56-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8cdec-107">权限</span><span class="sxs-lookup"><span data-stu-id="8cdec-107">Permissions</span></span>
 
-<span data-ttu-id="d8e56-p102">下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d8e56-p102">The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8cdec-p102">下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8cdec-p102">The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d8e56-110">资源类型/项</span><span class="sxs-lookup"><span data-stu-id="d8e56-110">Resource type / Item</span></span>        | <span data-ttu-id="d8e56-111">权限</span><span class="sxs-lookup"><span data-stu-id="d8e56-111">Permission</span></span>          |
+| <span data-ttu-id="8cdec-110">资源类型/项</span><span class="sxs-lookup"><span data-stu-id="8cdec-110">Resource type / Item</span></span>        | <span data-ttu-id="8cdec-111">权限</span><span class="sxs-lookup"><span data-stu-id="8cdec-111">Permission</span></span>          |
 |-----------------------------|---------------------|
-| <span data-ttu-id="d8e56-112">联系人</span><span class="sxs-lookup"><span data-stu-id="d8e56-112">Contacts</span></span>                    | <span data-ttu-id="d8e56-113">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="d8e56-113">Contacts.Read</span></span>       |
-| <span data-ttu-id="d8e56-114">Conversations</span><span class="sxs-lookup"><span data-stu-id="d8e56-114">Conversations</span></span>               | <span data-ttu-id="d8e56-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d8e56-115">Group.Read.All</span></span>      |
-| <span data-ttu-id="d8e56-116">Events</span><span class="sxs-lookup"><span data-stu-id="d8e56-116">Events</span></span>                      | <span data-ttu-id="d8e56-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d8e56-117">Calendars.Read</span></span>      |
-| <span data-ttu-id="d8e56-118">Messages</span><span class="sxs-lookup"><span data-stu-id="d8e56-118">Messages</span></span>                    | <span data-ttu-id="d8e56-119">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="d8e56-119">Mail.Read</span></span>           |
-| <span data-ttu-id="d8e56-120">Groups</span><span class="sxs-lookup"><span data-stu-id="d8e56-120">Groups</span></span>                      | <span data-ttu-id="d8e56-121">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d8e56-121">Group.Read.All</span></span>      |
-| <span data-ttu-id="d8e56-122">Users</span><span class="sxs-lookup"><span data-stu-id="d8e56-122">Users</span></span>                       | <span data-ttu-id="d8e56-123">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="d8e56-123">User.Read.All</span></span>       |
-| <span data-ttu-id="d8e56-124">Drive（用户的 OneDrive）</span><span class="sxs-lookup"><span data-stu-id="d8e56-124">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="d8e56-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d8e56-125">Files.ReadWrite</span></span>     |
-| <span data-ttu-id="d8e56-126">驱动器 （共享的 SharePoint 内容和驱动器）</span><span class="sxs-lookup"><span data-stu-id="d8e56-126">Drives (SharePoint shared content and drives)</span></span> | <span data-ttu-id="d8e56-127">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8e56-127">Files.ReadWrite.All</span></span> |
-| <span data-ttu-id="d8e56-128">安全警报</span><span class="sxs-lookup"><span data-stu-id="d8e56-128">Security alert</span></span>              | <span data-ttu-id="d8e56-129">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8e56-129">SecurityEvents.ReadWrite.All</span></span> |
+| <span data-ttu-id="8cdec-112">联系人</span><span class="sxs-lookup"><span data-stu-id="8cdec-112">Contacts</span></span>                    | <span data-ttu-id="8cdec-113">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8cdec-113">Contacts.Read</span></span>       |
+| <span data-ttu-id="8cdec-114">Conversations</span><span class="sxs-lookup"><span data-stu-id="8cdec-114">Conversations</span></span>               | <span data-ttu-id="8cdec-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8cdec-115">Group.Read.All</span></span>      |
+| <span data-ttu-id="8cdec-116">Events</span><span class="sxs-lookup"><span data-stu-id="8cdec-116">Events</span></span>                      | <span data-ttu-id="8cdec-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8cdec-117">Calendars.Read</span></span>      |
+| <span data-ttu-id="8cdec-118">Messages</span><span class="sxs-lookup"><span data-stu-id="8cdec-118">Messages</span></span>                    | <span data-ttu-id="8cdec-119">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8cdec-119">Mail.Read</span></span>           |
+| <span data-ttu-id="8cdec-120">组</span><span class="sxs-lookup"><span data-stu-id="8cdec-120">Groups</span></span>                      | <span data-ttu-id="8cdec-121">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8cdec-121">Group.Read.All</span></span>      |
+| <span data-ttu-id="8cdec-122">用户</span><span class="sxs-lookup"><span data-stu-id="8cdec-122">Users</span></span>                       | <span data-ttu-id="8cdec-123">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="8cdec-123">User.Read.All</span></span>       |
+| <span data-ttu-id="8cdec-124">Drive（用户的 OneDrive）</span><span class="sxs-lookup"><span data-stu-id="8cdec-124">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="8cdec-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8cdec-125">Files.ReadWrite</span></span>     |
+| <span data-ttu-id="8cdec-126">驱动器 （共享的 SharePoint 内容和驱动器）</span><span class="sxs-lookup"><span data-stu-id="8cdec-126">Drives (SharePoint shared content and drives)</span></span> | <span data-ttu-id="8cdec-127">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8cdec-127">Files.ReadWrite.All</span></span> |
+| <span data-ttu-id="8cdec-128">安全警报</span><span class="sxs-lookup"><span data-stu-id="8cdec-128">Security alert</span></span>              | <span data-ttu-id="8cdec-129">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8cdec-129">SecurityEvents.ReadWrite.All</span></span> |
 
-<span data-ttu-id="d8e56-130">***注意：***/Beta 终结点允许资源最多的应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="d8e56-130">***Note:*** The /beta endpoint allows application permissions for most resources.</span></span> <span data-ttu-id="d8e56-131">应用程序权限不支持对话组和 OneDrive 驱动器根项目。</span><span class="sxs-lookup"><span data-stu-id="d8e56-131">Conversations in a Group and OneDrive drive root items are not supported with application permissions.</span></span>
+<span data-ttu-id="8cdec-130">***注意：***/Beta 终结点允许资源最多的应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="8cdec-130">***Note:*** The /beta endpoint allows application permissions for most resources.</span></span> <span data-ttu-id="8cdec-131">应用程序权限不支持对话组和 OneDrive 驱动器根项目。</span><span class="sxs-lookup"><span data-stu-id="8cdec-131">Conversations in a Group and OneDrive drive root items are not supported with application permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d8e56-132">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d8e56-132">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8cdec-132">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8cdec-132">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,29 +41,29 @@ ms.locfileid: "27044662"
 GET /subscriptions/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d8e56-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d8e56-133">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8cdec-133">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="8cdec-133">Optional query parameters</span></span>
 
-<span data-ttu-id="d8e56-134">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d8e56-134">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="8cdec-134">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="8cdec-134">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d8e56-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="d8e56-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8cdec-135">请求标头</span><span class="sxs-lookup"><span data-stu-id="8cdec-135">Request headers</span></span>
 
-| <span data-ttu-id="d8e56-136">名称</span><span class="sxs-lookup"><span data-stu-id="d8e56-136">Name</span></span>       | <span data-ttu-id="d8e56-137">类型</span><span class="sxs-lookup"><span data-stu-id="d8e56-137">Type</span></span> | <span data-ttu-id="d8e56-138">说明</span><span class="sxs-lookup"><span data-stu-id="d8e56-138">Description</span></span>|
+| <span data-ttu-id="8cdec-136">名称</span><span class="sxs-lookup"><span data-stu-id="8cdec-136">Name</span></span>       | <span data-ttu-id="8cdec-137">类型</span><span class="sxs-lookup"><span data-stu-id="8cdec-137">Type</span></span> | <span data-ttu-id="8cdec-138">说明</span><span class="sxs-lookup"><span data-stu-id="8cdec-138">Description</span></span>|
 |:-----------|:-----|:-----------|
-| <span data-ttu-id="d8e56-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="d8e56-139">Authorization</span></span>  | <span data-ttu-id="d8e56-140">string</span><span class="sxs-lookup"><span data-stu-id="d8e56-140">string</span></span>  | <span data-ttu-id="d8e56-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d8e56-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8cdec-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="8cdec-139">Authorization</span></span>  | <span data-ttu-id="8cdec-140">string</span><span class="sxs-lookup"><span data-stu-id="8cdec-140">string</span></span>  | <span data-ttu-id="8cdec-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8cdec-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d8e56-143">请求正文</span><span class="sxs-lookup"><span data-stu-id="d8e56-143">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8cdec-143">请求正文</span><span class="sxs-lookup"><span data-stu-id="8cdec-143">Request body</span></span>
 
-<span data-ttu-id="d8e56-144">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d8e56-144">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="8cdec-144">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8cdec-144">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d8e56-145">响应</span><span class="sxs-lookup"><span data-stu-id="d8e56-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8cdec-145">响应</span><span class="sxs-lookup"><span data-stu-id="8cdec-145">Response</span></span>
 
-<span data-ttu-id="d8e56-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d8e56-146">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+<span data-ttu-id="8cdec-146">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8cdec-146">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d8e56-147">示例</span><span class="sxs-lookup"><span data-stu-id="d8e56-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8cdec-147">示例</span><span class="sxs-lookup"><span data-stu-id="8cdec-147">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d8e56-148">请求</span><span class="sxs-lookup"><span data-stu-id="d8e56-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8cdec-148">请求</span><span class="sxs-lookup"><span data-stu-id="8cdec-148">Request</span></span>
 
-<span data-ttu-id="d8e56-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d8e56-149">Here is an example of the request.</span></span>
+<span data-ttu-id="8cdec-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8cdec-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -72,9 +73,9 @@ GET /subscriptions/{id}
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="d8e56-150">响应</span><span class="sxs-lookup"><span data-stu-id="d8e56-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8cdec-150">响应</span><span class="sxs-lookup"><span data-stu-id="8cdec-150">Response</span></span>
 
-<span data-ttu-id="d8e56-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d8e56-151">Here is an example of the response.</span></span>
+<span data-ttu-id="8cdec-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8cdec-151">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

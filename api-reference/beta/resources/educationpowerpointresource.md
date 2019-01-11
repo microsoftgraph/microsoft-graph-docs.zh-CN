@@ -1,28 +1,29 @@
 ---
 title: educationPowerPointResource 资源类型
 description: 'EducationResource 一个子类。 这是 PowerPoint 资源。 必须在与关联的**fileResource**目录中上载 PowerPoint 文件 '
-ms.openlocfilehash: a83a78449ecb7c64f62557ddfa642ab02b55c206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845456"
 ---
-# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="d371a-105">educationPowerPointResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="d371a-105">educationPowerPointResource resource type</span></span>
+# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="89cab-105">educationPowerPointResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="89cab-105">educationPowerPointResource resource type</span></span>
 
-> <span data-ttu-id="d371a-106">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="d371a-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d371a-107">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d371a-107">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="89cab-106">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="89cab-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="89cab-107">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="89cab-107">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d371a-108">[EducationResource](educationresource.md)一个子类。</span><span class="sxs-lookup"><span data-stu-id="d371a-108">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="d371a-109">这是 PowerPoint 资源。</span><span class="sxs-lookup"><span data-stu-id="d371a-109">This is a PowerPoint resource.</span></span> <span data-ttu-id="d371a-110">必须与工作分配或提交关联的**fileResource**目录中上载 PowerPoint 文件。</span><span class="sxs-lookup"><span data-stu-id="d371a-110">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
+<span data-ttu-id="89cab-108">[EducationResource](educationresource.md)一个子类。</span><span class="sxs-lookup"><span data-stu-id="89cab-108">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="89cab-109">这是 PowerPoint 资源。</span><span class="sxs-lookup"><span data-stu-id="89cab-109">This is a PowerPoint resource.</span></span> <span data-ttu-id="89cab-110">必须与工作分配或提交关联的**fileResource**目录中上载 PowerPoint 文件。</span><span class="sxs-lookup"><span data-stu-id="89cab-110">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d371a-111">属性</span><span class="sxs-lookup"><span data-stu-id="d371a-111">Properties</span></span>
-| <span data-ttu-id="d371a-112">属性</span><span class="sxs-lookup"><span data-stu-id="d371a-112">Property</span></span>     | <span data-ttu-id="d371a-113">类型</span><span class="sxs-lookup"><span data-stu-id="d371a-113">Type</span></span>   |<span data-ttu-id="d371a-114">说明</span><span class="sxs-lookup"><span data-stu-id="d371a-114">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="89cab-111">属性</span><span class="sxs-lookup"><span data-stu-id="89cab-111">Properties</span></span>
+| <span data-ttu-id="89cab-112">属性</span><span class="sxs-lookup"><span data-stu-id="89cab-112">Property</span></span>     | <span data-ttu-id="89cab-113">类型</span><span class="sxs-lookup"><span data-stu-id="89cab-113">Type</span></span>   |<span data-ttu-id="89cab-114">Description</span><span class="sxs-lookup"><span data-stu-id="89cab-114">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d371a-115">fileUrl</span><span class="sxs-lookup"><span data-stu-id="d371a-115">fileUrl</span></span>|<span data-ttu-id="d371a-116">字符串</span><span class="sxs-lookup"><span data-stu-id="d371a-116">String</span></span>|<span data-ttu-id="d371a-117">磁盘上的文件的位置。</span><span class="sxs-lookup"><span data-stu-id="d371a-117">Location of the file on disk.</span></span>|
+|<span data-ttu-id="89cab-115">fileUrl</span><span class="sxs-lookup"><span data-stu-id="89cab-115">fileUrl</span></span>|<span data-ttu-id="89cab-116">字符串</span><span class="sxs-lookup"><span data-stu-id="89cab-116">String</span></span>|<span data-ttu-id="89cab-117">磁盘上的文件的位置。</span><span class="sxs-lookup"><span data-stu-id="89cab-117">Location of the file on disk.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d371a-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d371a-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="89cab-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="89cab-118">JSON representation</span></span>
 
-<span data-ttu-id="d371a-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d371a-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="89cab-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="89cab-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
