@@ -2,12 +2,13 @@
 title: syncLicenses 操作
 description: 同步与特定 appleVolumePurchaseProgramToken 关联的许可证
 author: tfitzmac
-ms.openlocfilehash: 3bc0e1f13ebfa56d4c2c1fb06f08ddc0e9fcf238
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62923b8385ffa090b4a435543eac9e425d7f471
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857167"
 ---
 # <a name="synclicenses-action"></a>syncLicenses 操作
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

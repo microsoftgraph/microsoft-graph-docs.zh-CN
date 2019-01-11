@@ -2,12 +2,13 @@
 title: 创建 targetedManagedAppConfiguration
 description: 创建新的 targetedManagedAppConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: df5fee37bf26b34367efa9c7f6511de12125f7e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a196dee202ce55b6f342ade8f3b7d0d3ec9aea8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857377"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>创建 targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

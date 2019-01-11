@@ -2,12 +2,13 @@
 title: identityRiskEvent 资源类型
 description: 检测到的 Azure Active Directory 标识保护风险事件。 它是为每个特定的风险事件类型的基类型：
 author: cloudhandler
-ms.openlocfilehash: 4abe473b47d3ce52fd5b75b6adfd08dbc4af54fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0735599c260fac178b54ee4ba54a17f5ea027e23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858994"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27351735"
 |[获取 identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |读取属性和 identityRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
@@ -47,7 +48,7 @@ ms.locfileid: "27351735"
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为 NULL。|
 

@@ -1,12 +1,13 @@
 ---
 title: plannerChecklistItems 资源类型
 description: '**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是任务详细信息对象的组成部分。该属性值对中的值是 checklistItem 对象。'
-ms.openlocfilehash: 44e64872c34a70062e847889576bd226d4fe51fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f958289e22ccc7515fe0e79145bba5fb5188e660
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858623"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: identityProvider 资源类型
 description: 代表 Azure Active Directory (Azure AD) 标识提供程序。 Microsoft、 Google、 Facebook、 Amazon 或 LinkedIn，可以是标识提供程序。
-ms.openlocfilehash: 672e2e6225374451a475b69e2ce4ce6adfe65ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858539"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -33,7 +34,7 @@ Azure AD 租户中配置的身份提供程序使未来 B2B 来宾方案。 例�
 
 ## <a name="properties"></a>属性
 
-|属性|类型|必需|可为 Null|说明|
+|属性|类型|是否必需|可为 Null|说明|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|字符串|是|否|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
 |clientSecret|字符串|是|否|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。 这是只写。 读取的操作将返回"\*\*\*\*"。|

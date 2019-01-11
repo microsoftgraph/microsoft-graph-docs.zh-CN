@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出文件夹的内容
-ms.openlocfilehash: eb633047aaa9331cabb706058ddcace79fceef37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8a35dad8da67d0fdf083e43f52689f463f5b3a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043651"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859141"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 

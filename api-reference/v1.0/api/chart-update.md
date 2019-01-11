@@ -2,12 +2,13 @@
 title: 更新图表
 description: 更新 chart 对象的属性。
 author: lumine2008
-ms.openlocfilehash: ab7ab0ed0d9a58eab48450190a6819ee7ee1a441
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d4189ac4f009059ae83ba50fc0ad8f0236786a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338204"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858049"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -27,7 +28,7 @@ ms.locfileid: "27338204"
 PATCH /workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

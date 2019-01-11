@@ -2,12 +2,13 @@
 title: 呼叫： 记录
 description: 记录呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859575"
 ---
 # <a name="call-record"></a>呼叫： 记录
 
@@ -39,15 +40,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |提示|[mediaprompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
-|bargeInAllowed|Boolean| 允许用户提示完成之前输入的选择。                                                                 |
+|bargeInAllowed|布尔| 允许用户提示完成之前输入的选择。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 从我们开始之前我们记录操作超时和失败操作的时间允许的最大初始静音。 如果我们播放提示时，提示完成后从开始此计时器。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时秒数。|
 |maxRecordDurationInSeconds|Int32| 最大记录持续时间，以秒为单位。|
-|playBeep|Boolean| 播放提示音后播放提示。|
-|streamWhileRecording|Boolean|如果设置为 true，资源位置将提供一旦开始录制。 |
+|playBeep|布尔| 播放提示音后播放提示。|
+|streamWhileRecording|布尔|如果设置为 true，资源位置将提供一旦开始录制。 |
 |stopTones|String 集合|停止指定结束录制音。|
 |clientContext|字符串|客户端上下文。|
 

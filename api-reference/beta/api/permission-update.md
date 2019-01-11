@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 更改共享权限
-ms.openlocfilehash: 96662cac4a58dcff9ed7faa40f61c8a09bfc88b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44f98d559ab6dc4c81a4efede2f3f60020c2f944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859680"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 

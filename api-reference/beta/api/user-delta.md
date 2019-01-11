@@ -1,12 +1,13 @@
 ---
 title: 'user: delta'
 description: 获取新创建、 更新或删除用户，而无需执行的整个用户集的完全读取。 请参阅修订的详细信息。
-ms.openlocfilehash: 7c87f3e0da6e79f2f8a316a214c1408cf2fa7ebc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2aaee8a5722c22ad8fc381f0a4b1d577461b3991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856194"
 ---
 # <a name="user-delta"></a>user: delta
 

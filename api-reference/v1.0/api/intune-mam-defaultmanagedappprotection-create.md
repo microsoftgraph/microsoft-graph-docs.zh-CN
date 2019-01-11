@@ -2,12 +2,13 @@
 title: 创建 defaultManagedAppProtection
 description: 创建新的 defaultManagedAppProtection 对象。
 author: tfitzmac
-ms.openlocfilehash: c76afc8d9c9bd465b40e506117ec80ef1345045c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01b701d357675fe598127107d987e570d4126202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856971"
 ---
 # <a name="create-defaultmanagedappprotection"></a>创建 defaultManagedAppProtection
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/defaultManagedAppProtections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

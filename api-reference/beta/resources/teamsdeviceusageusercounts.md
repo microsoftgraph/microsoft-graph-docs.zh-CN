@@ -2,12 +2,13 @@
 title: teamsDeviceUsageUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 author: nkramer
-ms.openlocfilehash: 1255a8e1e92bb461d5c100c72e9030f57db5f8fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07a43b024d133e5ac1d8eb8a2665fd3027001edb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857349"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>teamsDeviceUsageUserCounts 资源类型
 

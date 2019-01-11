@@ -1,12 +1,13 @@
 ---
 title: educationFileResource 资源类型
 description: EducationResource 代表相关联的工作分配或提交文件对象的一个子类。  在这种情况下，文件不是一个特殊的文件 （Word、 Excel 和等等），但没有在系统中的特殊处理文件。 文件资源必须存储在与工作分配或提交此资源附加到关联的**资源**。
-ms.openlocfilehash: b3ba77b6b9243d987ad1137afe6d2206e47dadaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858084"
 ---
 # <a name="educationfileresource-resource-type"></a>educationFileResource 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27045549"
 [EducationResource](educationresource.md)代表相关联的工作分配或提交文件对象的一个子类。  在这种情况下，文件不是一个特殊的文件 （Word、 Excel 和等等），但没有在系统中的特殊处理文件。 文件资源必须存储在与工作分配或提交此资源附加到关联的**资源**。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |fileUrl|字符串|在磁盘上的文件资源的位置。|
 

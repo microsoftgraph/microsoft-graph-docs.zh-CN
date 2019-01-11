@@ -2,12 +2,13 @@
 title: 更新 windows10TeamGeneralConfiguration
 description: 更新 windows10TeamGeneralConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 283e7211c98899b1c8eb02007c9b0d9b889f8ce5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44ea0c4f76bd95d84ecd5126bec32e988b40a6f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858364"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>更新 windows10TeamGeneralConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

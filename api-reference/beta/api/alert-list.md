@@ -1,12 +1,13 @@
 ---
 title: 列出警报
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: e6ddf41616d27b41414386f83a9ce067411d92b9
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: 6036514c2aeabe287fd019ce69157d4b7897af60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860205"
 ---
 # <a name="list-alerts"></a>列出警报
 

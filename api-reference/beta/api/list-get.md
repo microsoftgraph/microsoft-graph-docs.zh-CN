@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: 获取 SharePoint 列表
-ms.openlocfilehash: 8cda18e17197a6f14a3c60903fa0c4ad43ed684d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f3519b707e2e1b5899cbb54b1a52350cc46136ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856957"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -16,7 +17,7 @@ ms.locfileid: "27045738"
 
 返回[列表][]的元数据。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 

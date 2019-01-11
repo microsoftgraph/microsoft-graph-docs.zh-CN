@@ -1,12 +1,13 @@
 ---
 title: objectMapping 资源类型
 description: 定义如何给定的对象应同步从源目录到目标目录。 具体而言，它定义源目录中的对象与目标目录中某个对象的匹配方式什么 （如果有） 范围筛选器应确定如果我们想要设置给定的对象，以及应对象属性如何转换从到目标目录源。
-ms.openlocfilehash: 5ecf406c3dab2f8d6fdcecadda4d5ff7bbb4f4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851749"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping 资源类型
 
@@ -18,14 +19,14 @@ ms.locfileid: "27043411"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)集合    | 属性映射定义从源对象映射到目标对象和如何应流哪些属性。 许多函数可供支持的原始源值转换。|
-|enabled        |布尔值    |当`true`，将同步过程中处理此对象映射。 当`false`，将跳过此对象映射。|
+|enabled        |Boolean    |当`true`，将同步过程中处理此对象映射。 当`false`，将跳过此对象映射。|
 |flowTypes      |objectFlowType    |此对象映射为启用了哪些流类型。 `Add`在目标目录中，创建新对象`Update`修改现有对象和`Delete`取消设置现有用户。 默认值是`Add, Update, Delete`。 |
 |元数据       |metadataEntry 集合    |其他扩展属性。 除非明确提到，不应更改元数据值。|
 |name           |字符串     |对象映射的 human 友好名称。|
-|scope          |[filter](synchronization-filter.md)     |定义一个筛选器，用于确定是否应设置给定的对象。 例如，您可能希望向只位于美国的设置用户。|
+|范围          |[filter](synchronization-filter.md)     |定义一个筛选器，用于确定是否应设置给定的对象。 例如，您可能希望向只位于美国的设置用户。|
 |sourceObjectName           |字符串     |源目录中对象的名称。 必须匹配源[目录定义](synchronization-directorydefinition.md)的对象名称。|
 |目标           |字符串     |目标目录中的对象的名称。 必须匹配从目标[目录定义](synchronization-directorydefinition.md)的对象名称。|
 

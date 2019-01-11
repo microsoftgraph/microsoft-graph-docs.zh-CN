@@ -1,12 +1,13 @@
 ---
 title: privilegedRoleSummary 资源类型
 description: 为特定的角色摘要统计信息。
-ms.openlocfilehash: f6c66433651eff188ce6fdaa07c2422d3bb6e0ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b74b562a992f7795f3ae8e317608f1e370bc2a4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858616"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "27047984"
 |[获取 privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |读取属性和 privilegedRoleSummary 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|激活已分配的角色和角色的用户数。|
-|id|string| 角色的唯一标识符。 只读。|
+|id|string| 角色的唯一标识符。 此为只读属性。|
 |managedCount|int32|停用已分配的角色的用户，但该角色的数量。|
 |mfaEnabled|boolean|如果为**true**的角色激活需要 MFA。 **false**如果角色激活不需要 MFA。|
 |status|string| 可取值为：`ok`、`bad`。 值取决于的比率 (managedCount / usersCount)。 如果此比率小于预定义的阈值，`ok`返回。 否则为`bad`返回。|

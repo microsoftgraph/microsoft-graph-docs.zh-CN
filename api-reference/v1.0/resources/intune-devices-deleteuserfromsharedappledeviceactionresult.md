@@ -2,12 +2,13 @@
 title: deleteUserFromSharedAppleDeviceActionResult 资源类型
 description: 从共享 Apple 设备删除用户操作结果
 author: tfitzmac
-ms.openlocfilehash: 2dc6dbdeb8bb72314b25f695f82e4f4dfff0b8fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c6e014f0461c1e6a72a4d67791c27dc401f87f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804947"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult 资源类型
 

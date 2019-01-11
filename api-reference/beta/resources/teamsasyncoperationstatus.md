@@ -2,12 +2,13 @@
 title: teamsAsyncOperationStatus 枚举类型
 description: 介绍 teamsAsyncOperation 的当前状态。
 author: nkramer
-ms.openlocfilehash: 49b5b81999714627b1a1acd42df208594123b262
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6af5c7218a6a9d8c0c5338beb8cdf9944a56c2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858973"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>teamsAsyncOperationStatus 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27332002"
 
 ## <a name="members"></a>成员
 
-| 成员 | 值| 说明 |
+| 成员 | 值| Description |
 |:---------------|:--------|:----------|
 |无效|0|值无效。|
 |为 notStarted|1|尚未开始此操作。|

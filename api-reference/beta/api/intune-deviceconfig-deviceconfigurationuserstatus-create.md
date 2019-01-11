@@ -2,12 +2,13 @@
 title: 创建 deviceConfigurationUserStatus
 description: 创建新的 deviceConfigurationUserStatus 对象。
 author: tfitzmac
-ms.openlocfilehash: 2d12b141fd45b89e7330595594f1110c65f8b4d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b4b0406de54604d09811f4034ae4e3883c91a3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858567"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>创建 deviceConfigurationUserStatus
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

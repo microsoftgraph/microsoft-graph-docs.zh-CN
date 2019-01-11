@@ -2,12 +2,13 @@
 title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
 author: dkershaw10
-ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 08f1e8414b727b5625b271d8a84c10a7fa3e980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851728"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 返回一组事件提醒中用户日历中指定的开始和结束时间。 
@@ -32,8 +33,8 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
+|startDateTime|字符串|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
+|endDateTime|字符串|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|

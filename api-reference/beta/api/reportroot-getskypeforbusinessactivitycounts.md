@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessActivityCounts'
 description: 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的用户数趋势。 报表还包含对等会话数。
-ms.openlocfilehash: c6a57ac9f04bb70ee4fea0c45b5e09203758375d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8c387fd4ad14e425a8a6b6dee970e641f148a6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857853"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 

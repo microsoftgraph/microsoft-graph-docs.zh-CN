@@ -2,12 +2,13 @@
 title: 获取 depMacOSEnrollmentProfile
 description: 读取属性和 depMacOSEnrollmentProfile 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 7d1474e8291eb7d7859750c06bc76964bcdee7a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d36d225125036606db8d148280b0a5e7ef56019
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858119"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>获取 depMacOSEnrollmentProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

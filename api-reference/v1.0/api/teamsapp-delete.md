@@ -1,12 +1,13 @@
 ---
 title: Permissions
 description: '从组织的应用程序目录 （租户应用程序目录） 中删除应用程序。 '
-ms.openlocfilehash: eb58c66b768efc653a0da479dc01bb3fec4901cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e19826407a5f809787beffc8211f77ddce21d043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804926"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 

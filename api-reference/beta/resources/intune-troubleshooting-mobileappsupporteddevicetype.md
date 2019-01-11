@@ -2,12 +2,13 @@
 title: mobileAppSupportedDeviceType 资源类型
 description: 设备属性
 author: tfitzmac
-ms.openlocfilehash: 5ec7d2b1e8340b73ea184dda15d842973f0fab2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d261b35b5de64057ca2dcdbe516081909523548
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858546"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType 资源类型
 

@@ -2,12 +2,13 @@
 title: 更新 macOSLobApp
 description: 更新 macOSLobApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 0e465f84c930362f1607f434388e0c5c108c177f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35889053c1bdebcddea9ffd5f69a754530d7ebc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303637"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859414"
 ---
 # <a name="update-macoslobapp"></a>更新 macOSLobApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

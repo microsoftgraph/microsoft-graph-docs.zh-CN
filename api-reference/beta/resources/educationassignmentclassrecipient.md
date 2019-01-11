@@ -1,12 +1,13 @@
 ---
 title: educationAssignmentClassRecipient 资源类型
 description: '内 assignment.assignTo 属性使用。 如果设置为类收件人，类中的每个学生将 '
-ms.openlocfilehash: 7ea56fcc4db80bf9b225255a3d4ef55258cc98fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 66ccbd4d0105fa88c67645f1a153df288d4989ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856964"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>educationAssignmentClassRecipient 资源类型
 

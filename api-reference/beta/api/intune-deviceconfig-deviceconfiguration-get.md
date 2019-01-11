@@ -2,12 +2,13 @@
 title: 获取 deviceConfiguration
 description: 读取 deviceConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: d183e983df5f225a6f209a1e3467183bcd4af8d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49b3cebc64492dfecfc0a7671213d76e68890edb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858525"
 ---
 # <a name="get-deviceconfiguration"></a>获取 deviceConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

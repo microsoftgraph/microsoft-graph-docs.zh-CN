@@ -2,12 +2,13 @@
 title: edgeCookiePolicy 枚举类型
 description: 若要指定 Microsoft 边缘中允许的 cookie 的可能值。
 author: tfitzmac
-ms.openlocfilehash: 0a8482e7cf6def3161c081fe59e66f22e8718c40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da86746214c602771ebb9defc44b7b2f8d1f9039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348053"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860198"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348053"
 
 若要指定 Microsoft 边缘中允许的 cookie 的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|允许用户设置。|
 |允许|1|允许。|

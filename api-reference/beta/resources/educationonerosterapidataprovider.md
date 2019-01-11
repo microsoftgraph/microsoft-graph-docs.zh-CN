@@ -2,12 +2,13 @@
 title: educationOneRosterApiDataProvider 资源
 description: 用于 OneRoster API 用作输入源时设置学校数据同步配置文件。
 author: mmast-msft
-ms.openlocfilehash: 66c79c5e5d5ced4efcd635d2976e83887e545a9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a99343ed8026eda9ecf56925986f4a0bfe10b3ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858154"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider 资源
 
@@ -19,7 +20,7 @@ ms.locfileid: "27309567"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **connectionUrl** | 字符串 | 连接到 OneRoster 实例 URL。 |
 | **schoolsIds** | String 集合 |  学校 sourcedIds 同步的列表。 |

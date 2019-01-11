@@ -1,12 +1,13 @@
 ---
 title: defenderPotentiallyUnwantedAppAction 枚举类型
 description: Defender 的操作，才能检测到可能有害的应用程序 (PUA)。
-ms.openlocfilehash: c786906046d6a35c026da95246016537e4325aab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858644"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27043533"
 
 Defender 的操作，才能检测到可能有害的应用程序 (PUA)。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|PUA 保护处于关闭状态。 Defender 将不能防范可能有害的应用程序。|
 |阻止|1|在 PUA 保护。 检测到的项目会被阻止。 它们将显示以及其他威胁的历史记录中。|

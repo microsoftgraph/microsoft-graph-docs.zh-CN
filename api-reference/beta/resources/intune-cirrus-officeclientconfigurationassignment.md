@@ -2,12 +2,13 @@
 title: officeClientConfigurationAssignment 资源类型
 description: Office 客户端配置工作分配。
 author: tfitzmac
-ms.openlocfilehash: c2b8dc231fb390cbb2bd5dbb93b5226540b84f5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8f730a405207dbec9b08d80ec403ced4f257c36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851784"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>officeClientConfigurationAssignment 资源类型
 

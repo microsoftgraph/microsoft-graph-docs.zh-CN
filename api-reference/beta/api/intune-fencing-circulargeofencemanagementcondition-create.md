@@ -2,12 +2,13 @@
 title: 创建 circularGeofenceManagementCondition
 description: 创建新的 circularGeofenceManagementCondition 对象。
 author: tfitzmac
-ms.openlocfilehash: fe99dd39aeeee3f9db3e15bdb61c0f3df1c937ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8264349e4e3da3adc5cf6c457754f245c61fa8e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858168"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>创建 circularGeofenceManagementCondition
 
@@ -39,7 +40,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -57,8 +58,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |modifiedDateTime|DateTimeOffset|管理条件上次修改时间。 更新服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|此管理条件适用的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`。|
-|latitude|双精度数|中度之间-90 到 + 90 非独占的纬度。|
-|longitude|双精度数|中度-180 和 180 非独占之间的经度。|
+|latitude|Double|中度之间-90 到 + 90 非独占的纬度。|
+|longitude|Double|中度-180 和 180 非独占之间的经度。|
 |radiusInMeters|Single|米半径。|
 
 

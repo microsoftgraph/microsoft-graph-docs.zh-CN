@@ -2,12 +2,13 @@
 title: loggedOnUser 资源类型
 description: 在用户登录
 author: tfitzmac
-ms.openlocfilehash: c2021d51356798dec906331797a2504f779264b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e832c6452b73a6fad39723675acb129d79c2b888
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859750"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327172"
 
 在用户登录
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |userId|String|用户 id|
 |lastLogOnDateTime|DateTimeOffset|当用户登录时的日期时间|

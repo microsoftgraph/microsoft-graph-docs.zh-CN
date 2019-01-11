@@ -2,12 +2,13 @@
 title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
 author: tfitzmac
-ms.openlocfilehash: 84bef94d7352c13b49f223b859cea218932f8cad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92e43378f119a5e1a10604babb5ad23b2dfddf3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851434"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27328684"
 
 计划操作类型枚举
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |noAction|0|任何操作|
 |通知|1|发送通知|

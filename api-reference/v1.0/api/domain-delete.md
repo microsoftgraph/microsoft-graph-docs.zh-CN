@@ -2,12 +2,13 @@
 title: 删除域
 description: 从租户中删除域。
 author: lleonard-msft
-ms.openlocfilehash: eeebfb0c4c654dbfc119b4af97ccab6e27fbef91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd13c304329f40e48dad1cd69772c54577559336
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856643"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -38,7 +39,7 @@ DELETE /domains/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Content-Type  | application/json |

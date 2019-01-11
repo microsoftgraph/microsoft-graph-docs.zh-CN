@@ -2,12 +2,13 @@
 title: 更新 deviceManagementScriptAssignment
 description: 更新 deviceManagementScriptAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 6afe48222bf3d74a88fb683222edebd5af025f12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0689530f717b3ee8ecbd4ce6b967768912bdd41a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859015"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>更新 deviceManagementScriptAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

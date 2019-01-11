@@ -2,12 +2,13 @@
 title: 计划工具： 增量
 description: 检索用户订阅对象更改。
 author: TarkanSevilmis
-ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fe4ed9164c5baf9aea8819ba4f3140c23ec87d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838638"
 ---
 # <a name="planner-delta"></a>计划工具： 增量
 
@@ -44,7 +45,7 @@ GET /users/<id>/planner/all/delta
 
 ## <a name="request-headers"></a>请求标头
 
-| Name           |说明                |
+| 名称           |说明                |
 |:---------------|:--------------------------|
 | Authorization  | Bearer {token}。必需。 |
 
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了显示的响应对象。 从实际的呼叫，将返回所有已更改的属性。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 从实际的呼叫，将返回所有已更改的属性。
 
 <!-- {
   "blockType": "response",

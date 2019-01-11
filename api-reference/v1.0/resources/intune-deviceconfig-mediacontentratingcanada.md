@@ -2,12 +2,13 @@
 title: mediaContentRatingCanada 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 310d68ea3ee0fa563b9fe413e26bace51251025a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c40691556e9a8f674256c040a98f22e6ef9d717f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857307"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada 资源类型
 

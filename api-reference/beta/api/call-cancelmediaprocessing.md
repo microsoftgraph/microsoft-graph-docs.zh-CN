@@ -2,12 +2,13 @@
 title: 呼叫： cancelMediaProcessing
 description: 取消媒体处理所有正在进行的任何 PlayPrompt 或记录的操作。
 author: VinodRavichandran
-ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9885e05bdca0d04daf597190eb118c81b8774c0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859449"
 ---
 # <a name="call-cancelmediaprocessing"></a>呼叫： cancelMediaProcessing
 
@@ -39,9 +40,9 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    | 说明                                                    |
+| 参数      | 类型    | Description                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolean | 指示是否要停止所有操作或当前标志。 |
+| all            | 布尔 | 指示是否要停止所有操作或当前标志。 |
 | clientContext  | 字符串  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应

@@ -2,12 +2,13 @@
 title: assign 操作
 description: 更换所有目标的组策略。
 author: tfitzmac
-ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b41ce4ec1c6e304168aebb4c53b4512b0a11f4b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858665"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -38,7 +39,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|Office 配置分配列表|
 

@@ -2,12 +2,13 @@
 title: 列表 importedAppleDeviceIdentities
 description: 列出属性和 importedAppleDeviceIdentity 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: c122f616a61a3fedf219c52384fcea97db1d203d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2962ecadbf0eb5a3dbb34ab91daf4f8ebd6c005
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340990"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857993"
 ---
 # <a name="list-importedappledeviceidentities"></a>列表 importedAppleDeviceIdentities
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

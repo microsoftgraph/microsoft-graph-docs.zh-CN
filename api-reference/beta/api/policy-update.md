@@ -1,12 +1,13 @@
 ---
 title: 更新策略
 description: 更新以前存在策略中的属性。
-ms.openlocfilehash: 426476b5545e511fe2da111acb1f47f38f32c96f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857153"
 ---
 # <a name="update-policy"></a>更新策略
 
@@ -37,7 +38,7 @@ PATCH /policies/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，将一个 JSON 对象，提供需要更新的参数。 下表显示可能的参数。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |definition|字符串|Stringified 的[策略](../resources/policy.md)对象的版本。|
 |displayName|字符串|自定义策略名称。|

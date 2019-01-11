@@ -2,12 +2,13 @@
 title: 获取 androidLobApp
 description: 读取 androidLobApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 7ed993f85b03f13e0b5d2fc6f3f37cbce6151d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afd714e6bcfc3f7d56461c90d494a735c310f306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859624"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
@@ -42,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

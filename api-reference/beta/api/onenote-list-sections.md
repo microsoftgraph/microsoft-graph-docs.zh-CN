@@ -2,12 +2,13 @@
 title: 列出分区
 description: 检索 section 对象列表。
 author: Jewan-microsoft
-ms.openlocfilehash: 074afecfcf358a349cfa251e3222cc4c2a2887ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11636dd2fbb0c39724b0036bdfa5db03bb12f0c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857692"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -39,7 +40,7 @@ GET /sites/{id}/onenote/sections
 默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区的有效 `expand` 值为 `parentNotebook` 和 `parentSectionGroup`。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Accept | string | `application/json` |

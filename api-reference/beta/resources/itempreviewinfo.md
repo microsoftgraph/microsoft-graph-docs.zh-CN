@@ -3,12 +3,13 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo-OneDrive API
-ms.openlocfilehash: 3fa9d10ae3aade7be96e81168b34df84698da1c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f2a161b9b43a8d372b90530b1b9d9244f77d8e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857342"
 ---
 # <a name="itempreviewinfo-resource-type"></a>ItemPreviewInfo 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "27043134"
 
 ## <a name="properties"></a>属性
 
-| 名称           | 类型   | 说明
+| 名称           | 类型   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）

@@ -2,12 +2,13 @@
 title: 获取 mailFolder
 description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
-ms.openlocfilehash: e1394c6bf97a3c5d65bda0ee7b8f29d8a29643bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8301f5ff1cef7602b3e9d488c67daec8ac277cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856644"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -41,7 +42,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -64,7 +65,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 #### <a name="response-1"></a>响应 1
 下面展示了示例响应。
- >**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+ >**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都是从实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: 获取 remoteActionAudit
 description: 读取属性和 remoteActionAudit 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: d5400eefe34419a725681d8870bfae513d192237
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43a35a52ef379960652326279fa7c90b95ac8900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859778"
 ---
 # <a name="get-remoteactionaudit"></a>获取 remoteActionAudit
 
@@ -40,7 +41,7 @@ GET /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

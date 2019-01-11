@@ -2,12 +2,13 @@
 title: 列出 windows10MobileCompliancePolicies
 description: 列出 windows10MobileCompliancePolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 31b66c44ccf39ac04d8527fd14082d4f9a2a6390
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0694ac12a442b1666beee8b4d5bf51ca61173f6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860170"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>列出 windows10MobileCompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 'event: tentativelyAccept'
 description: 暂时接受用户日历中的指定的事件。
 author: angelgolfer-ms
-ms.openlocfilehash: be22b88c444b3720eaf204bda3246d4b99b90623
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9aa718385ecd41726e8e421e946a97e1ad9183c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856634"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -41,7 +42,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -49,10 +50,10 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
-|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|sendResponse|布尔|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 

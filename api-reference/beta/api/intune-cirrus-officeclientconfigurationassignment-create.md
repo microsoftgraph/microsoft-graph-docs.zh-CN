@@ -2,12 +2,13 @@
 title: 创建 officeClientConfigurationAssignment
 description: 将目标组添加到现有的策略。
 author: tfitzmac
-ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24eee1797c00fd6ef6e380e2fdde20c5147567af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858693"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>创建 officeClientConfigurationAssignment
 
@@ -38,7 +39,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

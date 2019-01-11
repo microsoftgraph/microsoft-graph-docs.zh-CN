@@ -2,12 +2,13 @@
 title: 列出设备
 description: 检索组织中注册的 device 对象的列表。
 author: tfitzmac
-ms.openlocfilehash: a17dcdd3fc15a04276095b2f356cc780ae6a8fee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 433938618d936ff48b83c74febe847ef6e7f7512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805094"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -31,7 +32,7 @@ GET /devices
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 列表 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
-ms.openlocfilehash: 0f4680c8998191fa07af993e8ee3712557b7010d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 51a36cdcd0b565bf1ec7a991fb41af05da19b573
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859442"
 ---
 # <a name="list-governanceroleassignments"></a>列表 governanceRoleAssignments
 

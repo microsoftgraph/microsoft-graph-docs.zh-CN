@@ -1,12 +1,13 @@
 ---
 title: 添加 accessReview 审阅者
 description: '在 Azure AD 访问评论功能中，更新要作为审阅者添加另一个用户现有 accessReview 对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 '
-ms.openlocfilehash: ac7722d1bea30659db6f6defe26c0a08ecd67caf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838764"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -32,14 +33,14 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供用户将成为审阅者的 ID 的 JSON 表示形式。
 
 下表显示可更新 accessReview 时提供的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | 用户 id。  |
 

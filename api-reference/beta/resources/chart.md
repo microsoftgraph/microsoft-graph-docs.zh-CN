@@ -2,12 +2,13 @@
 title: 图表资源类型
 description: 表示工作簿中的 chart 对象。
 author: lumine2008
-ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d274b8ec505d15ea985af22627232dbe11dc3263
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856047"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
