@@ -2,12 +2,13 @@
 title: outlookTaskGroup 资源类型
 description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件夹 (outlookTaskFolder) 组。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878769"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup 资源类型
 
@@ -33,12 +34,12 @@ ms.locfileid: "27359393"
 |:---------------|:--------|:----------|
 |changeKey|字符串|任务组的版本。|
 |groupKey|Edm.Guid|任务组的唯一 GUID 标识符。|
-|id|字符串|任务组的唯一字符串标识符。 只读。|
-|isDefaultGroup|Boolean|如果任务组的默认任务组，则为 true。|
+|id|字符串|任务组的唯一字符串标识符。 此为只读属性。|
+|isDefaultGroup|布尔|如果任务组的默认任务组，则为 true。|
 |name|字符串|任务组的名称。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 在任务组中的任务文件夹的集合。 只读。 可为 Null。|
 

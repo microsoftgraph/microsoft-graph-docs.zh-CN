@@ -2,12 +2,13 @@
 title: 'event: snoozeReminder'
 description: 推迟事件提醒用户日历中的新时间之前。
 author: angelgolfer-ms
-ms.openlocfilehash: fc97ae4fffca5eeb054f708fe1dec8575382e6be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 440b46b3cb2bebff8f3586e201a0503edcc59000
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874982"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -43,7 +44,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |
@@ -51,7 +52,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|触发提醒的新日期和时间。|
 

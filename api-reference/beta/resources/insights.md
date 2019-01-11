@@ -2,12 +2,13 @@
 title: 见解资源类型
 description: 见解是计算使用高级分析功能和机学习技术的关系。 例如，可以确定趋势周围用户的 OneDrive 文档。
 author: simonhult
-ms.openlocfilehash: f3269134f4a80462359a11d603c3f843be0c62f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9d7a1f141e3b6834edfa784a509a2de7968650d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878090"
 ---
 # <a name="insights-resource-type"></a>见解资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "27318597"
 
 ## <a name="relationships"></a>Relationships
 
-| 关系      | 类型          | 说明  |
+| 关系      | 类型          | Description  |
 | ------------- |---------------| -------------|
 | 趋势分析      | [趋势](insights-trending.md)集合       | 确定趋势文档的关系计算。 可以存储趋势文档，在 OneDrive 或 SharePoint 网站中。   |
 | used      | [用于](insights-used.md)集合       | 计算确定文档查看和修改的用户的关系。 包含用户使用的文档中的 OneDrive for Business，SharePoint 中，打开作为电子邮件附件和为如框、 收存箱和 Google 驱动器的源中的链接附件。  |

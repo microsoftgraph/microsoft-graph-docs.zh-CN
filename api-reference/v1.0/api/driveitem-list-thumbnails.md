@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
-ms.openlocfilehash: 990c8f6714c188e9468e73ffe35526d3c3825cc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 40bc5e364202720b33fce9fe345bf1b752c8b796
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881905"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 

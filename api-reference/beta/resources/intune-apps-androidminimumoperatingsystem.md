@@ -2,12 +2,13 @@
 title: androidMinimumOperatingSystem 资源类型
 description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: tfitzmac
-ms.openlocfilehash: 6b2533b5b92da20410c3657df9d7194fb6b08e86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96b68aa12a1cbd0abe2b7761b44a0ef9a5863048
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875864"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -27,9 +28,9 @@ ms.locfileid: "27357510"
 |v4_4|布尔值|版本 4.4 或更高版本。|
 |v5_0|布尔值|版本 5.0 或更高版本。|
 |v5_1|布尔值|版本 5.1 或更高版本。|
-|v6_0|Boolean|版本 6.0 或更高版本。|
-|v7_0|Boolean|7.0 版或更高版本。|
-|v7_1|Boolean|7.1 或更高版本。|
+|v6_0|布尔|版本 6.0 或更高版本。|
+|v7_0|布尔|7.0 版或更高版本。|
+|v7_1|布尔|7.1 或更高版本。|
 |v8_0|布尔值|版本 8.0 或更高版本。|
 |v8_1|布尔值|8.1 或更高版本。|
 |v9_0|布尔值|版本 9.0 或更高版本。|

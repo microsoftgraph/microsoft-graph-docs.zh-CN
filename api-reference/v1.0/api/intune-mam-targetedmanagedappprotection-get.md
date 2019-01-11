@@ -2,12 +2,13 @@
 title: 获取 targetedManagedAppProtection
 description: 读取 targetedManagedAppProtection 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: c8612f46f1a5672b4ca3dd2f1b1d90703a5b7aad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ce2aa3bf61564a1c6b249679ddd7a6fecd9a052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878601"
 ---
 # <a name="get-targetedmanagedappprotection"></a>获取 targetedManagedAppProtection
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

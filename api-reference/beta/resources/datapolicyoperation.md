@@ -1,12 +1,13 @@
 ---
 title: dataPolicyOperation 资源类型
 description: 代表提交的数据策略操作。 它包含跟踪操作的状态所需的信息。 例如，公司管理员可以提交数据策略操作请求员工的公司数据导出，然后更高版本跟踪该请求。
-ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+localization_priority: Normal
+ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876004"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27156031"
 |storageLocation|字符串|到要从中导出数据的导出请求的 URL 位置。|
 |userId|String|在其执行操作的用户 id。|
 |submittedDateTime|DateTimeOffset|表示此数据操作的请求已提交时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|进度|双精度数|指定操作的进度。|
+|进度|Double|指定操作的进度。|
 
 ## <a name="relationships"></a>Relationships
 无

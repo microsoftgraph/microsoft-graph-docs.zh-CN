@@ -2,12 +2,13 @@
 title: 创建 termsAndConditionsGroupAssignment
 description: 创建新的 termsAndConditionsGroupAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d02e0f1a2e4f0a79f6baa9fec76a68c45ef3dec7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878580"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>创建 termsAndConditionsGroupAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

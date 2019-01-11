@@ -2,12 +2,13 @@
 title: revokeAppleVppLicensesActionResult 资源类型
 description: 取消 Apple Vpp 许可证操作结果
 author: tfitzmac
-ms.openlocfilehash: b45a2ddec46ddc5cac47937cb776d0f0da6c64a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7e578ee695e171a1a91167b61e47af717dd82c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879098"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult 资源类型
 

@@ -2,12 +2,13 @@
 title: 删除 windowsPhoneEASEmailProfileConfiguration
 description: 删除 windowsPhoneEASEmailProfileConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 5653d9b383443e7bc59519d618c46788adbe2ccc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1441f89468ddb91cc752f94b70fd3d094fa33d76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878790"
 ---
 # <a name="delete-windowsphoneeasemailprofileconfiguration"></a>删除 windowsPhoneEASEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: vpnOnDemandRule 资源类型
 description: VPN 点播规则定义。
 author: tfitzmac
-ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875633"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27352190"
 
 VPN 点播规则定义。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |ssid|String 集合|网络服务设置标识符 (Ssid)。|
 |dnsSearchDomains|String 集合|DNS 搜索域。|

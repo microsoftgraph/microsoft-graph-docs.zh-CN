@@ -2,12 +2,13 @@
 title: 创建会话
 description: '使用此 API 创建新的工作簿会话。 '
 author: lumine2008
-ms.openlocfilehash: 802a77884dcc283b520aa179d51aeb6e96a5c68e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6e05b4a86c9dc3a6a06ae62f6386ef622c16d6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877628"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -42,7 +43,7 @@ POST /workbook/createSession
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

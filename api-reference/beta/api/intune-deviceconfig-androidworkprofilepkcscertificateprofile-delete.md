@@ -2,12 +2,13 @@
 title: 删除 androidWorkProfilePkcsCertificateProfile
 description: 删除 androidWorkProfilePkcsCertificateProfile。
 author: tfitzmac
-ms.openlocfilehash: 6a42c70bb0949e81482aeb2af46cc7e193743257
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84ce653e02891949135f48b5b86f2d79926464e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881590"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>删除 androidWorkProfilePkcsCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

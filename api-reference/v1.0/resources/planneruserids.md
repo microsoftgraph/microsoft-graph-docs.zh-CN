@@ -1,12 +1,13 @@
 ---
 title: plannerUserIds 资源类型
 description: '**plannerUserIds** 资源表示与其共享计划的用户 ID 列表。它是开放类型。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享组的计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。'
-ms.openlocfilehash: f2115cb31825f30190701bc2ab6b0d29669c4665
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d1ded78b76b2e8284a7563ad43b2c466cda4cc5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879021"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds 资源类型
 

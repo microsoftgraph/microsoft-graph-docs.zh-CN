@@ -2,12 +2,13 @@
 title: 获取 androidWorkProfileTrustedRootCertificate
 description: 读取属性和 androidWorkProfileTrustedRootCertificate 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0cead3035cb2614d0158b3dfa269abdc206ad82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878384"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>获取 androidWorkProfileTrustedRootCertificate
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: 839052123c6ff0d4b4345ae8d8d0ad1bb921d674
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb172bb321e39d8d75b10f7c695ee02314468585
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875647"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

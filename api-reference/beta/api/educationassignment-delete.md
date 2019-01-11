@@ -2,12 +2,13 @@
 title: 删除 educationAssignment
 description: 删除现有的工作分配。 仅在类的教师可以删除工作分配。
 author: dipakboyed
-ms.openlocfilehash: 94d99f65f491d641b74313a3ac9b06841b049731
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09365c44bef4f12ad9be24f8ed30cfb0efc5c6f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874989"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
@@ -22,7 +23,7 @@ ms.locfileid: "27352911"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）| EduAssignments.ReadWriteBasic EduAssignments.ReadWrite |
 |委派（个人 Microsoft 帐户） |   不受支持。 |
-|Application | 不受支持。  | 
+|应用程序 | 不受支持。  | 
 
 ## <a name="http-request"></a>HTTP 请求
 

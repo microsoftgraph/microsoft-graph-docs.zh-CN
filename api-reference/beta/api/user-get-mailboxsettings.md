@@ -1,12 +1,13 @@
 ---
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括 （通知时自动的人员的自动答复设置 '
-ms.openlocfilehash: fae1bb16ec533abf7f29d0aadc0f66ba33f5ec25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d1e2ce16d82e89e701bbe90386c28b76d1607c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880176"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 

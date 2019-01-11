@@ -2,12 +2,13 @@
 title: Microsoft Graph 安全 API 错误响应
 description: 返回使用标准 HTTP 206 部分内容状态代码和传递通过警告标头中 Microsoft Graph 安全 API 的错误。
 author: Preetikr
-ms.openlocfilehash: 6685d69f202696e33422d9bd3a877cba02fd10dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16a7153f460b57a74901b0d5c48bdd9004e06bc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878622"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全 API 错误响应
 

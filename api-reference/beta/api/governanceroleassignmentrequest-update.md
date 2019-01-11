@@ -1,12 +1,13 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够更新其决策 (`AdminApproved`或`AdminDenied`) 中的状态的 governanceRoleAssignmentRequests 上`PendingAdminDecision`。
-ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 3d68e06688922177e2a1a183a9fe4bfc6be6a91d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191149"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874933"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -39,7 +40,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## <a name="request-body"></a>请求正文
 
-|参数      |类型                   |必需 |说明|
+|参数      |类型                   |是否必需 |Description|
 |:-------------|:----------------------|:--------|:----------|
 |原因        |字符串                 |✓        |提供由管理员为其决策的原因。|
 |决策        |字符串                 |✓        |角色分配请求的管理员决策。 值应更新为`AdminApproved`或`AdminDenied`。|

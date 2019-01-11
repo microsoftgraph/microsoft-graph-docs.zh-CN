@@ -2,12 +2,13 @@
 title: audioSourceLevel 资源类型
 description: 对于其他源的级别配置。
 author: VinodRavichandran
-ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880638"
 ---
 # <a name="audiosourcelevel-resource-type"></a>audioSourceLevel 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380238"
 
 ## <a name="properties"></a>属性
 
-| 属性               | 类型    | 说明                                                                                         |
+| 属性               | 类型    | Description                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Boolean | 允许此源回避活动时的其他源。 如果设置为 true，放掉级别设置。|
+| duckOthers             | 布尔 | 允许此源回避活动时的其他源。 如果设置为 true，放掉级别设置。|
 | level                  | Int64   | 如果放掉源的级别`duckOthers`设置为`true`。                                     |
 | 参与者            | 字符串  | 源参与者音频流。                                                                |
 

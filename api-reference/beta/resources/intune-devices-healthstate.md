@@ -2,12 +2,13 @@
 title: healthState 枚举类型
 description: 指示 Windows 管理应用程序的运行状况状态。
 author: tfitzmac
-ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b50023a71aaf33e2febf43e3ce96a1223eaa2ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878776"
 ---
 # <a name="healthstate-enum-type"></a>healthState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308720"
 
 指示 Windows 管理应用程序的运行状况状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的状态。|
 |正常运行|1|正常运行状态。|

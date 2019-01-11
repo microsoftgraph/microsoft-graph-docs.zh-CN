@@ -2,12 +2,13 @@
 title: 创建 intuneBrandingProfile
 description: 创建新的 intuneBrandingProfile 对象。
 author: tfitzmac
-ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862018"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|字符串|配置文件密钥|
 |profileName|字符串|配置文件的名称|
 |profileDescription|字符串|配置文件的说明|
-|isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
+|isDefaultProfile|布尔|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
 |displayName|String|向最终用户显示的公司/组织名称。|

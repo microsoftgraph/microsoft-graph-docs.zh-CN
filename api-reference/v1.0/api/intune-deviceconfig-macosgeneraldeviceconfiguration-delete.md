@@ -2,12 +2,13 @@
 title: 删除 macOSGeneralDeviceConfiguration
 description: 删除 macOSGeneralDeviceConfiguration。
 author: tfitzmac
-ms.openlocfilehash: a7b4ac7e75a9fe0bb6bd8db9ab11e60b2596c584
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc6903eb5a549f249d63af027555e662466402bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876333"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>删除 macOSGeneralDeviceConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: 要获取的已启用的用户和那些必须激活桌面或设备上的 Office 订阅或共享计算机的计数。
-ms.openlocfilehash: f46d3e01e7eeb212ea50675bbcf7371e4af2ec40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 79f6f67525aa500fd6e852a5b1322166769caff7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008916"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875703"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 

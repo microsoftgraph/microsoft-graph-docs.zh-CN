@@ -2,12 +2,13 @@
 title: 创建 iosVppEBookAssignment
 description: 创建新的 iosVppEBookAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: b9a3bf5ba8c3eb0c8d2f92e66361ce7afa875c4d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1cb66c4600c7816afcc7d73b17e8fa3ff01bec0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877824"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

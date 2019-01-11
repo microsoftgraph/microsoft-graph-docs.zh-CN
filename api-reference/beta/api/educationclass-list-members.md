@@ -1,12 +1,13 @@
 ---
 title: 列出成员
 description: 检索参加课程的教师和学生。 请注意是否使用了委派令牌，只有课程的其他成员才能看到成员。
-ms.openlocfilehash: e8f31720733fec3942d4ddb35fa7f2fdac1b26f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13484a6a20f1b35e69a8957eb05bb93c9666ee75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874891"
 ---
 # <a name="list-members"></a>列出成员
 

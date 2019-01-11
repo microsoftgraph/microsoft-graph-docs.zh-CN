@@ -2,12 +2,13 @@
 title: 共享的资源类型
 description: 表示文件共享或特定用户洞察。 支持以下共享的文件：
 author: simonhult
-ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 289523f836d7b8080f7317e4d11301c71314ba93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880610"
 ---
 # <a name="shared-resource-type"></a>共享的资源类型
 

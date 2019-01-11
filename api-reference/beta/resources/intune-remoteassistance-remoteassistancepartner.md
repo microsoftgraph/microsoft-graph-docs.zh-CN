@@ -2,12 +2,13 @@
 title: remoteAssistancePartner 资源类型
 description: remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 author: tfitzmac
-ms.openlocfilehash: d3027ced433112b275d74d8c910553d5001d93ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52badd2ad146f23fba70ab545a459b124e7fae2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821712"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 

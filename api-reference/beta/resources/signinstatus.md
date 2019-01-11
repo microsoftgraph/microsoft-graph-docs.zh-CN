@@ -1,12 +1,13 @@
 ---
 title: signInStatus 资源类型
 description: 提供的登录状态 （成功或失败） 登录
-ms.openlocfilehash: cafa0dffe1b1d798d87225ac82901cf041d5e4fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878636"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
 提供的登录状态 （成功或失败） 登录
@@ -14,7 +15,7 @@ ms.locfileid: "27048319"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |additionalDetails|字符串|在登录活动上提供的其他详细信息|
 |errorCode|Int32|提供登录故障期间生成的 5 6digit 错误代码。 签出[的错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。|

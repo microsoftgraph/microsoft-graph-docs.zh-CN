@@ -2,12 +2,13 @@
 title: 团队资源类型
 description: '团队中的 Microsoft 团队是通道的集合。 '
 author: nkramer
-ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878545"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -38,18 +39,18 @@ ms.locfileid: "27323868"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型   | 说明 |
+| 属性 | 类型   | Description |
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |要配置的团队中的使用 Giphy、 memes 和标签的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |要配置的是否来宾可以创建、 更新或删除通道团队中的设置。|
-|isArchived|Boolean|此团队是否处于只读模式。 |
+|isArchived|布尔|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加团队中。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |要配置的消息设置和团队中的提及。|
 |WebUrl|字符串 （只读） | 将转到 Microsoft 团队客户端中的团队超链接。 这是当您右键单击在客户端中的 Microsoft 团队团队，然后选择**获取团队链接**获取的 URL。 此 URL 应是视为不透明 blob，并且未分列。 |
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型   | 说明 |
+| 关系 | 类型   | Description |
 |:---------------|:--------|:----------|
 |通道|[通道](channel.md)集合|通道邮件与团队关联的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md)集合|此团队中安装应用程序。|

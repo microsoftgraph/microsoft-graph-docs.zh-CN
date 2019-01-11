@@ -1,12 +1,13 @@
 ---
 title: privilegedRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理角色分配操作的请求。
-ms.openlocfilehash: b715c88157a7df52dabcb4c746dfe70bc2523d18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfe3b6802136b2848f36abef08134efd0eb82518
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880127"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27047920"
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)集合|列出角色分配请求。|
 |[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建管理现有或新角色分配的生命周期的请求。|
-|[取消](../api/privilegedroleassignmentrequest-cancel.md)|  |取消挂起的角色分配请求。|
+|[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |取消挂起的角色分配请求。|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |获取当前 requstor 角色分配请求。|
 
 ## <a name="properties"></a>属性
@@ -33,17 +34,17 @@ ms.locfileid: "27047920"
 |assignmentState|字符串| 工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。|
 |duration|字符串| 角色分配的持续时间。|
 |原因|字符串| 角色分配原因。|
-|requestedDateTime|DateTimeOffset| 只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|requestedDateTime|DateTimeOffset| 此为只读属性。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |roleId|字符串| 角色的 id。|
 |计划|[governanceSchedule](governanceschedule.md)| 角色分配请求的计划对象。|
-|状态|字符串| 读取 only.The 角色分配请求的状态。 值可以是`NotStarted`，`Completed`，`RequestedApproval`，`Scheduled`，`Approved`，`ApprovalDenied`，`ApprovalAborted`，`Cancelling`，`Cancelled`，`Revoked`，`RequestExpired`。|
+|status|字符串| 读取 only.The 角色分配请求的状态。 值可以是`NotStarted`，`Completed`，`RequestedApproval`，`Scheduled`，`Approved`，`ApprovalDenied`，`ApprovalAborted`，`Cancelling`，`Cancelled`，`Revoked`，`RequestExpired`。|
 |ticketNumber|字符串| 角色分配 ticketNumber。 |
 |ticketSystem|字符串| 角色分配 ticketSystem。|
 |type|字符串| 表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。|
 |userId|String| 用户的 id。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型        | 说明 |
+| 关系 | 类型        | Description |
 |:-------------|:------------|:------------|
 |roleInfo|[privilegedRole](privilegedrole.md)| 角色分配请求 roleInfo 对象。|
 

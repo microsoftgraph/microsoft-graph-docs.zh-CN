@@ -2,12 +2,13 @@
 title: ChartPoint 资源类型
 description: 表示图表中某个系列的点。
 author: lumine2008
-ms.openlocfilehash: f27017d5e6cc111fa759fc6c9728ed182e7fa624
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9bf959407a93c6d58d088833e5e3e437ef41125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876249"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint 资源类型
 

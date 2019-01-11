@@ -2,12 +2,13 @@
 title: Table:Range
 description: 获取与整个表相关的 range 对象。
 author: lumine2008
-ms.openlocfilehash: 1af9013892f688634338fd3be718cbe6cb6d190c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d842d2a1c1918506c840b420ab4e909cc815efb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876977"
 ---
 # <a name="table-range"></a>Table:Range
 
@@ -29,7 +30,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

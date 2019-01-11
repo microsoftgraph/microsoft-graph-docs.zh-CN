@@ -2,12 +2,13 @@
 title: 创建 windowsInformationProtectionNetworkLearningSummary
 description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对象。
 author: tfitzmac
-ms.openlocfilehash: daa85ae02a94594c03b110c9a407f41db02c1c8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57cfde950bc4152c605e41e0caff8d18d919eb46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876459"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 
@@ -36,7 +37,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

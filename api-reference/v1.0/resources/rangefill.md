@@ -2,12 +2,13 @@
 title: RangeFill 资源类型
 description: 表示 range 对象的背景。
 author: lumine2008
-ms.openlocfilehash: 6ddd039190af0e86067dfda651b2bc387b4cf74f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d1dc1bda19d725999f9a49644bee1e4cb1126ec2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877187"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 

@@ -2,12 +2,13 @@
 title: 获取 androidDeviceOwnerGeneralDeviceConfiguration
 description: 读取属性和 androidDeviceOwnerGeneralDeviceConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 79cbfc66b697de3bc55b96fc289103b07e2baecc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00773043137a66be39e8ef5469c25a74d1492954
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878321"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

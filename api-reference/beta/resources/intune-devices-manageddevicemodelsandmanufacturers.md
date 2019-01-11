@@ -2,12 +2,13 @@
 title: managedDeviceModelsAndManufacturers 资源类型
 description: 模型和托管帐户中的设备的制造商 meatadata
 author: tfitzmac
-ms.openlocfilehash: 42611b0c14aa583d2871d97b66ce116a0b835268
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86d9f9dd0642abab73f6b750b997c75851f6be02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875619"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27352932"
 
 模型和托管帐户中的设备的制造商 meatadata
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceModels|String 集合|模型的托管帐户中的设备的列表|
 |设备制造商|String 集合|在帐户的托管设备的制造商列表|

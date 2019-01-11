@@ -2,12 +2,13 @@
 title: 获取 windowsProtectionState
 description: 读取属性和 windowsProtectionState 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 6baa42445c1f117b1f86ccc5fa726f4d6f939378
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 323e2ab2f0ff0c089c2dcc304fa62c31857ae31b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881194"
 ---
 # <a name="get-windowsprotectionstate"></a>获取 windowsProtectionState
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

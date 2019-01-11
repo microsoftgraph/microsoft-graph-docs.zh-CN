@@ -1,12 +1,13 @@
 ---
 title: macOSGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 macOSGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: 1b46ca91e5a9648b8fa63d3d0a8b565275921c52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7f9c2ee9f77576b5d03fea6bae9f95956610dd71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875080"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
@@ -74,7 +75,7 @@ ms.locfileid: "27047410"
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

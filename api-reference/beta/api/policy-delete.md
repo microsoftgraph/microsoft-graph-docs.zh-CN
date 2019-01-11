@@ -1,12 +1,13 @@
 ---
 title: 删除策略
 description: 删除策略。
-ms.openlocfilehash: 37ed08e7f53db726a46821c08d68c955afdacc5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 66772865fdff5ebf4b111cae91e60b00707bf6a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875360"
 ---
 # <a name="delete-policy"></a>删除策略
 

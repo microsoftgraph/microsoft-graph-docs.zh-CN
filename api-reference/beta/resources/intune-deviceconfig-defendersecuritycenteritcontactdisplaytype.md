@@ -2,12 +2,13 @@
 title: defenderSecurityCenterITContactDisplayType 枚举类型
 description: DefenderSecurityCenterITContactDisplay 的可能值
 author: tfitzmac
-ms.openlocfilehash: 019bce4bc1c5b94da3cf1b8a3044638b0277f432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcdca31f22de0462dbc9020fb2f5fbd7af1c1abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881891"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327186"
 
 DefenderSecurityCenterITContactDisplay 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |displayInAppAndInNotifications|1|显示在应用程序和通知|

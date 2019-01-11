@@ -2,12 +2,13 @@
 title: 创建 windowsPhone81CompliancePolicy
 description: 创建新的 windowsPhone81CompliancePolicy 对象。
 author: tfitzmac
-ms.openlocfilehash: 689421dcc1a38d43fe6ebeef667df7d89312df9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6741925f4dd2957aab9466b141b59d5b4a23b92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877292"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>创建 windowsPhone81CompliancePolicy
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

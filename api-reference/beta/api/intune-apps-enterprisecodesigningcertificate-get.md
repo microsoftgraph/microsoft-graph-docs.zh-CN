@@ -2,12 +2,13 @@
 title: 获取 enterpriseCodeSigningCertificate
 description: 读取属性和 enterpriseCodeSigningCertificate 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 2e6cd58c6cae8921d8fa117388ac774f006a8ae8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1d280b44e583d9218be1128c1683c1db0c91680
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874807"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>获取 enterpriseCodeSigningCertificate
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSignin
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

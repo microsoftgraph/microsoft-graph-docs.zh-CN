@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessContainedApp 资源类型
 description: 表示的 MicrosoftStoreForBusinessApp 包含应用程序的类。
 author: tfitzmac
-ms.openlocfilehash: a4ba31870ab98c509a16814bd52179e1f2deab63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f783475e2f1f49745b29903689e75d854c233352
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876970"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp 资源类型
 

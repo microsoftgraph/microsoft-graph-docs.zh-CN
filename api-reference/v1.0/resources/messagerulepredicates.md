@@ -2,12 +2,13 @@
 title: messageRulePredicates 资源类型
 description: 表示适用于某个规则的一组条件和例外情况。
 author: angelgolfer-ms
-ms.openlocfilehash: 802edc817a583e6049edb057bd4e2d2e0da268d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13978b4ee09f863ee3f57ac109ee8f3f5adf39c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804737"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 

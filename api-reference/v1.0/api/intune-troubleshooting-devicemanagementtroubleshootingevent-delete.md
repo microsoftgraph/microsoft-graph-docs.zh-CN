@@ -2,12 +2,13 @@
 title: 删除 deviceManagementTroubleshootingEvent
 description: 删除 deviceManagementTroubleshootingEvent。
 author: tfitzmac
-ms.openlocfilehash: 41cbe97d5b0ff3e283012cf5d85eff1f0d26d880
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50f46421a45ce962a6831eb519e7e35d3996b969
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878804"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>删除 deviceManagementTroubleshootingEvent
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

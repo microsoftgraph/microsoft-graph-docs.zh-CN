@@ -1,12 +1,13 @@
 ---
 title: 位置资源类型
 description: 表示事件的位置信息。
-ms.openlocfilehash: 149af193864c2a0ecab67ab2c722c9c3b46e9293
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879798"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 

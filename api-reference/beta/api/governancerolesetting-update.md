@@ -1,12 +1,13 @@
 ---
 title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
-ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874905"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -40,7 +41,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[governanceRuleSettings](../resources/governancerulesetting.md)更新所需的值。 
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|管理员尝试添加合格的角色分配时计算规则设置。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|管理员尝试添加直接成员角色分配时计算规则设置。|

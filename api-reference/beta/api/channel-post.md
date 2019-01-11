@@ -1,12 +1,13 @@
 ---
 title: 创建通道
 description: 在 Microsoft 团队，在请求正文中的规定创建新的通道。
-ms.openlocfilehash: 7f561c13b688d76ec4d45f03c2fd7f73192fe8a8
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f7192c177d79e48a0a9e55c9edc5dbb394539928
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875045"
 ---
 # <a name="create-channel"></a>创建通道
 

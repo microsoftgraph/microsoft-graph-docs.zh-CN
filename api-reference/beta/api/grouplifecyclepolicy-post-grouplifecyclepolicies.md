@@ -2,12 +2,13 @@
 title: 创建 groupLifecyclePolicy
 description: 新建 groupLifecyclePolicy。
 author: dkershaw10
-ms.openlocfilehash: 19ddf880e3cac5b555db825084518de8a45aadf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7e523f28c92547d2e2b1e11377418a517351b31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879217"
 ---
 # <a name="create-grouplifecyclepolicy"></a>创建 groupLifecyclePolicy
 
@@ -35,7 +36,7 @@ POST /groupLifecyclePolicies
 
 ## <a name="request-headers"></a>请求标头
 
-| Name | 说明 |
+| 名称 | 说明 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json |

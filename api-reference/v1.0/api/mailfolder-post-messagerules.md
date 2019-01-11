@@ -2,12 +2,13 @@
 title: 创建规则
 description: '通过指定一组条件和操作来创建 messageRule 对象。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 72c4991e077364514104d5bbc8e24625526bce51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4adea9e35a3dcd5278c96f5689167554b1700d94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880148"
 ---
 # <a name="create-rule"></a>创建规则
 
@@ -33,7 +34,7 @@ POST /me/mailFolders/inbox/messageRules
 POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 
@@ -41,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供适用于规则的参数。 以下是在创建规则时通常使用的正文参数。 可以根据情况在请求正文中指定任何其他可写的 **messageRule** 属性。
 
-| Name       | 类型|说明|
+| 名称       | 类型|说明|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|

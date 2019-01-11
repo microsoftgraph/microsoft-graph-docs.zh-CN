@@ -1,12 +1,13 @@
 ---
 title: timeSlot 资源类型
 description: 时间段。
-ms.openlocfilehash: c1df6ea458bf6742dc20149e62d9760a8a6510e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f383a7feafbb3816ef838d8f0667eebdd42443f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877929"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot 资源类型
 

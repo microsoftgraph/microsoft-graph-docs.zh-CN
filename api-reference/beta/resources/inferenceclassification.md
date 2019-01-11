@@ -1,12 +1,13 @@
 ---
 title: inferenceClassification 资源类型
 description: '用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 '
-ms.openlocfilehash: c1536ff2b88b1830c2f2a2bc5a7bed519782df4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 82d16e24e21231b8ec168eda793257ef780c2219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877789"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 

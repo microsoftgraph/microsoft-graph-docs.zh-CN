@@ -1,12 +1,13 @@
 ---
 title: windowsKioskConfiguration 资源类型
 description: 此实体提供了属性、 网亭资源由公开的关系的声明方法的说明。
-ms.openlocfilehash: 94e1f7ee29b97e3ea87cec285a33b86eed989bd4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7ebcabeda93a6a58b21e110cd8ee6ac79452b25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876717"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -48,7 +49,7 @@ ms.locfileid: "27044573"
 |kioskBrowserBlockedUrlExceptions|String 集合|指定允许网亭浏览器导航到的 Url|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

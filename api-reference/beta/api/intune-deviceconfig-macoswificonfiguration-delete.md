@@ -2,12 +2,13 @@
 title: 删除 macOSWiFiConfiguration
 description: 删除 macOSWiFiConfiguration。
 author: tfitzmac
-ms.openlocfilehash: 6e8bdfaffb59648b5ac11eb1b3bcf1c7f3a0fe91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 225489a0a406cebb04ae334a91d17b90ab71f70b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877712"
 ---
 # <a name="delete-macoswificonfiguration"></a>删除 macOSWiFiConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

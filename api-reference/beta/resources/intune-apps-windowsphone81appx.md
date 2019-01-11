@@ -2,12 +2,13 @@
 title: windowsPhone81AppX 资源类型
 description: 包含属性和 Windows Phone 8.1 约业务线应用程序继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 10882e8620cc22ab2397147b3fd01cacd451281e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 535eb9e82241870418826711b76421c6c6b2d0ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878209"
 ---
 # <a name="windowsphone81appx-resource-type"></a>windowsPhone81AppX 资源类型
 

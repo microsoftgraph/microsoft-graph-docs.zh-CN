@@ -2,12 +2,13 @@
 title: 更新 androidManagedStoreApp
 description: 更新 androidManagedStoreApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 2355b79b64c03da4f3be12e42d796b96ebbb31b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45f37c037b1a9e1d66ff9ce7ace58a51453b6eb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879392"
 ---
 # <a name="update-androidmanagedstoreapp"></a>更新 androidManagedStoreApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

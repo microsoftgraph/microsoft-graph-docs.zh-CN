@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
-ms.openlocfilehash: 38142299b06313da43637fd0a15ba95f3da362e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876732"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 

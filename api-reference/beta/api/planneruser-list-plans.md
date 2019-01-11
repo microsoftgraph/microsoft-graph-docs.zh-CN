@@ -1,12 +1,13 @@
 ---
 title: 列出计划
 description: 检索与 user 对象共享的 **plannerplan** 对象的列表。
-ms.openlocfilehash: b1aa987f1c615a17108ffb1b2d639e76a084faae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b64bae15222a42153ee5731b2ed0c4e623a6386a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875346"
 ---
 # <a name="list-plans"></a>列出计划
 

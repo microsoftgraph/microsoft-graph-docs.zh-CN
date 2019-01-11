@@ -2,12 +2,13 @@
 title: ChartGridlines 资源类型
 description: 代表图表坐标轴的主要或次要网格线。
 author: lumine2008
-ms.openlocfilehash: 2aaf044b09d061af4853e76e0f2ba118bd1b2321
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b95bc8c23ea71abb0d2c3f54e218d425e3d188ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880344"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
 

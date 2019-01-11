@@ -1,12 +1,13 @@
 ---
 title: iosGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: b5a1528a93373e3e4f29cbd1541aa322133e7579
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1175dc27e4bd6e073b15ec6487650e3a9882bf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880589"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
@@ -184,7 +185,7 @@ ms.locfileid: "27046878"
 |vpnBlockCreation|布尔|指示创建 VPN 配置为阻止 (iOS 11.0 及更高版本)。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

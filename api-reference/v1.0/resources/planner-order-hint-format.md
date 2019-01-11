@@ -2,12 +2,13 @@
 title: 使用规划器中的排序提示
 description: '`)'
 author: TarkanSevilmis
-ms.openlocfilehash: 17aee5f0a867f086ff8171bb3a7f8609526bf1ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e24b9c0510b574c9bf6cfeaaeacb66051a6d3df2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875934"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
 

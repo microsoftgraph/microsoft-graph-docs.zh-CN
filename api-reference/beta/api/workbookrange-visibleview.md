@@ -1,12 +1,14 @@
 ---
 title: 'workbookRange: visibleView'
-description: 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅权限。
-ms.openlocfilehash: 356a72dd6eeef31b39cf6168395e448c00f11779
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: >
+  需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅权限。
+localization_priority: Normal
+ms.openlocfilehash: f994866c8f55ec2ffbc0b680d4576fbc6a8b7bb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875164"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 

@@ -2,12 +2,13 @@
 title: 创建 windows10EnterpriseModernAppManagementConfiguration
 description: 创建新的 windows10EnterpriseModernAppManagementConfiguration 对象。
 author: tfitzmac
-ms.openlocfilehash: 0e04d717c1bed1803472c90dbffdba3b11a32aa4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7158690d9206922dd52941cd79d7cc4a6d9dab6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880008"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>创建 windows10EnterpriseModernAppManagementConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

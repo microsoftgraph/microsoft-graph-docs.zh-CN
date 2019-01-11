@@ -2,12 +2,13 @@
 title: 更新 educationAssignmentResource
 description: '更新资源分配相关联的属性。 仅在类的教师可以更改工作分配的资源对象。  '
 author: dipakboyed
-ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879308"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
@@ -38,9 +39,9 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| 指示工作分配发布时是否应将此资源复制到每个学生的资源对象。|
+|distributeForStudentWork|布尔| 指示工作分配发布时是否应将此资源复制到每个学生的资源对象。|
 |resource|educationResource| 资源对象。 |
 
 ## <a name="response"></a>响应

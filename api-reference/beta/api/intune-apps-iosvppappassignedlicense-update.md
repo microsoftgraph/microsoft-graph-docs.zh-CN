@@ -2,12 +2,13 @@
 title: 更新 iosVppAppAssignedLicense
 description: 更新 iosVppAppAssignedLicense 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e15aba6cf5ca5225210e946f04a6b1bff82cdd83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 226a192e5a3da8071b5c31a523f97c60ecec8b09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879154"
 ---
 # <a name="update-iosvppappassignedlicense"></a>更新 iosVppAppAssignedLicense
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

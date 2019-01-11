@@ -2,12 +2,13 @@
 title: 更新选项卡
 description: 更新指定的选项卡的属性。
 author: nkramer
-ms.openlocfilehash: 6594585721ddbe57ea56229ae37ebb85f9dfff66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5ddaec72908cb97aa5bccfc768ae78a82ad11a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881527"
 ---
 # <a name="update-tab"></a>更新选项卡
 

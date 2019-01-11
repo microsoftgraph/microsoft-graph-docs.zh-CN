@@ -2,12 +2,13 @@
 title: visibilitySetting 枚举类型
 description: 泛型可见性状态。
 author: tfitzmac
-ms.openlocfilehash: 23ba9f0495e60e0cbe7ff3a1f26e4b0cfa0d5129
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 32949fa460e04e0ddc4d27862ab7e2967450e50e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880372"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27301944"
 
 泛型可见性状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |隐藏|1|隐藏。|

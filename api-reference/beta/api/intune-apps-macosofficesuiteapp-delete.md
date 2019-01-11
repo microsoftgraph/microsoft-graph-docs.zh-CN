@@ -2,12 +2,13 @@
 title: 删除 macOSOfficeSuiteApp
 description: 删除 macOSOfficeSuiteApp。
 author: tfitzmac
-ms.openlocfilehash: 3deec15b20ed5a12d23f0b353c62550766d45b24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 445d51a6ad47e4cafbd99324d1c5092d63f154ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349929"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878895"
 ---
 # <a name="delete-macosofficesuiteapp"></a>删除 macOSOfficeSuiteApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

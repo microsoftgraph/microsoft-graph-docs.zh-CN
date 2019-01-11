@@ -2,12 +2,13 @@
 title: exportMobileConfig 函数
 description: 导出移动配置
 author: tfitzmac
-ms.openlocfilehash: d6f663a729e45433c6f56f08ba02bb642749f5f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a20c5c26e37133588ea5bc6c4abc81fcd38275a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878902"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 函数
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

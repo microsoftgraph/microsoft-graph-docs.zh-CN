@@ -2,12 +2,13 @@
 title: educationStudent 资源类型
 description: 添加到 educationUser 的其他信息，该属性将在用户的 primaryRole 为 `student` 时显示。
 author: mmast-msft
-ms.openlocfilehash: ce84c9f6abb71e99bf3d886e5bad9e7e97bcb513
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f87bbe9b15f89660a166c0ca1d9a1aaa4bbd9eff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878118"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 

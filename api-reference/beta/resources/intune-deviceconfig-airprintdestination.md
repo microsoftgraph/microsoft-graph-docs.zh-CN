@@ -2,12 +2,13 @@
 title: airPrintDestination 资源类型
 description: 代表一个 AirPrint 目标。
 author: tfitzmac
-ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878587"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 
@@ -17,12 +18,12 @@ ms.locfileid: "27361052"
 
 代表一个 AirPrint 目标。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |ipAddress|String|AirPrint 目标 IP 地址。|
 |resourcePath|字符串|与打印机关联的资源路径。 这对应于 _ipps.tcp Bonjour 记录的 rp 参数。 例如： 打印机/Canon_MG5300_series 打印机/Xerox_Phaser_7600、 ipp/打印，Epson_IPP_Printer。|
 |port|Int32|AirPrint 目标侦听端口。 如果未指定此项 AirPrint 将使用默认端口。 在 iOS 11.0 中可用和更高版本。|
-|forceTls|Boolean|如果 true AirPrint 连接受到保护传输层安全性 (TLS)。 默认值为 false。 在 iOS 11.0 中可用和更高版本。|
+|forceTls|布尔|如果 true AirPrint 连接受到保护传输层安全性 (TLS)。 默认值为 false。 在 iOS 11.0 中可用和更高版本。|
 
 ## <a name="relationships"></a>Relationships
 无

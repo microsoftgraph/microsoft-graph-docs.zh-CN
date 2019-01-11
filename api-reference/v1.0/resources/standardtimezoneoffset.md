@@ -1,12 +1,13 @@
 ---
 title: standardTimeZoneOffset 资源类型
 description: 指定时区何时从夏令时切换到标准时间。
-ms.openlocfilehash: 53c02a231d31dbdd1723fb0d8b476c988ff1d4ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5e224865f201041b72fb943bc3a76e8a67f7975a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875843"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>standardTimeZoneOffset 资源类型
 

@@ -2,12 +2,13 @@
 title: deviceManagementPartner 资源类型
 description: 表示与设备管理合作伙伴的连接的实体。
 author: tfitzmac
-ms.openlocfilehash: 2174f81f7b9c5e73c3bc42a54cb030cf50c216d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08d604fc5f56e9d6ded439bd398cda9b95e2c8a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875528"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 

@@ -2,12 +2,13 @@
 title: 更新 managedIOSStoreApp
 description: 更新 managedIOSStoreApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: dc9884b591ea31dd6dc943492fc2924f032b876d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60809c2d6031ad2b826e49e50640a5088fe84e67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874961"
 ---
 # <a name="update-managediosstoreapp"></a>更新 managedIOSStoreApp
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

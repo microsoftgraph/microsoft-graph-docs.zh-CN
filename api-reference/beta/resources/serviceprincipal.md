@@ -1,12 +1,13 @@
 ---
 title: servicePrincipal 资源类型
 description: 表示一个目录中的应用程序的实例。 继承自 directoryObject。
-ms.openlocfilehash: c3a08efb1dea1109bd32d59a479260e14089783d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880204"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -67,7 +68,7 @@ ms.locfileid: "27046843"
 |accountEnabled|布尔| **true**如果已启用的服务主体帐户;否则为**false**。            |
 |appDisplayName|字符串|通过关联的应用程序公开的显示名称。|
 |appId|String|关联的应用程序 （其**appId**属性） 的唯一标识符。|
-|appRoleAssignmentRequired|布尔值|指定 Azure AD 将问题的用户或访问令牌对应用程序之前是否需要向用户或组**appRoleAssignment** 。 不可为 null。 |
+|appRoleAssignmentRequired|布尔|指定 Azure AD 将问题的用户或访问令牌对应用程序之前是否需要向用户或组**appRoleAssignment** 。 不可为 null。 |
 |appRoles|[appRole](approle.md)集合|由关联的应用程序公开应用程序角色。 有关详细信息请参阅[应用程序](application.md)在实体上的**appRoles**属性定义。 不可为 null。 |
 |displayName|字符串|服务主体的显示名。|
 |errorUrl|字符串|            |
@@ -85,9 +86,9 @@ ms.locfileid: "27046843"
 |标记前添加的标记|String collection| 不可为 null。 |
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型 |说明|
+| 关系 | 类型 |Description|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|主体 （用户、 组和服务主体） 分配给此服务主体。 只读。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|主体 （用户、 组和服务主体） 分配给此服务主体。 此为只读属性。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md)集合|使用分配给的服务主体的应用程序。 只读。 可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|创建的此服务主体的目录对象。 只读。 可为 Null。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所在的角色。 HTTP 方法： 获取只读的。 可为 Null。|

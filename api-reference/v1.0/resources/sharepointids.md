@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharePointIds
-ms.openlocfilehash: 28788090ccda113d6f4cd669e89777be84e6c2d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ecbc5b4c3349333593730cb7b04c2eb5e5a1e4a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880260"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 

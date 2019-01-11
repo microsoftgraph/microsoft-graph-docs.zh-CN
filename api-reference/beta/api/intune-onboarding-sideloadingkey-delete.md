@@ -2,12 +2,13 @@
 title: 删除 sideLoadingKey
 description: 删除 sideLoadingKey。
 author: tfitzmac
-ms.openlocfilehash: 9f1c311299d9c027ece81d4478aece98ba0e2052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 949b65c6c2a8a091fd0854778a61d2d1c77e5822
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877306"
 ---
 # <a name="delete-sideloadingkey"></a>删除 sideLoadingKey
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
