@@ -2,28 +2,29 @@
 title: mobileAppAssignmentSettings 资源类型
 description: 包含用于为组分配移动应用的属性的抽象类。
 author: tfitzmac
-ms.openlocfilehash: 35f0739918f14c97d028451a8e45624f3e98de63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 092d7568c8a3f4611eed45db70f0db1883a51cf7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888646"
 ---
-# <a name="mobileappassignmentsettings-resource-type"></a><span data-ttu-id="3ebc3-103">mobileAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="3ebc3-103">mobileAppAssignmentSettings resource type</span></span>
+# <a name="mobileappassignmentsettings-resource-type"></a><span data-ttu-id="cc38d-103">mobileAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="cc38d-103">mobileAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="3ebc3-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="3ebc3-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3ebc3-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="3ebc3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cc38d-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="cc38d-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cc38d-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="cc38d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="3ebc3-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="3ebc3-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="cc38d-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="cc38d-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="3ebc3-107">包含用于为组分配移动应用的属性的抽象类。</span><span class="sxs-lookup"><span data-stu-id="3ebc3-107">Abstract class to contain properties used to assign a mobile app to a group.</span></span>
-## <a name="properties"></a><span data-ttu-id="3ebc3-108">属性</span><span class="sxs-lookup"><span data-stu-id="3ebc3-108">Properties</span></span>
-|<span data-ttu-id="3ebc3-109">属性</span><span class="sxs-lookup"><span data-stu-id="3ebc3-109">Property</span></span>|<span data-ttu-id="3ebc3-110">类型</span><span class="sxs-lookup"><span data-stu-id="3ebc3-110">Type</span></span>|<span data-ttu-id="3ebc3-111">说明</span><span class="sxs-lookup"><span data-stu-id="3ebc3-111">Description</span></span>|
+<span data-ttu-id="cc38d-107">包含用于为组分配移动应用的属性的抽象类。</span><span class="sxs-lookup"><span data-stu-id="cc38d-107">Abstract class to contain properties used to assign a mobile app to a group.</span></span>
+## <a name="properties"></a><span data-ttu-id="cc38d-108">属性</span><span class="sxs-lookup"><span data-stu-id="cc38d-108">Properties</span></span>
+|<span data-ttu-id="cc38d-109">属性</span><span class="sxs-lookup"><span data-stu-id="cc38d-109">Property</span></span>|<span data-ttu-id="cc38d-110">类型</span><span class="sxs-lookup"><span data-stu-id="cc38d-110">Type</span></span>|<span data-ttu-id="cc38d-111">说明</span><span class="sxs-lookup"><span data-stu-id="cc38d-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="3ebc3-112">关系</span><span class="sxs-lookup"><span data-stu-id="3ebc3-112">Relationships</span></span>
-<span data-ttu-id="3ebc3-113">无</span><span class="sxs-lookup"><span data-stu-id="3ebc3-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="3ebc3-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3ebc3-114">JSON Representation</span></span>
-<span data-ttu-id="3ebc3-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3ebc3-115">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="cc38d-112">关系</span><span class="sxs-lookup"><span data-stu-id="cc38d-112">Relationships</span></span>
+<span data-ttu-id="cc38d-113">无</span><span class="sxs-lookup"><span data-stu-id="cc38d-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cc38d-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cc38d-114">JSON Representation</span></span>
+<span data-ttu-id="cc38d-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cc38d-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"

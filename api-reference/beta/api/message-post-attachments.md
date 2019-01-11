@@ -2,72 +2,73 @@
 title: Add attachment
 description: '使用此 API 可将附件添加到邮件中。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 6f6a25f940429637e4b04f200e9a0fcee067c011
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9457aa138068b3059b1fabbd606268f6e756b94e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862767"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="92ea8-103">Add attachment</span><span class="sxs-lookup"><span data-stu-id="92ea8-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="f27b3-103">Add attachment</span><span class="sxs-lookup"><span data-stu-id="f27b3-103">Add attachment</span></span>
 
-> <span data-ttu-id="92ea8-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="92ea8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="92ea8-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="92ea8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f27b3-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f27b3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f27b3-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f27b3-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="92ea8-106">使用此 API 可将[附件](../resources/attachment.md)添加到邮件中。</span><span class="sxs-lookup"><span data-stu-id="92ea8-106">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
+<span data-ttu-id="f27b3-106">使用此 API 可将[附件](../resources/attachment.md)添加到邮件中。</span><span class="sxs-lookup"><span data-stu-id="f27b3-106">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
 
-<span data-ttu-id="92ea8-107">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="92ea8-107">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="f27b3-107">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="f27b3-107">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="92ea8-108">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="92ea8-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="92ea8-109">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="92ea8-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="92ea8-110">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="92ea8-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="f27b3-108">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="f27b3-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="f27b3-109">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="f27b3-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="f27b3-110">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="f27b3-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="92ea8-111">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="92ea8-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="f27b3-111">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="f27b3-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-<span data-ttu-id="92ea8-112">您可以通过其 attachments 集合，向其投递添加到现有邮件附件或到新邮件的正在[绘制](../api/user-post-messages.md)，或[创建和发送即时](../api/user-sendmail.md)。</span><span class="sxs-lookup"><span data-stu-id="92ea8-112">You can add an attachment to an existing message by posting to its attachments collection, or to a new message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).</span></span>
+<span data-ttu-id="f27b3-112">您可以通过其 attachments 集合，向其投递添加到现有邮件附件或到新邮件的正在[绘制](../api/user-post-messages.md)，或[创建和发送即时](../api/user-sendmail.md)。</span><span class="sxs-lookup"><span data-stu-id="f27b3-112">You can add an attachment to an existing message by posting to its attachments collection, or to a new message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).</span></span>
 
-<span data-ttu-id="92ea8-113">由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。</span><span class="sxs-lookup"><span data-stu-id="92ea8-113">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
-## <a name="permissions"></a><span data-ttu-id="92ea8-114">权限</span><span class="sxs-lookup"><span data-stu-id="92ea8-114">Permissions</span></span>
-<span data-ttu-id="92ea8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92ea8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f27b3-113">由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。</span><span class="sxs-lookup"><span data-stu-id="f27b3-113">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f27b3-114">权限</span><span class="sxs-lookup"><span data-stu-id="f27b3-114">Permissions</span></span>
+<span data-ttu-id="f27b3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f27b3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="92ea8-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="92ea8-117">Permission type</span></span>      | <span data-ttu-id="92ea8-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92ea8-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f27b3-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="f27b3-117">Permission type</span></span>      | <span data-ttu-id="f27b3-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f27b3-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="92ea8-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92ea8-119">Delegated (work or school account)</span></span> | <span data-ttu-id="92ea8-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="92ea8-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="92ea8-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92ea8-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92ea8-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="92ea8-122">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="92ea8-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="92ea8-123">Application</span></span> | <span data-ttu-id="92ea8-124">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="92ea8-124">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="f27b3-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f27b3-119">Delegated (work or school account)</span></span> | <span data-ttu-id="f27b3-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f27b3-120">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="f27b3-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f27b3-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f27b3-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f27b3-122">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="f27b3-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="f27b3-123">Application</span></span> | <span data-ttu-id="f27b3-124">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f27b3-124">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="92ea8-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92ea8-125">HTTP request</span></span>
-<span data-ttu-id="92ea8-126"><!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。</span><span class="sxs-lookup"><span data-stu-id="92ea8-126"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+## <a name="http-request"></a><span data-ttu-id="f27b3-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f27b3-125">HTTP request</span></span>
+<span data-ttu-id="f27b3-126"><!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。</span><span class="sxs-lookup"><span data-stu-id="f27b3-126"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="92ea8-127">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="92ea8-127">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="f27b3-127">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="f27b3-127">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="92ea8-p103">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="92ea8-p103">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="f27b3-p103">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="f27b3-p103">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="92ea8-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="92ea8-130">Request headers</span></span>
-| <span data-ttu-id="92ea8-131">Name</span><span class="sxs-lookup"><span data-stu-id="92ea8-131">Name</span></span>       | <span data-ttu-id="92ea8-132">类型</span><span class="sxs-lookup"><span data-stu-id="92ea8-132">Type</span></span> | <span data-ttu-id="92ea8-133">说明</span><span class="sxs-lookup"><span data-stu-id="92ea8-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f27b3-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="f27b3-130">Request headers</span></span>
+| <span data-ttu-id="f27b3-131">名称</span><span class="sxs-lookup"><span data-stu-id="f27b3-131">Name</span></span>       | <span data-ttu-id="f27b3-132">类型</span><span class="sxs-lookup"><span data-stu-id="f27b3-132">Type</span></span> | <span data-ttu-id="f27b3-133">说明</span><span class="sxs-lookup"><span data-stu-id="f27b3-133">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="92ea8-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="92ea8-134">Authorization</span></span>  | <span data-ttu-id="92ea8-135">string</span><span class="sxs-lookup"><span data-stu-id="92ea8-135">string</span></span>  | <span data-ttu-id="92ea8-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="92ea8-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="92ea8-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="92ea8-138">Content-Type</span></span> | <span data-ttu-id="92ea8-139">string</span><span class="sxs-lookup"><span data-stu-id="92ea8-139">string</span></span>  | <span data-ttu-id="92ea8-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="92ea8-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="f27b3-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f27b3-134">Authorization</span></span>  | <span data-ttu-id="f27b3-135">string</span><span class="sxs-lookup"><span data-stu-id="f27b3-135">string</span></span>  | <span data-ttu-id="f27b3-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f27b3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f27b3-138">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f27b3-138">Content-Type</span></span> | <span data-ttu-id="f27b3-139">string</span><span class="sxs-lookup"><span data-stu-id="f27b3-139">string</span></span>  | <span data-ttu-id="f27b3-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="f27b3-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="92ea8-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="92ea8-142">Request body</span></span>
-<span data-ttu-id="92ea8-143">在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="92ea8-143">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f27b3-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="f27b3-142">Request body</span></span>
+<span data-ttu-id="f27b3-143">在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f27b3-143">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="92ea8-144">响应</span><span class="sxs-lookup"><span data-stu-id="92ea8-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f27b3-144">响应</span><span class="sxs-lookup"><span data-stu-id="f27b3-144">Response</span></span>
 
-<span data-ttu-id="92ea8-145">如果成功，此方法返回`201 Created`响应代码和响应正文中的[Attachment](../resources/attachment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="92ea8-145">If successful, this method returns `201 Created` response code and the [Attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="f27b3-145">如果成功，此方法返回`201 Created`响应代码和响应正文中的[Attachment](../resources/attachment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f27b3-145">If successful, this method returns `201 Created` response code and the [Attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="92ea8-146">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="92ea8-146">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="f27b3-146">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="f27b3-146">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="92ea8-147">请求</span><span class="sxs-lookup"><span data-stu-id="92ea8-147">Request</span></span>
-<span data-ttu-id="92ea8-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="92ea8-148">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f27b3-147">请求</span><span class="sxs-lookup"><span data-stu-id="f27b3-147">Request</span></span>
+<span data-ttu-id="f27b3-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f27b3-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_message"
@@ -84,9 +85,9 @@ Content-length: 142
 }
 ```
 
-<span data-ttu-id="92ea8-149">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="92ea8-149">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="92ea8-150">响应</span><span class="sxs-lookup"><span data-stu-id="92ea8-150">Response</span></span>
-<span data-ttu-id="92ea8-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="92ea8-151">Here is an example of the response.</span></span> 
+<span data-ttu-id="f27b3-149">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f27b3-149">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="f27b3-150">响应</span><span class="sxs-lookup"><span data-stu-id="f27b3-150">Response</span></span>
+<span data-ttu-id="f27b3-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f27b3-151">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,10 +111,10 @@ Content-length: 202
 }
 ```
 
-## <a name="example-item-attachment"></a><span data-ttu-id="92ea8-152">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="92ea8-152">Example (item attachment)</span></span>
+## <a name="example-item-attachment"></a><span data-ttu-id="f27b3-152">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="f27b3-152">Example (item attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="92ea8-153">请求</span><span class="sxs-lookup"><span data-stu-id="92ea8-153">Request</span></span>
-<span data-ttu-id="92ea8-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="92ea8-154">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f27b3-153">请求</span><span class="sxs-lookup"><span data-stu-id="f27b3-153">Request</span></span>
+<span data-ttu-id="f27b3-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f27b3-154">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_from_message"
@@ -147,8 +148,8 @@ Content-length: 200
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="92ea8-155">响应</span><span class="sxs-lookup"><span data-stu-id="92ea8-155">Response</span></span>
-<span data-ttu-id="92ea8-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="92ea8-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f27b3-155">响应</span><span class="sxs-lookup"><span data-stu-id="f27b3-155">Response</span></span>
+<span data-ttu-id="f27b3-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f27b3-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,11 +170,11 @@ Content-length: 162
 }
 ```
 
-## <a name="example-reference-attachment"></a><span data-ttu-id="92ea8-159">示例（参考附件）</span><span class="sxs-lookup"><span data-stu-id="92ea8-159">Example (reference attachment)</span></span>
+## <a name="example-reference-attachment"></a><span data-ttu-id="f27b3-159">示例（参考附件）</span><span class="sxs-lookup"><span data-stu-id="f27b3-159">Example (reference attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="92ea8-160">请求</span><span class="sxs-lookup"><span data-stu-id="92ea8-160">Request</span></span>
-<span data-ttu-id="92ea8-161">下面是请求的添加到现有邮件引用附件的示例。</span><span class="sxs-lookup"><span data-stu-id="92ea8-161">Here is an example of a request that adds a reference attachment to an existing message.</span></span>
-<span data-ttu-id="92ea8-162">附件指向 OneDrive 上的文件夹。</span><span class="sxs-lookup"><span data-stu-id="92ea8-162">The attachment points to a folder on OneDrive.</span></span>
+##### <a name="request"></a><span data-ttu-id="f27b3-160">请求</span><span class="sxs-lookup"><span data-stu-id="f27b3-160">Request</span></span>
+<span data-ttu-id="f27b3-161">下面是请求的添加到现有邮件引用附件的示例。</span><span class="sxs-lookup"><span data-stu-id="f27b3-161">Here is an example of a request that adds a reference attachment to an existing message.</span></span>
+<span data-ttu-id="f27b3-162">附件指向 OneDrive 上的文件夹。</span><span class="sxs-lookup"><span data-stu-id="f27b3-162">The attachment points to a folder on OneDrive.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
@@ -195,8 +196,8 @@ Content-length: 319
 } 
 ```
 
-##### <a name="response"></a><span data-ttu-id="92ea8-163">响应</span><span class="sxs-lookup"><span data-stu-id="92ea8-163">Response</span></span>
-<span data-ttu-id="92ea8-164">下面是响应的完整的一个示例。</span><span class="sxs-lookup"><span data-stu-id="92ea8-164">Here is an example of a full response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f27b3-163">响应</span><span class="sxs-lookup"><span data-stu-id="f27b3-163">Response</span></span>
+<span data-ttu-id="f27b3-164">下面是响应的完整的一个示例。</span><span class="sxs-lookup"><span data-stu-id="f27b3-164">Here is an example of a full response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
