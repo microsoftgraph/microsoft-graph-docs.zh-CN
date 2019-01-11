@@ -2,12 +2,13 @@
 title: contactFolder 资源类型
 description: 包含联系人的文件夹。
 author: angelgolfer-ms
-ms.openlocfilehash: 4630547bdee34d6e012c3747dba248eef9f908b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14d7ddef1f8acae183e406f85582153905130cda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886105"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 

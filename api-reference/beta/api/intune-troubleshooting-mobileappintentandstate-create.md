@@ -2,12 +2,13 @@
 title: 创建 mobileAppIntentAndState
 description: 创建新的 mobileAppIntentAndState 对象。
 author: tfitzmac
-ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbd6e6053054045e2a95aebfc92acfd8a5d25052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886455"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 更新 macOSGeneralDeviceConfiguration
 description: 更新 macOSGeneralDeviceConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: bb21b987cdcd547a18752a24443ffd8e515da4dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f14ea6dc038f5cf5759d4e133a72e4390abc554f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884054"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

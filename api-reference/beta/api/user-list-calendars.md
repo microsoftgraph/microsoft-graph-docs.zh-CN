@@ -1,12 +1,13 @@
 ---
 title: 列出日历
 description: '获取用户的所有日历（`/calendars` 导航属性），从默认日历组或特定日历组中获取日历。 '
-ms.openlocfilehash: 93919f434bfbd7d3f2c11e641c9712a6d48e45b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c59ee99c900aa39221530473c9323dfcaab721b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886512"
 ---
 # <a name="list-calendars"></a>列出日历
 

@@ -2,12 +2,13 @@
 title: 列表 windowsManagementAppHealthStates
 description: 列出属性和 windowsManagementAppHealthState 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 68f1c1b1c59d1a70590356b791fcbf1dc25fd6c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23411e7478068caa9d6168746212d2e9042a6c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886441"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>列表 windowsManagementAppHealthStates
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 列出 windows10EnterpriseModernAppManagementConfigurations
 description: 列出 windows10EnterpriseModernAppManagementConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: ad15771b9357d83ff5118d0475010352923b67ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61ded782c605b3b85d9057ebfab6534f3873c20b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894395"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>列出 windows10EnterpriseModernAppManagementConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

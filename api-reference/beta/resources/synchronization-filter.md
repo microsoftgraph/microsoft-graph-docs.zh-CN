@@ -1,12 +1,13 @@
 ---
 title: 筛选资源类型
 description: 确定哪些对象应该设置到应用程序。 例如，您可能希望向只位于美国的设置用户。 存在范围筛选器时，将同步过程中跳过不满足筛选器的对象。
-ms.openlocfilehash: 72885cfbd49083ce80b96cd389286d5c50937ffb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 754271e9d33159a14d1abf356280dd619643002f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894409"
 ---
 # <a name="filter-resource-type"></a>筛选资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27044840"
 有关详细信息，请参阅[基于属性的应用程序与范围筛选器设置](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |categoryFilterGroups|[filterGroup](synchronization-filtergroup.md)集合|`*Experimental*`用于确定是否给定对象所属的组设置筛选器，并应作为此对象映射的一部分。 对象被视为范围内*如果集合中的组的任何计算结果为`true`*。|
 |组|[filterGroup](synchronization-filtergroup.md)集合|组设置用来确定给定对象是否在范围内用于设置筛选器。 **这是在大多数情况下应使用哪些筛选器**。 如果用来满足给定时刻，此筛选器对象然后对象或筛选器已更改，因此该筛选器是不满足任何更长时间，此类对象 * 获取取消设置"。 对象被视为范围内*如果集合中的组的任何计算结果为`true`*。|

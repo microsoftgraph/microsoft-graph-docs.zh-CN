@@ -2,12 +2,13 @@
 title: mobileAppContent 资源类型
 description: 包含特定应用版本的内容属性。 每个 mobileAppContent 都可以具有多个 mobileAppContentFile。
 author: tfitzmac
-ms.openlocfilehash: 071231d71d6111b5bbac85c6ef89f710b8ada72b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf1deeaf1a18d68675e68e7040099d31cdea552f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880295"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent 资源类型
 

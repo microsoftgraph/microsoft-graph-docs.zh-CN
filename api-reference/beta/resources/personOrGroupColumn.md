@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 116e3a61938926ab75534bb2dc88363cc7d15196
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bd75d9e112ff67e455cae07791ab3284861d5b72
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874170"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 

@@ -2,12 +2,13 @@
 title: 列表 androidCertificateProfileBases
 description: 列出属性和 androidCertificateProfileBase 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: c1fd8ab3a100adf355ecd4de3f8ce235229c07a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76e8e49e5171068214fb41cf46cd4e0e94dfdb3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878237"
 ---
 # <a name="list-androidcertificateprofilebases"></a>列表 androidCertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

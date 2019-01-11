@@ -1,12 +1,13 @@
 ---
 title: 获取 accessReview
 description: '在 Azure AD 中访问审阅功能，检索 accessReview 对象。  '
-ms.openlocfilehash: ecd802613e6ab36816800197c00595c90426fb2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 471cebe3dbfa60e6cc05e2be546504216163ee0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894038"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -35,7 +36,7 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

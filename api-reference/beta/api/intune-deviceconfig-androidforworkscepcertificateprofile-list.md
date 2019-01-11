@@ -2,12 +2,13 @@
 title: 列表 androidForWorkScepCertificateProfiles
 description: 列出属性和 androidForWorkScepCertificateProfile 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 5bc3fd447f099a5a5f9d93d76a08361bae592bac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 426e4c390133214132efe5c167a0adcd96c81306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878111"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>列表 androidForWorkScepCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

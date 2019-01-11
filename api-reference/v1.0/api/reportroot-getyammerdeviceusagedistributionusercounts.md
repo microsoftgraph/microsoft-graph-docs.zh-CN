@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerDeviceUsageDistributionUserCounts'
 description: 按设备类型获取用户数。
-ms.openlocfilehash: 49d56c1db84b9aa9395a0d6a389ce063c7e5c0bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 678c3c485df198809c168be22997a4c4c3c7e489
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885167"
 ---
 # <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a>reportRoot: getYammerDeviceUsageDistributionUserCounts
 

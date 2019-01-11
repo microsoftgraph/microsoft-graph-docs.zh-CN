@@ -1,12 +1,13 @@
 ---
 title: registryKeyState 资源类型
 description: 包含有关注册表的关键更改与通知，并更改的注册表项的过程信息。
-ms.openlocfilehash: 37654aab2bf8f0afae0f7ec6ed544aed8634dacc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 688c690083e24dc6c8ee7229498910befd0fdf3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884824"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27009510"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |配置单元|registryHive|[Windows 注册表配置单元](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)中： <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>读</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\。默认值。</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSamSoftware`、`localMachineSystem`、`usersDefault`。|
 |Key|字符串|当前的 （即更改） 的注册表项 （排除配置单元）。|

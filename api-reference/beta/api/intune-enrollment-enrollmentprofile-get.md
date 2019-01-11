@@ -2,12 +2,13 @@
 title: 获取 enrollmentProfile
 description: 读取属性和 enrollmentProfile 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 19cc27203e7676414862bcd5587cb054fc7d7014
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24e3e591ee0ccc9faf23cfaa718f05dceadb3699
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894381"
 ---
 # <a name="get-enrollmentprofile"></a>获取 enrollmentProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: securityNetworkProtocol 枚举类型
 description: 网络协议的可能值。
-ms.openlocfilehash: c0d676bc8c03faeee5ce8cf3265991304de31766
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49437c67ec84bf90403658e9a188675c22a4e369
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884628"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>securityNetworkProtocol 枚举类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27008537"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|未知的协议。|
 |ip|0|Internet 协议。|

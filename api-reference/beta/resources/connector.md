@@ -1,12 +1,13 @@
 ---
 title: 连接器资源类型
 description: 下面是资源的 JSON 表示形式。
-ms.openlocfilehash: 6d4cb7e5ca1a5384dbb6c8be92e7ce4eb107388a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884621"
 ---
 # <a name="connector-resource-type"></a>连接器资源类型
 
@@ -27,17 +28,17 @@ ms.locfileid: "27047930"
 |[List memberOf](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md)集合| 获取与连接器相关联的 connectorGroup 对象。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |externalIp|字符串|作为服务为连接器计算机检测到外部 IP 地址。 只读|
-|id|字符串| 连接符的对象 id。 <BR>只读。|
+|id|字符串| 连接符的对象 id。 <BR>此为只读属性。|
 |计算机名|字符串| 运行连接器的计算机的名称。 <BR>只读|
 |status|string| 指示连接符的状态。 可取值为：`active`、`inactive`。 只读 |
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
-|memberOf|[connectorGroup](connectorgroup.md)集合| ConnectorGroup 的连接的成员。<br>只读。 |
+|memberOf|[connectorGroup](connectorgroup.md)集合| ConnectorGroup 的连接的成员。<br>此为只读属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

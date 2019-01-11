@@ -2,12 +2,13 @@
 title: 创建 remoteActionAudit
 description: 创建新的 remoteActionAudit 对象。
 author: tfitzmac
-ms.openlocfilehash: 2af2ca759463419e8619e5298b84ed002472e455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d159565616664b1c795072336046c25585c42fa6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881793"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -38,7 +39,7 @@ POST /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

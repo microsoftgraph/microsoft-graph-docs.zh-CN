@@ -2,12 +2,13 @@
 title: 消息： 取消订阅
 description: 提交代表登录用户的电子邮件请求取消订阅电子邮件通讯组列表。 使用中的信息`List-Unsubscribe`标头。
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877684"
 ---
 # <a name="message-unsubscribe"></a>消息： 取消订阅
 
@@ -40,7 +41,7 @@ ms.locfileid: "27357223"
 POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

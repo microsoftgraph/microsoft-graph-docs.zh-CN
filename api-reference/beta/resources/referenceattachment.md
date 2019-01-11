@@ -1,12 +1,13 @@
 ---
 title: referenceAttachment 资源类型
 description: '指向文件夹或文件 （如文本文件或 Word 文档中） 上的 OneDrive for Business 云驱动器或其他受支持的存储位置，附加到的链接 '
-ms.openlocfilehash: e9885c3a0e5c7f723303d7d6461f4c07dbed6bf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6a334b303bea7aff768733434b9ba882de237a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880050"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment 资源类型
 
@@ -31,12 +32,12 @@ ms.locfileid: "27047250"
 |isFolder|布尔|指定附件是否链接到的文件夹。 必须将其设置为 true 如果**sourceUrl**文件夹的链接。 可选。|
 |isInline|布尔|如果附件显示为内嵌在嵌入对象的正文中，则设置为 true。 可选。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。|
-|name|字符串|表示嵌入的附件的图标下面显示的文本。 这不需要是实际的文件名称。 必需。|
+|name|字符串|表示嵌入的附件的图标下面显示的文本。 这不需要是实际的文件名称。 必填。|
 |权限|ReferenceAttachmentPermissions|指定**提供程序类型**中的提供程序的类型为附件授予的权限。 可取值为：`other`、`view`、`edit`、`anonymousView`、`anonymousEdit`、`organizationView`、`organizationEdit`。 可选。|
 |previewUrl|字符串|适用于仅图像-要获取的预览图像 URL 的参考附件。 仅当**sourceUrl**标识的图像文件，请使用**thumbnailUrl**和**previewUrl** 。 可选。|
 |提供程序类型|ReferenceAttachmentProviders|支持此 contentType 的附件的提供程序的类型。 可取值为：`other`、`oneDriveBusiness`、`oneDriveConsumer`、`dropbox`。 可选。|
 |size|Int32|存储在引用附件的邮件的元数据以字节为单位的大小。 此值不表示实际文件的大小。 可选。|
-|sourceUrl|字符串|若要获取附件内容的 URL。 如果这是指向文件夹的 URL，然后为文件夹以在 Outlook 或 Outlook web 上的中正确显示设置**isFolder**为 true。 必需。|
+|sourceUrl|字符串|若要获取附件内容的 URL。 如果这是指向文件夹的 URL，然后为文件夹以在 Outlook 或 Outlook web 上的中正确显示设置**isFolder**为 true。 必填。|
 |thumbnailUrl|字符串|适用于仅图像-要获取的缩略图图像 URL 的参考附件。 仅当**sourceUrl**标识的图像文件，请使用**thumbnailUrl**和**previewUrl** 。 可选。|
 
 ## <a name="relationships"></a>Relationships

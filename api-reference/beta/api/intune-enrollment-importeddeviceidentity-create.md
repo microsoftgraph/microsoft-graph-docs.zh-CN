@@ -2,12 +2,13 @@
 title: 创建 importedDeviceIdentity
 description: 创建新的 importedDeviceIdentity 对象。
 author: tfitzmac
-ms.openlocfilehash: 4a1180bd924b2f8d7c2d66fdd1f4fff76ae8f685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3a6ca16d9bfa4a79d723816544e9a7bcf3f77df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870523"
 ---
 # <a name="create-importeddeviceidentity"></a>创建 importedDeviceIdentity
 
@@ -38,7 +39,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

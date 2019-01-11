@@ -2,12 +2,13 @@
 title: 列出人员
 description: 检索一组 person 对象，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。
 author: simonhult
-ms.openlocfilehash: 52f3dade14af76732381bf71f0d8556f543287fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c1152990e23a931f246c5319e795ef7568aadd76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350111"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881597"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -49,7 +50,7 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="request-headers"></a>请求标头
 
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Accept | application/json |

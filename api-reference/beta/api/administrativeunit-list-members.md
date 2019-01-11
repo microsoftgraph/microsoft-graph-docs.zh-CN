@@ -2,12 +2,13 @@
 title: 列出成员
 description: 使用此 API 获取成员中一个管理单元的列表 （用户和组）。
 author: lleonard-msft
-ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2708f5e0395812f651942b26ab3ed303752d058d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894367"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -34,7 +35,7 @@ GET /administrativeUnits/{id}/members
 GET /administrativeUnits/{id}/members/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 

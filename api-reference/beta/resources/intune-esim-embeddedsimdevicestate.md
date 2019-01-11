@@ -2,12 +2,13 @@
 title: embeddedSIMDeviceState 资源类型
 description: 描述与设备相关的嵌入的 SIM 激活代码部署状态。
 author: tfitzmac
-ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15e969037a93ee11c300f7b18b0c8afcb36d0ce1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881513"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27308454"
 |universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UICCID) 标识到配置文件是要部署的硬件。|
 |deviceName|String|订阅已的设备名称设置如桌面 JOE|
 |userName|String|订阅已设置到例如 joe@contoso.com 用户名|
-|状态|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
 |stateDetails|字符串|字符串设置状态的说明。|
 
 ## <a name="relationships"></a>Relationships
