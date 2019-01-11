@@ -1,12 +1,13 @@
 ---
 title: 获得 onenoteOperation
 description: '获取长时间运行的 OneNote 操作的状态。这适用于在响应中返回 **Operation-Location** 标头的操作，例如 `CopyNotebook`、`CopyToNotebook`、`CopyToSectionGroup`、`and CopyToSection`。   '
-ms.openlocfilehash: 67f11fb29d34b0d8cd2968cdc1dd5addabb3c0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c402c5d334ab3b1fb34b2991ffcdb94c89bd5da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894325"
 ---
 # <a name="get-onenoteoperation"></a>获得 onenoteOperation
 

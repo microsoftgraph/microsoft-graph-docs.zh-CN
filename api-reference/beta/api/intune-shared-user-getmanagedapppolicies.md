@@ -2,12 +2,13 @@
 title: getManagedAppPolicies 函数
 description: 获取给定用户的应用限制。
 author: tfitzmac
-ms.openlocfilehash: 9b0729e986a7ab3434d2682d157e45f543d558a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c144f76be61c3825893d55e0eca7708d6b85caf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894164"
 ---
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 函数
 
@@ -43,7 +44,7 @@ GET /users/{usersId}/getManagedAppPolicies
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

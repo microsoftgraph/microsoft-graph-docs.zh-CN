@@ -1,12 +1,13 @@
 ---
 title: governanceRuleSetting 资源类型
 description: 表示角色设置组成的规则。
-ms.openlocfilehash: 486b5163c59772c971cfc1d61a98817b7f0c16f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894255"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27045676"
 
 
 ## <a name="properties"></a>属性
-|属性      | 类型         |说明|
+|属性      | 类型         |Description|
 |:-------------|:-------------|:----------|
 |ruleIdentifier|字符串        |规则的 id。 例如，``ExpirationRule``和``MfaRule``。|
 |setting       |String        |规则的设置。 值为 string JSON 格式的 Parameter_Name:Parameter_Value 对的列表。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|

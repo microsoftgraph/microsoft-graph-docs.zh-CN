@@ -2,12 +2,13 @@
 title: 参与者： 邀请
 description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894311"
 ---
 # <a name="participant-invite"></a>参与者： 邀请
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 邀请参与者。|
 |clientContext|字符串|客户端上下文。|

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 4cf9766c81f1b1676d82c78e2f248b8d8c91e5b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9de5de7f945177b1ab5c9f9107a32129f0f38c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894556"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -116,7 +117,7 @@ ms.locfileid: "27011618"
 | name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 | 包              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| photo                | [photo][]          | 照片元数据（如果此项包含照片）。只读。
+| photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
 | root                 | [根][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
@@ -125,7 +126,7 @@ ms.locfileid: "27011618"
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
+| video                | [视频][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 

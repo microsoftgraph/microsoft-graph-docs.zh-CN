@@ -2,12 +2,13 @@
 title: assign 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 70d66bfda498c6fbfa7065e0d35006563567bb08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b34f97abd61c53141f564be522c91631b6aaebde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894423"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

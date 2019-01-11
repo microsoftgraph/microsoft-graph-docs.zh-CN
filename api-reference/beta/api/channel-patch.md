@@ -2,12 +2,13 @@
 title: 修补程序通道
 description: 更新指定的频道的属性。
 author: nkramer
-ms.openlocfilehash: 267cc6bc148259bc573625fdb2775ac8b581a988
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f2d8eebf70d52b6067612c715939d7463b17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894080"
 ---
 # <a name="patch-channel"></a>修补程序通道
 

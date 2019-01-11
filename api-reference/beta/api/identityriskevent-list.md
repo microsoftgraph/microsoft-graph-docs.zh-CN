@@ -2,12 +2,13 @@
 title: 列表 identityRiskEvents
 description: 检索 identityriskevent 对象的列表。
 author: cloudhandler
-ms.openlocfilehash: ee730b2da90cd1d458bd3e3ad4c432db93fa4cea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fbd5e739986ded9fa6f5346e35808f4018bff625
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894248"
 ---
 # <a name="list-identityriskevents"></a>列表 identityRiskEvents
 
@@ -29,7 +30,7 @@ ms.locfileid: "27302777"
 GET /identityRiskEvents
 ```
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

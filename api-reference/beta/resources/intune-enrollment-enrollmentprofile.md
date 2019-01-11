@@ -1,12 +1,13 @@
 ---
 title: enrollmentProfile 资源类型
 description: EnrollmentProfile 资源表示它必须提供预注册启用注册其标识已预暂存某些设备配置的集合。 预暂存的设备标识分配给此类型的配置文件，以应用在相应的设备的注册的配置文件的配置。
-ms.openlocfilehash: 884fee5c6851e79d96cd036294e5e5485d6df66a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894304"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 

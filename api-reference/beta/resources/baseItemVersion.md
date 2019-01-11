@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
 title: BaseItemVersion
-ms.openlocfilehash: dfda19af6057bc1d6e1757d24f6a2c99979a8622
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a5181e9cbc089832e8f73e0b8222ca63b69ca30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894479"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 

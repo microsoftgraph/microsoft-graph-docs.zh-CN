@@ -1,12 +1,13 @@
 ---
 title: fileSecurityState 资源类型
 description: 包含与通知相关的文件 （处理） 有关的信息。
-ms.openlocfilehash: d1358d7fe0d5565845201781e32b3da14a89f412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894094"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27011407"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|包含文件哈希 （加密和位置） 的复杂类型。|
 |name|字符串|文件名 （不带路径）。|

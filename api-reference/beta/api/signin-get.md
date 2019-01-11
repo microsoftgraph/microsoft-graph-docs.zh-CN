@@ -1,12 +1,13 @@
 ---
 title: 获取登录
 description: 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。
-ms.openlocfilehash: 1934af9b918dc976ef7f3fc6cdd21c04f6fcc705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894493"
 ---
 # <a name="get-signin"></a>获取登录
 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。

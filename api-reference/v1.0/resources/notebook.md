@@ -2,12 +2,13 @@
 title: notebook 资源类型
 description: OneNote 笔记本。
 author: Jewan-microsoft
-ms.openlocfilehash: 2e435a208395e34e9c10474e3df15f1ad16f3996
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a657ea6d5837674a7881bc9ef6095af5529355a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894444"
 ---
 # <a name="notebook-resource-type"></a>notebook 资源类型
 

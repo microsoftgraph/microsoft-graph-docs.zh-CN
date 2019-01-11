@@ -2,12 +2,13 @@
 title: 创建 defaultDeviceCompliancePolicy
 description: 创建新的 defaultDeviceCompliancePolicy 对象。
 author: tfitzmac
-ms.openlocfilehash: 7e58ac41c1839429d2a15a4590a6ce765a5341a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a69c83e9de07f2e809e53f449d3f9686e238a138
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886777"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>创建 defaultDeviceCompliancePolicy
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示时创建 defaultDeviceCompliancePolicy 所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

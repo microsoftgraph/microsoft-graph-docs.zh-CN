@@ -2,12 +2,13 @@
 title: 更新 windowsMobileMSI
 description: 更新 windowsMobileMSI 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 859d32fbf053ba22c0bd59afe8ad24d6b05c84a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6632343b7a85b6f3444908b6dc3699d11bf4673a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894577"
 ---
 # <a name="update-windowsmobilemsi"></a>更新 windowsMobileMSI
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

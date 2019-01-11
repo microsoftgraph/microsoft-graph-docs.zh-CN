@@ -2,12 +2,13 @@
 title: 'Chart: setPosition'
 description: 相对于工作表上的单元格放置图表。
 author: lumine2008
-ms.openlocfilehash: 8d5a5f2b599d9d3b3902c8bbb5feec2d8178a6e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e48db7ccf2a41f4dc87b15089440b9b2bf3aa10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894115"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |startCell|string|起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。|
 |endCell|string|可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。|

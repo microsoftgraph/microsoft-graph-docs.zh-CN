@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentProfile 资源类型
 description: 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
-ms.openlocfilehash: c79c2b63d71caa75941c3bba07832d98e8becdc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a10e3a153cc21837ab015ab0c08e8c8b6ee0ac9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890970"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>androidForWorkEnrollmentProfile 资源类型
 

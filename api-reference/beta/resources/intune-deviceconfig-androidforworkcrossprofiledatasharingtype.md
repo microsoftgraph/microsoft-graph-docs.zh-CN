@@ -2,12 +2,13 @@
 title: androidForWorkCrossProfileDataSharingType 枚举类型
 description: Android 的工作跨共享类型的配置文件数据。
 author: tfitzmac
-ms.openlocfilehash: c2ed9206a59b03cf6391d81d236135fc878a93f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17506ba1b63aec4b6c29233cc81edccbcf09f694
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894528"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>androidForWorkCrossProfileDataSharingType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360730"
 
 Android 的工作跨共享类型的配置文件数据。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |preventAny|1|防止任何共享。|
