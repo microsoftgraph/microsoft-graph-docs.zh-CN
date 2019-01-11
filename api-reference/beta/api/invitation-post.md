@@ -1,62 +1,63 @@
 ---
 title: 创建邀请
 description: 使用该 API 创建新的邀请。邀请将外部用户添加至组织。
-ms.openlocfilehash: 220b90cafdd7825dbb6dff9bb8635a51de2ee267
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94b02335c123529a9f797c4003a2743e4c074c32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864279"
 ---
-# <a name="create-invitation"></a><span data-ttu-id="12bee-104">创建邀请</span><span class="sxs-lookup"><span data-stu-id="12bee-104">Create invitation</span></span>
+# <a name="create-invitation"></a><span data-ttu-id="85386-104">创建邀请</span><span class="sxs-lookup"><span data-stu-id="85386-104">Create invitation</span></span>
 
-> <span data-ttu-id="12bee-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="12bee-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="12bee-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="12bee-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85386-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="85386-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="85386-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="85386-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="12bee-p103">使用该 API 创建新的[邀请](../resources/invitation.md)。邀请将外部用户添加至组织。</span><span class="sxs-lookup"><span data-stu-id="12bee-p103">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
+<span data-ttu-id="85386-p103">使用该 API 创建新的[邀请](../resources/invitation.md)。邀请将外部用户添加至组织。</span><span class="sxs-lookup"><span data-stu-id="85386-p103">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
 
-<span data-ttu-id="12bee-109">创建新的邀请时，有多个选项可供使用：</span><span class="sxs-lookup"><span data-stu-id="12bee-109">When creating a new invitation you have several options available:</span></span>
+<span data-ttu-id="85386-109">创建新的邀请时，有多个选项可供使用：</span><span class="sxs-lookup"><span data-stu-id="85386-109">When creating a new invitation you have several options available:</span></span>
 
-1. <span data-ttu-id="12bee-p104">创建邀请后，Microsoft Graph 可以自动向邀请的用户直接发送邀请电子邮件，或者你的应用可以使用创建响应中返回的 *inviteRedeemUrl* 创建自己的邀请（通过你所选择的通信机制）并发送给邀请的用户。如果决定让 Microsoft Graph 自动发送邀请电子邮件，则你可以使用 [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) 控制电子邮件的内容和语言。</span><span class="sxs-lookup"><span data-stu-id="12bee-p104">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
-2. <span data-ttu-id="12bee-p105">邀请用户后，会创建用户实体（userType 为“来宾”）并且现在可以使用它来控制对资源的访问。受邀请的用户必须完成兑换过程才能访问其获得邀请的任意资源。</span><span class="sxs-lookup"><span data-stu-id="12bee-p105">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
+1. <span data-ttu-id="85386-p104">创建邀请后，Microsoft Graph 可以自动向邀请的用户直接发送邀请电子邮件，或者你的应用可以使用创建响应中返回的 *inviteRedeemUrl* 创建自己的邀请（通过你所选择的通信机制）并发送给邀请的用户。如果决定让 Microsoft Graph 自动发送邀请电子邮件，则你可以使用 [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) 控制电子邮件的内容和语言。</span><span class="sxs-lookup"><span data-stu-id="85386-p104">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
+2. <span data-ttu-id="85386-p105">邀请用户后，会创建用户实体（userType 为“来宾”）并且现在可以使用它来控制对资源的访问。受邀请的用户必须完成兑换过程才能访问其获得邀请的任意资源。</span><span class="sxs-lookup"><span data-stu-id="85386-p105">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="12bee-114">权限</span><span class="sxs-lookup"><span data-stu-id="12bee-114">Permissions</span></span>
-<span data-ttu-id="12bee-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="12bee-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="85386-114">权限</span><span class="sxs-lookup"><span data-stu-id="85386-114">Permissions</span></span>
+<span data-ttu-id="85386-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="85386-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="12bee-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="12bee-117">Permission type</span></span>      | <span data-ttu-id="12bee-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="12bee-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="85386-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="85386-117">Permission type</span></span>      | <span data-ttu-id="85386-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="85386-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="12bee-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="12bee-119">Delegated (work or school account)</span></span> | <span data-ttu-id="12bee-120">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12bee-120">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="12bee-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="12bee-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12bee-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="12bee-122">Not supported.</span></span>    |
-|<span data-ttu-id="12bee-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="12bee-123">Application</span></span> | <span data-ttu-id="12bee-124">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12bee-124">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="85386-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="85386-119">Delegated (work or school account)</span></span> | <span data-ttu-id="85386-120">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85386-120">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="85386-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="85386-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85386-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="85386-122">Not supported.</span></span>    |
+|<span data-ttu-id="85386-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="85386-123">Application</span></span> | <span data-ttu-id="85386-124">User.Invite.All、User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85386-124">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="12bee-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="12bee-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85386-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="85386-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-## <a name="request-headers"></a><span data-ttu-id="12bee-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="12bee-126">Request headers</span></span>
-| <span data-ttu-id="12bee-127">标头</span><span class="sxs-lookup"><span data-stu-id="12bee-127">Header</span></span>       | <span data-ttu-id="12bee-128">值</span><span class="sxs-lookup"><span data-stu-id="12bee-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="85386-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="85386-126">Request headers</span></span>
+| <span data-ttu-id="85386-127">标头</span><span class="sxs-lookup"><span data-stu-id="85386-127">Header</span></span>       | <span data-ttu-id="85386-128">值</span><span class="sxs-lookup"><span data-stu-id="85386-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="12bee-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="12bee-129">Authorization</span></span>  | <span data-ttu-id="12bee-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="12bee-p107">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="12bee-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="12bee-132">Content-Type</span></span>  | <span data-ttu-id="12bee-133">application/json</span><span class="sxs-lookup"><span data-stu-id="12bee-133">application/json</span></span>  |
+| <span data-ttu-id="85386-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="85386-129">Authorization</span></span>  | <span data-ttu-id="85386-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="85386-p107">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="85386-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="85386-132">Content-Type</span></span>  | <span data-ttu-id="85386-133">application/json</span><span class="sxs-lookup"><span data-stu-id="85386-133">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="12bee-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="12bee-134">Request body</span></span>
-<span data-ttu-id="12bee-135">在请求正文中，提供 [invitation](../resources/invitation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="12bee-135">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85386-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="85386-134">Request body</span></span>
+<span data-ttu-id="85386-135">在请求正文中，提供 [invitation](../resources/invitation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="85386-135">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
 
-<span data-ttu-id="12bee-136">下表显示创建邀请时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="12bee-136">The following table shows the properties that are required when you create a invitation.</span></span>
+<span data-ttu-id="85386-136">下表显示创建邀请时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="85386-136">The following table shows the properties that are required when you create a invitation.</span></span>
 
-| <span data-ttu-id="12bee-137">参数</span><span class="sxs-lookup"><span data-stu-id="12bee-137">Parameter</span></span> | <span data-ttu-id="12bee-138">类型</span><span class="sxs-lookup"><span data-stu-id="12bee-138">Type</span></span> | <span data-ttu-id="12bee-139">说明</span><span class="sxs-lookup"><span data-stu-id="12bee-139">Description</span></span>|
+| <span data-ttu-id="85386-137">参数</span><span class="sxs-lookup"><span data-stu-id="85386-137">Parameter</span></span> | <span data-ttu-id="85386-138">类型</span><span class="sxs-lookup"><span data-stu-id="85386-138">Type</span></span> | <span data-ttu-id="85386-139">说明</span><span class="sxs-lookup"><span data-stu-id="85386-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="12bee-140">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="12bee-140">invitedUserEmailAddress</span></span> |<span data-ttu-id="12bee-141">string</span><span class="sxs-lookup"><span data-stu-id="12bee-141">string</span></span> | <span data-ttu-id="12bee-142">你要邀请的用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="12bee-142">The email address of the user you are inviting.</span></span>|
-|<span data-ttu-id="12bee-143">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="12bee-143">inviteRedirectUrl</span></span> |<span data-ttu-id="12bee-144">string</span><span class="sxs-lookup"><span data-stu-id="12bee-144">string</span></span> |<span data-ttu-id="12bee-145">兑现后用户将被重定向至的 URL。</span><span class="sxs-lookup"><span data-stu-id="12bee-145">The URL that the user will be redirected to after redemption.</span></span>|
+|<span data-ttu-id="85386-140">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="85386-140">invitedUserEmailAddress</span></span> |<span data-ttu-id="85386-141">string</span><span class="sxs-lookup"><span data-stu-id="85386-141">string</span></span> | <span data-ttu-id="85386-142">你要邀请的用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="85386-142">The email address of the user you are inviting.</span></span>|
+|<span data-ttu-id="85386-143">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="85386-143">inviteRedirectUrl</span></span> |<span data-ttu-id="85386-144">string</span><span class="sxs-lookup"><span data-stu-id="85386-144">string</span></span> |<span data-ttu-id="85386-145">兑现后用户将被重定向至的 URL。</span><span class="sxs-lookup"><span data-stu-id="85386-145">The URL that the user will be redirected to after redemption.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="12bee-146">响应</span><span class="sxs-lookup"><span data-stu-id="12bee-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="85386-146">响应</span><span class="sxs-lookup"><span data-stu-id="85386-146">Response</span></span>
 
-<span data-ttu-id="12bee-147">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [invitation](../resources/invitation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="12bee-147">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
+<span data-ttu-id="85386-147">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [invitation](../resources/invitation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="85386-147">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="12bee-148">示例</span><span class="sxs-lookup"><span data-stu-id="12bee-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="12bee-149">请求</span><span class="sxs-lookup"><span data-stu-id="12bee-149">Request</span></span>
-<span data-ttu-id="12bee-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="12bee-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="85386-148">示例</span><span class="sxs-lookup"><span data-stu-id="85386-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="85386-149">请求</span><span class="sxs-lookup"><span data-stu-id="85386-149">Request</span></span>
+<span data-ttu-id="85386-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="85386-150">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -72,8 +73,8 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="12bee-151">响应</span><span class="sxs-lookup"><span data-stu-id="12bee-151">Response</span></span>
-<span data-ttu-id="12bee-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="12bee-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="85386-151">响应</span><span class="sxs-lookup"><span data-stu-id="85386-151">Response</span></span>
+<span data-ttu-id="85386-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="85386-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,26 +1,27 @@
 ---
 title: 列出分区
 description: 从指定的节组检索 onenoteSection 对象的列表。
-ms.openlocfilehash: 0298293f1f82cd61d376e195360b79d4a96d5344
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3086a3476d1fa6732a7aae287f0cdf7cad0b16fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867800"
 ---
-# <a name="list-sections"></a><span data-ttu-id="c3d23-103">列出分区</span><span class="sxs-lookup"><span data-stu-id="c3d23-103">List sections</span></span>
+# <a name="list-sections"></a><span data-ttu-id="dceb5-103">列出分区</span><span class="sxs-lookup"><span data-stu-id="dceb5-103">List sections</span></span>
 
-<span data-ttu-id="c3d23-104">从指定的节组检索[onenoteSection](../resources/section.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="c3d23-104">Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified section group.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c3d23-105">权限</span><span class="sxs-lookup"><span data-stu-id="c3d23-105">Permissions</span></span>
-<span data-ttu-id="c3d23-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3d23-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dceb5-104">从指定的节组检索[onenoteSection](../resources/section.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="dceb5-104">Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified section group.</span></span>
+## <a name="permissions"></a><span data-ttu-id="dceb5-105">权限</span><span class="sxs-lookup"><span data-stu-id="dceb5-105">Permissions</span></span>
+<span data-ttu-id="dceb5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dceb5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c3d23-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3d23-108">Permission type</span></span>      | <span data-ttu-id="c3d23-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c3d23-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dceb5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dceb5-108">Permission type</span></span>      | <span data-ttu-id="dceb5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dceb5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c3d23-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3d23-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c3d23-111">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3d23-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c3d23-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3d23-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3d23-113">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c3d23-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="c3d23-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c3d23-114">Application</span></span> | <span data-ttu-id="c3d23-115">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3d23-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="dceb5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dceb5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dceb5-111">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dceb5-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dceb5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dceb5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dceb5-113">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dceb5-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="dceb5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dceb5-114">Application</span></span> | <span data-ttu-id="dceb5-115">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dceb5-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c3d23-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3d23-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dceb5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dceb5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/sectionGroups/{id}/sections
@@ -28,29 +29,29 @@ GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 GET /groups/{id}/onenote/sectionGroups/{id}/sections
 GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c3d23-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c3d23-117">Optional query parameters</span></span>
-<span data-ttu-id="c3d23-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c3d23-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dceb5-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="dceb5-117">Optional query parameters</span></span>
+<span data-ttu-id="dceb5-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="dceb5-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="c3d23-119">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="c3d23-119">The default sort order is `name asc`.</span></span>
+<span data-ttu-id="dceb5-119">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="dceb5-119">The default sort order is `name asc`.</span></span>
 
-<span data-ttu-id="c3d23-p102">默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区的有效 `expand` 值为 `parentNotebook` 和 `parentSectionGroup`。</span><span class="sxs-lookup"><span data-stu-id="c3d23-p102">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
+<span data-ttu-id="dceb5-p102">默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区的有效 `expand` 值为 `parentNotebook` 和 `parentSectionGroup`。</span><span class="sxs-lookup"><span data-stu-id="dceb5-p102">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="c3d23-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="c3d23-122">Request headers</span></span>
-| <span data-ttu-id="c3d23-123">名称</span><span class="sxs-lookup"><span data-stu-id="c3d23-123">Name</span></span>       | <span data-ttu-id="c3d23-124">类型</span><span class="sxs-lookup"><span data-stu-id="c3d23-124">Type</span></span> | <span data-ttu-id="c3d23-125">说明</span><span class="sxs-lookup"><span data-stu-id="c3d23-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dceb5-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="dceb5-122">Request headers</span></span>
+| <span data-ttu-id="dceb5-123">名称</span><span class="sxs-lookup"><span data-stu-id="dceb5-123">Name</span></span>       | <span data-ttu-id="dceb5-124">类型</span><span class="sxs-lookup"><span data-stu-id="dceb5-124">Type</span></span> | <span data-ttu-id="dceb5-125">说明</span><span class="sxs-lookup"><span data-stu-id="dceb5-125">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c3d23-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3d23-126">Authorization</span></span>  | <span data-ttu-id="c3d23-127">string</span><span class="sxs-lookup"><span data-stu-id="c3d23-127">string</span></span>  | <span data-ttu-id="c3d23-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c3d23-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c3d23-130">Accept</span><span class="sxs-lookup"><span data-stu-id="c3d23-130">Accept</span></span> | <span data-ttu-id="c3d23-131">string</span><span class="sxs-lookup"><span data-stu-id="c3d23-131">string</span></span> | `application/json` |
+| <span data-ttu-id="dceb5-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="dceb5-126">Authorization</span></span>  | <span data-ttu-id="dceb5-127">string</span><span class="sxs-lookup"><span data-stu-id="dceb5-127">string</span></span>  | <span data-ttu-id="dceb5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dceb5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dceb5-130">Accept</span><span class="sxs-lookup"><span data-stu-id="dceb5-130">Accept</span></span> | <span data-ttu-id="dceb5-131">string</span><span class="sxs-lookup"><span data-stu-id="dceb5-131">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="c3d23-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="c3d23-132">Request body</span></span>
-<span data-ttu-id="c3d23-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c3d23-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dceb5-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="dceb5-132">Request body</span></span>
+<span data-ttu-id="dceb5-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dceb5-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c3d23-134">响应</span><span class="sxs-lookup"><span data-stu-id="c3d23-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dceb5-134">响应</span><span class="sxs-lookup"><span data-stu-id="dceb5-134">Response</span></span>
 
-<span data-ttu-id="c3d23-135">如果成功，此方法返回`200 OK`响应代码和响应正文中的[onenoteSection](../resources/section.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c3d23-135">If successful, this method returns a `200 OK` response code and a collection of [onenoteSection](../resources/section.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c3d23-136">示例</span><span class="sxs-lookup"><span data-stu-id="c3d23-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c3d23-137">请求</span><span class="sxs-lookup"><span data-stu-id="c3d23-137">Request</span></span>
-<span data-ttu-id="c3d23-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c3d23-138">Here is an example of the request.</span></span>
+<span data-ttu-id="dceb5-135">如果成功，此方法返回`200 OK`响应代码和响应正文中的[onenoteSection](../resources/section.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="dceb5-135">If successful, this method returns a `200 OK` response code and a collection of [onenoteSection](../resources/section.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="dceb5-136">示例</span><span class="sxs-lookup"><span data-stu-id="dceb5-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dceb5-137">请求</span><span class="sxs-lookup"><span data-stu-id="dceb5-137">Request</span></span>
+<span data-ttu-id="dceb5-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dceb5-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_sections"
@@ -58,8 +59,8 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
-##### <a name="response"></a><span data-ttu-id="c3d23-139">响应</span><span class="sxs-lookup"><span data-stu-id="c3d23-139">Response</span></span>
-<span data-ttu-id="c3d23-p104">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c3d23-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="dceb5-139">响应</span><span class="sxs-lookup"><span data-stu-id="dceb5-139">Response</span></span>
+<span data-ttu-id="dceb5-p104">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dceb5-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
