@@ -2,47 +2,48 @@
 title: 列出 ownedObject
 description: 获取用户拥有的 directory 对象列表。
 author: dkershaw10
-ms.openlocfilehash: 44f22169b6653366301a9f829720d78539ab6af6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc9a39ef672d62cb0f68a8cca09aecf8d6507b90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811499"
 ---
-# <a name="list-ownedobjects"></a><span data-ttu-id="041fd-103">列出 ownedObject</span><span class="sxs-lookup"><span data-stu-id="041fd-103">List ownedObjects</span></span>
+# <a name="list-ownedobjects"></a><span data-ttu-id="be35b-103">列出 ownedObject</span><span class="sxs-lookup"><span data-stu-id="be35b-103">List ownedObjects</span></span>
 
-<span data-ttu-id="041fd-104">获取用户拥有的 directory 对象列表。</span><span class="sxs-lookup"><span data-stu-id="041fd-104">Get the list of directory objects that are owned by the user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="041fd-105">权限</span><span class="sxs-lookup"><span data-stu-id="041fd-105">Permissions</span></span>
-<span data-ttu-id="041fd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="041fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="be35b-104">获取用户拥有的 directory 对象列表。</span><span class="sxs-lookup"><span data-stu-id="be35b-104">Get the list of directory objects that are owned by the user.</span></span>
+## <a name="permissions"></a><span data-ttu-id="be35b-105">权限</span><span class="sxs-lookup"><span data-stu-id="be35b-105">Permissions</span></span>
+<span data-ttu-id="be35b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="be35b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="041fd-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="041fd-108">Permission type</span></span>      | <span data-ttu-id="041fd-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="041fd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="be35b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="be35b-108">Permission type</span></span>      | <span data-ttu-id="be35b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="be35b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="041fd-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="041fd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="041fd-111">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="041fd-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="041fd-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="041fd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="041fd-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="041fd-113">Not supported.</span></span>    |
-|<span data-ttu-id="041fd-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="041fd-114">Application</span></span> | <span data-ttu-id="041fd-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="041fd-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="be35b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="be35b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="be35b-111">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="be35b-111">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="be35b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="be35b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be35b-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="be35b-113">Not supported.</span></span>    |
+|<span data-ttu-id="be35b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="be35b-114">Application</span></span> | <span data-ttu-id="be35b-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be35b-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="041fd-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="041fd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="be35b-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="be35b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="041fd-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="041fd-117">Optional query parameters</span></span>
-<span data-ttu-id="041fd-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="041fd-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="041fd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="041fd-119">Request headers</span></span>
-| <span data-ttu-id="041fd-120">标头</span><span class="sxs-lookup"><span data-stu-id="041fd-120">Header</span></span>       | <span data-ttu-id="041fd-121">值</span><span class="sxs-lookup"><span data-stu-id="041fd-121">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="be35b-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="be35b-117">Optional query parameters</span></span>
+<span data-ttu-id="be35b-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="be35b-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="be35b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="be35b-119">Request headers</span></span>
+| <span data-ttu-id="be35b-120">标头</span><span class="sxs-lookup"><span data-stu-id="be35b-120">Header</span></span>       | <span data-ttu-id="be35b-121">值</span><span class="sxs-lookup"><span data-stu-id="be35b-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="041fd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="041fd-122">Authorization</span></span>  | <span data-ttu-id="041fd-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="041fd-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="041fd-125">Accept</span><span class="sxs-lookup"><span data-stu-id="041fd-125">Accept</span></span>  | <span data-ttu-id="041fd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="041fd-126">application/json</span></span>|
+| <span data-ttu-id="be35b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="be35b-122">Authorization</span></span>  | <span data-ttu-id="be35b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="be35b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="be35b-125">Accept</span><span class="sxs-lookup"><span data-stu-id="be35b-125">Accept</span></span>  | <span data-ttu-id="be35b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="be35b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="041fd-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="041fd-127">Request body</span></span>
-<span data-ttu-id="041fd-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="041fd-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="be35b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="be35b-127">Request body</span></span>
+<span data-ttu-id="be35b-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="be35b-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="041fd-129">响应</span><span class="sxs-lookup"><span data-stu-id="041fd-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="be35b-129">响应</span><span class="sxs-lookup"><span data-stu-id="be35b-129">Response</span></span>
 
-<span data-ttu-id="041fd-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="041fd-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="041fd-131">示例</span><span class="sxs-lookup"><span data-stu-id="041fd-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="041fd-132">请求</span><span class="sxs-lookup"><span data-stu-id="041fd-132">Request</span></span>
-<span data-ttu-id="041fd-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="041fd-133">Here is an example of the request.</span></span>
+<span data-ttu-id="be35b-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="be35b-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="be35b-131">示例</span><span class="sxs-lookup"><span data-stu-id="be35b-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="be35b-132">请求</span><span class="sxs-lookup"><span data-stu-id="be35b-132">Request</span></span>
+<span data-ttu-id="be35b-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="be35b-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_ownedobjects"
@@ -50,8 +51,8 @@ GET /users/{id | userPrincipalName}/ownedObjects
 ```http
 GET https://graph.microsoft.com/v1.0/me/ownedObjects
 ```
-##### <a name="response"></a><span data-ttu-id="041fd-134">响应</span><span class="sxs-lookup"><span data-stu-id="041fd-134">Response</span></span>
-<span data-ttu-id="041fd-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="041fd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="be35b-134">响应</span><span class="sxs-lookup"><span data-stu-id="be35b-134">Response</span></span>
+<span data-ttu-id="be35b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="be35b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

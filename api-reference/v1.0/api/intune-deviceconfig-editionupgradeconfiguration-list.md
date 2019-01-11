@@ -2,29 +2,30 @@
 title: 列出 editionUpgradeConfigurations
 description: 列出 editionUpgradeConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: e3dc33fbecf05f65eac49adf50c747ce5545ed3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e6582cbe60a86a06ebc6cb4a1f4fe7465346b0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810610"
 ---
-# <a name="list-editionupgradeconfigurations"></a><span data-ttu-id="28fec-103">列出 editionUpgradeConfigurations</span><span class="sxs-lookup"><span data-stu-id="28fec-103">List editionUpgradeConfigurations</span></span>
+# <a name="list-editionupgradeconfigurations"></a><span data-ttu-id="e2254-103">列出 editionUpgradeConfigurations</span><span class="sxs-lookup"><span data-stu-id="e2254-103">List editionUpgradeConfigurations</span></span>
 
-> <span data-ttu-id="28fec-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="28fec-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e2254-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="e2254-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="28fec-105">列出 [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="28fec-105">List properties and relationships of the [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="28fec-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="28fec-106">Prerequisites</span></span>
-<span data-ttu-id="28fec-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="28fec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e2254-105">列出 [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e2254-105">List properties and relationships of the [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e2254-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="e2254-106">Prerequisites</span></span>
+<span data-ttu-id="e2254-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="e2254-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="28fec-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="28fec-109">Permission type</span></span>|<span data-ttu-id="28fec-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="28fec-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e2254-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e2254-109">Permission type</span></span>|<span data-ttu-id="e2254-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e2254-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="28fec-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="28fec-111">Delegated (work or school account)</span></span>|<span data-ttu-id="28fec-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="28fec-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="28fec-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="28fec-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28fec-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="28fec-114">Not supported.</span></span>|
-|<span data-ttu-id="28fec-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="28fec-115">Application</span></span>|<span data-ttu-id="28fec-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="28fec-116">Not supported.</span></span>|
+|<span data-ttu-id="e2254-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e2254-111">Delegated (work or school account)</span></span>|<span data-ttu-id="e2254-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2254-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="e2254-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e2254-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e2254-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e2254-114">Not supported.</span></span>|
+|<span data-ttu-id="e2254-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e2254-115">Application</span></span>|<span data-ttu-id="e2254-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e2254-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="28fec-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="28fec-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e2254-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e2254-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27355088"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="28fec-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="28fec-118">Request headers</span></span>
-|<span data-ttu-id="28fec-119">标头</span><span class="sxs-lookup"><span data-stu-id="28fec-119">Header</span></span>|<span data-ttu-id="28fec-120">值</span><span class="sxs-lookup"><span data-stu-id="28fec-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e2254-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e2254-118">Request headers</span></span>
+|<span data-ttu-id="e2254-119">标头</span><span class="sxs-lookup"><span data-stu-id="e2254-119">Header</span></span>|<span data-ttu-id="e2254-120">值</span><span class="sxs-lookup"><span data-stu-id="e2254-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="28fec-121">授权</span><span class="sxs-lookup"><span data-stu-id="28fec-121">Authorization</span></span>|<span data-ttu-id="28fec-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="28fec-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="28fec-123">Accept</span><span class="sxs-lookup"><span data-stu-id="28fec-123">Accept</span></span>|<span data-ttu-id="28fec-124">application/json</span><span class="sxs-lookup"><span data-stu-id="28fec-124">application/json</span></span>|
+|<span data-ttu-id="e2254-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e2254-121">Authorization</span></span>|<span data-ttu-id="e2254-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e2254-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e2254-123">Accept</span><span class="sxs-lookup"><span data-stu-id="e2254-123">Accept</span></span>|<span data-ttu-id="e2254-124">application/json</span><span class="sxs-lookup"><span data-stu-id="e2254-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="28fec-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="28fec-125">Request body</span></span>
-<span data-ttu-id="28fec-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="28fec-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e2254-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="e2254-125">Request body</span></span>
+<span data-ttu-id="e2254-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e2254-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="28fec-127">响应</span><span class="sxs-lookup"><span data-stu-id="28fec-127">Response</span></span>
-<span data-ttu-id="28fec-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="28fec-128">If successful, this method returns a `200 OK` response code and a collection of [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e2254-127">响应</span><span class="sxs-lookup"><span data-stu-id="e2254-127">Response</span></span>
+<span data-ttu-id="e2254-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e2254-128">If successful, this method returns a `200 OK` response code and a collection of [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="28fec-129">示例</span><span class="sxs-lookup"><span data-stu-id="28fec-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="28fec-130">请求</span><span class="sxs-lookup"><span data-stu-id="28fec-130">Request</span></span>
-<span data-ttu-id="28fec-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="28fec-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e2254-129">示例</span><span class="sxs-lookup"><span data-stu-id="e2254-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="e2254-130">请求</span><span class="sxs-lookup"><span data-stu-id="e2254-130">Request</span></span>
+<span data-ttu-id="e2254-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e2254-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="28fec-132">响应</span><span class="sxs-lookup"><span data-stu-id="28fec-132">Response</span></span>
-<span data-ttu-id="28fec-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="28fec-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e2254-132">响应</span><span class="sxs-lookup"><span data-stu-id="e2254-132">Response</span></span>
+<span data-ttu-id="e2254-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e2254-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

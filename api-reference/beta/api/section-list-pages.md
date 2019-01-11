@@ -1,28 +1,29 @@
 ---
 title: 列出页面
 description: 从指定分区中检索 page 对象列表。
-ms.openlocfilehash: 75f6e2bbb03a00051d89f9af0f391ff0d7beaacb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e0dea1f9a786734222dbc4c93b059e22d4322bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813018"
 ---
-# <a name="list-pages"></a><span data-ttu-id="ee028-103">列出页面</span><span class="sxs-lookup"><span data-stu-id="ee028-103">List pages</span></span>
+# <a name="list-pages"></a><span data-ttu-id="f2215-103">列出页面</span><span class="sxs-lookup"><span data-stu-id="f2215-103">List pages</span></span>
 
-> <span data-ttu-id="ee028-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ee028-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ee028-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ee028-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f2215-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f2215-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f2215-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f2215-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ee028-106">从指定分区中检索 [page](../resources/page.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="ee028-106">Retrieve a list of [page](../resources/page.md) objects from the specified section.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ee028-107">权限</span><span class="sxs-lookup"><span data-stu-id="ee028-107">Permissions</span></span>
-<span data-ttu-id="ee028-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ee028-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f2215-106">从指定分区中检索 [page](../resources/page.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="f2215-106">Retrieve a list of [page](../resources/page.md) objects from the specified section.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2215-107">权限</span><span class="sxs-lookup"><span data-stu-id="f2215-107">Permissions</span></span>
+<span data-ttu-id="f2215-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2215-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee028-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ee028-110">Permission type</span></span>      | <span data-ttu-id="ee028-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ee028-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f2215-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2215-110">Permission type</span></span>      | <span data-ttu-id="f2215-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2215-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee028-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ee028-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ee028-113">Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee028-113">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ee028-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ee028-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee028-115">Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee028-115">Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="ee028-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ee028-116">Application</span></span> | <span data-ttu-id="ee028-117">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee028-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="f2215-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2215-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f2215-113">Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2215-113">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f2215-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2215-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2215-115">Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2215-115">Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="f2215-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f2215-116">Application</span></span> | <span data-ttu-id="f2215-117">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2215-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee028-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ee028-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2215-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2215-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/sections/{id}/pages
@@ -30,34 +31,34 @@ GET /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ee028-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ee028-119">Optional query parameters</span></span>
-<span data-ttu-id="ee028-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ee028-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f2215-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f2215-119">Optional query parameters</span></span>
+<span data-ttu-id="f2215-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f2215-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="ee028-p103">对页面的默认查询返回按照 `lastModifiedTime desc` 排序的前 20 个页面。如果默认查询返回的页面超过 20 个，响应将包含 `@odata.nextLink`，可以使用它逐页查看结果集。`top` 请求最多可返回 100 个页面。</span><span class="sxs-lookup"><span data-stu-id="ee028-p103">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.</span></span>
+<span data-ttu-id="f2215-p103">对页面的默认查询返回按照 `lastModifiedTime desc` 排序的前 20 个页面。如果默认查询返回的页面超过 20 个，响应将包含 `@odata.nextLink`，可以使用它逐页查看结果集。`top` 请求最多可返回 100 个页面。</span><span class="sxs-lookup"><span data-stu-id="f2215-p103">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.</span></span>
 
-<span data-ttu-id="ee028-p104">默认响应将展开 `parentSection` 并选择分区的 `id`、`name`、和 `self` 属性。页面的有效 `expand` 值为 `parentNotebook` 和 `parentSection`。</span><span class="sxs-lookup"><span data-stu-id="ee028-p104">The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
+<span data-ttu-id="f2215-p104">默认响应将展开 `parentSection` 并选择分区的 `id`、`name`、和 `self` 属性。页面的有效 `expand` 值为 `parentNotebook` 和 `parentSection`。</span><span class="sxs-lookup"><span data-stu-id="f2215-p104">The default response expands `parentSection` and selects the section's `id`, `name`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ee028-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="ee028-126">Request headers</span></span>
-| <span data-ttu-id="ee028-127">名称</span><span class="sxs-lookup"><span data-stu-id="ee028-127">Name</span></span>       | <span data-ttu-id="ee028-128">类型</span><span class="sxs-lookup"><span data-stu-id="ee028-128">Type</span></span> | <span data-ttu-id="ee028-129">说明</span><span class="sxs-lookup"><span data-stu-id="ee028-129">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f2215-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2215-126">Request headers</span></span>
+| <span data-ttu-id="f2215-127">名称</span><span class="sxs-lookup"><span data-stu-id="f2215-127">Name</span></span>       | <span data-ttu-id="f2215-128">类型</span><span class="sxs-lookup"><span data-stu-id="f2215-128">Type</span></span> | <span data-ttu-id="f2215-129">说明</span><span class="sxs-lookup"><span data-stu-id="f2215-129">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ee028-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee028-130">Authorization</span></span>  | <span data-ttu-id="ee028-131">string</span><span class="sxs-lookup"><span data-stu-id="ee028-131">string</span></span>  | <span data-ttu-id="ee028-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ee028-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ee028-134">Accept</span><span class="sxs-lookup"><span data-stu-id="ee028-134">Accept</span></span> | <span data-ttu-id="ee028-135">string</span><span class="sxs-lookup"><span data-stu-id="ee028-135">string</span></span> | `application/json` |
+| <span data-ttu-id="f2215-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2215-130">Authorization</span></span>  | <span data-ttu-id="f2215-131">string</span><span class="sxs-lookup"><span data-stu-id="f2215-131">string</span></span>  | <span data-ttu-id="f2215-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2215-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f2215-134">Accept</span><span class="sxs-lookup"><span data-stu-id="f2215-134">Accept</span></span> | <span data-ttu-id="f2215-135">string</span><span class="sxs-lookup"><span data-stu-id="f2215-135">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="ee028-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="ee028-136">Request body</span></span>
-<span data-ttu-id="ee028-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ee028-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2215-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="f2215-136">Request body</span></span>
+<span data-ttu-id="f2215-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f2215-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee028-138">响应</span><span class="sxs-lookup"><span data-stu-id="ee028-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2215-138">响应</span><span class="sxs-lookup"><span data-stu-id="f2215-138">Response</span></span>
 
-<span data-ttu-id="ee028-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/page.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ee028-139">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ee028-140">示例</span><span class="sxs-lookup"><span data-stu-id="ee028-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ee028-141">请求</span><span class="sxs-lookup"><span data-stu-id="ee028-141">Request</span></span>
-<span data-ttu-id="ee028-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ee028-142">Here is an example of the request.</span></span>
+<span data-ttu-id="f2215-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/page.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="f2215-139">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f2215-140">示例</span><span class="sxs-lookup"><span data-stu-id="f2215-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f2215-141">请求</span><span class="sxs-lookup"><span data-stu-id="f2215-141">Request</span></span>
+<span data-ttu-id="f2215-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f2215-142">Here is an example of the request.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
 ```
-##### <a name="response"></a><span data-ttu-id="ee028-143">响应</span><span class="sxs-lookup"><span data-stu-id="ee028-143">Response</span></span>
-<span data-ttu-id="ee028-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ee028-144">Here is an example of the response.</span></span> <span data-ttu-id="ee028-145">注意： 为了简单起见截断如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ee028-145">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="ee028-146">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ee028-146">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f2215-143">响应</span><span class="sxs-lookup"><span data-stu-id="f2215-143">Response</span></span>
+<span data-ttu-id="f2215-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2215-144">Here is an example of the response.</span></span> <span data-ttu-id="f2215-145">注意： 为了简单起见截断如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f2215-145">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="f2215-146">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f2215-146">All of the properties will be returned from an actual call.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

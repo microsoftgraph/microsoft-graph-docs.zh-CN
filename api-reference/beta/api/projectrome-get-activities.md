@@ -1,30 +1,31 @@
 ---
 title: 获取用户活动
 description: 获得给定用户的活动。 与不同**最近**OData 函数，将返回不历史记录的活动。 权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。
-ms.openlocfilehash: e8a2fb02ac1de5fa45f8413c7313176902ca1c6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8106d1c2cb740033fd81a21068aba5a15fd1b1b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809371"
 ---
-# <a name="get-user-activities"></a><span data-ttu-id="569f8-107">获取用户活动</span><span class="sxs-lookup"><span data-stu-id="569f8-107">Get user activities</span></span>
+# <a name="get-user-activities"></a><span data-ttu-id="ba4cc-107">获取用户活动</span><span class="sxs-lookup"><span data-stu-id="ba4cc-107">Get user activities</span></span>
 
-> <span data-ttu-id="569f8-108">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="569f8-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="569f8-109">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="569f8-109">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ba4cc-108">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ba4cc-109">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-109">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="569f8-110">获得给定用户的活动。</span><span class="sxs-lookup"><span data-stu-id="569f8-110">Get activities for a given user.</span></span> <span data-ttu-id="569f8-111">与不同**最近**OData 函数，将返回不历史记录的活动。</span><span class="sxs-lookup"><span data-stu-id="569f8-111">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="569f8-112">权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。</span><span class="sxs-lookup"><span data-stu-id="569f8-112">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="569f8-113">如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。</span><span class="sxs-lookup"><span data-stu-id="569f8-113">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="569f8-114">要获取应用程序的活动，请使用**nextLink**属性进行分页。</span><span class="sxs-lookup"><span data-stu-id="569f8-114">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="ba4cc-110">获得给定用户的活动。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-110">Get activities for a given user.</span></span> <span data-ttu-id="ba4cc-111">与不同**最近**OData 函数，将返回不历史记录的活动。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-111">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="ba4cc-112">权限 UserActivity.ReadWrite.CreatedByApp 将额外将筛选应用于响应，以便返回仅由您的应用程序创建的活动。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-112">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="ba4cc-113">如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-113">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="ba4cc-114">要获取应用程序的活动，请使用**nextLink**属性进行分页。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-114">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="569f8-115">权限</span><span class="sxs-lookup"><span data-stu-id="569f8-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba4cc-115">权限</span><span class="sxs-lookup"><span data-stu-id="ba4cc-115">Permissions</span></span>
 
-<span data-ttu-id="569f8-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="569f8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ba4cc-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="569f8-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="569f8-118">Permission type</span></span>      | <span data-ttu-id="569f8-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="569f8-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ba4cc-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="ba4cc-118">Permission type</span></span>      | <span data-ttu-id="ba4cc-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ba4cc-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="569f8-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="569f8-120">Delegated (work or school account)</span></span> | <span data-ttu-id="569f8-121">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="569f8-121">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="569f8-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="569f8-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="569f8-123">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="569f8-123">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="569f8-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="569f8-124">Application</span></span> | <span data-ttu-id="569f8-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="569f8-125">Not supported.</span></span> |
+|<span data-ttu-id="ba4cc-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ba4cc-120">Delegated (work or school account)</span></span> | <span data-ttu-id="ba4cc-121">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="ba4cc-121">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="ba4cc-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ba4cc-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba4cc-123">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="ba4cc-123">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="ba4cc-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="ba4cc-124">Application</span></span> | <span data-ttu-id="ba4cc-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-125">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="569f8-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="569f8-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba4cc-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ba4cc-126">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,15 +33,15 @@ ms.locfileid: "27049165"
 GET /me/activities
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="569f8-127">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="569f8-127">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ba4cc-127">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ba4cc-127">Optional query parameters</span></span>
 
-<span data-ttu-id="569f8-128">此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="569f8-128">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="569f8-129">支持以下查询参数：</span><span class="sxs-lookup"><span data-stu-id="569f8-129">The following query parameters are supported:</span></span>
+<span data-ttu-id="ba4cc-128">此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-128">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="ba4cc-129">支持以下查询参数：</span><span class="sxs-lookup"><span data-stu-id="ba4cc-129">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="569f8-130">$ expand **historyItems**导航属性。</span><span class="sxs-lookup"><span data-stu-id="569f8-130">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="569f8-131">$top 跨页限制的最大项目数。</span><span class="sxs-lookup"><span data-stu-id="569f8-131">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="569f8-132">在**活动**或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。</span><span class="sxs-lookup"><span data-stu-id="569f8-132">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="ba4cc-130">$ expand **historyItems**导航属性。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-130">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="ba4cc-131">$top 跨页限制的最大项目数。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-131">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="ba4cc-132">在**活动**或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-132">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="569f8-133">以下是支持 URL 编码的查询的一些示例：</span><span class="sxs-lookup"><span data-stu-id="569f8-133">The following are some examples of supported queries with URL encoding:</span></span>
+<span data-ttu-id="ba4cc-133">以下是支持 URL 编码的查询的一些示例：</span><span class="sxs-lookup"><span data-stu-id="ba4cc-133">The following are some examples of supported queries with URL encoding:</span></span>
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -50,25 +51,25 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="569f8-134">请求标头</span><span class="sxs-lookup"><span data-stu-id="569f8-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ba4cc-134">请求标头</span><span class="sxs-lookup"><span data-stu-id="ba4cc-134">Request headers</span></span>
 
-|<span data-ttu-id="569f8-135">名称</span><span class="sxs-lookup"><span data-stu-id="569f8-135">Name</span></span> | <span data-ttu-id="569f8-136">类型</span><span class="sxs-lookup"><span data-stu-id="569f8-136">Type</span></span> | <span data-ttu-id="569f8-137">说明</span><span class="sxs-lookup"><span data-stu-id="569f8-137">Description</span></span>|
+|<span data-ttu-id="ba4cc-135">名称</span><span class="sxs-lookup"><span data-stu-id="ba4cc-135">Name</span></span> | <span data-ttu-id="ba4cc-136">类型</span><span class="sxs-lookup"><span data-stu-id="ba4cc-136">Type</span></span> | <span data-ttu-id="ba4cc-137">说明</span><span class="sxs-lookup"><span data-stu-id="ba4cc-137">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="569f8-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="569f8-138">Authorization</span></span> | <span data-ttu-id="569f8-139">string</span><span class="sxs-lookup"><span data-stu-id="569f8-139">string</span></span> | <span data-ttu-id="569f8-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="569f8-p106">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="ba4cc-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="ba4cc-138">Authorization</span></span> | <span data-ttu-id="ba4cc-139">string</span><span class="sxs-lookup"><span data-stu-id="ba4cc-139">string</span></span> | <span data-ttu-id="ba4cc-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-p106">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="569f8-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="569f8-142">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba4cc-142">请求正文</span><span class="sxs-lookup"><span data-stu-id="ba4cc-142">Request body</span></span>
 
-<span data-ttu-id="569f8-143">没有请求正文中。</span><span class="sxs-lookup"><span data-stu-id="569f8-143">No request body.</span></span>
+<span data-ttu-id="ba4cc-143">没有请求正文中。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-143">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="569f8-144">响应</span><span class="sxs-lookup"><span data-stu-id="569f8-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ba4cc-144">响应</span><span class="sxs-lookup"><span data-stu-id="ba4cc-144">Response</span></span>
 
-<span data-ttu-id="569f8-145">如果成功，此方法返回`200 OK`与您的应用程序的用户的活动的响应代码。</span><span class="sxs-lookup"><span data-stu-id="569f8-145">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
+<span data-ttu-id="ba4cc-145">如果成功，此方法返回`200 OK`与您的应用程序的用户的活动的响应代码。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-145">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="569f8-146">示例</span><span class="sxs-lookup"><span data-stu-id="569f8-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ba4cc-146">示例</span><span class="sxs-lookup"><span data-stu-id="ba4cc-146">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="569f8-147">请求</span><span class="sxs-lookup"><span data-stu-id="569f8-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ba4cc-147">请求</span><span class="sxs-lookup"><span data-stu-id="ba4cc-147">Request</span></span>
 
-<span data-ttu-id="569f8-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="569f8-148">The following is an example of the request.</span></span>
+<span data-ttu-id="ba4cc-148">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-148">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -79,9 +80,9 @@ GET /me/activities
 GET https://graph.microsoft.com/beta/me/activities
 ```
 
-##### <a name="response"></a><span data-ttu-id="569f8-149">响应</span><span class="sxs-lookup"><span data-stu-id="569f8-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ba4cc-149">响应</span><span class="sxs-lookup"><span data-stu-id="ba4cc-149">Response</span></span>
 
-<span data-ttu-id="569f8-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="569f8-150">The following is an example of the response.</span></span>
+<span data-ttu-id="ba4cc-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ba4cc-150">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "ignored",
