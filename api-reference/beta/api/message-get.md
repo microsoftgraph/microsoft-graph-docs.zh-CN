@@ -2,12 +2,13 @@
 title: 获取邮件
 description: 检索的属性和 message 对象的关系。
 author: angelgolfer-ms
-ms.openlocfilehash: 8408e9ef0347721978eb1be00c64ce1f66f882d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852386"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -60,7 +61,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 和 **uniqueBody** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。 可选。 |

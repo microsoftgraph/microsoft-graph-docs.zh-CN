@@ -2,12 +2,13 @@
 title: 列出 windowsInformationProtectionNetworkLearningSummaries
 description: 列出 windowsInformationProtectionNetworkLearningSummary 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: fbbf5fe777d60ab2187b512629cee8fb3765ddd4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b99cfcf1db8126fa536a5e87248aa99c669921f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847234"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>列出 windowsInformationProtectionNetworkLearningSummaries
 
@@ -38,7 +39,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 删除 androidTrustedRootCertificate
 description: 删除 androidTrustedRootCertificate。
 author: tfitzmac
-ms.openlocfilehash: 51a01d89683db7d3acbdaf6edbc24fdf8f082480
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5c25963aaf1774545b54cf13acce1a5b54036c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848235"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>删除 androidTrustedRootCertificate
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

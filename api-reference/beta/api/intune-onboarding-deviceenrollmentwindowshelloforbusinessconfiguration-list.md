@@ -2,12 +2,13 @@
 title: 列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: 列出 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 105e7fc35e2719a60fbe2f0c6bddb9e4c13c3b11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2e7a620b007e1a28c18727bbcbc8e9fcd69dc8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846688"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>列出 deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

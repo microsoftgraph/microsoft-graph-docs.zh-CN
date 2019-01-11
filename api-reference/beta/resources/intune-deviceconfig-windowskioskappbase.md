@@ -2,12 +2,13 @@
 title: windowsKioskAppBase 资源类型
 description: 一种类型的应用程序的基类
 author: tfitzmac
-ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845155"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27307446"
 
 一种类型的应用程序的基类
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始版式应用程序图块大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|字符串|代表应用程序的友好名称|

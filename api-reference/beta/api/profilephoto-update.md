@@ -1,12 +1,13 @@
 ---
 title: 更新 profilephoto
 description: 更新的签名项包括租户中的任何用户的照片用户或指定的组或联系人。 相那里
-ms.openlocfilehash: 801ccd58e57cb02c1805f927dc22c9fd593cbae5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e79a58d92276cc88884874c0a3339d52ac8c2847
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850881"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 

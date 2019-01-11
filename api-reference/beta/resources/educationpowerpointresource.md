@@ -1,12 +1,13 @@
 ---
 title: educationPowerPointResource 资源类型
 description: 'EducationResource 一个子类。 这是 PowerPoint 资源。 必须在与关联的**fileResource**目录中上载 PowerPoint 文件 '
-ms.openlocfilehash: a83a78449ecb7c64f62557ddfa642ab02b55c206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845456"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27046873"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |fileUrl|字符串|磁盘上的文件的位置。|
 

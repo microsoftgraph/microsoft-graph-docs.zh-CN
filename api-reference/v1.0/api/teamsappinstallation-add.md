@@ -2,12 +2,13 @@
 title: 将应用程序添加到团队
 description: 将应用程序安装到指定的团队。
 author: nkramer
-ms.openlocfilehash: 41682d1280b9aaa76f6ef09d0b5ddbd5338d110f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8a4e96486f017d208d7afe343dcee3add1827fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846520"
 ---
 # <a name="add-app-to-team"></a>将应用程序添加到团队
 
@@ -37,7 +38,7 @@ POST /teams/{id}/installedApps
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |teamsApp| [teamsApp](../resources/teamsapp.md) |添加应用程序。|
 

@@ -2,12 +2,13 @@
 title: 删除 iosVppAppAssignedLicense
 description: 删除 iosVppAppAssignedLicense。
 author: tfitzmac
-ms.openlocfilehash: e305b877052ce5ed8cee86d4542e4ced7afdd493
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29d6ee9ab0507600ede3dc8f7457bef49fb80e1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848697"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>删除 iosVppAppAssignedLicense
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/a
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

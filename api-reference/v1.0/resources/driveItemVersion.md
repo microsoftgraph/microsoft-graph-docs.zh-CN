@@ -1,12 +1,13 @@
 ---
 title: DriveItemVersion 资源类型
 description: '**DriveItemVersion**资源表示 DriveItem 的特定版本。'
-ms.openlocfilehash: e257e800b0ac8ad4d94027f9c8040ffb3b20ea90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfdc38ee7685511fc389300c431f915333deb92b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851686"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 

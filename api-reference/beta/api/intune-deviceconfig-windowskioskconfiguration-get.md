@@ -2,12 +2,13 @@
 title: 获取 windowsKioskConfiguration
 description: 读取属性和 windowsKioskConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 4596eeaba219227048a81a9f4ecc6693a7c20204
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4860924b415ef71913792a2f96c7a4ac934c25cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851721"
 ---
 # <a name="get-windowskioskconfiguration"></a>获取 windowsKioskConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 获取 androidTrustedRootCertificate
 description: 读取属性和 androidTrustedRootCertificate 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: a96e5b393ecb9ea60fd9945beadc742b2e5bc4af
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10fdab252040490111c743532f121ad9b06bcb57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847997"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>获取 androidTrustedRootCertificate
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

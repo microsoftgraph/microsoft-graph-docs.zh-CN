@@ -2,12 +2,13 @@
 title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
 author: tfitzmac
-ms.openlocfilehash: d655bd9f8f18087916eb4943ffdb2cbf8921b790
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd4b66f23d873abaf6c13f4c38731ec517514b11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847164"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 

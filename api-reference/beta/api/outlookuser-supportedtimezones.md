@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。
-ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 9c44d79cbadebb5842bb3940e3ca41ae14672375
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852001"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 

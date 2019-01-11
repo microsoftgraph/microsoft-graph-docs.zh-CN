@@ -2,12 +2,13 @@
 title: deviceConfigurationUserActivity 函数
 description: 设备配置用户活动报告的元数据
 author: tfitzmac
-ms.openlocfilehash: f19f067212ee6162e2ede9afd325cd80e00af977
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2ecafdc399eab5150b80d83a68bdb6086dfa486
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849075"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 函数
 
@@ -37,7 +38,7 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

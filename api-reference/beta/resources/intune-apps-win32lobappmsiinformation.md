@@ -2,12 +2,13 @@
 title: win32LobAppMsiInformation 资源类型
 description: Win32 应用程序包含 MSI 应用程序的属性。
 author: tfitzmac
-ms.openlocfilehash: 1753df68ab1f4b0e1649c16a4a7fa0ad49941bf9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846513"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 
@@ -17,12 +18,12 @@ ms.locfileid: "27326136"
 
 Win32 应用程序包含 MSI 应用程序的属性。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |productCode|String|MSI 产品代码。|
 |productVersion|String|MSI 产品版本。|
 |upgradeCode|字符串|MSI 升级代码。|
-|requiresReboot|Boolean|是否 MSI 应用程序要求计算机重新启动以完成安装。|
+|requiresReboot|布尔|是否 MSI 应用程序要求计算机重新启动以完成安装。|
 |： 键入包|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI 包类型。 可取值为：`perMachine`、`perUser`、`dualPurpose`。|
 
 ## <a name="relationships"></a>Relationships

@@ -1,12 +1,13 @@
 ---
 title: windows10GeneralConfiguration 资源类型
 description: 本主题提供由 windows10GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: f911e243e0749e540a9bdcae115f876690ed976e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a4fa24d6ef11608d19649925debf3a4855b61e98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845505"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration 资源类型
 
@@ -280,7 +281,7 @@ ms.locfileid: "27047935"
 |dataProtectionBlockDirectMemoryAccess|布尔|此策略设置允许您阻止直接内存访问 (DMA) 的所有热 pluggable PCI 下游端口直到用户登录到 Windows。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

@@ -2,12 +2,13 @@
 title: 使用 Azure AD 身份保护 API （预览）
 description: 您可以使用 Microsoft Graph 查询每种类型的风险事件检测到的 Azure AD 身份保护 identityRiskEvent 资源。 这些事件可供客户与 Azure AD Premium P2。 适用于与 Azure AD Premium P1 客户事件的子集。
 author: cloudhandler
-ms.openlocfilehash: 8afee9685d22dfaeea43a01f70a8b2834c8d4ff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ae87a13565f660b06179712220806f11f611d47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849775"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>使用 Azure AD 身份保护 API （预览）
 

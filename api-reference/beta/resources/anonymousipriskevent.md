@@ -1,12 +1,13 @@
 ---
 title: anonymousIpRiskEvent 资源类型
 description: 风险事件检测到的 Azure Active Directory 标识保护其中帐户登录尝试从似乎匿名一个 IP 地址。 Azure AD 身份保护文档中，可以找到有关风险事件的完整信息。
-ms.openlocfilehash: a76af64aba984f054cfcf9f719fb30a3185f4b0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9c170e234116ca76e4dabe021c0aa7949d1a66ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848298"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>anonymousIpRiskEvent 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "27042937"
 |[获取 anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |读取属性和 anonymousIpRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
@@ -38,7 +39,7 @@ ms.locfileid: "27042937"
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为 NULL。|
 

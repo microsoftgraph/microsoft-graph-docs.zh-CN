@@ -2,12 +2,13 @@
 title: numberRange 资源类型
 description: 号码范围定义。
 author: tfitzmac
-ms.openlocfilehash: 7b9703524e1562a7367a3c5b9bf0212e29620429
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b428320fd66263149b6d443a15c6a0e1eee744a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845701"
 ---
 # <a name="numberrange-resource-type"></a>numberRange 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27314656"
 
 号码范围定义。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |lowerNumber|Int32|较小的数字。|
 |upperNumber|Int32|上限数字。|

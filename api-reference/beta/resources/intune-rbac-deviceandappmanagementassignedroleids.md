@@ -2,12 +2,13 @@
 title: deviceAndAppManagementAssignedRoleIds 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 034120b891812a43c6c1683f61e52f071dc89816
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1ae87f1a8430ef2539fe10e813390b0fbd68b267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846338"
 ---
 # <a name="deviceandappmanagementassignedroleids-resource-type"></a>deviceAndAppManagementAssignedRoleIds 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27353380"
 
 尚未记录
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |roleDefinitionIds|Guid 集合|特定分配给用户的角色定义的角色定义 Id。|
 |roleAssignmentIds|Guid 集合|特定分配给用户的角色分配的角色分配 Id。|

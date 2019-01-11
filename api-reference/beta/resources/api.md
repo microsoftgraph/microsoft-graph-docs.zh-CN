@@ -1,12 +1,13 @@
 ---
 title: api 资源类型
 description: 指定 Web API 应用程序的设置。
-ms.openlocfilehash: b5b07ccb5a66027f9eb755754842f6e2e2ae708e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50c21c31fec7434514408e1a214c6edf2b838c98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845204"
 ---
 # <a name="api-resource-type"></a>api 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27043796"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |requestedAccessTokenVersion|Int32| 指定当前 API 资源的接受的访问令牌版本。 可能的值为 1 或 2。  |
 |oauth2PermissionScopes|[permissionScope](permissionscope.md)集合| 客户端应用程序公开 web API （资源） 应用程序的 OAuth 2.0 权限范围的集合。 这些权限范围可能期间同意授予客户端应用程序。 |

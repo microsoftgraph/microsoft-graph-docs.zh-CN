@@ -2,12 +2,13 @@
 title: windowsPackageInformation 资源类型
 description: 包含为业务应用程序的 Windows 行的程序包信息的属性。
 author: tfitzmac
-ms.openlocfilehash: dcc277c610e6ceb27a94ab41993e599a258dd55e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f7f3cd593670e071ae62bdb287bcebeee01d555
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849530"
 ---
 # <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342824"
 
 包含为业务应用程序的 Windows 行的程序包信息的属性。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|运行此应用程序可以为其 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`。|
 |displayName|字符串|显示名称。|

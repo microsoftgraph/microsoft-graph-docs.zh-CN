@@ -2,12 +2,13 @@
 title: automaticUpdateMode 枚举类型
 description: 自动更新模式的的可能值。
 author: tfitzmac
-ms.openlocfilehash: 01e71e51a47a06aff12dd82e132d7eb468f26229
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07a6b410289ea6455d0f6756efa7d1ec4d735ce4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849985"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27346989"
 
 自动更新模式的的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |notifyDownload|1|在下载通知。|

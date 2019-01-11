@@ -1,12 +1,13 @@
 ---
 title: 获取订阅
 description: 检索订阅的属性和关系。
-ms.openlocfilehash: 5694015fe7e8cbf87b5d62f7ae4af35d1773532b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0feb4ffd49099eabb92e5519b25233100f2acbe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846835"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -24,8 +25,8 @@ ms.locfileid: "27044662"
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| 组                      | Group.Read.All      |
+| 用户                       | User.Read.All       |
 | Drive（用户的 OneDrive）    | Files.ReadWrite     |
 | 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
 | 安全警报              | SecurityEvents.ReadWrite.All |

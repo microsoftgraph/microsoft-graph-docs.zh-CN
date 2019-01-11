@@ -2,12 +2,13 @@
 title: 获取 deviceManagementPartner
 description: 读取 deviceManagementPartner 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: cb37c12f2624ff31d3346aaa525202a6919b50c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14a2c0030a3f38582bcbd9d05a521d6466e1d6a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351861"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851287"
 ---
 # <a name="get-devicemanagementpartner"></a>获取 deviceManagementPartner
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

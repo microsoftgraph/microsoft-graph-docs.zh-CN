@@ -1,12 +1,13 @@
 ---
 title: keyCredential 资源类型
 description: 包含与应用程序或服务主体关键凭据。 应用程序和 servicePrincipal 实体的**keyCredentials**属性是**keyCredential**的集合。
-ms.openlocfilehash: d4509360c0425c255566b9f77b9ecd96cf349dec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0319568dad271f13b396d2f75a71839e85c96c40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851560"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
@@ -40,9 +41,9 @@ ms.locfileid: "27041792"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|二进制数| 自定义的密钥标识符 |
+|customKeyIdentifier|Binary| 自定义的密钥标识符 |
 |endDateTime|DateTimeOffset|过期日期和时间的凭据。时间戳类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |密钥 id 为|Guid|唯一标识符 (GUID) 键。|
 |startDateTime|DateTimeOffset|日期和时间凭据生效。时间戳类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

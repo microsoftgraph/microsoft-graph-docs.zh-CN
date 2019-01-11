@@ -2,12 +2,13 @@
 title: iosMinimumOperatingSystem 资源类型
 description: 包含 iOS 移动应用需要的最低操作系统的属性。
 author: tfitzmac
-ms.openlocfilehash: 867679282db71df4f50c119e4734796790ddc210
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1107b8f59cbbe185468c02e7716aaad56481553
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845820"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27301846"
 |v9_0|布尔值|版本 9.0 或更高版本。|
 |v10_0|布尔值|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
-|v12_0|Boolean|12.0 或更高版本。|
+|v12_0|布尔|12.0 或更高版本。|
 
 ## <a name="relationships"></a>Relationships
 无

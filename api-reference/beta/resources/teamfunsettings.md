@@ -1,12 +1,13 @@
 ---
 title: teamFunSettings 资源类型
 description: 要配置的团队中的使用 Giphy、 memes 和标签的设置。
-ms.openlocfilehash: e8cf62b88a3afa3e5caf6b9425312d7a26af4d20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c53d3215e5f515361c66fe2d3d0ad10a5338e0c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852064"
 ---
 # <a name="teamfunsettings-resource-type"></a>teamFunSettings 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27041886"
 要配置的设置使用 Giphy、 memes 和[团队](team.md)中的标签。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowGiphy|布尔|如果设置为 true，则启用 Giphy 使用。|
 |giphyContentRating|字符串 (enum)|Giphy 内容评级。 可取值为：`moderate`、`strict`。|

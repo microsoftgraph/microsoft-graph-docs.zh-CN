@@ -1,12 +1,13 @@
 ---
 title: 创建 accessReview
 description: Azure AD 中访问审阅功能，创建一个新的 accessReview 对象。
-ms.openlocfilehash: 9d8e8b246c3c43e4f69172ea59715a8718d39d1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ee5ce696f1d71c57adf9e6c5ee30c067536c8ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851441"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -35,14 +36,14 @@ POST /accessReviews
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
 
 下表显示时创建 accessReview 所需的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这必须是在将来的日期。   |

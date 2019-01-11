@@ -2,12 +2,13 @@
 title: 创建工作组
 description: 创建新的团队。
 author: nkramer
-ms.openlocfilehash: c77ca5ab76640c9c310b628f4eee106e7443fee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 891377ace047e51f653327fc081e183de14de5ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847143"
 ---
 # <a name="create-team"></a>创建工作组
 

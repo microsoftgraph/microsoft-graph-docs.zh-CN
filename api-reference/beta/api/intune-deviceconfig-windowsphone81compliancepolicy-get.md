@@ -2,12 +2,13 @@
 title: 获取 windowsPhone81CompliancePolicy
 description: 读取 windowsPhone81CompliancePolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: eed5f8ec5fa296d00ec27f4682f6081ac1c26b67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39c6c78b6e7d983cdbea3ee03cb5b70d448781e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851665"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>获取 windowsPhone81CompliancePolicy
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

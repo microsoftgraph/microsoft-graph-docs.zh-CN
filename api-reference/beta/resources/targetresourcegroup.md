@@ -1,12 +1,13 @@
 ---
 title: targetResourceGroup 资源类型
 description: '指示由于审核活动受影响的组的类型。 包括与 Azure AD 的统一组类似的值 '
-ms.openlocfilehash: 3427f2401a0e93767f0c563842be323f66d9f21b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2cc7e0adb1a93394b64375d05dfb6a6e349bac55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851182"
 ---
 # <a name="targetresourcegroup-resource-type"></a>targetResourceGroup 资源类型
 指示由于审核活动受影响的组的类型。 包括与 Azure AD 的统一组类似的值 
@@ -14,7 +15,7 @@ ms.locfileid: "27044754"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |groupType|字符串| 可取值为：`unifiedGroups`、`azureAD`、`unknownFutureValue`。|
 

@@ -1,12 +1,13 @@
 ---
 title: 诊断资源类型
 description: 有关错误或警告 OneNote 操作的信息。
-ms.openlocfilehash: 29e30d44a9fde91b79778042be19461b880216ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 28cdd1c07bab0494a69cfb7ce6a5284238e1ff19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845988"
 ---
 # <a name="diagnostic-resource-type"></a>诊断资源类型
 
@@ -34,7 +35,7 @@ ms.locfileid: "27047282"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |message|字符串|描述触发错误或警告的条件的消息。|
 |url|String|指向此问题的文档的链接。|

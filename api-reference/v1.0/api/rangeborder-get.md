@@ -2,12 +2,13 @@
 title: 获取 RangeBorder
 description: 检索 rangeborder 对象的属性和关系。
 author: lumine2008
-ms.openlocfilehash: f28d703a0f99432cf8e30e9c219a6fd9f6c80692
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8eb5c66f9445b829ed2d3a99c84e171e9b76adb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845209"
 ---
 # <a name="get-rangeborder"></a>获取 RangeBorder
 
@@ -32,7 +33,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

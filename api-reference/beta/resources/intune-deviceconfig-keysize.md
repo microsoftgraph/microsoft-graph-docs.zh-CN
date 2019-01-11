@@ -2,12 +2,13 @@
 title: keySize 枚举类型
 description: 密钥大小选项。
 author: tfitzmac
-ms.openlocfilehash: 03ba06cf8d2059536e46ca629ed6cbbd4ce5a9cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19e12557f5e266ca8f6d5fddd35487d6efb89b8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851567"
 ---
 # <a name="keysize-enum-type"></a>keySize 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302497"
 
 密钥大小选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |size1024|0|1024 位。|
 |size2048|1|为 2048 位。|

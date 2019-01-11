@@ -2,12 +2,13 @@
 title: 列出 defaultManagedAppProtections
 description: 列出 defaultManagedAppProtection 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 18c19c98e7b1a16d63f419ecb7ac05a20d1a9412
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f81d45eb43c565620216ba15a7ee14b4c4b8257b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848977"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

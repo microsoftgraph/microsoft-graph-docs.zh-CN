@@ -2,12 +2,13 @@
 title: 列出 deviceAndAppManagementRoleAssignments
 description: 列出 deviceAndAppManagementRoleAssignment 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: c224d3c094330d948c2ce30a2213044a77a36428
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8dc9307ed69c977b3d312f63e3d2a1e1ed9814b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848403"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>列出 deviceAndAppManagementRoleAssignments
 
@@ -38,7 +39,7 @@ GET /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

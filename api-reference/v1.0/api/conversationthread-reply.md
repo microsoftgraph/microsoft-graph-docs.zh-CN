@@ -2,12 +2,13 @@
 title: 'conversationThread: reply'
 description: '答复在组对话中的线程并向其添加新文章。 您可以指定父对话 '
 author: dkershaw10
-ms.openlocfilehash: c31b6dd08aa888c44a8c12044848e96ffd05de57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9990e97b4d22e5d2374dfd007446fb114d9c6f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845652"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -37,7 +38,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |帖子|[帖子](../resources/post.md)|正在回复的新帖子。|
 

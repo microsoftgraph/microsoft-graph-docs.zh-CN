@@ -1,12 +1,13 @@
 ---
 title: filterOperatorSchema 资源类型
 description: 介绍可用于筛选器运算符。
-ms.openlocfilehash: 1a4e21aea2b65073a00c9797065f6788a66e2334
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0d26fb58b77369b70ab185fa8ad5214d6b6c1e71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848277"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042701"
 
 ## <a name="properties"></a>属性
 
-| 属性                   | 类型                      | 说明    |
+| 属性                   | 类型                      | Description    |
 |:---------------------------|:--------------------------|:---------------|
 |实参数量                       |字符串          |实参运算符的数量。 可取值为：`Binary`、`Unary`。 默认值是`Binary`。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`所有的值必须满足条件的方法。 `Any`至少一个值必须满足条件的方法。 默认值是`All`。|

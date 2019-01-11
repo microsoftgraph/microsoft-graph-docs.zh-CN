@@ -2,12 +2,13 @@
 title: 删除 importedDeviceIdentity
 description: 删除 importedDeviceIdentity。
 author: tfitzmac
-ms.openlocfilehash: e747e2331f12792c278a1bdc717527ff3222413d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2e6224905188fa2763985d3824d43628d66aefa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848361"
 ---
 # <a name="delete-importeddeviceidentity"></a>删除 importedDeviceIdentity
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

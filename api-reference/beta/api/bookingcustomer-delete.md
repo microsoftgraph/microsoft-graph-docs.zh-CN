@@ -1,12 +1,13 @@
 ---
 title: 删除 bookingCustomer
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: c4ba9267e2a3fde3ac43460160ffd4bb37cfb56d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f0618f03234a0a4b1c31c9ac81fc3eb120f40fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849180"
 ---
 # <a name="delete-bookingcustomer"></a>删除 bookingCustomer
 

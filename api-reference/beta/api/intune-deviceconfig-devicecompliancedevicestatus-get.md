@@ -2,12 +2,13 @@
 title: 获取 deviceComplianceDeviceStatus
 description: 读取 deviceComplianceDeviceStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: c41c07ac3ae19fd3b09fc8209fd166fb2538fef5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7afe90c565f34c2fa19ad0adb5228fa0b22ee8ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848004"
 ---
 # <a name="get-devicecompliancedevicestatus"></a>获取 deviceComplianceDeviceStatus
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 创建 userInstallStateSummary
 description: 创建新的 userInstallStateSummary 对象。
 author: tfitzmac
-ms.openlocfilehash: a1da2855896bae9d9c902ae978d3ce8c127f3bc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4630d8176c8ab1a2aa20f118d97304c213020a17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847374"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

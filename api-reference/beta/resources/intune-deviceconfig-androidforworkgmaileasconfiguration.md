@@ -1,12 +1,13 @@
 ---
 title: androidForWorkGmailEasConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Gmail 电子邮件客户端上的工作 Android 设备与 Exchange server 通信并获取电子邮件、 联系人、 日历、 任务和注释。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
-ms.openlocfilehash: cc3c75ca660d923248845615232de2cc71be1865
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e912ad1db2aaff82333c69f7fede37d4f16bf0e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849229"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>androidForWorkGmailEasConfiguration 资源类型
 
@@ -46,7 +47,7 @@ ms.locfileid: "27046562"
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Username 属性是从 AAD 选取并在设备上安装之前将其插入此配置文件。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)。 可取值为：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

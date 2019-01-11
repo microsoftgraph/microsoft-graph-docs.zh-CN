@@ -1,12 +1,13 @@
 ---
 title: administrativeUnit 资源类型
 description: 一个管理单元的用户和组目录对象提供的概念的容器。 公司管理员使用管理单元，现在可以委托管理责任管理用户和组中包含或范围为一个区域或部门管理员对一个管理单元。
-ms.openlocfilehash: 8c0acd25c231707d2a7188ab2e1c2b0d2035816f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845407"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -49,7 +50,7 @@ ms.locfileid: "27041516"
 |:---------------|:--------|:----------|
 |说明|string|管理单元的可选说明。|
 |displayName|string|管理单元的显示名称。|
-|id|string|管理单元的唯一标识符。 只读。|
+|id|string|管理单元的唯一标识符。 此为只读属性。|
 |visibility|string|控制是否隐藏管理单元和及其成员或公共。 可以设置为 HiddenMembership 或公共。 如果不设置，默认行为是公共。 如果设置为 HiddenMembership，只有管理单元的成员可以列出管理单元中的其他成员。|
 
 ## <a name="relationships"></a>Relationships

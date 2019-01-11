@@ -2,12 +2,13 @@
 title: 列出 registeredUser
 description: 检索已注册为设备用户的用户列表。
 author: tfitzmac
-ms.openlocfilehash: 7b6f861e275ea36eb864aee5958c94055e8e8168
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58b691bbf71dde1aa6247cfa19164f8cc44b3674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846387"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -33,7 +34,7 @@ GET /devices/{id}/registeredUsers
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

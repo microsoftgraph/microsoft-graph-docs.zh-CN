@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 配额
-ms.openlocfilehash: 54eb88bdc048c6b63bb6f2d0a23fb05023663ca7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58969adb525736b8a665844a5fa4b48ae4ca1831
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848410"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 

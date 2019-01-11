@@ -1,12 +1,13 @@
 ---
 title: 在 Microsoft Graph 中使用 Excel
 description: 可以使用 Microsoft Graph，让 Web 和移动应用都能读取和修改在 OneDrive for Business、SharePoint 网站或组驱动器中存储的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含其他所有 Excel 资源。可以确定文件在 URL 中的位置，从而使用驱动器 API 访问工作簿。例如：
-ms.openlocfilehash: b08ee4d6a82d4d45d75e53d568102a9c6f322a01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 30129637586b9bfdd6e06ca48f9612d0d067268e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849929"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 

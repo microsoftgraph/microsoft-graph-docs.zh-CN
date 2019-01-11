@@ -2,12 +2,13 @@
 title: 将 educationClass 添加到 educationSchool
 description: 向学校添加课程。
 author: mmast-msft
-ms.openlocfilehash: 2ac40545dadb083751192ae516fb131d43cccb64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e09bd141c0b474d44ce9d691cff29b5164f8f34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848578"
 ---
 # <a name="add-educationclass-to-educationschool"></a>将 educationClass 添加到 educationSchool
 

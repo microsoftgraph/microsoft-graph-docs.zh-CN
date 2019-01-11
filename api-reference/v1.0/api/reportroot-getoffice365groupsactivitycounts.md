@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: 获取跨组工作负载的组活动数。
-ms.openlocfilehash: 02bb861dbd26981d0d9190a3d82f2693f4ad3752
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d63655d136acee1d5d911e8e7b437560826043cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846170"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 

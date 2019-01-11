@@ -2,12 +2,13 @@
 title: 删除事件
 description: 删除事件。
 author: angelgolfer-ms
-ms.openlocfilehash: f5135d3359c91b78a20c26bed77c4ccc6cb2accd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8754e210e90300398dbd38ce5e391ae2410d8316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848907"
 ---
 # <a name="delete-event"></a>删除事件
 
@@ -44,7 +45,7 @@ DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

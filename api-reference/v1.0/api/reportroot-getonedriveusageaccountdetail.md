@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOneDriveUsageAccountDetail'
 description: 获取帐户的 OneDrive 使用情况的详细信息。
-ms.openlocfilehash: a5c51bcb1dba1c4a1c15f24840ebe8923b0cc89c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0a2dffabb1f5f4ba551615525b037c39f10d39ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848312"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 

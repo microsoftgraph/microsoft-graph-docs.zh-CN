@@ -1,12 +1,13 @@
 ---
 title: synchronizationTaskExecution 资源类型
 description: 总结了运行同步作业的结果。
-ms.openlocfilehash: 4aefba4bdf9ab850892344e6e34683e81d1a1afa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851504"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27045243"
 总结了运行同步作业的结果。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |activityIdentifier           |字符串 |运行作业的标识符。|
 |countEntitled                |Int64  |处理已分配为此应用程序的条目数。|
@@ -28,7 +29,7 @@ ms.locfileid: "27045243"
 |countImportedDeltas          |Int64  |导入的增量更改的计数。|
 |countImportedReferenceDeltas |Int64  |导入增量-更改与引用更改的计数。|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，将包含一个**synchronizationError**详细信息。|
-|状态                        |字符串 |汇总结果的此次运行的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
+|state                        |字符串 |汇总结果的此次运行的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
 |timeBegan                    |DateTimeOffset|开始此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |timeEnded                    |DateTimeOffset|结束此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 

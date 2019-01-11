@@ -2,12 +2,13 @@
 title: remoteAssistanceOnboardingStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 88472833f47ac2cea862d6780c46223fb5f09525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff61d48f9d7991400d909c91c02751bc37b5ec03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846576"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304065"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notOnboarded|0|尚未记录|
 |入职培训|1|尚未记录|

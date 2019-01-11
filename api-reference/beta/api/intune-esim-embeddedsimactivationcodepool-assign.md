@@ -2,12 +2,13 @@
 title: assign 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 88b6b7eef26e0187bacf2ee647c95452a1642cba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54a4689c5317ae4df1044cf2d8ca262189a357c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848928"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

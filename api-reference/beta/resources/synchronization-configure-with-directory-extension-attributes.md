@@ -1,12 +1,13 @@
 ---
 title: 配置与目录的扩展属性同步
 description: '您可以自定义您的同步架构，以包括 Azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展特性 (**extension_9d98asdfl15980a_Nickname**) 来填充 User.CommunityNickname 销售队伍中的值。 在此方案中，您必须将设置为设置数从 Windows Server Active Directory 部署到 Azure AD 目录扩展属性的 Azure AD 连接。 '
-ms.openlocfilehash: fa29e405b235107cd6773444085e7b409441c90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850097"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录的扩展属性同步
 

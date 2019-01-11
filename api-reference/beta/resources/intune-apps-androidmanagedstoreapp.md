@@ -2,12 +2,13 @@
 title: androidManagedStoreApp 资源类型
 description: 包含用于 Android 管理应用商店应用程序的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 156e765507f0b1eb4ab11bd919c7710cbc6535c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6139264059c3c9443d5ee4f652ea7b01d7e31554
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845365"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp 资源类型
 

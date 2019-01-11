@@ -1,12 +1,13 @@
 ---
 title: appRoleAssignment 资源类型
 description: 用于记录时用户或组分配给应用程序。 在这种情况下，该角色分配将导致应用程序图块显示安装在用户的应用程序访问面板上。 此实体还可能用于授予对特定的角色中的资源应用程序的另一个应用程序 （作为服务主体建模） 访问权限。 您可以创建、 读取、 更新和删除角色分配。
-ms.openlocfilehash: 97155bde12735ebd8a7674e0dbf20dae30e53f14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3276c1f34b91dc628ed00f2ffbc64ffe56899bdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845470"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 
@@ -40,7 +41,7 @@ ms.locfileid: "27042934"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|授予创建时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|Guid|已分配给主体角色 id。  必须由其**appRoles**属性中目标资源应用程序**resourceId**声明此角色。 如果资源没有声明任何权限，必须指定默认 id (零 GUID)。 键。 不可为 null。 |

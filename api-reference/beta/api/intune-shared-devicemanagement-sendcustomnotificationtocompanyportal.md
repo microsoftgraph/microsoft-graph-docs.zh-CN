@@ -2,12 +2,13 @@
 title: sendCustomNotificationToCompanyPortal 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 4dac88c0ec9325e5c1b268feda3c98226438f8b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5a3e4acedb95fe1092a6ef9eaacc2978fedcd9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851161"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal 操作
 
@@ -39,7 +40,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -47,7 +48,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |notificationTitle|字符串|尚未记录|
 |notificationBody|字符串|尚未记录|

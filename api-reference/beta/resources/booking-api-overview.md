@@ -1,12 +1,13 @@
 ---
 title: 使用在 Microsoft Graph 中 Microsoft 预订 API
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 5e553e2814c6e5554ea7bb2f4daef8c62057aff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845533"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用在 Microsoft Graph 中 Microsoft 预订 API
 

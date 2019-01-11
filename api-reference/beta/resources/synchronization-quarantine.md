@@ -1,12 +1,13 @@
 ---
 title: synchronizationQuarantine 资源类型
 description: 提供有关 synchronizationJob 的隔离状态信息。
-ms.openlocfilehash: b29da9644968ffe17abb02010f8aa5c304ca7905
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0077d48e69ed4c2c190d0b50a6fcfc1749626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849726"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>synchronizationQuarantine 资源类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27042272"
 提供有关[synchronizationJob](synchronization-synchronizationjob.md)的隔离状态信息。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|日期和时间隔离上次计算施加。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |nextAttempt|DateTimeOffset|日期和时间时将进行下次尝试重新评估隔离邮箱。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|

@@ -1,12 +1,13 @@
 ---
 title: 用户： exportPersonalData
 description: 提交数据策略操作发出的请求，公司管理员通过导出组织用户的数据。
-ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845337"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -37,7 +38,7 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明 |
+| 参数    | 类型   |Description |
 |:---------------|:--------|:----------|
 |storageLocation|字符串|这是指向 Azure 存储帐户，其中应导出数据的共享的访问签名 (SA) URL。|
 

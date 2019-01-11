@@ -2,12 +2,13 @@
 title: 更新 mobileAppProvisioningConfigGroupAssignment
 description: 更新 mobileAppProvisioningConfigGroupAssignment 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848340"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>更新 mobileAppProvisioningConfigGroupAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 下表显示时创建[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |targetGroupId|字符串|AAD 组顺序为目标应用程序设置配置的 ID。|
 |id|String|实体的键。|

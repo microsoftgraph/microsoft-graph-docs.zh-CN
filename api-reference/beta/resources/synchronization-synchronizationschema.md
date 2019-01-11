@@ -1,12 +1,13 @@
 ---
 title: synchronizationSchema 资源类型
 description: 定义对象将同步和同步方式。 同步架构包含特定同步作业的设置信息的大部分。 通常情况下，您将自定义某些属性的映射，或添加范围筛选器同步只有满足特定条件的对象。
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847318"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
@@ -42,7 +43,7 @@ ms.locfileid: "27044793"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | Description    |
 |:--------------|:----------|:---------------|
 |directories            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述目录和[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)的一部分的对象。 |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |同步规则[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)，配置的集合 |

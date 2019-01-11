@@ -1,12 +1,13 @@
 ---
 title: meetingTimeSuggestion 资源类型
 description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
-ms.openlocfilehash: 345d09015be5e489c88cb89fe6a4175ebbab2874
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d1cca365c66c114063fbf859e241a5d9a81303e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845995"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 

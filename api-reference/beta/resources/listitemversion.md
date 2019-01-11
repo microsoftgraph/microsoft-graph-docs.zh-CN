@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
 title: ListItemVersion
-ms.openlocfilehash: 7cda16159c6e5e58a0f60aef3c60198c7615f9e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdda98d941ef197bd956146ba796ace037cb8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849621"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
 

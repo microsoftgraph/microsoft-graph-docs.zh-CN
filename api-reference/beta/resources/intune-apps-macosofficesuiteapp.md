@@ -2,12 +2,13 @@
 title: macOSOfficeSuiteApp 资源类型
 description: 包含 MacOS Office 套件应用的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: b94bb162ba91e2d8fd02cf4f76e5e8ee244e27a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82ee39ba89df611b1f12e2a8b8b69184c7eb31e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851476"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>macOSOfficeSuiteApp 资源类型
 

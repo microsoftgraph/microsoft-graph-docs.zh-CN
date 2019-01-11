@@ -2,12 +2,13 @@
 title: edgeSearchEngineCustom 资源类型
 description: 允许 IT 管理员为 MDM 控制的设备设置自定义默认搜索引擎。
 author: tfitzmac
-ms.openlocfilehash: f648f41bafcbaa37c972500139ecc8d3e70113ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9797b311ae5c4741364a99da0c056c8fb3e18788
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845799"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom 资源类型
 

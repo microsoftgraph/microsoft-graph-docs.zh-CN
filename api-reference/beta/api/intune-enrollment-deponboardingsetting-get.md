@@ -2,12 +2,13 @@
 title: 获取 depOnboardingSetting
 description: 读取属性和 depOnboardingSetting 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: e56461e8e60c2e7ac5999f56b8beaf592db54645
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac62febaa515f4ccb3cf5396c20c7336a7c88787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847689"
 ---
 # <a name="get-deponboardingsetting"></a>获取 depOnboardingSetting
 
@@ -40,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: mobileThreatPartnerTenantState 枚举类型
 description: 合作伙伴的此租户的状态。
 author: tfitzmac
-ms.openlocfilehash: bfb861ef21efed9632d22f58cf35d239f592d27f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d93ca54d32a5e34132442f206a269430b5ab3ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846191"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27356763"
 
 合作伙伴的此租户的状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |不可用|0|合作伙伴不可用。|
 |可用|1|合作伙伴才可用。|

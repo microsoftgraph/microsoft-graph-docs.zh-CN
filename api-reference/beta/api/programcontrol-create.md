@@ -1,12 +1,13 @@
 ---
 title: 创建 programControl
 description: Azure AD 中访问审阅功能，创建一个新的 programControl 对象。  这会链接到程序访问审阅。
-ms.openlocfilehash: fa6a93b13391fd4b9e3c5816bb2a27259e730c0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047032"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851532"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -38,14 +39,14 @@ POST /programControls
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
 下表显示时创建一个程序控件所需的属性。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | 程序 programId 此控件将变得的一部分。                             |
 | `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。                                                |
