@@ -2,29 +2,30 @@
 title: 更新 deviceComplianceScheduledActionForRule
 description: 更新 deviceComplianceScheduledActionForRule 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e63602cf39aa89bfdcda2db900d993d8e0a56d9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e12282024216582941ac4ed63108194a863cdc03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818303"
 ---
-# <a name="update-devicecompliancescheduledactionforrule"></a><span data-ttu-id="9294f-103">更新 deviceComplianceScheduledActionForRule</span><span class="sxs-lookup"><span data-stu-id="9294f-103">Update deviceComplianceScheduledActionForRule</span></span>
+# <a name="update-devicecompliancescheduledactionforrule"></a><span data-ttu-id="1339d-103">更新 deviceComplianceScheduledActionForRule</span><span class="sxs-lookup"><span data-stu-id="1339d-103">Update deviceComplianceScheduledActionForRule</span></span>
 
-> <span data-ttu-id="9294f-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="9294f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1339d-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="1339d-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9294f-105">更新 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9294f-105">Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9294f-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="9294f-106">Prerequisites</span></span>
-<span data-ttu-id="9294f-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="9294f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1339d-105">更新 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="1339d-105">Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1339d-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="1339d-106">Prerequisites</span></span>
+<span data-ttu-id="1339d-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="1339d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9294f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9294f-109">Permission type</span></span>|<span data-ttu-id="9294f-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9294f-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1339d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1339d-109">Permission type</span></span>|<span data-ttu-id="1339d-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1339d-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9294f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9294f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9294f-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9294f-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9294f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9294f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9294f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9294f-114">Not supported.</span></span>|
-|<span data-ttu-id="9294f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9294f-115">Application</span></span>|<span data-ttu-id="9294f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9294f-116">Not supported.</span></span>|
+|<span data-ttu-id="1339d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1339d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1339d-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1339d-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="1339d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1339d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1339d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1339d-114">Not supported.</span></span>|
+|<span data-ttu-id="1339d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1339d-115">Application</span></span>|<span data-ttu-id="1339d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1339d-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9294f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9294f-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1339d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1339d-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,30 +34,30 @@ ms.locfileid: "27301657"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9294f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9294f-118">Request headers</span></span>
-|<span data-ttu-id="9294f-119">标头</span><span class="sxs-lookup"><span data-stu-id="9294f-119">Header</span></span>|<span data-ttu-id="9294f-120">值</span><span class="sxs-lookup"><span data-stu-id="9294f-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1339d-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="1339d-118">Request headers</span></span>
+|<span data-ttu-id="1339d-119">标头</span><span class="sxs-lookup"><span data-stu-id="1339d-119">Header</span></span>|<span data-ttu-id="1339d-120">值</span><span class="sxs-lookup"><span data-stu-id="1339d-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9294f-121">授权</span><span class="sxs-lookup"><span data-stu-id="9294f-121">Authorization</span></span>|<span data-ttu-id="9294f-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9294f-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9294f-123">Accept</span><span class="sxs-lookup"><span data-stu-id="9294f-123">Accept</span></span>|<span data-ttu-id="9294f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="9294f-124">application/json</span></span>|
+|<span data-ttu-id="1339d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1339d-121">Authorization</span></span>|<span data-ttu-id="1339d-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1339d-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1339d-123">Accept</span><span class="sxs-lookup"><span data-stu-id="1339d-123">Accept</span></span>|<span data-ttu-id="1339d-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1339d-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9294f-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="9294f-125">Request body</span></span>
-<span data-ttu-id="9294f-126">在请求正文中，提供 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9294f-126">In the request body, supply a JSON representation for the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1339d-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="1339d-125">Request body</span></span>
+<span data-ttu-id="1339d-126">在请求正文中，提供 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1339d-126">In the request body, supply a JSON representation for the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
 
-<span data-ttu-id="9294f-127">下表显示创建 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="9294f-127">The following table shows the properties that are required when you create the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span></span>
+<span data-ttu-id="1339d-127">下表显示创建 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="1339d-127">The following table shows the properties that are required when you create the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span></span>
 
-|<span data-ttu-id="9294f-128">属性</span><span class="sxs-lookup"><span data-stu-id="9294f-128">Property</span></span>|<span data-ttu-id="9294f-129">类型</span><span class="sxs-lookup"><span data-stu-id="9294f-129">Type</span></span>|<span data-ttu-id="9294f-130">说明</span><span class="sxs-lookup"><span data-stu-id="9294f-130">Description</span></span>|
+|<span data-ttu-id="1339d-128">属性</span><span class="sxs-lookup"><span data-stu-id="1339d-128">Property</span></span>|<span data-ttu-id="1339d-129">类型</span><span class="sxs-lookup"><span data-stu-id="1339d-129">Type</span></span>|<span data-ttu-id="1339d-130">说明</span><span class="sxs-lookup"><span data-stu-id="1339d-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9294f-131">id</span><span class="sxs-lookup"><span data-stu-id="9294f-131">id</span></span>|<span data-ttu-id="9294f-132">String</span><span class="sxs-lookup"><span data-stu-id="9294f-132">String</span></span>|<span data-ttu-id="9294f-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="9294f-133">Key of the entity.</span></span>|
-|<span data-ttu-id="9294f-134">ruleName</span><span class="sxs-lookup"><span data-stu-id="9294f-134">ruleName</span></span>|<span data-ttu-id="9294f-135">String</span><span class="sxs-lookup"><span data-stu-id="9294f-135">String</span></span>|<span data-ttu-id="9294f-136">此计划操作适用的规则名称。</span><span class="sxs-lookup"><span data-stu-id="9294f-136">Name of the rule which this scheduled action applies to.</span></span>|
+|<span data-ttu-id="1339d-131">id</span><span class="sxs-lookup"><span data-stu-id="1339d-131">id</span></span>|<span data-ttu-id="1339d-132">String</span><span class="sxs-lookup"><span data-stu-id="1339d-132">String</span></span>|<span data-ttu-id="1339d-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="1339d-133">Key of the entity.</span></span>|
+|<span data-ttu-id="1339d-134">ruleName</span><span class="sxs-lookup"><span data-stu-id="1339d-134">ruleName</span></span>|<span data-ttu-id="1339d-135">String</span><span class="sxs-lookup"><span data-stu-id="1339d-135">String</span></span>|<span data-ttu-id="1339d-136">此计划操作适用的规则名称。</span><span class="sxs-lookup"><span data-stu-id="1339d-136">Name of the rule which this scheduled action applies to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9294f-137">响应</span><span class="sxs-lookup"><span data-stu-id="9294f-137">Response</span></span>
-<span data-ttu-id="9294f-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9294f-138">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1339d-137">响应</span><span class="sxs-lookup"><span data-stu-id="1339d-137">Response</span></span>
+<span data-ttu-id="1339d-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1339d-138">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9294f-139">示例</span><span class="sxs-lookup"><span data-stu-id="9294f-139">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9294f-140">请求</span><span class="sxs-lookup"><span data-stu-id="9294f-140">Request</span></span>
-<span data-ttu-id="9294f-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9294f-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1339d-139">示例</span><span class="sxs-lookup"><span data-stu-id="1339d-139">Example</span></span>
+### <a name="request"></a><span data-ttu-id="1339d-140">请求</span><span class="sxs-lookup"><span data-stu-id="1339d-140">Request</span></span>
+<span data-ttu-id="1339d-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1339d-141">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json
@@ -68,8 +69,8 @@ Content-length: 114
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9294f-142">响应</span><span class="sxs-lookup"><span data-stu-id="9294f-142">Response</span></span>
-<span data-ttu-id="9294f-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9294f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1339d-142">响应</span><span class="sxs-lookup"><span data-stu-id="1339d-142">Response</span></span>
+<span data-ttu-id="1339d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1339d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

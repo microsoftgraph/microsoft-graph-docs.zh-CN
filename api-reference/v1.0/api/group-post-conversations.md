@@ -2,50 +2,51 @@
 title: 创建对话
 description: '通过包括线程和帖子来创建新会话。 '
 author: dkershaw10
-ms.openlocfilehash: ac3fa0e20f5045788e35b47a2ca496b4561187b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eed594010d67953feecd7bdd28b9672401ac4d23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821551"
 ---
-# <a name="create-conversation"></a><span data-ttu-id="f1dbf-103">创建对话</span><span class="sxs-lookup"><span data-stu-id="f1dbf-103">Create conversation</span></span>
-<span data-ttu-id="f1dbf-104">通过添加线程和帖子来新建[对话](../resources/conversation.md)。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-104">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
+# <a name="create-conversation"></a><span data-ttu-id="8073b-103">创建对话</span><span class="sxs-lookup"><span data-stu-id="8073b-103">Create conversation</span></span>
+<span data-ttu-id="8073b-104">通过添加线程和帖子来新建[对话](../resources/conversation.md)。</span><span class="sxs-lookup"><span data-stu-id="8073b-104">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
 
-<span data-ttu-id="f1dbf-105">使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
+<span data-ttu-id="8073b-105">使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。</span><span class="sxs-lookup"><span data-stu-id="8073b-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f1dbf-106">权限</span><span class="sxs-lookup"><span data-stu-id="f1dbf-106">Permissions</span></span>
-<span data-ttu-id="f1dbf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8073b-106">权限</span><span class="sxs-lookup"><span data-stu-id="8073b-106">Permissions</span></span>
+<span data-ttu-id="8073b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8073b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f1dbf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f1dbf-109">Permission type</span></span>      | <span data-ttu-id="f1dbf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f1dbf-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8073b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8073b-109">Permission type</span></span>      | <span data-ttu-id="8073b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8073b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f1dbf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f1dbf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f1dbf-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1dbf-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f1dbf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f1dbf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1dbf-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-114">Not supported.</span></span>    |
-|<span data-ttu-id="f1dbf-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f1dbf-115">Application</span></span> | <span data-ttu-id="f1dbf-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-116">Not supported.</span></span> |
+|<span data-ttu-id="8073b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8073b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8073b-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8073b-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8073b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8073b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8073b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8073b-114">Not supported.</span></span>    |
+|<span data-ttu-id="8073b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8073b-115">Application</span></span> | <span data-ttu-id="8073b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8073b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f1dbf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f1dbf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8073b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8073b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f1dbf-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="f1dbf-118">Request headers</span></span>
-| <span data-ttu-id="f1dbf-119">标头</span><span class="sxs-lookup"><span data-stu-id="f1dbf-119">Header</span></span>       | <span data-ttu-id="f1dbf-120">值</span><span class="sxs-lookup"><span data-stu-id="f1dbf-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8073b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8073b-118">Request headers</span></span>
+| <span data-ttu-id="8073b-119">标头</span><span class="sxs-lookup"><span data-stu-id="8073b-119">Header</span></span>       | <span data-ttu-id="8073b-120">值</span><span class="sxs-lookup"><span data-stu-id="8073b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f1dbf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1dbf-121">Authorization</span></span>  | <span data-ttu-id="f1dbf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f1dbf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f1dbf-124">Content-Type</span></span>  | <span data-ttu-id="f1dbf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f1dbf-125">application/json</span></span>  |
+| <span data-ttu-id="8073b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8073b-121">Authorization</span></span>  | <span data-ttu-id="8073b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8073b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8073b-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8073b-124">Content-Type</span></span>  | <span data-ttu-id="8073b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8073b-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f1dbf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f1dbf-126">Request body</span></span>
-<span data-ttu-id="f1dbf-127">在请求正文中，提供包括 [conversationThread](../resources/conversationthread.md) 和 [帖子](../resources/post.md) 的 [conversation](../resources/conversation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="8073b-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8073b-126">Request body</span></span>
+<span data-ttu-id="8073b-127">在请求正文中，提供包括 [conversationThread](../resources/conversationthread.md) 和 [帖子](../resources/post.md) 的 [conversation](../resources/conversation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8073b-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="f1dbf-128">响应</span><span class="sxs-lookup"><span data-stu-id="f1dbf-128">Response</span></span>
-<span data-ttu-id="f1dbf-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8073b-128">响应</span><span class="sxs-lookup"><span data-stu-id="8073b-128">Response</span></span>
+<span data-ttu-id="8073b-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [conversation](../resources/conversation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8073b-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span>
 
-<span data-ttu-id="f1dbf-130">响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread-list-posts.md)操作，从而获取新帖子。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
+<span data-ttu-id="8073b-130">响应包括新对话和线程的 ID，这些 ID 也可用于[列出帖子](conversationthread-list-posts.md)操作，从而获取新帖子。</span><span class="sxs-lookup"><span data-stu-id="8073b-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f1dbf-131">示例</span><span class="sxs-lookup"><span data-stu-id="f1dbf-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="f1dbf-132">请求</span><span class="sxs-lookup"><span data-stu-id="f1dbf-132">Request</span></span>
-<span data-ttu-id="f1dbf-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8073b-131">示例</span><span class="sxs-lookup"><span data-stu-id="8073b-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="8073b-132">请求</span><span class="sxs-lookup"><span data-stu-id="8073b-132">Request</span></span>
+<span data-ttu-id="8073b-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8073b-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
@@ -80,9 +81,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="f1dbf-134">响应</span><span class="sxs-lookup"><span data-stu-id="f1dbf-134">Response</span></span>
-<span data-ttu-id="f1dbf-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-135">The following is an example of the response.</span></span>
-><span data-ttu-id="f1dbf-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f1dbf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="8073b-134">响应</span><span class="sxs-lookup"><span data-stu-id="8073b-134">Response</span></span>
+<span data-ttu-id="8073b-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8073b-135">The following is an example of the response.</span></span>
+><span data-ttu-id="8073b-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8073b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

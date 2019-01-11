@@ -1,29 +1,30 @@
 ---
 title: 创建或替换活动
 description: 创建一个新或替换现有用户活动应用程序。 如果您想要在一个请求中创建用户活动和其相关的**historyItems** ，您可以使用深层插入。
-ms.openlocfilehash: fb1efa1cb9484b5f4229883ebe2daf271598b8a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: faaebd5e3e88cca7c442be46505aac434111f148
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812080"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="a09c6-104">创建或替换活动</span><span class="sxs-lookup"><span data-stu-id="a09c6-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="937bb-104">创建或替换活动</span><span class="sxs-lookup"><span data-stu-id="937bb-104">Create or replace an activity</span></span>
 
-<span data-ttu-id="a09c6-105">创建一个新或替换现有用户活动应用程序。</span><span class="sxs-lookup"><span data-stu-id="a09c6-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="a09c6-106">如果您想要在一个请求中创建用户活动和其相关的**historyItems** ，您可以使用[深层插入](projectrome-put-activity.md#example-2---deep-insert)。</span><span class="sxs-lookup"><span data-stu-id="a09c6-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
+<span data-ttu-id="937bb-105">创建一个新或替换现有用户活动应用程序。</span><span class="sxs-lookup"><span data-stu-id="937bb-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="937bb-106">如果您想要在一个请求中创建用户活动和其相关的**historyItems** ，您可以使用[深层插入](projectrome-put-activity.md#example-2---deep-insert)。</span><span class="sxs-lookup"><span data-stu-id="937bb-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a09c6-107">权限</span><span class="sxs-lookup"><span data-stu-id="a09c6-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="937bb-107">权限</span><span class="sxs-lookup"><span data-stu-id="937bb-107">Permissions</span></span>
 
-<span data-ttu-id="a09c6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a09c6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="937bb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="937bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a09c6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a09c6-110">Permission type</span></span>      | <span data-ttu-id="a09c6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a09c6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="937bb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="937bb-110">Permission type</span></span>      | <span data-ttu-id="937bb-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="937bb-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a09c6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a09c6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a09c6-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a09c6-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a09c6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a09c6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a09c6-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a09c6-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a09c6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a09c6-116">Application</span></span> | <span data-ttu-id="a09c6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a09c6-117">Not supported.</span></span> |
+|<span data-ttu-id="937bb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="937bb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="937bb-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="937bb-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="937bb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="937bb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="937bb-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="937bb-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="937bb-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="937bb-116">Application</span></span> | <span data-ttu-id="937bb-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="937bb-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a09c6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a09c6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="937bb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="937bb-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -31,27 +32,27 @@ ms.locfileid: "27010250"
 PUT /me/activities/{appActivityId}
 ```
 
-><span data-ttu-id="a09c6-119">**注意：** 在 URL appActivityId 需要 URL 安全 （除 RFC 2396 必须将未保留的字符转换为十六进制表示形式为所有字符），但原始 appActivityId 不必是安全的 URL。</span><span class="sxs-lookup"><span data-stu-id="a09c6-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+><span data-ttu-id="937bb-119">**注意：** 在 URL appActivityId 需要 URL 安全 （除 RFC 2396 必须将未保留的字符转换为十六进制表示形式为所有字符），但原始 appActivityId 不必是安全的 URL。</span><span class="sxs-lookup"><span data-stu-id="937bb-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a09c6-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a09c6-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="937bb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="937bb-120">Request headers</span></span>
 
-|<span data-ttu-id="a09c6-121">名称</span><span class="sxs-lookup"><span data-stu-id="a09c6-121">Name</span></span> | <span data-ttu-id="a09c6-122">类型</span><span class="sxs-lookup"><span data-stu-id="a09c6-122">Type</span></span> | <span data-ttu-id="a09c6-123">说明</span><span class="sxs-lookup"><span data-stu-id="a09c6-123">Description</span></span>|
+|<span data-ttu-id="937bb-121">名称</span><span class="sxs-lookup"><span data-stu-id="937bb-121">Name</span></span> | <span data-ttu-id="937bb-122">类型</span><span class="sxs-lookup"><span data-stu-id="937bb-122">Type</span></span> | <span data-ttu-id="937bb-123">说明</span><span class="sxs-lookup"><span data-stu-id="937bb-123">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="a09c6-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a09c6-124">Authorization</span></span> | <span data-ttu-id="a09c6-125">string</span><span class="sxs-lookup"><span data-stu-id="a09c6-125">string</span></span> | <span data-ttu-id="a09c6-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a09c6-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="937bb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="937bb-124">Authorization</span></span> | <span data-ttu-id="937bb-125">string</span><span class="sxs-lookup"><span data-stu-id="937bb-125">string</span></span> | <span data-ttu-id="937bb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="937bb-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a09c6-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="a09c6-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="937bb-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="937bb-128">Request body</span></span>
 
-<span data-ttu-id="a09c6-129">在请求正文中，提供的[活动](../resources/projectrome-activity.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a09c6-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="937bb-129">在请求正文中，提供的[活动](../resources/projectrome-activity.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="937bb-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a09c6-130">响应</span><span class="sxs-lookup"><span data-stu-id="a09c6-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="937bb-130">响应</span><span class="sxs-lookup"><span data-stu-id="937bb-130">Response</span></span>
 
-<span data-ttu-id="a09c6-131">如果成功，此方法返回`201 Created`如果创建活动的响应代码或`200 OK`如果活动的正被替换。</span><span class="sxs-lookup"><span data-stu-id="a09c6-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="937bb-131">如果成功，此方法返回`201 Created`如果创建活动的响应代码或`200 OK`如果活动的正被替换。</span><span class="sxs-lookup"><span data-stu-id="937bb-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="a09c6-132">示例 1</span><span class="sxs-lookup"><span data-stu-id="a09c6-132">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="937bb-132">示例 1</span><span class="sxs-lookup"><span data-stu-id="937bb-132">Example 1</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a09c6-133">请求</span><span class="sxs-lookup"><span data-stu-id="a09c6-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="937bb-133">请求</span><span class="sxs-lookup"><span data-stu-id="937bb-133">Request</span></span>
 
-<span data-ttu-id="a09c6-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a09c6-134">The following is an example of the request.</span></span>
+<span data-ttu-id="937bb-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="937bb-134">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -99,9 +100,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a09c6-135">响应</span><span class="sxs-lookup"><span data-stu-id="a09c6-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="937bb-135">响应</span><span class="sxs-lookup"><span data-stu-id="937bb-135">Response</span></span>
 
-<span data-ttu-id="a09c6-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a09c6-136">The following is an example of the response.</span></span>
+<span data-ttu-id="937bb-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="937bb-136">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -156,11 +157,11 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
 }
 ```
 
-## <a name="example-2---deep-insert"></a><span data-ttu-id="a09c6-137">示例 2-深层插入</span><span class="sxs-lookup"><span data-stu-id="a09c6-137">Example 2 - Deep insert</span></span>
+## <a name="example-2---deep-insert"></a><span data-ttu-id="937bb-137">示例 2-深层插入</span><span class="sxs-lookup"><span data-stu-id="937bb-137">Example 2 - Deep insert</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a09c6-138">请求</span><span class="sxs-lookup"><span data-stu-id="a09c6-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="937bb-138">请求</span><span class="sxs-lookup"><span data-stu-id="937bb-138">Request</span></span>
 
-<span data-ttu-id="a09c6-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a09c6-139">The following is an example of the request.</span></span>
+<span data-ttu-id="937bb-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="937bb-139">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -215,9 +216,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a09c6-140">响应</span><span class="sxs-lookup"><span data-stu-id="a09c6-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="937bb-140">响应</span><span class="sxs-lookup"><span data-stu-id="937bb-140">Response</span></span>
 
-<span data-ttu-id="a09c6-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a09c6-141">The following is an example of the response.</span></span>
+<span data-ttu-id="937bb-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="937bb-141">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
