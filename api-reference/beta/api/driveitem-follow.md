@@ -2,32 +2,33 @@
 author: chackman
 ms.author: chackman
 title: 按照驱动器项目
-ms.openlocfilehash: dcfe05e445baa4d01b2968c417648b6b65a17296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ba37773f552015b6c762b2b10d801b40670a03c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875031"
 ---
-# <a name="follow-drive-item"></a><span data-ttu-id="3d04e-102">按照驱动器项目</span><span class="sxs-lookup"><span data-stu-id="3d04e-102">Follow drive item</span></span>
+# <a name="follow-drive-item"></a><span data-ttu-id="628ec-102">按照驱动器项目</span><span class="sxs-lookup"><span data-stu-id="628ec-102">Follow drive item</span></span>
 
-> <span data-ttu-id="3d04e-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="3d04e-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3d04e-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="3d04e-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="628ec-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="628ec-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="628ec-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="628ec-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="3d04e-105">按照[driveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="3d04e-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="628ec-105">按照[driveItem](../resources/driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="628ec-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
 
-><span data-ttu-id="3d04e-106">**注意：** 若要取消追随项目，请参阅[于取消追随项目](driveitem-unfollow.md)。</span><span class="sxs-lookup"><span data-stu-id="3d04e-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
+><span data-ttu-id="628ec-106">**注意：** 若要取消追随项目，请参阅[于取消追随项目](driveitem-unfollow.md)。</span><span class="sxs-lookup"><span data-stu-id="628ec-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3d04e-107">权限</span><span class="sxs-lookup"><span data-stu-id="3d04e-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="628ec-107">权限</span><span class="sxs-lookup"><span data-stu-id="628ec-107">Permissions</span></span>
 
-<span data-ttu-id="3d04e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3d04e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="628ec-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="628ec-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3d04e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="3d04e-110">Permission type</span></span>      | <span data-ttu-id="3d04e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3d04e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="628ec-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="628ec-110">Permission type</span></span>      | <span data-ttu-id="628ec-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="628ec-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3d04e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3d04e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3d04e-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d04e-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3d04e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3d04e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d04e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d04e-115">Not supported.</span></span>    |
-|<span data-ttu-id="3d04e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="3d04e-116">Application</span></span> | <span data-ttu-id="3d04e-117">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d04e-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="628ec-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="628ec-112">Delegated (work or school account)</span></span> | <span data-ttu-id="628ec-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="628ec-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="628ec-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="628ec-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="628ec-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="628ec-115">Not supported.</span></span>    |
+|<span data-ttu-id="628ec-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="628ec-116">Application</span></span> | <span data-ttu-id="628ec-117">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="628ec-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3d04e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3d04e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="628ec-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="628ec-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,17 +40,17 @@ POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
 ```
 
-## <a name="request-body"></a><span data-ttu-id="3d04e-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="3d04e-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="628ec-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="628ec-119">Request body</span></span>
 
-<span data-ttu-id="3d04e-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="3d04e-120">No request body is required.</span></span>
+<span data-ttu-id="628ec-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="628ec-120">No request body is required.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3d04e-121">响应</span><span class="sxs-lookup"><span data-stu-id="3d04e-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="628ec-121">响应</span><span class="sxs-lookup"><span data-stu-id="628ec-121">Response</span></span>
 
-<span data-ttu-id="3d04e-122">此方法返回[DriveItem](../resources/driveitem.md)正在关注的项目。</span><span class="sxs-lookup"><span data-stu-id="3d04e-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
+<span data-ttu-id="628ec-122">此方法返回[DriveItem](../resources/driveitem.md)正在关注的项目。</span><span class="sxs-lookup"><span data-stu-id="628ec-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3d04e-123">示例</span><span class="sxs-lookup"><span data-stu-id="3d04e-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="628ec-123">示例</span><span class="sxs-lookup"><span data-stu-id="628ec-123">Example</span></span>
 
-<span data-ttu-id="3d04e-124">本示例遵循由标识项`{item-id}`。</span><span class="sxs-lookup"><span data-stu-id="3d04e-124">This example follows an item identified by `{item-id}`.</span></span>
+<span data-ttu-id="628ec-124">本示例遵循由标识项`{item-id}`。</span><span class="sxs-lookup"><span data-stu-id="628ec-124">This example follows an item identified by `{item-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 

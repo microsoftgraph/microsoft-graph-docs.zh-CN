@@ -2,29 +2,30 @@
 title: 列出 iosGeneralDeviceConfigurations
 description: 列出 iosGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 4adebc3e61727241dbc6ec112c33731510ca933d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92214f545154037e65543d6cb56fd15315d65c5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878986"
 ---
-# <a name="list-iosgeneraldeviceconfigurations"></a><span data-ttu-id="6c247-103">列出 iosGeneralDeviceConfigurations</span><span class="sxs-lookup"><span data-stu-id="6c247-103">List iosGeneralDeviceConfigurations</span></span>
+# <a name="list-iosgeneraldeviceconfigurations"></a><span data-ttu-id="51e23-103">列出 iosGeneralDeviceConfigurations</span><span class="sxs-lookup"><span data-stu-id="51e23-103">List iosGeneralDeviceConfigurations</span></span>
 
-> <span data-ttu-id="6c247-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="6c247-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="51e23-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="51e23-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6c247-105">列出 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="6c247-105">List properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6c247-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="6c247-106">Prerequisites</span></span>
-<span data-ttu-id="6c247-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="6c247-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51e23-105">列出 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="51e23-105">List properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="51e23-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="51e23-106">Prerequisites</span></span>
+<span data-ttu-id="51e23-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="51e23-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6c247-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6c247-109">Permission type</span></span>|<span data-ttu-id="6c247-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6c247-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="51e23-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="51e23-109">Permission type</span></span>|<span data-ttu-id="51e23-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="51e23-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6c247-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6c247-111">Delegated (work or school account)</span></span>|<span data-ttu-id="6c247-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6c247-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="6c247-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6c247-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6c247-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="6c247-114">Not supported.</span></span>|
-|<span data-ttu-id="6c247-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6c247-115">Application</span></span>|<span data-ttu-id="6c247-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6c247-116">Not supported.</span></span>|
+|<span data-ttu-id="51e23-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="51e23-111">Delegated (work or school account)</span></span>|<span data-ttu-id="51e23-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e23-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="51e23-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="51e23-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="51e23-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="51e23-114">Not supported.</span></span>|
+|<span data-ttu-id="51e23-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="51e23-115">Application</span></span>|<span data-ttu-id="51e23-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="51e23-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6c247-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6c247-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51e23-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="51e23-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27332044"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6c247-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="6c247-118">Request headers</span></span>
-|<span data-ttu-id="6c247-119">标头</span><span class="sxs-lookup"><span data-stu-id="6c247-119">Header</span></span>|<span data-ttu-id="6c247-120">值</span><span class="sxs-lookup"><span data-stu-id="6c247-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="51e23-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="51e23-118">Request headers</span></span>
+|<span data-ttu-id="51e23-119">标头</span><span class="sxs-lookup"><span data-stu-id="51e23-119">Header</span></span>|<span data-ttu-id="51e23-120">值</span><span class="sxs-lookup"><span data-stu-id="51e23-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6c247-121">授权</span><span class="sxs-lookup"><span data-stu-id="6c247-121">Authorization</span></span>|<span data-ttu-id="6c247-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6c247-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6c247-123">Accept</span><span class="sxs-lookup"><span data-stu-id="6c247-123">Accept</span></span>|<span data-ttu-id="6c247-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6c247-124">application/json</span></span>|
+|<span data-ttu-id="51e23-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="51e23-121">Authorization</span></span>|<span data-ttu-id="51e23-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="51e23-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="51e23-123">Accept</span><span class="sxs-lookup"><span data-stu-id="51e23-123">Accept</span></span>|<span data-ttu-id="51e23-124">application/json</span><span class="sxs-lookup"><span data-stu-id="51e23-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6c247-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="6c247-125">Request body</span></span>
-<span data-ttu-id="6c247-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6c247-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51e23-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="51e23-125">Request body</span></span>
+<span data-ttu-id="51e23-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="51e23-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6c247-127">响应</span><span class="sxs-lookup"><span data-stu-id="6c247-127">Response</span></span>
-<span data-ttu-id="6c247-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="6c247-128">If successful, this method returns a `200 OK` response code and a collection of [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="51e23-127">响应</span><span class="sxs-lookup"><span data-stu-id="51e23-127">Response</span></span>
+<span data-ttu-id="51e23-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="51e23-128">If successful, this method returns a `200 OK` response code and a collection of [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6c247-129">示例</span><span class="sxs-lookup"><span data-stu-id="6c247-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6c247-130">请求</span><span class="sxs-lookup"><span data-stu-id="6c247-130">Request</span></span>
-<span data-ttu-id="6c247-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6c247-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="51e23-129">示例</span><span class="sxs-lookup"><span data-stu-id="51e23-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="51e23-130">请求</span><span class="sxs-lookup"><span data-stu-id="51e23-130">Request</span></span>
+<span data-ttu-id="51e23-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="51e23-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="6c247-132">响应</span><span class="sxs-lookup"><span data-stu-id="6c247-132">Response</span></span>
-<span data-ttu-id="6c247-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6c247-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="51e23-132">响应</span><span class="sxs-lookup"><span data-stu-id="51e23-132">Response</span></span>
+<span data-ttu-id="51e23-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="51e23-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
