@@ -2,52 +2,53 @@
 title: 创建音频路由组
 description: 创建新**audioRoutingGroup**。
 author: VinodRavichandran
-ms.openlocfilehash: 96279e1ee3eb9050c74b2696917af1bf42c4ff1c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 4f8a430e46137d54df5fc6d99a9676f4faa0d5ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838477"
 ---
-# <a name="create-audio-routing-group"></a><span data-ttu-id="d2a7d-103">创建音频路由组</span><span class="sxs-lookup"><span data-stu-id="d2a7d-103">Create audio routing group</span></span>
+# <a name="create-audio-routing-group"></a><span data-ttu-id="e7b54-103">创建音频路由组</span><span class="sxs-lookup"><span data-stu-id="e7b54-103">Create audio routing group</span></span>
 
-> <span data-ttu-id="d2a7d-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d2a7d-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7b54-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e7b54-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7b54-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e7b54-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d2a7d-106">创建新**audioRoutingGroup**。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-106">Create a new **audioRoutingGroup**.</span></span>
+<span data-ttu-id="e7b54-106">创建新**audioRoutingGroup**。</span><span class="sxs-lookup"><span data-stu-id="e7b54-106">Create a new **audioRoutingGroup**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d2a7d-107">权限</span><span class="sxs-lookup"><span data-stu-id="d2a7d-107">Permissions</span></span>
-<span data-ttu-id="d2a7d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7b54-107">权限</span><span class="sxs-lookup"><span data-stu-id="e7b54-107">Permissions</span></span>
+<span data-ttu-id="e7b54-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7b54-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d2a7d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d2a7d-110">Permission type</span></span>                        | <span data-ttu-id="d2a7d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d2a7d-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e7b54-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7b54-110">Permission type</span></span>                        | <span data-ttu-id="e7b54-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e7b54-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d2a7d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d2a7d-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d2a7d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-113">Not supported.</span></span>                               |
-| <span data-ttu-id="d2a7d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d2a7d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2a7d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-115">Not supported.</span></span>                               |
-| <span data-ttu-id="d2a7d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d2a7d-116">Application</span></span>                            | <span data-ttu-id="d2a7d-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="d2a7d-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="e7b54-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7b54-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e7b54-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7b54-113">Not supported.</span></span>                               |
+| <span data-ttu-id="e7b54-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7b54-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7b54-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7b54-115">Not supported.</span></span>                               |
+| <span data-ttu-id="e7b54-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7b54-116">Application</span></span>                            | <span data-ttu-id="e7b54-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="e7b54-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d2a7d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d2a7d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7b54-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7b54-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
 POST /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d2a7d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d2a7d-119">Request headers</span></span>
-| <span data-ttu-id="d2a7d-120">名称</span><span class="sxs-lookup"><span data-stu-id="d2a7d-120">Name</span></span>          | <span data-ttu-id="d2a7d-121">说明</span><span class="sxs-lookup"><span data-stu-id="d2a7d-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="e7b54-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7b54-119">Request headers</span></span>
+| <span data-ttu-id="e7b54-120">名称</span><span class="sxs-lookup"><span data-stu-id="e7b54-120">Name</span></span>          | <span data-ttu-id="e7b54-121">说明</span><span class="sxs-lookup"><span data-stu-id="e7b54-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="d2a7d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2a7d-122">Authorization</span></span> | <span data-ttu-id="d2a7d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e7b54-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7b54-122">Authorization</span></span> | <span data-ttu-id="e7b54-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e7b54-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d2a7d-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d2a7d-125">Request body</span></span>
-<span data-ttu-id="d2a7d-126">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-126">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7b54-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7b54-125">Request body</span></span>
+<span data-ttu-id="e7b54-126">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e7b54-126">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d2a7d-127">响应</span><span class="sxs-lookup"><span data-stu-id="d2a7d-127">Response</span></span>
-<span data-ttu-id="d2a7d-128">如果成功，此方法返回`200 OK`响应正文中的响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-128">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e7b54-127">响应</span><span class="sxs-lookup"><span data-stu-id="e7b54-127">Response</span></span>
+<span data-ttu-id="e7b54-128">如果成功，此方法返回`200 OK`响应正文中的响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e7b54-128">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d2a7d-129">示例</span><span class="sxs-lookup"><span data-stu-id="d2a7d-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e7b54-129">示例</span><span class="sxs-lookup"><span data-stu-id="e7b54-129">Examples</span></span>
 
-### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="d2a7d-130">示例 1： 一对一音频路由组</span><span class="sxs-lookup"><span data-stu-id="d2a7d-130">Example 1: One-to-one audio routing group</span></span>
+### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="e7b54-130">示例 1： 一对一音频路由组</span><span class="sxs-lookup"><span data-stu-id="e7b54-130">Example 1: One-to-one audio routing group</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d2a7d-131">请求</span><span class="sxs-lookup"><span data-stu-id="d2a7d-131">Request</span></span>
-<span data-ttu-id="d2a7d-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="e7b54-131">请求</span><span class="sxs-lookup"><span data-stu-id="e7b54-131">Request</span></span>
+<span data-ttu-id="e7b54-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7b54-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -70,11 +71,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="d2a7d-133">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-133">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="e7b54-133">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e7b54-133">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="d2a7d-134">响应</span><span class="sxs-lookup"><span data-stu-id="d2a7d-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e7b54-134">响应</span><span class="sxs-lookup"><span data-stu-id="e7b54-134">Response</span></span>
 
-> <span data-ttu-id="d2a7d-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e7b54-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e7b54-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,10 +98,10 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="d2a7d-137">示例 2： 多播的 audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="d2a7d-137">Example 2: Multicast audioRoutingGroup</span></span>
+### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="e7b54-137">示例 2： 多播的 audioRoutingGroup</span><span class="sxs-lookup"><span data-stu-id="e7b54-137">Example 2: Multicast audioRoutingGroup</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d2a7d-138">请求</span><span class="sxs-lookup"><span data-stu-id="d2a7d-138">Request</span></span>
-<span data-ttu-id="d2a7d-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="e7b54-138">请求</span><span class="sxs-lookup"><span data-stu-id="e7b54-138">Request</span></span>
+<span data-ttu-id="e7b54-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7b54-139">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -128,11 +129,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="d2a7d-140">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-140">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="e7b54-140">在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e7b54-140">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="d2a7d-141">响应</span><span class="sxs-lookup"><span data-stu-id="d2a7d-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e7b54-141">响应</span><span class="sxs-lookup"><span data-stu-id="e7b54-141">Response</span></span>
 
-> <span data-ttu-id="d2a7d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d2a7d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e7b54-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e7b54-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK

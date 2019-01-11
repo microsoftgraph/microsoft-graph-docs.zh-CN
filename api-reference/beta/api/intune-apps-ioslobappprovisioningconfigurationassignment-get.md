@@ -2,31 +2,32 @@
 title: 获取 iosLobAppProvisioningConfigurationAssignment
 description: 读取属性和 iosLobAppProvisioningConfigurationAssignment 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 8cfd13e432be5d9e0272fba476f5d7a611d2bf75
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4755bab0c834c9a44a5ff1598f1b193920d5b90a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823862"
 ---
-# <a name="get-ioslobappprovisioningconfigurationassignment"></a><span data-ttu-id="002fa-103">获取 iosLobAppProvisioningConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="002fa-103">Get iosLobAppProvisioningConfigurationAssignment</span></span>
+# <a name="get-ioslobappprovisioningconfigurationassignment"></a><span data-ttu-id="ece8f-103">获取 iosLobAppProvisioningConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="ece8f-103">Get iosLobAppProvisioningConfigurationAssignment</span></span>
 
-> <span data-ttu-id="002fa-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="002fa-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="002fa-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="002fa-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ece8f-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ece8f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ece8f-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ece8f-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="002fa-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="002fa-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ece8f-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="ece8f-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="002fa-107">读取属性和[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)对象的关系。</span><span class="sxs-lookup"><span data-stu-id="002fa-107">Read properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="002fa-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="002fa-108">Prerequisites</span></span>
-<span data-ttu-id="002fa-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="002fa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ece8f-107">读取属性和[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)对象的关系。</span><span class="sxs-lookup"><span data-stu-id="ece8f-107">Read properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ece8f-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ece8f-108">Prerequisites</span></span>
+<span data-ttu-id="ece8f-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="ece8f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="002fa-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="002fa-111">Permission type</span></span>|<span data-ttu-id="002fa-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="002fa-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ece8f-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ece8f-111">Permission type</span></span>|<span data-ttu-id="ece8f-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ece8f-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="002fa-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="002fa-113">Delegated (work or school account)</span></span>|<span data-ttu-id="002fa-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="002fa-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="002fa-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="002fa-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="002fa-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="002fa-116">Not supported.</span></span>|
-|<span data-ttu-id="002fa-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="002fa-117">Application</span></span>|<span data-ttu-id="002fa-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="002fa-118">Not supported.</span></span>|
+|<span data-ttu-id="ece8f-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ece8f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ece8f-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ece8f-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="ece8f-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ece8f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ece8f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ece8f-116">Not supported.</span></span>|
+|<span data-ttu-id="ece8f-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ece8f-117">Application</span></span>|<span data-ttu-id="ece8f-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="ece8f-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="002fa-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="002fa-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ece8f-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ece8f-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,29 +36,29 @@ ms.locfileid: "27338785"
 GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="002fa-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="002fa-120">Optional query parameters</span></span>
-<span data-ttu-id="002fa-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="002fa-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="002fa-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="002fa-122">Request headers</span></span>
-|<span data-ttu-id="002fa-123">标头</span><span class="sxs-lookup"><span data-stu-id="002fa-123">Header</span></span>|<span data-ttu-id="002fa-124">值</span><span class="sxs-lookup"><span data-stu-id="002fa-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="ece8f-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ece8f-120">Optional query parameters</span></span>
+<span data-ttu-id="ece8f-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ece8f-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ece8f-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="ece8f-122">Request headers</span></span>
+|<span data-ttu-id="ece8f-123">标头</span><span class="sxs-lookup"><span data-stu-id="ece8f-123">Header</span></span>|<span data-ttu-id="ece8f-124">值</span><span class="sxs-lookup"><span data-stu-id="ece8f-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="002fa-125">授权</span><span class="sxs-lookup"><span data-stu-id="002fa-125">Authorization</span></span>|<span data-ttu-id="002fa-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="002fa-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="002fa-127">Accept</span><span class="sxs-lookup"><span data-stu-id="002fa-127">Accept</span></span>|<span data-ttu-id="002fa-128">application/json</span><span class="sxs-lookup"><span data-stu-id="002fa-128">application/json</span></span>|
+|<span data-ttu-id="ece8f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ece8f-125">Authorization</span></span>|<span data-ttu-id="ece8f-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ece8f-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ece8f-127">Accept</span><span class="sxs-lookup"><span data-stu-id="ece8f-127">Accept</span></span>|<span data-ttu-id="ece8f-128">application/json</span><span class="sxs-lookup"><span data-stu-id="ece8f-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="002fa-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="002fa-129">Request body</span></span>
-<span data-ttu-id="002fa-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="002fa-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ece8f-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="ece8f-129">Request body</span></span>
+<span data-ttu-id="ece8f-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ece8f-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="002fa-131">响应</span><span class="sxs-lookup"><span data-stu-id="002fa-131">Response</span></span>
-<span data-ttu-id="002fa-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="002fa-132">If successful, this method returns a `200 OK` response code and [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ece8f-131">响应</span><span class="sxs-lookup"><span data-stu-id="ece8f-131">Response</span></span>
+<span data-ttu-id="ece8f-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ece8f-132">If successful, this method returns a `200 OK` response code and [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="002fa-133">示例</span><span class="sxs-lookup"><span data-stu-id="002fa-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="002fa-134">请求</span><span class="sxs-lookup"><span data-stu-id="002fa-134">Request</span></span>
-<span data-ttu-id="002fa-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="002fa-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ece8f-133">示例</span><span class="sxs-lookup"><span data-stu-id="ece8f-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="ece8f-134">请求</span><span class="sxs-lookup"><span data-stu-id="ece8f-134">Request</span></span>
+<span data-ttu-id="ece8f-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ece8f-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="002fa-136">响应</span><span class="sxs-lookup"><span data-stu-id="002fa-136">Response</span></span>
-<span data-ttu-id="002fa-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="002fa-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ece8f-136">响应</span><span class="sxs-lookup"><span data-stu-id="ece8f-136">Response</span></span>
+<span data-ttu-id="ece8f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ece8f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
