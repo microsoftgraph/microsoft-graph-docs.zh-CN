@@ -2,12 +2,13 @@
 title: managementConditionExpressionString 资源类型
 description: 管理条件字符串表达式是管理条件表达式的字符串表示形式。
 author: tfitzmac
-ms.openlocfilehash: eabcc730e86f74e2afc7c93874d47e787579c899
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 815d799bc37328062a717097fd27bc0870a315f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811576"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString 资源类型
 

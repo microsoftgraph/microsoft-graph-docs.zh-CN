@@ -1,12 +1,13 @@
 ---
 title: iosNetworkUsageRule 资源类型
 description: 网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。
-ms.openlocfilehash: 211cbc52f596bbe62647a14c84bd5fd5178fdfc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85b01c4cca324c0c344cc837da117efa05ae0ae4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845765"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 

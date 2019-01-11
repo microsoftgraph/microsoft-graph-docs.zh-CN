@@ -2,12 +2,13 @@
 title: noMediaConfig 资源类型
 description: 指示没有媒体的媒体配置。
 author: VinodRavichandran
-ms.openlocfilehash: 29d5230150a035d8ed2dd1223f66df4a8f4f30f2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c7bf75b2033c7b3340bde01b782b7eabe5ab0e76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806459"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380179"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
+| 属性       | 类型    | Description|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | 布尔 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
