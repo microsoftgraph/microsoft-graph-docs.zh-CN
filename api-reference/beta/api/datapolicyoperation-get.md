@@ -1,43 +1,44 @@
 ---
 title: 获取 dataPolicyOperation
 description: 检索 dataPolicyOperation 对象的属性。
-ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00ecde916a2b0632305c6e09437ce3138dc3344d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808979"
 ---
-# <a name="get-datapolicyoperation"></a><span data-ttu-id="7846a-103">获取 dataPolicyOperation</span><span class="sxs-lookup"><span data-stu-id="7846a-103">Get dataPolicyOperation</span></span>
+# <a name="get-datapolicyoperation"></a><span data-ttu-id="24fdb-103">获取 dataPolicyOperation</span><span class="sxs-lookup"><span data-stu-id="24fdb-103">Get dataPolicyOperation</span></span>
 
-<span data-ttu-id="7846a-104">检索 dataPolicyOperation 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7846a-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
+<span data-ttu-id="24fdb-104">检索 dataPolicyOperation 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="24fdb-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7846a-105">权限</span><span class="sxs-lookup"><span data-stu-id="7846a-105">Permissions</span></span>
-<span data-ttu-id="7846a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7846a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="24fdb-105">权限</span><span class="sxs-lookup"><span data-stu-id="24fdb-105">Permissions</span></span>
+<span data-ttu-id="24fdb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="24fdb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7846a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7846a-108">Permission type</span></span>      | <span data-ttu-id="7846a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7846a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="24fdb-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="24fdb-108">Permission type</span></span>      | <span data-ttu-id="24fdb-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="24fdb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7846a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7846a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="7846a-111">User.Export.All 和 User.Read.All</span><span class="sxs-lookup"><span data-stu-id="7846a-111">User.Export.All and User.Read.All</span></span>  |
-|<span data-ttu-id="7846a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7846a-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7846a-113">不适用</span><span class="sxs-lookup"><span data-stu-id="7846a-113">Not applicable</span></span>  |
-|<span data-ttu-id="7846a-114">Application</span><span class="sxs-lookup"><span data-stu-id="7846a-114">Application</span></span> | <span data-ttu-id="7846a-115">User.Export.All 和 User.Read.All</span><span class="sxs-lookup"><span data-stu-id="7846a-115">User.Export.All and User.Read.All</span></span> | 
+|<span data-ttu-id="24fdb-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="24fdb-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="24fdb-111">User.Export.All 和 User.Read.All</span><span class="sxs-lookup"><span data-stu-id="24fdb-111">User.Export.All and User.Read.All</span></span>  |
+|<span data-ttu-id="24fdb-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="24fdb-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="24fdb-113">不适用</span><span class="sxs-lookup"><span data-stu-id="24fdb-113">Not applicable</span></span>  |
+|<span data-ttu-id="24fdb-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="24fdb-114">Application</span></span> | <span data-ttu-id="24fdb-115">User.Export.All 和 User.Read.All</span><span class="sxs-lookup"><span data-stu-id="24fdb-115">User.Export.All and User.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="7846a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7846a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24fdb-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="24fdb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /dataPolicyOperations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7846a-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7846a-117">Request headers</span></span>
-| <span data-ttu-id="7846a-118">Name</span><span class="sxs-lookup"><span data-stu-id="7846a-118">Name</span></span>      |<span data-ttu-id="7846a-119">说明</span><span class="sxs-lookup"><span data-stu-id="7846a-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="24fdb-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="24fdb-117">Request headers</span></span>
+| <span data-ttu-id="24fdb-118">名称</span><span class="sxs-lookup"><span data-stu-id="24fdb-118">Name</span></span>      |<span data-ttu-id="24fdb-119">说明</span><span class="sxs-lookup"><span data-stu-id="24fdb-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7846a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7846a-120">Authorization</span></span>  | <span data-ttu-id="7846a-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="7846a-121">Bearer {token}</span></span>|
+| <span data-ttu-id="24fdb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="24fdb-120">Authorization</span></span>  | <span data-ttu-id="24fdb-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="24fdb-121">Bearer {token}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7846a-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="7846a-122">Request body</span></span>
-<span data-ttu-id="7846a-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7846a-123">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="7846a-124">响应</span><span class="sxs-lookup"><span data-stu-id="7846a-124">Response</span></span>
-<span data-ttu-id="7846a-125">如果成功，此方法返回`200 OK`响应正文中的响应代码和[dataPolicyOperation](../resources/datapolicyoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7846a-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7846a-126">示例</span><span class="sxs-lookup"><span data-stu-id="7846a-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7846a-127">请求</span><span class="sxs-lookup"><span data-stu-id="7846a-127">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="24fdb-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="24fdb-122">Request body</span></span>
+<span data-ttu-id="24fdb-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="24fdb-123">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="24fdb-124">响应</span><span class="sxs-lookup"><span data-stu-id="24fdb-124">Response</span></span>
+<span data-ttu-id="24fdb-125">如果成功，此方法返回`200 OK`响应正文中的响应代码和[dataPolicyOperation](../resources/datapolicyoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="24fdb-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="24fdb-126">示例</span><span class="sxs-lookup"><span data-stu-id="24fdb-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="24fdb-127">请求</span><span class="sxs-lookup"><span data-stu-id="24fdb-127">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_datapolicyoperation"
@@ -45,8 +46,8 @@ GET /dataPolicyOperations/{id}
 ```http
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="7846a-128">响应</span><span class="sxs-lookup"><span data-stu-id="7846a-128">Response</span></span>
-<span data-ttu-id="7846a-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7846a-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="24fdb-128">响应</span><span class="sxs-lookup"><span data-stu-id="24fdb-128">Response</span></span>
+<span data-ttu-id="24fdb-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="24fdb-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,20 +1,21 @@
 ---
 title: FilterCriteria 资源类型
 description: 表示应用于列的筛选条件。
-ms.openlocfilehash: 7fafbf8ef71eac9cf4896927f38ed1add5da9320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808566"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="3f64d-103">FilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="3f64d-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="2f05f-103">FilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="2f05f-103">FilterCriteria resource type</span></span>
 
-<span data-ttu-id="3f64d-104">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="3f64d-104">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="2f05f-104">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="2f05f-104">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3f64d-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3f64d-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2f05f-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2f05f-105">JSON representation</span></span>
 
-<span data-ttu-id="3f64d-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3f64d-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2f05f-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2f05f-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -2,48 +2,49 @@
 title: 创建 outlookTaskFolder
 description: Outlook 任务下创建文件夹指定 outlookTaskGroup。
 author: angelgolfer-ms
-ms.openlocfilehash: e1e45cce9d047086d9aee025d38ca883fcda6fad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d6d6f103c1dd002f4c01e0dbdd71d1ebd7ddd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823833"
 ---
-# <a name="create-outlooktaskfolder"></a><span data-ttu-id="83679-103">创建 outlookTaskFolder</span><span class="sxs-lookup"><span data-stu-id="83679-103">Create outlookTaskFolder</span></span>
+# <a name="create-outlooktaskfolder"></a><span data-ttu-id="dcad4-103">创建 outlookTaskFolder</span><span class="sxs-lookup"><span data-stu-id="dcad4-103">Create outlookTaskFolder</span></span>
 
-> <span data-ttu-id="83679-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="83679-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="83679-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="83679-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dcad4-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="dcad4-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dcad4-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="dcad4-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="83679-106">Outlook 任务下创建文件夹指定[outlookTaskGroup](../resources/outlooktaskgroup.md)。</span><span class="sxs-lookup"><span data-stu-id="83679-106">Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="83679-107">权限</span><span class="sxs-lookup"><span data-stu-id="83679-107">Permissions</span></span>
-<span data-ttu-id="83679-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="83679-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dcad4-106">Outlook 任务下创建文件夹指定[outlookTaskGroup](../resources/outlooktaskgroup.md)。</span><span class="sxs-lookup"><span data-stu-id="dcad4-106">Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dcad4-107">权限</span><span class="sxs-lookup"><span data-stu-id="dcad4-107">Permissions</span></span>
+<span data-ttu-id="dcad4-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dcad4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="83679-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="83679-110">Permission type</span></span>      | <span data-ttu-id="83679-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="83679-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dcad4-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="dcad4-110">Permission type</span></span>      | <span data-ttu-id="dcad4-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dcad4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="83679-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="83679-112">Delegated (work or school account)</span></span> | <span data-ttu-id="83679-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="83679-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="83679-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="83679-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83679-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="83679-115">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="83679-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="83679-116">Application</span></span> | <span data-ttu-id="83679-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="83679-117">Not supported.</span></span> |
+|<span data-ttu-id="dcad4-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dcad4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dcad4-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dcad4-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="dcad4-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dcad4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dcad4-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dcad4-115">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="dcad4-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="dcad4-116">Application</span></span> | <span data-ttu-id="dcad4-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="dcad4-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="83679-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="83679-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dcad4-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dcad4-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="83679-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="83679-119">Request headers</span></span>
-| <span data-ttu-id="83679-120">Name</span><span class="sxs-lookup"><span data-stu-id="83679-120">Name</span></span>       | <span data-ttu-id="83679-121">说明</span><span class="sxs-lookup"><span data-stu-id="83679-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dcad4-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="dcad4-119">Request headers</span></span>
+| <span data-ttu-id="dcad4-120">名称</span><span class="sxs-lookup"><span data-stu-id="dcad4-120">Name</span></span>       | <span data-ttu-id="dcad4-121">说明</span><span class="sxs-lookup"><span data-stu-id="dcad4-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="83679-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="83679-122">Authorization</span></span>  | <span data-ttu-id="83679-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="83679-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dcad4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcad4-122">Authorization</span></span>  | <span data-ttu-id="dcad4-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dcad4-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="83679-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="83679-125">Request body</span></span>
-<span data-ttu-id="83679-126">在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="83679-126">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dcad4-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="dcad4-125">Request body</span></span>
+<span data-ttu-id="dcad4-126">在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dcad4-126">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="83679-127">响应</span><span class="sxs-lookup"><span data-stu-id="83679-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dcad4-127">响应</span><span class="sxs-lookup"><span data-stu-id="dcad4-127">Response</span></span>
 
-<span data-ttu-id="83679-128">如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。</span><span class="sxs-lookup"><span data-stu-id="83679-128">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+<span data-ttu-id="dcad4-128">如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dcad4-128">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="83679-129">示例</span><span class="sxs-lookup"><span data-stu-id="83679-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="83679-130">请求</span><span class="sxs-lookup"><span data-stu-id="83679-130">Request</span></span>
-<span data-ttu-id="83679-131">下面的示例创建一个名为任务文件夹`Cooking`指定的任务组中。</span><span class="sxs-lookup"><span data-stu-id="83679-131">The following example creates a task folder called `Cooking` in the specified task group.</span></span>
+## <a name="example"></a><span data-ttu-id="dcad4-129">示例</span><span class="sxs-lookup"><span data-stu-id="dcad4-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dcad4-130">请求</span><span class="sxs-lookup"><span data-stu-id="dcad4-130">Request</span></span>
+<span data-ttu-id="dcad4-131">下面的示例创建一个名为任务文件夹`Cooking`指定的任务组中。</span><span class="sxs-lookup"><span data-stu-id="dcad4-131">The following example creates a task folder called `Cooking` in the specified task group.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -58,9 +59,9 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-<span data-ttu-id="83679-132">在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="83679-132">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="83679-133">响应</span><span class="sxs-lookup"><span data-stu-id="83679-133">Response</span></span>
-<span data-ttu-id="83679-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="83679-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="dcad4-132">在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dcad4-132">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="dcad4-133">响应</span><span class="sxs-lookup"><span data-stu-id="dcad4-133">Response</span></span>
+<span data-ttu-id="dcad4-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dcad4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,23 @@
 ---
 title: plannerAssignments 资源类型
 description: '**PlannerAssignments**资源表示 plannerTask 资源的分配。 此类型为打开的类型。 在这种类型的每个属性名称 '
-ms.openlocfilehash: 1cb080ff8d66c2319b77dd560f10422e1663a46d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 42d85a1787efbfa55196db36cbcdd09aae7d1a84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811905"
 ---
-# <a name="plannerassignments-resource-type"></a><span data-ttu-id="b4302-105">plannerAssignments 资源类型</span><span class="sxs-lookup"><span data-stu-id="b4302-105">plannerAssignments resource type</span></span>
+# <a name="plannerassignments-resource-type"></a><span data-ttu-id="ac77f-105">plannerAssignments 资源类型</span><span class="sxs-lookup"><span data-stu-id="ac77f-105">plannerAssignments resource type</span></span>
 
-<span data-ttu-id="b4302-p102">**plannerAssignments** 资源表示 [plannerTask](plannertask.md) 资源的分配。此类型是开放类型。此类型中的每个属性名称均是任务被分配到的用户对象的 ID。可以通过新建以用户 ID 命名的属性并将包含 orderHint 属性的 [plannerassignment](plannerassignment.md) 对象填充为其值来向任务分配用户。可以通过将以代理人 ID 命名的属性设置为 null 来在任务中取消分配代理人。</span><span class="sxs-lookup"><span data-stu-id="b4302-p102">The **plannerAssignments** resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type is the ID of a user object a task is assigned to. The users can be assigned to tasks with creating new properties named with their ID, with a [plannerassignment](plannerassignment.md) object with orderHint property populated as the value. The assignees can be unassigned from the task by setting the propety named with their ID to null.</span></span>
+<span data-ttu-id="ac77f-p102">**plannerAssignments** 资源表示 [plannerTask](plannertask.md) 资源的分配。此类型是开放类型。此类型中的每个属性名称均是任务被分配到的用户对象的 ID。可以通过新建以用户 ID 命名的属性并将包含 orderHint 属性的 [plannerassignment](plannerassignment.md) 对象填充为其值来向任务分配用户。可以通过将以代理人 ID 命名的属性设置为 null 来在任务中取消分配代理人。</span><span class="sxs-lookup"><span data-stu-id="ac77f-p102">The **plannerAssignments** resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type is the ID of a user object a task is assigned to. The users can be assigned to tasks with creating new properties named with their ID, with a [plannerassignment](plannerassignment.md) object with orderHint property populated as the value. The assignees can be unassigned from the task by setting the propety named with their ID to null.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b4302-111">属性</span><span class="sxs-lookup"><span data-stu-id="b4302-111">Properties</span></span>
-<span data-ttu-id="b4302-p103">开放类型的属性可以由客户端定义。但是在这种情况下，客户必须将分配用户的 ID 作为属性名称。必须将属性设置为 **plannerAssignment** 对象才能创建或修改代理人，必须将其设置为 null 才能删除代理人。</span><span class="sxs-lookup"><span data-stu-id="b4302-p103">Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's IDs as property names. The property must be set to a **plannerAssignment** object to create or modify assignees, and to null to remove them.</span></span>
+## <a name="properties"></a><span data-ttu-id="ac77f-111">属性</span><span class="sxs-lookup"><span data-stu-id="ac77f-111">Properties</span></span>
+<span data-ttu-id="ac77f-p103">开放类型的属性可以由客户端定义。但是在这种情况下，客户必须将分配用户的 ID 作为属性名称。必须将属性设置为 **plannerAssignment** 对象才能创建或修改代理人，必须将其设置为 null 才能删除代理人。</span><span class="sxs-lookup"><span data-stu-id="ac77f-p103">Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's IDs as property names. The property must be set to a **plannerAssignment** object to create or modify assignees, and to null to remove them.</span></span>
 
-<span data-ttu-id="b4302-115">示例：</span><span class="sxs-lookup"><span data-stu-id="b4302-115">Example:</span></span>
+<span data-ttu-id="ac77f-115">示例：</span><span class="sxs-lookup"><span data-stu-id="ac77f-115">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,7 +34,7 @@ ms.locfileid: "27011433"
     }
 }
 ```
-<span data-ttu-id="b4302-p104">该示例将从任务的代理人列表中删除 ID 为 ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 的用户，并更改用户 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的代理人顺序。如果尚未将任务分配给 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的用户，则使用此值更新分配会将此任务分配给该用户。</span><span class="sxs-lookup"><span data-stu-id="b4302-p104">This example removes user with ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 from the assignees list of the task, while changing the order of the assignee with user ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8. If the task isn't already assigned to user with ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8, updating the assignments with this value will assign the task to this user.</span></span>
+<span data-ttu-id="ac77f-p104">该示例将从任务的代理人列表中删除 ID 为 ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 的用户，并更改用户 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的代理人顺序。如果尚未将任务分配给 ID 为 4e98f8f1-bb03-4015-b8e0-19bb370949d8 的用户，则使用此值更新分配会将此任务分配给该用户。</span><span class="sxs-lookup"><span data-stu-id="ac77f-p104">This example removes user with ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 from the assignees list of the task, while changing the order of the assignee with user ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8. If the task isn't already assigned to user with ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8, updating the assignments with this value will assign the task to this user.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
