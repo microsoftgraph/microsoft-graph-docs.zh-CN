@@ -2,12 +2,13 @@
 title: 创建 deviceManagementExchangeConnector
 description: 创建新的 deviceManagementExchangeConnector 对象。
 author: tfitzmac
-ms.openlocfilehash: f1abc9478eb3f845477049ab4007ad16a7434d24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b243e6e3790ff4984c138355f9a684d2a7a6ae9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823971"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>创建 deviceManagementExchangeConnector
 
@@ -36,7 +37,7 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

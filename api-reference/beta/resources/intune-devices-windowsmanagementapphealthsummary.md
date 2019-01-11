@@ -2,12 +2,13 @@
 title: windowsManagementAppHealthSummary 资源类型
 description: 包含 Windows 管理应用程序的运行状况摘要属性。
 author: tfitzmac
-ms.openlocfilehash: 5717f96cbac534f2726ccf7bcfcbdb54d4c17b28
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40ba93025059a85a11b061464d04bca4118b88bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843818"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>windowsManagementAppHealthSummary 资源类型
 

@@ -2,12 +2,13 @@
 title: windowsPrivacyDataCategory 枚举类型
 description: 隐私数据访问的 Windows 隐私数据类别说明符。
 author: tfitzmac
-ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b533b9ecbf08f09760b57bb0d2bac7080746e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826748"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304947"
 
 隐私数据访问的 Windows 隐私数据类别说明符。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|指定无访问级别，没有方法。 设备可能表现，可以如 UserInControl 或 ForceAllow 中所示。 它可能依赖的隐私数据已访问它们，Windows 版本和其他因素。|
 |accountInfo|1|允许应用程序访问用户的名称、 图片和中的 Microsoft 帐户创建其他帐户信息。 已添加到 Windows 10 版本 1607 中。|

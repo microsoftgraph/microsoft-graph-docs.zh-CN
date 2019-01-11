@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageVersionsUserCounts'
 description: 按 Outlook 桌面版获取唯一用户数。
-ms.openlocfilehash: fd172e97b5c7c036fb33e3d4ab0e8088d9d0af7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ff2451ac4b3e50d7cd5ef2c6c31163c2e15235a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827911"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 

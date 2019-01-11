@@ -1,12 +1,13 @@
 ---
 title: 更新 connectorGroups
 description: 更新 connectorgroup 对象的属性。
-ms.openlocfilehash: a9777394a3ecfc65a7c03c07643359ef3c763aca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a4db622328edd4d3aea348fd078acdc832a9c52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843796"
 ---
 # <a name="update-connectorgroups"></a>更新 connectorGroups
 
@@ -30,12 +31,12 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| 可能的值为： `applicationProxy`。|
 |name|字符串|ConnectorGroup 的名称。|

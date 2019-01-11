@@ -1,12 +1,13 @@
 ---
 title: 获取 suspiciousIpRiskEvent
 description: 检索的属性和 suspiciousipriskevent 对象的关系。
-ms.openlocfilehash: 3fa7625e01beb6b847bde602c7ccfd0d42d80904
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e55300c7d7723e26457b0aedde74dc4f5f6ff1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836860"
 ---
 # <a name="get-suspiciousipriskevent"></a>获取 suspiciousIpRiskEvent
 

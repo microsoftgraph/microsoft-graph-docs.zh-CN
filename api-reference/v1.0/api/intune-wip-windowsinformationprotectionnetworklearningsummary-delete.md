@@ -2,12 +2,13 @@
 title: 删除 windowsInformationProtectionNetworkLearningSummary
 description: 删除 windowsInformationProtectionNetworkLearningSummary。
 author: tfitzmac
-ms.openlocfilehash: 6f9749a77a85db40741fdcbb8d8065e622ef0e6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e63ef824a12db4a857030ee10d0970050216df07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856215"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>删除 windowsInformationProtectionNetworkLearningSummary
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

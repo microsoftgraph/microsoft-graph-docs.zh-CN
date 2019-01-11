@@ -2,12 +2,13 @@
 title: calendarGroup 资源类型
 description: 一组的用户日历。
 author: angelgolfer-ms
-ms.openlocfilehash: fda8a3006631f45d49e83363d61f7b0363675ed1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d141b63b840daa7730d17f9dcfc2e527c1ed66b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810323"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 

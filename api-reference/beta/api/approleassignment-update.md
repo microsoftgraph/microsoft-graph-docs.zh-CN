@@ -1,12 +1,13 @@
 ---
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
-ms.openlocfilehash: 3c861afde396d9cab2f745c15c7de1d9a81c5dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809630"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -37,7 +38,7 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|授予创建时间。|
 |id|Guid|已分配给主体角色 id。  必须由其**appRoles**属性中目标资源应用程序**resourceId**声明此角色。 如果资源没有声明任何权限，必须指定默认 id (零 GUID)。                            **注意：** 不可为 null。            |

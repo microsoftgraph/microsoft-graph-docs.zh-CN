@@ -2,12 +2,13 @@
 title: 创建 termsAndConditions
 description: 创建新的 termsAndConditions 对象。
 author: tfitzmac
-ms.openlocfilehash: 833966122b8b2613e17d43068a4d22af125d7617
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bea289d293edd7f7ac68c5a1da1388d89c5687e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824323"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

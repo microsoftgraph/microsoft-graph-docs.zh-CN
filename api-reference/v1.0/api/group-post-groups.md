@@ -2,12 +2,13 @@
 title: 创建组
 description: 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
 author: dkershaw10
-ms.openlocfilehash: 2fff86d3bc86a8e78c295b1a4553006ac416ddd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849418"
 ---
 # <a name="create-group"></a>创建组
 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
@@ -34,7 +35,7 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
@@ -43,10 +44,10 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 此设置为**true**如果创建 Office 365 组。 此设置为**false**如果创建动态或安全组。 必需。 |
-| mailNickname | string | 组的邮件别名。 必需。 |
-| securityEnabled | boolean | 设置为**true**已启用安全的组。 此设置为**true**如果创建动态或安全组。 此设置为**false**如果创建 Office 365 组。 必需。 |
+| displayName | string | 要在组的通讯簿中显示的名称。 必填。 |
+| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 此设置为**true**如果创建 Office 365 组。 此设置为**false**如果创建动态或安全组。 必填。 |
+| mailNickname | string | 组的邮件别名。 必填。 |
+| securityEnabled | boolean | 设置为**true**已启用安全的组。 此设置为**true**如果创建动态或安全组。 此设置为**false**如果创建 Office 365 组。 必填。 |
 | owners | string collection | 在创建时，此属性表示所有者组。 可选。 |
 | members | string collection | 在创建时，此属性表示组的成员。 可选。 |
 

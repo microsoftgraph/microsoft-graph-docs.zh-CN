@@ -2,12 +2,13 @@
 title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
 author: tfitzmac
-ms.openlocfilehash: 1f577189dc2e8a420bc4f62d0c7d59510c610ac9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a20143e12098d246a65477400341409a79ad64ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844567"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -38,7 +39,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: privilegedRoleAssignment 资源类型
 description: '表示特定用户特权的角色分配。 '
-ms.openlocfilehash: 40cfe6487184171fc0d120f9a0e2cd98070f96f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec6bc34ecd56839c764592ff298475e8648f300b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823315"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
@@ -31,14 +32,14 @@ ms.locfileid: "27043584"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|UTC DateTime 时将过期的临时特权的角色分配。 永久角色分配的值为 null。|
-|id|string| 特权的角色分配的唯一标识符。 只读。 处于 userId_roleId，其中 userId 是 Azure AD 用户 id 的 GUID 字符串，roleId 是 Azure 管理员角色 id 的 GUID 字符串的格式。|
+|id|string| 特权的角色分配的唯一标识符。 此为只读属性。 处于 userId_roleId，其中 userId 是 Azure AD 用户 id 的 GUID 字符串，roleId 是 Azure 管理员角色 id 的 GUID 字符串的格式。|
 |isElevated|boolean|**true**如果激活该角色分配。 **false**如果停用的角色分配。|
 |resultMessage|string|结果消息由服务设置。|
 |roleId|string|角色标识符。 格式字符串 GUID。|
 |userId|string|用户标识符。 格式字符串 GUID。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。 相关联的角色的信息。|
 

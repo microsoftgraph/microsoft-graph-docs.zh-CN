@@ -1,12 +1,13 @@
 ---
 title: 获取 outlookTask
 description: 获取用户的邮箱中的属性和 Outlook 任务的关系。
-ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: f93bc46a1bbe3f7a6c145458606174b6e3a13f1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822223"
 ---
 # <a name="get-outlooktask"></a>获取 outlookTask
 

@@ -1,12 +1,13 @@
 ---
 title: 更新 privilegedRoleSettings
 description: 更新给定的角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
-ms.openlocfilehash: 0e0f6b7253a1c1d8570c0b91fac4b08bbd39dfff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819312"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -41,18 +42,18 @@ PUT /privilegedRoles/{id}/settings
 
 下表列出更新角色设置时可以提供的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|当激活角色持续时间。 必需。|
-|id|string|角色设置唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必需。|
+|elevationDuration|duration|当激活角色持续时间。 必填。|
+|id|string|角色设置唯一标识符。 此为只读属性。 必填。|
+|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必填。|
 |lastGlobalAdmin|布尔|仅供内部使用。|
-|maxElavationDuration|duration|激活角色的最长持续时间。 必需。|
-|mfaOnElevation|布尔|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必需。|
-|minElevationDuration|duration|激活角色的最低持续时间。 必需。|
-|notificationToUserOnElevation|布尔|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|布尔|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必需。|
-|approvalOnElevation|布尔|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必需。|
+|maxElavationDuration|duration|激活角色的最长持续时间。 必填。|
+|mfaOnElevation|布尔|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必填。|
+|minElevationDuration|duration|激活角色的最低持续时间。 必填。|
+|notificationToUserOnElevation|布尔|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必填。|
+|ticketingInfoOnElevation|布尔|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必填。|
+|approvalOnElevation|布尔|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必填。|
 |approverIds|array|审批 Id，如果需要激活审核的列表。|
 
 ## <a name="response"></a>响应

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointSiteUsagePages'
 description: 获取跨所有网站浏览的页面数。
-ms.openlocfilehash: 87ea58aca6175b060ad3923e207eb947b1a6e402
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f495f3c0dc311e1a0260df5375f93940bffd95bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850188"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 

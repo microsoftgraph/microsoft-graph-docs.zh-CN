@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToSectionGroup'
 description: 将分区复制到特定分区组。
-ms.openlocfilehash: c73f24084c26d8b4c715ab164267bbc41c74ceb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58907c479096843cdde82ab27eeb318a00fcd32f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858679"
 ---
 # <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
 
@@ -42,7 +43,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供包含操作所需参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |siteCollectionId|字符串|若要将复制到的 SharePoint 网站的 id。 仅当将复制到 Office 365 团队网站使用。|
 |siteId|字符串|SharePoint 网站复制到的 id。 仅当将复制到 Office 365 团队网站使用。|

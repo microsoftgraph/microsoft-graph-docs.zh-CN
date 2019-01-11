@@ -2,12 +2,13 @@
 title: 通道资源类型
 description: '频道是团队中的邮件的集合。 '
 author: nkramer
-ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826563"
 ---
 # <a name="channel-resource-type"></a>通道资源类型
 
@@ -34,7 +35,7 @@ ms.locfileid: "27337084"
 |id|字符串|通道的唯一标识符。 只读。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |选项卡|[teamsTab](../resources/teamstab.md)集合|在进入频道的所有选项卡的集合。 导航属性。|
 

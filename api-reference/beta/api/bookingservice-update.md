@@ -1,12 +1,13 @@
 ---
 title: 更新 bookingservice
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: e39ad73b7f9acf2337db517e67895bc4601598a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838918"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -43,11 +44,11 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
-|defaultPrice|双精度数|该服务默认货币价格。|
+|defaultPrice|Double|该服务默认货币价格。|
 |defaultPriceType|string|负责服务的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md)集合|默认设置的该服务的约会的提醒。 此属性的值时，可仅读取此**bookingService**由其 id。|
 |说明|字符串|服务的文本说明。|

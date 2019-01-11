@@ -2,12 +2,13 @@
 title: 更新区域
 description: 更新 range 对象的属性。
 author: lumine2008
-ms.openlocfilehash: de084bd15ad448d6723b62fde4ea7761e2b5607a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e92138aca64df0b39ee5afc04adeba2ab9f9eae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846002"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -31,7 +32,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

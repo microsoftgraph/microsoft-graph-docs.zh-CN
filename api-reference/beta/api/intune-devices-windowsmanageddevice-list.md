@@ -2,12 +2,13 @@
 title: 列表 windowsManagedDevices
 description: 列出属性和 windowsManagedDevice 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 77edfc8bfa5d7deaa958f9eb1088e7a5cf50baba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e54387f05261d17e0337ebae8de1dd9ec280ca1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823448"
 ---
 # <a name="list-windowsmanageddevices"></a>列表 windowsManagedDevices
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

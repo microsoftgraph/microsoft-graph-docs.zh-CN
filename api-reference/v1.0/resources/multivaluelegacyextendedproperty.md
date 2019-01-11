@@ -1,12 +1,13 @@
 ---
 title: multiValueLegacyExtendedProperty 资源类型
 description: 包含值集合的扩展属性。
-ms.openlocfilehash: 9aa94465ca1a0fb30c4461b99336040c72e2c5c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827032"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty 资源类型
 

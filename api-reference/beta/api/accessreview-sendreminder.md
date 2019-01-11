@@ -1,12 +1,13 @@
 ---
 title: SendReminder accessReview
 description: '在 Azure AD 中访问审阅功能，向审阅者的当前活动 accessReview 发送提醒。  目标对象可以是一次性访问回顾或定期访问评审的实例。 '
-ms.openlocfilehash: fd8c204db207ae9f58c4dd5e6337e65efe160824
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3fa5c648a1b159a54560ad03f70a4f0251624119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844196"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -31,7 +32,7 @@ POST /accessReviews('<id>')/sendReminder()
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

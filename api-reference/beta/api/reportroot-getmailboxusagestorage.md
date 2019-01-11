@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageStorage'
 description: 获取组织使用的存储空间。
-ms.openlocfilehash: b2237280059bdb565b53b14891b5cd5580a42528
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d98fb1dd959e0e9d401a46f023dfaedfd89f3303
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816973"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 

@@ -1,12 +1,13 @@
 ---
 title: attachment 资源类型
 description: 您可以将相关的内容添加到事件，
-ms.openlocfilehash: f0bb9ec37d2fe3d034dce9532ad316d371c4937e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5648194b0f636c8757d1b20c492abc099dce377d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842789"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 

@@ -2,12 +2,13 @@
 title: 更新 remoteAssistancePartner
 description: 更新 remoteAssistancePartner 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 119e5ab22ccd779635b66c06479024a4fc3f1ea6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca479230d24e58133865e9ff718a867cb7b969fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317309"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853457"
 ---
 # <a name="update-remoteassistancepartner"></a>更新 remoteAssistancePartner
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

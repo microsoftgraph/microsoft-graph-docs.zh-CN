@@ -2,12 +2,13 @@
 title: userSecurityState 资源类型
 description: 包含状态信息的用户帐户。
 author: dkershaw10
-ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d972ee674fbd1553e2b76a52876bc50274466c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845848"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
 
@@ -15,13 +16,13 @@ ms.locfileid: "27319486"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |aadUserId|字符串|AAD 用户对象标识符 (GUID)-表示物理/多 account 用户实体。|
 |accountName|字符串|（没有 Active Directory 域和 DNS 域） 的用户帐户的帐户名 (也称为`mailNickName`)。|
 |domainName|String|NetBIOS/Active Directory 域的用户帐户 （即域 \ 帐户格式）。|
 |emailRole|emailRole|电子邮件相关的通知的用户帐户的电子邮件角色。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|Boolean|指示用户是否可以通过 VPN 登录。|
+|isVpn|布尔|指示用户是否可以通过 VPN 登录。|
 |logonDateTime|DateTimeOffset|在登录所发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |logonId|字符串|用户登录 id。|
 |logonIp|字符串|登录请求源自的 IP 地址。|

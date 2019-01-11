@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: 获取组织中的用户邮箱总数和报表周期内的每日活跃邮箱数。 如果用户发送或阅读任何电子邮件，则将邮箱视为活跃邮箱。
-ms.openlocfilehash: 62165d7571ae90cf560d312b0220ea2a1bf560b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1b15824ab5313d1c581509936a84f5af2daee84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856285"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

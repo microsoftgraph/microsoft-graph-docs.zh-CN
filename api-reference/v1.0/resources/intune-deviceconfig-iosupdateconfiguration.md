@@ -1,12 +1,13 @@
 ---
 title: iosUpdateConfiguration 资源类型
 description: IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更新。
-ms.openlocfilehash: 9c04f0a5866fcbbb62397e0d4e8e04d038648484
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 32d3350675ebcaa5bcb364262f5de053bfc23ae0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816679"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 

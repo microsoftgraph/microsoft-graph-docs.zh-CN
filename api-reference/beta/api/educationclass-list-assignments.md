@@ -2,12 +2,13 @@
 title: 列表分配
 description: 检索的 assignment 对象的列表。 教师允许查看类的所有工作分配对象。 学生只能查看分配给他们的工作分配。
 author: mmast-msft
-ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361402"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823917"
 ---
 # <a name="list-assignments"></a>列表分配
 

@@ -2,12 +2,13 @@
 title: deviceEnrollmentLimitConfiguration 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: e0b3ad685f012b6f1a84164995e5dc5090691239
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19f0c37b39a247f8ef4935ac0f3b925ba71f601c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839128"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>deviceEnrollmentLimitConfiguration 资源类型
 

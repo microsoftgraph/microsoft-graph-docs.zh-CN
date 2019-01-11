@@ -2,12 +2,13 @@
 title: 更新 importedDeviceIdentity
 description: 更新 importedDeviceIdentity 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 6910eedf448c85d919da74f5d4e04d11213cf6d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9072c0b5e8a01c72352b9250b4167cdb5ec190fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838428"
 ---
 # <a name="update-importeddeviceidentity"></a>更新 importedDeviceIdentity
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

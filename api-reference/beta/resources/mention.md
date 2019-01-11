@@ -2,12 +2,13 @@
 title: 有提及资源类型
 description: 代表到个人基于此人的电子邮件地址的通知。
 author: simonhult
-ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858427"
 ---
 # <a name="mention-resource-type"></a>有提及资源类型
 
@@ -59,7 +60,7 @@ ms.locfileid: "27334227"
 |createdDateTime  |DateTimeOffset |日期和时间在客户端上创建提及的。 |
 |deepLink | 字符串 | 深入 web 链接到的资源实例中提及的上下文。 可选。 不使用和默认设置为 null 的**消息**。 |
 |id | 字符串| 资源实例中提及的唯一标识符。|
-|提到 | [emailAddress](../resources/emailaddress.md) | 被提及人员的电子邮件的信息。 必需。 |
+|提到 | [emailAddress](../resources/emailaddress.md) | 被提及人员的电子邮件的信息。 必填。 |
 |mentionText | 字符串 | 可选。 不使用和默认设置为 null 的**消息**。 获取提及中一条消息，请参阅改为邮件的**bodyPreview**属性。 |
 |serverCreatedDateTime | DateTimeOffset | 日期和时间是在服务器上创建提及的。 可选。 不使用和默认设置为 null 的**消息**。 |
 

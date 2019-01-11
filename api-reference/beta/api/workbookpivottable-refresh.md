@@ -2,12 +2,13 @@
 title: 'workbookPivotTable: refresh'
 description: 刷新数据透视表。
 author: lumine2008
-ms.openlocfilehash: 393f1710b82cdeed76cb0df5782d656ebb0ca9f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1aed119d83514973665c43ebe91614b175f02d60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838484"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -32,7 +33,7 @@ ms.locfileid: "27355858"
 POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

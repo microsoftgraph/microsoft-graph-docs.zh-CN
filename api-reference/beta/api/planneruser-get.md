@@ -1,12 +1,13 @@
 ---
 title: 获取 plannerUser
 description: '检索的属性和 plannerUser 对象的关系。 返回的属性包括用户的收藏夹计划和最近查看的计划。 '
-ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810638"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 

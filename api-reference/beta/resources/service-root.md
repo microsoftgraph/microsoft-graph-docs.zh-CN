@@ -1,12 +1,13 @@
 ---
 title: 服务根
 description: 2015-10-25 14:57:30 UTC-->
-ms.openlocfilehash: 708b16b5df6be826e23fb4c4e2314c788f85ee85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 41b47a58e52653278d225384c9e2ef1a6cb60794
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850972"
 ---
 # <a name="service-root"></a>服务根
 

@@ -1,19 +1,20 @@
 ---
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
-ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827326"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
 介绍某个时间点的日期、时间和时区。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |dateTime|String|日期和时间组合表示形式的单个时间点 (`<date>T<time>`)。|
 |timeZone|String|以下时区名称之一。|
