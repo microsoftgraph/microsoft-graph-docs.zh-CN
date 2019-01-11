@@ -2,28 +2,29 @@
 title: 列出警报
 description: 检索警报对象的列表。
 author: Preetikr
-ms.openlocfilehash: 64589fa04d4b6b11fb2ec435f6531df2e2f58a8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: eac124cfd49f333c2c44053f21894f90f6d47582
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324029"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859050"
 ---
-# <a name="list-alerts"></a><span data-ttu-id="d9598-103">列出警报</span><span class="sxs-lookup"><span data-stu-id="d9598-103">List alerts</span></span>
+# <a name="list-alerts"></a><span data-ttu-id="d6384-103">列出警报</span><span class="sxs-lookup"><span data-stu-id="d6384-103">List alerts</span></span>
 
-<span data-ttu-id="d9598-104">检索[通知](../resources/alert.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="d9598-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
+<span data-ttu-id="d6384-104">检索[通知](../resources/alert.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="d6384-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9598-105">权限</span><span class="sxs-lookup"><span data-stu-id="d9598-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d6384-105">权限</span><span class="sxs-lookup"><span data-stu-id="d6384-105">Permissions</span></span>
 
-<span data-ttu-id="d9598-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d9598-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d6384-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d6384-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9598-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d9598-108">Permission type</span></span>      | <span data-ttu-id="d9598-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d9598-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d6384-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d6384-108">Permission type</span></span>      | <span data-ttu-id="d6384-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d6384-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d9598-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d9598-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="d9598-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9598-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
-|<span data-ttu-id="d9598-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d9598-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="d9598-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9598-113">Not supported.</span></span>  |
-|<span data-ttu-id="d9598-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d9598-114">Application</span></span> | <span data-ttu-id="d9598-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9598-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="d6384-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d6384-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="d6384-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6384-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d6384-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d6384-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="d6384-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d6384-113">Not supported.</span></span>  |
+|<span data-ttu-id="d6384-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d6384-114">Application</span></span> | <span data-ttu-id="d6384-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6384-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d9598-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d9598-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6384-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d6384-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,40 +36,40 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d9598-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d9598-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d6384-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d6384-117">Optional query parameters</span></span>
 
-<span data-ttu-id="d9598-118">此方法支持以下[OData 查询参数](/graph/query-parameters)以帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="d9598-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="d6384-118">此方法支持以下[OData 查询参数](/graph/query-parameters)以帮助自定义响应：</span><span class="sxs-lookup"><span data-stu-id="d6384-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- <span data-ttu-id="d9598-119">`$top`将返回从每个安全 API 提供程序的聚合的顶级结果。</span><span class="sxs-lookup"><span data-stu-id="d9598-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
+- <span data-ttu-id="d6384-119">`$top`将返回从每个安全 API 提供程序的聚合的顶级结果。</span><span class="sxs-lookup"><span data-stu-id="d6384-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
 
-<span data-ttu-id="d9598-120">若要返回替代属性集，请使用 OData`$select`查询参数指定的所需的**通知**属性集。</span><span class="sxs-lookup"><span data-stu-id="d9598-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="d9598-121">例如，若要返回**assignedTo**、**类别**和**严重性**属性，请添加以下到您的查询： `$select=assignedTo,category,severity`。</span><span class="sxs-lookup"><span data-stu-id="d9598-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
+<span data-ttu-id="d6384-120">若要返回替代属性集，请使用 OData`$select`查询参数指定的所需的**通知**属性集。</span><span class="sxs-lookup"><span data-stu-id="d6384-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="d6384-121">例如，若要返回**assignedTo**、**类别**和**严重性**属性，请添加以下到您的查询： `$select=assignedTo,category,severity`。</span><span class="sxs-lookup"><span data-stu-id="d6384-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
 
-> <span data-ttu-id="d9598-122">**注意：**`$top`的限制为 1000年警报和组合`$top`  +  `$skip`不能超过 6000 通知。</span><span class="sxs-lookup"><span data-stu-id="d9598-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="d9598-123">例如，`/security/alerts?$top=10&$skip=5990`会返回`200 OK`响应代码，但`/security/alerts?$top=10&$skip=5991`将返回`400 Bad Request`响应代码。</span><span class="sxs-lookup"><span data-stu-id="d9598-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="d9598-124">有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="d9598-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+> <span data-ttu-id="d6384-122">**注意：**`$top`的限制为 1000年警报和组合`$top`  +  `$skip`不能超过 6000 通知。</span><span class="sxs-lookup"><span data-stu-id="d6384-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="d6384-123">例如，`/security/alerts?$top=10&$skip=5990`会返回`200 OK`响应代码，但`/security/alerts?$top=10&$skip=5991`将返回`400 Bad Request`响应代码。</span><span class="sxs-lookup"><span data-stu-id="d6384-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="d6384-124">有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="d6384-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d9598-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="d9598-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d6384-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="d6384-125">Request headers</span></span>
 
-| <span data-ttu-id="d9598-126">Name</span><span class="sxs-lookup"><span data-stu-id="d9598-126">Name</span></span>      |<span data-ttu-id="d9598-127">说明</span><span class="sxs-lookup"><span data-stu-id="d9598-127">Description</span></span>|
+| <span data-ttu-id="d6384-126">名称</span><span class="sxs-lookup"><span data-stu-id="d6384-126">Name</span></span>      |<span data-ttu-id="d6384-127">说明</span><span class="sxs-lookup"><span data-stu-id="d6384-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d9598-128">授权</span><span class="sxs-lookup"><span data-stu-id="d9598-128">Authorization</span></span>  | <span data-ttu-id="d9598-p104">Bearer {code}。必需。</span><span class="sxs-lookup"><span data-stu-id="d9598-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="d6384-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6384-128">Authorization</span></span>  | <span data-ttu-id="d6384-p104">Bearer {code}。必需。</span><span class="sxs-lookup"><span data-stu-id="d6384-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9598-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="d9598-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6384-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="d6384-131">Request body</span></span>
 
-<span data-ttu-id="d9598-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d9598-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="d9598-133">在请求正文将被忽略。</span><span class="sxs-lookup"><span data-stu-id="d9598-133">The request body will be ignored.</span></span>
+<span data-ttu-id="d6384-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d6384-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="d6384-133">在请求正文将被忽略。</span><span class="sxs-lookup"><span data-stu-id="d6384-133">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9598-134">响应</span><span class="sxs-lookup"><span data-stu-id="d9598-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d6384-134">响应</span><span class="sxs-lookup"><span data-stu-id="d6384-134">Response</span></span>
 
-<span data-ttu-id="d9598-135">如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象的集合。</span><span class="sxs-lookup"><span data-stu-id="d9598-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="d9598-136">如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。</span><span class="sxs-lookup"><span data-stu-id="d9598-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="d9598-137">有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="d9598-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="d6384-135">如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象的集合。</span><span class="sxs-lookup"><span data-stu-id="d6384-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="d6384-136">如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。</span><span class="sxs-lookup"><span data-stu-id="d6384-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="d6384-137">有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="d6384-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9598-138">示例</span><span class="sxs-lookup"><span data-stu-id="d9598-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6384-138">示例</span><span class="sxs-lookup"><span data-stu-id="d6384-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9598-139">请求</span><span class="sxs-lookup"><span data-stu-id="d9598-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d6384-139">请求</span><span class="sxs-lookup"><span data-stu-id="d6384-139">Request</span></span>
 
-<span data-ttu-id="d9598-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d9598-140">The following is an example of the request.</span></span>
+<span data-ttu-id="d6384-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d6384-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -78,11 +79,11 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
-### <a name="response"></a><span data-ttu-id="d9598-141">响应</span><span class="sxs-lookup"><span data-stu-id="d9598-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d6384-141">响应</span><span class="sxs-lookup"><span data-stu-id="d6384-141">Response</span></span>
 
-<span data-ttu-id="d9598-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d9598-142">The following is an example of the response.</span></span>
+<span data-ttu-id="d6384-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d6384-142">The following is an example of the response.</span></span>
 
-><span data-ttu-id="d9598-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d9598-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d6384-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d6384-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
