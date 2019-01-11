@@ -2,12 +2,13 @@
 title: 获取 mdmWindowsInformationProtectionPolicy
 description: 读取 mdmWindowsInformationProtectionPolicy 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 823e54124077f0485e8c86b18304852d0ef0cf8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f9745297ea04001e403d3d0ba331cea79d7fa81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809434"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>获取 mdmWindowsInformationProtectionPolicy
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

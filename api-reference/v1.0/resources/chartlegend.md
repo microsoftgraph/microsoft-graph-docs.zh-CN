@@ -2,12 +2,13 @@
 title: ChartLegend 资源类型
 description: 表示图表中的图例。
 author: lumine2008
-ms.openlocfilehash: 27dc0ea751cff47adaa077f824f619630341cdc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bb81eef7c78d952a71b60cec787413308b10833
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326087"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813410"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
 

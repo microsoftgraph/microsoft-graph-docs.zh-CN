@@ -2,12 +2,13 @@
 title: revokeAppleVppLicenses 操作
 description: 取消所有设备的 Apple Vpp 许可证
 author: tfitzmac
-ms.openlocfilehash: 03a38821a4ca7c8675dbd97d89b157ae6dd88fd4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 790147376b60708292ff4aaa542876f0ba1b44ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812129"
 ---
 # <a name="revokeapplevpplicenses-action"></a>revokeAppleVppLicenses 操作
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 获取 deviceComplianceScheduledActionForRule
 description: 读取 deviceComplianceScheduledActionForRule 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 03e637e7a496bc49d30709c5588b1551105fca5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 151648d33c77a5d60183d4da7b92c7e81ae93e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812458"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>获取 deviceComplianceScheduledActionForRule
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: 联系人资源类型
 description: 联系人是 Outlook 中的一个项目，你可以在这里组织和保存有关你通信的人员和组织的信息。联系人包含在联系人文件夹中。
 author: angelgolfer-ms
-ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 933d8a8fb5f55df487b90b537bed91d4ff79146b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815454"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 

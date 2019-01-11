@@ -1,13 +1,14 @@
 ---
-title: 权限
+title: Permissions
 description: '更新应用程序之前发布到 Microsoft 团队应用程序目录。 '
 author: nkramer
-ms.openlocfilehash: ac1e59afe68823c52ef088c058fa7be56a4c8f5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 305711206200e7f515ecdb4caff290e8a5a27269
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353723"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814642"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>更新应用程序发布到组织的应用程序目录
 

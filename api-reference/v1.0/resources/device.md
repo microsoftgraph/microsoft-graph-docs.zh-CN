@@ -1,12 +1,13 @@
 ---
 title: 设备资源类型
 description: 表示在组织中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
-ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811709"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27191163"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。必需。|
+|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。必需。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。 |
 |deviceId|string| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |

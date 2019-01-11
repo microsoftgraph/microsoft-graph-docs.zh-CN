@@ -1,12 +1,13 @@
 ---
 title: 更新 bookingappointment
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: fd63d11bf7a33751b6a271c57d0f871b5e6d474f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27044006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809679"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
@@ -35,7 +36,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |customerEmailAddress|字符串|预订约会[bookingCustomer](../resources/bookingcustomer.md) SMTP 地址。|
 |customerId|字符串|该约会的[bookingCustomer](../resources/bookingcustomer.md)的 ID。 如果未指定 ID 创建约会时，将创建一个新的**bookingCustomer**对象。 设置后，您应考虑**customerId**变。|
@@ -45,7 +46,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |customerPhone|字符串|客户的电话号码。|
 |duration|Duration|约会中[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式的长度。 |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和约会的结束的时区。|
-|invoiceAmount|双精度数|记帐的发票量。|
+|invoiceAmount|Double|记帐的发票量。|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和此约会的发票的时区。|
 |invoiceId|字符串|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
@@ -53,7 +54,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |optOutOfCustomerEmail|布尔|True 表示该约会的[bookingCustomer](../resources/bookingcustomer.md)不希望接收该约会的确认。|
 |后|Duration|保留后的清理，例如约会结束的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。 |
 |缓冲区|Duration|保留之前的准备，例如约会开始的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。|
-|价格|双精度数|指定[bookingService](../resources/bookingservice.md)约会正则价格。|
+|价格|Double|指定[bookingService](../resources/bookingservice.md)约会正则价格。|
 |priceType|string| 为服务定价结构提供灵活性设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |提醒|[bookingReminder](../resources/bookingreminder.md)集合|客户提醒发送该约会的集合。 此属性的值时，可仅读取此**bookingAppointment**由其 id。|
 |selfServiceAppointmentId|字符串|约会，如果约会的已创建直接通过计划页上的客户而不是由员工成员客户替的其他跟踪 ID。|

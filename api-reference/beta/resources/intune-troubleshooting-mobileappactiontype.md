@@ -2,12 +2,13 @@
 title: mobileAppActionType 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 1116231da1e4db409ceefd0e3394fc96159149fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39be7b8bb7899f0949765bb63ae9efa3df4ebab7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808937"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347416"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的结果。|
 |installCommandSent|1|发送应用程序安装命令。|

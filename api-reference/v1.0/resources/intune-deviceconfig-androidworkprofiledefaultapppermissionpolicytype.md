@@ -2,12 +2,13 @@
 title: androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 description: Android 工作配置文件默认应用程序权限策略类型。
 author: tfitzmac
-ms.openlocfilehash: 158b12241eabd71c48f07dc5ab42376e992a0193
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8df9621db55ae5bd74c12fc7e35a920b88bd39df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814187"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27347073"
 
 Android 工作配置文件默认应用程序权限策略类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，没有用途。|
 |提示|1|提示。|

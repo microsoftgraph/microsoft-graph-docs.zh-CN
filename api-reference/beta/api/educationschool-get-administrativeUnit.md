@@ -1,12 +1,13 @@
 ---
 title: Get administrativeUnit
 description: 检索对应于此**educationSchool**简单目录**administrativeUnit** 。
-ms.openlocfilehash: 49ac05b44bc89f827091c3b846885a58cb7b8956
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a088afb50170d1fe43d61dafdd9a711249fddf4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813186"
 ---
 # <a name="get-administrativeunit"></a>Get administrativeUnit
 

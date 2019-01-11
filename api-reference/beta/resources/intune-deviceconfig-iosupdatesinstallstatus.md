@@ -2,12 +2,13 @@
 title: iosUpdatesInstallStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 6d92c2f532cca64d7e0eaf993b984e8a90fe6f8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3647c1e783d4f75d2b60caba8a795cef5703145
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814824"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 

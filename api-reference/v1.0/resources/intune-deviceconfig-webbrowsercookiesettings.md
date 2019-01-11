@@ -2,12 +2,13 @@
 title: webBrowserCookieSettings 枚举类型
 description: Web 浏览器 Cookie 设置。
 author: tfitzmac
-ms.openlocfilehash: 10125208755409cf9917322428d29a49b87ed93f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e42adcf7145dce1328c3138a4d5e6ad178cb9b20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809546"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27303764"
 
 Web 浏览器 Cookie 设置。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值，没有用途。|
 |blockAlways|1|始终阻止 cookie。|

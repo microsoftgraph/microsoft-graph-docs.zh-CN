@@ -2,12 +2,13 @@
 title: 删除 deviceConfigurationAssignment
 description: 删除 deviceConfigurationAssignment。
 author: tfitzmac
-ms.openlocfilehash: ba5b9df9807eddd8bf634e2148baf43249592345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99a6eb5e4f32448b654a484c4e8663e46ea4e42f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812899"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>删除 deviceConfigurationAssignment
 
@@ -46,7 +47,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

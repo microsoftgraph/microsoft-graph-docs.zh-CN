@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 可恢复的文件上传
-ms.openlocfilehash: aa62d92700ebe483fd23c7b3d7c2037c5b9950c0
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: 84c16f83113452d920c6c2f13a0e0f37577aa0f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812087"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -81,9 +82,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | String             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 

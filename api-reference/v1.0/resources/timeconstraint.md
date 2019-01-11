@@ -1,12 +1,13 @@
 ---
 title: timeConstraint 资源类型
 description: 根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
-ms.openlocfilehash: 82ab18eb09201236f3227c7dd0660519092a3133
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815090"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 

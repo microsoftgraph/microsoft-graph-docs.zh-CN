@@ -1,12 +1,13 @@
 ---
 title: androidCustomConfiguration 资源类型
 description: 本主题提供由 androidCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: 0251c0f096b4788d968742dc87914c0c1193ce22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f707f8369cfd1b56dd3c0a7d941a2ab9b7c12dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811079"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration 资源类型
 

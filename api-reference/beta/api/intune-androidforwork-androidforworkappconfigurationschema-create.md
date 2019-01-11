@@ -2,12 +2,13 @@
 title: 创建 androidForWorkAppConfigurationSchema
 description: 创建新的 androidForWorkAppConfigurationSchema 对象。
 author: tfitzmac
-ms.openlocfilehash: 92974019e98a1dc8403d5672f631de7849caebc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b4c656278fddf6badb6f0894e0f2deeb3653d06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809077"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

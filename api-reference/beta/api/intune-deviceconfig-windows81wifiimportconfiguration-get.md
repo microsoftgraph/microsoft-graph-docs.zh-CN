@@ -2,12 +2,13 @@
 title: 获取 windows81WifiImportConfiguration
 description: 读取属性和 windows81WifiImportConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: e0e5e40faf1d4fb888223d5692a5596e86a17fda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66f8f3b92291d6ae5316541b75db135b3cef95db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812066"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>获取 windows81WifiImportConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

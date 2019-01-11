@@ -2,12 +2,13 @@
 title: 'Range: unmerge'
 description: 将范围单元格取消合并为各个单元格。
 author: lumine2008
-ms.openlocfilehash: 2b68ce5a034a274b1861d68db7a216cd797fa6c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 62cd7325941d5014d9bc04e64309e533363fe84b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812437"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -30,7 +31,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

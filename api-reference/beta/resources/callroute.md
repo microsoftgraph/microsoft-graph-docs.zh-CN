@@ -2,12 +2,13 @@
 title: callRoute 资源类型
 description: CallRoute 类型。
 author: VinodRavichandran
-ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e417a7e814b5a2a80da1fa9cd7a551f82e0c37db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815083"
 ---
 # <a name="callroute-resource-type"></a>callRoute 资源类型
 
@@ -17,7 +18,7 @@ CallRoute 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                          | 说明                                                  |
+| 属性            | 类型                          | Description                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | 最终               | [identitySet](identityset.md) | 解析为呼叫中的标识。               |
 | 源语言            | [identitySet](identityset.md) | 最初在呼叫中使用的标识。           |

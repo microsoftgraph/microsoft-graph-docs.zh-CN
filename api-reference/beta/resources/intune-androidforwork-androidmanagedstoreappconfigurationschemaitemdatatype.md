@@ -1,12 +1,13 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 description: 配置项目内 Android 应用程序的自定义配置架构数据类型
-ms.openlocfilehash: 4cfaeb1ba02746c7f3307a7d388a2c6a503d3d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814873"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 
@@ -16,9 +17,9 @@ ms.locfileid: "27049031"
 
 配置项目内 Android 应用程序的自定义配置架构数据类型
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|bool|0|尚未记录|
+|布尔值|0|尚未记录|
 |integer|1|尚未记录|
 |string|2|尚未记录|
 |选择|3|尚未记录|

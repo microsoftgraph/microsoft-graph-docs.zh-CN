@@ -1,12 +1,13 @@
 ---
 title: 列出实例
 description: '获取指定的时间范围内的事件的实例 （匹配项）。 如果该事件是`SeriesMaster`类型，这将返回 '
-ms.openlocfilehash: 6a423efb2ff969e66ba54807c506a3b431b7ee32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 194d911b6c5ea05eb0d3f797287773c516da9ee3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811394"
 ---
 # <a name="list-instances"></a>列出实例
 

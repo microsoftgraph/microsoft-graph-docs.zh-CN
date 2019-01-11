@@ -1,12 +1,13 @@
 ---
 title: 组：unsubscribeByMail
 description: '调用此方法将阻止当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。 '
-ms.openlocfilehash: 8e5b6c88db6e55f777c7b2a9225731514796f9af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13f51b79d06deb9377d3f7c39838143375f399c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009056"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814572"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 调用此方法将阻止当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。 

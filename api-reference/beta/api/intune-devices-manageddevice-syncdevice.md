@@ -2,12 +2,13 @@
 title: syncDevice 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 43bd44ab25accd01f0c17d6dd1edabd3a716cfd6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fedb8b8c90c74895f1f625f8d62e754fc71457a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812598"
 ---
 # <a name="syncdevice-action"></a>syncDevice 操作
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

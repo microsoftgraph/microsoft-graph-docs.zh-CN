@@ -1,12 +1,13 @@
 ---
 title: userPFXCertificate 资源类型
 description: 封装用户的 PFX 证书所需的所有信息的实体。
-ms.openlocfilehash: 89040cafa976c88ce84cb8f73bc8a68e2cdfbdf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87516c48e53c8117c9efa119fb6cab62844e6b68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809994"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27045919"
 |providerName|字符串|用于加密此 blob 的加密提供程序。|
 |键名|字符串|用于加密 blob （在提供程序） 项的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|填充在加密/解密过程中使用提供程序的方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|二进制数|加密的 PFX blob。|
+|encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|日期/时间时此 PFX 证书已导入。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书时的日期/时间。|

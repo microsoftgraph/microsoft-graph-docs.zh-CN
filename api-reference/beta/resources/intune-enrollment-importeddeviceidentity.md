@@ -2,12 +2,13 @@
 title: importedDeviceIdentity 资源类型
 description: ImportedDeviceIdentity 资源表示预注册配置已预暂存设备的唯一的硬件标识。
 author: tfitzmac
-ms.openlocfilehash: f7b6b054eab3815203a208382a19fbd9974cfb37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c33069520913c7c750220ca8938459ba9bf96c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811667"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 

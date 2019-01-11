@@ -1,12 +1,13 @@
 ---
 title: 列出的客户
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: a46e8dcc39b69e8391829c176eb01d075d23fccf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71b873492d4a711f3510756ef644a834cdc7a042
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809567"
 ---
 # <a name="list-customers"></a>列出的客户
 

@@ -1,12 +1,13 @@
 ---
 title: agreementFileData 资源类型
 description: 代表 Azure Active Directory 的 blob (Azure AD) 使用条款使用协议文件。
-ms.openlocfilehash: 557725e14f4954f8b2c10112e1013beb71dda0be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 64de3a72ad648225f24429987f5729f76ed8a2e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045396"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815215"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27045396"
 ## <a name="properties"></a>属性
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-|data|二进制数|表示使用 PDF 文档中的条款的数据。 只读。|
+|data|Binary|表示使用 PDF 文档中的条款的数据。 此为只读属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -2,12 +2,13 @@
 title: 获取 windowsMobileMSI
 description: 读取 windowsMobileMSI 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: d73f2c0923a80e0417086cac7ca43e6598ce4460
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67c2fde6cc13b62fb012fa3b790d99f158b445a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809707"
 ---
 # <a name="get-windowsmobilemsi"></a>获取 windowsMobileMSI
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

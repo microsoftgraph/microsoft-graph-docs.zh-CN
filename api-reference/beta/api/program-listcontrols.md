@@ -1,12 +1,13 @@
 ---
 title: 对程序的列表 programControls
 description: 在 Azure AD 中访问审阅功能，列出所有 programControl 对象，链接到特定程序。
-ms.openlocfilehash: 78b28851dadfa1c24bc5bc0556b1c471e7bc09e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809331"
 ---
 # <a name="list-programcontrols-of-a-program"></a>对程序的列表 programControls
 
@@ -30,7 +31,7 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

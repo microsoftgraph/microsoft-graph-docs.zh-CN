@@ -2,12 +2,13 @@
 title: 获取音频路由组
 description: 检索的属性和 audioRoutingGroup 对象的关系。
 author: VinodRavichandran
-ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814180"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 

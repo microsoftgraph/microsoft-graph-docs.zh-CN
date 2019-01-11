@@ -2,12 +2,13 @@
 title: intendedPurpose 枚举类型
 description: PFX 导入选项。
 author: tfitzmac
-ms.openlocfilehash: 01332515afadc9b8779bdc5210009ed382cb352c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c698b9ca0de6e2a7ba52e85a7d5d2ae3434bf5f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356971"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814796"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27356971"
 
 PFX 导入选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |未分配|1|未分配|
 |smimeEncryption|2|SmimeEncryption|

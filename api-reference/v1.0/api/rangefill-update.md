@@ -2,12 +2,13 @@
 title: 更新 rangefill
 description: 更新 rangefill 对象的属性。
 author: lumine2008
-ms.openlocfilehash: 06af5291d2388a27873404c9f6e9cbf21e43b207
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 869f5c1624cd8ea3da859a57c386caeda1065995
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810092"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 
@@ -29,7 +30,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

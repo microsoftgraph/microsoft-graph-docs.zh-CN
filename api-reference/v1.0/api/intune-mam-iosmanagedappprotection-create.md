@@ -2,12 +2,13 @@
 title: 创建 iosManagedAppProtection
 description: 创建新的 iosManagedAppProtection 对象。
 author: tfitzmac
-ms.openlocfilehash: a6d20d9e51906e65fe205d2b852c49759dd6d572
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a117161b577fe8553805b913aeb94facbe38d252
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812059"
 ---
 # <a name="create-iosmanagedappprotection"></a>创建 iosManagedAppProtection
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/iosManagedAppProtections
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

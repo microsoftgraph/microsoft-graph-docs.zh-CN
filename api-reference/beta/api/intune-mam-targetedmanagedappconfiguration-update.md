@@ -2,12 +2,13 @@
 title: 更新 targetedManagedAppConfiguration
 description: 更新 targetedManagedAppConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 658a4710ae85c45a1480ee228e1713d2fa59a8e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77f75233ad54e9d26110640946be7cdab014cb8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813466"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>更新 targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

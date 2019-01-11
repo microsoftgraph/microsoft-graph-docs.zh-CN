@@ -1,12 +1,13 @@
 ---
 title: iosEasEmailProfileConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示本机电子邮件客户端在 iOS 设备上的，与 Exchange server 通信和获取电子邮件、 联系人、 日历、 提醒和 notes。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
-ms.openlocfilehash: 4ce93ed8963a6ee82775adbfc8edd14a15b4188d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 32758fb8dd9aa02b93eb8129894f60a1fabce768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814992"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>iosEasEmailProfileConfiguration 资源类型
 
@@ -56,7 +57,7 @@ ms.locfileid: "27042802"
 |useOAuth|布尔|指定连接是否应使用 OAuth 进行身份验证。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

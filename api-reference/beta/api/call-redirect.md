@@ -2,12 +2,13 @@
 title: 呼叫： 重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
-ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380217"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809469"
 ---
 # <a name="call-redirect"></a>呼叫： 重定向
 
@@ -39,13 +40,13 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |目标|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
 |targetDisposition|字符串|可能的值是：`default`|
 |timeout|Int32|超时的重定向操作的秒数。|
-|maskCallee|Boolean|指示是否屏蔽被叫方。|
-|maskCaller|Boolean|指示是否屏蔽呼叫者。|
+|maskCallee|布尔|指示是否屏蔽被叫方。|
+|maskCaller|布尔|指示是否屏蔽呼叫者。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码

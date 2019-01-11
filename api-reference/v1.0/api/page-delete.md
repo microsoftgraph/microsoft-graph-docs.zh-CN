@@ -1,12 +1,13 @@
 ---
 title: 删除页面
 description: 删除 OneNote 页面。
-ms.openlocfilehash: 574fa3a84a3ca18a788035e4a90bcc833907014e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc2a4a9e809cb3a335c795a27cb5ffe35487a880
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810008"
 ---
 # <a name="delete-page"></a>删除页面
 

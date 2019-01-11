@@ -1,12 +1,13 @@
 ---
 title: directorySetting 资源类型
 description: 可以创建基于可用 directorySettingTemplates，并从其预设的默认值更改目录设置。 这些设置可以控制实体或功能行为，同时在租户范围级别或特定实体级别。 在租户范围和特定实体级别定义相同的设置后，特定实体级别设置可能会选择退出从租户范围的设置。  例如，租户范围的设置可能允许来宾要邀请的现有组的成员，但的特定组设置可能会选择退出，并且不允许来宾要邀请的组的成员。 当前定义的系统设置是仅控制 Office 组行为。
-ms.openlocfilehash: 4a807d22bfd5d6651b4064542d33fe285b637a3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2687df732896abfb8ecf3b0651682228b84fa17b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810134"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27045115"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|string|来自相关模板的此组设置的显示名称。 只读。|
+|displayName|string|来自相关模板的此组设置的显示名称。 此为只读属性。|
 |id|string| 这些设置的唯一标识符。只读。|
 |templateId|string| 用于创建此组设置的模板的唯一标识符。只读。|
 |values|[settingValue](settingvalue.md) 集合| 名称值对的集合。必须包含并设置模板中定义的所有设置。|

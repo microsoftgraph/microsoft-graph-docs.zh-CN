@@ -2,12 +2,13 @@
 title: shareForSchoolDataSyncService 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 11b7d890a6fd6d0199fcfbc099cef38eab414c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 12fea3192dc5aa1e4c2c2416565126d2b8b47fc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814061"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>shareForSchoolDataSyncService 操作
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/shareForSc
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

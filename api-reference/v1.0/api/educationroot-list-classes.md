@@ -2,12 +2,13 @@
 title: 列出课程
 description: '检索所有 class 对象的列表。 '
 author: mmast-msft
-ms.openlocfilehash: ecc6cc0735464515da885a68213eb600a042a0dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb0b199357f55d071dd5ec1a0f44422e2ecfeed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814600"
 ---
 # <a name="list-classes"></a>列出课程
 

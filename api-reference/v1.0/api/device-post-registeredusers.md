@@ -2,12 +2,13 @@
 title: 创建 registeredUser
 description: 添加设备的已注册用户。
 author: tfitzmac
-ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00adeaa417c538753121a322c7d6da634f680ade
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811856"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -30,7 +31,7 @@ POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

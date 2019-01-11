@@ -2,12 +2,13 @@
 title: resourceOperation 资源类型
 description: " 操作用于 MobileApp 资源分配给 AAD 安全组。  无法修改内置角色的资源操作。"
 author: tfitzmac
-ms.openlocfilehash: fa004e2f1f41ca03d4b505599ef36e3548c1ab67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811849"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 

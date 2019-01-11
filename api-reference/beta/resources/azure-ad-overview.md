@@ -1,12 +1,13 @@
 ---
 title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
 description: Azure Active Directory (Azure AD) 的 Microsoft Graph 提供 REST Api 来帮助管理您的组织、 资源和资产。
-ms.openlocfilehash: 85f44df36057220e4ea26eb8d9342e9fd1df5bb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ac4b927a8420cbf8d654dd7f02ca2c232f717296
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813620"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -17,7 +18,7 @@ ms.locfileid: "27305381"
 > **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
 
 
-## <a name="authorization"></a>授权
+## <a name="authorization"></a>Authorization
  
 若要对 Azure AD 资源调用 Microsoft Graph API，应用必须拥有适当的权限。许多已对 Azure AD 资源公开的 API 需要拥有 [_Directory_ 权限](/graph/permissions-reference#directory-permissions)之一。Directory 具有很多特权，始终需要征得管理员同意。 
 

@@ -2,12 +2,13 @@
 title: 创建 iosVppEBook
 description: 创建新的 iosVppEBook 对象。
 author: tfitzmac
-ms.openlocfilehash: 753e49af6b00124b18b687decbeee195e2e1ee1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c8946efab803393c349fb011b714b78a075dd69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815867"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

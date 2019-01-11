@@ -2,12 +2,13 @@
 title: deviceManagementScript 资源类型
 description: Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入设备上运行其 Powershell 脚本。 一次或定期，可以运行该脚本。
 author: tfitzmac
-ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811044"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -37,11 +38,11 @@ Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入�
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|日期和设备管理脚本上次修改的时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文中运行的设备管理脚本的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要签脚本签名。|
+|enforceSignatureCheck|布尔|指示是否需要签脚本签名。|
 |fileName|String|脚本文件的名称。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|说明|
+|关系|类型|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)集合|设备管理脚本的组分配列表。|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)集合|设备管理脚本的组分配列表。|

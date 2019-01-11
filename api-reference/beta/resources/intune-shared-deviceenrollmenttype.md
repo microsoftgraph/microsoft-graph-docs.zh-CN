@@ -2,12 +2,13 @@
 title: deviceEnrollmentType 枚举类型
 description: 将移动设备添加到管理的可能方式。
 author: tfitzmac
-ms.openlocfilehash: 4a7eaa63a59efe756fc2cb7216ddbe7384e4858c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d301c62b5e740976337ab98c5b1f4ea264eb860
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814425"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346982"
 
 将移动设备添加到管理的可能方式。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|默认值，注册类型不是收集的。|
 |userEnrollment|1|通过 BYOD 通道用户驱动的注册。|

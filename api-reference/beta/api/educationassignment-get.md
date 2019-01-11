@@ -2,12 +2,13 @@
 title: 获取 educationAssignment
 description: " 教师可以查看类中的所有工作分配。"
 author: dipakboyed
-ms.openlocfilehash: 384f99a48340e51c6d919b96471f31c9fbff27a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f10b9e422e99bde6012de75f2c6bb445abc178ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813487"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 

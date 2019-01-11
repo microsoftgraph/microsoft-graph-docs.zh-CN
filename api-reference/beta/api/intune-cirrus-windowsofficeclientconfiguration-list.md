@@ -2,12 +2,13 @@
 title: 列表 windowsOfficeClientConfigurations
 description: 列出属性和 windowsOfficeClientConfiguration 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: 256ad449a12c8188346110d4ba5b7510d9657898
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a34c33f015bf513d2da6aa17d2228a36dbeb2209
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813557"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>列表 windowsOfficeClientConfigurations
 
@@ -38,7 +39,7 @@ GET /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

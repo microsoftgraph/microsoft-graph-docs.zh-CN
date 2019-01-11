@@ -2,12 +2,13 @@
 title: 创建 educationSchool
 description: 创建学校。
 author: mmast-msft
-ms.openlocfilehash: c655108c993f9dbfd21483119f3a076b68784238
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fdc61d966b0b5bd05d9aee0e382df9dc410f829
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814761"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
 

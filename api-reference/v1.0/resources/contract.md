@@ -1,12 +1,13 @@
 ---
 title: 合同资源类型
 description: 表示合作伙伴租户与客户租户的现有合作伙伴关系。
-ms.openlocfilehash: 5058ea32946df677596dfb0e4502c6f9d4145ec2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c14f4a51cbab5625c16ef0f0e515fffd35619366
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812297"
 ---
 # <a name="contract-resource-type"></a>合同资源类型
 表示合作伙伴租户与客户租户的现有合作伙伴关系。

@@ -2,12 +2,13 @@
 title: Add attachment
 description: '使用此 API 可将附件添加到邮件中。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 868ce046a37d027c675b005cef013892deffe2a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 089a82883adb1f0e5373d03a55fc0842b791aee3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314614"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814803"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -50,7 +51,7 @@ POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 | Content-Type | string  | 实体正文中的数据性质。必需。 |

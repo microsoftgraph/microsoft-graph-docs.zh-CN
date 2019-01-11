@@ -1,12 +1,13 @@
 ---
 title: 获取成员组
 description: 返回指定的 user、group 或 directory 对象所属的所有组。此函数是可传递的。
-ms.openlocfilehash: 370de10e1bba582270290877ba508ec4eebf47ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3556140aa0113c403f80d95e0a258be03f27125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814649"
 ---
 # <a name="get-member-groups"></a>获取成员组
 

@@ -1,12 +1,13 @@
 ---
 title: educationAssignment 资源类型
 description: '**EducationAssignment**资源表示任务或工作分配给类中的学生或团队成员属于其研究单位。 只有教师或团队所有者可以创建工作分配。 分配包含讲义和教师希望学生处理的任务。 每个学生工作分配的包含其教师要求打开任何工作关联的提交。 教师可以向打开由学生提交添加分数和反馈。'
-ms.openlocfilehash: c95197edd5f1ed821ca83171d74f0beee300eb1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812451"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -35,8 +36,8 @@ ms.locfileid: "27045142"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
-|allowLateSubmissions|布尔值| 标识是否学生可以提交后到期日期。 如果在创建期间未指定此属性，则默认为 true。 |
-|allowStudentsToAddResourcesToSubmission|布尔值| 标识学生是否可以将自己的资源添加到提交或如果他们只能修改添加教师资源。 |
+|allowLateSubmissions|布尔| 标识是否学生可以提交后到期日期。 如果在创建期间未指定此属性，则默认为 true。 |
+|allowStudentsToAddResourcesToSubmission|布尔| 标识学生是否可以将自己的资源添加到提交或如果他们只能修改添加教师资源。 |
 |assignDateTime|DateTimeOffset|当工作分配应处于活动状态日期。  如果将来，工作分配时不显示到学生此日期之前。  **时间戳**类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 哪些用户或整个类应收到提交对象后发布工作分配。 |
 |assignedDateTime|DateTimeOffset|工作分配发布到学生和工作分配的时刻显示学生日程表上。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

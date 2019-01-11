@@ -1,12 +1,13 @@
 ---
 title: 列出页面
 description: 从指定分区中检索 page 对象列表。
-ms.openlocfilehash: 75f6e2bbb03a00051d89f9af0f391ff0d7beaacb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e0dea1f9a786734222dbc4c93b059e22d4322bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813018"
 ---
 # <a name="list-pages"></a>列出页面
 

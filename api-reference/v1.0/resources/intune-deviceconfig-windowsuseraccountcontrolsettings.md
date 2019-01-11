@@ -2,12 +2,13 @@
 title: windowsUserAccountControlSettings 枚举类型
 description: 对于 Windows 用户帐户控制设置的可能值。
 author: tfitzmac
-ms.openlocfilehash: 33e9c914e9c816257cebbebe3754865c5ef17db7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02ea15b10b0eb6a789456d9f91e63ca3249a0933
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810659"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27358070"
 
 对于 Windows 用户帐户控制设置的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |alwaysNotify|1|始终通知。|

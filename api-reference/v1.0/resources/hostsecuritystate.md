@@ -1,12 +1,13 @@
 ---
 title: hostSecurityState 资源类型
 description: 包含状态信息 （包括设备、 计算机等） 的主机。
-ms.openlocfilehash: 3649553ae0f96222a09825e8819dfd0d199f8454
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010421"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816336"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
@@ -14,7 +15,7 @@ ms.locfileid: "27010421"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |fqdn|字符串|承载 FQDN （完全限定域名） (例如， `machine.company.com`)。|
 |isAzureAadJoined|布尔|如果主机是加入到 Azure Active Directory 域服务的域，则为 true。|

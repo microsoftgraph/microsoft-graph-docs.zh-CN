@@ -2,12 +2,13 @@
 title: 列表通道
 description: 检索此团队中的通道的列表。
 author: nkramer
-ms.openlocfilehash: 4a43c1abe07ce3c2e6c0f56c83151e5601f2824c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 23763e83f7e2e0d9333d39ebe439f8702b180f71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813522"
 ---
 # <a name="list-channels"></a>列表通道
 

@@ -1,12 +1,13 @@
 ---
 title: privilegedAccess 资源类型
 description: " 例如，`privilegedAccess/azureResources`代表 PIM 管理特权 Azure 资源的访问。"
-ms.openlocfilehash: af109c0cc355bfb282630d21cd02bb463b944f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f4166fb539d627730c68c7e039fd8d672ff4c785
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810050"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "27049101"
 
 
 ## <a name="relationships"></a>Relationships
-| 关系   | 类型                                         |说明|
+| 关系   | 类型                                         |Description|
 |:---------------|:---------------------------------------------|:----------|
 |resources       |[governanceResource](../resources/governanceresource.md)集合            |提供程序的资源的集合。|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)集合|提供程序的角色分配的集合。|

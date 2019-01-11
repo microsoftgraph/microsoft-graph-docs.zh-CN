@@ -1,12 +1,13 @@
 ---
 title: androidForWorkMobileAppConfiguration 资源类型
 description: 包含的属性、 继承的属性和 AFW 移动应用程序配置的操作。
-ms.openlocfilehash: d6d8191f4cd73efd1d11ac3bc9f799350204d9cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c8c6891e76908b4e041f5ef5fe7080d9d7a6894c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810505"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration 资源类型
 

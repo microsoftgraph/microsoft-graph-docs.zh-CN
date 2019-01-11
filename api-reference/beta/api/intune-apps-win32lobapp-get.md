@@ -2,12 +2,13 @@
 title: 获取 win32LobApp
 description: 读取属性和 win32LobApp 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: f4ca14ac3205cd4ede825e8817260b815606cf59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f9dc2e655d4c5bcf28840365e8ef26681518ad1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813725"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -42,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

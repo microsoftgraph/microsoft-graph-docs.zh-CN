@@ -2,12 +2,13 @@
 title: hourlySchedule 资源类型
 description: 每小时运行计划的定期设备管理脚本。
 author: tfitzmac
-ms.openlocfilehash: e73ff542b7de780d16d9f2bd76c11c2d0f92e8ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f22cc44fdd9017ef6db6f014e4a9b756d46d034
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811289"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27317575"
 继承自[runSchedule](../resources/intune-devices-runschedule.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |interval|Int32|间隔中的小时数|
 

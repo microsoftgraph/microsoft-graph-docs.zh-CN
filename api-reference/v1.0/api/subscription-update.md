@@ -1,12 +1,13 @@
 ---
 title: 更新订阅
 description: 通过延长到期时间续订订阅。
-ms.openlocfilehash: 75b01a72310f9e9d227f4d185d13f6ee7dfdf835
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0804421c2e178d176975317ba82bb0aac0ae212
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809714"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -24,8 +25,8 @@ ms.locfileid: "27008722"
 | Conversations               | Group.Read.All      |
 | Events                      | Calendars.Read      |
 | Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| 组                      | Group.Read.All      |
+| 用户                       | User.Read.All       |
 | Drive（用户的 OneDrive）    | Files.ReadWrite     |
 | 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
 |安全警报| SecurityEvents.ReadWrite.All |

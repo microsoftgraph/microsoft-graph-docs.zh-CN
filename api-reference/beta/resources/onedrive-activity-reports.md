@@ -1,12 +1,13 @@
 ---
 title: OneDrive 活动报表
 description: 您可以获取许可使用 OneDrive 看它们与 OneDrive 上的文件的交互的每个用户的活动。 此外可帮助您了解协作事通过显示共享的文件数的级别。
-ms.openlocfilehash: cfcae36cad301c777eea4ede4532efda0ce13b39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc87eebeb7c0df1bd6d08a82fa67ccd6d9fa40a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814488"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive 活动报表
 

@@ -2,12 +2,13 @@
 title: 管理 Intune 中的资源访问证书
 description: 可以导入 Microsoft Graph API 用于 Intune 的 PFX 证书。
 author: tfitzmac
-ms.openlocfilehash: a97c8c6e9f819c4136c09faaf06e3e9979ac6cb8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78c4204a29438ab8f59b4c4b0fe35007a4ccce82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809903"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>管理 Intune 中的资源访问证书
 

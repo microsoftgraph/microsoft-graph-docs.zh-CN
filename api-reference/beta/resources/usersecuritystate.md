@@ -1,12 +1,13 @@
 ---
 title: userSecurityState 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: f530ac1a657b4049c17bdcdd40f1dd5ea734f278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd471b06f20327eb38734276ea0562ab35db6358
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810113"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27045163"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |aadUserId|字符串|AAD 用户对象标识符 (GUID)-表示物理/多 account 用户实体。|
 |accountName|字符串|（没有 Active Directory 域和 DNS 域） 的用户帐户的帐户名 (也称为`mailNickName`)。|

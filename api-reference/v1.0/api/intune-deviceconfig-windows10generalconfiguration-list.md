@@ -2,12 +2,13 @@
 title: 列出 windows10GeneralConfigurations
 description: 列出 windows10GeneralConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 5557a8bc16a1af01e1a024ee956caa1fbe2ed583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d988b02c7fce0c3ef11f0c4ac4b3c12360fff1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809665"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -1,12 +1,13 @@
 ---
 title: 获取 bookingBusiness
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 809bfad0685f595b4b8076210c6345760b22f3bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6df16d3c4dbb77c2e97e55fda1881a38c9270c22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809518"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 

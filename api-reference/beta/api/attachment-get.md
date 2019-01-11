@@ -1,12 +1,13 @@
 ---
 title: Get attachment
 description: 读取的属性和附件，附加到事件、 邮件、 Outlook 任务或公告的关系。
-ms.openlocfilehash: 040e6995a24fcff62e8e7f476afdc602a6c9617c
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 1618d7a8bd866bb36ee9e18475f6f9c40a8190e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771812"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809553"
 ---
 # <a name="get-attachment"></a>Get attachment
 

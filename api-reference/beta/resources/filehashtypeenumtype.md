@@ -1,12 +1,13 @@
 ---
 title: fileHashType 枚举
 description: 文件哈希类型的枚举。
-ms.openlocfilehash: fbaa390ee8c543d2ed7c77cc05a11b519df0da9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1c31aaea6c8cea40817efea61dc8654d3d17fae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816328"
 ---
 # <a name="filehashtype-enum"></a>fileHashType 枚举
 
@@ -16,7 +17,7 @@ ms.locfileid: "27042171"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的类型。|
 |sha1|1|SHA1 哈希值类型。|

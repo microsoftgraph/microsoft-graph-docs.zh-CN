@@ -2,12 +2,13 @@
 title: deviceConfigurationTargetedUserAndDevice 资源类型
 description: 冲突一设备配置策略的摘要。
 author: tfitzmac
-ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809623"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27345239"
 
 冲突一设备配置策略的摘要。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceId|String|签入中的设备 id。|
 |deviceName|String|签入中的设备的名称。|

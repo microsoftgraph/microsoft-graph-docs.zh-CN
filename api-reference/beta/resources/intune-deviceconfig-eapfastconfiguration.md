@@ -2,12 +2,13 @@
 title: eapFastConfiguration 枚举类型
 description: EAP FAST 配置的可用设置。
 author: tfitzmac
-ms.openlocfilehash: ba84adb86e9910df47bd236fd2bd348cbc9c8e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 499d6595980bcb6bca1ea93687399e8988a3bed7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811086"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326360"
 
 EAP FAST 配置的可用设置。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |noProtectedAccessCredential|0|使用 EAP-FAST 不受保护的访问凭据 (PAC)。|
 |useProtectedAccessCredential|1|使用受保护访问凭据 (PAC)。|

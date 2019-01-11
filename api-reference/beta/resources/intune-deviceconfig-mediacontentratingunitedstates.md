@@ -2,12 +2,13 @@
 title: mediaContentRatingUnitedStates 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: ee10df5dd5e3f915e166cb77e747f8b3f7cc2d37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8bce2e359627ede66f32d696c8a84d2ba9faccec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811653"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates 资源类型
 

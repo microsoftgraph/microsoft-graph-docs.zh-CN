@@ -2,12 +2,13 @@
 title: 获取 deviceManagement
 description: 读取 deviceManagement 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 65b13da27c16d6b4d9976eb2f7d0d326dfd872c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89156113d0b357bc0d7a76cadad8c2ab7e2e4b91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816266"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
@@ -53,7 +54,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

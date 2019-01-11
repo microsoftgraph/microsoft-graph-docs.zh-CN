@@ -2,12 +2,13 @@
 title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
 author: tfitzmac
-ms.openlocfilehash: c42a0e596fd30c23ebaf962d3648c8d80d77e0a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b01c71399016fcee2a5320c04dd20073f7d8673a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816245"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27358371"
 
 每周计划的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |日常|1|每天。|

@@ -1,12 +1,13 @@
 ---
 title: targetResourcePolicy 资源类型
 description: '指示已受影响的审核活动的策略。 派生 targetResource 资源。   '
-ms.openlocfilehash: 20486c535d0df4b3745f5cfc3414b320a9374075
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 355e6ac11741a2aa7aeb780bdac4b7be373092af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813137"
 ---
 # <a name="targetresourcepolicy-resource-type"></a>targetResourcePolicy 资源类型
 指示已受影响的审核活动的策略。 派生[targetResource](targetresource.md)资源。   
@@ -14,7 +15,7 @@ ms.locfileid: "27046754"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |policyType|字符串|指示已更改或已更改的设定的策略名称|
 

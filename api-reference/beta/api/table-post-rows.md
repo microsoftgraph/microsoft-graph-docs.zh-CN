@@ -1,12 +1,13 @@
 ---
 title: 创建 TableRow
 description: '向表末尾的行。 请注意 API 可以接受使用此 API 的多个行数据。 一次添加一个行可能导致性能下降。 建议的方法是批处理一起中单个呼叫，而不是以单个行插入行。 为了获得最佳结果，收集要插入的应用程序一侧，并执行单个行的行添加操作。 试验要确定的理想要使用一个 API 调用中的行数的行数。 '
-ms.openlocfilehash: c7a4340005f7eaea60d95c806475de92373e1364
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0b20c44952ecdd54794d58fda7295be9b71fc4ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813795"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 

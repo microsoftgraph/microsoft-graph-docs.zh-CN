@@ -1,12 +1,13 @@
 ---
 title: 更新警报
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: 9f8040220c64310a04293d43c0c31704c3f49261
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: efb9911eaeb9d980084c26ef329c7c837c9d04f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27049558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815076"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -44,13 +45,13 @@ PATCH /security/alerts/{alert_id}
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 **必须**正文包含`vendorInformation`属性与有效`provider`和`vendor`字段。 下表列出了可更新的通知的字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |assignedTo|字符串|分析师通知的名称分配给进行会审、 调查或修复。|
 |closedDateTime|DateTimeOffset|通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |comments|String 集合|分析师评论的警报 （客户警报管理）。|
 |反馈|alertFeedback 枚举|分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
-|状态|alertStatus 枚举|警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
+|status|alertStatus 枚举|警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
 |标记前添加的标记|String 集合|可以应用于通知和可以充当筛选条件 (例如，"HVA"，"看到) 的用户可定义标签。|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|包含有关安全产品/服务供应商、 提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。 **提供程序和供应商字段是必需的。**|
 

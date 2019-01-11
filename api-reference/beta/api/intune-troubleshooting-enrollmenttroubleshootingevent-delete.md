@@ -2,12 +2,13 @@
 title: 删除 enrollmentTroubleshootingEvent
 description: 删除 enrollmentTroubleshootingEvent。
 author: tfitzmac
-ms.openlocfilehash: b611c1761b5e357dafa78fe99e7465aa18f1b55b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9c9055c2b3e64c37729859dbc26d71f26c9fa3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816203"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>删除 enrollmentTroubleshootingEvent
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

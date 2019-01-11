@@ -2,12 +2,13 @@
 title: windows10VpnAuthenticationMethod 枚举类型
 description: Windows 10 VPN 连接类型。
 author: tfitzmac
-ms.openlocfilehash: 311d69bf10950064e16e69f9d296edfed4535bd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3613436b5df458f05fefc9037b8aadbc1265385
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810967"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328726"
 
 Windows 10 VPN 连接类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |certificate|0|使用证书进行身份验证。|
 |usernameAndPassword|1|用于身份验证的用户名和密码。|

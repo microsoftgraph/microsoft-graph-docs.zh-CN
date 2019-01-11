@@ -1,12 +1,13 @@
 ---
 title: passwordCredential 资源类型
 description: 包含与应用程序或服务主体密码凭据。 **PasswordCredentials**属性和应用程序实体的 servicePrincipal 实体是**passwordCredential**的集合。
-ms.openlocfilehash: 79d3f76606533cf639f52ed22cd93f353e18e977
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5cb995c00a7dcfcfb4bda331e24dcb4d732f04f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814439"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 
@@ -39,9 +40,9 @@ ms.locfileid: "27041559"
 
 ```
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|二进制数|            |
+|customKeyIdentifier|Binary|            |
 |endDateTime|DateTimeOffset|过期日期和时间的密码。时间戳类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |密钥 id 为|Guid|            |
 |startDateTime|DateTimeOffset|日期和时间的密码将成为有效。时间戳类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

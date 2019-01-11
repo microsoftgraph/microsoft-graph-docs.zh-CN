@@ -2,12 +2,13 @@
 title: windowsKioskAppConfiguration 资源类型
 description: 应用程序类的基类用于标识为网亭配置的应用程序信息
 author: tfitzmac
-ms.openlocfilehash: 93d8b19e621986d4384885f7f87f76df028127e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a686d94b25cc9352c9a129e883b3eae8e2d68b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812822"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
 

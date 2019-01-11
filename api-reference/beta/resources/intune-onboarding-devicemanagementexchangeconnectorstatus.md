@@ -2,12 +2,13 @@
 title: deviceManagementExchangeConnectorStatus 枚举类型
 description: Exchange 连接器的当前状态。
 author: tfitzmac
-ms.openlocfilehash: 7b2576d75eef285fe64e8ebf4d89dd004130fa78
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2d1bc97795a664515eb4ea6f620c41a64394be0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816056"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27303792"
 
 Exchange 连接器的当前状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|没有连接线存在。|
 |connectionPending|1|挂起的连接到 Exchange 环境。|

@@ -2,12 +2,13 @@
 title: 获取 windowsWifiConfiguration
 description: 读取属性和 windowsWifiConfiguration 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 89a20033e38231dc6ed45918ce58a837ef1cebb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6097fc83a7c28885a6161d2c8cf02bfae419ca85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811758"
 ---
 # <a name="get-windowswificonfiguration"></a>获取 windowsWifiConfiguration
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

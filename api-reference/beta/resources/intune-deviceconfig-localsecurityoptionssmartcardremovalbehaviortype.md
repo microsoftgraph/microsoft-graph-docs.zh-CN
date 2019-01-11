@@ -2,12 +2,13 @@
 title: localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 author: tfitzmac
-ms.openlocfilehash: 91b55d4ba3b1fc8b27a5ab85e6f5ff7df74e9a59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab8ead80cc98a8036c4f874c61d541af09cbaaae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308734"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809966"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308734"
 
 LocalSecurityOptionsSmartCardRemovalBehaviorType 的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |lockWorkstation|0|任何操作|
 |noAction|1|锁定工作站|

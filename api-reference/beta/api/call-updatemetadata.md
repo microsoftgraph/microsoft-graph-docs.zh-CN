@@ -2,12 +2,13 @@
 title: 呼叫： updateMetadata
 description: 更新应用程序的元数据与呼叫相关联。
 author: VinodRavichandran
-ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813585"
 ---
 # <a name="call-updatemetadata"></a>呼叫： updateMetadata
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |元数据|字符串|提供在名单中的参与者的数据的 blob。|
 |clientContext|字符串|客户端上下文。|

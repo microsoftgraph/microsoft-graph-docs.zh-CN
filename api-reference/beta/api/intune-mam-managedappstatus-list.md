@@ -2,12 +2,13 @@
 title: 列出 managedAppStatuses
 description: 列出 managedAppStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: e4b1b16aa51d84e1404b81bcc12a5c235339a2e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91fe5e28eb50cf231eca94bbc8316416845e6bf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813158"
 ---
 # <a name="list-managedappstatuses"></a>列出 managedAppStatuses
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

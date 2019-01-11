@@ -2,12 +2,13 @@
 title: 更新 calendarGroup
 description: 更新 calendargroup 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: e0e2cbc9ef2f86298d320285163e2e7378a8f3ec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a8006098c1088caec444b30aa5210b44388f5cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809399"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 

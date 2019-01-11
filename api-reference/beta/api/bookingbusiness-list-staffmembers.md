@@ -1,12 +1,13 @@
 ---
 title: 列表 staffMembers
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
-ms.openlocfilehash: a2b04aba32d3bbc51dc380f51b54a2700114fd20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809560"
 ---
 # <a name="list-staffmembers"></a>列表 staffMembers
 

@@ -1,12 +1,13 @@
 ---
 title: androidManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 Android 应用的同步详细信息。
-ms.openlocfilehash: b47b331e8bc5180067723507156c952b6ed0c006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4e922e2eb9cd6c3dee0fe0f4de5bebd58f6366a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809609"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 

@@ -2,12 +2,13 @@
 title: 更新联系人
 description: 更新联系人对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e205421413dabeec7667252a05fc8398bdd48e36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809322"
 ---
 # <a name="update-contact"></a>更新联系人
 
