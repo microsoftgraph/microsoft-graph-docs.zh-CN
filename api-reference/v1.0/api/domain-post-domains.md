@@ -2,55 +2,56 @@
 title: 创建域
 description: 向租户添加域。
 author: lleonard-msft
-ms.openlocfilehash: c7b64f2d6df2279f248fe41ad23e3bfc0d9636de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a32117f5fa398d84cb9a75cca7ecba39de02f35
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885097"
 ---
-# <a name="create-domain"></a><span data-ttu-id="efc25-103">创建域</span><span class="sxs-lookup"><span data-stu-id="efc25-103">Create domain</span></span>
+# <a name="create-domain"></a><span data-ttu-id="a0c46-103">创建域</span><span class="sxs-lookup"><span data-stu-id="a0c46-103">Create domain</span></span>
 
-<span data-ttu-id="efc25-104">向租户添加域。</span><span class="sxs-lookup"><span data-stu-id="efc25-104">Adds a domain to the tenant.</span></span>
+<span data-ttu-id="a0c46-104">向租户添加域。</span><span class="sxs-lookup"><span data-stu-id="a0c46-104">Adds a domain to the tenant.</span></span>
 
-<span data-ttu-id="efc25-p101">**重要说明**：必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。有关详细信息，请参阅[列出 verificationDnsRecords](domain-list-verificationdnsrecords.md)。需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="efc25-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
+<span data-ttu-id="a0c46-p101">**重要说明**：必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。有关详细信息，请参阅[列出 verificationDnsRecords](domain-list-verificationdnsrecords.md)。需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="a0c46-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="efc25-111">权限</span><span class="sxs-lookup"><span data-stu-id="efc25-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0c46-111">权限</span><span class="sxs-lookup"><span data-stu-id="a0c46-111">Permissions</span></span>
 
-<span data-ttu-id="efc25-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="efc25-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a0c46-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0c46-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="efc25-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="efc25-114">Permission type</span></span>      | <span data-ttu-id="efc25-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="efc25-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0c46-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0c46-114">Permission type</span></span>      | <span data-ttu-id="a0c46-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a0c46-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="efc25-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="efc25-116">Delegated (work or school account)</span></span> | <span data-ttu-id="efc25-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="efc25-117">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="efc25-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="efc25-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efc25-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="efc25-119">Not supported.</span></span>    |
-|<span data-ttu-id="efc25-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="efc25-120">Application</span></span> | <span data-ttu-id="efc25-121">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efc25-121">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="a0c46-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0c46-116">Delegated (work or school account)</span></span> | <span data-ttu-id="a0c46-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a0c46-117">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a0c46-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0c46-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0c46-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0c46-119">Not supported.</span></span>    |
+|<span data-ttu-id="a0c46-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0c46-120">Application</span></span> | <span data-ttu-id="a0c46-121">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0c46-121">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="efc25-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="efc25-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0c46-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0c46-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-## <a name="request-headers"></a><span data-ttu-id="efc25-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="efc25-123">Request headers</span></span>
-| <span data-ttu-id="efc25-124">Name</span><span class="sxs-lookup"><span data-stu-id="efc25-124">Name</span></span>       | <span data-ttu-id="efc25-125">说明</span><span class="sxs-lookup"><span data-stu-id="efc25-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0c46-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0c46-123">Request headers</span></span>
+| <span data-ttu-id="a0c46-124">名称</span><span class="sxs-lookup"><span data-stu-id="a0c46-124">Name</span></span>       | <span data-ttu-id="a0c46-125">说明</span><span class="sxs-lookup"><span data-stu-id="a0c46-125">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="efc25-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="efc25-126">Authorization</span></span>  | <span data-ttu-id="efc25-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="efc25-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="efc25-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="efc25-129">Content-Type</span></span>  | <span data-ttu-id="efc25-130">application/json</span><span class="sxs-lookup"><span data-stu-id="efc25-130">application/json</span></span> |
+| <span data-ttu-id="a0c46-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0c46-126">Authorization</span></span>  | <span data-ttu-id="a0c46-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a0c46-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="a0c46-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a0c46-129">Content-Type</span></span>  | <span data-ttu-id="a0c46-130">application/json</span><span class="sxs-lookup"><span data-stu-id="a0c46-130">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="efc25-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="efc25-131">Request body</span></span>
-<span data-ttu-id="efc25-132">在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="efc25-132">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0c46-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0c46-131">Request body</span></span>
+<span data-ttu-id="a0c46-132">在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0c46-132">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
-> <span data-ttu-id="efc25-p104">请求正文包含新域的 id 属性。Id 是唯一可以指定，也是必须指定的属性。此 id 属性值是要创建的完全限定的域名。</span><span class="sxs-lookup"><span data-stu-id="efc25-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
+> <span data-ttu-id="a0c46-p104">请求正文包含新域的 id 属性。Id 是唯一可以指定，也是必须指定的属性。此 id 属性值是要创建的完全限定的域名。</span><span class="sxs-lookup"><span data-stu-id="a0c46-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="efc25-136">响应</span><span class="sxs-lookup"><span data-stu-id="efc25-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a0c46-136">响应</span><span class="sxs-lookup"><span data-stu-id="a0c46-136">Response</span></span>
 
-<span data-ttu-id="efc25-137">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [domain](../resources/domain.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="efc25-137">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="a0c46-137">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [domain](../resources/domain.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a0c46-137">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="efc25-138">示例</span><span class="sxs-lookup"><span data-stu-id="efc25-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="efc25-139">请求</span><span class="sxs-lookup"><span data-stu-id="efc25-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="a0c46-138">示例</span><span class="sxs-lookup"><span data-stu-id="a0c46-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a0c46-139">请求</span><span class="sxs-lookup"><span data-stu-id="a0c46-139">Request</span></span>
 
-<span data-ttu-id="efc25-140">在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="efc25-140">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+<span data-ttu-id="a0c46-140">在请求正文中，提供 [domain](../resources/domain.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0c46-140">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -66,8 +67,8 @@ Content-length: 192
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="efc25-141">响应</span><span class="sxs-lookup"><span data-stu-id="efc25-141">Response</span></span>
-<span data-ttu-id="efc25-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="efc25-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a0c46-141">响应</span><span class="sxs-lookup"><span data-stu-id="a0c46-141">Response</span></span>
+<span data-ttu-id="a0c46-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a0c46-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
