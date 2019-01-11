@@ -1,27 +1,28 @@
 ---
 title: 'message: createReplyAll'
 description: 创建草稿以回复指定邮件的发件人和所有收件人。 然后，可以更新草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅发送草稿。
-ms.openlocfilehash: a48e5bf7f3ae330ff31a2b8d2827259798186c64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804779"
 ---
-# <a name="message-createreplyall"></a><span data-ttu-id="2649d-104">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="2649d-104">message: createReplyAll</span></span>
+# <a name="message-createreplyall"></a><span data-ttu-id="61e14-104">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="61e14-104">message: createReplyAll</span></span>
 
-<span data-ttu-id="2649d-105">创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。</span><span class="sxs-lookup"><span data-stu-id="2649d-105">Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md).</span></span> <span data-ttu-id="2649d-106">然后，可以[更新](../api/message-update.md)草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅[发送](../api/message-send.md)草稿。</span><span class="sxs-lookup"><span data-stu-id="2649d-106">You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="61e14-105">创建草稿以回复指定[邮件](../resources/message.md)的发件人和所有收件人。</span><span class="sxs-lookup"><span data-stu-id="61e14-105">Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md).</span></span> <span data-ttu-id="61e14-106">然后，可以[更新](../api/message-update.md)草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅[发送](../api/message-send.md)草稿。</span><span class="sxs-lookup"><span data-stu-id="61e14-106">You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2649d-107">权限</span><span class="sxs-lookup"><span data-stu-id="2649d-107">Permissions</span></span>
-<span data-ttu-id="2649d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2649d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="61e14-107">权限</span><span class="sxs-lookup"><span data-stu-id="61e14-107">Permissions</span></span>
+<span data-ttu-id="61e14-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="61e14-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2649d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2649d-110">Permission type</span></span>      | <span data-ttu-id="2649d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2649d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="61e14-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="61e14-110">Permission type</span></span>      | <span data-ttu-id="61e14-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="61e14-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2649d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2649d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2649d-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2649d-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2649d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2649d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2649d-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2649d-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2649d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2649d-116">Application</span></span> | <span data-ttu-id="2649d-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2649d-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="61e14-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61e14-112">Delegated (work or school account)</span></span> | <span data-ttu-id="61e14-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61e14-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="61e14-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61e14-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61e14-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61e14-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="61e14-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="61e14-116">Application</span></span> | <span data-ttu-id="61e14-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61e14-117">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2649d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2649d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61e14-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61e14-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReplyAll
@@ -29,22 +30,22 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
 POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
-## <a name="request-headers"></a><span data-ttu-id="2649d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2649d-119">Request headers</span></span>
-| <span data-ttu-id="2649d-120">名称</span><span class="sxs-lookup"><span data-stu-id="2649d-120">Name</span></span>       | <span data-ttu-id="2649d-121">类型</span><span class="sxs-lookup"><span data-stu-id="2649d-121">Type</span></span> | <span data-ttu-id="2649d-122">说明</span><span class="sxs-lookup"><span data-stu-id="2649d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="61e14-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="61e14-119">Request headers</span></span>
+| <span data-ttu-id="61e14-120">名称</span><span class="sxs-lookup"><span data-stu-id="61e14-120">Name</span></span>       | <span data-ttu-id="61e14-121">类型</span><span class="sxs-lookup"><span data-stu-id="61e14-121">Type</span></span> | <span data-ttu-id="61e14-122">说明</span><span class="sxs-lookup"><span data-stu-id="61e14-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2649d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2649d-123">Authorization</span></span>  | <span data-ttu-id="2649d-124">string</span><span class="sxs-lookup"><span data-stu-id="2649d-124">string</span></span>  | <span data-ttu-id="2649d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2649d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="61e14-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="61e14-123">Authorization</span></span>  | <span data-ttu-id="61e14-124">string</span><span class="sxs-lookup"><span data-stu-id="61e14-124">string</span></span>  | <span data-ttu-id="61e14-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="61e14-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2649d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2649d-127">Request body</span></span>
-<span data-ttu-id="2649d-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2649d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="61e14-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="61e14-127">Request body</span></span>
+<span data-ttu-id="61e14-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="61e14-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2649d-129">响应</span><span class="sxs-lookup"><span data-stu-id="2649d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="61e14-129">响应</span><span class="sxs-lookup"><span data-stu-id="61e14-129">Response</span></span>
 
-<span data-ttu-id="2649d-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2649d-130">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="61e14-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="61e14-130">If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2649d-131">示例</span><span class="sxs-lookup"><span data-stu-id="2649d-131">Example</span></span>
-<span data-ttu-id="2649d-132">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="2649d-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="2649d-133">请求</span><span class="sxs-lookup"><span data-stu-id="2649d-133">Request</span></span>
-<span data-ttu-id="2649d-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2649d-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="61e14-131">示例</span><span class="sxs-lookup"><span data-stu-id="61e14-131">Example</span></span>
+<span data-ttu-id="61e14-132">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="61e14-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="61e14-133">请求</span><span class="sxs-lookup"><span data-stu-id="61e14-133">Request</span></span>
+<span data-ttu-id="61e14-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="61e14-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreplyall"
@@ -53,8 +54,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 ```
 
-##### <a name="response"></a><span data-ttu-id="2649d-135">响应</span><span class="sxs-lookup"><span data-stu-id="2649d-135">Response</span></span>
-<span data-ttu-id="2649d-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2649d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="61e14-135">响应</span><span class="sxs-lookup"><span data-stu-id="61e14-135">Response</span></span>
+<span data-ttu-id="61e14-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="61e14-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
