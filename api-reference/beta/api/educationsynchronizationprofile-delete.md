@@ -2,12 +2,13 @@
 title: 删除 educationSynchronizationProfile
 description: 删除学校数据同步配置文件中租户基于的标识符。
 author: mmast-msft
-ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870362"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>删除 educationSynchronizationProfile
 
@@ -18,7 +19,7 @@ ms.locfileid: "27343300"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | 权限 |
+| 权限类型 | Permissions |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 
@@ -29,7 +30,7 @@ DELETE /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 |委派 （个人 Microsoft 帐户|不支持。|

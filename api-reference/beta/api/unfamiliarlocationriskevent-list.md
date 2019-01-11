@@ -1,12 +1,13 @@
 ---
 title: 列表 unfamiliarLocationRiskEvents
 description: 检索 unfamiliarlocationriskevent 对象的列表。
-ms.openlocfilehash: 2a0decd6ecf700f2679bc905a7a64c261b7a532b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 788d947c418f48d2a732c8249d2fdbebfd6ff6e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873463"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>列表 unfamiliarLocationRiskEvents
 

@@ -2,12 +2,13 @@
 title: resourceReference 资源类型
 description: 包含属性的见解复杂类型。
 author: simonhult
-ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ab2a79d66db6a45ecf3df748cf8f5740721ef80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874324"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27363618"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明  |
+| 属性      | 类型      | Description  |
 | ------------- |-----------| -------------|
 | WebUrl        | String    | 通向引用的项的 URL。 |
 | id            | 字符串    | 项目的唯一标识符。           |

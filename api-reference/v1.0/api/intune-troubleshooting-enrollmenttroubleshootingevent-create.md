@@ -2,12 +2,13 @@
 title: 创建 enrollmentTroubleshootingEvent
 description: 创建新的 enrollmentTroubleshootingEvent 对象。
 author: tfitzmac
-ms.openlocfilehash: 0ff50de23b6fd39e8e27202fd9b72c690e02aee4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 633e16f1d21808e55dd3b5d8fe677a8b6bec37d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869494"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>创建 enrollmentTroubleshootingEvent
 
@@ -36,7 +37,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

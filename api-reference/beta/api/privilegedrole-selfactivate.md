@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRole: selfActivate'
 description: 激活分配给请求者角色。
-ms.openlocfilehash: bff445bf1fa5d7c0dfbce080b4361b0479b7dcb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9423d87714fcd4a7b7cce1dd5cd03bcef3e0ef9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872126"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -44,7 +45,7 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |原因|string|可选。 有关此角色激活的原因的说明。|
 |duration|string|可选。 有效的值可以是```min```（最少激活持续时间） ```default``` （默认激活持续时间的角色），或可指定小时数，则激活一个 double 值。 指定的持续时间不能超过从角色设置的角色激活持续时间。 |

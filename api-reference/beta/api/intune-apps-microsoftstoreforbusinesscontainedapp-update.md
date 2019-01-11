@@ -2,12 +2,13 @@
 title: 更新 microsoftStoreForBusinessContainedApp
 description: 更新 microsoftStoreForBusinessContainedApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1250e6fd95caaa4e85761ce21d8db89faa139e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870005"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>更新 microsoftStoreForBusinessContainedApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

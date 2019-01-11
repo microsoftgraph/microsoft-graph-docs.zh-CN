@@ -2,12 +2,13 @@
 title: organizerMeetingInfo 资源类型
 description: 包含会议的组织者的会议信息。
 author: VinodRavichandran
-ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: fd096a55762892ca9b2fd72c883a544e503c5f90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870727"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380210"
 
 ## <a name="properties"></a>属性
 
-| 属性                     | 类型                          | 说明                                     |
+| 属性                     | 类型                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | 指示是否一旦离开对话的主机，也可以继续对话。 |
+| allowConversationWithoutHost | 布尔                       | 指示是否一旦离开对话的主机，也可以继续对话。 |
 | organizer                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,12 +2,13 @@
 title: androidLobApp 资源类型
 description: 包含 Android 业务线应用的属性和继承的属性。
 author: tfitzmac
-ms.openlocfilehash: 6ded3a19ee34310f07c1f41eca07707798bbf768
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad4bfc027b9c141226489d5e73ab473ea456ab26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873120"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp 资源类型
 

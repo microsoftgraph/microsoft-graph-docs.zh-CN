@@ -2,12 +2,13 @@
 title: 创建 deviceConfigurationGroupAssignment
 description: 创建新的 deviceConfigurationGroupAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4193470483918a2b690962ae3e190a08ac2f4c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869529"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|字符串|AAD 组 Id 目标到该设备的配置。|
-|excludeGroup|Boolean|指示此组是否应排除。 应包含的组的默认值|
+|excludeGroup|布尔|指示此组是否应排除。 应包含的组的默认值|
 
 
 

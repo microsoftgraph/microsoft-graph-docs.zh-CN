@@ -2,12 +2,13 @@
 title: 更新 MailFolder
 description: 更新 mailfolder 对象的属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2ce809c75a911b7d68ed80692a14a537c659d37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871629"
 ---
 # <a name="update-mailfolder"></a>更新 MailFolder
 

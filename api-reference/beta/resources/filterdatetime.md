@@ -1,12 +1,13 @@
 ---
 title: FilterDatetime 资源类型
 description: 表示在筛选值时如何筛选日期。
-ms.openlocfilehash: d3cb0df48a1116a64a72413aa64cabdec46da6d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 24929695ff65173933b91fd82ac3e82de1f04da0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045667"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871307"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
 

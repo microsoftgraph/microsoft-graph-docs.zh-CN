@@ -2,12 +2,13 @@
 title: 删除日历
 description: 删除默认日历以外的日历。
 author: angelgolfer-ms
-ms.openlocfilehash: 2285287911fcca961304c8b46d3508db554f95a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e489a0807f9069f3198f11955daba828b9c929e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823700"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -36,7 +37,7 @@ DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="request-headers"></a>请求标头
-| Name           |  类型    | 说明|
+| 名称           |  类型    | 说明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {token}。必需。 |
 

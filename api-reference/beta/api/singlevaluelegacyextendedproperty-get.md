@@ -1,12 +1,13 @@
 ---
 title: 获取 singleValueLegacyExtendedProperty
 description: 您可以获取单个资源实例展开为一个特定的扩展的属性或资源实例的集合
-ms.openlocfilehash: 72ae071d2c5c92af02d26af2474c776a5dc1c83c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee9d51f945650c8051badd27f1b934d03f47cc7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873183"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 

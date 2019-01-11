@@ -2,12 +2,13 @@
 title: 'message: move'
 description: 将邮件移动到文件夹中。 此目标文件夹中创建新邮件的副本，并删除原始邮件。
 author: angelgolfer-ms
-ms.openlocfilehash: fd091e02251ed673fd4f226f2e5e3fa2c14f647b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 342c11e844d93ec9bf91b2a40db601e7c4a6b049
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324400"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870586"
 ---
 # <a name="message-move"></a>message: move
 
@@ -38,14 +39,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| 授权 | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| Authorization | `Bearer {token}`. 必填。 |
+| Content-Type | `application/json`. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数   | Type |说明|
+| 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |destinationId|字符串|目标文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 

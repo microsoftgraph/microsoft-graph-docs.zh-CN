@@ -2,12 +2,13 @@
 title: 删除 macOSEndpointProtectionConfiguration
 description: 删除 macOSEndpointProtectionConfiguration。
 author: tfitzmac
-ms.openlocfilehash: c32a21a6db55a290d0a1af68e6c464bf9033c2c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5b8fc960e2ff9dd1db88f735b746eeaba07d309
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868640"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>删除 macOSEndpointProtectionConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

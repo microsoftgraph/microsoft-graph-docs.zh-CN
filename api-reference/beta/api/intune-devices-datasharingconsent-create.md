@@ -2,12 +2,13 @@
 title: 创建 dataSharingConsent
 description: 创建新的 dataSharingConsent 对象。
 author: tfitzmac
-ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862284"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
@@ -38,7 +39,7 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ POST /deviceManagement/dataSharingConsents
 |id|字符串|数据共享同意 Id|
 |serviceDisplayName|字符串|服务工作流的显示名称|
 |termsUrl|字符串|数据共享同意 TermsUrl|
-|授予|Boolean|数据共享同意向其授予的状态|
+|授予|布尔|数据共享同意向其授予的状态|
 |grantDateTime|DateTimeOffset|此帐户授予时间同意|
 |grantedByUpn|字符串|用户授予许可，为此帐户的 Upn|
 |grantedByUserId|字符串|授予许可，为此帐户的用户的用户 Id|

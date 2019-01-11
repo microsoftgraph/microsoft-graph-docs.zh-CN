@@ -2,12 +2,13 @@
 title: 获取 RangeFont
 description: 检索 rangefont 对象的属性和关系。
 author: lumine2008
-ms.openlocfilehash: 86d30418c7a392cb596d6670894691741dbcac5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d516a7ac37c7489e18c878ad7393d1318ad3ddc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872000"
 ---
 # <a name="get-rangefont"></a>获取 RangeFont
 
@@ -34,7 +35,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|

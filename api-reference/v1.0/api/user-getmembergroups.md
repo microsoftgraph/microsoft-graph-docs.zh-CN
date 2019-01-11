@@ -1,12 +1,13 @@
 ---
 title: 'user: getMemberGroups'
 description: 返回所有组的成员的用户。 检查，可传递，与阅读不同
-ms.openlocfilehash: 875228e2c40be7928024e8507416d81e9b80a805
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 23b05799d6660b2b173f7e5dbd1c8d86f0644fef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870061"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 

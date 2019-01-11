@@ -1,12 +1,13 @@
 ---
 title: 'RangeFormat: autofitColumns'
 description: 根据列中的当前数据更改当前范围的列宽，以达到最佳宽度。
-ms.openlocfilehash: e245e79ae99c5b845aefb8d85142bd32dda8d7c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 024475e606b6a94136e42eaa5dd2f32fcaf06b21
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872756"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 

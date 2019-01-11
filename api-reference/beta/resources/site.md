@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
-ms.openlocfilehash: d18487d9932227df0ce2de3320fcb71ce94ca735
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: fb91e9bada227f1a22cf862726ea0b6f658fe469
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871020"
 ---
 # <a name="site-resource-type"></a>网站资源类型
 
@@ -59,7 +60,7 @@ ms.locfileid: "27047237"
 
 ## <a name="relationships"></a>关系
 
-| 关系名称 | 类型                             | 说明
+| 关系名称 | 类型                             | Description
 |:------------------|:---------------------------------|:----------------------
 | **分析**     | [itemAnalytics][]资源       | 有关发生此网站中查看活动的分析。
 | **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
@@ -77,7 +78,7 @@ ms.locfileid: "27047237"
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[list]: list.md
+[列表]: list.md
 [sitePage]: sitepage.md
 [根]: root.md
 [site]: site.md

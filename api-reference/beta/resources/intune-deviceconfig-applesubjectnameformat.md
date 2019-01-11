@@ -2,12 +2,13 @@
 title: appleSubjectNameFormat 枚举类型
 description: Apple 设备的使用者名称格式选项。
 author: tfitzmac
-ms.openlocfilehash: 6aa3616050e3d908fd093310de5bbed065766fc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c6eb02507dbf2de71aeb0d156807dcb3bcf89d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873064"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323672"
 
 Apple 设备的使用者名称格式选项。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |commonName|0|公用名。|
 |commonNameAsEmail|1|作为电子邮件的公用名。|

@@ -2,12 +2,13 @@
 title: installState 枚举类型
 description: 安装状态的可能值。
 author: tfitzmac
-ms.openlocfilehash: c8e1a6ef50574eaa6f704e1d9f49d56c83046ab7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa281cc5f218469980a235db842e00fd8fa46647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868619"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304632"
 
 安装状态的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notApplicable|0|不适用。|
 |安装|1|安装。|

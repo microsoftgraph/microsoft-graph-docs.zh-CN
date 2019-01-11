@@ -2,12 +2,13 @@
 title: 列表 circularGeofenceManagementConditions
 description: 列出属性和 circularGeofenceManagementCondition 对象之间的关系。
 author: tfitzmac
-ms.openlocfilehash: b8f57677fc5c3017d069d2e1fae7da3eb70b2d7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea68bfb61e5ccf6caafac518da7a844037ca3632
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305976"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870530"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>列表 circularGeofenceManagementConditions
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

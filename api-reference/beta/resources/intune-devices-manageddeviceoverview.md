@@ -2,12 +2,13 @@
 title: managedDeviceOverview 资源类型
 description: 托管设备的摘要数据
 author: tfitzmac
-ms.openlocfilehash: 223f11b49ee3cbc9b114047f25b301d9b0c08b24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1eeb349e8ec77adce3d69df9d61f43e43fb3b770
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872546"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: educationAssignmentResource 资源类型
 description: 包装对象，用于存储与工作分配关联的资源。 包装添加**distributeForStudentWork**属性，指示该资源将
-ms.openlocfilehash: 6907af5e4408248487b118c390bb2ec209700124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868836"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -24,10 +25,10 @@ ms.locfileid: "27045556"
 |[删除](../api/educationassignmentresource-delete.md) | 无 |删除**educationAssignmentResource**对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|布尔|指示是否应将此资源复制到每个学生提交修改和提交。|
-|id|字符串| 此资源的 ID。 只读。|
+|id|字符串| 此资源的 ID。 此为只读属性。|
 |resource|[educationResource](educationresource.md)|已经与此工作分配的资源对象。|
 
 ## <a name="relationships"></a>Relationships

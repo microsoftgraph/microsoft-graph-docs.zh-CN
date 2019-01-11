@@ -2,12 +2,13 @@
 title: androidForWorkSettings 资源类型
 description: Android for Work 设置。
 author: tfitzmac
-ms.openlocfilehash: 2a3bedbed986e10c0df1cae94d3302d16607e3f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d96ebd30985b4bea50cf236b3315114db4c3e216
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873789"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings 资源类型
 
@@ -38,7 +39,7 @@ Android for Work 设置。
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以注册工作设备管理中 Android 设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String 集合|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|Boolean|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
+|deviceOwnerManagementEnabled|布尔|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
 
 ## <a name="relationships"></a>Relationships
 无

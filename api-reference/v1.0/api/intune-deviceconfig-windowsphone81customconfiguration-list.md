@@ -2,12 +2,13 @@
 title: 列出 windowsPhone81CustomConfigurations
 description: 列出 windowsPhone81CustomConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 0c12126afc281ee3f0fb3dec6047d5350ee66f00
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8293bd245e50e3589ec744ff1fc9928e4649d1f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872063"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>列出 windowsPhone81CustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: androidDeviceOwnerSystemUpdateInstallType 枚举类型
 description: Android 设备所有者的系统更新类型。
 author: tfitzmac
-ms.openlocfilehash: e2dc66851e0fa98d52a3fec30385e0fd27e6f6ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6fea4de641ebefe2b731135f4b1b95b6e1607d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869368"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323196"
 
 Android 设备所有者的系统更新类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |deviceDefault|0|设备默认行为，通常会提示用户接受系统更新。|
 |延迟|1|为 30 天推迟自动安装更新。|

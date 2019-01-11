@@ -1,12 +1,13 @@
 ---
 title: 创建协议
 description: 创建新的协议对象。
-ms.openlocfilehash: bfcab53b4233d133309c99a4825e184a42670458
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870635"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -30,7 +31,7 @@ POST /agreements
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | string | 持有者\{标记\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
@@ -44,7 +45,7 @@ POST /agreements
 |文件/文件名|字符串|协议文件 (例如，TOU.pdf) 的名称。|
 |文件/isDefault|布尔|指示是否这是默认协议文件，是否无区域性匹配的客户端首选项。 如果没有文件被标记为默认，第一个将被视为默认。|
 |文件/语言|字符串|区域性格式 languagecode2-国家/地区/regioncode2 中的协议文件。 languagecode2 是小写字母双字母代码派生自 ISO 639-1。 国家/地区/regioncode2 派生自 ISO 3166，它通常包括两个大写字母或 BCP 47 语言标记 (例如，EN-US)。|
-|文件/fileData/数据|二进制数|代表使用条款 PDF 文档的数据。|
+|文件/fileData/数据|Binary|代表使用条款 PDF 文档的数据。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`201, Created`响应正文中的响应代码和[协议](../resources/agreement.md)对象。

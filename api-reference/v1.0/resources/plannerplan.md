@@ -1,12 +1,13 @@
 ---
 title: plannerPlan 资源类型
 description: '**PlannerPlan**资源表示 Office 365 中的计划。 规划组可以拥有和包含 plannerTasks 的集合。 它还可以具有 plannerBuckets 的集合。 每个计划对象有一个详细对象，可以包含有关计划的详细信息。 有关组、 计划和任务之间的关系的详细信息，请参阅计划程序。'
-ms.openlocfilehash: cd2990bc42929c4c501e676d05d7d643dd6f7d3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873008"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 

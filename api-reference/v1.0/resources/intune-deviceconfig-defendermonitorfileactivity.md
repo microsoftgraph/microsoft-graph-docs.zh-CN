@@ -2,12 +2,13 @@
 title: defenderMonitorFileActivity 枚举类型
 description: 用于监控文件活动的可能值。
 author: tfitzmac
-ms.openlocfilehash: 87c8656c09482763b5e09f0ca746c7bddd069a21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8719fd5f07efa9d09dcf88ae02566f331904734
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871685"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27314761"
 
 用于监控文件活动的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |禁用|1|禁用监控文件活动。|

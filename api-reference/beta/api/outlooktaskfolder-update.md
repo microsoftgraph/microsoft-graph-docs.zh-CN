@@ -2,12 +2,13 @@
 title: 更新 outlooktaskfolder
 description: 更新 Outlook 任务文件夹的可写属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874352"
 ---
 # <a name="update-outlooktaskfolder"></a>更新 outlooktaskfolder
 
@@ -32,7 +33,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 

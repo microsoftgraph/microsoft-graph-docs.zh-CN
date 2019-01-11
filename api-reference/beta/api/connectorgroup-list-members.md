@@ -1,12 +1,13 @@
 ---
 title: 列出成员
 description: 检索与 connectorGroup 关联的连接器对象的列表。
-ms.openlocfilehash: 504cba20c0d93db9f0c0333dcf7578e051b3009f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b8cd2d57f842e6c38d56ad25f53a4f80a9f1382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869976"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -33,7 +34,7 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
-ms.openlocfilehash: 65cfe61dadd1708abffe2d01abbbb15f40d158ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27047134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871489"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -75,7 +76,7 @@ ms.locfileid: "27047134"
 
 **SitePage**资源具有以下属性。
 
-| 属性名    | 类型                         | 说明
+| 属性名称    | 类型                         | 说明
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | 页面内容类型。
 
@@ -83,7 +84,7 @@ ms.locfileid: "27047134"
 
 **SitePage**资源具有以下内容的字段。
 
-| 属性名      | 类型                       | 说明
+| 属性名称      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
 | pageLayout         | string                     | 页的页面布局的名称。
@@ -93,7 +94,7 @@ ms.locfileid: "27047134"
 
 **SitePage**资源具有创作相关的以下元数据。 PublishingState 属性将反映创作 like 签出或发布的状态页。
 
-| 属性名          | 类型                   | 说明
+| 属性名称          | 类型                   | Description
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 发布状态和页的 MM.mm 版本。
 
@@ -119,7 +120,7 @@ ms.locfileid: "27047134"
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[list]: list.md
+[列表]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md

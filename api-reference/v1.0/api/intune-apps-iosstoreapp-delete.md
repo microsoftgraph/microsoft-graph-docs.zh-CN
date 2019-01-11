@@ -2,12 +2,13 @@
 title: 删除 iosStoreApp
 description: 删除 iosStoreApp。
 author: tfitzmac
-ms.openlocfilehash: d25d32b4bb4bb4ea5643af374e3dcad3c8296c72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e240b9bb10af7c3b73db8f3c06e891b409b9ebf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874611"
 ---
 # <a name="delete-iosstoreapp"></a>删除 iosStoreApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: rgbColor 资源类型
 description: 以 RGB 表示的颜色。
 author: tfitzmac
-ms.openlocfilehash: b469533b8ee7e54e99b09be08870045d759f5322
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74845224469c824b54090994e39288aba57bb8d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873057"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor 资源类型
 

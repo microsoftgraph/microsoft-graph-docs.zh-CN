@@ -2,12 +2,13 @@
 title: defenderCloudBlockLevelType 枚举类型
 description: 云块级别的可能值
 author: tfitzmac
-ms.openlocfilehash: c58c844097c18ff86beaef4a0e48d9b8a39043f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 51ed838b6abaaf36a69230b566c01b8d496c2a70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872070"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27317442"
 
 云块级别的可能值
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|默认值，使用默认 Windows Defender 防病毒软件阻止级别，并提供强检测而不会提高检测的风险合法文件|
 |高|1|高适用检测强的级别。|

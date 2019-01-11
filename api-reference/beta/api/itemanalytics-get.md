@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: 获取分析
-ms.openlocfilehash: 57f009e0d2a07a5bf8c9a0f3b3617083bc279545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d85ad32e4a7ce369ba3970e2d540aeeadf8424c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27045731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872637"
 ---
 # <a name="get-analytics"></a>获取分析
 

@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: add'
 description: 向表中添加新列。
 author: lumine2008
-ms.openlocfilehash: a0897dc4eff387d14643b0a067ef92ad79755614
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd3c1a2b1cbfcb8d0e47f9d7ec93b0695e9854c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870236"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -31,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
 |values|（布尔值、字符串或数字）|可选。未设置格式的表列值的二维数组。|

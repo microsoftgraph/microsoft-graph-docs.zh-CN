@@ -2,12 +2,13 @@
 title: 更新 macOSDeviceFeaturesConfiguration
 description: 更新 macOSDeviceFeaturesConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: aecefa3e348613fa2aa0f9974f2aafbce56c8051
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0539e19de3cf7189e4bc35fea78f85bd52eaa80e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870243"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>更新 macOSDeviceFeaturesConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

@@ -2,12 +2,13 @@
 title: nonEapAuthenticationMethodForPeap 枚举类型
 description: 非 EAP PEAP 时所选的 EAP 类型的身份验证的方法。
 author: tfitzmac
-ms.openlocfilehash: 6925547b3effbfe505d5586589e4f97a6f5c5662
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed6fab695f461ffe35ac201fe70aa1b2f5703faa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870305"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326983"
 
 非 EAP PEAP 时所选的 EAP 类型的身份验证的方法。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|无。|
 |microsoftChapVersionTwo|1|Microsoft CHAP 版本 2 (MS-CHAP v2)。|

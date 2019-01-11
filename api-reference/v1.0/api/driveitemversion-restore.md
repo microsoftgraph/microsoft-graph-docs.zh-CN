@@ -1,12 +1,13 @@
 ---
 title: 还原 DriveItem 的以前版本
 description: 将 DriveItem 的以前版本还原为当前版本。 这将使用以前版本的内容创建一个新版本，但保留该文件的所有现有版本。
-ms.openlocfilehash: e8272678e048391279d5b2147985d4f1e83f0456
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0097d82bb9d317c0bee0392f21040f0963364183
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871608"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 

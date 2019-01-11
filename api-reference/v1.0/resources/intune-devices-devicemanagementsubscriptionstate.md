@@ -2,12 +2,13 @@
 title: deviceManagementSubscriptionState 枚举类型
 description: 租户移动设备管理订阅状态。
 author: tfitzmac
-ms.openlocfilehash: 0e841cdc4e710f623aeaecf3de8a5db61cae8f8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a31e4e776c782c01ae1d1bdc2dea71bced58b295
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870642"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27356845"
 
 租户移动设备管理订阅状态。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |挂起|0|Pending|
 |活动|1|Active|

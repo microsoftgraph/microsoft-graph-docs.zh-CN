@@ -2,12 +2,13 @@
 title: 删除 resourceOperation
 description: 删除 resourceOperation。
 author: tfitzmac
-ms.openlocfilehash: b180b3cc8afa79ff6f2484a4acc8d0b096984b90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5561b2d26fc68cfdea0172545443e4812f8ce81e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868122"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

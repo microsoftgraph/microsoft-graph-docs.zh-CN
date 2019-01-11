@@ -1,12 +1,13 @@
 ---
 title: 通知资源类型
 description: '代表由指定的用户的目标应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中并分发到不同设备用户所拥有的终结点。 '
-ms.openlocfilehash: dfcff69fd51ffa8993c0d570883e04a69371fb85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc68b95e01452e657187e42aa5f92bfec07f396a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869536"
 ---
 # <a name="notification-resource-type"></a>通知资源类型
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
@@ -23,7 +24,7 @@ ms.locfileid: "27048214"
 |[创建通知](../api/projectrome-notification-post.md) | [通知](projectrome-notification.md) |创建和发送通知。 |
 
 ## <a name="properties"></a>属性
-|名称 | 类型 | 说明|
+|名称 | 类型 | Description|
 |:----|:-----|:-----------|
 | targetHostName | 字符串 | 代表调用服务希望发布的给定用户的通知应用程序的主机名。 |
 | appNotificationId | 字符串 | 设置用于标识和目标单个通知的通知的应用程序服务器的唯一 id。 |

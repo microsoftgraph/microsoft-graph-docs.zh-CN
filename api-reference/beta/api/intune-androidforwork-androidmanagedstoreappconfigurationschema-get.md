@@ -2,12 +2,13 @@
 title: 获取 androidManagedStoreAppConfigurationSchema
 description: 读取属性和 androidManagedStoreAppConfigurationSchema 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 1c75c791c4db463eb0d6c796feb2d0e5479c33ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a30d1739239878e0851a6b74df2212b3b6ca46b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874646"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>获取 androidManagedStoreAppConfigurationSchema
 
@@ -40,7 +41,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManaged
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

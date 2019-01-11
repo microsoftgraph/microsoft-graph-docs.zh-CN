@@ -2,12 +2,13 @@
 title: 获取 termsAndConditionsAcceptanceStatus
 description: 读取 termsAndConditionsAcceptanceStatus 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 6219be740c0dc945e61983d93e39529c48cbc56a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a759ebdf73a1cbdf9afd1938f4f98c6e5a243b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873974"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>获取 termsAndConditionsAcceptanceStatus
 
@@ -40,7 +41,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

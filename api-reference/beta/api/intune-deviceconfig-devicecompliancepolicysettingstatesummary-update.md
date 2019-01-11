@@ -2,12 +2,13 @@
 title: 更新 deviceCompliancePolicySettingStateSummary
 description: 更新 deviceCompliancePolicySettingStateSummary 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: d85aa50045c3378a2a4da7826dcaa3fb968664ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b739f136252658385a3ef94edd959c855d2f0032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873785"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

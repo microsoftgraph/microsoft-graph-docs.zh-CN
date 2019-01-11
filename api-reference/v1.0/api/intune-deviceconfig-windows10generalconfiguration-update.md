@@ -2,12 +2,13 @@
 title: 更新 windows10GeneralConfiguration
 description: 更新 windows10GeneralConfiguration 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: a289d0254d3a1c27abdc084a0b506d0b75b0c299
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a2b8c85baca45304cd989b544b43d868f6bc78f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870320"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -251,7 +252,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |experienceBlockErrorDialogWhenNoSIM|Boolean|指示是否允许在未检测到 SIM 卡时显示错误对话框。|
 |experienceBlockTaskSwitcher|Boolean|指示是否在设备上启用任务切换。|
 |logonBlockFastUserSwitching|Boolean|禁用在不注销的情况下在同时登录的用户之间快速切换的功能。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|设备是否需要连接到网络。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|布尔|设备是否需要连接到网络。|
 
 
 

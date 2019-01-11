@@ -2,12 +2,13 @@
 title: 获取 windows10SecureAssessmentConfiguration
 description: 读取 windows10SecureAssessmentConfiguration 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 7bdef0ef87bdc1af6e00ab950ee0d1601ab6b846
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54573c361c2242c071278dad0d6f715f52f5a9cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874366"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>获取 windows10SecureAssessmentConfiguration
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

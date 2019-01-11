@@ -2,12 +2,13 @@
 title: bulkManagedDeviceActionResult 资源类型
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 0a80a05b1caba7cd5ac1e672c9e39366ca29048c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7aa0d49182908a960130e202fd4cf096c2c16c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872245"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27339513"
 
 尚未记录
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |successfulDeviceIds|String 集合|成功的设备|
 |failedDeviceIds|String 集合|失败的设备|

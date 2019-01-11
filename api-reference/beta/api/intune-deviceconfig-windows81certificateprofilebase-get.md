@@ -2,12 +2,13 @@
 title: 获取 windows81CertificateProfileBase
 description: 读取属性和 windows81CertificateProfileBase 对象的关系。
 author: tfitzmac
-ms.openlocfilehash: 8c5ff7dd258f69546093d084b8159a5396376621
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c89185b9211cf502c072a8ba4a3e28a199dcf5e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868731"
 ---
 # <a name="get-windows81certificateprofilebase"></a>获取 windows81CertificateProfileBase
 
@@ -42,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

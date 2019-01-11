@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
-ms.openlocfilehash: 3b2f77ea21f2352b0a8fa647af84d9b0af08a2ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 194530da1df449d5ba523e084b2e72cd91bbe13d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873092"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet 资源类型
 

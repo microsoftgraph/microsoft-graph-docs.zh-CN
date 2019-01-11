@@ -2,12 +2,13 @@
 title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
 author: tfitzmac
-ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871027"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

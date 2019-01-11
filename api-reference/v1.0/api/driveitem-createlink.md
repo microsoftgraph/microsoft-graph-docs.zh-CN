@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 使用链接共享文件
-ms.openlocfilehash: b65efe24534d5b366f25241bea79c70967fbb73e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 222917a869487f8e0fd893d641436f001354dfb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27009716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871125"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -66,7 +67,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 **scope** 参数允许使用以下值。
 如果未指定 **scope** 参数，则为组织创建默认的链接类型。
 
-| 值          | 说明
+| 值          | Description
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | 带链接的任何人都访问，而无需登录。 这可能包括您的组织外部的人员。 可能由管理员禁用匿名链接支持。
 | `organization` | 登录到您的组织 （租户） 的任何人都可以使用以下链接获取的访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。

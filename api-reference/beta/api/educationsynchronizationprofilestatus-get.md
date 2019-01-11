@@ -2,12 +2,13 @@
 title: 获取 educationSynchronizationProfile 的状态
 description: 为租户中获取特定学校数据同步配置文件的状态。 响应将指示的同步的状态。
 author: mmast-msft
-ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f371d86d188068a90b3a9503adea12fd38ba8e8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869949"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -31,7 +32,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
 

@@ -2,12 +2,13 @@
 title: assign 操作
 description: 尚未记录
 author: tfitzmac
-ms.openlocfilehash: 4e8193d7c642e1038d3e289745a655015d3020ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d938a70438e901e3135e3505fd581de820266870
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870341"
 ---
 # <a name="assign-action"></a>assign 操作
 
@@ -40,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +49,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |deviceIds|String collection|尚未记录|
 

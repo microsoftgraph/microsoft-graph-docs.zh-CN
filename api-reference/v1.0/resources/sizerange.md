@@ -1,12 +1,13 @@
 ---
 title: sizeRange 资源类型
 description: 指定传入邮件必须具有的最大大小和最小大小（以千字节为单位），以便条件或例外情况适用。
-ms.openlocfilehash: e9ef87063959f320068933a17c1fa8b0a70859da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae754d0666185023272860864ef17f038aecff7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873539"
 ---
 # <a name="sizerange-resource-type"></a>sizeRange 资源类型
 

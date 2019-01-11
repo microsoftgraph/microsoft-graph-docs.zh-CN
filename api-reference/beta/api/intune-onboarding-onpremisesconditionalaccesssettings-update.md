@@ -2,12 +2,13 @@
 title: 更新 onPremisesConditionalAccessSettings
 description: 更新 onPremisesConditionalAccessSettings 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 614625dd6783f279dfea9a55d81200184c005844
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80aa93482b6d71a3367b58f2a78019e909cd089b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872980"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>更新 onPremisesConditionalAccessSettings
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

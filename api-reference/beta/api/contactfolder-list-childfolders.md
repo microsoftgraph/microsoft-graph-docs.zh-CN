@@ -2,12 +2,13 @@
 title: 列出 childFolder
 description: 获取指定联系人文件夹下的子文件夹的集合。
 author: angelgolfer-ms
-ms.openlocfilehash: f5a6d351ad6832f7eea4067574d830d1bde80a23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6238d3dbbe194b17e8170d888b70494e24d4c89a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870179"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -32,7 +33,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 

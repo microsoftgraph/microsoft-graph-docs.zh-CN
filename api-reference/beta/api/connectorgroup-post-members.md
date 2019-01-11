@@ -1,12 +1,13 @@
 ---
 title: 添加到 connectorGroup 连接器
 description: 使用此 API 向 connectorGroup 添加一个连接符。
-ms.openlocfilehash: f5e7330dd5476daacda47a78400181ad3ebc0e2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0624356699b5354ddc5f11740e8561a3d6e2d851
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27043939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869991"
 ---
 # <a name="add-connector-to-connectorgroup"></a>添加到 connectorGroup 连接器
 
@@ -30,7 +31,7 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者。 必需|
+| Authorization  | 持有者。 是否必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。

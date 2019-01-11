@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CustomConfiguration 资源类型
 description: 本主题提供由 windowsPhone81CustomConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: 906c6abb1a262bb5a8a66720c471d485c23a0bd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2357b4cdb7d8243971d42230252bf0aee058ac11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27008876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872721"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
 

@@ -1,12 +1,13 @@
 ---
 title: macOSCustomConfiguration 资源类型
 description: 本主题提供由 macOSCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: a138043bc545208399c60e134a3d88ab704e4af7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9ccb21cf5c41186715daca6ae4a01c4ab9df210d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27011755"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871118"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration 资源类型
 

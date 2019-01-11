@@ -2,12 +2,13 @@
 title: 更新 outlooktask
 description: 更改 Outlook 任务的可写属性。
 author: angelgolfer-ms
-ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874751"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
@@ -49,27 +50,27 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |assignedTo|字符串|已分配任务的人员的名称。|
 |body|[itemBody](../resources/itembody.md)|任务正文通常包含有关任务的信息。 请注意，仅 HTML 支持类型。|
 |categories|String collection|类别与任务关联。|
-|changeKey|String|任务的版本。|
+|changeKey|字符串|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|中指定的时区任务已完成的日期。|
 |createdDateTime|DateTimeOffset|日期和时间创建任务时。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区的任务完成日期。|
-|hasAttachments|Boolean|设置为 true 如果任务的附件。|
+|hasAttachments|布尔|设置为 true 如果任务的附件。|
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isReminderOn|Boolean|如果，设置为 true 设置通知提醒的用户的任务。|
+|isReminderOn|布尔|如果，设置为 true 设置通知提醒的用户的任务。|
 |lastModifiedDateTime|DateTimeOffset|日期和上次修改任务的时间。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|owner|String|创建任务的人员的名称。|
+|owner|字符串|创建任务的人员的名称。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|定期模式的任务。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|发生的日期和时间的任务的提醒通知。|
 |sensitivity|string|指示任务的隐私级别。 可取值为：`normal`、`personal`、`private`、`confidential`。|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区时的任务是开始日期。|
 |status|string|指示的状态或任务进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|subject|String|简要说明或任务的标题。|
+|subject|字符串|简要说明或任务的标题。|
 
 ## <a name="response"></a>响应
 

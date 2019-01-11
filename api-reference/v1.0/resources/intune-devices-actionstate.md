@@ -2,12 +2,13 @@
 title: actionState 枚举类型
 description: 在设备上的操作的状态
 author: tfitzmac
-ms.openlocfilehash: 53ee72430ac646bf978a3167b87feaf398c8ac37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c0c05e283b94473a5c8c43498ff5bf1dd82da7a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871937"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27333381"
 
 在设备上的操作的状态
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |无|0|不是有效的操作状态|
 |挂起|1|操作处于挂起状态|

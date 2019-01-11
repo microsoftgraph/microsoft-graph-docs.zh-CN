@@ -2,12 +2,13 @@
 title: installIntent 枚举类型
 description: 可能值由管理员。 选择安装用途
 author: tfitzmac
-ms.openlocfilehash: 6b14dae67f8590e3b38865b80a385babf032f16a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6849e333c6487029706c5a2485a174c10e665f46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871846"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27303659"
 
 可能值由管理员。 选择安装用途
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |可用|0|可用安装用途。|
 |必需|1|需要安装用途。|

@@ -2,12 +2,13 @@
 title: roleAssignmentScopeType 枚举类型
 description: 指定角色分配的作用域的类型。
 author: tfitzmac
-ms.openlocfilehash: 0a3286b3b7bc583323204ca39ff85e01869ddbe7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 738579fbd8bcda9ac438ada2f7746e020396d225
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871538"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27343125"
 
 指定角色分配的作用域的类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |resourceScope|0|允许分配给指定 ResourceScopes。|
 |allDevices|1|允许分配给所有 Intune 设备。|

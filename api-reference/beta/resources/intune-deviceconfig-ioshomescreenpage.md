@@ -2,12 +2,13 @@
 title: iosHomeScreenPage 资源类型
 description: 包含主屏幕上的应用和文件夹的页面
 author: tfitzmac
-ms.openlocfilehash: cd7a2ee863c02aa6484889aa20003a94e525514d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9425edb3fb330f8dc8bb445f34295433eea49712
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872791"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>iosHomeScreenPage 资源类型
 

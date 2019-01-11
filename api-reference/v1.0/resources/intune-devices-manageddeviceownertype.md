@@ -2,12 +2,13 @@
 title: managedDeviceOwnerType 枚举类型
 description: 设备的所有者类型。
 author: tfitzmac
-ms.openlocfilehash: 6ef6bc699c3b27ec05a70e34907adb01465901e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d7edc33406988b320487b94a12149fb2134c2ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870712"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
@@ -15,7 +16,7 @@ ms.locfileid: "27336818"
 
 设备的所有者类型。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |公司|1|由公司拥有。|

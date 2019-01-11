@@ -2,12 +2,13 @@
 title: 创建 deviceComplianceActionItem
 description: 创建新的 deviceComplianceActionItem 对象。
 author: tfitzmac
-ms.openlocfilehash: a4e0facb0a9d34d840b6ef737c09737c9a6626a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b2102b0242c002c57747ebecf1731fdb325e898
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871006"
 ---
 # <a name="create-devicecomplianceactionitem"></a>创建 deviceComplianceActionItem
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

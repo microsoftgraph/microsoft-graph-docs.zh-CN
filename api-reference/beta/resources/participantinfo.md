@@ -2,12 +2,13 @@
 title: participantInfo 资源类型
 description: 包含有关参与者标识的其他属性
 author: VinodRavichandran
-ms.openlocfilehash: 335626d1c34e2c54a86b0494e931c2da3fe283e7
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 94bbc587f26f8b5122571899eb235d9c1fc27e90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870663"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380490"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 说明  |
+| 属性       | 类型                          | Description  |
 |:---------------|:------------------------------|:-------------|
 | 标识       | [identitySet](identityset.md) | 与此参与者关联[identitySet](identityset.md) 。 |
 | languageId     | 字符串                        | 语言区域性字符串。 |

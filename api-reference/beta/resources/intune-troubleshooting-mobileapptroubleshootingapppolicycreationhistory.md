@@ -2,12 +2,13 @@
 title: mobileAppTroubleshootingAppPolicyCreationHistory 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
 author: tfitzmac
-ms.openlocfilehash: 6d0192e8dde3cfc858629f7ae79e4b7de786740a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd7880a6d931fafda46ab4adf0668835438ddcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870103"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27301454"
 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项所发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`。|

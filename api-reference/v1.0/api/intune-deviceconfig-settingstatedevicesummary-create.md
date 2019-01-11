@@ -2,12 +2,13 @@
 title: 创建 settingStateDeviceSummary
 description: 创建新的 settingStateDeviceSummary 对象。
 author: tfitzmac
-ms.openlocfilehash: 53cccf3ee6cf11daa6cec1697de89eaf7f0a7140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c6025a1ee8ff513b18d66d5b71f8c857bba9913
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867982"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

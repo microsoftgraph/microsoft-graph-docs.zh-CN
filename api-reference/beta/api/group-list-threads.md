@@ -2,12 +2,13 @@
 title: 列出线程
 description: 获取某个组的所有线程。
 author: dkershaw10
-ms.openlocfilehash: 8e46fd731b4abd2424c09fc5f226cc8769fc85d5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a15c9def749717f7134bc0a34cac868e0bc10897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870467"
 ---
 # <a name="list-threads"></a>列出线程
 

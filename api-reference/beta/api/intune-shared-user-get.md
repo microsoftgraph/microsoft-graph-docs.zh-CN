@@ -2,12 +2,13 @@
 title: 获取用户
 description: 读取 user 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: cf0ee7b2c6d9cf13176f65c174ee4b6ac986984b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e6fac98b30c9a66e159dabd816a5e5bbe350f4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869781"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -27,7 +28,7 @@ ms.locfileid: "27359687"
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -49,7 +50,7 @@ GET /users/{usersId}
 
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

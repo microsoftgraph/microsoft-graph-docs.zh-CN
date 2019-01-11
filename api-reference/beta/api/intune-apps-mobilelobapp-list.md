@@ -2,12 +2,13 @@
 title: 列出 mobileLobApps
 description: 列出 mobileLobApp 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 5e2f923c3cdbd20f333f639b7b19dbf039a714ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab338c62ff1e0212aef4ea926071819b6152654f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345001"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870159"
 ---
 # <a name="list-mobilelobapps"></a>列出 mobileLobApps
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

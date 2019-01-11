@@ -2,12 +2,13 @@
 title: 更新 deviceManagementExchangeOnPremisesPolicy
 description: 更新 deviceManagementExchangeOnPremisesPolicy 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 260f20fd73320da901eedd1b95ff9b670f78e001
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cd001f6935836537fe06bd44af20ca9e6a6aa7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305745"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873967"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>更新 deviceManagementExchangeOnPremisesPolicy
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

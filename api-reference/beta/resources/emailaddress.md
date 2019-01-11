@@ -1,12 +1,13 @@
 ---
 title: emailAddress 资源类型
 description: 表示的名称和 SMTP 地址的实体实例，例如，邮件收件人或日历所有者。
-ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5286334378aa5d208cf171ecab0bdc1777a4073b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871223"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 

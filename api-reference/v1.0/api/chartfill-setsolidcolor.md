@@ -2,12 +2,13 @@
 title: 'ChartFill: setSolidColor'
 description: 将图表元素的填充格式设置为统一颜色。
 author: lumine2008
-ms.openlocfilehash: 566b6081c0beb41269c7e60e61cd44a5d76ed6f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fceb4fcbc66282e9a53a48feeb43d8196a07f2c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868003"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -30,7 +31,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidCol
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidCol
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 

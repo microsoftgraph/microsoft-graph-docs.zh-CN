@@ -2,12 +2,13 @@
 title: androidPermissionActionType 枚举类型
 description: Android 应用程序请求危险权限时执行的操作。
 author: tfitzmac
-ms.openlocfilehash: 2a8dcb29907e58d7dd421f170a6f054328774260
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b61b284c30b35e47e741731878af78ca50121102
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869053"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>androidPermissionActionType 枚举类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "27305591"
 
 Android 应用程序请求危险权限时执行的操作。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
-|prompt|0|尚未记录|
+|提示|0|尚未记录|
 |autoGrant|1|尚未记录|
 |autoDeny|2|尚未记录|
 

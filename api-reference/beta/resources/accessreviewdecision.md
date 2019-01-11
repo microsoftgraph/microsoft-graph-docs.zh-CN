@@ -1,12 +1,13 @@
 ---
 title: accessReviewDecision 资源类型
 description: 在 Azure AD 中访问审阅功能，`accessReviewDecision`代表 Azure AD 访问检查决策的特定实体的访问。  内访问审阅或定期访问回顾实例，还有一`accessReviewDecision`每个已审阅的用户。  例如，如果组具有两个来宾和一个非访客成员，作为来宾访问审阅执行为该组，然后将两个访问审阅决策对象。  如果审阅者更改其决策，或其他审阅者重写它们，则`accessReviewDecision`更新。
-ms.openlocfilehash: 8eebbc6d99e6197da68731fe3a39d3b47e743573
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27049515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870047"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "27049515"
 
 下表说明了此类型的对象的基本属性。 
 
-| 属性                        | 类型                         | 说明                                                                                            |
+| 属性                        | 类型                         | Description                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | 内访问审阅决策的 id。                                                                                     |
 | `accessReviewId`                |`String`                      | 功能生成访问审阅的 id。                                                                                       |
@@ -39,7 +40,7 @@ ms.locfileid: "27049515"
 
 此外，其他属性可能会出现根据拥有已决定的访问权限的对象的对象类型。  例如，如果访问检查决策为特定用户的组成员身份或应用程序访问，可能要让他们要删除的访问权限的用户被标识通过这些属性：
 
-| 属性                        | 类型                         | 说明                                                                                            |
+| 属性                        | 类型                         | Description                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `userId`                            |`String`                      | 已检查其访问权限的用户的 id。                                                                                    |
 | `userDisplayName`                            |`String`                      | 已检查其访问权限的用户的显示名称。                                                                                     |

@@ -2,12 +2,13 @@
 title: deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 description: 凭据 Guard 设置的可能值。
 author: tfitzmac
-ms.openlocfilehash: 6f6c952d1c480d42db45de6345eba883ff5848a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f59fed69647ead4ccdda0523ae80571aebcb57c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871580"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346961"
 
 凭据 Guard 设置的可能值。
 ## <a name="members"></a>成员
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |notConfigured|0|关闭凭据 Guard 远程如果没有 UEFI 锁定之前配置。|
 |enableWithUEFILock|1|打开与 UEFI 锁定凭据 Guard。|
