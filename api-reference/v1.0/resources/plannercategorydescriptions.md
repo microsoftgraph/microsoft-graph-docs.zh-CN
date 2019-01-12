@@ -2,12 +2,14 @@
 title: plannerCategoryDescriptions 资源类型
 description: '**plannerCategoryDescriptions** 资源表示已为计划定义的类别的描述性标签。它属于计划详细信息对象。最多可定义 6 个类别。 '
 localization_priority: Normal
-ms.openlocfilehash: e8efd456602dd6805e5e9e9744db9c3d73f3dcbe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1cf1ee1c6e8ccc4e90f78985b352062fce37df88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984344"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions 资源类型
 

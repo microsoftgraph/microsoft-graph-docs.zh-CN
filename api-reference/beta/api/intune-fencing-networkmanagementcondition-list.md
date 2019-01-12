@@ -3,12 +3,13 @@ title: 列表 networkManagementConditions
 description: 列出属性和 networkManagementCondition 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 686c9160a2ac0ddb6efd69c83a53df567a2612c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb9c623d46b41221ad34267c5770c67e39feda00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980095"
 ---
 # <a name="list-networkmanagementconditions"></a>列表 networkManagementConditions
 

@@ -3,12 +3,13 @@ title: mobileAppContentFile 资源类型
 description: 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b27f34830c4266b35deafbc67b5c5536f10aec1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f745367a61a61511cdab35e556538631fa93962
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986087"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 

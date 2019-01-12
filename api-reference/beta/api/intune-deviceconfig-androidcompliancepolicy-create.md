@@ -3,12 +3,13 @@ title: 创建 androidCompliancePolicy
 description: 创建新的 androidCompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b5d9ca8d509254dab08b420da55700f55351a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58303104236896100cf2e4b3c81bfeed44992498
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860247"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990888"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示了创建 androidCompliancePolicy 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

@@ -3,12 +3,13 @@ title: deviceAndAppManagementRoleAssignment 资源类型
 description: 角色分配资源。 角色分配将角色定义与成员和作用域绑定在一起。 每个角色可以具有一个或多个角色分配。 这适用于自定义和内置角色。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d11149e11218270967eb33293268ed3105aa921b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 25babdf9ac37e23b9d4cc08b0e139015ff4f7c51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981551"
 ---
 # <a name="deviceandappmanagementroleassignment-resource-type"></a>deviceAndAppManagementRoleAssignment 资源类型
 

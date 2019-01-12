@@ -3,12 +3,13 @@ title: runState 枚举类型
 description: 指示设备管理脚本执行状态的类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38831625e5f3fc5f3e05b599054c738482b0a6cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2178d492b7c341ffc8f5b7af85c78f46bd3f733
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956029"
 ---
 # <a name="runstate-enum-type"></a>runState 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27845001"
 
 指示设备管理脚本执行状态的类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的结果。|
 |success|1|成功运行脚本。|

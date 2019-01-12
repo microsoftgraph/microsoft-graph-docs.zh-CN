@@ -3,12 +3,13 @@ title: 更新事件
 description: 更新 event 对象。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: dd287032c898e4a56983a77815ce12daef05dae9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 1bab9229ea6f005074bfbcce91a3f6d1c5761f54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991613"
 ---
 # <a name="update-event"></a>更新事件
 更新 [event](../resources/event.md) 对象。

@@ -3,12 +3,13 @@ title: 删除 teacher
 description: 从课程中删除教师。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 444b97fb5fa25c7863b0607455752956dc6396f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 1003a0fee736c0f713a82516e79295c25aab0d5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986115"
 ---
 # <a name="remove-teacher"></a>删除 teacher
 

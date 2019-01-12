@@ -2,12 +2,14 @@
 title: educationIdentityDomain 资源类型
 description: '代表教育用户类型和用户的帐户所属的域之间的映射。 域资源是标识创建配置的一部分。 '
 localization_priority: Normal
-ms.openlocfilehash: 5675499aca010f90deeb517210065ac4802d66b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 280ae1a65e0c14e7960d316cc21154e405f2ee0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807747"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982027"
 ---
 # <a name="educationidentitydomain-resource-type"></a>educationIdentityDomain 资源类型
 
@@ -17,7 +19,7 @@ ms.locfileid: "27807747"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **appliesTo** | string |  要分配许可证的用户角色类型。 可取值为：`student`、`teacher`。      |
 | **name** | string |  表示的用户帐户的域。         |

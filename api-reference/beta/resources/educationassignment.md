@@ -2,12 +2,14 @@
 title: educationAssignment 资源类型
 description: '**EducationAssignment**资源表示任务或工作分配给类中的学生或团队成员属于其研究单位。 只有教师或团队所有者可以创建工作分配。 分配包含讲义和教师希望学生处理的任务。 每个学生工作分配的包含其教师要求打开任何工作关联的提交。 教师可以向打开由学生提交添加分数和反馈。'
 localization_priority: Normal
-ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982258"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -53,7 +55,7 @@ ms.locfileid: "27812451"
 |status|string| **工作分配**状态。  您可以不修补程序此值。  可取值为：`draft`、`published`、`assigned`。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配关联的对象。  仅教师可以修改此列表。 可为 Null。|
 |提交|[educationSubmission](educationsubmission.md)集合| 发布后，没有表示其工作和薪等级每个学生的提交对象。  只读。 可为 Null。|

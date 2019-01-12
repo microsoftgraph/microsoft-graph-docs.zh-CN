@@ -3,12 +3,13 @@ title: administratorConfiguredDeviceComplianceState 枚举类型
 description: 管理员配置设备合规性状态枚举
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dee68ef312d54410b0a1be6c97ac338c6a240916
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 59d7e6db643cd8bf0b71e58640edf31362f11806
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829132"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980235"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 枚举类型
 

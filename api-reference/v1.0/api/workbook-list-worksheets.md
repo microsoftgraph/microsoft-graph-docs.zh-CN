@@ -3,12 +3,13 @@ title: 列出工作表
 description: 检索 worksheet 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 45938fdf3fdf0b59220351b1e88acdc1af9f11a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: dc460f702089496f3de46aaca45b4b1b3ff49d58
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849152"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980578"
 ---
 # <a name="list-worksheets"></a>列出工作表
 

@@ -3,12 +3,13 @@ title: vpnAuthenticationMethod 枚举类型
 description: VPN 身份验证方法。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6954360a273a30457819dd865b34d771d1344b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c946f531502bd3361068c813eefc39416537e942
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888723"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986178"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 枚举类型
 

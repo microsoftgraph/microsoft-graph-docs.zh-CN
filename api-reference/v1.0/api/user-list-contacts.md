@@ -3,12 +3,13 @@ title: 列出联系人
 description: 从已登录的用户默认联系人文件夹中获取联系人的集合。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: a98532bcfb839e78fba9e35d61a7ccbaa4401396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3f0f7fd86987e3d2923d8ea81a8ca7fbf87900b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889353"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984134"
 ---
 # <a name="list-contacts"></a>列出联系人
 

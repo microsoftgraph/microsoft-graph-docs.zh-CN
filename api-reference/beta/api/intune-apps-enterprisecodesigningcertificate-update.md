@@ -3,12 +3,13 @@ title: 更新 enterpriseCodeSigningCertificate
 description: 更新 enterpriseCodeSigningCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5133f5dffa98834ce44849c6b18c73cc19732756
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829314"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955112"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>更新 enterpriseCodeSigningCertificate
 

@@ -2,12 +2,13 @@
 title: sharePointActivityUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: ffbbb8c4d33c94678e8d57d1d9e69da91b22fb39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9656b39572eac5b6474dd7884eb7d1d2edb17310
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819929"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984722"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>sharePointActivityUserCounts 资源类型
 

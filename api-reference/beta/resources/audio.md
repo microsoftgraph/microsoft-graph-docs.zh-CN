@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: VinodRavichandran
 ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
-ms.openlocfilehash: ead665ee4977a563ebb6b24636b627d72a2428dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: b88fbbcd11a4cbeff56c870225d7b0bef4b32346
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985373"
 ---
 # <a name="audio-facet"></a>Audio Facet
 

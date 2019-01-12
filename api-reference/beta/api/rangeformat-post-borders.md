@@ -3,12 +3,13 @@ title: 创建 RangeBorder
 description: 使用此 API 创建新 RangeBorder。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3d6ed5337d3dc4c674739f7c3f70838757799566
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 77a140254127369cf03833486720740745f4cfe3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991473"
 ---
 # <a name="create-rangeborder"></a>创建 RangeBorder
 

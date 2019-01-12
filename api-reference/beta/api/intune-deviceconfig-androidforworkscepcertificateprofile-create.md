@@ -3,12 +3,13 @@ title: 创建 androidForWorkScepCertificateProfile
 description: 创建新的 androidForWorkScepCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f08ebb827bc67b1ab0c34fc1b89bffab7d987494
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d3d6b9e574b101a5f5ac6fd9ac2e52ba7637502
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984043"
 ---
 # <a name="create-androidforworkscepcertificateprofile"></a>创建 androidForWorkScepCertificateProfile
 

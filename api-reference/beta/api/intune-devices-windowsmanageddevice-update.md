@@ -3,12 +3,13 @@ title: 更新 windowsManagedDevice
 description: 更新 windowsManagedDevice 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7cef925cc73e28aabe15c29f28676f7c3adfc338
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ff46cc4d5a89a995a1e3e0e7f564a914abeb7d0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822727"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982776"
 ---
 # <a name="update-windowsmanageddevice"></a>更新 windowsManagedDevice
 

@@ -3,12 +3,13 @@ title: syncApps 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 98b1c94e7fecb49bd51a75f3b445354c4f6c7046
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 23325aa5c205354bedbcd924a6794a5325151d33
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824792"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985009"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 

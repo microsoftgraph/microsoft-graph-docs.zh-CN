@@ -3,12 +3,13 @@ title: 事件资源类型
 description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826759"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981145"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -111,7 +112,7 @@ ms.locfileid: "27826759"
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
 |locations|[位置](location.md)集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 事件时，该属性是设置。 此为只读属性。|
+|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 事件时，该属性是设置。 只读。|
 |organizer|[Recipient](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

@@ -2,12 +2,14 @@
 title: educationAssignmentPointsGrade 资源类型
 description: 当工作分配设置为磅薪等级类型时，每个提交将具有此对象与**submission.grade**属性关联。 这将从 educationAssignmentGrade，创建一个子类
 localization_priority: Normal
-ms.openlocfilehash: 2084a1bda6784165576c3ec454fa9ee88601c952
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: d96b84380bc7a6d2298117b5dfeaee25d943efb2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861402"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982384"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade 资源类型
 
@@ -17,7 +19,7 @@ ms.locfileid: "27861402"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |points|Single|教师的磅数提供此提交对象。|
 

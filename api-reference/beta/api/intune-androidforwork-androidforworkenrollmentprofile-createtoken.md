@@ -3,12 +3,13 @@ title: createToken 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7c39af9c77728e2ccfbc5bc4412058a3b0b8fc2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 384009c8f759ed04fdc4e5f1f9076f0b07f32fdf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985807"
 ---
 # <a name="createtoken-action"></a>createToken 操作
 

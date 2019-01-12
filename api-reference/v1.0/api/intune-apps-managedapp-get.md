@@ -3,12 +3,13 @@ title: 获取 managedApp
 description: 读取 managedApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fd4ffbde40bb712fa3c60f0bfdaed98bfd14622c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41d856c794cb112d41bd541fb157d00a6d2ee045
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982125"
 ---
 # <a name="get-managedapp"></a>获取 managedApp
 

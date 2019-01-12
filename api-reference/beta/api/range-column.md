@@ -3,12 +3,13 @@ title: Range:Column
 description: 获取范围中包含的列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 96469ba20e7e9b011e045e7e7a3303139842979e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3bd6756568830f2b77c84870037bb14624e4eaa1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841711"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980613"
 ---
 # <a name="range-column"></a>Range:Column
 

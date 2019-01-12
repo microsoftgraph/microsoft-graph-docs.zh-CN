@@ -3,12 +3,13 @@ title: 删除 managedDeviceCertificateState
 description: 删除 managedDeviceCertificateState。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5184ec7723caf6d22e657c13766f78a2922c2645
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: da38b1feaeae9911d887dfdda8ca5845be0dae80
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877600"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982531"
 ---
 # <a name="delete-manageddevicecertificatestate"></a>删除 managedDeviceCertificateState
 

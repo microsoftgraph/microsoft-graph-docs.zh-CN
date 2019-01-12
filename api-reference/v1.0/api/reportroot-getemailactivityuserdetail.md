@@ -2,12 +2,13 @@
 title: 'reportRoot: getEmailActivityUserDetail'
 description: 获取用户执行的电子邮件活动的详细信息。
 localization_priority: Priority
-ms.openlocfilehash: 4919f6ab0ea9bccb895b8c325f96d2da92488416
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 558366fec2a870d47bdc88a315fa68dd9b36bdd9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981761"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 

@@ -3,12 +3,13 @@ title: audioRoutingGroup 资源类型
 description: 音频路由组存储在进行多方对话中的参与者之间的专用音频路由。 源是参与者本身而接收器是进行多方对话中的其他参与者的子集。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980186"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 

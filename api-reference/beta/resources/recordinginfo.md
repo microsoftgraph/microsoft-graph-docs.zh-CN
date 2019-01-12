@@ -3,12 +3,13 @@ title: recordingInfo 资源类型
 description: 参与者录制信息。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 85c2710452905f97235928bae71ff60c2d22983f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08ecaa450fb1c937666068bad656b40497092363
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891936"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990136"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27891936"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | Description|
+| 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | 参与者发起录制。 |
 | status | 字符串 | 可取值为：`recordingCapable`、`notRecording`、`startedRecording`。 |

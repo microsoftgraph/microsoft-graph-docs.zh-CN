@@ -3,12 +3,13 @@ title: 获取 importedDeviceIdentityResult
 description: 读取属性和 importedDeviceIdentityResult 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 172f3f60935a44415981d5ab10b02d9d20105e08
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 18d48f8cd7b4958145111db1132a667f44d05142
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958962"
 ---
 # <a name="get-importeddeviceidentityresult"></a>获取 importedDeviceIdentityResult
 

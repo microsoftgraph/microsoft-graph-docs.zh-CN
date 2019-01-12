@@ -3,12 +3,13 @@ title: resourceOperation 资源类型
 description: " 操作用于 MobileApp 资源分配给 AAD 安全组。  无法修改内置角色的资源操作。"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e193060ca07fa79caea90dc2578364958551cd8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956323"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 

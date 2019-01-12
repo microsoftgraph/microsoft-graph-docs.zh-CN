@@ -3,12 +3,13 @@ title: 更新 deviceManagementPartner
 description: 更新 deviceManagementPartner 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8e9425968d00805eb8640ff3a7e19380a92c6dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 068a0ffb3c0411a238a803f3876874f8902e3b35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981859"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 

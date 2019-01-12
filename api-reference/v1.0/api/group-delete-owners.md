@@ -2,12 +2,14 @@
 title: 删除所有者
 description: 使用此 API 可以通过 owners 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除所有者。
 localization_priority: Normal
-ms.openlocfilehash: 7fe13b00d2e14bf69c1e3903f09d641d81f2dc0f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: f07eb16e2e7f70c3f503a5f182c015c6862ce5e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986752"
 ---
 # <a name="remove-owner"></a>删除所有者
 使用此 API 可以通过 owners 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除所有者。

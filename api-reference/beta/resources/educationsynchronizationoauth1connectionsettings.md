@@ -2,12 +2,14 @@
 title: educationSynchronizationOAuth1ConnectionSettings 资源
 description: 当 OAuth1 要用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
 localization_priority: Normal
-ms.openlocfilehash: 30c4abce27b1b9593346bcb0392581eb83c7830e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 80921488e1a5e0dd3e4ab4e21b2ea08e05ad9cee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990262"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>educationSynchronizationOAuth1ConnectionSettings 资源
 

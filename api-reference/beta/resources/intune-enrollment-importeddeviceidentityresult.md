@@ -3,12 +3,13 @@ title: importedDeviceIdentityResult 资源类型
 description: ImportedDeviceIdentityResult 资源表示尝试导入设备标识的结果。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 508a1a91fcbc580cb324285ee4eff4a93a664af0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7373ff0c0ec138b61552b61caea063a063a50ad1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981733"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>importedDeviceIdentityResult 资源类型
 
@@ -41,7 +42,7 @@ ImportedDeviceIdentityResult 资源表示尝试导入设备标识的结果。
 |说明|字符串|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)设备继承说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)中 Intune 继承的设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|布尔|导入的设备标识的状态|
+|status|Boolean|导入的设备标识的状态|
 
 ## <a name="relationships"></a>Relationships
 无

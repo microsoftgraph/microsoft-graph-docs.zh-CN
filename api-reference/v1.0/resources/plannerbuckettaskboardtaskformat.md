@@ -2,12 +2,14 @@
 title: plannerBucketTaskBoardTaskFormat 资源类型
 description: '**plannerBucketTaskBoardTaskFormat** 资源表示用于在“任务板”的“存储桶”视图（由被分配到的存储桶中的任务组成的视图）下正确呈现任务的信息。每个任务均将有一个与其相关联的 **plannerBucketTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
-ms.openlocfilehash: a4fae04147bb97a7128f7b8ad881ac9b34cb7d8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 4982b0b539412058d6d598893b698f12d88bd671
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836076"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986220"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat 资源类型
 

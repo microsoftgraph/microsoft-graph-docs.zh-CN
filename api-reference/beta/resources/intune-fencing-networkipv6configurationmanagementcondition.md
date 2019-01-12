@@ -3,12 +3,13 @@ title: networkIPv6ConfigurationManagementCondition 资源类型
 description: 配置基于管理条件可能定义设备检测到某些 IP 时将触发的 IPv6 的网络设置。 IP 配置管理条件仅被视为 TRUE 的网络连接处于活动状态时。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a5bb68ac270082df51e5d91b1e7f08bc9c1a7cbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2c7178fc522c95c870a9b34657e1afe3a407f09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879553"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983434"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 
@@ -47,7 +48,7 @@ ms.locfileid: "27879553"
 |dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|为管理 condition 相关联的管理条件语句。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 

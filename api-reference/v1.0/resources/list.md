@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
-ms.openlocfilehash: 121b65dcf67e847f507c24385f89324224b41a85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827291"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984386"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -86,7 +87,7 @@ ms.locfileid: "27827291"
 
 **list **资源具有以下属性。
 
-| 属性名称    | 类型                             | Description
+| 属性名称    | 类型                             | 说明
 |:-----------------|:---------------------------------|:---------------------------
 | **displayName**  | string                           | 列表的可显示标题。
 | **list**         | [listInfo][]                     | 提供关于列表的其他详细信息。

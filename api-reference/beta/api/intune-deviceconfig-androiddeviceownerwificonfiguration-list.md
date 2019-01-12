@@ -3,12 +3,13 @@ title: 列表 androidDeviceOwnerWiFiConfigurations
 description: 列出属性和 androidDeviceOwnerWiFiConfiguration 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed61bcd56c7a6c5307bd398385c7e53ce77cb4c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9be6c53a6d95945d30f41a356648bc494feac63a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980795"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>列表 androidDeviceOwnerWiFiConfigurations
 

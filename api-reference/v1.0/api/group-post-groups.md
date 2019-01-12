@@ -3,12 +3,13 @@ title: 创建组
 description: 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 2a3e0e20622db47d410b578249df94f3354e75ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981544"
 ---
 # <a name="create-group"></a>创建组
 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：

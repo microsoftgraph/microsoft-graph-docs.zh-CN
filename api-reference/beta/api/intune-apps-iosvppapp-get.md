@@ -3,12 +3,13 @@ title: 获取 iosVppApp
 description: 读取 iosVppApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3eb91c8356a3f50c0d7e98ee4d2e3218c5fa0f29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ec5dfd213b0dcc051eeeae2924a8431a7f624a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808447"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985387"
 ---
 # <a name="get-iosvppapp"></a>获取 iosVppApp
 

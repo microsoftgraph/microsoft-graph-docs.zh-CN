@@ -2,12 +2,14 @@
 title: 电子邮件活动报表
 description: 电子邮件活动报表可用于大致了解组织中的电子邮件流量。 此外，还可以向下钻取“电子邮件活动”小组件，了解组织中每个用户的电子邮件活动的趋势和详细信息。
 localization_priority: Priority
-ms.openlocfilehash: 7ba0a381006a0eba3c0aec8adc864f8c15c5a5f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: reports
+ms.openlocfilehash: e28e968a536b4025094ba0376973352f7d9cc949
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821425"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981782"
 ---
 # <a name="email-activity-reports"></a>电子邮件活动报表
 

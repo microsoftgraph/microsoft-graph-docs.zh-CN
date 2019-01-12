@@ -3,12 +3,13 @@ title: 创建 windows10TeamGeneralConfiguration
 description: 创建新的 windows10TeamGeneralConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1b1061e1aba8f1f3aaccc8cdc2d85565a52dadf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ae4ff125219d470b4ae8bc8462f6b234adb0714
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836615"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985996"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>创建 windows10TeamGeneralConfiguration
 

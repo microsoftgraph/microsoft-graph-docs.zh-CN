@@ -3,12 +3,13 @@ title: 创建 deviceCompliancePolicyAssignment
 description: 创建新的 deviceCompliancePolicyAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c181e7362528fe0231e2e744f59ac82d7ee333e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 541d4af1f1daab4efce46088561128e219068b2f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980942"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>创建 deviceCompliancePolicyAssignment
 

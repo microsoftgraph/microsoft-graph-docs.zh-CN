@@ -3,12 +3,13 @@ title: 删除 windows81GeneralConfiguration
 description: 删除 windows81GeneralConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ff89247afd22a8787cf7d097eb700f9ea57dbb1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f1d159d15724c107247b398b73b54086ae34334e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871853"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987179"
 ---
 # <a name="delete-windows81generalconfiguration"></a>删除 windows81GeneralConfiguration
 

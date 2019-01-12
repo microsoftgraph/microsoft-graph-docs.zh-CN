@@ -2,12 +2,14 @@
 title: plannerAssignments 资源类型
 description: '**PlannerAssignments**资源表示 plannerTask 资源的分配。 此类型为打开的类型。 在这种类型的每个属性名称 '
 localization_priority: Normal
-ms.openlocfilehash: b858aa15181a53f4bb2abf58d16662a27a8230fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 294e247346d25304a78b35e16530bf6e8791e485
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957828"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
 

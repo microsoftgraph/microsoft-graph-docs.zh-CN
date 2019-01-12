@@ -2,12 +2,13 @@
 title: 在 Microsoft Graph 中使用 Office 365 使用情况报表
 description: 通过 Microsoft Graph，可以访问 Office 365 使用情况报表资源，了解企业用户的 Office 365 服务使用情况。 例如，可以发现大量使用服务且要达到配额的用户，也可以发现可能完全不需要 Office 365 许可证的用户。
 localization_priority: Priority
-ms.openlocfilehash: f797474723676cd9c3c8695ec95276b0fb94f2a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 4e1a139b000eb1d4f1175ddc05f818aaa0072b01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853044"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987130"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Office 365 使用情况报表
 

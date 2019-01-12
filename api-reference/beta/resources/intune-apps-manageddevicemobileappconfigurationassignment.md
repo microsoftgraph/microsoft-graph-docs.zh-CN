@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfigurationAssignment 资源类型
 description: 包含用于为组分配 MDM 应用配置的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c04947c63a72ebb1476ce5c863731a876987d603
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cbac9e02a5c5cac080757264760b9c57a953065a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830175"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984974"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>managedDeviceMobileAppConfigurationAssignment 资源类型
 

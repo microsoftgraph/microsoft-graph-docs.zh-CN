@@ -2,12 +2,14 @@
 title: 使用 Microsoft Graph API 进行安全威胁检测和保护 （预览）
 description: 安全威胁的复杂程度继续升级，全球经济影响。 通常损害长之前组织甚至发现。 您可以使用 Microsoft Graph 建立或扩展的合并和关联多个来源的安全警告、 检测尝试损害用户标识和 unlock 上下文数据来告知调查，并自动给出的威胁的安全解决方案安全性操作以提高效率。
 localization_priority: Normal
-ms.openlocfilehash: f728ddbee32a25742b5e0062ff442c552121c353
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980284"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>使用 Microsoft Graph API 进行安全威胁检测和保护 （预览）
 

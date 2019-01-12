@@ -3,12 +3,13 @@ title: logoutSharedAppleDeviceActiveUser 操作
 description: 注销共享 Apple 设备活动用户
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93d33d534701d5aa1801513ae393f2cabff76dfb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd217b634c26a441d707040dbff77cf9d63478b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986451"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser 操作
 

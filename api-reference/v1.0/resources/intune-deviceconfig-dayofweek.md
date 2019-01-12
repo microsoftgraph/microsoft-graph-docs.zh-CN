@@ -3,12 +3,13 @@ title: dayOfWeek 枚举类型
 description: 工作日的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 03f9a7816c9361b5baed52756816629efa544831
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d3dc02e065b22bdff1786ea5ff71eab874ac43dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985632"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27820417"
 
 工作日的可能值
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |星期日|0|星期日。|
 |星期一|1|星期一。|

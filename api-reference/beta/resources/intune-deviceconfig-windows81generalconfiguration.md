@@ -2,12 +2,14 @@
 title: windows81GeneralConfiguration 资源类型
 description: 本主题提供由 windows81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
-ms.openlocfilehash: b25580f8e3442c4775a7aaab5b7dab74c950cd3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f76fd2d822da27572a028ea088639f70ea49734a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987914"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>windows81GeneralConfiguration 资源类型
 
@@ -76,7 +78,7 @@ ms.locfileid: "27815531"
 |workFoldersUrl|String|工作文件夹 url。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

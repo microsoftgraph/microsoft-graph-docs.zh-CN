@@ -3,12 +3,13 @@ title: 列出 managedEBooks
 description: 列出 managedEBook 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: baf4b7275d9c6709a2d8959d2f82b806d0df01f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7b9801e76f475f42f8e7f538e710d00aea63c2e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981705"
 ---
 # <a name="list-managedebooks"></a>列出 managedEBooks
 

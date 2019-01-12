@@ -3,12 +3,13 @@ title: invitationParticipantInfo 资源类型
 description: '**InvitationParticipant**用于表示一组标识相关联的对话邀请，并提供其他邀请参数。'
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8febd66915ee0b4fba26d9253cd56d67086e63bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865000"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982895"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27865000"
 
 ## <a name="properties"></a>属性
 
-| 属性                           | 类型                          | Description                                                                          |
+| 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 可取值为：`default`、`voicemail`。 |
 | identity                           | [identitySet](identityset.md) | 与此邀请关联[identitySet](identityset.md) 。                   |

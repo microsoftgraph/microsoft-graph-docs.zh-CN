@@ -2,12 +2,14 @@
 title: domainDnsUnavailableRecord 资源类型
 description: 当您的域实体的导航属性**serviceConfigurationRecords**查询时，可能会返回一个或多个 DomainDnsCnameRecord、 DomainDnsMxRecord、 DomainDnsSrvRecord，和/或 DomainDnsTxtRecord 实体。 这些实体指示您必须先将添加到区域文件域的域可由 Microsoft Online Services 何种 DNS 记录。 当不可能生成此类实体时，而被返回 DomainDnsUnavailableRecord 实体。 继承自 DomainDnsRecord 实体。
 localization_priority: Normal
-ms.openlocfilehash: 3b23eab8f4efe1d23d3a179384dbab6e9c7e7773
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 99da0448d75375b84bb37c05102c1f702c222a25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873421"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982790"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>domainDnsUnavailableRecord 资源类型
 

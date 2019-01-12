@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentFailureDetails 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980375"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 函数
 

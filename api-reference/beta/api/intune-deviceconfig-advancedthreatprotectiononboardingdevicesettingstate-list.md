@@ -3,12 +3,13 @@ title: 列表 advancedThreatProtectionOnboardingDeviceSettingStates
 description: 列出属性和 advancedThreatProtectionOnboardingDeviceSettingState 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d238b10cc9b40a6ae590617213521f067c3acc4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 018ab29513b9a44d4068cc63b67b6432cc03656d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983532"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>列表 advancedThreatProtectionOnboardingDeviceSettingStates
 

@@ -3,12 +3,13 @@ title: 用户： getMailTips
 description: 获取已登录的用户作为可用的一个或多个收件人的邮件提示。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 2577b37f6cbfa3bd6dc5eff712c07562ecdadbf2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 899524a9db73a202901800804c6061289f32f3fb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855963"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958122"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
