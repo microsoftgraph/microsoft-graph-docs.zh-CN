@@ -2,12 +2,13 @@
 title: Microsoft Graph 概述
 description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。 Microsoft Graph 提供了统一的可编程性模型，通过该模型可利用 Office 365、企业移动性 + 安全性和 Windows 10 中的大量数据。
 author: jthake-msft
-ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879910"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
@@ -46,8 +47,7 @@ Microsoft Graph 通过关系连接这些服务中的所有资源。 例如，用
 
 使用 Microsoft Graph API，你可以实现这些功能及其他更多功能。
 
->
-  **注意：** 使用 Microsoft Graph API 时，表示你同意 [Microsoft Graph 使用条款](https://developer.microsoft.com/graph/docs/misc/terms-of-use)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。
+>**注意：** 使用 Microsoft Graph API 时，表示你同意 [Microsoft Graph 使用条款](https://developer.microsoft.com/graph/docs/misc/terms-of-use)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkId=521839)。
 
 ### <a name="popular-requests"></a>常见请求
 

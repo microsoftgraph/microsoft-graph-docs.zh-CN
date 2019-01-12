@@ -3,12 +3,13 @@ title: 删除 windows81SCEPCertificateProfile
 description: 删除 windows81SCEPCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e07aad92bd0099f2244bfecf65d3e562c351aaa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f506a60eac03a0b520fbc3be582e85c2dbe81e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863999"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924165"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>删除 windows81SCEPCertificateProfile
 

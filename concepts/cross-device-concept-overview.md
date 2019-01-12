@@ -1,12 +1,14 @@
 ---
 title: Microsoft Graph 中的跨设备体验
 description: '在当今的多设备环境中，消费者使用设备的方式跨越了不同的平台和外形规格：他们可能会在其平板电脑上阅读早间新闻，在早晨上班途中用手机查看电子邮件，以及在工作时使用台式电脑。 到了晚上，他们可能会在自己的家庭媒体控制台上观看电影，并使用智能扬声器获取当天的新闻。 一般客户全天会使用多个设备和平台。 '
-ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091770"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920679"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph 中的跨设备体验
 

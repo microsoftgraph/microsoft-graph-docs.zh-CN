@@ -3,12 +3,13 @@ title: officeClientConfigurationAssignment 资源类型
 description: Office 客户端配置工作分配。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8f730a405207dbec9b08d80ec403ced4f257c36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c65d2570aba91bbd220191ad9a2fd7c7bfe06ec9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927847"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>officeClientConfigurationAssignment 资源类型
 

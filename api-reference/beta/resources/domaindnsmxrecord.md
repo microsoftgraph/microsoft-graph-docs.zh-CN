@@ -3,12 +3,13 @@ title: domainDnsMxRecord 资源类型
 description: 表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 DomainDnsRecord 实体。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c6ffa526b359eed6bafa7f38562d5d61c4f4562a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90744a9a800fd3a330b9df41299e335c5852446a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923507"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord 资源类型
 

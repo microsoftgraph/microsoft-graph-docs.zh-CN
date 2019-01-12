@@ -3,12 +3,13 @@ title: 消息：replyAll
 description: 答复邮件的所有收件人。然后邮件保存在已发送邮件文件夹中。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 8e2d9b2481e4fb0fc4e6e166dae1189baa77b7e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 838db9244f57bfde872a7793d1cd7d9b4367c6f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912657"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 

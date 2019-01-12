@@ -3,12 +3,13 @@ title: 所有者类型枚举类型
 description: 设备的所有者类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08d1021fea21b833371627dfde62f5b06399e3b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7a1151a96bccc2954097d5aafde6aa09fa0cf9e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911698"
 ---
 # <a name="ownertype-enum-type"></a>所有者类型枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27890158"
 
 设备的所有者类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
 |公司|1|由公司拥有。|

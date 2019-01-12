@@ -2,12 +2,14 @@
 title: 代表用户访问
 description: '若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 '
 author: jackson-woods
-ms.openlocfilehash: 80c421898014be09d3ffbd2213bee9e4ec20cfb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914267"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户访问
 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 

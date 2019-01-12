@@ -3,12 +3,13 @@ title: 创建邮件
 description: 使用此 API 在 mailfolder 中新建邮件。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 18c72dc42d2ced2f1aaee5819598da1e28a5c8bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 50eac4d20ff5ce82298b74dbfff2da510bd49a27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920707"
 ---
 # <a name="create-message"></a>创建邮件
 

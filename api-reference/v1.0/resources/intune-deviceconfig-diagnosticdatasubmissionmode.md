@@ -2,12 +2,14 @@
 title: diagnosticDataSubmissionMode 枚举类型
 description: 允许该设备发送诊断和使用情况的遥测数据，如 Watson。
 localization_priority: Normal
-ms.openlocfilehash: 1654e9c5c94fd79bbda0d77ef84101fb9fb92d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a293288c3891f8ecd77d422986e419d2e3d53767
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912944"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
@@ -15,7 +17,7 @@ ms.locfileid: "27812780"
 
 允许该设备发送诊断和使用情况的遥测数据，如 Watson。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|允许用户设置。|
 |无|1|从操作系统组件不发送任何遥测数据。 注意： 此值才适用于企业和服务器设备。 在其他设备上使用此设置等同于设置 1 的值。|

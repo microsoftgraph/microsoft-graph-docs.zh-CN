@@ -3,12 +3,13 @@ title: androidWorkProfileScepCertificateProfile 资源类型
 description: Androif 工作 Profile SCEP 证书配置文件
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6dc0f54fca98612a36a45d98ea66c6413a087ac0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cadd678cb1f5456c5b5b1811bb7622e6562cb43b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914736"
 ---
 # <a name="androidworkprofilescepcertificateprofile-resource-type"></a>androidWorkProfileScepCertificateProfile 资源类型
 

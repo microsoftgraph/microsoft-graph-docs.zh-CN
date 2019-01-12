@@ -2,12 +2,14 @@
 title: 创建一个目录设置
 description: 使用此 API 创建新的设置，基于 directorySettingTemplates 中可用的模板。 这些设置可以在租户级别或在对象级别 (当前只能针对组)。 创建请求必须提供 settingValues 模板中定义的所有设置。 对于组特定的设置，只能设置调控组的成员可以邀请来宾用户是否可以进行设置。 能够向组添加来宾用户通常可用后，这将控制此行为。
 localization_priority: Normal
-ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6754e8e4210da0161a6f0cd790dc355e4788e121
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921764"
 ---
 # <a name="create-a-directory-setting"></a>创建一个目录设置
 

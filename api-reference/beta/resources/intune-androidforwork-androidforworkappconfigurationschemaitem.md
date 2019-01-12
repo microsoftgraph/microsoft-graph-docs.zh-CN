@@ -2,12 +2,14 @@
 title: androidForWorkAppConfigurationSchemaItem 资源类型
 description: Android for Work 应用程序的自定义配置架构内的单个配置项。
 localization_priority: Normal
-ms.openlocfilehash: 1fb6cb56f754b6d2b100ea2f4d666e31c21efaaf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7e8500df3065c68ae8ddc2ad85413aa4d31f8980
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923451"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
 

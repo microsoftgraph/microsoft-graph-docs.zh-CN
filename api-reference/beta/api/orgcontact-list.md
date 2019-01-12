@@ -2,12 +2,14 @@
 title: 列表 orgContacts
 description: 检索为组织的组织联系人列表中。
 localization_priority: Normal
-ms.openlocfilehash: 0b4dc4a099562b8817396bee8f3141fa32c28572
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 53cfa75edeb1994cabc1f363dab79455b90ce921
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831974"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915072"
 ---
 # <a name="list-orgcontacts"></a>列表 orgContacts
 

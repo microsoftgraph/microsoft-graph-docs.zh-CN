@@ -3,12 +3,13 @@ title: 克隆团队
 description: 创建的工作组的副本。 此操作还将创建相应的组的副本。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 9239e58f28e4214ee82acad3d2c893f52fafefde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: afd0c4d1f264989a349a300201ea4a1c528fd681
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912496"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -52,7 +53,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |Classification|字符串 （可选）|介绍组 （如低、 中等或高的业务影响） 的分类。 如果未指定分类，将从原始团队组复制的分类。|
 |说明|字符串 （可选）|可选的组说明。 如果未指定此属性，它将为空。|

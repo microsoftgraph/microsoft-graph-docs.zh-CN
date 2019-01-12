@@ -2,12 +2,13 @@
 title: '使用架构扩展向组添加自定义数据 '
 description: '我们将通过一个示例逐步介绍如何使用*架构扩展*。 '
 author: dkershaw10
-ms.openlocfilehash: 101e4569d05a36a55cc264ef806df312f2667aa8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c1241133dff25769d7dc140fc086ab286093ab04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867534"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 

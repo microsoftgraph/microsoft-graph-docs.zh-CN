@@ -2,12 +2,13 @@
 title: OneNote API 概述
 description: OneNote 是一个数字笔记本，可让客户通过在 Web、手机、平板电脑或桌面上键入、草绘或语音来跟踪家庭、学校或工作方面的想法和笔记。 用户可以随意整理笔记、切换设备、接续之前的工作，以及与他人展开实时笔记协作。
 author: Jewan-microsoft
-ms.openlocfilehash: aa4f102d0e3db455fe41801b852bcc68d12f26ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825716"
 ---
 # <a name="onenote-api-overview"></a>OneNote API 概述
 

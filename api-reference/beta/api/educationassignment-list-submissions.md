@@ -3,12 +3,13 @@ title: 列表提交
 description: 列出与此工作分配关联的所有提交。 教师可以获取所有提交时学生可以仅都获取与其关联的提交。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 0b807a1b19bdb47e3b184ffdce4a15b38740c574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2a4de863b69de420e89a9272e532fa889486fc22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883208"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915184"
 ---
 # <a name="list-submissions"></a>列表提交
 

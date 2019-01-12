@@ -3,12 +3,13 @@ title: 'workbookRange: columnsBefore'
 description: 获取给定范围左侧的一定数量的列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8eff3ffd7291f9e3ae3537fc660760550b3b536e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 45c70e0e74f351cde3c74ee547e2492ee0ba05a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830112"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923563"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 

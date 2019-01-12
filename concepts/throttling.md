@@ -2,12 +2,13 @@
 title: Microsoft Graph 限制指南
 description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
 author: piotrci
-ms.openlocfilehash: d8f0c2098c76beaae65c5d84cc82e58949a0cebd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 8b3b8c5b0ec5a5209ad96f87dc677f4331c24e0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812641"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 

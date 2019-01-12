@@ -3,12 +3,13 @@ title: windows10CompliancePolicy 资源类型
 description: 此类包含 Windows 10 的合规性设置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a8fe8840254b72ace0a4665e511c939b1ad1b4de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6ec2a75ca15c9af4d1200fd4b193d825d9765a85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916150"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy 资源类型
 

@@ -3,12 +3,13 @@ title: 获取 windowsCertificateProfileBase
 description: 读取属性和 windowsCertificateProfileBase 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c1112f680c871b865b52fb48282e47a81f878a8e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6401a97d884e2512efb0b7fa266aefa4b11247ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836405"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918481"
 ---
 # <a name="get-windowscertificateprofilebase"></a>获取 windowsCertificateProfileBase
 

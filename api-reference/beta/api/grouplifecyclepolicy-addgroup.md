@@ -3,12 +3,13 @@ title: 'groupLifecyclePolicy: addGroup'
 description: 将组添加到生命周期策略。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: ac0bf455ba2d4aa5f1f6add5827124581ce663b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3909d7a25a49c95e80041a4a708a5b8e823e0c91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853359"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926622"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 

@@ -3,12 +3,13 @@ title: windowsSpotlightEnablementSettings 枚举类型
 description: 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 014ebc4aae67af4617a66822e4d5a3cbee7acabc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4327f60cb5f5154ed3f1c6754e693b5809c610b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810547"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923045"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27810547"
 
 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|聚焦锁定屏幕上的未配置|
 |禁用|1|在锁定屏幕上禁用 Windows 聚焦|

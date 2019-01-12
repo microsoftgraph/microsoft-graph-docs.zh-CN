@@ -2,12 +2,14 @@
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 description: 当 OAuth2 客户端凭据授予以用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
 localization_priority: Normal
-ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 8976c3a3a6088abd88cf70182040d4b3a6cc3f7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912888"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 

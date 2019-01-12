@@ -3,12 +3,13 @@ title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 242b9416b94072348fb1bfa1adc07d93274e45d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9d42a398a1abf4c5d0f7c4c91ee57804e0b79d11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914715"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 

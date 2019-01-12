@@ -1,12 +1,13 @@
 ---
 title: 遍历 Microsoft Graph
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
-ms.openlocfilehash: 33f9ace57c7a0c3166e43a6ca1264174962752e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863831"
 ---
 # <a name="traverse-microsoft-graph"></a>遍历 Microsoft Graph
 

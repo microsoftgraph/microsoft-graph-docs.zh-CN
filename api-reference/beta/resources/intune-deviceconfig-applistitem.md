@@ -3,12 +3,13 @@ title: appListItem 资源类型
 description: 表示托管应用程序列表中的应用
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7aab42e778ffb78db2fc85cec786d2cc25437b74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 492828fdef95815704083ec8f496e38a10dc3559
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876711"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923332"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 

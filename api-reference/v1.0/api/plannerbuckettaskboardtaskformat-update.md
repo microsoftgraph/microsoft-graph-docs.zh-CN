@@ -2,12 +2,14 @@
 title: 更新 plannerBucketTaskBoardTaskFormat
 description: 更新 **plannerBucketTaskBoardTaskFormat** 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: c021c6bf3191f99c27ed16e504b2e87c416dced3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: f5cf735121fe20200c533a6ce8c77fc8d65ccfde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926867"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>更新 plannerBucketTaskBoardTaskFormat
 

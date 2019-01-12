@@ -2,12 +2,14 @@
 title: planner 资源类型
 description: '**planner** 资源是 Planner 对象模型的入口点。其返回单一的 **planner** 资源。它不包含任何可用属性。'
 localization_priority: Normal
-ms.openlocfilehash: 9dc6904da25d7612b94649264001dcae98859925
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: cf2877d5f413f3e54e1e0e750da1f22d6f9ffd95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889094"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925180"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 

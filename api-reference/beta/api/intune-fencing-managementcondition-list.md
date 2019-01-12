@@ -3,12 +3,13 @@ title: 列表 managementConditions
 description: 列出属性和 managementCondition 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 67dc983cca014b9447095e2754b140db644c94a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41d4952e17ef5a89a4d8ae25dea50bb1ffceb799
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914585"
 ---
 # <a name="list-managementconditions"></a>列表 managementConditions
 

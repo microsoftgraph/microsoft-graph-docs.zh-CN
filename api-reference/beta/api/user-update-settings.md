@@ -3,12 +3,13 @@ title: 更新设置
 description: '更新设置对象的属性。 '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 230170f4779ed20c59dd61673d32d37e523234fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8f538d298f71ad7ef537988a29bae812015566ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870495"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913224"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -49,7 +50,7 @@ PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contributionToContentDiscoveryDisabled|布尔|设置为 true 禁用代理人访问的[趋势](../resources/insights-trending.md)API 或禁止用户访问 Office 深入中的文档。 设置为 true 还会影响的 Office 365 中显示的内容相关性-例如，建议 SharePoint 主页中的网站和中的 OneDrive for Business 的发现视图显示相关性较低的结果。 此设置反映在[Office 深入](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)的控件状态。|
 

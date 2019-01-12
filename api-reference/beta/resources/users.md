@@ -2,12 +2,14 @@
 title: 在 Microsoft Graph 中与用户一起工作
 description: 可以使用 Microsoft Graph 构建基于用户、用户与其他用户和组的关系、用户邮件、日历和文件且有说服力的应用体验。
 localization_priority: Priority
-ms.openlocfilehash: d9b699c008186f165a8be43ab4254213697710dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a5e1ed5a2403def740d92b9f77d57a58f6d1a3e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860828"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912013"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 

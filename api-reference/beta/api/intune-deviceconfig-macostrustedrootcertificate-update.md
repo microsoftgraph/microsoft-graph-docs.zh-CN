@@ -3,12 +3,13 @@ title: 更新 macOSTrustedRootCertificate
 description: 更新 macOSTrustedRootCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38e0d22621dfb7fa59d55ffc292fc4ea18addb73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c31cb18c7678a70e98368ea6098f7b8190047013
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890830"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925026"
 ---
 # <a name="update-macostrustedrootcertificate"></a>更新 macOSTrustedRootCertificate
 

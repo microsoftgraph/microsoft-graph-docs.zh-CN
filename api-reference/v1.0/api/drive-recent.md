@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出最近使用的文件
 localization_priority: Normal
-ms.openlocfilehash: ede3f5683dc17d1de82dbc94acc06cc531cecfdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3548a708084da5b5c22bd31be1130630a577d7bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888268"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922723"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 

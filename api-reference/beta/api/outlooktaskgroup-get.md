@@ -3,12 +3,13 @@ title: 获取 outlookTaskGroup
 description: 要获取的属性和指定 Outlook 任务组的关系。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 00abd783f8fa9ff726f5ada8f286529beddc9073
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 8886d3b46deadde698b3a9ffb8922de5bf6ab031
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816770"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915023"
 ---
 # <a name="get-outlooktaskgroup"></a>获取 outlookTaskGroup
 

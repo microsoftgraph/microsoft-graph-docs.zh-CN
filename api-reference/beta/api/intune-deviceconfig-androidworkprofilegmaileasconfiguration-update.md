@@ -3,12 +3,13 @@ title: 更新 androidWorkProfileGmailEasConfiguration
 description: 更新 androidWorkProfileGmailEasConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 37d1b966f3476994a97bc72b5d751c2e0bde1e4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3dbbb8cd513ad4e4de3e32ca6f9aa97db9c4be09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887484"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926685"
 ---
 # <a name="update-androidworkprofilegmaileasconfiguration"></a>更新 androidWorkProfileGmailEasConfiguration
 

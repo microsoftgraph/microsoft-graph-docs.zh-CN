@@ -3,12 +3,13 @@ title: androidManagedStoreAccountEnrollmentTarget 枚举类型
 description: Android 的目标设定的帐户类型的工作设备管理
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0c37b234e128f27694aafbf75b5083622bf39fe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f803663c6aa4286558c06d0b9ce9dee70097fa05
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919314"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>androidManagedStoreAccountEnrollmentTarget 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27852428"
 
 Android 的目标设定的帐户类型的工作设备管理
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
 |all|1|尚未记录|

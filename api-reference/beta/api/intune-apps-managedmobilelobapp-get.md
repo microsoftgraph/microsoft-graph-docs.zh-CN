@@ -3,12 +3,13 @@ title: 获取 managedMobileLobApp
 description: 读取 managedMobileLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9509eb8c7feb2f4acd8487f0fafde37e3130eda
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce9431d8c724c9b95eadb27c37dfa068381ca795
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925810"
 ---
 # <a name="get-managedmobilelobapp"></a>获取 managedMobileLobApp
 

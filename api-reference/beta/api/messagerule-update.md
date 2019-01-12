@@ -3,12 +3,13 @@ title: 更新规则
 description: 为 messageRule 对象更改可写属性并保存更改。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 3b034c7c428821c23b92d78644b43de9d7a2946d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ce58fd5c3a1156273cec9c62f322d4fe198d03f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919902"
 ---
 # <a name="update-rule"></a>更新规则
 

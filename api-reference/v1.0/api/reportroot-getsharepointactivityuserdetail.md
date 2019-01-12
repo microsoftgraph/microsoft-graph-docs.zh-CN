@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointActivityUserDetail'
 description: 获取用户执行的 SharePoint 活动的详细信息。
 localization_priority: Normal
-ms.openlocfilehash: b854e74db351ee2f3fb890ade26da9ec0cd21341
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 712866e33ef2859aad0f222a257842eceb4aae02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925376"
 ---
 # <a name="reportroot-getsharepointactivityuserdetail"></a>reportRoot: getSharePointActivityUserDetail
 

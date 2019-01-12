@@ -2,12 +2,13 @@
 title: Microsoft Graph 中的主要服务和功能
 description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 author: jthake-msft
-ms.openlocfilehash: 6f4403db3179afadb39dfb20613f284381650112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820683"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 

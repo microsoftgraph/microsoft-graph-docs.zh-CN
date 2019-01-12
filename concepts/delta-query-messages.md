@@ -2,12 +2,13 @@
 title: 获取文件夹中邮件的增量更改
 description: Delta 查询可通过一系列的查询文件夹中查询邮件的添加、删除或更新。
 author: piotrci
-ms.openlocfilehash: 4325826ee3d94766fac5bb345d4311bd03b1fb89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0200c49c1a673a338af793649bb67f9628c2e8f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820907"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 

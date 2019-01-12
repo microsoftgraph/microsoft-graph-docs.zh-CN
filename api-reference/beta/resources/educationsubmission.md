@@ -3,12 +3,13 @@ title: educationSubmission 资源类型
 description: 提交归工作分配。 提交表示的资源的个人 （或组） 打开中的工作分配和返回薪等级/反馈。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9cbfaa46d979e3796ae9128e212bfaa1f6bf8453
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847815"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920875"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27847815"
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|学生使用 unsubmit 将提交的状态从提交后移至工作。 这会将资源复制到评分的**workingResources**文件夹，并更新状态。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |反馈|[educationFeedback](educationfeedback.md)|保留反馈属性存储回学生教师的注释。|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|包含教师将分配给此提交的薪等级信息。|
@@ -50,7 +51,7 @@ ms.locfileid: "27847815"
 |unsubmittedDateTime|DateTimeOffset|当提交已移动从提交到工作状态时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。可为 NULL。|

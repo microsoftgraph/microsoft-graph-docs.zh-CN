@@ -3,12 +3,13 @@ title: 创建 networkIPv4ConfigurationManagementCondition
 description: 创建新的 networkIPv4ConfigurationManagementCondition 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06ec52303deb9bb000441dd0c4c47707a6e41863
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 94886054bb0fc9d58d6bbf771aed4d0473e00f6b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824757"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919167"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 

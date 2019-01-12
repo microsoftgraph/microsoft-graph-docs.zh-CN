@@ -3,12 +3,13 @@ title: 获取 deviceCategory
 description: 读取 deviceCategory 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba5fdee5ba2290b25bdf9485b94307f0f637649a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c2fac1d5bb242d77a3fbbce110d0bf8e4a2e30e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872189"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922450"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 

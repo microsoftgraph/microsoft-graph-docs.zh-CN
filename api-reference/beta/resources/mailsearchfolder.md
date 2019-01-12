@@ -2,12 +2,14 @@
 title: mailSearchFolder 资源类型
 description: MailSearchFolder 是虚拟文件夹中包含与指定的搜索条件匹配的所有电子邮件项目的用户的邮箱。 mailSearchFolder 继承 mailFolder。
 localization_priority: Normal
-ms.openlocfilehash: 62d4d8569977c99690e317a39a43bbc9d9dca3f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 1ba9ce248071e3d806383b4cd7e7550c1e3aa145
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920910"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
@@ -28,7 +30,7 @@ MailSearchFolder 是虚拟文件夹中包含与指定的搜索条件匹配的所
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | isSupported | 布尔 | 指示搜索文件夹是否可编辑使用 REST Api。 |
 | includeNestedFolders | 布尔 | 指示应如何遍历的邮箱文件夹层次结构。 `true`意味着应为深入搜索完成时`false`意味着浅表搜索应改为完成。 |

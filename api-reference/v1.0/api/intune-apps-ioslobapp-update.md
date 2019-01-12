@@ -2,12 +2,14 @@
 title: 更新 iosLobApp
 description: 更新 iosLobApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: cffa5603cf92bd8e45c95ebb805618c1293851eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 5cef30bc5d89b369e81042ce02ba0c1dba26297d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914575"
 ---
 # <a name="update-ioslobapp"></a>更新 iosLobApp
 
@@ -36,7 +38,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

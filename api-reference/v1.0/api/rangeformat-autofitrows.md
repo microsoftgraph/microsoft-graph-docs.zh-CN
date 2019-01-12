@@ -2,12 +2,14 @@
 title: 'RangeFormat: autofitRows'
 description: 根据列中的当前数据，更改当前范围的行高以达到最佳高度。
 localization_priority: Normal
-ms.openlocfilehash: 9bb515ef8f179392dc9214e0326e72c317e649ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ae098ca449f5b42433dd8b6fbdb8c043c45af902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840836"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914302"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 

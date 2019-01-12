@@ -2,12 +2,13 @@
 title: 'reportRoot: getEmailAppUsageAppsUserCounts'
 description: 获取每个电子邮件应用的唯一用户数。
 localization_priority: Normal
-ms.openlocfilehash: c9a05532f1dcbe3db4718ac2b551278af9691011
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 6befae80844ca88eb8668564acacac64d3003bb2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875850"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912041"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 

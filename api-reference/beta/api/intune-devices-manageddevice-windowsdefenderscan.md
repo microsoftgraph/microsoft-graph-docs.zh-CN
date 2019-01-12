@@ -3,12 +3,13 @@ title: windowsDefenderScan 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2dc9f1abd2b9d938b286e2f585b427e97b0b54cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a3ac226f5169f96f87186bdde2cc54a5c55e651
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915870"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 

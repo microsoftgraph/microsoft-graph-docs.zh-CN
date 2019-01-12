@@ -3,12 +3,13 @@ title: 获取 mobileAppIntentAndState
 description: 读取属性和 mobileAppIntentAndState 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08fe2f0478e25d8941441e276c7a7a3c4eb8dc38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2734729c83f2b9202a03a6f0e98f70f9c5a63f72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919769"
 ---
 # <a name="get-mobileappintentandstate"></a>获取 mobileAppIntentAndState
 

@@ -2,12 +2,14 @@
 title: mailFolder 资源类型
 description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 localization_priority: Normal
-ms.openlocfilehash: a44819f0248e8d6e410e2c6bd57e727ae719b1d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881618"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923255"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 

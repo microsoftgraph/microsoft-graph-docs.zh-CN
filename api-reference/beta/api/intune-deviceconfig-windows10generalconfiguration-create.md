@@ -3,12 +3,13 @@ title: 创建 windows10GeneralConfiguration
 description: 创建新的 windows10GeneralConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6abaa9a330c564b38a1c30457b0c0bf3dcd491c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cd5c8d2a12ba3407a2c4b2086b0debda5b891fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919174"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: 将 Office 365 帐户与 Azure AD 相关联以创建和管理应用
 description: '若要使用 Microsoft Azure Active Directory (Azure AD) 验证应用，必须在 Azure AD 中注册应用。这也是存储 Office 365 用户帐户和应用信息的位置。必须有 Microsoft Azure 订阅，才能通过 Azure 门户管理 Azure AD。可以使用 Microsoft Azure 门户管理用户、角色和应用。 '
-ms.openlocfilehash: 1a0935a88d985d8be72197c2652586bbbc19bd1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880155"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>将 Office 365 帐户与 Azure AD 关联以创建和管理应用
 

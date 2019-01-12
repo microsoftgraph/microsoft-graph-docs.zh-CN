@@ -3,12 +3,13 @@ title: 强制域删除
 description: 删除使用长时间运行的异步操作的域。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 22ad640195fa9b14e0407a479438bf618d8f19c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831351"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918425"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
@@ -59,7 +60,7 @@ POST /domains/{id}/forceDelete
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型 | Description |
+| 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| 若要禁用其重命名用户帐户的选项。 如果禁用的用户帐户，则用户将不允许登录。 如果设置为**true** `users`更新为属于此操作将被禁用。  默认值为**true**。 |
 

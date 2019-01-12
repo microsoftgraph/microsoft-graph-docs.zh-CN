@@ -3,12 +3,13 @@ title: importedAppleDeviceIdentityResult 资源类型
 description: ImportedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的结果。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47d9087bde8a0ff8fdc5a605fe6eb98cb05007bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af503c48707bd234c35916ea63eb3fbe5775958f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886196"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912363"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult 资源类型
 

@@ -2,12 +2,14 @@
 title: Microsoft Graph 数据连接（预览）入门
 description: 'Office 365 管理员必须先执行两个操作，以便管理员能够通过 Privileged Access Management (PAM) 控制数据移动，之后你才可以使用 Microsoft Graph 数据连接。 '
 author: ajacks-msft
-ms.openlocfilehash: 1cd8d5734b0fd8b48df8a49fe0a833583c21148d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: f7426147908a2ded298bee065c05afffc182cd4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914442"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Microsoft Graph 数据连接（预览）入门
 

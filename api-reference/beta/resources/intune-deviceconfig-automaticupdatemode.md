@@ -3,12 +3,13 @@ title: automaticUpdateMode 枚举类型
 description: 自动更新模式的的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08389dca4379b6fc0222068545ebb9bed250ba94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 20aa217838848af6d85c023fd6587afe3427e82b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863411"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913266"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 

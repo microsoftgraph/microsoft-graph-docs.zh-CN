@@ -3,12 +3,13 @@ title: macOSEndpointProtectionConfiguration 资源类型
 description: MacOS 终结点保护配置配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c94580ba513383403eafba6f24ebc9c2d5aa9e13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1fe7383dd1ad1e914d7c6d4a28949309492b494
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808482"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918222"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration 资源类型
 
@@ -48,7 +49,7 @@ MacOS 终结点保护配置配置文件。
 |firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)集合|具有防火墙设置的应用程序的列表。 由用户决定不在此列表上的应用程序的防火墙设置。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

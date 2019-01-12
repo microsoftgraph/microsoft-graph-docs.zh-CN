@@ -3,12 +3,13 @@ title: 删除组
 description: 删除组。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 9eb46ffbfe767accee457f9b5b6dc292891fb95c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 75b5d03cb5bce93966efc1495fd4284060580189
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865077"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916451"
 ---
 # <a name="delete-group"></a>删除组
 

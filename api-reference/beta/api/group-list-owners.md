@@ -2,12 +2,14 @@
 title: 列出所有者
 description: 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。
 localization_priority: Normal
-ms.openlocfilehash: d173b7a350d4aedbf1ec96b0b5e37da70e87d078
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: f9b1f56dbd8499f7e7635a00144a9d14faf8b806
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916486"
 ---
 # <a name="list-owners"></a>列出所有者
 

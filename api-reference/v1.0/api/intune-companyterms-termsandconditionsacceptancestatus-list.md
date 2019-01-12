@@ -3,12 +3,13 @@ title: 列出 termsAndConditionsAcceptanceStatuses
 description: 列出 termsAndConditionsAcceptanceStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50056f192fb91fb6b2f6922824ab35a5138f5fd7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8465e4c39d0a7af61e13ce45a107afb69e4a6473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816917"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911747"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>列出 termsAndConditionsAcceptanceStatuses
 

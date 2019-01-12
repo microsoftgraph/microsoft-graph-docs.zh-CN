@@ -2,12 +2,13 @@
 title: 打开 OneNote 客户端
 description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
 author: Jewan-microsoft
-ms.openlocfilehash: df1aa569eb4f097bc4ca7ea6da191b72d40296cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f6d07c4a32f3e25c715172a2d18aa09c042920
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858343"
 ---
 # <a name="open-the-onenote-client"></a>打开 OneNote 客户端
 

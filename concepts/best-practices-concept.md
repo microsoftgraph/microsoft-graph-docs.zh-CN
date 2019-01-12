@@ -1,12 +1,13 @@
 ---
 title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
-ms.openlocfilehash: 0693999712c33e74bb3ad4d691cd835d239254be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826549"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 

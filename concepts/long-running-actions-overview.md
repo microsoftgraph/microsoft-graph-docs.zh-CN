@@ -1,12 +1,13 @@
 ---
 title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
-ms.openlocfilehash: 73e00efd88b2656cc842c3c46f8a2241315ba184
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868052"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 

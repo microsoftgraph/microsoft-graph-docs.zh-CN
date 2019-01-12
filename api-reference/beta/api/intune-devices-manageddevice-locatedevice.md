@@ -3,12 +3,13 @@ title: locateDevice 操作
 description: 查找设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f7719fd2e306ceaa1169afebb54ee6cec5c6061
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bab0b60c744f7ee588af385ab35f9cd6b58acb35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913134"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 

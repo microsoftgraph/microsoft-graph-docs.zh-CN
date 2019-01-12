@@ -3,12 +3,13 @@ title: 创建 iosScepCertificateProfile
 description: 创建新的 iosScepCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ef2ab2b9d93ca5a343ecc7836a5e22f1660f899
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ef9955b876ae43cacd163968ddbfb8f72b91f9ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924977"
 ---
 # <a name="create-iosscepcertificateprofile"></a>创建 iosScepCertificateProfile
 

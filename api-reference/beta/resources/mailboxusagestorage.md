@@ -2,12 +2,14 @@
 title: mailboxUsageStorage 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: dcabfab0e8a64f2d74442f7d7464708501a59b95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 44b97c7b18264e01c86b34bfd8265246f80ab031
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917865"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>mailboxUsageStorage 资源类型
 

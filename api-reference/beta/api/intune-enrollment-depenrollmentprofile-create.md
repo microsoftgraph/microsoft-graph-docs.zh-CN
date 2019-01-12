@@ -3,12 +3,13 @@ title: 创建 depEnrollmentProfile
 description: 创建新的 depEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c7936af86b25fbf0c4e022adef0bc387c56b196
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96a9b1256aa62e14140b533a7980774ace7ba115
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919041"
 ---
 # <a name="create-depenrollmentprofile"></a>创建 depEnrollmentProfile
 

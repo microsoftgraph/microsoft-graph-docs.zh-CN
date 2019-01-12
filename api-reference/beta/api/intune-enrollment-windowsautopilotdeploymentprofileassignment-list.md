@@ -3,12 +3,13 @@ title: 列表 windowsAutopilotDeploymentProfileAssignments
 description: 列出属性和 windowsAutopilotDeploymentProfileAssignment 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a73f7b8b22d07860af1402b1b780ef5d248f7c79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 945b5198908dedf3adce9db9e8878f8309327d45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914953"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>列表 windowsAutopilotDeploymentProfileAssignments
 

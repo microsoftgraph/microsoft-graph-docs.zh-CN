@@ -3,12 +3,13 @@ title: 呼叫： 重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809469"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921722"
 ---
 # <a name="call-redirect"></a>呼叫： 重定向
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |目标|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
 |targetDisposition|字符串|可能的值是：`default`|

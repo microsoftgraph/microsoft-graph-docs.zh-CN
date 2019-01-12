@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts'
 description: 获取使用情况趋势，即组织中召开的对等会话的唯一用户数和类型。 对等会话类型包括 IM、音频、视频、应用共享和文件传输。
 localization_priority: Normal
-ms.openlocfilehash: 466a725b9dd9f357c082d48817b5134e702c8b30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1b208c57a18e5803021921d2eee8bb2486ad8bf8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891866"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928421"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 

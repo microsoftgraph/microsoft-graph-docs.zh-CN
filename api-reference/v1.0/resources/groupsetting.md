@@ -3,12 +3,13 @@ title: groupSetting 资源类型
 description: 组设置控制行为，如组显示名称的禁止使用的词语列表，或是否允许来宾用户成为组所有者。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 4508de9c03820031e47e3457e24dc39ed14c36a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911691"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 

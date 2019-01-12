@@ -3,12 +3,13 @@ title: shareForSchoolDataSyncService 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 12fea3192dc5aa1e4c2c2416565126d2b8b47fc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 81dd0c8e4204ea2791f425cb7def9ba566942e20
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913672"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>shareForSchoolDataSyncService 操作
 

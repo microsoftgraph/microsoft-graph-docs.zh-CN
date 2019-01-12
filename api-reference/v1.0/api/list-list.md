@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Priority
-ms.openlocfilehash: baccdaee1bd584ebe92c1c10a151ce1ce9fc1ff6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: dca2a7813c009034a1023a25d7101ab3df2351cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917802"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 

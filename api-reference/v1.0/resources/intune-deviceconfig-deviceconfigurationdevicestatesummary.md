@@ -3,12 +3,13 @@ title: deviceConfigurationDeviceStateSummary 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 24da8858e899b8781763cccb22306a6a219848b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa887cd1ac6a4dec3f95037e0fdfdf22ad18ee6e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914701"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>deviceConfigurationDeviceStateSummary 资源类型
 

@@ -3,12 +3,13 @@ title: 更新工作表
 description: 更新 worksheet 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: edf8f11bf446f28f63a27397865b873b69d76b20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 651900f00e842640b292deef7569efde1701939b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915548"
 ---
 # <a name="update-worksheet"></a>更新工作表
 

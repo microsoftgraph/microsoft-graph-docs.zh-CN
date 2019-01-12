@@ -3,12 +3,13 @@ title: 获取 managedDeviceMobileAppConfigurationDeviceSummary
 description: 读取 managedDeviceMobileAppConfigurationDeviceSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: df5a9fbb686f4deaa324c8fdb4858e5b6686e6db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 918ea1f477791f3214833af55c6d2b5cd5f43987
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912321"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>获取 managedDeviceMobileAppConfigurationDeviceSummary
 
