@@ -3,12 +3,13 @@ title: windowsUpdateForBusinessConfiguration 资源类型
 description: 适用于企业的 Windows 更新配置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 80dea5feb7e78dea9863552af1b79237e0e8bd70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79e2c453f3f0d7bff897d0f1236fe2d24ec4042c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820410"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976014"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 

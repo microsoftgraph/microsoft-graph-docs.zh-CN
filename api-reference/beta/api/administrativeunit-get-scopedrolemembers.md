@@ -3,12 +3,13 @@ title: 获取 scopedRoleMember
 description: 检索特定 scopedRoleMembership 资源。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: eb014bba18fabaeaf1bd2a118ed0adce3b15122d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bf707c4bca33302286ab686cf74d9faba63fac7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971702"
 ---
 # <a name="get-a-scopedrolemember"></a>获取 scopedRoleMember
 

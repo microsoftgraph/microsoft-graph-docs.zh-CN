@@ -3,12 +3,13 @@ title: 提示资源类型
 description: 提示操作基类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2ea047ce21cb339f65bd6af8f361b2e91cd443f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 98b7a47ffedbe11d0222ec230e12ef4d52e4e4a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984302"
 ---
 # <a name="prompt-resource-type"></a>提示资源类型
 

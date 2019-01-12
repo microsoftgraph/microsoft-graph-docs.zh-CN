@@ -3,12 +3,13 @@ title: defenderScanType 枚举类型
 description: 系统的可能值扫描类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4fb262bdd32d1c576a0c7cec4262dedfef1d3f63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f34dde568482bae643dc3ad13f926429a6e210c4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889360"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975419"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27889360"
 
 系统的可能值扫描类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |禁用|1|系统禁用扫描。|

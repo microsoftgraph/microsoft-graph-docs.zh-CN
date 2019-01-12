@@ -3,12 +3,13 @@ title: 列出 windowsInformationProtectionPolicies
 description: 列出 windowsInformationProtectionPolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 695fc2356b02f19f1dbc418d6e60ef37c4deedbd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f83456bd06216a27f36a94c569e774278836cbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975594"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>列出 windowsInformationProtectionPolicies
 

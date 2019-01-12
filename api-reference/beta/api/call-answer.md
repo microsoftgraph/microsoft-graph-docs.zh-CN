@@ -3,12 +3,13 @@ title: 呼叫： 答案
 description: 应答传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 98d3f54e87e36de6c8f492644be1b47486b48d39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d3927c41df6558b1c0d266afbdb25f1c12ac1e49
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971611"
 ---
 # <a name="call-answer"></a>呼叫： 答案
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |Description                                                                                                                                    |
+| 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |字符串                                    |将在其传递回调回调或订阅 ID。 （必需）                                                               |
 |acceptedModalities|String 集合                         |列表接受形式。 可能的值是： `unknown`， `audio`， `video`， `screenSharing`， `videoBasedScreenSharing`， `data`。 （必需） |

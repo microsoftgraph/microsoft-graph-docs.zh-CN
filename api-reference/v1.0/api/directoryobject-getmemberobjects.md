@@ -2,12 +2,14 @@
 title: 获取成员对象
 description: " 返回 user、group 或 directory 对象所属的所有组和目录角色。此函数是可传递的。 "
 localization_priority: Normal
-ms.openlocfilehash: b7c4c09991d31141e12fb6cd900309f81e22f8e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 03d70d0b26746f42f920daf3666ca37db5f1e15b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815908"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957149"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 

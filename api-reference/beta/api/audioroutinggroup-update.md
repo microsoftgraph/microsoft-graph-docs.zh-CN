@@ -3,12 +3,13 @@ title: 更新音频路由组
 description: 源和接收器 audioRoutingGroup 的修改。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ca6e77e71abb7d7a934944ce7fd4de10d79e1a94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833836"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956904"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -40,7 +41,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性       | 类型    |Description|
+| 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 | 接收器 | String 集合 | AudioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |

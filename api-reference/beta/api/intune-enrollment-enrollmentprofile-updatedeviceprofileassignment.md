@@ -3,12 +3,13 @@ title: updateDeviceProfileAssignment 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d8423468957225c4dc79ad15b5c7d91199243ba0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92eadbdc08d89c01a86cdd0e6e030d92332c9b9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818765"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975342"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment 操作
 
@@ -47,7 +48,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceIds|String collection|尚未记录|
 

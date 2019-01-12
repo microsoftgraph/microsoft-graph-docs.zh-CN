@@ -3,12 +3,13 @@ title: 获取 dataSharingConsent
 description: 读取属性和 dataSharingConsent 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e24ba52caab0f2259426e483d4b03a14a195617a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac6942defd85432e202f37fddee8d79ae9ff5d7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807831"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979514"
 ---
 # <a name="get-datasharingconsent"></a>获取 dataSharingConsent
 

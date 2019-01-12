@@ -3,12 +3,13 @@ title: iosDeviceType 资源类型
 description: 包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ffa46d1e8fb693822051250fb4a722815b1dcb73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b541310ced9c9aaa781077639203950d00f56f27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976749"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 

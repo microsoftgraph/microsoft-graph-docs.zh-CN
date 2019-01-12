@@ -3,12 +3,13 @@ title: 更新 tablecolumn
 description: 更新 tablecolumn 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 794c3a8d050afb42811feacf135af6c706cea6b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3b89b2890122b3499b0fa52778ce6dfe703f1f24
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864335"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987123"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
