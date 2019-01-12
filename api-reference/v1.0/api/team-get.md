@@ -3,65 +3,66 @@ title: 获取工作组
 description: 检索的属性和指定团队的关系。
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 3efec6e9b767d026d0a7626c2da257feaa20fde3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0221983538f14ef3f0c0439f8241974091e8dc0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943135"
 ---
-# <a name="get-team"></a><span data-ttu-id="10543-103">获取工作组</span><span class="sxs-lookup"><span data-stu-id="10543-103">Get team</span></span>
+# <a name="get-team"></a><span data-ttu-id="b4afa-103">获取工作组</span><span class="sxs-lookup"><span data-stu-id="b4afa-103">Get team</span></span>
 
 
 
-<span data-ttu-id="10543-104">检索的属性和指定[团队](../resources/team.md)的关系。</span><span class="sxs-lookup"><span data-stu-id="10543-104">Retrieve the properties and relationships of the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="b4afa-104">检索的属性和指定[团队](../resources/team.md)的关系。</span><span class="sxs-lookup"><span data-stu-id="b4afa-104">Retrieve the properties and relationships of the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10543-105">权限</span><span class="sxs-lookup"><span data-stu-id="10543-105">Permissions</span></span>
-<span data-ttu-id="10543-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="10543-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b4afa-105">权限</span><span class="sxs-lookup"><span data-stu-id="b4afa-105">Permissions</span></span>
+<span data-ttu-id="b4afa-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b4afa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10543-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="10543-108">Permission type</span></span>      | <span data-ttu-id="10543-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="10543-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b4afa-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b4afa-108">Permission type</span></span>      | <span data-ttu-id="b4afa-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b4afa-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10543-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10543-110">Delegated (work or school account)</span></span> | <span data-ttu-id="10543-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10543-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="10543-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10543-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10543-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="10543-113">Not supported.</span></span>    |
-|<span data-ttu-id="10543-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="10543-114">Application</span></span> | <span data-ttu-id="10543-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10543-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b4afa-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b4afa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b4afa-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4afa-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b4afa-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b4afa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4afa-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="b4afa-113">Not supported.</span></span>    |
+|<span data-ttu-id="b4afa-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b4afa-114">Application</span></span> | <span data-ttu-id="b4afa-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4afa-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="10543-116">**注意**： 此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="10543-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="10543-117">全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。</span><span class="sxs-lookup"><span data-stu-id="10543-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="b4afa-116">**注意**： 此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="b4afa-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="b4afa-117">全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。</span><span class="sxs-lookup"><span data-stu-id="b4afa-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="10543-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="10543-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4afa-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b4afa-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="10543-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="10543-119">Optional query parameters</span></span>
-<span data-ttu-id="10543-120">此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。</span><span class="sxs-lookup"><span data-stu-id="10543-120">This method supports the $select and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b4afa-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b4afa-119">Optional query parameters</span></span>
+<span data-ttu-id="b4afa-120">此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。</span><span class="sxs-lookup"><span data-stu-id="b4afa-120">This method supports the $select and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="10543-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="10543-121">Request headers</span></span>
-| <span data-ttu-id="10543-122">标头</span><span class="sxs-lookup"><span data-stu-id="10543-122">Header</span></span>       | <span data-ttu-id="10543-123">值</span><span class="sxs-lookup"><span data-stu-id="10543-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b4afa-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="b4afa-121">Request headers</span></span>
+| <span data-ttu-id="b4afa-122">标头</span><span class="sxs-lookup"><span data-stu-id="b4afa-122">Header</span></span>       | <span data-ttu-id="b4afa-123">值</span><span class="sxs-lookup"><span data-stu-id="b4afa-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="10543-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="10543-124">Authorization</span></span>  | <span data-ttu-id="10543-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="10543-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b4afa-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4afa-124">Authorization</span></span>  | <span data-ttu-id="b4afa-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b4afa-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="10543-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="10543-127">Request body</span></span>
-<span data-ttu-id="10543-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="10543-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b4afa-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b4afa-127">Request body</span></span>
+<span data-ttu-id="b4afa-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b4afa-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10543-129">响应</span><span class="sxs-lookup"><span data-stu-id="10543-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b4afa-129">响应</span><span class="sxs-lookup"><span data-stu-id="b4afa-129">Response</span></span>
 
-<span data-ttu-id="10543-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[团队](../resources/team.md)对象。</span><span class="sxs-lookup"><span data-stu-id="10543-130">If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="10543-131">示例</span><span class="sxs-lookup"><span data-stu-id="10543-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="10543-132">请求</span><span class="sxs-lookup"><span data-stu-id="10543-132">Request</span></span>
-<span data-ttu-id="10543-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="10543-133">The following is an example of the request.</span></span>
+<span data-ttu-id="b4afa-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[团队](../resources/team.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b4afa-130">If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b4afa-131">示例</span><span class="sxs-lookup"><span data-stu-id="b4afa-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b4afa-132">请求</span><span class="sxs-lookup"><span data-stu-id="b4afa-132">Request</span></span>
+<span data-ttu-id="b4afa-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b4afa-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="10543-134">响应</span><span class="sxs-lookup"><span data-stu-id="10543-134">Response</span></span>
-<span data-ttu-id="10543-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="10543-135">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b4afa-134">响应</span><span class="sxs-lookup"><span data-stu-id="b4afa-134">Response</span></span>
+<span data-ttu-id="b4afa-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b4afa-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="10543-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="10543-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="b4afa-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b4afa-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,

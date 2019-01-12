@@ -2,30 +2,31 @@
 title: 'reportRoot: getYammerDeviceUsageDistributionUserCounts'
 description: 按设备类型获取用户数。
 localization_priority: Normal
-ms.openlocfilehash: 678c3c485df198809c168be22997a4c4c3c7e489
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 749f24f7c24d3e903e00c5208133527741d8517c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885167"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930815"
 ---
-# <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a><span data-ttu-id="89992-103">reportRoot: getYammerDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="89992-103">reportRoot: getYammerDeviceUsageDistributionUserCounts</span></span>
+# <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a><span data-ttu-id="fa971-103">reportRoot: getYammerDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="fa971-103">reportRoot: getYammerDeviceUsageDistributionUserCounts</span></span>
 
-<span data-ttu-id="89992-104">按设备类型获取用户数。</span><span class="sxs-lookup"><span data-stu-id="89992-104">Get the number of users by device type.</span></span>
+<span data-ttu-id="fa971-104">按设备类型获取用户数。</span><span class="sxs-lookup"><span data-stu-id="fa971-104">Get the number of users by device type.</span></span>
 
-> <span data-ttu-id="89992-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。</span><span class="sxs-lookup"><span data-stu-id="89992-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span></span>
+> <span data-ttu-id="fa971-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。</span><span class="sxs-lookup"><span data-stu-id="fa971-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="89992-106">权限</span><span class="sxs-lookup"><span data-stu-id="89992-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa971-106">权限</span><span class="sxs-lookup"><span data-stu-id="fa971-106">Permissions</span></span>
 
-<span data-ttu-id="89992-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="89992-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa971-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa971-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="89992-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="89992-109">Permission type</span></span>                        | <span data-ttu-id="89992-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="89992-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fa971-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa971-109">Permission type</span></span>                        | <span data-ttu-id="fa971-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fa971-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="89992-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="89992-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="89992-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="89992-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="89992-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="89992-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89992-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="89992-114">Not supported.</span></span>                           |
-| <span data-ttu-id="89992-115">应用</span><span class="sxs-lookup"><span data-stu-id="89992-115">Application</span></span>                            | <span data-ttu-id="89992-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="89992-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fa971-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa971-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa971-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa971-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fa971-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa971-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa971-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa971-114">Not supported.</span></span>                           |
+| <span data-ttu-id="fa971-115">应用</span><span class="sxs-lookup"><span data-stu-id="fa971-115">Application</span></span>                            | <span data-ttu-id="fa971-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa971-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="89992-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="89992-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa971-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa971-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -33,43 +34,43 @@ ms.locfileid: "27885167"
 GET /reports/getYammerDeviceUsageDistributionUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="89992-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="89992-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="fa971-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="fa971-118">Function parameters</span></span>
 
-<span data-ttu-id="89992-119">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="89992-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="fa971-119">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="fa971-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="89992-120">参数</span><span class="sxs-lookup"><span data-stu-id="89992-120">Parameter</span></span> | <span data-ttu-id="89992-121">类型</span><span class="sxs-lookup"><span data-stu-id="89992-121">Type</span></span>   | <span data-ttu-id="89992-122">说明</span><span class="sxs-lookup"><span data-stu-id="89992-122">Description</span></span>                              |
+| <span data-ttu-id="fa971-120">参数</span><span class="sxs-lookup"><span data-stu-id="fa971-120">Parameter</span></span> | <span data-ttu-id="fa971-121">类型</span><span class="sxs-lookup"><span data-stu-id="fa971-121">Type</span></span>   | <span data-ttu-id="fa971-122">说明</span><span class="sxs-lookup"><span data-stu-id="fa971-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="89992-123">period</span><span class="sxs-lookup"><span data-stu-id="89992-123">period</span></span>    | <span data-ttu-id="89992-124">string</span><span class="sxs-lookup"><span data-stu-id="89992-124">string</span></span> | <span data-ttu-id="89992-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="89992-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="89992-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="89992-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="89992-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="89992-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="89992-128">必需。</span><span class="sxs-lookup"><span data-stu-id="89992-128">Required.</span></span> |
+| <span data-ttu-id="fa971-123">period</span><span class="sxs-lookup"><span data-stu-id="fa971-123">period</span></span>    | <span data-ttu-id="fa971-124">string</span><span class="sxs-lookup"><span data-stu-id="fa971-124">string</span></span> | <span data-ttu-id="fa971-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fa971-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fa971-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="fa971-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fa971-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fa971-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fa971-128">必需。</span><span class="sxs-lookup"><span data-stu-id="fa971-128">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="89992-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="89992-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fa971-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa971-129">Request headers</span></span>
 
-| <span data-ttu-id="89992-130">名称</span><span class="sxs-lookup"><span data-stu-id="89992-130">Name</span></span>          | <span data-ttu-id="89992-131">说明</span><span class="sxs-lookup"><span data-stu-id="89992-131">Description</span></span>                              |
+| <span data-ttu-id="fa971-130">名称</span><span class="sxs-lookup"><span data-stu-id="fa971-130">Name</span></span>          | <span data-ttu-id="fa971-131">说明</span><span class="sxs-lookup"><span data-stu-id="fa971-131">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="89992-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="89992-132">Authorization</span></span> | <span data-ttu-id="89992-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="89992-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="89992-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="89992-135">If-None-Match</span></span> | <span data-ttu-id="89992-136">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="89992-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="89992-137">可选。</span><span class="sxs-lookup"><span data-stu-id="89992-137">Optional.</span></span> |
+| <span data-ttu-id="fa971-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa971-132">Authorization</span></span> | <span data-ttu-id="fa971-p103">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="fa971-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="fa971-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fa971-135">If-None-Match</span></span> | <span data-ttu-id="fa971-136">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="fa971-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fa971-137">可选。</span><span class="sxs-lookup"><span data-stu-id="fa971-137">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="89992-138">响应</span><span class="sxs-lookup"><span data-stu-id="89992-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fa971-138">响应</span><span class="sxs-lookup"><span data-stu-id="fa971-138">Response</span></span>
 
-<span data-ttu-id="89992-139">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="89992-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="89992-140">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="89992-140">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="fa971-139">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="fa971-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fa971-140">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="fa971-140">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="89992-141">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="89992-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="fa971-141">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="fa971-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="89992-142">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="89992-142">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="fa971-142">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="fa971-142">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="89992-143">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="89992-143">Report Refresh Date</span></span>
-- <span data-ttu-id="89992-144">Web</span><span class="sxs-lookup"><span data-stu-id="89992-144">Web</span></span>
-- <span data-ttu-id="89992-145">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="89992-145">Windows Phone</span></span>
-- <span data-ttu-id="89992-146">Android 手机</span><span class="sxs-lookup"><span data-stu-id="89992-146">Android Phone</span></span>
-- <span data-ttu-id="89992-147">iPhone</span><span class="sxs-lookup"><span data-stu-id="89992-147">iPhone</span></span>
-- <span data-ttu-id="89992-148">iPad</span><span class="sxs-lookup"><span data-stu-id="89992-148">iPad</span></span>
-- <span data-ttu-id="89992-149">其他</span><span class="sxs-lookup"><span data-stu-id="89992-149">Other</span></span>
-- <span data-ttu-id="89992-150">报表周期</span><span class="sxs-lookup"><span data-stu-id="89992-150">Report Period</span></span>
+- <span data-ttu-id="fa971-143">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="fa971-143">Report Refresh Date</span></span>
+- <span data-ttu-id="fa971-144">Web</span><span class="sxs-lookup"><span data-stu-id="fa971-144">Web</span></span>
+- <span data-ttu-id="fa971-145">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="fa971-145">Windows Phone</span></span>
+- <span data-ttu-id="fa971-146">Android 手机</span><span class="sxs-lookup"><span data-stu-id="fa971-146">Android Phone</span></span>
+- <span data-ttu-id="fa971-147">iPhone</span><span class="sxs-lookup"><span data-stu-id="fa971-147">iPhone</span></span>
+- <span data-ttu-id="fa971-148">iPad</span><span class="sxs-lookup"><span data-stu-id="fa971-148">iPad</span></span>
+- <span data-ttu-id="fa971-149">其他</span><span class="sxs-lookup"><span data-stu-id="fa971-149">Other</span></span>
+- <span data-ttu-id="fa971-150">报表周期</span><span class="sxs-lookup"><span data-stu-id="fa971-150">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="89992-151">示例</span><span class="sxs-lookup"><span data-stu-id="89992-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa971-151">示例</span><span class="sxs-lookup"><span data-stu-id="fa971-151">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="89992-152">请求</span><span class="sxs-lookup"><span data-stu-id="89992-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fa971-152">请求</span><span class="sxs-lookup"><span data-stu-id="fa971-152">Request</span></span>
 
-<span data-ttu-id="89992-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="89992-153">The following is an example of the request.</span></span>
+<span data-ttu-id="fa971-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fa971-153">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -81,9 +82,9 @@ GET /reports/getYammerDeviceUsageDistributionUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageDistributionUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="89992-154">响应</span><span class="sxs-lookup"><span data-stu-id="89992-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fa971-154">响应</span><span class="sxs-lookup"><span data-stu-id="fa971-154">Response</span></span>
 
-<span data-ttu-id="89992-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="89992-155">The following is an example of the response.</span></span>
+<span data-ttu-id="fa971-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fa971-155">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,7 +98,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="89992-156">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="89992-156">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="fa971-156">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="fa971-156">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

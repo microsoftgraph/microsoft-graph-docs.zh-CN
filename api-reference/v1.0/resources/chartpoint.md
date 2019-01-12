@@ -3,40 +3,41 @@ title: ChartPoint 资源类型
 description: 表示图表中某个系列的点。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 245d6cf538488c567df00129deb9b594ff22018a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962504"
 ---
-# <a name="chartpoint-resource-type"></a><span data-ttu-id="c0931-103">ChartPoint 资源类型</span><span class="sxs-lookup"><span data-stu-id="c0931-103">ChartPoint resource type</span></span>
+# <a name="chartpoint-resource-type"></a><span data-ttu-id="48f2b-103">ChartPoint 资源类型</span><span class="sxs-lookup"><span data-stu-id="48f2b-103">ChartPoint resource type</span></span>
 
-<span data-ttu-id="c0931-104">表示图表中某个系列的点。</span><span class="sxs-lookup"><span data-stu-id="c0931-104">Represents a point of a series in a chart.</span></span>
+<span data-ttu-id="48f2b-104">表示图表中某个系列的点。</span><span class="sxs-lookup"><span data-stu-id="48f2b-104">Represents a point of a series in a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="c0931-105">方法</span><span class="sxs-lookup"><span data-stu-id="c0931-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="48f2b-105">方法</span><span class="sxs-lookup"><span data-stu-id="48f2b-105">Methods</span></span>
 
-| <span data-ttu-id="c0931-106">方法</span><span class="sxs-lookup"><span data-stu-id="c0931-106">Method</span></span>           | <span data-ttu-id="c0931-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="c0931-107">Return Type</span></span>    |<span data-ttu-id="c0931-108">说明</span><span class="sxs-lookup"><span data-stu-id="c0931-108">Description</span></span>|
+| <span data-ttu-id="48f2b-106">方法</span><span class="sxs-lookup"><span data-stu-id="48f2b-106">Method</span></span>           | <span data-ttu-id="48f2b-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="48f2b-107">Return Type</span></span>    |<span data-ttu-id="48f2b-108">说明</span><span class="sxs-lookup"><span data-stu-id="48f2b-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c0931-109">获取 ChartPoint</span><span class="sxs-lookup"><span data-stu-id="c0931-109">Get ChartPoint</span></span>](../api/chartpoint-get.md) | [<span data-ttu-id="c0931-110">WorkbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="c0931-110">WorkbookChartPoint</span></span>](chartpoint.md) |<span data-ttu-id="c0931-111">读取 chartPoint 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c0931-111">Read properties and relationships of chartPoint object.</span></span>|
-|[<span data-ttu-id="c0931-112">List</span><span class="sxs-lookup"><span data-stu-id="c0931-112">List</span></span>](../api/chartpoint-list.md) | <span data-ttu-id="c0931-113">[WorkbookChartPoint](chartpoint.md)集合</span><span class="sxs-lookup"><span data-stu-id="c0931-113">[WorkbookChartPoint](chartpoint.md) collection</span></span> |<span data-ttu-id="c0931-114">获取 chartPoint 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c0931-114">Get chartPoint object collection.</span></span> |
-|[<span data-ttu-id="c0931-115">ItemAt</span><span class="sxs-lookup"><span data-stu-id="c0931-115">ItemAt</span></span>](../api/chartpointscollection-itemat.md)|[<span data-ttu-id="c0931-116">WorkbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="c0931-116">WorkbookChartPoint</span></span>](chartpoint.md)|<span data-ttu-id="c0931-117">根据其在系列中的位置检索点。</span><span class="sxs-lookup"><span data-stu-id="c0931-117">Retrieve a point based on its position within the series.</span></span>|
+|[<span data-ttu-id="48f2b-109">获取 ChartPoint</span><span class="sxs-lookup"><span data-stu-id="48f2b-109">Get ChartPoint</span></span>](../api/chartpoint-get.md) | [<span data-ttu-id="48f2b-110">WorkbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="48f2b-110">WorkbookChartPoint</span></span>](chartpoint.md) |<span data-ttu-id="48f2b-111">读取 chartPoint 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="48f2b-111">Read properties and relationships of chartPoint object.</span></span>|
+|[<span data-ttu-id="48f2b-112">List</span><span class="sxs-lookup"><span data-stu-id="48f2b-112">List</span></span>](../api/chartpoint-list.md) | <span data-ttu-id="48f2b-113">[WorkbookChartPoint](chartpoint.md)集合</span><span class="sxs-lookup"><span data-stu-id="48f2b-113">[WorkbookChartPoint](chartpoint.md) collection</span></span> |<span data-ttu-id="48f2b-114">获取 chartPoint 对象集合。</span><span class="sxs-lookup"><span data-stu-id="48f2b-114">Get chartPoint object collection.</span></span> |
+|[<span data-ttu-id="48f2b-115">ItemAt</span><span class="sxs-lookup"><span data-stu-id="48f2b-115">ItemAt</span></span>](../api/chartpointscollection-itemat.md)|[<span data-ttu-id="48f2b-116">WorkbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="48f2b-116">WorkbookChartPoint</span></span>](chartpoint.md)|<span data-ttu-id="48f2b-117">根据其在系列中的位置检索点。</span><span class="sxs-lookup"><span data-stu-id="48f2b-117">Retrieve a point based on its position within the series.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c0931-118">属性</span><span class="sxs-lookup"><span data-stu-id="c0931-118">Properties</span></span>
-| <span data-ttu-id="c0931-119">属性</span><span class="sxs-lookup"><span data-stu-id="c0931-119">Property</span></span>     | <span data-ttu-id="c0931-120">类型</span><span class="sxs-lookup"><span data-stu-id="c0931-120">Type</span></span>   |<span data-ttu-id="c0931-121">说明</span><span class="sxs-lookup"><span data-stu-id="c0931-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="48f2b-118">属性</span><span class="sxs-lookup"><span data-stu-id="48f2b-118">Properties</span></span>
+| <span data-ttu-id="48f2b-119">属性</span><span class="sxs-lookup"><span data-stu-id="48f2b-119">Property</span></span>     | <span data-ttu-id="48f2b-120">类型</span><span class="sxs-lookup"><span data-stu-id="48f2b-120">Type</span></span>   |<span data-ttu-id="48f2b-121">说明</span><span class="sxs-lookup"><span data-stu-id="48f2b-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c0931-122">value</span><span class="sxs-lookup"><span data-stu-id="c0931-122">value</span></span>|<span data-ttu-id="c0931-123">Json</span><span class="sxs-lookup"><span data-stu-id="c0931-123">Json</span></span>|<span data-ttu-id="c0931-p101">返回图表点的值。只读。</span><span class="sxs-lookup"><span data-stu-id="c0931-p101">Returns the value of a chart point. Read-only.</span></span>|
-|<span data-ttu-id="c0931-126">id</span><span class="sxs-lookup"><span data-stu-id="c0931-126">id</span></span>|<span data-ttu-id="c0931-127">string</span><span class="sxs-lookup"><span data-stu-id="c0931-127">string</span></span>|<span data-ttu-id="c0931-128">唯一标识符</span><span class="sxs-lookup"><span data-stu-id="c0931-128">unique identifier</span></span>|
+|<span data-ttu-id="48f2b-122">value</span><span class="sxs-lookup"><span data-stu-id="48f2b-122">value</span></span>|<span data-ttu-id="48f2b-123">Json</span><span class="sxs-lookup"><span data-stu-id="48f2b-123">Json</span></span>|<span data-ttu-id="48f2b-p101">返回图表点的值。只读。</span><span class="sxs-lookup"><span data-stu-id="48f2b-p101">Returns the value of a chart point. Read-only.</span></span>|
+|<span data-ttu-id="48f2b-126">id</span><span class="sxs-lookup"><span data-stu-id="48f2b-126">id</span></span>|<span data-ttu-id="48f2b-127">string</span><span class="sxs-lookup"><span data-stu-id="48f2b-127">string</span></span>|<span data-ttu-id="48f2b-128">唯一标识符</span><span class="sxs-lookup"><span data-stu-id="48f2b-128">unique identifier</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c0931-129">Relationships</span><span class="sxs-lookup"><span data-stu-id="c0931-129">Relationships</span></span>
-| <span data-ttu-id="c0931-130">关系</span><span class="sxs-lookup"><span data-stu-id="c0931-130">Relationship</span></span> | <span data-ttu-id="c0931-131">类型</span><span class="sxs-lookup"><span data-stu-id="c0931-131">Type</span></span>   |<span data-ttu-id="c0931-132">说明</span><span class="sxs-lookup"><span data-stu-id="c0931-132">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="48f2b-129">Relationships</span><span class="sxs-lookup"><span data-stu-id="48f2b-129">Relationships</span></span>
+| <span data-ttu-id="48f2b-130">关系</span><span class="sxs-lookup"><span data-stu-id="48f2b-130">Relationship</span></span> | <span data-ttu-id="48f2b-131">类型</span><span class="sxs-lookup"><span data-stu-id="48f2b-131">Type</span></span>   |<span data-ttu-id="48f2b-132">说明</span><span class="sxs-lookup"><span data-stu-id="48f2b-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c0931-133">format</span><span class="sxs-lookup"><span data-stu-id="c0931-133">format</span></span>|[<span data-ttu-id="c0931-134">WorkbookChartPointFormat</span><span class="sxs-lookup"><span data-stu-id="c0931-134">WorkbookChartPointFormat</span></span>](chartpointformat.md)|<span data-ttu-id="c0931-p102">封装图表点的格式属性。只读。</span><span class="sxs-lookup"><span data-stu-id="c0931-p102">Encapsulates the format properties chart point. Read-only.</span></span>|
+|<span data-ttu-id="48f2b-133">format</span><span class="sxs-lookup"><span data-stu-id="48f2b-133">format</span></span>|[<span data-ttu-id="48f2b-134">WorkbookChartPointFormat</span><span class="sxs-lookup"><span data-stu-id="48f2b-134">WorkbookChartPointFormat</span></span>](chartpointformat.md)|<span data-ttu-id="48f2b-p102">封装图表点的格式属性。只读。</span><span class="sxs-lookup"><span data-stu-id="48f2b-p102">Encapsulates the format properties chart point. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c0931-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c0931-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="48f2b-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="48f2b-137">JSON representation</span></span>
 
-<span data-ttu-id="c0931-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c0931-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="48f2b-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="48f2b-138">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

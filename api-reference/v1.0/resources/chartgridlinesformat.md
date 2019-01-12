@@ -3,33 +3,34 @@ title: ChartGridlinesFormat 资源类型
 description: 封装图表网格线的格式属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8fde51cc220b20c533c3af122375047dd3276a9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: dd1e6d7f0a4ae9c17794035c8103cda8d189d5ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959606"
 ---
-# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="afd8f-103">ChartGridlinesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="afd8f-103">ChartGridlinesFormat resource type</span></span>
+# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="5d5ef-103">ChartGridlinesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="5d5ef-103">ChartGridlinesFormat resource type</span></span>
 
-<span data-ttu-id="afd8f-104">封装图表网格线的格式属性。</span><span class="sxs-lookup"><span data-stu-id="afd8f-104">Encapsulates the format properties for chart gridlines.</span></span>
+<span data-ttu-id="5d5ef-104">封装图表网格线的格式属性。</span><span class="sxs-lookup"><span data-stu-id="5d5ef-104">Encapsulates the format properties for chart gridlines.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="afd8f-105">方法</span><span class="sxs-lookup"><span data-stu-id="afd8f-105">Methods</span></span>
-<span data-ttu-id="afd8f-106">无</span><span class="sxs-lookup"><span data-stu-id="afd8f-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="5d5ef-105">方法</span><span class="sxs-lookup"><span data-stu-id="5d5ef-105">Methods</span></span>
+<span data-ttu-id="5d5ef-106">无</span><span class="sxs-lookup"><span data-stu-id="5d5ef-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="afd8f-107">属性</span><span class="sxs-lookup"><span data-stu-id="afd8f-107">Properties</span></span>
-<span data-ttu-id="afd8f-108">无</span><span class="sxs-lookup"><span data-stu-id="afd8f-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="5d5ef-107">属性</span><span class="sxs-lookup"><span data-stu-id="5d5ef-107">Properties</span></span>
+<span data-ttu-id="5d5ef-108">无</span><span class="sxs-lookup"><span data-stu-id="5d5ef-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="afd8f-109">Relationships</span><span class="sxs-lookup"><span data-stu-id="afd8f-109">Relationships</span></span>
-| <span data-ttu-id="afd8f-110">关系</span><span class="sxs-lookup"><span data-stu-id="afd8f-110">Relationship</span></span> | <span data-ttu-id="afd8f-111">类型</span><span class="sxs-lookup"><span data-stu-id="afd8f-111">Type</span></span>   |<span data-ttu-id="afd8f-112">说明</span><span class="sxs-lookup"><span data-stu-id="afd8f-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="5d5ef-109">Relationships</span><span class="sxs-lookup"><span data-stu-id="5d5ef-109">Relationships</span></span>
+| <span data-ttu-id="5d5ef-110">关系</span><span class="sxs-lookup"><span data-stu-id="5d5ef-110">Relationship</span></span> | <span data-ttu-id="5d5ef-111">类型</span><span class="sxs-lookup"><span data-stu-id="5d5ef-111">Type</span></span>   |<span data-ttu-id="5d5ef-112">说明</span><span class="sxs-lookup"><span data-stu-id="5d5ef-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="afd8f-113">line</span><span class="sxs-lookup"><span data-stu-id="afd8f-113">line</span></span>|[<span data-ttu-id="afd8f-114">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="afd8f-114">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="afd8f-p101">表示图表线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="afd8f-p101">Represents chart line formatting. Read-only.</span></span>|
+|<span data-ttu-id="5d5ef-113">line</span><span class="sxs-lookup"><span data-stu-id="5d5ef-113">line</span></span>|[<span data-ttu-id="5d5ef-114">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="5d5ef-114">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="5d5ef-p101">表示图表线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="5d5ef-p101">Represents chart line formatting. Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="afd8f-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="afd8f-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5d5ef-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5d5ef-117">JSON representation</span></span>
 
-<span data-ttu-id="afd8f-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="afd8f-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5d5ef-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5d5ef-118">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

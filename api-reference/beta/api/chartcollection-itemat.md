@@ -3,54 +3,55 @@ title: 'ChartCollection: ItemAt'
 description: 根据其在集合中的位置获取图表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7ebb673d3b9f1ffc5cdcbe0f64d3a9365818c707
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 06cfa237ffe700d5867691b06e630e3881a599eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854563"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941294"
 ---
-# <a name="chartcollection-itemat"></a><span data-ttu-id="ded01-103">ChartCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="ded01-103">ChartCollection: ItemAt</span></span>
+# <a name="chartcollection-itemat"></a><span data-ttu-id="644a6-103">ChartCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="644a6-103">ChartCollection: ItemAt</span></span>
 
-> <span data-ttu-id="ded01-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ded01-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ded01-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ded01-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="644a6-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="644a6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="644a6-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="644a6-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ded01-106">根据其在集合中的位置获取图表。</span><span class="sxs-lookup"><span data-stu-id="ded01-106">Gets a chart based on its position in the collection.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ded01-107">权限</span><span class="sxs-lookup"><span data-stu-id="ded01-107">Permissions</span></span>
-<span data-ttu-id="ded01-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ded01-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="644a6-106">根据其在集合中的位置获取图表。</span><span class="sxs-lookup"><span data-stu-id="644a6-106">Gets a chart based on its position in the collection.</span></span>
+## <a name="permissions"></a><span data-ttu-id="644a6-107">权限</span><span class="sxs-lookup"><span data-stu-id="644a6-107">Permissions</span></span>
+<span data-ttu-id="644a6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="644a6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ded01-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ded01-110">Permission type</span></span>      | <span data-ttu-id="ded01-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ded01-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="644a6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="644a6-110">Permission type</span></span>      | <span data-ttu-id="644a6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="644a6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ded01-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ded01-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ded01-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ded01-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ded01-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ded01-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ded01-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ded01-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ded01-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ded01-116">Application</span></span> | <span data-ttu-id="ded01-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ded01-117">Not supported.</span></span> |
+|<span data-ttu-id="644a6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="644a6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="644a6-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="644a6-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="644a6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="644a6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="644a6-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="644a6-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="644a6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="644a6-116">Application</span></span> | <span data-ttu-id="644a6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="644a6-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ded01-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ded01-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="644a6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="644a6-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ded01-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ded01-119">Request headers</span></span>
-| <span data-ttu-id="ded01-120">名称</span><span class="sxs-lookup"><span data-stu-id="ded01-120">Name</span></span>       | <span data-ttu-id="ded01-121">说明</span><span class="sxs-lookup"><span data-stu-id="ded01-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="644a6-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="644a6-119">Request headers</span></span>
+| <span data-ttu-id="644a6-120">名称</span><span class="sxs-lookup"><span data-stu-id="644a6-120">Name</span></span>       | <span data-ttu-id="644a6-121">说明</span><span class="sxs-lookup"><span data-stu-id="644a6-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ded01-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ded01-122">Authorization</span></span>  | <span data-ttu-id="ded01-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ded01-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ded01-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ded01-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="ded01-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ded01-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="644a6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="644a6-122">Authorization</span></span>  | <span data-ttu-id="644a6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="644a6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="644a6-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="644a6-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="644a6-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="644a6-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ded01-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ded01-128">Request body</span></span>
-<span data-ttu-id="ded01-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="ded01-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="644a6-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="644a6-128">Request body</span></span>
+<span data-ttu-id="644a6-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="644a6-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ded01-130">参数</span><span class="sxs-lookup"><span data-stu-id="ded01-130">Parameter</span></span>    | <span data-ttu-id="ded01-131">类型</span><span class="sxs-lookup"><span data-stu-id="ded01-131">Type</span></span>   |<span data-ttu-id="ded01-132">说明</span><span class="sxs-lookup"><span data-stu-id="ded01-132">Description</span></span>|
+| <span data-ttu-id="644a6-130">参数</span><span class="sxs-lookup"><span data-stu-id="644a6-130">Parameter</span></span>    | <span data-ttu-id="644a6-131">类型</span><span class="sxs-lookup"><span data-stu-id="644a6-131">Type</span></span>   |<span data-ttu-id="644a6-132">说明</span><span class="sxs-lookup"><span data-stu-id="644a6-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ded01-133">index</span><span class="sxs-lookup"><span data-stu-id="ded01-133">index</span></span>|<span data-ttu-id="ded01-134">number</span><span class="sxs-lookup"><span data-stu-id="ded01-134">number</span></span>|<span data-ttu-id="ded01-p105">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="ded01-p105">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="644a6-133">index</span><span class="sxs-lookup"><span data-stu-id="644a6-133">index</span></span>|<span data-ttu-id="644a6-134">number</span><span class="sxs-lookup"><span data-stu-id="644a6-134">number</span></span>|<span data-ttu-id="644a6-p105">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="644a6-p105">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ded01-137">响应</span><span class="sxs-lookup"><span data-stu-id="ded01-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="644a6-137">响应</span><span class="sxs-lookup"><span data-stu-id="644a6-137">Response</span></span>
 
-<span data-ttu-id="ded01-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ded01-138">If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.</span></span>
+<span data-ttu-id="644a6-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="644a6-138">If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ded01-139">示例</span><span class="sxs-lookup"><span data-stu-id="ded01-139">Example</span></span>
-<span data-ttu-id="ded01-140">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="ded01-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ded01-141">请求</span><span class="sxs-lookup"><span data-stu-id="ded01-141">Request</span></span>
-<span data-ttu-id="ded01-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ded01-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="644a6-139">示例</span><span class="sxs-lookup"><span data-stu-id="644a6-139">Example</span></span>
+<span data-ttu-id="644a6-140">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="644a6-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="644a6-141">请求</span><span class="sxs-lookup"><span data-stu-id="644a6-141">Request</span></span>
+<span data-ttu-id="644a6-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="644a6-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartcollection_itemat"
@@ -66,8 +67,8 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ded01-143">响应</span><span class="sxs-lookup"><span data-stu-id="ded01-143">Response</span></span>
-<span data-ttu-id="ded01-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ded01-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="644a6-143">响应</span><span class="sxs-lookup"><span data-stu-id="644a6-143">Response</span></span>
+<span data-ttu-id="644a6-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="644a6-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
