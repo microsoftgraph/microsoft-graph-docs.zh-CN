@@ -3,12 +3,13 @@ title: 更新域
 description: 更新域对象的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 7815d86a733d597860ed986b926972e328598f65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 13a99463208775066a70c1a6a66f4991f8ba1c71
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979703"
 ---
 # <a name="update-domain"></a>更新域
 

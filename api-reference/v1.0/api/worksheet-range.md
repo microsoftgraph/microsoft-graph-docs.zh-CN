@@ -3,12 +3,13 @@ title: Worksheet:Range
 description: 获取地址或名称指定的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f057b93cbc0bd2e846330b9e5e1e49b2323bf8b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e7dade7e0c83808aa10700e87dd54a1e8fe9bb7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971968"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 

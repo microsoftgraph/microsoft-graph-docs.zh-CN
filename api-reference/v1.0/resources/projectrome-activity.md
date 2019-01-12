@@ -2,12 +2,13 @@
 title: 活动资源类型
 description: 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
-ms.openlocfilehash: 79ed44ef0f6a38fbef8ead233debce3fc9e66b42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991074"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "27877068"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | Description|
+|名称 | 类型 | 说明|
 |:----|:-----|:-----------|
 |userTimezone | 字符串 | 可选。 在其中用于生成活动的用户的设备已位于在活动创建时; timezone为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。 |
@@ -49,7 +50,7 @@ ms.locfileid: "27877068"
 
 ## <a name="relationships"></a>Relationships
 
-|关系 | 类型 | Description|
+|关系 | 类型 | 说明|
 |:------------|:-----|:-----------|
 |historyItems| [activityHistoryItem](../resources/projectrome-historyitem.md)集合 | 可选。 NavigationProperty/包容;导航到活动的 historyItems 属性。|
 

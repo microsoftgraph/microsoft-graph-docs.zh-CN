@@ -3,12 +3,13 @@ title: 删除对话
 description: 删除 conversation 对象。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8eda987cb30d4ffbdda32bf9df750c58f3b77f37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 26ed441d17de547d11667ff90ec4b71e09cdc599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859057"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991676"
 ---
 # <a name="delete-conversation"></a>删除对话
 

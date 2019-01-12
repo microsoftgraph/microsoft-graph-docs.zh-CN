@@ -3,12 +3,13 @@ title: deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类�
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 78f849685846e64177197d7489129a95e9dde39e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9a9495087d839aeec027cab3a8d783fc60acd168
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808139"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986787"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>deviceGuardVirtualizationBasedSecurityHardwareRequirementState 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27808139"
 
 尚未记录
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |meetHardwareRequirements|0|系统满足硬件配置要求|
 |secureBootRequired|1|所需的安全启动|

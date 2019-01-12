@@ -3,12 +3,13 @@ title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e2b89dbdaa3e67918b1b0c3e76eb6638e492994c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f1856847cb8a8ecf48ee6d13067bd24515326d89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973207"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27881870"
 
 计划操作类型枚举
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |noAction|0|任何操作|
 |通知|1|发送通知|

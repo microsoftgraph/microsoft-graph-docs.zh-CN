@@ -2,12 +2,13 @@
 title: historyItem 资源类型
 description: 表示为活动应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
-ms.openlocfilehash: 510913be6a3f70190c7cf657d9540d75f481c3a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 029c17e09348977752f3ce5632740b2bdac64e46
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882913"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977435"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 

@@ -3,12 +3,13 @@ title: List groupSettingTemplates
 description: 组设置模板表示一组模板，用于创建组设置并在租户内使用。此操作将检索可用 groupSettingTemplates 对象的列表。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 476577de23bc0fe5c2df9ce37b2d9083105bb6f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d592b3e9ae084223a08364c7cd719e2b6d03c0ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869872"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962336"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 

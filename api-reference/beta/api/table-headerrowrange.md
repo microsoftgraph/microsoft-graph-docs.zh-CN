@@ -3,12 +3,13 @@ title: Table:HeaderRowRange
 description: 获取与表的标头行相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d8d584ef8f00bf6c88894a37df16b5cca231ea3b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 844a2ce32dc1546b5666efddbaf9ed7d5e80258c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877432"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979598"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 

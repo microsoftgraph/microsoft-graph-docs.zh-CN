@@ -3,12 +3,13 @@ title: updateWindowsDeviceAccountActionParameter 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 536f69a30e5da74bfbfe1785b71f642dc324a38f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f62dce1364fca28e85b728e0b7571906488ebbee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867282"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986675"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter 资源类型
 

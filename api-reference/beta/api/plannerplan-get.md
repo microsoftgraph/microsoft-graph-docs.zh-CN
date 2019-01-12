@@ -2,12 +2,14 @@
 title: 获取 plannerPlan
 description: 检索 **plannerplan** 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 7b6e26509f9f06bd937634e3302540035bcf4d2b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: c0829abece86627c04d05ba4f56bf71d619fd5ae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889409"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955588"
 ---
 # <a name="get-plannerplan"></a>获取 plannerPlan
 

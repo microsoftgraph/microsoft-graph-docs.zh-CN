@@ -3,12 +3,13 @@ title: 'Table: convertToRange'
 description: 将表转换为普通单元格区域。保留所有数据。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 4528daab7cfde480e93d75cdcb5f9a969f583144
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2cda7e4eac082938cafb8328063658071eeb01d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957499"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 

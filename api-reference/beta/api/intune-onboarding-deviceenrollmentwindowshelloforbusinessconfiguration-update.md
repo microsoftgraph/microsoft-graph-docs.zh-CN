@@ -3,12 +3,13 @@ title: 更新 deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: 更新 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a087b38a4bd1a156645b45936fa6e5c966adea5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 102812ca13e4826cddad4d1d7afc4fe54f33a5d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973375"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>更新 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -61,7 +62,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
-|state|[启用](../resources/intune-shared-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|状态|[启用](../resources/intune-shared-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |securityDeviceRequired|Boolean|尚未记录|
 |unlockWithBiometricsEnabled|Boolean|尚未记录|
 |remotePassportEnabled|Boolean|尚未记录|

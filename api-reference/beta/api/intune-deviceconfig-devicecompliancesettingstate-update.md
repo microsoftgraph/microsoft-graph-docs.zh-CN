@@ -3,12 +3,13 @@ title: 更新 deviceComplianceSettingState
 description: 更新 deviceComplianceSettingState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f607b699f4a89d925f099724851d92800ed9ddc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a684b4cb9dc49be1b5d1771a8ef2aa08e8b9d194
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807132"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978162"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
 

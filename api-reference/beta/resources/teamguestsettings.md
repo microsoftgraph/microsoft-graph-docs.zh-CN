@@ -2,12 +2,14 @@
 title: teamGuestSettings 资源类型
 description: 要配置的是否来宾可以创建、 更新或删除通道团队中的设置。
 localization_priority: Normal
-ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: d601ac704734f4c46e8b7bef9e8d3feb45905384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987291"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 
@@ -16,7 +18,7 @@ ms.locfileid: "27851539"
 要配置的是否来宾可以创建、 更新或删除通道[团队](team.md)中的设置。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|布尔|如果设置为 true，则来宾可以添加和更新通道。|
 |allowDeleteChannels|布尔|如果设置为 true，则来宾可以删除通道。|

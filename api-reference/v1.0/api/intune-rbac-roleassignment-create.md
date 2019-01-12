@@ -3,12 +3,13 @@ title: 创建 roleAssignment
 description: 创建新的 roleAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0cb60cad1785de83c44772d6f1cbc00c9129861f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871027"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973781"
 ---
 # <a name="create-roleassignment"></a>创建 roleAssignment
 

@@ -3,12 +3,13 @@ title: 列出 managedAppConfigurations
 description: 列出 managedAppConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9028ca08a11d17839a7d9292b4473ea8a7179f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f19ceb7f325b6302802533fc313786e76249fada
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875003"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979444"
 ---
 # <a name="list-managedappconfigurations"></a>列出 managedAppConfigurations
 

@@ -3,12 +3,13 @@ title: windowsInformationProtectionDataRecoveryCertificate 资源类型
 description: Windows 信息保护 DataRecoveryCertificate
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72edbdc16b2d84a2df6a4582bba12bab2feaa04c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2a40fc3ab500fe6aa2a5b0f373c78524444b5bd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971856"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 

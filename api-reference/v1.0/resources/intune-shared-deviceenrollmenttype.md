@@ -3,12 +3,13 @@ title: deviceEnrollmentType 枚举类型
 description: 将移动设备添加到管理的可能方式。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d27e57538927966ea741ae1da57f0a02f9de862d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987753"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27807199"
 将移动设备添加到管理的可能方式。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认值，注册类型不是收集的。|
 |userEnrollment|1|通过 BYOD 通道用户驱动的注册。|

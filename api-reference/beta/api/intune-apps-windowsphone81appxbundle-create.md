@@ -3,12 +3,13 @@ title: 创建 windowsPhone81AppXBundle
 description: 创建新的 windowsPhone81AppXBundle 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: efb1dd0b3aa28d9a75bafa4629b00411f9e11e08
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d9a6a67e40810b042a4e5bae9e9641604108483b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969637"
 ---
 # <a name="create-windowsphone81appxbundle"></a>创建 windowsPhone81AppXBundle
 

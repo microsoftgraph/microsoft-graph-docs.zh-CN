@@ -3,12 +3,13 @@ title: 更新 macOSVpnConfiguration
 description: 更新 macOSVpnConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fd511b2ede79e7ca78b7b3a86d5eed54747d18f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cba4ea63ad7ea8e02605e93131900e6628710de6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974754"
 ---
 # <a name="update-macosvpnconfiguration"></a>更新 macOSVpnConfiguration
 

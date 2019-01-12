@@ -3,12 +3,13 @@ title: deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 553e4b5a5537076e5177c8ad73bab0a534a68628
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8556c9a6e2548a566efdd2f47253bb84826b1d9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855942"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958722"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 

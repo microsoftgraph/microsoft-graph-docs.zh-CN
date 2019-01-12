@@ -3,12 +3,13 @@ title: 更新 windows81VpnConfiguration
 description: 更新 windows81VpnConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cae55e29bf6dd56e86b5771660a720bfb862cc2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d7ca9fed4819597369d81882fcb0309fbc0ff8e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975279"
 ---
 # <a name="update-windows81vpnconfiguration"></a>更新 windows81VpnConfiguration
 

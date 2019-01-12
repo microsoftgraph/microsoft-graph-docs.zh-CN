@@ -3,12 +3,13 @@ title: windowsInformationProtectionStoreApp 资源类型
 description: 用于 Windows 信息保护的应用商店应用
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d1f5dfe28928b5cea63c487f322429589938278
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa2059f7e85c180d4ff091a4596267471d772e3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986612"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp 资源类型
 

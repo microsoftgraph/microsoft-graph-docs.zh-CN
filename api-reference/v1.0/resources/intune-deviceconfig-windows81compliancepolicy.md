@@ -2,12 +2,14 @@
 title: windows81CompliancePolicy 资源类型
 description: 此类包含 Windows 8.1 的合规性设置。
 author: tfitzmac
-ms.openlocfilehash: fd4af19d07cf404bac6feaf32e8d4d3877066e31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: c1715ed036f9b8465ac6494292fc6bbd6942b7ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970813"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy 资源类型
 

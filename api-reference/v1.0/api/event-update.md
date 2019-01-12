@@ -3,12 +3,13 @@ title: 更新事件
 description: 更新 event 对象的属性。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b7d969b3f374bfddb12a49d1318fb8c1bb2105e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 441a135cf43226927e9a8aee074c2547b9beb23e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972367"
 ---
 # <a name="update-event"></a>更新事件
 

@@ -2,12 +2,14 @@
 title: Worksheet:UsedRange
 description: 使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。
 localization_priority: Normal
-ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894360"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975300"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 

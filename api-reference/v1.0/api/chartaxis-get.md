@@ -3,12 +3,13 @@ title: 获取 ChartAxis
 description: 检索 chartaxis 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 75e16d88ce446bed6e635db76abc0d8938185306
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d23a9bf65bf4534e79b8e8c4b6c9377b8fc54ed7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845708"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971317"
 ---
 # <a name="get-chartaxis"></a>获取 ChartAxis
 

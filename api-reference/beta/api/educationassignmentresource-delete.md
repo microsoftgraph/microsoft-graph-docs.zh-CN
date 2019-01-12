@@ -3,12 +3,13 @@ title: 删除 educationAssignmentResource
 description: .
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 99fe9dc64d969a19f4704660679e769b65c8316b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: c8154cc9112d62b06d2a93366f01fba3ea7907f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979584"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 

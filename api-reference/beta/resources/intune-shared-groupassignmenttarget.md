@@ -3,12 +3,13 @@ title: groupAssignmentTarget 资源类型
 description: 表示组的赋值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f344c0ed718f32352901af63da32c11ca02e2db6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96aec1b72233cfe7d553b8f17feb9af382d89cde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971674"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget 资源类型
 

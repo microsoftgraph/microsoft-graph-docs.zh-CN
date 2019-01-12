@@ -3,12 +3,13 @@ title: 更新 enrollmentConfigurationAssignment
 description: 更新 enrollmentConfigurationAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2e6d23c54f0864772ccc75b6dc63078dc5abf361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4014a2f5d4b50b09cbcfde3ce928cda54b53617
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875927"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960446"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>更新 enrollmentConfigurationAssignment
 

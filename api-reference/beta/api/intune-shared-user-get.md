@@ -3,12 +3,13 @@ title: 获取用户
 description: 读取 user 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e6fac98b30c9a66e159dabd816a5e5bbe350f4a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4bca90bc1e42b6dde596d22d2bd1e42dcc5910db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979465"
 ---
 # <a name="get-user"></a>获取用户
 

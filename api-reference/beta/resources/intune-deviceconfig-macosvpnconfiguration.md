@@ -3,12 +3,13 @@ title: macOSVpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Mac 设备，以连接到所需 VPN 终结点。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2bc4ae56f7b355cec5edc27007ece27f2b3a7d9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a97a23d5ea68c3387c2a84c6d25a171fb5c2cc03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851630"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973718"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>macOSVpnConfiguration 资源类型
 
@@ -58,7 +59,7 @@ ms.locfileid: "27851630"
 |optInToDeviceIdSharing|布尔|加入到共享网络访问控制验证过程中的第三方 vpn 客户端使用的设备的 Id。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

@@ -2,12 +2,14 @@
 title: 电子邮件资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 02eb37c065cc8d664caf97f1f86da0efeaac09e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 177505f2e76b7a0044a0647300d05af332c80781
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830056"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972899"
 ---
 # <a name="email-resource-type"></a>电子邮件资源类型
 

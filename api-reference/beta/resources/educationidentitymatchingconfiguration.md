@@ -1,12 +1,15 @@
 ---
 title: educationIdentityMatchingConfiguration 资源类型
 description: 用于匹配学校数据配置文件标识中定义的设置。 这些身份包括学生和教师。 根据这些设置，用户将更新目录中。
-ms.openlocfilehash: b189735340c121a56c48ae21518989cf8e1634f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ee9f58c2f69882361ee105a1d7531bb5756e165
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27048616"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977547"
 ---
 ## <a name="educationidentitymatchingconfiguration-resource-type"></a>educationIdentityMatchingConfiguration 资源类型
 
@@ -18,7 +21,7 @@ ms.locfileid: "27048616"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:-|:-|:-|
 | **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md)集合 | 用户帐户和选项用于唯一标识用户更新之间的映射。 |
 

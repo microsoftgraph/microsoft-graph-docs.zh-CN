@@ -3,12 +3,13 @@ title: revokeDeviceLicense 操作
 description: Revoke 分配 iOS VPP 设备许可证的给定应用程序。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d15f542799fb604a3d82d5ac6989087ff75bcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979094"
 ---
 # <a name="revokedevicelicense-action"></a>revokeDeviceLicense 操作
 
@@ -49,7 +50,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |managedDeviceId|字符串|为其分配的应用程序许可证是将撤消 DeviceId|
 |notifyManagedDevices|布尔|布尔值，指示 revoke 通知是否应发送给设备|

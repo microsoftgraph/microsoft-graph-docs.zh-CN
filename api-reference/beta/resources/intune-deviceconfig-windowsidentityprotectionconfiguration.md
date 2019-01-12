@@ -2,12 +2,14 @@
 title: windowsIdentityProtectionConfiguration 资源类型
 description: 此实体提供了属性、 由 Windows Hello for Business 公开的关系的声明方法的说明。
 localization_priority: Normal
-ms.openlocfilehash: c83a87737db6deacf7a08cc0fb4a73aff6d4f781
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 30cb45c30e59db0cfd0310bde019c8a4b5b26ab7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957863"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>windowsIdentityProtectionConfiguration 资源类型
 

@@ -3,12 +3,13 @@ title: 创建 circularGeofenceManagementCondition
 description: 创建新的 circularGeofenceManagementCondition 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8264349e4e3da3adc5cf6c457754f245c61fa8e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6ca3d469280b3419700e6948d66e8e3ed1640b22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979591"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>创建 circularGeofenceManagementCondition
 

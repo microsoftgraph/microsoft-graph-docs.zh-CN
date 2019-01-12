@@ -3,12 +3,13 @@ title: edgeSearchEngineType 枚举类型
 description: 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 87ebdebbcbbe3aa939595978f202d06b1c727a44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c2ac2c9217aefd5b2a84632da2a4dc51c4820d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859617"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991683"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27859617"
 
 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |default|0|使用出厂设置的边缘分配每用户市场的默认搜索引擎|
 |必应|1|将 Bing 设置为默认搜索引擎|

@@ -3,12 +3,13 @@ title: binaryManagementConditionExpression 资源类型
 description: 管理条件表达式进行求值使用二进制操作。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 509e03e7d492289fc9615f7f8ad47bf13d5bead4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b15938d0bb29fdfdad8abb1b37b02ad1e6468cf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978534"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27857048"
 继承自[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|使用二进制操作的评估版的运算符。 可取值为：`or`、`and`。|
 |firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|二进制操作的第一个操作数。|

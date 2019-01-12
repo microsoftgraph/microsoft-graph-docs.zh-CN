@@ -3,12 +3,13 @@ title: vpnProxyServer 资源类型
 description: VPN 代理服务器。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b4842444bc248e51e1967fcbef4a863ed50498c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 727d26af7f2c1801cd06fc98949109efec267f27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955350"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27867674"
 
 VPN 代理服务器。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |automaticConfigurationScriptUrl|字符串|代理服务器的自动配置脚本的 url。|
 |address|String|地址。|

@@ -2,12 +2,14 @@
 title: 更新页面
 description: 更新 OneNote 页面的内容。
 localization_priority: Normal
-ms.openlocfilehash: ee5e55ce206ac1f3069c5629f8c0f674f209363c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ef51342aba7bab49fde6d69ea0c77c62dc841b7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850174"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971709"
 ---
 # <a name="update-page"></a>更新页面
 

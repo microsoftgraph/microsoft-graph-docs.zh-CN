@@ -1,14 +1,15 @@
 ---
 title: onenoteEntitySchemaObjectModel 资源
 description: 这是 OneNote 实体的基类型。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 9ecdb17d48f8c8682af5970ea468fb2ad0118bbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 168359bbdaa659db461aa33af96e402a4a81783d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978709"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>onenoteEntitySchemaObjectModel 资源
 

@@ -3,12 +3,13 @@ title: 创建 win32LobApp
 description: 创建新的 win32LobApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: edd3e68d71cb2f31bb7b2f3fc0b24bde1e33768a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ac82ba6d546fe64cb472686af2fcd0ee642d1eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979262"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 

@@ -3,12 +3,13 @@ title: 邮件资源类型
 description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b6d5e3b66209515d03ad7e60a56bbde2c62442e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ed94610fb4b09f264ea9be90ac5914daedfe76e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817281"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970275"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 

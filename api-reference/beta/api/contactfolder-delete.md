@@ -3,12 +3,13 @@ title: 删除 contactFolder
 description: 删除默认 contactFolder 以外的 contactFolder。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f9b175251a1a9a4862dc1df36d607ed62e56c3e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: e8004d726bc8a47270d040ab295bc41dbf1dbef4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980571"
 ---
 # <a name="delete-contactfolder"></a>删除 contactFolder
 

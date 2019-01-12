@@ -3,12 +3,13 @@ title: 消息：replyAll
 description: '通过指定注释和修改任何可更新属性回复邮件的所有收件人 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 1abbf271350c6bbbd10af1f17c6c7d3069c3cf22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843300"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976364"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 

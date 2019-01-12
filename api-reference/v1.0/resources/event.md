@@ -3,12 +3,13 @@ title: 事件资源类型
 description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d083d860d77fe5bf777d14041de21ecc3308d838
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5288087a5288f31903dcc25fd4ef186c1bcf8783
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990808"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -65,7 +66,7 @@ ms.locfileid: "27811737"
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
 |hasAttachments|布尔|如果事件包含附件，则设置为 true。|
-|iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 此为只读属性。|
+|iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 只读。|
 |id|String| 只读。|
 |importance|importance|事件的重要性。 可能的值为： `low`， `normal`， `high`。|
 |isAllDay|布尔|如果事件持续一整天，则设置为 true。|
@@ -75,7 +76,7 @@ ms.locfileid: "27811737"
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
 |locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 会议事件时，该属性是设置。 此为只读属性。|
+|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 会议事件时，该属性是设置。 只读。|
 |organizer|[recipient](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

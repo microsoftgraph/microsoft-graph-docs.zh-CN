@@ -3,12 +3,13 @@ title: 创建 termsAndConditions
 description: 创建新的 termsAndConditions 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f2cd2350f3faa04883e3e65312b103c7cef96d41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 262390218470408edbf7d63ee00142c9b8e2b789
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972269"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 

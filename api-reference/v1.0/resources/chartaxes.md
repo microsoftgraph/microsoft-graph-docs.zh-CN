@@ -3,12 +3,13 @@ title: ChartAxes 资源类型
 description: 表示图表坐标轴。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 53f0e4a7344ddfab89330203f90032266e0c622d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 483a69f11425f3b8991305e6acdf6b970d0e2db1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885902"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976385"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes 资源类型
 

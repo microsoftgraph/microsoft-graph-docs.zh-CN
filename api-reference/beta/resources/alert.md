@@ -2,12 +2,14 @@
 title: 警报的资源类型
 description: 表示 Microsoft 或合作伙伴的安全解决方案具有标识的客户的租户中潜在的安全问题。 使用通知统一和简化安全问题管理跨所有集成的解决方案。 若要了解详细信息，请参阅图资源管理器中的示例查询。
 localization_priority: Normal
-ms.openlocfilehash: 1a2eed114fe3634262fe705450170713ba9d2fee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 29e431aee372d1ddd41232a58bc204e9c836d77e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844469"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991550"
 ---
 # <a name="alert-resource-type"></a>警报的资源类型
 
@@ -27,7 +29,7 @@ ms.locfileid: "27844469"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|Description|
+| 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |activityGroupName|字符串|名称或别名活动组 （攻击） 的此警报归功于。|
 |assignedTo|字符串|分析师通知的名称分配给进行会审、 调查或修复 （支持[更新](../api/alert-update.md)）。|
@@ -45,7 +47,7 @@ ms.locfileid: "27844469"
 |反馈|alertFeedback|分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 （支持[更新](../api/alert-update.md)）|
 |fileStates|[fileSecurityState](filesecuritystate.md)集合|有关与通知相关的文件提供程序生成的与安全相关的状态信息。|
 |hostStates|[hostSecurityState](hostsecuritystate.md)集合|有关与此警报主机提供程序生成的与安全相关的状态信息。|
-|id |字符串|提供程序生成的 GUID/唯一标识符。 此为只读属性。 必填。|
+|id |字符串|提供程序生成的 GUID/唯一标识符。 只读。 必填。|
 |lastModifiedDateTime|DateTimeOffset|警报的实体的上次修改时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |malwareStates|[malwareState](malwarestate.md)集合|与此警报与相关的恶意软件的威胁智能。|
 |networkConnections|[networkConnection](networkconnection.md)集合|有关与通知相关的网络连接提供程序生成的与安全相关的状态信息。|

@@ -3,12 +3,13 @@ title: 呼叫： changeScreenSharingRole
 description: 启动和停止共享的调用中的屏幕。 此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c7463f54ab5bfc74a55ed7dc5360a4f16876116c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976224"
 ---
 # <a name="call-changescreensharingrole"></a>呼叫： changeScreenSharingRole
 

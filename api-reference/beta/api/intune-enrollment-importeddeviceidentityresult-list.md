@@ -3,12 +3,13 @@ title: 列表 importedDeviceIdentityResults
 description: 列出属性和 importedDeviceIdentityResult 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0723c35588d73ca38dbd16208fffdb4ce02c010a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 971114f14b4ec9b607f0123e7b852e9669d3d631
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822209"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979500"
 ---
 # <a name="list-importeddeviceidentityresults"></a>列表 importedDeviceIdentityResults
 

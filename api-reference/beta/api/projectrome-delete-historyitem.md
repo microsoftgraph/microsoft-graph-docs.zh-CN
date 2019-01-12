@@ -2,12 +2,13 @@
 title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
-ms.openlocfilehash: d9468034f3a98e949eeb9f2da28c4a74c42cd991
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 30e7ee53e6546d6c70e3d576e0e2eb57965cf46f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979857"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 

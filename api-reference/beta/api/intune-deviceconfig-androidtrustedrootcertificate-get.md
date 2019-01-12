@@ -3,12 +3,13 @@ title: 获取 androidTrustedRootCertificate
 description: 读取属性和 androidTrustedRootCertificate 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 10fdab252040490111c743532f121ad9b06bcb57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 089956aacedee77bafb1443cc3c4df5fced5cf6e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978128"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>获取 androidTrustedRootCertificate
 

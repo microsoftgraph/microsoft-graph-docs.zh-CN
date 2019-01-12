@@ -1,12 +1,15 @@
 ---
 title: 通过 Microsoft Graph 更新 Excel 区域格式
 description: 下面的几个示例展示了如何更新指定区域的 RangeFormat、RangeFill 和 RangeFont 属性。
-ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ad1aae186fb7803ff38c321f87bd786096d257a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971639"
 ---
 # <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>使用 Microsoft Graph 更新 Excel 中的区域格式
 

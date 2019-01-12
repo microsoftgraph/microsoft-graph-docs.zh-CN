@@ -3,12 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 搜索文件
-ms.openlocfilehash: 591aa271a9e5a1d9ae69af2e5d8f6ea9ba7fe74b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976903"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 

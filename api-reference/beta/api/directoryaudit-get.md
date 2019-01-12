@@ -2,12 +2,14 @@
 title: 获取 directoryAudit
 description: 提供 （或获取） 特定的 Azure Active Directory 审核日志项。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
 localization_priority: Normal
-ms.openlocfilehash: e85c0c14e4f6c6a0aa3b8beca1ef9d05f4b82aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956316"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 提供 （或获取） 特定的 Azure Active Directory 审核日志项。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...

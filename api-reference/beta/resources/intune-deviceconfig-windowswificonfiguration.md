@@ -3,12 +3,13 @@ title: windowsWifiConfiguration 资源类型
 description: 设备配置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50f73a6a736aea5cac06c05d360c8f0c80bb41ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c3261d873d4b5fbd6a704946be7cdc0e1b693b32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972766"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration 资源类型
 
@@ -55,7 +56,7 @@ ms.locfileid: "27872714"
 |forceFIPSCompliance|布尔|指定是否强制 FIPS 合规性。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

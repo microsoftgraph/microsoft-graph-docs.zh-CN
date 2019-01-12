@@ -3,12 +3,13 @@ title: educationSynchronizationConnectionSettings 资源类型
 description: '代表提供商连接设置。 这样，系统知道如何连接到提供程序的 Api。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 17fedb5094016bd3df3bd8262390eaa7eeb37537
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f9bb19ec9c09b06dd007eb2031f3dbb176eb12d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841767"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978226"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings 资源类型
 
@@ -19,7 +20,7 @@ ms.locfileid: "27841767"
 > **注意：** 此复杂类型是抽象类。 引用的特定类型的列出的连接设置。
 
 ## <a name="derived-types"></a>派生的类型
-| 类型 | Description | 
+| 类型 | 说明 | 
 |:-|:-|
 | [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | 使用此类型提供 OAuth1 连接设置。 |
 | [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | 使用此类型提供 OAuth2 客户端凭据授予连接设置。 |

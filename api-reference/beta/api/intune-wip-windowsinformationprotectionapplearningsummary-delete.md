@@ -3,12 +3,13 @@ title: 删除 windowsInformationProtectionAppLearningSummary
 description: 删除 windowsInformationProtectionAppLearningSummary。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50a56a7e4df6aced153a4ed1d6de0c401930f0e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4c9e48ddd0ca63763173ac1fad5afdbcc441b82d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974595"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>删除 windowsInformationProtectionAppLearningSummary
 

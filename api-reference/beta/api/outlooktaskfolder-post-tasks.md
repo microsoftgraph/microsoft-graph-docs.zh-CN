@@ -3,12 +3,13 @@ title: 创建 outlookTask
 description: 在指定的任务文件夹中创建 Outlook 任务。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 477ddf32b790da5b5d43560119d7a2529e773ad0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 80e1c6dda762ae46b5463fde9cff353e1d46408f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969630"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 

@@ -2,12 +2,14 @@
 title: 列出计划
 description: 检索拥有的一个 group 对象的**plannerPlan**对象的列表。
 localization_priority: Priority
-ms.openlocfilehash: aa8466231ef580dabfb83aaaf4a0368b548495f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 0212968b0882c4090044519d12157a52c85b421b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972486"
 ---
 # <a name="list-plans"></a>列出计划
 

@@ -3,12 +3,13 @@ title: proxiedDomain 资源类型
 description: 代理域
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b25d40058f4f79add5875698777e23f658992e05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf4668a58e09b21c2689e10c27e773128f886b34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971548"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 

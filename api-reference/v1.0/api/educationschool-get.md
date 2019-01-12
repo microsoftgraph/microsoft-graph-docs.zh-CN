@@ -3,12 +3,13 @@ title: 获取 educationSchool
 description: 检索 school 对象的属性和关系。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 7fe3e094ca06286a8a89768185ed131dd27e1fa3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 6b43360dd6582cb0f9c0f84166eb27e362dd0e0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839072"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976945"
 ---
 # <a name="get-educationschool"></a>获取 educationSchool
 

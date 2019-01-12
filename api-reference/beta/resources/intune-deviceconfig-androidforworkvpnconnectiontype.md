@@ -3,12 +3,13 @@ title: androidForWorkVpnConnectionType 枚举类型
 description: Android 的工作 VPN 连接类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38dba15764f016d830c3e0641c3f1410e91bc9a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28eeb6f148baad098620e88fd1e10b99e1875059
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860226"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991501"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27860226"
 
 Android 的工作 VPN 连接类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
 |pulseSecure|1|脉冲安全。|

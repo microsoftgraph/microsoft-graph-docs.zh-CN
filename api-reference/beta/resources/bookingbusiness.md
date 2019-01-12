@@ -2,12 +2,14 @@
 title: bookingBusiness 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: cf00239802cec9a705c24548649e38f3022383a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986213"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
