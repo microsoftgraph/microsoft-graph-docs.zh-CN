@@ -2,27 +2,29 @@
 title: 创建包含 Microsoft Teams 团队的组
 description: '若要创建包含团队的组，请按以下两步操作： '
 author: nkramer
-ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-teams
+ms.openlocfilehash: 06b25a6da159030407c904622ffebde09c704d98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970477"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="80a6a-103">创建包含 Microsoft Teams 团队的组</span><span class="sxs-lookup"><span data-stu-id="80a6a-103">Creating a group with a Microsoft Teams team</span></span>
+# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="0bc4c-103">创建包含 Microsoft Teams 团队的组</span><span class="sxs-lookup"><span data-stu-id="0bc4c-103">Creating a group with a Microsoft Teams team</span></span>
 
-<span data-ttu-id="80a6a-104">若要创建包含[团队](/graph/api/resources/team?view=graph-rest-beta)的[组](/graph/api/resources/group?view=graph-rest-beta)，请按以下两步操作：</span><span class="sxs-lookup"><span data-stu-id="80a6a-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
+<span data-ttu-id="0bc4c-104">若要创建包含[团队](/graph/api/resources/team?view=graph-rest-beta)的[组](/graph/api/resources/group?view=graph-rest-beta)，请按以下两步操作：</span><span class="sxs-lookup"><span data-stu-id="0bc4c-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
 
-- <span data-ttu-id="80a6a-105">使用正确属性[创建组](/graph/api/group-post-groups?view=graph-rest-beta)。</span><span class="sxs-lookup"><span data-stu-id="80a6a-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
-- <span data-ttu-id="80a6a-106">[将团队添加](/graph/api/team-put-teams?view=graph-rest-beta)到组。</span><span class="sxs-lookup"><span data-stu-id="80a6a-106">[Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.</span></span>
+- <span data-ttu-id="0bc4c-105">使用正确属性[创建组](/graph/api/group-post-groups?view=graph-rest-beta)。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
+- <span data-ttu-id="0bc4c-106">[将团队添加](/graph/api/team-put-teams?view=graph-rest-beta)到组。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-106">[Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.</span></span>
 
-## <a name="create-a-group"></a><span data-ttu-id="80a6a-107">创建组</span><span class="sxs-lookup"><span data-stu-id="80a6a-107">Create a group</span></span>
+## <a name="create-a-group"></a><span data-ttu-id="0bc4c-107">创建组</span><span class="sxs-lookup"><span data-stu-id="0bc4c-107">Create a group</span></span>
 
-<span data-ttu-id="80a6a-108">若要添加团队，必须设置以下属性值，如下面的示例所示：</span><span class="sxs-lookup"><span data-stu-id="80a6a-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
+<span data-ttu-id="0bc4c-108">若要添加团队，必须设置以下属性值，如下面的示例所示：</span><span class="sxs-lookup"><span data-stu-id="0bc4c-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
 
-- <span data-ttu-id="80a6a-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="80a6a-109">**groupTypes** = { "Unified" }</span></span> 
-- <span data-ttu-id="80a6a-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="80a6a-110">**mailEnabled** = true</span></span>
-- <span data-ttu-id="80a6a-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="80a6a-111">**securityEnabled** = false</span></span>
+- <span data-ttu-id="0bc4c-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="0bc4c-109">**groupTypes** = { "Unified" }</span></span> 
+- <span data-ttu-id="0bc4c-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="0bc4c-110">**mailEnabled** = true</span></span>
+- <span data-ttu-id="0bc4c-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="0bc4c-111">**securityEnabled** = false</span></span>
 
 ```http
 POST /groups
@@ -47,9 +49,9 @@ POST /groups
 }
 ```
 
-<span data-ttu-id="80a6a-112">下面的示例展示了响应。</span><span class="sxs-lookup"><span data-stu-id="80a6a-112">The following example shows response.</span></span> 
+<span data-ttu-id="0bc4c-112">下面的示例展示了响应。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-112">The following example shows response.</span></span> 
 
-><span data-ttu-id="80a6a-113">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="80a6a-113">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="80a6a-114">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="80a6a-114">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="0bc4c-113">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-113">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="0bc4c-114">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-114">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -61,18 +63,18 @@ Content-length: xxx
 }
 ```
 
-## <a name="add-a-team-to-the-group"></a><span data-ttu-id="80a6a-115">将团队添加到组</span><span class="sxs-lookup"><span data-stu-id="80a6a-115">Add a team to the group</span></span>
+## <a name="add-a-team-to-the-group"></a><span data-ttu-id="0bc4c-115">将团队添加到组</span><span class="sxs-lookup"><span data-stu-id="0bc4c-115">Add a team to the group</span></span>
 
-<span data-ttu-id="80a6a-116">将团队添加到组，如下所示。</span><span class="sxs-lookup"><span data-stu-id="80a6a-116">Add a team to the group, as shown.</span></span>
+<span data-ttu-id="0bc4c-116">将团队添加到组，如下所示。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-116">Add a team to the group, as shown.</span></span>
 
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-<span data-ttu-id="80a6a-117">下面的示例展示了响应。</span><span class="sxs-lookup"><span data-stu-id="80a6a-117">The following example shows the response.</span></span> 
+<span data-ttu-id="0bc4c-117">下面的示例展示了响应。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-117">The following example shows the response.</span></span> 
 
-><span data-ttu-id="80a6a-118">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="80a6a-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="80a6a-119">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="80a6a-119">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="0bc4c-118">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="0bc4c-119">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-119">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -90,4 +92,4 @@ Content-length: xxx
 }
 ```
 
-<span data-ttu-id="80a6a-120">已创建团队的 ID 与组相同。</span><span class="sxs-lookup"><span data-stu-id="80a6a-120">The created team has the same ID as the group.</span></span>
+<span data-ttu-id="0bc4c-120">已创建团队的 ID 与组相同。</span><span class="sxs-lookup"><span data-stu-id="0bc4c-120">The created team has the same ID as the group.</span></span>
