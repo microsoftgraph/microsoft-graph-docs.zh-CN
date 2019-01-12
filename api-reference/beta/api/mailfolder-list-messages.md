@@ -2,52 +2,54 @@
 title: List messages
 description: 列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。
 localization_priority: Normal
-ms.openlocfilehash: d35489a45e84fdba484e721989900217b23eb08c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: cded21d803653fb32750e9f016e43d2526b7ac85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948763"
 ---
-# <a name="list-messages"></a><span data-ttu-id="ce739-103">List messages</span><span class="sxs-lookup"><span data-stu-id="ce739-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="178bd-103">List messages</span><span class="sxs-lookup"><span data-stu-id="178bd-103">List messages</span></span>
 
-> <span data-ttu-id="ce739-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ce739-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ce739-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ce739-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="178bd-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="178bd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="178bd-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="178bd-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ce739-106">列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。</span><span class="sxs-lookup"><span data-stu-id="ce739-106">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
+<span data-ttu-id="178bd-106">列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。</span><span class="sxs-lookup"><span data-stu-id="178bd-106">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ce739-107">权限</span><span class="sxs-lookup"><span data-stu-id="ce739-107">Permissions</span></span>
-<span data-ttu-id="ce739-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce739-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="178bd-107">权限</span><span class="sxs-lookup"><span data-stu-id="178bd-107">Permissions</span></span>
+<span data-ttu-id="178bd-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="178bd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce739-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce739-110">Permission type</span></span>      | <span data-ttu-id="ce739-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ce739-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="178bd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="178bd-110">Permission type</span></span>      | <span data-ttu-id="178bd-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="178bd-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce739-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce739-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ce739-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce739-113">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ce739-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce739-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce739-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce739-115">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ce739-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ce739-116">Application</span></span> | <span data-ttu-id="ce739-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce739-117">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="178bd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="178bd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="178bd-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="178bd-113">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="178bd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="178bd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="178bd-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="178bd-115">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="178bd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="178bd-116">Application</span></span> | <span data-ttu-id="178bd-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="178bd-117">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce739-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce739-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="178bd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="178bd-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ce739-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ce739-119">Optional query parameters</span></span>
-<span data-ttu-id="ce739-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ce739-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="178bd-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="178bd-119">Optional query parameters</span></span>
+<span data-ttu-id="178bd-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="178bd-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ce739-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce739-121">Request headers</span></span>
-| <span data-ttu-id="ce739-122">名称</span><span class="sxs-lookup"><span data-stu-id="ce739-122">Name</span></span>       | <span data-ttu-id="ce739-123">类型</span><span class="sxs-lookup"><span data-stu-id="ce739-123">Type</span></span> | <span data-ttu-id="ce739-124">说明</span><span class="sxs-lookup"><span data-stu-id="ce739-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="178bd-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="178bd-121">Request headers</span></span>
+| <span data-ttu-id="178bd-122">名称</span><span class="sxs-lookup"><span data-stu-id="178bd-122">Name</span></span>       | <span data-ttu-id="178bd-123">类型</span><span class="sxs-lookup"><span data-stu-id="178bd-123">Type</span></span> | <span data-ttu-id="178bd-124">说明</span><span class="sxs-lookup"><span data-stu-id="178bd-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ce739-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce739-125">Authorization</span></span>  | <span data-ttu-id="ce739-126">string</span><span class="sxs-lookup"><span data-stu-id="ce739-126">string</span></span>  | <span data-ttu-id="ce739-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ce739-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="178bd-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="178bd-125">Authorization</span></span>  | <span data-ttu-id="178bd-126">string</span><span class="sxs-lookup"><span data-stu-id="178bd-126">string</span></span>  | <span data-ttu-id="178bd-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="178bd-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ce739-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce739-129">Request body</span></span>
-<span data-ttu-id="ce739-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ce739-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="178bd-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="178bd-129">Request body</span></span>
+<span data-ttu-id="178bd-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="178bd-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce739-131">响应</span><span class="sxs-lookup"><span data-stu-id="ce739-131">Response</span></span>
-<span data-ttu-id="ce739-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ce739-132">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="178bd-131">响应</span><span class="sxs-lookup"><span data-stu-id="178bd-131">Response</span></span>
+<span data-ttu-id="178bd-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="178bd-132">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce739-133">示例</span><span class="sxs-lookup"><span data-stu-id="ce739-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ce739-134">请求</span><span class="sxs-lookup"><span data-stu-id="ce739-134">Request</span></span>
-<span data-ttu-id="ce739-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce739-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="178bd-133">示例</span><span class="sxs-lookup"><span data-stu-id="178bd-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="178bd-134">请求</span><span class="sxs-lookup"><span data-stu-id="178bd-134">Request</span></span>
+<span data-ttu-id="178bd-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="178bd-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -56,9 +58,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 
-#### <a name="response"></a><span data-ttu-id="ce739-136">响应</span><span class="sxs-lookup"><span data-stu-id="ce739-136">Response</span></span>
-<span data-ttu-id="ce739-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ce739-137">The following is an example of the response.</span></span>
-><span data-ttu-id="ce739-138">**注意：** 可能为便于阅读缩短如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ce739-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ce739-139">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ce739-139">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="178bd-136">响应</span><span class="sxs-lookup"><span data-stu-id="178bd-136">Response</span></span>
+<span data-ttu-id="178bd-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="178bd-137">The following is an example of the response.</span></span>
+><span data-ttu-id="178bd-138">**注意：** 可能为便于阅读缩短如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="178bd-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="178bd-139">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="178bd-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

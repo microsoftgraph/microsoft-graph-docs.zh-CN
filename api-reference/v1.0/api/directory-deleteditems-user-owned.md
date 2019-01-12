@@ -1,46 +1,47 @@
 ---
-title: Permissions
+title: 权限
 description: '检索列表的、 由指定用户拥有的最近已删除项目。  '
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 2c4dfb7300d75ec066cf7c76c582d7bc4014e27a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962728"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a><span data-ttu-id="e5c61-103">**由用户拥有的删除列表项**</span><span class="sxs-lookup"><span data-stu-id="e5c61-103">**List deleted items owned by a user**</span></span>
+# <a name="list-deleted-items-owned-by-a-user"></a><span data-ttu-id="e40f5-103">**由用户拥有的删除列表项**</span><span class="sxs-lookup"><span data-stu-id="e40f5-103">**List deleted items owned by a user**</span></span>
 
-<span data-ttu-id="e5c61-104">检索列表的、 由指定用户拥有的最近已删除项目。</span><span class="sxs-lookup"><span data-stu-id="e5c61-104">Retrieves a list of recently deleted items owned by the specified user.</span></span>  
+<span data-ttu-id="e40f5-104">检索列表的、 由指定用户拥有的最近已删除项目。</span><span class="sxs-lookup"><span data-stu-id="e40f5-104">Retrieves a list of recently deleted items owned by the specified user.</span></span>  
 
-<span data-ttu-id="e5c61-105">目前，删除列表项功能的用户所拥有的[group](../resources/group.md)资源仅支持。</span><span class="sxs-lookup"><span data-stu-id="e5c61-105">Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.</span></span>
+<span data-ttu-id="e40f5-105">目前，删除列表项功能的用户所拥有的[group](../resources/group.md)资源仅支持。</span><span class="sxs-lookup"><span data-stu-id="e40f5-105">Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.</span></span>
 
-<span data-ttu-id="e5c61-106">这是服务操作，这意味着它不支持分页。</span><span class="sxs-lookup"><span data-stu-id="e5c61-106">This is a service action, which means it does not support pagination.</span></span>  <span data-ttu-id="e5c61-107">API 返回多达 1,000 个用户，按 ID 排序所拥有的已删除的对象</span><span class="sxs-lookup"><span data-stu-id="e5c61-107">The API returns up to 1,000 deleted objects owned by the user, sorted by ID.</span></span>
+<span data-ttu-id="e40f5-106">这是服务操作，这意味着它不支持分页。</span><span class="sxs-lookup"><span data-stu-id="e40f5-106">This is a service action, which means it does not support pagination.</span></span>  <span data-ttu-id="e40f5-107">API 返回多达 1,000 个用户，按 ID 排序所拥有的已删除的对象</span><span class="sxs-lookup"><span data-stu-id="e40f5-107">The API returns up to 1,000 deleted objects owned by the user, sorted by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e5c61-108">权限</span><span class="sxs-lookup"><span data-stu-id="e5c61-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e40f5-108">权限</span><span class="sxs-lookup"><span data-stu-id="e40f5-108">Permissions</span></span>
 
-<span data-ttu-id="e5c61-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="e5c61-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="e40f5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。</span><span class="sxs-lookup"><span data-stu-id="e40f5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-| <span data-ttu-id="e5c61-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5c61-111">Permission type</span></span> | <span data-ttu-id="e5c61-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e5c61-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e40f5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e40f5-111">Permission type</span></span> | <span data-ttu-id="e40f5-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e40f5-112">Permissions (from least to most privileged)</span></span> |
 | --- | --- |
-| <span data-ttu-id="e5c61-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5c61-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e5c61-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5c61-114">Group.Read.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="e5c61-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5c61-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="e5c61-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5c61-116">Not supported.</span></span> |
-| <span data-ttu-id="e5c61-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5c61-117">Application</span></span> | <span data-ttu-id="e5c61-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5c61-118">Group.Read.All, Group.ReadWrite.All</span></span>  |
+| <span data-ttu-id="e40f5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e40f5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e40f5-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e40f5-114">Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="e40f5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e40f5-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="e40f5-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e40f5-116">Not supported.</span></span> |
+| <span data-ttu-id="e40f5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e40f5-117">Application</span></span> | <span data-ttu-id="e40f5-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e40f5-118">Group.Read.All, Group.ReadWrite.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="e5c61-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5c61-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e40f5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e40f5-119">HTTP request</span></span>
 
 ``` http
 POST /directory/deletedItems/getUserOwnedObjects
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e5c61-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e5c61-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e40f5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e40f5-120">Request headers</span></span>
 
-| <span data-ttu-id="e5c61-121">名称</span><span class="sxs-lookup"><span data-stu-id="e5c61-121">Name</span></span>          | <span data-ttu-id="e5c61-122">说明</span><span class="sxs-lookup"><span data-stu-id="e5c61-122">Description</span></span>               |
+| <span data-ttu-id="e40f5-121">名称</span><span class="sxs-lookup"><span data-stu-id="e40f5-121">Name</span></span>          | <span data-ttu-id="e40f5-122">说明</span><span class="sxs-lookup"><span data-stu-id="e40f5-122">Description</span></span>               |
 | ------------- | ------------------------- |
-| <span data-ttu-id="e5c61-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5c61-123">Authorization</span></span> | <span data-ttu-id="e5c61-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e5c61-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e40f5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e40f5-123">Authorization</span></span> | <span data-ttu-id="e40f5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e40f5-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e5c61-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5c61-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e40f5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e40f5-126">Request body</span></span>
 
 ```json
 {
@@ -49,23 +50,23 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-<span data-ttu-id="e5c61-127">在请求正文需要以下参数：</span><span class="sxs-lookup"><span data-stu-id="e5c61-127">The request body requires the following parameters:</span></span>
+<span data-ttu-id="e40f5-127">在请求正文需要以下参数：</span><span class="sxs-lookup"><span data-stu-id="e40f5-127">The request body requires the following parameters:</span></span>
 
-| <span data-ttu-id="e5c61-128">参数</span><span class="sxs-lookup"><span data-stu-id="e5c61-128">Parameter</span></span>    | <span data-ttu-id="e5c61-129">类型</span><span class="sxs-lookup"><span data-stu-id="e5c61-129">Type</span></span> |<span data-ttu-id="e5c61-130">Description</span><span class="sxs-lookup"><span data-stu-id="e5c61-130">Description</span></span>|
+| <span data-ttu-id="e40f5-128">参数</span><span class="sxs-lookup"><span data-stu-id="e40f5-128">Parameter</span></span>    | <span data-ttu-id="e40f5-129">类型</span><span class="sxs-lookup"><span data-stu-id="e40f5-129">Type</span></span> |<span data-ttu-id="e40f5-130">说明</span><span class="sxs-lookup"><span data-stu-id="e40f5-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5c61-131">userId</span><span class="sxs-lookup"><span data-stu-id="e5c61-131">userId</span></span>|<span data-ttu-id="e5c61-132">String</span><span class="sxs-lookup"><span data-stu-id="e5c61-132">String</span></span>|<span data-ttu-id="e5c61-133">所有者的 ID。</span><span class="sxs-lookup"><span data-stu-id="e5c61-133">ID of the owner.</span></span>|
-|<span data-ttu-id="e5c61-134">type</span><span class="sxs-lookup"><span data-stu-id="e5c61-134">type</span></span>|<span data-ttu-id="e5c61-135">字符串</span><span class="sxs-lookup"><span data-stu-id="e5c61-135">String</span></span>|<span data-ttu-id="e5c61-136">要返回; 的拥有对象的类型`Group`目前唯一受支持的值。</span><span class="sxs-lookup"><span data-stu-id="e5c61-136">Type of owned objects to return; `Group` is currently the only supported value.</span></span>|
+|<span data-ttu-id="e40f5-131">userId</span><span class="sxs-lookup"><span data-stu-id="e40f5-131">userId</span></span>|<span data-ttu-id="e40f5-132">String</span><span class="sxs-lookup"><span data-stu-id="e40f5-132">String</span></span>|<span data-ttu-id="e40f5-133">所有者的 ID。</span><span class="sxs-lookup"><span data-stu-id="e40f5-133">ID of the owner.</span></span>|
+|<span data-ttu-id="e40f5-134">type</span><span class="sxs-lookup"><span data-stu-id="e40f5-134">type</span></span>|<span data-ttu-id="e40f5-135">字符串</span><span class="sxs-lookup"><span data-stu-id="e40f5-135">String</span></span>|<span data-ttu-id="e40f5-136">要返回; 的拥有对象的类型`Group`目前唯一受支持的值。</span><span class="sxs-lookup"><span data-stu-id="e40f5-136">Type of owned objects to return; `Group` is currently the only supported value.</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="e5c61-137">响应</span><span class="sxs-lookup"><span data-stu-id="e5c61-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e40f5-137">响应</span><span class="sxs-lookup"><span data-stu-id="e40f5-137">Response</span></span>
 
-<span data-ttu-id="e5c61-138">成功的请求返回`200 OK`响应代码;响应对象包含[目录 （已删除项）](../resources/directory.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="e5c61-138">Successful requests return `200 OK` response codes; the response object includes [directory (deleted items)](../resources/directory.md) properties.</span></span>
+<span data-ttu-id="e40f5-138">成功的请求返回`200 OK`响应代码;响应对象包含[目录 （已删除项）](../resources/directory.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="e40f5-138">Successful requests return `200 OK` response codes; the response object includes [directory (deleted items)](../resources/directory.md) properties.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5c61-139">示例</span><span class="sxs-lookup"><span data-stu-id="e5c61-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e40f5-139">示例</span><span class="sxs-lookup"><span data-stu-id="e40f5-139">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e5c61-140">请求</span><span class="sxs-lookup"><span data-stu-id="e5c61-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e40f5-140">请求</span><span class="sxs-lookup"><span data-stu-id="e40f5-140">Request</span></span>
 
-<span data-ttu-id="e5c61-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e5c61-141">Here is an example of the request.</span></span>
+<span data-ttu-id="e40f5-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e40f5-141">Here is an example of the request.</span></span>
 
 ``` http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/getUserOwnedObjects
@@ -79,9 +80,9 @@ Content-type: application/json
 }
 ```
 
-###### <a name="response"></a><span data-ttu-id="e5c61-142">响应</span><span class="sxs-lookup"><span data-stu-id="e5c61-142">Response</span></span>
+###### <a name="response"></a><span data-ttu-id="e40f5-142">响应</span><span class="sxs-lookup"><span data-stu-id="e40f5-142">Response</span></span>
 
-<span data-ttu-id="e5c61-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e5c61-143">Here is an example of the response.</span></span> <span data-ttu-id="e5c61-144">注意： 为了简单起见，此响应对象可能被截断。</span><span class="sxs-lookup"><span data-stu-id="e5c61-144">Note: This response object may be truncated for brevity.</span></span> <span data-ttu-id="e5c61-145">从实际的调用返回所有支持的属性。</span><span class="sxs-lookup"><span data-stu-id="e5c61-145">All supported properties are returned from actual calls.</span></span>
+<span data-ttu-id="e40f5-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e40f5-143">Here is an example of the response.</span></span> <span data-ttu-id="e40f5-144">注意： 为了简单起见，此响应对象可能被截断。</span><span class="sxs-lookup"><span data-stu-id="e40f5-144">Note: This response object may be truncated for brevity.</span></span> <span data-ttu-id="e40f5-145">从实际的调用返回所有支持的属性。</span><span class="sxs-lookup"><span data-stu-id="e40f5-145">All supported properties are returned from actual calls.</span></span>
 
 ``` http
 HTTP/1.1 200

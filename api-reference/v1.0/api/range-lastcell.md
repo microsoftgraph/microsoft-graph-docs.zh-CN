@@ -3,26 +3,27 @@ title: Range:LastCell
 description: .
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 5156554c5e094556415a03a7651fd0ffee1bcf33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 1956c820816ffc157a036f0b39cf1330974ee50d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961153"
 ---
-# <a name="range-lastcell"></a><span data-ttu-id="13978-103">Range:LastCell</span><span class="sxs-lookup"><span data-stu-id="13978-103">Range: LastCell</span></span>
+# <a name="range-lastcell"></a><span data-ttu-id="e4905-103">Range:LastCell</span><span class="sxs-lookup"><span data-stu-id="e4905-103">Range: LastCell</span></span>
 
-<span data-ttu-id="13978-p101">获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。</span><span class="sxs-lookup"><span data-stu-id="13978-p101">Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".</span></span>
-## <a name="permissions"></a><span data-ttu-id="13978-106">权限</span><span class="sxs-lookup"><span data-stu-id="13978-106">Permissions</span></span>
-<span data-ttu-id="13978-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="13978-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e4905-p101">获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。</span><span class="sxs-lookup"><span data-stu-id="e4905-p101">Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4905-106">权限</span><span class="sxs-lookup"><span data-stu-id="e4905-106">Permissions</span></span>
+<span data-ttu-id="e4905-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e4905-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="13978-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="13978-109">Permission type</span></span>      | <span data-ttu-id="13978-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="13978-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e4905-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e4905-109">Permission type</span></span>      | <span data-ttu-id="e4905-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e4905-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="13978-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="13978-111">Delegated (work or school account)</span></span> | <span data-ttu-id="13978-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="13978-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="13978-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="13978-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13978-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="13978-114">Not supported.</span></span>    |
-|<span data-ttu-id="13978-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="13978-115">Application</span></span> | <span data-ttu-id="13978-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="13978-116">Not supported.</span></span> |
+|<span data-ttu-id="e4905-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e4905-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e4905-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4905-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e4905-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e4905-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4905-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4905-114">Not supported.</span></span>    |
+|<span data-ttu-id="e4905-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e4905-115">Application</span></span> | <span data-ttu-id="e4905-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4905-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="13978-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="13978-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4905-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e4905-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/lastCell
@@ -30,22 +31,22 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/lastCell
 GET /workbook/tables/{id|name}/columns/{id|name}/range/lastCell
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="13978-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="13978-118">Request headers</span></span>
-| <span data-ttu-id="13978-119">名称</span><span class="sxs-lookup"><span data-stu-id="13978-119">Name</span></span>       | <span data-ttu-id="13978-120">说明</span><span class="sxs-lookup"><span data-stu-id="13978-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4905-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e4905-118">Request headers</span></span>
+| <span data-ttu-id="e4905-119">名称</span><span class="sxs-lookup"><span data-stu-id="e4905-119">Name</span></span>       | <span data-ttu-id="e4905-120">说明</span><span class="sxs-lookup"><span data-stu-id="e4905-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="13978-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="13978-121">Authorization</span></span>  | <span data-ttu-id="13978-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="13978-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="13978-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="13978-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="13978-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="13978-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e4905-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4905-121">Authorization</span></span>  | <span data-ttu-id="e4905-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e4905-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4905-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e4905-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="e4905-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="e4905-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="13978-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="13978-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4905-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e4905-127">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="13978-128">响应</span><span class="sxs-lookup"><span data-stu-id="13978-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4905-128">响应</span><span class="sxs-lookup"><span data-stu-id="e4905-128">Response</span></span>
 
-<span data-ttu-id="13978-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="13978-129">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="e4905-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e4905-129">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="13978-130">示例</span><span class="sxs-lookup"><span data-stu-id="13978-130">Example</span></span>
-<span data-ttu-id="13978-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="13978-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="13978-132">请求</span><span class="sxs-lookup"><span data-stu-id="13978-132">Request</span></span>
-<span data-ttu-id="13978-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="13978-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e4905-130">示例</span><span class="sxs-lookup"><span data-stu-id="e4905-130">Example</span></span>
+<span data-ttu-id="e4905-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="e4905-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e4905-132">请求</span><span class="sxs-lookup"><span data-stu-id="e4905-132">Request</span></span>
+<span data-ttu-id="e4905-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e4905-133">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -55,8 +56,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastCell
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastCell
 ```
 
-##### <a name="response"></a><span data-ttu-id="13978-134">响应</span><span class="sxs-lookup"><span data-stu-id="13978-134">Response</span></span>
-<span data-ttu-id="13978-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="13978-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e4905-134">响应</span><span class="sxs-lookup"><span data-stu-id="e4905-134">Response</span></span>
+<span data-ttu-id="e4905-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e4905-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
