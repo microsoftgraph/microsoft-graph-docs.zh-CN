@@ -3,12 +3,13 @@ title: 删除 remoteAssistancePartner
 description: 删除 remoteAssistancePartner。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e0f8a774590ff13dcb515092ca2c7498143eb46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: da1e7856b916a001a2110790872f9544f1d5c454
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857419"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964317"
 ---
 # <a name="delete-remoteassistancepartner"></a>删除 remoteAssistancePartner
 

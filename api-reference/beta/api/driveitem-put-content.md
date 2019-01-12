@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 上传小文件
 localization_priority: Normal
-ms.openlocfilehash: 3549850f66c3a46eac49b4bac8040b876fc5509b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 404310b10610b5378ec11dfbf517ee2cde0042d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955916"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 DriveItem 的内容
 

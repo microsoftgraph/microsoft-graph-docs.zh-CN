@@ -3,12 +3,13 @@ title: 列出 windows10SecureAssessmentConfigurations
 description: 列出 windows10SecureAssessmentConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 94103ff601f76a246d540cb53d8327af86f8617f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f5fce067d9e0fbba58395ed05138d253fe5d6d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955686"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>列出 windows10SecureAssessmentConfigurations
 

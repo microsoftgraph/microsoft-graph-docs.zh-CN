@@ -2,12 +2,14 @@
 title: 'event: delta'
 description: '获取一组已添加、 删除或更新**calendarView** （事件范围） 中的事件 '
 localization_priority: Priority
-ms.openlocfilehash: f5901115e07e3816bf4fba9a0fa063a7c06ffb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7eb8a80f8e857edc9aa9ff8781fae01dc1476677
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963708"
 ---
 # <a name="event-delta"></a>event: delta
 

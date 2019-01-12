@@ -3,12 +3,13 @@ title: RangeBorder 资源类型
 description: 表示对象的边框。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 33ed0410ab807cf9d9d6a0a49cb06b43d9966e46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 8404a45ea7c56bbbb318994daa55229706d700a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960236"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "27853527"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |读取 rangeborder 对象的属性和关系。|
-|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |更新 RangeBorder 对象。 |
-|[List](../api/rangeborder-list.md) | [RangeBorder](rangeborder.md) 集合 |获取 rangeBorder 对象集合。 |
+|[更新](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |更新 RangeBorder 对象。 |
+|[列出](../api/rangeborder-list.md) | [RangeBorder](rangeborder.md) 集合 |获取 rangeBorder 对象集合。 |
 |[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|使用其索引获取 border 对象|
 
 ## <a name="properties"></a>属性

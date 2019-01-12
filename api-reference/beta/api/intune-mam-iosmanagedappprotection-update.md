@@ -3,12 +3,13 @@ title: 更新 iosManagedAppProtection
 description: 更新 iosManagedAppProtection 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4e6c7a499a0ec94afcfae432139809925c2e1815
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 084a76bc20970318083e9d821ee7be90a37af7a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955287"
 ---
 # <a name="update-iosmanagedappprotection"></a>更新 iosManagedAppProtection
 
@@ -97,10 +98,10 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |allowedIosDeviceModels|字符串|作为字符串的托管的应用程序，以允许的设备模型的分号分隔列表。|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备模型。 可取值为：`block`、`wipe`。|
-|thirdPartyKeyboardsBlocked|布尔|如果第三方键盘允许时访问托管的应用程序，定义|
-|filterOpenInToOnlyManagedApps|布尔|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。|
-|disableProtectionOfManagedOutboundOpenInData|布尔|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。|
-|protectInboundDataFromUnknownSources|布尔|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。|
+|thirdPartyKeyboardsBlocked|Boolean|如果第三方键盘允许时访问托管的应用程序，定义|
+|filterOpenInToOnlyManagedApps|Boolean|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。|
+|protectInboundDataFromUnknownSources|Boolean|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。|
 
 
 

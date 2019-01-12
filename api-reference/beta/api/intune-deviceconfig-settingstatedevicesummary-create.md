@@ -3,12 +3,13 @@ title: 创建 settingStateDeviceSummary
 description: 创建新的 settingStateDeviceSummary 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06c9851a534f59be935791e1c1f435d2180bf9d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31c887394daa3425d39a80a9986d4d2eb6ea818b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950352"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 

@@ -2,12 +2,14 @@
 title: reportRoot 资源类型
 description: 表示的设备或疑难解答的报告，具体取决于上下文实例的资源。
 localization_priority: Normal
-ms.openlocfilehash: 8a2c1cbc666698eea7f466c32bae6c404264f545
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: efb8950b9956901161c822df8b467b0182a4cc75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959585"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -25,7 +27,7 @@ ms.locfileid: "27809644"
 |**设备配置**|
 |[deviceConfigurationUserActivity 函数](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|设备配置用户活动报告的元数据|
 |[deviceConfigurationDeviceActivity 函数](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|设备配置设备活动报告的元数据|
-|**故障排除**|
+|**疑难解答**|
 |[managedDeviceEnrollmentAbandonmentDetails 函数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[报告](../resources/intune-shared-report.md)|注册放弃的元数据的详细信息报表|
 |[managedDeviceEnrollmentAbandonmentSummary 函数](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[报告](../resources/intune-shared-report.md)|注册放弃摘要报告的元数据|
 |[managedDeviceEnrollmentFailureDetails 函数](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|尚未记录|

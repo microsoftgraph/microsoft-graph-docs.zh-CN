@@ -3,12 +3,13 @@ title: 'Table: delete'
 description: 删除表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 133b1f84491187c6654db39b43cfcceffcea18dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7896c5c5abd645f71e90ce30d48ffdabefd695c5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839492"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955763"
 ---
 # <a name="table-delete"></a>Table: delete
 

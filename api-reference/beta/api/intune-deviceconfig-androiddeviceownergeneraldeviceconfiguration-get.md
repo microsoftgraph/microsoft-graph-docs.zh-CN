@@ -3,12 +3,13 @@ title: 获取 androidDeviceOwnerGeneralDeviceConfiguration
 description: 读取属性和 androidDeviceOwnerGeneralDeviceConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 00773043137a66be39e8ef5469c25a74d1492954
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2ab8db8309087868bb892107bc81867d3817e0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961027"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 

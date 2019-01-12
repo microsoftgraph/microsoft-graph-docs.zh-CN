@@ -3,12 +3,13 @@ title: 获取范围
 description: 检索 range 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3291c8188d340208869d5142ed3b0d5b0ed09ce5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: ec05b0bb3d91e41c0df47c7675bfc08ac078a68c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876536"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964562"
 ---
 # <a name="get-range"></a>获取区域
 

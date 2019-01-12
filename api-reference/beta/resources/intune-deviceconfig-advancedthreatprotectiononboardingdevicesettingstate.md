@@ -3,12 +3,13 @@ title: advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 description: 给定设备 ATP 加入状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a83581faa921fc4216cd81f1fbabb026210db34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26cc9d42238dd19b256b80e7e70ac605e8742d3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953082"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 

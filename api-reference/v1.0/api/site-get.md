@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取 SharePoint 网站
 localization_priority: Priority
-ms.openlocfilehash: 67da055677bf566229e4b1a2cca5ae327c7b6fe5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: ef68b573c34ef63eb97ccd90818fcfa8d808c4ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806312"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961545"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 

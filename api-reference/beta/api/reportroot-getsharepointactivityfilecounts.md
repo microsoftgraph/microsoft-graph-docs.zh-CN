@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointActivityFileCounts'
 description: 获取与 SharePoint 网站中存储的文件进行交互的唯一许可用户数。
 localization_priority: Normal
-ms.openlocfilehash: 3eeaec249d097082e638efcd920c81e1a03658ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 647b58f55e10c85d2c54c34324d5e21362f6176e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955364"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 

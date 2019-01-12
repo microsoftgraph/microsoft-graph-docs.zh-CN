@@ -3,12 +3,13 @@ title: 更新 windowsPrivacyDataAccessControlItem
 description: 更新 windowsPrivacyDataAccessControlItem 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a989f4c05bff61f86c93873ad817013b6fab2bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2a5e6e9ea080edca75de6ef4c8a4df5079ac98b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807124"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960978"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>更新 windowsPrivacyDataAccessControlItem
 

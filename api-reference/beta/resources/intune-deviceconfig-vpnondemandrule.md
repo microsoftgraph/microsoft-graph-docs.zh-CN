@@ -3,12 +3,13 @@ title: vpnOnDemandRule 资源类型
 description: VPN 点播规则定义。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43908a55ff43c533d02ace629a80b96dc09c10ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955413"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27875633"
 
 VPN 点播规则定义。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |ssid|String 集合|网络服务设置标识符 (Ssid)。|
 |dnsSearchDomains|String 集合|DNS 搜索域。|

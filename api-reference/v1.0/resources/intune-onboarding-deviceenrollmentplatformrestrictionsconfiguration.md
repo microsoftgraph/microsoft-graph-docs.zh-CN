@@ -3,12 +3,13 @@ title: deviceEnrollmentPlatformRestrictionsConfiguration 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f7e968c1bb6c1720710d58f461fdfe06f5a8ea42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 48f94da50e63e5cbdac32210d2b1950eff1506bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815104"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963484"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>deviceEnrollmentPlatformRestrictionsConfiguration 资源类型
 

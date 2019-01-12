@@ -3,12 +3,13 @@ title: usageDetails 资源类型
 description: 包含使用项目的属性的复杂类型。 上次访问该资源的信息 （查看） 和修改用户 （编辑）。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 8729973c2393a918d26314ec3b27a2c68079dbfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 466308ad1b6290c2b96335f94c586eb35c6cac28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950016"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "27858952"
 
 ## <a name="properties"></a>属性
 
-| 属性              | 类型          | Description  |
+| 属性              | 类型          | 说明  |
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | 日期和时间用户上次访问资源。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。                      |
 | lastModifiedDateTime              | DateTimeOffset        | 日期和时间用户上次修改资源。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。       |

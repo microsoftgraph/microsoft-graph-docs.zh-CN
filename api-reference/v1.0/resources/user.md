@@ -3,12 +3,13 @@ title: 用户资源类型
 description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: d9f15cd6f0b3169370257578f841a1821593f351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862494"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964457"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -70,7 +71,7 @@ ms.locfileid: "27862494"
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
 |ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`，`notAdult`和`adult`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |
@@ -96,15 +97,15 @@ ms.locfileid: "27862494"
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
-|onPremisesDomainName|字符串| 包含本地`domainFQDN`，也称为 dnsDomainName 从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
+|onPremisesDomainName|字符串| 包含本地`domainFQDN`，也称为 dnsDomainName 从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选，也不可筛选。 为`onPremisesSyncEnabled`用户，此组属性是主要的内部部署和是只读的。 仅限云用户 (其中`onPremisesSyncEnabled`为 false)，这些属性的创建过程中可以设置或更新。 |
 |onPremisesImmutableId|字符串|此属性用于将内部部署 Active Directory 用户帐户对其 Azure AD 用户对象相关联。 在此图中创建新的用户帐户，如果您使用的联盟的域用户的**userPrincipalName** (UPN) 属性时，必须指定此属性。 **重要：****$** 和**\_** 指定此属性时，不能使用字符。 支持 $filter。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合| 设置过程中使用 Microsoft 同步产品时错误。 |
-|onPremisesSamAccountName|字符串| 包含本地`samAccountName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
+|onPremisesSamAccountName|字符串| 包含本地`samAccountName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
 |onPremisesSecurityIdentifier|字符串|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读 |
-|onPremisesUserPrincipalName|字符串| 包含本地`userPrincipalName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 此为只读属性。 |
+|onPremisesUserPrincipalName|字符串| 包含本地`userPrincipalName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
 |passwordPolicies|字符串|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
@@ -134,7 +135,7 @@ ms.locfileid: "27862494"
 
 企业应用程序开发人员使用此只读属性以确保正确处理根据其法律年龄组的用户。 计算基于用户的`ageGroup`和`consentProvidedForMinor`属性。
 
-| 值    | #  |Description|
+| 值    | #  |说明|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`ageGroup`已经为用户设置。|
 |minorWithoutParentalConsent |1|（留作将来使用）|
@@ -149,7 +150,7 @@ ms.locfileid: "27862494"
 
 #### <a name="agegroup-property"></a>ageGroup 属性
 
-| 值    | #  |Description|
+| 值    | #  |说明|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`ageGroup`已经为用户设置。|
 |次要|1|用户是考虑次要。|
@@ -158,7 +159,7 @@ ms.locfileid: "27862494"
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
 
-| 值    | #  |Description|
+| 值    | #  |说明|
 |:---------------|:--------|:----------|
 |null|0|默认值，不`consentProvidedForMinor`已经为用户设置。|
 |授予|1|已为用户都具有帐户获得许可。|
@@ -188,13 +189,13 @@ ms.locfileid: "27862494"
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的组和目录角色。只读。可为 Null。|
 |messages|[邮件](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
-|onenote|[Onenote](onenote.md)| 此为只读属性。|
+|onenote|[Onenote](onenote.md)| 只读。|
 |outlook|[OutlookUser](outlookuser.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) 集合|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|用户拥有的 directory 对象。只读。可为 Null。|
 |人脉|[人员](person.md)集合| 与用户相关的人员。 只读。 可为 Null。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
-|planner|[plannerUser](planneruser.md)| 计划工具资源可能存在的用户的入口点。 此为只读属性。|
+|planner|[plannerUser](planneruser.md)| 计划工具资源可能存在的用户的入口点。 只读。|
 |registeredDevices|[directoryObject](directoryobject.md) 集合|已注册的用户的设备。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

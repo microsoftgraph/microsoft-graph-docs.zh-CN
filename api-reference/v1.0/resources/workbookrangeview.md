@@ -3,12 +3,13 @@ title: rangeView 资源类型
 description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0fae95999de35b5bac42716a4c9ec8b16a5b1158
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957800"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 RangeView 表示父范围的一组可见单元格。
@@ -22,7 +23,7 @@ RangeView 表示父范围的一组可见单元格。
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|返回与范围视图相关联的范围对象|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |cellAddresses|Json|代表单元格地址
 |columnCount|Int32|返回可见列数。只读。|
@@ -33,7 +34,7 @@ RangeView 表示父范围的一组可见单元格。
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。只读。 |
 |rowCount|Int32|返回可见行数。只读。  |
 |text|Json|指定区域的文本值。文本值与单元格宽度无关。在 Excel UI 中替代 # 符号不会影响 API 返回的文本值。只读。    |
-|valueTypes|Json|表示每个单元格的数据的类型。 此为只读属性。 可能的值为： 未知、 空、 String、 Integer、 Double、 Boolean、 错误。 |
+|valueTypes|Json|表示每个单元格的数据的类型。 只读。 可能的值为： 未知、 空、 String、 Integer、 Double、 Boolean、 错误。 |
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
 ## <a name="relationships"></a>关系

@@ -3,12 +3,13 @@ title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 521d62ab5e4b66bda5307fbb52da842e54301bc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1e38660c1fa83ced205b0bbcc506303a3968c41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954145"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -62,10 +63,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|布尔|Consent 授予与 Apple 卷购买程序共享的数据。|
+|dataSharingConsentGranted|Boolean|Consent 授予与 Apple 卷购买程序共享的数据。|
 |displayName|字符串|管理员指定标记的友好名称。|
 |locationName|字符串|返回从 Apple VPP 令牌的位置。|
-|claimTokenManagementFromExternalMdm|布尔|管理员同意以允许声称令牌管理从外部 mdm。|
+|claimTokenManagementFromExternalMdm|Boolean|管理员同意以允许声称令牌管理从外部 mdm。|
 
 
 

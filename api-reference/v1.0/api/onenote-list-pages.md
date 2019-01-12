@@ -1,14 +1,15 @@
 ---
 title: 列出页面
 description: 检索 page 对象列表。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955644"
 ---
 # <a name="list-pages"></a>列出页面
 

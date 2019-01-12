@@ -2,12 +2,14 @@
 title: 日历： getSchedule
 description: 获取闲/忙时间集的用户、 通讯组列表或资源的信息指定的时间段。
 localization_priority: Priority
-ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956953"
 ---
 # <a name="calendar-getschedule"></a>日历： getSchedule
 
@@ -35,13 +37,13 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string | 实体，即 application/json 的正文中的数据的性质。 必填。  |
+| Content-Type  | string | 实体，即 application/json 的正文中的数据的性质。 必需。  |
 | Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |availabilityViewInterval|字符串|表示在响应中**availabilityView**中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值是 1440年。 可选。|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和时区期的结束。|

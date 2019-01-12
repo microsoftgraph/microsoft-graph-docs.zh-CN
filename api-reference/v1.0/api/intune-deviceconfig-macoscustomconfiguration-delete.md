@@ -3,12 +3,13 @@ title: 删除 macOSCustomConfiguration
 description: 删除 macOSCustomConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 34a08574f8a212b2222454166a8d090c39bd1669
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dde0c9bd9c8e0cf70e6456ad0d32741609a1c9db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871909"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951745"
 ---
 # <a name="delete-macoscustomconfiguration"></a>删除 macOSCustomConfiguration
 

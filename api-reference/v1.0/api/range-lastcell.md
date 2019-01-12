@@ -3,12 +3,13 @@ title: Range:LastCell
 description: .
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 5156554c5e094556415a03a7651fd0ffee1bcf33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 1956c820816ffc157a036f0b39cf1330974ee50d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961153"
 ---
 # <a name="range-lastcell"></a>Range:LastCell
 

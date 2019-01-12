@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageDetail'
 description: 获取邮箱使用情况的详细信息。
 localization_priority: Priority
-ms.openlocfilehash: e49fd304acd79c37e76eb96a929eb824c57376c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: a4f412d8acdb32648ceb47e4aed6f2b7ff83268d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857607"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953481"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 

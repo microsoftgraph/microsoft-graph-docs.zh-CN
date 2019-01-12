@@ -3,12 +3,13 @@ title: 创建 androidManagedStoreAppConfiguration
 description: 创建新的 androidManagedStoreAppConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8768079b14ac0993df63eaa443d078069bb170c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d449c87ea880874a3a2d13e5fc466004fb4be8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956043"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>创建 androidManagedStoreAppConfiguration
 

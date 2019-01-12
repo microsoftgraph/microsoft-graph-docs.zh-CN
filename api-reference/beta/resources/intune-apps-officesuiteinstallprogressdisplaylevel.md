@@ -3,12 +3,13 @@ title: officeSuiteInstallProgressDisplayLevel 枚举类型
 description: 若要指定在设备上显示安装进度安装程序 UI 的级别枚举。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d6c7ed4dd99fa6fb4595979873233e017c29ff9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 062e880ad6e525e3ca667a484fa71f1b01ff65f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952179"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>officeSuiteInstallProgressDisplayLevel 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27880841"
 
 若要指定在设备上显示安装进度安装程序 UI 的级别枚举。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
 |完整|1|尚未记录|

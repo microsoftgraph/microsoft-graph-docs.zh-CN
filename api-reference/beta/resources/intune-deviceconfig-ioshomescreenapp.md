@@ -3,12 +3,13 @@ title: iosHomeScreenApp 资源类型
 description: 表示主屏幕上应用的图标
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 39db8de19fbfc568f85c4930e8c3124ffea2dd57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cdaf6c263b041547056f8f6bd82e21ca880ebaa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949170"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 

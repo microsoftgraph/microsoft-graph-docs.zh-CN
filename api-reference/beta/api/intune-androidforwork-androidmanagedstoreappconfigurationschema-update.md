@@ -3,12 +3,13 @@ title: 更新 androidManagedStoreAppConfigurationSchema
 description: 更新 androidManagedStoreAppConfigurationSchema 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0d91fbb1d03afd8ff9a6029da5e7d1ec20ad4eee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f45a7d831c9db3b94a2cc8812e900ac20faf8887
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956652"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>更新 androidManagedStoreAppConfigurationSchema
 

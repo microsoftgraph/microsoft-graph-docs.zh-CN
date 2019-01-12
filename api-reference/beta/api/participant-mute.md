@@ -3,12 +3,13 @@ title: 参与者： 设为静音
 description: 将呼叫中的特定参与者设为静音。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ab8c0ee24b1175a77ad157f51437a29b99404392
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d41d97556aff7093660c0cdfb75a43f8b862c0d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964471"
 ---
 # <a name="participant-mute"></a>参与者： 设为静音
 
@@ -23,7 +24,7 @@ ms.locfileid: "27808223"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| 用途     | 无                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |clientContext|字符串|客户端上下文。|
 

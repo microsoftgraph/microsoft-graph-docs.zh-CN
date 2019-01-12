@@ -2,12 +2,14 @@
 title: List messages
 description: 列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。
 localization_priority: Normal
-ms.openlocfilehash: d35489a45e84fdba484e721989900217b23eb08c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: cded21d803653fb32750e9f016e43d2526b7ac85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948763"
 ---
 # <a name="list-messages"></a>List messages
 

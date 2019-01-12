@@ -3,12 +3,13 @@ title: 'Range: unmerge'
 description: 将范围单元格取消合并为各个单元格。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0290145b9ff6790115f384f5d011841227c10192
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0ebfc26043323f621fb563d4fc40eda1cc2e4d49
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963834"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 

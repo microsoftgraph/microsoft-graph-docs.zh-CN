@@ -3,12 +3,13 @@ title: 更新 deviceManagementScriptRunSummary
 description: 更新 deviceManagementScriptRunSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2a0ba2a7dfbd44cd5e756010239caee285fe090
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858322"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954699"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
 

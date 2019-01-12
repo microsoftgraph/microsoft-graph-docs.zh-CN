@@ -3,12 +3,13 @@ title: 参与者： 邀请
 description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 5ba308b7d28fb2d2806f794ce6336c71068f6234
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894311"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954223"
 ---
 # <a name="participant-invite"></a>参与者： 邀请
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 邀请参与者。|
 |clientContext|字符串|客户端上下文。|

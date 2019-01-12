@@ -3,12 +3,13 @@ title: 获取 embeddedSIMActivationCodePool
 description: 读取属性和 embeddedSIMActivationCodePool 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 123a8fa12555e9ff6722faafc73c16ee4e751544
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 411e291926fde8400ded0ddccd94c3b8a2a4c106
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949939"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>获取 embeddedSIMActivationCodePool
 

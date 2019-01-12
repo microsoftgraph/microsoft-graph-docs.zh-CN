@@ -3,12 +3,13 @@ title: 列出事件
 description: 检索 event 对象列表。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 32051d6192d9de8e692c063011933a951d4fe4bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: b4cf578c8a01ce1242fe8c43c727ae5e575d48b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960558"
 ---
 # <a name="list-events"></a>列出事件
 

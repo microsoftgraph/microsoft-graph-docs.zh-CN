@@ -3,12 +3,13 @@ title: 创建 deviceEnrollmentLimitConfiguration
 description: 创建新的 deviceEnrollmentLimitConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ebb6732dc6ff6074bc5abd0aa6875464ca8370a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b1bd0eb77340f9278862bfc42e9bec68843b935
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956015"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>创建 deviceEnrollmentLimitConfiguration
 

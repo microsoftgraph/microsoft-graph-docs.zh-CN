@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 签入文件
 localization_priority: Normal
-ms.openlocfilehash: 685bd89ed13bba4c4687620b00d346c7557214c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fb62dc05c60e26a6d1d6683913eeec0403d1c41c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950807"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>签入对 DriveItem 资源的更改
 

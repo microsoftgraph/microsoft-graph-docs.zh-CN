@@ -3,12 +3,13 @@ title: 参与者列表
 description: 检索呼叫中的参与者对象的列表。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 4b0fb6ede331168cb9f10483e4628cd76046f211
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e474a3ec7eb0255790b003325bf8ad84ed7f317f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870313"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951157"
 ---
 # <a name="list-participants"></a>参与者列表
 

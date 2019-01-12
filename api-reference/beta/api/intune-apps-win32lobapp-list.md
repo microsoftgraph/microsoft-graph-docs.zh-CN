@@ -3,12 +3,13 @@ title: 列表 win32LobApps
 description: 列出属性和 win32LobApp 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 809bdf388d33641e6b797c7dd934d856dcdd227b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21c436ba76e590bffa9891b8a73537f0bf0da41a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864608"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949638"
 ---
 # <a name="list-win32lobapps"></a>列表 win32LobApps
 

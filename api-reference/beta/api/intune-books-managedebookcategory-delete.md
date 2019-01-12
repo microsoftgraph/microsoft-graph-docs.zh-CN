@@ -3,12 +3,13 @@ title: 删除 managedEBookCategory
 description: 删除 managedEBookCategory。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4123c596129eca9666f951bc7dbbee4c69575e5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 267ccd73053922d4c8402504ec9f2b3df264f895
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950198"
 ---
 # <a name="delete-managedebookcategory"></a>删除 managedEBookCategory
 

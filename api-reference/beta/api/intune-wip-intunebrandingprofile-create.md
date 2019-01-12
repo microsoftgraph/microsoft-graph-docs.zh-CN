@@ -3,12 +3,13 @@ title: 创建 intuneBrandingProfile
 description: 创建新的 intuneBrandingProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 755de596da82aa2ef7a8d5bc142f43e6bf2ca4c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964541"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -52,7 +53,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|字符串|配置文件密钥|
 |profileName|字符串|配置文件的名称|
 |profileDescription|字符串|配置文件的说明|
-|isDefaultProfile|布尔|如果在配置文件使用的默认，呈现。|
+|isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
 |displayName|String|向最终用户显示的公司/组织名称。|

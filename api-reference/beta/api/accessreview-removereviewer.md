@@ -2,12 +2,14 @@
 title: 删除 accessReview 审阅者
 description: '在 Azure AD 访问评论功能中，更新要删除的用户审阅者作为现有 accessReview 对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 '
 localization_priority: Normal
-ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 84bf3d973820067e0d4561e9647f688c025d957f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956687"
 ---
 # <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
 
@@ -33,7 +35,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者\{标记\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

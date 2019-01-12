@@ -3,12 +3,13 @@ title: 获取 ChartLegend
 description: 检索 chartlegend 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 97ecb697c47388dd76501f0f0ba086372320bb27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: f7bdbb31351b89a26ff02339a449590033d9d93b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892391"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960831"
 ---
 # <a name="get-chartlegend"></a>获取 ChartLegend
 

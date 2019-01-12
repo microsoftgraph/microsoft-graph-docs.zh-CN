@@ -2,12 +2,14 @@
 title: subscribedSku 资源类型
 description: " 创建、 更新和删除不受支持。 不支持查询筛选器表达式。 继承自 directoryObject。"
 localization_priority: Normal
-ms.openlocfilehash: 07f40c766d7f46974cf99b9954f63a61c2c0c621
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 01dbbf8727ab361b3763e2343e7cc72a3676848b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960152"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 

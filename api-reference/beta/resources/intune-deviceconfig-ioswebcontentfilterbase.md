@@ -3,12 +3,13 @@ title: iosWebContentFilterBase 资源类型
 description: 代表 iOS Web 内容筛选器设置基类型。 空和抽象基准。 呼叫者对配置应使用派生类型之一。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c29648ddbcb39ae3f879a9b500ab1a3813fa584
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b59466bfe89570f95a4784e8e9bf6a4c4fde069e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856628"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949162"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase 资源类型
 

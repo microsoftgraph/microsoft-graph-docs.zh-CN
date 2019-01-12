@@ -2,12 +2,14 @@
 title: 列出联系人
 description: 在登录用户的邮箱 (.../me/contacts)，或从指定的联系人文件夹，则获取所有联系人。
 localization_priority: Normal
-ms.openlocfilehash: 304efe55a39d685ef5ce58281bfb407a43657a92
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 50b83036d7b818e1ed1b94643bc472a7bc18ed11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950800"
 ---
 # <a name="list-contacts"></a>列出联系人
 

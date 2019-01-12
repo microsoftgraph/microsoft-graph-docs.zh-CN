@@ -2,12 +2,14 @@
 title: Outlook 扩展属性概述
 description: '扩展的属性允许存储自定义数据和专门用作应用程序访问的回退机制 '
 localization_priority: Priority
-ms.openlocfilehash: 18a7dff24f524a84c7b59286c2a6cb4d7aafef11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 935f97819155318a6bfc7c77d07bf8a308e512e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949568"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 

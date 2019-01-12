@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365ServicesUserCounts'
 description: 按活动类型和服务获取用户数。
 localization_priority: Normal
-ms.openlocfilehash: b22e48b8ea76fc65801eac9abb2afb8123bd6659
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 0b505ed58691cd965cb055818a1cb233b212252d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949057"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 

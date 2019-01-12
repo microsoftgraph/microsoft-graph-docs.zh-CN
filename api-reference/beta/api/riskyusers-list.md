@@ -2,12 +2,14 @@
 title: 列表 riskyUsers
 description: 检索的属性和**riskyUsers**对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: bc5023df014e2abc1e7b510bc10a051f6b725e3b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: f2763a963d27bbb0a2fc1515a36aec199bd29f19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835236"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953439"
 ---
 # <a name="list-riskyusers"></a>列表 riskyUsers
 

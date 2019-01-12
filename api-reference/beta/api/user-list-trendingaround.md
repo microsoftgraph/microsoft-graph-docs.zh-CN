@@ -3,12 +3,13 @@ title: 列表 trendingAround
 description: 返回用户周围趋势分析的项的列表的计算的洞察。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1fca9fe47d1656b8b499fbf2e1f3fa1ee638f37e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3e06cdf6cc1f082f1e1c40f61551ec3d643e5246
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964121"
 ---
 # <a name="list-trendingaround"></a>列表 trendingAround
 

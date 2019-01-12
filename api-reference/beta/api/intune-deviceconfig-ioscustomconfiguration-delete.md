@@ -3,12 +3,13 @@ title: 删除 iosCustomConfiguration
 description: 删除 iosCustomConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c3c7c4500644a00e10f6342147da481cd6978c79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abb2724d09c55eddddbfd13b7b61dbf9e9ef8217
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953509"
 ---
 # <a name="delete-ioscustomconfiguration"></a>删除 iosCustomConfiguration
 

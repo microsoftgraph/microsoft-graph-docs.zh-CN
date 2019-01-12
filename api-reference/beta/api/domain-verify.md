@@ -3,12 +3,13 @@ title: 域：验证
 description: 验证域的所有权。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4948f2dc833db80c2cbc3f3b8aa7c487b7bb97aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e61456ccf7e47283464bddb4103a02dbfdb9bdb3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864699"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950625"
 ---
 # <a name="domain-verify"></a>域：验证
 

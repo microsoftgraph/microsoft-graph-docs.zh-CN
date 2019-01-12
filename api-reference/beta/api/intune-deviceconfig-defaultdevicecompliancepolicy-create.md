@@ -3,12 +3,13 @@ title: 创建 defaultDeviceCompliancePolicy
 description: 创建新的 defaultDeviceCompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a69c83e9de07f2e809e53f449d3f9686e238a138
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79911794adf153a18b7af7f58cec72baf56f3015
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886777"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964422"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>创建 defaultDeviceCompliancePolicy
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示时创建 defaultDeviceCompliancePolicy 所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

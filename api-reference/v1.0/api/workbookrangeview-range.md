@@ -3,12 +3,13 @@ title: 'workbookRangeView: range'
 description: 返回与 rangeView 资源相关联的范围。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 4e707bb4a1ff31526f6a2aafcb569c7dd8328279
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6b542bba1099d0e8204839326bdeee2f6025d502
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961356"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 返回与 rangeView 资源相关联的范围。

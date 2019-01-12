@@ -3,12 +3,13 @@ title: deviceConfiguration 资源类型
 description: 设备配置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 255826460a81544d27620807d569ce3857e1034e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a508a037dbd1271d30a226d9cf62fb0683b53af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884040"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953145"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration 资源类型
 

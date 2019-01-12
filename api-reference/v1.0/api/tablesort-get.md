@@ -3,12 +3,13 @@ title: Get TableSort
 description: 检索 tablesort 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 01cb4f6eaca0463d2fdc96c3dcefffdb9d6a0842
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 319df97dcc269d524a87e23d577fb0d6787a5e4d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962462"
 ---
 # <a name="get-tablesort"></a>Get TableSort
 

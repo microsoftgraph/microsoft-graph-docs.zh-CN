@@ -2,12 +2,14 @@
 title: iosCustomConfiguration 资源类型
 description: 本主题提供由 iosCustomConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
-ms.openlocfilehash: 5ff2a6b8422241e69b76dcb32662359e93351da2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7f238d4201c6cace78b2a84d86c8ccec8ffc598d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815006"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964681"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration 资源类型
 

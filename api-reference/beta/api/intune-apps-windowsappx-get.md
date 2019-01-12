@@ -3,12 +3,13 @@ title: 获取 windowsAppX
 description: 读取属性和 windowsAppX 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa87736626fbd2a26849b67b6993f7706de7cd75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 40a8bad885df7da96a50853035811a739baf118f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964625"
 ---
 # <a name="get-windowsappx"></a>获取 windowsAppX
 

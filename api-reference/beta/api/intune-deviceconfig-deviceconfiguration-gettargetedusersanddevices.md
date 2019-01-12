@@ -3,12 +3,13 @@ title: getTargetedUsersAndDevices 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b30d931d95266d096ba2ad36e88e2ccdf5c788f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3530986f6e240d648b5383fc868e5ccdbe731e94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848186"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951164"
 ---
 # <a name="gettargetedusersanddevices-action"></a>getTargetedUsersAndDevices 操作
 
@@ -48,7 +49,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceConfigurationIds|String collection|尚未记录|
 

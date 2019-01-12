@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
-ms.openlocfilehash: b2e151937d5e8db633edeb5d521d6e0c875b6d78
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950723"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -37,7 +38,7 @@ ms.locfileid: "27866085"
 [获取]: ../api/listitem-get.md
 [获取分析]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
-[Create]: ../api/listitem-create.md
+[创建]: ../api/listitem-create.md
 [删除]: ../api/listitem-delete.md
 [更新]: ../api/listitem-update.md
 

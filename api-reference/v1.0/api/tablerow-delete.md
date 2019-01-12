@@ -3,12 +3,13 @@ title: 'TableRow: delete'
 description: 从表中删除行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: fe77eba69cf177b18dcc1b060d1ab83678c91baa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 1760f6fb51dd60556710984bac544058b78a8e6c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950282"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 

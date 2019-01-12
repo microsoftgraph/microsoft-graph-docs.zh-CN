@@ -2,12 +2,13 @@
 title: SharePoint 网站使用情况报表
 description: 您可以获取来自 SharePoint 的用户存储在 SharePoint 网站、 多少文件主动正在被使用，和存储在所有这些网站使用的文件总数方面得到的值的高级视图。 然后，您可以深化到的 SharePoint 网站使用率报告，以便了解趋势和每个网站的所有站点级别的详细信息。
 localization_priority: Normal
-ms.openlocfilehash: 287abafdf279b2a249481ebc4445bfcd980ebc76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 964ec64a2cbb15d639a619cf8debd5fb5875245e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950527"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint 网站使用情况报表
 

@@ -3,12 +3,13 @@ title: 更新 mobileAppProvisioningConfigGroupAssignment
 description: 更新 mobileAppProvisioningConfigGroupAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d2526c69091c9d41a1b9ebb181f4abbbc01bf23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848340"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954993"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>更新 mobileAppProvisioningConfigGroupAssignment
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 下表显示时创建[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |targetGroupId|字符串|AAD 组顺序为目标应用程序设置配置的 ID。|
 |id|String|实体的键。|

@@ -1,14 +1,15 @@
 ---
-title: Permissions
+title: 权限
 description: '检索列表的、 由指定用户拥有的最近已删除项目。  '
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 2c4dfb7300d75ec066cf7c76c582d7bc4014e27a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962728"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**由用户拥有的删除列表项**
 
@@ -51,7 +52,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 在请求正文需要以下参数：
 
-| 参数    | 类型 |Description|
+| 参数    | 类型 |说明|
 |:---------------|:--------|:----------|
 |userId|String|所有者的 ID。|
 |type|字符串|要返回; 的拥有对象的类型`Group`目前唯一受支持的值。|
