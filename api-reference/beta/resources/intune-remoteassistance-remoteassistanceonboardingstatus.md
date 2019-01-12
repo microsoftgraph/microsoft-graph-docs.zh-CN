@@ -3,26 +3,27 @@ title: remoteAssistanceOnboardingStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ff61d48f9d7991400d909c91c02751bc37b5ec03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6705a730a67d11d15d31e841bac4b2cdb927ee90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940993"
 ---
-# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="91ff6-103">remoteAssistanceOnboardingStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="91ff6-103">remoteAssistanceOnboardingStatus enum type</span></span>
+# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="68e84-103">remoteAssistanceOnboardingStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="68e84-103">remoteAssistanceOnboardingStatus enum type</span></span>
 
-> <span data-ttu-id="91ff6-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="91ff6-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="91ff6-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="91ff6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="68e84-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="68e84-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="68e84-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="68e84-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="91ff6-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="91ff6-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="68e84-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="68e84-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="91ff6-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="91ff6-107">Not yet documented</span></span>
-## <a name="members"></a><span data-ttu-id="91ff6-108">成员</span><span class="sxs-lookup"><span data-stu-id="91ff6-108">Members</span></span>
-|<span data-ttu-id="91ff6-109">成员</span><span class="sxs-lookup"><span data-stu-id="91ff6-109">Member</span></span>|<span data-ttu-id="91ff6-110">值</span><span class="sxs-lookup"><span data-stu-id="91ff6-110">Value</span></span>|<span data-ttu-id="91ff6-111">Description</span><span class="sxs-lookup"><span data-stu-id="91ff6-111">Description</span></span>|
+<span data-ttu-id="68e84-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="68e84-107">Not yet documented</span></span>
+## <a name="members"></a><span data-ttu-id="68e84-108">成员</span><span class="sxs-lookup"><span data-stu-id="68e84-108">Members</span></span>
+|<span data-ttu-id="68e84-109">成员</span><span class="sxs-lookup"><span data-stu-id="68e84-109">Member</span></span>|<span data-ttu-id="68e84-110">值</span><span class="sxs-lookup"><span data-stu-id="68e84-110">Value</span></span>|<span data-ttu-id="68e84-111">说明</span><span class="sxs-lookup"><span data-stu-id="68e84-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="91ff6-112">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="91ff6-112">notOnboarded</span></span>|<span data-ttu-id="91ff6-113">0</span><span class="sxs-lookup"><span data-stu-id="91ff6-113">0</span></span>|<span data-ttu-id="91ff6-114">尚未记录</span><span class="sxs-lookup"><span data-stu-id="91ff6-114">Not yet documented</span></span>|
-|<span data-ttu-id="91ff6-115">入职培训</span><span class="sxs-lookup"><span data-stu-id="91ff6-115">onboarding</span></span>|<span data-ttu-id="91ff6-116">1</span><span class="sxs-lookup"><span data-stu-id="91ff6-116">1</span></span>|<span data-ttu-id="91ff6-117">尚未记录</span><span class="sxs-lookup"><span data-stu-id="91ff6-117">Not yet documented</span></span>|
-|<span data-ttu-id="91ff6-118">onboarded</span><span class="sxs-lookup"><span data-stu-id="91ff6-118">onboarded</span></span>|<span data-ttu-id="91ff6-119">2</span><span class="sxs-lookup"><span data-stu-id="91ff6-119">2</span></span>|<span data-ttu-id="91ff6-120">尚未记录</span><span class="sxs-lookup"><span data-stu-id="91ff6-120">Not yet documented</span></span>|
+|<span data-ttu-id="68e84-112">notOnboarded</span><span class="sxs-lookup"><span data-stu-id="68e84-112">notOnboarded</span></span>|<span data-ttu-id="68e84-113">0</span><span class="sxs-lookup"><span data-stu-id="68e84-113">0</span></span>|<span data-ttu-id="68e84-114">尚未记录</span><span class="sxs-lookup"><span data-stu-id="68e84-114">Not yet documented</span></span>|
+|<span data-ttu-id="68e84-115">入职培训</span><span class="sxs-lookup"><span data-stu-id="68e84-115">onboarding</span></span>|<span data-ttu-id="68e84-116">1</span><span class="sxs-lookup"><span data-stu-id="68e84-116">1</span></span>|<span data-ttu-id="68e84-117">尚未记录</span><span class="sxs-lookup"><span data-stu-id="68e84-117">Not yet documented</span></span>|
+|<span data-ttu-id="68e84-118">onboarded</span><span class="sxs-lookup"><span data-stu-id="68e84-118">onboarded</span></span>|<span data-ttu-id="68e84-119">2</span><span class="sxs-lookup"><span data-stu-id="68e84-119">2</span></span>|<span data-ttu-id="68e84-120">尚未记录</span><span class="sxs-lookup"><span data-stu-id="68e84-120">Not yet documented</span></span>|
 
 
 
