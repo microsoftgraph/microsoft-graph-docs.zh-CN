@@ -3,12 +3,13 @@ title: deviceConfigurationTargetedUserAndDevice 资源类型
 description: 冲突一设备配置策略的摘要。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 234cc9c909875d835ba54709f30f1ca306eb0954
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809623"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947962"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27809623"
 
 冲突一设备配置策略的摘要。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |deviceId|String|签入中的设备 id。|
 |deviceName|String|签入中的设备的名称。|

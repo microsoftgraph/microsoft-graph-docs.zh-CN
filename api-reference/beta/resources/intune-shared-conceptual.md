@@ -2,12 +2,14 @@
 title: Microsoft Intune 中共享的资源
 description: 这些终结点用于多个 Microsoft Graph API 中 Intune 工作流。  用途、 用途以及使用给定的资源所需的权限会有所不同，根据特定工作流和基础调用上下文。  此外，仅对特定的工作流支持某些方法、 属性和操作。
 localization_priority: Normal
-ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6180868d4aec195afcc037146f475e56a91aa669
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852624"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952557"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中共享的资源
 

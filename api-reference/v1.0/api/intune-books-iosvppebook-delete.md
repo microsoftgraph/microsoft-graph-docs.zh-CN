@@ -3,12 +3,13 @@ title: 删除 iosVppEBook
 description: 删除 iosVppEBook。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e7f03469a11da9253901c7283118068e14c4acb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54a4f3ce93c1e1168e8023fd3660c908ec08f3d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951668"
 ---
 # <a name="delete-iosvppebook"></a>删除 iosVppEBook
 

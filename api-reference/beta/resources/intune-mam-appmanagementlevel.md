@@ -3,12 +3,13 @@ title: appManagementLevel 枚举类型
 description: 应用程序的管理级别
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 760d745a6f449ac5f2458db50e40953ead783e83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 515b65b308a4e24e5f0c99b849c8bd46369af5c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954979"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27846996"
 
 应用程序的管理级别
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |未指定|0|Unspecified|
 |非托管|1|非托管|

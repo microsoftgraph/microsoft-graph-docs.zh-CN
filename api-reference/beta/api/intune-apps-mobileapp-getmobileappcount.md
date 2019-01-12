@@ -3,12 +3,13 @@ title: getMobileAppCount 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ae67ba630ddd387d1c03cb599c99a7ed38717145
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 727e4454e3b4ad2cfa6fe44c90b23ea89c911d7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891859"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946572"
 ---
 # <a name="getmobileappcount-function"></a>getMobileAppCount 函数
 

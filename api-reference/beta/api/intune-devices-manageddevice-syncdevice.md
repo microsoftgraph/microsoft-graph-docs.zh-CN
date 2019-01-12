@@ -3,12 +3,13 @@ title: syncDevice 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fedb8b8c90c74895f1f625f8d62e754fc71457a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a8f3a435eef337aca83c98c1ecb70d56bccbc8df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812598"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953222"
 ---
 # <a name="syncdevice-action"></a>syncDevice 操作
 

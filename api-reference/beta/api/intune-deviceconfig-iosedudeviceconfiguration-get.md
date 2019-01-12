@@ -3,12 +3,13 @@ title: 获取 iosEduDeviceConfiguration
 description: 读取属性和 iosEduDeviceConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4bbc011a2cb9596d2aa384936847f4c8b361957a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ff9a93d5e716a2d543b20cc78805512f7d0fd1d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948252"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>获取 iosEduDeviceConfiguration
 

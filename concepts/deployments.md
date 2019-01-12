@@ -1,12 +1,13 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些区域云版本是 Microsoft 企业云服务的物理和逻辑网络隔离实例，它们仅限于特定国家/地区的地理边界内，由当地人员运营。 若要了解详细信息，请参阅“Microsoft 区域云”。
-ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b22fce675bc97d0f22833d89dab01afd18e06032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840416"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 

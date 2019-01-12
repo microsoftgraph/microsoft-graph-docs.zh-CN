@@ -3,12 +3,13 @@ title: 通道资源类型
 description: '频道是 chatMessages 团队中的集合。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952326"
 ---
 # <a name="channel-resource-type"></a>通道资源类型
 
@@ -34,14 +35,14 @@ ms.locfileid: "27842684"
 |:---------------|:--------|:----------|
 |说明|字符串|通道的可选文字说明。|
 |displayName|字符串|通道名称将显示于 Microsoft 团队中的用户。|
-|id|字符串|通道的唯一标识符。 此为只读属性。|
+|id|字符串|通道的唯一标识符。 只读。|
 |isFavoriteByDefault|布尔|是否通道应自动标记喜欢为团队的所有成员。 默认值： `false`。|
 |email|布尔| 向通道发送邮件的电子邮件地址。 只读。|
 |WebUrl|String|将导航至 Microsoft 团队中的通道超链接。 这是您获取右键单击 Microsoft 团队中的通道，然后选择 Get 链接到通道时的 URL。 此 URL 应是视为不透明 blob，并且未分列。 只读。|
 
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md)集合|在进入频道的所有邮件的集合。 导航属性。 可为 Null。 目前此 API 仅支持读取，但将最终太支持写入消息。|
 |chatThreads|[chatThread](chatthread.md)集合|（这被淘汰以消息属性应用） chatThreads 支持创建新邮件，但未阅读邮件。 ChatThreads 是导航属性，并且是可以为 Null。|

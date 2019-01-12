@@ -3,12 +3,13 @@ title: 列出 managedAppPolicies
 description: 列出 managedAppPolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3169e1a189205049d3a18a578af06b4f1528628b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14ac01bd6aadc6f277f8e1bae275e52c46cc4072
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953739"
 ---
 # <a name="list-managedapppolicies"></a>列出 managedAppPolicies
 

@@ -2,12 +2,14 @@
 title: 使用 OneNote REST API
 description: Microsoft Graph 允许您获取授权的访问用户的 OneNote 笔记本、 节和页面中的个人或组织帐户的应用程序。 使用适当委派或应用程序权限，您的应用程序可以访问已登录的用户或租户中的任何用户的 OneNote 数据。
 localization_priority: Priority
-ms.openlocfilehash: 1f78437b115825b8fd1ad2fdf14862543977d886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ceb5ac30786ecfd207a2076d471e9d004b60f8d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951535"
 ---
 # <a name="use-the-onenote-rest-api"></a>使用 OneNote REST API
 

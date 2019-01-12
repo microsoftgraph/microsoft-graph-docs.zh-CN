@@ -3,12 +3,13 @@ title: commit 操作
 description: 提交给定应用的文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53a72e5b773c7fd5b306ff1f0cc4a6422dd640fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0b225a74f3a273e9e5dda7752b94e4a445d9794c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836559"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952340"
 ---
 # <a name="commit-action"></a>commit 操作
 

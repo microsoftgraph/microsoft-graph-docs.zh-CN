@@ -2,12 +2,14 @@
 title: 'contact: delta'
 description: 获取指定文件夹中已添加、删除或更新的联系人集。
 localization_priority: Normal
-ms.openlocfilehash: eae0e5cd4f96678ad2bced2fa5d403ed1d0142aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: c369460fea021e1487560e5893fc0527dd542358
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954195"
 ---
 # <a name="contact-delta"></a>contact: delta
 

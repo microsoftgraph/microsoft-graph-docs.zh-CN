@@ -2,12 +2,14 @@
 title: iosVppAppAssignedDeviceLicense 资源类型
 description: iOS 卷购买计划设备许可证分配。 此类不支持创建、删除或更新。
 localization_priority: Normal
-ms.openlocfilehash: 5c7f378def53950fd4dfbcd76b2a2820506ed7d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6c02a708c0629b23a14458eb08e0e26208e121db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828327"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948735"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense 资源类型
 

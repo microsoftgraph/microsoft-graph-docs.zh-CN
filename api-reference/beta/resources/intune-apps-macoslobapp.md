@@ -3,12 +3,13 @@ title: macOSLobApp 资源类型
 description: MacOS LOB 应用程序中包含的属性和继承的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 25306bb02ad9bdb52b2df92af84b2e5a644efba6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e204c840bb097c3b3baa3ea13f0a1cddd6dc296a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866141"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950786"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp 资源类型
 

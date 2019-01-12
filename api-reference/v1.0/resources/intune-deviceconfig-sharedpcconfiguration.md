@@ -2,12 +2,14 @@
 title: sharedPCConfiguration 资源类型
 description: 本主题提供由 sharedPCConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
-ms.openlocfilehash: a95c10a57751143f3ed4da19db6e351693fe0410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: dffe7e85a4a03c87fac971decc6b91c2a38194b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950842"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 

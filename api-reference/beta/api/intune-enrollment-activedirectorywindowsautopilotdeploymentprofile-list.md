@@ -3,12 +3,13 @@ title: 列表 activeDirectoryWindowsAutopilotDeploymentProfiles
 description: 列出属性和 activeDirectoryWindowsAutopilotDeploymentProfile 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7cda6c3089519354d9be226bea808efe0a41a86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 47ee038b9e505fb77f8e1d5712a4daac17949864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955000"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>列表 activeDirectoryWindowsAutopilotDeploymentProfiles
 

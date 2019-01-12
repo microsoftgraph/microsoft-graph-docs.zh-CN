@@ -3,12 +3,13 @@ title: 列表 recentPlans
 description: 检索 plannerPlans 用户最近查看的列表。 您可以通过更新 plannerUser 资源更新最近查看的计划。
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: bfc2ffff15db55c289a95223ced6cb15af0535cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: eaafa89c9345f3f12cad6551e2ed76ae42a32728
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884488"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950772"
 ---
 # <a name="list-recentplans"></a>列表 recentPlans
 

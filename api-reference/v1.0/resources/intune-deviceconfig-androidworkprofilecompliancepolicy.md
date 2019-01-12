@@ -3,12 +3,13 @@ title: androidWorkProfileCompliancePolicy 资源类型
 description: 此类包含 Android 工作配置文件的合规性设置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bc75edebd1ffa63e3453752f320a115cc0f4eb27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f03b1a8f2a05cc984bd4ca9ce6e94f51a746dc91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954209"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy 资源类型
 

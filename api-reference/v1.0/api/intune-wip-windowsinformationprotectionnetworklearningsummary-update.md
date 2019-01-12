@@ -3,12 +3,13 @@ title: 更新 windowsInformationProtectionNetworkLearningSummary
 description: 更新 windowsInformationProtectionNetworkLearningSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 663b13d803e1205de07dc2f8a1311c82f5376cb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d1268d077c9bfc32e5d85b85b103bc7a3e71f78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947104"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 

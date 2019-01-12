@@ -3,12 +3,13 @@ title: 获取 vppToken
 description: 读取 vppToken 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c96ba7d364fdd6c424a48b2d159cc65bc49057a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e4b7dae8aaa2e0a5f340c295e2192847e7fdec0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950765"
 ---
 # <a name="get-vpptoken"></a>获取 vppToken
 

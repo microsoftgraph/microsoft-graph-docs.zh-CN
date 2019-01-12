@@ -2,12 +2,14 @@
 title: teamMemberSettings 资源类型
 description: 例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加团队中。
 localization_priority: Normal
-ms.openlocfilehash: 7b63bce5bc298f7d9599d8c6146d7962d319c79f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6ffd1dba4a0aafb1364a6d3f1ee673e2381c7178
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954251"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
@@ -16,7 +18,7 @@ ms.locfileid: "27826066"
 例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加[团队](team.md)中。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|布尔|如果设置为 true，则成员可以添加和更新通道。|
 |allowDeleteChannels|布尔|如果设置为 true，则成员可以删除通道。|

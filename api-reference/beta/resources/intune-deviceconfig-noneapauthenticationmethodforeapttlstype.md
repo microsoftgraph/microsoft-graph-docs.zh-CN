@@ -3,12 +3,13 @@ title: nonEapAuthenticationMethodForEapTtlsType 枚举类型
 description: 身份验证的非 EAP 方法。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27673d4245f9bea1ef24c25034497b4d5bf7aebd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 146eaa57ddc79eb930a0334ee1c227c1541c8609
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952683"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>nonEapAuthenticationMethodForEapTtlsType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27884180"
 
 身份验证的非 EAP 方法。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unencryptedPassword|0|未加密的密码 (PAP)。|
 |challengeHandshakeAuthenticationProtocol|1|质询握手身份验证协议 (CHAP)。|

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 更新文件或文件夹
 localization_priority: Priority
-ms.openlocfilehash: a3620a1af02984ce219e386dc6fd38a810f2275e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: de95ea9263bb3491bfcb02168cb26e1eb3cb94c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835796"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950933"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 

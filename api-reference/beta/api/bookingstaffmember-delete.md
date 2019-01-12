@@ -2,12 +2,14 @@
 title: 删除 bookingStaffMember
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 16ee4c5fa244e3507238abd0a696b31477173e11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 7aa2fd114a4d53b462dcd0b66e75808e52ef9ada
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946873"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 

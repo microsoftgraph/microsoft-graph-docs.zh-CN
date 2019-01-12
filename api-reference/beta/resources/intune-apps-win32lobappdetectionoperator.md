@@ -3,12 +3,13 @@ title: win32LobAppDetectionOperator 枚举类型
 description: 包含有关检测运算符的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0eaeb6fde80b24e69794bd21d976ae3447b6df81
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0c3a7c639df6976e8e28a2426987929ca19b064
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952228"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27894262"
 
 包含有关检测运算符的属性。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |等于|1|等于运算符。|

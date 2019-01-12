@@ -2,12 +2,14 @@
 title: emailAddress 资源类型
 description: 联系人或邮件收件人的姓名和电子邮件地址。
 localization_priority: Normal
-ms.openlocfilehash: 5ea1919e5c5f389c9b7fece508e8339f722b725a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7af23418132c4d1c20097899f870c7d25be119bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826880"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951751"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 

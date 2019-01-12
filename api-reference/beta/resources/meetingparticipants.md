@@ -3,12 +3,13 @@ title: meetingParticipants 资源类型
 description: 在会议中的参与者。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: fad06a015429a7264d808b4997c94e90e4799825
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 309c17cd5594a44e029cce4d618d52c0192f1da3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815116"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951920"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 

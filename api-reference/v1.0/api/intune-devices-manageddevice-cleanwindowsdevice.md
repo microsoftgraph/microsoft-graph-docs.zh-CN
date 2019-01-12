@@ -3,12 +3,13 @@ title: cleanWindowsDevice 操作
 description: 清理 Windows 设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c6d2eeff97e840cc4f9bb45492af168e2c95c37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e551f960b18d1b8265de085b6ddc4fbce1b8d23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954789"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 

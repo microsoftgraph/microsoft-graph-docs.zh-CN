@@ -3,12 +3,13 @@ title: 更新 macOSImportedPFXCertificateProfile
 description: 更新 macOSImportedPFXCertificateProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ce7f4ffff5b34f50f2888dd3fda3e035ae69ed26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61cc4160f5a91b61c117d69a81da609a7ca433ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869522"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954083"
 ---
 # <a name="update-macosimportedpfxcertificateprofile"></a>更新 macOSImportedPFXCertificateProfile
 

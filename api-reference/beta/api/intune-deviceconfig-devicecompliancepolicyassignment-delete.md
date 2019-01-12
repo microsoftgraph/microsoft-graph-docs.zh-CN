@@ -3,12 +3,13 @@ title: 删除 deviceCompliancePolicyAssignment
 description: 删除 deviceCompliancePolicyAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a3e9e0db7e8fe6c8b6119961ffd0aa23a11ae8b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a741959e3a8463a860c2dd7d8b655c20e1ba9ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948091"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>删除 deviceCompliancePolicyAssignment
 

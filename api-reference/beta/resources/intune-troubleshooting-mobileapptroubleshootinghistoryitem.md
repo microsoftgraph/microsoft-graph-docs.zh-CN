@@ -3,12 +3,13 @@ title: mobileAppTroubleshootingHistoryItem 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4db29e7badc8748e4aa64f318b68e0f21d0da5db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 713bf06c65bd8d651e1d885d41876822d62eade1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867926"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947237"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem 资源类型
 

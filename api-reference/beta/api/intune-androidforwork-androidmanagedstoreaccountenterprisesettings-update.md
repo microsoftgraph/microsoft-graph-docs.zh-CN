@@ -3,12 +3,13 @@ title: 更新 androidManagedStoreAccountEnterpriseSettings
 description: 更新 androidManagedStoreAccountEnterpriseSettings 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e1c6829a855a2d422906a9fbc0ba0527f77d1ac9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82c0ee245b7db91d0a145439018c411493a83efb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892496"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951080"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>更新 androidManagedStoreAccountEnterpriseSettings
 

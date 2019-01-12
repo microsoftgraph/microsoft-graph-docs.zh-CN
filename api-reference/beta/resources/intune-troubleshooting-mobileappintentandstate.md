@@ -3,12 +3,13 @@ title: mobileAppIntentAndState 资源类型
 description: MobileApp 意图和给定的设备的安装状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 037faeb02f18f304153dbe19fef640cc1183ddcd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 689945d1e2f7e7a1c33e9bc098dc64ad16472bd5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947244"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState 资源类型
 

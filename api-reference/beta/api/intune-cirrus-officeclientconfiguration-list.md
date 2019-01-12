@@ -3,12 +3,13 @@ title: 列表 officeClientConfigurations
 description: 获取所有策略。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 122c5bcebaf787d30b6a13bdeef2d6999a5fb262
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aa77b55906bdf79cb4c5e493d99d63622785f393
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863852"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954510"
 ---
 # <a name="list-officeclientconfigurations"></a>列表 officeClientConfigurations
 

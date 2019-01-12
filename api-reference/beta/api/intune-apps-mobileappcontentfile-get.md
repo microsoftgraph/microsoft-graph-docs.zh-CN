@@ -3,12 +3,13 @@ title: 获取 mobileAppContentFile
 description: 读取 mobileAppContentFile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dbd2e3717c77aa0a20cbcf6b7f158f36a2d2f5b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c224f2278c3779969faa7e35ef65e53dbaedd230
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949365"
 ---
 # <a name="get-mobileappcontentfile"></a>获取 mobileAppContentFile
 

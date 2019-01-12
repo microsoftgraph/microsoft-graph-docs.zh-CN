@@ -4,12 +4,13 @@ description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
 ms.author: jasonjoh
 ms.date: 12/13/2018
-ms.openlocfilehash: 55630e8fbdbccd8355d2b23e4c839d2ccec2b7d3
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 457b82813420b8771a5e59e9723f11885388c7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834942"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -59,7 +60,7 @@ ms.locfileid: "27283638"
 | Python | [教程](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
 | Ruby | [教程](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [教程](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | 无 | [GitHub](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |
+| Xamarin | 无 | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>为什么所有快速启动示例都没有展示高级身份验证用例？
 

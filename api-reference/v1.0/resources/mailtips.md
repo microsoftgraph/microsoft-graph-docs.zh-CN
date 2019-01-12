@@ -2,12 +2,14 @@
 title: 邮件提示资源类型
 description: '有关提示性消息收件人，它们撰写邮件时向用户显示。 例如，-外出消息 '
 localization_priority: Normal
-ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891691"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951801"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 
@@ -15,7 +17,7 @@ ms.locfileid: "27891691"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 如果已被收件人设置，邮件自动回复的提示。 |
 | customMailTip | 字符串 | 可在收件人的邮箱中设置自定义邮件提示。 |

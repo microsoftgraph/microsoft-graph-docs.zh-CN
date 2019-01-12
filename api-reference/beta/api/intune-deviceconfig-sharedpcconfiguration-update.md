@@ -3,12 +3,13 @@ title: 更新 sharedPCConfiguration
 description: 更新 sharedPCConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef2807f2c1becdc9f39e5fff1ac70c2a90c01855
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 98d44ed39fbb975d2a3e71789ccf20a514c4d3db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949078"
 ---
 # <a name="update-sharedpcconfiguration"></a>更新 sharedPCConfiguration
 

@@ -3,12 +3,13 @@ title: commsNotifications 资源类型
 description: Communications server 用于在单一批次中发送多个通知的通知的列表。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 9ce629e17c85806d7e05bce99d6a62f9fa9cbff8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 83a89e848d0992d253efb532ed078031b6f965d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946299"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
 

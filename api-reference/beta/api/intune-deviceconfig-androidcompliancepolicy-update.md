@@ -3,12 +3,13 @@ title: 更新 androidCompliancePolicy
 description: 更新 androidCompliancePolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 77a9b4b9d8549f03153f05c4b73bd430f34388be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 05519bbf449199104120f62201f762656f103d09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837183"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951899"
 ---
 # <a name="update-androidcompliancepolicy"></a>更新 androidCompliancePolicy
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 下表显示了创建 [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

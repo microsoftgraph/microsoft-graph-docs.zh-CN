@@ -3,12 +3,13 @@ title: 创建联机会议
 description: 创建一个代表指定在请求正文中的用户的联机会议。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: bd16b6979eed2c7d9386313f2ca07cb9ea2c5c6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946929"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 

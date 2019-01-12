@@ -2,12 +2,14 @@
 title: 更新 plannerplandetails
 description: 更新 **plannerplandetails** 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 45675e4c45e14b8574a66edda581e59203159608
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: fd42196238fb103021debf8a4fee2f658053a255
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843993"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950135"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 

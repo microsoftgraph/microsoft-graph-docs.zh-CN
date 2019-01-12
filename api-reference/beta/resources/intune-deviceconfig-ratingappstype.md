@@ -3,12 +3,13 @@ title: ratingAppsType 枚举类型
 description: 分级如媒体内容中所示的应用程序
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c3399b7d1a9c7eb18467e2df0db217a96602493
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 709734a36010ded195a93b383adefc80f729c4fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953404"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27861011"
 
 分级如媒体内容中所示的应用程序
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有应用程序内容|
 |allBlocked|1|不允许任何应用程序内容|

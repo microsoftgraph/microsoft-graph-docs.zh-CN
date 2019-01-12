@@ -3,12 +3,13 @@ title: resultantAppState 枚举类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14d5469f6bbc5b261d8a9eb1f11a8b0ebd118d44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b97f8f9fc44faf0c27c31f8bab60103547fcf743
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838329"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947286"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 枚举类型
 

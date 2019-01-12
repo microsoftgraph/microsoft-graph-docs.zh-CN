@@ -3,12 +3,13 @@ title: 列表 deviceManagementScriptGroupAssignments
 description: 列出属性和 deviceManagementScriptGroupAssignment 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4773bb8431627f3bb23dc6e1b9584a4c6067de40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cc05fbb25d81d394067a587124ab3afe1ea6a00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948441"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>列表 deviceManagementScriptGroupAssignments
 

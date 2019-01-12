@@ -3,12 +3,13 @@ title: 列出 deviceCategories
 description: 列出 deviceCategory 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9f3b484a3a518028e826f34092e7295a8a9d7d6b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f54865cd8156b1661f2312cf0335b99f08dd90be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950289"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 

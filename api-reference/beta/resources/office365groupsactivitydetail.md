@@ -2,18 +2,19 @@
 title: office365GroupsActivityDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 94dc10064c0005770294c8f783c77d41ce0c479b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 2968a3a5459f286e4aac69e2fd606adc1b38e39b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894269"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951822"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性                          | 类型    | Description                              |
+| 属性                          | 类型    | 说明                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | 日期    | 内容最晚日期。          |
 | groupDisplayName                  | 字符串  | 组的显示名称。           |

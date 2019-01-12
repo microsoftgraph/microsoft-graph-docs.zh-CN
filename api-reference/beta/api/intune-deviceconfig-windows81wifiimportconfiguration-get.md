@@ -3,12 +3,13 @@ title: 获取 windows81WifiImportConfiguration
 description: 读取属性和 windows81WifiImportConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 66f8f3b92291d6ae5316541b75db135b3cef95db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4222815e19e560fde01bf8c666df09cc5be9dfe8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950121"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>获取 windows81WifiImportConfiguration
 

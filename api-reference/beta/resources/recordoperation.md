@@ -3,12 +3,13 @@ title: recordOperation 资源类型
 description: RecordOperation 类型
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2fdf8b6f1f00429e676d778c0095d4554fff4a18
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948742"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -18,7 +19,7 @@ RecordOperation 类型
 
 ## <a name="properties"></a>属性
 
-| 属性                       | 类型                        | Description                                                                                                                                       |
+| 属性                       | 类型                        | 说明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | 字符串                      | 客户端上下文。                                                                                                                               |
 | completionReason               | 字符串                      | 可取值为：`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none`。 |
@@ -27,7 +28,7 @@ RecordOperation 类型
 | lastActionDateTime             | DateTimeOffset              | 操作的上次活动时间。                                                                                                     |
 | recordResourceAccessToken      | 字符串                      | 要检索录制，需要访问令牌。                                                                                              |
 | recordResourceLocation         | 字符串                      | 录制所在位置。                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | 结果的信息。  此为只读属性。 生成的服务器。                                                                                             |
+| resultInfo                     | [resultInfo](resultinfo.md) | 结果的信息。  只读。 生成的服务器。                                                                                             |
 | status                         | String                      | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 生成的服务器。                                                 |
 
 ## <a name="relationships"></a>Relationships

@@ -3,12 +3,13 @@ title: 删除 managedIOSLobApp
 description: 删除 managedIOSLobApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 21e5dccaeb300130d17806cf7a4986e0fd8d26d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01b2bafc8ca8c6e906ff4047894b5d1d1c995aea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813599"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949581"
 ---
 # <a name="delete-managedioslobapp"></a>删除 managedIOSLobApp
 

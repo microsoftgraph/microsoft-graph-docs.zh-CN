@@ -3,12 +3,13 @@ title: 创建 iosStoreApp
 description: 创建新的 iosStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6dc5f1b6a3690fa66689aa0c8cebe1cd27d3ce4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9445d58373865d5b6c7008fc277c4b765b2085ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950975"
 ---
 # <a name="create-iosstoreapp"></a>创建 iosStoreApp
 
