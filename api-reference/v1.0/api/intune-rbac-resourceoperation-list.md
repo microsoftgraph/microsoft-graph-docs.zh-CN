@@ -3,29 +3,30 @@ title: 列出 resourceOperations
 description: 列出 resourceOperation 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b8ef5899d4c34c514f4610011616df83980cb4a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c2fb608c5428ed1d0f0d549cfe361303ad2ed61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883095"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921078"
 ---
-# <a name="list-resourceoperations"></a><span data-ttu-id="b8b02-103">列出 resourceOperations</span><span class="sxs-lookup"><span data-stu-id="b8b02-103">List resourceOperations</span></span>
+# <a name="list-resourceoperations"></a><span data-ttu-id="3a9d9-103">列出 resourceOperations</span><span class="sxs-lookup"><span data-stu-id="3a9d9-103">List resourceOperations</span></span>
 
-> <span data-ttu-id="b8b02-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="b8b02-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="3a9d9-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="b8b02-105">列出 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="b8b02-105">List properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="b8b02-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="b8b02-106">Prerequisites</span></span>
-<span data-ttu-id="b8b02-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="b8b02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3a9d9-105">列出 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-105">List properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3a9d9-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="3a9d9-106">Prerequisites</span></span>
+<span data-ttu-id="3a9d9-p101">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="3a9d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b8b02-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b8b02-109">Permission type</span></span>|<span data-ttu-id="b8b02-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b8b02-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3a9d9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3a9d9-109">Permission type</span></span>|<span data-ttu-id="3a9d9-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3a9d9-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8b02-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b8b02-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b8b02-112">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="b8b02-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="b8b02-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b8b02-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b8b02-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b8b02-114">Not supported.</span></span>|
-|<span data-ttu-id="b8b02-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b8b02-115">Application</span></span>|<span data-ttu-id="b8b02-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b8b02-116">Not supported.</span></span>|
+|<span data-ttu-id="3a9d9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3a9d9-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3a9d9-112">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="3a9d9-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="3a9d9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3a9d9-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a9d9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-114">Not supported.</span></span>|
+|<span data-ttu-id="3a9d9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3a9d9-115">Application</span></span>|<span data-ttu-id="3a9d9-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b8b02-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b8b02-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a9d9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3a9d9-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ ms.locfileid: "27883095"
 GET /deviceManagement/resourceOperations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b8b02-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b8b02-118">Request headers</span></span>
-|<span data-ttu-id="b8b02-119">标头</span><span class="sxs-lookup"><span data-stu-id="b8b02-119">Header</span></span>|<span data-ttu-id="b8b02-120">值</span><span class="sxs-lookup"><span data-stu-id="b8b02-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a9d9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="3a9d9-118">Request headers</span></span>
+|<span data-ttu-id="3a9d9-119">标头</span><span class="sxs-lookup"><span data-stu-id="3a9d9-119">Header</span></span>|<span data-ttu-id="3a9d9-120">值</span><span class="sxs-lookup"><span data-stu-id="3a9d9-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8b02-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8b02-121">Authorization</span></span>|<span data-ttu-id="b8b02-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b8b02-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b8b02-123">Accept</span><span class="sxs-lookup"><span data-stu-id="b8b02-123">Accept</span></span>|<span data-ttu-id="b8b02-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b8b02-124">application/json</span></span>|
+|<span data-ttu-id="3a9d9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a9d9-121">Authorization</span></span>|<span data-ttu-id="3a9d9-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3a9d9-123">Accept</span><span class="sxs-lookup"><span data-stu-id="3a9d9-123">Accept</span></span>|<span data-ttu-id="3a9d9-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3a9d9-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b8b02-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="b8b02-125">Request body</span></span>
-<span data-ttu-id="b8b02-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b8b02-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a9d9-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="3a9d9-125">Request body</span></span>
+<span data-ttu-id="3a9d9-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b8b02-127">响应</span><span class="sxs-lookup"><span data-stu-id="b8b02-127">Response</span></span>
-<span data-ttu-id="b8b02-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b8b02-128">If successful, this method returns a `200 OK` response code and a collection of [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3a9d9-127">响应</span><span class="sxs-lookup"><span data-stu-id="3a9d9-127">Response</span></span>
+<span data-ttu-id="3a9d9-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-128">If successful, this method returns a `200 OK` response code and a collection of [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b8b02-129">示例</span><span class="sxs-lookup"><span data-stu-id="b8b02-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="b8b02-130">请求</span><span class="sxs-lookup"><span data-stu-id="b8b02-130">Request</span></span>
-<span data-ttu-id="b8b02-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b8b02-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3a9d9-129">示例</span><span class="sxs-lookup"><span data-stu-id="3a9d9-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="3a9d9-130">请求</span><span class="sxs-lookup"><span data-stu-id="3a9d9-130">Request</span></span>
+<span data-ttu-id="3a9d9-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations
 ```
 
-### <a name="response"></a><span data-ttu-id="b8b02-132">响应</span><span class="sxs-lookup"><span data-stu-id="b8b02-132">Response</span></span>
-<span data-ttu-id="b8b02-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b8b02-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3a9d9-132">响应</span><span class="sxs-lookup"><span data-stu-id="3a9d9-132">Response</span></span>
+<span data-ttu-id="3a9d9-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3a9d9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

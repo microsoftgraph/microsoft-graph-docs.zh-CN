@@ -4,30 +4,31 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: SharePoint 网站中创建新的页面
 localization_priority: Normal
-ms.openlocfilehash: 8b3c1f6cabbacd62e671a27c03658c68b237ef92
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 112c9f564c549bbae06430d4c2353c26abbac908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921736"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="5efa3-102">在网站页面列表的网站中创建页面</span><span class="sxs-lookup"><span data-stu-id="5efa3-102">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="4a2ee-102">在网站页面列表的网站中创建页面</span><span class="sxs-lookup"><span data-stu-id="4a2ee-102">Create a page in the site pages list of a site</span></span>
 
-> <span data-ttu-id="5efa3-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="5efa3-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5efa3-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5efa3-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4a2ee-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4a2ee-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="5efa3-105">在网站页面[列表][][的网站][]中创建新[sitePage][] 。</span><span class="sxs-lookup"><span data-stu-id="5efa3-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="4a2ee-105">在网站页面[列表][][的网站][]中创建新[sitePage][] 。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5efa3-106">权限</span><span class="sxs-lookup"><span data-stu-id="5efa3-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4a2ee-106">权限</span><span class="sxs-lookup"><span data-stu-id="4a2ee-106">Permissions</span></span>
 
-<span data-ttu-id="5efa3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5efa3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4a2ee-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5efa3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5efa3-109">Permission type</span></span>      | <span data-ttu-id="5efa3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5efa3-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4a2ee-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a2ee-109">Permission type</span></span>      | <span data-ttu-id="4a2ee-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a2ee-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5efa3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5efa3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5efa3-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5efa3-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5efa3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5efa3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5efa3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5efa3-114">Not supported.</span></span>    |
-|<span data-ttu-id="5efa3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5efa3-115">Application</span></span> | <span data-ttu-id="5efa3-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5efa3-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="4a2ee-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a2ee-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4a2ee-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a2ee-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4a2ee-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a2ee-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a2ee-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-114">Not supported.</span></span>    |
+|<span data-ttu-id="4a2ee-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a2ee-115">Application</span></span> | <span data-ttu-id="4a2ee-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a2ee-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5efa3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5efa3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4a2ee-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a2ee-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,13 +36,13 @@ ms.locfileid: "27885594"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="5efa3-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="5efa3-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4a2ee-118">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a2ee-118">Request body</span></span>
 
-<span data-ttu-id="5efa3-119">在请求正文中，提供要创建的[sitePage][]资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5efa3-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="4a2ee-119">在请求正文中，提供要创建的[sitePage][]资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5efa3-120">示例</span><span class="sxs-lookup"><span data-stu-id="5efa3-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4a2ee-120">示例</span><span class="sxs-lookup"><span data-stu-id="4a2ee-120">Example</span></span>
 
-<span data-ttu-id="5efa3-121">下面的示例演示如何创建新的页面。</span><span class="sxs-lookup"><span data-stu-id="5efa3-121">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="4a2ee-121">下面的示例演示如何创建新的页面。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-121">The following example shows how to create a new page.</span></span>
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -98,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="5efa3-122">响应</span><span class="sxs-lookup"><span data-stu-id="5efa3-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4a2ee-122">响应</span><span class="sxs-lookup"><span data-stu-id="4a2ee-122">Response</span></span>
 
-<span data-ttu-id="5efa3-123">如果成功，则此方法会返回[sitePage][]中创建的页面响应正文。</span><span class="sxs-lookup"><span data-stu-id="5efa3-123">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="4a2ee-123">如果成功，则此方法会返回[sitePage][]中创建的页面响应正文。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-123">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -181,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="5efa3-124">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="5efa3-124">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="5efa3-125">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="5efa3-125">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="4a2ee-124">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-124">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="4a2ee-125">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="4a2ee-125">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
