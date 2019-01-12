@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
-ms.openlocfilehash: 20f19e8d03d947b13429c8763a2e7139705b834b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3b9744d8b652f0374c71f5304c326ba862c288a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835467"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929128"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 

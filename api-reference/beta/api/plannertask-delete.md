@@ -2,12 +2,14 @@
 title: 删除 plannerTask
 description: 删除 **plannerTask**。
 localization_priority: Normal
-ms.openlocfilehash: 2cb0048394712c1f345c70fce803d1afef9c916c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 8d3bfe54b790d671c964112b1f12c83d6971c4d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930538"
 ---
 # <a name="delete-plannertask"></a>删除 plannerTask
 

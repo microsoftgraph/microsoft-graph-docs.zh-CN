@@ -2,12 +2,14 @@
 title: 使用 Azure AD v2.0 终结点注册应用
 description: '应用必须使用 Azure AD 注册。注册应用会建立一个唯一的应用程序 ID 和其他值，你的应用可使用这些值通过 Azure AD 进行身份验证并获取令牌。对于 Azure AD v2.0 终结点，请使用 Microsoft 应用程序注册门户注册应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。为应用配置身份验证或授权时，你需要根据开发的应用类型复制一个或多个要在注册期间使用的属性。 '
 author: jackson-woods
-ms.openlocfilehash: 10f955e63cbf6fd53dc357fd8772ac3364b8c84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348830"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930556"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>使用 Azure AD v2.0 终结点注册应用
 

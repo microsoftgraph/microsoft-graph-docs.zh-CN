@@ -2,12 +2,14 @@
 title: 列出 registeredOwner
 description: 检索身份为已注册设备的所有者的用户列表。 已注册的所有者是云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。
 localization_priority: Normal
-ms.openlocfilehash: a0b4fac3ef36ac3137307186ab736b812e5f0274
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ebf6350de33d2dfa70f9c098cd618abf7d7df4ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931711"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 

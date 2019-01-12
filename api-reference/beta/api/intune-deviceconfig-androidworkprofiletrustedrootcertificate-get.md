@@ -3,12 +3,13 @@ title: 获取 androidWorkProfileTrustedRootCertificate
 description: 读取属性和 androidWorkProfileTrustedRootCertificate 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e0cead3035cb2614d0158b3dfa269abdc206ad82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d40ad97de0446f29fed70e06632d83d032eea674
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929303"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>获取 androidWorkProfileTrustedRootCertificate
 

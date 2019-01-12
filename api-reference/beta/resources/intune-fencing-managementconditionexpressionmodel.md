@@ -3,12 +3,13 @@ title: managementConditionExpressionModel 资源类型
 description: 管理条件表达式模型是管理条件表达式模型表示形式。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cae69081c1c45a50bd3df83e8ae44ff9f520d822
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3713d6d0b994315234d529afac95df743e9333cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869634"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929324"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>managementConditionExpressionModel 资源类型
 

@@ -1,13 +1,15 @@
 ---
 title: '针对 OneNote API 开发人员的品牌准则 '
 description: " "
-author: Jewan-microsoft
-ms.openlocfilehash: efb1496111224371afee372c0b5952dc13888a0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: 472b1cf54582dfde21bb2137c5d4628d17664e94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353583"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928869"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>针对 OneNote API 开发人员的品牌准则 
  

@@ -3,12 +3,13 @@ title: 更新 importedDeviceIdentityResult
 description: 更新 importedDeviceIdentityResult 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7fe9472b0f63ada966c61dd8fc56a7865cf94408
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 09b43ba66bfc299169ae1b206fc96301d62c6a09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827571"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930346"
 ---
 # <a name="update-importeddeviceidentityresult"></a>更新 importedDeviceIdentityResult
 

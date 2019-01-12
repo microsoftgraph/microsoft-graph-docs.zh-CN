@@ -3,12 +3,13 @@ title: meetingCapability 资源类型
 description: 包含会议的功能
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 342d264c1f4c670d159c15558c78cc896d4a9487
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825807"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931361"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27825807"
 
 ## <a name="properties"></a>属性
 
-| 属性                          | 类型    | Description                                                        |
+| 属性                          | 类型    | 说明                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
 | allowAnonymousUsersToDialOut      | 布尔 | 指示是否在会议中允许匿名用户拨出。 |
 | allowAnonymousUsersToStartMeeting | 布尔 | 指示是否允许匿名用户开始会议。  |
