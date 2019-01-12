@@ -3,71 +3,72 @@ title: 获取用户
 description: 检索用户对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 8b21e45c5b6e86a539a2056859a0afa007614fcf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bc408abf60ad42f564c4c36a37151db122ad573d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984148"
 ---
-# <a name="get-a-user"></a><span data-ttu-id="17d19-103">获取用户</span><span class="sxs-lookup"><span data-stu-id="17d19-103">Get a user</span></span>
+# <a name="get-a-user"></a><span data-ttu-id="97e81-103">获取用户</span><span class="sxs-lookup"><span data-stu-id="97e81-103">Get a user</span></span>
 
-<span data-ttu-id="17d19-104">检索用户对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="17d19-104">Retrieve the properties and relationships of user object.</span></span>
+<span data-ttu-id="97e81-104">检索用户对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="97e81-104">Retrieve the properties and relationships of user object.</span></span>
 
-> <span data-ttu-id="17d19-p101">注意：获取用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*。使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。</span><span class="sxs-lookup"><span data-stu-id="17d19-p101">Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.</span></span>
+> <span data-ttu-id="97e81-p101">注意：获取用户仅返回一组默认属性（*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*。使用 `$select` 获取 [user](../resources/user.md) 对象的其他属性和关系。</span><span class="sxs-lookup"><span data-stu-id="97e81-p101">Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="17d19-107">权限</span><span class="sxs-lookup"><span data-stu-id="17d19-107">Permissions</span></span>
-<span data-ttu-id="17d19-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17d19-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="97e81-107">权限</span><span class="sxs-lookup"><span data-stu-id="97e81-107">Permissions</span></span>
+<span data-ttu-id="97e81-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="97e81-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="17d19-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="17d19-110">Permission type</span></span>      | <span data-ttu-id="17d19-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="17d19-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97e81-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="97e81-110">Permission type</span></span>      | <span data-ttu-id="97e81-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="97e81-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="17d19-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17d19-112">Delegated (work or school account)</span></span> | <span data-ttu-id="17d19-113">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="17d19-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="17d19-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17d19-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17d19-115">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="17d19-115">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="17d19-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="17d19-116">Application</span></span> | <span data-ttu-id="17d19-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17d19-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="97e81-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="97e81-112">Delegated (work or school account)</span></span> | <span data-ttu-id="97e81-113">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="97e81-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="97e81-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="97e81-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97e81-115">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97e81-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="97e81-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="97e81-116">Application</span></span> | <span data-ttu-id="97e81-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97e81-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="17d19-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17d19-118">HTTP request</span></span>
-<span data-ttu-id="17d19-119">为某个特定用户：<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="17d19-119">For a specific user: <!-- { "blockType": "ignored" } --></span></span>
+## <a name="http-request"></a><span data-ttu-id="97e81-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="97e81-118">HTTP request</span></span>
+<span data-ttu-id="97e81-119">为某个特定用户：<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="97e81-119">For a specific user: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-<span data-ttu-id="17d19-120">对于已登录的用户：<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="17d19-120">For the signed-in user: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="97e81-120">对于已登录的用户：<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="97e81-120">For the signed-in user: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /me
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="17d19-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="17d19-121">Optional query parameters</span></span>
-<span data-ttu-id="17d19-122">此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="17d19-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97e81-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="97e81-121">Optional query parameters</span></span>
+<span data-ttu-id="97e81-122">此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="97e81-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="17d19-123">默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。</span><span class="sxs-lookup"><span data-stu-id="17d19-123">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
+<span data-ttu-id="97e81-123">默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。</span><span class="sxs-lookup"><span data-stu-id="97e81-123">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
 
-<span data-ttu-id="17d19-124">若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。</span><span class="sxs-lookup"><span data-stu-id="17d19-124">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="17d19-125">例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="17d19-125">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="97e81-124">若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。</span><span class="sxs-lookup"><span data-stu-id="97e81-124">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="97e81-125">例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="97e81-125">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="17d19-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="17d19-126">Request headers</span></span>
-| <span data-ttu-id="17d19-127">标头</span><span class="sxs-lookup"><span data-stu-id="17d19-127">Header</span></span>       | <span data-ttu-id="17d19-128">值</span><span class="sxs-lookup"><span data-stu-id="17d19-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97e81-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="97e81-126">Request headers</span></span>
+| <span data-ttu-id="97e81-127">标头</span><span class="sxs-lookup"><span data-stu-id="97e81-127">Header</span></span>       | <span data-ttu-id="97e81-128">值</span><span class="sxs-lookup"><span data-stu-id="97e81-128">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="17d19-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="17d19-129">Authorization</span></span>  | <span data-ttu-id="17d19-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="17d19-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="17d19-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="17d19-132">Content-Type</span></span>   | <span data-ttu-id="17d19-133">application/json</span><span class="sxs-lookup"><span data-stu-id="17d19-133">application/json</span></span> |
+| <span data-ttu-id="97e81-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="97e81-129">Authorization</span></span>  | <span data-ttu-id="97e81-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="97e81-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97e81-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="97e81-132">Content-Type</span></span>   | <span data-ttu-id="97e81-133">application/json</span><span class="sxs-lookup"><span data-stu-id="97e81-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="17d19-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="17d19-134">Request body</span></span>
-<span data-ttu-id="17d19-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17d19-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97e81-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="97e81-134">Request body</span></span>
+<span data-ttu-id="97e81-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="97e81-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="17d19-136">响应</span><span class="sxs-lookup"><span data-stu-id="17d19-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97e81-136">响应</span><span class="sxs-lookup"><span data-stu-id="97e81-136">Response</span></span>
 
-<span data-ttu-id="17d19-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="17d19-137">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="97e81-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="97e81-137">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="17d19-138">示例</span><span class="sxs-lookup"><span data-stu-id="17d19-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="97e81-138">示例</span><span class="sxs-lookup"><span data-stu-id="97e81-138">Examples</span></span>
 
-### <a name="example-1-standard-users-request"></a><span data-ttu-id="17d19-139">示例 1：标准用户请求</span><span class="sxs-lookup"><span data-stu-id="17d19-139">Example 1: Standard users request</span></span>
+### <a name="example-1-standard-users-request"></a><span data-ttu-id="97e81-139">示例 1：标准用户请求</span><span class="sxs-lookup"><span data-stu-id="97e81-139">Example 1: Standard users request</span></span>
 
-<span data-ttu-id="17d19-140">默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。</span><span class="sxs-lookup"><span data-stu-id="17d19-140">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> <span data-ttu-id="17d19-141">此示例展示了默认请求和响应。</span><span class="sxs-lookup"><span data-stu-id="17d19-141">This example illustrates the default request and response.</span></span> 
+<span data-ttu-id="97e81-140">默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。</span><span class="sxs-lookup"><span data-stu-id="97e81-140">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> <span data-ttu-id="97e81-141">此示例展示了默认请求和响应。</span><span class="sxs-lookup"><span data-stu-id="97e81-141">This example illustrates the default request and response.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### <a name="response"></a><span data-ttu-id="17d19-142">响应</span><span class="sxs-lookup"><span data-stu-id="17d19-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="97e81-142">响应</span><span class="sxs-lookup"><span data-stu-id="97e81-142">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -93,11 +94,11 @@ Content-length: 491
 ```
 
 
-### <a name="example-2-signed-in-user-request"></a><span data-ttu-id="17d19-143">示例 2：登录用户请求</span><span class="sxs-lookup"><span data-stu-id="17d19-143">Example 2: Signed-in user request</span></span>
+### <a name="example-2-signed-in-user-request"></a><span data-ttu-id="97e81-143">示例 2：登录用户请求</span><span class="sxs-lookup"><span data-stu-id="97e81-143">Example 2: Signed-in user request</span></span>
 
-<span data-ttu-id="17d19-144">可以将 `/users/{id | userPrincipalName}` 替换为 `/me`，获取登录用户的用户信息。</span><span class="sxs-lookup"><span data-stu-id="17d19-144">You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.</span></span>
+<span data-ttu-id="97e81-144">可以将 `/users/{id | userPrincipalName}` 替换为 `/me`，获取登录用户的用户信息。</span><span class="sxs-lookup"><span data-stu-id="97e81-144">You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="17d19-145">请求</span><span class="sxs-lookup"><span data-stu-id="17d19-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="97e81-145">请求</span><span class="sxs-lookup"><span data-stu-id="97e81-145">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -106,7 +107,7 @@ Content-length: 491
 ```http
 GET https://graph.microsoft.com/v1.0/me
 ```
-##### <a name="response"></a><span data-ttu-id="17d19-146">响应</span><span class="sxs-lookup"><span data-stu-id="17d19-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="97e81-146">响应</span><span class="sxs-lookup"><span data-stu-id="97e81-146">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,16 +136,16 @@ Content-length: 491
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a><span data-ttu-id="17d19-147">示例 3：使用 $select 的用户请求</span><span class="sxs-lookup"><span data-stu-id="17d19-147">Example 3: Users request using $select</span></span>
+### <a name="example-3-users-request-using-select"></a><span data-ttu-id="97e81-147">示例 3：使用 $select 的用户请求</span><span class="sxs-lookup"><span data-stu-id="97e81-147">Example 3: Users request using $select</span></span>
 
-<span data-ttu-id="17d19-148">如果需要其他属性集，可以使用 OData `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="17d19-148">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="17d19-149">例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="17d19-149">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="97e81-148">如果需要其他属性集，可以使用 OData `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="97e81-148">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="97e81-149">例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`</span><span class="sxs-lookup"><span data-stu-id="97e81-149">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-##### <a name="request"></a><span data-ttu-id="17d19-150">请求</span><span class="sxs-lookup"><span data-stu-id="17d19-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="97e81-150">请求</span><span class="sxs-lookup"><span data-stu-id="97e81-150">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
-##### <a name="response"></a><span data-ttu-id="17d19-151">响应</span><span class="sxs-lookup"><span data-stu-id="17d19-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="97e81-151">响应</span><span class="sxs-lookup"><span data-stu-id="97e81-151">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

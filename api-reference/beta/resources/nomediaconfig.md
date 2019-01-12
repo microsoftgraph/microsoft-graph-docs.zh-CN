@@ -3,28 +3,29 @@ title: noMediaConfig 资源类型
 description: 指示没有媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: c7bf75b2033c7b3340bde01b782b7eabe5ab0e76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 64ab5c5bb6cbff6d9af677be9c85c13bfcd78d75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983385"
 ---
-# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="bfea2-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="bfea2-103">noMediaConfig resource type</span></span>
+# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="96c4b-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="96c4b-103">noMediaConfig resource type</span></span>
 
-> <span data-ttu-id="bfea2-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="bfea2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bfea2-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="bfea2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="96c4b-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="96c4b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="96c4b-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="96c4b-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="bfea2-106">指示没有媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="bfea2-106">Media configuration for indicating no media.</span></span>
+<span data-ttu-id="96c4b-106">指示没有媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="96c4b-106">Media configuration for indicating no media.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bfea2-107">属性</span><span class="sxs-lookup"><span data-stu-id="bfea2-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="96c4b-107">属性</span><span class="sxs-lookup"><span data-stu-id="96c4b-107">Properties</span></span>
 
-| <span data-ttu-id="bfea2-108">属性</span><span class="sxs-lookup"><span data-stu-id="bfea2-108">Property</span></span>       | <span data-ttu-id="bfea2-109">类型</span><span class="sxs-lookup"><span data-stu-id="bfea2-109">Type</span></span>    | <span data-ttu-id="bfea2-110">Description</span><span class="sxs-lookup"><span data-stu-id="bfea2-110">Description</span></span>|
+| <span data-ttu-id="96c4b-108">属性</span><span class="sxs-lookup"><span data-stu-id="96c4b-108">Property</span></span>       | <span data-ttu-id="96c4b-109">类型</span><span class="sxs-lookup"><span data-stu-id="96c4b-109">Type</span></span>    | <span data-ttu-id="96c4b-110">说明</span><span class="sxs-lookup"><span data-stu-id="96c4b-110">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="bfea2-111">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="bfea2-111">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="bfea2-112">布尔</span><span class="sxs-lookup"><span data-stu-id="bfea2-112">Boolean</span></span> |  |
+| <span data-ttu-id="96c4b-111">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="96c4b-111">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="96c4b-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="96c4b-112">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="bfea2-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bfea2-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="96c4b-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="96c4b-113">JSON representation</span></span>
 
-<span data-ttu-id="bfea2-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bfea2-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="96c4b-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="96c4b-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
