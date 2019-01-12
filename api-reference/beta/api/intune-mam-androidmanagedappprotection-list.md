@@ -3,12 +3,13 @@ title: 列出 androidManagedAppProtections
 description: 列出 androidManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4e1fc0e76f2693ddb638a5436d265452f8594258
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41eb9fcef17f1c0af3de859aff847354477f1942
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821966"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950366"
 ---
 # <a name="list-androidmanagedappprotections"></a>列出 androidManagedAppProtections
 

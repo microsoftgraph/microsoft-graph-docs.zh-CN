@@ -3,12 +3,13 @@ title: 删除 embeddedSIMActivationCodePoolAssignment
 description: 删除 embeddedSIMActivationCodePoolAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 672104a9de7d5db59041f19c145773e0dfe53d91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 156f19a026209c2ea372c89fd33a3b48d4110b9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832135"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960194"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>删除 embeddedSIMActivationCodePoolAssignment
 

@@ -3,12 +3,13 @@ title: 列表 circularGeofenceManagementConditions
 description: 列出属性和 circularGeofenceManagementCondition 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea68bfb61e5ccf6caafac518da7a844037ca3632
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: df8cc05ebc9e6b608232dd9b894968ca5f8b3234
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944612"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>列表 circularGeofenceManagementConditions
 

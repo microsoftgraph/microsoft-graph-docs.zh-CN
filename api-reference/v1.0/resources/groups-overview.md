@@ -3,12 +3,13 @@ title: 在 Microsoft Graph 中使用组
 description: 组是用户和其他主体的集合，他们共享对 Microsoft 服务或应用中资源的访问权限。 Microsoft Graph 提供了可用于根据方案创建和管理不同类型组和组功能的 API。 Microsoft Graph 中所有与组相关的操作都需要征得管理员同意。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 5b2bc6776122a67d09156c30714e671c9519dc9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 031d67db4f0ad151175fc244aefdfd31615b221c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961685"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 

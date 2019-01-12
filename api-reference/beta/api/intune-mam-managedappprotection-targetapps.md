@@ -3,12 +3,13 @@ title: targetApps 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 48042dc7c3c51611d2654eb0142dc89d18d333e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 248372d64d6e8e42f131fdb78582db00b01f1ee8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883276"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960376"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 

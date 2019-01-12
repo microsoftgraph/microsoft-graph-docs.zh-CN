@@ -3,12 +3,13 @@ title: 列出 organizations
 description: 列出 organization 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6fb4fe8c27695e037320ef92f69c4a0b3809f512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cf3777c5d072e9f6410208090361aff30bb3ce4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870929"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931235"
 ---
 # <a name="list-organizations"></a>列出 organizations
 

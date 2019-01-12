@@ -2,12 +2,14 @@
 title: plannerExternalReference 资源类型
 description: '**PlannerExternalReference**资源表示 （例如文件，URL 附件） 的引用的元数据。 它是 externalReferences 对象中的属性值对的值。'
 localization_priority: Normal
-ms.openlocfilehash: 104fd17698d57339de5c0d7a2ec4c5f42b254f49
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d484c22d18ffb501cccbd731fa5c3ad4788a8667
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833775"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944661"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference 资源类型
 

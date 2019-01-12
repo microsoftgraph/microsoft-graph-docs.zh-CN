@@ -2,12 +2,14 @@
 title: mailboxUsageMailboxCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 4e18993590d6de893b78db511037eb28ec1cc0cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e9da6a72c3c2d79323041e683702a7af2e4699c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941308"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>mailboxUsageMailboxCounts 资源类型
 

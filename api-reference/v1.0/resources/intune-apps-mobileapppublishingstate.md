@@ -3,12 +3,13 @@ title: mobileAppPublishingState 枚举类型
 description: 指示应用程序的发布状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 339bcb33382f497fd3dee433b7d5423c04b36f1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833822"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937759"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 

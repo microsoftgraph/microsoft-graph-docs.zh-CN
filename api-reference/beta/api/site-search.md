@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
-ms.openlocfilehash: e811dc54f37a55331e0b6c4f25c95f4ce89be142
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5a8f31080b2f06ccfb293f631fd18a716b3f2b09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821439"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942848"
 ---
 # <a name="search-for-sites"></a>搜索网站
 

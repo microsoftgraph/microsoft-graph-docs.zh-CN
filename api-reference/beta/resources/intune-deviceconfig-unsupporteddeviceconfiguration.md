@@ -3,12 +3,13 @@ title: unsupportedDeviceConfiguration 资源类型
 description: UnsupportedDeviceConfiguration entity 无法映射到另一个模型兼容的子类型的 deviceConfiguration 时使用。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f4f61da8dfb38f2cdc958eaf6767ab38e11adf6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e51ad1118a86216efbce2d0f585a7173ef6d42ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944822"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>unsupportedDeviceConfiguration 资源类型
 

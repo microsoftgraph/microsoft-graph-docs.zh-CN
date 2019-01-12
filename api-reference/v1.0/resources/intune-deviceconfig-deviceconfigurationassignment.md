@@ -3,12 +3,13 @@ title: deviceConfigurationAssignment 资源类型
 description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8031566663d9113fa40014bdb7bdd7603d3c6174
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a4a527f8b9da9f11d521311c54697fd04c4f019
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940909"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 

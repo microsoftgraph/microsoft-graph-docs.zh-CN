@@ -3,12 +3,13 @@ title: teamSpecialization 枚举类型
 description: 描述为团队的特殊的使用情况。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 18e1993272a94df989066cf95d01b6a4f66fd8d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 02a2272ee085d0c265adc9ce2e3f1c598e45be21
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930283"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
 

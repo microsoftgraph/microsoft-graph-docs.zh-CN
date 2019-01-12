@@ -3,12 +3,13 @@ title: 删除 userInstallStateSummary
 description: 删除 userInstallStateSummary。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6706513076e45eb021eb972196afc2c9afea7078
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d8c997b460c6b63dee44a6ed994a285721bcfd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963995"
 ---
 # <a name="delete-userinstallstatesummary"></a>删除 userInstallStateSummary
 

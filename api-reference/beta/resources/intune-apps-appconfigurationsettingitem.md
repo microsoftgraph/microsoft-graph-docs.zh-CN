@@ -3,12 +3,13 @@ title: appConfigurationSettingItem 资源类型
 description: 包含应用配置设置项的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0590a22178935e9e8a6b4eb0e279b55d4f984222
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ddd574ea19057fe31dbca5f258f8153071cd440c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842152"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927126"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem 资源类型
 

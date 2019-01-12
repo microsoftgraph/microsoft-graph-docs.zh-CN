@@ -3,12 +3,13 @@ title: 'Range: delete'
 description: 删除与范围相关的单元格。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c08b570ff6dcd0694b2dc1fb9031149cc5ed7402
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846639"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941597"
 ---
 # <a name="range-delete"></a>Range: delete
 

@@ -2,12 +2,14 @@
 title: meetingTimeCandidate 资源类型
 description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
 localization_priority: Normal
-ms.openlocfilehash: bbd237e9bfebac0b6d3f27b343ec1294d9e21881
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 13a4b9af442c8cde7a6db48d651946bbb88416e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922352"
 ---
 # <a name="meetingtimecandidate-resource-type"></a>meetingTimeCandidate 资源类型
 

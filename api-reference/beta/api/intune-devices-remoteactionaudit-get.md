@@ -3,12 +3,13 @@ title: 获取 remoteActionAudit
 description: 读取属性和 remoteActionAudit 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 43a35a52ef379960652326279fa7c90b95ac8900
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1ef42d6a90fe2fba31374de3e499bfac9a883935
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929198"
 ---
 # <a name="get-remoteactionaudit"></a>获取 remoteActionAudit
 

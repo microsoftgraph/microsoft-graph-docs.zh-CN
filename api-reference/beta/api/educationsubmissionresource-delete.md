@@ -3,12 +3,13 @@ title: 删除 educationSubmissionResource
 description: 删除提交资源。 这仅可通过学生。 如果工作分配从复制资源，删除当前副本后，将创建的资源的新副本。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 94e73f7b4c6c0c0bc85b21ee3e651f8e61234e80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 657e05a5a60dd90c8fd0c769b7d978c4be617201
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945725"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 

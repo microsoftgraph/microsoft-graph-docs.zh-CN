@@ -3,12 +3,13 @@ title: 'TableColumnCollection: add'
 description: 向表中添加新列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b736f5bb6bcfac78701fbfd0aae75c0d84e34416
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: f28b39b4ff0f7eee96be09b26bd12434a751a604
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840143"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940482"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 

@@ -3,12 +3,13 @@ title: 获取工作组
 description: 检索的属性和指定团队的关系。
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 3efec6e9b767d026d0a7626c2da257feaa20fde3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0221983538f14ef3f0c0439f8241974091e8dc0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943135"
 ---
 # <a name="get-team"></a>获取工作组
 
@@ -56,7 +57,7 @@ GET /teams/{id}
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 

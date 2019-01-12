@@ -3,12 +3,13 @@ title: 获取 RangeFill
 description: 检索 rangefill 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: dc65595df638943325490a5c54b39ac7727582e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 80448c45883a5797b50d78d9a68af4768f8cafd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863320"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957114"
 ---
 # <a name="get-rangefill"></a>获取 RangeFill
 

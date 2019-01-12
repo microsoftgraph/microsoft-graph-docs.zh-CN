@@ -3,12 +3,13 @@ title: 列表 submittedResources
 description: 列出正式已提交的分级的资源。 学生负责提交无法重新分配不更改提交列表中。 这是真实的资源的包装，如果工作分配从复制此资源可包含回实际工作分配资源的指针。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: da036713e6683aaef6576145dfe32b3b6eeaf11e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a798ea45ca88520954bbde20a264fff9455f3102
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824141"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934987"
 ---
 # <a name="list-submittedresources"></a>列表 submittedResources
 

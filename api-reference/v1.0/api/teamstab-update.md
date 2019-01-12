@@ -3,12 +3,13 @@ title: 更新选项卡
 description: 更新指定的选项卡的属性。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: e5ddaec72908cb97aa5bccfc768ae78a82ad11a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: f7bb00fb58513c32c66f72a9ef852e799674a52e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944703"
 ---
 # <a name="update-tab"></a>更新选项卡
 

@@ -1,14 +1,15 @@
 ---
 title: 列出 sectionGroups
 description: 检索 sectionGroup 对象列表。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: d9f2846d9737010fd26f7d853eeca47273a8be00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: cf2842060894c4e4dc25edb4d4365b8e86ed108b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933440"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 

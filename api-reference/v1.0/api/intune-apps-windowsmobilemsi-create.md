@@ -3,12 +3,13 @@ title: 创建 windowsMobileMSI
 description: 创建新的 windowsMobileMSI 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 868bfa82b8f7b5de70a56d681b8a0a48eee59ec4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9fa4fd686c870a2f649c8a8af5b3f7fb909ece90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878104"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952914"
 ---
 # <a name="create-windowsmobilemsi"></a>创建 windowsMobileMSI
 

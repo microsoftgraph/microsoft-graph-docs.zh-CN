@@ -2,12 +2,14 @@
 title: managementConditionExpression 资源类型
 description: 管理条件表达式是一个将生成一个布尔值在计算时，即一个 true 或 false，指示管理条件语句激活/停用的表达式。 管理条件表达式可能组成表达式变量和布尔值表达式运算符的组合。
 localization_priority: Normal
-ms.openlocfilehash: f7f370b348ab13ef964eab1cc7025868e4380bac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b25469c3efb9f7985bf21ad47e83c34b47f96b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941875"
 ---
 # <a name="managementconditionexpression-resource-type"></a>managementConditionExpression 资源类型
 

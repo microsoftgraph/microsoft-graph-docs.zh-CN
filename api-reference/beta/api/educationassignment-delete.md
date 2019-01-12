@@ -3,12 +3,13 @@ title: 删除 educationAssignment
 description: 删除现有的工作分配。 仅在类的教师可以删除工作分配。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 09365c44bef4f12ad9be24f8ed30cfb0efc5c6f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 5432bf6731e75266cc2cb5ebf8a84a328a36d9fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945718"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 

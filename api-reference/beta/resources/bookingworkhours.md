@@ -2,12 +2,14 @@
 title: bookingWorkHours 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 94920287cd7358c68686da2d0969c676e3c481ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: af606cf8ea867c040c20db3b4082761b3de69052
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888954"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958472"
 ---
 # <a name="bookingworkhours-resource-type"></a>bookingWorkHours 资源类型
 

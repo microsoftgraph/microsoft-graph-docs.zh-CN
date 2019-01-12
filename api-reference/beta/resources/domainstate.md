@@ -3,12 +3,13 @@ title: domainState 资源类型
 description: 表示域上经过计划的异步操作的状态。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 3701e80c5104c80eae0cdfb4b1b9f549177a2cbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: cee5ef9e0d0f4a5ada0d9117f755c407d081461d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963099"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 

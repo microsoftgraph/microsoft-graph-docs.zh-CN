@@ -3,12 +3,13 @@ title: iosWiFiConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 iOS 设备，以连接到所需 Wi-fi 终结点。 通过指定的身份验证方法和安全类型预期 Wi-fi 终结点可 Wi-fi 连接进行无缝的最终用户。 此配置文件提供了比企业 Wi-fi 配置文件的限制和简单安全类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 039b50674604d2d8a108ff08ce7f865beec1f69b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0d08c131a33c5a1a33853d7eb37b563a7723637
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927924"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>iosWiFiConfiguration 资源类型
 

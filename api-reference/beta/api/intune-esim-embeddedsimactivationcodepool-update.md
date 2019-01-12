@@ -3,12 +3,13 @@ title: 更新 embeddedSIMActivationCodePool
 description: 更新 embeddedSIMActivationCodePool 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e2b8d3a8163292f2dfac431d72dab83ea71b658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1758d832dfbc9fdbc2db1a65259f30c3662b5964
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942932"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>更新 embeddedSIMActivationCodePool
 

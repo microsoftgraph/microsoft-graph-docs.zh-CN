@@ -2,12 +2,14 @@
 title: userIdentity 类型
 description: '为 Azure AD 访问 reviews （英文），此类型的访问评审的审阅者表示 Azure AD 用户标识。  '
 localization_priority: Normal
-ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 80e8cc68d4fc2f642be6c748b762fe47c7489d59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839639"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932278"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 

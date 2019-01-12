@@ -3,12 +3,13 @@ title: teamsApp 资源类型
 description: 应用程序中的 Microsoft 团队应用程序目录。
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 8f3e5b094b46376bd9ad5e9e888d76f8a995fed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2493b7f6adee51e5c5622585055cbd3cf2778656
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880827"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937444"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 

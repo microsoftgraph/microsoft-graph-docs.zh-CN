@@ -3,12 +3,13 @@ title: 列出 mobileLobApps
 description: 列出 mobileLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ab338c62ff1e0212aef4ea926071819b6152654f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a1cac1c4670b3bd428fc053a9810f8708cc20aa7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964569"
 ---
 # <a name="list-mobilelobapps"></a>列出 mobileLobApps
 

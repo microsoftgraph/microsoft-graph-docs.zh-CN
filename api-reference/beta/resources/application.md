@@ -2,12 +2,14 @@
 title: 应用程序资源类型
 description: '代表应用程序。 必须在目录中注册 outsources Azure Active Directory (Azure AD) 身份验证的任何应用程序。 应用程序注册涉及告诉 Azure AD 关于您的应用程序，包括其具有位于何处，身份验证，以确定您的应用程序和更多的 URI 后发送答复的 URL 的 URL。 有关详细信息，请参阅基础知识的注册 Azure AD 中的应用程序。 继承自 directoryObject。 '
 localization_priority: Priority
-ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946677"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: List
 localization_priority: Normal
-ms.openlocfilehash: 03121447e0b9d7d091005283ed12ef7d93e68108
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 419f35226c09c1bde500994b6e023f764c54b3cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870460"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953614"
 ---
 # <a name="list-resource"></a>List 资源
 

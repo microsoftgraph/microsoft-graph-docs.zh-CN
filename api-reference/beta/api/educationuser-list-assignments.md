@@ -2,12 +2,14 @@
 title: 列表分配
 description: 返回分配给用户的所有类的分配的列表。 此实用程序命名空间允许呼叫者可以在单个呼叫，而不必重新分配请求从每个类中查找学生的所有工作分配。 工作分配列表包含所需获取类命名空间内从工作分配的详细的信息。 工作分配的所有其他操作应使用类命名空间。
 localization_priority: Normal
-ms.openlocfilehash: 92a52f38a305515824a34e87bc3d23d16a2be4c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 0366a159e3e28e9ad3933ec4d1eea6799c1f65c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940839"
 ---
 # <a name="list-assignments"></a>列表分配
 

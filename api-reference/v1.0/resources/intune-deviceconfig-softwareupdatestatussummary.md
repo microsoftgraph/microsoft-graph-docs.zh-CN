@@ -3,12 +3,13 @@ title: softwareUpdateStatusSummary 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c297c61528f50aea023109f3a71ff877343d8ef3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cdc05c903f2e868dfadfb6ec4317aec0d1c9c4b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838894"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928225"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary 资源类型
 

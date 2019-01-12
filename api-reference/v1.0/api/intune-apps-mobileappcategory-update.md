@@ -3,12 +3,13 @@ title: 更新 mobileAppCategory
 description: 更新 mobileAppCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dbaef8f7d5274da1f19291251a25076dd642f896
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f3e4cceaedf2ee7113b3d00d07d41097c289d4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876128"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942841"
 ---
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
 

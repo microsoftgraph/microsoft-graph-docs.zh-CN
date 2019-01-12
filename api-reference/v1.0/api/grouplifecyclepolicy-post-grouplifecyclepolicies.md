@@ -3,12 +3,13 @@ title: 创建 groupLifecyclePolicy
 description: 新建 groupLifecyclePolicy。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 62d479c2f3993790b78b09185a97bdc75fe0677c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: b507454705fad4407a9cb9fef61a49e6f1bd051c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942036"
 ---
 # <a name="create-grouplifecyclepolicy"></a>创建 groupLifecyclePolicy
 

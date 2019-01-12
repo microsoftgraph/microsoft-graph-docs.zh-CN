@@ -3,12 +3,13 @@ title: 刷新会话
 description: '使用此 API 刷新现有的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 686325dd106af01d1f8f3fcf94b5bdb9ad4b000f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c10372e332072eb69bfb605484695d950185e62c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930892"
 ---
 # <a name="refresh-session"></a>刷新会话
 

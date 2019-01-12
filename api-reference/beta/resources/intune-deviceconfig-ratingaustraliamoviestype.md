@@ -3,12 +3,13 @@ title: ratingAustraliaMoviesType 枚举类型
 description: 电影分级中澳大利亚标签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 702a50a52d7870f2cffdb1e8ef23a506f0d75d39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa54cbae04b27c7b0159ec2693cfb6a708063789
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946705"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 

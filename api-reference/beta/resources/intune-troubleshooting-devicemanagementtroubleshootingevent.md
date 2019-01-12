@@ -3,12 +3,13 @@ title: deviceManagementTroubleshootingEvent 资源类型
 description: 表示一般性故障的事件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c640ec2988be09cd19a3e87a00ebb64a3b1be3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c801ae99f10bd376dd917546c4ae375123ed678
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861661"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945928"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent 资源类型
 

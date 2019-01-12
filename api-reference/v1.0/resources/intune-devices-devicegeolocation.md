@@ -3,12 +3,13 @@ title: deviceGeoLocation 资源类型
 description: 设备位置
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 68e89b2e63b99324332874a3ad6a2f2e3c335832
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 248af3f66a78e3197a3f966225e864f5583f8597
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816126"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940951"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 

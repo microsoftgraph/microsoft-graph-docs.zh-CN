@@ -3,12 +3,13 @@ title: 列出 verificationDnsRecords
 description: 检索 domainDnsRecord 对象列表。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 48549b2020bb4e73169712f9d8ba6b8034187082
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e0339b9bf50551d9bcb10ad2c5c582beabc4c9b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927231"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 

@@ -2,12 +2,14 @@
 title: 获取 plannerAssignedToTaskBoardTaskFormat
 description: 检索 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: b9f0f053ccd1ef67e985a9855938fa5bc31ec308
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: eed81ce74d7e90ba19e90d9d4280686f5716c73e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963456"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>获取 plannerAssignedToTaskBoardTaskFormat
 

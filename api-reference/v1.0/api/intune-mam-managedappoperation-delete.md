@@ -3,12 +3,13 @@ title: 删除 managedAppOperation
 description: 删除 managedAppOperation。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5ff02c7556657b9c20a5627a846a62cd03ef9dcb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 148c4e796087f6d1cb94a3f23dcb3a59e7ae8ea3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841935"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965339"
 ---
 # <a name="delete-managedappoperation"></a>删除 managedAppOperation
 

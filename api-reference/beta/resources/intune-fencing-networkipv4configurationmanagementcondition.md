@@ -3,12 +3,13 @@ title: networkIPv4ConfigurationManagementCondition 资源类型
 description: 配置基于管理条件可能定义设备检测到某些 IP 时将触发的 IPv4 网络设置。 IP 配置管理条件仅被视为 TRUE 的网络连接处于活动状态时。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962105"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 

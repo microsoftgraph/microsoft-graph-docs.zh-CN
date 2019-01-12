@@ -3,12 +3,13 @@ title: userInstallStateSummary 资源类型
 description: 包含某个用户的安装状态摘要的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c87ca0ab41a95a6a1d214e83eb94a03a4f2330a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6835dcad87fbf16a8dc81b6c9f9ab124a9834a3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820767"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931851"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary 资源类型
 

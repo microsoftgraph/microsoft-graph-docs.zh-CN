@@ -2,12 +2,14 @@
 title: 更新 accessReview
 description: 在 Azure AD 访问评论功能中，更新现有 accessReview 对象更改一个或多个其属性。
 localization_priority: Normal
-ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833745"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941351"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 

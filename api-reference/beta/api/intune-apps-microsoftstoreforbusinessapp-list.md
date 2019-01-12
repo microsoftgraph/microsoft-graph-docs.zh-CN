@@ -3,12 +3,13 @@ title: 列出 microsoftStoreForBusinessApps
 description: 列出 microsoftStoreForBusinessApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 036e57ec7d8d6c1fd53b449ab46449d50ac4c493
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f3ed5a580b1a63c5e1021959a8c2c08668fd656a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940888"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>列出 microsoftStoreForBusinessApps
 

@@ -3,12 +3,13 @@ title: 获取 deviceManagementScriptGroupAssignment
 description: 读取属性和 deviceManagementScriptGroupAssignment 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b5ed43b70b80c9924c4443fd33a69c6c225fdceb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86cd64b1faacb90c3c9480b9c724a4dd7cd2d282
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941091"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>获取 deviceManagementScriptGroupAssignment
 

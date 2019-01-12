@@ -3,12 +3,13 @@ title: 更新 androidWorkProfileVpnConfiguration
 description: 更新 androidWorkProfileVpnConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c1ff2e73ce14568d1ce7c725db1ffc3ae206d64
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96b40f2fc9b95bef1c76296adff38c7dd54b6284
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868892"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958192"
 ---
 # <a name="update-androidworkprofilevpnconfiguration"></a>更新 androidWorkProfileVpnConfiguration
 

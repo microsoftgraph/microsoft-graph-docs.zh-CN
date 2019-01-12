@@ -3,12 +3,13 @@ title: deviceManagementExchangeAccessRule 资源类型
 description: Exchange 中的设备访问规则。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d7f0e649d2c5f2f27a4623fa0f65cf43965f576
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a03fb9f56361cc72bd0321a3b2bd548571740b34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855186"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927812"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 

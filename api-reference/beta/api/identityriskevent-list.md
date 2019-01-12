@@ -3,12 +3,13 @@ title: 列表 identityRiskEvents
 description: 检索 identityriskevent 对象的列表。
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: fbd5e739986ded9fa6f5346e35808f4018bff625
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 928c7e548a43bbb62958ae03d03e747adff8a397
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894248"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941231"
 ---
 # <a name="list-identityriskevents"></a>列表 identityRiskEvents
 

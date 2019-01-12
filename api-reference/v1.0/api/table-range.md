@@ -3,12 +3,13 @@ title: Table:Range
 description: 获取与整个表相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d842d2a1c1918506c840b420ab4e909cc815efb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 735c12193e634553abf5a5e6f2581f5027acdab0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941560"
 ---
 # <a name="table-range"></a>Table:Range
 

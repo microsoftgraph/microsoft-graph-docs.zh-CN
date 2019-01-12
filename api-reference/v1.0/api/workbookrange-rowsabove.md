@@ -3,12 +3,13 @@ title: 'workbookRange: rowsAbove'
 description: 获取给定范围上方的一定数量的行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0eb7a9ec6539854d4148148e2d283df0eaa366d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 922c600d81bf890980a9d33d14b3255f8ac70be6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875010"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959893"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 

@@ -3,12 +3,13 @@ title: allLicensedUsersAssignmentTarget 资源类型
 description: 表示租户中所有许可用户的赋值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3f8403496ebc98136c5f3550a5bfefc9725dd33a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9cebb1f86609bf7c6eda7f1435bfa6f926556d74
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927749"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget 资源类型
 

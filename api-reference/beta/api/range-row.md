@@ -3,12 +3,13 @@ title: Range:Row
 description: 获取范围中包含的行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 006af432d0ea6e16b38694f37411f576f9fc9ed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c553923ffcc487f00df045b51511ba2035f2f7ea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931078"
 ---
 # <a name="range-row"></a>Range:Row
 

@@ -3,12 +3,13 @@ title: ratingUnitedKingdomTelevisionType 枚举类型
 description: 在英国 TV 内容评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 03d09d6b8083e83f29476594cb2012f19a78fff2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 22032f51341cd19eb104d758f772c7e2028b8eb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921967"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 枚举类型
 

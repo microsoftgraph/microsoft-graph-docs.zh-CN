@@ -2,12 +2,14 @@
 title: 'groupLifecyclePolicy: renewGroup'
 description: 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 localization_priority: Normal
-ms.openlocfilehash: 5472927769175912736f66a2d848f103cfb5b8c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 8facbd22887e99fc3b7edcdcb17940d0845cd31d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960404"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 

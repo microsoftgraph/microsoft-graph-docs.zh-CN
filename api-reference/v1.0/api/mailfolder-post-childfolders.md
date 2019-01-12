@@ -3,12 +3,13 @@ title: 创建 MailFolder
 description: 使用此 API 新建子 MailFolder。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 44a61fda9120faaac0d8d69590c677896796765e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: bf078e34f216dde5a3daf3bcf0cecd27517e7da7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941441"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 

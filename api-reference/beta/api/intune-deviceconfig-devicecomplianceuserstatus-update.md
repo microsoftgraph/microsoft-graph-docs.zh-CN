@@ -3,12 +3,13 @@ title: 更新 deviceComplianceUserStatus
 description: 更新 deviceComplianceUserStatus 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 40d58158ca3a0e17f7f92b15a35f1b730d2511c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 20ab0b844fdf5066301c36bc2b21b09ab783573d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852799"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929849"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>更新 deviceComplianceUserStatus
 

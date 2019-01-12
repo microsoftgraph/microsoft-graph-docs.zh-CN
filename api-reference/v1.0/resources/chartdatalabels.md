@@ -3,12 +3,13 @@ title: ChartDataLabels 资源类型
 description: 表示图表点上的所有数据标签的集合。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: add7ef03b4779cae799949c6eb5901fcd1e3ddaf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 48d6cb0d35e82fc0117a24aad1c5e171bc869870
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961414"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels 资源类型
 

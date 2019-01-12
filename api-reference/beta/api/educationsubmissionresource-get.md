@@ -3,12 +3,13 @@ title: 获取 educationSubmissionResource
 description: 检索特定资源提交相关联的属性。 此资源是工作中资源列表中，应考虑工作进程中的由一个学生。 如果它已从分配复制回工作分配资源的可能指针与包装此资源。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 95a44b2a2e354060a718827ba1c13b9c60391d58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 47dd803e4a8503017d68f00c0e95c78ad271c870
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866071"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940349"
 ---
 # <a name="get-educationsubmissionresource"></a>获取 educationSubmissionResource
 

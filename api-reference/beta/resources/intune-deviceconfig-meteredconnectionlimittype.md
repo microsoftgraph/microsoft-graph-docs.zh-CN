@@ -3,12 +3,13 @@ title: meteredConnectionLimitType 枚举类型
 description: 按流量计费的连接限制设置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0bed25406ddc61cb67331092d06e0e2881c7014c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 29ac92097712d3d145ad14d682ea47502b148c4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947993"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 枚举类型
 

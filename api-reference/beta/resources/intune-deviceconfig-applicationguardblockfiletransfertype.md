@@ -3,12 +3,13 @@ title: applicationGuardBlockFileTransferType 枚举类型
 description: ApplicationGuardBlockFileTransfer 的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63460da5d7b3d78c302b706a8aeedcdedb066c48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 95da90b2b1210bb86032787b2fe26bc8a7c75391
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835298"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946726"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType 枚举类型
 

@@ -2,12 +2,14 @@
 title: 获取 plannerBucket
 description: 检索 **plannerBucket** 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 78b0034d7e75f56c8d553cf9122d442d480432d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d331523ad2d205f2e01431f943da6095ecd667f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839856"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953755"
 ---
 # <a name="get-plannerbucket"></a>获取 plannerBucket
 

@@ -3,12 +3,13 @@ title: editionUpgradeLicenseType 枚举类型
 description: Edition 升级许可证类型
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a4fa0e515528f9e29e77f213d1636c3027585555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8d9b5c5e75bed3b0fca80ab4a3133acc52085a7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856271"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960502"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 
