@@ -3,29 +3,30 @@ title: 删除日历
 description: 删除默认日历以外的日历。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4621314f179ddc1eac47b5f178ff50af670972db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f86f1618e36d221164caa65484344f2a3d177765
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922198"
 ---
-# <a name="delete-calendar"></a><span data-ttu-id="df8e5-103">删除日历</span><span class="sxs-lookup"><span data-stu-id="df8e5-103">Delete calendar</span></span>
+# <a name="delete-calendar"></a><span data-ttu-id="263c5-103">删除日历</span><span class="sxs-lookup"><span data-stu-id="263c5-103">Delete calendar</span></span>
 
-> <span data-ttu-id="df8e5-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="df8e5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="df8e5-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="df8e5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="263c5-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="263c5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="263c5-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="263c5-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="df8e5-106">删除默认日历以外的日历。</span><span class="sxs-lookup"><span data-stu-id="df8e5-106">Delete a calendar other than the default calendar.</span></span>
-## <a name="permissions"></a><span data-ttu-id="df8e5-107">权限</span><span class="sxs-lookup"><span data-stu-id="df8e5-107">Permissions</span></span>
-<span data-ttu-id="df8e5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="df8e5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="263c5-106">删除默认日历以外的日历。</span><span class="sxs-lookup"><span data-stu-id="263c5-106">Delete a calendar other than the default calendar.</span></span>
+## <a name="permissions"></a><span data-ttu-id="263c5-107">权限</span><span class="sxs-lookup"><span data-stu-id="263c5-107">Permissions</span></span>
+<span data-ttu-id="263c5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="263c5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df8e5-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="df8e5-110">Permission type</span></span>      | <span data-ttu-id="df8e5-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="df8e5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="263c5-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="263c5-110">Permission type</span></span>      | <span data-ttu-id="263c5-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="263c5-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df8e5-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="df8e5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="df8e5-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df8e5-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="df8e5-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="df8e5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df8e5-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df8e5-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="df8e5-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="df8e5-116">Application</span></span> | <span data-ttu-id="df8e5-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df8e5-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="263c5-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="263c5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="263c5-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="263c5-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="263c5-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="263c5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="263c5-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="263c5-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="263c5-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="263c5-116">Application</span></span> | <span data-ttu-id="263c5-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="263c5-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df8e5-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="df8e5-118">HTTP request</span></span>
-<span data-ttu-id="df8e5-119"><!-- { "blockType": "ignored" } -->默认[calendarGroup](../resources/calendargroup.md)中的默认日历之外的用户的[日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="df8e5-119"><!-- { "blockType": "ignored" } --> A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="263c5-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="263c5-118">HTTP request</span></span>
+<span data-ttu-id="263c5-119"><!-- { "blockType": "ignored" } -->默认[calendarGroup](../resources/calendargroup.md)中的默认日历之外的用户的[日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="263c5-119"><!-- { "blockType": "ignored" } --> A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
@@ -33,26 +34,26 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}
 DELETE /me/calendarGroup/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="df8e5-120">指定 [calendarGroup](../resources/calendargroup.md) 中的 [日历](../resources/calendar.md)（非默认日历）。</span><span class="sxs-lookup"><span data-stu-id="df8e5-120">A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="263c5-120">指定 [calendarGroup](../resources/calendargroup.md) 中的 [日历](../resources/calendar.md)（非默认日历）。</span><span class="sxs-lookup"><span data-stu-id="263c5-120">A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="df8e5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="df8e5-121">Request headers</span></span>
-| <span data-ttu-id="df8e5-122">名称</span><span class="sxs-lookup"><span data-stu-id="df8e5-122">Name</span></span>           |  <span data-ttu-id="df8e5-123">类型</span><span class="sxs-lookup"><span data-stu-id="df8e5-123">Type</span></span>    | <span data-ttu-id="df8e5-124">说明</span><span class="sxs-lookup"><span data-stu-id="df8e5-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="263c5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="263c5-121">Request headers</span></span>
+| <span data-ttu-id="263c5-122">名称</span><span class="sxs-lookup"><span data-stu-id="263c5-122">Name</span></span>           |  <span data-ttu-id="263c5-123">类型</span><span class="sxs-lookup"><span data-stu-id="263c5-123">Type</span></span>    | <span data-ttu-id="263c5-124">说明</span><span class="sxs-lookup"><span data-stu-id="263c5-124">Description</span></span>|
 |:---------------|:---------|:----------|
-| <span data-ttu-id="df8e5-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="df8e5-125">Authorization</span></span>  |  <span data-ttu-id="df8e5-126">string</span><span class="sxs-lookup"><span data-stu-id="df8e5-126">string</span></span>  | <span data-ttu-id="df8e5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="df8e5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="263c5-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="263c5-125">Authorization</span></span>  |  <span data-ttu-id="263c5-126">string</span><span class="sxs-lookup"><span data-stu-id="263c5-126">string</span></span>  | <span data-ttu-id="263c5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="263c5-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="df8e5-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="df8e5-129">Request body</span></span>
-<span data-ttu-id="df8e5-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="df8e5-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="263c5-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="263c5-129">Request body</span></span>
+<span data-ttu-id="263c5-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="263c5-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="df8e5-131">响应</span><span class="sxs-lookup"><span data-stu-id="df8e5-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="263c5-131">响应</span><span class="sxs-lookup"><span data-stu-id="263c5-131">Response</span></span>
 
-<span data-ttu-id="df8e5-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="df8e5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="263c5-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="263c5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df8e5-134">示例</span><span class="sxs-lookup"><span data-stu-id="df8e5-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="df8e5-135">请求</span><span class="sxs-lookup"><span data-stu-id="df8e5-135">Request</span></span>
-<span data-ttu-id="df8e5-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="df8e5-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="263c5-134">示例</span><span class="sxs-lookup"><span data-stu-id="263c5-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="263c5-135">请求</span><span class="sxs-lookup"><span data-stu-id="263c5-135">Request</span></span>
+<span data-ttu-id="263c5-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="263c5-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_calendar"
@@ -60,8 +61,8 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/calendar
 ```
-##### <a name="response"></a><span data-ttu-id="df8e5-137">响应</span><span class="sxs-lookup"><span data-stu-id="df8e5-137">Response</span></span>
-<span data-ttu-id="df8e5-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="df8e5-138">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="263c5-137">响应</span><span class="sxs-lookup"><span data-stu-id="263c5-137">Response</span></span>
+<span data-ttu-id="263c5-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="263c5-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

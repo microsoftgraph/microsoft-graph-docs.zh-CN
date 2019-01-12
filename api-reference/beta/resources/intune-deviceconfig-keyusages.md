@@ -3,25 +3,26 @@ title: keyUsages 枚举类型
 description: 密钥用法选项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc270679624b6ce142092393693a5a34562e1a3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 13193df580fa42a4d23f7e7bf8b7e63a32d5a1d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974040"
 ---
-# <a name="keyusages-enum-type"></a><span data-ttu-id="842a0-103">keyUsages 枚举类型</span><span class="sxs-lookup"><span data-stu-id="842a0-103">keyUsages enum type</span></span>
+# <a name="keyusages-enum-type"></a><span data-ttu-id="b4a2d-103">keyUsages 枚举类型</span><span class="sxs-lookup"><span data-stu-id="b4a2d-103">keyUsages enum type</span></span>
 
-> <span data-ttu-id="842a0-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="842a0-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="842a0-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="842a0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b4a2d-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b4a2d-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="842a0-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="842a0-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b4a2d-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="842a0-107">密钥用法选项。</span><span class="sxs-lookup"><span data-stu-id="842a0-107">Key Usage Options.</span></span>
-## <a name="members"></a><span data-ttu-id="842a0-108">成员</span><span class="sxs-lookup"><span data-stu-id="842a0-108">Members</span></span>
-|<span data-ttu-id="842a0-109">成员</span><span class="sxs-lookup"><span data-stu-id="842a0-109">Member</span></span>|<span data-ttu-id="842a0-110">值</span><span class="sxs-lookup"><span data-stu-id="842a0-110">Value</span></span>|<span data-ttu-id="842a0-111">Description</span><span class="sxs-lookup"><span data-stu-id="842a0-111">Description</span></span>|
+<span data-ttu-id="b4a2d-107">密钥用法选项。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-107">Key Usage Options.</span></span>
+## <a name="members"></a><span data-ttu-id="b4a2d-108">成员</span><span class="sxs-lookup"><span data-stu-id="b4a2d-108">Members</span></span>
+|<span data-ttu-id="b4a2d-109">成员</span><span class="sxs-lookup"><span data-stu-id="b4a2d-109">Member</span></span>|<span data-ttu-id="b4a2d-110">值</span><span class="sxs-lookup"><span data-stu-id="b4a2d-110">Value</span></span>|<span data-ttu-id="b4a2d-111">说明</span><span class="sxs-lookup"><span data-stu-id="b4a2d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="842a0-112">keyEncipherment</span><span class="sxs-lookup"><span data-stu-id="842a0-112">keyEncipherment</span></span>|<span data-ttu-id="842a0-113">1</span><span class="sxs-lookup"><span data-stu-id="842a0-113">1</span></span>|<span data-ttu-id="842a0-114">密钥加密用法。</span><span class="sxs-lookup"><span data-stu-id="842a0-114">Key Encipherment Usage.</span></span>|
-|<span data-ttu-id="842a0-115">digitalSignature</span><span class="sxs-lookup"><span data-stu-id="842a0-115">digitalSignature</span></span>|<span data-ttu-id="842a0-116">2</span><span class="sxs-lookup"><span data-stu-id="842a0-116">2</span></span>|<span data-ttu-id="842a0-117">数字签名用法。</span><span class="sxs-lookup"><span data-stu-id="842a0-117">Digital Signature Usage.</span></span>|
+|<span data-ttu-id="b4a2d-112">keyEncipherment</span><span class="sxs-lookup"><span data-stu-id="b4a2d-112">keyEncipherment</span></span>|<span data-ttu-id="b4a2d-113">1</span><span class="sxs-lookup"><span data-stu-id="b4a2d-113">1</span></span>|<span data-ttu-id="b4a2d-114">密钥加密用法。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-114">Key Encipherment Usage.</span></span>|
+|<span data-ttu-id="b4a2d-115">digitalSignature</span><span class="sxs-lookup"><span data-stu-id="b4a2d-115">digitalSignature</span></span>|<span data-ttu-id="b4a2d-116">2</span><span class="sxs-lookup"><span data-stu-id="b4a2d-116">2</span></span>|<span data-ttu-id="b4a2d-117">数字签名用法。</span><span class="sxs-lookup"><span data-stu-id="b4a2d-117">Digital Signature Usage.</span></span>|
 
 
 
