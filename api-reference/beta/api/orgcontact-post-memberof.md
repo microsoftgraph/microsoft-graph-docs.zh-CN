@@ -2,48 +2,50 @@
 title: 创建 memberOf
 description: 使用此 API 创建新 memberOf。
 localization_priority: Normal
-ms.openlocfilehash: 8862292da568c18ac4952306559e041ba5de31af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ca5aa856f1f2e64f3a3b73ccff15f686c048cfda
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970001"
 ---
-# <a name="create-memberof"></a><span data-ttu-id="fa7d2-103">创建 memberOf</span><span class="sxs-lookup"><span data-stu-id="fa7d2-103">Create memberOf</span></span>
+# <a name="create-memberof"></a><span data-ttu-id="e38ab-103">创建 memberOf</span><span class="sxs-lookup"><span data-stu-id="e38ab-103">Create memberOf</span></span>
 
-> <span data-ttu-id="fa7d2-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fa7d2-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e38ab-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e38ab-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e38ab-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e38ab-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="fa7d2-106">使用此 API 创建新 memberOf。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-106">Use this API to create a new memberOf.</span></span>
-## <a name="permissions"></a><span data-ttu-id="fa7d2-107">权限</span><span class="sxs-lookup"><span data-stu-id="fa7d2-107">Permissions</span></span>
-<span data-ttu-id="fa7d2-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e38ab-106">使用此 API 创建新 memberOf。</span><span class="sxs-lookup"><span data-stu-id="e38ab-106">Use this API to create a new memberOf.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e38ab-107">权限</span><span class="sxs-lookup"><span data-stu-id="e38ab-107">Permissions</span></span>
+<span data-ttu-id="e38ab-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e38ab-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fa7d2-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa7d2-110">Permission type</span></span>      | <span data-ttu-id="fa7d2-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fa7d2-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e38ab-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e38ab-110">Permission type</span></span>      | <span data-ttu-id="e38ab-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e38ab-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fa7d2-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa7d2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fa7d2-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-113">Not supported.</span></span>    |
-|<span data-ttu-id="fa7d2-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa7d2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa7d2-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-115">Not supported.</span></span>    |
-|<span data-ttu-id="fa7d2-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa7d2-116">Application</span></span> | <span data-ttu-id="fa7d2-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-117">Not supported.</span></span> |
+|<span data-ttu-id="e38ab-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e38ab-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e38ab-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e38ab-113">Not supported.</span></span>    |
+|<span data-ttu-id="e38ab-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e38ab-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e38ab-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e38ab-115">Not supported.</span></span>    |
+|<span data-ttu-id="e38ab-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e38ab-116">Application</span></span> | <span data-ttu-id="e38ab-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e38ab-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fa7d2-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa7d2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e38ab-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e38ab-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/memberOf
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="fa7d2-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa7d2-119">Request headers</span></span>
-| <span data-ttu-id="fa7d2-120">名称</span><span class="sxs-lookup"><span data-stu-id="fa7d2-120">Name</span></span>       | <span data-ttu-id="fa7d2-121">类型</span><span class="sxs-lookup"><span data-stu-id="fa7d2-121">Type</span></span> | <span data-ttu-id="fa7d2-122">说明</span><span class="sxs-lookup"><span data-stu-id="fa7d2-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e38ab-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e38ab-119">Request headers</span></span>
+| <span data-ttu-id="e38ab-120">名称</span><span class="sxs-lookup"><span data-stu-id="e38ab-120">Name</span></span>       | <span data-ttu-id="e38ab-121">类型</span><span class="sxs-lookup"><span data-stu-id="e38ab-121">Type</span></span> | <span data-ttu-id="e38ab-122">说明</span><span class="sxs-lookup"><span data-stu-id="e38ab-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fa7d2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa7d2-123">Authorization</span></span>  | <span data-ttu-id="fa7d2-124">string</span><span class="sxs-lookup"><span data-stu-id="fa7d2-124">string</span></span>  | <span data-ttu-id="fa7d2-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e38ab-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e38ab-123">Authorization</span></span>  | <span data-ttu-id="e38ab-124">string</span><span class="sxs-lookup"><span data-stu-id="e38ab-124">string</span></span>  | <span data-ttu-id="e38ab-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e38ab-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fa7d2-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="fa7d2-127">Request body</span></span>
-<span data-ttu-id="fa7d2-128">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e38ab-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e38ab-127">Request body</span></span>
+<span data-ttu-id="e38ab-128">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e38ab-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fa7d2-129">响应</span><span class="sxs-lookup"><span data-stu-id="fa7d2-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e38ab-129">响应</span><span class="sxs-lookup"><span data-stu-id="e38ab-129">Response</span></span>
 
-<span data-ttu-id="fa7d2-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-130">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="e38ab-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e38ab-130">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa7d2-131">示例</span><span class="sxs-lookup"><span data-stu-id="fa7d2-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fa7d2-132">请求</span><span class="sxs-lookup"><span data-stu-id="fa7d2-132">Request</span></span>
-<span data-ttu-id="fa7d2-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e38ab-131">示例</span><span class="sxs-lookup"><span data-stu-id="e38ab-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e38ab-132">请求</span><span class="sxs-lookup"><span data-stu-id="e38ab-132">Request</span></span>
+<span data-ttu-id="e38ab-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e38ab-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_orgcontact"
@@ -58,9 +60,9 @@ Content-length: 30
   }
 }
 ```
-<span data-ttu-id="fa7d2-134">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-134">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="fa7d2-135">响应</span><span class="sxs-lookup"><span data-stu-id="fa7d2-135">Response</span></span>
-<span data-ttu-id="fa7d2-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa7d2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e38ab-134">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e38ab-134">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="e38ab-135">响应</span><span class="sxs-lookup"><span data-stu-id="e38ab-135">Response</span></span>
+<span data-ttu-id="e38ab-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e38ab-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

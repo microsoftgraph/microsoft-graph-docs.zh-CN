@@ -2,31 +2,32 @@
 title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
-ms.openlocfilehash: d9468034f3a98e949eeb9f2da28c4a74c42cd991
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 30e7ee53e6546d6c70e3d576e0e2eb57965cf46f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979857"
 ---
-# <a name="delete-a-historyitem"></a><span data-ttu-id="80fe3-103">删除 historyItem</span><span class="sxs-lookup"><span data-stu-id="80fe3-103">Delete a historyItem</span></span>
+# <a name="delete-a-historyitem"></a><span data-ttu-id="03c25-103">删除 historyItem</span><span class="sxs-lookup"><span data-stu-id="03c25-103">Delete a historyItem</span></span>
 
-> <span data-ttu-id="80fe3-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="80fe3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="80fe3-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="80fe3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="03c25-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="03c25-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="03c25-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="03c25-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="80fe3-106">删除现有用户活动的现有历史记录项。</span><span class="sxs-lookup"><span data-stu-id="80fe3-106">Delete an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="03c25-106">删除现有用户活动的现有历史记录项。</span><span class="sxs-lookup"><span data-stu-id="03c25-106">Delete an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="80fe3-107">权限</span><span class="sxs-lookup"><span data-stu-id="80fe3-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="03c25-107">权限</span><span class="sxs-lookup"><span data-stu-id="03c25-107">Permissions</span></span>
 
-<span data-ttu-id="80fe3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="80fe3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="03c25-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="03c25-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="80fe3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="80fe3-110">Permission type</span></span>      | <span data-ttu-id="80fe3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="80fe3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="03c25-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="03c25-110">Permission type</span></span>      | <span data-ttu-id="03c25-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="03c25-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="80fe3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="80fe3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="80fe3-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="80fe3-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="80fe3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="80fe3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80fe3-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="80fe3-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="80fe3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="80fe3-116">Application</span></span> | <span data-ttu-id="80fe3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="80fe3-117">Not supported.</span></span> |
+|<span data-ttu-id="03c25-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="03c25-112">Delegated (work or school account)</span></span> | <span data-ttu-id="03c25-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="03c25-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="03c25-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="03c25-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03c25-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="03c25-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="03c25-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="03c25-116">Application</span></span> | <span data-ttu-id="03c25-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="03c25-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="80fe3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="80fe3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="03c25-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="03c25-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,25 +35,25 @@ ms.locfileid: "27834977"
 DELETE /me/activities/{id}/historyItems/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="80fe3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="80fe3-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="03c25-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="03c25-119">Request headers</span></span>
 
-|<span data-ttu-id="80fe3-120">名称</span><span class="sxs-lookup"><span data-stu-id="80fe3-120">Name</span></span> | <span data-ttu-id="80fe3-121">类型</span><span class="sxs-lookup"><span data-stu-id="80fe3-121">Type</span></span> | <span data-ttu-id="80fe3-122">说明</span><span class="sxs-lookup"><span data-stu-id="80fe3-122">Description</span></span>|
+|<span data-ttu-id="03c25-120">名称</span><span class="sxs-lookup"><span data-stu-id="03c25-120">Name</span></span> | <span data-ttu-id="03c25-121">类型</span><span class="sxs-lookup"><span data-stu-id="03c25-121">Type</span></span> | <span data-ttu-id="03c25-122">说明</span><span class="sxs-lookup"><span data-stu-id="03c25-122">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="80fe3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="80fe3-123">Authorization</span></span> | <span data-ttu-id="80fe3-124">string</span><span class="sxs-lookup"><span data-stu-id="80fe3-124">string</span></span> | <span data-ttu-id="80fe3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="80fe3-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="03c25-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="03c25-123">Authorization</span></span> | <span data-ttu-id="03c25-124">string</span><span class="sxs-lookup"><span data-stu-id="03c25-124">string</span></span> | <span data-ttu-id="03c25-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="03c25-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="80fe3-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="80fe3-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="03c25-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="03c25-127">Request body</span></span>
 
-<span data-ttu-id="80fe3-128">没有请求正文中。</span><span class="sxs-lookup"><span data-stu-id="80fe3-128">No request body.</span></span>
+<span data-ttu-id="03c25-128">没有请求正文中。</span><span class="sxs-lookup"><span data-stu-id="03c25-128">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="80fe3-129">响应</span><span class="sxs-lookup"><span data-stu-id="80fe3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="03c25-129">响应</span><span class="sxs-lookup"><span data-stu-id="03c25-129">Response</span></span>
 
-<span data-ttu-id="80fe3-130">如果成功，此方法返回`204 No Content`如果历史记录项已删除的响应代码。</span><span class="sxs-lookup"><span data-stu-id="80fe3-130">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
+<span data-ttu-id="03c25-130">如果成功，此方法返回`204 No Content`如果历史记录项已删除的响应代码。</span><span class="sxs-lookup"><span data-stu-id="03c25-130">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80fe3-131">示例</span><span class="sxs-lookup"><span data-stu-id="80fe3-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="03c25-131">示例</span><span class="sxs-lookup"><span data-stu-id="03c25-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="80fe3-132">请求</span><span class="sxs-lookup"><span data-stu-id="80fe3-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="03c25-132">请求</span><span class="sxs-lookup"><span data-stu-id="03c25-132">Request</span></span>
 
-<span data-ttu-id="80fe3-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="80fe3-133">Here is an example of the request.</span></span>
+<span data-ttu-id="03c25-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="03c25-133">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -63,9 +64,9 @@ DELETE /me/activities/{id}/historyItems/{id}
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 ```
 
-##### <a name="response"></a><span data-ttu-id="80fe3-134">响应</span><span class="sxs-lookup"><span data-stu-id="80fe3-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="03c25-134">响应</span><span class="sxs-lookup"><span data-stu-id="03c25-134">Response</span></span>
 
-<span data-ttu-id="80fe3-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="80fe3-135">Here is an example of the response.</span></span>
+<span data-ttu-id="03c25-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="03c25-135">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

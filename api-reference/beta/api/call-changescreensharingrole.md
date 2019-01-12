@@ -3,55 +3,56 @@ title: 呼叫： changeScreenSharingRole
 description: 启动和停止共享的调用中的屏幕。 此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c7463f54ab5bfc74a55ed7dc5360a4f16876116c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976224"
 ---
-# <a name="call-changescreensharingrole"></a><span data-ttu-id="f4502-104">呼叫： changeScreenSharingRole</span><span class="sxs-lookup"><span data-stu-id="f4502-104">call: changeScreenSharingRole</span></span>
+# <a name="call-changescreensharingrole"></a><span data-ttu-id="70c9f-104">呼叫： changeScreenSharingRole</span><span class="sxs-lookup"><span data-stu-id="70c9f-104">call: changeScreenSharingRole</span></span>
 
-> <span data-ttu-id="f4502-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f4502-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f4502-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f4502-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="70c9f-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="70c9f-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="70c9f-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="70c9f-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f4502-107">启动和停止共享的调用中的屏幕。</span><span class="sxs-lookup"><span data-stu-id="f4502-107">Start and stop sharing screen in the call.</span></span> <span data-ttu-id="f4502-108">此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。</span><span class="sxs-lookup"><span data-stu-id="f4502-108">This API is used to allow applications to share screen content with the participants of a call or meeting.</span></span>
+<span data-ttu-id="70c9f-107">启动和停止共享的调用中的屏幕。</span><span class="sxs-lookup"><span data-stu-id="70c9f-107">Start and stop sharing screen in the call.</span></span> <span data-ttu-id="70c9f-108">此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。</span><span class="sxs-lookup"><span data-stu-id="70c9f-108">This API is used to allow applications to share screen content with the participants of a call or meeting.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4502-109">权限</span><span class="sxs-lookup"><span data-stu-id="f4502-109">Permissions</span></span>
-<span data-ttu-id="f4502-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4502-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="70c9f-109">权限</span><span class="sxs-lookup"><span data-stu-id="70c9f-109">Permissions</span></span>
+<span data-ttu-id="70c9f-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70c9f-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f4502-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4502-112">Permission type</span></span>                        | <span data-ttu-id="f4502-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4502-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="70c9f-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="70c9f-112">Permission type</span></span>                        | <span data-ttu-id="70c9f-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="70c9f-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f4502-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4502-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4502-115">不支持</span><span class="sxs-lookup"><span data-stu-id="f4502-115">Not Supported</span></span>                               |
-| <span data-ttu-id="f4502-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4502-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4502-117">不支持</span><span class="sxs-lookup"><span data-stu-id="f4502-117">Not Supported</span></span>                               |
-| <span data-ttu-id="f4502-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4502-118">Application</span></span>                            | <span data-ttu-id="f4502-119">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="f4502-119">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="70c9f-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70c9f-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="70c9f-115">不支持</span><span class="sxs-lookup"><span data-stu-id="70c9f-115">Not Supported</span></span>                               |
+| <span data-ttu-id="70c9f-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70c9f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70c9f-117">不支持</span><span class="sxs-lookup"><span data-stu-id="70c9f-117">Not Supported</span></span>                               |
+| <span data-ttu-id="70c9f-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="70c9f-118">Application</span></span>                            | <span data-ttu-id="70c9f-119">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="70c9f-119">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="f4502-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4502-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70c9f-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70c9f-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/changeScreenSharingRole
 POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f4502-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4502-121">Request headers</span></span>
-| <span data-ttu-id="f4502-122">名称</span><span class="sxs-lookup"><span data-stu-id="f4502-122">Name</span></span>          | <span data-ttu-id="f4502-123">说明</span><span class="sxs-lookup"><span data-stu-id="f4502-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="70c9f-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="70c9f-121">Request headers</span></span>
+| <span data-ttu-id="70c9f-122">名称</span><span class="sxs-lookup"><span data-stu-id="70c9f-122">Name</span></span>          | <span data-ttu-id="70c9f-123">说明</span><span class="sxs-lookup"><span data-stu-id="70c9f-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f4502-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4502-124">Authorization</span></span> | <span data-ttu-id="f4502-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4502-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="70c9f-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="70c9f-124">Authorization</span></span> | <span data-ttu-id="70c9f-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="70c9f-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4502-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4502-127">Request body</span></span>
-<span data-ttu-id="f4502-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f4502-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70c9f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="70c9f-127">Request body</span></span>
+<span data-ttu-id="70c9f-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="70c9f-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f4502-129">参数</span><span class="sxs-lookup"><span data-stu-id="f4502-129">Parameter</span></span>      | <span data-ttu-id="f4502-130">类型</span><span class="sxs-lookup"><span data-stu-id="f4502-130">Type</span></span>    |<span data-ttu-id="f4502-131">Description</span><span class="sxs-lookup"><span data-stu-id="f4502-131">Description</span></span>|
+| <span data-ttu-id="70c9f-129">参数</span><span class="sxs-lookup"><span data-stu-id="70c9f-129">Parameter</span></span>      | <span data-ttu-id="70c9f-130">类型</span><span class="sxs-lookup"><span data-stu-id="70c9f-130">Type</span></span>    |<span data-ttu-id="70c9f-131">Description</span><span class="sxs-lookup"><span data-stu-id="70c9f-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f4502-132">role</span><span class="sxs-lookup"><span data-stu-id="f4502-132">role</span></span>|<span data-ttu-id="f4502-133">字符串</span><span class="sxs-lookup"><span data-stu-id="f4502-133">String</span></span>|<span data-ttu-id="f4502-134">可能的值为: 查看、 共享</span><span class="sxs-lookup"><span data-stu-id="f4502-134">Possible values are: 'Viewer', 'Sharer'</span></span>|
+|<span data-ttu-id="70c9f-132">role</span><span class="sxs-lookup"><span data-stu-id="70c9f-132">role</span></span>|<span data-ttu-id="70c9f-133">字符串</span><span class="sxs-lookup"><span data-stu-id="70c9f-133">String</span></span>|<span data-ttu-id="70c9f-134">可能的值为: 查看、 共享</span><span class="sxs-lookup"><span data-stu-id="70c9f-134">Possible values are: 'Viewer', 'Sharer'</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f4502-135">响应</span><span class="sxs-lookup"><span data-stu-id="f4502-135">Response</span></span>
-<span data-ttu-id="f4502-136">返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="f4502-136">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="70c9f-135">响应</span><span class="sxs-lookup"><span data-stu-id="70c9f-135">Response</span></span>
+<span data-ttu-id="70c9f-136">返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="70c9f-136">Returns `202 Accepted` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4502-137">示例</span><span class="sxs-lookup"><span data-stu-id="f4502-137">Example</span></span>
-<span data-ttu-id="f4502-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="f4502-138">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="70c9f-137">示例</span><span class="sxs-lookup"><span data-stu-id="70c9f-137">Example</span></span>
+<span data-ttu-id="70c9f-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="70c9f-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f4502-139">请求</span><span class="sxs-lookup"><span data-stu-id="f4502-139">Request</span></span>
-<span data-ttu-id="f4502-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="f4502-140">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="70c9f-139">请求</span><span class="sxs-lookup"><span data-stu-id="70c9f-139">Request</span></span>
+<span data-ttu-id="70c9f-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="70c9f-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -67,8 +68,8 @@ Content-Length: 24
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f4502-141">响应</span><span class="sxs-lookup"><span data-stu-id="f4502-141">Response</span></span>
-<span data-ttu-id="f4502-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f4502-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="70c9f-141">响应</span><span class="sxs-lookup"><span data-stu-id="70c9f-141">Response</span></span>
+<span data-ttu-id="70c9f-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="70c9f-142">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

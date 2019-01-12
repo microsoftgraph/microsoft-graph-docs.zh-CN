@@ -2,28 +2,30 @@
 title: 'Range: clear'
 description: 清除范围值、格式、填充、边框等。
 localization_priority: Normal
-ms.openlocfilehash: 60667f8bf8ef8ef5e12af929ecab61b989359242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a32c21763c18371d3f0efe649b795135d4752b87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991627"
 ---
-# <a name="range-clear"></a><span data-ttu-id="60e59-103">Range: clear</span><span class="sxs-lookup"><span data-stu-id="60e59-103">Range: clear</span></span>
+# <a name="range-clear"></a><span data-ttu-id="f40a1-103">Range: clear</span><span class="sxs-lookup"><span data-stu-id="f40a1-103">Range: clear</span></span>
 
-> <span data-ttu-id="60e59-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="60e59-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="60e59-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="60e59-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f40a1-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f40a1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f40a1-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f40a1-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="60e59-106">清除范围值、格式、填充、边框等。</span><span class="sxs-lookup"><span data-stu-id="60e59-106">Clear range values, format, fill, border, etc.</span></span>
-## <a name="permissions"></a><span data-ttu-id="60e59-107">权限</span><span class="sxs-lookup"><span data-stu-id="60e59-107">Permissions</span></span>
-<span data-ttu-id="60e59-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="60e59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f40a1-106">清除范围值、格式、填充、边框等。</span><span class="sxs-lookup"><span data-stu-id="f40a1-106">Clear range values, format, fill, border, etc.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f40a1-107">权限</span><span class="sxs-lookup"><span data-stu-id="f40a1-107">Permissions</span></span>
+<span data-ttu-id="f40a1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f40a1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="60e59-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="60e59-110">Permission type</span></span>      | <span data-ttu-id="60e59-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="60e59-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f40a1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f40a1-110">Permission type</span></span>      | <span data-ttu-id="f40a1-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f40a1-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="60e59-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="60e59-112">Delegated (work or school account)</span></span> | <span data-ttu-id="60e59-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="60e59-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="60e59-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="60e59-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60e59-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="60e59-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="60e59-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="60e59-116">Application</span></span> | <span data-ttu-id="60e59-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="60e59-117">Not supported.</span></span> |
+|<span data-ttu-id="f40a1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f40a1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f40a1-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f40a1-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f40a1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f40a1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f40a1-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f40a1-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f40a1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f40a1-116">Application</span></span> | <span data-ttu-id="f40a1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="f40a1-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="60e59-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="60e59-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f40a1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f40a1-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/clear
@@ -31,27 +33,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="60e59-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="60e59-119">Request headers</span></span>
-| <span data-ttu-id="60e59-120">名称</span><span class="sxs-lookup"><span data-stu-id="60e59-120">Name</span></span>       | <span data-ttu-id="60e59-121">说明</span><span class="sxs-lookup"><span data-stu-id="60e59-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f40a1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f40a1-119">Request headers</span></span>
+| <span data-ttu-id="f40a1-120">名称</span><span class="sxs-lookup"><span data-stu-id="f40a1-120">Name</span></span>       | <span data-ttu-id="f40a1-121">说明</span><span class="sxs-lookup"><span data-stu-id="f40a1-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="60e59-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="60e59-122">Authorization</span></span>  | <span data-ttu-id="60e59-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="60e59-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="60e59-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="60e59-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="60e59-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="60e59-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f40a1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f40a1-122">Authorization</span></span>  | <span data-ttu-id="f40a1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f40a1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f40a1-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f40a1-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="f40a1-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="f40a1-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="60e59-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="60e59-128">Request body</span></span>
-<span data-ttu-id="60e59-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="60e59-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f40a1-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="f40a1-128">Request body</span></span>
+<span data-ttu-id="f40a1-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f40a1-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="60e59-130">参数</span><span class="sxs-lookup"><span data-stu-id="60e59-130">Parameter</span></span>    | <span data-ttu-id="60e59-131">类型</span><span class="sxs-lookup"><span data-stu-id="60e59-131">Type</span></span>   |<span data-ttu-id="60e59-132">说明</span><span class="sxs-lookup"><span data-stu-id="60e59-132">Description</span></span>|
+| <span data-ttu-id="f40a1-130">参数</span><span class="sxs-lookup"><span data-stu-id="f40a1-130">Parameter</span></span>    | <span data-ttu-id="f40a1-131">类型</span><span class="sxs-lookup"><span data-stu-id="f40a1-131">Type</span></span>   |<span data-ttu-id="f40a1-132">说明</span><span class="sxs-lookup"><span data-stu-id="f40a1-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="60e59-133">applyTo</span><span class="sxs-lookup"><span data-stu-id="60e59-133">applyTo</span></span>|<span data-ttu-id="60e59-134">string</span><span class="sxs-lookup"><span data-stu-id="60e59-134">string</span></span>|<span data-ttu-id="60e59-p105">可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。</span><span class="sxs-lookup"><span data-stu-id="60e59-p105">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
+|<span data-ttu-id="f40a1-133">applyTo</span><span class="sxs-lookup"><span data-stu-id="f40a1-133">applyTo</span></span>|<span data-ttu-id="f40a1-134">string</span><span class="sxs-lookup"><span data-stu-id="f40a1-134">string</span></span>|<span data-ttu-id="f40a1-p105">可选。确定清除操作的类型。可能的值是：`All`、`Formats`、`Contents`。</span><span class="sxs-lookup"><span data-stu-id="f40a1-p105">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="60e59-138">响应</span><span class="sxs-lookup"><span data-stu-id="60e59-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f40a1-138">响应</span><span class="sxs-lookup"><span data-stu-id="f40a1-138">Response</span></span>
 
-<span data-ttu-id="60e59-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="60e59-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f40a1-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f40a1-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="60e59-141">示例</span><span class="sxs-lookup"><span data-stu-id="60e59-141">Example</span></span>
-<span data-ttu-id="60e59-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="60e59-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="60e59-143">请求</span><span class="sxs-lookup"><span data-stu-id="60e59-143">Request</span></span>
-<span data-ttu-id="60e59-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="60e59-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f40a1-141">示例</span><span class="sxs-lookup"><span data-stu-id="f40a1-141">Example</span></span>
+<span data-ttu-id="f40a1-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f40a1-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f40a1-143">请求</span><span class="sxs-lookup"><span data-stu-id="f40a1-143">Request</span></span>
+<span data-ttu-id="f40a1-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f40a1-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -66,8 +68,8 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="60e59-145">响应</span><span class="sxs-lookup"><span data-stu-id="60e59-145">Response</span></span>
-<span data-ttu-id="60e59-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="60e59-146">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f40a1-145">响应</span><span class="sxs-lookup"><span data-stu-id="f40a1-145">Response</span></span>
+<span data-ttu-id="f40a1-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f40a1-146">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,26 +2,28 @@
 title: plannerChecklistItems 资源类型
 description: '**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是任务详细信息对象的组成部分。该属性值对中的值是 checklistItem 对象。'
 localization_priority: Normal
-ms.openlocfilehash: f958289e22ccc7515fe0e79145bba5fb5188e660
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: a507f2f0096789294322f9911d6bec4c7e7ee9d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858623"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972360"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="9c04a-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="9c04a-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="90a34-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="90a34-106">plannerChecklistItems resource type</span></span>
 
-> <span data-ttu-id="9c04a-107">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="9c04a-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9c04a-108">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="9c04a-108">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="90a34-107">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="90a34-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="90a34-108">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="90a34-108">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="9c04a-p103">**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9c04a-p103">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="90a34-p103">**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="90a34-p103">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9c04a-113">属性</span><span class="sxs-lookup"><span data-stu-id="9c04a-113">Properties</span></span>
-<span data-ttu-id="9c04a-p104">开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。</span><span class="sxs-lookup"><span data-stu-id="9c04a-p104">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="90a34-113">属性</span><span class="sxs-lookup"><span data-stu-id="90a34-113">Properties</span></span>
+<span data-ttu-id="90a34-p104">开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。</span><span class="sxs-lookup"><span data-stu-id="90a34-p104">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9c04a-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9c04a-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="90a34-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="90a34-118">JSON representation</span></span>
 
-<span data-ttu-id="9c04a-119">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9c04a-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="90a34-119">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="90a34-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +45,7 @@ ms.locfileid: "27858623"
   }
 }
 ```
-<span data-ttu-id="9c04a-120">// 示例</span><span class="sxs-lookup"><span data-stu-id="9c04a-120">// Example</span></span>
+<span data-ttu-id="90a34-120">// 示例</span><span class="sxs-lookup"><span data-stu-id="90a34-120">// Example</span></span>
 
 ```json
 {
