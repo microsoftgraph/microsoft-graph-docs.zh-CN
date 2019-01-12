@@ -2,49 +2,51 @@
 title: 'educationAssignment: getResourcesFolderUrl'
 description: '此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。  '
 localization_priority: Normal
-ms.openlocfilehash: 4352fb051573f91ef93e781a1a06ba984b17a9ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: f46bbf9c47ca9cd4396883d106599f94374aad4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887386"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984456"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a><span data-ttu-id="14ef5-103">educationAssignment: getResourcesFolderUrl</span><span class="sxs-lookup"><span data-stu-id="14ef5-103">educationAssignment: getResourcesFolderUrl</span></span>
+# <a name="educationassignment-getresourcesfolderurl"></a><span data-ttu-id="a67fd-103">educationAssignment: getResourcesFolderUrl</span><span class="sxs-lookup"><span data-stu-id="a67fd-103">educationAssignment: getResourcesFolderUrl</span></span>
 
-> <span data-ttu-id="14ef5-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="14ef5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="14ef5-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="14ef5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a67fd-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a67fd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a67fd-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a67fd-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="14ef5-106">此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。</span><span class="sxs-lookup"><span data-stu-id="14ef5-106">This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.</span></span>  
-<span data-ttu-id="14ef5-107">请注意，文件必须位于此文件夹中以添加为资源。</span><span class="sxs-lookup"><span data-stu-id="14ef5-107">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="14ef5-108">仅在类中的教师可以确定要上载的文件。</span><span class="sxs-lookup"><span data-stu-id="14ef5-108">Only a teacher in the class can determine what files to upload.</span></span> 
+<span data-ttu-id="a67fd-106">此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。</span><span class="sxs-lookup"><span data-stu-id="a67fd-106">This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.</span></span>  
+<span data-ttu-id="a67fd-107">请注意，文件必须位于此文件夹中以添加为资源。</span><span class="sxs-lookup"><span data-stu-id="a67fd-107">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="a67fd-108">仅在类中的教师可以确定要上载的文件。</span><span class="sxs-lookup"><span data-stu-id="a67fd-108">Only a teacher in the class can determine what files to upload.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="14ef5-109">权限</span><span class="sxs-lookup"><span data-stu-id="14ef5-109">Permissions</span></span>
-<span data-ttu-id="14ef5-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="14ef5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a67fd-109">权限</span><span class="sxs-lookup"><span data-stu-id="a67fd-109">Permissions</span></span>
+<span data-ttu-id="a67fd-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a67fd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14ef5-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="14ef5-112">Permission type</span></span>      | <span data-ttu-id="14ef5-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="14ef5-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a67fd-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="a67fd-112">Permission type</span></span>      | <span data-ttu-id="a67fd-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a67fd-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14ef5-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="14ef5-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="14ef5-115">EduAssignments.ReadBasic EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="14ef5-115">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
-|<span data-ttu-id="14ef5-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="14ef5-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="14ef5-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="14ef5-117">Not supported.</span></span>  |
-|<span data-ttu-id="14ef5-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="14ef5-118">Application</span></span> | <span data-ttu-id="14ef5-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="14ef5-119">Not supported.</span></span> | 
+|<span data-ttu-id="a67fd-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a67fd-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="a67fd-115">EduAssignments.ReadBasic EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="a67fd-115">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
+|<span data-ttu-id="a67fd-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a67fd-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a67fd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a67fd-117">Not supported.</span></span>  |
+|<span data-ttu-id="a67fd-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="a67fd-118">Application</span></span> | <span data-ttu-id="a67fd-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="a67fd-119">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="14ef5-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="14ef5-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a67fd-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a67fd-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="14ef5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="14ef5-121">Request headers</span></span>
-| <span data-ttu-id="14ef5-122">标头</span><span class="sxs-lookup"><span data-stu-id="14ef5-122">Header</span></span>       | <span data-ttu-id="14ef5-123">值</span><span class="sxs-lookup"><span data-stu-id="14ef5-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a67fd-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="a67fd-121">Request headers</span></span>
+| <span data-ttu-id="a67fd-122">标头</span><span class="sxs-lookup"><span data-stu-id="a67fd-122">Header</span></span>       | <span data-ttu-id="a67fd-123">值</span><span class="sxs-lookup"><span data-stu-id="a67fd-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="14ef5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="14ef5-124">Authorization</span></span>  | <span data-ttu-id="14ef5-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="14ef5-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a67fd-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a67fd-124">Authorization</span></span>  | <span data-ttu-id="a67fd-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a67fd-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="14ef5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="14ef5-127">Request body</span></span>
-<span data-ttu-id="14ef5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="14ef5-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="14ef5-129">响应</span><span class="sxs-lookup"><span data-stu-id="14ef5-129">Response</span></span>
-<span data-ttu-id="14ef5-130">如果成功，此方法返回 `200 Ok` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="14ef5-130">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="14ef5-131">正文将包含在其中放入所有基于文件的资源文件夹的 OneDrive URL。</span><span class="sxs-lookup"><span data-stu-id="14ef5-131">The body will contain the OneDrive URL of a folder in which to put all file-based resources.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a67fd-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a67fd-127">Request body</span></span>
+<span data-ttu-id="a67fd-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a67fd-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="a67fd-129">响应</span><span class="sxs-lookup"><span data-stu-id="a67fd-129">Response</span></span>
+<span data-ttu-id="a67fd-130">如果成功，此方法返回 `200 Ok` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a67fd-130">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="a67fd-131">正文将包含在其中放入所有基于文件的资源文件夹的 OneDrive URL。</span><span class="sxs-lookup"><span data-stu-id="a67fd-131">The body will contain the OneDrive URL of a folder in which to put all file-based resources.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14ef5-132">示例</span><span class="sxs-lookup"><span data-stu-id="14ef5-132">Example</span></span>
-<span data-ttu-id="14ef5-133">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="14ef5-133">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="14ef5-134">请求</span><span class="sxs-lookup"><span data-stu-id="14ef5-134">Request</span></span>
-<span data-ttu-id="14ef5-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="14ef5-135">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="a67fd-132">示例</span><span class="sxs-lookup"><span data-stu-id="a67fd-132">Example</span></span>
+<span data-ttu-id="a67fd-133">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a67fd-133">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a67fd-134">请求</span><span class="sxs-lookup"><span data-stu-id="a67fd-134">Request</span></span>
+<span data-ttu-id="a67fd-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a67fd-135">The following is an example of a request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -53,8 +55,8 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 
-##### <a name="response"></a><span data-ttu-id="14ef5-136">响应</span><span class="sxs-lookup"><span data-stu-id="14ef5-136">Response</span></span>
-<span data-ttu-id="14ef5-137">下面是响应的示例。</span><span class="sxs-lookup"><span data-stu-id="14ef5-137">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a67fd-136">响应</span><span class="sxs-lookup"><span data-stu-id="a67fd-136">Response</span></span>
+<span data-ttu-id="a67fd-137">下面是响应的示例。</span><span class="sxs-lookup"><span data-stu-id="a67fd-137">The following is an example of a response.</span></span> 
 
 <!-- {
   "blockType": "response",

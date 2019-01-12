@@ -3,70 +3,71 @@ title: 如何通过 Microsoft Intune 保护公司的应用数据
 description: Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 03b0db7a2bc2b79edf0156939b9ddb8e89f84dbd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85c002b9b9a8271b47209ca11bb27eb2885815a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984379"
 ---
-# <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a><span data-ttu-id="69cdb-103">如何通过 Microsoft Intune 保护公司的应用数据</span><span class="sxs-lookup"><span data-stu-id="69cdb-103">How to protect your company app data with Microsoft Intune</span></span>
+# <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a><span data-ttu-id="b6157-103">如何通过 Microsoft Intune 保护公司的应用数据</span><span class="sxs-lookup"><span data-stu-id="b6157-103">How to protect your company app data with Microsoft Intune</span></span>
 
-> <span data-ttu-id="69cdb-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="69cdb-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
+> <span data-ttu-id="b6157-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="b6157-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
 
-<span data-ttu-id="69cdb-105">Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。</span><span class="sxs-lookup"><span data-stu-id="69cdb-105">Microsoft Intune app protection policies help protect your company data and prevent data loss.</span></span>
+<span data-ttu-id="b6157-105">Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。</span><span class="sxs-lookup"><span data-stu-id="b6157-105">Microsoft Intune app protection policies help protect your company data and prevent data loss.</span></span>
 
-<span data-ttu-id="69cdb-106">你可以使用 Intune 应用保护策略帮助保护公司的数据。</span><span class="sxs-lookup"><span data-stu-id="69cdb-106">You can use Intune app protection policies to help protect your company’s data.</span></span> <span data-ttu-id="69cdb-107">由于 Intune 应用保护策略可以独立于移动设备管理 (MDM) 解决方案使用，无论是否在设备管理解决方案中注册设备，你都可以保护公司的数据。</span><span class="sxs-lookup"><span data-stu-id="69cdb-107">Because Intune app protection policies can be used independent of any mobile-device management (MDM) solution, you protect your company’s data with or without enrolling devices in a device management solution.</span></span> <span data-ttu-id="69cdb-108">通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。</span><span class="sxs-lookup"><span data-stu-id="69cdb-108">By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.</span></span>
+<span data-ttu-id="b6157-106">你可以使用 Intune 应用保护策略帮助保护公司的数据。</span><span class="sxs-lookup"><span data-stu-id="b6157-106">You can use Intune app protection policies to help protect your company’s data.</span></span> <span data-ttu-id="b6157-107">由于 Intune 应用保护策略可以独立于移动设备管理 (MDM) 解决方案使用，无论是否在设备管理解决方案中注册设备，你都可以保护公司的数据。</span><span class="sxs-lookup"><span data-stu-id="b6157-107">Because Intune app protection policies can be used independent of any mobile-device management (MDM) solution, you protect your company’s data with or without enrolling devices in a device management solution.</span></span> <span data-ttu-id="b6157-108">通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。</span><span class="sxs-lookup"><span data-stu-id="b6157-108">By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.</span></span>
 
-<span data-ttu-id="69cdb-109">以下 Graph 资源可用于在 Intune 中管理应用保护策略：</span><span class="sxs-lookup"><span data-stu-id="69cdb-109">The following Graph resources are available to manage app protection polices in Intune:</span></span>  
+<span data-ttu-id="b6157-109">以下 Graph 资源可用于在 Intune 中管理应用保护策略：</span><span class="sxs-lookup"><span data-stu-id="b6157-109">The following Graph resources are available to manage app protection polices in Intune:</span></span>  
 
-- [<span data-ttu-id="69cdb-110">Android 管理的应用保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-110">Android managed app protection</span></span>](intune-mam-androidmanagedappprotection.md)
-- [<span data-ttu-id="69cdb-111">Android 管理的应用注册</span><span class="sxs-lookup"><span data-stu-id="69cdb-111">Android managed app registration</span></span>](intune-mam-androidmanagedappregistration.md)
-- [<span data-ttu-id="69cdb-112">Android 移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="69cdb-112">Android mobile app identifier</span></span>](intune-mam-androidmobileappidentifier.md)
-- [<span data-ttu-id="69cdb-113">应用程序类型</span><span class="sxs-lookup"><span data-stu-id="69cdb-113">Application type</span></span>](intune-wip-applicationtype.md)
-- [<span data-ttu-id="69cdb-114">默认托管的应用保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-114">Default managed app protection</span></span>](intune-mam-defaultmanagedappprotection.md)
-- [<span data-ttu-id="69cdb-115">iOS 管理的应用保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-115">iOS managed app protection</span></span>](intune-mam-iosmanagedappprotection.md)
-- [<span data-ttu-id="69cdb-116">iOS 管理的应用注册</span><span class="sxs-lookup"><span data-stu-id="69cdb-116">iOS managed app registration</span></span>](intune-mam-iosmanagedappregistration.md)
-- [<span data-ttu-id="69cdb-117">iOS 移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="69cdb-117">iOS mobile app identifier</span></span>](intune-mam-iosmobileappidentifier.md)
-- [<span data-ttu-id="69cdb-118">IP 范围</span><span class="sxs-lookup"><span data-stu-id="69cdb-118">IP range</span></span>](intune-mam-iprange.md)
-- [<span data-ttu-id="69cdb-119">IPv4 范围</span><span class="sxs-lookup"><span data-stu-id="69cdb-119">IPv4 range</span></span>](intune-mam-ipv4range.md)
-- [<span data-ttu-id="69cdb-120">IPv6 范围</span><span class="sxs-lookup"><span data-stu-id="69cdb-120">IPv6 range</span></span>](intune-mam-ipv6range.md)
-- [<span data-ttu-id="69cdb-121">JSON</span><span class="sxs-lookup"><span data-stu-id="69cdb-121">JSON</span></span>](intune-mam-json.md)
-- [<span data-ttu-id="69cdb-122">键/值对</span><span class="sxs-lookup"><span data-stu-id="69cdb-122">Key/value pair</span></span>](intune-mam-keyvaluepair.md)
-- [<span data-ttu-id="69cdb-123">托管应用程序剪贴板共享级别</span><span class="sxs-lookup"><span data-stu-id="69cdb-123">Managed app clipboard sharing level</span></span>](intune-mam-managedappclipboardsharinglevel.md)
-- [<span data-ttu-id="69cdb-124">托管的应用配置</span><span class="sxs-lookup"><span data-stu-id="69cdb-124">Managed app configuration</span></span>](intune-mam-managedappconfiguration.md)
-- [<span data-ttu-id="69cdb-125">托管应用程序数据的加密类型</span><span class="sxs-lookup"><span data-stu-id="69cdb-125">Managed app data encryption type</span></span>](intune-mam-managedappdataencryptiontype.md)
-- [<span data-ttu-id="69cdb-126">托管的应用程序数据存储位置</span><span class="sxs-lookup"><span data-stu-id="69cdb-126">Managed app data storage location</span></span>](intune-mam-managedappdatastoragelocation.md)
-- [<span data-ttu-id="69cdb-127">托管的应用程序数据传输级别</span><span class="sxs-lookup"><span data-stu-id="69cdb-127">Managed app data transfer level</span></span>](intune-mam-managedappdatatransferlevel.md)
-- [<span data-ttu-id="69cdb-128">托管的应用诊断状态</span><span class="sxs-lookup"><span data-stu-id="69cdb-128">Managed app diagnostic status</span></span>](intune-mam-managedappdiagnosticstatus.md)
-- [<span data-ttu-id="69cdb-129">托管的应用程序标记原因</span><span class="sxs-lookup"><span data-stu-id="69cdb-129">Managed app flagged reason</span></span>](intune-mam-managedappflaggedreason.md)
-- [<span data-ttu-id="69cdb-130">托管的应用操作</span><span class="sxs-lookup"><span data-stu-id="69cdb-130">Managed app operation</span></span>](intune-mam-managedappoperation.md)
-- [<span data-ttu-id="69cdb-131">托管的应用程序 PIN 字符集。</span><span class="sxs-lookup"><span data-stu-id="69cdb-131">Managed app PIN character set</span></span>](intune-mam-managedapppincharacterset.md)
-- [<span data-ttu-id="69cdb-132">托管的应用策略</span><span class="sxs-lookup"><span data-stu-id="69cdb-132">Managed app policy</span></span>](intune-mam-managedapppolicy.md)
-- [<span data-ttu-id="69cdb-133">托管应用策略部署摘要</span><span class="sxs-lookup"><span data-stu-id="69cdb-133">Managed app policy deployment summary</span></span>](intune-mam-managedapppolicydeploymentsummary.md)
-- [<span data-ttu-id="69cdb-134">每个应用的托管应用策略部署摘要</span><span class="sxs-lookup"><span data-stu-id="69cdb-134">Managed app policy deployment summary per app</span></span>](intune-mam-managedapppolicydeploymentsummaryperapp.md)
-- [<span data-ttu-id="69cdb-135">托管的应用保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-135">Managed app protection</span></span>](intune-mam-managedappprotection.md)
-- [<span data-ttu-id="69cdb-136">托管应用注册</span><span class="sxs-lookup"><span data-stu-id="69cdb-136">Managed app registration</span></span>](intune-mam-managedappregistration.md)
-- [<span data-ttu-id="69cdb-137">托管应用状态</span><span class="sxs-lookup"><span data-stu-id="69cdb-137">Managed app status</span></span>](intune-mam-managedappstatus.md)
-- [<span data-ttu-id="69cdb-138">托管应用原始状态</span><span class="sxs-lookup"><span data-stu-id="69cdb-138">Managed app status raw</span></span>](intune-mam-managedappstatusraw.md)
-- [<span data-ttu-id="69cdb-139">托管移动应用</span><span class="sxs-lookup"><span data-stu-id="69cdb-139">Managed mobile app</span></span>](intune-mam-managedmobileapp.md)
-- [<span data-ttu-id="69cdb-140">MDM Windows 信息保护策略</span><span class="sxs-lookup"><span data-stu-id="69cdb-140">MDM windows information protection policy</span></span>](intune-mam-mdmwindowsinformationprotectionpolicy.md)
-- [<span data-ttu-id="69cdb-141">移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="69cdb-141">Mobile app identifier</span></span>](intune-mam-mobileappidentifier.md)
-- [<span data-ttu-id="69cdb-142">代理域</span><span class="sxs-lookup"><span data-stu-id="69cdb-142">Proxied domain</span></span>](intune-mam-proxieddomain.md)
-- [<span data-ttu-id="69cdb-143">目标托管应用配置</span><span class="sxs-lookup"><span data-stu-id="69cdb-143">Targeted managed app configuration</span></span>](intune-mam-targetedmanagedappconfiguration.md)
-- [<span data-ttu-id="69cdb-144">目标托管应用程序策略分配</span><span class="sxs-lookup"><span data-stu-id="69cdb-144">Targeted managed app policy assignment</span></span>](intune-mam-targetedmanagedapppolicyassignment.md)
-- [<span data-ttu-id="69cdb-145">目标托管应用保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-145">Targeted managed app protection</span></span>](intune-mam-targetedmanagedappprotection.md)
-- [<span data-ttu-id="69cdb-146">Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="69cdb-146">Windows information protection</span></span>](intune-mam-windowsinformationprotection.md)
-- [<span data-ttu-id="69cdb-147">Windows 信息保护应用</span><span class="sxs-lookup"><span data-stu-id="69cdb-147">Windows information protection app</span></span>](intune-mam-windowsinformationprotectionapp.md)
-- [<span data-ttu-id="69cdb-148">Windows 信息保护应用学习摘要</span><span class="sxs-lookup"><span data-stu-id="69cdb-148">Windows information protection app learning summary</span></span>](intune-wip-windowsinformationprotectionapplearningsummary.md)
-- [<span data-ttu-id="69cdb-149">Windows 信息保护应用锁定程序文件</span><span class="sxs-lookup"><span data-stu-id="69cdb-149">Windows information protection app locker file</span></span>](intune-mam-windowsinformationprotectionapplockerfile.md)
-- [<span data-ttu-id="69cdb-150">Windows 信息保护数据恢复证书</span><span class="sxs-lookup"><span data-stu-id="69cdb-150">Windows information protection data recovery certificate</span></span>](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
-- [<span data-ttu-id="69cdb-151">Windows 信息保护桌面应用</span><span class="sxs-lookup"><span data-stu-id="69cdb-151">Windows information protection desktop app</span></span>](intune-mam-windowsinformationprotectiondesktopapp.md)
-- [<span data-ttu-id="69cdb-152">Windows 的信息保护实施级别</span><span class="sxs-lookup"><span data-stu-id="69cdb-152">Windows information protection enforcement level</span></span>](intune-mam-windowsinformationprotectionenforcementlevel.md)
-- [<span data-ttu-id="69cdb-153">Windows 信息保护 IP 范围集合</span><span class="sxs-lookup"><span data-stu-id="69cdb-153">Windows information protection IP range collection</span></span>](intune-mam-windowsinformationprotectioniprangecollection.md)
-- [<span data-ttu-id="69cdb-154">Windows 信息保护网络学习摘要</span><span class="sxs-lookup"><span data-stu-id="69cdb-154">Windows information protection network learning summary</span></span>](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
-- [<span data-ttu-id="69cdb-155">Windows 信息保护 PIN 字符要求</span><span class="sxs-lookup"><span data-stu-id="69cdb-155">Windows information protection PIN character requirements</span></span>](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
-- [<span data-ttu-id="69cdb-156">Windows 信息保护策略</span><span class="sxs-lookup"><span data-stu-id="69cdb-156">Windows information protection policy</span></span>](intune-mam-windowsinformationprotectionpolicy.md)
-- [<span data-ttu-id="69cdb-157">Windows 信息保护代理域集合</span><span class="sxs-lookup"><span data-stu-id="69cdb-157">Windows information protection proxied domain collection</span></span>](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
-- [<span data-ttu-id="69cdb-158">Windows 信息保护资源集合</span><span class="sxs-lookup"><span data-stu-id="69cdb-158">Windows information protection resource collection</span></span>](intune-mam-windowsinformationprotectionresourcecollection.md)
-- [<span data-ttu-id="69cdb-159">Windows 信息保护应用商店应用</span><span class="sxs-lookup"><span data-stu-id="69cdb-159">Windows information protection store app</span></span>](intune-mam-windowsinformationprotectionstoreapp.md)
+- [<span data-ttu-id="b6157-110">Android 管理的应用保护</span><span class="sxs-lookup"><span data-stu-id="b6157-110">Android managed app protection</span></span>](intune-mam-androidmanagedappprotection.md)
+- [<span data-ttu-id="b6157-111">Android 管理的应用注册</span><span class="sxs-lookup"><span data-stu-id="b6157-111">Android managed app registration</span></span>](intune-mam-androidmanagedappregistration.md)
+- [<span data-ttu-id="b6157-112">Android 移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="b6157-112">Android mobile app identifier</span></span>](intune-mam-androidmobileappidentifier.md)
+- [<span data-ttu-id="b6157-113">应用程序类型</span><span class="sxs-lookup"><span data-stu-id="b6157-113">Application type</span></span>](intune-wip-applicationtype.md)
+- [<span data-ttu-id="b6157-114">默认托管的应用保护</span><span class="sxs-lookup"><span data-stu-id="b6157-114">Default managed app protection</span></span>](intune-mam-defaultmanagedappprotection.md)
+- [<span data-ttu-id="b6157-115">iOS 管理的应用保护</span><span class="sxs-lookup"><span data-stu-id="b6157-115">iOS managed app protection</span></span>](intune-mam-iosmanagedappprotection.md)
+- [<span data-ttu-id="b6157-116">iOS 管理的应用注册</span><span class="sxs-lookup"><span data-stu-id="b6157-116">iOS managed app registration</span></span>](intune-mam-iosmanagedappregistration.md)
+- [<span data-ttu-id="b6157-117">iOS 移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="b6157-117">iOS mobile app identifier</span></span>](intune-mam-iosmobileappidentifier.md)
+- [<span data-ttu-id="b6157-118">IP 范围</span><span class="sxs-lookup"><span data-stu-id="b6157-118">IP range</span></span>](intune-mam-iprange.md)
+- [<span data-ttu-id="b6157-119">IPv4 范围</span><span class="sxs-lookup"><span data-stu-id="b6157-119">IPv4 range</span></span>](intune-mam-ipv4range.md)
+- [<span data-ttu-id="b6157-120">IPv6 范围</span><span class="sxs-lookup"><span data-stu-id="b6157-120">IPv6 range</span></span>](intune-mam-ipv6range.md)
+- [<span data-ttu-id="b6157-121">JSON</span><span class="sxs-lookup"><span data-stu-id="b6157-121">JSON</span></span>](intune-mam-json.md)
+- [<span data-ttu-id="b6157-122">键/值对</span><span class="sxs-lookup"><span data-stu-id="b6157-122">Key/value pair</span></span>](intune-mam-keyvaluepair.md)
+- [<span data-ttu-id="b6157-123">托管应用程序剪贴板共享级别</span><span class="sxs-lookup"><span data-stu-id="b6157-123">Managed app clipboard sharing level</span></span>](intune-mam-managedappclipboardsharinglevel.md)
+- [<span data-ttu-id="b6157-124">托管的应用配置</span><span class="sxs-lookup"><span data-stu-id="b6157-124">Managed app configuration</span></span>](intune-mam-managedappconfiguration.md)
+- [<span data-ttu-id="b6157-125">托管应用程序数据的加密类型</span><span class="sxs-lookup"><span data-stu-id="b6157-125">Managed app data encryption type</span></span>](intune-mam-managedappdataencryptiontype.md)
+- [<span data-ttu-id="b6157-126">托管的应用程序数据存储位置</span><span class="sxs-lookup"><span data-stu-id="b6157-126">Managed app data storage location</span></span>](intune-mam-managedappdatastoragelocation.md)
+- [<span data-ttu-id="b6157-127">托管的应用程序数据传输级别</span><span class="sxs-lookup"><span data-stu-id="b6157-127">Managed app data transfer level</span></span>](intune-mam-managedappdatatransferlevel.md)
+- [<span data-ttu-id="b6157-128">托管的应用诊断状态</span><span class="sxs-lookup"><span data-stu-id="b6157-128">Managed app diagnostic status</span></span>](intune-mam-managedappdiagnosticstatus.md)
+- [<span data-ttu-id="b6157-129">托管的应用程序标记原因</span><span class="sxs-lookup"><span data-stu-id="b6157-129">Managed app flagged reason</span></span>](intune-mam-managedappflaggedreason.md)
+- [<span data-ttu-id="b6157-130">托管的应用操作</span><span class="sxs-lookup"><span data-stu-id="b6157-130">Managed app operation</span></span>](intune-mam-managedappoperation.md)
+- [<span data-ttu-id="b6157-131">托管的应用程序 PIN 字符集。</span><span class="sxs-lookup"><span data-stu-id="b6157-131">Managed app PIN character set</span></span>](intune-mam-managedapppincharacterset.md)
+- [<span data-ttu-id="b6157-132">托管的应用策略</span><span class="sxs-lookup"><span data-stu-id="b6157-132">Managed app policy</span></span>](intune-mam-managedapppolicy.md)
+- [<span data-ttu-id="b6157-133">托管应用策略部署摘要</span><span class="sxs-lookup"><span data-stu-id="b6157-133">Managed app policy deployment summary</span></span>](intune-mam-managedapppolicydeploymentsummary.md)
+- [<span data-ttu-id="b6157-134">每个应用的托管应用策略部署摘要</span><span class="sxs-lookup"><span data-stu-id="b6157-134">Managed app policy deployment summary per app</span></span>](intune-mam-managedapppolicydeploymentsummaryperapp.md)
+- [<span data-ttu-id="b6157-135">托管的应用保护</span><span class="sxs-lookup"><span data-stu-id="b6157-135">Managed app protection</span></span>](intune-mam-managedappprotection.md)
+- [<span data-ttu-id="b6157-136">托管应用注册</span><span class="sxs-lookup"><span data-stu-id="b6157-136">Managed app registration</span></span>](intune-mam-managedappregistration.md)
+- [<span data-ttu-id="b6157-137">托管应用状态</span><span class="sxs-lookup"><span data-stu-id="b6157-137">Managed app status</span></span>](intune-mam-managedappstatus.md)
+- [<span data-ttu-id="b6157-138">托管应用原始状态</span><span class="sxs-lookup"><span data-stu-id="b6157-138">Managed app status raw</span></span>](intune-mam-managedappstatusraw.md)
+- [<span data-ttu-id="b6157-139">托管移动应用</span><span class="sxs-lookup"><span data-stu-id="b6157-139">Managed mobile app</span></span>](intune-mam-managedmobileapp.md)
+- [<span data-ttu-id="b6157-140">MDM Windows 信息保护策略</span><span class="sxs-lookup"><span data-stu-id="b6157-140">MDM windows information protection policy</span></span>](intune-mam-mdmwindowsinformationprotectionpolicy.md)
+- [<span data-ttu-id="b6157-141">移动应用标识符</span><span class="sxs-lookup"><span data-stu-id="b6157-141">Mobile app identifier</span></span>](intune-mam-mobileappidentifier.md)
+- [<span data-ttu-id="b6157-142">代理域</span><span class="sxs-lookup"><span data-stu-id="b6157-142">Proxied domain</span></span>](intune-mam-proxieddomain.md)
+- [<span data-ttu-id="b6157-143">目标托管应用配置</span><span class="sxs-lookup"><span data-stu-id="b6157-143">Targeted managed app configuration</span></span>](intune-mam-targetedmanagedappconfiguration.md)
+- [<span data-ttu-id="b6157-144">目标托管应用程序策略分配</span><span class="sxs-lookup"><span data-stu-id="b6157-144">Targeted managed app policy assignment</span></span>](intune-mam-targetedmanagedapppolicyassignment.md)
+- [<span data-ttu-id="b6157-145">目标托管应用保护</span><span class="sxs-lookup"><span data-stu-id="b6157-145">Targeted managed app protection</span></span>](intune-mam-targetedmanagedappprotection.md)
+- [<span data-ttu-id="b6157-146">Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="b6157-146">Windows information protection</span></span>](intune-mam-windowsinformationprotection.md)
+- [<span data-ttu-id="b6157-147">Windows 信息保护应用</span><span class="sxs-lookup"><span data-stu-id="b6157-147">Windows information protection app</span></span>](intune-mam-windowsinformationprotectionapp.md)
+- [<span data-ttu-id="b6157-148">Windows 信息保护应用学习摘要</span><span class="sxs-lookup"><span data-stu-id="b6157-148">Windows information protection app learning summary</span></span>](intune-wip-windowsinformationprotectionapplearningsummary.md)
+- [<span data-ttu-id="b6157-149">Windows 信息保护应用锁定程序文件</span><span class="sxs-lookup"><span data-stu-id="b6157-149">Windows information protection app locker file</span></span>](intune-mam-windowsinformationprotectionapplockerfile.md)
+- [<span data-ttu-id="b6157-150">Windows 信息保护数据恢复证书</span><span class="sxs-lookup"><span data-stu-id="b6157-150">Windows information protection data recovery certificate</span></span>](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
+- [<span data-ttu-id="b6157-151">Windows 信息保护桌面应用</span><span class="sxs-lookup"><span data-stu-id="b6157-151">Windows information protection desktop app</span></span>](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [<span data-ttu-id="b6157-152">Windows 的信息保护实施级别</span><span class="sxs-lookup"><span data-stu-id="b6157-152">Windows information protection enforcement level</span></span>](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [<span data-ttu-id="b6157-153">Windows 信息保护 IP 范围集合</span><span class="sxs-lookup"><span data-stu-id="b6157-153">Windows information protection IP range collection</span></span>](intune-mam-windowsinformationprotectioniprangecollection.md)
+- [<span data-ttu-id="b6157-154">Windows 信息保护网络学习摘要</span><span class="sxs-lookup"><span data-stu-id="b6157-154">Windows information protection network learning summary</span></span>](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
+- [<span data-ttu-id="b6157-155">Windows 信息保护 PIN 字符要求</span><span class="sxs-lookup"><span data-stu-id="b6157-155">Windows information protection PIN character requirements</span></span>](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
+- [<span data-ttu-id="b6157-156">Windows 信息保护策略</span><span class="sxs-lookup"><span data-stu-id="b6157-156">Windows information protection policy</span></span>](intune-mam-windowsinformationprotectionpolicy.md)
+- [<span data-ttu-id="b6157-157">Windows 信息保护代理域集合</span><span class="sxs-lookup"><span data-stu-id="b6157-157">Windows information protection proxied domain collection</span></span>](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
+- [<span data-ttu-id="b6157-158">Windows 信息保护资源集合</span><span class="sxs-lookup"><span data-stu-id="b6157-158">Windows information protection resource collection</span></span>](intune-mam-windowsinformationprotectionresourcecollection.md)
+- [<span data-ttu-id="b6157-159">Windows 信息保护应用商店应用</span><span class="sxs-lookup"><span data-stu-id="b6157-159">Windows information protection store app</span></span>](intune-mam-windowsinformationprotectionstoreapp.md)
