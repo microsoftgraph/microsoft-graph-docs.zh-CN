@@ -3,12 +3,13 @@ title: 获取 groupLifecyclePolicy
 description: 检索 groupLifecyclePolicy 对象的属性和关系。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 0908fea443fbe52185fc3bc2a759cd62cebfa511
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 0b4d29ca8a08c2ec805549e6f10da4ac268771a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917928"
 ---
 # <a name="get-grouplifecyclepolicy"></a>获取 groupLifecyclePolicy
 

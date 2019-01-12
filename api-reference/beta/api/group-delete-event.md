@@ -3,12 +3,13 @@ title: 删除事件
 description: 删除 event 对象。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: e120910aa35aea0d7b8e74a356204e6aea2509d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5973a3002b15531993e9bd2bcc1cd1615f3cdd02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965731"
 ---
 # <a name="delete-event"></a>删除事件
 

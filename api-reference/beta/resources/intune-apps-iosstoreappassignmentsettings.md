@@ -3,12 +3,13 @@ title: iosStoreAppAssignmentSettings 资源类型
 description: 包含用于为组分配 iOS 应用商店移动应用的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 311b7469b0002dcf12369e650066e4e0b08ac83f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ca558a4c4be65a7ab8bd3aa880d39689a25863d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943523"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings 资源类型
 

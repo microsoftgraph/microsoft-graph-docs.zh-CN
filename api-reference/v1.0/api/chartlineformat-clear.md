@@ -3,12 +3,13 @@ title: 'ChartLineFormat: clear'
 description: 清除图表元素的线条格式。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a89b0f178ff0de8f1fe54bd8d3b7c01deaece91b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a97a65a59947e7bdee44486ad2bb7529a2e69b20
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952277"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 

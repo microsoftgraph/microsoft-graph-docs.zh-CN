@@ -3,12 +3,13 @@ title: 创建 androidWorkProfileVpnConfiguration
 description: 创建新的 androidWorkProfileVpnConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6a4ff0fde9287c013beded9362f4a58e35ad4c7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe9e14860e5193f30ea03187a3352891332b43c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948791"
 ---
 # <a name="create-androidworkprofilevpnconfiguration"></a>创建 androidWorkProfileVpnConfiguration
 

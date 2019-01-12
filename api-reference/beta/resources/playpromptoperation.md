@@ -3,12 +3,13 @@ title: playPromptOperation 资源类型
 description: 要获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d451418482d1adf1a4b7e16dc8a6eb8ca7febdb7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937815"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 

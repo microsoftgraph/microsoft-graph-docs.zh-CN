@@ -2,12 +2,14 @@
 title: directorySettingTemplate 资源类型
 description: 系统定义供租户的设置表示目录设置模板。 目录设置可以创建基于可用 directorySettingTemplates 和更改的预设默认值。 无法创建、 更新或删除目录设置模板。 这些设置可表示租户范围的设置，或可表示特定实体设置。  目前，唯一可用的模板适用于 Office 的组，并包括设置如用户可以创建组还是邀请来宾从组织外部成为组的成员。
 localization_priority: Normal
-ms.openlocfilehash: e0df923854059723ee83380f7aa0f6425cf2afb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d950b94c71bae70474bf9cdb9eee76fb8a3d9134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957632"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate 资源类型
 

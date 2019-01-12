@@ -3,12 +3,13 @@ title: 更新 defaultManagedAppProtection
 description: 更新 defaultManagedAppProtection 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ff29b9952aa7bad7e865349c1f44609eb7e123ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a472ca36c76ace9ae5f08279d2b37971703b2bc3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936296"
 ---
 # <a name="update-defaultmanagedappprotection"></a>更新 defaultManagedAppProtection
 

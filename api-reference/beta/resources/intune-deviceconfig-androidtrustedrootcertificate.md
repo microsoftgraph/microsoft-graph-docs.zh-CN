@@ -3,12 +3,13 @@ title: androidTrustedRootCertificate 资源类型
 description: Android 的受信任根证书配置配置文件
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63f4b71525d334dc83376f171bf573242e84cb40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1ea00c3f5c243ae2638d88b4d4d57014828fb743
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850237"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943919"
 ---
 # <a name="androidtrustedrootcertificate-resource-type"></a>androidTrustedRootCertificate 资源类型
 

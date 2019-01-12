@@ -3,12 +3,13 @@ title: 更新 androidManagedStoreApp
 description: 更新 androidManagedStoreApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 45f37c037b1a9e1d66ff9ce7ace58a51453b6eb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14aaac78b8983805fbba78e7b518aa179033df40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964716"
 ---
 # <a name="update-androidmanagedstoreapp"></a>更新 androidManagedStoreApp
 

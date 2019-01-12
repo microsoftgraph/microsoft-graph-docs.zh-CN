@@ -2,12 +2,14 @@
 title: 获取 userInstallStateSummary
 description: 读取 userInstallStateSummary 对象的属性和关系。
 author: tfitzmac
-ms.openlocfilehash: 4d0506b9d0e4736479d6bdd70e4176ffd82ea87c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 5f10b549233e8a4ec3d6b8ba8632acac5acdf7bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346604"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917473"
 ---
 # <a name="get-userinstallstatesummary"></a>获取 userInstallStateSummary
 
@@ -38,7 +40,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

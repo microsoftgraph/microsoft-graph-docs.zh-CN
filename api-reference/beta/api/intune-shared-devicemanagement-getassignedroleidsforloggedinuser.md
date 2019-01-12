@@ -3,12 +3,13 @@ title: getAssignedRoleIdsForLoggedInUser 函数
 description: 检索已分配的角色定义和角色分配的当前经过身份验证的用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 532438aa67afff2a0f215ec951e9d3eaa933b80b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b74991cfa2bd7a099adfd333129c16c796c5f9bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924626"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 

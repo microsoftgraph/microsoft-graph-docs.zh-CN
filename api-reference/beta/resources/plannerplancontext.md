@@ -2,12 +2,14 @@
 title: plannerPlanContext 资源类型
 description: '**PlannerPlanContext**资源表示 plannerPlan 计划程序之外的用户体验的关系。 可以在其他体验，如 Microsoft 团队，来跟踪工作的用户体验的上下文中显示计划程序中的计划。'
 localization_priority: Normal
-ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e118e32ea74332f0d8d0f958f7c55cd9980acb8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962889"
 ---
 # <a name="plannerplancontext-resource-type"></a>plannerPlanContext 资源类型
 

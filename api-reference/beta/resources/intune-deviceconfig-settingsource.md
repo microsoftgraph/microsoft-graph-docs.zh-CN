@@ -3,12 +3,13 @@ title: settingSource 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0bdddb4ce49b1288f5c3d6302c3bee7c61cf7c9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4bb0d40afde9724f54ac49f1a0024e8bd1703419
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870327"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964772"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 

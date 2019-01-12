@@ -2,12 +2,14 @@
 title: windowsKioskConfiguration 资源类型
 description: 此实体提供了属性、 网亭资源由公开的关系的声明方法的说明。
 localization_priority: Normal
-ms.openlocfilehash: b7ebcabeda93a6a58b21e110cd8ee6ac79452b25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2eecf86346af0d0f029b800347eb7a3ba08f4e19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937934"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 

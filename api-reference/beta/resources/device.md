@@ -2,12 +2,14 @@
 title: 设备资源类型
 description: 代表在目录中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
 localization_priority: Normal
-ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9a699134be1189700fd4689668db6021260835ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821670"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944192"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 

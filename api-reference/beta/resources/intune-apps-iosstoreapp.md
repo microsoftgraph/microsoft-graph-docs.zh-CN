@@ -3,12 +3,13 @@ title: iosStoreApp 资源类型
 description: 包含 iOS 应用商店应用的属性和继承的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ca3267507c2c03a6fd5129d57bd5792b35e442df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c5e73de2529fd48ed5a568f7b2c73aab1abadb2f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806427"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965577"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 

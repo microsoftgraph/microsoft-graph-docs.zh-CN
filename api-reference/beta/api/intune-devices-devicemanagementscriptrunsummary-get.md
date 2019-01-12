@@ -3,12 +3,13 @@ title: 获取 deviceManagementScriptRunSummary
 description: 读取属性和 deviceManagementScriptRunSummary 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2d8cc15493b2d667bf3c7358255ed66fa6e5bc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b854d99153150122e5dc863096f1eb514802a5fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847128"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948819"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>获取 deviceManagementScriptRunSummary
 

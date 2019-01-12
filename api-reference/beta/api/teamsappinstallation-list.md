@@ -3,12 +3,13 @@ title: 团队中的列表应用程序
 description: 检索指定团队中安装的应用程序的列表。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 9b1589a7497ef466f996edde4353198d0d59b535
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 02f324c17bde34973c6f3fe612c327a0f7488eb4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854402"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957639"
 ---
 # <a name="list-apps-in-team"></a>团队中的列表应用程序
 

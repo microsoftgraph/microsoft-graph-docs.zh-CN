@@ -3,12 +3,13 @@ title: 获取 azureADWindowsAutopilotDeploymentProfile
 description: 读取属性和 azureADWindowsAutopilotDeploymentProfile 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c01fa71c71b82eca568e6e762a0c43346aba8070
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c01d9c3a62d7c75aa03b6c72bc7a2c9897a5ce0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954832"
 ---
 # <a name="get-azureadwindowsautopilotdeploymentprofile"></a>获取 azureADWindowsAutopilotDeploymentProfile
 
