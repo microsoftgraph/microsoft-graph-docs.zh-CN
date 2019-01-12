@@ -3,52 +3,53 @@ title: 创建联机会议
 description: 创建一个代表指定在请求正文中的用户的联机会议。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: bd16b6979eed2c7d9386313f2ca07cb9ea2c5c6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946929"
 ---
-# <a name="create-online-meeting"></a><span data-ttu-id="4e46a-103">创建联机会议</span><span class="sxs-lookup"><span data-stu-id="4e46a-103">Create online meeting</span></span>
+# <a name="create-online-meeting"></a><span data-ttu-id="5a9c0-103">创建联机会议</span><span class="sxs-lookup"><span data-stu-id="5a9c0-103">Create online meeting</span></span>
 
-> <span data-ttu-id="4e46a-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4e46a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4e46a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4e46a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5a9c0-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5a9c0-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4e46a-106">创建一个代表指定在请求正文中的用户的联机会议。</span><span class="sxs-lookup"><span data-stu-id="4e46a-106">Creates an online meeting on behalf of a user specified in the request body.</span></span>
+<span data-ttu-id="5a9c0-106">创建一个代表指定在请求正文中的用户的联机会议。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-106">Creates an online meeting on behalf of a user specified in the request body.</span></span>
 
-> <span data-ttu-id="4e46a-107">**注意**： 会议不会显示在用户的日历。</span><span class="sxs-lookup"><span data-stu-id="4e46a-107">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="5a9c0-107">**注意**： 会议不会显示在用户的日历。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-107">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4e46a-108">权限</span><span class="sxs-lookup"><span data-stu-id="4e46a-108">Permissions</span></span>
-<span data-ttu-id="4e46a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4e46a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5a9c0-108">权限</span><span class="sxs-lookup"><span data-stu-id="5a9c0-108">Permissions</span></span>
+<span data-ttu-id="5a9c0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4e46a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4e46a-111">Permission type</span></span>                        | <span data-ttu-id="4e46a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4e46a-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5a9c0-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="5a9c0-111">Permission type</span></span>                        | <span data-ttu-id="5a9c0-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5a9c0-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4e46a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4e46a-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="4e46a-114">不支持</span><span class="sxs-lookup"><span data-stu-id="4e46a-114">Not Supported</span></span>                               |
-| <span data-ttu-id="4e46a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4e46a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e46a-116">不支持</span><span class="sxs-lookup"><span data-stu-id="4e46a-116">Not Supported</span></span>                               |
-| <span data-ttu-id="4e46a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4e46a-117">Application</span></span>                            | <span data-ttu-id="4e46a-118">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e46a-118">OnlineMeetings.ReadWrite.All</span></span>                |
+| <span data-ttu-id="5a9c0-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5a9c0-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="5a9c0-114">不支持</span><span class="sxs-lookup"><span data-stu-id="5a9c0-114">Not Supported</span></span>                               |
+| <span data-ttu-id="5a9c0-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5a9c0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a9c0-116">不支持</span><span class="sxs-lookup"><span data-stu-id="5a9c0-116">Not Supported</span></span>                               |
+| <span data-ttu-id="5a9c0-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="5a9c0-117">Application</span></span>                            | <span data-ttu-id="5a9c0-118">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a9c0-118">OnlineMeetings.ReadWrite.All</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="4e46a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4e46a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5a9c0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5a9c0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
 POST /applications/{id}/onlineMeetings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4e46a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4e46a-120">Request headers</span></span>
-| <span data-ttu-id="4e46a-121">名称</span><span class="sxs-lookup"><span data-stu-id="4e46a-121">Name</span></span>          | <span data-ttu-id="4e46a-122">说明</span><span class="sxs-lookup"><span data-stu-id="4e46a-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="5a9c0-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5a9c0-120">Request headers</span></span>
+| <span data-ttu-id="5a9c0-121">名称</span><span class="sxs-lookup"><span data-stu-id="5a9c0-121">Name</span></span>          | <span data-ttu-id="5a9c0-122">说明</span><span class="sxs-lookup"><span data-stu-id="5a9c0-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="4e46a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e46a-123">Authorization</span></span> | <span data-ttu-id="4e46a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4e46a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5a9c0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a9c0-123">Authorization</span></span> | <span data-ttu-id="5a9c0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4e46a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4e46a-126">Request body</span></span>
-<span data-ttu-id="4e46a-127">在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4e46a-127">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a9c0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="5a9c0-126">Request body</span></span>
+<span data-ttu-id="5a9c0-127">在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-127">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4e46a-128">响应</span><span class="sxs-lookup"><span data-stu-id="4e46a-128">Response</span></span>
-<span data-ttu-id="4e46a-129">如果成功，此方法返回`201 Created`响应代码和响应正文中的[onlineMeeting](../resources/onlinemeeting.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4e46a-129">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5a9c0-128">响应</span><span class="sxs-lookup"><span data-stu-id="5a9c0-128">Response</span></span>
+<span data-ttu-id="5a9c0-129">如果成功，此方法返回`201 Created`响应代码和响应正文中的[onlineMeeting](../resources/onlinemeeting.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-129">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4e46a-130">示例</span><span class="sxs-lookup"><span data-stu-id="4e46a-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5a9c0-130">示例</span><span class="sxs-lookup"><span data-stu-id="5a9c0-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4e46a-131">请求</span><span class="sxs-lookup"><span data-stu-id="4e46a-131">Request</span></span>
-<span data-ttu-id="4e46a-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="4e46a-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="5a9c0-131">请求</span><span class="sxs-lookup"><span data-stu-id="5a9c0-131">Request</span></span>
+<span data-ttu-id="5a9c0-132">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -74,11 +75,11 @@ Content-Length: 1553
 }
 ```
 
-<span data-ttu-id="4e46a-133">在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4e46a-133">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="5a9c0-133">在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-133">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="4e46a-134">响应</span><span class="sxs-lookup"><span data-stu-id="4e46a-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="5a9c0-134">响应</span><span class="sxs-lookup"><span data-stu-id="5a9c0-134">Response</span></span>
 
-><span data-ttu-id="4e46a-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4e46a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="5a9c0-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5a9c0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

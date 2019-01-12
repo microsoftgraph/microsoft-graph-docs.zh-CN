@@ -2,27 +2,29 @@
 title: plannerPlanContextCollection 资源类型
 description: '**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型，plannerPlan 对象的一部分。 属性值对中的值是 plannerPlanContext 对象。'
 localization_priority: Normal
-ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3281a7664561ac32c3908ca059209a1b89b4ea7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951808"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="9e2f0-105">plannerPlanContextCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="9e2f0-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="6cae8-105">plannerPlanContextCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="6cae8-105">plannerPlanContextCollection resource type</span></span>
 
-> <span data-ttu-id="9e2f0-106">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9e2f0-107">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-107">Use of these APIs in production applications is not supported.</span></span>
-
-
-<span data-ttu-id="9e2f0-108">**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-108">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="9e2f0-109">此资源是开放的类型， [plannerPlan](plannerplan.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-109">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="9e2f0-110">属性值对中的值是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-110">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+> <span data-ttu-id="6cae8-106">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6cae8-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6cae8-107">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6cae8-107">Use of these APIs in production applications is not supported.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9e2f0-111">属性</span><span class="sxs-lookup"><span data-stu-id="9e2f0-111">Properties</span></span>
-<span data-ttu-id="9e2f0-112">您可以定义此打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-112">You can define the properties of this open type.</span></span> <span data-ttu-id="9e2f0-113">属性值应为独特标识符值，该值代表外部上下文与属性名称。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-113">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="9e2f0-114">属性值必须是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-114">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="9e2f0-115">基于 OData 要求，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `%`， `@`。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-115">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="9e2f0-116">需要使用 URL 编码进行编码这些字符。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-116">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="9e2f0-117">在收藏夹列表中删除项目，设置对属性的值`null`。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-117">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+<span data-ttu-id="6cae8-108">**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。</span><span class="sxs-lookup"><span data-stu-id="6cae8-108">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="6cae8-109">此资源是开放的类型， [plannerPlan](plannerplan.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="6cae8-109">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="6cae8-110">属性值对中的值是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6cae8-110">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9e2f0-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9e2f0-118">JSON representation</span></span>
 
-<span data-ttu-id="9e2f0-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9e2f0-119">The following is a JSON representation of the resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="6cae8-111">属性</span><span class="sxs-lookup"><span data-stu-id="6cae8-111">Properties</span></span>
+<span data-ttu-id="6cae8-112">您可以定义此打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="6cae8-112">You can define the properties of this open type.</span></span> <span data-ttu-id="6cae8-113">属性值应为独特标识符值，该值代表外部上下文与属性名称。</span><span class="sxs-lookup"><span data-stu-id="6cae8-113">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="6cae8-114">属性值必须是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6cae8-114">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="6cae8-115">基于 OData 要求，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `%`， `@`。</span><span class="sxs-lookup"><span data-stu-id="6cae8-115">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="6cae8-116">需要使用 URL 编码进行编码这些字符。</span><span class="sxs-lookup"><span data-stu-id="6cae8-116">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="6cae8-117">在收藏夹列表中删除项目，设置对属性的值`null`。</span><span class="sxs-lookup"><span data-stu-id="6cae8-117">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="6cae8-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6cae8-118">JSON representation</span></span>
+
+<span data-ttu-id="6cae8-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6cae8-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
