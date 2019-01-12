@@ -3,12 +3,13 @@ title: 创建 managedIOSStoreApp
 description: 创建新的 managedIOSStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f689bdcf8b9197314f688a9dc86c3fe1240597b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2733d9da3a870489e6a9c92e6ba25bf3ab023b61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915933"
 ---
 # <a name="create-managediosstoreapp"></a>创建 managedIOSStoreApp
 

@@ -3,12 +3,13 @@ title: localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 description: LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 424c1193015d688019892d66ed07588358dcb8c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae886f6c7696150cb85a17cb2caa65823705e121
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870880"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916822"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Normal
-ms.openlocfilehash: 8268ec362a2ce60686f0ef2467243799cd650a9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7e977b635ec854e2e35bb1a12fdc0db22ddec722
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919440"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 

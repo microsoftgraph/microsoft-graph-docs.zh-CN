@@ -2,12 +2,14 @@
 title: androidForWorkNineWorkEasConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示九工作电子邮件客户端上的工作 Android 设备与 Exchange server 通信和获取电子邮件、 联系人、 日历、 任务和注释。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
-ms.openlocfilehash: 951c033fd8ee1f65b48b99045d4b9da86443a50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b78a585852e004e5b4b4b6685abe521129b1b816
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913616"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>androidForWorkNineWorkEasConfiguration 资源类型
 

@@ -3,12 +3,13 @@ title: 删除 iosUpdateDeviceStatus
 description: 删除 iosUpdateDeviceStatus。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 140fd9b61bb9286998ebd26b36a3bc92a8bb781e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84b6d39dc77e723abb1a40c23f74387e0811b71b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877705"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913189"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>删除 iosUpdateDeviceStatus
 

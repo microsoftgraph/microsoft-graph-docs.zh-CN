@@ -3,12 +3,13 @@ title: 更新表
 description: 更新 table 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f82b37e2c13c5160070eafce97d94b1354559db3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: df975d13ddc97c0c6b592d02d61a978c5a0db732
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816385"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919811"
 ---
 # <a name="update-table"></a>更新表
 

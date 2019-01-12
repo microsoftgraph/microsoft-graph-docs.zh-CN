@@ -3,12 +3,13 @@ title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 009485c2051c47209074ae8b938e6b1b06de9eac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e5189b286de61375715944c5ac979d847392a18c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917760"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 

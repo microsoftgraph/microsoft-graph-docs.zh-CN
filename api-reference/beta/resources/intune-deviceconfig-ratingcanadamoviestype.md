@@ -3,12 +3,13 @@ title: ratingCanadaMoviesType 枚举类型
 description: 电影分级加拿大标签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c9443a673ab9e97ef6cb4967018f35bcb8b3b932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 469bbf1b177df8bdf40dcdfea4ef6b0c4721cd3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826486"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918474"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 

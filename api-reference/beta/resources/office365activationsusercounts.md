@@ -2,12 +2,13 @@
 title: office365ActivationsUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: f57393a538631664be8845fdaeda9f35d07c986f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 3dc497e516f95f1e05167703f2b9f8aea6363a64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917718"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>office365ActivationsUserCounts 资源类型
 

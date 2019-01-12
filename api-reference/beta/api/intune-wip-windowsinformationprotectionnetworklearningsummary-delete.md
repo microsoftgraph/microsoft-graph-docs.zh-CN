@@ -3,12 +3,13 @@ title: 删除 windowsInformationProtectionNetworkLearningSummary
 description: 删除 windowsInformationProtectionNetworkLearningSummary。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7f5f0bf62eebb89bbffa7ae3deb5a1a820732ef3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6ffb2eeadf97283186d28acf53fbb66396d324b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918887"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>删除 windowsInformationProtectionNetworkLearningSummary
 

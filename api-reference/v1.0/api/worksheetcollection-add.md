@@ -3,12 +3,13 @@ title: 'WorksheetCollection: add'
 description: 对其.activate()。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9b841198071e4ab0f4e5b30f3cc4ec8b2538ef7e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3fa9ec83252d81efc49ba7fb7421354bd4e455c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810974"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915534"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 

@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
-ms.openlocfilehash: bee5aaef0f690146f2829f903e25861e74034b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 8716bf6692bf3d31ea4cf417aca39aa947e1d6ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852834"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916262"
 ---
 # <a name="sitepagedata-resource"></a>sitePageData 资源
 

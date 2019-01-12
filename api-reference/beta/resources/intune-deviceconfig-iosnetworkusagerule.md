@@ -2,12 +2,14 @@
 title: iosNetworkUsageRule 资源类型
 description: 网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。
 localization_priority: Normal
-ms.openlocfilehash: 6cf2f0cd88c25a625b12b3adcaac6ccc366ea0e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7476f49c6049eb18e56fa57310aa75707f566bd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912020"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 

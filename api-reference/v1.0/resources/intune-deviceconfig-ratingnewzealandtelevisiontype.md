@@ -3,12 +3,13 @@ title: ratingNewZealandTelevisionType 枚举类型
 description: 新西兰 TV 内容评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fcafb9c202f9392d5dc3ba834e7c7e78d2592972
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a6ceda3ffc70500fd273ce2a7356448faa2bd4b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875486"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919930"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 

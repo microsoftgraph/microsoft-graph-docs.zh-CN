@@ -3,12 +3,13 @@ title: 删除 iosVppAppAssignedLicense
 description: 删除 iosVppAppAssignedLicense。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29d6ee9ab0507600ede3dc8f7457bef49fb80e1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92ef51ecf99eed7a3d5c857243d8f7b8e0800022
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848697"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919517"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>删除 iosVppAppAssignedLicense
 

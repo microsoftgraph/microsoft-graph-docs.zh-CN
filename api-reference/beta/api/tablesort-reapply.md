@@ -3,12 +3,13 @@ title: 'TableSort: reapply'
 description: 对表重新应用当前的排序参数。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 80e4b10c31151632df9c04bc72b9f421dfd245f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d5d1900cfa0adf5bf09e6548df22cde7cbe00d88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862473"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918285"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 

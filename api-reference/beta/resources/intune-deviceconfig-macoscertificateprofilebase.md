@@ -3,12 +3,13 @@ title: macOSCertificateProfileBase 资源类型
 description: Mac OS 证书配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 596fc5a02e70e64f91e6abaabeaee384d16a156a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 10d8cc5ac2cee6bd4717c6879644a2117d4e7dfb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912370"
 ---
 # <a name="macoscertificateprofilebase-resource-type"></a>macOSCertificateProfileBase 资源类型
 

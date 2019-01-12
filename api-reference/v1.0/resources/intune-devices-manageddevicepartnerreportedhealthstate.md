@@ -3,12 +3,13 @@ title: managedDevicePartnerReportedHealthState 枚举类型
 description: 可用的运行状况状态的设备运行状况 API
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9c714c9ed2b070106a37b41712eeb29210d98e60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85d6731fc34bb3133fa7aed631d3d687a45a7dce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919048"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 

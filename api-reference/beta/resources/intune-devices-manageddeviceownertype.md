@@ -3,12 +3,13 @@ title: managedDeviceOwnerType 枚举类型
 description: 设备的所有者类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 28a85cf3c74fe5c7d2d56136c85088a2a9d1ec1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c9595569476eb34ec60dbb0686e900ae4cdc600
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848221"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917746"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 

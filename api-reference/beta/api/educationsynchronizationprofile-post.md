@@ -3,12 +3,13 @@ title: 创建 educationSynchronizationProfile
 description: '在租户中创建一个新的学校数据同步配置文件的请求。 查询以获取配置文件的状态的状态。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9d471766a8492e03809d05d6d0366c8e44d59015
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915758"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 

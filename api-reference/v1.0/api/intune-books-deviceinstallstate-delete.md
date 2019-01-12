@@ -3,12 +3,13 @@ title: 删除 deviceInstallState
 description: 删除 deviceInstallState。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 461b4481dbfdfebff2ebcf2718707330ee4d5f0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a4a7aea434b80b25307e5488abee6b80bdeacb8c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856019"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911887"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
 

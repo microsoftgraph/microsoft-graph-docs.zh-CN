@@ -3,12 +3,13 @@ title: getAuditActivityTypes 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0a8087b1a1bb61fcbd414da7d1f72bb33caccf9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd160f62ef79872cb4540cdeb0993f6bc9f91b79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823100"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919454"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 

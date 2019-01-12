@@ -3,12 +3,13 @@ title: 删除 macOSCompliancePolicy
 description: 删除 macOSCompliancePolicy。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ce40620fff4a10f244f46a4ae2e940d160a5829e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cc0f9a6b2b3e7c442160d94935e84d7ddac432e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892188"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918418"
 ---
 # <a name="delete-macoscompliancepolicy"></a>删除 macOSCompliancePolicy
 

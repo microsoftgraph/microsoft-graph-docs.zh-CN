@@ -3,12 +3,13 @@ title: 删除 windowsManagementAppHealthState
 description: 删除 windowsManagementAppHealthState。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7e0ddcc407a6140b96a12329dd939e2837cf22f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 254566df33102236afccb2dddffe2ea79537b9a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808678"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919055"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>删除 windowsManagementAppHealthState
 

@@ -3,12 +3,13 @@ title: 删除 iosLobApp
 description: 删除 iosLobApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a64d4589ea53970e43d2176abddc4ee7e924bfa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f7d98eaa9dcde1215fc5d6efe37a0934005f1a42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919915"
 ---
 # <a name="delete-ioslobapp"></a>删除 iosLobApp
 

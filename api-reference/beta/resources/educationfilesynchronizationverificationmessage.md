@@ -3,12 +3,13 @@ title: educationFileSynchronizationVerificationMessage 资源类型
 description: 代表向客户端启动基于 CSV 学校数据配置文件同步的请求的响应中返回的错误。 该资源将包含错误而形成了验证从。 重新启动与 Azure Active Directory (Azure AD) 的同步请求之前，用户必须修复的源数据。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: ae09ec3f208adfee64a6392db9732841fc7a0808
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: cda1d5d3ac56c50cdeb94ada091e8ae2975b8813
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845512"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914477"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage 资源类型
 

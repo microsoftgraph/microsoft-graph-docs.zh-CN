@@ -2,12 +2,14 @@
 title: 获取 Contract
 description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 6e23594c0c897bd5827e1eb251907c9a1a646a1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 86bf035bf015aa85a47c3f5cad62ef497c12e99a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843846"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916668"
 ---
 # <a name="get-contract"></a>获取 Contract
 

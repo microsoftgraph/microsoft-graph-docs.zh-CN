@@ -3,12 +3,13 @@ title: mediaStream 资源类型
 description: MediaStream 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fd003bde0eca5fd21cb12c23d5c83699a6b79c8e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916962"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 

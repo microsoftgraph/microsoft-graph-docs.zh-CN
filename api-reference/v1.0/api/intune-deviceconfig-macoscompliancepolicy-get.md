@@ -3,12 +3,13 @@ title: 获取 macOSCompliancePolicy
 description: 读取 macOSCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c091a13fd0ca7606c7aec0eed6bee4928f6bd015
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d59e6e1f94debcd518734a97d3c09ad3f4f4d3b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916346"
 ---
 # <a name="get-macoscompliancepolicy"></a>获取 macOSCompliancePolicy
 

@@ -2,12 +2,14 @@
 title: educationSchool 资源类型
 description: '学校。 **educationSchool** 资源当前对应于 administrativeUnit 资源并共享同一 ID。  '
 localization_priority: Normal
-ms.openlocfilehash: 20eacb87b68cbf490131b98a15d3ab3239d73478
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 17a5c3ad2f28e802bb6cad3a97d1cb723b3407d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918243"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 

@@ -3,12 +3,13 @@ title: 更新 androidTrustedRootCertificate
 description: 更新 androidTrustedRootCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a38b8b0172f5b1c38e114f32364f78b5d8347392
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d81ece0c2cb229c93efbd257bcca172a2fa07d6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918698"
 ---
 # <a name="update-androidtrustedrootcertificate"></a>更新 androidTrustedRootCertificate
 

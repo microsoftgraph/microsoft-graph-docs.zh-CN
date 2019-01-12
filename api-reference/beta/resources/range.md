@@ -2,12 +2,14 @@
 title: 区域资源类型
 description: 区域表示一个或多个相邻的单元格，例如单元格、行、列、单元格块等。
 localization_priority: Normal
-ms.openlocfilehash: 4b175cfc48ca4a0f55c430c6087ebbb907d6cb97
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 537da7c6a7b54c7977056ca822c4b98c85f2c1a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865693"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918944"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 

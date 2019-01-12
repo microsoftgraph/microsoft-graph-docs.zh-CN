@@ -3,12 +3,13 @@ title: iosNotificationAlertType 枚举类型
 description: 通知设置的警报类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6286d2016428f2146ab9b9e123b5bceaa153f27f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5fcc806c74660b48f8fc00cd3114e9a1b372860c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810596"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911936"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 

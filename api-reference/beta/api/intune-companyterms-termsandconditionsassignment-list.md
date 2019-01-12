@@ -3,12 +3,13 @@ title: 列出 termsAndConditionsAssignments
 description: 列出 termsAndConditionsAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4ce40bf4ec49ea4b534f82455464fa259085abf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eef98136588ce9625a80acc1c501f470c7f715b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918964"
 ---
 # <a name="list-termsandconditionsassignments"></a>列出 termsAndConditionsAssignments
 

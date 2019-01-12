@@ -3,12 +3,13 @@ title: 呼叫： subscribeToTone
 description: 订阅 DTMF （双音多频信号）。 这使您用户按键在电话上按下键时收到通知。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 929fac43017df2bdee106dd9687c221c65a20fbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916878"
 ---
 # <a name="call-subscribetotone"></a>呼叫： subscribeToTone
 
