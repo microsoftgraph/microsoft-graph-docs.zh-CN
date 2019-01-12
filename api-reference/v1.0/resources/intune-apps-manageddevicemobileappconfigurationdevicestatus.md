@@ -2,12 +2,14 @@
 title: managedDeviceMobileAppConfigurationDeviceStatus 资源类型
 description: 包含的属性、 继承的属性和设备 MDM 移动应用程序配置状态的操作。
 localization_priority: Normal
-ms.openlocfilehash: 9698c249d8075a7567c3f54defa3d20a475174ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 37b0f94757df11e1c78973855dd40ec6bc63c2a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841438"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958388"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus 资源类型
 

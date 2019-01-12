@@ -3,12 +3,13 @@ title: targetedManagedAppProtection 资源类型
 description: 用于配置针对特定安全组的详细管理设置的策略
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6817d8d73cdd392da23c98286fc089a357bf99c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cae0bed11eef24f2f5b7fe7e1f4622c47c3c9434
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841088"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970016"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection 资源类型
 
