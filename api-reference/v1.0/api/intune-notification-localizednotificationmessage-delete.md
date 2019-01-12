@@ -3,12 +3,13 @@ title: 删除 localizedNotificationMessage
 description: 删除 localizedNotificationMessage。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 02e20332549df460059ac4f992207d4c426af809
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a7c7e15a08460dc412492fd7f33ee54385d9760
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825961"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925194"
 ---
 # <a name="delete-localizednotificationmessage"></a>删除 localizedNotificationMessage
 

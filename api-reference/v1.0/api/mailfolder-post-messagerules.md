@@ -3,12 +3,13 @@ title: 创建规则
 description: '通过指定一组条件和操作来创建 messageRule 对象。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4adea9e35a3dcd5278c96f5689167554b1700d94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: a1ed88c0beec0b9b8767e8b49111aa65f3a5b6f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916143"
 ---
 # <a name="create-rule"></a>创建规则
 

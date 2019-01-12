@@ -3,12 +3,13 @@ title: windowsHelloForBusinessPinUsage 枚举类型
 description: Windows Hello 的业务 pin 用法选项
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: de304049e9eb7ad9138b3bf6ebeef52d9297a36b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: db4c50afc870c24775ea6fc1a15b24e028e91ef7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838680"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933349"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27838680"
 
 Windows Hello 的业务 pin 用法选项
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |允许|0|尚未记录|
 |必需|1|尚未记录|

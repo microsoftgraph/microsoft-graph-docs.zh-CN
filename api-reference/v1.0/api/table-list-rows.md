@@ -3,12 +3,13 @@ title: 列出行
 description: 检索 tablerow 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9e93b9a8469586d0105f0c170a4ee9f8ebe65ff9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 974d22b8a6118ee3b50c9e765facc06c9e7b496a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871986"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923773"
 ---
 # <a name="list-rows"></a>列出行
 

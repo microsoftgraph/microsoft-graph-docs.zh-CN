@@ -2,12 +2,14 @@
 title: 列出任务
 description: 获取用户的邮箱中的所有 Outlook 任务。
 localization_priority: Normal
-ms.openlocfilehash: e3d0753d639d4051ed03cbebf131e931a58fab30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: b39882dfcb4f6fa8eb9af679fb303605be4e0ded
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877915"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920196"
 ---
 # <a name="list-tasks"></a>列出任务
 

@@ -3,12 +3,13 @@ title: 获取 windowsInformationProtectionPolicy
 description: 读取 windowsInformationProtectionPolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7a0acef0d5a49da68a4c9f93ebba62871a58c187
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae8c8279ae3a3ad22a953d32656a6ef1374a1dc1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914085"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>获取 windowsInformationProtectionPolicy
 

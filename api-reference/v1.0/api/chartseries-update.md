@@ -3,12 +3,13 @@ title: 更新 chartseries
 description: 更新 chartseries 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 1772265a833d60cc20fdd55e2b6d1755687bd1ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5c0d2e802b082be1578cbe4a56185681fd06156b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932194"
 ---
 # <a name="update-chartseries"></a>更新 chartseries
 

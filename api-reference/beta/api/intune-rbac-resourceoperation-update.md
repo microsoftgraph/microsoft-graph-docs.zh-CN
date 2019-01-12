@@ -3,12 +3,13 @@ title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d65fb9394ba1bf33ce657941f2807d3dda44a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919062"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔|确定是否定义每个角色分配的作用域验证权限。|
+|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
 
 
 

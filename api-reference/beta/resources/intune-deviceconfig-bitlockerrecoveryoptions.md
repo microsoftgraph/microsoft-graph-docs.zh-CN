@@ -3,12 +3,13 @@ title: bitLockerRecoveryOptions 资源类型
 description: BitLocker 恢复选项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eae2052f71d1b1d048072c70dc76437811c1cd8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 40ca273b46a1e104afbeac4cbafe967ba76faa22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924837"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions 资源类型
 
@@ -18,15 +19,15 @@ ms.locfileid: "27806452"
 
 BitLocker 恢复选项。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|blockDataRecoveryAgent|布尔|指示是否阻止基于证书的数据恢复代理。|
+|blockDataRecoveryAgent|Boolean|指示是否阻止基于证书的数据恢复代理。|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许用户或所需的固定生成 48 位数恢复密码或系统磁盘。 可取值为：`blocked`、`required`、`allowed`。|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|指示是否允许用户或所需的固定生成 256 位恢复密钥或系统磁盘。 可取值为：`blocked`、`required`、`allowed`。|
-|hideRecoveryOptions|布尔|指示允许在 BitLocker 安装向导中显示恢复选项的固定或系统磁盘。|
-|enableRecoveryInformationSaveToStore|布尔|指示允许 BitLocker 恢复信息将存储在 AD DS。|
+|hideRecoveryOptions|Boolean|指示允许在 BitLocker 安装向导中显示恢复选项的固定或系统磁盘。|
+|enableRecoveryInformationSaveToStore|Boolean|指示允许 BitLocker 恢复信息将存储在 AD DS。|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|配置存储到 AD DS BitLocker 恢复信息的哪些部分。 可取值为：`passwordAndKey`、`passwordOnly`。|
-|enableBitLockerAfterRecoveryInformationToStore|布尔|指示启用 BitLocker，直到恢复信息存储在 AD DS。|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean|指示启用 BitLocker，直到恢复信息存储在 AD DS。|
 
 ## <a name="relationships"></a>Relationships
 无

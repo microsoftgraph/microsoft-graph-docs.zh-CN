@@ -3,12 +3,13 @@ title: getRoleScopeTagsByResource 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 736c1d8c874d0eb5ae2ce42ac9b9f17a98554879
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d4d2b8c0b55e353e07ed60d1f8fee001f694fdc3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890557"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919776"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 函数
 

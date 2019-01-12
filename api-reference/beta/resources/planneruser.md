@@ -2,12 +2,14 @@
 title: plannerUser 资源类型
 description: '**PlannerUser**资源的用户提供对计划工具资源的访问。 '
 localization_priority: Normal
-ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1b240092e7476884399f88fad61551763f33fe69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928280"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 
@@ -23,7 +25,7 @@ ms.locfileid: "27820802"
 |[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取[plannerTasks](plannertask.md)分配给用户。|
 |[列表 favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户标记为 favorite [plannerPlans](plannerplan.md) 。|
 |[列表 recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) 集合| 获取由用户最近查看[plannerPlans](plannerplan.md) 。|
-|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| 更新**plannerUser**对象。 |
+|[更新](../api/planneruser-update.md) | [plannerUser](planneruser.md)| 更新**plannerUser**对象。 |
 
 
 ## <a name="properties"></a>属性

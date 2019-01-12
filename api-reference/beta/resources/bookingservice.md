@@ -2,12 +2,14 @@
 title: bookingService 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 790adf49cfda1f787665a48e1b06bd77da27e1f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925159"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService 资源类型
 
@@ -22,11 +24,11 @@ ms.locfileid: "27815440"
 |[列表服务](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md)集合 | 指定[bookingbusiness](../resources/bookingbusiness.md)中获取**bookingService**对象的列表。|
 |[创建 bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 创建用于指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService** 。 |
 |[获取 bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |指定[bookingbusiness](../resources/bookingbusiness.md)中获取的属性和**bookingService**对象的关系。|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |更新中指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
+|[更新](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |更新中指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
 |[删除](../api/bookingservice-delete.md) | 无 |删除在指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
 |defaultLocation|[location](location.md)|服务的默认物理位置。|
@@ -36,8 +38,8 @@ ms.locfileid: "27815440"
 |说明|字符串|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字符串|该服务，以 GUID 格式的 ID。 此为只读属性。|
-|isHiddenFromCustomers|布尔|True 表示该服务不是预定的客户。|
+|id|字符串|该服务，以 GUID 格式的 ID。 只读。|
+|isHiddenFromCustomers|Boolean|True 表示该服务不是预定的客户。|
 |notes|String|有关此服务的其他信息。|
 |后|Duration|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|
 |缓冲区|Duration|缓冲区之前可以启动此服务的约会的时间。|

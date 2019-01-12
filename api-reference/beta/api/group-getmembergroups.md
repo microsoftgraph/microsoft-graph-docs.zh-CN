@@ -2,12 +2,14 @@
 title: 'group: getMemberGroups'
 description: 返回指定组所属的所有组。检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
 localization_priority: Normal
-ms.openlocfilehash: 0c5162e79921e6069d22861060e6c652d1a7de3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: e485c80a06fc2d124dec728ab3ffcdfb8dcce105
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921533"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -49,7 +51,7 @@ POST /groups/{id}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | 布尔 | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
+| securityEnabledOnly | Boolean | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
 
 ## <a name="response"></a>响应
 

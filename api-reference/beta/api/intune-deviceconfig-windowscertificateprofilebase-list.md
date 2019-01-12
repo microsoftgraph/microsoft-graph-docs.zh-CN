@@ -3,12 +3,13 @@ title: 列表 windowsCertificateProfileBases
 description: 列出属性和 windowsCertificateProfileBase 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 770a17633b531c63e9defea6f3858b137e5155b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 458bf035a57d5239e1baf668d6eb4afe62cc47f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886280"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914071"
 ---
 # <a name="list-windowscertificateprofilebases"></a>列表 windowsCertificateProfileBases
 

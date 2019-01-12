@@ -3,12 +3,13 @@ title: 共享列表
 description: 返回与用户共享的文件列表中的计算的洞察。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: eb9d0165d61559d5f31af486b96e1127c9c7c43c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: c40f6ba80a39fb7db3b959bc78f317d86f3de8e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921778"
 ---
 # <a name="list-shared"></a>共享列表
 

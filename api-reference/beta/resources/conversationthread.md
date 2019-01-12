@@ -3,12 +3,13 @@ title: conversationThread 资源类型
 description: conversationThread 是 帖子 集合。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1101bb56e69b6418cfd57e719cf1633fa76b161c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d541d4ac47272c2825602b28526b2b7c9d5f3fcb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933552"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -37,11 +38,11 @@ conversationThread 是 [帖子](post.md) 集合。
 |toRecipients|[recipient](recipient.md) collection|收件人：线程的收件人。|
 |ccRecipients|[recipient](recipient.md) collection|抄送：线程的收件人。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
-|hasAttachments|布尔|指示此线程中的任意帖子是否至少具有一个附件。|
+|hasAttachments|Boolean|指示此线程中的任意帖子是否至少具有一个附件。|
 |lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |uniqueSenders|String collection|向此线程发送邮件的所有用户。|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|isLocked|布尔|指示线程是否已锁定。|
+|isLocked|Boolean|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|

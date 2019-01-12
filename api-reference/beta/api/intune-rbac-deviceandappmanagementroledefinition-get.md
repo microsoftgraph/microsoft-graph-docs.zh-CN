@@ -3,12 +3,13 @@ title: 获取 deviceAndAppManagementRoleDefinition
 description: 读取 deviceAndAppManagementRoleDefinition 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: adcd7032b557ddbe4c73f093ee28ea36ca06355c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 090fb1b3d6a041f6aee903462dd85cb1861ab564
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930176"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>获取 deviceAndAppManagementRoleDefinition
 

@@ -3,12 +3,13 @@ title: retire 操作
 description: 停用设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ce9ff6cd1ce5ff3bae53fdf10cb6b33756a508b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0071fb7f55b51a466249ee605604afa3a9a10bbb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882508"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931137"
 ---
 # <a name="retire-action"></a>retire 操作
 

@@ -3,12 +3,13 @@ title: ChartSeries 资源类型
 description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6742c30eca55426e54290ae689bfabd8e14ce70f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5a299c7140c2032a57cd47fb0880ae34620a920b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842628"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915814"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27842628"
 |[获取 ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
 |[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
 |[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
-|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
+|[更新](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
 |[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 

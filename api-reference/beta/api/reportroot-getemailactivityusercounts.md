@@ -2,12 +2,13 @@
 title: 'reportRoot: getEmailActivityUserCounts'
 description: 可便于了解正在执行发送、阅读和接收等电子邮件活动的唯一用户数趋势。
 localization_priority: Normal
-ms.openlocfilehash: de31c804bde4de615ec2c431b1fd31868723d058
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 84677283cfeb6006846718a70016ff4dca364d5c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856621"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925733"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 

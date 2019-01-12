@@ -2,12 +2,14 @@
 title: 创建 sectionGroup
 description: 在指定分区组中新建分区组。
 localization_priority: Normal
-ms.openlocfilehash: 5af01bd2a526d692b568fe121db7933a2887a006
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 2236cdcf832d3fd0ea496c5b4c4634b38803c303
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932964"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 

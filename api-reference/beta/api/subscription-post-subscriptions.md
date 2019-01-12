@@ -2,12 +2,13 @@
 title: 创建订阅
 description: 订阅侦听器应用程序上的 Microsoft Graph 资源的数据更改时收到通知。
 localization_priority: Normal
-ms.openlocfilehash: 5b7f465e556d1fb752bcb2d3c962fd6444d462c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 0640a8de441a07e1abcc02a152f5a9812832db27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916542"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -15,7 +16,7 @@ ms.locfileid: "27805052"
 
 订阅侦听器应用程序上的 Microsoft Graph 资源的数据更改时收到通知。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 创建订阅需要应用程序将为其接收通知的资源的读取的权限。 例如，若要获取有关邮件的通知，您的应用程序需要`Mail.Read`权限。 下表列出了对各个资源所需权限的建议。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

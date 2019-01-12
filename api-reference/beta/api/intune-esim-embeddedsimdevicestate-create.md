@@ -3,12 +3,13 @@ title: 创建 embeddedSIMDeviceState
 description: 创建新的 embeddedSIMDeviceState 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27bf12ff0bcb2ed61f5bb689a1994373d9efd551
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 815d0e401e733f50ebe5734bee55311932d85ea6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832876"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919069"
 ---
 # <a name="create-embeddedsimdevicestate"></a>创建 embeddedSIMDeviceState
 
@@ -56,7 +57,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UICCID) 标识到配置文件是要部署的硬件。|
 |deviceName|String|订阅已的设备名称设置如桌面 JOE|
 |userName|String|订阅已设置到例如 joe@contoso.com 用户名|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
+|状态|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
 |stateDetails|字符串|字符串设置状态的说明。|
 
 

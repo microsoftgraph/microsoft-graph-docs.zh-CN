@@ -2,12 +2,14 @@
 title: Microsoft Intune 中的公司条款和条件
 description: 你可以将 Intune 条款和条件部署到用户组，以说明注册、访问工作资源和公司门户应用对设备和用户有何影响。 用户必须接受条款和条件，才能使用公司门户注册和访问其工作。
 localization_priority: Normal
-ms.openlocfilehash: 58e8d766d9249ace73193e1e06350956c2c09684
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: eb7221a8a04c35d92f04678369ff690245122f97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931529"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune 中的公司条款和条件
 

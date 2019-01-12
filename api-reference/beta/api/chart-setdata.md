@@ -3,12 +3,13 @@ title: 'Chart: setData'
 description: 重置图表的源数据。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 83d74036019ffe1f58e86778859d5123dc3df8c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a92fe8e0c43b5dff4a406efbe0c2238ff0cab0ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921659"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 

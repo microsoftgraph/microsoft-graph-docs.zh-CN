@@ -3,12 +3,13 @@ title: 列出 windows10EndpointProtectionConfigurations
 description: 列出 windows10EndpointProtectionConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 427860ed3576f580fbc7c3fcc42f80bf9f798fa5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 587bb54918d85d5a36d5f1faf922c0adffa937e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827949"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921274"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>列出 windows10EndpointProtectionConfigurations
 

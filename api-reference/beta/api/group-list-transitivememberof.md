@@ -2,12 +2,14 @@
 title: 列表组可传递 memberOf
 description: 获取组和管理单元的组的成员。  此操作可传递，也将包括此组是嵌套的成员的所有组。 与不同获取用户的 Office 365 组，这将返回所有类型的组，而不仅仅是 Office 365 组。
 localization_priority: Normal
-ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: ec03ca6fce354f2a0b81cf0f81bf3061db504365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921666"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递 memberOf
 

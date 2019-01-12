@@ -2,12 +2,14 @@
 title: 对话资源类型
 description: 对话是 线程 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
 localization_priority: Normal
-ms.openlocfilehash: c1d4bdda7efebb890458be2146dc72cdb9c76389
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928155"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -29,7 +31,7 @@ ms.locfileid: "27862956"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|hasAttachments|布尔|指示此对话中的任意帖子是否至少有一个附件。|
+|hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
 |id|String|对话的唯一标识符。只读。|
 |lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|

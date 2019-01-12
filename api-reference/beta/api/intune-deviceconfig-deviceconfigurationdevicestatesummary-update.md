@@ -3,12 +3,13 @@ title: 更新 deviceConfigurationDeviceStateSummary
 description: 更新 deviceConfigurationDeviceStateSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1963e00e5f2cf6719932b1b26b388a72fff0fb28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 599411d60bc723e95297926c600359bda3c70fc1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924592"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>更新 deviceConfigurationDeviceStateSummary
 

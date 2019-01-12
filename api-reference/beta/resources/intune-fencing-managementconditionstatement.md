@@ -3,12 +3,13 @@ title: managementConditionStatement 资源类型
 description: 管理条件语句是一组的管理条件的启用/禁用设备/应用程序配置满足所有包含的管理条件时。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929982"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 
@@ -42,7 +43,7 @@ ms.locfileid: "27878398"
 这从查找管理相关的管理条件计算条件语句并查找适用平台的交点。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md)集合|管理条件语句对相关的管理条件。|
 

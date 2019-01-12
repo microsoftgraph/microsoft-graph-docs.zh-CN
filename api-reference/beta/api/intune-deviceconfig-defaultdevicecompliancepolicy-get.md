@@ -3,12 +3,13 @@ title: 获取 defaultDeviceCompliancePolicy
 description: 读取属性和 defaultDeviceCompliancePolicy 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0a50151857a5acdbbf34ccb0d8cc7b2386bbd162
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4272d21a0af48f52c07180f879fcb20c11bde680
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928687"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>获取 defaultDeviceCompliancePolicy
 

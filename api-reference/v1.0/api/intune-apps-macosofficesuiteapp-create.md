@@ -3,12 +3,13 @@ title: 创建 macOSOfficeSuiteApp
 description: 创建新的 macOSOfficeSuiteApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf65f879832e4687ad3e784d0b09d7234c8920b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f31345b70d8faec304dd91497af677386fdb43e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931620"
 ---
 # <a name="create-macosofficesuiteapp"></a>创建 macOSOfficeSuiteApp
 

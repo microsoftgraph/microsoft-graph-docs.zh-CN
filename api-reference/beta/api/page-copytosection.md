@@ -2,12 +2,14 @@
 title: 'page: copyToSection'
 description: 将页面复制到特定分区。
 localization_priority: Normal
-ms.openlocfilehash: 10d0eecd2f84a33e66209f8297b72b8a4630b100
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 733f03bd04df31b79e84a7f8bbf5162ec1b023ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892503"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915198"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
@@ -43,7 +45,7 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供包含操作所需参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |siteCollectionId|字符串|若要将复制到的 SharePoint 网站的 id。 仅当将复制到 Office 365 团队网站使用。|
 |siteId|字符串|SharePoint 网站复制到的 id。 仅当将复制到 Office 365 团队网站使用。|

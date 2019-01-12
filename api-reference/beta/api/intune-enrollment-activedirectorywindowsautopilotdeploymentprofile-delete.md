@@ -3,12 +3,13 @@ title: 删除 activeDirectoryWindowsAutopilotDeploymentProfile
 description: 删除 activeDirectoryWindowsAutopilotDeploymentProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b6b47c6edcef6e5c1bf533a0759bfbf8cf0d3834
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f1468022efca1db0adc303b429a3b2595ad16387
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919104"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>删除 activeDirectoryWindowsAutopilotDeploymentProfile
 

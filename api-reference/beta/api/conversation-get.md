@@ -3,12 +3,13 @@ title: 获取对话
 description: 检索 conversation 对象的属性和关系。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 7ff3447931c3818bb92f1d188557d22a5bc5a65e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 08059625838d6a60489820b2369768c6a3fca071
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874625"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931718"
 ---
 # <a name="get-conversation"></a>获取对话
 

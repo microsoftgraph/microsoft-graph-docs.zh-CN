@@ -2,12 +2,14 @@
 title: ChartFont 资源类型
 description: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
 localization_priority: Normal
-ms.openlocfilehash: 0df14f98993c33b6b3eb3c0b2ea9fbdf211a8124
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4187d2837835520864ec3a1ef5c47b578b3d3da4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824162"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920945"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont 资源类型
 
@@ -21,7 +23,7 @@ ms.locfileid: "27824162"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |读取 chartFont 对象的属性和关系。|
-|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |更新 ChartFont 对象。 |
+|[更新](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |更新 ChartFont 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

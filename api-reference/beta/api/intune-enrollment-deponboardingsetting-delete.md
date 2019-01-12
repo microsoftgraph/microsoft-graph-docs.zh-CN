@@ -3,12 +3,13 @@ title: 删除 depOnboardingSetting
 description: 删除 depOnboardingSetting。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bab4dae945307dc9211eb5559d50176fddf467d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6b31a89a5fd6195c9782cfdc5414362ea4d049d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806816"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928680"
 ---
 # <a name="delete-deponboardingsetting"></a>删除 depOnboardingSetting
 

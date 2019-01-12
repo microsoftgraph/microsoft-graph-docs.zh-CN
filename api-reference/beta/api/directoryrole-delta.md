@@ -2,12 +2,14 @@
 title: directoryRole： 增量
 description: 获取新创建、 更新或删除目录角色而无需执行的整个资源集的完全读取。 有关详细信息，请参阅使用增量查询。
 localization_priority: Normal
-ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c5f17ed70426d8102870537354edf3cea9a723b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809119"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916745"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： 增量
 

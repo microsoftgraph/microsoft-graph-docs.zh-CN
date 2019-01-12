@@ -3,12 +3,13 @@ title: managedMobileApp 资源类型
 description: 部署应用的标识符。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c020166da2fb8e33d9649935f89ef22e556e7d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a22c4f3445fe5cf880ab35df80d453ed2935b742
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819697"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933132"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 

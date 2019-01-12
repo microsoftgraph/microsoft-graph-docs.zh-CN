@@ -3,12 +3,13 @@ title: 获取 ChartPoint
 description: 检索 chartpoint 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c7e08d292a55891ffedcb3e39ad5dfcefeb44656
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 08f4e4ac185262e5d124c56a390d5e8a430cad3b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930240"
 ---
 # <a name="get-chartpoint"></a>获取 ChartPoint
 

@@ -3,12 +3,13 @@ title: ChartLineFormat 资源类型
 description: 封装线条元素的格式选项。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 70e4e3d5c88fccd2a34c3fa17d5fe4bf5dcf1e5b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9da0c29acf49d0e183a2ded4652fe0972f21bf76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925915"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27805738"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
+|[更新](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
 |[Clear](../api/chartlineformat-clear.md)|无|清除图表元素的线条格式。|
 
 ## <a name="properties"></a>属性

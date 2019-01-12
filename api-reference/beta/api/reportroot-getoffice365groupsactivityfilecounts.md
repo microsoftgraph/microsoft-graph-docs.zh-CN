@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365GroupsActivityFileCounts'
 description: 获取跨与 Office 365 组相关联的所有组网站的文件总数和活跃文件数。
 localization_priority: Normal
-ms.openlocfilehash: af1870aef6b21d577fd2bcdfee63997ba1a1cb8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 03c8ec215a80901e0bfe8481a78dc282f8f3958f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925110"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 

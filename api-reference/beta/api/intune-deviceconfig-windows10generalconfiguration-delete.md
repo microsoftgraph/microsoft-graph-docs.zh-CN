@@ -3,12 +3,13 @@ title: 删除 windows10GeneralConfiguration
 description: 删除 windows10GeneralConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fd39ad386ce47973b049ae14f59e53bc82c17b33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0bcf22dac544e2b08822fddbc7a7f534ac4cf04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928498"
 ---
 # <a name="delete-windows10generalconfiguration"></a>删除 windows10GeneralConfiguration
 

@@ -2,12 +2,14 @@
 title: educationAssignment： 发布
 description: 此操作将工作分配的状态从其原始草稿状态更改为已发布状态中。 仅在类中的教师可以发起此呼叫。 草稿状态工作分配后，学生看不到工作分配，也不会有任何提交对象。 此 API 调用时，创建提交对象，并且学生的列表中显示的工作分配。
 localization_priority: Normal
-ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: c7cdaebb91490270cc0a8f205b41a89b662a7a13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926699"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment： 发布
 

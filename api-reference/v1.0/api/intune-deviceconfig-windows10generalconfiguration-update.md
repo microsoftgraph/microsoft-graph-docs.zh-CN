@@ -3,12 +3,13 @@ title: 更新 windows10GeneralConfiguration
 description: 更新 windows10GeneralConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a2b8c85baca45304cd989b544b43d868f6bc78f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ebf649858d8f3ee6349674ac00eff300fa62cf03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870320"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928463"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
@@ -252,7 +253,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |experienceBlockErrorDialogWhenNoSIM|Boolean|指示是否允许在未检测到 SIM 卡时显示错误对话框。|
 |experienceBlockTaskSwitcher|Boolean|指示是否在设备上启用任务切换。|
 |logonBlockFastUserSwitching|Boolean|禁用在不注销的情况下在同时登录的用户之间快速切换的功能。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|布尔|设备是否需要连接到网络。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|设备是否需要连接到网络。|
 
 
 

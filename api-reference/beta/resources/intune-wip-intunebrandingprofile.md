@@ -3,12 +3,13 @@ title: intuneBrandingProfile 资源类型
 description: 此实体包含用于自定义租户级别外观的公司门户应用程序，以及最终用户 web 门户中的数据。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930262"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "27820606"
 |id|字符串|配置文件密钥|
 |profileName|字符串|配置文件的名称|
 |profileDescription|字符串|配置文件的说明|
-|isDefaultProfile|布尔|如果在配置文件使用的默认，呈现。|
+|isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
 |displayName|String|向最终用户显示的公司/组织名称。|

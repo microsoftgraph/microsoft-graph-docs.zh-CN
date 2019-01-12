@@ -2,12 +2,14 @@
 title: 'directoryObject: validateProperties'
 description: 验证如果 Office 365 组的显示名称或邮件昵称符合命名策略。  客户端可以使用 API 以确定是否显示名称或邮件昵称有效，然后尝试**创建**到 Office 365 组。 用于验证的现有组属性，使用组 validateProperties 函数。
 localization_priority: Normal
-ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 515acb022150d091e7dcbbdecc1fb1adef849a88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879819"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921316"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -20,7 +22,7 @@ ms.locfileid: "27879819"
 
 此 API 返回与第一个遇到故障。 如果一个或多个属性失败多个验证，则返回仅与第一个验证失败的属性。 但是，您可以验证邮件昵称和显示名称和接收验证错误的集合，如果您仅验证前缀和后缀命名策略。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>先决条件
 
 执行此 API 所需的以下**权限**： *Group.Read.All*
 
@@ -40,7 +42,7 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |entityType|字符串| `Group`是唯一受支持的实体类型。 |
 |displayName|字符串| 要验证的组的显示名称。 该属性不是单独必需的。 但是，至少一个属性 （displayName 或 mailNickname） 是必需的。 |

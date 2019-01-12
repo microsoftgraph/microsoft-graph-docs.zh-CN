@@ -3,12 +3,13 @@ title: getScopesForUser 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b0cd9a14602ce090de5d79720415a1e52d3b3145
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 55d39ed67dc3aafff69a4e826d59c9933023788b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822419"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930787"
 ---
 # <a name="getscopesforuser-function"></a>getScopesForUser 函数
 
@@ -46,7 +47,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |用户 id|字符串|尚未记录|
 

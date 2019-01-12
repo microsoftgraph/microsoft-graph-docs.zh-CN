@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfiguration 资源类型
 description: 已注册设备移动应用配置的抽象类
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 66c0a3da5c52b58c98e42a58133d7aeb8c186656
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f9a642f00e9dce09628083a8278e6010a220bee2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831477"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918985"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 

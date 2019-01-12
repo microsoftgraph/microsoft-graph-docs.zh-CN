@@ -3,12 +3,13 @@ title: 删除 microsoftStoreForBusinessContainedApp
 description: 删除 microsoftStoreForBusinessContainedApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 33deb1393cbdbd5411818964a65bf28058d3861e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4fc834231d90e4dcc086727971e716c699886dd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883256"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920903"
 ---
 # <a name="delete-microsoftstoreforbusinesscontainedapp"></a>删除 microsoftStoreForBusinessContainedApp
 

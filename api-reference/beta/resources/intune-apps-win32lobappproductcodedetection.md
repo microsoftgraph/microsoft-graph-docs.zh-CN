@@ -3,12 +3,13 @@ title: win32LobAppProductCodeDetection 资源类型
 description: 包含产品代码和版本属性，以检测 Win32 应用程序
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a3a461661d2b2a37cd7f4e9a37561ea682ea0e0f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5536384178ac197d3b52609cb767fef82befd3b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812465"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928524"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27812465"
 继承自[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |productCode|String|Win32 业务线 (LoB) 应用程序的产品代码。|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|要检测产品版本的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual`。|

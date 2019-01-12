@@ -3,12 +3,13 @@ title: 更新 androidWorkProfileCustomConfiguration
 description: 更新 androidWorkProfileCustomConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e57f91398d87b8019dca00016c47ece1370c828f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4a3e54416be9671a72b4e86675bbf1932d1b645c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929625"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>更新 androidWorkProfileCustomConfiguration
 

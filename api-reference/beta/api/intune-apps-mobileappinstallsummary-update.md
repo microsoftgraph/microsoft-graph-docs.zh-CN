@@ -3,12 +3,13 @@ title: 更新 mobileAppInstallSummary
 description: 更新 mobileAppInstallSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3886512ff2524ccf2ac424d198533ebaafae20ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864797"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930059"
 ---
 # <a name="update-mobileappinstallsummary"></a>更新 mobileAppInstallSummary
 

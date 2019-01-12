@@ -3,12 +3,13 @@ title: 'groupLifecyclePolicy: removeGroup'
 description: 从生命周期策略中删除组。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 6b17403babef2295ce8d9c8d18b21e16c63889e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 7affc1af4fcee76cfa4ff044bc11604247d46762
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919533"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 

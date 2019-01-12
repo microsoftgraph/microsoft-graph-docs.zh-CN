@@ -2,12 +2,14 @@
 title: groupSettingTemplate 资源类型
 description: 组设置模板表示租户可用的系统定义设置。组设置可根据可用的 **groupSettingTemplates** 和从其预设默认值更改的值进行创建。无法创建、更新或删除组设置模板。这些设置可以表示租户范围设置，也可以表示特定组设置。目前，唯一可用的模板可应用于 Office 365 组，并且包括诸如用户是否可以创建组或邀请来自组织外的来宾成为组成员的设置。
 localization_priority: Normal
-ms.openlocfilehash: c2e6b465226b8c1c69438fab37d874735e89ac52
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2b9b95303b72bc111f045010e71459f541e9a9b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919335"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 

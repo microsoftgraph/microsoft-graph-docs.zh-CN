@@ -3,12 +3,13 @@ title: 删除 termsAndConditionsAssignment
 description: 删除 termsAndConditionsAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 84020415cd08794b64735adaa5b768acd548ab63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82e2bb7b9ec41d1798cf270433d0c370b8cc8772
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923080"
 ---
 # <a name="delete-termsandconditionsassignment"></a>删除 termsAndConditionsAssignment
 

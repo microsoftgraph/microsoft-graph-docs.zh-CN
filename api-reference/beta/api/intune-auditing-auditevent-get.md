@@ -3,12 +3,13 @@ title: 获取 auditEvent
 description: 读取 auditEvent 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6ac6ccc3f1faccd6c158ae14f0a2696ec5e8684f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 675a4c29c2efd73e14c11d1e7ce4ef6e6b0917c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920938"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 

@@ -3,12 +3,13 @@ title: 更新 rangefill
 description: 更新 rangefill 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 869f5c1624cd8ea3da859a57c386caeda1065995
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 13cb4e6bc48c1e7b01eefde9d142550f1c7143a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810092"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928253"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 

@@ -3,12 +3,13 @@ title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60acbdb63f3bd75bacbc2d2392cbb3ab64cc4b57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c8aa9a481336812c3101a206695dd8d83a0401f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915555"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -36,7 +37,7 @@ ms.locfileid: "27825646"
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|适用于企业的 Microsoft Store 的应用上次成功同步帐户的时间。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |**应用程序**|
 |mobileAppCategories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|移动应用类别。|

@@ -2,12 +2,14 @@
 title: 更新 plannerUser
 description: 更新 plannerUser 对象的属性。 此操作可用于添加或删除计划从用户的收藏夹计划列表中，并以指示该计划用户具有最近查看。
 localization_priority: Normal
-ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 733743ffee8e29d66f2ebe411d127161e7e8eb2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925887"
 ---
 # <a name="update-planneruser"></a>更新 plannerUser
 
@@ -33,12 +35,12 @@ PATCH /me/planner
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}。必需。|
-| If-Match  | 最后的**plannerUser**要更新的已知的 ETag 值。 必填。|
+| If-Match  | 最后的**plannerUser**要更新的已知的 ETag 值。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|对包含用户已标记为收藏计划引用的集合。|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|对包含对用户具有最近查看的计划的引用的集合。|

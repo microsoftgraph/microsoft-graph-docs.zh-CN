@@ -3,12 +3,13 @@ title: 创建 deviceManagementScript
 description: 创建新的 deviceManagementScript 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ef3f9436de79b5839912a44915238267f0c26dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838029"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924025"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -57,7 +58,7 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|日期和设备管理脚本上次修改的时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文中运行的设备管理脚本的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要签脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要签脚本签名。|
 |fileName|String|脚本文件的名称。|
 
 

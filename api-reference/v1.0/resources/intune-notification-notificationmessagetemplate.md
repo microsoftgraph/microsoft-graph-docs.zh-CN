@@ -3,12 +3,13 @@ title: notificationMessageTemplate 资源类型
 description: " 部分。 使用 notificationMessageTemplate 对象创建自定义通知，以便管理员在配置非合规操作时进行选择。"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf7e15318402a8b2aef24f6a254d12668fda94b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5b9f298da4a4f37cde60ddc93402bf6d08d3f4f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912433"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate 资源类型
 

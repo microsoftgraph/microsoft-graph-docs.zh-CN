@@ -3,12 +3,13 @@ title: playLostModeSound 操作
 description: 远程锁定
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17d099a02ce42db71d1f64f4175ffd6166be97b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 69627496cb8889fe9f1586b7ec8fa8f7b8cc3963
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925012"
 ---
 # <a name="playlostmodesound-action"></a>playLostModeSound 操作
 

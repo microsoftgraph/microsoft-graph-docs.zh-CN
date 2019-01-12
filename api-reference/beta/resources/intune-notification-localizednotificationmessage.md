@@ -3,12 +3,13 @@ title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53a33c5d83821ff5131b601bd5687e7d98634c00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 641819f99cc8a61d68a15b48c34864a78fd202cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913420"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 

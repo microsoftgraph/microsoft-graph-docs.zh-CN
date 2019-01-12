@@ -3,12 +3,13 @@ title: 'Chart: delete'
 description: 删除 chart 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8b7eb6ff1d8a4d2eee16bdd0bcf9ce4a4c70b23a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e543e8188c5f850080daac00c4fe12a686af6a62
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871615"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923066"
 ---
 # <a name="chart-delete"></a>Chart: delete
 

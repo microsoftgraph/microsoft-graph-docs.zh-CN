@@ -3,12 +3,13 @@ title: 更新 windows10SecureAssessmentConfiguration
 description: 更新 windows10SecureAssessmentConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e55b584972c59d061d20785f7877551836998ebb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8291ca608bda0f18152999747381d3649e88f6fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844546"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917361"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>更新 windows10SecureAssessmentConfiguration
 

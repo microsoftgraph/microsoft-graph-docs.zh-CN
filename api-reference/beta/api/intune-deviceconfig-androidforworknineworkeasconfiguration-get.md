@@ -3,12 +3,13 @@ title: 获取 androidForWorkNineWorkEasConfiguration
 description: 读取属性和 androidForWorkNineWorkEasConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cbe7672241f24dabe52ac38b935ef242d242094
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 87585b9946bbea1de853638f60ffb59bf9b1f927
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879483"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918614"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>获取 androidForWorkNineWorkEasConfiguration
 

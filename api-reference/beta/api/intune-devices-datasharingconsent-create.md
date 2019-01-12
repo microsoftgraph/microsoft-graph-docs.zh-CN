@@ -3,12 +3,13 @@ title: 创建 dataSharingConsent
 description: 创建新的 dataSharingConsent 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862284"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919076"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
@@ -52,7 +53,7 @@ POST /deviceManagement/dataSharingConsents
 |id|字符串|数据共享同意 Id|
 |serviceDisplayName|字符串|服务工作流的显示名称|
 |termsUrl|字符串|数据共享同意 TermsUrl|
-|授予|布尔|数据共享同意向其授予的状态|
+|授予|Boolean|数据共享同意向其授予的状态|
 |grantDateTime|DateTimeOffset|此帐户授予时间同意|
 |grantedByUpn|字符串|用户授予许可，为此帐户的 Upn|
 |grantedByUserId|字符串|授予许可，为此帐户的用户的用户 Id|

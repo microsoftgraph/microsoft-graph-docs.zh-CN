@@ -3,12 +3,13 @@ title: 获取 softwareUpdateStatusSummary
 description: 读取 softwareUpdateStatusSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 37b581963e31597869423ee8109f2aaa26bd0dcc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fca88f31b6633c3169d53c96ffea53b80014b52b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847206"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920742"
 ---
 # <a name="get-softwareupdatestatussummary"></a>获取 softwareUpdateStatusSummary
 

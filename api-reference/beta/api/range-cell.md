@@ -2,12 +2,14 @@
 title: Range:单元格
 description: 根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。返回的单元格位于相对于区域左上角的单元格的位置。
 localization_priority: Normal
-ms.openlocfilehash: 2806fdcdc6072067a4fb4012fb9dc908aa3c15f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ef9888c934a0d85f66c49e062074c2c328cafa13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915653"
 ---
 # <a name="range-cell"></a>Range:单元格
 

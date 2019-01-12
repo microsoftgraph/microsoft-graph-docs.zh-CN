@@ -3,12 +3,13 @@ title: 删除 iosManagedAppProtection
 description: 删除 iosManagedAppProtection。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 901073d54c7c8e154f5b757228d8a813a99dbfea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9d040f353dc4ec085d5d106c5980bbb560b4c07f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924536"
 ---
 # <a name="delete-iosmanagedappprotection"></a>删除 iosManagedAppProtection
 

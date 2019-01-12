@@ -3,12 +3,13 @@ title: 获取 RangeBorder
 description: 检索 rangeborder 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 647be6655f360e69daead910aa7a51cd1c020ef0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7803d80a192f1b58adbd7e658cf61f4bace4dbdb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836804"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931270"
 ---
 # <a name="get-rangeborder"></a>获取 RangeBorder
 

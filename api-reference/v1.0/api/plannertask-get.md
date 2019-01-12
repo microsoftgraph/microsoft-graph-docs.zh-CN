@@ -2,12 +2,14 @@
 title: 获取 plannerTask
 description: 检索 **plannertask** 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: be6ca0f71aaaa446424c4bf34ff6a0851c4cd266
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: c896bd204f490bb906762a0225195bd2484c8dd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833661"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924053"
 ---
 # <a name="get-plannertask"></a>获取 plannerTask
 

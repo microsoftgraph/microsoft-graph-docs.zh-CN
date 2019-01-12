@@ -3,12 +3,13 @@ title: 创建 windowsPhone81CompliancePolicy
 description: 创建新的 windowsPhone81CompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6ba95411610b8cc71917e344ad9d1d41b402be16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c03ca815b01c2b05d26c9a642a09d54005005e7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929961"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>创建 windowsPhone81CompliancePolicy
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示创建 windowsPhone81CompliancePolicy 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
