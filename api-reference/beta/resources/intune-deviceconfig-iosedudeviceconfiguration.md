@@ -3,12 +3,13 @@ title: iosEduDeviceConfiguration 资源类型
 description: iOS 教育设备配置
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 711c3acf8a462d57b5e5abfa2d453862a1145688
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 602fa35224fa716554dcb9d05b3a9253a910f180
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854045"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981019"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>iosEduDeviceConfiguration 资源类型
 
@@ -45,7 +46,7 @@ iOS 教育设备配置
 |deviceCertificateSettings|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md)|受信任的根和 PFX 设备的证书|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

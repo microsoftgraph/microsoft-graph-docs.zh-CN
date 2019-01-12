@@ -3,12 +3,13 @@ title: 列出 joinedTeams
 description: 获取用户已是直接成员的 Microsoft 团队中的团队。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: fb77d2be45956cbe1b125285863e1a1a3505187a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f2c5c67234a6e847327c28e61e7ccb2294b36d54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846429"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980856"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 

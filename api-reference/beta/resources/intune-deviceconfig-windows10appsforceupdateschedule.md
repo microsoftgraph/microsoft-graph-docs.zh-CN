@@ -3,12 +3,13 @@ title: windows10AppsForceUpdateSchedule 资源类型
 description: Windows 10 强制更新计划程序
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef8a0583bd02a62a4461a3415aae86833e24e948
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50793ee4ba26adc4b89cc8d36b3e8186debc402a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981985"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
 

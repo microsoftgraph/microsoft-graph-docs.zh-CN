@@ -2,12 +2,14 @@
 title: educationResource 资源类型
 description: 超类别的系统中的所有资源对象。 资源相关联的**工作分配**和/或**提交**，该对象表示正在学习对象
 localization_priority: Normal
-ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ac84fd9d661f31186ea65e95c680456cdabe221
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827557"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982118"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 

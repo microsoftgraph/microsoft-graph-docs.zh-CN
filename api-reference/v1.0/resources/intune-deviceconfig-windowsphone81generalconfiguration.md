@@ -1,12 +1,15 @@
 ---
 title: windowsPhone81GeneralConfiguration 资源类型
 description: 本主题提供由 windowsPhone81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-ms.openlocfilehash: cd2126edcbc356584195d6cc640888f33ec48c97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: fd792d1dd398a3e62f66c3e6ccafa4a147ac7f97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27010856"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982524"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>windowsPhone81GeneralConfiguration 资源类型
 

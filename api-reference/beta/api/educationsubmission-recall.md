@@ -3,12 +3,13 @@ title: educationSubmission： 记忆功能
 description: '指示学生想要收回提交。 此操作仅可通过学生。 '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: a94d1c66764128d15c1017b664f9d4a6bd3f57fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9e9155244522d7f1f8c61263aff6de4c87faab4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984407"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission： 记忆功能
 

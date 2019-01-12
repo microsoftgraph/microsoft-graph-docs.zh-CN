@@ -3,12 +3,13 @@ title: 创建用户
 description: 新建用户对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d654f287478b140f64f14a4814850a4c9d19ff7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1b1789cbf0743384780147ce8c50f5472f9f2d64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866666"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981502"
 ---
 # <a name="create-user"></a>创建 user
 

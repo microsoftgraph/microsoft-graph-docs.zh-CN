@@ -3,12 +3,13 @@ title: 获取 deviceConfigurationUserOverview
 description: 读取 deviceConfigurationUserOverview 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5825241cbd1c85e1791a0f6ba007f55a6c680c0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9bb6ea65034d3a376a94b2009e51bdf9dd68b8dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982622"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>获取 deviceConfigurationUserOverview
 

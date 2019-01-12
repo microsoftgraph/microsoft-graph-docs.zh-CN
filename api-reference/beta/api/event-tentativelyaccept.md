@@ -3,12 +3,13 @@ title: 'event: tentativelyAccept'
 description: 暂时接受用户日历中的指定的事件。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: cfa285659695bf17bfc7e3eea05343714951d761
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d947e5feaa6a420087cb4acf285fb196ca834eb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980592"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -55,7 +56,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
-|sendResponse|布尔|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 

@@ -1,14 +1,15 @@
 ---
 title: 列出分区
 description: 检索 onenoteSection 对象的列表。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 044f0ae49c3f69c4a7a5d4a33af1d4aeab609213
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 3bb264f970160efcbe555e3229ade6d7cb33d185
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982454"
 ---
 # <a name="list-sections"></a>列出分区
 

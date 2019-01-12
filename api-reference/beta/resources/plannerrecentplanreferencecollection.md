@@ -2,12 +2,14 @@
 title: plannerRecentPlanReferenceCollection 资源类型
 description: '**PlannerRecentPlanReferenceCollection**资源代表最近已由用户查看的计划对引用的集合。 此资源是开放的类型，plannerUser 对象的一部分。 属性名称是相应计划的 ID。 属性值对中的值是 plannerRecentPlanReference 对象。'
 localization_priority: Normal
-ms.openlocfilehash: e77769cbe3a7e53dce518c73cd7c5228d1077dac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 84eaedb2f37aefae32b5efac1e5a4a5dfb38e0d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877341"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980760"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>plannerRecentPlanReferenceCollection 资源类型
 
