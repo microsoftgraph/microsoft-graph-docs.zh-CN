@@ -3,12 +3,13 @@ title: 更新 mobileAppTroubleshootingEvent
 description: 更新 mobileAppTroubleshootingEvent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1dee1ecb19f58412acbdcf529991f2491e0deabb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ec0c30cc2c37e65fa0a6adebf0bd3a171530640d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940069"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 

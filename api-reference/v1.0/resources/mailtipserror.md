@@ -2,19 +2,21 @@
 title: mailTipsError 资源类型
 description: 操作过程中发生的错误。
 localization_priority: Normal
-ms.openlocfilehash: a4916bc34d7c76dc6c6592ee03e64b20a6485190
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892091"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934203"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
 
 操作过程中发生的错误。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:-----|:-----|:-----|
 | message | 字符串 | 错误消息。 |
 | code | 字符串 | 错误代码。 |

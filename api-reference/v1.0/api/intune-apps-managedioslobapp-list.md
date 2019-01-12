@@ -3,12 +3,13 @@ title: 列出 managedIOSLobApps
 description: 列出 managedIOSLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a440b38a3d8c8b2c6d8d4f1ca1ea95320e5dd2f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e79876f822874a8c4e21c45b0e7f353a0be1b0b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935477"
 ---
 # <a name="list-managedioslobapps"></a>列出 managedIOSLobApps
 

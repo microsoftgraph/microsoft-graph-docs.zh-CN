@@ -3,12 +3,13 @@ title: rolePermission 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e284198b7b2e6ad3fe120bd1c17c96a1872b793
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b8b9ba237052fef2b4caa8123d147ea1782fa9b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816602"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932803"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 

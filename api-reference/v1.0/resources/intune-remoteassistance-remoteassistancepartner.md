@@ -3,12 +3,13 @@ title: remoteAssistancePartner 资源类型
 description: remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da82d42d3ddfe673b912477aaacd034380c96be3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc0f788d9a083b1d1b6dda30170a06fd62d80908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889402"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915576"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 

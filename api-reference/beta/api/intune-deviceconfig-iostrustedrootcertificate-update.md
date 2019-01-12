@@ -3,12 +3,13 @@ title: 更新 iosTrustedRootCertificate
 description: 更新 iosTrustedRootCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74023665c8690373a6804cb586fe639b45491ed8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8050d9809541703f0ad3f659f22c4eddc880879d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931935"
 ---
 # <a name="update-iostrustedrootcertificate"></a>更新 iosTrustedRootCertificate
 

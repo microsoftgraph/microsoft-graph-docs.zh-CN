@@ -3,12 +3,13 @@ title: updatePriorities 操作
 description: 更新策略优先级。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2aeffb76268266f239413437369cefddadb72cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 15c57de2077842ff2115770859fc34357e0f6a22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940475"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 
@@ -47,7 +48,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |officeConfigurationPolicyIds|String 集合|Office 配置策略 id 列表|
 |officeConfigurationPriorities|Int32 集合|Office 配置优先级列表|

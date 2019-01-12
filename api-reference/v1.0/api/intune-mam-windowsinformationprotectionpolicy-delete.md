@@ -3,12 +3,13 @@ title: 删除 windowsInformationProtectionPolicy
 description: 删除 windowsInformationProtectionPolicy。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa7cf18266c9e619c2d194286272640a5fdfd4bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01c9f2d9bb3f4f0b6471030acfa8bad4d0fe6d25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933678"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>删除 windowsInformationProtectionPolicy
 

@@ -3,12 +3,13 @@ title: windowsManagedDevice 资源类型
 description: 托管或通过 Intune pre-enrolled Windows 设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc1b55694881b913fac57edeff3d9e1f9e48f099
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54b11d8ee0a5b2c7b325289c897fe2e511ec3b4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933391"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice 资源类型
 
@@ -101,7 +102,7 @@ ms.locfileid: "27872728"
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|配置管理器客户端健康状态，仅供设备从[managedDevice](../resources/intune-devices-manageddevice.md)由继承 MDM/ConfigMgr 代理管理|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承上当前安装的所有应用程序|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|从[managedDevice](../resources/intune-devices-manageddevice.md)设备类别继承|

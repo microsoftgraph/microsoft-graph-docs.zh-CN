@@ -3,12 +3,13 @@ title: 列出 ChartPointsCollection
 description: 检索 chartpoint 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0e48904a07d2f4202be536596675c77c8cfae3cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: efe33bcaecd8583fc7d0a19bddfde3502f2e54d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813592"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931949"
 ---
 # <a name="list-chartpointscollection"></a>列出 ChartPointsCollection
 

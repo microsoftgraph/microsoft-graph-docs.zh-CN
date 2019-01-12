@@ -3,12 +3,13 @@ title: 获取 settingStateDeviceSummary
 description: 读取 settingStateDeviceSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b174e5e262d554493cc1bca11b97e0157b16cb7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9ab2a547bbc5ef888fc3f7dbee4ddd1934ce5b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811254"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941868"
 ---
 # <a name="get-settingstatedevicesummary"></a>获取 settingStateDeviceSummary
 

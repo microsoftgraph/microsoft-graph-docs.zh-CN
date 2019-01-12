@@ -3,12 +3,13 @@ title: 创建 webApp
 description: 创建新的 webApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e6ee095d9c162f8fe738716b4c966d6560d24dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e527046d7ffc2c3fce99ec251a5aea21801c2ea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882087"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933657"
 ---
 # <a name="create-webapp"></a>创建 webApp
 

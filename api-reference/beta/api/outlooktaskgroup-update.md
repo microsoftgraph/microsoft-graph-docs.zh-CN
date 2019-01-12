@@ -3,12 +3,13 @@ title: 更新 outlooktaskgroup
 description: 更新 Outlook 任务组的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0287d7a94dcfb74e43e22571b20fd52d5f888740
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ecea8487e0fedfdf3658d5f04c0ae8d96dcd5d93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827347"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940412"
 ---
 # <a name="update-outlooktaskgroup"></a>更新 outlooktaskgroup
 

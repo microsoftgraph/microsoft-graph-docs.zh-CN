@@ -3,12 +3,13 @@ title: 删除 iosDeviceFeaturesConfiguration
 description: 删除 iosDeviceFeaturesConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7255cdadd362a95af2782e04892895919e1b5bab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 49d4cb6de72e6e67fb6978590de30a8dbbf69801
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939355"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>删除 iosDeviceFeaturesConfiguration
 

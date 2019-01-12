@@ -3,12 +3,13 @@ title: mobileThreatDefenseConnector 资源类型
 description: 表示移动威胁防护合作伙伴连接的实体。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fe8ba684ac84cc3351234cab7ebfe1f758a259a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 46f4c353215c810a4e9873404cd33a01c3bda208
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810036"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941882"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 

@@ -3,12 +3,13 @@ title: appleDeviceFeaturesConfigurationBase 资源类型
 description: Apple 设备功能配置的配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5c404f30ef606aa43f894e6d8f5db03137b671d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a5eb731bad478da1d409b4f6153c344538f7f69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933209"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase 资源类型
 
@@ -40,7 +41,7 @@ Apple 设备功能配置的配置文件。
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

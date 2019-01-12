@@ -2,12 +2,14 @@
 title: 'mailFolder: delta'
 description: 获取用户邮箱中已添加、删除或移除的邮件文件夹集。
 localization_priority: Normal
-ms.openlocfilehash: c26d11426c2b2066a4f5fc93b46b8e9b5b79973a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6ada2b7356742ee2d50402d77acb41ecb430fbae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889346"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939558"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

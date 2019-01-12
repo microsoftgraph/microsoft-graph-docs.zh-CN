@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取文件或文件夹
 localization_priority: Normal
-ms.openlocfilehash: 54fd97d30293f948de2ee3c9e194abfe6807797a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 977209dba7284bb8f4f1abe5037d229f4a5a34c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883675"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945459"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 

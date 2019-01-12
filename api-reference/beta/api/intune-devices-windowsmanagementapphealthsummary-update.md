@@ -3,12 +3,13 @@ title: 更新 windowsManagementAppHealthSummary
 description: 更新 windowsManagementAppHealthSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c3e60a3fe75e805e6513f3007e214dde904c0bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887190"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940916"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>更新 windowsManagementAppHealthSummary
 

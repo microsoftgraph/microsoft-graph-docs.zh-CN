@@ -3,12 +3,13 @@ title: 创建 windows81SCEPCertificateProfile
 description: 创建新的 windows81SCEPCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d4b1bf9a48733f0b4f396804a4dd8bce0ebd06e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 16ced7a6d7a6a012f60da251cbd5dbccda5fc212
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939572"
 ---
 # <a name="create-windows81scepcertificateprofile"></a>创建 windows81SCEPCertificateProfile
 

@@ -2,12 +2,14 @@
 title: androidManagedStoreAppConfigurationSchemaItem 资源类型
 description: 在 Android 应用程序的自定义配置架构的单个配置项。
 localization_priority: Normal
-ms.openlocfilehash: 05bf7e945ef645368c4b421b2180e4f4c342ec69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 08c73a177e176ddf82ae64c4eb6b8efd0c662c97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927966"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
 

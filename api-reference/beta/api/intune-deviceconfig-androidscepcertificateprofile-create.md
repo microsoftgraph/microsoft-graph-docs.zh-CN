@@ -3,12 +3,13 @@ title: 创建 androidScepCertificateProfile
 description: 创建新的 androidScepCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a17667834e01a75415838b5f84d1197d9ec2bc96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1eb4e8c1256ab97ece7ac39a4f1ec462bab3fc97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944038"
 ---
 # <a name="create-androidscepcertificateprofile"></a>创建 androidScepCertificateProfile
 

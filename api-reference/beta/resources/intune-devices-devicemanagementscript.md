@@ -3,12 +3,13 @@ title: deviceManagementScript 资源类型
 description: Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入设备上运行其 Powershell 脚本。 一次或定期，可以运行该脚本。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811044"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932306"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 

@@ -3,12 +3,13 @@ title: 'event: decline'
 description: 拒绝邀请用户日历中指定的事件。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 218ca79b05507fc63ba6f45e2fcb5dd4a0835361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: b59d6717d51dc2f72e49c8e4f971f54950674bc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866953"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916494"
 ---
 # <a name="event-decline"></a>event: decline
 

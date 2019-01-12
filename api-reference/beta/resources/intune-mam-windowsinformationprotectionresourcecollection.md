@@ -3,12 +3,13 @@ title: windowsInformationProtectionResourceCollection 资源类型
 description: Windows 信息保护资源集合
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf1d7881c7028e14a048d3f286f684f26393ab58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2a65704170c048f4aae66876f11ef8543c7b09e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933006"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
 

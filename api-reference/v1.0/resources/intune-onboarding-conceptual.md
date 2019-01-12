@@ -2,12 +2,14 @@
 title: 在 Intune 中注册设备以进行管理
 description: " (BYOD) 注册允许用户注册其个人电话、 平板电脑或 Pc。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
 localization_priority: Normal
-ms.openlocfilehash: de2a87c08851081891ee641db50a4ca1c64cb314
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917438"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 

@@ -3,12 +3,13 @@ title: 列出 iosUpdateConfigurations
 description: 列出 iosUpdateConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f672baecf357262f258a994c20c8c3b6a8d5e365
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: acc1fbfe713f7bb5d7b9987eb65c29cbfb84494a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927470"
 ---
 # <a name="list-iosupdateconfigurations"></a>列出 iosUpdateConfigurations
 

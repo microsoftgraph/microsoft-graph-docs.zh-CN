@@ -3,12 +3,13 @@ title: locateDeviceActionResult 资源类型
 description: 查找设备操作结果
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6a4db661c706f62f170ae0a869d491d26d602eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 246fcae2a9a51822f97d7f193ff6056bee55db26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923493"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult 资源类型
 

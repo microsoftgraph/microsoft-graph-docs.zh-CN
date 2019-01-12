@@ -3,12 +3,13 @@ title: 创建 macOSEnterpriseWiFiConfiguration
 description: 创建新的 macOSEnterpriseWiFiConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c1f923c88bd53f8de41083696f669cd823c0085d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e8152c17e28429cecbfa6bb9721c6ff8c43230c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938788"
 ---
 # <a name="create-macosenterprisewificonfiguration"></a>创建 macOSEnterpriseWiFiConfiguration
 

@@ -2,12 +2,14 @@
 title: mailboxUsageDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 25cb41e38138a677bfc6636b035003bb8fc5858c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818009"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938732"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>mailboxUsageDetail 资源类型
 

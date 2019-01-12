@@ -2,12 +2,14 @@
 title: 删除 plannerBucket
 description: 删除 **plannerBucket**。
 localization_priority: Normal
-ms.openlocfilehash: 72e354da31adac48b122b7eb071d4ef8e42d97e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d1c3f0540b3a27a396229fa19dac2bcfe3a231de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933223"
 ---
 # <a name="delete-plannerbucket"></a>删除 plannerBucket
 

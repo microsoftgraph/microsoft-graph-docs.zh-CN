@@ -3,12 +3,13 @@ title: windows10ImportedPFXCertificateProfile 资源类型
 description: Windows 10 桌面和移动 PFX 导入证书配置文件
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cfbf7ae4e82ec1e673608d8e6bb40a201785a576
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 17f4e701f9914ef6884206650b497212934fa258
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932572"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>windows10ImportedPFXCertificateProfile 资源类型
 

@@ -3,12 +3,13 @@ title: windows10VpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示要连接到所需 VPN 终结点的 Windows 10 设备 （桌面或移动）。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72617e1d91a6a9ce180e63733a209bcee7e204bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 775a4dfbeb46c27264b5539c51c63b29b488565b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937766"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration 资源类型
 

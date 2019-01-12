@@ -3,12 +3,13 @@ title: 更新 administrativeunit
 description: 更新 administrativeUnit 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: b3a7de71e43b81927540c2eb8f85a45ce573e4b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: cd82035e06fbd6135f4d2f6cbb7f6dfae9576f9a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865672"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932012"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 

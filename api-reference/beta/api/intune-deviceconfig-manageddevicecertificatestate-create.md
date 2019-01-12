@@ -3,12 +3,13 @@ title: 创建 managedDeviceCertificateState
 description: 创建新的 managedDeviceCertificateState 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44c8425ece89835ff36bb4886acd27e80c43b1bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0b48550d3cea0fef3e57821f0ef89a75bdcc412a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847759"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945403"
 ---
 # <a name="create-manageddevicecertificatestate"></a>创建 managedDeviceCertificateState
 

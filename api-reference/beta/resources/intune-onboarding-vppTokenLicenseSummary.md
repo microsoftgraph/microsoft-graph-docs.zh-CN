@@ -3,12 +3,13 @@ title: vppTokenLicenseSummary 资源类型
 description: 许可证令牌中的给定应用程序的摘要。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e5972341aa3b390ae226d19f7d85fe918345c627
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0766fd4da996b57032154be98bbc22fd8c8a4a5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939957"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27824862"
 
 许可证令牌中的给定应用程序的摘要。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |vppTokenId|字符串|VPP 令牌的标识符。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|

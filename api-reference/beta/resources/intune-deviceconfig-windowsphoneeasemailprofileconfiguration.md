@@ -2,12 +2,14 @@
 title: windowsPhoneEASEmailProfileConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示与 Exchange server 通信和获取电子邮件、 联系人、 日历和任务的 Windows Phone 上的本机电子邮件客户端。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
-ms.openlocfilehash: 03442c352d0868ee8d75a16ce2934d9b8c22a992
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e48ad65da5c91278460dea2c8c6a74707f7b3f41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809819"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932495"
 ---
 # <a name="windowsphoneeasemailprofileconfiguration-resource-type"></a>windowsPhoneEASEmailProfileConfiguration 资源类型
 

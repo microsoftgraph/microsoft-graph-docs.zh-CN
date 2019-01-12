@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Normal
-ms.openlocfilehash: d27420153a295eac9d3f880910d63bd701525427
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a7c4b9e91ef128dd088252d76c6e7310460ddf6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887435"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921204"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 

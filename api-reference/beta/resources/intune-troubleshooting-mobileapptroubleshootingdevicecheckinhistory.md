@@ -3,12 +3,13 @@ title: mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6b9d900e712e3c3b126dd36671049e8935f09a83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2fc4cd56b1f900eb3198cbfc078af1e894f2035
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844945"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940958"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27844945"
 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项所发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 

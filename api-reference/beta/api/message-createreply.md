@@ -3,12 +3,13 @@ title: 'message: createReply'
 description: '创建包含评论或更新任何邮件属性的答复邮件草稿 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 45dfd80be469d6a921eb70ba54f468b531eeb047
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 27e6aabe05cb732cd40242f3c17c822c920c062e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873442"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943737"
 ---
 # <a name="message-createreply"></a>message: createReply
 

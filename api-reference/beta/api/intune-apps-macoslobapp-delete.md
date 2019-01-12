@@ -3,12 +3,13 @@ title: 删除 macOSLobApp
 description: 删除 macOSLobApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6bea41a75fed5cadbbc3b979324628b034f58ded
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c90a4b1707f0102c52afd34bec2a134e8061da1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934574"
 ---
 # <a name="delete-macoslobapp"></a>删除 macOSLobApp
 

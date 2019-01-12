@@ -3,12 +3,13 @@ title: 获取组
 description: 获取组对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 554a0b6bf6fcb4afb2a57f12e2c814cf5fa57951
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 7de0b9dac4d1bf3295cd01bbd522d1f18314c098
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873407"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917186"
 ---
 # <a name="get-group"></a>获取组
 获取组对象的属性和关系。

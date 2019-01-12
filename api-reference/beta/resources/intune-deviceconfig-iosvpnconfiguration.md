@@ -3,12 +3,13 @@ title: iosVpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 iOS 设备，以连接到所需 VPN 终结点。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ab5b53c47022b106bbe337254d6f0b1043f83c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cc9269a7e1c096b9378ed8baac32f91e4652858
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939075"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>iosVpnConfiguration 资源类型
 
@@ -63,7 +64,7 @@ ms.locfileid: "27849516"
 |excludeList|String 集合|仅 Zscaler。 不会通过 Zscaler 云发送的网络地址的列表。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

@@ -2,12 +2,14 @@
 title: 列表组成员
 description: 获取组的直接成员的列表。 一组可将用户、 联系人、 设备、 服务主体和其他组作为成员。 此操作是不可传递的。
 localization_priority: Normal
-ms.openlocfilehash: af54ef994fb0f62af43bf9f9ce3cd5fe5d2b1503
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 8fd082773c1661c182801eac67738165fff48490
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936156"
 ---
 # <a name="list-group-members"></a>列表组成员
 

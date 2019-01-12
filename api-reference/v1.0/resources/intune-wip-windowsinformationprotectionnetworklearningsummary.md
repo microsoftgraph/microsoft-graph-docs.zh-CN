@@ -3,12 +3,13 @@ title: windowsInformationProtectionNetworkLearningSummary 资源类型
 description: Windows 信息保护网络学习摘要实体。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5dff5bc310fe6c2749992100938fe668213348a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1ac2acd9ef8eeaecb0646d97246f5c8c47fc761b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937374"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>windowsInformationProtectionNetworkLearningSummary 资源类型
 

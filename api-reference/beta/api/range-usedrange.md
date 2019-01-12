@@ -3,12 +3,13 @@ title: Range:UsedRange
 description: 返回指定 range 对象的所用范围。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3ace6df8491945e405dab1f33cf628e9b97fabe4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0ae8f8bec1eea6f2e13b4c4248d55afbb28cf19d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928064"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 

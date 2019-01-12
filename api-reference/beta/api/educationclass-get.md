@@ -2,12 +2,14 @@
 title: 获取 educationClass
 description: "  组管理员表示教师类中。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
 localization_priority: Normal
-ms.openlocfilehash: 9d4a48a12d05bd7ef6bd1c6204ce23755b26019e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: ddf29c9d2a136f8f5cee24b30ef9ab1c0f9643f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874926"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935680"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 

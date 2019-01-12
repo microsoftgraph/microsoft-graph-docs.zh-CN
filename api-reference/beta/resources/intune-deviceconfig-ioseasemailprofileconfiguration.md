@@ -2,12 +2,14 @@
 title: iosEasEmailProfileConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示本机电子邮件客户端在 iOS 设备上的，与 Exchange server 通信和获取电子邮件、 联系人、 日历、 提醒和 notes。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
-ms.openlocfilehash: 32758fb8dd9aa02b93eb8129894f60a1fabce768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 050970bc5b1e3835d0b3ad801969d42c79505992
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938340"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>iosEasEmailProfileConfiguration 资源类型
 

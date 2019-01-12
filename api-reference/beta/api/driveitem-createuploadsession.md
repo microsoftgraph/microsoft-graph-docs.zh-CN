@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Normal
-ms.openlocfilehash: c8ab45f9915b16f75e8b44ad50215c4e73c13fff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865176"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936828"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 

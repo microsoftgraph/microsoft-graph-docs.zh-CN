@@ -3,12 +3,13 @@ title: 创建 restrictedAppsViolation
 description: 创建新的 restrictedAppsViolation 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b608a831427169215da9df4631f4562989105a2a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de7a461fd3591f3473ccfa8f15d85fa2dbab6808
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940566"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 

@@ -3,12 +3,13 @@ title: 删除 unsupportedDeviceConfiguration
 description: 删除 unsupportedDeviceConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d5622d8c24ba51913e710529b668a27ee274944c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2fe2891cc67c0acb025a71177ea9f15d2ff9df97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915604"
 ---
 # <a name="delete-unsupporteddeviceconfiguration"></a>删除 unsupportedDeviceConfiguration
 

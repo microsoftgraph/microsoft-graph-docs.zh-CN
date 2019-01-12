@@ -3,12 +3,13 @@ title: 从通道删除选项卡
 description: '删除 （取消锁定） 从指定的通道团队中的一个选项卡。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 59f3628cee3a65549a94a19ef8ad265d0d4a5397
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2103d63e6919e40b868071a44fb3f0a99e95049b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945172"
 ---
 # <a name="delete-tab-from-channel"></a>从通道删除选项卡
 

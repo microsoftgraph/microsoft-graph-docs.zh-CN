@@ -3,12 +3,13 @@ title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6010b699ea7915462debede5dbda7e3a4f01b518
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9bebcf3b4f06f46a5c174c4ace820d975f3bad99
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885447"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944808"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27885447"
 
 网站安全级别的可能值。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |低|1|低。|

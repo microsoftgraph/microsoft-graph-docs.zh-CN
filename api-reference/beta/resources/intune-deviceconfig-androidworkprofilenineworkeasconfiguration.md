@@ -2,12 +2,14 @@
 title: androidWorkProfileNineWorkEasConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示九工作电子邮件上的客户端 Android 工作模板设备与 Exchange server 通信和获取电子邮件、 联系人、 日历、 任务和注释。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
-ms.openlocfilehash: 3bc29aabb637c38fc90054e3100aef89d6a71a3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7ee7f42a37a882d71318acbcf0b472a808cb8104
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943961"
 ---
 # <a name="androidworkprofilenineworkeasconfiguration-resource-type"></a>androidWorkProfileNineWorkEasConfiguration 资源类型
 
@@ -50,7 +52,7 @@ ms.locfileid: "27847367"
 |syncTasks|布尔|同步任务的切换。 如果设置为 false 的任务在设备上关闭。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

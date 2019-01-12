@@ -3,12 +3,13 @@ title: 'Chart: setPosition'
 description: 相对于工作表上的单元格放置图表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e48db7ccf2a41f4dc87b15089440b9b2bf3aa10a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: dae44414db5a095c4cf12506582a9533972a0373
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894115"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941217"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 

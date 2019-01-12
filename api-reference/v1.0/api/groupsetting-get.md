@@ -3,12 +3,13 @@ title: 获取组设置
 description: 检索特定组设置对象的属性。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 286554ab89e841dbcb1b875016ceb982277e6f01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d47441a66ab0b2ed3602a69f4a92a06050708f67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894570"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936499"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 

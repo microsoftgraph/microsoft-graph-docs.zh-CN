@@ -3,12 +3,13 @@ title: 更新 windowsDomainJoinConfiguration
 description: 更新 windowsDomainJoinConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 568d4c8fa440822e32a6c21770bb33cdeaa9ec18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5e6a1430cf53326bb1d3c603f1ac30e1d0160b6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831652"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933664"
 ---
 # <a name="update-windowsdomainjoinconfiguration"></a>更新 windowsDomainJoinConfiguration
 

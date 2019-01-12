@@ -3,12 +3,13 @@ title: 更新 androidWorkProfileGeneralDeviceConfiguration
 description: 更新 androidWorkProfileGeneralDeviceConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf63828d10f82feaae44ee1ddff1ec4625b3c957
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c9e150fc722842c3d904f2cb06a4127e96fc61c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815951"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943954"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>更新 androidWorkProfileGeneralDeviceConfiguration
 

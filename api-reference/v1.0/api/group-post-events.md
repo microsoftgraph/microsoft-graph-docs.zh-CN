@@ -3,12 +3,13 @@ title: 创建事件
 description: 使用此 API 新建事件。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 5dcd32f122441d4005c7b753142cf6060630e1b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 1d264ec205d8f94027a8121253819c2613d1f4d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875521"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941119"
 ---
 # <a name="create-event"></a>创建事件
 使用此 API 新建[事件](../resources/event.md)。

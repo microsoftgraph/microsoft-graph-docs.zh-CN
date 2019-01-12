@@ -3,12 +3,13 @@ title: 使用进度表 REST API
 description: 可以使用在 Microsoft Graph 计划程序 API 创建任务并将其分配给 Office 365 中的某个组中的用户。
 author: TarkanSevilmis
 localization_priority: Priority
-ms.openlocfilehash: 8a7df9b28efedd128e533eda88d09583ebf12dbc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858021"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944087"
 ---
 # <a name="use-the-planner-rest-api"></a>使用进度表 REST API
 

@@ -2,12 +2,14 @@
 title: 'group: delta'
 description: 获取新创建、 更新或删除组，而无需执行整个组集合的完全读取包括组成员身份更改。 有关详细信息，请参阅使用增量查询。
 localization_priority: Normal
-ms.openlocfilehash: 5645fa950faca9f5a49b9db6288eb138553aad0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 032dc8906c14ad0ea89ca8eda55d4dc53637efe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887869"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936324"
 ---
 # <a name="group-delta"></a>group: delta
 

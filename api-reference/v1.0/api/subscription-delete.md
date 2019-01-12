@@ -2,12 +2,13 @@
 title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
-ms.openlocfilehash: a5bd1998df3a7e3a8896fa770c0dbdd72cd59940
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: eeed4a7f6981a89a1869257bed339eb6895f25b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932579"
 ---
 # <a name="delete-subscription"></a>删除订阅
 

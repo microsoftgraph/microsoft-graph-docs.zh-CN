@@ -2,12 +2,14 @@
 title: 'group: getMemberGroups'
 description: 返回指定组所属的所有组。检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
 localization_priority: Priority
-ms.openlocfilehash: 3af6672b38271cea3fea94de535b91d2efee9b45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934279"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 发送访问项的邀请
 localization_priority: Normal
-ms.openlocfilehash: 93fa30cc3e7999ba00bbcf591876c90253b77a7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: f428fe7b8a61fc158d4175f50fb287760e25d524
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945976"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 

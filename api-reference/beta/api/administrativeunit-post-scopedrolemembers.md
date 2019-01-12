@@ -2,12 +2,14 @@
 title: 添加 scopedRoleMember
 description: 添加新 scopedRoleMembership。 注意： 只有*用户帐户管理员*和*技术支持管理员*角色当前支持范围角色成员身份。
 localization_priority: Normal
-ms.openlocfilehash: e2ff1803ac0357fa8fef9e1cf68b2ff78f877895
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6dce85d891c9d124d1d57d14a8a7309fb766b895
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936681"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 

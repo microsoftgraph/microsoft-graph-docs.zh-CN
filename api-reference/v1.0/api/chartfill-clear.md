@@ -3,12 +3,13 @@ title: 'ChartFill: clear'
 description: 清除图表元素的填充颜色。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 30e56f09c3fa2a98ac8cef2177f0f568accb6e17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b9a43093d00f6230e10333bf3ea0d8adb5a859f1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841529"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918040"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 

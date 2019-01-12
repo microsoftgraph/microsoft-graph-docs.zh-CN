@@ -3,12 +3,13 @@ title: 获取 mobileAppAssignment
 description: 读取 mobileAppAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 790b6e6a8c0f970c7f4b0aa13ed739cec585d9d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cfe75ae8f99644824cfb540b3dcda4d86c711348
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831120"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946117"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
 

@@ -3,12 +3,13 @@ title: 获取选项卡
 description: '检索的属性和指定的选项卡的关系。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: f08853cb1969427bfbabac8bd5e6e446b1142ffe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c9aa65401681797723aeda00ea0fde6a7c5bee08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944073"
 ---
 # <a name="get-tab"></a>获取选项卡
 

@@ -3,12 +3,13 @@ title: 删除 windowsDomainJoinConfiguration
 description: 删除 windowsDomainJoinConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 04ef2c85351614533e21a107e8e1cbf9636bd753
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 772108c58788763d97109f3605fee631df222aa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821719"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944353"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>删除 windowsDomainJoinConfiguration
 

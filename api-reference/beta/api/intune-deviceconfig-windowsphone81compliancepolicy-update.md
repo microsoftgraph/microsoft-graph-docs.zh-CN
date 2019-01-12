@@ -3,12 +3,13 @@ title: 更新 windowsPhone81CompliancePolicy
 description: 更新 windowsPhone81CompliancePolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 83c62aad2ac444bf65b30864809869383a4be552
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6357ed5b20689dd5059d63869cf5b35e745bdf4d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838666"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938403"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>更新 windowsPhone81CompliancePolicy
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 下表显示创建 [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

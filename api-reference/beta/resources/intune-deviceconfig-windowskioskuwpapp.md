@@ -3,12 +3,13 @@ title: windowsKioskUWPApp 资源类型
 description: 一种类型的应用程序的基类
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8719fdd248276a657b96235c592f1bb62607b856
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934910"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27871860"
 继承自[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始布局继承[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)从应用程序图块大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|字符串|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)代表应用程序继承的友好名称|

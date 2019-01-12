@@ -3,12 +3,13 @@ title: depMacOSEnrollmentProfile 资源类型
 description: DepMacOSEnrollmentProfile 资源表示为 macOS 配置特定的 Apple 设备注册程序 (DEP) 注册配置文件。 相应的设备可以通过部署注册之前，必须将此类型的配置文件分配给 Apple DEP 序列号
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb0e61681d47da2b3008d2589bfe6720ca89a8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 617650afee6f3eac142ffe69d6b187a5e71b0143
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939327"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile 资源类型
 

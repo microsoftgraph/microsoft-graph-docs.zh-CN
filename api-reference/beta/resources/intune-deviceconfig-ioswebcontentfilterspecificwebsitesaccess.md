@@ -2,12 +2,14 @@
 title: iosWebContentFilterSpecificWebsitesAccess 资源类型
 description: 代表 iOS Web 内容筛选器设置类型，这将 URL 的书签安装到 iOS 内置浏览器。 示例方案是在课堂教师希望学生导航在浏览器书签其 iOS 的设备和不能访问其他网站上配置的网站。
 localization_priority: Normal
-ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3b117aca95c43f36c216d6249221d689ae2da325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942694"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>iosWebContentFilterSpecificWebsitesAccess 资源类型
 
@@ -20,7 +22,7 @@ ms.locfileid: "27844952"
 继承自[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |specificWebsitesOnly|[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)集合|将内置的浏览器和用户安装 URL 书签只允许通过书签访问网站。 该集合最多可包含 500 个元素。|
 |websiteList|[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)集合|将内置的浏览器和用户安装 URL 书签只允许通过书签访问网站。 该集合最多可包含 500 个元素。|

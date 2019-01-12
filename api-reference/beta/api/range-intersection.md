@@ -3,12 +3,13 @@ title: Range:Intersection
 description: 获取表示给定范围的矩形交集的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 093a86daa5b80337bb5f760185f55e8a06f4b37a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 819cdf8508f042f76cc154832055a81d78d809eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877817"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933804"
 ---
 # <a name="range-intersection"></a>Range:Intersection
 
