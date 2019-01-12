@@ -3,57 +3,58 @@ title: 'workbookRange: columnsBefore'
 description: 获取给定范围左侧的一定数量的列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8eff3ffd7291f9e3ae3537fc660760550b3b536e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 45c70e0e74f351cde3c74ee547e2492ee0ba05a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830112"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923563"
 ---
-# <a name="workbookrange-columnsbefore"></a><span data-ttu-id="75ffe-103">workbookRange: columnsBefore</span><span class="sxs-lookup"><span data-stu-id="75ffe-103">workbookRange: columnsBefore</span></span>
+# <a name="workbookrange-columnsbefore"></a><span data-ttu-id="e4b6f-103">workbookRange: columnsBefore</span><span class="sxs-lookup"><span data-stu-id="e4b6f-103">workbookRange: columnsBefore</span></span>
 
-> <span data-ttu-id="75ffe-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="75ffe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="75ffe-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="75ffe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e4b6f-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e4b6f-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="75ffe-106">获取给定范围左侧的一定数量的列。</span><span class="sxs-lookup"><span data-stu-id="75ffe-106">Gets a certain number of columns to the left of the given range.</span></span>
+<span data-ttu-id="e4b6f-106">获取给定范围左侧的一定数量的列。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-106">Gets a certain number of columns to the left of the given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75ffe-107">权限</span><span class="sxs-lookup"><span data-stu-id="75ffe-107">Permissions</span></span>
-<span data-ttu-id="75ffe-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="75ffe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4b6f-107">权限</span><span class="sxs-lookup"><span data-stu-id="e4b6f-107">Permissions</span></span>
+<span data-ttu-id="e4b6f-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="75ffe-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="75ffe-110">Permission type</span></span>      | <span data-ttu-id="75ffe-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="75ffe-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e4b6f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e4b6f-110">Permission type</span></span>      | <span data-ttu-id="e4b6f-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e4b6f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="75ffe-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75ffe-112">Delegated (work or school account)</span></span> | <span data-ttu-id="75ffe-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75ffe-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="75ffe-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75ffe-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75ffe-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="75ffe-115">Not supported.</span></span>    |
-|<span data-ttu-id="75ffe-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="75ffe-116">Application</span></span> | <span data-ttu-id="75ffe-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="75ffe-117">Not supported.</span></span> |
+|<span data-ttu-id="e4b6f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e4b6f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e4b6f-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4b6f-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e4b6f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e4b6f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4b6f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-115">Not supported.</span></span>    |
+|<span data-ttu-id="e4b6f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e4b6f-116">Application</span></span> | <span data-ttu-id="e4b6f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="75ffe-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75ffe-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4b6f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e4b6f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="75ffe-119">函数参数</span><span class="sxs-lookup"><span data-stu-id="75ffe-119">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="e4b6f-119">函数参数</span><span class="sxs-lookup"><span data-stu-id="e4b6f-119">Function parameters</span></span>
 
-| <span data-ttu-id="75ffe-120">参数</span><span class="sxs-lookup"><span data-stu-id="75ffe-120">Parameter</span></span>    | <span data-ttu-id="75ffe-121">类型</span><span class="sxs-lookup"><span data-stu-id="75ffe-121">Type</span></span>   |<span data-ttu-id="75ffe-122">说明</span><span class="sxs-lookup"><span data-stu-id="75ffe-122">Description</span></span>|
+| <span data-ttu-id="e4b6f-120">参数</span><span class="sxs-lookup"><span data-stu-id="e4b6f-120">Parameter</span></span>    | <span data-ttu-id="e4b6f-121">类型</span><span class="sxs-lookup"><span data-stu-id="e4b6f-121">Type</span></span>   |<span data-ttu-id="e4b6f-122">说明</span><span class="sxs-lookup"><span data-stu-id="e4b6f-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75ffe-123">count</span><span class="sxs-lookup"><span data-stu-id="75ffe-123">count</span></span>|<span data-ttu-id="75ffe-124">Int32</span><span class="sxs-lookup"><span data-stu-id="75ffe-124">Int32</span></span>|<span data-ttu-id="75ffe-p103">生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="75ffe-p103">The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
+|<span data-ttu-id="e4b6f-123">count</span><span class="sxs-lookup"><span data-stu-id="e4b6f-123">count</span></span>|<span data-ttu-id="e4b6f-124">Int32</span><span class="sxs-lookup"><span data-stu-id="e4b6f-124">Int32</span></span>|<span data-ttu-id="e4b6f-p103">生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-p103">The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="75ffe-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="75ffe-129">Request headers</span></span>
-| <span data-ttu-id="75ffe-130">名称</span><span class="sxs-lookup"><span data-stu-id="75ffe-130">Name</span></span>       | <span data-ttu-id="75ffe-131">说明</span><span class="sxs-lookup"><span data-stu-id="75ffe-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4b6f-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="e4b6f-129">Request headers</span></span>
+| <span data-ttu-id="e4b6f-130">名称</span><span class="sxs-lookup"><span data-stu-id="e4b6f-130">Name</span></span>       | <span data-ttu-id="e4b6f-131">说明</span><span class="sxs-lookup"><span data-stu-id="e4b6f-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="75ffe-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="75ffe-132">Authorization</span></span>  | <span data-ttu-id="75ffe-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="75ffe-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="75ffe-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="75ffe-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="75ffe-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="75ffe-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e4b6f-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4b6f-132">Authorization</span></span>  | <span data-ttu-id="e4b6f-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4b6f-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e4b6f-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="e4b6f-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="75ffe-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="75ffe-138">Request body</span></span>
-<span data-ttu-id="75ffe-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="75ffe-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4b6f-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="e4b6f-138">Request body</span></span>
+<span data-ttu-id="e4b6f-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="75ffe-140">响应</span><span class="sxs-lookup"><span data-stu-id="75ffe-140">Response</span></span>
-<span data-ttu-id="75ffe-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="75ffe-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e4b6f-140">响应</span><span class="sxs-lookup"><span data-stu-id="e4b6f-140">Response</span></span>
+<span data-ttu-id="e4b6f-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75ffe-142">示例</span><span class="sxs-lookup"><span data-stu-id="75ffe-142">Example</span></span>
-<span data-ttu-id="75ffe-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="75ffe-143">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="75ffe-144">请求</span><span class="sxs-lookup"><span data-stu-id="75ffe-144">Request</span></span>
-<span data-ttu-id="75ffe-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="75ffe-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e4b6f-142">示例</span><span class="sxs-lookup"><span data-stu-id="e4b6f-142">Example</span></span>
+<span data-ttu-id="e4b6f-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e4b6f-144">请求</span><span class="sxs-lookup"><span data-stu-id="e4b6f-144">Request</span></span>
+<span data-ttu-id="e4b6f-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "workbookrange_columnsbefore"
@@ -62,8 +63,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
-##### <a name="response"></a><span data-ttu-id="75ffe-146">响应</span><span class="sxs-lookup"><span data-stu-id="75ffe-146">Response</span></span>
-<span data-ttu-id="75ffe-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="75ffe-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e4b6f-146">响应</span><span class="sxs-lookup"><span data-stu-id="e4b6f-146">Response</span></span>
+<span data-ttu-id="e4b6f-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e4b6f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
