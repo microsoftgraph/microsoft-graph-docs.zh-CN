@@ -3,12 +3,13 @@ title: macOSTrustedRootCertificate 资源类型
 description: OS X 受信任根证书配置配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c7c39be9a4c09b5235ef10e17eab3c0bbfac2f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 70b179a147a0c0e5358be87319c9afc29dea00e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851406"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963001"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>macOSTrustedRootCertificate 资源类型
 
@@ -44,7 +45,7 @@ OS X 受信任根证书配置配置文件。
 |certFileName|字符串|若要在 UI 中显示的文件名。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

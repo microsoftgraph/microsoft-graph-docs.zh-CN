@@ -3,12 +3,13 @@ title: plannerFavoritePlanReferenceCollection 资源类型
 description: " 值是 plannerFavoritePlanReference 对象。"
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 933589d455a683598576aa5c83df8bd19e6b553f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 333d7f354f056945de52687eefc8bb862ac48e75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828439"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967110"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection 资源类型
 

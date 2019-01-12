@@ -3,12 +3,13 @@ title: 更新 chartgridlines
 description: 更新 chartgridlines 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 716c7f8224eb24b9591f6bf14ddc2eb360b54714
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5d6a3c7a0fbec4686dafaf5d6ffdc5cc669ae89e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956484"
 ---
 # <a name="update-chartgridlines"></a>更新 chartgridlines
 

@@ -3,12 +3,13 @@ title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb172bb321e39d8d75b10f7c695ee02314468585
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4756c95fb9ebba3125c3a3dbbbdb82ec7d76c111
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967439"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
 

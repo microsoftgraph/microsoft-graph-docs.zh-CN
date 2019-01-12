@@ -2,12 +2,14 @@
 title: 创建通道
 description: 在 Microsoft 团队，在请求正文中的规定创建新的通道。
 localization_priority: Priority
-ms.openlocfilehash: d80659a3ecb69a33a9ea3a23a9ce94f13d6b95a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 09d058d9dc64fff053cd0ec507357f2990aeb353
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957338"
 ---
 # <a name="create-channel"></a>创建通道
 

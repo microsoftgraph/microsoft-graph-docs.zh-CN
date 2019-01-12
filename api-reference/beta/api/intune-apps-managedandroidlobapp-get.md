@@ -3,12 +3,13 @@ title: 获取 managedAndroidLobApp
 description: 读取 managedAndroidLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06604421b274b6ba5900f5e7cba636f8a8e41bb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f28b352d1fa15902016db9005f355a27194eb2ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838232"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965500"
 ---
 # <a name="get-managedandroidlobapp"></a>获取 managedAndroidLobApp
 

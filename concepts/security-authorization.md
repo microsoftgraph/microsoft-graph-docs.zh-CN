@@ -1,13 +1,15 @@
 ---
 title: 授权和 Microsoft Graph 安全性 API
 description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很敏感的，它受到权限和 Azure Active Directory (Azure AD) 角色保护。
-author: Preetikr
-ms.openlocfilehash: d9757b9e105174ac7c111216789d9d3dcba8f3c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: preetikr
+localization_priority: Priority
+ms.prod: security
+ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947083"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 

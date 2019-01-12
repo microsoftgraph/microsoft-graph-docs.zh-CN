@@ -3,12 +3,13 @@ title: WorksheetProtectionOptions 资源类型
 description: 代表工作表保护中的选项。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8753ae0b266c2bb3c44fdc3b10f843c58a522627
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e28169e4eeedd5e967e31e0b92b5ab35515337c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845658"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957485"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions 资源类型
 

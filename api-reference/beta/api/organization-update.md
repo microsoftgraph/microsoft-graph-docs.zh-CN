@@ -2,12 +2,14 @@
 title: 更新组织
 description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
-ms.openlocfilehash: ae91b0f7cf92619f07f042c515bad2aab0d1035a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5ed49dcd0546fedf16572bcf75a8c4366395f1fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964436"
 ---
 # <a name="update-organization"></a>更新组织
 

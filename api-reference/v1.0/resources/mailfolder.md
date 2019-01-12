@@ -2,12 +2,14 @@
 title: mailFolder 资源类型
 description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 localization_priority: Priority
-ms.openlocfilehash: 32af125f57e02394c4d01913aaf783df11809242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920112"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -26,7 +28,7 @@ GET /me/mailFolders/drafts
 
 已知名称工作无论用户的邮箱的区域设置上述查询将始终返回命名方式无论用户的草稿文件夹。
 
-| 已知文件夹名称 | Description |
+| 已知文件夹名称 | 说明 |
 |:-----------------------|:------------|
 | 存档 | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
 | 混乱 | 混乱文件夹低优先级邮件移动到时使用的混乱功能。 |

@@ -3,12 +3,13 @@ title: 获取 androidForWorkImportedPFXCertificateProfile
 description: 读取属性和 androidForWorkImportedPFXCertificateProfile 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 37f33473ab9333a4435f898f975f6d3139b7107f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f79cba0ce082e8fcc941293aff5a2c33cfeab6a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960012"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>获取 androidForWorkImportedPFXCertificateProfile
 

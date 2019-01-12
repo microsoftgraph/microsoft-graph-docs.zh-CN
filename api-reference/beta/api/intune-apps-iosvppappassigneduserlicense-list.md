@@ -3,12 +3,13 @@ title: 列表 iosVppAppAssignedUserLicenses
 description: 列出属性和 iosVppAppAssignedUserLicense 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c80063496089f6bd95e8736dd75e016d18b191b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6147bc3e36f6bf72c365160b8afdb39cff03573e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965443"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>列表 iosVppAppAssignedUserLicenses
 

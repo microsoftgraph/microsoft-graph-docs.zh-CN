@@ -3,12 +3,13 @@ title: 列表 iosVpnConfigurations
 description: 列出属性和 iosVpnConfiguration 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a13501285ccaaf3322da917eefc0e7face70eda2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e17edc4ddd0125166f26bafb8e7e1e734a640764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958024"
 ---
 # <a name="list-iosvpnconfigurations"></a>列表 iosVpnConfigurations
 

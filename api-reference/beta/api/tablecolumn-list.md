@@ -3,12 +3,13 @@ title: 列出 TableColumnCollection
 description: 检索 tablecolumn 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 56b4722c69589d8474bee10bed4fdec01dbc72bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 64bc020588d4a61e7daedc020732147b66d99053
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964688"
 ---
 # <a name="list-tablecolumncollection"></a>列出 TableColumnCollection
 

@@ -3,12 +3,13 @@ title: deviceManagementScriptRunSummary 资源类型
 description: 包含的设备管理脚本运行摘要属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2109822ce081fc18286722cb48209a4349aa2b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9676fc7f6792c3bd9771ab7ed1ccbeaa67826d3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962035"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 

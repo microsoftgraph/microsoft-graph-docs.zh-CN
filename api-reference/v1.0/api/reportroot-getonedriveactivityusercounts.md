@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveActivityUserCounts'
 description: 获取 OneDrive 活跃用户数趋势。
 localization_priority: Normal
-ms.openlocfilehash: 824aa9b51984c440118eac95a352fde2b6146cf5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: bef98fa708f62ec7d79eae0dd432ab821a9a609e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858819"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965780"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 

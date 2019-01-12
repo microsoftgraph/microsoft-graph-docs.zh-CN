@@ -3,12 +3,13 @@ title: 删除 importedDeviceIdentityResult
 description: 删除 importedDeviceIdentityResult。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72f733249f64f18ea3998fca0dfd2baafdd1dd58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9bab93c85265b09579565ca4baa5bcf8af3d769a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858182"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967859"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>删除 importedDeviceIdentityResult
 

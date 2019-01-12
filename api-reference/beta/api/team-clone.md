@@ -3,12 +3,13 @@ title: 克隆团队
 description: 创建的工作组的副本。 此操作还将创建相应的组的副本。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 262cbe4bd17cc1ab3abded49b65868d0b8039e70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958339"
 ---
 # <a name="clone-a-team"></a>克隆团队
 

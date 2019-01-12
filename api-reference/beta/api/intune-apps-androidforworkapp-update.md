@@ -2,12 +2,14 @@
 title: 更新 androidForWorkApp
 description: 更新 androidForWorkApp 对象的属性。
 author: tfitzmac
-ms.openlocfilehash: 4697de749fbc4308118c9e82bda839b3871853c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 2bab6f4e9f042bff37284258eb025baf5077bf97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960138"
 ---
 # <a name="update-androidforworkapp"></a>更新 androidForWorkApp
 
@@ -40,7 +42,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

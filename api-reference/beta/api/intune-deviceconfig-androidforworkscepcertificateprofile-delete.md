@@ -3,12 +3,13 @@ title: 删除 androidForWorkScepCertificateProfile
 description: 删除 androidForWorkScepCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5705e543bf32237823cae3abd72a27d2680538f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f113d54af683aafb09aa920791c0ef5ecdb8227
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958745"
 ---
 # <a name="delete-androidforworkscepcertificateprofile"></a>删除 androidForWorkScepCertificateProfile
 

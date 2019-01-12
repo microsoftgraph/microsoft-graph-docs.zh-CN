@@ -3,12 +3,13 @@ title: 创建 deviceComplianceSettingState
 description: 创建新的 deviceComplianceSettingState 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ef4061f659429b4e43f40fd502caaad77ef0894
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e7c79676eac77cebe645c0c26785421dd0dc278b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959078"
 ---
 # <a name="create-devicecompliancesettingstate"></a>创建 deviceComplianceSettingState
 

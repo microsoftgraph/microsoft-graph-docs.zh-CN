@@ -3,12 +3,13 @@ title: 列出 androidManagedAppRegistrations
 description: 列出 androidManagedAppRegistration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e36b538d9eda0d7b161e1699b5f777683d1be51e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aea2f154a74dc61219884ca832379753a3cbf7e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852330"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967124"
 ---
 # <a name="list-androidmanagedappregistrations"></a>列出 androidManagedAppRegistrations
 

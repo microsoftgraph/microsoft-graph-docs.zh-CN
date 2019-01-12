@@ -2,12 +2,14 @@
 title: 'group: getMemberObjects'
 description: 返回此组所属的全部组。检查是可传递的。注意：组不能是目录角色的成员，因此不会返回任何目录角色。
 localization_priority: Normal
-ms.openlocfilehash: fac39adebc8220458b3fcd0a46a5de5f6e27ab4a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5c6ab89b0d5110f791ccd75812104588febeb8ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891257"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957436"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 返回此组所属的全部组。检查是可传递的。注意：组不能是目录角色的成员，因此不会返回任何目录角色。

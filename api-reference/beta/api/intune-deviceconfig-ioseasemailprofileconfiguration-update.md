@@ -3,12 +3,13 @@ title: 更新 iosEasEmailProfileConfiguration
 description: 更新 iosEasEmailProfileConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a3d31e88c248d57dcba1eb5531751a2d1e213bf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a82c5efe6a9967de2f20a2e97bbe4b4999ae34a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858483"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916759"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>更新 iosEasEmailProfileConfiguration
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -65,16 +66,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |customDomainName|字符串|在设备上安装之前生成的电子邮件配置文件时使用的自定义域名称值。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|字符串|帐户名。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`。|
-|blockMovingMessagesToOtherEmailAccounts|布尔|指示阻止移动到其他电子邮件帐户的消息。|
-|blockSendingEmailFromThirdPartyApps|布尔|指示阻止发送电子邮件从第三方应用程序。|
-|blockSyncingRecentlyUsedEmailAddresses|布尔|指示阻止同步最近使用的电子邮件地址，例如-撰写新电子邮件时。|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|指示阻止移动到其他电子邮件帐户的消息。|
+|blockSendingEmailFromThirdPartyApps|Boolean|指示阻止发送电子邮件从第三方应用程序。|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示阻止同步最近使用的电子邮件地址，例如-撰写新电子邮件时。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|应返回到同步的时间电子邮件持续时间。 . 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|电子邮件是从 AAD 选取并在设备上安装之前将其插入此配置文件的属性。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |hostName|String|Exchange 的 (URL) 的位置的本机邮件应用程序连接到。|
-|requireSmime|布尔|指示使用 S/MIME 证书。|
-|smimeEnablePerMessageSwitch|布尔|指示允许未加密的邮件。|
-|requireSsl|布尔|指示使用 SSL。|
-|useOAuth|布尔|指定连接是否应使用 OAuth 进行身份验证。|
+|requireSmime|Boolean|指示使用 S/MIME 证书。|
+|smimeEnablePerMessageSwitch|Boolean|指示允许未加密的邮件。|
+|requireSsl|Boolean|指示使用 SSL。|
+|useOAuth|Boolean|指定连接是否应使用 OAuth 进行身份验证。|
 
 
 

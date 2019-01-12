@@ -3,12 +3,13 @@ title: 更新 circularGeofenceManagementCondition
 description: 更新 circularGeofenceManagementCondition 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c483f1b165bc400cec8715ac02314dbdbcce6a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 45c6e1d491b652a31ba7e36eac9fb82eef1b235f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823616"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963953"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 

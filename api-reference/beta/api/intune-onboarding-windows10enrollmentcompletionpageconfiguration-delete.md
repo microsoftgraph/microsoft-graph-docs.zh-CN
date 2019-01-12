@@ -3,12 +3,13 @@ title: 删除 windows10EnrollmentCompletionPageConfiguration
 description: 删除 windows10EnrollmentCompletionPageConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dc408ca4aa07744ccc6edd08d3d412874a717a16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4e377f21e82d6102c39fabc33c671f5dc3d499d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965227"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>删除 windows10EnrollmentCompletionPageConfiguration
 

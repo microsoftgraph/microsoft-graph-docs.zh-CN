@@ -3,12 +3,13 @@ title: 更新 iosVppEBookAssignment
 description: 更新 iosVppEBookAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e9abf92f2af9ed0a674f7186ee6ebd2433c9e7a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 272de2b88b930b8f55849e6a791dce6c77d1595c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958374"
 ---
 # <a name="update-iosvppebookassignment"></a>更新 iosVppEBookAssignment
 

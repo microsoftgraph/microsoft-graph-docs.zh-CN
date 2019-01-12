@@ -3,12 +3,13 @@ title: shutDown 操作
 description: 关闭设备
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5476a22ae9820bc02a3eb343387e0d735e85eeb2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c0f64193aba32a0cc386677f0b5b0257561d580b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824820"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961930"
 ---
 # <a name="shutdown-action"></a>shutDown 操作
 

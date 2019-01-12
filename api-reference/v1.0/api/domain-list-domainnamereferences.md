@@ -3,12 +3,13 @@ title: 列出 domainNameReferences
 description: 通过对域的引用检索 directoryObject 列表。返回列表将包含依赖域的所有目录对象。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: d42b45a56132d15c0030de8ff685885d60b129e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4b9846f1a24b393609494542cf1785ec511f5b49
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963659"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 

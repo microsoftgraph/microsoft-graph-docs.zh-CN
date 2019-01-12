@@ -3,12 +3,13 @@ title: vppTokenState 枚举类型
 description: 使用 Apple 卷购买计划令牌关联可能的状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b91090f64340e398bf9d48aff3741941fc0d778a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b8e2148cccbb891b1c139abd9d15ba424b3b3e9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844833"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967376"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 

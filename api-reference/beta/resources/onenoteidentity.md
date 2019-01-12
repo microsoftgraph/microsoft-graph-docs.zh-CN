@@ -2,12 +2,14 @@
 title: oneNoteIdentity 资源类型
 description: '**即将提供的支持**'
 localization_priority: Normal
-ms.openlocfilehash: 80d0719bd2770b715902b5c600fe65012e0064d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 7ce71775842cc6b7084b86e13e9e4715765567ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963211"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity 资源类型
 

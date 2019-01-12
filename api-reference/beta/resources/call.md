@@ -3,12 +3,13 @@ title: 呼叫资源类型
 description: 没有传入呼叫的应用程序或应用程序创建新的传出呼叫通过时创建的**呼叫**资源`POST`上`app/calls`。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6c303ebe01e6051a29a932d9547f20293cb07a53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810701"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958556"
 ---
 # <a name="call-resource-type"></a>呼叫资源类型
 

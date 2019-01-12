@@ -3,12 +3,13 @@ title: 创建 androidCompliancePolicy
 description: 创建新的 androidCompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49449d01e15769ba3722f17f90085e6b36484aac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a42bce7b3cede18b7443b0de91d4e1b09dae910c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879238"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966949"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
 

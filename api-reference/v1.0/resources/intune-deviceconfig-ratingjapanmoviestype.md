@@ -3,12 +3,13 @@ title: ratingJapanMoviesType 枚举类型
 description: 电影分级日本标签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 40365f064a2ac8b39e5479613a486b7110b6c8c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957296"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 

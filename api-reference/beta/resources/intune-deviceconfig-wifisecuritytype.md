@@ -3,12 +3,13 @@ title: wiFiSecurityType 枚举类型
 description: Wi-fi 安全类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 90290b9b47154b95aca81d931fa66e7984688db1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6ddadaa31febaea08050ad49ffa540de53ff4819
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839919"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920217"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27839919"
 
 Wi-fi 安全类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |打开|0|打开 （无身份验证）。|
 |wpaPersonal|1|WPA-个人。|

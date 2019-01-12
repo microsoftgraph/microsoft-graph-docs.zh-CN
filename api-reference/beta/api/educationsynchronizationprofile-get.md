@@ -3,12 +3,13 @@ title: 获取 educationSynchronizationProfile
 description: 检索学校数据同步配置文件中租户基于的标识符。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 25a791265719dc09c9297d30a6ff625ee093edc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7e40008baaddb592c24c52262f3e99feb045d223
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823903"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960201"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile
 

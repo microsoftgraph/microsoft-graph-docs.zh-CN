@@ -3,12 +3,13 @@ title: assignLicense
 description: 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: a32ca24157581c04c2a1dd591d438769956bd43a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 96ececfce4800560b1f2ae625d12e67d10f3f325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835201"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965773"
 ---
 # <a name="assignlicense"></a>assignLicense
 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。

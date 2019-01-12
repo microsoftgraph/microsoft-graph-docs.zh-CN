@@ -2,12 +2,14 @@
 title: 在 Microsoft Graph 中使用教育 API
 description: 教育在 Microsoft Graph 中的 Api 增强 Office 365 资源和数据的教育方案，其中包括学校、 学生、 教师、 类、 注册，和工作分配的相关信息。 这使你能够轻松地构建与教育资源集成的解决方案。
 localization_priority: Normal
-ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852470"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958087"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 

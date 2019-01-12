@@ -3,12 +3,13 @@ title: educationTerm 资源类型
 description: 一个学期。 它表示学年的指定部分。 在 educationClass 中使用。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 67e7cd6c9942b61bb6f9ba45f8f25952ae916c5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: bc068df7a31c1b3903e8735ba1255cc3a6f0ae73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962756"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 

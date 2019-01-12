@@ -3,12 +3,13 @@ title: 删除 androidForWorkApp
 description: 删除 androidForWorkApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dac70608702f7f3647187db654e42bfa62bc339f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 721975f4ac6f93f59b924b8d572d6036a31cd728
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833759"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965787"
 ---
 # <a name="delete-androidforworkapp"></a>删除 androidForWorkApp
 

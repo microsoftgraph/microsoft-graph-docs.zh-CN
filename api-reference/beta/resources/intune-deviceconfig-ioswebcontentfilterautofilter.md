@@ -2,12 +2,14 @@
 title: iosWebContentFilterAutoFilter 资源类型
 description: 代表 iOS Web 内容筛选器设置类型，它使 iOS 自动筛选功能并允许其他 URL 访问控制。 没有属性值来构造，iOS 设备将启用自动筛选器无论。
 localization_priority: Normal
-ms.openlocfilehash: 02576565ecf764d33312477531d6a76c61911cb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 03e3c4f51e673be1e2bada89e06a26048fe4e385
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868129"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916776"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter 资源类型
 
@@ -20,7 +22,7 @@ ms.locfileid: "27868129"
 继承自[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |allowedUrls|String 集合|允许的访问的其他 Url|
 |blockedUrls|String 集合|阻止访问的其他 Url|

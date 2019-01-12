@@ -3,12 +3,13 @@ title: iosTrustedRootCertificate 资源类型
 description: iOS 受信任根证书配置配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2e4018d251bc7b509c7715465e2e71c414fcb8b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a3bd66ce60ae10335e9587ea9794e96ea1923b8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826892"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967411"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>iosTrustedRootCertificate 资源类型
 

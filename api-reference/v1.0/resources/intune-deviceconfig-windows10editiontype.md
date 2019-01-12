@@ -3,12 +3,13 @@ title: windows10EditionType 枚举类型
 description: Windows 10 Edition 类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 12074dc36550fe0a4402ace4c7bb9995079889d4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7a36c2a8e12d7a9a48932e8a3aa75810c43c90ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919897"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27839016"
 
 Windows 10 Edition 类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Enterprise|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|

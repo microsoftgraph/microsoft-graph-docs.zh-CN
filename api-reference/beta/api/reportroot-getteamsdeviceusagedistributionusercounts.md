@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
 description: 在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。
 localization_priority: Normal
-ms.openlocfilehash: 274fd212d936df75122c5c7acafeae12a2e528b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7c5b96200eb48b4d4009ad9602bc6cc001e441e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830336"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930577"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 

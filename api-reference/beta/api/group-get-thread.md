@@ -3,12 +3,13 @@ title: 获取对话线程
 description: 获取 thread 对象。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 130c07fc00ef584b34e334f41e5eb7a6cebbdc33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 2df12f484bbbc35d4f5d5bc3fcbce1d6e5e8b653
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966473"
 ---
 # <a name="get-conversation-thread"></a>获取对话线程
 

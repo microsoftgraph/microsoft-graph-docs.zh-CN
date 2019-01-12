@@ -3,12 +3,13 @@ title: 删除 networkIPv4ConfigurationManagementCondition
 description: 删除 networkIPv4ConfigurationManagementCondition。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d935a19aafa8ae3688f5afd9f7986f2060f6a35f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fcec59d98c2f5a5c243a1e22d71db438245f4fdc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960320"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>删除 networkIPv4ConfigurationManagementCondition
 

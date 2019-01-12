@@ -3,12 +3,13 @@ title: macOSScepCertificateProfile 资源类型
 description: Mac OS SCEP 证书配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2e6c36be7a537cb64b30fe92e852e0cf1809129
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f28c17f4c9e1f8a530e0ad79f8d33c3c54bec35c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894507"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961108"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>macOSScepCertificateProfile 资源类型
 
@@ -54,7 +55,7 @@ Mac OS SCEP 证书配置文件。
 |subjectAlternativeNameFormatString|字符串|定义 AAD 属性的自定义字符串。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

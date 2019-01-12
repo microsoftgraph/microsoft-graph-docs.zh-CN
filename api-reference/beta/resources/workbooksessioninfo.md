@@ -3,12 +3,13 @@ title: workbookSessionInfo 资源类型
 description: 提供有关工作簿会话的信息。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 25812d48626c7dc5e468915f7308941a4f74b38e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860961"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962448"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo 资源类型
 

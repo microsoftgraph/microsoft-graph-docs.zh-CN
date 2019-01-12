@@ -3,12 +3,13 @@ title: 更新 outlooktask
 description: 更改 Outlook 任务的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964933"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
@@ -50,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |assignedTo|字符串|已分配任务的人员的名称。|
 |body|[itemBody](../resources/itembody.md)|任务正文通常包含有关任务的信息。 请注意，仅 HTML 支持类型。|

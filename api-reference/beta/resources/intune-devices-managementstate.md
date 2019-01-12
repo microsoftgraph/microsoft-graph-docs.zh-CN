@@ -3,12 +3,13 @@ title: 管理枚举类型
 description: 管理 Microsoft Intune 中设备的状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c439cf0ff830f471d2050eee81c91c6539e66d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d9d083c56df366b9f896432328d51c295f62190
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844651"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961944"
 ---
 # <a name="managementstate-enum-type"></a>管理枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27844651"
 
 管理 Microsoft Intune 中设备的状态。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |托管|0|在管理下的设备位于|
 |retirePending|1|废弃命令正在撤消设备上并且正在 unenrolling 从管理|

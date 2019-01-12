@@ -3,12 +3,13 @@ title: 'message: move'
 description: 将邮件移动到文件夹中。 此目标文件夹中创建新邮件的副本，并删除原始邮件。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 7ad9ac2b8f64d75950c9b2cac17a4c5dc5a9b3eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2f6614d3769d2619854782776c061436622f1309
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961195"
 ---
 # <a name="message-move"></a>message: move
 

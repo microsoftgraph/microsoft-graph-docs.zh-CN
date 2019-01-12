@@ -2,12 +2,14 @@
 title: 获取 orgContact
 description: 检索的属性和 orgcontact 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 4a806c48ef7fc9adc4a8eb94bc7c28e3add78d14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 28d00c81a24eca077fcdecbbdbb233ba75eadc29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842929"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928211"
 ---
 # <a name="get-orgcontact"></a>获取 orgContact
 

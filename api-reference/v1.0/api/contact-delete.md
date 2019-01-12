@@ -3,12 +3,13 @@ title: 删除联系人
 description: 删除联系人。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a4ba925b62522932180e827ca0929acb19482ee2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 43e7518958a2352fa44b988d96a37e781ad88f75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873435"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967194"
 ---
 # <a name="delete-contact"></a>删除联系人
 

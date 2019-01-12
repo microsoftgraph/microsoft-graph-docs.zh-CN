@@ -3,12 +3,13 @@ title: 删除 targetedManagedAppConfiguration
 description: 删除 targetedManagedAppConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eba1bb593a193aa53593c141796bc69f86391f91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d450cc02de611a01aee9cd92263d9351653207e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881912"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958199"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>删除 targetedManagedAppConfiguration
 

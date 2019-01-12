@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 移动文件或文件夹
 localization_priority: Normal
-ms.openlocfilehash: a6135993d77e4fb23fbbba89757a6bd385ebcd60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fe852af054d192c75c3b22aed5516e376361ad11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966340"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到新文件夹
 

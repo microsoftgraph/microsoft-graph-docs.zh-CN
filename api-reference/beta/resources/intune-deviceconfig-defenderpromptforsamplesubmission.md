@@ -3,12 +3,13 @@ title: defenderPromptForSampleSubmission 枚举类型
 description: 提示用户输入示例提交的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f1dbd79d58fa46a4e5e50f989e807763ff10356
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8dfc1a3aeb80a22041f799fb40ff9b2cc6e3870b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924823"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27849824"
 
 提示用户输入示例提交的可能值。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|用户定义，默认值、 没有用途。|
 |alwaysPrompt|1|始终提示。|

@@ -3,12 +3,13 @@ title: deviceInstallState 资源类型
 description: 包含某个设备的安装状态的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a407d35189d1b61e870fbdff282a429be165c0c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1b495bc41590ada44a9986dd9cc9cb262bcc68b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819675"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959886"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 

@@ -3,12 +3,13 @@ title: 组：checkMemberGroups
 description: 检查指定组的列表中的成员身份。 从列表中返回这些的组
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 97580b44b5ee97245b092424d55f11648f6960e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 2d7755e495eafb93ced334eb4148f7bd29baf1ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809049"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966158"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 

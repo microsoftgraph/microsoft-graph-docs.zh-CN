@@ -3,12 +3,13 @@ title: iosHomeScreenItem 资源类型
 description: 表示 iOS 主屏幕上的项
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cc351025f81931ac7deb33bec9be973a513a51fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 477be5c509ab4d062a695c4b8df7eb00af6f51fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962602"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
 

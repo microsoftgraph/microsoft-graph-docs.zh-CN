@@ -3,12 +3,13 @@ title: 列出 androidStoreApps
 description: 列出 androidStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4f96a07f3502d9dd94b71180e8668e055bbaf5e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd1911d1c372fe6e01e8ef00eaecf66d43101202
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881261"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957312"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 

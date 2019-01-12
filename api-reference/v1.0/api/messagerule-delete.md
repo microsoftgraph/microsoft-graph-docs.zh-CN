@@ -3,12 +3,13 @@ title: 删除 messageRule
 description: 删除指定的 messageRule 对象。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 2c303ffda5f9f43273178a6b23c72ee465b569dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 570970296444b5bb4d5033bf26a03214d9fa8dac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957359"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 

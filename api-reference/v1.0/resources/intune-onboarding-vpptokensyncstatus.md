@@ -3,12 +3,13 @@ title: vppTokenSyncStatus 枚举类型
 description: 使用 Apple 卷购买计划令牌关联的可能的同步状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db458423a00fd7b38bddea1b1954cda1ec6ec83b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfdb80ae40abcc505927b94a33330bc09454e790
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965080"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
 

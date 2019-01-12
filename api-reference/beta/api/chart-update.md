@@ -3,12 +3,13 @@ title: 更新图表
 description: 更新 chart 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3e7a1e2e40ed3aea969683327ba16c022da210d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 98db5ec8a3425d75aa73eb9f705b64621982a373
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829167"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956792"
 ---
 # <a name="update-chart"></a>更新图表
 

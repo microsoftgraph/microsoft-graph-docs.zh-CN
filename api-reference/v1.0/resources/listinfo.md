@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
-ms.openlocfilehash: 881a150f750fa947888a60b4c22ceeb5b0c826d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 459e51af92e01d10edd2ec1d86f3c288b125e1d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957464"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
 

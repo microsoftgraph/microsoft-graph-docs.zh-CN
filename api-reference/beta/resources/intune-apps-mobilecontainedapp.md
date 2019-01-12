@@ -3,12 +3,13 @@ title: mobileContainedApp 资源类型
 description: 表示 mobileApp 充当包中的包含应用程序的抽象类。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b81ee4ca194d1d01e3d834b3287f6b400e712a27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a9b36193aeda51679018bc534974c3678326a19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826283"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963813"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>mobileContainedApp 资源类型
 

@@ -3,12 +3,13 @@ title: Add attachment
 description: 使用此 API 新建附件。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: e56da5a4b6f57506800e07e3f8e2b09ed7ef6f46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d2e2de9e8e7e328f2e0cabc1df8fdf7dcd7b4856
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965913"
 ---
 # <a name="add-attachment"></a>Add attachment
 

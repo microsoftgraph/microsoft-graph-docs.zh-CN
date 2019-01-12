@@ -3,12 +3,13 @@ title: revokeToken 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9f664343ec99bf66485f0013c51e051bede3921a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6b92ebb953c0ed5d46e63c96b3b44a9b9bf1e258
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956708"
 ---
 # <a name="revoketoken-action"></a>revokeToken 操作
 

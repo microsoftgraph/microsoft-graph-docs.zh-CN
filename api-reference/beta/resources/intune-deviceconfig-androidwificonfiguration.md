@@ -3,12 +3,13 @@ title: androidWiFiConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Android 设备连接到所需 Wi-fi 终结点。 通过指定的身份验证方法和安全类型预期 Wi-fi 终结点可 Wi-fi 连接进行无缝的最终用户。 此配置文件提供了比企业 Wi-fi 配置文件的限制和简单安全类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bc8fc066a726b31e2c53e20e098b6abff8b8b025
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c4baa7a4adefe73e4a1f51e56b8649f79faa27c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808622"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958094"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>androidWiFiConfiguration 资源类型
 

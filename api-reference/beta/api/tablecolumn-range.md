@@ -3,12 +3,13 @@ title: TableColumn:Range
 description: 获取与整个列相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: fa8c471f4c884e159b7194e2012b4af894a82bf2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 339bb127604f9270141ce2432c66a598dbda38c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868395"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967516"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 

@@ -1,12 +1,15 @@
 ---
 title: 通过 Microsoft Graph 显示 Excel 图表图像
 description: 如果你通过执行 GET 操作来检索图表图像，Excel API 便会以 base-64 字符串形式返回图像。
-ms.openlocfilehash: ae721547fca9a6fe835843544bf550c5fe222426
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091911"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946369"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>通过 Microsoft Graph 在 Excel 中显示图表图像
 

@@ -2,12 +2,14 @@
 title: bookingCurrency 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 96a5e04f705cca04e926ce25fd7e674528a60ccb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 7e2289bfa6c6aac62f12d7321d06caaafbc41f8c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843671"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956001"
 ---
 # <a name="bookingcurrency-resource-type"></a>bookingCurrency 资源类型
 
@@ -27,7 +29,7 @@ ms.locfileid: "27843671"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 基于[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)3 个字符货币代码。 例如，美国美元的货币代码是美元，而澳大利亚元为 AUD. 此为只读属性。|
+|id|字符串| 基于[ISO 4217](https://www.iso.org/iso-4217-currency-codes.html)3 个字符货币代码。 例如，美国美元的货币代码是美元，而澳大利亚元为 AUD. 只读。|
 |符号|字符串| 货币符号。 例如，美国美元和澳大利亚元的货币符号是 $。  |
 
 ## <a name="relationships"></a>Relationships

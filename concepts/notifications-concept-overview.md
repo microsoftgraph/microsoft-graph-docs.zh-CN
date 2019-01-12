@@ -1,12 +1,14 @@
 ---
 title: '使用 Microsoft Graph 中的通知 API 实现以人为中心的通知体验 '
 description: '通知是重新吸引用户的最为有效的方式。 它们可以吸引用户的注意力并将用户重新吸引到你的应用中。 在多设备环境中，用户可以在任意地点，从应用所在的不同平台和设备访问应用和服务。 '
-ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947118"
 ---
 # <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>使用 Microsoft Graph 中的通知 API 实现以人为中心的通知体验 
 

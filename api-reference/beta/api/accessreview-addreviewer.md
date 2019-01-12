@@ -2,12 +2,14 @@
 title: 添加 accessReview 审阅者
 description: '在 Azure AD 访问评论功能中，更新要作为审阅者添加另一个用户现有 accessReview 对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 '
 localization_priority: Normal
-ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a7745cf6424f3aa8b9bca16f4db961801d203431
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838764"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956862"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -40,7 +42,7 @@ POST /accessReviews('{reviewId}')/reviewers
 
 下表显示可更新 accessReview 时提供的属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | 用户 id。  |
 

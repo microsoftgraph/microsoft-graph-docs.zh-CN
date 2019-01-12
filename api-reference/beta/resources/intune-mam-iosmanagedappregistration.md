@@ -2,12 +2,14 @@
 title: iosManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 iOS 应用的同步详细信息。
 localization_priority: Normal
-ms.openlocfilehash: fbbb2579ebfb77d8a98acd21339d98cae9fad8e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6af920ed88c91ac22474e8d65b04850154b4d735
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960131"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 

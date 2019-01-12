@@ -3,12 +3,13 @@ title: 列出系列
 description: 检索 chartseries 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 29283563b9c939dfe0309943b6173e4b992a312a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d1a9f229e27ccf152498dee4417b0a05d4999d94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956421"
 ---
 # <a name="list-series"></a>列出系列
 

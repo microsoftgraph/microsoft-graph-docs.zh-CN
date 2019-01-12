@@ -3,12 +3,13 @@ title: 删除 resourceOperation
 description: 删除 resourceOperation。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5561b2d26fc68cfdea0172545443e4812f8ce81e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3bcd937da46444a81e2593cb00288d60f9b9bcc3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964366"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 

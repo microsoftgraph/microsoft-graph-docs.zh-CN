@@ -3,12 +3,13 @@ title: 更新 androidForWorkCustomConfiguration
 description: 更新 androidForWorkCustomConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53238ad41d4f6ac91e3018cd3da831c6a2ec8ea3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3265533a0d567efed7a161fc3a4f8c07553f2b63
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807936"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959662"
 ---
 # <a name="update-androidforworkcustomconfiguration"></a>更新 androidForWorkCustomConfiguration
 

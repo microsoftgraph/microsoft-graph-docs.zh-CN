@@ -3,12 +3,13 @@ title: 创建 androidLobApp
 description: 创建新的 androidLobApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d6a8e741164135b9223aea55fc8a074e3d764619
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86cd6e0d62ebf226f82d94a6a023701bdd82e405
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966802"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
