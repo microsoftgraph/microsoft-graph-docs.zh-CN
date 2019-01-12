@@ -3,12 +3,13 @@ title: windowsPhone81VpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Windows Phone 8.1，以连接到所需 VPN 终结点。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b415c41d41f9b29dbaf9eb5019bdf53e50f54192
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41d27504e7a8bb83385cd9707c9cdaeb08c6e927
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984554"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>windowsPhone81VpnConfiguration 资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27850789"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -46,16 +47,16 @@ ms.locfileid: "27850789"
 |applyOnlyToWindows81|Boolean|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |连接|[windowsVpnConnectionType](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|连接类型。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)。 可取值为：`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`。|
 |loginGroupOrDomain|字符串|登录组或域时连接类型设置为 Dell 使 SonicWALL Mobile 连接。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|enableSplitTunneling|布尔|启用拆分隧道的 VPN。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|enableSplitTunneling|Boolean|启用拆分隧道的 VPN。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |代理服务器|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|代理服务器。 继承自[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|bypassVpnOnCompanyWifi|布尔|在公司 Wi-fi 绕过 VPN。|
-|bypassVpnOnHomeWifi|布尔|绕过 Wi-fi 主页上的 VPN。|
+|bypassVpnOnCompanyWifi|Boolean|在公司 Wi-fi 绕过 VPN。|
+|bypassVpnOnHomeWifi|Boolean|绕过 Wi-fi 主页上的 VPN。|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`。|
-|rememberUserCredentials|布尔|请记住用户凭据。|
+|rememberUserCredentials|Boolean|请记住用户凭据。|
 |dnsSuffixSearchList|String 集合|DNS 后缀搜索列表。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

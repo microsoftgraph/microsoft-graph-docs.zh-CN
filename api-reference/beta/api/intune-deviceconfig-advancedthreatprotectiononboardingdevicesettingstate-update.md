@@ -3,12 +3,13 @@ title: 更新 advancedThreatProtectionOnboardingDeviceSettingState
 description: 更新 advancedThreatProtectionOnboardingDeviceSettingState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: de136488c24c3de4136b953e120d8ed4fbd3fec6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7fb7c4b504a7d7556bba2bf2aa2df16f8d2ccb7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828313"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978520"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>更新 advancedThreatProtectionOnboardingDeviceSettingState
 

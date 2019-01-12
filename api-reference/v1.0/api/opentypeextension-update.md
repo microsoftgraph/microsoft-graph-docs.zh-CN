@@ -2,12 +2,13 @@
 title: 更新开放扩展
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
 localization_priority: Normal
-ms.openlocfilehash: 5765dc8eb32950e3eb5cab951535cbc92bab0c58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986374"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -22,7 +23,7 @@ ms.locfileid: "27891516"
 
 根据扩展中创建的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 用途 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |

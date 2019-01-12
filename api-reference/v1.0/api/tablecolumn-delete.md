@@ -3,12 +3,13 @@ title: 'TableColumn: delete'
 description: 从表中删除列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c96cd352df54decf5b86e63de89c6ab42819055a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3957ac54f3d77c8b324cc5992a90a3185ea28aea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826570"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984120"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 

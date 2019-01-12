@@ -3,12 +3,13 @@ title: deleteUserFromSharedAppleDeviceActionResult 资源类型
 description: 从共享 Apple 设备删除用户操作结果
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed004ad8c02d18c19df7be0f819658603fb4fc0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c33a17bc2489797bfa8dc0101c128d1e29d58b47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861906"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987823"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult 资源类型
 

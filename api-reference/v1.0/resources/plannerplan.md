@@ -2,12 +2,14 @@
 title: plannerPlan 资源类型
 description: '**PlannerPlan**资源表示 Office 365 中的计划。 规划组可以拥有和包含 plannerTasks 的集合。 它还可以具有 plannerBuckets 的集合。 每个计划对象有一个详细对象，可以包含有关计划的详细信息。 有关组、 计划和任务之间的关系的详细信息，请参阅计划程序。'
 localization_priority: Priority
-ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987893"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
@@ -20,7 +22,7 @@ ms.locfileid: "27873008"
 |[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |读取 **plannerPlan** 对象的属性和关系。|
 |[列出存储桶](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取 **plannerTask** 对象集合。|
-|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
+|[更新](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

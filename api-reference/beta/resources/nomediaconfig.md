@@ -3,12 +3,13 @@ title: noMediaConfig 资源类型
 description: 指示没有媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: c7bf75b2033c7b3340bde01b782b7eabe5ab0e76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 64ab5c5bb6cbff6d9af677be9c85c13bfcd78d75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983385"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 
@@ -18,9 +19,9 @@ ms.locfileid: "27806459"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | Description|
+| 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | 布尔 |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

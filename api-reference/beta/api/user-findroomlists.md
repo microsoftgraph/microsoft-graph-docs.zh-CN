@@ -3,12 +3,13 @@ title: 用户： findRoomLists
 description: 获取在租户中定义的会议室列表。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855732"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979290"
 ---
 # <a name="user-findroomlists"></a>用户： findRoomLists
 

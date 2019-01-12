@@ -3,12 +3,13 @@ title: 删除 editionUpgradeConfiguration
 description: 删除 editionUpgradeConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2ca21a69ff1a3dc8141429d05c18c0ab653f0880
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 001a64f94997511a2b1d5fa2d925bb9315cb1c7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991326"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>删除 editionUpgradeConfiguration
 

@@ -3,12 +3,13 @@ title: 列出 mobileAppAssignments
 description: 列出 mobileAppAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0c412c05a0a9e0755aba7b933379b7eda3e26a50
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cfe379326a2daf567a7a0090d82405f34e52882d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985261"
 ---
 # <a name="list-mobileappassignments"></a>列出 mobileAppAssignments
 

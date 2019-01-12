@@ -3,12 +3,13 @@ title: 删除 iosTrustedRootCertificate
 description: 删除 iosTrustedRootCertificate。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dd871691c9f5986e7dbf7979710ed316a73f5fcc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 873c47683b49a3f5a6ddc77d7281465fb2af30ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978359"
 ---
 # <a name="delete-iostrustedrootcertificate"></a>删除 iosTrustedRootCertificate
 

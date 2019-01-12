@@ -3,12 +3,13 @@ title: 列出 mobileApps
 description: 列出 mobileApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef58d5611fa1a2d756ac0d7fffec912bb48c3ffd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 057c36d65e102182d6e4da86ae49e2259edd2041
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990157"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
 

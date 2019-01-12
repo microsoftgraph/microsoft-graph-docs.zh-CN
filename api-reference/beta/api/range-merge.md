@@ -3,12 +3,13 @@ title: 'Range: merge'
 description: 将范围单元格合并到工作表的一个区域中。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e6c5f0b56ddaff77802d8258d4c2226c538a5d90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 151163604bc7eada167daebdb325857cc6e87ce4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806235"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990521"
 ---
 # <a name="range-merge"></a>Range: merge
 

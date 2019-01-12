@@ -3,12 +3,13 @@ title: 获取 windows10GeneralConfiguration
 description: 读取 windows10GeneralConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 167b109b88c19fc1eaca76037471860da3f7dc1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e428c01f97cc2ada0e3962f460a7dd7894a60262
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987781"
 ---
 # <a name="get-windows10generalconfiguration"></a>获取 windows10GeneralConfiguration
 

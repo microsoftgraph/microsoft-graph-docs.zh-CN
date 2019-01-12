@@ -3,12 +3,13 @@ title: ChartAxis 资源类型
 description: 表示图表中的单个坐标轴。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 57c8e28633d4fc60f60f456e34a6a0cafef22252
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 88066c356306a619ee620a13eefb6592d7b5f100
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984309"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
@@ -20,12 +21,12 @@ ms.locfileid: "27829083"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) |读取 chartaxis 对象的属性和关系。|
-|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)   |更新 ChartAxis 对象 |
+|[更新](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)   |更新 ChartAxis 对象 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| ID       |string   | 唯一标识符。 此为只读属性。|
+| ID       |string   | 唯一标识符。 只读。|
 |majorUnit|Json|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
 |maximum|Json|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 |minimum|Json|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|

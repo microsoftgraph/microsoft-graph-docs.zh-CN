@@ -3,12 +3,13 @@ title: 获取 roleScopeTag
 description: 读取属性和 roleScopeTag 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9cbffe3199dd9d694e0f3174e2d27131f28d802e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2a0126f4b39fbee3c154837661b368512e29ac97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983287"
 ---
 # <a name="get-rolescopetag"></a>获取 roleScopeTag
 

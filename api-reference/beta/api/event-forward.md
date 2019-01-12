@@ -3,12 +3,13 @@ title: 事件： 转接
 description: '此操作允许组织者或与会者的会议事件转发 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 6567c8c030fa838e83a7428399151b41e6747625
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: fe8d108ebeb15c2684e1997b8a02cc28a99101b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887827"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990669"
 ---
 # <a name="event-forward"></a>事件： 转接
 
@@ -57,7 +58,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |Comment|String|要包含的注释。可以为空字符串。|
 |ToRecipients|[recipient](../resources/recipient.md) collection|要转接到的事件的收件人列表。|

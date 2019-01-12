@@ -2,12 +2,14 @@
 title: 列出日历
 description: '获取用户的所有日历（`/calendars` 导航属性），从默认日历组或特定日历组中获取日历。 '
 localization_priority: Normal
-ms.openlocfilehash: c59ee99c900aa39221530473c9323dfcaab721b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e34c6acbcab5e5da4852d547038be6891806b4d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886512"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983518"
 ---
 # <a name="list-calendars"></a>列出日历
 

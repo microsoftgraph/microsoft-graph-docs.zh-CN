@@ -3,12 +3,13 @@ title: 创建 androidWorkProfileCustomConfiguration
 description: 创建新的 androidWorkProfileCustomConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0d05aee835dfe98d78b3afc31e0ec2af0e7775be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1dba06c297117fbf91a8848904c0723dcfee4b3a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850811"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987172"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>创建 androidWorkProfileCustomConfiguration
 

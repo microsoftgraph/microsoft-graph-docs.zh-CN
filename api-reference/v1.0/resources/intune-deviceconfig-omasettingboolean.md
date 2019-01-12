@@ -3,12 +3,13 @@ title: omaSettingBoolean 资源类型
 description: OMA 设置布尔定义。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 46bca1f6052dae3f4699b88258abce4b346c67bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0b3f2d04c9476cc10a67c1e68ba9a29288e8875
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868206"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986633"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 

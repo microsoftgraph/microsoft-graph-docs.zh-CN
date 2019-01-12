@@ -3,12 +3,13 @@ title: 创建 iosCompliancePolicy
 description: 创建新的 iosCompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: df69e8512a1f8e900f1e3751d5943f4ea8e6a215
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e46fc768617882852b42765a436dce5444cbef4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986969"
 ---
 # <a name="create-ioscompliancepolicy"></a>创建 iosCompliancePolicy
 

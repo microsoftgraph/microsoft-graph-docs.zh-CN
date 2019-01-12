@@ -2,12 +2,14 @@
 title: 'section: copyToNotebook'
 description: 将分区复制到特定笔记本。
 localization_priority: Normal
-ms.openlocfilehash: fae817d1d256de490a246a43dfbfe6ca3a8c4e3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: e122f8f7dfee82caa026ff569899516af4205ac2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856299"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991048"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 将分区复制到特定笔记本。

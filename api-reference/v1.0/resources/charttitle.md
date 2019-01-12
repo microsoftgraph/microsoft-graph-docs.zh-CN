@@ -3,12 +3,13 @@ title: ChartTitle 资源类型
 description: 表示图表的 chart title 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6cf6a2e6355fc4bc8955899dde48f9cc843e920c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: f6c843e24839b51da67bda5ed3484a32c868ae54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986913"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "27879413"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
-|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
+|[更新](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

@@ -3,12 +3,13 @@ title: 更新 deviceComplianceUserOverview
 description: 更新 deviceComplianceUserOverview 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05ccf80b957bf52155dfef738c886cf41155fc22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e46a6d999bf9d89a8f9c51373fc6e10507c921e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978429"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>更新 deviceComplianceUserOverview
 

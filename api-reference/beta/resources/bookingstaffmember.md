@@ -2,12 +2,14 @@
 title: bookingStaffMember 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: b7369ad3662bf86aaca14bc78ea52a1ebddcb4df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985947"
 ---
 # <a name="bookingstaffmember-resource-type"></a>bookingStaffMember 资源类型
 
@@ -30,19 +32,19 @@ ms.locfileid: "27884453"
 |[列表员工成员](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md)集合 | 指定[bookingbusiness](../resources/bookingbusiness.md)中获取**bookingStaffMember**对象的列表。 |
 |[创建 bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md)集合 | 在指定[bookingbusiness](../resources/bookingbusiness.md)中创建新**bookingStaffMember** 。 |
 |[获取 bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |指定[bookingbusiness](../resources/bookingbusiness.md)中获取的属性和**bookingStaffMember**的关系。|
-|[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |更新在指定[bookingbusiness](../resources/bookingbusiness.md) **bookingStaffMember**的属性。|
+|[更新](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |更新在指定[bookingbusiness](../resources/bookingbusiness.md) **bookingStaffMember**的属性。|
 |[删除](../api/bookingstaffmember-delete.md) | 无 |删除指定[bookingbusiness](../resources/bookingbusiness.md)中的人员成员。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|布尔|True 表示，如果该人员成员是 Office 365 用户，预订 API 将验证员工成员的可用性其 Office 365 中的个人日历中之前进行预订。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示，如果该人员成员是 Office 365 用户，预订 API 将验证员工成员的可用性其 Office 365 中的个人日历中之前进行预订。 |
 |colorIndex|Int32|标识要表示员工成员的颜色。 颜色对应于预订应用程序中的**人员详细信息**页面中的调色板。|
-|displayName|字符串|员工成员，显示给客户的名称。 必填。|
-|emailAddress|String|员工成员的电子邮件地址。 这可以随着业务，相同的 Office 365 租户中或不同的电子邮件域中。 可使用此电子邮件地址，如果**sendConfirmationsToOwner**属性设置为 true 的企业计划策略。 必填。|
-|id|字符串| 员工成员，GUID 格式的 ID。 此为只读属性。|
-|role|string| 企业中的人员成员角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。 必填。|
-|useBusinessHours|布尔|True 的表示员工成员的可用性，作为业务**businessHours**属性中指定。 False，则意味着可用性由员工成员的**workingHours**属性设置。|
+|displayName|字符串|员工成员，显示给客户的名称。 必需。|
+|emailAddress|String|员工成员的电子邮件地址。 这可以随着业务，相同的 Office 365 租户中或不同的电子邮件域中。 可使用此电子邮件地址，如果**sendConfirmationsToOwner**属性设置为 true 的企业计划策略。 必需。|
+|id|字符串| 员工成员，GUID 格式的 ID。 只读。|
+|role|string| 企业中的人员成员角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。 必需。|
+|useBusinessHours|Boolean|True 的表示员工成员的可用性，作为业务**businessHours**属性中指定。 False，则意味着可用性由员工成员的**workingHours**属性设置。|
 |workingHours|[bookingWorkHours](bookingworkhours.md)集合|员工成员了可供预定的一周中每一天时间范围。 默认情况下，它们都初始化为业务的**工作时间**属性相同。|
 
 ## <a name="relationships"></a>Relationships

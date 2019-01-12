@@ -2,12 +2,14 @@
 title: 安全资源类型
 description: 安全资源是安全对象模型的入口点。 它返回 singleton 安全资源。 它不包含任何可用的属性。
 localization_priority: Normal
-ms.openlocfilehash: 2486bf9cae2ffad471c1bacb8b7ca01c6bef4ee7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: c7bf3f279e50efb451188426d030e356d55ad6be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983252"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
@@ -25,7 +27,7 @@ ms.locfileid: "27827011"
 无
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |alerts|[通知](alert.md)集合| 只读。可为 NULL。|
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: simonhult
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
-ms.openlocfilehash: 2b874a7b33c759eb8f81a3a5654115eaaf63c8f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805689"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985446"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 

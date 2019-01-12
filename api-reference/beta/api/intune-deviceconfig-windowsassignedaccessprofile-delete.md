@@ -3,12 +3,13 @@ title: 删除 windowsAssignedAccessProfile
 description: 删除 windowsAssignedAccessProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9303bb38c97da7a5a40cd82d79d2081e40424c65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82157d6a1547b285ed83005945e1ac4726d0d10f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983150"
 ---
 # <a name="delete-windowsassignedaccessprofile"></a>删除 windowsAssignedAccessProfile
 

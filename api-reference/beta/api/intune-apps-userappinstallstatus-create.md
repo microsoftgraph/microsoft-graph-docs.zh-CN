@@ -3,12 +3,13 @@ title: 创建 userAppInstallStatus
 description: 创建新的 userAppInstallStatus 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7cbf61af7c9d25070c9b95f227b4db74f367d261
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac22969b04f2c9191e521a3df8a51bc2d0cc3343
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891663"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985226"
 ---
 # <a name="create-userappinstallstatus"></a>创建 userAppInstallStatus
 

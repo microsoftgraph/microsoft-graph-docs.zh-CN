@@ -3,12 +3,13 @@ title: 删除 calendarGroup
 description: 删除默认日历组以外的日历组。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 8f2623077c49a38f121db331f96185d2d91c8032
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f1dded8885f99646d48ddf309ff12e64d61988e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839625"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978933"
 ---
 # <a name="delete-calendargroup"></a>删除 calendarGroup
 

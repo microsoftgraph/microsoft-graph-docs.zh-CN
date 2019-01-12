@@ -2,12 +2,14 @@
 title: 列出任务
 description: 检索与 plannerPlan 对象关联的 **plannertask** 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: f0823aea0731f03ab0a0b3387f2e4f4eca86a534
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: c24fbdd21904031d54ac60f1452b3e5edfc8be85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815293"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987067"
 ---
 # <a name="list-tasks"></a>列出任务
 

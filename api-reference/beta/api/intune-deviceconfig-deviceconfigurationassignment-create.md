@@ -3,12 +3,13 @@ title: 创建 deviceConfigurationAssignment
 description: 创建新的 deviceConfigurationAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 076e8134892ac699670734255798f2297752acae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e555254f473b119b5a1e27cb2c5823e7863060fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979171"
 ---
 # <a name="create-deviceconfigurationassignment"></a>创建 deviceConfigurationAssignment
 

@@ -3,12 +3,13 @@ title: 创建 importedAppleDeviceIdentityResult
 description: 创建新的 importedAppleDeviceIdentityResult 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4d8a585aa2e6745d563d1a886fa5c7870ced9a87
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 52b1e2364b2bfb2168b97da3e212bffdad67845c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817411"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983658"
 ---
 # <a name="create-importedappledeviceidentityresult"></a>创建 importedAppleDeviceIdentityResult
 
@@ -60,7 +61,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |说明|字符串|从[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)设备继承说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|从[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)中 Intune 继承的设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|布尔|导入的设备标识的状态|
+|status|Boolean|导入的设备标识的状态|
 
 
 

@@ -3,12 +3,13 @@ title: 获取 iosPkcsCertificateProfile
 description: 读取属性和 iosPkcsCertificateProfile 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 81e09211a9e98e27b4456a6f3bc0e19c55e1b4fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe586783d45b3bed9e4f094e5a8097dd560e4a5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991011"
 ---
 # <a name="get-iospkcscertificateprofile"></a>获取 iosPkcsCertificateProfile
 

@@ -3,12 +3,13 @@ title: 列出 notificationMessageTemplates
 description: 列出 notificationMessageTemplate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d47e3d85e0cf50d66b7587601204230074e9675
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e139394a5dd911ac79a1c32c919e8724c2d27b63
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805829"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983427"
 ---
 # <a name="list-notificationmessagetemplates"></a>列出 notificationMessageTemplates
 

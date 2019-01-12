@@ -3,12 +3,13 @@ title: 删除 macOSGeneralDeviceConfiguration
 description: 删除 macOSGeneralDeviceConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dc6903eb5a549f249d63af027555e662466402bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fca52e33ae8598c9c7745ffed884cc94efe4ad25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876333"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990003"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>删除 macOSGeneralDeviceConfiguration
 

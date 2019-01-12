@@ -3,12 +3,13 @@ title: 创建 enrollmentTroubleshootingEvent
 description: 创建新的 enrollmentTroubleshootingEvent 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 633e16f1d21808e55dd3b5d8fe677a8b6bec37d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0a95de5d54c6cfbc84f322a3614dcbbcc033ae76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869494"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983147"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>创建 enrollmentTroubleshootingEvent
 

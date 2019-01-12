@@ -3,12 +3,13 @@ title: resourceVisualization 资源类型
 description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990654"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 

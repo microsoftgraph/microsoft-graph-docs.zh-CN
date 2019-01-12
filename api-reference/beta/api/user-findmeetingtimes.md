@@ -1,12 +1,15 @@
 ---
 title: 'user: findMeetingTimes'
 description: 建议的会议时间内和基于组织者和与会者可用性和作为参数指定的时间或位置约束位置。
-ms.openlocfilehash: 8768059b6c15f96c0798fc3c4542410515e32555
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c0544ecdeffd4378002851c26465862a5244fe15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27046643"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990745"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

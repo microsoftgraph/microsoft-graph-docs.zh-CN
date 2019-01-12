@@ -3,12 +3,13 @@ title: sendCustomNotificationToCompanyPortal 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ea1cb5a2bcdf18c38dfc144d57e7ee77a5d6fd2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92276ac8609f1699b1b4a4217452f121d8507f47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863327"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978849"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal 操作
 
@@ -47,7 +48,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |notificationTitle|字符串|尚未记录|
 |notificationBody|字符串|尚未记录|

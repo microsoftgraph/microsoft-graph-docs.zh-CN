@@ -2,12 +2,14 @@
 title: iosVppAppRevokeLicensesActionResult 资源类型
 description: 在 iOS Vpp 应用程序定义的操作的结果，包含 ActionResult 继承的属性。
 localization_priority: Normal
-ms.openlocfilehash: 8ed57465e263245cfc18ca22899c2142d949855d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 13bc69a0c04eb7b9742f6c549fd1ae976cf25561
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986990"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult 资源类型
 
@@ -17,7 +19,7 @@ ms.locfileid: "27842082"
 
 在 iOS Vpp 应用程序定义的操作的结果，包含 ActionResult 继承的属性。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |userId|String|与操作关联的用户 Id。|
 |managedDeviceId|字符串|DeviceId 与操作关联。|

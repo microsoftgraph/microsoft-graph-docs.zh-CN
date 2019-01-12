@@ -3,12 +3,13 @@ title: 更新 windowsOfficeClientConfiguration
 description: 修补程序特定的非安全策略负载。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 76179dadc4620617487c66b719626778fa4e4f26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983504"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>更新 windowsOfficeClientConfiguration
 

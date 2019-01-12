@@ -2,12 +2,14 @@
 title: educationAssignmentResource 资源类型
 description: 包装对象，用于存储与工作分配关联的资源。 包装添加**distributeForStudentWork**属性，指示该资源将
 localization_priority: Normal
-ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: eb0879737d0375bf2463268fe29f2c98f2b6ed51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868836"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991347"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -21,14 +23,14 @@ ms.locfileid: "27868836"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |读取属性和**educationAssignmentResource**对象的关系。|
-|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |更新**educationAssignmentResource**对象。 |
+|[更新](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |更新**educationAssignmentResource**对象。 |
 |[删除](../api/educationassignmentresource-delete.md) | 无 |删除**educationAssignmentResource**对象。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|布尔|指示是否应将此资源复制到每个学生提交修改和提交。|
-|id|字符串| 此资源的 ID。 此为只读属性。|
+|distributeForStudentWork|Boolean|指示是否应将此资源复制到每个学生提交修改和提交。|
+|id|字符串| 此资源的 ID。 只读。|
 |resource|[educationResource](educationresource.md)|已经与此工作分配的资源对象。|
 
 ## <a name="relationships"></a>Relationships

@@ -3,12 +3,13 @@ title: 'TableColumn: HeaderRowRange'
 description: 获取与列的标头行相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 2588ae415866d1d68d3edf605aade1f1ca76f667
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e3fdd98598189ee8d0e4d685176dd3ef494d888d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986402"
 ---
 # <a name="tablecolumn-headerrowrange"></a>TableColumn: HeaderRowRange
 

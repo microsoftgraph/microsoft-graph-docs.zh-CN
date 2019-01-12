@@ -3,12 +3,13 @@ title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a20143e12098d246a65477400341409a79ad64ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d98275975a0d9e46251521b76b55b0e8d67d226b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984484"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 

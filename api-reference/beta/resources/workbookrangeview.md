@@ -3,12 +3,13 @@ title: rangeView 资源类型
 description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c356c737946dc70c6718b71c1c9aa7081069fd96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9476b3f4a085f70be51d81a9da667c07db3b9232
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983714"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 

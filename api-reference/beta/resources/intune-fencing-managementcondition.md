@@ -2,12 +2,14 @@
 title: managementCondition 资源类型
 description: 管理条件都可以地理范围，如动态触发的事件时限和网络范围。
 localization_priority: Normal
-ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e0aeb73a93cd4c61b6d4680f73c2a9b8cee830c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986739"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 
@@ -36,7 +38,7 @@ ms.locfileid: "27834109"
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|此管理条件适用的平台。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|为管理 condition 相关联的管理条件语句。|
 

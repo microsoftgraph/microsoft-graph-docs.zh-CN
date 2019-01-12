@@ -3,12 +3,13 @@ title: 列表 windowsWifiEnterpriseEAPConfigurations
 description: 列出属性和 windowsWifiEnterpriseEAPConfiguration 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 39991c4a7b0f8238f898f17602e59534f042de0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3724a7b5facd634c1457ccbd218ddfdb6505ce68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806865"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978085"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>列表 windowsWifiEnterpriseEAPConfigurations
 

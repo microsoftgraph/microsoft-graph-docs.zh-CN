@@ -3,12 +3,13 @@ title: 删除 windows10PFXImportCertificateProfile
 description: 删除 windows10PFXImportCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 887f8207bf8f88a3799cd4cf063138f37d4462d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 451ba700e9b91d76afc9d73db7aac82ff6d194c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990101"
 ---
 # <a name="delete-windows10pfximportcertificateprofile"></a>删除 windows10PFXImportCertificateProfile
 

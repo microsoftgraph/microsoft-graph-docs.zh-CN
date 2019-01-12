@@ -3,12 +3,13 @@ title: 'ChartCollection: ItemAt'
 description: 根据其在集合中的位置获取图表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9b081bfcbb7a65263069db74dd90a4a2b7db50c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b1e5986871d553e9daa58b3064657d20091cc52b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979164"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 

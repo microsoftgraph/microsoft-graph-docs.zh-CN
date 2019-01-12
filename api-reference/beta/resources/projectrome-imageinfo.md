@@ -2,12 +2,13 @@
 title: imageInfo 资源类型
 description: 代表活动对象的 visualInfo 部件中的**属性**属性的复杂类型。
 localization_priority: Normal
-ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 347e07b70e8bad6dce8571dd1fbac5cd00d9abdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828565"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978688"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
@@ -17,11 +18,11 @@ ms.locfileid: "27828565"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | Description|
+|名称 | 类型 | 说明|
 |:----|:-----|:-----------|
 |iconUrl | 字符串 | 可选;指向一个表示用于生成活动的应用程序图标的 URI|
 |alternateText | 字符串 | 可选;可选文字辅助内容的图像|
-|addImageQuery | 布尔 | 可选;参数一起用来指示服务器是能够呈现动态以响应参数化的图像。 例如 – 高对比度图像|
+|addImageQuery | Boolean | 可选;参数一起用来指示服务器是能够呈现动态以响应参数化的图像。 例如 – 高对比度图像|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

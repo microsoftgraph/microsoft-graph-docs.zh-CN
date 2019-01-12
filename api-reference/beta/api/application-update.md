@@ -3,12 +3,13 @@ title: 更新应用程序
 description: 更新应用程序对象的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecdf1d7f4f291b415e83b3926f8f82ea81f73390
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819003"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990703"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -38,9 +39,9 @@ PATCH /applications/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowPublicClient|布尔| 指定应用程序可用作公共客户端。 例如，移动设备上运行安装的应用程序。 默认值为 *false*。 |
+|allowPublicClient|Boolean| 指定应用程序可用作公共客户端。 例如，移动设备上运行安装的应用程序。 默认值为 *false*。 |
 |api|[api](../resources/api.md)| 指定 API 应用程序的设置。 |
 |appRoles|[appRole](../resources/approle.md)集合|声明应用程序可能的应用程序角色的集合。 这些角色可以分配给用户、 组或服务主体。 不可为 null。|
 |applicationAliases|String 集合| 标识应用程序的 Uri。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 *Any*运算符，则需要为多值属性的筛选器表达式。 不可为 null。 |

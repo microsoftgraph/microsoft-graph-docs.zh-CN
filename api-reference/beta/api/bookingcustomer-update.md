@@ -2,12 +2,14 @@
 title: 更新 bookingcustomer
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: ccfd7d496f796ea71568a58d48e62ed84c29abc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: a22568347e887a9c0ddfc000123e3413d544c7fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844343"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990508"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 

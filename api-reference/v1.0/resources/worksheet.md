@@ -2,12 +2,14 @@
 title: 工作表资源类型
 description: Excel 工作表是由单元格组成的网格。它可以包含数据、表、图表等。
 localization_priority: Priority
-ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 60e31738329943d96e1a4f3ea8293851e759eaff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983868"
 ---
 # <a name="worksheet-resource-type"></a>工作表资源类型
 
@@ -24,12 +26,12 @@ Excel 工作表是由单元格组成的网格。它可以包含数据、表、�
 |[列出图表](../api/worksheet-list-charts.md) |[WorkbookChart](chart.md)集合| 获取 Chart 对象集合。|
 |[创建表](../api/worksheet-post-tables.md) |[WorkbookTable](table.md)| 通过发布到表集合创建新表。|
 |[列出表](../api/worksheet-list-tables.md) |[WorkbookTable](table.md)集合| 获取 Table 对象集合。|
-|[Update](../api/worksheet-update.md) | [WorkbookWorksheet](worksheet.md)   |更新 Worksheet 对象。 |
+|[更新](../api/worksheet-update.md) | [WorkbookWorksheet](worksheet.md)   |更新 Worksheet 对象。 |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|根据行和列编号获取包含单个单元格的 range 对象。单元格可以位于父区域外部，只要其保持在工作表网格内即可。|
 |[区域](../api/worksheet-range.md)|[Range](range.md)|获取地址或名称指定的 range 对象。|
 |[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|使用的区域是包含分配了值或格式化的任何单元格的最小区域。如果工作表为空，此函数将返回左上角的单元格。|
 |[删除](../api/worksheet-delete.md)|无|从工作簿中删除工作表。|
-|[List](../api/worksheet-list.md) | [WorkbookWorksheet](worksheet.md)集合 |获取 worksheet 对象集合。 |
+|[列出](../api/worksheet-list.md) | [WorkbookWorksheet](worksheet.md)集合 |获取 worksheet 对象集合。 |
 |[Add](../api/worksheetcollection-add.md)|[WorkbookWorksheet](worksheet.md)|向工作簿添加新工作表。将工作表添加到现有工作表的末尾。 |
 |[List pivotTables](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) 集合| 获取一组 workbookPivotTable 对象。|
 

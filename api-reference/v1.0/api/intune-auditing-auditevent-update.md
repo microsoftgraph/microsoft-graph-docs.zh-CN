@@ -3,12 +3,13 @@ title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63da381029325977f7cdcf74b8de776c668e0656
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f50bf7d2d67bf8d4fdfa78eed446c16dc82aa2b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991031"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 

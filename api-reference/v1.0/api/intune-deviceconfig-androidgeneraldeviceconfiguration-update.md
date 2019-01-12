@@ -3,12 +3,13 @@ title: 更新 androidGeneralDeviceConfiguration
 description: 更新 androidGeneralDeviceConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 328a719e9791706bbe89d2d68d2e5d4a82472110
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0e9c257ac76bfc93b9250065ad899e3d99796328
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820025"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991004"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>更新 androidGeneralDeviceConfiguration
 
