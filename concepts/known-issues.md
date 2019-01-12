@@ -2,12 +2,12 @@
 title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329160"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791657"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -38,19 +38,9 @@ ms.locfileid: "27329160"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>应用权限
-
-使用应用权限更改团队和频道时，Microsoft Teams 使用空白名称（而不是应用名称）呈现发布到常规频道的控制消息。 今后发布的更新将解决此问题。 修补程序将追溯更新已发布的控制消息。
-
-### <a name="create-chat-thread-api"></a>用于创建聊天线程的 API
+### <a name="create-chat-thread-api"></a>创建聊天线程 API
 
 当前用于[创建聊天线程](/graph/api/channel-post-chatthreads?view=graph-rest-beta)的 API 将被替换为，与用于[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)的架构一致的更丰富 API。
-
-### <a name="graph-explorer-and-v10"></a>Graph 浏览器和 v1.0
-
-Graph 浏览器示例查询尚未针对 v1.0 进行更新。
-仍可以在顶部的文本框中键入 v1.0 查询。
-请确保已为 Graph 浏览器设置适当权限，如 Group.ReadWrite.All 和 User.Read.All。
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph 浏览器和全局管理员
 

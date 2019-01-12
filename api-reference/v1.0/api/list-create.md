@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
-ms.openlocfilehash: 724a34ea9add74772236b6d0dad90e23c9cac955
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 32dc5154d8a799f01294e87f47c93879f0ce3222
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968594"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 

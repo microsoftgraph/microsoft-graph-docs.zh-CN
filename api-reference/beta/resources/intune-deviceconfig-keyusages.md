@@ -3,12 +3,13 @@ title: keyUsages 枚举类型
 description: 密钥用法选项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc270679624b6ce142092393693a5a34562e1a3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 13193df580fa42a4d23f7e7bf8b7e63a32d5a1d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974040"
 ---
 # <a name="keyusages-enum-type"></a>keyUsages 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27885790"
 
 密钥用法选项。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |keyEncipherment|1|密钥加密用法。|
 |digitalSignature|2|数字签名用法。|

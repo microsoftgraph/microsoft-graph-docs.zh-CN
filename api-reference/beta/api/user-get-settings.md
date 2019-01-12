@@ -3,12 +3,13 @@ title: 获取设置
 description: 读取用户和组织设置对象。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 30217d43ac453c9e3502b00ece22ac01edf0abfb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5e9f66d96fc0f742196bf97c7e54406231d2b042
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914827"
 ---
 # <a name="get-settings"></a>获取设置
 

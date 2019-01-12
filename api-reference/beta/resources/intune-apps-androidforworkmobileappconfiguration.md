@@ -2,12 +2,14 @@
 title: androidForWorkMobileAppConfiguration 资源类型
 description: 包含的属性、 继承的属性和 AFW 移动应用程序配置的操作。
 localization_priority: Normal
-ms.openlocfilehash: c8c6891e76908b4e041f5ef5fe7080d9d7a6894c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 0166a8c0a0727ddf58689b258cc8f349709d1b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810505"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987907"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration 资源类型
 

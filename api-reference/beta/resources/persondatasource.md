@@ -2,12 +2,14 @@
 title: personDataSource 资源类型
 description: 代表用户数据来自，例如目录和 Outlook 联系人的源。
 localization_priority: Normal
-ms.openlocfilehash: 80e61bd1cd91c0b2a780936a5a311b0916743a17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: simonhult
+ms.prod: insights
+ms.openlocfilehash: 540ffa81b20b40f9df2694ba634777250742daaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824967"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978499"
 ---
 # <a name="persondatasource-resource-type"></a>personDataSource 资源类型
 

@@ -3,12 +3,13 @@ title: 删除日历
 description: 删除默认日历以外的日历。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4621314f179ddc1eac47b5f178ff50af670972db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f86f1618e36d221164caa65484344f2a3d177765
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922198"
 ---
 # <a name="delete-calendar"></a>删除日历
 

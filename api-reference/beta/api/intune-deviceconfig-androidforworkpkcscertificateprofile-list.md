@@ -3,12 +3,13 @@ title: 列表 androidForWorkPkcsCertificateProfiles
 description: 列出属性和 androidForWorkPkcsCertificateProfile 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49421bf0edc4acc2f25c35f97a50c3c358f3f4e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 292c50caa24b04812347a12065b701a92cc37892
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847703"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971499"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>列表 androidForWorkPkcsCertificateProfiles
 

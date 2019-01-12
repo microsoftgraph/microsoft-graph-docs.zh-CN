@@ -3,12 +3,13 @@ title: 呼叫： 取消静音
 description: 允许应用程序本身取消静音。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3f010b7b7fb790b40455c8e09b785ffe29af0983
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e4474fc092f141d4cf1fb94f3bde2725b8a1b078
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813676"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975398"
 ---
 # <a name="call-unmute"></a>呼叫： 取消静音
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |clientContext|字符串|客户端上下文。|
 

@@ -2,12 +2,14 @@
 title: Outlook 邮件 API 概述
 description: Outlook 是 Office 365 的消息传递通信中心。 使用它，还可以管理联系人、安排会议、查找组织用户的相关信息、
 author: angelgolfer-ms
-ms.openlocfilehash: 7cf498c91464ae14dcf8bf3c3d5dba4bdf030455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 462e00825a9dd54a6628ca638b06fb56c6cb5c8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976623"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 

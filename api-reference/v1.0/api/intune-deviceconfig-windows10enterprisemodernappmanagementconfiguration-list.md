@@ -3,12 +3,13 @@ title: 列出 windows10EnterpriseModernAppManagementConfigurations
 description: 列出 windows10EnterpriseModernAppManagementConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eba2ef62abe1cafb1de9c7eaeda189a3411c4d25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a132bab57f77b69f288b37c9472722dc3b91f508
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968580"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>列出 windows10EnterpriseModernAppManagementConfigurations
 

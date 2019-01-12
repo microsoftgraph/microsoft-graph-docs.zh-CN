@@ -3,12 +3,13 @@ title: windowsStartMenuModeType 枚举类型
 description: 开始菜单的显示模式的类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: baef9d6407acfef594151082b96b1c052af8d0f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c713652e73595e1fadc5c62e9d5b3951bcda85a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880386"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987718"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27880386"
 
 开始菜单的显示模式的类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|用户定义。 默认值。|
 |全屏幕|1|全屏。|

@@ -3,12 +3,13 @@ title: mediaInfo 资源类型
 description: 操作中使用的媒体信息提示。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 6fe2c49e86bac9d5961310694b21e9439a4896ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 217b9a5aaa88a1bbf343447fad344b322cfeb611
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924529"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "27885601"
 操作中使用的媒体信息提示。
 
 ## <a name="properties"></a>属性
-| 属性       | 类型    | Description                      |
+| 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | String  | 唯一标识的资源。 |
 | uri            | 字符串  | 资源的路径。            |

@@ -3,12 +3,13 @@ title: androidWorkProfileCrossProfileDataSharingType 枚举类型
 description: Android 工作模板跨共享类型的配置文件数据。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 138834bcfa9bfd4f64f3eb9e801c975eb16b38c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 18f4e8df4ddf3d7e1bf8ce39f026cf8112093e1e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871958"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976245"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
 

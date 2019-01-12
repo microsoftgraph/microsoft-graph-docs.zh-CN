@@ -3,12 +3,13 @@ title: 更新 windows10CompliancePolicy
 description: 更新 windows10CompliancePolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60d2d40bdab8277f0fb996147f7ba43b7b3d3dcb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fb689181fdc22e34bb5b85ee42c1f38e4a26905a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970140"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 下表显示创建 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|

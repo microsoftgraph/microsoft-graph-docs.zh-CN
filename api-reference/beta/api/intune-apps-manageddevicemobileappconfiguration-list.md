@@ -3,12 +3,13 @@ title: 列出 managedDeviceMobileAppConfigurations
 description: 列出 managedDeviceMobileAppConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c6c0e8cee0a59ffc0f105a5747deb0b03668dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9ae0a604aaa490dcaa45dc441f00a4fdcbebaf50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833347"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960054"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>列出 managedDeviceMobileAppConfigurations
 

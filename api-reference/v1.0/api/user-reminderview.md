@@ -3,12 +3,13 @@ title: 'user: reminderView'
 description: '返回指定开始时间和结束时间范围内的日历提醒列表。 '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 08f1e8414b727b5625b271d8a84c10a7fa3e980d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7cfabb0595ed0787e3e7a96cc589526fddc8314f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983777"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 返回一组事件提醒中用户日历中指定的开始和结束时间。 

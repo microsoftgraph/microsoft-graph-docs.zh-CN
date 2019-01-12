@@ -3,12 +3,13 @@ title: mobileAppTroubleshootingAppTargetHistory 资源类型
 description: 移动应用程序疑难解答事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 76595f4fd643e985d28bcb84ad1c4ea6d7be2ad6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9da17e4a03d1a28c32215b8616dad2ea3700ef4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969420"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27810337"
 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项所发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |securityGroupId|字符串|它已向其目标 AAD 安全组 id。|

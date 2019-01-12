@@ -3,12 +3,13 @@ title: 创建 androidWorkProfilePkcsCertificateProfile
 description: 创建新的 androidWorkProfilePkcsCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 781b6f53d5530d68c19fb205f5c8f55b44bc0588
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28cdeb6a2e87d91333a43fd97c14ac47d5d51659
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849096"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979752"
 ---
 # <a name="create-androidworkprofilepkcscertificateprofile"></a>创建 androidWorkProfilePkcsCertificateProfile
 

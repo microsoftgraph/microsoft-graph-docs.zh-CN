@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
 localization_priority: Priority
-ms.openlocfilehash: 865d6040aa2a7daaef1ed62c61c45f1e525ded54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3739997cdc5410ecffbf21277ecff1497b60a190
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968636"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 

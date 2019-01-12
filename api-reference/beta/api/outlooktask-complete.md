@@ -2,12 +2,14 @@
 title: outlookTask： 完整
 description: '完成将**completedDateTime**属性设置为当前日期，其 Outlook 任务 '
 localization_priority: Normal
-ms.openlocfilehash: 6a033624a1fafbc30b200550acc466f7fdb432d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 966f5c2a6d429169cff3bd6746ebb0bace34ad15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891915"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979633"
 ---
 # <a name="outlooktask-complete"></a>outlookTask： 完整
 

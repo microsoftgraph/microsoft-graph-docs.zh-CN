@@ -3,12 +3,13 @@ title: unaryManagementConditionExpressionOperatorType 枚举类型
 description: 受支持的运算符的一元管理条件表达式
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0707c38a7cd806251b51e467c9d5d7d1b4075f14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a8aa8058a923ef90918e1eb798817c6f8f88a1a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968391"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27892048"
 
 受支持的运算符的一元管理条件表达式
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |
 not|0|否定操作数的计算。|

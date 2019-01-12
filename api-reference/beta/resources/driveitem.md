@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
-ms.openlocfilehash: 255b9de7ad565228da093a9a40d23c3360df28b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977772"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 

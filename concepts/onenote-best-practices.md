@@ -1,13 +1,15 @@
 ---
 title: 使用 Microsoft Graph 中的 OneNote API 的最佳做法
 description: 本文提供了有关使用 Microsoft Graph 中的 OneNote API 的建议。 这些建议基于 Stack Overflow 和 Twitter 上的常见问题的解答。
-author: Jewan-microsoft
-ms.openlocfilehash: f02976424ea39935e38d45b7eb2f80ba66319c7e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: 95c135ec405764a53f06fed2f9ac2dde6b4138bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332163"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972248"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 OneNote API 的最佳做法
 

@@ -3,12 +3,13 @@ title: 则 applicationType 枚举类型
 description: 可能的应用程序类型
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed3c54798b7f65b5d580db0dde5812afec727892
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa191eaddfe89b99d7945a7f4b18b584beaf7f6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981257"
 ---
 # <a name="applicationtype-enum-type"></a>则 applicationType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27862543"
 
 可能的应用程序类型
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |通用|1|Windows 通用应用程序|
 |桌面|2|Windows 桌面应用程序|

@@ -3,12 +3,13 @@ title: 获取 DirectoryRole
 description: 检索 directoryRole 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: f8ff306359675f7bc2c569f507dbcb3baf33b384
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0ddad0f7bd6c62544dcc2aa65ede6c6db93dbd5e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832226"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967166"
 ---
 # <a name="get-directoryrole"></a>获取 DirectoryRole
 

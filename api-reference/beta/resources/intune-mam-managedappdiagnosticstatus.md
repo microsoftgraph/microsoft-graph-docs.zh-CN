@@ -3,12 +3,13 @@ title: managedAppDiagnosticStatus 资源类型
 description: 表示诊断状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 98bd1353156c99861749bdb7eac2e686cf96532e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 210edaf8eb039db928d612337aa7c8e0642c9ee3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987186"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 

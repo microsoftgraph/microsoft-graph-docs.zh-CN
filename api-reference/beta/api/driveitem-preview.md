@@ -2,12 +2,13 @@
 title: driveItem： 预览
 description: 此操作，可以获取项目的短期嵌入 Url 以便呈现临时预览。
 localization_priority: Normal
-ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980872"
 ---
 # <a name="driveitem-preview"></a>driveItem： 预览
 
@@ -49,7 +50,7 @@ POST /shares/{shareId}/driveItem/preview
 在请求正文定义嵌入请求您的应用程序的 URL 的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称      |  类型         | Description
+|   名称      |  类型         | 说明
 |:------------|:--------------|:-----------------------------------------------
 | 查看器      | string        | 可选。 预览应用程序使用。 `onedrive` 或 `office`）。 如果为空，将自动选择合适的查看器。
 | 边框  | boolean       | 可选。 如果`true`（默认），嵌入视图将不包括任何控件。
@@ -69,7 +70,7 @@ POST /shares/{shareId}/driveItem/preview
 
 响应将是一个 JSON 对象，包含以下属性：
 
-| 名称           | 类型   | Description
+| 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）

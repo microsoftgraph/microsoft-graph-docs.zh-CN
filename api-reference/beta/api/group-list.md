@@ -2,12 +2,14 @@
 title: 列出组
 description: 列出组织中可用的所有组，包括但不限于 Office 365 组。
 localization_priority: Priority
-ms.openlocfilehash: dd243d1f07b98564bb5aa4751664337c0f0654cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 504ee61bcf246362332cec2382048aa1c5e91d75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916507"
 ---
 # <a name="list-groups"></a>列出组
 

@@ -3,12 +3,13 @@ title: 获取 TableColumn
 description: 检索 tablecolumn 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 98edaa9a8e8b956eb81e672011045e687a69ee63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: fb6a50ce16fa952f6c2718c54b70d7e9cacf1a83
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882248"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969042"
 ---
 # <a name="get-tablecolumn"></a>获取 TableColumn
 

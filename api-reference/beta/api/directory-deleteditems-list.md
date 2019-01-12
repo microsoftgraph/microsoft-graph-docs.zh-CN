@@ -3,12 +3,13 @@ title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: ef23704c01a7d1b6cd3a85ffcab1dc34ded0936d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d6b4022b134287e152fd2a476a2a9cd602ce17f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879434"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985016"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 

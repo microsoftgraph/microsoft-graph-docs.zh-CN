@@ -3,12 +3,13 @@ title: sharedPCAllowedAccountType 枚举类型
 description: 允许共享 PC 的帐户的类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a0ac15a83f109893a1db3c255ceb7166870260c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ed359399acc1b83c338e509ec3ea35623e0ce9c5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969413"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27819766"
 
 允许共享 PC 的帐户的类型。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |来宾|1|仅来宾帐户。 默认值。|
 |domain|2|只能加入域的帐户。|

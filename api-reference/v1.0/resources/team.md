@@ -3,12 +3,13 @@ title: 团队资源类型
 description: '团队中的 Microsoft 团队是通道的集合。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7dff1bb05b2abe604963657d4691766eeeaae4ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976931"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -39,7 +40,7 @@ ms.locfileid: "27878545"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型   | Description |
+| 属性 | 类型   | 说明 |
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |要配置的团队中的使用 Giphy、 memes 和标签的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |要配置的是否来宾可以创建、 更新或删除通道团队中的设置。|
@@ -50,7 +51,7 @@ ms.locfileid: "27878545"
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型   | Description |
+| 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
 |通道|[通道](channel.md)集合|通道邮件与团队关联的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md)集合|此团队中安装应用程序。|

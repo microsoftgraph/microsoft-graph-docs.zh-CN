@@ -3,12 +3,13 @@ title: 'TableColumn: DataBodyRange'
 description: 获取与列的数据体相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 549f3f2af9ea7d7fbdd323f349397e72a5729684
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2ba67e4585b3671a588173772b3f1313198e6a38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842691"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969035"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 

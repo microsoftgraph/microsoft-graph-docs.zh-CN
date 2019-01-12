@@ -1,14 +1,15 @@
 ---
 title: Onenote 资源类型
 description: 适用于 Onenote 资源的入口点。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Priority
-ms.openlocfilehash: 5488d24139eb87bf90f51045e4ddf60395f8ebaa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 8240336bfcb9e45e33172c2c1551b71a65c315e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894416"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982349"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 

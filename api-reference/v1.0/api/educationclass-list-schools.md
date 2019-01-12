@@ -3,12 +3,13 @@ title: 列出学校
 description: 检索教授该课程的学校列表。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 6bfc94304a1e2eae448848adb75a79989c2b77f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 3019c237ec93332f8d16583b7b913a8871b32aa3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815426"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965941"
 ---
 # <a name="list-schools"></a>列出学校
 

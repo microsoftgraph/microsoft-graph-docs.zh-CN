@@ -1,13 +1,15 @@
 ---
 title: Microsoft Graph 安全性 API 数据流
 description: Microsoft Graph 安全性 API 在 Microsoft Graph 安全性生态系统中联合了对所有提供商的请求。 这基于应用程序提供的安全性提供商许可，如下图所示。 此许可工作流仅适用于非 Microsoft 提供商。
-author: Preetikr
-ms.openlocfilehash: 5e70414409a35cc7fdef6fb85e6454e26a79bd38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: preetikr
+localization_priority: Priority
+ms.prod: security
+ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354738"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987809"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Microsoft Graph 安全性 API 数据流
 

@@ -3,12 +3,13 @@ title: 删除 windowsUniversalAppX
 description: 删除 windowsUniversalAppX。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22f35700413a395110f74313effbaac0d175f8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9dee4c719beac270426dc8c201eb83a5809b6bf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843629"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974910"
 ---
 # <a name="delete-windowsuniversalappx"></a>删除 windowsUniversalAppX
 

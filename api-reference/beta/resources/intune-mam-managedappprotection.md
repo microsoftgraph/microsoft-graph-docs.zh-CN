@@ -3,12 +3,13 @@ title: managedAppProtection 资源类型
 description: 用于为指定的一组应用配置详细管理设置的策略
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97d98a6edea3b03b7d35d68ca1f274e938449990
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 125453eae8e9acaf329f456d12e93fa6f88e9a5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972374"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 

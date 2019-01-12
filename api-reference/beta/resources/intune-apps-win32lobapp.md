@@ -3,12 +3,13 @@ title: win32LobApp 资源类型
 description: 包含属性和继承的 Win32 应用程序的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6cd1a0d715ba4c9ebcd26d88edcefcd0136bf919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 321ac11d4745b2f165e5170f82e7424488f2472e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842768"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966081"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 

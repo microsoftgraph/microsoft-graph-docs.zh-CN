@@ -1,12 +1,15 @@
 ---
 title: 调用 Microsoft Graph API
 description: '若要访问和操纵 Microsoft Graph 资源，请使用以下一项操作来调用和指定资源 URL：   '
-ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970414"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>调用 Microsoft Graph API
 

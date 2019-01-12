@@ -2,12 +2,13 @@
 title: 使用 Microsoft Graph API 获取更改通知
 description: Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 客户端是配置其自己的 URL，以接收通知的 web 服务。 客户端应用程序使用通知更新时更改其状态。 有关详细信息，包括如何订阅和处理传入通知，请参阅 Set up 中用户数据的更改的通知。
 localization_priority: Priority
-ms.openlocfilehash: e846e31870e2d14a1e7822cbb9f42682c8b2ac1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: cb522c50b2cd9fec007dd32d4257dd68fc56ea6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860863"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981411"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -25,7 +26,7 @@ Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 
 - 用户的个人 OneDrive 文件夹
 - 安全警报
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 通常订阅操作需要拥有对资源的读取权限。例如，若要获取邮件通知，应用需要 `Mail.Read` 权限。[创建订阅](../api/subscription-post-subscriptions.md)一文列出了各个资源类型所需的权限。下表列出了将 webhook 用于特定资源类型时应用可以请求的权限类型。
 

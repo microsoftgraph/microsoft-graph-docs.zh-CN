@@ -3,12 +3,13 @@ title: 更新 windowsKioskConfiguration
 description: 更新 windowsKioskConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5c9c80f6279879750d282d5b75aea6064447f0d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 33fe6dc90fe6118dc8ca4aeb67bfc728f487a1b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983161"
 ---
 # <a name="update-windowskioskconfiguration"></a>更新 windowsKioskConfiguration
 

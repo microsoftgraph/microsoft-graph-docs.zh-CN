@@ -2,12 +2,14 @@
 title: 获取共享日历或委托日历中的 Outlook 事件
 description: 在 Outlook 中，客户可以与其他用户共享日历，并允许其他用户查看或修改此日历中的事件。 客户还可以授权代理代表自己执行操作、接收或答复会议请求，或在日历中创建或更改项。
 author: angelgolfer-ms
-ms.openlocfilehash: ef4de6cedeeb9a5688f250652eef0cd6cd5f5183
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 773d996e8343c69028a7cbbe8a1a4283f5470108
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981383"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>获取共享日历或委托日历中的 Outlook 事件
 

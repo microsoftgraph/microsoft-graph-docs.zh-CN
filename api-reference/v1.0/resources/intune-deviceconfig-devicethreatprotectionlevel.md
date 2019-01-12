@@ -3,12 +3,13 @@ title: deviceThreatProtectionLevel 枚举类型
 description: 设备的设备威胁保护 API 的威胁保护级别。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa287d9259ed88f1b2240fd9bbdcaf77bcf9170e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a5b908b3d978c6a05897f466e43651b50f9931b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974976"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27850580"
 
 设备的设备威胁保护 API 的威胁保护级别。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |不可用|0|默认值。 请勿使用。|
 |保护|1|设备威胁级别要求： 安全。 这是最安全的级别，表示在设备上未发现任何威胁。|

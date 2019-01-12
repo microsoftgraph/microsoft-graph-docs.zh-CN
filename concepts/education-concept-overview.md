@@ -2,12 +2,14 @@
 title: 教育版 API 概述
 description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
 author: mmast-msft
-ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: education
+ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985485"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 

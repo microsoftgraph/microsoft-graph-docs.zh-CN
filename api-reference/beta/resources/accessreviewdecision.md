@@ -2,12 +2,14 @@
 title: accessReviewDecision 资源类型
 description: 在 Azure AD 中访问审阅功能，`accessReviewDecision`代表 Azure AD 访问检查决策的特定实体的访问。  内访问审阅或定期访问回顾实例，还有一`accessReviewDecision`每个已审阅的用户。  例如，如果组具有两个来宾和一个非访客成员，作为来宾访问审阅执行为该组，然后将两个访问审阅决策对象。  如果审阅者更改其决策，或其他审阅者重写它们，则`accessReviewDecision`更新。
 localization_priority: Normal
-ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b6b10a53726e12c37a598f8df735a3f70174c807
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977554"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision 资源类型
 
