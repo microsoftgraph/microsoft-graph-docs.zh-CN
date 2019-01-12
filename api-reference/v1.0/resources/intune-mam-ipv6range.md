@@ -3,12 +3,13 @@ title: iPv6Range 资源类型
 description: IPV6 范围
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 84d925cc7885dab4b3e87dbd62060894e741f52c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 115c89b6ae90a292e08e7b0374e1c3b529e2df19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845743"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926860"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 

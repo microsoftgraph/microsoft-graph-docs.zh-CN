@@ -2,12 +2,14 @@
 title: plannerFavoritePlanReference 资源类型
 description: '**PlannerFavoritePlanReference**资源类型代表对由用户标记为收藏 plannerPlan 的引用。 '
 localization_priority: Normal
-ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 48dabeb83522c4151f9da2db9192c7ad546a9bc8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938270"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference 资源类型
 

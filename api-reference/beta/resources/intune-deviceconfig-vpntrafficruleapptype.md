@@ -3,12 +3,13 @@ title: vpnTrafficRuleAppType 枚举类型
 description: 指示 VPN 流量规则关联的应用程序的类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 71e0af722c690188b3bb0e9dc33327f443cc9086
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6adf30f981bcb3ee4d57410a63419b29ac4184cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937739"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 枚举类型
 

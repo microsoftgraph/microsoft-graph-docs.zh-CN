@@ -2,12 +2,14 @@
 title: managedAppAvailability 枚举类型
 description: 托管 (MAM) 应用程序的可用性。
 localization_priority: Normal
-ms.openlocfilehash: e979ea44e6eeace49efda442d8eef20056287bde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b79504fac79773dec5c58c894033a9ae9750442c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831645"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936121"
 ---
 # <a name="managedappavailability-enum-type"></a>managedAppAvailability 枚举类型
 

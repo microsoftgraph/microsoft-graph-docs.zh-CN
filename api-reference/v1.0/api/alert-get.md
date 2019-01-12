@@ -1,14 +1,15 @@
 ---
 title: 获取警报
 description: " 检索的属性和警报对象的关系。"
-author: Preetikr
+author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 6e2bc95561dcfb87c54e684ad6f3991cbcd6e7f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856999"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937894"
 ---
 # <a name="get-alert"></a>获取警报
 

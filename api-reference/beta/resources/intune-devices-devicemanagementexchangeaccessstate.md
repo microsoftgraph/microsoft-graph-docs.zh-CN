@@ -3,12 +3,13 @@ title: deviceManagementExchangeAccessState 枚举类型
 description: 设备 Exchange 访问状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1b6d831eb226648dcdbdbe470c82df900a8464a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03a407d0971059ed7a0a8bb0ffae2773bc788b31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817842"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928393"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 

@@ -3,12 +3,13 @@ title: 创建 windowsPhone81SCEPCertificateProfile
 description: 创建新的 windowsPhone81SCEPCertificateProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d03c89a3c0984b34656869c0c3f618dc1acb564e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae680a2b0484752c93a94d22f8269d1f700fcec8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816812"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965311"
 ---
 # <a name="create-windowsphone81scepcertificateprofile"></a>创建 windowsPhone81SCEPCertificateProfile
 

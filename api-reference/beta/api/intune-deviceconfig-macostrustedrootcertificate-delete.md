@@ -3,12 +3,13 @@ title: 删除 macOSTrustedRootCertificate
 description: 删除 macOSTrustedRootCertificate。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a95ae56945fc4bee4f6ff1c54ff6bc439d2cd8a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cfe747cc44c40df9ab1b10373ad18e46cf9b521f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948434"
 ---
 # <a name="delete-macostrustedrootcertificate"></a>删除 macOSTrustedRootCertificate
 

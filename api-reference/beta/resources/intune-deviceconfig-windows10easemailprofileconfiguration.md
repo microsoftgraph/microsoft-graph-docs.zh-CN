@@ -2,12 +2,14 @@
 title: windows10EasEmailProfileConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示本机电子邮件客户端 (Outlook) 与 Exchange server 通信和获取电子邮件、 联系人、 日历和任务的 Windows 10 设备上。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
-ms.openlocfilehash: be74fa183836c271f9a86b299c03c05972eccf0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 22aef1d92aa8c58f454ed3e1c12f6c5d353fd287
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816665"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962329"
 ---
 # <a name="windows10easemailprofileconfiguration-resource-type"></a>windows10EasEmailProfileConfiguration 资源类型
 

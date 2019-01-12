@@ -3,12 +3,13 @@ title: 获取 windows10EnterpriseModernAppManagementConfiguration
 description: 读取 windows10EnterpriseModernAppManagementConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 409ba7ccfee3043ba6b7557eb3e8df2807795ce7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8f9661101616bd26478de0fec5c76178d84c1318
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838323"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930017"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>获取 windows10EnterpriseModernAppManagementConfiguration
 

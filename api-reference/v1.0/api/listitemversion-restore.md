@@ -2,12 +2,13 @@
 title: 还原 ListItem 的以前版本
 description: 将 ListItem 的以前版本还原为当前版本。 这将使用以前版本的内容创建一个新版本，但保留项的所有现有版本。
 localization_priority: Normal
-ms.openlocfilehash: 6fb315986a8dc22363e22235f8cf65e0cbc21fed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3ba63f56838d07a0031baf613dec8e0847aaf2e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963393"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>还原 ListItem 的以前版本
 

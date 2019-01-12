@@ -3,12 +3,13 @@ title: 更新 educationAssignmentResource
 description: '更新资源分配相关联的属性。 仅在类的教师可以更改工作分配的资源对象。  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f4178b5d6e2dac956a9d3f20461fd789f9f8e740
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935876"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 

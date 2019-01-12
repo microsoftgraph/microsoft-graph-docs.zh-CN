@@ -3,12 +3,13 @@ title: macOSEnterpriseWiFiConfiguration 资源类型
 description: MacOS Wi-fi WPA-企业/WPA2-企业配置配置文件。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 132701b0d3bb666d8b58bed59a0f0e28b7d062c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82aa929b28ed4cb881e5cd4ad951503efd5b47f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947811"
 ---
 # <a name="macosenterprisewificonfiguration-resource-type"></a>macOSEnterpriseWiFiConfiguration 资源类型
 

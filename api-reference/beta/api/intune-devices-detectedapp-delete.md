@@ -3,12 +3,13 @@ title: 删除 detectedApp
 description: 删除 detectedApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db0e1d4ccd95749e419104f2e253e478549274f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 409288b5aa14c367e83e823ef01c504f9b9cdd7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806725"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939467"
 ---
 # <a name="delete-detectedapp"></a>删除 detectedApp
 

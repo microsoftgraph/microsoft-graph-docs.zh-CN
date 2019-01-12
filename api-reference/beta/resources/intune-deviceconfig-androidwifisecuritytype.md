@@ -3,12 +3,13 @@ title: androidWiFiSecurityType 枚举类型
 description: 用于 Android Wi-fi 安全类型。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9a8dde9046e6774726486753d7e4e1420af8a05f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 47a85a3949fb55742f286cae47c42d9aec9a94fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885660"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934238"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
 

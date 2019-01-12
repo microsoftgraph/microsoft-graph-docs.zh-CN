@@ -3,12 +3,13 @@ title: 更新 iosLobApp
 description: 更新 iosLobApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a556f521465c94366bdf1418eba69c73e9abe1f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 09b30705f0b8401154a7394afbf1fac3f4a72454
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935176"
 ---
 # <a name="update-ioslobapp"></a>更新 iosLobApp
 

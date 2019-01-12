@@ -3,12 +3,13 @@ title: 获取 directoryObject
 description: 检索的属性和 directoryobject 对象的关系。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 06209d068fdb7202ee88808255efd3c2238f21cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 99d8fe545068bcdba2ea1d45072fc098a16f581f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931613"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 

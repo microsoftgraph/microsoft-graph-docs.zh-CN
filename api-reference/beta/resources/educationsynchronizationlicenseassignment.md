@@ -3,12 +3,13 @@ title: educationSynchronizationLicenseAssignment 资源类型
 description: 代表分配给用户帐户的许可信息。 该资源将用于创建新的用户帐户时设置许可证分配。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9100ba799c8981d5defdd74d6346a66859b2d53e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 757e080a8b2c6f3f01fa1663f10c9b0b98eaf4d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804905"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948273"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment 资源类型
 

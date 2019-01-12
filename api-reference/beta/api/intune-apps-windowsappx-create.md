@@ -3,12 +3,13 @@ title: 创建 windowsAppX
 description: 创建新的 windowsAppX 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd6e79a3dfda5d222a56646901a4efe07101aec5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d9534e1a85e77e320e14cabb1a0473c37c1be1ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854241"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939796"
 ---
 # <a name="create-windowsappx"></a>创建 windowsAppX
 

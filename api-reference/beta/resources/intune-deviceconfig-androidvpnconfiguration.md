@@ -3,12 +3,13 @@ title: androidVpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Android 设备连接到所需 VPN 终结点。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3338dec188994919fb680038553355808a39b0a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86414a355f95858bcb6f6ab67c67d5ec068e53a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871181"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948259"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>androidVpnConfiguration 资源类型
 

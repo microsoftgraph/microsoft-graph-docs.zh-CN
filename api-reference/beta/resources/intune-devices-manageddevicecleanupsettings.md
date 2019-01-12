@@ -3,12 +3,13 @@ title: managedDeviceCleanupSettings 资源类型
 description: 定义规则，当管理员想要清除的设备。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 755fc90b957427c4b9f8ee9007decea320141601
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 334b561ffa19d4161553f761ce65b7da7d9dbcfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961895"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>managedDeviceCleanupSettings 资源类型
 

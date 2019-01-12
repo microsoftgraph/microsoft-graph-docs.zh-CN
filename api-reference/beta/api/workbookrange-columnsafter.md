@@ -3,12 +3,13 @@ title: 'workbookRange: columnsAfter'
 description: 获取给定范围右侧的一定数量的列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9bdab549d3dc2511e17df1f838ce5ca146b0485a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7b5a7625f6caa7bddbb21e23e670508e989f974a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890865"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982335"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 

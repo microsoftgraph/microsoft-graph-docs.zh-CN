@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentTopFailures 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4e9ff98c2ddc55110026153c854d91901ffd2335
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b4a21d9fc0b29c63053d184db235a1c44744d8e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882969"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932656"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures 函数
 

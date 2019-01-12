@@ -3,12 +3,13 @@ title: mediaContentRatingJapan 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8877e1b5f2c6031725c07a02b387da4ce5bc9136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 202b778fefe1236577f61058025714ea0f337826
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943016"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan 资源类型
 

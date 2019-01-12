@@ -3,12 +3,13 @@ title: 删除音频路由组
 description: 删除指定的音频路由组。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: e8c5d28d2bdb620dc32e5c31d6926ed8b9e1c34e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 40d995b088b63a4b8412c0e046e78621c1561b4d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936807"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 

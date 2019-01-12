@@ -3,12 +3,13 @@ title: airPrintDestination 资源类型
 description: 代表一个 AirPrint 目标。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ede4f580557e75d206e0b429069acb13f81bcc5f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962511"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 

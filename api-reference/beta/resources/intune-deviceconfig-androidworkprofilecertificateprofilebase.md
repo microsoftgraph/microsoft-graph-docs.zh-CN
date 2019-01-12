@@ -3,12 +3,13 @@ title: androidWorkProfileCertificateProfileBase 资源类型
 description: Android 工作配置证书配置文件基。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 51102575dcd3af230efd4f7b58396e7a5071ae78
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: daf26bb4f5298b61b2421cdde49cfdad30cd0a1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874695"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936058"
 ---
 # <a name="androidworkprofilecertificateprofilebase-resource-type"></a>androidWorkProfileCertificateProfileBase 资源类型
 

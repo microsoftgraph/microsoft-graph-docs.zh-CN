@@ -3,12 +3,13 @@ title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0007be7c16a258536755ee67def4ea37f507d460
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834004"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934658"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 

@@ -3,12 +3,13 @@ title: 列出名称
 description: 检索 nameditem 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a320eec812f6003c9f2c38af3c117c312958d42c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 77674ec9a974dfc17963bc5c30d6e40ff6cec9a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859533"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947692"
 ---
 # <a name="list-names"></a>列出名称
 

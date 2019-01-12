@@ -3,12 +3,13 @@ title: 删除通道
 description: 删除通道。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 5e0996f067eb08928baee11ef5c3dd09efcabaca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 846aa0b00fc07a0a25e3eb3aae07bcccdbd936ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808209"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939677"
 ---
 # <a name="delete-channel"></a>删除通道
 

@@ -3,12 +3,13 @@ title: 获取已删除的项目
 description: 检索已删除的项目中最近删除项目的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 928ec2c303567afc7edc8e50b52f3a9ac327af80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: de025535058c8b796b591b5bcac2f91f4d3397e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932326"
 ---
 # <a name="get-deleted-item"></a>获取已删除的项目
 

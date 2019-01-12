@@ -3,12 +3,13 @@ title: Range:LastRow
 description: .
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8d9245079a34b4a9b333eed993969e5365f10fc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 1a3f90c4962c2df11f959c23fccebb2fab289f90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832073"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931423"
 ---
 # <a name="range-lastrow"></a>Range:LastRow
 

@@ -3,12 +3,13 @@ title: 列表 deviceConfigurationConflictSummaries
 description: 列出属性和 deviceConfigurationConflictSummary 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19677c1de67b53f1d0c127f237e6e9a8de7748d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e10d5521c8ab0f47fee24a60f8a2d9240fb2217b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939376"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>列表 deviceConfigurationConflictSummaries
 

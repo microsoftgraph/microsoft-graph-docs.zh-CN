@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出驱动器
 localization_priority: Priority
-ms.openlocfilehash: f52907ad963a56f42d7bbe4ff1b7c591ed6dc958
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 678776f8215a35b6911a4253f055f43574289130
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850762"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937269"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 

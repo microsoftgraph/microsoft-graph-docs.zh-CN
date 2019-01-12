@@ -3,12 +3,13 @@ title: 使用呼叫和 Microsoft Graph 中的联机会议 API
 description: Microsoft Graph 呼叫和联机会议 API 将新的维度添加到您的应用程序和服务的交互方式与用户通过启用语音和视频功能。 API，您可以创建呼叫和接收来自用户和应用程序中的 Microsoft 团队的呼叫。 这些 Api 可用于构建可以充当呼叫或会议中的参与者的服务应用程序 （自动程序）。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bde47093496e70d0113f9d3a522c845148748f42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876529"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956358"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>使用呼叫和 Microsoft Graph 中的联机会议 API
 

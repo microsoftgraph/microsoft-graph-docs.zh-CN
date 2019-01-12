@@ -2,12 +2,14 @@
 title: plannerPlanDetails 资源类型
 description: '**plannerPlanDetails** 资源表示计划的其他相关信息。每个计划对象均有一个详细信息对象。'
 localization_priority: Normal
-ms.openlocfilehash: 59064093b485b6c82bd5b2e0b59ca1868e8517e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 5661477ff59036e633eb82c23e9c50d7c2c8b4a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934672"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 

@@ -3,12 +3,13 @@ title: windows81WifiImportConfiguration 资源类型
 description: " Wi-fi 导入配置。 通过配置此配置文件中，您可以指示 Windows 8.1 （和更高版本） 设备连接到所需 Wi-fi 终结点。 Windows 8.1 设备连接到所需的 Wi-fi 网络并从该设备，以更高版本嵌入此 Wi-fi 配置文件中提取 XML。"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c567d9b82c301e262c83d69d013b459ed6a1636
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 11245d69efcc397cafa7798c3284b724e9ee2e90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826836"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932747"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>windows81WifiImportConfiguration 资源类型
 

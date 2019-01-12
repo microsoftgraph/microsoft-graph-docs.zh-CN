@@ -3,12 +3,13 @@ title: List photos
 description: 检索 profilePhoto 对象列表。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 0772b6c4394070a57887439f77d8a94a38453202
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 01fd069173fff1a7a6868f1596326fcb44d77fb7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932271"
 ---
 # <a name="list-photos"></a>List photos
 检索 [profilePhoto](../resources/profilephoto.md) 对象列表。

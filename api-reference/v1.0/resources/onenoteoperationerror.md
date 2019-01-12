@@ -1,14 +1,15 @@
 ---
 title: onenoteOperationError 资源类型
 description: 失败的 OneNote 操作中的错误
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: df0bfd768d26c751a303f42e1f1123b863388faa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 3291f70e8cc18ee532f636feb1de9e8bb5751e02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837336"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932460"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError 资源类型
 

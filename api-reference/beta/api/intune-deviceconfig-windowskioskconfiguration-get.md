@@ -3,12 +3,13 @@ title: 获取 windowsKioskConfiguration
 description: 读取属性和 windowsKioskConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4860924b415ef71913792a2f96c7a4ac934c25cd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3bc5644bfb31717e1c2629fdd92b3937c31c3e72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851721"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939397"
 ---
 # <a name="get-windowskioskconfiguration"></a>获取 windowsKioskConfiguration
 

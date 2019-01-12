@@ -2,12 +2,14 @@
 title: 列表用户 memberOf
 description: 获取组、 目录角色和管理单元的直接成员的用户。 此操作是不可传递的。
 localization_priority: Normal
-ms.openlocfilehash: a00cba40c556aafdf22c66507f4f5d1885feae30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b2e538a53f25b8d0086639f7c6c99625b2de2e88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930605"
 ---
 # <a name="list-user-memberof"></a>列表用户 memberOf
 

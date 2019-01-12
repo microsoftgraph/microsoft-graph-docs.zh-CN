@@ -3,12 +3,13 @@ title: mobileLobApp 资源类型
 description: 包含所有移动业务线应用的属性的抽象基类。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c36fbccf3549367cb0f6d58c5b50d6fc46a018a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f87769fa7d56bcd97dca165f40d1277ffa0dcd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860758"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932663"
 ---
 # <a name="mobilelobapp-resource-type"></a>mobileLobApp 资源类型
 

@@ -3,12 +3,13 @@ title: 删除 deviceConfigurationAssignment
 description: 删除 deviceConfigurationAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: efb420b3e53e801344ac65de16b9ef43caca2b2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f5814e4baa8cb7a17e68c9e46687b3974f36463
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839317"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937017"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>删除 deviceConfigurationAssignment
 

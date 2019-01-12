@@ -3,12 +3,13 @@ title: TableRow 资源类型
 description: 表示表中的行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 688c747797e7da8fdf8d3a855a831debcbf347b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860506"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937507"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 

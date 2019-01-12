@@ -3,12 +3,13 @@ title: 更新目录设置
 description: 更新特定目录设置对象的属性。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: f1c4c4c408f287fe6bfcf84eed3599aa85e3afbe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e7228402069e4803f108833abfe08dc84d1082c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843349"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935890"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 

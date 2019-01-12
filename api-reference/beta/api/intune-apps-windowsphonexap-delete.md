@@ -3,12 +3,13 @@ title: 删除 windowsPhoneXAP
 description: 删除 windowsPhoneXAP。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6545555c78aa0138536afcaabf799f1f45e42f13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 580eac9df646926e258c9dc86ce70e997464d3a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925838"
 ---
 # <a name="delete-windowsphonexap"></a>删除 windowsPhoneXAP
 

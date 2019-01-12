@@ -3,12 +3,13 @@ title: androidWorkProfileVpnConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Android 工作模板设备，以连接到所需 VPN 终结点。 通过指定的身份验证方法和安全类型预期 VPN 终结点，可进行 VPN 连接无缝的最终用户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7b62021463b77d78626fea4e7e9f6e838a4b68f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9eb13bee7039f21dd1a6795bb608e9be351bed5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948266"
 ---
 # <a name="androidworkprofilevpnconfiguration-resource-type"></a>androidWorkProfileVpnConfiguration 资源类型
 

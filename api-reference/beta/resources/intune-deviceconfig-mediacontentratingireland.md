@@ -3,12 +3,13 @@ title: mediaContentRatingIreland 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2d8decd8df49867a44ac8a9d7a6b9c0d454eece1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9516c98350c239393e735008e91d966f8c6ae7a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957996"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland 资源类型
 

@@ -2,12 +2,14 @@
 title: educationWordResource 资源类型
 description: 'EducationResource 一个子类。 这是 Word 文档资源。 必须在与关联的**fileResource**目录中上载的 Word 文件 '
 localization_priority: Normal
-ms.openlocfilehash: 0fa366a6fb6de70d10a010cf5e0e11ffd26a3b94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: d67f77774b9d3c428fcfd98006115f0459989fdc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948315"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource 资源类型
 

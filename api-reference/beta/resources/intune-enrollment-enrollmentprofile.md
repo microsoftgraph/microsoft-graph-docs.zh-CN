@@ -2,12 +2,14 @@
 title: enrollmentProfile 资源类型
 description: EnrollmentProfile 资源表示它必须提供预注册启用注册其标识已预暂存某些设备配置的集合。 预暂存的设备标识分配给此类型的配置文件，以应用在相应的设备的注册的配置文件的配置。
 localization_priority: Normal
-ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b88745c060e71e32199a96b23f94fa0d3229d451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894304"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935589"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 

@@ -3,12 +3,13 @@ title: depEnrollmentBaseProfile 资源类型
 description: DepEnrollmentBaseProfile 资源表示 Apple 设备注册程序 (DEP) 注册配置文件。 相应的设备可以通过部署注册之前，必须将此类型的配置文件分配给 Apple DEP 序列号
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 16baaef2413bbbc169ef8823dc9043245cdfad91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e1383048b08a309ea0ecf60eb1ad07c2636e7e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937668"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile 资源类型
 

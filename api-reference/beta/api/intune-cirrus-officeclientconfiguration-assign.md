@@ -3,12 +3,13 @@ title: assign 操作
 description: 更换所有目标的组策略。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b41ce4ec1c6e304168aebb4c53b4512b0a11f4b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0dc9a3fb0ed7b941d8ebc8d37c9a69e605f0804b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858665"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964002"
 ---
 # <a name="assign-action"></a>assign 操作
 

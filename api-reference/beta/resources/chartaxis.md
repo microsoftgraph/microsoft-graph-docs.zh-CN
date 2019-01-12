@@ -3,12 +3,13 @@ title: ChartAxis 资源类型
 description: 表示图表中的单个坐标轴。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 077afe6a384b77c9b4bb3b1bab6a0e257a9175a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c6344f2bbb102e2e2402dba267538cb46d4c0fbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842719"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914190"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 

@@ -3,12 +3,13 @@ title: deviceEnrollmentFailureReason 枚举类型
 description: 注册的顶部级别故障类别。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5dd7ba949c95d507d956dd7f315b3c19e0759c20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: efee4e4655d36e7575df9e0ddda508dbbcc473c5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962070"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 

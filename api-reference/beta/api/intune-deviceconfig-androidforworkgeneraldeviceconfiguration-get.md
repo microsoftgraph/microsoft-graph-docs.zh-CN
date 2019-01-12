@@ -3,12 +3,13 @@ title: 获取 androidForWorkGeneralDeviceConfiguration
 description: 读取属性和 androidForWorkGeneralDeviceConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a926ffdd3954d5a3d56626103b22a319f54e7c61
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad05b0cdb1c12d3ccd4f1cbc1640be9840ce5772
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817330"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935183"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>获取 androidForWorkGeneralDeviceConfiguration
 

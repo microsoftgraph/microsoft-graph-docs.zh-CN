@@ -3,12 +3,13 @@ title: 获取 androidForWorkEnterpriseWiFiConfiguration
 description: 读取属性和 androidForWorkEnterpriseWiFiConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 298ba87abbf6e88557bac5feed6b54c8846009a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfaf4f5b977697336ce9047109fd3a2ecf4c20a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863741"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918971"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>获取 androidForWorkEnterpriseWiFiConfiguration
 

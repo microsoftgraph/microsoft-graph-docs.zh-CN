@@ -3,12 +3,13 @@ title: 创建 windows10NetworkBoundaryConfiguration
 description: 创建新的 windows10NetworkBoundaryConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dad060dd1cc32d776b778cb37ff1fb98c95f7bd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b0d0926cda80a18cbf12e4ea5d1cb93669606775
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828019"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925992"
 ---
 # <a name="create-windows10networkboundaryconfiguration"></a>创建 windows10NetworkBoundaryConfiguration
 

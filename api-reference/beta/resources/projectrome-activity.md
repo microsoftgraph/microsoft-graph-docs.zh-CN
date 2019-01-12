@@ -2,12 +2,13 @@
 title: 活动资源类型
 description: 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
-ms.openlocfilehash: 5010cf49e72bd7bd71d5407546c7bcd72570db22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 7a9000de339bc5d44fcbf2d282237caef85e076f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939292"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 

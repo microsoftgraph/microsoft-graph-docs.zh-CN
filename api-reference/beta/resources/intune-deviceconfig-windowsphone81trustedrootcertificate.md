@@ -3,12 +3,13 @@ title: windowsPhone81TrustedRootCertificate 资源类型
 description: " 受信任的根证书配置配置文件"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 333806b37c0ca2b65548e48d26df5b673f8a73dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 221535b4d27131668661094193b9b1246942db45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928372"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>windowsPhone81TrustedRootCertificate 资源类型
 

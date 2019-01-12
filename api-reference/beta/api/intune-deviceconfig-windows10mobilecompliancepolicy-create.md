@@ -3,12 +3,13 @@ title: 创建 windows10MobileCompliancePolicy
 description: 创建新的 windows10MobileCompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a22eb77108963f7ecf023f335816a4f309deadda
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0264cfc06961a485e02b07e02b3c71fd79874457
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930423"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>创建 windows10MobileCompliancePolicy
 

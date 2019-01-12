@@ -3,12 +3,13 @@ title: 更新 remoteAssistancePartner
 description: 更新 remoteAssistancePartner 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ca479230d24e58133865e9ff718a867cb7b969fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3b662bd25f42dfe2376af5b4e13ca64771c00bbb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933405"
 ---
 # <a name="update-remoteassistancepartner"></a>更新 remoteAssistancePartner
 

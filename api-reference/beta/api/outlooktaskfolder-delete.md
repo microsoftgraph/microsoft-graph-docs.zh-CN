@@ -3,12 +3,13 @@ title: 删除 outlookTaskFolder
 description: 删除指定的 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c8fd5a62113ee9ad66a7ca080f5b4d2593834c2d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2a43ad79edfee90ec32d45e6d91c619630c6bd9f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836356"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935323"
 ---
 # <a name="delete-outlooktaskfolder"></a>删除 outlookTaskFolder
 

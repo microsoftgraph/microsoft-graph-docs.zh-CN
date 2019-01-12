@@ -1,14 +1,15 @@
 ---
 title: 创建 sectionGroup
 description: 在指定的笔记本中新建分区组。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: cf494e76ce222269c8e52dd840f9cfd4ee380316
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 31a0f13c30682e491016b6dce4675b8159b8d897
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939138"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 

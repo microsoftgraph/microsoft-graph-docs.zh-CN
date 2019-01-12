@@ -3,12 +3,13 @@ title: 列出 userInstallStateSummaries
 description: 列出 userInstallStateSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 919d4cfc6aa3c84b6482f82278dd7017e2e78af9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7fc751f6a133c72e8da9e0426f3b1ad3c6bf02e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875584"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947615"
 ---
 # <a name="list-userinstallstatesummaries"></a>列出 userInstallStateSummaries
 

@@ -3,12 +3,13 @@ title: 列出 androidLobApps
 description: 列出 androidLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9b7338dfecfacf732816af2f2b6867485930ad8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03e818f3c0bb67a0d223b2ec8551175c838fb244
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932502"
 ---
 # <a name="list-androidlobapps"></a>列出 androidLobApps
 

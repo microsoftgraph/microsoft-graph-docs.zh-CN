@@ -2,12 +2,13 @@
 title: 创建开放扩展
 description: 创建开放扩展（openTypeExtension 对象），并在新建或现有的资源实例中添加自定义属性。
 localization_priority: Priority
-ms.openlocfilehash: a07dddff6347021dabecfff185ddac5c27c5d0a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962343"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 

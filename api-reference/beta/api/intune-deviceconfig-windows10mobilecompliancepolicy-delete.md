@@ -3,12 +3,13 @@ title: 删除 windows10MobileCompliancePolicy
 description: 删除 windows10MobileCompliancePolicy。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7b3d4c84242a5a18ca72bbda2dd25526d935c42c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c916317146a39e659a09059f4d921a1eeec1a58
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816875"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931795"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>删除 windows10MobileCompliancePolicy
 

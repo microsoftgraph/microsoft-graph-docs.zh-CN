@@ -3,12 +3,13 @@ title: 列表 androidForWorkGmailEasConfigurations
 description: 列出属性和 androidForWorkGmailEasConfiguration 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b74ab029c66ccf3a55df6d6d5f002d434998096
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e3908e62f3f01f1f558d1f887682e42bf23e16fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848970"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945235"
 ---
 # <a name="list-androidforworkgmaileasconfigurations"></a>列表 androidForWorkGmailEasConfigurations
 

@@ -2,12 +2,14 @@
 title: plannerAppliedCategories 资源类型
 description: '**AppliedCategoriesCollection**资源代表已应用于任务类别 （或标签） 的集合。 它是 plannerTask 对象的一部分。'
 localization_priority: Normal
-ms.openlocfilehash: a47317f907b8ee934a59a320af67e94ce6d3bf8e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b237f5f395ce592829e8abfee152caf07e417b0c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933028"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories 资源类型
 

@@ -2,12 +2,14 @@
 title: administrativeUnit 资源类型
 description: 一个管理单元的用户和组目录对象提供的概念的容器。 公司管理员使用管理单元，现在可以委托管理责任管理用户和组中包含或范围为一个区域或部门管理员对一个管理单元。
 localization_priority: Normal
-ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845407"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955315"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 

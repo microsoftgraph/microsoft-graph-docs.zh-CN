@@ -3,12 +3,13 @@ title: deviceManagementExchangeConnectorStatus 枚举类型
 description: Exchange 连接器的当前状态。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2d1bc97795a664515eb4ea6f620c41a64394be0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 455d7ecbe2d22de7825faf36e743f830480a5737
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816056"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928273"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 枚举类型
 

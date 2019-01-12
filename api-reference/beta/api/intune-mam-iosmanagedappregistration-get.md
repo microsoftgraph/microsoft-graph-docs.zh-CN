@@ -3,12 +3,13 @@ title: 获取 iosManagedAppRegistration
 description: 读取 iosManagedAppRegistration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5365d6d653ce35fd1ffedc857abcd098a0c8b5b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2e5fd08c2b77e54da04018b9052a60ade3809101
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821950"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939369"
 ---
 # <a name="get-iosmanagedappregistration"></a>获取 iosManagedAppRegistration
 

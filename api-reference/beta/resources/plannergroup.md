@@ -2,12 +2,14 @@
 title: plannerGroup 资源类型
 description: '**PlannerGroup**资源为组提供计划工具资源的访问权限。 它不包含任何可用的属性。'
 localization_priority: Normal
-ms.openlocfilehash: 1ce71db95924637afe505450c2fd92eaa01f512d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 54b6b1d61a98aae3918fd3fcb888f470179ece15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883900"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961706"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 

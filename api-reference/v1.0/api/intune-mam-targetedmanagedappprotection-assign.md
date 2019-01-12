@@ -3,12 +3,13 @@ title: assign 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1e013038603a1d92595b50b5929be9954e1b280d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb4833f41e3f9bd7e6530005a3f96923608892d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805934"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933713"
 ---
 # <a name="assign-action"></a>assign 操作
 
