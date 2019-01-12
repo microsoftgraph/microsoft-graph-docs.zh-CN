@@ -3,12 +3,13 @@ title: 更新 macOSDeviceFeaturesConfiguration
 description: 更新 macOSDeviceFeaturesConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0539e19de3cf7189e4bc35fea78f85bd52eaa80e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 98a5e93789ccc7226b7269a201b0ab46a78ff2d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870243"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970278"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>更新 macOSDeviceFeaturesConfiguration
 

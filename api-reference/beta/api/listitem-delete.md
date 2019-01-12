@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
-ms.openlocfilehash: 71be680ae2d29d083d06c9d18aa79675ebdd01dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 1b61c9359ca349a7f7882a204e8e474aba00444b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849278"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968461"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 

@@ -3,12 +3,13 @@ title: 创建 deviceConfigurationConflictSummary
 description: 创建新的 deviceConfigurationConflictSummary 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea5aa43cf4df325afbffddcc1323f98bf89a3166
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812416"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968398"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>创建 deviceConfigurationConflictSummary
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 
 下表显示时创建 deviceConfigurationConflictSummary 所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|组策略的给定设置冲突|
 |id|字符串|冲突策略的这组 id。 此 id 是分隔下划线字典顺序 ConflictingDeviceConfigurations 中的所有策略的 id。|

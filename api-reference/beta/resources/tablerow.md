@@ -3,12 +3,13 @@ title: TableRow 资源类型
 description: 表示表中的行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2d96ef5c23361cd8b15b47af54a0584e21c48b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971660"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "27807173"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
-|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
+|[更新](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
 |[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关联的范围对象。|
 |[删除](../api/tablerow-delete.md)|无|从表中删除行。|
-|[List](../api/tablerow-list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
+|[列出](../api/tablerow-list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|按行在集合中的位置获取此对象。|
 |[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|向表中添加新行。|
 

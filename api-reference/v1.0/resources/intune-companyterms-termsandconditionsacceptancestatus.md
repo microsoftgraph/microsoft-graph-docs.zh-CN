@@ -3,12 +3,13 @@ title: termsAndConditionsAcceptanceStatus 资源类型
 description: C） 由指定用户的策略。 用户必须接受最新版本的条款，才能保留对公司门户的访问权限。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17d76be4db1f790d00fb90322307ff04152291be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dffbcf3b13fd988a75e4f1061a52dfc46f193bb5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971373"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus 资源类型
 

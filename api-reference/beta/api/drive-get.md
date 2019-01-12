@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 获取驱动器
 localization_priority: Normal
-ms.openlocfilehash: d18ee7191747b2c625b62bdecec6d3bffdf0f57e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b481a99232a040334fbfbbaf7d8ef65bd12261e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976126"
 ---
 # <a name="get-drive"></a>获取驱动器
 

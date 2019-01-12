@@ -2,12 +2,13 @@
 title: 删除 schemaExtension
 description: 删除架构扩展定义。
 localization_priority: Normal
-ms.openlocfilehash: 8e9279377810c4895c5327afc64b85f421e8b221
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 63b5f03c569439dad6615a0a23682d50646329a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831597"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966830"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 

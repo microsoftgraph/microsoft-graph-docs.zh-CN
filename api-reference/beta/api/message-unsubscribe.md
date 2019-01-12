@@ -3,12 +3,13 @@ title: 消息： 取消订阅
 description: 提交代表登录用户的电子邮件请求取消订阅电子邮件通讯组列表。 使用中的信息`List-Unsubscribe`标头。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 772c01c0522becc737d07d6e842c610a5abecc0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968160"
 ---
 # <a name="message-unsubscribe"></a>消息： 取消订阅
 

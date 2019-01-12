@@ -3,12 +3,13 @@ title: depOnboardingSetting 资源类型
 description: DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例。 Onboarded 服务实例管理 Apple 令牌用于 Apple 和 Intune 之间同步数据。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827991"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970680"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
@@ -40,16 +41,16 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
 |lastModifiedDateTime|DateTimeOffset|当该服务已 onboarded。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|当服务与 Intune 的最后一个 syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|当 Intune 上次请求同步。|
-|shareTokenWithSchoolDataSyncService|布尔|是否 Dep 令牌共享将启用学校数据同步服务。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
 |lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|字符串|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步设备计数|
 |defaultProfileDisplayName|字符串|获取同步设备计数|
-|dataSharingConsentGranted|布尔|授予许可与 Apple Dep 服务共享的数据|
+|dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|默认 iOS 注册配置文件|
 |defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|默认 MacOs 注册配置文件|

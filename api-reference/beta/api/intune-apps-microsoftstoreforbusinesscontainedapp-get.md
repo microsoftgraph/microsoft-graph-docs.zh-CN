@@ -3,12 +3,13 @@ title: 获取 microsoftStoreForBusinessContainedApp
 description: 读取属性和 microsoftStoreForBusinessContainedApp 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fd0c9206d3b3291ce8ef6866c50a6c084201d011
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3af42a3f293dddf293941a6007277a1888b3a3bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970540"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>获取 microsoftStoreForBusinessContainedApp
 

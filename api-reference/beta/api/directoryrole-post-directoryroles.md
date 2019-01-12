@@ -2,12 +2,14 @@
 title: Activate directoryRole
 description: 激活目录角色。 若要读取目录角色或更新其成员，它必须首先激活在租户中。 默认情况下将激活只有公司管理员和隐式用户目录角色。 若要访问和分配给另一个目录角色的成员，必须先激活它使用其相应的目录角色模板 (directoryRoleTemplate)。
 localization_priority: Normal
-ms.openlocfilehash: 6045b4307b571d84ac28467af21f7aa89b6ee7fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 44c447515a8bc9600a708b3c4a41562bd15c4e59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894388"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975447"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 

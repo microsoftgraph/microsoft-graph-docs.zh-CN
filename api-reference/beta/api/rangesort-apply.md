@@ -2,12 +2,14 @@
 title: 'RangeSort: apply'
 description: 执行排序操作。
 author: lumine2008
-ms.openlocfilehash: df083fb9f81e529d3f70363eaedec6e4286fc835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: excel
+ms.openlocfilehash: 66006bafdc26ecca85dda3dc0eb0999a387dddc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968363"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -32,7 +34,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -40,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | Type   |说明|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |fields|SortField|作为排序依据的条件列表。|
 |matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|

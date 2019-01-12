@@ -3,12 +3,13 @@ title: 创建 termsAndConditionsAssignment
 description: 创建新的 termsAndConditionsAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60163cc1263a55232d52d577621b0749b95d3755
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 704aa0a3f86c3b65b3f2882af21010c46c02f1b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976133"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 

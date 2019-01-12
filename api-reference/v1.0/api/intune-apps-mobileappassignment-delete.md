@@ -3,12 +3,13 @@ title: 删除 mobileAppAssignment
 description: 删除 mobileAppAssignment
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9f3818115786ad7bdeca2f5184f11ee0ffef3d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3efd5ba243b5f5b6d90aad9f27e3343e99f7faa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858196"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967607"
 ---
 # <a name="delete-mobileappassignment"></a>删除 mobileAppAssignment
 

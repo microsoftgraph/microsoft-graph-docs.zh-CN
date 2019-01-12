@@ -3,12 +3,13 @@ title: 列出 RangeBorderCollection
 description: 检索 rangeborder 对象的列表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: dbd57bd174d57a9bb711aea495784d62fca769dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e8131286aafa5fe6c8dc299fc9d7ab823ae75548
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885329"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972437"
 ---
 # <a name="list-rangebordercollection"></a>列出 RangeBorderCollection
 

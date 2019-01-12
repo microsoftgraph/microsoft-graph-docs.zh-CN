@@ -3,12 +3,13 @@ title: deviceComplianceScheduledActionForRule 资源类型
 description: 计划的规则操作
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7a811a5825c516f2847838085812dc3daf75713a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61e0fa49afaf3b048d1d10b1c06006cb0537f005
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965710"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 

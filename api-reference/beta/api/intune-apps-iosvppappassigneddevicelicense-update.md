@@ -3,12 +3,13 @@ title: 更新 iosVppAppAssignedDeviceLicense
 description: 更新 iosVppAppAssignedDeviceLicense 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d8e22eed756a0c1946ae13ce6dac9cf2c63cd3a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b8f18e1fb8895861cd497204f9b9608f7c4f9dba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828754"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974180"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>更新 iosVppAppAssignedDeviceLicense
 

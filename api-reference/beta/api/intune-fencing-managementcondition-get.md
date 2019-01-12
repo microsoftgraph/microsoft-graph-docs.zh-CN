@@ -3,12 +3,13 @@ title: 获取 managementCondition
 description: 读取属性和 managementCondition 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a6935796d429b478eca53d058690d2e0dcc6ea75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 42314bdea20e1b52240c07204135e1c8e3a547ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841844"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970099"
 ---
 # <a name="get-managementcondition"></a>获取 managementCondition
 

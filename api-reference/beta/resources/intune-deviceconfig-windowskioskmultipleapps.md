@@ -3,12 +3,13 @@ title: windowsKioskMultipleApps 资源类型
 description: 用于标识网亭配置的多模式的应用程序配置的类
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 01758c66a466b66fcba6b443f80d0350d308756d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3770f8c63be230dff97e43d3706ed35d79826751
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851203"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977127"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps 资源类型
 
@@ -24,8 +25,8 @@ ms.locfileid: "27851203"
 |属性|类型|说明|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)集合|这些是唯一的 Windows 应用商店应用程序将可以从开始菜单启动。|
-|showTaskBar|布尔|此设置，管理员可以指定任务条形图或不所示。|
-|disallowDesktopApps|布尔|此设置表示允许桌面应用程序。 默认值为 true。|
+|showTaskBar|Boolean|此设置，管理员可以指定任务条形图或不所示。|
+|disallowDesktopApps|Boolean|此设置表示允许桌面应用程序。 默认值为 true。|
 |startMenuLayoutXml|Binary|允许管理员可以重写默认开始布局，并禁止用户更改它。通过基于布局修改模式指定 XML 文件来修改布局。 XML 需要以二进制格式。|
 
 ## <a name="relationships"></a>Relationships

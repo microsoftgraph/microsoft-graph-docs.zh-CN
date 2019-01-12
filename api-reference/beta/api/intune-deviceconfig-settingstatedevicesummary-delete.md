@@ -3,12 +3,13 @@ title: 删除 settingStateDeviceSummary
 description: 删除 settingStateDeviceSummary。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 216ad313b7692998e43eb6d16f4852113292b8a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31441b255efc7ca310cb6d9e1844263872a4838a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858462"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969875"
 ---
 # <a name="delete-settingstatedevicesummary"></a>删除 settingStateDeviceSummary
 

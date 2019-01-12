@@ -2,12 +2,14 @@
 title: 'contactFolder: delta'
 description: 获取用户邮箱中已添加、删除或移除的联系人文件夹集。
 localization_priority: Normal
-ms.openlocfilehash: 671ce371a65757f6f2561644c19164d523dfcc31
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 188be9a7a018763353e2fcd8ad6aaec00284bf39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971191"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 

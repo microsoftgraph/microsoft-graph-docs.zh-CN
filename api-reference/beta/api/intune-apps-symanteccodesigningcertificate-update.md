@@ -3,12 +3,13 @@ title: 更新 symantecCodeSigningCertificate
 description: 更新 symantecCodeSigningCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d95627e9a2c678097be0c3cb818a03906e8a06f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0a938fcb207ee242115eb89cd45da0b1c092a6f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968783"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 

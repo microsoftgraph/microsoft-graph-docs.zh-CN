@@ -3,12 +3,13 @@ title: 删除 iosLobAppProvisioningConfigurationAssignment
 description: 删除 iosLobAppProvisioningConfigurationAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af38c172150224df8738a716537ac2bdda9126eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c21ea1f29e9807b0aa4cdf7d6cf05e9ae05e1399
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828775"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969238"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>删除 iosLobAppProvisioningConfigurationAssignment
 

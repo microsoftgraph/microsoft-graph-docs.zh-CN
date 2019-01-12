@@ -3,12 +3,13 @@ title: 获取呼叫
 description: 检索的属性和呼叫对象的关系。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: c209c263f2dfcffe274bf726296d7e6c427afa6d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 20243a003cccfc5b39e0aad600afa887e5803849
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833549"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966529"
 ---
 # <a name="get-call"></a>获取呼叫
 

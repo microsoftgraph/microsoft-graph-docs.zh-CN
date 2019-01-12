@@ -2,12 +2,14 @@
 title: 更新 educationUser 属性
 description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: a6479095abbb1884acf98377e8fef9d115d4a6c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 52b9e3f3784bae75ed9a2d4aa91fc52dd8917de6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843510"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976182"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 

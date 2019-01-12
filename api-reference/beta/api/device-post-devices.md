@@ -1,14 +1,15 @@
 ---
 title: 创建设备
 description: 创建一个新的设备。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4749b8cbd40a05de4d7b6c43b5cef7907d345add
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0d24829a057326d35b2b35e0ba72d736e3afb15c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971597"
 ---
 # <a name="create-device"></a>创建设备
 

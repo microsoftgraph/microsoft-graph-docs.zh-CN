@@ -3,12 +3,13 @@ title: 'workbookPivotTable: refresh'
 description: 刷新数据透视表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 74bca619a96a4fded1bd93e21cb5b69d6f605882
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3238f67fc7f017e64ab327619a4f4f90fba71d1f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892356"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970778"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 

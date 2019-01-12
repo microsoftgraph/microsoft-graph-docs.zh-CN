@@ -2,12 +2,14 @@
 title: 更新警报
 description: 更新在任何集成的解决方案，以使警报状态和分配保持同步跨解决方案的可编辑**通知**属性。 此方法将更新的任何解决方案都有一个记录引用的警报 id。
 localization_priority: Normal
-ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 7b218daa56f7648bc888bbc0cd25619b22799325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858091"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966032"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -43,7 +45,7 @@ PATCH /security/alerts/{alert_id}
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 **必须**正文包含`vendorInformation`属性与有效`provider`和`vendor`字段。 下表列出了可更新的通知的字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|字符串|分析师通知的名称分配给进行会审、 调查或修复。|
 |closedDateTime|DateTimeOffset|通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|

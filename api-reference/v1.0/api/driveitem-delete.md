@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 删除文件或文件夹
 localization_priority: Normal
-ms.openlocfilehash: ba21d3006e4737e9de8c1f79e272bd68362c528a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 39c7706fab229e52c394c30c6daf478a1fefd581
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966865"
 ---
 # <a name="delete-a-driveitem"></a>删除 DriveItem
 

@@ -3,12 +3,13 @@ title: advancedThreatProtectionOnboardingStateSummary 资源类型
 description: Windows defender 高级的威胁保护入职培训状态摘要跨帐户。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c308f91862e1d709d92a45d0a83148df5c23fd88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966599"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary 资源类型
 
@@ -37,7 +38,7 @@ Windows defender 高级的威胁保护入职培训状态摘要跨帐户。
 |notAssignedDeviceCount|Int32|未分配的设备数|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)集合|尚未记录|
 

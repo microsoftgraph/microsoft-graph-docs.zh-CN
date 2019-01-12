@@ -2,12 +2,14 @@
 title: 邀请管理器
 description: '使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 '
 localization_priority: Priority
-ms.openlocfilehash: 4e47131fd7e3128366d482c314c059d833c8e101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0a0ee3ba23cb0c323a660b9afd26fa044a50897c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867436"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976735"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
@@ -34,7 +36,7 @@ ms.locfileid: "27867436"
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
 |invitedUserEmailAddress|字符串|被邀请的用户的电子邮件地址。必填。|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
-|sendInvitationMessage|布尔|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
+|sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|字符串|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。 默认情况下，此值为“来宾”。 如果你是公司管理员，则可以以“成员”身份进行邀请。 |

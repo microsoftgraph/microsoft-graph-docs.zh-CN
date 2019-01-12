@@ -3,12 +3,13 @@ title: 列表 mobileContainedApps
 description: 列出属性和 mobileContainedApp 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74aa7d04975c6098b0368d916d0c86f019359dae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fc4db3f37785d932e6bb167db9b7695985a40109
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887477"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968734"
 ---
 # <a name="list-mobilecontainedapps"></a>列表 mobileContainedApps
 

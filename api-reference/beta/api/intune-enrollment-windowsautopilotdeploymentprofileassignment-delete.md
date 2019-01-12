@@ -3,12 +3,13 @@ title: 删除 windowsAutopilotDeploymentProfileAssignment
 description: 删除 windowsAutopilotDeploymentProfileAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 298742713de340292d783782e5f5bdba33ce66af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 356696bc37c4da2a579a73736417c7ca1a822930
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970021"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>删除 windowsAutopilotDeploymentProfileAssignment
 

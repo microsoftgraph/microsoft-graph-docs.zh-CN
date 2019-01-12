@@ -3,12 +3,13 @@ title: windowsPrivacyAccessControls 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b79fc6e7c35f4338b602172bc0702498c762ec79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817113"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969861"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls 操作
 
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |windowsPrivacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)集合|尚未记录|
 

@@ -3,12 +3,13 @@ title: deviceManagementScriptDeviceState 资源类型
 description: 包含设备运行的设备管理脚本的状态属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f50026e549e9927b33ebe8a27b6206daecf0ea5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890536"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968853"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27890536"
 |errorDescription|String|设备管理脚本错误执行所对应的错误描述。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|执行设备管理脚本托管的设备。|
 

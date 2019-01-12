@@ -3,12 +3,13 @@ title: 图表资源类型
 description: 表示工作簿中的 chart 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d274b8ec505d15ea985af22627232dbe11dc3263
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 09d5fd376cfdcd03517cc989708bbf17bcf49a72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970673"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -24,12 +25,12 @@ ms.locfileid: "27856047"
 |[获取图表](../api/chart-get.md) | [Chart](chart.md) |读取 chart 对象的属性和关系。|
 |[创建 ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
 |[创建系列](../api/chart-list-series.md) |[ChartSeries](chartseries.md) 集合| 获取 ChartSeries 对象集合。|
-|[Update](../api/chart-update.md) | [Chart](chart.md)   |更新 Chart 对象。 |
+|[更新](../api/chart-update.md) | [Chart](chart.md)   |更新 Chart 对象。 |
 |[Image](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
-|[List](../api/chart-list.md) | [图表](chart.md) 集合 |获取 chart 对象集合。 |
+|[列出](../api/chart-list.md) | [图表](chart.md) 集合 |获取 chart 对象集合。 |
 |[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|按图表在集合中的位置获取此对象。|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|创建新图表。|
 

@@ -3,12 +3,13 @@ title: 更新 charttitle
 description: 更新 charttitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: cf75fa7cf4ecca8e272a98915b765e9d56faef25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 08feb358af9ee67dda6f7da37b10c9788b83a224
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976875"
 ---
 # <a name="update-charttitle"></a>更新 charttitle
 

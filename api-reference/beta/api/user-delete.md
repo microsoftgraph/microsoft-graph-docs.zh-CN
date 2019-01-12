@@ -3,12 +3,13 @@ title: 删除用户
 description: 删除用户。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: b255aa85bfe612e5690c16442dd0b12d64312180
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e9a840f83c2bb8806464473ead09deffb30c5a9a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858056"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969427"
 ---
 # <a name="delete-a-user"></a>删除用户
 

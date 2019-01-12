@@ -3,12 +3,13 @@ title: 创建会话
 description: '使用此 API 创建新的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d6e05b4a86c9dc3a6a06ae62f6386ef622c16d6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9a377c4bb86f468e9e6107e451b40494665f5b16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877628"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972815"
 ---
 # <a name="create-session"></a>创建会话
 

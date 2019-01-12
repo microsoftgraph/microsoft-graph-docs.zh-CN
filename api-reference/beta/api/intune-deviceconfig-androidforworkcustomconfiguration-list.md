@@ -3,12 +3,13 @@ title: 列表 androidForWorkCustomConfigurations
 description: 列出属性和 androidForWorkCustomConfiguration 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b36a2d84bc68c5298d76fa05742e52c823aa689
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a9b350bda6415f16dbf36aa4fd9ef565f2fbf38a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836965"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974026"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>列表 androidForWorkCustomConfigurations
 

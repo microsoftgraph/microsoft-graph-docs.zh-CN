@@ -2,12 +2,14 @@
 title: androidManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 Android 应用的同步详细信息。
 localization_priority: Normal
-ms.openlocfilehash: bf6af563a7cc7726a4fa068cb11a7865867406ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 234ee00dd6d2a84720358a889466fd1763e3c80f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888331"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970008"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 

@@ -3,12 +3,13 @@ title: 删除 sharedPCConfiguration
 description: 删除 sharedPCConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 98f21b7b506e7f384b01c59f9662e7ae76ba4028
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54c1aa92c07f1cd874f6f8a000ad3ceabbe2d584
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812850"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968475"
 ---
 # <a name="delete-sharedpcconfiguration"></a>删除 sharedPCConfiguration
 

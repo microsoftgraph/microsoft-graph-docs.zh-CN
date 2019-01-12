@@ -2,18 +2,19 @@
 title: office365GroupsActivityFileCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 856bb4c74c8af35775b6fe71cb75d89935440bdb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: adff009d9047aa147c8042059fbdab8491288fb7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819183"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972556"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>office365GroupsActivityFileCounts 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性          | 类型   | Description                              |
+| 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容最晚日期。          |
 | total             | Int64  | 组的 SharePoint 文档库中的文件总数。 |

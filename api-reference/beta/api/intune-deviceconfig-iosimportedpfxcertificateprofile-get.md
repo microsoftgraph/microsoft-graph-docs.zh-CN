@@ -3,12 +3,13 @@ title: 获取 iosImportedPFXCertificateProfile
 description: 读取属性和 iosImportedPFXCertificateProfile 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 250b8f5d1ff7e8d0312ce6a9c45858b3b7caf8aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f15ef6227c115faea5815a8ad65a4642f1241be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968300"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>获取 iosImportedPFXCertificateProfile
 

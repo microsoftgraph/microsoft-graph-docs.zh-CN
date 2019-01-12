@@ -3,12 +3,13 @@ title: 'TableRowCollection: ItemAt'
 description: 根据其在集合中的位置获取行。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 017618e37be33e7f64ce01082e8fe16b23c03f13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 402f096473b6fbffac7e5653e0d2be1f01897c75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974873"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 

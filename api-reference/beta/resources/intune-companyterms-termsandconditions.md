@@ -2,12 +2,14 @@
 title: termsAndConditions 资源类型
 description: C 策略内容显示给用户时注册 Intune 到其第一次尝试并随后在编辑时管理员必须重新接受。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
 localization_priority: Normal
-ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: aab2ca99726c6e5388dfa5641b19d7c40dd920de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858602"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965675"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -40,7 +42,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)集合|为此 T & C 策略的组分配列表。|
 |assignments|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) 集合|此 T&C 策略的分配列表。|

@@ -3,12 +3,13 @@ title: ChartSeries 资源类型
 description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a3a19793629a5e100830565e224541930e2180de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970386"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "27834893"
 |[获取 ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
 |[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
 |[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
-|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
-|[List](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md)集合 |获取 chartSeries 对象集合。 |
+|[更新](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
+|[列出](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md)集合 |获取 chartSeries 对象集合。 |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性

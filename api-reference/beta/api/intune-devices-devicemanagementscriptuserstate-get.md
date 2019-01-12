@@ -3,12 +3,13 @@ title: 获取 deviceManagementScriptUserState
 description: 读取属性和 deviceManagementScriptUserState 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b93cc1dc2d957dcbba6816095df9ebe3e8755ac4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bdb8cb36b65c4f1104d0227246a4f64c6080bb68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852561"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968972"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>获取 deviceManagementScriptUserState
 

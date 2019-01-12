@@ -3,12 +3,13 @@ title: 删除 androidForWorkWiFiConfiguration
 description: 删除 androidForWorkWiFiConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 88c13b49faef48d0180df7f568a47bf0b960c270
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d75bd43f8b2009df6e92a2b4262f1f878cc3e53c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967929"
 ---
 # <a name="delete-androidforworkwificonfiguration"></a>删除 androidForWorkWiFiConfiguration
 

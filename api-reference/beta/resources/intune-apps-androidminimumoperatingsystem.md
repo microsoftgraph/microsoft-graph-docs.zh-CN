@@ -3,12 +3,13 @@ title: androidMinimumOperatingSystem 资源类型
 description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 96b68aa12a1cbd0abe2b7761b44a0ef9a5863048
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 94f11678ab43e5f8785cb6cc0eddf073105b3ce8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875864"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975608"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -28,9 +29,9 @@ ms.locfileid: "27875864"
 |v4_4|布尔值|版本 4.4 或更高版本。|
 |v5_0|布尔值|版本 5.0 或更高版本。|
 |v5_1|布尔值|版本 5.1 或更高版本。|
-|v6_0|布尔|版本 6.0 或更高版本。|
-|v7_0|布尔|7.0 版或更高版本。|
-|v7_1|布尔|7.1 或更高版本。|
+|v6_0|Boolean|版本 6.0 或更高版本。|
+|v7_0|Boolean|7.0 版或更高版本。|
+|v7_1|Boolean|7.1 或更高版本。|
 |v8_0|布尔值|版本 8.0 或更高版本。|
 |v8_1|布尔值|8.1 或更高版本。|
 |v9_0|布尔值|版本 9.0 或更高版本。|

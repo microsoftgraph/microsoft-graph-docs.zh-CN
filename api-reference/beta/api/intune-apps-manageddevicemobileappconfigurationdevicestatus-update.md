@@ -3,12 +3,13 @@ title: 更新 managedDeviceMobileAppConfigurationDeviceStatus
 description: 更新 managedDeviceMobileAppConfigurationDeviceStatus 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8b89d99c40646d92b48c3da80fed9c7137b2296c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfed016f9041336120f71f91058e3fc8e7467124
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970575"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>更新 managedDeviceMobileAppConfigurationDeviceStatus
 

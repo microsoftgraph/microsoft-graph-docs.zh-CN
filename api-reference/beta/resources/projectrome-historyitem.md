@@ -2,12 +2,13 @@
 title: historyItem 资源类型
 description: 表示为活动应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
-ms.openlocfilehash: 7eb6d72b55530d1938c9c092dd5b80f54929a3e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 168587aa54446aeee78107deaa9087c6bffb8586
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976952"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -33,14 +34,14 @@ ms.locfileid: "27825772"
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。|
 |id | 字符串 | 必需。 **HistoryItem**对象的客户端集 GUID。|
-|startedDateTime | DateTimeOffset | 必填。 启动**historyItem** （活动会话） 时，日期 UTC 时间。 所需的时间线历史记录。|
+|startedDateTime | DateTimeOffset | 必需。 启动**historyItem** （活动会话） 时，日期 UTC 时间。 所需的时间线历史记录。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime **historyItem** （活动会话） 的最后一个了解作为活动或完成-如果为空， **historyItem**状态时应日常。|
 |expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**会经过硬删除时，日期 UTC 时间。 可以由客户端设置。|
 |activeDurationSeconds | int | 可选。 活动用户工作效率的持续时间。 如果未提供，则从**startedDateTime**和**lastActiveDateTime**计算此。|
 
 ## <a name="relationships"></a>Relationships
 
-|关系 | 类型 | Description|
+|关系 | 类型 | 说明|
 |:------------|:-----|:-----------|
 |activity| [活动](../resources/projectrome-activity.md) | 可选。 NavigationProperty/包容;导航到关联的活动的属性。|
 

@@ -3,12 +3,13 @@ title: deviceManagementUserRightsLocalUserOrGroup 资源类型
 description: 表示一个本地用户或一组用于设置的用户权限的信息。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63e2dc3d16d17b76c4437e76eae642976711071c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972892"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 

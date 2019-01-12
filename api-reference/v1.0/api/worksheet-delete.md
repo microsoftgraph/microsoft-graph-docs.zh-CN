@@ -3,12 +3,13 @@ title: 'Worksheet: delete'
 description: 从工作簿中删除工作表。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 5ad99c2780eac3996a98f6b4f35838399dd11035
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 376402f8552278a6ab45d20e6ffbe824c7b6c88d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894024"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974672"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 

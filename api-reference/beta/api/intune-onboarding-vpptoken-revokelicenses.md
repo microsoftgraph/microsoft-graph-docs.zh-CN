@@ -3,12 +3,13 @@ title: revokeLicenses 操作
 description: 撤消特定 appleVolumePurchaseProgramToken 相关联的许可证
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa439f6dd973b74ab1098cc73755897a55d018c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5817fabfc7a7b414b816c76e059d9cedd2243a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975433"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
@@ -47,9 +48,9 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|notifyManagedDevices|布尔|尚未记录|
+|notifyManagedDevices|Boolean|尚未记录|
 
 
 

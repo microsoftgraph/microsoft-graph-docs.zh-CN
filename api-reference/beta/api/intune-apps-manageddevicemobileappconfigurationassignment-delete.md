@@ -3,12 +3,13 @@ title: 删除 managedDeviceMobileAppConfigurationAssignment
 description: 删除 managedDeviceMobileAppConfigurationAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e8a161275e2f56642d8b84cab630f4767c4da86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc8ecd0b02b1b5f7e7c3ad06012f2c56681cd33e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968874"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>删除 managedDeviceMobileAppConfigurationAssignment
 

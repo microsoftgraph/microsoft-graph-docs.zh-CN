@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 发送访问项的邀请
 localization_priority: Normal
-ms.openlocfilehash: 1ba3bc3465274c6e1525d54c1ba1b59041b1e59f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976959"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -61,8 +62,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | 将获得访问权限和共享邀请的收件人的集合。
 | message          | 字符串                         | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。
-| requireSignIn    | 布尔                        | 指定是否需要邀请的收件人来登录以查看共享的项目。
-| sendInvitation   | 布尔                        | 如果为 true，则[共享链接][]发送给收件人。 否则，直接而发送通知不授予权限。
+| requireSignIn    | Boolean                        | 指定是否需要邀请的收件人来登录以查看共享的项目。
+| sendInvitation   | Boolean                        | 如果为 true，则[共享链接][]发送给收件人。 否则，直接而发送通知不授予权限。
 | roles            | 集合（字符串）             | 指定要授予共享邀请的收件人的角色。
 
 ## <a name="example"></a>示例

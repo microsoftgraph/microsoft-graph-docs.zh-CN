@@ -3,12 +3,13 @@ title: 使用资源类型
 description: 表示特定用户所使用的文档洞察。 见解返回最相关的文档的用户查看或访问。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 2f8479896f8c06fdc6193cfa8c18a0c3d8293bc7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976056"
 ---
 # <a name="used-resource-type"></a>使用资源类型
 

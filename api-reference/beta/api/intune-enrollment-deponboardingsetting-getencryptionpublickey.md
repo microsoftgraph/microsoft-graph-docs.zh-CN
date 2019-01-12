@@ -3,12 +3,13 @@ title: getEncryptionPublicKey 函数
 description: 获取要用于加密 Apple 设备注册程序的公钥标记
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eb373b862dc39d9636e59bf32ba00b84b7bf5563
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2fd4d09e21b530a4ef1b5d11adf42f474e758066
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807628"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973186"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 

@@ -3,12 +3,13 @@ title: iosNotificationSettings 资源类型
 description: 说明通知设置的项。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2105d5641583f0d8216bd8f2241f40e5fbeea01d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 242a15d4b636cf73f0e9a9f29a3f53ce17f2fd00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810099"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972976"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 

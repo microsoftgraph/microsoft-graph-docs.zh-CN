@@ -3,12 +3,13 @@ title: Table:DataBodyRange
 description: 获取与表的数据体相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: bb7bdb733b0cfbb35cbb1a5f4509bdf894c96eb3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: df24451e8da5f8e936d5c2013d1049370c0fed33
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885174"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967334"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 
