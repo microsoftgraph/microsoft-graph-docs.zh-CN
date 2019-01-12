@@ -2,12 +2,14 @@
 title: RangeFormat 资源类型
 description: 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
 localization_priority: Normal
-ms.openlocfilehash: 38844e2f43dcb56021e25ad189529b36cc8eb456
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: b4018995e37ff40ae014b54d08b77bbed73d6fe2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880764"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937346"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 
@@ -23,7 +25,7 @@ ms.locfileid: "27880764"
 |[获取 RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |读取 rangeFormat 对象的属性和关系。|
 |[创建 RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| 通过发布到边框集合创建新的 RangeBorder。|
 |[列出边框](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) 集合| 获取 RangeBorder 对象集合。|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |更新 RangeFormat 对象。 |
+|[更新](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |更新 RangeFormat 对象。 |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|无|根据列中的当前数据更改当前区域的列宽，以达到最佳宽度。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|无|根据列中的当前数据更改当前区域的行高，以达到最佳高度。|
 

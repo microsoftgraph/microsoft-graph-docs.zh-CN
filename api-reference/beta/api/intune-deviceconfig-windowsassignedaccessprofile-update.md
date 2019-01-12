@@ -3,12 +3,13 @@ title: 更新 windowsAssignedAccessProfile
 description: 更新 windowsAssignedAccessProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f82a1ad5a5bdea639ec3dc24f40a3c66c4a0fe1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867044"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940377"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>更新 windowsAssignedAccessProfile
 
@@ -51,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。|
 |profileName|字符串|这是用于标识一组应用程序，在开始菜单和用户为其分配此网亭配置这些应用程序的布局的友好名称。|
-|showTaskBar|布尔|此设置，管理员可以指定任务条形图或不所示。|
+|showTaskBar|Boolean|此设置，管理员可以指定任务条形图或不所示。|
 |appUserModelIds|String 集合|这些是唯一的 Windows 应用商店应用程序将可以从开始菜单启动。|
 |desktopAppPaths|String 集合|在开始菜单可用桌面应用程序的路径和仅应用程序用户都将能够启动。|
 |用户帐户|String 集合|将锁定到此网亭配置用户帐户。|

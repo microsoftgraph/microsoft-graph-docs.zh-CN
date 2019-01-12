@@ -3,12 +3,13 @@ title: 删除 iosVpnConfiguration
 description: 删除 iosVpnConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c597b0006913bc3edd8b53c874e54d22c47ccba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5e207834074ea6f658634da96cab2e593772ce74
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832261"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943555"
 ---
 # <a name="delete-iosvpnconfiguration"></a>删除 iosVpnConfiguration
 

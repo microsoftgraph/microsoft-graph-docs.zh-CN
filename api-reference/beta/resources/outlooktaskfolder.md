@@ -3,12 +3,13 @@ title: outlookTaskFolder 资源类型
 description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件夹。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882927"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937689"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "27882927"
 |[获取 outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |要获取的属性和指定 Outlook 任务文件夹的关系。|
 |[创建 outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 在指定的任务文件夹中创建 Outlook 任务。|
 |[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md)集合| 在指定文件夹中获取所有 Outlook 任务。|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |更新 Outlook 任务文件夹的可写属性。 |
+|[更新](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |更新 Outlook 任务文件夹的可写属性。 |
 |[删除](../api/outlooktaskfolder-delete.md) | 无 |删除指定的 Outlook 任务文件夹。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |在新的或现有的 Outlook 任务文件夹中创建一个或多个单值扩展的属性。   |
@@ -38,13 +39,13 @@ ms.locfileid: "27882927"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |changeKey|字符串|任务文件夹的版本。|
-|id|字符串|任务文件夹中，用户的邮箱中的唯一标识符。 此为只读属性。|
-|isDefaultFolder|布尔|如果文件夹为默认的任务文件夹，则为 true。|
+|id|字符串|任务文件夹中，用户的邮箱中的唯一标识符。 只读。|
+|isDefaultFolder|Boolean|如果文件夹为默认的任务文件夹，则为 true。|
 |name|字符串|任务文件夹的名称。|
 |parentGroupKey|Guid|任务文件夹的父组的唯一 GUID 标识符。|
 
 ## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|多值定义的任务文件夹的扩展属性的集合。 只读。 可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|定义的任务文件夹的单值扩展属性的集合。 只读。 可为 Null。|

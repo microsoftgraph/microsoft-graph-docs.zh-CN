@@ -2,12 +2,14 @@
 title: 用户： findRooms
 description: '获取所有会议房间或特定的会议室列表中用户的租户。 '
 localization_priority: Priority
-ms.openlocfilehash: 12ddd4c6956d743322ff86c93c5d445f6966e29a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934007"
 ---
 # <a name="user-findrooms"></a>用户： findRooms
 
@@ -47,7 +49,7 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="query-parameters"></a>查询参数
 
-| 查询参数       | 类型 | Description |
+| 查询参数       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | RoomList | string | 与会议室列表关联的 SMTP 地址。 由包括 SMTP 地址的[电子邮件地址](../resources/emailaddress.md)实例表示每个会议室列表。 |
 

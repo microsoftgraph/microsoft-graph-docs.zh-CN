@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
-ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939236"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -27,15 +28,15 @@ ms.locfileid: "27871489"
 |:--------------------------------|:------------------------------
 | [List pages][]                  | 获取 /pages
 | [Get page][]                    | 获取 /pages/ {页-id}
-| [Create][]                      | POST /pages
+| [创建][]                      | POST /pages
 | [删除][]                      | 删除 /pages/ {页-id}
-| [Publish][]                     | 发布 /pages/ {页-id} / 发布
+| [发布][]                     | 发布 /pages/ {页-id} / 发布
 
 [List pages]: ../api/sitepage-list.md
 [Get page]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[创建]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
-[Publish]: ../api/sitepage-publish.md
+[发布]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -94,7 +95,7 @@ ms.locfileid: "27871489"
 
 **SitePage**资源具有创作相关的以下元数据。 PublishingState 属性将反映创作 like 签出或发布的状态页。
 
-| 属性名称          | 类型                   | Description
+| 属性名称          | 类型                   | 说明
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 发布状态和页的 MM.mm 版本。
 

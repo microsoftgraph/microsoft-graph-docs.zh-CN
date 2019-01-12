@@ -3,12 +3,13 @@ title: 更新 deviceConfigurationGroupAssignment
 description: 更新 deviceConfigurationGroupAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 632ade6d8c2fdb2cfb859c3b480606547d9b0ead
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938515"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>更新 deviceConfigurationGroupAssignment
 
@@ -59,7 +60,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|字符串|AAD 组 Id 目标到该设备的配置。|
-|excludeGroup|布尔|指示此组是否应排除。 应包含的组的默认值|
+|excludeGroup|Boolean|指示此组是否应排除。 应包含的组的默认值|
 
 
 

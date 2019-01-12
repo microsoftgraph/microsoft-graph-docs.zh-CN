@@ -2,12 +2,14 @@
 title: teamsTab 资源类型
 description: 'TeamsTab 是一个选项卡的具有固定 （附加） 到团队中的通道。 '
 localization_priority: Normal
-ms.openlocfilehash: 34afb140ef1fceec9ac48d851725626bf9d452f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3c5cf5ef33f53cfaca7189df24e5dfd880a77241
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947146"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -40,7 +42,7 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 
 ## <a name="relationships"></a>Relationships
 
-| 关系 | 类型   | Description |
+| 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | 应用程序的链接到选项卡。 |
 

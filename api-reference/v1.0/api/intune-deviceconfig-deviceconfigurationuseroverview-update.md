@@ -3,12 +3,13 @@ title: 更新 deviceConfigurationUserOverview
 description: 更新 deviceConfigurationUserOverview 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4ba93e9b945ea4d368250eb481d42662e23f718
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 319e03ba5191ea1bfb8d4c4dcde2e74f5d3c7c41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855655"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941596"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
 

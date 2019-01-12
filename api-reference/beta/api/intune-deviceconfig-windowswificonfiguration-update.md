@@ -3,12 +3,13 @@ title: 更新 windowsWifiConfiguration
 description: 更新 windowsWifiConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c58ede51940c1d913632668919532ba6d61ad201
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e640befb9cc7e4d0b2df52c2f35aba8ed4a0fbc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946432"
 ---
 # <a name="update-windowswificonfiguration"></a>更新 windowsWifiConfiguration
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -64,14 +65,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|指定 wifi 连接的按流量计费的连接限制类型。 可取值为：`unrestricted`、`fixed`、`variable`。|
 |ssid|字符串|指定 wifi 连接的 SSID。|
 |networkName|字符串|指定的网络配置名称。|
-|connectAutomatically|布尔|指定应在范围中自动连接是否 wifi 连接。|
-|connectToPreferredNetwork|布尔|指定 wifi 连接是否应连接到时已连接到此的更多首选网络。  需要 ConnectAutomatically 为 true。|
-|connectWhenNetworkNameIsHidden|布尔|指定是否 wifi 连接应自动连接即使时 SSID 未进行广播。|
+|connectAutomatically|Boolean|指定应在范围中自动连接是否 wifi 连接。|
+|connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到时已连接到此的更多首选网络。  需要 ConnectAutomatically 为 true。|
+|connectWhenNetworkNameIsHidden|Boolean|指定是否 wifi 连接应自动连接即使时 SSID 未进行广播。|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定代理 Wi-fi 配置设置。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|字符串|指定代理服务器的 IP 地址。|
 |proxyManualPort|Int32|指定的代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|字符串|指定代理服务器配置脚本的 URL。|
-|forceFIPSCompliance|布尔|指定是否强制 FIPS 合规性。|
+|forceFIPSCompliance|Boolean|指定是否强制 FIPS 合规性。|
 
 
 

@@ -3,12 +3,13 @@ title: 'educationSubmission: unsubmit'
 description: '指示学生希望后没有打开从事的工作分配的提交操作。 仅可由学生执行此操作。 '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 853dce22c7c79ffda7b823794259fa7be0363d02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: fc17216800c39f0a094ba5f8d9f281394ba7e2de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829216"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945466"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 

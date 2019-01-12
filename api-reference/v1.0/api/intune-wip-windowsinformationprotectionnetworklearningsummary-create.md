@@ -3,12 +3,13 @@ title: 创建 windowsInformationProtectionNetworkLearningSummary
 description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 57cfde950bc4152c605e41e0caff8d18d919eb46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 595370524b57d2206b6e64e6faa2150c5ac9bc20
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938767"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 

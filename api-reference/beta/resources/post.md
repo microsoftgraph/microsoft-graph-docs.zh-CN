@@ -3,12 +3,13 @@ title: 帖子资源类型
 description: 代表 converstaionThread 实体内的单个公告项目。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 46e33021d0929e1bd665f8256f0874e8e8c92809
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834039"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942414"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -70,7 +71,7 @@ ms.locfileid: "27834039"
 |conversationThreadId|String|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |from|[收件人](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
-|hasAttachments|布尔|指示帖子是否具有至少一个附件。这是默认属性。|
+|hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
 |importance | String | 组文章的重要性： `low`， `normal`， `high`。 |
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|

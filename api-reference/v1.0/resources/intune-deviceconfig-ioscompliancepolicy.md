@@ -3,12 +3,13 @@ title: iosCompliancePolicy 资源类型
 description: 此类包含 iOS 的合规性设置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 45cea2abeae99f918ff15bcc5fae9e40b9fc7e34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e5a2ef72769694d2dd4c5d7ae6e296d429c49b5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935953"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 

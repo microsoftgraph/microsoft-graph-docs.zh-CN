@@ -3,12 +3,13 @@ title: 删除 iosEasEmailProfileConfiguration
 description: 删除 iosEasEmailProfileConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6daf60e83d136f49946978808b4f2b5c5f5da7de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21c8a59fb6978d5610988124d5e495317c2a196f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948322"
 ---
 # <a name="delete-ioseasemailprofileconfiguration"></a>删除 iosEasEmailProfileConfiguration
 

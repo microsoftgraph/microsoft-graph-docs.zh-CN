@@ -2,12 +2,14 @@
 title: windows10EnterpriseModernAppManagementConfiguration 资源类型
 description: Windows 10 企业版新式应用管理配置。
 author: tfitzmac
-ms.openlocfilehash: 8058deba88acb7727d3bac006a869e4d446c1b32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 5a11213c0d609bc18da5db887ff117f6fc729ba6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947447"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>windows10EnterpriseModernAppManagementConfiguration 资源类型
 

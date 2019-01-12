@@ -3,12 +3,13 @@ title: 创建聊天线程
 description: 通过提供根邮件，在指定的通道中创建新的聊天线程。
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809070"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946355"
 ---
 # <a name="create-chat-thread"></a>创建聊天线程
 

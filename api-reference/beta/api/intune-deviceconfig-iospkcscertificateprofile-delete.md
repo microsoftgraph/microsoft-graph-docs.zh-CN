@@ -3,12 +3,13 @@ title: 删除 iosPkcsCertificateProfile
 description: 删除 iosPkcsCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 854cb6295be9b1f2d8283baef7afa90d98bf8c88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b0f591e155913bee1688e97100d40fea7a30e3bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948364"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>删除 iosPkcsCertificateProfile
 

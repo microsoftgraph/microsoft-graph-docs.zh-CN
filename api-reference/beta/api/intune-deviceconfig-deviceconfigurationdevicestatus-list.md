@@ -3,12 +3,13 @@ title: 列出 deviceConfigurationDeviceStatuses
 description: 列出 deviceConfigurationDeviceStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c11669c576f7acc614af9bbcb5d101332de98075
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae6a052ce4bd296353ecfc6713958a7e1747409e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943842"
 ---
 # <a name="list-deviceconfigurationdevicestatuses"></a>列出 deviceConfigurationDeviceStatuses
 

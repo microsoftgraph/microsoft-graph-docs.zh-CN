@@ -3,12 +3,13 @@ title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8aa701d51d51d326340ff5ebddc9cc97c5962402
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862599"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938662"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -54,7 +55,7 @@ POST /deviceManagement/resourceOperations
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|布尔|确定是否定义每个角色分配的作用域验证权限。|
+|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
 
 
 

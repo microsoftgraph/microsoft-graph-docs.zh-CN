@@ -3,12 +3,13 @@ title: 删除 macOSDeviceFeaturesConfiguration
 description: 删除 macOSDeviceFeaturesConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0c85766a02ecba992ebd2e131d33e93f9f71c07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04bf29e60dd7cc1cb1a17021ef9bc2f82ba84999
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878572"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948413"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>删除 macOSDeviceFeaturesConfiguration
 

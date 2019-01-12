@@ -3,12 +3,13 @@ title: 删除 webApp
 description: 删除 webApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53d14ed6f54719b5846e668a2a60f200f55da5b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b5d27de1d98b6b826afeab6098ff69cdc5153a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944948"
 ---
 # <a name="delete-webapp"></a>删除 webApp
 

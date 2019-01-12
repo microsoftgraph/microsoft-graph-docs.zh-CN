@@ -2,12 +2,14 @@
 title: 获取分区
 description: 检索的属性和 onenoteSection 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 56a8715ddbc2152dcf131122fded7b4495a8e378
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: d491e0936096296c731e2ebbbc1d6d44dccdef38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941553"
 ---
 # <a name="get-section"></a>获取分区
 

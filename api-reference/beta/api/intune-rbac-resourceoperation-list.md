@@ -3,12 +3,13 @@ title: 列出 resourceOperations
 description: 列出 resourceOperation 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 524a92296febd521dae55289ac8a4ca7ddea7da3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63fee75682efc7e2e5d12cf196b8d6b0f1e9b808
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835313"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942582"
 ---
 # <a name="list-resourceoperations"></a>列出 resourceOperations
 

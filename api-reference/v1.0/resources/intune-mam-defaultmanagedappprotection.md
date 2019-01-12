@@ -3,12 +3,13 @@ title: defaultManagedAppProtection 资源类型
 description: 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f29bc450ca2dfd8f58efe235263d50908d05ab12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2ec70076f7ee0fa30d40d527c1531258479a592b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880876"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945221"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 

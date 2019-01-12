@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentTopFailures 函数
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4c0c19de6d4e7694f20dff54844822e65f95fe9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 163a75a2ffa675f939086fecf3e9c4a155352aa1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934224"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures 函数
 
@@ -24,7 +25,7 @@ ms.locfileid: "27816413"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

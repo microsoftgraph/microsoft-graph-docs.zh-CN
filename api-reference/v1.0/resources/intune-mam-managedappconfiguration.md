@@ -3,12 +3,13 @@ title: managedAppConfiguration 资源类型
 description: 用于将一组自定义设置按原样提供给配置范围确定的用户应用的配置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b3acf921f76e34e21427364ef84d1647cc7d0f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2bf4e8ce0d32bea7714ae489167dbb582043fa5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936632"
 ---
 # <a name="managedappconfiguration-resource-type"></a>managedAppConfiguration 资源类型
 

@@ -2,12 +2,14 @@
 title: 获取应用程序
 description: 检索的属性和 application 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 9226e697f3e8439740003887d8560ffaac9df2fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 833a6470a1db8cef0ce26ca4cecfe1c5039fa159
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935827"
 ---
 # <a name="get-application"></a>获取应用程序
 

@@ -3,12 +3,13 @@ title: TableColumn 资源类型
 description: 代表表中的一列。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8534a2f47478a68c305f2acbe98b87df032982e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b6f16b078e2d865ec9800f8ebc8668c2a622911d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936583"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 

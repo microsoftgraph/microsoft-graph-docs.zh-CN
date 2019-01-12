@@ -3,12 +3,13 @@ title: excludedApps 资源类型
 description: 包含用于排除 Office365 应用程序的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2ec66c83c13088fb289e271e604154195902ca5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90216c639d36a989b2fad5dbdc1adbd11fe46ede
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821880"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943947"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
@@ -18,21 +19,21 @@ ms.locfileid: "27821880"
 
 包含用于排除 Office365 应用程序的属性。
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
-|访问|布尔|值为 if 或不应排除 MS Office Access。|
-|excel|布尔|值为 if 或不应排除 MS Office Excel。|
-|groove|布尔|如果值或不应排除 MS Office OneDrive for Business 的 Groove。|
-|infoPath|布尔|值为 if 或不应排除 MS Office InfoPath。|
-|lync|布尔|如果值或不应排除 MS Office Skype for Business-Lync。|
-|oneDrive|布尔|值为 if 或不应排除 MS Office OneDrive。|
-|oneNote|布尔|值为 if 或不应排除 MS Office OneNote。|
-|outlook|布尔|值为 if 或不应排除 MS Office Outlook。|
-|powerPoint|布尔|值为 if 或不应排除 MS Office PowerPoint。|
-|publisher|布尔|值为 if 或不应排除 MS Office Publisher。|
-|sharePointDesigner|布尔|值为 if 或不应排除 MS Office SharePointDesigner。|
-|visio|布尔|值为 if 或不应排除 MS Office Visio。|
-|word|布尔|值为 if 或不应排除 MS Office Word。|
+|访问|Boolean|值为 if 或不应排除 MS Office Access。|
+|excel|Boolean|值为 if 或不应排除 MS Office Excel。|
+|groove|Boolean|如果值或不应排除 MS Office OneDrive for Business 的 Groove。|
+|infoPath|Boolean|值为 if 或不应排除 MS Office InfoPath。|
+|lync|Boolean|如果值或不应排除 MS Office Skype for Business-Lync。|
+|oneDrive|Boolean|值为 if 或不应排除 MS Office OneDrive。|
+|oneNote|Boolean|值为 if 或不应排除 MS Office OneNote。|
+|outlook|Boolean|值为 if 或不应排除 MS Office Outlook。|
+|powerPoint|Boolean|值为 if 或不应排除 MS Office PowerPoint。|
+|publisher|Boolean|值为 if 或不应排除 MS Office Publisher。|
+|sharePointDesigner|Boolean|值为 if 或不应排除 MS Office SharePointDesigner。|
+|visio|Boolean|值为 if 或不应排除 MS Office Visio。|
+|word|Boolean|值为 if 或不应排除 MS Office Word。|
 
 ## <a name="relationships"></a>Relationships
 无

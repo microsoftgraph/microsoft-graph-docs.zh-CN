@@ -3,12 +3,13 @@ title: 删除 windows10TeamGeneralConfiguration
 description: 删除 windows10TeamGeneralConfiguration。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 69d16dc364d1c9d386e7db0efa21a09f2a546ab8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4ef0363ab3418c15941968f3cf5f49577cc07ecd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821075"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936667"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>删除 windows10TeamGeneralConfiguration
 

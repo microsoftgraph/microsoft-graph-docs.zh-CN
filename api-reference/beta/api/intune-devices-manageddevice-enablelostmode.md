@@ -3,12 +3,13 @@ title: enableLostMode 操作
 description: 启用丢失的模式
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bd7d58a70d60b040b25dcb38574e16edb309599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807243"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934322"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |message|字符串|尚未记录|
 |phoneNumber|String|尚未记录|

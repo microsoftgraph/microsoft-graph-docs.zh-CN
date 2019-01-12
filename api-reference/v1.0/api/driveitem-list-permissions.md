@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出有权访问文件的用户
 localization_priority: Normal
-ms.openlocfilehash: 814c2a40e017c3a7d779f4df344498a7f9dc2bbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: c85ca498cbdfce27e5fff549b3d75c89a805109d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840059"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938284"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
 

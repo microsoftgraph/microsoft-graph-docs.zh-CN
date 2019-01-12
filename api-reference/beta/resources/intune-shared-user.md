@@ -3,12 +3,13 @@ title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d5aef878787f0bf9b8a7a2cd95810e54d1e8f166
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 67b347a34244b5789bcb38a281e33974473ba1bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811877"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934938"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27811877"
 |**入职培训**|
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
 |[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|尚未记录|
-|**故障排除**|
+|**疑难解答**|
 |[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String 集合|检索与失败的应用程序的设备的列表。|
 
 
@@ -49,7 +50,7 @@ ms.locfileid: "27811877"
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |**设备管理**|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
@@ -57,7 +58,7 @@ ms.locfileid: "27811877"
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**入职培训**|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|获取目标设定为用户的注册配置|
-|**故障排除**|
+|**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)集合|此用户的故障排除事件列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)集合|为此用户的事件的故障排除的移动应用程序的列表。|

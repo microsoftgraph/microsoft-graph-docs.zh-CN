@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointSiteUsageStorage'
 description: 获取报表周期内分配和使用的存储趋势。
 localization_priority: Normal
-ms.openlocfilehash: 231da76d9009966fd14e98badf52aa84a231d7b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d66400c9b94f72d9ecc3b5d50d4ca92f1f8cb364
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946033"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 

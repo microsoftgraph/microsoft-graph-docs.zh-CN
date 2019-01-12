@@ -3,12 +3,13 @@ title: 删除 vppToken
 description: 删除 vppToken。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5bd776ccb6410fc19ee75ccf418471be44ddc5cd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad0799a69ec350cdc5008f1dd1e82379515f7971
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856943"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947888"
 ---
 # <a name="delete-vpptoken"></a>删除 vppToken
 

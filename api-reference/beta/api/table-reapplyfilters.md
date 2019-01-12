@@ -3,12 +3,13 @@ title: 'Table: reapplyFilters'
 description: 重新应用当前表上的所有筛选器。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d93c3a0db6e28428642fbe1fc4b42afbb4cfaeb2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 275b9549e15271e59c73008d2675dffe7a6ac136
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947833"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 

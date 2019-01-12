@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentAbandonmentDetails 函数
 description: 注册放弃的元数据的详细信息报表
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840787"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939908"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 函数
 
@@ -47,7 +48,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|

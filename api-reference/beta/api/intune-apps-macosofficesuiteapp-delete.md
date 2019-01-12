@@ -3,12 +3,13 @@ title: 删除 macOSOfficeSuiteApp
 description: 删除 macOSOfficeSuiteApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 445d51a6ad47e4cafbd99324d1c5092d63f154ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7c9575bd53c9cf1bae8c6d425255c54d23d0da88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946250"
 ---
 # <a name="delete-macosofficesuiteapp"></a>删除 macOSOfficeSuiteApp
 

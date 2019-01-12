@@ -2,12 +2,14 @@
 title: 更新 bookingservice
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838918"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937038"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -44,7 +46,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
@@ -55,7 +57,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
 |id|String| 只读。|
-|isHiddenFromCustomers|布尔|True 表示该服务不是预定的客户。|
+|isHiddenFromCustomers|Boolean|True 表示该服务不是预定的客户。|
 |notes|String|有关此服务的其他信息。|
 |后|Duration|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|
 |缓冲区|Duration|缓冲区之前可以启动此服务的约会的时间。|

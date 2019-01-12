@@ -1,14 +1,15 @@
 ---
 title: 列出分区
 description: 检索 section 对象列表。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 11636dd2fbb0c39724b0036bdfa5db03bb12f0c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: fb99b358f99055ce603d8467bc520c2edeead8de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945578"
 ---
 # <a name="list-sections"></a>列出分区
 

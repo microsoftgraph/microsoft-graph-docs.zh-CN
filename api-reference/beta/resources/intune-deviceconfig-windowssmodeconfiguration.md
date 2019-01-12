@@ -3,12 +3,13 @@ title: windowsSModeConfiguration 枚举类型
 description: 可能的选项，可配置 S 模式解除锁定
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e37bd51be1b5476e8b4590b92b3caeeed92ac45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28106a073a6bb213fe17e80193cb32d1e6b3b9ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830735"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947377"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 枚举类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27830735"
 
 可能的选项，可配置 S 模式解除锁定
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |noRestriction|0|此选项将删除所有限制解锁 S 模式的默认设置|
 |阻止|1|此选项将阻止用户解锁设备从 S 模式|

@@ -3,12 +3,13 @@ title: 图表：图像
 description: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831610"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939719"
 ---
 # <a name="chart-image"></a>图表：图像
 

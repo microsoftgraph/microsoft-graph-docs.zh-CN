@@ -3,12 +3,13 @@ title: 删除 mobileAppIntentAndState
 description: 删除 mobileAppIntentAndState。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73f42ba38463c827f9863ab655f719996ac18cb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0b5f906cf638fc11ce78d8dd6986d5ce632fbff1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943891"
 ---
 # <a name="delete-mobileappintentandstate"></a>删除 mobileAppIntentAndState
 

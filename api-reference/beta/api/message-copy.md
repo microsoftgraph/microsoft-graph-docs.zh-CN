@@ -3,12 +3,13 @@ title: 'message: copy'
 description: 将邮件复制到文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a713238abe0ab4ccd4ef3ec032e73fe2d83a062e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cacc827079089cf977a28f5bb45bb1ac62884275
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934714"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -41,8 +42,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必填。 |
-| Content-Type | `application/json`. 必填。 |
+| Authorization | `Bearer {token}`. 必需。 |
+| Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

@@ -3,12 +3,13 @@ title: 列出用户
 description: 检索 user 对象列表。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 48b63f5a9ccc3616bd8ecee986cbf26dfedfb8d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 874ae4d3f54cfa67e6ac542cacab4b6eb39be716
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890529"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939509"
 ---
 # <a name="list-users"></a>列出用户
 

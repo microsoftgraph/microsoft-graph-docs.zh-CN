@@ -3,12 +3,13 @@ title: 创建 vppToken
 description: 创建新的 vppToken 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 48b232098ea108f9dc02a47628a8ad9c8f413a00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aabf852a9085cc04b8b06f382efb453506780ac4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936653"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 

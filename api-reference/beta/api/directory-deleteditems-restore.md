@@ -3,12 +3,13 @@ title: 恢复已删除的项目
 description: '从已删除的项目中还原最近删除的项目。 '
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 6206b850df7e808df05e191b6e0485f617a7e1ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8c9a6e84a723fc0087f3155e4b2e973e72276233
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843874"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935967"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 

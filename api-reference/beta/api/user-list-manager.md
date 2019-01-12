@@ -2,12 +2,14 @@
 title: 列出经理
 description: 获取用户的经理。返回指定为用户经理的用户或联系人。
 localization_priority: Normal
-ms.openlocfilehash: 6f88aaf04596ade1a1cfd280af13efbc02affad6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3818d72ea024ff06697f123d9a1fb5b3d534152d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814971"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933770"
 ---
 # <a name="list-manager"></a>列出经理
 

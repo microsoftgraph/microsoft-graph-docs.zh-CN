@@ -3,12 +3,13 @@ title: 更新 mobileAppContentFile
 description: 更新 mobileAppContentFile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b404be8c376bfaff89540eb22ce2cde5ddca2b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8db4e9544e044f004e3524bf0a0df9af9360f342
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944542"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
@@ -59,8 +60,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|布尔|指示文件是否框架文件的值。|
-|isDependency|布尔|内容的文件是否依赖关系的主要内容文件。|
+|isFrameworkFile|Boolean|指示文件是否框架文件的值。|
+|isDependency|Boolean|内容的文件是否依赖关系的主要内容文件。|
 
 
 

@@ -3,12 +3,13 @@ title: 创建 enrollmentProfile
 description: 创建新的 enrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f10c8b04a19f541305dd63ec2f063a4fff1d8226
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf4133e636cd9eedf7737e2003d1ba733a6e08ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843986"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934140"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
@@ -52,9 +53,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|字符串|对象的 GUID|
 |displayName|字符串|配置文件的名称|
 |说明|字符串|配置文件的说明|
-|requiresUserAuthentication|布尔|指示该配置文件是否要求用户身份验证|
+|requiresUserAuthentication|Boolean|指示该配置文件是否要求用户身份验证|
 |configurationEndpointUrl|字符串|配置用于注册的终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。|
+|enableAuthenticationViaCompanyPortal|Boolean|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。|
 
 
 

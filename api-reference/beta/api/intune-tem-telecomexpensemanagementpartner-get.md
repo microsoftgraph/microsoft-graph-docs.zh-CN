@@ -3,12 +3,13 @@ title: 获取 telecomExpenseManagementPartner
 description: 读取 telecomExpenseManagementPartner 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5b3deff4cf97d036ae889241306cca77b4a7eef9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6973261fda6dd56e18480f83fcb804c50922852f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939264"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>获取 telecomExpenseManagementPartner
 

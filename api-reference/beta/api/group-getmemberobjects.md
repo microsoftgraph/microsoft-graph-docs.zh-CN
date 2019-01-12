@@ -2,12 +2,14 @@
 title: 'group: getMemberObjects'
 description: 返回的所有组和管理单元的组的成员。 检查是传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
 localization_priority: Normal
-ms.openlocfilehash: 72d9bc23fa5499ebf1f43d8baee9c9562a57c645
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: a83987a15f384cf17e268a8bdbd6791164484f7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935925"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -40,7 +42,7 @@ POST /groups/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|布尔|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|Boolean|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将在包含该组所属组 ID 的响应正文中返回 `200 OK` 响应代码和字符串集合。

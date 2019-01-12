@@ -2,12 +2,14 @@
 title: 重置 accessReview
 description: 在 Azure AD 访问评论功能中，重置当前处于活动状态 accessReview 的决策。  目标对象可以是一次性访问回顾或定期访问评审的实例。  以前的决策就不再记录，但审阅者可以继续更新决策。
 localization_priority: Normal
-ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b1f107733543380dbd6ad095133f09befc03736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941490"
 ---
 # <a name="reset-accessreview"></a>重置 accessReview
 
@@ -32,7 +34,7 @@ POST /accessReviews('<id>')/resetDecisions()
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者\{标记\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

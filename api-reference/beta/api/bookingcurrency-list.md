@@ -2,12 +2,14 @@
 title: 列表 bookingCurrencies
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 809ee9222f8ae997633becbe13f87539dd816b1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: e08385c887b1da6972caab83da068b0e537586db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849215"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941518"
 ---
 # <a name="list-bookingcurrencies"></a>列表 bookingCurrencies
 

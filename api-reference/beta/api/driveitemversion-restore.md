@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 还原以前版本
 localization_priority: Normal
-ms.openlocfilehash: 6b325edc637779327390f34d6ebaab7dee2666cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9f8492b3a6e4b01b61288b235cc0dfa19ffd78d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813879"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946075"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 

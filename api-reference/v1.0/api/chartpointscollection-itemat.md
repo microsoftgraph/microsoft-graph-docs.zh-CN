@@ -3,12 +3,13 @@ title: 'ChartPointsCollection: ItemAt'
 description: 根据其在系列中的位置检索点。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 51a79ff10b71d1f39c6c6da82adf11205b42b57f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 91537f67a050d17484c7425eff342049df205df0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880484"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937976"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 

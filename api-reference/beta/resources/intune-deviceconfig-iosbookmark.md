@@ -3,12 +3,13 @@ title: iosBookmark 资源类型
 description: iOS URL 书签
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 37cdcc1b886914b4b42e0a97e8947a565c75f5b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cbf39a2eee5064b7d3ddfa474b1f70758d4c7047
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938172"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 

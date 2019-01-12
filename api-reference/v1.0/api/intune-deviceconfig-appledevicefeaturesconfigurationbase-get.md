@@ -3,12 +3,13 @@ title: 获取 appleDeviceFeaturesConfigurationBase
 description: 读取 appleDeviceFeaturesConfigurationBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1f5368ae0ab2cb9c2863f29554658e1e7f98612
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f47ee537d8079ed2613d74592239ef2e39601bf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934014"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>获取 appleDeviceFeaturesConfigurationBase
 

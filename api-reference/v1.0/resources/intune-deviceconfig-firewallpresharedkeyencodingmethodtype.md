@@ -3,12 +3,13 @@ title: firewallPreSharedKeyEncodingMethodType 枚举类型
 description: FirewallPreSharedKeyEncodingMethod 的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bba6033985f2b960a272134614d98acc7203a9d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4ad59a11aec2fbf715657de95eb3aafc778da43a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871748"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947825"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27871748"
 
 FirewallPreSharedKeyEncodingMethod 的可能值
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|配置通过 Intune，没有值不会替代的用户配置设备默认值|
 |无|1|未编码预共享的密钥。 而是保留在其宽字符格式|

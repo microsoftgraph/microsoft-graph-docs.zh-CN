@@ -2,12 +2,14 @@
 title: 获取组设置模板
 description: 组设置模板表示用于在租户内创建设置的设置模板。此操作允许检索 groupSettingTemplate 对象的属性，包括可用设置及其默认值。
 localization_priority: Normal
-ms.openlocfilehash: 17e385c564337fcaa1255685e2b5808caec5cba4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934301"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 

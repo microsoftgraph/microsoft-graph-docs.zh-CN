@@ -3,12 +3,13 @@ title: 删除 windowsStoreApp
 description: 删除 windowsStoreApp。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6a54a08381330ee55067c4f39c339c0499cf7df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 02337afc33e92c3f886eee31a57d34ed6eba3a5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935813"
 ---
 # <a name="delete-windowsstoreapp"></a>删除 windowsStoreApp
 

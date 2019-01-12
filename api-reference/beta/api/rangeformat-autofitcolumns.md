@@ -2,12 +2,14 @@
 title: 'RangeFormat: autofitColumns'
 description: 根据列中的当前数据更改当前范围的列宽，以达到最佳宽度。
 localization_priority: Normal
-ms.openlocfilehash: 024475e606b6a94136e42eaa5dd2f32fcaf06b21
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: e5530f0f4ce5f1896b8515c529b5c3bb39a8293b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933699"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 

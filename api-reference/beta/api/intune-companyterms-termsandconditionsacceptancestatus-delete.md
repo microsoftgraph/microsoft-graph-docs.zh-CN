@@ -3,12 +3,13 @@ title: 删除 termsAndConditionsAcceptanceStatus
 description: 删除 termsAndConditionsAcceptanceStatus。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d7dfbde7c64f70832adbc1cded409eb512d20d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1ff6f728543f0f230d693385151a38b0721f188c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941448"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>删除 termsAndConditionsAcceptanceStatus
 

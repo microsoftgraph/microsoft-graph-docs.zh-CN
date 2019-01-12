@@ -2,12 +2,14 @@
 title: 使用 Microsoft Graph 安全性 API
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Priority
-ms.openlocfilehash: be07bf3bbc2c09efc4ed9e918e6b8296fcf0ff37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: bc5a307b17a37f5523e3dbc8b145c248b0226471
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811919"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944766"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 

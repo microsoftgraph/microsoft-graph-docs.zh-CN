@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 列出与我共享的文件
 localization_priority: Priority
-ms.openlocfilehash: 89ad3a5fc8aa12dd6865a629fd80b5a72623302c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 40da54a8edc4fe8be71909684dbcf6fbde14203b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938207"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 

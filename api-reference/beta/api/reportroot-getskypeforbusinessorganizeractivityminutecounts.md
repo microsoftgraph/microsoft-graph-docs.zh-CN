@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts'
 description: 获取使用情况趋势，即组织中用户召开和组织的会议会话的时长（以分钟为单位）和类型。 会议会话类型包括音频/视频和 Microsoft 拨入/拨出。
 localization_priority: Normal
-ms.openlocfilehash: bb002c467af1afd5c2c315e20f9f7d1d343ddf62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: cfa809302996210cdf57560e1f461a2a1d73ef38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850937"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947944"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 

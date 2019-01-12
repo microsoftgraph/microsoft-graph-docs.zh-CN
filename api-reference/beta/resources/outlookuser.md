@@ -3,12 +3,13 @@ title: outlookUser 资源类型
 description: 表示用户可用的 Outlook 服务。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5411e45b89968231e7b4270a05dd792f985d060d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: bf772eb1598b38550797458df955495dafdd4282
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878825"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943597"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 

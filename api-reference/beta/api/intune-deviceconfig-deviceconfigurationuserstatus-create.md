@@ -3,12 +3,13 @@ title: 创建 deviceConfigurationUserStatus
 description: 创建新的 deviceConfigurationUserStatus 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b4b0406de54604d09811f4034ae4e3883c91a3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 996e470c97ace1ba56f0a695ff22226e19628e62
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948301"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>创建 deviceConfigurationUserStatus
 
