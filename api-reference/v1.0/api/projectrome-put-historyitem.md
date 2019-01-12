@@ -2,29 +2,30 @@
 title: 创建或替换 historyItem
 description: 创建一个新或替换现有的用户活动的现有历史记录项。
 localization_priority: Normal
-ms.openlocfilehash: b3462edef2c210399e4dd653e9b3c7d91bb67875
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856292"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913000"
 ---
-# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="db854-103">创建或替换 historyItem</span><span class="sxs-lookup"><span data-stu-id="db854-103">Create or replace a historyItem</span></span>
+# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="338c5-103">创建或替换 historyItem</span><span class="sxs-lookup"><span data-stu-id="338c5-103">Create or replace a historyItem</span></span>
 
-<span data-ttu-id="db854-104">创建一个新或替换现有的用户活动的现有历史记录项。</span><span class="sxs-lookup"><span data-stu-id="db854-104">Create a new or replace an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="338c5-104">创建一个新或替换现有的用户活动的现有历史记录项。</span><span class="sxs-lookup"><span data-stu-id="338c5-104">Create a new or replace an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="db854-105">权限</span><span class="sxs-lookup"><span data-stu-id="db854-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="338c5-105">权限</span><span class="sxs-lookup"><span data-stu-id="338c5-105">Permissions</span></span>
 
-<span data-ttu-id="db854-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="db854-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="338c5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="338c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="db854-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="db854-108">Permission type</span></span>      | <span data-ttu-id="db854-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="db854-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="338c5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="338c5-108">Permission type</span></span>      | <span data-ttu-id="338c5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="338c5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="db854-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="db854-110">Delegated (work or school account)</span></span> | <span data-ttu-id="db854-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="db854-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="db854-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="db854-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db854-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="db854-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="db854-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="db854-114">Application</span></span> | <span data-ttu-id="db854-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="db854-115">Not supported.</span></span> |
+|<span data-ttu-id="338c5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="338c5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="338c5-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="338c5-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="338c5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="338c5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="338c5-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="338c5-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="338c5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="338c5-114">Application</span></span> | <span data-ttu-id="338c5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="338c5-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="db854-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="db854-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="338c5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="338c5-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,27 +33,27 @@ ms.locfileid: "27856292"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-<span data-ttu-id="db854-117">Id 需要一个 GUID。</span><span class="sxs-lookup"><span data-stu-id="db854-117">Id needs to be a GUID.</span></span>
+<span data-ttu-id="338c5-117">Id 需要一个 GUID。</span><span class="sxs-lookup"><span data-stu-id="338c5-117">Id needs to be a GUID.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="db854-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="db854-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="338c5-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="338c5-118">Request headers</span></span>
 
-|<span data-ttu-id="db854-119">名称</span><span class="sxs-lookup"><span data-stu-id="db854-119">Name</span></span> | <span data-ttu-id="db854-120">类型</span><span class="sxs-lookup"><span data-stu-id="db854-120">Type</span></span> | <span data-ttu-id="db854-121">说明</span><span class="sxs-lookup"><span data-stu-id="db854-121">Description</span></span>|
+|<span data-ttu-id="338c5-119">名称</span><span class="sxs-lookup"><span data-stu-id="338c5-119">Name</span></span> | <span data-ttu-id="338c5-120">类型</span><span class="sxs-lookup"><span data-stu-id="338c5-120">Type</span></span> | <span data-ttu-id="338c5-121">说明</span><span class="sxs-lookup"><span data-stu-id="338c5-121">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="db854-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="db854-122">Authorization</span></span> | <span data-ttu-id="db854-123">string</span><span class="sxs-lookup"><span data-stu-id="db854-123">string</span></span> | <span data-ttu-id="db854-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="db854-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="338c5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="338c5-122">Authorization</span></span> | <span data-ttu-id="338c5-123">string</span><span class="sxs-lookup"><span data-stu-id="338c5-123">string</span></span> | <span data-ttu-id="338c5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="338c5-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="db854-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="db854-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="338c5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="338c5-126">Request body</span></span>
 
-<span data-ttu-id="db854-127">在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="db854-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
+<span data-ttu-id="338c5-127">在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="338c5-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="db854-128">响应</span><span class="sxs-lookup"><span data-stu-id="db854-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="338c5-128">响应</span><span class="sxs-lookup"><span data-stu-id="338c5-128">Response</span></span>
 
-<span data-ttu-id="db854-129">如果成功，此方法返回`201 Created`如果 historyItem 已创建的响应代码或`200 OK`如果 historyItem 被替换。</span><span class="sxs-lookup"><span data-stu-id="db854-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
+<span data-ttu-id="338c5-129">如果成功，此方法返回`201 Created`如果 historyItem 已创建的响应代码或`200 OK`如果 historyItem 被替换。</span><span class="sxs-lookup"><span data-stu-id="338c5-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
 
-## <a name="example"></a><span data-ttu-id="db854-130">示例</span><span class="sxs-lookup"><span data-stu-id="db854-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="338c5-130">示例</span><span class="sxs-lookup"><span data-stu-id="338c5-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="db854-131">请求</span><span class="sxs-lookup"><span data-stu-id="db854-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="338c5-131">请求</span><span class="sxs-lookup"><span data-stu-id="338c5-131">Request</span></span>
 
-<span data-ttu-id="db854-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="db854-132">Here is an example of the request.</span></span>
+<span data-ttu-id="338c5-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="338c5-132">Here is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -71,9 +72,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="db854-133">响应</span><span class="sxs-lookup"><span data-stu-id="db854-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="338c5-133">响应</span><span class="sxs-lookup"><span data-stu-id="338c5-133">Response</span></span>
 
-<span data-ttu-id="db854-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="db854-134">Here is an example of the response.</span></span>
+<span data-ttu-id="338c5-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="338c5-134">Here is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
