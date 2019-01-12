@@ -1,12 +1,14 @@
 ---
 title: OneDrive 文件存储 API 概述
 description: OneDrive 是 Office 365 的文件中心。
-ms.openlocfilehash: dcd16969a2f1b1f6898696fe0be9539d50800252
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: 9bbc5158140930081beb665580b3f8344f6a1738
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975321"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>OneDrive 文件存储 API 概述
 

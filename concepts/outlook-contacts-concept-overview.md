@@ -2,12 +2,14 @@
 title: Outlook 个人联系人 API 概述
 description: Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 365 中 Outlook 邮件中心的一部分。 通过 Outlook，可以管理电子邮件、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
 author: angelgolfer-ms
-ms.openlocfilehash: bccf32fd0cc3022a146e16590d915c4b85d60127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937318"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
