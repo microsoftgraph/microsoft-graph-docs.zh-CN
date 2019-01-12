@@ -3,12 +3,13 @@ title: 更新团队
 description: 更新指定的团队的属性。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 3168c912ec03a234b968d9ad8b1cd75cdf97d495
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 1185ad9d835f660c98d12fac8472bd6325463858
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828432"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991872"
 ---
 # <a name="update-team"></a>更新团队
 

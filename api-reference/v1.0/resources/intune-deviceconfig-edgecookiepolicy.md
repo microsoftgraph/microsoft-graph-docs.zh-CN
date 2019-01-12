@@ -3,12 +3,13 @@ title: edgeCookiePolicy 枚举类型
 description: 若要指定 Microsoft 边缘中允许的 cookie 的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4f02a6f6ca87154ed67707da6ef554fe9a5c457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9fcb0d338239976b8e52ab34015c9687cb39276
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991809"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -16,7 +17,7 @@ ms.locfileid: "27871692"
 
 若要指定 Microsoft 边缘中允许的 cookie 的可能值。
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |用户定制|0|允许用户设置。|
 |允许|1|允许。|

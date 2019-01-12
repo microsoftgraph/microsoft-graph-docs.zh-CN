@@ -3,12 +3,13 @@ title: 创建 windowsOfficeClientSecurityConfiguration
 description: 创建新的 windowsOfficeClientSecurityConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 930d12432ec4b21e2293f1ded48a0a07625734cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b52cd6ac3f5eb58be38ee45413fe234ed654923c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837119"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991963"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>创建 windowsOfficeClientSecurityConfiguration
 

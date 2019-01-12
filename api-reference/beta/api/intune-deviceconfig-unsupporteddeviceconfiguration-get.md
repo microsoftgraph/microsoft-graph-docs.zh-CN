@@ -3,12 +3,13 @@ title: 获取 unsupportedDeviceConfiguration
 description: 读取属性和 unsupportedDeviceConfiguration 对象的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ebff30e34436239a5c7ffec4d03cb83966a59d98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 564c252481fafe8c957036a004d3404136aeb00a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817408"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991403"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>获取 unsupportedDeviceConfiguration
 

@@ -3,12 +3,13 @@ title: windowsDefenderUpdateSignatures 操作
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93869feea6163636ca19fb681740293e76c72d98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9505eec8556cf78c16d12c5cc6fb56ba39dfe5df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991557"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>windowsDefenderUpdateSignatures 操作
 

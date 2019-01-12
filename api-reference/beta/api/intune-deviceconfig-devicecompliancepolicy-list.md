@@ -3,12 +3,13 @@ title: 列出 deviceCompliancePolicies
 description: 列出 deviceCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74f14e69ab4146f82b15476ccacb62e6ee0111fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e52aef248a77ad1831c2638962ea8416649a64e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891110"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991368"
 ---
 # <a name="list-devicecompliancepolicies"></a>列出 deviceCompliancePolicies
 

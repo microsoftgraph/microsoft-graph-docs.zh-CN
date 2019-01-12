@@ -3,12 +3,13 @@ title: 删除 roleDefinition
 description: 删除 roleDefinition。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8dcd5c2f1db9d3349ddf4e8d4d720156e59dce36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bdb6db17b59e31c483d3b85c78285bde08aeb84b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827515"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992026"
 ---
 # <a name="delete-roledefinition"></a>删除 roleDefinition
 

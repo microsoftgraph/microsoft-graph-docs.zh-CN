@@ -3,12 +3,13 @@ title: 列出 telecomExpenseManagementPartners
 description: 列出 telecomExpenseManagementPartner 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29952915b8e115d14f1c9ece8d7f176e7360e266
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abb529efbb70c4caf29fa76dbde159a3ccb731bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846317"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992061"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>列出 telecomExpenseManagementPartners
 
