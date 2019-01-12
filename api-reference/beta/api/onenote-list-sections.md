@@ -1,30 +1,31 @@
 ---
 title: 列出分区
 description: 检索 section 对象列表。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 11636dd2fbb0c39724b0036bdfa5db03bb12f0c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: fb99b358f99055ce603d8467bc520c2edeead8de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945578"
 ---
-# <a name="list-sections"></a><span data-ttu-id="7162a-103">列出分区</span><span class="sxs-lookup"><span data-stu-id="7162a-103">List sections</span></span>
+# <a name="list-sections"></a><span data-ttu-id="e37bc-103">列出分区</span><span class="sxs-lookup"><span data-stu-id="e37bc-103">List sections</span></span>
 
-> <span data-ttu-id="7162a-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="7162a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7162a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="7162a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e37bc-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e37bc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e37bc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e37bc-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7162a-106">检索 [section](../resources/section.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="7162a-106">Retrieve a list of [section](../resources/section.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7162a-107">权限</span><span class="sxs-lookup"><span data-stu-id="7162a-107">Permissions</span></span>
-<span data-ttu-id="7162a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7162a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e37bc-106">检索 [section](../resources/section.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="e37bc-106">Retrieve a list of [section](../resources/section.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e37bc-107">权限</span><span class="sxs-lookup"><span data-stu-id="e37bc-107">Permissions</span></span>
+<span data-ttu-id="e37bc-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e37bc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7162a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7162a-110">Permission type</span></span>      | <span data-ttu-id="7162a-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7162a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e37bc-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e37bc-110">Permission type</span></span>      | <span data-ttu-id="e37bc-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e37bc-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7162a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7162a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7162a-113">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7162a-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7162a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7162a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7162a-115">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7162a-115">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="7162a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7162a-116">Application</span></span> | <span data-ttu-id="7162a-117">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7162a-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="e37bc-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e37bc-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e37bc-113">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e37bc-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e37bc-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e37bc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e37bc-115">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e37bc-115">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="e37bc-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e37bc-116">Application</span></span> | <span data-ttu-id="e37bc-117">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e37bc-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7162a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7162a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e37bc-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e37bc-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/sections
@@ -32,28 +33,28 @@ GET /users/{id | userPrincipalName}/onenote/sections
 GET /groups/{id}/onenote/sections
 GET /sites/{id}/onenote/sections
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7162a-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7162a-119">Optional query parameters</span></span>
-<span data-ttu-id="7162a-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7162a-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e37bc-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e37bc-119">Optional query parameters</span></span>
+<span data-ttu-id="e37bc-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e37bc-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="7162a-121">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="7162a-121">The default sort order is `name asc`.</span></span>
+<span data-ttu-id="e37bc-121">默认排序顺序是 `name asc`。</span><span class="sxs-lookup"><span data-stu-id="e37bc-121">The default sort order is `name asc`.</span></span>
 
-<span data-ttu-id="7162a-p103">默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区的有效 `expand` 值为 `parentNotebook` 和 `parentSectionGroup`。</span><span class="sxs-lookup"><span data-stu-id="7162a-p103">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
+<span data-ttu-id="e37bc-p103">默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区的有效 `expand` 值为 `parentNotebook` 和 `parentSectionGroup`。</span><span class="sxs-lookup"><span data-stu-id="e37bc-p103">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7162a-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="7162a-124">Request headers</span></span>
-| <span data-ttu-id="7162a-125">名称</span><span class="sxs-lookup"><span data-stu-id="7162a-125">Name</span></span>       | <span data-ttu-id="7162a-126">类型</span><span class="sxs-lookup"><span data-stu-id="7162a-126">Type</span></span> | <span data-ttu-id="7162a-127">说明</span><span class="sxs-lookup"><span data-stu-id="7162a-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e37bc-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="e37bc-124">Request headers</span></span>
+| <span data-ttu-id="e37bc-125">名称</span><span class="sxs-lookup"><span data-stu-id="e37bc-125">Name</span></span>       | <span data-ttu-id="e37bc-126">类型</span><span class="sxs-lookup"><span data-stu-id="e37bc-126">Type</span></span> | <span data-ttu-id="e37bc-127">说明</span><span class="sxs-lookup"><span data-stu-id="e37bc-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="7162a-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7162a-128">Authorization</span></span>  | <span data-ttu-id="7162a-129">string</span><span class="sxs-lookup"><span data-stu-id="7162a-129">string</span></span>  | <span data-ttu-id="7162a-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7162a-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7162a-132">Accept</span><span class="sxs-lookup"><span data-stu-id="7162a-132">Accept</span></span> | <span data-ttu-id="7162a-133">string</span><span class="sxs-lookup"><span data-stu-id="7162a-133">string</span></span> | `application/json` |
+| <span data-ttu-id="e37bc-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="e37bc-128">Authorization</span></span>  | <span data-ttu-id="e37bc-129">string</span><span class="sxs-lookup"><span data-stu-id="e37bc-129">string</span></span>  | <span data-ttu-id="e37bc-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e37bc-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e37bc-132">Accept</span><span class="sxs-lookup"><span data-stu-id="e37bc-132">Accept</span></span> | <span data-ttu-id="e37bc-133">string</span><span class="sxs-lookup"><span data-stu-id="e37bc-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="7162a-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="7162a-134">Request body</span></span>
-<span data-ttu-id="7162a-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7162a-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e37bc-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="e37bc-134">Request body</span></span>
+<span data-ttu-id="e37bc-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e37bc-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7162a-136">响应</span><span class="sxs-lookup"><span data-stu-id="7162a-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e37bc-136">响应</span><span class="sxs-lookup"><span data-stu-id="e37bc-136">Response</span></span>
 
-<span data-ttu-id="7162a-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [section](../resources/section.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7162a-137">If successful, this method returns a `200 OK` response code and collection of [section](../resources/section.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7162a-138">示例</span><span class="sxs-lookup"><span data-stu-id="7162a-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7162a-139">请求</span><span class="sxs-lookup"><span data-stu-id="7162a-139">Request</span></span>
-<span data-ttu-id="7162a-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7162a-140">Here is an example of the request.</span></span>
+<span data-ttu-id="e37bc-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [section](../resources/section.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e37bc-137">If successful, this method returns a `200 OK` response code and collection of [section](../resources/section.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e37bc-138">示例</span><span class="sxs-lookup"><span data-stu-id="e37bc-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e37bc-139">请求</span><span class="sxs-lookup"><span data-stu-id="e37bc-139">Request</span></span>
+<span data-ttu-id="e37bc-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e37bc-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_sections"
@@ -61,8 +62,8 @@ GET /sites/{id}/onenote/sections
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/sections
 ```
-##### <a name="response"></a><span data-ttu-id="7162a-141">响应</span><span class="sxs-lookup"><span data-stu-id="7162a-141">Response</span></span>
-<span data-ttu-id="7162a-p105">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7162a-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e37bc-141">响应</span><span class="sxs-lookup"><span data-stu-id="e37bc-141">Response</span></span>
+<span data-ttu-id="e37bc-p105">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e37bc-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
