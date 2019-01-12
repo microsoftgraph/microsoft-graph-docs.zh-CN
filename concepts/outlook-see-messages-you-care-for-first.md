@@ -2,10 +2,12 @@
 title: ''
 description: ''
 author: angelgolfer-ms
-ms.openlocfilehash: b88f3994de92a3937c2805a38384a700ca55b957
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 788557610ee9a2a342133df7d35cb729559fa6e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961321"
 ---

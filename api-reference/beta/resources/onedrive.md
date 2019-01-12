@@ -2,25 +2,26 @@
 title: 在 Microsoft Graph 中使用文件
 description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 localization_priority: Priority
-ms.openlocfilehash: 8b44324987b94c824ed71da558b9ee3e5ded2d83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7d791f983573f56744a47952aff282f822568785
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887162"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965892"
 ---
-# <a name="working-with-files-in-microsoft-graph"></a><span data-ttu-id="2f613-104">在 Microsoft Graph 中使用文件</span><span class="sxs-lookup"><span data-stu-id="2f613-104">Working with files in Microsoft Graph</span></span>
+# <a name="working-with-files-in-microsoft-graph"></a><span data-ttu-id="94b33-104">在 Microsoft Graph 中使用文件</span><span class="sxs-lookup"><span data-stu-id="94b33-104">Working with files in Microsoft Graph</span></span>
 
-> <span data-ttu-id="2f613-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="2f613-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2f613-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2f613-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="94b33-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="94b33-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="94b33-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="94b33-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2f613-p103">可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。</span><span class="sxs-lookup"><span data-stu-id="2f613-p103">You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios.</span></span>
+<span data-ttu-id="94b33-p103">可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。</span><span class="sxs-lookup"><span data-stu-id="94b33-p103">You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios.</span></span>
 
-<span data-ttu-id="2f613-109">Microsoft Graph 公开可用于文件的两个资源类型：</span><span class="sxs-lookup"><span data-stu-id="2f613-109">Microsoft Graph exposes two resource types for working with files:</span></span>
+<span data-ttu-id="94b33-109">Microsoft Graph 公开可用于文件的两个资源类型：</span><span class="sxs-lookup"><span data-stu-id="94b33-109">Microsoft Graph exposes two resource types for working with files:</span></span>
 
-* <span data-ttu-id="2f613-110">[驱动器](drive.md) - 表示文件的逻辑容器，例如文档库或用户的 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="2f613-110">[Drive](drive.md) - Represents a logical container of files, like a document library or a user's OneDrive.</span></span>
-* <span data-ttu-id="2f613-111">[DriveItem](driveitem.md) - 表示驱动器中的项目，例如文档、照片、视频或文件夹。</span><span class="sxs-lookup"><span data-stu-id="2f613-111">[DriveItem](driveitem.md) - Represents an item within a drive, like a document, photo, video, or folder.</span></span>
+* <span data-ttu-id="94b33-110">[驱动器](drive.md) - 表示文件的逻辑容器，例如文档库或用户的 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="94b33-110">[Drive](drive.md) - Represents a logical container of files, like a document library or a user's OneDrive.</span></span>
+* <span data-ttu-id="94b33-111">[DriveItem](driveitem.md) - 表示驱动器中的项目，例如文档、照片、视频或文件夹。</span><span class="sxs-lookup"><span data-stu-id="94b33-111">[DriveItem](driveitem.md) - Represents an item within a drive, like a document, photo, video, or folder.</span></span>
 
-<span data-ttu-id="2f613-p104">大部分与文件的交互通过与 **DriveItem** 资源的交互实现。以下是一个 DriveItem 资源示例：</span><span class="sxs-lookup"><span data-stu-id="2f613-p104">Most of the interaction with files occurs through interaction with **DriveItem** resources. The following is an example of a DriveItem resource:</span></span>
+<span data-ttu-id="94b33-p104">大部分与文件的交互通过与 **DriveItem** 资源的交互实现。以下是一个 DriveItem 资源示例：</span><span class="sxs-lookup"><span data-stu-id="94b33-p104">Most of the interaction with files occurs through interaction with **DriveItem** resources. The following is an example of a DriveItem resource:</span></span>
 
 ```json
 {
@@ -49,61 +50,61 @@ ms.locfileid: "27887162"
 }
 ```
 
-<span data-ttu-id="2f613-114">**驱动器** 和 **DriveItem** 资源通过三种不同的方式公开数据：</span><span class="sxs-lookup"><span data-stu-id="2f613-114">**Drive** and **DriveItem** resources expose data in three different ways:</span></span>
+<span data-ttu-id="94b33-114">**驱动器** 和 **DriveItem** 资源通过三种不同的方式公开数据：</span><span class="sxs-lookup"><span data-stu-id="94b33-114">**Drive** and **DriveItem** resources expose data in three different ways:</span></span>
 
-* <span data-ttu-id="2f613-115">_属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。</span><span class="sxs-lookup"><span data-stu-id="2f613-115">_Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).</span></span>
-* <span data-ttu-id="2f613-p105">_Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。</span><span class="sxs-lookup"><span data-stu-id="2f613-p105">_Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.</span></span>
-* <span data-ttu-id="2f613-118">_引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。</span><span class="sxs-lookup"><span data-stu-id="2f613-118">_References_ (like **children** and **thumbnails**) point to collections of other resources.</span></span>
+* <span data-ttu-id="94b33-115">_属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。</span><span class="sxs-lookup"><span data-stu-id="94b33-115">_Properties_ (like **id** and **name**) expose simple values (strings, numbers, Booleans).</span></span>
+* <span data-ttu-id="94b33-p105">_Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。</span><span class="sxs-lookup"><span data-stu-id="94b33-p105">_Facets_ (like **file** and **photo**) expose complex values. The presence of **file** or **folder** facets indicates behaviors and properties of a **DriveItem**.</span></span>
+* <span data-ttu-id="94b33-118">_引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。</span><span class="sxs-lookup"><span data-stu-id="94b33-118">_References_ (like **children** and **thumbnails**) point to collections of other resources.</span></span>
 
-## <a name="commonly-accessed-resources"></a><span data-ttu-id="2f613-119">经常访问的资源</span><span class="sxs-lookup"><span data-stu-id="2f613-119">Commonly accessed resources</span></span>
+## <a name="commonly-accessed-resources"></a><span data-ttu-id="94b33-119">经常访问的资源</span><span class="sxs-lookup"><span data-stu-id="94b33-119">Commonly accessed resources</span></span>
 
-<span data-ttu-id="2f613-120">文件交互的大多数 API 请求将使用以下其中一种基础资源来访问**驱动器**或 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="2f613-120">Most API requests for file interactions will use one of these base resources to access a **Drive** or **DriveItem**.</span></span>
+<span data-ttu-id="94b33-120">文件交互的大多数 API 请求将使用以下其中一种基础资源来访问**驱动器**或 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="94b33-120">Most API requests for file interactions will use one of these base resources to access a **Drive** or **DriveItem**.</span></span>
 
-| <span data-ttu-id="2f613-121">路径</span><span class="sxs-lookup"><span data-stu-id="2f613-121">Path</span></span>    | <span data-ttu-id="2f613-122">资源</span><span class="sxs-lookup"><span data-stu-id="2f613-122">Resource</span></span>    |
+| <span data-ttu-id="94b33-121">路径</span><span class="sxs-lookup"><span data-stu-id="94b33-121">Path</span></span>    | <span data-ttu-id="94b33-122">资源</span><span class="sxs-lookup"><span data-stu-id="94b33-122">Resource</span></span>    |
 |---------|-------------|
-| `/me/drive` | <span data-ttu-id="2f613-123">用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="2f613-123">User's OneDrive</span></span> |
-| `/me/drives` | <span data-ttu-id="2f613-124">枚举用户可用的 OneDrive 资源。</span><span class="sxs-lookup"><span data-stu-id="2f613-124">Enumerate OneDrive resources available to the user.</span></span> |
-| `/drives/{drive-id}` | <span data-ttu-id="2f613-125">通过驱动器 ID 访问特定**驱动器**。</span><span class="sxs-lookup"><span data-stu-id="2f613-125">Access a specific **Drive** by the drive's ID.</span></span> |
-| `/drives/{drive-id}/root/children` | <span data-ttu-id="2f613-126">枚举特定**驱动器**根目录中的 **DriveItem** 资源。</span><span class="sxs-lookup"><span data-stu-id="2f613-126">Enumerate the **DriveItem** resources in the root of a specific **Drive**.</span></span> |
-| `/me/drive/items/{item-id}` | <span data-ttu-id="2f613-127">通过其唯一 ID 访问用户 OneDrive 中的 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="2f613-127">Access a **DriveItem** in the user's OneDrive by its unique ID.</span></span> |
-| `/me/drive/special/{special-id}` | <span data-ttu-id="2f613-128">通过其已知名称访问用户 OneDrive 中的特殊（命名）文件夹。</span><span class="sxs-lookup"><span data-stu-id="2f613-128">Access a special (named) folder in the user's OneDrive by its known name.</span></span> |
-| `/users/{user-id}/drive` | <span data-ttu-id="2f613-129">通过使用用户的唯一标识符访问另一个用户的 OneDrive 。</span><span class="sxs-lookup"><span data-stu-id="2f613-129">Access another user's OneDrive by using the user's unique ID.</span></span> |
-| `/groups/{group-id}/drive` | <span data-ttu-id="2f613-130">通过组的唯一 ID 访问组的默认文档库。</span><span class="sxs-lookup"><span data-stu-id="2f613-130">Access the default document library for a group by the group's unique ID.</span></span> |
-| `/shares/{share-id}` | <span data-ttu-id="2f613-131">通过其 **sharedId** 或共享 URL 访问 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="2f613-131">Access a **DriveItem** by its **sharedId** or sharing URL.</span></span> |
+| `/me/drive` | <span data-ttu-id="94b33-123">用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="94b33-123">User's OneDrive</span></span> |
+| `/me/drives` | <span data-ttu-id="94b33-124">枚举用户可用的 OneDrive 资源。</span><span class="sxs-lookup"><span data-stu-id="94b33-124">Enumerate OneDrive resources available to the user.</span></span> |
+| `/drives/{drive-id}` | <span data-ttu-id="94b33-125">通过驱动器 ID 访问特定**驱动器**。</span><span class="sxs-lookup"><span data-stu-id="94b33-125">Access a specific **Drive** by the drive's ID.</span></span> |
+| `/drives/{drive-id}/root/children` | <span data-ttu-id="94b33-126">枚举特定**驱动器**根目录中的 **DriveItem** 资源。</span><span class="sxs-lookup"><span data-stu-id="94b33-126">Enumerate the **DriveItem** resources in the root of a specific **Drive**.</span></span> |
+| `/me/drive/items/{item-id}` | <span data-ttu-id="94b33-127">通过其唯一 ID 访问用户 OneDrive 中的 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="94b33-127">Access a **DriveItem** in the user's OneDrive by its unique ID.</span></span> |
+| `/me/drive/special/{special-id}` | <span data-ttu-id="94b33-128">通过其已知名称访问用户 OneDrive 中的特殊（命名）文件夹。</span><span class="sxs-lookup"><span data-stu-id="94b33-128">Access a special (named) folder in the user's OneDrive by its known name.</span></span> |
+| `/users/{user-id}/drive` | <span data-ttu-id="94b33-129">通过使用用户的唯一标识符访问另一个用户的 OneDrive 。</span><span class="sxs-lookup"><span data-stu-id="94b33-129">Access another user's OneDrive by using the user's unique ID.</span></span> |
+| `/groups/{group-id}/drive` | <span data-ttu-id="94b33-130">通过组的唯一 ID 访问组的默认文档库。</span><span class="sxs-lookup"><span data-stu-id="94b33-130">Access the default document library for a group by the group's unique ID.</span></span> |
+| `/shares/{share-id}` | <span data-ttu-id="94b33-131">通过其 **sharedId** 或共享 URL 访问 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="94b33-131">Access a **DriveItem** by its **sharedId** or sharing URL.</span></span> |
 
-<span data-ttu-id="2f613-p106">除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。</span><span class="sxs-lookup"><span data-stu-id="2f613-p106">In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource. To address using a path, the colon (`:`) character is used to escape the relative path. This table provides an example of different ways to use the colon character to address an item by path.</span></span>
+<span data-ttu-id="94b33-p106">除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。</span><span class="sxs-lookup"><span data-stu-id="94b33-p106">In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource. To address using a path, the colon (`:`) character is used to escape the relative path. This table provides an example of different ways to use the colon character to address an item by path.</span></span>
 
-| <span data-ttu-id="2f613-135">路径</span><span class="sxs-lookup"><span data-stu-id="2f613-135">Path</span></span> | <span data-ttu-id="2f613-136">资源</span><span class="sxs-lookup"><span data-stu-id="2f613-136">Resource</span></span> |
+| <span data-ttu-id="94b33-135">路径</span><span class="sxs-lookup"><span data-stu-id="94b33-135">Path</span></span> | <span data-ttu-id="94b33-136">资源</span><span class="sxs-lookup"><span data-stu-id="94b33-136">Resource</span></span> |
 |---|---|
-| `/me/drive/root:/path/to/file` | <span data-ttu-id="2f613-137">通过相对于用户的 OneDrive 根文件夹的路径访问 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="2f613-137">Access a **DriveItem** by path relative to the user's OneDrive root folder.</span></span> |
-| `/me/drive/items/{item-id}:/path/to/file` | <span data-ttu-id="2f613-138">通过相对于另一项的路径访问 **DriveItem**（具有**文件夹** facet 的 **DriveItem**）。</span><span class="sxs-lookup"><span data-stu-id="2f613-138">Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet).</span></span> |
-| `/me/drive/root:/path/to/folder:/children` | <span data-ttu-id="2f613-139">通过相对于用户的 OneDrive 根文件夹的路径列出 **DriveItem** 的子项。</span><span class="sxs-lookup"><span data-stu-id="2f613-139">List the children of a **DriveItem** by path relative to the root of the user's OneDrive.</span></span> |
-| `/me/drive/items/{item-id}:/path/to/folder:/children` | <span data-ttu-id="2f613-140">按照相对于另一项的路径列出 **DriveItem** 的子项。</span><span class="sxs-lookup"><span data-stu-id="2f613-140">List the children of a **DriveItem** by path relative to another item.</span></span> |
+| `/me/drive/root:/path/to/file` | <span data-ttu-id="94b33-137">通过相对于用户的 OneDrive 根文件夹的路径访问 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="94b33-137">Access a **DriveItem** by path relative to the user's OneDrive root folder.</span></span> |
+| `/me/drive/items/{item-id}:/path/to/file` | <span data-ttu-id="94b33-138">通过相对于另一项的路径访问 **DriveItem**（具有**文件夹** facet 的 **DriveItem**）。</span><span class="sxs-lookup"><span data-stu-id="94b33-138">Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet).</span></span> |
+| `/me/drive/root:/path/to/folder:/children` | <span data-ttu-id="94b33-139">通过相对于用户的 OneDrive 根文件夹的路径列出 **DriveItem** 的子项。</span><span class="sxs-lookup"><span data-stu-id="94b33-139">List the children of a **DriveItem** by path relative to the root of the user's OneDrive.</span></span> |
+| `/me/drive/items/{item-id}:/path/to/folder:/children` | <span data-ttu-id="94b33-140">按照相对于另一项的路径列出 **DriveItem** 的子项。</span><span class="sxs-lookup"><span data-stu-id="94b33-140">List the children of a **DriveItem** by path relative to another item.</span></span> |
 
-## <a name="drive-resource"></a><span data-ttu-id="2f613-141">驱动器资源</span><span class="sxs-lookup"><span data-stu-id="2f613-141">Drive resource</span></span>
+## <a name="drive-resource"></a><span data-ttu-id="94b33-141">驱动器资源</span><span class="sxs-lookup"><span data-stu-id="94b33-141">Drive resource</span></span>
 
-<span data-ttu-id="2f613-p107">[驱动器资源](drive.md) 是用户的 OneDrive 或 SharePoint 文档库内的顶级对象。几乎所有的文件操作都从查找特定驱动器资源开始。</span><span class="sxs-lookup"><span data-stu-id="2f613-p107">The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library. Nearly all files operations will start by addressing a specific drive resource.</span></span>
+<span data-ttu-id="94b33-p107">[驱动器资源](drive.md) 是用户的 OneDrive 或 SharePoint 文档库内的顶级对象。几乎所有的文件操作都从查找特定驱动器资源开始。</span><span class="sxs-lookup"><span data-stu-id="94b33-p107">The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library. Nearly all files operations will start by addressing a specific drive resource.</span></span>
 
-<span data-ttu-id="2f613-144">可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。 </span><span class="sxs-lookup"><span data-stu-id="2f613-144">A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.</span></span> 
+<span data-ttu-id="94b33-144">可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。 </span><span class="sxs-lookup"><span data-stu-id="94b33-144">A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.</span></span> 
 
-## <a name="driveitem-resource"></a><span data-ttu-id="2f613-145">DriveItem 资源</span><span class="sxs-lookup"><span data-stu-id="2f613-145">DriveItem resource</span></span>
+## <a name="driveitem-resource"></a><span data-ttu-id="94b33-145">DriveItem 资源</span><span class="sxs-lookup"><span data-stu-id="94b33-145">DriveItem resource</span></span>
 
-<span data-ttu-id="2f613-p108">[DriveItems](driveitem.md) 是驱动器文件系统内的对象。访问方法有：使用 `/items/{item-id}` 语法通过其 **id** 访问，或使用 `/root:/path/to/item/` 语法通过其文件系统路径访问。</span><span class="sxs-lookup"><span data-stu-id="2f613-p108">[DriveItems](driveitem.md) are the objects inside a drive's file system. They can be accessed by their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.</span></span>
+<span data-ttu-id="94b33-p108">[DriveItems](driveitem.md) 是驱动器文件系统内的对象。访问方法有：使用 `/items/{item-id}` 语法通过其 **id** 访问，或使用 `/root:/path/to/item/` 语法通过其文件系统路径访问。</span><span class="sxs-lookup"><span data-stu-id="94b33-p108">[DriveItems](driveitem.md) are the objects inside a drive's file system. They can be accessed by their **id** by using `/items/{item-id}` syntax, or by their file system path using the `/root:/path/to/item/` syntax.</span></span>
 
-<span data-ttu-id="2f613-148">DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据。</span><span class="sxs-lookup"><span data-stu-id="2f613-148">DriveItems have _facets_ that provide data about the item's identity and capabilities.</span></span>
+<span data-ttu-id="94b33-148">DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据。</span><span class="sxs-lookup"><span data-stu-id="94b33-148">DriveItems have _facets_ that provide data about the item's identity and capabilities.</span></span>
 
-<span data-ttu-id="2f613-149">具有**文件夹** Facet 的 DriveItem 充当项目的容器，并且具有指向文件夹下的项目集合的**子项**引用。</span><span class="sxs-lookup"><span data-stu-id="2f613-149">DriveItems with a **folder** facet act as containers of items, and have a **children** reference, which points to a collection of items under the folder.</span></span>
+<span data-ttu-id="94b33-149">具有**文件夹** Facet 的 DriveItem 充当项目的容器，并且具有指向文件夹下的项目集合的**子项**引用。</span><span class="sxs-lookup"><span data-stu-id="94b33-149">DriveItems with a **folder** facet act as containers of items, and have a **children** reference, which points to a collection of items under the folder.</span></span>
 
-## <a name="shared-folders-and-remote-items"></a><span data-ttu-id="2f613-150">共享文件夹和远程项目</span><span class="sxs-lookup"><span data-stu-id="2f613-150">Shared folders and remote items</span></span>
+## <a name="shared-folders-and-remote-items"></a><span data-ttu-id="94b33-150">共享文件夹和远程项目</span><span class="sxs-lookup"><span data-stu-id="94b33-150">Shared folders and remote items</span></span>
 
-<span data-ttu-id="2f613-p109">OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="2f613-p109">OneDrive personal users can add one or more shared items from another drive to their own OneDrive. These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.</span></span>
+<span data-ttu-id="94b33-p109">OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。</span><span class="sxs-lookup"><span data-stu-id="94b33-p109">OneDrive personal users can add one or more shared items from another drive to their own OneDrive. These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.</span></span>
 
-<span data-ttu-id="2f613-153">有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。</span><span class="sxs-lookup"><span data-stu-id="2f613-153">For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).</span></span>   
+<span data-ttu-id="94b33-153">有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。</span><span class="sxs-lookup"><span data-stu-id="94b33-153">For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).</span></span>   
 
-## <a name="sharing-and-permissions"></a><span data-ttu-id="2f613-154">共享和权限</span><span class="sxs-lookup"><span data-stu-id="2f613-154">Sharing and permissions</span></span>
+## <a name="sharing-and-permissions"></a><span data-ttu-id="94b33-154">共享和权限</span><span class="sxs-lookup"><span data-stu-id="94b33-154">Sharing and permissions</span></span>
 
-<span data-ttu-id="2f613-p110">OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/driveitem-createlink.md)、[添加权限并发送邀请](../api/driveitem-invite.md) 到驱动器中的项目。</span><span class="sxs-lookup"><span data-stu-id="2f613-p110">One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people. Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.</span></span>
+<span data-ttu-id="94b33-p110">OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/driveitem-createlink.md)、[添加权限并发送邀请](../api/driveitem-invite.md) 到驱动器中的项目。</span><span class="sxs-lookup"><span data-stu-id="94b33-p110">One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people. Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.</span></span>
 
-<span data-ttu-id="2f613-157">Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。</span><span class="sxs-lookup"><span data-stu-id="2f613-157">Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.</span></span>
+<span data-ttu-id="94b33-157">Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。</span><span class="sxs-lookup"><span data-stu-id="94b33-157">Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.</span></span>
 
  

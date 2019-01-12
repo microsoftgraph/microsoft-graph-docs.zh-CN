@@ -3,31 +3,32 @@ title: 列表 windows10ImportedPFXCertificateProfiles
 description: 列出属性和 windows10ImportedPFXCertificateProfile 对象之间的关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50fd152c9705b573d4e5905681e4721652d95a18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 866e5874fc33083c810140964cf22c7db85ae24c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832240"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916010"
 ---
-# <a name="list-windows10importedpfxcertificateprofiles"></a><span data-ttu-id="6636f-103">列表 windows10ImportedPFXCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="6636f-103">List windows10ImportedPFXCertificateProfiles</span></span>
+# <a name="list-windows10importedpfxcertificateprofiles"></a><span data-ttu-id="5ac79-103">列表 windows10ImportedPFXCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="5ac79-103">List windows10ImportedPFXCertificateProfiles</span></span>
 
-> <span data-ttu-id="6636f-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6636f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6636f-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6636f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5ac79-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="5ac79-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5ac79-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5ac79-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6636f-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="6636f-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5ac79-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="5ac79-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6636f-107">列出属性和[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象之间的关系。</span><span class="sxs-lookup"><span data-stu-id="6636f-107">List properties and relationships of the [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6636f-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="6636f-108">Prerequisites</span></span>
-<span data-ttu-id="6636f-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="6636f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ac79-107">列出属性和[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象之间的关系。</span><span class="sxs-lookup"><span data-stu-id="5ac79-107">List properties and relationships of the [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5ac79-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="5ac79-108">Prerequisites</span></span>
+<span data-ttu-id="5ac79-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+</span><span class="sxs-lookup"><span data-stu-id="5ac79-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6636f-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6636f-111">Permission type</span></span>|<span data-ttu-id="6636f-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6636f-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5ac79-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ac79-111">Permission type</span></span>|<span data-ttu-id="5ac79-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5ac79-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6636f-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6636f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6636f-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6636f-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="6636f-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6636f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6636f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6636f-116">Not supported.</span></span>|
-|<span data-ttu-id="6636f-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6636f-117">Application</span></span>|<span data-ttu-id="6636f-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="6636f-118">Not supported.</span></span>|
+|<span data-ttu-id="5ac79-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ac79-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5ac79-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5ac79-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="5ac79-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ac79-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5ac79-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ac79-116">Not supported.</span></span>|
+|<span data-ttu-id="5ac79-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ac79-117">Application</span></span>|<span data-ttu-id="5ac79-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ac79-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6636f-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6636f-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ac79-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ac79-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,27 +38,27 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6636f-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6636f-120">Request headers</span></span>
-|<span data-ttu-id="6636f-121">标头</span><span class="sxs-lookup"><span data-stu-id="6636f-121">Header</span></span>|<span data-ttu-id="6636f-122">值</span><span class="sxs-lookup"><span data-stu-id="6636f-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5ac79-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ac79-120">Request headers</span></span>
+|<span data-ttu-id="5ac79-121">标头</span><span class="sxs-lookup"><span data-stu-id="5ac79-121">Header</span></span>|<span data-ttu-id="5ac79-122">值</span><span class="sxs-lookup"><span data-stu-id="5ac79-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6636f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6636f-123">Authorization</span></span>|<span data-ttu-id="6636f-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6636f-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6636f-125">Accept</span><span class="sxs-lookup"><span data-stu-id="6636f-125">Accept</span></span>|<span data-ttu-id="6636f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6636f-126">application/json</span></span>|
+|<span data-ttu-id="5ac79-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ac79-123">Authorization</span></span>|<span data-ttu-id="5ac79-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5ac79-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5ac79-125">Accept</span><span class="sxs-lookup"><span data-stu-id="5ac79-125">Accept</span></span>|<span data-ttu-id="5ac79-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5ac79-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6636f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6636f-127">Request body</span></span>
-<span data-ttu-id="6636f-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6636f-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ac79-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ac79-127">Request body</span></span>
+<span data-ttu-id="5ac79-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5ac79-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6636f-129">响应</span><span class="sxs-lookup"><span data-stu-id="6636f-129">Response</span></span>
-<span data-ttu-id="6636f-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="6636f-130">If successful, this method returns a `200 OK` response code and a collection of [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5ac79-129">响应</span><span class="sxs-lookup"><span data-stu-id="5ac79-129">Response</span></span>
+<span data-ttu-id="5ac79-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="5ac79-130">If successful, this method returns a `200 OK` response code and a collection of [windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6636f-131">示例</span><span class="sxs-lookup"><span data-stu-id="6636f-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6636f-132">请求</span><span class="sxs-lookup"><span data-stu-id="6636f-132">Request</span></span>
-<span data-ttu-id="6636f-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6636f-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5ac79-131">示例</span><span class="sxs-lookup"><span data-stu-id="5ac79-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="5ac79-132">请求</span><span class="sxs-lookup"><span data-stu-id="5ac79-132">Request</span></span>
+<span data-ttu-id="5ac79-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ac79-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="6636f-134">响应</span><span class="sxs-lookup"><span data-stu-id="6636f-134">Response</span></span>
-<span data-ttu-id="6636f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6636f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5ac79-134">响应</span><span class="sxs-lookup"><span data-stu-id="5ac79-134">Response</span></span>
+<span data-ttu-id="5ac79-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5ac79-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
