@@ -3,12 +3,13 @@ title: 获取 windowsUniversalAppX
 description: 读取 windowsUniversalAppX 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a31c9e6303c26fe9bcc19629b740edcafea271e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7b4518f773edba7fbbd59cda326a9054352d3383
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863775"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926062"
 ---
 # <a name="get-windowsuniversalappx"></a>获取 windowsUniversalAppX
 

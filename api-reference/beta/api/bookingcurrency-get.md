@@ -2,12 +2,14 @@
 title: 获取 bookingCurrency
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 3b39b6ba83f77f9b47661e3bf4a98330b5f7ee0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: f408ab0110de5124bb4154d0107c801b026de29a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855060"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926349"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 

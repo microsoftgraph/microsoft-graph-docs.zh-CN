@@ -3,12 +3,13 @@ title: 获取 iosCompliancePolicy
 description: 读取 iosCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8c5ed3263a85b9f1fa2ddf9c2b10e77fa8fa8f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c6559e84bf44daca66bc6260a971c56d2d3c4dbc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877859"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924585"
 ---
 # <a name="get-ioscompliancepolicy"></a>获取 iosCompliancePolicy
 

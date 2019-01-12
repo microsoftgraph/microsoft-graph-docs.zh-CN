@@ -3,12 +3,13 @@ title: keyValuePair 资源类型
 description: 用于存储自定义设置的键值对
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44f1765fb4f03a287665fe4ed1faef7012a43459
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: db3e24c1c14cb208be66b7a2b0364ad12b162956
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805892"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926440"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 

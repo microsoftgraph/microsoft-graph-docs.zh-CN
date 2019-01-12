@@ -3,12 +3,13 @@ title: 获取图表
 description: 检索 chart 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c6ece5772bca7c59be949e617b665d30969a5890
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7d81312cac63f17a69ec9076287209a67c0a1f23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858000"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926370"
 ---
 # <a name="get-chart"></a>获取图表
 

@@ -3,12 +3,13 @@ title: outlookTaskGroup 资源类型
 description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件夹 (outlookTaskFolder) 组。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d1392e07f76d508fe30307294a54429a692f34e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878769"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923906"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup 资源类型
 

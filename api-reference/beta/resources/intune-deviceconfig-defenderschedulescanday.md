@@ -3,12 +3,13 @@ title: defenderScheduleScanDay 枚举类型
 description: 'DefenderScheduleScanDay 的可能值 '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2fd7bd34ddda9adabb774dda849926b980136d54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 51d7fa5a51cc0adda7e0ce6bcaa9c01a3d2fa607
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820830"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924347"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>defenderScheduleScanDay 枚举类型
 

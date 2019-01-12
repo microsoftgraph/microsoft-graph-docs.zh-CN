@@ -3,12 +3,13 @@ title: 删除 enrollmentTroubleshootingEvent
 description: 删除 enrollmentTroubleshootingEvent。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c9c9055c2b3e64c37729859dbc26d71f26c9fa3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 91954f541d0508ea18d6a96012cd7cd01acc3531
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816203"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925439"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>删除 enrollmentTroubleshootingEvent
 

@@ -2,12 +2,13 @@
 title: yammerActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: d7869869466dc785b92db23f8b574eb2e77dd786
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d24e21c9525d49b7af5f8c4efaddd606c20c162b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923031"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 

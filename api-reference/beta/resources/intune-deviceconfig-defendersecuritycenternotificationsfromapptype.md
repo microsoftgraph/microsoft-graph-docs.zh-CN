@@ -3,12 +3,13 @@ title: defenderSecurityCenterNotificationsFromAppType 枚举类型
 description: DefenderSecurityCenterNotificationsFromApp 的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c44cb63fb18f60fa94171d7fe6cfe56d99b97672
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e979b7c1a1a0e823e55899a121a2a9304cbe8f02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924417"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 枚举类型
 

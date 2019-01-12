@@ -3,12 +3,13 @@ title: 更新邮件
 description: 更新 message 对象的属性。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 24705fbf986f9ecf1142e66d189ae2071e1be223
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: c3564d5f48cb3b3e12e18a07d605fcd3eba01291
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884782"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922541"
 ---
 # <a name="update-message"></a>更新邮件
 

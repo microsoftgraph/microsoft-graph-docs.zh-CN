@@ -2,12 +2,14 @@
 title: teamGuestSettings 资源类型
 description: 要配置的是否来宾可以创建、 更新或删除通道团队中的设置。
 localization_priority: Normal
-ms.openlocfilehash: f0947101fc8de83d1a56ffa922d9b1e2d79d520f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: cb6e83093945a96784bfb91a76bc343a8c13d0ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924368"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 

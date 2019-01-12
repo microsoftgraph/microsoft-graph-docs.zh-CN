@@ -2,12 +2,14 @@
 title: locationManagementCondition 资源类型
 description: 包含定义位置管理条件，感兴趣，要监视的领域的信息。
 localization_priority: Normal
-ms.openlocfilehash: 85d3b638c81990a98623501b8dcb3ad0705f2e6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 541cf74decad641f6dc7751945e1d0ffceee1366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922975"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>locationManagementCondition 资源类型
 

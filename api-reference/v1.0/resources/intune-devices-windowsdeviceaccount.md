@@ -3,12 +3,13 @@ title: windowsDeviceAccount 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf5a6d1619ffe83c33551ac40de20a16c7ff50ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 691a49cee7d2ed9a1eb89088c9060d4c2973e7d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882661"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926321"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 

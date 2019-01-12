@@ -2,12 +2,14 @@
 title: 创建 outlookTask
 description: 创建 Outlook 任务中的默认任务组 (`My Tasks`) 和默认任务文件夹 (`Tasks`) 用户的邮箱中。
 localization_priority: Normal
-ms.openlocfilehash: c158af6ac5125bb410bcbe57a1cb26b8cd955e28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 04cc91f9c6eee09f71783d0548470d167911ec91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925593"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 

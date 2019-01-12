@@ -3,12 +3,13 @@ title: 创建 mobileAppProvisioningConfigGroupAssignment
 description: 创建新的 mobileAppProvisioningConfigGroupAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d08b5001f5c9ef8abc42085fb9840f726ede4446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838036"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925488"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>创建 mobileAppProvisioningConfigGroupAssignment
 

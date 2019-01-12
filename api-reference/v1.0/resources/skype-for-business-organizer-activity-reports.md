@@ -2,12 +2,13 @@
 title: Skype for Business 组织者活动报表
 description: Skype for Business 组织者活动报表可用于获取整个组织中组织会议活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 localization_priority: Normal
-ms.openlocfilehash: 3b0d9943ab2ec73cadd7984c383f79582b084a32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 6a429e2b446e5f2ec32770a2b17caf5e6567556e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926601"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Skype for Business 组织者活动报表
 

@@ -3,12 +3,13 @@ title: deviceConfigurationDeviceActivity 函数
 description: 设备配置设备活动报告的元数据
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7bbe0531df6f4a975fd9192838339ca424650c04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4de84b71ba5d2e900d54c02fba965fd28e07c00a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925523"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 

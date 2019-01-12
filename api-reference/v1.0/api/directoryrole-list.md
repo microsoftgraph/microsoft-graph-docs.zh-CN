@@ -3,12 +3,13 @@ title: 列出 directoryRole
 description: 列出租户中激活的目录角色。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: ab9159b6209122e88ace271ca9a6df0c4daad4f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: eeb5db6db8ffabba9c45fb4e5b68505be1d4ac5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811352"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922814"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRole
 

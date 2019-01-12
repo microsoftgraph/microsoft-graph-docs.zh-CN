@@ -3,12 +3,13 @@ title: 创建 managedAndroidLobApp
 description: 创建新的 managedAndroidLobApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d3fc6ab24162b63a79a3d0844cd2b8cdb91e0cb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7200015c9937d604da5dfd39c74a0a556c172cbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853792"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922751"
 ---
 # <a name="create-managedandroidlobapp"></a>创建 managedAndroidLobApp
 

@@ -3,12 +3,13 @@ title: 删除 managedEBookAssignment
 description: 删除 managedEBookAssignment。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 504b97887d5b8016d30e7f26490f171114c6ffbd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bc8debd53c3c2bcdb8200c7bd2de39a701961400
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926748"
 ---
 # <a name="delete-managedebookassignment"></a>删除 managedEBookAssignment
 

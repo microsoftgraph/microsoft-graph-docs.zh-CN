@@ -3,12 +3,13 @@ title: 更新 chartlineformat
 description: 更新 chartlineformat 对象的属性。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 55a95e9accee468eb944ff46994c73ca2653ed30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: fac999f0c238d7b0769ae95238d452786556a1de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922695"
 ---
 # <a name="update-chartlineformat"></a>更新 chartlineformat
 

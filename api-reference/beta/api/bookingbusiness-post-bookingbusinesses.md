@@ -2,12 +2,14 @@
 title: 创建 bookingBusiness
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: bfecb479a04f991799eb239c643e2cc521d8332c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: aa5c4b9eaa2426736d23f42856d19ab14e6a1a43
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922317"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 

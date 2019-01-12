@@ -3,12 +3,13 @@ title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97457b82bb74891ef4d709809efcae2d171df670
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 571a39b343930a7ade182c764229541f00d0b1eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830406"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921155"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 

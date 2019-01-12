@@ -3,12 +3,13 @@ title: 'RangeFill: clear'
 description: 重置范围背景。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 2fbe387ea285ca9737bebc5010fe53c020c78e82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 12d5c67db662f54de94b5bc3d00eab5b275ffe9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890725"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921918"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 

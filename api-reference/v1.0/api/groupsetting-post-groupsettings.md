@@ -2,12 +2,14 @@
 title: 创建组设置
 description: 根据 groupSettingTemplates 中提供的模板，使用此 API 创建新设置。这些设置可设置为租户级别或组级别。创建请求必须为模板中定义的所有设置提供 settingValues。对于组特定设置，仅可以设置管理组成员是否可以邀请来宾用户的设置。通常将来宾用户添加到群组的功能可用后，该操作将管理此行为。
 localization_priority: Normal
-ms.openlocfilehash: c5ba428380e6503f8d54682709d36e12b7ff4de3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e87e34f5816818c25cef5768c08ab8f7c73a3a0f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923143"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 

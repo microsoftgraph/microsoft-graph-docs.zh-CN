@@ -3,12 +3,13 @@ author: chackman
 ms.author: chackman
 title: 按照驱动器项目
 localization_priority: Normal
-ms.openlocfilehash: 5ba37773f552015b6c762b2b10d801b40670a03c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 2323511604937366e9fd69c24f369523e5e6aebc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926188"
 ---
 # <a name="follow-drive-item"></a>按照驱动器项目
 

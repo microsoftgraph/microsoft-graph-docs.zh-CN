@@ -3,12 +3,13 @@ title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 36abbe4451a6e053387b27fce3e9a4e25dcc1a95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fc6f3f2db68273097d70ba9dccc6844b86afa3f6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923885"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 

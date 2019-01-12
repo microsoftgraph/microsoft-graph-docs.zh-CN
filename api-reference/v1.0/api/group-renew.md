@@ -2,12 +2,14 @@
 title: 'group: renew'
 description: 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 localization_priority: Normal
-ms.openlocfilehash: 401a1ff278be792b5e19af415e11a865e3a86bb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 46a51d0a1d4bea5cebc4c3178f6776d80f313fbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849348"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922730"
 ---
 # <a name="group-renew"></a>group: renew
 

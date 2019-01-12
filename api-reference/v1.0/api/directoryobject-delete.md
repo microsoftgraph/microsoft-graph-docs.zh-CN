@@ -3,12 +3,13 @@ title: 删除 directoryObject
 description: 删除 directoryObject。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 2c63600ba400041ebf420d5502e14af4a8cd75a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3fccafa016dad9892c701e852bc592564661c9cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926811"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
