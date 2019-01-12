@@ -3,48 +3,49 @@ title: 组：resetUnseenCount
 description: 重置的上次访问后没有发现当前用户的所有帖子 unseenCount。 Office 365 组仅支持。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 29102945e5a549db737cc94453ea4114b82a4dde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3d85dc82efd67311b81d69f2f99e63c47155f15a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853891"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926279"
 ---
-# <a name="group-resetunseencount"></a><span data-ttu-id="e6933-104">组：resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="e6933-104">group: resetUnseenCount</span></span>
+# <a name="group-resetunseencount"></a><span data-ttu-id="fbe13-104">组：resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="fbe13-104">group: resetUnseenCount</span></span>
 
-> <span data-ttu-id="e6933-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e6933-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e6933-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e6933-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fbe13-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="fbe13-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fbe13-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fbe13-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e6933-107">重置的上次访问后没有发现当前用户的所有帖子 unseenCount。</span><span class="sxs-lookup"><span data-stu-id="e6933-107">Reset the unseenCount of all the posts that the current user has not seen since their last visit.</span></span> <span data-ttu-id="e6933-108">Office 365 组仅支持。</span><span class="sxs-lookup"><span data-stu-id="e6933-108">Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="fbe13-107">重置的上次访问后没有发现当前用户的所有帖子 unseenCount。</span><span class="sxs-lookup"><span data-stu-id="fbe13-107">Reset the unseenCount of all the posts that the current user has not seen since their last visit.</span></span> <span data-ttu-id="fbe13-108">Office 365 组仅支持。</span><span class="sxs-lookup"><span data-stu-id="fbe13-108">Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e6933-109">权限</span><span class="sxs-lookup"><span data-stu-id="e6933-109">Permissions</span></span>
-<span data-ttu-id="e6933-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e6933-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fbe13-109">权限</span><span class="sxs-lookup"><span data-stu-id="fbe13-109">Permissions</span></span>
+<span data-ttu-id="fbe13-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fbe13-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e6933-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="e6933-112">Permission type</span></span>      | <span data-ttu-id="e6933-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e6933-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fbe13-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="fbe13-112">Permission type</span></span>      | <span data-ttu-id="fbe13-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fbe13-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e6933-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e6933-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e6933-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6933-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e6933-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e6933-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6933-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e6933-117">Not supported.</span></span>    |
-|<span data-ttu-id="e6933-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="e6933-118">Application</span></span> | <span data-ttu-id="e6933-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="e6933-119">Not supported.</span></span> |
+|<span data-ttu-id="fbe13-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fbe13-114">Delegated (work or school account)</span></span> | <span data-ttu-id="fbe13-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fbe13-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fbe13-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fbe13-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbe13-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="fbe13-117">Not supported.</span></span>    |
+|<span data-ttu-id="fbe13-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="fbe13-118">Application</span></span> | <span data-ttu-id="fbe13-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="fbe13-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e6933-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e6933-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fbe13-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fbe13-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/resetUnseenCount
 ```
-## <a name="request-headers"></a><span data-ttu-id="e6933-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="e6933-121">Request headers</span></span>
-| <span data-ttu-id="e6933-122">标头</span><span class="sxs-lookup"><span data-stu-id="e6933-122">Header</span></span>       | <span data-ttu-id="e6933-123">值</span><span class="sxs-lookup"><span data-stu-id="e6933-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="fbe13-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="fbe13-121">Request headers</span></span>
+| <span data-ttu-id="fbe13-122">标头</span><span class="sxs-lookup"><span data-stu-id="fbe13-122">Header</span></span>       | <span data-ttu-id="fbe13-123">值</span><span class="sxs-lookup"><span data-stu-id="fbe13-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e6933-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e6933-124">Authorization</span></span>  | <span data-ttu-id="e6933-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e6933-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e6933-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="e6933-127">Prefer</span></span> | <span data-ttu-id="e6933-128">return=minimal。</span><span class="sxs-lookup"><span data-stu-id="e6933-128">return=minimal.</span></span> <span data-ttu-id="e6933-129">如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="e6933-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="e6933-130">可选。</span><span class="sxs-lookup"><span data-stu-id="e6933-130">Optional.</span></span>  | 
+| <span data-ttu-id="fbe13-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbe13-124">Authorization</span></span>  | <span data-ttu-id="fbe13-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fbe13-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="fbe13-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="fbe13-127">Prefer</span></span> | <span data-ttu-id="fbe13-128">return=minimal。</span><span class="sxs-lookup"><span data-stu-id="fbe13-128">return=minimal.</span></span> <span data-ttu-id="fbe13-129">如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="fbe13-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="fbe13-130">可选。</span><span class="sxs-lookup"><span data-stu-id="fbe13-130">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="e6933-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="e6933-131">Request body</span></span>
-<span data-ttu-id="e6933-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e6933-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fbe13-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="fbe13-131">Request body</span></span>
+<span data-ttu-id="fbe13-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fbe13-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e6933-133">响应</span><span class="sxs-lookup"><span data-stu-id="e6933-133">Response</span></span>
-<span data-ttu-id="e6933-p107">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e6933-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fbe13-133">响应</span><span class="sxs-lookup"><span data-stu-id="fbe13-133">Response</span></span>
+<span data-ttu-id="fbe13-p107">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="fbe13-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e6933-136">示例</span><span class="sxs-lookup"><span data-stu-id="e6933-136">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="e6933-137">请求</span><span class="sxs-lookup"><span data-stu-id="e6933-137">Request</span></span>
-<span data-ttu-id="e6933-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e6933-138">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fbe13-136">示例</span><span class="sxs-lookup"><span data-stu-id="fbe13-136">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="fbe13-137">请求</span><span class="sxs-lookup"><span data-stu-id="fbe13-137">Request</span></span>
+<span data-ttu-id="fbe13-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fbe13-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -53,8 +54,8 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 ```
 
-#### <a name="response"></a><span data-ttu-id="e6933-139">响应</span><span class="sxs-lookup"><span data-stu-id="e6933-139">Response</span></span>
-<span data-ttu-id="e6933-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e6933-140">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="fbe13-139">响应</span><span class="sxs-lookup"><span data-stu-id="fbe13-139">Response</span></span>
+<span data-ttu-id="fbe13-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fbe13-140">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

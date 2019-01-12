@@ -3,54 +3,55 @@ title: 选项卡添加到频道
 description: '将 (pin) 添加到指定的通道团队中的一个选项卡。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 13fbe0c259b990e2731e2ea6876ec94585e09978
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ce91b841ab8eeaaec3811382c55f8debba99ce31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921162"
 ---
-# <a name="add-tab-to-channel"></a><span data-ttu-id="c25c8-103">选项卡添加到频道</span><span class="sxs-lookup"><span data-stu-id="c25c8-103">Add tab to channel</span></span>
+# <a name="add-tab-to-channel"></a><span data-ttu-id="cdd12-103">选项卡添加到频道</span><span class="sxs-lookup"><span data-stu-id="cdd12-103">Add tab to channel</span></span>
 
 
 
-<span data-ttu-id="c25c8-104">将 (pin) 添加到[团队](../resources/team.md)中指定的[频道](../resources/channel.md)一个[选项卡](../resources/teamstab.md)。</span><span class="sxs-lookup"><span data-stu-id="c25c8-104">Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> <span data-ttu-id="c25c8-105">相应的应用程序已必须[安装在工作组中](../api/teamsappinstallation-add.md)。</span><span class="sxs-lookup"><span data-stu-id="c25c8-105">The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).</span></span>
+<span data-ttu-id="cdd12-104">将 (pin) 添加到[团队](../resources/team.md)中指定的[频道](../resources/channel.md)一个[选项卡](../resources/teamstab.md)。</span><span class="sxs-lookup"><span data-stu-id="cdd12-104">Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> <span data-ttu-id="cdd12-105">相应的应用程序已必须[安装在工作组中](../api/teamsappinstallation-add.md)。</span><span class="sxs-lookup"><span data-stu-id="cdd12-105">The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c25c8-106">权限</span><span class="sxs-lookup"><span data-stu-id="c25c8-106">Permissions</span></span>
-<span data-ttu-id="c25c8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c25c8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdd12-106">权限</span><span class="sxs-lookup"><span data-stu-id="cdd12-106">Permissions</span></span>
+<span data-ttu-id="cdd12-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cdd12-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c25c8-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c25c8-109">Permission type</span></span>      | <span data-ttu-id="c25c8-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c25c8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cdd12-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="cdd12-109">Permission type</span></span>      | <span data-ttu-id="cdd12-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cdd12-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c25c8-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c25c8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c25c8-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c25c8-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c25c8-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c25c8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c25c8-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c25c8-114">Not supported.</span></span>    |
-| <span data-ttu-id="c25c8-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="c25c8-115">Application</span></span>                            | <span data-ttu-id="c25c8-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c25c8-116">Group.ReadWrite.All</span></span>                         |
+|<span data-ttu-id="cdd12-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cdd12-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cdd12-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdd12-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cdd12-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cdd12-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdd12-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="cdd12-114">Not supported.</span></span>    |
+| <span data-ttu-id="cdd12-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="cdd12-115">Application</span></span>                            | <span data-ttu-id="cdd12-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdd12-116">Group.ReadWrite.All</span></span>                         |
 
-> <span data-ttu-id="c25c8-117">**注意**： 此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="c25c8-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="c25c8-118">全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。</span><span class="sxs-lookup"><span data-stu-id="c25c8-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="cdd12-117">**注意**： 此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="cdd12-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="cdd12-118">全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。</span><span class="sxs-lookup"><span data-stu-id="cdd12-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c25c8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c25c8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdd12-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cdd12-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/tabs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c25c8-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c25c8-120">Request headers</span></span>
-| <span data-ttu-id="c25c8-121">标头</span><span class="sxs-lookup"><span data-stu-id="c25c8-121">Header</span></span>       | <span data-ttu-id="c25c8-122">值</span><span class="sxs-lookup"><span data-stu-id="c25c8-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cdd12-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cdd12-120">Request headers</span></span>
+| <span data-ttu-id="cdd12-121">标头</span><span class="sxs-lookup"><span data-stu-id="cdd12-121">Header</span></span>       | <span data-ttu-id="cdd12-122">值</span><span class="sxs-lookup"><span data-stu-id="cdd12-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c25c8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c25c8-123">Authorization</span></span>  | <span data-ttu-id="c25c8-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c25c8-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cdd12-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdd12-123">Authorization</span></span>  | <span data-ttu-id="cdd12-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cdd12-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c25c8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c25c8-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdd12-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cdd12-126">Request body</span></span>
 
-<span data-ttu-id="c25c8-127">[TeamsTab](../resources/teamstab.md)。</span><span class="sxs-lookup"><span data-stu-id="c25c8-127">A [teamsTab](../resources/teamstab.md).</span></span>
+<span data-ttu-id="cdd12-127">[TeamsTab](../resources/teamstab.md)。</span><span class="sxs-lookup"><span data-stu-id="cdd12-127">A [teamsTab](../resources/teamstab.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="c25c8-128">响应</span><span class="sxs-lookup"><span data-stu-id="c25c8-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cdd12-128">响应</span><span class="sxs-lookup"><span data-stu-id="cdd12-128">Response</span></span>
 
-<span data-ttu-id="c25c8-129">如果成功，此方法返回 `201 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="c25c8-129">If successful, this method returns a `201 OK` response code.</span></span>
+<span data-ttu-id="cdd12-129">如果成功，此方法返回 `201 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="cdd12-129">If successful, this method returns a `201 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c25c8-130">示例</span><span class="sxs-lookup"><span data-stu-id="c25c8-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cdd12-130">示例</span><span class="sxs-lookup"><span data-stu-id="cdd12-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c25c8-131">请求</span><span class="sxs-lookup"><span data-stu-id="c25c8-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cdd12-131">请求</span><span class="sxs-lookup"><span data-stu-id="cdd12-131">Request</span></span>
 
-<span data-ttu-id="c25c8-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c25c8-132">The following is an example of the request.</span></span>
+<span data-ttu-id="cdd12-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="cdd12-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -69,9 +70,9 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c25c8-133">响应</span><span class="sxs-lookup"><span data-stu-id="c25c8-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cdd12-133">响应</span><span class="sxs-lookup"><span data-stu-id="cdd12-133">Response</span></span>
 
-<span data-ttu-id="c25c8-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c25c8-134">The following is an example of the response.</span></span> <span data-ttu-id="c25c8-135">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="c25c8-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c25c8-136">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c25c8-136">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cdd12-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="cdd12-134">The following is an example of the response.</span></span> <span data-ttu-id="cdd12-135">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="cdd12-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cdd12-136">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cdd12-136">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -96,9 +97,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c25c8-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c25c8-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cdd12-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cdd12-137">See also</span></span>
 
-[<span data-ttu-id="c25c8-138">配置到内置选项卡的类型</span><span class="sxs-lookup"><span data-stu-id="c25c8-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+[<span data-ttu-id="cdd12-138">配置到内置选项卡的类型</span><span class="sxs-lookup"><span data-stu-id="cdd12-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
