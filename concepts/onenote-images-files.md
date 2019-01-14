@@ -1,13 +1,15 @@
 ---
 title: 将图像、视频和文件添加到 OneNote 页面
 description: " Office 365 上的企业级笔记本"
-author: Jewan-microsoft
-ms.openlocfilehash: afe9db12800f239b17e3e1ad3045ba2b0f1bd11f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Priority
+ms.prod: onenote
+ms.openlocfilehash: b2eee772a69270e8b88a8d998af27fa892df5eb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961720"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
