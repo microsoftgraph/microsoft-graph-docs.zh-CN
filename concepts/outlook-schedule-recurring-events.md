@@ -4,12 +4,12 @@ description: 定期事件是 Outlook 日历的重要组成部分。 无论是与
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 27c407ccd288323866fbd6599050f0036b9d363d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961790"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016763"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>在 Outlook 中将重复约会安排为定期事件
 
@@ -203,7 +203,7 @@ ms.locfileid: "27961790"
 | **index** | 可选 | 指定事件在 **daysOfsWeek** 中指定的允许天数的哪个实例上发生，从当月的第一个实例开始计数。 可能的值是：`first`、`second`、`third`、`fourth` 和 `last`。 默认值为：`first`。 |
 | **month** | 必需 | 指定事件发生的月份。 |
 | **interval** | 必需 | 指定每次事件之间的年数。 |
-| **type** | 必需 | 必须设置为 `relativeMonthly`。 |
+| **type** | 必需 | 必须设置为 `relativeYearly`。 |
 
 #### <a name="examples"></a>示例
 
