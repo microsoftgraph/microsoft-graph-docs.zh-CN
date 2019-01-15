@@ -3,12 +3,13 @@ title: 获取选项卡
 description: '检索的属性和指定的选项卡的关系。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: ff4fe753a087870b2f8562669b23045a34af6465
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: dd23ffc6bcfdeb8821e2227331e2be801f348ce8
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829962"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016672"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -51,7 +52,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 

@@ -4,12 +4,12 @@ description: '在 Azure AD 中访问审阅功能，检索 accessReview 对象。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be946e07a7714dc744847d73ee49718237fac92e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a13776b9aa215d752797b6ba2de2f477660ed31d
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926657"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016657"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -26,7 +26,7 @@ ms.locfileid: "27926657"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录的用户也必须在目录角色，它允许他们阅读访问审阅，或作为上访问审阅审阅者分配。 |
+|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录的用户也必须在允许他们阅读访问审阅，或作为上访问审阅审阅者分配的目录角色。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -77,16 +77,23 @@ Content-type: application/json
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "reviewerType": "self",
     "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
-        "reviewId": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
         "mailNotificationsEnabled": true,
         "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
         "recurrenceSettings": {
             "recurrenceType": "onetime",
             "recurrenceEndType": "endBy",
             "durationInDays": 0,
             "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
         }
     }
 }

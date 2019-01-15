@@ -4,12 +4,12 @@ description: '存档指定的团队。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a9a2d7c3994d3b1d3e96c1c7f4d16195bb135ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c7ac186eeb937b1dda0b1df4878260e61fe30b18
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961405"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016637"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -66,7 +66,7 @@ POST /teams/{id}/archive
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/archive
+POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### <a name="response"></a>响应
 下面是响应的示例。

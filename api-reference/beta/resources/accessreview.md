@@ -2,12 +2,14 @@
 title: accessReview 资源类型
 description: '在 Azure AD 中访问审阅功能，`accessReview`代表访问审阅。  '
 localization_priority: Normal
-ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826073"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016735"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -34,7 +36,7 @@ ms.locfileid: "27826073"
 |[重置 accessReview 决策](../api/accessreview-reset.md) |     无。   |   重置正在进行 accessReview 决策。|
 |[应用 accessReview 决策](../api/accessreview-apply.md) |     无。   |   应用已完成 accessReview 从的决策。|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -44,18 +46,18 @@ ms.locfileid: "27826073"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 功能分配的唯一标识符访问审阅。 |
 | `displayName`             |`String`                                                        | 访问审阅名称。 所需在创建。 |
 | `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这可能是在将来的日期。  所需在创建。 |
 | `endDateTime`             |`DateTimeOffset`                                                | 审阅安排结束时 DateTime。 这必须是至少一个日期晚于开始日期。  所需在创建。 |
-| `status`                  |`String`                                                        | 此只读字段指定 accessReview 的当前状态。 典型的状态包括`Initializing`， `NotStarted`， `Starting`，`InProgress`， `Completing`， `Completed`， `AutoReviewing`，和`AutoReviewed`。 |
+| `status`                  |`String`                                                        | 此只读字段指定 accessReview 的状态。 典型的状态包括`Initializing`， `NotStarted`， `Starting`，`InProgress`， `Completing`， `Completed`， `AutoReviewing`，和`AutoReviewed`。 |
 | `description`             |`String`                                                        | 访问审阅创建者提供，向审阅者显示说明。 |
 | `businessFlowTemplateId`  |`String`                                                        | 业务流程模板标识符。 所需在创建。 |
-| `reviewerType`            |`String`                                                        | 对目标对象，之一的审阅者的关系类型`self`，`delegate`或`entityOwners`。 所需在创建。 | 
+| `reviewerType`            |`String`                                                        | 对目标对象，之一的审阅者的关系类型`self`，`delegated`或`entityOwners`。 所需在创建。 | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | 创建此审查的用户。 |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | 访问权限分配，如用户迁移到一组的成员身份或分配用户迁移到应用程序的访问其审阅的对象。 所需在创建。 | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其 access 会检查该对象查看的访问权限分配。 这可以在组中，用户组的成员身份的审阅或应用程序的用户迁移到应用程序的工作分配回顾。 所需在创建。 | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview 的设置，，请参阅下面的类型定义。 |
 
 
@@ -65,14 +67,14 @@ ms.locfileid: "27826073"
 
 
 
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 | `reviewers`               |[userIdentity](useridentity.md)集合                     | 访问审阅，如果访问审阅 reviewerType 的类型的审阅者的集合`delegate`。 |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md)集合 | 此访问审查的决策的集合。 |
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md)集合 | 呼叫者，呼叫者是否审阅者的决策的集合。 |
 | `instances`               |[accessReview](accessreview.md)集合         | 访问评论一实例过去、 存在和未来，如果此对象是定期访问回顾。 |
 
-是否存在对某个对象的关系，依赖于对象是否是一次性访问回顾、 的一系列定期访问审阅或定期访问回顾的实例。
+是否在对象上存在这些关系，取决于对象是否是一次性访问回顾、 的一系列定期访问审阅或定期访问回顾的实例。
 
 | 应用场景 | 有审阅者？ | 具有决策和 myDecisions？ | 具有实例？ |
 |:---------|:---------------|:---------------|:---------------|
@@ -114,7 +116,7 @@ ms.locfileid: "27826073"
 
 `accessReviewSettings`创建访问检查，以控制时开始访问审阅功能行为时提供其他设置。  此类型具有以下属性： 
 
-| 属性                     | 类型                      | Description |
+| 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | 用于指示是否启用将邮件发送给审阅者和审阅创建者的标志。                |
 | `remindersEnabled`|`Boolean`       | 用于指示是否启用发送给审阅者的提醒电子邮件标志。       |
@@ -123,7 +125,7 @@ ms.locfileid: "27826073"
 | `autoReviewEnabled`|`Boolean` | 启用标志以指示是否审阅者未提供一个用于 auto-apply，该功能是否应设置决定。 |
 | `autoReviewSettings`|`microsoft.graph.autoReviewSettings` | 功能设置的审阅决策，用于 auto-apply，如下所述的方式的详细的设置。 |
 | `recurrenceSettings`|`microsoft.graph.accessReviewRecurrenceSettings` | 详细的定期，如下所述的设置。 |
-| `autoApplyReviewResultsEnabled`|`Boolean` | 标志，指示是否自动应用启用功能，自动更改目标对象访问资源。  如果未启用，用户必须随后应用访问审阅的更改后访问审核完成。 |
+| `autoApplyReviewResultsEnabled`|`Boolean` | 标志，指示是否自动应用启用功能，自动更改目标对象访问资源。  如果未启用，用户必须审阅完成后，应用访问审阅。 |
 | `accessRecommendationsEnabled`|`Boolean` | 用于指示是否启用向审阅者显示建议的标志。 |
 
 
@@ -132,7 +134,7 @@ ms.locfileid: "27826073"
 
 `autoReviewSettings`嵌入访问查看设置，并访问查看完成时指定功能的行为。  该类型具有一个属性， `notReviewedResult`。
 
-| 属性                     | 类型     | Description                          |
+| 属性                     | 类型     | 说明                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | 必须为 `Approve`、`Deny` 或 `Recommendation` 的其中一个。 |
 
@@ -141,12 +143,12 @@ ms.locfileid: "27826073"
 
 `accessReviewRecurrenceSettings`嵌入访问查看设置，并指定访问审阅重复的时间间隔定期。  此类型具有以下属性：
 
-| 属性                     | 类型                                                                                                          | Description |
+| 属性                     | 类型                                                                                                          | 说明 |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | 重复出现的间隔，其必须是下列之一的`onetime`， `weekly`， `monthly`，`quarterly`或`annual`。                                                                   |
-| `recurrenceEndType`|`String` | 如何循环将结束。 它可以是一个`Never`，是否存在重复系列，没有明确结束`Endby`，在特定日期的定期结束和`occurrences`，系列结束后完成一定数量的审阅的实例。 |
+| `recurrenceType`|`String`    | 重复出现的间隔，其必须是下列之一的`onetime`， `weekly`， `monthly`， `quarterly`，或`annual`。                                                                   |
+| `recurrenceEndType`|`String` | 如何定期结束。 如果`Never`，然后没有重复系列没有明确结束。 如果`endBy`，然后将定期结束于某个日期。 如果`occurrences`，然后系列结束后`recurrentCount`审阅的实例完成。 |
 | `durationInDays`|`Int32`     | 持续的定期的天数。                                                                              |
-| `recurrenceCount`|`Int32`    | 定期事件的计数如果的值`recurrenceEndType`是`occurrences`。                                                        |
+| `recurrenceCount`|`Int32`    | 定期事件的计数如果的值`recurrenceEndType`是`occurrences`，否则为 0 或。                                                        |
 
 
 

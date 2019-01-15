@@ -4,12 +4,12 @@ description: Azure AD 中访问审阅功能，创建一个新的 accessReview �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: de8574566a8ca1eedb1f0f55230fb91053370ccc
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942267"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016721"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -17,7 +17,7 @@ ms.locfileid: "27942267"
 
 在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中创建新的[accessReview](../resources/accessreview.md)对象。
 
-进行此请求之前, 将呼叫者必须具有之前[检索业务流程模板列表中的](businessflowtemplate-list.md)，具有的值`businessFlowTemplateId`要包含在请求中。
+此请求之前，呼叫者必须具有之前[检索业务流程模板列表中的](businessflowtemplate-list.md)，具有的值`businessFlowTemplateId`要包含在请求中。
 
 进行此请求之后, 将呼叫者应[创建 programControl](programcontrol-create.md)，若要访问评审链接到的程序。  
 
@@ -52,11 +52,11 @@ POST /accessReviews
 | `endDateTime`             |`DateTimeOffset`                                                | 审阅安排结束时 DateTime。 这必须是至少一个日期晚于开始日期。   |
 | `description`             |`String`                                                        | 说明，向审阅者显示。 |
 | `businessFlowTemplateId`  |`String`                                                        | 业务流程模板标识符，从[businessFlowTemplate](../resources/businessflowtemplate.md)获得。  |
-| `reviewerType`            |`String`                                                        | 审阅者已审阅对象之一的访问权限的关系类型`self`，`delegate`或`entityOwners`。 | 
+| `reviewerType`            |`String`                                                        | 审阅者已审阅对象之一的访问权限的关系类型`self`， `delegated`，或`entityOwners`。 | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其访问审阅创建对象，如组的成员身份或向应用程序的用户的分配。 | 
 
 
-如果要提供 reviewerType 具有值`delegate`，然后将呼叫者还必须包括`reviewers`属性，与[userIdentity](../resources/useridentity.md)审阅者的集合。
+如果要提供 reviewerType 具有值`delegated`，然后将呼叫者还必须包括`reviewers`属性，与[userIdentity](../resources/useridentity.md)审阅者的集合。
 
 此外，呼叫者可以包括设置，以创建定期查看系列或更改默认查看行为。 具体而言，若要创建定期查看，呼叫者必须包括`accessReviewRecurrenceSettings`中访问检查设置，
 
@@ -86,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -100,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -126,7 +138,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

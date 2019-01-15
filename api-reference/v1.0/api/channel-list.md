@@ -4,12 +4,12 @@ description: 检索此团队中的通道的列表。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 609b83032877b77923e8444926aec785e4ae84db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d6d149a0e38fb5e02a2c32f9ad218fb95f32911
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932691"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016643"
 ---
 # <a name="list-channels"></a>列表通道
 
@@ -58,7 +58,7 @@ GET /teams/{id}/channels
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

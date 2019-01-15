@@ -4,12 +4,12 @@ description: 在 Azure AD 访问评论功能中，更新现有 accessReview 对�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e4e74daa092c6f18c845c7f0c468af90385b899b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941351"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016749"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -17,7 +17,7 @@ ms.locfileid: "27941351"
 
 在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象更改一个或多个其属性。
 
-此 API 不是要更改的审阅者或评审的决策。  若要更改审阅者，请使用[addReviewer](accessreview-addreviewer.md)或[removeReviewer](accessreview-removereviewer.md) Api。  停止已启动一次性审阅中或已启动的定期查看实例、 早期，使用[停止](accessreview-stop.md)API 和决策于目标组或应用程序访问权限，使用[应用](accessreview-apply.md)API。 
+此 API 不是要更改的审阅者或评审的决策。  若要更改审阅者，请使用[addReviewer](accessreview-addreviewer.md)或[removeReviewer](accessreview-removereviewer.md) Api。  若要停止已启动一次性审阅中或已启动的定期查看实例，早期，使用[停止](accessreview-stop.md)API。 若要应用到目标组或应用程序的访问权限的决策，使用[应用](accessreview-apply.md)API。 
 
 
 ## <a name="permissions"></a>权限
@@ -37,14 +37,14 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者\{标记\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[accessReview](../resources/accessreview.md)对象的参数的 JSON 表示形式。
 
 下表显示可更新 accessReview 时提供的属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这必须是在将来的日期。   |
@@ -94,7 +94,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

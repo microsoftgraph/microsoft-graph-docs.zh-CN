@@ -4,12 +4,12 @@ description: '检索 （不带答复） 中的工作组的通道的邮件的列�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1af48a84d6ffd39d8e592fa6db54388f4c9460a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b7059f7bb54fb6a22f6755d3c78567bf16924779
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966592"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016770"
 ---
 # <a name="list-channel-messages"></a>列表通道消息
 
@@ -45,7 +45,7 @@ GET /teams/{id}/channels/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[chatmessage](../resources/channel.md)对象的集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[chatmessage](../resources/chatmessage.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

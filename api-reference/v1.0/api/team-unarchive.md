@@ -4,12 +4,12 @@ description: 还原存档的团队。 这将还原发送消息和编辑团队，
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 36e4183f53afab6ba836bacd909b616910dc0c42
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b015be832093b0e68f304600afbc52421f654857
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982076"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016707"
 ---
 # <a name="unarchive-team"></a>Unarchive 团队
 
@@ -56,7 +56,7 @@ POST /teams/{id}/unarchive
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>响应
