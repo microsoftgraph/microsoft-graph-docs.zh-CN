@@ -2,12 +2,14 @@
 title: 组织资源类型
 description: '代表 Azure Active Directory 租户。 '
 localization_priority: Normal
-ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 86263fe11ebf3bb25e17cbd2b950195fa122f778
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823140"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927448"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -43,7 +45,7 @@ ms.locfileid: "27823140"
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
 |id|字符串|租户 ID，代表组织 （或租户） 的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
-|isMultipleDataLocationsForServicesEnabled|布尔|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 此为只读属性。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |marketingNotificationEmails|String collection| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 |postalCode|String| 组织地址的邮政编码。 |

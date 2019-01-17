@@ -2,12 +2,14 @@
 title: iosGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
-ms.openlocfilehash: e1175dc27e4bd6e073b15ec6487650e3a9882bf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3125cb171aea7901989865c10fe9af6b78a75ccd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880589"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963204"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
@@ -34,7 +36,7 @@ ms.locfileid: "27880589"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -171,21 +173,21 @@ ms.locfileid: "27880589"
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。|
-|classroomForceRequestPermissionToLeaveClasses|布尔|指示是否通过课堂非托管课程中注册学生将权限时，从请求教师尝试保留课程 (iOS 11.3 及更高版本)。|
-|keychainBlockCloudSync|布尔|指示阻止 iCloud 钥匙链同步。|
-|pkiBlockOTAUpdates|布尔|指示无线 PKI 更新已被阻止。 设置此限制 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 和更高版本)。|
-|privacyForceLimitAdTracking|布尔|指示是否有限 ad 跟踪。(iOS 7.0 和更高版本)。|
-|enterpriseBookBlockBackup|布尔|指示企业书籍备份被阻止。|
-|enterpriseBookBlockMetadataSync|布尔|指示阻止的企业簿说明并突出显示同步。|
-|airPrintBlocked|布尔|指示 AirPrint 阻止 (iOS 11.0 及更高版本)。|
-|airPrintBlockCredentialsStorage|布尔|指示钥匙链存储的用户名和密码 Airprint 阻止 (iOS 11.0 及更高版本)。|
-|airPrintForceTrustedTLS|布尔|指示受信任的证书是否需要 TLS 打印通信 (iOS 11.0 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|布尔|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (iOS 11.0 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
-|blockSystemAppRemoval|布尔|指示从设备的系统应用程序删除被阻止监管设备 (iOS 11.0 及更高版本) 上。|
-|vpnBlockCreation|布尔|指示创建 VPN 配置为阻止 (iOS 11.0 及更高版本)。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示是否通过课堂非托管课程中注册学生将权限时，从请求教师尝试保留课程 (iOS 11.3 及更高版本)。|
+|keychainBlockCloudSync|Boolean|指示阻止 iCloud 钥匙链同步。|
+|pkiBlockOTAUpdates|Boolean|指示无线 PKI 更新已被阻止。 设置此限制 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 和更高版本)。|
+|privacyForceLimitAdTracking|Boolean|指示是否有限 ad 跟踪。(iOS 7.0 和更高版本)。|
+|enterpriseBookBlockBackup|Boolean|指示企业书籍备份被阻止。|
+|enterpriseBookBlockMetadataSync|Boolean|指示阻止的企业簿说明并突出显示同步。|
+|airPrintBlocked|Boolean|指示 AirPrint 阻止 (iOS 11.0 及更高版本)。|
+|airPrintBlockCredentialsStorage|Boolean|指示钥匙链存储的用户名和密码 Airprint 阻止 (iOS 11.0 及更高版本)。|
+|airPrintForceTrustedTLS|Boolean|指示受信任的证书是否需要 TLS 打印通信 (iOS 11.0 及更高版本)。|
+|airPrintBlockiBeaconDiscovery|Boolean|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (iOS 11.0 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
+|blockSystemAppRemoval|Boolean|指示从设备的系统应用程序删除被阻止监管设备 (iOS 11.0 及更高版本) 上。|
+|vpnBlockCreation|Boolean|指示创建 VPN 配置为阻止 (iOS 11.0 及更高版本)。|
 
 ## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

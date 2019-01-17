@@ -3,12 +3,13 @@ title: macOSCompliancePolicy 资源类型
 description: 此类包含 Mac OS 的合规性设置。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93fa2f617a22a63524572193cb02fbb1e370e17e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 370dc743e31629e9625bd11c6df038fcb93ee84d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961902"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
@@ -50,9 +51,9 @@ ms.locfileid: "27810988"
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
-|firewallEnabled|布尔|是否应启用防火墙，或不。|
-|firewallBlockAllIncoming|布尔|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|布尔|对应于"启用隐藏模式"。|
+|firewallEnabled|Boolean|是否应启用防火墙，或不。|
+|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|

@@ -2,12 +2,13 @@
 title: 订阅资源类型
 description: 订阅允许的客户端应用程序以接收在 Microsoft Graph 中的数据的更改的通知。 目前，订阅启用以下资源：
 localization_priority: Normal
-ms.openlocfilehash: 4879bd4afd68915200364b70ea6787e06e8c629b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 0f6baa3ca36b91c8a4dd38086a7fc0eebdcf46e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813214"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982461"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -52,12 +53,12 @@ ms.locfileid: "27813214"
 |:---------|:-----|:------------|
 | changeType | string | 必需。 指示订阅资源中将引发通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 <br><br>注意： 驱动器根项目通知仅支持`updated`changeType。 用户和组通知支持`updated`和`deleted`changeType。 |
 | notificationUrl | string | 必需。 将接收通知的终结点 URL。 此 URL 必须进行使用 HTTPS 协议。 |
-| resource | string | 必需。 指定将监视的更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 |
-| expirationDateTime | DateTimeOffset | 必填。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
-| clientState | string | 可选。 指定服务为每个通知发送的 `clientState` 属性的值。 最大长度为 255 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
+| 资源 | string | 必需。 指定将监视的更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 |
+| expirationDateTime | DateTimeOffset | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
+| clientState | 字符串 | 可选。 指定服务为每个通知发送的 `clientState` 属性的值。 最大长度为 255 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
 | id | string | 订阅的唯一标识符。只读。 |
-| applicationId | string | 用于创建订阅的应用程序的标识符。 此为只读属性。 |
-| creatorId | string | 用户或创建订阅的服务主体的标识符。 如果应用程序使用委派权限创建订阅，此字段包含应用程序调用代表登录用户的 id。 如果应用程序使用应用程序权限，此字段包含对应于应用程序的服务主体的 id。 此为只读属性。 |
+| applicationId | 字符串 | 用于创建订阅的应用程序的标识符。 只读。 |
+| creatorId | 字符串 | 用户或创建订阅的服务主体的标识符。 如果应用程序使用委派权限创建订阅，此字段包含应用程序调用代表登录用户的 id。 如果应用程序使用应用程序权限，此字段包含对应于应用程序的服务主体的 id。 只读。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
 

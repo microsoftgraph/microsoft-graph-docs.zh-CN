@@ -3,12 +3,13 @@ title: webApp 资源类型
 description: 包含 Web 应用的属性和继承的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aae2944915def903fb6a95076b0caa2afa26180c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 13a16b6a65d400f428ea6bd253aa77e4d2264251
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982146"
 ---
 # <a name="webapp-resource-type"></a>webApp 资源类型
 

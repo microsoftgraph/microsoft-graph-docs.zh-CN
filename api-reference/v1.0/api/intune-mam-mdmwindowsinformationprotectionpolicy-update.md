@@ -3,12 +3,13 @@ title: 更新 mdmWindowsInformationProtectionPolicy
 description: 更新 mdmWindowsInformationProtectionPolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 91ceb6ffd7d6aa51d340245ad20b1e4fc7f30457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 677b2229434ac130ba4ec448e482ac713d491ec7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836426"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991648"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>更新 mdmWindowsInformationProtectionPolicy
 

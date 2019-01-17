@@ -1,12 +1,13 @@
 ---
 title: 列表 businessFlowTemplates
 description: 在 Azure AD 中访问审阅功能，列出所有 businessFlowTemplate 对象。
-ms.openlocfilehash: 9c6dc976244c60151cb2c230430ab6b4d0dc4b43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27042038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829496"
 ---
 # <a name="list-businessflowtemplates"></a>列表 businessFlowTemplates
 
@@ -28,9 +29,9 @@ ms.locfileid: "27042038"
 GET /businessFlowTemplates
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称         | 类型        | 说明 |
+| Name         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必需。 |
+| Authorization | 字符串 | 持有者\{标记\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。

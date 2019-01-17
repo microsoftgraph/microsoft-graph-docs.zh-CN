@@ -3,12 +3,13 @@ title: 更新 iosVppApp
 description: 更新 iosVppApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ac3ad93fa6847ce62b6710286fc6eec977c66d5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26b2977cc8066dc6f43fac72c13597db10bd5d4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819507"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974124"
 ---
 # <a name="update-iosvppapp"></a>更新 iosVppApp
 

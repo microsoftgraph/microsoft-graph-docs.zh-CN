@@ -2,12 +2,14 @@
 title: 创建 iosLobApp
 description: 创建新的 iosLobApp 对象。
 author: tfitzmac
-ms.openlocfilehash: 8ea8c1637f963fa25c8afa20c21720870b63a462
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 261eb6cd474450e04ff0dfd3e48d6a755a985949
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320732"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954517"
 ---
 # <a name="create-ioslobapp"></a>创建 iosLobApp
 
@@ -36,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

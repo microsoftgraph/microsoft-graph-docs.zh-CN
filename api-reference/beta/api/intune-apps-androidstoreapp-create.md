@@ -3,12 +3,13 @@ title: 创建 androidStoreApp
 description: 创建新的 androidStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73513177a83734618c01e9bd03282f1e20f9efa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2e9d546eef45591652bd2bb94c390cc6848f709
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814586"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925964"
 ---
 # <a name="create-androidstoreapp"></a>创建 androidStoreApp
 

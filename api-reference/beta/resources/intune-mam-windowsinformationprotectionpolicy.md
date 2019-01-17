@@ -2,12 +2,14 @@
 title: windowsInformationProtectionPolicy 资源类型
 description: 不使用 MDM 进行 Windows 信息保护的策略
 author: tfitzmac
-ms.openlocfilehash: 35030701e0f25c9fa671d0f37701c7d2d6f1d9ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: fbb324a0bafbbd0a35a9a5b9490c4f86f9eee919
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309665"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962805"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>windowsInformationProtectionPolicy 资源类型
 

@@ -2,12 +2,14 @@
 title: deviceManagement 资源类型
 description: 'DeviceManagement 资源表示的容器其内容因工作流，包括：  '
 localization_priority: Normal
-ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961335"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -55,11 +57,11 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |id|字符串|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|Intune 帐户 ID 给定租户|
-|legacyPcManangementEnabled|布尔|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户的 DEP 令牌的最大数量。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|当 scaleunits 之间移动租户数据的时间和日期。|
+|accountMoveCompletionDateTime|DateTimeOffset|日期 & 时间时 scaleunits 之间移动租户数据。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理许可信息。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备 protection overview。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|
@@ -145,7 +147,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|角色作用域标记。|
 |**电信支出管理 （项目）**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
-|**故障排除**|
+|**问题排查**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|
 |**Windows 信息保护**|
 |intuneBrandingProfiles|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)集合|Intune 品牌目标设定为 AAD 组配置文件|

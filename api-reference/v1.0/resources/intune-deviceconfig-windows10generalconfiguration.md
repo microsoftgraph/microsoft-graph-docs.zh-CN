@@ -2,12 +2,14 @@
 title: windows10GeneralConfiguration 资源类型
 description: 本主题提供由 windows10GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
-ms.openlocfilehash: 129240efc89fd2c533a031dec122fc9c4a14a801
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 8143ce82ff090194daaf1e4cc7eacd07e114b1d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816224"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971093"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>windows10GeneralConfiguration 资源类型
 
@@ -234,7 +236,7 @@ ms.locfileid: "27816224"
 |experienceBlockErrorDialogWhenNoSIM|Boolean|指示是否允许在未检测到 SIM 卡时显示错误对话框。|
 |experienceBlockTaskSwitcher|Boolean|指示是否在设备上启用任务切换。|
 |logonBlockFastUserSwitching|Boolean|禁用在不注销的情况下在同时登录的用户之间快速切换的功能。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|布尔|设备是否需要连接到网络。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|设备是否需要连接到网络。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|
