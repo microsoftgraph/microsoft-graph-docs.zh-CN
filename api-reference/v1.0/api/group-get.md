@@ -4,123 +4,137 @@ description: 获取组对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 7de0b9dac4d1bf3295cd01bbd522d1f18314c098
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 321e24ef8b36547a4823578d7f6823397d0eed69
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917186"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726594"
 ---
-# <a name="get-group"></a><span data-ttu-id="fc793-103">获取组</span><span class="sxs-lookup"><span data-stu-id="fc793-103">Get group</span></span>
-<span data-ttu-id="fc793-104">获取组对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="fc793-104">Get the properties and relationships of a group object.</span></span>
+# <a name="get-group"></a><span data-ttu-id="bddc0-103">获取组</span><span class="sxs-lookup"><span data-stu-id="bddc0-103">Get group</span></span>
+<span data-ttu-id="bddc0-104">获取组对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="bddc0-104">Get the properties and relationships of a group object.</span></span>
 
-##### <a name="default-properties"></a><span data-ttu-id="fc793-105">默认属性</span><span class="sxs-lookup"><span data-stu-id="fc793-105">Default properties</span></span>
+<span data-ttu-id="bddc0-105">此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。</span><span class="sxs-lookup"><span data-stu-id="bddc0-105">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="bddc0-106">若要获取_非_默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。</span><span class="sxs-lookup"><span data-stu-id="bddc0-106">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="bddc0-107">请参阅[示例](#request-2)。</span><span class="sxs-lookup"><span data-stu-id="bddc0-107">See an [example](#request-2).</span></span>
 
-<span data-ttu-id="fc793-p101">下面展示了在获取或列出组时返回的一组默认属性。这些默认属性是所有可用属性中的一部分。</span><span class="sxs-lookup"><span data-stu-id="fc793-p101">The following represent the default set of properties that are returned when getting or listing groups. These are a subset of all available properties.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bddc0-108">权限</span><span class="sxs-lookup"><span data-stu-id="bddc0-108">Permissions</span></span>
+<span data-ttu-id="bddc0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bddc0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="fc793-108">说明</span><span class="sxs-lookup"><span data-stu-id="fc793-108">description</span></span>
-* <span data-ttu-id="fc793-109">displayName</span><span class="sxs-lookup"><span data-stu-id="fc793-109">displayName</span></span>
-* <span data-ttu-id="fc793-110">groupTypes</span><span class="sxs-lookup"><span data-stu-id="fc793-110">groupTypes</span></span>
-* <span data-ttu-id="fc793-111">id</span><span class="sxs-lookup"><span data-stu-id="fc793-111">id</span></span>
-* <span data-ttu-id="fc793-112">mail</span><span class="sxs-lookup"><span data-stu-id="fc793-112">mail</span></span>
-* <span data-ttu-id="fc793-113">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="fc793-113">mailEnabled</span></span>
-* <span data-ttu-id="fc793-114">mailNickname</span><span class="sxs-lookup"><span data-stu-id="fc793-114">mailNickname</span></span>
-* <span data-ttu-id="fc793-115">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="fc793-115">onPremisesLastSyncDateTime</span></span>
-* <span data-ttu-id="fc793-116">onPremisesSecurityIdentifier</span><span class="sxs-lookup"><span data-stu-id="fc793-116">onPremisesSecurityIdentifier</span></span>
-* <span data-ttu-id="fc793-117">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="fc793-117">onPremisesSyncEnabled</span></span>
-* <span data-ttu-id="fc793-118">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="fc793-118">proxyAddresses</span></span>
-* <span data-ttu-id="fc793-119">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="fc793-119">securityEnabled</span></span>
-* <span data-ttu-id="fc793-120">visibility</span><span class="sxs-lookup"><span data-stu-id="fc793-120">visibility</span></span>
-
-<span data-ttu-id="fc793-121">默认情况下，不返回下列组属性：</span><span class="sxs-lookup"><span data-stu-id="fc793-121">The following group properties are not returned by default:</span></span>
-
-* <span data-ttu-id="fc793-122">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="fc793-122">allowExternalSenders</span></span>
-* <span data-ttu-id="fc793-123">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="fc793-123">autoSubscribeNewMembers</span></span>
-* <span data-ttu-id="fc793-124">isSubscribedByMail</span><span class="sxs-lookup"><span data-stu-id="fc793-124">isSubscribedByMail</span></span>
-* <span data-ttu-id="fc793-125">unseenCount</span><span class="sxs-lookup"><span data-stu-id="fc793-125">unseenCount</span></span>
-
-<span data-ttu-id="fc793-p102">若要获取这些属性，请使用 **$select** 查询参数。示例如下：</span><span class="sxs-lookup"><span data-stu-id="fc793-p102">To get these properties, use the **$select** query parameter. The following are examples:</span></span> 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-
-## <a name="permissions"></a><span data-ttu-id="fc793-128">权限</span><span class="sxs-lookup"><span data-stu-id="fc793-128">Permissions</span></span>
-<span data-ttu-id="fc793-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fc793-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="fc793-131">权限类型</span><span class="sxs-lookup"><span data-stu-id="fc793-131">Permission type</span></span>      | <span data-ttu-id="fc793-132">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fc793-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bddc0-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bddc0-111">Permission type</span></span>      | <span data-ttu-id="bddc0-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bddc0-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fc793-133">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fc793-133">Delegated (work or school account)</span></span> | <span data-ttu-id="fc793-134">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc793-134">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fc793-135">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fc793-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc793-136">不支持。</span><span class="sxs-lookup"><span data-stu-id="fc793-136">Not supported.</span></span>    |
-|<span data-ttu-id="fc793-137">应用程序</span><span class="sxs-lookup"><span data-stu-id="fc793-137">Application</span></span> | <span data-ttu-id="fc793-138">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc793-138">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="bddc0-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bddc0-113">Delegated (work or school account)</span></span> | <span data-ttu-id="bddc0-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bddc0-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bddc0-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bddc0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bddc0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bddc0-116">Not supported.</span></span>    |
+|<span data-ttu-id="bddc0-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="bddc0-117">Application</span></span> | <span data-ttu-id="bddc0-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bddc0-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fc793-139">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fc793-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bddc0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bddc0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fc793-140">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fc793-140">Optional query parameters</span></span>
-<span data-ttu-id="fc793-141">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fc793-141">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bddc0-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="bddc0-120">Optional query parameters</span></span>
+<span data-ttu-id="bddc0-121">可以使用 `$select` 获取特定组属性，包括非默认返回的属性。</span><span class="sxs-lookup"><span data-stu-id="bddc0-121">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span> <span data-ttu-id="bddc0-122">请参阅以下[示例](#request-2)。</span><span class="sxs-lookup"><span data-stu-id="bddc0-122">See an [example](#request-2).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fc793-142">请求标头</span><span class="sxs-lookup"><span data-stu-id="fc793-142">Request headers</span></span>
-| <span data-ttu-id="fc793-143">名称</span><span class="sxs-lookup"><span data-stu-id="fc793-143">Name</span></span>       | <span data-ttu-id="fc793-144">类型</span><span class="sxs-lookup"><span data-stu-id="fc793-144">Type</span></span> | <span data-ttu-id="fc793-145">说明</span><span class="sxs-lookup"><span data-stu-id="fc793-145">Description</span></span>|
+<span data-ttu-id="bddc0-123">有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="bddc0-123">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="bddc0-124">请求头</span><span class="sxs-lookup"><span data-stu-id="bddc0-124">Request headers</span></span>
+| <span data-ttu-id="bddc0-125">名称</span><span class="sxs-lookup"><span data-stu-id="bddc0-125">Name</span></span>       | <span data-ttu-id="bddc0-126">类型</span><span class="sxs-lookup"><span data-stu-id="bddc0-126">Type</span></span> | <span data-ttu-id="bddc0-127">说明</span><span class="sxs-lookup"><span data-stu-id="bddc0-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="fc793-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc793-146">Authorization</span></span>  | <span data-ttu-id="fc793-147">string</span><span class="sxs-lookup"><span data-stu-id="fc793-147">string</span></span>  | <span data-ttu-id="fc793-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fc793-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bddc0-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="bddc0-128">Authorization</span></span>  | <span data-ttu-id="bddc0-129">string</span><span class="sxs-lookup"><span data-stu-id="bddc0-129">string</span></span>  | <span data-ttu-id="bddc0-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bddc0-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fc793-150">请求正文</span><span class="sxs-lookup"><span data-stu-id="fc793-150">Request body</span></span>
-<span data-ttu-id="fc793-151">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fc793-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bddc0-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="bddc0-132">Request body</span></span>
+<span data-ttu-id="bddc0-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bddc0-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fc793-152">响应</span><span class="sxs-lookup"><span data-stu-id="fc793-152">Response</span></span>
-<span data-ttu-id="fc793-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fc793-153">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bddc0-134">响应</span><span class="sxs-lookup"><span data-stu-id="bddc0-134">Response</span></span>
+<span data-ttu-id="bddc0-135">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bddc0-135">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fc793-154">示例</span><span class="sxs-lookup"><span data-stu-id="fc793-154">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="fc793-155">请求</span><span class="sxs-lookup"><span data-stu-id="fc793-155">Request</span></span>
-<span data-ttu-id="fc793-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fc793-156">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bddc0-136">示例</span><span class="sxs-lookup"><span data-stu-id="bddc0-136">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="bddc0-137">请求 1</span><span class="sxs-lookup"><span data-stu-id="bddc0-137">Request 1</span></span>
+<span data-ttu-id="bddc0-138">下面是一个 GET 请求示例。</span><span class="sxs-lookup"><span data-stu-id="bddc0-138">The following is an example of a request body.</span></span> 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### <a name="response"></a><span data-ttu-id="fc793-157">响应</span><span class="sxs-lookup"><span data-stu-id="fc793-157">Response</span></span>
-<span data-ttu-id="fc793-158">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fc793-158">The following is an example of the response.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="bddc0-139">响应 1</span><span class="sxs-lookup"><span data-stu-id="bddc0-139">Response 1</span></span>
+<span data-ttu-id="bddc0-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bddc0-140">The following is an example of the response.</span></span> <span data-ttu-id="bddc0-141">它仅包括默认属性。</span><span class="sxs-lookup"><span data-stu-id="bddc0-141">It includes only the default properties.</span></span>
 
-><span data-ttu-id="fc793-159">**注意：** 可能为便于阅读缩短如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fc793-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fc793-160">如上所述，默认属性将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fc793-160">The default properties will be returned from an actual call, as described before.</span></span>
+><span data-ttu-id="bddc0-142">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bddc0-142">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bddc0-143">在实际调用中会返回所有默认属性。</span><span class="sxs-lookup"><span data-stu-id="bddc0-143">All the default properties are returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
-  "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-22T00:51:37Z",
+    "creationOptions": [],
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library2@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "smtp:library7423@contoso.com",
+        "SMTP:library2@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a><span data-ttu-id="bddc0-144">请求 2</span><span class="sxs-lookup"><span data-stu-id="bddc0-144">Request 2</span></span>
+<span data-ttu-id="bddc0-145">下一个示例使用 `$select` 查询选项获取非默认返回的一些属性。</span><span class="sxs-lookup"><span data-stu-id="bddc0-145">The next example uses a `$select` query option to get a few properties that are not returned by default.</span></span> 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a><span data-ttu-id="bddc0-146">响应 2</span><span class="sxs-lookup"><span data-stu-id="bddc0-146">Response 2</span></span>
+<span data-ttu-id="bddc0-147">下面是一个包括所请求的非默认属性的响应示例。</span><span class="sxs-lookup"><span data-stu-id="bddc0-147">The following is an example of the response which includes the requested non-default properties.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
