@@ -4,12 +4,12 @@ description: Outlook 是 Office 365 的消息传递通信中心。 使用它，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 462e00825a9dd54a6628ca638b06fb56c6cb5c8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 71bf282eea44edc0cb0ac38953e9b1e67bc05c39
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976623"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327983"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -70,6 +70,7 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
   - [邮件整理](outlook-organize-messages.md)方法
   - 如何[获取已共享邮件](outlook-share-messages-folders.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
+  - 如何[从其他用户身份发送邮件](outlook-send-mail-from-other-user.md)
 
 - 详细了解如何使用 Microsoft Graph v1.0 中的[邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
 

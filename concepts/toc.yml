@@ -102,7 +102,9 @@ items:
                 href: outlook-share-messages-folders.md
               - name: 不可变 ID（预览版）
                 href: outlook-immutable-id.md
-          - name: 笔记
+              - name: 从其他用户身份发送邮件
+                href: outlook-send-mail-from-other-user.md
+          - name: 注释
             href: integrate-with-onenote.md
             items:
               - name: 获取 OneNote 内容
