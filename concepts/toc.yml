@@ -166,6 +166,9 @@ items:
             href: planner-concept-overview.md
           - name: 团队合作
             href: teams-concept-overview.md
+            items:
+              - name: 配置内置选项卡
+                href: teams-configuring-builtin-tabs.md
           - name: 工作簿和图表
             href: excel-concept-overview.md
             items:
