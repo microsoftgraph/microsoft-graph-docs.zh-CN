@@ -4,18 +4,19 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.openlocfilehash: fb91e9bada227f1a22cf862726ea0b6f658fe469
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: sharepoint
+ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952347"
 ---
-# <a name="site-resource-type"></a>网站资源类型
+# <a name="site-resource-type"></a>site 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-**网站**资源提供 SharePoint 网站的元数据和关系。
+**site** 资源提供 SharePoint 网站的元数据和关系。
 
 ## <a name="methods"></a>方法
 
@@ -25,19 +26,19 @@ ms.locfileid: "27871020"
 | [获取网站][]                   | GET /sites/{site-id}
 | [根据路径获取网站][]           | GET /sites/{hostname}:/{site-path}
 | [获取组的网站][]       | GET /groups/{group-id}/sites/root
-| [获取分析][]              | GET /sites/ {网站-id} / 分析
-| [按间隔获取活动][] | GET /sites/ {网站-id} / getActivitiesByInterval
-| [List pages][]                 | GET /sites/ {网站-id} / 页面
-| [列出根网站][]            | GET /sites？ 筛选器 = 根 ne null = 选择 = sitecollection 和 Site，webUrl
+| [获取分析结果][]              | GET /sites/{site-id}/analytics
+| [按间隔获取活动][] | GET /sites/{site-id}/getActivitiesByInterval
+| [列出页面][]                 | GET /sites/{site-id}/pages
+| [列出根网站][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [搜索网站][]           | GET /sites?search={query}
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
 [根据路径获取网站]: ../api/site-getbypath.md
 [获取组的网站]: ../api/site-get.md
-[获取分析]: ../api/itemanalytics-get.md
+[获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
-[List pages]: ../api/sitepage-list.md
+[列出页面]: ../api/sitepage-list.md
 [列出根网站]: ../api/site-list.md
 [搜索网站]: ../api/site-search.md
 
@@ -60,17 +61,17 @@ ms.locfileid: "27871020"
 
 ## <a name="relationships"></a>关系
 
-| 关系名称 | 类型                             | Description
+| 关系名称 | 类型                             | 说明
 |:------------------|:---------------------------------|:----------------------
-| **分析**     | [itemAnalytics][]资源       | 有关发生此网站中查看活动的分析。
+| **analytics**     | [itemAnalytics][] 资源       | 此网站上发生的查看活动的相关分析。
 | **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
 | **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
-| **drive**         | [驱动器][]                        | 此网站的默认驱动器（文档库）。
+| **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
-| **lists**         | Collection([list][])             | 此网站下方的列表集合。
-| **页面**         | 集合 ([sitePage][])         | 在此站点的 SitePages 列表中的页面集合。
-| **sites**         | 集合（[网站][]）             | 网站下方的子网站的集合。
+| **lists**         | Collection([list][])             | 此网站下的列表集合。
+| **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
+| **sites**         | 集合（[网站][]）             | 网站下的子网站的集合。
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -78,9 +79,9 @@ ms.locfileid: "27871020"
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[列表]: list.md
+[list]: list.md
 [sitePage]: sitepage.md
-[根]: root.md
+[root]: root.md
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
