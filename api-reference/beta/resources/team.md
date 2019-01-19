@@ -1,69 +1,70 @@
 ---
 title: 团队资源类型
-description: '团队中的 Microsoft 团队是通道的集合。 '
+description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: bf76f7b4b6cd06afb80b17e82fb8d10675b744a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: microsoft-teams
+ms.openlocfilehash: 921b1367afe8e12d10d69cb16577ce73ba70c9f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862259"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972507"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-团队中的 Microsoft 团队是[通道](channel.md)的集合。 通道表示一个主题，因此讨论，团队中的逻辑隔离。
+Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
-每个团队是与[组](../resources/group.md)关联。
-组具有相同的 ID 团队-例如，/groups/ {id} / 球队是 /teams/ {id} 相同。
-有关使用组和团队中的成员的详细信息，请参阅[使用 Microsoft Graph REST API 以使用 Microsoft 团队](teams-api-overview.md)。
+每个团队与一个[组](../resources/group.md)相关联。
+该组具有与团队相同的 ID，例如 /groups/{id}/team 与 /teams/{id} 相同。
+有关使用组和团队内部成员的详细信息，请参阅[使用 Microsoft Graph REST API 来处理 Microsoft Teams](teams-api-overview.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[创建工作组](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | 从头开始创建团队。 |
-|[从组中创建工作组](../api/team-put-teams.md) | [团队](team.md) | 创建一个新的团队，或添加到现有组的团队。|
-|[获取工作组](../api/team-get.md) | [团队](team.md) | 检索的属性和指定团队的关系。|
-|[更新团队](../api/team-update.md) | [团队](team.md) |更新指定的团队的属性。 |
-|[删除团队](/graph/api/group-delete?view=graph-rest-1.0) | 无 |删除团队和其关联的组。 |
-|[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队和其关联的组。 |
-|[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队放在只读状态。 |
-|[Unarchive 团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |还原到读写状态团队。 |
-|[列出您的团队](../api/user-list-joinedteams.md) | [团队](team.md)集合 | 列出您是成员的团队。 |
-|[列出所有团队](/graph/teams-list-all-teams) | [组](group.md) 集合 | 列出具有团队的所有组。 |
-|[将应用程序发布到您的组织](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 创建团队应用程序仅对您的组织可见。 |
-|[将应用程序添加到团队](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | 将 （安装） 添加到团队应用程序。|
-|[选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将 （安装） 添加到团队的通道选项卡。|
-|[列表通道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [在通道中收到消息](../api/channel-list-messages.md) |
+|[创建团队](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | 从头开始创建团队。 |
+|[从组创建团队](../api/team-put-teams.md) | [team](team.md) | 创建新的团队，或向现有组添加团队。|
+|[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
+|[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
+|[删除团队](/graph/api/group-delete?view=graph-rest-1.0) | 无 |删除团队及其关联的组。 |
+|[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
+|[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队置于只读状态。 |
+|[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
+|[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
+|[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
+|[将应用发布到你的组织](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 创建仅对你的组织可见的 Teams 应用。 |
+|[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
+|[将选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将选项卡添加（安装）到团队的频道。|
+|[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [获取频道中的消息](../api/channel-list-messages.md) |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 说明 |
 |:---------------|:--------|:----------|
-|displayName|string| 工作组的名称。 |
-|说明|string| 团队的可选说明。 |
-|Classification|string| 可选标签。 通常介绍团队的数据或商业敏感度。 必须匹配一个预配置一租户的目录中。 |
-|具专业性|[teamSpecialization](teamspecialization.md)| 可选。 指示是否团队适用于特定用例。  每个团队具专业性有权访问唯一行为和针对其用例的体验。 |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| 可见性组和团队。 默认值为 Public。 |
-|funSettings|[teamFunSettings](teamfunsettings.md) |要配置的团队中的使用 Giphy、 memes 和标签的设置。|
-|guestSettings|[teamGuestSettings](teamguestsettings.md) |要配置的是否来宾可以创建、 更新或删除通道团队中的设置。|
-|isArchived|布尔|此团队是否处于只读模式。 |
-|memberSettings|[teamMemberSettings](teammembersettings.md) |例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加团队中。|
-|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |要配置的消息设置和团队中的提及。|
-|WebUrl|字符串 （只读） | 将转到 Microsoft 团队客户端中的团队超链接。 这是当您右键单击在客户端中的 Microsoft 团队团队，然后选择**获取团队链接**获取的 URL。 此 URL 应是视为不透明 blob，并且未分列。 |
+|displayName|string| 团队的名称。 |
+|description|string| 组的说明（可选）。 |
+|classification|string| 标签（可选）。 通常说明团队的数据或业务敏感性。 必须与租户目录中的一个预配置集匹配。 |
+|specialization|[teamSpecialization](teamspecialization.md)| 可选。 指示团队是否适用于特定用例。  每个团队专用化都可以访问针对其用例的独特行为和体验。 |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。 默认值为 Public。 |
+|funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
+|isArchived|Boolean|此团队是否处于只读模式。 |
+|memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
+|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
+|webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md)集合| （已过时）此团队中安装应用程序。|
-|通道|[通道](channel.md)集合|通道邮件与团队关联的集合。|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md)集合|此团队中安装应用程序。|
-|owners|[用户](user.md)| 此工作组的所有者的列表。 |
-|template|[teamsTemplate](teamstemplate.md)| 从该团队创建模板。 |
+|apps|[teamsApp](teamsapp.md) 集合| （已过时）此团队中安装的应用。|
+|channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
+|owners|[user](user.md)| 此团队的所有者列表。 |
+|template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -98,5 +99,5 @@ ms.locfileid: "27862259"
 }-->
 
 ## <a name="see-also"></a>另请参阅
-- [与团队创建组](/graph/teams-create-group-and-team)
-- [团队 API 概述](teams-api-overview.md)
+- [创建包含团队的组](/graph/teams-create-group-and-team)
+- [Teams API 概述](teams-api-overview.md)
