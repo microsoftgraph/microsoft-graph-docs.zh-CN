@@ -1,13 +1,15 @@
 ---
 title: 组资源类型
-description: 代表 Azure Active Directory (Azure AD) 组中，可以是 Office 365 组、 动态组或安全组。
+description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、动态组或安全组。
 localization_priority: Priority
-ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: d5b3ce7c8a7af318fdf8dc0eb46b08c57619071a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931844"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -15,9 +17,9 @@ ms.locfileid: "27828012"
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/user-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/user-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 
 ## <a name="methods"></a>方法
@@ -93,41 +95,41 @@ ms.locfileid: "27828012"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。可以在 PATCH 请求中设置组的该属性；不要在创建该组的初始 POST 请求中设置该属性。|
 |Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |说明|String|可选的组说明。 |
-|displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|groupTypes|String collection| 指定要创建组的类型。 可能的值为`Unified`创建 Office 365 组，或`DynamicMembership`动态组。  所有其他组类型，如启用安全的组和已启用电子邮件的安全组，未设置此属性。 支持 $filter。|
+|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
+|groupTypes|String collection| 指定要创建的组类型。 可能的值是 `Unified`（创建 Office 365 组）或 `DynamicMembership`（创建动态组）。  对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。 支持 $filter。|
 |id|String|组的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|isSubscribedByMail|布尔|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
-|mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|isSubscribedByMail|Boolean|默认值为 **True**。指示当前用户是否订阅接收电子邮件对话。|
+|邮件|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。创建组时必须指定此属性。支持 $filter。|
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。支持 $filter。|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合| 设置过程中使用 Microsoft 同步产品时错误。 |
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读。支持 $filter。|
-|preferredDataLocation|字符串|首选的数据组的位置。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |proxyAddresses|String collection| 对于多值属性筛选表达式，必须使用 **any** 运算符。只读。不可为 null。支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则该组是已启用邮件的安全组；否则为安全组。对于 Office 365 组，必须为 **false**。支持 $filter。|
-|unseenCount|Int32|向组的登录用户上次访问后已送达一个或多个新文章的对话数。|
-|visibility|String| 指定 Office 365 组可见的性。 可能的值为： `private`， `public`，或`hiddenmembership`;空值被视为为公共。  请参阅[组可见性选项](#group-visibility-options)了解详细信息。<br>仅当创建一组; 时，可以设置可见性不可编辑。<br>仅支持统一组; 可见性不支持安全组。|
+|unseenCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。|
+|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`private`、`public` 或 `hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。|
 
 ### <a name="group-visibility-options"></a>组可见性选项
 
-下面是每个**可见性**属性值的含义：
+每个 **visibility** 属性值的含义如下：
  
-|值|Description|
+|值|说明|
 |:----|-----------|
-| `public` | 任何人都可以加入的组，而无需所有者权限。<br>任何人都可以查看组的内容。|
-| `private` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。|
-| `hiddenmembership` | 所需的所有者权限加入的组。<br>非成员不能查看组的内容。<br>非成员看不到组的成员。<br>（全局、 公司、 用户和帮助台） 的管理员可以查看组成员资格。<br>组显示在全局通讯簿 (GAL)。|
+| `public` | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
+| `private` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
+| `hiddenmembership` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
@@ -135,20 +137,20 @@ ms.locfileid: "27828012"
 |calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
-|驱动器|[驱动器](drive.md)|组的默认驱动器。 此为只读属性。|
-|驱动器|[驱动器](drive.md) 集合|组的驱动器。 此为只读属性。|
+|驱动器|[drive](drive.md)|组的默认驱动器。 只读。|
+|drives|[drive](drive.md) 集合|组的驱动器。 只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
-|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|对此组的生命周期策略的集合。 只读。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 Null。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
 |onenote|[Onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
-|photo|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
+|照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[plannerGroup](plannergroup.md)| 统一组可能存在的 Planner 资源入口点。|
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
-|settings|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
+|设置|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
 |sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
 |threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 

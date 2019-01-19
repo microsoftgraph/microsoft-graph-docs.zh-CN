@@ -3,12 +3,13 @@ title: 邮件资源类型
 description: mailFolder 中的邮件。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: outlook
+ms.openlocfilehash: ea66839fe756fc6ecd57008c775fd20a9a23633a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833017"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966452"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -16,10 +17,10 @@ mailFolder 中的邮件。
 
 该资源支持：
 
-- 添加您自己的数据作为自定义 Internet 邮件头。 添加自定义标头，仅当创建一条消息，并将它们命名开头"x-"。 一旦已发送邮件，您无法修改标头。 若要获取的邮件头，请应用`$select`查询[获取邮件](../api/message-get.md)操作中的参数。
-- 为自定义属性作为[扩展](/graph/extensibility-overview)添加您自己的数据。
+- 将你自己的数据添加为自定义 Internet 邮件头。 仅在创建邮件时添加自定义邮件头，并以“x-”开头命名。 邮件发送后，便无法修改邮件头。 若要获取邮件头，请在[获取邮件](../api/message-get.md)操作中应用 `$select` 查询参数。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/message-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/message-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -58,30 +59,30 @@ mailFolder 中的邮件。
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
-|body|[itemBody](itembody.md)|邮件的正文。 它可以是以 HTML 或文本格式。 了解有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
+|body|[itemBody](itembody.md)|邮件的正文。 可以是 HTML 格式或文本格式。 请了解[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
 |bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|标记|[followupFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
-|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须为实际的邮箱使用对应。 查找更多有关[设置从和发件人属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的一条消息。|
+|flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 请详细了解为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|importance| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification | inferenceClassificationType | 为用户、 基于推测的相关性或重要性-或显式重写的邮件分类。 可能的值为：`focused`或`other`。 |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)定义的邮件头的集合。 集包括指示取自邮件由发件人收件人的网络路径的邮件头。 它还可以包含保留邮件应用程序数据的自定义邮件头。 |
+|inferenceClassification | inferenceClassificationType | 根据推导出的相关性或重要性或显式重写，对用户邮件的分类。 可能的值为：`focused` 或 `other`。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 在大多数情况下，此值是**从**属性相同。 从[共享的邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)，或作为[委派](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送一条消息发送邮件时，您可以为不同的值设置该属性。 在任何情况下的值必须为实际的邮箱使用对应。 查找更多有关[设置从和发件人属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的一条消息。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与 **from** 属性相同。 从[共享邮箱](https://docs.microsoft.com/zh-CN/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 请详细了解为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
@@ -93,9 +94,9 @@ mailFolder 中的邮件。
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
-|extensions|[扩展](extension.md)集合|打开扩展名为消息定义的集合。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 多值为消息定义的扩展属性的集合。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为消息定义的单值扩展属性的集合。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。 可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
