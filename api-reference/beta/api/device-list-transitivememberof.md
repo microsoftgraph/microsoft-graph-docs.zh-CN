@@ -4,12 +4,12 @@ description: 获取组的成员的设备。 此 API 请求是可传递，，，�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fe6d404c16b592be7aa931e294a3229355e9ab0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2e894a423675acb498af555f003e75fd9d412091
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966354"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353081"
 ---
 # <a name="list-device-transitive-groups"></a>列表设备可传递组
 
@@ -32,7 +32,7 @@ ms.locfileid: "27966354"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /devices/{id | userPrincipalName}/transitiveMemberOf
+GET /devices/{id}/transitiveMemberOf
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
