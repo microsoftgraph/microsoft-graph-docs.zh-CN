@@ -4,73 +4,24 @@ description: 获取组对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 18eb80938247d56326620a6ac866073acad6f715
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941049"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353074"
 ---
 # <a name="get-group"></a>获取组
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-要获取的属性和一个[group](../resources/group.md)对象的关系。
+获取 [group](../resources/group.md) 对象的属性和关系。
 
-##### <a name="default-properties"></a>默认属性
+此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 
 
-下面展示了在获取或列出组时返回的一组默认属性。这些默认属性是所有可用属性中的一部分。 
+若要获取_非_默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅 `$select` 的[示例](#request-2)。 **hasMembersWithLicenseErrors** 属性是例外。 请参阅关于如何使用此属性的[示例](group-list.md#request-2)。
 
-* Classification
-* createdDateTime
-* 说明
-* displayName
-* groupTypes
-* id
-* mail
-* mailEnabled
-* mailNickname
-* membershipRule
-* membershipRuleProcessingState
-* onPremisesLastSyncDateTime
-* onPremisesSecurityIdentifier
-* onPremisesSyncEnabled
-* preferredLanguage-不支持;此属性的值不能设置和返回`null`调用时。
-* proxyAddresses
-* renewedDateTime
-* securityEnabled
-* 主题
-* visibility
-
-默认情况下，不返回下列组属性：
-
-* accessType
-* allowExternalSenders
-* autoSubscribeNewMembers
-* hasMembersWithLicenseErrors
-* isSubscribedByMail
-* isFavorite
-* unseenConversationsCount
-* unseenCount
-* unseenMessagesCount
-
-若要获取这些属性 （除了**isFavorite**和**hasMembersWithLicenseErrors**），使用`$select`查询参数。 示例如下： 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-若要返回包含与许可错误的成员的组，请使用 **$filter**查询参数：
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
-
-由于**group**资源支持[扩展](/graph/extensibility-overview)，您还可以使用`GET`操作来获取**组**实例中的自定义属性和扩展数据。
+由于**组**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**组**实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,9 +38,11 @@ GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErr
 GET /groups/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+可以使用 `$select` 获取特定组属性，包括非默认返回的属性。 请参阅以下[示例](#request-2)。
 
-## <a name="request-headers"></a>请求标头
+有关 OData 查询选项的详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -98,50 +51,100 @@ GET /groups/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。 除非使用 `$select` 指定特定属性，它会返回默认属性。
 
 ## <a name="example"></a>示例
-### <a name="request"></a>请求
-下面展示了示例请求。
+#### <a name="request-1"></a>请求 1
+下面是一个 GET 请求示例。 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-### <a name="response"></a>响应
-下面展示了示例响应。 
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 如上所述，默认属性将通过实际调用返回。
+#### <a name="response-1"></a>响应 1
+下面介绍响应示例。 它仅包括默认属性。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T02:21:05Z",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
+  "expirationDateTime": null,
   "groupTypes": [
-    "groupTypes-value"
+      "Unified"
   ],
-  "mail": "mail-value",
+  "mail": "golfassist@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
+  "mailNickname": "golfassist",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "preferredLanguage": null,
   "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+      "smtp:golfassist@contoso.onmicrosoft.com",
+      "SMTP:golfassist@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T02:21:05Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "theme": null,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a>请求 2
+下一个示例使用 `$select` 查询选项获取非默认返回的一些属性。 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a>响应 2
+下面是一个包括所请求的非默认属性的响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
