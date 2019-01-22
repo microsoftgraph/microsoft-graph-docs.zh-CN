@@ -167,6 +167,10 @@ items:
           - name: 团队合作
             href: teams-concept-overview.md
             items:
+              - name: 创建组和团队
+                href: teams-create-group-and-team.md
+              - name: 列出所有团队
+                href: teams-list-all-teams.md
               - name: 配置内置选项卡
                 href: teams-configuring-builtin-tabs.md
           - name: 工作簿和图表

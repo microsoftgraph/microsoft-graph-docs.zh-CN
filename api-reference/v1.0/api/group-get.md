@@ -4,12 +4,12 @@ description: 获取组对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 321e24ef8b36547a4823578d7f6823397d0eed69
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726594"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353088"
 ---
 # <a name="get-group"></a>获取组
 获取组对象的属性和关系。
@@ -45,7 +45,7 @@ GET /groups/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象。 除非使用 `$select` 指定特定属性，它会返回默认属性。
 
 ## <a name="example"></a>示例
 #### <a name="request-1"></a>请求 1
