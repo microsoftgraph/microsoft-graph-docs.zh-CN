@@ -1,15 +1,15 @@
 ---
 title: iPv4Range 资源类型
-description: IP V4 范围
+description: 介绍 Intune，支持多个工作流的 Microsoft Graph api iPv4Range 资源。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 57bcaabfc5155e6b6733de2dc228dd240515281b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9ac2656b7c79cceba70879fe478aec65a5bd7250
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425223"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 

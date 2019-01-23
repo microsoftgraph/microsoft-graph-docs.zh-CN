@@ -1,23 +1,24 @@
 ---
 title: macOSCompliancePolicy 资源类型
 description: 此类包含 Mac OS 的合规性设置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bf429c17f1ac7a730ab96490b6b3b7d8ca067875
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d8aca24951c55800d2ee098800b3539cc87cba65
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424040"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含 Mac OS 的合规性设置。
+
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -31,7 +32,7 @@ ms.locfileid: "27938102"
 |[Update macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-update.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|更新 [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -48,18 +49,20 @@ ms.locfileid: "27938102"
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|osMinimumVersion|String|最低 IOS 版本。|
-|osMaximumVersion|String|最高 IOS 版本。|
+|osMinimumVersion|String|最低 MacOS 版本。|
+|osMaximumVersion|String|最大 MacOS 版本。|
+|osMinimumBuildVersion|String|最小 MacOS 生成版本。|
+|osMaximumBuildVersion|String|最大 MacOS 生成版本。|
 |systemIntegrityProtectionEnabled|Boolean|要求设备已启用系统完整性保护。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |storageRequireEncryption|Boolean|要求对 Mac OS 设备加密。|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和确定可以从 macOS 设备上运行的下载位置应用程序的隐私设置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
-|firewallEnabled|布尔|是否应启用防火墙，或不。|
-|firewallBlockAllIncoming|布尔|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|布尔|对应于"启用隐藏模式"。|
+|firewallEnabled|Boolean|是否应启用防火墙，或不。|
+|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
+|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此规则的计划操作的列表 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -100,6 +103,8 @@ ms.locfileid: "27938102"
   "passwordRequiredType": "String",
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "osMinimumBuildVersion": "String",
+  "osMaximumBuildVersion": "String",
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
@@ -110,7 +115,6 @@ ms.locfileid: "27938102"
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

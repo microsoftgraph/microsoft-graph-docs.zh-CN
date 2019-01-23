@@ -4,12 +4,12 @@ description: 代表在学校数据配置文件的验证和/或同步过程中的
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 2808ba0fd633fcdcbbaa32ce63162ac1cd4531ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425811"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "27944724"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **entryType** | string |  代表同步实体 （学校、 节、 学生、 教师）。       |
 | **errorCode** | string |  表示此错误的错误代码。         |
@@ -40,7 +40,7 @@ ms.locfileid: "27944724"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationError"
+  "@odata.type": "microsoft.graph.educationSynchronizationError"
 }-->
 
 ```json

@@ -1,23 +1,24 @@
 ---
 title: resourceOperation 资源类型
-description: " 操作用于 MobileApp 资源分配给 AAD 安全组。  无法修改内置角色的资源操作。"
-author: tfitzmac
+description: 介绍 Intune，支持基于角色的访问控制 (RBAC) 的 Microsoft Graph api resourceOperation 资源。
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fd8a0620c56299446d8c0315ca66b318c7e6d71c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 897c076139f3a385152738dd5f4b15c06320990d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425020"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 这可以定义能够在 Intune 资源（或实体）上执行的操作或行为。  常用操作有读取、删除、更新或创建。  这些操作提供对基础 Intune 资源本身的基本管理。  某些情况下，Intune 资源可以采用资源使用的操作，以与其他资源合并采用。  例如，Assign 操作用于向 AAD 安全组分配 MobileApp 资源。  无法修改内置角色的资源操作。这会定义能够在 Intune 资源（或实体）上执行的操作或行为。  常用操作有获取、列出、删除、更新或创建。  这些操作提供对基础 Intune 资源本身的基本管理。  某些情况下，Intune 资源可以采用资源使用的操作，以与其他资源合并采用。  例如，“Assign”操作用于向 AAD 安全组分配 MobileApp 资源。  无法修改内置角色的资源操作。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -32,14 +33,15 @@ ms.locfileid: "27914785"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|资源操作的键。 只读，且自动生成。|
-|resource|字符串|资源此操作所属类别。|
+|资源|String|资源此操作所属类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 |enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
@@ -59,7 +61,6 @@ ms.locfileid: "27914785"
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

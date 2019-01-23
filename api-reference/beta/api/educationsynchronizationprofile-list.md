@@ -4,12 +4,12 @@ description: 检索为租户中的学校数据同步配置文件的集合。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a51650c0ea4891ea1114d73fc9afd1fbb99ea6a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ed001a7c265f16057ea216d21f7a05f672df7065
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425069"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列表 educationSynchronizationProfiles
 
@@ -35,7 +35,7 @@ GET /synchronizationProfiles
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应： $filter、 $orderby、 $top、 $skip 和 $count。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
   "isCollection": true
 } -->
 ```http
@@ -79,7 +79,7 @@ Content-length: 3296
         "state": "provisioned",
         "id": "15e9b9fa-de85-492e-aa44-550c40de626e",
         "dataProvider": {
-            "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+            "@odata.type": "microsoft.graph.educationCsvDataProvider",
             "customizations": {
                 "school": {
                     "optionalPropertiesToSync": [
@@ -133,7 +133,7 @@ Content-length: 3296
             }
         },
         "identitySynchronizationConfiguration": {
-            "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+            "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
             "userDomains": [
                 {
                     "appliesTo": "student",
@@ -147,14 +147,14 @@ Content-length: 3296
         },
         "licensesToAssign": [
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",                
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",                
                 "appliesTo": "teacher",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"
                 ]
             },
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "student",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"

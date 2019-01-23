@@ -1,26 +1,26 @@
 ---
 title: 更新 windowsManagedDevice
 description: 更新 windowsManagedDevice 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ff46cc4d5a89a995a1e3e0e7f564a914abeb7d0a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dc3589c49f455f287cf83d921e15973202f73e65
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424145"
 ---
 # <a name="update-windowsmanageddevice"></a>更新 windowsManagedDevice
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承的唯一标识符|
+|id|String|从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承的唯一标识符|
 |userId|String|与设备继承从[managedDevice](../resources/intune-devices-manageddevice.md)关联的用户的唯一标识符|
 |deviceName|String|从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承的名称|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备 hardward 详细信息。  包含信息，如存储空间、 制造商、 序列号等。继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -90,12 +90,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|从[managedDevice](../resources/intune-devices-manageddevice.md)设备加密状态继承|
-|userPrincipalName|字符串|设备用户主体名称继承从[managedDevice](../resources/intune-devices-manageddevice.md)|
+|userPrincipalName|String|设备用户主体名称继承从[managedDevice](../resources/intune-devices-manageddevice.md)|
 |model|String|从[managedDevice](../resources/intune-devices-manageddevice.md)的设备继承的型号|
 |manufacturer|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承设备的制造商|
 |imei|String|IMEI 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|当设备合规性宽限期继承从[managedDevice](../resources/intune-devices-manageddevice.md) DateTime|
-|serialNumber|字符串|SerialNumber 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|serialNumber|String|SerialNumber 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |phoneNumber|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承设备的电话号码|
 |androidSecurityPatchLevel|String|从[managedDevice](../resources/intune-devices-manageddevice.md) android 安全修补程序级别继承|
 |userDisplayName|String|从[managedDevice](../resources/intune-devices-manageddevice.md)的用户显示名称继承|
@@ -110,11 +110,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的用户从[managedDevice](../resources/intune-devices-manageddevice.md)设备继承|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|布尔|如果通过自动试点注册托管的设备，报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|布尔|报告托管的 iOS 设备是否用户审批注册。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期继承从[managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|udid|String|IOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|String 集合|此设备实例范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)此 windows 设备继承的活动恶意软件的计数|
 |windowsRemediatedMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)此 windows 设备继承的补救恶意软件的计数|
@@ -127,14 +127,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7114
+Content-length: 7173
 
 {
+  "@odata.type": "#microsoft.graph.windowsManagedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
   "hardwareInformation": {
@@ -472,7 +474,6 @@ Content-Length: 7222
   }
 }
 ```
-
 
 
 

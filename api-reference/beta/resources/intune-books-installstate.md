@@ -1,23 +1,24 @@
 ---
 title: installState 枚举类型
 description: 安装状态的可能值。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 92fa9887760835a02c26858fb11503a0841d912e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1c3a1d86257611cb00d8ee2c4ee0b8173b03f197
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425874"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 安装状态的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27985380"
 |notInstalled|3|未安装。|
 |uninstallFailed|4|卸载失败。|
 |unknown|5|未知。|
-
 
 
 

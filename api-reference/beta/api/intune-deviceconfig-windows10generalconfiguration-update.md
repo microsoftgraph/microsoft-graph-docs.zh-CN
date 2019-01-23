@@ -1,26 +1,26 @@
 ---
 title: 更新 windows10GeneralConfiguration
 description: 更新 windows10GeneralConfiguration 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6cc76513b78bd5f72b7dbfcaff2f62748c68cdd3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c2ebff0cfce923cf0f208736d30192af72ede00f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930080"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423389"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,13 +60,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|taskManagerBlockEndTask|Boolean|指定是否非管理员可以使用结束任务的任务管理器。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|应用程序的 Windows 10 强制更新计划。|
 |enableAutomaticRedeployment|Boolean|允许用户具有管理权限，以删除所有用户数据和设置在设备锁定屏幕上使用 CTRL + Win + R，以便可以自动重新配置和管理到 re-enrolled 设备。|
-|assignedAccessSingleModeUserName|字符串|此策略设置允许为单个应用程序展台模式定义的用户帐户将被锁定。|
-|assignedAccessSingleModeAppUserModelId|字符串|此策略设置允许为单个应用程序展台模式定义应用程序用户模型 ID (AUMID)，将被锁定。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手 (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
 |authenticationAllowSecondaryDevice|Boolean|允许使用 Windows 的辅助身份验证设备。|
-|authenticationAllowFIDODevice|Boolean|指示允许使用 FIDO 身份验证设备 （https://fidoalliance.org/)|
+|authenticationPreferredAzureADTenantDomainName|String|指定 Azure AD 租户中的可用的域之间的首选的域。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是否允许或禁止联邦信息处理标准 (FIPS) 策略。|
 |displayAppListWithGdiDPIScalingTurnedOn|String 集合|已打开 GDI DPI 缩放比例的旧应用程序的列表。|
 |displayAppListWithGdiDPIScalingTurnedOff|String 集合|已关闭 GDI DPI 缩放比例的旧应用程序的列表。|
@@ -76,11 +75,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |enterpriseCloudPrintResourceIdentifier|String|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|应该从发现终结点查询的打印机最大数量。 此设置仅限移动设备。 有效值为 1 至 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|允许或阻止的 Microsoft 边缘浏览器设置同步。 对于 IT 管理员，以防止跨设备，同步，但允许用户替代选项。 可取值为：`notConfigured`、`blockedWithUserOverride`、`blocked`。|
 |messagingBlockSync|Boolean|指示阻止短信备份和还原和消息无处不在。|
 |messagingBlockMMS|Boolean|指示是否阻止 MMS 发送/接收的设备上的功能。|
 |messagingBlockRichCommunicationServices|Boolean|指示是否阻止 RC 发送/接收的设备上的功能。|
 |printerNames|String 集合|自动设置打印机根据其名称 （网络主机名）。|
-|printerDefaultName|字符串|已安装的打印机的名称 （网络主机名）。|
+|printerDefaultName|String|已安装的打印机的名称 （网络主机名）。|
 |printerBlockAddition|Boolean|阻止用户安装的打印机设置中的其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|Boolean|指定建立内容和属性索引时是否使用自动语言检测。|
@@ -95,7 +95,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|指定是否允许设备自动加密期间 OOBE 设备时 Azure AD 加入 （仅适用于桌面）。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
-|systemTelemetryProxyServer|字符串|获取或设置的完全限定的域名 (FQDN) 或代理服务器连接的用户体验和遥测请求转发的 IP 地址。|
+|systemTelemetryProxyServer|String|获取或设置的完全限定的域名 (FQDN) 或代理服务器连接的用户体验和遥测请求转发的 IP 地址。|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|指定的遥测数据的类型 (无、 intranet、 internet，同时) 发送到 Microsoft 365 分析。 可取值为：`notConfigured`、`intranet`、`internet`、`intranetAndInternet`。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|控制用户访问墨迹工作区中，在桌面上，然后从锁定屏幕上上述。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|控制用户访问墨迹工作区中，在桌面上，然后从锁定屏幕上上述。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |inkWorkspaceBlockSuggestedApps|Boolean|指定是否在墨迹工作区中显示建议的应用程序建议。|
@@ -104,6 +105,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
 |bluetoothAllowedServices|String 集合|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
 |bluetoothBlockAdvertising|Boolean|是否阻止用户使用蓝牙广告。|
+|bluetoothBlockPromptedProximalConnections|Boolean|阻止用户使用 Swift 对和其他接近度基于方案。|
 |bluetoothBlockDiscoverableMode|Boolean|是否阻止用户使用蓝牙可发现模式。|
 |bluetoothBlockPrePairing|Boolean|是否阻止特定的捆绑蓝牙外围设备自动与主机设备配对。|
 |edgeBlockAutofill|Boolean|指示是否阻止自动填充。|
@@ -122,8 +124,23 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeDisableFirstRunPage|Boolean|阻止首次使用 Microsoft Edge 时打开的 Microsoft 网页。 此策略允许企业（如那些参与零排放配置的企业）阻止此页面。|
 |edgeBlockLiveTileDataCollection|Boolean|当用户将某个网站固定为从 Microsoft Edge 启动时，阻止 Microsoft 收集用于实时磁贴创建的信息。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|在 Internet Explorer 和 Microsoft Edge 之间启用收藏夹同步。 在浏览器之间共享对收藏夹的添加、删除、修改和顺序更改。|
-|edgeFavoritesListLocation|字符串|设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
+|edgeFavoritesListLocation|String|设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeBlockEditFavorites|Boolean|指示阻止用户更改收藏夹。|
+|edgeNewTabPageURL|String|指定当创建新选项卡打开该页。|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|使主页按钮来隐藏、 加载默认起始页、 加载新的选项卡上页上或自定义 URL|
+|edgeHomeButtonConfigurationEnabled|Boolean|启用主页按钮配置。|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在启动时打开了哪种类型的页面。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
+|edgeBlockSideloadingExtensions|Boolean|指示用户是否可以 sideload 扩展。|
+|edgeRequiredExtensionPackageFamilyNames|String 集合|指定的所需并不能由用户关闭浏览器扩展的程序包系列名称的列表。|
+|edgeBlockPrinting|Boolean|若要允许或阻止打印的边缘配置。|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|获取或设置一个值，指定是否设置为总是可见还是隐藏任何页面上的收藏夹栏。 可取值为：`notConfigured`、`hide`、`show`。|
+|edgeBlockSavingHistory|Boolean|配置边缘允许浏览历史记录保存或永远不会保存浏览历史记录。|
+|edgeBlockFullScreenMode|Boolean|允许或阻止边缘输入全屏显示模式。|
+|edgeBlockWebContentOnNewTabPage|Boolean|配置 Microsoft 边缘打开新选项卡时显示的内容。|
+|edgeBlockTabPreloading|Boolean|配置是否边缘将 Windows 启动时的新选项卡页。|
+|edgeBlockPrelaunch|Boolean|决定是否将 Microsoft 边缘 prelaunched Windows 启动时。|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|控制切换到 Internet Explorer 之前显示边缘的消息。 可取值为：`notConfigured`、`disabled`、`enabled`、`keepGoing`。|
+|edgePreventCertificateErrorOverride|Boolean|允许或阻止用户替代证书错误。|
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
 |cellularBlockVpn|Boolean|是否阻止用户通过手机网络使用 VPN。|
 |cellularBlockVpnWhenRoaming|Boolean|是否阻止用户在通过手机网络漫游时使用 VPN。|
@@ -247,7 +264,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|指定需要的安全搜索筛选级别。 可取值为：`userDefined`、`strict`、`moderate`。|
 |edgeBlockPopups|Boolean|指示是否阻止弹出窗口。|
 |edgeBlockSearchSuggestions|Boolean|指示是否阻止用户使用地址栏中的搜索建议。|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否阻止用户将 Intranet 流量从 Edge 发送到 Internet Explorer。|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示切换从边缘到 Internet Explorer 的 intranet 通信。 注意： 该属性的名称令人误解;属性已过时，而是使用 EdgeSendIntranetTrafficToInternetExplorer。|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|指示切换从边缘到 Internet Explorer 的 intranet 通信。|
 |edgeRequireSmartScreen|Boolean|指示是否要求用户使用智能屏蔽筛选器。|
 |edgeEnterpriseModeSiteListLocation|String|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeFirstRunUrl|String|第一次打开 Edge 浏览器时的首个运行 URL。|
@@ -307,15 +325,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 12134
+Content-length: 13056
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -323,6 +342,7 @@ Content-length: 12134
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -330,11 +350,9 @@ Content-length: 12134
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -348,6 +366,7 @@ Content-length: 12134
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -370,6 +389,7 @@ Content-length: 12134
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -380,6 +400,7 @@ Content-length: 12134
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -400,6 +421,25 @@ Content-length: 12134
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -543,6 +583,7 @@ Content-length: 12134
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -607,7 +648,7 @@ Content-length: 12134
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12310
+Content-Length: 13228
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -621,6 +662,7 @@ Content-Length: 12310
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -628,11 +670,9 @@ Content-Length: 12310
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -646,6 +686,7 @@ Content-Length: 12310
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -668,6 +709,7 @@ Content-Length: 12310
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -678,6 +720,7 @@ Content-Length: 12310
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -698,6 +741,25 @@ Content-Length: 12310
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -841,6 +903,7 @@ Content-Length: 12310
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -899,7 +962,6 @@ Content-Length: 12310
   "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
-
 
 
 

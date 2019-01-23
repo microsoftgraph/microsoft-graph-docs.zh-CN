@@ -4,12 +4,12 @@ description: 当 OAuth2 客户端凭据授予以用于连接到的数据提供�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 8976c3a3a6088abd88cf70182040d4b3a6cc3f7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8cf7ee292b819a05a735ce6bed2a2c4fc4275907
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425454"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 
@@ -21,10 +21,10 @@ ms.locfileid: "27912888"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **tokenUrl** | 字符串 | 要获取访问令牌的数据提供程序的 URL。 |
-| **scope** | 字符串 | [访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。 |
+| **tokenUrl** | String | 要获取访问令牌的数据提供程序的 URL。 |
+| **scope** | String | [访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {
@@ -33,7 +33,7 @@ ms.locfileid: "27912888"
 }-->
 
 ```json
-"connectionSettings": {
+{
     "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
     "clientId": "String",
     "clientSecret": "String",

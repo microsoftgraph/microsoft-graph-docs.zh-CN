@@ -1,23 +1,24 @@
 ---
 title: dataSharingConsent 资源类型
 description: 数据共享许可信息。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 75d4582d1ad7503757dda4887ccff30149f70af8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bf77a252c323ce83c2dcda44ac294161a4fd4747
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425692"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 数据共享许可信息。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -31,16 +32,17 @@ ms.locfileid: "27962385"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意 TermsUrl|
-|授予|布尔|数据共享同意向其授予的状态|
+|id|String|数据共享同意 Id|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意 TermsUrl|
+|granted|Boolean|数据共享同意向其授予的状态|
 |grantDateTime|DateTimeOffset|此帐户授予时间同意|
-|grantedByUpn|字符串|用户授予许可，为此帐户的 Upn|
-|grantedByUserId|字符串|授予许可，为此帐户的用户的用户 Id|
+|grantedByUpn|String|用户授予许可，为此帐户的 Upn|
+|grantedByUserId|String|授予许可，为此帐户的用户的用户 Id|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
@@ -61,7 +63,6 @@ ms.locfileid: "27962385"
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

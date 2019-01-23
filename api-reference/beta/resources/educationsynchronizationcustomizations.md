@@ -4,12 +4,12 @@ description: 如果有，包含与同步和其自定义的实体列表。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 3254915887afc1e6b0da0b3b6c44b59689219ab1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 18b37276730286650e3fd75ad57a6b16e7917a04
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918187"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425958"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>educationSynchronizationCustomizations 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "27918187"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **学校** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  学校实体的自定义。        |
 | **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  针对部分实体的自定义项。         |
@@ -41,7 +41,7 @@ ms.locfileid: "27918187"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomizations"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
 }-->
 
 ```json

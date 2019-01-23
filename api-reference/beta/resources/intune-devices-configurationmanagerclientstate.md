@@ -1,25 +1,26 @@
 ---
 title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fc6f3f2db68273097d70ba9dccc6844b86afa3f6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 82f4b677001346f9bd32c1bc54bed6e7fbac253d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923885"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425783"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 配置管理器客户端状态
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|配置管理器代理早于 1806年或未安装或此设备超过 30 天未签入 Intune。|
 |安装|1|配置管理器代理已安装，但可能不出现在配置管理器控制台尚未。 等待几个小时才能刷新。|
@@ -27,7 +28,6 @@ ms.locfileid: "27923885"
 |installFailed|8|配置管理器代理安装失败。|
 |updateFailed|11|从 x 版本到版本的配置管理器代理 y 的更新失败。 |
 |communicationError|19|配置管理器代理能够找到配置管理器服务在过去但现在不再能够。 |
-
 
 
 
