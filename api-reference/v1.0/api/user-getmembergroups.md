@@ -1,15 +1,15 @@
 ---
 title: 'user: getMemberGroups'
-description: 返回所有组的成员的用户。 检查，可传递，与阅读不同
+description: 返回用户是其成员的所有组。 检查是可传递的，这不同于读取
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb8caefae8b7c3ced9630309cae51a3b74b45937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415136"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,11 +23,11 @@ ms.locfileid: "27969203"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | ~~User.Read 和 Group.Read.All~~、~~User.ReadBasic.All 和 Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            | _Group.Read.All_、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
 
-> **注意：** 此 API 目前需要`Directory.Read.All`权限或更高版本。 单独或结合使用 Group.Read.All 权限，`User.`权限，将返回错误。 这是一个已知 bug。
+> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 单独使用 Group.Read.All 权限或将其与 `User.` 权限结合使用将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 
