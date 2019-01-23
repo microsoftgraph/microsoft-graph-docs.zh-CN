@@ -4,12 +4,12 @@ description: 更新为租户中为现有学校数据同步配置文件属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 07947127b0346a33528136921580646623576d28
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c99984b4ca0d8d72fdc02d28a8de80761fdbd60
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398735"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 
@@ -32,7 +32,7 @@ ms.locfileid: "27935085"
 PUT /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
@@ -58,7 +58,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+        "@odata.type": "microsoft.graph.educationcsvdataprovider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -69,7 +69,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationidentitycreationconfiguration",
+        "@odata.type": "microsoft.graph.educationidentitycreationconfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -106,7 +106,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -117,7 +117,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -157,7 +157,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -171,14 +171,14 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",                
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",                
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",                
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",                
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"

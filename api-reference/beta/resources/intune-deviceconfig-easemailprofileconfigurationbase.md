@@ -1,23 +1,24 @@
 ---
 title: easEmailProfileConfigurationBase 资源类型
 description: Apple 设备功能配置的配置文件。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 07456bd457d25fa5a0904bc99dc20ede375b3de5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 97b0c422491c7249dcd4adb30a3de4b779334dcc
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400240"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>easEmailProfileConfigurationBase 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Apple 设备功能配置的配置文件。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -41,9 +42,9 @@ Apple 设备功能配置的配置文件。
 |usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Username 属性是从 AAD 选取并在设备上安装之前将其插入此配置文件。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|AAD 字段，将用于检索用户名电子邮件配置文件的名称。 可取值为：`userPrincipalName`、`primarySmtpAddress`、`samAccountName`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|是从 AAD 选取并在设备上安装之前将其插入此配置文件的用户域名属性。 可取值为：`fullDomainName`、`netBiosDomainName`。|
-|customDomainName|字符串|在设备上安装之前生成的电子邮件配置文件时使用的自定义域名称值。|
+|customDomainName|String|在设备上安装之前生成的电子邮件配置文件时使用的自定义域名称值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -81,7 +82,6 @@ Apple 设备功能配置的配置文件。
   "customDomainName": "String"
 }
 ```
-
 
 
 

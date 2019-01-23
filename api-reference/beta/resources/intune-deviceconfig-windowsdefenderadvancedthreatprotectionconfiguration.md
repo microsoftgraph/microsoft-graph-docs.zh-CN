@@ -1,23 +1,24 @@
 ---
 title: windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 description: Windows Defender 高级威胁防护配置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 430ba37b65602138b1fc3f1625679670832cf0ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8ee3a5169715e6d8e550c8f6bc5ad623d978102f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398679"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows Defender 高级威胁防护配置。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -41,15 +42,15 @@ Windows Defender 高级威胁防护配置。
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|advancedThreatProtectionOnboardingBlob|字符串|Windows Defender AdvancedThreatProtection 入职培训 Blob。|
-|advancedThreatProtectionOnboardingFilename|字符串|从中获取 AdvancedThreatProtectionOnboardingBlob 文件的名称。|
+|advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection 入职培训 Blob。|
+|advancedThreatProtectionOnboardingFilename|String|从中获取 AdvancedThreatProtectionOnboardingBlob 文件的名称。|
 |advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|自动填充入职培训 blob 以编程方式从高级威胁保护服务|
 |allowSampleSharing|Boolean|Windows Defender 高级威胁防护“允许示例共享”规则|
 |enableExpeditedTelemetryReporting|Boolean|加速 Windows Defender 高级威胁防护遥测报告的频率。|
-|advancedThreatProtectionOffboardingBlob|字符串|Windows Defender AdvancedThreatProtection 分离 Blob。|
-|advancedThreatProtectionOffboardingFilename|字符串|从中获取 AdvancedThreatProtectionOffboardingBlob 文件的名称。|
+|advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection 分离 Blob。|
+|advancedThreatProtectionOffboardingFilename|String|从中获取 AdvancedThreatProtectionOffboardingBlob 文件的名称。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -90,7 +91,6 @@ Windows Defender 高级威胁防护配置。
   "advancedThreatProtectionOffboardingFilename": "String"
 }
 ```
-
 
 
 

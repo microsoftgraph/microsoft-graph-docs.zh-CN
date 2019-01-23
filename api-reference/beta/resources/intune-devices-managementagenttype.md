@@ -1,25 +1,26 @@
 ---
 title: managementAgentType 枚举类型
 description: 管理代理类型。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1711ad647afabc2b8877bd2f99b049bd1c1dd4e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9c42d4ea4a5114bc42966891e4cd60ea87ca303e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401003"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 管理代理类型。
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |eas|1|设备管理 Exchange server。|
 |mdm|2|设备管理由 Intune mdm。|
@@ -33,7 +34,6 @@ ms.locfileid: "27914281"
 |jamf|32|从 Jamf 获取设备属性。|
 |googleCloudDevicePolicyController|64|由 Google 的 CloudDPC 管理设备。|
 |microsoft365ManagedMdm|258|由 Microsoft 365 通过 Intune 管理此设备。|
-
 
 
 

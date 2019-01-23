@@ -3,21 +3,22 @@ title: windowsIdentityProtectionConfiguration 资源类型
 description: 此实体提供了属性、 由 Windows Hello for Business 公开的关系的声明方法的说明。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 30cb45c30e59db0cfd0310bde019c8a4b5b26ab7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 431e85e0daddb10e2726dd65e5a6770cf80a0452
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398595"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>windowsIdentityProtectionConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此实体提供了属性、 由 Windows Hello for Business 公开的关系的声明方法的说明。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -36,12 +37,13 @@ ms.locfileid: "27957863"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|布尔|用于启用增强反欺骗 Windows Hello 图符身份验证的面部功能识别的布尔值。|
+|useSecurityKeyForSignin|Boolean|用于启用 Windows Hello 安全密钥作为登录凭据的布尔值。|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|用于启用增强反欺骗 Windows Hello 图符身份验证的面部功能识别的布尔值。|
 |pinMinimumLength|Int32|设置的最小所需的 Windows Hello 业务 PIN 的字符数的整数值。 有效值为 4 到 127 之间，因此小于或等于的值的最大 PIN 设置。 有效值 4 到 127|
 |pinMaximumLength|Int32|设置的最大允许工作 PIN 的字符数的整数值。 有效值为 4 到 127 非独占且大于或等于最小 PIN 设置的值。 有效值 4 到 127|
 |pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值将使用大写字符中 Windows Hello 配置的业务 PIN。 可取值为：`blocked`、`required`、`allowed`。|
@@ -49,14 +51,14 @@ ms.locfileid: "27957863"
 |pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制能否使用特殊字符中 Windows Hello 业务 PIN。 可取值为：`blocked`、`required`、`allowed`。|
 |pinExpirationInDays|Int32|整数值，指定的时间段 （以天为单位） 的系统要求用户更改其之前，可以使用 PIN。 有效值为 0 到 730 之间。 有效值为 0 至 730|
 |pinPreviousBlockCount|Int32|控制能否阻止用户使用过旋转中心点。 这必须介于 0 到 50，含之间设置和用户的当前 PIN，包含在该计数。 如果设置为 0，以前 Pin 不会存储。 PIN 历史记录不保留通过 PIN 重置。 有效值为 0 至 50|
-|pinRecoveryEnabled|布尔|布尔值，使用户能够通过使用 Windows Hello 业务 PIN 恢复服务更改其 PIN。|
+|pinRecoveryEnabled|Boolean|布尔值，使用户能够通过使用 Windows Hello 业务 PIN 恢复服务更改其 PIN。|
 |securityDeviceRequired|Boolean|控制是否用于设置 Windows Hello 的业务要求受信任平台模块 (TPM)。 TPM 提供其他安全的优势，不能在其他设备上使用存储在其上的数据。 如果设置为 False，所有设备可以都设置 Windows Hello for Business 即使没有可用 TPM。|
 |unlockWithBiometricsEnabled|Boolean|控制生物手势，如图符和指纹，用作的替代方法 Windows Hello 的业务 PIN。  如果不允许设置为 False，生物手势。 用户仍必须作为出现故障时备份配置 PIN。|
-|useCertificatesForOnPremisesAuthEnabled|布尔|启用 Windows Hello for Business 使用证书进行身份验证的本地资源的布尔值。|
+|useCertificatesForOnPremisesAuthEnabled|Boolean|启用 Windows Hello for Business 使用证书进行身份验证的本地资源的布尔值。|
 |windowsHelloForBusinessBlocked|Boolean|阻止 Windows Hello for Business 作为用于登录到 Windows 方法的布尔值。|
 
-## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+## <a name="relationships"></a>关系
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -87,6 +89,7 @@ ms.locfileid: "27957863"
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 1024,
   "pinMaximumLength": 1024,
@@ -102,7 +105,6 @@ ms.locfileid: "27957863"
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: 启用枚举类型
-description: '用于指示状态的设备的值。 '
+description: 介绍 Intune，支持多个工作流 Microsoft Graph API 启用枚举。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 539d57111003f348147a6be3952d969ab4206b5d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 538b52790cf7748453adfda2a6bea8334a36fb87
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911957"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399561"
 ---
 # <a name="enablement-enum-type"></a>启用枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "27911957"
 请注意，没有区别禁用，且未配置。
 
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|设备默认值，没有用途。|
 |enabled|1|允许在设备上的设置。|
