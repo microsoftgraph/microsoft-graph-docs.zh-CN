@@ -4,12 +4,12 @@ description: 使用此 API 可以创建请求正文中指定的新组。可以�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 2a3e0e20622db47d410b578249df94f3354e75ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: c82774e72e6841f84d879ce3ce34febb8d88c2fd
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981544"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353095"
 ---
 # <a name="create-group"></a>创建组
 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
@@ -17,6 +17,10 @@ ms.locfileid: "27981544"
 * Office 365 组（统一组）
 * 动态组
 * 安全组
+
+此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。
+
+若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
 
 > **注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 
@@ -41,16 +45,16 @@ POST /groups
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-下表显示[组](../resources/group.md)资源时创建一组指定的属性。 
+下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。 
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 必填。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 此设置为**true**如果创建 Office 365 组。 此设置为**false**如果创建动态或安全组。 必填。 |
-| mailNickname | string | 组的邮件别名。 必填。 |
-| securityEnabled | boolean | 设置为**true**已启用安全的组。 此设置为**true**如果创建动态或安全组。 此设置为**false**如果创建 Office 365 组。 必填。 |
-| owners | string collection | 在创建时，此属性表示所有者组。 可选。 |
-| members | string collection | 在创建时，此属性表示组的成员。 可选。 |
+| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
+| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 如果创建 Office 365 组，则将此设置为 **true**。 如果创建动态或安全组，则将此设置为 **false**。 必需。 |
+| mailNickname | string | 组的邮件别名。 必需。 |
+| securityEnabled | 布尔 | 对于启用安全机制的组，请设置为 **true**。 如果创建动态或安全组，则将此设置为 **true**。 如果创建 Office 365 组，则将此设置为 **false**。 必需。 |
+| owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
+| members | string collection | 此属性表示创建时指定的组成员。 可选。 |
 
 
 如果你正在创建的是 Office 365 或动态组，则按如下所述指定 **groupTypes** 属性。
@@ -64,16 +68,16 @@ POST /groups
 | 安全性 | 请勿设置。 |
 
 
->**注意：** 创建 Office 365 组以编程方式不用户上下文，也不指定所有者将匿名创建组。  这样做可能会导致正在才可以创建自动采取进一步的手动操作关联的 SharePoint Online 网站。  
+>**注意：** 以编程方式创建 Office 365 组时，若未提供用户上下文且未指定所有者，则将以匿名方式创建组。  这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
 
 根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="example"></a>示例
 #### <a name="request-1"></a>请求 1
-第一个示例请求创建一个 Office 365 组。
+第一个示例请求将创建 Office 365 组。
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -96,48 +100,66 @@ Content-length: 244
 ```
 
 #### <a name="response-1"></a>响应 1
-下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mail": "library@contoso.onmicrosoft.com",
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T00:51:37Z",
+      "creationOptions": [],
+      "description": "Self help community for library",
+      "displayName": "Library Assist",
+      "groupTypes": [
+          "Unified"
+      ],
+      "mail": "library7423@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "library",
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "proxyAddresses": [
+          "SMTP:library7423@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T00:51:37Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
 }
 ```
 
 #### <a name="request-2"></a>请求 2
-第二个示例请求创建一个 Office 365 组指定的所有者。
+第二个示例请求将创建具有指定所有者的 Office 365 组。
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_group_with_owner"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-  "description": "Group with owners",
-  "displayName": "Group1",
+  "description": "Group with designated owner",
+  "displayName": "Operations group",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "group1",
+  "mailNickname": "operations2019",
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
@@ -146,27 +168,46 @@ Content-Type: application/json
 ```
 
 #### <a name="response-2"></a>响应 2
-下面是响应的成功的示例。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 导航属性，来验证所有者的详细信息。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group_with_owner"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "description": "Group with owners",
-    "displayName": "Group1",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-27T22:17:07Z",
+    "creationOptions": [],
+    "description": "Group with designated owner",
+    "displayName": "Operations group",
     "groupTypes": [
         "Unified"
     ],
-    "mail": "group1@contoso.onmicrosoft.com",
+    "mail": "operations2019@contoso.com",
     "mailEnabled": true,
-    "mailNickname": "group1",
-    "securityEnabled": false
+    "mailNickname": "operations2019",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "SMTP:operations2019@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
 }
 ```
 
