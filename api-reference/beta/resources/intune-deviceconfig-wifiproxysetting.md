@@ -1,30 +1,30 @@
 ---
 title: wiFiProxySetting 枚举类型
 description: Wi-fi 代理设置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 320e599a2e5350a8b2e2ecd57d501cf38de88ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 98ed8491b61b8223af04ac827c61fe31244f5495
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418951"
 ---
-# <a name="wifiproxysetting-enum-type"></a><span data-ttu-id="f161b-103">wiFiProxySetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="f161b-103">wiFiProxySetting enum type</span></span>
+# <a name="wifiproxysetting-enum-type"></a><span data-ttu-id="175fe-103">wiFiProxySetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="175fe-103">wiFiProxySetting enum type</span></span>
 
-> <span data-ttu-id="f161b-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f161b-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f161b-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f161b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="175fe-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="175fe-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="175fe-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="175fe-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f161b-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="f161b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="175fe-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="175fe-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f161b-107">Wi-fi 代理设置。</span><span class="sxs-lookup"><span data-stu-id="f161b-107">Wi-Fi Proxy Settings.</span></span>
-## <a name="members"></a><span data-ttu-id="f161b-108">成员</span><span class="sxs-lookup"><span data-stu-id="f161b-108">Members</span></span>
-|<span data-ttu-id="f161b-109">成员</span><span class="sxs-lookup"><span data-stu-id="f161b-109">Member</span></span>|<span data-ttu-id="f161b-110">值</span><span class="sxs-lookup"><span data-stu-id="f161b-110">Value</span></span>|<span data-ttu-id="f161b-111">Description</span><span class="sxs-lookup"><span data-stu-id="f161b-111">Description</span></span>|
+<span data-ttu-id="175fe-107">Wi-fi 代理设置。</span><span class="sxs-lookup"><span data-stu-id="175fe-107">Wi-Fi Proxy Settings.</span></span>
+
+## <a name="members"></a><span data-ttu-id="175fe-108">成员</span><span class="sxs-lookup"><span data-stu-id="175fe-108">Members</span></span>
+|<span data-ttu-id="175fe-109">成员</span><span class="sxs-lookup"><span data-stu-id="175fe-109">Member</span></span>|<span data-ttu-id="175fe-110">值</span><span class="sxs-lookup"><span data-stu-id="175fe-110">Value</span></span>|<span data-ttu-id="175fe-111">说明</span><span class="sxs-lookup"><span data-stu-id="175fe-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f161b-112">无</span><span class="sxs-lookup"><span data-stu-id="f161b-112">none</span></span>|<span data-ttu-id="f161b-113">0</span><span class="sxs-lookup"><span data-stu-id="f161b-113">0</span></span>|<span data-ttu-id="f161b-114">没有代理。</span><span class="sxs-lookup"><span data-stu-id="f161b-114">No Proxy.</span></span>|
-|<span data-ttu-id="f161b-115">手动</span><span class="sxs-lookup"><span data-stu-id="f161b-115">manual</span></span>|<span data-ttu-id="f161b-116">1</span><span class="sxs-lookup"><span data-stu-id="f161b-116">1</span></span>|<span data-ttu-id="f161b-117">通过地址和端口的手动代理设置。</span><span class="sxs-lookup"><span data-stu-id="f161b-117">Manual Proxy Settings via Address and Port.</span></span>|
-|<span data-ttu-id="f161b-118">自动</span><span class="sxs-lookup"><span data-stu-id="f161b-118">automatic</span></span>|<span data-ttu-id="f161b-119">2</span><span class="sxs-lookup"><span data-stu-id="f161b-119">2</span></span>|<span data-ttu-id="f161b-120">通过 URL 自动代理设置。</span><span class="sxs-lookup"><span data-stu-id="f161b-120">Automatic Proxy Settings via URL.</span></span>|
-
+|<span data-ttu-id="175fe-112">无</span><span class="sxs-lookup"><span data-stu-id="175fe-112">none</span></span>|<span data-ttu-id="175fe-113">0</span><span class="sxs-lookup"><span data-stu-id="175fe-113">0</span></span>|<span data-ttu-id="175fe-114">没有代理。</span><span class="sxs-lookup"><span data-stu-id="175fe-114">No Proxy.</span></span>|
+|<span data-ttu-id="175fe-115">手动</span><span class="sxs-lookup"><span data-stu-id="175fe-115">manual</span></span>|<span data-ttu-id="175fe-116">1</span><span class="sxs-lookup"><span data-stu-id="175fe-116">1</span></span>|<span data-ttu-id="175fe-117">通过地址和端口的手动代理设置。</span><span class="sxs-lookup"><span data-stu-id="175fe-117">Manual Proxy Settings via Address and Port.</span></span>|
+|<span data-ttu-id="175fe-118">自动</span><span class="sxs-lookup"><span data-stu-id="175fe-118">automatic</span></span>|<span data-ttu-id="175fe-119">2</span><span class="sxs-lookup"><span data-stu-id="175fe-119">2</span></span>|<span data-ttu-id="175fe-120">通过 URL 自动代理设置。</span><span class="sxs-lookup"><span data-stu-id="175fe-120">Automatic Proxy Settings via URL.</span></span>|
 
 
 
