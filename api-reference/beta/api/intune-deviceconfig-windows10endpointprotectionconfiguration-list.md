@@ -1,34 +1,34 @@
 ---
 title: 列出 windows10EndpointProtectionConfigurations
 description: 列出 windows10EndpointProtectionConfiguration 对象的属性和关系。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 587bb54918d85d5a36d5f1faf922c0adffa937e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d730746e1d75e5af198cc60cdb12c3e907a2657e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407737"
 ---
-# <a name="list-windows10endpointprotectionconfigurations"></a><span data-ttu-id="2def5-103">列出 windows10EndpointProtectionConfigurations</span><span class="sxs-lookup"><span data-stu-id="2def5-103">List windows10EndpointProtectionConfigurations</span></span>
+# <a name="list-windows10endpointprotectionconfigurations"></a><span data-ttu-id="4d610-103">列出 windows10EndpointProtectionConfigurations</span><span class="sxs-lookup"><span data-stu-id="4d610-103">List windows10EndpointProtectionConfigurations</span></span>
 
-> <span data-ttu-id="2def5-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="2def5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2def5-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2def5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4d610-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="4d610-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4d610-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4d610-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="2def5-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="2def5-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="4d610-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4d610-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2def5-107">列出 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2def5-107">List properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="2def5-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="2def5-108">Prerequisites</span></span>
-<span data-ttu-id="2def5-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="2def5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4d610-107">列出 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4d610-107">List properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects.</span></span>
 
-|<span data-ttu-id="2def5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2def5-111">Permission type</span></span>|<span data-ttu-id="2def5-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2def5-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="4d610-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="4d610-108">Prerequisites</span></span>
+<span data-ttu-id="4d610-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4d610-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="4d610-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d610-111">Permission type</span></span>|<span data-ttu-id="4d610-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4d610-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2def5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2def5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2def5-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="2def5-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="2def5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2def5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2def5-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2def5-116">Not supported.</span></span>|
-|<span data-ttu-id="2def5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="2def5-117">Application</span></span>|<span data-ttu-id="2def5-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="2def5-118">Not supported.</span></span>|
+|<span data-ttu-id="4d610-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d610-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4d610-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="4d610-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="4d610-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d610-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4d610-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d610-116">Not supported.</span></span>|
+|<span data-ttu-id="4d610-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d610-117">Application</span></span>|<span data-ttu-id="4d610-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d610-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2def5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2def5-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d610-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d610-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +38,32 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2def5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="2def5-120">Request headers</span></span>
-|<span data-ttu-id="2def5-121">标头</span><span class="sxs-lookup"><span data-stu-id="2def5-121">Header</span></span>|<span data-ttu-id="2def5-122">值</span><span class="sxs-lookup"><span data-stu-id="2def5-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4d610-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d610-120">Request headers</span></span>
+|<span data-ttu-id="4d610-121">标头</span><span class="sxs-lookup"><span data-stu-id="4d610-121">Header</span></span>|<span data-ttu-id="4d610-122">值</span><span class="sxs-lookup"><span data-stu-id="4d610-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2def5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2def5-123">Authorization</span></span>|<span data-ttu-id="2def5-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2def5-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2def5-125">Accept</span><span class="sxs-lookup"><span data-stu-id="2def5-125">Accept</span></span>|<span data-ttu-id="2def5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2def5-126">application/json</span></span>|
+|<span data-ttu-id="4d610-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d610-123">Authorization</span></span>|<span data-ttu-id="4d610-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4d610-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4d610-125">Accept</span><span class="sxs-lookup"><span data-stu-id="4d610-125">Accept</span></span>|<span data-ttu-id="4d610-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4d610-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2def5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2def5-127">Request body</span></span>
-<span data-ttu-id="2def5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2def5-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d610-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d610-127">Request body</span></span>
+<span data-ttu-id="4d610-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4d610-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2def5-129">响应</span><span class="sxs-lookup"><span data-stu-id="2def5-129">Response</span></span>
-<span data-ttu-id="2def5-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="2def5-130">If successful, this method returns a `200 OK` response code and a collection of [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4d610-129">响应</span><span class="sxs-lookup"><span data-stu-id="4d610-129">Response</span></span>
+<span data-ttu-id="4d610-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4d610-130">If successful, this method returns a `200 OK` response code and a collection of [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2def5-131">示例</span><span class="sxs-lookup"><span data-stu-id="2def5-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="2def5-132">请求</span><span class="sxs-lookup"><span data-stu-id="2def5-132">Request</span></span>
-<span data-ttu-id="2def5-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2def5-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4d610-131">示例</span><span class="sxs-lookup"><span data-stu-id="4d610-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="4d610-132">请求</span><span class="sxs-lookup"><span data-stu-id="4d610-132">Request</span></span>
+<span data-ttu-id="4d610-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4d610-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="2def5-134">响应</span><span class="sxs-lookup"><span data-stu-id="2def5-134">Response</span></span>
-<span data-ttu-id="2def5-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2def5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4d610-134">响应</span><span class="sxs-lookup"><span data-stu-id="4d610-134">Response</span></span>
+<span data-ttu-id="4d610-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4d610-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29008
+Content-Length: 29168
 
 {
   "value": [
@@ -78,6 +79,7 @@ Content-Length: 29008
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "dmaGuardDeviceEnumerationPolicy": "blockAll",
       "userRightsAccessCredentialManagerAsTrustedCaller": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
@@ -433,9 +435,9 @@ Content-Length: 29008
       "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
       "localSecurityOptionsBlockMicrosoftAccounts": true,
       "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-      "localSecurityOptionsEnableAdministratorAccount": true,
+      "localSecurityOptionsDisableAdministratorAccount": true,
       "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-      "localSecurityOptionsEnableGuestAccount": true,
+      "localSecurityOptionsDisableGuestAccount": true,
       "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
       "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
       "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -454,7 +456,7 @@ Content-Length: 29008
       "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
       "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
       "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-      "lanManagerWorkstationEnableInsecureGuestLogons": true,
+      "lanManagerWorkstationDisableInsecureGuestLogons": true,
       "localSecurityOptionsClearVirtualMemoryPageFile": true,
       "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
       "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -623,6 +625,7 @@ Content-Length: 29008
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
       "deviceGuardEnableSecureBootWithDMA": true,
+      "deviceGuardLaunchSystemGuard": "enabled",
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
       "applicationGuardEnabled": true,
@@ -638,6 +641,7 @@ Content-Length: 29008
       "applicationGuardAllowPrintToNetworkPrinters": true,
       "applicationGuardAllowVirtualGPU": true,
       "applicationGuardAllowFileSaveOnHost": true,
+      "bitLockerAllowStandardUserEncryption": true,
       "bitLockerDisableWarningForOtherDiskEncryption": true,
       "bitLockerEnableStorageCardEncryptionOnMobile": true,
       "bitLockerEncryptDevice": true,
@@ -690,7 +694,6 @@ Content-Length: 29008
   ]
 }
 ```
-
 
 
 

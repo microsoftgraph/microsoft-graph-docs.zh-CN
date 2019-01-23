@@ -1,36 +1,38 @@
 ---
 title: unaryManagementConditionExpression 资源类型
 description: 管理条件表达式进行求值使用一元操作。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 06a379a53d6d85956a54bede444714e082196ba3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f1224a869ec2ec9cae2f38273f7a68b64d3d7333
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406778"
 ---
-# <a name="unarymanagementconditionexpression-resource-type"></a><span data-ttu-id="032b9-103">unaryManagementConditionExpression 资源类型</span><span class="sxs-lookup"><span data-stu-id="032b9-103">unaryManagementConditionExpression resource type</span></span>
+# <a name="unarymanagementconditionexpression-resource-type"></a><span data-ttu-id="472d5-103">unaryManagementConditionExpression 资源类型</span><span class="sxs-lookup"><span data-stu-id="472d5-103">unaryManagementConditionExpression resource type</span></span>
 
-> <span data-ttu-id="032b9-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="032b9-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="032b9-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="032b9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="472d5-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="472d5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="472d5-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="472d5-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="032b9-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="032b9-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="472d5-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="472d5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="032b9-107">管理条件表达式进行求值使用一元操作。</span><span class="sxs-lookup"><span data-stu-id="032b9-107">A management condition expression that is evaluated using a unary operation.</span></span>
+<span data-ttu-id="472d5-107">管理条件表达式进行求值使用一元操作。</span><span class="sxs-lookup"><span data-stu-id="472d5-107">A management condition expression that is evaluated using a unary operation.</span></span>
 
-<span data-ttu-id="032b9-108">继承自[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span><span class="sxs-lookup"><span data-stu-id="032b9-108">Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="032b9-109">属性</span><span class="sxs-lookup"><span data-stu-id="032b9-109">Properties</span></span>
-|<span data-ttu-id="032b9-110">属性</span><span class="sxs-lookup"><span data-stu-id="032b9-110">Property</span></span>|<span data-ttu-id="032b9-111">类型</span><span class="sxs-lookup"><span data-stu-id="032b9-111">Type</span></span>|<span data-ttu-id="032b9-112">说明</span><span class="sxs-lookup"><span data-stu-id="032b9-112">Description</span></span>|
+<span data-ttu-id="472d5-108">继承自[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span><span class="sxs-lookup"><span data-stu-id="472d5-108">Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="472d5-109">属性</span><span class="sxs-lookup"><span data-stu-id="472d5-109">Properties</span></span>
+|<span data-ttu-id="472d5-110">属性</span><span class="sxs-lookup"><span data-stu-id="472d5-110">Property</span></span>|<span data-ttu-id="472d5-111">类型</span><span class="sxs-lookup"><span data-stu-id="472d5-111">Type</span></span>|<span data-ttu-id="472d5-112">说明</span><span class="sxs-lookup"><span data-stu-id="472d5-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="032b9-113">operator</span><span class="sxs-lookup"><span data-stu-id="032b9-113">operator</span></span>|[<span data-ttu-id="032b9-114">unaryManagementConditionExpressionOperatorType</span><span class="sxs-lookup"><span data-stu-id="032b9-114">unaryManagementConditionExpressionOperatorType</span></span>](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|<span data-ttu-id="032b9-115">在评估一元运算的运算符。</span><span class="sxs-lookup"><span data-stu-id="032b9-115">The operator used in the evaluation of the unary operation.</span></span> <span data-ttu-id="032b9-116">可能的值为： `not`。</span><span class="sxs-lookup"><span data-stu-id="032b9-116">Possible values are: `not`.</span></span>|
-|<span data-ttu-id="032b9-117">操作数</span><span class="sxs-lookup"><span data-stu-id="032b9-117">operand</span></span>|[<span data-ttu-id="032b9-118">managementConditionExpressionModel</span><span class="sxs-lookup"><span data-stu-id="032b9-118">managementConditionExpressionModel</span></span>](../resources/intune-fencing-managementconditionexpressionmodel.md)|<span data-ttu-id="032b9-119">一元运算的操作数。</span><span class="sxs-lookup"><span data-stu-id="032b9-119">The operand of the unary operation.</span></span>|
+|<span data-ttu-id="472d5-113">operator</span><span class="sxs-lookup"><span data-stu-id="472d5-113">operator</span></span>|[<span data-ttu-id="472d5-114">unaryManagementConditionExpressionOperatorType</span><span class="sxs-lookup"><span data-stu-id="472d5-114">unaryManagementConditionExpressionOperatorType</span></span>](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|<span data-ttu-id="472d5-115">在评估一元运算的运算符。</span><span class="sxs-lookup"><span data-stu-id="472d5-115">The operator used in the evaluation of the unary operation.</span></span> <span data-ttu-id="472d5-116">可能的值为： `not`。</span><span class="sxs-lookup"><span data-stu-id="472d5-116">Possible values are: `not`.</span></span>|
+|<span data-ttu-id="472d5-117">操作数</span><span class="sxs-lookup"><span data-stu-id="472d5-117">operand</span></span>|[<span data-ttu-id="472d5-118">managementConditionExpressionModel</span><span class="sxs-lookup"><span data-stu-id="472d5-118">managementConditionExpressionModel</span></span>](../resources/intune-fencing-managementconditionexpressionmodel.md)|<span data-ttu-id="472d5-119">一元运算的操作数。</span><span class="sxs-lookup"><span data-stu-id="472d5-119">The operand of the unary operation.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="032b9-120">Relationships</span><span class="sxs-lookup"><span data-stu-id="032b9-120">Relationships</span></span>
-<span data-ttu-id="032b9-121">无</span><span class="sxs-lookup"><span data-stu-id="032b9-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="032b9-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="032b9-122">JSON Representation</span></span>
-<span data-ttu-id="032b9-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="032b9-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="472d5-120">关系</span><span class="sxs-lookup"><span data-stu-id="472d5-120">Relationships</span></span>
+<span data-ttu-id="472d5-121">无</span><span class="sxs-lookup"><span data-stu-id="472d5-121">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="472d5-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="472d5-122">JSON Representation</span></span>
+<span data-ttu-id="472d5-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="472d5-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unaryManagementConditionExpression"
@@ -45,7 +47,6 @@ ms.locfileid: "27949421"
   }
 }
 ```
-
 
 
 
