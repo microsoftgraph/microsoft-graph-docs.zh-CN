@@ -4,12 +4,12 @@ description: 为租户中获取特定学校数据同步配置文件的状态。 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3b235ca243e6ee0f2ebb442d53a7425fa979d778
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 394bb03760e33b4581f5d29e90a4c8fd875c26d0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418132"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -32,7 +32,7 @@ ms.locfileid: "27965451"
 GET /synchronizationProfiles/{id}/profileStatus
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus",
 } -->
 ```http
 HTTP/1.1 200 OK

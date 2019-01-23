@@ -1,26 +1,26 @@
 ---
 title: 创建 windowsAutopilotDeviceIdentity
 description: 创建新的 windowsAutopilotDeviceIdentity 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 56d200bd53e94715ba102f6c96bba3e3b5dd892b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9d9287738b33b1afe55a3f22c441b888ae7d77b4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406393"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -51,20 +51,20 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|配置文件 Windows 自动执行某些操作设备的工作分配的状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配详细 Windows 自动执行某些操作设备的状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|配置文件设置的 Windows 自动执行某些操作设备的时间。|
-|orderIdentifier|字符串|Windows 自动执行某些操作设备的顺序标识符。|
-|purchaseOrderIdentifier|字符串|采购订单的 Windows 自动执行某些操作设备的标识符。|
-|serialNumber|字符串|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
+|orderIdentifier|String|Windows 自动执行某些操作设备的顺序标识符。|
+|purchaseOrderIdentifier|String|采购订单的 Windows 自动执行某些操作设备的标识符。|
+|serialNumber|String|Windows autopilot 设备序列号。|
+|productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|Oem 的 Windows 自动执行某些操作设备的制造商。|
 |model|String|模型的 Windows 自动执行某些操作设备的名称。|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自动执行某些操作设备 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune 上次联系日期时间的 Windows 自动执行某些操作设备。|
-|addressableUserName|字符串|可寻址用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|addressableUserName|String|可寻址用户名。|
+|userPrincipalName|String|用户主体名称。|
 
 
 
@@ -72,6 +72,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -122,7 +123,6 @@ Content-Length: 804
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: androidForWorkGeneralDeviceConfiguration 资源类型
 description: Android 的工作常规设备配置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 67f16c53663c8b2b37d2e0dea5e82f2de5ed5825
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 427963a80f48e7f98c73a89d0288d515257bbafa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420120"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>androidForWorkGeneralDeviceConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 的工作常规设备配置。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -36,7 +37,7 @@ Android 的工作常规设备配置。
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -47,20 +48,20 @@ Android 的工作常规设备配置。
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 4 至 11|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效的值 1 到 16|
 |passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
 |workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|允许共享的数据的类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|布尔|指示阻止通知时设备锁定。|
-|workProfileBlockAddingAccounts|布尔|阻止用户添加/移除工作配置文件中的帐户。|
-|workProfileBluetoothEnableContactSharing|布尔|允许蓝牙设备访问企业联系人。|
-|workProfileBlockScreenCapture|布尔|阻止工作配置文件中的屏幕截图。|
-|workProfileBlockCrossProfileCallerId|布尔|阻止显示工作 profile 呼叫者 ID 个人配置文件中。|
-|workProfileBlockCamera|布尔|阻止工作 profile 摄像头。|
-|workProfileBlockCrossProfileContactsSearch|布尔|个人配置文件中，阻止工作 profile 联系人可用性。|
-|workProfileBlockCrossProfileCopyPaste|布尔|布尔值，指示设置不允许跨是否启用配置文件复制/粘贴。|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示阻止通知时设备锁定。|
+|workProfileBlockAddingAccounts|Boolean|阻止用户添加/移除工作配置文件中的帐户。|
+|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
+|workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕截图。|
+|workProfileBlockCrossProfileCallerId|Boolean|阻止显示工作 profile 呼叫者 ID 个人配置文件中。|
+|workProfileBlockCamera|Boolean|阻止工作 profile 摄像头。|
+|workProfileBlockCrossProfileContactsSearch|Boolean|个人配置文件中，阻止工作 profile 联系人可用性。|
+|workProfileBlockCrossProfileCopyPaste|Boolean|布尔值，指示设置不允许跨是否启用配置文件复制/粘贴。|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
-|workProfilePasswordBlockFingerprintUnlock|布尔|指示是否阻止指纹解锁工作配置文件。|
-|workProfilePasswordBlockTrustAgents|布尔|指示阻止智能锁定和其他信任代理工作配置文件。|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁工作配置文件。|
+|workProfilePasswordBlockTrustAgents|Boolean|指示阻止智能锁定和其他信任代理工作配置文件。|
 |workProfilePasswordExpirationDays|Int32|过期工作配置文件密码之前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码最小长度。 有效值为 4 至 16|
 |workProfilePasswordMinNumericCharacters|Int32|最小 ハ  工作配置文件密码中所需的数字字符。 有效的值 1 到 10|
@@ -71,15 +72,15 @@ Android 的工作常规设备配置。
 |workProfilePasswordMinSymbolCharacters|Int32|最小 ハ  工作配置文件密码中需要的符号。 有效的值 1 到 10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |workProfilePasswordPreviousPasswordBlockCount|Int32|以前的工作配置文件密码，以阻止数。 有效值为 0 至 24|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|登录失败之前删除工作配置文件允许和已删除的所有企业数据的数量。 有效值为 4 至 11|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|登录失败之前删除工作配置文件允许和已删除的所有企业数据的数量。 有效的值 1 到 16|
 |workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|工作所需的配置文件密码的类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|布尔|密码，则需要或不工作配置文件|
+|workProfileRequirePassword|Boolean|密码，则需要或不工作配置文件|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|vpnAlwaysOnPackageIdentifier|字符串|始终在 VPN 中启用锁定模式。|
-|vpnEnableAlwaysOnLockdownMode|布尔|始终在 VPN 中启用锁定模式。|
+|vpnAlwaysOnPackageIdentifier|String|始终在 VPN 中启用锁定模式。|
+|vpnEnableAlwaysOnLockdownMode|Boolean|始终在 VPN 中启用锁定模式。|
 
-## <a name="relationships"></a>Relationships
-|关系|类型|Description|
+## <a name="relationships"></a>关系
+|关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -148,7 +149,6 @@ Android 的工作常规设备配置。
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
 
 
 

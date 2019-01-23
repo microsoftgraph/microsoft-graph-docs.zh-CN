@@ -1,25 +1,26 @@
 ---
 title: ratingFranceMoviesType 枚举类型
 description: 在法国分级标签 movies
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3b9220b5c4ba406aadda930eb355f3d472929a03
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3b1948b2eca2075925ba2597dfda6c5e52b7817c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408150"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 在法国分级标签 movies
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
@@ -27,7 +28,6 @@ ms.locfileid: "27957772"
 |agesAbove12|3|12 分类禁止到未在 12 成年人胶片筛选|
 |agesAbove16|4|16 分类禁止到未在 16 成年人胶片筛选|
 |agesAbove18|5|18 分类禁止到未在 18 成年人筛选|
-
 
 
 

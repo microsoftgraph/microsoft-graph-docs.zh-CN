@@ -1,26 +1,26 @@
 ---
 title: 创建 deviceManagementScriptGroupAssignment
 description: 创建新的 deviceManagementScriptGroupAssignment 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 05d4865f68d42a23aaf3d0bc9639d5fb806d198b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a26c777cbdbf6ea6bb8f8ab6b2435934d90fc915
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411412"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,8 +50,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本组工作分配实体的键。|
-|targetGroupId|字符串|Azure Active Directory 组的 Id 目标脚本。|
+|id|String|设备管理脚本组工作分配实体的键。|
+|targetGroupId|String|Azure Active Directory 组的 Id 目标脚本。|
 
 
 
@@ -59,6 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -85,7 +86,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

@@ -3,21 +3,22 @@ title: iosUpdateConfiguration 资源类型
 description: IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更新。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3b7abc49e5e4098323b4461612676fdce9bb6aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: eed8824ad84c59f5c9a2aa3143b8de06bc0e4cd7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408452"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更新。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -48,7 +49,7 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
 |utcTimeOffsetInMinutes|Int32|UTC 时间偏移，用分钟表示|
 |enforcedSoftwareUpdateDelayInDays|Int32|软件更新之前的天数都能看到介于 0 到 90 非独占的 iOS 设备|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -90,7 +91,6 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
   "enforcedSoftwareUpdateDelayInDays": 1024
 }
 ```
-
 
 
 

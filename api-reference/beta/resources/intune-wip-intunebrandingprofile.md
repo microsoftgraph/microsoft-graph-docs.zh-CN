@@ -1,23 +1,24 @@
 ---
 title: intuneBrandingProfile 资源类型
 description: 此实体包含用于自定义租户级别外观的公司门户应用程序，以及最终用户 web 门户中的数据。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930262"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411097"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此实体包含用于自定义租户级别外观的公司门户应用程序，以及最终用户 web 门户中的数据。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -26,13 +27,14 @@ ms.locfileid: "27930262"
 |[创建 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|创建新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。|
 |[删除 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|无|删除[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)。|
 |[更新 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。|
+|[assign 操作](../api/intune-wip-intunebrandingprofile-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|配置文件密钥|
-|profileName|字符串|配置文件的名称|
-|profileDescription|字符串|配置文件的说明|
+|id|String|配置文件密钥|
+|profileName|String|配置文件的名称|
+|profileDescription|String|配置文件的说明|
 |isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
@@ -51,8 +53,11 @@ ms.locfileid: "27930262"
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|浅色背景上的公司门户应用程序中显示的徽标图像。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|自定义登录页的公司门户应用程序中显示的图像|
 
-## <a name="relationships"></a>Relationships
-无
+## <a name="relationships"></a>关系
+|关系|类型|说明|
+|:---|:---|:---|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)集合|组工作分配的品牌的配置文件的列表。|
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
@@ -103,7 +108,6 @@ ms.locfileid: "27930262"
   }
 }
 ```
-
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: 更新 iosCompliancePolicy
 description: 更新 iosCompliancePolicy 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a9ee2476d85ec1446fea4b45fac834eb62f82bc7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2207f4f223f6a6b80e9ff563f83c30b048fa1aba
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407730"
 ---
 # <a name="update-ioscompliancepolicy"></a>更新 iosCompliancePolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -68,11 +68,13 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodeRequired|Boolean|指示是否需要密码。|
 |osMinimumVersion|String|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
+|osMinimumBuildVersion|String|最小 IOS 生成版本。|
+|osMaximumBuildVersion|String|最大 IOS 生成版本。|
 |securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 该集合最多可包含 10000 个元素。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 此集合可以包含 100 个元素的最大值。|
 
 
 
@@ -80,19 +82,20 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1123
+Content-length: 1241
 
 {
+  "@odata.type": "#microsoft.graph.iosCompliancePolicy",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
@@ -106,6 +109,8 @@ Content-length: 1123
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -127,7 +132,7 @@ Content-length: 1123
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1289
+Content-Length: 1413
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -151,6 +156,8 @@ Content-Length: 1289
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -166,7 +173,6 @@ Content-Length: 1289
   ]
 }
 ```
-
 
 
 

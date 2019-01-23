@@ -1,23 +1,24 @@
 ---
 title: managedMobileLobApp 资源类型
 description: 包含所有托管移动业务线应用的属性的抽象基类。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 62f42d347ac81ced6b159d3beb2a6abd2dd070cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b2c01a810a9dc4536ba0ca68f98e923c90c79334
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419392"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含所有托管移动业务线应用的属性的抽象基类。
+
 
 继承自 [managedApp](../resources/intune-apps-managedapp.md)
 
@@ -45,6 +46,8 @@ ms.locfileid: "27985107"
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|isAssigned|Boolean|值，指示是否将应用程序分配给至少一个组。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用程序的作用域标记 id 的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|内部提交的内容版本。|
@@ -91,6 +94,10 @@ ms.locfileid: "27985107"
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "appAvailability": "String",
   "version": "String",
   "committedContentVersion": "String",
@@ -98,7 +105,6 @@ ms.locfileid: "27985107"
   "size": 1024
 }
 ```
-
 
 
 

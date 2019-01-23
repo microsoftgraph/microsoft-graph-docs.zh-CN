@@ -4,12 +4,12 @@ description: Microsoft Intune 应用保护策略可帮助保护公司数据，�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ca628b81015527cb5ab7e508bebbb2808cdcde7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419000"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -30,6 +30,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [应用程序类型](intune-wip-applicationtype.md)
 - [默认托管的应用保护](intune-mam-defaultmanagedappprotection.md)
 - [Intune 品牌配置文件](intune-wip-intunebrandingprofile.md)
+- [Intune 品牌的配置文件分配](intune-wip-intunebrandingprofileassignment.md)
 - [iOS 管理的应用保护](intune-mam-iosmanagedappprotection.md)
 - [iOS 管理的应用注册](intune-mam-iosmanagedappregistration.md)
 - [iOS 移动应用标识符](intune-mam-iosmobileappidentifier.md)
@@ -63,6 +64,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护应用锁定程序文件](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows 信息保护数据恢复证书](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows 信息保护桌面应用](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Windows 信息保护设备注册](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Windows 的信息保护实施级别](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows 信息保护 IP 范围集合](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows 信息保护网络学习摘要](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -71,3 +73,4 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护代理域集合](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows 信息保护资源集合](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 信息保护应用商店应用](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Windows 信息保护擦除操作](intune-mam-windowsinformationprotectionwipeaction.md)

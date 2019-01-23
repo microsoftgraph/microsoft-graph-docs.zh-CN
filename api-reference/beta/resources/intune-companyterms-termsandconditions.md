@@ -1,23 +1,24 @@
 ---
 title: termsAndConditions 资源类型
-description: C 策略内容显示给用户时注册 Intune 到其第一次尝试并随后在编辑时管理员必须重新接受。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
+description: TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: aab2ca99726c6e5388dfa5641b19d7c40dd920de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 11b790976af5e81fad43c3ada52b4aee77066a3b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410663"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和内容。 当用户第一次尝试注册到 Intune 时向用户显示 T&C 策略的内容，之后会在进行了管理员要求重新接受的编辑时显示。 这允许管理员与用户必须同意的预配进行通信，以便将设备注册到 Intune 中。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -44,7 +45,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)集合|为此 T & C 策略的组分配列表。|
+|groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)集合|为此 T&C 策略的组分配列表。|
 |assignments|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) 集合|此 T&C 策略的分配列表。|
 |acceptanceStatuses|[termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) 集合|此 T&C 策略的接受状态列表。|
 
@@ -71,7 +72,6 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
-
 
 
 

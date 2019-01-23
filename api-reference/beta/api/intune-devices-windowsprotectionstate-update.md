@@ -1,26 +1,26 @@
 ---
 title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ce3c4fcd46e2d627f94e1728d38e9a8f0f91ad30
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: faad744f1a7910b693ea7f87ea0e2ab5dddd7a25
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406204"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -51,23 +51,23 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔|反恶意软件被启用还是没有|
+|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
+|malwareProtectionEnabled|Boolean|反恶意软件被启用还是没有|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 （如清理挂起完全扫描或挂起的重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔|是否启用实时保护？|
-|networkInspectionSystemEnabled|布尔|启用或不网络检查系统？|
-|quickScanOverdue|布尔|快速扫描过期，或不？|
-|fullScanOverdue|布尔|或不完全扫描过期？|
-|signatureUpdateOverdue|布尔|过期的签名或不？|
-|rebootRequired|布尔|需要或不重新启动？|
-|fullScanRequired|布尔|所需或不完全扫描？|
-|engineVersion|字符串|当前终结点保护引擎的版本|
-|特征码版本|字符串|当前的恶意软件定义版本|
-|antiMalwareVersion|字符串|当前防恶意软件版本|
+|realTimeProtectionEnabled|Boolean|是否启用实时保护？|
+|networkInspectionSystemEnabled|Boolean|启用或不网络检查系统？|
+|quickScanOverdue|Boolean|快速扫描过期，或不？|
+|fullScanOverdue|Boolean|或不完全扫描过期？|
+|signatureUpdateOverdue|Boolean|过期的签名或不？|
+|rebootRequired|Boolean|需要或不重新启动？|
+|fullScanRequired|Boolean|所需或不完全扫描？|
+|engineVersion|String|当前终结点保护引擎的版本|
+|特征码版本|String|当前的恶意软件定义版本|
+|antiMalwareVersion|String|当前防恶意软件版本|
 |lastQuickScanDateTime|DateTimeOffset|最后一个快速扫描 datetime|
 |lastFullScanDateTime|DateTimeOffset|最后一个快速扫描 datetime|
-|lastQuickScanSignatureVersion|字符串|最后一个快速扫描病毒特征版本|
-|lastFullScanSignatureVersion|字符串|最后一个完全扫描病毒特征版本|
+|lastQuickScanSignatureVersion|String|最后一个快速扫描病毒特征版本|
+|lastFullScanSignatureVersion|String|最后一个完全扫描病毒特征版本|
 |lastReportedDateTime|DateTimeOffset|最后一个设备运行状况状态报告的时间|
 
 
@@ -76,14 +76,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 Content-type: application/json
-Content-length: 804
+Content-length: 865
 
 {
+  "@odata.type": "#microsoft.graph.windowsProtectionState",
   "malwareProtectionEnabled": true,
   "deviceState": "fullScanPending",
   "realTimeProtectionEnabled": true,
@@ -133,7 +135,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

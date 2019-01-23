@@ -1,26 +1,26 @@
 ---
 title: 列出 androidGeneralDeviceConfigurations
 description: 列出 androidGeneralDeviceConfiguration 对象的属性和关系。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0d8ba32deed7098c721cba7595692aebdee140f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 29238ec219823824f75ff32d1fea085d6de3b513
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418356"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>列出 androidGeneralDeviceConfigurations
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) 对象的属性和关系。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -51,6 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -171,7 +172,6 @@ Content-Length: 3766
   ]
 }
 ```
-
 
 
 
