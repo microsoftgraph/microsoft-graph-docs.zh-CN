@@ -1,26 +1,26 @@
 ---
 title: 更新 androidManagedStoreAppConfiguration
 description: 更新 androidManagedStoreAppConfiguration 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d7cd4efcd6bd97488f49050eaf55d6bf408c2a3a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cf9a996b67a25bacce7ccb5f18efa05addde078f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406995"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>更新 androidManagedStoreAppConfiguration
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -59,7 +59,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Android 企业应用程序配置程序包 id。|
-|payloadJson|字符串|Android 企业应用程序配置 JSON 负载。|
+|payloadJson|String|Android 企业应用程序配置 JSON 负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和权限的相应操作的列表。|
 
 
@@ -68,14 +68,16 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 549
+Content-length: 559
 
 {
+  "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
@@ -83,7 +85,6 @@ Content-length: 549
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "packageId": "Package Id value",
@@ -130,7 +131,6 @@ Content-Length: 731
   ]
 }
 ```
-
 
 
 

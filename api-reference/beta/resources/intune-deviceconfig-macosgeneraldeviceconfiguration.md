@@ -3,21 +3,22 @@ title: macOSGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 macOSGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 02bdcf72a9b01c9fd2ec0dcb45f7c743e51f941b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 38e99c1df2f570e06fec22e47e0286eeb4dc76ad
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404790"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 macOSGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -75,8 +76,11 @@ ms.locfileid: "27983924"
 |airDropBlocked|Boolean|指示允许 AirDrop。|
 |passwordBlockModification|Boolean|指示允许密码修改。|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
+|passwordBlockAutoFill|Boolean|指示阻止自动填充密码功能。|
+|passwordBlockProximityRequests|Boolean|指示阻止请求从附近的设备的密码。|
+|passwordBlockAirDropSharing|Boolean|指示阻止与 AirDrop 密码功能的共享密码。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -151,10 +155,12 @@ ms.locfileid: "27983924"
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true
 }
 ```
-
 
 
 

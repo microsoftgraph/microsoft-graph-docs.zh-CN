@@ -1,23 +1,24 @@
 ---
 title: embeddedSIMActivationCodePool 资源类型
 description: 池代表嵌入 SIM 激活代码的一组。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1c8265b0c8d0c0d83808741d90893bdec9b15825
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9dfcca046abf206fc29bbc6033bbd88980f9bf43
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410614"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 池代表嵌入 SIM 激活代码的一组。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -31,14 +32,14 @@ ms.locfileid: "27929751"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入 SIM 激活代码池的的唯一标识符。 系统生成时创建分配值。|
-|displayName|字符串|管理员定义的嵌入 SIM 激活代码池的名称。|
+|id|String|嵌入 SIM 激活代码池的的唯一标识符。 系统生成时创建分配值。|
+|displayName|String|管理员定义的嵌入 SIM 激活代码池的名称。|
 |createdDateTime|DateTimeOffset|嵌入的 SIM 激活代码池的创建时间。 生成的服务方。|
 |modifiedDateTime|DateTimeOffset|嵌入的 SIM 激活代码池上次修改时间。 更新服务端。|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)集合|属于此池激活代码。 此导航属性用于发布到 Intune 的激活代码，但不能用于读取 Intune 激活代码。|
 |activationCodeCount|Int32|属于此池的激活代码的总计数。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |assignments|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)集合|导航属性设置为此池分配到的目标的列表。|
@@ -70,7 +71,6 @@ ms.locfileid: "27929751"
   "activationCodeCount": 1024
 }
 ```
-
 
 
 

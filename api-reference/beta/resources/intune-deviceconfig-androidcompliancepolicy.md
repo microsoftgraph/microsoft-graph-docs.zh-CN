@@ -1,23 +1,24 @@
 ---
 title: androidCompliancePolicy 资源类型
 description: 此类包含 Android 的合规性设置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6c4978480243826f8461b4ca723c1afd57a0122c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f73c150a1b27dc11aa3fe7ab900711e3cff1780
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969665"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410810"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含 Android 的合规性设置。
+
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -44,8 +45,9 @@ ms.locfileid: "27969665"
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
-|passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
-|passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
+|passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
+|passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|出厂重置之前允许的登录失败的次数。 有效的值 1 到 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|要求设备不允许安装来自未知源的应用。|
 |securityDisableUsbDebugging|Boolean|在 Android 设备上禁用 USB 调试。|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
@@ -61,10 +63,10 @@ ms.locfileid: "27969665"
 |securityRequireGooglePlayServices|Boolean|要求在设备上安装并启用 Google Play Services。|
 |securityRequireUpToDateSecurityProviders|Boolean|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|要求设备传递公司门户客户端应用运行时完整性检查。|
-|conditionStatementId|字符串|条件语句 id。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 该集合最多可包含 10000 个元素。|
+|conditionStatementId|String|条件语句 id。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 此集合可以包含 100 个元素的最大值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此规则的计划操作的列表 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -101,6 +103,7 @@ ms.locfileid: "27969665"
   "passwordMinutesOfInactivityBeforeLock": 1024,
   "passwordExpirationDays": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
+  "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -128,7 +131,6 @@ ms.locfileid: "27969665"
   ]
 }
 ```
-
 
 
 

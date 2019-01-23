@@ -3,21 +3,22 @@ title: androidManagedStoreAppConfiguration 资源类型
 description: 包含的属性、 继承的属性和 Android 企业移动应用程序配置的操作。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 471c2b40d4aa58072be0e1eafb8ecdc114922c25
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b232bd2ad6c2eefb796387c3a8a881540f3e971a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412154"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidManagedStoreAppConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含的属性、 继承的属性和 Android 企业移动应用程序配置的操作。
+
 
 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)
 
@@ -42,10 +43,10 @@ ms.locfileid: "27987214"
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Android 企业应用程序配置程序包 id。|
-|payloadJson|字符串|Android 企业应用程序配置 JSON 负载。|
+|payloadJson|String|Android 企业应用程序配置 JSON 负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和权限的相应操作的列表。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 集合|应用配置的组分配列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -88,7 +89,6 @@ ms.locfileid: "27987214"
   ]
 }
 ```
-
 
 
 

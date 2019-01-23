@@ -1,23 +1,24 @@
 ---
 title: windows10MobileCompliancePolicy 资源类型
 description: 此类包含 Windows 10 Mobile 的合规性设置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 915ac525db5de48c5dff681d3a4c001df246a817
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 79daec43a97b58bc938f3084b2b586332e9a87ec
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407534"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含 Windows 10 Mobile 的合规性设置。
+
 
 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -59,7 +60,7 @@ ms.locfileid: "27986577"
 |activeFirewallRequired|Boolean|要求在 Windows 设备上的活动防火墙。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|有效的操作系统构建 Windows 设备上的区域。 该集合最多可包含 10000 个元素。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 集合|此规则的计划操作的列表 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -117,7 +118,6 @@ ms.locfileid: "27986577"
   ]
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: iosEnterpriseWiFiConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 iOS 设备，以连接到所需 Wi-fi 终结点。 通过指定的身份验证方法和安全类型预期 Wi-fi 终结点可 Wi-fi 连接进行无缝的最终用户。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 16705bfd1d4feae75520196f149b412f0b33b2c9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 31ce0162475313c865e65b1556821bc329bc8aa1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410628"
 ---
 # <a name="iosenterprisewificonfiguration-resource-type"></a>iosEnterpriseWiFiConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 通过提供此配置文件中的配置，您可以指示 iOS 设备，以连接到所需 Wi-fi 终结点。 通过指定的身份验证方法和安全类型预期 Wi-fi 终结点可 Wi-fi 连接进行无缝的最终用户。
+
 
 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)
 
@@ -41,24 +42,24 @@ ms.locfileid: "27948574"
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|networkName|字符串|网络名称继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|ssid|字符串|这是广播到所有设备 Wi-fi 网络的名称。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|networkName|String|网络名称继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|ssid|String|这是广播到所有设备 Wi-fi 网络的名称。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |connectAutomatically|Boolean|自动连接此网络何时范围中。 将此值设置为 true 将跳过的用户提示并自动将设备连接到 Wi-fi 网络。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |connectWhenNetworkNameIsHidden|Boolean|网络未进行广播其名称 (SSID) 连接。 当设置为 true，该配置文件强制设备连接到不广播到所有设备其 SSID 网络。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示是否 Wi-fi 终结点使用 EAP 基于安全类型。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|代理类型从[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)此 Wi-fi 连接继承的。 可取值为：`none`、`manual`、`automatic`。|
-|proxyManualAddress|字符串|选择手动配置时，代理服务器的 IP 地址或 DNS 主机名。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|proxyManualAddress|String|选择手动配置时，代理服务器的 IP 地址或 DNS 主机名。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |proxyManualPort|Int32|选择手动配置时的代理服务器的端口。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|字符串|代理服务器自动配置脚本时选择了自动配置的 URL。 此 URL 通常是 PAC （代理自动配置） 文件的位置。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|preSharedKey|字符串|这是预共享的 WPA 个人 Wi-fi 网络密钥。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|代理服务器自动配置脚本时选择了自动配置的 URL。 此 URL 通常是 PAC （代理自动配置） 文件的位置。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|preSharedKey|String|这是预共享的 WPA 个人 Wi-fi 网络密钥。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展的身份验证协议 (EAP)。 指示 EAP 协议设置类型 Wi-fi 终结点 （路由器）。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
 |eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|EAP FAST 配置选项时 EAP FAST 是所选的 EAP 类型。 可取值为：`noProtectedAccessCredential`、`useProtectedAccessCredential`、`useProtectedAccessCredentialAndProvision`、`useProtectedAccessCredentialAndProvisionAnonymously`。|
 |trustedServerCertificateNames|String 集合|当 EAP 类型配置为 EAP-TLS/TTL/FAST 或 PEAP 受信任服务器证书名称。 这是您的受信任的证书颁发机构 (CA) 颁发的证书中使用的通用名称。 如果您提供此信息，您可以跳过它们连接到此 Wi-fi 网络时，最终用户的设备显示动态信任对话框。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|当 EAP 类型配置为 PEAP 或 EAP TTL 身份验证方法。 可取值为：`certificate`、`usernameAndPassword`。|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|用于身份验证 EAP TTL 并 Authenticationmethod EAP 类型时的非 EAP 方法是用户名和密码。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|字符串|时 EAP 类型配置为 EAP-TTL，EAP-启用标识隐私 （外部标识） FAST 或 PEAP。 此属性将屏蔽用户名与您输入的文本。 例如，如果您使用匿名，每个与使用其实际用户名此 Wi-fi 连接进行身份验证的用户显示为匿名。|
+|outerIdentityPrivacyTemporaryValue|String|时 EAP 类型配置为 EAP-TTL，EAP-启用标识隐私 （外部标识） FAST 或 PEAP。 此属性将屏蔽用户名与您输入的文本。 例如，如果您使用匿名，每个与使用其实际用户名此 Wi-fi 连接进行身份验证的用户显示为匿名。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -112,7 +113,6 @@ ms.locfileid: "27948574"
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
 
 
 

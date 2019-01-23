@@ -1,26 +1,26 @@
 ---
 title: 创建 deviceAndAppManagementRoleDefinition
 description: 创建新的 deviceAndAppManagementRoleDefinition 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bc5438b9d0d4db833949cc4ee84d9d43785b6e2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 11616042fd3671ca09eeb8913a15959cc3093456
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411398"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>创建 deviceAndAppManagementRoleDefinition
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -57,6 +57,7 @@ POST /deviceManagement/roleDefinitions
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 
@@ -64,12 +65,13 @@ POST /deviceManagement/roleDefinitions
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions
 Content-type: application/json
-Content-length: 1167
+Content-length: 1229
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -114,7 +116,10 @@ Content-length: 1167
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -123,7 +128,7 @@ Content-length: 1167
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1216
+Content-Length: 1278
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -169,10 +174,12 @@ Content-Length: 1216
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

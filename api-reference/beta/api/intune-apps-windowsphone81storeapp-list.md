@@ -1,26 +1,26 @@
 ---
 title: 列表 windowsPhone81StoreApps
 description: 列出属性和 windowsPhone81StoreApp 对象之间的关系。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 499f045159fe0364d0bef6843307df8db8cf20be
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a4b069478733ba5a190cad3ec5087f44c41edb5e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409599"
 ---
 # <a name="list-windowsphone81storeapps"></a>列表 windowsPhone81StoreApps
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出属性和[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)对象之间的关系。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,6 +50,7 @@ GET /deviceAppManagement/mobileApps
 如果成功，此方法返回`200 OK`响应代码和响应正文中的[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)对象的集合。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 952
+Content-Length: 1053
 
 {
   "value": [
@@ -86,12 +87,15 @@ Content-Length: 952
       "notes": "Notes value",
       "uploadState": 11,
       "publishingState": "processing",
+      "isAssigned": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "appStoreUrl": "https://example.com/appStoreUrl/"
     }
   ]
 }
 ```
-
 
 
 

@@ -1,31 +1,34 @@
 ---
 title: windowsKioskAppBase 资源类型
 description: 一种类型的应用程序的基类
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9b13807fdb0319b3c9a15248fa2d50ffc46ac164
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8ca86969eb32a1a1d129fb5ba4cd48bbb04ffd78
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407142"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 一种类型的应用程序的基类
+
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始版式应用程序图块大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
-|name|字符串|代表应用程序的友好名称|
+|name|String|代表应用程序的友好名称|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|该应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
 
 ## <a name="relationships"></a>Relationships
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
@@ -37,10 +40,10 @@ ms.locfileid: "27977022"
 {
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
-  "name": "String"
+  "name": "String",
+  "appType": "String"
 }
 ```
-
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: 更新 iosGeneralDeviceConfiguration
 description: 更新 iosGeneralDeviceConfiguration 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 590fa8264500fbbf10668a397fafd02247d1eb6c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d06ab1b45591e090e1574b9106cddc4c21bbe63a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407912"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>更新 iosGeneralDeviceConfiguration
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -137,7 +137,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
-|kioskModeBuiltInAppId|字符串|用于展台模式内置应用程序 ID。 未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
+|kioskModeBuiltInAppId|String|用于展台模式内置应用程序 ID。 未设置 KioskModeManagedAppId 和 KioskModeAppStoreUrl 时使用。|
 |kioskModeRequireAssistiveTouch|Boolean|指示在展台模式下是否要求辅助触摸。|
 |kioskModeRequireColorInversion|Boolean|指示在展台模式下是否要求颜色反转。|
 |kioskModeRequireMonoAudio|Boolean|指示在展台模式下是否要求单声道音频。|
@@ -192,18 +192,26 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。|
-|classroomForceRequestPermissionToLeaveClasses|布尔|指示是否通过课堂非托管课程中注册学生将权限时，从请求教师尝试保留课程 (iOS 11.3 及更高版本)。|
-|keychainBlockCloudSync|布尔|指示阻止 iCloud 钥匙链同步。|
-|pkiBlockOTAUpdates|布尔|指示无线 PKI 更新已被阻止。 设置此限制 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 和更高版本)。|
-|privacyForceLimitAdTracking|布尔|指示是否有限 ad 跟踪。(iOS 7.0 和更高版本)。|
-|enterpriseBookBlockBackup|布尔|指示企业书籍备份被阻止。|
-|enterpriseBookBlockMetadataSync|布尔|指示阻止的企业簿说明并突出显示同步。|
-|airPrintBlocked|布尔|指示 AirPrint 阻止 (iOS 11.0 及更高版本)。|
-|airPrintBlockCredentialsStorage|布尔|指示钥匙链存储的用户名和密码 Airprint 阻止 (iOS 11.0 及更高版本)。|
-|airPrintForceTrustedTLS|布尔|指示受信任的证书是否需要 TLS 打印通信 (iOS 11.0 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|布尔|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (iOS 11.0 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
-|blockSystemAppRemoval|布尔|指示从设备的系统应用程序删除被阻止监管设备 (iOS 11.0 及更高版本) 上。|
-|vpnBlockCreation|布尔|指示创建 VPN 配置为阻止 (iOS 11.0 及更高版本)。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示是否通过课堂非托管课程中注册学生将权限时，从请求教师尝试保留课程 (iOS 11.3 及更高版本)。|
+|keychainBlockCloudSync|Boolean|指示阻止 iCloud 钥匙链同步。|
+|pkiBlockOTAUpdates|Boolean|指示无线 PKI 更新已被阻止。 设置此限制 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 和更高版本)。|
+|privacyForceLimitAdTracking|Boolean|指示是否有限 ad 跟踪。(iOS 7.0 和更高版本)。|
+|enterpriseBookBlockBackup|Boolean|指示企业书籍备份被阻止。|
+|enterpriseBookBlockMetadataSync|Boolean|指示阻止的企业簿说明并突出显示同步。|
+|airPrintBlocked|Boolean|指示 AirPrint 阻止 (iOS 11.0 及更高版本)。|
+|airPrintBlockCredentialsStorage|Boolean|指示钥匙链存储的用户名和密码 Airprint 阻止 (iOS 11.0 及更高版本)。|
+|airPrintForceTrustedTLS|Boolean|指示受信任的证书是否需要 TLS 打印通信 (iOS 11.0 及更高版本)。|
+|airPrintBlockiBeaconDiscovery|Boolean|指示阻止 iBeacon 发现 AirPrint 打印机。 这样可以防止在从网络流量 (iOS 11.0 及更高版本) 的网络钓鱼的虚假 AirPrint 蓝牙信号。|
+|blockSystemAppRemoval|Boolean|指示从设备的系统应用程序删除被阻止监管设备 (iOS 11.0 及更高版本) 上。|
+|vpnBlockCreation|Boolean|指示创建 VPN 配置为阻止 (iOS 11.0 及更高版本)。|
+|appRemovalBlocked|Boolean|指示是否允许应用程序的删除操作。|
+|usbRestrictedModeBlocked|Boolean|指示是否允许设备锁定时连接到 USB 附件 (iOS 11.4.1 及更高版本)。|
+|passwordBlockAutoFill|Boolean|指示自动填充密码功能是否允许 (iOS 12.0 及更高版本)。|
+|passwordBlockProximityRequests|Boolean|指示阻止请求密码从附近的设备 (iOS 12.0 及更高版本)。|
+|passwordBlockAirDropSharing|Boolean|指示阻止与 AirDrop 密码功能 iOS 12.0 及更高版本的共享密码）。|
+|dateAndTimeForceSetAutomatically|Boolean|指示的日期和时间"设置自动"功能已启用，并且无法关闭用户 (iOS 12.0 及更高版本)。|
+|contactsAllowManagedToUnmanagedWrite|Boolean|指示托管应用程序可以写入到非托管的联系人帐户 (iOS 12.0 及更高版本) 的联系人。|
+|contactsAllowUnmanagedToManagedRead|Boolean|指示非托管的应用程序可以读取托管联系人帐户 (iOS 12.0 或更高版本)。|
 
 
 
@@ -211,15 +219,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 8428
+Content-length: 8758
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -451,7 +460,15 @@ Content-length: 8428
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
 
@@ -460,7 +477,7 @@ Content-length: 8428
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8604
+Content-Length: 8930
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -698,10 +715,17 @@ Content-Length: 8604
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
-
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d1e38660c1fa83ced205b0bbcc506303a3968c41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 02bd90c2a169dd600ae3dda475728da9e11fc587
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408234"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -64,9 +64,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
 |dataSharingConsentGranted|Boolean|Consent 授予与 Apple 卷购买程序共享的数据。|
-|displayName|字符串|管理员指定标记的友好名称。|
-|locationName|字符串|返回从 Apple VPP 令牌的位置。|
+|displayName|String|管理员指定标记的友好名称。|
+|locationName|String|返回从 Apple VPP 令牌的位置。|
 |claimTokenManagementFromExternalMdm|Boolean|管理员同意以允许声称令牌管理从外部 mdm。|
+|roleScopeTagIds|String 集合|角色作用域标记 Id 分配给此实体。|
 
 
 
@@ -74,21 +75,22 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 957
+Content-length: 1002
 
 {
+  "@odata.type": "#microsoft.graph.vppToken",
   "organizationName": "Organization Name value",
   "vppTokenAccountType": "education",
   "appleId": "Apple Id value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "tokenActionResults": [
     {
@@ -105,7 +107,10 @@ Content-length: 957
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -114,7 +119,7 @@ Content-length: 957
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -142,10 +147,12 @@ Content-Length: 1053
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 
