@@ -1,31 +1,31 @@
 ---
 title: importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 description: 尚未记录
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c13fd0dcf6aaa680bb6c87106f98a9ea18680c6e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 821efe12444a94b1e650275bf2d18653a66f505d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415808"
 ---
-# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a><span data-ttu-id="2bdaf-103">importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="2bdaf-103">importedWindowsAutopilotDeviceIdentityUploadStatus enum type</span></span>
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a><span data-ttu-id="fa6b1-103">importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型</span><span class="sxs-lookup"><span data-stu-id="fa6b1-103">importedWindowsAutopilotDeviceIdentityUploadStatus enum type</span></span>
 
-> <span data-ttu-id="2bdaf-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2bdaf-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fa6b1-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="fa6b1-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="2bdaf-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="fa6b1-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2bdaf-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="2bdaf-107">Not yet documented</span></span>
-## <a name="members"></a><span data-ttu-id="2bdaf-108">成员</span><span class="sxs-lookup"><span data-stu-id="2bdaf-108">Members</span></span>
-|<span data-ttu-id="2bdaf-109">成员</span><span class="sxs-lookup"><span data-stu-id="2bdaf-109">Member</span></span>|<span data-ttu-id="2bdaf-110">值</span><span class="sxs-lookup"><span data-stu-id="2bdaf-110">Value</span></span>|<span data-ttu-id="2bdaf-111">Description</span><span class="sxs-lookup"><span data-stu-id="2bdaf-111">Description</span></span>|
+<span data-ttu-id="fa6b1-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa6b1-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="fa6b1-108">成员</span><span class="sxs-lookup"><span data-stu-id="fa6b1-108">Members</span></span>
+|<span data-ttu-id="fa6b1-109">成员</span><span class="sxs-lookup"><span data-stu-id="fa6b1-109">Member</span></span>|<span data-ttu-id="fa6b1-110">值</span><span class="sxs-lookup"><span data-stu-id="fa6b1-110">Value</span></span>|<span data-ttu-id="fa6b1-111">说明</span><span class="sxs-lookup"><span data-stu-id="fa6b1-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2bdaf-112">noUpload</span><span class="sxs-lookup"><span data-stu-id="2bdaf-112">noUpload</span></span>|<span data-ttu-id="2bdaf-113">0</span><span class="sxs-lookup"><span data-stu-id="2bdaf-113">0</span></span>|<span data-ttu-id="2bdaf-114">无上载状态。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-114">No upload status.</span></span>|
-|<span data-ttu-id="2bdaf-115">挂起</span><span class="sxs-lookup"><span data-stu-id="2bdaf-115">pending</span></span>|<span data-ttu-id="2bdaf-116">1</span><span class="sxs-lookup"><span data-stu-id="2bdaf-116">1</span></span>|<span data-ttu-id="2bdaf-117">挂起的状态。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-117">Pending status.</span></span>|
-|<span data-ttu-id="2bdaf-118">complete</span><span class="sxs-lookup"><span data-stu-id="2bdaf-118">complete</span></span>|<span data-ttu-id="2bdaf-119">2</span><span class="sxs-lookup"><span data-stu-id="2bdaf-119">2</span></span>|<span data-ttu-id="2bdaf-120">完整的状态。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-120">Complete status.</span></span>|
-|<span data-ttu-id="2bdaf-121">error</span><span class="sxs-lookup"><span data-stu-id="2bdaf-121">error</span></span>|<span data-ttu-id="2bdaf-122">3</span><span class="sxs-lookup"><span data-stu-id="2bdaf-122">3</span></span>|<span data-ttu-id="2bdaf-123">错误状态。</span><span class="sxs-lookup"><span data-stu-id="2bdaf-123">Error status.</span></span>|
-
+|<span data-ttu-id="fa6b1-112">noUpload</span><span class="sxs-lookup"><span data-stu-id="fa6b1-112">noUpload</span></span>|<span data-ttu-id="fa6b1-113">0</span><span class="sxs-lookup"><span data-stu-id="fa6b1-113">0</span></span>|<span data-ttu-id="fa6b1-114">无上载状态。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-114">No upload status.</span></span>|
+|<span data-ttu-id="fa6b1-115">挂起</span><span class="sxs-lookup"><span data-stu-id="fa6b1-115">pending</span></span>|<span data-ttu-id="fa6b1-116">1</span><span class="sxs-lookup"><span data-stu-id="fa6b1-116">1</span></span>|<span data-ttu-id="fa6b1-117">挂起的状态。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-117">Pending status.</span></span>|
+|<span data-ttu-id="fa6b1-118">complete</span><span class="sxs-lookup"><span data-stu-id="fa6b1-118">complete</span></span>|<span data-ttu-id="fa6b1-119">2</span><span class="sxs-lookup"><span data-stu-id="fa6b1-119">2</span></span>|<span data-ttu-id="fa6b1-120">完整的状态。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-120">Complete status.</span></span>|
+|<span data-ttu-id="fa6b1-121">error</span><span class="sxs-lookup"><span data-stu-id="fa6b1-121">error</span></span>|<span data-ttu-id="fa6b1-122">3</span><span class="sxs-lookup"><span data-stu-id="fa6b1-122">3</span></span>|<span data-ttu-id="fa6b1-123">错误状态。</span><span class="sxs-lookup"><span data-stu-id="fa6b1-123">Error status.</span></span>|
 
 
 

@@ -1,33 +1,35 @@
 ---
 title: mediaContentRatingIreland 资源类型
 description: 尚未记录
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9516c98350c239393e735008e91d966f8c6ae7a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b3efd96cc8ad015989365dff10b1659ef50c4fb7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422598"
 ---
-# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="36a4e-103">mediaContentRatingIreland 资源类型</span><span class="sxs-lookup"><span data-stu-id="36a4e-103">mediaContentRatingIreland resource type</span></span>
+# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="fb661-103">mediaContentRatingIreland 资源类型</span><span class="sxs-lookup"><span data-stu-id="fb661-103">mediaContentRatingIreland resource type</span></span>
 
-> <span data-ttu-id="36a4e-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="36a4e-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="36a4e-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="36a4e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fb661-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="fb661-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="fb661-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fb661-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="36a4e-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="36a4e-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="fb661-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fb661-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="36a4e-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="36a4e-107">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="36a4e-108">属性</span><span class="sxs-lookup"><span data-stu-id="36a4e-108">Properties</span></span>
-|<span data-ttu-id="36a4e-109">属性</span><span class="sxs-lookup"><span data-stu-id="36a4e-109">Property</span></span>|<span data-ttu-id="36a4e-110">类型</span><span class="sxs-lookup"><span data-stu-id="36a4e-110">Type</span></span>|<span data-ttu-id="36a4e-111">说明</span><span class="sxs-lookup"><span data-stu-id="36a4e-111">Description</span></span>|
+<span data-ttu-id="fb661-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fb661-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fb661-108">属性</span><span class="sxs-lookup"><span data-stu-id="fb661-108">Properties</span></span>
+|<span data-ttu-id="fb661-109">属性</span><span class="sxs-lookup"><span data-stu-id="fb661-109">Property</span></span>|<span data-ttu-id="fb661-110">类型</span><span class="sxs-lookup"><span data-stu-id="fb661-110">Type</span></span>|<span data-ttu-id="fb661-111">说明</span><span class="sxs-lookup"><span data-stu-id="fb661-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="36a4e-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="36a4e-112">movieRating</span></span>|[<span data-ttu-id="36a4e-113">ratingIrelandMoviesType</span><span class="sxs-lookup"><span data-stu-id="36a4e-113">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="36a4e-114">分级爱尔兰的所选的影片。</span><span class="sxs-lookup"><span data-stu-id="36a4e-114">Movies rating selected for Ireland.</span></span> <span data-ttu-id="36a4e-115">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults`。</span><span class="sxs-lookup"><span data-stu-id="36a4e-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
-|<span data-ttu-id="36a4e-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="36a4e-116">tvRating</span></span>|[<span data-ttu-id="36a4e-117">ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="36a4e-117">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="36a4e-118">选择爱尔兰 TV 分级。</span><span class="sxs-lookup"><span data-stu-id="36a4e-118">TV rating selected for Ireland.</span></span> <span data-ttu-id="36a4e-119">可取值为：`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature`。</span><span class="sxs-lookup"><span data-stu-id="36a4e-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
+|<span data-ttu-id="fb661-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="fb661-112">movieRating</span></span>|[<span data-ttu-id="fb661-113">ratingIrelandMoviesType</span><span class="sxs-lookup"><span data-stu-id="fb661-113">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="fb661-114">分级爱尔兰的所选的影片。</span><span class="sxs-lookup"><span data-stu-id="fb661-114">Movies rating selected for Ireland.</span></span> <span data-ttu-id="fb661-115">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults`。</span><span class="sxs-lookup"><span data-stu-id="fb661-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
+|<span data-ttu-id="fb661-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="fb661-116">tvRating</span></span>|[<span data-ttu-id="fb661-117">ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="fb661-117">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="fb661-118">选择爱尔兰 TV 分级。</span><span class="sxs-lookup"><span data-stu-id="fb661-118">TV rating selected for Ireland.</span></span> <span data-ttu-id="fb661-119">可取值为：`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature`。</span><span class="sxs-lookup"><span data-stu-id="fb661-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="36a4e-120">关系</span><span class="sxs-lookup"><span data-stu-id="36a4e-120">Relationships</span></span>
-<span data-ttu-id="36a4e-121">无</span><span class="sxs-lookup"><span data-stu-id="36a4e-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="36a4e-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="36a4e-122">JSON Representation</span></span>
-<span data-ttu-id="36a4e-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="36a4e-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="fb661-120">关系</span><span class="sxs-lookup"><span data-stu-id="fb661-120">Relationships</span></span>
+<span data-ttu-id="fb661-121">无</span><span class="sxs-lookup"><span data-stu-id="fb661-121">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="fb661-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fb661-122">JSON Representation</span></span>
+<span data-ttu-id="fb661-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fb661-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingIreland"
@@ -40,7 +42,6 @@ ms.locfileid: "27957996"
   "tvRating": "String"
 }
 ```
-
 
 
 
