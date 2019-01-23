@@ -3,18 +3,28 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ae38218b60e4ca0b69ac6a42b46a384ab6347c54
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 5d7783595fcd3f8c99bae046ccc9b78dcd7cf24d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328039"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405287"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="january-2019"></a>2019 年 1 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|beta|添加的新实体：<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/
+intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/ intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/ intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>| |Addition|beta|新增了复杂类型：<br/>[appLogCollectionDownloadDetails](/graph/api/resources/ intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/ intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/ intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>| |Addition|beta|新增了枚举类型：<br/>[appLogDecryptionAlgorithm](/graph/api/resources/ intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/ intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/ intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/ intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>| |Addition|beta|在 [appLogCollectionRequest] 上添加了 **createDownloadUrl** 操作 (/graph/api/resources/ intune-devices-applogcollectionrequest?view=graph-rest-beta) | |Deletion|beta|删除了以下实体：<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>| |Addition|beta|向 [androidCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) 实体添加了 **passwordSignInFailureCountBeforeFactoryReset** 属性| |Addition|beta|向 [androidForWorkCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta) 实体添加了 **passwordSignInFailureCountBeforeFactoryReset** 属性| |Addition|beta|向 [androidWorkProfileCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta) 实体添加了 **passwordSignInFailureCountBeforeFactoryReset** 属性| |Deletion|beta|从 [depOnboardingSetting](/graph/api/resources/ intune-enrollment-deponboardingsetting?view=graph-rest-beta) 实体中删除了 **defaultProfileDisplayName** 属性| |Addition|beta|向 [deviceManagementScript](/graph/api/resources/ intune-devices-devicemanagementscript?view=graph-rest-beta) 实体添加了 **runAs32Bit** 属性| |Addition|beta|向 [deviceManagementTroubleshootingEvent](/graph/api/resources/ intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta) 实体添加了 **troubleshootingErrorDetails**, **eventName** 和 **additionalInformation** 属性| |Change|beta|更改了 [macOSCertificateProfileBase](/graph/api/resources/ intune-deviceconfig-macoscertificateprofilebase?view=graph-rest-beta) 实体上的以下属性：<br/>将 **subjectAlternativeNameType** 从必需更改为可选<br/>| |Addition|beta|向 [macOSScepCertificateProfile](/graph/api/resources/ intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta) 实体添加了 **certificateStore** 和 **customSubjectAlternativeNames** 属性| |Addition|beta|向 [officeSuiteApp](/graph/api/resources/ intune-apps-officesuiteapp?view=graph-rest-beta) 实体添加了 **officeConfigurationXml** 属性| |Addition|beta|向 [organization](/graph/api/resources/ intune-onboarding-organization?view=graph-rest-beta) 实体添加了 **createdDateTime** 属性| |Addition|beta|向 [windows10EndpointProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **bitLockerAllowStandardUserEncryption** 属性| |Deletion|beta|从 [windows10EndpointProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体中删除了 **localSecurityOptionsEnableAdministratorAccount**、**localSecurityOptionsEnableGuestAccount** 和 **lanManagerWorkstationEnableInsecureGuestLogons** 属性| |Addition|beta|向 [windowsIdentityProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta) 实体添加了 **useSecurityKeyForSignin** 属性| |Addition|beta|向 [deviceManagement](/graph/api/resources/ intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **mobileAppTroubleshootingEvents** 导航属性| |Addition|beta|向 [mobileAppTroubleshootingEvent](/graph/api/resources/ intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) 实体添加了 **appLogCollectionRequests** 导航属性|
+
 
 ## <a name="december-2018"></a>2018 年 12 月
 
@@ -1017,7 +1027,7 @@ ms.locfileid: "28328039"
 
 |更改类型|版本|说明|
 |:---|:---|:---|
-|Addition|v1.0|添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
+|添加项|v1.0|添加的新实体：<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
 |添加项|v1.0|添加的新复杂类型：<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0)<br/>|
 |添加项|v1.0|在 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0) 上添加了 [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|向 [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0) 实体添加了 **vppTokens** 导航属性|
