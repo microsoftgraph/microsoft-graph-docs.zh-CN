@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00859a4d9c230682a9ac66f5d46e9852ba141ce5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6a984e0d6671416f84c51211019854a808f9728
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420071"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -19,7 +19,12 @@ ms.locfileid: "27990871"
 
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理同意状态](intune-devices-adminconsentstate.md)
+- [应用程序日志集下载详细信息](intune-devices-applogcollectiondownloaddetails.md)
+- [应用程序日志集合请求](intune-devices-applogcollectionrequest.md)
+- [应用程序日志解密算法](intune-devices-applogdecryptionalgorithm.md)
+- [应用程序日志上载状态](intune-devices-apploguploadstate.md)
 - [Apple 推送通知证书](intune-devices-applepushnotificationcertificate.md)
+- [Apple VPP 令牌疑难解答事件](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [审核主角](intune-auditing-auditactor.md)
 - [审核事件](intune-auditing-auditevent.md)
 - [审核属性](intune-auditing-auditproperty.md)
@@ -55,15 +60,17 @@ ms.locfileid: "27990871"
 - [设备管理脚本用户状态](intune-devices-devicemanagementscriptuserstate.md)
 - [设备管理订阅状态](intune-devices-devicemanagementsubscriptionstate.md)
 - [设备管理订阅](intune-devices-devicemanagementsubscriptions.md)
+- [设备管理故障排除错误详细信息](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [设备管理故障排除错误资源](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [设备管理疑难解答事件](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
 - [设备 protection 概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
-- [嵌入 s i m 激活代码](intune-esim-embeddedsimactivationcode.md)
-- [嵌入 s i m 激活代码池](intune-esim-embeddedsimactivationcodepool.md)
-- [嵌入 s i m 激活代码池分配](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [嵌入 s i m 设备状态](intune-esim-embeddedsimdevicestate.md)
-- [嵌入 s i m 设备状态值](intune-esim-embeddedsimdevicestatevalue.md)
+- [嵌入的 SIM 激活代码](intune-esim-embeddedsimactivationcode.md)
+- [嵌入的 SIM 激活代码池](intune-esim-embeddedsimactivationcodepool.md)
+- [嵌入的 SIM 激活代码池分配](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [嵌入的 SIM 设备状态](intune-esim-embeddedsimdevicestate.md)
+- [嵌入的 SIM 设备状态值](intune-esim-embeddedsimdevicestatevalue.md)
 - [注册疑难解答事件](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况状态](intune-devices-healthstate.md)
@@ -97,7 +104,6 @@ ms.locfileid: "27990871"
 - [疑难解答应用程序目标历史记录的移动应用程序](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [疑难解答应用程序的更新历史记录的移动应用程序](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [疑难解答设备 checkin 历史记录的移动应用程序](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [移动应用程序疑难解答事件](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [移动应用程序疑难解答历史记录项](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [网络 IPv4 配置管理条件](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [网络 IPv6 配置管理条件](intune-fencing-networkipv6configurationmanagementcondition.md)

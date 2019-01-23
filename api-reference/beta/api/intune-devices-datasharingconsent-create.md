@@ -1,26 +1,26 @@
 ---
 title: 创建 dataSharingConsent
 description: 创建新的 dataSharingConsent 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 686f8e5ddb56c53224d467bc6ac31cfdb5b6858c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406946"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,13 +50,13 @@ POST /deviceManagement/dataSharingConsents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意 TermsUrl|
-|授予|Boolean|数据共享同意向其授予的状态|
+|id|String|数据共享同意 Id|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意 TermsUrl|
+|granted|Boolean|数据共享同意向其授予的状态|
 |grantDateTime|DateTimeOffset|此帐户授予时间同意|
-|grantedByUpn|字符串|用户授予许可，为此帐户的 Upn|
-|grantedByUserId|字符串|授予许可，为此帐户的用户的用户 Id|
+|grantedByUpn|String|用户授予许可，为此帐户的 Upn|
+|grantedByUserId|String|授予许可，为此帐户的用户的用户 Id|
 
 
 
@@ -64,6 +64,7 @@ POST /deviceManagement/dataSharingConsents
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -100,7 +101,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 
