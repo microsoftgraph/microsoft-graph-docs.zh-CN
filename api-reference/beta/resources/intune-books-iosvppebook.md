@@ -1,23 +1,24 @@
 ---
 title: iosVppEBook 资源类型
 description: 包含 iOS Vpp eBook的属性的类。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 74f2f71b9f6f31e2574afb16c276ba42fb87c9a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 35a3f6cc1744b869b4dd2dc9e0baf703144ea73b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416774"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS Vpp eBook的属性的类。
+
 
 继承自 [managedEBook](../resources/intune-books-managedebook.md)
 
@@ -51,6 +52,7 @@ ms.locfileid: "27930234"
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
+|roleScopeTagIds|String 集合|此实体实例范围标记的列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -95,10 +97,12 @@ ms.locfileid: "27930234"
   "language": "String",
   "seller": "String",
   "totalLicenseCount": 1024,
-  "usedLicenseCount": 1024
+  "usedLicenseCount": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

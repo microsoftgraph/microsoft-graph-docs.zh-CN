@@ -1,23 +1,24 @@
 ---
 title: windows81SCEPCertificateProfile 资源类型
-description: " SCEP 证书配置文件"
-author: tfitzmac
+description: Windows 8.1 + SCEP 证书配置文件
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 04fe22f8aa8897343d51ab0a16f2aa836e0d93a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fcbc1a58a93f8b6d37b92c2408740a2a9a99d03c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414016"
 ---
 # <a name="windows81scepcertificateprofile-resource-type"></a>windows81SCEPCertificateProfile 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 8.1 + SCEP 证书配置文件
+
 
 继承自[windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)
 
@@ -50,11 +51,11 @@ Windows 8.1 + SCEP 证书配置文件
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)集合|扩展的密钥用法 (EKU) 设置。 该集合最多可包含 500 个元素。 继承自[windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)集合|自定义主题 Alterantive 名称设置。 该集合最多可包含 500 个元素。 继承自[windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)|
 |scepServerUrls|String 集合|SCEP 服务器 Url(s)。|
-|subjectNameFormatString|字符串|自定义格式使用 SubjectNameFormat = 自定义。 示例： CN = {{EmailAddress}} E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation L = 雷德蒙德，ST = WA，C = US|
+|subjectNameFormatString|String|自定义格式使用 SubjectNameFormat = 自定义。 示例： CN = {{EmailAddress}} E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation L = 雷德蒙德，ST = WA，C = US|
 |keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP 密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
 |keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP 密钥大小。 可取值为：`size1024`、`size2048`。|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP 哈希算法。 可取值为：`sha1`、`sha2`。|
-|subjectAlternativeNameFormatString|字符串|定义 AAD 属性的自定义字符串。|
+|subjectAlternativeNameFormatString|String|定义 AAD 属性的自定义字符串。|
 |certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
 
 ## <a name="relationships"></a>Relationships
@@ -122,7 +123,6 @@ Windows 8.1 + SCEP 证书配置文件
   "certificateStore": "String"
 }
 ```
-
 
 
 

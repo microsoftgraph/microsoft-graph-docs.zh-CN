@@ -1,26 +1,26 @@
 ---
 title: 创建 enrollmentProfile
 description: 创建新的 enrollmentProfile 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bf4133e636cd9eedf7737e2003d1ba733a6e08ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2a7bb3fb49b57f38ad938f7d43f28f4ece3fda92
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414765"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,12 +50,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|说明|字符串|配置文件的说明|
+|id|String|对象的 GUID|
+|displayName|String|配置文件的名称|
+|说明|String|配置文件的说明|
 |requiresUserAuthentication|Boolean|指示该配置文件是否要求用户身份验证|
-|configurationEndpointUrl|字符串|配置用于注册的终结点 url|
+|configurationEndpointUrl|String|配置用于注册的终结点 url|
 |enableAuthenticationViaCompanyPortal|Boolean|指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|表示安装程序注册的助手设备上必须的公司门户|
 
 
 
@@ -63,12 +64,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 306
+Content-length: 370
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
@@ -76,7 +78,8 @@ Content-length: 306
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
-  "enableAuthenticationViaCompanyPortal": true
+  "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
 
@@ -85,7 +88,7 @@ Content-length: 306
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 355
+Content-Length: 419
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
@@ -94,10 +97,10 @@ Content-Length: 355
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
-  "enableAuthenticationViaCompanyPortal": true
+  "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

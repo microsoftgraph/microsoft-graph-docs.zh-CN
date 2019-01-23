@@ -1,26 +1,26 @@
 ---
 title: 创建 roleScopeTag
 description: 创建新的 roleScopeTag 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 314e9c6fb05f51efb6e2af6ad62faf25974fe3b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 61476fa106661baa179ff5344b8e4ac891b5a3b7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422192"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,8 +52,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|字符串|显示或角色作用域标记的友好名称。|
-|说明|字符串|角色作用域标记的说明。|
+|displayName|String|显示或角色作用域标记的友好名称。|
+|说明|String|角色作用域标记的说明。|
 
 
 
@@ -61,6 +61,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -89,7 +90,6 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
-
 
 
 

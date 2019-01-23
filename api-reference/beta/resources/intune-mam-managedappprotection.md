@@ -1,23 +1,24 @@
 ---
 title: managedAppProtection 资源类型
 description: 用于为指定的一组应用配置详细管理设置的策略
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 125453eae8e9acaf329f456d12e93fa6f88e9a5b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d88b45fbe1075876ff5eb901485a45663e43ae5c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421863"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于为指定的一组应用配置详细管理设置的策略
+
 
 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
@@ -35,6 +36,7 @@ ms.locfileid: "27972374"
 |description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。|
@@ -63,14 +65,15 @@ ms.locfileid: "27972374"
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
-|minimumWipeOsVersion|字符串|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。|
-|minimumWipeAppVersion|字符串|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。|
+|minimumWipeOsVersion|String|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。|
+|minimumWipeAppVersion|String|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除时也根设备, 或 jailbroken，如果 DeviceComplianceRequired 设置为 true。 可取值为：`block`、`wipe`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，或者是阻止或擦除，基于最大数量的不正确的 pin 重试次数。 可取值为：`block`、`wipe`。|
-|pinRequiredInsteadOfBiometricTimeout|Duration|以分钟为单位的应用程序 pin，而不是非生物密码超时|
+|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin，而不是非生物密码超时|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
@@ -86,6 +89,9 @@ ms.locfileid: "27972374"
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -123,7 +129,6 @@ ms.locfileid: "27972374"
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)"
 }
 ```
-
 
 
 

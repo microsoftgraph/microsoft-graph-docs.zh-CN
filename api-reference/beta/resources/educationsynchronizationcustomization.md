@@ -4,12 +4,12 @@ description: '提供用于自定义资源实体学校数据配置文件同步设
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c4e8810202dbae5fdc3d978bd27e0463f0424d2e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 51563255c11406c26cfa3b02b7b7bb868ed935c8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962868"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415654"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>educationSynchronizationCustomization 资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "27962868"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **optionalPropertiesToSync** | 字符串集合 |  要同步的属性名称的集合。如果设置为 null，所有属性将都为同步。       |
-| **synchronizationStartDate** | 日期时间 |  同步的开始日期。 此值应设置为未来日期。 如果配置文件安装完成后，将会同步设置为 null，资源。 **注意：** 这仅适用于**StudentEnrollment**属性。      |
-|**isSyncDeferred** |布尔 | 指示是否对父实体的同步推迟到以后。 |
-| **allowDisplayNameUpdate** | 布尔 |  指示是否可以通过同步来覆盖资源的显示名称。         |
+| **synchronizationStartDate** | 日期/时间 |  同步的开始日期。 此值应设置为未来日期。 如果配置文件安装完成后，将会同步设置为 null，资源。 **注意：** 这仅适用于**StudentEnrollment**属性。      |
+|**isSyncDeferred** |Boolean | 指示是否对父实体的同步推迟到以后。 |
+| **allowDisplayNameUpdate** | Boolean |  指示是否可以通过同步来覆盖资源的显示名称。         |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -35,7 +35,7 @@ ms.locfileid: "27962868"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomization"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
 }-->
 
 ```json

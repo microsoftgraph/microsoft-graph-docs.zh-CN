@@ -1,23 +1,24 @@
 ---
 title: depOnboardingSetting 资源类型
 description: DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例。 Onboarded 服务实例管理 Apple 令牌用于 Apple 和 Intune 之间同步数据。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3c0e5bcbdf0a687d4601aa92c8fe0eacdd675cd2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423767"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例。 Onboarded 服务实例管理 Apple 令牌用于 Apple 和 Intune 之间同步数据。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -26,7 +27,7 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
 |[创建 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|创建新的[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。|
 |[删除 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|无|删除[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)。|
 |[更新 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|更新[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象的属性。|
-|[getEncryptionPublicKey 函数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|字符串|获取要用于加密 Apple 设备注册程序的公钥标记|
+|[getEncryptionPublicKey 函数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|获取要用于加密 Apple 设备注册程序的公钥标记|
 |[uploadDepToken 操作](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|无|上载新的设备注册程序令牌|
 |[syncWithAppleDeviceEnrollmentProgram 操作](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|无|Apple 设备注册程序和 Intune 之间同步|
 |[shareForSchoolDataSyncService 操作](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|无|尚未记录|
@@ -44,12 +45,11 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
 |shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
 |lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|字符串|Dep 令牌的友好名称|
+|tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步设备计数|
-|defaultProfileDisplayName|字符串|获取同步设备计数|
 |dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|默认 iOS 注册配置文件|
@@ -79,11 +79,9 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "defaultProfileDisplayName": "String",
   "dataSharingConsentGranted": true
 }
 ```
-
 
 
 

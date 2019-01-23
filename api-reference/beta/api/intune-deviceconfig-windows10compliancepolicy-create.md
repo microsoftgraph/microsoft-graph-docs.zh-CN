@@ -1,26 +1,26 @@
 ---
 title: 创建 windows10CompliancePolicy
 description: 创建新的 windows10CompliancePolicy 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5d09c30c9219ea3a9d927b6d550f98130a38ecbe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2eba67635ea4e596dd9bf1881b5b5c0d7b9743df
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422738"
 ---
 # <a name="create-windows10compliancepolicy"></a>创建 windows10CompliancePolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -48,7 +48,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 下表显示创建 windows10CompliancePolicy 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -76,17 +76,17 @@ POST /deviceManagement/deviceCompliancePolicies
 |secureBootEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|布尔|要求在 Windows 设备上的活动防火墙。|
-|defenderEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件。|
-|defenderVersion|字符串|需要 Windows Defender 反恶意软件在 Windows 设备上的最低版本。|
-|signatureOutOfDate|布尔|需要 Windows Defender 反恶意软件签名是最新 Windows 设备上。|
-|rtpEnabled|布尔|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
-|antivirusRequired|布尔|需要与 Windows Decurity 中心上注册和监视 (例如 Symantec，Windows Defender) 的任何防病毒解决方案。|
-|antiSpywareRequired|布尔|需要的任何反间谍软件解决方案注册 Windows Decurity 中心上为和监视 （例如 Symantec、 Windows Defender）。|
+|activeFirewallRequired|Boolean|要求在 Windows 设备上的活动防火墙。|
+|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
+|defenderVersion|String|需要 Windows Defender 反恶意软件在 Windows 设备上的最低版本。|
+|signatureOutOfDate|Boolean|需要 Windows Defender 反恶意软件签名是最新 Windows 设备上。|
+|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
+|antivirusRequired|Boolean|需要与 Windows Decurity 中心上注册和监视 (例如 Symantec，Windows Defender) 的任何防病毒解决方案。|
+|antiSpywareRequired|Boolean|需要的任何反间谍软件解决方案注册 Windows Decurity 中心上为和监视 （例如 Symantec、 Windows Defender）。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|有效的操作系统构建 Windows 设备上的区域。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求设备威胁保护最低风险级别报告如此。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|布尔|需要考虑 Intune 合规性状态考虑 SCCM 合规性状态。|
+|configurationManagerComplianceRequired|Boolean|需要考虑 Intune 合规性状态考虑 SCCM 合规性状态。|
 
 
 
@@ -94,12 +94,13 @@ POST /deviceManagement/deviceCompliancePolicies
 如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1730
+Content-length: 1666
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -107,7 +108,6 @@ Content-length: 1730
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -207,7 +207,6 @@ Content-Length: 1838
   "configurationManagerComplianceRequired": true
 }
 ```
-
 
 
 

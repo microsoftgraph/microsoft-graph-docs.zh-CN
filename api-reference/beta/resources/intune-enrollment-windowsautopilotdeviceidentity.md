@@ -1,23 +1,24 @@
 ---
 title: windowsAutopilotDeviceIdentity 资源类型
 description: WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设备。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1b9f5a2d5be735d454280cf2f8774673da3ac7e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e69f93aff041f99728a224ce6e50a5e711919b1e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423921"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设备。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -32,22 +33,22 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|配置文件 Windows 自动执行某些操作设备的工作分配的状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配详细 Windows 自动执行某些操作设备的状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|配置文件设置的 Windows 自动执行某些操作设备的时间。|
-|orderIdentifier|字符串|Windows 自动执行某些操作设备的顺序标识符。|
-|purchaseOrderIdentifier|字符串|采购订单的 Windows 自动执行某些操作设备的标识符。|
-|serialNumber|字符串|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
+|orderIdentifier|String|Windows 自动执行某些操作设备的顺序标识符。|
+|purchaseOrderIdentifier|String|采购订单的 Windows 自动执行某些操作设备的标识符。|
+|serialNumber|String|Windows autopilot 设备序列号。|
+|productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|Oem 的 Windows 自动执行某些操作设备的制造商。|
 |model|String|模型的 Windows 自动执行某些操作设备的名称。|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows 自动执行某些操作设备 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune 上次联系日期时间的 Windows 自动执行某些操作设备。|
-|addressableUserName|字符串|可寻址用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|addressableUserName|String|可寻址用户名。|
+|userPrincipalName|String|用户主体名称。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|当前已分配给 Windows 自动执行某些操作设备的部署配置文件。|
@@ -80,7 +81,6 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows 自动执行某些操作设�
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

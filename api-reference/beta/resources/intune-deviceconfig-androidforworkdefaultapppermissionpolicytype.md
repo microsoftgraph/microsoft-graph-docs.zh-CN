@@ -1,23 +1,24 @@
 ---
 title: androidForWorkDefaultAppPermissionPolicyType 枚举类型
 description: Android 的工作默认应用程序权限策略类型。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d493fc3877acd4d98f79768d04a86c7b3bfe2a55
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: eb815b18bb6f12d6e9a27c66993aa59193495d6c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421975"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 的工作默认应用程序权限策略类型。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Android 的工作默认应用程序权限策略类型。
 |提示|1|提示。|
 |autoGrant|2|自动授予。|
 |autoDeny|3|自动拒绝。|
-
 
 
 
