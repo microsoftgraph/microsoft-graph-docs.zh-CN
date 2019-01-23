@@ -1,34 +1,34 @@
 ---
 title: 更新 intuneBrandingProfile
 description: 更新 intuneBrandingProfile 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0840852d0668cc6e2b4d18b4345792166a2d5193
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fa1382101012bb202286f75489532a80a87bb381
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403089"
 ---
-# <a name="update-intunebrandingprofile"></a><span data-ttu-id="9d37c-103">更新 intuneBrandingProfile</span><span class="sxs-lookup"><span data-stu-id="9d37c-103">Update intuneBrandingProfile</span></span>
+# <a name="update-intunebrandingprofile"></a><span data-ttu-id="f9f0a-103">更新 intuneBrandingProfile</span><span class="sxs-lookup"><span data-stu-id="f9f0a-103">Update intuneBrandingProfile</span></span>
 
-> <span data-ttu-id="9d37c-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="9d37c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9d37c-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="9d37c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f9f0a-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f9f0a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9d37c-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="9d37c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f9f0a-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9d37c-107">更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9d37c-107">Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9d37c-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="9d37c-108">Prerequisites</span></span>
-<span data-ttu-id="9d37c-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-</span><span class="sxs-lookup"><span data-stu-id="9d37c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f9f0a-107">更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-107">Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.</span></span>
 
-|<span data-ttu-id="9d37c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="9d37c-111">Permission type</span></span>|<span data-ttu-id="9d37c-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9d37c-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="f9f0a-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="f9f0a-108">Prerequisites</span></span>
+<span data-ttu-id="f9f0a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="f9f0a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f9f0a-111">Permission type</span></span>|<span data-ttu-id="f9f0a-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f9f0a-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d37c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9d37c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9d37c-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d37c-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="9d37c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9d37c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9d37c-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9d37c-116">Not supported.</span></span>|
-|<span data-ttu-id="9d37c-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="9d37c-117">Application</span></span>|<span data-ttu-id="9d37c-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="9d37c-118">Not supported.</span></span>|
+|<span data-ttu-id="f9f0a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f9f0a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f9f0a-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9f0a-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="f9f0a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f9f0a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f9f0a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-116">Not supported.</span></span>|
+|<span data-ttu-id="f9f0a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f9f0a-117">Application</span></span>|<span data-ttu-id="f9f0a-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9d37c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9d37c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f9f0a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f9f0a-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,58 +37,59 @@ ms.locfileid: "27964464"
 PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9d37c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9d37c-120">Request headers</span></span>
-|<span data-ttu-id="9d37c-121">标头</span><span class="sxs-lookup"><span data-stu-id="9d37c-121">Header</span></span>|<span data-ttu-id="9d37c-122">值</span><span class="sxs-lookup"><span data-stu-id="9d37c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f9f0a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f9f0a-120">Request headers</span></span>
+|<span data-ttu-id="f9f0a-121">标头</span><span class="sxs-lookup"><span data-stu-id="f9f0a-121">Header</span></span>|<span data-ttu-id="f9f0a-122">值</span><span class="sxs-lookup"><span data-stu-id="f9f0a-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d37c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9d37c-123">Authorization</span></span>|<span data-ttu-id="9d37c-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9d37c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9d37c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="9d37c-125">Accept</span></span>|<span data-ttu-id="9d37c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9d37c-126">application/json</span></span>|
+|<span data-ttu-id="f9f0a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9f0a-123">Authorization</span></span>|<span data-ttu-id="f9f0a-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f9f0a-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f9f0a-125">Accept</span></span>|<span data-ttu-id="f9f0a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f9f0a-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9d37c-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9d37c-127">Request body</span></span>
-<span data-ttu-id="9d37c-128">在请求正文中，提供[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9d37c-128">In the request body, supply a JSON representation for the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f9f0a-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f9f0a-127">Request body</span></span>
+<span data-ttu-id="f9f0a-128">在请求正文中，提供[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-128">In the request body, supply a JSON representation for the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.</span></span>
 
-<span data-ttu-id="9d37c-129">下表显示时创建[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)所需的属性。</span><span class="sxs-lookup"><span data-stu-id="9d37c-129">The following table shows the properties that are required when you create the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).</span></span>
+<span data-ttu-id="f9f0a-129">下表显示时创建[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)所需的属性。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-129">The following table shows the properties that are required when you create the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).</span></span>
 
-|<span data-ttu-id="9d37c-130">属性</span><span class="sxs-lookup"><span data-stu-id="9d37c-130">Property</span></span>|<span data-ttu-id="9d37c-131">类型</span><span class="sxs-lookup"><span data-stu-id="9d37c-131">Type</span></span>|<span data-ttu-id="9d37c-132">说明</span><span class="sxs-lookup"><span data-stu-id="9d37c-132">Description</span></span>|
+|<span data-ttu-id="f9f0a-130">属性</span><span class="sxs-lookup"><span data-stu-id="f9f0a-130">Property</span></span>|<span data-ttu-id="f9f0a-131">类型</span><span class="sxs-lookup"><span data-stu-id="f9f0a-131">Type</span></span>|<span data-ttu-id="f9f0a-132">说明</span><span class="sxs-lookup"><span data-stu-id="f9f0a-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9d37c-133">id</span><span class="sxs-lookup"><span data-stu-id="9d37c-133">id</span></span>|<span data-ttu-id="9d37c-134">字符串</span><span class="sxs-lookup"><span data-stu-id="9d37c-134">String</span></span>|<span data-ttu-id="9d37c-135">配置文件密钥</span><span class="sxs-lookup"><span data-stu-id="9d37c-135">Profile Key</span></span>|
-|<span data-ttu-id="9d37c-136">profileName</span><span class="sxs-lookup"><span data-stu-id="9d37c-136">profileName</span></span>|<span data-ttu-id="9d37c-137">字符串</span><span class="sxs-lookup"><span data-stu-id="9d37c-137">String</span></span>|<span data-ttu-id="9d37c-138">配置文件的名称</span><span class="sxs-lookup"><span data-stu-id="9d37c-138">Name of the profile</span></span>|
-|<span data-ttu-id="9d37c-139">profileDescription</span><span class="sxs-lookup"><span data-stu-id="9d37c-139">profileDescription</span></span>|<span data-ttu-id="9d37c-140">字符串</span><span class="sxs-lookup"><span data-stu-id="9d37c-140">String</span></span>|<span data-ttu-id="9d37c-141">配置文件的说明</span><span class="sxs-lookup"><span data-stu-id="9d37c-141">Description of the profile</span></span>|
-|<span data-ttu-id="9d37c-142">isDefaultProfile</span><span class="sxs-lookup"><span data-stu-id="9d37c-142">isDefaultProfile</span></span>|<span data-ttu-id="9d37c-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="9d37c-143">Boolean</span></span>|<span data-ttu-id="9d37c-144">如果在配置文件使用的默认，呈现。</span><span class="sxs-lookup"><span data-stu-id="9d37c-144">Presents if the profile is used for default.</span></span>|
-|<span data-ttu-id="9d37c-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9d37c-145">createdDateTime</span></span>|<span data-ttu-id="9d37c-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d37c-146">DateTimeOffset</span></span>|<span data-ttu-id="9d37c-147">创建 BrandingProfile 时。</span><span class="sxs-lookup"><span data-stu-id="9d37c-147">When the BrandingProfile was created.</span></span>|
-|<span data-ttu-id="9d37c-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9d37c-148">lastModifiedDateTime</span></span>|<span data-ttu-id="9d37c-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d37c-149">DateTimeOffset</span></span>|<span data-ttu-id="9d37c-150">当 BrandingProfile 上次修改。</span><span class="sxs-lookup"><span data-stu-id="9d37c-150">When the BrandingProfile was last modified.</span></span>|
-|<span data-ttu-id="9d37c-151">displayName</span><span class="sxs-lookup"><span data-stu-id="9d37c-151">displayName</span></span>|<span data-ttu-id="9d37c-152">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-152">String</span></span>|<span data-ttu-id="9d37c-153">向最终用户显示的公司/组织名称。</span><span class="sxs-lookup"><span data-stu-id="9d37c-153">Company/organization name that is displayed to end users.</span></span>|
-|<span data-ttu-id="9d37c-154">contactITName</span><span class="sxs-lookup"><span data-stu-id="9d37c-154">contactITName</span></span>|<span data-ttu-id="9d37c-155">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-155">String</span></span>|<span data-ttu-id="9d37c-156">负责 IT 支持的员工/组织名称。</span><span class="sxs-lookup"><span data-stu-id="9d37c-156">Name of the person/organization responsible for IT support.</span></span>|
-|<span data-ttu-id="9d37c-157">contactITPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="9d37c-157">contactITPhoneNumber</span></span>|<span data-ttu-id="9d37c-158">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-158">String</span></span>|<span data-ttu-id="9d37c-159">负责 IT 支持的员工/组织的电话号码。</span><span class="sxs-lookup"><span data-stu-id="9d37c-159">Phone number of the person/organization responsible for IT support.</span></span>|
-|<span data-ttu-id="9d37c-160">contactITEmailAddress</span><span class="sxs-lookup"><span data-stu-id="9d37c-160">contactITEmailAddress</span></span>|<span data-ttu-id="9d37c-161">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-161">String</span></span>|<span data-ttu-id="9d37c-162">负责 IT 支持的员工/组织的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="9d37c-162">Email address of the person/organization responsible for IT support.</span></span>|
-|<span data-ttu-id="9d37c-163">contactITNotes</span><span class="sxs-lookup"><span data-stu-id="9d37c-163">contactITNotes</span></span>|<span data-ttu-id="9d37c-164">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-164">String</span></span>|<span data-ttu-id="9d37c-165">负责 IT 支持的员工/组织的文本注释。</span><span class="sxs-lookup"><span data-stu-id="9d37c-165">Text comments regarding the person/organization responsible for IT support.</span></span>|
-|<span data-ttu-id="9d37c-166">privacyUrl</span><span class="sxs-lookup"><span data-stu-id="9d37c-166">privacyUrl</span></span>|<span data-ttu-id="9d37c-167">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-167">String</span></span>|<span data-ttu-id="9d37c-168">指向公司/组织隐私策略的 URL。</span><span class="sxs-lookup"><span data-stu-id="9d37c-168">URL to the company/organization’s privacy policy.</span></span>|
-|<span data-ttu-id="9d37c-169">onlineSupportSiteUrl</span><span class="sxs-lookup"><span data-stu-id="9d37c-169">onlineSupportSiteUrl</span></span>|<span data-ttu-id="9d37c-170">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-170">String</span></span>|<span data-ttu-id="9d37c-171">指向公司/组织 IT 支持人员网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="9d37c-171">URL to the company/organization’s IT helpdesk site.</span></span>|
-|<span data-ttu-id="9d37c-172">onlineSupportSiteName</span><span class="sxs-lookup"><span data-stu-id="9d37c-172">onlineSupportSiteName</span></span>|<span data-ttu-id="9d37c-173">String</span><span class="sxs-lookup"><span data-stu-id="9d37c-173">String</span></span>|<span data-ttu-id="9d37c-174">显示公司/组织 IT 支持人员网站的名称。</span><span class="sxs-lookup"><span data-stu-id="9d37c-174">Display name of the company/organization’s IT helpdesk site.</span></span>|
-|<span data-ttu-id="9d37c-175">themeColor</span><span class="sxs-lookup"><span data-stu-id="9d37c-175">themeColor</span></span>|[<span data-ttu-id="9d37c-176">rgbColor</span><span class="sxs-lookup"><span data-stu-id="9d37c-176">rgbColor</span></span>](../resources/intune-shared-rgbcolor.md)|<span data-ttu-id="9d37c-177">公司门户应用程序和 Web 门户中使用的主要主题颜色。</span><span class="sxs-lookup"><span data-stu-id="9d37c-177">Primary theme color used in the Company Portal applications and web portal.</span></span>|
-|<span data-ttu-id="9d37c-178">showLogo</span><span class="sxs-lookup"><span data-stu-id="9d37c-178">showLogo</span></span>|<span data-ttu-id="9d37c-179">布尔值</span><span class="sxs-lookup"><span data-stu-id="9d37c-179">Boolean</span></span>|<span data-ttu-id="9d37c-180">表示是否显示管理员提供的徽标图像的布尔值。</span><span class="sxs-lookup"><span data-stu-id="9d37c-180">Boolean that represents whether the administrator-supplied logo images are shown or not shown.</span></span>|
-|<span data-ttu-id="9d37c-181">showDisplayNameNextToLogo</span><span class="sxs-lookup"><span data-stu-id="9d37c-181">showDisplayNameNextToLogo</span></span>|<span data-ttu-id="9d37c-182">布尔值</span><span class="sxs-lookup"><span data-stu-id="9d37c-182">Boolean</span></span>|<span data-ttu-id="9d37c-183">表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。</span><span class="sxs-lookup"><span data-stu-id="9d37c-183">Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.</span></span>|
-|<span data-ttu-id="9d37c-184">themeColorLogo</span><span class="sxs-lookup"><span data-stu-id="9d37c-184">themeColorLogo</span></span>|[<span data-ttu-id="9d37c-185">mimeContent</span><span class="sxs-lookup"><span data-stu-id="9d37c-185">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="9d37c-186">主题颜色背景上的公司门户应用程序中显示的徽标图像。</span><span class="sxs-lookup"><span data-stu-id="9d37c-186">Logo image displayed in Company Portal apps on theme color backgrounds.</span></span>|
-|<span data-ttu-id="9d37c-187">lightBackgroundLogo</span><span class="sxs-lookup"><span data-stu-id="9d37c-187">lightBackgroundLogo</span></span>|[<span data-ttu-id="9d37c-188">mimeContent</span><span class="sxs-lookup"><span data-stu-id="9d37c-188">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="9d37c-189">浅色背景上的公司门户应用程序中显示的徽标图像。</span><span class="sxs-lookup"><span data-stu-id="9d37c-189">Logo image displayed in Company Portal apps on light backgrounds.</span></span>|
-|<span data-ttu-id="9d37c-190">landingPageCustomizedImage</span><span class="sxs-lookup"><span data-stu-id="9d37c-190">landingPageCustomizedImage</span></span>|[<span data-ttu-id="9d37c-191">mimeContent</span><span class="sxs-lookup"><span data-stu-id="9d37c-191">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="9d37c-192">自定义登录页的公司门户应用程序中显示的图像</span><span class="sxs-lookup"><span data-stu-id="9d37c-192">Customized image displayed in Company Portal apps landing page</span></span>|
+|<span data-ttu-id="f9f0a-133">id</span><span class="sxs-lookup"><span data-stu-id="f9f0a-133">id</span></span>|<span data-ttu-id="f9f0a-134">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-134">String</span></span>|<span data-ttu-id="f9f0a-135">配置文件密钥</span><span class="sxs-lookup"><span data-stu-id="f9f0a-135">Profile Key</span></span>|
+|<span data-ttu-id="f9f0a-136">profileName</span><span class="sxs-lookup"><span data-stu-id="f9f0a-136">profileName</span></span>|<span data-ttu-id="f9f0a-137">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-137">String</span></span>|<span data-ttu-id="f9f0a-138">配置文件的名称</span><span class="sxs-lookup"><span data-stu-id="f9f0a-138">Name of the profile</span></span>|
+|<span data-ttu-id="f9f0a-139">profileDescription</span><span class="sxs-lookup"><span data-stu-id="f9f0a-139">profileDescription</span></span>|<span data-ttu-id="f9f0a-140">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-140">String</span></span>|<span data-ttu-id="f9f0a-141">配置文件的说明</span><span class="sxs-lookup"><span data-stu-id="f9f0a-141">Description of the profile</span></span>|
+|<span data-ttu-id="f9f0a-142">isDefaultProfile</span><span class="sxs-lookup"><span data-stu-id="f9f0a-142">isDefaultProfile</span></span>|<span data-ttu-id="f9f0a-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f0a-143">Boolean</span></span>|<span data-ttu-id="f9f0a-144">如果在配置文件使用的默认，呈现。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-144">Presents if the profile is used for default.</span></span>|
+|<span data-ttu-id="f9f0a-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f9f0a-145">createdDateTime</span></span>|<span data-ttu-id="f9f0a-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f9f0a-146">DateTimeOffset</span></span>|<span data-ttu-id="f9f0a-147">创建 BrandingProfile 时。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-147">When the BrandingProfile was created.</span></span>|
+|<span data-ttu-id="f9f0a-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f9f0a-148">lastModifiedDateTime</span></span>|<span data-ttu-id="f9f0a-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f9f0a-149">DateTimeOffset</span></span>|<span data-ttu-id="f9f0a-150">当 BrandingProfile 上次修改。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-150">When the BrandingProfile was last modified.</span></span>|
+|<span data-ttu-id="f9f0a-151">displayName</span><span class="sxs-lookup"><span data-stu-id="f9f0a-151">displayName</span></span>|<span data-ttu-id="f9f0a-152">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-152">String</span></span>|<span data-ttu-id="f9f0a-153">向最终用户显示的公司/组织名称。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-153">Company/organization name that is displayed to end users.</span></span>|
+|<span data-ttu-id="f9f0a-154">contactITName</span><span class="sxs-lookup"><span data-stu-id="f9f0a-154">contactITName</span></span>|<span data-ttu-id="f9f0a-155">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-155">String</span></span>|<span data-ttu-id="f9f0a-156">负责 IT 支持的员工/组织名称。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-156">Name of the person/organization responsible for IT support.</span></span>|
+|<span data-ttu-id="f9f0a-157">contactITPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="f9f0a-157">contactITPhoneNumber</span></span>|<span data-ttu-id="f9f0a-158">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-158">String</span></span>|<span data-ttu-id="f9f0a-159">负责 IT 支持的员工/组织的电话号码。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-159">Phone number of the person/organization responsible for IT support.</span></span>|
+|<span data-ttu-id="f9f0a-160">contactITEmailAddress</span><span class="sxs-lookup"><span data-stu-id="f9f0a-160">contactITEmailAddress</span></span>|<span data-ttu-id="f9f0a-161">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-161">String</span></span>|<span data-ttu-id="f9f0a-162">负责 IT 支持的员工/组织的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-162">Email address of the person/organization responsible for IT support.</span></span>|
+|<span data-ttu-id="f9f0a-163">contactITNotes</span><span class="sxs-lookup"><span data-stu-id="f9f0a-163">contactITNotes</span></span>|<span data-ttu-id="f9f0a-164">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-164">String</span></span>|<span data-ttu-id="f9f0a-165">负责 IT 支持的员工/组织的文本注释。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-165">Text comments regarding the person/organization responsible for IT support.</span></span>|
+|<span data-ttu-id="f9f0a-166">privacyUrl</span><span class="sxs-lookup"><span data-stu-id="f9f0a-166">privacyUrl</span></span>|<span data-ttu-id="f9f0a-167">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-167">String</span></span>|<span data-ttu-id="f9f0a-168">指向公司/组织隐私策略的 URL。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-168">URL to the company/organization’s privacy policy.</span></span>|
+|<span data-ttu-id="f9f0a-169">onlineSupportSiteUrl</span><span class="sxs-lookup"><span data-stu-id="f9f0a-169">onlineSupportSiteUrl</span></span>|<span data-ttu-id="f9f0a-170">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-170">String</span></span>|<span data-ttu-id="f9f0a-171">指向公司/组织 IT 支持人员网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-171">URL to the company/organization’s IT helpdesk site.</span></span>|
+|<span data-ttu-id="f9f0a-172">onlineSupportSiteName</span><span class="sxs-lookup"><span data-stu-id="f9f0a-172">onlineSupportSiteName</span></span>|<span data-ttu-id="f9f0a-173">String</span><span class="sxs-lookup"><span data-stu-id="f9f0a-173">String</span></span>|<span data-ttu-id="f9f0a-174">显示公司/组织 IT 支持人员网站的名称。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-174">Display name of the company/organization’s IT helpdesk site.</span></span>|
+|<span data-ttu-id="f9f0a-175">themeColor</span><span class="sxs-lookup"><span data-stu-id="f9f0a-175">themeColor</span></span>|[<span data-ttu-id="f9f0a-176">rgbColor</span><span class="sxs-lookup"><span data-stu-id="f9f0a-176">rgbColor</span></span>](../resources/intune-shared-rgbcolor.md)|<span data-ttu-id="f9f0a-177">公司门户应用程序和 Web 门户中使用的主要主题颜色。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-177">Primary theme color used in the Company Portal applications and web portal.</span></span>|
+|<span data-ttu-id="f9f0a-178">showLogo</span><span class="sxs-lookup"><span data-stu-id="f9f0a-178">showLogo</span></span>|<span data-ttu-id="f9f0a-179">布尔值</span><span class="sxs-lookup"><span data-stu-id="f9f0a-179">Boolean</span></span>|<span data-ttu-id="f9f0a-180">表示是否显示管理员提供的徽标图像的布尔值。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-180">Boolean that represents whether the administrator-supplied logo images are shown or not shown.</span></span>|
+|<span data-ttu-id="f9f0a-181">showDisplayNameNextToLogo</span><span class="sxs-lookup"><span data-stu-id="f9f0a-181">showDisplayNameNextToLogo</span></span>|<span data-ttu-id="f9f0a-182">布尔值</span><span class="sxs-lookup"><span data-stu-id="f9f0a-182">Boolean</span></span>|<span data-ttu-id="f9f0a-183">表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-183">Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.</span></span>|
+|<span data-ttu-id="f9f0a-184">themeColorLogo</span><span class="sxs-lookup"><span data-stu-id="f9f0a-184">themeColorLogo</span></span>|[<span data-ttu-id="f9f0a-185">mimeContent</span><span class="sxs-lookup"><span data-stu-id="f9f0a-185">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="f9f0a-186">主题颜色背景上的公司门户应用程序中显示的徽标图像。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-186">Logo image displayed in Company Portal apps on theme color backgrounds.</span></span>|
+|<span data-ttu-id="f9f0a-187">lightBackgroundLogo</span><span class="sxs-lookup"><span data-stu-id="f9f0a-187">lightBackgroundLogo</span></span>|[<span data-ttu-id="f9f0a-188">mimeContent</span><span class="sxs-lookup"><span data-stu-id="f9f0a-188">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="f9f0a-189">浅色背景上的公司门户应用程序中显示的徽标图像。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-189">Logo image displayed in Company Portal apps on light backgrounds.</span></span>|
+|<span data-ttu-id="f9f0a-190">landingPageCustomizedImage</span><span class="sxs-lookup"><span data-stu-id="f9f0a-190">landingPageCustomizedImage</span></span>|[<span data-ttu-id="f9f0a-191">mimeContent</span><span class="sxs-lookup"><span data-stu-id="f9f0a-191">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="f9f0a-192">自定义登录页的公司门户应用程序中显示的图像</span><span class="sxs-lookup"><span data-stu-id="f9f0a-192">Customized image displayed in Company Portal apps landing page</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9d37c-193">响应</span><span class="sxs-lookup"><span data-stu-id="9d37c-193">Response</span></span>
-<span data-ttu-id="9d37c-194">如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9d37c-194">If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f9f0a-193">响应</span><span class="sxs-lookup"><span data-stu-id="f9f0a-193">Response</span></span>
+<span data-ttu-id="f9f0a-194">如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-194">If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9d37c-195">示例</span><span class="sxs-lookup"><span data-stu-id="9d37c-195">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9d37c-196">请求</span><span class="sxs-lookup"><span data-stu-id="9d37c-196">Request</span></span>
-<span data-ttu-id="9d37c-197">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9d37c-197">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f9f0a-195">示例</span><span class="sxs-lookup"><span data-stu-id="f9f0a-195">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="f9f0a-196">请求</span><span class="sxs-lookup"><span data-stu-id="f9f0a-196">Request</span></span>
+<span data-ttu-id="f9f0a-197">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-197">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1209
+Content-length: 1205
 
 {
+  "@odata.type": "#microsoft.graph.intuneBrandingProfile",
   "profileName": "Profile Name value",
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "contactITName": "Contact ITName value",
   "contactITPhoneNumber": "Contact ITPhone Number value",
@@ -123,8 +124,8 @@ Content-length: 1209
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9d37c-198">响应</span><span class="sxs-lookup"><span data-stu-id="9d37c-198">Response</span></span>
-<span data-ttu-id="9d37c-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9d37c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f9f0a-198">响应</span><span class="sxs-lookup"><span data-stu-id="f9f0a-198">Response</span></span>
+<span data-ttu-id="f9f0a-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f9f0a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -171,7 +172,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 
