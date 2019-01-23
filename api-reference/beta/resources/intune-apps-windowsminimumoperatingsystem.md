@@ -1,38 +1,40 @@
 ---
 title: windowsMinimumOperatingSystem 资源类型
 description: Windows 移动应用需要的最低操作系统。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cbee999b213d6c4b76a1203ac48b84c8dbeda3c5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0c293e7490df1e7a6c53628b49440a050ee21a39
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395816"
 ---
-# <a name="windowsminimumoperatingsystem-resource-type"></a><span data-ttu-id="4bd2c-103">windowsMinimumOperatingSystem 资源类型</span><span class="sxs-lookup"><span data-stu-id="4bd2c-103">windowsMinimumOperatingSystem resource type</span></span>
+# <a name="windowsminimumoperatingsystem-resource-type"></a><span data-ttu-id="cd414-103">windowsMinimumOperatingSystem 资源类型</span><span class="sxs-lookup"><span data-stu-id="cd414-103">windowsMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="4bd2c-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4bd2c-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cd414-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="cd414-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cd414-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="cd414-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="4bd2c-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="cd414-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cd414-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4bd2c-107">Windows 移动应用需要的最低操作系统。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-107">The minimum operating system required for a Windows mobile app.</span></span>
-## <a name="properties"></a><span data-ttu-id="4bd2c-108">属性</span><span class="sxs-lookup"><span data-stu-id="4bd2c-108">Properties</span></span>
-|<span data-ttu-id="4bd2c-109">属性</span><span class="sxs-lookup"><span data-stu-id="4bd2c-109">Property</span></span>|<span data-ttu-id="4bd2c-110">类型</span><span class="sxs-lookup"><span data-stu-id="4bd2c-110">Type</span></span>|<span data-ttu-id="4bd2c-111">说明</span><span class="sxs-lookup"><span data-stu-id="4bd2c-111">Description</span></span>|
+<span data-ttu-id="cd414-107">Windows 移动应用需要的最低操作系统。</span><span class="sxs-lookup"><span data-stu-id="cd414-107">The minimum operating system required for a Windows mobile app.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="cd414-108">属性</span><span class="sxs-lookup"><span data-stu-id="cd414-108">Properties</span></span>
+|<span data-ttu-id="cd414-109">属性</span><span class="sxs-lookup"><span data-stu-id="cd414-109">Property</span></span>|<span data-ttu-id="cd414-110">类型</span><span class="sxs-lookup"><span data-stu-id="cd414-110">Type</span></span>|<span data-ttu-id="cd414-111">说明</span><span class="sxs-lookup"><span data-stu-id="cd414-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4bd2c-112">v8_0</span><span class="sxs-lookup"><span data-stu-id="4bd2c-112">v8_0</span></span>|<span data-ttu-id="4bd2c-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="4bd2c-113">Boolean</span></span>|<span data-ttu-id="4bd2c-114">Windows 版本 8.0 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-114">Windows version 8.0 or later.</span></span>|
-|<span data-ttu-id="4bd2c-115">v8_1</span><span class="sxs-lookup"><span data-stu-id="4bd2c-115">v8_1</span></span>|<span data-ttu-id="4bd2c-116">布尔值</span><span class="sxs-lookup"><span data-stu-id="4bd2c-116">Boolean</span></span>|<span data-ttu-id="4bd2c-117">Windows 版本 8.1 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-117">Windows version 8.1 or later.</span></span>|
-|<span data-ttu-id="4bd2c-118">v10_0</span><span class="sxs-lookup"><span data-stu-id="4bd2c-118">v10_0</span></span>|<span data-ttu-id="4bd2c-119">布尔值</span><span class="sxs-lookup"><span data-stu-id="4bd2c-119">Boolean</span></span>|<span data-ttu-id="4bd2c-120">Windows 版本 10.0 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-120">Windows version 10.0 or later.</span></span>|
-|<span data-ttu-id="4bd2c-121">v10_1607</span><span class="sxs-lookup"><span data-stu-id="4bd2c-121">v10_1607</span></span>|<span data-ttu-id="4bd2c-122">布尔</span><span class="sxs-lookup"><span data-stu-id="4bd2c-122">Boolean</span></span>|<span data-ttu-id="4bd2c-123">Windows 10 1607年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-123">Windows 10 1607 or later.</span></span>|
-|<span data-ttu-id="4bd2c-124">v10_1703</span><span class="sxs-lookup"><span data-stu-id="4bd2c-124">v10_1703</span></span>|<span data-ttu-id="4bd2c-125">布尔</span><span class="sxs-lookup"><span data-stu-id="4bd2c-125">Boolean</span></span>|<span data-ttu-id="4bd2c-126">Windows 10 1703年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-126">Windows 10 1703 or later.</span></span>|
-|<span data-ttu-id="4bd2c-127">v10_1709</span><span class="sxs-lookup"><span data-stu-id="4bd2c-127">v10_1709</span></span>|<span data-ttu-id="4bd2c-128">布尔</span><span class="sxs-lookup"><span data-stu-id="4bd2c-128">Boolean</span></span>|<span data-ttu-id="4bd2c-129">Windows 10 1709年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-129">Windows 10 1709 or later.</span></span>|
-|<span data-ttu-id="4bd2c-130">v10_1803</span><span class="sxs-lookup"><span data-stu-id="4bd2c-130">v10_1803</span></span>|<span data-ttu-id="4bd2c-131">布尔</span><span class="sxs-lookup"><span data-stu-id="4bd2c-131">Boolean</span></span>|<span data-ttu-id="4bd2c-132">Windows 10 1803年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-132">Windows 10 1803 or later.</span></span>|
+|<span data-ttu-id="cd414-112">v8_0</span><span class="sxs-lookup"><span data-stu-id="cd414-112">v8_0</span></span>|<span data-ttu-id="cd414-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="cd414-113">Boolean</span></span>|<span data-ttu-id="cd414-114">Windows 版本 8.0 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-114">Windows version 8.0 or later.</span></span>|
+|<span data-ttu-id="cd414-115">v8_1</span><span class="sxs-lookup"><span data-stu-id="cd414-115">v8_1</span></span>|<span data-ttu-id="cd414-116">布尔值</span><span class="sxs-lookup"><span data-stu-id="cd414-116">Boolean</span></span>|<span data-ttu-id="cd414-117">Windows 版本 8.1 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-117">Windows version 8.1 or later.</span></span>|
+|<span data-ttu-id="cd414-118">v10_0</span><span class="sxs-lookup"><span data-stu-id="cd414-118">v10_0</span></span>|<span data-ttu-id="cd414-119">布尔值</span><span class="sxs-lookup"><span data-stu-id="cd414-119">Boolean</span></span>|<span data-ttu-id="cd414-120">Windows 版本 10.0 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-120">Windows version 10.0 or later.</span></span>|
+|<span data-ttu-id="cd414-121">v10_1607</span><span class="sxs-lookup"><span data-stu-id="cd414-121">v10_1607</span></span>|<span data-ttu-id="cd414-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="cd414-122">Boolean</span></span>|<span data-ttu-id="cd414-123">Windows 10 1607年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-123">Windows 10 1607 or later.</span></span>|
+|<span data-ttu-id="cd414-124">v10_1703</span><span class="sxs-lookup"><span data-stu-id="cd414-124">v10_1703</span></span>|<span data-ttu-id="cd414-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="cd414-125">Boolean</span></span>|<span data-ttu-id="cd414-126">Windows 10 1703年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-126">Windows 10 1703 or later.</span></span>|
+|<span data-ttu-id="cd414-127">v10_1709</span><span class="sxs-lookup"><span data-stu-id="cd414-127">v10_1709</span></span>|<span data-ttu-id="cd414-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="cd414-128">Boolean</span></span>|<span data-ttu-id="cd414-129">Windows 10 1709年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-129">Windows 10 1709 or later.</span></span>|
+|<span data-ttu-id="cd414-130">v10_1803</span><span class="sxs-lookup"><span data-stu-id="cd414-130">v10_1803</span></span>|<span data-ttu-id="cd414-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="cd414-131">Boolean</span></span>|<span data-ttu-id="cd414-132">Windows 10 1803年或更高版本。</span><span class="sxs-lookup"><span data-stu-id="cd414-132">Windows 10 1803 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4bd2c-133">Relationships</span><span class="sxs-lookup"><span data-stu-id="4bd2c-133">Relationships</span></span>
-<span data-ttu-id="4bd2c-134">无</span><span class="sxs-lookup"><span data-stu-id="4bd2c-134">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="4bd2c-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4bd2c-135">JSON Representation</span></span>
-<span data-ttu-id="4bd2c-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4bd2c-136">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="cd414-133">关系</span><span class="sxs-lookup"><span data-stu-id="cd414-133">Relationships</span></span>
+<span data-ttu-id="cd414-134">无</span><span class="sxs-lookup"><span data-stu-id="cd414-134">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="cd414-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cd414-135">JSON Representation</span></span>
+<span data-ttu-id="cd414-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cd414-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem"
@@ -50,7 +52,6 @@ ms.locfileid: "27914645"
   "v10_1803": true
 }
 ```
-
 
 
 

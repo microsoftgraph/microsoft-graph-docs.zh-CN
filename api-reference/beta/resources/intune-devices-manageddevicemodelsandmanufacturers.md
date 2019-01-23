@@ -1,33 +1,35 @@
 ---
 title: managedDeviceModelsAndManufacturers 资源类型
 description: 模型和托管帐户中的设备的制造商 meatadata
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8a1769f82153fd8184807877c484a4dc31ebda1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: afcf64cb0e8db4e24ce061490ecc593595690930
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396789"
 ---
-# <a name="manageddevicemodelsandmanufacturers-resource-type"></a><span data-ttu-id="7e7bb-103">managedDeviceModelsAndManufacturers 资源类型</span><span class="sxs-lookup"><span data-stu-id="7e7bb-103">managedDeviceModelsAndManufacturers resource type</span></span>
+# <a name="manageddevicemodelsandmanufacturers-resource-type"></a><span data-ttu-id="be2d5-103">managedDeviceModelsAndManufacturers 资源类型</span><span class="sxs-lookup"><span data-stu-id="be2d5-103">managedDeviceModelsAndManufacturers resource type</span></span>
 
-> <span data-ttu-id="7e7bb-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="7e7bb-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7e7bb-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="7e7bb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="be2d5-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="be2d5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="be2d5-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="be2d5-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="7e7bb-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="7e7bb-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="be2d5-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="be2d5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7e7bb-107">模型和托管帐户中的设备的制造商 meatadata</span><span class="sxs-lookup"><span data-stu-id="7e7bb-107">Models and Manufactures meatadata for managed devices in the account</span></span>
-## <a name="properties"></a><span data-ttu-id="7e7bb-108">属性</span><span class="sxs-lookup"><span data-stu-id="7e7bb-108">Properties</span></span>
-|<span data-ttu-id="7e7bb-109">属性</span><span class="sxs-lookup"><span data-stu-id="7e7bb-109">Property</span></span>|<span data-ttu-id="7e7bb-110">类型</span><span class="sxs-lookup"><span data-stu-id="7e7bb-110">Type</span></span>|<span data-ttu-id="7e7bb-111">Description</span><span class="sxs-lookup"><span data-stu-id="7e7bb-111">Description</span></span>|
+<span data-ttu-id="be2d5-107">模型和托管帐户中的设备的制造商 meatadata</span><span class="sxs-lookup"><span data-stu-id="be2d5-107">Models and Manufactures meatadata for managed devices in the account</span></span>
+
+## <a name="properties"></a><span data-ttu-id="be2d5-108">属性</span><span class="sxs-lookup"><span data-stu-id="be2d5-108">Properties</span></span>
+|<span data-ttu-id="be2d5-109">属性</span><span class="sxs-lookup"><span data-stu-id="be2d5-109">Property</span></span>|<span data-ttu-id="be2d5-110">类型</span><span class="sxs-lookup"><span data-stu-id="be2d5-110">Type</span></span>|<span data-ttu-id="be2d5-111">说明</span><span class="sxs-lookup"><span data-stu-id="be2d5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7e7bb-112">deviceModels</span><span class="sxs-lookup"><span data-stu-id="7e7bb-112">deviceModels</span></span>|<span data-ttu-id="7e7bb-113">String 集合</span><span class="sxs-lookup"><span data-stu-id="7e7bb-113">String collection</span></span>|<span data-ttu-id="7e7bb-114">模型的托管帐户中的设备的列表</span><span class="sxs-lookup"><span data-stu-id="7e7bb-114">List of Models for managed devices in the account</span></span>|
-|<span data-ttu-id="7e7bb-115">设备制造商</span><span class="sxs-lookup"><span data-stu-id="7e7bb-115">deviceManufacturers</span></span>|<span data-ttu-id="7e7bb-116">String 集合</span><span class="sxs-lookup"><span data-stu-id="7e7bb-116">String collection</span></span>|<span data-ttu-id="7e7bb-117">在帐户的托管设备的制造商列表</span><span class="sxs-lookup"><span data-stu-id="7e7bb-117">List of Manufactures for managed devices in the account</span></span>|
+|<span data-ttu-id="be2d5-112">deviceModels</span><span class="sxs-lookup"><span data-stu-id="be2d5-112">deviceModels</span></span>|<span data-ttu-id="be2d5-113">String 集合</span><span class="sxs-lookup"><span data-stu-id="be2d5-113">String collection</span></span>|<span data-ttu-id="be2d5-114">模型的托管帐户中的设备的列表</span><span class="sxs-lookup"><span data-stu-id="be2d5-114">List of Models for managed devices in the account</span></span>|
+|<span data-ttu-id="be2d5-115">设备制造商</span><span class="sxs-lookup"><span data-stu-id="be2d5-115">deviceManufacturers</span></span>|<span data-ttu-id="be2d5-116">String 集合</span><span class="sxs-lookup"><span data-stu-id="be2d5-116">String collection</span></span>|<span data-ttu-id="be2d5-117">在帐户的托管设备的制造商列表</span><span class="sxs-lookup"><span data-stu-id="be2d5-117">List of Manufactures for managed devices in the account</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7e7bb-118">Relationships</span><span class="sxs-lookup"><span data-stu-id="7e7bb-118">Relationships</span></span>
-<span data-ttu-id="7e7bb-119">无</span><span class="sxs-lookup"><span data-stu-id="7e7bb-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="7e7bb-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7e7bb-120">JSON Representation</span></span>
-<span data-ttu-id="7e7bb-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e7bb-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="be2d5-118">关系</span><span class="sxs-lookup"><span data-stu-id="be2d5-118">Relationships</span></span>
+<span data-ttu-id="be2d5-119">无</span><span class="sxs-lookup"><span data-stu-id="be2d5-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="be2d5-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="be2d5-120">JSON Representation</span></span>
+<span data-ttu-id="be2d5-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="be2d5-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceModelsAndManufacturers"
@@ -44,7 +46,6 @@ ms.locfileid: "27927525"
   ]
 }
 ```
-
 
 
 

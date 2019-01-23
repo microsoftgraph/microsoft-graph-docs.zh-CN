@@ -1,34 +1,34 @@
 ---
 title: win32LobAppDetectionOperator 枚举类型
 description: 包含有关检测运算符的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f0c3a7c639df6976e8e28a2426987929ca19b064
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f600d545691741c37d8a315f8af3f5e12ec435c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393044"
 ---
-# <a name="win32lobappdetectionoperator-enum-type"></a><span data-ttu-id="86bd6-103">win32LobAppDetectionOperator 枚举类型</span><span class="sxs-lookup"><span data-stu-id="86bd6-103">win32LobAppDetectionOperator enum type</span></span>
+# <a name="win32lobappdetectionoperator-enum-type"></a><span data-ttu-id="2098d-103">win32LobAppDetectionOperator 枚举类型</span><span class="sxs-lookup"><span data-stu-id="2098d-103">win32LobAppDetectionOperator enum type</span></span>
 
-> <span data-ttu-id="86bd6-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="86bd6-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="86bd6-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="86bd6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2098d-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="2098d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2098d-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2098d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="86bd6-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="86bd6-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="2098d-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2098d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="86bd6-107">包含有关检测运算符的属性。</span><span class="sxs-lookup"><span data-stu-id="86bd6-107">Contains properties for detection operator.</span></span>
-## <a name="members"></a><span data-ttu-id="86bd6-108">成员</span><span class="sxs-lookup"><span data-stu-id="86bd6-108">Members</span></span>
-|<span data-ttu-id="86bd6-109">成员</span><span class="sxs-lookup"><span data-stu-id="86bd6-109">Member</span></span>|<span data-ttu-id="86bd6-110">值</span><span class="sxs-lookup"><span data-stu-id="86bd6-110">Value</span></span>|<span data-ttu-id="86bd6-111">说明</span><span class="sxs-lookup"><span data-stu-id="86bd6-111">Description</span></span>|
+<span data-ttu-id="2098d-107">包含有关检测运算符的属性。</span><span class="sxs-lookup"><span data-stu-id="2098d-107">Contains properties for detection operator.</span></span>
+
+## <a name="members"></a><span data-ttu-id="2098d-108">成员</span><span class="sxs-lookup"><span data-stu-id="2098d-108">Members</span></span>
+|<span data-ttu-id="2098d-109">成员</span><span class="sxs-lookup"><span data-stu-id="2098d-109">Member</span></span>|<span data-ttu-id="2098d-110">值</span><span class="sxs-lookup"><span data-stu-id="2098d-110">Value</span></span>|<span data-ttu-id="2098d-111">说明</span><span class="sxs-lookup"><span data-stu-id="2098d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="86bd6-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="86bd6-112">notConfigured</span></span>|<span data-ttu-id="86bd6-113">0</span><span class="sxs-lookup"><span data-stu-id="86bd6-113">0</span></span>|<span data-ttu-id="86bd6-114">未配置。</span><span class="sxs-lookup"><span data-stu-id="86bd6-114">Not configured.</span></span>|
-|<span data-ttu-id="86bd6-115">等于</span><span class="sxs-lookup"><span data-stu-id="86bd6-115">equal</span></span>|<span data-ttu-id="86bd6-116">1</span><span class="sxs-lookup"><span data-stu-id="86bd6-116">1</span></span>|<span data-ttu-id="86bd6-117">等于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-117">Equal operator.</span></span>|
-|<span data-ttu-id="86bd6-118">notEqual</span><span class="sxs-lookup"><span data-stu-id="86bd6-118">notEqual</span></span>|<span data-ttu-id="86bd6-119">2</span><span class="sxs-lookup"><span data-stu-id="86bd6-119">2</span></span>|<span data-ttu-id="86bd6-120">不等于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-120">Not equal operator.</span></span>|
-|<span data-ttu-id="86bd6-121">greaterThan</span><span class="sxs-lookup"><span data-stu-id="86bd6-121">greaterThan</span></span>|<span data-ttu-id="86bd6-122">4</span><span class="sxs-lookup"><span data-stu-id="86bd6-122">4</span></span>|<span data-ttu-id="86bd6-123">大于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-123">Greater than operator.</span></span>|
-|<span data-ttu-id="86bd6-124">greaterThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="86bd6-124">greaterThanOrEqual</span></span>|<span data-ttu-id="86bd6-125">5</span><span class="sxs-lookup"><span data-stu-id="86bd6-125">5</span></span>|<span data-ttu-id="86bd6-126">大于或等于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-126">Greater than or equal operator.</span></span>|
-|<span data-ttu-id="86bd6-127">lessThan</span><span class="sxs-lookup"><span data-stu-id="86bd6-127">lessThan</span></span>|<span data-ttu-id="86bd6-128">8</span><span class="sxs-lookup"><span data-stu-id="86bd6-128">8</span></span>|<span data-ttu-id="86bd6-129">小于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-129">Less than operator.</span></span>|
-|<span data-ttu-id="86bd6-130">lessThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="86bd6-130">lessThanOrEqual</span></span>|<span data-ttu-id="86bd6-131">9</span><span class="sxs-lookup"><span data-stu-id="86bd6-131">9</span></span>|<span data-ttu-id="86bd6-132">小于或等于运算符。</span><span class="sxs-lookup"><span data-stu-id="86bd6-132">Less than or equal operator.</span></span>|
-
+|<span data-ttu-id="2098d-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="2098d-112">notConfigured</span></span>|<span data-ttu-id="2098d-113">0</span><span class="sxs-lookup"><span data-stu-id="2098d-113">0</span></span>|<span data-ttu-id="2098d-114">未配置。</span><span class="sxs-lookup"><span data-stu-id="2098d-114">Not configured.</span></span>|
+|<span data-ttu-id="2098d-115">等于</span><span class="sxs-lookup"><span data-stu-id="2098d-115">equal</span></span>|<span data-ttu-id="2098d-116">1</span><span class="sxs-lookup"><span data-stu-id="2098d-116">1</span></span>|<span data-ttu-id="2098d-117">等于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-117">Equal operator.</span></span>|
+|<span data-ttu-id="2098d-118">notEqual</span><span class="sxs-lookup"><span data-stu-id="2098d-118">notEqual</span></span>|<span data-ttu-id="2098d-119">2</span><span class="sxs-lookup"><span data-stu-id="2098d-119">2</span></span>|<span data-ttu-id="2098d-120">不等于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-120">Not equal operator.</span></span>|
+|<span data-ttu-id="2098d-121">greaterThan</span><span class="sxs-lookup"><span data-stu-id="2098d-121">greaterThan</span></span>|<span data-ttu-id="2098d-122">4</span><span class="sxs-lookup"><span data-stu-id="2098d-122">4</span></span>|<span data-ttu-id="2098d-123">大于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-123">Greater than operator.</span></span>|
+|<span data-ttu-id="2098d-124">greaterThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="2098d-124">greaterThanOrEqual</span></span>|<span data-ttu-id="2098d-125">5</span><span class="sxs-lookup"><span data-stu-id="2098d-125">5</span></span>|<span data-ttu-id="2098d-126">大于或等于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-126">Greater than or equal operator.</span></span>|
+|<span data-ttu-id="2098d-127">lessThan</span><span class="sxs-lookup"><span data-stu-id="2098d-127">lessThan</span></span>|<span data-ttu-id="2098d-128">8</span><span class="sxs-lookup"><span data-stu-id="2098d-128">8</span></span>|<span data-ttu-id="2098d-129">小于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-129">Less than operator.</span></span>|
+|<span data-ttu-id="2098d-130">lessThanOrEqual</span><span class="sxs-lookup"><span data-stu-id="2098d-130">lessThanOrEqual</span></span>|<span data-ttu-id="2098d-131">9</span><span class="sxs-lookup"><span data-stu-id="2098d-131">9</span></span>|<span data-ttu-id="2098d-132">小于或等于运算符。</span><span class="sxs-lookup"><span data-stu-id="2098d-132">Less than or equal operator.</span></span>|
 
 
 

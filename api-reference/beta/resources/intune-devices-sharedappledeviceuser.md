@@ -1,35 +1,37 @@
 ---
 title: sharedAppleDeviceUser 资源类型
 description: 尚未记录
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6106daff0b7c4af023c8bfbb8352b52efc674928
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 46e0993c69a8ae34a54a654959d8d67a1b7f4747
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394430"
 ---
-# <a name="sharedappledeviceuser-resource-type"></a><span data-ttu-id="757ee-103">sharedAppleDeviceUser 资源类型</span><span class="sxs-lookup"><span data-stu-id="757ee-103">sharedAppleDeviceUser resource type</span></span>
+# <a name="sharedappledeviceuser-resource-type"></a><span data-ttu-id="0fa3f-103">sharedAppleDeviceUser 资源类型</span><span class="sxs-lookup"><span data-stu-id="0fa3f-103">sharedAppleDeviceUser resource type</span></span>
 
-> <span data-ttu-id="757ee-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="757ee-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="757ee-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="757ee-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0fa3f-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="0fa3f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0fa3f-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="0fa3f-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="757ee-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="757ee-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0fa3f-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0fa3f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="757ee-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="757ee-107">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="757ee-108">属性</span><span class="sxs-lookup"><span data-stu-id="757ee-108">Properties</span></span>
-|<span data-ttu-id="757ee-109">属性</span><span class="sxs-lookup"><span data-stu-id="757ee-109">Property</span></span>|<span data-ttu-id="757ee-110">类型</span><span class="sxs-lookup"><span data-stu-id="757ee-110">Type</span></span>|<span data-ttu-id="757ee-111">说明</span><span class="sxs-lookup"><span data-stu-id="757ee-111">Description</span></span>|
+<span data-ttu-id="0fa3f-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0fa3f-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="0fa3f-108">属性</span><span class="sxs-lookup"><span data-stu-id="0fa3f-108">Properties</span></span>
+|<span data-ttu-id="0fa3f-109">属性</span><span class="sxs-lookup"><span data-stu-id="0fa3f-109">Property</span></span>|<span data-ttu-id="0fa3f-110">类型</span><span class="sxs-lookup"><span data-stu-id="0fa3f-110">Type</span></span>|<span data-ttu-id="0fa3f-111">说明</span><span class="sxs-lookup"><span data-stu-id="0fa3f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="757ee-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="757ee-112">userPrincipalName</span></span>|<span data-ttu-id="757ee-113">字符串</span><span class="sxs-lookup"><span data-stu-id="757ee-113">String</span></span>|<span data-ttu-id="757ee-114">用户名</span><span class="sxs-lookup"><span data-stu-id="757ee-114">User name</span></span>|
-|<span data-ttu-id="757ee-115">dataToSync</span><span class="sxs-lookup"><span data-stu-id="757ee-115">dataToSync</span></span>|<span data-ttu-id="757ee-116">布尔</span><span class="sxs-lookup"><span data-stu-id="757ee-116">Boolean</span></span>|<span data-ttu-id="757ee-117">数据同步</span><span class="sxs-lookup"><span data-stu-id="757ee-117">Data to sync</span></span>|
-|<span data-ttu-id="757ee-118">dataQuota</span><span class="sxs-lookup"><span data-stu-id="757ee-118">dataQuota</span></span>|<span data-ttu-id="757ee-119">Int64</span><span class="sxs-lookup"><span data-stu-id="757ee-119">Int64</span></span>|<span data-ttu-id="757ee-120">数据配额</span><span class="sxs-lookup"><span data-stu-id="757ee-120">Data quota</span></span>|
-|<span data-ttu-id="757ee-121">dataUsed</span><span class="sxs-lookup"><span data-stu-id="757ee-121">dataUsed</span></span>|<span data-ttu-id="757ee-122">Int64</span><span class="sxs-lookup"><span data-stu-id="757ee-122">Int64</span></span>|<span data-ttu-id="757ee-123">数据配额</span><span class="sxs-lookup"><span data-stu-id="757ee-123">Data quota</span></span>|
+|<span data-ttu-id="0fa3f-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="0fa3f-112">userPrincipalName</span></span>|<span data-ttu-id="0fa3f-113">String</span><span class="sxs-lookup"><span data-stu-id="0fa3f-113">String</span></span>|<span data-ttu-id="0fa3f-114">用户名</span><span class="sxs-lookup"><span data-stu-id="0fa3f-114">User name</span></span>|
+|<span data-ttu-id="0fa3f-115">dataToSync</span><span class="sxs-lookup"><span data-stu-id="0fa3f-115">dataToSync</span></span>|<span data-ttu-id="0fa3f-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="0fa3f-116">Boolean</span></span>|<span data-ttu-id="0fa3f-117">数据同步</span><span class="sxs-lookup"><span data-stu-id="0fa3f-117">Data to sync</span></span>|
+|<span data-ttu-id="0fa3f-118">dataQuota</span><span class="sxs-lookup"><span data-stu-id="0fa3f-118">dataQuota</span></span>|<span data-ttu-id="0fa3f-119">Int64</span><span class="sxs-lookup"><span data-stu-id="0fa3f-119">Int64</span></span>|<span data-ttu-id="0fa3f-120">数据配额</span><span class="sxs-lookup"><span data-stu-id="0fa3f-120">Data quota</span></span>|
+|<span data-ttu-id="0fa3f-121">dataUsed</span><span class="sxs-lookup"><span data-stu-id="0fa3f-121">dataUsed</span></span>|<span data-ttu-id="0fa3f-122">Int64</span><span class="sxs-lookup"><span data-stu-id="0fa3f-122">Int64</span></span>|<span data-ttu-id="0fa3f-123">数据配额</span><span class="sxs-lookup"><span data-stu-id="0fa3f-123">Data quota</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="757ee-124">Relationships</span><span class="sxs-lookup"><span data-stu-id="757ee-124">Relationships</span></span>
-<span data-ttu-id="757ee-125">无</span><span class="sxs-lookup"><span data-stu-id="757ee-125">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="757ee-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="757ee-126">JSON Representation</span></span>
-<span data-ttu-id="757ee-127">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="757ee-127">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="0fa3f-124">关系</span><span class="sxs-lookup"><span data-stu-id="0fa3f-124">Relationships</span></span>
+<span data-ttu-id="0fa3f-125">无</span><span class="sxs-lookup"><span data-stu-id="0fa3f-125">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="0fa3f-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0fa3f-126">JSON Representation</span></span>
+<span data-ttu-id="0fa3f-127">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0fa3f-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharedAppleDeviceUser"
@@ -44,7 +46,6 @@ ms.locfileid: "27987704"
   "dataUsed": 1024
 }
 ```
-
 
 
 
