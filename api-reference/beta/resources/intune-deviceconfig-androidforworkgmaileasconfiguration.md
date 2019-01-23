@@ -3,21 +3,22 @@ title: androidForWorkGmailEasConfiguration 资源类型
 description: 通过提供此配置文件中的配置，您可以指示 Gmail 电子邮件客户端上的工作 Android 设备与 Exchange server 通信并获取电子邮件、 联系人、 日历、 任务和注释。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: f974da3c84a0db18517b7d9210623f631c30c037
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: bcad52f055abf3897f66b8e980c9842a4ca66ef2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414737"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>androidForWorkGmailEasConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 通过提供此配置文件中的配置，您可以指示 Gmail 电子邮件客户端上的工作 Android 设备与 Exchange server 通信并获取电子邮件、 联系人、 日历、 任务和注释。 此外，您还可以指定多少电子邮件到同步和设备应同步频率。
+
 
 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)
 
@@ -89,7 +90,6 @@ ms.locfileid: "27928631"
   "usernameSource": "String"
 }
 ```
-
 
 
 

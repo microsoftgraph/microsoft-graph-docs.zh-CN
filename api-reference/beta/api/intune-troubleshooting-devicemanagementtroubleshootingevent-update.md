@@ -1,26 +1,26 @@
 ---
 title: 更新 deviceManagementTroubleshootingEvent
 description: 更新 deviceManagementTroubleshootingEvent 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 496404d4a12080c9809d47f834e18e7cd5c793df
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 935a5b835669a2d87fd761d8c62ccba537022f91
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978345"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415395"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>更新 deviceManagementTroubleshootingEvent
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,6 +53,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |id|String|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|对象包含有关错误和其修复的详细的信息。|
+|事件名称|String|对应于疑难解答事件的事件名称。 它是一个可选字段|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对提供了有关疑难解答事件其他信息|
 
 
 
@@ -60,16 +63,40 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
-Content-length: 104
+Content-length: 852
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-  "correlationId": "Correlation Id value"
+  "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -78,16 +105,37 @@ Content-length: 104
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 901
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
   "id": "fb26dcee-dcee-fb26-eedc-26fbeedc26fb",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-  "correlationId": "Correlation Id value"
+  "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
-
 
 
 

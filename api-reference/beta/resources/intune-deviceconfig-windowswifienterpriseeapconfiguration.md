@@ -3,21 +3,22 @@ title: windowsWifiEnterpriseEAPConfiguration 资源类型
 description: 此实体提供声明的方法、 属性和由 Wifi CSP 公开的关系的说明。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 0ef27c428f6a139ce18af2e9bf4ae1a920023b53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1c5e7f92c8b84512ae71144d379a38eac24eb08c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407093"
 ---
 # <a name="windowswifienterpriseeapconfiguration-resource-type"></a>windowsWifiEnterpriseEAPConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此实体提供声明的方法、 属性和由 Wifi CSP 公开的关系的说明。
+
 
 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)
 
@@ -41,18 +42,18 @@ ms.locfileid: "27984736"
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|preSharedKey|字符串|这是预共享的 WPA 个人 Wi-fi 网络密钥。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|preSharedKey|String|这是预共享的 WPA 个人 Wi-fi 网络密钥。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指定的 Wifi 安全类型。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|指定 wifi 连接的按流量计费的连接限制类型。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。 可取值为：`unrestricted`、`fixed`、`variable`。|
-|ssid|字符串|指定 wifi 连接的 SSID。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|networkName|字符串|指定的网络配置名称。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|ssid|String|指定 wifi 连接的 SSID。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|networkName|String|指定的网络配置名称。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectAutomatically|Boolean|指定应在范围中自动连接是否 wifi 连接。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到时已连接到此的更多首选网络。  需要 ConnectAutomatically 为 true。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectWhenNetworkNameIsHidden|Boolean|指定是否 wifi 连接应自动连接即使时 SSID 未进行广播。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定从[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)设置 Wi-fi 配置继承的代理。 可取值为：`none`、`manual`、`automatic`。|
-|proxyManualAddress|字符串|指定代理服务器的 IP 地址。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyManualAddress|String|指定代理服务器的 IP 地址。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyManualPort|Int32|指定的代理服务器的端口。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|字符串|指定代理服务器配置脚本的 URL。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|指定代理服务器配置脚本的 URL。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |forceFIPSCompliance|Boolean|指定是否强制 FIPS 合规性。 继承自[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|指定网络单一登录类型。 可取值为：`disabled`、`prelogon`、`postlogon`。|
 |maximumAuthenticationTimeoutInSeconds|Int32|指定最大的身份验证超时 （以秒为单位）。  有效的范围： 1-120|
@@ -66,9 +67,9 @@ ms.locfileid: "27984736"
 |trustedServerCertificateNames|String 集合|指定受信任的服务器证书名称。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|指定的身份验证方法。 可取值为：`certificate`、`usernameAndPassword`。|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|指定 EAP TTL 内部身份验证协议。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|字符串|指定要使用 EAP TTL 或 PEAP 时替换为隐私的用户名的字符串。|
+|outerIdentityPrivacyTemporaryValue|String|指定要使用 EAP TTL 或 PEAP 时替换为隐私的用户名的字符串。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -132,7 +133,6 @@ ms.locfileid: "27984736"
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
 
 
 

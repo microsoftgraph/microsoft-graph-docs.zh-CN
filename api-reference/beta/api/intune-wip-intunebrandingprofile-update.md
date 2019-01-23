@@ -1,26 +1,26 @@
 ---
 title: 更新 intuneBrandingProfile
 description: 更新 intuneBrandingProfile 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0840852d0668cc6e2b4d18b4345792166a2d5193
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fa1382101012bb202286f75489532a80a87bb381
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403089"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,9 +50,9 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|配置文件密钥|
-|profileName|字符串|配置文件的名称|
-|profileDescription|字符串|配置文件的说明|
+|id|String|配置文件密钥|
+|profileName|String|配置文件的名称|
+|profileDescription|String|配置文件的说明|
 |isDefaultProfile|Boolean|如果在配置文件使用的默认，呈现。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|当 BrandingProfile 上次修改。|
@@ -77,18 +77,19 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1209
+Content-length: 1205
 
 {
+  "@odata.type": "#microsoft.graph.intuneBrandingProfile",
   "profileName": "Profile Name value",
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "contactITName": "Contact ITName value",
   "contactITPhoneNumber": "Contact ITPhone Number value",
@@ -171,7 +172,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 

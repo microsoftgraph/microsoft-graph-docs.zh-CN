@@ -1,26 +1,26 @@
 ---
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 255562cd7a5bbd5291a26b148b1e6c21a2869828
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 525623c99d8f3238ee548e634bc7ffe2c3162111
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404384"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -110,11 +110,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的设备的用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。|
-|autopilotEnrolled|布尔|如果通过自动试点注册托管的设备，报告。|
-|requireUserEnrollmentApproval|布尔|报告托管的 iOS 设备是否用户审批注册。|
+|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。|
+|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期|
-|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
-|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。|
+|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
+|udid|String|IOS 和 macOS 设备的唯一设备标识符。|
 |roleScopeTagIds|String 集合|此设备实例范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的补救恶意软件的计数|
@@ -127,14 +127,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [managedDevice](../resources/intune-devices-manageddevice.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7114
+Content-length: 7166
 
 {
+  "@odata.type": "#microsoft.graph.managedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
   "hardwareInformation": {
@@ -472,7 +474,6 @@ Content-Length: 7215
   }
 }
 ```
-
 
 
 

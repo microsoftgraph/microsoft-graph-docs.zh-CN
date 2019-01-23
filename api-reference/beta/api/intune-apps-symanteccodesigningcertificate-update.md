@@ -1,26 +1,26 @@
 ---
 title: 更新 symantecCodeSigningCertificate
 description: 更新 symantecCodeSigningCertificate 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f0a938fcb207ee242115eb89cd45da0b1c092a6f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5da263a8b4c2bbf121fb994b4d20168c45da9e03
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414023"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,11 +53,11 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |id|String|实体的键。|
 |content|Binary|中的原始数据格式的 Windows Symantec 代码签名证书。|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
-|password|字符串|.Pfx 文件所需的密码。|
+|password|String|.Pfx 文件所需的密码。|
 |SubjectName|String|证书使用者名称。|
-|subject|字符串|证书使用者值。|
-|issuerName|字符串|证书颁发者名称。|
-|颁发者|字符串|证书颁发者值。|
+|subject|String|证书使用者值。|
+|issuerName|String|证书颁发者名称。|
+|颁发者|String|证书颁发者值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|作为 Symantec Cert 代码签名证书的类型。|
 
@@ -67,14 +67,16 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/symantecCodeSigningCertificate
 Content-type: application/json
-Content-length: 352
+Content-length: 421
 
 {
+  "@odata.type": "#microsoft.graph.symantecCodeSigningCertificate",
   "content": "Y29udGVudA==",
   "status": "provisioned",
   "password": "Password value",
@@ -108,7 +110,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

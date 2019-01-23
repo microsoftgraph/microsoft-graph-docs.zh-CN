@@ -1,26 +1,26 @@
 ---
 title: 创建 embeddedSIMDeviceState
 description: 创建新的 embeddedSIMDeviceState 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 815d0e401e733f50ebe5734bee55311932d85ea6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 451f40d7ad23787311e4a0b9ed3c046cbe34b830
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413414"
 ---
 # <a name="create-embeddedsimdevicestate"></a>创建 embeddedSIMDeviceState
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,15 +50,15 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入 SIM 设备状态的唯一标识符。 系统生成时创建分配值。|
+|id|String|嵌入 SIM 设备状态的唯一标识符。 系统生成时创建分配值。|
 |createdDateTime|DateTimeOffset|创建嵌入的 SIM 设备状态的时间。 生成的服务方。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 设备状态的时间。 更新服务端。|
 |lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新服务端。|
-|universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UICCID) 标识到配置文件是要部署的硬件。|
+|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UICCID) 标识到配置文件是要部署的硬件。|
 |deviceName|String|订阅已的设备名称设置如桌面 JOE|
 |userName|String|订阅已设置到例如 joe@contoso.com 用户名|
-|状态|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
-|stateDetails|字符串|字符串设置状态的说明。|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
+|stateDetails|String|字符串设置状态的说明。|
 
 
 
@@ -66,6 +66,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
@@ -104,7 +105,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
 
 
 

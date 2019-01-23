@@ -4,12 +4,12 @@ description: '在租户中创建一个新的学校数据同步配置文件的请
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9d471766a8492e03809d05d6d0366c8e44d59015
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4a8864979254eaafdb71b3524831227399d7bff6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417873"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "27915758"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | Permissions |
+| 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 （个人 Microsoft 帐户|不支持。|
@@ -32,11 +32,11 @@ ms.locfileid: "27915758"
 POST /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-| Content-Type | string | 应用程序/json。 必填。 |
+| Content-Type | string | 应用程序/json。 必需项。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
@@ -58,7 +58,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -69,7 +69,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationidentitycreationconfiguration",
+        "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -106,7 +106,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -117,7 +117,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -157,7 +157,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -171,14 +171,14 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"

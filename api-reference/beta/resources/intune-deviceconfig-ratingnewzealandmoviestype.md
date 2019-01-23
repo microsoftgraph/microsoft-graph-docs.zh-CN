@@ -1,25 +1,26 @@
 ---
 title: ratingNewZealandMoviesType 枚举类型
 description: 电影分级新西兰标签
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 47f66e28992136104f9fc3317e470278001fb14e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b60bb2d443763115bb547c254ab086b171033658
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402942"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 电影分级新西兰标签
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
@@ -32,7 +33,6 @@ ms.locfileid: "27952550"
 |agesAbove18|8|R18 分类是人员年满 18 周岁与通过限制|
 |受限制|9|R 分类被限制为特定访问群体|
 |agesAbove16Restricted|10|RP16 分类需要查看在由父或成人附带的 16|
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: defaultManagedAppProtection 资源类型
 description: 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8fba5282155793e44a31e742daa3268aa3f56b36
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3d8dd34b5d2b6699b024dab07c91f6ca90c29a2f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404776"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于为 TargetedManagedAppProtection 策略未针对的所有用户配置指定的一组应用的详细管理设置的策略。
+
 
 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 
@@ -37,6 +38,7 @@ ms.locfileid: "27990794"
 |description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|设备未连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -66,11 +68,11 @@ ms.locfileid: "27990794"
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeOsVersion|字符串|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|minimumWipeAppVersion|字符串|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeOsVersion|String|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|minimumWipeAppVersion|String|小于或等于指定的版本将擦除托管应用程序和关联的公司数据的版本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除时也根设备, 或 jailbroken，如果 DeviceComplianceRequired 设置为 true。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，或者是阻止或擦除，基于最大数量的不正确的 pin 重试次数。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`。|
-|pinRequiredInsteadOfBiometricTimeout|Duration|以分钟为单位的而不是从[managedAppProtection](../resources/intune-mam-managedappprotection.md)非生物密码继承应用程序 pin 超时|
+|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的而不是从[managedAppProtection](../resources/intune-mam-managedappprotection.md)非生物密码继承应用程序 pin 超时|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。 (仅 iOS)。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |screenCaptureBlocked|Boolean|指示是否阻止屏幕截图。 （仅限 Android）|
 |encryptAppData|Boolean|指示是否应加密托管应用数据。 （仅限 Android）|
@@ -85,17 +87,17 @@ ms.locfileid: "27990794"
 |exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|此列表中的 android 应用程序包将从策略中排除并且能够接收从托管的应用程序的数据。 （仅限 Android）|
 |faceIdBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用 FaceID 代替 pin。 (仅适用于 iOS)|
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
-|minimumWipePatchVersion|字符串|托管的应用程序和关联的公司数据，将擦除 android 安全修补程序级别小于或等于指定值。 （仅限 Android）|
-|allowedIosDeviceModels|字符串|作为字符串的托管的应用程序，以允许的设备模型的分号分隔列表。 (仅适用于 iOS)|
+|minimumWipePatchVersion|String|托管的应用程序和关联的公司数据，将擦除 android 安全修补程序级别小于或等于指定值。 （仅限 Android）|
+|allowedIosDeviceModels|String|作为字符串的托管的应用程序，以允许的设备模型的分号分隔列表。 (仅适用于 iOS)|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备模型。 (仅 iOS)。 可取值为：`block`、`wipe`。|
-|allowedAndroidDeviceManufacturers|字符串|作为字符串的托管的应用程序，以允许的设备制造商的分号分隔列表。 （仅限 Android）|
+|allowedAndroidDeviceManufacturers|String|作为字符串的托管的应用程序，以允许的设备制造商的分号分隔列表。 （仅限 Android）|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管的应用程序行为，阻止或擦除，如果不允许指定的设备制造商。 (仅 android)。 可取值为：`block`、`wipe`。|
 |thirdPartyKeyboardsBlocked|Boolean|如果第三方键盘允许访问托管的应用程序时，定义。 (仅适用于 iOS)|
 |filterOpenInToOnlyManagedApps|Boolean|如果到所选的文件共享位置从托管的应用程序支持打开项操作，定义。 此设置仅适用于 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 并且 DisableProtectionOfManagedOutboundOpenInData 设置为 False。 (仅适用于 iOS)|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|禁用传输到 IOS OpenIn 选项通过其他应用程序的数据保护。 此设置只允许为 True 时 AllowedOutboundDataTransferDestinations 设置为 ManagedApps。 (仅适用于 iOS)|
 |protectInboundDataFromUnknownSources|Boolean|从未知源保护传入的数据。 此设置只允许为 True 时 AllowedInboundDataTransferSources 设置为 AllApps。 (仅适用于 iOS)|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) 集合|策略部署到的应用的列表。|
@@ -116,6 +118,9 @@ ms.locfileid: "27990794"
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -193,7 +198,6 @@ ms.locfileid: "27990794"
   "protectInboundDataFromUnknownSources": true
 }
 ```
-
 
 
 

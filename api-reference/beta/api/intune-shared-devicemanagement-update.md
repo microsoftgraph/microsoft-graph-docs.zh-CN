@@ -4,25 +4,24 @@ description: 更新 deviceManagement 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4d8465ee45a2a6c23dedc4fe049ef1f73bb25218
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415773"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 根据工作流而有所不同权限的注释。
 
@@ -37,7 +36,7 @@ ms.locfileid: "27924690"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防御** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
@@ -72,14 +71,14 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一标识符。|
+|id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|Intune 帐户 ID 给定租户|
-|legacyPcManangementEnabled|布尔|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
 |maximumDepTokens|Int32|允许每个租户的 DEP 令牌的最大数量。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|当 scaleunits 之间移动租户数据的时间和日期。|
+|accountMoveCompletionDateTime|DateTimeOffset|日期 & 时间时 scaleunits 之间移动租户数据。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理许可信息。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备 protection overview。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|
