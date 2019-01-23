@@ -1,33 +1,33 @@
 ---
 title: windowsUpdateType 枚举类型
 description: 分支的设备将接收从其更新
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1444af64043ac38685ca022b56b8856be77a0b70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3d3dd0f6d8ba46d7f1cc803b217a98a862602149
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400135"
 ---
-# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="e5c18-103">windowsUpdateType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e5c18-103">windowsUpdateType enum type</span></span>
+# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="6d9b8-103">windowsUpdateType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6d9b8-103">windowsUpdateType enum type</span></span>
 
-> <span data-ttu-id="e5c18-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="e5c18-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e5c18-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e5c18-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6d9b8-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6d9b8-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="e5c18-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="e5c18-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6d9b8-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5c18-107">分支的设备将接收从其更新</span><span class="sxs-lookup"><span data-stu-id="e5c18-107">Which branch devices will receive their updates from</span></span>
-## <a name="members"></a><span data-ttu-id="e5c18-108">成员</span><span class="sxs-lookup"><span data-stu-id="e5c18-108">Members</span></span>
-|<span data-ttu-id="e5c18-109">成员</span><span class="sxs-lookup"><span data-stu-id="e5c18-109">Member</span></span>|<span data-ttu-id="e5c18-110">值</span><span class="sxs-lookup"><span data-stu-id="e5c18-110">Value</span></span>|<span data-ttu-id="e5c18-111">说明</span><span class="sxs-lookup"><span data-stu-id="e5c18-111">Description</span></span>|
+<span data-ttu-id="6d9b8-107">分支的设备将接收从其更新</span><span class="sxs-lookup"><span data-stu-id="6d9b8-107">Which branch devices will receive their updates from</span></span>
+
+## <a name="members"></a><span data-ttu-id="6d9b8-108">成员</span><span class="sxs-lookup"><span data-stu-id="6d9b8-108">Members</span></span>
+|<span data-ttu-id="6d9b8-109">成员</span><span class="sxs-lookup"><span data-stu-id="6d9b8-109">Member</span></span>|<span data-ttu-id="6d9b8-110">值</span><span class="sxs-lookup"><span data-stu-id="6d9b8-110">Value</span></span>|<span data-ttu-id="6d9b8-111">说明</span><span class="sxs-lookup"><span data-stu-id="6d9b8-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e5c18-112">用户定制</span><span class="sxs-lookup"><span data-stu-id="e5c18-112">userDefined</span></span>|<span data-ttu-id="e5c18-113">0</span><span class="sxs-lookup"><span data-stu-id="e5c18-113">0</span></span>|<span data-ttu-id="e5c18-114">允许用户设置。</span><span class="sxs-lookup"><span data-stu-id="e5c18-114">Allow the user to set.</span></span>|
-|<span data-ttu-id="e5c18-115">all</span><span class="sxs-lookup"><span data-stu-id="e5c18-115">all</span></span>|<span data-ttu-id="e5c18-116">1</span><span class="sxs-lookup"><span data-stu-id="e5c18-116">1</span></span>|<span data-ttu-id="e5c18-117">半年 （目标） 通道。</span><span class="sxs-lookup"><span data-stu-id="e5c18-117">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="e5c18-118">设备从半年通道 （目标） 中获取所有适用的功能更新。</span><span class="sxs-lookup"><span data-stu-id="e5c18-118">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
-|<span data-ttu-id="e5c18-119">businessReadyOnly</span><span class="sxs-lookup"><span data-stu-id="e5c18-119">businessReadyOnly</span></span>|<span data-ttu-id="e5c18-120">2</span><span class="sxs-lookup"><span data-stu-id="e5c18-120">2</span></span>|<span data-ttu-id="e5c18-121">半年通道。</span><span class="sxs-lookup"><span data-stu-id="e5c18-121">Semi-annual Channel.</span></span> <span data-ttu-id="e5c18-122">设备获取更新功能从半年通道。</span><span class="sxs-lookup"><span data-stu-id="e5c18-122">Device gets feature updates from Semi-annual Channel.</span></span>|
-|<span data-ttu-id="e5c18-123">windowsInsiderBuildFast</span><span class="sxs-lookup"><span data-stu-id="e5c18-123">windowsInsiderBuildFast</span></span>|<span data-ttu-id="e5c18-124">3</span><span class="sxs-lookup"><span data-stu-id="e5c18-124">3</span></span>|<span data-ttu-id="e5c18-125">Windows 内幕生成-Fast</span><span class="sxs-lookup"><span data-stu-id="e5c18-125">Windows Insider build - Fast</span></span>|
-|<span data-ttu-id="e5c18-126">windowsInsiderBuildSlow</span><span class="sxs-lookup"><span data-stu-id="e5c18-126">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="e5c18-127">4</span><span class="sxs-lookup"><span data-stu-id="e5c18-127">4</span></span>|<span data-ttu-id="e5c18-128">Windows 内幕生成-速度较慢</span><span class="sxs-lookup"><span data-stu-id="e5c18-128">Windows Insider build - Slow</span></span>|
-|<span data-ttu-id="e5c18-129">windowsInsiderBuildRelease</span><span class="sxs-lookup"><span data-stu-id="e5c18-129">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="e5c18-130">5</span><span class="sxs-lookup"><span data-stu-id="e5c18-130">5</span></span>|<span data-ttu-id="e5c18-131">Windows 内幕发布版本</span><span class="sxs-lookup"><span data-stu-id="e5c18-131">Release Windows Insider build</span></span>|
-
+|<span data-ttu-id="6d9b8-112">用户定制</span><span class="sxs-lookup"><span data-stu-id="6d9b8-112">userDefined</span></span>|<span data-ttu-id="6d9b8-113">0</span><span class="sxs-lookup"><span data-stu-id="6d9b8-113">0</span></span>|<span data-ttu-id="6d9b8-114">允许用户设置。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-114">Allow the user to set.</span></span>|
+|<span data-ttu-id="6d9b8-115">all</span><span class="sxs-lookup"><span data-stu-id="6d9b8-115">all</span></span>|<span data-ttu-id="6d9b8-116">1</span><span class="sxs-lookup"><span data-stu-id="6d9b8-116">1</span></span>|<span data-ttu-id="6d9b8-117">半年 （目标） 通道。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-117">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="6d9b8-118">设备从半年通道 （目标） 中获取所有适用的功能更新。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-118">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
+|<span data-ttu-id="6d9b8-119">businessReadyOnly</span><span class="sxs-lookup"><span data-stu-id="6d9b8-119">businessReadyOnly</span></span>|<span data-ttu-id="6d9b8-120">2</span><span class="sxs-lookup"><span data-stu-id="6d9b8-120">2</span></span>|<span data-ttu-id="6d9b8-121">半年通道。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-121">Semi-annual Channel.</span></span> <span data-ttu-id="6d9b8-122">设备获取更新功能从半年通道。</span><span class="sxs-lookup"><span data-stu-id="6d9b8-122">Device gets feature updates from Semi-annual Channel.</span></span>|
+|<span data-ttu-id="6d9b8-123">windowsInsiderBuildFast</span><span class="sxs-lookup"><span data-stu-id="6d9b8-123">windowsInsiderBuildFast</span></span>|<span data-ttu-id="6d9b8-124">3</span><span class="sxs-lookup"><span data-stu-id="6d9b8-124">3</span></span>|<span data-ttu-id="6d9b8-125">Windows 内幕生成-Fast</span><span class="sxs-lookup"><span data-stu-id="6d9b8-125">Windows Insider build - Fast</span></span>|
+|<span data-ttu-id="6d9b8-126">windowsInsiderBuildSlow</span><span class="sxs-lookup"><span data-stu-id="6d9b8-126">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="6d9b8-127">4</span><span class="sxs-lookup"><span data-stu-id="6d9b8-127">4</span></span>|<span data-ttu-id="6d9b8-128">Windows 内幕生成-速度较慢</span><span class="sxs-lookup"><span data-stu-id="6d9b8-128">Windows Insider build - Slow</span></span>|
+|<span data-ttu-id="6d9b8-129">windowsInsiderBuildRelease</span><span class="sxs-lookup"><span data-stu-id="6d9b8-129">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="6d9b8-130">5</span><span class="sxs-lookup"><span data-stu-id="6d9b8-130">5</span></span>|<span data-ttu-id="6d9b8-131">Windows 内幕发布版本</span><span class="sxs-lookup"><span data-stu-id="6d9b8-131">Release Windows Insider build</span></span>|
 
 
 
