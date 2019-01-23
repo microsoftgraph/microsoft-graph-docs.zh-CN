@@ -4,12 +4,12 @@ description: 'Intune 的基于角色的访问控制决定哪些人可以对 Intu
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: cbbd04aacd80c8ad3c3082505ab052e2bdd65cbe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4cdc5e875f698646288258fc225ad77f8c4c2ba8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395746"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
@@ -21,7 +21,7 @@ Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执�
 
 以下 Graph 资源可用于管理 Intune 中基于角色的访问控制：
 
-- [分配角色 id 的设备和应用程序管理](intune-rbac-deviceandappmanagementassignedroleids.md)
+- [分配角色详细信息的设备和应用程序管理](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [设备和应用管理角色分配](intune-rbac-deviceandappmanagementroleassignment.md)
 - [设备和应用管理角色定义](intune-rbac-deviceandappmanagementroledefinition.md)
 - [资源操作](intune-rbac-resourceaction.md)

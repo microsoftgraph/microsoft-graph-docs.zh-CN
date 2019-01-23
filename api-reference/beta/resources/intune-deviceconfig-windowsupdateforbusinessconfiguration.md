@@ -1,23 +1,24 @@
 ---
 title: windowsUpdateForBusinessConfiguration 资源类型
 description: 适用于企业的 Windows 更新配置。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 76e5c14bf7e26121eca19bf03d995e5679f57075
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ccdcc7eb12f956669a82471734b5f99827467fd8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29397027"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于企业的 Windows 更新配置。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -45,7 +46,7 @@ ms.locfileid: "27938417"
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode`。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|预发布功能。 可取值为：`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed`。|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自动更新模式。 可取值为：`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl`。|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自动更新模式。 可取值为：`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl`、`windowsDefault`。|
 |microsoftUpdateServiceAllowed|Boolean|允许 Microsoft 更新服务|
 |driversExcluded|Boolean|排除 Windows 更新驱动程序|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|安装计划|
@@ -58,8 +59,8 @@ ms.locfileid: "27938417"
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定哪些分支设备将接收从其更新。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
 |skipChecksBeforeRestart|Boolean|设置要跳过之前重新启动所有检查： 电池级别 = 40%，用户状态显示需要演示文稿模式下、 全屏幕模式、 电话呼叫状态、 游戏模式等。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|计划更新安装在相应月份的周。 可取值为：`userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
-|qualityUpdatesPauseStartDateTime|字符串|质量更新暂停开始日期时间|
-|featureUpdatesPauseStartDateTime|字符串|功能更新暂停开始日期时间|
+|qualityUpdatesPauseStartDate|日期|质量更新暂停的开始日期。 此属性是只读的。|
+|featureUpdatesPauseStartDate|日期|功能更新暂停的开始日期。 此属性是只读的。|
 |featureUpdatesRollbackWindowInDays|Int32|回滚的有效功能更新后的天数|
 |qualityUpdatesWillBeRolledBack|Boolean|指定是否回滚到下一个设备质量更新签入|
 |featureUpdatesWillBeRolledBack|Boolean|指定是否回滚到下一个设备上的功能更新签入|
@@ -71,6 +72,8 @@ ms.locfileid: "27938417"
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|指定按其在自动重新启动所需消除通知的方法。 可取值为：`notConfigured`、`automatic`、`user`。|
 |scheduleRestartWarningInHours|Int32|指定自动重新启动警告提醒通知的时间段。 支持值： 2、 4、 8、 12 或 24 （小时）。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重新启动即将发生警告通知的时间段。 支持值： 15、 30 或 60 （分钟）。|
+|userPauseAccess|[启用](../resources/intune-shared-enablement
+.md)|指定是否启用要暂停软件更新的最终用户的访问。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|
@@ -123,8 +126,8 @@ ms.locfileid: "27938417"
   "businessReadyUpdatesOnly": "String",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "String",
-  "qualityUpdatesPauseStartDateTime": "String",
-  "featureUpdatesPauseStartDateTime": "String",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 1024,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -135,10 +138,10 @@ ms.locfileid: "27938417"
   "engagedRestartTransitionScheduleInDays": 1024,
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
-  "scheduleImminentRestartWarningInMinutes": 1024
+  "scheduleImminentRestartWarningInMinutes": 1024,
+  "userPauseAccess": "String"
 }
 ```
-
 
 
 

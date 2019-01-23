@@ -4,12 +4,12 @@ description: '表示学校的课程。 **educationClass** 资源对应于 Office
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f651e695ddf0b7139a31d077dcf021fced91293a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393219"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "27962917"
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
 |[创建 educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| 通过发布到 assignments 集合中创建新**educationAssignment** 。|
 |[列表分配](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)集合| 获取**educationAssignment**对象集合。|
-|[获取组](../api/educationclass-get-group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[Get group](../api/educationclass-get-group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
 |[Delete](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
 
@@ -57,7 +57,7 @@ ms.locfileid: "27962917"
 |members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 NULL。|
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
-|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为 Null。|
+|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -82,7 +82,7 @@ ms.locfileid: "27962917"
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

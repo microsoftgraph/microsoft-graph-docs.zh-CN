@@ -1,23 +1,24 @@
 ---
 title: windowsVpnConfiguration 资源类型
 description: Windows VPN 配置配置文件。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1f2f350044253bfcac4d9a527d6e888f8613d7a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c0d745e7e8513dd0eb72a40dfa8e792f1d4afc0e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395508"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>windowsVpnConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows VPN 配置配置文件。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -38,7 +39,7 @@ Windows VPN 配置配置文件。
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|connectionName|字符串|向用户显示的连接名称。|
+|connectionName|String|向用户显示的连接名称。|
 |服务器|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)集合|VPN 服务器的网络上的列表。 确保最终用户可以访问这些网络位置。 该集合最多可包含 500 个元素。|
 |customXml|Binary|配置 VPN 连接的自定义 XML 命令。 （UTF8 编码的字节数组）|
 
@@ -86,7 +87,6 @@ Windows VPN 配置配置文件。
   "customXml": "binary"
 }
 ```
-
 
 
 

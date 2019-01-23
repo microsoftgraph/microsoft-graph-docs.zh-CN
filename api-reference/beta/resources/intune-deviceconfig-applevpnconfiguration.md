@@ -1,23 +1,24 @@
 ---
 title: appleVpnConfiguration 资源类型
 description: Apple VPN 配置配置文件。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ec31f17bbc6dd1c99c8bc748642584615c589cbb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fe3e5ba1af99085d6b1eccd67ed46ec9848d6584
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393254"
 ---
 # <a name="applevpnconfiguration-resource-type"></a>appleVpnConfiguration 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Apple VPN 配置配置文件。
+
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -38,13 +39,13 @@ Apple VPN 配置配置文件。
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|connectionName|字符串|向用户显示的连接名称。|
+|connectionName|String|向用户显示的连接名称。|
 |连接|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|连接类型。 可能的值为： `ciscoAnyConnect`， `pulseSecure`， `f5EdgeClient`， `dellSonicWallMobileConnect`， `checkPointCapsuleVpn`， `customVpn`， `ciscoIPSec`， `citrix`， `ciscoAnyConnectV2`， `paloAltoGlobalProtect`， `zscalerPrivateAccess`， `f5Access2018`， `citrixSso`， `paloAltoGlobalProtectV2`。|
-|loginGroupOrDomain|字符串|登录组或域时连接类型设置为 Dell 使 SonicWALL Mobile 连接。|
-|role|字符串|当连接类型设置为脉冲安全角色。|
-|领域|字符串|当连接类型设置为脉冲安全领域。|
+|loginGroupOrDomain|String|登录组或域时连接类型设置为 Dell 使 SonicWALL Mobile 连接。|
+|role|String|当连接类型设置为脉冲安全角色。|
+|领域|String|当连接类型设置为脉冲安全领域。|
 |服务器|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|在网络上的 VPN 服务器。 请确保最终用户可以访问此网络位置。|
-|标识符|字符串|当连接类型设置为自定义 VPN VPN 供应商提供的标识符。 例如： Cisco AnyConnect 使用的窗体 com.cisco.anyconnect.applevpn.plugin 标识符|
+|标识符|String|当连接类型设置为自定义 VPN VPN 供应商提供的标识符。 例如： Cisco AnyConnect 使用的窗体 com.cisco.anyconnect.applevpn.plugin 标识符|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md)集合|当设置为自定义 VPN 连接类型的自定义数据。 使用此字段启用不支持 Intune，但在 VPN 解决方案中可用的功能。 了解如何添加这些键/值对 VPN 供应商联系。 此集合可以包含最多 25 元素。|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|当设置为自定义 VPN 连接类型的自定义数据。 使用此字段启用不支持 Intune，但在 VPN 解决方案中可用的功能。 了解如何添加这些键/值对 VPN 供应商联系。 此集合可以包含最多 25 元素。|
 |enableSplitTunneling|Boolean|将发送所有网络流量通过 VPN。|
@@ -55,7 +56,7 @@ Apple VPN 配置配置文件。
 |代理服务器|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。|
 |optInToDeviceIdSharing|Boolean|加入到共享网络访问控制验证过程中的第三方 vpn 客户端使用的设备的 Id。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -146,7 +147,6 @@ Apple VPN 配置配置文件。
   "optInToDeviceIdSharing": true
 }
 ```
-
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: 更新 windows10EndpointProtectionConfiguration
 description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 36d71a14900d3400874ac39bd1fa59c534208676
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9bb398da325f6895eee7dd5e53938f8dafc5d5f6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393618"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -60,6 +60,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|此策略旨在提供针对外部 DMA 功能的设备的其他安全。 允许更好地控制外部 DMA 能够设备枚举与 DMA Remapping/设备内存隔离和沙盒不兼容。 支持并由系统固件启用内核 DMA 保护时，此策略才能起作用。 内核 DMA 保护是通过策略或最终用户无法控制平台功能。 它具有制造时，系统必须支持。 若要检查系统是否支持内核 DMA 保护，请检查的 MSINFO32.exe 摘要页中的内核 DMA 保护字段。 可取值为：`deviceDefault`、`blockAll`、`allowAll`。|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限备份/还原过程中使用的凭据管理器中。 用户的已保存的凭据可能受到威胁，如果此权限授予的其他实体。 支持状态 NotConfigured 和允许|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户和组允许通过网络连接到计算机。 支持状态允许。|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户和组是通过网络连接到计算机的块。 支持状态块。|
@@ -96,10 +97,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定网络服务启动类型是 Automatic(2) Manual(3)、 Disabled(4)。 默认： 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|禁止用户添加到此计算机的新的 Microsoft 帐户。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|启用本地帐户不受密码保护登录从物理设备以外的位置。将启用默认值|
-|localSecurityOptionsEnableAdministratorAccount|Boolean|确定是否启用或禁用的本地管理员帐户。|
-|localSecurityOptionsAdministratorAccountName|字符串|定义要与"管理员"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
-|localSecurityOptionsEnableGuestAccount|Boolean|确定是启用还是禁用来宾帐户。|
-|localSecurityOptionsGuestAccountName|字符串|定义要为"来宾"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
+|localSecurityOptionsDisableAdministratorAccount|Boolean|确定是否启用或禁用的本地管理员帐户。|
+|localSecurityOptionsAdministratorAccountName|String|定义要与"管理员"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
+|localSecurityOptionsDisableGuestAccount|Boolean|确定是启用还是禁用来宾帐户。|
+|localSecurityOptionsGuestAccountName|String|定义要为"来宾"的帐户的安全标识符 (SID) 关联的不同的帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|正在取消停靠而无需登录阻止便携式计算机。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|限制为连接到向管理员仅共享打印机的一部分安装的打印机驱动程序。|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|启用此设置允许访问 CD-ROM 媒体仅以交互方式登录的用户。|
@@ -109,15 +110,15 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|需要 CTRL + ALT + DEL 要按用户登录之前。|
 |localSecurityOptionsHideLastSignedInUser|Boolean|不在此设备上显示的签名的最后一个人的用户名。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|不显示登录到此设备输入凭据之后和之前显示设备的桌面的人员的用户名。|
-|localSecurityOptionsLogOnMessageTitle|字符串|用户尝试登录的设置邮件标题。|
-|localSecurityOptionsLogOnMessageText|字符串|设置用户试图登录消息文本。|
+|localSecurityOptionsLogOnMessageTitle|String|用户尝试登录的设置邮件标题。|
+|localSecurityOptionsLogOnMessageText|String|设置用户试图登录消息文本。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|对此设备块 PKU2U 身份验证请求使用联机标识。|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|用户界面帮助程序布尔 LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认安全描述符定义语言字符串，以允许或拒绝远程调用 SAM 用户和组。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认安全描述符定义语言字符串，以允许或拒绝远程调用 SAM 用户和组。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求 128 位加密和/或 NTLMv2 会话安全协商。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求 128 位加密和/或 NTLMv2 会话安全协商。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定哪个质询/响应身份验证协议用于网络登录。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|如果启用，则 SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
+|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|如果启用，则 SMB 客户端将允许不安全的来宾登录。 如果未配置，SMB 客户端将拒绝不安全的来宾登录。|
 |localSecurityOptionsClearVirtualMemoryPageFile|Boolean|此安全设置确定系统关闭时是否清除虚拟内存页面文件。|
 |localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|此安全设置确定是否可以关闭计算机而无需登录到 Windows。|
 |localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|允许 UIAccess 应用程序无需使用安全桌面提示提升。|
@@ -152,10 +153,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterDisableRansomwareUI|Boolean|用于禁用勒索软件保护区域的显示。 |
 |defenderSecurityCenterDisableSecureBootUI|Boolean|用于禁用的设备安全下的安全启动区域显示。|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|用于禁用安全过程下设备安全疑难解答的显示。|
-|defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示公司名称。|
-|defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
-|defenderSecurityCenterHelpPhone|字符串|电话号码或向用户显示的 Skype ID 中。|
-|defenderSecurityCenterHelpURL|字符串|帮助门户这向用户显示的 URL。|
+|defenderSecurityCenterOrganizationDisplayName|String|向用户显示公司名称。|
+|defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
+|defenderSecurityCenterHelpPhone|String|电话号码或向用户显示的 Skype ID 中。|
+|defenderSecurityCenterHelpURL|String|帮助门户这向用户显示的 URL。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|若要从应用程序的显示区域显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置显示 IT 联系人位置向最终用户的信息。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |firewallBlockStatefulFTP|Boolean|阻止到设备的有状态 FTP 连接|
@@ -205,6 +206,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|在凭据 Guard 时同时启用对安全启动和虚拟化基于安全平台安全级别打开。 可取值为：`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock`。|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|虚拟化选项会启用基于 Security(VBS)。|
 |deviceGuardEnableSecureBootWithDMA|Boolean|指定是否将在下次重新启动启用平台安全级别。|
+|deviceGuardLaunchSystemGuard|[启用](../resources/intune-shared-enablement
+.md)|允许 IT 管理员配置的系统 Guard 启动。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |smartScreenEnableInShell|Boolean|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
 |smartScreenBlockOverrideForFiles|Boolean|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
 |applicationGuardEnabled|Boolean|启用 Windows Defender 应用程序防护|
@@ -220,6 +223,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|允许从容器打印到网络打印机|
 |applicationGuardAllowVirtualGPU|Boolean|允许应用程序 guard 用于虚拟 GPU|
 |applicationGuardAllowFileSaveOnHost|Boolean|允许用户从应用程序 guard 容器中的边缘下载文件并将其保存在主机上文件系统|
+|bitLockerAllowStandardUserEncryption|Boolean|允许管理员允许在 Azure AD 加入过程中启用 encrpytion 标准用户。|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|允许管理员要求使用 BitLocker 开启加密功能。 此策略仅适用于移动 SKU。|
 |bitLockerEncryptDevice|Boolean|允许管理员要求使用 BitLocker 开启加密功能。|
@@ -233,15 +237,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 26312
+Content-length: 26475
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -249,6 +254,7 @@ Content-length: 26312
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -604,9 +610,9 @@ Content-length: 26312
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -625,7 +631,7 @@ Content-length: 26312
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -794,6 +800,7 @@ Content-length: 26312
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -809,6 +816,7 @@ Content-length: 26312
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -865,7 +873,7 @@ Content-length: 26312
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 26499
+Content-Length: 26647
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -879,6 +887,7 @@ Content-Length: 26499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -1234,9 +1243,9 @@ Content-Length: 26499
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -1255,7 +1264,7 @@ Content-Length: 26499
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -1424,6 +1433,7 @@ Content-Length: 26499
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -1439,6 +1449,7 @@ Content-Length: 26499
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -1489,7 +1500,6 @@ Content-Length: 26499
   }
 }
 ```
-
 
 
 

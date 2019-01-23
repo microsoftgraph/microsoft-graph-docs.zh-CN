@@ -4,16 +4,18 @@ description: 'DeviceManagement 资源表示的容器其内容因工作流，包�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 05620a5b34125920399434824d9f42ccea989c72
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396418"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DeviceManagement 资源表示的容器其内容因工作流，包括：  
 
@@ -54,7 +56,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|与设备关联的唯一标识符。|
+|id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|Intune 帐户 ID 给定租户|
 |legacyPcManangementEnabled|Boolean|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
@@ -147,7 +149,7 @@ DeviceManagement 资源表示的容器其内容因工作流，包括：
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|角色作用域标记。|
 |**电信支出管理 （项目）**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
-|**问题排查**|
+|**疑难解答**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|
 |**Windows 信息保护**|
 |intuneBrandingProfiles|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)集合|Intune 品牌目标设定为 AAD 组配置文件|

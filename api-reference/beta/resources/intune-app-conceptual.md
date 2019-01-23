@@ -4,12 +4,12 @@ description: Microsoft Intune 应用保护策略可帮助保护公司数据，�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2a701dfc36615facdf64e7588f8688eb495906a3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90764386d1241a0cec7552435ebd605d61dcae5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395004"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -24,6 +24,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
 - [Android 设备所有者注册配置文件](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android 注册公司代码](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android 工作应用程序](intune-apps-androidforworkapp.md)
 - [Android for Work 应用配置架构](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Android for Work 应用配置架构项](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -73,6 +74,10 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 应用程序吊销许可证操作结果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
+- [Mac os VPP 应用程序](intune-apps-macosvppapp.md)
+- [Mac os VPP 分配的应用程序许可证](intune-apps-macosvppappassignedlicense.md)
+- [Mac os VPP app 工作分配设置](intune-apps-macosvppappassignmentsettings.md)
+- [Mac os VPP 应用程序吊销许可证操作结果](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [macOS LOB 应用程序](intune-apps-macoslobapp.md)
 - [macOS LOB 子应用程序](intune-apps-macoslobchildapp.md)
 - [macOS 最低操作系统](intune-apps-macosminimumoperatingsystem.md)
@@ -111,10 +116,17 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用程序发布状态](intune-apps-mobileapppublishingstate.md)
 - [Mobile 包含应用程序](intune-apps-mobilecontainedapp.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
+- [Office 客户端签入状态](intune-cirrus-officeclientcheckinstatus.md)
+- [Office 客户端配置](intune-cirrus-officeclientconfiguration.md)
+- [Office 客户端配置工作分配](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office 配置](intune-cirrus-officeconfiguration.md)
+- [Office 配置工作分配目标](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office 配置组工作分配目标](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office 产品 id](intune-apps-officeproductid.md)
 - [Office 套件应用程序](intune-apps-officesuiteapp.md)
 - [Office 套件安装进度显示级别](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office 更新通道](intune-apps-officeupdatechannel.md)
+- [Office 用户签入摘要](intune-cirrus-officeusercheckinsummary.md)
 - [结果的应用程序状态详细信息](intune-apps-resultantappstatedetail.md)
 - [Symantec 代码签名证书](intune-apps-symanteccodesigningcertificate.md)
 - [用户的应用程序安装状态](intune-apps-userappinstallstatus.md)
@@ -122,6 +134,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)
 - [Web 应用](intune-apps-webapp.md)
 - [Win32 LOB 应用程序](intune-apps-win32lobapp.md)
+- [Win32 LOB 应用程序工作分配设置](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 LOB 应用程序检测](intune-apps-win32lobappdetection.md)
 - [Win32 LOB 应用程序检测运算符](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB 应用程序文件系统检测](intune-apps-win32lobappfilesystemdetection.md)
@@ -129,6 +142,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用程序安装体验](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB 应用程序 msi 信息](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB 应用程序 msi 包类型](intune-apps-win32lobappmsipackagetype.md)
+- [Win32 LOB 应用程序通知](intune-apps-win32lobappnotification.md)
 - [Win32 LOB 应用程序电源命令行管理程序脚本检测](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 LOB 应用程序产品代码检测](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB 应用程序注册表检测](intune-apps-win32lobappregistrydetection.md)
@@ -141,6 +155,8 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows 的 office 客户端配置](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows office 客户端安全配置](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows 程序包信息](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 约](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 约绑定](intune-apps-windowsphone81appxbundle.md)

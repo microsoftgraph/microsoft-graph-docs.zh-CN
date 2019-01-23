@@ -4,12 +4,12 @@ description: '代表学校数据同步配置文件的同步状态。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1fd77f48544e5e6bc0c582e4ce9fb2a5b1b6601a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928925"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396152"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "27928925"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **status** | string | 同步状态。可能的值为： `paused`， `inProgress`， `success`， `error`， `quarantined`， `validationError`。 |
+| **status** | educationSynchronizationStatus | 同步状态。可能的值为： `paused`， `inProgress`， `success`， `error`， `quarantined`， `validationError`。 |
 | **lastSynchronizationDateTime** | DateTimeOffset | 表示当观察的目录中最新更改的时间。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -38,7 +38,7 @@ ms.locfileid: "27928925"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json

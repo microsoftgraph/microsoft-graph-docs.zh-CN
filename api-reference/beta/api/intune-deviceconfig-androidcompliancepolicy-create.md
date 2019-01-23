@@ -1,26 +1,26 @@
 ---
 title: 创建 androidCompliancePolicy
 description: 创建新的 androidCompliancePolicy 对象。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 58303104236896100cf2e4b3c81bfeed44992498
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fb20568d500198cca5f7f6fe413ff5afcc63bbcc
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393807"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) 对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -61,8 +61,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|密码中的字符类型。 可取值为：`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any`。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
-|passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
-|passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
+|passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 365|
+|passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 1 至 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|出厂重置之前允许的登录失败的次数。 有效的值 1 到 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|要求设备不允许安装来自未知源的应用。|
 |securityDisableUsbDebugging|Boolean|在 Android 设备上禁用 USB 调试。|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
@@ -78,8 +79,8 @@ POST /deviceManagement/deviceCompliancePolicies
 |securityRequireGooglePlayServices|Boolean|要求在设备上安装并启用 Google Play Services。|
 |securityRequireUpToDateSecurityProviders|Boolean|要求设备具有最新的安全提供程序。 设备将要求启用 Google Play Services 并保持最新状态。|
 |securityRequireCompanyPortalAppIntegrity|Boolean|要求设备传递公司门户客户端应用运行时完整性检查。|
-|conditionStatementId|字符串|条件语句 id。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 该集合最多可包含 10000 个元素。|
+|conditionStatementId|String|条件语句 id。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 此集合可以包含 100 个元素的最大值。|
 
 
 
@@ -87,12 +88,13 @@ POST /deviceManagement/deviceCompliancePolicies
 如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1597
+Content-length: 1588
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -100,7 +102,6 @@ Content-length: 1597
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -109,6 +110,7 @@ Content-length: 1597
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -142,7 +144,7 @@ Content-length: 1597
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1705
+Content-Length: 1760
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -161,6 +163,7 @@ Content-Length: 1705
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -188,7 +191,6 @@ Content-Length: 1705
   ]
 }
 ```
-
 
 
 

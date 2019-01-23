@@ -1,15 +1,15 @@
 ---
 title: runAsAccountType 枚举类型
-description: 指示执行设备管理脚本的应用程序的上下文。
+description: 介绍 Intune，支持多个工作流的 Microsoft Graph api runAsAccountType 枚举。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 41a37aede909e905260f3759c2d0908d24aee2bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 719e046c3d4a5c12698b82148732a6c2dce3fea4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396236"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 枚举类型
 

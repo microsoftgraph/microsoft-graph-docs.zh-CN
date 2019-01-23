@@ -4,12 +4,12 @@ description: 创建学校数据配置文件标识上定义的设置。 这些身
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: cb7d3d101c547f1ced1b16bf857b7a7e953dc91b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7c05d810c017f57f738d188a8edef5d0560415fd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395683"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>educationIdentityCreationConfiguration 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "27912748"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **userDomains** | [educationIdentityDomain](educationidentitydomain.md)集合 |  设置要使用的每个用户类型的域的列表。  |
 
@@ -39,10 +39,10 @@ ms.locfileid: "27912748"
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
-            "@odata.type": "#microsoft.graph.educationIdentityDomain",
+            "@odata.type": "microsoft.graph.educationIdentityDomain",
         }
     ]
 }

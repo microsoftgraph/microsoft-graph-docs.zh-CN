@@ -1,26 +1,26 @@
 ---
 title: 更新 windowsManagementAppHealthSummary
 description: 更新 windowsManagementAppHealthSummary 对象的属性。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9c3e60a3fe75e805e6513f3007e214dde904c0bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d7e8c077b8f06b9647e34a18fd5aa92987272e77
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394164"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>更新 windowsManagementAppHealthSummary
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,7 +50,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Windows 管理应用程序运行状况摘要实体的键。|
+|id|String|Windows 管理应用程序运行状况摘要实体的键。|
 |healthyDeviceCount|Int32|正常运行的设备计数。|
 |unhealthyDeviceCount|Int32|正常设备计数。|
 |unknownDeviceCount|Int32|未知的设备计数。|
@@ -61,14 +61,16 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)对象。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/healthSummary
 Content-type: application/json
-Content-length: 89
+Content-length: 161
 
 {
+  "@odata.type": "#microsoft.graph.windowsManagementAppHealthSummary",
   "healthyDeviceCount": 2,
   "unhealthyDeviceCount": 4,
   "unknownDeviceCount": 2
@@ -90,7 +92,6 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
-
 
 
 
