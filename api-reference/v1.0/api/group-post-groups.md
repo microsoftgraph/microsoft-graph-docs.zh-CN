@@ -4,12 +4,12 @@ description: 使用此 API 可以创建请求正文中指定的新组。可以�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: c82774e72e6841f84d879ce3ce34febb8d88c2fd
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
+ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353095"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442316"
 ---
 # <a name="create-group"></a>创建组
 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
@@ -54,7 +54,7 @@ POST /groups
 | mailNickname | string | 组的邮件别名。 必需。 |
 | securityEnabled | 布尔 | 对于启用安全机制的组，请设置为 **true**。 如果创建动态或安全组，则将此设置为 **true**。 如果创建 Office 365 组，则将此设置为 **false**。 必需。 |
 | owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
-| members | string collection | 此属性表示创建时指定的组成员。 可选。 |
+| members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |
 
 
 如果你正在创建的是 Office 365 或动态组，则按如下所述指定 **groupTypes** 属性。
@@ -143,17 +143,17 @@ Content-type: application/json
 ```
 
 #### <a name="request-2"></a>请求 2
-第二个示例请求将创建具有指定所有者的 Office 365 组。
+第二个示例请求将创建具有指定所有者和成员的 Office 365 组。
 <!-- {
   "blockType": "request",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-  "description": "Group with designated owner",
+  "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
     "Unified"
@@ -163,18 +163,22 @@ Content-Type: application/json
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/v1.0/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
 
 #### <a name="response-2"></a>响应 2
-下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 导航属性，来验证所有者的详细信息。 
+下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -187,7 +191,7 @@ Content-type: application/json
     "classification": null,
     "createdDateTime": "2018-12-27T22:17:07Z",
     "creationOptions": [],
-    "description": "Group with designated owner",
+    "description": "Group with designated owner and members",
     "displayName": "Operations group",
     "groupTypes": [
         "Unified"
