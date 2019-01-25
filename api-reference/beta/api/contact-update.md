@@ -4,16 +4,16 @@ description: 更新联系人对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 364a927c37673181bb499689909db113c2e5476e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941175"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528205"
 ---
 # <a name="update-contact"></a>更新联系人
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新联系人对象的属性。
 ## <a name="permissions"></a>权限
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |displayName|String|联系人的显示名称。 请注意，以后对其他属性更新可能会导致自动生成的值覆盖已指定的显示名称值。 若要保留现有的值，始终为在更新操作的 displayName 包括它。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
-|gender |字符串 |联系人的性别。 |
+|gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
 |imAddresses|String|联系人的即时消息 (IM) 地址。|
@@ -78,11 +78,11 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|String|联系人的职位。|
+|title|字符串|联系人的职位。|
 |websites |[website](../resources/website.md) collection|与联系人关联的网站。 |
-|weddingAnniversary |日期 |联系人的婚礼周年日。 |
-|yomiCompanyName|字符串|联系人的注音日文公司名称。此属性是可选的。|
-|yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
+|WeddingAnniversary |日期 |联系人的婚礼周年日。 |
+|yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
+|yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|字符串|联系人的注音日文姓氏。此属性是可选的。|
 
 由于**联系人**资源支持[扩展](/graph/extensibility-overview)，您可以使用`PATCH`操作添加、 更新或删除您自己的扩展现有**联系人**实例中的自定义属性中的特定于应用程序的数据。
@@ -211,10 +211,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

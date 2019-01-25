@@ -4,20 +4,20 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b88fbbcd11a4cbeff56c870225d7b0bef4b32346
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985373"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527031"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Audio** 资源将与音频相关的属性分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。 
+如果 DriveItem 具有一个非 null 音频 facet，则该项表示一个音频文件。通过从文件中提取元数据来填充音频资源的属性。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,10 +70,15 @@ ms.locfileid: "27985373"
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

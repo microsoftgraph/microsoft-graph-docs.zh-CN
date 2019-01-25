@@ -2,16 +2,16 @@
 title: Azure AD 同步 API 概述
 description: ) 可自动执行创建、 维护和删除中的标识云 （软件作为服务，还是 SaaS） 应用程序，如收存箱、 销售队伍、 ServiceNow，等等。 您可以使用同步 Api 在 Microsoft Graph 中以编程方式管理标识同步包括：
 localization_priority: Normal
-ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884684"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529556"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure Active Directory (Azure AD) 标识同步 （也称为"设置"），可以自动执行创建、 维护和删除云 （软件作为服务，还是 SaaS） 中的标识收存箱、 销售队伍 ServiceNow，如应用程序等等。 您可以使用同步 Api 在 Microsoft Graph 中以编程方式管理标识同步包括：
 
@@ -62,7 +62,7 @@ Azure AD 同步 API 使用 OAuth 2.0 授权。 Api 任何请求之前，您需�
 
 下面的示例演示如何按显示名称查找服务主体对象。
 
-**请求** 
+请求 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -94,14 +94,12 @@ HTTP/1.1 200 OK
 
 下面的示例演示如何查找服务主体对象的应用程序 id。
 
-**请求** 
-<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**响应**
-<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP/1.1 200 OK
 {
@@ -119,15 +117,13 @@ HTTP/1.1 200 OK
 
 下面的示例演示了如何列出现有同步作业。
 
-**请求**
-<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**响应**
-<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP/1.1 200 OK
 {
@@ -149,16 +145,14 @@ HTTP/1.1 200 OK
 ### <a name="get-synchronization-job-status"></a>获取同步作业状态
 下面的示例演示如何获取同步作业的状态。
 
-**请求**
-<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**响应**
-<!-- { "blockType": "ignored" } -->
+响应
 ```http
     HTTP/1.1 200 OK
     {
@@ -176,14 +170,12 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ### <a name="get-synchronization-schema"></a>获取同步架构
 下面的示例演示如何获取同步架构。
 
-**请求**
-<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**响应**
-<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP/1.1 200 OK
 {
@@ -198,3 +190,11 @@ HTTP/1.1 200 OK
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

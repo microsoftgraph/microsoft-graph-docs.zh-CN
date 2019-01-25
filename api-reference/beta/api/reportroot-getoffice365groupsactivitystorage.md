@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365GroupsActivityStorage'
 description: 获取跨所有组邮箱和组网站使用的总存储。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: dd706ad45c9ca47a9513b90bd738fcc874bf68b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 034fd610dd321f09600c28e599cc43aebb8cda0e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528506"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取跨所有组邮箱和组网站使用的总存储。
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityStorage(p
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -165,3 +165,11 @@ Content-Length: 285
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365groupsactivitystorage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

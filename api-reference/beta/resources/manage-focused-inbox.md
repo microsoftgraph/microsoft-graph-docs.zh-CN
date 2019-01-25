@@ -2,16 +2,16 @@
 title: 管理重点收件箱
 description: '重点收件箱使用户可以查看中的重要邮件`Focused`选项卡的收件箱和收件箱邮件的 rest`Other`选项卡。分类系统 '
 localization_priority: Normal
-ms.openlocfilehash: 22852f4a2593d8bd624158ec4e33a90cb813a9da
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859582"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529248"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过重点收件箱，你可以查看收件箱的 `Focused` 选项卡中的重要邮件和 `Other` 选项卡中的其余收件箱邮件。分类系统最初按照默认方式组织收件箱邮件。可以随着时间推移通过用户界面或以编程方式对系统进行更正和培训。使用地越多，系统越能更好地推断哪些传入邮件是重要的。
 
@@ -33,3 +33,11 @@ ms.locfileid: "27859582"
 [创建发件人替代](../api/inferenceclassification-post-overrides.md) | [列出所有用户替代](../api/inferenceclassification-list-overrides.md) |
 
 [更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md) 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/manage-focused-inbox.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 删除 synchronizationSchema
 description: 删除自定义的架构，并将架构重置为默认配置。 如果模板的上下文中删除架构，则它将重置架构为一个相关联的模板的默认`factoryTag`。
 localization_priority: Normal
-ms.openlocfilehash: 281911d34355f598f4a3fe57b20c701dde36d4b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cb4c6295fe962ea9570da19b9b6ee8190b2024f5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526989"
 ---
 # <a name="delete-synchronizationschema"></a>删除 synchronizationSchema
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除自定义的架构，并将架构重置为默认配置。 如果模板的上下文中删除架构，则它将重置架构为一个相关联的模板的默认`factoryTag`。
 
@@ -66,10 +66,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete synchronizationSchema",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: '更新资源分配相关联的属性。 仅在类的教师可以�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f4178b5d6e2dac956a9d3f20461fd789f9f8e740
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527953"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新资源分配相关联的属性。 仅在类的教师可以更改工作分配的资源对象。  
 
@@ -40,10 +40,10 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|布尔| 指示工作分配发布时是否应将此资源复制到每个学生的资源对象。|
-|resource|educationResource| 资源对象。 |
+|distributeForStudentWork|Boolean| 指示工作分配发布时是否应将此资源复制到每个学生的资源对象。|
+|资源|educationResource| Resource 对象 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
@@ -110,10 +110,15 @@ Content-length: 832
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignmentresource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignmentresource-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

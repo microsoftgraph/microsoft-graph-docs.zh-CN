@@ -4,16 +4,16 @@ description: '**plannerPlanDetails** 资源表示计划的其他相关信息。�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: dfb142c8fbd6b2354a3a2d03d29480d119284146
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d10f5b04bc3b98a5e32eac7b577cbf4c582bab4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942379"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529878"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerPlanDetails** 资源表示计划的其他相关信息。每个[计划](plannerplan.md)对象均有一个详细信息对象。
 
@@ -33,7 +33,7 @@ ms.locfileid: "27942379"
 |sharedWith|[plannerUserIds](planneruserids.md)|用户与共享此计划的 Id 集。 如果您使用的 Office 365 组，可以使用组 API 管理组成员身份共享的[组的](group.md)计划。 尽管不作要求以便访问计划组拥有的顺序，还可以向此集合中，添加现有组的成员。 |
 |contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|只读。 定义对[plannerPlan](plannerplan.md)容器的[plannerPlanContext](plannerplancontext.md)条目关联的其他信息的集合。 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 
@@ -60,10 +60,15 @@ ms.locfileid: "27942379"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerPlanDetails resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerplandetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

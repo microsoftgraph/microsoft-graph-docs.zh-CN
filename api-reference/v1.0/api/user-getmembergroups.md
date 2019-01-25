@@ -4,12 +4,12 @@ description: 返回用户是其成员的所有组。 检查是可传递的，这
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 292a7e6c9ed0d67ced657dd726d9f41b32eac458
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415136"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517594"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -26,8 +26,6 @@ ms.locfileid: "29415136"
 | 委派（工作或学校帐户）     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
 | 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
-
-> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 单独使用 Group.Read.All 权限或将其与 `User.` 权限结合使用将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -4,16 +4,16 @@ description: 表示工作簿中的 chart 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 09d5fd376cfdcd03517cc989708bbf17bcf49a72
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970673"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529521"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示工作簿中的 chart 对象。
 
@@ -22,15 +22,15 @@ ms.locfileid: "27970673"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取图表](../api/chart-get.md) | [Chart](chart.md) |读取 chart 对象的属性和关系。|
-|[创建 ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
-|[创建系列](../api/chart-list-series.md) |[ChartSeries](chartseries.md) 集合| 获取 ChartSeries 对象集合。|
-|[更新](../api/chart-update.md) | [Chart](chart.md)   |更新 Chart 对象。 |
+|获取图表 | [Chart](chart.md) |读取 chart 对象的属性和关系。|
+|创建 ChartSeries |[ChartSeries](chartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
+|创建系列 |ChartSeries 集合| 获取 ChartSeries 对象集合。|
+|[Update](../api/chart-update.md) | [Chart](chart.md)   |更新 Chart 对象。 |
 |[Image](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
-|[列出](../api/chart-list.md) | [图表](chart.md) 集合 |获取 chart 对象集合。 |
+|[List](../api/chart-list.md) | 图表 集合 |获取 chart 对象集合。 |
 |[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|按图表在集合中的位置获取此对象。|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|创建新图表。|
 
@@ -44,7 +44,7 @@ ms.locfileid: "27970673"
 |top|double|表示从对象左边界至第 1 行顶部（在工作表上）或图表区域顶部（在图表上）的距离，以磅值表示。|
 |width|double|表示 chart 对象的宽度，以磅值表示。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|表示图表坐标轴。只读。|
@@ -81,10 +81,15 @@ ms.locfileid: "27970673"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Chart resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

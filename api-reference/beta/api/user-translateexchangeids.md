@@ -1,21 +1,21 @@
 ---
 title: 用户： translateExchangeIds
-description: 翻译格式之间的 Outlook 相关的资源的标识符。
+description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d613a6c27df1b53c5a41462276f67cc1991a3c88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957625"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528226"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-翻译格式之间的 Outlook 相关的资源的标识符。
+对与 Outlook 相关的资源的标识符进行格式转换。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>请求正文
 
-| 参数 | 类型 | Description |
+| 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中项目的。 此集合的最大大小是 1000年字符串。 |
 | sourceIdType | exchangeIdFormat | ID 类型的标识符的`InputIds`参数。 |
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 值 | 说明 |
 |:-------|:------------|
-| entryId | MAPI 客户端使用二进制条目 ID 格式。 |
+| EntryID | MAPI 客户端使用二进制条目 ID 格式。 |
 | ewsId | 使用 Exchange Web 服务客户端 ID 格式。 |
 | immutableEntryId | 二进制 MAPI 兼容变 ID 的格式。 |
 | restId | 由 Microsoft Graph 中使用的默认 ID 格式。 |
@@ -62,8 +62,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 二进制格式 (`entryId`和`immutableEntryId`) 的 URL 安全 base64 编码。 URL safeness 实现通过修改 base64 编码的二进制数据采用以下方式：
 
-- 替换`+`与`-`
-- 替换`/`与`_`
+- `+`
+- `/`
 - 删除任何尾随空白字符 (`=`)
 - 指示在原始了多少填充字符的字符串的末尾添加一个整数 (`0`， `1`，或`2`)
 
@@ -124,3 +124,11 @@ Content-type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

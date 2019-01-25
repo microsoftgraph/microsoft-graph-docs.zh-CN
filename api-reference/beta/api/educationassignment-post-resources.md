@@ -4,16 +4,16 @@ description: 正在创建 odata.type 以指示哪种类型的资源。 请注意
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 46233ec2f8c8acb698dd707f7df06edaca70fec4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 34e8740336acbef056ec0b3703547de51fdc42ce
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965388"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527988"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建一个[工作分配资源](../resources/educationassignmentresource.md)。 该资源本身有 @odata.type 以指示要创建哪种类型的资源。 请注意，必须首先将基于文件的资源上载到分配**资源**。
 
@@ -96,10 +96,15 @@ Content-length: 229
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationAssignmentResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

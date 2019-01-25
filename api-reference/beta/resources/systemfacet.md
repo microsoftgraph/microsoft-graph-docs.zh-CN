@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-ms.openlocfilehash: 3b7554c97eead38d13112e20eefeb411221d7716
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: afafb69e9d887d2cb8d9537dd7ef9d3a712f3333
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831400"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528548"
 ---
 # <a name="system-facet"></a>系统 Facet
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **系统** Facet 指示对象由系统为其自己的操作进行管理。
 大多数应用应忽略具有系统 Facet 的项。
@@ -33,8 +33,13 @@ ms.locfileid: "27831400"
 
 无。 此 Facet 的值可以为 null，也可以不为 null，但不含任何属性。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/System"
-} -->
+  "tocPath": "Facets/System",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/systemfacet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

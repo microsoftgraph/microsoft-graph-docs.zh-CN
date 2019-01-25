@@ -4,24 +4,24 @@ description: 通信，请通知发布 Communications 服务器以更改通知的
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e5b929997cf17d13043264d42421418321aae84e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977694"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529514"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通信，请通知发布 Communications 服务器以更改通知的基类型。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | 字符串  | 可取值为：`created`、`updated`、`deleted`。      |
-| resource       | 字符串  | 已更改的资源 URI。                      |
+| changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
+| 资源       | String  | 已更改的资源 URI。                      |
 
 > **注意：**`resourceData`可用作其他数据。 它是一个实体或 Collection(entity) 根据打包通知中的更改的次数。
 
@@ -93,10 +93,15 @@ ms.locfileid: "27977694"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/commsnotification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 您可以看到多少电子邮件应用程序用于连接到 Exchan
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: reports
-ms.openlocfilehash: 6a75b494705c56e63d4b7d5b2f58d76de64b9bce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 92390033e544bc0163923e2bdad6e99212b66f92
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912916"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527778"
 ---
 # <a name="email-app-usage-reports"></a>电子邮件应用使用情况报表
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 您可以看到多少电子邮件应用程序用于连接到 Exchange Online。 此外，还可以了解使用的 Outlook 应用版本，这有助于跟进应升级到受支持 Outlook 版本的用户。
 
@@ -27,3 +27,11 @@ ms.locfileid: "27912916"
 | [获取应用用户数](../api/reportroot-getemailappusageappsusercounts.md) | Stream          | [emailAppUsageAppsUserCounts](../resources/emailappusageappsusercounts.md) | 获取每个电子邮件应用的唯一用户数。 |
 | [获取用户数](../api/reportroot-getemailappusageusercounts.md) | Stream          | [emailAppUsageUserCounts](../resources/emailappusageusercounts.md) | 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。 |
 | [获取版本用户数](../api/reportroot-getemailappusageversionsusercounts.md) | Stream          | [emailAppUsageVersionsUserCounts](../resources/emailappusageversionsusercounts.md) | 按 Outlook 桌面版获取唯一用户数。 |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/email-app-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

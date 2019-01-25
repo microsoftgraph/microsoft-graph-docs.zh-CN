@@ -4,16 +4,16 @@ description: 安全威胁的复杂程度继续升级，全球经济影响。 通
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980284"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529927"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>使用 Microsoft Graph API 进行安全威胁检测和保护 （预览）
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 安全威胁的复杂程度继续升级，全球经济影响。 通常损害长之前组织甚至发现。 您可以使用 Microsoft Graph 建立或扩展的合并和关联多个来源的安全警告、 检测尝试损害用户标识和 unlock 上下文数据来告知调查，并自动给出的威胁的安全解决方案安全性操作以提高效率。
 
@@ -25,5 +25,13 @@ ms.locfileid: "27980284"
 
 - [为什么使用安全 API？](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [使用安全 API 与智能安全图集成](security-api-overview.md)
-- [为什么要使用 Azure AD 来保护组织中的身份信息？](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
+- 为什么要使用 Azure AD 来保护组织中的身份信息？
 - [使用 Azure AD Identity Protection](identityprotection-root.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

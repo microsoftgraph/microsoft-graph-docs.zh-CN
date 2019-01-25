@@ -2,16 +2,16 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: 请作为合格的角色分配。 如果角色分配已合格呼叫之前，它无实际作用。 如果是永久性的角色分配，请求者是不同于目标用户的角色分配将成为合格和角色将被停用的目标用户。 如果请求程序是目标用户和角色是安全管理员或具有权限的角色管理员，将默认过期激活角色。
 localization_priority: Normal
-ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 54260da3f69819a1f7a351e072f8af851f0e3d3a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527234"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 请作为合格的角色分配。 如果角色分配已合格呼叫之前，它无实际作用。 如果是永久性的角色分配，请求者是不同于目标用户的角色分配将成为合格和角色将被停用的目标用户。 如果请求程序是目标用户和角色是安全管理员或具有权限的角色管理员，将默认过期激活角色。
 
@@ -80,10 +80,15 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignment: makeEligible",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-makeeligible.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

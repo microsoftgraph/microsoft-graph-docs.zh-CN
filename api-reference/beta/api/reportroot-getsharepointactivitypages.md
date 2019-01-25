@@ -3,16 +3,16 @@ title: 'reportRoot: getSharePointActivityPages'
 description: 获取用户访问的唯一页面数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 5a04662ec4501f5277ce92276266393d309a5ff0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9ac10f5896ea9b913e8816514a64993716c2fae9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916353"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526800"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户访问的唯一页面数。
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointActivityPages(period='
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -163,3 +163,11 @@ Content-Length: 228
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getsharepointactivitypages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

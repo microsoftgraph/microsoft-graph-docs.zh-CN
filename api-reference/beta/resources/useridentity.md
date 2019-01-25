@@ -4,16 +4,16 @@ description: '为 Azure AD 访问 reviews （英文），此类型的访问评�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 80e8cc68d4fc2f642be6c748b762fe47c7489d59
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ab8076c5ff24e20006b5a5569dacf4c45d987512
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932278"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529465"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 对于[access 会检查](accessreviews-root.md)Azure AD，此类型的访问评审的审阅者代表 Azure AD 用户标识。  
 在 Azure AD 审核日志的上下文中，这表示启动或审核活动受影响的用户信息。
@@ -25,7 +25,7 @@ ms.locfileid: "27932278"
 无。  您将在请求正文中包含此类型的对象时[创建 accessReview](../api/accessreview-create.md)。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | 标识的显示名称。 请注意，这可能会始终不可用或最新。    |
 | `id`          | `String` | 身份的唯一标识符。  |
@@ -36,7 +36,7 @@ ms.locfileid: "27932278"
 
 在某些情况下，角色唯一标识符可能不可用。在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 
@@ -69,10 +69,15 @@ ms.locfileid: "27932278"
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "userIdentity type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/useridentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

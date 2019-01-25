@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 搜索文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ee1d8f6ba1c22426beb70d9ad89650e48e6900ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ce18912b0fd116f13e2bd32d999dd852d6cc5182
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959690"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528219"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在项目层次结构中搜索与查询匹配的项目。
 可以在文件夹层次结构、整个驱动器或与当前用户共享的文件内执行搜索。
@@ -144,10 +144,15 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search"
-} -->
+  "tocPath": "Items/Search",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

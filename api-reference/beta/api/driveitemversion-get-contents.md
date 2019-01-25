@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0d8125f86459caa0fd9fd863a1a4f280e0ad89e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980109"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528016"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[driveItem](../resources/driveitem.md)的特定版本的内容。 
+检索某个特定版本的 [DriveItem](../resources/driveitem.md) 的内容。 
 
 >**注意：** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
 
@@ -81,10 +81,15 @@ OneDrive 不保留文件以前版本的完整元数据。
 
 当您的应用程序检索列表的文件的可用版本时，提供有关特定版本的可用信息返回[driveItemVersion](../resources/driveitemversion.md)资源。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

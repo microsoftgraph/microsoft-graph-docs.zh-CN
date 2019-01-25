@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: 按产品获取报表周期内的每日活跃用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 716a3395a15930d31014d907fd00f03ee5938d17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 409c489ca985c7a357be13ae0ee0a487b54f1eac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933202"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528170"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 按产品获取报表周期内的每日活跃用户数。
 
@@ -84,7 +84,7 @@ CSV 文件包含下面的列标题：
 
 在 Microsoft Graph 中国由 21Vianet 不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
 
-- yammer
+- Yammer
 - 团队
 
 ## <a name="example"></a>示例
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -185,3 +185,11 @@ Content-Length: 317
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365activeusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

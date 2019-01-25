@@ -4,16 +4,16 @@ description: 可以使用 Microsoft Graph，使 Web 和移动应用程序可以�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 45b232f614c1698a62ed7b7d444dfa156821c747
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8e054e884fdc70130b9a39731a0b2641d69689dc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940062"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530074"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。例如：
 
@@ -149,7 +149,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -174,7 +174,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -201,7 +201,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
@@ -242,7 +242,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>列出属于工作表的图表 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -250,7 +250,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -275,14 +275,14 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>获取图表图像
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -307,7 +307,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -358,7 +358,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>更新图表的源数据 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -369,7 +369,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
@@ -378,7 +378,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>获取表列表 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -386,7 +386,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -394,7 +394,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>创建表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
 content-type: Application/Json 
@@ -404,7 +404,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -422,7 +422,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>更新表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -432,7 +432,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -540,7 +540,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>获取表列列表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
 authorization: Bearer {access-token} 
@@ -651,7 +651,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>添加表行
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
 content-type: Application/Json 
@@ -661,7 +661,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -682,7 +682,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>添加表列 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
 content-type: Application/Json 
@@ -721,47 +721,47 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>删除表行
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>删除表列 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>将表转换为区域 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>表排序
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -777,13 +777,13 @@ workbook-session-id: {session-id}
 ```
 
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>表筛选器
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -800,21 +800,21 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>清除筛选器
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
@@ -823,7 +823,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>获取区域 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -1028,7 +1028,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>区域排序
-请求<!-- { "blockType": "ignored" } -->
+请求
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1043,7 +1043,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
 ```http
 HTTP code: 204 No Content
 ```
@@ -1287,3 +1287,11 @@ Content-Type: application/json
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/excel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

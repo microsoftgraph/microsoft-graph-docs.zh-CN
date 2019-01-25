@@ -4,16 +4,16 @@ description: 包含使用项目的属性的复杂类型。 上次访问该资源
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 466308ad1b6290c2b96335f94c586eb35c6cac28
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526828"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含[用于](insights-used.md)项目的属性的复杂类型。 上次访问该资源的信息 （查看） 和修改用户 （编辑）。
 
@@ -34,3 +34,11 @@ ms.locfileid: "27950016"
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | 日期和时间用户上次访问资源。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。                      |
 | lastModifiedDateTime              | DateTimeOffset        | 日期和时间用户上次修改资源。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。       |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-usagedetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

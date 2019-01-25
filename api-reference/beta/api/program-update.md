@@ -2,16 +2,16 @@
 title: 更新程序
 description: 在 Azure AD 中访问审阅功能，则请更新现有程序对象。
 localization_priority: Normal
-ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 75562aac5a7b3f3aaef0c8a1251d32a7728813aa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840332"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529920"
 ---
 # <a name="update-program"></a>更新程序
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，更新现有[程序](../resources/program.md)对象。
 ## <a name="permissions"></a>权限
@@ -31,14 +31,14 @@ PATCH /programs('{programId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者令牌 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[程序](../resources/program.md)的对象的 JSON 表示形式。
 
 下表显示程序更新时可以提供的属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  程序的名称。                   |
 | `description`               |`String`                              |  该程序的描述。           |
@@ -89,10 +89,15 @@ Content-type: application/json
 |[对程序的列表 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md)集合|    获取一个程序的控件的集合。|
 |[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   添加到程序 programControl。|
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

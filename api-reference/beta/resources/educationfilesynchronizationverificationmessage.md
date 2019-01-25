@@ -4,16 +4,16 @@ description: 代表向客户端启动基于 CSV 学校数据配置文件同步�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cda1d5d3ac56c50cdeb94ada091e8ae2975b8813
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914477"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529892"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表向客户端基于 CSV 学校数据配置文件[启动同步](../api/educationsynchronizationprofile-start.md)到请求的响应中返回的错误。 该资源将包含错误而形成了验证从。 重新启动与 Azure Active Directory (Azure AD) 的同步请求之前，用户必须修复的源数据。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27914477"
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **类型** | string | 消息的类型。 可取值为：`error`、`warning`、`information`。 | 
-| **文件名** | string | 包含错误的源文件。 |
+| **fileName** | string | 包含错误的源文件。 |
 | **说明** | string | 有关邮件类型的详细的信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,3 +42,11 @@ ms.locfileid: "27914477"
     "description": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationfilesynchronizationverificationmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

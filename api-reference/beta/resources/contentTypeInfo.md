@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
-ms.openlocfilehash: e394d52a5f7ed5e8dce1c61d31d787d62bd36e56
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 196a71be06b4e3c02330aba21559341650caa550
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530060"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **contentTypeInfo** 资源指示项的 SharePoint 内容类型。
 
@@ -36,10 +36,15 @@ ms.locfileid: "27892335"
 | **id**         | string  | 内容类型的 ID。
 | **name**       | string  | 内容类型的名称。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeInfo"
-} -->
+  "tocPath": "Resources/ContentTypeInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contenttypeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
