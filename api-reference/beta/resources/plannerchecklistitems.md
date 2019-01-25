@@ -4,26 +4,26 @@ description: '**plannerChecklistItemCollection** 资源表示任务上的清单�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a507f2f0096789294322f9911d6bec4c7e7ee9d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cdc2822574497b2a76cc92c8b7b22f2e1bccc2e8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972360"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511875"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="90a34-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="90a34-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="33b8d-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="33b8d-106">plannerChecklistItems resource type</span></span>
 
-> <span data-ttu-id="90a34-107">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="90a34-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="90a34-108">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="90a34-108">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="90a34-p103">**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="90a34-p103">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="33b8d-p102">**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="33b8d-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="90a34-113">属性</span><span class="sxs-lookup"><span data-stu-id="90a34-113">Properties</span></span>
-<span data-ttu-id="90a34-p104">开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。</span><span class="sxs-lookup"><span data-stu-id="90a34-p104">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="33b8d-111">属性</span><span class="sxs-lookup"><span data-stu-id="33b8d-111">Properties</span></span>
+<span data-ttu-id="33b8d-p103">开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。</span><span class="sxs-lookup"><span data-stu-id="33b8d-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="90a34-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="90a34-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="33b8d-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="33b8d-116">JSON representation</span></span>
 
-<span data-ttu-id="90a34-119">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="90a34-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="33b8d-117">下面是资源的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="33b8d-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +45,7 @@ ms.locfileid: "27972360"
   }
 }
 ```
-<span data-ttu-id="90a34-120">// 示例</span><span class="sxs-lookup"><span data-stu-id="90a34-120">// Example</span></span>
+<span data-ttu-id="33b8d-118">// 示例</span><span class="sxs-lookup"><span data-stu-id="33b8d-118">// Example</span></span>
 
 ```json
 {
@@ -81,10 +81,15 @@ ms.locfileid: "27972360"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerChecklistItems resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerchecklistitems.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
