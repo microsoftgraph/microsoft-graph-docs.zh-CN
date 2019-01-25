@@ -2,16 +2,16 @@
 title: 连接器资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884621"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525729"
 ---
-# <a name="connector-resource-type"></a><span data-ttu-id="8198e-103">连接器资源类型</span><span class="sxs-lookup"><span data-stu-id="8198e-103">connector resource type</span></span>
+# <a name="connector-resource-type"></a><span data-ttu-id="a1aa4-103">连接器资源类型</span><span class="sxs-lookup"><span data-stu-id="a1aa4-103">connector resource type</span></span>
 
-> <span data-ttu-id="8198e-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="8198e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8198e-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="8198e-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- Not supported items
 |[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
@@ -20,29 +20,29 @@ ms.locfileid: "27884621"
 
 -->
 
-## <a name="methods"></a><span data-ttu-id="8198e-106">方法</span><span class="sxs-lookup"><span data-stu-id="8198e-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="a1aa4-104">方法</span><span class="sxs-lookup"><span data-stu-id="a1aa4-104">Methods</span></span>
 
-| <span data-ttu-id="8198e-107">方法</span><span class="sxs-lookup"><span data-stu-id="8198e-107">Method</span></span>           | <span data-ttu-id="8198e-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="8198e-108">Return Type</span></span>    |<span data-ttu-id="8198e-109">说明</span><span class="sxs-lookup"><span data-stu-id="8198e-109">Description</span></span>|
+| <span data-ttu-id="a1aa4-105">方法</span><span class="sxs-lookup"><span data-stu-id="a1aa4-105">Method</span></span>           | <span data-ttu-id="a1aa4-106">返回类型</span><span class="sxs-lookup"><span data-stu-id="a1aa4-106">Return Type</span></span>    |<span data-ttu-id="a1aa4-107">说明</span><span class="sxs-lookup"><span data-stu-id="a1aa4-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="8198e-110">获取连接器</span><span class="sxs-lookup"><span data-stu-id="8198e-110">Get connector</span></span>](../api/connector-get.md) | [<span data-ttu-id="8198e-111">连接器</span><span class="sxs-lookup"><span data-stu-id="8198e-111">connector</span></span>](connector.md) |<span data-ttu-id="8198e-112">读取属性和连接器对象的关系。</span><span class="sxs-lookup"><span data-stu-id="8198e-112">Read properties and relationships of connector object.</span></span>|
-|[<span data-ttu-id="8198e-113">List memberOf</span><span class="sxs-lookup"><span data-stu-id="8198e-113">List memberOf</span></span>](../api/connector-list-memberof.md) |<span data-ttu-id="8198e-114">[connectorGroup](connectorgroup.md)集合</span><span class="sxs-lookup"><span data-stu-id="8198e-114">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="8198e-115">获取与连接器相关联的 connectorGroup 对象。</span><span class="sxs-lookup"><span data-stu-id="8198e-115">Get the connectorGroup object associated with the connector.</span></span>|
+|[<span data-ttu-id="a1aa4-108">获取连接器</span><span class="sxs-lookup"><span data-stu-id="a1aa4-108">Get connector</span></span>](../api/connector-get.md) | [<span data-ttu-id="a1aa4-109">Connector</span><span class="sxs-lookup"><span data-stu-id="a1aa4-109">connector</span></span>](connector.md) |<span data-ttu-id="a1aa4-110">读取属性和连接器对象的关系。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-110">Read properties and relationships of connector object.</span></span>|
+|[<span data-ttu-id="a1aa4-111">List memberOf</span><span class="sxs-lookup"><span data-stu-id="a1aa4-111">List memberOf</span></span>](../api/connector-list-memberof.md) |<span data-ttu-id="a1aa4-112">[connectorGroup](connectorgroup.md)集合</span><span class="sxs-lookup"><span data-stu-id="a1aa4-112">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="a1aa4-113">获取与连接器相关联的 connectorGroup 对象。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-113">Get the connectorGroup object associated with the connector.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="8198e-116">属性</span><span class="sxs-lookup"><span data-stu-id="8198e-116">Properties</span></span>
-| <span data-ttu-id="8198e-117">属性</span><span class="sxs-lookup"><span data-stu-id="8198e-117">Property</span></span>     | <span data-ttu-id="8198e-118">类型</span><span class="sxs-lookup"><span data-stu-id="8198e-118">Type</span></span>   |<span data-ttu-id="8198e-119">Description</span><span class="sxs-lookup"><span data-stu-id="8198e-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a1aa4-114">属性</span><span class="sxs-lookup"><span data-stu-id="a1aa4-114">Properties</span></span>
+| <span data-ttu-id="a1aa4-115">属性</span><span class="sxs-lookup"><span data-stu-id="a1aa4-115">Property</span></span>     | <span data-ttu-id="a1aa4-116">类型</span><span class="sxs-lookup"><span data-stu-id="a1aa4-116">Type</span></span>   |<span data-ttu-id="a1aa4-117">说明</span><span class="sxs-lookup"><span data-stu-id="a1aa4-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8198e-120">externalIp</span><span class="sxs-lookup"><span data-stu-id="8198e-120">externalIp</span></span>|<span data-ttu-id="8198e-121">字符串</span><span class="sxs-lookup"><span data-stu-id="8198e-121">String</span></span>|<span data-ttu-id="8198e-122">作为服务为连接器计算机检测到外部 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="8198e-122">The external IP address as detected by the service for the connector machine.</span></span> <span data-ttu-id="8198e-123">只读</span><span class="sxs-lookup"><span data-stu-id="8198e-123">Read-only</span></span>|
-|<span data-ttu-id="8198e-124">id</span><span class="sxs-lookup"><span data-stu-id="8198e-124">id</span></span>|<span data-ttu-id="8198e-125">字符串</span><span class="sxs-lookup"><span data-stu-id="8198e-125">String</span></span>| <span data-ttu-id="8198e-126">连接符的对象 id。</span><span class="sxs-lookup"><span data-stu-id="8198e-126">The object id of the connector.</span></span> <BR><span data-ttu-id="8198e-127">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="8198e-127">Read-only.</span></span>|
-|<span data-ttu-id="8198e-128">计算机名</span><span class="sxs-lookup"><span data-stu-id="8198e-128">machineName</span></span>|<span data-ttu-id="8198e-129">字符串</span><span class="sxs-lookup"><span data-stu-id="8198e-129">String</span></span>| <span data-ttu-id="8198e-130">运行连接器的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="8198e-130">The name of the machine that the connector is running on.</span></span> <BR><span data-ttu-id="8198e-131">只读</span><span class="sxs-lookup"><span data-stu-id="8198e-131">Read-only</span></span>|
-|<span data-ttu-id="8198e-132">status</span><span class="sxs-lookup"><span data-stu-id="8198e-132">status</span></span>|<span data-ttu-id="8198e-133">string</span><span class="sxs-lookup"><span data-stu-id="8198e-133">string</span></span>| <span data-ttu-id="8198e-134">指示连接符的状态。</span><span class="sxs-lookup"><span data-stu-id="8198e-134">Indicates the status of the connector.</span></span> <span data-ttu-id="8198e-135">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="8198e-135">Possible values are: `active`, `inactive`.</span></span> <span data-ttu-id="8198e-136">只读</span><span class="sxs-lookup"><span data-stu-id="8198e-136">Read-only</span></span> |
+|<span data-ttu-id="a1aa4-118">externalIp</span><span class="sxs-lookup"><span data-stu-id="a1aa4-118">externalIp</span></span>|<span data-ttu-id="a1aa4-119">String</span><span class="sxs-lookup"><span data-stu-id="a1aa4-119">String</span></span>|<span data-ttu-id="a1aa4-120">作为服务为连接器计算机检测到外部 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-120">The external IP address as detected by the service for the connector machine.</span></span> <span data-ttu-id="a1aa4-121">只读</span><span class="sxs-lookup"><span data-stu-id="a1aa4-121">Read-only</span></span>|
+|<span data-ttu-id="a1aa4-122">id</span><span class="sxs-lookup"><span data-stu-id="a1aa4-122">id</span></span>|<span data-ttu-id="a1aa4-123">字串符号</span><span class="sxs-lookup"><span data-stu-id="a1aa4-123">String</span></span>| <span data-ttu-id="a1aa4-124">连接符的对象 id。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-124">The object id of the connector.</span></span> <BR><span data-ttu-id="a1aa4-125">只读。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-125">Read-only.</span></span>|
+|<span data-ttu-id="a1aa4-126">计算机名</span><span class="sxs-lookup"><span data-stu-id="a1aa4-126">machineName</span></span>|<span data-ttu-id="a1aa4-127">String</span><span class="sxs-lookup"><span data-stu-id="a1aa4-127">String</span></span>| <span data-ttu-id="a1aa4-128">运行连接器的计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-128">The name of the machine that the connector is running on.</span></span> <BR><span data-ttu-id="a1aa4-129">只读</span><span class="sxs-lookup"><span data-stu-id="a1aa4-129">Read-only</span></span>|
+|<span data-ttu-id="a1aa4-130">status</span><span class="sxs-lookup"><span data-stu-id="a1aa4-130">status</span></span>|<span data-ttu-id="a1aa4-131">string</span><span class="sxs-lookup"><span data-stu-id="a1aa4-131">string</span></span>| <span data-ttu-id="a1aa4-132">指示连接符的状态。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-132">Indicates the status of the connector.</span></span> <span data-ttu-id="a1aa4-133">可取值为：`active`、`inactive`。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-133">Possible values are: `active`, `inactive`.</span></span> <span data-ttu-id="a1aa4-134">只读</span><span class="sxs-lookup"><span data-stu-id="a1aa4-134">Read-only</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="8198e-137">Relationships</span><span class="sxs-lookup"><span data-stu-id="8198e-137">Relationships</span></span>
-| <span data-ttu-id="8198e-138">关系</span><span class="sxs-lookup"><span data-stu-id="8198e-138">Relationship</span></span> | <span data-ttu-id="8198e-139">类型</span><span class="sxs-lookup"><span data-stu-id="8198e-139">Type</span></span>   |<span data-ttu-id="8198e-140">Description</span><span class="sxs-lookup"><span data-stu-id="8198e-140">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="a1aa4-135">关系</span><span class="sxs-lookup"><span data-stu-id="a1aa4-135">Relationships</span></span>
+| <span data-ttu-id="a1aa4-136">关系</span><span class="sxs-lookup"><span data-stu-id="a1aa4-136">Relationship</span></span> | <span data-ttu-id="a1aa4-137">类型</span><span class="sxs-lookup"><span data-stu-id="a1aa4-137">Type</span></span>   |<span data-ttu-id="a1aa4-138">说明</span><span class="sxs-lookup"><span data-stu-id="a1aa4-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8198e-141">memberOf</span><span class="sxs-lookup"><span data-stu-id="8198e-141">memberOf</span></span>|<span data-ttu-id="8198e-142">[connectorGroup](connectorgroup.md)集合</span><span class="sxs-lookup"><span data-stu-id="8198e-142">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="8198e-143">ConnectorGroup 的连接的成员。</span><span class="sxs-lookup"><span data-stu-id="8198e-143">The connectorGroup that the connect is a member of.</span></span><br><span data-ttu-id="8198e-144">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="8198e-144">Read-only.</span></span> |
+|<span data-ttu-id="a1aa4-139">memberOf</span><span class="sxs-lookup"><span data-stu-id="a1aa4-139">memberOf</span></span>|<span data-ttu-id="a1aa4-140">[connectorGroup](connectorgroup.md)集合</span><span class="sxs-lookup"><span data-stu-id="a1aa4-140">[connectorGroup](connectorgroup.md) collection</span></span>| <span data-ttu-id="a1aa4-141">ConnectorGroup 的连接的成员。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-141">The connectorGroup that the connect is a member of.</span></span><br><span data-ttu-id="a1aa4-142">只读。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-142">Read-only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="8198e-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8198e-145">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a1aa4-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a1aa4-143">JSON representation</span></span>
 
-<span data-ttu-id="8198e-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8198e-146">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a1aa4-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a1aa4-144">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -64,10 +64,15 @@ ms.locfileid: "27884621"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "connector resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/connector.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
